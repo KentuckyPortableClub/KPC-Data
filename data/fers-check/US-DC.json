@@ -1,0 +1,104 @@
+{
+ "area": "US-DC",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-DC.json",
+ "rows": {
+  "US-0795+US-0796@same land@38.890,-77.040": {
+   "id": "US-0795+US-0796@same land@38.890,-77.040",
+   "area": "US-DC",
+   "refs": [
+    "US-0795",
+    "US-0796"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T12:00:51Z",
+   "layers": [
+    {
+     "ref": "US-0795",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T12:00:51Z"
+    },
+    {
+     "ref": "US-0796",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T12:00:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5.12,
+   "live_acres": 2.03,
+   "kept_pct": 0.0,
+   "size_pct": -60.4,
+   "moved_m": 954,
+   "gap_m": 825,
+   "wide_m": 74.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 954 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    38.895972,
+    -77.033095
+   ]
+  }
+ },
+ "started": "2026-11-01T12:00:51Z",
+ "fers_sha256": "20abc078f2ecae2bca923d557eacca344d48c26c93caba551d7855af807284a7",
+ "live_rows": 1,
+ "skipped_rows": 1,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:05:00Z",
+ "complete": true,
+ "summary": {
+  "rows": 1,
+  "verdicts": {
+   "CONFIRMED": 0,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 1,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {}
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json"
+ ],
+ "requests_this_run": 3
+}

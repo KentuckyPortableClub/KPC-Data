@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-10-31T21:04:49+00:00",
+  "agencies": [
+    {
+      "agency": "Kentucky Department of Fish & Wildlife Resources - WMA & Public Lands Search",
+      "index_url": "https://app.fw.ky.gov/public_lands_search/",
+      "status": "done",
+      "counts": {
+        "OK": 11,
+        "POSSIBLE": 0,
+        "SHARED": 0,
+        "NONE": 0
+      },
+      "pages_fetched": 17,
+      "candidates": 73,
+      "browser_used": true,
+      "seconds": 47.0,
+      "error": null,
+      "notes": [
+        "index page static HTML (66512 chars, 1 doc links) had no park-matching links; rendering with headless browser"
+      ]
+    },
+    {
+      "agency": "New York State DEC - Wildlife Management Areas",
+      "index_url": "https://dec.ny.gov/places-to-go/wildlife-management-areas",
+      "status": "error",
+      "counts": null,
+      "pages_fetched": null,
+      "candidates": null,
+      "browser_used": null,
+      "seconds": null,
+      "error": "RuntimeError: index page could not be fetched: skipped https://dec.ny.gov/places-to-go/wildlife-management-areas: robots.txt disallows https://dec.ny.gov/places-to-go/wildlife-management-areas",
+      "notes": null
+    },
+    {
+      "agency": "Connecticut DEEP State Parks - Park Maps",
+      "index_url": "https://ctparks.com/park-maps",
+      "status": "done",
+      "counts": {
+        "OK": 11,
+        "POSSIBLE": 0,
+        "SHARED": 0,
+        "NONE": 0
+      },
+      "pages_fetched": 24,
+      "candidates": 385,
+      "browser_used": false,
+      "seconds": 76.6,
+      "error": null,
+      "notes": [
+        "skipped https://ctparks.com/node/10459: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/11178: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/10977: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/13059: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/10927: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/11087: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/13060: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/13061: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/10623: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/10912: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/13069: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/11109: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/11009: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/10810: host not an official agency host for this agency: ctvisit.com",
+        "skipped https://ctparks.com/node/10638: host not an official agency host for this agency: ctvisit.com"
+      ]
+    },
+    {
+      "agency": "USDA Forest Service - Daniel Boone National Forest",
+      "index_url": "https://www.fs.usda.gov/r08/danielboone/maps-guides",
+      "status": "done",
+      "counts": {
+        "OK": 0,
+        "POSSIBLE": 4,
+        "SHARED": 0,
+        "NONE": 0
+      },
+      "pages_fetched": 5,
+      "candidates": 22,
+      "browser_used": false,
+      "seconds": 12.2,
+      "error": null,
+      "notes": []
+    },
+    {
+      "agency": "Lake Simcoe Region Conservation Authority - Trail Maps",
+      "index_url": "https://lsrca.on.ca/index.php/enjoy-the-outdoors/trail-maps-and-closure-notices/",
+      "status": "done",
+      "counts": {
+        "OK": 6,
+        "POSSIBLE": 0,
+        "SHARED": 0,
+        "NONE": 1
+      },
+      "pages_fetched": 10,
+      "candidates": 71,
+      "browser_used": false,
+      "seconds": 40.3,
+      "error": null,
+      "notes": []
+    }
+  ],
+  "totals": {
+    "OK": 28,
+    "POSSIBLE": 4,
+    "SHARED": 0,
+    "NONE": 13
+  }
+}

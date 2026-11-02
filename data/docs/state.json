@@ -1,0 +1,874 @@
+{
+ "areas": {
+  "US-MO": {
+   "status": "done",
+   "parks": 561,
+   "checked": 561,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-FL": {
+   "status": "done",
+   "parks": 460,
+   "checked": 460,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-KY": {
+   "status": "done",
+   "parks": 193,
+   "checked": 193,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-TN": {
+   "status": "done",
+   "parks": 277,
+   "checked": 277,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-NC": {
+   "status": "done",
+   "parks": 253,
+   "checked": 253,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-VA": {
+   "status": "done",
+   "parks": 184,
+   "checked": 184,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-WV": {
+   "status": "done",
+   "parks": 172,
+   "checked": 172,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-GA": {
+   "status": "done",
+   "parks": 237,
+   "checked": 237,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-AL": {
+   "status": "done",
+   "parks": 155,
+   "checked": 155,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-SC": {
+   "status": "done",
+   "parks": 167,
+   "checked": 167,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-MS": {
+   "status": "done",
+   "parks": 155,
+   "checked": 155,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-IN": {
+   "status": "done",
+   "parks": 229,
+   "checked": 229,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-IL": {
+   "status": "done",
+   "parks": 219,
+   "checked": 219,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-WI": {
+   "status": "done",
+   "parks": 348,
+   "checked": 348,
+   "left": 0,
+   "updated": "2026-10-30"
+  },
+  "US-MN": {
+   "status": "done",
+   "parks": 298,
+   "checked": 298,
+   "left": 0,
+   "updated": "2026-10-30"
+  },
+  "US-IA": {
+   "status": "failed",
+   "parks": 181,
+   "updated": "2026-11-01",
+   "why": "maps 82 -> 63"
+  },
+  "US-ND": {
+   "status": "done",
+   "parks": 155,
+   "checked": 155,
+   "left": 0,
+   "updated": "2026-10-30"
+  },
+  "US-SD": {
+   "status": "done",
+   "parks": 120,
+   "checked": 120,
+   "left": 0,
+   "updated": "2026-10-30"
+  },
+  "US-PA": {
+   "status": "done",
+   "parks": 494,
+   "checked": 494,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-NY": {
+   "status": "done",
+   "parks": 851,
+   "checked": 851,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NJ": {
+   "status": "done",
+   "parks": 134,
+   "checked": 134,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-CT": {
+   "status": "done",
+   "parks": 157,
+   "checked": 157,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-RI": {
+   "status": "done",
+   "parks": 61,
+   "checked": 61,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-MA": {
+   "status": "done",
+   "parks": 421,
+   "checked": 421,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-VT": {
+   "status": "done",
+   "parks": 109,
+   "checked": 109,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NH": {
+   "status": "done",
+   "parks": 206,
+   "checked": 206,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-ME": {
+   "status": "done",
+   "parks": 148,
+   "checked": 148,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-MD": {
+   "status": "done",
+   "parks": 186,
+   "checked": 186,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-DE": {
+   "status": "done",
+   "parks": 89,
+   "checked": 89,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-DC": {
+   "status": "done",
+   "parks": 35,
+   "checked": 35,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-AR": {
+   "status": "done",
+   "parks": 306,
+   "checked": 306,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-LA": {
+   "status": "done",
+   "parks": 123,
+   "checked": 123,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-OK": {
+   "status": "done",
+   "parks": 205,
+   "checked": 205,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-TX": {
+   "status": "done",
+   "parks": 222,
+   "checked": 222,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-KS": {
+   "status": "done",
+   "parks": 145,
+   "checked": 145,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NE": {
+   "status": "done",
+   "parks": 198,
+   "checked": 198,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-CO": {
+   "status": "done",
+   "parks": 276,
+   "checked": 276,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-WY": {
+   "status": "done",
+   "parks": 294,
+   "checked": 294,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-ID": {
+   "status": "done",
+   "parks": 362,
+   "checked": 362,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-MT": {
+   "status": "done",
+   "parks": 254,
+   "checked": 254,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NV": {
+   "status": "done",
+   "parks": 367,
+   "checked": 367,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-AZ": {
+   "status": "done",
+   "parks": 123,
+   "checked": 123,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NM": {
+   "status": "done",
+   "parks": 123,
+   "checked": 123,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-CA": {
+   "status": "done",
+   "parks": 410,
+   "checked": 410,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-OR": {
+   "status": "done",
+   "parks": 440,
+   "checked": 440,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-WA": {
+   "status": "done",
+   "parks": 536,
+   "checked": 536,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-AK": {
+   "status": "done",
+   "parks": 179,
+   "checked": 179,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-HI": {
+   "status": "done",
+   "parks": 102,
+   "checked": 102,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-MI": {
+   "status": "done",
+   "parks": 388,
+   "checked": 388,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-OH": {
+   "status": "done",
+   "parks": 276,
+   "checked": 276,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-UT": {
+   "status": "done",
+   "parks": 692,
+   "checked": 692,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-ON": {
+   "status": "done",
+   "parks": 1180,
+   "checked": 1180,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-QC": {
+   "status": "done",
+   "parks": 838,
+   "checked": 838,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-NB": {
+   "status": "done",
+   "parks": 562,
+   "checked": 562,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-NS": {
+   "status": "done",
+   "parks": 489,
+   "checked": 489,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-PE": {
+   "status": "done",
+   "parks": 53,
+   "checked": 53,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-NL": {
+   "status": "done",
+   "parks": 134,
+   "checked": 134,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-MB": {
+   "status": "done",
+   "parks": 308,
+   "checked": 308,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-SK": {
+   "status": "done",
+   "parks": 411,
+   "checked": 411,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-AB": {
+   "status": "done",
+   "parks": 459,
+   "checked": 459,
+   "left": 0,
+   "updated": "2026-11-01"
+  },
+  "CA-BC": {
+   "status": "done",
+   "parks": 1254,
+   "checked": 1254,
+   "left": 0,
+   "updated": "2026-11-01"
+  },
+  "CA-YT": {
+   "status": "done",
+   "parks": 112,
+   "checked": 112,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-NT": {
+   "status": "done",
+   "parks": 68,
+   "checked": 68,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-NU": {
+   "status": "done",
+   "parks": 48,
+   "checked": 48,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-MX": {
+   "status": "done",
+   "parks": 536,
+   "checked": 536,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-CR": {
+   "status": "done",
+   "parks": 42,
+   "checked": 42,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-PA": {
+   "status": "done",
+   "parks": 58,
+   "checked": 58,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-BZ": {
+   "status": "done",
+   "parks": 69,
+   "checked": 69,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-HN": {
+   "status": "done",
+   "parks": 57,
+   "checked": 57,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-GT": {
+   "status": "done",
+   "parks": 18,
+   "checked": 18,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-SV": {
+   "status": "done",
+   "parks": 6,
+   "checked": 6,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-NI": {
+   "status": "done",
+   "parks": 69,
+   "checked": 69,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-DO": {
+   "status": "done",
+   "parks": 200,
+   "checked": 200,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-BS": {
+   "status": "done",
+   "parks": 49,
+   "checked": 49,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-JM": {
+   "status": "done",
+   "parks": 15,
+   "checked": 15,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-HT": {
+   "status": "done",
+   "parks": 0,
+   "updated": "2026-10-31"
+  },
+  "W-CU": {
+   "status": "done",
+   "parks": 283,
+   "checked": 283,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-TT": {
+   "status": "done",
+   "parks": 147,
+   "checked": 147,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-BB": {
+   "status": "done",
+   "parks": 45,
+   "checked": 45,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-LC": {
+   "status": "done",
+   "parks": 47,
+   "checked": 47,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-VC": {
+   "status": "done",
+   "parks": 36,
+   "checked": 36,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-GD": {
+   "status": "done",
+   "parks": 16,
+   "checked": 16,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-AG": {
+   "status": "done",
+   "parks": 5,
+   "checked": 5,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-KN": {
+   "status": "done",
+   "parks": 3,
+   "checked": 3,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-DM": {
+   "status": "done",
+   "parks": 17,
+   "checked": 17,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-AW": {
+   "status": "done",
+   "parks": 1,
+   "checked": 1,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-CW": {
+   "status": "done",
+   "parks": 6,
+   "checked": 6,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-SX": {
+   "status": "done",
+   "parks": 3,
+   "checked": 3,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-TC": {
+   "status": "done",
+   "parks": 7,
+   "checked": 7,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-VG": {
+   "status": "done",
+   "parks": 21,
+   "checked": 21,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-AI": {
+   "status": "done",
+   "parks": 8,
+   "checked": 8,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-MS": {
+   "status": "done",
+   "parks": 2,
+   "checked": 2,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-BM": {
+   "status": "done",
+   "parks": 28,
+   "checked": 28,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-GP": {
+   "status": "done",
+   "parks": 29,
+   "checked": 29,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-MQ": {
+   "status": "done",
+   "parks": 10,
+   "checked": 10,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-GL": {
+   "status": "done",
+   "parks": 12,
+   "checked": 12,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-PM": {
+   "status": "done",
+   "parks": 28,
+   "checked": 28,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "W-GB": {
+   "status": "done",
+   "parks": 7074,
+   "checked": 7074,
+   "left": 0,
+   "updated": "2026-11-01"
+  },
+  "W-PR": {
+   "status": "done",
+   "parks": 90,
+   "checked": 90,
+   "left": 0,
+   "updated": "2026-11-01"
+  },
+  "W-VI": {
+   "status": "done",
+   "parks": 15,
+   "checked": 15,
+   "left": 0,
+   "updated": "2026-11-01"
+  },
+  "W-AU": {
+   "status": "partial",
+   "parks": 10272,
+   "checked": 1793,
+   "left": 8479,
+   "updated": "2026-11-01"
+  }
+ },
+ "hosts": {
+  "www.patrimoine-culturel.gouv.qc.ca": 1793548196.3005166,
+  "150.rmbr.ca": 1793553736.3744638,
+  "www.protectedplanet.net": 1793554477.0708697,
+  "www.parc.ca": 1793554880.5484288,
+  "publications.saskatchewan.ca": 1793554928.3666048,
+  "www.abpp-pl.castatic.reserveamerica.com": 1793556247.1185954,
+  "www.thorhildcounty.com": 1793556406.158208,
+  "dev.bcparks.ca": 1793557281.432461,
+  "alpha.gov.bc.ca": 1793557504.775051,
+  "www.city.surrey.bc.ca": 1793557949.72336,
+  "www.nwtparks.ca": 1793560194.4828055,
+  "nwtparks.ca": 1793560195.0793283,
+  "travelnunavut.ca": 1793560330.425718,
+  "www.visitmexico.com": 1793560504.122769,
+  "www.corazondepuebla.com.mx": 1793560671.0305245,
+  "bosquesurbanos.mx": 1793561060.3998272,
+  "sma.edomex.gob.mx": 1793561569.1215246,
+  "bosquedechapultepec.mx": 1793561734.3942616,
+  "experiencia.edomex.gob.mx": 1793561901.0727344,
+  "smaot.guanajuato.gob.mx": 1793562082.8552866,
+  "difusion.inah.gob.mx": 1793563139.8745031,
+  "www.inah.gob.mx": 1793563173.477858,
+  "www.veracruz.gob.mx": 1793563224.7722692,
+  "www.inehrm.gob.mx": 1793563314.1699207,
+  "jardin.inecol.mx": 1793563367.8448026,
+  "www.sinac.go.cr": 1793563674.0462658,
+  "www.puntarioc": 1793563739.8545861,
+  "www.muni-carta.go.cr": 1793563771.6297464,
+  "www.reservaforestalfortuna.com": 1793563818.1832068,
+  "www.belizehub.com": 1793563977.5866907,
+  "www.ecured.cu": 1793564121.4680169,
+  "gobluebayislands.com": 1793564228.8649662,
+  "destinoyaxha.com": 1793564274.9441273,
+  "market.gob.sv": 1793564446.4927015,
+  "cidoc.marn.gob.sv": 1793564476.9737818,
+  "www.marena.gob.ni": 1793564515.043102,
+  "www.visitnicaragua.us": 1793564586.841815,
+  "www.nuestropatrimonio.gob.do": 1793564801.2712517,
+  "www.jamaicatravelandculture.com": 1793565135.5655522,
+  "www.ciegodeavila.gob.cu": 1793565517.4854689,
+  "www.lospalacios.gob.cu": 1793566684.2671235,
+  "revistaecovida.upr.edu.cu": 1793566769.9513874,
+  "rris.biopama.org": 1793566946.471536,
+  "www.delsanjuanero.gob.cu": 1793566978.3886366,
+  "www.mayaweb.gob.cu": 1793567146.9384596,
+  "pazweb.gob.cu": 1793567655.9627476,
+  "cubatrip.net": 1793567688.3345454,
+  "www.artemisa.gob.cu": 1793567867.4017277,
+  "artemisa.gob.cu": 1793568111.2506855,
+  "cubarte.cult.cu": 1793568316.33968,
+  "www.camaguey.gob.cu": 1793568488.6104703,
+  "florida.gob.cu": 1793568519.8744574,
+  "www.cipdh.gob.ar": 1793568561.331159,
+  "www.cienfuegos.gob.cu": 1793568754.919181,
+  "www.escambray.cu": 1793569995.6893277,
+  "www.granma.cu": 1793570291.0163817,
+  "www.cubarentrooms.com": 1793570325.0090544,
+  "ecured.cu": 1793570521.118132,
+  "mdh.ima.gov.tt": 1793570821.5201552,
+  "nalis.gov.tt": 1793571229.1217651,
+  "www.barbadosadvocate.com": 1793571262.6289878,
+  "www.tripmondo.com": 1793571357.866311,
+  "www.barbados-island.com": 1793571428.6161895,
+  "tourism.govt.lc": 1793571639.5168407,
+  "www.govt.lc": 1793571755.1419792,
+  "nationalparks.gov.vc": 1793571894.6192453,
+  "worldmarineparks.com": 1793571924.9232256,
+  "carriacou.biz": 1793571995.8818252,
+  "www.environment.gov.ag": 1793572041.7975996,
+  "dominicabotanicgardens.org": 1793572104.3205323,
+  "www.nationalparkstraveler.org": 1793572265.4241881,
+  "www.nwleics.gov.uk": 1793574028.2365115,
+  "gis.worcestershire.gov.uk": 1793574302.5871737,
+  "bradfordonavon.uk.com": 1793574418.8536015,
+  "devondaze.co.uk": 1793574466.2990708,
+  "waterpark.org": 1793574504.1604435,
+  "www.sssi.naturalengland.org.uk": 1793575371.6007001,
+  "greenspacescaerphilly.co.uk": 1793575417.4536934,
+  "iowaculture.gov": 1793575637.203241,
+  "www.cgcounty.org": 1793575956.993557,
+  "www.streetmap.co.uk": 1793577041.619589,
+  "www.visitpendle.com": 1793577420.1992583,
+  "propertysearches.unitedutilities.com": 1793577714.3889158,
+  "www.visitchesterfield.info": 1793578167.7367048,
+  "www.cravendc.gov.uk": 1793578409.8567002,
+  "www.trentvale.co.uk": 1793578669.9090414,
+  "https": 1793578785.4547203,
+  "www.visitcumbria.com": 1793578863.4816332,
+  "www.ellesmere.info": 1793580118.598859,
+  "www.blackburn.gov.uk": 1793580672.3754215,
+  "www.highpeakhouse.com": 1793580769.0561965,
+  "alkringtonwoods.org": 1793581286.6092052,
+  "www.carbonlandscape.org.uk": 1793581581.3549383,
+  "bcparks.ca": 1793588747.7507071,
+  "www.eyesuffolk.org": 1793589245.4342473,
+  "www.onegreattorrington.uk": 1793590601.8688393,
+  "northamptonshiresurprise.com": 1793591044.4370186,
+  "www.historicenvironment.scot": 1793591188.6475813,
+  "chapeltownpark.co.uk": 1793591419.5725284,
+  "www.valenciacommunitiesfund.co.uk": 1793591452.5019386,
+  "essex-sunshine-coast.org.uk": 1793591487.8523996,
+  "www.stmichaelspark.co.uk": 1793591598.78364,
+  "www.solwaycoastaonb.org.uk": 1793592307.2868164,
+  "sharphillwood.org": 1793592634.8298228,
+  "www.ballgrove.org": 1793595778.895248,
+  "swanpool.org.uk": 1793596285.0682833,
+  "haltonconnect.co.uk": 1793597594.506756,
+  "superweston.net": 1793597635.5849698,
+  "menvcity.org.uk": 1793597846.7417421,
+  "lancashirewalks.co.uk": 1793597907.406868,
+  "www.visittamworth.co.uk": 1793597965.3231745,
+  "visittamworth.co.uk": 1793597996.0117664,
+  "www.legendarydartmoor.co.uk": 1793598354.5863228,
+  "www.shop.ordnancesurveyleisure.co.uk": 1793598647.0736485,
+  "www.staffsmoorlands.gov.uk": 1793598856.7832835,
+  "www.hothampark.co.uk": 1793599536.7301648,
+  "newlandsproject.co.uk": 1793599647.6541343,
+  "www2.clustrmaps.com": 1793606623.5293407,
+  "beta.trafford.gov.uk": 1793608500.3941865,
+  "www.megalithic.co.uk": 1793609085.6962366,
+  "www.huttoncranswick.com": 1793609310.2550595,
+  "getamap.ordnancesurvey.co.uk": 1793609997.5080078,
+  "bedfordcommunity.com": 1793610175.9614644,
+  "www.highwoodsbexhill.org.uk": 1793613617.06702,
+  "www.eaststaffsbc.gov.uk": 1793615277.8537004,
+  "democracy.southend.gov.uk": 1793615829.350192,
+  "www.in-common.co.uk": 1793616115.6817112,
+  "www.shropshiresgreatoutdoors.co.uk": 1793617165.6134996,
+  "wildopenwater.com": 1793623513.8220913,
+  "turner.yorkshire.com": 1793623867.2773786,
+  "www.grimsarghwetlands.org": 1793625749.2393453,
+  "open.alberta.ca": 1793628772.2782614,
+  "maps.bonzle.com": 1793630974.2058437,
+  "www.environment.nsw.gov.au": 1793633307.9967823,
+  "web.archive.org": 1793633498.9517543,
+  "bonzle.com": 1793633695.1074944,
+  "www.dcceew.gov.au": 1793634042.8869746,
+  "www.goldfieldsguide.com.au": 1793634296.6860352
+ },
+ "last": {
+  "when": "2026-11-01",
+  "areas": [
+   "US-IA",
+   "W-AU",
+   "W-JP",
+   "W-DE",
+   "W-PL",
+   "W-FR",
+   "W-ES",
+   "W-IT"
+  ],
+  "stat": {
+   "requests": 1307,
+   "parks": 1348,
+   "maps_ok": 133,
+   "maps_found": 128,
+   "dates": 1,
+   "rules": 161,
+   "browser": 111,
+   "robots": 3,
+   "strikes": 16,
+   "errors": 12,
+   "skipped_fresh": 626
+  }
+ }
+}

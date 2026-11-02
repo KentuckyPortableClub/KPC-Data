@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "va",
+ "states": [
+  "US-VA"
+ ],
+ "since": "2026-10-31",
+ "date": "2026-10-31 23:00 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 118,
+  "DROPPED": 297,
+  "NEVER LOOKED AT": 824
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-31",
+   "pairs tested": 2540,
+   "pairs whose boxes touch": 2540
+  },
+  "pass2": {
+   "agree with the pass before": 502,
+   "date": "2026-10-31",
+   "pairs tested": 132
+  },
+  "pass3": {
+   "agree with the pass before": 468,
+   "date": "2026-10-31",
+   "pairs tested": 132
+  },
+  "pass5": {
+   "checked": 22,
+   "date": "2026-10-31",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-VA": "data/fers/US-VA.json"
+ },
+ "US-VA": {
+  "rows": 521,
+  "live": 119,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 15
+  },
+  "dropped": 92,
+  "merged": 295
+ },
+ "states_ready": [
+  "US-VA"
+ ],
+ "states_held": []
+}

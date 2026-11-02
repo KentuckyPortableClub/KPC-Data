@@ -1,0 +1,621 @@
+{
+ "area": "US-LA",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-LA.json",
+ "rows": {
+  "US-0296+US-4082@area@30.483,-91.698": {
+   "id": "US-0296+US-4082@area@30.483,-91.698",
+   "area": "US-LA",
+   "refs": [
+    "US-0296",
+    "US-4082"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 15711.4,
+   "stored_wide_m": 3042,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:18Z",
+   "layers": [
+    {
+     "ref": "US-0296",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:49:18Z"
+    },
+    {
+     "ref": "US-4082",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:20Z"
+    },
+    {
+     "ref": "US-4082",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:20Z"
+    },
+    {
+     "ref": "US-4082",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:23Z"
+    },
+    {
+     "ref": "US-4082",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LOE_LDWF_WMAs_09262025_WGS84_WMAS/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 15086.96,
+   "live_acres": 15371.57,
+   "kept_pct": 96.2,
+   "size_pct": 1.9,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 3030.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15371.6 ac vs 15087.0 ac stored (+2%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.483908,
+    -91.697869
+   ]
+  },
+  "US-0297+US-0312@area@30.993,-92.372": {
+   "id": "US-0297+US-0312@area@30.993,-92.372",
+   "area": "US-LA",
+   "refs": [
+    "US-0297",
+    "US-0312"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.6,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:27Z",
+   "layers": [
+    {
+     "ref": "US-0297",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:27Z"
+    },
+    {
+     "ref": "US-0312",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.31,
+   "live_acres": 1.28,
+   "kept_pct": 100.0,
+   "size_pct": -2.2,
+   "moved_m": 75,
+   "gap_m": 0,
+   "wide_m": 20.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.3 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.992849,
+    -92.372616
+   ]
+  },
+  "US-0297+US-0312@area@30.996,-92.374": {
+   "id": "US-0297+US-0312@area@30.996,-92.374",
+   "area": "US-LA",
+   "refs": [
+    "US-0297",
+    "US-0312"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 4.7,
+   "stored_wide_m": 37,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:30Z",
+   "layers": [
+    {
+     "ref": "US-0297",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:31Z"
+    },
+    {
+     "ref": "US-0312",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:32Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T00:49:33Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 6,
+     "read": "2026-11-01T00:49:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 87.7,
+   "stored_water_pct": 86,
+   "stored_shape_acres": 2.52,
+   "live_acres": 2.22,
+   "kept_pct": 98.9,
+   "size_pct": -11.6,
+   "moved_m": 504,
+   "gap_m": 0,
+   "wide_m": 30.1,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.2 ac vs 2.5 ac stored (-12%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.995723,
+    -92.375915
+   ]
+  },
+  "US-0302+US-4071@area@30.431,-89.714": {
+   "id": "US-0302+US-4071@area@30.431,-89.714",
+   "area": "US-LA",
+   "refs": [
+    "US-0302",
+    "US-4071"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 5.2,
+   "stored_wide_m": 25,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:49:33Z",
+   "layers": [
+    {
+     "ref": "US-0302",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:49:34Z"
+    },
+    {
+     "ref": "US-4071",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:35Z"
+    },
+    {
+     "ref": "US-4071",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:37Z"
+    },
+    {
+     "ref": "US-4071",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:38Z"
+    },
+    {
+     "ref": "US-4071",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LOE_LDWF_WMAs_09262025_WGS84_WMAS/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.55,
+   "live_acres": 3.08,
+   "kept_pct": 100.0,
+   "size_pct": -13.3,
+   "moved_m": 131,
+   "gap_m": 0,
+   "wide_m": 14.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.1 ac vs 3.6 ac stored (-13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.430768,
+    -89.709178
+   ]
+  },
+  "US-0306+US-4486@area@31.748,-92.583": {
+   "id": "US-0306+US-4486@area@31.748,-92.583",
+   "area": "US-LA",
+   "refs": [
+    "US-0306",
+    "US-4486"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 37817.9,
+   "stored_wide_m": 6724,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:40Z",
+   "layers": [
+    {
+     "ref": "US-0306",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:40Z"
+    },
+    {
+     "ref": "US-0306",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:49:41Z"
+    },
+    {
+     "ref": "US-4486",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22593.53,
+   "live_acres": 37598.84,
+   "kept_pct": 99.9,
+   "size_pct": -0.6,
+   "moved_m": 255,
+   "gap_m": 0,
+   "wide_m": 7020.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 37598.8 ac vs 37817.9 ac stored (row acres; the stored shape is a 22593.5 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.748311,
+    -92.584024
+   ]
+  },
+  "US-10456+US-4486@area@31.424,-92.335": {
+   "id": "US-10456+US-4486@area@31.424,-92.335",
+   "area": "US-LA",
+   "refs": [
+    "US-10456",
+    "US-4486"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 19.1,
+   "stored_wide_m": 27,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:44Z",
+   "layers": [
+    {
+     "ref": "US-10456",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:44Z"
+    },
+    {
+     "ref": "US-4486",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 15.47,
+   "live_acres": 15.02,
+   "kept_pct": 100.0,
+   "size_pct": -2.9,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 21.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15.0 ac vs 15.5 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.424361,
+    -92.331181
+   ]
+  },
+  "US-10563+US-4486@area@31.043,-93.150": {
+   "id": "US-10563+US-4486@area@31.043,-93.150",
+   "area": "US-LA",
+   "refs": [
+    "US-10563",
+    "US-4486"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 40555.2,
+   "stored_wide_m": 6585,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:47Z",
+   "layers": [
+    {
+     "ref": "US-10563",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:47Z"
+    },
+    {
+     "ref": "US-4486",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 14781.36,
+   "live_acres": 40270.91,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 38,
+   "gap_m": 0,
+   "wide_m": 6616.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 40270.9 ac vs 40555.2 ac stored (row acres; the stored shape is a 14781.4 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.043024,
+    -93.14982
+   ]
+  },
+  "US-2358+US-4047@area@32.905,-91.834": {
+   "id": "US-2358+US-4047@area@32.905,-91.834",
+   "area": "US-LA",
+   "refs": [
+    "US-2358",
+    "US-4047"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.2,
+   "stored_wide_m": 95,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:48Z",
+   "layers": [
+    {
+     "ref": "US-2358",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:49Z"
+    },
+    {
+     "ref": "US-4047",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:50Z"
+    },
+    {
+     "ref": "US-4047",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:50Z"
+    },
+    {
+     "ref": "US-4047",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 6,
+   "stored_shape_acres": 5.44,
+   "live_acres": 5.21,
+   "kept_pct": 99.3,
+   "size_pct": -4.1,
+   "moved_m": 63,
+   "gap_m": 0,
+   "wide_m": 85.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.2 ac vs 5.4 ac stored (-4%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.905225,
+    -91.83199
+   ]
+  },
+  "US-4056+US-4065@area@31.468,-92.161": {
+   "id": "US-4056+US-4065@area@31.468,-92.161",
+   "area": "US-LA",
+   "refs": [
+    "US-4056",
+    "US-4065"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.4,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:49:53Z",
+   "layers": [
+    {
+     "ref": "US-4056",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:54Z"
+    },
+    {
+     "ref": "US-4056",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:56Z"
+    },
+    {
+     "ref": "US-4056",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:57Z"
+    },
+    {
+     "ref": "US-4056",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LOE_LDWF_WMAs_09262025_WGS84_WMAS/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:49:58Z"
+    },
+    {
+     "ref": "US-4065",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:50:00Z"
+    },
+    {
+     "ref": "US-4065",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:50:02Z"
+    },
+    {
+     "ref": "US-4065",
+     "layer": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LOE_LDWF_WMAs_09262025_WGS84_WMAS/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:50:04Z"
+    },
+    {
+     "ref": "US-4065",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.29,
+   "live_acres": 0.28,
+   "kept_pct": 100.0,
+   "size_pct": -0.9,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 21.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.3 ac vs 0.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.468226,
+    -92.161213
+   ]
+  }
+ },
+ "started": "2026-11-01T00:49:18Z",
+ "fers_sha256": "ef00151e26a11b24cad8120021713a7d476c9972562fe4e65eb20127eb3e9d13",
+ "live_rows": 9,
+ "skipped_rows": 29,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:37Z",
+ "complete": true,
+ "summary": {
+  "rows": 9,
+  "verdicts": {
+   "CONFIRMED": 9,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 5,
+   "water-only": 1
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json"
+ ],
+ "requests_this_run": 1030
+}

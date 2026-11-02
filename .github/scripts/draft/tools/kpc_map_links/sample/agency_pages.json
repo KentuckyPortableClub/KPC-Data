@@ -1,0 +1,100 @@
+[
+  {
+    "agency": "Kentucky Department of Fish & Wildlife Resources - WMA & Public Lands Search",
+    "state_or_prov": "KY",
+    "index_url": "https://app.fw.ky.gov/public_lands_search/",
+    "park_refs": [
+      "US-3793",
+      "US-3794",
+      "US-3815",
+      "US-3816",
+      "US-3809",
+      "US-3828",
+      "US-3840",
+      "US-10124",
+      "US-3820",
+      "US-3829",
+      "US-3799"
+    ],
+    "render": "auto",
+    "wait_for": "#LabelList a",
+    "doc_hosts": [
+      "fw.ky.gov"
+    ]
+  },
+  {
+    "agency": "New York State DEC - Wildlife Management Areas",
+    "state_or_prov": "NY",
+    "index_url": "https://dec.ny.gov/places-to-go/wildlife-management-areas",
+    "park_refs": [
+      "US-9136",
+      "US-9140",
+      "US-8079",
+      "US-9139",
+      "US-9083",
+      "US-9130",
+      "US-8078",
+      "US-9066",
+      "US-8100",
+      "US-8099",
+      "US-9098",
+      "US-5237"
+    ],
+    "follow_patterns": [
+      "^Region \\d+ WMAs"
+    ]
+  },
+  {
+    "agency": "Connecticut DEEP State Parks - Park Maps",
+    "state_or_prov": "CT",
+    "index_url": "https://ctparks.com/park-maps",
+    "park_refs": [
+      "US-1648",
+      "US-1649",
+      "US-1653",
+      "US-1662",
+      "US-1672",
+      "US-1676",
+      "US-1686",
+      "US-1717",
+      "US-1724",
+      "US-7528",
+      "US-7548"
+    ]
+  },
+  {
+    "agency": "USDA Forest Service - Daniel Boone National Forest",
+    "state_or_prov": "KY",
+    "index_url": "https://www.fs.usda.gov/r08/danielboone/maps-guides",
+    "park_refs": [
+      "US-4484",
+      "US-3801",
+      "US-10104",
+      "US-11181"
+    ],
+    "doc_hosts": [
+      "usfs-public.box.com",
+      "public.boxcloud.com"
+    ],
+    "url_rewrites": [
+      {
+        "pattern": "^https://usfs-public\\.box\\.com/s/([A-Za-z0-9]+)$",
+        "replace": "https://usfs-public.box.com/shared/static/\\1"
+      }
+    ]
+  },
+  {
+    "agency": "Lake Simcoe Region Conservation Authority - Trail Maps",
+    "state_or_prov": "ON",
+    "index_url": "https://lsrca.on.ca/index.php/enjoy-the-outdoors/trail-maps-and-closure-notices/",
+    "park_refs": [
+      "CA-5997",
+      "CA-6354",
+      "CA-6355",
+      "CA-6356",
+      "CA-6357",
+      "CA-6358",
+      "CA-6607"
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+ "_sample_of": "parking-hunt-oct31.json",
+ "_full_file": {
+  "about": "text",
+  "layers": 75,
+  "rows": 11244
+ },
+ "sample": {
+  "about": "Outside research: parking / access hunt (Brandon Oct 31 5:14 PM), US 5,733 + Canada 5,511 parks with no parking point. 'layers' = the agency-wide parking / access / facility point layers found (for the access bot to pin-test like its own sources); 'rows' per park. LAYER FOUND often means the agency's layer exists but has no point for this park (see notes). Nothing live without chat 11.",
+  "layers": {
+   "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/SCORP_Facilities/FeatureServer/0": {
+    "agency": "Alaska DNR, Division of Parks and Outdoor Recreation",
+    "field": "FACILITYTYPE (Access Point, Airplane Landing Strip, Bike Park, Boat Dock, Boat Launch, Boat Ramp, Boat Takeout, Boating - Motorized, Boating - Non-Motorized, Canoe / Kayak Access, Denali Bike Trailhead, Dog Park, Entrance Station, Gateway Sign, ...)",
+    "parks": 76
+   },
+   "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2": {
+    "agency": "Bureau of Land Management",
+    "field": "FET_TYPE (coded: 7 TRAIL HEAD, 8 PARKING AREA, 2 WATER BASED SITE, 4 DAY USE SITE, 1 INFORMATION CENTER SITE); FET_SUBTYPE gives detail",
+    "parks": 885
+   },
+   "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0": {
+    "agency": "National Park Service",
+    "field": "POITYPE (access types: Trailhead); POINAME; filter UNITCODE = 'DENA'",
+    "parks": 349
+   },
+   "https://services3.arcgis.com/9Ij3DUv1U3250Rno/arcgis/rest/services/Current_FLTFI_Parking_Areas/FeatureServer/0": {
+    "agency": "U.S. Fish and Wildlife Service",
+    "field": "NAME; FROM_DESC (coordinates as text); filter AGENCY = 'FWS' AND FLMA_UNIT_ID = 'Alaska Maritime National Wildlife Refuge'",
+    "parks": 509
+   }
+  },
+  "rows": {
+   "US-4570": {
+    "State / province": "US-AK",
+    "Name": "Iditarod National Historic Trail",
+    "Type": "National Historic Trail",
+    "Official agency": "managing agency not confirmed",
+    "Status": "NOT FOUND",
+    "Notes": "No official federal layer names this site, so its managing agency is not confirmed and no agency-wide layer applies. Checked by name: NPS Land Resources Division boundary list and NPS Public POIs; BLM NLCS Wilderness Areas and National Monuments/NCAs polygons and BLM National Recreation Site Points; FWS National Realty Boundaries and FWS National Wilderness Boundaries; USDA Forest Service EDW Recreation Opportunities."
+   },
+   "US-7884": {
+    "State / province": "US-AK",
+    "Name": "Kenai Mountains-Turnagain Arm National Heritage Area",
+    "Type": "National Heritage Area",
+    "Official agency": "managing agency not confirmed",
+    "Status": "NOT FOUND",
+    "Notes": "No official federal layer names this site, so its managing agency is not confirmed and no agency-wide layer applies. Checked by name: NPS Land Resources Division boundary list and NPS Public POIs; BLM NLCS Wilderness Areas and National Monuments/NCAs polygons and BLM National Recreation Site Points; FWS National Realty Boundaries and FWS National Wilderness Boundaries; USDA Forest Service EDW Recreation Opportunities."
+   },
+   "US-6332": {
+    "State / province": "US-AK",
+    "Name": "Hatcher Pass State Natural Area",
+    "Type": "State Natural Area",
+    "Official agency": "Alaska DNR, Division of Parks and Outdoor Recreation",
+    "Parking / access layer URL": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/SCORP_Facilities/FeatureServer/0",
+    "Name / type field": "FACILITYTYPE (Access Point, Airplane Landing Strip, Bike Park, Boat Dock, Boat Launch, Boat Ramp, Boat Takeout, Boating - Motorized, Boating - Non-Motorized, Canoe / Kayak Access, Denali Bike Trailhead, Dog Park, Entrance Station, Gateway Sign, ...)",
+    "Status": "LAYER FOUND",
+    "Notes": "Agency-wide layer; no point named for this site found. Alaska 2022 SCORP Facilities. Layer scope: covers all Alaska DPOR state park units and ADF&G sites in the 2022 SCORP inventory. Point type field: FACILITYTYPE (Access Point, Airplane Landing Strip, Bike Park, Boat Dock, Boat Launch, Boat Ramp, Boat Takeout, Boating - Motorized, Boating - Non-Motorized, Canoe / Kayak Access, Denali Bike Trailhead, Dog Park, Entrance Station, Gateway Sign, ...). Where I looked: No parking, access or entrance point for this site in the Alaska 2022 SCORP Facilities layer (State of Alaska DPOR/ADFG records), the ASP Park Facility layer (cabins only) and the ASP PUBLIC_FEATURES layer (searched by site name)."
+   },
+   "US-9696": {
+    "State / province": "US-AK",
+    "Name": "Anchorage Coastal Wildlife Refuge",
+    "Type": "Wildlife Refuge",
+    "Official agency": "Alaska Department of Fish and Game",
+    "Parking / access layer URL": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/SCORP_Facilities/FeatureServer/0",
+    "Name / type field": "FACILITYTYPE (Access Point, Airplane Landing Strip, Bike Park, Boat Dock, Boat Launch, Boat Ramp, Boat Takeout, Boating - Motorized, Boating - Non-Motorized, Canoe / Kayak Access, Denali Bike Trailhead, Dog Park, Entrance Station, Gateway Sign, ...)",
+    "Status": "LAYER FOUND",
+    "Notes": "Agency-wide layer; no point named for this site found. Alaska 2022 SCORP Facilities. Layer scope: covers all Alaska DPOR state park units and ADF&G sites in the 2022 SCORP inventory. Point type field: FACILITYTYPE (Access Point, Airplane Landing Strip, Bike Park, Boat Dock, Boat Launch, Boat Ramp, Boat Takeout, Boating - Motorized, Boating - Non-Motorized, Canoe / Kayak Access, Denali Bike Trailhead, Dog Park, Entrance Station, Gateway Sign, ...). Where I looked: No parking, access or entrance point for this site in the Alaska 2022 SCORP Facilities layer (State of Alaska DPOR/ADFG records), the ASP Park Facility layer (cabins only) and the ASP PUBLIC_FEATURES layer (searched by site name); ADF&G publishes no refuge parking point layer that I found."
+   }
+  }
+ }
+}

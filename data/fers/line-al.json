@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "al",
+ "states": [
+  "US-AL"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 14:14 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-11-02",
+ "missing_check": {
+  "FOUND": 25,
+  "DROPPED": 53,
+  "NEVER LOOKED AT": 877
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 193,
+   "pairs whose boxes touch": 193
+  },
+  "pass2": {
+   "agree with the pass before": 81,
+   "date": "2026-11-02",
+   "pairs tested": 40
+  },
+  "pass3": {
+   "agree with the pass before": 39,
+   "date": "2026-11-02",
+   "pairs tested": 40
+  },
+  "pass5": {
+   "checked": 19,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-AL": "data/fers/US-AL.json"
+ },
+ "US-AL": {
+  "rows": 89,
+  "live": 25,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 47,
+  "merged": 16
+ },
+ "states_ready": [
+  "US-AL"
+ ],
+ "states_held": []
+}

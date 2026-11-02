@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "md",
+ "states": [
+  "US-MD"
+ ],
+ "since": "2026-10-31",
+ "date": "2026-10-31 22:49 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 162,
+  "DROPPED": 494,
+  "NEVER LOOKED AT": 1145
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-31",
+   "pairs tested": 1921,
+   "pairs whose boxes touch": 1921
+  },
+  "pass2": {
+   "agree with the pass before": 673,
+   "date": "2026-10-31",
+   "pairs tested": 193
+  },
+  "pass3": {
+   "agree with the pass before": 544,
+   "date": "2026-10-31",
+   "pairs tested": 189
+  },
+  "pass5": {
+   "checked": 31,
+   "date": "2026-10-31",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-MD": "data/fers/US-MD.json"
+ },
+ "US-MD": {
+  "rows": 772,
+  "live": 147,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 8
+  },
+  "dropped": 286,
+  "merged": 331
+ },
+ "states_ready": [
+  "US-MD"
+ ],
+ "states_held": []
+}

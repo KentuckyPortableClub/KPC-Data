@@ -1,0 +1,242 @@
+{
+ "areas": "US-TX,US-CA,US-FL,US-NY,US-PA,US-OH,US-GA,US-NC,US-MI,US-KY,US-TN,US-RI",
+ "gap_s": 2.0,
+ "latency_s": 0.3,
+ "python": "3.12.16",
+ "one_job": {
+  "seconds": 54.0,
+  "rc": 0
+ },
+ "hosts_4_groups": {
+  "matrix": [
+   {
+    "i": 1,
+    "areas": "US-CA,US-TN"
+   },
+   {
+    "i": 2,
+    "areas": "US-NC,US-MI,US-GA,US-RI"
+   },
+   {
+    "i": 3,
+    "areas": "US-NY,US-PA,US-OH"
+   },
+   {
+    "i": 4,
+    "areas": "US-TX,US-FL,US-KY"
+   }
+  ],
+  "plan_note": "kpc_shard hosts: 12 areas -> 4 groups, loads [1200.0, 1400.0, 1200.0, 1400.0], method greedy, busiest host in 2 groups",
+  "groups_touching_host_top4": {
+   "edits.nationalmap.gov": 2,
+   "apps.fs.usda.gov": 2,
+   "services.arcgis.com": 2,
+   "gis.tn.gov": 1
+  },
+  "seconds": 16.9,
+  "job_rcs": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "join_rc": 0,
+  "join": "join: parts=4 files=12 done=12 left=0 skipped=4\nleft=",
+  "speedup": 3.19,
+  "requests": 52,
+  "max_jobs_per_host_request": {
+   "tpwd.texas.gov": 1,
+   "gis.gadnr.org": 1,
+   "gis.tn.gov": 1,
+   "gis.ohiodnr.gov": 1,
+   "gis-michigan.opendata.arcgis.com": 1,
+   "gis.ny.gov": 1,
+   "gis.dcnr.pa.gov": 1,
+   "gis.ncparks.gov": 1,
+   "kygisserver.ky.gov": 1,
+   "edits.nationalmap.gov": 2,
+   "services.arcgis.com": 1,
+   "apps.fs.usda.gov": 1,
+   "rigis.org": 1,
+   "gis.data.ca.gov": 1,
+   "geodata.floridagio.gov": 1
+  },
+  "max_jobs_per_host_area_window": {
+   "tpwd.texas.gov": 1,
+   "gis.gadnr.org": 1,
+   "gis.tn.gov": 1,
+   "gis.ohiodnr.gov": 1,
+   "gis-michigan.opendata.arcgis.com": 1,
+   "gis.ny.gov": 1,
+   "gis.dcnr.pa.gov": 1,
+   "gis.ncparks.gov": 1,
+   "kygisserver.ky.gov": 1,
+   "edits.nationalmap.gov": 2,
+   "services.arcgis.com": 1,
+   "apps.fs.usda.gov": 1,
+   "rigis.org": 1,
+   "gis.data.ca.gov": 1,
+   "geodata.floridagio.gov": 1
+  },
+  "compare_to_one_job": {
+   "files": 12,
+   "same_file_set": true,
+   "byte_identical_except_dates": 12,
+   "byte_identical_raw": 0,
+   "differ": []
+  }
+ },
+ "weight_only_4_groups": {
+  "matrix": [
+   {
+    "i": 1,
+    "areas": "US-CA,US-TN,US-RI"
+   },
+   {
+    "i": 2,
+    "areas": "US-NC,US-FL,US-GA"
+   },
+   {
+    "i": 3,
+    "areas": "US-NY,US-MI,US-KY"
+   },
+   {
+    "i": 4,
+    "areas": "US-TX,US-PA,US-OH"
+   }
+  ],
+  "groups_touching_host_top4": {
+   "edits.nationalmap.gov": 4,
+   "services.arcgis.com": 4,
+   "apps.fs.usda.gov": 3,
+   "gis.tn.gov": 1
+  },
+  "seconds": 16.9,
+  "join_rc": 0,
+  "speedup": 3.19,
+  "max_jobs_per_host_request": {
+   "tpwd.texas.gov": 1,
+   "gis.gadnr.org": 1,
+   "gis.tn.gov": 1,
+   "gis.ohiodnr.gov": 1,
+   "gis-michigan.opendata.arcgis.com": 1,
+   "gis.ny.gov": 1,
+   "gis.dcnr.pa.gov": 1,
+   "gis.ncparks.gov": 1,
+   "kygisserver.ky.gov": 1,
+   "edits.nationalmap.gov": 2,
+   "services.arcgis.com": 2,
+   "apps.fs.usda.gov": 2,
+   "rigis.org": 1,
+   "gis.data.ca.gov": 1,
+   "geodata.floridagio.gov": 1
+  },
+  "max_jobs_per_host_area_window": {
+   "tpwd.texas.gov": 1,
+   "gis.gadnr.org": 1,
+   "gis.tn.gov": 1,
+   "gis.ohiodnr.gov": 1,
+   "gis-michigan.opendata.arcgis.com": 1,
+   "gis.ny.gov": 1,
+   "gis.dcnr.pa.gov": 1,
+   "gis.ncparks.gov": 1,
+   "kygisserver.ky.gov": 1,
+   "edits.nationalmap.gov": 2,
+   "services.arcgis.com": 2,
+   "apps.fs.usda.gov": 2,
+   "rigis.org": 1,
+   "gis.data.ca.gov": 1,
+   "geodata.floridagio.gov": 1
+  },
+  "compare_to_one_job": {
+   "files": 12,
+   "same_file_set": true,
+   "byte_identical_except_dates": 12,
+   "byte_identical_raw": 0,
+   "differ": []
+  }
+ },
+ "chain": {
+  "run1_job_rcs": [
+   3,
+   3,
+   3,
+   3
+  ],
+  "run1_join_rc": 3,
+  "run1_left": "US-FL,US-PA,US-OH,US-GA,US-MI,US-KY,US-TN,US-RI",
+  "run2_matrix": [
+   {
+    "i": 1,
+    "areas": "US-FL,US-KY"
+   },
+   {
+    "i": 2,
+    "areas": "US-MI,US-GA"
+   },
+   {
+    "i": 3,
+    "areas": "US-PA,US-OH"
+   },
+   {
+    "i": 4,
+    "areas": "US-TN,US-RI"
+   }
+  ],
+  "run2_job_rcs": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "run2_join_rc": 0,
+  "run2_join": "join: parts=4 files=8 done=12 left=0 skipped=4\nleft=",
+  "compare_to_one_job": {
+   "files": 12,
+   "same_file_set": true,
+   "byte_identical_except_dates": 12,
+   "byte_identical_raw": 0,
+   "differ": []
+  }
+ },
+ "universal_host": {
+  "groups": 2,
+  "matrix": [
+   {
+    "i": 1,
+    "areas": "US-CA,US-NY,US-MI,US-TN,US-KY,US-RI"
+   },
+   {
+    "i": 2,
+    "areas": "US-TX,US-NC,US-FL,US-PA,US-GA,US-OH"
+   }
+  ],
+  "one_job_seconds": 54.2,
+  "seconds": 27.8,
+  "speedup": 1.95,
+  "max_jobs_per_host_area_window": {
+   "tpwd.texas.gov": 1,
+   "gis.gadnr.org": 1,
+   "gis.tn.gov": 1,
+   "gis.ohiodnr.gov": 1,
+   "gis-michigan.opendata.arcgis.com": 1,
+   "gis.ny.gov": 1,
+   "gis.dcnr.pa.gov": 1,
+   "gis.ncparks.gov": 1,
+   "padus-everyone.example.gov": 2,
+   "kygisserver.ky.gov": 1,
+   "edits.nationalmap.gov": 2,
+   "services.arcgis.com": 2,
+   "apps.fs.usda.gov": 1,
+   "rigis.org": 1,
+   "gis.data.ca.gov": 1,
+   "geodata.floridagio.gov": 1
+  }
+ },
+ "join_refusal": {
+  "duplicated": "US-CA.json",
+  "rc": 4,
+  "message": "join REFUSED, nothing copied: US-CA written by parts [1, 2]\nleft=",
+  "data_dir_created": false
+ }
+}

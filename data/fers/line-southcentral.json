@@ -1,0 +1,140 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "southcentral",
+ "states": [
+  "US-AR",
+  "US-LA",
+  "US-OK",
+  "US-TX",
+  "US-KS",
+  "US-NE"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-29 11:39 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-NE: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-2621+US-4015@same land@40.992,-96.206"
+ ],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 120,
+  "DROPPED": 206,
+  "NEVER LOOKED AT": 9097
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 384,
+   "pairs whose boxes touch": 384
+  },
+  "pass2": {
+   "agree with the pass before": 445,
+   "date": "2026-10-28",
+   "pairs tested": 157
+  },
+  "pass3": {
+   "agree with the pass before": 0,
+   "date": "2026-10-29",
+   "pairs tested": 0
+  },
+  "pass5": {
+   "checked": 78,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-AR": "data/fers/US-AR.json",
+  "US-LA": "data/fers/US-LA.json",
+  "US-OK": "data/fers/US-OK.json",
+  "US-TX": "data/fers/US-TX.json",
+  "US-KS": "data/fers/US-KS.json",
+  "US-NE": "data/fers/US-NE.json"
+ },
+ "US-AR": {
+  "rows": 146,
+  "live": 17,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 95,
+  "merged": 34
+ },
+ "US-LA": {
+  "rows": 42,
+  "live": 8,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 30,
+  "merged": 4
+ },
+ "US-OK": {
+  "rows": 170,
+  "live": 41,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 81,
+  "merged": 45
+ },
+ "US-TX": {
+  "rows": 152,
+  "live": 13,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of Black Gap Wildlife Management Area c": 2,
+   "the official outline of Matagorda Island Wildlife Management": 1,
+   "the official outline of Lower Rio Grande Valley National Wil": 3,
+   "the official outline of J.D. Murphree Wildlife Management Ar": 1,
+   "the official outline of Nannie M. Stringfellow Wildlife Mana": 1,
+   "the official outline of Sam Houston National Forest Wildlife": 1,
+   "the official outline of Caddo Lake Wildlife Management Area": 1,
+   "the official outline of James E. Daughtrey Wildlife Manageme": 1,
+   "the official outline of Sam Houston National Forest could no": 1,
+   "the official outline of Angelina-Neches/Dam B Wildlife Manag": 1,
+   "the outlines overlap, but the Forest Service ownership map": 1,
+   "the official outline of Alazan Bayou Wildlife Management Are": 2,
+   "the official outline of Bannister Wildlife Management Area c": 1,
+   "the official outline of Alabama Creek Wildlife Management Ar": 1,
+   "the official outline of Moore Plantation Wildlife Management": 1,
+   "the official outline of North Toledo Bend Wildlife Managemen": 1
+  },
+  "dropped": 64,
+  "merged": 55
+ },
+ "US-KS": {
+  "rows": 62,
+  "live": 23,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 9,
+  "merged": 29
+ },
+ "US-NE": {
+  "rows": 51,
+  "live": 16,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 8,
+  "merged": 27
+ },
+ "states_ready": [
+  "US-AR",
+  "US-LA",
+  "US-OK",
+  "US-TX",
+  "US-KS"
+ ],
+ "states_held": [
+  "US-NE"
+ ]
+}

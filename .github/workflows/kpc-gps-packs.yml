@@ -1,0 +1,58 @@
+name: KPC GPS packs (state downloads) - on branch gps-packs
+# Oct 31 2026 (chat 10; HQ 9:50 PM + Brandon's rulings). Nightly, never red. Inputs = the club's real files: Kentucky from KPC-Links
+# (kpc_gps_prep.py: pins, parking, the official ky-*.geojson outlines), the rest of the US from data/parkinfo + data/access (pins +
+# parking; their outlines are read live by the site, not stored). Packs on the single-commit branch gps-packs (BRANCH FIRST: replaced
+# each run, so it never grows). Only areas whose inputs changed are rebuilt. Pull-off points stay OFF until Brandon's GO.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 8 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-gps-packs
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            data/ky-answer-key.json
+            /ky-*.geojson
+            /kpc-ky-data.json
+            .github/scripts/kpc_push_data.sh
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p ../out
+          git fetch -q origin gps-packs 2>/dev/null && git --work-tree=../out checkout -q FETCH_HEAD -- . 2>/dev/null; git reset -q
+          python3 .github/scripts/kpc_gps_prep.py ../links ../prep || true
+          for d in parkinfo access; do mkdir -p ../prep/$d; for f in data/$d/US-*.json; do [ -e ../prep/$d/$(basename $f) ] || ln -s "$PWD/$f" ../prep/$d/; done; done
+          AREAS=$(ls ../prep/parkinfo | sed -n 's/^\(US-[A-Z][A-Z]\)\.json$/\1/p' | sort -u | paste -sd, -)
+          P=.github/scripts/draft/tools/kpc_gps/kpc_gpspacks/kpc_gpspacks.py
+          set +e
+          python3 $P --parkinfo ../prep/parkinfo --access ../prep/access --keys data/us-key --outlines ../prep/outlines --areas $AREAS --out ../out --resume --changed-only --max-minutes 50 > /tmp/gps.txt 2>&1
+          E=$?
+          tail -5 /tmp/gps.txt
+          N=$(ls ../out/data/gps/*.gpx.zip 2>/dev/null | wc -l); MB=$(du -sm ../out/data/gps 2>/dev/null | cut -f1)
+          echo "::notice title=GPS packs::exit $E; $N state packs, ${MB:-0} MB on branch gps-packs"
+          python3 .github/scripts/kpc_status.py board 'GPS packs' green "$N state packs built $(date -u +%F) (${MB:-0} MB, branch gps-packs)" 'chat 3 links them on the site after Brandon GO' || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "GPS packs status" data/status 2>/dev/null || true
+          cd ../out && rm -rf .git && git init -q -b gps-packs && git add -A && git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "GPS packs $(date -u +%F) (single commit, replaced each run)" \
+            && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" gps-packs || true
+          true

@@ -1,0 +1,4286 @@
+{
+ "area": "US-PA",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-PA.json",
+ "rows": {
+  "US-0619+US-12234@area@41.833,-79.264": {
+   "id": "US-0619+US-12234@area@41.833,-79.264",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-12234"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 593.5,
+   "stored_wide_m": 706,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:48:56Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:48:56Z"
+    },
+    {
+     "ref": "US-12234",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:48:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 304.56,
+   "live_acres": 384.8,
+   "kept_pct": 100.0,
+   "size_pct": 26.3,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 713.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 26% bigger (384.8 ac vs 304.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    41.83352,
+    -79.264612
+   ]
+  },
+  "US-0619+US-12235+US-8743@area@41.380,-78.856": {
+   "id": "US-0619+US-12235+US-8743@area@41.380,-78.856",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-12235",
+    "US-8743"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.3,
+   "stored_wide_m": 27,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:48:59Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:48:59Z"
+    },
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:49:00Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:49:01Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:49:03Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T03:50:33Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T03:50:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 5.8,
+   "stored_water_pct": 24,
+   "stored_shape_acres": 1.15,
+   "live_acres": 0.04,
+   "kept_pct": 53.5,
+   "size_pct": -96.6,
+   "moved_m": 118,
+   "gap_m": 0,
+   "wide_m": 1.0,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 97% smaller (0.0 ac vs 1.1 ac stored)",
+   "live_center": [
+    41.379845,
+    -78.855497
+   ]
+  },
+  "US-0619+US-12235+US-8743@area@41.384,-78.857": {
+   "id": "US-0619+US-12235+US-8743@area@41.384,-78.857",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-12235",
+    "US-8743"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:40Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:40Z"
+    },
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:41Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:41Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.64,
+   "live_acres": 1.52,
+   "kept_pct": 100.0,
+   "size_pct": -7.3,
+   "moved_m": 45,
+   "gap_m": 0,
+   "wide_m": 23.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.5 ac vs 1.6 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.384473,
+    -78.857399
+   ]
+  },
+  "US-0619+US-12235@area@41.378,-78.849": {
+   "id": "US-0619+US-12235@area@41.378,-78.849",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-12235"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2404.6,
+   "stored_wide_m": 575,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:42Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:42Z"
+    },
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:50:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 1875.22,
+   "live_acres": 1868.36,
+   "kept_pct": 98.3,
+   "size_pct": -0.4,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 568.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1868.4 ac vs 1875.2 ac stored (-0%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.377628,
+    -78.849197
+   ]
+  },
+  "US-0619+US-5465@area@41.545,-79.459": {
+   "id": "US-0619+US-5465@area@41.545,-79.459",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-5465"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 8.3,
+   "stored_wide_m": 39,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:43Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:43Z"
+    },
+    {
+     "ref": "US-5465",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.57,
+   "live_acres": 6.66,
+   "kept_pct": 100.0,
+   "size_pct": 1.3,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 34.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.7 ac vs 6.6 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.546161,
+    -79.458163
+   ]
+  },
+  "US-0619+US-8728@area@41.484,-78.897": {
+   "id": "US-0619+US-8728@area@41.484,-78.897",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-8728"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 71.4,
+   "stored_wide_m": 39,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:45Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:46Z"
+    },
+    {
+     "ref": "US-8728",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:47Z"
+    },
+    {
+     "ref": "US-8728",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 61.2,
+   "live_acres": 59.03,
+   "kept_pct": 99.9,
+   "size_pct": -3.5,
+   "moved_m": 1766,
+   "gap_m": 0,
+   "wide_m": 34.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 59.0 ac vs 61.2 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.484364,
+    -78.958688
+   ]
+  },
+  "US-0619+US-8729@area@41.768,-79.230": {
+   "id": "US-0619+US-8729@area@41.768,-79.230",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-8729"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 10.7,
+   "stored_wide_m": 25,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:49Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:52Z"
+    },
+    {
+     "ref": "US-8729",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:52Z"
+    },
+    {
+     "ref": "US-8729",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.47,
+   "live_acres": 11.68,
+   "kept_pct": 100.0,
+   "size_pct": 23.4,
+   "moved_m": 598,
+   "gap_m": 0,
+   "wide_m": 25.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.7 ac vs 9.5 ac stored (+23%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.748284,
+    -79.230375
+   ]
+  },
+  "US-0619+US-8743@area@41.380,-78.856": {
+   "id": "US-0619+US-8743@area@41.380,-78.856",
+   "area": "US-PA",
+   "refs": [
+    "US-0619",
+    "US-8743"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.3,
+   "stored_wide_m": 27,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:54Z",
+   "layers": [
+    {
+     "ref": "US-0619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:55Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:56Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:56Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T03:50:56Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T03:50:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 5.8,
+   "stored_water_pct": 24,
+   "stored_shape_acres": 1.17,
+   "live_acres": 0.04,
+   "kept_pct": 56.1,
+   "size_pct": -96.7,
+   "moved_m": 117,
+   "gap_m": 0,
+   "wide_m": 1.0,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 97% smaller (0.0 ac vs 1.2 ac stored)",
+   "live_center": [
+    41.379845,
+    -78.855497
+   ]
+  },
+  "US-0626+US-8796@area@39.853,-78.520": {
+   "id": "US-0626+US-8796@area@39.853,-78.520",
+   "area": "US-PA",
+   "refs": [
+    "US-0626",
+    "US-8796"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.4,
+   "stored_wide_m": 61,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:50:57Z",
+   "layers": [
+    {
+     "ref": "US-0626",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:57Z"
+    },
+    {
+     "ref": "US-8796",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:50:59Z"
+    },
+    {
+     "ref": "US-8796",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.92,
+   "live_acres": 5.94,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 59.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.9 ac vs 5.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.853669,
+    -78.5194
+   ]
+  },
+  "US-0681+US-5466+US-8906@area@41.431,-74.818": {
+   "id": "US-0681+US-5466+US-8906@area@41.431,-74.818",
+   "area": "US-PA",
+   "refs": [
+    "US-0681",
+    "US-5466",
+    "US-8906"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.0,
+   "stored_wide_m": 25,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:51:01Z",
+   "layers": [
+    {
+     "ref": "US-0681",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:03Z"
+    },
+    {
+     "ref": "US-5466",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:04Z"
+    },
+    {
+     "ref": "US-8906",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:06Z"
+    },
+    {
+     "ref": "US-8906",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.35,
+   "live_acres": 2.27,
+   "kept_pct": 100.0,
+   "size_pct": -3.3,
+   "moved_m": 40,
+   "gap_m": 0,
+   "wide_m": 21.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.3 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.432257,
+    -74.80389
+   ]
+  },
+  "US-0681+US-5466@area@41.424,-74.808": {
+   "id": "US-0681+US-5466@area@41.424,-74.808",
+   "area": "US-PA",
+   "refs": [
+    "US-0681",
+    "US-5466"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1198.6,
+   "stored_wide_m": 1575,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:51:09Z",
+   "layers": [
+    {
+     "ref": "US-0681",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:10Z"
+    },
+    {
+     "ref": "US-5466",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:51:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1198.05,
+   "live_acres": 1197.97,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 1578.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1198.0 ac vs 1198.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.424645,
+    -74.807516
+   ]
+  },
+  "US-0681+US-5473@area@41.850,-75.139": {
+   "id": "US-0681+US-5473@area@41.850,-75.139",
+   "area": "US-PA",
+   "refs": [
+    "US-0681",
+    "US-5473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 20.0,
+   "stored_wide_m": 169,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:51:10Z",
+   "layers": [
+    {
+     "ref": "US-0681",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:11Z"
+    },
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 19.3,
+   "live_acres": 19.5,
+   "kept_pct": 100.0,
+   "size_pct": 1.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 173.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 19.5 ac vs 19.3 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.849813,
+    -75.139424
+   ]
+  },
+  "US-0681+US-8906@area@41.436,-74.812": {
+   "id": "US-0681+US-8906@area@41.436,-74.812",
+   "area": "US-PA",
+   "refs": [
+    "US-0681",
+    "US-8906"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 979.3,
+   "stored_wide_m": 984,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:51:13Z",
+   "layers": [
+    {
+     "ref": "US-0681",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:13Z"
+    },
+    {
+     "ref": "US-8906",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:13Z"
+    },
+    {
+     "ref": "US-8906",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 976.06,
+   "live_acres": 975.76,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 989.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 975.8 ac vs 976.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.436022,
+    -74.812174
+   ]
+  },
+  "US-0681+US-9007@area@41.552,-75.029": {
+   "id": "US-0681+US-9007@area@41.552,-75.029",
+   "area": "US-PA",
+   "refs": [
+    "US-0681",
+    "US-9007"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 740.0,
+   "stored_wide_m": 1284,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:51:14Z",
+   "layers": [
+    {
+     "ref": "US-0681",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:15Z"
+    },
+    {
+     "ref": "US-9007",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:15Z"
+    },
+    {
+     "ref": "US-9007",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 724.9,
+   "live_acres": 739.69,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 1281.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 739.7 ac vs 724.9 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.552053,
+    -75.028871
+   ]
+  },
+  "US-0684+US-8755@river@40.514,-75.153": {
+   "id": "US-0684+US-8755@river@40.514,-75.153",
+   "area": "US-PA",
+   "refs": [
+    "US-0684",
+    "US-8755"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:51:17Z",
+   "layers": [
+    {
+     "ref": "US-0684",
+     "layer": "saved copy US-0684.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8755",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:17Z"
+    },
+    {
+     "ref": "US-8755",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:18Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T03:51:20Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 6,
+     "read": "2026-11-01T03:51:57Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0684"
+   ],
+   "live_stretch_acres": 5.37,
+   "stored_shape_acres": 4.1,
+   "live_acres": 5.21,
+   "kept_pct": 67.3,
+   "size_pct": 27.1,
+   "moved_m": 249,
+   "gap_m": 0,
+   "wide_m": 62.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 67% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    40.514648,
+    -75.153408
+   ]
+  },
+  "US-0704+US-5468@area@39.809,-79.600": {
+   "id": "US-0704+US-5468@area@39.809,-79.600",
+   "area": "US-PA",
+   "refs": [
+    "US-0704",
+    "US-5468"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.0,
+   "stored_wide_m": 75,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:51:57Z",
+   "layers": [
+    {
+     "ref": "US-0704",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:57Z"
+    },
+    {
+     "ref": "US-5468",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:51:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.14,
+   "live_acres": 9.23,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 53,
+   "gap_m": 0,
+   "wide_m": 72.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.2 ac vs 9.1 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.803915,
+    -79.600692
+   ]
+  },
+  "US-0798+US-8895@area@40.429,-78.508": {
+   "id": "US-0798+US-8895@area@40.429,-78.508",
+   "area": "US-PA",
+   "refs": [
+    "US-0798",
+    "US-8895"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 18.0,
+   "stored_wide_m": 65,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:00Z",
+   "layers": [
+    {
+     "ref": "US-0798",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:01Z"
+    },
+    {
+     "ref": "US-8895",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:03Z"
+    },
+    {
+     "ref": "US-8895",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 16.46,
+   "live_acres": 16.81,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 50,
+   "gap_m": 0,
+   "wide_m": 65.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.8 ac vs 16.5 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.428908,
+    -78.507937
+   ]
+  },
+  "US-12234+US-5464@area@41.283,-79.832": {
+   "id": "US-12234+US-5464@area@41.283,-79.832",
+   "area": "US-PA",
+   "refs": [
+    "US-12234",
+    "US-5464"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 785.3,
+   "stored_wide_m": 355,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:05Z",
+   "layers": [
+    {
+     "ref": "US-12234",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:05Z"
+    },
+    {
+     "ref": "US-5464",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 758.59,
+   "live_acres": 759.44,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 254,
+   "gap_m": 0,
+   "wide_m": 352.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 759.4 ac vs 758.6 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.283715,
+    -79.83017
+   ]
+  },
+  "US-12234+US-8746@area@41.434,-79.642": {
+   "id": "US-12234+US-8746@area@41.434,-79.642",
+   "area": "US-PA",
+   "refs": [
+    "US-12234",
+    "US-8746"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 59.9,
+   "stored_wide_m": 235,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:07Z",
+   "layers": [
+    {
+     "ref": "US-12234",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:07Z"
+    },
+    {
+     "ref": "US-8746",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:08Z"
+    },
+    {
+     "ref": "US-8746",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 58.91,
+   "live_acres": 58.57,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 231.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 58.6 ac vs 58.9 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.43419,
+    -79.642593
+   ]
+  },
+  "US-12234+US-8785@area@41.794,-79.289": {
+   "id": "US-12234+US-8785@area@41.794,-79.289",
+   "area": "US-PA",
+   "refs": [
+    "US-12234",
+    "US-8785"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 427.6,
+   "stored_wide_m": 365,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:10Z",
+   "layers": [
+    {
+     "ref": "US-12234",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:10Z"
+    },
+    {
+     "ref": "US-8785",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:11Z"
+    },
+    {
+     "ref": "US-8785",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 389.99,
+   "live_acres": 390.33,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 457,
+   "gap_m": 0,
+   "wide_m": 364.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 390.3 ac vs 390.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.786499,
+    -79.288964
+   ]
+  },
+  "US-12234+US-9000@area@41.682,-79.423": {
+   "id": "US-12234+US-9000@area@41.682,-79.423",
+   "area": "US-PA",
+   "refs": [
+    "US-12234",
+    "US-9000"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 22.6,
+   "stored_wide_m": 259,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:13Z",
+   "layers": [
+    {
+     "ref": "US-12234",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:13Z"
+    },
+    {
+     "ref": "US-9000",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:13Z"
+    },
+    {
+     "ref": "US-9000",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 21.61,
+   "live_acres": 21.44,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 261.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21.4 ac vs 21.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.68229,
+    -79.423431
+   ]
+  },
+  "US-12235+US-5464@area@41.348,-79.021": {
+   "id": "US-12235+US-5464@area@41.348,-79.021",
+   "area": "US-PA",
+   "refs": [
+    "US-12235",
+    "US-5464"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 138.3,
+   "stored_wide_m": 396,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:15Z",
+   "layers": [
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:15Z"
+    },
+    {
+     "ref": "US-5464",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 136.39,
+   "live_acres": 136.16,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 396.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 136.2 ac vs 136.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.351569,
+    -79.024932
+   ]
+  },
+  "US-12235+US-8728@area@41.403,-78.929": {
+   "id": "US-12235+US-8728@area@41.403,-78.929",
+   "area": "US-PA",
+   "refs": [
+    "US-12235",
+    "US-8728"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 205.7,
+   "stored_wide_m": 375,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:15Z",
+   "layers": [
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:16Z"
+    },
+    {
+     "ref": "US-8728",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:16Z"
+    },
+    {
+     "ref": "US-8728",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 219.09,
+   "live_acres": 205.35,
+   "kept_pct": 97.2,
+   "size_pct": -6.3,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 380.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 205.4 ac vs 219.1 ac stored (-6%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.397948,
+    -78.919732
+   ]
+  },
+  "US-12235+US-8743@area@41.393,-78.890": {
+   "id": "US-12235+US-8743@area@41.393,-78.890",
+   "area": "US-PA",
+   "refs": [
+    "US-12235",
+    "US-8743"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1913.6,
+   "stored_wide_m": 583,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:16Z",
+   "layers": [
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:17Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:17Z"
+    },
+    {
+     "ref": "US-8743",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 1455.99,
+   "live_acres": 1454.22,
+   "kept_pct": 99.9,
+   "size_pct": -0.1,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 577.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1454.2 ac vs 1456.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.393195,
+    -78.889819
+   ]
+  },
+  "US-12235+US-8753@area@41.373,-78.972": {
+   "id": "US-12235+US-8753@area@41.373,-78.972",
+   "area": "US-PA",
+   "refs": [
+    "US-12235",
+    "US-8753"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 398.6,
+   "stored_wide_m": 478,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:18Z",
+   "layers": [
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:18Z"
+    },
+    {
+     "ref": "US-8753",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:18Z"
+    },
+    {
+     "ref": "US-8753",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 395.82,
+   "live_acres": 395.83,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 474.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 395.8 ac vs 395.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.373509,
+    -78.971998
+   ]
+  },
+  "US-12235+US-8977@area@41.316,-79.201": {
+   "id": "US-12235+US-8977@area@41.316,-79.201",
+   "area": "US-PA",
+   "refs": [
+    "US-12235",
+    "US-8977"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 24.2,
+   "stored_wide_m": 181,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:20Z",
+   "layers": [
+    {
+     "ref": "US-12235",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:21Z"
+    },
+    {
+     "ref": "US-8977",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:21Z"
+    },
+    {
+     "ref": "US-8977",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 23.11,
+   "live_acres": 23.41,
+   "kept_pct": 100.0,
+   "size_pct": 1.3,
+   "moved_m": 30,
+   "gap_m": 0,
+   "wide_m": 181.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.4 ac vs 23.1 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.314713,
+    -79.202429
+   ]
+  },
+  "US-12664+US-5477@trail@41.294,-77.342": {
+   "id": "US-12664+US-5477@trail@41.294,-77.342",
+   "area": "US-PA",
+   "refs": [
+    "US-12664",
+    "US-5477"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 43.47,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:52:23Z",
+   "layers": [
+    {
+     "ref": "US-12664",
+     "layer": "saved copy US-12664.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-5477",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:23Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12664"
+   ],
+   "live_stretch_acres": 40.19,
+   "stored_shape_acres": 39.41,
+   "live_acres": 40.19,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 2936,
+   "gap_m": 0,
+   "wide_m": 66.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 40.2 ac vs 39.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.28391,
+    -77.336371
+   ]
+  },
+  "US-12664+US-5478@trail@41.750,-77.424": {
+   "id": "US-12664+US-5478@trail@41.750,-77.424",
+   "area": "US-PA",
+   "refs": [
+    "US-12664",
+    "US-5478"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 25.62,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:52:24Z",
+   "layers": [
+    {
+     "ref": "US-12664",
+     "layer": "saved copy US-12664.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-5478",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:25Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12664"
+   ],
+   "live_stretch_acres": 23.54,
+   "stored_shape_acres": 24.22,
+   "live_acres": 23.54,
+   "kept_pct": 100.0,
+   "size_pct": -2.8,
+   "moved_m": 392,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.5 ac vs 24.2 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.74065,
+    -77.427221
+   ]
+  },
+  "US-12664+US-8767@trail@41.500,-77.475": {
+   "id": "US-12664+US-8767@trail@41.500,-77.475",
+   "area": "US-PA",
+   "refs": [
+    "US-12664",
+    "US-8767"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 25.25,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:52:26Z",
+   "layers": [
+    {
+     "ref": "US-12664",
+     "layer": "saved copy US-12664.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8767",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:27Z"
+    },
+    {
+     "ref": "US-8767",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:28Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12664"
+   ],
+   "live_stretch_acres": 23.59,
+   "stored_shape_acres": 24.1,
+   "live_acres": 23.59,
+   "kept_pct": 100.0,
+   "size_pct": -2.1,
+   "moved_m": 513,
+   "gap_m": 0,
+   "wide_m": 63.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.6 ac vs 24.1 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.502804,
+    -77.473066
+   ]
+  },
+  "US-13201+US-8836@area@39.803,-79.720": {
+   "id": "US-13201+US-8836@area@39.803,-79.720",
+   "area": "US-PA",
+   "refs": [
+    "US-13201",
+    "US-8836"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.9,
+   "stored_wide_m": 35,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:29Z",
+   "layers": [
+    {
+     "ref": "US-13201",
+     "layer": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:30Z"
+    },
+    {
+     "ref": "US-8836",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:31Z"
+    },
+    {
+     "ref": "US-8836",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.49,
+   "live_acres": 3.97,
+   "kept_pct": 100.0,
+   "size_pct": 13.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 33.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.0 ac vs 3.5 ac stored (+14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.803101,
+    -79.719787
+   ]
+  },
+  "US-4357+US-5467@area@41.340,-78.154": {
+   "id": "US-4357+US-5467@area@41.340,-78.154",
+   "area": "US-PA",
+   "refs": [
+    "US-4357",
+    "US-5467"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.1,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:33Z",
+   "layers": [
+    {
+     "ref": "US-4357",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:52:34Z"
+    },
+    {
+     "ref": "US-4357",
+     "layer": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:35Z"
+    },
+    {
+     "ref": "US-5467",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.83,
+   "live_acres": 0.78,
+   "kept_pct": 57.7,
+   "size_pct": -57.2,
+   "moved_m": 25,
+   "gap_m": 0,
+   "wide_m": 30.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 57% smaller (0.8 ac vs 1.8 ac stored)",
+   "live_center": [
+    41.349579,
+    -78.155241
+   ]
+  },
+  "US-4357+US-5475@area@41.294,-77.645": {
+   "id": "US-4357+US-5475@area@41.294,-77.645",
+   "area": "US-PA",
+   "refs": [
+    "US-4357",
+    "US-5475"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 396.8,
+   "stored_wide_m": 730,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:52:38Z",
+   "layers": [
+    {
+     "ref": "US-4357",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:52:38Z"
+    },
+    {
+     "ref": "US-4357",
+     "layer": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:39Z"
+    },
+    {
+     "ref": "US-5475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 420.95,
+   "live_acres": 388.89,
+   "kept_pct": 93.3,
+   "size_pct": -7.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 731.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 388.9 ac vs 420.9 ac stored (-8%), 93% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.294308,
+    -77.644722
+   ]
+  },
+  "US-4360+US-8908@area@40.436,-76.853": {
+   "id": "US-4360+US-8908@area@40.436,-76.853",
+   "area": "US-PA",
+   "refs": [
+    "US-4360",
+    "US-8908"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 5.4,
+   "stored_wide_m": 37,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:52:40Z",
+   "layers": [
+    {
+     "ref": "US-4360",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:41Z"
+    },
+    {
+     "ref": "US-4360",
+     "layer": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:42Z"
+    },
+    {
+     "ref": "US-8908",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:52:43Z"
+    },
+    {
+     "ref": "US-8908",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.0,
+   "live_acres": 3.89,
+   "kept_pct": 100.0,
+   "size_pct": -2.7,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 36.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.9 ac vs 4.0 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.428472,
+    -76.849895
+   ]
+  },
+  "US-5463+US-8748@area@39.820,-78.307": {
+   "id": "US-5463+US-8748@area@39.820,-78.307",
+   "area": "US-PA",
+   "refs": [
+    "US-5463",
+    "US-8748"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.7,
+   "stored_wide_m": 23,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:45Z",
+   "layers": [
+    {
+     "ref": "US-5463",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:45Z"
+    },
+    {
+     "ref": "US-8748",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:47Z"
+    },
+    {
+     "ref": "US-8748",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.65,
+   "live_acres": 3.06,
+   "kept_pct": 100.0,
+   "size_pct": 15.2,
+   "moved_m": 93,
+   "gap_m": 0,
+   "wide_m": 23.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.1 ac vs 2.7 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.812912,
+    -78.310614
+   ]
+  },
+  "US-5463+US-8764@area@39.946,-78.208": {
+   "id": "US-5463+US-8764@area@39.946,-78.208",
+   "area": "US-PA",
+   "refs": [
+    "US-5463",
+    "US-8764"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 16.3,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:50Z",
+   "layers": [
+    {
+     "ref": "US-5463",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:50Z"
+    },
+    {
+     "ref": "US-8764",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:51Z"
+    },
+    {
+     "ref": "US-8764",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13.54,
+   "live_acres": 14.82,
+   "kept_pct": 100.0,
+   "size_pct": 9.4,
+   "moved_m": 927,
+   "gap_m": 0,
+   "wide_m": 33.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.8 ac vs 13.5 ac stored (+9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.93608,
+    -78.186581
+   ]
+  },
+  "US-5463+US-8796@area@39.889,-78.491": {
+   "id": "US-5463+US-8796@area@39.889,-78.491",
+   "area": "US-PA",
+   "refs": [
+    "US-5463",
+    "US-8796"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 32.4,
+   "stored_wide_m": 95,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:52:53Z",
+   "layers": [
+    {
+     "ref": "US-5463",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:55Z"
+    },
+    {
+     "ref": "US-8796",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:55Z"
+    },
+    {
+     "ref": "US-8796",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 27.95,
+   "live_acres": 28.11,
+   "kept_pct": 100.0,
+   "size_pct": 0.6,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 90.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28.1 ac vs 27.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.889656,
+    -78.490911
+   ]
+  },
+  "US-5463+US-8823@area@39.887,-77.969": {
+   "id": "US-5463+US-8823@area@39.887,-77.969",
+   "area": "US-PA",
+   "refs": [
+    "US-5463",
+    "US-8823"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 9.8,
+   "stored_wide_m": 53,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:52:55Z",
+   "layers": [
+    {
+     "ref": "US-5463",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:56Z"
+    },
+    {
+     "ref": "US-8823",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:58Z"
+    },
+    {
+     "ref": "US-8823",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:52:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.89,
+   "live_acres": 8.98,
+   "kept_pct": 100.0,
+   "size_pct": 1.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 50.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.0 ac vs 8.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.881652,
+    -77.971474
+   ]
+  },
+  "US-5463+US-8932@area@39.999,-77.826": {
+   "id": "US-5463+US-8932@area@39.999,-77.826",
+   "area": "US-PA",
+   "refs": [
+    "US-5463",
+    "US-8932"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.0,
+   "stored_wide_m": 59,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:00Z",
+   "layers": [
+    {
+     "ref": "US-5463",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:00Z"
+    },
+    {
+     "ref": "US-8932",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:01Z"
+    },
+    {
+     "ref": "US-8932",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.82,
+   "live_acres": 9.7,
+   "kept_pct": 100.0,
+   "size_pct": 10.0,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 58.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.7 ac vs 8.8 ac stored (+10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.997252,
+    -77.822846
+   ]
+  },
+  "US-5466+US-8827@area@41.042,-75.517": {
+   "id": "US-5466+US-8827@area@41.042,-75.517",
+   "area": "US-PA",
+   "refs": [
+    "US-5466",
+    "US-8827"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 24.3,
+   "stored_wide_m": 37,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:03Z",
+   "layers": [
+    {
+     "ref": "US-5466",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T03:53:03Z"
+    },
+    {
+     "ref": "US-8827",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:04Z"
+    },
+    {
+     "ref": "US-8827",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 21.14,
+   "live_acres": 20.85,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 34.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.8 ac vs 21.1 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.036616,
+    -75.530879
+   ]
+  },
+  "US-5466+US-8877@area@41.397,-75.050": {
+   "id": "US-5466+US-8877@area@41.397,-75.050",
+   "area": "US-PA",
+   "refs": [
+    "US-5466",
+    "US-8877"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.6,
+   "stored_wide_m": 37,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:06Z",
+   "layers": [
+    {
+     "ref": "US-5466",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:53:06Z"
+    },
+    {
+     "ref": "US-8877",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:07Z"
+    },
+    {
+     "ref": "US-8877",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.43,
+   "live_acres": 2.32,
+   "kept_pct": 100.0,
+   "size_pct": -4.3,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 37.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.4 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.396657,
+    -75.049803
+   ]
+  },
+  "US-5466+US-8906@area@41.388,-74.851": {
+   "id": "US-5466+US-8906@area@41.388,-74.851",
+   "area": "US-PA",
+   "refs": [
+    "US-5466",
+    "US-8906"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.0,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:09Z",
+   "layers": [
+    {
+     "ref": "US-5466",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:09Z"
+    },
+    {
+     "ref": "US-8906",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:10Z"
+    },
+    {
+     "ref": "US-8906",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.79,
+   "live_acres": 2.88,
+   "kept_pct": 96.4,
+   "size_pct": 3.4,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 21.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.9 ac vs 2.8 ac stored (+3%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.430901,
+    -74.818029
+   ]
+  },
+  "US-5467+US-8724@area@41.428,-78.329": {
+   "id": "US-5467+US-8724@area@41.428,-78.329",
+   "area": "US-PA",
+   "refs": [
+    "US-5467",
+    "US-8724"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 71.1,
+   "stored_wide_m": 59,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:11Z",
+   "layers": [
+    {
+     "ref": "US-5467",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:11Z"
+    },
+    {
+     "ref": "US-8724",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:12Z"
+    },
+    {
+     "ref": "US-8724",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 31.77,
+   "live_acres": 30.69,
+   "kept_pct": 100.0,
+   "size_pct": -3.4,
+   "moved_m": 70,
+   "gap_m": 0,
+   "wide_m": 55.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.7 ac vs 31.8 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.421816,
+    -78.329126
+   ]
+  },
+  "US-5467+US-8730@area@41.618,-78.278": {
+   "id": "US-5467+US-8730@area@41.618,-78.278",
+   "area": "US-PA",
+   "refs": [
+    "US-5467",
+    "US-8730"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 8.9,
+   "stored_wide_m": 23,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:15Z",
+   "layers": [
+    {
+     "ref": "US-5467",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:15Z"
+    },
+    {
+     "ref": "US-8730",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:16Z"
+    },
+    {
+     "ref": "US-8730",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 6.67,
+   "live_acres": 5.75,
+   "kept_pct": 100.0,
+   "size_pct": -13.8,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 16.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.7 ac vs 6.7 ac stored (-14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.618083,
+    -78.269929
+   ]
+  },
+  "US-5467+US-9002@area@41.325,-78.350": {
+   "id": "US-5467+US-9002@area@41.325,-78.350",
+   "area": "US-PA",
+   "refs": [
+    "US-5467",
+    "US-9002"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 7.8,
+   "stored_wide_m": 55,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:18Z",
+   "layers": [
+    {
+     "ref": "US-5467",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:19Z"
+    },
+    {
+     "ref": "US-9002",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:21Z"
+    },
+    {
+     "ref": "US-9002",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.13,
+   "live_acres": 7.05,
+   "kept_pct": 100.0,
+   "size_pct": -1.2,
+   "moved_m": 108,
+   "gap_m": 0,
+   "wide_m": 52.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.0 ac vs 7.1 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.324831,
+    -78.350067
+   ]
+  },
+  "US-5468+US-8810@area@39.900,-79.318": {
+   "id": "US-5468+US-8810@area@39.900,-79.318",
+   "area": "US-PA",
+   "refs": [
+    "US-5468",
+    "US-8810"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 12.9,
+   "stored_wide_m": 51,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:23Z",
+   "layers": [
+    {
+     "ref": "US-5468",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:23Z"
+    },
+    {
+     "ref": "US-8810",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:24Z"
+    },
+    {
+     "ref": "US-8810",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 9,
+   "stored_shape_acres": 11.08,
+   "live_acres": 10.7,
+   "kept_pct": 100.0,
+   "size_pct": -3.4,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 50.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.7 ac vs 11.1 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.895082,
+    -79.320226
+   ]
+  },
+  "US-5468+US-8836@area@39.823,-79.716": {
+   "id": "US-5468+US-8836@area@39.823,-79.716",
+   "area": "US-PA",
+   "refs": [
+    "US-5468",
+    "US-8836"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.3,
+   "stored_wide_m": 27,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:26Z",
+   "layers": [
+    {
+     "ref": "US-5468",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:26Z"
+    },
+    {
+     "ref": "US-8836",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:27Z"
+    },
+    {
+     "ref": "US-8836",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.56,
+   "live_acres": 3.26,
+   "kept_pct": 100.0,
+   "size_pct": -8.5,
+   "moved_m": 24,
+   "gap_m": 0,
+   "wide_m": 25.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.3 ac vs 3.6 ac stored (-8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.823477,
+    -79.718388
+   ]
+  },
+  "US-5469+US-8856@area@40.716,-78.358": {
+   "id": "US-5469+US-8856@area@40.716,-78.358",
+   "area": "US-PA",
+   "refs": [
+    "US-5469",
+    "US-8856"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.2,
+   "stored_wide_m": 37,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:27Z",
+   "layers": [
+    {
+     "ref": "US-5469",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:28Z"
+    },
+    {
+     "ref": "US-8856",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:30Z"
+    },
+    {
+     "ref": "US-8856",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.83,
+   "live_acres": 2.23,
+   "kept_pct": 100.0,
+   "size_pct": 21.7,
+   "moved_m": 50,
+   "gap_m": 0,
+   "wide_m": 41.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.2 ac vs 1.8 ac stored (+22%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.715184,
+    -78.355228
+   ]
+  },
+  "US-5472+US-8732@area@40.855,-78.146": {
+   "id": "US-5472+US-8732@area@40.855,-78.146",
+   "area": "US-PA",
+   "refs": [
+    "US-5472",
+    "US-8732"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 37.5,
+   "stored_wide_m": 39,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:32Z",
+   "layers": [
+    {
+     "ref": "US-5472",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:33Z"
+    },
+    {
+     "ref": "US-8732",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:35Z"
+    },
+    {
+     "ref": "US-8732",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 33.38,
+   "live_acres": 36.11,
+   "kept_pct": 100.0,
+   "size_pct": 8.2,
+   "moved_m": 117,
+   "gap_m": 0,
+   "wide_m": 42.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 36.1 ac vs 33.4 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.845372,
+    -78.135323
+   ]
+  },
+  "US-5472+US-8733@area@41.279,-78.377": {
+   "id": "US-5472+US-8733@area@41.279,-78.377",
+   "area": "US-PA",
+   "refs": [
+    "US-5472",
+    "US-8733"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 55.6,
+   "stored_wide_m": 105,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:37Z",
+   "layers": [
+    {
+     "ref": "US-5472",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:37Z"
+    },
+    {
+     "ref": "US-8733",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:38Z"
+    },
+    {
+     "ref": "US-8733",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 51.09,
+   "live_acres": 55.49,
+   "kept_pct": 100.0,
+   "size_pct": 8.6,
+   "moved_m": 1240,
+   "gap_m": 0,
+   "wide_m": 107.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 55.5 ac vs 51.1 ac stored (+9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.265716,
+    -78.377288
+   ]
+  },
+  "US-5472+US-8789@area@41.120,-78.487": {
+   "id": "US-5472+US-8789@area@41.120,-78.487",
+   "area": "US-PA",
+   "refs": [
+    "US-5472",
+    "US-8789"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 41.5,
+   "stored_wide_m": 55,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:40Z",
+   "layers": [
+    {
+     "ref": "US-5472",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:40Z"
+    },
+    {
+     "ref": "US-8789",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:41Z"
+    },
+    {
+     "ref": "US-8789",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 34.27,
+   "live_acres": 36.99,
+   "kept_pct": 100.0,
+   "size_pct": 7.9,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 54.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 37.0 ac vs 34.3 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.119734,
+    -78.486835
+   ]
+  },
+  "US-5472+US-8793@area@41.162,-78.354": {
+   "id": "US-5472+US-8793@area@41.162,-78.354",
+   "area": "US-PA",
+   "refs": [
+    "US-5472",
+    "US-8793"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 9.0,
+   "stored_wide_m": 45,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:43Z",
+   "layers": [
+    {
+     "ref": "US-5472",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:43Z"
+    },
+    {
+     "ref": "US-8793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:44Z"
+    },
+    {
+     "ref": "US-8793",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.59,
+   "live_acres": 7.74,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 44.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.7 ac vs 7.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.161723,
+    -78.354232
+   ]
+  },
+  "US-5472+US-9021@area@41.202,-78.608": {
+   "id": "US-5472+US-9021@area@41.202,-78.608",
+   "area": "US-PA",
+   "refs": [
+    "US-5472",
+    "US-9021"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.5,
+   "stored_wide_m": 25,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:53:46Z",
+   "layers": [
+    {
+     "ref": "US-5472",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:47Z"
+    },
+    {
+     "ref": "US-9021",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:53:48Z"
+    },
+    {
+     "ref": "US-9021",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.42,
+   "live_acres": 2.41,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 29.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.204785,
+    -78.600365
+   ]
+  },
+  "US-5473+US-8790@area@41.199,-75.649": {
+   "id": "US-5473+US-8790@area@41.199,-75.649",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8790"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 14.0,
+   "stored_wide_m": 37,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:50Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:53:50Z"
+    },
+    {
+     "ref": "US-8790",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:51Z"
+    },
+    {
+     "ref": "US-8790",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 11.52,
+   "live_acres": 10.82,
+   "kept_pct": 100.0,
+   "size_pct": -6.1,
+   "moved_m": 49,
+   "gap_m": 0,
+   "wide_m": 32.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.8 ac vs 11.5 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.191229,
+    -75.64911
+   ]
+  },
+  "US-5473+US-8818@area@41.159,-75.821": {
+   "id": "US-5473+US-8818@area@41.159,-75.821",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8818"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.5,
+   "stored_wide_m": 59,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:53Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:53:53Z"
+    },
+    {
+     "ref": "US-8818",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:54Z"
+    },
+    {
+     "ref": "US-8818",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 12.49,
+   "live_acres": 12.49,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 55.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.5 ac vs 12.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.159131,
+    -75.82105
+   ]
+  },
+  "US-5473+US-8825@area@41.219,-75.542": {
+   "id": "US-5473+US-8825@area@41.219,-75.542",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8825"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.8,
+   "stored_wide_m": 59,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:56Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:53:56Z"
+    },
+    {
+     "ref": "US-8825",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:57Z"
+    },
+    {
+     "ref": "US-8825",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:53:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.84,
+   "live_acres": 4.15,
+   "kept_pct": 100.0,
+   "size_pct": 8.1,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 57.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.2 ac vs 3.8 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.213473,
+    -75.547614
+   ]
+  },
+  "US-5473+US-8833@area@41.259,-75.566": {
+   "id": "US-5473+US-8833@area@41.259,-75.566",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8833"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 18.3,
+   "stored_wide_m": 55,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:53:59Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:54:00Z"
+    },
+    {
+     "ref": "US-8833",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:01Z"
+    },
+    {
+     "ref": "US-8833",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 16.14,
+   "live_acres": 15.93,
+   "kept_pct": 100.0,
+   "size_pct": -1.3,
+   "moved_m": 76,
+   "gap_m": 0,
+   "wide_m": 50.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15.9 ac vs 16.1 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.258319,
+    -75.583916
+   ]
+  },
+  "US-5473+US-8884@area@41.112,-75.906": {
+   "id": "US-5473+US-8884@area@41.112,-75.906",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8884"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 9.9,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:03Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:54:03Z"
+    },
+    {
+     "ref": "US-8884",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:05Z"
+    },
+    {
+     "ref": "US-8884",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8.43,
+   "live_acres": 8.75,
+   "kept_pct": 100.0,
+   "size_pct": 3.9,
+   "moved_m": 481,
+   "gap_m": 0,
+   "wide_m": 22.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.8 ac vs 8.4 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.108085,
+    -75.88438
+   ]
+  },
+  "US-5473+US-8904@area@41.193,-75.892": {
+   "id": "US-5473+US-8904@area@41.193,-75.892",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8904"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.5,
+   "stored_wide_m": 87,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:06Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:07Z"
+    },
+    {
+     "ref": "US-8904",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:08Z"
+    },
+    {
+     "ref": "US-8904",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.24,
+   "live_acres": 4.41,
+   "kept_pct": 100.0,
+   "size_pct": 4.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 90.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.4 ac vs 4.2 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.192628,
+    -75.891796
+   ]
+  },
+  "US-5473+US-8993@area@41.464,-75.515": {
+   "id": "US-5473+US-8993@area@41.464,-75.515",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-8993"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.8,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:10Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:10Z"
+    },
+    {
+     "ref": "US-8993",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:11Z"
+    },
+    {
+     "ref": "US-8993",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.3,
+   "live_acres": 2.83,
+   "kept_pct": 100.0,
+   "size_pct": -14.2,
+   "moved_m": 72,
+   "gap_m": 0,
+   "wide_m": 17.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.8 ac vs 3.3 ac stored (-14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.458479,
+    -75.507367
+   ]
+  },
+  "US-5473+US-9003@area@41.258,-75.398": {
+   "id": "US-5473+US-9003@area@41.258,-75.398",
+   "area": "US-PA",
+   "refs": [
+    "US-5473",
+    "US-9003"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:13Z",
+   "layers": [
+    {
+     "ref": "US-5473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:14Z"
+    },
+    {
+     "ref": "US-9003",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:54:15Z"
+    },
+    {
+     "ref": "US-9003",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.72,
+   "live_acres": 1.86,
+   "kept_pct": 100.0,
+   "size_pct": 8.4,
+   "moved_m": 33,
+   "gap_m": 0,
+   "wide_m": 19.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.9 ac vs 1.7 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.257179,
+    -75.377901
+   ]
+  },
+  "US-5474+US-8811@area@40.547,-77.860": {
+   "id": "US-5474+US-8811@area@40.547,-77.860",
+   "area": "US-PA",
+   "refs": [
+    "US-5474",
+    "US-8811"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.7,
+   "stored_wide_m": 49,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:17Z",
+   "layers": [
+    {
+     "ref": "US-5474",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:17Z"
+    },
+    {
+     "ref": "US-8811",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:19Z"
+    },
+    {
+     "ref": "US-8811",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.88,
+   "live_acres": 4.95,
+   "kept_pct": 100.0,
+   "size_pct": 1.4,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 47.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.0 ac vs 4.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.542488,
+    -77.857908
+   ]
+  },
+  "US-5475+US-8788@area@41.225,-77.497": {
+   "id": "US-5475+US-8788@area@41.225,-77.497",
+   "area": "US-PA",
+   "refs": [
+    "US-5475",
+    "US-8788"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 7.8,
+   "stored_wide_m": 55,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:21Z",
+   "layers": [
+    {
+     "ref": "US-5475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:21Z"
+    },
+    {
+     "ref": "US-8788",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:22Z"
+    },
+    {
+     "ref": "US-8788",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.87,
+   "live_acres": 6.54,
+   "kept_pct": 100.0,
+   "size_pct": -4.8,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 45.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.5 ac vs 6.9 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.225191,
+    -77.496669
+   ]
+  },
+  "US-5475+US-8799@area@41.128,-77.961": {
+   "id": "US-5475+US-8799@area@41.128,-77.961",
+   "area": "US-PA",
+   "refs": [
+    "US-5475",
+    "US-8799"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.1,
+   "stored_wide_m": 55,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:24Z",
+   "layers": [
+    {
+     "ref": "US-5475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:24Z"
+    },
+    {
+     "ref": "US-8799",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:25Z"
+    },
+    {
+     "ref": "US-8799",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.67,
+   "live_acres": 4.31,
+   "kept_pct": 100.0,
+   "size_pct": -7.7,
+   "moved_m": 81,
+   "gap_m": 0,
+   "wide_m": 54.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.3 ac vs 4.7 ac stored (-8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.125488,
+    -77.961196
+   ]
+  },
+  "US-5475+US-9011@area@41.151,-78.012": {
+   "id": "US-5475+US-9011@area@41.151,-78.012",
+   "area": "US-PA",
+   "refs": [
+    "US-5475",
+    "US-9011"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:54:27Z",
+   "layers": [
+    {
+     "ref": "US-5475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:28Z"
+    },
+    {
+     "ref": "US-9011",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:29Z"
+    },
+    {
+     "ref": "US-9011",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.9,
+   "live_acres": 0.92,
+   "kept_pct": 100.0,
+   "size_pct": 1.4,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 20.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.9 ac vs 0.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.151531,
+    -78.011579
+   ]
+  },
+  "US-5476+US-8763@area@41.781,-77.653": {
+   "id": "US-5476+US-8763@area@41.781,-77.653",
+   "area": "US-PA",
+   "refs": [
+    "US-5476",
+    "US-8763"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 105.5,
+   "stored_wide_m": 145,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:31Z",
+   "layers": [
+    {
+     "ref": "US-5476",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:31Z"
+    },
+    {
+     "ref": "US-8763",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:33Z"
+    },
+    {
+     "ref": "US-8763",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 100.33,
+   "live_acres": 99.7,
+   "kept_pct": 99.6,
+   "size_pct": -0.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 142.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 99.7 ac vs 100.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.781144,
+    -77.652528
+   ]
+  },
+  "US-5477+US-8774@area@41.503,-77.390": {
+   "id": "US-5477+US-8774@area@41.503,-77.390",
+   "area": "US-PA",
+   "refs": [
+    "US-5477",
+    "US-8774"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 127.8,
+   "stored_wide_m": 85,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:35Z",
+   "layers": [
+    {
+     "ref": "US-5477",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:35Z"
+    },
+    {
+     "ref": "US-8774",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:36Z"
+    },
+    {
+     "ref": "US-8774",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 119.1,
+   "live_acres": 116.62,
+   "kept_pct": 100.0,
+   "size_pct": -2.1,
+   "moved_m": 1109,
+   "gap_m": 0,
+   "wide_m": 83.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 116.6 ac vs 119.1 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.489207,
+    -77.390294
+   ]
+  },
+  "US-5478+US-8774@area@41.534,-77.419": {
+   "id": "US-5478+US-8774@area@41.534,-77.419",
+   "area": "US-PA",
+   "refs": [
+    "US-5478",
+    "US-8774"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:38Z",
+   "layers": [
+    {
+     "ref": "US-5478",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:38Z"
+    },
+    {
+     "ref": "US-8774",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:40Z"
+    },
+    {
+     "ref": "US-8774",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.63,
+   "live_acres": 5.74,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 551,
+   "gap_m": 0,
+   "wide_m": 25.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.7 ac vs 5.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.529807,
+    -77.418804
+   ]
+  },
+  "US-5480+US-8779@area@40.519,-76.328": {
+   "id": "US-5480+US-8779@area@40.519,-76.328",
+   "area": "US-PA",
+   "refs": [
+    "US-5480",
+    "US-8779"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.9,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:40Z",
+   "layers": [
+    {
+     "ref": "US-5480",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:41Z"
+    },
+    {
+     "ref": "US-8779",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:44Z"
+    },
+    {
+     "ref": "US-8779",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.57,
+   "live_acres": 0.62,
+   "kept_pct": 99.9,
+   "size_pct": 8.8,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 19.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.6 ac vs 0.6 ac stored (+9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.519513,
+    -76.328339
+   ]
+  },
+  "US-5480+US-8805@area@40.589,-76.003": {
+   "id": "US-5480+US-8805@area@40.589,-76.003",
+   "area": "US-PA",
+   "refs": [
+    "US-5480",
+    "US-8805"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 54.2,
+   "stored_wide_m": 89,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:46Z",
+   "layers": [
+    {
+     "ref": "US-5480",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:54:46Z"
+    },
+    {
+     "ref": "US-8805",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:47Z"
+    },
+    {
+     "ref": "US-8805",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 49.28,
+   "live_acres": 48.54,
+   "kept_pct": 100.0,
+   "size_pct": -1.5,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 83.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 48.5 ac vs 49.3 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.603962,
+    -76.017093
+   ]
+  },
+  "US-5480+US-8809@area@40.547,-76.161": {
+   "id": "US-5480+US-8809@area@40.547,-76.161",
+   "area": "US-PA",
+   "refs": [
+    "US-5480",
+    "US-8809"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 32.9,
+   "stored_wide_m": 75,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:49Z",
+   "layers": [
+    {
+     "ref": "US-5480",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:54:49Z"
+    },
+    {
+     "ref": "US-8809",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:50Z"
+    },
+    {
+     "ref": "US-8809",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 29.96,
+   "live_acres": 28.81,
+   "kept_pct": 100.0,
+   "size_pct": -3.8,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 68.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28.8 ac vs 30.0 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.546356,
+    -76.160612
+   ]
+  },
+  "US-5480+US-8907@area@40.530,-76.717": {
+   "id": "US-5480+US-8907@area@40.530,-76.717",
+   "area": "US-PA",
+   "refs": [
+    "US-5480",
+    "US-8907"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 29.9,
+   "stored_wide_m": 105,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:52Z",
+   "layers": [
+    {
+     "ref": "US-5480",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:52Z"
+    },
+    {
+     "ref": "US-8907",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:53Z"
+    },
+    {
+     "ref": "US-8907",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 27.45,
+   "live_acres": 27.0,
+   "kept_pct": 99.9,
+   "size_pct": -1.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 108.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 27.0 ac vs 27.5 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.52987,
+    -76.717208
+   ]
+  },
+  "US-5480+US-8930@area@40.817,-76.837": {
+   "id": "US-5480+US-8930@area@40.817,-76.837",
+   "area": "US-PA",
+   "refs": [
+    "US-5480",
+    "US-8930"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.1,
+   "stored_wide_m": 89,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:55Z",
+   "layers": [
+    {
+     "ref": "US-5480",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:55Z"
+    },
+    {
+     "ref": "US-8930",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:56Z"
+    },
+    {
+     "ref": "US-8930",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 5.69,
+   "live_acres": 5.73,
+   "kept_pct": 100.0,
+   "size_pct": 0.6,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 86.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.7 ac vs 5.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.816466,
+    -76.83696
+   ]
+  },
+  "US-8745+US-8854@area@40.241,-76.304": {
+   "id": "US-8745+US-8854@area@40.241,-76.304",
+   "area": "US-PA",
+   "refs": [
+    "US-8745",
+    "US-8854"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 285.8,
+   "stored_wide_m": 1035,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:54:58Z",
+   "layers": [
+    {
+     "ref": "US-8745",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:54:59Z"
+    },
+    {
+     "ref": "US-8854",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:01Z"
+    },
+    {
+     "ref": "US-8854",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 285.53,
+   "live_acres": 284.69,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 1032.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 284.7 ac vs 285.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.241545,
+    -76.304004
+   ]
+  },
+  "US-8785+US-8904@area@41.160,-75.944": {
+   "id": "US-8785+US-8904@area@41.160,-75.944",
+   "area": "US-PA",
+   "refs": [
+    "US-8785",
+    "US-8904"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: this spot is 289 km from PA 086 State Game Land's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join (held until checked; rule B13)",
+   "stored_acres": 7.4,
+   "stored_wide_m": 61,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:55:03Z",
+   "layers": [
+    {
+     "ref": "US-8785",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:03Z"
+    },
+    {
+     "ref": "US-8785",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:55:04Z"
+    },
+    {
+     "ref": "US-8904",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:04Z"
+    },
+    {
+     "ref": "US-8904",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 97,
+   "stored_shape_acres": 6.52,
+   "live_acres": 6.78,
+   "kept_pct": 100.0,
+   "size_pct": 4.0,
+   "moved_m": 40,
+   "gap_m": 0,
+   "wide_m": 63.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.8 ac vs 6.5 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.159631,
+    -75.944479
+   ]
+  },
+  "US-8928+US-8946@area@40.257,-77.787": {
+   "id": "US-8928+US-8946@area@40.257,-77.787",
+   "area": "US-PA",
+   "refs": [
+    "US-8928",
+    "US-8946"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: this spot is 118 km from PA 231 State Game Land's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join (held until checked; rule B13)",
+   "stored_acres": 729.3,
+   "stored_wide_m": 1213,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:55:05Z",
+   "layers": [
+    {
+     "ref": "US-8928",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:05Z"
+    },
+    {
+     "ref": "US-8928",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:55:06Z"
+    },
+    {
+     "ref": "US-8946",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:07Z"
+    },
+    {
+     "ref": "US-8946",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 728.87,
+   "live_acres": 729.03,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 1229.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 729.0 ac vs 728.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.256893,
+    -77.786654
+   ]
+  },
+  "US-8933+US-9016@area@41.808,-75.540": {
+   "id": "US-8933+US-9016@area@41.808,-75.540",
+   "area": "US-PA",
+   "refs": [
+    "US-8933",
+    "US-9016"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: this spot is 128 km from PA 326 State Game Land's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join (held until checked; rule B13)",
+   "stored_acres": 40.6,
+   "stored_wide_m": 373,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T03:55:09Z",
+   "layers": [
+    {
+     "ref": "US-8933",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:09Z"
+    },
+    {
+     "ref": "US-8933",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:10Z"
+    },
+    {
+     "ref": "US-9016",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:12Z"
+    },
+    {
+     "ref": "US-9016",
+     "layer": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:55:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 39.84,
+   "live_acres": 39.81,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 368.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 39.8 ac vs 39.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.808478,
+    -75.539699
+   ]
+  }
+ },
+ "started": "2026-11-01T03:48:56Z",
+ "fers_sha256": "193df6b69297da18a0497a7a30265a2d48ab8fe74fa2b541f092c132421a2a6f",
+ "live_rows": 76,
+ "skipped_rows": 560,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:42Z",
+ "complete": true,
+ "summary": {
+  "rows": 76,
+  "verdicts": {
+   "CONFIRMED": 71,
+   "SHRUNK": 4,
+   "GREW": 1,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "water-only": 2,
+   "small overlap (under 50 yd across)": 29,
+   "trail line from the club saved copy (not re-read live)": 4
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json",
+  "data/us-key/US-OR.json",
+  "data/us-key/US-PA.json"
+ ],
+ "requests_this_run": 1030
+}

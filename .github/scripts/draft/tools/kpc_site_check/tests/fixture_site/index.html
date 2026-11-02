@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,"><title>K4TEST fixture tool</title>
+<style>body{margin:0;font:14px sans-serif} #card{max-width:340px;border:1px solid #888;padding:6px;margin:6px} #card.wide{width:700px;max-width:none}</style>
+<script>
+// A tiny fake of Leaflet: enough for the robot's outline counter (L.Map.prototype.addLayer + L.Path).
+window.L = (function(){
+  function Map(){ this.layers = []; } Map.prototype.addLayer = function(l){ this.layers.push(l); return this; };
+  function Path(o){ this.options = o || {}; } function CircleMarker(o){ Path.call(this, o); }
+  CircleMarker.prototype = Object.create(Path.prototype);
+  return {Map: Map, Path: Path, CircleMarker: CircleMarker};
+})();
+</script></head>
+<body>
+<div class="leaflet-container" id="map"></div>
+<input id="q" placeholder="park ref"><button id="go">Go</button>
+<div id="status"></div>
+<div id="card"></div>
+<aside class="kpc-disclaim">KPC tools are planning aids, not official sources.</aside>
+<script>
+const FERS = "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.";
+const map = new L.Map();
+map.addLayer(new L.Path({pane: 'kpcTrails'}));      // trail layer: must not count
+map.addLayer(new L.CircleMarker({}));               // a pin dot: must not count
+const PARKS = {
+  "K4TEST-1": {label: "Official outline: Test Lake State Park (Test Agency)", outline: true, fers: true},
+  "K4TEST-2": {label: "Approximate outline: Test Woods (drawn from a picture map)", outline: true},
+  "K4TEST-3": {label: "Sorry, no boundary available for this park; pin only.", outline: false, wide: true, err: true}
+};
+document.getElementById('go').onclick = () => {
+  const ref = document.getElementById('q').value.trim(), p = PARKS[ref], card = document.getElementById('card');
+  if (!p) { document.getElementById('status').textContent = 'not found'; return; }
+  setTimeout(() => {
+    if (p.outline) map.addLayer(new L.Path({pane: 'overlayPane'}));
+    document.getElementById('status').textContent = p.label;
+    card.className = p.wide ? 'wide' : '';
+    card.innerHTML = '<b>' + ref + '</b><div class="grade"></div>' + (p.fers ? '<p class="fers">' + FERS + '</p>' : '');
+    if (p.err) console.error('fixture: a data file failed to load');
+  }, 300);
+};
+</script>
+</body></html>

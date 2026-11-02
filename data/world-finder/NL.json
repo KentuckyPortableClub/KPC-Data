@@ -1,0 +1,151 @@
+{
+ "cc": "NL",
+ "run": "2026-10-30",
+ "parks": 312,
+ "open": 231,
+ "key_candidates": 19,
+ "layer_candidates": 0,
+ "layers_tried": [
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/273",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/275",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/293",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/259",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/294",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/929",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/930",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/304",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/305",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/307",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/301",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer/280",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer/273",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer/275",
+  "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer/266"
+ ],
+ "no_layer_groups": {
+  "provincial park": [
+   "NL-0067",
+   "NL-0221",
+   "NL-0060",
+   "NL-0071",
+   "NL-0149",
+   "NL-0150",
+   "NL-0151",
+   "NL-0160",
+   "NL-0225",
+   "NL-0034",
+   "NL-0136",
+   "NL-0137",
+   "NL-0138",
+   "NL-0139",
+   "NL-0140",
+   "NL-0163",
+   "NL-0164",
+   "NL-0066",
+   "NL-0075",
+   "NL-0083",
+   "NL-0130",
+   "NL-0274"
+  ],
+  "world heritage site": [
+   "NL-0169",
+   "NL-0262",
+   "NL-0306",
+   "NL-0279",
+   "NL-0280"
+  ],
+  "park": [
+   "NL-0170",
+   "NL-0286",
+   "NL-0288",
+   "NL-0152",
+   "NL-0153",
+   "NL-0154",
+   "NL-0158",
+   "NL-0175",
+   "NL-0176",
+   "NL-0184",
+   "NL-0185",
+   "NL-0033",
+   "NL-0143",
+   "NL-0144",
+   "NL-0147",
+   "NL-0172",
+   "NL-0177",
+   "NL-0181",
+   "NL-0189",
+   "NL-0190",
+   "NL-0282",
+   "NL-0277",
+   "NL-0056",
+   "NL-0192",
+   "NL-0304",
+   "NL-0109"
+  ],
+  "national park": [
+   "NL-0196",
+   "NL-0243",
+   "NL-0245"
+  ],
+  "nature reserve": [
+   "NL-0198"
+  ],
+  "natura 2000": [
+   "NL-0236",
+   "NL-0237",
+   "NL-0250",
+   "NL-0318",
+   "NL-0141",
+   "NL-0161",
+   "NL-0255",
+   "NL-0273"
+  ],
+  "landscape park": [
+   "NL-0239",
+   "NL-0241",
+   "NL-0242",
+   "NL-0244",
+   "NL-0246",
+   "NL-0267",
+   "NL-0325",
+   "NL-0098"
+  ],
+  "historic site": [
+   "NL-0261",
+   "NL-0203",
+   "NL-0269"
+  ],
+  "national recreation trail": [
+   "NL-0264",
+   "NL-0297",
+   "NL-0260"
+  ],
+  "scenic site": [
+   "NL-0292",
+   "NL-0293"
+  ],
+  "nature park": [
+   "NL-0298",
+   "NL-0173",
+   "NL-0322"
+  ],
+  "state harbor": [
+   "NL-0146"
+  ],
+  "recreation park": [
+   "NL-0148",
+   "NL-0166",
+   "NL-0179",
+   "NL-0309"
+  ],
+  "nature and landscape complex": [
+   "NL-0263"
+  ],
+  "national reserve": [
+   "NL-0197"
+  ]
+ },
+ "layers_found_new": 0,
+ "stage1": "done",
+ "seconds": 1240
+}

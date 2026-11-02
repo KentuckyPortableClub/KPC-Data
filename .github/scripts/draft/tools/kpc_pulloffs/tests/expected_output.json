@@ -1,0 +1,71 @@
+{
+ "about": "Expected result of the offline selftest on tests/scene.json (synthetic NAIP photo + TIGER-like roads). Positions are compared within about 7 m, scores within 0.05.",
+ "refs_with_output": [
+  "US-9001",
+  "US-9003"
+ ],
+ "rows": {
+  "US-9001": [
+   {
+    "case": "L1: gravel lot inside the park on Test Hwy 715 is found",
+    "lat": 37.70292,
+    "lon": -83.698746,
+    "inside": true,
+    "dist_out_m": 0,
+    "score": 1.0,
+    "road_name": "Test Hwy 715",
+    "road_class": "S1200",
+    "photo_year": 2024,
+    "why_has": [
+     "Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.",
+     "S1780"
+    ]
+   },
+   {
+    "case": "L2: gravel lot ~75 m outside on Ridge Rd is found, labelled outside",
+    "lat": 37.706238,
+    "lon": -83.693209,
+    "inside": false,
+    "dist_out_m": 75,
+    "score": 1.0,
+    "road_name": "Ridge Rd",
+    "road_class": "S1400",
+    "photo_year": 2024,
+    "why_has": [
+     "Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.",
+     "About 80 m outside the boundary.",
+     "P (parking) symbol on the agency picture map"
+    ]
+   }
+  ],
+  "US-9003": [
+   {
+    "case": "L5: lot ~320 m outside a park with no access points (ruling G-P2) is found, photo marked old",
+    "lat": 37.707049,
+    "lon": -83.675076,
+    "inside": false,
+    "dist_out_m": 319,
+    "score": 0.9,
+    "road_name": "Lonely Rd",
+    "road_class": "S1400",
+    "photo_year": 2019,
+    "why_has": [
+     "Just outside the park's boundary: walk in to activate.",
+     "About 320 m outside the boundary.",
+     "photo is old (2019)"
+    ]
+   }
+  ]
+ },
+ "kept_out_has": [
+  "plain road shoulder or strip about 5 m wide",
+  "too small: about 144 m²",
+  "touches only an interstate, ramp, alley or private road",
+  "large bare brown ground",
+  "below the cut (0.45 < 0.5)",
+  "duplicate: an official access point is 0 m away",
+  "next to buildings outside the park: a house, farm or business lot",
+  "(building outline from FEMA USA Structures)"
+ ],
+ "report_has": "inside the search band: 2; found within 50 m: 1 (50%)"
+}

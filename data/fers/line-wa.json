@@ -1,0 +1,64 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "wa",
+ "states": [
+  "US-WA"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 08:50 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 118,
+  "DROPPED": 226,
+  "NEVER LOOKED AT": 1635
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 1551,
+   "pairs whose boxes touch": 1551
+  },
+  "pass2": {
+   "agree with the pass before": 1537,
+   "date": "2026-11-02",
+   "pairs tested": 304
+  },
+  "pass3": {
+   "agree with the pass before": 0,
+   "date": "2026-11-02",
+   "pairs tested": 0
+  },
+  "pass5": {
+   "checked": 176,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-WA": "data/fers/US-WA.json"
+ },
+ "US-WA": {
+  "rows": 1615,
+  "live": 218,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of Peace Arch Provincial Park could not": 1,
+   "this spot is 170 km from Sherman Creek Wildlife Area State F": 1,
+   "this spot is 114 km from Sunnyside Wildlife Area State Fish": 1,
+   "this spot is 105 km from Sherman Creek Wildlife Area State F": 1,
+   "this spot is 120 km from Sunnyside Wildlife Area State Fish": 1,
+   "this spot is 121 km from Sunnyside Wildlife Area State Fish": 2,
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 810,
+  "merged": 577
+ },
+ "states_ready": [
+  "US-WA"
+ ],
+ "states_held": []
+}

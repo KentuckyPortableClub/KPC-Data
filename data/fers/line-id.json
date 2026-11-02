@@ -1,0 +1,59 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "id",
+ "states": [
+  "US-ID"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 22:55 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 46,
+  "DROPPED": 152,
+  "NEVER LOOKED AT": 1871
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 1114,
+   "pairs whose boxes touch": 1114
+  },
+  "pass2": {
+   "agree with the pass before": 989,
+   "date": "2026-11-01",
+   "pairs tested": 94
+  },
+  "pass3": {
+   "agree with the pass before": 377,
+   "date": "2026-11-01",
+   "pairs tested": 90
+  },
+  "pass5": {
+   "checked": 19,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-ID": "data/fers/US-ID.json"
+ },
+ "US-ID": {
+  "rows": 1139,
+  "live": 56,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3,
+   "the agency ownership map did not answer": 9
+  },
+  "dropped": 824,
+  "merged": 247
+ },
+ "states_ready": [
+  "US-ID"
+ ],
+ "states_held": []
+}

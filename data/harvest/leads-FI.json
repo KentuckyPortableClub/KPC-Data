@@ -1,0 +1,1058 @@
+{
+ "about": "World harvester leads for Finland (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "FI",
+ "date": "2026-11-02",
+ "status": "paused (out of time, will carry on)",
+ "steps_done": [
+  "known"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 2,
+  "C": 4
+ },
+ "failures": [],
+ "rejected_orgs": [],
+ "known_good_found": [
+  "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer"
+ ],
+ "known_good_missed": [
+  "https://paikkatieto.ymparisto.fi/geoserver/wfs"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+   "found": false
+  }
+ ],
+ "leads": {
+  "https://gtkdata.gtk.fi/arcgis/rest/services/mdae/20251009_exploration": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251009_Exploration/MapServer",
+   "cc": "FI",
+   "title": "MDaE/20251009_Exploration",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "agency server gtkdata.gtk.fi",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 30,
+     "name": "National drill core archive",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "ARCHIVE_NUMBER",
+      "HOLE_ID",
+      "HOLE_ID2",
+      "NORTHING",
+      "EASTING",
+      "NORTHING_YKJ",
+      "EASTING_YKJ",
+      "KKJ_100K_SHEET",
+      "UTM_50K_SHEET",
+      "DRILLING_YEAR",
+      "HOLE_LENGTH",
+      "HOLE_AZIMUTH",
+      "HOLE_DIP",
+      "SOIL_DRILLING",
+      "ORGANIZATION",
+      "DRILLING_CONTRACTOR",
+      "SENDER_COMPANY",
+      "RECEIVING_DATE",
+      "BOXES"
+     ],
+     "records": 36420
+    },
+    {
+     "id": 61,
+     "name": "Reservation notification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CONCESSION_CODE",
+      "CONCESSION_STATUS",
+      "CONCESSION_NAME",
+      "COMPANY",
+      "ARRIVAL_DATE",
+      "REGISTRATION_DATE",
+      "VALIDITY_DATE",
+      "COMMODITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 65,
+     "sample": [
+      "PSB 1 VA2025:0032",
+      "Ritakallionmaa 2 VA2026:0038",
+      "Suomu-Kuhmo 2 VA2026:0011"
+     ],
+     "name_field": "CONCESSION_NAME"
+    },
+    {
+     "id": 62,
+     "name": "Appl. for reservation notification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CONCESSION_CODE",
+      "CONCESSION_STATUS",
+      "CONCESSION_NAME",
+      "COMPANY",
+      "ARRIVAL_DATE",
+      "REGISTRATION_DATE",
+      "VALIDITY_DATE",
+      "COMMODITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 11,
+     "sample": [
+      "Varausilmoitus VA2026:0054-01",
+      "Iiruunjärvi",
+      "Lagskogen"
+     ],
+     "name_field": "CONCESSION_NAME"
+    },
+    {
+     "id": 63,
+     "name": "Moratorium for reservation notification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CONCESSION_CODE",
+      "CONCESSION_STATUS",
+      "CONCESSION_NAME",
+      "COMPANY",
+      "ARRIVAL_DATE",
+      "REGISTRATION_DATE",
+      "VALIDITY_DATE",
+      "COMMODITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 40,
+     "sample": [
+      "Loma VA2023:0091",
+      "Hangas VA2025:0028",
+      "Maja VA2025:0012"
+     ],
+     "name_field": "CONCESSION_NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://gtkdata.gtk.fi/arcgis/rest/services/mdae/20251202_exploration": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251202_Exploration/MapServer",
+   "cc": "FI",
+   "title": "MDaE/20251202_Exploration",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "agency server gtkdata.gtk.fi",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 30,
+     "name": "National drill core archive",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "ARCHIVE_NUMBER",
+      "HOLE_ID",
+      "HOLE_ID2",
+      "NORTHING",
+      "EASTING",
+      "NORTHING_YKJ",
+      "EASTING_YKJ",
+      "KKJ_100K_SHEET",
+      "UTM_50K_SHEET",
+      "DRILLING_YEAR",
+      "HOLE_LENGTH",
+      "HOLE_AZIMUTH",
+      "HOLE_DIP",
+      "SOIL_DRILLING",
+      "ORGANIZATION",
+      "DRILLING_CONTRACTOR",
+      "SENDER_COMPANY",
+      "RECEIVING_DATE",
+      "BOXES"
+     ],
+     "records": 36420
+    },
+    {
+     "id": 61,
+     "name": "Reservation notification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CONCESSION_CODE",
+      "CONCESSION_STATUS",
+      "CONCESSION_NAME",
+      "COMPANY",
+      "ARRIVAL_DATE",
+      "REGISTRATION_DATE",
+      "VALIDITY_DATE",
+      "COMMODITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 65,
+     "sample": [
+      "PSB 1 VA2025:0032",
+      "Ritakallionmaa 2 VA2026:0038",
+      "Suomu-Kuhmo 2 VA2026:0011"
+     ],
+     "name_field": "CONCESSION_NAME"
+    },
+    {
+     "id": 62,
+     "name": "Appl. for reservation notification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CONCESSION_CODE",
+      "CONCESSION_STATUS",
+      "CONCESSION_NAME",
+      "COMPANY",
+      "ARRIVAL_DATE",
+      "REGISTRATION_DATE",
+      "VALIDITY_DATE",
+      "COMMODITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 11,
+     "sample": [
+      "Varausilmoitus VA2026:0054-01",
+      "Iiruunjärvi",
+      "Lagskogen"
+     ],
+     "name_field": "CONCESSION_NAME"
+    },
+    {
+     "id": 63,
+     "name": "Moratorium for reservation notification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CONCESSION_CODE",
+      "CONCESSION_STATUS",
+      "CONCESSION_NAME",
+      "COMPANY",
+      "ARRIVAL_DATE",
+      "REGISTRATION_DATE",
+      "VALIDITY_DATE",
+      "COMMODITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 40,
+     "sample": [
+      "Loma VA2023:0091",
+      "Hangas VA2025:0028",
+      "Maja VA2025:0012"
+     ],
+     "name_field": "CONCESSION_NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://gtkdata.gtk.fi/arcgis/rest/services/mdae/natureetc": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/NatureETC/MapServer",
+   "cc": "FI",
+   "title": "MDaE/NatureETC",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "agency server gtkdata.gtk.fi",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Natura 2000",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "CODE_NO",
+      "MUNICIPAL",
+      "CATEGORY",
+      "AREA_HA",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 2103,
+     "sample": [
+      "Nuuksio",
+      "Petkelsuo",
+      "Päivärinteen laidun"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 2,
+     "name": "Nature conservation areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_TYPE",
+      "REGNAME",
+      "COMMENT_",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 17664,
+     "sample": [
+      "Annjalonin luonnonsuojelualue",
+      "Elimyssalon luonnonsuojelualue (Ystävyyden puisto)",
+      "Espoonlahden luonnonsuojelualue"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Groundwater areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PO_POHJAVE",
+      "PVALUETUNN",
+      "MUODALUETU",
+      "PVALUENIMI",
+      "PVALUELUOK",
+      "YHT_YHA",
+      "PVTUNNUSLO",
+      "SUOJSUUNN",
+      "VHATUNNUS",
+      "DIGPOHJA",
+      "DIGORG",
+      "MUUTOSPVM",
+      "SUBTYPE_",
+      "ANTOISUUSA",
+      "KUNTANIMI",
+      "TARKPVMPOV",
+      "PALAPVALUE",
+      "PALAMUODAL",
+      "TILAMAARA"
+     ],
+     "records": 12097,
+     "sample": [
+      "Joulujärvet",
+      "Mihkalijärvi",
+      "Pasitsohkajonka"
+     ],
+     "name_field": "PVALUENIMI"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://gtkdata.gtk.fi/arcgis/rest/services/tukes/tukes_uusi": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_UUSI/MapServer",
+   "cc": "FI",
+   "title": "Tukes/TUKES_UUSI",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "agency server gtkdata.gtk.fi",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 11,
+     "name": "Natura 2000 -alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "CODE_NO",
+      "MUNICIPALI",
+      "CATEGORY",
+      "STATUS",
+      "AREA_HA",
+      "COMMENT1",
+      "COMMENT2"
+     ],
+     "records": 1763,
+     "sample": [
+      "Bölsviken-Stormossen",
+      "Tapelsåsen - Lindöviken - Heimlax",
+      "Harpar Storträsket ja Lillträsket"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 12,
+     "name": "Suojelualueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_TYPE",
+      "COMMENT_"
+     ],
+     "records": 5173,
+     "sample": [
+      "Pulmankijärven rinnelehto",
+      "Paistunturin erämaa",
+      "Kaldoaivin erämaa"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Malminetsintäalueet voimassa",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 422,
+     "sample": [
+      "Paanapyytö ML2021:0058",
+      "Paana W2 ML2018:0107",
+      "Maaninkijoki 10 ML2025:0012"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 6,
+     "name": "Malminetsintäaluehakemukset",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 347,
+     "sample": [
+      "Kotimaa",
+      "Petäjä",
+      "Syrjälä ML2013:0005"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 7,
+     "name": "Kaivosaluehakemukset",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 10,
+     "sample": [
+      "Kuikankulta KL2016:0005",
+      "Kivikangas KL2018:0007",
+      "Stormi2 KL2021:0001"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 9,
+     "name": "Kullanhuuhdonta-alueet",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 419,
+     "sample": [
+      "Jääräpää [L] HL2013:0036",
+      "AuMag4 [K] HL2014:0027",
+      "Floppiainen [L]"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 10,
+     "name": "Kullanhuuhdonta-aluehakemukset",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 141,
+     "sample": [
+      "Siperialainen estetiikka [K] HL2015:0018",
+      "Musta aukko [K] HL2015:0019",
+      "Elenan aarre [K] HL2016:0019"
+     ],
+     "name_field": "ALUEENNIMI"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://gtkdata.gtk.fi/arcgis/rest/services/tukes/suojelualueet": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+   "cc": "FI",
+   "title": "Tukes/suojelualueet",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "known-good (chat 8)",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Luontodirektiivi (SAC, SAC/SPA)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
+     ],
+     "records": 1642,
+     "sample": [
+      "Nuuksio",
+      "Petkelsuo",
+      "Päivärinteen laidun"
+     ],
+     "name_field": "nimisuomi"
+    },
+    {
+     "id": 2,
+     "name": "Lintudirektiivi (SPA, SAC/SPA)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
+     ],
+     "records": 458,
+     "sample": [
+      "Tammisaaren ja Hangon saariston ja Pohjanpitäjänla",
+      "Läppträsket",
+      "Inkoon saaristo"
+     ],
+     "name_field": "nimisuomi"
+    },
+    {
+     "id": 5,
+     "name": "Luonnonsuojelu_alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KohdeId",
+      "LsAlueTunn",
+      "Nimi",
+      "NimiRuotsi",
+      "KohdeTyypp",
+      "TyyppiLyhe",
+      "TyyppiNimi",
+      "PaatPvm",
+      "PaatNimi",
+      "PaatURL",
+      "ViimPaatPv",
+      "ViimPaatNi",
+      "Voimaantul",
+      "LakiPerust",
+      "LakkautusP",
+      "CDDATunnus",
+      "IUCNKatego",
+      "IUCNLuokka"
+     ],
+     "records": 1088,
+     "sample": [
+      "Annjalonin luonnonsuojelualue",
+      "Elimyssalon luonnonsuojelualue (Ystävyyden puisto)",
+      "Espoonlahden luonnonsuojelualue"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 7,
+     "name": "Yksityisten maalla olevat suojelualueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KohdeId",
+      "LsAlueTunn",
+      "Nimi",
+      "NimiRuotsi",
+      "KohdeTyypp",
+      "TyyppiLyhe",
+      "TyyppiNimi",
+      "PaatPvm",
+      "PaatNimi",
+      "PaatURL",
+      "ViimPaatPv",
+      "ViimPaatNi",
+      "LakiPerust",
+      "LakkautusP",
+      "CDDATunnus",
+      "IUCNKatego",
+      "IUCNLuokka",
+      "LPAlue"
+     ],
+     "records": 16576,
+     "sample": [
+      "Kaunissaaren merenrantaniitty 1/3",
+      "Nuhjakan aluekokonaisuus",
+      "Punakivi-Ahvenjärvi. kohde 46"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 8,
+     "name": "Luonnonsuojeluohjelma-alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "OBJECTID",
+      "LsoAlueTun",
+      "Luokka",
+      "Subtype",
+      "Nimi",
+      "DigPohja",
+      "DigOrg",
+      "MuutosPvm",
+      "Lisatieto",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 2362,
+     "sample": [
+      "Pomokaira",
+      "Mustakero",
+      "Ylläs-Pallas"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 9,
+     "name": "Koskiensuojelulain nojalla suojellut joet, kosket ja valuma-alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KoskiAlueT",
+      "Nimi",
+      "Luokka",
+      "Selite",
+      "DigPohja",
+      "MuutosPvm",
+      "ValumaTunn",
+      "Lisatieto",
+      "RauhoitusP",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 58,
+     "sample": [
+      "Näätämöjoen vesistö",
+      "Juutuanjoki ja sen yläpuoliset vesistöt",
+      "Tornionjoen ja Muonionjoen sivuvesistöt"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 3,
+     "name": "Ehdotus luontodirektiivin perusteella (SCI)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
+     ],
+     "records": 3,
+     "sample": [
+      "Tulliniemen linnustonsuojelualue",
+      "Saaristomeri",
+      "Södra Sandbäck"
+     ],
+     "name_field": "nimisuomi"
+    },
+    {
+     "id": 6,
+     "name": "Erämaa_alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KohdeId",
+      "LsAlueTunn",
+      "Nimi",
+      "NimiRuotsi",
+      "KohdeTyypp",
+      "TyyppiLyhe",
+      "TyyppiNimi",
+      "PaatPvm",
+      "PaatNimi",
+      "PaatURL",
+      "ViimPaatPv",
+      "ViimPaatNi",
+      "Voimaantul",
+      "LakiPerust",
+      "LakkautusP",
+      "CDDATunnus",
+      "IUCNKatego",
+      "IUCNLuokka"
+     ],
+     "records": 12,
+     "sample": [
+      "Hammastunturin erämaa",
+      "Kaldoaivin erämaa",
+      "Kemihaaran erämaa"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 10,
+     "name": "Arvokkaat kallioalueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "lskallioal",
+      "nimi",
+      "luokka",
+      "digpohja",
+      "digorg",
+      "muutospvm",
+      "arvoluokka",
+      "selitearvo",
+      "lisatieto",
+      "area_m2",
+      "perimeter_",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1286,
+     "sample": [
+      "Lullinvuori-Kontinvuori",
+      "Kinkovuori-Raudanriutta",
+      "Haukkavuori-Rappukallio"
+     ],
+     "name_field": "nimi"
+    },
+    {
+     "id": 11,
+     "name": "Arvokkaat kivikot",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "Tunnus",
+      "Luokka",
+      "Nimi",
+      "Tyyppi",
+      "Arvoluokka",
+      "DigOrg",
+      "Linkki",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 472,
+     "sample": [
+      "Katajasuon kivikko",
+      "Romvuori",
+      "Komiharju"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 12,
+     "name": "Arvokkaat moreenimuodostumat",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "MuodTunnus",
+      "Luokka",
+      "MuodTyyppi",
+      "ArvoLuokka",
+      "Nimi",
+      "DigOrg",
+      "Linkki",
+      "MuutosPvm",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 607,
+     "sample": [
+      "Vellinginmäki",
+      "Vehkaniemenmäki",
+      "Sillantaussuon kumpumoreenialue"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 13,
+     "name": "Arvokkaat tuuli- ja rantakerrostumat",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "MuodTunnus",
+      "Nimi",
+      "Luokka",
+      "MuodTyyppi",
+      "ArvoLuokka",
+      "DigOrg",
+      "Linkki",
+      "MuutosPvm",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 417,
+     "sample": [
+      "Ahvenjärven dyynit",
+      "Sompanen",
+      "Tuuliharju"
+     ],
+     "name_field": "Nimi"
+    }
+   ],
+   "note": "known-good service",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists",
+   "known_good": true
+  },
+  "eea-cdda:FI": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "FI",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Finland rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (FI); one official layer covers every member state"
+  }
+ }
+}

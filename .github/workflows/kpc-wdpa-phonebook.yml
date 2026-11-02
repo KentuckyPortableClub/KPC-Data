@@ -1,0 +1,53 @@
+name: KPC WDPA phone book - who runs the parks we still miss (every 6 h, leads only)
+# Nov 1 2026 (chat 10; Brandon 7:30 PM 'use them as a phone book ... yes use it like that'). kpc_wdpa_phonebook.py asks WDPA live at
+# each pin of a park with no official outline: managing authority, local name, designation, data provider. No shapes kept (W-10
+# terms). The park-info engine then searches by that agency (core/adapters.py agency()). data/intake/phonebook.json + .md.
+# Chains itself while parks are left (about 1,300 lookups a run at one request per 2 s). Never red, never emails.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 */6 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-wdpa-phonebook
+  cancel-in-progress: false
+jobs:
+  book:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+      LINKS: ../links
+      MINUTES: '45'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /.github/scripts/kpc_push_data.sh
+            /data/us-key/
+            /data/ca-key/
+            /data/world-key/
+          sparse-checkout-cone-mode: false
+      - name: Look up the parks we still miss
+        id: b
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_wdpa_phonebook.py | tee /tmp/pb.txt || true
+          python3 .github/scripts/kpc_status.py board 'WDPA phone book' green "$(grep -o '[0-9]* parks looked up[^;]*' /tmp/pb.txt | head -1) $(date -u +%F)" 'the park-info engine searches by these agencies' || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "WDPA phone book (leads: who runs the parks we still miss)" data/intake/phonebook.json data/intake/phonebook.md data/status || true
+          echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/pb.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
+      - name: Next run while parks are left
+        if: steps.b.outputs.left != '' && steps.b.outputs.left != '0' && github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-wdpa-phonebook.yml -R ${{ github.repository }} || true

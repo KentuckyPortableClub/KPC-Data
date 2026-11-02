@@ -1,0 +1,8 @@
+agency,row_name,size,unit,why,area,source_url,read_date
+KDFWR,Taylor Lake WMA,500,acres,same name but different kind (row: WMA; park US-1003 (state park)),US-KY,https://fw.ky.example/wma-list.html,2026-10-31
+KDFWR,Nowhere Tract,10,ha,kind of place unknown (no generic words in the name and no kind for the list),US-KY,https://gis.ky.example/arcgis/rest/services/KDFWR/Lands/MapServer/0,2026-10-31
+KY open data,Cedar Creek WMA,1500,acres,name+kind fit US-1012 but the list point is 242 km from the pin (over 25 km),US-KY,https://data.ky.example/resource/abcd-1234.json,2026-10-31
+KY open data,Rock Bridge WMA,700,acres,name+kind fit US-1013 but the list county (Pike) is not the pin's county (Adair),US-KY,https://data.ky.example/resource/abcd-1234.json,2026-10-31
+KY open data,Green Fork Wildlife Management Area,400,acres,"ambiguous: ""green fork"" WMA fits US-1014, US-1015",US-KY,https://data.ky.example/resource/abcd-1234.json,2026-10-31
+KY open data,Unknown Hollow WMA,50,acres,"no POTA park named ""unknown hollow"" (WMA) in US-KY",US-KY,https://data.ky.example/resource/abcd-1234.json,2026-10-31
+Mystery list,Clay WMA,77,,"unit unknown (not in the research row, the column header or the size text)",US-KY,https://misc.ky.example/list.json,2026-10-31

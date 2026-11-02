@@ -1,0 +1,6066 @@
+{
+ "area": "US-WY",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-WY.json.gz",
+ "rows": {
+  "US-0031+US-0613@area@43.619,-110.643": {
+   "id": "US-0031+US-0613@area@43.619,-110.643",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-0613"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 28.4,
+   "stored_wide_m": 171,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:10Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:11Z"
+    },
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:24:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 44,
+   "stored_shape_acres": 26.23,
+   "live_acres": 26.13,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 174.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 26.1 ac vs 26.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.618971,
+    -110.643473
+   ]
+  },
+  "US-0031+US-0613@area@43.622,-110.620": {
+   "id": "US-0031+US-0613@area@43.622,-110.620",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-0613"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 4.4,
+   "stored_wide_m": 31,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:14Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:15Z"
+    },
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:24:16Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T04:24:16Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T04:24:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 42.5,
+   "stored_water_pct": 28,
+   "stored_shape_acres": 3.61,
+   "live_acres": 1.77,
+   "kept_pct": 96.4,
+   "size_pct": -50.9,
+   "moved_m": 103,
+   "gap_m": 0,
+   "wide_m": 17.5,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 51% smaller (1.8 ac vs 3.6 ac stored)",
+   "live_center": [
+    43.62293,
+    -110.617014
+   ]
+  },
+  "US-0031+US-4475@area@44.007,-110.875": {
+   "id": "US-0031+US-4475@area@44.007,-110.875",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-4475"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 21.2,
+   "stored_wide_m": 255,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:17Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:17Z"
+    },
+    {
+     "ref": "US-4475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 20.41,
+   "live_acres": 20.51,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 251.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.5 ac vs 20.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.016169,
+    -110.869741
+   ]
+  },
+  "US-0031+US-4535+US-6210@area@43.986,-110.620": {
+   "id": "US-0031+US-4535+US-6210@area@43.986,-110.620",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-4535",
+    "US-6210"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17.8,
+   "stored_wide_m": 55,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:19Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:20Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:21Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.37,
+   "live_acres": 3.39,
+   "kept_pct": 71.5,
+   "size_pct": -36.9,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 54.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 37% smaller (3.4 ac vs 5.4 ac stored)",
+   "live_center": [
+    43.98904,
+    -110.620045
+   ]
+  },
+  "US-0031+US-4535@area@43.846,-110.423": {
+   "id": "US-0031+US-4535@area@43.846,-110.423",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-4535"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.5,
+   "stored_wide_m": 55,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:23Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:23Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:25Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T04:24:43Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 17,
+     "read": "2026-11-01T04:24:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 58.1,
+   "stored_water_pct": 47,
+   "stored_shape_acres": 0.91,
+   "live_acres": 0.37,
+   "kept_pct": 60.5,
+   "size_pct": -59.2,
+   "moved_m": 31,
+   "gap_m": 0,
+   "wide_m": 26.0,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 59% smaller (0.4 ac vs 0.9 ac stored)",
+   "live_center": [
+    43.845753,
+    -110.4235
+   ]
+  },
+  "US-0031+US-6210@area@43.929,-110.479": {
+   "id": "US-0031+US-6210@area@43.929,-110.479",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-6210"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 39.2,
+   "stored_wide_m": 49,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:44Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:44Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 31.58,
+   "live_acres": 28.24,
+   "kept_pct": 100.0,
+   "size_pct": -10.6,
+   "moved_m": 219,
+   "gap_m": 0,
+   "wide_m": 45.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28.2 ac vs 31.6 ac stored (-11%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.929203,
+    -110.475965
+   ]
+  },
+  "US-0031+US-6226@area@44.007,-110.875": {
+   "id": "US-0031+US-6226@area@44.007,-110.875",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-6226"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 21.1,
+   "stored_wide_m": 257,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:45Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:45Z"
+    },
+    {
+     "ref": "US-6226",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 20.03,
+   "live_acres": 20.51,
+   "kept_pct": 100.0,
+   "size_pct": 2.4,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 251.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.5 ac vs 20.0 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.016169,
+    -110.869741
+   ]
+  },
+  "US-0031+US-6227@area@43.837,-110.430": {
+   "id": "US-0031+US-6227@area@43.837,-110.430",
+   "area": "US-WY",
+   "refs": [
+    "US-0031",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 11037.8,
+   "stored_wide_m": 1135,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:47Z",
+   "layers": [
+    {
+     "ref": "US-0031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:47Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:48Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 1215.36,
+   "live_acres": 3412.15,
+   "kept_pct": 100.0,
+   "size_pct": 180.8,
+   "moved_m": 16494,
+   "gap_m": 0,
+   "wide_m": 959.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 181% bigger (3412.1 ac vs 1215.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.765776,
+    -110.609145
+   ]
+  },
+  "US-0070+US-4535+US-6210+US-6227@area@44.132,-110.655": {
+   "id": "US-0070+US-4535+US-6210+US-6227@area@44.132,-110.655",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-4535",
+    "US-6210",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.7,
+   "stored_wide_m": 25,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:50Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:50Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:52Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:52Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:53Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.57,
+   "live_acres": 2.97,
+   "kept_pct": 100.0,
+   "size_pct": 15.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 19.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 2.6 ac stored (+16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.132585,
+    -110.661788
+   ]
+  },
+  "US-0070+US-4535+US-6227@area@44.133,-110.658": {
+   "id": "US-0070+US-4535+US-6227@area@44.133,-110.658",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-4535",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.0,
+   "stored_wide_m": 25,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:54Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:50Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:52Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:53Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.57,
+   "live_acres": 2.97,
+   "kept_pct": 100.0,
+   "size_pct": 15.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 19.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 2.6 ac stored (+16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.132585,
+    -110.661788
+   ]
+  },
+  "US-0070+US-4535@area@44.180,-110.001": {
+   "id": "US-0070+US-4535@area@44.180,-110.001",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-4535"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 152.6,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:54Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:55Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 94.94,
+   "live_acres": 122.51,
+   "kept_pct": 99.1,
+   "size_pct": -19.7,
+   "moved_m": 298,
+   "gap_m": 0,
+   "wide_m": 39.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 122.5 ac vs 152.6 ac stored (row acres; the stored shape is a 94.9 ac preview) (-20%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.132847,
+    -110.092841
+   ]
+  },
+  "US-0070+US-4536@area@44.606,-110.044": {
+   "id": "US-0070+US-4536@area@44.606,-110.044",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-4536"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.0,
+   "stored_wide_m": 31,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:56Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:57Z"
+    },
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.82,
+   "live_acres": 0.86,
+   "kept_pct": 89.2,
+   "size_pct": -52.8,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 26.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 53% smaller (0.9 ac vs 1.8 ac stored)",
+   "live_center": [
+    44.626391,
+    -110.025814
+   ]
+  },
+  "US-0070+US-6202@area@44.606,-110.046": {
+   "id": "US-0070+US-6202@area@44.606,-110.046",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-6202"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.5,
+   "stored_wide_m": 31,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:24:59Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:00Z"
+    },
+    {
+     "ref": "US-6202",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.11,
+   "live_acres": 0.61,
+   "kept_pct": 91.5,
+   "size_pct": -45.3,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 26.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 45% smaller (0.6 ac vs 1.1 ac stored)",
+   "live_center": [
+    44.626391,
+    -110.025814
+   ]
+  },
+  "US-0070+US-6210+US-6227@area@44.133,-110.662": {
+   "id": "US-0070+US-6210+US-6227@area@44.133,-110.662",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-6210",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:01Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:01Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:02Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:03Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.0,
+   "live_acres": 2.97,
+   "kept_pct": 100.0,
+   "size_pct": -0.9,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 19.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 3.0 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.132585,
+    -110.661788
+   ]
+  },
+  "US-0070+US-6210@area@44.180,-110.001": {
+   "id": "US-0070+US-6210@area@44.180,-110.001",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-6210"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 151.4,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:03Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:04Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 94.28,
+   "live_acres": 122.51,
+   "kept_pct": 99.1,
+   "size_pct": -19.1,
+   "moved_m": 297,
+   "gap_m": 0,
+   "wide_m": 39.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 122.5 ac vs 151.4 ac stored (row acres; the stored shape is a 94.3 ac preview) (-19%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.132847,
+    -110.092841
+   ]
+  },
+  "US-0070+US-6227@area@44.162,-110.361": {
+   "id": "US-0070+US-6227@area@44.162,-110.361",
+   "area": "US-WY",
+   "refs": [
+    "US-0070",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13073.4,
+   "stored_wide_m": 557,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:04Z",
+   "layers": [
+    {
+     "ref": "US-0070",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:05Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:05Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 1644.43,
+   "live_acres": 11024.73,
+   "kept_pct": 100.0,
+   "size_pct": -15.7,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 551.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11024.7 ac vs 13073.4 ac stored (row acres; the stored shape is a 1644.4 ac preview) (-16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.21447,
+    -110.454248
+   ]
+  },
+  "US-0613+US-10815@area@43.536,-110.735": {
+   "id": "US-0613+US-10815@area@43.536,-110.735",
+   "area": "US-WY",
+   "refs": [
+    "US-0613",
+    "US-10815"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 33.3,
+   "stored_wide_m": 273,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:05Z",
+   "layers": [
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:06Z"
+    },
+    {
+     "ref": "US-10815",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 32.44,
+   "live_acres": 32.26,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 274.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 32.3 ac vs 32.4 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.535898,
+    -110.735358
+   ]
+  },
+  "US-0613+US-4535+US-6223+US-6227@area@43.625,-110.593": {
+   "id": "US-0613+US-4535+US-6223+US-6227@area@43.625,-110.593",
+   "area": "US-WY",
+   "refs": [
+    "US-0613",
+    "US-4535",
+    "US-6223",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.3,
+   "stored_wide_m": 25,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:08Z",
+   "layers": [
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:09Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:10Z"
+    },
+    {
+     "ref": "US-6223",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:10Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:25:12Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.39,
+   "live_acres": 2.51,
+   "kept_pct": 100.0,
+   "size_pct": 5.0,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 19.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.5 ac vs 2.4 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.625521,
+    -110.588616
+   ]
+  },
+  "US-0613+US-4535+US-6223@area@43.636,-110.583": {
+   "id": "US-0613+US-4535+US-6223@area@43.636,-110.583",
+   "area": "US-WY",
+   "refs": [
+    "US-0613",
+    "US-4535",
+    "US-6223"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:13Z",
+   "layers": [
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:13Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:14Z"
+    },
+    {
+     "ref": "US-6223",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.78,
+   "live_acres": 2.85,
+   "kept_pct": 99.6,
+   "size_pct": 2.7,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 18.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.9 ac vs 2.8 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.639653,
+    -110.583103
+   ]
+  },
+  "US-0613+US-4535@area@43.505,-110.697": {
+   "id": "US-0613+US-4535@area@43.505,-110.697",
+   "area": "US-WY",
+   "refs": [
+    "US-0613",
+    "US-4535"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.4,
+   "stored_wide_m": 55,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:14Z",
+   "layers": [
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:15Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 9.94,
+   "live_acres": 11.99,
+   "kept_pct": 100.0,
+   "size_pct": 20.6,
+   "moved_m": 58,
+   "gap_m": 0,
+   "wide_m": 49.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.0 ac vs 9.9 ac stored (+21%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.505202,
+    -110.69333
+   ]
+  },
+  "US-0613+US-6223@area@43.505,-110.697": {
+   "id": "US-0613+US-6223@area@43.505,-110.697",
+   "area": "US-WY",
+   "refs": [
+    "US-0613",
+    "US-6223"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 12.6,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:16Z",
+   "layers": [
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:17Z"
+    },
+    {
+     "ref": "US-6223",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 10.35,
+   "live_acres": 11.78,
+   "kept_pct": 100.0,
+   "size_pct": 13.8,
+   "moved_m": 296,
+   "gap_m": 0,
+   "wide_m": 49.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.8 ac vs 10.3 ac stored (+14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.505201,
+    -110.69333
+   ]
+  },
+  "US-0613+US-6227@area@43.620,-110.618": {
+   "id": "US-0613+US-6227@area@43.620,-110.618",
+   "area": "US-WY",
+   "refs": [
+    "US-0613",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 61.0,
+   "stored_wide_m": 434,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:17Z",
+   "layers": [
+    {
+     "ref": "US-0613",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:18Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:18Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 60.39,
+   "live_acres": 60.42,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 439.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 60.4 ac vs 60.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.620221,
+    -110.618364
+   ]
+  },
+  "US-0615+US-6196@area@41.798,-109.779": {
+   "id": "US-0615+US-6196@area@41.798,-109.779",
+   "area": "US-WY",
+   "refs": [
+    "US-0615",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 3393.1,
+   "stored_wide_m": 1635,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:19Z",
+   "layers": [
+    {
+     "ref": "US-0615",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:19Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3385.75,
+   "live_acres": 3381.37,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 283,
+   "gap_m": 0,
+   "wide_m": 1626.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3381.4 ac vs 3385.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.798418,
+    -109.779947
+   ]
+  },
+  "US-0615+US-6204@area@41.886,-109.794": {
+   "id": "US-0615+US-6204@area@41.886,-109.794",
+   "area": "US-WY",
+   "refs": [
+    "US-0615",
+    "US-6204"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 3727.5,
+   "stored_wide_m": 1375,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:21Z",
+   "layers": [
+    {
+     "ref": "US-0615",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:21Z"
+    },
+    {
+     "ref": "US-6204",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2846.07,
+   "live_acres": 3696.03,
+   "kept_pct": 100.0,
+   "size_pct": -0.8,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 1376.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3696.0 ac vs 3727.5 ac stored (row acres; the stored shape is a 2846.1 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.886397,
+    -109.793986
+   ]
+  },
+  "US-0615+US-6213@area@41.798,-109.779": {
+   "id": "US-0615+US-6213@area@41.798,-109.779",
+   "area": "US-WY",
+   "refs": [
+    "US-0615",
+    "US-6213"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 3393.1,
+   "stored_wide_m": 1635,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:23Z",
+   "layers": [
+    {
+     "ref": "US-0615",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:19Z"
+    },
+    {
+     "ref": "US-6213",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3385.75,
+   "live_acres": 3381.37,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 283,
+   "gap_m": 0,
+   "wide_m": 1626.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3381.4 ac vs 3385.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.798418,
+    -109.779947
+   ]
+  },
+  "US-0698+US-4475+US-6226@area@44.084,-110.795": {
+   "id": "US-0698+US-4475+US-6226@area@44.084,-110.795",
+   "area": "US-WY",
+   "refs": [
+    "US-0698",
+    "US-4475",
+    "US-6226"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.6,
+   "stored_wide_m": 35,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:25Z",
+   "layers": [
+    {
+     "ref": "US-0698",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:25Z"
+    },
+    {
+     "ref": "US-4475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:27Z"
+    },
+    {
+     "ref": "US-6226",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.55,
+   "live_acres": 4.52,
+   "kept_pct": 100.0,
+   "size_pct": 724.8,
+   "moved_m": 97,
+   "gap_m": 0,
+   "wide_m": 56.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 725% bigger (4.5 ac vs 0.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.107032,
+    -110.788261
+   ]
+  },
+  "US-0698+US-4475@area@44.084,-110.794": {
+   "id": "US-0698+US-4475@area@44.084,-110.794",
+   "area": "US-WY",
+   "refs": [
+    "US-0698",
+    "US-4475"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.3,
+   "stored_wide_m": 59,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:27Z",
+   "layers": [
+    {
+     "ref": "US-0698",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:28Z"
+    },
+    {
+     "ref": "US-4475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.72,
+   "live_acres": 4.65,
+   "kept_pct": 100.0,
+   "size_pct": -1.5,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 56.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.7 ac vs 4.7 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.107032,
+    -110.788261
+   ]
+  },
+  "US-0698+US-4535@area@44.086,-110.655": {
+   "id": "US-0698+US-4535@area@44.086,-110.655",
+   "area": "US-WY",
+   "refs": [
+    "US-0698",
+    "US-4535"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 23.1,
+   "stored_wide_m": 31,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:29Z",
+   "layers": [
+    {
+     "ref": "US-0698",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:30Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 18.28,
+   "live_acres": 20.57,
+   "kept_pct": 99.6,
+   "size_pct": 12.6,
+   "moved_m": 354,
+   "gap_m": 0,
+   "wide_m": 31.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.6 ac vs 18.3 ac stored (+13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.0832,
+    -110.657608
+   ]
+  },
+  "US-0698+US-6210@area@44.051,-110.683": {
+   "id": "US-0698+US-6210@area@44.051,-110.683",
+   "area": "US-WY",
+   "refs": [
+    "US-0698",
+    "US-6210"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 19.1,
+   "stored_wide_m": 31,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:31Z",
+   "layers": [
+    {
+     "ref": "US-0698",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:33Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 14.22,
+   "live_acres": 16.64,
+   "kept_pct": 100.0,
+   "size_pct": 17.0,
+   "moved_m": 353,
+   "gap_m": 0,
+   "wide_m": 31.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.6 ac vs 14.2 ac stored (+17%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.0832,
+    -110.657608
+   ]
+  },
+  "US-0698+US-6227@area@44.098,-110.679": {
+   "id": "US-0698+US-6227@area@44.098,-110.679",
+   "area": "US-WY",
+   "refs": [
+    "US-0698",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2935.8,
+   "stored_wide_m": 1118,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:33Z",
+   "layers": [
+    {
+     "ref": "US-0698",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:35Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:35Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 1582.0,
+   "live_acres": 1590.09,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 6612,
+   "gap_m": 0,
+   "wide_m": 852.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1590.1 ac vs 1582.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.047629,
+    -110.723926
+   ]
+  },
+  "US-10789+US-3297@area@42.605,-105.085": {
+   "id": "US-10789+US-3297@area@42.605,-105.085",
+   "area": "US-WY",
+   "refs": [
+    "US-10789",
+    "US-3297"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2581.5,
+   "stored_wide_m": 1151,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:25:36Z",
+   "layers": [
+    {
+     "ref": "US-10789",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:25:37Z"
+    },
+    {
+     "ref": "US-3297",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:38Z"
+    },
+    {
+     "ref": "US-3297",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:40Z"
+    },
+    {
+     "ref": "US-3297",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 20,
+   "stored_shape_acres": 1903.96,
+   "live_acres": 2563.57,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 1160.1,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2563.6 ac vs 2581.5 ac stored (row acres; the stored shape is a 1904.0 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.605407,
+    -105.085706
+   ]
+  },
+  "US-10804+US-10811@area@42.052,-107.804": {
+   "id": "US-10804+US-10811@area@42.052,-107.804",
+   "area": "US-WY",
+   "refs": [
+    "US-10804",
+    "US-10811"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 643.5,
+   "stored_wide_m": 1605,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:25:44Z",
+   "layers": [
+    {
+     "ref": "US-10804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:44Z"
+    },
+    {
+     "ref": "US-10804",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:45Z"
+    },
+    {
+     "ref": "US-10811",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 643.31,
+   "live_acres": 643.77,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 1610.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 643.8 ac vs 643.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.051984,
+    -107.804216
+   ]
+  },
+  "US-10804+US-6160@area@41.971,-107.758": {
+   "id": "US-10804+US-6160@area@41.971,-107.758",
+   "area": "US-WY",
+   "refs": [
+    "US-10804",
+    "US-6160"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 26566.9,
+   "stored_wide_m": 9845,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:25:47Z",
+   "layers": [
+    {
+     "ref": "US-10804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:47Z"
+    },
+    {
+     "ref": "US-10804",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:25:47Z"
+    },
+    {
+     "ref": "US-6160",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 26721.69,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-10805+US-10890@area@42.756,-108.804": {
+   "id": "US-10805+US-10890@area@42.756,-108.804",
+   "area": "US-WY",
+   "refs": [
+    "US-10805",
+    "US-10890"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: low-confidence outline for Sinks Canyon BLM Recreation Management Area (check the join)",
+   "stored_acres": 4.5,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:49Z",
+   "layers": [
+    {
+     "ref": "US-10805",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:49Z"
+    },
+    {
+     "ref": "US-10890",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.26,
+   "live_acres": 3.98,
+   "kept_pct": 100.0,
+   "size_pct": -6.7,
+   "moved_m": 267,
+   "gap_m": 0,
+   "wide_m": 40.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.0 ac vs 4.3 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.756438,
+    -108.80419
+   ]
+  },
+  "US-10805+US-3302@area@42.749,-108.809": {
+   "id": "US-10805+US-3302@area@42.749,-108.809",
+   "area": "US-WY",
+   "refs": [
+    "US-10805",
+    "US-3302"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 517.3,
+   "stored_wide_m": 815,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:51Z",
+   "layers": [
+    {
+     "ref": "US-10805",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:51Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:52Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:53Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 515.93,
+   "live_acres": 514.12,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 812.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 514.1 ac vs 515.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.741843,
+    -108.819277
+   ]
+  },
+  "US-10808+US-4535@area@42.972,-109.831": {
+   "id": "US-10808+US-4535@area@42.972,-109.831",
+   "area": "US-WY",
+   "refs": [
+    "US-10808",
+    "US-4535"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 50.7,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:25:54Z",
+   "layers": [
+    {
+     "ref": "US-10808",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:55Z"
+    },
+    {
+     "ref": "US-10808",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:56Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 35.09,
+   "live_acres": 39.37,
+   "kept_pct": 100.0,
+   "size_pct": 12.2,
+   "moved_m": 96,
+   "gap_m": 0,
+   "wide_m": 37.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 39.4 ac vs 35.1 ac stored (+12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.954587,
+    -109.831213
+   ]
+  },
+  "US-10810+US-6160@area@42.279,-107.614": {
+   "id": "US-10810+US-6160@area@42.279,-107.614",
+   "area": "US-WY",
+   "refs": [
+    "US-10810",
+    "US-6160"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 5144.0,
+   "stored_wide_m": 3855,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:25:58Z",
+   "layers": [
+    {
+     "ref": "US-10810",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:25:58Z"
+    },
+    {
+     "ref": "US-6160",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5164.53,
+   "live_acres": 1.34,
+   "kept_pct": 0.3,
+   "size_pct": -100.0,
+   "moved_m": 2202,
+   "gap_m": 0,
+   "wide_m": 2.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 2202 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    42.261528,
+    -107.600545
+   ]
+  },
+  "US-10811+US-6160@area@42.045,-107.816": {
+   "id": "US-10811+US-6160@area@42.045,-107.816",
+   "area": "US-WY",
+   "refs": [
+    "US-10811",
+    "US-6160"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 22133.1,
+   "stored_wide_m": 7404,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:26:00Z",
+   "layers": [
+    {
+     "ref": "US-10811",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:01Z"
+    },
+    {
+     "ref": "US-6160",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 22258.86,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-10843+US-6174@area@44.148,-108.463": {
+   "id": "US-10843+US-6174@area@44.148,-108.463",
+   "area": "US-WY",
+   "refs": [
+    "US-10843",
+    "US-6174"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 14887.7,
+   "stored_wide_m": 4843,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:02Z",
+   "layers": [
+    {
+     "ref": "US-10843",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:03Z"
+    },
+    {
+     "ref": "US-6174",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 15729.78,
+   "live_acres": 14955.41,
+   "kept_pct": 95.2,
+   "size_pct": -4.9,
+   "moved_m": 40,
+   "gap_m": 0,
+   "wide_m": 4848.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14955.4 ac vs 15729.8 ac stored (-5%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.147832,
+    -108.463894
+   ]
+  },
+  "US-10864+US-10897@area@41.985,-109.091": {
+   "id": "US-10864+US-10897@area@41.985,-109.091",
+   "area": "US-WY",
+   "refs": [
+    "US-10864",
+    "US-10897"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 12787.5,
+   "stored_wide_m": 4014,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:06Z",
+   "layers": [
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:07Z"
+    },
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:09Z"
+    },
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:11Z"
+    },
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:13Z"
+    },
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 12919.6,
+   "live_acres": 12829.98,
+   "kept_pct": 99.4,
+   "size_pct": -0.7,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 4018.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12830.0 ac vs 12919.6 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.985378,
+    -109.090886
+   ]
+  },
+  "US-10864+US-6161@area@41.985,-109.091": {
+   "id": "US-10864+US-6161@area@41.985,-109.091",
+   "area": "US-WY",
+   "refs": [
+    "US-10864",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 11828.4,
+   "stored_wide_m": 4014,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:16Z",
+   "layers": [
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:17Z"
+    },
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:18Z"
+    },
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:19Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11878.59,
+   "live_acres": 11869.12,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 4020.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11869.1 ac vs 11878.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.98539,
+    -109.090902
+   ]
+  },
+  "US-10864+US-6196@area@41.951,-109.021": {
+   "id": "US-10864+US-6196@area@41.951,-109.021",
+   "area": "US-WY",
+   "refs": [
+    "US-10864",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 957.5,
+   "stored_wide_m": 1215,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:21Z",
+   "layers": [
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:22Z"
+    },
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:23Z"
+    },
+    {
+     "ref": "US-10864",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:24Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 956.29,
+   "live_acres": 954.36,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 1215.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 954.4 ac vs 956.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.951131,
+    -109.020841
+   ]
+  },
+  "US-10878+US-6183@area@44.633,-108.802": {
+   "id": "US-10878+US-6183@area@44.633,-108.802",
+   "area": "US-WY",
+   "refs": [
+    "US-10878",
+    "US-6183"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 22883.9,
+   "stored_wide_m": 7127,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:25Z",
+   "layers": [
+    {
+     "ref": "US-10878",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:26:26Z"
+    },
+    {
+     "ref": "US-6183",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 23004.1,
+   "live_acres": 22997.0,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 26,
+   "gap_m": 0,
+   "wide_m": 7169.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22997.0 ac vs 23004.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.633577,
+    -108.802018
+   ]
+  },
+  "US-10890+US-3302@same land@42.756,-108.800": {
+   "id": "US-10890+US-3302@same land@42.756,-108.800",
+   "area": "US-WY",
+   "refs": [
+    "US-10890",
+    "US-3302"
+   ],
+   "kind": "same land",
+   "stored_status": "not sure: low-confidence outline (check the join)",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:29Z",
+   "layers": [
+    {
+     "ref": "US-10890",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:30Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:30Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:30Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 79.2,
+   "kept_pct": 100.0,
+   "size_pct": 5874332.7,
+   "moved_m": 201,
+   "gap_m": 0,
+   "wide_m": 400.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 5874333% bigger (79.2 ac vs 0.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.758108,
+    -108.799663
+   ]
+  },
+  "US-10897+US-10926@area@42.017,-109.281": {
+   "id": "US-10897+US-10926@area@42.017,-109.281",
+   "area": "US-WY",
+   "refs": [
+    "US-10897",
+    "US-10926"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 3095.4,
+   "stored_wide_m": 2830,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:30Z",
+   "layers": [
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:30Z"
+    },
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:31Z"
+    },
+    {
+     "ref": "US-10926",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:26:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3104.73,
+   "live_acres": 3105.07,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 2815.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3105.1 ac vs 3104.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.016759,
+    -109.280419
+   ]
+  },
+  "US-10897+US-10941@area@42.012,-109.207": {
+   "id": "US-10897+US-10941@area@42.012,-109.207",
+   "area": "US-WY",
+   "refs": [
+    "US-10897",
+    "US-10941"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 20920.1,
+   "stored_wide_m": 6057,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:33Z",
+   "layers": [
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:34Z"
+    },
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:35Z"
+    },
+    {
+     "ref": "US-10941",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:26:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 21661.07,
+   "live_acres": 21017.96,
+   "kept_pct": 97.1,
+   "size_pct": -3.0,
+   "moved_m": 52,
+   "gap_m": 0,
+   "wide_m": 6030.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21018.0 ac vs 21661.1 ac stored (-3%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.012141,
+    -109.207504
+   ]
+  },
+  "US-10897+US-6161@area@42.014,-109.193": {
+   "id": "US-10897+US-6161@area@42.014,-109.193",
+   "area": "US-WY",
+   "refs": [
+    "US-10897",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 38386.1,
+   "stored_wide_m": 7093,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:37Z",
+   "layers": [
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:38Z"
+    },
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:39Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 25986.83,
+   "live_acres": 38273.72,
+   "kept_pct": 95.2,
+   "size_pct": -0.3,
+   "moved_m": 406,
+   "gap_m": 0,
+   "wide_m": 7365.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 38273.7 ac vs 38386.1 ac stored (row acres; the stored shape is a 25986.8 ac preview) (-0%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.013863,
+    -109.193038
+   ]
+  },
+  "US-10897+US-6196@area@41.951,-109.021": {
+   "id": "US-10897+US-6196@area@41.951,-109.021",
+   "area": "US-WY",
+   "refs": [
+    "US-10897",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 958.0,
+   "stored_wide_m": 1215,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:40Z",
+   "layers": [
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:41Z"
+    },
+    {
+     "ref": "US-10897",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:42Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 957.26,
+   "live_acres": 954.36,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 1215.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 954.4 ac vs 957.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.951131,
+    -109.020841
+   ]
+  },
+  "US-10901+US-6161@area@41.954,-108.541": {
+   "id": "US-10901+US-6161@area@41.954,-108.541",
+   "area": "US-WY",
+   "refs": [
+    "US-10901",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 12219.2,
+   "stored_wide_m": 4682,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:43Z",
+   "layers": [
+    {
+     "ref": "US-10901",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:44Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 12270.94,
+   "live_acres": 12273.1,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 4628.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12273.1 ac vs 12270.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.954042,
+    -108.541196
+   ]
+  },
+  "US-10901+US-6196@area@41.950,-108.679": {
+   "id": "US-10901+US-6196@area@41.950,-108.679",
+   "area": "US-WY",
+   "refs": [
+    "US-10901",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 728.3,
+   "stored_wide_m": 1056,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:46Z",
+   "layers": [
+    {
+     "ref": "US-10901",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:47Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 726.86,
+   "live_acres": 725.43,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 1070.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 725.4 ac vs 726.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.950475,
+    -108.678803
+   ]
+  },
+  "US-10926+US-6161@area@42.021,-109.287": {
+   "id": "US-10926+US-6161@area@42.021,-109.287",
+   "area": "US-WY",
+   "refs": [
+    "US-10926",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 9458.6,
+   "stored_wide_m": 3923,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:48Z",
+   "layers": [
+    {
+     "ref": "US-10926",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:26:49Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9495.05,
+   "live_acres": 9493.5,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 25,
+   "gap_m": 0,
+   "wide_m": 3948.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9493.5 ac vs 9495.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.020749,
+    -109.287238
+   ]
+  },
+  "US-10928+US-3293@area@43.385,-108.142": {
+   "id": "US-10928+US-3293@area@43.385,-108.142",
+   "area": "US-WY",
+   "refs": [
+    "US-10928",
+    "US-3293"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.5,
+   "stored_wide_m": 35,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:50Z",
+   "layers": [
+    {
+     "ref": "US-10928",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:51Z"
+    },
+    {
+     "ref": "US-3293",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:53Z"
+    },
+    {
+     "ref": "US-3293",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:26:54Z"
+    },
+    {
+     "ref": "US-3293",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.4,
+   "live_acres": 0.41,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 32.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.4 ac vs 0.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.385539,
+    -108.142524
+   ]
+  },
+  "US-10930+US-10944@same land@41.188,-109.705": {
+   "id": "US-10930+US-10944@same land@41.188,-109.705",
+   "area": "US-WY",
+   "refs": [
+    "US-10930",
+    "US-10944"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:56Z",
+   "layers": [
+    {
+     "ref": "US-10930",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:56Z"
+    },
+    {
+     "ref": "US-10944",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:26:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 16023.86,
+   "live_acres": 17005.63,
+   "kept_pct": 99.9,
+   "size_pct": 6.1,
+   "moved_m": 1278,
+   "gap_m": 0,
+   "wide_m": 7687.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17005.6 ac vs 16023.9 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.19741,
+    -109.696007
+   ]
+  },
+  "US-10932+US-6161@area@42.241,-108.662": {
+   "id": "US-10932+US-6161@area@42.241,-108.662",
+   "area": "US-WY",
+   "refs": [
+    "US-10932",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 42323.6,
+   "stored_wide_m": 8365,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:26:57Z",
+   "layers": [
+    {
+     "ref": "US-10932",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:26:58Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 16443.71,
+   "live_acres": 42102.67,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 3005,
+   "gap_m": 0,
+   "wide_m": 9374.2,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 42102.7 ac vs 42323.6 ac stored (row acres; the stored shape is a 16443.7 ac preview) (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.24071,
+    -108.664269
+   ]
+  },
+  "US-10935+US-6152@area@44.347,-107.514": {
+   "id": "US-10935+US-6152@area@44.347,-107.514",
+   "area": "US-WY",
+   "refs": [
+    "US-10935",
+    "US-6152"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3905.6,
+   "stored_wide_m": 2350,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:27:00Z",
+   "layers": [
+    {
+     "ref": "US-10935",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:27:01Z"
+    },
+    {
+     "ref": "US-6152",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:02Z"
+    },
+    {
+     "ref": "US-6152",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3979.31,
+   "live_acres": 3909.68,
+   "kept_pct": 94.5,
+   "size_pct": -1.7,
+   "moved_m": 18,
+   "gap_m": 0,
+   "wide_m": 2357.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3909.7 ac vs 3979.3 ac stored (-2%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.347221,
+    -107.514461
+   ]
+  },
+  "US-10939+US-6198@area@41.096,-109.135": {
+   "id": "US-10939+US-6198@area@41.096,-109.135",
+   "area": "US-WY",
+   "refs": [
+    "US-10939",
+    "US-6198"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 8760.0,
+   "stored_wide_m": 4000,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:04Z",
+   "layers": [
+    {
+     "ref": "US-10939",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:04Z"
+    },
+    {
+     "ref": "US-6198",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8789.55,
+   "live_acres": 8787.88,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 18,
+   "gap_m": 0,
+   "wide_m": 3969.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8787.9 ac vs 8789.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.095387,
+    -109.13486
+   ]
+  },
+  "US-10940+US-6161@area@41.966,-108.464": {
+   "id": "US-10940+US-6161@area@41.966,-108.464",
+   "area": "US-WY",
+   "refs": [
+    "US-10940",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 9543.3,
+   "stored_wide_m": 4645,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:07Z",
+   "layers": [
+    {
+     "ref": "US-10940",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:08Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9585.42,
+   "live_acres": 9586.29,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 28,
+   "gap_m": 0,
+   "wide_m": 4681.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9586.3 ac vs 9585.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.965729,
+    -108.463694
+   ]
+  },
+  "US-10941+US-6161@area@42.048,-109.211": {
+   "id": "US-10941+US-6161@area@42.048,-109.211",
+   "area": "US-WY",
+   "refs": [
+    "US-10941",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 28227.2,
+   "stored_wide_m": 7105,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:10Z",
+   "layers": [
+    {
+     "ref": "US-10941",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:27:11Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 28364.81,
+   "live_acres": 28364.84,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 7104.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28364.8 ac vs 28364.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.047976,
+    -109.210804
+   ]
+  },
+  "US-10942+US-6161@area@42.003,-108.714": {
+   "id": "US-10942+US-6161@area@42.003,-108.714",
+   "area": "US-WY",
+   "refs": [
+    "US-10942",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 10830.1,
+   "stored_wide_m": 4862,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:12Z",
+   "layers": [
+    {
+     "ref": "US-10942",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:13Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 10879.34,
+   "live_acres": 10878.7,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 43,
+   "gap_m": 0,
+   "wide_m": 4906.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10878.7 ac vs 10879.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.003746,
+    -108.714313
+   ]
+  },
+  "US-10945+US-6161@area@42.272,-108.890": {
+   "id": "US-10945+US-6161@area@42.272,-108.890",
+   "area": "US-WY",
+   "refs": [
+    "US-10945",
+    "US-6161"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4941.9,
+   "stored_wide_m": 3701,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:15Z",
+   "layers": [
+    {
+     "ref": "US-10945",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:16Z"
+    },
+    {
+     "ref": "US-6161",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4958.94,
+   "live_acres": 4959.52,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 24,
+   "gap_m": 0,
+   "wide_m": 3704.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4959.5 ac vs 4958.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.272032,
+    -108.890176
+   ]
+  },
+  "US-11718+US-12704@same land@41.561,-110.837": {
+   "id": "US-11718+US-12704@same land@41.561,-110.837",
+   "area": "US-WY",
+   "refs": [
+    "US-11718",
+    "US-12704"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:18Z",
+   "layers": [
+    {
+     "ref": "US-11718",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:27:20Z"
+    },
+    {
+     "ref": "US-12704",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T04:27:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 213397.72,
+   "live_acres": 120.12,
+   "kept_pct": 0.1,
+   "size_pct": -99.9,
+   "moved_m": 15075,
+   "gap_m": 0,
+   "wide_m": 402.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 15075 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    41.509036,
+    -111.003957
+   ]
+  },
+  "US-11718+US-6230@area@41.526,-110.862": {
+   "id": "US-11718+US-6230@area@41.526,-110.862",
+   "area": "US-WY",
+   "refs": [
+    "US-11718",
+    "US-6230"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 41.0,
+   "stored_wide_m": 397,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:22Z",
+   "layers": [
+    {
+     "ref": "US-11718",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:27:23Z"
+    },
+    {
+     "ref": "US-6230",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 40.24,
+   "live_acres": 39.85,
+   "kept_pct": 100.0,
+   "size_pct": -1.0,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 400.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 39.8 ac vs 40.2 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.519976,
+    -111.01846
+   ]
+  },
+  "US-11741+US-4475@area@43.263,-110.992": {
+   "id": "US-11741+US-4475@area@43.263,-110.992",
+   "area": "US-WY",
+   "refs": [
+    "US-11741",
+    "US-4475"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 55247.7,
+   "stored_wide_m": 8255,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:25Z",
+   "layers": [
+    {
+     "ref": "US-11741",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:25Z"
+    },
+    {
+     "ref": "US-4475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:27:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22307.96,
+   "live_acres": 55075.34,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 104,
+   "gap_m": 0,
+   "wide_m": 8372.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 55075.3 ac vs 55247.7 ac stored (row acres; the stored shape is a 22308.0 ac preview) (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.262831,
+    -110.992712
+   ]
+  },
+  "US-11741+US-4535@area@43.336,-110.906": {
+   "id": "US-11741+US-4535@area@43.336,-110.906",
+   "area": "US-WY",
+   "refs": [
+    "US-11741",
+    "US-4535"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 29820.6,
+   "stored_wide_m": 4784,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:26Z",
+   "layers": [
+    {
+     "ref": "US-11741",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:27Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 15618.62,
+   "live_acres": 29324.6,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 1385,
+   "gap_m": 0,
+   "wide_m": 6788.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29324.6 ac vs 29820.6 ac stored (row acres; the stored shape is a 15618.6 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.33578,
+    -110.906555
+   ]
+  },
+  "US-11741+US-6227@area@43.231,-110.866": {
+   "id": "US-11741+US-6227@area@43.231,-110.866",
+   "area": "US-WY",
+   "refs": [
+    "US-11741",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2197.8,
+   "stored_wide_m": 872,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:27Z",
+   "layers": [
+    {
+     "ref": "US-11741",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:28Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:29Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:27:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2195.23,
+   "live_acres": 2197.01,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 26,
+   "gap_m": 0,
+   "wide_m": 867.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2197.0 ac vs 2195.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.261562,
+    -110.905127
+   ]
+  },
+  "US-12704+US-6230@area@41.526,-110.862": {
+   "id": "US-12704+US-6230@area@41.526,-110.862",
+   "area": "US-WY",
+   "refs": [
+    "US-12704",
+    "US-6230"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 199143.8,
+   "stored_wide_m": 10865,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:29Z",
+   "layers": [
+    {
+     "ref": "US-12704",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T04:27:29Z"
+    },
+    {
+     "ref": "US-6230",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 17115.57,
+   "live_acres": 196011.33,
+   "kept_pct": 100.0,
+   "size_pct": -1.6,
+   "moved_m": 3125,
+   "gap_m": 0,
+   "wide_m": 23979.4,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 196011.3 ac vs 199143.8 ac stored (row acres; the stored shape is a 17115.6 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.527128,
+    -110.859638
+   ]
+  },
+  "US-12727+US-6227@area@43.570,-110.300": {
+   "id": "US-12727+US-6227@area@43.570,-110.300",
+   "area": "US-WY",
+   "refs": [
+    "US-12727",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
+   "stored_acres": 139.5,
+   "stored_wide_m": 695,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:29Z",
+   "layers": [
+    {
+     "ref": "US-12727",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:30Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:31Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:27:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 138.33,
+   "live_acres": 138.4,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 697.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 138.4 ac vs 138.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.569975,
+    -110.300487
+   ]
+  },
+  "US-12728+US-4535@area@42.863,-109.681": {
+   "id": "US-12728+US-4535@area@42.863,-109.681",
+   "area": "US-WY",
+   "refs": [
+    "US-12728",
+    "US-4535"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 55.0,
+   "stored_wide_m": 353,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:32Z",
+   "layers": [
+    {
+     "ref": "US-12728",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:32Z"
+    },
+    {
+     "ref": "US-12728",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:37Z"
+    },
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 52.98,
+   "live_acres": 52.99,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 352.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 53.0 ac vs 53.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.862667,
+    -109.681353
+   ]
+  },
+  "US-12731+US-6171@area@41.136,-108.289": {
+   "id": "US-12731+US-6171@area@41.136,-108.289",
+   "area": "US-WY",
+   "refs": [
+    "US-12731",
+    "US-6171"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 34771.9,
+   "stored_wide_m": 6559,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:40Z",
+   "layers": [
+    {
+     "ref": "US-12731",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T04:27:41Z"
+    },
+    {
+     "ref": "US-6171",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 10806.05,
+   "live_acres": 34403.44,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 465,
+   "gap_m": 0,
+   "wide_m": 6806.4,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 34403.4 ac vs 34771.9 ac stored (row acres; the stored shape is a 10806.1 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.136484,
+    -108.289167
+   ]
+  },
+  "US-12731+US-6196@area@41.293,-108.384": {
+   "id": "US-12731+US-6196@area@41.293,-108.384",
+   "area": "US-WY",
+   "refs": [
+    "US-12731",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 109.9,
+   "stored_wide_m": 465,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:44Z",
+   "layers": [
+    {
+     "ref": "US-12731",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:45Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 108.59,
+   "live_acres": 109.4,
+   "kept_pct": 100.0,
+   "size_pct": 0.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 470.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 109.4 ac vs 108.6 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.292834,
+    -108.384277
+   ]
+  },
+  "US-12731+US-6198@area@41.287,-108.270": {
+   "id": "US-12731+US-6198@area@41.287,-108.270",
+   "area": "US-WY",
+   "refs": [
+    "US-12731",
+    "US-6198"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 53466.4,
+   "stored_wide_m": 7215,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:46Z",
+   "layers": [
+    {
+     "ref": "US-12731",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T04:27:47Z"
+    },
+    {
+     "ref": "US-6198",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 17367.06,
+   "live_acres": 52741.79,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 1245,
+   "gap_m": 0,
+   "wide_m": 8187.1,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 52741.8 ac vs 53466.4 ac stored (row acres; the stored shape is a 17367.1 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.228915,
+    -108.327086
+   ]
+  },
+  "US-12733+US-6174@area@44.262,-108.443": {
+   "id": "US-12733+US-6174@area@44.262,-108.443",
+   "area": "US-WY",
+   "refs": [
+    "US-12733",
+    "US-6174"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 972.0,
+   "stored_wide_m": 1487,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:48Z",
+   "layers": [
+    {
+     "ref": "US-12733",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:49Z"
+    },
+    {
+     "ref": "US-6174",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 971.67,
+   "live_acres": 969.9,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 1501.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 969.9 ac vs 971.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.262213,
+    -108.443335
+   ]
+  },
+  "US-12734+US-6172@area@42.397,-108.508": {
+   "id": "US-12734+US-6172@area@42.397,-108.508",
+   "area": "US-WY",
+   "refs": [
+    "US-12734",
+    "US-6172"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 56.0,
+   "stored_wide_m": 235,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:51Z",
+   "layers": [
+    {
+     "ref": "US-12734",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:27:52Z"
+    },
+    {
+     "ref": "US-6172",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 55.0,
+   "live_acres": 54.77,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 242,
+   "gap_m": 0,
+   "wide_m": 235.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 54.8 ac vs 55.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.396905,
+    -108.510842
+   ]
+  },
+  "US-3293+US-6175@area@43.302,-108.221": {
+   "id": "US-3293+US-6175@area@43.302,-108.221",
+   "area": "US-WY",
+   "refs": [
+    "US-3293",
+    "US-6175"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.2,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:27:55Z",
+   "layers": [
+    {
+     "ref": "US-3293",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:55Z"
+    },
+    {
+     "ref": "US-3293",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:55Z"
+    },
+    {
+     "ref": "US-3293",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:55Z"
+    },
+    {
+     "ref": "US-6175",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:56Z"
+    },
+    {
+     "ref": "US-6175",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "7 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:27:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.69,
+   "live_acres": 2.53,
+   "kept_pct": 100.0,
+   "size_pct": -6.0,
+   "moved_m": 108,
+   "gap_m": 0,
+   "wide_m": 38.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.5 ac vs 2.7 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.301559,
+    -108.221169
+   ]
+  },
+  "US-3301+US-6141@area@42.158,-106.947": {
+   "id": "US-3301+US-6141@area@42.158,-106.947",
+   "area": "US-WY",
+   "refs": [
+    "US-3301",
+    "US-6141"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4447.6,
+   "stored_wide_m": 3557,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:27:58Z",
+   "layers": [
+    {
+     "ref": "US-3301",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:58Z"
+    },
+    {
+     "ref": "US-3301",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:27:59Z"
+    },
+    {
+     "ref": "US-3301",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:01Z"
+    },
+    {
+     "ref": "US-6141",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:01Z"
+    },
+    {
+     "ref": "US-6141",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:28:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4392.96,
+   "live_acres": 4391.77,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 18,
+   "gap_m": 0,
+   "wide_m": 3565.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4391.8 ac vs 4393.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.157925,
+    -106.946625
+   ]
+  },
+  "US-3302+US-4536@area@42.738,-108.816": {
+   "id": "US-3302+US-4536@area@42.738,-108.816",
+   "area": "US-WY",
+   "refs": [
+    "US-3302",
+    "US-4536"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.7,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:28:04Z",
+   "layers": [
+    {
+     "ref": "US-3302",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:04Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:28:04Z"
+    },
+    {
+     "ref": "US-3302",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:05Z"
+    },
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.77,
+   "live_acres": 4.61,
+   "kept_pct": 100.0,
+   "size_pct": -3.3,
+   "moved_m": 65,
+   "gap_m": 0,
+   "wide_m": 37.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.6 ac vs 4.8 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.738799,
+    -108.829313
+   ]
+  },
+  "US-4394+US-5793+US-6196@area@41.255,-109.528": {
+   "id": "US-4394+US-5793+US-6196@area@41.255,-109.528",
+   "area": "US-WY",
+   "refs": [
+    "US-4394",
+    "US-5793",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 324.9,
+   "stored_wide_m": 905,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:28:06Z",
+   "layers": [
+    {
+     "ref": "US-4394",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:06Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:07Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:08Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 323.46,
+   "live_acres": 366.43,
+   "kept_pct": 100.0,
+   "size_pct": 13.3,
+   "moved_m": 82,
+   "gap_m": 0,
+   "wide_m": 977.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 366.4 ac vs 323.5 ac stored (+13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.255173,
+    -109.528421
+   ]
+  },
+  "US-4394+US-5793+US-6198@area@41.249,-109.536": {
+   "id": "US-4394+US-5793+US-6198@area@41.249,-109.536",
+   "area": "US-WY",
+   "refs": [
+    "US-4394",
+    "US-5793",
+    "US-6198"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 427.7,
+   "stored_wide_m": 885,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:28:09Z",
+   "layers": [
+    {
+     "ref": "US-4394",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:10Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:10Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:11Z"
+    },
+    {
+     "ref": "US-6198",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 425.98,
+   "live_acres": 423.68,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 889.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 423.7 ac vs 426.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.249113,
+    -109.536444
+   ]
+  },
+  "US-4394+US-5793@area@41.214,-109.577": {
+   "id": "US-4394+US-5793@area@41.214,-109.577",
+   "area": "US-WY",
+   "refs": [
+    "US-4394",
+    "US-5793"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: low-confidence outline for Flaming Gorge National Recreation Area (check the join)",
+   "stored_acres": 97506.4,
+   "stored_wide_m": 6900,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:28:11Z",
+   "layers": [
+    {
+     "ref": "US-4394",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:28:12Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:12Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 16503.94,
+   "live_acres": 96065.01,
+   "kept_pct": 99.3,
+   "size_pct": -1.5,
+   "moved_m": 14623,
+   "gap_m": 0,
+   "wide_m": 6970.2,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 96065.0 ac vs 97506.4 ac stored (row acres; the stored shape is a 16503.9 ac preview) (-2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.083068,
+    -109.544984
+   ]
+  },
+  "US-4394+US-6196@area@41.383,-109.418": {
+   "id": "US-4394+US-6196@area@41.383,-109.418",
+   "area": "US-WY",
+   "refs": [
+    "US-4394",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 1952.2,
+   "stored_wide_m": 1595,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:28:13Z",
+   "layers": [
+    {
+     "ref": "US-4394",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:14Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1992.59,
+   "live_acres": 1762.08,
+   "kept_pct": 85.5,
+   "size_pct": -11.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1593.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1762.1 ac vs 1992.6 ac stored (-12%), 85% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.382748,
+    -109.417562
+   ]
+  },
+  "US-4394+US-6198@area@41.236,-109.542": {
+   "id": "US-4394+US-6198@area@41.236,-109.542",
+   "area": "US-WY",
+   "refs": [
+    "US-4394",
+    "US-6198"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 468.5,
+   "stored_wide_m": 885,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T04:28:14Z",
+   "layers": [
+    {
+     "ref": "US-4394",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:28:15Z"
+    },
+    {
+     "ref": "US-6198",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 435.74,
+   "live_acres": 423.68,
+   "kept_pct": 97.8,
+   "size_pct": -2.8,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 889.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 423.7 ac vs 435.7 ac stored (-3%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.249113,
+    -109.536444
+   ]
+  },
+  "US-4403+US-6123@area@41.189,-106.046": {
+   "id": "US-4403+US-6123@area@41.189,-106.046",
+   "area": "US-WY",
+   "refs": [
+    "US-4403",
+    "US-6123"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 13.4,
+   "stored_wide_m": 25,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:28:15Z",
+   "layers": [
+    {
+     "ref": "US-4403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:16Z"
+    },
+    {
+     "ref": "US-6123",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:18Z"
+    },
+    {
+     "ref": "US-6123",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:28:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7.86,
+   "live_acres": 7.59,
+   "kept_pct": 100.0,
+   "size_pct": -3.4,
+   "moved_m": 171,
+   "gap_m": 0,
+   "wide_m": 14.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.6 ac vs 7.9 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.174385,
+    -106.051386
+   ]
+  },
+  "US-4403+US-6125@area@41.095,-106.377": {
+   "id": "US-4403+US-6125@area@41.095,-106.377",
+   "area": "US-WY",
+   "refs": [
+    "US-4403",
+    "US-6125"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 22446.9,
+   "stored_wide_m": 7358,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:28:20Z",
+   "layers": [
+    {
+     "ref": "US-4403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:28:20Z"
+    },
+    {
+     "ref": "US-6125",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 22533.49,
+   "live_acres": 22528.92,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 158,
+   "gap_m": 0,
+   "wide_m": 7362.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22528.9 ac vs 22533.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.096508,
+    -106.377982
+   ]
+  },
+  "US-4403+US-6126@area@41.583,-106.307": {
+   "id": "US-4403+US-6126@area@41.583,-106.307",
+   "area": "US-WY",
+   "refs": [
+    "US-4403",
+    "US-6126"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 53.3,
+   "stored_wide_m": 95,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:28:22Z",
+   "layers": [
+    {
+     "ref": "US-4403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:22Z"
+    },
+    {
+     "ref": "US-6126",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:28:22Z"
+    },
+    {
+     "ref": "US-6126",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 48.52,
+   "live_acres": 46.9,
+   "kept_pct": 99.9,
+   "size_pct": -3.3,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 94.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 46.9 ac vs 48.5 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.582968,
+    -106.307113
+   ]
+  },
+  "US-4403+US-6127@area@41.190,-106.423": {
+   "id": "US-4403+US-6127@area@41.190,-106.423",
+   "area": "US-WY",
+   "refs": [
+    "US-4403",
+    "US-6127"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 15220.2,
+   "stored_wide_m": 4975,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:28:24Z",
+   "layers": [
+    {
+     "ref": "US-4403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:25Z"
+    },
+    {
+     "ref": "US-6127",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:28:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 15278.09,
+   "live_acres": 15276.44,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 35,
+   "gap_m": 0,
+   "wide_m": 4977.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15276.4 ac vs 15278.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.189188,
+    -106.420344
+   ]
+  },
+  "US-4403+US-6130@area@41.106,-106.801": {
+   "id": "US-4403+US-6130@area@41.106,-106.801",
+   "area": "US-WY",
+   "refs": [
+    "US-4403",
+    "US-6130"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10173.8,
+   "stored_wide_m": 3501,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:20:34Z",
+   "layers": [
+    {
+     "ref": "US-4403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:35Z"
+    },
+    {
+     "ref": "US-6130",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:44Z"
+    },
+    {
+     "ref": "US-6130",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 10199.28,
+   "live_acres": 10205.56,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 3530.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10205.6 ac vs 10199.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.10589,
+    -106.80168
+   ]
+  },
+  "US-4403+US-6133@area@41.108,-106.974": {
+   "id": "US-4403+US-6133@area@41.108,-106.974",
+   "area": "US-WY",
+   "refs": [
+    "US-4403",
+    "US-6133"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 31170.8,
+   "stored_wide_m": 5459,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:20:47Z",
+   "layers": [
+    {
+     "ref": "US-4403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:47Z"
+    },
+    {
+     "ref": "US-6133",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 16418.62,
+   "live_acres": 31053.99,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 3788,
+   "gap_m": 0,
+   "wide_m": 7125.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 31054.0 ac vs 31170.8 ac stored (row acres; the stored shape is a 16418.6 ac preview) (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.107455,
+    -106.973294
+   ]
+  },
+  "US-4475+US-6226@area@43.981,-110.923": {
+   "id": "US-4475+US-6226@area@43.981,-110.923",
+   "area": "US-WY",
+   "refs": [
+    "US-4475",
+    "US-6226"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 101129.2,
+   "stored_wide_m": 7032,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:20:48Z",
+   "layers": [
+    {
+     "ref": "US-4475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:20:48Z"
+    },
+    {
+     "ref": "US-6226",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22633.09,
+   "live_acres": 123751.06,
+   "kept_pct": 100.0,
+   "size_pct": 22.4,
+   "moved_m": 45156,
+   "gap_m": 0,
+   "wide_m": 8409.8,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 123751.1 ac vs 101129.2 ac stored (row acres; the stored shape is a 22633.1 ac preview) (+22%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.980507,
+    -110.924203
+   ]
+  },
+  "US-4534+US-6139@area@44.413,-106.921": {
+   "id": "US-4534+US-6139@area@44.413,-106.921",
+   "area": "US-WY",
+   "refs": [
+    "US-4534",
+    "US-6139"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 11.4,
+   "stored_wide_m": 25,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:20:57Z",
+   "layers": [
+    {
+     "ref": "US-4534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:57Z"
+    },
+    {
+     "ref": "US-6139",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:20:59Z"
+    },
+    {
+     "ref": "US-6139",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.72,
+   "live_acres": 9.31,
+   "kept_pct": 100.0,
+   "size_pct": -4.2,
+   "moved_m": 0,
+   "gap_m": 0,
+   "wide_m": 25.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.3 ac vs 9.7 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.413466,
+    -106.920864
+   ]
+  },
+  "US-4534+US-6146@area@44.412,-107.237": {
+   "id": "US-4534+US-6146@area@44.412,-107.237",
+   "area": "US-WY",
+   "refs": [
+    "US-4534",
+    "US-6146"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 174869.1,
+   "stored_wide_m": 13275,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:21:02Z",
+   "layers": [
+    {
+     "ref": "US-4534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:03Z"
+    },
+    {
+     "ref": "US-6146",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 28602.47,
+   "live_acres": 191905.63,
+   "kept_pct": 100.0,
+   "size_pct": 9.7,
+   "moved_m": 883,
+   "gap_m": 0,
+   "wide_m": 15814.0,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 191905.6 ac vs 174869.1 ac stored (row acres; the stored shape is a 28602.5 ac preview) (+10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.410164,
+    -107.235927
+   ]
+  },
+  "US-4535+US-6201@area@43.116,-109.760": {
+   "id": "US-4535+US-6201@area@43.116,-109.760",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6201"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 398867.7,
+   "stored_wide_m": 12915,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:21:04Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:21:04Z"
+    },
+    {
+     "ref": "US-6201",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 25541.79,
+   "live_acres": 426553.22,
+   "kept_pct": 100.0,
+   "size_pct": 6.9,
+   "moved_m": 6518,
+   "gap_m": 0,
+   "wide_m": 20785.4,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 426553.2 ac vs 398867.7 ac stored (row acres; the stored shape is a 25541.8 ac preview) (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.117384,
+    -109.759532
+   ]
+  },
+  "US-4535+US-6210@area@43.923,-110.037": {
+   "id": "US-4535+US-6210@area@43.923,-110.037",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6210"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 593681.4,
+   "stored_wide_m": 12625,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:21:06Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:06Z"
+    },
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 27456.52,
+   "live_acres": 584341.37,
+   "kept_pct": 100.0,
+   "size_pct": -1.6,
+   "moved_m": 30216,
+   "gap_m": 0,
+   "wide_m": 34504.8,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 584341.4 ac vs 593681.4 ac stored (row acres; the stored shape is a 27456.5 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.977633,
+    -110.080392
+   ]
+  },
+  "US-4535+US-6218@area@42.836,-109.683": {
+   "id": "US-4535+US-6218@area@42.836,-109.683",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6218"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4.6,
+   "stored_wide_m": 45,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:21:50Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:50Z"
+    },
+    {
+     "ref": "US-6218",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:51Z"
+    },
+    {
+     "ref": "US-6218",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.89,
+   "live_acres": 0.74,
+   "kept_pct": 91.9,
+   "size_pct": -16.3,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 45.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.7 ac vs 0.9 ac stored (-16%), 92% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.836089,
+    -109.683288
+   ]
+  },
+  "US-4535+US-6223+US-6227@area@43.625,-110.590": {
+   "id": "US-4535+US-6223+US-6227@area@43.625,-110.590",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6223",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.4,
+   "stored_wide_m": 35,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:21:55Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:56Z"
+    },
+    {
+     "ref": "US-6223",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:21:56Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T05:22:05Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 5.26,
+   "live_acres": 5.53,
+   "kept_pct": 100.0,
+   "size_pct": 5.3,
+   "moved_m": 760,
+   "gap_m": 0,
+   "wide_m": 33.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.5 ac vs 5.3 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.62479,
+    -110.598105
+   ]
+  },
+  "US-4535+US-6223@area@43.464,-110.381": {
+   "id": "US-4535+US-6223@area@43.464,-110.381",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6223"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 286418.4,
+   "stored_wide_m": 12605,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:14Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:22:15Z"
+    },
+    {
+     "ref": "US-6223",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 35278.35,
+   "live_acres": 285333.97,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 9940,
+   "gap_m": 0,
+   "wide_m": 22083.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 285334.0 ac vs 286418.4 ac stored (row acres; the stored shape is a 35278.3 ac preview) (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.462186,
+    -110.379789
+   ]
+  },
+  "US-4535+US-6227@area@43.812,-110.290": {
+   "id": "US-4535+US-6227@area@43.812,-110.290",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 29889.9,
+   "stored_wide_m": 1802,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:15Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:22:16Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:22:17Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 4570.37,
+   "live_acres": 8506.96,
+   "kept_pct": 100.0,
+   "size_pct": 86.1,
+   "moved_m": 21640,
+   "gap_m": 0,
+   "wide_m": 1117.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 86% bigger (8507.0 ac vs 4570.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.935499,
+    -110.444434
+   ]
+  },
+  "US-4535+US-6233@area@43.139,-110.997": {
+   "id": "US-4535+US-6233@area@43.139,-110.997",
+   "area": "US-WY",
+   "refs": [
+    "US-4535",
+    "US-6233"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 692.2,
+   "stored_wide_m": 832,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:17Z",
+   "layers": [
+    {
+     "ref": "US-4535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:17Z"
+    },
+    {
+     "ref": "US-6233",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:18Z"
+    },
+    {
+     "ref": "US-6233",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 688.7,
+   "live_acres": 686.44,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 822.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 686.4 ac vs 688.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.138854,
+    -110.996893
+   ]
+  },
+  "US-4536+US-6197@area@42.709,-109.059": {
+   "id": "US-4536+US-6197@area@42.709,-109.059",
+   "area": "US-WY",
+   "refs": [
+    "US-4536",
+    "US-6197"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 97737.0,
+   "stored_wide_m": 8343,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:20Z",
+   "layers": [
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:21Z"
+    },
+    {
+     "ref": "US-6197",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 20535.79,
+   "live_acres": 102601.49,
+   "kept_pct": 100.0,
+   "size_pct": 5.0,
+   "moved_m": 14900,
+   "gap_m": 0,
+   "wide_m": 11371.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 102601.5 ac vs 97737.0 ac stored (row acres; the stored shape is a 20535.8 ac preview) (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.709051,
+    -109.059155
+   ]
+  },
+  "US-4536+US-6202@area@44.580,-109.871": {
+   "id": "US-4536+US-6202@area@44.580,-109.871",
+   "area": "US-WY",
+   "refs": [
+    "US-4536",
+    "US-6202"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 304068.2,
+   "stored_wide_m": 12875,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:23Z",
+   "layers": [
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:23Z"
+    },
+    {
+     "ref": "US-6202",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 28037.54,
+   "live_acres": 331925.55,
+   "kept_pct": 100.0,
+   "size_pct": 9.2,
+   "moved_m": 29135,
+   "gap_m": 0,
+   "wide_m": 18172.3,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 331925.5 ac vs 304068.2 ac stored (row acres; the stored shape is a 28037.5 ac preview) (+9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.806281,
+    -109.797398
+   ]
+  },
+  "US-4536+US-6207@area@44.865,-109.542": {
+   "id": "US-4536+US-6207@area@44.865,-109.542",
+   "area": "US-WY",
+   "refs": [
+    "US-4536",
+    "US-6207"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6970.5,
+   "stored_wide_m": 1204,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:25Z",
+   "layers": [
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:25Z"
+    },
+    {
+     "ref": "US-6207",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 3955.84,
+   "live_acres": 6923.34,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 1216.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6923.3 ac vs 6970.5 ac stored (row acres; the stored shape is a 3955.8 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.864961,
+    -109.542499
+   ]
+  },
+  "US-4536+US-6209@area@44.972,-109.681": {
+   "id": "US-4536+US-6209@area@44.972,-109.681",
+   "area": "US-WY",
+   "refs": [
+    "US-4536",
+    "US-6209"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23783.6,
+   "stored_wide_m": 6095,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:27Z",
+   "layers": [
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:27Z"
+    },
+    {
+     "ref": "US-6209",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 12371.65,
+   "live_acres": 23681.51,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 1010,
+   "gap_m": 0,
+   "wide_m": 6741.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23681.5 ac vs 23783.6 ac stored (row acres; the stored shape is a 12371.6 ac preview) (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.971936,
+    -109.681392
+   ]
+  },
+  "US-4536+US-6211@area@43.931,-109.701": {
+   "id": "US-4536+US-6211@area@43.931,-109.701",
+   "area": "US-WY",
+   "refs": [
+    "US-4536",
+    "US-6211"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 363883.4,
+   "stored_wide_m": 13665,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:29Z",
+   "layers": [
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:29Z"
+    },
+    {
+     "ref": "US-6211",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 43730.52,
+   "live_acres": 566500.65,
+   "kept_pct": 100.0,
+   "size_pct": 1195.4,
+   "moved_m": 9093,
+   "gap_m": 0,
+   "wide_m": 31227.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 1195% bigger (566500.6 ac vs 43730.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.967555,
+    -109.56017
+   ]
+  },
+  "US-4536+US-6217@area@43.269,-109.570": {
+   "id": "US-4536+US-6217@area@43.269,-109.570",
+   "area": "US-WY",
+   "refs": [
+    "US-4536",
+    "US-6217"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 177815.7,
+   "stored_wide_m": 13395,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:31Z",
+   "layers": [
+    {
+     "ref": "US-4536",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:31Z"
+    },
+    {
+     "ref": "US-6217",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 36628.35,
+   "live_acres": 178565.3,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 11352,
+   "gap_m": 0,
+   "wide_m": 17774.2,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 178565.3 ac vs 177815.7 ac stored (row acres; the stored shape is a 36628.4 ac preview) (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.270876,
+    -109.569085
+   ]
+  },
+  "US-5793+US-6196@area@41.389,-109.424": {
+   "id": "US-5793+US-6196@area@41.389,-109.424",
+   "area": "US-WY",
+   "refs": [
+    "US-5793",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4550.6,
+   "stored_wide_m": 2797,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:33Z",
+   "layers": [
+    {
+     "ref": "US-5793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T05:22:34Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:35Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4423.54,
+   "live_acres": 1086.68,
+   "kept_pct": 24.9,
+   "size_pct": -75.4,
+   "moved_m": 1756,
+   "gap_m": 0,
+   "wide_m": 1063.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 1756 m from the stored centre; 25% of the stored overlap is still inside it",
+   "live_center": [
+    41.382875,
+    -109.443778
+   ]
+  },
+  "US-5793+US-6198@area@41.236,-109.542": {
+   "id": "US-5793+US-6198@area@41.236,-109.542",
+   "area": "US-WY",
+   "refs": [
+    "US-5793",
+    "US-6198"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 471.1,
+   "stored_wide_m": 885,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:38Z",
+   "layers": [
+    {
+     "ref": "US-5793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T05:22:38Z"
+    },
+    {
+     "ref": "US-5793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:39Z"
+    },
+    {
+     "ref": "US-6198",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 435.66,
+   "live_acres": 75.4,
+   "kept_pct": 17.7,
+   "size_pct": -82.7,
+   "moved_m": 1793,
+   "gap_m": 0,
+   "wide_m": 401.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 1793 m from the stored centre; 18% of the stored overlap is still inside it",
+   "live_center": [
+    41.243265,
+    -109.556439
+   ]
+  },
+  "US-6112+US-6113@area@42.135,-104.736": {
+   "id": "US-6112+US-6113@area@42.135,-104.736",
+   "area": "US-WY",
+   "refs": [
+    "US-6112",
+    "US-6113"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 5.1,
+   "stored_wide_m": 31,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:22:40Z",
+   "layers": [
+    {
+     "ref": "US-6112",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:41Z"
+    },
+    {
+     "ref": "US-6112",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:42Z"
+    },
+    {
+     "ref": "US-6113",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.55,
+   "live_acres": 3.3,
+   "kept_pct": 99.9,
+   "size_pct": -27.5,
+   "moved_m": 38,
+   "gap_m": 0,
+   "wide_m": 24.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 27% smaller (3.3 ac vs 4.5 ac stored)",
+   "live_center": [
+    42.135773,
+    -104.731426
+   ]
+  },
+  "US-6130+US-6136@same land@41.159,-106.801": {
+   "id": "US-6130+US-6136@same land@41.159,-106.801",
+   "area": "US-WY",
+   "refs": [
+    "US-6130",
+    "US-6136"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:22:46Z",
+   "layers": [
+    {
+     "ref": "US-6130",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:46Z"
+    },
+    {
+     "ref": "US-6130",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:46Z"
+    },
+    {
+     "ref": "US-6136",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4563.3,
+   "live_acres": 4562.53,
+   "kept_pct": 99.9,
+   "size_pct": -0.0,
+   "moved_m": 245,
+   "gap_m": 0,
+   "wide_m": 3282.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4562.5 ac vs 4563.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.159461,
+    -106.80349
+   ]
+  },
+  "US-6140+US-6145@area@43.583,-106.978": {
+   "id": "US-6140+US-6145@area@43.583,-106.978",
+   "area": "US-WY",
+   "refs": [
+    "US-6140",
+    "US-6145"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 2064.6,
+   "stored_wide_m": 1318,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:22:46Z",
+   "layers": [
+    {
+     "ref": "US-6140",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:47Z"
+    },
+    {
+     "ref": "US-6140",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:49Z"
+    },
+    {
+     "ref": "US-6145",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:50Z"
+    },
+    {
+     "ref": "US-6145",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2066.55,
+   "live_acres": 2060.15,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 1318.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2060.2 ac vs 2066.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.583041,
+    -106.978505
+   ]
+  },
+  "US-6150+US-6152@area@44.299,-107.540": {
+   "id": "US-6150+US-6152@area@44.299,-107.540",
+   "area": "US-WY",
+   "refs": [
+    "US-6150",
+    "US-6152"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 56.3,
+   "stored_wide_m": 235,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T05:22:52Z",
+   "layers": [
+    {
+     "ref": "US-6150",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:53Z"
+    },
+    {
+     "ref": "US-6152",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:54Z"
+    },
+    {
+     "ref": "US-6152",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 55.0,
+   "live_acres": 55.23,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 238.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 55.2 ac vs 55.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.299182,
+    -107.540432
+   ]
+  },
+  "US-6170+US-6173@area@44.939,-108.234": {
+   "id": "US-6170+US-6173@area@44.939,-108.234",
+   "area": "US-WY",
+   "refs": [
+    "US-6170",
+    "US-6173"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 271.4,
+   "stored_wide_m": 795,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:56Z",
+   "layers": [
+    {
+     "ref": "US-6170",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "6 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:22:57Z"
+    },
+    {
+     "ref": "US-6173",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:22:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 19,
+   "stored_shape_acres": 267.07,
+   "live_acres": 263.64,
+   "kept_pct": 99.0,
+   "size_pct": -1.3,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 800.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 263.6 ac vs 267.1 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.938673,
+    -108.233935
+   ]
+  },
+  "US-6176+US-6196@area@41.677,-108.792": {
+   "id": "US-6176+US-6196@area@41.677,-108.792",
+   "area": "US-WY",
+   "refs": [
+    "US-6176",
+    "US-6196"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 1.1,
+   "stored_wide_m": 57,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:22:59Z",
+   "layers": [
+    {
+     "ref": "US-6176",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:00Z"
+    },
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.96,
+   "live_acres": 0.97,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 56.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.0 ac vs 1.0 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.676488,
+    -108.791811
+   ]
+  },
+  "US-6196+US-6213@area@41.722,-109.486": {
+   "id": "US-6196+US-6213@area@41.722,-109.486",
+   "area": "US-WY",
+   "refs": [
+    "US-6196",
+    "US-6213"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 248187.8,
+   "stored_wide_m": 12095,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:23:01Z",
+   "layers": [
+    {
+     "ref": "US-6196",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:02Z"
+    },
+    {
+     "ref": "US-6213",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13121.47,
+   "live_acres": 250781.86,
+   "kept_pct": 100.0,
+   "size_pct": 1.0,
+   "moved_m": 6264,
+   "gap_m": 0,
+   "wide_m": 25445.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 250781.9 ac vs 248187.8 ac stored (row acres; the stored shape is a 13121.5 ac preview) (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.652391,
+    -109.417779
+   ]
+  },
+  "US-6210+US-6227@area@44.127,-110.300": {
+   "id": "US-6210+US-6227@area@44.127,-110.300",
+   "area": "US-WY",
+   "refs": [
+    "US-6210",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1907.6,
+   "stored_wide_m": 1123,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:23:05Z",
+   "layers": [
+    {
+     "ref": "US-6210",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:05Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:23:06Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 1903.96,
+   "live_acres": 1908.09,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 1117.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1908.1 ac vs 1904.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.127547,
+    -110.300209
+   ]
+  },
+  "US-6223+US-6227@area@43.423,-110.569": {
+   "id": "US-6223+US-6227@area@43.423,-110.569",
+   "area": "US-WY",
+   "refs": [
+    "US-6223",
+    "US-6227"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3840.6,
+   "stored_wide_m": 2245,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:23:06Z",
+   "layers": [
+    {
+     "ref": "US-6223",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:07Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:23:08Z"
+    },
+    {
+     "ref": "US-6227",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2352.89,
+   "live_acres": 5166.17,
+   "kept_pct": 100.0,
+   "size_pct": 119.6,
+   "moved_m": 271,
+   "gap_m": 0,
+   "wide_m": 2559.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 120% bigger (5166.2 ac vs 2352.9 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.422719,
+    -110.569065
+   ]
+  },
+  "US-6170+US-6173@area@channel@44.843,-108.170": {
+   "id": "US-6170+US-6173@area@channel@44.843,-108.170",
+   "area": "US-WY",
+   "refs": [
+    "US-6170",
+    "US-6173"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 231.5,
+   "stored_wide_m": 410.0,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T05:23:08Z",
+   "layers": [
+    {
+     "ref": "US-6170",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     "how": "6 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T05:23:09Z"
+    },
+    {
+     "ref": "US-6173",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T05:23:09Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 40,
+     "read": "2026-11-01T05:23:09Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 15,
+     "read": "2026-11-01T05:23:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 37.8,
+   "stored_shape_acres": 88.93,
+   "live_acres": 101.84,
+   "kept_pct": 100.0,
+   "size_pct": 14.5,
+   "moved_m": 10754,
+   "gap_m": 0,
+   "wide_m": 280.8,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 101.8 ac vs 88.9 ac stored (+14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.931695,
+    -108.223157
+   ]
+  }
+ },
+ "started": "2026-11-01T04:24:10Z",
+ "fers_sha256": "c767bfa4d3819618a2d1d5e599fa9ae54755e8f434e3558684235ff3e0dc7287",
+ "live_rows": 115,
+ "skipped_rows": 1277,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:44Z",
+ "complete": true,
+ "summary": {
+  "rows": 115,
+  "verdicts": {
+   "CONFIRMED": 97,
+   "SHRUNK": 6,
+   "GREW": 6,
+   "MOVED": 4,
+   "GONE": 2,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "water-only": 3,
+   "small overlap (under 50 yd across)": 24
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json",
+  "data/us-key/US-OR.json",
+  "data/us-key/US-PA.json",
+  "data/us-key/US-RI.json",
+  "data/us-key/US-SC.json",
+  "data/us-key/US-SD.json",
+  "data/us-key/US-TN.json",
+  "data/us-key/US-TX.json",
+  "data/us-key/US-UT.json",
+  "data/us-key/US-VA.json",
+  "data/us-key/US-VT.json",
+  "data/us-key/US-WA.json",
+  "data/us-key/US-WI.json",
+  "data/us-key/US-WV.json",
+  "data/us-key/US-WY.json"
+ ],
+ "requests_this_run": 1030
+}

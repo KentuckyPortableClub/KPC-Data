@@ -1,0 +1,647 @@
+{
+ "area": "US-NM",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-NM.json",
+ "rows": {
+  "US-0903+US-4575@trail@36.835,-108.007": {
+   "id": "US-0903+US-4575@trail@36.835,-108.007",
+   "area": "US-NM",
+   "refs": [
+    "US-0903",
+    "US-4575"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.91,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:26:59Z",
+   "layers": [
+    {
+     "ref": "US-0903",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:26:59Z"
+    },
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4575"
+   ],
+   "live_stretch_acres": 5.5,
+   "stored_shape_acres": 5.49,
+   "live_acres": 5.5,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 150,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.5 ac vs 5.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.836837,
+    -108.007611
+   ]
+  },
+  "US-0923+US-4558@trail@34.934,-107.892": {
+   "id": "US-0923+US-4558@trail@34.934,-107.892",
+   "area": "US-NM",
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 189.05,
+   "stored_wide_m": 93.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:27:00Z",
+   "layers": [
+    {
+     "ref": "US-0923",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:01Z"
+    },
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558"
+   ],
+   "live_stretch_acres": 178.68,
+   "stored_shape_acres": 176.69,
+   "live_acres": 178.68,
+   "kept_pct": 100.0,
+   "size_pct": 1.1,
+   "moved_m": 3986,
+   "gap_m": 0,
+   "wide_m": 83.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 178.7 ac vs 176.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.93935,
+    -107.935465
+   ]
+  },
+  "US-0937+US-4515@area@33.234,-108.280": {
+   "id": "US-0937+US-4515@area@33.234,-108.280",
+   "area": "US-NM",
+   "refs": [
+    "US-0937",
+    "US-4515"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 87.4,
+   "stored_wide_m": 185,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:27:02Z",
+   "layers": [
+    {
+     "ref": "US-0937",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:03Z"
+    },
+    {
+     "ref": "US-4515",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 85.19,
+   "live_acres": 87.32,
+   "kept_pct": 100.0,
+   "size_pct": 2.5,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 188.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 87.3 ac vs 85.2 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.234352,
+    -108.280341
+   ]
+  },
+  "US-11822+US-8227@same land@35.825,-106.716": {
+   "id": "US-11822+US-8227@same land@35.825,-106.716",
+   "area": "US-NM",
+   "refs": [
+    "US-11822",
+    "US-8227"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:27:06Z",
+   "layers": [
+    {
+     "ref": "US-11822",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:13Z"
+    },
+    {
+     "ref": "US-8227",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 83419.05,
+   "live_acres": 57740.84,
+   "kept_pct": 69.4,
+   "size_pct": -30.8,
+   "moved_m": 6174,
+   "gap_m": 0,
+   "wide_m": 6140.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 31% smaller (57740.8 ac vs 83419.0 ac stored)",
+   "live_center": [
+    35.812094,
+    -106.64962
+   ]
+  },
+  "US-2686+US-4514@area@35.305,-108.153": {
+   "id": "US-2686+US-4514@area@35.305,-108.153",
+   "area": "US-NM",
+   "refs": [
+    "US-2686",
+    "US-4514"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.5,
+   "stored_wide_m": 35,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:27:13Z",
+   "layers": [
+    {
+     "ref": "US-2686",
+     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:14Z"
+    },
+    {
+     "ref": "US-2686",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:15Z"
+    },
+    {
+     "ref": "US-4514",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.0,
+   "live_acres": 1.31,
+   "kept_pct": 99.4,
+   "size_pct": -12.7,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 40.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.5 ac stored (row acres; the stored shape is a 1.0 ac preview) (-13%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.304069,
+    -108.153046
+   ]
+  },
+  "US-4514+US-4558@trail@35.300,-107.578": {
+   "id": "US-4514+US-4558@trail@35.300,-107.578",
+   "area": "US-NM",
+   "refs": [
+    "US-4514",
+    "US-4558"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1036.66,
+   "stored_wide_m": 85.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:27:18Z",
+   "layers": [
+    {
+     "ref": "US-4514",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:19Z"
+    },
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558"
+   ],
+   "stored_shape_note": "stored zone outline (7689 ac) disagrees with zone_acres (1036.66): compared against the stored stretch line + 100 ft instead",
+   "live_stretch_acres": 1034.94,
+   "stored_shape_acres": 979.82,
+   "live_acres": 1008.47,
+   "kept_pct": 91.3,
+   "size_pct": 2.9,
+   "moved_m": 3975,
+   "gap_m": 0,
+   "wide_m": 76.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1008.5 ac vs 979.8 ac stored (+3%), 91% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.276674,
+    -107.612595
+   ]
+  },
+  "US-4515+US-4558@trail@32.858,-108.303": {
+   "id": "US-4515+US-4558@trail@32.858,-108.303",
+   "area": "US-NM",
+   "refs": [
+    "US-4515",
+    "US-4558"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 384.44,
+   "stored_wide_m": 85.9,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:27:19Z",
+   "layers": [
+    {
+     "ref": "US-4515",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:27:20Z"
+    },
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558"
+   ],
+   "live_stretch_acres": 2697.77,
+   "stored_shape_acres": 362.98,
+   "live_acres": 308.85,
+   "kept_pct": 81.1,
+   "size_pct": -14.9,
+   "moved_m": 2633,
+   "gap_m": 0,
+   "wide_m": 85.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 308.8 ac vs 363.0 ac stored (-15%), 81% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.880057,
+    -108.281866
+   ]
+  },
+  "US-4558+US-4566@trail@42.391,-108.451": {
+   "id": "US-4558+US-4566@trail@42.391,-108.451",
+   "area": "US-NM",
+   "refs": [
+    "US-4558",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:27:20Z",
+   "layers": [
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558",
+    "US-4566"
+   ],
+   "live_stretch_acres": 49.01,
+   "stored_shape_acres": 65.03,
+   "live_acres": 43.8,
+   "kept_pct": 80.1,
+   "size_pct": -32.7,
+   "moved_m": 3459,
+   "gap_m": 0,
+   "wide_m": 60.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 33% smaller (43.8 ac vs 65.0 ac stored)",
+   "live_center": [
+    42.391393,
+    -108.465942
+   ]
+  },
+  "US-4558+US-4575@trail@36.193,-106.743": {
+   "id": "US-4558+US-4575@trail@36.193,-106.743",
+   "area": "US-NM",
+   "refs": [
+    "US-4558",
+    "US-4575"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:27:20Z",
+   "layers": [
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558",
+    "US-4575"
+   ],
+   "live_stretch_acres": 4.12,
+   "stored_shape_acres": 7.06,
+   "live_acres": 4.12,
+   "kept_pct": 74.1,
+   "size_pct": -41.7,
+   "moved_m": 125,
+   "gap_m": 0,
+   "wide_m": 49.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 42% smaller (4.1 ac vs 7.1 ac stored)",
+   "live_center": [
+    36.192577,
+    -106.741341
+   ]
+  },
+  "US-4558+US-4578@trail@42.431,-108.651": {
+   "id": "US-4558+US-4578@trail@42.431,-108.651",
+   "area": "US-NM",
+   "refs": [
+    "US-4558",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:27:20Z",
+   "layers": [
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558",
+    "US-4578"
+   ],
+   "live_stretch_acres": 0.92,
+   "stored_shape_acres": 2.27,
+   "live_acres": 0.92,
+   "kept_pct": 53.8,
+   "size_pct": -59.5,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 59% smaller (0.9 ac vs 2.3 ac stored)",
+   "live_center": [
+    42.431099,
+    -108.650628
+   ]
+  },
+  "US-4558+US-9757@trail@32.343,-108.712": {
+   "id": "US-4558+US-9757@trail@32.343,-108.712",
+   "area": "US-NM",
+   "refs": [
+    "US-4558",
+    "US-9757"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T02:27:20Z",
+   "layers": [
+    {
+     "ref": "US-4558",
+     "layer": "saved copy US-4558.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9757",
+     "layer": "saved copy US-9757.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4558",
+    "US-9757"
+   ],
+   "live_stretch_acres": 1.24,
+   "stored_shape_acres": 2.87,
+   "live_acres": 1.24,
+   "kept_pct": 57.0,
+   "size_pct": -56.9,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 57% smaller (1.2 ac vs 2.9 ac stored)",
+   "live_center": [
+    32.343414,
+    -108.711613
+   ]
+  }
+ },
+ "started": "2026-11-01T02:26:59Z",
+ "fers_sha256": "f4d9e205c7a7e1709d7ad7806d46f6a3e8ae1972460cb41e9014dab6885a663b",
+ "live_rows": 11,
+ "skipped_rows": 50,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:41Z",
+ "complete": true,
+ "summary": {
+  "rows": 11,
+  "verdicts": {
+   "CONFIRMED": 6,
+   "SHRUNK": 5,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 8,
+   "small overlap (under 50 yd across)": 1
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json"
+ ],
+ "requests_this_run": 1030
+}

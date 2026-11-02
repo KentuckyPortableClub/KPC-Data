@@ -1,0 +1,59 @@
+{
+ "_sample_of": "world-sources-r15.json",
+ "_full_file": {
+  "about": "text",
+  "rest": 2193,
+  "other": 2876
+ },
+ "sample": {
+  "about": "Outside research Retry15 World (Brandon Oct 31 6:55 PM): 'rest' = ArcGIS layers for the nightly collector; 'other' = non-REST leads (WFS / downloads / picture / unofficial maps) for the converter + chat 9. Nothing live without chat 11.",
+  "rest": {
+   "GB-1757": {
+    "layer": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0",
+    "agency": "Natural England",
+    "field": "NAME",
+    "status": "POSSIBLE MATCH (R15)"
+   },
+   "GB-5118": {
+    "layer": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
+    "agency": "Natural England",
+    "field": "NAME",
+    "status": "POSSIBLE MATCH (R15)"
+   },
+   "GB-0619": {
+    "layer": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0",
+    "agency": "Natural England",
+    "field": "NAME",
+    "status": "POSSIBLE MATCH (R15)"
+   },
+   "GB-5651": {
+    "layer": "https://services-eu1.arcgis.com/ZOdPfBS3aqqDYPUQ/arcgis/rest/services/National_Heritage_List_for_England_NHLE_v02_VIEW/FeatureServer/7",
+    "agency": "Historic England",
+    "field": "Name",
+    "status": "FOUND (R15)"
+   }
+  },
+  "other": {
+   "GB-7297": {
+    "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw:NRW_NNR&outputFormat=application/json",
+    "agency": "",
+    "status": "FOUND (R15)"
+   },
+   "GB-0885": {
+    "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas:biosph&outputFormat=application/json",
+    "agency": "",
+    "status": "POSSIBLE MATCH (R15)"
+   },
+   "GB-1176": {
+    "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw:NRW_NNR&outputFormat=application/json",
+    "agency": "",
+    "status": "FOUND (R15)"
+   },
+   "GB-5846": {
+    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
+    "agency": "",
+    "status": "FOUND (R15)"
+   }
+  }
+ }
+}

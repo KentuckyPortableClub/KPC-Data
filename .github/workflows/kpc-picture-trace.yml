@@ -1,0 +1,77 @@
+name: KPC picture-map tracer (draft; approximate outlines from saved picture maps) - outputs on tools-out
+# Nov 1 2026 (chat 10; Brandon 2:00 AM 'Hook it up lets see what 11 thinks of it'). The outside coder's draft tracer
+# (.github/scripts/draft/kpc_trace_picture.py; Fable reviews Thu Nov 5) on every US + Canada map on branch picture-maps.
+# Grade is always 'approximate (picture map)', never official, never a 2-fer; nothing reaches a key or the site (R-G9: chat 11
+# grades the samples, Brandon sees the first ones). Outputs + debug pictures on tools-out picture-trace/. Weekly + chains. Never red.
+on:
+  workflow_dispatch:
+    inputs:
+      fresh:
+        description: 'yes = trace every map again (after a tracer change), not only the new ones'
+        default: 'no'
+  schedule:
+    - cron: '47 6 * * 0'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-picture-trace
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /kpc-ky-data.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/cache@v4
+        with:
+          path: kpcdata/.pic_cache
+          key: kpc-picture-trace-${{ github.run_id }}
+          restore-keys: kpc-picture-trace-
+      - name: Trace
+        id: r
+        continue-on-error: true
+        env:
+          KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+          KPC_TRACE_MAX_PX: '4000'
+          KPC_TRACE_ACRES_FILE: ../out/acres/acres.json
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin +refs/heads/picture-maps:refs/remotes/origin/picture-maps && git worktree add -q --detach ../pm origin/picture-maps
+          git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../out origin/tools-out
+          python3 .github/scripts/kpc_picture_prep.py ../pm ../links || true
+          mkdir -p ../out/picture-trace; [ "${{ inputs.fresh }}" != yes ] && [ -d ../out/picture-trace/traced ] && cp -r ../out/picture-trace/traced ../pm/ 2>/dev/null; [ -d .pic_cache ] && cp -r .pic_cache ../pm/cache 2>/dev/null
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || true   # Nov 2: pdftoppm (the sharp page) is not on GitHub's runner
+          pip install -q -r .github/scripts/draft/requirements.txt pypdf 2>&1 | tail -1
+          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || true   # Nov 2 review: the sharp page (this run only, never saved) + GeoPDF coordinates
+          set +e
+          python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../pm --out ../pm/traced --resume --time-budget-min 45 > ../out/picture-trace/run-log.txt 2>&1
+          E=$?; tail -12 ../out/picture-trace/run-log.txt
+          rm -rf ../out/picture-trace/traced; cp -r ../pm/traced ../out/picture-trace/ 2>/dev/null; [ -d ../pm/debug ] && rm -rf ../out/picture-trace/debug && cp -r ../pm/debug ../out/picture-trace/ ; [ -d ../pm/cache ] && rm -rf .pic_cache && cp -r ../pm/cache .pic_cache
+          S=$(python3 -c "import csv,collections;r=list(csv.DictReader(open('../out/picture-trace/traced/report.csv')));print(len(r),'maps:',dict(collections.Counter(x['status'] for x in r)))" 2>/dev/null)
+          echo "::notice title=Picture tracer::exit $E; $S"
+          ( [ "$E" = 3 ] || grep -q 'left for the next run' ../out/picture-trace/run-log.txt ) && echo "more=yes" >> $GITHUB_OUTPUT
+          python3 .github/scripts/kpc_status.py board 'Picture-map tracer (draft)' green "$(date -u +%F): $S" 'chat 11 grades tools-out picture-trace/ (approximate only, R-G9)' || true
+          (for i in 1 2 3; do git add data/status && git commit -qm "board: picture tracer" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true
+          cd ../out && find picture-trace -size +20M -delete; git add -A picture-trace && git commit -qm "picture tracer (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || true
+          true
+      - name: Next run
+        if: steps.r.outputs.more == 'yes'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-picture-trace.yml -R ${{ github.repository }} || true

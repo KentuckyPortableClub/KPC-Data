@@ -1,0 +1,126 @@
+# KPC Picture-Map Tracer (`kpc_trace_picture.py`)
+
+Turns a managing agency's **official picture map** of a park (a JPEG rendered from the
+agency's PDF) into an **approximate** GeoJSON outline (or route line for trails), for parks
+that have no official GIS boundary. Single file, no GDAL.
+
+## Hard rules (enforced in code where code can enforce them)
+1. Only the managing agency's own official map of *that* park. Code cannot judge
+   officialness: whoever adds the `index.json` row is responsible. Rows without
+   `agency`, `source_url` and `page` are refused, and so are OpenStreetMap/Google URLs.
+2. At least **3** matched control points.
+3. Fit RMS must be **under 50 m**, or no outline is written. The leave-one-out error must
+   also be under 50 m, and the match must beat a rotated "decoy" basemap (see below).
+4. Output is always graded `"approximate (picture map)"`, with `fit_m`, the source URL and
+   the page. It also carries `"official": false` and `"use_for_2fer": false`.
+5. Basemaps come only from public government services: US Census TIGERweb roads,
+   USGS NHD flowlines and BLM CadNSDI PLSS sections (US), and the StatCan/NRCan National
+   Road Network (Canada). The HTTP layer refuses any other host, and never contacts
+   OpenStreetMap or Google.
+6. **Club rule R-G9U: unofficial maps are a last resort.** Use one only when the park has no
+   official GIS layer, no county parcel from the agency, and no official agency map. The
+   publisher must be a real, named organisation (a friends group, tourism office, land trust,
+   trail association, local club or town newsletter). App and crowd-sourced maps are refused
+   for every row, official or not: OpenStreetMap, Google, AllTrails, Gaia GPS, Strava,
+   iOverlander, Wikipedia/Wikimedia, Wikiloc, Komoot, Outdooractive, Trailforks, CalTopo,
+   onX and similar.
+   - Unofficial rows must have `source_org` (the publisher's exact name) and `notes` (why
+     nothing official exists and where you looked first), or they become ERROR rows.
+   - They go through the same gates: ≥ 3 points, RMS < 50 m, LOO < 50 m and the decoy test.
+   - Results are saved separately in `traced_unofficial/`, with status `UNOFFICIAL MAP` and
+     grade `"Approximate, from an unofficial map"`. `use_for_2fer` and `official` are always
+     false.
+   - If a park has an official row, the official row is always used. Its unofficial rows are
+     reported as `SKIPPED`, and any earlier unofficial outline for that park is deleted.
+     The tool can only see `index.json`; when an official GIS layer or parcel turns up,
+     remove the park's unofficial row and output.
+
+## Inputs (in `--base`, default `.`)
+- `maps/<REF>_<anything>.jpg`: page image of the agency map (render the PDF page at
+  about 2000 px, e.g. `pdftoppm -f N -l N -jpeg -scale-to 2000 map.pdf out`).
+- `pins.json`: `{"US-10172": [38.1777, -84.9231], ...}` (the POTA lat/lon).
+- `maps/unofficial/<REF>_<anything>.jpg`: page images of unofficial maps (R-G9U).
+- `index.json`: a list of rows (a park may have one official and one unofficial row), or a
+  dict keyed by ref:
+
+| field | required | meaning |
+|---|---|---|
+| `ref`, `name`, `source_url`, `page` | yes | park and map source (rules 1/4) |
+| `source_type` | no | `official` (default) or `unofficial` (R-G9U) |
+| `agency` | official rows | managing agency that published the map |
+| `source_org`, `notes` | unofficial rows | publisher's exact name; why nothing official exists and where you looked first |
+| `map_file` | no | image file under `maps/` to use, instead of the default `<REF>_*.jpg` lookup |
+| `kind` | no | `area` (default) or `trail` (traces a route line) |
+| `boundary_rgb`, `color_tol` | no | boundary colour `[r,g,b]` when automatic colour detection fails (tolerance in Lab, default 18) |
+| `acres` | no | known size; narrows the scale search and flags an area mismatch |
+| `exclude_px`, `roi_px` | no | pixel boxes `[x0,y0,x1,y1]` to ignore, or to restrict control-point search to |
+
+## Run
+```bash
+python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+export KPC_TRACER_UA="KentuckyPOTA-park-tracer/0.1 (contact: you@example.org)"   # recommended
+python kpc_trace_picture.py --base data --refs US-10172 CA-1234
+python kpc_trace_picture.py --base data --all --resume --time-budget-min 50     # for a ~55 min CI job
+```
+Other options: `--max-maps N`, `--refresh` (ignore cached basemaps), `--min-interval 1.0`
+(seconds between requests), `--box-km 10` (size of the basemap box around the pin),
+`--rot-max 25`, `--min-m-per-px`/`--max-m-per-px`, and `--match-tol-m 75`.
+
+Requests are polite: one at a time, 1 s apart, retried with exponential back-off (Retry-After
+is honoured), and sent with a club User-Agent. Basemaps are cached in `cache/`.
+
+## Outputs (in `--out`, default `<base>/traced`)
+- `<REF>.json`: a GeoJSON FeatureCollection, written **only** when the status is DRAWN.
+  A stale file is deleted on NO FIT or NO LINE.
+- `report.csv`: one row per ref (ref, status, fit_m, n_points, why, fit_loo_m, model,
+  n_search, decoy_best, search_tol_m, flags, source_url, page, date, source_type,
+  source_org, notes).
+- `traced_unofficial/` (set with `--out-unofficial`): the same layout (`<REF>.json`,
+  `report.csv`, `debug/`) for R-G9U unofficial maps. It is rewritten
+  atomically after **every** map, and `--resume` skips refs already in it.
+- `debug/<REF>_1_boundary.png` (the detected boundary) and `debug/<REF>_2_controlpoints.png`
+  (picture junctions, matched points, and the basemap drawn back onto the picture).
+
+Status values:
+- `DRAWN`: an outline was written.
+- `NO FIT`: fewer than 3 points, or RMS/LOO ≥ 50 m, or not better than chance.
+- `NO LINE`: no boundary or route found on the picture.
+- `ERROR`: a bad row, a banned source, a missing pin or map, or an exception. The batch
+  carries on.
+- `UNOFFICIAL MAP`: an unofficial outline was written (in `traced_unofficial/` only).
+- `SKIPPED`: an unofficial row was not used because the park has an official row (in the
+  unofficial report).
+
+## Tests (dev only, in `dev/`)
+- `dev/synthetic_selftest.py`: three synthetic maps with a known answer (two drawn, one
+  refused).
+- `dev/synthetic_unofficial_test.py`: the R-G9U path (unofficial drawn and stored separately,
+  official wins, missing fields and banned sources rejected).
+
+## How it works
+1. **Boundary:** Lab k-means colour clusters. A closed *filled* tint or a *ring* line is
+   accepted. Rectangles (frames, legends, insets) are rejected. Several shapes in the same
+   colour are kept as parcels.
+2. **Picture control points:** LSD line segments, then T/X junctions with ≥ 3 arms near the
+   boundary.
+3. **Basemap control points:** road and stream network nodes, road×stream crossings, and
+   PLSS section corners within `box-km` of the pin.
+4. **Matching:** similarity Hough voting (rotation ±25°, scale prior, pin inside the
+   boundary box), significance-scored verification, then RANSAC and ICP. The match must
+   score at least 1.5× (and +2) better than the same search against the basemap rotated
+   90/180/270°. Without this test, random junction coincidences routinely give
+   "good-looking" fits of 10–35 m.
+5. **Final fit** on correspondences within 75 m: similarity for 3 points, affine for
+   4–11, poly2 for ≥ 12 only if its leave-one-out error is better. Gates: n ≥ 3,
+   RMS < 50 m, LOO < 50 m.
+6. **Output:** transform the outline, keep the parcel containing or nearest the pin (plus
+   pieces within 50 m), simplify at 3 m, `make_valid`, and add sanity flags (pin > 1 km
+   outside, area outside 0.2–5× `acres`, self-intersection, boundary touching the image
+   edge).
+
+## Known limitations
+- Small or simple maps often have too few road/stream junctions inside the frame, so
+  NO FIT is a common, honest result. Trail-only maps without a boundary give NO LINE.
+- Canada uses NRN roads only (no CanVec hydro yet). Prefixes other than US/CA give NO FIT.
+- Multi-unit maps (e.g. WMA units) need `boundary_rgb`. Check "kept N shapes" flags by hand.
+- Runtime is about 10–30 s per map, plus about 5 web requests per new park.

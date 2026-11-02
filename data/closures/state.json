@@ -1,0 +1,64 @@
+{
+ "about": "Closures super-bot state. 'proven' is set BY A PERSON (chat 11 / Brandon) after the Kentucky side-by-side is graded; the 6-hour schedule runs only then.",
+ "areas": {
+  "US-KY": {
+   "counts": {
+    "hunt": 0,
+    "note": 82,
+    "part": 0,
+    "seasonal": 0,
+    "taken_down": 0,
+    "whole": 0
+   },
+   "failed": 0,
+   "items": 82,
+   "read": "2026-11-02T13:23Z",
+   "sources": 73,
+   "status": "done"
+  }
+ },
+ "hosts": {},
+ "last": {
+  "areas": [
+   "US-KY"
+  ],
+  "browser": [],
+  "done": [
+   "US-KY"
+  ],
+  "failed": [],
+  "manners": {
+   "arcgis_exempt": 0,
+   "errors": 0,
+   "keyed_api": 1,
+   "requests": 105,
+   "rested": 0,
+   "robots": 0,
+   "strikes": 0
+  },
+  "stat": {
+   "items": 0,
+   "pages": 83,
+   "pdfs": 17,
+   "requests": 105,
+   "sentences": 462,
+   "sources_failed": 0,
+   "unmatched": 122,
+   "unreadable": 262
+  },
+  "when": "2026-11-02T13:23Z"
+ },
+ "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
+ "test": {
+  "matched": 31,
+  "only_here": 55,
+  "only_there": [
+   "hc-US-3831-2026-11-15",
+   "pa-nps-B489F041-FD1B-40F2-992D-9D36C841B7E5-US-7951"
+  ],
+  "own": 33,
+  "result": "PASS",
+  "when": "2026-11-02",
+  "why": "31 of 33 of Kentucky's own reader's items found here on the same park (93%); 55 only here"
+ }
+}

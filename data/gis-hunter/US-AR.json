@@ -1,0 +1,1083 @@
+{
+ "area": "US-AR",
+ "run": "2026-11-02",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0854": {
+   "park": "William Jefferson Clinton Birthplace National Historic Site",
+   "area": "US-AR",
+   "why_not": "pin-doubt",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"birthplace jefferson william\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10303": {
+   "park": "Pig Trail Scenic Byway State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"scenic byway pig\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10426": {
+   "park": "West-Northwest State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"northwest west\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10508": {
+   "park": "Ozark Highlands Trail (OHT) National Historic Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "agency": "Arkansas State Parks",
+     "record": 29,
+     "record_name": "Lake Fort Smith State Park",
+     "acres_approx": 250,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: hit",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"highlands ozark oht\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-10715": {
+   "park": "True Grit State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"grit true\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11127": {
+   "park": "Arkansas Rocks! Mining & Mineral State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"arkansas mineral mining\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11155": {
+   "park": "White Rock Mountain State Recreation Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3003,
+     "record_name": "Ozark National Forest",
+     "acres_approx": 1127907,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1132752,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain white rock\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11164": {
+   "park": "Crowley’s Ridge Parkway National Scenic Byway National Parkway",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"crowley parkway scenic\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11165": {
+   "park": "Chalk Bluff Battlefield Park Recreation Park",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "agency": "Arkansas Natural Heritage Commission",
+     "record": 15,
+     "record_name": "Chalk Bluff Natural Area",
+     "acres_approx": 48,
+     "tier": "LIKELY",
+     "why": "same name, different kind (battlefield recreation vs natural)"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 166734,
+     "record_name": "Chalk Bluff Natural Area",
+     "acres_approx": 49,
+     "Mang_Name": "OTHS",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 55,
+     "tier": "LIKELY",
+     "why": "same name, different kind (battlefield recreation vs natural)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: hit",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-11214": {
+   "park": "Highway 7 Rec Area State Fish and Wildlife Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"highway rec\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11233": {
+   "park": "Rohwer Relocation Center Memorial Cemetery National Historical Site",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"relocation historical cemetery\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11352": {
+   "park": "Rattlesnake Ridge National Heritage Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "agency": "Arkansas Natural Heritage Commission",
+     "record": 56,
+     "record_name": "Rattlesnake Ridge Natural Area",
+     "acres_approx": 397,
+     "tier": "LIKELY",
+     "why": "same name, different kind (heritage vs natural)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: hit",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-11354": {
+   "park": "Fred Berry Crooked Creek Nature Center State Natural Site",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 166801,
+     "record_name": "Kelly's Slab",
+     "acres_approx": 361,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 378,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"crooked center berry\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11355": {
+   "park": "Cook’s Lake Nature Center Nature Recreation Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"center cook\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11356": {
+   "park": "Ponca Nature Center Nature Recreation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"center ponca\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11393": {
+   "park": "Sylamore Scenic Byway State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3003,
+     "record_name": "Ozark National Forest",
+     "acres_approx": 1127907,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1132752,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"sylamore scenic byway\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11394": {
+   "park": "Muddy Creek WMA Wildlife Management Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Muddy Creek and Dead Creek Paths",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Muddy_Creek_and_Dead_Creek_Paths_WFL1/FeatureServer",
+     "owner": "john_laskaris@fws.gov_fws",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"muddy\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11870": {
+   "park": "Lake Wilhelmina State Fishing Lake",
+   "area": "US-AR",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"wilhelmina fishing\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11874": {
+   "park": "Tates Bluff Rec area State Recreation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"tates bluff rec\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11951": {
+   "park": "J.B. and Johnelle Hunt Family Ozark Highlands Nature Center State Natural Reserve",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"highlands johnelle center\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11953": {
+   "park": "St. Francis Scenic Byway National Scenic Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 111659,
+     "record_name": "Court Square",
+     "acres_approx": 0,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 1,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [
+    {
+     "title": "Ozark National Forest Service Scenic Byway (line)",
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/13",
+     "owner": "andrew.feltmann",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"francis scenic byway\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11960": {
+   "park": "Janet Huckabee Arkansas River Valley Nature Center State Natural Reserve",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"arkansas huckabee center\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12078": {
+   "park": "Peppers Pond State Recreation Site",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 166781,
+     "record_name": "Camp Robinson Wildlife Demonstration Area",
+     "acres_approx": 4214,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 4211,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"peppers pond\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12086": {
+   "park": "Old State House Museum National Monument",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"monument museum house\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12093": {
+   "park": "Sugarloaf Mountain State Recreation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"sugarloaf mountain\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12096": {
+   "park": "Great River Road National Scenic Byway National Historic Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"scenic great byway\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12753": {
+   "park": "Joe Hogan State Conservation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hogan joe\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12754": {
+   "park": "Andrew H. Hulsey State Fish Hatchery",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery andrew hulsey\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12762": {
+   "park": "Charlie Craig State Fish Hatchery",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery charlie craig\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12764": {
+   "park": "Jim Hinkle Spring River State Fish Hatchery",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery hinkle spring\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13229": {
+   "park": "Arkansas River Water Trail Recreation Park",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2501,
+     "record_name": "J.P. Hammerschmidt Recreation Area",
+     "acres_approx": 4455,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 4491,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"arkansas water\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-13461": {
+   "park": "Upper Illinois River Water Trail State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3003,
+     "record_name": "Ozark National Forest",
+     "acres_approx": 1127907,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1132752,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"illinois water upper\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-13556": {
+   "park": "Lake June State Fishing Lake",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing june\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13622": {
+   "park": "The Razorback Regional Greenway National Recreation Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"razorback greenway\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13623": {
+   "park": "Alum Cove Natural Bridge Trail National Recreation Trail",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3003,
+     "record_name": "Ozark National Forest",
+     "acres_approx": 1127907,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1132752,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"bridge cove alum\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7435": {
+   "park": "Civil War Trail State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "WASO_ABPP-NPS_Civil War Battle Bndry",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Civil_War_Battle_Bndry/FeatureServer",
+     "owner": "ecahoon@nps.gov_nps",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"civil war\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7436": {
+   "park": "Southwest Trail State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"southwest\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7437": {
+   "park": "Little Missouri River Access State Recreation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"missouri little access\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7441": {
+   "park": "Gulpha Gorge National Recreation Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3453,
+     "record_name": "Hot Springs National Park",
+     "acres_approx": 4793,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NP",
+     "Own_Type": "FED",
+     "GIS_Acres": 4919,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"gulpha gorge\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7442": {
+   "park": "Blanchard Springs State Recreation Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3003,
+     "record_name": "Ozark National Forest",
+     "acres_approx": 1127907,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1132752,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"blanchard springs\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7443": {
+   "park": "DeGray Lower Lake State Recreation Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"degray lower\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7444": {
+   "park": "Nimrood Lake River Road State Recreation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"nimrood road\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7522": {
+   "park": "Cherokee State Recreation Area",
+   "area": "US-AR",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7525": {
+   "park": "Mike Huckabee Delta Rivers Nature Park",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 119300,
+     "record_name": "Pine Bluff Regional Park",
+     "acres_approx": 484,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 472,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7526": {
+   "park": "Forest Wood Nature Park",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 107091,
+     "record_name": "Craighead Forest Park",
+     "acres_approx": 687,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 701,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8316": {
+   "park": "Scenic 7 Byway State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8322": {
+   "park": "Mount Magazine Scenic Byway State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3003,
+     "record_name": "Ozark National Forest",
+     "acres_approx": 1127907,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1132752,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8323": {
+   "park": "Ozark Highlands Scenic Byway State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3488,
+     "record_name": "Buffalo National River",
+     "acres_approx": 88687,
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Own_Type": "FED",
+     "GIS_Acres": 89040,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-9161": {
+   "park": "Butterfield State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2496,
+     "record_name": "Dardanelle Recreation Area",
+     "acres_approx": 57339,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 57103,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-9163": {
+   "park": "Saracen State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9169": {
+   "park": "Huckabee Lake State Recreation Area",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 105624,
+     "record_name": "Fair Park",
+     "acres_approx": 178,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 169,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-9681": {
+   "park": "Camden Expedition Scenic Highway State Trail",
+   "area": "US-AR",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Arkansas Natural Heritage Commission: no polygon at the pin",
+    "A Arkansas State Parks: no polygon at the pin",
+    "A Arkansas Game and Fish Commission (AGOL : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-11-02",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 634,
+  "pairs tested": 14,
+  "pairs whose boxes touch": 14,
+  "parks done by the box test": 628,
+  "parks whose outline could not be read": 0,
+  "pass": 1,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "240 parks filed under another state but crossing / at the edge of this area kept: US-5594, US-12652, US-12656, US-12534, US-12535, US-12536, US-12539, US-3175",
+   "looked file: small batch: the whole-area look-list is kept as it was",
+   "missing list: small batch: the missing-boundary list is kept as it was",
+   "same land left out (pins far apart): CA-0109+CA-0110 38.4 km; CA-2956+CA-2957 23.0 km; CA-2956+CA-2957 23.0 km; CA-2957+CA-2958 8.3 km; CA-2957+CA-2958 8.3 km; CA-0654+CA-3062 11.0 km; CA-0654+CA-3062 11.0 km; CA-0654+CA-3062 11.0 km"
+  ],
+  "same land left out: pins far apart, not both inside the outline": 19,
+  "with official lines": 3
+ },
+ "pass2": {
+  "agree with the pass before": 1,
+  "cell_m": 10.0,
+  "date": "2026-11-02",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 0,
+  "official parks": 634,
+  "pairs tested": 1,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 2,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "240 parks filed under another state but crossing / at the edge of this area kept: US-5594, US-12652, US-12656, US-12534, US-12535, US-12536, US-12539, US-3175"
+  ],
+  "with official lines": 3
+ },
+ "pass3": {
+  "agree with the pass before": 1,
+  "cell_m": 5.0,
+  "date": "2026-11-02",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 0,
+  "official parks": 634,
+  "pairs tested": 1,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 3,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "240 parks filed under another state but crossing / at the edge of this area kept: US-5594, US-12652, US-12656, US-12534, US-12535, US-12536, US-12539, US-3175"
+  ],
+  "with official lines": 3
+ },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 31,
+  "date": "2026-11-02",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "live rows held: spot far from a state park pin (rule B13)": 0,
+  "official parks": 634,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "240 parks filed under another state but crossing / at the edge of this area kept: US-5594, US-12652, US-12656, US-12534, US-12535, US-12536, US-12539, US-3175"
+  ],
+  "river channels listed as water only (boat spots)": 0,
+  "same land dropped: wrong join": 4,
+  "spots given their boundary lines": 286,
+  "still not checked": 0,
+  "trail stretches given their true zone": 0,
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
+  "with official lines": 3
+ },
+ "per state": {
+  "CA-AB": {
+   "candidates": 33,
+   "candidates (saved outline only)": 0,
+   "lines": 12,
+   "n-fers": 24,
+   "not sure": 1,
+   "pass1": 819,
+   "pass2": 789,
+   "spots": 819,
+   "very tight": 3,
+   "water only": 1
+  }
+ }
+}

@@ -1,0 +1,39 @@
+name: KPC retry list - the research's blocked servers, one honest try from GitHub (monthly)
+# Nov 1 2026 (chat 10; Brandon 6:11 PM 'try the blocked list try again list in the notes'). kpc_retry_hosts.py asks each address on
+# the outside research's 'RETRY FROM ANOTHER NETWORK' list once (robots.txt obeyed; a 403 / robot check / sign-in is never bypassed).
+# Answering layer services go on the club layer list (data/intake/queue.json) -> engine pin test -> collector -> chat 11.
+# Results in data/intake/retry-github.json. Monthly (the 3rd) or by hand. Never red, never emails.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 9 3 * *'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-retry-hosts
+  cancel-in-progress: false
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /.github/scripts/kpc_push_data.sh
+          sparse-checkout-cone-mode: false
+      - name: One honest try per address
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_retry_hosts.py || true
+          python3 .github/scripts/kpc_status.py board 'Retry list (GitHub try)' green "$(python3 -c "import json;d=json.load(open('data/intake/retry-github.json'));print(sum(1 for r in d['tries'] if isinstance(r['answer'],int) and r['answer']<400),'of',len(d['tries']),'answered;',d['added_to_layer_list'],'layers to the list',d['date'])" 2>/dev/null)" 'the engine tests the new layers; a person follows the pages that answered' || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "retry list: one try from GitHub" data/intake/retry-github.json data/intake/queue.json data/status || true

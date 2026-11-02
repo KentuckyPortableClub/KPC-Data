@@ -1,0 +1,4 @@
+ref,status,fit_m,n_points,why,fit_loo_m,model,n_search,decoy_best,search_tol_m,flags,source_url,page,date,source_type,source_org,notes
+US-90003,DRAWN,19.5,22,fit under 50 m with >= 3 control points,22.5,affine,"20 (score 14.2, chance 0.8)",10 (score 5.8),29.2,,file://synthetic,1,2026-10-31,official,,
+US-90006,ERROR,,0,source_url host www.google.com is a banned app / crowd-sourced map service (google; rule 1 / R-G9U),,,,,,,https://www.google.com/maps/d/viewer?mid=1,1,2026-10-31,official,Friends of Synthetic Park (TEST),"TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)"
+US-90008,ERROR,,0,"source_type must be 'official' or 'unofficial', not 'semi-official'",,,,,,,https://example-friends.org/map.pdf,1,2026-10-31,semi-official,Friends of Synthetic Park (TEST),"TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)"

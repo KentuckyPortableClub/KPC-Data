@@ -1,0 +1,46 @@
+{
+ "_sample_of": "docs-found-hardlook-ca-oct31.json",
+ "_full_file": "76 park rows keyed by park number",
+ "sample": {
+  "CA-5081": {
+   "st": "NB",
+   "page": "https://iat-sia.org/the-trail/",
+   "map": "https://iat-sia.org/wp-content/uploads/2020/03/IAT-NA-NE-Web-Map-72.jpg",
+   "map_page": 1,
+   "kind": "PDF",
+   "date": null,
+   "agency": "International Appalachian Trail / Sentier International des Appalaches council (managing body)",
+   "notes": "Canada Hard Look (Oct 31): No official NB IAT line found: checked GeoNB, NB ERD OpenData, TCT AGOL services (Trail_View/RegisteredTrails/Other_Trails), AGOL search. Only the IAT-SIA council small-scale web map image (managing body, not GIS). Pin matches POTA API 46.7653,-67.78"
+  },
+  "CA-6019": {
+   "st": "ON",
+   "page": "https://ontarioconservationareas.ca/conservation-areas/hersey-lake/",
+   "map": "https://mattagamiregion.ca/wp-content/uploads/2026/01/Hersey-Lake-geo_opt_20240809.pdf",
+   "map_page": 1,
+   "kind": "PDF",
+   "date": null,
+   "agency": "Conservation Ontario (Ontario Conservation Areas)",
+   "notes": "Canada Hard Look (Oct 31): WHERE: LIO Open03/11 (tried, container); d0Z org (no MRCA layers); mrca.ca (WRONG: a different organization); mattagamiregion.ca/trail-maps (official, hit); LIO OTN (hit, 67 m). SOLVED: SOLVED: the source agency site is mattagamiregion.ca, not mrca.c"
+  },
+  "CA-6018": {
+   "st": "ON",
+   "page": "https://ontarioconservationareas.ca/conservation-areas/gillies-lake/",
+   "map": "https://mattagamiregion.ca/wp-content/uploads/2025/05/Gillies-Lake-Promenade_opt_20240809.pdf",
+   "map_page": 1,
+   "kind": "PDF",
+   "date": null,
+   "agency": "Conservation Ontario (Ontario Conservation Areas)",
+   "notes": "Canada Hard Look (Oct 31): WHERE: LIO Open03/11 (tried, container); d0Z (no MRCA layer); mattagamiregion.ca/trail-maps (hit); LIO OTN (hit, 0 m). SOLVED: Nothing to solve. WHY: Official MRCA map of the Gillies Lake CA/promenade. The OTN promenade line passes through the pin. C"
+  },
+  "CA-5313": {
+   "st": "ON",
+   "page": "https://www.nvca.on.ca/conservation-areas/tiffin-centre/",
+   "map": "https://www.nvca.on.ca/wp-content/uploads/2023/10/TiffinExtendedTrails.pdf",
+   "map_page": 1,
+   "kind": "PDF",
+   "date": null,
+   "agency": "Nottawasaga Valley Conservation Authority",
+   "notes": "Canada Hard Look (Oct 31): WHERE: LIO Open03/11 (tried, container); d0Z org (no NVCA property layer); Barrie FacilitiesStreets/32 ('TIFFIN LAUNCH', a city boat launch, not this); LIO OTN 'Tiffin Launch Trail' (11 km away, wrong place); NVCA PDF (200, verified). SOLVED: WRONG N"
+  }
+ }
+}

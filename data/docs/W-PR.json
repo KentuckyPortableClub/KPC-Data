@@ -1,0 +1,2082 @@
+{
+ "area": "W-PR",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "PR-0001": {
+   "n": "El Yunque National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/elyunque",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.fs.usda.gov/r08/elyunque/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/elyunque",
+    "posted": "June 18, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-01",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/elyunque",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-11-01"
+  },
+  "PR-0002": {
+   "n": "Bosque Estatal Toro Negro State Forest",
+   "t": "State Forest",
+   "page": "https://www.discoverpuertorico.com/profile/toro-negro-state-forest/9514#profile-overview",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0003": {
+   "n": "Río Camuy Cave State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/rio-camuy-cave-park/9932",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0004": {
+   "n": "Isla De Mona E Islote Monito State Natural Reserve",
+   "t": "State Natural Reserve",
+   "page": "https://www.drna.pr.gov/mona/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0005": {
+   "n": "Cabo Rojo National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/cabo_rojo/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.fws.gov/refuge/cabo-rojo/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0006": {
+   "n": "Laguna Cartagena National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/laguna_cartagena/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/laguna_cartagena/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "PR-0007": {
+   "n": "Vieques National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/vieques/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.fws.gov/refuge/vieques/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/vieques/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0008": {
+   "n": "Centro Vacacional Lago Caonillas State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0009": {
+   "n": "Centro Vacacional Punta Santiago State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0010": {
+   "n": "Centro Vacacional Villas de Anasco State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0011": {
+   "n": "Centro Vacacional Boqueron State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0012": {
+   "n": "Centro Vacacional Monte del Estado State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0013": {
+   "n": "Parque Monte del Estado State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0014": {
+   "n": "San Juan National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/saju/index.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.nps.gov/saju/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "June 23, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/saju/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0015": {
+   "n": "Bosque Estatal de Aguirre State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0016": {
+   "n": "Bosque Estatal de Boquerón State Forest",
+   "t": "State Forest",
+   "page": "https://www.drna.pr.gov/noticias/lista-actualizada-de-reservas-naturales-abiertas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0017": {
+   "n": "Bosque Estatal de Cambalache State Forest",
+   "t": "State Forest",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2015/04/El-Bosque-Estatal-de-Cambalache.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0018": {
+   "n": "Bosque Estatal de Carite State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0019": {
+   "n": "Bosque Estatal de Ceiba State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0020": {
+   "n": "Bosque Estatal de Cerrillos State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0021": {
+   "n": "Bosque Estatal de Guajataca State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0022": {
+   "n": "Bosque Estatal de Guánica State Forest",
+   "t": "State Forest",
+   "page": "https://www.drna.pr.gov/noticias/lista-actualizada-de-reservas-naturales-abiertas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0023": {
+   "n": "Bosque Estatal de Guilarte State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0024": {
+   "n": "Bosque Estatal de Los Tres Picachos State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0025": {
+   "n": "Bosque Estatal de Maricao State Forest",
+   "t": "State Forest",
+   "page": "https://www.drna.pr.gov/noticias/lista-actualizada-de-reservas-naturales-abiertas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0026": {
+   "n": "Bosque Estatal de Monte Choca State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0027": {
+   "n": "Bosque Estatal de Piñones State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0028": {
+   "n": "Bosque del Pueblo State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0029": {
+   "n": "Bosque Estatal de Río Abajo State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0030": {
+   "n": "San Patricio State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0031": {
+   "n": "Bosque Estatal de Susúa State Forest",
+   "t": "State Forest",
+   "page": "https://www.drna.pr.gov/noticias/lista-actualizada-de-reservas-naturales-abiertas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0032": {
+   "n": "Urbano del Nuevo Milenio State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0033": {
+   "n": "Bosque Estatal de Vega State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0034": {
+   "n": "Parque Luis Munoz Rivera State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0035": {
+   "n": "Parque Nacional Isla de Cabras State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/parque-nacional-isla-de-cabras/9442",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0036": {
+   "n": "Parque Julio E. Monagas State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/julio-enrique-monagas-national-park/9253",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0037": {
+   "n": "Parque Lineal Enrique Marti Coll State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0038": {
+   "n": "Parque Plaza La Libertad State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0039": {
+   "n": "Parque Plaza Las Nereidas State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0040": {
+   "n": "Parque Acuatico Infantil State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0041": {
+   "n": "Parque Nacional Seven Seas State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/balneario-seven-seas/9043",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0042": {
+   "n": "Parque Nacional de Cerro Gordo State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/balneario-javier-calderon-cerro-gordo/8932",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0043": {
+   "n": "Parque Nacional Balneario La Monserrate State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/balneario-la-monserrate-balneario-de-luquillo/9042",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0044": {
+   "n": "Parque Nacional Balneario Manuel \"Nolo\"\" Morales\" State Park",
+   "t": "State Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0045": {
+   "n": "Parque Nacional Balneario Punta Salinas State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/balneario-punta-salinas/8993",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0046": {
+   "n": "Parque Nacional Balneario Sun Bay State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/balneario-sun-bay/8906",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0047": {
+   "n": "Parque Nacional Balneario Cana Gorda State Park",
+   "t": "State Park",
+   "page": "https://www.discoverpuertorico.com/profile/balneario-cana-gorda/9009",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "PR-0048": {
+   "n": "Rio De La Mina National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/rio-de-la-mina.php",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-11-01",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "PR-0049": {
+   "n": "Rio Icacos National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/rio-icacos.php",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-11-01",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "PR-0050": {
+   "n": "Rio Mameyes National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/rio-mameyes.php",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-11-01",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "PR-0051": {
+   "n": "Reserva Natural de Humacao Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/noticias/lista-actualizada-de-reservas-naturales-abiertas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0052": {
+   "n": "Reserva Natural de Bahia de Jobos Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/jbnerr/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.drna.pr.gov/jbnerr/mapa-jbnerr/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Ver más')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0053": {
+   "n": "Reserva Natural Canal Luis Pena Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/reserva-natural-canal-luis-pena/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0054": {
+   "n": "Reserva Natural Arrecifes de la Cordillera Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2019/02/RN-Arrecifes-de-la-Cordillera.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0055": {
+   "n": "Refugio de Vida Silvestre Embalse Guajataca Wildlife Refuge",
+   "t": "Wildlife Refuge",
+   "page": "https://www.facebook.com/RVSEG",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: robots"
+   ],
+   "ver": 7
+  },
+  "PR-0056": {
+   "n": "Refugio de Vida Silvestre Embalse Luchetti Wildlife Refuge",
+   "t": "Wildlife Refuge",
+   "page": "https://www.drna.pr.gov/noticias/drna-efectua-mejoras-a-estructuras-del-refugio-de-vida-silvestre-del-embalse-luchetti-que-requieren-un-cierre-temporal/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0057": {
+   "n": "Refugio de Vida Silvestre de Boqueron Wildlife Refuge",
+   "t": "Wildlife Refuge",
+   "page": "https://www.drna.pr.gov/historico/oficinas/arn/recursosvivientes/costasreservasrefugios/pmzc/publicaciones/folletos/Folleto%20Refugio%20%20VS%20Boqueron.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "PR-0058": {
+   "n": "Culebra National Wildlife Refuge",
+   "t": "Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/culebra",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.fws.gov/refuge/culebra/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/culebra/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0059": {
+   "n": "Silvestre del Embalse La Plata Wildlife Refuge",
+   "t": "Wildlife Refuge",
+   "page": "https://www.drna.pr.gov/noticias/drna-reabre-el-area-recreativa-del-refugio-de-vida-silvestre-del-embalse-la-plata-en-toa-alta/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0060": {
+   "n": "Humedal Punta Tuna Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.puertoricodaytrips.com/punta-tuna-reserve/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0061": {
+   "n": "Humedal Punta Viento Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/planes-de-manejo/plan-rnhpv/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0062": {
+   "n": "Punta Petrona Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0063": {
+   "n": "Yeyesa Planadas Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/documento-de-vista-publica-memorial-plan-sectorial-reserva-natural-planadas-yeyesa-municipio-de-cayey-y-salinas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0064": {
+   "n": "Laguna Tortuguero Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.puertoricodaytrips.com/laguna-tortuguero/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0065": {
+   "n": "Pantano Cibuco Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/reserva-natural-pantano-cibuco/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0066": {
+   "n": "Cano Tuburones Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2015/04/Reserva-Natural-Ca%C3%B1o-Tiburones.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0067": {
+   "n": "Cueva del Indio Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/reserva-natural-cueva-del-indio/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0068": {
+   "n": "Punta Cucharas Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "http://reverdecetucomunidadpr.blogspot.com/p/reserva-natural-punta-cucharas-en-ponce.html",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0069": {
+   "n": "Cano Martin Pena Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/reserva-natural-cano-martin-pena/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0070": {
+   "n": "Estuarina Laguna del Condado Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/planes-de-manejo/plan-rnelc/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0071": {
+   "n": "La Cienaga Las Cucharillas Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.protectedplanet.net/888826",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 7
+  },
+  "PR-0072": {
+   "n": "Cano la Boquilla Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/reserva-natural-cano-la-boquilla/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0073": {
+   "n": "Laguna Joyuda Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0074": {
+   "n": "Finca Belvedere Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2015/05/Microsoft-Word-Documento-Designacion-Reserva-Natural-Finca-Belvedere.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0075": {
+   "n": "Rio Espiritu Santo Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.documentcloud.org/documents/6541219-Mapa-Reserva-Natural-Rio-Espiritu-Santo",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.documentcloud.org/documents/6541219-Mapa-Reserva-Natural-Rio-Espiritu-Santo/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Mapa Reserva Natural Rio Espiritu Santo')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.documentcloud.org/documents/6541219-Mapa-Reserva-Natural-Rio-Espiritu-Santo/?mode=document",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-11-01",
+     "how": "a link on the park's page ('File')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-11-01",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "PR-0076": {
+   "n": "La Parguera Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2022/06/PRCZMP2009-Appendix-C.-Description-of-NR-SPA.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0077": {
+   "n": "Punta Guaniquilla Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2022/06/PRCZMP2009-Appendix-C.-Description-of-NR-SPA.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0078": {
+   "n": "Las Piedras del Collado Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/PatriNatural/283-2000.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (bvirtualogp.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0079": {
+   "n": "Caja de Muertos Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/p-009-de-octubre-de-2006-rev-julio-2009/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0080": {
+   "n": "Caguana Indigenous Ceremonial Center National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/nr/travel/prvi/pr25.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "PR-0081": {
+   "n": "Caparra Archeological Site National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/nr/travel/american_latino_heritage/Caparra_Archeological_Site.html",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "PR-0082": {
+   "n": "Tres Palmas Marine Reserve",
+   "t": "Marine Reserve",
+   "page": "https://www.drna.pr.gov/documentos/tres-palmas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0083": {
+   "n": "Finca Nolla Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/avisos/sdp-rfp/rfp-plan-manejo-finca-nolla-2023/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0084": {
+   "n": "Arrecife de Isla Verde Marine Reserve",
+   "t": "Marine Reserve",
+   "page": "https://www.arrecifeislaverde.com/en/plan-manejo",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a plan / draft, not the visitor map (chat 8 F3)"
+   ],
+   "ver": 7
+  },
+  "PR-0085": {
+   "n": "Sistema de Cuevas y Cavernas de Aguas Buenas Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/ley-num-245-de-19-de-octubre-de-2002/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0086": {
+   "n": "La Olimpia State Forest",
+   "t": "State Forest",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0087": {
+   "n": "Finca Seven Seas Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/documentos/reserva-natural-finca-seven-seas/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0088": {
+   "n": "Corredor Ecológico del Noreste Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/noticias/drna-adquiere-terrenos-en-el-corredor-ecologico-del-noreste/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "PR-0089": {
+   "n": "Bahía Bioluminiscente Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.drna.pr.gov/wp-content/uploads/2021/07/Plan-de-Manejo-de-la-RN-Bahia-Bioluminiscente-Vieques-marzo-2009.pdf",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (drna.pr.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a plan / draft, not the visitor map (chat 8 F3)"
+   ],
+   "ver": 7
+  },
+  "PR-0091": {
+   "n": "Parque Lineal Adolfo Dones Ecological Park",
+   "t": "Ecological Park",
+   "page": "",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-11-01",
+ "counts": {
+  "parks": 90,
+  "map ok": 7,
+  "map found by the bot": 7,
+  "date on the map": 0,
+  "posted date only": 2,
+  "date unknown": 5,
+  "no map": 83,
+  "rules ok": 5,
+  "needs browser": 10,
+  "handover hints": 0,
+  "runs hints": 0,
+  "host resting / robots": 0,
+  "map names the park": 6,
+  "region overview only": 0
+ }
+}

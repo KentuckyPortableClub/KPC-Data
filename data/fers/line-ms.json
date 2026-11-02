@@ -1,0 +1,62 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ms",
+ "states": [
+  "US-MS"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 14:16 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-11-02",
+ "missing_check": {
+  "FOUND": 23,
+  "DROPPED": 53,
+  "NEVER LOOKED AT": 1259
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 394,
+   "pairs whose boxes touch": 394
+  },
+  "pass2": {
+   "agree with the pass before": 80,
+   "date": "2026-11-02",
+   "pairs tested": 18
+  },
+  "pass3": {
+   "agree with the pass before": 75,
+   "date": "2026-11-02",
+   "pairs tested": 17
+  },
+  "pass5": {
+   "checked": 13,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-MS": "data/fers/US-MS.json"
+ },
+ "US-MS": {
+  "rows": 131,
+  "live": 17,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of Canal Section Wildlife Management Ar": 3,
+   "the official outline of Twin Oaks Wildlife Management Area c": 3,
+   "the official outline of Mahannah Wildlife Management Area co": 1,
+   "the official outline of Okatibbee Wildlife Management Area c": 1,
+   "the official outline of Ward Bayou Wildlife Management Area": 1
+  },
+  "dropped": 21,
+  "merged": 84
+ },
+ "states_ready": [
+  "US-MS"
+ ],
+ "states_held": []
+}

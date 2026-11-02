@@ -1,0 +1,5542 @@
+{
+ "area": "US-NV",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-NV.json",
+ "rows": {
+  "US-0021+US-0464@area@36.425,-116.290": {
+   "id": "US-0021+US-0464@area@36.425,-116.290",
+   "area": "US-NV",
+   "refs": [
+    "US-0021",
+    "US-0464"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23.7,
+   "stored_wide_m": 185,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:21Z",
+   "layers": [
+    {
+     "ref": "US-0021",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:21Z"
+    },
+    {
+     "ref": "US-0464",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:23Z"
+    },
+    {
+     "ref": "US-0464",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:27:24Z"
+    },
+    {
+     "ref": "US-0464",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:26Z"
+    },
+    {
+     "ref": "US-0464",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:27:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22.55,
+   "live_acres": 22.55,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 53,
+   "gap_m": 0,
+   "wide_m": 183.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.6 ac vs 22.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.425484,
+    -116.291398
+   ]
+  },
+  "US-0469+US-13055@area@40.075,-115.485": {
+   "id": "US-0469+US-13055@area@40.075,-115.485",
+   "area": "US-NV",
+   "refs": [
+    "US-0469",
+    "US-13055"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 13.0,
+   "stored_wide_m": 35,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:30Z",
+   "layers": [
+    {
+     "ref": "US-0469",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:27:31Z"
+    },
+    {
+     "ref": "US-0469",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:32Z"
+    },
+    {
+     "ref": "US-13055",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.49,
+   "live_acres": 8.33,
+   "kept_pct": 100.0,
+   "size_pct": -12.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 28.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.3 ac vs 9.5 ac stored (-12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.072284,
+    -115.489841
+   ]
+  },
+  "US-0469+US-4566@trail@40.220,-115.487": {
+   "id": "US-0469+US-4566@trail@40.220,-115.487",
+   "area": "US-NV",
+   "refs": [
+    "US-0469",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 142.75,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:35Z",
+   "layers": [
+    {
+     "ref": "US-0469",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:27:35Z"
+    },
+    {
+     "ref": "US-0469",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:35Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 134.22,
+   "stored_shape_acres": 134.67,
+   "live_acres": 134.22,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 1238,
+   "gap_m": 0,
+   "wide_m": 61.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 134.2 ac vs 134.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.208805,
+    -115.485914
+   ]
+  },
+  "US-0469+US-4578@trail@40.045,-115.499": {
+   "id": "US-0469+US-4578@trail@40.045,-115.499",
+   "area": "US-NV",
+   "refs": [
+    "US-0469",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 15.06,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:36Z",
+   "layers": [
+    {
+     "ref": "US-0469",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:27:36Z"
+    },
+    {
+     "ref": "US-0469",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:36Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 14.35,
+   "stored_shape_acres": 14.61,
+   "live_acres": 14.35,
+   "kept_pct": 100.0,
+   "size_pct": -1.8,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.3 ac vs 14.6 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.044578,
+    -115.498868
+   ]
+  },
+  "US-0676+US-2637@area@36.411,-114.433": {
+   "id": "US-0676+US-2637@area@36.411,-114.433",
+   "area": "US-NV",
+   "refs": [
+    "US-0676",
+    "US-2637"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1034.8,
+   "stored_wide_m": 1685,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:36Z",
+   "layers": [
+    {
+     "ref": "US-0676",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:37Z"
+    },
+    {
+     "ref": "US-0676",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:38Z"
+    },
+    {
+     "ref": "US-0676",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:40Z"
+    },
+    {
+     "ref": "US-2637",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:42Z"
+    },
+    {
+     "ref": "US-2637",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:45Z"
+    },
+    {
+     "ref": "US-2637",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:47Z"
+    },
+    {
+     "ref": "US-2637",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1031.71,
+   "live_acres": 1025.02,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 63,
+   "gap_m": 0,
+   "wide_m": 1679.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1025.0 ac vs 1031.7 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.41098,
+    -114.432958
+   ]
+  },
+  "US-0676+US-4575@trail@36.118,-114.886": {
+   "id": "US-0676+US-4575@trail@36.118,-114.886",
+   "area": "US-NV",
+   "refs": [
+    "US-0676",
+    "US-4575"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 62.44,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:49Z",
+   "layers": [
+    {
+     "ref": "US-0676",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:50Z"
+    },
+    {
+     "ref": "US-0676",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:50Z"
+    },
+    {
+     "ref": "US-0676",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:51Z"
+    },
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4575"
+   ],
+   "live_stretch_acres": 1653.16,
+   "stored_shape_acres": 58.11,
+   "live_acres": 60.97,
+   "kept_pct": 100.0,
+   "size_pct": 4.9,
+   "moved_m": 2060,
+   "gap_m": 0,
+   "wide_m": 93.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 61.0 ac vs 58.1 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.126828,
+    -114.865982
+   ]
+  },
+  "US-0676+US-7887@area@36.292,-114.047": {
+   "id": "US-0676+US-7887@area@36.292,-114.047",
+   "area": "US-NV",
+   "refs": [
+    "US-0676",
+    "US-7887"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 701.5,
+   "stored_wide_m": 285,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:51Z",
+   "layers": [
+    {
+     "ref": "US-0676",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:51Z"
+    },
+    {
+     "ref": "US-0676",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:52Z"
+    },
+    {
+     "ref": "US-0676",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:53Z"
+    },
+    {
+     "ref": "US-7887",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:27:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 691.53,
+   "live_acres": 692.71,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 348,
+   "gap_m": 0,
+   "wide_m": 277.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-7887: 1 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query: [461] | US-7887: found by name 'Grand Canyon-Parashant' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 692.7 ac vs 691.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    36.244865,
+    -114.045406
+   ]
+  },
+  "US-0974+US-13113@area@36.423,-115.421": {
+   "id": "US-0974+US-13113@area@36.423,-115.421",
+   "area": "US-NV",
+   "refs": [
+    "US-0974",
+    "US-13113"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 12.3,
+   "stored_wide_m": 71,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:27:56Z",
+   "layers": [
+    {
+     "ref": "US-0974",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:27:56Z"
+    },
+    {
+     "ref": "US-0974",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:27:57Z"
+    },
+    {
+     "ref": "US-0974",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:27:59Z"
+    },
+    {
+     "ref": "US-13113",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11.36,
+   "live_acres": 10.66,
+   "kept_pct": 100.0,
+   "size_pct": -6.2,
+   "moved_m": 112,
+   "gap_m": 0,
+   "wide_m": 68.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.7 ac vs 11.4 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.421544,
+    -115.420153
+   ]
+  },
+  "US-10345+US-4578@trail@39.280,-118.726": {
+   "id": "US-10345+US-4578@trail@39.280,-118.726",
+   "area": "US-NV",
+   "refs": [
+    "US-10345",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 137.33,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:01Z",
+   "layers": [
+    {
+     "ref": "US-10345",
+     "layer": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:02Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 129.62,
+   "stored_shape_acres": 130.33,
+   "live_acres": 129.62,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 2143,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 129.6 ac vs 130.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.275135,
+    -118.749558
+   ]
+  },
+  "US-10833+US-13162@area@39.458,-116.796": {
+   "id": "US-10833+US-13162@area@39.458,-116.796",
+   "area": "US-NV",
+   "refs": [
+    "US-10833",
+    "US-13162"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4968.4,
+   "stored_wide_m": 3525,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:03Z",
+   "layers": [
+    {
+     "ref": "US-10833",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:03Z"
+    },
+    {
+     "ref": "US-13162",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:28:06Z"
+    },
+    {
+     "ref": "US-13162",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4979.85,
+   "live_acres": 4981.52,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 431,
+   "gap_m": 0,
+   "wide_m": 3507.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4981.5 ac vs 4979.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.458454,
+    -116.791034
+   ]
+  },
+  "US-10833+US-4391@area@39.307,-116.860": {
+   "id": "US-10833+US-4391@area@39.307,-116.860",
+   "area": "US-NV",
+   "refs": [
+    "US-10833",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 131.2,
+   "stored_wide_m": 105,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:10Z",
+   "layers": [
+    {
+     "ref": "US-10833",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:11Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 124.0,
+   "live_acres": 119.01,
+   "kept_pct": 99.9,
+   "size_pct": -4.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 101.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 119.0 ac vs 124.0 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.307335,
+    -116.859671
+   ]
+  },
+  "US-10834+US-13200@area@38.485,-116.012": {
+   "id": "US-10834+US-13200@area@38.485,-116.012",
+   "area": "US-NV",
+   "refs": [
+    "US-10834",
+    "US-13200"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 6287.7,
+   "stored_wide_m": 4376,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:12Z",
+   "layers": [
+    {
+     "ref": "US-10834",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:13Z"
+    },
+    {
+     "ref": "US-13200",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:15Z"
+    },
+    {
+     "ref": "US-13200",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 6304.31,
+   "live_acres": 6299.64,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 25,
+   "gap_m": 0,
+   "wide_m": 4412.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6299.6 ac vs 6304.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.485031,
+    -116.012504
+   ]
+  },
+  "US-12973+US-4566@trail@39.664,-119.148": {
+   "id": "US-12973+US-4566@trail@39.664,-119.148",
+   "area": "US-NV",
+   "refs": [
+    "US-12973",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.1,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:19Z",
+   "layers": [
+    {
+     "ref": "US-12973",
+     "layer": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:19Z"
+    },
+    {
+     "ref": "US-12973",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:28:20Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 11.47,
+   "stored_shape_acres": 11.64,
+   "live_acres": 11.47,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 344,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.5 ac vs 11.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.661515,
+    -119.151517
+   ]
+  },
+  "US-13009+US-4566@trail@40.646,-116.923": {
+   "id": "US-13009+US-4566@trail@40.646,-116.923",
+   "area": "US-NV",
+   "refs": [
+    "US-13009",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 2.87,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:21Z",
+   "layers": [
+    {
+     "ref": "US-13009",
+     "layer": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:21Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 2.65,
+   "stored_shape_acres": 2.6,
+   "live_acres": 2.65,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 30,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.6 ac vs 2.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.64511,
+    -116.921981
+   ]
+  },
+  "US-13012+US-9251@area@40.124,-114.798": {
+   "id": "US-13012+US-9251@area@40.124,-114.798",
+   "area": "US-NV",
+   "refs": [
+    "US-13012",
+    "US-9251"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 344.9,
+   "stored_wide_m": 708,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:22Z",
+   "layers": [
+    {
+     "ref": "US-13012",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:22Z"
+    },
+    {
+     "ref": "US-9251",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:25Z"
+    },
+    {
+     "ref": "US-9251",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 343.21,
+   "live_acres": 341.98,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 709.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 342.0 ac vs 343.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.124271,
+    -114.794004
+   ]
+  },
+  "US-13026+US-13216@area@38.008,-114.207": {
+   "id": "US-13026+US-13216@area@38.008,-114.207",
+   "area": "US-NV",
+   "refs": [
+    "US-13026",
+    "US-13216"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 3.7,
+   "stored_wide_m": 59,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:28Z",
+   "layers": [
+    {
+     "ref": "US-13026",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:29Z"
+    },
+    {
+     "ref": "US-13216",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:31Z"
+    },
+    {
+     "ref": "US-13216",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:33Z"
+    },
+    {
+     "ref": "US-13216",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:35Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.16,
+   "live_acres": 3.16,
+   "kept_pct": 100.0,
+   "size_pct": -14.6,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 54.5,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.2 ac vs 3.7 ac stored (row acres; the stored shape is a 2.2 ac preview) (-15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.008355,
+    -114.207339
+   ]
+  },
+  "US-13026+US-2636@area@38.021,-114.188": {
+   "id": "US-13026+US-2636@area@38.021,-114.188",
+   "area": "US-NV",
+   "refs": [
+    "US-13026",
+    "US-2636"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 5.5,
+   "stored_wide_m": 55,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:36Z",
+   "layers": [
+    {
+     "ref": "US-13026",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:37Z"
+    },
+    {
+     "ref": "US-2636",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:37Z"
+    },
+    {
+     "ref": "US-2636",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:38Z"
+    },
+    {
+     "ref": "US-2636",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:40Z"
+    },
+    {
+     "ref": "US-2636",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.88,
+   "live_acres": 5.64,
+   "kept_pct": 100.0,
+   "size_pct": 15.6,
+   "moved_m": 247,
+   "gap_m": 0,
+   "wide_m": 57.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.6 ac vs 4.9 ac stored (+16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.021201,
+    -114.186959
+   ]
+  },
+  "US-13026+US-9249@area@38.595,-114.465": {
+   "id": "US-13026+US-9249@area@38.595,-114.465",
+   "area": "US-NV",
+   "refs": [
+    "US-13026",
+    "US-9249"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 25363.4,
+   "stored_wide_m": 5512,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:43Z",
+   "layers": [
+    {
+     "ref": "US-13026",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:43Z"
+    },
+    {
+     "ref": "US-9249",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 25479.26,
+   "live_acres": 25464.54,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 41,
+   "gap_m": 0,
+   "wide_m": 5521.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 25464.5 ac vs 25479.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.594882,
+    -114.465792
+   ]
+  },
+  "US-13026+US-9276@area@38.089,-114.283": {
+   "id": "US-13026+US-9276@area@38.089,-114.283",
+   "area": "US-NV",
+   "refs": [
+    "US-13026",
+    "US-9276"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 44200.4,
+   "stored_wide_m": 5860,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:45Z",
+   "layers": [
+    {
+     "ref": "US-13026",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:46Z"
+    },
+    {
+     "ref": "US-9276",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 15723.07,
+   "live_acres": 43439.72,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 639,
+   "gap_m": 0,
+   "wide_m": 5962.2,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 43439.7 ac vs 44200.4 ac stored (row acres; the stored shape is a 15723.1 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.089797,
+    -114.282531
+   ]
+  },
+  "US-13036+US-4391@area@38.527,-116.387": {
+   "id": "US-13036+US-4391@area@38.527,-116.387",
+   "area": "US-NV",
+   "refs": [
+    "US-13036",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 0.8,
+   "stored_wide_m": 23,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:48Z",
+   "layers": [
+    {
+     "ref": "US-13036",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:49Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.38,
+   "live_acres": 0.64,
+   "kept_pct": 99.7,
+   "size_pct": -19.5,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 19.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.6 ac vs 0.8 ac stored (row acres; the stored shape is a 0.4 ac preview) (-20%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.526614,
+    -116.385623
+   ]
+  },
+  "US-13037+US-9239@area@40.768,-118.714": {
+   "id": "US-13037+US-9239@area@40.768,-118.714",
+   "area": "US-NV",
+   "refs": [
+    "US-13037",
+    "US-9239"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 3826.0,
+   "stored_wide_m": 1685,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:51Z",
+   "layers": [
+    {
+     "ref": "US-13037",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:51Z"
+    },
+    {
+     "ref": "US-9239",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:53Z"
+    },
+    {
+     "ref": "US-9239",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3832.2,
+   "live_acres": 3836.34,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 29,
+   "gap_m": 0,
+   "wide_m": 1683.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3836.3 ac vs 3832.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.749274,
+    -118.698393
+   ]
+  },
+  "US-13038+US-13224@area@41.939,-116.656": {
+   "id": "US-13038+US-13224@area@41.939,-116.656",
+   "area": "US-NV",
+   "refs": [
+    "US-13038",
+    "US-13224"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 6913.7,
+   "stored_wide_m": 2302,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:28:57Z",
+   "layers": [
+    {
+     "ref": "US-13038",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:28:58Z"
+    },
+    {
+     "ref": "US-13224",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2160.22,
+   "live_acres": 6717.49,
+   "kept_pct": 100.0,
+   "size_pct": -2.8,
+   "moved_m": 24,
+   "gap_m": 0,
+   "wide_m": 2280.3,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6717.5 ac vs 6913.7 ac stored (row acres; the stored shape is a 2160.2 ac preview) (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.939311,
+    -116.656297
+   ]
+  },
+  "US-13050+US-4392@area@37.822,-114.992": {
+   "id": "US-13050+US-4392@area@37.822,-114.992",
+   "area": "US-NV",
+   "refs": [
+    "US-13050",
+    "US-4392"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 13797.4,
+   "stored_wide_m": 6323,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:01Z",
+   "layers": [
+    {
+     "ref": "US-13050",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:02Z"
+    },
+    {
+     "ref": "US-4392",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:04Z"
+    },
+    {
+     "ref": "US-4392",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13967.54,
+   "live_acres": 13848.99,
+   "kept_pct": 99.2,
+   "size_pct": -0.8,
+   "moved_m": 21,
+   "gap_m": 0,
+   "wide_m": 6292.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13849.0 ac vs 13967.5 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.82172,
+    -114.991905
+   ]
+  },
+  "US-13055+US-9251@area@40.057,-114.829": {
+   "id": "US-13055+US-9251@area@40.057,-114.829",
+   "area": "US-NV",
+   "refs": [
+    "US-13055",
+    "US-9251"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 35722.1,
+   "stored_wide_m": 5108,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:07Z",
+   "layers": [
+    {
+     "ref": "US-13055",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:08Z"
+    },
+    {
+     "ref": "US-9251",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:09Z"
+    },
+    {
+     "ref": "US-9251",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 24413.11,
+   "live_acres": 35527.47,
+   "kept_pct": 98.8,
+   "size_pct": -0.5,
+   "moved_m": 698,
+   "gap_m": 0,
+   "wide_m": 5333.4,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 35527.5 ac vs 35722.1 ac stored (row acres; the stored shape is a 24413.1 ac preview) (-0%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.061834,
+    -114.827632
+   ]
+  },
+  "US-13064+US-2640@area@39.274,-119.790": {
+   "id": "US-13064+US-2640@area@39.274,-119.790",
+   "area": "US-NV",
+   "refs": [
+    "US-13064",
+    "US-2640"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.2,
+   "stored_wide_m": 85,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:10Z",
+   "layers": [
+    {
+     "ref": "US-13064",
+     "layer": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:11Z"
+    },
+    {
+     "ref": "US-13064",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:12Z"
+    },
+    {
+     "ref": "US-2640",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:13Z"
+    },
+    {
+     "ref": "US-2640",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:15Z"
+    },
+    {
+     "ref": "US-2640",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:17Z"
+    },
+    {
+     "ref": "US-2640",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:29:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 3.86,
+   "live_acres": 3.82,
+   "kept_pct": 100.0,
+   "size_pct": -1.0,
+   "moved_m": 26,
+   "gap_m": 0,
+   "wide_m": 87.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.8 ac vs 3.9 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.274369,
+    -119.789677
+   ]
+  },
+  "US-13113+US-7494@area@36.384,-115.478": {
+   "id": "US-13113+US-7494@area@36.384,-115.478",
+   "area": "US-NV",
+   "refs": [
+    "US-13113",
+    "US-7494"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 80613.1,
+   "stored_wide_m": 8245,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:19Z",
+   "layers": [
+    {
+     "ref": "US-13113",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:19Z"
+    },
+    {
+     "ref": "US-7494",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:20Z"
+    },
+    {
+     "ref": "US-7494",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13493.55,
+   "live_acres": 79224.8,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 8440,
+   "gap_m": 0,
+   "wide_m": 11994.0,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 79224.8 ac vs 80613.1 ac stored (row acres; the stored shape is a 13493.5 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.383312,
+    -115.477509
+   ]
+  },
+  "US-13113+US-9261@area@36.242,-115.456": {
+   "id": "US-13113+US-9261@area@36.242,-115.456",
+   "area": "US-NV",
+   "refs": [
+    "US-13113",
+    "US-9261"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4542.6,
+   "stored_wide_m": 1894,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:23Z",
+   "layers": [
+    {
+     "ref": "US-13113",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:24Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:29:24Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1618.7,
+   "live_acres": 1616.21,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 5027,
+   "gap_m": 0,
+   "wide_m": 1400.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1616.2 ac vs 1618.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.272456,
+    -115.414551
+   ]
+  },
+  "US-13113+US-9266@area@36.156,-115.763": {
+   "id": "US-13113+US-9266@area@36.156,-115.763",
+   "area": "US-NV",
+   "refs": [
+    "US-13113",
+    "US-9266"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 2173.8,
+   "stored_wide_m": 1921,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:26Z",
+   "layers": [
+    {
+     "ref": "US-13113",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:27Z"
+    },
+    {
+     "ref": "US-9266",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:27Z"
+    },
+    {
+     "ref": "US-9266",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2175.08,
+   "live_acres": 2172.28,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 33,
+   "gap_m": 0,
+   "wide_m": 1944.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2172.3 ac vs 2175.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.156655,
+    -115.763013
+   ]
+  },
+  "US-13114+US-13163@area@35.854,-115.399": {
+   "id": "US-13114+US-13163@area@35.854,-115.399",
+   "area": "US-NV",
+   "refs": [
+    "US-13114",
+    "US-13163"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 14026.3,
+   "stored_wide_m": 5965,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:29Z",
+   "layers": [
+    {
+     "ref": "US-13114",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:30Z"
+    },
+    {
+     "ref": "US-13163",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:32Z"
+    },
+    {
+     "ref": "US-13163",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 14064.31,
+   "live_acres": 14065.69,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 5980.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14065.7 ac vs 14064.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.854389,
+    -115.399599
+   ]
+  },
+  "US-13114+US-2635@area@35.913,-115.454": {
+   "id": "US-13114+US-2635@area@35.913,-115.454",
+   "area": "US-NV",
+   "refs": [
+    "US-13114",
+    "US-2635"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 541.3,
+   "stored_wide_m": 823,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:35Z",
+   "layers": [
+    {
+     "ref": "US-13114",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:36Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:29:37Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:38Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 539.53,
+   "live_acres": 538.53,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 564,
+   "gap_m": 0,
+   "wide_m": 812.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 538.5 ac vs 539.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.071198,
+    -115.455503
+   ]
+  },
+  "US-13114+US-7494@area@36.111,-115.486": {
+   "id": "US-13114+US-7494@area@36.111,-115.486",
+   "area": "US-NV",
+   "refs": [
+    "US-13114",
+    "US-7494"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 96718.8,
+   "stored_wide_m": 8493,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:40Z",
+   "layers": [
+    {
+     "ref": "US-13114",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:40Z"
+    },
+    {
+     "ref": "US-7494",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:29:41Z"
+    },
+    {
+     "ref": "US-7494",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 19900.61,
+   "live_acres": 95155.24,
+   "kept_pct": 100.0,
+   "size_pct": -1.6,
+   "moved_m": 5312,
+   "gap_m": 0,
+   "wide_m": 10961.4,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 95155.2 ac vs 96718.8 ac stored (row acres; the stored shape is a 19900.6 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.111627,
+    -115.486329
+   ]
+  },
+  "US-13114+US-9261@area@36.210,-115.451": {
+   "id": "US-13114+US-9261@area@36.210,-115.451",
+   "area": "US-NV",
+   "refs": [
+    "US-13114",
+    "US-9261"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 20238.6,
+   "stored_wide_m": 5141,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:42Z",
+   "layers": [
+    {
+     "ref": "US-13114",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:43Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:43Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 20287.54,
+   "live_acres": 20285.9,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 25,
+   "gap_m": 0,
+   "wide_m": 5162.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20285.9 ac vs 20287.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.210511,
+    -115.45069
+   ]
+  },
+  "US-13114+US-9278@area@36.107,-115.515": {
+   "id": "US-13114+US-9278@area@36.107,-115.515",
+   "area": "US-NV",
+   "refs": [
+    "US-13114",
+    "US-9278"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 20129.8,
+   "stored_wide_m": 5679,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:44Z",
+   "layers": [
+    {
+     "ref": "US-13114",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:45Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:45Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 20187.86,
+   "live_acres": 20182.87,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 69,
+   "gap_m": 0,
+   "wide_m": 5640.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20182.9 ac vs 20187.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.107273,
+    -115.515674
+   ]
+  },
+  "US-13115+US-4393@same land@36.536,-114.184": {
+   "id": "US-13115+US-4393@same land@36.536,-114.184",
+   "area": "US-NV",
+   "refs": [
+    "US-13115",
+    "US-4393"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:47Z",
+   "layers": [
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:48Z"
+    },
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:50Z"
+    },
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:52Z"
+    },
+    {
+     "ref": "US-4393",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:50Z"
+    },
+    {
+     "ref": "US-4393",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 296965.32,
+   "live_acres": 296951.73,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 23424,
+   "gap_m": 0,
+   "wide_m": 23398.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 296951.7 ac vs 296965.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.32513,
+    -114.177918
+   ]
+  },
+  "US-13115+US-9260@area@36.191,-114.167": {
+   "id": "US-13115+US-9260@area@36.191,-114.167",
+   "area": "US-NV",
+   "refs": [
+    "US-13115",
+    "US-9260"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4748.0,
+   "stored_wide_m": 2365,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:53Z",
+   "layers": [
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:54Z"
+    },
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:55Z"
+    },
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:56Z"
+    },
+    {
+     "ref": "US-9260",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4760.65,
+   "live_acres": 4759.36,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 37,
+   "gap_m": 0,
+   "wide_m": 2355.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4759.4 ac vs 4760.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.19118,
+    -114.16701
+   ]
+  },
+  "US-13115+US-9262@area@36.332,-114.280": {
+   "id": "US-13115+US-9262@area@36.332,-114.280",
+   "area": "US-NV",
+   "refs": [
+    "US-13115",
+    "US-9262"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 23612.9,
+   "stored_wide_m": 6485,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:29:58Z",
+   "layers": [
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:59Z"
+    },
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:00Z"
+    },
+    {
+     "ref": "US-13115",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:01Z"
+    },
+    {
+     "ref": "US-9262",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 23713.59,
+   "live_acres": 23708.48,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 6495.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23708.5 ac vs 23713.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.332681,
+    -114.280422
+   ]
+  },
+  "US-13118+US-13177@area@36.890,-116.830": {
+   "id": "US-13118+US-13177@area@36.890,-116.830",
+   "area": "US-NV",
+   "refs": [
+    "US-13118",
+    "US-13177"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 335.5,
+   "stored_wide_m": 579,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:03Z",
+   "layers": [
+    {
+     "ref": "US-13118",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:04Z"
+    },
+    {
+     "ref": "US-13177",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:06Z"
+    },
+    {
+     "ref": "US-13177",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 327.99,
+   "live_acres": 327.05,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 576.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 327.0 ac vs 328.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.890325,
+    -116.829825
+   ]
+  },
+  "US-13120+US-4391@area@38.079,-116.909": {
+   "id": "US-13120+US-4391@area@38.079,-116.909",
+   "area": "US-NV",
+   "refs": [
+    "US-13120",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 114.0,
+   "stored_wide_m": 75,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:09Z",
+   "layers": [
+    {
+     "ref": "US-13120",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:30:10Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 98.22,
+   "live_acres": 102.15,
+   "kept_pct": 100.0,
+   "size_pct": 4.0,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 74.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 102.2 ac vs 98.2 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.078908,
+    -116.92777
+   ]
+  },
+  "US-13131+US-4391@area@38.818,-116.484": {
+   "id": "US-13131+US-4391@area@38.818,-116.484",
+   "area": "US-NV",
+   "refs": [
+    "US-13131",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 19.1,
+   "stored_wide_m": 35,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:12Z",
+   "layers": [
+    {
+     "ref": "US-13131",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:12Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13.97,
+   "live_acres": 15.41,
+   "kept_pct": 99.8,
+   "size_pct": 10.4,
+   "moved_m": 648,
+   "gap_m": 0,
+   "wide_m": 39.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15.4 ac vs 14.0 ac stored (+10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.825197,
+    -116.483847
+   ]
+  },
+  "US-13135+US-13153@area@40.413,-118.864": {
+   "id": "US-13135+US-13153@area@40.413,-118.864",
+   "area": "US-NV",
+   "refs": [
+    "US-13135",
+    "US-13153"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 618.8,
+   "stored_wide_m": 1569,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:14Z",
+   "layers": [
+    {
+     "ref": "US-13135",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:14Z"
+    },
+    {
+     "ref": "US-13153",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:30:16Z"
+    },
+    {
+     "ref": "US-13153",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:18Z"
+    },
+    {
+     "ref": "US-13153",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 618.29,
+   "live_acres": 617.26,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 1569.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 617.3 ac vs 618.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.413365,
+    -118.863787
+   ]
+  },
+  "US-13137+US-4391@area@38.069,-118.462": {
+   "id": "US-13137+US-4391@area@38.069,-118.462",
+   "area": "US-NV",
+   "refs": [
+    "US-13137",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 106.6,
+   "stored_wide_m": 125,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:21Z",
+   "layers": [
+    {
+     "ref": "US-13137",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:22Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 100.74,
+   "live_acres": 98.53,
+   "kept_pct": 100.0,
+   "size_pct": -2.2,
+   "moved_m": 32,
+   "gap_m": 0,
+   "wide_m": 117.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 98.5 ac vs 100.7 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.067678,
+    -118.462167
+   ]
+  },
+  "US-13142+US-13151@area@40.240,-116.982": {
+   "id": "US-13142+US-13151@area@40.240,-116.982",
+   "area": "US-NV",
+   "refs": [
+    "US-13142",
+    "US-13151"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 123998.0,
+   "stored_wide_m": 9685,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:24Z",
+   "layers": [
+    {
+     "ref": "US-13142",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:24Z"
+    },
+    {
+     "ref": "US-13151",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:26Z"
+    },
+    {
+     "ref": "US-13151",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:28Z"
+    },
+    {
+     "ref": "US-13151",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 22378.23,
+   "live_acres": 121941.64,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 7810,
+   "gap_m": 0,
+   "wide_m": 13343.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 121941.6 ac vs 123998.0 ac stored (row acres; the stored shape is a 22378.2 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.239441,
+    -116.982109
+   ]
+  },
+  "US-13163+US-9283@area@35.647,-115.236": {
+   "id": "US-13163+US-9283@area@35.647,-115.236",
+   "area": "US-NV",
+   "refs": [
+    "US-13163",
+    "US-9283"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 6284.1,
+   "stored_wide_m": 3569,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:31Z",
+   "layers": [
+    {
+     "ref": "US-13163",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:32Z"
+    },
+    {
+     "ref": "US-13163",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:33Z"
+    },
+    {
+     "ref": "US-9283",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 6298.55,
+   "live_acres": 6296.14,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 37,
+   "gap_m": 0,
+   "wide_m": 3590.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6296.1 ac vs 6298.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.647533,
+    -115.235715
+   ]
+  },
+  "US-13163+US-9285@area@35.572,-115.244": {
+   "id": "US-13163+US-9285@area@35.572,-115.244",
+   "area": "US-NV",
+   "refs": [
+    "US-13163",
+    "US-9285"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 10993.9,
+   "stored_wide_m": 3911,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:35Z",
+   "layers": [
+    {
+     "ref": "US-13163",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:36Z"
+    },
+    {
+     "ref": "US-13163",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:37Z"
+    },
+    {
+     "ref": "US-9285",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:38Z"
+    },
+    {
+     "ref": "US-9285",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8221.22,
+   "live_acres": 10877.56,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 23,
+   "gap_m": 0,
+   "wide_m": 3905.0,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10877.6 ac vs 10993.9 ac stored (row acres; the stored shape is a 8221.2 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.573203,
+    -115.244358
+   ]
+  },
+  "US-13223+US-4445@area@40.683,-115.792": {
+   "id": "US-13223+US-4445@area@40.683,-115.792",
+   "area": "US-NV",
+   "refs": [
+    "US-13223",
+    "US-4445"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 44.0,
+   "stored_wide_m": 395,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:41Z",
+   "layers": [
+    {
+     "ref": "US-13223",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:42Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:43Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:45Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:47Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 39.51,
+   "live_acres": 40.98,
+   "kept_pct": 99.1,
+   "size_pct": 3.7,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 393.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 41.0 ac vs 39.5 ac stored (+4%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.682871,
+    -115.792194
+   ]
+  },
+  "US-13225+US-9239@area@41.487,-119.495": {
+   "id": "US-13225+US-9239@area@41.487,-119.495",
+   "area": "US-NV",
+   "refs": [
+    "US-13225",
+    "US-9239"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 39.2,
+   "stored_wide_m": 237,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:49Z",
+   "layers": [
+    {
+     "ref": "US-13225",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:49Z"
+    },
+    {
+     "ref": "US-13225",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:51Z"
+    },
+    {
+     "ref": "US-9239",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:54Z"
+    },
+    {
+     "ref": "US-9239",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 38.27,
+   "live_acres": 38.38,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 245.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 38.4 ac vs 38.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.487053,
+    -119.495883
+   ]
+  },
+  "US-13307+US-4391@area@39.369,-119.915": {
+   "id": "US-13307+US-4391@area@39.369,-119.915",
+   "area": "US-NV",
+   "refs": [
+    "US-13307",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 22847.1,
+   "stored_wide_m": 4835,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:54Z",
+   "layers": [
+    {
+     "ref": "US-13307",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:55Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:30:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 15493.95,
+   "live_acres": 22717.98,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 6436,
+   "gap_m": 0,
+   "wide_m": 5579.5,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22718.0 ac vs 22847.1 ac stored (row acres; the stored shape is a 15493.9 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.369119,
+    -119.915131
+   ]
+  },
+  "US-13307+US-4458@area@39.284,-119.971": {
+   "id": "US-13307+US-4458@area@39.284,-119.971",
+   "area": "US-NV",
+   "refs": [
+    "US-13307",
+    "US-4458"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2562.4,
+   "stored_wide_m": 1966,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:56Z",
+   "layers": [
+    {
+     "ref": "US-13307",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:57Z"
+    },
+    {
+     "ref": "US-4458",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:30:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2569.54,
+   "live_acres": 2567.3,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 1977.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2567.3 ac vs 2569.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.284289,
+    -119.970529
+   ]
+  },
+  "US-2625+US-9287@area@37.544,-114.119": {
+   "id": "US-2625+US-9287@area@37.544,-114.119",
+   "area": "US-NV",
+   "refs": [
+    "US-2625",
+    "US-9287"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 11.3,
+   "stored_wide_m": 31,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:30:58Z",
+   "layers": [
+    {
+     "ref": "US-2625",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:30:58Z"
+    },
+    {
+     "ref": "US-2625",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:00Z"
+    },
+    {
+     "ref": "US-2625",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:02Z"
+    },
+    {
+     "ref": "US-2625",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:03Z"
+    },
+    {
+     "ref": "US-9287",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.95,
+   "live_acres": 7.03,
+   "kept_pct": 100.0,
+   "size_pct": 1.1,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 28.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.0 ac vs 7.0 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.544698,
+    -114.114216
+   ]
+  },
+  "US-2626+US-4391@area@38.873,-117.594": {
+   "id": "US-2626+US-4391@area@38.873,-117.594",
+   "area": "US-NV",
+   "refs": [
+    "US-2626",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 586.5,
+   "stored_wide_m": 1305,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:05Z",
+   "layers": [
+    {
+     "ref": "US-2626",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:05Z"
+    },
+    {
+     "ref": "US-2626",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:07Z"
+    },
+    {
+     "ref": "US-2626",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:09Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 549.13,
+   "live_acres": 550.25,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1306.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 550.3 ac vs 549.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.872999,
+    -117.594307
+   ]
+  },
+  "US-2629+US-4566@trail@39.248,-119.589": {
+   "id": "US-2629+US-4566@trail@39.248,-119.589",
+   "area": "US-NV",
+   "refs": [
+    "US-2629",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 13.31,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:11Z",
+   "layers": [
+    {
+     "ref": "US-2629",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:11Z"
+    },
+    {
+     "ref": "US-2629",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:13Z"
+    },
+    {
+     "ref": "US-2629",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:15Z"
+    },
+    {
+     "ref": "US-2629",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:16Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 12.63,
+   "stored_shape_acres": 12.44,
+   "live_acres": 12.63,
+   "kept_pct": 100.0,
+   "size_pct": 1.5,
+   "moved_m": 229,
+   "gap_m": 0,
+   "wide_m": 61.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.6 ac vs 12.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.246288,
+    -119.589826
+   ]
+  },
+  "US-2629+US-4578@trail@39.248,-119.589": {
+   "id": "US-2629+US-4578@trail@39.248,-119.589",
+   "area": "US-NV",
+   "refs": [
+    "US-2629",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 13.31,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:17Z",
+   "layers": [
+    {
+     "ref": "US-2629",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:11Z"
+    },
+    {
+     "ref": "US-2629",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:13Z"
+    },
+    {
+     "ref": "US-2629",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:15Z"
+    },
+    {
+     "ref": "US-2629",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:16Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 12.63,
+   "stored_shape_acres": 12.44,
+   "live_acres": 12.63,
+   "kept_pct": 100.0,
+   "size_pct": 1.5,
+   "moved_m": 229,
+   "gap_m": 0,
+   "wide_m": 61.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.6 ac vs 12.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.246288,
+    -119.589826
+   ]
+  },
+  "US-2631+US-4566@trail@39.295,-119.265": {
+   "id": "US-2631+US-4566@trail@39.295,-119.265",
+   "area": "US-NV",
+   "refs": [
+    "US-2631",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 35.53,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:17Z",
+   "layers": [
+    {
+     "ref": "US-2631",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:17Z"
+    },
+    {
+     "ref": "US-2631",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:18Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 33.03,
+   "stored_shape_acres": 33.75,
+   "live_acres": 33.03,
+   "kept_pct": 100.0,
+   "size_pct": -2.2,
+   "moved_m": 858,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 33.0 ac vs 33.8 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.298543,
+    -119.256282
+   ]
+  },
+  "US-2631+US-4578@trail@39.297,-119.254": {
+   "id": "US-2631+US-4578@trail@39.297,-119.254",
+   "area": "US-NV",
+   "refs": [
+    "US-2631",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 63.5,
+   "stored_wide_m": 75.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:19Z",
+   "layers": [
+    {
+     "ref": "US-2631",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:19Z"
+    },
+    {
+     "ref": "US-2631",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:20Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 59.77,
+   "stored_shape_acres": 58.51,
+   "live_acres": 59.77,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 350,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 59.8 ac vs 58.5 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.295384,
+    -119.25855
+   ]
+  },
+  "US-2633+US-3389@same land@39.165,-119.895": {
+   "id": "US-2633+US-3389@same land@39.165,-119.895",
+   "area": "US-NV",
+   "refs": [
+    "US-2633",
+    "US-3389"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:20Z",
+   "layers": [
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:20Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:22Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:26Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:26Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:28Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:29Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:20Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13171.69,
+   "live_acres": 13403.03,
+   "kept_pct": 98.4,
+   "size_pct": 1.8,
+   "moved_m": 5136,
+   "gap_m": 0,
+   "wide_m": 4469.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13403.0 ac vs 13171.7 ac stored (+2%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.209572,
+    -119.880347
+   ]
+  },
+  "US-2633+US-4391@area@39.135,-119.895": {
+   "id": "US-2633+US-4391@area@39.135,-119.895",
+   "area": "US-NV",
+   "refs": [
+    "US-2633",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.7,
+   "stored_wide_m": 39,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:30Z",
+   "layers": [
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:31Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:32Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:32Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:33Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:33Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.5,
+   "live_acres": 0.53,
+   "kept_pct": 100.0,
+   "size_pct": 4.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 37.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.5 ac vs 0.5 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.134861,
+    -119.894674
+   ]
+  },
+  "US-2633+US-4458@area@39.170,-119.894": {
+   "id": "US-2633+US-4458@area@39.170,-119.894",
+   "area": "US-NV",
+   "refs": [
+    "US-2633",
+    "US-4458"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 59.3,
+   "stored_wide_m": 95,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:34Z",
+   "layers": [
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:34Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:35Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:35Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:36Z"
+    },
+    {
+     "ref": "US-2633",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:36Z"
+    },
+    {
+     "ref": "US-4458",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:31:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 54.12,
+   "live_acres": 52.26,
+   "kept_pct": 99.7,
+   "size_pct": -3.4,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 95.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 52.3 ac vs 54.1 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.170403,
+    -119.894424
+   ]
+  },
+  "US-2634+US-4566@trail@39.004,-119.845": {
+   "id": "US-2634+US-4566@trail@39.004,-119.845",
+   "area": "US-NV",
+   "refs": [
+    "US-2634",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.14,
+   "stored_wide_m": 63.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:37Z",
+   "layers": [
+    {
+     "ref": "US-2634",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:38Z"
+    },
+    {
+     "ref": "US-2634",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:31:39Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 1.77,
+   "stored_shape_acres": 1.75,
+   "live_acres": 1.77,
+   "kept_pct": 100.0,
+   "size_pct": 1.2,
+   "moved_m": 79,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.8 ac vs 1.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.003864,
+    -119.845133
+   ]
+  },
+  "US-2634+US-4578@trail@39.004,-119.845": {
+   "id": "US-2634+US-4578@trail@39.004,-119.845",
+   "area": "US-NV",
+   "refs": [
+    "US-2634",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.95,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:40Z",
+   "layers": [
+    {
+     "ref": "US-2634",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:40Z"
+    },
+    {
+     "ref": "US-2634",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:31:41Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 1.49,
+   "stored_shape_acres": 1.7,
+   "live_acres": 1.49,
+   "kept_pct": 100.0,
+   "size_pct": -12.0,
+   "moved_m": 213,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.5 ac vs 1.7 ac stored (-12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.003852,
+    -119.845119
+   ]
+  },
+  "US-2635+US-4391@area@36.371,-115.831": {
+   "id": "US-2635+US-4391@area@36.371,-115.831",
+   "area": "US-NV",
+   "refs": [
+    "US-2635",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 254239.3,
+   "stored_wide_m": 10917,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:41Z",
+   "layers": [
+    {
+     "ref": "US-2635",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:41Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:42Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:42Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 43870.2,
+   "live_acres": 293691.94,
+   "kept_pct": 98.9,
+   "size_pct": 15.5,
+   "moved_m": 3875,
+   "gap_m": 0,
+   "wide_m": 16930.3,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 293691.9 ac vs 254239.3 ac stored (row acres; the stored shape is a 43870.2 ac preview) (+16%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.371591,
+    -115.829918
+   ]
+  },
+  "US-2635+US-4575@trail@36.028,-115.535": {
+   "id": "US-2635+US-4575@trail@36.028,-115.535",
+   "area": "US-NV",
+   "refs": [
+    "US-2635",
+    "US-4575"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 141.6,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:43Z",
+   "layers": [
+    {
+     "ref": "US-2635",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:43Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:44Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:44Z"
+    },
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4575"
+   ],
+   "live_stretch_acres": 133.89,
+   "stored_shape_acres": 133.38,
+   "live_acres": 133.89,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 2296,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 133.9 ac vs 133.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.022414,
+    -115.55992
+   ]
+  },
+  "US-2635+US-9261@area@36.183,-115.640": {
+   "id": "US-2635+US-9261@area@36.183,-115.640",
+   "area": "US-NV",
+   "refs": [
+    "US-2635",
+    "US-9261"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 19002.7,
+   "stored_wide_m": 4479,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:44Z",
+   "layers": [
+    {
+     "ref": "US-2635",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:44Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:45Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:45Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:45Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19050.56,
+   "live_acres": 19039.7,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 85,
+   "gap_m": 0,
+   "wide_m": 4465.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 19039.7 ac vs 19050.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.183543,
+    -115.641384
+   ]
+  },
+  "US-2635+US-9266@area@36.348,-115.725": {
+   "id": "US-2635+US-9266@area@36.348,-115.725",
+   "area": "US-NV",
+   "refs": [
+    "US-2635",
+    "US-9266"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 55575.9,
+   "stored_wide_m": 5599,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:45Z",
+   "layers": [
+    {
+     "ref": "US-2635",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:46Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:46Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:46Z"
+    },
+    {
+     "ref": "US-9266",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:47Z"
+    },
+    {
+     "ref": "US-9266",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 18709.12,
+   "live_acres": 54855.57,
+   "kept_pct": 100.0,
+   "size_pct": -1.3,
+   "moved_m": 36,
+   "gap_m": 0,
+   "wide_m": 5560.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 54855.6 ac vs 55575.9 ac stored (row acres; the stored shape is a 18709.1 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.348284,
+    -115.725665
+   ]
+  },
+  "US-2635+US-9278@area@36.055,-115.540": {
+   "id": "US-2635+US-9278@area@36.055,-115.540",
+   "area": "US-NV",
+   "refs": [
+    "US-2635",
+    "US-9278"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4355.7,
+   "stored_wide_m": 2405,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:47Z",
+   "layers": [
+    {
+     "ref": "US-2635",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:48Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:48Z"
+    },
+    {
+     "ref": "US-2635",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:31:48Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:49Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2401.07,
+   "live_acres": 2398.2,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 6440,
+   "gap_m": 0,
+   "wide_m": 1937.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2398.2 ac vs 2401.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.111336,
+    -115.558027
+   ]
+  },
+  "US-3389+US-4391@area@39.106,-119.895": {
+   "id": "US-3389+US-4391@area@39.106,-119.895",
+   "area": "US-NV",
+   "refs": [
+    "US-3389",
+    "US-4391"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.7,
+   "stored_wide_m": 35,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:49Z",
+   "layers": [
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:49Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:50Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:51Z"
+    },
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.82,
+   "live_acres": 2.76,
+   "kept_pct": 100.0,
+   "size_pct": -2.4,
+   "moved_m": 153,
+   "gap_m": 0,
+   "wide_m": 26.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.8 ac vs 2.8 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.105156,
+    -119.895012
+   ]
+  },
+  "US-3389+US-4458@area@39.170,-119.894": {
+   "id": "US-3389+US-4458@area@39.170,-119.894",
+   "area": "US-NV",
+   "refs": [
+    "US-3389",
+    "US-4458"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 58.9,
+   "stored_wide_m": 95,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:52Z",
+   "layers": [
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:52Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:53Z"
+    },
+    {
+     "ref": "US-3389",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:54Z"
+    },
+    {
+     "ref": "US-4458",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 53.23,
+   "live_acres": 52.44,
+   "kept_pct": 99.7,
+   "size_pct": -1.5,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 95.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 52.4 ac vs 53.2 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.170403,
+    -119.894424
+   ]
+  },
+  "US-4391+US-4566@trail@38.755,-119.180": {
+   "id": "US-4391+US-4566@trail@38.755,-119.180",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 281.06,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:55Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:31:56Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 266.58,
+   "stored_shape_acres": 262.77,
+   "live_acres": 266.58,
+   "kept_pct": 100.0,
+   "size_pct": 1.4,
+   "moved_m": 4969,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 266.6 ac vs 262.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.781849,
+    -119.225669
+   ]
+  },
+  "US-4391+US-4575@trail@36.025,-115.550": {
+   "id": "US-4391+US-4575@trail@36.025,-115.550",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-4575"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 98.38,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:56Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:56Z"
+    },
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4575"
+   ],
+   "live_stretch_acres": 92.66,
+   "stored_shape_acres": 90.93,
+   "live_acres": 92.66,
+   "kept_pct": 100.0,
+   "size_pct": 1.9,
+   "moved_m": 699,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 92.7 ac vs 90.9 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.027557,
+    -115.542735
+   ]
+  },
+  "US-4391+US-4578@trail@39.519,-117.018": {
+   "id": "US-4391+US-4578@trail@39.519,-117.018",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 134.32,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:57Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:57Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 126.5,
+   "stored_shape_acres": 124.31,
+   "live_acres": 126.5,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 2473,
+   "gap_m": 0,
+   "wide_m": 63.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 126.5 ac vs 124.3 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.520615,
+    -117.046411
+   ]
+  },
+  "US-4391+US-9261@area@36.183,-115.640": {
+   "id": "US-4391+US-9261@area@36.183,-115.640",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-9261"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 19001.4,
+   "stored_wide_m": 4475,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:58Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:58Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:45Z"
+    },
+    {
+     "ref": "US-9261",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19048.58,
+   "live_acres": 19039.69,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 74,
+   "gap_m": 0,
+   "wide_m": 4465.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 19039.7 ac vs 19048.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.183543,
+    -115.641384
+   ]
+  },
+  "US-4391+US-9266@area@36.348,-115.725": {
+   "id": "US-4391+US-9266@area@36.348,-115.725",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-9266"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 55324.6,
+   "stored_wide_m": 5593,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:31:59Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:59Z"
+    },
+    {
+     "ref": "US-9266",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:47Z"
+    },
+    {
+     "ref": "US-9266",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:31:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 18704.25,
+   "live_acres": 54602.75,
+   "kept_pct": 100.0,
+   "size_pct": -1.3,
+   "moved_m": 46,
+   "gap_m": 0,
+   "wide_m": 5560.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 54602.7 ac vs 55324.6 ac stored (row acres; the stored shape is a 18704.3 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.348284,
+    -115.725665
+   ]
+  },
+  "US-4391+US-9278@area@36.055,-115.540": {
+   "id": "US-4391+US-9278@area@36.055,-115.540",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-9278"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4354.6,
+   "stored_wide_m": 2405,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:00Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:00Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:01Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2401.39,
+   "live_acres": 2398.02,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 6436,
+   "gap_m": 0,
+   "wide_m": 1936.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2398.0 ac vs 2401.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.111314,
+    -115.558024
+   ]
+  },
+  "US-4391+US-9286@area@38.753,-116.633": {
+   "id": "US-4391+US-9286@area@38.753,-116.633",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-9286"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 93597.9,
+   "stored_wide_m": 8505,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:01Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:01Z"
+    },
+    {
+     "ref": "US-9286",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 20048.76,
+   "live_acres": 92557.84,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 2805,
+   "gap_m": 0,
+   "wide_m": 12853.3,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 92557.8 ac vs 93597.9 ac stored (row acres; the stored shape is a 20048.8 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.752982,
+    -116.633537
+   ]
+  },
+  "US-4391+US-9682@area@38.082,-118.590": {
+   "id": "US-4391+US-9682@area@38.082,-118.590",
+   "area": "US-NV",
+   "refs": [
+    "US-4391",
+    "US-9682"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 19.4,
+   "stored_wide_m": 125,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:03Z",
+   "layers": [
+    {
+     "ref": "US-4391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:03Z"
+    },
+    {
+     "ref": "US-9682",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:03Z"
+    },
+    {
+     "ref": "US-9682",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:05Z"
+    },
+    {
+     "ref": "US-9682",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 18.7,
+   "live_acres": 19.57,
+   "kept_pct": 100.0,
+   "size_pct": 4.7,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 128.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 19.6 ac vs 18.7 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.082258,
+    -118.590023
+   ]
+  },
+  "US-4393+US-9260@area@36.191,-114.167": {
+   "id": "US-4393+US-9260@area@36.191,-114.167",
+   "area": "US-NV",
+   "refs": [
+    "US-4393",
+    "US-9260"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 4748.0,
+   "stored_wide_m": 2365,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:08Z",
+   "layers": [
+    {
+     "ref": "US-4393",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:55Z"
+    },
+    {
+     "ref": "US-4393",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:56Z"
+    },
+    {
+     "ref": "US-9260",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:29:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4760.65,
+   "live_acres": 4758.22,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 40,
+   "gap_m": 0,
+   "wide_m": 2353.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4758.2 ac vs 4760.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.191214,
+    -114.167009
+   ]
+  },
+  "US-4393+US-9262@area@36.333,-114.280": {
+   "id": "US-4393+US-9262@area@36.333,-114.280",
+   "area": "US-NV",
+   "refs": [
+    "US-4393",
+    "US-9262"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 23612.3,
+   "stored_wide_m": 6485,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:08Z",
+   "layers": [
+    {
+     "ref": "US-4393",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:09Z"
+    },
+    {
+     "ref": "US-4393",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:10Z"
+    },
+    {
+     "ref": "US-9262",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 23705.95,
+   "live_acres": 23707.12,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 6497.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23707.1 ac vs 23706.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.332681,
+    -114.280415
+   ]
+  },
+  "US-4441+US-4566@trail@39.382,-119.205": {
+   "id": "US-4441+US-4566@trail@39.382,-119.205",
+   "area": "US-NV",
+   "refs": [
+    "US-4441",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 28.39,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:11Z",
+   "layers": [
+    {
+     "ref": "US-4441",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:11Z"
+    },
+    {
+     "ref": "US-4441",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:13Z"
+    },
+    {
+     "ref": "US-4441",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:15Z"
+    },
+    {
+     "ref": "US-4441",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:16Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 247.64,
+   "stored_shape_acres": 27.5,
+   "live_acres": 27.96,
+   "kept_pct": 100.0,
+   "size_pct": 1.7,
+   "moved_m": 930,
+   "gap_m": 0,
+   "wide_m": 77.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28.0 ac vs 27.5 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.389193,
+    -119.199545
+   ]
+  },
+  "US-4444+US-4566@trail@40.600,-118.338": {
+   "id": "US-4444+US-4566@trail@40.600,-118.338",
+   "area": "US-NV",
+   "refs": [
+    "US-4444",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 0.17,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:17Z",
+   "layers": [
+    {
+     "ref": "US-4444",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:18Z"
+    },
+    {
+     "ref": "US-4444",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:19Z"
+    },
+    {
+     "ref": "US-4444",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:21Z"
+    },
+    {
+     "ref": "US-4444",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:23Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 0.1,
+   "stored_shape_acres": 1.78,
+   "live_acres": 0.1,
+   "kept_pct": 17.0,
+   "size_pct": -94.3,
+   "moved_m": 27,
+   "gap_m": 0,
+   "wide_m": 13.3,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 94% smaller (0.1 ac vs 1.8 ac stored)",
+   "live_center": [
+    40.60005,
+    -118.338603
+   ]
+  },
+  "US-4444+US-4566@trail@40.688,-118.230": {
+   "id": "US-4444+US-4566@trail@40.688,-118.230",
+   "area": "US-NV",
+   "refs": [
+    "US-4444",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 61.65,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:24Z",
+   "layers": [
+    {
+     "ref": "US-4444",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:24Z"
+    },
+    {
+     "ref": "US-4444",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:25Z"
+    },
+    {
+     "ref": "US-4444",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:26Z"
+    },
+    {
+     "ref": "US-4444",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:27Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 58.36,
+   "stored_shape_acres": 58.21,
+   "live_acres": 58.36,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 682,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 58.4 ac vs 58.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.690629,
+    -118.222757
+   ]
+  },
+  "US-4445+US-4566@trail@40.654,-115.736": {
+   "id": "US-4445+US-4566@trail@40.654,-115.736",
+   "area": "US-NV",
+   "refs": [
+    "US-4445",
+    "US-4566"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 17.37,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:27Z",
+   "layers": [
+    {
+     "ref": "US-4445",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:28Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:29Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:30Z"
+    },
+    {
+     "ref": "US-4445",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:30Z"
+    },
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 16.17,
+   "stored_shape_acres": 16.41,
+   "live_acres": 16.17,
+   "kept_pct": 100.0,
+   "size_pct": -1.5,
+   "moved_m": 99,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.2 ac vs 16.4 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.654795,
+    -115.736481
+   ]
+  },
+  "US-4458+US-4578@trail@38.971,-119.868": {
+   "id": "US-4458+US-4578@trail@38.971,-119.868",
+   "area": "US-NV",
+   "refs": [
+    "US-4458",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 11.55,
+   "stored_wide_m": 72.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:30Z",
+   "layers": [
+    {
+     "ref": "US-4458",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:31Z"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578"
+   ],
+   "live_stretch_acres": 14.37,
+   "stored_shape_acres": 10.76,
+   "live_acres": 11.46,
+   "kept_pct": 100.0,
+   "size_pct": 6.4,
+   "moved_m": 527,
+   "gap_m": 0,
+   "wide_m": 63.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.5 ac vs 10.8 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.972456,
+    -119.874237
+   ]
+  },
+  "US-4566+US-4578@trail@41.606,-103.113": {
+   "id": "US-4566+US-4578@trail@41.606,-103.113",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:32:31Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566",
+    "US-4578"
+   ],
+   "live_stretch_acres": 494.24,
+   "stored_shape_acres": 52.74,
+   "live_acres": 40.77,
+   "kept_pct": 88.0,
+   "size_pct": -22.7,
+   "moved_m": 12680,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 40.8 ac vs 52.7 ac stored (-23%), 88% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.529626,
+    -103.029617
+   ]
+  },
+  "US-4566+US-4578@trail@42.460,-107.524": {
+   "id": "US-4566+US-4578@trail@42.460,-107.524",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-4578"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:32:32Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566",
+    "US-4578"
+   ],
+   "live_stretch_acres": 577.59,
+   "stored_shape_acres": 14.54,
+   "live_acres": 8.25,
+   "kept_pct": 70.5,
+   "size_pct": -43.2,
+   "moved_m": 25436,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 43% smaller (8.3 ac vs 14.5 ac stored)",
+   "live_center": [
+    42.442266,
+    -107.215508
+   ]
+  },
+  "US-4566+US-4579@trail@39.018,-94.455": {
+   "id": "US-4566+US-4579@trail@39.018,-94.455",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:32:32Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4566",
+    "US-4579"
+   ],
+   "live_stretch_acres": 19.73,
+   "stored_shape_acres": 11.96,
+   "live_acres": 7.58,
+   "kept_pct": 79.0,
+   "size_pct": -36.6,
+   "moved_m": 1630,
+   "gap_m": 0,
+   "wide_m": 49.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 37% smaller (7.6 ac vs 12.0 ac stored)",
+   "live_center": [
+    39.034131,
+    -94.439017
+   ]
+  },
+  "US-4566+US-8311@trail@39.953,-118.696": {
+   "id": "US-4566+US-8311@trail@39.953,-118.696",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-8311"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 19.73,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:32Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8311",
+     "layer": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:32Z"
+    },
+    {
+     "ref": "US-8311",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:32:33Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 18.39,
+   "stored_shape_acres": 18.86,
+   "live_acres": 18.39,
+   "kept_pct": 100.0,
+   "size_pct": -2.5,
+   "moved_m": 558,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 18.4 ac vs 18.9 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.950175,
+    -118.701215
+   ]
+  },
+  "US-4566+US-8311@trail@40.030,-118.666": {
+   "id": "US-4566+US-8311@trail@40.030,-118.666",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-8311"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 97.26,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:34Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8311",
+     "layer": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:34Z"
+    },
+    {
+     "ref": "US-8311",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:35Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 89.93,
+   "stored_shape_acres": 89.95,
+   "live_acres": 89.93,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 203,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 89.9 ac vs 89.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.031868,
+    -118.665113
+   ]
+  },
+  "US-4566+US-9246@trail@41.418,-119.423": {
+   "id": "US-4566+US-9246@trail@41.418,-119.423",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-9246"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 206.4,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:35Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9246",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:35Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 193.76,
+   "stored_shape_acres": 191.89,
+   "live_acres": 193.76,
+   "kept_pct": 100.0,
+   "size_pct": 1.0,
+   "moved_m": 3132,
+   "gap_m": 0,
+   "wide_m": 62.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 193.8 ac vs 191.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.445358,
+    -119.430924
+   ]
+  },
+  "US-4566+US-9254@trail@41.473,-119.457": {
+   "id": "US-4566+US-9254@trail@41.473,-119.457",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-9254"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.9,
+   "stored_wide_m": 63.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:36Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9254",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:37Z"
+    },
+    {
+     "ref": "US-9254",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:39Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 122.84,
+   "stored_shape_acres": 1.6,
+   "live_acres": 3.86,
+   "kept_pct": 100.0,
+   "size_pct": 141.5,
+   "moved_m": 27,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 141% bigger (3.9 ac vs 1.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    41.47359,
+    -119.456139
+   ]
+  },
+  "US-4566+US-9255@trail@41.338,-119.242": {
+   "id": "US-4566+US-9255@trail@41.338,-119.242",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-9255"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 39.91,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:40Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9255",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:41Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 37.49,
+   "stored_shape_acres": 37.39,
+   "live_acres": 37.49,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 1925,
+   "gap_m": 0,
+   "wide_m": 61.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 37.5 ac vs 37.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.344556,
+    -119.221484
+   ]
+  },
+  "US-4566+US-9263@trail@41.473,-119.457": {
+   "id": "US-4566+US-9263@trail@41.473,-119.457",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-9263"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.66,
+   "stored_wide_m": 63.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:42Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9263",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:43Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 2.41,
+   "stored_shape_acres": 2.41,
+   "live_acres": 2.41,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 60.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.473418,
+    -119.456567
+   ]
+  },
+  "US-4566+US-9275@trail@41.237,-119.125": {
+   "id": "US-4566+US-9275@trail@41.237,-119.125",
+   "area": "US-NV",
+   "refs": [
+    "US-4566",
+    "US-9275"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 14.54,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:44Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9275",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:45Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4566"
+   ],
+   "live_stretch_acres": 13.72,
+   "stored_shape_acres": 13.61,
+   "live_acres": 13.72,
+   "kept_pct": 100.0,
+   "size_pct": 0.8,
+   "moved_m": 2031,
+   "gap_m": 0,
+   "wide_m": 61.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13.7 ac vs 13.6 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.223047,
+    -119.111036
+   ]
+  },
+  "US-4575+US-9278@trail@36.004,-115.474": {
+   "id": "US-4575+US-9278@trail@36.004,-115.474",
+   "area": "US-NV",
+   "refs": [
+    "US-4575",
+    "US-9278"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 56.38,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:46Z",
+   "layers": [
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:46Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:47Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4575"
+   ],
+   "live_stretch_acres": 53.43,
+   "stored_shape_acres": 52.76,
+   "live_acres": 53.43,
+   "kept_pct": 100.0,
+   "size_pct": 1.3,
+   "moved_m": 1259,
+   "gap_m": 0,
+   "wide_m": 61.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 53.4 ac vs 52.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.998719,
+    -115.460953
+   ]
+  },
+  "US-4575+US-9278@trail@36.014,-115.495": {
+   "id": "US-4575+US-9278@trail@36.014,-115.495",
+   "area": "US-NV",
+   "refs": [
+    "US-4575",
+    "US-9278"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 0.61,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T02:32:47Z",
+   "layers": [
+    {
+     "ref": "US-4575",
+     "layer": "saved copy US-4575.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:48Z"
+    },
+    {
+     "ref": "US-9278",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:48Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4575"
+   ],
+   "live_stretch_acres": 0.48,
+   "stored_shape_acres": 2.42,
+   "live_acres": 0.48,
+   "kept_pct": 34.8,
+   "size_pct": -80.3,
+   "moved_m": 23,
+   "gap_m": 0,
+   "wide_m": 34.4,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 80% smaller (0.5 ac vs 2.4 ac stored)",
+   "live_center": [
+    36.014259,
+    -115.495187
+   ]
+  },
+  "US-4578+US-9757@trail@37.797,-122.401": {
+   "id": "US-4578+US-9757@trail@37.797,-122.401",
+   "area": "US-NV",
+   "refs": [
+    "US-4578",
+    "US-9757"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T02:32:48Z",
+   "layers": [
+    {
+     "ref": "US-4578",
+     "layer": "saved copy US-4578.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9757",
+     "layer": "saved copy US-9757.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4578",
+    "US-9757"
+   ],
+   "live_stretch_acres": 1.66,
+   "stored_shape_acres": 3.33,
+   "live_acres": 1.66,
+   "kept_pct": 63.2,
+   "size_pct": -50.1,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 63.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 50% smaller (1.7 ac vs 3.3 ac stored)",
+   "live_center": [
+    37.796738,
+    -122.400694
+   ]
+  }
+ },
+ "started": "2026-11-01T02:27:20Z",
+ "fers_sha256": "e94687a6e513a920750d0732c0c94f74eb5ff9aa77e4ccf437a0243114f04a1f",
+ "live_rows": 94,
+ "skipped_rows": 767,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:41Z",
+ "complete": true,
+ "summary": {
+  "rows": 94,
+  "verdicts": {
+   "CONFIRMED": 87,
+   "SHRUNK": 5,
+   "GREW": 1,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 1,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 8,
+   "trail line from the club saved copy (not re-read live)": 34
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json"
+ ],
+ "requests_this_run": 1030
+}

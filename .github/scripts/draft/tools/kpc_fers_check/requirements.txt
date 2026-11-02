@@ -1,0 +1,6 @@
+# KPC 2-fer accuracy checker (Python 3.11+)
+requests>=2.31
+shapely>=2.0      # 2.1+ gives the exact largest-inscribed-circle; 2.0 falls back to polylabel
+pyproj>=3.5
+# tests only
+pytest>=7

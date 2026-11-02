@@ -1,0 +1,126 @@
+name: KPC-Data history restart (storage step 2, by hand only)
+# Nov 2 2026 (chat 10; Brandon's GO Nov 1 12:10 PM 'STEP 2, ONE HISTORY RESTART' + Nov 2 7:18 AM 'everything implements now').
+# KPC-Data had grown to ~1.9 GB on GitHub (line 400 MB) from ~650 commits that each rewrote big files. Main's files today pack to
+# ~300 MB. This run, in order, stops at the first thing that goes wrong and puts everything back:
+#  1 BACKUP: a git bundle of EVERY branch + tag, verified, uploaded to a release 'history-<date>' (release files do not count
+#    toward the repo size; the bundle restores every old commit: git clone <bundle>).
+#  2 PAUSE: every active scheduled workflow except this one is disabled (list kept), and running runs finish (40 min, then cancelled).
+#  3 RESTART: main = ONE fresh commit of today's main files, force-pushed. The orphan side branches (tools-out, intake-files,
+#    picture-maps, lookup, …) are kept as they are. A branch / tag that shares main's OLD history is deleted (it is in the bundle).
+#  4 RESUME: the paused workflows are switched back on; the waiting room and the collector run once to prove it.
+# Never touches KPC-Links. Every chat must take a FRESH clone of KPC-Data afterwards (HQ's README line).
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "Type RESTART to really do it (anything else = a dry run that only makes and uploads the backup)"
+        default: 'dry'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-history-restart
+  cancel-in-progress: false
+jobs:
+  restart:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      GH_TOKEN: ${{ github.token }}
+      R: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: 1 BACKUP (bundle of every branch + tag -> release)
+        id: b
+        run: |
+          set -euo pipefail
+          git fetch -q origin '+refs/heads/*:refs/remotes/origin/*' '+refs/tags/*:refs/tags/*'
+          for b in $(git for-each-ref --format='%(refname:strip=3)' refs/remotes/origin | grep -v '^HEAD$'); do git branch -f "$b" "origin/$b" >/dev/null 2>&1 || true; done
+          D=$(date -u +%Y%m%d-%H%M); F=/tmp/kpc-data-history-$D.bundle
+          git bundle create "$F" --all
+          git bundle verify "$F" >/dev/null
+          S=$(stat -c%s "$F"); echo "size=$S" >> $GITHUB_OUTPUT
+          echo "::notice title=History restart::backup bundle $(( S / 1000000 )) MB, verified"
+          mkdir -p /tmp/up
+          if [ "$S" -gt 1900000000 ]; then split -b 1900M -d "$F" "/tmp/up/$(basename $F).part"; else mv "$F" /tmp/up/; fi
+          (cd /tmp/up && sha256sum * > SHA256SUMS.txt)
+          gh release create "history-$D" /tmp/up/* -R "$R" --title "KPC-Data history backup $D" \
+            --notes "Every branch and tag of KPC-Data before the Nov 2 2026 history restart (storage step 2). Restore: cat the parts together if split (cat *.part* > x.bundle), then git clone x.bundle. Draft releases are never used here: this one stays as the record."
+          N=$(gh release view "history-$D" -R "$R" --json assets --jq '[.assets[].size] | add')
+          [ "$N" -ge "$S" ] || { echo "::error title=History restart::the uploaded backup is smaller than the bundle ($N < $S): stopped, nothing changed"; exit 1; }
+          echo "tag=history-$D" >> $GITHUB_OUTPUT
+          echo "::notice title=History restart::backup on release history-$D ($(( N / 1000000 )) MB)"
+      - name: 2 PAUSE (scheduled workflows off, running runs finish)
+        if: ${{ inputs.confirm == 'RESTART' }}
+        run: |
+          set -uo pipefail
+          gh api "repos/$R/actions/workflows" --paginate --jq '.workflows[] | select(.state=="active") | .path' \
+            | grep -v 'kpc-history-restart.yml' > /tmp/active.txt
+          : > /tmp/paused.txt
+          while read -r p; do
+            n=$(basename "$p"); [ -f ".github/workflows/$n" ] || continue
+            grep -q 'schedule:' ".github/workflows/$n" || continue
+            gh api -X PUT "repos/$R/actions/workflows/$n/disable" >/dev/null && echo "$n" >> /tmp/paused.txt
+          done < /tmp/active.txt
+          echo "::notice title=History restart::paused $(wc -l < /tmp/paused.txt) scheduled workflows"
+          for i in $(seq 1 40); do
+            n=$(gh api "repos/$R/actions/runs?status=in_progress&per_page=50" --jq "[.workflow_runs[] | select(.id != ${{ github.run_id }})] | length")
+            q=$(gh api "repos/$R/actions/runs?status=queued&per_page=50" --jq '.workflow_runs | length')
+            [ "$n" = 0 ] && [ "$q" = 0 ] && break
+            sleep 60
+          done
+          for id in $(gh api "repos/$R/actions/runs?status=in_progress&per_page=50" --jq ".workflow_runs[] | select(.id != ${{ github.run_id }}) | .id") \
+                    $(gh api "repos/$R/actions/runs?status=queued&per_page=50" --jq '.workflow_runs[].id'); do
+            gh api -X POST "repos/$R/actions/runs/$id/cancel" >/dev/null || true; echo "cancelled $id"
+          done
+          cp /tmp/paused.txt "$RUNNER_TEMP/paused.txt"
+      - name: 3a SQUASH THE SIDE BRANCHES (each = one commit of its files today; BRANCH FIRST rule 'orphan, squashable')
+        if: ${{ inputs.confirm == 'RESTART' }}
+        run: |
+          set -uo pipefail
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch -q origin '+refs/heads/*:refs/remotes/origin/*'
+          for b in tools-out intake-files picture-maps lookup fers-storage missing-lists engine-registry gps-packs tracer-draft trial-outside-ky; do
+            git rev-parse -q --verify "origin/$b" >/dev/null || continue
+            n=$(git rev-list --count "origin/$b"); [ "$n" -le 1 ] && continue
+            OLD=$(git rev-parse "origin/$b")
+            NEW=$(git commit-tree "$OLD^{tree}" -m "$b squashed $(date -u +%F) (storage step 2; the older commits are in the release ${{ steps.b.outputs.tag }})")
+            if git push -q --force-with-lease="$b:$OLD" origin "$NEW:refs/heads/$b"; then echo "::notice title=History restart::$b: $n commits -> 1"; else echo "::warning title=History restart::$b not squashed (push refused)"; fi
+          done
+      - name: 3 RESTART (main = one fresh commit; old-history branches / tags deleted)
+        if: ${{ inputs.confirm == 'RESTART' }}
+        id: r
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch -q origin main
+          OLD=$(git rev-parse origin/main)
+          git checkout -q --orphan fresh "$OLD"
+          git commit -q -m "KPC-Data history restart $(date -u +%F) (storage step 2). Every older commit is in the release ${{ steps.b.outputs.tag }}.
+
+          Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+          Claude-Session: https://claude.ai/code/session_018yRfNVt4rbEJUSLp3ViuS3"
+          [ "$(git rev-parse HEAD^{tree})" = "$(git rev-parse $OLD^{tree})" ] || { echo '::error title=History restart::tree differs: stopped'; exit 1; }
+          git push -q --force-with-lease=main:$OLD origin HEAD:main
+          echo "::notice title=History restart::main is now one commit ($(git rev-parse --short HEAD)), same files as $OLD"
+          for b in $(git for-each-ref --format='%(refname:strip=3)' refs/remotes/origin | grep -v '^HEAD$\|^main$'); do
+            if git merge-base --is-ancestor "$(git rev-list --max-parents=0 $OLD | tail -1)" "origin/$b" 2>/dev/null; then
+              git push -q origin --delete "$b" && echo "::notice title=History restart::branch $b shared the old history: deleted (it is in the bundle)"
+            fi
+          done
+          for t in $(git tag -l); do
+            if git merge-base --is-ancestor "$(git rev-list --max-parents=0 $OLD | tail -1)" "$t" 2>/dev/null; then
+              git push -q origin --delete "refs/tags/$t" && echo "::notice title=History restart::tag $t shared the old history: deleted (it is in the bundle)"
+            fi
+          done
+      - name: 4 RESUME (workflows back on, two proving runs)
+        if: ${{ always() && inputs.confirm == 'RESTART' }}
+        run: |
+          f="$RUNNER_TEMP/paused.txt"; [ -f "$f" ] || f=/tmp/paused.txt
+          n=0; while read -r w; do [ -n "$w" ] && gh api -X PUT "repos/$R/actions/workflows/$w/enable" >/dev/null && n=$((n+1)); done < "$f"
+          echo "::notice title=History restart::$n workflows switched back on"
+          gh api -X POST "repos/$R/actions/workflows/kpc-waiting-room.yml/dispatches" -f ref=main || true
+          gh api -X POST "repos/$R/actions/workflows/kpc-collector.yml/dispatches" -f ref=main || true
+          echo "::notice title=History restart::repo size now (GitHub recounts within a day): $(gh api repos/$R --jq .size) KB"

@@ -1,0 +1,61 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -91.90040637111673,
+       34.76972541800069
+      ],
+      [
+       -91.90055657483174,
+       34.76248504966738
+      ],
+      [
+       -91.91524493188139,
+       34.76266408606279
+      ],
+      [
+       -91.9152556639805,
+       34.764015625653904
+      ],
+      [
+       -91.91508635402722,
+       34.77005105262825
+      ],
+      [
+       -91.90040637111673,
+       34.76972541800069
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "ref": "US-12753",
+    "name": "Joe Hogan State Conservation Area",
+    "grade": "approximate (agency parcels)",
+    "owner": "ARKANSAS GAME & FISH COMMISSN",
+    "parcel_ids": [
+     "001-05752-000",
+     "001-05754-000"
+    ],
+    "n_parcels": 2,
+    "acres": 269.83,
+    "source_url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Planning_Cadastre/FeatureServer/6/query",
+    "read_date": "2026-10-31",
+    "layer_url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Planning_Cadastre/FeatureServer/6",
+    "pin_dist_m": 0.0,
+    "known_acres": null,
+    "known_acres_source": "no official size: not in the official acres list and no round-14 figure",
+    "size_ratio": null,
+    "acres_check": null,
+    "utm_epsg": 32615,
+    "excluded_other_park": []
+   }
+  }
+ ]
+}

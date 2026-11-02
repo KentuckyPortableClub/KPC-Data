@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ct",
+ "states": [
+  "US-CT"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 21:11 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 43,
+  "DROPPED": 202,
+  "NEVER LOOKED AT": 524
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 940,
+   "pairs whose boxes touch": 940
+  },
+  "pass2": {
+   "agree with the pass before": 112,
+   "date": "2026-11-01",
+   "pairs tested": 68
+  },
+  "pass3": {
+   "agree with the pass before": 74,
+   "date": "2026-11-01",
+   "pairs tested": 66
+  },
+  "pass5": {
+   "checked": 28,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-CT": "data/fers/US-CT.json"
+ },
+ "US-CT": {
+  "rows": 120,
+  "live": 46,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 44,
+  "merged": 29
+ },
+ "states_ready": [
+  "US-CT"
+ ],
+ "states_held": []
+}

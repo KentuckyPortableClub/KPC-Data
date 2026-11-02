@@ -1,0 +1,1297 @@
+{
+ "area": "US-CO",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-CO.json",
+ "rows": {
+  "US-0033+US-4405@area@37.868,-105.565": {
+   "id": "US-0033+US-4405@area@37.868,-105.565",
+   "area": "US-CO",
+   "refs": [
+    "US-0033",
+    "US-4405"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.8,
+   "stored_wide_m": 55,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:01Z",
+   "layers": [
+    {
+     "ref": "US-0033",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:54:01Z"
+    },
+    {
+     "ref": "US-4405",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.67,
+   "live_acres": 4.02,
+   "kept_pct": 98.8,
+   "size_pct": -14.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 50.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.0 ac vs 4.7 ac stored (-14%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.874823,
+    -105.562821
+   ]
+  },
+  "US-0033+US-4407@area@37.698,-105.480": {
+   "id": "US-0033+US-4407@area@37.698,-105.480",
+   "area": "US-CO",
+   "refs": [
+    "US-0033",
+    "US-4407"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.9,
+   "stored_wide_m": 55,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:04Z",
+   "layers": [
+    {
+     "ref": "US-0033",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:54:05Z"
+    },
+    {
+     "ref": "US-4407",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.43,
+   "live_acres": 4.4,
+   "kept_pct": 98.6,
+   "size_pct": 81.1,
+   "moved_m": 1640,
+   "gap_m": 0,
+   "wide_m": 13.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 81% bigger (4.4 ac vs 2.4 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    37.717892,
+    -105.459821
+   ]
+  },
+  "US-0033+US-8295@same land@37.806,-105.615": {
+   "id": "US-0033+US-8295@same land@37.806,-105.615",
+   "area": "US-CO",
+   "refs": [
+    "US-0033",
+    "US-8295"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:07Z",
+   "layers": [
+    {
+     "ref": "US-0033",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:54:08Z"
+    },
+    {
+     "ref": "US-8295",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:54:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 107602.01,
+   "live_acres": 127661.68,
+   "kept_pct": 97.5,
+   "size_pct": 18.6,
+   "moved_m": 4552,
+   "gap_m": 0,
+   "wide_m": 18199.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 127661.7 ac vs 107602.0 ac stored (+19%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.770638,
+    -105.589925
+   ]
+  },
+  "US-0059+US-4400+US-9591@area@40.162,-105.699": {
+   "id": "US-0059+US-4400+US-9591@area@40.162,-105.699",
+   "area": "US-CO",
+   "refs": [
+    "US-0059",
+    "US-4400",
+    "US-9591"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 29.9,
+   "stored_wide_m": 85,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:08Z",
+   "layers": [
+    {
+     "ref": "US-0059",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:09Z"
+    },
+    {
+     "ref": "US-4400",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:11Z"
+    },
+    {
+     "ref": "US-9591",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22.37,
+   "live_acres": 22.97,
+   "kept_pct": 100.0,
+   "size_pct": 2.6,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 82.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.0 ac vs 22.4 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.168585,
+    -105.715406
+   ]
+  },
+  "US-0059+US-4406+US-9591@area@40.190,-105.542": {
+   "id": "US-0059+US-4406+US-9591@area@40.190,-105.542",
+   "area": "US-CO",
+   "refs": [
+    "US-0059",
+    "US-4406",
+    "US-9591"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 5.4,
+   "stored_wide_m": 45,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:13Z",
+   "layers": [
+    {
+     "ref": "US-0059",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:13Z"
+    },
+    {
+     "ref": "US-4406",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:14Z"
+    },
+    {
+     "ref": "US-9591",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.91,
+   "live_acres": 2.99,
+   "kept_pct": 100.0,
+   "size_pct": 2.6,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 41.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 2.9 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.186419,
+    -105.549476
+   ]
+  },
+  "US-0059+US-4406@area@40.548,-105.715": {
+   "id": "US-0059+US-4406@area@40.548,-105.715",
+   "area": "US-CO",
+   "refs": [
+    "US-0059",
+    "US-4406"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 20.1,
+   "stored_wide_m": 127,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:15Z",
+   "layers": [
+    {
+     "ref": "US-0059",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:16Z"
+    },
+    {
+     "ref": "US-4406",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 16.99,
+   "live_acres": 17.61,
+   "kept_pct": 100.0,
+   "size_pct": 3.6,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 128.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.6 ac vs 17.0 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.550853,
+    -105.703374
+   ]
+  },
+  "US-0652+US-4402@area@38.520,-107.302": {
+   "id": "US-0652+US-4402@area@38.520,-107.302",
+   "area": "US-CO",
+   "refs": [
+    "US-0652",
+    "US-4402"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 559.0,
+   "stored_wide_m": 1165,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:18Z",
+   "layers": [
+    {
+     "ref": "US-0652",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:19Z"
+    },
+    {
+     "ref": "US-4402",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 10,
+   "stored_shape_acres": 558.07,
+   "live_acres": 557.45,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 1160.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 557.4 ac vs 558.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.520141,
+    -107.302622
+   ]
+  },
+  "US-10539+US-1236@same land@39.684,-107.698": {
+   "id": "US-10539+US-1236@same land@39.684,-107.698",
+   "area": "US-CO",
+   "refs": [
+    "US-10539",
+    "US-1236"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:21Z",
+   "layers": [
+    {
+     "ref": "US-10539",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:22Z"
+    },
+    {
+     "ref": "US-10539",
+     "layer": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:24Z"
+    },
+    {
+     "ref": "US-1236",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:54:25Z"
+    },
+    {
+     "ref": "US-1236",
+     "layer": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:27Z"
+    },
+    {
+     "ref": "US-1236",
+     "layer": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:28Z"
+    },
+    {
+     "ref": "US-1236",
+     "layer": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 547.49,
+   "live_acres": 546.94,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 1127,
+   "gap_m": 0,
+   "wide_m": 803.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 546.9 ac vs 547.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.694591,
+    -107.698992
+   ]
+  },
+  "US-11884+US-11952@area@38.687,-108.986": {
+   "id": "US-11884+US-11952@area@38.687,-108.986",
+   "area": "US-CO",
+   "refs": [
+    "US-11884",
+    "US-11952"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 34.0,
+   "stored_wide_m": 217,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:54:47Z",
+   "layers": [
+    {
+     "ref": "US-11884",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:54:48Z"
+    },
+    {
+     "ref": "US-11952",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:51Z"
+    },
+    {
+     "ref": "US-11952",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 33.05,
+   "live_acres": 32.91,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 219.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-11884: 1 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query: [29863] | US-11884: found by name 'The Palisade' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 32.9 ac vs 33.1 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    38.686709,
+    -108.985865
+   ]
+  },
+  "US-11902+US-4410@area@39.455,-106.290": {
+   "id": "US-11902+US-4410@area@39.455,-106.290",
+   "area": "US-CO",
+   "refs": [
+    "US-11902",
+    "US-4410"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 27474.2,
+   "stored_wide_m": 5145,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:54:54Z",
+   "layers": [
+    {
+     "ref": "US-11902",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:54Z"
+    },
+    {
+     "ref": "US-4410",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 21054.86,
+   "live_acres": 27338.41,
+   "kept_pct": 98.3,
+   "size_pct": -0.5,
+   "moved_m": 1566,
+   "gap_m": 0,
+   "wide_m": 7133.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 27338.4 ac vs 27474.2 ac stored (row acres; the stored shape is a 21054.9 ac preview) (-0%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.454791,
+    -106.290544
+   ]
+  },
+  "US-11916+US-11952@area@38.287,-108.881": {
+   "id": "US-11916+US-11952@area@38.287,-108.881",
+   "area": "US-CO",
+   "refs": [
+    "US-11916",
+    "US-11952"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 13372.5,
+   "stored_wide_m": 2274,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:54:56Z",
+   "layers": [
+    {
+     "ref": "US-11916",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:54:57Z"
+    },
+    {
+     "ref": "US-11916",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:54:59Z"
+    },
+    {
+     "ref": "US-11952",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:55:02Z"
+    },
+    {
+     "ref": "US-11952",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:55:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13543.86,
+   "live_acres": 13391.13,
+   "kept_pct": 96.1,
+   "size_pct": -1.1,
+   "moved_m": 7556,
+   "gap_m": 0,
+   "wide_m": 2214.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-11916: 2 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query: [29848, 29867] | US-11916: found by name 'Dolores River Canyon' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 13391.1 ac vs 13543.9 ac stored (-1%), 96% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    38.245437,
+    -108.948899
+   ]
+  },
+  "US-1214+US-4404@area@38.742,-104.868": {
+   "id": "US-1214+US-4404@area@38.742,-104.868",
+   "area": "US-CO",
+   "refs": [
+    "US-1214",
+    "US-4404"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 15.4,
+   "stored_wide_m": 35,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:03Z",
+   "layers": [
+    {
+     "ref": "US-1214",
+     "layer": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:03Z"
+    },
+    {
+     "ref": "US-1214",
+     "layer": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:04Z"
+    },
+    {
+     "ref": "US-1214",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:55:05Z"
+    },
+    {
+     "ref": "US-1214",
+     "layer": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:06Z"
+    },
+    {
+     "ref": "US-4404",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13.69,
+   "live_acres": 11.51,
+   "kept_pct": 100.0,
+   "size_pct": -15.9,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 28.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.5 ac vs 13.7 ac stored (-16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.75193,
+    -104.867773
+   ]
+  },
+  "US-1217+US-4404@area@38.938,-105.500": {
+   "id": "US-1217+US-4404@area@38.938,-105.500",
+   "area": "US-CO",
+   "refs": [
+    "US-1217",
+    "US-4404"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 10.1,
+   "stored_wide_m": 35,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:08Z",
+   "layers": [
+    {
+     "ref": "US-1217",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:09Z"
+    },
+    {
+     "ref": "US-1217",
+     "layer": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:10Z"
+    },
+    {
+     "ref": "US-1217",
+     "layer": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:12Z"
+    },
+    {
+     "ref": "US-1217",
+     "layer": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:12Z"
+    },
+    {
+     "ref": "US-4404",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.06,
+   "live_acres": 7.54,
+   "kept_pct": 100.0,
+   "size_pct": 6.9,
+   "moved_m": 425,
+   "gap_m": 0,
+   "wide_m": 31.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.5 ac vs 7.1 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.931425,
+    -105.500504
+   ]
+  },
+  "US-12173+US-4409@trail@38.481,-108.344": {
+   "id": "US-12173+US-4409@trail@38.481,-108.344",
+   "area": "US-CO",
+   "refs": [
+    "US-12173",
+    "US-4409"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 92.27,
+   "stored_wide_m": 79.9,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:55:14Z",
+   "layers": [
+    {
+     "ref": "US-12173",
+     "layer": "saved copy US-12173.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4409",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:15Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12173"
+   ],
+   "live_stretch_acres": 88.98,
+   "stored_shape_acres": 87.31,
+   "live_acres": 88.98,
+   "kept_pct": 100.0,
+   "size_pct": 1.9,
+   "moved_m": 869,
+   "gap_m": 0,
+   "wide_m": 75.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 89.0 ac vs 87.3 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.488392,
+    -108.339222
+   ]
+  },
+  "US-1247+US-4410@area@39.535,-106.725": {
+   "id": "US-1247+US-4410@area@39.535,-106.725",
+   "area": "US-CO",
+   "refs": [
+    "US-1247",
+    "US-4410"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.3,
+   "stored_wide_m": 95,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:16Z",
+   "layers": [
+    {
+     "ref": "US-1247",
+     "layer": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:16Z"
+    },
+    {
+     "ref": "US-1247",
+     "layer": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:17Z"
+    },
+    {
+     "ref": "US-1247",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T11:55:18Z"
+    },
+    {
+     "ref": "US-1247",
+     "layer": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:19Z"
+    },
+    {
+     "ref": "US-4410",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.02,
+   "live_acres": 4.61,
+   "kept_pct": 100.0,
+   "size_pct": 14.7,
+   "moved_m": 86,
+   "gap_m": 0,
+   "wide_m": 96.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.6 ac vs 4.0 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.535671,
+    -106.723738
+   ]
+  },
+  "US-4400+US-9591@area@40.119,-105.685": {
+   "id": "US-4400+US-9591@area@40.119,-105.685",
+   "area": "US-CO",
+   "refs": [
+    "US-4400",
+    "US-9591"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 33244.2,
+   "stored_wide_m": 8397,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:21Z",
+   "layers": [
+    {
+     "ref": "US-4400",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:21Z"
+    },
+    {
+     "ref": "US-9591",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 23942.1,
+   "live_acres": 34350.65,
+   "kept_pct": 100.0,
+   "size_pct": 3.3,
+   "moved_m": 211,
+   "gap_m": 0,
+   "wide_m": 8659.8,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 34350.7 ac vs 33244.2 ac stored (row acres; the stored shape is a 23942.1 ac preview) (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.119391,
+    -105.685396
+   ]
+  },
+  "US-4402+US-9592@area@38.069,-107.156": {
+   "id": "US-4402+US-9592@area@38.069,-107.156",
+   "area": "US-CO",
+   "refs": [
+    "US-4402",
+    "US-9592"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 14698.9,
+   "stored_wide_m": 6750,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:22Z",
+   "layers": [
+    {
+     "ref": "US-4402",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:22Z"
+    },
+    {
+     "ref": "US-9592",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:23Z"
+    },
+    {
+     "ref": "US-9592",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:55:24Z"
+    },
+    {
+     "ref": "US-9592",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:55:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 14749.6,
+   "live_acres": 14748.89,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 30,
+   "gap_m": 0,
+   "wide_m": 6817.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9592: 1 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query: [31102] | US-9592: 1 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query: [4351] | US-9592: found by name 'Powderhorn' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 14748.9 ac vs 14749.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    38.06846,
+    -107.155674
+   ]
+  },
+  "US-4405+US-8295@area@37.868,-105.565": {
+   "id": "US-4405+US-8295@area@37.868,-105.565",
+   "area": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-8295"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.8,
+   "stored_wide_m": 55,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:31Z",
+   "layers": [
+    {
+     "ref": "US-4405",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:03Z"
+    },
+    {
+     "ref": "US-8295",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:54:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.67,
+   "live_acres": 4.02,
+   "kept_pct": 98.8,
+   "size_pct": -14.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 50.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.0 ac vs 4.7 ac stored (-14%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.874823,
+    -105.562821
+   ]
+  },
+  "US-4405+US-9600@area@37.644,-105.541": {
+   "id": "US-4405+US-9600@area@37.644,-105.541",
+   "area": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-9600"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 21.9,
+   "stored_wide_m": 205,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:31Z",
+   "layers": [
+    {
+     "ref": "US-4405",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:32Z"
+    },
+    {
+     "ref": "US-9600",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:55:32Z"
+    },
+    {
+     "ref": "US-9600",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:55:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 20.29,
+   "live_acres": 20.16,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 172,
+   "gap_m": 0,
+   "wide_m": 203.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.2 ac vs 20.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.643811,
+    -105.53942
+   ]
+  },
+  "US-4406+US-9591@area@40.103,-105.605": {
+   "id": "US-4406+US-9591@area@40.103,-105.605",
+   "area": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9591"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17441.4,
+   "stored_wide_m": 4919,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:35Z",
+   "layers": [
+    {
+     "ref": "US-4406",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:35Z"
+    },
+    {
+     "ref": "US-9591",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 17010.23,
+   "live_acres": 17422.34,
+   "kept_pct": 99.2,
+   "size_pct": 2.4,
+   "moved_m": 71,
+   "gap_m": 0,
+   "wide_m": 4908.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17422.3 ac vs 17010.2 ac stored (+2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.104,
+    -105.604543
+   ]
+  },
+  "US-4407+US-8295@area@37.698,-105.480": {
+   "id": "US-4407+US-8295@area@37.698,-105.480",
+   "area": "US-CO",
+   "refs": [
+    "US-4407",
+    "US-8295"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.9,
+   "stored_wide_m": 55,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:36Z",
+   "layers": [
+    {
+     "ref": "US-4407",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:54:06Z"
+    },
+    {
+     "ref": "US-8295",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:54:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.43,
+   "live_acres": 4.4,
+   "kept_pct": 98.6,
+   "size_pct": 81.1,
+   "moved_m": 1640,
+   "gap_m": 0,
+   "wide_m": 13.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 81% bigger (4.4 ac vs 2.4 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    37.717892,
+    -105.459821
+   ]
+  },
+  "US-4407+US-9590@area@39.221,-106.432": {
+   "id": "US-4407+US-9590@area@39.221,-106.432",
+   "area": "US-CO",
+   "refs": [
+    "US-4407",
+    "US-9590"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2562.4,
+   "stored_wide_m": 1625,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:36Z",
+   "layers": [
+    {
+     "ref": "US-4407",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:37Z"
+    },
+    {
+     "ref": "US-9590",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:55:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2564.6,
+   "live_acres": 2562.09,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 360,
+   "gap_m": 0,
+   "wide_m": 1625.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2562.1 ac vs 2564.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.220728,
+    -106.412887
+   ]
+  },
+  "US-4408+US-4413@area@37.183,-107.311": {
+   "id": "US-4408+US-4413@area@37.183,-107.311",
+   "area": "US-CO",
+   "refs": [
+    "US-4408",
+    "US-4413"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4704.8,
+   "stored_wide_m": 2905,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:55:39Z",
+   "layers": [
+    {
+     "ref": "US-4408",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:40Z"
+    },
+    {
+     "ref": "US-4413",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:55:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3937.62,
+   "live_acres": 3941.5,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 2913.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3941.5 ac vs 3937.6 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.18281,
+    -107.310446
+   ]
+  }
+ },
+ "started": "2026-11-01T11:54:01Z",
+ "fers_sha256": "91a5de4ddce8bdcf9bd436108bc4e3f78e2b7b414cc6e4fd1e63cc2fefd26437",
+ "live_rows": 23,
+ "skipped_rows": 578,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:05:00Z",
+ "complete": true,
+ "summary": {
+  "rows": 23,
+  "verdicts": {
+   "CONFIRMED": 18,
+   "SHRUNK": 0,
+   "GREW": 2,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 3,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 5,
+   "trail line from the club saved copy (not re-read live)": 1
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json"
+ ],
+ "requests_this_run": 3
+}

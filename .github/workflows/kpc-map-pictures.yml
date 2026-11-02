@@ -1,0 +1,67 @@
+name: KPC map picture maker (KPC_9) - pictures for chat 11's open questions (tools-out)
+# Oct 31 2026 (chat 10; HQ 7:15 PM + Brandon 8:13 PM 'test it'): makes a picture for each open / NOT SURE question (candidate outline
+# + the park pin on the USGS topo / imagery base) so chat 11 can grade from a picture. Pictures on KPC-Data branch tools-out
+# (pictures/), deleted after 14 days. Never red.
+# Nov 2 (Brandon 4:40 AM GO 'Yes, add map pictures'): NIGHTLY. kpc_q_gate.py lists every NOT SURE row (any question file) +
+# the world finder's names-only LIKELY rows (parked 'map look'), most activated first; up to 300 pictures a night; each picture
+# sends its row BACK to chat 11 in data/waiting/questions/second-look.json with the picture's address (grade with the map).
+on:
+  schedule:
+    - cron: '23 7 * * *'
+  workflow_dispatch:
+    inputs:
+      answer:
+        description: 'Which rows: NOT SURE, open (blank answer), NO'
+        default: 'second-look'
+      limit:
+        description: 'How many (test = 20)'
+        default: '300'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-map-pictures
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /.github/scripts/kpc_push_data.sh
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pictures
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true
+          D=.github/scripts/draft/tools/KPC_9_map_pictures
+          pip install -q -r $D/requirements.txt
+          A="${{ inputs.answer || 'second-look' }}"; L="${{ inputs.limit || '300' }}"
+          if [ "$A" = second-look ]; then
+            python3 .github/scripts/kpc_q_gate.py gate || true
+            python3 .github/scripts/kpc_q_gate.py todo /tmp/pics-todo.json || true
+            python $D/kpc_map_pictures.py --questions /tmp/pics-todo.json --data data --limit $L --out ../out/pictures --resume --max-minutes 45 2>&1 | tail -8
+            python3 .github/scripts/kpc_q_gate.py second-look ../out/pictures https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/tools-out/pictures || true
+          else
+            python $D/kpc_map_pictures.py --questions data/waiting/questions/layers.json --answer "$A" --limit $L --out ../out/pictures --max-minutes 50 2>&1 | tail -15
+          fi
+          python $D/kpc_map_pictures.py --out ../out/pictures --clean-older-than 14 >/dev/null 2>&1 || true
+          N=$(ls ../out/pictures 2>/dev/null | grep -c -i '\.jpg\|\.png'); echo "::notice title=Map pictures::$N pictures on tools-out/pictures"
+          python3 .github/scripts/kpc_status.py board 'Map pictures (second look)' green "$(date -u +%F): $N pictures; rows back to chat 11 in questions/second-look.json" 'chat 11 grades second-look.json with the pictures' || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "second look: rows back to chat 11 with a map picture" data/waiting/questions data/status || true
+          cd ../out && git add -A pictures && git commit -qm "map pictures (run ${{ github.run_id }})" && git push -q origin tools-out || true
+          true

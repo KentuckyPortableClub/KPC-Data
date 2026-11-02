@@ -1,0 +1,54 @@
+name: KPC outside documents merge (into data/docs through the waiting room)
+# Oct 31 2026 (chat 10; HQ 4:10 PM + 4:55 PM, Brandon's outside research F + the map-page link extractor): every
+# data/intake/docs-found-*.json row is checked like the documents bot's own finds (opens, names the park, not shared, not a
+# sign / logo) and merged into data/docs; changed area files wait in data/waiting/in/ for chat 11. Runs straight through
+# (starts the next run itself while rows are left), then daily for new files and areas the documents bot has finished. Never red.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 6 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-docs-merge
+  cancel-in-progress: false
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Merge (held in the waiting room)
+        id: m
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          NET: '1'   # Nov 1 (chat 11): the waiting room's F-4 link re-test needs the network, else every docs file waits
+          MINUTES: '55'
+        run: |
+          cd kpcdata
+          pip install -q --break-system-packages pypdf openpyxl || pip install -q pypdf openpyxl || true
+          python3 .github/scripts/kpc_intake_reader.py docs || true   # HQ Oct 31 7:55 PM: the bot pulls its own files from branch intake-files
+          for chunk in 1 2 3 4 5; do   # Nov 1 storage fix (HQ 12:10 PM): up to 5 chunks in ONE job and ONE save (was a save + a new run per chunk: 562 commits a week)
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || true
+            python3 .github/scripts/kpc_docs_merge.py | tee /tmp/merge.txt || true
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || true
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
+          done
+          bash ../links/.github/scripts/kpc_push_data.sh . "outside documents merged (held in the waiting room)" data/docs data/intake/docs-merge-done.json data/intake/intake-seen.json data/waiting || true
+          echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
+      - name: Straight through
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          L="${{ steps.m.outputs.left }}"
+          if [ -n "$L" ] && [ "$L" != 0 ]; then gh workflow run kpc-docs-merge.yml -R ${{ github.repository }} --ref main || true; fi

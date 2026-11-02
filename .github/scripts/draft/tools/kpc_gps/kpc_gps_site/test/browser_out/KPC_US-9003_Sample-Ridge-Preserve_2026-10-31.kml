@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>KPC US-9003 Sample Ridge Preserve</name><open>1</open><description>ℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go.
+Data built: 2026-10-31
+Site: https://kentuckyportableclub.github.io/KPC-Links/</description>
+<Style id="pin"><IconStyle><color>ff00c000</color><scale>1.3</scale></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="parking"><IconStyle><color>ffff6600</color><scale>1.0</scale></IconStyle></Style>
+<Style id="entrance"><IconStyle><color>ffffffff</color><scale>1.0</scale></IconStyle></Style>
+<Style id="boat"><IconStyle><color>ffffff00</color><scale>1.0</scale></IconStyle></Style>
+<Style id="trailhead"><IconStyle><color>ff2f6b8b</color><scale>1.0</scale></IconStyle></Style>
+<Style id="other"><IconStyle><color>ffcccccc</color><scale>0.9</scale></IconStyle></Style>
+<Style id="nearby"><IconStyle><color>ff888888</color><scale>0.8</scale></IconStyle></Style>
+<Style id="pulloff"><IconStyle><color>ff0080ff</color><scale>0.8</scale></IconStyle></Style>
+<Style id="fer"><IconStyle><color>ffff00ff</color><scale>1.0</scale></IconStyle></Style>
+<Style id="official"><LineStyle><color>ff00ffff</color><width>3</width></LineStyle><PolyStyle><color>3300ffff</color><outline>1</outline></PolyStyle></Style>
+<Style id="approxfill"><LineStyle><color>0000ffff</color><width>0</width></LineStyle><PolyStyle><color>2200ffff</color><outline>0</outline></PolyStyle></Style>
+<Style id="dash"><LineStyle><color>ff00ffff</color><width>3</width></LineStyle></Style>
+<Style id="trail"><LineStyle><color>ff1e3cdc</color><width>3</width></LineStyle></Style>
+<Style id="route"><LineStyle><color>ffff00aa</color><width>2</width></LineStyle></Style>
+<Placemark><name>US-9003 Sample Ridge Preserve</name><description>US-9003 Sample Ridge Preserve. POTA pin (activations happen inside the boundary, not at the pin). No official outline yet.</description><styleUrl>#pin</styleUrl><Point><coordinates>-83.7,37.7</coordinates></Point></Placemark>
+<Folder><name>Parking</name><description>Official parking and access points from the club's access files. Grey points: Nearby public access, not the park's own.</description>
+<Placemark><name>Parking (from an official access list; check the agency’s map before you go)</name><description>Parking (from an official access list; check the agency’s map before you go). US-9003 Sample Ridge Preserve.</description><styleUrl>#parking</styleUrl><Point><coordinates>-83.702,37.701</coordinates></Point></Placemark>
+</Folder><Folder><name>Trails</name>
+</Folder><Folder><name>Outline</name>
+<Placemark><name>US-9003: No official outline yet</name><description>US-9003 Sample Ridge Preserve. No official outline yet. No outline is drawn.</description></Placemark>
+</Folder>
+</Document></kml>

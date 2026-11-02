@@ -1,0 +1,1781 @@
+{
+ "area": "CA-AB",
+ "run": "2026-10-31",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "CA-0663": {
+   "park": "Peace-Athabasca Delta Natural Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 491,
+     "record_name": "Wood Buffalo",
+     "acres_approx": 8874414,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22054,
+     "record_name": "Wood Buffalo National Park Of Canada",
+     "acres_approx": 8882921,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 42,
+     "record_name": "",
+     "acres_approx": 10973361,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-2938": {
+   "park": "Big Elbow Provincial Recreation Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 456,
+     "record_name": "Don Getty Wildland",
+     "acres_approx": 153352,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 18962,
+     "record_name": "Don Getty Wildland Provincial Park",
+     "acres_approx": 153337,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-2991": {
+   "park": "Crane Meadow Provincial Recreation Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "agency": "AB-PLUZ Gove",
+     "record": 36,
+     "record_name": "Sibbald Snow Vehicle",
+     "acres_approx": 23893,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: hit",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-3018": {
+   "park": "Eyrie Gap Provincial Recreation Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "agency": "AB-PLUZ Gove",
+     "record": 32,
+     "record_name": "The Kananaskis Country",
+     "acres_approx": 115344,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: hit",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-3076": {
+   "park": "McLean Pond Natural Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "agency": "AB-PLUZ Gove",
+     "record": 35,
+     "record_name": "McLean Creek Off-Highway Vehicle",
+     "acres_approx": 49571,
+     "tier": "LIKELY",
+     "why": "shared mclean; extra: park pond / record creek, highway, off, vehicle"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 87,
+     "record_name": "McLean Creek",
+     "acres_approx": 597,
+     "tier": "LIKELY",
+     "why": "shared mclean; extra: park pond / record creek"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: hit",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "CA-3157": {
+   "park": "Waterton-Glacier International Peace Park",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 433,
+     "record_name": "Waterton Lakes",
+     "acres_approx": 122332,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22053,
+     "record_name": "Waterton Lakes National Park Of Canada",
+     "acres_approx": 122351,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 41,
+     "record_name": "",
+     "acres_approx": 122338,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4771": {
+   "park": "Abbot Pass Refuge Cabin National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4775": {
+   "park": "Cave and Basin National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4776": {
+   "park": "First Oil Well in Western Canada National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 433,
+     "record_name": "Waterton Lakes",
+     "acres_approx": 122332,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22053,
+     "record_name": "Waterton Lakes National Park Of Canada",
+     "acres_approx": 122351,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 41,
+     "record_name": "",
+     "acres_approx": 122338,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4778": {
+   "park": "Howse Pass National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4781": {
+   "park": "Maligne Lake Chalet and Guest House National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 436,
+     "record_name": "Jasper",
+     "acres_approx": 2753259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22007,
+     "record_name": "Jasper National Park Of Canada",
+     "acres_approx": 2752605,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 16,
+     "record_name": "",
+     "acres_approx": 2756359,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4783": {
+   "park": "Skoki Ski Lodge National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4784": {
+   "park": "Sulphur Mountain Cosmic Ray Station National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4785": {
+   "park": "Yellowhead Pass National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 436,
+     "record_name": "Jasper",
+     "acres_approx": 2753259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22007,
+     "record_name": "Jasper National Park Of Canada",
+     "acres_approx": 2752605,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 16,
+     "record_name": "",
+     "acres_approx": 2756359,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-5377": {
+   "park": "Nordegg National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "agency": "AB-PLUZ Gove",
+     "record": 50,
+     "record_name": "Kiska/Willson",
+     "acres_approx": 200529,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: hit",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6073": {
+   "park": "Áísínai'pi National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 411,
+     "record_name": "Writing-on-Stone",
+     "acres_approx": 6546,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 18913,
+     "record_name": "Writing-on-Stone Provincial Park",
+     "acres_approx": 6546,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6101": {
+   "park": "Prince of Wales Hotel National Historic Site",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 433,
+     "record_name": "Waterton Lakes",
+     "acres_approx": 122332,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22053,
+     "record_name": "Waterton Lakes National Park Of Canada",
+     "acres_approx": 122351,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 41,
+     "record_name": "",
+     "acres_approx": 122338,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6116": {
+   "park": "Athabasca River National Heritage River National Heritage Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 436,
+     "record_name": "Jasper",
+     "acres_approx": 2753259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22007,
+     "record_name": "Jasper National Park Of Canada",
+     "acres_approx": 2752605,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 16,
+     "record_name": "",
+     "acres_approx": 2756359,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit",
+    "B ArcGIS Online search \"athabasca heritage\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6117": {
+   "park": "North Saskatchewan River National Heritage River National Heritage Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit",
+    "B ArcGIS Online search \"saskatchewan heritage north\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6126": {
+   "park": "Livingston Public Land Use Zone Recreation Park",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "agency": "AB-PLUZ Gove",
+     "record": 30,
+     "record_name": "Livingstone",
+     "acres_approx": 302055,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 302,055 ac far bigger than this kind of place"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: hit",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6588": {
+   "park": "Barrier Lake Provincial Recreation Area",
+   "area": "CA-AB",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 481,
+     "record_name": "Bow Valley",
+     "acres_approx": 7825,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 18861,
+     "record_name": "Bow Valley Provincial Park",
+     "acres_approx": 7825,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4772": {
+   "park": "Athabasca Pass National Historic Site",
+   "area": "CA-AB",
+   "why_not": "check",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 436,
+     "record_name": "Jasper",
+     "acres_approx": 2753259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22007,
+     "record_name": "Jasper National Park Of Canada",
+     "acres_approx": 2752605,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 16,
+     "record_name": "",
+     "acres_approx": 2756359,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6134": {
+   "park": "Athabasca Ranch Public Land Use Zone Recreation Park",
+   "area": "CA-AB",
+   "why_not": "check",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "agency": "AB-PLUZ Gove",
+     "record": 57,
+     "record_name": "Athabasca Ranch",
+     "acres_approx": 9886,
+     "tier": "LIKELY",
+     "why": "shared athabasca, ranch; extra: park zone / record -"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: hit",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "CA-1194": {
+   "park": "Sylvan Lake Provincial Park",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"sylvan\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-2969": {
+   "park": "Castle Falls Natural Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 467,
+     "record_name": "Castle",
+     "acres_approx": 62396,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 62,396 ac far bigger than this kind of place"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 18999,
+     "record_name": "Castle Provincial Park",
+     "acres_approx": 7768,
+     "tier": "UNLIKELY",
+     "why": "shared castle; extra: park fall / record -; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-2982": {
+   "park": "Chisholm Provincial Recreation Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "NTIR Chisholm and Western NHT Feasibility Study Routes",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NTIR_OTHER_ChisholmGreatWesternNHTFSEA_ln/FeatureServer",
+     "owner": "ntirres_nps",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"chisholm\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-3073": {
+   "park": "Mary Reimer Regional Park",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"reimer mary\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-3089": {
+   "park": "Nose Hill Park Natural Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"nose hill\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-3111": {
+   "park": "Prairie Coulees Natural Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 477,
+     "record_name": "Hargrave Coulees",
+     "acres_approx": 4478,
+     "tier": "LIKELY",
+     "why": "shared coulee; extra: park prairie / record hargrave"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 18838,
+     "record_name": "Hargrave Coulees Natural Area",
+     "acres_approx": 4100,
+     "tier": "UNLIKELY",
+     "why": "shared coulee; extra: park prairie / record hargrave; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "CA-3113": {
+   "park": "Gaetz Lakes Migratory (Red Deer Migratory) Bird Sanctuary",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"migratory sanctuary gaetz\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-3136": {
+   "park": "Fort Vermilion National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"vermilion fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4773": {
+   "park": "Banff Park Museum National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4774": {
+   "park": "Bar U Ranch National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"ranch bar\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4777": {
+   "park": "Frog Lake National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"frog\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4779": {
+   "park": "Jasper House National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 436,
+     "record_name": "Jasper",
+     "acres_approx": 2753259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22007,
+     "record_name": "Jasper National Park Of Canada",
+     "acres_approx": 2752605,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 16,
+     "record_name": "",
+     "acres_approx": 2756359,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4780": {
+   "park": "Jasper Park Information Centre National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 436,
+     "record_name": "Jasper",
+     "acres_approx": 2753259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22007,
+     "record_name": "Jasper National Park Of Canada",
+     "acres_approx": 2752605,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 16,
+     "record_name": "",
+     "acres_approx": 2756359,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-4782": {
+   "park": "Rocky Mountain House National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"mountain rocky house\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5082": {
+   "park": "The Trans Canada Trail National Scenic Trail",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"scenic canada trans\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5145": {
+   "park": "Maskepetoon Natural Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"maskepetoon\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5376": {
+   "park": "Beaver Hills Biosphere Reserve",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"biosphere beaver hills\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5491": {
+   "park": "Fort Vermilion Provincial Recreation Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"vermilion fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5933": {
+   "park": "Carburn Natural Area",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"carburn\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6074": {
+   "park": "Atlas No. 3 Coal Mine National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"atlas coal mine\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6075": {
+   "park": "Banff Springs Hotel National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "agency": "Alberta Park",
+     "record": 435,
+     "record_name": "Banff",
+     "acres_approx": 1681469,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21984,
+     "record_name": "Banff National Park Of Canada",
+     "acres_approx": 1681159,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 3,
+     "record_name": "",
+     "acres_approx": 1693702,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: hit",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "CA-6076": {
+   "park": "Beaulieu National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"beaulieu\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6077": {
+   "park": "Blackfoot Crossing National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"blackfoot crossing\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6078": {
+   "park": "British Block Cairn National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"british cairn block\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6079": {
+   "park": "Brooks Aqueduct National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"aqueduct brooks\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6081": {
+   "park": "Coleman National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"coleman\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6082": {
+   "park": "Earthlodge Village National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"earthlodge village\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6083": {
+   "park": "Fort Assiniboine National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"assiniboine fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6084": {
+   "park": "Fort Augustus and Fort Edmonton National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"edmonton augustus fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6085": {
+   "park": "Fort Calgary National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"calgary fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6086": {
+   "park": "Fort Chipewyan National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"chipewyan fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6087": {
+   "park": "Fort Dunvegan National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"dunvegan fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6093": {
+   "park": "Head-Smashed-In Buffalo Jump National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"buffalo smashed head\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6094": {
+   "park": "Okotoks Erratic - 'Big Rock' Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"erratic okotoks rock\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6118": {
+   "park": "Reader Rock Garden National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"garden reader rock\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6119": {
+   "park": "Central Memorial Library and Park National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "FWS R6 RWBJV Central Platte River Image Library 1938",
+     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1938/MapServer",
+     "owner": "roger_grosse@fws.gov_fws",
+     "type": "Map Service"
+    },
+    {
+     "title": "FWS R6 RWBJV Central Platte River Image Library 1957",
+     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1957/MapServer",
+     "owner": "roger_grosse@fws.gov_fws",
+     "type": "Map Service"
+    },
+    {
+     "title": "FWS R6 RWBJV Central Platte River Image Library 1969",
+     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1969/MapServer",
+     "owner": "roger_grosse@fws.gov_fws",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"library central\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-6120": {
+   "park": "Stirling Agricultural Village National Heritage Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"agricultural heritage stirling\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6121": {
+   "park": "Stephen Avenue National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"stephen avenue\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6122": {
+   "park": "Temple of the Church of Jesus Christ of Latter Day Saints National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"church temple latter\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6123": {
+   "park": "Heritage Hall - Southern Alberta Institute of Technology National Heritage Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"technology institute southern\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6124": {
+   "park": "Fort Whoop-Up National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"whoop fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6395": {
+   "park": "Turner Valley Gas Plant National Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"turner valley plant\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6396": {
+   "park": "Leitch Collieries Provincial Historic Site",
+   "area": "CA-AB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A AB-PLUZ Gove: no polygon at the pin",
+    "A Alberta Park: no polygon at the pin",
+    "A Alberta publ: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"collieries leitch\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

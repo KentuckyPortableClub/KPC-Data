@@ -1,0 +1,10 @@
+{
+ "about": "Where the hand-back export looks for the club's hours / fees workbooks (the docs-pagefix US file is keyed by the workbook's Parks-sheet row). Env vars KPC_HF_WORKBOOK_US / KPC_HF_WORKBOOK_CA win; then these file names in these folders (relative folders are from the engine folder; the --out folder and its parent are always tried). No workbook = the ref is written with a 'mapping needed' note.",
+ "workbook_names": {"US": ["hours-fees-us-nov1.xlsx", "KPC_hours_fees_closures_US.xlsx"],
+                    "CA": ["hours-fees-ca-nov1.xlsx", "KPC_hours_fees_closures_CANADA.xlsx"]},
+ "workbook_dirs": [".", "..", "../kpc/hfc", "/workspace/kpc/hfc"],
+ "sheet": "Parks",
+ "ref_column": "Park number",
+ "name_column": "Name",
+ "f_column": "Official park page (start here)"
+}

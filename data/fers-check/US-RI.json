@@ -1,0 +1,338 @@
+{
+ "area": "US-RI",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-RI.json",
+ "rows": {
+  "US-0515+US-7865@area@41.354,-71.650": {
+   "id": "US-0515+US-7865@area@41.354,-71.650",
+   "area": "US-RI",
+   "refs": [
+    "US-0515",
+    "US-7865"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.3,
+   "stored_wide_m": 75,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T03:55:14Z",
+   "layers": [
+    {
+     "ref": "US-0515",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:14Z"
+    },
+    {
+     "ref": "US-7865",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T03:55:16Z"
+    },
+    {
+     "ref": "US-7865",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:18Z"
+    },
+    {
+     "ref": "US-7865",
+     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:20Z"
+    },
+    {
+     "ref": "US-7865",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.08,
+   "live_acres": 4.01,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 73.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.0 ac vs 4.1 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.353906,
+    -71.65042
+   ]
+  },
+  "US-2869+US-7971@area@41.941,-71.440": {
+   "id": "US-2869+US-7971@area@41.941,-71.440",
+   "area": "US-RI",
+   "refs": [
+    "US-2869",
+    "US-7971"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 75.4,
+   "stored_wide_m": 277,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T03:55:23Z",
+   "layers": [
+    {
+     "ref": "US-2869",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T03:55:23Z"
+    },
+    {
+     "ref": "US-7971",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 14,
+   "stored_shape_acres": 72.67,
+   "live_acres": 72.48,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 269.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 72.5 ac vs 72.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.941278,
+    -71.439868
+   ]
+  },
+  "US-2878+US-5483@same land@41.898,-71.439": {
+   "id": "US-2878+US-5483@same land@41.898,-71.439",
+   "area": "US-RI",
+   "refs": [
+    "US-2878",
+    "US-5483"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T03:55:25Z",
+   "layers": [
+    {
+     "ref": "US-2878",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:26Z"
+    },
+    {
+     "ref": "US-2878",
+     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:27Z"
+    },
+    {
+     "ref": "US-2878",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:28Z"
+    },
+    {
+     "ref": "US-2878",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:29Z"
+    },
+    {
+     "ref": "US-5483",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 30.93,
+   "live_acres": 25.2,
+   "kept_pct": 85.9,
+   "size_pct": -18.5,
+   "moved_m": 104,
+   "gap_m": 0,
+   "wide_m": 211.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 25.2 ac vs 30.9 ac stored (-18%), 86% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.898926,
+    -71.439779
+   ]
+  },
+  "US-2869+US-7971@area@channel@41.940,-71.440": {
+   "id": "US-2869+US-7971@area@channel@41.940,-71.440",
+   "area": "US-RI",
+   "refs": [
+    "US-2869",
+    "US-7971"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 10.3,
+   "stored_wide_m": 43.9,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T03:55:32Z",
+   "layers": [
+    {
+     "ref": "US-2869",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T03:55:23Z"
+    },
+    {
+     "ref": "US-7971",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:24Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 4,
+     "read": "2026-11-01T03:55:33Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 34,
+     "read": "2026-11-01T03:55:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 9.4,
+   "stored_shape_acres": 3.38,
+   "live_acres": 3.56,
+   "kept_pct": 100.0,
+   "size_pct": 5.2,
+   "moved_m": 1457,
+   "gap_m": 0,
+   "wide_m": 34.4,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.6 ac vs 3.4 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.928564,
+    -71.431709
+   ]
+  }
+ },
+ "started": "2026-11-01T03:55:14Z",
+ "fers_sha256": "016e21aba6d8517f77a84b6ebd29f701e28161e1beeb3ec3ea385a85b5c57916",
+ "live_rows": 4,
+ "skipped_rows": 7,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:42Z",
+ "complete": true,
+ "summary": {
+  "rows": 4,
+  "verdicts": {
+   "CONFIRMED": 4,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "water-only": 1,
+   "small overlap (under 50 yd across)": 1
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json",
+  "data/us-key/US-OR.json",
+  "data/us-key/US-PA.json",
+  "data/us-key/US-RI.json"
+ ],
+ "requests_this_run": 1030
+}

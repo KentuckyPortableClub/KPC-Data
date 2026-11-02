@@ -1,0 +1,1717 @@
+{
+ "area": "US-OK",
+ "run": "2026-11-02",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0491": {
+   "park": "Tishomingo National Wildlife Refuge",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1587,
+     "record_name": "Chickasaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 4742859,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4755510,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tishomingo\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-10258": {
+   "park": "Ouachita National Recreation Trail",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3000,
+     "record_name": "Ouachita National Forest",
+     "acres_approx": 1424127,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1430575,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-10658": {
+   "park": "Lake Carl Blackwell Wildlife Management Area",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237726,
+     "record_name": "CLO Lands",
+     "acres_approx": 3220772,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3238968,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"blackwell carl\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-10951": {
+   "park": "Cherokee Strip Regional Heritage Center Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"heritage cherokee center\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11018": {
+   "park": "Osage National Heritage State Trail",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 863,
+     "record_name": "Osage Reservation",
+     "acres_approx": 1468527,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1474579,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11182": {
+   "park": "James A Manning State Fish Hatchery",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1595,
+     "record_name": "Kiowa-Comanche-Apache-Fort Sill Apache Oklahoma Tribal Statistical Area",
+     "acres_approx": 4106743,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4114577,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery manning james\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11222": {
+   "park": "Stinchcomb Wildlife Refuge",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 116910,
+     "record_name": "Stinchcomb Wildlife Refuge",
+     "acres_approx": 926,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LCA",
+     "Own_Type": "LOC",
+     "GIS_Acres": 965,
+     "tier": "SURE",
+     "why": "same proper name (refuge wildlife)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: SURE (same proper name)"
+  },
+  "US-11245": {
+   "park": "Byron State Fish Hatchery",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery byron\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11640": {
+   "park": "Scipio Trail and Recreation Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1588,
+     "record_name": "Choctaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 6972335,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 6985246,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"scipio\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11669": {
+   "park": "Cedar Lake National Recreation Area",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "agency": "Oklahoma Department of Wildlife Conservation (ODOT GIS)",
+     "record": 227,
+     "record_name": "Ouachita Wildlife Management Area -  LeFlore Unit",
+     "acres_approx": 206477,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "agency": "ODWC (owner ODWC_GIS)",
+     "record": 77,
+     "record_name": "Ouachita - LeFlore",
+     "acres_approx": 222878,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1588,
+     "record_name": "Choctaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 6972335,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 6985246,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3001,
+     "record_name": "Ouachita National Forest",
+     "acres_approx": 351903,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 353440,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [
+    {
+     "title": "Yellow-Cedar Decline 1986 to 2024 - Cumulative",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/CDL_1980sto2024_Union_FM/FeatureServer",
+     "owner": "ForestHealthAlaskaRegion",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Cedar Park Ball Fields",
+     "url": "https://gis.cedarparktexas.gov/mapping/rest/services/VIEW/BallFields/MapServer",
+     "owner": "chris.martinez_CedarPark",
+     "type": "Map Service"
+    },
+    {
+     "title": "Cedar Park Civil Boundaries",
+     "url": "https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer",
+     "owner": "chris.martinez_CedarPark",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: hit",
+    "A ODWC (owner ODWC_GIS): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"cedar\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11670": {
+   "park": "Spring Creek Recreation Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "agency": "Oklahoma Department of Wildlife Conservation (ODOT GIS)",
+     "record": 113,
+     "record_name": "Black Kettle Wildlife Management Area",
+     "acres_approx": 29307,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "agency": "ODWC (owner ODWC_GIS)",
+     "record": 9,
+     "record_name": "Black Kettle",
+     "acres_approx": 30105,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1586,
+     "record_name": "Cheyenne and Arapaho Oklahoma Tribal Statistical Area",
+     "acres_approx": 5225773,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 5232757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2758,
+     "record_name": "Black Kettle National Grassland",
+     "acres_approx": 30407,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NG",
+     "Own_Type": "FED",
+     "GIS_Acres": 30688,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: hit",
+    "A ODWC (owner ODWC_GIS): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"spring\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11671": {
+   "park": "Black Kettle Recreation Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "agency": "Oklahoma Department of Wildlife Conservation (ODOT GIS)",
+     "record": 113,
+     "record_name": "Black Kettle Wildlife Management Area",
+     "acres_approx": 29307,
+     "tier": "LIKELY",
+     "why": "same name, but 3 parks share this record (sectors of one park, or a container)"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "agency": "ODWC (owner ODWC_GIS)",
+     "record": 9,
+     "record_name": "Black Kettle",
+     "acres_approx": 30105,
+     "tier": "LIKELY",
+     "why": "same name, but 3 parks share this record (sectors of one park, or a container)"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1586,
+     "record_name": "Cheyenne and Arapaho Oklahoma Tribal Statistical Area",
+     "acres_approx": 5225773,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 5232757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2758,
+     "record_name": "Black Kettle National Grassland",
+     "acres_approx": 30407,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NG",
+     "Own_Type": "FED",
+     "GIS_Acres": 30688,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: hit",
+    "A ODWC (owner ODWC_GIS): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-11768": {
+   "park": "Arcadia Round Barn National Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"arcadia round barn\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11769": {
+   "park": "Ozark Trail Obelisk Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1604,
+     "record_name": "Sac and Fox Oklahoma Tribal Statistical Area",
+     "acres_approx": 479637,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 481004,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"obelisk ozark\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11778": {
+   "park": "Fort Sill National Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 312,
+     "record_name": "Fort Sill",
+     "acres_approx": 93239,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 93725,
+     "tier": "LIKELY",
+     "why": "same name, record 93,239 ac looks big for this kind of place"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1595,
+     "record_name": "Kiowa-Comanche-Apache-Fort Sill Apache Oklahoma Tribal Statistical Area",
+     "acres_approx": 4106743,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4114577,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-11820": {
+   "park": "Miller Brothers 101 Ranch Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1602,
+     "record_name": "Ponca Oklahoma Tribal Statistical Area",
+     "acres_approx": 106496,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 106848,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"brothers miller ranch\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11837": {
+   "park": "Smallest National Park Historic Site",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"smallest\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11842": {
+   "park": "Fred and Addie Drummond State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 863,
+     "record_name": "Osage Reservation",
+     "acres_approx": 1468527,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1474579,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"drummond addie fred\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-11864": {
+   "park": "Cherokee Hills Scenic Byway Scenic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237726,
+     "record_name": "CLO Lands",
+     "acres_approx": 3220772,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3238968,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12154": {
+   "park": "Standing Bear State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1610,
+     "record_name": "Kaw/Ponca joint-use Oklahoma Tribal Statistical Area",
+     "acres_approx": 70264,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 70680,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"standing bear\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12352": {
+   "park": "Selman Wildlife Management Area",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"selman\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12735": {
+   "park": "Saline Courthouse State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"courthouse saline\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12738": {
+   "park": "Little Niagara Falls National Nature Reserve",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1587,
+     "record_name": "Chickasaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 4742859,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4755510,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3496,
+     "record_name": "Chickasaw National Recreation Area",
+     "acres_approx": 9646,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 9678,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"niagara little falls\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12739": {
+   "park": "Skipout Lake Recreation Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "agency": "Oklahoma Department of Wildlife Conservation (ODOT GIS)",
+     "record": 113,
+     "record_name": "Black Kettle Wildlife Management Area",
+     "acres_approx": 29307,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "agency": "ODWC (owner ODWC_GIS)",
+     "record": 9,
+     "record_name": "Black Kettle",
+     "acres_approx": 30105,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1586,
+     "record_name": "Cheyenne and Arapaho Oklahoma Tribal Statistical Area",
+     "acres_approx": 5225773,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 5232757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2758,
+     "record_name": "Black Kettle National Grassland",
+     "acres_approx": 30407,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NG",
+     "Own_Type": "FED",
+     "GIS_Acres": 30688,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237726,
+     "record_name": "CLO Lands",
+     "acres_approx": 3220772,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3238968,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: hit",
+    "A ODWC (owner ODWC_GIS): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"skipout\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-13077": {
+   "park": "Southern Plaines Indian Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1612,
+     "record_name": "Kiowa-Comanche-Apache-Ft Sill Apache/Caddo-Wichita-Delaware joint-use Oklahoma Tribal Statistical Area",
+     "acres_approx": 123245,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 123811,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"southern plaines indian\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-13105": {
+   "park": "Field Station State Fishing Lake",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237726,
+     "record_name": "CLO Lands",
+     "acres_approx": 3220772,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3238968,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"station fishing field\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-2805": {
+   "park": "Spavinaw State Park",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"spavinaw\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-4579": {
+   "park": "Santa Fe National Historic Trail",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 107480,
+     "record_name": "Minor Park",
+     "acres_approx": 255,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 267,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"santa\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-6335": {
+   "park": "Cabin Creek Battlefield State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"battlefield cabin\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-6336": {
+   "park": "Honey Springs Battlefield State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1590,
+     "record_name": "Creek Oklahoma Tribal Statistical Area",
+     "acres_approx": 3055659,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 3062681,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"battlefield springs honey\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-6337": {
+   "park": "Fort Towson State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1588,
+     "record_name": "Choctaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 6972335,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 6985246,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"towson fort\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-6342": {
+   "park": "Camp Gruber Wildlife Management Area",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 109,
+     "record_name": "National Guard Camp Gruber",
+     "acres_approx": 33332,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 33482,
+     "tier": "LIKELY",
+     "why": "shared gruber; extra: park - / record guard"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-8115": {
+   "park": "Oklahoma City National Memorial",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"oklahoma\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8119": {
+   "park": "Doc Hollis State Fishing Lake",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "agency": "ODWC (owner ODWC_GIS)",
+     "record": 87,
+     "record_name": "Sandy Sanders",
+     "acres_approx": 36430,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1595,
+     "record_name": "Kiowa-Comanche-Apache-Fort Sill Apache Oklahoma Tribal Statistical Area",
+     "acres_approx": 4106743,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4114577,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"fishing hollis doc\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8128": {
+   "park": "Lloyd Vincent State Fishing Lake",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "agency": "Oklahoma Department of Wildlife Conservation (ODOT GIS)",
+     "record": 65,
+     "record_name": "Ellis County Wildlife Management Area",
+     "acres_approx": 4720,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "agency": "ODWC (owner ODWC_GIS)",
+     "record": 23,
+     "record_name": "Ellis County",
+     "acres_approx": 4720,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1586,
+     "record_name": "Cheyenne and Arapaho Oklahoma Tribal Statistical Area",
+     "acres_approx": 5225773,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 5232757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: hit",
+    "A ODWC (owner ODWC_GIS): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"vincent fishing lloyd\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8134": {
+   "park": "Sardis State Fishing Lake",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1588,
+     "record_name": "Choctaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 6972335,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 6985246,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"fishing sardis\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8142": {
+   "park": "Fort Washita National Historical Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1587,
+     "record_name": "Chickasaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 4742859,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4755510,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"historical washita fort\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8143": {
+   "park": "Boggy Depot National Historical Site",
+   "area": "US-OK",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1588,
+     "record_name": "Choctaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 6972335,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 6985246,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237726,
+     "record_name": "CLO Lands",
+     "acres_approx": 3220772,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3238968,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"historical boggy depot\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8272": {
+   "park": "Holdenville State Fish Hatchery",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1590,
+     "record_name": "Creek Oklahoma Tribal Statistical Area",
+     "acres_approx": 3055659,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 3062681,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"holdenville hatchery\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8321": {
+   "park": "Talimena Scenic Byway State Trail",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3000,
+     "record_name": "Ouachita National Forest",
+     "acres_approx": 1424127,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1430575,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"talimena scenic byway\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8639": {
+   "park": "Birch State Fishing Lake",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 863,
+     "record_name": "Osage Reservation",
+     "acres_approx": 1468527,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1474579,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"fishing birch\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8641": {
+   "park": "Cherokee Strip Museum State Historic Site",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"cherokee museum strip\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8642": {
+   "park": "Museum of the Western Prairie State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1595,
+     "record_name": "Kiowa-Comanche-Apache-Fort Sill Apache Oklahoma Tribal Statistical Area",
+     "acres_approx": 4106743,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4114577,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"western prairie museum\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8643": {
+   "park": "Oklahoma History Center State Historic Site",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"oklahoma history center\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8644": {
+   "park": "Oklahoma Route 66 Museum State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1586,
+     "record_name": "Cheyenne and Arapaho Oklahoma Tribal Statistical Area",
+     "acres_approx": 5225773,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 5232757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8645": {
+   "park": "Oklahoma Territorial Museum State Historic Site",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"territorial oklahoma museum\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8646": {
+   "park": "Pioneer Woman Museum State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1610,
+     "record_name": "Kaw/Ponca joint-use Oklahoma Tribal Statistical Area",
+     "acres_approx": 70264,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 70680,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237726,
+     "record_name": "CLO Lands",
+     "acres_approx": 3220772,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3238968,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pioneer museum woman\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8647": {
+   "park": "Sod House Museum State Historic Site",
+   "area": "US-OK",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"museum house sod\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8648": {
+   "park": "Spiro Mounds Archaeological Center State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1588,
+     "record_name": "Choctaw Oklahoma Tribal Statistical Area",
+     "acres_approx": 6972335,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 6985246,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8649": {
+   "park": "Tom Mix Museum State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8650": {
+   "park": "White Hair Memorial State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 863,
+     "record_name": "Osage Reservation",
+     "acres_approx": 1468527,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1474579,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8651": {
+   "park": "Will Rogers State Historic Site",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1585,
+     "record_name": "Cherokee Oklahoma Tribal Statistical Area",
+     "acres_approx": 4453467,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4456467,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-9757": {
+   "park": "Butterfield Overland National Historic Trail",
+   "area": "US-OK",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3450,
+     "record_name": "Guadalupe Mountains National Park",
+     "acres_approx": 86306,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NP",
+     "Own_Type": "FED",
+     "GIS_Acres": 86840,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oklahoma State Parks (ODOT GIS): no polygon at the pin",
+    "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
+    "A ODWC (owner ODWC_GIS): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "links": [
+  {
+   "ref": "K4TEST-1",
+   "name": "Elk Lake State Park",
+   "url": "https://parks.fake.gov/files/Elk_Lake_Map.pdf",
+   "kind": "map",
+   "page": "https://parks.fake.gov/parks/elk-lake"
+  },
+  {
+   "ref": "K4TEST-2",
+   "name": "Bear Creek State Forest",
+   "url": "https://parks.fake.gov/files/Bear_Creek_Map_2019_v2.pdf",
+   "kind": "map"
+  },
+  {
+   "ref": "K4TEST-3",
+   "name": "Owl Hollow Nature Preserve",
+   "url": "https://parks.fake.gov/files/Owl_Map.pdf",
+   "kind": "map",
+   "page": "https://parks.fake.gov/parks/owl-hollow"
+  },
+  {
+   "ref": "K4TEST-4",
+   "name": "Pine Ridge Natural Area",
+   "url": "https://parks.fake.gov/maps/old/Pine_Ridge.pdf",
+   "kind": "map"
+  },
+  {
+   "ref": "K4TEST-5",
+   "name": "Some Trail",
+   "url": "https://www.alltrails.com/trail/us/x/some-trail",
+   "kind": "map"
+  },
+  {
+   "ref": "K4TEST-6",
+   "name": "Elk Lake State Park",
+   "url": "https://parks.fake.gov/files/Elk_Lake_Brochure.pdf",
+   "kind": "map",
+   "page": "https://parks.fake.gov/parks/elk-lake"
+  }
+ ],
+ "web": {
+  "https://parks.fake.gov/media/2025/Elk_Lake_Map.pdf": {
+   "pdf_text": "Elk Lake State Park - Trail Map"
+  },
+  "https://parks.fake.gov/docs/bear-creek-map-2024.pdf": {
+   "pdf_text": "Bear Creek State Forest visitor map 2024"
+  },
+  "https://parks.fake.gov/x/Owl_Map.pdf": {
+   "pdf_text": "Fox Hollow Preserve map"
+  },
+  "https://parks.fake.gov/parks/owl-hollow": {
+   "body": "<html><title>Owl Hollow</title><h1>Owl Hollow Nature Preserve</h1><a href='/x/Owl_Map.pdf'>Owl map</a></html>"
+  },
+  "https://parks.fake.gov/parks/elk-lake": {
+   "body": "<html><title>Elk Lake</title><h1>Elk Lake State Park</h1><a href='/media/elk-lake-brochure-web.pdf'>Elk Lake brochure</a><a href='/media/2025/Elk_Lake_Map.pdf'>Elk Lake map</a></html>"
+  },
+  "https://parks.fake.gov/media/elk-lake-brochure-web.pdf": {
+   "pdf_text": "Welcome to Elk Lake State Park brochure"
+  },
+  "https://parks.fake.gov/maps/": {
+   "body": "<html><h1>Maps</h1><a href='/maps/pine-ridge-natural-area.pdf'>Pine Ridge Natural Area map</a> <a href='https://web.archive.org/web/2019/https://parks.fake.gov/maps/old/Pine_Ridge.pdf'>Pine Ridge (old copy)</a></html>"
+  },
+  "https://parks.fake.gov/maps/pine-ridge-natural-area.pdf": {
+   "pdf_text": "PINE RIDGE NATURAL AREA boundary map"
+  }
+ },
+ "t3_sitemap": {
+  "host": "parks.fake.gov",
+  "read_date": "2026-10-31",
+  "n_urls": 4,
+  "maps": [
+   {
+    "url": "https://parks.fake.gov/media/2025/Elk_Lake_Map.pdf",
+    "lastmod": null,
+    "refs": [],
+    "words": "elk lake map"
+   },
+   {
+    "url": "https://parks.fake.gov/docs/bear-creek-map-2024.pdf",
+    "lastmod": null,
+    "refs": [],
+    "words": ""
+   },
+   {
+    "url": "https://parks.fake.gov/x/Owl_Map.pdf",
+    "lastmod": null,
+    "refs": [],
+    "words": ""
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://parks.fake.gov/parks/elk-lake",
+    "lastmod": null
+   }
+  ]
+ }
+}

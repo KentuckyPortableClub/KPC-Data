@@ -1,0 +1,2143 @@
+{
+ "about": "Campground info bot: facts from the agency that runs each campground, every fact with its source line. Gathers facts, decides nothing. Maps and park info are a planning aid, not a guarantee: always check the official agency page and rules before you go.",
+ "area": "US-CT",
+ "camps": {
+  "233330": {
+   "agency": "USACE",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.06667&y=41.51333&units=Feet&wkid=4326",
+    "value": 365
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.51333,
+   "list": "campfed",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.06667,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Hop Brook Lake Recreation Area",
+   "official_page": "https://www.recreation.gov/camping/campgrounds/233330",
+   "park": "",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "needs RIDB_API_KEY secret in KPC-Data",
+   "ver": 8
+  },
+  "233476": {
+   "agency": "USACE",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-71.89909&y=41.95562&units=Feet&wkid=4326",
+    "value": 381
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.95562,
+   "list": "campfed",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -71.89909,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "West Thompson Lake Campground",
+   "official_page": "https://www.recreation.gov/camping/campgrounds/233476",
+   "park": "",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "needs RIDB_API_KEY secret in KPC-Data",
+   "ver": 8
+  },
+  "US-1649": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.0988&y=41.6542&units=Feet&wkid=4326",
+    "value": 370
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.6542,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.0988,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Black Rock State Park",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1649",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1662:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.34271&y=41.48492&units=Feet&wkid=4326",
+    "value": 248
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.48492,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.34271,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Devil's Hopyard campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1662",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1681:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-71.91246&y=41.60688&units=Feet&wkid=4326",
+    "value": 223
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.60688,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -71.91246,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Hopeville Pond campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1681",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1682": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.3812&y=41.8397&units=Feet&wkid=4326",
+    "value": 524
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.8397,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.3812,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Housatonic Meadows State Park",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1682",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1687:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.2016&y=41.43172&units=Feet&wkid=4326",
+    "value": 267
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.43172,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.2016,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Kettletown campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1687",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1689:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.3811&y=41.7045&units=Feet&wkid=4326",
+    "value": 716
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.7045,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.3811,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Lake Waramaug campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1689",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1692:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.49497&y=41.76595&units=Feet&wkid=4326",
+    "value": 698
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.76595,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.49497,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Macedonia Brook campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1692",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1695:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-71.99275&y=41.8594&units=Feet&wkid=4326",
+    "value": 511
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.8594,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -71.99275,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Mashamoquet Brook Campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1695",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1695:hq1": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-71.97057&y=41.85131&units=Feet&wkid=4326",
+    "value": 342
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.85131,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -71.97057,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Wolf Den Campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1695",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-1711:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.24565&y=41.31643&units=Feet&wkid=4326",
+    "value": 12
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.31643,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.24565,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Rocky Neck campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1711",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-6857": {
+   "agency": "state",
+   "booking": {
+    "how": "online: connecticutstateparks.reserveamerica.com",
+    "url": "https://connecticutstateparks.reserveamerica.com/unifSearchResults.do"
+   },
+   "browser_checked": "2026-11-01",
+   "campground_page": {
+    "read": "own section",
+    "status": "ok",
+    "url": "https://portal.ct.gov/deep/state-parks/camping/camping---ct-state-parks-and-forests"
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.003&y=41.935&units=Feet&wkid=4326",
+    "value": 451
+   },
+   "facts_src": {
+    "booking.how": {
+     "date": "2026-11-01",
+     "line": "link “Visit Reserve America”",
+     "url": "https://portal.ct.gov/deep/state-parks/camping/camping---ct-state-parks-and-forests"
+    },
+    "booking.url": {
+     "date": "2026-11-01",
+     "line": "link “Visit Reserve America” -> https://connecticutstateparks.reserveamerica.com/unifSearchResults.do",
+     "url": "https://portal.ct.gov/deep/state-parks/camping/camping---ct-state-parks-and-forests"
+    },
+    "map.date_how": {
+     "date": "2026-11-01",
+     "line": "link “Camping Index Map”",
+     "url": "https://portal.ct.gov/deep/state-parks/camping/camping---ct-state-parks-and-forests"
+    },
+    "map.url": {
+     "date": "2026-11-01",
+     "line": "link “Camping Index Map” -> https://portal.ct.gov/-/media/deep/stateparks/maps/backpacking/backpackcampingindexpdf.pdf?rev=67a4b",
+     "url": "https://portal.ct.gov/deep/state-parks/camping/camping---ct-state-parks-and-forests"
+    }
+   },
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.935,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.003,
+   "map": {
+    "date_how": "PDF, no date in the link",
+    "url": "https://portal.ct.gov/-/media/deep/stateparks/maps/backpacking/backpackcampingindexpdf.pdf?rev=67a4b1d11bf648f2b3719f638687733a&amp;hash=4391A320FD627C78E16173C2FD05225C"
+   },
+   "name": "American Legion State Forest",
+   "needs_browser": true,
+   "official_page": "https://portal.ct.gov/deep/state-parks",
+   "park": "US-6857",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "ok, no campground facts even in a browser",
+   "ver": 8
+  },
+  "US-6869": {
+   "agency": "state",
+   "booking": {
+    "how": "online: portal.ct.gov",
+    "url": "https://portal.ct.gov/DEEP/State-Parks/Camping/Campground-Reservation-Service---CT-State-Parks-and-Forests"
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.9981&y=41.9252&units=Feet&wkid=4326",
+    "value": 442
+   },
+   "facts_src": {
+    "booking.url": {
+     "date": "2026-11-01",
+     "line": "booking link from our campstate-manual row (official system portal.ct.gov)",
+     "url": "https://portal.ct.gov/DEEP/State-Parks/Camping/Campground-Reservation-Service---CT-State-Parks-and-Forests"
+    }
+   },
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.9252,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.9981,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Peoples State Forest",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-6869",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-6872:hq0": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.08978&y=41.64463&units=Feet&wkid=4326",
+    "value": 256
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.64463,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.08978,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Salt Rock State Forest Campground",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-6872",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-7537": {
+   "agency": "state",
+   "booking": {
+    "how": "online: portal.ct.gov",
+    "url": "https://portal.ct.gov/DEEP/State-Parks/Camping/Campground-Reservation-Service---CT-State-Parks-and-Forests"
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.0713&y=41.8395&units=Feet&wkid=4326",
+    "value": 610
+   },
+   "facts_src": {
+    "booking.url": {
+     "date": "2026-11-01",
+     "line": "booking link from our campstate-manual row (official system portal.ct.gov)",
+     "url": "https://portal.ct.gov/DEEP/State-Parks/Camping/Campground-Reservation-Service---CT-State-Parks-and-Forests"
+    }
+   },
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.8395,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.0713,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Natchaug State Forest",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-7537",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "US-7548": {
+   "agency": "state",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-71.8754&y=41.596&units=Feet&wkid=4326",
+    "value": 308
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.596,
+   "list": "campstate-manual",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -71.8754,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Pachaug State Forest",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-7548",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-12092": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.2022&y=41.9652&units=Feet&wkid=4326",
+    "value": 1122
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.9652,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.2022,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Nipmuck State Forest camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-12092",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1648": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.1322&y=41.9918&units=Feet&wkid=4326",
+    "value": 648
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.9918,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.1322,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Nipmuck State Forest camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1648",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1669": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.4367&y=41.7199&units=Feet&wkid=4326",
+    "value": 596
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.7199,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.4367,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Gay City State Park youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1669",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1672": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.4271&y=41.4234&units=Feet&wkid=4326",
+    "value": 170
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.4234,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.4271,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Gillette Castle State Park camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1672",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1683": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.5412&y=41.5217&units=Feet&wkid=4326",
+    "value": 282
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.5217,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.5412,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Hurd State Park camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1683",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1699": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.2897&y=41.8442&units=Feet&wkid=4326",
+    "value": 1407
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.8442,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.2897,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Mohawk State Park/Forest camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1699",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1707": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-73.3815&y=41.3387&units=Feet&wkid=4326",
+    "value": 629
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.3387,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -73.3815,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Putnam Memorial State Park youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1707",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1708": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-71.8121&y=41.9558&units=Feet&wkid=4326",
+    "value": 442
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.9558,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -71.8121,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Quaddick State Park youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1708",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1710": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.6353&y=41.618&units=Feet&wkid=4326",
+    "value": 90
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.618,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.6353,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "River Highlands State Park camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1710",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1714": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.411&y=41.3994&units=Feet&wkid=4326",
+    "value": 160
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.3994,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.411,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Selden Neck State Park camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1714",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-1717": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.8992&y=41.421&units=Feet&wkid=4326",
+    "value": 116
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.421,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.8992,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Sleeping Giant State Park camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-1717",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-6863": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.082&y=41.775&units=Feet&wkid=4326",
+    "value": 621
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.775,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.082,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "James L. Goodwin State Forest youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-6863",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-6867": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.3075&y=41.8819&units=Feet&wkid=4326",
+    "value": 372
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.8819,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.3075,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Nye-Holman State Forest youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-6867",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-7531": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.5251&y=41.4459&units=Feet&wkid=4326",
+    "value": 395
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.4459,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.5251,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Cockaponset State Forest youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-7531",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  },
+  "intake-US-7538": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": null,
+    "url": null
+   },
+   "cell": null,
+   "checked": "2026-11-01",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-72.95&y=41.4675&units=Feet&wkid=4326",
+    "value": 574
+   },
+   "facts_src": {},
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 41.4675,
+   "list": "outside research (camping, in the park)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -72.95,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Naugatuck State Forest youth group camping",
+   "official_page": "https://ctparks.com/camping",
+   "park": "US-7538",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "page not on an official host: ctparks.com",
+   "ver": 8
+  }
+ },
+ "cell_status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+ "counts": {
+  "camps": 32,
+  "needs_browser": 0,
+  "needs_key": 2,
+  "no_page": 0,
+  "not_official": 29,
+  "ok": 0,
+  "other": 1,
+  "resting": 0,
+  "robots": 0,
+  "with_booking": 3,
+  "with_elevation": 32,
+  "with_sites": 0
+ },
+ "merged": 0,
+ "read": "2026-11-01"
+}

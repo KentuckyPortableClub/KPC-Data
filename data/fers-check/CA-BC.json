@@ -1,0 +1,2689 @@
+{
+ "area": "CA-BC",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/CA-BC.json",
+ "rows": {
+  "CA-0001+CA-3539@area@49.103,-123.179": {
+   "id": "CA-0001+CA-3539@area@49.103,-123.179",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0001",
+    "CA-3539"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 354.3,
+   "stored_wide_m": 888,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:15:36Z",
+   "layers": [
+    {
+     "ref": "CA-0001",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:15:37Z"
+    },
+    {
+     "ref": "CA-3539",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:15:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 342.81,
+   "live_acres": 351.94,
+   "kept_pct": 100.0,
+   "size_pct": 2.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 893.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 351.9 ac vs 342.8 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.099183,
+    -123.179795
+   ]
+  },
+  "CA-0018+CA-3362@area@50.929,-116.401": {
+   "id": "CA-0018+CA-3362@area@50.929,-116.401",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0018",
+    "CA-3362"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23.5,
+   "stored_wide_m": 225,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:15:40Z",
+   "layers": [
+    {
+     "ref": "CA-0018",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:15:41Z"
+    },
+    {
+     "ref": "CA-3362",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 13,
+   "stored_shape_acres": 21.56,
+   "live_acres": 21.06,
+   "kept_pct": 99.8,
+   "size_pct": -2.3,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 225.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21.1 ac vs 21.6 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.939182,
+    -116.406628
+   ]
+  },
+  "CA-0045+CA-3829@area@51.066,-115.850": {
+   "id": "CA-0045+CA-3829@area@51.066,-115.850",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0045",
+    "CA-3829"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8.2,
+   "stored_wide_m": 51,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:15:47Z",
+   "layers": [
+    {
+     "ref": "CA-0045",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:48Z"
+    },
+    {
+     "ref": "CA-3829",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.29,
+   "live_acres": 6.78,
+   "kept_pct": 100.0,
+   "size_pct": -7.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 49.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.8 ac vs 7.3 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    51.073558,
+    -115.854211
+   ]
+  },
+  "CA-0066+CA-5344@trail@48.577,-124.417": {
+   "id": "CA-0066+CA-5344@trail@48.577,-124.417",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0066",
+    "CA-5344"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 8.91,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:15:51Z",
+   "layers": [
+    {
+     "ref": "CA-0066",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:15:52Z"
+    },
+    {
+     "ref": "CA-5344",
+     "layer": "saved copy CA-5344.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-5344"
+   ],
+   "live_stretch_acres": 601.6,
+   "stored_shape_acres": 8.04,
+   "live_acres": 9.44,
+   "kept_pct": 100.0,
+   "size_pct": 17.4,
+   "moved_m": 16840,
+   "gap_m": 0,
+   "wide_m": 79.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.4 ac vs 8.0 ac stored (+17%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    48.663562,
+    -124.812527
+   ]
+  },
+  "CA-0105+CA-4253@area@49.299,-119.530": {
+   "id": "CA-0105+CA-4253@area@49.299,-119.530",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0105",
+    "CA-4253"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.6,
+   "stored_wide_m": 69,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:15:53Z",
+   "layers": [
+    {
+     "ref": "CA-0105",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:54Z"
+    },
+    {
+     "ref": "CA-4253",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.87,
+   "live_acres": 9.58,
+   "kept_pct": 100.0,
+   "size_pct": -9.7,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 67.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.6 ac vs 10.6 ac stored (row acres; the stored shape is a 4.9 ac preview) (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.298976,
+    -119.529878
+   ]
+  },
+  "CA-0105+CA-4254@area@49.299,-119.530": {
+   "id": "CA-0105+CA-4254@area@49.299,-119.530",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0105",
+    "CA-4254"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.6,
+   "stored_wide_m": 69,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:15:57Z",
+   "layers": [
+    {
+     "ref": "CA-0105",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:54Z"
+    },
+    {
+     "ref": "CA-4254",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.87,
+   "live_acres": 9.58,
+   "kept_pct": 100.0,
+   "size_pct": -9.7,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 67.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.6 ac vs 10.6 ac stored (row acres; the stored shape is a 4.9 ac preview) (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.298976,
+    -119.529878
+   ]
+  },
+  "CA-0697+CA-4080@area@51.094,-118.888": {
+   "id": "CA-0697+CA-4080@area@51.094,-118.888",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0697",
+    "CA-4080"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 48.8,
+   "stored_wide_m": 215,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:15:57Z",
+   "layers": [
+    {
+     "ref": "CA-0697",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:15:58Z"
+    },
+    {
+     "ref": "CA-4080",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:16:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 47.34,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4080: key record BC recreatio:331807 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-0711+CA-4065@area@50.698,-128.381": {
+   "id": "CA-0711+CA-4065@area@50.698,-128.381",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0711",
+    "CA-4065"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 7230.2,
+   "stored_wide_m": 1928,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:16:01Z",
+   "layers": [
+    {
+     "ref": "CA-0711",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:02Z"
+    },
+    {
+     "ref": "CA-4065",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3185.22,
+   "live_acres": 7125.6,
+   "kept_pct": 99.8,
+   "size_pct": -1.4,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1947.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7125.6 ac vs 7230.2 ac stored (row acres; the stored shape is a 3185.2 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.787386,
+    -128.407307
+   ]
+  },
+  "CA-0748+CA-4282@same land@53.352,-120.577": {
+   "id": "CA-0748+CA-4282@same land@53.352,-120.577",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0748",
+    "CA-4282"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:05Z",
+   "layers": [
+    {
+     "ref": "CA-0748",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:06Z"
+    },
+    {
+     "ref": "CA-4282",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 48596.12,
+   "live_acres": 62038.16,
+   "kept_pct": 99.7,
+   "size_pct": 27.7,
+   "moved_m": 2438,
+   "gap_m": 0,
+   "wide_m": 10080.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0748: key record BC recreatio:1159546 names a layer prefix not in us-key/layers.json | CA-4282: key record BC recreatio:1159546 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 28% bigger (62038.2 ac vs 48596.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    53.3405,
+    -120.545698
+   ]
+  },
+  "CA-0750+CA-3543@area@49.013,-115.650": {
+   "id": "CA-0750+CA-3543@area@49.013,-115.650",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0750",
+    "CA-3543"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 133.2,
+   "stored_wide_m": 587,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:16:07Z",
+   "layers": [
+    {
+     "ref": "CA-0750",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:16:08Z"
+    },
+    {
+     "ref": "CA-3543",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 132.03,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0750: key record BC recreatio:1007826 names a layer prefix not in us-key/layers.json | CA-0750: key record BC recreatio:1510813 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-3193+CA-3194@area@54.560,-125.710": {
+   "id": "CA-3193+CA-3194@area@54.560,-125.710",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3193",
+    "CA-3194"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 447.2,
+   "stored_wide_m": 1056,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:11Z",
+   "layers": [
+    {
+     "ref": "CA-3193",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:12Z"
+    },
+    {
+     "ref": "CA-3194",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 22,
+   "stored_shape_acres": 441.54,
+   "live_acres": 441.72,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 1063.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 441.7 ac vs 441.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    54.562763,
+    -125.709793
+   ]
+  },
+  "CA-3209+CA-4044@area@48.771,-123.401": {
+   "id": "CA-3209+CA-4044@area@48.771,-123.401",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3209",
+    "CA-4044"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 39.9,
+   "stored_wide_m": 395,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:13Z",
+   "layers": [
+    {
+     "ref": "CA-3209",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:14Z"
+    },
+    {
+     "ref": "CA-4044",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 39.3,
+   "live_acres": 0.07,
+   "kept_pct": 3.3,
+   "size_pct": -99.8,
+   "moved_m": 286,
+   "gap_m": 0,
+   "wide_m": 1.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4044: key record BC-HP Govern:6121205 names a layer prefix not in us-key/layers.json (geometry now: MOVED: live overlap centre is 286 m from the stored centre; 3% of the stored overlap is still inside it)",
+   "live_center": [
+    48.77244,
+    -123.399733
+   ]
+  },
+  "CA-3228+CA-4214@area@50.720,-120.500": {
+   "id": "CA-3228+CA-4214@area@50.720,-120.500",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3228",
+    "CA-4214"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 647.5,
+   "stored_wide_m": 1145,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:17Z",
+   "layers": [
+    {
+     "ref": "CA-3228",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:18Z"
+    },
+    {
+     "ref": "CA-4214",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 39,
+   "stored_shape_acres": 645.25,
+   "live_acres": 645.35,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 1152.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 645.3 ac vs 645.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.717152,
+    -120.509307
+   ]
+  },
+  "CA-3250+CA-3251@same land@49.489,-124.704": {
+   "id": "CA-3250+CA-3251@same land@49.489,-124.704",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3250",
+    "CA-3251"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:21Z",
+   "layers": [
+    {
+     "ref": "CA-3250",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:22Z"
+    },
+    {
+     "ref": "CA-3251",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 15.92,
+   "live_acres": 348.06,
+   "kept_pct": 96.9,
+   "size_pct": 2085.9,
+   "moved_m": 704,
+   "gap_m": 0,
+   "wide_m": 816.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3250: key record BC local and:3560404 names a layer prefix not in us-key/layers.json | CA-3251: key record BC local and:3560404 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 2086% bigger (348.1 ac vs 15.9 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    49.482706,
+    -124.705083
+   ]
+  },
+  "CA-3261+CA-3262@same land@49.819,-119.185": {
+   "id": "CA-3261+CA-3262@same land@49.819,-119.185",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3261",
+    "CA-3262"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:16:23Z",
+   "layers": [
+    {
+     "ref": "CA-3261",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:24Z"
+    },
+    {
+     "ref": "CA-3262",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 165.55,
+   "live_acres": 106.64,
+   "kept_pct": 65.1,
+   "size_pct": -35.6,
+   "moved_m": 529,
+   "gap_m": 0,
+   "wide_m": 380.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3262: key record BC recreatio:954230 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: live overlap is 36% smaller (106.6 ac vs 165.5 ac stored))",
+   "live_center": [
+    49.823718,
+    -119.188172
+   ]
+  },
+  "CA-3263+CA-3264@same land@50.715,-126.639": {
+   "id": "CA-3263+CA-3264@same land@50.715,-126.639",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3263",
+    "CA-3264"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:16:27Z",
+   "layers": [
+    {
+     "ref": "CA-3263",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:28Z"
+    },
+    {
+     "ref": "CA-3264",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:16:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 28530.81,
+   "live_acres": 29573.35,
+   "kept_pct": 84.5,
+   "size_pct": 3.7,
+   "moved_m": 5725,
+   "gap_m": 0,
+   "wide_m": 2870.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29573.3 ac vs 28530.8 ac stored (+4%), 85% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.697854,
+    -126.715605
+   ]
+  },
+  "CA-3303+CA-3615@area@52.774,-127.728": {
+   "id": "CA-3303+CA-3615@area@52.774,-127.728",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3303",
+    "CA-3615"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 2.8,
+   "stored_wide_m": 79,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:16:31Z",
+   "layers": [
+    {
+     "ref": "CA-3303",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:32Z"
+    },
+    {
+     "ref": "CA-3615",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.47,
+   "live_acres": 2.42,
+   "kept_pct": 100.0,
+   "size_pct": -2.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 81.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.5 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    52.774925,
+    -127.730023
+   ]
+  },
+  "CA-3320+CA-3321@same land@51.219,-121.484": {
+   "id": "CA-3320+CA-3321@same land@51.219,-121.484",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3320",
+    "CA-3321"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:35Z",
+   "layers": [
+    {
+     "ref": "CA-3320",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:36Z"
+    },
+    {
+     "ref": "CA-3321",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.6,
+   "live_acres": 351.12,
+   "kept_pct": 86.9,
+   "size_pct": 3558.3,
+   "moved_m": 569,
+   "gap_m": 0,
+   "wide_m": 770.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 3558% bigger (351.1 ac vs 9.6 ac stored); 87% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    51.215318,
+    -121.47881
+   ]
+  },
+  "CA-3347+CA-4241@area@50.474,-123.616": {
+   "id": "CA-3347+CA-4241@area@50.474,-123.616",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3347",
+    "CA-4241"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 37.6,
+   "stored_wide_m": 39,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:39Z",
+   "layers": [
+    {
+     "ref": "CA-3347",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:40Z"
+    },
+    {
+     "ref": "CA-4241",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 23.86,
+   "live_acres": 20.37,
+   "kept_pct": 100.0,
+   "size_pct": -14.6,
+   "moved_m": 52,
+   "gap_m": 0,
+   "wide_m": 35.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.4 ac vs 23.9 ac stored (-15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.393579,
+    -123.588934
+   ]
+  },
+  "CA-3348+CA-3349@same land@54.058,-121.020": {
+   "id": "CA-3348+CA-3349@same land@54.058,-121.020",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3348",
+    "CA-3349"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:43Z",
+   "layers": [
+    {
+     "ref": "CA-3348",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:44Z"
+    },
+    {
+     "ref": "CA-3349",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 499.54,
+   "live_acres": 1659.96,
+   "kept_pct": 97.8,
+   "size_pct": 232.3,
+   "moved_m": 672,
+   "gap_m": 0,
+   "wide_m": 1707.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 232% bigger (1660.0 ac vs 499.5 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    54.060496,
+    -121.02927
+   ]
+  },
+  "CA-3410+CA-3411@same land@49.578,-124.827": {
+   "id": "CA-3410+CA-3411@same land@49.578,-124.827",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3410",
+    "CA-3411"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:45Z",
+   "layers": [
+    {
+     "ref": "CA-3410",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:46Z"
+    },
+    {
+     "ref": "CA-3411",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 166.9,
+   "live_acres": 752.45,
+   "kept_pct": 88.2,
+   "size_pct": 350.9,
+   "moved_m": 948,
+   "gap_m": 0,
+   "wide_m": 1522.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3410: key record BC local and:3560439 names a layer prefix not in us-key/layers.json | CA-3410: key record BC local and:3560472 names a layer prefix not in us-key/layers.json | CA-3411: key record BC local and:3560439 names a layer prefix not in us-key/layers.json | CA-3411: key record BC local and:3560472 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 351% bigger (752.5 ac vs 166.9 ac stored); 88% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    49.570545,
+    -124.822275
+   ]
+  },
+  "CA-3439+CA-3440@same land@58.063,-125.714": {
+   "id": "CA-3439+CA-3440@same land@58.063,-125.714",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3439",
+    "CA-3440"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:47Z",
+   "layers": [
+    {
+     "ref": "CA-3439",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:48Z"
+    },
+    {
+     "ref": "CA-3440",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 39467.03,
+   "live_acres": 132283.53,
+   "kept_pct": 97.1,
+   "size_pct": 235.2,
+   "moved_m": 7306,
+   "gap_m": 0,
+   "wide_m": 16542.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 235% bigger (132283.5 ac vs 39467.0 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    58.126817,
+    -125.681725
+   ]
+  },
+  "CA-3465+CA-3466@same land@50.027,-125.299": {
+   "id": "CA-3465+CA-3466@same land@50.027,-125.299",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3465",
+    "CA-3466"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:49Z",
+   "layers": [
+    {
+     "ref": "CA-3465",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:50Z"
+    },
+    {
+     "ref": "CA-3466",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.98,
+   "live_acres": 1.85,
+   "kept_pct": 100.0,
+   "size_pct": 87.6,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 68.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 88% bigger (1.8 ac vs 1.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    50.027064,
+    -125.298399
+   ]
+  },
+  "CA-3495+CA-3496@same land@54.335,-129.296": {
+   "id": "CA-3495+CA-3496@same land@54.335,-129.296",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3495",
+    "CA-3496"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:16:51Z",
+   "layers": [
+    {
+     "ref": "CA-3495",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:52Z"
+    },
+    {
+     "ref": "CA-3496",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 28.6,
+   "live_acres": 948.58,
+   "kept_pct": 100.0,
+   "size_pct": 3216.3,
+   "moved_m": 565,
+   "gap_m": 0,
+   "wide_m": 1798.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 3216% bigger (948.6 ac vs 28.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    54.338897,
+    -129.301573
+   ]
+  },
+  "CA-3504+CA-3505@same land@50.129,-119.504": {
+   "id": "CA-3504+CA-3505@same land@50.129,-119.504",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3504",
+    "CA-3505"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:16:53Z",
+   "layers": [
+    {
+     "ref": "CA-3504",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:54Z"
+    },
+    {
+     "ref": "CA-3505",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.98,
+   "live_acres": 0.97,
+   "kept_pct": 97.6,
+   "size_pct": -1.4,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 49.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.0 ac vs 1.0 ac stored (-1%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.129279,
+    -119.503345
+   ]
+  },
+  "CA-3506+CA-3615@area@52.889,-127.870": {
+   "id": "CA-3506+CA-3615@area@52.889,-127.870",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3506",
+    "CA-3615"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 161.2,
+   "stored_wide_m": 651,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:16:55Z",
+   "layers": [
+    {
+     "ref": "CA-3506",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:16:56Z"
+    },
+    {
+     "ref": "CA-3615",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 160.76,
+   "live_acres": 160.32,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 647.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 160.3 ac vs 160.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    52.891581,
+    -127.857806
+   ]
+  },
+  "CA-3522+CA-3523@same land@49.608,-124.058": {
+   "id": "CA-3522+CA-3523@same land@49.608,-124.058",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3522",
+    "CA-3523"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:16:58Z",
+   "layers": [
+    {
+     "ref": "CA-3522",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T11:16:59Z"
+    },
+    {
+     "ref": "CA-3523",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 62.54,
+   "live_acres": 208.08,
+   "kept_pct": 98.6,
+   "size_pct": 232.7,
+   "moved_m": 45,
+   "gap_m": 0,
+   "wide_m": 468.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 233% bigger (208.1 ac vs 62.5 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    49.607373,
+    -124.058024
+   ]
+  },
+  "CA-3524+CA-3525@same land@53.983,-125.167": {
+   "id": "CA-3524+CA-3525@same land@53.983,-125.167",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3524",
+    "CA-3525"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:02Z",
+   "layers": [
+    {
+     "ref": "CA-3524",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:03Z"
+    },
+    {
+     "ref": "CA-3525",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11981.67,
+   "live_acres": 16630.6,
+   "kept_pct": 97.3,
+   "size_pct": 38.8,
+   "moved_m": 9882,
+   "gap_m": 0,
+   "wide_m": 3329.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3524: key record BC recreatio:241344 names a layer prefix not in us-key/layers.json | CA-3525: key record BC recreatio:241344 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 39% bigger (16630.6 ac vs 11981.7 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    53.981715,
+    -125.317144
+   ]
+  },
+  "CA-3539+CA-4026@area@49.098,-123.198": {
+   "id": "CA-3539+CA-4026@area@49.098,-123.198",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3539",
+    "CA-4026"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 565.1,
+   "stored_wide_m": 1107,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:04Z",
+   "layers": [
+    {
+     "ref": "CA-3539",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:05Z"
+    },
+    {
+     "ref": "CA-4026",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 564.24,
+   "live_acres": 563.75,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1113.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 563.7 ac vs 564.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.097711,
+    -123.19487
+   ]
+  },
+  "CA-3542+CA-3543@area@49.013,-115.650": {
+   "id": "CA-3542+CA-3543@area@49.013,-115.650",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3542",
+    "CA-3543"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 133.2,
+   "stored_wide_m": 587,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:17:07Z",
+   "layers": [
+    {
+     "ref": "CA-3542",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:17:08Z"
+    },
+    {
+     "ref": "CA-3543",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:16:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 132.03,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3542: key record BC recreatio:1510813 names a layer prefix not in us-key/layers.json | CA-3542: key record BC recreatio:1662737 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-3615+CA-4243@area@53.087,-127.442": {
+   "id": "CA-3615+CA-4243@area@53.087,-127.442",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3615",
+    "CA-4243"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 1.3,
+   "stored_wide_m": 31,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:09Z",
+   "layers": [
+    {
+     "ref": "CA-3615",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:10Z"
+    },
+    {
+     "ref": "CA-4243",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.06,
+   "live_acres": 0.96,
+   "kept_pct": 100.0,
+   "size_pct": -9.1,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 26.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.0 ac vs 1.1 ac stored (-9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    53.12248,
+    -127.445651
+   ]
+  },
+  "CA-3615+CA-4243@area@53.142,-127.463": {
+   "id": "CA-3615+CA-4243@area@53.142,-127.463",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3615",
+    "CA-4243"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.5,
+   "stored_wide_m": 23,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:12Z",
+   "layers": [
+    {
+     "ref": "CA-3615",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:13Z"
+    },
+    {
+     "ref": "CA-4243",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.25,
+   "live_acres": 0.74,
+   "kept_pct": 91.7,
+   "size_pct": -40.9,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 21.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 41% smaller (0.7 ac vs 1.3 ac stored)",
+   "live_center": [
+    53.185038,
+    -127.404191
+   ]
+  },
+  "CA-3624+CA-4122@area@49.226,-119.545": {
+   "id": "CA-3624+CA-4122@area@49.226,-119.545",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3624",
+    "CA-4122"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.2,
+   "stored_wide_m": 31,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:17:14Z",
+   "layers": [
+    {
+     "ref": "CA-3624",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:15Z"
+    },
+    {
+     "ref": "CA-4122",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 27,
+   "stored_shape_acres": 1.16,
+   "live_acres": 1.87,
+   "kept_pct": 100.0,
+   "size_pct": 61.8,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 34.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3624: key record BC recreatio:954452 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 62% bigger (1.9 ac vs 1.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    49.225413,
+    -119.544727
+   ]
+  },
+  "CA-3672+CA-3674@area@54.519,-129.713": {
+   "id": "CA-3672+CA-3674@area@54.519,-129.713",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3672",
+    "CA-3674"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 100.7,
+   "stored_wide_m": 464,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:18Z",
+   "layers": [
+    {
+     "ref": "CA-3672",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:19Z"
+    },
+    {
+     "ref": "CA-3674",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 99.17,
+   "live_acres": 99.56,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 465.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 99.6 ac vs 99.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    54.523273,
+    -129.769575
+   ]
+  },
+  "CA-3684+CA-3685@same land@50.799,-118.808": {
+   "id": "CA-3684+CA-3685@same land@50.799,-118.808",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3684",
+    "CA-3685"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:17:22Z",
+   "layers": [
+    {
+     "ref": "CA-3684",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:23Z"
+    },
+    {
+     "ref": "CA-3685",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 871.64,
+   "live_acres": 1087.37,
+   "kept_pct": 92.5,
+   "size_pct": 24.8,
+   "moved_m": 1564,
+   "gap_m": 0,
+   "wide_m": 1413.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1087.4 ac vs 871.6 ac stored (+25%), 92% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.789436,
+    -118.823381
+   ]
+  },
+  "CA-3724+CA-4065@area@50.792,-128.656": {
+   "id": "CA-3724+CA-4065@area@50.792,-128.656",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3724",
+    "CA-4065"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8429.3,
+   "stored_wide_m": 1165,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:26Z",
+   "layers": [
+    {
+     "ref": "CA-3724",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:27Z"
+    },
+    {
+     "ref": "CA-4065",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13732.74,
+   "live_acres": 8501.0,
+   "kept_pct": 62.9,
+   "size_pct": -38.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 1178.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 38% smaller (8501.0 ac vs 13732.7 ac stored)",
+   "live_center": [
+    50.804389,
+    -128.71118
+   ]
+  },
+  "CA-3781+CA-3782@same land@50.696,-119.109": {
+   "id": "CA-3781+CA-3782@same land@50.696,-119.109",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3781",
+    "CA-3782"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:17:29Z",
+   "layers": [
+    {
+     "ref": "CA-3781",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:30Z"
+    },
+    {
+     "ref": "CA-3782",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 524.09,
+   "live_acres": 523.39,
+   "kept_pct": 51.4,
+   "size_pct": -0.1,
+   "moved_m": 903,
+   "gap_m": 0,
+   "wide_m": 860.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 51% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    50.703538,
+    -119.106667
+   ]
+  },
+  "CA-3789+CA-3790@same land@59.842,-123.251": {
+   "id": "CA-3789+CA-3790@same land@59.842,-123.251",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3789",
+    "CA-3790"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:33Z",
+   "layers": [
+    {
+     "ref": "CA-3789",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:34Z"
+    },
+    {
+     "ref": "CA-3790",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1273.01,
+   "live_acres": 6741.24,
+   "kept_pct": 100.0,
+   "size_pct": 429.5,
+   "moved_m": 824,
+   "gap_m": 0,
+   "wide_m": 4807.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 430% bigger (6741.2 ac vs 1273.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    59.837606,
+    -123.263
+   ]
+  },
+  "CA-3791+CA-4239@area@53.406,-129.454": {
+   "id": "CA-3791+CA-4239@area@53.406,-129.454",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3791",
+    "CA-4239"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 9.1,
+   "stored_wide_m": 101,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:35Z",
+   "layers": [
+    {
+     "ref": "CA-3791",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:36Z"
+    },
+    {
+     "ref": "CA-4239",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.17,
+   "live_acres": 5.03,
+   "kept_pct": 99.5,
+   "size_pct": -2.8,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 106.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.0 ac vs 5.2 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    53.397735,
+    -129.437245
+   ]
+  },
+  "CA-3834+CA-4027@area@49.432,-123.613": {
+   "id": "CA-3834+CA-4027@area@49.432,-123.613",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3834",
+    "CA-4027"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 177.1,
+   "stored_wide_m": 519,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:39Z",
+   "layers": [
+    {
+     "ref": "CA-3834",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:40Z"
+    },
+    {
+     "ref": "CA-4027",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 174.73,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4027: key record BC recreatio:1509403 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-3838+CA-3839@same land@50.884,-118.500": {
+   "id": "CA-3838+CA-3839@same land@50.884,-118.500",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3838",
+    "CA-3839"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:17:43Z",
+   "layers": [
+    {
+     "ref": "CA-3838",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:44Z"
+    },
+    {
+     "ref": "CA-3839",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 204.11,
+   "live_acres": 309.7,
+   "kept_pct": 90.7,
+   "size_pct": 51.7,
+   "moved_m": 1457,
+   "gap_m": 0,
+   "wide_m": 454.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 52% bigger (309.7 ac vs 204.1 ac stored); 91% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    50.872616,
+    -118.51066
+   ]
+  },
+  "CA-3840+CA-3841@same land@48.807,-123.517": {
+   "id": "CA-3840+CA-3841@same land@48.807,-123.517",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3840",
+    "CA-3841"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:47Z",
+   "layers": [
+    {
+     "ref": "CA-3840",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:48Z"
+    },
+    {
+     "ref": "CA-3841",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 24.28,
+   "live_acres": 578.29,
+   "kept_pct": 99.4,
+   "size_pct": 2281.8,
+   "moved_m": 1191,
+   "gap_m": 0,
+   "wide_m": 948.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3840: key record BC local and:3560463 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 2282% bigger (578.3 ac vs 24.3 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    48.8003,
+    -123.505155
+   ]
+  },
+  "CA-3868+CA-3869@same land@49.992,-121.733": {
+   "id": "CA-3868+CA-3869@same land@49.992,-121.733",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3868",
+    "CA-3869"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:51Z",
+   "layers": [
+    {
+     "ref": "CA-3868",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:52Z"
+    },
+    {
+     "ref": "CA-3869",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4440.16,
+   "live_acres": 5133.96,
+   "kept_pct": 65.2,
+   "size_pct": 15.6,
+   "moved_m": 3584,
+   "gap_m": 0,
+   "wide_m": 1335.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3868: key record BC recreatio:1053599 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: only 65% of the stored overlap is still inside the live overlap (10 m tolerance))",
+   "live_center": [
+    50.008969,
+    -121.690661
+   ]
+  },
+  "CA-3871+CA-4212@area@54.045,-131.830": {
+   "id": "CA-3871+CA-4212@area@54.045,-131.830",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3871",
+    "CA-4212"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 22.6,
+   "stored_wide_m": 35,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:53Z",
+   "layers": [
+    {
+     "ref": "CA-3871",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:54Z"
+    },
+    {
+     "ref": "CA-4212",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:17:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 19.21,
+   "live_acres": 18.19,
+   "kept_pct": 100.0,
+   "size_pct": -5.3,
+   "moved_m": 377,
+   "gap_m": 0,
+   "wide_m": 27.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 18.2 ac vs 19.2 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    54.045134,
+    -131.86681
+   ]
+  },
+  "CA-3899+CA-3900@same land@55.095,-128.947": {
+   "id": "CA-3899+CA-3900@same land@55.095,-128.947",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3899",
+    "CA-3900"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:17:57Z",
+   "layers": [
+    {
+     "ref": "CA-3899",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:58Z"
+    },
+    {
+     "ref": "CA-3900",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:17:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 20.18,
+   "live_acres": 25.96,
+   "kept_pct": 81.6,
+   "size_pct": 28.6,
+   "moved_m": 212,
+   "gap_m": 0,
+   "wide_m": 106.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 29% bigger (26.0 ac vs 20.2 ac stored); 82% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    55.092981,
+    -128.946007
+   ]
+  },
+  "CA-3917+CA-4258@area@48.444,-123.272": {
+   "id": "CA-3917+CA-4258@area@48.444,-123.272",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3917",
+    "CA-4258"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 44.4,
+   "stored_wide_m": 349,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:17:59Z",
+   "layers": [
+    {
+     "ref": "CA-3917",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:00Z"
+    },
+    {
+     "ref": "CA-4258",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 43.75,
+   "live_acres": 43.86,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 337.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 43.9 ac vs 43.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    48.445692,
+    -123.272428
+   ]
+  },
+  "CA-3932+CA-3933@same land@49.585,-120.775": {
+   "id": "CA-3932+CA-3933@same land@49.585,-120.775",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3932",
+    "CA-3933"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:03Z",
+   "layers": [
+    {
+     "ref": "CA-3932",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:04Z"
+    },
+    {
+     "ref": "CA-3933",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.99,
+   "live_acres": 70.16,
+   "kept_pct": 96.5,
+   "size_pct": 3430.8,
+   "moved_m": 467,
+   "gap_m": 0,
+   "wide_m": 384.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 3431% bigger (70.2 ac vs 2.0 ac stored); 96% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    49.588646,
+    -120.778703
+   ]
+  },
+  "CA-3976+CA-3977@same land@59.645,-126.878": {
+   "id": "CA-3976+CA-3977@same land@59.645,-126.878",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3976",
+    "CA-3977"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:18:05Z",
+   "layers": [
+    {
+     "ref": "CA-3976",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:06Z"
+    },
+    {
+     "ref": "CA-3977",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 750.8,
+   "live_acres": 2845.01,
+   "kept_pct": 100.0,
+   "size_pct": 278.9,
+   "moved_m": 1539,
+   "gap_m": 0,
+   "wide_m": 2680.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 279% bigger (2845.0 ac vs 750.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    59.64145,
+    -126.904874
+   ]
+  },
+  "CA-3988+CA-3989@same land@53.494,-120.871": {
+   "id": "CA-3988+CA-3989@same land@53.494,-120.871",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3988",
+    "CA-3989"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:07Z",
+   "layers": [
+    {
+     "ref": "CA-3988",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:08Z"
+    },
+    {
+     "ref": "CA-3989",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11243.62,
+   "live_acres": 8166.99,
+   "kept_pct": 72.5,
+   "size_pct": -27.4,
+   "moved_m": 1417,
+   "gap_m": 0,
+   "wide_m": 4606.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-3988: key record BC recreatio:1147781 names a layer prefix not in us-key/layers.json | CA-3989: key record BC recreatio:1147781 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: live overlap is 27% smaller (8167.0 ac vs 11243.6 ac stored))",
+   "live_center": [
+    53.490699,
+    -120.891936
+   ]
+  },
+  "CA-4100+CA-4101@same land@50.254,-121.508": {
+   "id": "CA-4100+CA-4101@same land@50.254,-121.508",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4100",
+    "CA-4101"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:11Z",
+   "layers": [
+    {
+     "ref": "CA-4100",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:12Z"
+    },
+    {
+     "ref": "CA-4101",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.79,
+   "live_acres": 327.76,
+   "kept_pct": 41.6,
+   "size_pct": 18168.9,
+   "moved_m": 580,
+   "gap_m": 0,
+   "wide_m": 961.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 42% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    50.249345,
+    -121.512177
+   ]
+  },
+  "CA-4142+CA-4143@same land@49.673,-123.144": {
+   "id": "CA-4142+CA-4143@same land@49.673,-123.144",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4142",
+    "CA-4143"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:15Z",
+   "layers": [
+    {
+     "ref": "CA-4142",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:16Z"
+    },
+    {
+     "ref": "CA-4143",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 18.43,
+   "live_acres": 676.18,
+   "kept_pct": 98.7,
+   "size_pct": 3569.0,
+   "moved_m": 481,
+   "gap_m": 0,
+   "wide_m": 1349.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 3569% bigger (676.2 ac vs 18.4 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    49.677548,
+    -123.14635
+   ]
+  },
+  "CA-4145+CA-4245@area@50.121,-122.228": {
+   "id": "CA-4145+CA-4245@area@50.121,-122.228",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4145",
+    "CA-4245"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.0,
+   "stored_wide_m": 45,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:17Z",
+   "layers": [
+    {
+     "ref": "CA-4145",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:18Z"
+    },
+    {
+     "ref": "CA-4245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.76,
+   "live_acres": 0.79,
+   "kept_pct": 99.8,
+   "size_pct": 3.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 42.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.8 ac vs 0.8 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.129858,
+    -122.266611
+   ]
+  },
+  "CA-4152+CA-4153@same land@54.625,-124.643": {
+   "id": "CA-4152+CA-4153@same land@54.625,-124.643",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4152",
+    "CA-4153"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:21Z",
+   "layers": [
+    {
+     "ref": "CA-4152",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:22Z"
+    },
+    {
+     "ref": "CA-4153",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 460.47,
+   "live_acres": 849.37,
+   "kept_pct": 100.0,
+   "size_pct": 84.5,
+   "moved_m": 374,
+   "gap_m": 0,
+   "wide_m": 1149.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4153: key record BC recreatio:243165 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 84% bigger (849.4 ac vs 460.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    54.627672,
+    -124.639933
+   ]
+  },
+  "CA-4157+CA-4158@same land@53.916,-121.670": {
+   "id": "CA-4157+CA-4158@same land@53.916,-121.670",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4157",
+    "CA-4158"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:23Z",
+   "layers": [
+    {
+     "ref": "CA-4157",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:24Z"
+    },
+    {
+     "ref": "CA-4158",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 75.85,
+   "live_acres": 1034.75,
+   "kept_pct": 100.0,
+   "size_pct": 1264.2,
+   "moved_m": 1137,
+   "gap_m": 0,
+   "wide_m": 982.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 1264% bigger (1034.8 ac vs 75.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    53.908431,
+    -121.659374
+   ]
+  },
+  "CA-4191+CA-4258@area@48.451,-123.266": {
+   "id": "CA-4191+CA-4258@area@48.451,-123.266",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4191",
+    "CA-4258"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 7.9,
+   "stored_wide_m": 127,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:25Z",
+   "layers": [
+    {
+     "ref": "CA-4191",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:26Z"
+    },
+    {
+     "ref": "CA-4258",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7.54,
+   "live_acres": 7.54,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 123.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.5 ac vs 7.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    48.449966,
+    -123.266515
+   ]
+  },
+  "CA-4218+CA-4258@area@48.401,-123.304": {
+   "id": "CA-4218+CA-4258@area@48.401,-123.304",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4218",
+    "CA-4258"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 14.2,
+   "stored_wide_m": 105,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-01T11:18:28Z",
+   "layers": [
+    {
+     "ref": "CA-4218",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:29Z"
+    },
+    {
+     "ref": "CA-4258",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:18:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 6.45,
+   "live_acres": 6.52,
+   "kept_pct": 100.0,
+   "size_pct": 1.1,
+   "moved_m": 333,
+   "gap_m": 0,
+   "wide_m": 85.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.5 ac vs 6.4 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    48.403997,
+    -123.304682
+   ]
+  },
+  "CA-4253+CA-4254@same land@49.302,-119.532": {
+   "id": "CA-4253+CA-4254@same land@49.302,-119.532",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4253",
+    "CA-4254"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-01T11:18:31Z",
+   "layers": [
+    {
+     "ref": "CA-4253",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:32Z"
+    },
+    {
+     "ref": "CA-4254",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:18:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 23.99,
+   "live_acres": 41.7,
+   "kept_pct": 92.9,
+   "size_pct": 73.9,
+   "moved_m": 403,
+   "gap_m": 0,
+   "wide_m": 244.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 74% bigger (41.7 ac vs 24.0 ac stored); 93% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    49.298259,
+    -119.530749
+   ]
+  },
+  "CA-0032+CA-3393@area@52.734,-132.106": {
+   "id": "CA-0032+CA-3393@area@52.734,-132.106",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0032",
+    "CA-3393"
+   ],
+   "kind": "area",
+   "verdict": "SOURCE DOWN",
+   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "flags": [],
+   "layers": []
+  }
+ },
+ "started": "2026-11-01T11:15:36Z",
+ "fers_sha256": "feb341d355bd852fafdc9fe6608ac33e5fd6dcd67fc232b0dc3a5469132a977d",
+ "live_rows": 58,
+ "skipped_rows": 585,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:56Z",
+ "complete": true,
+ "summary": {
+  "rows": 58,
+  "verdicts": {
+   "CONFIRMED": 24,
+   "SHRUNK": 4,
+   "GREW": 14,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 15,
+   "SOURCE DOWN": 1,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 1,
+   "small overlap (under 50 yd across)": 7
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json"
+ ],
+ "requests_this_run": 1
+}

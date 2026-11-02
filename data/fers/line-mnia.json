@@ -1,0 +1,75 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mnia",
+ "states": [
+  "US-MN",
+  "US-IA"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 20:48 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-IA: only 0 rows from 177 outlined parks (near-empty: check the run)"
+ ],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 142,
+  "DROPPED": 296,
+  "NEVER LOOKED AT": 2250
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 826,
+   "pairs whose boxes touch": 826
+  },
+  "pass2": {
+   "agree with the pass before": 995,
+   "date": "2026-10-30",
+   "pairs tested": 189
+  },
+  "pass3": {
+   "agree with the pass before": 804,
+   "date": "2026-10-30",
+   "pairs tested": 189
+  },
+  "pass5": {
+   "checked": 70,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-MN": "data/fers/US-MN.json",
+  "US-IA": "data/fers/US-IA.json"
+ },
+ "US-MN": {
+  "rows": 1062,
+  "live": 157,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 16,
+   "this spot is 269 km from Beaver Creek Wildlife Management Ar": 1,
+   "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1
+  },
+  "dropped": 407,
+  "merged": 480
+ },
+ "US-IA": {
+  "rows": 0,
+  "live": 0,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 0
+ },
+ "states_ready": [
+  "US-MN"
+ ],
+ "states_held": [
+  "US-IA"
+ ]
+}

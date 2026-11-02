@@ -1,0 +1,20 @@
+{
+ "about": "Club rule W-10 (Nov 1, 2026): WDPA is rejected whenever an official layer exists for the park. Only when the official ladder (the area's own layers incl. Florida's conservation lands, PAD-US under any name, NPS / FWS / USFS / BLM, agency server walks) gives no usable record may WDPA be asked, as a LAST RESORT: always g='approx', labelled 'WDPA (last resort)', never STRONG, never 'found', always a question for chat 11. WDPA's US data is a copy of PAD-US, so a WDPA-only park usually means PAD-US has it under another name: check that first. The layer address is the one the club's own approved list (chat 11, Oct 31) used. Nov 1 6:56 PM (Brandon: 'if we dont have it let bots get it and we replace it later if we find better'): ON FOR EVERY AREA (was US + CA), still only after the official ladder found nothing usable for that park; read live, only the match stored (WDPA id, name, acres), never a copy of the shape; the agency's own layer replaces it the moment one is found.",
+ "sources": [
+  {
+   "id": "WDPA-last-resort-WDPA_v0",
+   "kind": "arcgis",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "areas": [
+    "*"
+   ],
+   "grade": "approximate",
+   "geometry": "polygon",
+   "last_resort": "WDPA (last resort)",
+   "basis_note": "WDPA (last resort)",
+   "from": "approved-layers-us.json (chat 11, Oct 31): US-0658 / US-1879 rows"
+  }
+ ]
+}

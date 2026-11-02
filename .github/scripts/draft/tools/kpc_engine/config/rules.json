@@ -1,0 +1,125 @@
+{
+  "about": "The club's switches. Every default here is today's rule (Nov 1, 2026). Change a value, or override per run with --enable / --disable / --scope (see TUNING.md, 'Turning rules on and off'). Every run logs the active switches in active-config.json, board.md and grades.md; anything off its default is shown loudly. Hard safety rules are LOCKED in core/rules.py and cannot be set here.",
+  "plugins": {
+    "outline": {
+      "enabled": true,
+      "areas": [
+        "*"
+      ]
+    },
+    "docs": {
+      "enabled": true,
+      "areas": [
+        "*"
+      ]
+    },
+    "parking": {
+      "enabled": true,
+      "areas": [
+        "US-*",
+        "CA-*"
+      ]
+    },
+    "camping": {
+      "enabled": true,
+      "areas": [
+        "US-*",
+        "CA-*"
+      ]
+    },
+    "trail": {
+      "enabled": true,
+      "areas": [
+        "US-*",
+        "CA-*"
+      ]
+    },
+    "hours": {
+      "enabled": true,
+      "areas": [
+        "US-KY"
+      ]
+    },
+    "fees": {
+      "enabled": true,
+      "areas": [
+        "US-KY"
+      ]
+    },
+    "closures": {
+      "enabled": true,
+      "areas": [
+        "US-KY"
+      ]
+    }
+  },
+  "hours_rules": {
+    "separate_marina_scuba": true,
+    "reject_fragments": true,
+    "hunting_hours_apart": true
+  },
+  "checks": {
+    "resolve_duplicate_facilities": true,
+    "containers": true,
+    "line_vs_polygon": true,
+    "forestry_kind_guard": true,
+    "point_label_filter": true,
+    "camp_feature_filter": true,
+    "game_reserve_not_park": true
+  },
+  "source_policy": {
+    "wdpa_guard": true,
+    "wdpa_last_resort": true,
+    "never_use": {
+      "openstreetmap": true,
+      "google": true,
+      "alltrails": true,
+      "wikidata": true,
+      "wikipedia": true,
+      "tourism_app_pages": true
+    },
+    "eu_compilation_approximate": true,
+    "parcels_approximate": true,
+    "unofficial_docs_kept_apart": true,
+    "two_fers_never_auto": true,
+    "state_mapping_compilations": true
+  },
+  "grader": {
+    "size_pass_max": 1.5,
+    "size_off_max": 5.0,
+    "parcel_low": 0.2,
+    "parcel_high": 2.0,
+    "rg12_m": 150,
+    "docs_ky_tn_share": 0.2,
+    "docs_same_file_max": 3,
+    "parking_right_of_30": 27,
+    "parking_ky_tn_share": 0.1,
+    "camp_layer_ok": 0.95,
+    "trail_pin_m": 200,
+    "fer_line_ft": 100
+  },
+  "key_doctor": {
+    "about": "Key doctor (v0.5.0, `kpc_engine.py doctor`). Reads the club checkouts, writes ONLY to <out>/key-doctor/. Defaults keep today's practice: nothing is released per park until Brandon OKs it.",
+    "reapply_nos": true,
+    "per_park_release": true,
+    "require_chat2": [
+      "us-key",
+      "ca-key",
+      "world-key",
+      "fers-*"
+    ],
+    "require_path": [
+      "us-key",
+      "ca-key",
+      "world-key",
+      "fers-*"
+    ],
+    "fer_carry_km": 1.0,
+    "freeze_while_graded": true,
+    "stuck_days": 2,
+    "size_guard": true,
+    "size_warn_mib": 80,
+    "size_red_mib": 95,
+    "list_superseded_held": true
+  }
+}

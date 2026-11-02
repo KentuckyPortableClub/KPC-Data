@@ -1,0 +1,58 @@
+name: KPC campground layers (official campground point layers -> campground lists, branch tools-out)
+# Oct 31 2026 (chat 10; HQ 9:55 PM, AUTOMATION FIRST): weekly by itself. The intake reader pulls the camping files from intake-files,
+# kpc_camp_layers reads every official campground layer they list (--resume, cache), its lists go on tools-out camp_layers/
+# (BRANCH FIRST), and the camp-and-activate bot (kpc-campsites.yml) reads them as a 4th list; Kentucky keeps its hand-checked list
+# (known + the bot skips KY rows). Results reach the site only through the waiting room + chat 11. Chains on exit 3. Never red.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 7 * * 6'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-camp-layers
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: kpcdata/.camp_cache
+          key: kpc-camp-layers-${{ github.run_id }}
+          restore-keys: kpc-camp-layers-
+      - name: Run
+        id: r
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true
+          python3 .github/scripts/kpc_intake_reader.py camping || true
+          T=.github/scripts/draft/tools/kpc_camp_layers/kpc_camp_layers.py
+          python3 $T --selftest | tail -1
+          set +e
+          python3 $T --in 'data/intake/_in/camping/camping-*.json' --out ../out/camp_layers --known data/campfed,data/campstate,data/campstate-manual --cache .camp_cache --max-minutes 50 --resume > /tmp/cl.txt 2>&1
+          E=$?; tail -8 /tmp/cl.txt
+          N=$(ls ../out/camp_layers/campgrounds/US-*.json 2>/dev/null | wc -l)
+          echo "::notice title=Campground layers::exit $E; $N state lists on tools-out camp_layers/"
+          [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
+          python3 .github/scripts/kpc_status.py board 'Campground layers' green "$N state lists $(date -u +%F) (tools-out)" 'the camp-and-activate bot reads them; chat 11 grades through the waiting room' || true
+          (cd ../out && rm -rf camp_layers/work/cache && git add -A camp_layers && git commit -qm "campground layers (run ${{ github.run_id }})" && git push -q origin tools-out) || true
+          true
+      - name: Next run
+        if: steps.r.outputs.more == 'yes'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-camp-layers.yml -R ${{ github.repository }} || true

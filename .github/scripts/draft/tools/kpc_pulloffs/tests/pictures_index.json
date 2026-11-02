@@ -1,0 +1,32 @@
+{
+ "maps": [
+  {
+   "ref": "US-9001",
+   "name": "Test Lake WMA",
+   "agency": "Test agency",
+   "source_url": "https://agency.example.gov/map.pdf",
+   "page": 1,
+   "files": [
+    "maps/US-9001_test-lake.jpg"
+   ],
+   "date": "2026-01-01",
+   "p_points": [
+    [
+     37.7062381,
+     -83.6931947
+    ]
+   ]
+  },
+  {
+   "ref": "US-9003",
+   "name": "Lonely Ridge SNP",
+   "agency": "Test agency",
+   "source_url": "https://agency.example.gov/lr.pdf",
+   "page": 1,
+   "files": [
+    "maps/US-9003_lonely.jpg"
+   ],
+   "date": "2026-01-01"
+  }
+ ]
+}

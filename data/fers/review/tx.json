@@ -1,0 +1,4963 @@
+{
+ "area": "tx",
+ "date": "2026-11-01",
+ "states": [
+  "US-TX"
+ ],
+ "rows": [
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-4414",
+    "US-4415"
+   ],
+   "names": {
+    "US-4414": "Angelina National Forest",
+    "US-4415": "Davy Crockett National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "5935.2 ac",
+   "sort": 5935.2,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4414+US-4415@area@31.492,-94.775",
+   "sources": {
+    "US-4414": "read from the agency 2026-11-01",
+    "US-4415": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3019",
+    "US-4417"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "499 same-day activations",
+   "sort": 499.0,
+   "reason": "dropped: inside the federal boundary, but the Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land inside a federal boundary is ",
+   "id": "US-3019+US-4417@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (499x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0687",
+    "US-3055"
+   ],
+   "names": {
+    "US-0687": "Amistad National Recreation Area",
+    "US-3055": "Seminole Canyon State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "452.9 ac",
+   "sort": 452.9,
+   "reason": "candidate \u00b7 ['FED:NPS', 'STATE']",
+   "id": "US-0687+US-3055@area@29.698,-101.311",
+   "sources": {
+    "US-0687": "read from the agency 2026-11-01",
+    "US-3055": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10509",
+    "US-3019"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "442 same-day activations",
+   "sort": 442.0,
+   "reason": "dropped: inside the federal boundary, but the Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land inside a federal boundary is ",
+   "id": "US-10509+US-3019@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (442x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3038",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "365 same-day activations",
+   "sort": 365.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3038+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (365x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0006",
+    "US-6540"
+   ],
+   "names": {
+    "US-0006": "Big Bend National Park",
+    "US-6540": "Black Gap Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "232.2 ac",
+   "sort": 232.2,
+   "reason": "candidate \u00b7 ['FED:NPS', 'STATE']",
+   "id": "US-0006+US-6540@area@29.607,-103.088",
+   "sources": {
+    "US-0006": "read from the agency 2026-11-01",
+    "US-6540": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0550",
+    "US-3052"
+   ],
+   "names": {
+    "US-0550": "Lower Rio Grande Valley National Wildlife Refuge",
+    "US-3052": "Resaca De La Palma State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "203.9 ac",
+   "sort": 203.9,
+   "reason": "candidate \u00b7 ['FED', 'STAT']",
+   "id": "US-0550+US-3052@area@26.000,-97.569",
+   "sources": {
+    "US-0550": "read from the agency 2026-11-01",
+    "US-3052": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-4568",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "8855 yd of line",
+   "sort": 202.4,
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-4568+US-9757@trail@31.621,-106.287",
+   "sources": {
+    "US-4568": "official line (trails bot)",
+    "US-9757": "official line (trails bot)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0756",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "186 same-day activations",
+   "sort": 186.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0756+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (186x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3017",
+    "US-3505"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "94 same-day activations",
+   "sort": 94.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-3017+US-3505@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (94x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0548",
+    "US-3005"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "93 same-day activations",
+   "sort": 93.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0548+US-3005@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (93x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3005",
+    "US-6553"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "88 same-day activations",
+   "sort": 88.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3005+US-6553@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (88x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2998",
+    "US-3004"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "86 same-day activations",
+   "sort": 86.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2998+US-3004@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (86x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4417",
+    "US-4422"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "71 same-day activations",
+   "sort": 71.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4417+US-4422@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (71x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0548",
+    "US-6553"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "68 same-day activations",
+   "sort": 68.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0548+US-6553@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (68x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3015",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "68 same-day activations",
+   "sort": 68.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3015+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (68x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3032",
+    "US-3039"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "66 same-day activations",
+   "sort": 66.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3032+US-3039@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (66x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0770",
+    "US-4569"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "65 same-day activations",
+   "sort": 65.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0770+US-4569@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (65x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3010",
+    "US-6549"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "65 same-day activations",
+   "sort": 65.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3010+US-6549@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (65x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3019",
+    "US-4422"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "63 same-day activations",
+   "sort": 63.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3019+US-4422@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (63x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-3054"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "62 same-day activations",
+   "sort": 62.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-3054@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (62x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3031",
+    "US-6605"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "61 same-day activations",
+   "sort": 61.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3031+US-6605@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (61x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3502",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "59 same-day activations",
+   "sort": 59.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3502+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (59x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3020",
+    "US-3034"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "56 same-day activations",
+   "sort": 56.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3020+US-3034@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (56x, POTA history) / outlines come within 20 m of each other"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0688",
+    "US-0901"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "55 same-day activations",
+   "sort": 55.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0688+US-0901@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (55x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-0555"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "55 same-day activations",
+   "sort": 55.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-0555@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (55x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-4370"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "54 same-day activations",
+   "sort": 54.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2991+US-4370@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (54x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6553",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "54 same-day activations",
+   "sort": 54.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-6553+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (54x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10509",
+    "US-4422"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "54 same-day activations",
+   "sort": 54.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10509+US-4422@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (54x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3009",
+    "US-3019"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "54 same-day activations",
+   "sort": 54.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3009+US-3019@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (54x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4569",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "50 same-day activations",
+   "sort": 50.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4569+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (50x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3004",
+    "US-3039"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "49 same-day activations",
+   "sort": 49.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3004+US-3039@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (49x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3054",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "49 same-day activations",
+   "sort": 49.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3054+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (49x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-3061"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "48 same-day activations",
+   "sort": 48.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-3061@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (48x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-3061"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "48 same-day activations",
+   "sort": 48.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-3061@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (48x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3040",
+    "US-4415"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "47 same-day activations",
+   "sort": 47.0,
+   "reason": "dropped: inside the federal boundary, but the Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land inside a federal boundary is ",
+   "id": "US-3040+US-4415@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (47x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "46 same-day activations",
+   "sort": 46.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (46x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2996",
+    "US-4423"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "46 same-day activations",
+   "sort": 46.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2996+US-4423@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (46x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3054",
+    "US-3061"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "46 same-day activations",
+   "sort": 46.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3054+US-3061@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (46x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3040",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "44 same-day activations",
+   "sort": 44.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3040+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (44x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3061",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "44 same-day activations",
+   "sort": 44.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3061+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (44x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6564",
+    "US-6596"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "44 same-day activations",
+   "sort": 44.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6564+US-6596@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (44x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "42 same-day activations",
+   "sort": 42.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3500",
+    "US-3512"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "41 same-day activations",
+   "sort": 41.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3500+US-3512@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (41x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2998",
+    "US-3039"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "39 same-day activations",
+   "sort": 39.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2998+US-3039@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (39x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3004",
+    "US-3032"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "39 same-day activations",
+   "sort": 39.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3004+US-3032@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (39x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3061",
+    "US-6565"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "39 same-day activations",
+   "sort": 39.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3061+US-6565@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (39x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3002",
+    "US-3023"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "38 same-day activations",
+   "sort": 38.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3002+US-3023@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (38x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4416",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "38 same-day activations",
+   "sort": 38.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4416+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (38x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0551",
+    "US-6565"
+   ],
+   "names": {
+    "US-0551": "McFaddin National Wildlife Refuge",
+    "US-6565": "J.D. Murphree Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "36.8 ac",
+   "sort": 36.8,
+   "reason": "candidate \u00b7 ['FED', 'STAT']",
+   "id": "US-0551+US-6565@area@29.752,-94.036",
+   "sources": {
+    "US-0551": "read from the agency 2026-11-01",
+    "US-6565": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3009",
+    "US-4417"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "36 same-day activations",
+   "sort": 36.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3009+US-4417@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (36x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3016",
+    "US-6561"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "36 same-day activations",
+   "sort": 36.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3016+US-6561@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (36x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0690",
+    "US-3043"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "34 same-day activations",
+   "sort": 34.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0690+US-3043@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (34x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0553",
+    "US-6573"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0553+US-6573@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10277",
+    "US-3004"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10277+US-3004@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2998",
+    "US-3032"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2998+US-3032@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3015",
+    "US-6555"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3015+US-6555@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3040",
+    "US-6543"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3040+US-6543@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3059",
+    "US-6590"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3059+US-6590@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3502",
+    "US-6555"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3502+US-6555@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4568",
+    "US-6543"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4568+US-6543@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0548",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "32 same-day activations",
+   "sort": 32.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0548+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6573",
+    "US-6586"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "32 same-day activations",
+   "sort": 32.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6573+US-6586@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0553",
+    "US-6567"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0553+US-6567@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-6565"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0555+US-6565@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0633",
+    "US-6604"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0633+US-6604@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2996",
+    "US-2998"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2996+US-2998@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3056",
+    "US-3511"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3056+US-3511@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3059",
+    "US-6588"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3059+US-6588@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10277",
+    "US-2998"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10277+US-2998@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10509",
+    "US-3009"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10509+US-3009@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-3005"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2991+US-3005@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3061",
+    "US-6574"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3061+US-6574@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6565",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6565+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0816",
+    "US-3003"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0816+US-3003@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3054",
+    "US-6565"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-3054+US-6565@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0548",
+    "US-3051"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0548+US-3051@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3054",
+    "US-6574"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3054+US-6574@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4414",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4414+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4415",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4415+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6573",
+    "US-6607"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "28 same-day activations",
+   "sort": 28.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6573+US-6607@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0540",
+    "US-6545"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0540+US-6545@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-6574"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-6574@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3011",
+    "US-3029"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3011+US-3029@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4415",
+    "US-6543"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4415+US-6543@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4568",
+    "US-6537"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4568+US-6537@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0541",
+    "US-3016"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "26 same-day activations",
+   "sort": 26.0,
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0541+US-3016@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (26x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2992",
+    "US-6607"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "26 same-day activations",
+   "sort": 26.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2992+US-6607@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6574",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "26 same-day activations",
+   "sort": 26.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6574+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0542",
+    "US-3058"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "25 same-day activations",
+   "sort": 25.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0542+US-3058@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2993",
+    "US-3508"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "25 same-day activations",
+   "sort": 25.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2993+US-3508@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3033",
+    "US-3045"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "25 same-day activations",
+   "sort": 25.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3033+US-3045@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0548",
+    "US-2991"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "24 same-day activations",
+   "sort": 24.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0548+US-2991@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (24x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-6574"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "24 same-day activations",
+   "sort": 24.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-6574@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (24x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3002",
+    "US-6611"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "24 same-day activations",
+   "sort": 24.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3002+US-6611@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (24x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3035",
+    "US-3048"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "24 same-day activations",
+   "sort": 24.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3035+US-3048@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (24x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0975",
+    "US-3042"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "23 same-day activations",
+   "sort": 23.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0975+US-3042@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-6553"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "23 same-day activations",
+   "sort": 23.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2991+US-6553@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3011",
+    "US-4371"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "23 same-day activations",
+   "sort": 23.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3011+US-4371@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3012",
+    "US-4569"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "23 same-day activations",
+   "sort": 23.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3012+US-4569@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6588",
+    "US-6590"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "23 same-day activations",
+   "sort": 23.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6588+US-6590@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0553",
+    "US-6607"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "22 same-day activations",
+   "sort": 22.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0553+US-6607@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0756",
+    "US-6546"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "22 same-day activations",
+   "sort": 22.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0756+US-6546@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4418",
+    "US-4421"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "22 same-day activations",
+   "sort": 22.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4418+US-4421@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0545",
+    "US-0553"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0545+US-0553@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (21x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3005",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3005+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3030",
+    "US-3512"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3030+US-3512@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6539",
+    "US-6564"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6539+US-6564@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6567",
+    "US-6586"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6567+US-6586@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6574",
+    "US-6606"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6574+US-6606@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0546",
+    "US-3046"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0546+US-3046@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2986",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2986+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3029",
+    "US-3049"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3029+US-3049@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3052",
+    "US-3509"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3052+US-3509@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6565",
+    "US-6574"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6565+US-6574@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6567",
+    "US-6573"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6567+US-6573@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10509",
+    "US-3512"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10509+US-3512@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2986",
+    "US-3038"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2986+US-3038@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3033",
+    "US-3038"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3033+US-3038@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3500",
+    "US-4417"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3500+US-4417@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3512",
+    "US-4417"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3512+US-4417@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4514",
+    "US-7483"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4514+US-7483@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0551",
+    "US-3054"
+   ],
+   "names": {
+    "US-0551": "McFaddin National Wildlife Refuge",
+    "US-3054": "Sea Rim State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "18.1 ac",
+   "sort": 18.1,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
+   "id": "US-0551+US-3054@area@29.674,-94.063",
+   "sources": {
+    "US-0551": "read from the agency 2026-11-01",
+    "US-3054": "read from the agency 2026-11-01"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0545",
+    "US-6567"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0545+US-6567@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0743",
+    "US-3048"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0743+US-3048@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2996",
+    "US-3039"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2996+US-3039@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2997",
+    "US-3027"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2997+US-3027@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3058",
+    "US-3512"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3058+US-3512@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6539",
+    "US-6596"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6539+US-6596@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6542",
+    "US-6604"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6542+US-6604@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0549",
+    "US-3509"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0549+US-3509@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0553",
+    "US-2992"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0553+US-2992@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0548",
+    "US-4423"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0548+US-4423@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0756",
+    "US-3503"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0756+US-3503@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0975",
+    "US-3032"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0975+US-3032@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2989",
+    "US-3026"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2989+US-3026@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3019",
+    "US-3500"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3019+US-3500@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0689",
+    "US-4420"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0689+US-4420@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6577",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-6577+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0689",
+    "US-3037"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0689+US-3037@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0770",
+    "US-3012"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0770+US-3012@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0770",
+    "US-6577"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0770+US-6577@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-4423"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2991+US-4423@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3016",
+    "US-3043"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3016+US-3043@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3016",
+    "US-6563"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3016+US-6563@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4370",
+    "US-6591"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4370+US-6591@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4514",
+    "US-6581"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4514+US-6581@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6586",
+    "US-6607"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6586+US-6607@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6591",
+    "US-6600"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6591+US-6600@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0541",
+    "US-6563"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0541+US-6563@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (15x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0549",
+    "US-3052"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0549+US-3052@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10277",
+    "US-3032"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10277+US-3032@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2986",
+    "US-3030"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2986+US-3030@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2999",
+    "US-3020"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2999+US-3020@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3009",
+    "US-4422"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3009+US-4422@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3011",
+    "US-3022"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3011+US-3022@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3036",
+    "US-3059"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3036+US-3059@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4568",
+    "US-6546"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4568+US-6546@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2991+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0540",
+    "US-0551"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0540+US-0551@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0541",
+    "US-6561"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0541+US-6561@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-3060"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-3060@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-6606"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-6606@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0756",
+    "US-6570"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0756+US-6570@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-10509",
+    "US-3500"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10509+US-3500@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2990",
+    "US-3035"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2990+US-3035@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2992",
+    "US-6573"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2992+US-6573@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2993",
+    "US-3033"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2993+US-3033@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3040",
+    "US-4419"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3040+US-4419@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3045",
+    "US-6575"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3045+US-6575@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3056",
+    "US-4422"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3056+US-4422@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3012",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3012+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0540",
+    "US-3054"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0540+US-3054@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0743",
+    "US-6587"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0743+US-6587@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3012",
+    "US-6577"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3012+US-6577@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3022",
+    "US-4371"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3022+US-4371@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3043",
+    "US-6561"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3043+US-6561@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3060",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3060+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4415",
+    "US-4419"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4415+US-4419@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4419",
+    "US-6543"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4419+US-6543@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4569",
+    "US-6577"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4569+US-6577@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6599",
+    "US-6606"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6599+US-6606@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-6606"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-6606@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0633",
+    "US-2984"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0633+US-2984@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0975",
+    "US-3010"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0975+US-3010@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0975",
+    "US-6549"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0975+US-6549@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2989",
+    "US-3041"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2989+US-3041@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2992",
+    "US-3056"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2992+US-3056@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2993",
+    "US-3030"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2993+US-3030@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2993",
+    "US-3038"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2993+US-3038@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3005",
+    "US-4423"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3005+US-4423@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3014",
+    "US-3507"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3014+US-3507@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3035",
+    "US-6587"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3035+US-6587@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3040",
+    "US-6534"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3040+US-6534@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3051",
+    "US-4423"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3051+US-4423@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3054",
+    "US-6606"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3054+US-6606@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6534",
+    "US-6543"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6534+US-6543@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6565",
+    "US-6606"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6565+US-6606@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6567",
+    "US-6607"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6567+US-6607@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0540",
+    "US-3061"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0540+US-3061@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0540",
+    "US-6565"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0540+US-6565@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0555",
+    "US-0689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0555+US-0689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0688",
+    "US-7483"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0688+US-7483@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0689",
+    "US-6535"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0689+US-6535@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0689",
+    "US-6574"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0689+US-6574@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0689",
+    "US-6599"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0689+US-6599@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0975",
+    "US-3039"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0975+US-3039@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2984",
+    "US-3002"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2984+US-3002@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2988",
+    "US-3501"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2988+US-3501@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-3000"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2991+US-3000@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-2991",
+    "US-6600"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2991+US-6600@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3006",
+    "US-3052"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3006+US-3052@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3009",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3009+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3013",
+    "US-6567"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3013+US-6567@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3030",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3030+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3031",
+    "US-3050"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3031+US-3050@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3060",
+    "US-4420"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3060+US-4420@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3508",
+    "US-4568"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3508+US-4568@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0006",
+    "US-2988"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0006+US-2988@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0550",
+    "US-3509"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0550+US-3509@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0545",
+    "US-2992"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0545+US-2992@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-0689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-0689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0551",
+    "US-6545"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0551+US-6545@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0554",
+    "US-3006"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0554+US-3006@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0688",
+    "US-6581"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0688+US-6581@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3005",
+    "US-3051"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3005+US-3051@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3009",
+    "US-3010"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3009+US-3010@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3017",
+    "US-3035"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3017+US-3035@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3020",
+    "US-3048"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3020+US-3048@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3040",
+    "US-4414"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3040+US-4414@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3049",
+    "US-6557"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3049+US-6557@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3499",
+    "US-6587"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3499+US-6587@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3512",
+    "US-4422"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-3512+US-4422@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6534",
+    "US-6584"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6534+US-6584@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6549",
+    "US-6596"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-6549+US-6596@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-4414",
+    "US-6534"
+   ],
+   "names": {
+    "US-4414": "Angelina National Forest",
+    "US-6534": "Alazan Bayou Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "9.8 ac",
+   "sort": 9.8,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4414+US-6534@area@31.482,-94.794",
+   "sources": {
+    "US-4414": "read from the agency 2026-11-01",
+    "US-6534": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-4568",
+    "US-4575"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "393 yd of line",
+   "sort": 9.0,
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-4568+US-4575@trail@35.988,-106.055",
+   "sources": {
+    "US-4568": "official line (trails bot)",
+    "US-4575": "official line (trails bot)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0550",
+    "US-0554"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0550+US-0554@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0550",
+    "US-3006"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0550+US-3006@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0554",
+    "US-6572"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0554+US-6572@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0770",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0770+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3006",
+    "US-6571"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3006+US-6571@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3052",
+    "US-6571"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3052+US-6571@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-4415",
+    "US-6534"
+   ],
+   "names": {
+    "US-4415": "Davy Crockett National Forest",
+    "US-6534": "Alazan Bayou Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "8.7 ac",
+   "sort": 8.7,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4415+US-6534@area@31.482,-94.794",
+   "sources": {
+    "US-4415": "read from the agency 2026-11-01",
+    "US-6534": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0544",
+    "US-0553"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0544+US-0553@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0556",
+    "US-3496"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0556+US-3496@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3006",
+    "US-6572"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3006+US-6572@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-3051",
+    "US-9757"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-3051+US-9757@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-4416",
+    "US-6589"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "dropped: inside the federal boundary, but the Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land inside a federal boundary is ",
+   "id": "US-4416+US-6589@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0554",
+    "US-6571"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "7 same-day activations",
+   "sort": 7.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0554+US-6571@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0550",
+    "US-6571"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0550+US-6571@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0546",
+    "US-6594"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0546+US-6594@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-0549",
+    "US-0690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0549+US-0690@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "",
+   "refs": [
+    "US-6580",
+    "US-6610"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-6580+US-6610@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0553",
+    "US-6586"
+   ],
+   "names": {
+    "US-0553": "San Bernard National Wildlife Refuge",
+    "US-6586": "Nannie M. Stringfellow Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "1.7 ac",
+   "sort": 1.7,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
+   "id": "US-0553+US-6586@area@28.930,-95.650",
+   "sources": {
+    "US-0553": "read from the agency 2026-11-01",
+    "US-6586": "read from the agency 2026-11-01"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0553",
+    "US-6586"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "1.4 ac",
+   "sort": 1.4,
+   "reason": "water only: boat or kayak",
+   "id": "US-0553+US-6586@area@28.944,-95.651",
+   "sources": {
+    "US-0553": "read from the agency 2026-11-01",
+    "US-6586": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2019-10-22 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-0550",
+    "US-6572"
+   ],
+   "names": {
+    "US-0550": "Lower Rio Grande Valley National Wildlife Refuge",
+    "US-6572": "Las Palomas , Lower Rio Grande Valley Units Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "0.8 ac",
+   "sort": 0.8,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
+   "id": "US-0550+US-6572@area@26.227,-98.452",
+   "sources": {
+    "US-0550": "read from the agency 2026-11-01",
+    "US-6572": "read from the agency 2026-11-01"
+   },
+   "checked": "2026-11-01"
+  },
+  {
+   "area": "tx",
+   "state": "US-TX",
+   "refs": [
+    "US-4568",
+    "US-4579"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "25 yd of line",
+   "sort": 0.6,
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-4568+US-4579@trail@35.687,-105.939",
+   "sources": {
+    "US-4568": "official line (trails bot)",
+    "US-4579": "official line (trails bot)"
+   },
+   "checked": "2026-11-01"
+  }
+ ]
+}

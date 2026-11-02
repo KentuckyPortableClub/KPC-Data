@@ -1,0 +1,59 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "nh",
+ "states": [
+  "US-NH"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 19:21 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 23,
+  "DROPPED": 85,
+  "NEVER LOOKED AT": 574
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 715,
+   "pairs whose boxes touch": 715
+  },
+  "pass2": {
+   "agree with the pass before": 132,
+   "date": "2026-11-01",
+   "pairs tested": 40
+  },
+  "pass3": {
+   "agree with the pass before": 110,
+   "date": "2026-11-01",
+   "pairs tested": 38
+  },
+  "pass5": {
+   "checked": 15,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-NH": "data/fers/US-NH.json"
+ },
+ "US-NH": {
+  "rows": 144,
+  "live": 28,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline for Wildcat National Wild and Scenic": 1,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 61,
+  "merged": 53
+ },
+ "states_ready": [
+  "US-NH"
+ ],
+ "states_held": []
+}

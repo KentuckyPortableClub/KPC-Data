@@ -1,0 +1,230 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-10-31",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "missing boundary": 24,
+  "official parks": 624,
+  "pairs tested": 2540,
+  "pairs whose boxes touch": 2540,
+  "parks done by the box test": 0,
+  "parks whose outline could not be read": 0,
+  "pass": 1,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "459 parks filed under another state but crossing / at the edge of this area kept: US-0653, US-0654, US-0656, US-0776, US-0780, US-0783, US-0784, US-0785",
+   "63 spots outside this area left for their own area",
+   "same land left out (pins far apart): US-1586+US-4365 8.1 km; US-1591+US-7760 9.9 km; US-1591+US-7760 9.9 km; US-1591+US-7760 9.9 km; US-1591+US-7760 9.9 km; US-1591+US-7760 9.9 km; US-1591+US-7760 9.9 km; US-1983+US-5446 14.2 km"
+  ],
+  "same land left out: pins far apart, not both inside the outline": 9,
+  "with official lines": 27
+ },
+ "pass2": {
+  "agree with the pass before": 502,
+  "cell_m": 10.0,
+  "date": "2026-10-31",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 105,
+  "official parks": 624,
+  "pairs tested": 132,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 2,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "459 parks filed under another state but crossing / at the edge of this area kept: US-0653, US-0654, US-0656, US-0776, US-0780, US-0783, US-0784, US-0785"
+  ],
+  "with official lines": 27
+ },
+ "pass3": {
+  "agree with the pass before": 468,
+  "cell_m": 5.0,
+  "date": "2026-10-31",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 132,
+  "official parks": 624,
+  "pairs tested": 132,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 3,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "459 parks filed under another state but crossing / at the edge of this area kept: US-0653, US-0654, US-0656, US-0776, US-0780, US-0783, US-0784, US-0785",
+   "NHD water (one try): The read operation timed out",
+   "NHD water (one try): The read operation timed out"
+  ],
+  "with official lines": 27
+ },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 22,
+  "date": "2026-10-31",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3331,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "live rows held: spot far from a state park pin (rule B13)": 0,
+  "official parks": 624,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "459 parks filed under another state but crossing / at the edge of this area kept: US-0653, US-0654, US-0656, US-0776, US-0780, US-0783, US-0784, US-0785"
+  ],
+  "river channels listed as water only (boat spots)": 1,
+  "spots given their boundary lines": 40,
+  "still not checked": 0,
+  "trail stretches given their true zone": 160,
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
+  "with official lines": 27
+ },
+ "per state": {
+  "US-DC": {
+   "candidates": 1,
+   "candidates (saved outline only)": 0,
+   "lines": 66,
+   "n-fers": 15,
+   "not sure": 0,
+   "pass1": 67,
+   "pass2": 1,
+   "spots": 67,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-DE": {
+   "candidates": 17,
+   "candidates (saved outline only)": 0,
+   "lines": 59,
+   "n-fers": 3,
+   "not sure": 0,
+   "pass1": 107,
+   "pass2": 17,
+   "spots": 107,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-MD": {
+   "candidates": 16,
+   "candidates (saved outline only)": 0,
+   "lines": 472,
+   "n-fers": 91,
+   "not sure": 0,
+   "pass1": 548,
+   "pass2": 16,
+   "spots": 548,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-ME": {
+   "candidates": 0,
+   "candidates (saved outline only)": 0,
+   "lines": 2,
+   "n-fers": 0,
+   "not sure": 0,
+   "pass1": 2,
+   "pass2": 0,
+   "spots": 2,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-NC": {
+   "candidates": 0,
+   "candidates (saved outline only)": 0,
+   "lines": 13,
+   "n-fers": 0,
+   "not sure": 0,
+   "pass1": 21,
+   "pass2": 0,
+   "spots": 21,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-NJ": {
+   "candidates": 0,
+   "candidates (saved outline only)": 0,
+   "lines": 0,
+   "n-fers": 1,
+   "not sure": 0,
+   "pass1": 20,
+   "pass2": 0,
+   "spots": 20,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-OH": {
+   "candidates": 39,
+   "candidates (saved outline only)": 0,
+   "lines": 109,
+   "n-fers": 0,
+   "not sure": 0,
+   "pass1": 168,
+   "pass2": 39,
+   "spots": 168,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-TN": {
+   "candidates": 0,
+   "candidates (saved outline only)": 0,
+   "lines": 2,
+   "n-fers": 0,
+   "not sure": 0,
+   "pass1": 3,
+   "pass2": 0,
+   "spots": 3,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-VA": {
+   "candidates": 111,
+   "candidates (saved outline only)": 0,
+   "lines": 458,
+   "n-fers": 28,
+   "not sure": 15,
+   "pass1": 521,
+   "pass2": 504,
+   "spots": 521,
+   "very tight": 5,
+   "water only": 3
+  },
+  "US-WV": {
+   "candidates": 0,
+   "candidates (saved outline only)": 0,
+   "lines": 45,
+   "n-fers": 8,
+   "not sure": 0,
+   "pass1": 289,
+   "pass2": 0,
+   "spots": 289,
+   "very tight": 0,
+   "water only": 0
+  }
+ }
+}

@@ -1,0 +1,27 @@
+name: KPC POTA activity - activations per park, whole world (weekly, branch tools-out)
+# Nov 1 2026 (chat 10; Brandon 7:59 PM 'in rank of activity in pota'). kpc_pota_activity.py reads POTA's public location lists
+# (the same calls the park-list bots make) -> tools-out pota/activity.json; the nightly missing lists rank by it. Never red.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '11 5 * * 0'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-pota-activity
+  cancel-in-progress: false
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - name: Activations per park
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../out origin/tools-out
+          mkdir -p ../out/pota && cp ../out/pota/activity.json data/pota/activity.json 2>/dev/null || true
+          python3 .github/scripts/kpc_pota_activity.py || true
+          cp data/pota/activity.json ../out/pota/activity.json 2>/dev/null || exit 0
+          cd ../out && git add pota/activity.json && git commit -qm "POTA activity $(date -u +%F)" && { for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep 9; done; } || true

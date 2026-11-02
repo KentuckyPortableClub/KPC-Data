@@ -1,0 +1,31 @@
+name: KPC gap filler (now the park detective)
+# Oct 28 2026: the gap filler grew into the PARK DETECTIVE (kpc-detective.yml, kpc_detective_bot.py, data/detective). This workflow is
+# kept so the earlier wiring still works: a manual run here just starts the detective with the same inputs. No schedule here
+# (the detective has the Monday one).
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-KY US-NV"); blank = next in queue'
+        default: ''
+      chunks:
+        description: 'How many 55-minute chunks (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow by themselves (0 = none)'
+        default: '6'
+permissions:
+  actions: write
+concurrency:
+  group: kpc-gapfill
+  cancel-in-progress: false
+jobs:
+  handoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Start the park detective with the same inputs
+        continue-on-error: true
+        run: gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks="${{ inputs.chunks }}" -f chain="${{ inputs.chain }}" || true

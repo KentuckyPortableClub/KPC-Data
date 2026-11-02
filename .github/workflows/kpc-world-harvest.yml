@@ -1,0 +1,104 @@
+name: KPC world harvester (hidden)
+# Oct 27 2026 (HQ 10:42 PM, built by Fable): explores OUTSIDE North America for official park GIS (protected-area and park
+# boundary layers) and writes LEADS to data/harvest/ for chat 8 to grade. Separate from the Discovery Bot (own scripts, own folder).
+# Manners are in the script (1 request per 2 s per server, robots.txt everywhere except ArcGIS's documented REST API paths on arcgis.com
+# hosts (HQ ruling Oct 27 10:57 PM), back-off, three strikes, metadata only, one country at a time).
+# A job = up to 5 chunks of 55 min, ONE commit per chunk (at most hourly). When countries remain and 'chain' allows, the job starts
+# the next job itself. Never fails except a failed save (a real break).
+on:
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: 'Country codes (e.g. "GB"); blank = the next unfinished countries in queue order'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when countries remain (0 = none)'
+        default: '4'
+      then_queue:
+        description: 'For named countries: "yes" = when they PASS (a known-good found + an A/B lead) start the queue; "always" = start the queue afterwards whatever the result'
+        default: ''
+      fresh:
+        description: 'yes = redo the named countries from nothing (new rules: their old leads and read list are cleared first)'
+        default: ''
+  schedule:
+    - cron: '43 9 * * 5'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Friday, the next unfinished countries in queue order
+permissions:
+  contents: write
+  actions: write
+env:   # the inputs with their defaults: a timed run has no inputs (Nov 1, chat 10)
+  I_COUNTRIES: ${{ inputs.countries || '' }}
+  I_CHUNKS: ${{ inputs.chunks || '5' }}
+  I_CHAIN: ${{ inputs.chain || '4' }}
+  I_THEN_QUEUE: ${{ inputs.then_queue || '' }}
+  I_FRESH: ${{ inputs.fresh || '' }}
+concurrency:
+  group: kpc-world-harvest
+  cancel-in-progress: false
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Chat 8's scouting + the answer keys (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Seed the country list from the scouting
+        continue-on-error: true
+        run: cd kpcdata && LINKS=../links python3 .github/scripts/kpc_world_seed.py || true
+      - name: Harvest in chunks, one save per chunk
+        continue-on-error: true
+        env:
+          COUNTRIES: ${{ env.I_COUNTRIES }}
+        run: |
+          cd kpcdata
+          N=${{ env.I_CHUNKS }}; [ "$N" -gt 5 ] && N=5
+          for i in $(seq 1 $N); do
+            F=0; [ "$i" = 1 ] && [ "${{ env.I_FRESH }}" = yes ] && F=1   # cleared once, in the first chunk only
+            FRESH=$F LINKS=../links MINUTES=55 python3 .github/scripts/kpc_world_harvest.py || true
+            python3 .github/scripts/kpc_status.py grade-me "world harvester" "$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=s.get('countries') or {};print(' '.join(k for k,v in c.items() if isinstance(v,dict) and (v.get('finished') or v.get('started'))==__import__('time').strftime('%Y-%m-%d'))[:120] or 'see state.json last_run')" 2>/dev/null)" "data/harvest/leads-<CC>.json" "chunk $i" || true   # Oct 28 (HQ automation, chat 10): one 'grade me' line per batch for chat 8
+            python3 .github/scripts/kpc_status.py board "world harvester" green "chunk $i saved" "chat 8 grades the leads" || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "world harvester: chunk $i (hidden leads)" data/harvest data/status || true
+            LEFT=$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=json.load(open('data/harvest/countries.json'))['countries'];print(sum(1 for k in c if s['countries'].get(k,{}).get('status')!='done'))" 2>/dev/null || echo 1)
+            echo "chunk $i done, $LEFT countries left"
+            if [ -n "$COUNTRIES" ]; then
+              D=$(python3 -c "import json,os;s=json.load(open('data/harvest/state.json'));print(all(s['countries'].get(k,{}).get('status')=='done' for k in os.environ['COUNTRIES'].split()))" 2>/dev/null || echo False)
+              [ "$D" = True ] && break
+            elif [ "$LEFT" = 0 ]; then break; fi
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+      - name: A passed test country starts the queue
+        if: ${{ env.I_COUNTRIES != '' && (env.I_THEN_QUEUE == 'yes' || env.I_THEN_QUEUE == 'always') }}
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          P=$(python3 -c "
+          import json,os
+          ok=True
+          for cc in os.environ['CC'].split():
+              d=json.load(open(f'data/harvest/leads-{cc}.json'))
+              ok = ok and bool(d.get('known_good_found')) and any(v.get('band') in ('A','B') for v in d['leads'].values())
+          print('PASS' if ok else 'FAIL')" 2>/dev/null || echo FAIL)
+          echo "::notice title=World harvester::test $CC: $P"
+          [ "${{ env.I_THEN_QUEUE }}" = always ] && P=PASS
+          [ "$P" = PASS ] && gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=${{ env.I_CHAIN }} && echo "::notice title=World harvester::the long run has started (queue order, ${{ env.I_CHAIN }} more jobs may follow)"
+          true
+        env:
+          CC: ${{ env.I_COUNTRIES }}
+      - name: Carry on in a new job when countries remain
+        if: ${{ env.I_COUNTRIES == '' && env.I_CHAIN != '0' }}
+        continue-on-error: true
+        run: |
+          [ "${LEFT:-0}" = 0 ] && { echo "::notice title=World harvester::queue finished"; exit 0; }
+          NEXT=$(( ${{ env.I_CHAIN }} - 1 ))
+          gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$NEXT && echo "::notice title=World harvester::$LEFT countries left: the next job starts by itself ($NEXT more allowed after it)"

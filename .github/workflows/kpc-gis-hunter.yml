@@ -1,0 +1,107 @@
+name: KPC GIS hunter (Fable lists, hidden)
+# Oct 29 2026 (chat 10, Opus; Fable's design KPC-Links .claude/build/research/KPC_GisHunter_Design_Fable.md; Brandon 9:32 PM 'build
+# it run US 1st ... then run Canada'). Searches the US / Canada Fable lists for OFFICIAL GIS layers (Rule G R-G7 steps 2-3).
+# Decides nothing: candidates -> data/waiting/questions/gis-hunter.json (chat 11 YES / NO), new layers -> data/intake/queue.json,
+# rows -> data/gis-hunter/worklog-<area>.md. Hidden data only (freeze). Dispatch only; chains itself; never goes red.
+on:
+  workflow_dispatch:
+    inputs:
+      country:
+        description: 'US or CA (used when areas is blank)'
+        default: 'US'
+      areas:
+        description: 'Areas, e.g. "US-IA US-RI" or "CA-PE" (blank = every open area of the country, fewest open parks first)'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow by themselves when areas remain (0 = none)'
+        default: '4'
+      pass:
+        description: 'A name for a full pass (e.g. key-2026-10-30): every area once more even if it ran today; blank = skip areas already run today'
+        default: ''
+      then:
+        description: 'When this country is finished, start this country next (e.g. CA); blank = stop'
+        default: ''
+  schedule:
+    - cron: '13 7 * * 1'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Monday one full pass, US then Canada
+permissions:
+  contents: write
+  actions: write
+env:   # the inputs with their defaults: a timed run has no inputs (Nov 1, chat 10)
+  I_COUNTRY: ${{ inputs.country || 'US' }}
+  I_AREAS: ${{ inputs.areas || '' }}
+  I_CHUNKS: ${{ inputs.chunks || '5' }}
+  I_CHAIN: ${{ inputs.chain || '4' }}
+  I_PASS: ${{ inputs.pass || (github.event_name == 'schedule' && format('weekly-{0}', github.run_id)) || '' }}
+  I_THEN: ${{ inputs.then || (github.event_name == 'schedule' && 'CA') || '' }}
+concurrency:
+  group: kpc-gis-hunter
+  cancel-in-progress: false
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: KPC-Links (the Fable pools + keys; read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            .claude/build/research
+            data/us-key
+            data/ca-key
+            data/parkinfo
+            kpc-ky-data.json
+            .github/scripts
+      - name: Hunt, one save per chunk
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          AREAS: ${{ env.I_AREAS }}
+          COUNTRY: ${{ env.I_COUNTRY }}
+          PASS: ${{ env.I_PASS }}
+        run: |
+          cd kpcdata
+          N=${{ env.I_CHUNKS }}; [ "$N" -gt 5 ] && N=5
+          for i in $(seq 1 $N); do
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || true; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
+            MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log || true
+            python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || true; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
+            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || true
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
+            [ "${L:-0}" = 0 ] && break
+          done
+      - name: The pass is finished -> website-name reads + the documents bot for the parks still without a find (HQ Oct 30 7:50 AM (1); notes only, the hunt itself is unchanged)
+        if: ${{ env.LEFT == '0' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_after_hunt.py ${{ env.I_AREAS }} | tee /tmp/after.txt || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || true
+          A=$(grep -o '^DOCS_AREAS=.*' /tmp/after.txt | cut -d= -f2)
+          [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || true
+      - name: Areas remain, so the next job starts itself
+        if: ${{ env.LEFT != '0' && env.LEFT != '' && env.I_CHAIN != '0' && env.I_AREAS == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          C=$(( ${{ env.I_CHAIN }} - 1 ))
+          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_COUNTRY }} -f areas= -f chunks=5 -f chain=$C -f pass="${{ env.I_PASS }}" -f then="${{ env.I_THEN }}" || true
+      - name: This country is finished, so the next country starts (then)
+        if: ${{ env.LEFT == '0' && env.I_THEN != '' && env.I_AREAS == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_THEN }} -f areas= -f chunks=5 -f chain=4 -f pass="${{ env.I_PASS }}" -f then= || true

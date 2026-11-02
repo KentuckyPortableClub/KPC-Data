@@ -1,0 +1,38 @@
+name: KPC tile index (nightly)
+# Nov 1 2026 (chat 3, Brandon: 'skip quietly' the map tiles for areas that have none): writes data/pota|sota|wwff/tiles.json =
+# {updated, keys: ["37_-86", ...]} from the tiles that exist, so the site only asks for real tiles (no 404s). Never goes red.
+on:
+  schedule:
+    - cron: '47 7 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-tile-index
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        continue-on-error: true
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            data/pota/tiles.json
+            data/sota/tiles.json
+            data/wwff/tiles.json
+          sparse-checkout-cone-mode: false
+      - name: Build the three indexes and save
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for p in pota sota wwff; do
+            mkdir -p data/$p
+            git ls-tree --name-only HEAD data/$p/t/ | sed -n 's#.*/\([-0-9]*_[-0-9]*\)\.json$#\1#p' | sort | python3 -c "import sys,json,datetime; k=[l.strip() for l in sys.stdin if l.strip()]; json.dump({'updated': datetime.date.today().isoformat(), 'keys': k}, open('data/$p/tiles.json','w'), separators=(',',':')); print('::notice title=tiles $p::%d tiles' % len(k))"
+          done
+          git add --sparse data/pota/tiles.json data/sota/tiles.json data/wwff/tiles.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm 'Tile index (pota / sota / wwff)'
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          true

@@ -1,0 +1,48 @@
+# CZ: POTA parks vs official land
+
+Built by `.github/scripts/kpc_world_key.py` (date: data/status/kpc_world_key.json) from: EEA Natura 2000, EEA nationally designated areas. **193 of 232** joined (same name + same kind), **22** to check, **17** nothing found. Nothing below is joined.
+
+## To check (not joined)
+
+- **CZ-0038** Hromnické jezírko Nature Monument (Nature Monument) → Hromnické jezírko (EEA nationally designated areas, similar name)
+- **CZ-0041** Rohatiny Nature Park (Nature Park) → Štola Rohatiny I (EEA Natura 2000, similar name)
+- **CZ-0045** Svatošské skály Nature Monument (Nature Monument) → Svatošské skály (EEA nationally designated areas, similar name); Slavkovský les (EEA nationally designated areas, the POTA pin is inside it (different name))
+- **CZ-0055** Homolka – Vojířov Nature Park (Nature Park) → Třeboňsko (EEA Natura 2000, the POTA pin is inside it (different name))
+- **CZ-0057** Chrašická stráň Nature Monument (Nature Monument) → Chrašická stráň (EEA nationally designated areas, similar name)
+- **CZ-0059** Podskala Nature Monument (Nature Monument) → Podskala (EEA nationally designated areas, similar name)
+- **CZ-0069** Čertova zeď National Monument (National Monument) → Čertova zeď (EEA nationally designated areas, similar name)
+- **CZ-0070** Teletínský lom Nature Monument (Nature Monument) → Teletínský lom (EEA nationally designated areas, similar name)
+- **CZ-0081** Babiččino údolí National Monument (National Monument) → Babiččino údolí - Rýzmburk (EEA Natura 2000, similar name); Babiččino údolí (EEA nationally designated areas, similar name)
+- **CZ-0084** Polické stěny National Monument (National Monument) → Polické stěny (EEA nationally designated areas, similar name); Broumovské stěny (EEA Natura 2000, the POTA pin is inside it (different name)); Broumovsko (EEA Natura 2000, the POTA pin is inside it (different name)); Broumovsko (EEA nationally designated areas, the POTA pin is inside it (different name))
+- **CZ-0087** Pískovcové sloupky Nature Monument (Nature Monument) → Pískovcové sloupky (EEA nationally designated areas, similar name); Broumovsko (EEA nationally designated areas, the POTA pin is inside it (different name))
+- **CZ-0090** Bonetice Nature Monument (Nature Monument) → Bonětice (EEA Natura 2000, similar name); Bonětice (EEA nationally designated areas, similar name)
+- **CZ-0094** Kopeckeho pramen Nature Monument (Nature Monument) → Kopeckého pramen (EEA nationally designated areas, similar name)
+- **CZ-0095** Malesicka skala Nature Monument (Nature Monument) → Malesická skála (EEA nationally designated areas, similar name)
+- **CZ-0100** Ejpovicke utesy Nature Monument (Nature Monument) → Ejpovické útesy (EEA nationally designated areas, similar name)
+- **CZ-0141** Dalejský profil National Monument (National Monument) → Dalejský profil (EEA nationally designated areas, similar name)
+- **CZ-0143** Americká zahrada National Monument (National Monument) → Americká zahrada (EEA nationally designated areas, similar name)
+- **CZ-0144** Barrandovské skály National Monument (National Monument) → Barrandovské skály (EEA nationally designated areas, similar name)
+- **CZ-0199** Střítežská rokle Nature Monument (Nature Monument) → Střítežská rokle (EEA nationally designated areas, similar name)
+- **CZ-0211** Kačina Nature Monument (Nature Monument) → Kačina (EEA Natura 2000, similar name); Kačina (EEA nationally designated areas, similar name)
+- **CZ-0227** Petřín National Monument (National Monument) → Petřín (EEA nationally designated areas, similar name)
+- **CZ-0230** Černý Nadýmač National Monument (National Monument) → Černý Nadýmač (EEA Natura 2000, similar name); Černý Nadýmač (EEA nationally designated areas, similar name)
+
+## Nothing found
+
+- CZ-0040 Berounka Nature Park (Nature Park)
+- CZ-0042 Manětínská Nature Park (Nature Park)
+- CZ-0043 Javořická vrchovina Nature Park (Nature Park)
+- CZ-0047 Čeřínek Nature Park (Nature Park)
+- CZ-0048 Česká Kanada Nature Park (Nature Park)
+- CZ-0056 Zelenov Nature Park (Nature Park)
+- CZ-0063 Radeč Nature Park (Nature Park)
+- CZ-0075 Trhoň Nature Park (Nature Park)
+- CZ-0076 Džbány-Žebrák Nature Park (Nature Park)
+- CZ-0115 Hostivar-Zabehlice Nature Park (Nature Park)
+- CZ-0128 Plánický hřeben Nature Park (Nature Park)
+- CZ-0129 Kakov - Plánický hřeben Nature Park (Nature Park)
+- CZ-0130 Svratecká hornatina Nature Park (Nature Park)
+- CZ-0131 Lysicko Nature Park (Nature Park)
+- CZ-0132 Halasovo Kunštátsko Nature Park (Nature Park)
+- CZ-0138 Pod Stedrym Nature Park (Nature Park)
+- CZ-0139 Ještěd Nature Park (Nature Park)

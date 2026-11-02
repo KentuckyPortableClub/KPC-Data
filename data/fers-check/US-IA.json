@@ -1,0 +1,1538 @@
+{
+ "area": "US-IA",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-IA.json",
+ "rows": {
+  "US-0268+US-9310@area@41.502,-95.988": {
+   "id": "US-0268+US-9310@area@41.502,-95.988",
+   "area": "US-IA",
+   "refs": [
+    "US-0268",
+    "US-9310"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:33:33Z",
+   "layers": [
+    {
+     "ref": "US-0268",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:34Z"
+    },
+    {
+     "ref": "US-0268",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:33:37Z"
+    },
+    {
+     "ref": "US-9310",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:42Z"
+    },
+    {
+     "ref": "US-9310",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:43Z"
+    },
+    {
+     "ref": "US-9310",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:33:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.83,
+   "live_acres": 4.3,
+   "kept_pct": 100.0,
+   "size_pct": -10.9,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 18.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-0268: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [94231] | US-0268: found by name 'Desoto National Wildlife Refuge' near the spot as new id(s) [None] | US-9310: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [95184, 95781] | US-9310: found by name 'Nobles Lake WMA' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 4.3 ac vs 4.8 ac stored (-11%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    41.502353,
+    -95.98814
+   ]
+  },
+  "US-0922+US-4664@area@43.099,-91.226": {
+   "id": "US-0922+US-4664@area@43.099,-91.226",
+   "area": "US-IA",
+   "refs": [
+    "US-0922",
+    "US-4664"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 9.2,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:33:46Z",
+   "layers": [
+    {
+     "ref": "US-0922",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:46Z"
+    },
+    {
+     "ref": "US-0922",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:33:49Z"
+    },
+    {
+     "ref": "US-4664",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:53Z"
+    },
+    {
+     "ref": "US-4664",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "7 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:54Z"
+    },
+    {
+     "ref": "US-4664",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "17 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:05Z"
+    },
+    {
+     "ref": "US-4664",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "17 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:10Z"
+    },
+    {
+     "ref": "US-4664",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "13 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.64,
+   "live_acres": 7.5,
+   "kept_pct": 100.0,
+   "size_pct": -1.8,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 36.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-0922: 4 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96796, 93052, 93053, 94189] | US-0922: found by name 'Effigy Mounds National Monument' near the spot as new id(s) [None] | US-4664: 17 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [96806, 96797, 96801, 97267, 93147, 96802, 96795, 93708] | US-4664: found by name 'Yellow River State Forest' near the spot as new id(s) [None] | US-4664: 17 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96806, 96797, 96801, 97267, 93147, 96802, 96795, 93708] | US-4664: found ",
+   "live_center": [
+    43.098664,
+    -91.226035
+   ]
+  },
+  "US-10174+US-5736@area@43.468,-95.123": {
+   "id": "US-10174+US-5736@area@43.468,-95.123",
+   "area": "US-IA",
+   "refs": [
+    "US-10174",
+    "US-5736"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 39.8,
+   "stored_wide_m": 205,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:34:15Z",
+   "layers": [
+    {
+     "ref": "US-10174",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:15Z"
+    },
+    {
+     "ref": "US-10174",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:16Z"
+    },
+    {
+     "ref": "US-10174",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:22Z"
+    },
+    {
+     "ref": "US-10174",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:34:25Z"
+    },
+    {
+     "ref": "US-5736",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:34:26Z"
+    },
+    {
+     "ref": "US-5736",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:27Z"
+    },
+    {
+     "ref": "US-5736",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:30Z"
+    },
+    {
+     "ref": "US-5736",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 38.35,
+   "live_acres": 37.94,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 199.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-10174: 3 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [95709, 93127, 93128] | US-10174: found by name 'Marble Lake' near the spot as new id(s) [None] | US-10174: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93127, 93128] | US-10174: found by name 'Marble Beach State Recreation Area' near the spot as new id(s) [None, None] | US-5736: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [94112] | US-5736: found by name 'Templar State Recreation Area' near the spot as new id(s) [None] | US-5736: 1 key reco",
+   "live_center": [
+    43.467177,
+    -95.123188
+   ]
+  },
+  "US-10953+US-2303@area@41.988,-93.880": {
+   "id": "US-10953+US-2303@area@41.988,-93.880",
+   "area": "US-IA",
+   "refs": [
+    "US-10953",
+    "US-2303"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 95.3,
+   "stored_wide_m": 465,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:34:34Z",
+   "layers": [
+    {
+     "ref": "US-10953",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:35Z"
+    },
+    {
+     "ref": "US-10953",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:37Z"
+    },
+    {
+     "ref": "US-10953",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:39Z"
+    },
+    {
+     "ref": "US-2303",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:41Z"
+    },
+    {
+     "ref": "US-2303",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:42Z"
+    },
+    {
+     "ref": "US-2303",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:48Z"
+    },
+    {
+     "ref": "US-2303",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 94.07,
+   "live_acres": 93.49,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 468.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-10953: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [95688] | US-10953: found by name 'Mccoy WMA' near the spot as new id(s) [None] | US-2303: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [94258] | US-2303: found by name 'Ledges State Park' near the spot as new id(s) [None] | US-2303: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [94258] | US-2303: found by name 'Ledges State Park' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 93.5 ac vs 94.1 ac stored (-1%), 100% of the sto",
+   "live_center": [
+    41.988124,
+    -93.880447
+   ]
+  },
+  "US-11875+US-9308@area@40.858,-95.747": {
+   "id": "US-11875+US-9308@area@40.858,-95.747",
+   "area": "US-IA",
+   "refs": [
+    "US-11875",
+    "US-9308"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.4,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:34:52Z",
+   "layers": [
+    {
+     "ref": "US-11875",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:53Z"
+    },
+    {
+     "ref": "US-11875",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:34:56Z"
+    },
+    {
+     "ref": "US-11875",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:34:59Z"
+    },
+    {
+     "ref": "US-9308",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:01Z"
+    },
+    {
+     "ref": "US-9308",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:06Z"
+    },
+    {
+     "ref": "US-9308",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.93,
+   "live_acres": 2.55,
+   "kept_pct": 100.0,
+   "size_pct": -25.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 23.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "RECORD CHANGED",
+   "why": "US-11875: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [97109] | US-11875: found by name 'Blackburn State Park' near the spot as new id(s) [None] | US-11875: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [97109] | US-11875: found by name 'Blackburn State Park' near the spot as new id(s) [None] | US-9308: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [97106, 97111] | US-9308: found by name 'Green Hollow WMA' near the spot as new id(s) [None, None] (geometry now: CONFIRMED: live overlap 2.6 ac vs 3.4 ac sto",
+   "live_center": [
+    40.857972,
+    -95.746441
+   ]
+  },
+  "US-12192+US-2316@area@41.892,-95.917": {
+   "id": "US-12192+US-2316@area@41.892,-95.917",
+   "area": "US-IA",
+   "refs": [
+    "US-12192",
+    "US-2316"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 12.6,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:35:15Z",
+   "layers": [
+    {
+     "ref": "US-12192",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:16Z"
+    },
+    {
+     "ref": "US-12192",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:17Z"
+    },
+    {
+     "ref": "US-12192",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:19Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:22Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:23Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:26Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.11,
+   "live_acres": 7.91,
+   "kept_pct": 100.0,
+   "size_pct": -13.2,
+   "moved_m": 1711,
+   "gap_m": 0,
+   "wide_m": 14.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-12192: 4 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96920, 97061, 97178, 95392] | US-12192: found by name 'Loess Hills WMA' near the spot as new id(s) [None] | US-2316: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93166] | US-2316: found by name 'Preparation Canyon State Park' near the spot as new id(s) [None] | US-2316: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93166] | US-2316: found by name 'Preparation Canyon State Park' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overl",
+   "live_center": [
+    41.888852,
+    -95.905487
+   ]
+  },
+  "US-2277+US-4655@same land@42.640,-91.548": {
+   "id": "US-2277+US-4655@same land@42.640,-91.548",
+   "area": "US-IA",
+   "refs": [
+    "US-2277",
+    "US-4655"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:35:30Z",
+   "layers": [
+    {
+     "ref": "US-2277",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:30Z"
+    },
+    {
+     "ref": "US-2277",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:31Z"
+    },
+    {
+     "ref": "US-2277",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:34Z"
+    },
+    {
+     "ref": "US-2277",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:37Z"
+    },
+    {
+     "ref": "US-2277",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:35:39Z"
+    },
+    {
+     "ref": "US-4655",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:40Z"
+    },
+    {
+     "ref": "US-4655",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:42Z"
+    },
+    {
+     "ref": "US-4655",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:45Z"
+    },
+    {
+     "ref": "US-4655",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:48Z"
+    },
+    {
+     "ref": "US-4655",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:35:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 184.73,
+   "live_acres": 0.73,
+   "kept_pct": 1.6,
+   "size_pct": -99.6,
+   "moved_m": 392,
+   "gap_m": 0,
+   "wide_m": 7.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-2277: 3 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93059, 93058, 97209] | US-2277: found by name 'Backbone State Park' near the spot as new id(s) [None, None] | US-2277: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93059, 97209] | US-2277: found by name 'Backbone State Park' near the spot as new id(s) [None, None] | US-4655: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93058] | US-4655: found by name 'Backbone State Forest' near the spot as new id(s) [None] | US-4655: 1 key record id(s) no l",
+   "live_center": [
+    42.636473,
+    -91.5475
+   ]
+  },
+  "US-2284+US-2306@area@43.120,-93.459": {
+   "id": "US-2284+US-2306@area@43.120,-93.459",
+   "area": "US-IA",
+   "refs": [
+    "US-2284",
+    "US-2306"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 4.1,
+   "stored_wide_m": 39,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:35:51Z",
+   "layers": [
+    {
+     "ref": "US-2284",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:35:51Z"
+    },
+    {
+     "ref": "US-2284",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:52Z"
+    },
+    {
+     "ref": "US-2284",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "6 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:55Z"
+    },
+    {
+     "ref": "US-2284",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:35:59Z"
+    },
+    {
+     "ref": "US-2306",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:00Z"
+    },
+    {
+     "ref": "US-2306",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:01Z"
+    },
+    {
+     "ref": "US-2306",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:04Z"
+    },
+    {
+     "ref": "US-2306",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:07Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T00:36:09Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 12,
+     "read": "2026-11-01T00:36:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 67.9,
+   "stored_water_pct": 80,
+   "stored_shape_acres": 3.02,
+   "live_acres": 1.74,
+   "kept_pct": 91.4,
+   "size_pct": -42.4,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 30.4,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-2284: 4 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93844, 96794, 93227, 96793] | US-2284: found by name 'Clear Lake' near the spot as new id(s) [None] | US-2284: 6 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [96794, 93354, 93077, 93078, 93076, 96793] | US-2284: found by name 'Clear Lake State Park' near the spot as new id(s) [None, None] | US-2306: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93132] | US-2306: found by name 'McIntosh Woods State Park' near the spot as new id(s) [None] | US-230",
+   "live_center": [
+    43.118067,
+    -93.459932
+   ]
+  },
+  "US-2294+US-4573@trail@40.694,-91.982": {
+   "id": "US-2294+US-4573@trail@40.694,-91.982",
+   "area": "US-IA",
+   "refs": [
+    "US-2294",
+    "US-4573"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.36,
+   "stored_wide_m": 14.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:36:10Z",
+   "layers": [
+    {
+     "ref": "US-2294",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:10Z"
+    },
+    {
+     "ref": "US-2294",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:13Z"
+    },
+    {
+     "ref": "US-2294",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:15Z"
+    },
+    {
+     "ref": "US-2294",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:36:16Z"
+    },
+    {
+     "ref": "US-4573",
+     "layer": "saved copy US-4573.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4573"
+   ],
+   "live_stretch_acres": 0.26,
+   "stored_shape_acres": 3.36,
+   "live_acres": 0.26,
+   "kept_pct": 25.4,
+   "size_pct": -92.1,
+   "moved_m": 32,
+   "gap_m": 0,
+   "wide_m": 9.7,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-2294: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93732, 96772] | US-2294: found by name 'Lacey-Keosauqua State Park' near the spot as new id(s) [None, None] | US-2294: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93732, 96772] | US-2294: found by name 'Lacey-Keosauqua State Park' near the spot as new id(s) [None, None] (geometry now: SHRUNK: live overlap is 92% smaller (0.3 ac vs 3.4 ac stored))",
+   "live_center": [
+    40.694442,
+    -91.981739
+   ]
+  },
+  "US-2294+US-4661@area@40.719,-92.001": {
+   "id": "US-2294+US-4661@area@40.719,-92.001",
+   "area": "US-IA",
+   "refs": [
+    "US-2294",
+    "US-4661"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 15.6,
+   "stored_wide_m": 85,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:36:17Z",
+   "layers": [
+    {
+     "ref": "US-2294",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:18Z"
+    },
+    {
+     "ref": "US-2294",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:20Z"
+    },
+    {
+     "ref": "US-2294",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:21Z"
+    },
+    {
+     "ref": "US-2294",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:36:29Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:29Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:31Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "12 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:33Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:36Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "7 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 12.42,
+   "live_acres": 10.95,
+   "kept_pct": 95.9,
+   "size_pct": -11.8,
+   "moved_m": 2113,
+   "gap_m": 0,
+   "wide_m": 20.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-2294: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93732, 96772] | US-2294: found by name 'Lacey-Keosauqua State Park' near the spot as new id(s) [None, None] | US-2294: 2 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93732, 96772] | US-2294: found by name 'Lacey-Keosauqua State Park' near the spot as new id(s) [None, None] | US-4661: 12 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [96812, 96813, 94283, 96811, 94016, 94284, 94282, 96816] | US-4661: found by name 'Shimek State Forest' near the spot",
+   "live_center": [
+    40.703832,
+    -91.986933
+   ]
+  },
+  "US-2300+US-4573@trail@41.218,-95.860": {
+   "id": "US-2300+US-4573@trail@41.218,-95.860",
+   "area": "US-IA",
+   "refs": [
+    "US-2300",
+    "US-4573"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.22,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:36:40Z",
+   "layers": [
+    {
+     "ref": "US-2300",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:41Z"
+    },
+    {
+     "ref": "US-2300",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:45Z"
+    },
+    {
+     "ref": "US-2300",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:47Z"
+    },
+    {
+     "ref": "US-2300",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:50Z"
+    },
+    {
+     "ref": "US-4573",
+     "layer": "saved copy US-4573.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4573"
+   ],
+   "live_stretch_acres": 0.12,
+   "stored_shape_acres": 0.16,
+   "live_acres": 0.12,
+   "kept_pct": 100.0,
+   "size_pct": -24.8,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 11.7,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-2300: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93797] | US-2300: found by name 'Lake Manawa State Park' near the spot as new id(s) [None] | US-2300: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93797] | US-2300: found by name 'Lake Manawa State Park' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 0.1 ac vs 0.2 ac stored (-25%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    41.218146,
+    -95.860556
+   ]
+  },
+  "US-2316+US-4659@area@41.892,-95.917": {
+   "id": "US-2316+US-4659@area@41.892,-95.917",
+   "area": "US-IA",
+   "refs": [
+    "US-2316",
+    "US-4659"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 16.1,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:36:51Z",
+   "layers": [
+    {
+     "ref": "US-2316",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:51Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:52Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:53Z"
+    },
+    {
+     "ref": "US-2316",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:57Z"
+    },
+    {
+     "ref": "US-4659",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:36:58Z"
+    },
+    {
+     "ref": "US-4659",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "14 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:36:59Z"
+    },
+    {
+     "ref": "US-4659",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "14 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:37:02Z"
+    },
+    {
+     "ref": "US-4659",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:37:05Z"
+    },
+    {
+     "ref": "US-4659",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "14 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:37:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 12.37,
+   "live_acres": 11.49,
+   "kept_pct": 100.0,
+   "size_pct": -7.2,
+   "moved_m": 1711,
+   "gap_m": 0,
+   "wide_m": 14.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-2316: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93166] | US-2316: found by name 'Preparation Canyon State Park' near the spot as new id(s) [None] | US-2316: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [93166] | US-2316: found by name 'Preparation Canyon State Park' near the spot as new id(s) [None] | US-4659: 14 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [93167, 93779, 96848, 93263, 96846, 97309, 96847, 93119] | US-4659: found by name 'Loess Hills State Forest' near the spot as new id(s) [",
+   "live_center": [
+    41.888852,
+    -95.905487
+   ]
+  },
+  "US-4573+US-4661@trail@40.594,-91.694": {
+   "id": "US-4573+US-4661@trail@40.594,-91.694",
+   "area": "US-IA",
+   "refs": [
+    "US-4573",
+    "US-4661"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 8.15,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:37:07Z",
+   "layers": [
+    {
+     "ref": "US-4573",
+     "layer": "saved copy US-4573.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:37:07Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "5 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:37:08Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "12 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:37:09Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:37:11Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "7 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:37:13Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4573"
+   ],
+   "live_stretch_acres": 7.72,
+   "stored_shape_acres": 7.39,
+   "live_acres": 7.72,
+   "kept_pct": 100.0,
+   "size_pct": 4.4,
+   "moved_m": 212,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-4661: 12 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [96812, 96813, 94283, 96811, 94016, 94284, 94282, 96816] | US-4661: found by name 'Shimek State Forest' near the spot as new id(s) [None, None, None, None, None] | US-4661: 12 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96812, 96813, 94283, 96811, 94016, 94284, 94282, 96816] | US-4661: found by name 'Shimek State Forest' near the spot as new id(s) [None, None, None, None, None] (geometry now: CONFIRMED: live overlap 7.7 ac vs 7.4 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    40.592487,
+    -91.691596
+   ]
+  },
+  "US-4573+US-9301@trail@40.694,-91.984": {
+   "id": "US-4573+US-9301@trail@40.694,-91.984",
+   "area": "US-IA",
+   "refs": [
+    "US-4573",
+    "US-9301"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 0.69,
+   "stored_wide_m": 36.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:37:13Z",
+   "layers": [
+    {
+     "ref": "US-4573",
+     "layer": "saved copy US-4573.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:37:13Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:37:14Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:37:46Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4573"
+   ],
+   "live_stretch_acres": 0.9,
+   "stored_shape_acres": 0.52,
+   "live_acres": 0.52,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 32,
+   "gap_m": 0,
+   "wide_m": 29.6,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9301: 9 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96770, 94943, 95543, 96771, 95623, 95622, 94942, 94941] | US-9301: found by name 'Lake Sugema WMA' near the spot as new id(s) [None, None] (geometry now: CONFIRMED: live overlap 0.5 ac vs 0.5 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    40.694486,
+    -91.985235
+   ]
+  },
+  "US-4573+US-9301@trail@40.709,-92.030": {
+   "id": "US-4573+US-9301@trail@40.709,-92.030",
+   "area": "US-IA",
+   "refs": [
+    "US-4573",
+    "US-9301"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 28.31,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:37:49Z",
+   "layers": [
+    {
+     "ref": "US-4573",
+     "layer": "saved copy US-4573.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:37:49Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:37:49Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:37:50Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4573"
+   ],
+   "live_stretch_acres": 26.4,
+   "stored_shape_acres": 26.78,
+   "live_acres": 26.4,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 35,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9301: 9 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96770, 94943, 95543, 96771, 95623, 95622, 94942, 94941] | US-9301: found by name 'Lake Sugema WMA' near the spot as new id(s) [None, None, None, None, None] (geometry now: CONFIRMED: live overlap 26.4 ac vs 26.8 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    40.708643,
+    -92.029852
+   ]
+  },
+  "US-4573+US-9315@trail@41.089,-94.256": {
+   "id": "US-4573+US-9315@trail@41.089,-94.256",
+   "area": "US-IA",
+   "refs": [
+    "US-4573",
+    "US-9315"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.17,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:37:51Z",
+   "layers": [
+    {
+     "ref": "US-4573",
+     "layer": "saved copy US-4573.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9315",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:37:52Z"
+    },
+    {
+     "ref": "US-9315",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:37:53Z"
+    },
+    {
+     "ref": "US-9315",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:37:55Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4573"
+   ],
+   "live_stretch_acres": 0.08,
+   "stored_shape_acres": 1.55,
+   "live_acres": 0.08,
+   "kept_pct": 16.1,
+   "size_pct": -94.7,
+   "moved_m": 23,
+   "gap_m": 0,
+   "wide_m": 14.8,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9315: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [95645] | US-9315: found by name 'Three Mile Lake WMA' near the spot as new id(s) [None] (geometry now: SHRUNK: live overlap is 95% smaller (0.1 ac vs 1.6 ac stored))",
+   "live_center": [
+    41.089009,
+    -94.256186
+   ]
+  },
+  "US-4661+US-9301@area@40.705,-92.004": {
+   "id": "US-4661+US-9301@area@40.705,-92.004",
+   "area": "US-IA",
+   "refs": [
+    "US-4661",
+    "US-9301"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 54.5,
+   "stored_wide_m": 353,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:37:57Z",
+   "layers": [
+    {
+     "ref": "US-4661",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:37:57Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:37:59Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "how": "12 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:38:00Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:38:02Z"
+    },
+    {
+     "ref": "US-4661",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+     "how": "7 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:38:04Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:38:04Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:38:05Z"
+    },
+    {
+     "ref": "US-9301",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:38:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 53.66,
+   "live_acres": 53.6,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 348.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-4661: 12 key record id(s) no longer in programs.iowadnr.gov/geospatial/Recreation/State_Parks_Trails/MapServer/2/query: [96812, 96813, 94283, 96811, 94016, 94284, 94282, 96816] | US-4661: found by name 'Shimek State Forest' near the spot as new id(s) [None] | US-4661: 12 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96812, 96813, 94283, 96811, 94016, 94284, 94282, 96816] | US-4661: found by name 'Shimek State Forest' near the spot as new id(s) [None] | US-9301: 9 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [96770, 94943, 95543, 96771, 95623, 95622, 94942, 94941] | US-93",
+   "live_center": [
+    40.705233,
+    -92.003633
+   ]
+  },
+  "US-9326+US-9327@area@42.978,-95.427": {
+   "id": "US-9326+US-9327@area@42.978,-95.427",
+   "area": "US-IA",
+   "refs": [
+    "US-9326",
+    "US-9327"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.5,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T00:38:07Z",
+   "layers": [
+    {
+     "ref": "US-9326",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:38:08Z"
+    },
+    {
+     "ref": "US-9326",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:38:09Z"
+    },
+    {
+     "ref": "US-9326",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:38:10Z"
+    },
+    {
+     "ref": "US-9327",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:38:13Z"
+    },
+    {
+     "ref": "US-9327",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:38:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.36,
+   "live_acres": 0.3,
+   "kept_pct": 100.0,
+   "size_pct": -17.9,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 14.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9326: 7 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [95615, 96902, 95129, 95686, 95926, 96989, 97075] | US-9326: found by name 'Waterman Prairie Complex' near the spot as new id(s) [None] | US-9327: 1 key record id(s) no longer in programs.iowadnr.gov/geospatial/Boundaries/Public_Lands/MapServer/0/query: [94920] | US-9327: found by name 'Wittrock Indian Village State Preserve' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 0.3 ac vs 0.4 ac stored (-18%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.978301,
+    -95.426534
+   ]
+  }
+ },
+ "started": "2026-11-01T00:33:33Z",
+ "fers_sha256": "70b0661d33bcfe5af325962b312bf40e50eef8e83f7fa9221492091ac46750e3",
+ "live_rows": 18,
+ "skipped_rows": 19,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:35Z",
+ "complete": true,
+ "summary": {
+  "rows": 18,
+  "verdicts": {
+   "CONFIRMED": 0,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 18,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 13,
+   "water-only": 1,
+   "trail line from the club saved copy (not re-read live)": 6
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json"
+ ],
+ "requests_this_run": 1030
+}

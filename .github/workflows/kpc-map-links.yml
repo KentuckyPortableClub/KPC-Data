@@ -1,0 +1,67 @@
+name: KPC map-page link extractor (agency map pages -> official park maps; merged through the waiting room)
+# Oct 31 2026 (chat 10; HQ 5:45 PM, Brandon 'let him look to fix map page link'): the outside coder's link extractor
+# (.github/scripts/tools/kpc_map_links), fixed: a 403 page is opened in its headless browser (tnstateparks.com, tn.gov/twra);
+# national index pages (Forest Service, FWS, NPS, BLM) are replaced by each unit's own page. test=yes = Tennessee only.
+# Answers -> data/intake/docs-found-maplinks(.json|-possible.json) -> kpc_docs_merge.py (opens + names the park, never a sign /
+# logo, never over an ok map; waiting room; chat 11). By hand; chains while agencies are left. Never red.
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'yes = Tennessee only'
+        default: 'yes'
+  schedule:
+    - cron: '11 5 2 * *'   # monthly, whole US (chat 10 Oct 31: HQ 9:25 PM 'wired, not hand fed')
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-map-links
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: The side branch (resume state, tools-out links/)
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true
+      - name: Extract
+        id: x
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          pip install -q -r .github/scripts/tools/kpc_map_links/requirements.txt || true
+          python -m playwright install --with-deps chromium >/dev/null 2>&1 || true
+          D=../out/links2${{ inputs.test == 'yes' && '-test' || '' }}
+          python3 .github/scripts/kpc_tools_run.py prep-links "${{ inputs.test }}" $D-in || true
+          set +e
+          python3 .github/scripts/tools/kpc_map_links/kpc_map_links.py --agencies $D-in/agency_pages.json --out $D --resume --max-minutes 50 2>&1 | tail -25
+          [ "${PIPESTATUS[0]}" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
+          python3 .github/scripts/kpc_tools_run.py post-links $D || true
+          cd ../out && git add -A && git commit -qm "map links (run ${{ github.run_id }})" && git push -q origin tools-out || true
+          cd ../kpcdata && bash ../links/.github/scripts/kpc_push_data.sh . "map-page link extractor: finds (merged through the waiting room)" data/intake/docs-found-maplinks.json data/intake/docs-found-maplinks-possible.json || true
+      - name: Merge what it found / next run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ steps.x.outputs.more }}" = yes ]; then gh workflow run kpc-map-links.yml -R ${{ github.repository }} --ref main -f test="${{ inputs.test }}" || true
+          else gh workflow run kpc-docs-merge.yml -R ${{ github.repository }} --ref main || true; fi

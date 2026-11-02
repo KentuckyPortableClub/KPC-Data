@@ -1,0 +1,47 @@
+{
+ "K4TEST-01": {
+  "county": "K4test County, KY (21999)",
+  "layer_url": "https://gis.k4test.example.gov/arcgis/rest/services/Parcels/MapServer/0",
+  "owner": "CITY OF K4TEST",
+  "owner_type": "government",
+  "parcel_id": "100-01",
+  "acres": 12.5,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "100-02",
+    "acres": 3.25,
+    "dist_m": 531
+   }
+  ],
+  "why": "parcel layer from the --known list; asked at the pin (plain); parcel 100-01; owner type government because the owner name says \"CITY OF\"; acres: the county map's ACRES field; 1 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://gis.k4test.example.gov/arcgis/rest/services/Parcels/MapServer/0/query",
+  "read_date": "X"
+ },
+ "K4TEST-02": {
+  "county": "K4test County, KY (21999)",
+  "layer_url": "https://gis.k4test.example.gov/arcgis/rest/services/Parcels/MapServer/0",
+  "owner": "private",
+  "owner_type": "private",
+  "parcel_id": "200-01",
+  "acres": 40.0,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "200-07",
+    "acres": 5.0,
+    "dist_m": 421
+   }
+  ],
+  "why": "parcel layer from the --known list; the pin's own parcel is not a government's, but 1 government-owned parcel(s) lie within 300 m (nearest 155 m): the pin may sit just off the park; asked at the pin (plain); parcel 200-01; owner type private because the owner name looks like a person's name (no government word); acres: the county map's ACRES field; 1 more parcel(s) with the same owner name within 1 km. The owner is written only as \"private\" (club rule 9: no names of private owners).",
+  "source_url": "https://gis.k4test.example.gov/arcgis/rest/services/Parcels/MapServer/0/query",
+  "read_date": "X",
+  "nearby_government_parcels": [
+   {
+    "parcel_id": "200-02",
+    "owner": "K4TEST COUNTY FISCAL COURT",
+    "acres": 8.0,
+    "dist_m": 155
+   }
+  ],
+  "owner_withheld": true
+ }
+}

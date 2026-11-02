@@ -1,0 +1,682 @@
+{
+ "area": "CA-NS",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/CA-NS.json",
+ "rows": {
+  "CA-0013+CA-1818@area@46.821,-60.756": {
+   "id": "CA-0013+CA-1818@area@46.821,-60.756",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0013",
+    "CA-1818"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 29.0,
+   "stored_wide_m": 25,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:35Z",
+   "layers": [
+    {
+     "ref": "CA-0013",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:27:36Z"
+    },
+    {
+     "ref": "CA-1818",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:27:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 16.37,
+   "live_acres": 14.26,
+   "kept_pct": 89.5,
+   "size_pct": -12.9,
+   "moved_m": 1111,
+   "gap_m": 0,
+   "wide_m": 18.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.3 ac vs 16.4 ac stored (-13%), 89% of the stored overlap still inside (10 m tolerance); note: CA-0013: key record Nova Scotia ~2:131 names a layer prefix not in us-key/layers.json | CA-0013: key record NS-PPA Nova :131 names a layer prefix not in us-key/layers.json | CA-0013: key record Nova Scotia :35 names a layer prefix not in us-key/layers.json | CA-0013: key record Nova Scotia ~2:130 names a layer prefix not in us-key/layers.json | CA-0013: key record NS-PPA Nova :130 names a layer prefix not in us-key/layers.json | CA-0013: key record Nova Scotia :34 names a layer prefix not in us-key/layers.json | CA-1818: key record Nova Scotia ~2:173 names a layer prefix not in us-key/layers.json | CA-1818: key record NS-PPA Nova :173 names a layer prefix not in us-key/layers.json | CA-1818: key record Nova Scotia :77 names a layer prefix not in us-key/layers.json | CA-1818: key record Nova Scotia ~2:613 names a layer prefix not in us-key/layers.json | CA-1818: key record NS-PPA Nova :613 names a layer prefix not in us-key/layers.json | CA-1818: key record Nova Scotia :517 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    46.819763,
+    -60.732449
+   ]
+  },
+  "CA-0016+CA-1718@same land@45.792,-64.248": {
+   "id": "CA-0016+CA-1718@same land@45.792,-64.248",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0016",
+    "CA-1718"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:39Z",
+   "layers": [
+    {
+     "ref": "CA-0016",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:27:40Z"
+    },
+    {
+     "ref": "CA-1718",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:27:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1068.25,
+   "live_acres": 1009.5,
+   "kept_pct": 95.0,
+   "size_pct": -5.5,
+   "moved_m": 199,
+   "gap_m": 0,
+   "wide_m": 1463.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1009.5 ac vs 1068.3 ac stored (-6%), 95% of the stored overlap still inside (10 m tolerance); note: CA-0016: key record Nova Scotia ~2:156 names a layer prefix not in us-key/layers.json | CA-0016: key record NS-PPA Nova :156 names a layer prefix not in us-key/layers.json | CA-0016: key record Nova Scotia :60 names a layer prefix not in us-key/layers.json | CA-1718: key record Nova Scotia ~2:156 names a layer prefix not in us-key/layers.json | CA-1718: key record NS-PPA Nova :156 names a layer prefix not in us-key/layers.json | CA-1718: key record Nova Scotia :60 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    45.791703,
+    -64.250043
+   ]
+  },
+  "CA-0470+CA-1809@same land@46.318,-60.681": {
+   "id": "CA-0470+CA-1809@same land@46.318,-60.681",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0470",
+    "CA-1809"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:43Z",
+   "layers": [
+    {
+     "ref": "CA-0470",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:27:44Z"
+    },
+    {
+     "ref": "CA-1809",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:27:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 12459.75,
+   "live_acres": 12388.85,
+   "kept_pct": 89.5,
+   "size_pct": -0.6,
+   "moved_m": 3172,
+   "gap_m": 0,
+   "wide_m": 3143.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12388.9 ac vs 12459.8 ac stored (-1%), 89% of the stored overlap still inside (10 m tolerance); note: CA-0470: key record Nova Scotia ~2:170 names a layer prefix not in us-key/layers.json | CA-0470: key record NS-PPA Nova :170 names a layer prefix not in us-key/layers.json | CA-0470: key record Nova Scotia :74 names a layer prefix not in us-key/layers.json | CA-0470: key record Nova Scotia ~2:124 names a layer prefix not in us-key/layers.json | CA-0470: key record NS-PPA Nova :124 names a layer prefix not in us-key/layers.json | CA-0470: key record Nova Scotia :28 names a layer prefix not in us-key/layers.json | CA-0470: key record Nova Scotia :75 names a layer prefix not in us-key/layers.json | CA-0470: key record Nova Scotia ~2:171 names a layer prefix not in us-key/layers.json | CA-0470: key record NS-PPA Nova :171 names a layer prefix not in us-key/layers.json | CA-1809: key record Nova Scotia ~2:170 names a layer prefix not in us-key/layers.json | CA-1809: key record NS-PPA Nova :170 names a layer prefix not in us-key/layers.json | CA-1809: key record Nova Scotia :74 names a layer prefix not in us-key/layers.json | CA-1809: key record Nova Scotia ~2:124 names a layer prefix not in us-key/layers.json | CA-1809: key record NS-PPA Nova :124 names a layer prefix not in us-key/layers.json | CA-1809: key record Nova Scotia :28 names a layer prefix not in us-key/layers.json | CA-1809: key record Nova Scotia :75 names a layer prefix not in us-key/layers.json | CA-1809: key record Nova Scotia ~2:171 names a layer prefix not in us-key/layers.json | CA-1809: key record NS-PPA Nova :171 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    46.345619,
+    -60.690941
+   ]
+  },
+  "CA-0885+CA-5495@area@44.500,-64.069": {
+   "id": "CA-0885+CA-5495@area@44.500,-64.069",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0885",
+    "CA-5495"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be private land under the designations",
+   "stored_acres": 1.3,
+   "stored_wide_m": 55,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:45Z",
+   "layers": [],
+   "saved_lines": [],
+   "stored_water_pct": 10,
+   "stored_shape_acres": 1.08,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0885: key record Nova Scotia ~2:32 names a layer prefix not in us-key/layers.json | CA-0885: key record NS-PPA Nova :32 names a layer prefix not in us-key/layers.json | CA-5495: key record NS-F111 Nova:2 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-0899+CA-1741@same land@46.368,-61.133": {
+   "id": "CA-0899+CA-1741@same land@46.368,-61.133",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0899",
+    "CA-1741"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:45Z",
+   "layers": [
+    {
+     "ref": "CA-0899",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:27:46Z"
+    },
+    {
+     "ref": "CA-1741",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:27:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1243.04,
+   "live_acres": 1271.47,
+   "kept_pct": 100.0,
+   "size_pct": 2.3,
+   "moved_m": 1610,
+   "gap_m": 0,
+   "wide_m": 1412.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1271.5 ac vs 1243.0 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0899: key record Nova Scotia ~2:134 names a layer prefix not in us-key/layers.json | CA-0899: key record NS-PPA Nova :134 names a layer prefix not in us-key/layers.json | CA-0899: key record Nova Scotia :38 names a layer prefix not in us-key/layers.json | CA-1741: key record Nova Scotia ~2:134 names a layer prefix not in us-key/layers.json | CA-1741: key record NS-PPA Nova :134 names a layer prefix not in us-key/layers.json | CA-1741: key record Nova Scotia :38 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    46.355323,
+    -61.143129
+   ]
+  },
+  "CA-0935+CA-1822@same land@43.865,-64.951": {
+   "id": "CA-0935+CA-1822@same land@43.865,-64.951",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0935",
+    "CA-1822"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:47Z",
+   "layers": [
+    {
+     "ref": "CA-0935",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "8 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:27:48Z"
+    },
+    {
+     "ref": "CA-1822",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T11:27:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 66.2,
+   "live_acres": 104.85,
+   "kept_pct": 94.6,
+   "size_pct": 58.4,
+   "moved_m": 140,
+   "gap_m": 0,
+   "wide_m": 376.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 58% bigger (104.9 ac vs 66.2 ac stored); 95% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.866139,
+    -64.952732
+   ]
+  },
+  "CA-0935+CA-1824@same land@43.839,-65.001": {
+   "id": "CA-0935+CA-1824@same land@43.839,-65.001",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0935",
+    "CA-1824"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:51Z",
+   "layers": [
+    {
+     "ref": "CA-0935",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "8 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T11:27:52Z"
+    },
+    {
+     "ref": "CA-1824",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T11:27:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 726.71,
+   "live_acres": 23.08,
+   "kept_pct": 0.0,
+   "size_pct": -96.8,
+   "moved_m": 1144,
+   "gap_m": 619,
+   "wide_m": 131.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1824: key record Nova Scotia ~2:614 names a layer prefix not in us-key/layers.json | CA-1824: key record NS-PPA Nova :614 names a layer prefix not in us-key/layers.json | CA-1824: key record Nova Scotia :518 names a layer prefix not in us-key/layers.json (geometry now: MOVED: live overlap centre is 1144 m from the stored centre; 0% of the stored overlap is still inside it)",
+   "live_center": [
+    43.832099,
+    -64.989889
+   ]
+  },
+  "CA-0952+CA-6437@same land@45.996,-64.009": {
+   "id": "CA-0952+CA-6437@same land@45.996,-64.009",
+   "area": "CA-NS",
+   "refs": [
+    "CA-0952",
+    "CA-6437"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:54Z",
+   "layers": [],
+   "saved_lines": [],
+   "stored_shape_acres": 26.58,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0952: key record Nova Scotia ~2:69 names a layer prefix not in us-key/layers.json | CA-0952: key record NS-PPA Nova :69 names a layer prefix not in us-key/layers.json | CA-6437: key record Nova Scotia ~2:69 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-1740+CA-6505@area@45.950,-64.171": {
+   "id": "CA-1740+CA-6505@area@45.950,-64.171",
+   "area": "CA-NS",
+   "refs": [
+    "CA-1740",
+    "CA-6505"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 55.8,
+   "stored_wide_m": 236,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:54Z",
+   "layers": [
+    {
+     "ref": "CA-1740",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:27:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 50.56,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1740: key record Nova Scotia ~2:709 names a layer prefix not in us-key/layers.json | CA-1740: key record NS-PPA Nova :709 names a layer prefix not in us-key/layers.json | CA-1740: key record Nova Scotia :613 names a layer prefix not in us-key/layers.json | CA-1740: key record Nova Scotia ~2:1059 names a layer prefix not in us-key/layers.json | CA-1740: key record NS-PPA Nova :1059 names a layer prefix not in us-key/layers.json | CA-1740: key record Nova Scotia :963 names a layer prefix not in us-key/layers.json | CA-6505: key record NB WMZ:339 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-1822+CA-1824@area@43.863,-64.949": {
+   "id": "CA-1822+CA-1824@area@43.863,-64.949",
+   "area": "CA-NS",
+   "refs": [
+    "CA-1822",
+    "CA-1824"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 106.1,
+   "stored_wide_m": 377,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:56Z",
+   "layers": [
+    {
+     "ref": "CA-1822",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T11:27:57Z"
+    },
+    {
+     "ref": "CA-1824",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T11:27:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 104.72,
+   "live_acres": 104.85,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 376.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 104.9 ac vs 104.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance); note: CA-1824: key record Nova Scotia ~2:614 names a layer prefix not in us-key/layers.json | CA-1824: key record NS-PPA Nova :614 names a layer prefix not in us-key/layers.json | CA-1824: key record Nova Scotia :518 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    43.866139,
+    -64.952732
+   ]
+  },
+  "CA-1843+CA-6136@same land@44.245,-65.282": {
+   "id": "CA-1843+CA-6136@same land@44.245,-65.282",
+   "area": "CA-NS",
+   "refs": [
+    "CA-1843",
+    "CA-6136"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:27:58Z",
+   "layers": [
+    {
+     "ref": "CA-1843",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:27:59Z"
+    },
+    {
+     "ref": "CA-6136",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:27:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 6664.52,
+   "live_acres": 8297.95,
+   "kept_pct": 92.7,
+   "size_pct": 24.5,
+   "moved_m": 4012,
+   "gap_m": 0,
+   "wide_m": 2365.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8298.0 ac vs 6664.5 ac stored (+24%), 93% of the stored overlap still inside (10 m tolerance); note: CA-1843: key record Nova Scotia ~2:184 names a layer prefix not in us-key/layers.json | CA-1843: key record NS-PPA Nova :184 names a layer prefix not in us-key/layers.json | CA-1843: key record Nova Scotia :102 names a layer prefix not in us-key/layers.json | CA-1843: key record Nova Scotia :88 names a layer prefix not in us-key/layers.json | CA-1843: key record Nova Scotia ~2:198 names a layer prefix not in us-key/layers.json | CA-1843: key record NS-PPA Nova :198 names a layer prefix not in us-key/layers.json | CA-6136: key record Nova Scotia ~2:184 names a layer prefix not in us-key/layers.json | CA-6136: key record NS-PPA Nova :184 names a layer prefix not in us-key/layers.json | CA-6136: key record Nova Scotia :102 names a layer prefix not in us-key/layers.json | CA-6136: key record Nova Scotia :88 names a layer prefix not in us-key/layers.json | CA-6136: key record Nova Scotia ~2:198 names a layer prefix not in us-key/layers.json | CA-6136: key record NS-PPA Nova :198 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    44.279322,
+    -65.295395
+   ]
+  },
+  "CA-1887+CA-4837@area@45.924,-60.048": {
+   "id": "CA-1887+CA-4837@area@45.924,-60.048",
+   "area": "CA-NS",
+   "refs": [
+    "CA-1887",
+    "CA-4837"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 3.2,
+   "stored_wide_m": 81,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:28:00Z",
+   "layers": [
+    {
+     "ref": "CA-1887",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:28:01Z"
+    },
+    {
+     "ref": "CA-4837",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:28:03Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T11:28:04Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T11:28:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 68,
+   "stored_shape_acres": 2.3,
+   "live_acres": 2.35,
+   "kept_pct": 99.7,
+   "size_pct": 2.2,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 81.4,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.3 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance); note: CA-1887: key record Nova Scotia ~2:272 names a layer prefix not in us-key/layers.json | CA-1887: key record NS-PPA Nova :272 names a layer prefix not in us-key/layers.json | CA-1887: key record Nova Scotia :176 names a layer prefix not in us-key/layers.json | CA-4837: key record NS-NHS Nova :4 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    45.924169,
+    -60.047965
+   ]
+  },
+  "CA-1900+CA-1901@same land@43.947,-65.796": {
+   "id": "CA-1900+CA-1901@same land@43.947,-65.796",
+   "area": "CA-NS",
+   "refs": [
+    "CA-1900",
+    "CA-1901"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:28:05Z",
+   "layers": [
+    {
+     "ref": "CA-1900",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:28:05Z"
+    },
+    {
+     "ref": "CA-1901",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:28:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 67.2,
+   "live_acres": 67.04,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 596,
+   "gap_m": 0,
+   "wide_m": 324.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 67.0 ac vs 67.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance); note: CA-1900: key record Nova Scotia ~2:151 names a layer prefix not in us-key/layers.json | CA-1900: key record NS-PPA Nova :151 names a layer prefix not in us-key/layers.json | CA-1900: key record Nova Scotia :55 names a layer prefix not in us-key/layers.json | CA-1900: key record Nova Scotia ~2:580 names a layer prefix not in us-key/layers.json | CA-1900: key record NS-PPA Nova :580 names a layer prefix not in us-key/layers.json | CA-1900: key record Nova Scotia :484 names a layer prefix not in us-key/layers.json | CA-1900: key record Nova Scotia :466 names a layer prefix not in us-key/layers.json | CA-1900: key record Nova Scotia ~2:562 names a layer prefix not in us-key/layers.json | CA-1900: key record NS-PPA Nova :562 names a layer prefix not in us-key/layers.json | CA-1901: key record Nova Scotia ~2:151 names a layer prefix not in us-key/layers.json | CA-1901: key record NS-PPA Nova :151 names a layer prefix not in us-key/layers.json | CA-1901: key record Nova Scotia :55 names a layer prefix not in us-key/layers.json | CA-1901: key record Nova Scotia ~2:580 names a layer prefix not in us-key/layers.json | CA-1901: key record NS-PPA Nova :580 names a layer prefix not in us-key/layers.json | CA-1901: key record Nova Scotia :484 names a layer prefix not in us-key/layers.json | CA-1901: key record Nova Scotia :466 names a layer prefix not in us-key/layers.json | CA-1901: key record Nova Scotia ~2:562 names a layer prefix not in us-key/layers.json | CA-1901: key record NS-PPA Nova :562 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    43.94868,
+    -65.788812
+   ]
+  },
+  "CA-1913+CA-6111@area@44.507,-63.933": {
+   "id": "CA-1913+CA-6111@area@44.507,-63.933",
+   "area": "CA-NS",
+   "refs": [
+    "CA-1913",
+    "CA-6111"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be private land under the designations",
+   "stored_acres": 3.4,
+   "stored_wide_m": 101,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:28:06Z",
+   "layers": [
+    {
+     "ref": "CA-1913",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:28:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.12,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1913: key record Nova Scotia ~2:648 names a layer prefix not in us-key/layers.json | CA-1913: key record NS-PPA Nova :648 names a layer prefix not in us-key/layers.json | CA-1913: key record Nova Scotia :552 names a layer prefix not in us-key/layers.json | CA-6111: key record NS-F111 Nova:1 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-4837+CA-4849@area@45.879,-60.055": {
+   "id": "CA-4837+CA-4849@area@45.879,-60.055",
+   "area": "CA-NS",
+   "refs": [
+    "CA-4837",
+    "CA-4849"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1.9,
+   "stored_wide_m": 89,
+   "utm_epsg": 32620,
+   "checked_at": "2026-11-01T11:28:08Z",
+   "layers": [
+    {
+     "ref": "CA-4837",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:28:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.65,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4837: key record NS-NHS Nova :4 names a layer prefix not in us-key/layers.json | CA-4849: key record NS-NHS Nova :15 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  }
+ },
+ "started": "2026-11-01T11:27:35Z",
+ "fers_sha256": "9b65f1e82052b7289cbdd8bcf128e5279f2f0e436624298a0bcb3fbd41398ee5",
+ "live_rows": 15,
+ "skipped_rows": 207,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:57Z",
+ "complete": true,
+ "summary": {
+  "rows": 15,
+  "verdicts": {
+   "CONFIRMED": 8,
+   "SHRUNK": 0,
+   "GREW": 1,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 6,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 1,
+   "water-only": 1
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json"
+ ],
+ "requests_this_run": 1
+}

@@ -1,0 +1,43 @@
+name: KPC live chat watcher
+# Oct 28 2026 (chat 5; HQ/Brandon): BY HAND ONLY. READ-ONLY watcher of YouTube live chats the club is on: a message that
+# mentions the campout / KPC / Kentucky Portable / Taylorsville -> one post in the Discord STAFF room with a ready reply
+# (staff paste it as themselves; this bot never writes in YouTube). Waits for the stream to go live (checks every 5 min),
+# stops when it ends or after max_hours. Secrets (names only): YOUTUBE_API_KEY, KPC_DISCORD_STAFF_WEBHOOK. Never fails.
+on:
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: 'YouTube video ids or links, comma separated'
+        default: '71y0HPdceXc, maI0-LOx8jY'
+      max_hours:
+        description: 'Stop after this many hours'
+        default: '5'
+      dry_run:
+        description: 'Print instead of posting'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: kpc-live-chat
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: .github/scripts
+      - name: Watch the live chats
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          KPC_DISCORD_STAFF_WEBHOOK: ${{ secrets.KPC_DISCORD_STAFF_WEBHOOK }}
+          VIDEOS: ${{ inputs.videos }}
+          MAX_HOURS: ${{ inputs.max_hours }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: |
+          # accept full links too: keep just the 11-letter ids
+          export VIDEOS=$(echo "$VIDEOS" | grep -oE '([A-Za-z0-9_-]{11})' | tr '\n' ',')
+          python3 .github/scripts/kpc_live_chat_watch.py || true

@@ -1,0 +1,2137 @@
+{
+ "tool": "kpc_trail_lines",
+ "version": "1.0 (2026-10-31)",
+ "read_date": "2026-10-31",
+ "trails": [
+  {
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/TRTE_NHT/FeatureServer/0",
+   "layer_name": "TRTE_TRANS_CULT_NHT1DesignatedAlignment_ln",
+   "read_date": "2026-10-31",
+   "features_read": 2006,
+   "shape": "line",
+   "states": [
+    "AL",
+    "AR",
+    "GA",
+    "IL",
+    "KY",
+    "MO",
+    "MS",
+    "NC",
+    "OK",
+    "TN"
+   ],
+   "files": [
+    {
+     "state": "AL",
+     "file": "trails/US-3791/AL.geojson",
+     "kb": 46,
+     "km": 908.43,
+     "water_km": 314.81
+    },
+    {
+     "state": "AR",
+     "file": "trails/US-3791/AR.geojson",
+     "kb": 189,
+     "km": 2052.78,
+     "water_km": 742.76
+    },
+    {
+     "state": "GA",
+     "file": "trails/US-3791/GA.geojson",
+     "kb": 49,
+     "km": 660.67,
+     "water_km": 0
+    },
+    {
+     "state": "IL",
+     "file": "trails/US-3791/IL.geojson",
+     "kb": 12,
+     "km": 118.98,
+     "water_km": 0
+    },
+    {
+     "state": "KY",
+     "file": "trails/US-3791/KY.geojson",
+     "kb": 28,
+     "km": 397.15,
+     "water_km": 190.45
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-3791/MO.geojson",
+     "kb": 131,
+     "km": 1372.53,
+     "water_km": 145.45
+    },
+    {
+     "state": "MS",
+     "file": "trails/US-3791/MS.geojson",
+     "kb": 10,
+     "km": 103.15,
+     "water_km": 103.15
+    },
+    {
+     "state": "NC",
+     "file": "trails/US-3791/NC.geojson",
+     "kb": 39,
+     "km": 200.4,
+     "water_km": 0
+    },
+    {
+     "state": "OK",
+     "file": "trails/US-3791/OK.geojson",
+     "kb": 20,
+     "km": 253.78,
+     "water_km": 95.52
+    },
+    {
+     "state": "TN",
+     "file": "trails/US-3791/TN.geojson",
+     "kb": 215,
+     "km": 2112.86,
+     "water_km": 574.48
+    }
+   ],
+   "points": 32396,
+   "km": 8180.7,
+   "water_km": 2166.6,
+   "route_types": [
+    "land",
+    "water"
+   ],
+   "segments": [
+    "NHTCERTSTATUS=Not Certified"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 2006 official records at full detail and saved 10 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4238",
+   "name": "Ice Age National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments1/FeatureServer/0",
+   "layer_name": "IAT_Segments",
+   "read_date": "2026-10-31",
+   "features_read": 159,
+   "shape": "line",
+   "states": [
+    "WI"
+   ],
+   "files": [
+    {
+     "state": "WI",
+     "file": "trails/US-4238/WI.geojson",
+     "kb": 813,
+     "km": 1122.45,
+     "water_km": 0
+    }
+   ],
+   "points": 36559,
+   "km": 1122.5,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 159 official records at full detail and saved 1 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4239",
+   "name": "North Country National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services2.arcgis.com/UfGVyqUm4GHa2zrj/arcgis/rest/services/nct_public/FeatureServer/2",
+   "layer_name": "North Country Trail - Public",
+   "read_date": "2026-10-31",
+   "features_read": 4102,
+   "shape": "line",
+   "states": [
+    "MI",
+    "MN",
+    "ND",
+    "NY",
+    "OH",
+    "PA",
+    "VT",
+    "WI"
+   ],
+   "files": [
+    {
+     "state": "MI",
+     "file": "trails/US-4239/MI.geojson",
+     "kb": 1161,
+     "km": 1878.22,
+     "water_km": 0
+    },
+    {
+     "state": "MN",
+     "file": "trails/US-4239/MN.geojson",
+     "kb": 396,
+     "km": 920.82,
+     "water_km": 0
+    },
+    {
+     "state": "ND",
+     "file": "trails/US-4239/ND.geojson",
+     "kb": 189,
+     "km": 750.11,
+     "water_km": 0
+    },
+    {
+     "state": "NY",
+     "file": "trails/US-4239/NY.geojson",
+     "kb": 635,
+     "km": 1130.0,
+     "water_km": 0
+    },
+    {
+     "state": "OH",
+     "file": "trails/US-4239/OH.geojson",
+     "kb": 633,
+     "km": 1724.33,
+     "water_km": 0
+    },
+    {
+     "state": "PA",
+     "file": "trails/US-4239/PA.geojson",
+     "kb": 263,
+     "km": 458.25,
+     "water_km": 0
+    },
+    {
+     "state": "VT",
+     "file": "trails/US-4239/VT.geojson",
+     "kb": 55,
+     "km": 113.62,
+     "water_km": 0
+    },
+    {
+     "state": "WI",
+     "file": "trails/US-4239/WI.geojson",
+     "kb": 177,
+     "km": 343.03,
+     "water_km": 0
+    }
+   ],
+   "points": 155959,
+   "km": 7318.4,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "cert_doc=05_08_77 | trail_stat=NCT",
+    "cert_doc=05_08_77 | trail_stat=NCT (on-road)",
+    "cert_doc=05_08_77 | trail_stat=NCT (on-road) | cert_stat=Connector",
+    "cert_doc=05_08_77 | trail_stat=NCT | cert_stat=Connector",
+    "cert_doc=NY_0001 | trail_stat=NCT | cert_stat=Connector",
+    "cert_doc=NY_0002 | trail_stat=NCT | cert_stat=Connector",
+    "certified",
+    "trail_stat=NCT",
+    "trail_stat=NCT (on-road)",
+    "trail_stat=NCT (on-road) | cert_stat=Connector",
+    "trail_stat=NCT (on-road) | cert_stat=connector",
+    "trail_stat=NCT | cert_stat=Connector",
+    "trail_stat=NCT | cert_stat=Exisiting",
+    "trail_stat=NCT | cert_stat=connector"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 4102 official records at full detail and saved 8 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4556",
+   "name": "Appalachian National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Centerline/FeatureServer/0",
+   "layer_name": "Appalachian National Scenic Trail",
+   "read_date": "2026-10-31",
+   "features_read": 3027,
+   "shape": "line",
+   "states": [
+    "CT",
+    "GA",
+    "MA",
+    "MD",
+    "ME",
+    "NC",
+    "NH",
+    "NJ",
+    "NY",
+    "PA",
+    "TN",
+    "VA",
+    "VT",
+    "WV"
+   ],
+   "files": [
+    {
+     "state": "CT",
+     "file": "trails/US-4556/CT.geojson",
+     "kb": 59,
+     "km": 76.77,
+     "water_km": 0
+    },
+    {
+     "state": "GA",
+     "file": "trails/US-4556/GA.geojson",
+     "kb": 102,
+     "km": 122.98,
+     "water_km": 0
+    },
+    {
+     "state": "MA",
+     "file": "trails/US-4556/MA.geojson",
+     "kb": 102,
+     "km": 140.53,
+     "water_km": 0
+    },
+    {
+     "state": "MD",
+     "file": "trails/US-4556/MD.geojson",
+     "kb": 45,
+     "km": 64.61,
+     "water_km": 0
+    },
+    {
+     "state": "ME",
+     "file": "trails/US-4556/ME.geojson",
+     "kb": 403,
+     "km": 431.38,
+     "water_km": 0
+    },
+    {
+     "state": "NC",
+     "file": "trails/US-4556/NC.geojson",
+     "kb": 313,
+     "km": 334.57,
+     "water_km": 0
+    },
+    {
+     "state": "NH",
+     "file": "trails/US-4556/NH.geojson",
+     "kb": 284,
+     "km": 245.61,
+     "water_km": 0
+    },
+    {
+     "state": "NJ",
+     "file": "trails/US-4556/NJ.geojson",
+     "kb": 87,
+     "km": 109.92,
+     "water_km": 0
+    },
+    {
+     "state": "NY",
+     "file": "trails/US-4556/NY.geojson",
+     "kb": 126,
+     "km": 143.32,
+     "water_km": 0
+    },
+    {
+     "state": "PA",
+     "file": "trails/US-4556/PA.geojson",
+     "kb": 261,
+     "km": 365.43,
+     "water_km": 0
+    },
+    {
+     "state": "TN",
+     "file": "trails/US-4556/TN.geojson",
+     "kb": 267,
+     "km": 282.35,
+     "water_km": 0
+    },
+    {
+     "state": "VA",
+     "file": "trails/US-4556/VA.geojson",
+     "kb": 707,
+     "km": 866.48,
+     "water_km": 0
+    },
+    {
+     "state": "VT",
+     "file": "trails/US-4556/VT.geojson",
+     "kb": 256,
+     "km": 237.9,
+     "water_km": 0
+    },
+    {
+     "state": "WV",
+     "file": "trails/US-4556/WV.geojson",
+     "kb": 24,
+     "km": 24.24,
+     "water_km": 0
+    }
+   ],
+   "points": 136258,
+   "km": 3446.1,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "Status=Official A.T. Route"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 3027 official records at full detail and saved 14 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4557",
+   "name": "Arizona National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Arizona_National_Scenic_Trail_Feature_Layers_view/FeatureServer/3",
+   "layer_name": "Arizona National Scenic Trail Polyline",
+   "read_date": "2026-10-31",
+   "features_read": 44,
+   "shape": "line",
+   "states": [
+    "AZ",
+    "UT"
+   ],
+   "files": [
+    {
+     "state": "AZ",
+     "file": "trails/US-4557/AZ.geojson",
+     "kb": 1157,
+     "km": 1336.05,
+     "water_km": 0
+    },
+    {
+     "state": "UT",
+     "file": "trails/US-4557/UT.geojson",
+     "kb": 0,
+     "km": 0.0,
+     "water_km": 0
+    }
+   ],
+   "points": 49837,
+   "km": 1336.0,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 44 official records at full detail and saved 2 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4558",
+   "name": "Continental Divide National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/ContinentalDivideNST/FeatureServer/0",
+   "layer_name": "CNDST_20190415",
+   "read_date": "2026-10-31",
+   "features_read": 3,
+   "shape": "line",
+   "states": [
+    "CO",
+    "ID",
+    "MT",
+    "NM",
+    "WY"
+   ],
+   "files": [
+    {
+     "state": "CO",
+     "file": "trails/US-4558/CO.geojson",
+     "kb": 882,
+     "km": 1177.6,
+     "water_km": 0
+    },
+    {
+     "state": "ID",
+     "file": "trails/US-4558/ID.geojson",
+     "kb": 168,
+     "km": 256.25,
+     "water_km": 0
+    },
+    {
+     "state": "MT",
+     "file": "trails/US-4558/MT.geojson",
+     "kb": 1064,
+     "km": 1362.32,
+     "water_km": 0
+    },
+    {
+     "state": "NM",
+     "file": "trails/US-4558/NM.geojson",
+     "kb": 818,
+     "km": 1267.88,
+     "water_km": 0
+    },
+    {
+     "state": "WY",
+     "file": "trails/US-4558/WY.geojson",
+     "kb": 530,
+     "km": 818.98,
+     "water_km": 0
+    }
+   ],
+   "points": 149052,
+   "km": 4883.0,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 3 official records at full detail and saved 5 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4559",
+   "name": "Florida National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST%20Master/FeatureServer/0",
+   "layer_name": "FNST Master",
+   "read_date": "2026-10-31",
+   "features_read": 745,
+   "shape": "line",
+   "states": [
+    "AL",
+    "FL"
+   ],
+   "files": [
+    {
+     "state": "AL",
+     "file": "trails/US-4559/AL.geojson",
+     "kb": 0,
+     "km": 0.0,
+     "water_km": 0
+    },
+    {
+     "state": "FL",
+     "file": "trails/US-4559/FL.geojson",
+     "kb": 1187,
+     "km": 2515.32,
+     "water_km": 0
+    }
+   ],
+   "points": 53036,
+   "km": 2515.3,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "Trail_Stat=<Null> | Open_Statu=Open",
+    "Trail_Stat=EXISITING | Open_Statu=Open",
+    "Trail_Stat=EXISTING UNPAVED | Open_Statu=Open",
+    "Trail_Stat=EXISTING | Open_Statu=Closed",
+    "Trail_Stat=EXISTING | Open_Statu=Open",
+    "Trail_Stat=EXiSTING | Open_Statu=Open",
+    "Trail_Stat=Existing | Open_Statu=Open",
+    "Trail_Stat=GAP NO ACQUISITION | Open_Statu=Open",
+    "Trail_Stat=GAP REQUIRES ACQUISITION | Open_Statu=Open"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 745 official records at full detail and saved 2 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4560",
+   "name": "Natchez Trace National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NATT_TRANS_NSTTrail/FeatureServer/0",
+   "layer_name": "Natchez Trace National Scenic Trail",
+   "read_date": "2026-10-31",
+   "features_read": 28,
+   "shape": "line",
+   "states": [
+    "AL",
+    "MS",
+    "TN"
+   ],
+   "files": [
+    {
+     "state": "AL",
+     "file": "trails/US-4560/AL.geojson",
+     "kb": 6,
+     "km": 53.8,
+     "water_km": 0
+    },
+    {
+     "state": "MS",
+     "file": "trails/US-4560/MS.geojson",
+     "kb": 122,
+     "km": 573.4,
+     "water_km": 0
+    },
+    {
+     "state": "TN",
+     "file": "trails/US-4560/TN.geojson",
+     "kb": 67,
+     "km": 204.43,
+     "water_km": 0
+    }
+   ],
+   "points": 8708,
+   "km": 831.6,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "TRLSTATUS=Existing"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 28 official records at full detail and saved 3 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4561",
+   "name": "New England National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NEEN_BND_NationalScenicTrailCenterline_ln/FeatureServer/0",
+   "layer_name": "NEEN_BND_NationalScenicTrailCenterline_ln",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "CT",
+    "MA",
+    "NH"
+   ],
+   "files": [
+    {
+     "state": "CT",
+     "file": "trails/US-4561/CT.geojson",
+     "kb": 208,
+     "km": 217.88,
+     "water_km": 0
+    },
+    {
+     "state": "MA",
+     "file": "trails/US-4561/MA.geojson",
+     "kb": 92,
+     "km": 157.89,
+     "water_km": 0
+    },
+    {
+     "state": "NH",
+     "file": "trails/US-4561/NH.geojson",
+     "kb": 0,
+     "km": 0.01,
+     "water_km": 0
+    }
+   ],
+   "points": 13489,
+   "km": 375.8,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 3 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4562",
+   "name": "Pacific Crest National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/PacificCrestTrail/FeatureServer/0",
+   "layer_name": "PacificCrestTrail",
+   "read_date": "2026-10-31",
+   "features_read": 1509,
+   "shape": "line",
+   "states": [
+    "CA",
+    "OR",
+    "WA"
+   ],
+   "files": [
+    {
+     "state": "CA",
+     "file": "trails/US-4562/CA.geojson",
+     "kb": 1778,
+     "km": 2580.02,
+     "water_km": 0
+    },
+    {
+     "state": "OR",
+     "file": "trails/US-4562/OR.geojson",
+     "kb": 364,
+     "km": 685.5,
+     "water_km": 0
+    },
+    {
+     "state": "WA",
+     "file": "trails/US-4562/WA.geojson",
+     "kb": 436,
+     "km": 729.32,
+     "water_km": 0
+    }
+   ],
+   "points": 110996,
+   "km": 3994.8,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1509 official records at full detail and saved 3 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4563",
+   "name": "Pacific Northwest National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Pacific_Northwest_National_Scenic_Trail/FeatureServer/0",
+   "layer_name": "Pacific_Northwest_National_Scenic_Trail",
+   "read_date": "2026-10-31",
+   "features_read": 456,
+   "shape": "line",
+   "states": [
+    "ID",
+    "MT",
+    "WA"
+   ],
+   "files": [
+    {
+     "state": "ID",
+     "file": "trails/US-4563/ID.geojson",
+     "kb": 58,
+     "km": 155.91,
+     "water_km": 0
+    },
+    {
+     "state": "MT",
+     "file": "trails/US-4563/MT.geojson",
+     "kb": 105,
+     "km": 343.75,
+     "water_km": 0
+    },
+    {
+     "state": "WA",
+     "file": "trails/US-4563/WA.geojson",
+     "kb": 568,
+     "km": 1461.87,
+     "water_km": 0
+    }
+   ],
+   "points": 31415,
+   "km": 1961.5,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 456 official records at full detail and saved 3 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4564",
+   "name": "Potomac Heritage National Scenic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/POHE_Trail_Centerline_FTDS_view/FeatureServer/0",
+   "layer_name": "Potomac Heritage NST",
+   "read_date": "2026-10-31",
+   "features_read": 600,
+   "shape": "line",
+   "states": [
+    "DC",
+    "MD",
+    "PA",
+    "VA"
+   ],
+   "files": [
+    {
+     "state": "DC",
+     "file": "trails/US-4564/DC.geojson",
+     "kb": 32,
+     "km": 75.58,
+     "water_km": 0
+    },
+    {
+     "state": "MD",
+     "file": "trails/US-4564/MD.geojson",
+     "kb": 160,
+     "km": 732.46,
+     "water_km": 29.84
+    },
+    {
+     "state": "PA",
+     "file": "trails/US-4564/PA.geojson",
+     "kb": 107,
+     "km": 190.6,
+     "water_km": 0
+    },
+    {
+     "state": "VA",
+     "file": "trails/US-4564/VA.geojson",
+     "kb": 164,
+     "km": 375.3,
+     "water_km": 0
+    }
+   ],
+   "points": 20321,
+   "km": 1373.9,
+   "water_km": 29.8,
+   "route_types": [
+    "land",
+    "water"
+   ],
+   "segments": [
+    "TRSTATUS=Existing | NHTCERTSTATUS=Not Certified"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 600 official records at full detail and saved 4 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4565",
+   "name": "Ala Kahakai National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Ala_Kahakai_National_Historic_Trail_Official_Corridor/FeatureServer/0",
+   "layer_name": "Ala Kahakai National Historic Trail Official Corridor",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "corridor",
+   "states": [
+    "HI"
+   ],
+   "files": [
+    {
+     "state": "HI",
+     "file": "trails/US-4565/HI.geojson",
+     "kb": 137,
+     "km": 667.09,
+     "water_km": 0
+    }
+   ],
+   "points": 5901,
+   "km": 667.1,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 1 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CALI_NHT/FeatureServer/0",
+   "layer_name": "CALI_100k_line",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "CA",
+    "CO",
+    "ID",
+    "KS",
+    "MO",
+    "NE",
+    "NV",
+    "OR",
+    "UT",
+    "WY"
+   ],
+   "files": [
+    {
+     "state": "CA",
+     "file": "trails/US-4566/CA.geojson",
+     "kb": 198,
+     "km": 1801.8,
+     "water_km": 0
+    },
+    {
+     "state": "CO",
+     "file": "trails/US-4566/CO.geojson",
+     "kb": 3,
+     "km": 26.65,
+     "water_km": 0
+    },
+    {
+     "state": "ID",
+     "file": "trails/US-4566/ID.geojson",
+     "kb": 101,
+     "km": 911.35,
+     "water_km": 0
+    },
+    {
+     "state": "KS",
+     "file": "trails/US-4566/KS.geojson",
+     "kb": 82,
+     "km": 549.32,
+     "water_km": 0
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-4566/MO.geojson",
+     "kb": 7,
+     "km": 43.14,
+     "water_km": 0
+    },
+    {
+     "state": "NE",
+     "file": "trails/US-4566/NE.geojson",
+     "kb": 328,
+     "km": 2804.98,
+     "water_km": 0
+    },
+    {
+     "state": "NV",
+     "file": "trails/US-4566/NV.geojson",
+     "kb": 162,
+     "km": 2296.75,
+     "water_km": 0
+    },
+    {
+     "state": "OR",
+     "file": "trails/US-4566/OR.geojson",
+     "kb": 55,
+     "km": 706.02,
+     "water_km": 0
+    },
+    {
+     "state": "UT",
+     "file": "trails/US-4566/UT.geojson",
+     "kb": 73,
+     "km": 855.46,
+     "water_km": 0
+    },
+    {
+     "state": "WY",
+     "file": "trails/US-4566/WY.geojson",
+     "kb": 402,
+     "km": 2815.06,
+     "water_km": 0
+    }
+   ],
+   "points": 61042,
+   "km": 12810.5,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 10 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4567",
+   "name": "Captain John Smith Chesapeake National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CAJO_Captain_John_Smith_Chesapeake_NHT_Centerline_ln/FeatureServer/0",
+   "layer_name": "CAJO_Merge",
+   "read_date": "2026-10-31",
+   "features_read": 832,
+   "shape": "line",
+   "states": [
+    "DC",
+    "DE",
+    "MD",
+    "NY",
+    "PA",
+    "VA"
+   ],
+   "files": [
+    {
+     "state": "DC",
+     "file": "trails/US-4567/DC.geojson",
+     "kb": 5,
+     "km": 30.72,
+     "water_km": 30.72
+    },
+    {
+     "state": "DE",
+     "file": "trails/US-4567/DE.geojson",
+     "kb": 6,
+     "km": 36.3,
+     "water_km": 36.3
+    },
+    {
+     "state": "MD",
+     "file": "trails/US-4567/MD.geojson",
+     "kb": 75,
+     "km": 935.25,
+     "water_km": 935.25
+    },
+    {
+     "state": "NY",
+     "file": "trails/US-4567/NY.geojson",
+     "kb": 40,
+     "km": 234.75,
+     "water_km": 234.75
+    },
+    {
+     "state": "PA",
+     "file": "trails/US-4567/PA.geojson",
+     "kb": 48,
+     "km": 590.67,
+     "water_km": 590.67
+    },
+    {
+     "state": "VA",
+     "file": "trails/US-4567/VA.geojson",
+     "kb": 148,
+     "km": 1432.26,
+     "water_km": 1432.26
+    }
+   ],
+   "points": 14386,
+   "km": 3260.0,
+   "water_km": 3260.0,
+   "route_types": [
+    "water"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 832 official records at full detail and saved 6 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4568",
+   "name": "El Camino Real de los Tejas National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ELCA_NHT/FeatureServer/0",
+   "layer_name": "ELCA_TRANS_CULT_ElCaminoRealdeTierraAdentroNHT100k_ln",
+   "read_date": "2026-10-31",
+   "features_read": 5,
+   "shape": "line",
+   "states": [
+    "NM",
+    "TX"
+   ],
+   "files": [
+    {
+     "state": "NM",
+     "file": "trails/US-4568/NM.geojson",
+     "kb": 125,
+     "km": 1008.25,
+     "water_km": 0
+    },
+    {
+     "state": "TX",
+     "file": "trails/US-4568/TX.geojson",
+     "kb": 3,
+     "km": 45.22,
+     "water_km": 0
+    }
+   ],
+   "points": 5467,
+   "km": 1053.5,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 5 official records at full detail and saved 2 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4569",
+   "name": "El Camino Real de Tierra Adentro National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ELTE_NHT/FeatureServer/0",
+   "layer_name": "ELTE_100k_line",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "LA",
+    "TX"
+   ],
+   "files": [
+    {
+     "state": "LA",
+     "file": "trails/US-4569/LA.geojson",
+     "kb": 8,
+     "km": 140.06,
+     "water_km": 0
+    },
+    {
+     "state": "TX",
+     "file": "trails/US-4569/TX.geojson",
+     "kb": 101,
+     "km": 3910.38,
+     "water_km": 0
+    }
+   ],
+   "points": 4694,
+   "km": 4050.4,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 2 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4570",
+   "name": "Iditarod National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Iditarod_National_Historic_Trail_BLM_Official_Temp/FeatureServer/0",
+   "layer_name": "Iditarod_Trail_Centerline",
+   "read_date": "2026-10-31",
+   "features_read": 26,
+   "shape": "line",
+   "states": [
+    "AK"
+   ],
+   "files": [
+    {
+     "state": "AK",
+     "file": "trails/US-4570/AK.geojson",
+     "kb": 83,
+     "km": 1501.73,
+     "water_km": 0
+    }
+   ],
+   "points": 3577,
+   "km": 1501.7,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 26 official records at full detail and saved 1 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4571",
+   "name": "Juan Bautista de Anza National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/JUBA_HistoricTrail_ln/FeatureServer/0",
+   "layer_name": "JUBA_NHT_",
+   "read_date": "2026-10-31",
+   "features_read": 3,
+   "shape": "line",
+   "states": [
+    "AZ",
+    "CA"
+   ],
+   "files": [
+    {
+     "state": "AZ",
+     "file": "trails/US-4571/AZ.geojson",
+     "kb": 6,
+     "km": 550.96,
+     "water_km": 0
+    },
+    {
+     "state": "CA",
+     "file": "trails/US-4571/CA.geojson",
+     "kb": 25,
+     "km": 1569.41,
+     "water_km": 0
+    }
+   ],
+   "points": 1293,
+   "km": 2120.4,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "NHTCERTSTA=Not Certified | NHTHIGHPOT=No"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 3 official records at full detail and saved 2 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_National_Historic_Trail_Congressionally_Designated_Route/FeatureServer/0",
+   "layer_name": "Lewis_and_Clark_National_Historic_Trail_Congressionally_Designated_Route",
+   "read_date": "2026-10-31",
+   "features_read": 62,
+   "shape": "line",
+   "states": [
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "MO",
+    "MT",
+    "ND",
+    "NE",
+    "OH",
+    "OR",
+    "PA",
+    "SD",
+    "WA",
+    "WV"
+   ],
+   "files": [
+    {
+     "state": "IA",
+     "file": "trails/US-4572/IA.geojson",
+     "kb": 13,
+     "km": 224.12,
+     "water_km": 224.12
+    },
+    {
+     "state": "ID",
+     "file": "trails/US-4572/ID.geojson",
+     "kb": 316,
+     "km": 599.59,
+     "water_km": 107.81
+    },
+    {
+     "state": "IL",
+     "file": "trails/US-4572/IL.geojson",
+     "kb": 9,
+     "km": 147.96,
+     "water_km": 147.96
+    },
+    {
+     "state": "IN",
+     "file": "trails/US-4572/IN.geojson",
+     "kb": 1,
+     "km": 2.61,
+     "water_km": 2.61
+    },
+    {
+     "state": "KS",
+     "file": "trails/US-4572/KS.geojson",
+     "kb": 5,
+     "km": 78.18,
+     "water_km": 78.18
+    },
+    {
+     "state": "KY",
+     "file": "trails/US-4572/KY.geojson",
+     "kb": 157,
+     "km": 1036.76,
+     "water_km": 1036.76
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-4572/MO.geojson",
+     "kb": 32,
+     "km": 945.73,
+     "water_km": 945.73
+    },
+    {
+     "state": "MT",
+     "file": "trails/US-4572/MT.geojson",
+     "kb": 399,
+     "km": 3821.2,
+     "water_km": 1793.97
+    },
+    {
+     "state": "ND",
+     "file": "trails/US-4572/ND.geojson",
+     "kb": 16,
+     "km": 639.45,
+     "water_km": 639.45
+    },
+    {
+     "state": "NE",
+     "file": "trails/US-4572/NE.geojson",
+     "kb": 16,
+     "km": 356.46,
+     "water_km": 356.46
+    },
+    {
+     "state": "OH",
+     "file": "trails/US-4572/OH.geojson",
+     "kb": 7,
+     "km": 26.08,
+     "water_km": 26.08
+    },
+    {
+     "state": "OR",
+     "file": "trails/US-4572/OR.geojson",
+     "kb": 15,
+     "km": 360.63,
+     "water_km": 257.54
+    },
+    {
+     "state": "PA",
+     "file": "trails/US-4572/PA.geojson",
+     "kb": 10,
+     "km": 65.78,
+     "water_km": 65.78
+    },
+    {
+     "state": "SD",
+     "file": "trails/US-4572/SD.geojson",
+     "kb": 24,
+     "km": 740.32,
+     "water_km": 740.32
+    },
+    {
+     "state": "WA",
+     "file": "trails/US-4572/WA.geojson",
+     "kb": 43,
+     "km": 671.13,
+     "water_km": 410.6
+    },
+    {
+     "state": "WV",
+     "file": "trails/US-4572/WV.geojson",
+     "kb": 49,
+     "km": 423.92,
+     "water_km": 423.92
+    }
+   ],
+   "points": 47373,
+   "km": 10139.9,
+   "water_km": 7257.3,
+   "route_types": [
+    "land",
+    "water"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 62 official records at full detail and saved 16 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4573",
+   "name": "Mormon Pioneer National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer/0",
+   "layer_name": "MOPI_100k_line",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "IA",
+    "IL",
+    "NE",
+    "UT",
+    "WY"
+   ],
+   "files": [
+    {
+     "state": "IA",
+     "file": "trails/US-4573/IA.geojson",
+     "kb": 65,
+     "km": 512.03,
+     "water_km": 0
+    },
+    {
+     "state": "IL",
+     "file": "trails/US-4573/IL.geojson",
+     "kb": 0,
+     "km": 0.53,
+     "water_km": 0
+    },
+    {
+     "state": "NE",
+     "file": "trails/US-4573/NE.geojson",
+     "kb": 90,
+     "km": 831.55,
+     "water_km": 0
+    },
+    {
+     "state": "UT",
+     "file": "trails/US-4573/UT.geojson",
+     "kb": 17,
+     "km": 122.18,
+     "water_km": 0
+    },
+    {
+     "state": "WY",
+     "file": "trails/US-4573/WY.geojson",
+     "kb": 104,
+     "km": 757.06,
+     "water_km": 0
+    }
+   ],
+   "points": 12038,
+   "km": 2223.4,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 5 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4574",
+   "name": "Nez Perce (Nee-Me-Poo) National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R01_NezPerceNeeMePoo_NationalHistoricTrail_Centerline/FeatureServer/0",
+   "layer_name": "NezPerceNeeMePooNHT_Centerline",
+   "read_date": "2026-10-31",
+   "features_read": 532,
+   "shape": "line",
+   "states": [
+    "ID",
+    "MT",
+    "OR",
+    "WY"
+   ],
+   "files": [
+    {
+     "state": "ID",
+     "file": "trails/US-4574/ID.geojson",
+     "kb": 147,
+     "km": 695.08,
+     "water_km": 0
+    },
+    {
+     "state": "MT",
+     "file": "trails/US-4574/MT.geojson",
+     "kb": 195,
+     "km": 990.2,
+     "water_km": 0
+    },
+    {
+     "state": "OR",
+     "file": "trails/US-4574/OR.geojson",
+     "kb": 44,
+     "km": 96.69,
+     "water_km": 0
+    },
+    {
+     "state": "WY",
+     "file": "trails/US-4574/WY.geojson",
+     "kb": 110,
+     "km": 249.13,
+     "water_km": 0
+    }
+   ],
+   "points": 21136,
+   "km": 2031.1,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "TRAIL_STATUS=DE - DECOMMISSIONED",
+    "TRAIL_STATUS=EX - EXISTING",
+    "TRAIL_STATUS=PL - PLANNED",
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 532 official records at full detail and saved 4 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/OLSP_NHT/FeatureServer/0",
+   "layer_name": "OLSP_500k_line",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "AZ",
+    "CA",
+    "CO",
+    "NM",
+    "NV",
+    "UT"
+   ],
+   "files": [
+    {
+     "state": "AZ",
+     "file": "trails/US-4575/AZ.geojson",
+     "kb": 26,
+     "km": 385.87,
+     "water_km": 0
+    },
+    {
+     "state": "CA",
+     "file": "trails/US-4575/CA.geojson",
+     "kb": 46,
+     "km": 734.95,
+     "water_km": 0
+    },
+    {
+     "state": "CO",
+     "file": "trails/US-4575/CO.geojson",
+     "kb": 61,
+     "km": 773.77,
+     "water_km": 0
+    },
+    {
+     "state": "NM",
+     "file": "trails/US-4575/NM.geojson",
+     "kb": 73,
+     "km": 859.75,
+     "water_km": 0
+    },
+    {
+     "state": "NV",
+     "file": "trails/US-4575/NV.geojson",
+     "kb": 64,
+     "km": 536.48,
+     "water_km": 0
+    },
+    {
+     "state": "UT",
+     "file": "trails/US-4575/UT.geojson",
+     "kb": 71,
+     "km": 1142.77,
+     "water_km": 0
+    }
+   ],
+   "points": 14599,
+   "km": 4433.6,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 6 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/OREG_NHT/FeatureServer/0",
+   "layer_name": "OREG_100k_line",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "ID",
+    "KS",
+    "MO",
+    "NE",
+    "OR",
+    "WA",
+    "WY"
+   ],
+   "files": [
+    {
+     "state": "ID",
+     "file": "trails/US-4576/ID.geojson",
+     "kb": 77,
+     "km": 851.26,
+     "water_km": 0
+    },
+    {
+     "state": "KS",
+     "file": "trails/US-4576/KS.geojson",
+     "kb": 42,
+     "km": 289.67,
+     "water_km": 0
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-4576/MO.geojson",
+     "kb": 6,
+     "km": 36.41,
+     "water_km": 0
+    },
+    {
+     "state": "NE",
+     "file": "trails/US-4576/NE.geojson",
+     "kb": 88,
+     "km": 699.61,
+     "water_km": 0
+    },
+    {
+     "state": "OR",
+     "file": "trails/US-4576/OR.geojson",
+     "kb": 78,
+     "km": 835.75,
+     "water_km": 0
+    },
+    {
+     "state": "WA",
+     "file": "trails/US-4576/WA.geojson",
+     "kb": 4,
+     "km": 85.4,
+     "water_km": 0
+    },
+    {
+     "state": "WY",
+     "file": "trails/US-4576/WY.geojson",
+     "kb": 112,
+     "km": 836.46,
+     "water_km": 0
+    }
+   ],
+   "points": 17619,
+   "km": 3634.6,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 7 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4577",
+   "name": "Overmountain Victory National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Overmountain_Victory_National_Historic_Trail_Official_Temp/FeatureServer/0",
+   "layer_name": "Overmountain_Victory_HistoricRoute",
+   "read_date": "2026-10-31",
+   "features_read": 43,
+   "shape": "line",
+   "states": [
+    "NC",
+    "SC",
+    "TN",
+    "VA"
+   ],
+   "files": [
+    {
+     "state": "NC",
+     "file": "trails/US-4577/NC.geojson",
+     "kb": 71,
+     "km": 351.91,
+     "water_km": 0
+    },
+    {
+     "state": "SC",
+     "file": "trails/US-4577/SC.geojson",
+     "kb": 11,
+     "km": 64.74,
+     "water_km": 0
+    },
+    {
+     "state": "TN",
+     "file": "trails/US-4577/TN.geojson",
+     "kb": 20,
+     "km": 86.41,
+     "water_km": 0
+    },
+    {
+     "state": "VA",
+     "file": "trails/US-4577/VA.geojson",
+     "kb": 4,
+     "km": 17.66,
+     "water_km": 0
+    }
+   ],
+   "points": 4719,
+   "km": 520.7,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 43 official records at full detail and saved 4 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/POEX_NHT/FeatureServer/0",
+   "layer_name": "POEX_100k_line",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "CA",
+    "CO",
+    "KS",
+    "MO",
+    "NE",
+    "NV",
+    "UT",
+    "WY"
+   ],
+   "files": [
+    {
+     "state": "CA",
+     "file": "trails/US-4578/CA.geojson",
+     "kb": 45,
+     "km": 412.55,
+     "water_km": 0
+    },
+    {
+     "state": "CO",
+     "file": "trails/US-4578/CO.geojson",
+     "kb": 2,
+     "km": 24.54,
+     "water_km": 0
+    },
+    {
+     "state": "KS",
+     "file": "trails/US-4578/KS.geojson",
+     "kb": 31,
+     "km": 214.88,
+     "water_km": 0
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-4578/MO.geojson",
+     "kb": 0,
+     "km": 2.2,
+     "water_km": 0
+    },
+    {
+     "state": "NE",
+     "file": "trails/US-4578/NE.geojson",
+     "kb": 77,
+     "km": 703.66,
+     "water_km": 0
+    },
+    {
+     "state": "NV",
+     "file": "trails/US-4578/NV.geojson",
+     "kb": 73,
+     "km": 724.2,
+     "water_km": 0
+    },
+    {
+     "state": "UT",
+     "file": "trails/US-4578/UT.geojson",
+     "kb": 42,
+     "km": 409.83,
+     "water_km": 0
+    },
+    {
+     "state": "WY",
+     "file": "trails/US-4578/WY.geojson",
+     "kb": 104,
+     "km": 744.81,
+     "water_km": 0
+    }
+   ],
+   "points": 16191,
+   "km": 3236.7,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 8 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4579",
+   "name": "Santa Fe National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/SAFE_NHT/FeatureServer/0",
+   "layer_name": "SAFE_SantaFeNHT100k_ln",
+   "read_date": "2026-10-31",
+   "features_read": 96,
+   "shape": "line",
+   "states": [
+    "CO",
+    "KS",
+    "MO",
+    "NM",
+    "OK"
+   ],
+   "files": [
+    {
+     "state": "CO",
+     "file": "trails/US-4579/CO.geojson",
+     "kb": 39,
+     "km": 373.38,
+     "water_km": 0
+    },
+    {
+     "state": "KS",
+     "file": "trails/US-4579/KS.geojson",
+     "kb": 167,
+     "km": 1592.13,
+     "water_km": 0
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-4579/MO.geojson",
+     "kb": 29,
+     "km": 260.79,
+     "water_km": 0
+    },
+    {
+     "state": "NM",
+     "file": "trails/US-4579/NM.geojson",
+     "kb": 61,
+     "km": 765.81,
+     "water_km": 0
+    },
+    {
+     "state": "OK",
+     "file": "trails/US-4579/OK.geojson",
+     "kb": 14,
+     "km": 123.53,
+     "water_km": 0
+    }
+   ],
+   "points": 13466,
+   "km": 3115.6,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 96 official records at full detail and saved 5 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4580",
+   "name": "Selma to Montgomery National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Selma_to_Montgomery_National_Historic_Trail_Official/FeatureServer/0",
+   "layer_name": "Selma_to_Montgomery_National_Historic_Trail_Official",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "AL"
+   ],
+   "files": [
+    {
+     "state": "AL",
+     "file": "trails/US-4580/AL.geojson",
+     "kb": 6,
+     "km": 81.77,
+     "water_km": 0
+    }
+   ],
+   "points": 241,
+   "km": 81.8,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 1 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4581",
+   "name": "Star-Spangled Banner National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Sta_Spangled_Banner_National_Historic_Trail_Official_Centerline/FeatureServer/0",
+   "layer_name": "Star_Spangled_Banner_National_Historic_Trail_Official_Centerline_2",
+   "read_date": "2026-10-31",
+   "features_read": 1,
+   "shape": "line",
+   "states": [
+    "DC",
+    "MD",
+    "VA"
+   ],
+   "files": [
+    {
+     "state": "DC",
+     "file": "trails/US-4581/DC.geojson",
+     "kb": 8,
+     "km": 49.73,
+     "water_km": 0
+    },
+    {
+     "state": "MD",
+     "file": "trails/US-4581/MD.geojson",
+     "kb": 102,
+     "km": 937.61,
+     "water_km": 0
+    },
+    {
+     "state": "VA",
+     "file": "trails/US-4581/VA.geojson",
+     "kb": 6,
+     "km": 47.21,
+     "water_km": 0
+    }
+   ],
+   "points": 5097,
+   "km": 1034.6,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1 official records at full detail and saved 3 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-4582",
+   "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/20200622_2016_URI_WARO_NST_trail_centerline_states_combined_web_mercator/FeatureServer/0",
+   "layer_name": "20200622_2016_URI_WARO_NST_trail_centerline_states_combined_web_mercator",
+   "read_date": "2026-10-31",
+   "features_read": 11,
+   "shape": "line",
+   "states": [
+    "CT",
+    "DC",
+    "DE",
+    "MA",
+    "MD",
+    "NJ",
+    "NY",
+    "PA",
+    "RI",
+    "VA"
+   ],
+   "files": [
+    {
+     "state": "CT",
+     "file": "trails/US-4582/CT.geojson",
+     "kb": 24,
+     "km": 194.78,
+     "water_km": 0
+    },
+    {
+     "state": "DC",
+     "file": "trails/US-4582/DC.geojson",
+     "kb": 3,
+     "km": 21.25,
+     "water_km": 0
+    },
+    {
+     "state": "DE",
+     "file": "trails/US-4582/DE.geojson",
+     "kb": 5,
+     "km": 41.24,
+     "water_km": 0
+    },
+    {
+     "state": "MA",
+     "file": "trails/US-4582/MA.geojson",
+     "kb": 6,
+     "km": 60.74,
+     "water_km": 0
+    },
+    {
+     "state": "MD",
+     "file": "trails/US-4582/MD.geojson",
+     "kb": 10,
+     "km": 151.44,
+     "water_km": 0
+    },
+    {
+     "state": "NJ",
+     "file": "trails/US-4582/NJ.geojson",
+     "kb": 42,
+     "km": 277.3,
+     "water_km": 0
+    },
+    {
+     "state": "NY",
+     "file": "trails/US-4582/NY.geojson",
+     "kb": 23,
+     "km": 149.46,
+     "water_km": 0
+    },
+    {
+     "state": "PA",
+     "file": "trails/US-4582/PA.geojson",
+     "kb": 5,
+     "km": 79.87,
+     "water_km": 0
+    },
+    {
+     "state": "RI",
+     "file": "trails/US-4582/RI.geojson",
+     "kb": 12,
+     "km": 95.59,
+     "water_km": 0
+    },
+    {
+     "state": "VA",
+     "file": "trails/US-4582/VA.geojson",
+     "kb": 33,
+     "km": 296.43,
+     "water_km": 0
+    }
+   ],
+   "points": 6985,
+   "km": 1368.1,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 11 official records at full detail and saved 10 state file(s), each within 3 m of the official line."
+  },
+  {
+   "ref": "US-9757",
+   "name": "Butterfield Overland National Historic Trail",
+   "status": "done",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/BUOV_Congressionally_Designated_Alignment/FeatureServer/0",
+   "layer_name": "BUOV_TRANS_CULT_NHT1_ln",
+   "read_date": "2026-10-31",
+   "features_read": 1748,
+   "shape": "line",
+   "states": [
+    "AR",
+    "AZ",
+    "CA",
+    "MO",
+    "NM",
+    "OK",
+    "TX"
+   ],
+   "files": [
+    {
+     "state": "AR",
+     "file": "trails/US-9757/AR.geojson",
+     "kb": 72,
+     "km": 568.27,
+     "water_km": 0
+    },
+    {
+     "state": "AZ",
+     "file": "trails/US-9757/AZ.geojson",
+     "kb": 98,
+     "km": 645.37,
+     "water_km": 0
+    },
+    {
+     "state": "CA",
+     "file": "trails/US-9757/CA.geojson",
+     "kb": 135,
+     "km": 1116.55,
+     "water_km": 0
+    },
+    {
+     "state": "MO",
+     "file": "trails/US-9757/MO.geojson",
+     "kb": 44,
+     "km": 327.11,
+     "water_km": 0
+    },
+    {
+     "state": "NM",
+     "file": "trails/US-9757/NM.geojson",
+     "kb": 63,
+     "km": 345.63,
+     "water_km": 0
+    },
+    {
+     "state": "OK",
+     "file": "trails/US-9757/OK.geojson",
+     "kb": 46,
+     "km": 295.74,
+     "water_km": 0
+    },
+    {
+     "state": "TX",
+     "file": "trails/US-9757/TX.geojson",
+     "kb": 175,
+     "km": 1777.63,
+     "water_km": 0
+    }
+   ],
+   "points": 27503,
+   "km": 5076.3,
+   "water_km": 0.0,
+   "route_types": [
+    "land"
+   ],
+   "segments": [
+    "not given"
+   ],
+   "detail_m": 3.0,
+   "server_offset_deg": 1e-05,
+   "simplify_m": 1.89,
+   "why": "Read 1748 official records at full detail and saved 7 state file(s), each within 3 m of the official line."
+  }
+ ],
+ "state_trail_layers": [],
+ "why": "Official trail lines, one file per trail per state, each within 3 m of the official line (R-G6)."
+}

@@ -1,0 +1,77 @@
+name: KPC engine crawler - new US + Canada layers for the park-info engine (weekly, branch engine-registry)
+# Nov 1 2026 (chat 10; Brandon 1:03 PM 'do we have any crawlers ... not find anything new much' + 1:20 PM 'set all them to run on
+# their own'). Runs the engine's own crawler registry/discover_usca.py: ArcGIS Online search per state / province and park type,
+# keeps only layers whose owner is a government body, checks them at POTA pins. A quarter of the 64 areas each Tuesday (all of them
+# every 4 weeks), one area at a time, each saved as soon as it is done. Results replace that area's rows in
+# registry/us_ca_discovered.json on branch engine-registry (BRANCH FIRST); the engine reads them every run (kpc_engine_extra.py).
+# Decides nothing: what the engine finds with them still goes through the waiting room to chat 11. Never red, never emails.
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'areas, e.g. "US-OH US-IN" (blank = this week''s quarter)'
+        default: ''
+  schedule:
+    - cron: '19 6 * * 2'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-engine-discover
+  cancel-in-progress: false
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+      KPC_TOOLS_DIR: .github/scripts
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: .discover_cache
+          key: kpc-engine-discover-${{ github.run_id }}
+          restore-keys: kpc-engine-discover-
+      - name: Crawl
+        continue-on-error: true
+        run: |
+          set +e; T0=$(date +%s)
+          D=.github/scripts/draft/tools/kpc_engine
+          [ -f $D/registry/discover_usca.py ] || { echo "::notice title=Engine crawler::crawler file missing: nothing to do"; exit 0; }
+          pip install -q -r $D/requirements.txt 2>&1 | tail -1
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin +refs/heads/engine-registry:refs/remotes/origin/engine-registry && git worktree add -q -B engine-registry ../reg origin/engine-registry
+          mkdir -p ../reg/registry
+          [ -f ../reg/registry/us_ca_discovered.json ] || cp $D/registry/us_ca_discovered.json ../reg/registry/   # first time: start from the copy in the engine folder
+          A="${{ inputs.areas }}"
+          if [ -z "$A" ]; then
+            A=$(python3 -c "import time; L='AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(); L=['US-'+x for x in L]+['CA-'+x for x in 'AB BC MB NB NL NS NT NU ON PE QC SK YT'.split()]; w=int(time.strftime('%W')) % 4; print(' '.join(L[w::4]))")
+          fi
+          echo "::notice title=Engine crawler::areas $A"
+          done_n=0; new_n=0
+          for a in $A; do
+            [ $(( $(date +%s) - T0 )) -gt $((150 * 60)) ] && { echo "::notice title=Engine crawler::time is up; left for next time from $a"; break; }
+            timeout 40m python3 $D/registry/discover_usca.py --cache .discover_cache --areas $a --out /tmp/one.json > /tmp/one.log 2>&1 || { echo "::notice title=Engine crawler::$a stopped: $(tail -1 /tmp/one.log | cut -c1-200)"; continue; }
+            n=$(python3 - "$a" <<'PY'
+          import json, sys
+          a = sys.argv[1]; F = '../reg/registry/us_ca_discovered.json'
+          new = json.load(open('/tmp/one.json')); old = json.load(open(F))
+          keep = [s for s in old.get('found', []) if s.get('area') != a]          # this area's rows are replaced by today's answer
+          old['found'] = keep + [s for s in new.get('found', []) if s.get('area') == a or not s.get('area')]
+          old['dropped'] = [s for s in old.get('dropped', []) if (s.get('area') if isinstance(s, dict) else None) != a] + new.get('dropped', [])
+          old['orgs'] = {**(old.get('orgs') or {}), **(new.get('orgs') or {})} if isinstance(old.get('orgs'), dict) else new.get('orgs') or old.get('orgs')
+          json.dump(old, open(F, 'w'), indent=1, ensure_ascii=False)
+          print(len([s for s in new.get('found', []) if s.get('area') == a]))
+          PY
+            )
+            done_n=$((done_n + 1)); new_n=$((new_n + ${n:-0}))
+            (cd ../reg && git add registry/us_ca_discovered.json && git commit -qm "engine crawler: $a ($n layers)" && \
+              for i in 1 2 3; do git push -q origin HEAD:engine-registry && break; git pull -q --rebase origin engine-registry; sleep 5; done) || true
+          done
+          echo "::notice title=Engine crawler::$done_n areas crawled, $new_n government layers listed (the engine tries them at the pins on its next run)"
+          python3 .github/scripts/kpc_status.py board 'Engine crawler' green "$done_n areas, $new_n layers $(date -u +%F)" 'the park-info engine uses them; chat 11 grades what it finds' || true
+          (for i in 1 2 3; do git add data/status && git commit -qm "board: engine crawler" && git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && break; sleep 7; done) || true
+          true

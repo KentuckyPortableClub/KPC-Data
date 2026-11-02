@@ -1,0 +1,367 @@
+name: KPC 2-fer assembly line (hidden)
+# Oct 27 5:23 PM (HQ): FETCHER -> WORKER -> CHECKER for one area (a state, or a few).
+#  1 FETCHER (network, polite): POTA same-day history + passes 1-2 (saved + fresh outlines). Every map-server answer is kept in a
+#    BUNDLE (kpc_http_cache.py) = a KPC-Data release asset 'bundle-<tag>.tar.gz' (release 'fers-bundles'), never in git.
+#  2 WORKER: unpacks the bundle, passes 3 + 5 (finest shapes, ownership, water, pins, rule 15); the bundle goes back up.
+#    A worker out of time can be run again alone (stage = worker) from the bundle.
+#  3 CHECKER: known-answers test + missing check + 'every pass finished in this run, nothing cut short' -> data/fers/line-<tag>.json
+#    READY FOR CHAT 8 / STOPPED; the results go into git ONCE, here (fetcher + worker never commit).
+# Fable's review Oct 27 7:30 PM (A1-A6): every gh release call names THIS repo; a lost bundle (upload, download, wrong stage/tag)
+# = a RED run (Brandon's email), never a green run with nothing in it; the worker reads KPC-Data's moved data from a real checkout;
+# the bundle + the save carry ONLY this area's files (own states + tag files); two areas may run side by side (group per tag) because
+# each writes only its own files and its own observations file.
+on:
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'Area (e.g. "US-MI")'
+        default: 'US-MI'
+      tag:
+        description: 'Short name for its files (e.g. "mi")'
+        default: 'mi'
+      stage:
+        description: 'all (fetcher + worker + checker), worker (+ checker, from the saved bundle), or checker'
+        default: 'all'
+      minutes:
+        description: 'Minutes for each of fetcher and worker (default 280)'
+        default: '280'
+      parks:
+        description: 'Optional small batch: park numbers (e.g. "US-1234 US-5678"): only the pairs touching them are looked at again'
+        default: ''
+      next:
+        description: 'Optional: "<states> <tag>" (e.g. "US-OH oh") = start that area by itself once this fetcher''s bundle is safely up (two at once, no more)'
+        default: ''
+  workflow_call:
+    inputs:
+      states:
+        type: string
+        default: 'US-MI'
+      tag:
+        type: string
+        default: 'mi'
+      stage:
+        type: string
+        default: 'all'
+      minutes:
+        type: string
+        default: '280'
+      parks:
+        type: string
+        default: ''
+      next:
+        type: string
+        default: ''
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-fers-line-${{ inputs.tag }}
+  cancel-in-progress: false
+env:
+  GH_TOKEN: ${{ github.token }}
+  REPO: ${{ github.repository }}
+  BUNDLE: bundle-${{ inputs.tag }}.tar.gz
+  STATES: ${{ inputs.states }}
+  RUN_TAG: ${{ inputs.tag }}
+  REGION: ${{ inputs.tag == 'ky' && 'ky' || 'na' }}   # tag ky = Kentucky from its official files (the hand-checked test state)
+  HTTP_CACHE: bundle/http
+  WATER_STORE: bundle/water   # Oct 28 (HQ): the saved USGS water copy (kept between nights as release asset water-<tag>.tar.gz)
+  WATER_ASSET: water-${{ inputs.tag }}.tar.gz
+  PARKS: ${{ inputs.parks }}   # Oct 28: a small batch (kpc_fers.py PARKS); empty = the whole area
+jobs:
+  fetcher:
+    if: ${{ inputs.stage == 'all' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
+        run: |
+          bash .github/scripts/kpc_overlay.sh kpcdata
+          # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
+          # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
+          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+      - name: Tools + saved outlines + this area's last 2-fer files
+        continue-on-error: true
+        run: |
+          pip install -q numpy opencv-python-headless || true
+          mkdir -p cache/us cache/ca bundle/http data/fers
+          # A6: only this area's files travel (own states, the tag's files, known answers, POTA pairs): never the world files
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/fers) || true   # Oct 29 (chat 2 + Brandon 10:22 PM): work on from the HELD 2-fer files
+          for st in $STATES; do for f in kpcdata/data/fers/$st.json kpcdata/data/fers/$st.json.gz kpcdata/data/fers/pota-pairs-$st.json; do [ -f "$f" ] && cp "$f" data/fers/; done; done
+          for f in kpcdata/data/fers/known-answers.json kpcdata/data/fers/*-$RUN_TAG.json; do [ -f "$f" ] && cp "$f" data/fers/; done
+          for f in data/fers/*.json.gz; do [ -f "$f" ] && gunzip -f "$f"; done
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+          # the last bundle of this tag: its map-server answers (<= 21 days) are reused, its data files are not
+          if gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber 2>/dev/null; then tar xzf "$BUNDLE" bundle/http 2>/dev/null || true
+            # Oct 28 (HQ storage): the pair-reuse caches travel in the bundle, not the repo (saved answers, not data people see)
+            tar xzf "$BUNDLE" --wildcards 'data/fers/reuse-p*' 2>/dev/null || true
+          fi
+          find bundle/http -type f -mtime +60 -delete 2>/dev/null || true   # B1 (Oct 30): 60 days (an older answer is re-read; the layer-edit check keeps unchanged ones cheap)
+          # B1: and at most ~300 MB of saved answers: the oldest go first (a 1 GB bundle made tar + upload push jobs past their time limit)
+          find bundle/http -type f -printf '%T@ %s %p\n' 2>/dev/null | sort -n | awk -v cap=$((300*1024*1024)) '{t+=$2; a[NR]=$3; s[NR]=$2} END{for(i=1;i<=NR&&t>cap;i++){print a[i]; t-=s[i]}}' | xargs -r rm -f || true
+          # the last good USGS water copy of this area (never aged out: each tile carries its own date, rule 13)
+          mkdir -p bundle/water
+          if gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null; then tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true; fi
+          echo "saved water tiles: $(ls bundle/water | wc -l)"
+          echo "$(date -u +%F)" > data/fers/.since-$RUN_TAG
+      - name: POTA same-day history
+        continue-on-error: true
+        timeout-minutes: 65
+        env:
+          PAIR_MINUTES: '60'
+        run: python3 .github/scripts/kpc_pota_pairs.py || true
+      - name: USGS water from the bulk files BEFORE the line (tiles under last run's rows; Fable Oct 28 10:34 PM)
+        continue-on-error: true
+        timeout-minutes: 120
+        run: |
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || true
+      - name: Passes 1 + 2
+        continue-on-error: true
+        timeout-minutes: 275
+        env:
+          MINUTES: ${{ inputs.minutes }}
+        run: |
+          M=${MINUTES:-280}; [ $M -gt 225 ] && M=225
+          PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
+          PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || true
+      - name: USGS water from the BULK FILES up front (HU4 files on USGS's Amazon storage, never the live map; HQ Oct 28 6:57 PM)
+        continue-on-error: true
+        timeout-minutes: 120
+        run: |
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || true
+      - name: Bundle up (a lost bundle = a red run)
+        if: always()
+        run: |
+          for st in $STATES; do [ -f "data/fers/$st.json" ] || { echo "::error title=2-fer line::fetcher made no data/fers/$st.json"; exit 1; }; done
+          echo "{\"stage\":\"fetcher\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
+          tar czf "$BUNDLE" bundle data/fers
+          gh release view fers-bundles -R "$REPO" >/dev/null 2>&1 || gh release create fers-bundles -R "$REPO" --title 'Hidden 2-fer bundles' --notes 'Assembly-line bundles (bot use only).'
+          bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$BUNDLE"   # the copy already up becomes .prev (last 2 kept per area)
+          gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
+          # the water copy is kept between nights; an empty one never replaces a good one
+          if [ "$(ls bundle/water 2>/dev/null | wc -l)" -gt 0 ]; then tar czf "$WATER_ASSET" bundle/water && bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" && gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer line::water copy $(ls bundle/water | wc -l) tiles ($(du -h "$WATER_ASSET" | cut -f1)) kept as $WATER_ASSET" || echo "::warning title=2-fer line::water copy not uploaded (the bundle still has it)"; fi
+          gh release view fers-bundles -R "$REPO" --json assets --jq '.assets[].name' | grep -qx "$BUNDLE" || { echo "::error title=2-fer line::bundle not on the release after upload"; exit 1; }
+          echo "::notice title=2-fer line::fetcher bundle $(du -h "$BUNDLE" | cut -f1) uploaded to $REPO release fers-bundles"
+      - name: Start the next area (chained)
+        if: ${{ inputs.next != '' }}
+        continue-on-error: true
+        run: |
+          set -- ${{ inputs.next }}
+          [ -n "$2" ] && gh workflow run kpc-fers-line.yml -R "$REPO" -f "states=$1" -f "tag=$2" -f stage=all -f minutes=${{ inputs.minutes }} && echo "::notice title=2-fer line::next area started: $1 ($2)"
+  worker:
+    needs: fetcher
+    if: ${{ always() && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B, A5)
+        run: |
+          bash .github/scripts/kpc_overlay.sh kpcdata
+          # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
+          # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
+          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+      - name: Tools + the bundle (no bundle = a red run)
+        run: |
+          pip install -q numpy opencv-python-headless || true
+          mkdir -p cache/us cache/ca bundle/http data/fers
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+          gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber || { echo "::error title=2-fer line::no bundle $BUNDLE on $REPO: run stage all"; exit 1; }
+          tar xzf "$BUNDLE" || { echo "::error title=2-fer line::bundle would not unpack"; exit 1; }
+          # Oct 28 10:44 PM (Brandon: 'have your tiles 3 runs ahead'): tiles fetched ahead (kpc-fers-water.yml) join the bundle's own (new ones only)
+          mkdir -p wahead && gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D wahead --clobber 2>/dev/null && tar xzf "wahead/$WATER_ASSET" -C wahead 2>/dev/null && cp -n wahead/bundle/water/* bundle/water/ 2>/dev/null; echo "saved water tiles: $(ls bundle/water 2>/dev/null | wc -l)"; rm -rf wahead
+          python3 - <<'PY' || exit 1
+          import json, os, sys
+          s = json.load(open('bundle/stamp.json')); print('bundle stamp:', s)
+          if s.get('tag') != os.environ['RUN_TAG'] or s.get('stage') not in ('fetcher', 'worker'): print('::error title=2-fer line::bundle is for another tag or stage'); sys.exit(1)
+          for st in os.environ['STATES'].split():
+              if not os.path.exists(f'data/fers/{st}.json'): print(f'::error title=2-fer line::bundle has no data/fers/{st}.json'); sys.exit(1)
+          PY
+      - name: USGS water from the bulk files (tiles under the spots with no saved copy; chat 8's first backup)
+        continue-on-error: true
+        timeout-minutes: 90
+        run: |
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || true
+      - name: Passes 3 + 5
+        continue-on-error: true
+        timeout-minutes: 320
+        env:
+          MINUTES: ${{ inputs.minutes }}
+        run: |
+          M=${MINUTES:-280}; [ $M -gt 300 ] && M=300
+          # Oct 28 (Brandon: 'why did Mississippi run out of time'): the fetcher's pass 2 ran out of time before Mississippi's rows
+          # (9 states in one line) and a worker run never did pass 2 again, so 24 rows waited forever: finish pass 2 here first
+          if python3 -c "import json,glob,sys; sys.exit(0 if any(str(s.get('status','')).startswith('waiting for pass 2') for f in glob.glob('data/fers/US-*.json')+glob.glob('data/fers/CA-*.json') for s in json.load(open(f)).get('spots',[])) else 1)" 2>/dev/null; then
+            echo "::notice title=2-fer line::rows still waiting for pass 2: finishing pass 2 in the worker"; PASS=2 MINUTES=$(( M / 4 )) python3 .github/scripts/kpc_fers.py || true
+          fi
+          PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || true
+          PASS=5 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
+      - name: Water report per state (tiles needed / saved / rows not checked; a 'not checked' row with every tile saved = the store was not read)
+        continue-on-error: true
+        run: REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+      - name: Bundle up (a lost bundle = a red run)
+        if: always()
+        run: |
+          echo "{\"stage\":\"worker\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
+          find bundle/http -type f -mtime +60 -delete 2>/dev/null || true   # B1 (Oct 30): 60 days (an older answer is re-read; the layer-edit check keeps unchanged ones cheap)
+          # B1: and at most ~300 MB of saved answers: the oldest go first (a 1 GB bundle made tar + upload push jobs past their time limit)
+          find bundle/http -type f -printf '%T@ %s %p\n' 2>/dev/null | sort -n | awk -v cap=$((300*1024*1024)) '{t+=$2; a[NR]=$3; s[NR]=$2} END{for(i=1;i<=NR&&t>cap;i++){print a[i]; t-=s[i]}}' | xargs -r rm -f || true
+          tar czf "$BUNDLE" bundle data/fers
+          bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$BUNDLE"   # the copy already up becomes .prev (last 2 kept per area)
+          gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
+          # the water copy is kept between nights; an empty one never replaces a good one
+          if [ "$(ls bundle/water 2>/dev/null | wc -l)" -gt 0 ]; then tar czf "$WATER_ASSET" bundle/water && bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" && gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer line::water copy $(ls bundle/water | wc -l) tiles ($(du -h "$WATER_ASSET" | cut -f1)) kept as $WATER_ASSET" || echo "::warning title=2-fer line::water copy not uploaded (the bundle still has it)"; fi
+          echo "::notice title=2-fer line::worker bundle $(du -h "$BUNDLE" | cut -f1) uploaded"
+  checker:
+    needs: [fetcher, worker]
+    if: ${{ always() && (inputs.stage == 'checker' || needs.worker.result == 'success') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
+        run: |
+          bash .github/scripts/kpc_overlay.sh kpcdata
+          # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
+          # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
+          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+      - name: The worker's bundle (no bundle = a red run)
+        run: |
+          mkdir -p data/fers
+          gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber || { echo "::error title=2-fer line::no bundle $BUNDLE on $REPO"; exit 1; }
+          tar xzf "$BUNDLE" bundle/stamp.json data/fers || { echo "::error title=2-fer line::bundle would not unpack"; exit 1; }
+          python3 -c "import json,os,sys; s=json.load(open('bundle/stamp.json')); print('bundle stamp:', s); sys.exit(0 if s.get('stage')=='worker' and s.get('tag')==os.environ['RUN_TAG'] else 1)" || { echo "::error title=2-fer line::the bundle is not this tag's worker bundle"; exit 1; }
+          # Oct 28: Kentucky's known answers are read FRESH from KPC-Data for every other area (the bundle's copy is as old as its fetcher:
+          # Ohio's checker read last night's 2/18 and then wrote it back over Kentucky's 15/18)
+          if [ "$RUN_TAG" = ky ]; then [ -f data/fers/known-answers.json ] || cp kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true
+          else cp -f kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true; fi
+          # the missing check measures outline to outline (HQ Oct 27): the saved outlines of this run's states
+          mkdir -p cache/us data/us-key
+          for st in $STATES; do
+            # Oct 29 11:10 PM (Step 0 of the automation plan, Brandon 'You do step 0'): the checker measures against the LIVE key =
+            # KPC-Data's copy (chat 10's waiting room holds unapproved builds in data/waiting/in/; KPC-Links data/us-key may be a build
+            # chat 11 has not passed yet). The 7:05 PM 'KPC-Links first' line was for the one evening the live copy was frozen.
+            cp -f kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "$st.json.gz" -D cache/us --clobber || true
+          done
+      - name: Check
+        continue-on-error: true
+        run: |
+          SINCE=$(cat data/fers/.since-$RUN_TAG 2>/dev/null || date -u -d '-36 hours' +%F)
+          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || true; AREA=ky python3 .github/scripts/kpc_fers_expected.py || true
+          else python3 .github/scripts/kpc_fers_expected.py || true; fi
+          case " $STATES" in *" CA-"*) CANADA=1 python3 .github/scripts/kpc_fers_known.py || true;; esac   # Canada's known answers (chat 8, reported only for now)
+          TAG=$RUN_TAG SINCE=$SINCE python3 .github/scripts/kpc_fers_line_check.py || true
+          # Oct 28 (HQ 5:55 PM): this area's rows of the one big 'needs a human look' list (data/fers/review/<tag>.json)
+          TAG=$RUN_TAG STATES="$STATES" DATA=data/fers OUT=data/fers python3 .github/scripts/kpc_fers_review.py || true
+          mkdir -p kpcdata/data/observations
+          OBS_RUN="2-fer line $RUN_TAG" OBS_FILE=kpcdata/data/observations/fers-line-$RUN_TAG.json OBS_DATA_DIR=kpcdata python3 .github/scripts/kpc_map_observations.py || true
+      - name: Save (once; a failed save = a red run)
+        if: always()
+        run: |
+          set +e
+          rm -f data/fers/.since-*
+          # Nov 1 (chat 10 storage step 1): every area file over 1 MB is saved gzipped (was 20 MB); the site, the waiting room and the bots read .gz
+          for f in data/fers/US-*.json data/fers/CA-*.json data/fers/W-*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 1000000 ] && gzip -9nf "$f"; done
+          [ -f data/fers/review/$RUN_TAG.json ] && mkdir -p kpcdata/data/fers/review && cp data/fers/review/$RUN_TAG.json kpcdata/data/fers/review/
+          # Nov 1: the missing check's long list (expected-<tag>) is read only inside the run: kept on KPC-Data branch tools-out (fers/), not main
+          ( gzip -9nf data/fers/expected-$RUN_TAG.json 2>/dev/null; f=data/fers/expected-$RUN_TAG.json.gz; [ -f "$f" ] || exit 0
+            git -C kpcdata fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git -C kpcdata worktree add -q -B tools-out ../to origin/tools-out || exit 0
+            mkdir -p to/fers && cp "$f" to/fers/ && cd to && git add fers && git commit -qm "2-fer expected list ($RUN_TAG)" && for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done ) || true
+          mkdir -p kpcdata/data/fers
+          # A6: only this area's files go back: own states, the tag's files, POTA pairs, known answers (ky)
+          for st in $STATES; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && case "$f" in *.json.gz) rm -f "kpcdata/${f%.gz}";; data/fers/US-*|data/fers/CA-*|data/fers/W-*) rm -f "kpcdata/$f.gz";; esac; done; done   # Nov 1: the new copy replaces the other name (.json vs .json.gz), so a stale twin never wins
+          for f in data/fers/*-$RUN_TAG.json; do case "$f" in data/fers/reuse-p*|data/fers/expected-*) continue;; esac; [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          git -C kpcdata rm -q --cached --ignore-unmatch "data/fers/reuse-p1-$RUN_TAG.json" "data/fers/reuse-p2-$RUN_TAG.json" "data/fers/reuse-p3-$RUN_TAG.json" 2>/dev/null || true
+          rm -f kpcdata/data/fers/reuse-p*-$RUN_TAG.json
+          git -C kpcdata rm -q --cached --ignore-unmatch "data/fers/expected-$RUN_TAG.json" "data/fers/expected-$RUN_TAG.json.gz" 2>/dev/null || true   # Nov 1: kept on tools-out only
+          rm -f kpcdata/data/fers/expected-$RUN_TAG.json kpcdata/data/fers/expected-$RUN_TAG.json.gz
+          # only Kentucky's own run may write the known-answers file (Oct 28)
+          if [ "$RUN_TAG" = ky ] && [ -f data/fers/known-answers.json ] && ! cmp -s data/fers/known-answers.json kpcdata/data/fers/known-answers.json; then cp data/fers/known-answers.json kpcdata/data/fers/; fi
+          cd kpcdata
+          for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
+          cd ..
+          # Oct 28 (HQ queue rule 2): one 'grade me' line per finished area for chat 8 (data stays hidden until graded)
+          python3 - <<'PY' || true
+          import json, os, time
+          t = os.environ['RUN_TAG']; v = json.load(open(f'data/fers/line-{t}.json'))
+          st = os.environ['STATES'].split(); ns = []
+          for x in st:
+              try:
+                  import gzip; d = json.load(open(f'data/fers/{x}.json')) if os.path.exists(f'data/fers/{x}.json') else json.load(gzip.open(f'data/fers/{x}.json.gz', 'rt')); sp = d.get('spots', [])
+                  ns.append(f"{x}: live {sum(1 for q in sp if str(q.get('status','')).startswith(('candidate','very tight')))}, not sure {sum(1 for q in sp if str(q.get('status','')).startswith('not sure'))}, water only {sum(1 for q in sp if str(q.get('status','')).startswith('water only'))}")
+              except Exception: ns.append(f'{x}: no file')
+          url = f"https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+          if v.get('verdict', '').startswith('READY'): line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): grade me: {' '.join(st)} ({t}) — READY · known {v.get('known_answers')} · {'; '.join(ns)} · files data/fers/<state>.json + line-{t}.json + missing-{t}.json · [run]({url})"
+          elif v.get('verdict', '').startswith('PART'):   # Oct 28 10:31 PM (Brandon): the good states go out, the held ones wait for a rerun
+              line = (f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): grade me: {' '.join(v.get('states_ready') or [])} ({t}) — PART READY · "
+                      f"HELD for a rerun (on the review list): {' '.join(v.get('states_held') or [])}: {'; '.join(v.get('why') or [])[:250]} · {'; '.join(ns)} · [run]({url})")
+          else: line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): STOPPED (not for grading): {' '.join(st)} ({t}) — {'; '.join(v.get('why') or [])[:300]} · {'; '.join(ns)} · [run]({url})"
+          for f in ('kpcdata/data/status/inbox-checkers.md', 'kpcdata/data/status/inbox-chat-8.md'):
+              os.makedirs(os.path.dirname(f), exist_ok=True)
+              if not os.path.exists(f): open(f, 'w').write('# 2-fer lines: verdicts for chat 8 (written by the bot)\n\n')
+              open(f, 'a').write(line + '\n')
+          print(line)
+          PY
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || true   # Oct 29 (chat 2 + Brandon 10:22 PM): changed 2-fer files wait in data/waiting/in/ (checked, chat 11 approves), the live ones stay
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data || exit 1
+  broke:
+    # Oct 28 (HQ queue rule 3): a line whose fetcher / worker broke is recorded; the queue goes on to the next area, but TWO
+    # breaks in a row (different areas, within 6 h) = something that would repeat (bad bundle, a server down for everyone):
+    # the whole run is cancelled and Brandon gets the one red mail.
+    needs: [fetcher, worker]
+    if: ${{ always() && (needs.fetcher.result == 'failure' || needs.worker.result == 'failure') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Record the break; stop everything on the second in a row
+        run: |
+          export STAGE=fetcher; [ "${{ needs.worker.result }}" = failure ] && export STAGE=worker
+          python3 - <<'PY'
+          import json, os, time
+          f = 'kpcdata/data/status/line-breaks.json'
+          try: L = json.load(open(f))
+          except Exception: L = []
+          now = time.time()
+          L.append({'tag': os.environ['RUN_TAG'], 'states': os.environ['STATES'], 'stage': os.environ['STAGE'], 'run': os.environ['GITHUB_RUN_ID'], 'date': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(now)), 't': now})
+          L = L[-50:]
+          os.makedirs(os.path.dirname(f), exist_ok=True); json.dump(L, open(f, 'w'), indent=1)
+          line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): BROKE in the {os.environ['STAGE']} (not for grading): {os.environ['STATES']} ({os.environ['RUN_TAG']}) · [run](https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']})"
+          open('kpcdata/data/status/inbox-checkers.md', 'a').write(line + '\n')
+          prev = [x for x in L[:-1] if now - x.get('t', 0) < 6 * 3600 and x.get('tag') != os.environ['RUN_TAG']]
+          open('stop.flag', 'w').write('1' if prev else '')
+          print('::notice title=2-fer line::' + line + (' · SECOND BREAK IN A ROW: the queue is stopped' if prev else ''))
+          PY
+          bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }}: broke in the $STAGE" data || true
+          if [ -s stop.flag ]; then echo "::error title=2-fer lines::two lines broke in a row ($RUN_TAG after an earlier one): everything stopped"; gh run cancel "$GITHUB_RUN_ID" -R "$REPO" || true; fi

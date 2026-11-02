@@ -1,0 +1,5915 @@
+{
+ "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
+ "area": "US-KS",
+ "counts": {
+  "agree": 4,
+  "handover_hints": 0,
+  "no_page": 0,
+  "no_size": 107,
+  "off": 2,
+  "ours_unknown": 4,
+  "parks": 145,
+  "retired": 0,
+  "unsure": 1,
+  "weak": 2,
+  "with_outline": 118
+ },
+ "parks": {
+  "US-0291": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Flint Hills National Wildlife Refuge",
+   "official": {
+    "acres": 614.7,
+    "as": "614.7 acres",
+    "clean": false,
+    "line": "e in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 and continuing through December 2029. The 614.7 acres of farm ground are",
+    "read": "2026-11-01",
+    "sent": "Hartford, Kansas - Flint Hills National Wildlife Refuge in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 and continuing through December 2029.",
+    "url": "https://www.fws.gov/refuge/flint_hills/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 20191,
+    "dissolved": {
+     "after": 18552,
+     "before": 37104,
+     "copies": 1,
+     "key_union": 20191,
+     "parts": 0,
+     "records": 2,
+     "summed": 18552,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 37104 -> 18552 acres",
+    "pieces": [
+     [
+      3853,
+      "Flint Hills National Wildlife Refuge",
+      18552,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/flint_hills/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/flint/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/flint",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 3185,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 614.7,
+     "as": "614.7 acres",
+     "clean": false,
+     "line": "e in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 and continuing through December 2029. The 614.7 acres of farm ground are",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/flint_hills/",
+     "why": "total-looking"
+    },
+    {
+     "acres": 614.7,
+     "as": "614.7 acres",
+     "clean": false,
+     "line": "for the farming of 614.7 acres on the Refuge starting in March 2027 and continuing through December 2029. The 614.7 acres of farm ground are available on the Refuge for cash rent. The Refuge plans to offer this farmland in three un",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/flint_hills/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-0292": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kirwin National Wildlife Refuge",
+   "official": {
+    "acres": 10778.0,
+    "as": "10,778 acres",
+    "clean": false,
+    "line": "sas. It is an overlay project on a U.S. Bureau of Reclamation irrigation and flood control reservoir covering 10,778 acres of prairie grasslands, open water, and wetlands. The refuge serves as a vital stop for migrating birds along",
+    "read": "2026-11-01",
+    "sent": "Bureau of Reclamation irrigation and flood control reservoir covering 10,778 acres of prairie grasslands, open water, and wetlands.",
+    "url": "https://www.fws.gov/refuge/kirwin",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
+   "ours": {
+    "acres": 10778,
+    "family_fold": "layers {'fws': 10778, 'padus': 1157}: one land in 2 layers, the fws copy used (1,157 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "fws443",
+      "Kirwin National Wildlife Refuge",
+      10778,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kirwin",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/locations/kirwin-national-wildlife-refuge/rules-and-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kirwin/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 10778.0,
+     "as": "10,778 acres",
+     "clean": false,
+     "line": "sas. It is an overlay project on a U.S. Bureau of Reclamation irrigation and flood control reservoir covering 10,778 acres of prairie grasslands, open water, and wetlands. The refuge serves as a vital stop for migrating birds along",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/kirwin",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0293": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Marais Des Cygnes National Wildlife Refuge",
+   "official": {
+    "acres": 7500.0,
+    "as": "7,500 acre",
+    "clean": false,
+    "line": "Wildlife Refuge was established in 1992 for the protection and restoration of bottomland hardwood forest. The 7,500 acre Refuge hosts bottomland hardwood forests which are unique in Kansas and provides an opportunity to experience",
+    "read": "2026-11-01",
+    "sent": "The 7,500 acre Refuge hosts bottomland hardwood forests which are unique in Kansas and provides an opportunity to experience a different world than what is found in most of the state.",
+    "url": "https://www.fws.gov/refuge/marais-des-cygnes",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 7098,
+    "dissolved": {
+     "after": 7608,
+     "before": 15172,
+     "copies": 1,
+     "key_union": 7098,
+     "parts": 0,
+     "records": 2,
+     "summed": 7608,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 15172 -> 7608 acres",
+    "pieces": [
+     [
+      5027,
+      "Marais Des Cygnes National Wildlife Refuge",
+      7608,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 5,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 7500.0,
+     "as": "7,500 acre",
+     "clean": false,
+     "line": "Wildlife Refuge was established in 1992 for the protection and restoration of bottomland hardwood forest. The 7,500 acre Refuge hosts bottomland hardwood forests which are unique in Kansas and provides an opportunity to experience",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes",
+     "why": "total-looking"
+    },
+    {
+     "acres": 7500.0,
+     "as": "7,500 acres",
+     "clean": false,
+     "line": "of the region. The name, Marais des Cygnes, comes from the French language and means Marsh of the Swans. The 7,500 acres of the Refuge encompass a variety of habitats from bottomland hardwood forests dominated by oaks and hickory",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes",
+     "why": "total-looking"
+    },
+    {
+     "acres": 2500.0,
+     "as": "2,500 acres",
+     "clean": false,
+     "line": "ng the nutrients in the soil and providing habitat for a variety of wildlife from otters to wood ducks. About 2,500 acres of the Refuge is closed to visitation and provides a haven for wildlife including the many migratory birds th",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes",
+     "why": "total-looking"
+    },
+    {
+     "acres": 7500.0,
+     "as": "7500 acres",
+     "clean": false,
+     "line": "of the region. The name, Marais des Cygnes, comes from the French language and means Marsh of the Swans. The 7500 acres of the Refuge encompass a variety of habitats from bottomland hardwood forests dominated by oaks and hickory",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 2500.0,
+     "as": "2500 acres",
+     "clean": false,
+     "line": "ng the nutrients in the soil and providing habitat for a variety of wildlife from otters to wood ducks. About 2500 acres of the Refuge is closed to visitation and provides a haven for wildlife including the many migratory birds th",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 15000.0,
+     "as": "15,000 acres",
+     "clean": false,
+     "line": "Wildlife Area is managed by Kansas Department of Wildlife and Parks. Together the two agencies manage almost 15,000 acres of land along the Marais des Cygnes River and provide for a variety of habitat for wildlife and recreational",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 22135.0,
+     "as": "22,135 acres",
+     "clean": false,
+     "line": "s established in 1955 to provide and protect vital habitat for migratory waterfowl in the Central Flyway. Its 22,135 acres feature a unique combination of rare inland salt marsh and sand prairie. Quivira is listed as a Wetland of Gl",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/about-us",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0294": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Quivira National Wildlife Refuge",
+   "official": {
+    "acres": 22135.0,
+    "as": "22,135 acres",
+    "clean": false,
+    "line": "s established in 1955 to provide and protect vital habitat for migratory waterfowl in the Central Flyway. Its 22,135 acres feature a unique combination of rare inland salt marsh and sand prairie. Quivira is listed as a Wetland of Gl",
+    "read": "2026-11-01",
+    "sent": "Its 22,135 acres feature a unique combination of rare inland salt marsh and sand prairie.",
+    "url": "https://www.fws.gov/refuge/quivira",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 22163,
+    "dissolved": {
+     "after": 22163,
+     "before": 44326,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 44326 -> 22163 acres",
+    "pieces": [
+     [
+      4253,
+      "Quivira National Wildlife Refuge",
+      22163,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/sites/default/files/documents/2021%20Quivira%20NWR%20Hunting%20and%20Fishing%20Information.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 22135.0,
+     "as": "22,135 acres",
+     "clean": false,
+     "line": "s established in 1955 to provide and protect vital habitat for migratory waterfowl in the Central Flyway. Its 22,135 acres feature a unique combination of rare inland salt marsh and sand prairie. Quivira is listed as a Wetland of Gl",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/quivira",
+     "why": "total-looking"
+    },
+    {
+     "acres": 22135.0,
+     "as": "22,135 acres",
+     "clean": false,
+     "line": "and people. Welcome Welcome to Quivira National Wildlife Refuge (NWR). Established in 1955, the Refuge has 22,135 acres of mixed-grass prairie and wetland habitat. Quivira NWR is primarily managed to provide food, water, and re",
+     "total_like": false,
+     "url": "https://www.fws.gov/sites/default/files/documents/2021%20Quivira%20NWR%20Hunting%20and%20Fishing%20Information.pdf",
+     "why": "history"
+    },
+    {
+     "acres": 1500.0,
+     "as": "1,500 acres",
+     "clean": false,
+     "line": "nals and water control structures diverts water from Rattlesnake Creek to 34 water units ranging from 10 to 1,500 acres. General Information The Refuge is open to hunting and fishing as described in this brochure. Motorized veh",
+     "total_like": false,
+     "url": "https://www.fws.gov/sites/default/files/documents/2021%20Quivira%20NWR%20Hunting%20and%20Fishing%20Information.pdf",
+     "why": "a map label (no sentence)"
+    },
+    {
+     "acres": 22135.0,
+     "as": "22,135 acres",
+     "clean": false,
+     "line": "s as set forth in Title 50 of the Code of Federal Regulations. Hunting is permitted on 8,000 of the Refuge’s 22,135 acres in accordance with applicable Federal and State regulations and the Refuge-specific regulations in this bro",
+     "total_like": false,
+     "url": "https://www.fws.gov/sites/default/files/documents/2021%20Quivira%20NWR%20Hunting%20and%20Fishing%20Information.pdf",
+     "why": "a map label (no sentence)"
+    },
+    {
+     "acres": 22135.0,
+     "as": "22,135 acres",
+     "clean": false,
+     "line": "tory Bird Commission approved the purchase of land to create the Refuge, and by 1998 the last of the Refuge's 22,135 acres had been purchased. The name \"Quivira\" is of Spanish origin, given to the region by the Spanish explorer, Cor",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/quivira/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 7500.0,
+     "as": "7,500 acre",
+     "clean": false,
+     "line": "Wildlife Refuge was established in 1992 for the protection and restoration of bottomland hardwood forest. The 7,500 acre Refuge hosts bottomland hardwood forests which are unique in Kansas and provides an opportunity to experience",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/quivira/about-us",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0803": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Brown vs. Board of Education National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 2,
+    "manager": "",
+    "pieces": [
+     [
+      3188,
+      "Brown v. Board of Education National Historical Park",
+      2,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/brvb/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0818": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Fort Larned National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 415,
+    "manager": "",
+    "pieces": [
+     [
+      3128,
+      "Fort Larned National Historic Site",
+      415,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/getinvolved/supportyourpark/joinourfriends.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0821": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Fort Scott National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 17,
+    "manager": "",
+    "pieces": [
+     [
+      3131,
+      "Fort Scott National Historic Site",
+      17,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0851": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Nicodemus National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-12398": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Olathe Prairie Center State Preserve",
+   "official": null,
+   "ours": {
+    "acres": 180,
+    "manager": "",
+    "pieces": [
+     [
+      201142,
+      "Prairie Center",
+      302,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/nature-centers/olathe-prairie-center",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13095": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Texas Lake Wildlife Area State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 928,
+    "manager": "",
+    "pieces": [
+     [
+      201298,
+      "Texas Lake Wildlife Area",
+      1232,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.gov/KDWP-Info/Locations/Wildlife-Areas/Public-Wildlife-Areas-in-Southwest-Kansas/Texas-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13456": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pratt Fish Hatchery State Fish Hatchery",
+   "ours": null,
+   "score": null,
+   "t": "State Fish Hatchery",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-2330": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cedar Bluff State Park",
+   "official": null,
+   "ours": {
+    "acres": 2705,
+    "manager": "",
+    "pieces": [
+     [
+      2310,
+      "Cedar Bluff Reservoir",
+      1230,
+      "name"
+     ],
+     [
+      201212,
+      "Cedar Bluff State Park",
+      1051,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cedar-bluff",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2331": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cheney State Park",
+   "official": null,
+   "ours": {
+    "acres": 1975,
+    "manager": "",
+    "pieces": [
+     [
+      201213,
+      "Cheney State Park",
+      1442,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cheney",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2332": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Clinton State Park",
+   "official": null,
+   "ours": {
+    "acres": 20136,
+    "manager": "",
+    "pieces": [
+     [
+      2474,
+      "Clinton Recreation Area",
+      22656,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/clinton",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/clinton/Hunting-Brochure.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2333": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Crawford State Park",
+   "official": null,
+   "ours": {
+    "acres": 819,
+    "manager": "",
+    "pieces": [
+     [
+      157643,
+      "Crawford Fishing Lake Number One",
+      419,
+      "name"
+     ],
+     [
+      201214,
+      "Crawford State Park",
+      365,
+      "name"
+     ],
+     [
+      201215,
+      "Crawford State Park Lake",
+      108,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/crawford",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2334": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cross Timbers State Park",
+   "ours": null,
+   "score": null,
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-2335": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Eisenhower State Park",
+   "official": null,
+   "ours": {
+    "acres": 2028,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/eisenhower",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2336": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "El Dorado State Park",
+   "official": null,
+   "ours": {
+    "acres": 4575,
+    "manager": "",
+    "pieces": [
+     [
+      201299,
+      "El Dorado State Park",
+      4133,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/el-dorado",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2337": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Elk City State Park",
+   "official": null,
+   "ours": {
+    "acres": 965,
+    "manager": "",
+    "pieces": [
+     [
+      201279,
+      "Elk City State Park",
+      599,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/elk-city",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2338": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Fall River State Park",
+   "official": null,
+   "ours": {
+    "acres": 850,
+    "manager": "",
+    "pieces": [
+     [
+      201300,
+      "Fall River State Park",
+      935,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/fall-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2339": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Glen Elder State Park",
+   "official": null,
+   "ours": {
+    "acres": 10601,
+    "manager": "",
+    "pieces": [
+     [
+      2320,
+      "Glen Elder Reservoir",
+      10606,
+      "name"
+     ],
+     [
+      201216,
+      "Glen Elder State Park",
+      1789,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/flint-hills-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2340": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Hillsdale State Park",
+   "official": null,
+   "ours": {
+    "acres": 13372,
+    "manager": "",
+    "pieces": [
+     [
+      2477,
+      "Hillsdale Recreation Area",
+      13176,
+      "name"
+     ],
+     [
+      201217,
+      "Hillsdale State Park",
+      196,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/hillsdale",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Hillsdale/hillsdale-lakemap[1].pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2341": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kaw River State Park",
+   "official": null,
+   "ours": {
+    "acres": 53,
+    "manager": "",
+    "pieces": [
+     [
+      158724,
+      "Kaw River State Park",
+      69,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/kaw-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2342": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kanopolis Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 22855,
+    "manager": "",
+    "pieces": [
+     [
+      2478,
+      "Kanopolis Recreation Area",
+      21212,
+      "name"
+     ],
+     [
+      201301,
+      "Kanopolis State Park",
+      1643,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/kanopolis",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Kanopolis/Kanopolis-LakeMap.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2343": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lovewell State Park",
+   "official": null,
+   "ours": {
+    "acres": 1987,
+    "manager": "",
+    "pieces": [
+     [
+      2332,
+      "Lovewell Reservoir",
+      1934,
+      "name"
+     ],
+     [
+      201218,
+      "Lovewell State Park",
+      535,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/lovewell",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2344": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Meade State Park",
+   "official": null,
+   "ours": {
+    "acres": 302,
+    "manager": "",
+    "pieces": [
+     [
+      201219,
+      "Meade State Park",
+      427,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/meade",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2345": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Milford State Park",
+   "official": null,
+   "ours": {
+    "acres": 45289,
+    "manager": "",
+    "pieces": [
+     [
+      2482,
+      "Milford Recreation Area",
+      45289,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/milford",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/milford/Milford%20Lake%20Brochure%20Map%202011%20all.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2346": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Mushroom Rock State Park",
+   "official": null,
+   "ours": {
+    "acres": 5,
+    "manager": "",
+    "pieces": [
+     [
+      201302,
+      "Mushroom Rock State Park",
+      5,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/mushroom-rock",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2347": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Perry State Park",
+   "official": null,
+   "ours": {
+    "acres": 41220,
+    "manager": "",
+    "pieces": [
+     [
+      2483,
+      "Perry Recreation Area",
+      39433,
+      "name"
+     ],
+     [
+      201220,
+      "Perry State Park",
+      1787,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/perry",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Perry/Hunting%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2348": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pomona State Park",
+   "official": null,
+   "ours": {
+    "acres": 12679,
+    "manager": "",
+    "pieces": [
+     [
+      2485,
+      "Pomona Recreation Area",
+      10467,
+      "name"
+     ],
+     [
+      201221,
+      "Pomona State Park",
+      493,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/pomona",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/pomona/Pomona-LakeMap[1].pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2349": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Prairie Dog State Park",
+   "official": null,
+   "ours": {
+    "acres": 2089,
+    "manager": "",
+    "pieces": [
+     [
+      201222,
+      "Prairie Dog State Park",
+      1178,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/prairie-dog",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2350": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Prairie Spirit Trail State Trail",
+   "ours": null,
+   "score": null,
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-2351": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Sandhills State Park",
+   "official": null,
+   "ours": {
+    "acres": 1306,
+    "manager": "",
+    "pieces": [
+     [
+      201303,
+      "Sandhills State Park",
+      1120,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/sand-hills",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2352": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Historic Lake Scott State Park",
+   "official": null,
+   "ours": {
+    "acres": 1379,
+    "manager": "",
+    "pieces": [
+     [
+      201223,
+      "Scott State Park",
+      1088,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/historic-lake-scott",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2353": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Tuttle Creek State Park",
+   "official": null,
+   "ours": {
+    "acres": 33313,
+    "manager": "",
+    "pieces": [
+     [
+      2489,
+      "Tuttle Creek Recreation Area",
+      34548,
+      "name"
+     ],
+     [
+      201224,
+      "Tuttle Creek State Parks",
+      1082,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/tuttle-creek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/siteimages/Lake%20Sites/tuttlecreek/New%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2354": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Webster State Park",
+   "official": null,
+   "ours": {
+    "acres": 1331,
+    "manager": "",
+    "pieces": [
+     [
+      201304,
+      "Webster State Park",
+      1248,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/webster-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2355": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Wilson State Park",
+   "official": null,
+   "ours": {
+    "acres": 22582,
+    "manager": "",
+    "pieces": [
+     [
+      2490,
+      "Wilson Recreation Area",
+      21808,
+      "name"
+     ],
+     [
+      201305,
+      "Wilson State Park",
+      774,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/wilson",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/wilson/Wilson-Lakemap.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-3673": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Tallgrass Prairie Preserve National Conservation Area",
+   "official": {
+    "acres": 11000.0,
+    "as": "11,000 acres",
+    "clean": false,
+    "line": "n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the historic buildings, go on a hike, or use our cell phone tour. Podcasts Che",
+    "read": "2026-11-01",
+    "sent": "The preserve has nearly 11,000 acres to be explored.",
+    "url": "https://www.nps.gov/tapr/index.htm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 33,
+    "manager": "",
+    "pieces": [
+     [
+      3311,
+      "Tallgrass Prairie National Preserve",
+      33,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/tapr/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 100,
+   "same_agency": false,
+   "score": 3,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 11000.0,
+     "as": "11,000 acres",
+     "clean": false,
+     "line": "n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the historic buildings, go on a hike, or use our cell phone tour. Podcasts Che",
+     "total_like": true,
+     "url": "https://www.nps.gov/tapr/index.htm",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Conservation Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-4566": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "California National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4572": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lewis and Clark National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4576": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Oregon National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4578": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pony Express National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4579": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Santa Fe National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-5717": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Little Jerusalem Badlands State Park",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/little-jerusalem-badlands",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-5718": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Flint Hills Trail State Park",
+   "ours": null,
+   "score": null,
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7384": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Atchison State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 157,
+    "manager": "",
+    "pieces": [
+     [
+      201190,
+      "Atchison State Fishing Lake And Wildlife Area",
+      204,
+      "name"
+     ],
+     [
+      201225,
+      "Atchison State Fishing Lake",
+      42,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Atchison",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7385": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Brown State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 185,
+    "manager": "",
+    "pieces": [
+     [
+      201192,
+      "Brown State Fishing Lake And Wildlife Area",
+      135,
+      "name"
+     ],
+     [
+      201231,
+      "Brown State Fishing Lake",
+      61,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Brown-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7386": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Browning Oxbow State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7387": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Douglas State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 590,
+    "manager": "",
+    "pieces": [
+     [
+      201196,
+      "Douglas State Fishing Lake And Wildlife Area",
+      597,
+      "name"
+     ],
+     [
+      201236,
+      "Douglas State Fishing Lake",
+      168,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Douglas-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7388": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Geary State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 503,
+    "manager": "",
+    "pieces": [
+     [
+      201198,
+      "Geary State Fishing Lake And Wildlife Area",
+      461,
+      "name"
+     ],
+     [
+      201238,
+      "Geary State Fishing Lake",
+      42,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Geary-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7390": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Leavenworth State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 587,
+    "manager": "",
+    "pieces": [
+     [
+      201242,
+      "Leavenworth State Fishing Lake",
+      294,
+      "name"
+     ],
+     [
+      201162,
+      "Leavenworth Wildlife Area",
+      209,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Leavenworth-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7391": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Miami State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 169,
+    "manager": "",
+    "pieces": [
+     [
+      201203,
+      "Miami State Fishing Lake And Wildlife Area",
+      160,
+      "name"
+     ],
+     [
+      201247,
+      "Miami State Fishing Lake",
+      118,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Miami-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7392": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Middle Creek State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 8,
+    "manager": "",
+    "pieces": [
+     [
+      157641,
+      "Middle Creek Lake Park",
+      8,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Louisburg-Middle-Creek",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7393": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Milford State Fish Hatchery",
+   "ours": null,
+   "score": null,
+   "t": "State Fish Hatchery",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7394": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Nebo State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 149,
+    "manager": "",
+    "pieces": [
+     [
+      201311,
+      "Nebo State Lake Wildlife Area",
+      78,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Nebo-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7395": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Nemaha Wildlife Area State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 708,
+    "manager": "",
+    "pieces": [
+     [
+      201178,
+      "Nemaha Wildlife Area",
+      708,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Nemaha/Brochures/Nemaha-Wildlife-Area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7396": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pottawatomie No 1 State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 131,
+    "manager": "",
+    "pieces": [
+     [
+      201252,
+      "Pottawatomie State Fishing Lake",
+      17,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Pottawatomie-Lake-No.-1",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7397": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pottawatomie No 2 State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 140,
+    "manager": "",
+    "pieces": [
+     [
+      201253,
+      "Pottawatomie State Fishing Lake",
+      255,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Pottawatomie-Lake-No.-2",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7398": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Shawnee State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 361,
+    "manager": "",
+    "pieces": [
+     [
+      201255,
+      "Shawnee State Fishing Lake",
+      596,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Shawnee-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7399": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Tuttle Creek Willow State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 1082,
+    "manager": "",
+    "pieces": [
+     [
+      201224,
+      "Tuttle Creek State Parks",
+      1082,
+      "reviewed-approx"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Tuttle-Creek-Willow-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7400": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Washington State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 247,
+    "manager": "",
+    "pieces": [
+     [
+      201207,
+      "Washington State Fishing Lake And Wildlife Area",
+      415,
+      "name"
+     ],
+     [
+      201258,
+      "Washington State Fishing Lake",
+      29,
+      "name"
+     ],
+     [
+      201257,
+      "Washington State Fishing Lake",
+      6,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Washington-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7401": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Bourbon State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 353,
+    "manager": "",
+    "pieces": [
+     [
+      201147,
+      "Bourbon Wildlife Area",
+      246,
+      "name"
+     ],
+     [
+      201228,
+      "Bourbon State Fishing Lake",
+      94,
+      "name"
+     ],
+     [
+      201230,
+      "Bourbon State Fishing Lake",
+      38,
+      "name"
+     ],
+     [
+      201229,
+      "Bourbon State Fishing Lake",
+      4,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Bourbon-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7402": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Crawford State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 593,
+    "manager": "",
+    "pieces": [
+     [
+      201214,
+      "Crawford State Park",
+      365,
+      "name"
+     ],
+     [
+      201215,
+      "Crawford State Park Lake",
+      108,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Crawford-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7403": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lyon State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 392,
+    "manager": "",
+    "pieces": [
+     [
+      201202,
+      "Lyon State Fishing Lake And Wildlife Area",
+      448,
+      "name"
+     ],
+     [
+      201245,
+      "Lyon State Fishing Lake",
+      130,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Lyon-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7405": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Melvern River State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7406": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Mined Land State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 12405,
+    "manager": "",
+    "pieces": [
+     [
+      201168,
+      "Mined Land Wildlife Area",
+      515,
+      "name"
+     ],
+     [
+      201165,
+      "Mined Land Wildlife Area",
+      432,
+      "name"
+     ],
+     [
+      201169,
+      "Mined Land Wildlife Area",
+      412,
+      "name"
+     ],
+     [
+      201170,
+      "Mined Land Wildlife Area",
+      77,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Mined-Land-Wildlife-Area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7407": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Montgomery State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 338,
+    "manager": "",
+    "pieces": [
+     [
+      201248,
+      "Montgomery State Fishing Lake",
+      385,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Montgomery-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7408": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Neosho State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 3474,
+    "manager": "",
+    "pieces": [
+     [
+      201295,
+      "Neosho Wildlife Area",
+      2999,
+      "name"
+     ],
+     [
+      201249,
+      "Neosho State Fishing Lake",
+      227,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 4
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Neosho-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7409": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Osage State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 277,
+    "manager": "",
+    "pieces": [
+     [
+      201250,
+      "Osage State Fishing Lake",
+      512,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Osage-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7410": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Wilson State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 324,
+    "manager": "",
+    "pieces": [
+     [
+      201259,
+      "Wilson State Fishing Lake",
+      198,
+      "name"
+     ],
+     [
+      201186,
+      "Wilson State Fishing Lake Wildlife Area",
+      93,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Wilson-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7411": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Woodson State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 2925,
+    "manager": "",
+    "pieces": [
+     [
+      201208,
+      "Woodson State Fishing Lake And Wildlife Area",
+      2471,
+      "name"
+     ],
+     [
+      201187,
+      "Woodson Wildlife Area",
+      344,
+      "name"
+     ],
+     [
+      201260,
+      "Woodson State Fishing Lake",
+      110,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Woodson-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7412": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Black Kettle State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/South-Central-Region/Black-Kettle",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-7413": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Butler State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 384,
+    "manager": "",
+    "pieces": [
+     [
+      201306,
+      "Butler State Fishing Lake",
+      354,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/Butler-State-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7414": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Chase State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 329,
+    "manager": "",
+    "pieces": [
+     [
+      201193,
+      "Chase State Fishing Lake And Wildlife Area",
+      384,
+      "name"
+     ],
+     [
+      201232,
+      "Chase State Fishing Lake",
+      103,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/South-Central-Region/Chase",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7415": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cowley State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 334,
+    "manager": "",
+    "pieces": [
+     [
+      201195,
+      "Cowley State Fishing Lake And Wildlife Area",
+      136,
+      "name"
+     ],
+     [
+      201235,
+      "Cowley State Fishing Lake",
+      69,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/Cowley-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7416": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kingman State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 153,
+    "manager": "",
+    "pieces": [
+     [
+      201240,
+      "Kingman State Fishing Lake",
+      153,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/Kingman-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7417": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "McPherson State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 216,
+    "manager": "",
+    "pieces": [
+     [
+      201246,
+      "Mcpherson State Fishing Lake",
+      305,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/McPherson-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7418": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Jewell State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 163,
+    "manager": "",
+    "pieces": [
+     [
+      201310,
+      "Jewell State Lake Wildlife Area",
+      163,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Jewell-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7419": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Logan State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 386,
+    "manager": "",
+    "pieces": [
+     [
+      201201,
+      "Logan State Fishing Lake And Wildlife Area",
+      227,
+      "name"
+     ],
+     [
+      201243,
+      "Logan State Fishing Lake",
+      44,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Logan-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7420": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Ottawa State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 683,
+    "manager": "",
+    "pieces": [
+     [
+      201204,
+      "Ottawa State Fishing Lake And Wildlife Area",
+      653,
+      "name"
+     ],
+     [
+      201251,
+      "Ottawa State Fishing Lake",
+      67,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Ottawa-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7421": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Rooks State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 263,
+    "manager": "",
+    "pieces": [
+     [
+      201205,
+      "Rooks State Fishing Lake And Wildlife Area",
+      308,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northwest-Region/Rooks",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7422": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Saline State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 43,
+    "manager": "",
+    "pieces": [
+     [
+      201254,
+      "Saline State Fishing Lake",
+      76,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Saline-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7423": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Sheridan State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 141,
+    "manager": "",
+    "pieces": [
+     [
+      201256,
+      "Sheridan State Fishing Lake",
+      328,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Sheridan-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7424": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Sherman State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 1542,
+    "manager": "",
+    "pieces": [
+     [
+      201206,
+      "Sherman State Fishing Lake And Wildlife Area",
+      1542,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Sherman-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7425": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Barber State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 145,
+    "manager": "",
+    "pieces": [
+     [
+      201191,
+      "Barber State Fishing Lake And Wildlife Area",
+      129,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Barber-State-Fishing-Lake-Lower",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7426": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Clark State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 1516,
+    "manager": "",
+    "pieces": [
+     [
+      201151,
+      "Clark Wildlife Area",
+      1012,
+      "name"
+     ],
+     [
+      201233,
+      "Clark State Fishing Lake",
+      257,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Clark-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7427": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Concannon State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 626,
+    "manager": "",
+    "pieces": [
+     [
+      201194,
+      "Concannon State Fishing Lake And Wildlife Area",
+      754,
+      "name"
+     ],
+     [
+      201234,
+      "Concannon State Fishing Lake",
+      49,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Southwest-Region/Concannon",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7428": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Ford County State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 173,
+    "manager": "",
+    "pieces": [
+     [
+      201307,
+      "Ford State Fishing Lake and Wildlife Area",
+      314,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Ford-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7429": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Goodman State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 186,
+    "manager": "",
+    "pieces": [
+     [
+      201277,
+      "Goodman State Lake and Wildlife Area",
+      264,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Southwest-Region/Goodman",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7430": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Hain State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 65,
+    "manager": "",
+    "pieces": [
+     [
+      201281,
+      "Hain State Fishing Lake and Wildlife Area",
+      70,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Hain-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7431": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Hodgeman State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 314,
+    "manager": "",
+    "pieces": [
+     [
+      201200,
+      "Hodgeman State Fishing Lake And Wildlife Area",
+      254,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Southwest-Region/Hodgeman",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7432": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kiowa State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 34,
+    "manager": "",
+    "pieces": [
+     [
+      201241,
+      "Kiowa State Fishing Lake",
+      42,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Kiowa-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7433": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Meade State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 1238,
+    "manager": "",
+    "pieces": [
+     [
+      201164,
+      "Meade Wildlife Area",
+      811,
+      "name"
+     ],
+     [
+      201219,
+      "Meade State Park",
+      427,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 4
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Meade-State-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7434": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Scott State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 1508,
+    "manager": "",
+    "pieces": [
+     [
+      201223,
+      "Scott State Park",
+      1088,
+      "name"
+     ],
+     [
+      201182,
+      "Scott Wildlife Area",
+      160,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 4
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Scott-State-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7477": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cimarron National Grassland",
+   "official": {
+    "acres": 108175.0,
+    "as": "108,175 acres",
+    "clean": false,
+    "line": "nd Located within Morton and Stevens counties in southwestern Kansas, the Cimarron National Grassland manages 108,175 acres. Comanche National Grassland The Comanche National Grassland is located in Baca, Las Animas and Otero countie",
+    "read": "2026-11-01",
+    "sent": "Located within Morton and Stevens counties in southwestern Kansas, the Cimarron National Grassland manages 108,175 acres.",
+    "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
+   "ours": {
+    "acres": 108598,
+    "manager": "",
+    "pieces": [
+     [
+      2721,
+      "Cimarron National Grassland",
+      108598,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r02/psicc",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 3000000.0,
+     "as": "3 million acres",
+     "clean": false,
+     "line": "also known as \"fourteeners\" or \"14ers\"). We have something for everyone! Recreation Opportunities With around 3 million acres across the Pike-San Isabel National Forests & Cimarron and Comanche National Grasslands, we have an abundance",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "another park / unit named in the sentence"
+    },
+    {
+     "acres": 108175.0,
+     "as": "108,175 acres",
+     "clean": false,
+     "line": "nd Located within Morton and Stevens counties in southwestern Kansas, the Cimarron National Grassland manages 108,175 acres. Comanche National Grassland The Comanche National Grassland is located in Baca, Las Animas and Otero countie",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 443784.0,
+     "as": "443,784 acres",
+     "clean": false,
+     "line": "tional Grassland is located in Baca, Las Animas and Otero counties in southeastern Colorado and manages about 443,784 acres. Leadville Ranger District The Leadville Ranger District is home to the Sawatch Range, the highest mountain r",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 230000.0,
+     "as": "230,000 acres",
+     "clean": false,
+     "line": "glaciated mountains form the crest… Pikes Peak Ranger District The Pikes Peak Ranger District manages roughly 230,000 acres in El Paso, Teller and Douglas counties in Colorado. Salida Ranger District The Salida Ranger District encomp",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 440000.0,
+     "as": "440,000 acres",
+     "clean": false,
+     "line": ", Teller and Douglas counties in Colorado. Salida Ranger District The Salida Ranger District encompasses over 440,000 acres in central Colorado, \"the heart of the Rockies.\" San Carlos Ranger District The San Carlos Ranger District ma",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "total-looking"
+    },
+    {
+     "acres": 400000.0,
+     "as": "400,000 acres",
+     "clean": false,
+     "line": "Colorado, \"the heart of the Rockies.\" San Carlos Ranger District The San Carlos Ranger District manages about 400,000 acres of National Forest System land in Fremont, Custer, Huerfano, Pueblo and Las Animas… South Park Ranger Distric",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 456599.0,
+     "as": "456,599 acres",
+     "clean": false,
+     "line": "emont, Custer, Huerfano, Pueblo and Las Animas… South Park Ranger District South Park Ranger District manages 456,599 acres of land ranging in elevation from 7,100 to 14,285 feet, mostly in Park and Teller counties in… South Platte R",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 450000.0,
+     "as": "450,000 acres",
+     "clean": false,
+     "line": "mostly in Park and Teller counties in… South Platte Ranger District The South Platte Ranger District manages 450,000 acres east of the Continental Divide in the central Rocky Mountains and lies adjacent to the Denver… Recreation Gro",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Grassland",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-7866": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Mine Creek Civil War Battlefield State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7867": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Benedictine Bottoms State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 1977,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Services/Publications/Maps-State-Wildlife-Areas/Benedictine-Bottoms-WA",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7918": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Byron Walker State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 6179,
+    "manager": "",
+    "pieces": [
+     [
+      201148,
+      "Byron Walker Wildlife Area",
+      4415,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Byron-Walker",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7919": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cedar Bluff State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 13579,
+    "manager": "",
+    "pieces": [
+     [
+      201149,
+      "Cedar Bluff Wildlife Area",
+      11416,
+      "name"
+     ],
+     [
+      2310,
+      "Cedar Bluff Reservoir",
+      1230,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Cedar-Bluff-Wildlife-Area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7920": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cheney State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 18304,
+    "manager": "",
+    "pieces": [
+     [
+      2272,
+      "Cheney Wildlife Area",
+      15868,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Cheney",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7921": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cheyenne Bottoms State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 20139,
+    "manager": "",
+    "pieces": [
+     [
+      201150,
+      "Cheyenne Bottoms Wildlife Area",
+      18850,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southwest/Cheyenne-Bottoms",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7922": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Clinton State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 12844,
+    "manager": "",
+    "pieces": [
+     [
+      201286,
+      "Clinton Wildlife Area",
+      9883,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 9
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/clinton-wildlife-area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/clinton/Hunting-Brochure.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7923": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Copan State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 2596,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Copan",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7924": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Council Grove State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 4016,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Council-Grove",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7925": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "El Dorado State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 5774,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/El-Dorado",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7926": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Elk City Reservoir State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 19666,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 4
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Elk-City",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7927": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Fall River State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 13023,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Fall-River",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7928": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Glen Elder State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 28280,
+    "manager": "",
+    "pieces": [
+     [
+      201152,
+      "Glen Elder Wildlife Area",
+      14021,
+      "name"
+     ],
+     [
+      2320,
+      "Glen Elder Reservoir",
+      10606,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Glen-Elder",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7929": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Hillsdale State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 8410,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Hillsdale",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Hillsdale/hillsdale-lakemap[1].pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7930": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Hollister State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 2781,
+    "manager": "",
+    "pieces": [
+     [
+      201155,
+      "Hollister Wildlife Area",
+      2452,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Hollister",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7931": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Jamestown State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 5105,
+    "dissolved": {
+     "after": 2303,
+     "before": 2710,
+     "copies": 1,
+     "key_union": 5105,
+     "parts": 0,
+     "records": 3,
+     "summed": 2303,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2710 -> 2303 acres",
+    "pieces": [
+     [
+      201157,
+      "Jamestown Wildlife Area",
+      1895,
+      "name"
+     ],
+     [
+      201158,
+      "Jamestown Wildlife Area",
+      408,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Jamestown",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7932": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kansas Veterans State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.gov/KDWP-Info/Locations/Wildlife-Areas/Northwest/Kansas-Veteran-s",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-7933": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kaw State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 5148,
+    "manager": "",
+    "pieces": [
+     [
+      201132,
+      "Kaw Wildlife Area",
+      4154,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Kaw",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7934": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lovewell State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 7034,
+    "manager": "",
+    "pieces": [
+     [
+      201163,
+      "Lovewell Wildlife Area",
+      4067,
+      "name"
+     ],
+     [
+      2332,
+      "Lovewell Reservoir",
+      1934,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Lovewell",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7935": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Marais des Cygnes State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 7950,
+    "manager": "",
+    "pieces": [
+     [
+      201293,
+      "Marais Des Cygne Wildlife Area",
+      7950,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Marais-des-Cygnes",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7936": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Marion State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 8632,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Reservoirs/South-Central-Region/Marion",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7937": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "McPherson Valley Wetlands State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 4301,
+    "manager": "",
+    "pieces": [
+     [
+      201282,
+      "McPherson Valley Wetlands",
+      4301,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/McPherson-Valley-Wetlands",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7938": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Milford State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 28667,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 11
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/milford-wildlife-area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/milford/Milford%20Lake%20Brochure%20Map%202011%20all.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7939": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Mined Land State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 13649,
+    "dissolved": {
+     "after": 13649,
+     "before": 14854,
+     "copies": 0,
+     "parts": 5,
+     "records": 13,
+     "tracts": 8
+    },
+    "manager": "",
+    "note": "13 joined records = 8 tracts: 0 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 14854 -> 13649 acres",
+    "pieces": [
+     [
+      201174,
+      "Mined Land Wildlife Area",
+      11548,
+      "name"
+     ],
+     [
+      201176,
+      "Mined Land Wildlife Area",
+      602,
+      "name"
+     ],
+     [
+      201177,
+      "Mined Land Wildlife Area",
+      567,
+      "name"
+     ],
+     [
+      201169,
+      "Mined Land Wildlife Area",
+      412,
+      "name"
+     ],
+     [
+      201167,
+      "Mined Land Wildlife Area",
+      337,
+      "name"
+     ],
+     [
+      201166,
+      "Mined Land Wildlife Area",
+      71,
+      "name"
+     ],
+     [
+      201171,
+      "Mined Land Wildlife Area",
+      69,
+      "name"
+     ],
+     [
+      201172,
+      "Mined Land Wildlife Area",
+      43,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 16
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Mined-Land",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7940": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Norton State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 6272,
+    "manager": "",
+    "pieces": [
+     [
+      201179,
+      "Norton Wildlife Area",
+      6272,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Keith-Sebelius-Reservoir-Norton",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7941": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Perry State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 27290,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Perry",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Perry/Hunting%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7942": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pratt Sandhills State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 5708,
+    "manager": "",
+    "pieces": [
+     [
+      201296,
+      "Pratt Sandhills Wildlife Area",
+      5708,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southwest/Pratt-Sandhills",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7943": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Sandsage Bison Range State Wildlife Area",
+   "ours": null,
+   "score": null,
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7944": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Smoky Hill State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 5601,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/smoky-hill-wildlife-area-at-kanopolis-reservoir",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7945": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Toronto State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 5437,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 6
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Toronto",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7946": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Tuttle Creek State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 18594,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 6
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Tuttle-Creek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/siteimages/Lake%20Sites/tuttlecreek/New%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7947": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Webster State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 6020,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 3
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Webster",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7948": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Wilson State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 9208,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 5
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Wilson",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/wilson/Wilson-Lakemap.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7949": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Woodson State Wildlife Area",
+   "official": null,
+   "ours": {
+    "acres": 2925,
+    "manager": "",
+    "pieces": [
+     [
+      201208,
+      "Woodson State Fishing Lake And Wildlife Area",
+      2471,
+      "name"
+     ],
+     [
+      201187,
+      "Woodson Wildlife Area",
+      344,
+      "name"
+     ],
+     [
+      201260,
+      "Woodson State Fishing Lake",
+      110,
+      "name (designation code ignored)"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 6
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Wildlife Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-9177": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Constitution Hall State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9178": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Fort Hays State Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 16,
+    "manager": "",
+    "pieces": [
+     [
+      157642,
+      "Fort Hays State Historic Site",
+      16,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/fort-hays/19563",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/about/19383",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/kansas-history-a-journal-of-the-central-plains/12443",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-9179": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Grinter Place State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9180": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Hollenberg Pony Express Station State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9181": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Kaw Mission State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9182": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pawnee Indian Museum State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9183": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Red Rocks State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9184": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Cottonwood Ranch State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9185": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "First Territorial Capitol State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9186": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Goodnow House State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9187": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "John Brown Museum State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9188": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Shawnee Indian Mission State Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 11,
+    "manager": "",
+    "pieces": [
+     [
+      157085,
+      "Shawnee Indian Mission",
+      11,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/shawnee-indian-mission/19570",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/kansas-history-spring-2001/12409",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/about/19383",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 12.0,
+     "as": "12 acre",
+     "clean": false,
+     "line": "ool attended by boys and girls from Shawnee, Delaware, and other Indian nations from 1839 to 1862. Visit this 12-acre National Historic Landmark and learn the stories of those who lived there. Plan your visit - find hours of op",
+     "total_like": false,
+     "url": "https://www.kshs.org/p/shawnee-indian-mission/19570",
+     "why": "a national unit on a state park page"
+    }
+   ],
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-9189": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Iowa and Sac & Fox Mission State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9190": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Marais des Cygnes Massacre State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9191": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pawnee Rock State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9752": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lehigh Portland State Park",
+   "official": null,
+   "ours": {
+    "acres": 230,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://lehightrails.com/news/lehigh-portland-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://lehightrails.com/rules/",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  }
+ },
+ "read": "2026-11-01"
+}

@@ -1,0 +1,143 @@
+name: KPC bot workshop (truth checker, hours fees permits, campground info)
+# Oct 28 2026 ~5 AM (Fable, chat 10 'bot workshop'; replaces kpc-truth.yml, kpc-hours.yml and kpc-campinfo.yml): ONE job runs the
+# three workshop bots ONE AT A TIME, area by area (truth checker -> hours / fees / permits -> campground info), so no agency host
+# sees two of our bots at once (fw.ky.gov answered 403 when three read it in one hour). Each bot keeps its own script, folder,
+# state and review (data/truth, data/hours, data/campinfo); kpc_workshop.py only orders them, writes the status lines
+# (data/status/inbox-chat-8.md 'grade me' + board.json) and saves ONE commit per bot-and-area batch. All three are REVIEW
+# LISTS / FACTS: nothing here changes a key, an outline or a card. Manners: kpc_manners.py.
+# A job = up to 300 minutes; when areas remain and 'chain' allows, the job starts the next one. Never fails except a failed save.
+# WEEKLY (Sunday 09:17 UTC): the truth checker only, and only once data/truth/state.json says 'proven' (the Kentucky gate passed).
+on:
+  workflow_dispatch:
+    inputs:
+      bots:
+        description: 'Which bots, in order: truth hours campinfo (any subset)'
+        default: 'truth hours campinfo'
+      areas:
+        description: 'Areas (e.g. "US-KY US-TN"); blank = the next unfinished areas in queue order (Kentucky, then the 2-fer regions, southeast first)'
+        default: ''
+      minutes:
+        description: 'Minutes this job may work (max 300)'
+        default: '300'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '8'
+      test:
+        description: 'yes = Kentucky gates (truth: Levi Jackson 722 vs 896 flagged + Otter Creek -> Meade County; hours: the kpc-ky-hours.json key)'
+        default: ''
+      then_queue:
+        description: 'yes = when every gate PASSES, start the whole queue by itself'
+        default: ''
+      browser:
+        description: 'yes = headless-browser pass for pages that hide their facts behind scripts (parks.ky.gov, home.nps.gov, KDFWR)'
+        default: 'yes'
+      keyed_once:
+        description: "yes = the ONE keyed fill (Brandon Oct 29 9:34 AM): campinfo US-KY federal rows from Recreation.gov's API, ONLY empty fields, into data/waiting/in (chat 11 grades, a person releases). Never on the schedule."
+        default: ''
+  schedule:
+    - cron: '17 9 * * 0'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-workshop-${{ inputs.bots || 'weekly' }}   # Oct 28: one queue per bot set, so a Kentucky test of one bot is not cancelled by another bot's long-run chain (they read different areas)
+  cancel-in-progress: false
+jobs:
+  workshop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer keys, outlines and the POTA retired list (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Weekly runs only once proven
+        id: gate
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          if [ "${{ github.event_name }}" = schedule ]; then
+            P=$(python3 -c "import json;print((json.load(open('data/truth/state.json')).get('proven') or ''))" 2>/dev/null || echo '')
+            if [ -z "$P" ]; then echo "truth checker not proven yet: nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+            python3 -c "
+          import json; p='data/truth/state.json'; s=json.load(open(p))
+          for a in s.get('areas',{}).values(): a['status']='queued'
+          json.dump(s,open(p,'w'),indent=1)" || true
+            echo "BOTS=truth" >> "$GITHUB_ENV"
+          else
+            echo "BOTS=${{ inputs.bots }}" >> "$GITHUB_ENV"
+          fi
+      - name: Tools
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: |
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || true; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true; fi
+      - name: Run the bots one at a time, one save per batch
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          MINUTES: ${{ inputs.minutes || 300 }}
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
+          LINKS: ../links
+          NET: '1'   # Nov 1 (chat 11): the waiting room's F-4 link re-test needs the network, else every docs file waits
+          WAITING_HOLD: '1'   # Brandon Oct 29 7:55 PM: changed area files wait in data/waiting/in/ (checked by the waiting room + chat 11, not live)
+          NPS_API_KEY: ${{ inputs.keyed_once == 'yes' && secrets.NPS_API_KEY || '' }}     # Oct 29 (Brandon 9:34 AM): no recurring keyed calls here
+          RIDB_API_KEY: ${{ inputs.keyed_once == 'yes' && secrets.RIDB_API_KEY || '' }}
+          FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
+          FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_intake_reader.py camping || true   # HQ Oct 31 7:55 PM: the camp bot pulls its own files from branch intake-files
+          python3 .github/scripts/kpc_workshop.py | tee /tmp/workshop.log || true
+          if [ "${{ inputs.keyed_once }}" = yes ] && [ -f data/campinfo/US-KY.json ]; then   # ONE keyed fill: only empty fields, to the waiting room, live file untouched
+            git show HEAD:data/campinfo/US-KY.json > /tmp/live.json 2>/dev/null || cp data/campinfo/US-KY.json /tmp/live.json
+            python3 - <<'PY' || true
+          import json, os
+          old = json.load(open('/tmp/live.json')); new = json.load(open('data/campinfo/US-KY.json'))
+          def empty(v): return v is None or v == '' or v == [] or v == {} or (isinstance(v, dict) and all(empty(x) for x in v.values()))
+          def fill(o, n):
+              if isinstance(o, dict) and isinstance(n, dict):
+                  for k, v in n.items():
+                      if k not in o or empty(o[k]): o[k] = v
+                      elif isinstance(o[k], dict): fill(o[k], v)
+              return o
+          n_f = 0
+          for cid, row in (new.get('camps') or {}).items():
+              if row.get('list') != 'campfed': continue
+              o = (old.get('camps') or {}).get(cid)
+              if o is None: continue                       # only rows we already have
+              before = json.dumps(o, sort_keys=True); fill(o, row); n_f += json.dumps(o, sort_keys=True) != before
+          old['keyed_fill'] = {'date': os.popen('date -u +%F').read().strip(), 'rows_changed': n_f, 'source': 'Recreation.gov / National Park Service data', 'rule': 'only empty fields, once (Brandon Oct 29 9:34 AM)'}
+          os.makedirs('data/waiting/in/data/campinfo', exist_ok=True)
+          json.dump(old, open('data/waiting/in/data/campinfo/US-KY.json', 'w'), indent=1, ensure_ascii=False)
+          print(f'::notice title=Keyed fill::{n_f} KY federal campground rows filled (empty fields only): waiting in data/waiting/in/ for chat 11; the live file is unchanged')
+          PY
+            cp /tmp/live.json data/campinfo/US-KY.json
+            bash ../links/.github/scripts/kpc_push_data.sh . "keyed fill: KY federal campgrounds (waiting)" data/waiting || true
+          fi
+          grep -o '^LEFT=[0-9]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
+          grep -o '^GATE=[A-Z]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
+          bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || true
+      - name: Passed Kentucky gates start the queue
+        if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' && env.GATE == 'PASS' }}
+        continue-on-error: true
+        run: |
+          echo "::notice title=Workshop::Kentucky gates PASSED: starting the whole queue (chain ${{ inputs.chain }})"
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || true
+      - name: Areas remain, so the next job starts itself
+        if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Workshop::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || true

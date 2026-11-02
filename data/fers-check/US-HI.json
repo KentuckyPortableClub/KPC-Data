@@ -1,0 +1,1516 @@
+{
+ "area": "US-HI",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-HI.json",
+ "rows": {
+  "US-0037+US-4565@trail@19.401,-155.336": {
+   "id": "US-0037+US-4565@trail@19.401,-155.336",
+   "area": "US-HI",
+   "refs": [
+    "US-0037",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 35.98,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:32:07Z",
+   "layers": [
+    {
+     "ref": "US-0037",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:32:09Z"
+    },
+    {
+     "ref": "US-0037",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:10Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 301.04,
+   "stored_shape_acres": 32.97,
+   "live_acres": 32.82,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 30406,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 32.8 ac vs 33.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.319451,
+    -155.043564
+   ]
+  },
+  "US-0043+US-2219@area@21.175,-157.004": {
+   "id": "US-0043+US-2219@area@21.175,-157.004",
+   "area": "US-HI",
+   "refs": [
+    "US-0043",
+    "US-2219"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 59.5,
+   "stored_wide_m": 335,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:11Z",
+   "layers": [
+    {
+     "ref": "US-0043",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:12Z"
+    },
+    {
+     "ref": "US-2219",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:14Z"
+    },
+    {
+     "ref": "US-2219",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:16Z"
+    },
+    {
+     "ref": "US-2219",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:17Z"
+    },
+    {
+     "ref": "US-2219",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 58.56,
+   "live_acres": 58.36,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 334.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 58.4 ac vs 58.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.175041,
+    -157.004722
+   ]
+  },
+  "US-0117+US-4565@trail@19.354,-155.877": {
+   "id": "US-0117+US-4565@trail@19.354,-155.877",
+   "area": "US-HI",
+   "refs": [
+    "US-0117",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.58,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:32:19Z",
+   "layers": [
+    {
+     "ref": "US-0117",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:20Z"
+    },
+    {
+     "ref": "US-0117",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:21Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 2.18,
+   "stored_shape_acres": 2.28,
+   "live_acres": 2.18,
+   "kept_pct": 100.0,
+   "size_pct": -4.4,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 42.2,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.2 ac vs 2.3 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.355016,
+    -155.877246
+   ]
+  },
+  "US-0117+US-7695@area@19.878,-155.250": {
+   "id": "US-0117+US-7695@area@19.878,-155.250",
+   "area": "US-HI",
+   "refs": [
+    "US-0117",
+    "US-7695"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 220.1,
+   "stored_wide_m": 167,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:32:22Z",
+   "layers": [
+    {
+     "ref": "US-0117",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:32:22Z"
+    },
+    {
+     "ref": "US-0117",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:32:23Z"
+    },
+    {
+     "ref": "US-7695",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "6 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:32:24Z"
+    },
+    {
+     "ref": "US-7695",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 45.05,
+   "live_acres": 38.42,
+   "kept_pct": 99.6,
+   "size_pct": -14.7,
+   "moved_m": 2882,
+   "gap_m": 0,
+   "wide_m": 83.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 38.4 ac vs 45.0 ac stored (-15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.863724,
+    -155.273054
+   ]
+  },
+  "US-0739+US-4565@trail@19.689,-156.035": {
+   "id": "US-0739+US-4565@trail@19.689,-156.035",
+   "area": "US-HI",
+   "refs": [
+    "US-0739",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.82,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:26Z",
+   "layers": [
+    {
+     "ref": "US-0739",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:26Z"
+    },
+    {
+     "ref": "US-0739",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:28Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 58.41,
+   "stored_shape_acres": 5.37,
+   "live_acres": 8.19,
+   "kept_pct": 100.0,
+   "size_pct": 52.6,
+   "moved_m": 1038,
+   "gap_m": 0,
+   "wide_m": 64.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 53% bigger (8.2 ac vs 5.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    19.687088,
+    -156.033469
+   ]
+  },
+  "US-0753+US-4565@trail@19.414,-155.907": {
+   "id": "US-0753+US-4565@trail@19.414,-155.907",
+   "area": "US-HI",
+   "refs": [
+    "US-0753",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 11.39,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:32:29Z",
+   "layers": [
+    {
+     "ref": "US-0753",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:30Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 9.83,
+   "stored_shape_acres": 9.93,
+   "live_acres": 9.83,
+   "kept_pct": 100.0,
+   "size_pct": -1.0,
+   "moved_m": 45,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.8 ac vs 9.9 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.415399,
+    -155.907819
+   ]
+  },
+  "US-0855+US-4565@trail@20.026,-155.823": {
+   "id": "US-0855+US-4565@trail@20.026,-155.823",
+   "area": "US-HI",
+   "refs": [
+    "US-0855",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 4.92,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:32:31Z",
+   "layers": [
+    {
+     "ref": "US-0855",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:31Z"
+    },
+    {
+     "ref": "US-0855",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:32Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 6.31,
+   "stored_shape_acres": 4.49,
+   "live_acres": 5.41,
+   "kept_pct": 100.0,
+   "size_pct": 20.5,
+   "moved_m": 154,
+   "gap_m": 0,
+   "wide_m": 72.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.4 ac vs 4.5 ac stored (+20%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    20.027672,
+    -155.823153
+   ]
+  },
+  "US-10905+US-10912@trail@21.319,-157.819": {
+   "id": "US-10905+US-10912@trail@21.319,-157.819",
+   "area": "US-HI",
+   "refs": [
+    "US-10905",
+    "US-10912"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 6.13,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:33Z",
+   "layers": [
+    {
+     "ref": "US-10905",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:33Z"
+    },
+    {
+     "ref": "US-10912",
+     "layer": "saved copy US-10912.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-10912"
+   ],
+   "live_stretch_acres": 5.73,
+   "stored_shape_acres": 5.63,
+   "live_acres": 5.73,
+   "kept_pct": 100.0,
+   "size_pct": 1.7,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 63.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.7 ac vs 5.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.31919,
+    -157.819225
+   ]
+  },
+  "US-10905+US-10918@trail@21.318,-157.790": {
+   "id": "US-10905+US-10918@trail@21.318,-157.790",
+   "area": "US-HI",
+   "refs": [
+    "US-10905",
+    "US-10918"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 31.8,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:34Z",
+   "layers": [
+    {
+     "ref": "US-10905",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:35Z"
+    },
+    {
+     "ref": "US-10918",
+     "layer": "saved copy US-10918.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-10918"
+   ],
+   "live_stretch_acres": 29.41,
+   "stored_shape_acres": 29.44,
+   "live_acres": 29.41,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 577,
+   "gap_m": 0,
+   "wide_m": 64.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29.4 ac vs 29.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.310699,
+    -157.795227
+   ]
+  },
+  "US-10905+US-2222@area@21.315,-157.824": {
+   "id": "US-10905+US-2222@area@21.315,-157.824",
+   "area": "US-HI",
+   "refs": [
+    "US-10905",
+    "US-2222"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.1,
+   "stored_wide_m": 23,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:35Z",
+   "layers": [
+    {
+     "ref": "US-10905",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:36Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:37Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:38Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.47,
+   "live_acres": 0.37,
+   "kept_pct": 95.1,
+   "size_pct": -21.3,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 20.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.4 ac vs 0.5 ac stored (-21%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.313698,
+    -157.825579
+   ]
+  },
+  "US-10906+US-10912@trail@21.318,-157.820": {
+   "id": "US-10906+US-10912@trail@21.318,-157.820",
+   "area": "US-HI",
+   "refs": [
+    "US-10906",
+    "US-10912"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 3.32,
+   "stored_wide_m": 60.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:40Z",
+   "layers": [
+    {
+     "ref": "US-10906",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:40Z"
+    },
+    {
+     "ref": "US-10906",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:41Z"
+    },
+    {
+     "ref": "US-10912",
+     "layer": "saved copy US-10912.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-10912"
+   ],
+   "live_stretch_acres": 5.0,
+   "stored_shape_acres": 2.99,
+   "live_acres": 4.19,
+   "kept_pct": 100.0,
+   "size_pct": 39.9,
+   "moved_m": 129,
+   "gap_m": 0,
+   "wide_m": 75.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 40% bigger (4.2 ac vs 3.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    21.317318,
+    -157.819258
+   ]
+  },
+  "US-10906+US-2222@area@21.314,-157.822": {
+   "id": "US-10906+US-2222@area@21.314,-157.822",
+   "area": "US-HI",
+   "refs": [
+    "US-10906",
+    "US-2222"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 28.5,
+   "stored_wide_m": 199,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:42Z",
+   "layers": [
+    {
+     "ref": "US-10906",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:42Z"
+    },
+    {
+     "ref": "US-10906",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:43Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:43Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:43Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 25.86,
+   "live_acres": 25.88,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 199.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 25.9 ac vs 25.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.31537,
+    -157.819859
+   ]
+  },
+  "US-10912+US-2222@trail@21.318,-157.820": {
+   "id": "US-10912+US-2222@trail@21.318,-157.820",
+   "area": "US-HI",
+   "refs": [
+    "US-10912",
+    "US-2222"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.55,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:44Z",
+   "layers": [
+    {
+     "ref": "US-10912",
+     "layer": "saved copy US-10912.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:44Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:44Z"
+    },
+    {
+     "ref": "US-2222",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:45Z"
+    }
+   ],
+   "saved_lines": [
+    "US-10912"
+   ],
+   "live_stretch_acres": 2.35,
+   "stored_shape_acres": 2.29,
+   "live_acres": 2.35,
+   "kept_pct": 100.0,
+   "size_pct": 2.3,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.3 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.316722,
+    -157.819822
+   ]
+  },
+  "US-10918+US-6416@trail@21.308,-157.796": {
+   "id": "US-10918+US-6416@trail@21.308,-157.796",
+   "area": "US-HI",
+   "refs": [
+    "US-10918",
+    "US-6416"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.07,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:45Z",
+   "layers": [
+    {
+     "ref": "US-10918",
+     "layer": "saved copy US-10918.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6416",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:46Z"
+    },
+    {
+     "ref": "US-6416",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:47Z"
+    },
+    {
+     "ref": "US-6416",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:49Z"
+    },
+    {
+     "ref": "US-6416",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:50Z"
+    }
+   ],
+   "saved_lines": [
+    "US-10918"
+   ],
+   "live_stretch_acres": 1.86,
+   "stored_shape_acres": 1.81,
+   "live_acres": 1.86,
+   "kept_pct": 100.0,
+   "size_pct": 2.7,
+   "moved_m": 98,
+   "gap_m": 0,
+   "wide_m": 46.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.9 ac vs 1.8 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    21.307236,
+    -157.797231
+   ]
+  },
+  "US-12062+US-4565@trail@19.643,-156.011": {
+   "id": "US-12062+US-4565@trail@19.643,-156.011",
+   "area": "US-HI",
+   "refs": [
+    "US-12062",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.88,
+   "stored_wide_m": 56.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:51Z",
+   "layers": [
+    {
+     "ref": "US-12062",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:51Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 5.96,
+   "stored_shape_acres": 6.06,
+   "live_acres": 5.96,
+   "kept_pct": 100.0,
+   "size_pct": -1.6,
+   "moved_m": 242,
+   "gap_m": 0,
+   "wide_m": 50.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.0 ac vs 6.1 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.642332,
+    -156.009071
+   ]
+  },
+  "US-2210+US-3391@area@22.212,-159.586": {
+   "id": "US-2210+US-3391@area@22.212,-159.586",
+   "area": "US-HI",
+   "refs": [
+    "US-2210",
+    "US-3391"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:32:52Z",
+   "layers": [
+    {
+     "ref": "US-2210",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:53Z"
+    },
+    {
+     "ref": "US-2210",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:32:55Z"
+    },
+    {
+     "ref": "US-2210",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:32:57Z"
+    },
+    {
+     "ref": "US-2210",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:32:58Z"
+    },
+    {
+     "ref": "US-3391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:59Z"
+    },
+    {
+     "ref": "US-3391",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:00Z"
+    },
+    {
+     "ref": "US-3391",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5.02,
+   "live_acres": 5.15,
+   "kept_pct": 100.0,
+   "size_pct": 2.6,
+   "moved_m": 154,
+   "gap_m": 0,
+   "wide_m": 19.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.2 ac vs 5.0 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    22.212234,
+    -159.588269
+   ]
+  },
+  "US-2214+US-4565@trail@19.808,-156.010": {
+   "id": "US-2214+US-4565@trail@19.808,-156.010",
+   "area": "US-HI",
+   "refs": [
+    "US-2214",
+    "US-4565"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.63,
+   "stored_wide_m": 60.0,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T00:33:02Z",
+   "layers": [
+    {
+     "ref": "US-2214",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:02Z"
+    },
+    {
+     "ref": "US-2214",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:03Z"
+    },
+    {
+     "ref": "US-2214",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:05Z"
+    },
+    {
+     "ref": "US-2214",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:06Z"
+    },
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 5.21,
+   "stored_shape_acres": 5.09,
+   "live_acres": 5.16,
+   "kept_pct": 100.0,
+   "size_pct": 1.3,
+   "moved_m": 750,
+   "gap_m": 0,
+   "wide_m": 56.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.2 ac vs 5.1 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.814385,
+    -156.004751
+   ]
+  },
+  "US-4565+US-6403@trail@19.976,-155.832": {
+   "id": "US-4565+US-6403@trail@19.976,-155.832",
+   "area": "US-HI",
+   "refs": [
+    "US-4565",
+    "US-6403"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.81,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:33:07Z",
+   "layers": [
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6403",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:07Z"
+    },
+    {
+     "ref": "US-6403",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:33:09Z"
+    },
+    {
+     "ref": "US-6403",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:33:10Z"
+    },
+    {
+     "ref": "US-6403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:11Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 2.6,
+   "stored_shape_acres": 2.27,
+   "live_acres": 2.39,
+   "kept_pct": 100.0,
+   "size_pct": 5.5,
+   "moved_m": 735,
+   "gap_m": 0,
+   "wide_m": 33.0,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.3 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.98095,
+    -155.829052
+   ]
+  },
+  "US-4565+US-6405@trail@19.470,-155.923": {
+   "id": "US-4565+US-6405@trail@19.470,-155.923",
+   "area": "US-HI",
+   "refs": [
+    "US-4565",
+    "US-6405"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.24,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:33:12Z",
+   "layers": [
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6405",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:13Z"
+    },
+    {
+     "ref": "US-6405",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:15Z"
+    },
+    {
+     "ref": "US-6405",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:16Z"
+    },
+    {
+     "ref": "US-6405",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:17Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 5.73,
+   "stored_shape_acres": 5.63,
+   "live_acres": 5.73,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 362,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.7 ac vs 5.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.472104,
+    -155.919659
+   ]
+  },
+  "US-4565+US-6419@trail@19.639,-155.994": {
+   "id": "US-4565+US-6419@trail@19.639,-155.994",
+   "area": "US-HI",
+   "refs": [
+    "US-4565",
+    "US-6419"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.16,
+   "stored_wide_m": 53.9,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:33:18Z",
+   "layers": [
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6419",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:19Z"
+    },
+    {
+     "ref": "US-6419",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:20Z"
+    },
+    {
+     "ref": "US-6419",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:21Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 0.97,
+   "stored_shape_acres": 0.97,
+   "live_acres": 0.97,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 49.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.0 ac vs 1.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.639471,
+    -155.994535
+   ]
+  },
+  "US-4565+US-6420@trail@19.852,-155.951": {
+   "id": "US-4565+US-6420@trail@19.852,-155.951",
+   "area": "US-HI",
+   "refs": [
+    "US-4565",
+    "US-6420"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 39.23,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:33:22Z",
+   "layers": [
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6420",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:33:22Z"
+    },
+    {
+     "ref": "US-6420",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:24Z"
+    },
+    {
+     "ref": "US-6420",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:25Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 36.16,
+   "stored_shape_acres": 35.53,
+   "live_acres": 36.16,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 88,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 36.2 ac vs 35.5 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.849772,
+    -155.939547
+   ]
+  },
+  "US-4565+US-6422@trail@20.174,-155.896": {
+   "id": "US-4565+US-6422@trail@20.174,-155.896",
+   "area": "US-HI",
+   "refs": [
+    "US-4565",
+    "US-6422"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 10.15,
+   "stored_wide_m": 60.0,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:33:26Z",
+   "layers": [
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6422",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:26Z"
+    },
+    {
+     "ref": "US-6422",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:28Z"
+    },
+    {
+     "ref": "US-6422",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:29Z"
+    },
+    {
+     "ref": "US-6422",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:30Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 8.93,
+   "stored_shape_acres": 8.82,
+   "live_acres": 8.66,
+   "kept_pct": 100.0,
+   "size_pct": -1.9,
+   "moved_m": 580,
+   "gap_m": 0,
+   "wide_m": 49.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.7 ac vs 8.8 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    20.179886,
+    -155.896185
+   ]
+  },
+  "US-4565+US-6423@trail@19.117,-155.834": {
+   "id": "US-4565+US-6423@trail@19.117,-155.834",
+   "area": "US-HI",
+   "refs": [
+    "US-4565",
+    "US-6423"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 99.3,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T00:33:31Z",
+   "layers": [
+    {
+     "ref": "US-4565",
+     "layer": "saved copy US-4565.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6423",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:31Z"
+    },
+    {
+     "ref": "US-6423",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:33:32Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4565"
+   ],
+   "live_stretch_acres": 93.78,
+   "stored_shape_acres": 93.47,
+   "live_acres": 93.78,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 1112,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 93.8 ac vs 93.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    19.126061,
+    -155.838632
+   ]
+  }
+ },
+ "started": "2026-11-01T00:32:07Z",
+ "fers_sha256": "32249b89f07e535d3d4d25900522e3d9740d990cf06f475b37a9312938a0507c",
+ "live_rows": 23,
+ "skipped_rows": 95,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:35Z",
+ "complete": true,
+ "summary": {
+  "rows": 23,
+  "verdicts": {
+   "CONFIRMED": 21,
+   "SHRUNK": 0,
+   "GREW": 2,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 18,
+   "small overlap (under 50 yd across)": 4
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json"
+ ],
+ "requests_this_run": 1030
+}

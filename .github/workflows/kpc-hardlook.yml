@@ -1,0 +1,53 @@
+name: KPC hard look reader (outside research rows -> questions for chat 11)
+# Nov 1 2026 (chat 10; Brandon's Canada Hard Look, AUTOMATION FIRST): the intake reader pulls hardlook-*.json from branch intake-files,
+# kpc_hardlook.py asks each layer for the park's own record, measures the POTA pin (R-G12 / R-G13) and writes
+# data/waiting/questions/hardlook.json (+ pin-typos.json). Daily, chains until every row is read. Never red.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 6 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-hardlook
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            .github/scripts/kpc_push_data.sh
+            /kpc-ky-data.json
+          sparse-checkout-cone-mode: false
+      - name: Read
+        id: r
+        continue-on-error: true
+        env:
+          MINUTES: '40'
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_intake_reader.py hardlook || true
+          for chunk in 1 2 3 4 5 6 7; do   # Nov 1 storage fix: up to 7 chunks in ONE job, ONE save (was 276 commits a week)
+            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt || true
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
+          done
+          python3 .github/scripts/kpc_status.py board 'Hard look reader' green "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left $(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" 'chat 11 answers data/waiting/questions/hardlook.json' || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || true
+          echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
+      - name: Next run
+        if: steps.r.outputs.left != '' && steps.r.outputs.left != '0'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-hardlook.yml -R ${{ github.repository }} || true

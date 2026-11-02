@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "il",
+ "states": [
+  "US-IL"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 20:40 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 20,
+  "DROPPED": 105,
+  "NEVER LOOKED AT": 950
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 460,
+   "pairs whose boxes touch": 460
+  },
+  "pass2": {
+   "agree with the pass before": 86,
+   "date": "2026-11-01",
+   "pairs tested": 38
+  },
+  "pass3": {
+   "agree with the pass before": 38,
+   "date": "2026-11-01",
+   "pairs tested": 36
+  },
+  "pass5": {
+   "checked": 17,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-IL": "data/fers/US-IL.json"
+ },
+ "US-IL": {
+  "rows": 91,
+  "live": 21,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 52,
+  "merged": 18
+ },
+ "states_ready": [
+  "US-IL"
+ ],
+ "states_held": []
+}

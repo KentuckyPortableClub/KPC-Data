@@ -1,0 +1,49 @@
+# 2-fer checker alerts (2026-11-01)
+
+Rows the weekly checker found SHRUNK / GONE / MOVED against the live official layers: chat 2 rechecks, chat 11 grades. Nothing changed by the bot.
+
+- **CA-BC**: SHRUNK 4
+- **CA-SK**: SHRUNK 1
+- **US-AK**: GONE 5, SHRUNK 2
+- **US-AL**: GONE 1
+- **US-AR**: SHRUNK 2
+- **US-AZ**: SHRUNK 8, GONE 1
+- **US-CA**: GONE 10, MOVED 4, SHRUNK 3
+- **US-CT**: SHRUNK 4, MOVED 3
+- **US-DC**: MOVED 1
+- **US-DE**: SHRUNK 4, MOVED 1
+- **US-FL**: GONE 38, SHRUNK 14, MOVED 3
+- **US-GA**: SHRUNK 2, MOVED 1
+- **US-ID**: SHRUNK 6, MOVED 5, GONE 4
+- **US-IL**: SHRUNK 2
+- **US-IN**: MOVED 1
+- **US-KS**: SHRUNK 3, MOVED 1
+- **US-KY**: SHRUNK 1
+- **US-MA**: SHRUNK 22, MOVED 5
+- **US-MD**: SHRUNK 17, MOVED 5
+- **US-MI**: SHRUNK 10, MOVED 2, GONE 2
+- **US-MN**: MOVED 38, GONE 33, SHRUNK 14
+- **US-MO**: MOVED 2, GONE 1, SHRUNK 1
+- **US-MS**: SHRUNK 2, MOVED 1
+- **US-MT**: MOVED 3
+- **US-NC**: SHRUNK 2, GONE 1
+- **US-ND**: GONE 17
+- **US-NH**: SHRUNK 1
+- **US-NM**: SHRUNK 5
+- **US-NV**: SHRUNK 5
+- **US-NY**: GONE 11, SHRUNK 1
+- **US-OH**: SHRUNK 2
+- **US-OK**: SHRUNK 3
+- **US-OR**: SHRUNK 13, MOVED 2
+- **US-PA**: SHRUNK 4
+- **US-SC**: GONE 6, SHRUNK 1
+- **US-SD**: GONE 1
+- **US-TN**: MOVED 6, SHRUNK 6, GONE 1
+- **US-TX**: MOVED 1, SHRUNK 1
+- **US-UT**: SHRUNK 11, MOVED 4
+- **US-VA**: SHRUNK 17, MOVED 2, GONE 1
+- **US-VT**: SHRUNK 1
+- **US-WA**: SHRUNK 4, GONE 1
+- **US-WI**: GONE 17, SHRUNK 3
+- **US-WV**: MOVED 3, GONE 2
+- **US-WY**: SHRUNK 6, MOVED 4, GONE 2

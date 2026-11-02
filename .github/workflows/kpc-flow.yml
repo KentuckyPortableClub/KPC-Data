@@ -1,0 +1,29 @@
+name: KPC flow board - every pile of work, who it waits on, when it last moved (every 3 h)
+# Nov 1 2026 (chat 10; Brandon 2:01 PM 'stuff seems to get dropped a lot ... see 900 layers in x bot and a date ... a list of
+# waiting on approvals ... it all gets done at some point'). kpc_flow.py reads the bots' files (main + branches tools-out,
+# intake-files, engine-registry), writes data/status/flow.json + flow.md (small). STUCK = work in a pile and no move for 2 days.
+# Every chat sees its lines at the start (KPC-Links .claude/build/inbox_now.py). Reads only, decides nothing, never red.
+on:
+  schedule:
+    - cron: '47 */3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-flow
+  cancel-in-progress: false
+jobs:
+  flow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 200
+      - name: Build the flow board
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 .github/scripts/kpc_flow.py || true
+          (for i in 1 2 3; do git add data/status/flow.json data/status/flow.md && git commit -qm "flow board" && git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && break; sleep 7; done) || true
+          true

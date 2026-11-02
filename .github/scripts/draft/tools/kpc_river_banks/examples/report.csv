@@ -1,0 +1,13 @@
+id,refs,source used,status,why
+"CA-6131+CA-3379@river@48.772,-123.750",CA-6131 CA-3379,BC Freshwater Atlas,OK,"Bank of Cowichan River from BC Freshwater Atlas, 2 official water polygon(s) merged; band is 100 ft each side of the water's edge."
+"CA-0294+CA-0373@river@46.300,-78.875",CA-0294 CA-0373,Ontario Hydro Network,OK,"Bank of Mattawa River from Ontario Hydro Network, 1 official water polygon(s) merged; band is 100 ft each side of the water's edge. Left out other named water nearby: Amable du Fond River, Bouillon Lake, Crooked Chute Lake."
+"CA-0502@river@47.100,-71.381",CA-0502,Geobase du reseau hydrographique du Quebec,OK,"Bank of Rivière Jacques-Cartier from Geobase du reseau hydrographique du Quebec, 1 official water polygon(s) merged; band is 100 ft each side of the water's edge. Left out other named water nearby: Lac Hibou, Lac des Lotus, Rivière à l'Épaule."
+"CH-0007@river@47.364,7.155",CH-0007,swisstopo swissTLM3D land cover,OK,"Bank of Doubs from swisstopo swissTLM3D land cover, 1 official water polygon(s) merged; band is 100 ft each side of the water's edge."
+"FR-2228@river@47.260,-0.075",FR-2228,IGN BD TOPO V3 hydrography = BD TOPAGE,OK,"Bank of la Loire from IGN BD TOPO V3 hydrography = BD TOPAGE, 6 official water polygon(s) merged; band is 100 ft each side of the water's edge. Left out other named water nearby: Rivière le Thouet."
+"CA-6131@line-only@48.778,-123.762",CA-6131,BC Freshwater Atlas,LINE ONLY,"BC Freshwater Atlas maps Inwood Creek here as a centre line only (no water polygon), so the club uses the line rule."
+"CA-6131@trail-line@48.772,-123.750",CA-6131,BC Freshwater Atlas,OK,"Bank of Cowichan River from BC Freshwater Atlas, 2 official water polygon(s) merged; band is 100 ft each side of the water's edge."
+US-4572@sample-trail,US-4572,,NO OFFICIAL BANK SOURCE,"US stretches use the club's own USGS NHD reader, not this tool."
+"K4TEST-AU@river@-36.105,146.915",K4TEST-AU,Geoscience Australia Surface Hydrology Polygons,OK,"Bank of Murray River from Geoscience Australia Surface Hydrology Polygons, 1 official water polygon(s) merged; band is 100 ft each side of the water's edge."
+"K4TEST-DE@river@50.735,7.110",K4TEST-DE,EU-Hydro River Network Database v1.3,OK,"Bank of Rhein from EU-Hydro River Network Database v1.3, 1 official water polygon(s) merged; band is 100 ft each side of the water's edge. Graded Approximate (EU compilation)."
+K4TEST-NZ@river,NZ-0001,,NO OFFICIAL BANK SOURCE,"LINZ river polygons need an API key and the spec names none, so they are not read."
+K4TEST-bad-row,CA-6131,,CAN'T TELL,"Bad row in the stretches file: the row has no center [lat, lon]."

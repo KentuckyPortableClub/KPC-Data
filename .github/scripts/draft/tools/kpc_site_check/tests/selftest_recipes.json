@@ -1,0 +1,14 @@
+{
+  "_about": "Recipe for the offline self test page (tests/fixture_site/index.html).",
+  "fixture": {
+    "page": "index.html",
+    "steps": [
+      {"do": "fill", "sel": "#q", "text": "{ref}"},
+      {"do": "click", "sel": "#go"},
+      {"do": "wait_outline", "status_sel": "#status", "timeout": 5000, "settle_ms": 300}
+    ],
+    "read": {"card": "#card", "status": "#status", "label": "#card .grade", "fit": "#card"},
+    "notice": {"selector": ".kpc-disclaim", "text": "planning aids, not official sources"},
+    "ignore_panes": ["kpcTrails"]
+  }
+}

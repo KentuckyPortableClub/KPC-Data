@@ -1,0 +1,15 @@
+domain,ref,kind,reason,date,url
+services.arcgis.com,GB-0022,outline,token-only (needs sign-in),2026-11-01,https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Sites_of_Special_Scientific_Interest_England/FeatureServer/0/query?geometry=-0.980781%2C50.8353&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&where=1%3D1&f=json
+sdi.gdos.gov.pl,PL-1517,outline,blocked (HTTP 403: server refuses this client),2026-11-01,https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=None&count=25&bbox=53.804155084441255%2C18.038423942385943%2C53.80424491555875%2C18.038576057614055%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326
+wms.mapama.gob.es,ES-1846,outline,blocked (host resting: 3 strikes),2026-11-01,https://wms.mapama.gob.es/sig/Biodiversidad/ENP/wfs.aspx?service=WFS&version=2.0.0&request=GetFeature&typeNames=None&count=25&bbox=42.555455084441256%2C-2.455270974996224%2C42.55554491555875%2C-2.4551490250037764%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326
+wms.pcn.minambiente.it,IT-0128,outline,blocked (host resting: 3 strikes),2026-11-01,http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WFS/Vettoriali/EUAP.map&service=WFS&version=2.0.0&request=GetFeature&typeNames=None&count=25&bbox=40.81455508444125%2C14.419540652925855%2C40.814644915558745%2C14.419659347074147%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326
+gis.blm.gov,,layer,token-only (needs sign-in),2026-11-01,https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_SNPLMA_Disposal_Boundary?f=json
+mapserver.doc.govt.nz,,layer,blocked (host resting: 3 strikes),2026-11-01,https://mapserver.doc.govt.nz/arcgis/rest/services?f=json
+cbs1.tarimorman.gov.tr,,layer,blocked (host resting: 3 strikes),2026-11-01,https://cbs1.tarimorman.gov.tr/arcgis/rest/services?f=json
+sige.pr.gov,,layer,blocked (host resting: 3 strikes),2026-11-01,https://sige.pr.gov/arcgis/rest/services?f=json
+arcgis.mdwfp.com,,layer,blocked (host resting: 3 strikes),2026-11-01,https://arcgis.mdwfp.com/arcgis/rest/services?f=json
+www.wildlifedepartment.com,,layer,token-only (needs sign-in),2026-11-01,https://www.wildlifedepartment.com/server/rest/services/Hosted?f=json
+gis2.idaho.gov,,layer,blocked (host resting: 3 strikes),2026-11-01,https://gis2.idaho.gov/arcgis/rest/services?f=json
+nhnm-gisweb.unm.edu,,layer,blocked (host resting: 3 strikes),2026-11-01,https://nhnm-gisweb.unm.edu/arcgis/rest/services?f=json
+services.nconemap.gov,,layer,token-only (needs sign-in),2026-11-01,https://services.nconemap.gov/server/rest/services/Hosted?f=json
+mdh.ima.gov.tt,,layer,blocked (host resting: 3 strikes),2026-11-01,https://mdh.ima.gov.tt/arcgis/rest/services?f=json

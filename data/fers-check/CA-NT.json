@@ -1,0 +1,90 @@
+{
+ "area": "CA-NT",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/CA-NT.json",
+ "rows": {
+  "CA-4332+CA-4344@area@69.445,-135.541": {
+   "id": "CA-4332+CA-4344@area@69.445,-135.541",
+   "area": "CA-NT",
+   "refs": [
+    "CA-4332",
+    "CA-4344"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 644.0,
+   "stored_wide_m": 1211,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:28:09Z",
+   "layers": [
+    {
+     "ref": "CA-4332",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:28:10Z"
+    },
+    {
+     "ref": "CA-4344",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:28:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 648.22,
+   "live_acres": 651.31,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 1228.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 651.3 ac vs 648.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    69.44151,
+    -135.553885
+   ]
+  }
+ },
+ "started": "2026-11-01T11:28:09Z",
+ "fers_sha256": "a1d7477611c7d239520bea429d82b42e859cad141e257b464730851e9c73ca40",
+ "live_rows": 1,
+ "skipped_rows": 33,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:57Z",
+ "complete": true,
+ "summary": {
+  "rows": 1,
+  "verdicts": {
+   "CONFIRMED": 1,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {}
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json"
+ ],
+ "requests_this_run": 1
+}

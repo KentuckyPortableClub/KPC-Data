@@ -1,0 +1,52 @@
+name: KPC cell coverage (FCC National Broadband Map) - held in the waiting room
+# Oct 31 2026 (chat 10; HQ 9:00 PM, Brandon 8:59 PM 'ok releasing cell coverage for a test'). Rule sheet: KPC-Links
+# .claude/notes/ideas.md 'CELL COVERAGE RULE SHEET'. Kentucky + the 5 test parks; data/cell/*.json held in the waiting room
+# for chat 11. Monthly check: one FCC call, and the files are read again only when the FCC publishes a new as-of date. Never red.
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'also the two test parks outside KY (Chincoteague NWR VA, Red Rock Canyon NCA NV): yes / no'
+        default: 'yes'
+  schedule:
+    - cron: '17 9 3 * *'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-cell
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read the FCC files (held)
+        continue-on-error: true
+        env:
+          FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
+          FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
+          LINKS: ../links
+          OUT_WORK: ../out/cell
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || mkdir -p ../out
+          pip install -q requests h3 || true
+          python3 .github/scripts/kpc_cell_bot.py --states KY || true
+          LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/cell || true
+          python3 .github/scripts/kpc_status.py board 'Cell coverage (FCC)' green "read $(date -u +%F): Kentucky + test parks, held for chat 11" 'chat 11 grades data/waiting/in/data/cell' || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "cell coverage (FCC; held in the waiting room)" data/cell data/waiting data/status || true
+          (cd ../out && git add -A cell 2>/dev/null && git commit -qm "cell work log (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; }) || true
+          true

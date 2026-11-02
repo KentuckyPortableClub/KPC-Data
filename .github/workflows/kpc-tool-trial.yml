@@ -1,0 +1,123 @@
+name: KPC tool trial (outside tools' real-world test from GitHub) - outputs on tools-out
+# Oct 31 2026 (chat 10; HQ 9:25 PM 'install + real-world test as planned', Brandon 'if they work they need to be wired in').
+# ONE run tests the six newest outside tools on their small areas, each in its own job, outputs on KPC-Data branch tools-out
+# (<tool>/; BRANCH FIRST). A tool that stops with exit 3 (time) dispatches itself again with --resume. Never red.
+# After chat 11's PASS each tool gets its own schedule (cron line below, commented until then).
+on:
+  schedule:
+    - cron: '37 5 * * 0'   # weekly (AUTOMATION FIRST): every tool's real-world run keeps going by itself; outputs on tools-out, nothing live
+  workflow_dispatch:
+    inputs:
+      tools:
+        description: 'comma list or all: sitemaps,parcels,inspire,audit,watch,sameland,missedfers,pulloffs,acres,trace'
+        default: 'all'
+      fresh:
+        description: 'yes = start the picked tools over (their old tools-out results are cleared first; after a tool change)'
+        default: 'no'
+permissions:
+  contents: write
+  actions: write
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    outputs:
+      list: ${{ steps.p.outputs.list }}
+    steps:
+      - id: p
+        run: |
+          T="${{ inputs.tools || 'all' }}"; [ "$T" = all ] && T=sitemaps,parcels,inspire,audit,watch,sameland,missedfers,pulloffs,acres,trace
+          echo "list=$(python3 -c "import json,sys;print(json.dumps([t for t in sys.argv[1].split(',') if t]))" "$T")" >> $GITHUB_OUTPUT
+  run:
+    needs: pick
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        tool: ${{ fromJson(needs.pick.outputs.list) }}
+    concurrency:
+      group: kpc-tool-trial-${{ matrix.tool }}
+      cancel-in-progress: false
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            data/ky-answer-key.json
+            /ky-*.geojson
+            /kpc-ky-data.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: kpcdata/.trial_cache
+          key: kpc-tool-trial-${{ matrix.tool }}-${{ github.run_id }}
+          restore-keys: kpc-tool-trial-${{ matrix.tool }}-
+      - name: Side branch + club folder
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true
+          mkdir -p ../club ../kyo
+          for d in us-key ca-key canada-bounds fers trails parkinfo world-bounds; do [ -e data/$d ] && ln -s "$PWD/data/$d" ../club/$d; done
+          cp ../links/data/ky-answer-key.json ../club/ 2>/dev/null || true
+          cp ../links/ky-*.geojson ../kyo/ 2>/dev/null || true
+          python3 .github/scripts/kpc_gps_prep.py ../links ../prep || true   # KY in the club shapes (pins, parking, official outlines, one file per park)
+          mkdir -p ../prep/parkinfo; for f in data/parkinfo/US-*.json; do [ -e ../prep/parkinfo/$(basename $f) ] || ln -s "$PWD/$f" ../prep/parkinfo/; done
+          ln -s "$PWD/data/us-key" ../prep/us-key; ln -s "$PWD/data/ca-key" ../prep/ca-key; ln -s "$PWD/data/world-key" ../prep/world-key; ln -s "$PWD/data/fers" ../prep/fers; ln -s "$PWD/data/pota" ../prep/pota
+      - name: Run
+        id: r
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          D=.github/scripts/draft/tools; T=${{ matrix.tool }}; O=../out/$T; C=.trial_cache; [ "${{ inputs.fresh }}" = yes ] && rm -rf $O; mkdir -p $O
+          case $T in
+            sitemaps) F=kpc_sitemaps; A="--agencies data/intake/us-agency-maps-index.csv --docs data/docs --parkinfo data/parkinfo --areas US-TN,US-KY --out $O --cache $C --max-minutes 50 --resume";;
+            parcels)  F=kpc_parcels;  K=""; [ -f data/intake/parcel-layers.json ] && K="--known data/intake/parcel-layers.json"; A="--parks $D/$F/tests/live_20.json $K --out $O --cache $C --max-minutes 50 --resume";;
+            inspire)  F=kpc_inspire;  A="--areas AT,DE,ES --out $O --cache $C --max-minutes 50 --resume";;
+            audit)    F=KPC_10_map_audit; A="--areas US-KY US-TN CA-ON CH --data ../club --ky-outlines ../kyo --out $O --cache $C --max-minutes 50 --resume";;
+            watch)    F=KPC_11_boundary_watch; A="--data ../club --areas US-KY,US-TN,CA-ON --out $O --state $O/state.json --cache $C --max-minutes 50 --resume";;
+            sameland) F=KPC_13_same_land; A="--data ../club --areas US-KY,US-TN,CA-ON --out $O --cache $C --max-minutes 50 --resume";;
+            missedfers) F=kpc_missed_fers; A="--areas US-KY --parkinfo ../prep/parkinfo --keys ../prep --fers ../prep/fers --cache $C --out $O --max-minutes 50 --resume";;
+            # acres: EVERY acres file (outside research + the engine's), was only the last one (Nov 1). Nov 2: a '#' comment here used to swallow the ';;' = a bash syntax error that stopped EVERY tool
+            acres)    F=kpc_acres; python3 .github/scripts/kpc_intake_reader.py acres >/dev/null || true; IN=data/intake/_in/acres/merged.json; python3 -c "import glob,json;m={};[m.setdefault(k,[]).extend(v) if isinstance(v,list) else m.setdefault(k,v) for f in sorted(glob.glob('data/intake/_in/acres/acres-*.json')) for k,v in json.load(open(f)).items()];json.dump(m,open('$IN','w'))" || IN=$(ls data/intake/_in/acres/acres-*.json 2>/dev/null | tail -1); A="--in $IN --parkinfo ../prep/parkinfo --keys data --answer-key ../club/ky-answer-key.json --out $O --cache $C --max-minutes 50 --resume";;
+            trace)    F=kpc_parcel_trace; AC=""; [ -f data/acres.json ] && AC="--official-acres data/acres.json"; [ -z "$AC" ] && [ -f ../out/acres/acres.json ] && AC="--official-acres ../out/acres/acres.json"
+                      export KPC_PARCEL_ADJ_M=30 KPC_PARCEL_GROW_CAP=1.25 KPC_PARCEL_SUBTRACT=1   # Nov 2 review (Brandon OK 6:34 AM): 30 m neighbours, stop at 1.25x the official acres, cut out other parks
+                      python3 .github/scripts/kpc_intake_reader.py hardlook >/dev/null || true; python3 .github/scripts/kpc_trace_prep.py ../trace-parks.json || true   # Nov 1: the Hard Look PARCEL rows (US + CA) are its real input
+                      TP=$D/$F/tests/parks.json; python3 -c "import json,sys;sys.exit(0 if json.load(open('../trace-parks.json')) else 1)" 2>/dev/null && TP=../trace-parks.json
+                      A="--parks $TP --all --out $O --cache $C --official-dir data --official-dir ../club --official-dir ../kyo $AC --max-minutes 50 --resume";;
+            pulloffs) F=kpc_pulloffs; A="--parks ../prep/pulloff-parks.json --access ../prep/access/US-KY.json --out $O --areas US-KY --cache $C --max-minutes 50 --resume";;
+          esac
+          P=$(ls $D/$F/*.py | head -1)
+          pip install -q -r $D/$F/requirements.txt 2>&1 | tail -2
+          grep -q playwright $D/$F/requirements.txt && python -m playwright install --with-deps chromium >/dev/null 2>&1
+          set +e
+          python $P $A > $O/run-log.txt 2>&1
+          E=$?
+          tail -15 $O/run-log.txt
+          echo "::notice title=Tool trial $T::exit $E ($( [ "$E" = 3 ] && echo 'time ran out: the next run continues' || ([ "$E" = 0 ] && echo done || echo 'stopped: see run-log.txt on tools-out') ))"
+          [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
+          if [ "$T" = acres ] && [ -s $O/acres.json ]; then cp $O/acres.json data/acres.json; LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/acres.json || true; git add data/waiting && git commit -qm "acres list held for chat 11" || true; fi
+          C_=green; [ "$E" = 0 ] || [ "$E" = 3 ] || C_=red
+          python3 .github/scripts/kpc_status.py board "Tool trial: $T" $C_ "exit $E $(date -u +%F): $(tail -1 $O/run-log.txt | cut -c1-140)" 'chat 11 grades tools-out/'"$T"'/ against the spec pass mark; open files only when red' || true
+          (for i in 1 2 3; do git add data/status && git commit -qm "board: tool trial $T" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true
+          cd ../out && find $T -size +40M -delete; git add -A $T && git commit -qm "tool trial $T (run ${{ github.run_id }})" || true
+          for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 10 + 3)); done
+          true
+      - name: Next run
+        if: steps.r.outputs.more == 'yes'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-tool-trial.yml -R ${{ github.repository }} -f tools=${{ matrix.tool }} || true

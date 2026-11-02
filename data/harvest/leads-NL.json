@@ -1,0 +1,1823 @@
+{
+ "about": "World harvester leads for Netherlands (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "NL",
+ "date": "2026-10-30",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 3,
+  "B": 4,
+  "C": 8
+ },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    5
+   ]
+  ],
+  [
+   [
+    "?",
+    48
+   ]
+  ],
+  [
+   [
+    "?",
+    17
+   ],
+   [
+    "Esri Nederland",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    50
+   ]
+  ],
+  [
+   [
+    "?",
+    3
+   ]
+  ],
+  [
+   [
+    "?",
+    48
+   ]
+  ]
+ ],
+ "known_good_found": [
+  "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+  "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1"
+ ],
+ "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 1 OGC API collections, 1 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+   "found": true
+  }
+ ],
+ "leads": {
+  "https://services-eu1.arcgis.com/4d1gbrbe6xp1t4yg/arcgis/rest/services/nwp_huidig_gebruik_noordzee": {
+   "url": "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer",
+   "cc": "NL",
+   "title": "NWP_Huidig_gebruik_Noordzee",
+   "publisher": "Rijkswaterstaat",
+   "catalog": "ArcGIS Online search",
+   "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
+   "date": "2025-09-08",
+   "found": "2026-10-29",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 273,
+     "name": "Begrenzing Natura2000 gebied Noordzee",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 275,
+     "name": "Natura2000 gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM_N2K",
+      "VHN_NEW",
+      "NR",
+      "BESCHERMIN",
+      "SITECODE_V",
+      "SITECODE_H",
+      "STATUS",
+      "KADASTER",
+      "STAATSCOUR",
+      "LENGTH",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Noordzeekustzone",
+      "Vlakte van de Raan",
+      "Voordelta"
+     ],
+     "name_field": "NAAM_N2K"
+    },
+    {
+     "id": 293,
+     "name": "Windparken in gebruik",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Prinses Amalia Windparken",
+      "NSW Offshore windpark Egmond aan Zee",
+      "ZeeEnergie / Gemini II"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 259,
+     "name": "Grens Exclusieve Economische Zone (EEZ)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "GEBIED",
+      "GEBIEDTYPE",
+      "CATEGORIE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 294,
+     "name": "Verdragsgebied Eems-Dollard",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "EDV2020_ID",
+      "AREA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 929,
+     "name": "Manoeuvrezones militair oefengebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "OMSCHRIJVI",
+      "GEBIEDNAAM",
+      "ACTIVITEIT",
+      "BRONHOUDER",
+      "NAAM",
+      "UPDATE_",
+      "OPMERKING",
+      "ACRES",
+      "COMCODE",
+      "COMOMS",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 15,
+     "sample": [
+      "Benoorden Waddeneilanden",
+      "-",
+      "-"
+     ],
+     "name_field": "GEBIEDNAAM"
+    },
+    {
+     "id": 930,
+     "name": "Militaire oefen- en schietgebieden",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "OMSCHRIJVI",
+      "GEBIEDNAAM",
+      "ACTIVITEIT",
+      "BRONHOUDER",
+      "NAAM",
+      "UPDATE_",
+      "OPMERKING",
+      "ACRES",
+      "COMCODE",
+      "COMOMS",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8,
+     "sample": [
+      "Vliehors",
+      "Vliehors",
+      "Benoorden Waddeneilanden"
+     ],
+     "name_field": "GEBIEDNAAM"
+    },
+    {
+     "id": 304,
+     "name": "Scheepvaart vulkleur",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "TYPEGEBIED",
+      "NAAMGEBIED",
+      "BRONGEGEVE",
+      "STATUS",
+      "SYMBOLOGY",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 121,
+     "sample": [
+      "Scheveningen",
+      "6",
+      "Schouwenbank"
+     ],
+     "name_field": "NAAMGEBIED"
+    },
+    {
+     "id": 305,
+     "name": "Seperatiezones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "entiteit_separatiezone",
+      "naam_separatiezone",
+      "shape_length",
+      "shape_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 47,
+     "sample": [
+      "Te vermijden gebied bij Maas Noord",
+      "Te vermijden gebied bij IJmuiden Noord Aanloop",
+      "Te vermijden gebied bij De Ruyter"
+     ],
+     "name_field": "naam_separatiezone"
+    },
+    {
+     "id": 307,
+     "name": "Ankergebieden",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naam_anker",
+      "entiteit_v",
+      "systeem",
+      "shape_length",
+      "shape_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 19,
+     "sample": [
+      "1",
+      "2",
+      "3 East"
+     ],
+     "name_field": "naam_anker"
+    },
+    {
+     "id": 301,
+     "name": "Loswallocatie",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM",
+      "GELDIGVAN",
+      "AANMAAK_DD",
+      "BEGINDATUM",
+      "DATUMMUTAT",
+      "CODEBPN",
+      "SOORT",
+      "DIENSTCODE",
+      "HOOFDWATER",
+      "KWALITEITS",
+      "OPPERVLAKT",
+      "LENGTE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 5,
+     "sample": [
+      "Verdiepte loswallen",
+      "Loswal Noordwest",
+      "Loswal Scheveningen"
+     ],
+     "name_field": "NAAM"
+    },
+    {
+     "id": 280,
+     "name": "Borssele Pass",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ENTITEIT_SEPARATIEZONE",
+      "NAAM_SEPARATIEZONE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Windenergiegebied Borssele pass"
+     ],
+     "name_field": "NAAM_SEPARATIEZONE"
+    }
+   ],
+   "note": "NWP_Huidig gebruik Noordzee",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services-eu1.arcgis.com/4d1gbrbe6xp1t4yg/arcgis/rest/services/nwp_natuurgebieden_noordzee": {
+   "url": "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer",
+   "cc": "NL",
+   "title": "NWP_Natuurgebieden_Noordzee",
+   "publisher": "Rijkswaterstaat",
+   "catalog": "ArcGIS Online search",
+   "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
+   "date": "2025-09-08",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 273,
+     "name": "Begrenzing Natura2000 gebied Noordzee",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 275,
+     "name": "Natura2000 gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM_N2K",
+      "VHN_NEW",
+      "NR",
+      "BESCHERMIN",
+      "SITECODE_V",
+      "SITECODE_H",
+      "STATUS",
+      "KADASTER",
+      "STAATSCOUR",
+      "LENGTH",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Noordzeekustzone",
+      "Vlakte van de Raan",
+      "Voordelta"
+     ],
+     "name_field": "NAAM_N2K"
+    },
+    {
+     "id": 266,
+     "name": "Grens Exclusieve Economische Zone (EEZ)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "GEBIED",
+      "GEBIEDTYPE",
+      "CATEGORIE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 1,
+     "name": "Verdragsgebied Eems-Dollard",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "EDV2020_ID",
+      "AREA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 269,
+     "name": "Scheepvaart vulkleur",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "TYPEGEBIED",
+      "NAAMGEBIED",
+      "BRONGEGEVE",
+      "STATUS",
+      "SYMBOLOGY",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 121,
+     "sample": [
+      "Scheveningen",
+      "6",
+      "Schouwenbank"
+     ],
+     "name_field": "NAAMGEBIED"
+    },
+    {
+     "id": 271,
+     "name": "Separatiezones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "entiteit_separatiezone",
+      "naam_separatiezone",
+      "shape_length",
+      "shape_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 47,
+     "sample": [
+      "Te vermijden gebied bij Maas Noord",
+      "Te vermijden gebied bij IJmuiden Noord Aanloop",
+      "Te vermijden gebied bij De Ruyter"
+     ],
+     "name_field": "naam_separatiezone"
+    },
+    {
+     "id": 267,
+     "name": "Ankergebieden",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naam_anker",
+      "entiteit_v",
+      "systeem",
+      "shape_length",
+      "shape_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 19,
+     "sample": [
+      "1",
+      "2",
+      "3 East"
+     ],
+     "name_field": "naam_anker"
+    },
+    {
+     "id": 277,
+     "name": "Label gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM",
+      "Code",
+      "BESCHERMIN",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Noordzeekustzone",
+      "Vlakte van de Raan",
+      "Voordelta"
+     ],
+     "name_field": "NAAM"
+    },
+    {
+     "id": 274,
+     "name": "Zones waar visserijactiviteiten (deels) worden beperkt*",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "Gebied",
+      "id",
+      "OBJECTID",
+      "NAAM_N2K",
+      "VHN_NEW",
+      "NR",
+      "BESCHERMIN",
+      "SITECODE_V",
+      "SITECODE_H",
+      "STATUS",
+      "KADASTER",
+      "STAATSCOUR",
+      "SHAPE_Leng",
+      "Shape_Le_1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 9,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "NAAM_N2K"
+    },
+    {
+     "id": 276,
+     "name": "KRM_gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "id",
+      "Gebied",
+      "KRM",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4
+    }
+   ],
+   "note": "NWP_Natuurgebieden Noordzee",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services-eu1.arcgis.com/4d1gbrbe6xp1t4yg/arcgis/rest/services/nwp_structuurvisiekaart_noordzee": {
+   "url": "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Structuurvisiekaart_Noordzee/FeatureServer",
+   "cc": "NL",
+   "title": "NWP_Structuurvisiekaart_Noordzee",
+   "publisher": "Rijkswaterstaat",
+   "catalog": "ArcGIS Online search",
+   "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
+   "date": "2025-09-08",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 596,
+     "name": "Windparken in gebruik",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Prinses Amalia Windparken",
+      "NSW Offshore windpark Egmond aan Zee",
+      "ZeeEnergie / Gemini II"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 814,
+     "name": "Windparken in aanbouw of inpassingsruimte binnen windenergiegebied (Ro",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Gebiedsnr",
+      "SCENARIO",
+      "SCENARIO_A",
+      "SCENARIO_B",
+      "SCENARIO_C",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "NWP",
+      "Hollandse Kust (Zuid)",
+      "-"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 408,
+     "name": "Natura2000 gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM_N2K",
+      "VHN_NEW",
+      "NR",
+      "BESCHERMIN",
+      "SITECODE_V",
+      "SITECODE_H",
+      "STATUS",
+      "KADASTER",
+      "STAATSCOUR",
+      "LENGTH",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Noordzeekustzone",
+      "Vlakte van de Raan",
+      "Voordelta"
+     ],
+     "name_field": "NAAM_N2K"
+    },
+    {
+     "id": 406,
+     "name": "Begrenzing Natura2000-gebied Noordzee",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 421,
+     "name": "Reserveringsgebied voor zandwinning",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "ID",
+      "LOKATIE",
+      "PERIMETER",
+      "GEODATA_re",
+      "ACRES",
+      "KM2",
+      "PERIODE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 816,
+     "name": "Aangewezen windenergiegebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Gebiedsnr",
+      "Gebiedsnaam",
+      "SCENARIO",
+      "SCENARIO_A",
+      "SCENARIO_B",
+      "SCENARIO_C",
+      "SCENARIO_A1",
+      "SCENARIO_A2",
+      "GigaWatt",
+      "TXT_SYMBOLOGIE",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Gebied 1 Noord",
+      "Gebied 5 Oost",
+      "IJmuiden Ver Noord"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 419,
+     "name": "Seperatiezones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "entiteit_separatiezone",
+      "naam_separatiezone",
+      "shape_length",
+      "shape_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 47,
+     "sample": [
+      "Te vermijden gebied bij Maas Noord",
+      "Te vermijden gebied bij IJmuiden Noord Aanloop",
+      "Te vermijden gebied bij De Ruyter"
+     ],
+     "name_field": "naam_separatiezone"
+    },
+    {
+     "id": 418,
+     "name": "Ankergebieden",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naam_anker",
+      "entiteit_v",
+      "systeem",
+      "shape_length",
+      "shape_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 19,
+     "sample": [
+      "1",
+      "2",
+      "3 East"
+     ],
+     "name_field": "naam_anker"
+    },
+    {
+     "id": 820,
+     "name": "Ruimte voor mogelijke extra bufferzone scheepvaartveiligheid",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Gebiedsnr",
+      "Gebiedsnaam",
+      "SCENARIO",
+      "SCENARIO_A",
+      "SCENARIO_B",
+      "SCENARIO_C",
+      "SCENARIO_A1",
+      "SCENARIO_A2",
+      "GigaWatt",
+      "TXT_SYMBOLOGIE",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Gebied 5 Oost"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 416,
+     "name": "Borssele Pass",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ENTITEIT_SEPARATIEZONE",
+      "NAAM_SEPARATIEZONE",
+      "SE_ANNO_CAD_DATA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Windenergiegebied Borssele pass"
+     ],
+     "name_field": "NAAM_SEPARATIEZONE"
+    },
+    {
+     "id": 417,
+     "name": "Scheepvaart vulkleur exc Borssele",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "TYPEGEBIED",
+      "NAAMGEBIED",
+      "BRONGEGEVE",
+      "STATUS",
+      "SYMBOLOGY",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 121,
+     "sample": [
+      "Scheveningen",
+      "6",
+      "Schouwenbank"
+     ],
+     "name_field": "NAAMGEBIED"
+    },
+    {
+     "id": 409,
+     "name": "KRM gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "id",
+      "Gebied",
+      "KRM",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4
+    }
+   ],
+   "note": "NWP_Structuurvisiekaart Noordzee",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services-eu1.arcgis.com/ycscsj1xsto6ivhp/arcgis/rest/services/eigendom_natuurmonumenten_d1ea7": {
+   "url": "https://services-eu1.arcgis.com/YcscSJ1XstO6iVhP/arcgis/rest/services/Eigendom_Natuurmonumenten_d1ea7/FeatureServer",
+   "cc": "NL",
+   "title": "Eigendom_Natuurmonumenten_d1ea7",
+   "publisher": "Gemeente Hilversum",
+   "catalog": "catalog data.overheid.nl",
+   "licence": "CC-BY (4.0)",
+   "date": "2026-07-06",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Eigendom_Natuurmonumenten",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 151
+    }
+   ],
+   "note": "Eigendom Natuurmonumenten",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-eu1.arcgis.com/4d1gbrbe6xp1t4yg/arcgis/rest/services/nwp_overzichtskaart_waterbeleid_uitvoering_wfl1": {
+   "url": "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Waterbeleid_uitvoering_WFL1/FeatureServer",
+   "cc": "NL",
+   "title": "NWP_Overzichtskaart_Waterbeleid_uitvoering_WFL1",
+   "publisher": "Rijkswaterstaat",
+   "catalog": "ArcGIS Online search",
+   "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
+   "date": "2025-09-08",
+   "found": "2026-10-29",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 314,
+     "name": "Natura2000 Noordzee",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 248,
+     "name": "Reserveringsgebied voor zandwinning",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "ID",
+      "LOKATIE",
+      "PERIMETER",
+      "GEODATA_re",
+      "ACRES",
+      "KM2",
+      "PERIODE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 320,
+     "name": "Natura2000 gebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM_N2K",
+      "VHN_NEW",
+      "NR",
+      "BESCHERMIN",
+      "SITECODE_V",
+      "SITECODE_H",
+      "STATUS",
+      "KADASTER",
+      "STAATSCOUR",
+      "LENGTH",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Noordzeekustzone",
+      "Vlakte van de Raan",
+      "Voordelta"
+     ],
+     "name_field": "NAAM_N2K"
+    },
+    {
+     "id": 547,
+     "name": "Windparken in gebruik",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Prinses Amalia Windparken",
+      "NSW Offshore windpark Egmond aan Zee",
+      "ZeeEnergie / Gemini II"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 765,
+     "name": "Windparken in aanbouw of inpassingsruimte binnen windenergiegebied (ro",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Versie",
+      "Opmerking",
+      "Gebiedsnr",
+      "SCENARIO",
+      "SCENARIO_A",
+      "SCENARIO_B",
+      "SCENARIO_C",
+      "Km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "NWP",
+      "Hollandse Kust (Zuid)",
+      "-"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 310,
+     "name": "EEZ outline",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "versionId",
+      "localId",
+      "thematicId",
+      "themaIdSch",
+      "nameText",
+      "zoneType",
+      "spZoneType",
+      "rZoneId",
+      "rZoneIdSch",
+      "rTrnsIdSch",
+      "OWMCONS",
+      "OWMCAT",
+      "OWMSTAT",
+      "OWMTYPE",
+      "OWMTYPED",
+      "GEBIED",
+      "GEBIEDTYPE",
+      "CATEGORIE",
+      "CAT2"
+     ],
+     "records": 1,
+     "sample": [
+      "Nederlands Exclusief Economische Zone"
+     ],
+     "name_field": "nameText"
+    },
+    {
+     "id": 1,
+     "name": "Ruimtelijke adaptatie",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Id"
+     ],
+     "records": 11
+    },
+    {
+     "id": 290,
+     "name": "Stormvloedkering",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Keringnaam",
+      "Traject",
+      "Type",
+      "Regio",
+      "NWPTYPE"
+     ],
+     "records": 6,
+     "sample": [
+      "Hollandsche IJsselkering",
+      "Haringvlietdam",
+      "SVK Hartelkering"
+     ],
+     "name_field": "Keringnaam"
+    },
+    {
+     "id": 277,
+     "name": "In evenwicht houden kustfundament",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 265,
+     "name": "Toepassen voorkeursvolgorde",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID"
+     ],
+     "records": 11
+    },
+    {
+     "id": 268,
+     "name": "Vergroten watervoorraad IJsselmeer",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "VRT_CODE",
+      "VRTNAAM",
+      "HAVEN_VAAR",
+      "MEETPUNT",
+      "WATERST_GW",
+      "WATERST_HW",
+      "WATERST_LW",
+      "WATERST_LL",
+      "PLAATSNAAM",
+      "KENMERK_ID",
+      "ID"
+     ],
+     "records": 1,
+     "sample": [
+      "Vaarweg van het Hollandsch Diep via de Goereeseslu"
+     ],
+     "name_field": "VRTNAAM"
+    },
+    {
+     "id": 270,
+     "name": "Optimaliseren buffer Brielse Meer",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "VRTNAAM"
+     ],
+     "records": 1,
+     "sample": [
+      "Vaarweg van het Hollandsch Diep via de Goereeseslu"
+     ],
+     "name_field": "VRTNAAM"
+    }
+   ],
+   "note": "NWP_Overzichtskaart Waterbeleid uitvoering",
+   "grade": 4,
+   "band": "B"
+  },
+  "eea-cdda:NL": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "NL",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Netherlands rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (NL); one official layer covers every member state"
+  },
+  "https://geo.rijkswaterstaat.nl/arcgis/rest/services/gdr/nwp_natura2000": {
+   "url": "https://geo.rijkswaterstaat.nl/arcgis/rest/services/GDR/nwp_natura2000/MapServer",
+   "cc": "NL",
+   "title": "GDR/nwp_natura2000",
+   "publisher": "NationaalGeoregister.nl",
+   "catalog": "catalog data.overheid.nl",
+   "licence": "CC-0 (1.0)",
+   "date": "2026-08-07",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "natura_2000-gebieden_in_het_hoofdwatersysteem__(per_1_januari_2022)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "nr",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 71
+    },
+    {
+     "id": 0,
+     "name": "afsluitdijk_houtribdijk",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "land",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 2
+    },
+    {
+     "id": 1,
+     "name": "natura_2000-gebieden_in_het_hoofdwatersysteem__(per_1_januari_2022)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "nr",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 71
+    },
+    {
+     "id": 0,
+     "name": "afsluitdijk_houtribdijk",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "land",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 2
+    }
+   ],
+   "note": "nwp_natura2000",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1": {
+   "url": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+   "cc": "NL",
+   "title": "OGC API api.pdok.nl",
+   "publisher": "api.pdok.nl",
+   "catalog": "OGC API collections",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Nationaal beschermde gebieden",
+     "type": "cdda",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Nationaal beschermde gebieden",
+     "type": "cdda",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Nationaal beschermde gebieden",
+     "type": "cdda",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
+   ],
+   "note": "1 collections listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
+  },
+  "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1": {
+   "url": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+   "cc": "NL",
+   "title": "OGC API api.pdok.nl",
+   "publisher": "api.pdok.nl",
+   "catalog": "OGC API collections",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Protected Sites",
+     "type": "protectedsite",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Protected Sites",
+     "type": "protectedsite",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Protected Sites",
+     "type": "protectedsite",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
+   ],
+   "note": "1 collections listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
+  },
+  "https://geo2.flevoland.nl/geoserver/extern/wms": {
+   "url": "https://geo2.flevoland.nl/geoserver/Extern/wms",
+   "cc": "NL",
+   "title": "WFS geo2.flevoland.nl",
+   "publisher": "Provincie Flevoland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Begrenzing Nationaal Park Nieuw Land",
+     "type": "Extern:gn_np_nieuwland",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Boringsvrije zone",
+     "type": "Extern:mi_boringsvrijezone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Boringsvrije zone grens",
+     "type": "Extern:mi_beheer_boringsvrijezonegrns",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "PAS-zoneringen",
+     "type": "Extern:mi_paszoneringen",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Plaatsingszones Regioplan Wind 2016",
+     "type": "Extern:pl_zones_regioplan_wind_2016",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Planologische zones voor geluidsgezoneerde bedrijven",
+     "type": "Extern:mi_geluid_zonering_50dba_2004",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Provinciaal Archeologisch en Aardkundig Kerngebied (PArK)",
+     "type": "Extern:ca_park",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Rayongrenzen",
+     "type": "Extern:vv_rayongrenzen",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Woningen in de geluidzone",
+     "type": "Extern:mi_geluid_woonfunctie_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "mi_geluidszones",
+     "type": "Extern:mi_geluidszones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "mi_zonneparken_fl",
+     "type": "Extern:mi_zonneparken_fl",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Begrenzing Nationaal Park Nieuw Land",
+     "type": "Extern:gn_np_nieuwland",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "240 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geoserver.gelderland.nl/geoserver/ngr_visie/wms": {
+   "url": "https://geoserver.gelderland.nl/geoserver/ngr_visie/wms",
+   "cc": "NL",
+   "title": "WFS geoserver.gelderland.nl",
+   "publisher": "Provincie Gelderland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "POVI_Beschzones_nat_landnat",
+     "type": "ngr_visie:POVI_Beschzones_nat_landnat",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Boringsvrije_zone",
+     "type": "ngr_visie:POVI_Boringsvrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Eco_Verbindingszones",
+     "type": "ngr_visie:POVI_Eco_Verbindingszones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Groene_ontwikkelingszone",
+     "type": "ngr_visie:POVI_Groene_ontwikkelingszone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Grondwaterfluctuatiezone",
+     "type": "ngr_visie:POVI_Grondwaterfluctuatiezone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Grote_zonneparken",
+     "type": "ngr_visie:POVI_Grote_zonneparken",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "POVI_KWO_vrije_zone",
+     "type": "ngr_visie:POVI_KWO_vrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "35 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geoserver.gelderland.nl/geoserver/ngr_verordening/wms": {
+   "url": "https://geoserver.gelderland.nl/geoserver/ngr_verordening/wms",
+   "cc": "NL",
+   "title": "WFS geoserver.gelderland.nl",
+   "publisher": "Provincie Gelderland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "POVE_Beschzones_nat_landnat",
+     "type": "ngr_verordening:POVE_Beschzones_nat_landnat",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_Boringsvrije_zone",
+     "type": "ngr_verordening:POVE_Boringsvrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_Drinkwaterreservering_ASV",
+     "type": "ngr_verordening:POVE_Drinkwaterreservering_ASV",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "POVE_Groene_ontwikkelingszone",
+     "type": "ngr_verordening:POVE_Groene_ontwikkelingszone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_KWO_vrije_zone",
+     "type": "ngr_verordening:POVE_KWO_vrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_Nationale_landschappen",
+     "type": "ngr_verordening:POVE_Nationale_landschappen",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "39 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://opengeodata.zeeland.nl/geoserver/wbn_geo/wms": {
+   "url": "https://opengeodata.zeeland.nl/geoserver/wbn_geo/wms",
+   "cc": "NL",
+   "title": "WFS opengeodata.zeeland.nl",
+   "publisher": "Provincie Zeeland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Nationaal Park Oosterschelde",
+     "type": "wbn_geo:ext_wbn_natprkooschl010",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Nationaal Park Oosterschelde",
+     "type": "wbn_geo:ext_wbn_natprkooschl010",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "1 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://opengeodata.zeeland.nl/geoserver/chs/wms": {
+   "url": "https://opengeodata.zeeland.nl/geoserver/chs/wms",
+   "cc": "NL",
+   "title": "WFS opengeodata.zeeland.nl",
+   "publisher": "Provincie Zeeland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Kustzone, duingebied",
+     "type": "chs:geocmd_chskstzondgbvvl",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Park",
+     "type": "chs:geocmd_chsprkvvl",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Kustzone, duingebied",
+     "type": "chs:geocmd_chskstzondgbvvl",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Park",
+     "type": "chs:geocmd_chsprkvvl",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "121 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://opengeodata.zeeland.nl/geoserver/natuur/wms": {
+   "url": "https://opengeodata.zeeland.nl/geoserver/natuur/wms",
+   "cc": "NL",
+   "title": "WFS opengeodata.zeeland.nl",
+   "publisher": "Provincie Zeeland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Contracten: 2023 SKNL Kaart Natura2000 tbv uitvoering Programma Natuur",
+     "type": "natuur:ext_nat_natconsknlkrtupn023",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Contracten: 2024 SKNL Kaart Natura2000 tbv uitvoering Programma Natuur",
+     "type": "natuur:ext_nat_natconsknlkrtupn024",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Damhertgebieden - Natura2000",
+     "type": "natuur:ext_rud_damhrtgebn2000",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Damhertgebieden - Voorkeurszones",
+     "type": "natuur:ext_rud_damhrtgebvkz",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Natura 2000 (INSPIRE geharmoniseerd)",
+     "type": "natuur:beschermde-gebieden_protectedsite",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "bosvisie beleidskaart geleidingsbufferzone",
+     "type": "natuur:ext_nat_bosvisbel_gelzonbuf",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "bosvisie kansenkaart geleidingsbufferzone",
+     "type": "natuur:ext_nat_bosviskns_gelzonbuf",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Contracten: 2023 SKNL Kaart Natura2000 tbv uitvoering Programma Natuur",
+     "type": "natuur:ext_nat_natconsknlkrtupn023",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Contracten: 2024 SKNL Kaart Natura2000 tbv uitvoering Programma Natuur",
+     "type": "natuur:ext_nat_natconsknlkrtupn024",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Damhertgebieden - Natura2000",
+     "type": "natuur:ext_rud_damhrtgebn2000",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Damhertgebieden - Voorkeurszones",
+     "type": "natuur:ext_rud_damhrtgebvkz",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Natura 2000 (INSPIRE geharmoniseerd)",
+     "type": "natuur:beschermde-gebieden_protectedsite",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "130 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  }
+ }
+}

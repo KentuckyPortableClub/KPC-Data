@@ -1,0 +1,190 @@
+{
+ "area": "US-ME",
+ "run": "2026-11-02",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0337": {
+   "park": "Carlton Pond Wetland Management District",
+   "area": "US-ME",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"district wetland carlton\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10714": {
+   "park": "International Appalachian Trail--Sentier International des Appalaches National Historic Trail",
+   "area": "US-ME",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3386,
+     "record_name": "Katahdin Woods and Waters National Monument",
+     "acres_approx": 88876,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NM",
+     "Own_Type": "FED",
+     "GIS_Acres": 89562,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 8321,
+     "record_name": "Elliotsville Plantation Inc. - Quimby Lands",
+     "acres_approx": 9702,
+     "Mang_Name": "NGO",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 9675,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"international appalachian appalaches\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-2402": {
+   "park": "Penobscot River Corridor - Katahdin Woods and Waters National Monument",
+   "area": "US-ME",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"penobscot monument corridor\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7976": {
+   "park": "Maine Acadian Culture National Heritage Site",
+   "area": "US-ME",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"heritage culture acadian\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7977": {
+   "park": "Roosevelt Campobello International Park",
+   "area": "US-ME",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"international campobello roosevelt\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8287": {
+   "park": "Capitol State Park",
+   "area": "US-ME",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0",
+     "agency": "State of Maine conserved lands (Bureau of Parks and Lands / IFW)",
+     "record": 59957,
+     "record_name": "CAPITAL PARK",
+     "acres_approx": 10,
+     "tier": "SURE",
+     "why": "same proper name"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 207532,
+     "record_name": "Capital Park",
+     "acres_approx": 10,
+     "Mang_Name": "UNK",
+     "Des_Tp": "LP",
+     "Own_Type": "UNK",
+     "GIS_Acres": 22,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"capitol\": 0 lead(s)"
+   ],
+   "verdict": "candidate: SURE (same proper name)"
+  },
+  "US-8491": {
+   "park": "Bog Brook Wildlife Management Area",
+   "area": "US-ME",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"brook bog\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9174": {
+   "park": "Mahoosuc Ecological Reserve",
+   "area": "US-ME",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0",
+     "agency": "State of Maine conserved lands (Bureau of Parks and Lands / IFW)",
+     "record": 10859,
+     "record_name": "International Paper Company",
+     "acres_approx": 3282,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 206767,
+     "record_name": "Mahoosucs",
+     "acres_approx": 3403,
+     "Mang_Name": "SPR",
+     "Des_Tp": "LOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3367,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mahoosuc\": 0 lead(s)"
+   ],
+   "verdict": "candidate: SURE (same proper name)"
+  }
+ }
+}

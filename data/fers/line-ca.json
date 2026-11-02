@@ -1,0 +1,68 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ca",
+ "states": [
+  "US-CA"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 06:18 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 2750 of 3026 pairs whose boxes touch"
+ ],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 138,
+  "DROPPED": 533,
+  "NEVER LOOKED AT": 964
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 2750,
+   "pairs whose boxes touch": 3026,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 1859,
+   "date": "2026-11-02",
+   "pairs tested": 251
+  },
+  "pass3": {
+   "agree with the pass before": 927,
+   "date": "2026-11-02",
+   "pairs tested": 249
+  },
+  "pass5": {
+   "checked": 88,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-CA": "data/fers/US-CA.json"
+ },
+ "US-CA": {
+  "rows": 1954,
+  "live": 159,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "this spot is 950 km from Spring Mountain Ranch State Park's": 1,
+   "low-confidence outline for Kern National Wild and Scenic Riv": 1,
+   "no public owner on the ownership map": 3,
+   "this spot is 942 km from Spring Mountain Ranch State Park's": 1,
+   "this spot is 953 km from Spring Mountain Ranch State Park's": 1,
+   "the agency ownership map did not answer": 1,
+   "this spot is 943 km from Spring Mountain Ranch State Park's": 1
+  },
+  "dropped": 1157,
+  "merged": 629
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-CA"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "area": "CA-SI",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/CA-SI.json",
+ "rows": {},
+ "started": "2026-11-01T11:30:22Z",
+ "fers_sha256": "1c103c91a934060fbd810a39ca17e44b67b3a2e9cd57d3c028ab0eaf7288ccb5",
+ "live_rows": 0,
+ "skipped_rows": 0,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:57Z",
+ "complete": true,
+ "summary": {
+  "rows": 0,
+  "verdicts": {
+   "CONFIRMED": 0,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {}
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json"
+ ],
+ "requests_this_run": 1
+}

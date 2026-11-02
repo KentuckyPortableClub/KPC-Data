@@ -1,0 +1,11 @@
+10 leads, 10 to do
+[1/10] DE-0001   OK      wfs:WFS 2.0.0                n=1 1 record(s) within 2 km: Berchtesgaden
+[2/10] DK-0001   OK      wfs:WFS 2.0.0                n=2 2 record(s) within 2 km: Skagen Gren, Sønderstrand
+[3/10] FI-0003   OK      wfs:WFS 2.0.0                n=1 1 record(s) within 2 km: Oulangan kansallispuisto
+[4/10] RO-0001   ERROR   file                         n=0 network: SSLError: HTTPSConnectionPool(host='data.gov.ro', port=443): Max retries exceeded with url: /dataset/
+[5/10] CH-0010   OK      file:zip                     n=2 2 record(s) within 2 km: Naturpark Gantrisch; 1.3 MB (from cache)
+[6/10] MX-0040   OK      file:zip->shp                n=1 1 record(s) within 2 km: Cañón del Sumidero; 5.8 MB (from cache)
+[7/10] US-1134   OK      file:zip->kml                n=1 1 record(s) within 2 km: Calaveras Big Trees SP; 6.3 MB
+[8/10] MX-0007   OK      file:kmz->kml                n=1 1 record(s) within 2 km: Desierto de los Leones; 7.1 MB (from cache)
+[9/10] GB-0001   OK      hub:Hub->ArcGIS REST services.arcgis.com n=1 1 record(s) within 2 km: CASSOP; Hub 'National Nature Reserves (England)' by Defra group ArcGIS Online organis
+[10/10] IE-0001   OK      ckan:CKAN->file (Download)   n=1 1 record(s) within 2 km: Killarney National Park; 30 KB (from cache); CKAN API disallowed by robots.txt; read 

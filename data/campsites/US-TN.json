@@ -1,0 +1,8427 @@
+{
+ "about": "Camp & activate (RULE SHEET E + CA-1..6): which campground is in which park. Planning aid, not a guarantee; every row keeps its source.",
+ "area": "US-TN",
+ "both": [
+  {
+   "agency": "state",
+   "booking": "",
+   "hunt_note": "",
+   "id": "TN-cc7baf0685",
+   "kind": "campground",
+   "label": "",
+   "lat": 35.84386,
+   "lon": -85.3102,
+   "name": "Big Laurel Falls Campground",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Scott's Gulf Wilderness State Park",
+    "Fall Creek Falls State Park"
+   ],
+   "parks": [
+    "US-12361",
+    "US-2945"
+   ],
+   "patch_acres": 1137.5,
+   "patch_id": "US-12361+US-2945@area@35.840,-85.327",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": null
+  },
+  {
+   "agency": "state",
+   "booking": "",
+   "hunt_note": "",
+   "id": "TN-3715884bb7",
+   "kind": "campground",
+   "label": "",
+   "lat": 35.835,
+   "lon": -85.3271,
+   "name": "Caney Fork River Trail Campground",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Scott's Gulf Wilderness State Park",
+    "Fall Creek Falls State Park"
+   ],
+   "parks": [
+    "US-12361",
+    "US-2945"
+   ],
+   "patch_acres": 1137.5,
+   "patch_id": "US-12361+US-2945@area@35.840,-85.327",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": null
+  },
+  {
+   "agency": "state",
+   "booking": "",
+   "hunt_note": "on a hunt area (Obion River Wildlife Management Area): apply the hunt closure dates (Sheet D) before showing (CA-5)",
+   "id": "TN-6921820ae6",
+   "kind": "campground",
+   "label": "",
+   "lat": 36.19161,
+   "lon": -88.89155,
+   "name": "Group Campsite",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Big Cypress Tree State Park",
+    "Obion River Wildlife Management Area"
+   ],
+   "parks": [
+    "US-2929",
+    "US-3959"
+   ],
+   "patch_acres": 329.9,
+   "patch_id": "US-2929+US-3959@area@36.205,-88.889",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": null
+  },
+  {
+   "agency": "state",
+   "booking": "",
+   "hunt_note": "",
+   "id": "TN-bf0a572bf3",
+   "kind": "campground",
+   "label": "",
+   "lat": 35.10121,
+   "lon": -85.90296,
+   "name": "Group Site",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Sherwood Forest State Natural Area",
+    "Head of the Crow State Park"
+   ],
+   "parks": [
+    "US-11918",
+    "US-12714"
+   ],
+   "patch_acres": 3056.3,
+   "patch_id": "US-11918+US-12714@area@35.086,-85.901",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": null
+  },
+  {
+   "agency": "state",
+   "booking": "",
+   "hunt_note": "",
+   "id": "TN-0b6c38d418",
+   "kind": "campground",
+   "label": "",
+   "lat": 35.83827,
+   "lon": -85.32944,
+   "name": "Virgin Falls Campsite",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Scott's Gulf Wilderness State Park",
+    "Fall Creek Falls State Park"
+   ],
+   "parks": [
+    "US-12361",
+    "US-2945"
+   ],
+   "patch_acres": 1137.5,
+   "patch_id": "US-12361+US-2945@area@35.840,-85.327",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": null
+  }
+ ],
+ "check_first": [
+  {
+   "id": "234139",
+   "name": "Donley Cabin",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "232697",
+   "name": "Salt Lick Creek",
+   "why": [
+    "point 8 m inside the edge of Cordell Hull Wildlife Management Area -> 'at the edge: check the official map'",
+    "point 8 m inside the edge of Cordell Hull Waterfowl Refuge Wildlife Management Area -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-d9305b45e6",
+   "name": "Backcountry Campsite 2 Overlook",
+   "why": [
+    "point 8 m inside the edge of Mousetail Landing State Park -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-c3d7e4fee0",
+   "name": "Bruton Branch Campsite",
+   "why": [
+    "point 6 m inside the edge of Pickwick Landing State Park -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-7326b866a6",
+   "name": "Camp 1 rd bridge",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "TN-3715884bb7",
+   "name": "Caney Fork River Trail Campground",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "TN-ab921d5811",
+   "name": "Cumberland Mountain",
+   "why": [
+    "point 1 m inside the edge of North Cumberland Wildlife Management Area -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-428f73a604",
+   "name": "Devils Step Island Campground No. 1",
+   "why": [
+    "point 6 m inside the edge of Tims Ford State Park -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-6921820ae6",
+   "name": "Group Campsite",
+   "why": [
+    "on a hunt area (Obion River Wildlife Management Area): apply the hunt closure dates (Sheet D) before showing (CA-5)"
+   ]
+  },
+  {
+   "id": "TN-3d1658a3c5",
+   "name": "Hatchery Flats Adaptive Backcountry Campsite",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "TN-308975e350",
+   "name": "Henry Horton State Park",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "TN-c5d4fff1d1",
+   "name": "Kentucky Corner Campsite",
+   "why": [
+    "point 14 m inside the edge of Cumberland Gap National Historical Park -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-a213748b0d",
+   "name": "Lost Creek Backcountry Campground",
+   "why": [
+    "point 7 m inside the edge of Tims Ford State Park -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-5e47a9b430",
+   "name": "Oaks Group Camp Shelter",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "TN-1603192ac0",
+   "name": "Reelfoot Lake State Park",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "TN-9b000437fa",
+   "name": "Rig Ridge TVA Small Wild Area",
+   "why": [
+    "point 11 m inside the edge of Big Ridge State Park -> 'at the edge: check the official map'"
+   ]
+  },
+  {
+   "id": "TN-c09682783f",
+   "name": "Spann House Backcountry Campsite",
+   "why": [
+    "point 1 m inside the edge of Tims Ford State Park -> 'at the edge: check the official map'"
+   ]
+  }
+ ],
+ "counts": {
+  "both": 5,
+  "campgrounds": 344,
+  "check_first": 17,
+  "dayuse": 8,
+  "disagree": 2,
+  "dispersed": 0,
+  "inside": 265,
+  "inside_rows": 320,
+  "line": 0,
+  "line_parks": 0,
+  "merged_pairs": 8,
+  "no_point": 0,
+  "parks": 277,
+  "parks_with_inside": 74,
+  "parks_with_nearby": 97,
+  "parks_with_outline": 237,
+  "patches": 27,
+  "placed": 344
+ },
+ "dayuse": [
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/232556",
+   "id": "232556",
+   "kind": "day-use shelter / picnic area",
+   "name": "Cook Day Use Area",
+   "park": null
+  },
+  {
+   "agency": "NPS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/232439",
+   "id": "232439",
+   "kind": "day-use shelter / picnic area",
+   "name": "Cosby Picnic Pavilion",
+   "park": "US-0034"
+  },
+  {
+   "agency": "NPS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/232475",
+   "id": "232475",
+   "kind": "day-use shelter / picnic area",
+   "name": "Greenbrier Picnic Pavilion",
+   "park": "US-0034"
+  },
+  {
+   "agency": "FS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/123040",
+   "id": "123040",
+   "kind": "day-use shelter / picnic area",
+   "name": "Horse Creek Pavilion DAY USE",
+   "park": "US-4525"
+  },
+  {
+   "agency": "NPS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/232477",
+   "id": "232477",
+   "kind": "day-use shelter / picnic area",
+   "name": "Metcalf Bottoms Picnic Pavilion",
+   "park": "US-0034"
+  },
+  {
+   "agency": "FS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/250034",
+   "id": "250034",
+   "kind": "day-use shelter / picnic area",
+   "name": "Quinn Springs Pavilion",
+   "park": "US-4525"
+  },
+  {
+   "agency": "FS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/121890",
+   "id": "121890",
+   "kind": "day-use shelter / picnic area",
+   "name": "The Laurels Picnic Area Pavilions",
+   "park": "US-4525"
+  },
+  {
+   "agency": "NPS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/232476",
+   "id": "232476",
+   "kind": "day-use shelter / picnic area",
+   "name": "Twin Creeks Picnic Pavilion",
+   "park": "US-0034"
+  }
+ ],
+ "disagree": [
+  {
+   "id": "TN-c7b48b0e75",
+   "list_says": "US-6266",
+   "name": "Savage Falls Campground",
+   "outline_says": "US-9718"
+  },
+  {
+   "id": "TN-bb589ddd80",
+   "list_says": "US-6266",
+   "name": "Savage Station Campground",
+   "outline_says": "US-9718"
+  }
+ ],
+ "dispersed": {},
+ "inside": {
+  "US-0019": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8b551e00f9",
+    "kind": "campground",
+    "lat": 36.56627,
+    "lon": -83.72507,
+    "m_inside": 42,
+    "name": "Baptist Gap Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c5d4fff1d1",
+    "kind": "campground",
+    "lat": 36.58256,
+    "lon": -83.69064,
+    "m_inside": 14,
+    "name": "Kentucky Corner Campsite",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-0034": [
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/233299",
+    "id": "233299",
+    "kind": "campground",
+    "lat": 35.65333,
+    "lon": -83.58167,
+    "m_inside": 7464,
+    "name": "Appalachian Clubhouse",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/234712",
+    "id": "234712",
+    "kind": "campground",
+    "lat": 35.65333,
+    "lon": -83.5775,
+    "m_inside": 7238,
+    "name": "Spence Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232436",
+    "id": "232436",
+    "ids": [
+     "232436",
+     "232487"
+    ],
+    "kind": "campground",
+    "lat": 35.65944,
+    "lon": -83.58639,
+    "m_inside": 6759,
+    "name": "Elkmont Group Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232440",
+    "id": "232440",
+    "ids": [
+     "232440",
+     "232488"
+    ],
+    "kind": "campground",
+    "lat": 35.60389,
+    "lon": -83.77131,
+    "m_inside": 4585,
+    "name": "Cades Cove Group",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232485",
+    "id": "232485",
+    "kind": "campground",
+    "lat": 35.60223,
+    "lon": -83.7664,
+    "m_inside": 4284,
+    "name": "Anthony Creek Horse Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232438",
+    "id": "232438",
+    "ids": [
+     "232438",
+     "232479"
+    ],
+    "kind": "campground",
+    "lat": 35.75305,
+    "lon": -83.20673,
+    "m_inside": 2776,
+    "name": "Cosby Group Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/273847",
+    "id": "273847",
+    "kind": "campground",
+    "lat": 35.61075,
+    "lon": -83.93318,
+    "m_inside": 2534,
+    "name": "Abram's Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10207636",
+    "id": "10207636",
+    "kind": "campground",
+    "lat": 35.6369,
+    "lon": -83.93614,
+    "m_inside": 356,
+    "name": "Look Rock Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-0538": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-436bd0487c",
+    "kind": "campground",
+    "lat": 36.47462,
+    "lon": -89.34432,
+    "m_inside": 230,
+    "name": "Airpark/North Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6d5d932357",
+    "kind": "campground",
+    "lat": 36.4778,
+    "lon": -89.34408,
+    "m_inside": 112,
+    "name": "Tent Campsite",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-74eb48c36d",
+    "kind": "campground",
+    "lat": 36.35473,
+    "lon": -89.39814,
+    "m_inside": 75,
+    "name": "Tent Camp Playground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1603192ac0",
+    "kind": "cabins / lodging",
+    "lat": 36.353,
+    "lon": -89.40645,
+    "m_inside": 68,
+    "name": "Reelfoot Lake State Park",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-0685": [
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/253502",
+    "id": "253502",
+    "kind": "campground",
+    "lat": 36.0702,
+    "lon": -84.66331,
+    "m_inside": 61,
+    "name": "Rock Creek Campground (TN)",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-0686": [
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232506",
+    "id": "232506",
+    "kind": "campground",
+    "lat": 36.48895,
+    "lon": -84.69756,
+    "m_inside": 4361,
+    "name": "Bandy Creek",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10004358",
+    "id": "10004358",
+    "kind": "campground",
+    "lat": 36.54691,
+    "lon": -84.63617,
+    "m_inside": 1061,
+    "name": "Station Camp Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-11879": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0dde019cc2",
+    "kind": "campground",
+    "lat": 35.26262,
+    "lon": -85.26027,
+    "m_inside": 690,
+    "name": "North Chickamauga Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3b361b96bb",
+    "kind": "campground",
+    "lat": 35.26416,
+    "lon": -85.25514,
+    "m_inside": 338,
+    "name": "Cable Crossing Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4a035df37b",
+    "kind": "campground",
+    "lat": 35.26772,
+    "lon": -85.26405,
+    "m_inside": 31,
+    "name": "North Chick - Stevenson Branch",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-11918": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bf0a572bf3",
+    "kind": "campground",
+    "lat": 35.10121,
+    "lon": -85.90296,
+    "m_inside": 320,
+    "name": "Group Site",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-12361": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0b6c38d418",
+    "kind": "campground",
+    "lat": 35.83827,
+    "lon": -85.32944,
+    "m_inside": 374,
+    "name": "Virgin Falls Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d20d0cc2e5",
+    "kind": "campground",
+    "lat": 35.84874,
+    "lon": -85.30743,
+    "m_inside": 220,
+    "name": "Martha's Pretty Point Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3715884bb7",
+    "kind": "campground",
+    "lat": 35.835,
+    "lon": -85.3271,
+    "m_inside": 123,
+    "name": "Caney Fork River Trail Campground",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-cc7baf0685",
+    "kind": "campground",
+    "lat": 35.84386,
+    "lon": -85.3102,
+    "m_inside": 59,
+    "name": "Big Laurel Falls Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e182d61c00",
+    "kind": "campground",
+    "lat": 35.84908,
+    "lon": -85.30242,
+    "m_inside": 37,
+    "name": "Cable Crossing Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-12663": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-927b43ff39",
+    "kind": "campground",
+    "lat": 35.23429,
+    "lon": -84.54781,
+    "m_inside": 86,
+    "name": "Campground Dumpster",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-12714": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bf0a572bf3",
+    "kind": "campground",
+    "lat": 35.10121,
+    "lon": -85.90296,
+    "m_inside": 288,
+    "name": "Group Site",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2929": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6921820ae6",
+    "kind": "campground",
+    "lat": 36.19161,
+    "lon": -88.89155,
+    "m_inside": 116,
+    "name": "Group Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2930": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5da049333d",
+    "kind": "campground",
+    "lat": 35.06544,
+    "lon": -88.72248,
+    "m_inside": 1042,
+    "name": "Campground Dumpster",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-62b4dceb7d",
+    "kind": "campground",
+    "lat": 35.04516,
+    "lon": -88.73661,
+    "m_inside": 880,
+    "name": "Group Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-39a7cfb47b",
+    "kind": "campground",
+    "lat": 35.06139,
+    "lon": -88.73175,
+    "m_inside": 771,
+    "name": "Grassy Point Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e046076eff",
+    "kind": "campground",
+    "lat": 35.03287,
+    "lon": -88.73082,
+    "m_inside": 344,
+    "name": "Pipe Rock Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1bf931f168",
+    "kind": "campground",
+    "lat": 35.05183,
+    "lon": -88.74844,
+    "m_inside": 264,
+    "name": "Tuscumbia Bend Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-af3d3e5b91",
+    "kind": "campground",
+    "lat": 35.02452,
+    "lon": -88.74053,
+    "m_inside": 182,
+    "name": "Dogwood Point Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2931": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-dbf66fba93",
+    "kind": "campground",
+    "lat": 36.26795,
+    "lon": -83.90954,
+    "m_inside": 357,
+    "name": "Dark Hollow East Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ece1313af6",
+    "kind": "campground",
+    "lat": 36.2575,
+    "lon": -83.93452,
+    "m_inside": 187,
+    "name": "Dark Hollow West Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-254588a42e",
+    "kind": "campground",
+    "lat": 36.27819,
+    "lon": -83.91538,
+    "m_inside": 99,
+    "name": "Sharps Station Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8e786a0f6f",
+    "kind": "campground",
+    "lat": 36.24804,
+    "lon": -83.9242,
+    "m_inside": 65,
+    "name": "Group Camp Dining Hall",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-9b000437fa",
+    "kind": "cabins / lodging",
+    "lat": 36.24329,
+    "lon": -83.92633,
+    "m_inside": 11,
+    "name": "Rig Ridge TVA Small Wild Area",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-2932": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6743355d4b",
+    "kind": "campground",
+    "lat": 36.37656,
+    "lon": -86.35268,
+    "m_inside": 77,
+    "name": "Hammock Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2933": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5e47a9b430",
+    "kind": "campground",
+    "lat": 35.108,
+    "lon": -85.1767,
+    "m_inside": 227,
+    "name": "Oaks Group Camp Shelter",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-96404284bd",
+    "kind": "cabins / lodging",
+    "lat": 35.10856,
+    "lon": -85.17415,
+    "m_inside": 38,
+    "name": "The Oaks Group Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2935": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-860bcedbe2",
+    "kind": "cabins / lodging",
+    "lat": 36.08073,
+    "lon": -86.31563,
+    "m_inside": 562,
+    "name": "Cedars of Lebanon State Forest",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e342010878",
+    "kind": "campground",
+    "lat": 36.08331,
+    "lon": -86.31984,
+    "m_inside": 370,
+    "name": "Tent Camp Wash House 2",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2936": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8af64fcbfe",
+    "kind": "campground",
+    "lat": 35.38856,
+    "lon": -88.77365,
+    "m_inside": 728,
+    "name": "Wrangler Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ea85395bce",
+    "kind": "cabins / lodging",
+    "lat": 35.3931,
+    "lon": -88.77436,
+    "m_inside": 644,
+    "name": "The Lawn at Brewer Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2acf3f8526",
+    "kind": "campground",
+    "lat": 35.38748,
+    "lon": -88.76934,
+    "m_inside": 344,
+    "name": "Tsp-0055 Tent Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3d2264883d",
+    "kind": "cabins / lodging",
+    "lat": 35.39094,
+    "lon": -88.7695,
+    "m_inside": 338,
+    "name": "Chickasaw State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ee2d429bce",
+    "kind": "campground",
+    "lat": 35.39194,
+    "lon": -88.78187,
+    "m_inside": 287,
+    "name": "Campground Rd Entrance",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-fc2cc0da2e",
+    "kind": "campground",
+    "lat": 35.34618,
+    "lon": -88.88219,
+    "m_inside": 159,
+    "name": "Lake Lajoie Group Camp Dining Hall",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2937": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0c56ad897e",
+    "kind": "cabins / lodging",
+    "lat": 36.5823,
+    "lon": -85.18365,
+    "m_inside": 20,
+    "name": "Birthplace Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2938": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e9017aab6b",
+    "kind": "campground",
+    "lat": 36.31569,
+    "lon": -84.21547,
+    "m_inside": 80,
+    "name": "Campground Playground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2939": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ab005f6b5f",
+    "kind": "campground",
+    "lat": 35.90392,
+    "lon": -84.99419,
+    "m_inside": 357,
+    "name": "Tent Camp Wash House 4",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-00aa51bd24",
+    "kind": "campground",
+    "lat": 35.90065,
+    "lon": -84.99563,
+    "m_inside": 193,
+    "name": "Tent Camp Wash House 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-84614bdb30",
+    "kind": "cabins / lodging",
+    "lat": 35.89809,
+    "lon": -85.00732,
+    "m_inside": 68,
+    "name": "Cumberland Mountain State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5c0010f3a6",
+    "kind": "campground",
+    "lat": 35.91699,
+    "lon": -85.01895,
+    "m_inside": 55,
+    "name": "Overnight Trail Backcountry Site",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2941": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-700c323e42",
+    "kind": "cabins / lodging",
+    "lat": 35.26928,
+    "lon": -87.3637,
+    "m_inside": 476,
+    "name": "David Crockett State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c3bd24892e",
+    "kind": "campground",
+    "lat": 35.25987,
+    "lon": -87.36204,
+    "m_inside": 207,
+    "name": "Trailer Camp Playground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2942": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-63da23b09f",
+    "kind": "cabins / lodging",
+    "lat": 36.20903,
+    "lon": -82.65842,
+    "m_inside": 24,
+    "name": "Stonecipher Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2944": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3f26635e3a",
+    "kind": "cabins / lodging",
+    "lat": 36.07106,
+    "lon": -85.83523,
+    "m_inside": 122,
+    "name": "Edgar Evins State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-a733a11f0e",
+    "kind": "campground",
+    "lat": 36.08107,
+    "lon": -85.8339,
+    "m_inside": 31,
+    "name": "Walk-In Campsites",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2945": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d918769305",
+    "kind": "campground",
+    "lat": 35.62896,
+    "lon": -85.33045,
+    "m_inside": 1216,
+    "name": "Backcountry Area 3",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0b6c38d418",
+    "kind": "campground",
+    "lat": 35.83827,
+    "lon": -85.32944,
+    "m_inside": 374,
+    "name": "Virgin Falls Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d20d0cc2e5",
+    "kind": "campground",
+    "lat": 35.84874,
+    "lon": -85.30743,
+    "m_inside": 220,
+    "name": "Martha's Pretty Point Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-99f28b2dcf",
+    "kind": "campground",
+    "lat": 35.6467,
+    "lon": -85.32799,
+    "m_inside": 153,
+    "name": "Eli Field Group Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3715884bb7",
+    "kind": "campground",
+    "lat": 35.835,
+    "lon": -85.3271,
+    "m_inside": 123,
+    "name": "Caney Fork River Trail Campground",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-cc7baf0685",
+    "kind": "campground",
+    "lat": 35.84386,
+    "lon": -85.3102,
+    "m_inside": 59,
+    "name": "Big Laurel Falls Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e182d61c00",
+    "kind": "campground",
+    "lat": 35.84908,
+    "lon": -85.30242,
+    "m_inside": 42,
+    "name": "Cable Crossing Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2947": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-80726ef776",
+    "kind": "campground",
+    "lat": 35.62684,
+    "lon": -89.85992,
+    "m_inside": 258,
+    "name": "Campground Horseshoes",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-fefbe919ed",
+    "kind": "campground",
+    "lat": 35.62397,
+    "lon": -89.86671,
+    "m_inside": 97,
+    "name": "Backcountry Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2948": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8952a73320",
+    "kind": "campground",
+    "lat": 36.13464,
+    "lon": -84.47504,
+    "m_inside": 2411,
+    "name": "North Old Mac Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-942444cd23",
+    "kind": "campground",
+    "lat": 36.1403,
+    "lon": -84.47425,
+    "m_inside": 2272,
+    "name": "Panther Branch Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-7fe79963e5",
+    "kind": "campground",
+    "lat": 36.14932,
+    "lon": -84.48843,
+    "m_inside": 2195,
+    "name": "Bird Mountain Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-231a8e5598",
+    "kind": "campground",
+    "lat": 36.1242,
+    "lon": -84.48796,
+    "m_inside": 2077,
+    "name": "Judge Branch Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-254ee0e25f",
+    "kind": "campground",
+    "lat": 36.11822,
+    "lon": -84.48906,
+    "m_inside": 2022,
+    "name": "Spicewood Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-92250ca496",
+    "kind": "campground",
+    "lat": 36.13516,
+    "lon": -84.49354,
+    "m_inside": 1888,
+    "name": "Flat Fork Primitive Group Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-cf57ba2090",
+    "kind": "campground",
+    "lat": 36.12716,
+    "lon": -84.45841,
+    "m_inside": 1583,
+    "name": "Tub Springs Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d699da40cc",
+    "kind": "campground",
+    "lat": 36.1333,
+    "lon": -84.4976,
+    "m_inside": 1471,
+    "name": "Big Cove Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f53ba2eece",
+    "kind": "campground",
+    "lat": 36.1389,
+    "lon": -84.52141,
+    "m_inside": 1423,
+    "name": "Ross Gap Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-280762b8fc",
+    "kind": "campground",
+    "lat": 36.10849,
+    "lon": -84.4718,
+    "m_inside": 1103,
+    "name": "Mart Fields Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-00d29b2bdc",
+    "kind": "campground",
+    "lat": 36.15241,
+    "lon": -84.45851,
+    "m_inside": 788,
+    "name": "Squire Knob Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0410df5114",
+    "kind": "campground",
+    "lat": 36.1509,
+    "lon": -84.45016,
+    "m_inside": 22,
+    "name": "Coffin Springs Campsite-Frozen Head",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2950": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-30a97af5bc",
+    "kind": "cabins / lodging",
+    "lat": 35.58969,
+    "lon": -86.69507,
+    "m_inside": 470,
+    "name": "Main Entrance - Day Use, Visitor Center, Hospitality",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1fa9ffda9d",
+    "kind": "campground",
+    "lat": 35.58756,
+    "lon": -86.70279,
+    "m_inside": 372,
+    "name": "Hammock Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-308975e350",
+    "kind": "cabins / lodging",
+    "lat": 35.587,
+    "lon": -86.69315,
+    "m_inside": 310,
+    "name": "Henry Horton State Park",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-66f5439de7",
+    "kind": "campground",
+    "lat": 35.59287,
+    "lon": -86.70237,
+    "m_inside": 224,
+    "name": "Tsp-0136 Group camp 2",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e3b7106a82",
+    "kind": "campground",
+    "lat": 35.58356,
+    "lon": -86.7094,
+    "m_inside": 110,
+    "name": "Backcountry Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2951": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-83304d72ba",
+    "kind": "campground",
+    "lat": 35.1705,
+    "lon": -85.12407,
+    "m_inside": 129,
+    "name": "Campground B",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-209ee7bc02",
+    "kind": "campground",
+    "lat": 35.17263,
+    "lon": -85.12678,
+    "m_inside": 104,
+    "name": "Campground A",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2952": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-927b43ff39",
+    "kind": "campground",
+    "lat": 35.23429,
+    "lon": -84.54781,
+    "m_inside": 86,
+    "name": "Campground Dumpster",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2953": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d6710fee81",
+    "kind": "campground",
+    "lat": 36.58952,
+    "lon": -84.13987,
+    "m_inside": 117,
+    "name": "IMSP Campground Playground - Camper’s Only",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2955": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0dde019cc2",
+    "kind": "campground",
+    "lat": 35.26262,
+    "lon": -85.26027,
+    "m_inside": 690,
+    "name": "North Chickamauga Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3da6524fff",
+    "kind": "campground",
+    "lat": 35.36329,
+    "lon": -85.17863,
+    "m_inside": 597,
+    "name": "Hughes Ridge Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6ed5fdb42d",
+    "kind": "campground",
+    "lat": 35.69319,
+    "lon": -84.91162,
+    "m_inside": 384,
+    "name": "Piney River - Rockhouse Branch",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3b361b96bb",
+    "kind": "campground",
+    "lat": 35.26416,
+    "lon": -85.25514,
+    "m_inside": 338,
+    "name": "Cable Crossing Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-eae6056746",
+    "kind": "campground",
+    "lat": 35.42016,
+    "lon": -85.15902,
+    "m_inside": 262,
+    "name": "Rock Creek RMA-Rock Creek",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c5ff9402c8",
+    "kind": "campground",
+    "lat": 35.37935,
+    "lon": -85.19353,
+    "m_inside": 254,
+    "name": "Possum Creek - Little Possum North/Hughes Branch",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2ca704a351",
+    "kind": "campground",
+    "lat": 35.44429,
+    "lon": -85.13399,
+    "m_inside": 251,
+    "name": "McGill Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2d0bc65ebf",
+    "kind": "campground",
+    "lat": 35.66502,
+    "lon": -84.92762,
+    "m_inside": 251,
+    "name": "Mocassin Branch Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-47a9215d5f",
+    "kind": "campground",
+    "lat": 36.44975,
+    "lon": -84.04905,
+    "m_inside": 239,
+    "name": "Mount Cloud Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-775756d4d3",
+    "kind": "campground",
+    "lat": 35.69046,
+    "lon": -84.92689,
+    "m_inside": 225,
+    "name": "Spider Den Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-121ab4c19e",
+    "kind": "campground",
+    "lat": 35.35979,
+    "lon": -85.15905,
+    "m_inside": 206,
+    "name": "Possum Creek - Little Possum South",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-80cca3618f",
+    "kind": "campground",
+    "lat": 35.68947,
+    "lon": -84.93815,
+    "m_inside": 203,
+    "name": "Duskin Branch 1 Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-785fac377d",
+    "kind": "campground",
+    "lat": 36.50257,
+    "lon": -83.83862,
+    "m_inside": 200,
+    "name": "Hopper Gap Hollow Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f79da3e0bb",
+    "kind": "campground",
+    "lat": 35.86431,
+    "lon": -84.89829,
+    "m_inside": 195,
+    "name": "Grassy Cove - Black Mountain",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2288c43ccb",
+    "kind": "campground",
+    "lat": 36.47883,
+    "lon": -83.87374,
+    "m_inside": 190,
+    "name": "Rogers Gap Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f2c15000f7",
+    "kind": "campground",
+    "lat": 35.41367,
+    "lon": -85.13989,
+    "m_inside": 185,
+    "name": "Rock Creek 2 Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-aca89ee788",
+    "kind": "campground",
+    "lat": 35.31612,
+    "lon": -85.18212,
+    "m_inside": 174,
+    "name": "Board Camp Creek Staircase",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e87e30cdec",
+    "kind": "campground",
+    "lat": 35.26952,
+    "lon": -85.18605,
+    "m_inside": 159,
+    "name": "Head of Iris Lovelady Spring Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6a3840ea9a",
+    "kind": "campground",
+    "lat": 36.45948,
+    "lon": -84.01281,
+    "m_inside": 158,
+    "name": "Woodson Gap Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-05b96bf472",
+    "kind": "campground",
+    "lat": 35.29378,
+    "lon": -85.19679,
+    "m_inside": 152,
+    "name": "Deep Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-513a646823",
+    "kind": "campground",
+    "lat": 35.7016,
+    "lon": -84.9541,
+    "m_inside": 152,
+    "name": "Piney River - Newby Branch",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-dcf4c37d12",
+    "kind": "campground",
+    "lat": 35.84243,
+    "lon": -84.95511,
+    "m_inside": 140,
+    "name": "Brady Mtn Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2c0509ff5e",
+    "kind": "campground",
+    "lat": 35.53874,
+    "lon": -85.03727,
+    "m_inside": 135,
+    "name": "Morgan Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bcf25d3367",
+    "kind": "campground",
+    "lat": 35.30875,
+    "lon": -85.18476,
+    "m_inside": 133,
+    "name": "Bridge-Board Camp Creek Tributary #1",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d64295ac45",
+    "kind": "campground",
+    "lat": 35.46977,
+    "lon": -85.09758,
+    "m_inside": 133,
+    "name": "Widcat Hollow Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3ebecab8df",
+    "kind": "campground",
+    "lat": 36.47508,
+    "lon": -83.9227,
+    "m_inside": 132,
+    "name": "McLean Rock 1 Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f1bf27fb71",
+    "kind": "campground",
+    "lat": 36.47305,
+    "lon": -83.93445,
+    "m_inside": 125,
+    "name": "McLean Rock 2 Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-7bb0410e72",
+    "kind": "campground",
+    "lat": 35.31915,
+    "lon": -85.18128,
+    "m_inside": 124,
+    "name": "Soddy Gorge - Board Camp Creek",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1ba558142d",
+    "kind": "campground",
+    "lat": 36.52804,
+    "lon": -83.81316,
+    "m_inside": 89,
+    "name": "North Springs Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-517b0d619e",
+    "kind": "campground",
+    "lat": 35.73048,
+    "lon": -84.89465,
+    "m_inside": 87,
+    "name": "Lower Soak Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5d44c47f90",
+    "kind": "campground",
+    "lat": 35.75218,
+    "lon": -84.97229,
+    "m_inside": 72,
+    "name": "Soak Creek Campsite Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-783b4a8da1",
+    "kind": "campground",
+    "lat": 35.33392,
+    "lon": -85.20122,
+    "m_inside": 69,
+    "name": "Bridge - Board Camp Creek #3",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c532313d93",
+    "kind": "campground",
+    "lat": 35.87016,
+    "lon": -84.87551,
+    "m_inside": 68,
+    "name": "Owl Roost Gap Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e906009ac4",
+    "kind": "campground",
+    "lat": 35.64605,
+    "lon": -84.97699,
+    "m_inside": 62,
+    "name": "Moccasin Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-7e1caa99d8",
+    "kind": "campground",
+    "lat": 35.68951,
+    "lon": -84.95104,
+    "m_inside": 60,
+    "name": "Duskin Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c3188baa98",
+    "kind": "campground",
+    "lat": 35.7312,
+    "lon": -84.94687,
+    "m_inside": 60,
+    "name": "Little Soak Creek Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-10c7a0ce86",
+    "kind": "campground",
+    "lat": 35.33907,
+    "lon": -85.20478,
+    "m_inside": 56,
+    "name": "Board Camp Creek Stile",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-455abc11fd",
+    "kind": "campground",
+    "lat": 35.70265,
+    "lon": -84.90431,
+    "m_inside": 51,
+    "name": "Piney River 1 Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4a035df37b",
+    "kind": "campground",
+    "lat": 35.26772,
+    "lon": -85.26405,
+    "m_inside": 31,
+    "name": "North Chick - Stevenson Branch",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-844f8974fb",
+    "kind": "campground",
+    "lat": 35.86855,
+    "lon": -84.85796,
+    "m_inside": 31,
+    "name": "The Basin Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2956": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-30a9a525cc",
+    "kind": "campground",
+    "lat": 36.12387,
+    "lon": -86.55638,
+    "m_inside": 65,
+    "name": "Backcountry Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2957": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-185c4a1d59",
+    "kind": "cabins / lodging",
+    "lat": 35.36451,
+    "lon": -90.02643,
+    "m_inside": 347,
+    "name": "Mississippi River Group Camp - Women's Cabins 1-8",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6853f313c0",
+    "kind": "campground",
+    "lat": 35.36586,
+    "lon": -90.02728,
+    "m_inside": 337,
+    "name": "Mississippi River Group Camp Dining Hall",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bd17c10805",
+    "kind": "cabins / lodging",
+    "lat": 35.30671,
+    "lon": -90.0654,
+    "m_inside": 266,
+    "name": "Meeman-Shelby Forest State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2139518f63",
+    "kind": "campground",
+    "lat": 35.34888,
+    "lon": -90.04831,
+    "m_inside": 105,
+    "name": "Main Campground - Primitive Sites",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c5bc9911f3",
+    "kind": "campground",
+    "lat": 35.3453,
+    "lon": -90.04665,
+    "m_inside": 65,
+    "name": "Dogwood Ridge Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e6c75509d1",
+    "kind": "campground",
+    "lat": 35.34046,
+    "lon": -90.04213,
+    "m_inside": 60,
+    "name": "Group Camp Assembly Building",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2958": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-7326b866a6",
+    "kind": "campground",
+    "lat": 36.094,
+    "lon": -87.28671,
+    "m_inside": 597,
+    "name": "Camp 1 rd bridge",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f6534ebba7",
+    "kind": "cabins / lodging",
+    "lat": 36.09946,
+    "lon": -87.27656,
+    "m_inside": 588,
+    "name": "Tsp-0171 Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c51fee281c",
+    "kind": "campground",
+    "lat": 36.10168,
+    "lon": -87.26642,
+    "m_inside": 584,
+    "name": "BC Wildcat Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e407cebb3d",
+    "kind": "campground",
+    "lat": 36.07546,
+    "lon": -87.27412,
+    "m_inside": 431,
+    "name": "Backcountry Woodland Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-cced3e5fa0",
+    "kind": "cabins / lodging",
+    "lat": 36.09064,
+    "lon": -87.2919,
+    "m_inside": 362,
+    "name": "Ore pit bridge 2 cabin side",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-326a8fc3d0",
+    "kind": "campground",
+    "lat": 36.0735,
+    "lon": -87.29073,
+    "m_inside": 323,
+    "name": "BC Hall Springs Shelter",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-921462d57e",
+    "kind": "campground",
+    "lat": 36.09826,
+    "lon": -87.28738,
+    "m_inside": 283,
+    "name": "Four Mile Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2959": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6f24ef8d22",
+    "kind": "campground",
+    "lat": 35.68126,
+    "lon": -87.99693,
+    "m_inside": 138,
+    "name": "Eagle Point Trail Shelter 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-03efb20560",
+    "kind": "campground",
+    "lat": 35.65579,
+    "lon": -88.0068,
+    "m_inside": 126,
+    "name": "Optional camper check in (not required)",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-319e53486c",
+    "kind": "campground",
+    "lat": 35.66183,
+    "lon": -88.01664,
+    "m_inside": 40,
+    "name": "Group Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-973b23b22e",
+    "kind": "campground",
+    "lat": 35.67108,
+    "lon": -88.00899,
+    "m_inside": 34,
+    "name": "Scout Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e55a870427",
+    "kind": "campground",
+    "lat": 35.6498,
+    "lon": -88.01951,
+    "m_inside": 16,
+    "name": "Spring Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-d9305b45e6",
+    "kind": "campground",
+    "lat": 35.67673,
+    "lon": -88.01481,
+    "m_inside": 8,
+    "name": "Backcountry Campsite 2 Overlook",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-2960": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f9b06f6b18",
+    "kind": "cabins / lodging",
+    "lat": 36.08885,
+    "lon": -87.97892,
+    "m_inside": 362,
+    "name": "Log Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e607868b5d",
+    "kind": "campground",
+    "lat": 36.10505,
+    "lon": -87.96437,
+    "m_inside": 274,
+    "name": "Campground Road Loop Shelter 2",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3948c743d2",
+    "kind": "campground",
+    "lat": 36.09301,
+    "lon": -87.98672,
+    "m_inside": 256,
+    "name": "Happy Hollow Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-29f372b592",
+    "kind": "campground",
+    "lat": 36.10645,
+    "lon": -87.9609,
+    "m_inside": 241,
+    "name": "Campground Road Loop Backcountry Shelter 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-eb0496307f",
+    "kind": "cabins / lodging",
+    "lat": 36.0825,
+    "lon": -87.98002,
+    "m_inside": 88,
+    "name": "Nathan Bedford Forrest State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f551e1defc",
+    "kind": "campground",
+    "lat": 36.08747,
+    "lon": -87.97183,
+    "m_inside": 30,
+    "name": "Lake Front Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2961": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-084c52ece5",
+    "kind": "campground",
+    "lat": 35.68978,
+    "lon": -88.28945,
+    "m_inside": 1266,
+    "name": "RV Campground (Boat Dock 2) Fishing",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bc5ec7e967",
+    "kind": "cabins / lodging",
+    "lat": 35.70667,
+    "lon": -88.28839,
+    "m_inside": 558,
+    "name": "Natchez Trace State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b6445b6930",
+    "kind": "cabins / lodging",
+    "lat": 35.7787,
+    "lon": -88.24993,
+    "m_inside": 395,
+    "name": "Natchez Trace State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b6234b8c0c",
+    "kind": "campground",
+    "lat": 35.77774,
+    "lon": -88.25344,
+    "m_inside": 301,
+    "name": "Cub Creek Lake Campground 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b02043a3da",
+    "kind": "campground",
+    "lat": 35.77473,
+    "lon": -88.25395,
+    "m_inside": 261,
+    "name": "Campground 2 Water Hookup",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-68009d80a3",
+    "kind": "campground",
+    "lat": 35.79281,
+    "lon": -88.27141,
+    "m_inside": 213,
+    "name": "Wrangler Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2962": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8ec58850fb",
+    "kind": "campground",
+    "lat": 36.24162,
+    "lon": -84.12397,
+    "m_inside": 691,
+    "name": "The Canteen",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b77d91e447",
+    "kind": "cabins / lodging",
+    "lat": 36.24212,
+    "lon": -84.10273,
+    "m_inside": 298,
+    "name": "Norris Dam State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-dc5382cd52",
+    "kind": "cabins / lodging",
+    "lat": 36.22411,
+    "lon": -84.08214,
+    "m_inside": 183,
+    "name": "Historic Cottage",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f27d27d4aa",
+    "kind": "campground",
+    "lat": 36.22179,
+    "lon": -84.08302,
+    "m_inside": 145,
+    "name": "Tsp-0183 East Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2964": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3d6ed4f64b",
+    "kind": "campground",
+    "lat": 36.21463,
+    "lon": -83.40458,
+    "m_inside": 21,
+    "name": "Panther Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2965": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-45b20e8105",
+    "kind": "cabins / lodging",
+    "lat": 36.43079,
+    "lon": -88.08142,
+    "m_inside": 49,
+    "name": "Paris Landing State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2966": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-489da3f89e",
+    "kind": "cabins / lodging",
+    "lat": 36.55202,
+    "lon": -84.79957,
+    "m_inside": 86,
+    "name": "Pickett CCC Memorial State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2967": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-175ae9252b",
+    "kind": "cabins / lodging",
+    "lat": 35.05144,
+    "lon": -88.22904,
+    "m_inside": 116,
+    "name": "Pickwick Landing State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-296fd9b5f2",
+    "kind": "campground",
+    "lat": 35.05766,
+    "lon": -88.22712,
+    "m_inside": 71,
+    "name": "Backcountry Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ace23bdaa0",
+    "kind": "campground",
+    "lat": 35.05285,
+    "lon": -88.22537,
+    "m_inside": 56,
+    "name": "Main Campground Playground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c3d7e4fee0",
+    "kind": "campground",
+    "lat": 35.07059,
+    "lon": -88.1928,
+    "m_inside": 6,
+    "name": "Bruton Branch Campsite",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-2968": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-55047fa347",
+    "kind": "campground",
+    "lat": 35.50013,
+    "lon": -88.67645,
+    "m_inside": 211,
+    "name": "Group Camp Electric Car Charging",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2971": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-436bd0487c",
+    "kind": "campground",
+    "lat": 36.47462,
+    "lon": -89.34432,
+    "m_inside": 230,
+    "name": "Airpark/North Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6d5d932357",
+    "kind": "campground",
+    "lat": 36.4778,
+    "lon": -89.34408,
+    "m_inside": 112,
+    "name": "Tent Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1603192ac0",
+    "kind": "cabins / lodging",
+    "lat": 36.353,
+    "lon": -89.40645,
+    "m_inside": 68,
+    "name": "Reelfoot Lake State Park",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-74eb48c36d",
+    "kind": "campground",
+    "lat": 36.35473,
+    "lon": -89.39814,
+    "m_inside": 30,
+    "name": "Tent Camp Playground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2972": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6388cc0a25",
+    "kind": "cabins / lodging",
+    "lat": 36.16613,
+    "lon": -82.09448,
+    "m_inside": 720,
+    "name": "Cabins Playground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6e645e4495",
+    "kind": "campground",
+    "lat": 36.15959,
+    "lon": -82.09967,
+    "m_inside": 491,
+    "name": "Campground Horseshoes",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ae66f666c2",
+    "kind": "campground",
+    "lat": 36.1599,
+    "lon": -82.1032,
+    "m_inside": 484,
+    "name": "Campground Wash House 4",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-619a828ced",
+    "kind": "campground",
+    "lat": 36.17542,
+    "lon": -82.07059,
+    "m_inside": 40,
+    "name": "Rosebay Ridge Campground 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2973": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-48495f899c",
+    "kind": "campground",
+    "lat": 35.81209,
+    "lon": -85.64621,
+    "m_inside": 407,
+    "name": "Campground Horseshoes",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-40e83593e1",
+    "kind": "cabins / lodging",
+    "lat": 35.81378,
+    "lon": -85.65061,
+    "m_inside": 403,
+    "name": "Rock Island State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0a77569c79",
+    "kind": "campground",
+    "lat": 35.80007,
+    "lon": -85.62302,
+    "m_inside": 92,
+    "name": "Rock Structure Camp 34",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2974": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-9e91c1403b",
+    "kind": "campground",
+    "lat": 36.05483,
+    "lon": -82.57566,
+    "m_inside": 1090,
+    "name": "Birchfield Camp Trail Sign",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3d1658a3c5",
+    "kind": "campground",
+    "lat": 36.051,
+    "lon": -82.57057,
+    "m_inside": 893,
+    "name": "Hatchery Flats Adaptive Backcountry Campsite",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2b0131b0bd",
+    "kind": "campground",
+    "lat": 36.05574,
+    "lon": -82.58091,
+    "m_inside": 634,
+    "name": "Headwaters Backcountry Campsite Trail Sign",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5e435777b6",
+    "kind": "campground",
+    "lat": 36.04786,
+    "lon": -82.57749,
+    "m_inside": 617,
+    "name": "Flint Creek Backcountry Campsite Trail Sign",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-937c826ccb",
+    "kind": "campground",
+    "lat": 36.05305,
+    "lon": -82.58761,
+    "m_inside": 249,
+    "name": "Blockstand Backcountry Campsite Trail Sign",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2978": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1e0f5a5c6f",
+    "kind": "cabins / lodging",
+    "lat": 36.47568,
+    "lon": -85.41432,
+    "m_inside": 43,
+    "name": "Standing Stone State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2979": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-dfb04af8bc",
+    "kind": "campground",
+    "lat": 36.3438,
+    "lon": -82.25499,
+    "m_inside": 81,
+    "name": "Longhunter Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2980": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-a81a73f611",
+    "kind": "campground",
+    "lat": 35.26931,
+    "lon": -86.27477,
+    "m_inside": 136,
+    "name": "Turkey Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-828e4e697f",
+    "kind": "campground",
+    "lat": 35.21849,
+    "lon": -86.25052,
+    "m_inside": 89,
+    "name": "Campground Fishing Pier 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-157cb89368",
+    "kind": "campground",
+    "lat": 35.19958,
+    "lon": -86.15976,
+    "m_inside": 65,
+    "name": "Fairview Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ad609ec025",
+    "kind": "cabins / lodging",
+    "lat": 35.21155,
+    "lon": -86.25261,
+    "m_inside": 21,
+    "name": "Tsp-0279 Cabins",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-a213748b0d",
+    "kind": "campground",
+    "lat": 35.2219,
+    "lon": -86.2641,
+    "m_inside": 7,
+    "name": "Lost Creek Backcountry Campground",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-428f73a604",
+    "kind": "campground",
+    "lat": 35.20425,
+    "lon": -86.16449,
+    "m_inside": 6,
+    "name": "Devils Step Island Campground No. 1",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c09682783f",
+    "ids": [
+     "TN-c09682783f",
+     "TN-f40704b04d"
+    ],
+    "kind": "campground",
+    "lat": 35.21845,
+    "lon": -86.24666,
+    "m_inside": 1,
+    "name": "Spann House Backcountry Campsite",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-2981": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b62eae89db",
+    "kind": "campground",
+    "lat": 35.05909,
+    "lon": -90.12763,
+    "m_inside": 263,
+    "name": "Campground Recycling",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-2982": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-9850f950a7",
+    "kind": "campground",
+    "lat": 36.49682,
+    "lon": -82.47894,
+    "m_inside": 90,
+    "name": "Main Campground Playground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4a2065a7b8",
+    "kind": "campground",
+    "lat": 36.50235,
+    "lon": -82.48785,
+    "m_inside": 48,
+    "name": "Moody Bluff Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-843256f437",
+    "kind": "campground",
+    "lat": 36.49878,
+    "lon": -82.48227,
+    "m_inside": 29,
+    "name": "Campground Boat Launch",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3924": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-860bcedbe2",
+    "kind": "cabins / lodging",
+    "lat": 36.08073,
+    "lon": -86.31563,
+    "m_inside": 562,
+    "name": "Cedars of Lebanon State Forest",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e342010878",
+    "kind": "campground",
+    "lat": 36.08331,
+    "lon": -86.31984,
+    "m_inside": 370,
+    "name": "Tent Camp Wash House 2",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3928": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c674e07dcf",
+    "kind": "campground",
+    "lat": 35.86421,
+    "lon": -85.25688,
+    "m_inside": 579,
+    "name": "Twin Falls Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4dec3b6c48",
+    "kind": "campground",
+    "lat": 35.83178,
+    "lon": -85.30996,
+    "m_inside": 577,
+    "name": "Amber's Den Campground",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3adcfb0e67",
+    "kind": "campground",
+    "lat": 35.77162,
+    "lon": -85.32984,
+    "m_inside": 333,
+    "name": "Mooneyham",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4e112aac06",
+    "kind": "campground",
+    "lat": 35.84439,
+    "lon": -85.26575,
+    "m_inside": 278,
+    "name": "Yellow Bluff",
+    "notes": [],
+    "outline": "words",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0a9d3821f9",
+    "kind": "campground",
+    "lat": 35.85623,
+    "lon": -85.28326,
+    "m_inside": 72,
+    "name": "Polly's Branch",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3931": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4c8a4774dc",
+    "kind": "campground",
+    "lat": 36.03436,
+    "lon": -84.81124,
+    "m_inside": 617,
+    "name": "Peavine North Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6b294ca086",
+    "kind": "campground",
+    "lat": 36.07887,
+    "lon": -84.72356,
+    "m_inside": 314,
+    "name": "Catoosa 1 Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3933": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-17cf854c57",
+    "kind": "campground",
+    "lat": 36.2061,
+    "lon": -87.10415,
+    "m_inside": 1722,
+    "name": "Cheatham WMA",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/256349",
+    "id": "256349",
+    "kind": "campground",
+    "lat": 36.31639,
+    "lon": -87.19622,
+    "m_inside": 62,
+    "name": "Right Bank Recreation Area",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251574",
+    "id": "251574",
+    "kind": "campground",
+    "lat": 36.28416,
+    "lon": -87.14508,
+    "m_inside": 35,
+    "name": "Harpeth River Bridge Campground (TN)",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3934": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8af64fcbfe",
+    "kind": "campground",
+    "lat": 35.38856,
+    "lon": -88.77365,
+    "m_inside": 728,
+    "name": "Wrangler Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ea85395bce",
+    "kind": "cabins / lodging",
+    "lat": 35.3931,
+    "lon": -88.77436,
+    "m_inside": 644,
+    "name": "The Lawn at Brewer Cabin",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2acf3f8526",
+    "kind": "campground",
+    "lat": 35.38748,
+    "lon": -88.76934,
+    "m_inside": 344,
+    "name": "Tsp-0055 Tent Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3d2264883d",
+    "kind": "cabins / lodging",
+    "lat": 35.39094,
+    "lon": -88.7695,
+    "m_inside": 338,
+    "name": "Chickasaw State Park",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ee2d429bce",
+    "kind": "campground",
+    "lat": 35.39194,
+    "lon": -88.78187,
+    "m_inside": 287,
+    "name": "Campground Rd Entrance",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-fc2cc0da2e",
+    "kind": "campground",
+    "lat": 35.34618,
+    "lon": -88.88219,
+    "m_inside": 159,
+    "name": "Lake Lajoie Group Camp Dining Hall",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3957": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-084c52ece5",
+    "kind": "campground",
+    "lat": 35.68978,
+    "lon": -88.28945,
+    "m_inside": 1266,
+    "name": "RV Campground (Boat Dock 2) Fishing",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bc5ec7e967",
+    "kind": "cabins / lodging",
+    "lat": 35.70667,
+    "lon": -88.28839,
+    "m_inside": 558,
+    "name": "Natchez Trace State Park",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b6445b6930",
+    "kind": "cabins / lodging",
+    "lat": 35.7787,
+    "lon": -88.24993,
+    "m_inside": 395,
+    "name": "Natchez Trace State Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b6234b8c0c",
+    "kind": "campground",
+    "lat": 35.77774,
+    "lon": -88.25344,
+    "m_inside": 301,
+    "name": "Cub Creek Lake Campground 1",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b02043a3da",
+    "kind": "campground",
+    "lat": 35.77473,
+    "lon": -88.25395,
+    "m_inside": 261,
+    "name": "Campground 2 Water Hookup",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-68009d80a3",
+    "kind": "campground",
+    "lat": 35.79281,
+    "lon": -88.27141,
+    "m_inside": 213,
+    "name": "Wrangler Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3960": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-436bd0487c",
+    "kind": "campground",
+    "lat": 36.47462,
+    "lon": -89.34432,
+    "m_inside": 230,
+    "name": "Airpark/North Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6d5d932357",
+    "kind": "campground",
+    "lat": 36.4778,
+    "lon": -89.34408,
+    "m_inside": 112,
+    "name": "Tent Campsite",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-74eb48c36d",
+    "kind": "campground",
+    "lat": 36.35473,
+    "lon": -89.39814,
+    "m_inside": 75,
+    "name": "Tent Camp Playground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1603192ac0",
+    "kind": "cabins / lodging",
+    "lat": 36.353,
+    "lon": -89.40645,
+    "m_inside": 68,
+    "name": "Reelfoot Lake State Park",
+    "notes": [
+     "rounded point (3 decimals): the edge answer is unreliable"
+    ],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3970": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1050498e99",
+    "kind": "campground",
+    "lat": 35.57013,
+    "lon": -86.86996,
+    "m_inside": 481,
+    "name": "Sowell Mill Pike",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c9c9f322b9",
+    "kind": "campground",
+    "lat": 35.53813,
+    "lon": -86.96705,
+    "m_inside": 204,
+    "name": "Fountain Heights",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3971": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c309db3b8e",
+    "kind": "campground",
+    "lat": 35.08145,
+    "lon": -85.43058,
+    "m_inside": 1498,
+    "name": "TN River Gorge - Davis Pond",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b17cd58504",
+    "kind": "campground",
+    "lat": 35.10256,
+    "lon": -85.43716,
+    "m_inside": 936,
+    "name": "TN River Gorge - Hemlock Branch",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0b6a6f546f",
+    "kind": "campground",
+    "lat": 35.13774,
+    "lon": -85.39288,
+    "m_inside": 931,
+    "name": "TN River Gorge - Popular Spring",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8e8de516e2",
+    "kind": "campground",
+    "lat": 35.07519,
+    "lon": -85.43605,
+    "m_inside": 921,
+    "name": "TN River Gorge - McNabb Gulf",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5447a6f84d",
+    "kind": "campground",
+    "lat": 35.16146,
+    "lon": -85.38856,
+    "m_inside": 66,
+    "name": "TN River Gorge - North Suck Creek",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-4525": [
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232216",
+    "id": "232216",
+    "kind": "campground",
+    "lat": 35.32833,
+    "lon": -84.12889,
+    "m_inside": 8459,
+    "name": "Mcnabb Creek Group",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158793",
+    "id": "10158793",
+    "kind": "campground",
+    "lat": 35.3181,
+    "lon": -84.1257,
+    "m_inside": 7307,
+    "name": "North River Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/240629",
+    "id": "240629",
+    "kind": "campground",
+    "lat": 35.30959,
+    "lon": -84.12195,
+    "m_inside": 6349,
+    "name": "Dam Creek Walk-In Campground and Picnic Area",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158862",
+    "id": "10158862",
+    "kind": "campground",
+    "lat": 35.3039,
+    "lon": -84.1131,
+    "m_inside": 5548,
+    "name": "Spivey Cove Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232215",
+    "id": "232215",
+    "kind": "campground",
+    "lat": 35.40167,
+    "lon": -84.10722,
+    "m_inside": 5321,
+    "name": "Indian Boundary",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/234139",
+    "id": "234139",
+    "kind": "campground",
+    "lat": 35.32,
+    "lon": -84.09361,
+    "m_inside": 5290,
+    "name": "Donley Cabin",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158648",
+    "id": "10158648",
+    "kind": "campground",
+    "lat": 35.2855,
+    "lon": -84.1316,
+    "m_inside": 3841,
+    "name": "Birch Branch Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158733",
+    "id": "10158733",
+    "kind": "campground",
+    "lat": 35.2857,
+    "lon": -84.1782,
+    "m_inside": 3762,
+    "name": "Holly Flats Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158748",
+    "id": "10158748",
+    "kind": "campground",
+    "lat": 35.4458,
+    "lon": -84.1094,
+    "m_inside": 3065,
+    "name": "Jake Best Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251724",
+    "id": "251724",
+    "kind": "campground",
+    "lat": 36.25722,
+    "lon": -82.11083,
+    "m_inside": 2506,
+    "name": "Dennis Cove Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158708",
+    "id": "10158708",
+    "kind": "campground",
+    "lat": 35.2789,
+    "lon": -84.0964,
+    "m_inside": 2407,
+    "name": "Davis Branch Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/267551",
+    "id": "267551",
+    "kind": "campground",
+    "lat": 36.13768,
+    "lon": -82.34758,
+    "m_inside": 1066,
+    "name": "Rock Creek Recreation Area (Cherokee National Forest, TN)",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/250024",
+    "id": "250024",
+    "ids": [
+     "250024",
+     "251723"
+    ],
+    "kind": "campground",
+    "lat": 35.15361,
+    "lon": -84.60889,
+    "m_inside": 1065,
+    "name": "Chilhowee Group Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158842",
+    "id": "10158842",
+    "kind": "campground",
+    "lat": 35.8386,
+    "lon": -82.9538,
+    "m_inside": 886,
+    "name": "Round Mountain Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/240610",
+    "id": "240610",
+    "kind": "campground",
+    "lat": 35.26359,
+    "lon": -84.08655,
+    "m_inside": 577,
+    "name": "Big Oak Cove Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10056245",
+    "id": "10056245",
+    "kind": "campground",
+    "lat": 35.97839,
+    "lon": -82.84451,
+    "m_inside": 451,
+    "name": "Paint Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251757",
+    "id": "251757",
+    "kind": "campground",
+    "lat": 36.59389,
+    "lon": -81.815,
+    "m_inside": 275,
+    "name": "Backbone Rock Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158738",
+    "id": "10158738",
+    "kind": "campground",
+    "lat": 36.1083,
+    "lon": -82.6568,
+    "m_inside": 266,
+    "name": "Horse Creek Recreation Area",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/122991",
+    "id": "122991",
+    "kind": "campground",
+    "lat": 35.96333,
+    "lon": -82.94444,
+    "m_inside": 257,
+    "name": "Houston Valley",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158798",
+    "id": "10158798",
+    "kind": "campground",
+    "lat": 36.0911,
+    "lon": -82.6819,
+    "m_inside": 131,
+    "name": "Old Forge Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251438",
+    "id": "251438",
+    "kind": "campground",
+    "lat": 35.11688,
+    "lon": -84.57501,
+    "m_inside": 85,
+    "name": "Parksville Lake Rv Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10158773",
+    "id": "10158773",
+    "kind": "campground",
+    "lat": 35.2392,
+    "lon": -84.5484,
+    "m_inside": 82,
+    "name": "Lost Corral Horse Camp",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/122390",
+    "id": "122390",
+    "kind": "campground",
+    "lat": 36.30972,
+    "lon": -82.11528,
+    "m_inside": 61,
+    "name": "Cardens Bluff Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/122240",
+    "id": "122240",
+    "kind": "campground",
+    "lat": 36.51954,
+    "lon": -82.06082,
+    "m_inside": 29,
+    "name": "Little Oak Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-5491": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8af64fcbfe",
+    "kind": "campground",
+    "lat": 35.38856,
+    "lon": -88.77365,
+    "m_inside": 728,
+    "name": "Wrangler Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ea85395bce",
+    "kind": "cabins / lodging",
+    "lat": 35.3931,
+    "lon": -88.77436,
+    "m_inside": 644,
+    "name": "The Lawn at Brewer Cabin",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-2acf3f8526",
+    "kind": "campground",
+    "lat": 35.38748,
+    "lon": -88.76934,
+    "m_inside": 344,
+    "name": "Tsp-0055 Tent Campground",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3d2264883d",
+    "kind": "cabins / lodging",
+    "lat": 35.39094,
+    "lon": -88.7695,
+    "m_inside": 338,
+    "name": "Chickasaw State Park",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ee2d429bce",
+    "kind": "campground",
+    "lat": 35.39194,
+    "lon": -88.78187,
+    "m_inside": 287,
+    "name": "Campground Rd Entrance",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-fc2cc0da2e",
+    "kind": "campground",
+    "lat": 35.34618,
+    "lon": -88.88219,
+    "m_inside": 159,
+    "name": "Lake Lajoie Group Camp Dining Hall",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-5498": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-489da3f89e",
+    "kind": "cabins / lodging",
+    "lat": 36.55202,
+    "lon": -84.79957,
+    "m_inside": 86,
+    "name": "Pickett CCC Memorial State Park",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-5499": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c309db3b8e",
+    "kind": "campground",
+    "lat": 35.08145,
+    "lon": -85.43058,
+    "m_inside": 1498,
+    "name": "TN River Gorge - Davis Pond",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b17cd58504",
+    "kind": "campground",
+    "lat": 35.10256,
+    "lon": -85.43716,
+    "m_inside": 936,
+    "name": "TN River Gorge - Hemlock Branch",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0b6a6f546f",
+    "kind": "campground",
+    "lat": 35.13774,
+    "lon": -85.39288,
+    "m_inside": 931,
+    "name": "TN River Gorge - Popular Spring",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8e8de516e2",
+    "kind": "campground",
+    "lat": 35.07519,
+    "lon": -85.43605,
+    "m_inside": 921,
+    "name": "TN River Gorge - McNabb Gulf",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5447a6f84d",
+    "kind": "campground",
+    "lat": 35.16146,
+    "lon": -85.38856,
+    "m_inside": 66,
+    "name": "TN River Gorge - North Suck Creek",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-5501": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-1e0f5a5c6f",
+    "kind": "cabins / lodging",
+    "lat": 36.47568,
+    "lon": -85.41432,
+    "m_inside": 43,
+    "name": "Standing Stone State Park",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-6252": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-a35c2f6921",
+    "kind": "campground",
+    "lat": 35.54715,
+    "lon": -85.03075,
+    "m_inside": 464,
+    "name": "Richland Creek Campsites",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ce56454d5c",
+    "kind": "campground",
+    "lat": 35.55715,
+    "lon": -85.03839,
+    "m_inside": 277,
+    "name": "Lower Henderson Creek Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f6c5f29f1c",
+    "kind": "campground",
+    "lat": 35.54738,
+    "lon": -85.03925,
+    "m_inside": 175,
+    "name": "Laurel Snow Campsites",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e0df90953b",
+    "kind": "campground",
+    "lat": 35.53392,
+    "lon": -85.03114,
+    "m_inside": 169,
+    "name": "North Pole Gulf Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6323a68d3a",
+    "kind": "campground",
+    "lat": 35.54888,
+    "lon": -85.03562,
+    "m_inside": 147,
+    "name": "Snow Falls 1 Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-93809bd2c1",
+    "kind": "campground",
+    "lat": 35.5484,
+    "lon": -85.02375,
+    "m_inside": 89,
+    "name": "Laurel Snow - Laurel Creek",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-cab816c0b3",
+    "kind": "campground",
+    "lat": 35.5731,
+    "lon": -85.0462,
+    "m_inside": 50,
+    "name": "Upper Henderson Creek Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-6260": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0b28da68c5",
+    "kind": "campground",
+    "lat": 35.73008,
+    "lon": -84.86531,
+    "m_inside": 103,
+    "name": "Piney Falls Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-7578": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-17cf854c57",
+    "kind": "campground",
+    "lat": 36.2061,
+    "lon": -87.10415,
+    "m_inside": 1722,
+    "name": "Cheatham WMA",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/256349",
+    "id": "256349",
+    "kind": "campground",
+    "lat": 36.31639,
+    "lon": -87.19622,
+    "m_inside": 62,
+    "name": "Right Bank Recreation Area",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251574",
+    "id": "251574",
+    "kind": "campground",
+    "lat": 36.28416,
+    "lon": -87.14508,
+    "m_inside": 35,
+    "name": "Harpeth River Bridge Campground (TN)",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-7580": [
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232572",
+    "id": "232572",
+    "kind": "campground",
+    "lat": 36.29972,
+    "lon": -85.90889,
+    "m_inside": 184,
+    "name": "Defeated Creek Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232693",
+    "id": "232693",
+    "kind": "campground",
+    "lat": 36.37917,
+    "lon": -85.63111,
+    "m_inside": 99,
+    "name": "Roaring River Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232734",
+    "id": "232734",
+    "kind": "campground",
+    "lat": 36.36056,
+    "lon": -85.77583,
+    "m_inside": 86,
+    "name": "Wartrace Ck Rec Area",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0c56ad897e",
+    "kind": "cabins / lodging",
+    "lat": 36.5823,
+    "lon": -85.18365,
+    "m_inside": 24,
+    "name": "Birthplace Cabin",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232697",
+    "id": "232697",
+    "kind": "campground",
+    "lat": 36.32278,
+    "lon": -85.80861,
+    "m_inside": 8,
+    "name": "Salt Lick Creek",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-7581": [
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232572",
+    "id": "232572",
+    "kind": "campground",
+    "lat": 36.29972,
+    "lon": -85.90889,
+    "m_inside": 184,
+    "name": "Defeated Creek Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232693",
+    "id": "232693",
+    "kind": "campground",
+    "lat": 36.37917,
+    "lon": -85.63111,
+    "m_inside": 99,
+    "name": "Roaring River Park",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232734",
+    "id": "232734",
+    "kind": "campground",
+    "lat": 36.36056,
+    "lon": -85.77583,
+    "m_inside": 86,
+    "name": "Wartrace Ck Rec Area",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0c56ad897e",
+    "kind": "cabins / lodging",
+    "lat": 36.5823,
+    "lon": -85.18365,
+    "m_inside": 24,
+    "name": "Birthplace Cabin",
+    "notes": [],
+    "outline": "name (designation code ignored)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232697",
+    "id": "232697",
+    "kind": "campground",
+    "lat": 36.32278,
+    "lon": -85.80861,
+    "m_inside": 8,
+    "name": "Salt Lick Creek",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-7609": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-3df892a5db",
+    "kind": "campground",
+    "lat": 36.31805,
+    "lon": -84.31571,
+    "m_inside": 3603,
+    "name": "New River - Greens Branch",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-576b382dee",
+    "kind": "campground",
+    "lat": 36.30221,
+    "lon": -84.29162,
+    "m_inside": 1784,
+    "name": "New River - Montgomery Fork",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-a4ef94bbe7",
+    "kind": "campground",
+    "lat": 36.30675,
+    "lon": -84.36875,
+    "m_inside": 1508,
+    "name": "Anderson Mtn Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ed5dae21e6",
+    "kind": "campground",
+    "lat": 36.2351,
+    "lon": -84.38922,
+    "m_inside": 1326,
+    "name": "Straight Fork Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-4f2af8bff4",
+    "kind": "campground",
+    "lat": 36.30375,
+    "lon": -84.25721,
+    "m_inside": 968,
+    "name": "Duncan Branch Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-dc4a6934fd",
+    "kind": "campground",
+    "lat": 36.27812,
+    "lon": -84.4277,
+    "m_inside": 519,
+    "name": "Bowling Branch Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b567c9bea4",
+    "kind": "campground",
+    "lat": 36.17908,
+    "lon": -84.39843,
+    "m_inside": 409,
+    "name": "Burge Mtn Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-47a9215d5f",
+    "kind": "campground",
+    "lat": 36.44975,
+    "lon": -84.04905,
+    "m_inside": 228,
+    "name": "Mount Cloud Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-df7298f639",
+    "kind": "campground",
+    "lat": 36.40947,
+    "lon": -84.09961,
+    "m_inside": 120,
+    "name": "Dry Ridge Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-32ae48bfd3",
+    "kind": "campground",
+    "lat": 36.35508,
+    "lon": -84.18377,
+    "m_inside": 67,
+    "name": "Eagle Bluff Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-6f7bb2e40e",
+    "kind": "campground",
+    "lat": 36.28761,
+    "lon": -84.42537,
+    "m_inside": 47,
+    "name": "Lawson Mtn Campsite",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-ab921d5811",
+    "kind": "campground",
+    "lat": 36.37509,
+    "lon": -84.14956,
+    "m_inside": 1,
+    "name": "Cumberland Mountain",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "name",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-7615": [
+   {
+    "agency": "USACE",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232677",
+    "id": "232677",
+    "kind": "campground",
+    "lat": 36.05083,
+    "lon": -86.51028,
+    "m_inside": 121,
+    "name": "Poole Knobs",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-9718": [
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f256e2b6b6",
+    "kind": "campground",
+    "lat": 35.44983,
+    "lon": -85.61671,
+    "m_inside": 1746,
+    "name": "Sawmill Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-8f6d2de0bb",
+    "kind": "cabins / lodging",
+    "lat": 35.47128,
+    "lon": -85.59437,
+    "m_inside": 1082,
+    "name": "Hobbs Cabin Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-5bb3642ffb",
+    "kind": "campground",
+    "lat": 35.44739,
+    "lon": -85.5935,
+    "m_inside": 777,
+    "name": "Stagecoach Road Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-b2936f2bff",
+    "kind": "campground",
+    "lat": 35.46445,
+    "lon": -85.55084,
+    "m_inside": 639,
+    "name": "Meadow Creek Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-f2a786efd1",
+    "kind": "campground",
+    "lat": 35.44514,
+    "lon": -85.65694,
+    "m_inside": 513,
+    "name": "Trail boardwalk on Stone Door Campground access trail.",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-c7b48b0e75",
+    "kind": "campground",
+    "lat": 35.43862,
+    "lon": -85.5559,
+    "m_inside": 364,
+    "name": "Savage Falls Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-bb589ddd80",
+    "kind": "campground",
+    "lat": 35.43571,
+    "lon": -85.54124,
+    "m_inside": 195,
+    "name": "Savage Station Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-0585dcdca5",
+    "kind": "campground",
+    "lat": 35.43454,
+    "lon": -85.68295,
+    "m_inside": 179,
+    "name": "Alum Gap Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "state",
+    "booking": "",
+    "id": "TN-e0474a7794",
+    "kind": "campground",
+    "lat": 35.41038,
+    "lon": -85.59574,
+    "m_inside": 59,
+    "name": "Collins West Campground",
+    "notes": [],
+    "outline": "name",
+    "sites": null,
+    "tier": "inside"
+   }
+  ]
+ },
+ "line": [],
+ "merged": [
+  {
+   "apart_m": 338,
+   "kept": "Elkmont Group Camp",
+   "merged": "Elkmont Campground"
+  },
+  {
+   "apart_m": 267,
+   "kept": "Big Creek Group Camp",
+   "merged": "Big Creek Horse Camp"
+  },
+  {
+   "apart_m": 319,
+   "kept": "Big Creek Group Camp",
+   "merged": "Big Creek Campground (Great Smoky Mountains National Park)"
+  },
+  {
+   "apart_m": 281,
+   "kept": "Cosby Group Camp",
+   "merged": "Cosby Campground"
+  },
+  {
+   "apart_m": 469,
+   "kept": "Cades Cove Group",
+   "merged": "Cades Cove Campground"
+  },
+  {
+   "apart_m": 26,
+   "kept": "Chilhowee Group Camp",
+   "merged": "Chilhowee Campground"
+  },
+  {
+   "apart_m": 790,
+   "kept": "Head of Sequatchie 3 Selby Creek Campsite",
+   "merged": "Selby Creek Campsite"
+  },
+  {
+   "apart_m": 715,
+   "kept": "Spann House Backcountry Campsite",
+   "merged": "Campsite"
+  }
+ ],
+ "nearby": {
+  "US-0019": [
+   {
+    "id": "TN-5476240b1d",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "NPS Boundry Campsite"
+   },
+   {
+    "id": "TN-1ba558142d",
+    "kind": "campground",
+    "miles": 2.3,
+    "name": "North Springs Campsite"
+   },
+   {
+    "id": "TN-785fac377d",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Hopper Gap Hollow Campsite"
+   }
+  ],
+  "US-0034": [
+   {
+    "id": "232437",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Big Creek Group Camp"
+   }
+  ],
+  "US-0534": [
+   {
+    "id": "232579",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Dyers Creek"
+   },
+   {
+    "id": "232577",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Dover"
+   }
+  ],
+  "US-0536": [
+   {
+    "id": "TN-1603192ac0",
+    "kind": "cabins / lodging",
+    "miles": 1.5,
+    "name": "Reelfoot Lake State Park"
+   },
+   {
+    "id": "TN-74eb48c36d",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Tent Camp Playground"
+   }
+  ],
+  "US-0537": [
+   {
+    "id": "TN-fefbe919ed",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Backcountry Campsite"
+   },
+   {
+    "id": "TN-80726ef776",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Campground Horseshoes"
+   }
+  ],
+  "US-0538": [
+   {
+    "id": "TN-4a4cd9ca55",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Grays Camp Ramp"
+   }
+  ],
+  "US-0539": [
+   {
+    "id": "TN-319e53486c",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Group Campsite"
+   },
+   {
+    "id": "TN-d9305b45e6",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Backcountry Campsite 2 Overlook"
+   },
+   {
+    "id": "TN-e55a870427",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Spring Creek Campground"
+   },
+   {
+    "id": "TN-973b23b22e",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Scout Camp"
+   },
+   {
+    "id": "TN-fb9ad95671",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Eagle Base Group Campground"
+   },
+   {
+    "id": "TN-03efb20560",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Optional camper check in (not required)"
+   },
+   {
+    "id": "TN-45b20e8105",
+    "kind": "cabins / lodging",
+    "miles": 1.3,
+    "name": "Paris Landing State Park"
+   },
+   {
+    "id": "TN-6f24ef8d22",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Eagle Point Trail Shelter 1"
+   }
+  ],
+  "US-0685": [
+   {
+    "id": "TN-6b294ca086",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Catoosa 1 Campsite"
+   },
+   {
+    "id": "TN-4c8a4774dc",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Peavine North Campsite"
+   }
+  ],
+  "US-0686": [
+   {
+    "id": "TN-489da3f89e",
+    "kind": "cabins / lodging",
+    "miles": 0.9,
+    "name": "Pickett CCC Memorial State Park"
+   },
+   {
+    "id": "251468",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Bear Creek Campground - KY"
+   }
+  ],
+  "US-0703": [
+   {
+    "id": "232577",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Dover"
+   },
+   {
+    "id": "232579",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Dyers Creek"
+   }
+  ],
+  "US-0716": [
+   {
+    "id": "TN-9c3e2cf0e3",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "TN River Gorge - Lockhart Arch"
+   },
+   {
+    "id": "TN-0b6a6f546f",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "TN River Gorge - Popular Spring"
+   },
+   {
+    "id": "TN-5447a6f84d",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "TN River Gorge - North Suck Creek"
+   },
+   {
+    "id": "TN-b17cd58504",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "TN River Gorge - Hemlock Branch"
+   },
+   {
+    "id": "TN-5e47a9b430",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Oaks Group Camp Shelter"
+   },
+   {
+    "id": "TN-96404284bd",
+    "kind": "cabins / lodging",
+    "miles": 4.3,
+    "name": "The Oaks Group Camp"
+   },
+   {
+    "id": "TN-c309db3b8e",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "TN River Gorge - Davis Pond"
+   },
+   {
+    "id": "TN-8e8de516e2",
+    "kind": "campground",
+    "miles": 5.0,
+    "name": "TN River Gorge - McNabb Gulf"
+   }
+  ],
+  "US-0722": [
+   {
+    "id": "TN-af3d3e5b91",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Dogwood Point Shelter"
+   },
+   {
+    "id": "TN-1bf931f168",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Tuscumbia Bend Shelter"
+   },
+   {
+    "id": "TN-62b4dceb7d",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "Group Campsite"
+   },
+   {
+    "id": "TN-e046076eff",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Pipe Rock Shelter"
+   },
+   {
+    "id": "TN-39a7cfb47b",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Grassy Point Shelter"
+   },
+   {
+    "id": "TN-5da049333d",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Campground Dumpster"
+   }
+  ],
+  "US-11879": [
+   {
+    "id": "TN-e87e30cdec",
+    "kind": "campground",
+    "miles": 2.9,
+    "name": "Head of Iris Lovelady Spring Campsite"
+   },
+   {
+    "id": "TN-05b96bf472",
+    "kind": "campground",
+    "miles": 3.0,
+    "name": "Deep Creek Campsite"
+   },
+   {
+    "id": "TN-bcf25d3367",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Bridge-Board Camp Creek Tributary #1"
+   },
+   {
+    "id": "TN-aca89ee788",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Board Camp Creek Staircase"
+   },
+   {
+    "id": "TN-783b4a8da1",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Bridge - Board Camp Creek #3"
+   },
+   {
+    "id": "TN-7bb0410e72",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Soddy Gorge - Board Camp Creek"
+   },
+   {
+    "id": "TN-10c7a0ce86",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Board Camp Creek Stile"
+   }
+  ],
+  "US-12361": [
+   {
+    "id": "TN-0a9d3821f9",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Polly's Branch"
+   },
+   {
+    "id": "TN-4dec3b6c48",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Amber's Den Campground"
+   },
+   {
+    "id": "TN-5663768b93",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Big Bottom"
+   },
+   {
+    "id": "TN-4e112aac06",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Yellow Bluff"
+   },
+   {
+    "id": "TN-c674e07dcf",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Twin Falls Campground"
+   },
+   {
+    "id": "TN-3adcfb0e67",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Mooneyham"
+   }
+  ],
+  "US-12663": [
+   {
+    "id": "10158773",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Lost Corral Horse Camp"
+   },
+   {
+    "id": "251438",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Parksville Lake Rv Campground"
+   },
+   {
+    "id": "251938",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Thunder Rock Campground"
+   }
+  ],
+  "US-12774": [
+   {
+    "id": "267551",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Rock Creek Recreation Area (Cherokee National Forest, TN)"
+   }
+  ],
+  "US-13362": [
+   {
+    "id": "TN-bcf25d3367",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Bridge-Board Camp Creek Tributary #1"
+   },
+   {
+    "id": "TN-e87e30cdec",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Head of Iris Lovelady Spring Campsite"
+   },
+   {
+    "id": "TN-aca89ee788",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Board Camp Creek Staircase"
+   },
+   {
+    "id": "TN-f2c15000f7",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Rock Creek 2 Campsite"
+   },
+   {
+    "id": "TN-7bb0410e72",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Soddy Gorge - Board Camp Creek"
+   },
+   {
+    "id": "TN-05b96bf472",
+    "kind": "campground",
+    "miles": 3.0,
+    "name": "Deep Creek Campsite"
+   },
+   {
+    "id": "TN-121ab4c19e",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Possum Creek - Little Possum South"
+   },
+   {
+    "id": "TN-eae6056746",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Rock Creek RMA-Rock Creek"
+   },
+   {
+    "id": "TN-2ca704a351",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "McGill Creek Campsite"
+   },
+   {
+    "id": "TN-783b4a8da1",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Bridge - Board Camp Creek #3"
+   },
+   {
+    "id": "TN-10c7a0ce86",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Board Camp Creek Stile"
+   },
+   {
+    "id": "TN-3da6524fff",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Hughes Ridge Campsite"
+   }
+  ],
+  "US-13563": [
+   {
+    "id": "TN-bf0a572bf3",
+    "kind": "campground",
+    "miles": 2.1,
+    "name": "Group Site"
+   }
+  ],
+  "US-2933": [
+   {
+    "id": "TN-209ee7bc02",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Campground A"
+   },
+   {
+    "id": "TN-83304d72ba",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Campground B"
+   }
+  ],
+  "US-2935": [
+   {
+    "id": "TN-fe2014b9eb",
+    "kind": "cabins / lodging",
+    "miles": 0.1,
+    "name": "Harris Cabin at Sadie Ford"
+   }
+  ],
+  "US-2937": [
+   {
+    "id": "232654",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Obey River Park"
+   }
+  ],
+  "US-2938": [
+   {
+    "id": "TN-89c4d271cd",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Bruce Creek Tributary Campsite"
+   },
+   {
+    "id": "TN-4f2af8bff4",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Duncan Branch Campsite"
+   },
+   {
+    "id": "TN-32ae48bfd3",
+    "kind": "campground",
+    "miles": 2.3,
+    "name": "Eagle Bluff Campsite"
+   },
+   {
+    "id": "TN-576b382dee",
+    "kind": "campground",
+    "miles": 3.4,
+    "name": "New River - Montgomery Fork"
+   },
+   {
+    "id": "TN-ab921d5811",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Cumberland Mountain"
+   },
+   {
+    "id": "TN-3df892a5db",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "New River - Greens Branch"
+   }
+  ],
+  "US-2939": [
+   {
+    "id": "TN-0b28da68c5",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Piney Falls Campsite"
+   },
+   {
+    "id": "TN-517b0d619e",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Lower Soak Creek Campsite"
+   },
+   {
+    "id": "TN-455abc11fd",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Piney River 1 Campsite"
+   },
+   {
+    "id": "TN-6ed5fdb42d",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Piney River - Rockhouse Branch"
+   },
+   {
+    "id": "TN-775756d4d3",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Spider Den Campsite"
+   },
+   {
+    "id": "TN-c3188baa98",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Little Soak Creek Campsite"
+   },
+   {
+    "id": "TN-80cca3618f",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Duskin Branch 1 Campsite"
+   },
+   {
+    "id": "TN-dcf4c37d12",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Brady Mtn Campsite"
+   },
+   {
+    "id": "TN-513a646823",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Piney River - Newby Branch"
+   },
+   {
+    "id": "TN-7e1caa99d8",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Duskin Creek Campsite"
+   },
+   {
+    "id": "TN-2d0bc65ebf",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Mocassin Branch Campsite"
+   }
+  ],
+  "US-2944": [
+   {
+    "id": "10128465",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Center Hill Lake Primitive Camping Areas"
+   },
+   {
+    "id": "232630",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Long Branch (Center Hill Lake)"
+   },
+   {
+    "id": "232589",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Floating Mill Park"
+   },
+   {
+    "id": "234087",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Hurricane Bridge"
+   }
+  ],
+  "US-2945": [
+   {
+    "id": "TN-0a9d3821f9",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Polly's Branch"
+   },
+   {
+    "id": "TN-687b68f917",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Group Camp 1 - Boathouse"
+   },
+   {
+    "id": "TN-4dec3b6c48",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Amber's Den Campground"
+   },
+   {
+    "id": "TN-caa80af76f",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Group Camp 1 Volleyball"
+   },
+   {
+    "id": "TN-258e0cd2bd",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Area W Campground"
+   },
+   {
+    "id": "TN-1d6da5bca9",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Campground A Playground"
+   },
+   {
+    "id": "TN-70c87e5472",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Campground B"
+   },
+   {
+    "id": "TN-4e112aac06",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Yellow Bluff"
+   },
+   {
+    "id": "TN-fd734fc25a",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Campground Area C"
+   },
+   {
+    "id": "TN-6bb1ba656a",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Old Corner Campground"
+   },
+   {
+    "id": "TN-1ddf8cee1b",
+    "kind": "cabins / lodging",
+    "miles": 1.6,
+    "name": "Fall Creek Falls State Park"
+   },
+   {
+    "id": "TN-c674e07dcf",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Twin Falls Campground"
+   },
+   {
+    "id": "TN-5663768b93",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Big Bottom"
+   },
+   {
+    "id": "TN-a109224afe",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Group Camp 2 Volleyball"
+   },
+   {
+    "id": "TN-a7f26408fb",
+    "kind": "campground",
+    "miles": 2.9,
+    "name": "Backcountry Area 1"
+   },
+   {
+    "id": "TN-838f89a74d",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Piney Backcountry (Area 2)"
+   },
+   {
+    "id": "TN-3adcfb0e67",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Mooneyham"
+   }
+  ],
+  "US-2948": [
+   {
+    "id": "TN-7ccdbe78da",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Grapevine Gap Campsite"
+   },
+   {
+    "id": "TN-b567c9bea4",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Burge Mtn Campsite"
+   },
+   {
+    "id": "TN-ed5dae21e6",
+    "kind": "campground",
+    "miles": 5.0,
+    "name": "Straight Fork Campsite"
+   }
+  ],
+  "US-2949": [
+   {
+    "id": "TN-17cf854c57",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Cheatham WMA"
+   }
+  ],
+  "US-2951": [
+   {
+    "id": "TN-96404284bd",
+    "kind": "cabins / lodging",
+    "miles": 3.5,
+    "name": "The Oaks Group Camp"
+   },
+   {
+    "id": "TN-5e47a9b430",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Oaks Group Camp Shelter"
+   }
+  ],
+  "US-2952": [
+   {
+    "id": "10158773",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Lost Corral Horse Camp"
+   },
+   {
+    "id": "251438",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Parksville Lake Rv Campground"
+   },
+   {
+    "id": "251938",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Thunder Rock Campground"
+   },
+   {
+    "id": "250024",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Chilhowee Group Camp"
+   }
+  ],
+  "US-2953": [
+   {
+    "id": "TN-ad9887e1df",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Rabbit Road Primitive Campground"
+   }
+  ],
+  "US-2954": [
+   {
+    "id": "TN-eb0496307f",
+    "kind": "cabins / lodging",
+    "miles": 1.4,
+    "name": "Nathan Bedford Forrest State Park"
+   },
+   {
+    "id": "TN-f551e1defc",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Lake Front Campground"
+   },
+   {
+    "id": "TN-f9b06f6b18",
+    "kind": "cabins / lodging",
+    "miles": 1.7,
+    "name": "Log Cabin"
+   },
+   {
+    "id": "TN-3948c743d2",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Happy Hollow Campground"
+   },
+   {
+    "id": "TN-29f372b592",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Campground Road Loop Backcountry Shelter 1"
+   },
+   {
+    "id": "TN-e607868b5d",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Campground Road Loop Shelter 2"
+   }
+  ],
+  "US-2955": [
+   {
+    "id": "TN-480c2878b5",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Daddy's Creek-Daddy's Creek"
+   },
+   {
+    "id": "TN-ac1324b4f2",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Norton Hollow Campsite"
+   },
+   {
+    "id": "TN-8b7b88bd1e",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Dunn Springs Campsite"
+   },
+   {
+    "id": "TN-bbac106011",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Fall Branch Campsite"
+   },
+   {
+    "id": "TN-e0df90953b",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "North Pole Gulf Campsite"
+   },
+   {
+    "id": "TN-cab816c0b3",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Upper Henderson Creek Campsite"
+   },
+   {
+    "id": "TN-05943a327f",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Head of Sequatchie 3 Selby Creek Campsite"
+   },
+   {
+    "id": "TN-f6c5f29f1c",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Laurel Snow Campsites"
+   },
+   {
+    "id": "TN-5476240b1d",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "NPS Boundry Campsite"
+   },
+   {
+    "id": "TN-d6f68baffa",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Head of Sequatchie 1 Campsite"
+   },
+   {
+    "id": "TN-6323a68d3a",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Snow Falls 1 Campsite"
+   },
+   {
+    "id": "TN-a35c2f6921",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Richland Creek Campsites"
+   },
+   {
+    "id": "TN-0b28da68c5",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Piney Falls Campsite"
+   },
+   {
+    "id": "253502",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Rock Creek Campground (TN)"
+   },
+   {
+    "id": "TN-93809bd2c1",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Laurel Snow - Laurel Creek"
+   },
+   {
+    "id": "TN-ce56454d5c",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Lower Henderson Creek Campsite"
+   },
+   {
+    "id": "TN-7ccdbe78da",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Grapevine Gap Campsite"
+   },
+   {
+    "id": "TN-07b7b82c81",
+    "kind": "campground",
+    "miles": 2.1,
+    "name": "Grapevine Hollow Campsite"
+   },
+   {
+    "id": "TN-8b551e00f9",
+    "kind": "campground",
+    "miles": 3.4,
+    "name": "Baptist Gap Campsite"
+   },
+   {
+    "id": "TN-df7298f639",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Dry Ridge Campsite"
+   },
+   {
+    "id": "TN-5447a6f84d",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "TN River Gorge - North Suck Creek"
+   },
+   {
+    "id": "TN-4c8a4774dc",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Peavine North Campsite"
+   },
+   {
+    "id": "TN-f53ba2eece",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Ross Gap Campsite"
+   },
+   {
+    "id": "TN-00aa51bd24",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Tent Camp Wash House 1"
+   },
+   {
+    "id": "TN-6b294ca086",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Catoosa 1 Campsite"
+   },
+   {
+    "id": "TN-ab005f6b5f",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Tent Camp Wash House 4"
+   },
+   {
+    "id": "TN-84614bdb30",
+    "kind": "cabins / lodging",
+    "miles": 4.5,
+    "name": "Cumberland Mountain State Park"
+   }
+  ],
+  "US-2956": [
+   {
+    "id": "232677",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Poole Knobs"
+   },
+   {
+    "id": "232702",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Seven Points (TN)"
+   },
+   {
+    "id": "233106",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Smith Springs"
+   },
+   {
+    "id": "232515",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Anderson Road Campground"
+   },
+   {
+    "id": "233107",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Jefferson Springs"
+   }
+  ],
+  "US-2965": [
+   {
+    "id": "TN-fb9ad95671",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Eagle Base Group Campground"
+   }
+  ],
+  "US-2971": [
+   {
+    "id": "TN-4a4cd9ca55",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Grays Camp Ramp"
+   }
+  ],
+  "US-2972": [
+   {
+    "id": "TN-eb827f8797",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Rosebay Ridge Campground 3"
+   },
+   {
+    "id": "251724",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Dennis Cove Campground"
+   }
+  ],
+  "US-2978": [
+   {
+    "id": "232675",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Pleasant Grove Recreation Area"
+   },
+   {
+    "id": "232564",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Dale Hollow Damsite"
+   }
+  ],
+  "US-2980": [
+   {
+    "id": "TN-f7ae7bd8c5",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Big Island Campsite"
+   },
+   {
+    "id": "TN-06b47d0c4d",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Boiling Fork Campground"
+   },
+   {
+    "id": "TN-cef84a6561",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Evans Loop Campsite"
+   },
+   {
+    "id": "TN-bafa827bfe",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Goose Island Campground No. 1"
+   },
+   {
+    "id": "TN-550f88ba20",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Goose Island Campground No. 2"
+   },
+   {
+    "id": "TN-9108576a60",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Little Island Campsite"
+   },
+   {
+    "id": "TN-76497d2f64",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Maple Bend Island Campground No. 1"
+   },
+   {
+    "id": "TN-b3581a06b3",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Maple Bend Island Campground No. 2"
+   },
+   {
+    "id": "TN-7ac4ed1c29",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Leatherwood 1"
+   }
+  ],
+  "US-3792": [
+   {
+    "id": "232537",
+    "kind": "campground",
+    "miles": 1.4,
+    "name": "Bumpus Mills"
+   },
+   {
+    "id": "TN-45b20e8105",
+    "kind": "cabins / lodging",
+    "miles": 2.2,
+    "name": "Paris Landing State Park"
+   },
+   {
+    "id": "232577",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Dover"
+   },
+   {
+    "id": "232579",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Dyers Creek"
+   },
+   {
+    "id": "TN-fb9ad95671",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Eagle Base Group Campground"
+   }
+  ],
+  "US-3923": [
+   {
+    "id": "TN-0a77569c79",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "Rock Structure Camp 34"
+   }
+  ],
+  "US-3924": [
+   {
+    "id": "TN-fe2014b9eb",
+    "kind": "cabins / lodging",
+    "miles": 0.1,
+    "name": "Harris Cabin at Sadie Ford"
+   }
+  ],
+  "US-3925": [
+   {
+    "id": "TN-fe2014b9eb",
+    "kind": "cabins / lodging",
+    "miles": 3.2,
+    "name": "Harris Cabin at Sadie Ford"
+   },
+   {
+    "id": "TN-e342010878",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Tent Camp Wash House 2"
+   },
+   {
+    "id": "TN-860bcedbe2",
+    "kind": "cabins / lodging",
+    "miles": 4.3,
+    "name": "Cedars of Lebanon State Forest"
+   }
+  ],
+  "US-3926": [
+   {
+    "id": "TN-6921820ae6",
+    "kind": "campground",
+    "miles": 5.0,
+    "name": "Group Campsite"
+   }
+  ],
+  "US-3928": [
+   {
+    "id": "TN-cc7baf0685",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Big Laurel Falls Campground"
+   },
+   {
+    "id": "TN-e182d61c00",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Cable Crossing Campground"
+   },
+   {
+    "id": "TN-3715884bb7",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Caney Fork River Trail Campground"
+   },
+   {
+    "id": "TN-d20d0cc2e5",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Martha's Pretty Point Campground"
+   },
+   {
+    "id": "TN-0b6c38d418",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Virgin Falls Campsite"
+   },
+   {
+    "id": "TN-5663768b93",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Big Bottom"
+   },
+   {
+    "id": "TN-a7f26408fb",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Backcountry Area 1"
+   }
+  ],
+  "US-3930": [
+   {
+    "id": "TN-eb0496307f",
+    "kind": "cabins / lodging",
+    "miles": 4.0,
+    "name": "Nathan Bedford Forrest State Park"
+   },
+   {
+    "id": "TN-f9b06f6b18",
+    "kind": "cabins / lodging",
+    "miles": 4.4,
+    "name": "Log Cabin"
+   },
+   {
+    "id": "TN-3948c743d2",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Happy Hollow Campground"
+   },
+   {
+    "id": "TN-f551e1defc",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Lake Front Campground"
+   }
+  ],
+  "US-3931": [
+   {
+    "id": "253502",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Rock Creek Campground (TN)"
+   },
+   {
+    "id": "TN-480c2878b5",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Daddy's Creek-Daddy's Creek"
+   },
+   {
+    "id": "TN-7ccdbe78da",
+    "kind": "campground",
+    "miles": 3.4,
+    "name": "Grapevine Gap Campsite"
+   }
+  ],
+  "US-3933": [
+   {
+    "id": "232627",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Lock A"
+   }
+  ],
+  "US-3935": [
+   {
+    "id": "TN-254588a42e",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Sharps Station Campsite"
+   },
+   {
+    "id": "TN-dbf66fba93",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Dark Hollow East Campsite"
+   },
+   {
+    "id": "TN-ece1313af6",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Dark Hollow West Campsite"
+   },
+   {
+    "id": "TN-8e786a0f6f",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Group Camp Dining Hall"
+   },
+   {
+    "id": "TN-9b000437fa",
+    "kind": "cabins / lodging",
+    "miles": 2.9,
+    "name": "Rig Ridge TVA Small Wild Area"
+   }
+  ],
+  "US-3937": [
+   {
+    "id": "TN-bd17c10805",
+    "kind": "cabins / lodging",
+    "miles": 1.1,
+    "name": "Meeman-Shelby Forest State Park"
+   },
+   {
+    "id": "TN-c5bc9911f3",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Dogwood Ridge Campground"
+   },
+   {
+    "id": "TN-2139518f63",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Main Campground - Primitive Sites"
+   },
+   {
+    "id": "TN-e6c75509d1",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Group Camp Assembly Building"
+   },
+   {
+    "id": "TN-185c4a1d59",
+    "kind": "cabins / lodging",
+    "miles": 3.3,
+    "name": "Mississippi River Group Camp - Women's Cabins 1-8"
+   },
+   {
+    "id": "TN-6853f313c0",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Mississippi River Group Camp Dining Hall"
+   }
+  ],
+  "US-3948": [
+   {
+    "id": "TN-80726ef776",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Campground Horseshoes"
+   },
+   {
+    "id": "TN-fefbe919ed",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Backcountry Campsite"
+   }
+  ],
+  "US-3953": [
+   {
+    "id": "TN-6921820ae6",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Group Campsite"
+   }
+  ],
+  "US-3954": [
+   {
+    "id": "TN-550f88ba20",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Goose Island Campground No. 2"
+   },
+   {
+    "id": "TN-bafa827bfe",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Goose Island Campground No. 1"
+   },
+   {
+    "id": "TN-428f73a604",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Devils Step Island Campground No. 1"
+   },
+   {
+    "id": "TN-157cb89368",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Fairview Campground"
+   },
+   {
+    "id": "TN-76497d2f64",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Maple Bend Island Campground No. 1"
+   },
+   {
+    "id": "TN-7ac4ed1c29",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Leatherwood 1"
+   },
+   {
+    "id": "TN-06b47d0c4d",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Boiling Fork Campground"
+   },
+   {
+    "id": "TN-b3581a06b3",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Maple Bend Island Campground No. 2"
+   },
+   {
+    "id": "TN-ad609ec025",
+    "kind": "cabins / lodging",
+    "miles": 3.6,
+    "name": "Tsp-0279 Cabins"
+   },
+   {
+    "id": "TN-c09682783f",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Spann House Backcountry Campsite"
+   },
+   {
+    "id": "TN-828e4e697f",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Campground Fishing Pier 1"
+   },
+   {
+    "id": "TN-f7ae7bd8c5",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Big Island Campsite"
+   },
+   {
+    "id": "TN-9108576a60",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Little Island Campsite"
+   },
+   {
+    "id": "TN-a213748b0d",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Lost Creek Backcountry Campground"
+   }
+  ],
+  "US-3958": [
+   {
+    "id": "TN-5e47a9b430",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Oaks Group Camp Shelter"
+   },
+   {
+    "id": "TN-96404284bd",
+    "kind": "cabins / lodging",
+    "miles": 2.8,
+    "name": "The Oaks Group Camp"
+   },
+   {
+    "id": "TN-e87e30cdec",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Head of Iris Lovelady Spring Campsite"
+   },
+   {
+    "id": "TN-4a035df37b",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "North Chick - Stevenson Branch"
+   },
+   {
+    "id": "TN-0dde019cc2",
+    "kind": "campground",
+    "miles": 3.4,
+    "name": "North Chickamauga Campsite"
+   },
+   {
+    "id": "TN-3b361b96bb",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Cable Crossing Campsite"
+   },
+   {
+    "id": "TN-05b96bf472",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Deep Creek Campsite"
+   },
+   {
+    "id": "TN-209ee7bc02",
+    "kind": "campground",
+    "miles": 4.9,
+    "name": "Campground A"
+   }
+  ],
+  "US-3959": [
+   {
+    "id": "TN-6921820ae6",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Group Campsite"
+   }
+  ],
+  "US-3960": [
+   {
+    "id": "TN-4a4cd9ca55",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Grays Camp Ramp"
+   }
+  ],
+  "US-3962": [
+   {
+    "id": "232693",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Roaring River Park"
+   }
+  ],
+  "US-3971": [
+   {
+    "id": "TN-9c3e2cf0e3",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "TN River Gorge - Lockhart Arch"
+   }
+  ],
+  "US-4525": [
+   {
+    "id": "10128487",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Jacobs Creek Campground (TN)"
+   },
+   {
+    "id": "122990",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Katy Branch"
+   },
+   {
+    "id": "251938",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Thunder Rock Campground"
+   },
+   {
+    "id": "121940",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Watauga Point Recreation Area"
+   },
+   {
+    "id": "TN-927b43ff39",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Campground Dumpster"
+   },
+   {
+    "id": "TN-937c826ccb",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Blockstand Backcountry Campsite Trail Sign"
+   },
+   {
+    "id": "TN-ae66f666c2",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Campground Wash House 4"
+   },
+   {
+    "id": "TN-5e435777b6",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Flint Creek Backcountry Campsite Trail Sign"
+   },
+   {
+    "id": "TN-2b0131b0bd",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Headwaters Backcountry Campsite Trail Sign"
+   },
+   {
+    "id": "TN-3d1658a3c5",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Hatchery Flats Adaptive Backcountry Campsite"
+   },
+   {
+    "id": "TN-6388cc0a25",
+    "kind": "cabins / lodging",
+    "miles": 0.6,
+    "name": "Cabins Playground"
+   },
+   {
+    "id": "TN-6e645e4495",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Campground Horseshoes"
+   },
+   {
+    "id": "TN-9e91c1403b",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Birchfield Camp Trail Sign"
+   },
+   {
+    "id": "232437",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Big Creek Group Camp"
+   },
+   {
+    "id": "TN-619a828ced",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Rosebay Ridge Campground 1"
+   },
+   {
+    "id": "TN-eb827f8797",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Rosebay Ridge Campground 3"
+   },
+   {
+    "id": "232438",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "Cosby Group Camp"
+   },
+   {
+    "id": "TN-dfb04af8bc",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Longhunter Camp"
+   }
+  ],
+  "US-5490": [
+   {
+    "id": "TN-99f28b2dcf",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Eli Field Group Campsite"
+   },
+   {
+    "id": "TN-a7f26408fb",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Backcountry Area 1"
+   },
+   {
+    "id": "TN-3adcfb0e67",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Mooneyham"
+   },
+   {
+    "id": "TN-70c87e5472",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Campground B"
+   },
+   {
+    "id": "TN-fd734fc25a",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Campground Area C"
+   },
+   {
+    "id": "TN-1d6da5bca9",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Campground A Playground"
+   },
+   {
+    "id": "TN-687b68f917",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Group Camp 1 - Boathouse"
+   },
+   {
+    "id": "TN-258e0cd2bd",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Area W Campground"
+   },
+   {
+    "id": "TN-caa80af76f",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Group Camp 1 Volleyball"
+   },
+   {
+    "id": "TN-d918769305",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Backcountry Area 3"
+   }
+  ],
+  "US-5492": [
+   {
+    "id": "TN-254588a42e",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Sharps Station Campsite"
+   },
+   {
+    "id": "TN-dbf66fba93",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Dark Hollow East Campsite"
+   },
+   {
+    "id": "TN-ece1313af6",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Dark Hollow West Campsite"
+   },
+   {
+    "id": "TN-8e786a0f6f",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Group Camp Dining Hall"
+   },
+   {
+    "id": "TN-9b000437fa",
+    "kind": "cabins / lodging",
+    "miles": 2.9,
+    "name": "Rig Ridge TVA Small Wild Area"
+   },
+   {
+    "id": "TN-dc5382cd52",
+    "kind": "cabins / lodging",
+    "miles": 4.9,
+    "name": "Historic Cottage"
+   }
+  ],
+  "US-5493": [
+   {
+    "id": "TN-bf0a572bf3",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Group Site"
+   }
+  ],
+  "US-5494": [
+   {
+    "id": "TN-80726ef776",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Campground Horseshoes"
+   },
+   {
+    "id": "TN-fefbe919ed",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Backcountry Campsite"
+   }
+  ],
+  "US-5496": [
+   {
+    "id": "253502",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Rock Creek Campground (TN)"
+   },
+   {
+    "id": "TN-7ccdbe78da",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Grapevine Gap Campsite"
+   },
+   {
+    "id": "TN-254ee0e25f",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Spicewood Campground"
+   },
+   {
+    "id": "TN-231a8e5598",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Judge Branch Campground"
+   },
+   {
+    "id": "TN-280762b8fc",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Mart Fields Campground"
+   },
+   {
+    "id": "TN-f53ba2eece",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Ross Gap Campsite"
+   },
+   {
+    "id": "TN-d699da40cc",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Big Cove Campground"
+   }
+  ],
+  "US-5499": [
+   {
+    "id": "TN-9c3e2cf0e3",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "TN River Gorge - Lockhart Arch"
+   }
+  ],
+  "US-5500": [
+   {
+    "id": "232506",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Bandy Creek"
+   },
+   {
+    "id": "10004358",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Station Camp Campground"
+   }
+  ],
+  "US-5501": [
+   {
+    "id": "232675",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Pleasant Grove Recreation Area"
+   },
+   {
+    "id": "232564",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Dale Hollow Damsite"
+   }
+  ],
+  "US-6240": [
+   {
+    "id": "TN-30a9a525cc",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Backcountry Campground"
+   },
+   {
+    "id": "232702",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Seven Points (TN)"
+   },
+   {
+    "id": "233106",
+    "kind": "campground",
+    "miles": 3.0,
+    "name": "Smith Springs"
+   },
+   {
+    "id": "232677",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Poole Knobs"
+   },
+   {
+    "id": "232515",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Anderson Road Campground"
+   }
+  ],
+  "US-6243": [
+   {
+    "id": "TN-0dde019cc2",
+    "kind": "campground",
+    "miles": 5.0,
+    "name": "North Chickamauga Campsite"
+   }
+  ],
+  "US-6246": [
+   {
+    "id": "TN-eb827f8797",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Rosebay Ridge Campground 3"
+   },
+   {
+    "id": "TN-619a828ced",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Rosebay Ridge Campground 1"
+   },
+   {
+    "id": "TN-6388cc0a25",
+    "kind": "cabins / lodging",
+    "miles": 2.2,
+    "name": "Cabins Playground"
+   },
+   {
+    "id": "TN-6e645e4495",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Campground Horseshoes"
+   },
+   {
+    "id": "TN-ae66f666c2",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Campground Wash House 4"
+   }
+  ],
+  "US-6250": [
+   {
+    "id": "TN-860bcedbe2",
+    "kind": "cabins / lodging",
+    "miles": 4.4,
+    "name": "Cedars of Lebanon State Forest"
+   },
+   {
+    "id": "TN-e342010878",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Tent Camp Wash House 2"
+   },
+   {
+    "id": "TN-fe2014b9eb",
+    "kind": "cabins / lodging",
+    "miles": 4.5,
+    "name": "Harris Cabin at Sadie Ford"
+   }
+  ],
+  "US-6252": [
+   {
+    "id": "TN-2c0509ff5e",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Morgan Creek Campsite"
+   }
+  ],
+  "US-6256": [
+   {
+    "id": "233106",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Smith Springs"
+   },
+   {
+    "id": "232515",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Anderson Road Campground"
+   },
+   {
+    "id": "TN-30a9a525cc",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Backcountry Campground"
+   },
+   {
+    "id": "232702",
+    "kind": "campground",
+    "miles": 4.9,
+    "name": "Seven Points (TN)"
+   }
+  ],
+  "US-6260": [
+   {
+    "id": "TN-517b0d619e",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Lower Soak Creek Campsite"
+   },
+   {
+    "id": "TN-455abc11fd",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Piney River 1 Campsite"
+   },
+   {
+    "id": "TN-6ed5fdb42d",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Piney River - Rockhouse Branch"
+   },
+   {
+    "id": "TN-775756d4d3",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Spider Den Campsite"
+   },
+   {
+    "id": "TN-c3188baa98",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Little Soak Creek Campsite"
+   },
+   {
+    "id": "TN-80cca3618f",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Duskin Branch 1 Campsite"
+   },
+   {
+    "id": "TN-513a646823",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Piney River - Newby Branch"
+   },
+   {
+    "id": "TN-7e1caa99d8",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Duskin Creek Campsite"
+   },
+   {
+    "id": "TN-2d0bc65ebf",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Mocassin Branch Campsite"
+   }
+  ],
+  "US-6264": [
+   {
+    "id": "232436",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Elkmont Group Camp"
+   },
+   {
+    "id": "233299",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Appalachian Clubhouse"
+   }
+  ],
+  "US-6266": [
+   {
+    "id": "TN-bb589ddd80",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Savage Station Campground"
+   },
+   {
+    "id": "TN-c7b48b0e75",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Savage Falls Campground"
+   },
+   {
+    "id": "TN-b2936f2bff",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Meadow Creek Campground"
+   },
+   {
+    "id": "TN-5bb3642ffb",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Stagecoach Road Campground"
+   },
+   {
+    "id": "TN-e0474a7794",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Collins West Campground"
+   },
+   {
+    "id": "TN-8f6d2de0bb",
+    "kind": "cabins / lodging",
+    "miles": 3.9,
+    "name": "Hobbs Cabin Campground"
+   },
+   {
+    "id": "TN-f256e2b6b6",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Sawmill Campground"
+   }
+  ],
+  "US-6270": [
+   {
+    "id": "TN-c3188baa98",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Little Soak Creek Campsite"
+   },
+   {
+    "id": "TN-455abc11fd",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Piney River 1 Campsite"
+   },
+   {
+    "id": "TN-517b0d619e",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Lower Soak Creek Campsite"
+   },
+   {
+    "id": "TN-513a646823",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Piney River - Newby Branch"
+   },
+   {
+    "id": "TN-6ed5fdb42d",
+    "kind": "campground",
+    "miles": 1.4,
+    "name": "Piney River - Rockhouse Branch"
+   },
+   {
+    "id": "TN-775756d4d3",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Spider Den Campsite"
+   },
+   {
+    "id": "TN-80cca3618f",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Duskin Branch 1 Campsite"
+   },
+   {
+    "id": "TN-7e1caa99d8",
+    "kind": "campground",
+    "miles": 1.9,
+    "name": "Duskin Creek Campsite"
+   },
+   {
+    "id": "TN-5d44c47f90",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Soak Creek Campsite Campsite"
+   },
+   {
+    "id": "TN-0b28da68c5",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Piney Falls Campsite"
+   },
+   {
+    "id": "TN-2d0bc65ebf",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Mocassin Branch Campsite"
+   }
+  ],
+  "US-6278": [
+   {
+    "id": "TN-dfb04af8bc",
+    "kind": "campground",
+    "miles": 2.3,
+    "name": "Longhunter Camp"
+   }
+  ],
+  "US-7568": [
+   {
+    "id": "232577",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Dover"
+   },
+   {
+    "id": "232579",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Dyers Creek"
+   },
+   {
+    "id": "232537",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Bumpus Mills"
+   }
+  ],
+  "US-7573": [
+   {
+    "id": "TN-436bd0487c",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Airpark/North Campground"
+   },
+   {
+    "id": "TN-6d5d932357",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Tent Campsite"
+   },
+   {
+    "id": "TN-4a4cd9ca55",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Grays Camp Ramp"
+   }
+  ],
+  "US-7578": [
+   {
+    "id": "232627",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Lock A"
+   }
+  ],
+  "US-7580": [
+   {
+    "id": "232716",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Tailwater Rec Area"
+   },
+   {
+    "id": "232654",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Obey River Park"
+   }
+  ],
+  "US-7581": [
+   {
+    "id": "232716",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Tailwater Rec Area"
+   },
+   {
+    "id": "232654",
+    "kind": "campground",
+    "miles": 3.2,
+    "name": "Obey River Park"
+   }
+  ],
+  "US-7582": [
+   {
+    "id": "TN-dc5382cd52",
+    "kind": "cabins / lodging",
+    "miles": 0.4,
+    "name": "Historic Cottage"
+   },
+   {
+    "id": "TN-b77d91e447",
+    "kind": "cabins / lodging",
+    "miles": 0.4,
+    "name": "Norris Dam State Park"
+   },
+   {
+    "id": "TN-f27d27d4aa",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Tsp-0183 East Campground"
+   },
+   {
+    "id": "TN-8ec58850fb",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "The Canteen"
+   }
+  ],
+  "US-7588": [
+   {
+    "id": "10207636",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Look Rock Campground"
+   },
+   {
+    "id": "273847",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Abram's Creek Campground"
+   }
+  ],
+  "US-7593": [
+   {
+    "id": "TN-29f372b592",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Campground Road Loop Backcountry Shelter 1"
+   },
+   {
+    "id": "TN-e607868b5d",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Campground Road Loop Shelter 2"
+   },
+   {
+    "id": "TN-f551e1defc",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "Lake Front Campground"
+   },
+   {
+    "id": "TN-f9b06f6b18",
+    "kind": "cabins / lodging",
+    "miles": 3.7,
+    "name": "Log Cabin"
+   },
+   {
+    "id": "TN-3948c743d2",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Happy Hollow Campground"
+   },
+   {
+    "id": "TN-eb0496307f",
+    "kind": "cabins / lodging",
+    "miles": 4.1,
+    "name": "Nathan Bedford Forrest State Park"
+   }
+  ],
+  "US-7594": [
+   {
+    "id": "TN-e906009ac4",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Moccasin Creek Campsite"
+   }
+  ],
+  "US-7597": [
+   {
+    "id": "259044",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Meriwether Lewis Campground, Milepost 385.9"
+   }
+  ],
+  "US-7599": [
+   {
+    "id": "TN-480c2878b5",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Daddy's Creek-Daddy's Creek"
+   },
+   {
+    "id": "TN-4c8a4774dc",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Peavine North Campsite"
+   }
+  ],
+  "US-7605": [
+   {
+    "id": "TN-bbac106011",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Fall Branch Campsite"
+   }
+  ],
+  "US-7609": [
+   {
+    "id": "TN-0410df5114",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Coffin Springs Campsite-Frozen Head"
+   },
+   {
+    "id": "TN-00d29b2bdc",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Squire Knob Campground"
+   },
+   {
+    "id": "TN-89c4d271cd",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Bruce Creek Tributary Campsite"
+   },
+   {
+    "id": "TN-e9017aab6b",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Campground Playground"
+   },
+   {
+    "id": "TN-cf57ba2090",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Tub Springs Campground"
+   },
+   {
+    "id": "TN-942444cd23",
+    "kind": "campground",
+    "miles": 1.4,
+    "name": "Panther Branch Campground"
+   },
+   {
+    "id": "TN-8952a73320",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "North Old Mac Campground"
+   },
+   {
+    "id": "TN-6a3840ea9a",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Woodson Gap Campsite"
+   },
+   {
+    "id": "TN-7fe79963e5",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Bird Mountain Campsite"
+   },
+   {
+    "id": "TN-231a8e5598",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Judge Branch Campground"
+   },
+   {
+    "id": "TN-92250ca496",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Flat Fork Primitive Group Camp"
+   },
+   {
+    "id": "TN-280762b8fc",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Mart Fields Campground"
+   },
+   {
+    "id": "TN-254ee0e25f",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Spicewood Campground"
+   },
+   {
+    "id": "TN-d699da40cc",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Big Cove Campground"
+   },
+   {
+    "id": "TN-f53ba2eece",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Ross Gap Campsite"
+   }
+  ],
+  "US-7610": [
+   {
+    "id": "TN-6743355d4b",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Hammock Campground"
+   },
+   {
+    "id": "232616",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Laguardo"
+   },
+   {
+    "id": "232650",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Nat Caldwell Park"
+   },
+   {
+    "id": "232539",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Cages Bend"
+   },
+   {
+    "id": "232629",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Lone Branch"
+   }
+  ],
+  "US-7611": [
+   {
+    "id": "TN-428f73a604",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Devils Step Island Campground No. 1"
+   },
+   {
+    "id": "TN-550f88ba20",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Goose Island Campground No. 2"
+   },
+   {
+    "id": "TN-157cb89368",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Fairview Campground"
+   },
+   {
+    "id": "TN-bafa827bfe",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Goose Island Campground No. 1"
+   },
+   {
+    "id": "TN-76497d2f64",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Maple Bend Island Campground No. 1"
+   },
+   {
+    "id": "TN-b3581a06b3",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Maple Bend Island Campground No. 2"
+   },
+   {
+    "id": "TN-06b47d0c4d",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Boiling Fork Campground"
+   },
+   {
+    "id": "TN-c09682783f",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Spann House Backcountry Campsite"
+   },
+   {
+    "id": "TN-828e4e697f",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Campground Fishing Pier 1"
+   },
+   {
+    "id": "TN-a213748b0d",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Lost Creek Backcountry Campground"
+   },
+   {
+    "id": "TN-ad609ec025",
+    "kind": "cabins / lodging",
+    "miles": 2.2,
+    "name": "Tsp-0279 Cabins"
+   },
+   {
+    "id": "TN-a81a73f611",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Turkey Creek Campground"
+   },
+   {
+    "id": "TN-cef84a6561",
+    "kind": "campground",
+    "miles": 2.3,
+    "name": "Evans Loop Campsite"
+   },
+   {
+    "id": "TN-7ac4ed1c29",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Leatherwood 1"
+   },
+   {
+    "id": "TN-f7ae7bd8c5",
+    "kind": "campground",
+    "miles": 2.6,
+    "name": "Big Island Campsite"
+   },
+   {
+    "id": "TN-9108576a60",
+    "kind": "campground",
+    "miles": 3.0,
+    "name": "Little Island Campsite"
+   }
+  ],
+  "US-7615": [
+   {
+    "id": "232702",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Seven Points (TN)"
+   },
+   {
+    "id": "232515",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Anderson Road Campground"
+   },
+   {
+    "id": "233107",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Jefferson Springs"
+   },
+   {
+    "id": "TN-30a9a525cc",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Backcountry Campground"
+   },
+   {
+    "id": "233106",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Smith Springs"
+   }
+  ],
+  "US-7616": [
+   {
+    "id": "TN-55047fa347",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Group Camp Electric Car Charging"
+   }
+  ],
+  "US-7617": [
+   {
+    "id": "TN-b62eae89db",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Campground Recycling"
+   }
+  ],
+  "US-7626": [
+   {
+    "id": "TN-55047fa347",
+    "kind": "campground",
+    "miles": 3.3,
+    "name": "Group Camp Electric Car Charging"
+   }
+  ],
+  "US-7880": [
+   {
+    "id": "TN-480c2878b5",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Daddy's Creek-Daddy's Creek"
+   },
+   {
+    "id": "TN-07b7b82c81",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Grapevine Hollow Campsite"
+   },
+   {
+    "id": "TN-4c8a4774dc",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Peavine North Campsite"
+   }
+  ]
+ },
+ "no_point": [],
+ "park_names": {
+  "US-0019": {
+   "n": "Cumberland Gap National Historical Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0034": {
+   "n": "Great Smoky Mountains National Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0534": {
+   "n": "Cross Creeks National Wildlife Refuge",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0536": {
+   "n": "Lake Isom National Wildlife Refuge",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0537": {
+   "n": "Lower Hatchie National Wildlife Refuge",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0538": {
+   "n": "Reelfoot National Wildlife Refuge",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0539": {
+   "n": "Tennessee National Wildlife Refuge",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0685": {
+   "n": "Obed National Wild and Scenic River",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0686": {
+   "n": "Big South Fork National Recreation Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0703": {
+   "n": "Fort Donelson National Battlefield",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-0716": {
+   "n": "Chickamauga and Chattanooga National Military Park",
+   "notes": [
+    "pin well outside this outline (key)"
+   ],
+   "src": "PAD-US / state layer"
+  },
+  "US-0722": {
+   "n": "Shiloh National Battlefield",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-11879": {
+   "n": "North Chickamauga Creek Gorge State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-11918": {
+   "n": "Sherwood Forest State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-12361": {
+   "n": "Scott's Gulf Wilderness State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-12663": {
+   "n": "Ocoee River State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-12714": {
+   "n": "Head of the Crow State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-12774": {
+   "n": "Erwin National Fish Hatchery",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-13362": {
+   "n": "Chickamauga WMA Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-13563": {
+   "n": "Bear Hollow Mountain Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2929": {
+   "n": "Big Cypress Tree State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2930": {
+   "n": "Big Hill Pond State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2931": {
+   "n": "Big Ridge State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2932": {
+   "n": "Bledsoe Creek State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2933": {
+   "n": "Booker T Washington State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2935": {
+   "n": "Cedars of Lebanon State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2936": {
+   "n": "Chickasaw State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2937": {
+   "n": "Cordell Hull Birthplace State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2938": {
+   "n": "Cove Lake State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2939": {
+   "n": "Cumberland Mountain State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2941": {
+   "n": "David Crockett State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2942": {
+   "n": "Davy Crockett Birthplace State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2944": {
+   "n": "Edgar Evins State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2945": {
+   "n": "Fall Creek Falls State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2947": {
+   "n": "Fort Pillow State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2948": {
+   "n": "Frozen Head State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2949": {
+   "n": "Harpeth River State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2950": {
+   "n": "Henry Horton State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2951": {
+   "n": "Harrison Bay State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2952": {
+   "n": "Hiwassee Ocoee State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2953": {
+   "n": "Indian Mountain State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2954": {
+   "n": "Johnsonville State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2955": {
+   "n": "Wilson Cumberland Trail State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2956": {
+   "n": "Long Hunter State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2957": {
+   "n": "Meeman-Shelby Forest State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2958": {
+   "n": "Montgomery Bell State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2959": {
+   "n": "Mousetail Landing State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2960": {
+   "n": "Nathan Bedford Forrest State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2961": {
+   "n": "Natchez Trace State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2962": {
+   "n": "Norris Dam State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2964": {
+   "n": "Panther Creek State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2965": {
+   "n": "Paris Landing State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2966": {
+   "n": "Pickett State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2967": {
+   "n": "Pickwick Landing State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2968": {
+   "n": "Pinson Mounds State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2971": {
+   "n": "Reelfoot Lake State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2972": {
+   "n": "Roan Mountain State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2973": {
+   "n": "Rock Island State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2974": {
+   "n": "Rocky Fork State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2978": {
+   "n": "Standing Stone State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2979": {
+   "n": "Sycamore Shoals State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2980": {
+   "n": "Tims Ford State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2981": {
+   "n": "T.O. Fuller State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-2982": {
+   "n": "Warriors' Path State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3792": {
+   "n": "Land Between the Lakes National Recreation Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3923": {
+   "n": "Bone Cave Natural State Conservation Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3924": {
+   "n": "Cedars of Lebanon State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3925": {
+   "n": "Vesta Cedar Glade State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3926": {
+   "n": "Bean Switch Refuge Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3928": {
+   "n": "Bridgestone/firestone Centennial Wilderness Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3930": {
+   "n": "Camden Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3931": {
+   "n": "Catoosa Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3933": {
+   "n": "Cheatham Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3934": {
+   "n": "Chickasaw State Wildlife Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3935": {
+   "n": "Chuck Swan Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3937": {
+   "n": "Eagle Lake Refuge Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3948": {
+   "n": "John Tully Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3953": {
+   "n": "Maness Swamp State Wildlife Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3954": {
+   "n": "Mingo Swamp Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3957": {
+   "n": "Natchez Trace State Forest Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3958": {
+   "n": "North Chickamauga Creek Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3959": {
+   "n": "Obion River Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3960": {
+   "n": "Reelfoot State Wildlife Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3962": {
+   "n": "The Boils State Wildlife Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3970": {
+   "n": "Yanahli Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-3971": {
+   "n": "Prentice Cooper Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-4525": {
+   "n": "Cherokee National Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5490": {
+   "n": "Bledsoe State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5491": {
+   "n": "Chickasaw State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5492": {
+   "n": "Chuck Swan State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5493": {
+   "n": "Franklin-Marion State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5494": {
+   "n": "John Tully State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5496": {
+   "n": "Lone Mountain State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5498": {
+   "n": "Pickett State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5499": {
+   "n": "Prentice Cooper State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5500": {
+   "n": "Scott State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-5501": {
+   "n": "Standing Stone State Forest",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6240": {
+   "n": "Couchville Cedar Glade State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6243": {
+   "n": "Falling Water Falls State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6246": {
+   "n": "Hampton Creek Cove State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6250": {
+   "n": "John and Hester Lane Cedar Glade State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6252": {
+   "n": "Laurel Snow State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6256": {
+   "n": "Mount View Glade State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6260": {
+   "n": "Piney Falls State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6264": {
+   "n": "Roundtop Mountain State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6266": {
+   "n": "Savage Gulf State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6270": {
+   "n": "Stinging Fork Falls State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-6278": {
+   "n": "Watauga River Bluffs State Natural Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7568": {
+   "n": "Barkley Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7573": {
+   "n": "Black Bayou Refuge Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7578": {
+   "n": "Cheatham Lake Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7580": {
+   "n": "Cordell Hull Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7581": {
+   "n": "Cordell Hull Waterfowl Refuge Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7582": {
+   "n": "Cove Creek Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7588": {
+   "n": "Foothills Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7593": {
+   "n": "Harmon Creek Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7594": {
+   "n": "Harp Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7597": {
+   "n": "Hick Hill Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7599": {
+   "n": "Keyes-Harrison Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7605": {
+   "n": "Mt. Roosevelt Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7609": {
+   "n": "North Cumberland Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7610": {
+   "n": "Old Hickory Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7611": {
+   "n": "Owl Hollow Mill Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7615": {
+   "n": "Percy Priest Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7616": {
+   "n": "Perry Switch Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7617": {
+   "n": "Presidents Island Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7626": {
+   "n": "Tull Bottom Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-7880": {
+   "n": "Luper Mountain Wildlife Management Area",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  },
+  "US-9718": {
+   "n": "Savage Gulf State Park",
+   "notes": [],
+   "src": "PAD-US / state layer"
+  }
+ },
+ "read": {
+  "inputs": [
+   "data/campfed/US-TN.json (85 rows)",
+   "data/campstate/US-TN.json (267 rows)",
+   "data/campstate-manual/US-TN.json (0 rows)"
+  ],
+  "outline_source": "official land records (PAD-US / state layers via the US key)",
+  "patches": "data/fers/US-TN.json candidate rows (main + small tiers)",
+  "ver": 1,
+  "when": "2026-10-28"
+ }
+}

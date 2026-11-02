@@ -1,0 +1,2362 @@
+{
+ "area": "US-NH",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-NH.json",
+ "rows": {
+  "US-0450+US-2679@area@44.771,-71.070": {
+   "id": "US-0450+US-2679@area@44.771,-71.070",
+   "area": "US-NH",
+   "refs": [
+    "US-0450",
+    "US-2679"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2130.3,
+   "stored_wide_m": 1583,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:22:16Z",
+   "layers": [
+    {
+     "ref": "US-0450",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:16Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:23Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "151 record id(s)",
+     "n": 51,
+     "read": "2026-11-01T02:22:27Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "151 record id(s)",
+     "n": 51,
+     "read": "2026-11-01T02:22:31Z"
+    },
+    {
+     "ref": "US-2679",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "24 record id(s)",
+     "n": 24,
+     "read": "2026-11-01T02:22:33Z"
+    },
+    {
+     "ref": "US-2679",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "6 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T02:22:34Z"
+    },
+    {
+     "ref": "US-2679",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "15 record id(s)",
+     "n": 15,
+     "read": "2026-11-01T02:22:35Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1991.04,
+   "live_acres": 1992.61,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 1598.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1992.6 ac vs 1991.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.771472,
+    -71.069764
+   ]
+  },
+  "US-0450+US-4556@trail@44.869,-71.047": {
+   "id": "US-0450+US-4556@trail@44.869,-71.047",
+   "area": "US-NH",
+   "refs": [
+    "US-0450",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.26,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:22:36Z",
+   "layers": [
+    {
+     "ref": "US-0450",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:36Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:37Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "151 record id(s)",
+     "n": 94,
+     "read": "2026-11-01T02:22:39Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "151 record id(s)",
+     "n": 94,
+     "read": "2026-11-01T02:22:41Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 3.29,
+   "stored_shape_acres": 3.98,
+   "live_acres": 3.29,
+   "kept_pct": 100.0,
+   "size_pct": -17.3,
+   "moved_m": 230,
+   "gap_m": 0,
+   "wide_m": 13.2,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.3 ac vs 4.0 ac stored (-17%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.867236,
+    -71.046977
+   ]
+  },
+  "US-0450+US-4876@area@44.856,-71.051": {
+   "id": "US-0450+US-4876@area@44.856,-71.051",
+   "area": "US-NH",
+   "refs": [
+    "US-0450",
+    "US-4876"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.4,
+   "stored_wide_m": 167,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:22:41Z",
+   "layers": [
+    {
+     "ref": "US-0450",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:41Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:22:42Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "151 record id(s)",
+     "n": 36,
+     "read": "2026-11-01T02:22:44Z"
+    },
+    {
+     "ref": "US-0450",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "151 record id(s)",
+     "n": 36,
+     "read": "2026-11-01T02:22:46Z"
+    },
+    {
+     "ref": "US-4876",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:22:46Z"
+    },
+    {
+     "ref": "US-4876",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:22:47Z"
+    },
+    {
+     "ref": "US-4876",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 9,
+   "stored_shape_acres": 12.8,
+   "live_acres": 12.8,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 168.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.8 ac vs 12.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.856819,
+    -71.051267
+   ]
+  },
+  "US-13518+US-4512@area@44.065,-71.167": {
+   "id": "US-13518+US-4512@area@44.065,-71.167",
+   "area": "US-NH",
+   "refs": [
+    "US-13518",
+    "US-4512"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "stored_acres": 6.3,
+   "stored_wide_m": 23,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:22:50Z",
+   "layers": [
+    {
+     "ref": "US-13518",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:22:50Z"
+    },
+    {
+     "ref": "US-13518",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:22:51Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:22:53Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:53Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.35,
+   "live_acres": 3.63,
+   "kept_pct": 97.6,
+   "size_pct": -16.4,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 20.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.6 ac vs 4.3 ac stored (-16%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.059901,
+    -71.172833
+   ]
+  },
+  "US-2647+US-4512@area@44.160,-71.397": {
+   "id": "US-2647+US-4512@area@44.160,-71.397",
+   "area": "US-NH",
+   "refs": [
+    "US-2647",
+    "US-4512"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 75.8,
+   "stored_wide_m": 59,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:22:57Z",
+   "layers": [
+    {
+     "ref": "US-2647",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:22:57Z"
+    },
+    {
+     "ref": "US-2647",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:22:58Z"
+    },
+    {
+     "ref": "US-2647",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:00Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:01Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 10,
+     "read": "2026-11-01T02:23:02Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 68.98,
+   "live_acres": 134.54,
+   "kept_pct": 100.0,
+   "size_pct": 95.1,
+   "moved_m": 549,
+   "gap_m": 0,
+   "wide_m": 102.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 95% bigger (134.5 ac vs 69.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.155439,
+    -71.386596
+   ]
+  },
+  "US-2647+US-4556@trail@44.170,-71.401": {
+   "id": "US-2647+US-4556@trail@44.170,-71.401",
+   "area": "US-NH",
+   "refs": [
+    "US-2647",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 15.07,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:03Z",
+   "layers": [
+    {
+     "ref": "US-2647",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:03Z"
+    },
+    {
+     "ref": "US-2647",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:04Z"
+    },
+    {
+     "ref": "US-2647",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:05Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 65.33,
+   "stored_shape_acres": 14.22,
+   "live_acres": 14.88,
+   "kept_pct": 100.0,
+   "size_pct": 4.6,
+   "moved_m": 1744,
+   "gap_m": 0,
+   "wide_m": 61.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.9 ac vs 14.2 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.17267,
+    -71.379433
+   ]
+  },
+  "US-2650+US-4512@area@44.241,-71.425": {
+   "id": "US-2650+US-4512@area@44.241,-71.425",
+   "area": "US-NH",
+   "refs": [
+    "US-2650",
+    "US-4512"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "stored_acres": 1.9,
+   "stored_wide_m": 47,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:05Z",
+   "layers": [
+    {
+     "ref": "US-2650",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:06Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:07Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T02:23:08Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.67,
+   "live_acres": 1.96,
+   "kept_pct": 100.0,
+   "size_pct": 17.4,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 51.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.0 ac vs 1.7 ac stored (+17%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.240759,
+    -71.425084
+   ]
+  },
+  "US-2653+US-4512@area@44.176,-71.715": {
+   "id": "US-2653+US-4512@area@44.176,-71.715",
+   "area": "US-NH",
+   "refs": [
+    "US-2653",
+    "US-4512"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16.3,
+   "stored_wide_m": 61,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:09Z",
+   "layers": [
+    {
+     "ref": "US-2653",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:09Z"
+    },
+    {
+     "ref": "US-2653",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:10Z"
+    },
+    {
+     "ref": "US-2653",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:23:12Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:13Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:14Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13.81,
+   "live_acres": 90.29,
+   "kept_pct": 100.0,
+   "size_pct": 553.9,
+   "moved_m": 2672,
+   "gap_m": 0,
+   "wide_m": 123.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 554% bigger (90.3 ac vs 13.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.154484,
+    -71.690678
+   ]
+  },
+  "US-2653+US-4556@trail@44.113,-71.677": {
+   "id": "US-2653+US-4556@trail@44.113,-71.677",
+   "area": "US-NH",
+   "refs": [
+    "US-2653",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 20.82,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:15Z",
+   "layers": [
+    {
+     "ref": "US-2653",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:15Z"
+    },
+    {
+     "ref": "US-2653",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:16Z"
+    },
+    {
+     "ref": "US-2653",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:17Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 38.92,
+   "stored_shape_acres": 19.63,
+   "live_acres": 21.06,
+   "kept_pct": 100.0,
+   "size_pct": 7.2,
+   "moved_m": 552,
+   "gap_m": 0,
+   "wide_m": 68.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21.1 ac vs 19.6 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.109802,
+    -71.68145
+   ]
+  },
+  "US-2657+US-4512@area@44.506,-71.274": {
+   "id": "US-2657+US-4512@area@44.506,-71.274",
+   "area": "US-NH",
+   "refs": [
+    "US-2657",
+    "US-4512"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "stored_acres": 120.1,
+   "stored_wide_m": 579,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:17Z",
+   "layers": [
+    {
+     "ref": "US-2657",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:17Z"
+    },
+    {
+     "ref": "US-2657",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:18Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:19Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:23:20Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11.36,
+   "live_acres": 7.5,
+   "kept_pct": 88.8,
+   "size_pct": -33.9,
+   "moved_m": 2433,
+   "gap_m": 0,
+   "wide_m": 20.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 34% smaller (7.5 ac vs 11.4 ac stored)",
+   "live_center": [
+    44.475141,
+    -71.297001
+   ]
+  },
+  "US-2666+US-2673@area@43.284,-72.069": {
+   "id": "US-2666+US-2673@area@43.284,-72.069",
+   "area": "US-NH",
+   "refs": [
+    "US-2666",
+    "US-2673"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 510.1,
+   "stored_wide_m": 774,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:23:21Z",
+   "layers": [
+    {
+     "ref": "US-2666",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:21Z"
+    },
+    {
+     "ref": "US-2666",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "8 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:22Z"
+    },
+    {
+     "ref": "US-2666",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:24Z"
+    },
+    {
+     "ref": "US-2666",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:26Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:28Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "16 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T02:23:29Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "6 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T02:23:31Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "11 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T02:23:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 504.54,
+   "live_acres": 502.27,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 781.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 502.3 ac vs 504.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.284309,
+    -72.069281
+   ]
+  },
+  "US-2667+US-4512@area@44.272,-71.305": {
+   "id": "US-2667+US-4512@area@44.272,-71.305",
+   "area": "US-NH",
+   "refs": [
+    "US-2667",
+    "US-4512"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 7.8,
+   "stored_wide_m": 59,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:34Z",
+   "layers": [
+    {
+     "ref": "US-2667",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:34Z"
+    },
+    {
+     "ref": "US-2667",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:35Z"
+    },
+    {
+     "ref": "US-2667",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:37Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:38Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:39Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.82,
+   "live_acres": 7.69,
+   "kept_pct": 100.0,
+   "size_pct": 12.9,
+   "moved_m": 27,
+   "gap_m": 0,
+   "wide_m": 59.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.7 ac vs 6.8 ac stored (+13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.271196,
+    -71.30566
+   ]
+  },
+  "US-2667+US-4556@trail@44.270,-71.306": {
+   "id": "US-2667+US-4556@trail@44.270,-71.306",
+   "area": "US-NH",
+   "refs": [
+    "US-2667",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.04,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:40Z",
+   "layers": [
+    {
+     "ref": "US-2667",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:40Z"
+    },
+    {
+     "ref": "US-2667",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:41Z"
+    },
+    {
+     "ref": "US-2667",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:42Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 2.79,
+   "stored_shape_acres": 1.76,
+   "live_acres": 2.6,
+   "kept_pct": 100.0,
+   "size_pct": 47.8,
+   "moved_m": 60,
+   "gap_m": 0,
+   "wide_m": 62.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 48% bigger (2.6 ac vs 1.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.270901,
+    -71.305648
+   ]
+  },
+  "US-2673+US-4926@area@43.201,-72.066": {
+   "id": "US-2673+US-4926@area@43.201,-72.066",
+   "area": "US-NH",
+   "refs": [
+    "US-2673",
+    "US-4926"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 480.7,
+   "stored_wide_m": 1062,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:23:42Z",
+   "layers": [
+    {
+     "ref": "US-2673",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:42Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "16 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:23:43Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "6 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:23:44Z"
+    },
+    {
+     "ref": "US-2673",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "11 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:45Z"
+    },
+    {
+     "ref": "US-4926",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:46Z"
+    },
+    {
+     "ref": "US-4926",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 479.99,
+   "live_acres": 479.02,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 1063.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 479.0 ac vs 480.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.200998,
+    -72.065798
+   ]
+  },
+  "US-2676+US-4918@area@43.353,-71.859": {
+   "id": "US-2676+US-4918@area@43.353,-71.859",
+   "area": "US-NH",
+   "refs": [
+    "US-2676",
+    "US-4918"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.0,
+   "stored_wide_m": 35,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:49Z",
+   "layers": [
+    {
+     "ref": "US-2676",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:49Z"
+    },
+    {
+     "ref": "US-2676",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:50Z"
+    },
+    {
+     "ref": "US-2676",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:23:52Z"
+    },
+    {
+     "ref": "US-4918",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "6 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T02:23:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.96,
+   "live_acres": 2.64,
+   "kept_pct": 99.4,
+   "size_pct": -10.8,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 32.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.6 ac vs 3.0 ac stored (-11%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.352564,
+    -71.856996
+   ]
+  },
+  "US-2679+US-4556@trail@44.724,-71.035": {
+   "id": "US-2679+US-4556@trail@44.724,-71.035",
+   "area": "US-NH",
+   "refs": [
+    "US-2679",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 24.2,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:55Z",
+   "layers": [
+    {
+     "ref": "US-2679",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "24 record id(s)",
+     "n": 15,
+     "read": "2026-11-01T02:23:56Z"
+    },
+    {
+     "ref": "US-2679",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "6 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T02:23:56Z"
+    },
+    {
+     "ref": "US-2679",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "15 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T02:23:57Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 22.03,
+   "stored_shape_acres": 21.6,
+   "live_acres": 22.03,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 1307,
+   "gap_m": 0,
+   "wide_m": 35.1,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.0 ac vs 21.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.735845,
+    -71.036519
+   ]
+  },
+  "US-4512+US-4556@trail@43.969,-71.936": {
+   "id": "US-4512+US-4556@trail@43.969,-71.936",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 38.86,
+   "stored_wide_m": 72.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:57Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:23:57Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 65,
+     "read": "2026-11-01T02:23:58Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 35,
+     "read": "2026-11-01T02:23:59Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 40.97,
+   "stored_shape_acres": 36.35,
+   "live_acres": 37.1,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 6668,
+   "gap_m": 0,
+   "wide_m": 66.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 37.1 ac vs 36.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.914708,
+    -71.9723
+   ]
+  },
+  "US-4512+US-4863@area@44.351,-71.450": {
+   "id": "US-4512+US-4863@area@44.351,-71.450",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4863"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 7.0,
+   "stored_wide_m": 35,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:23:59Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:23:59Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:24:00Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:24:01Z"
+    },
+    {
+     "ref": "US-4863",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:01Z"
+    },
+    {
+     "ref": "US-4863",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:24:02Z"
+    },
+    {
+     "ref": "US-4863",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.4,
+   "live_acres": 18.12,
+   "kept_pct": 100.0,
+   "size_pct": 235.7,
+   "moved_m": 447,
+   "gap_m": 0,
+   "wide_m": 101.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 236% bigger (18.1 ac vs 5.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.347534,
+    -71.449642
+   ]
+  },
+  "US-4512+US-4875@area@43.989,-71.871": {
+   "id": "US-4512+US-4875@area@43.989,-71.871",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4875"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.6,
+   "stored_wide_m": 25,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:05Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:05Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:06Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:07Z"
+    },
+    {
+     "ref": "US-4875",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:07Z"
+    },
+    {
+     "ref": "US-4875",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:08Z"
+    },
+    {
+     "ref": "US-4875",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.52,
+   "live_acres": 20.95,
+   "kept_pct": 100.0,
+   "size_pct": 3900.9,
+   "moved_m": 414,
+   "gap_m": 0,
+   "wide_m": 92.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 3901% bigger (20.9 ac vs 0.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.992105,
+    -71.868847
+   ]
+  },
+  "US-4512+US-4877@area@44.089,-71.922": {
+   "id": "US-4512+US-4877@area@44.089,-71.922",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4877"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "stored_acres": 8.9,
+   "stored_wide_m": 23,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:11Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:11Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:12Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:13Z"
+    },
+    {
+     "ref": "US-4877",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:13Z"
+    },
+    {
+     "ref": "US-4877",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:15Z"
+    },
+    {
+     "ref": "US-4877",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5.3,
+   "live_acres": 5.89,
+   "kept_pct": 100.0,
+   "size_pct": 11.1,
+   "moved_m": 2145,
+   "gap_m": 0,
+   "wide_m": 18.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.9 ac vs 5.3 ac stored (+11%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.071239,
+    -71.93054
+   ]
+  },
+  "US-4512+US-4889@area@44.076,-71.061": {
+   "id": "US-4512+US-4889@area@44.076,-71.061",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4889"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 9.0,
+   "stored_wide_m": 35,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:18Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:18Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:19Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:20Z"
+    },
+    {
+     "ref": "US-4889",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:20Z"
+    },
+    {
+     "ref": "US-4889",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:21Z"
+    },
+    {
+     "ref": "US-4889",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.04,
+   "live_acres": 8.3,
+   "kept_pct": 100.0,
+   "size_pct": 3.1,
+   "moved_m": 1074,
+   "gap_m": 0,
+   "wide_m": 34.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.3 ac vs 8.0 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.07532,
+    -71.068662
+   ]
+  },
+  "US-4512+US-4934@area@44.100,-71.119": {
+   "id": "US-4512+US-4934@area@44.100,-71.119",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4934"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 19.0,
+   "stored_wide_m": 105,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:24Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:24Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:25Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:26Z"
+    },
+    {
+     "ref": "US-4934",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:27Z"
+    },
+    {
+     "ref": "US-4934",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:28Z"
+    },
+    {
+     "ref": "US-4934",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17.74,
+   "live_acres": 23.48,
+   "kept_pct": 100.0,
+   "size_pct": 23.6,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 125.1,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.5 ac vs 19.0 ac stored (row acres; the stored shape is a 17.7 ac preview) (+24%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.100234,
+    -71.119518
+   ]
+  },
+  "US-4512+US-4958@area@44.082,-71.704": {
+   "id": "US-4512+US-4958@area@44.082,-71.704",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4958"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 24.3,
+   "stored_wide_m": 45,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:30Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:30Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:31Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:32Z"
+    },
+    {
+     "ref": "US-4958",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:32Z"
+    },
+    {
+     "ref": "US-4958",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22.57,
+   "live_acres": 20.43,
+   "kept_pct": 100.0,
+   "size_pct": -9.5,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 38.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.4 ac vs 22.6 ac stored (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.081637,
+    -71.705027
+   ]
+  },
+  "US-4512+US-4959@area@43.922,-71.964": {
+   "id": "US-4512+US-4959@area@43.922,-71.964",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-4959"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 237.9,
+   "stored_wide_m": 792,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:34Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:24:35Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:35Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:24:36Z"
+    },
+    {
+     "ref": "US-4959",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:37Z"
+    },
+    {
+     "ref": "US-4959",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:38Z"
+    },
+    {
+     "ref": "US-4959",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 237.46,
+   "live_acres": 237.37,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 792.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 237.4 ac vs 237.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.922115,
+    -71.964345
+   ]
+  },
+  "US-4512+US-8015@area@44.216,-71.191": {
+   "id": "US-4512+US-8015@area@44.216,-71.191",
+   "area": "US-NH",
+   "refs": [
+    "US-4512",
+    "US-8015"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1153.7,
+   "stored_wide_m": 423,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:41Z",
+   "layers": [
+    {
+     "ref": "US-4512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:41Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "73 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:24:42Z"
+    },
+    {
+     "ref": "US-4512",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "36 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:43Z"
+    },
+    {
+     "ref": "US-8015",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1143.73,
+   "live_acres": 1145.51,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 418.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1145.5 ac vs 1143.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.229656,
+    -71.186492
+   ]
+  },
+  "US-4556+US-4875@trail@43.997,-71.885": {
+   "id": "US-4556+US-4875@trail@43.997,-71.885",
+   "area": "US-NH",
+   "refs": [
+    "US-4556",
+    "US-4875"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.97,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:44Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4875",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:44Z"
+    },
+    {
+     "ref": "US-4875",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:44Z"
+    },
+    {
+     "ref": "US-4875",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:45Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 19.08,
+   "stored_shape_acres": 6.54,
+   "live_acres": 7.61,
+   "kept_pct": 100.0,
+   "size_pct": 16.4,
+   "moved_m": 95,
+   "gap_m": 0,
+   "wide_m": 68.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.6 ac vs 6.5 ac stored (+16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.996298,
+    -71.885977
+   ]
+  },
+  "US-4556+US-4886@trail@45.253,-71.207": {
+   "id": "US-4556+US-4886@trail@45.253,-71.207",
+   "area": "US-NH",
+   "refs": [
+    "US-4556",
+    "US-4886"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.85,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:45Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4886",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:45Z"
+    },
+    {
+     "ref": "US-4886",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:46Z"
+    },
+    {
+     "ref": "US-4886",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "8 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:24:48Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 1.69,
+   "stored_shape_acres": 1.61,
+   "live_acres": 1.69,
+   "kept_pct": 100.0,
+   "size_pct": 5.2,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.7 ac vs 1.6 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.252503,
+    -71.206895
+   ]
+  },
+  "US-4556+US-4920@trail@44.403,-71.114": {
+   "id": "US-4556+US-4920@trail@44.403,-71.114",
+   "area": "US-NH",
+   "refs": [
+    "US-4556",
+    "US-4920"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.87,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:49Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4920",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:24:50Z"
+    },
+    {
+     "ref": "US-4920",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:51Z"
+    },
+    {
+     "ref": "US-4920",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:24:52Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 1.72,
+   "stored_shape_acres": 1.74,
+   "live_acres": 1.72,
+   "kept_pct": 100.0,
+   "size_pct": -1.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.7 ac vs 1.7 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.402759,
+    -71.113961
+   ]
+  },
+  "US-4556+US-4959@trail@43.920,-71.960": {
+   "id": "US-4556+US-4959@trail@43.920,-71.960",
+   "area": "US-NH",
+   "refs": [
+    "US-4556",
+    "US-4959"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 8.41,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:53Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4959",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:54Z"
+    },
+    {
+     "ref": "US-4959",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:54Z"
+    },
+    {
+     "ref": "US-4959",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:55Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 7.97,
+   "stored_shape_acres": 7.99,
+   "live_acres": 7.97,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 181,
+   "gap_m": 0,
+   "wide_m": 62.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.0 ac vs 8.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.917973,
+    -71.961056
+   ]
+  },
+  "US-4923+US-4944@same land@43.671,-71.078": {
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "area": "US-NH",
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:24:55Z",
+   "layers": [
+    {
+     "ref": "US-4923",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:56Z"
+    },
+    {
+     "ref": "US-4923",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:57Z"
+    },
+    {
+     "ref": "US-4923",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:59Z"
+    },
+    {
+     "ref": "US-4944",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:25:01Z"
+    },
+    {
+     "ref": "US-4944",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:24:56Z"
+    },
+    {
+     "ref": "US-4944",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:25:03Z"
+    },
+    {
+     "ref": "US-4944",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:25:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 79.74,
+   "live_acres": 81.53,
+   "kept_pct": 98.6,
+   "size_pct": 2.2,
+   "moved_m": 145,
+   "gap_m": 0,
+   "wide_m": 456.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 81.5 ac vs 79.7 ac stored (+2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.670254,
+    -71.076864
+   ]
+  },
+  "US-4952+US-4953@same land@42.790,-71.763": {
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "area": "US-NH",
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:25:06Z",
+   "layers": [
+    {
+     "ref": "US-4952",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:25:06Z"
+    },
+    {
+     "ref": "US-4952",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "6 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T02:25:07Z"
+    },
+    {
+     "ref": "US-4952",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "8 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T02:25:09Z"
+    },
+    {
+     "ref": "US-4953",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:25:06Z"
+    },
+    {
+     "ref": "US-4953",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "6 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T02:25:07Z"
+    },
+    {
+     "ref": "US-4953",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "8 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T02:25:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 229.88,
+   "live_acres": 885.85,
+   "kept_pct": 99.9,
+   "size_pct": 285.3,
+   "moved_m": 644,
+   "gap_m": 0,
+   "wide_m": 1461.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 285% bigger (885.8 ac vs 229.9 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.794204,
+    -71.767992
+   ]
+  },
+  "US-4976+US-4981@area@43.556,-71.750": {
+   "id": "US-4976+US-4981@area@43.556,-71.750",
+   "area": "US-NH",
+   "refs": [
+    "US-4976",
+    "US-4981"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.1,
+   "stored_wide_m": 61,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T02:25:10Z",
+   "layers": [
+    {
+     "ref": "US-4976",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:25:11Z"
+    },
+    {
+     "ref": "US-4976",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:25:13Z"
+    },
+    {
+     "ref": "US-4976",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:25:15Z"
+    },
+    {
+     "ref": "US-4981",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:25:16Z"
+    },
+    {
+     "ref": "US-4981",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+     "how": "10 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T02:25:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.93,
+   "live_acres": 2.96,
+   "kept_pct": 97.6,
+   "size_pct": 0.8,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 59.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 2.9 ac stored (+1%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.555498,
+    -71.749739
+   ]
+  }
+ },
+ "started": "2026-11-01T02:22:16Z",
+ "fers_sha256": "e1d31ff51b049488d4826642fc124a4655a0d0cafe91f063a97fef9e728a3224",
+ "live_rows": 32,
+ "skipped_rows": 135,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:41Z",
+ "complete": true,
+ "summary": {
+  "rows": 32,
+  "verdicts": {
+   "CONFIRMED": 25,
+   "SHRUNK": 1,
+   "GREW": 6,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 8,
+   "trail line from the club saved copy (not re-read live)": 10
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json"
+ ],
+ "requests_this_run": 1030
+}

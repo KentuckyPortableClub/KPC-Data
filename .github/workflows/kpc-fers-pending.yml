@@ -1,0 +1,139 @@
+name: KPC 2-fer small batches (hidden)
+# Oct 28 2026 (HQ 2:58 PM, Brandon): parks with a new or changed outline wait in data/fers/pending.json (+ the US key's
+# data/us-key/changed-parks.json in KPC-Links). Daily look: when 5+ parks wait, or on Sunday when any wait, each area that has
+# waiting parks gets ONE line run with 'parks' = only the pairs touching them (minutes, from the saved copies), 3 areas at most
+# at once; never while the full queue (kpc-fers-lines) is running. Its checker writes a 'grade me' line for chat 8 as usual.
+on:
+  schedule:
+    - cron: '23 10 * * *'
+  # Oct 29 11:30 PM: after a key release the waiting room (chat 10, BOT D) dispatches this workflow itself (force=yes)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'yes = run now whatever the count (by hand)'
+        default: ''
+permissions:
+  contents: write
+  actions: write
+jobs:
+  look:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Waiting parks -> one small batch per area
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ -n "$(gh run list -R ${{ github.repository }} --workflow kpc-fers-lines.yml --status in_progress --json databaseId --jq '.[].databaseId' 2>/dev/null)" ]; then echo "::notice title=2-fer small batches::the full queue is running: nothing started"; exit 0; fi
+          python3 - <<'PY'
+          import json, os, subprocess, time
+          P = json.load(open('data/fers/pending.json'))
+          # Oct 29 11:40 PM (BOT E): parks whose LIVE outline changed = the released key here (data/us-key, data/ca-key) vs what this
+          # bot saw last time (data/fers/key-seen.json: ref -> its joined piece ids). A held build that chat 11 rejects never shows here.
+          # Only states already rerun on the new key (data/fers/new-key-states.json) rerun by themselves; the rest wait their wave.
+          import glob, hashlib
+          SEEN = 'data/fers/key-seen.json'
+          try: seen = json.load(open(SEEN))
+          except Exception: seen = {}
+          try: newkey = set(json.load(open('data/fers/new-key-states.json')).get('states') or [])
+          except Exception: newkey = set()
+          now, key_changed = {}, False
+          for f in sorted(glob.glob('data/us-key/US-??.json') + glob.glob('data/ca-key/CA-??.json')):
+              area = os.path.basename(f)[:-5]
+              try: parks = json.load(open(f)).get('parks') or {}
+              except Exception: continue
+              for r, p in parks.items():
+                  h = hashlib.md5(','.join(sorted(str(x[0]) for x in p.get('m') or [])).encode()).hexdigest()[:10]
+                  now[f'{area}:{r}'] = h
+                  if seen and seen.get(f'{area}:{r}') != h and area in newkey:
+                      P['parks'].append({'ref': r, 'area': area, 'why': 'live outline changed (key release)', 'date': time.strftime('%Y-%m-%d')}); key_changed = True
+          json.dump(now, open(SEEN, 'w'), separators=(',', ':'))
+          if not seen: print('::notice title=2-fer small batches::first look at the live key: remembered, nothing started for it')
+          wait = P['parks']; sunday = time.gmtime().tm_wday == 6
+          if not wait or not (len(wait) >= 5 or sunday or key_changed or os.environ.get('FORCE') == 'yes'):
+              print(f'::notice title=2-fer small batches::{len(wait)} park(s) waiting: nothing to run today'); json.dump(P, open('data/fers/pending.json', 'w'), indent=1); raise SystemExit
+          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
+               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
+               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
+          OWN = {'US-KY': ('US-KY', 'ky'), 'US-OH': ('US-OH', 'oh'), 'US-MI': ('US-MI', 'mi'), 'US-UT': ('US-UT', 'ut')}
+          def area_of(ref):
+              st = None
+              try:
+                  for f in os.listdir('links/data/parkinfo'):
+                      if f.startswith(('US-', 'CA')) and f.endswith('.json') and f != 'index.json':
+                          d = json.load(open('links/data/parkinfo/' + f)).get('parks') or {}
+                          if ref in d: st = f[:-5] if f.startswith('US-') else 'CA-' + (d[ref][10] if len(d[ref]) > 10 else ''); break
+              except Exception: pass
+              if not st: return None
+              if st in OWN: return OWN[st]
+              for tag, sts in R.items():
+                  if st in sts.split(): return (sts, tag)
+              return None
+          by = {}
+          for x in wait:
+              # BOT E: a key-release park reruns its OWN state as one area (1/3-size areas, HQ Oct 29 3:11 PM), tag = state letters
+              a = (x['area'], x['area'].lower().replace('us-', '').replace('-', '')) if x.get('area') else area_of(x['ref'])
+              if a: by.setdefault(a, []).append(x)
+          # Nov 2 (Brandon 7:01 AM 'Yes, tired of going in circles'; outside review): KEYS FIRST. An area whose state still has a NEW key
+          # file waiting for chat 11 (data/waiting/in/data/us-key|ca-key/<st>.json) is not run: its 2-fers would be measured on outlines
+          # that may still change. It stays waiting; the release of that key starts this workflow again (BOT D).
+          def _held_key(sts):
+              return [s for s in sts.split() if os.path.exists(f"data/waiting/in/data/{'ca' if s.startswith('CA-') else 'us'}-key/{s}.json")]
+          _skip = {a: _held_key(a[0]) for a in by if _held_key(a[0])}
+          if _skip: print('::notice title=2-fer small batches::keys first: waiting for the key of ' + ', '.join(sorted({s for v in _skip.values() for s in v})))
+          by = {a: xs for a, xs in by.items() if a not in _skip}
+          started = 0
+          for (sts, tag), xs in sorted(by.items(), key=lambda kv: -len(kv[1]))[:3]:
+              refs = ' '.join(sorted({x['ref'] for x in xs}))
+              ok = subprocess.run(['gh', 'workflow', 'run', 'kpc-fers-line.yml', '-R', os.environ['GITHUB_REPOSITORY'], '-f', f'states={sts}', '-f', f'tag={tag}', '-f', 'stage=all', '-f', f'parks={refs}']).returncode == 0
+              if ok:
+                  started += 1; P['done'] += [dict(x, run=time.strftime('%Y-%m-%d')) for x in xs]; P['parks'] = [y for y in P['parks'] if y not in xs]
+                  print(f'::notice title=2-fer small batches::{tag}: started for {refs}')
+          P['done'] = P['done'][-500:]
+          json.dump(P, open('data/fers/pending.json', 'w'), indent=1)
+          PY
+          # BOT F (Oct 29 11:30 PM; plan KPC_Key_And_2fer_Automation_Plan.md): a state chat 3 / 8 marked DONE in KPC-Links
+          # .claude/build/research/fable-state-done.json gets its FIRST new-key 2-fer run (whole state), then joins new-key-states.json
+          # (BOT E reruns it from then on). At most 3 states a run, fewest parks first; AK held (file-size fix), KY never (own key).
+          python3 - <<'PY' || true
+          import json, os, subprocess
+          try: done = json.load(open('links/.claude/build/research/fable-state-done.json'))
+          except Exception: done = {}
+          # HQ Oct 30 6:55 AM: also read the Fable file's own 'STATE XX DONE' lines (chats 3 / 8 write them there): no hand step
+          import re
+          try:
+              # Oct 30 7:40 AM (HQ): the Fable book is one file per state now (fable/US-XX.md); its 'STATE XX DONE' line sits at the END
+              # the combined book too (chats 3 / 8 still write 'STATE XX DONE' lines there, Oct 30 morning)
+              for m_ in re.finditer(r'STATE\s+(?:US-)?([A-Z]{2})\s+DONE', open('links/.claude/build/research/KPC_MissingBoundaries_ForFable_desk.md', encoding='utf-8').read()):
+                  if m_.group(1) != 'XX': done.setdefault('US-' + m_.group(1), {'by': 'Fable book line'})
+              import glob as _g
+              for fp in _g.glob('links/.claude/build/research/fable/US-??.md'):
+                  st_ = os.path.basename(fp)[:5]
+                  tail = open(fp, encoding='utf-8').read()[-3000:]
+                  if re.search(r'STATE\s+(?:US-)?' + st_[3:] + r'\s+DONE', tail): done.setdefault(st_, {'by': 'fable/' + st_ + '.md'})
+          except Exception: pass
+          NK = 'data/fers/new-key-states.json'
+          nk = json.load(open(NK)); have = set(nk.get('states') or [])
+          HOLD = {'US-AK', 'US-KY'}
+          todo = [s for s in done if s.startswith('US-') and len(s) == 5 and s not in have and s not in HOLD]
+          def size(st):
+              try: return len((json.load(open(f'data/parkinfo/{st}.json')).get('parks') or {}))
+              except Exception: return 9999
+          started = []
+          for st in sorted(todo, key=size)[:3]:
+              ok = subprocess.run(['gh', 'workflow', 'run', 'kpc-fers-line.yml', '-R', os.environ['GITHUB_REPOSITORY'], '-f', f'states={st}', '-f', f'tag={st[3:].lower()}', '-f', 'stage=all']).returncode == 0
+              if ok: started.append(st); nk['states'] = sorted(set(nk['states']) | {st})
+          json.dump(nk, open(NK, 'w'), indent=1)
+          print(f"::notice title=2-fer first runs (BOT F)::{'started: ' + ' '.join(started) if started else 'no newly finished state'}" + (f"; waiting: {' '.join(sorted(set(todo) - set(started)))}" if set(todo) - set(started) else ''))
+          PY
+          git config user.name kpc-bot; git config user.email bot@kpc.local
+          git add data/fers/pending.json data/fers/key-seen.json data/fers/new-key-states.json && git commit -qm "2-fer small batches: waiting list" || true
+          git pull -q --rebase || true; git push -q || true

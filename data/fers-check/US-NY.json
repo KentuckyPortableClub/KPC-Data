@@ -1,0 +1,2988 @@
+{
+ "area": "US-NY",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-NY.json",
+ "rows": {
+  "US-0475+US-8100@area@43.141,-78.414": {
+   "id": "US-0475+US-8100@area@43.141,-78.414",
+   "area": "US-NY",
+   "refs": [
+    "US-0475",
+    "US-8100"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 19.0,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T02:32:48Z",
+   "layers": [
+    {
+     "ref": "US-0475",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:49Z"
+    },
+    {
+     "ref": "US-8100",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:51Z"
+    },
+    {
+     "ref": "US-8100",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:32:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 10,
+   "stored_shape_acres": 17.35,
+   "live_acres": 18.79,
+   "kept_pct": 100.0,
+   "size_pct": 8.3,
+   "moved_m": 869,
+   "gap_m": 0,
+   "wide_m": 27.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-8100: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [61668, 61824] | US-8100: found by name 'Tonawanda Wma' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 18.8 ac vs 17.4 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    43.118287,
+    -78.432315
+   ]
+  },
+  "US-0476+US-8299@area@43.001,-76.775": {
+   "id": "US-0476+US-8299@area@43.001,-76.775",
+   "area": "US-NY",
+   "refs": [
+    "US-0476",
+    "US-8299"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.0,
+   "stored_wide_m": 59,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:32:54Z",
+   "layers": [
+    {
+     "ref": "US-0476",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:32:55Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:57Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:32:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 8.99,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-0476+US-8299@area@43.013,-76.789": {
+   "id": "US-0476+US-8299@area@43.013,-76.789",
+   "area": "US-NY",
+   "refs": [
+    "US-0476",
+    "US-8299"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.4,
+   "stored_wide_m": 31,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:00Z",
+   "layers": [
+    {
+     "ref": "US-0476",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:00Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:01Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 61,
+   "stored_shape_acres": 1.08,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "water-only"
+   ],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-0680+US-8068@area@40.647,-73.863": {
+   "id": "US-0680+US-8068@area@40.647,-73.863",
+   "area": "US-NY",
+   "refs": [
+    "US-0680",
+    "US-8068"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 396.5,
+   "stored_wide_m": 958,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:01Z",
+   "layers": [
+    {
+     "ref": "US-0680",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:02Z"
+    },
+    {
+     "ref": "US-8068",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:04Z"
+    },
+    {
+     "ref": "US-8068",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 307.67,
+   "live_acres": 308.28,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 966.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 308.3 ac vs 307.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.64687,
+    -73.863835
+   ]
+  },
+  "US-10033+US-2054@area@43.263,-79.063": {
+   "id": "US-10033+US-2054@area@43.263,-79.063",
+   "area": "US-NY",
+   "refs": [
+    "US-10033",
+    "US-2054"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8.6,
+   "stored_wide_m": 159,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T02:33:06Z",
+   "layers": [
+    {
+     "ref": "US-10033",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:06Z"
+    },
+    {
+     "ref": "US-2054",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:08Z"
+    },
+    {
+     "ref": "US-2054",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 19,
+   "stored_shape_acres": 8.2,
+   "live_acres": 8.2,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 151.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.2 ac vs 8.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.262638,
+    -79.063411
+   ]
+  },
+  "US-10043+US-8299@area@43.027,-74.811": {
+   "id": "US-10043+US-8299@area@43.027,-74.811",
+   "area": "US-NY",
+   "refs": [
+    "US-10043",
+    "US-8299"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.2,
+   "stored_wide_m": 61,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:10Z",
+   "layers": [
+    {
+     "ref": "US-10043",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:10Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:12Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 5.87,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-10045+US-10046@same land@41.250,-73.658": {
+   "id": "US-10045+US-10046@same land@41.250,-73.658",
+   "area": "US-NY",
+   "refs": [
+    "US-10045",
+    "US-10046"
+   ],
+   "kind": "same land",
+   "stored_status": "not sure: low-confidence outline (check the join)",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:12Z",
+   "layers": [
+    {
+     "ref": "US-10045",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:13Z"
+    },
+    {
+     "ref": "US-10046",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 56.62,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-10295+US-5067@same land@43.751,-75.321": {
+   "id": "US-10295+US-5067@same land@43.751,-75.321",
+   "area": "US-NY",
+   "refs": [
+    "US-10295",
+    "US-5067"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:16Z",
+   "layers": [
+    {
+     "ref": "US-10295",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:17Z"
+    },
+    {
+     "ref": "US-10295",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:18Z"
+    },
+    {
+     "ref": "US-5067",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:21Z"
+    },
+    {
+     "ref": "US-5067",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 693.43,
+   "live_acres": 693.66,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 903,
+   "gap_m": 0,
+   "wide_m": 949.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-10295: 4 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62909, 63199, 63893, 64521] | US-10295: found by name 'Independence River Wild Forest' near the spot as new id(s) [None] | US-5067: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63199] | US-5067: found by name 'Independence River State Forest' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 693.7 ac vs 693.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    43.743997,
+    -75.314725
+   ]
+  },
+  "US-10663+US-8299@area@42.943,-74.288": {
+   "id": "US-10663+US-8299@area@42.943,-74.288",
+   "area": "US-NY",
+   "refs": [
+    "US-10663",
+    "US-8299"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 3.6,
+   "stored_wide_m": 31,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:24Z",
+   "layers": [
+    {
+     "ref": "US-10663",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:24Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:26Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 32,
+   "stored_shape_acres": 3.03,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "water-only"
+   ],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-12375+US-8102@area@42.364,-76.857": {
+   "id": "US-12375+US-8102@area@42.364,-76.857",
+   "area": "US-NY",
+   "refs": [
+    "US-12375",
+    "US-8102"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 16.6,
+   "stored_wide_m": 35,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:26Z",
+   "layers": [
+    {
+     "ref": "US-12375",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:27Z"
+    },
+    {
+     "ref": "US-12375",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T02:33:28Z"
+    },
+    {
+     "ref": "US-8102",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:29Z"
+    },
+    {
+     "ref": "US-8102",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 14.02,
+   "live_acres": 13.15,
+   "kept_pct": 100.0,
+   "size_pct": -6.2,
+   "moved_m": 124,
+   "gap_m": 0,
+   "wide_m": 30.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-8102: 3 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63119, 62565, 61607] | US-8102: found by name 'Catharine Creek Wma' near the spot as new id(s) [None, None, None] (geometry now: CONFIRMED: live overlap 13.1 ac vs 14.0 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.366058,
+    -76.858179
+   ]
+  },
+  "US-2010+US-8319@area@41.317,-73.987": {
+   "id": "US-2010+US-8319@area@41.317,-73.987",
+   "area": "US-NY",
+   "refs": [
+    "US-2010",
+    "US-8319"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 4.6,
+   "stored_wide_m": 35,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:32Z",
+   "layers": [
+    {
+     "ref": "US-2010",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:32Z"
+    },
+    {
+     "ref": "US-2010",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:33Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:34Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T02:33:36Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 10,
+     "read": "2026-11-01T02:33:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 71.1,
+   "stored_water_pct": 74,
+   "stored_shape_acres": 2.55,
+   "live_acres": 1.65,
+   "kept_pct": 93.7,
+   "size_pct": -35.5,
+   "moved_m": 116,
+   "gap_m": 0,
+   "wide_m": 19.5,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 35% smaller (1.6 ac vs 2.6 ac stored)",
+   "live_center": [
+    41.319395,
+    -73.986374
+   ]
+  },
+  "US-2017+US-5413@area@42.520,-75.695": {
+   "id": "US-2017+US-5413@area@42.520,-75.695",
+   "area": "US-NY",
+   "refs": [
+    "US-2017",
+    "US-5413"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 130.3,
+   "stored_wide_m": 495,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:37Z",
+   "layers": [
+    {
+     "ref": "US-2017",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:37Z"
+    },
+    {
+     "ref": "US-2017",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:38Z"
+    },
+    {
+     "ref": "US-5413",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:40Z"
+    },
+    {
+     "ref": "US-5413",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 129.17,
+   "live_acres": 129.37,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 128,
+   "gap_m": 0,
+   "wide_m": 489.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5413: 4 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62925, 64383, 63873, 64386] | US-5413: found by name 'Mcdonough State Forest' near the spot as new id(s) [None, None, None] (geometry now: CONFIRMED: live overlap 129.4 ac vs 129.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.519734,
+    -75.696233
+   ]
+  },
+  "US-2028+US-2061+US-2128@area@40.624,-73.312": {
+   "id": "US-2028+US-2061+US-2128@area@40.624,-73.312",
+   "area": "US-NY",
+   "refs": [
+    "US-2028",
+    "US-2061",
+    "US-2128"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.7,
+   "stored_wide_m": 203,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:43Z",
+   "layers": [
+    {
+     "ref": "US-2028",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:43Z"
+    },
+    {
+     "ref": "US-2028",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:44Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:45Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:46Z"
+    },
+    {
+     "ref": "US-2128",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:47Z"
+    },
+    {
+     "ref": "US-2128",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13.26,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2028+US-2061+US-4374@area@40.624,-73.312": {
+   "id": "US-2028+US-2061+US-4374@area@40.624,-73.312",
+   "area": "US-NY",
+   "refs": [
+    "US-2028",
+    "US-2061",
+    "US-4374"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.7,
+   "stored_wide_m": 203,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:49Z",
+   "layers": [
+    {
+     "ref": "US-2028",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:43Z"
+    },
+    {
+     "ref": "US-2028",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:44Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:45Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:46Z"
+    },
+    {
+     "ref": "US-4374",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:47Z"
+    },
+    {
+     "ref": "US-4374",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13.08,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2028+US-2061@area@40.623,-73.312": {
+   "id": "US-2028+US-2061@area@40.623,-73.312",
+   "area": "US-NY",
+   "refs": [
+    "US-2028",
+    "US-2061"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 18.4,
+   "stored_wide_m": 213,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:51Z",
+   "layers": [
+    {
+     "ref": "US-2028",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:51Z"
+    },
+    {
+     "ref": "US-2028",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:52Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:52Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:33:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17.54,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2028+US-2128@area@40.624,-73.301": {
+   "id": "US-2028+US-2128@area@40.624,-73.301",
+   "area": "US-NY",
+   "refs": [
+    "US-2028",
+    "US-2128"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 932.0,
+   "stored_wide_m": 845,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:53Z",
+   "layers": [
+    {
+     "ref": "US-2028",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:53Z"
+    },
+    {
+     "ref": "US-2028",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:54Z"
+    },
+    {
+     "ref": "US-2128",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:54Z"
+    },
+    {
+     "ref": "US-2128",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 925.52,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2028+US-4374@area@40.624,-73.301": {
+   "id": "US-2028+US-4374@area@40.624,-73.301",
+   "area": "US-NY",
+   "refs": [
+    "US-2028",
+    "US-4374"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 930.9,
+   "stored_wide_m": 845,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:55Z",
+   "layers": [
+    {
+     "ref": "US-2028",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:55Z"
+    },
+    {
+     "ref": "US-2028",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:56Z"
+    },
+    {
+     "ref": "US-4374",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:56Z"
+    },
+    {
+     "ref": "US-4374",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:33:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 924.35,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2034+US-9082@area@43.271,-76.918": {
+   "id": "US-2034+US-9082@area@43.271,-76.918",
+   "area": "US-NY",
+   "refs": [
+    "US-2034",
+    "US-9082"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 144.3,
+   "stored_wide_m": 335,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:33:57Z",
+   "layers": [
+    {
+     "ref": "US-2034",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:57Z"
+    },
+    {
+     "ref": "US-2034",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:58Z"
+    },
+    {
+     "ref": "US-9082",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:33:59Z"
+    },
+    {
+     "ref": "US-9082",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "10 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 140.32,
+   "live_acres": 139.95,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 327.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9082: 10 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62135, 61921, 62411, 62409, 61923, 62136, 61922, 61924] | US-9082: found by name 'Lake Shore Marshes Wma' near the spot as new id(s) [None, None, None, None] (geometry now: CONFIRMED: live overlap 140.0 ac vs 140.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    43.2708,
+    -76.918588
+   ]
+  },
+  "US-2061+US-2128@area@40.625,-73.313": {
+   "id": "US-2061+US-2128@area@40.625,-73.313",
+   "area": "US-NY",
+   "refs": [
+    "US-2061",
+    "US-2128"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 30.5,
+   "stored_wide_m": 317,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:02Z",
+   "layers": [
+    {
+     "ref": "US-2061",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:03Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:34:03Z"
+    },
+    {
+     "ref": "US-2128",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:04Z"
+    },
+    {
+     "ref": "US-2128",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 29.84,
+   "live_acres": 30.03,
+   "kept_pct": 100.0,
+   "size_pct": 0.6,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 314.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.0 ac vs 29.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.624389,
+    -73.313029
+   ]
+  },
+  "US-2061+US-4374@area@40.625,-73.313": {
+   "id": "US-2061+US-4374@area@40.625,-73.313",
+   "area": "US-NY",
+   "refs": [
+    "US-2061",
+    "US-4374"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 30.4,
+   "stored_wide_m": 317,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:04Z",
+   "layers": [
+    {
+     "ref": "US-2061",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:03Z"
+    },
+    {
+     "ref": "US-2061",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:34:03Z"
+    },
+    {
+     "ref": "US-4374",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:04Z"
+    },
+    {
+     "ref": "US-4374",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 29.7,
+   "live_acres": 29.96,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 314.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.0 ac vs 29.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    40.624399,
+    -73.313031
+   ]
+  },
+  "US-2069+US-8319@area@41.298,-74.148": {
+   "id": "US-2069+US-8319@area@41.298,-74.148",
+   "area": "US-NY",
+   "refs": [
+    "US-2069",
+    "US-8319"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 83.9,
+   "stored_wide_m": 535,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:05Z",
+   "layers": [
+    {
+     "ref": "US-2069",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:05Z"
+    },
+    {
+     "ref": "US-2069",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "7 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T02:34:06Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 82.98,
+   "live_acres": 83.06,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 536.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 83.1 ac vs 83.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.297982,
+    -74.148044
+   ]
+  },
+  "US-2073+US-8319@area@41.191,-73.969": {
+   "id": "US-2073+US-8319@area@41.191,-73.969",
+   "area": "US-NY",
+   "refs": [
+    "US-2073",
+    "US-8319"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17.2,
+   "stored_wide_m": 235,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:07Z",
+   "layers": [
+    {
+     "ref": "US-2073",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:08Z"
+    },
+    {
+     "ref": "US-2073",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:09Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 16.67,
+   "live_acres": 16.63,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 235.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.6 ac vs 16.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.19084,
+    -73.969091
+   ]
+  },
+  "US-2074+US-8319@area@41.474,-74.324": {
+   "id": "US-2074+US-8319@area@41.474,-74.324",
+   "area": "US-NY",
+   "refs": [
+    "US-2074",
+    "US-8319"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.0,
+   "stored_wide_m": 59,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:10Z",
+   "layers": [
+    {
+     "ref": "US-2074",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:11Z"
+    },
+    {
+     "ref": "US-2074",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:12Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.57,
+   "live_acres": 4.66,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 61.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.7 ac vs 4.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.474419,
+    -74.324375
+   ]
+  },
+  "US-2079+US-5161@area@41.366,-73.936": {
+   "id": "US-2079+US-5161@area@41.366,-73.936",
+   "area": "US-NY",
+   "refs": [
+    "US-2079",
+    "US-5161"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 130.9,
+   "stored_wide_m": 441,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:13Z",
+   "layers": [
+    {
+     "ref": "US-2079",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:14Z"
+    },
+    {
+     "ref": "US-2079",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "39 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T02:34:15Z"
+    },
+    {
+     "ref": "US-5161",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 135.13,
+   "live_acres": 129.7,
+   "kept_pct": 96.8,
+   "size_pct": -4.0,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 439.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 129.7 ac vs 135.1 ac stored (-4%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.3664,
+    -73.936699
+   ]
+  },
+  "US-2080+US-9124@area@42.332,-73.776": {
+   "id": "US-2080+US-9124@area@42.332,-73.776",
+   "area": "US-NY",
+   "refs": [
+    "US-2080",
+    "US-9124"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 6.0,
+   "stored_wide_m": 45,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:17Z",
+   "layers": [
+    {
+     "ref": "US-2080",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:18Z"
+    },
+    {
+     "ref": "US-2080",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:34:19Z"
+    },
+    {
+     "ref": "US-9124",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:21Z"
+    },
+    {
+     "ref": "US-9124",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:22Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 13,
+     "read": "2026-11-01T02:34:24Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 2,
+     "read": "2026-11-01T02:34:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 82.9,
+   "stored_water_pct": 85,
+   "stored_shape_acres": 4.75,
+   "live_acres": 4.6,
+   "kept_pct": 100.0,
+   "size_pct": -3.1,
+   "moved_m": 28,
+   "gap_m": 0,
+   "wide_m": 47.0,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-9124: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63563] | US-9124: found by name 'Charles Flood Wma At The Empire Brickyard' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 4.6 ac vs 4.7 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.331217,
+    -73.775537
+   ]
+  },
+  "US-2096+US-8069@area@42.742,-77.882": {
+   "id": "US-2096+US-8069@area@42.742,-77.882",
+   "area": "US-NY",
+   "refs": [
+    "US-2096",
+    "US-8069"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.6,
+   "stored_wide_m": 37,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:26Z",
+   "layers": [
+    {
+     "ref": "US-2096",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:26Z"
+    },
+    {
+     "ref": "US-2096",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:34:27Z"
+    },
+    {
+     "ref": "US-8069",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:28Z"
+    },
+    {
+     "ref": "US-8069",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "41 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T02:34:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.07,
+   "live_acres": 3.48,
+   "kept_pct": 100.0,
+   "size_pct": 13.2,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 37.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.5 ac vs 3.1 ac stored (+13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.742396,
+    -77.881652
+   ]
+  },
+  "US-2097+US-8299@area@43.093,-77.548": {
+   "id": "US-2097+US-8299@area@43.093,-77.548",
+   "area": "US-NY",
+   "refs": [
+    "US-2097",
+    "US-8299"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.8,
+   "stored_wide_m": 53,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:30Z",
+   "layers": [
+    {
+     "ref": "US-2097",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:31Z"
+    },
+    {
+     "ref": "US-2097",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:32Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:34Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.28,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2100+US-5403@area@44.619,-73.632": {
+   "id": "US-2100+US-5403@area@44.619,-73.632",
+   "area": "US-NY",
+   "refs": [
+    "US-2100",
+    "US-5403"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.3,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:34Z",
+   "layers": [
+    {
+     "ref": "US-2100",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:35Z"
+    },
+    {
+     "ref": "US-2100",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:36Z"
+    },
+    {
+     "ref": "US-5403",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:37Z"
+    },
+    {
+     "ref": "US-5403",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.94,
+   "live_acres": 0.76,
+   "kept_pct": 100.0,
+   "size_pct": -19.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 18.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5403: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62187, 62008] | US-5403: found by name 'Macomb State Forest' near the spot as new id(s) [None, None] (geometry now: CONFIRMED: live overlap 0.8 ac vs 0.9 ac stored (-19%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    44.618683,
+    -73.633818
+   ]
+  },
+  "US-2118+US-5089@area@42.170,-75.416": {
+   "id": "US-2118+US-5089@area@42.170,-75.416",
+   "area": "US-NY",
+   "refs": [
+    "US-2118",
+    "US-5089"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 121.0,
+   "stored_wide_m": 555,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:40Z",
+   "layers": [
+    {
+     "ref": "US-2118",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:40Z"
+    },
+    {
+     "ref": "US-2118",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:41Z"
+    },
+    {
+     "ref": "US-5089",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:42Z"
+    },
+    {
+     "ref": "US-5089",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 119.57,
+   "live_acres": 119.65,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 550.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5089: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64657, 63680] | US-5089: found by name 'Arctic China State Forest' near the spot as new id(s) [None, None] (geometry now: CONFIRMED: live overlap 119.7 ac vs 119.6 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.170201,
+    -75.415754
+   ]
+  },
+  "US-2118+US-5415@area@42.171,-75.439": {
+   "id": "US-2118+US-5415@area@42.171,-75.439",
+   "area": "US-NY",
+   "refs": [
+    "US-2118",
+    "US-5415"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 337.6,
+   "stored_wide_m": 695,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:46Z",
+   "layers": [
+    {
+     "ref": "US-2118",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:46Z"
+    },
+    {
+     "ref": "US-2118",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:46Z"
+    },
+    {
+     "ref": "US-5415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:47Z"
+    },
+    {
+     "ref": "US-5415",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 335.78,
+   "live_acres": 335.75,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 699.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5415: 3 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63924, 63423, 63871] | US-5415: found by name 'Melondy Hill State Forest' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 335.8 ac vs 335.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.170755,
+    -75.439144
+   ]
+  },
+  "US-2121+US-5411@area@42.098,-77.215": {
+   "id": "US-2121+US-5411@area@42.098,-77.215",
+   "area": "US-NY",
+   "refs": [
+    "US-2121",
+    "US-5411"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 702.2,
+   "stored_wide_m": 1145,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:50Z",
+   "layers": [
+    {
+     "ref": "US-2121",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:50Z"
+    },
+    {
+     "ref": "US-5411",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:51Z"
+    },
+    {
+     "ref": "US-5411",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 702.45,
+   "live_acres": 700.9,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 1159.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5411: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62360] | US-5411: found by name 'Mccarthy Hill State Forest' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 700.9 ac vs 702.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.098168,
+    -77.215025
+   ]
+  },
+  "US-2122+US-5175@area@43.397,-75.341": {
+   "id": "US-2122+US-5175@area@43.397,-75.341",
+   "area": "US-NY",
+   "refs": [
+    "US-2122",
+    "US-5175"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.1,
+   "stored_wide_m": 35,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:34:54Z",
+   "layers": [
+    {
+     "ref": "US-2122",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:55Z"
+    },
+    {
+     "ref": "US-2122",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:56Z"
+    },
+    {
+     "ref": "US-5175",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:34:57Z"
+    },
+    {
+     "ref": "US-5175",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:34:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.97,
+   "live_acres": 0.91,
+   "kept_pct": 100.0,
+   "size_pct": -5.8,
+   "moved_m": 28,
+   "gap_m": 0,
+   "wide_m": 33.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5175: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62966] | US-5175: found by name 'Clark Hill State Forest' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 0.9 ac vs 1.0 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    43.397318,
+    -75.340981
+   ]
+  },
+  "US-2132+US-8319@area@41.130,-73.924": {
+   "id": "US-2132+US-8319@area@41.130,-73.924",
+   "area": "US-NY",
+   "refs": [
+    "US-2132",
+    "US-8319"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.2,
+   "stored_wide_m": 45,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:00Z",
+   "layers": [
+    {
+     "ref": "US-2132",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:01Z"
+    },
+    {
+     "ref": "US-2132",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:35:03Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.14,
+   "live_acres": 1.12,
+   "kept_pct": 100.0,
+   "size_pct": -1.2,
+   "moved_m": 45,
+   "gap_m": 0,
+   "wide_m": 44.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.1 ac vs 1.1 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.129678,
+    -73.924483
+   ]
+  },
+  "US-2144+US-8319@area@41.265,-74.184": {
+   "id": "US-2144+US-8319@area@41.265,-74.184",
+   "area": "US-NY",
+   "refs": [
+    "US-2144",
+    "US-8319"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 114.4,
+   "stored_wide_m": 323,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:04Z",
+   "layers": [
+    {
+     "ref": "US-2144",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:05Z"
+    },
+    {
+     "ref": "US-2144",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:35:06Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 13,
+   "stored_shape_acres": 112.35,
+   "live_acres": 112.22,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 326.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 112.2 ac vs 112.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.264641,
+    -74.184321
+   ]
+  },
+  "US-2159+US-5391@area@43.668,-75.502": {
+   "id": "US-2159+US-5391@area@43.668,-75.502",
+   "area": "US-NY",
+   "refs": [
+    "US-2159",
+    "US-5391"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 88.7,
+   "stored_wide_m": 526,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:07Z",
+   "layers": [
+    {
+     "ref": "US-2159",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:08Z"
+    },
+    {
+     "ref": "US-2159",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T02:35:09Z"
+    },
+    {
+     "ref": "US-5391",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:10Z"
+    },
+    {
+     "ref": "US-5391",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 87.95,
+   "live_acres": 88.18,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 98,
+   "gap_m": 0,
+   "wide_m": 534.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5391: 9 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64524, 64593, 63347, 62021, 62347, 62817, 62815, 63297] | US-5391: found by name 'Lesser Wilderness State Forest' near the spot as new id(s) [None, None, None, None, None] (geometry now: CONFIRMED: live overlap 88.2 ac vs 88.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    43.667849,
+    -75.500306
+   ]
+  },
+  "US-5088+US-5261@area@42.360,-76.240": {
+   "id": "US-5088+US-5261@area@42.360,-76.240",
+   "area": "US-NY",
+   "refs": [
+    "US-5088",
+    "US-5261"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.7,
+   "stored_wide_m": 45,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:13Z",
+   "layers": [
+    {
+     "ref": "US-5088",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:13Z"
+    },
+    {
+     "ref": "US-5088",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:14Z"
+    },
+    {
+     "ref": "US-5261",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:16Z"
+    },
+    {
+     "ref": "US-5261",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 2.1,
+   "live_acres": 2.04,
+   "kept_pct": 100.0,
+   "size_pct": -2.7,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 41.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5088: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63046] | US-5088: found by name 'Andersen Hill State Forest' near the spot as new id(s) [None] | US-5261: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64252, 64385] | US-5261: found by name 'Potato Hill State Forest' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 2.0 ac vs 2.1 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.359688,
+    -76.239942
+   ]
+  },
+  "US-5153+US-5154@same land@42.196,-77.380": {
+   "id": "US-5153+US-5154@same land@42.196,-77.380",
+   "area": "US-NY",
+   "refs": [
+    "US-5153",
+    "US-5154"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:20Z",
+   "layers": [
+    {
+     "ref": "US-5153",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:21Z"
+    },
+    {
+     "ref": "US-5153",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:23Z"
+    },
+    {
+     "ref": "US-5154",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:25Z"
+    },
+    {
+     "ref": "US-5154",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:26Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 544.02,
+   "live_acres": 543.96,
+   "kept_pct": 99.8,
+   "size_pct": -0.0,
+   "moved_m": 581,
+   "gap_m": 0,
+   "wide_m": 674.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5153: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64544, 64528] | US-5153: found by name 'Cameron State Forest' near the spot as new id(s) [None] | US-5154: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64528] | US-5154: found by name 'Cameron Mills State Forest' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 544.0 ac vs 544.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.199455,
+    -77.38507
+   ]
+  },
+  "US-5214+US-9062@area@42.305,-76.687": {
+   "id": "US-5214+US-9062@area@42.305,-76.687",
+   "area": "US-NY",
+   "refs": [
+    "US-5214",
+    "US-9062"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 108.2,
+   "stored_wide_m": 455,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:28Z",
+   "layers": [
+    {
+     "ref": "US-5214",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:28Z"
+    },
+    {
+     "ref": "US-5214",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:29Z"
+    },
+    {
+     "ref": "US-9062",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:32Z"
+    },
+    {
+     "ref": "US-9062",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 106.95,
+   "live_acres": 107.07,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 456.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5214: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64233] | US-5214: found by name 'Newfield State Forest' near the spot as new id(s) [None] | US-9062: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62049] | US-9062: found by name 'Connecticut Hill Wma' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 107.1 ac vs 106.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.305073,
+    -76.688342
+   ]
+  },
+  "US-5292+US-5623@area@41.735,-74.180": {
+   "id": "US-5292+US-5623@area@41.735,-74.180",
+   "area": "US-NY",
+   "refs": [
+    "US-5292",
+    "US-5623"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 60.9,
+   "stored_wide_m": 359,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:35Z",
+   "layers": [
+    {
+     "ref": "US-5292",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:36Z"
+    },
+    {
+     "ref": "US-5623",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:38Z"
+    },
+    {
+     "ref": "US-5623",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:35:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 60.41,
+   "live_acres": 60.12,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 363.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 60.1 ac vs 60.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.73448,
+    -74.178959
+   ]
+  },
+  "US-5376+US-5623@area@41.743,-74.350": {
+   "id": "US-5376+US-5623@area@41.743,-74.350",
+   "area": "US-NY",
+   "refs": [
+    "US-5376",
+    "US-5623"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.7,
+   "stored_wide_m": 31,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:40Z",
+   "layers": [
+    {
+     "ref": "US-5376",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:40Z"
+    },
+    {
+     "ref": "US-5376",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:41Z"
+    },
+    {
+     "ref": "US-5623",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:43Z"
+    },
+    {
+     "ref": "US-5623",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:35:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.0,
+   "live_acres": 1.42,
+   "kept_pct": 99.8,
+   "size_pct": 42.3,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 30.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5376: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62643] | US-5376: found by name 'Witch'S Hole State Forest' near the spot as new id(s) [None] (geometry now: GREW: live overlap is 42% bigger (1.4 ac vs 1.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    41.724017,
+    -74.358997
+   ]
+  },
+  "US-5385+US-5423@area@42.775,-76.026": {
+   "id": "US-5385+US-5423@area@42.775,-76.026",
+   "area": "US-NY",
+   "refs": [
+    "US-5385",
+    "US-5423"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16.7,
+   "stored_wide_m": 61,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:44Z",
+   "layers": [
+    {
+     "ref": "US-5385",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:44Z"
+    },
+    {
+     "ref": "US-5385",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:46Z"
+    },
+    {
+     "ref": "US-5423",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:48Z"
+    },
+    {
+     "ref": "US-5423",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 15.1,
+   "live_acres": 14.57,
+   "kept_pct": 100.0,
+   "size_pct": -3.5,
+   "moved_m": 56,
+   "gap_m": 0,
+   "wide_m": 56.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-5385: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62204] | US-5385: found by name 'Labrador Hollow Unique Area' near the spot as new id(s) [None] | US-5423: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62258, 62257] | US-5423: found by name 'Morgan Hill State Forest' near the spot as new id(s) [None, None] (geometry now: CONFIRMED: live overlap 14.6 ac vs 15.1 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.774566,
+    -76.02578
+   ]
+  },
+  "US-7734+US-8319@area@41.243,-73.985": {
+   "id": "US-7734+US-8319@area@41.243,-73.985",
+   "area": "US-NY",
+   "refs": [
+    "US-7734",
+    "US-8319"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1.5,
+   "stored_wide_m": 61,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:51Z",
+   "layers": [
+    {
+     "ref": "US-7734",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:51Z"
+    },
+    {
+     "ref": "US-8319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.36,
+   "live_acres": 1.33,
+   "kept_pct": 100.0,
+   "size_pct": -2.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 59.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.4 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.242973,
+    -73.985171
+   ]
+  },
+  "US-8096+US-8097@area@42.356,-75.460": {
+   "id": "US-8096+US-8097@area@42.356,-75.460",
+   "area": "US-NY",
+   "refs": [
+    "US-8096",
+    "US-8097"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1326.5,
+   "stored_wide_m": 1265,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:53Z",
+   "layers": [
+    {
+     "ref": "US-8096",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:54Z"
+    },
+    {
+     "ref": "US-8096",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:55Z"
+    },
+    {
+     "ref": "US-8097",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:35:54Z"
+    },
+    {
+     "ref": "US-8097",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 1338.77,
+   "live_acres": 1324.64,
+   "kept_pct": 99.3,
+   "size_pct": -1.1,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 1268.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-8096: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63379] | US-8096: found by name 'South Hill State Forest' near the spot as new id(s) [None, None, None] | US-8097: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62663] | US-8097: found by name 'South Hill State Forest' near the spot as new id(s) [None, None, None] (geometry now: CONFIRMED: live overlap 1324.6 ac vs 1338.8 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.355771,
+    -75.459704
+   ]
+  },
+  "US-8299+US-9029@area@43.067,-76.923": {
+   "id": "US-8299+US-9029@area@43.067,-76.923",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9029"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.5,
+   "stored_wide_m": 31,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:35:59Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:59Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:35:59Z"
+    },
+    {
+     "ref": "US-9029",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:36:00Z"
+    },
+    {
+     "ref": "US-9029",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.39,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9029: 2 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [61808, 63786] | US-9029: found by name 'Galen Wma' near the spot as new id(s) [None, None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "US-8299+US-9071@area@43.219,-76.051": {
+   "id": "US-8299+US-9071@area@43.219,-76.051",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9071"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.9,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:36:03Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:03Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:03Z"
+    },
+    {
+     "ref": "US-9071",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:36:04Z"
+    },
+    {
+     "ref": "US-9071",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.43,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9071: 4 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [64337, 64214, 64716, 63048] | US-9071: found by name 'Three Mile Bay Wma' near the spot as new id(s) [None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "US-8299+US-9083@area@43.020,-76.711": {
+   "id": "US-8299+US-9083@area@43.020,-76.711",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9083"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.7,
+   "stored_wide_m": 25,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:36:07Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:08Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:08Z"
+    },
+    {
+     "ref": "US-9083",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:36:09Z"
+    },
+    {
+     "ref": "US-9083",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "27 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 8,
+   "stored_shape_acres": 1.34,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "water-only"
+   ],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9083: 27 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63252, 62938, 63572, 62789, 63190, 62843, 64437, 64367] | US-9083: found by name 'Northern Montezuma Wma' near the spot as new id(s) [None, None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "US-8299+US-9083@area@43.044,-76.715": {
+   "id": "US-8299+US-9083@area@43.044,-76.715",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9083"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2.0,
+   "stored_wide_m": 59,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:36:12Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:12Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:12Z"
+    },
+    {
+     "ref": "US-9083",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:36:13Z"
+    },
+    {
+     "ref": "US-9083",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "27 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.32,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9083: 27 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [63252, 62938, 63572, 62789, 63190, 62843, 64437, 64367] | US-9083: found by name 'Northern Montezuma Wma' near the spot as new id(s) [None, None, None, None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "US-8299+US-9097@area@43.166,-75.328": {
+   "id": "US-8299+US-9097@area@43.166,-75.328",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9097"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.3,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:36:14Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:14Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:14Z"
+    },
+    {
+     "ref": "US-9097",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:36:15Z"
+    },
+    {
+     "ref": "US-9097",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.26,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9097: 1 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [61771] | US-9097: found by name 'Oriskany Flats Wma' near the spot as new id(s) [None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "US-8299+US-9099@area@43.020,-74.951": {
+   "id": "US-8299+US-9099@area@43.020,-74.951",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9099"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 29.6,
+   "stored_wide_m": 97,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:36:18Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:18Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:18Z"
+    },
+    {
+     "ref": "US-9099",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:36:19Z"
+    },
+    {
+     "ref": "US-9099",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13.29,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9099: 4 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [62353, 62352, 62351, 62354] | US-9099: found by name 'Plantation Island Wma' near the spot as new id(s) [None, None, None, None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "US-8299+US-9101@area@43.202,-75.504": {
+   "id": "US-8299+US-9101@area@43.202,-75.504",
+   "area": "US-NY",
+   "refs": [
+    "US-8299",
+    "US-9101"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.0,
+   "stored_wide_m": 35,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T02:36:22Z",
+   "layers": [
+    {
+     "ref": "US-8299",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:23Z"
+    },
+    {
+     "ref": "US-8299",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "how": "37 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:23Z"
+    },
+    {
+     "ref": "US-9101",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:36:24Z"
+    },
+    {
+     "ref": "US-9101",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:36:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 0.61,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "US-9101: 4 key record id(s) no longer in services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/NYS_DEC_Lands/FeatureServer/0/query: [61777, 61770, 61778, 61776] | US-9101: found by name 'Rome Wma' near the spot as new id(s) [None] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  }
+ },
+ "started": "2026-11-01T02:32:48Z",
+ "fers_sha256": "0b302d5f4ec0c3f139937aa36c0b97806ffe8c19065499de24c62e21ef596fea",
+ "live_rows": 50,
+ "skipped_rows": 274,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:41Z",
+ "complete": true,
+ "summary": {
+  "rows": 50,
+  "verdicts": {
+   "CONFIRMED": 13,
+   "SHRUNK": 1,
+   "GREW": 0,
+   "MOVED": 0,
+   "GONE": 11,
+   "RECORD CHANGED": 25,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 9,
+   "water-only": 5
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json"
+ ],
+ "requests_this_run": 1030
+}

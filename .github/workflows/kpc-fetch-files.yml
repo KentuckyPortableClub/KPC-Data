@@ -1,0 +1,52 @@
+name: KPC fetch files - boundary files by their link (daily for new links, monthly refresh)
+# Nov 1 2026 (chat 10; Brandon 8:59 PM links-pl.csv: Poland's GDOS zips on www.gov.pl/attachment). Reads fetch-*.json on the
+# intake-files branch, downloads each published file honestly (kpc_manners; a 403 / robot check is never bypassed), converts it
+# (kpc_handfile_convert) and puts file-<area>-<name>-*.geojson.gz on intake-files, where the layer collector's hand-file pass
+# matches them at the POTA pins. Daily = only links not fetched yet (quick, no download when there is nothing new);
+# the 4th of the month = every link again (a newer file replaces the old). Never red, never emails.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 10 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-fetch-files
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /.github/scripts/kpc_push_data.sh
+          sparse-checkout-cone-mode: false
+      - name: Fetch + convert
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name 'KPC bot'; git config user.email 'kpc-bot@users.noreply.github.com'
+          git fetch -q origin +refs/heads/intake-files:refs/remotes/origin/intake-files || exit 0
+          git worktree add -q ../inf origin/intake-files || exit 0
+          L=$(ls ../inf/fetch-*.json 2>/dev/null)
+          [ -z "$L" ] && { echo "::notice title=Fetch files::no fetch-*.json on intake-files"; exit 0; }
+          [ "$(date -u +%d)" = "04" ] && export REFRESH=1
+          python3 .github/scripts/kpc_fetch_files.py $L ../inf || true
+          cd ../inf
+          git add -A file-*.geojson.gz 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -qm "fetch files: boundary files by their link" || true
+            for i in 1 2 3; do git push -q origin HEAD:intake-files && break; git pull -q --rebase origin intake-files || true; sleep 5; done
+          fi
+          cd ../kpcdata
+          bash ../links/.github/scripts/kpc_push_data.sh . "fetch files: seen list" data/intake/fetch-seen.json || true

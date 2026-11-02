@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "oh",
+ "states": [
+  "US-OH"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 05:46 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 34,
+  "DROPPED": 106,
+  "NEVER LOOKED AT": 490
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 127,
+   "pairs whose boxes touch": 127
+  },
+  "pass2": {
+   "agree with the pass before": 125,
+   "date": "2026-10-30",
+   "pairs tested": 40
+  },
+  "pass3": {
+   "agree with the pass before": 40,
+   "date": "2026-10-30",
+   "pairs tested": 40
+  },
+  "pass5": {
+   "checked": 15,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-OH": "data/fers/US-OH.json"
+ },
+ "US-OH": {
+  "rows": 296,
+  "live": 34,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 119,
+  "merged": 142
+ },
+ "states_ready": [
+  "US-OH"
+ ],
+ "states_held": []
+}

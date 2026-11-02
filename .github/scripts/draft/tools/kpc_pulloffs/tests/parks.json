@@ -1,0 +1,41 @@
+[
+ {
+  "ref": "US-9001",
+  "name": "Test Lake WMA",
+  "outline_file": "outline_US-9001.geojson",
+  "lat": 37.7028048,
+  "lon": -83.6955654,
+  "area": "US-KY"
+ },
+ {
+  "ref": "US-9002",
+  "name": "City Park with no official outline",
+  "lat": 37.7111149,
+  "lon": -83.6867927,
+  "area": "US-KY"
+ },
+ {
+  "ref": "US-9003",
+  "name": "Lonely Ridge SNP (no access points)",
+  "outline_file": "outline_US-9003.geojson",
+  "lat": 37.7023693,
+  "lon": -83.6751358,
+  "area": "US-KY"
+ },
+ {
+  "ref": "US-9004",
+  "name": "Park whose outline host says no in robots.txt",
+  "outline_url": "https://data.example.gov/private/outline.geojson",
+  "lat": 37.7111149,
+  "lon": -83.6867927,
+  "area": "US-KY"
+ },
+ {
+  "ref": "US-9005",
+  "name": "Tennessee park (filtered out by --areas)",
+  "outline_file": "outline_US-9001.geojson",
+  "lat": 37.7111149,
+  "lon": -83.6867927,
+  "area": "US-TN"
+ }
+]

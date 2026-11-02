@@ -1,0 +1,9 @@
+# Python 3.12 (GitHub Actions ubuntu-latest). Plain fetches use the standard library (kpc_manners).
+shapely>=2.0
+pyproj>=3.6
+pyshp>=2.3
+pypdf>=4.0
+openpyxl>=3.1   # page-fix (docs-pagefix) test + xlsx hand-back files
+pytest>=8.0
+# optional: script-filled pages (KPC_BROWSER=1). `pip install playwright && python -m playwright install --with-deps chromium`
+# playwright>=1.45

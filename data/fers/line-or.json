@@ -1,0 +1,61 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "or",
+ "states": [
+  "US-OR"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 03:42 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 98,
+  "DROPPED": 382,
+  "NEVER LOOKED AT": 1402
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 1576,
+   "pairs whose boxes touch": 1576
+  },
+  "pass2": {
+   "agree with the pass before": 1079,
+   "date": "2026-11-02",
+   "pairs tested": 266
+  },
+  "pass3": {
+   "agree with the pass before": 448,
+   "date": "2026-11-02",
+   "pairs tested": 256
+  },
+  "pass5": {
+   "checked": 65,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-OR": "data/fers/US-OR.json"
+ },
+ "US-OR": {
+  "rows": 1177,
+  "live": 114,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 31,
+   "this spot is 184 km from Irrigon State Fish Hatchery's POTA": 1,
+   "no public owner on the ownership map": 5,
+   "low-confidence outline for Whychus Creek National Wild and S": 1
+  },
+  "dropped": 768,
+  "merged": 257
+ },
+ "states_ready": [
+  "US-OR"
+ ],
+ "states_held": []
+}

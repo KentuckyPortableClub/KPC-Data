@@ -1,0 +1,64 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ut",
+ "states": [
+  "US-UT"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 13:33 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 1768 of 2211 pairs whose boxes touch"
+ ],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 66,
+  "DROPPED": 345,
+  "NEVER LOOKED AT": 2656
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 1768,
+   "pairs whose boxes touch": 2211,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 738,
+   "date": "2026-11-02",
+   "pairs tested": 301
+  },
+  "pass3": {
+   "agree with the pass before": 334,
+   "date": "2026-11-02",
+   "pairs tested": 287
+  },
+  "pass5": {
+   "checked": 56,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-UT": "data/fers/US-UT.json"
+ },
+ "US-UT": {
+  "rows": 851,
+  "live": 114,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 52,
+   "no public owner on the ownership map": 4,
+   "this spot is 217 km from Salt Creek State Waterfowl Manageme": 1
+  },
+  "dropped": 532,
+  "merged": 148
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-UT"
+ ]
+}

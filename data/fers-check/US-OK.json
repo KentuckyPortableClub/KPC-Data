@@ -1,0 +1,3137 @@
+{
+ "area": "US-OK",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-OK.json",
+ "rows": {
+  "US-0486+US-6367@area@33.927,-94.720": {
+   "id": "US-0486+US-6367@area@33.927,-94.720",
+   "area": "US-OK",
+   "refs": [
+    "US-0486",
+    "US-6367"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 175.6,
+   "stored_wide_m": 459,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:42:37Z",
+   "layers": [
+    {
+     "ref": "US-0486",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:42:37Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:39Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:41Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 173.65,
+   "live_acres": 172.94,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 460.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 172.9 ac vs 173.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.926725,
+    -94.719708
+   ]
+  },
+  "US-0489+US-2783@area@36.747,-98.133": {
+   "id": "US-0489+US-2783@area@36.747,-98.133",
+   "area": "US-OK",
+   "refs": [
+    "US-0489",
+    "US-2783"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 12.5,
+   "stored_wide_m": 201,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:42:43Z",
+   "layers": [
+    {
+     "ref": "US-0489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:42:43Z"
+    },
+    {
+     "ref": "US-2783",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:45Z"
+    },
+    {
+     "ref": "US-2783",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 32,
+   "stored_shape_acres": 12.09,
+   "live_acres": 12.21,
+   "kept_pct": 100.0,
+   "size_pct": 1.0,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 205.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.2 ac vs 12.1 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.746743,
+    -98.1334
+   ]
+  },
+  "US-10203+US-12027@area@34.965,-99.339": {
+   "id": "US-10203+US-12027@area@34.965,-99.339",
+   "area": "US-OK",
+   "refs": [
+    "US-10203",
+    "US-12027"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 559.9,
+   "stored_wide_m": 987,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:42:49Z",
+   "layers": [
+    {
+     "ref": "US-10203",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:49Z"
+    },
+    {
+     "ref": "US-12027",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:50Z"
+    },
+    {
+     "ref": "US-12027",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:52Z"
+    },
+    {
+     "ref": "US-12027",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 95,
+   "stored_shape_acres": 556.23,
+   "live_acres": 555.28,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 21,
+   "gap_m": 0,
+   "wide_m": 979.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 555.3 ac vs 556.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.965363,
+    -99.338525
+   ]
+  },
+  "US-10203+US-8652@area@34.965,-99.339": {
+   "id": "US-10203+US-8652@area@34.965,-99.339",
+   "area": "US-OK",
+   "refs": [
+    "US-10203",
+    "US-8652"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 559.9,
+   "stored_wide_m": 987,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:42:53Z",
+   "layers": [
+    {
+     "ref": "US-10203",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:49Z"
+    },
+    {
+     "ref": "US-8652",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:50Z"
+    },
+    {
+     "ref": "US-8652",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:52Z"
+    },
+    {
+     "ref": "US-8652",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 95,
+   "stored_shape_acres": 556.23,
+   "live_acres": 555.28,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 21,
+   "gap_m": 0,
+   "wide_m": 979.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 555.3 ac vs 556.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.965363,
+    -99.338525
+   ]
+  },
+  "US-10305+US-2773@area@36.851,-102.878": {
+   "id": "US-10305+US-2773@area@36.851,-102.878",
+   "area": "US-OK",
+   "refs": [
+    "US-10305",
+    "US-2773"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 716.2,
+   "stored_wide_m": 1285,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T02:42:53Z",
+   "layers": [
+    {
+     "ref": "US-10305",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:53Z"
+    },
+    {
+     "ref": "US-10305",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:55Z"
+    },
+    {
+     "ref": "US-2773",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:55Z"
+    },
+    {
+     "ref": "US-2773",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 22,
+   "stored_shape_acres": 712.77,
+   "live_acres": 713.18,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 1271.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 713.2 ac vs 712.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.851149,
+    -102.878384
+   ]
+  },
+  "US-11321+US-6366@area@34.751,-94.830": {
+   "id": "US-11321+US-6366@area@34.751,-94.830",
+   "area": "US-OK",
+   "refs": [
+    "US-11321",
+    "US-6366"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 26110.4,
+   "stored_wide_m": 2709,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:42:57Z",
+   "layers": [
+    {
+     "ref": "US-11321",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:57Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:42:59Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:01Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8602.78,
+   "live_acres": 26609.69,
+   "kept_pct": 99.3,
+   "size_pct": 1.9,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 2727.8,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 26609.7 ac vs 26110.4 ac stored (row acres; the stored shape is a 8602.8 ac preview) (+2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.741497,
+    -94.73169
+   ]
+  },
+  "US-11321+US-8321@trail@34.795,-94.924": {
+   "id": "US-11321+US-8321@trail@34.795,-94.924",
+   "area": "US-OK",
+   "refs": [
+    "US-11321",
+    "US-8321"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 109.2,
+   "stored_wide_m": 101.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:02Z",
+   "layers": [
+    {
+     "ref": "US-11321",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:02Z"
+    },
+    {
+     "ref": "US-8321",
+     "layer": "saved copy US-8321.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-8321"
+   ],
+   "live_stretch_acres": 104.61,
+   "stored_shape_acres": 102.41,
+   "live_acres": 104.61,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 51,
+   "gap_m": 0,
+   "wide_m": 93.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 104.6 ac vs 102.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.79412,
+    -94.923875
+   ]
+  },
+  "US-11322+US-6366@area@34.582,-94.528": {
+   "id": "US-11322+US-6366@area@34.582,-94.528",
+   "area": "US-OK",
+   "refs": [
+    "US-11322",
+    "US-6366"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8035.1,
+   "stored_wide_m": 2280,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:02Z",
+   "layers": [
+    {
+     "ref": "US-11322",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:03Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:04Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:05Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8834.25,
+   "live_acres": 7937.37,
+   "kept_pct": 87.4,
+   "size_pct": -10.2,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 2281.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7937.4 ac vs 8834.3 ac stored (-10%), 87% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.582233,
+    -94.528194
+   ]
+  },
+  "US-12167+US-2779@area@35.204,-98.490": {
+   "id": "US-12167+US-2779@area@35.204,-98.490",
+   "area": "US-OK",
+   "refs": [
+    "US-12167",
+    "US-2779"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.7,
+   "stored_wide_m": 35,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:43:05Z",
+   "layers": [
+    {
+     "ref": "US-12167",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:06Z"
+    },
+    {
+     "ref": "US-12167",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:08Z"
+    },
+    {
+     "ref": "US-12167",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:08Z"
+    },
+    {
+     "ref": "US-2779",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:09Z"
+    },
+    {
+     "ref": "US-2779",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.31,
+   "live_acres": 2.02,
+   "kept_pct": 99.5,
+   "size_pct": -12.6,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 26.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.0 ac vs 2.3 ac stored (-13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.204183,
+    -98.489809
+   ]
+  },
+  "US-12167+US-2779@area@35.207,-98.495": {
+   "id": "US-12167+US-2779@area@35.207,-98.495",
+   "area": "US-OK",
+   "refs": [
+    "US-12167",
+    "US-2779"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 13.9,
+   "stored_wide_m": 125,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:43:11Z",
+   "layers": [
+    {
+     "ref": "US-12167",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:11Z"
+    },
+    {
+     "ref": "US-12167",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:12Z"
+    },
+    {
+     "ref": "US-12167",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:13Z"
+    },
+    {
+     "ref": "US-2779",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:13Z"
+    },
+    {
+     "ref": "US-2779",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:14Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T02:43:16Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 2,
+     "read": "2026-11-01T02:43:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 100.0,
+   "stored_water_pct": 100,
+   "stored_shape_acres": 13.26,
+   "live_acres": 13.17,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 122.9,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13.2 ac vs 13.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.207224,
+    -98.495189
+   ]
+  },
+  "US-12684+US-6366@area@34.770,-94.762": {
+   "id": "US-12684+US-6366@area@34.770,-94.762",
+   "area": "US-OK",
+   "refs": [
+    "US-12684",
+    "US-6366"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3697.6,
+   "stored_wide_m": 2525,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:20Z",
+   "layers": [
+    {
+     "ref": "US-12684",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:20Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:22Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:23Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3681.51,
+   "live_acres": 4748.19,
+   "kept_pct": 100.0,
+   "size_pct": 29.0,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 2541.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 29% bigger (4748.2 ac vs 3681.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    34.772032,
+    -94.931066
+   ]
+  },
+  "US-12684+US-8321@trail@34.709,-94.682": {
+   "id": "US-12684+US-8321@trail@34.709,-94.682",
+   "area": "US-OK",
+   "refs": [
+    "US-12684",
+    "US-8321"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 127.05,
+   "stored_wide_m": 93.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:23Z",
+   "layers": [
+    {
+     "ref": "US-12684",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:23Z"
+    },
+    {
+     "ref": "US-8321",
+     "layer": "saved copy US-8321.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-8321"
+   ],
+   "stored_shape_note": "stored zone outline (279 ac) disagrees with zone_acres (127.05): compared against the stored stretch line + 100 ft instead",
+   "live_stretch_acres": 69.72,
+   "stored_shape_acres": 131.11,
+   "live_acres": 69.72,
+   "kept_pct": 55.0,
+   "size_pct": -46.8,
+   "moved_m": 848,
+   "gap_m": 0,
+   "wide_m": 86.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 47% smaller (69.7 ac vs 131.1 ac stored)",
+   "live_center": [
+    34.70623,
+    -94.673387
+   ]
+  },
+  "US-2771+US-6367@area@34.196,-94.754": {
+   "id": "US-2771+US-6367@area@34.196,-94.754",
+   "area": "US-OK",
+   "refs": [
+    "US-2771",
+    "US-6367"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 36.4,
+   "stored_wide_m": 159,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:23Z",
+   "layers": [
+    {
+     "ref": "US-2771",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:23Z"
+    },
+    {
+     "ref": "US-2771",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:43:24Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:25Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:26Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 27.7,
+   "live_acres": 27.38,
+   "kept_pct": 99.7,
+   "size_pct": -1.1,
+   "moved_m": 1153,
+   "gap_m": 0,
+   "wide_m": 121.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 27.4 ac vs 27.7 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.196339,
+    -94.754159
+   ]
+  },
+  "US-2777+US-6370@area@34.546,-95.317": {
+   "id": "US-2777+US-6370@area@34.546,-95.317",
+   "area": "US-OK",
+   "refs": [
+    "US-2777",
+    "US-6370"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 434.4,
+   "stored_wide_m": 955,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:27Z",
+   "layers": [
+    {
+     "ref": "US-2777",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:27Z"
+    },
+    {
+     "ref": "US-2777",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:28Z"
+    },
+    {
+     "ref": "US-6370",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:29Z"
+    },
+    {
+     "ref": "US-6370",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:31Z"
+    },
+    {
+     "ref": "US-6370",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 433.19,
+   "live_acres": 432.52,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 957.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 432.5 ac vs 433.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.546242,
+    -95.317317
+   ]
+  },
+  "US-2782+US-6362@area@34.744,-99.009": {
+   "id": "US-2782+US-6362@area@34.744,-99.009",
+   "area": "US-OK",
+   "refs": [
+    "US-2782",
+    "US-6362"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 697.8,
+   "stored_wide_m": 1017,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:43:32Z",
+   "layers": [
+    {
+     "ref": "US-2782",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:32Z"
+    },
+    {
+     "ref": "US-2782",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:33Z"
+    },
+    {
+     "ref": "US-6362",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:34Z"
+    },
+    {
+     "ref": "US-6362",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:36Z"
+    },
+    {
+     "ref": "US-6362",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 693.18,
+   "live_acres": 695.18,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 1010.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 695.2 ac vs 693.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.743886,
+    -99.008125
+   ]
+  },
+  "US-2784+US-6359@area@35.614,-95.172": {
+   "id": "US-2784+US-6359@area@35.614,-95.172",
+   "area": "US-OK",
+   "refs": [
+    "US-2784",
+    "US-6359"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8.8,
+   "stored_wide_m": 103,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:38Z",
+   "layers": [
+    {
+     "ref": "US-2784",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:38Z"
+    },
+    {
+     "ref": "US-2784",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:39Z"
+    },
+    {
+     "ref": "US-6359",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:40Z"
+    },
+    {
+     "ref": "US-6359",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:42Z"
+    },
+    {
+     "ref": "US-6359",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:43:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 8.23,
+   "live_acres": 8.28,
+   "kept_pct": 100.0,
+   "size_pct": 0.6,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 104.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.3 ac vs 8.2 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.613797,
+    -95.172397
+   ]
+  },
+  "US-2784+US-6359@area@35.621,-95.180": {
+   "id": "US-2784+US-6359@area@35.621,-95.180",
+   "area": "US-OK",
+   "refs": [
+    "US-2784",
+    "US-6359"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.6,
+   "stored_wide_m": 51,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:44Z",
+   "layers": [
+    {
+     "ref": "US-2784",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:44Z"
+    },
+    {
+     "ref": "US-2784",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:45Z"
+    },
+    {
+     "ref": "US-6359",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:45Z"
+    },
+    {
+     "ref": "US-6359",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:46Z"
+    },
+    {
+     "ref": "US-6359",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:43:47Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T02:43:47Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 13,
+     "read": "2026-11-01T02:43:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 15.6,
+   "stored_water_pct": 95,
+   "stored_shape_acres": 1.37,
+   "live_acres": 1.29,
+   "kept_pct": 98.5,
+   "size_pct": -5.7,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 50.0,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.4 ac stored (-6%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.621108,
+    -95.180427
+   ]
+  },
+  "US-2787+US-6353@area@34.107,-95.420": {
+   "id": "US-2787+US-6353@area@34.107,-95.420",
+   "area": "US-OK",
+   "refs": [
+    "US-2787",
+    "US-6353"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 398.6,
+   "stored_wide_m": 878,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:43:57Z",
+   "layers": [
+    {
+     "ref": "US-2787",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:43:57Z"
+    },
+    {
+     "ref": "US-2787",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:43:59Z"
+    },
+    {
+     "ref": "US-6353",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:00Z"
+    },
+    {
+     "ref": "US-6353",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:02Z"
+    },
+    {
+     "ref": "US-6353",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:44:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 90,
+   "stored_shape_acres": 396.29,
+   "live_acres": 396.75,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 892.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 396.8 ac vs 396.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.107264,
+    -95.419672
+   ]
+  },
+  "US-2787+US-6353@area@34.108,-95.446": {
+   "id": "US-2787+US-6353@area@34.108,-95.446",
+   "area": "US-OK",
+   "refs": [
+    "US-2787",
+    "US-6353"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 142.9,
+   "stored_wide_m": 367,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:03Z",
+   "layers": [
+    {
+     "ref": "US-2787",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:03Z"
+    },
+    {
+     "ref": "US-2787",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:44:04Z"
+    },
+    {
+     "ref": "US-6353",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:04Z"
+    },
+    {
+     "ref": "US-6353",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:05Z"
+    },
+    {
+     "ref": "US-6353",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:44:05Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T02:44:10Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 55,
+     "read": "2026-11-01T02:44:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 100.0,
+   "stored_water_pct": 98,
+   "stored_shape_acres": 139.47,
+   "live_acres": 138.87,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 367.3,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 138.9 ac vs 139.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.108415,
+    -95.446322
+   ]
+  },
+  "US-2789+US-6350@area@35.404,-95.634": {
+   "id": "US-2789+US-6350@area@35.404,-95.634",
+   "area": "US-OK",
+   "refs": [
+    "US-2789",
+    "US-6350"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 69.0,
+   "stored_wide_m": 325,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:11Z",
+   "layers": [
+    {
+     "ref": "US-2789",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:11Z"
+    },
+    {
+     "ref": "US-2789",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:12Z"
+    },
+    {
+     "ref": "US-6350",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:13Z"
+    },
+    {
+     "ref": "US-6350",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:15Z"
+    },
+    {
+     "ref": "US-6350",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 41,
+   "stored_shape_acres": 67.25,
+   "live_acres": 67.71,
+   "kept_pct": 100.0,
+   "size_pct": 0.7,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 323.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 67.7 ac vs 67.3 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.404364,
+    -95.634563
+   ]
+  },
+  "US-2793+US-6380@area@34.919,-94.742": {
+   "id": "US-2793+US-6380@area@34.919,-94.742",
+   "area": "US-OK",
+   "refs": [
+    "US-2793",
+    "US-6380"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2047.9,
+   "stored_wide_m": 1723,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:17Z",
+   "layers": [
+    {
+     "ref": "US-2793",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:17Z"
+    },
+    {
+     "ref": "US-2793",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:18Z"
+    },
+    {
+     "ref": "US-6380",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:19Z"
+    },
+    {
+     "ref": "US-6380",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:20Z"
+    },
+    {
+     "ref": "US-6380",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:44:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 21,
+   "stored_shape_acres": 1816.79,
+   "live_acres": 1811.79,
+   "kept_pct": 99.9,
+   "size_pct": -0.3,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 1723.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1811.8 ac vs 1816.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.918608,
+    -94.742293
+   ]
+  },
+  "US-2795+US-6361@area@34.355,-95.873": {
+   "id": "US-2795+US-6361@area@34.355,-95.873",
+   "area": "US-OK",
+   "refs": [
+    "US-2795",
+    "US-6361"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 26.7,
+   "stored_wide_m": 201,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:22Z",
+   "layers": [
+    {
+     "ref": "US-2795",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:22Z"
+    },
+    {
+     "ref": "US-2795",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:23Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:24Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:26Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 22,
+   "stored_shape_acres": 25.52,
+   "live_acres": 24.94,
+   "kept_pct": 100.0,
+   "size_pct": -2.3,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 195.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 24.9 ac vs 25.5 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.362206,
+    -95.877193
+   ]
+  },
+  "US-2795+US-6361@area@34.359,-95.888": {
+   "id": "US-2795+US-6361@area@34.359,-95.888",
+   "area": "US-OK",
+   "refs": [
+    "US-2795",
+    "US-6361"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 3.6,
+   "stored_wide_m": 31,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:27Z",
+   "layers": [
+    {
+     "ref": "US-2795",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:28Z"
+    },
+    {
+     "ref": "US-2795",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:29Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:29Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:30Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:30Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T02:44:31Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T02:44:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 16.6,
+   "stored_water_pct": 42,
+   "stored_shape_acres": 2.21,
+   "live_acres": 0.76,
+   "kept_pct": 67.5,
+   "size_pct": -65.6,
+   "moved_m": 30,
+   "gap_m": 0,
+   "wide_m": 15.4,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 66% smaller (0.8 ac vs 2.2 ac stored)",
+   "live_center": [
+    34.358473,
+    -95.889283
+   ]
+  },
+  "US-2800+US-6373@area@34.986,-95.322": {
+   "id": "US-2800+US-6373@area@34.986,-95.322",
+   "area": "US-OK",
+   "refs": [
+    "US-2800",
+    "US-6373"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5045.9,
+   "stored_wide_m": 3349,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:38Z",
+   "layers": [
+    {
+     "ref": "US-2800",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:39Z"
+    },
+    {
+     "ref": "US-2800",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:40Z"
+    },
+    {
+     "ref": "US-6373",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:41Z"
+    },
+    {
+     "ref": "US-6373",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:43Z"
+    },
+    {
+     "ref": "US-6373",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:44:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5214.36,
+   "live_acres": 5053.13,
+   "kept_pct": 97.3,
+   "size_pct": -3.1,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 3363.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5053.1 ac vs 5214.4 ac stored (-3%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.986149,
+    -95.321574
+   ]
+  },
+  "US-2801+US-8640@area@35.944,-98.422": {
+   "id": "US-2801+US-8640@area@35.944,-98.422",
+   "area": "US-OK",
+   "refs": [
+    "US-2801",
+    "US-8640"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 226.3,
+   "stored_wide_m": 652,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:44:44Z",
+   "layers": [
+    {
+     "ref": "US-2801",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:44Z"
+    },
+    {
+     "ref": "US-2801",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:45Z"
+    },
+    {
+     "ref": "US-8640",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:46Z"
+    },
+    {
+     "ref": "US-8640",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:48Z"
+    },
+    {
+     "ref": "US-8640",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 16,
+   "stored_shape_acres": 223.94,
+   "live_acres": 223.36,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 648.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 223.4 ac vs 223.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.9436,
+    -98.42239
+   ]
+  },
+  "US-2802+US-2803@same land@35.912,-95.249": {
+   "id": "US-2802+US-2803@same land@35.912,-95.249",
+   "area": "US-OK",
+   "refs": [
+    "US-2802",
+    "US-2803"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:49Z",
+   "layers": [
+    {
+     "ref": "US-2802",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:50Z"
+    },
+    {
+     "ref": "US-2802",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:44:51Z"
+    },
+    {
+     "ref": "US-2803",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:50Z"
+    },
+    {
+     "ref": "US-2803",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:44:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2250.76,
+   "live_acres": 2272.43,
+   "kept_pct": 99.6,
+   "size_pct": 1.0,
+   "moved_m": 330,
+   "gap_m": 0,
+   "wide_m": 2144.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2272.4 ac vs 2250.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.913619,
+    -95.251465
+   ]
+  },
+  "US-2802+US-6333@area@35.929,-95.228": {
+   "id": "US-2802+US-6333@area@35.929,-95.228",
+   "area": "US-OK",
+   "refs": [
+    "US-2802",
+    "US-6333"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2.9,
+   "stored_wide_m": 75,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:52Z",
+   "layers": [
+    {
+     "ref": "US-2802",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:44:52Z"
+    },
+    {
+     "ref": "US-2802",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:53Z"
+    },
+    {
+     "ref": "US-6333",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:53Z"
+    },
+    {
+     "ref": "US-6333",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:55Z"
+    },
+    {
+     "ref": "US-6333",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 2.69,
+   "live_acres": 2.44,
+   "kept_pct": 100.0,
+   "size_pct": -9.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 72.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.7 ac stored (-9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.929112,
+    -95.227396
+   ]
+  },
+  "US-2803+US-6333@area@35.929,-95.228": {
+   "id": "US-2803+US-6333@area@35.929,-95.228",
+   "area": "US-OK",
+   "refs": [
+    "US-2803",
+    "US-6333"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2.9,
+   "stored_wide_m": 75,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:56Z",
+   "layers": [
+    {
+     "ref": "US-2803",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:44:52Z"
+    },
+    {
+     "ref": "US-2803",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:53Z"
+    },
+    {
+     "ref": "US-6333",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:53Z"
+    },
+    {
+     "ref": "US-6333",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:55Z"
+    },
+    {
+     "ref": "US-6333",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 2.69,
+   "live_acres": 2.44,
+   "kept_pct": 100.0,
+   "size_pct": -9.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 72.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 2.7 ac stored (-9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.929112,
+    -95.227396
+   ]
+  },
+  "US-2806+US-8321@trail@34.783,-94.950": {
+   "id": "US-2806+US-8321@trail@34.783,-94.950",
+   "area": "US-OK",
+   "refs": [
+    "US-2806",
+    "US-8321"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.4,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:56Z",
+   "layers": [
+    {
+     "ref": "US-2806",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:57Z"
+    },
+    {
+     "ref": "US-8321",
+     "layer": "saved copy US-8321.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-8321"
+   ],
+   "live_stretch_acres": 1.33,
+   "stored_shape_acres": 1.24,
+   "live_acres": 1.33,
+   "kept_pct": 100.0,
+   "size_pct": 6.6,
+   "moved_m": 33,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.2 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.783263,
+    -94.950808
+   ]
+  },
+  "US-6341+US-6360@area@34.274,-94.662": {
+   "id": "US-6341+US-6360@area@34.274,-94.662",
+   "area": "US-OK",
+   "refs": [
+    "US-6341",
+    "US-6360"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.0,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:44:58Z",
+   "layers": [
+    {
+     "ref": "US-6341",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:44:58Z"
+    },
+    {
+     "ref": "US-6341",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:00Z"
+    },
+    {
+     "ref": "US-6341",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:01Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:02Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:04Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.59,
+   "live_acres": 1.3,
+   "kept_pct": 95.5,
+   "size_pct": -18.2,
+   "moved_m": 817,
+   "gap_m": 0,
+   "wide_m": 18.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.6 ac stored (-18%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.272193,
+    -94.662135
+   ]
+  },
+  "US-6341+US-6360@area@34.324,-94.699": {
+   "id": "US-6341+US-6360@area@34.324,-94.699",
+   "area": "US-OK",
+   "refs": [
+    "US-6341",
+    "US-6360"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
+   "stored_acres": 4.2,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:05Z",
+   "layers": [
+    {
+     "ref": "US-6341",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:05Z"
+    },
+    {
+     "ref": "US-6341",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:06Z"
+    },
+    {
+     "ref": "US-6341",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:06Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:07Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:08Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.21,
+   "live_acres": 1.65,
+   "kept_pct": 94.1,
+   "size_pct": -25.2,
+   "moved_m": 713,
+   "gap_m": 0,
+   "wide_m": 12.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 25% smaller (1.7 ac vs 2.2 ac stored)",
+   "live_center": [
+    34.32363,
+    -94.692191
+   ]
+  },
+  "US-6341+US-6367@area@34.346,-94.672": {
+   "id": "US-6341+US-6367@area@34.346,-94.672",
+   "area": "US-OK",
+   "refs": [
+    "US-6341",
+    "US-6367"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 791.0,
+   "stored_wide_m": 641,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:08Z",
+   "layers": [
+    {
+     "ref": "US-6341",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:09Z"
+    },
+    {
+     "ref": "US-6341",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:10Z"
+    },
+    {
+     "ref": "US-6341",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:10Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:11Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:12Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 324.07,
+   "live_acres": 322.28,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 1753,
+   "gap_m": 0,
+   "wide_m": 406.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 322.3 ac vs 324.1 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.35067,
+    -94.690074
+   ]
+  },
+  "US-6346+US-6347+US-8122@area@36.531,-99.525": {
+   "id": "US-6346+US-6347+US-8122@area@36.531,-99.525",
+   "area": "US-OK",
+   "refs": [
+    "US-6346",
+    "US-6347",
+    "US-8122"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2.5,
+   "stored_wide_m": 75,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:45:12Z",
+   "layers": [
+    {
+     "ref": "US-6346",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:13Z"
+    },
+    {
+     "ref": "US-6346",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:15Z"
+    },
+    {
+     "ref": "US-6346",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:15Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:16Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:45:17Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:45:18Z"
+    },
+    {
+     "ref": "US-8122",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:19Z"
+    },
+    {
+     "ref": "US-8122",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:20Z"
+    },
+    {
+     "ref": "US-8122",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.38,
+   "live_acres": 2.35,
+   "kept_pct": 100.0,
+   "size_pct": -1.3,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 80.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.4 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.531181,
+    -99.524927
+   ]
+  },
+  "US-6346+US-6347@area@36.545,-99.505": {
+   "id": "US-6346+US-6347@area@36.545,-99.505",
+   "area": "US-OK",
+   "refs": [
+    "US-6346",
+    "US-6347"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16258.8,
+   "stored_wide_m": 4543,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:45:22Z",
+   "layers": [
+    {
+     "ref": "US-6346",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:23Z"
+    },
+    {
+     "ref": "US-6346",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:24Z"
+    },
+    {
+     "ref": "US-6346",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:24Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:24Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:45:25Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:45:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 16426.93,
+   "live_acres": 16297.78,
+   "kept_pct": 99.3,
+   "size_pct": -0.8,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 4568.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16297.8 ac vs 16426.9 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.545351,
+    -99.505088
+   ]
+  },
+  "US-6346+US-8122@area@36.531,-99.525": {
+   "id": "US-6346+US-8122@area@36.531,-99.525",
+   "area": "US-OK",
+   "refs": [
+    "US-6346",
+    "US-8122"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3.1,
+   "stored_wide_m": 85,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:45:25Z",
+   "layers": [
+    {
+     "ref": "US-6346",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:26Z"
+    },
+    {
+     "ref": "US-6346",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:27Z"
+    },
+    {
+     "ref": "US-6346",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:27Z"
+    },
+    {
+     "ref": "US-8122",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:28Z"
+    },
+    {
+     "ref": "US-8122",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:28Z"
+    },
+    {
+     "ref": "US-8122",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.74,
+   "live_acres": 2.52,
+   "kept_pct": 100.0,
+   "size_pct": -8.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 80.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.5 ac vs 2.7 ac stored (-8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.531182,
+    -99.524928
+   ]
+  },
+  "US-6347+US-7923@area@36.999,-95.962": {
+   "id": "US-6347+US-7923@area@36.999,-95.962",
+   "area": "US-OK",
+   "refs": [
+    "US-6347",
+    "US-7923"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 15.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:28Z",
+   "layers": [
+    {
+     "ref": "US-6347",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:29Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:29Z"
+    },
+    {
+     "ref": "US-6347",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:30Z"
+    },
+    {
+     "ref": "US-7923",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:45:31Z"
+    },
+    {
+     "ref": "US-7923",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T02:45:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13.48,
+   "live_acres": 10.6,
+   "kept_pct": 99.1,
+   "size_pct": -21.3,
+   "moved_m": 380,
+   "gap_m": 0,
+   "wide_m": 25.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.6 ac vs 13.5 ac stored (-21%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.999184,
+    -95.94902
+   ]
+  },
+  "US-6352+US-6377@area@34.475,-95.099": {
+   "id": "US-6352+US-6377@area@34.475,-95.099",
+   "area": "US-OK",
+   "refs": [
+    "US-6352",
+    "US-6377"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
+   "stored_acres": 27.9,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:35Z",
+   "layers": [
+    {
+     "ref": "US-6352",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:36Z"
+    },
+    {
+     "ref": "US-6352",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:38Z"
+    },
+    {
+     "ref": "US-6352",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:38Z"
+    },
+    {
+     "ref": "US-6377",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:39Z"
+    },
+    {
+     "ref": "US-6377",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 20.41,
+   "live_acres": 23.23,
+   "kept_pct": 100.0,
+   "size_pct": 13.8,
+   "moved_m": 3012,
+   "gap_m": 0,
+   "wide_m": 25.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.2 ac vs 20.4 ac stored (+14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.447874,
+    -95.099111
+   ]
+  },
+  "US-6360+US-6367@area@34.302,-94.676": {
+   "id": "US-6360+US-6367@area@34.302,-94.676",
+   "area": "US-OK",
+   "refs": [
+    "US-6360",
+    "US-6367"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 16.2,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:41Z",
+   "layers": [
+    {
+     "ref": "US-6360",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:42Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:43Z"
+    },
+    {
+     "ref": "US-6360",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:43Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:44Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:45Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 10.9,
+   "live_acres": 10.32,
+   "kept_pct": 98.1,
+   "size_pct": -5.3,
+   "moved_m": 848,
+   "gap_m": 0,
+   "wide_m": 22.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.3 ac vs 10.9 ac stored (-5%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.3019,
+    -94.67115
+   ]
+  },
+  "US-6361+US-8136@area@34.439,-95.940": {
+   "id": "US-6361+US-8136@area@34.439,-95.940",
+   "area": "US-OK",
+   "refs": [
+    "US-6361",
+    "US-8136"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
+   "stored_acres": 3.5,
+   "stored_wide_m": 35,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:45Z",
+   "layers": [
+    {
+     "ref": "US-6361",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:46Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:47Z"
+    },
+    {
+     "ref": "US-6361",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:47Z"
+    },
+    {
+     "ref": "US-8136",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:48Z"
+    },
+    {
+     "ref": "US-8136",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:50Z"
+    },
+    {
+     "ref": "US-8136",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.12,
+   "live_acres": 2.8,
+   "kept_pct": 100.0,
+   "size_pct": -10.3,
+   "moved_m": 341,
+   "gap_m": 0,
+   "wide_m": 29.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.8 ac vs 3.1 ac stored (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.438946,
+    -95.936693
+   ]
+  },
+  "US-6366+US-8321@trail@34.678,-94.475": {
+   "id": "US-6366+US-8321@trail@34.678,-94.475",
+   "area": "US-OK",
+   "refs": [
+    "US-6366",
+    "US-8321"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 957.0,
+   "stored_wide_m": 97.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:51Z",
+   "layers": [
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:51Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:52Z"
+    },
+    {
+     "ref": "US-6366",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:53Z"
+    },
+    {
+     "ref": "US-8321",
+     "layer": "saved copy US-8321.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-8321"
+   ],
+   "stored_shape_note": "stored zone outline (14513 ac) disagrees with zone_acres (957.0): compared against the stored stretch line + 100 ft instead",
+   "live_stretch_acres": 1005.44,
+   "stored_shape_acres": 907.34,
+   "live_acres": 965.83,
+   "kept_pct": 84.6,
+   "size_pct": 6.4,
+   "moved_m": 970,
+   "gap_m": 0,
+   "wide_m": 85.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 965.8 ac vs 907.3 ac stored (+6%), 85% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.704839,
+    -94.674349
+   ]
+  },
+  "US-6367+US-6371@area@33.750,-94.644": {
+   "id": "US-6367+US-6371@area@33.750,-94.644",
+   "area": "US-OK",
+   "refs": [
+    "US-6367",
+    "US-6371"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 111.6,
+   "stored_wide_m": 395,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:53Z",
+   "layers": [
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:53Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:54Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:55Z"
+    },
+    {
+     "ref": "US-6371",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:55Z"
+    },
+    {
+     "ref": "US-6371",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:57Z"
+    },
+    {
+     "ref": "US-6371",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 40.74,
+   "live_acres": 37.64,
+   "kept_pct": 99.9,
+   "size_pct": -7.6,
+   "moved_m": 1876,
+   "gap_m": 0,
+   "wide_m": 130.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 37.6 ac vs 40.7 ac stored (-8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.736583,
+    -94.632879
+   ]
+  },
+  "US-6367+US-6377@area@34.309,-94.951": {
+   "id": "US-6367+US-6377@area@34.309,-94.951",
+   "area": "US-OK",
+   "refs": [
+    "US-6367",
+    "US-6377"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.3,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:45:58Z",
+   "layers": [
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:45:59Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:00Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:00Z"
+    },
+    {
+     "ref": "US-6377",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:01Z"
+    },
+    {
+     "ref": "US-6377",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.06,
+   "live_acres": 2.22,
+   "kept_pct": 100.0,
+   "size_pct": 7.7,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 42.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.2 ac vs 2.1 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.308746,
+    -94.95095
+   ]
+  },
+  "US-6367+US-8139@area@33.802,-94.746": {
+   "id": "US-6367+US-8139@area@33.802,-94.746",
+   "area": "US-OK",
+   "refs": [
+    "US-6367",
+    "US-8139"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16.6,
+   "stored_wide_m": 145,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T02:46:02Z",
+   "layers": [
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:46:03Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:46:04Z"
+    },
+    {
+     "ref": "US-6367",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:04Z"
+    },
+    {
+     "ref": "US-8139",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:05Z"
+    },
+    {
+     "ref": "US-8139",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:07Z"
+    },
+    {
+     "ref": "US-8139",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 15.46,
+   "live_acres": 14.43,
+   "kept_pct": 99.5,
+   "size_pct": -6.6,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 140.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.4 ac vs 15.5 ac stored (-7%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.801872,
+    -94.74543
+   ]
+  },
+  "US-8117+US-8118@area@36.922,-99.357": {
+   "id": "US-8117+US-8118@area@36.922,-99.357",
+   "area": "US-OK",
+   "refs": [
+    "US-8117",
+    "US-8118"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4070.5,
+   "stored_wide_m": 1795,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T02:46:08Z",
+   "layers": [
+    {
+     "ref": "US-8117",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:08Z"
+    },
+    {
+     "ref": "US-8117",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:46:09Z"
+    },
+    {
+     "ref": "US-8117",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T02:46:10Z"
+    },
+    {
+     "ref": "US-8118",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:11Z"
+    },
+    {
+     "ref": "US-8118",
+     "layer": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:13Z"
+    },
+    {
+     "ref": "US-8118",
+     "layer": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T02:46:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4544.9,
+   "live_acres": 4076.84,
+   "kept_pct": 90.2,
+   "size_pct": -10.3,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 1798.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4076.8 ac vs 4544.9 ac stored (-10%), 90% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.922158,
+    -99.356932
+   ]
+  }
+ },
+ "started": "2026-11-01T02:42:37Z",
+ "fers_sha256": "80d8e2028dbdebb36beeb96d8cbac16a4db0f1a6e39378882db9225e685ebd2e",
+ "live_rows": 44,
+ "skipped_rows": 126,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:42Z",
+ "complete": true,
+ "summary": {
+  "rows": 44,
+  "verdicts": {
+   "CONFIRMED": 40,
+   "SHRUNK": 3,
+   "GREW": 1,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 4,
+   "small overlap (under 50 yd across)": 9,
+   "water-only": 4
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json"
+ ],
+ "requests_this_run": 1030
+}

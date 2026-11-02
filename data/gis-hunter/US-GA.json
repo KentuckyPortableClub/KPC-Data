@@ -1,0 +1,569 @@
+{
+ "area": "US-GA",
+ "run": "2026-11-02",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-12772": {
+   "park": "Georgia National Fairgrounds State Recreation Area",
+   "area": "US-GA",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fairgrounds georgia\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-2200": {
+   "park": "Okefenokee State Park",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "agency": "Georgia State Parks (DNR)",
+     "record": 60,
+     "record_name": "Stephen C. Foster State Park",
+     "acres_approx": 109,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4183,
+     "record_name": "Okefenokee National Wildlife Refuge",
+     "acres_approx": 402480,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 404154,
+     "tier": "LIKELY",
+     "why": "same name, record 402,480 ac looks big for this kind of place"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5138,
+     "record_name": "Okefenokee National Wildlife Refuge",
+     "acres_approx": 401732,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 403528,
+     "tier": "LIKELY",
+     "why": "same name, record 401,732 ac looks big for this kind of place"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 194354,
+     "record_name": "Stephen C. Foster State Park",
+     "acres_approx": 63,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Own_Type": "FED",
+     "GIS_Acres": 135,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): hit",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-3724": {
+   "park": "Roosevelts Little White House State Historic Site",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "agency": "Georgia State Parks (DNR)",
+     "record": 4,
+     "record_name": "F. D. Roosevelt State Park",
+     "acres_approx": 10041,
+     "tier": "LIKELY",
+     "why": "shared roosevelt; extra: park house, little, white / record -"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
+     "record": 925,
+     "record_name": "F. D. ROOSEVELT STATE PARK",
+     "acres_approx": 10041,
+     "tier": "LIKELY",
+     "why": "shared roosevelt; extra: park house, little, white / record -"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195129,
+     "record_name": "F. D. Roosevelt State Park",
+     "acres_approx": 10002,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 9995,
+     "tier": "LIKELY",
+     "why": "shared roosevelt; extra: park house, little, white / record -"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): hit",
+    "A Georgia DNR Wildlife Resources Division : hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-3791": {
+   "park": "Trail of Tears National Historic Trail",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 201861,
+     "record_name": "Trail Of Tears Park",
+     "acres_approx": 33,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 34,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-4556": {
+   "park": "Appalachian Trail National Scenic Trail",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2946,
+     "record_name": "Chattahoochee National Forest",
+     "acres_approx": 747088,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 750991,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"appalachian scenic\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-4648": {
+   "park": "Bartram Educational State Forest",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "agency": "Georgia DNR Wildlife Resources Division",
+     "record": 75,
+     "record_name": "BARTRAM FOREST WMA",
+     "acres_approx": 1332,
+     "tier": "LIKELY",
+     "why": "shared bartram; extra: park educational / record -"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
+     "record": 806,
+     "record_name": "BARTRAM FOREST WMA",
+     "acres_approx": 859,
+     "tier": "LIKELY",
+     "why": "shared bartram; extra: park educational / record -"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195185,
+     "record_name": "Bartram Forest Wildlife Management Area",
+     "acres_approx": 2029,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2063,
+     "tier": "LIKELY",
+     "why": "shared bartram; extra: park educational / record -"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195190,
+     "record_name": "Baldwin State Forest",
+     "acres_approx": 2061,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2153,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: hit",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-4649": {
+   "park": "Hitchiti State Forest",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2998,
+     "record_name": "Oconee National Forest",
+     "acres_approx": 115920,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 116196,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [
+    {
+     "title": "Hitchiti EF aspects",
+     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_aspects_2/MapServer",
+     "owner": "USFS_SouthernResearchStation",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hitchiti\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7139": {
+   "park": "Arabia Mountain National Heritage Area",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"heritage mountain arabia\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7140": {
+   "park": "Charlie Elliot Wildlife Management Area",
+   "area": "US-GA",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "agency": "Georgia DNR Wildlife Resources Division",
+     "record": 32,
+     "record_name": "CLYBEL WMA",
+     "acres_approx": 6225,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
+     "record": 956,
+     "record_name": "CLYBEL WMA",
+     "acres_approx": 6514,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195024,
+     "record_name": "Charlie Elliott Wildlife Center Clybel Wildlife Management Area Marben Public Fishing Area",
+     "acres_approx": 6219,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 6273,
+     "tier": "LIKELY",
+     "why": "shared charlie, elliot; extra: park - / record center, clybel, marben"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: hit",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-7456": {
+   "park": "Dahlonega Gold Museum State Historic Site",
+   "area": "US-GA",
+   "why_not": "pin-doubt",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"dahlonega museum gold\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7459": {
+   "park": "Lake Nottely Dam Recreation Park",
+   "area": "US-GA",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"nottely dam\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7460": {
+   "park": "Lake Blue Ridge Dam Recreation Park",
+   "area": "US-GA",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"ridge blue dam\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7471": {
+   "park": "Allatoona Pass Battlefield State Historic Site",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2529,
+     "record_name": "Allatoona Recreation Area",
+     "acres_approx": 37990,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 38047,
+     "tier": "LIKELY",
+     "why": "shared allatoona; extra: park pass / record -"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-7473": {
+   "park": "DeSoto Falls National Recreation Area",
+   "area": "US-GA",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "agency": "Georgia DNR Wildlife Resources Division",
+     "record": 15,
+     "record_name": "CHESTATEE WMA",
+     "acres_approx": 21687,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
+     "record": 751,
+     "record_name": "CHESTATEE WMA",
+     "acres_approx": 21687,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2946,
+     "record_name": "Chattahoochee National Forest",
+     "acres_approx": 747088,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 750991,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 194388,
+     "record_name": "Chestatee Wildlife Management Area",
+     "acres_approx": 19640,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 19724,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: hit",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"desoto falls\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7858": {
+   "park": "Dames Ferry Campground State Park",
+   "area": "US-GA",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"campground ferry dames\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7861": {
+   "park": "Suwannee River Eco-Lodge State Park",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "agency": "Georgia State Parks (DNR)",
+     "record": 32,
+     "record_name": "Stephen C. Foster State Park",
+     "acres_approx": 320,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195159,
+     "record_name": "Stephen C. Foster State Park",
+     "acres_approx": 324,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 320,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): hit",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"suwannee lodge eco\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7893": {
+   "park": "Augusta Canal National Heritage Area",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"heritage augusta canal\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

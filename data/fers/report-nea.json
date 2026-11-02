@@ -1,0 +1,163 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-10-29",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 422,
+   "no outline": 3600,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "missing boundary": 18,
+  "official parks": 864,
+  "pairs tested": 2226,
+  "pairs whose boxes touch": 2226,
+  "parks done by the box test": 30,
+  "parks whose outline could not be read": 119,
+  "pass": 1,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "NHD water (one try): The read operation timed out",
+   "NHD water (one try): The read operation timed out",
+   "NHD water (one try): The read operation timed out"
+  ],
+  "with official lines": 9
+ },
+ "pass2": {
+  "agree with the pass before": 1135,
+  "cell_m": 10.0,
+  "date": "2026-10-29",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 422,
+   "no outline": 3600,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 227,
+  "official parks": 864,
+  "pairs tested": 470,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 2,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "NHD water (one try): The read operation timed out",
+   "NHD water (one try): The read operation timed out",
+   "NHD water (one try): The read operation timed out"
+  ],
+  "with official lines": 9
+ },
+ "pass3": {
+  "agree with the pass before": 0,
+  "cell_m": 5.0,
+  "date": "2026-10-29",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3563,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 0,
+  "official parks": 864,
+  "pairs tested": 0,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 3,
+  "problems": [
+   "W&S river corridors joined as area parks: 15"
+  ],
+  "with official lines": 9
+ },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 144,
+  "date": "2026-10-29",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3563,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 864,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "W&S river corridors joined as area parks: 15"
+  ],
+  "river channels listed as water only (boat spots)": 0,
+  "same land dropped: wrong join": 3,
+  "spots given their boundary lines": 342,
+  "still not checked": 0,
+  "trail stretches given their true zone": 101,
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
+  "with official lines": 9
+ },
+ "per state": {
+  "US-DC": {
+   "candidates": 11,
+   "candidates (saved outline only)": 0,
+   "lines": 22,
+   "n-fers": 0,
+   "not sure": 0,
+   "pass1": 23,
+   "pass2": 23,
+   "spots": 23,
+   "very tight": 0,
+   "water only": 0
+  },
+  "US-DE": {
+   "candidates": 68,
+   "candidates (saved outline only)": 0,
+   "lines": 272,
+   "n-fers": 8,
+   "not sure": 4,
+   "pass1": 350,
+   "pass2": 336,
+   "spots": 350,
+   "very tight": 2,
+   "water only": 3
+  },
+  "US-MD": {
+   "candidates": 65,
+   "candidates (saved outline only)": 0,
+   "lines": 173,
+   "n-fers": 10,
+   "not sure": 3,
+   "pass1": 323,
+   "pass2": 304,
+   "spots": 323,
+   "very tight": 5,
+   "water only": 0
+  },
+  "US-NJ": {
+   "candidates": 27,
+   "candidates (saved outline only)": 0,
+   "lines": 15,
+   "n-fers": 4,
+   "not sure": 0,
+   "pass1": 170,
+   "pass2": 140,
+   "spots": 170,
+   "very tight": 4,
+   "water only": 0
+  },
+  "US-PA": {
+   "candidates": 50,
+   "candidates (saved outline only)": 0,
+   "lines": 47,
+   "n-fers": 26,
+   "not sure": 0,
+   "pass1": 652,
+   "pass2": 575,
+   "spots": 652,
+   "very tight": 26,
+   "water only": 3
+  }
+ }
+}

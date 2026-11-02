@@ -1,0 +1,205 @@
+[
+ {
+  "id": "US-0019+US-10164_area_36.679_-83.503",
+  "job": "fers:US-0019+US-10164@area@36.679,-83.503",
+  "kind": "fers",
+  "file": "fers/US-0019+US-10164_area_36.679_-83.503.jpg",
+  "caption": "US-0019 Cumberland Gap National Historical Park + US-10164 Shillalah Creek Wildlife Management Area: area 2-fer (candidate); orange line = shared stretch, 13.9 km.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "club file ky-hunting-areas.geojson",
+   "club file ky-nps.geojson",
+   "https://api.pota.app/park/US-0019",
+   "https://api.pota.app/park/US-10164"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.2,
+  "bytes": 141118
+ },
+ {
+  "id": "US-0050+US-10105_area_37.171_-86.155",
+  "job": "fers:US-0050+US-10105@area@37.171,-86.155",
+  "kind": "fers",
+  "file": "fers/US-0050+US-10105_area_37.171_-86.155.jpg",
+  "caption": "US-0050 Mammoth Cave National Park + US-10105 The Green National Wild and Scenic River: area 2-fer (candidate); orange line = shared stretch, 82.5 km.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "club file ky-nps.geojson",
+   "club file ky-wild-rivers.geojson",
+   "https://api.pota.app/park/US-0050",
+   "https://api.pota.app/park/US-10105"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.1,
+  "bytes": 134820
+ },
+ {
+  "id": "US-0608+US-4572_trail_38.684_-83.577",
+  "job": "fers:US-0608+US-4572@trail@38.684,-83.577",
+  "kind": "fers",
+  "file": "fers/US-0608+US-4572_trail_38.684_-83.577.jpg",
+  "caption": "US-0608 Ohio River Islands National Wildlife Refuge + US-4572 Lewis and Clark National Historic Trail: trail 2-fer (candidate); orange line = shared stretch, 3.3 km.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "club file ky-fws.geojson",
+   "club file ky-hunting-areas.geojson",
+   "https://api.pota.app/park/US-0608",
+   "https://api.pota.app/park/US-4572",
+   "trails/US-4572.json"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.1,
+  "bytes": 144309
+ },
+ {
+  "id": "US-0703+US-3791_river_36.501_-88.068",
+  "job": "fers:US-0703+US-3791@river@36.501,-88.068",
+  "kind": "fers",
+  "file": "fers/US-0703+US-3791_river_36.501_-88.068.jpg",
+  "caption": "US-0703 Fort Donelson National Battlefield + US-3791 Trail of Tears National Historic Trail: river 2-fer (candidate); orange line = shared stretch, 6.6 km.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "club file ky-nps.geojson",
+   "https://api.pota.app/park/US-0703",
+   "https://api.pota.app/park/US-3791",
+   "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+   "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+   "trails/US-3791.json"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.8,
+  "bytes": 120966
+ },
+ {
+  "id": "CA-0006",
+  "job": "outlines:CA-0006",
+  "kind": "outlines",
+  "file": "outlines/CA-0006.jpg",
+  "caption": "CA-0006 Big Creek: outline from canada-bounds/CA-0006.json (KPC checked list (CPCAD)); 1,363 ac record vs 1,951 ac drawn; pin inside.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "canada-bounds/CA-0006.json (KPC checked list (CPCAD))",
+   "https://api.pota.app/park/CA-0006"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 1.5,
+  "bytes": 83556
+ },
+ {
+  "id": "CA-0010",
+  "job": "outlines:CA-0010",
+  "kind": "outlines",
+  "file": "outlines/CA-0010.jpg",
+  "caption": "CA-0010 Bruce Peninsula: outline from canada-bounds/CA-0010.json (Canadian Protected and Conserved Areas Database (Environment and Climate Change Canada), Open Government Licence - Canada); 41,297 ac record vs 39,301 ac drawn; pin inside.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "canada-bounds/CA-0010.json (Canadian Protected and Conserved Areas Database (Environment and Climate Change Canada), Open Government Licence - Canada)",
+   "https://api.pota.app/park/CA-0010"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.1,
+  "bytes": 76134
+ },
+ {
+  "id": "CH-0104",
+  "job": "outlines:CH-0104",
+  "kind": "outlines",
+  "file": "outlines/CH-0104.jpg",
+  "caption": "CH-0104 Randen: outline from world-bounds/CH/1.json (BAFU landscapes and natural monuments (BLN)); 18,030 ac drawn; pin inside.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "https://api.pota.app/park/CH-0104",
+   "world-bounds/CH/1.json (BAFU landscapes and natural monuments (BLN))"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.2,
+  "bytes": 135636
+ },
+ {
+  "id": "CH-0306",
+  "job": "outlines:CH-0306",
+  "kind": "outlines",
+  "file": "outlines/CH-0306.jpg",
+  "caption": "CH-0306 Bachsee Mire Landscapes: outline from world-bounds/CH/3.json (BAFU mire landscapes); 1,137 ac drawn; pin inside.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "https://api.pota.app/park/CH-0306",
+   "world-bounds/CH/3.json (BAFU mire landscapes)"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.3,
+  "bytes": 130097
+ },
+ {
+  "id": "US-10258_r11002565_0e49ef",
+  "job": "questions:US-10258:11002565:https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0",
+  "kind": "questions",
+  "file": "questions/US-10258_r11002565_0e49ef.jpg",
+  "caption": "US-10258 Ouachita National Recreation Trail: record 11002565 'OUACHITA NRT' (Trans_Trail_NFS_Publish); line 12.4 km drawn; pin 57 m outside; answer YES.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "https://api.pota.app/park/US-10258",
+   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0/query?objectIds=11002565"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 2.2,
+  "bytes": 148336
+ },
+ {
+  "id": "US-12938_r309_79f6b8",
+  "job": "questions:US-12938:309:https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/2",
+  "kind": "questions",
+  "file": "questions/US-12938_r309_79f6b8.jpg",
+  "caption": "US-12938 Laurel Industrial Forest Land State Wildlife Area: record 309 'Industrial Forest Lands' (Urban Tree Canopy Estimates); 2,662 ac drawn vs 2,445 ac in the question; pin inside; answer NO.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "https://api.pota.app/park/US-12938",
+   "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/2/query?objectIds=309"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.2,
+  "bytes": 142353
+ },
+ {
+  "id": "US-13623_r11032118_db907a",
+  "job": "questions:US-13623:11032118:https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0",
+  "kind": "questions",
+  "file": "questions/US-13623_r11032118_db907a.jpg",
+  "caption": "US-13623 Alum Cove Natural Bridge Trail National Recreation Trail: record 11032118 'ALUM COVE TRAIL' (National Forest System Trails); line 1.5 km drawn; pin 143 m outside; answer YES.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "https://api.pota.app/park/US-13623",
+   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0/query?objectIds=11032118"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 0.0,
+  "bytes": 83180
+ },
+ {
+  "id": "US-9907_r249102_e1dd17",
+  "job": "questions:US-9907:249102:https://services9.arcgis.com/FF3qnCUixr5w9JQi/ArcGIS/rest/services/USGS_Trails/FeatureServer/0",
+  "kind": "questions",
+  "file": "questions/US-9907_r249102_e1dd17.jpg",
+  "caption": "US-9907 First Landing National Recreation Trail: record 249102 'First Landing State Park' (USGS Trails); line 0.1 km drawn; pin 67 m outside; answer NO.",
+  "read_date": "2026-10-31",
+  "sources": [
+   "https://api.pota.app/park/US-9907",
+   "https://services9.arcgis.com/FF3qnCUixr5w9JQi/ArcGIS/rest/services/USGS_Trails/FeatureServer/0/query?objectIds=249102"
+  ],
+  "warnings": [],
+  "status": "done",
+  "seconds": 3.5,
+  "bytes": 86435
+ }
+]

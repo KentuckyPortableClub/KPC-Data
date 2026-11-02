@@ -1,0 +1,284 @@
+# kpc-sharded.yml: run ONE KPC bot over its areas in parallel groups (reusable workflow, workflow_call).
+# Install: copy to KPC-Data .github/workflows/kpc-sharded.yml. The library is .github/scripts/tools/kpc_shard/kpc_shard.py.
+# Never red: every job and step is continue-on-error. Only the join job writes, and it pushes ONCE.
+# Concurrency: keep the bot's own workflow-level `concurrency:` in the CALLER (it covers this whole called run, so
+# two runs of the same bot never write at once). The join job adds a job-level group with a DIFFERENT name
+# ("<group>-join"); reusing the caller's exact name here would make the run wait on itself.
+name: kpc-sharded
+
+on:
+  workflow_call:
+    inputs:
+      bot:
+        description: "Bot script to run, e.g. .github/scripts/layer_collector.py (gets AREAS env + --out parts/<i>)"
+        type: string
+        required: true
+      areas:
+        description: "Comma list of areas, or 'all' (= every data/parkinfo/*.json or every key of the weights file)"
+        type: string
+        default: all
+      groups:
+        description: "Parallel groups (default 8, at most 12)"
+        type: number
+        default: 8
+      minutes:
+        description: "--max-minutes for each group (GitHub jobs are 55 minutes)"
+        type: number
+        default: 50
+      env:
+        description: 'Extra environment for the bot as JSON, e.g. {"KPC_CONTACT":"club@example.org"}'
+        type: string
+        default: "{}"
+      bot_args:
+        description: "Extra arguments for the bot (optional)"
+        type: string
+        default: ""
+      weights:
+        description: "Weights file {area: n}; empty = count parks in parkinfo"
+        type: string
+        default: ""
+      parkinfo:
+        type: string
+        default: data/parkinfo
+      hosts_map:
+        description: "{area: [hosts]} map or the bot's layer list; if set, groups are built with `kpc_shard.py hosts`"
+        type: string
+        default: ""
+      into:
+        description: "Data dir the area files are copied into"
+        type: string
+        default: data
+      state:
+        description: "Merged state file (default <into>/state.json)"
+        type: string
+        default: ""
+      divert:
+        description: "The bot's waiting-room divert command (PLACEHOLDER: paste what the bot runs today)"
+        type: string
+        default: ""
+      concurrency_group:
+        description: "The bot's existing concurrency group name (the join job uses <name>-join)"
+        type: string
+        default: ""
+      status_board:
+        description: "File to append the one status-board line to (pushed with the data). Empty = step summary only"
+        type: string
+        default: ""
+      chain_workflow:
+        description: "Caller workflow file to re-dispatch with the left areas (needs workflow_dispatch inputs areas + chain)"
+        type: string
+        default: ""
+      chain:
+        description: "How many times this run has already been chained (the caller passes it through)"
+        type: number
+        default: 0
+      max_chain:
+        type: number
+        default: 1
+      shard:
+        type: string
+        default: .github/scripts/tools/kpc_shard/kpc_shard.py
+    outputs:
+      areas_left:
+        description: "Areas the join says are not done"
+        value: ${{ jobs.join.outputs.left }}
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      groups: ${{ steps.plan.outputs.groups }}
+      areas: ${{ steps.plan.outputs.areas }}
+    steps:
+      - uses: actions/checkout@v4
+        continue-on-error: true
+      - uses: actions/setup-python@v5
+        continue-on-error: true
+        with:
+          python-version: "3.12"
+      - id: plan
+        continue-on-error: true
+        env:
+          SHARD: ${{ inputs.shard }}
+          AREAS_IN: ${{ inputs.areas }}
+          GROUPS_IN: ${{ inputs.groups }}
+          WEIGHTS: ${{ inputs.weights }}
+          PARKINFO: ${{ inputs.parkinfo }}
+          HOSTS_MAP: ${{ inputs.hosts_map }}
+        run: |
+          g="$GROUPS_IN"; [ "$g" -gt 12 ] && g=12; [ "$g" -lt 1 ] && g=1
+          args=(--areas "$AREAS_IN" --groups "$g" --parkinfo "$PARKINFO")
+          [ -n "$WEIGHTS" ] && args+=(--weights "$WEIGHTS")
+          if [ -n "$HOSTS_MAP" ]; then cmd=(hosts --map "$HOSTS_MAP"); else cmd=(plan); fi
+          m=$(python3 "$SHARD" "${cmd[@]}" "${args[@]}") || m=""
+          if [ -z "$m" ]; then
+            echo "::warning::kpc_shard plan failed, running everything as one group"
+            m=$(python3 -c 'import json,sys; print(json.dumps([{"i":1,"areas":sys.argv[1]}],separators=(",",":")))' "$AREAS_IN")
+          fi
+          n=$(python3 -c 'import json,sys; print(len(json.loads(sys.argv[1])))' "$m")
+          all=$(python3 -c 'import json,sys; print(",".join(x["areas"] for x in json.loads(sys.argv[1])))' "$m")
+          { echo "matrix=$m"; echo "groups=$n"; echo "areas=$all"; } >> "$GITHUB_OUTPUT"
+          echo "plan: $n groups: $m" >> "$GITHUB_STEP_SUMMARY"
+
+  run:
+    needs: plan
+    if: needs.plan.outputs.matrix != '' && needs.plan.outputs.matrix != '[]'
+    name: group ${{ matrix.i }}
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 58
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(needs.plan.outputs.groups) }}
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        continue-on-error: true
+      - uses: actions/setup-python@v5
+        continue-on-error: true
+        with:
+          python-version: "3.12"
+      - name: bot environment from JSON
+        continue-on-error: true
+        env:
+          ENV_JSON: ${{ inputs.env }}
+        run: |
+          python3 - <<'PY'
+          import json, os, uuid
+          env = json.loads(os.environ.get('ENV_JSON') or '{}')
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              for k, v in env.items():
+                  d = 'EOF_' + uuid.uuid4().hex
+                  f.write(f'{k}<<{d}\n{v}\n{d}\n')
+          PY
+      - name: run bot on this group
+        id: bot
+        continue-on-error: true
+        env:
+          AREAS: ${{ matrix.areas }}
+          KPC_SHARD_I: ${{ matrix.i }}
+          BOT: ${{ inputs.bot }}
+          BOT_ARGS: ${{ inputs.bot_args }}
+          MINUTES: ${{ inputs.minutes }}
+        run: |
+          mkdir -p "parts/$KPC_SHARD_I"
+          set +e
+          # shellcheck disable=SC2086
+          python3 "$BOT" --out "parts/$KPC_SHARD_I" --max-minutes "$MINUTES" $BOT_ARGS
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          echo "group $KPC_SHARD_I ($AREAS): exit $rc" >> "$GITHUB_STEP_SUMMARY"
+          exit 0
+      - name: upload part (artifact, not git)
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: kpc-part-${{ matrix.i }}
+          path: parts/${{ matrix.i }}
+          if-no-files-found: warn
+          retention-days: 3
+
+  join:
+    needs: [plan, run]
+    if: always() && needs.plan.outputs.matrix != ''
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: write
+      actions: write
+    concurrency:
+      group: ${{ format('{0}-join', inputs.concurrency_group != '' && inputs.concurrency_group || format('kpc-sharded-{0}', inputs.bot)) }}
+      cancel-in-progress: false
+    outputs:
+      left: ${{ steps.join.outputs.left }}
+    steps:
+      - uses: actions/checkout@v4
+        continue-on-error: true
+      - uses: actions/setup-python@v5
+        continue-on-error: true
+        with:
+          python-version: "3.12"
+      - name: download all parts
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: kpc-part-*
+          path: parts
+      - name: join
+        id: join
+        continue-on-error: true
+        env:
+          SHARD: ${{ inputs.shard }}
+          INTO: ${{ inputs.into }}
+          STATE: ${{ inputs.state }}
+          AREAS_ALL: ${{ needs.plan.outputs.areas }}
+        run: |
+          mkdir -p parts
+          args=(--parts parts --into "$INTO" --areas "$AREAS_ALL" --out "$RUNNER_TEMP/kpc_join")
+          [ -n "$STATE" ] && args+=(--state "$STATE")
+          set +e
+          python3 "$SHARD" join "${args[@]}" | tee "$RUNNER_TEMP/join.txt"
+          rc=${PIPESTATUS[0]}
+          left=$(grep '^left=' "$RUNNER_TEMP/join.txt" | tail -1 | cut -d= -f2-)
+          [ "$rc" = 0 ] || [ "$rc" = 3 ] || [ "$rc" = 4 ] || left="$AREAS_ALL"   # crash: treat all as left
+          done_n=$(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1])).get("done",[])))' "$RUNNER_TEMP/kpc_join/join_report.json" 2>/dev/null || echo 0)
+          { echo "rc=$rc"; echo "left=$left"; echo "done=$done_n"; } >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: waiting room divert (PLACEHOLDER, same as the bot does today)
+        if: steps.join.outputs.rc != '4'
+        continue-on-error: true
+        env:
+          DIVERT: ${{ inputs.divert }}
+        run: |
+          if [ -n "$DIVERT" ]; then bash -c "$DIVERT"; else echo "no divert command given (placeholder)"; fi
+      - name: status-board line
+        if: always()
+        continue-on-error: true
+        env:
+          BOT: ${{ inputs.bot }}
+          BOARD: ${{ inputs.status_board }}
+          GROUPS_N: ${{ needs.plan.outputs.groups }}
+          RC: ${{ steps.join.outputs.rc }}
+          DONE_N: ${{ steps.join.outputs.done }}
+          LEFT: ${{ steps.join.outputs.left }}
+        run: |
+          nl=0; [ -n "$LEFT" ] && nl=$(echo "$LEFT" | tr ',' '\n' | grep -c .)
+          what="ok"; [ "$RC" = 4 ] && what="JOIN REFUSED (two parts wrote one area, nothing copied)"
+          [ "$RC" = 3 ] && what="time ran out, areas left"
+          line="$(date -u +%Y-%m-%dT%H:%MZ) $(basename "$BOT") sharded: groups=${GROUPS_N:-0} done=${DONE_N:-0} left=$nl $what"
+          echo "$line" >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$BOARD" ]; then mkdir -p "$(dirname "$BOARD")"; echo "$line" >> "$BOARD"; fi
+      - name: one push
+        if: always()
+        continue-on-error: true
+        env:
+          INTO: ${{ inputs.into }}
+          STATE: ${{ inputs.state }}
+          BOARD: ${{ inputs.status_board }}
+          BOT: ${{ inputs.bot }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          paths=("$INTO"); [ -n "$STATE" ] && paths+=("$STATE"); [ -n "$BOARD" ] && paths+=("$BOARD")
+          git add -A -- "${paths[@]}" || true
+          if git diff --cached --quiet; then echo "nothing to push"; exit 0; fi
+          git commit -m "$(basename "$BOT"): sharded run" || exit 0
+          for n in 1 2 3; do git push && exit 0; git pull --rebase --autostash || true; sleep $((n * 10)); done
+          echo "::warning::push failed after 3 tries"
+      - name: chain once more if areas are left
+        if: steps.join.outputs.left != '' && steps.join.outputs.rc != '4' && inputs.chain_workflow != '' && inputs.chain < inputs.max_chain
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WF: ${{ inputs.chain_workflow }}
+          LEFT: ${{ steps.join.outputs.left }}
+          CHAIN: ${{ inputs.chain }}
+        run: |
+          gh workflow run "$WF" --ref "$GITHUB_REF_NAME" -f areas="$LEFT" -f chain="$((CHAIN + 1))"

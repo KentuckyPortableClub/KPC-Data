@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ks",
+ "states": [
+  "US-KS"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 14:15 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-11-02",
+ "missing_check": {
+  "FOUND": 27,
+  "DROPPED": 155,
+  "NEVER LOOKED AT": 717
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 511,
+   "pairs whose boxes touch": 511
+  },
+  "pass2": {
+   "agree with the pass before": 41,
+   "date": "2026-11-02",
+   "pairs tested": 23
+  },
+  "pass3": {
+   "agree with the pass before": 34,
+   "date": "2026-11-02",
+   "pairs tested": 23
+  },
+  "pass5": {
+   "checked": 15,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-KS": "data/fers/US-KS.json"
+ },
+ "US-KS": {
+  "rows": 49,
+  "live": 28,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 8,
+  "merged": 12
+ },
+ "states_ready": [
+  "US-KS"
+ ],
+ "states_held": []
+}

@@ -1,0 +1,144 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mountain",
+ "states": [
+  "US-CO",
+  "US-WY",
+  "US-ID",
+  "US-MT",
+  "US-NV",
+  "US-AZ",
+  "US-NM"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 04:18 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 642 of 4117 pairs whose boxes touch",
+  "water not checked: US-NV: 12 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 59,
+  "DROPPED": 56,
+  "NEVER LOOKED AT": 8062
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 642,
+   "pairs whose boxes touch": 4117,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 558,
+   "date": "2026-10-29",
+   "pairs tested": 100
+  },
+  "pass3": {
+   "agree with the pass before": 454,
+   "date": "2026-10-29",
+   "pairs tested": 97
+  },
+  "pass5": {
+   "checked": 17,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 13
+  }
+ },
+ "files": {
+  "US-CO": "data/fers/US-CO.json",
+  "US-WY": "data/fers/US-WY.json",
+  "US-ID": "data/fers/US-ID.json",
+  "US-MT": "data/fers/US-MT.json",
+  "US-NV": "data/fers/US-NV.json",
+  "US-AZ": "data/fers/US-AZ.json",
+  "US-NM": "data/fers/US-NM.json"
+ },
+ "US-CO": {
+  "rows": 4,
+  "live": 3,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 1
+ },
+ "US-WY": {
+  "rows": 4,
+  "live": 3,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline": 1
+  },
+  "dropped": 0,
+  "merged": 0
+ },
+ "US-ID": {
+  "rows": 5,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 1
+ },
+ "US-MT": {
+  "rows": 6,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 5
+ },
+ "US-NV": {
+  "rows": 571,
+  "live": 42,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 32,
+   "water not checked": 12,
+   "no public owner on the ownership map": 5
+  },
+  "dropped": 214,
+  "merged": 266
+ },
+ "water_weak": {
+  "US-NV": 12
+ },
+ "US-AZ": {
+  "rows": 45,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 5
+  },
+  "dropped": 1,
+  "merged": 35
+ },
+ "US-NM": {
+  "rows": 2,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 0
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-CO",
+  "US-WY",
+  "US-ID",
+  "US-MT",
+  "US-NV",
+  "US-AZ",
+  "US-NM"
+ ]
+}

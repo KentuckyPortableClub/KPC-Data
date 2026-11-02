@@ -1,0 +1,88 @@
+name: KPC one-week trial - hours / fees / closures outside Kentucky (SAVED ONLY, never shown)
+# Oct 31 2026 (chat 10; HQ 8:45 PM, Brandon 8:39 PM 'yes'): Sun Nov 1 -> Sat Nov 7, once a day, staggered, polite.
+# SAFETY: outputs go ONLY to KPC-Data branch `trial-outside-ky` (hours/, closures/), never main data/hours or
+# data/alerts/us-parks.json; KPC-Links's closures merge reads main only, so no card outside Kentucky can show any of it
+# (SCOPE stays). One status line a day. Never red. After Nov 7 this workflow does nothing (date guard).
+#   hours     kpc_hours_bot.py, a slice of ~7 states a day (all 49 non-KY states + DC over the week), OUT = the branch folder
+#   closures  kpc_us_closures.py (the state agencies' closure feeds, whole US) with FORCE_RUN=1, its file copied to the branch
+on:
+  schedule:
+    - cron: '51 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-trial-outside-ky
+  cancel-in-progress: false
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Only Nov 1 - Nov 7 2026
+        id: when
+        run: |
+          D=$(date -u +%Y%m%d)
+          if [ "$D" -lt 20261101 ] && [ "${{ github.event_name }}" = schedule ] || [ "$D" -gt 20261108 ]; then echo "off=1" >> $GITHUB_OUTPUT; echo "::notice title=Outside-KY trial::not in the Nov 1-7 week: nothing to do"; fi
+          echo "day=$(( ( $(date -u +%s) - $(date -u -d 2026-11-01 +%s) ) / 86400 ))" >> $GITHUB_OUTPUT
+      - name: Scripts + data (KPC-Links, read-only)
+        if: steps.when.outputs.off != '1'
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: KPC-Data
+        if: steps.when.outputs.off != '1'
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay KPC-Data's data over the checkout
+        if: steps.when.outputs.off != '1'
+        continue-on-error: true
+        run: |
+          bash .github/scripts/kpc_overlay.sh kpcdata || true
+          rsync -a kpcdata/data/ data/ 2>/dev/null || true
+          cp kpcdata/locations.json kpcdata/locations-ky.json . 2>/dev/null || true
+      - name: The trial branch (never main)
+        if: steps.when.outputs.off != '1'
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch -q origin trial-outside-ky:trial-outside-ky 2>/dev/null; then git worktree add -q ../trial trial-outside-ky
+          else git worktree add -q --detach ../trial && cd ../trial && git checkout -q --orphan trial-outside-ky && git rm -rfq . 2>/dev/null; echo "One-week trial (Nov 1-7 2026): hours / fees / closures OUTSIDE Kentucky, saved only, never shown (Brandon Oct 31 8:39 PM)." > README.md; fi
+      - name: Hours / fees / permits (a slice of states a day)
+        if: steps.when.outputs.off != '1'
+        continue-on-error: true
+        env:
+          MINUTES: '50'
+          LINKS: '.'
+        run: |
+          ALL=$(ls kpcdata/data/parkinfo | grep -E '^US-[A-Z]{2}\.json$' | sed 's/\.json//' | grep -v '^US-KY$' | sort | tr '\n' ' ')
+          N=$(echo $ALL | wc -w); DAY=${{ steps.when.outputs.day }}; [ "$DAY" -lt 0 ] && DAY=0; [ "$DAY" -gt 6 ] && DAY=6
+          PER=$(( (N + 6) / 7 )); AREAS=$(echo $ALL | tr ' ' '\n' | sed -n "$(( DAY * PER + 1 )),$(( DAY * PER + PER ))p" | tr '\n' ' ')
+          echo "::notice title=Outside-KY trial (hours)::day $DAY: $AREAS"
+          mkdir -p trial/hours
+          (cd kpcdata && python3 .github/scripts/kpc_intake_reader.py hours) || true   # Nov 1: the outside hours / fees workbooks (their pages are read first)
+          cd kpcdata && AREAS="$AREAS" OUT=../trial/hours LINKS=.. HOURS_WB=data/intake/_in/hours python3 .github/scripts/kpc_hours_bot.py 2>&1 | tail -5 || true
+      - name: Closures (state agencies' feeds, whole US)
+        if: steps.when.outputs.off != '1'
+        continue-on-error: true
+        timeout-minutes: 25
+        run: |
+          FORCE_RUN=1 python3 .github/scripts/kpc_us_closures.py 2>&1 | tail -5 || true
+          mkdir -p trial/closures; [ -s data/alerts/us-parks.json ] && cp data/alerts/us-parks.json trial/closures/us-parks-$(date -u +%F).json || true
+          git checkout -- data/alerts 2>/dev/null || true   # nothing of the trial stays in a main working file
+      - name: Save to the trial branch + one status line
+        if: steps.when.outputs.off != '1'
+        continue-on-error: true
+        run: |
+          H=$(python3 -c "import json,glob;n=0;f=0
+          for p in glob.glob('trial/hours/US-*.json'):
+              d=json.load(open(p));P=d.get('parks') or {};n+=len(P);f+=sum(1 for v in P.values() if (v or {}).get('hours') or (v or {}).get('fees'))
+          print(f'{n} parks read, {f} with hours or fees')" 2>/dev/null || echo '?')
+          C=$(python3 -c "import json,glob;fs=sorted(glob.glob('trial/closures/*.json'));d=json.load(open(fs[-1])) if fs else {};it=d.get('items') or [];print(f'{len(it)} closure items')" 2>/dev/null || echo '?')
+          (cd trial && git add -A && git commit -qm "outside-KY trial $(date -u +%F)" && git push -q origin trial-outside-ky) || true
+          cd kpcdata && python3 .github/scripts/kpc_status.py board "outside-KY trial (hours / closures, saved only)" green "$H; $C (branch trial-outside-ky)" "Sat Nov 7: short report -> chat 11 grades 12 rows -> Brandon decides" || true
+          bash ../.github/scripts/kpc_push_data.sh . "outside-KY trial: status line" data/status || true
+          true

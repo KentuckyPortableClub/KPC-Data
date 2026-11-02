@@ -1,0 +1,64 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "wi",
+ "states": [
+  "US-WI"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 05:36 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 0 of 499 pairs whose boxes touch",
+  "US-WI: pass1 not run in this run (stamp 2026-10-28, run started 2026-11-02)"
+ ],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 21,
+  "DROPPED": 65,
+  "NEVER LOOKED AT": 2582
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "pairs whose boxes touch": 499,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 0,
+   "date": "2026-11-02",
+   "pairs tested": 0
+  },
+  "pass3": {
+   "agree with the pass before": 0,
+   "date": "2026-11-02",
+   "pairs tested": 0
+  },
+  "pass5": {
+   "checked": 18,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-WI": "data/fers/US-WI.json"
+ },
+ "US-WI": {
+  "rows": 372,
+  "live": 34,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the outlines overlap, but the PAD-US Park Service fee record": 1,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 271,
+  "merged": 65
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-WI"
+ ]
+}

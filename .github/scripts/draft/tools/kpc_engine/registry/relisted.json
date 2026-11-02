@@ -1,0 +1,569 @@
+{
+ "about": "Re-list the servers of hosts that failed in outside research (pack blocked/failed-layer-hosts.md).",
+ "hosts": {
+  "geohub.gov.si": {
+   "why_failed": "Service not found 936",
+   "roots": {
+    "https://geohub.gov.si/arcgis/rest/services": "HTTP 404",
+    "https://geohub.gov.si/server/rest/services": "HTTP 404"
+   },
+   "leads": []
+  },
+  "gis.blm.gov": {
+   "why_failed": "not polygons or lines (points) 162, Service not found 289, Token Required 104, query failed: Expecting ',' delimiter: line 1 column 3000001 97, no name field 44",
+   "roots": {
+    "https://gis.blm.gov/arcgis/rest/services": "ok: 8 folders, 0 services",
+    "https://gis.blm.gov/idarcgis/rest/services": "ok: 11 folders, 0 services",
+    "https://gis.blm.gov/nvarcgis/rest/services": "ok: 12 folders, 0 services",
+    "https://gis.blm.gov/orarcgis/rest/services": "ok: 19 folders, 0 services",
+    "https://gis.blm.gov/server/rest/services": "HTTP 404",
+    "https://gis.blm.gov/utarcgis/rest/services": "ok: 8 folders, 0 services"
+   },
+   "leads": [
+    "https://gis.blm.gov/arcgis/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/admin_boundaries/BLM_Natl_AdminUnit_Generalized/FeatureServer",
+    "https://gis.blm.gov/arcgis/rest/services/admin_boundaries/BLM_Natl_AdminUnit_Generalized/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/admin_boundaries/BOC_Natl_CountyBoundaries/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_MAPLand/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_MTB/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation_Offline/FeatureServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation_Offline/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation_Sites_Facilities/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_VRI_Classes/MapServer",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_VRI_Inventories/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/admin_boundaries/BLM_ID_Administrative_Unit_District_Office_Boundaries/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/admin_boundaries/BLM_ID_Administrative_Unit_District_Office_Boundaries/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/admin_boundaries/BLM_ID_Administrative_Unit_Field_Office_Boundaries/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/admin_boundaries/BLM_ID_Administrative_Unit_Field_Office_Boundaries/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/admin_boundaries/BLM_ID_Administrative_Unit_Office_Locations/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/admin_boundaries/BLM_ID_Administrative_Unit_Office_Locations/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Site_Point/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Site_Point/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_HAF_Fine_Scale_Areas/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_HAF_Fine_Scale_Areas/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_HAF_Mid_Scale_Areas/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_HAF_Mid_Scale_Areas/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2007/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2007/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2008/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2008/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2009/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2009/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2010/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2010/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2011/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2011/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2012/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2012/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2013/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2013/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2014/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2014/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2015/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2015/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2016/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2016/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2017/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2017/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2018/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2018/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2019/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2019/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2020/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2020/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2021/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2021/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2022/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2022/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2023/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2023/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2024/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Habitat_2024/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Occupied_Areas/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Occupied_Areas/MapServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Seasonal_Use_Areas/FeatureServer",
+    "https://gis.blm.gov/idarcgis/rest/services/wildlife/BLM_ID_Sage_Grouse_Seasonal_Use_Areas/MapServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/FeatureServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_Wilderness/FeatureServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_Wilderness/MapServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_Wilderness_Study_Area/FeatureServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_Wilderness_Study_Area/MapServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Public_Land_Survey_System/PLSS_Conflicted_Areas/FeatureServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Public_Land_Survey_System/PLSS_Conflicted_Areas/MapServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Public_Land_Survey_System/PLSS_First_Division_Section/FeatureServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Public_Land_Survey_System/PLSS_First_Division_Section/MapServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Public_Land_Survey_System/PLSS_Intersected/FeatureServer",
+    "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Public_Land_Survey_System/PLSS_Intersected/MapServer"
+   ]
+  },
+  "services.arcgis.com": {
+   "why_failed": "RuntimeError: Invalid URL 24, query failed: Cannot perform query. Invalid query parameters 5, no name field 7, not polygons or lines (points) 621",
+   "roots": {
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services": "ok: 0 folders, 171 services",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services": "ok: 0 folders, 192 services",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services": "ok: 0 folders, 406 services",
+    "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services": "ok: 0 folders, 7985 services",
+    "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services": "ok: 0 folders, 111 services",
+    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services": "ok: 0 folders, 2584 services",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services": "ok: 0 folders, 901 services",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services": "ok: 0 folders, 901 services",
+    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services": "ok: 0 folders, 1097 services",
+    "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services": "ok: 0 folders, 390 services",
+    "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services": "ok: 0 folders, 2183 services",
+    "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services": "ok: 0 folders, 305 services",
+    "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services": "ok: 0 folders, 234 services",
+    "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services": "ok: 0 folders, 41 services",
+    "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services": "ok: 0 folders, 230 services",
+    "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services": "ok: 0 folders, 3934 services"
+   },
+   "leads": [
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/2015nature/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Allegany_State_Park_Bear_Program_Collection/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Allegany_State_Park_Game_Report_Public_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Allegany_State_Park_Hunting_Permit_Application_Public_View/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Franklin_D_Roosevelt_State_Park_Visitor_Survey_form/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Harriman_State_Park_Harvest_Report_(Public)_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYSHeritageAreaPoints/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYSHeritageAreas/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYSUrbanHeritageAreas/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Tax_Parcel_OPRHP_PIPC/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Park_Facilities/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Park_Points_(public_view)/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Park_Properties/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Park_Properties_by_County_(public_view)/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Beach_Status/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Camping/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Nature_Centers/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Points_Rev_War/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Points_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Temporary_Trail_Closure/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NY_State_Parks_Trails/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NatureCenters/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/New_York_State_Parks_Nature_Centers/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/OPRHP_Regional_Boundaries/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/ParkEntrance/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/ParkPoints/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/ParksFacilityInspection2024_public_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/ParksIncidentReport_Public_Data_Collection/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Parks_Near_Miss_Report_Public_View/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Parks_UAS_flight_Authorization_public_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Revisit_the_Revolution_at_NY_State_Parks_and_Historic_Sites/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/Snowmobile_Trails_2024_view/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/StateParks/FeatureServer",
+    "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/TrailsWGS1/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/20240517_recreation_WFL1/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/2026_ARWRice_Parking_-_Public_View/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/AGFC_Deer_Zones/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/AGFC_Wildlife_Management_Areas_WV/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/Conservation_Opportunity_Areas_/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/Conservation_Opportunity_Areas__view/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/DMAP_ClubsBoundaries_CopyFromOtherDB07012025/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/DMAP_ClubsBoundaries_CopyFromOtherDB07012025_view/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/DataCollectionZones1/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/DataCollectionZones2/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/EducationAndShootingSports_NatureCenters/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/FloodProneZones_20241112_view/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/FloodProneZones_Status/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/Muddy_Creek_WMA_Bears_GenCon_2026/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/ReportingNatureCenters_EduSSReporting/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/Shortlist_layer_Water_Trails_(DO_NOT_REMOVE_OR_EDIT)/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMABoundaries/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMA_VUEWorks/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMAs_Dissolved_by_Catagory/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/alligatorZones/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/bearZones/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/crappieZones/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/cwdManagementZones/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/deerZones/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/landTrails/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/natureAndEducationCenters/FeatureServer",
+    "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/waterTrails/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Boundaries/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Bremerton_Gasworks_Natural_Background/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Channel_Migration_Zone_Study_NEW4/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Channel_Migration_Zones/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Cons_Districts_2_Conservation_Projects_Yakima_Basin/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Conservation_District_Projects/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Freshwater_Natural_Background/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/GWMA/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/KID_2_Conservation_Projects_Yakima_Basin/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/KID_Conservation_Projects_Yakima_Basin/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/KID_Water_Conservation_Projects/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/KRD_Conservation_Projects_Yakima_Basin/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/LDW_City_Boundaries/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/LDW_Source_Control_Area_Outer_Boundary/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Map_for_Results_Reserves/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/Monitoring_Region_Boundary/FeatureServer",
+    "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/NSID_Conservation_Projects_Yakima_Basin/FeatureServer"
+   ]
+  },
+  "mapserver.doc.govt.nz": {
+   "why_failed": "RuntimeError: answer rest 394",
+   "roots": {
+    "https://mapserver.doc.govt.nz/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://mapserver.doc.govt.nz/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "cbs1.tarimorman.gov.tr": {
+   "why_failed": "RuntimeError: answer rest 320",
+   "roots": {
+    "https://cbs1.tarimorman.gov.tr/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://cbs1.tarimorman.gov.tr/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "arcgis.mma.gob.cl": {
+   "why_failed": "query failed: Expecting value: line 1 column 2999989 (char 2 99",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "sige.pr.gov": {
+   "why_failed": "RuntimeError: answer rest 83",
+   "roots": {
+    "https://sige.pr.gov/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://sige.pr.gov/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "services2.arcgis.com": {
+   "why_failed": "query failed: Cannot perform query. Invalid query parameters 70, query failed: Expecting ',' delimiter: line 1 column 3000001 12, no POTA pin on file 1",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "mapservices.gov.yk.ca": {
+   "why_failed": "no name field 72",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "mapas.parquesnacionales.gov.co": {
+   "why_failed": "query failed: answer rest 62",
+   "roots": {
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services": "ok: 7 folders, 1 services",
+    "https://mapas.parquesnacionales.gov.co/server/rest/services": "HTTP 404"
+   },
+   "leads": []
+  },
+  "gps.digimap.gg": {
+   "why_failed": "not polygons or lines (points) 5, no name field 5, query failed: Requested operation is not supported by this s 50",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "bio.discomap.eea.europa.eu": {
+   "why_failed": "not polygons or lines (points) 55",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "geo.environnement.gouv.qc.ca": {
+   "why_failed": "Service not found 46",
+   "roots": {
+    "https://geo.environnement.gouv.qc.ca/arcgis/rest/services": "HTTP 404",
+    "https://geo.environnement.gouv.qc.ca/server/rest/services": "HTTP 404"
+   },
+   "leads": []
+  },
+  "mapservices.nps.gov": {
+   "why_failed": "Service not found 41",
+   "roots": {
+    "https://mapservices.nps.gov/arcgis/rest/services": "ok: 5 folders, 0 services",
+    "https://mapservices.nps.gov/server/rest/services": "HTTP 404"
+   },
+   "leads": [
+    "https://mapservices.nps.gov/arcgis/rest/services/Wilderness/NPS_Legislated_Wilderness/FeatureServer",
+    "https://mapservices.nps.gov/arcgis/rest/services/Wilderness/NPS_Legislated_Wilderness/MapServer"
+   ]
+  },
+  "gisserver.mepa.gov.ge": {
+   "why_failed": "RuntimeError: answer rest 38",
+   "roots": {
+    "https://gisserver.mepa.gov.ge/arcgis/rest/services": "ok: 35 folders, 11 services",
+    "https://gisserver.mepa.gov.ge/server/rest/services": "HTTP 404"
+   },
+   "leads": [
+    "https://gisserver.mepa.gov.ge/arcgis/rest/services/MEPA_Forestry_Agency/satyeo_ubnebi/FeatureServer",
+    "https://gisserver.mepa.gov.ge/arcgis/rest/services/MEPA_Forestry_Agency/satyeo_ubnebi/MapServer",
+    "https://gisserver.mepa.gov.ge/arcgis/rest/services/mepa_forestry_dep/mepa_forestry_dep/FeatureServer",
+    "https://gisserver.mepa.gov.ge/arcgis/rest/services/mepa_forestry_dep/mepa_forestry_dep/MapServer"
+   ]
+  },
+  "services1.arcgis.com": {
+   "why_failed": "not polygons or lines (points) 23, RuntimeError: {'code': 400, 'message': '', 'details': ['The  1, query failed: Cannot perform query. Invalid query parameters 10, no name field 2",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "www.apps.geomatics.gov.nt.ca": {
+   "why_failed": "not polygons or lines (points) 35",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "ginfo.cedd.gov.hk": {
+   "why_failed": "query failed: Failed to execute query. 29",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "services6.arcgis.com": {
+   "why_failed": "RuntimeError: {'code': 400, 'message': '', 'details': ['The  2, no name field 18",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "services1.arcgis.org": {
+   "why_failed": "RuntimeError: answer rest 20",
+   "roots": {},
+   "leads": []
+  },
+  "gis.nature.cz": {
+   "why_failed": "RuntimeError: answer robots 20",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "arcgis.mdwfp.com": {
+   "why_failed": "RuntimeError: answer rest 20",
+   "roots": {
+    "https://arcgis.mdwfp.com/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://arcgis.mdwfp.com/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "services7.arcgis.com": {
+   "why_failed": "RuntimeError: Invalid URL 17",
+   "roots": {
+    "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services": "ok: 0 folders, 13 services",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services": "ok: 0 folders, 135 services"
+   },
+   "leads": [
+    "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/Boundaries_Filter/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NMDOT_District_Boundaries/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_BLM_Field_Office_Boundaries/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Boundary/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_USFS_National_Forest_System_Land_Units/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/Service_Dashboard_2026_Boundaries_Stats/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/Telephone_Exchange_Boundary/FeatureServer",
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/v8_Boundaries_Broadband_Stats/FeatureServer"
+   ]
+  },
+  "www.wildlifedepartment.com": {
+   "why_failed": "Service not found 15",
+   "roots": {
+    "https://www.wildlifedepartment.com/arcgis/rest/services": "not JSON (not an ArcGIS services directory)",
+    "https://www.wildlifedepartment.com/server/rest/services": "ok: 12 folders, 2 services"
+   },
+   "leads": []
+  },
+  "www.mozgis.gov.mz": {
+   "why_failed": "query failed: answer 400 14",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "apps.fs.usda.gov": {
+   "why_failed": "not polygons or lines (points) 13",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "geonb.snb.ca": {
+   "why_failed": "RuntimeError: {'code': 500, 'message': None, 'details': []} 10, query failed: Requested operation is not supported by this s 1",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "services5.arcgis.com": {
+   "why_failed": "not polygons or lines (points) 3, Token Required 7",
+   "roots": {
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services": "ok: 0 folders, 258 services",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services": "ok: 0 folders, 112 services",
+    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services": "ok: 0 folders, 472 services",
+    "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services": "ok: 0 folders, 862 services",
+    "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services": "ok: 0 folders, 862 services",
+    "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services": "ok: 0 folders, 224 services"
+   },
+   "leads": [
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Ash_Habitat_Distribution_State_Parks/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Campsites/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/CascadiaMarineTrailSites/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Cross_State_Trail___Road_Intersections/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Enriched_Enriched_Travel_from_Park_Entrances_(30_60_90_Minutes)_20190829/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/HETAP_TrailDetails/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Ike_Kinswa_Parks_TPU_Map_WFL1/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Join_Features_to_United_States_ZIP_Code_Boundaries_2018/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/LewisAndClarkTrails_20260813/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Long_Distance_Trails/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/MLE_Region_Boundaries_4_0/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/NatureConservancyLands/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Nisqually_Trails_plan/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKSNoxiousWeedLinesPublic/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKSNoxiousWeedPointsPublic/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKS_Conditional_Uses/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKS_Metal_Detection_Areas_Master_view/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKS_Park_Activities/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKS_Warming_Shelters_(Public)/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKS__Winter_Rec_Motorized_Trails/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PanAbodeParks/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries_Entrances/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries_RecreationInfo/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkEntrances/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkRegions/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkSigns_(Public)/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkSubRegions/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Park_Boundaries_subset/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Park_Entrances/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkingAreas/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParksNoxiousWeedAreasPublic/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Parks_Administrative_Boundaries/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Parks_Mooring_Buoys/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Potential_Wildlife_Displacement___Elk/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Riverside_trail_update_read-only_view/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SCA_EcologicalWildlife_20230510/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SCA_PhysicalBoundaries_20230510/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Seasonal_Park_Aide_Housing_Locations/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SignificantNaturalResources/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SignificantNaturalResources_Importance/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SignificantNaturalResources_Sum_SNR/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SledDogTrailsPublic/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/SnoParks_(Public)/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/TrailMilepostsView/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trail_Details/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trail_Features___Hazards/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trail_Surface_Conditions/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trailheads_PublicView/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trails/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trails_MtSpokaneUpdate/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trails_buffer_276m/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trails_hetapdata/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/TravelFromParkEntrances_(30_60_90_Minutes)_20230210/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/USAWildernessAreas/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WAStateParks_BoatLaunches/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WA_MLE_Region_Boundaries/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WA_State_Park_Boundaries/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WTA_Olallie_Trail_Maintenance/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WildernessAreas/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WinterRecreationAreas/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Winter_Rec_Non_Motorized_Trails/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/X_18062A_SITE_CAMP_Annotation/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/X_18062A_SITE_CAMP_MultiPatch/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/X_18062A_SITE_CAMP_Point/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/X_18062A_SITE_CAMP_Polygon/FeatureServer",
+    "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/X_18062A_SITE_CAMP_Polyline/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/C1_-_Protecting_Active_Blanket_Bog_by_stabilising_bare_peat/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Conservation_Area/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/High_Peak_Trail/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/MFFP_Sites_Boundaries/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/MFFP_Sites_Boundaries_Public/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/MM_Natural_Flood_Management/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/MM_Protecting_Habitat/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Manifold_Trail/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Monsal_Trail/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/PDNPA_Boundary/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Protecting_Habitat_-_Access_related/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Protecting_Habitat_Access_related_lines/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Protecting_Habitat_access_related/FeatureServer"
+   ]
+  },
+  "gis2.idaho.gov": {
+   "why_failed": "RuntimeError: answer rest 10",
+   "roots": {
+    "https://gis2.idaho.gov/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://gis2.idaho.gov/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "servicescarto.mrnf.gouv.qc.ca": {
+   "why_failed": "query failed: Failed to execute query. 9",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "services3.arcgis.com": {
+   "why_failed": "not polygons or lines (points) 9",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "gis.wlf.la.gov": {
+   "why_failed": "no name field 6",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "geoportal.marn.gob.sv": {
+   "why_failed": "RuntimeError: answer 522 6",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "feature.geographic.texas.gov": {
+   "why_failed": "query failed: Requested operation is not supported by this s 6",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "gis.mississippi.edu": {
+   "why_failed": "no name field 5",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "nhnm-gisweb.unm.edu": {
+   "why_failed": "RuntimeError: answer rest 4",
+   "roots": {
+    "https://nhnm-gisweb.unm.edu/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://nhnm-gisweb.unm.edu/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "mdgeodata.md.gov": {
+   "why_failed": "query failed: answer rest 4",
+   "roots": {
+    "https://mdgeodata.md.gov/arcgis/rest/services": "HTTP 404",
+    "https://mdgeodata.md.gov/imap/rest/services": "ok: 24 folders, 0 services",
+    "https://mdgeodata.md.gov/server/rest/services": "HTTP 404"
+   },
+   "leads": [
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_CensusStatisticalBoundaries/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_CensusStatisticalBoundaries/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_ElectionBoundaries/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_ElectionBoundaries/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_MarineBoundaries/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_MarineBoundaries/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_PhysicalBoundaries/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_PhysicalBoundaries/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_PoliticalBoundaries/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_PoliticalBoundaries/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_StateMask/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Boundaries/MD_StateMask/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ChesapeakeBayDeadZones/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ChesapeakeBayDeadZones/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_NaturalFilters/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLandsAcquisitions/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLandsAcquisitions/MapServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ResearchReserves/FeatureServer",
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ResearchReserves/MapServer"
+   ]
+  },
+  "services.nconemap.gov": {
+   "why_failed": "query failed: answer rest 3",
+   "roots": {
+    "https://services.nconemap.gov/arcgis/rest/services": "HTTP 404",
+    "https://services.nconemap.gov/server/rest/services": "ok: 3 folders, 2 services"
+   },
+   "leads": []
+  },
+  "arcgis.dnr.alaska.gov": {
+   "why_failed": "not polygons or lines (points) 3",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "servicescarto.mern.gouv.qc.ca": {
+   "why_failed": "query failed: Failed to execute query. 2",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "mapsdep.nj.gov": {
+   "why_failed": "not polygons or lines (points) 2",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "kygisserver.ky.gov": {
+   "why_failed": "no name field 2",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "services.dwr.virginia.gov": {
+   "why_failed": "not polygons or lines (points) 1",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  },
+  "mdh.ima.gov.tt": {
+   "why_failed": "RuntimeError: answer rest 1",
+   "roots": {
+    "https://mdh.ima.gov.tt/arcgis/rest/services": "blocked (host resting: 3 strikes)",
+    "https://mdh.ima.gov.tt/server/rest/services": "blocked (host resting: 3 strikes)"
+   },
+   "leads": []
+  },
+  "kort.nunagis.gl": {
+   "why_failed": "query failed: Requested operation is not supported by this s 1",
+   "action": "not re-listed: the failure was about the data (points / no name field / bad query), not the address"
+  }
+ }
+}

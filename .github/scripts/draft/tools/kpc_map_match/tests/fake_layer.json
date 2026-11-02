@@ -1,0 +1,283 @@
+{
+ "questions": [
+  {
+   "area": "US-ZZ",
+   "ref": "US-0001",
+   "park": "Barren Fork State Park",
+   "tier": "LIKELY",
+   "record": 1,
+   "record_name": "Barren Fork",
+   "layer": "https://fake.gov/arcgis/rest/services/Test/MapServer/0",
+   "name_field": "NAME",
+   "answer": null
+  },
+  {
+   "area": "US-ZZ",
+   "ref": "US-0002",
+   "park": "Pine Knob State Forest",
+   "tier": "LIKELY",
+   "record": 2,
+   "record_name": "Pine Knob State Forest",
+   "layer": "https://fake.gov/arcgis/rest/services/Test/MapServer/0",
+   "name_field": "NAME",
+   "answer": null
+  },
+  {
+   "area": "US-ZZ",
+   "ref": "US-0003",
+   "park": "Cedar Bluff Nature Preserve",
+   "tier": "LIKELY",
+   "record": 3,
+   "record_name": "Cedar Bluff Preserve",
+   "layer": "https://fake.gov/arcgis/rest/services/Test/MapServer/0",
+   "name_field": "NAME",
+   "answer": null
+  },
+  {
+   "area": "US-ZZ",
+   "ref": "US-0004",
+   "park": "Big Woods State Natural Area",
+   "tier": "LIKELY",
+   "record": 4,
+   "record_name": "Big Woods Road Easement",
+   "layer": "https://fake.gov/arcgis/rest/services/Test/MapServer/0",
+   "name_field": "NAME",
+   "answer": null
+  },
+  {
+   "area": "US-ZZ",
+   "ref": "US-0005",
+   "park": "Elk Creek Wildlife Management Area",
+   "tier": "LIKELY",
+   "record": 5,
+   "record_name": "Elk Lake Unit",
+   "layer": "https://fake.gov/arcgis/rest/services/Test/MapServer/0",
+   "name_field": "NAME",
+   "answer": null
+  }
+ ],
+ "pins": {
+  "US-0001": [
+   "Barren Fork State Park",
+   "https://fake.gov/page/1",
+   "State Park",
+   "",
+   "",
+   37.0,
+   -84.0
+  ],
+  "US-0002": [
+   "Pine Knob State Forest",
+   "https://fake.gov/page/2",
+   "State Forest",
+   "",
+   "",
+   37.2,
+   -84.2
+  ],
+  "US-0003": [
+   "Cedar Bluff Nature Preserve",
+   "https://fake.gov/page/3",
+   "Nature Preserve",
+   "",
+   "",
+   37.4,
+   -84.4
+  ],
+  "US-0004": [
+   "Big Woods State Natural Area",
+   "",
+   "State Natural Area",
+   "",
+   "",
+   37.6,
+   -84.6
+  ],
+  "US-0005": [
+   "Elk Creek Wildlife Management Area",
+   "",
+   "WMA",
+   "",
+   "",
+   37.8,
+   -84.8
+  ]
+ },
+ "records": {
+  "1": {
+   "attributes": {
+    "OBJECTID": 1,
+    "NAME": "Barren Fork"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -84.005,
+       36.995
+      ],
+      [
+       -84.005,
+       37.005
+      ],
+      [
+       -83.995,
+       37.005
+      ],
+      [
+       -83.995,
+       36.995
+      ],
+      [
+       -84.005,
+       36.995
+      ]
+     ]
+    ]
+   }
+  },
+  "2": {
+   "attributes": {
+    "OBJECTID": 2,
+    "NAME": "Pine Knob State Forest"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -84.205,
+       37.245
+      ],
+      [
+       -84.205,
+       37.255
+      ],
+      [
+       -84.19500000000001,
+       37.255
+      ],
+      [
+       -84.19500000000001,
+       37.245
+      ],
+      [
+       -84.205,
+       37.245
+      ]
+     ]
+    ]
+   }
+  },
+  "3": {
+   "attributes": {
+    "OBJECTID": 3,
+    "NAME": "Cedar Bluff Preserve"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -84.405,
+       37.394999999999996
+      ],
+      [
+       -84.405,
+       37.405
+      ],
+      [
+       -84.39500000000001,
+       37.405
+      ],
+      [
+       -84.39500000000001,
+       37.394999999999996
+      ],
+      [
+       -84.405,
+       37.394999999999996
+      ]
+     ]
+    ]
+   }
+  },
+  "4": {
+   "attributes": {
+    "OBJECTID": 4,
+    "NAME": "Big Woods Road Easement"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -84.60499999999999,
+       37.595
+      ],
+      [
+       -84.60499999999999,
+       37.605000000000004
+      ],
+      [
+       -84.595,
+       37.605000000000004
+      ],
+      [
+       -84.595,
+       37.595
+      ],
+      [
+       -84.60499999999999,
+       37.595
+      ]
+     ]
+    ]
+   }
+  },
+  "5": {
+   "attributes": {
+    "OBJECTID": 5,
+    "NAME": "Elk Lake Unit"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -84.80499999999999,
+       37.794999999999995
+      ],
+      [
+       -84.80499999999999,
+       37.805
+      ],
+      [
+       -84.795,
+       37.805
+      ],
+      [
+       -84.795,
+       37.794999999999995
+      ],
+      [
+       -84.80499999999999,
+       37.794999999999995
+      ]
+     ]
+    ]
+   }
+  }
+ },
+ "nearby": [
+  {
+   "OBJECTID": 99,
+   "NAME": "Elk Creek WMA"
+  },
+  {
+   "OBJECTID": 98,
+   "NAME": "Somewhere Else"
+  }
+ ],
+ "pages": {
+  "https://fake.gov/page/1": "<html><body><p>The 250-acre Barren Fork State Park sits on the river.</p></body></html>",
+  "https://fake.gov/page/2": "<html><body><p>Pine Knob State Forest covers 240 acres.</p></body></html>",
+  "https://fake.gov/page/3": "<html><body><p>Cedar Bluff Nature Preserve protects 30,000 acres of bluffs.</p></body></html>"
+ }
+}

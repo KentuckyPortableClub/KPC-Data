@@ -1,0 +1,9 @@
+layer,parks_covered,result,why,features_read,campgrounds_kept,activating_spots_kept,left_out,duplicates,duplicates_in_run,states,agency
+https://gis.dnr.example.gov/arcgis/rest/services/Recreation/Facilities/MapServer/2,2,read OK,,14,6,3,4,1,0,IA MN,Example State Department of Natural Resources
+https://services.county.example.org/arcgis/rest/services/Parks/Campground_Loops/FeatureServer/0,1,read OK,,3,2,1,0,0,0,WI,Example County Parks Department
+https://apps.fs.example.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=FORESTNAME+%3D+%27Superior+National+Forest%27+AND+MARKERACTIVITY+IN+%28%27Campground+Camping%27%2C%27Group+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=%2A&f=html,1,read OK,,5,3,0,1,0,1,MN,USDA Forest Service
+https://gisservices.dec.example.gov/arcgis/rest/services/DEC/PointsOfInterest/MapServer/0,1,read OK,,6,3,1,2,0,0,NY,Example State Department of Environmental Conservation
+https://gis.tokenparks.example.com/arcgis/rest/services/Secure/Camps/MapServer/0,1,failed,needs sign-in,0,0,0,0,0,0,,
+https://busy.example.net/arcgis/rest/services/Camps/MapServer/0,1,failed,HTTP 429 after 3 retries; host resting,0,0,0,0,0,0,,
+https://noindex.example.org/arcgis/rest/services/Camps/MapServer/0,1,failed,robots.txt disallows this URL,0,0,0,0,0,0,,
+"https://www.openstreetmap.org/api/0.6/map?bbox=-91,47,-90,48",1,failed,forbidden source (www.openstreetmap.org) - never used,0,0,0,0,0,0,,

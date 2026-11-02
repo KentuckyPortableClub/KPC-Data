@@ -1,0 +1,1584 @@
+{
+ "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
+ "area": "US-DC",
+ "counts": {
+  "agree": 1,
+  "handover_hints": 1,
+  "no_page": 0,
+  "no_size": 16,
+  "off": 1,
+  "ours_unknown": 4,
+  "parks": 35,
+  "retired": 0,
+  "unsure": 1,
+  "weak": 3,
+  "with_outline": 23
+ },
+ "parks": {
+  "US-0015": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Chesapeake and Ohio Canal National Historical Park",
+   "ours": null,
+   "score": null,
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-0653": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Constitution Gardens National Park",
+   "official": null,
+   "ours": {
+    "acres": 43,
+    "manager": "",
+    "pieces": [
+     [
+      3533,
+      "Constitution Gardens",
+      43,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/coga/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/coga/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/coga/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/coga/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/coga/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0654": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "National Capital Parks - East Park",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-DC': 3908, 'US-MD': 1935})",
+   "official": {
+    "acres": 8000.0,
+    "as": "8,000 acres",
+    "clean": false,
+    "line": "tional Capital Parks-East District of Columbia National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C. and Maryland. Fr",
+    "read": "2026-11-01",
+    "sent": "National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C.",
+    "url": "https://www.nps.gov/nace/index.htm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 5843,
+    "acres_by_state": {
+     "US-DC": 3908,
+     "US-MD": 1935
+    },
+    "manager": "",
+    "pieces": [
+     [
+      3536,
+      "National Capital Parks",
+      3908,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "states": [
+     "US-DC",
+     "US-MD"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/nace/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/nace/planyourvisit/index.htm",
+     "why": "the park's page (documents bot)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/nace/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": 27,
+   "same_agency": false,
+   "score": 3,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 8000.0,
+     "as": "8,000 acres",
+     "clean": false,
+     "line": "tional Capital Parks-East District of Columbia National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C. and Maryland. Fr",
+     "total_like": true,
+     "url": "https://www.nps.gov/nace/index.htm",
+     "why": "total-looking"
+    },
+    {
+     "acres": 8000.0,
+     "as": "8,000 acres",
+     "clean": false,
+     "line": "tional Capital Parks - East (NACE) connects neighborhoods across Washington, D.C. and Maryland with more than 8,000 acres of trails, historic homes, forts, farms, and green spaces. Anacostia Park Scenic Entry to the Nation's Capita",
+     "total_like": false,
+     "url": "https://www.nps.gov/nace/planyourvisit/index.htm",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
+   "t": "Park",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-0655": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "National Mall and Memorial Parks National Park",
+   "ours": null,
+   "score": null,
+   "t": "Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-0656": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Rock Creek Park",
+   "official": {
+    "acres": 1754.0,
+    "as": "1,754 acre",
+    "clean": false,
+    "line": "ov Cancel Rock Creek Park • District of Columbia Rock Creek Park is truly a gem in our nation's capital. This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federa",
+    "read": "2026-11-01",
+    "sent": "This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federal government.",
+    "url": "https://www.nps.gov/rocr/index.htm",
+    "why": "history"
+   },
+   "ours": {
+    "acres": 1743,
+    "manager": "",
+    "pieces": [
+     [
+      3541,
+      "Rock Creek Park",
+      1743,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/rocr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/rocr/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/rocr/learn/education/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/rocr/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/rocr/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/rocr/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 1754.0,
+     "as": "1,754 acre",
+     "clean": false,
+     "line": "ov Cancel Rock Creek Park • District of Columbia Rock Creek Park is truly a gem in our nation's capital. This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federa",
+     "total_like": false,
+     "url": "https://www.nps.gov/rocr/index.htm",
+     "why": "history"
+    }
+   ],
+   "t": "Park",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0657": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "President's Park (White House) Park",
+   "ours": null,
+   "score": null,
+   "t": "Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-0670": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "George Washington Memorial Parkway",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-DC': 135, 'US-VA': 7103, 'US-MD': 2052})",
+   "official": null,
+   "ours": {
+    "acres": 9290,
+    "acres_by_state": {
+     "US-DC": 135,
+     "US-MD": 2052,
+     "US-VA": 7103
+    },
+    "manager": "",
+    "pieces": [
+     [
+      3547,
+      "George Washington Memorial Parkway",
+      131,
+      "name"
+     ],
+     [
+      271109,
+      "George Washington Memorial Parkway",
+      4,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "states": [
+     "US-DC",
+     "US-VA",
+     "US-MD"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/gwmp/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/gwmp/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Memorial Parkway",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0776": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Franklin Delano Roosevelt National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 8,
+    "manager": "",
+    "pieces": [
+     [
+      3263,
+      "Franklin Delano Roosevelt Memorial",
+      8,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frde/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frde/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/frde/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/frde/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frde/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0780": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Korean War Veterans National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 2,
+    "manager": "",
+    "pieces": [
+     [
+      3266,
+      "Korean War Veterans Memorial",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kowa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kowa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/kowa/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/kowa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kowa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0783": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lincoln National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 7,
+    "manager": "",
+    "pieces": [
+     [
+      3268,
+      "Lincoln Memorial",
+      7,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/linc/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/linc/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/linc/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/linc/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/linc/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0784": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3.6 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
+   "official": {
+    "acres": 3600000.0,
+    "as": "3.6 million acres",
+    "clean": false,
+    "line": "se federal aid to public education, and the Water Quality Act to improve the nation’s water sources and added 3.6 million acres of land to the National Park Service to preserve the nation’s natural and cultural heritage for future genera",
+    "read": "2026-11-01",
+    "sent": "g his presidency, Johnson signed the landmark 1964 Civil Rights Bill seeking to end discrimination, the Primary and Secondary Education Bill to increase federal aid to public education, and the Water Quality Act to improve the nation’s water sources and added 3.6 million acres of land to the Nationa",
+    "url": "https://www.nps.gov/lyba/learn/index.htm",
+    "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+   },
+   "ours": {
+    "acres": 18,
+    "manager": "",
+    "pieces": [
+     [
+      3269,
+      "Lyndon Baines Johnson Memorial Grove on the Potomac",
+      18,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lyba/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lyba/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/lyba/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/lyba/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lyba/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 100,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 3600000.0,
+     "as": "3.6 million acres",
+     "clean": false,
+     "line": "se federal aid to public education, and the Water Quality Act to improve the nation’s water sources and added 3.6 million acres of land to the National Park Service to preserve the nation’s natural and cultural heritage for future genera",
+     "total_like": false,
+     "url": "https://www.nps.gov/lyba/learn/index.htm",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    }
+   ],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-0785": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Martin Luther King Jr. National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 3,
+    "manager": "",
+    "pieces": [
+     [
+      3270,
+      "Martin Luther King, Jr., Memorial",
+      3,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/mlkm/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/mlkm/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/mlkm/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0791": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Theodore Roosevelt Island National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 100,
+    "manager": "",
+    "pieces": [
+     [
+      3275,
+      "Theodore Roosevelt Island",
+      100,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/this/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/this/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/this/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/this/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/this/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0792": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Thomas Jefferson National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 20,
+    "manager": "",
+    "pieces": [
+     [
+      3276,
+      "Thomas Jefferson Memorial",
+      20,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/thje/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/thje/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/thje/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/thje/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/thje/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0793": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Vietnam Veterans National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 2,
+    "manager": "",
+    "pieces": [
+     [
+      3277,
+      "Vietnam Veterans Memorial",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vive/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vive/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/vive/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/vive/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vive/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0794": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Washington Monument National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 104,
+    "manager": "",
+    "pieces": [
+     [
+      3278,
+      "Washington Monument",
+      104,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wamo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wamo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/wamo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/wamo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wamo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0795": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "World War I National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 2,
+    "manager": "",
+    "pieces": [
+     [
+      3279,
+      "World War I Memorial",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/wwim/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wwim/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wwim/getinvolved/volunteer.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/wwim/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0796": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "World War II National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 11,
+    "manager": "",
+    "pieces": [
+     [
+      3280,
+      "World War II Memorial",
+      9,
+      "name"
+     ],
+     [
+      3279,
+      "World War I Memorial",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/wwii/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wwii/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/wwii/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0805": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Carter G. Woodson Home National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cawo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cawo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/cawo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/cawo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cawo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-0814": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Ford's Theatre National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foth/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foth/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/foth/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/foth/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foth/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-0825": {
+   "checked": "2026-11-01",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ut park management. News Find the latest news and articles about the park. Bookstore, Order Online! Operated by America's National Parks, the bookstore sells unique educational products and books related to Frederick Douglass. Last upda",
+     "owner_now": "America's National Parks",
+     "src": "https://www.nps.gov/frdo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Frederick Douglass National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 8,
+    "manager": "",
+    "pieces": [
+     [
+      3136,
+      "Frederick Douglass National Historic Site",
+      8,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "America's National Parks",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frdo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frdo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frdo/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/frdo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/frdo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frdo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0848": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Mary McLeod Bethune Council House National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/mamc/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/mamc/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/mamc/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/mamc/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/mamc/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-0853": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Pennsylvania Avenue National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 18,
+    "manager": "",
+    "pieces": [
+     [
+      3162,
+      "Pennsylvania Avenue National Historic Site",
+      18,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/paav/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/paav/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/paav/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13543": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "US National Arboretum Botanical Gardens",
+   "official": null,
+   "ours": {
+    "acres": 380,
+    "manager": "",
+    "pieces": [
+     [
+      5957,
+      "National Arboretum",
+      380,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.usna.usda.gov/visit/rules-and-guidelines/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Botanical Gardens",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13597": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "George Mason National Memorial",
+   "ours": null,
+   "score": null,
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-13621": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Desert Shield and Desert Storm National Memorial",
+   "ours": null,
+   "score": null,
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4564": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Potomac Heritage Trail National Scenic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Scenic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4567": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Captain John Smith Chesapeake National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4581": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Star-Spangled Banner National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4582": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7499": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Dwight D. Eisenhower National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "manager": "",
+    "pieces": [
+     [
+      3259,
+      "Dwight D. Eisenhower Memorial",
+      1,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/ddem/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/ddem/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/ddem/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7891": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "African American Civil War National Memorial",
+   "ours": null,
+   "score": null,
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7892": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Belmont-Paul Women's Equality National Monument",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/bepa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/bepa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/bepa/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/bepa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/bepa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-9898": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Mount Vernon National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-9901": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Civil War Defenses of Washington National Historic Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  }
+ },
+ "read": "2026-11-01"
+}

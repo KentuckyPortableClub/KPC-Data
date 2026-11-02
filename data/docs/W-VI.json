@@ -1,0 +1,402 @@
+{
+ "area": "W-VI",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "VI-0001": {
+   "n": "Virgin Islands National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/viis/index.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.nps.gov/viis/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "August 24, 2018",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/viis/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0002": {
+   "n": "Buck Island National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/buck_island/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0004": {
+   "n": "Sandy Point National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sandy_point/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.fws.gov/refuge/sandy-point/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0005": {
+   "n": "Salt River Bay National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/sari/index.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.nps.gov/sari/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 7, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sari/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0006": {
+   "n": "Christiansted National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/chri/index.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.nps.gov/chri/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 7, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/chri/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0007": {
+   "n": "Buck Island Reef National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/buis/index.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.nps.gov/buis/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 2, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/buis/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0008": {
+   "n": "Virgin Islands Coral Reef National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/vicr/index.htm",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "https://www.nps.gov/vicr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-01",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 7, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-11-01",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/vicr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0009": {
+   "n": "St. Croix East End Marine Park",
+   "t": "Marine Park",
+   "page": "https://www.arcgis.com/apps/MapJournal/index.html?appid=9a963174e35c4c24aeec0b7b77410a7e",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "VI-0010": {
+   "n": "Lindbergh Bay Park",
+   "t": "Park",
+   "page": "https://www.viport.com/park",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.viport.com/legal",
+    "how": "a link on the park's page ('Legislation and Policies')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0011": {
+   "n": "Cramer's Park State Beach",
+   "t": "State Beach",
+   "page": "http://www.dspr.vi.gov/blog-post-3.html",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dspr.vi.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-11-01"
+  },
+  "VI-0012": {
+   "n": "Maroon Country Territorial Park",
+   "t": "Territorial Park",
+   "page": "https://dpnr.vi.gov/parks/maroonsanctuaryterritorialpark/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dpnr.vi.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0013": {
+   "n": "Altona Lagoon Territorial Park",
+   "t": "Territorial Park",
+   "page": "https://dpnr.vi.gov/parks/crrc/land-conservation-park-development/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dpnr.vi.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0014": {
+   "n": "Lowry Hill Territorial Park",
+   "t": "Territorial Park",
+   "page": "https://dpnr.vi.gov/parks/crrc/land-conservation-park-development/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dpnr.vi.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0015": {
+   "n": "Perseverance Bay Territorial Park",
+   "t": "Territorial Park",
+   "page": "https://dpnr.vi.gov/parks/crrc/land-conservation-park-development/preservingatreasurethepushtoprotectperseverancebay/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dpnr.vi.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "VI-0016": {
+   "n": "Fish Bay Territorial Park",
+   "t": "Territorial Park",
+   "page": "https://dpnr.vi.gov/parks/crrc/land-conservation-park-development/",
+   "checked": "2026-11-01",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dpnr.vi.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-11-01",
+ "counts": {
+  "parks": 15,
+  "map ok": 6,
+  "map found by the bot": 6,
+  "date on the map": 0,
+  "posted date only": 5,
+  "date unknown": 1,
+  "no map": 9,
+  "rules ok": 8,
+  "needs browser": 0,
+  "handover hints": 0,
+  "runs hints": 0,
+  "host resting / robots": 0,
+  "map names the park": 6,
+  "region overview only": 0
+ }
+}

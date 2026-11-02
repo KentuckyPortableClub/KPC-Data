@@ -1,0 +1,144 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "canadaeast",
+ "states": [
+  "CA-ON",
+  "CA-QC",
+  "CA-NB",
+  "CA-NS",
+  "CA-PE",
+  "CA-NL"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 04:22 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "water not checked: CA-ON: 26 rows (the USGS water map / files had no answer there): never READY with one",
+  "CA-QC: 549 rows still waiting for a pass (out of time: run the worker again)",
+  "water not checked: CA-QC: 10 rows (the USGS water map / files had no answer there): never READY with one",
+  "CA-NB: 505 rows still waiting for a pass (out of time: run the worker again)",
+  "water not checked: CA-NB: 4 rows (the USGS water map / files had no answer there): never READY with one",
+  "CA-NS: 168 rows still waiting for a pass (out of time: run the worker again)",
+  "water not checked: CA-NS: 2 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-NL: 2 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 44,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 3327,
+   "pairs whose boxes touch": 3327
+  },
+  "pass2": {
+   "agree with the pass before": 1278,
+   "date": "2026-10-29",
+   "pairs tested": 315
+  },
+  "pass3": {
+   "agree with the pass before": 547,
+   "date": "2026-10-29",
+   "pairs tested": 292
+  },
+  "pass5": {
+   "checked": 0,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "CA-ON": "data/fers/CA-ON.json",
+  "CA-QC": "data/fers/CA-QC.json",
+  "CA-NB": "data/fers/CA-NB.json",
+  "CA-NS": "data/fers/CA-NS.json",
+  "CA-PE": "data/fers/CA-PE.json",
+  "CA-NL": "data/fers/CA-NL.json"
+ },
+ "CA-ON": {
+  "rows": 1027,
+  "live": 91,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 26,
+   "no public owner on the ownership map": 30
+  },
+  "dropped": 741,
+  "merged": 139
+ },
+ "water_weak": {
+  "CA-ON": 26,
+  "CA-QC": 10,
+  "CA-NB": 4,
+  "CA-NS": 2,
+  "CA-NL": 2
+ },
+ "CA-QC": {
+  "rows": 907,
+  "live": 3,
+  "waiting": 549,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 10
+  },
+  "dropped": 133,
+  "merged": 212
+ },
+ "CA-NB": {
+  "rows": 647,
+  "live": 40,
+  "waiting": 505,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 4
+  },
+  "dropped": 88,
+  "merged": 10
+ },
+ "CA-NS": {
+  "rows": 402,
+  "live": 187,
+  "waiting": 168,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 2
+  },
+  "dropped": 2,
+  "merged": 43
+ },
+ "CA-PE": {
+  "rows": 2,
+  "live": 0,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 2,
+  "merged": 0
+ },
+ "CA-NL": {
+  "rows": 30,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 2
+  },
+  "dropped": 12,
+  "merged": 15
+ },
+ "states_ready": [
+  "CA-PE"
+ ],
+ "states_held": [
+  "CA-NB",
+  "CA-NL",
+  "CA-NS",
+  "CA-ON",
+  "CA-QC"
+ ]
+}

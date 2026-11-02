@@ -1,0 +1,5642 @@
+{
+ "area": "US-MI",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-MI.json",
+ "rows": {
+  "US-0346+US-13184@trail@42.100,-83.197": {
+   "id": "US-0346+US-13184@trail@42.100,-83.197",
+   "area": "US-MI",
+   "refs": [
+    "US-0346",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 23.22,
+   "stored_wide_m": 80.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:00:54Z",
+   "layers": [
+    {
+     "ref": "US-0346",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:00:55Z"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 11.28,
+   "stored_shape_acres": 21.3,
+   "live_acres": 9.41,
+   "kept_pct": 42.5,
+   "size_pct": -55.8,
+   "moved_m": 214,
+   "gap_m": 0,
+   "wide_m": 63.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 56% smaller (9.4 ac vs 21.3 ac stored)",
+   "live_center": [
+    42.100504,
+    -83.199013
+   ]
+  },
+  "US-0346+US-6669@area@41.780,-83.447": {
+   "id": "US-0346+US-6669@area@41.780,-83.447",
+   "area": "US-MI",
+   "refs": [
+    "US-0346",
+    "US-6669"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:00:56Z",
+   "layers": [
+    {
+     "ref": "US-0346",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:00:57Z"
+    },
+    {
+     "ref": "US-6669",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:00:58Z"
+    },
+    {
+     "ref": "US-6669",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:00:59Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T01:01:01Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 2,
+     "read": "2026-11-01T01:01:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 100.0,
+   "stored_water_pct": 100,
+   "stored_shape_acres": 0.82,
+   "live_acres": 0.78,
+   "kept_pct": 100.0,
+   "size_pct": -4.9,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 22.7,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.8 ac vs 0.8 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.780239,
+    -83.447449
+   ]
+  },
+  "US-0346+US-6669@area@41.782,-83.462": {
+   "id": "US-0346+US-6669@area@41.782,-83.462",
+   "area": "US-MI",
+   "refs": [
+    "US-0346",
+    "US-6669"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 35.9,
+   "stored_wide_m": 115,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:01:04Z",
+   "layers": [
+    {
+     "ref": "US-0346",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:01:05Z"
+    },
+    {
+     "ref": "US-6669",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:05Z"
+    },
+    {
+     "ref": "US-6669",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 34,
+   "stored_shape_acres": 2.28,
+   "live_acres": 2.47,
+   "kept_pct": 98.7,
+   "size_pct": 8.4,
+   "moved_m": 389,
+   "gap_m": 0,
+   "wide_m": 39.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.5 ac vs 2.3 ac stored (+8%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.785185,
+    -83.464991
+   ]
+  },
+  "US-0353+US-6782@area@43.347,-84.052": {
+   "id": "US-0353+US-6782@area@43.347,-84.052",
+   "area": "US-MI",
+   "refs": [
+    "US-0353",
+    "US-6782"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.6,
+   "stored_wide_m": 51,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:06Z",
+   "layers": [
+    {
+     "ref": "US-0353",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:01:07Z"
+    },
+    {
+     "ref": "US-6782",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:08Z"
+    },
+    {
+     "ref": "US-6782",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 75,
+   "stored_shape_acres": 11.67,
+   "live_acres": 11.65,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 51.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.6 ac vs 11.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.339331,
+    -84.050999
+   ]
+  },
+  "US-10519+US-13172@trail@45.026,-84.967": {
+   "id": "US-10519+US-13172@trail@45.026,-84.967",
+   "area": "US-MI",
+   "refs": [
+    "US-10519",
+    "US-13172"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 9.88,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:10Z",
+   "layers": [
+    {
+     "ref": "US-10519",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:01:12Z"
+    },
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 9.03,
+   "stored_shape_acres": 9.37,
+   "live_acres": 9.03,
+   "kept_pct": 100.0,
+   "size_pct": -3.7,
+   "moved_m": 166,
+   "gap_m": 0,
+   "wide_m": 62.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.0 ac vs 9.4 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.02489,
+    -84.968168
+   ]
+  },
+  "US-10716+US-12801+US-4489@area@46.702,-87.958": {
+   "id": "US-10716+US-12801+US-4489@area@46.702,-87.958",
+   "area": "US-MI",
+   "refs": [
+    "US-10716",
+    "US-12801",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1096.8,
+   "stored_wide_m": 1017,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:12Z",
+   "layers": [
+    {
+     "ref": "US-10716",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:12Z"
+    },
+    {
+     "ref": "US-12801",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:14Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1097.23,
+   "live_acres": 1096.74,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1018.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1096.7 ac vs 1097.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.702136,
+    -87.95789
+   ]
+  },
+  "US-10716+US-4489@area@46.671,-88.011": {
+   "id": "US-10716+US-4489@area@46.671,-88.011",
+   "area": "US-MI",
+   "refs": [
+    "US-10716",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16757.3,
+   "stored_wide_m": 4775,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:16Z",
+   "layers": [
+    {
+     "ref": "US-10716",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:16Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 17175.19,
+   "live_acres": 16848.33,
+   "kept_pct": 98.4,
+   "size_pct": -1.9,
+   "moved_m": 36,
+   "gap_m": 0,
+   "wide_m": 4754.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16848.3 ac vs 17175.2 ac stored (-2%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.671503,
+    -88.010294
+   ]
+  },
+  "US-10717+US-4489@area@46.196,-89.318": {
+   "id": "US-10717+US-4489@area@46.196,-89.318",
+   "area": "US-MI",
+   "refs": [
+    "US-10717",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 15103.7,
+   "stored_wide_m": 3013,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:19Z",
+   "layers": [
+    {
+     "ref": "US-10717",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:19Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 16468.99,
+   "live_acres": 15167.94,
+   "kept_pct": 91.2,
+   "size_pct": -7.9,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 3018.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15167.9 ac vs 16469.0 ac stored (-8%), 91% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.196263,
+    -89.317943
+   ]
+  },
+  "US-10718+US-12799+US-4489@area@46.627,-88.677": {
+   "id": "US-10718+US-12799+US-4489@area@46.627,-88.677",
+   "area": "US-MI",
+   "refs": [
+    "US-10718",
+    "US-12799",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3613.5,
+   "stored_wide_m": 1333,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:20Z",
+   "layers": [
+    {
+     "ref": "US-10718",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:21Z"
+    },
+    {
+     "ref": "US-12799",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:23Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 3624.45,
+   "live_acres": 3616.99,
+   "kept_pct": 98.4,
+   "size_pct": -0.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1333.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3617.0 ac vs 3624.5 ac stored (-0%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.626657,
+    -88.677407
+   ]
+  },
+  "US-10718+US-4489@area@46.599,-88.678": {
+   "id": "US-10718+US-4489@area@46.599,-88.678",
+   "area": "US-MI",
+   "refs": [
+    "US-10718",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16610.0,
+   "stored_wide_m": 4917,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:25Z",
+   "layers": [
+    {
+     "ref": "US-10718",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:25Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 16706.21,
+   "live_acres": 16697.14,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 4864.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16697.1 ac vs 16706.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.599154,
+    -88.678545
+   ]
+  },
+  "US-12786+US-13172@river@44.643,-83.941": {
+   "id": "US-12786+US-13172@river@44.643,-83.941",
+   "area": "US-MI",
+   "refs": [
+    "US-12786",
+    "US-13172"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:01:25Z",
+   "layers": [
+    {
+     "ref": "US-12786",
+     "layer": "saved copy US-12786.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T01:01:26Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 4,
+     "read": "2026-11-01T01:01:28Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T01:01:26Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 4,
+     "read": "2026-11-01T01:01:28Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12786",
+    "US-13172"
+   ],
+   "live_stretch_acres": 410.84,
+   "stored_shape_acres": 0.53,
+   "live_acres": 5.14,
+   "kept_pct": 100.0,
+   "size_pct": 878.2,
+   "moved_m": 26,
+   "gap_m": 0,
+   "wide_m": 106.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 878% bigger (5.1 ac vs 0.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.643353,
+    -83.940334
+   ]
+  },
+  "US-12786+US-4488@river@44.637,-83.927": {
+   "id": "US-12786+US-4488@river@44.637,-83.927",
+   "area": "US-MI",
+   "refs": [
+    "US-12786",
+    "US-4488"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:01:28Z",
+   "layers": [
+    {
+     "ref": "US-12786",
+     "layer": "saved copy US-12786.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4488",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:28Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T01:01:29Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 9,
+     "read": "2026-11-01T01:01:31Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12786"
+   ],
+   "live_stretch_acres": 636.92,
+   "stored_shape_acres": 4.41,
+   "live_acres": 10.43,
+   "kept_pct": 61.3,
+   "size_pct": 136.3,
+   "moved_m": 8255,
+   "gap_m": 0,
+   "wide_m": 104.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 61% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    44.661822,
+    -84.018704
+   ]
+  },
+  "US-12787+US-4583@area@44.290,-86.045": {
+   "id": "US-12787+US-4583@area@44.290,-86.045",
+   "area": "US-MI",
+   "refs": [
+    "US-12787",
+    "US-4583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 770.0,
+   "stored_wide_m": 958,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:31Z",
+   "layers": [
+    {
+     "ref": "US-12787",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:31Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 769.7,
+   "live_acres": 775.12,
+   "kept_pct": 100.0,
+   "size_pct": 0.7,
+   "moved_m": 279,
+   "gap_m": 0,
+   "wide_m": 960.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 775.1 ac vs 769.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.287901,
+    -86.047129
+   ]
+  },
+  "US-12788+US-4489@river@46.609,-90.080": {
+   "id": "US-12788+US-4489@river@46.609,-90.080",
+   "area": "US-MI",
+   "refs": [
+    "US-12788",
+    "US-4489"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T01:01:34Z",
+   "layers": [
+    {
+     "ref": "US-12788",
+     "layer": "saved copy US-12788.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:35Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T01:01:35Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 25,
+     "read": "2026-11-01T01:01:38Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12788"
+   ],
+   "live_stretch_acres": 76.34,
+   "stored_shape_acres": 60.22,
+   "live_acres": 68.09,
+   "kept_pct": 57.5,
+   "size_pct": 13.1,
+   "moved_m": 5516,
+   "gap_m": 0,
+   "wide_m": 113.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 58% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    46.569637,
+    -90.081629
+   ]
+  },
+  "US-12789+US-4487@river@46.020,-84.730": {
+   "id": "US-12789+US-4487@river@46.020,-84.730",
+   "area": "US-MI",
+   "refs": [
+    "US-12789",
+    "US-4487"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:01:40Z",
+   "layers": [
+    {
+     "ref": "US-12789",
+     "layer": "saved copy US-12789.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:01:40Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 3,
+     "read": "2026-11-01T01:01:41Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 185,
+     "read": "2026-11-01T01:01:50Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12789"
+   ],
+   "live_stretch_acres": 11.56,
+   "stored_shape_acres": 4.18,
+   "live_acres": 11.41,
+   "kept_pct": 94.9,
+   "size_pct": 173.0,
+   "moved_m": 6372,
+   "gap_m": 0,
+   "wide_m": 132.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 173% bigger (11.4 ac vs 4.2 ac stored); 95% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    46.025418,
+    -84.728515
+   ]
+  },
+  "US-12790+US-4487@river@46.368,-85.085": {
+   "id": "US-12790+US-4487@river@46.368,-85.085",
+   "area": "US-MI",
+   "refs": [
+    "US-12790",
+    "US-4487"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:12Z",
+   "layers": [
+    {
+     "ref": "US-12790",
+     "layer": "saved copy US-12790.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:12Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T01:02:12Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 23,
+     "read": "2026-11-01T01:02:14Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12790"
+   ],
+   "live_stretch_acres": 92.51,
+   "stored_shape_acres": 370.26,
+   "live_acres": 92.51,
+   "kept_pct": 16.1,
+   "size_pct": -75.0,
+   "moved_m": 1823,
+   "gap_m": 0,
+   "wide_m": 80.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 1823 m from the stored centre; 16% of the stored overlap is still inside it",
+   "live_center": [
+    46.365245,
+    -85.110759
+   ]
+  },
+  "US-12791+US-1532@area@46.010,-86.367": {
+   "id": "US-12791+US-1532@area@46.010,-86.367",
+   "area": "US-MI",
+   "refs": [
+    "US-12791",
+    "US-1532"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 98.2,
+   "stored_wide_m": 428,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:14Z",
+   "layers": [
+    {
+     "ref": "US-12791",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:14Z"
+    },
+    {
+     "ref": "US-1532",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T01:02:15Z"
+    },
+    {
+     "ref": "US-1532",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 97.27,
+   "live_acres": 96.77,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 424.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 96.8 ac vs 97.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.010737,
+    -86.36687
+   ]
+  },
+  "US-12791+US-4487@area@46.237,-86.657": {
+   "id": "US-12791+US-4487@area@46.237,-86.657",
+   "area": "US-MI",
+   "refs": [
+    "US-12791",
+    "US-4487"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3604.1,
+   "stored_wide_m": 1533,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:18Z",
+   "layers": [
+    {
+     "ref": "US-12791",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:02:18Z"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 3241.47,
+   "live_acres": 3564.24,
+   "kept_pct": 95.4,
+   "size_pct": 10.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1509.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3564.2 ac vs 3241.5 ac stored (+10%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.237389,
+    -86.656632
+   ]
+  },
+  "US-12792+US-3329@area@44.260,-85.941": {
+   "id": "US-12792+US-3329@area@44.260,-85.941",
+   "area": "US-MI",
+   "refs": [
+    "US-12792",
+    "US-3329"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the outlines overlap, but the PAD-US state fee records does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "stored_acres": 13.4,
+   "stored_wide_m": 135,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:19Z",
+   "layers": [
+    {
+     "ref": "US-12792",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:19Z"
+    },
+    {
+     "ref": "US-3329",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 12.31,
+   "live_acres": 12.19,
+   "kept_pct": 100.0,
+   "size_pct": -1.0,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 136.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.2 ac vs 12.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.2602,
+    -85.942346
+   ]
+  },
+  "US-12792+US-4583@area@44.261,-86.026": {
+   "id": "US-12792+US-4583@area@44.261,-86.026",
+   "area": "US-MI",
+   "refs": [
+    "US-12792",
+    "US-4583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3015.0,
+   "stored_wide_m": 761,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:22Z",
+   "layers": [
+    {
+     "ref": "US-12792",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:22Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 1170.73,
+   "live_acres": 1215.09,
+   "kept_pct": 100.0,
+   "size_pct": 3.8,
+   "moved_m": 6595,
+   "gap_m": 0,
+   "wide_m": 679.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1215.1 ac vs 1170.7 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.270755,
+    -86.107897
+   ]
+  },
+  "US-12792+US-6727@area@44.261,-86.243": {
+   "id": "US-12792+US-6727@area@44.261,-86.243",
+   "area": "US-MI",
+   "refs": [
+    "US-12792",
+    "US-6727"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2753.4,
+   "stored_wide_m": 1579,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:23Z",
+   "layers": [
+    {
+     "ref": "US-12792",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:23Z"
+    },
+    {
+     "ref": "US-6727",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:24Z"
+    },
+    {
+     "ref": "US-6727",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 11,
+   "stored_shape_acres": 2756.94,
+   "live_acres": 2752.35,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 71,
+   "gap_m": 0,
+   "wide_m": 1579.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2752.4 ac vs 2756.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.26049,
+    -86.232735
+   ]
+  },
+  "US-12793+US-13184@trail@46.277,-89.308": {
+   "id": "US-12793+US-13184@trail@46.277,-89.308",
+   "area": "US-MI",
+   "refs": [
+    "US-12793",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 15.44,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:26Z",
+   "layers": [
+    {
+     "ref": "US-12793",
+     "layer": "saved copy US-12793.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-12793",
+    "US-13184"
+   ],
+   "live_stretch_acres": 0.94,
+   "stored_shape_acres": 14.87,
+   "live_acres": 0.94,
+   "kept_pct": 6.4,
+   "size_pct": -93.7,
+   "moved_m": 94,
+   "gap_m": 0,
+   "wide_m": 60.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 94% smaller (0.9 ac vs 14.9 ac stored)",
+   "live_center": [
+    46.277331,
+    -89.309271
+   ]
+  },
+  "US-12793+US-3303@area@46.476,-89.092": {
+   "id": "US-12793+US-3303@area@46.476,-89.092",
+   "area": "US-MI",
+   "refs": [
+    "US-12793",
+    "US-3303"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 212.9,
+   "stored_wide_m": 622,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:26Z",
+   "layers": [
+    {
+     "ref": "US-12793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:02:26Z"
+    },
+    {
+     "ref": "US-3303",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:27Z"
+    },
+    {
+     "ref": "US-3303",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:29Z"
+    },
+    {
+     "ref": "US-3303",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 6,
+   "stored_shape_acres": 211.41,
+   "live_acres": 236.52,
+   "kept_pct": 100.0,
+   "size_pct": 11.9,
+   "moved_m": 465,
+   "gap_m": 0,
+   "wide_m": 801.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 236.5 ac vs 211.4 ac stored (+12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.480606,
+    -89.090644
+   ]
+  },
+  "US-12793+US-3306@area@46.410,-89.134": {
+   "id": "US-12793+US-3306@area@46.410,-89.134",
+   "area": "US-MI",
+   "refs": [
+    "US-12793",
+    "US-3306"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 79.8,
+   "stored_wide_m": 415,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:31Z",
+   "layers": [
+    {
+     "ref": "US-12793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:31Z"
+    },
+    {
+     "ref": "US-3306",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:31Z"
+    },
+    {
+     "ref": "US-3306",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:36Z"
+    },
+    {
+     "ref": "US-3306",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 78.49,
+   "live_acres": 84.38,
+   "kept_pct": 100.0,
+   "size_pct": 7.5,
+   "moved_m": 64,
+   "gap_m": 0,
+   "wide_m": 505.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 84.4 ac vs 78.5 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.410045,
+    -89.133415
+   ]
+  },
+  "US-12793+US-4489@area@46.294,-89.127": {
+   "id": "US-12793+US-4489@area@46.294,-89.127",
+   "area": "US-MI",
+   "refs": [
+    "US-12793",
+    "US-4489"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 1.7,
+   "stored_wide_m": 35,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:37Z",
+   "layers": [
+    {
+     "ref": "US-12793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:37Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:38Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T01:02:39Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 43,
+     "read": "2026-11-01T01:02:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 41.8,
+   "stored_water_pct": 40,
+   "stored_shape_acres": 1.15,
+   "live_acres": 1.23,
+   "kept_pct": 86.3,
+   "size_pct": 7.1,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 35.5,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.2 ac vs 1.2 ac stored (+7%), 86% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.293613,
+    -89.126896
+   ]
+  },
+  "US-12793+US-4489@area@46.656,-89.380": {
+   "id": "US-12793+US-4489@area@46.656,-89.380",
+   "area": "US-MI",
+   "refs": [
+    "US-12793",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4469.3,
+   "stored_wide_m": 1591,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:40Z",
+   "layers": [
+    {
+     "ref": "US-12793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:02:40Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T01:02:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 4148.75,
+   "live_acres": 4444.34,
+   "kept_pct": 99.8,
+   "size_pct": 7.1,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 1604.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4444.3 ac vs 4148.7 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.655871,
+    -89.380661
+   ]
+  },
+  "US-12794+US-13184@river@46.193,-88.995": {
+   "id": "US-12794+US-13184@river@46.193,-88.995",
+   "area": "US-MI",
+   "refs": [
+    "US-12794",
+    "US-13184"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:41Z",
+   "layers": [
+    {
+     "ref": "US-12794",
+     "layer": "saved copy US-12794.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T01:02:41Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 6,
+     "read": "2026-11-01T01:02:42Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T01:02:41Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 6,
+     "read": "2026-11-01T01:02:42Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12794",
+    "US-13184"
+   ],
+   "live_stretch_acres": 0.93,
+   "stored_shape_acres": 0.05,
+   "live_acres": 0.93,
+   "kept_pct": 95.6,
+   "size_pct": 1680.3,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 60.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 1680% bigger (0.9 ac vs 0.1 ac stored); 96% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    46.193101,
+    -88.995394
+   ]
+  },
+  "US-12794+US-4489@river@46.253,-88.740": {
+   "id": "US-12794+US-4489@river@46.253,-88.740",
+   "area": "US-MI",
+   "refs": [
+    "US-12794",
+    "US-4489"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:42Z",
+   "layers": [
+    {
+     "ref": "US-12794",
+     "layer": "saved copy US-12794.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:42Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 16,
+     "read": "2026-11-01T01:02:43Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 368,
+     "read": "2026-11-01T01:02:45Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12794"
+   ],
+   "live_stretch_acres": 15.54,
+   "stored_shape_acres": 2.89,
+   "live_acres": 15.3,
+   "kept_pct": 97.7,
+   "size_pct": 430.4,
+   "moved_m": 2220,
+   "gap_m": 0,
+   "wide_m": 93.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 430% bigger (15.3 ac vs 2.9 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    46.258706,
+    -88.743493
+   ]
+  },
+  "US-12795+US-4583@area@43.937,-86.084": {
+   "id": "US-12795+US-4583@area@43.937,-86.084",
+   "area": "US-MI",
+   "refs": [
+    "US-12795",
+    "US-4583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 319.6,
+   "stored_wide_m": 823,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:46Z",
+   "layers": [
+    {
+     "ref": "US-12795",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:46Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 9,
+   "stored_shape_acres": 317.91,
+   "live_acres": 323.75,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 843.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 323.8 ac vs 317.9 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.936805,
+    -86.083849
+   ]
+  },
+  "US-12795+US-6754@area@43.932,-86.416": {
+   "id": "US-12795+US-6754@area@43.932,-86.416",
+   "area": "US-MI",
+   "refs": [
+    "US-12795",
+    "US-6754"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 71.2,
+   "stored_wide_m": 79,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:48Z",
+   "layers": [
+    {
+     "ref": "US-12795",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:48Z"
+    },
+    {
+     "ref": "US-6754",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:48Z"
+    },
+    {
+     "ref": "US-6754",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:50Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 4,
+     "read": "2026-11-01T01:02:51Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 45,
+     "read": "2026-11-01T01:02:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 73.0,
+   "stored_water_pct": 100,
+   "stored_shape_acres": 56.35,
+   "live_acres": 520.35,
+   "kept_pct": 100.0,
+   "size_pct": 823.3,
+   "moved_m": 579,
+   "gap_m": 0,
+   "wide_m": 593.8,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 823% bigger (520.3 ac vs 56.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.929018,
+    -86.410731
+   ]
+  },
+  "US-12796+US-4583@river@44.197,-85.775": {
+   "id": "US-12796+US-4583@river@44.197,-85.775",
+   "area": "US-MI",
+   "refs": [
+    "US-12796",
+    "US-4583"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:52Z",
+   "layers": [
+    {
+     "ref": "US-12796",
+     "layer": "saved copy US-12796.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:53Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T01:02:54Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 5,
+     "read": "2026-11-01T01:02:55Z"
+    }
+   ],
+   "saved_lines": [
+    "US-12796"
+   ],
+   "live_stretch_acres": 87.32,
+   "stored_shape_acres": 51.04,
+   "live_acres": 38.91,
+   "kept_pct": 44.3,
+   "size_pct": -23.8,
+   "moved_m": 602,
+   "gap_m": 0,
+   "wide_m": 116.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 44% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    44.222708,
+    -85.904356
+   ]
+  },
+  "US-12797+US-13184@trail@46.388,-89.688": {
+   "id": "US-12797+US-13184@trail@46.388,-89.688",
+   "area": "US-MI",
+   "refs": [
+    "US-12797",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 18.46,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:55Z",
+   "layers": [
+    {
+     "ref": "US-12797",
+     "layer": "saved copy US-12797.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-12797",
+    "US-13184"
+   ],
+   "live_stretch_acres": 1.24,
+   "stored_shape_acres": 16.61,
+   "live_acres": 1.24,
+   "kept_pct": 9.9,
+   "size_pct": -92.6,
+   "moved_m": 149,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 93% smaller (1.2 ac vs 16.6 ac stored)",
+   "live_center": [
+    46.388221,
+    -89.69014
+   ]
+  },
+  "US-12797+US-4489@area@46.325,-89.838": {
+   "id": "US-12797+US-4489@area@46.325,-89.838",
+   "area": "US-MI",
+   "refs": [
+    "US-12797",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10941.5,
+   "stored_wide_m": 2217,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:55Z",
+   "layers": [
+    {
+     "ref": "US-12797",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:02:55Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 2831.53,
+   "live_acres": 2835.25,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 21517,
+   "gap_m": 0,
+   "wide_m": 1236.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2835.2 ac vs 2831.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.245542,
+    -89.582754
+   ]
+  },
+  "US-12798+US-13184@trail@45.895,-86.701": {
+   "id": "US-12798+US-13184@trail@45.895,-86.701",
+   "area": "US-MI",
+   "refs": [
+    "US-12798",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 12.77,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:57Z",
+   "layers": [
+    {
+     "ref": "US-12798",
+     "layer": "saved copy US-12798.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-12798",
+    "US-13184"
+   ],
+   "live_stretch_acres": 1.19,
+   "stored_shape_acres": 11.81,
+   "live_acres": 1.19,
+   "kept_pct": 13.0,
+   "size_pct": -89.9,
+   "moved_m": 220,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 220 m from the stored centre; 13% of the stored overlap is still inside it",
+   "live_center": [
+    45.895258,
+    -86.703818
+   ]
+  },
+  "US-12798+US-4487@area@45.899,-86.697": {
+   "id": "US-12798+US-4487@area@45.899,-86.697",
+   "area": "US-MI",
+   "refs": [
+    "US-12798",
+    "US-4487"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6498.6,
+   "stored_wide_m": 1591,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:57Z",
+   "layers": [
+    {
+     "ref": "US-12798",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:02:57Z"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 5174.03,
+   "live_acres": 6374.79,
+   "kept_pct": 100.0,
+   "size_pct": 23.2,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 1593.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6374.8 ac vs 5174.0 ac stored (+23%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.018259,
+    -86.742468
+   ]
+  },
+  "US-12799+US-4489@area@46.627,-88.677": {
+   "id": "US-12799+US-4489@area@46.627,-88.677",
+   "area": "US-MI",
+   "refs": [
+    "US-12799",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5359.2,
+   "stored_wide_m": 1330,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:02:59Z",
+   "layers": [
+    {
+     "ref": "US-12799",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:02:59Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 5262.42,
+   "live_acres": 5367.21,
+   "kept_pct": 99.3,
+   "size_pct": 2.0,
+   "moved_m": 54,
+   "gap_m": 0,
+   "wide_m": 1331.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5367.2 ac vs 5262.4 ac stored (+2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.626535,
+    -88.67751
+   ]
+  },
+  "US-12800+US-4487@area@46.142,-86.861": {
+   "id": "US-12800+US-4487@area@46.142,-86.861",
+   "area": "US-MI",
+   "refs": [
+    "US-12800",
+    "US-4487"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3844.7,
+   "stored_wide_m": 1207,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:00Z",
+   "layers": [
+    {
+     "ref": "US-12800",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:00Z"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 3048.02,
+   "live_acres": 3451.33,
+   "kept_pct": 94.3,
+   "size_pct": 13.2,
+   "moved_m": 7889,
+   "gap_m": 0,
+   "wide_m": 1282.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3451.3 ac vs 3048.0 ac stored (+13%), 94% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.141692,
+    -86.86062
+   ]
+  },
+  "US-13167+US-4487@area@46.538,-86.678": {
+   "id": "US-13167+US-4487@area@46.538,-86.678",
+   "area": "US-MI",
+   "refs": [
+    "US-13167",
+    "US-4487"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13234.6,
+   "stored_wide_m": 4235,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:02Z",
+   "layers": [
+    {
+     "ref": "US-13167",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:02Z"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13538.36,
+   "live_acres": 13291.98,
+   "kept_pct": 98.1,
+   "size_pct": -1.8,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 4189.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13292.0 ac vs 13538.4 ac stored (-2%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.538132,
+    -86.678658
+   ]
+  },
+  "US-13172+US-13174@trail@45.362,-84.241": {
+   "id": "US-13172+US-13174@trail@45.362,-84.241",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-13174"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:04Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13174",
+     "layer": "saved copy US-13174.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13172",
+    "US-13174"
+   ],
+   "live_stretch_acres": 783.39,
+   "stored_shape_acres": 9.04,
+   "live_acres": 10.66,
+   "kept_pct": 100.0,
+   "size_pct": 18.0,
+   "moved_m": 16804,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.7 ac vs 9.0 ac stored (+18%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.361875,
+    -84.2407
+   ]
+  },
+  "US-13172+US-13176@trail@45.449,-84.786": {
+   "id": "US-13172+US-13176@trail@45.449,-84.786",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-13176"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:04Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13176",
+     "layer": "saved copy US-13176.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13172",
+    "US-13176"
+   ],
+   "live_stretch_acres": 560.43,
+   "stored_shape_acres": 13.03,
+   "live_acres": 11.97,
+   "kept_pct": 93.5,
+   "size_pct": -8.2,
+   "moved_m": 5072,
+   "gap_m": 0,
+   "wide_m": 65.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.0 ac vs 13.0 ac stored (-8%), 93% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.558425,
+    -84.784738
+   ]
+  },
+  "US-13172+US-13184@trail@45.633,-84.487": {
+   "id": "US-13172+US-13184@trail@45.633,-84.487",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:04Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13172",
+    "US-13184"
+   ],
+   "live_stretch_acres": 1.94,
+   "stored_shape_acres": 1.94,
+   "live_acres": 1.94,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 56,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.9 ac vs 1.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.633755,
+    -84.48716
+   ]
+  },
+  "US-13172+US-1485@trail@45.521,-84.462": {
+   "id": "US-13172+US-1485@trail@45.521,-84.462",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-1485"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 9.59,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:04Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1485",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:05Z"
+    },
+    {
+     "ref": "US-1485",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:06Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 8.56,
+   "stored_shape_acres": 8.62,
+   "live_acres": 8.56,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 399,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.6 ac vs 8.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.522066,
+    -84.463686
+   ]
+  },
+  "US-13172+US-1498@trail@45.771,-84.728": {
+   "id": "US-13172+US-1498@trail@45.771,-84.728",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-1498"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.93,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:07Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1498",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:08Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 6.5,
+   "stored_shape_acres": 6.6,
+   "live_acres": 6.5,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 221,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.5 ac vs 6.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.772801,
+    -84.729201
+   ]
+  },
+  "US-13172+US-1506@trail@45.465,-83.887": {
+   "id": "US-13172+US-1506@trail@45.465,-83.887",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-1506"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 14.71,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:09Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1506",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:10Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 20.32,
+   "stored_shape_acres": 14.42,
+   "live_acres": 15.04,
+   "kept_pct": 100.0,
+   "size_pct": 4.3,
+   "moved_m": 707,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15.0 ac vs 14.4 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.459855,
+    -83.881307
+   ]
+  },
+  "US-13172+US-1531@trail@44.932,-84.688": {
+   "id": "US-13172+US-1531@trail@44.932,-84.688",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-1531"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 11.55,
+   "stored_wide_m": 57.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:11Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1531",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:11Z"
+    },
+    {
+     "ref": "US-1531",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:12Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 10.0,
+   "stored_shape_acres": 10.48,
+   "live_acres": 10.0,
+   "kept_pct": 100.0,
+   "size_pct": -4.6,
+   "moved_m": 102,
+   "gap_m": 0,
+   "wide_m": 49.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.0 ac vs 10.5 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.930544,
+    -84.688163
+   ]
+  },
+  "US-13172+US-4488@trail@44.362,-83.604": {
+   "id": "US-13172+US-4488@trail@44.362,-83.604",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-4488"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 20.5,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:13Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4488",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:14Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 956.72,
+   "stored_shape_acres": 19.18,
+   "live_acres": 21.0,
+   "kept_pct": 100.0,
+   "size_pct": 9.5,
+   "moved_m": 11803,
+   "gap_m": 0,
+   "wide_m": 77.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21.0 ac vs 19.2 ac stored (+10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.497058,
+    -83.698071
+   ]
+  },
+  "US-13172+US-6660@trail@44.969,-83.489": {
+   "id": "US-13172+US-6660@trail@44.969,-83.489",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-6660"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.61,
+   "stored_wide_m": 30.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:14Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6660",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:15Z"
+    },
+    {
+     "ref": "US-6660",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:16Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 0.44,
+   "stored_shape_acres": 0.45,
+   "live_acres": 0.44,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 30,
+   "gap_m": 0,
+   "wide_m": 21.7,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.4 ac vs 0.4 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.969511,
+    -83.488335
+   ]
+  },
+  "US-13172+US-6785@trail@45.052,-84.125": {
+   "id": "US-13172+US-6785@trail@45.052,-84.125",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-6785"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 13.23,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:17Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6785",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:18Z"
+    },
+    {
+     "ref": "US-6785",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:19Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 12.58,
+   "stored_shape_acres": 12.18,
+   "live_acres": 12.58,
+   "kept_pct": 100.0,
+   "size_pct": 3.3,
+   "moved_m": 286,
+   "gap_m": 0,
+   "wide_m": 65.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.6 ac vs 12.2 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.049795,
+    -84.124793
+   ]
+  },
+  "US-13172+US-6797@trail@45.187,-84.153": {
+   "id": "US-13172+US-6797@trail@45.187,-84.153",
+   "area": "US-MI",
+   "refs": [
+    "US-13172",
+    "US-6797"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.34,
+   "stored_wide_m": 36.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:20Z",
+   "layers": [
+    {
+     "ref": "US-13172",
+     "layer": "saved copy US-13172.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6797",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:20Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13172"
+   ],
+   "live_stretch_acres": 1.56,
+   "stored_shape_acres": 1.04,
+   "live_acres": 1.56,
+   "kept_pct": 100.0,
+   "size_pct": 50.1,
+   "moved_m": 182,
+   "gap_m": 0,
+   "wide_m": 33.3,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 50% bigger (1.6 ac vs 1.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    45.18741,
+    -84.152812
+   ]
+  },
+  "US-13174+US-13184@trail@45.633,-84.487": {
+   "id": "US-13174+US-13184@trail@45.633,-84.487",
+   "area": "US-MI",
+   "refs": [
+    "US-13174",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:21Z",
+   "layers": [
+    {
+     "ref": "US-13174",
+     "layer": "saved copy US-13174.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13174",
+    "US-13184"
+   ],
+   "live_stretch_acres": 0.72,
+   "stored_shape_acres": 1.52,
+   "live_acres": 0.72,
+   "kept_pct": 59.7,
+   "size_pct": -52.4,
+   "moved_m": 28,
+   "gap_m": 0,
+   "wide_m": 60.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 52% smaller (0.7 ac vs 1.5 ac stored)",
+   "live_center": [
+    45.63339,
+    -84.487189
+   ]
+  },
+  "US-13174+US-1485@trail@45.521,-84.463": {
+   "id": "US-13174+US-1485@trail@45.521,-84.463",
+   "area": "US-MI",
+   "refs": [
+    "US-13174",
+    "US-1485"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.52,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:21Z",
+   "layers": [
+    {
+     "ref": "US-13174",
+     "layer": "saved copy US-13174.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1485",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:22Z"
+    },
+    {
+     "ref": "US-1485",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:22Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13174"
+   ],
+   "live_stretch_acres": 10.54,
+   "stored_shape_acres": 1.31,
+   "live_acres": 1.42,
+   "kept_pct": 75.3,
+   "size_pct": 8.5,
+   "moved_m": 22,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.4 ac vs 1.3 ac stored (+8%), 75% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.525745,
+    -84.465153
+   ]
+  },
+  "US-13176+US-13184@trail@45.780,-84.731": {
+   "id": "US-13176+US-13184@trail@45.780,-84.731",
+   "area": "US-MI",
+   "refs": [
+    "US-13176",
+    "US-13184"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:22Z",
+   "layers": [
+    {
+     "ref": "US-13176",
+     "layer": "saved copy US-13176.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13176",
+    "US-13184"
+   ],
+   "live_stretch_acres": 0.58,
+   "stored_shape_acres": 1.3,
+   "live_acres": 0.58,
+   "kept_pct": 63.4,
+   "size_pct": -55.4,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 49.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 55% smaller (0.6 ac vs 1.3 ac stored)",
+   "live_center": [
+    45.78037,
+    -84.730691
+   ]
+  },
+  "US-13176+US-1533@trail@45.393,-84.912": {
+   "id": "US-13176+US-1533@trail@45.393,-84.912",
+   "area": "US-MI",
+   "refs": [
+    "US-13176",
+    "US-1533"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 3.58,
+   "stored_wide_m": 42.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:22Z",
+   "layers": [
+    {
+     "ref": "US-13176",
+     "layer": "saved copy US-13176.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1533",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:23Z"
+    },
+    {
+     "ref": "US-1533",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:24Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13176"
+   ],
+   "live_stretch_acres": 2.69,
+   "stored_shape_acres": 2.61,
+   "live_acres": 2.69,
+   "kept_pct": 91.0,
+   "size_pct": 3.0,
+   "moved_m": 166,
+   "gap_m": 0,
+   "wide_m": 17.1,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.7 ac vs 2.6 ac stored (+3%), 91% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.393403,
+    -84.909575
+   ]
+  },
+  "US-13176+US-6826@trail@45.425,-84.848": {
+   "id": "US-13176+US-6826@trail@45.425,-84.848",
+   "area": "US-MI",
+   "refs": [
+    "US-13176",
+    "US-6826"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.47,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:25Z",
+   "layers": [
+    {
+     "ref": "US-13176",
+     "layer": "saved copy US-13176.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6826",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:25Z"
+    },
+    {
+     "ref": "US-6826",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:03:26Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13176"
+   ],
+   "live_stretch_acres": 10.46,
+   "stored_shape_acres": 0.89,
+   "live_acres": 8.36,
+   "kept_pct": 100.0,
+   "size_pct": 841.8,
+   "moved_m": 128,
+   "gap_m": 0,
+   "wide_m": 59.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 842% bigger (8.4 ac vs 0.9 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    45.424468,
+    -84.845228
+   ]
+  },
+  "US-13179+US-1555@trail@43.876,-85.508": {
+   "id": "US-13179+US-1555@trail@43.876,-85.508",
+   "area": "US-MI",
+   "refs": [
+    "US-13179",
+    "US-1555"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.27,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:27Z",
+   "layers": [
+    {
+     "ref": "US-13179",
+     "layer": "saved copy US-13179.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1555",
+     "layer": "saved copy US-1555.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13179",
+    "US-1555"
+   ],
+   "live_stretch_acres": 2.95,
+   "stored_shape_acres": 0.2,
+   "live_acres": 1.55,
+   "kept_pct": 100.0,
+   "size_pct": 663.4,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 663% bigger (1.5 ac vs 0.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    43.876505,
+    -85.50857
+   ]
+  },
+  "US-13179+US-4583@trail@43.898,-85.695": {
+   "id": "US-13179+US-4583@trail@43.898,-85.695",
+   "area": "US-MI",
+   "refs": [
+    "US-13179",
+    "US-4583"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 10.73,
+   "stored_wide_m": 32.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:27Z",
+   "layers": [
+    {
+     "ref": "US-13179",
+     "layer": "saved copy US-13179.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:29Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13179"
+   ],
+   "live_stretch_acres": 8.5,
+   "stored_shape_acres": 8.2,
+   "live_acres": 8.5,
+   "kept_pct": 99.8,
+   "size_pct": 3.7,
+   "moved_m": 578,
+   "gap_m": 0,
+   "wide_m": 20.4,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.5 ac vs 8.2 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.900863,
+    -85.701709
+   ]
+  },
+  "US-13184+US-1488@trail@46.094,-88.420": {
+   "id": "US-13184+US-1488@trail@46.094,-88.420",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1488"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 14.02,
+   "stored_wide_m": 60.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:30Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1488",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:30Z"
+    },
+    {
+     "ref": "US-1488",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:31Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 8.57,
+   "stored_shape_acres": 11.93,
+   "live_acres": 8.57,
+   "kept_pct": 96.9,
+   "size_pct": -28.2,
+   "moved_m": 770,
+   "gap_m": 0,
+   "wide_m": 48.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 28% smaller (8.6 ac vs 11.9 ac stored)",
+   "live_center": [
+    46.093938,
+    -88.419151
+   ]
+  },
+  "US-13184+US-1511@trail@42.411,-86.264": {
+   "id": "US-13184+US-1511@trail@42.411,-86.264",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1511"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.03,
+   "stored_wide_m": 42.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:32Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1511",
+     "layer": "saved copy US-1511.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13184",
+    "US-1511"
+   ],
+   "stored_shape_acres": 0.85,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-13184+US-1513@trail@42.444,-84.180": {
+   "id": "US-13184+US-1513@trail@42.444,-84.180",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1513"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.4,
+   "stored_wide_m": 30.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:32Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1513",
+     "layer": "saved copy US-1513.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-13184",
+    "US-1513"
+   ],
+   "live_stretch_acres": 1.05,
+   "stored_shape_acres": 0.26,
+   "live_acres": 1.05,
+   "kept_pct": 100.0,
+   "size_pct": 303.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 303% bigger (1.1 ac vs 0.3 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.444638,
+    -84.17997
+   ]
+  },
+  "US-13184+US-1522@trail@42.334,-83.027": {
+   "id": "US-13184+US-1522@trail@42.334,-83.027",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1522"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.86,
+   "stored_wide_m": 73.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:32Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1522",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:32Z"
+    },
+    {
+     "ref": "US-1522",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:34Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 14.35,
+   "stored_shape_acres": 12.55,
+   "live_acres": 13.74,
+   "kept_pct": 89.5,
+   "size_pct": 9.5,
+   "moved_m": 222,
+   "gap_m": 0,
+   "wide_m": 65.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13.7 ac vs 12.5 ac stored (+10%), 89% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.331618,
+    -83.027092
+   ]
+  },
+  "US-13184+US-1524@trail@46.676,-85.633": {
+   "id": "US-13184+US-1524@trail@46.676,-85.633",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1524"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 68.11,
+   "stored_wide_m": 117.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:35Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1524",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:35Z"
+    },
+    {
+     "ref": "US-1524",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:36Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 46.92,
+   "stored_shape_acres": 69.67,
+   "live_acres": 45.95,
+   "kept_pct": 64.9,
+   "size_pct": -34.0,
+   "moved_m": 117,
+   "gap_m": 0,
+   "wide_m": 120.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 34% smaller (46.0 ac vs 69.7 ac stored)",
+   "live_center": [
+    46.677369,
+    -85.633336
+   ]
+  },
+  "US-13184+US-1534@trail@46.726,-89.756": {
+   "id": "US-13184+US-1534@trail@46.726,-89.756",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1534"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.88,
+   "stored_wide_m": 62.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:37Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:38Z"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:39Z"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:41Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 0.88,
+   "stored_shape_acres": 0.76,
+   "live_acres": 0.88,
+   "kept_pct": 100.0,
+   "size_pct": 15.5,
+   "moved_m": 0,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.9 ac vs 0.8 ac stored (+16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.72648,
+    -89.756095
+   ]
+  },
+  "US-13184+US-1544@trail@46.581,-85.264": {
+   "id": "US-13184+US-1544@trail@46.581,-85.264",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-1544"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 31.83,
+   "stored_wide_m": 84.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:42Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-1544",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:43Z"
+    },
+    {
+     "ref": "US-1544",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:44Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 59.87,
+   "stored_shape_acres": 29.85,
+   "live_acres": 32.14,
+   "kept_pct": 98.2,
+   "size_pct": 7.7,
+   "moved_m": 603,
+   "gap_m": 0,
+   "wide_m": 98.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 32.1 ac vs 29.9 ac stored (+8%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.585893,
+    -85.264944
+   ]
+  },
+  "US-13184+US-3305@trail@43.656,-83.898": {
+   "id": "US-13184+US-3305@trail@43.656,-83.898",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-3305"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.25,
+   "stored_wide_m": 30.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:45Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-3305",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:46Z"
+    },
+    {
+     "ref": "US-3305",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:47Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 0.22,
+   "stored_shape_acres": 0.17,
+   "live_acres": 0.22,
+   "kept_pct": 100.0,
+   "size_pct": 24.3,
+   "moved_m": 31,
+   "gap_m": 0,
+   "wide_m": 27.6,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.2 ac vs 0.2 ac stored (+24%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.656333,
+    -83.897795
+   ]
+  },
+  "US-13184+US-3383@trail@42.759,-83.206": {
+   "id": "US-13184+US-3383@trail@42.759,-83.206",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-3383"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.24,
+   "stored_wide_m": 14.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:48Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-3383",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:49Z"
+    },
+    {
+     "ref": "US-3383",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:03:51Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 8.79,
+   "stored_shape_acres": 1.13,
+   "live_acres": 8.79,
+   "kept_pct": 100.0,
+   "size_pct": 681.3,
+   "moved_m": 603,
+   "gap_m": 0,
+   "wide_m": 28.7,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 681% bigger (8.8 ac vs 1.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.762688,
+    -83.211675
+   ]
+  },
+  "US-13184+US-4487@trail@45.930,-84.913": {
+   "id": "US-13184+US-4487@trail@45.930,-84.913",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-4487"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 50.92,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:52Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4487",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:52Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 48.6,
+   "stored_shape_acres": 48.51,
+   "live_acres": 48.6,
+   "kept_pct": 99.3,
+   "size_pct": 0.2,
+   "moved_m": 694,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 48.6 ac vs 48.5 ac stored (+0%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.934641,
+    -84.919435
+   ]
+  },
+  "US-13184+US-4489@trail@46.225,-89.065": {
+   "id": "US-13184+US-4489@trail@46.225,-89.065",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-4489"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 219.32,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:53Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T01:03:53Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 206.61,
+   "stored_shape_acres": 210.05,
+   "live_acres": 206.61,
+   "kept_pct": 95.0,
+   "size_pct": -1.6,
+   "moved_m": 2159,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 206.6 ac vs 210.0 ac stored (-2%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.214201,
+    -89.042041
+   ]
+  },
+  "US-13184+US-6651@trail@43.503,-83.898": {
+   "id": "US-13184+US-6651@trail@43.503,-83.898",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6651"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 19.31,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:03:54Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6651",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:54Z"
+    },
+    {
+     "ref": "US-6651",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:55Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 17.87,
+   "stored_shape_acres": 18.27,
+   "live_acres": 17.87,
+   "kept_pct": 100.0,
+   "size_pct": -2.2,
+   "moved_m": 628,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.9 ac vs 18.3 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.507777,
+    -83.893957
+   ]
+  },
+  "US-13184+US-6681@trail@45.904,-86.490": {
+   "id": "US-13184+US-6681@trail@45.904,-86.490",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6681"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 4.89,
+   "stored_wide_m": 56.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:56Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6681",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:56Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 4.17,
+   "stored_shape_acres": 4.45,
+   "live_acres": 4.17,
+   "kept_pct": 99.1,
+   "size_pct": -6.2,
+   "moved_m": 370,
+   "gap_m": 0,
+   "wide_m": 44.6,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.2 ac vs 4.4 ac stored (-6%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.906378,
+    -86.486902
+   ]
+  },
+  "US-13184+US-6735@trail@42.739,-85.408": {
+   "id": "US-13184+US-6735@trail@42.739,-85.408",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6735"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.4,
+   "stored_wide_m": 42.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:03:57Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6735",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:58Z"
+    },
+    {
+     "ref": "US-6735",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:59Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 1.29,
+   "stored_shape_acres": 1.14,
+   "live_acres": 1.29,
+   "kept_pct": 100.0,
+   "size_pct": 13.3,
+   "moved_m": 88,
+   "gap_m": 0,
+   "wide_m": 37.8,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.1 ac stored (+13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.740184,
+    -85.407558
+   ]
+  },
+  "US-13184+US-6740@trail@43.223,-83.470": {
+   "id": "US-13184+US-6740@trail@43.223,-83.470",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6740"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.01,
+   "stored_wide_m": 56.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:04:01Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6740",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:01Z"
+    },
+    {
+     "ref": "US-6740",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:02Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 5.26,
+   "stored_shape_acres": 5.63,
+   "live_acres": 5.26,
+   "kept_pct": 99.4,
+   "size_pct": -6.6,
+   "moved_m": 306,
+   "gap_m": 0,
+   "wide_m": 46.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.3 ac vs 5.6 ac stored (-7%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.225333,
+    -83.472281
+   ]
+  },
+  "US-13184+US-6743@trail@43.769,-83.958": {
+   "id": "US-13184+US-6743@trail@43.769,-83.958",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6743"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.77,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:04:03Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6743",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:03Z"
+    },
+    {
+     "ref": "US-6743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:04Z"
+    },
+    {
+     "ref": "US-6743",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T01:04:05Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 10.86,
+   "stored_shape_acres": 11.71,
+   "live_acres": 10.86,
+   "kept_pct": 100.0,
+   "size_pct": -7.3,
+   "moved_m": 181,
+   "gap_m": 0,
+   "wide_m": 38.3,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.9 ac vs 11.7 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.771053,
+    -83.957385
+   ]
+  },
+  "US-13184+US-6823@trail@42.334,-83.027": {
+   "id": "US-13184+US-6823@trail@42.334,-83.027",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6823"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.86,
+   "stored_wide_m": 73.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:04:06Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6823",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:07Z"
+    },
+    {
+     "ref": "US-6823",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:03:34Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 14.35,
+   "stored_shape_acres": 12.55,
+   "live_acres": 13.74,
+   "kept_pct": 89.5,
+   "size_pct": 9.5,
+   "moved_m": 222,
+   "gap_m": 0,
+   "wide_m": 65.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13.7 ac vs 12.5 ac stored (+10%), 89% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.331618,
+    -83.027092
+   ]
+  },
+  "US-13184+US-6828@trail@45.909,-86.326": {
+   "id": "US-13184+US-6828@trail@45.909,-86.326",
+   "area": "US-MI",
+   "refs": [
+    "US-13184",
+    "US-6828"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 10.62,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:08Z",
+   "layers": [
+    {
+     "ref": "US-13184",
+     "layer": "saved copy US-13184.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6828",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:08Z"
+    }
+   ],
+   "saved_lines": [
+    "US-13184"
+   ],
+   "live_stretch_acres": 10.2,
+   "stored_shape_acres": 10.09,
+   "live_acres": 10.2,
+   "kept_pct": 91.2,
+   "size_pct": 1.1,
+   "moved_m": 42,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.2 ac vs 10.1 ac stored (+1%), 91% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.908144,
+    -86.326055
+   ]
+  },
+  "US-1502+US-4583@area@43.479,-86.343": {
+   "id": "US-1502+US-4583@area@43.479,-86.343",
+   "area": "US-MI",
+   "refs": [
+    "US-1502",
+    "US-4583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23.7,
+   "stored_wide_m": 115,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:09Z",
+   "layers": [
+    {
+     "ref": "US-1502",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:10Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 21.34,
+   "live_acres": 22.41,
+   "kept_pct": 100.0,
+   "size_pct": 5.0,
+   "moved_m": 520,
+   "gap_m": 0,
+   "wide_m": 119.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.4 ac vs 21.3 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.475485,
+    -86.343061
+   ]
+  },
+  "US-1513+US-3322@area@42.462,-83.977": {
+   "id": "US-1513+US-3322@area@42.462,-83.977",
+   "area": "US-MI",
+   "refs": [
+    "US-1513",
+    "US-3322"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 18.6,
+   "stored_wide_m": 35,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:04:13Z",
+   "layers": [
+    {
+     "ref": "US-1513",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:13Z"
+    },
+    {
+     "ref": "US-3322",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:15Z"
+    },
+    {
+     "ref": "US-3322",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 15.56,
+   "live_acres": 16.12,
+   "kept_pct": 100.0,
+   "size_pct": 3.6,
+   "moved_m": 1883,
+   "gap_m": 0,
+   "wide_m": 30.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.1 ac vs 15.6 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.460804,
+    -83.966727
+   ]
+  },
+  "US-1516+US-4583@area@44.082,-86.490": {
+   "id": "US-1516+US-4583@area@44.082,-86.490",
+   "area": "US-MI",
+   "refs": [
+    "US-1516",
+    "US-4583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 19.4,
+   "stored_wide_m": 55,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:17Z",
+   "layers": [
+    {
+     "ref": "US-1516",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:17Z"
+    },
+    {
+     "ref": "US-1516",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:19Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 16.72,
+   "live_acres": 17.89,
+   "kept_pct": 100.0,
+   "size_pct": 7.0,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 52.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.9 ac vs 16.7 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.081734,
+    -86.489792
+   ]
+  },
+  "US-1522+US-6823@same land@42.333,-83.027": {
+   "id": "US-1522+US-6823@same land@42.333,-83.027",
+   "area": "US-MI",
+   "refs": [
+    "US-1522",
+    "US-6823"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:04:21Z",
+   "layers": [
+    {
+     "ref": "US-1522",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:22Z"
+    },
+    {
+     "ref": "US-1522",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:23Z"
+    },
+    {
+     "ref": "US-6823",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:24Z"
+    },
+    {
+     "ref": "US-6823",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 33.62,
+   "live_acres": 40.26,
+   "kept_pct": 99.9,
+   "size_pct": 19.7,
+   "moved_m": 148,
+   "gap_m": 0,
+   "wide_m": 231.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 40.3 ac vs 33.6 ac stored (+20%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.333201,
+    -83.025228
+   ]
+  },
+  "US-1527+US-4583@area@43.501,-85.568": {
+   "id": "US-1527+US-4583@area@43.501,-85.568",
+   "area": "US-MI",
+   "refs": [
+    "US-1527",
+    "US-4583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 158.9,
+   "stored_wide_m": 465,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:24Z",
+   "layers": [
+    {
+     "ref": "US-1527",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:25Z"
+    },
+    {
+     "ref": "US-1527",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:27Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 156.87,
+   "live_acres": 158.22,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 463.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 158.2 ac vs 156.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.502359,
+    -85.599277
+   ]
+  },
+  "US-1534+US-4489@area@46.715,-89.770": {
+   "id": "US-1534+US-4489@area@46.715,-89.770",
+   "area": "US-MI",
+   "refs": [
+    "US-1534",
+    "US-4489"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 75.6,
+   "stored_wide_m": 455,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:29Z",
+   "layers": [
+    {
+     "ref": "US-1534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:29Z"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:29Z"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:30Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 73.52,
+   "live_acres": 72.22,
+   "kept_pct": 100.0,
+   "size_pct": -1.8,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 454.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 72.2 ac vs 73.5 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.734966,
+    -89.735838
+   ]
+  },
+  "US-1543+US-3308@area@45.854,-84.722": {
+   "id": "US-1543+US-3308@area@45.854,-84.722",
+   "area": "US-MI",
+   "refs": [
+    "US-1543",
+    "US-3308"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 184.6,
+   "stored_wide_m": 431,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:31Z",
+   "layers": [
+    {
+     "ref": "US-1543",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:31Z"
+    },
+    {
+     "ref": "US-1543",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:33Z"
+    },
+    {
+     "ref": "US-3308",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:34Z"
+    },
+    {
+     "ref": "US-3308",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:35Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 127.41,
+   "live_acres": 126.69,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 431.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 126.7 ac vs 127.4 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.854366,
+    -84.722086
+   ]
+  },
+  "US-1556+US-6750@area@45.718,-84.888": {
+   "id": "US-1556+US-6750@area@45.718,-84.888",
+   "area": "US-MI",
+   "refs": [
+    "US-1556",
+    "US-6750"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1033.1,
+   "stored_wide_m": 1205,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:36Z",
+   "layers": [
+    {
+     "ref": "US-1556",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:37Z"
+    },
+    {
+     "ref": "US-1556",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:04:38Z"
+    },
+    {
+     "ref": "US-1556",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "6 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T01:04:39Z"
+    },
+    {
+     "ref": "US-6750",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 8,
+   "stored_shape_acres": 1032.64,
+   "live_acres": 1033.09,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 84,
+   "gap_m": 0,
+   "wide_m": 1201.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1033.1 ac vs 1032.6 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    45.717919,
+    -84.886575
+   ]
+  },
+  "US-3304+US-6619@area@43.000,-85.997": {
+   "id": "US-3304+US-6619@area@43.000,-85.997",
+   "area": "US-MI",
+   "refs": [
+    "US-3304",
+    "US-6619"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 191.9,
+   "stored_wide_m": 692,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:42Z",
+   "layers": [
+    {
+     "ref": "US-3304",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:43Z"
+    },
+    {
+     "ref": "US-3304",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:46Z"
+    },
+    {
+     "ref": "US-6619",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 190.56,
+   "live_acres": 190.5,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 695.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 190.5 ac vs 190.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.999774,
+    -85.996783
+   ]
+  },
+  "US-3313+US-6705@area@42.825,-83.497": {
+   "id": "US-3313+US-6705@area@42.825,-83.497",
+   "area": "US-MI",
+   "refs": [
+    "US-3313",
+    "US-6705"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1707.2,
+   "stored_wide_m": 1403,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:04:48Z",
+   "layers": [
+    {
+     "ref": "US-3313",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:48Z"
+    },
+    {
+     "ref": "US-3313",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T01:04:50Z"
+    },
+    {
+     "ref": "US-3313",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:51Z"
+    },
+    {
+     "ref": "US-6705",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T01:04:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 1744.23,
+   "live_acres": 1432.78,
+   "kept_pct": 82.7,
+   "size_pct": -17.9,
+   "moved_m": 2230,
+   "gap_m": 0,
+   "wide_m": 1223.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-6705: 1 key record id(s) no longer in services3.arcgis.com/Jdnp1TjADvSDxMAX/DNRWILDLandsOPENDATA/FeatureServer/2/query: [112] | US-6705: found by name 'Holly Wildlife Unit of Holly State Recreation Area' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 1432.8 ac vs 1744.2 ac stored (-18%), 83% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    42.840929,
+    -83.479297
+   ]
+  },
+  "US-3318+US-6816@same land@46.086,-84.064": {
+   "id": "US-3318+US-6816@same land@46.086,-84.064",
+   "area": "US-MI",
+   "refs": [
+    "US-3318",
+    "US-6816"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:54Z",
+   "layers": [
+    {
+     "ref": "US-3318",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:55Z"
+    },
+    {
+     "ref": "US-3318",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:57Z"
+    },
+    {
+     "ref": "US-6816",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.43,
+   "live_acres": 7.34,
+   "kept_pct": 100.0,
+   "size_pct": 113.7,
+   "moved_m": 31,
+   "gap_m": 0,
+   "wide_m": 107.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 114% bigger (7.3 ac vs 3.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    46.085332,
+    -84.063469
+   ]
+  },
+  "US-3322+US-3331@area@42.379,-84.080": {
+   "id": "US-3322+US-3331@area@42.379,-84.080",
+   "area": "US-MI",
+   "refs": [
+    "US-3322",
+    "US-3331"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 25.5,
+   "stored_wide_m": 199,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:04:58Z",
+   "layers": [
+    {
+     "ref": "US-3322",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:59Z"
+    },
+    {
+     "ref": "US-3322",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:04:59Z"
+    },
+    {
+     "ref": "US-3331",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:00Z"
+    },
+    {
+     "ref": "US-3331",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 24.76,
+   "live_acres": 24.08,
+   "kept_pct": 99.6,
+   "size_pct": -2.8,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 197.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 24.1 ac vs 24.8 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.379229,
+    -84.079918
+   ]
+  },
+  "US-3331+US-6804@area@42.370,-84.187": {
+   "id": "US-3331+US-6804@area@42.370,-84.187",
+   "area": "US-MI",
+   "refs": [
+    "US-3331",
+    "US-6804"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5587.3,
+   "stored_wide_m": 2261,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:05:02Z",
+   "layers": [
+    {
+     "ref": "US-3331",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:02Z"
+    },
+    {
+     "ref": "US-3331",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T01:05:03Z"
+    },
+    {
+     "ref": "US-6804",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:03Z"
+    },
+    {
+     "ref": "US-6804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:05:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5494.9,
+   "live_acres": 5445.45,
+   "kept_pct": 99.5,
+   "size_pct": -0.9,
+   "moved_m": 21,
+   "gap_m": 0,
+   "wide_m": 2258.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5445.5 ac vs 5494.9 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.369662,
+    -84.187164
+   ]
+  },
+  "US-3334+US-6621@area@42.622,-85.459": {
+   "id": "US-3334+US-6621@area@42.622,-85.459",
+   "area": "US-MI",
+   "refs": [
+    "US-3334",
+    "US-6621"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 41.3,
+   "stored_wide_m": 405,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:05:05Z",
+   "layers": [
+    {
+     "ref": "US-3334",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:06Z"
+    },
+    {
+     "ref": "US-3334",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:07Z"
+    },
+    {
+     "ref": "US-6621",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:10Z"
+    },
+    {
+     "ref": "US-6621",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:05:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 8,
+   "stored_shape_acres": 40.51,
+   "live_acres": 40.68,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 400.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 40.7 ac vs 40.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.622221,
+    -85.459014
+   ]
+  },
+  "US-4489+US-6620@area@46.678,-88.615": {
+   "id": "US-4489+US-6620@area@46.678,-88.615",
+   "area": "US-MI",
+   "refs": [
+    "US-4489",
+    "US-6620"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 51.4,
+   "stored_wide_m": 45,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:05:12Z",
+   "layers": [
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:13Z"
+    },
+    {
+     "ref": "US-6620",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 39.54,
+   "live_acres": 38.67,
+   "kept_pct": 99.4,
+   "size_pct": -2.2,
+   "moved_m": 8773,
+   "gap_m": 0,
+   "wide_m": 26.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 38.7 ac vs 39.5 ac stored (-2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.665164,
+    -88.615324
+   ]
+  },
+  "US-4489+US-6631@area@46.314,-89.553": {
+   "id": "US-4489+US-6631@area@46.314,-89.553",
+   "area": "US-MI",
+   "refs": [
+    "US-4489",
+    "US-6631"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 9430.4,
+   "stored_wide_m": 4763,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:05:14Z",
+   "layers": [
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:14Z"
+    },
+    {
+     "ref": "US-6631",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 9475.74,
+   "live_acres": 9490.29,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 25,
+   "gap_m": 0,
+   "wide_m": 4821.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9490.3 ac vs 9475.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.314242,
+    -89.553178
+   ]
+  },
+  "US-6634+US-6635@same land@43.753,-83.256": {
+   "id": "US-6634+US-6635@same land@43.753,-83.256",
+   "area": "US-MI",
+   "refs": [
+    "US-6634",
+    "US-6635"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:05:16Z",
+   "layers": [
+    {
+     "ref": "US-6634",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:16Z"
+    },
+    {
+     "ref": "US-6634",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:17Z"
+    },
+    {
+     "ref": "US-6635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:18Z"
+    },
+    {
+     "ref": "US-6635",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:05:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 38.77,
+   "live_acres": 39.01,
+   "kept_pct": 100.0,
+   "size_pct": 0.6,
+   "moved_m": 60,
+   "gap_m": 0,
+   "wide_m": 389.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 39.0 ac vs 38.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.752869,
+    -83.255382
+   ]
+  },
+  "US-6662+US-6685@area@44.761,-84.861": {
+   "id": "US-6662+US-6685@area@44.761,-84.861",
+   "area": "US-MI",
+   "refs": [
+    "US-6662",
+    "US-6685"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 61.4,
+   "stored_wide_m": 375,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:57:26Z",
+   "layers": [
+    {
+     "ref": "US-6662",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T01:57:27Z"
+    },
+    {
+     "ref": "US-6662",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T01:57:28Z"
+    },
+    {
+     "ref": "US-6685",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 73,
+   "stored_shape_acres": 60.29,
+   "live_acres": 60.51,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 374.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 60.5 ac vs 60.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.761017,
+    -84.86067
+   ]
+  },
+  "US-6664+US-6765@area@46.058,-83.617": {
+   "id": "US-6664+US-6765@area@46.058,-83.617",
+   "area": "US-MI",
+   "refs": [
+    "US-6664",
+    "US-6765"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
+   "stored_acres": 160.4,
+   "stored_wide_m": 552,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T01:57:30Z",
+   "layers": [
+    {
+     "ref": "US-6664",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:31Z"
+    },
+    {
+     "ref": "US-6765",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 159.02,
+   "live_acres": 159.07,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 553.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 159.1 ac vs 159.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.058016,
+    -83.61719
+   ]
+  },
+  "US-6675+US-6676@same land@43.780,-84.024": {
+   "id": "US-6675+US-6676@same land@43.780,-84.024",
+   "area": "US-MI",
+   "refs": [
+    "US-6675",
+    "US-6676"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:57:34Z",
+   "layers": [
+    {
+     "ref": "US-6675",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:35Z"
+    },
+    {
+     "ref": "US-6675",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:36Z"
+    },
+    {
+     "ref": "US-6676",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:38Z"
+    },
+    {
+     "ref": "US-6676",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 31.03,
+   "live_acres": 33.13,
+   "kept_pct": 100.0,
+   "size_pct": 6.7,
+   "moved_m": 127,
+   "gap_m": 0,
+   "wide_m": 247.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 33.1 ac vs 31.0 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    43.781111,
+    -84.02369
+   ]
+  },
+  "US-6694+US-6729@same land@43.165,-84.464": {
+   "id": "US-6694+US-6729@same land@43.165,-84.464",
+   "area": "US-MI",
+   "refs": [
+    "US-6694",
+    "US-6729"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:57:40Z",
+   "layers": [
+    {
+     "ref": "US-6694",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T01:57:41Z"
+    },
+    {
+     "ref": "US-6694",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T01:57:42Z"
+    },
+    {
+     "ref": "US-6729",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:44Z"
+    },
+    {
+     "ref": "US-6729",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 178.82,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-6707+US-6708@area@44.354,-84.802": {
+   "id": "US-6707+US-6708@area@44.354,-84.802",
+   "area": "US-MI",
+   "refs": [
+    "US-6707",
+    "US-6708"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 962.7,
+   "stored_wide_m": 825,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:57:46Z",
+   "layers": [
+    {
+     "ref": "US-6707",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:47Z"
+    },
+    {
+     "ref": "US-6707",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:48Z"
+    },
+    {
+     "ref": "US-6708",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 960.34,
+   "live_acres": 956.52,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 23,
+   "gap_m": 0,
+   "wide_m": 823.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 956.5 ac vs 960.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    44.354181,
+    -84.802259
+   ]
+  },
+  "US-12792+US-4583@area@channel@44.261,-86.041": {
+   "id": "US-12792+US-4583@area@channel@44.261,-86.041",
+   "area": "US-MI",
+   "refs": [
+    "US-12792",
+    "US-4583"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 35.1,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:57:51Z",
+   "layers": [
+    {
+     "ref": "US-12792",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:51Z"
+    },
+    {
+     "ref": "US-4583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:52Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T01:57:54Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 132,
+     "read": "2026-11-01T01:57:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 61.3,
+   "stored_shape_acres": 3.41,
+   "live_acres": 26.0,
+   "kept_pct": 100.0,
+   "size_pct": 662.7,
+   "moved_m": 684,
+   "gap_m": 0,
+   "wide_m": 177.7,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 663% bigger (26.0 ac vs 3.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    44.261307,
+    -86.032558
+   ]
+  },
+  "US-12793+US-3306@area@channel@46.408,-89.131": {
+   "id": "US-12793+US-3306@area@channel@46.408,-89.131",
+   "area": "US-MI",
+   "refs": [
+    "US-12793",
+    "US-3306"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 0.8,
+   "stored_wide_m": 42.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:57:56Z",
+   "layers": [
+    {
+     "ref": "US-12793",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:56Z"
+    },
+    {
+     "ref": "US-3306",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:57:58Z"
+    },
+    {
+     "ref": "US-3306",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:58:01Z"
+    },
+    {
+     "ref": "US-3306",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:58:02Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T01:58:04Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 18,
+     "read": "2026-11-01T01:58:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 3.6,
+   "stored_shape_acres": 0.53,
+   "live_acres": 3.06,
+   "kept_pct": 100.0,
+   "size_pct": 472.0,
+   "moved_m": 213,
+   "gap_m": 0,
+   "wide_m": 46.9,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 472% bigger (3.1 ac vs 0.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    46.410009,
+    -89.132662
+   ]
+  },
+  "US-1534+US-4489@area@channel@46.735,-89.738": {
+   "id": "US-1534+US-4489@area@channel@46.735,-89.738",
+   "area": "US-MI",
+   "refs": [
+    "US-1534",
+    "US-4489"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 0.6,
+   "stored_wide_m": 36.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T01:58:05Z",
+   "layers": [
+    {
+     "ref": "US-1534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:58:05Z"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:58:06Z"
+    },
+    {
+     "ref": "US-1534",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:58:08Z"
+    },
+    {
+     "ref": "US-4489",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T01:58:09Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T01:58:10Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 53,
+     "read": "2026-11-01T01:58:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 1.8,
+   "stored_shape_acres": 0.43,
+   "live_acres": 0.47,
+   "kept_pct": 96.4,
+   "size_pct": 8.8,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 32.6,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.5 ac vs 0.4 ac stored (+9%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    46.735074,
+    -89.737652
+   ]
+  }
+ },
+ "started": "2026-11-01T01:00:54Z",
+ "fers_sha256": "8bb15f2a5848cbb7a0b5783a662887122b01cf8506b93455d47a6f3b118299bd",
+ "live_rows": 99,
+ "skipped_rows": 313,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:38Z",
+ "complete": true,
+ "summary": {
+  "rows": 99,
+  "verdicts": {
+   "CONFIRMED": 71,
+   "SHRUNK": 10,
+   "GREW": 13,
+   "MOVED": 2,
+   "GONE": 2,
+   "RECORD CHANGED": 1,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 49,
+   "water-only": 6,
+   "small overlap (under 50 yd across)": 15
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json"
+ ],
+ "requests_this_run": 1030
+}

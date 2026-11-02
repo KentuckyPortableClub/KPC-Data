@@ -1,0 +1,709 @@
+{
+ "about": "World harvester leads for South Africa (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "ZA",
+ "date": "2026-11-02",
+ "status": "paused (out of time, will carry on)",
+ "steps_done": [
+  "known"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 3,
+  "C": 0
+ },
+ "failures": [
+  {
+   "step": "known",
+   "what": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
+   "error": "no answer three times: left alone for a day"
+  }
+ ],
+ "rejected_orgs": [],
+ "known_good_found": [
+  "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1"
+ ],
+ "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
+   "error": "no answer three times: left alone for a day"
+  },
+  {
+   "step": "known",
+   "what": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+   "found": true
+  }
+ ],
+ "leads": {
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/environmental2": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+   "cc": "ZA",
+   "title": "Environmental2",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "known-good (chat 8)",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Protected Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1634
+    },
+    {
+     "id": 1,
+     "name": "Protected Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1634
+    },
+    {
+     "id": 2,
+     "name": "Conservation Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 48
+    },
+    {
+     "id": 1,
+     "name": "Protected Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1634
+    },
+    {
+     "id": 1,
+     "name": "Protected Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1634
+    },
+    {
+     "id": 2,
+     "name": "Conservation Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 48
+    }
+   ],
+   "note": "known-good layer 1",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B",
+   "known_good": true
+  },
+  "https://dffeportal.environment.gov.za/hosting/rest/services/paca/sapad": {
+   "url": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer",
+   "cc": "ZA",
+   "title": "PACA/SAPAD",
+   "publisher": "dffeportal.environment.gov.za",
+   "catalog": "ArcGIS Online search",
+   "licence": "",
+   "date": "2023-07-14",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "ENV_DB.LDR.National_Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 22
+    },
+    {
+     "id": 2,
+     "name": "ENV_DB.LDR.Nature_Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1524
+    },
+    {
+     "id": 3,
+     "name": "ENV_DB.LDR.Forest_Nature_Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 59
+    },
+    {
+     "id": 4,
+     "name": "ENV_DB.LDR.Forest_Wilderness_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 12
+    },
+    {
+     "id": 5,
+     "name": "ENV_DB.LDR.Marine_Protected_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 42
+    },
+    {
+     "id": 7,
+     "name": "ENV_DB.LDR.Protected_Environment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 70
+    },
+    {
+     "id": 8,
+     "name": "ENV_DB.LDR.Special_Nature_Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 2
+    },
+    {
+     "id": 6,
+     "name": "ENV_DB.LDR.Mountain_Catchment _Area",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 16
+    }
+   ],
+   "note": "SAPAD",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://dffeportal.environment.gov.za/hosting/rest/services/paca/sapad_buffer": {
+   "url": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
+   "cc": "ZA",
+   "title": "PACA/SAPAD_Buffer",
+   "publisher": "dffeportal.environment.gov.za",
+   "catalog": "known-good (chat 8)",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "ENV_DB.LDR.National_Park_10kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1679
+    },
+    {
+     "id": 2,
+     "name": "ENV_DB.LDR.Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 29588
+    },
+    {
+     "id": 3,
+     "name": "ENV_DB.LDR.Forest_Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1300
+    },
+    {
+     "id": 4,
+     "name": "ENV_DB.LDR.Forest_Wilderness_Area_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 365
+    },
+    {
+     "id": 5,
+     "name": "ENV_DB.LDR.Marine_Protected_Area_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1271
+    },
+    {
+     "id": 7,
+     "name": "ENV_DB.LDR.Protected_Environment_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1422
+    },
+    {
+     "id": 8,
+     "name": "ENV_DB.LDR.Special_Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 73
+    },
+    {
+     "id": 0,
+     "name": "ENV_DB.LDR.World_Heritage_Site_10kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 2885
+    },
+    {
+     "id": 6,
+     "name": "ENV_DB.LDR.Mountain_Catchment_Area_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1284
+    },
+    {
+     "id": 1,
+     "name": "ENV_DB.LDR.National_Park_10kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1679
+    },
+    {
+     "id": 2,
+     "name": "ENV_DB.LDR.Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 29588
+    },
+    {
+     "id": 3,
+     "name": "ENV_DB.LDR.Forest_Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1300
+    }
+   ],
+   "note": "known-good service",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B",
+   "known_good": true
+  }
+ }
+}

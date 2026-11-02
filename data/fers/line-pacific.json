@@ -1,0 +1,123 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "pacific",
+ "states": [
+  "US-CA",
+  "US-OR",
+  "US-WA",
+  "US-AK",
+  "US-HI"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 07:17 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 2178 of 2455 pairs whose boxes touch"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 223,
+  "DROPPED": 577,
+  "NEVER LOOKED AT": 5355
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 2178,
+   "pairs whose boxes touch": 2455,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 3961,
+   "date": "2026-10-29",
+   "pairs tested": 598
+  },
+  "pass3": {
+   "agree with the pass before": 1709,
+   "date": "2026-10-29",
+   "pairs tested": 583
+  },
+  "pass5": {
+   "checked": 253,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-CA": "data/fers/US-CA.json",
+  "US-OR": "data/fers/US-OR.json",
+  "US-WA": "data/fers/US-WA.json",
+  "US-AK": "data/fers/US-AK.json",
+  "US-HI": "data/fers/US-HI.json"
+ },
+ "US-CA": {
+  "rows": 1342,
+  "live": 103,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline for Kern National Wild and Scenic Riv": 1,
+   "the agency ownership map did not answer": 5
+  },
+  "dropped": 848,
+  "merged": 385
+ },
+ "US-OR": {
+  "rows": 967,
+  "live": 78,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 29,
+   "the outlines overlap, but the Forest Service ownership map": 1,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 634,
+  "merged": 224
+ },
+ "US-WA": {
+  "rows": 725,
+  "live": 48,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 21
+  },
+  "dropped": 346,
+  "merged": 310
+ },
+ "US-AK": {
+  "rows": 1251,
+  "live": 34,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 3,
+   "no public owner on the ownership map": 1,
+   "low-confidence outline for Palmer Hay Flats Wildlife Refuge": 1
+  },
+  "dropped": 894,
+  "merged": 318
+ },
+ "US-HI": {
+  "rows": 76,
+  "live": 23,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 2
+  },
+  "dropped": 43,
+  "merged": 8
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-CA",
+  "US-OR",
+  "US-WA",
+  "US-AK",
+  "US-HI"
+ ]
+}

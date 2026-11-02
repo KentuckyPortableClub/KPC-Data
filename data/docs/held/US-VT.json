@@ -1,0 +1,3551 @@
+{
+ "area": "US-VT",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0329": {
+   "n": "Silvio O Conte National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/silvio-o-conte",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/silvio-o-conte/visit-us",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/silvio-o-conte/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0574": {
+   "n": "Missisquoi National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/missisquoi",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/media/missisquoi-trailspdf",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('trail map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/missisquoi/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "administered by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/missisquoi/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0744": {
+   "n": "Marsh-Billings-Rockefeller National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/mabi/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/mabi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 5, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mabi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10298": {
+   "n": "Whipstock Hill Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://fpr.vermont.gov/whipstock-hill-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/WhipstockLOCATOR.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2013-03-21",
+    "date_how": "file stamp 2013 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Whipstock Hill WMA Location Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2013: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10299": {
+   "n": "South Stream State Wildlife Habitat Management Area",
+   "t": "State Wildlife Habitat Management Area",
+   "page": "https://fpr.vermont.gov/south-stream-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://vtfishandwildlife.com/sites/fishandwildlife/files/documents/Wh; opened, a page that does not name this park (a generic agency page is not its map) https://anrweb.vt.gov/FWD/FW/WMALocator.aspx)",
+    "how": "a link on the park's page ('South Stream WMA Description and Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://vtfishandwildlife.com/sites/fishandwildlife/files/documents/Where%20to%20Hunt/Rutland%20District/South%20Stream%20WMA.pdf",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('South Stream WMA Description and Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (vtfishandwildlife.com)"
+    },
+    {
+     "url": "https://anrweb.vt.gov/FWD/FW/WMALocator.aspx",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Locator (interactive map)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (anrweb.vt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10300": {
+   "n": "Kesick Swamp State Wildlife Habitat Management Area",
+   "t": "State Wildlife Habitat Management Area",
+   "page": "https://fpr.vermont.gov/kesick-swamp-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 http://vtfishandwildlife.com/sites/fishandwildlife/files/documents/Whe; opened, a page that does not name this park (a generic agency page is not its map) https://anrweb.vt.gov/FWD/FW/WMALocator.aspx)",
+    "how": "a link on the park's page ('Kesick Swamp WMA Description and Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "http://vtfishandwildlife.com/sites/fishandwildlife/files/documents/Where%20to%20Hunt/Rutland%20District/Kesick%20Swamp%20WMA.pdf",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Kesick Swamp WMA Description and Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (vtfishandwildlife.com)"
+    },
+    {
+     "url": "https://anrweb.vt.gov/FWD/FW/WMALocator.aspx",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Locator (interactive map)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (anrweb.vt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10301": {
+   "n": "Gale Meadows State Wildlife Habitat Management Area",
+   "t": "State Wildlife Habitat Management Area",
+   "page": "https://fpr.vermont.gov/gale-meadows-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/galeabwinhalltowntaxmap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-08-02",
+    "date_how": "file stamp 2006 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Appendix A Winhall Town Tax Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2006: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [
+    "is owned by the State of Vermont",
+    "managed by the Vermont Fish & Wildlife Department"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10302": {
+   "n": "Atherton Meadows State Wildlife Habitat Management Area",
+   "t": "State Wildlife Habitat Management Area",
+   "page": "https://fpr.vermont.gov/atherton-meadows-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "http://anrmaps.vermont.gov/websites/wma/maps/Atherton%20Meadows.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Atherton Meadows WMA Description and Map')",
+    "posted": "Sep 30, 2022",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (anrmaps.vermont.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11966": {
+   "n": "Mount Independence State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://historicsites.vermont.gov/mount-independence",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (historicsites.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13530": {
+   "n": "Dutton Pines State Park",
+   "t": "State Park",
+   "page": "https://fpr.vermont.gov/dutton-pines-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/brattmulocationmap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-08-01",
+    "date_how": "file stamp 2006 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Brattleboro Management Unit Location Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 6,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 6 units",
+    "date_label": "2006: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3098": {
+   "n": "Alburgh Dunes State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/alburgh.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Alburgh%20Dunes%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Alburgh Dunes State Park Map and Guide')",
+    "page": "https://vtstateparks.com/alburgh.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3099": {
+   "n": "Allis State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/allis.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Allis-MapGuide-20260320.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Allis State Park Map and Guide')",
+    "page": "https://vtstateparks.com/allis.html",
+    "posted": "Mar 23, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3100": {
+   "n": "Big Deer State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/bigdeer.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Big%20Deer%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Big Deer State Park Map and Guide')",
+    "page": "https://vtstateparks.com/bigdeer.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3101": {
+   "n": "Bomoseen State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/bomoseen.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Bomoseen%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Bomoseen State Park Map and Guide')",
+    "page": "https://vtstateparks.com/bomoseen.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3102": {
+   "n": "Boulder Beach State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/boulder.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Boulder-Beach-Map-Guide-2025.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-01-24",
+    "date_how": "file stamp 2023 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Name\n                  Boulder Beach State Park Map and Guide')",
+    "page": "https://vtstateparks.com/boulder.html",
+    "posted": "2025",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3103": {
+   "n": "Branbury State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/branbury.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Branbury%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Branbury State Park Map and Guide')",
+    "page": "https://vtstateparks.com/branbury.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3104": {
+   "n": "Brighton State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/brighton.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Brighton%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Brighton State Park Map and Guide')",
+    "page": "https://vtstateparks.com/brighton.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3105": {
+   "n": "Burton Island State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/burton.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Burton%20Island%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Burton Island State Park Map and Guide')",
+    "page": "https://vtstateparks.com/burton.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3106": {
+   "n": "Button Bay State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/buttonbay.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Button%20Bay%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-03-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "the page in a browser ('Name\n                  Button Bay State Park Map and Guide')",
+    "page": "https://www.vtstateparks.com/parks/button-bay",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "Vermont Department of Forests, Parks and Recreation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3107": {
+   "n": "Camels Hump State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/camelshump.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/camels_hump_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Camel's Hump State Park Map and Trails Guide')",
+    "page": "https://vtstateparks.com/camelshump.html",
+    "posted": "Apr 22, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3108": {
+   "n": "Camp Plymouth State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/plymouth.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Camp-Plymouth-Map-Guide-2025.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Camp Plymouth State Park Map and Guide')",
+    "page": "https://vtstateparks.com/plymouth.html",
+    "posted": "2025",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3109": {
+   "n": "Coolidge State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/coolidge.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Coolidge%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Coolidge State Park Map and Guide')",
+    "page": "https://vtstateparks.com/coolidge.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3110": {
+   "n": "Crystal Lake State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/crystal.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Crystal%20Lake%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Crystal Lake State Park Map and Guide')",
+    "page": "https://vtstateparks.com/crystal.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3111": {
+   "n": "D.A.R. State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/dar.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/DAR%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-03-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "the page in a browser ('Name\n                  D.A.R. State Park Map and Guide')",
+    "page": "https://vtstateparks.com/dar.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3112": {
+   "n": "Elmore State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/elmore.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Elmore%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Elmore State Park Map and Guide')",
+    "page": "https://vtstateparks.com/elmore.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3113": {
+   "n": "Emerald Lake State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/emerald.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Emerald%20Lake%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-03-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "the page in a browser ('Name\n                  Emerald Lake State Park Map and Guide')",
+    "page": "https://vtstateparks.com/emerald.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3114": {
+   "n": "Fort Dummer State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/fortdummer.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Ft%20Dummer%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Fort Dummer State Park Map and Guide')",
+    "page": "https://vtstateparks.com/fortdummer.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3115": {
+   "n": "Gifford Woods State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/gifford.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Gifford%20Woods%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Gifford Woods State Park Map and Guide')",
+    "page": "https://vtstateparks.com/gifford.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3116": {
+   "n": "Grand Isle State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/grandisle.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Grand%20Isle%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-03-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "the page in a browser ('Name\n                  Grand Isle State Park Map and Guide')",
+    "page": "https://vtstateparks.com/grandisle.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3117": {
+   "n": "Green River Reservoir State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/grriver.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Green%20River%20Reservoir%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Green River Reservoir State Park Map and Guide')",
+    "page": "https://vtstateparks.com/grriver.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3118": {
+   "n": "Halfmoon Pond State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/halfmoon.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Half%20Moon%20MapGuide%202026-03-20.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Half Moon Pond State Park Map and Guide')",
+    "page": "https://vtstateparks.com/halfmoon.html",
+    "posted": "2026-03",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3119": {
+   "n": "Hazens Notch State Park",
+   "t": "State Park",
+   "page": "https://fpr.vermont.gov/hazens-notch-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3120": {
+   "n": "Jamaica State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/jamaica.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Jamaica%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-03-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "the page in a browser ('Name\n                  Jamaica State Park Map and Guide')",
+    "page": "https://vtstateparks.com/jamaica.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3121": {
+   "n": "Kamp Kill Kare State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/killkare.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Kill%20Kare%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Kill Kare State Park Map and Guide')",
+    "page": "https://vtstateparks.com/killkare.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3122": {
+   "n": "Kettle Pond State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/kettlepond.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Kettle%20Pond%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "1/2024",
+    "date_how": "printed on the map",
+    "how": "the page in a browser ('Name\n                  Kettle Pond State Park Map and Guide')",
+    "page": "https://vtstateparks.com/kettlepond.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3123": {
+   "n": "Kingsland Bay State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/kingsland.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/KingslandBay-Map-Guide-2026-03-20.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "03/2026",
+    "date_how": "printed on the map",
+    "how": "the page in a browser ('Name\n                  Kingsland Bay Map and Guide')",
+    "page": "https://vtstateparks.com/kingsland.html",
+    "posted": "2026-03",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3124": {
+   "n": "Knight Island State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/knightisland.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Knight%20Island%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Knight Island State Park Map and Guide')",
+    "page": "https://vtstateparks.com/knightisland.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3125": {
+   "n": "Knight Point State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/knightpoint.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Knight%20Point%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "06/2020",
+    "date_how": "printed on the map",
+    "how": "the page in a browser ('Name\n                  Knight Point State Park Map and Guide')",
+    "page": "https://vtstateparks.com/knightpoint.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3126": {
+   "n": "Lake Carmi State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/carmi.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Lake%20Carmi%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Lake Carmi State Park Map and Guide')",
+    "page": "https://vtstateparks.com/carmi.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3127": {
+   "n": "Lake St. Catherine State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/catherine.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Lake-St-Catherine-Map-Guide-20260324.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Lake St. Catherine State Park Map and Guide')",
+    "page": "https://vtstateparks.com/catherine.html",
+    "posted": "Mar 24, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3128": {
+   "n": "Lake Shaftsbury State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/shaftsbury.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/LakeShaftsbury-MapGuide-20260320.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "03/2026",
+    "date_how": "printed on the map",
+    "how": "the page in a browser ('Name\n                  Lake Shaftsbury State Park Map and Guide')",
+    "page": "https://vtstateparks.com/shaftsbury.html",
+    "posted": "Mar 23, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3129": {
+   "n": "Little River State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/littleriver.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Little%20River%20Map%20Guide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Little River State Park Map and Guide')",
+    "page": "https://vtstateparks.com/littleriver.html",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3130": {
+   "n": "Lowell Lake State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/lowell.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/lowell.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Name\n                  Lowell Lake State Park Map and Guide')",
+    "page": "https://vtstateparks.com/lowell.html",
+    "posted": "Apr 22, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 31 parks was dropped: https://www.vtstateparks.com/camping#policies)",
+    "how": "a link on the page in a browser ('Policies and Rules')"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3131": {
+   "n": "Maidstone State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/maidstone.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3132": {
+   "n": "Molly Stark State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/mollystark.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3133": {
+   "n": "Mount Ascutney State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/ascutney.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3134": {
+   "n": "Mount Philo State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/philo.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3135": {
+   "n": "New Discovery State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/newdiscovery.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3136": {
+   "n": "Niquette Bay State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/niquette.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3137": {
+   "n": "North Hero State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/northhero.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3138": {
+   "n": "Quechee State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/quechee.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3139": {
+   "n": "Ricker Pond State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/ricker.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3140": {
+   "n": "Sand Bar State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/sandbar.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3141": {
+   "n": "Sentinel Rock State Park",
+   "t": "State Park",
+   "page": "https://fpr.vermont.gov/sentinel-rock-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Images/SentinelRock_trails_16sept2019.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Sentinel Rock State Park Trail Map 2019')",
+    "posted": "2019",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3142": {
+   "n": "Seyon Lodge State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/seyon.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3143": {
+   "n": "Silver Lake State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/silver.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3144": {
+   "n": "Smugglers' Notch State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/smugglers.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3145": {
+   "n": "Stillwater State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/stillwater.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3146": {
+   "n": "Sweet Pond State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/sweetpond.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3147": {
+   "n": "Thetford Hill State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/thetford.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3148": {
+   "n": "Townshend State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/townshend.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailM)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailMap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nae.usace.army.mil)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3149": {
+   "n": "Underhill State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/underhill.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3150": {
+   "n": "Waterbury Center State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/waterbury.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3151": {
+   "n": "Wilgus State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/wilgus.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3152": {
+   "n": "Woodford State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/woodford.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3153": {
+   "n": "Woods Island State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/woodsisland.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4239": {
+   "n": "North Country Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/noco/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/noco/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 23, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/noco/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4527": {
+   "n": "Green Mountain National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/gmfl",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r09/gmfl",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4556": {
+   "n": "Appalachian Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/appa/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/appa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "December 21, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "is managed by the National Park Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4588": {
+   "n": "Taconic Mountains Ramble State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/taconic.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4589": {
+   "n": "Molly's Falls Pond State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/mollysfalls.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4590": {
+   "n": "Muckross State Park",
+   "t": "State Park",
+   "page": "https://vtstateparks.com/muckross.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-5527": {
+   "n": "Arlington State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/arlington-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lan; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Arlington State Forest Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/ARLINGTONwebsite_locator.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Arlington State Forest Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5528": {
+   "n": "Townshend State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/townshend-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailM; ok https://www.vtstateparks.com/sites/stateparks/files/documents/townshen; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailMap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nae.usace.army.mil)"
+    },
+    {
+     "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/townshend.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Townshend State Park Interactive Campground Map and Guide')",
+     "posted": "Apr 22, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 4,
+     "via": "off the government, not linked by the agency"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5529": {
+   "n": "Mollie Beattie State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/mollie-beattie-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5530": {
+   "n": "Dorand State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/dorand-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5531": {
+   "n": "William C. Putnam State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/putnam-wc-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5532": {
+   "n": "Hapgood State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/hapgood-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lan; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Hapgood State Forest Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/HAPGOODwebsite_locator.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Hapgood State Forest Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5533": {
+   "n": "Williams River State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/williams-river-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5535": {
+   "n": "Proctor-Piper State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/proctor-piper-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5536": {
+   "n": "Okemo State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/okemo-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://www.vtstateparks.com/sites/stateparks/files/documents/okemo_sf; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Okemo State Forest Hiking Map and Guide')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/okemo_sf_trails.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "2013-02-15",
+     "date_how": "file stamp 2013 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+     "how": "a link on the park's page ('Okemo State Forest Hiking Map and Guide')",
+     "posted": "Apr 22, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 3,
+     "via": "off the government, not linked by the agency"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5537": {
+   "n": "Lord State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/lord-ac-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5538": {
+   "n": "Lower Clarendon Gorge State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/lower-clarendon-gorge-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/clarendon.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-08-02",
+    "date_how": "file stamp 2006 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Lower Clarendon Gorge Location Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2006: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5539": {
+   "n": "Jim Jeffords State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/jim-jeffords-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lan; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/JEFFORDSwebsite_locator.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5540": {
+   "n": "Aitken State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/bird-mountain-wildlife-management-area/aitken-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5541": {
+   "n": "Calvin Coolidge State Forest",
+   "t": "State Forest",
+   "page": "https://vtstateparks.com/coolidge.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-5542": {
+   "n": "West Rutland State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/west-rutland-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/WestRutlandSF.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('West Rutland State Forest Location Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5543": {
+   "n": "Mount Carmel State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/mt-carmel-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lan; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Mt. Carmel State Forest Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/CARMELwebsite_locator.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Mt. Carmel State Forest Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5544": {
+   "n": "Downer State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/downer-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [
+    "maintained by the Town Conservation Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5545": {
+   "n": "Thetford Hill State Forest",
+   "t": "State Forest",
+   "page": "https://vtstateparks.com/thetford.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-5547": {
+   "n": "Granville Gulf Reservation State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/granville-gulf-reservation",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lan; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Granville Gulf Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/GRANVILLEwebsite_locator.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Granville Gulf Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5548": {
+   "n": "Washington State Forest",
+   "t": "State Forest",
+   "page": "https://www.uvm.edu/rsenr/washington_forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-5549": {
+   "n": "Roxbury State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/roxbury-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5550": {
+   "n": "Boyer State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/boyer-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5551": {
+   "n": "Jones State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/jones-lr-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5552": {
+   "n": "Groton State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/groton-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/Groton%20Primitive%20Camping%20B.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-5553": {
+   "n": "Camels Hump State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/camels-hump-state-forest-0",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://www.vtstateparks.com/sites/stateparks/files/documents/camels_h; opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/camels_hump_trails.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('map')",
+     "posted": "Apr 22, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": "file",
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    },
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5554": {
+   "n": "Putnam State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/putnam-cc-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5555": {
+   "n": "Mount Mansfield State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/mt-mansfield-state-forest-0",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [
+    "managed by the Essex District Office",
+    "is managed by the Barre District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5556": {
+   "n": "Lyndon State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/lyndon-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5557": {
+   "n": "Victory State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/victory-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/Victory%20Primitive%20Camping%20A.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map A')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-5558": {
+   "n": "Mathewson State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/mathewson-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/Mathewson%20Primitive%20camping.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Primitive Camping Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-5559": {
+   "n": "Cambridge State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/vermont-natural-areas",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/state_lands/acquisition/maps-and-lands-listing)",
+    "how": "a link on the park's page ('Maps and Lands Listing')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/state_lands/acquisition/maps-and-lands-listing",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps and Lands Listing')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5560": {
+   "n": "Long Trail State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/long-trail-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5561": {
+   "n": "Willoughby State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/willoughby-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/Forest_and_Forestry/Vermont_Fo; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lan)",
+    "how": "a link on the park's page ('Summer Kiosk Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/Forest_and_Forestry/Vermont_Forests/Images/WSF_summer%20kiosk%20map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Summer Kiosk Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/WSFfig1locator.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Locator Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5562": {
+   "n": "Jay State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/jay-state-forest-big-jayblack-falls-tracts",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Images/Jaylocator.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-08-10",
+    "date_how": "file stamp 2006 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Jay State Forester Locator Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2006: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5563": {
+   "n": "Black Turn Brook State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/black-turn-brook-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/Black%20Turn%20Brook.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Locator Map')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5564": {
+   "n": "Essex Nursery State Forest",
+   "t": "State Forest",
+   "page": "https://fpr.vermont.gov/west-street-complex",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://fpr.vermont.gov/recreation/trail-maps-and-guides)",
+    "how": "a link on the park's page ('Trail Guides and Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fpr.vermont.gov/recreation/trail-maps-and-guides",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guides and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8305": {
+   "n": "Darling State Park",
+   "t": "State Park",
+   "page": "https://fpr.vermont.gov/darling-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://fpr.vermont.gov/sites/fpr/files/State_Lands_Administration/Lands_Management_Planning/Library/Darling%20State%20Park%20A.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Primitive Camping Map A')",
+    "posted": "Jan 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 44 parks was dropped: https://www.vermont.gov/policies)",
+    "how": "a link on the park's page ('Web Policies')"
+   },
+   "agency": "government agency (fpr.vermont.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 109,
+  "map ok": 50,
+  "map found by the bot": 47,
+  "date on the map": 15,
+  "posted date only": 33,
+  "date unknown": 2,
+  "no map": 59,
+  "rules ok": 6,
+  "needs browser": 29,
+  "handover hints": 0,
+  "runs hints": 5,
+  "host resting / robots": 0,
+  "map names the park": 16,
+  "region overview only": 0
+ }
+}

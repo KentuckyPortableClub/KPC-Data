@@ -1,0 +1,900 @@
+{
+ "area": "ms",
+ "date": "2026-11-02",
+ "states": [
+  "US-MS"
+ ],
+ "rows": [
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-7091",
+    "US-7127"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "4304.8 ac",
+   "sort": 4304.8,
+   "reason": "the official outline of Okatibbee Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-7091+US-7127@area@32.555,-88.807",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-7095",
+    "US-7096"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "352.5 ac",
+   "sort": 352.5,
+   "reason": "the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-7095+US-7096@area@34.336,-88.434",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0642",
+    "US-4498"
+   ],
+   "names": {
+    "US-0642": "Natchez Trace Parkway National Parkway",
+    "US-4498": "Tombigbee National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "237.8 ac",
+   "sort": 237.8,
+   "reason": "candidate \u00b7 ['FED:NPS', 'FED:USFS']",
+   "id": "US-0642+US-4498@area@34.040,-88.884",
+   "sources": {
+    "US-0642": "read from the agency 2026-11-01",
+    "US-4498": "read from the agency 2026-11-01",
+    "USGS water": "saved copy of the USGS map, read 2026-11-01"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0642",
+    "US-7113"
+   ],
+   "names": {
+    "US-0642": "Natchez Trace Parkway National Parkway",
+    "US-7113": "Pearl River Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "159.6 ac",
+   "sort": 159.6,
+   "reason": "candidate \u00b7 ['FED:NPS', 'STATE']",
+   "id": "US-0642+US-7113@area@32.526,-89.969",
+   "sources": {
+    "US-0642": "read from the agency 2026-11-01",
+    "US-7113": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0390",
+    "US-4498"
+   ],
+   "names": {
+    "US-0390": "Noxubee National Wildlife Refuge",
+    "US-4498": "Tombigbee National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "158.8 ac",
+   "sort": 158.8,
+   "reason": "candidate \u00b7 ['FED:FWS', 'FED:USFS']",
+   "id": "US-0390+US-4498@area@33.213,-88.939",
+   "sources": {
+    "US-0390": "read from the agency 2026-11-01",
+    "US-4498": "read from the agency 2026-11-01",
+    "USGS water": "saved copy of the USGS map, read 2026-11-01"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0715",
+    "US-0722"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "55 same-day activations",
+   "sort": 55.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0715+US-0722@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (55x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-7083",
+    "US-7084"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "50.3 ac",
+   "sort": 50.3,
+   "reason": "the official outline of Mahannah Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-7083+US-7084@area@32.562,-90.947",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2550",
+    "US-4493"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2550+US-4493@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-7108",
+    "US-7112"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "29.7 ac",
+   "sort": 29.7,
+   "reason": "the official outline of Ward Bayou Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-7108+US-7112@area@30.658,-88.614",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0390",
+    "US-7085"
+   ],
+   "names": {
+    "US-0390": "Noxubee National Wildlife Refuge",
+    "US-7085": "John W. Starr Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "25.9 ac",
+   "sort": 25.9,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
+   "id": "US-0390+US-7085@area@33.286,-88.878",
+   "sources": {
+    "US-0390": "read from the agency 2026-11-01",
+    "US-7085": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0388",
+    "US-2551"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "23 same-day activations",
+   "sort": 23.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0388+US-2551@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0642",
+    "US-7096"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "22.2 ac",
+   "sort": 22.2,
+   "reason": "the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-0642+US-7096@area@34.505,-88.326",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2555",
+    "US-4496"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2555+US-4496@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0384",
+    "US-0388"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0384+US-0388@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0715",
+    "US-4560"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0715+US-4560@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (20x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0384",
+    "US-2551"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "18 same-day activations",
+   "sort": 18.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0384+US-2551@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0388",
+    "US-7112"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0388+US-7112@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0709",
+    "US-4560"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0709+US-4560@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (16x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2546",
+    "US-7077"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-2546+US-7077@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2550",
+    "US-7114"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2550+US-7114@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0747",
+    "US-2547"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0747+US-2547@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0747",
+    "US-7119"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0747+US-7119@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-7107",
+    "US-7109"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-7107+US-7109@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0388",
+    "US-2532"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-0388+US-2532@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-7122",
+    "US-7123"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-7122+US-7123@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2540",
+    "US-4496"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2540+US-4496@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4495",
+    "US-7081"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4495+US-7081@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines come within 100 m of each other"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-7080",
+    "US-7081"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-7080+US-7081@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines come within 88 m of each other"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-4560",
+    "US-7096"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "325 yd of line",
+   "sort": 7.4,
+   "reason": "the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-4560+US-7096@trail@34.506,-88.326",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-0391",
+    "US-7081"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "7 same-day activations",
+   "sort": 7.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-0391+US-7081@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2547",
+    "US-4497"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "7 same-day activations",
+   "sort": 7.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2547+US-4497@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2554",
+    "US-4560"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "7 same-day activations",
+   "sort": 7.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2554+US-4560@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4496",
+    "US-7099"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "7 same-day activations",
+   "sort": 7.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4496+US-7099@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4497",
+    "US-7119"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "7 same-day activations",
+   "sort": 7.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4497+US-7119@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-2553",
+    "US-4560"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-2553+US-4560@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4496",
+    "US-4560"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4496+US-4560@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4496",
+    "US-7094"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4496+US-7094@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4498",
+    "US-4560"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4498+US-4560@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4560",
+    "US-7093"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4560+US-7093@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "",
+   "refs": [
+    "US-4560",
+    "US-7095"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "6 same-day activations",
+   "sort": 6.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4560+US-7095@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0642",
+    "US-2552"
+   ],
+   "names": {
+    "US-0642": "Natchez Trace Parkway National Parkway",
+    "US-2552": "Tishomingo State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "5.4 ac",
+   "sort": 5.4,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:NPS', 'STATE']",
+   "id": "US-0642+US-2552@area@34.609,-88.207",
+   "sources": {
+    "US-0642": "read from the agency 2026-11-01",
+    "US-2552": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-2548",
+    "US-4494"
+   ],
+   "names": {
+    "US-2548": "Paul B. Johnson State Park",
+    "US-4494": "De Soto National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "4.9 ac",
+   "sort": 4.9,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-2548+US-4494@area@31.142,-89.234",
+   "sources": {
+    "US-2548": "read from the agency 2026-11-01",
+    "US-4494": "read from the agency 2026-11-01"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-7079",
+    "US-7080"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "4.0 ac",
+   "sort": 4.0,
+   "reason": "the official outline of Twin Oaks Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-7079+US-7080@area@32.806,-90.837",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-4495",
+    "US-7079"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "1.4 ac",
+   "sort": 1.4,
+   "reason": "the official outline of Twin Oaks Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-4495+US-7079@area@32.803,-90.838",
+   "sources": {},
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-0642",
+    "US-10297"
+   ],
+   "names": {
+    "US-0642": "Natchez Trace Parkway National Parkway",
+    "US-10297": "Old Trace Park Recreation Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "1.2 ac",
+   "sort": 1.2,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['DIST', 'FED:NPS']",
+   "id": "US-0642+US-10297@area@32.427,-90.083",
+   "sources": {
+    "US-0642": "read from the agency 2026-11-01",
+    "US-10297": "read from the agency 2026-11-01",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "ms",
+   "state": "US-MS",
+   "refs": [
+    "US-4495",
+    "US-7079",
+    "US-7080"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "area",
+   "size": "0.3 ac",
+   "sort": 0.3,
+   "reason": "the official outline of Twin Oaks Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "id": "US-4495+US-7079+US-7080@area@32.830,-90.837",
+   "sources": {},
+   "checked": "2026-11-02"
+  }
+ ]
+}

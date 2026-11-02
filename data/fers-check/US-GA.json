@@ -1,0 +1,3672 @@
+{
+ "area": "US-GA",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-GA.json",
+ "rows": {
+  "US-0259+US-3751@area@31.014,-83.139": {
+   "id": "US-0259+US-3751@area@31.014,-83.139",
+   "area": "US-GA",
+   "refs": [
+    "US-0259",
+    "US-3751"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 122.2,
+   "stored_wide_m": 185,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:27:29Z",
+   "layers": [
+    {
+     "ref": "US-0259",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:27:30Z"
+    },
+    {
+     "ref": "US-3751",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:32Z"
+    },
+    {
+     "ref": "US-3751",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:35Z"
+    },
+    {
+     "ref": "US-3751",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 118.42,
+   "live_acres": 116.8,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 371,
+   "gap_m": 0,
+   "wide_m": 177.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 116.8 ac vs 118.4 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.014247,
+    -83.161437
+   ]
+  },
+  "US-0260+US-3774@area@31.489,-81.224": {
+   "id": "US-0260+US-3774@area@31.489,-81.224",
+   "area": "US-GA",
+   "refs": [
+    "US-0260",
+    "US-3774"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 11.2,
+   "stored_wide_m": 65,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:27:37Z",
+   "layers": [
+    {
+     "ref": "US-0260",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:27:38Z"
+    },
+    {
+     "ref": "US-3774",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:40Z"
+    },
+    {
+     "ref": "US-3774",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:41Z"
+    },
+    {
+     "ref": "US-3774",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.73,
+   "live_acres": 9.36,
+   "kept_pct": 100.0,
+   "size_pct": -3.7,
+   "moved_m": 23,
+   "gap_m": 0,
+   "wide_m": 65.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.4 ac vs 9.7 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.487995,
+    -81.224633
+   ]
+  },
+  "US-0263+US-3746@area@31.057,-82.301": {
+   "id": "US-0263+US-3746@area@31.057,-82.301",
+   "area": "US-GA",
+   "refs": [
+    "US-0263",
+    "US-3746"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 443.2,
+   "stored_wide_m": 943,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:27:44Z",
+   "layers": [
+    {
+     "ref": "US-0263",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:27:44Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:45Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:47Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 440.2,
+   "live_acres": 440.03,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 933.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 440.0 ac vs 440.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.056763,
+    -82.301503
+   ]
+  },
+  "US-0263+US-4626@area@30.567,-82.214": {
+   "id": "US-0263+US-4626@area@30.567,-82.214",
+   "area": "US-GA",
+   "refs": [
+    "US-0263",
+    "US-4626"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2.7,
+   "stored_wide_m": 67,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:27:49Z",
+   "layers": [
+    {
+     "ref": "US-0263",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:27:50Z"
+    },
+    {
+     "ref": "US-4626",
+     "layer": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_State_Forests/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:50Z"
+    },
+    {
+     "ref": "US-4626",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:51Z"
+    },
+    {
+     "ref": "US-4626",
+     "layer": "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/SJRWMD_Management_Area_viewLayer/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.39,
+   "live_acres": 2.27,
+   "kept_pct": 100.0,
+   "size_pct": -5.2,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 66.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.4 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.567241,
+    -82.214144
+   ]
+  },
+  "US-0263+US-4651@area@31.055,-82.305": {
+   "id": "US-0263+US-4651@area@31.055,-82.305",
+   "area": "US-GA",
+   "refs": [
+    "US-0263",
+    "US-4651"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 90.1,
+   "stored_wide_m": 243,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:27:52Z",
+   "layers": [
+    {
+     "ref": "US-0263",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:27:52Z"
+    },
+    {
+     "ref": "US-4651",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 84.93,
+   "live_acres": 85.35,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 240.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 85.4 ac vs 84.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.055102,
+    -82.305367
+   ]
+  },
+  "US-0264+US-3720@area@33.056,-83.728": {
+   "id": "US-0264+US-3720@area@33.056,-83.728",
+   "area": "US-GA",
+   "refs": [
+    "US-0264",
+    "US-3720"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.2,
+   "stored_wide_m": 45,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:27:53Z",
+   "layers": [
+    {
+     "ref": "US-0264",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:27:54Z"
+    },
+    {
+     "ref": "US-3720",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:56Z"
+    },
+    {
+     "ref": "US-3720",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:27:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.05,
+   "live_acres": 1.04,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 40.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.0 ac vs 1.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.055642,
+    -83.727801
+   ]
+  },
+  "US-0662+US-7860@area@34.140,-84.092": {
+   "id": "US-0662+US-7860@area@34.140,-84.092",
+   "area": "US-GA",
+   "refs": [
+    "US-0662",
+    "US-7860"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3.8,
+   "stored_wide_m": 53,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:27:59Z",
+   "layers": [
+    {
+     "ref": "US-0662",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:00Z"
+    },
+    {
+     "ref": "US-7860",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:02Z"
+    },
+    {
+     "ref": "US-7860",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:03Z"
+    },
+    {
+     "ref": "US-7860",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 3.45,
+   "live_acres": 3.17,
+   "kept_pct": 100.0,
+   "size_pct": -8.3,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 49.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.2 ac vs 3.5 ac stored (-8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.138817,
+    -84.089355
+   ]
+  },
+  "US-12416+US-3738@area@33.322,-83.465": {
+   "id": "US-12416+US-3738@area@33.322,-83.465",
+   "area": "US-GA",
+   "refs": [
+    "US-12416",
+    "US-3738"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1461.2,
+   "stored_wide_m": 1609,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:06Z",
+   "layers": [
+    {
+     "ref": "US-12416",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:07Z"
+    },
+    {
+     "ref": "US-3738",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:09Z"
+    },
+    {
+     "ref": "US-3738",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:10Z"
+    },
+    {
+     "ref": "US-3738",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1460.23,
+   "live_acres": 1460.37,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 1617.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1460.4 ac vs 1460.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.321673,
+    -83.465067
+   ]
+  },
+  "US-12417+US-4473@area@34.739,-84.340": {
+   "id": "US-12417+US-4473@area@34.739,-84.340",
+   "area": "US-GA",
+   "refs": [
+    "US-12417",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17327.4,
+   "stored_wide_m": 5746,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:28:12Z",
+   "layers": [
+    {
+     "ref": "US-12417",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:28:12Z"
+    },
+    {
+     "ref": "US-12417",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:28:13Z"
+    },
+    {
+     "ref": "US-12417",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:28:15Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17377.97,
+   "live_acres": 111.17,
+   "kept_pct": 0.0,
+   "size_pct": -99.4,
+   "moved_m": 10429,
+   "gap_m": 2668,
+   "wide_m": 574.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 10429 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    34.679373,
+    -84.428397
+   ]
+  },
+  "US-12418+US-2202+US-4473@area@34.744,-83.357": {
+   "id": "US-12418+US-2202+US-4473@area@34.744,-83.357",
+   "area": "US-GA",
+   "refs": [
+    "US-12418",
+    "US-2202",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 62.8,
+   "stored_wide_m": 105,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:17Z",
+   "layers": [
+    {
+     "ref": "US-12418",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:17Z"
+    },
+    {
+     "ref": "US-12418",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:19Z"
+    },
+    {
+     "ref": "US-2202",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:21Z"
+    },
+    {
+     "ref": "US-2202",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:28:22Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 60.08,
+   "live_acres": 59.54,
+   "kept_pct": 100.0,
+   "size_pct": -0.9,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 99.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 59.5 ac vs 60.1 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.743769,
+    -83.37343
+   ]
+  },
+  "US-12418+US-2202@area@34.736,-83.367": {
+   "id": "US-12418+US-2202@area@34.736,-83.367",
+   "area": "US-GA",
+   "refs": [
+    "US-12418",
+    "US-2202"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2272.0,
+   "stored_wide_m": 1717,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:25Z",
+   "layers": [
+    {
+     "ref": "US-12418",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:25Z"
+    },
+    {
+     "ref": "US-12418",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:26Z"
+    },
+    {
+     "ref": "US-2202",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:27Z"
+    },
+    {
+     "ref": "US-2202",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:28:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1417.17,
+   "live_acres": 1416.37,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 1712.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1416.4 ac vs 1417.2 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.736426,
+    -83.367028
+   ]
+  },
+  "US-12421+US-2166@area@34.560,-84.233": {
+   "id": "US-12421+US-2166@area@34.560,-84.233",
+   "area": "US-GA",
+   "refs": [
+    "US-12421",
+    "US-2166"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8.6,
+   "stored_wide_m": 105,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:28:27Z",
+   "layers": [
+    {
+     "ref": "US-12421",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:28Z"
+    },
+    {
+     "ref": "US-2166",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:29Z"
+    },
+    {
+     "ref": "US-2166",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.13,
+   "live_acres": 8.28,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 100.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.3 ac vs 8.1 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.558099,
+    -84.23299
+   ]
+  },
+  "US-2166+US-4473@area@34.568,-84.237": {
+   "id": "US-2166+US-4473@area@34.568,-84.237",
+   "area": "US-GA",
+   "refs": [
+    "US-2166",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 9.8,
+   "stored_wide_m": 55,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:28:31Z",
+   "layers": [
+    {
+     "ref": "US-2166",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:32Z"
+    },
+    {
+     "ref": "US-2166",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:32Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.72,
+   "live_acres": 7.91,
+   "kept_pct": 100.0,
+   "size_pct": 2.3,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 48.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.9 ac vs 7.7 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.561052,
+    -84.232803
+   ]
+  },
+  "US-2167+US-4473@area@34.911,-83.426": {
+   "id": "US-2167+US-4473@area@34.911,-83.426",
+   "area": "US-GA",
+   "refs": [
+    "US-2167",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.8,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:33Z",
+   "layers": [
+    {
+     "ref": "US-2167",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:34Z"
+    },
+    {
+     "ref": "US-2167",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:35Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.08,
+   "live_acres": 4.41,
+   "kept_pct": 100.0,
+   "size_pct": 309.1,
+   "moved_m": 38,
+   "gap_m": 0,
+   "wide_m": 75.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 309% bigger (4.4 ac vs 1.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    34.908399,
+    -83.42519
+   ]
+  },
+  "US-2171+US-7448@area@34.395,-83.733": {
+   "id": "US-2171+US-7448@area@34.395,-83.733",
+   "area": "US-GA",
+   "refs": [
+    "US-2171",
+    "US-7448"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 34.8,
+   "stored_wide_m": 133,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:37Z",
+   "layers": [
+    {
+     "ref": "US-2171",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:28:38Z"
+    },
+    {
+     "ref": "US-2171",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:39Z"
+    },
+    {
+     "ref": "US-2171",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:41Z"
+    },
+    {
+     "ref": "US-7448",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:43Z"
+    },
+    {
+     "ref": "US-7448",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:45Z"
+    },
+    {
+     "ref": "US-7448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 10,
+   "stored_shape_acres": 32.36,
+   "live_acres": 32.18,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 133.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 32.2 ac vs 32.4 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.395496,
+    -83.733332
+   ]
+  },
+  "US-2175+US-7852@area@31.852,-81.152": {
+   "id": "US-2175+US-7852@area@31.852,-81.152",
+   "area": "US-GA",
+   "refs": [
+    "US-2175",
+    "US-7852"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2257.1,
+   "stored_wide_m": 1278,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:47Z",
+   "layers": [
+    {
+     "ref": "US-2175",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:47Z"
+    },
+    {
+     "ref": "US-2175",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:48Z"
+    },
+    {
+     "ref": "US-7852",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:50Z"
+    },
+    {
+     "ref": "US-7852",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:51Z"
+    },
+    {
+     "ref": "US-7852",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 12,
+   "stored_shape_acres": 2070.7,
+   "live_acres": 2070.93,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 1278.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2070.9 ac vs 2070.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.85243,
+    -81.152152
+   ]
+  },
+  "US-2176+US-4473@area@34.756,-84.686": {
+   "id": "US-2176+US-4473@area@34.756,-84.686",
+   "area": "US-GA",
+   "refs": [
+    "US-2176",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 11.3,
+   "stored_wide_m": 45,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:28:54Z",
+   "layers": [
+    {
+     "ref": "US-2176",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:55Z"
+    },
+    {
+     "ref": "US-2176",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:28:56Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.24,
+   "live_acres": 8.69,
+   "kept_pct": 100.0,
+   "size_pct": -5.9,
+   "moved_m": 222,
+   "gap_m": 0,
+   "wide_m": 44.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.7 ac vs 9.2 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.752736,
+    -84.685873
+   ]
+  },
+  "US-2188+US-3746@area@31.140,-82.209": {
+   "id": "US-2188+US-3746@area@31.140,-82.209",
+   "area": "US-GA",
+   "refs": [
+    "US-2188",
+    "US-3746"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 31.7,
+   "stored_wide_m": 147,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:28:59Z",
+   "layers": [
+    {
+     "ref": "US-2188",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:59Z"
+    },
+    {
+     "ref": "US-2188",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:00Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:01Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:02Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 26.84,
+   "live_acres": 24.0,
+   "kept_pct": 98.9,
+   "size_pct": -10.6,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 144.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 24.0 ac vs 26.8 ac stored (-11%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.140046,
+    -82.209355
+   ]
+  },
+  "US-2188+US-4651@area@31.139,-82.209": {
+   "id": "US-2188+US-4651@area@31.139,-82.209",
+   "area": "US-GA",
+   "refs": [
+    "US-2188",
+    "US-4651"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 21.0,
+   "stored_wide_m": 123,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:29:02Z",
+   "layers": [
+    {
+     "ref": "US-2188",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:59Z"
+    },
+    {
+     "ref": "US-2188",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:00Z"
+    },
+    {
+     "ref": "US-4651",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 8.56,
+   "live_acres": 7.32,
+   "kept_pct": 96.5,
+   "size_pct": -14.5,
+   "moved_m": 1701,
+   "gap_m": 0,
+   "wide_m": 60.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.3 ac vs 8.6 ac stored (-14%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.143589,
+    -82.226386
+   ]
+  },
+  "US-2192+US-4473@area@34.848,-83.587": {
+   "id": "US-2192+US-4473@area@34.848,-83.587",
+   "area": "US-GA",
+   "refs": [
+    "US-2192",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.1,
+   "stored_wide_m": 75,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:29:02Z",
+   "layers": [
+    {
+     "ref": "US-2192",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:03Z"
+    },
+    {
+     "ref": "US-2192",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:05Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.7,
+   "live_acres": 3.75,
+   "kept_pct": 100.0,
+   "size_pct": 1.4,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 76.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.8 ac vs 3.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.847515,
+    -83.586773
+   ]
+  },
+  "US-2196+US-3747@area@34.057,-82.644": {
+   "id": "US-2196+US-3747@area@34.057,-82.644",
+   "area": "US-GA",
+   "refs": [
+    "US-2196",
+    "US-3747"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 825.3,
+   "stored_wide_m": 884,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:29:06Z",
+   "layers": [
+    {
+     "ref": "US-2196",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:29:07Z"
+    },
+    {
+     "ref": "US-2196",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:08Z"
+    },
+    {
+     "ref": "US-2196",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:10Z"
+    },
+    {
+     "ref": "US-3747",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:11Z"
+    },
+    {
+     "ref": "US-3747",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "5 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:29:12Z"
+    },
+    {
+     "ref": "US-3747",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "5 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:29:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 21,
+   "stored_shape_acres": 822.92,
+   "live_acres": 820.95,
+   "kept_pct": 99.9,
+   "size_pct": -0.2,
+   "moved_m": 281,
+   "gap_m": 0,
+   "wide_m": 882.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 820.9 ac vs 822.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.056991,
+    -82.643904
+   ]
+  },
+  "US-2197+US-3775+US-9786@area@30.800,-84.768": {
+   "id": "US-2197+US-3775+US-9786@area@30.800,-84.768",
+   "area": "US-GA",
+   "refs": [
+    "US-2197",
+    "US-3775",
+    "US-9786"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 153.6,
+   "stored_wide_m": 277,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:29:15Z",
+   "layers": [
+    {
+     "ref": "US-2197",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:15Z"
+    },
+    {
+     "ref": "US-2197",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:29:16Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:18Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:20Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:21Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:23Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "9 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:25Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "9 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 130.01,
+   "live_acres": 128.81,
+   "kept_pct": 100.0,
+   "size_pct": -0.9,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 278.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 128.8 ac vs 130.0 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.801582,
+    -84.779976
+   ]
+  },
+  "US-2197+US-3775@area@30.796,-84.670": {
+   "id": "US-2197+US-3775@area@30.796,-84.670",
+   "area": "US-GA",
+   "refs": [
+    "US-2197",
+    "US-3775"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 326.1,
+   "stored_wide_m": 315,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:29:27Z",
+   "layers": [
+    {
+     "ref": "US-2197",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:28Z"
+    },
+    {
+     "ref": "US-2197",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:29:28Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:30Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:31Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 12,
+   "stored_shape_acres": 172.33,
+   "live_acres": 172.54,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 1565,
+   "gap_m": 0,
+   "wide_m": 300.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 172.5 ac vs 172.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.801483,
+    -84.780097
+   ]
+  },
+  "US-2197+US-7470+US-9786@area@30.800,-84.768": {
+   "id": "US-2197+US-7470+US-9786@area@30.800,-84.768",
+   "area": "US-GA",
+   "refs": [
+    "US-2197",
+    "US-7470",
+    "US-9786"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 153.6,
+   "stored_wide_m": 277,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:29:31Z",
+   "layers": [
+    {
+     "ref": "US-2197",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:15Z"
+    },
+    {
+     "ref": "US-2197",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:29:16Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:18Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:20Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:21Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:23Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "9 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:25Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "9 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 130.01,
+   "live_acres": 128.81,
+   "kept_pct": 100.0,
+   "size_pct": -0.9,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 278.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 128.8 ac vs 130.0 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.801582,
+    -84.779976
+   ]
+  },
+  "US-2197+US-7470@area@30.796,-84.670": {
+   "id": "US-2197+US-7470@area@30.796,-84.670",
+   "area": "US-GA",
+   "refs": [
+    "US-2197",
+    "US-7470"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 326.1,
+   "stored_wide_m": 315,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:29:31Z",
+   "layers": [
+    {
+     "ref": "US-2197",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:28Z"
+    },
+    {
+     "ref": "US-2197",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:29:28Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:30Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:31Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 12,
+   "stored_shape_acres": 172.33,
+   "live_acres": 172.54,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 1565,
+   "gap_m": 0,
+   "wide_m": 300.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 172.5 ac vs 172.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.801483,
+    -84.780097
+   ]
+  },
+  "US-2197+US-9786@area@30.788,-84.795": {
+   "id": "US-2197+US-9786@area@30.788,-84.795",
+   "area": "US-GA",
+   "refs": [
+    "US-2197",
+    "US-9786"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6066.3,
+   "stored_wide_m": 1071,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:29:31Z",
+   "layers": [
+    {
+     "ref": "US-2197",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:32Z"
+    },
+    {
+     "ref": "US-2197",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:32Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:33Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "9 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:29:33Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "9 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:29:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 23,
+   "stored_shape_acres": 2241.47,
+   "live_acres": 4175.39,
+   "kept_pct": 89.0,
+   "size_pct": 86.3,
+   "moved_m": 4930,
+   "gap_m": 0,
+   "wide_m": 1075.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 86% bigger (4175.4 ac vs 2241.5 ac stored); 89% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    30.797429,
+    -84.730086
+   ]
+  },
+  "US-2199+US-3718@area@34.685,-83.721": {
+   "id": "US-2199+US-3718@area@34.685,-83.721",
+   "area": "US-GA",
+   "refs": [
+    "US-2199",
+    "US-3718"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 43.4,
+   "stored_wide_m": 385,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:29:34Z",
+   "layers": [
+    {
+     "ref": "US-2199",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:35Z"
+    },
+    {
+     "ref": "US-2199",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:36Z"
+    },
+    {
+     "ref": "US-2199",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:38Z"
+    },
+    {
+     "ref": "US-3718",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:39Z"
+    },
+    {
+     "ref": "US-3718",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 42.5,
+   "live_acres": 42.13,
+   "kept_pct": 100.0,
+   "size_pct": -0.9,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 375.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 42.1 ac vs 42.5 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.684689,
+    -83.721098
+   ]
+  },
+  "US-2206+US-4473@area@34.756,-83.928": {
+   "id": "US-2206+US-4473@area@34.756,-83.928",
+   "area": "US-GA",
+   "refs": [
+    "US-2206",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 37.9,
+   "stored_wide_m": 219,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:29:41Z",
+   "layers": [
+    {
+     "ref": "US-2206",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:41Z"
+    },
+    {
+     "ref": "US-2206",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:42Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.19,
+   "live_acres": 8.26,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 501,
+   "gap_m": 0,
+   "wide_m": 60.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.3 ac vs 8.2 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.759758,
+    -83.929547
+   ]
+  },
+  "US-3740+US-3773@area@31.411,-81.608": {
+   "id": "US-3740+US-3773@area@31.411,-81.608",
+   "area": "US-GA",
+   "refs": [
+    "US-3740",
+    "US-3773"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3319.8,
+   "stored_wide_m": 1809,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:29:44Z",
+   "layers": [
+    {
+     "ref": "US-3740",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:44Z"
+    },
+    {
+     "ref": "US-3740",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:46Z"
+    },
+    {
+     "ref": "US-3740",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:47Z"
+    },
+    {
+     "ref": "US-3773",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:49Z"
+    },
+    {
+     "ref": "US-3773",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:50Z"
+    },
+    {
+     "ref": "US-3773",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3336.36,
+   "live_acres": 3317.17,
+   "kept_pct": 99.5,
+   "size_pct": -0.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1817.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3317.2 ac vs 3336.4 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.412449,
+    -81.609117
+   ]
+  },
+  "US-3741+US-7899@same land@34.617,-84.638": {
+   "id": "US-3741+US-7899@same land@34.617,-84.638",
+   "area": "US-GA",
+   "refs": [
+    "US-3741",
+    "US-7899"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:29:53Z",
+   "layers": [
+    {
+     "ref": "US-3741",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:29:54Z"
+    },
+    {
+     "ref": "US-3741",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:29:55Z"
+    },
+    {
+     "ref": "US-3741",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:29:57Z"
+    },
+    {
+     "ref": "US-7899",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:29:59Z"
+    },
+    {
+     "ref": "US-7899",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:01Z"
+    },
+    {
+     "ref": "US-7899",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8742.59,
+   "live_acres": 4206.07,
+   "kept_pct": 43.9,
+   "size_pct": -51.9,
+   "moved_m": 2854,
+   "gap_m": 0,
+   "wide_m": 938.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 52% smaller (4206.1 ac vs 8742.6 ac stored)",
+   "live_center": [
+    34.606765,
+    -84.666459
+   ]
+  },
+  "US-3743+US-4650@same land@34.371,-84.178": {
+   "id": "US-3743+US-4650@same land@34.371,-84.178",
+   "area": "US-GA",
+   "refs": [
+    "US-3743",
+    "US-4650"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:30:03Z",
+   "layers": [
+    {
+     "ref": "US-3743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:30:04Z"
+    },
+    {
+     "ref": "US-3743",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:05Z"
+    },
+    {
+     "ref": "US-3743",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:07Z"
+    },
+    {
+     "ref": "US-4650",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:30:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 10154.04,
+   "live_acres": 11688.05,
+   "kept_pct": 99.6,
+   "size_pct": 15.1,
+   "moved_m": 1144,
+   "gap_m": 0,
+   "wide_m": 5671.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11688.0 ac vs 10154.0 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.36914,
+    -84.165493
+   ]
+  },
+  "US-3746+US-4651@same land@31.122,-82.279": {
+   "id": "US-3746+US-4651@same land@31.122,-82.279",
+   "area": "US-GA",
+   "refs": [
+    "US-3746",
+    "US-4651"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:30:08Z",
+   "layers": [
+    {
+     "ref": "US-3746",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:09Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:10Z"
+    },
+    {
+     "ref": "US-3746",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:10Z"
+    },
+    {
+     "ref": "US-4651",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 33989.96,
+   "live_acres": 32464.62,
+   "kept_pct": 95.5,
+   "size_pct": -4.5,
+   "moved_m": 2910,
+   "gap_m": 0,
+   "wide_m": 5688.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 32464.6 ac vs 33990.0 ac stored (-4%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.113552,
+    -82.307911
+   ]
+  },
+  "US-3758+US-4473@area@34.523,-85.075": {
+   "id": "US-3758+US-4473@area@34.523,-85.075",
+   "area": "US-GA",
+   "refs": [
+    "US-3758",
+    "US-4473"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 20496.1,
+   "stored_wide_m": 3990,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:30:10Z",
+   "layers": [
+    {
+     "ref": "US-3758",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:11Z"
+    },
+    {
+     "ref": "US-3758",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:13Z"
+    },
+    {
+     "ref": "US-3758",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:30:14Z"
+    },
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 12389.57,
+   "live_acres": 12219.87,
+   "kept_pct": 94.2,
+   "size_pct": -1.4,
+   "moved_m": 11141,
+   "gap_m": 0,
+   "wide_m": 2743.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12219.9 ac vs 12389.6 ac stored (-1%), 94% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.623003,
+    -85.083687
+   ]
+  },
+  "US-3761+US-3762@area@32.390,-83.505": {
+   "id": "US-3761+US-3762@area@32.390,-83.505",
+   "area": "US-GA",
+   "refs": [
+    "US-3761",
+    "US-3762"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 30.3,
+   "stored_wide_m": 55,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:30:17Z",
+   "layers": [
+    {
+     "ref": "US-3761",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:17Z"
+    },
+    {
+     "ref": "US-3761",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:19Z"
+    },
+    {
+     "ref": "US-3761",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:20Z"
+    },
+    {
+     "ref": "US-3762",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:21Z"
+    },
+    {
+     "ref": "US-3762",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:23Z"
+    },
+    {
+     "ref": "US-3762",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 18,
+   "stored_shape_acres": 19.32,
+   "live_acres": 19.11,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 1428,
+   "gap_m": 0,
+   "wide_m": 45.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 19.1 ac vs 19.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.402796,
+    -83.49593
+   ]
+  },
+  "US-3761+US-7461@area@32.390,-83.505": {
+   "id": "US-3761+US-7461@area@32.390,-83.505",
+   "area": "US-GA",
+   "refs": [
+    "US-3761",
+    "US-7461"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 30.3,
+   "stored_wide_m": 55,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:30:25Z",
+   "layers": [
+    {
+     "ref": "US-3761",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:17Z"
+    },
+    {
+     "ref": "US-3761",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:19Z"
+    },
+    {
+     "ref": "US-3761",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:20Z"
+    },
+    {
+     "ref": "US-7461",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:25Z"
+    },
+    {
+     "ref": "US-7461",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:27Z"
+    },
+    {
+     "ref": "US-7461",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 18,
+   "stored_shape_acres": 19.32,
+   "live_acres": 19.11,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 1428,
+   "gap_m": 0,
+   "wide_m": 45.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 19.1 ac vs 19.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.402796,
+    -83.49593
+   ]
+  },
+  "US-3761+US-7900@area@32.630,-83.555": {
+   "id": "US-3761+US-7900@area@32.630,-83.555",
+   "area": "US-GA",
+   "refs": [
+    "US-3761",
+    "US-7900"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 325.7,
+   "stored_wide_m": 935,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:30:28Z",
+   "layers": [
+    {
+     "ref": "US-3761",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:30:29Z"
+    },
+    {
+     "ref": "US-3761",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:30:30Z"
+    },
+    {
+     "ref": "US-3761",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:30Z"
+    },
+    {
+     "ref": "US-7900",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:31Z"
+    },
+    {
+     "ref": "US-7900",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:30:32Z"
+    },
+    {
+     "ref": "US-7900",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 324.74,
+   "live_acres": 324.26,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 930.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 324.3 ac vs 324.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.629847,
+    -83.555433
+   ]
+  },
+  "US-3762+US-7461@same land@32.415,-83.477": {
+   "id": "US-3762+US-7461@same land@32.415,-83.477",
+   "area": "US-GA",
+   "refs": [
+    "US-3762",
+    "US-7461"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:30:34Z",
+   "layers": [
+    {
+     "ref": "US-3762",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:35Z"
+    },
+    {
+     "ref": "US-3762",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:36Z"
+    },
+    {
+     "ref": "US-3762",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:30:37Z"
+    },
+    {
+     "ref": "US-7461",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:38Z"
+    },
+    {
+     "ref": "US-7461",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:38Z"
+    },
+    {
+     "ref": "US-7461",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:30:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 13384.06,
+   "live_acres": 13990.56,
+   "kept_pct": 95.3,
+   "size_pct": 4.5,
+   "moved_m": 2809,
+   "gap_m": 0,
+   "wide_m": 3750.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13990.6 ac vs 13384.1 ac stored (+4%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.438524,
+    -83.467491
+   ]
+  },
+  "US-3767+US-3773@area@31.515,-81.663": {
+   "id": "US-3767+US-3773@area@31.515,-81.663",
+   "area": "US-GA",
+   "refs": [
+    "US-3767",
+    "US-3773"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 7.8,
+   "stored_wide_m": 49,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:30:38Z",
+   "layers": [
+    {
+     "ref": "US-3767",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:39Z"
+    },
+    {
+     "ref": "US-3767",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:40Z"
+    },
+    {
+     "ref": "US-3767",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:42Z"
+    },
+    {
+     "ref": "US-3773",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:43Z"
+    },
+    {
+     "ref": "US-3773",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:44Z"
+    },
+    {
+     "ref": "US-3773",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 27,
+   "stored_shape_acres": 5.06,
+   "live_acres": 4.44,
+   "kept_pct": 99.9,
+   "size_pct": -12.2,
+   "moved_m": 1748,
+   "gap_m": 0,
+   "wide_m": 34.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.4 ac vs 5.1 ac stored (-12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.511968,
+    -81.680415
+   ]
+  },
+  "US-3775+US-7470@same land@30.806,-84.736": {
+   "id": "US-3775+US-7470@same land@30.806,-84.736",
+   "area": "US-GA",
+   "refs": [
+    "US-3775",
+    "US-7470"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:30:45Z",
+   "layers": [
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:46Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:47Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:47Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:46Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:47Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8476.78,
+   "live_acres": 9767.17,
+   "kept_pct": 100.0,
+   "size_pct": 15.2,
+   "moved_m": 2399,
+   "gap_m": 0,
+   "wide_m": 3207.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9767.2 ac vs 8476.8 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.815929,
+    -84.758244
+   ]
+  },
+  "US-3775+US-9786@area@30.797,-84.668": {
+   "id": "US-3775+US-9786@area@30.797,-84.668",
+   "area": "US-GA",
+   "refs": [
+    "US-3775",
+    "US-9786"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1212.1,
+   "stored_wide_m": 525,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:30:47Z",
+   "layers": [
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:48Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:49Z"
+    },
+    {
+     "ref": "US-3775",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:49Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:50Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "9 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:30:50Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "9 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:30:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 10,
+   "stored_shape_acres": 1274.95,
+   "live_acres": 1171.72,
+   "kept_pct": 76.2,
+   "size_pct": -8.1,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 513.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1171.7 ac vs 1274.9 ac stored (-8%), 76% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.797018,
+    -84.667771
+   ]
+  },
+  "US-4473+US-7135@area@34.675,-84.183": {
+   "id": "US-4473+US-7135@area@34.675,-84.183",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7135"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23731.0,
+   "stored_wide_m": 6385,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:30:51Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:52Z"
+    },
+    {
+     "ref": "US-7135",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:52Z"
+    },
+    {
+     "ref": "US-7135",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:54Z"
+    },
+    {
+     "ref": "US-7135",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19840.71,
+   "live_acres": 23526.89,
+   "kept_pct": 100.0,
+   "size_pct": 18.6,
+   "moved_m": 2025,
+   "gap_m": 0,
+   "wide_m": 7613.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23526.9 ac vs 19840.7 ac stored (+19%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.674571,
+    -84.18297
+   ]
+  },
+  "US-4473+US-7137@area@34.771,-84.056": {
+   "id": "US-4473+US-7137@area@34.771,-84.056",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7137"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 29518.1,
+   "stored_wide_m": 4997,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:30:56Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:58Z"
+    },
+    {
+     "ref": "US-7137",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:58Z"
+    },
+    {
+     "ref": "US-7137",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:59Z"
+    },
+    {
+     "ref": "US-7137",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 12687.29,
+   "live_acres": 29445.56,
+   "kept_pct": 98.2,
+   "size_pct": -0.2,
+   "moved_m": 2832,
+   "gap_m": 0,
+   "wide_m": 5902.3,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29445.6 ac vs 29518.1 ac stored (row acres; the stored shape is a 12687.3 ac preview) (-0%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.771853,
+    -84.056542
+   ]
+  },
+  "US-4473+US-7138+US-7447@area@34.700,-83.927": {
+   "id": "US-4473+US-7138+US-7447@area@34.700,-83.927",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7138",
+    "US-7447"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 38.5,
+   "stored_wide_m": 385,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:02Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:03Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:03Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:05Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:07Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:31:08Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:31:10Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 37.54,
+   "live_acres": 37.89,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 385.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 37.9 ac vs 37.5 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.699847,
+    -83.927372
+   ]
+  },
+  "US-4473+US-7138@area@34.703,-83.887": {
+   "id": "US-4473+US-7138@area@34.703,-83.887",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7138"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 21750.2,
+   "stored_wide_m": 4651,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:12Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:13Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:14Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:15Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22070.32,
+   "live_acres": 21827.55,
+   "kept_pct": 97.9,
+   "size_pct": -1.1,
+   "moved_m": 32,
+   "gap_m": 0,
+   "wide_m": 4622.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21827.6 ac vs 22070.3 ac stored (-1%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.703225,
+    -83.887097
+   ]
+  },
+  "US-4473+US-7446@area@34.885,-84.593": {
+   "id": "US-4473+US-7446@area@34.885,-84.593",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7446"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 91165.5,
+   "stored_wide_m": 8385,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:31:15Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:16Z"
+    },
+    {
+     "ref": "US-7446",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:17Z"
+    },
+    {
+     "ref": "US-7446",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:19Z"
+    },
+    {
+     "ref": "US-7446",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:31:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19015.36,
+   "live_acres": 90185.18,
+   "kept_pct": 99.6,
+   "size_pct": -1.1,
+   "moved_m": 7579,
+   "gap_m": 0,
+   "wide_m": 9972.3,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 90185.2 ac vs 91165.5 ac stored (row acres; the stored shape is a 19015.4 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.885771,
+    -84.592497
+   ]
+  },
+  "US-4473+US-7447@area@34.761,-83.792": {
+   "id": "US-4473+US-7447@area@34.761,-83.792",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7447"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23996.1,
+   "stored_wide_m": 5895,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:21Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:22Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:23Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:24Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:31:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 12811.69,
+   "live_acres": 23845.29,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 1396,
+   "gap_m": 0,
+   "wide_m": 6823.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23845.3 ac vs 23996.1 ac stored (row acres; the stored shape is a 12811.7 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.761484,
+    -83.791839
+   ]
+  },
+  "US-4473+US-7450@area@34.923,-83.302": {
+   "id": "US-4473+US-7450@area@34.923,-83.302",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7450"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16714.2,
+   "stored_wide_m": 5385,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:24Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:25Z"
+    },
+    {
+     "ref": "US-7450",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:26Z"
+    },
+    {
+     "ref": "US-7450",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:27Z"
+    },
+    {
+     "ref": "US-7450",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 16777.91,
+   "live_acres": 16784.57,
+   "kept_pct": 99.8,
+   "size_pct": 0.0,
+   "moved_m": 68,
+   "gap_m": 0,
+   "wide_m": 5410.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16784.6 ac vs 16777.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.923953,
+    -83.301735
+   ]
+  },
+  "US-4473+US-7451@area@34.824,-83.682": {
+   "id": "US-4473+US-7451@area@34.824,-83.682",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7451"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 18340.1,
+   "stored_wide_m": 4383,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:30Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:31Z"
+    },
+    {
+     "ref": "US-7451",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:31Z"
+    },
+    {
+     "ref": "US-7451",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:32Z"
+    },
+    {
+     "ref": "US-7451",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 18377.84,
+   "live_acres": 18395.26,
+   "kept_pct": 99.3,
+   "size_pct": 0.1,
+   "moved_m": 29,
+   "gap_m": 0,
+   "wide_m": 4373.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 18395.3 ac vs 18377.8 ac stored (+0%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.823802,
+    -83.681641
+   ]
+  },
+  "US-4473+US-7452@area@34.739,-84.340": {
+   "id": "US-4473+US-7452@area@34.739,-84.340",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7452"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17327.4,
+   "stored_wide_m": 5746,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:31:35Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:28:16Z"
+    },
+    {
+     "ref": "US-7452",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:36Z"
+    },
+    {
+     "ref": "US-7452",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:38Z"
+    },
+    {
+     "ref": "US-7452",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:31:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17377.97,
+   "live_acres": 17375.11,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 46,
+   "gap_m": 0,
+   "wide_m": 5730.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17375.1 ac vs 17378.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.7384,
+    -84.340444
+   ]
+  },
+  "US-4473+US-7455@area@34.526,-83.430": {
+   "id": "US-4473+US-7455@area@34.526,-83.430",
+   "area": "US-GA",
+   "refs": [
+    "US-4473",
+    "US-7455"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17354.8,
+   "stored_wide_m": 5760,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:41Z",
+   "layers": [
+    {
+     "ref": "US-4473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:42Z"
+    },
+    {
+     "ref": "US-7455",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:42Z"
+    },
+    {
+     "ref": "US-7455",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:44Z"
+    },
+    {
+     "ref": "US-7455",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17459.03,
+   "live_acres": 17404.94,
+   "kept_pct": 98.6,
+   "size_pct": -0.3,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 5786.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17404.9 ac vs 17459.0 ac stored (-0%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.525814,
+    -83.430238
+   ]
+  },
+  "US-4586+US-7462@same land@32.788,-84.422": {
+   "id": "US-4586+US-7462@same land@32.788,-84.422",
+   "area": "US-GA",
+   "refs": [
+    "US-4586",
+    "US-7462"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:31:46Z",
+   "layers": [
+    {
+     "ref": "US-4586",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:47Z"
+    },
+    {
+     "ref": "US-4586",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:49Z"
+    },
+    {
+     "ref": "US-4586",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:31:50Z"
+    },
+    {
+     "ref": "US-7462",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:47Z"
+    },
+    {
+     "ref": "US-7462",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:49Z"
+    },
+    {
+     "ref": "US-7462",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:31:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5923.62,
+   "live_acres": 6712.18,
+   "kept_pct": 99.1,
+   "size_pct": 13.3,
+   "moved_m": 364,
+   "gap_m": 0,
+   "wide_m": 2686.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6712.2 ac vs 5923.6 ac stored (+13%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.790009,
+    -84.418533
+   ]
+  },
+  "US-4653+US-7895@area@34.033,-84.936": {
+   "id": "US-4653+US-7895@area@34.033,-84.936",
+   "area": "US-GA",
+   "refs": [
+    "US-4653",
+    "US-7895"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 296.5,
+   "stored_wide_m": 595,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:31:51Z",
+   "layers": [
+    {
+     "ref": "US-4653",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:51Z"
+    },
+    {
+     "ref": "US-4653",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:53Z"
+    },
+    {
+     "ref": "US-4653",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:31:54Z"
+    },
+    {
+     "ref": "US-7895",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:55Z"
+    },
+    {
+     "ref": "US-7895",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:57Z"
+    },
+    {
+     "ref": "US-7895",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 277.19,
+   "live_acres": 290.59,
+   "kept_pct": 100.0,
+   "size_pct": 4.8,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 595.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 290.6 ac vs 277.2 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.033454,
+    -84.93459
+   ]
+  },
+  "US-7138+US-7447@area@34.700,-83.928": {
+   "id": "US-7138+US-7447@area@34.700,-83.928",
+   "area": "US-GA",
+   "refs": [
+    "US-7138",
+    "US-7447"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 41.1,
+   "stored_wide_m": 385,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:31:59Z",
+   "layers": [
+    {
+     "ref": "US-7138",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:31:59Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:00Z"
+    },
+    {
+     "ref": "US-7138",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:01Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:32:01Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:32:02Z"
+    },
+    {
+     "ref": "US-7447",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 80.99,
+   "live_acres": 38.27,
+   "kept_pct": 49.8,
+   "size_pct": -52.8,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 385.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 53% smaller (38.3 ac vs 81.0 ac stored)",
+   "live_center": [
+    34.699847,
+    -83.927372
+   ]
+  },
+  "US-7141+US-7467@same land@33.440,-83.734": {
+   "id": "US-7141+US-7467@same land@33.440,-83.734",
+   "area": "US-GA",
+   "refs": [
+    "US-7141",
+    "US-7467"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T00:32:02Z",
+   "layers": [
+    {
+     "ref": "US-7141",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:03Z"
+    },
+    {
+     "ref": "US-7141",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:05Z"
+    },
+    {
+     "ref": "US-7141",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:32:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "key has no joined official outline for US-7467 (status 'pin')",
+   "flags": []
+  },
+  "US-7470+US-9786@area@30.797,-84.668": {
+   "id": "US-7470+US-9786@area@30.797,-84.668",
+   "area": "US-GA",
+   "refs": [
+    "US-7470",
+    "US-9786"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1212.1,
+   "stored_wide_m": 525,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-01T00:32:07Z",
+   "layers": [
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:48Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:49Z"
+    },
+    {
+     "ref": "US-7470",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:30:49Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:30:50Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "how": "9 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:30:50Z"
+    },
+    {
+     "ref": "US-9786",
+     "layer": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "how": "9 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:30:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 10,
+   "stored_shape_acres": 1274.95,
+   "live_acres": 1171.72,
+   "kept_pct": 76.2,
+   "size_pct": -8.1,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 513.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1171.7 ac vs 1274.9 ac stored (-8%), 76% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.797018,
+    -84.667771
+   ]
+  }
+ },
+ "started": "2026-11-01T00:27:29Z",
+ "fers_sha256": "008726586e46472da222ccf92d464872d5103b3476e698ed3528c0d88eafda36",
+ "live_rows": 55,
+ "skipped_rows": 234,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:35Z",
+ "complete": true,
+ "summary": {
+  "rows": 55,
+  "verdicts": {
+   "CONFIRMED": 49,
+   "SHRUNK": 2,
+   "GREW": 2,
+   "MOVED": 1,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 1
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 5
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json"
+ ],
+ "requests_this_run": 1030
+}

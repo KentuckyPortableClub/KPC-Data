@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "sd",
+ "states": [
+  "US-SD"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 19:59 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 15,
+  "DROPPED": 27,
+  "NEVER LOOKED AT": 384
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 79,
+   "pairs whose boxes touch": 79
+  },
+  "pass2": {
+   "agree with the pass before": 83,
+   "date": "2026-11-01",
+   "pairs tested": 29
+  },
+  "pass3": {
+   "agree with the pass before": 36,
+   "date": "2026-11-01",
+   "pairs tested": 29
+  },
+  "pass5": {
+   "checked": 19,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-SD": "data/fers/US-SD.json"
+ },
+ "US-SD": {
+  "rows": 83,
+  "live": 20,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 47,
+  "merged": 16
+ },
+ "states_ready": [
+  "US-SD"
+ ],
+ "states_held": []
+}

@@ -1,0 +1,482 @@
+{
+ "area": "US-AL",
+ "run": "2026-11-02",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0025": {
+   "park": "Fort Morgan National Historic Site",
+   "area": "US-AL",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"morgan fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-0042": {
+   "park": "Fort Gaines National Historic Site",
+   "area": "US-AL",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 166719,
+     "record_name": "Historic Fort Gaines",
+     "acres_approx": 9,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LHCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 17,
+     "tier": "SURE",
+     "why": "same proper name (historic)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: SURE (same proper name)"
+  },
+  "US-12311": {
+   "park": "Butler County State Wildlife Management Area",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"butler\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12405": {
+   "park": "TVA Guntersville Dam 5(1)(g) Reserve",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1818,
+     "record_name": "Wheeler Reservoir Retained Land",
+     "acres_approx": 16213,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 16536,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"guntersville tva dam\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12409": {
+   "park": "TVA Cave Mountain Small Wild Area National Park",
+   "area": "US-AL",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1818,
+     "record_name": "Wheeler Reservoir Retained Land",
+     "acres_approx": 16213,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 16536,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain small cave\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12410": {
+   "park": "TVA Flint Creek Access National Park",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1818,
+     "record_name": "Wheeler Reservoir Retained Land",
+     "acres_approx": 16213,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 16536,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"access flint tva\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-12411": {
+   "park": "TVA Second Creek Access Area National Park",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"second access tva\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12412": {
+   "park": "TVA Rockpile Recreation Area National Park",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"rockpile tva\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12517": {
+   "park": "Confederate Memorial Park Historic Site",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"confederate\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12962": {
+   "park": "TVA Veterans Park Regional Park",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"veterans tva\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13003": {
+   "park": "TVA Little Bear Creek Dam Multiple Use Area",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1811,
+     "record_name": "Little Bear Creek Reservoir Retained Land",
+     "acres_approx": 1106,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 1138,
+     "tier": "LIKELY",
+     "why": "shared bear, creek, little; extra: park - / record reservoir"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-13004": {
+   "park": "TVA Cedar Creek Dam Multiple Use Area",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1807,
+     "record_name": "Cedar Creek Reservoir Retained Land",
+     "acres_approx": 2687,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 2716,
+     "tier": "LIKELY",
+     "why": "shared cedar, creek; extra: park - / record reservoir"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-13005": {
+   "park": "TVA Big Bear Creek Dam Multiple Use Area",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1806,
+     "record_name": "Bear Creek Reservoir Retained Land",
+     "acres_approx": 2547,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 2327,
+     "tier": "LIKELY",
+     "why": "shared bear, creek; extra: park big / record reservoir"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-13083": {
+   "park": "TVA Wheeler Dam Public Park National Recreation Area",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0",
+     "agency": "Alabama State Parks (ADCNR)",
+     "record": 9,
+     "record_name": "Joe Wheeler State Park",
+     "acres_approx": 2436,
+     "tier": "LIKELY",
+     "why": "shared wheeler; extra: park - / record joe"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1818,
+     "record_name": "Wheeler Reservoir Retained Land",
+     "acres_approx": 16213,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 16536,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): hit",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-13311": {
+   "park": "TVA Upper Bear Creek Dam Resource Management Area",
+   "area": "US-AL",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1816,
+     "record_name": "Upper Bear Creek Reservoir Retained Land",
+     "acres_approx": 3289,
+     "Mang_Name": "TVA",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 3216,
+     "tier": "LIKELY",
+     "why": "shared bear, creek, upper; extra: park resource / record reservoir"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: LIKELY (part of the name shared)"
+  },
+  "US-13473": {
+   "park": "Old Cahawba Archaeological Park State Historical Park",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"archaeological historical cahawba\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13533": {
+   "park": "Brierfield Ironworks Historial State Park State Historical Park",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"brierfield historical ironworks\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13558": {
+   "park": "St. Stephens State Historical Park",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical stephens\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6457": {
+   "park": "Elk River Lodge State Park",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"lodge elk\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6459": {
+   "park": "Kinterbish Wildlife Management Area",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"kinterbish\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9918": {
+   "park": "Thigpen Hill Nature Recreation Area",
+   "area": "US-AL",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alabama State Parks (ADCNR): no polygon at the pin",
+    "A Alabama Dept of Conservation and Natural: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A ADCNR Wildlife and Freshwater Fisheries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"thigpen hill\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

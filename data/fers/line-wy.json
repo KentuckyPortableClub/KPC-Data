@@ -1,0 +1,64 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "wy",
+ "states": [
+  "US-WY"
+ ],
+ "since": "2026-11-02",
+ "date": "2026-11-02 12:23 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 1270 of 1802 pairs whose boxes touch"
+ ],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 75,
+  "DROPPED": 234,
+  "NEVER LOOKED AT": 1112
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-02",
+   "pairs tested": 1270,
+   "pairs whose boxes touch": 1802,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 1114,
+   "date": "2026-11-02",
+   "pairs tested": 159
+  },
+  "pass3": {
+   "agree with the pass before": 351,
+   "date": "2026-11-02",
+   "pairs tested": 158
+  },
+  "pass5": {
+   "checked": 38,
+   "date": "2026-11-02",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-WY": "data/fers/US-WY.json"
+ },
+ "US-WY": {
+  "rows": 1156,
+  "live": 85,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 7,
+   "low-confidence outline": 1,
+   "no public owner on the ownership map": 4
+  },
+  "dropped": 839,
+  "merged": 220
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-WY"
+ ]
+}

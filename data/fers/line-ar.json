@@ -1,0 +1,62 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ar",
+ "states": [
+  "US-AR"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 18:20 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "US-AR: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-0646+US-7270@same land@36.030,-92.871"
+ ],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 82,
+  "DROPPED": 165,
+  "NEVER LOOKED AT": 4087
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 486,
+   "pairs whose boxes touch": 486
+  },
+  "pass2": {
+   "agree with the pass before": 492,
+   "date": "2026-11-01",
+   "pairs tested": 113
+  },
+  "pass3": {
+   "agree with the pass before": 263,
+   "date": "2026-11-01",
+   "pairs tested": 108
+  },
+  "pass5": {
+   "checked": 64,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-AR": "data/fers/US-AR.json"
+ },
+ "US-AR": {
+  "rows": 593,
+  "live": 88,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline for Greers Ferry Lake Tailwater State": 1,
+   "this spot is 154 km from Cherokee Wildlife Management Area's": 1,
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 333,
+  "merged": 167
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-AR"
+ ]
+}

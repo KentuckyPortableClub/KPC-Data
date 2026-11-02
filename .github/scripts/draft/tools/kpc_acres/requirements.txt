@@ -1,0 +1,4 @@
+# kpc_acres runs on the Python 3.12 standard library alone. Nothing below is required.
+# Optional: lets the tool read agency lists published as PDF tables. Without it, PDF lists are
+# reported as "skipped: pypdf not installed" and the run goes on.
+# pypdf==5.1.0

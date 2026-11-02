@@ -1,0 +1,29 @@
+{
+ "layers": {
+  "https://gis.dnr.example.gov/arcgis/rest/services/Recreation/Facilities/MapServer/2": [
+   "US-1001",
+   "US-1002"
+  ],
+  "https://services.county.example.org/arcgis/rest/services/Parks/Campground_Loops/FeatureServer/0": [
+   "US-2001"
+  ],
+  "https://apps.fs.example.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=FORESTNAME+%3D+%27Superior+National+Forest%27+AND+MARKERACTIVITY+IN+%28%27Campground+Camping%27%2C%27Group+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=%2A&f=html": [
+   "US-4321"
+  ],
+  "https://gisservices.dec.example.gov/arcgis/rest/services/DEC/PointsOfInterest/MapServer/0": [
+   "US-NY"
+  ],
+  "https://gis.tokenparks.example.com/arcgis/rest/services/Secure/Camps/MapServer/0": [
+   "US-5001"
+  ],
+  "https://busy.example.net/arcgis/rest/services/Camps/MapServer/0": [
+   "US-6001"
+  ],
+  "https://noindex.example.org/arcgis/rest/services/Camps/MapServer/0": [
+   "US-7001"
+  ],
+  "https://www.openstreetmap.org/api/0.6/map?bbox=-91,47,-90,48": [
+   "US-8001"
+  ]
+ }
+}

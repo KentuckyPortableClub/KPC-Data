@@ -1,0 +1,6298 @@
+{
+ "area": "US-MA",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-MA.json",
+ "rows": {
+  "US-0320+US-4720@area@42.400,-71.454": {
+   "id": "US-0320+US-4720@area@42.400,-71.454",
+   "area": "US-MA",
+   "refs": [
+    "US-0320",
+    "US-4720"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 11.6,
+   "stored_wide_m": 87,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:06Z",
+   "layers": [
+    {
+     "ref": "US-0320",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:07Z"
+    },
+    {
+     "ref": "US-0320",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "22 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:50:09Z"
+    },
+    {
+     "ref": "US-4720",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "8 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:50:11Z"
+    },
+    {
+     "ref": "US-4720",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:50:12Z"
+    },
+    {
+     "ref": "US-4720",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.64,
+   "live_acres": 9.09,
+   "kept_pct": 99.9,
+   "size_pct": 5.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 87.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.1 ac vs 8.6 ac stored (+5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.399813,
+    -71.454101
+   ]
+  },
+  "US-0321+US-11598@area@42.381,-71.389": {
+   "id": "US-0321+US-11598@area@42.381,-71.389",
+   "area": "US-MA",
+   "refs": [
+    "US-0321",
+    "US-11598"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.3,
+   "stored_wide_m": 31,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:15Z",
+   "layers": [
+    {
+     "ref": "US-0321",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:15Z"
+    },
+    {
+     "ref": "US-0321",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "163 record id(s)",
+     "n": 16,
+     "read": "2026-11-01T00:50:17Z"
+    },
+    {
+     "ref": "US-11598",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.06,
+   "live_acres": 0.92,
+   "kept_pct": 100.0,
+   "size_pct": -12.8,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 22.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.9 ac vs 1.1 ac stored (-13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.380478,
+    -71.388901
+   ]
+  },
+  "US-0324+US-0672@area@41.608,-69.980": {
+   "id": "US-0324+US-0672@area@41.608,-69.980",
+   "area": "US-MA",
+   "refs": [
+    "US-0324",
+    "US-0672"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 275.2,
+   "stored_wide_m": 621,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:20Z",
+   "layers": [
+    {
+     "ref": "US-0324",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:20Z"
+    },
+    {
+     "ref": "US-0324",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:21Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:50:22Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "459 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:50:27Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 272.71,
+   "live_acres": 272.28,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 615.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 272.3 ac vs 272.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.607966,
+    -69.980902
+   ]
+  },
+  "US-0327+US-8014@river@42.565,-71.609": {
+   "id": "US-0327+US-8014@river@42.565,-71.609",
+   "area": "US-MA",
+   "refs": [
+    "US-0327",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:32Z",
+   "layers": [
+    {
+     "ref": "US-0327",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:33Z"
+    },
+    {
+     "ref": "US-0327",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "13 record id(s)",
+     "n": 13,
+     "read": "2026-11-01T00:50:34Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 2,
+     "read": "2026-11-01T00:50:35Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 130,
+     "read": "2026-11-01T00:50:36Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 54.55,
+   "stored_shape_acres": 80.16,
+   "live_acres": 51.96,
+   "kept_pct": 40.0,
+   "size_pct": -35.2,
+   "moved_m": 2018,
+   "gap_m": 0,
+   "wide_m": 99.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 35% smaller (52.0 ac vs 80.2 ac stored)",
+   "live_center": [
+    42.571957,
+    -71.613089
+   ]
+  },
+  "US-0328+US-11595@area@42.720,-70.805": {
+   "id": "US-0328+US-11595@area@42.720,-70.805",
+   "area": "US-MA",
+   "refs": [
+    "US-0328",
+    "US-11595"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 23.6,
+   "stored_wide_m": 119,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:36Z",
+   "layers": [
+    {
+     "ref": "US-0328",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:36Z"
+    },
+    {
+     "ref": "US-0328",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "47 record id(s)",
+     "n": 44,
+     "read": "2026-11-01T00:50:37Z"
+    },
+    {
+     "ref": "US-11595",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "18 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:50:39Z"
+    },
+    {
+     "ref": "US-11595",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "31 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:50:40Z"
+    },
+    {
+     "ref": "US-11595",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 22.57,
+   "live_acres": 22.33,
+   "kept_pct": 100.0,
+   "size_pct": -1.1,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 118.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.3 ac vs 22.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.719535,
+    -70.804176
+   ]
+  },
+  "US-0328+US-8429@area@42.707,-70.782": {
+   "id": "US-0328+US-8429@area@42.707,-70.782",
+   "area": "US-MA",
+   "refs": [
+    "US-0328",
+    "US-8429"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.3,
+   "stored_wide_m": 31,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:42Z",
+   "layers": [
+    {
+     "ref": "US-0328",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:50:43Z"
+    },
+    {
+     "ref": "US-0328",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "47 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:50:43Z"
+    },
+    {
+     "ref": "US-8429",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "6 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:50:43Z"
+    },
+    {
+     "ref": "US-8429",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "24 record id(s)",
+     "n": 24,
+     "read": "2026-11-01T00:50:44Z"
+    },
+    {
+     "ref": "US-8429",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.24,
+   "live_acres": 0.21,
+   "kept_pct": 100.0,
+   "size_pct": -10.4,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 27.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.2 ac vs 0.2 ac stored (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.70578,
+    -70.783785
+   ]
+  },
+  "US-0672+US-11638@area@41.887,-69.972": {
+   "id": "US-0672+US-11638@area@41.887,-69.972",
+   "area": "US-MA",
+   "refs": [
+    "US-0672",
+    "US-11638"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1260.8,
+   "stored_wide_m": 1879,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:47Z",
+   "layers": [
+    {
+     "ref": "US-0672",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:47Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "459 record id(s)",
+     "n": 26,
+     "read": "2026-11-01T00:50:51Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:51Z"
+    },
+    {
+     "ref": "US-11638",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1259.29,
+   "live_acres": 1270.58,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 1879.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1270.6 ac vs 1259.3 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.886739,
+    -69.972088
+   ]
+  },
+  "US-0672+US-8395@area@41.908,-69.984": {
+   "id": "US-0672+US-8395@area@41.908,-69.984",
+   "area": "US-MA",
+   "refs": [
+    "US-0672",
+    "US-8395"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 23.6,
+   "stored_wide_m": 25,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:50:53Z",
+   "layers": [
+    {
+     "ref": "US-0672",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:53Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "459 record id(s)",
+     "n": 27,
+     "read": "2026-11-01T00:50:58Z"
+    },
+    {
+     "ref": "US-0672",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:50:58Z"
+    },
+    {
+     "ref": "US-8395",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "14 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:50:58Z"
+    },
+    {
+     "ref": "US-8395",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "66 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:50:59Z"
+    },
+    {
+     "ref": "US-8395",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19.99,
+   "live_acres": 20.9,
+   "kept_pct": 100.0,
+   "size_pct": 4.5,
+   "moved_m": 483,
+   "gap_m": 0,
+   "wide_m": 26.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.9 ac vs 20.0 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.906362,
+    -69.984276
+   ]
+  },
+  "US-0742+US-2444@area@42.641,-71.348": {
+   "id": "US-0742+US-2444@area@42.641,-71.348",
+   "area": "US-MA",
+   "refs": [
+    "US-0742",
+    "US-2444"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.8,
+   "stored_wide_m": 45,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:51:01Z",
+   "layers": [
+    {
+     "ref": "US-0742",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:01Z"
+    },
+    {
+     "ref": "US-0742",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:02Z"
+    },
+    {
+     "ref": "US-2444",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:51:03Z"
+    },
+    {
+     "ref": "US-2444",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "106 record id(s)",
+     "n": 105,
+     "read": "2026-11-01T00:51:05Z"
+    },
+    {
+     "ref": "US-2444",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 11,
+   "stored_shape_acres": 2.86,
+   "live_acres": 3.39,
+   "kept_pct": 100.0,
+   "size_pct": 18.7,
+   "moved_m": 62,
+   "gap_m": 0,
+   "wide_m": 41.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.4 ac vs 2.9 ac stored (+19%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.650408,
+    -71.328559
+   ]
+  },
+  "US-0891+US-11695@river@41.963,-70.914": {
+   "id": "US-0891+US-11695@river@41.963,-70.914",
+   "area": "US-MA",
+   "refs": [
+    "US-0891",
+    "US-11695"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:51:08Z",
+   "layers": [
+    {
+     "ref": "US-0891",
+     "layer": "saved copy US-0891.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11695",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "15 record id(s)",
+     "n": 15,
+     "read": "2026-11-01T00:51:08Z"
+    },
+    {
+     "ref": "US-11695",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 20,
+     "read": "2026-11-01T00:51:09Z"
+    },
+    {
+     "ref": "US-11695",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:10Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:11Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 56,
+     "read": "2026-11-01T00:51:13Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0891"
+   ],
+   "live_stretch_acres": 37.77,
+   "stored_shape_acres": 36.08,
+   "live_acres": 31.36,
+   "kept_pct": 61.1,
+   "size_pct": -13.1,
+   "moved_m": 230,
+   "gap_m": 0,
+   "wide_m": 55.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 61% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    41.961641,
+    -70.91942
+   ]
+  },
+  "US-0891+US-2430@river@41.809,-71.118": {
+   "id": "US-0891+US-2430@river@41.809,-71.118",
+   "area": "US-MA",
+   "refs": [
+    "US-0891",
+    "US-2430"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:51:13Z",
+   "layers": [
+    {
+     "ref": "US-0891",
+     "layer": "saved copy US-0891.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-2430",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:51:13Z"
+    },
+    {
+     "ref": "US-2430",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:51:14Z"
+    },
+    {
+     "ref": "US-2430",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:16Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:18Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 9,
+     "read": "2026-11-01T00:51:19Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0891"
+   ],
+   "live_stretch_acres": 0.0,
+   "stored_shape_acres": 0.0,
+   "live_acres": 9.34,
+   "kept_pct": 0.0,
+   "size_pct": 1616564.9,
+   "moved_m": 293,
+   "gap_m": 79,
+   "wide_m": 59.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 293 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    41.809543,
+    -71.114278
+   ]
+  },
+  "US-0891+US-2446@river@41.932,-70.991": {
+   "id": "US-0891+US-2446@river@41.932,-70.991",
+   "area": "US-MA",
+   "refs": [
+    "US-0891",
+    "US-2446"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:51:19Z",
+   "layers": [
+    {
+     "ref": "US-0891",
+     "layer": "saved copy US-0891.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-2446",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "60 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:51:19Z"
+    },
+    {
+     "ref": "US-2446",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "6 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:51:20Z"
+    },
+    {
+     "ref": "US-2446",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:21Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:23Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 8,
+     "read": "2026-11-01T00:51:23Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0891"
+   ],
+   "live_stretch_acres": 1.97,
+   "stored_shape_acres": 0.41,
+   "live_acres": 1.2,
+   "kept_pct": 3.4,
+   "size_pct": 191.4,
+   "moved_m": 40,
+   "gap_m": 4,
+   "wide_m": 37.7,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 3% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    41.931554,
+    -70.98959
+   ]
+  },
+  "US-0897+US-11395@river@42.259,-72.954": {
+   "id": "US-0897+US-11395@river@42.259,-72.954",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11395"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:23Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11395",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:23Z"
+    },
+    {
+     "ref": "US-11395",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:24Z"
+    },
+    {
+     "ref": "US-11395",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:26Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 8,
+     "read": "2026-11-01T00:51:27Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 0,
+     "read": "2026-11-01T00:51:28Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 45.81,
+   "stored_shape_acres": 133.63,
+   "live_acres": 39.57,
+   "kept_pct": 21.6,
+   "size_pct": -70.4,
+   "moved_m": 1306,
+   "gap_m": 0,
+   "wide_m": 88.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 1306 m from the stored centre; 22% of the stored overlap is still inside it",
+   "live_center": [
+    42.257752,
+    -72.947588
+   ]
+  },
+  "US-0897+US-11401@river@42.449,-72.874": {
+   "id": "US-0897+US-11401@river@42.449,-72.874",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11401"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:28Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11401",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:51:28Z"
+    },
+    {
+     "ref": "US-11401",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "7 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:51:29Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:31Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 0,
+     "read": "2026-11-01T00:51:31Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 7.34,
+   "stored_shape_acres": 17.99,
+   "live_acres": 7.33,
+   "kept_pct": 9.4,
+   "size_pct": -59.3,
+   "moved_m": 162,
+   "gap_m": 0,
+   "wide_m": 38.5,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 59% smaller (7.3 ac vs 18.0 ac stored)",
+   "live_center": [
+    42.440709,
+    -72.869327
+   ]
+  },
+  "US-0897+US-11409@river@42.341,-72.951": {
+   "id": "US-0897+US-11409@river@42.341,-72.951",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11409"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:31Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11409",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "64 record id(s)",
+     "n": 57,
+     "read": "2026-11-01T00:51:31Z"
+    },
+    {
+     "ref": "US-11409",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "42 record id(s)",
+     "n": 38,
+     "read": "2026-11-01T00:51:33Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 3,
+     "read": "2026-11-01T00:51:34Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 23,
+     "read": "2026-11-01T00:51:35Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 11.93,
+   "stored_shape_acres": 13.8,
+   "live_acres": 10.6,
+   "kept_pct": 38.0,
+   "size_pct": -23.2,
+   "moved_m": 124,
+   "gap_m": 0,
+   "wide_m": 74.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 38% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.339458,
+    -72.942034
+   ]
+  },
+  "US-0897+US-11438@river@42.413,-72.869": {
+   "id": "US-0897+US-11438@river@42.413,-72.869",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11438"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:35Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11438",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:51:35Z"
+    },
+    {
+     "ref": "US-11438",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "7 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:51:36Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:37Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 4,
+     "read": "2026-11-01T00:51:38Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 28.26,
+   "stored_shape_acres": 86.44,
+   "live_acres": 27.7,
+   "kept_pct": 7.7,
+   "size_pct": -68.0,
+   "moved_m": 737,
+   "gap_m": 0,
+   "wide_m": 57.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 737 m from the stored centre; 8% of the stored overlap is still inside it",
+   "live_center": [
+    42.419668,
+    -72.862646
+   ]
+  },
+  "US-0897+US-11439@river@42.433,-72.992": {
+   "id": "US-0897+US-11439@river@42.433,-72.992",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11439"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:38Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11439",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "32 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:51:39Z"
+    },
+    {
+     "ref": "US-11439",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "43 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:51:40Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 2,
+     "read": "2026-11-01T00:51:41Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 3,
+     "read": "2026-11-01T00:51:42Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 10.61,
+   "stored_shape_acres": 14.96,
+   "live_acres": 10.61,
+   "kept_pct": 52.6,
+   "size_pct": -29.0,
+   "moved_m": 293,
+   "gap_m": 0,
+   "wide_m": 66.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 29% smaller (10.6 ac vs 15.0 ac stored)",
+   "live_center": [
+    42.430176,
+    -72.990792
+   ]
+  },
+  "US-0897+US-11443@river@42.553,-73.047": {
+   "id": "US-0897+US-11443@river@42.553,-73.047",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11443"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:42Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11443",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:51:42Z"
+    },
+    {
+     "ref": "US-11443",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "25 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:51:43Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T00:51:44Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 2,
+     "read": "2026-11-01T00:51:45Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 12.13,
+   "stored_shape_acres": 17.52,
+   "live_acres": 12.13,
+   "kept_pct": 41.0,
+   "size_pct": -30.8,
+   "moved_m": 828,
+   "gap_m": 0,
+   "wide_m": 70.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 31% smaller (12.1 ac vs 17.5 ac stored)",
+   "live_center": [
+    42.549231,
+    -73.045409
+   ]
+  },
+  "US-0897+US-11445@river@42.472,-72.911": {
+   "id": "US-0897+US-11445@river@42.472,-72.911",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11445"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:45Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11445",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:46Z"
+    },
+    {
+     "ref": "US-11445",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:51:47Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:48Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 3,
+     "read": "2026-11-01T00:51:49Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 3.58,
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.92,
+   "kept_pct": 0.0,
+   "size_pct": 141035.0,
+   "moved_m": 36,
+   "gap_m": 15,
+   "wide_m": 33.9,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 0% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.471806,
+    -72.909473
+   ]
+  },
+  "US-0897+US-11453@river@42.494,-72.977": {
+   "id": "US-0897+US-11453@river@42.494,-72.977",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11453"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:49Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11453",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:51:49Z"
+    },
+    {
+     "ref": "US-11453",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T00:51:50Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 5,
+     "read": "2026-11-01T00:51:51Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 8,
+     "read": "2026-11-01T00:51:52Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 33.21,
+   "stored_shape_acres": 39.53,
+   "live_acres": 29.73,
+   "kept_pct": 41.9,
+   "size_pct": -24.8,
+   "moved_m": 689,
+   "gap_m": 0,
+   "wide_m": 79.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 42% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.498874,
+    -72.983154
+   ]
+  },
+  "US-0897+US-11454@river@42.310,-72.994": {
+   "id": "US-0897+US-11454@river@42.310,-72.994",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-11454"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:52Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-11454",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:51:52Z"
+    },
+    {
+     "ref": "US-11454",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "13 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:51:54Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:51:55Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 1,
+     "read": "2026-11-01T00:51:56Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 0.84,
+   "stored_shape_acres": 0.69,
+   "live_acres": 0.84,
+   "kept_pct": 45.1,
+   "size_pct": 22.2,
+   "moved_m": 71,
+   "gap_m": 0,
+   "wide_m": 32.0,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 45% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.310319,
+    -72.994206
+   ]
+  },
+  "US-0897+US-13237@river@42.331,-73.089": {
+   "id": "US-0897+US-13237@river@42.331,-73.089",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-13237"
+   ],
+   "kind": "river",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:56Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-13237",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:56Z"
+    },
+    {
+     "ref": "US-13237",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:57Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T00:51:58Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 3,
+     "read": "2026-11-01T00:51:59Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 1.83,
+   "stored_shape_acres": 1.3,
+   "live_acres": 1.83,
+   "kept_pct": 85.9,
+   "size_pct": 40.7,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 48.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 41% bigger (1.8 ac vs 1.3 ac stored); 86% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.331126,
+    -73.088354
+   ]
+  },
+  "US-0897+US-2423@river@42.271,-72.867": {
+   "id": "US-0897+US-2423@river@42.271,-72.867",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-2423"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:51:59Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-2423",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:51:59Z"
+    },
+    {
+     "ref": "US-2423",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:00Z"
+    },
+    {
+     "ref": "US-2423",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:01Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 2,
+     "read": "2026-11-01T00:52:03Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 2,
+     "read": "2026-11-01T00:52:04Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 15.34,
+   "stored_shape_acres": 11.46,
+   "live_acres": 10.73,
+   "kept_pct": 62.8,
+   "size_pct": -6.3,
+   "moved_m": 464,
+   "gap_m": 0,
+   "wide_m": 98.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 63% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.269415,
+    -72.868071
+   ]
+  },
+  "US-0897+US-4714@river@42.259,-72.942": {
+   "id": "US-0897+US-4714@river@42.259,-72.942",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-4714"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:04Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4714",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:04Z"
+    },
+    {
+     "ref": "US-4714",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "39 record id(s)",
+     "n": 26,
+     "read": "2026-11-01T00:52:05Z"
+    },
+    {
+     "ref": "US-4714",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:06Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 5,
+     "read": "2026-11-01T00:52:07Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 0,
+     "read": "2026-11-01T00:52:08Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 0.92,
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.63,
+   "kept_pct": 0.0,
+   "size_pct": 70167.1,
+   "moved_m": 219,
+   "gap_m": 23,
+   "wide_m": 19.1,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 219 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    42.258355,
+    -72.941857
+   ]
+  },
+  "US-0897+US-4717@river@42.333,-73.135": {
+   "id": "US-0897+US-4717@river@42.333,-73.135",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-4717"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:08Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4717",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:52:09Z"
+    },
+    {
+     "ref": "US-4717",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "90 record id(s)",
+     "n": 23,
+     "read": "2026-11-01T00:52:10Z"
+    },
+    {
+     "ref": "US-4717",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:11Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T00:52:12Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 13,
+     "read": "2026-11-01T00:52:13Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 43.68,
+   "stored_shape_acres": 6.0,
+   "live_acres": 12.57,
+   "kept_pct": 93.7,
+   "size_pct": 109.7,
+   "moved_m": 968,
+   "gap_m": 0,
+   "wide_m": 71.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 110% bigger (12.6 ac vs 6.0 ac stored); 94% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.334589,
+    -73.123667
+   ]
+  },
+  "US-0897+US-4718@river@42.320,-73.046": {
+   "id": "US-0897+US-4718@river@42.320,-73.046",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-4718"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:13Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4718",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "22 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:52:14Z"
+    },
+    {
+     "ref": "US-4718",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "44 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:52:15Z"
+    },
+    {
+     "ref": "US-4718",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:16Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T00:52:17Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 1,
+     "read": "2026-11-01T00:52:18Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 1.0,
+   "stored_shape_acres": 1.39,
+   "live_acres": 1.0,
+   "kept_pct": 5.9,
+   "size_pct": -28.1,
+   "moved_m": 80,
+   "gap_m": 0,
+   "wide_m": 27.8,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 28% smaller (1.0 ac vs 1.4 ac stored)",
+   "live_center": [
+    42.320338,
+    -73.040752
+   ]
+  },
+  "US-0897+US-4722@river@42.380,-72.875": {
+   "id": "US-0897+US-4722@river@42.380,-72.875",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-4722"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:18Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4722",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "19 record id(s)",
+     "n": 19,
+     "read": "2026-11-01T00:52:18Z"
+    },
+    {
+     "ref": "US-4722",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "44 record id(s)",
+     "n": 38,
+     "read": "2026-11-01T00:52:19Z"
+    },
+    {
+     "ref": "US-4722",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:20Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:52:21Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 24,
+     "read": "2026-11-01T00:52:23Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 32.85,
+   "stored_shape_acres": 52.5,
+   "live_acres": 10.3,
+   "kept_pct": 23.0,
+   "size_pct": -80.4,
+   "moved_m": 1974,
+   "gap_m": 0,
+   "wide_m": 45.4,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 1974 m from the stored centre; 23% of the stored overlap is still inside it",
+   "live_center": [
+    42.381953,
+    -72.874783
+   ]
+  },
+  "US-0897+US-4733@river@42.525,-73.008": {
+   "id": "US-0897+US-4733@river@42.525,-73.008",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-4733"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:23Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4733",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:52:23Z"
+    },
+    {
+     "ref": "US-4733",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:52:24Z"
+    },
+    {
+     "ref": "US-4733",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:25Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T00:52:26Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 9,
+     "read": "2026-11-01T00:52:27Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 23.2,
+   "stored_shape_acres": 18.92,
+   "live_acres": 22.39,
+   "kept_pct": 66.7,
+   "size_pct": 18.3,
+   "moved_m": 282,
+   "gap_m": 0,
+   "wide_m": 64.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 67% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.519475,
+    -72.99956
+   ]
+  },
+  "US-0897+US-4743@river@42.568,-73.031": {
+   "id": "US-0897+US-4743@river@42.568,-73.031",
+   "area": "US-MA",
+   "refs": [
+    "US-0897",
+    "US-4743"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:27Z",
+   "layers": [
+    {
+     "ref": "US-0897",
+     "layer": "saved copy US-0897.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "15 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:27Z"
+    },
+    {
+     "ref": "US-4743",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "184 record id(s)",
+     "n": 49,
+     "read": "2026-11-01T00:52:29Z"
+    },
+    {
+     "ref": "US-4743",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:30Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 0,
+     "read": "2026-11-01T00:52:32Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 6,
+     "read": "2026-11-01T00:52:33Z"
+    }
+   ],
+   "saved_lines": [
+    "US-0897"
+   ],
+   "live_stretch_acres": 53.09,
+   "stored_shape_acres": 22.26,
+   "live_acres": 22.53,
+   "kept_pct": 52.6,
+   "size_pct": 1.2,
+   "moved_m": 1284,
+   "gap_m": 0,
+   "wide_m": 67.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 53% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.580556,
+    -73.034837
+   ]
+  },
+  "US-11396+US-4711@area@42.247,-73.319": {
+   "id": "US-11396+US-4711@area@42.247,-73.319",
+   "area": "US-MA",
+   "refs": [
+    "US-11396",
+    "US-4711"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.4,
+   "stored_wide_m": 45,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:33Z",
+   "layers": [
+    {
+     "ref": "US-11396",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:52:33Z"
+    },
+    {
+     "ref": "US-11396",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "6 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:34Z"
+    },
+    {
+     "ref": "US-4711",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "20 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:35Z"
+    },
+    {
+     "ref": "US-4711",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "61 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:52:36Z"
+    },
+    {
+     "ref": "US-4711",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2.85,
+   "live_acres": 2.54,
+   "kept_pct": 100.0,
+   "size_pct": -10.9,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 40.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.5 ac vs 2.8 ac stored (-11%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.247604,
+    -73.318908
+   ]
+  },
+  "US-11400+US-4556@trail@42.508,-73.167": {
+   "id": "US-11400+US-4556@trail@42.508,-73.167",
+   "area": "US-MA",
+   "refs": [
+    "US-11400",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.91,
+   "stored_wide_m": 22.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:38Z",
+   "layers": [
+    {
+     "ref": "US-11400",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "35 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:52:38Z"
+    },
+    {
+     "ref": "US-11400",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "57 record id(s)",
+     "n": 19,
+     "read": "2026-11-01T00:52:39Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 0.53,
+   "stored_shape_acres": 4.55,
+   "live_acres": 0.53,
+   "kept_pct": 27.6,
+   "size_pct": -88.2,
+   "moved_m": 252,
+   "gap_m": 0,
+   "wide_m": 14.3,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 88% smaller (0.5 ac vs 4.5 ac stored)",
+   "live_center": [
+    42.505497,
+    -73.169398
+   ]
+  },
+  "US-11401+US-4722@area@42.446,-72.873": {
+   "id": "US-11401+US-4722@area@42.446,-72.873",
+   "area": "US-MA",
+   "refs": [
+    "US-11401",
+    "US-4722"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.4,
+   "stored_wide_m": 23,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:40Z",
+   "layers": [
+    {
+     "ref": "US-11401",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:41Z"
+    },
+    {
+     "ref": "US-11401",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "7 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:41Z"
+    },
+    {
+     "ref": "US-4722",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "19 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:52:42Z"
+    },
+    {
+     "ref": "US-4722",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "44 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:52:42Z"
+    },
+    {
+     "ref": "US-4722",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.92,
+   "live_acres": 0.86,
+   "kept_pct": 99.8,
+   "size_pct": -6.2,
+   "moved_m": 46,
+   "gap_m": 0,
+   "wide_m": 18.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.9 ac vs 0.9 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.445456,
+    -72.875045
+   ]
+  },
+  "US-11402+US-4556@trail@42.465,-73.168": {
+   "id": "US-11402+US-4556@trail@42.465,-73.168",
+   "area": "US-MA",
+   "refs": [
+    "US-11402",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.65,
+   "stored_wide_m": 32.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:42Z",
+   "layers": [
+    {
+     "ref": "US-11402",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "7 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:52:43Z"
+    },
+    {
+     "ref": "US-11402",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:44Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 0.54,
+   "stored_shape_acres": 0.52,
+   "live_acres": 0.54,
+   "kept_pct": 100.0,
+   "size_pct": 3.5,
+   "moved_m": 47,
+   "gap_m": 0,
+   "wide_m": 27.4,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.5 ac vs 0.5 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.46472,
+    -73.168102
+   ]
+  },
+  "US-11409+US-4719@area@42.379,-73.033": {
+   "id": "US-11409+US-4719@area@42.379,-73.033",
+   "area": "US-MA",
+   "refs": [
+    "US-11409",
+    "US-4719"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 10.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:47Z",
+   "layers": [
+    {
+     "ref": "US-11409",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "64 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:52:47Z"
+    },
+    {
+     "ref": "US-11409",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "42 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:52:47Z"
+    },
+    {
+     "ref": "US-4719",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:52:48Z"
+    },
+    {
+     "ref": "US-4719",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "27 record id(s)",
+     "n": 14,
+     "read": "2026-11-01T00:52:49Z"
+    },
+    {
+     "ref": "US-4719",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:52:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5.83,
+   "live_acres": 5.34,
+   "kept_pct": 98.7,
+   "size_pct": -8.4,
+   "moved_m": 1358,
+   "gap_m": 0,
+   "wide_m": 22.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.3 ac vs 5.8 ac stored (-8%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.372458,
+    -73.01945
+   ]
+  },
+  "US-11430+US-8413@area@42.160,-73.431": {
+   "id": "US-11430+US-8413@area@42.160,-73.431",
+   "area": "US-MA",
+   "refs": [
+    "US-11430",
+    "US-8413"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 103.6,
+   "stored_wide_m": 387,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:51Z",
+   "layers": [
+    {
+     "ref": "US-11430",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:52:51Z"
+    },
+    {
+     "ref": "US-11430",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:52Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "11 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:52:53Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:52:55Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:56Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:52:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 102.39,
+   "live_acres": 102.65,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 390.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 102.7 ac vs 102.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.157966,
+    -73.424881
+   ]
+  },
+  "US-11461+US-4561@trail@42.218,-72.652": {
+   "id": "US-11461+US-4561@trail@42.218,-72.652",
+   "area": "US-MA",
+   "refs": [
+    "US-11461",
+    "US-4561"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 23.88,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:52:59Z",
+   "layers": [
+    {
+     "ref": "US-11461",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 10,
+     "read": "2026-11-01T00:52:59Z"
+    },
+    {
+     "ref": "US-11461",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "20 record id(s)",
+     "n": 20,
+     "read": "2026-11-01T00:53:00Z"
+    },
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 22.33,
+   "stored_shape_acres": 22.09,
+   "live_acres": 22.33,
+   "kept_pct": 100.0,
+   "size_pct": 1.1,
+   "moved_m": 403,
+   "gap_m": 0,
+   "wide_m": 67.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.3 ac vs 22.1 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.220863,
+    -72.648216
+   ]
+  },
+  "US-11472+US-11473@same land@42.531,-72.484": {
+   "id": "US-11472+US-11473@same land@42.531,-72.484",
+   "area": "US-MA",
+   "refs": [
+    "US-11472",
+    "US-11473"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:53:01Z",
+   "layers": [
+    {
+     "ref": "US-11472",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "43 record id(s)",
+     "n": 16,
+     "read": "2026-11-01T00:53:01Z"
+    },
+    {
+     "ref": "US-11472",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "70 record id(s)",
+     "n": 17,
+     "read": "2026-11-01T00:53:02Z"
+    },
+    {
+     "ref": "US-11473",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "43 record id(s)",
+     "n": 16,
+     "read": "2026-11-01T00:53:01Z"
+    },
+    {
+     "ref": "US-11473",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "71 record id(s)",
+     "n": 17,
+     "read": "2026-11-01T00:53:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 222.88,
+   "live_acres": 1005.42,
+   "kept_pct": 99.2,
+   "size_pct": 351.1,
+   "moved_m": 1361,
+   "gap_m": 0,
+   "wide_m": 915.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 351% bigger (1005.4 ac vs 222.9 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.526257,
+    -72.499389
+   ]
+  },
+  "US-11476+US-4561@trail@42.268,-72.634": {
+   "id": "US-11476+US-4561@trail@42.268,-72.634",
+   "area": "US-MA",
+   "refs": [
+    "US-11476",
+    "US-4561"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 140.63,
+   "stored_wide_m": 109.8,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:53:05Z",
+   "layers": [
+    {
+     "ref": "US-11476",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:53:05Z"
+    },
+    {
+     "ref": "US-11476",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "23 record id(s)",
+     "n": 18,
+     "read": "2026-11-01T00:53:06Z"
+    },
+    {
+     "ref": "US-11476",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:07Z"
+    },
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 78.16,
+   "stored_shape_acres": 176.9,
+   "live_acres": 78.16,
+   "kept_pct": 47.4,
+   "size_pct": -55.8,
+   "moved_m": 1961,
+   "gap_m": 0,
+   "wide_m": 96.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 56% smaller (78.2 ac vs 176.9 ac stored)",
+   "live_center": [
+    42.282871,
+    -72.61966
+   ]
+  },
+  "US-11476+US-8417@same land@42.259,-72.640": {
+   "id": "US-11476+US-8417@same land@42.259,-72.640",
+   "area": "US-MA",
+   "refs": [
+    "US-11476",
+    "US-8417"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:53:08Z",
+   "layers": [
+    {
+     "ref": "US-11476",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T00:53:08Z"
+    },
+    {
+     "ref": "US-11476",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "23 record id(s)",
+     "n": 23,
+     "read": "2026-11-01T00:53:09Z"
+    },
+    {
+     "ref": "US-11476",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:09Z"
+    },
+    {
+     "ref": "US-8417",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T00:53:08Z"
+    },
+    {
+     "ref": "US-8417",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "23 record id(s)",
+     "n": 23,
+     "read": "2026-11-01T00:53:09Z"
+    },
+    {
+     "ref": "US-8417",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 334.77,
+   "live_acres": 1878.53,
+   "kept_pct": 100.0,
+   "size_pct": 461.1,
+   "moved_m": 1421,
+   "gap_m": 0,
+   "wide_m": 2107.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 461% bigger (1878.5 ac vs 334.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.266933,
+    -72.62673
+   ]
+  },
+  "US-11479+US-4556@trail@42.727,-72.455": {
+   "id": "US-11479+US-4556@trail@42.727,-72.455",
+   "area": "US-MA",
+   "refs": [
+    "US-11479",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.53,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:53:09Z",
+   "layers": [
+    {
+     "ref": "US-11479",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:09Z"
+    },
+    {
+     "ref": "US-11479",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:11Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 1.33,
+   "stored_shape_acres": 1.24,
+   "live_acres": 1.33,
+   "kept_pct": 100.0,
+   "size_pct": 7.6,
+   "moved_m": 72,
+   "gap_m": 0,
+   "wide_m": 32.6,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.2 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.726725,
+    -72.455587
+   ]
+  },
+  "US-11498+US-4556@trail@42.717,-72.100": {
+   "id": "US-11498+US-4556@trail@42.717,-72.100",
+   "area": "US-MA",
+   "refs": [
+    "US-11498",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.95,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:53:12Z",
+   "layers": [
+    {
+     "ref": "US-11498",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "31 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:53:12Z"
+    },
+    {
+     "ref": "US-11498",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "58 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:53:13Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 6.33,
+   "stored_shape_acres": 5.91,
+   "live_acres": 6.33,
+   "kept_pct": 100.0,
+   "size_pct": 7.2,
+   "moved_m": 418,
+   "gap_m": 0,
+   "wide_m": 30.7,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.3 ac vs 5.9 ac stored (+7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.716836,
+    -72.100663
+   ]
+  },
+  "US-11499+US-8014@river@42.477,-71.636": {
+   "id": "US-11499+US-8014@river@42.477,-71.636",
+   "area": "US-MA",
+   "refs": [
+    "US-11499",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:14Z",
+   "layers": [
+    {
+     "ref": "US-11499",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "18 record id(s)",
+     "n": 18,
+     "read": "2026-11-01T00:53:14Z"
+    },
+    {
+     "ref": "US-11499",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "31 record id(s)",
+     "n": 31,
+     "read": "2026-11-01T00:53:15Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 4,
+     "read": "2026-11-01T00:53:17Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 130,
+     "read": "2026-11-01T00:53:18Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 71.16,
+   "stored_shape_acres": 15.61,
+   "live_acres": 7.93,
+   "kept_pct": 59.2,
+   "size_pct": -49.2,
+   "moved_m": 1674,
+   "gap_m": 0,
+   "wide_m": 50.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 49% smaller (7.9 ac vs 15.6 ac stored)",
+   "live_center": [
+    42.4864,
+    -71.632907
+   ]
+  },
+  "US-11504+US-11573@area@42.119,-71.602": {
+   "id": "US-11504+US-11573@area@42.119,-71.602",
+   "area": "US-MA",
+   "refs": [
+    "US-11504",
+    "US-11573"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.4,
+   "stored_wide_m": 35,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:18Z",
+   "layers": [
+    {
+     "ref": "US-11504",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:18Z"
+    },
+    {
+     "ref": "US-11504",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:53:19Z"
+    },
+    {
+     "ref": "US-11573",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "10 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:53:21Z"
+    },
+    {
+     "ref": "US-11573",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:22Z"
+    },
+    {
+     "ref": "US-11573",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.92,
+   "live_acres": 2.36,
+   "kept_pct": 100.0,
+   "size_pct": 23.1,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 31.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.4 ac vs 1.9 ac stored (+23%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.118689,
+    -71.602342
+   ]
+  },
+  "US-11585+US-4556@trail@42.711,-71.874": {
+   "id": "US-11585+US-4556@trail@42.711,-71.874",
+   "area": "US-MA",
+   "refs": [
+    "US-11585",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 23.81,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:25Z",
+   "layers": [
+    {
+     "ref": "US-11585",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "15 record id(s)",
+     "n": 10,
+     "read": "2026-11-01T00:53:25Z"
+    },
+    {
+     "ref": "US-11585",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "26 record id(s)",
+     "n": 14,
+     "read": "2026-11-01T00:53:26Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 21.25,
+   "stored_shape_acres": 21.56,
+   "live_acres": 21.25,
+   "kept_pct": 100.0,
+   "size_pct": -1.4,
+   "moved_m": 1130,
+   "gap_m": 0,
+   "wide_m": 42.5,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21.2 ac vs 21.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.7102,
+    -71.860323
+   ]
+  },
+  "US-11593+US-4556@trail@42.706,-71.703": {
+   "id": "US-11593+US-4556@trail@42.706,-71.703",
+   "area": "US-MA",
+   "refs": [
+    "US-11593",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 4.1,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:28Z",
+   "layers": [
+    {
+     "ref": "US-11593",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:28Z"
+    },
+    {
+     "ref": "US-11593",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:29Z"
+    },
+    {
+     "ref": "US-11593",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:30Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 3.59,
+   "stored_shape_acres": 3.74,
+   "live_acres": 3.59,
+   "kept_pct": 100.0,
+   "size_pct": -3.9,
+   "moved_m": 367,
+   "gap_m": 0,
+   "wide_m": 44.8,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.6 ac vs 3.7 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.705887,
+    -71.705113
+   ]
+  },
+  "US-11600+US-11604@area@42.590,-71.629": {
+   "id": "US-11600+US-11604@area@42.590,-71.629",
+   "area": "US-MA",
+   "refs": [
+    "US-11600",
+    "US-11604"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 45.9,
+   "stored_wide_m": 409,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:31Z",
+   "layers": [
+    {
+     "ref": "US-11600",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "18 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:53:31Z"
+    },
+    {
+     "ref": "US-11600",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "22 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:53:32Z"
+    },
+    {
+     "ref": "US-11600",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:33Z"
+    },
+    {
+     "ref": "US-11604",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "58 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:53:34Z"
+    },
+    {
+     "ref": "US-11604",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "75 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:53:36Z"
+    },
+    {
+     "ref": "US-11604",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 44.8,
+   "live_acres": 45.21,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 411.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 45.2 ac vs 44.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.590207,
+    -71.629456
+   ]
+  },
+  "US-11600+US-8014@river@42.575,-71.614": {
+   "id": "US-11600+US-8014@river@42.575,-71.614",
+   "area": "US-MA",
+   "refs": [
+    "US-11600",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:38Z",
+   "layers": [
+    {
+     "ref": "US-11600",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "18 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:53:38Z"
+    },
+    {
+     "ref": "US-11600",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "22 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:53:38Z"
+    },
+    {
+     "ref": "US-11600",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:39Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:53:39Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 24,
+     "read": "2026-11-01T00:53:40Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 2.62,
+   "stored_shape_acres": 2.04,
+   "live_acres": 2.61,
+   "kept_pct": 73.7,
+   "size_pct": 27.7,
+   "moved_m": 167,
+   "gap_m": 0,
+   "wide_m": 32.5,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 74% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.575464,
+    -71.61418
+   ]
+  },
+  "US-11601+US-11607@area@42.673,-71.572": {
+   "id": "US-11601+US-11607@area@42.673,-71.572",
+   "area": "US-MA",
+   "refs": [
+    "US-11601",
+    "US-11607"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 15.9,
+   "stored_wide_m": 199,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:40Z",
+   "layers": [
+    {
+     "ref": "US-11601",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "22 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:53:40Z"
+    },
+    {
+     "ref": "US-11601",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "32 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:53:41Z"
+    },
+    {
+     "ref": "US-11601",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:42Z"
+    },
+    {
+     "ref": "US-11607",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:53:43Z"
+    },
+    {
+     "ref": "US-11607",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "30 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:53:45Z"
+    },
+    {
+     "ref": "US-11607",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 11,
+   "stored_shape_acres": 15.47,
+   "live_acres": 15.22,
+   "kept_pct": 99.9,
+   "size_pct": -1.6,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 193.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15.2 ac vs 15.5 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.672475,
+    -71.572687
+   ]
+  },
+  "US-11601+US-4556@trail@42.704,-71.613": {
+   "id": "US-11601+US-4556@trail@42.704,-71.613",
+   "area": "US-MA",
+   "refs": [
+    "US-11601",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.22,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:47Z",
+   "layers": [
+    {
+     "ref": "US-11601",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "22 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:53:47Z"
+    },
+    {
+     "ref": "US-11601",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "32 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:53:47Z"
+    },
+    {
+     "ref": "US-11601",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:48Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 1.96,
+   "stored_shape_acres": 1.94,
+   "live_acres": 1.96,
+   "kept_pct": 100.0,
+   "size_pct": 1.2,
+   "moved_m": 41,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.0 ac vs 1.9 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.703929,
+    -71.613564
+   ]
+  },
+  "US-11601+US-8014@river@42.689,-71.589": {
+   "id": "US-11601+US-8014@river@42.689,-71.589",
+   "area": "US-MA",
+   "refs": [
+    "US-11601",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:48Z",
+   "layers": [
+    {
+     "ref": "US-11601",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "22 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:53:48Z"
+    },
+    {
+     "ref": "US-11601",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "32 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:53:48Z"
+    },
+    {
+     "ref": "US-11601",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:49Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:53:49Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 5,
+     "read": "2026-11-01T00:53:50Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 4.14,
+   "stored_shape_acres": 0.8,
+   "live_acres": 4.14,
+   "kept_pct": 90.1,
+   "size_pct": 415.6,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 60.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 416% bigger (4.1 ac vs 0.8 ac stored); 90% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.671881,
+    -71.572472
+   ]
+  },
+  "US-11603+US-4556@trail@42.870,-70.824": {
+   "id": "US-11603+US-4556@trail@42.870,-70.824",
+   "area": "US-MA",
+   "refs": [
+    "US-11603",
+    "US-4556"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.66,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:50Z",
+   "layers": [
+    {
+     "ref": "US-11603",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "26 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:53:50Z"
+    },
+    {
+     "ref": "US-11603",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "109 record id(s)",
+     "n": 15,
+     "read": "2026-11-01T00:53:52Z"
+    },
+    {
+     "ref": "US-11603",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:53Z"
+    },
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 5.88,
+   "stored_shape_acres": 6.0,
+   "live_acres": 5.88,
+   "kept_pct": 100.0,
+   "size_pct": -1.9,
+   "moved_m": 292,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.9 ac vs 6.0 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.869071,
+    -70.827083
+   ]
+  },
+  "US-11604+US-8014@river@42.680,-71.721": {
+   "id": "US-11604+US-8014@river@42.680,-71.721",
+   "area": "US-MA",
+   "refs": [
+    "US-11604",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:54Z",
+   "layers": [
+    {
+     "ref": "US-11604",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "58 record id(s)",
+     "n": 58,
+     "read": "2026-11-01T00:53:54Z"
+    },
+    {
+     "ref": "US-11604",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "75 record id(s)",
+     "n": 73,
+     "read": "2026-11-01T00:53:54Z"
+    },
+    {
+     "ref": "US-11604",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:53:55Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 14,
+     "read": "2026-11-01T00:53:56Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 274,
+     "read": "2026-11-01T00:53:57Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 24.78,
+   "stored_shape_acres": 14.89,
+   "live_acres": 17.08,
+   "kept_pct": 62.3,
+   "size_pct": 14.8,
+   "moved_m": 635,
+   "gap_m": 0,
+   "wide_m": 107.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 62% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    42.677481,
+    -71.716762
+   ]
+  },
+  "US-11605+US-8014@river@42.673,-71.709": {
+   "id": "US-11605+US-8014@river@42.673,-71.709",
+   "area": "US-MA",
+   "refs": [
+    "US-11605",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:53:57Z",
+   "layers": [
+    {
+     "ref": "US-11605",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "22 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:57Z"
+    },
+    {
+     "ref": "US-11605",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "26 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:53:58Z"
+    },
+    {
+     "ref": "US-11605",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:59Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 3,
+     "read": "2026-11-01T00:54:00Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 12,
+     "read": "2026-11-01T00:54:01Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 4.72,
+   "stored_shape_acres": 5.48,
+   "live_acres": 4.67,
+   "kept_pct": 77.1,
+   "size_pct": -14.7,
+   "moved_m": 61,
+   "gap_m": 0,
+   "wide_m": 45.0,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.7 ac vs 5.5 ac stored (-15%), 77% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.67396,
+    -71.708822
+   ]
+  },
+  "US-11607+US-8014@river@42.669,-71.569": {
+   "id": "US-11607+US-8014@river@42.669,-71.569",
+   "area": "US-MA",
+   "refs": [
+    "US-11607",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:01Z",
+   "layers": [
+    {
+     "ref": "US-11607",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:54:01Z"
+    },
+    {
+     "ref": "US-11607",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "30 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:54:01Z"
+    },
+    {
+     "ref": "US-11607",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:54:02Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:54:02Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 5,
+     "read": "2026-11-01T00:54:03Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 4.15,
+   "stored_shape_acres": 0.69,
+   "live_acres": 4.15,
+   "kept_pct": 90.7,
+   "size_pct": 498.6,
+   "moved_m": 189,
+   "gap_m": 0,
+   "wide_m": 60.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 499% bigger (4.1 ac vs 0.7 ac stored); 91% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.671881,
+    -71.572472
+   ]
+  },
+  "US-11615+US-4700@area@41.820,-70.653": {
+   "id": "US-11615+US-4700@area@41.820,-70.653",
+   "area": "US-MA",
+   "refs": [
+    "US-11615",
+    "US-4700"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 732.7,
+   "stored_wide_m": 792,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:03Z",
+   "layers": [
+    {
+     "ref": "US-11615",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:03Z"
+    },
+    {
+     "ref": "US-4700",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "37 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:54:05Z"
+    },
+    {
+     "ref": "US-4700",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "82 record id(s)",
+     "n": 10,
+     "read": "2026-11-01T00:54:06Z"
+    },
+    {
+     "ref": "US-4700",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 778.72,
+   "live_acres": 733.3,
+   "kept_pct": 95.3,
+   "size_pct": -5.8,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 798.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 733.3 ac vs 778.7 ac stored (-6%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    41.820389,
+    -70.652869
+   ]
+  },
+  "US-11697+US-4736@area@42.040,-71.040": {
+   "id": "US-11697+US-4736@area@42.040,-71.040",
+   "area": "US-MA",
+   "refs": [
+    "US-11697",
+    "US-4736"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 9.5,
+   "stored_wide_m": 85,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:08Z",
+   "layers": [
+    {
+     "ref": "US-11697",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:54:08Z"
+    },
+    {
+     "ref": "US-11697",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "16 record id(s)",
+     "n": 16,
+     "read": "2026-11-01T00:54:09Z"
+    },
+    {
+     "ref": "US-4736",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "7 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:54:11Z"
+    },
+    {
+     "ref": "US-4736",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:12Z"
+    },
+    {
+     "ref": "US-4736",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:13Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T00:54:15Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 30,
+     "read": "2026-11-01T00:54:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 99.3,
+   "stored_water_pct": 53,
+   "stored_shape_acres": 5.72,
+   "live_acres": 3.94,
+   "kept_pct": 73.5,
+   "size_pct": -31.1,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 85.1,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 31% smaller (3.9 ac vs 5.7 ac stored)",
+   "live_center": [
+    42.040463,
+    -71.039723
+   ]
+  },
+  "US-12781+US-8014@river@42.636,-71.592": {
+   "id": "US-12781+US-8014@river@42.636,-71.592",
+   "area": "US-MA",
+   "refs": [
+    "US-12781",
+    "US-8014"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:16Z",
+   "layers": [
+    {
+     "ref": "US-12781",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:54:16Z"
+    },
+    {
+     "ref": "US-12781",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "11 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:54:17Z"
+    },
+    {
+     "ref": "US-12781",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:18Z"
+    },
+    {
+     "ref": "US-8014",
+     "layer": "saved copy US-8014.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T00:54:19Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 24,
+     "read": "2026-11-01T00:54:21Z"
+    }
+   ],
+   "saved_lines": [
+    "US-8014"
+   ],
+   "live_stretch_acres": 1.56,
+   "stored_shape_acres": 10.53,
+   "live_acres": 1.56,
+   "kept_pct": 28.2,
+   "size_pct": -85.2,
+   "moved_m": 440,
+   "gap_m": 0,
+   "wide_m": 27.3,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 85% smaller (1.6 ac vs 10.5 ac stored)",
+   "live_center": [
+    42.633178,
+    -71.592336
+   ]
+  },
+  "US-2422+US-4755@area@42.660,-70.898": {
+   "id": "US-2422+US-4755@area@42.660,-70.898",
+   "area": "US-MA",
+   "refs": [
+    "US-2422",
+    "US-4755"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13.1,
+   "stored_wide_m": 99,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:21Z",
+   "layers": [
+    {
+     "ref": "US-2422",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:54:21Z"
+    },
+    {
+     "ref": "US-2422",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:22Z"
+    },
+    {
+     "ref": "US-2422",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:24Z"
+    },
+    {
+     "ref": "US-4755",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "19 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:54:25Z"
+    },
+    {
+     "ref": "US-4755",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "43 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:54:27Z"
+    },
+    {
+     "ref": "US-4755",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 43,
+   "stored_shape_acres": 11.42,
+   "live_acres": 11.85,
+   "kept_pct": 100.0,
+   "size_pct": 3.8,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 95.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.8 ac vs 11.4 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.659813,
+    -70.898318
+   ]
+  },
+  "US-2442+US-4561@trail@42.505,-72.435": {
+   "id": "US-2442+US-4561@trail@42.505,-72.435",
+   "area": "US-MA",
+   "refs": [
+    "US-2442",
+    "US-4561"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 11.6,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:54:29Z",
+   "layers": [
+    {
+     "ref": "US-2442",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:54:29Z"
+    },
+    {
+     "ref": "US-2442",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:54:30Z"
+    },
+    {
+     "ref": "US-2442",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:31Z"
+    },
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 10.95,
+   "stored_shape_acres": 11.02,
+   "live_acres": 10.95,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 218,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.0 ac vs 11.0 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.506308,
+    -72.432769
+   ]
+  },
+  "US-2449+US-2458@area@42.294,-72.577": {
+   "id": "US-2449+US-2458@area@42.294,-72.577",
+   "area": "US-MA",
+   "refs": [
+    "US-2449",
+    "US-2458"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 37.1,
+   "stored_wide_m": 223,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:54:32Z",
+   "layers": [
+    {
+     "ref": "US-2449",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "66 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:54:32Z"
+    },
+    {
+     "ref": "US-2449",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "152 record id(s)",
+     "n": 14,
+     "read": "2026-11-01T00:54:34Z"
+    },
+    {
+     "ref": "US-2449",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:36Z"
+    },
+    {
+     "ref": "US-2458",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "11 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:54:37Z"
+    },
+    {
+     "ref": "US-2458",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "17 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:54:38Z"
+    },
+    {
+     "ref": "US-2458",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 21.59,
+   "live_acres": 20.93,
+   "kept_pct": 97.5,
+   "size_pct": -3.0,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 220.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.9 ac vs 21.6 ac stored (-3%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.294093,
+    -72.576537
+   ]
+  },
+  "US-2449+US-4561@trail@42.305,-72.503": {
+   "id": "US-2449+US-4561@trail@42.305,-72.503",
+   "area": "US-MA",
+   "refs": [
+    "US-2449",
+    "US-4561"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 28.02,
+   "stored_wide_m": 92.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:54:40Z",
+   "layers": [
+    {
+     "ref": "US-2449",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "66 record id(s)",
+     "n": 57,
+     "read": "2026-11-01T00:54:40Z"
+    },
+    {
+     "ref": "US-2449",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "152 record id(s)",
+     "n": 132,
+     "read": "2026-11-01T00:54:41Z"
+    },
+    {
+     "ref": "US-2449",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:41Z"
+    },
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 27.03,
+   "stored_shape_acres": 26.71,
+   "live_acres": 27.03,
+   "kept_pct": 100.0,
+   "size_pct": 1.2,
+   "moved_m": 496,
+   "gap_m": 0,
+   "wide_m": 82.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 27.0 ac vs 26.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.304061,
+    -72.508988
+   ]
+  },
+  "US-2451+US-8381@area@41.926,-69.996": {
+   "id": "US-2451+US-8381@area@41.926,-69.996",
+   "area": "US-MA",
+   "refs": [
+    "US-2451",
+    "US-8381"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.3,
+   "stored_wide_m": 37,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:41Z",
+   "layers": [
+    {
+     "ref": "US-2451",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "49 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:54:42Z"
+    },
+    {
+     "ref": "US-2451",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "24 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:43Z"
+    },
+    {
+     "ref": "US-2451",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:54:44Z"
+    },
+    {
+     "ref": "US-8381",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:45Z"
+    },
+    {
+     "ref": "US-8381",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "5 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:54:46Z"
+    },
+    {
+     "ref": "US-8381",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.31,
+   "live_acres": 0.69,
+   "kept_pct": 100.0,
+   "size_pct": 121.8,
+   "moved_m": 15,
+   "gap_m": 0,
+   "wide_m": 33.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 122% bigger (0.7 ac vs 0.3 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    41.925122,
+    -69.995814
+   ]
+  },
+  "US-2452+US-4752@area@42.652,-71.767": {
+   "id": "US-2452+US-4752@area@42.652,-71.767",
+   "area": "US-MA",
+   "refs": [
+    "US-2452",
+    "US-4752"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 31.4,
+   "stored_wide_m": 303,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:54:48Z",
+   "layers": [
+    {
+     "ref": "US-2452",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:49Z"
+    },
+    {
+     "ref": "US-2452",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:50Z"
+    },
+    {
+     "ref": "US-2452",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:51Z"
+    },
+    {
+     "ref": "US-4752",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "15 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:54:52Z"
+    },
+    {
+     "ref": "US-4752",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "124 record id(s)",
+     "n": 61,
+     "read": "2026-11-01T00:54:55Z"
+    },
+    {
+     "ref": "US-4752",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:54:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 30.15,
+   "live_acres": 27.95,
+   "kept_pct": 97.5,
+   "size_pct": -7.3,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 305.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 27.9 ac vs 30.1 ac stored (-7%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.652037,
+    -71.76723
+   ]
+  },
+  "US-2455+US-4561@trail@42.105,-72.695": {
+   "id": "US-2455+US-4561@trail@42.105,-72.695",
+   "area": "US-MA",
+   "refs": [
+    "US-2455",
+    "US-4561"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 22.49,
+   "stored_wide_m": 101.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:54:57Z",
+   "layers": [
+    {
+     "ref": "US-2455",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "26 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:54:57Z"
+    },
+    {
+     "ref": "US-2455",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:54:58Z"
+    },
+    {
+     "ref": "US-2455",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:00Z"
+    },
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 17.89,
+   "stored_shape_acres": 20.71,
+   "live_acres": 17.89,
+   "kept_pct": 84.1,
+   "size_pct": -13.6,
+   "moved_m": 496,
+   "gap_m": 0,
+   "wide_m": 74.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.9 ac vs 20.7 ac stored (-14%), 84% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.104988,
+    -72.688775
+   ]
+  },
+  "US-2458+US-4561@trail@42.300,-72.590": {
+   "id": "US-2458+US-4561@trail@42.300,-72.590",
+   "area": "US-MA",
+   "refs": [
+    "US-2458",
+    "US-4561"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 31.58,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:01Z",
+   "layers": [
+    {
+     "ref": "US-2458",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "11 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:55:01Z"
+    },
+    {
+     "ref": "US-2458",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "17 record id(s)",
+     "n": 17,
+     "read": "2026-11-01T00:55:01Z"
+    },
+    {
+     "ref": "US-2458",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:02Z"
+    },
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 29.96,
+   "stored_shape_acres": 29.3,
+   "live_acres": 29.96,
+   "kept_pct": 100.0,
+   "size_pct": 2.2,
+   "moved_m": 38,
+   "gap_m": 0,
+   "wide_m": 61.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.0 ac vs 29.3 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.29994,
+    -72.589834
+   ]
+  },
+  "US-4556+US-4711@trail@42.216,-73.260": {
+   "id": "US-4556+US-4711@trail@42.216,-73.260",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-4711"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 13.81,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:02Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4711",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "20 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:55:02Z"
+    },
+    {
+     "ref": "US-4711",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "61 record id(s)",
+     "n": 35,
+     "read": "2026-11-01T00:55:02Z"
+    },
+    {
+     "ref": "US-4711",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:03Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 30.4,
+   "stored_shape_acres": 12.87,
+   "live_acres": 13.84,
+   "kept_pct": 100.0,
+   "size_pct": 7.5,
+   "moved_m": 641,
+   "gap_m": 0,
+   "wide_m": 65.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 13.8 ac vs 12.9 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.221109,
+    -73.256704
+   ]
+  },
+  "US-4556+US-4717@trail@42.333,-73.162": {
+   "id": "US-4556+US-4717@trail@42.333,-73.162",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-4717"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 46.42,
+   "stored_wide_m": 73.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:03Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4717",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:55:03Z"
+    },
+    {
+     "ref": "US-4717",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "90 record id(s)",
+     "n": 44,
+     "read": "2026-11-01T00:55:03Z"
+    },
+    {
+     "ref": "US-4717",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:04Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 119.61,
+   "stored_shape_acres": 43.9,
+   "live_acres": 44.73,
+   "kept_pct": 100.0,
+   "size_pct": 1.9,
+   "moved_m": 1568,
+   "gap_m": 0,
+   "wide_m": 69.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 44.7 ac vs 43.9 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.319352,
+    -73.165452
+   ]
+  },
+  "US-4556+US-4754@trail@42.711,-71.904": {
+   "id": "US-4556+US-4754@trail@42.711,-71.904",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-4754"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.81,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:55:04Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4754",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "25 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:55:04Z"
+    },
+    {
+     "ref": "US-4754",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "53 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:55:05Z"
+    },
+    {
+     "ref": "US-4754",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:06Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 5.7,
+   "stored_shape_acres": 5.81,
+   "live_acres": 5.7,
+   "kept_pct": 100.0,
+   "size_pct": -1.8,
+   "moved_m": 412,
+   "gap_m": 0,
+   "wide_m": 27.2,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.7 ac vs 5.8 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.711484,
+    -71.908965
+   ]
+  },
+  "US-4556+US-4760@trail@42.703,-73.152": {
+   "id": "US-4556+US-4760@trail@42.703,-73.152",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-4760"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 80.52,
+   "stored_wide_m": 73.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:07Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4760",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "19 record id(s)",
+     "n": 13,
+     "read": "2026-11-01T00:55:07Z"
+    },
+    {
+     "ref": "US-4760",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:55:08Z"
+    },
+    {
+     "ref": "US-4760",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:10Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 80.79,
+   "stored_shape_acres": 75.69,
+   "live_acres": 77.04,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 2786,
+   "gap_m": 0,
+   "wide_m": 69.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 77.0 ac vs 75.7 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.727405,
+    -73.160996
+   ]
+  },
+  "US-4556+US-5635@trail@42.590,-73.175": {
+   "id": "US-4556+US-5635@trail@42.590,-73.175",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-5635"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 77.7,
+   "stored_wide_m": 72.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:11Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-5635",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "28 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:55:11Z"
+    },
+    {
+     "ref": "US-5635",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "59 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T00:55:12Z"
+    },
+    {
+     "ref": "US-5635",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:55:13Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 130.86,
+   "stored_shape_acres": 73.26,
+   "live_acres": 75.7,
+   "kept_pct": 100.0,
+   "size_pct": 3.3,
+   "moved_m": 1586,
+   "gap_m": 0,
+   "wide_m": 70.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 75.7 ac vs 73.3 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.668116,
+    -73.157613
+   ]
+  },
+  "US-4556+US-8394@trail@42.562,-73.157": {
+   "id": "US-4556+US-8394@trail@42.562,-73.157",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-8394"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.72,
+   "stored_wide_m": 43.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:14Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8394",
+     "layer": "saved copy US-8394.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4556",
+    "US-8394"
+   ],
+   "live_stretch_acres": 0.98,
+   "stored_shape_acres": 0.63,
+   "live_acres": 0.98,
+   "kept_pct": 100.0,
+   "size_pct": 56.0,
+   "moved_m": 26,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 56% bigger (1.0 ac vs 0.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    42.561969,
+    -73.156901
+   ]
+  },
+  "US-4556+US-8413@trail@42.143,-73.433": {
+   "id": "US-4556+US-8413@trail@42.143,-73.433",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-8413"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 7.17,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:14Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "11 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:55:14Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:55:14Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:55:15Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:16Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 6.82,
+   "stored_shape_acres": 6.69,
+   "live_acres": 6.82,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.8 ac vs 6.7 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.142859,
+    -73.433151
+   ]
+  },
+  "US-4556+US-8415@trail@42.053,-73.455": {
+   "id": "US-4556+US-8415@trail@42.053,-73.455",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-8415"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 36.2,
+   "stored_wide_m": 73.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:16Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "14 record id(s)",
+     "n": 14,
+     "read": "2026-11-01T00:55:16Z"
+    },
+    {
+     "ref": "US-8415",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "41 record id(s)",
+     "n": 41,
+     "read": "2026-11-01T00:55:17Z"
+    },
+    {
+     "ref": "US-8415",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:18Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 162.78,
+   "stored_shape_acres": 34.92,
+   "live_acres": 35.66,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 2806,
+   "gap_m": 0,
+   "wide_m": 70.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 35.7 ac vs 34.9 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.051906,
+    -73.438015
+   ]
+  },
+  "US-4556+US-8428@trail@42.872,-70.816": {
+   "id": "US-4556+US-8428@trail@42.872,-70.816",
+   "area": "US-MA",
+   "refs": [
+    "US-4556",
+    "US-8428"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 2.61,
+   "stored_wide_m": 62.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:55:19Z",
+   "layers": [
+    {
+     "ref": "US-4556",
+     "layer": "saved copy US-4556.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8428",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:21Z"
+    },
+    {
+     "ref": "US-8428",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "16 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:21Z"
+    },
+    {
+     "ref": "US-8428",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:22Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4556"
+   ],
+   "live_stretch_acres": 2.3,
+   "stored_shape_acres": 2.3,
+   "live_acres": 2.3,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 68,
+   "gap_m": 0,
+   "wide_m": 54.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.871944,
+    -70.814882
+   ]
+  },
+  "US-4561+US-4728@trail@42.476,-72.376": {
+   "id": "US-4561+US-4728@trail@42.476,-72.376",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-4728"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 6.44,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:23Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4728",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:55:24Z"
+    },
+    {
+     "ref": "US-4728",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "19 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T00:55:26Z"
+    },
+    {
+     "ref": "US-4728",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:27Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 5.99,
+   "stored_shape_acres": 5.82,
+   "live_acres": 5.99,
+   "kept_pct": 100.0,
+   "size_pct": 2.9,
+   "moved_m": 29,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.0 ac vs 5.8 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.473611,
+    -72.379195
+   ]
+  },
+  "US-4561+US-4734@trail@42.541,-72.446": {
+   "id": "US-4561+US-4734@trail@42.541,-72.446",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-4734"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 73.54,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:28Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4734",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:55:28Z"
+    },
+    {
+     "ref": "US-4734",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "110 record id(s)",
+     "n": 48,
+     "read": "2026-11-01T00:55:30Z"
+    },
+    {
+     "ref": "US-4734",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:31Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 69.28,
+   "stored_shape_acres": 68.02,
+   "live_acres": 69.28,
+   "kept_pct": 100.0,
+   "size_pct": 1.8,
+   "moved_m": 96,
+   "gap_m": 0,
+   "wide_m": 67.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 69.3 ac vs 68.0 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.542305,
+    -72.445997
+   ]
+  },
+  "US-4561+US-4744@trail@42.625,-72.419": {
+   "id": "US-4561+US-4744@trail@42.625,-72.419",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-4744"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 36.1,
+   "stored_wide_m": 79.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:32Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4744",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:55:32Z"
+    },
+    {
+     "ref": "US-4744",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "44 record id(s)",
+     "n": 11,
+     "read": "2026-11-01T00:55:33Z"
+    },
+    {
+     "ref": "US-4744",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:35Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 34.26,
+   "stored_shape_acres": 34.12,
+   "live_acres": 34.26,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 980,
+   "gap_m": 0,
+   "wide_m": 74.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 34.3 ac vs 34.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.621091,
+    -72.425883
+   ]
+  },
+  "US-4561+US-4748@trail@42.715,-72.272": {
+   "id": "US-4561+US-4748@trail@42.715,-72.272",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-4748"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 7.6,
+   "stored_wide_m": 75.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:36Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "17 record id(s)",
+     "n": 14,
+     "read": "2026-11-01T00:55:36Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "129 record id(s)",
+     "n": 65,
+     "read": "2026-11-01T00:55:38Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:39Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 7.14,
+   "stored_shape_acres": 7.11,
+   "live_acres": 7.14,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 2359,
+   "gap_m": 0,
+   "wide_m": 68.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.1 ac vs 7.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.712027,
+    -72.300889
+   ]
+  },
+  "US-4561+US-4751@trail@42.678,-72.404": {
+   "id": "US-4561+US-4751@trail@42.678,-72.404",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-4751"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.64,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:40Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4751",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:55:41Z"
+    },
+    {
+     "ref": "US-4751",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "42 record id(s)",
+     "n": 27,
+     "read": "2026-11-01T00:55:43Z"
+    },
+    {
+     "ref": "US-4751",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:44Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 11.87,
+   "stored_shape_acres": 11.96,
+   "live_acres": 11.87,
+   "kept_pct": 100.0,
+   "size_pct": -0.7,
+   "moved_m": 1099,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.9 ac vs 12.0 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.668884,
+    -72.406006
+   ]
+  },
+  "US-4561+US-4756@trail@42.690,-72.354": {
+   "id": "US-4561+US-4756@trail@42.690,-72.354",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-4756"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 101.67,
+   "stored_wide_m": 107.9,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:45Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4756",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:55:45Z"
+    },
+    {
+     "ref": "US-4756",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "36 record id(s)",
+     "n": 36,
+     "read": "2026-11-01T00:55:46Z"
+    },
+    {
+     "ref": "US-4756",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:47Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 95.97,
+   "stored_shape_acres": 96.3,
+   "live_acres": 95.97,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 1522,
+   "gap_m": 0,
+   "wide_m": 100.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 96.0 ac vs 96.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.678275,
+    -72.344498
+   ]
+  },
+  "US-4561+US-8417@trail@42.268,-72.634": {
+   "id": "US-4561+US-8417@trail@42.268,-72.634",
+   "area": "US-MA",
+   "refs": [
+    "US-4561",
+    "US-8417"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 140.63,
+   "stored_wide_m": 109.8,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:55:48Z",
+   "layers": [
+    {
+     "ref": "US-4561",
+     "layer": "saved copy US-4561.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8417",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "12 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:53:05Z"
+    },
+    {
+     "ref": "US-8417",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "23 record id(s)",
+     "n": 18,
+     "read": "2026-11-01T00:53:06Z"
+    },
+    {
+     "ref": "US-8417",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:53:07Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4561"
+   ],
+   "live_stretch_acres": 78.16,
+   "stored_shape_acres": 176.9,
+   "live_acres": 78.16,
+   "kept_pct": 47.4,
+   "size_pct": -55.8,
+   "moved_m": 1961,
+   "gap_m": 0,
+   "wide_m": 96.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 56% smaller (78.2 ac vs 176.9 ac stored)",
+   "live_center": [
+    42.282871,
+    -72.61966
+   ]
+  },
+  "US-4701+US-8398@area@42.034,-71.763": {
+   "id": "US-4701+US-8398@area@42.034,-71.763",
+   "area": "US-MA",
+   "refs": [
+    "US-4701",
+    "US-8398"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3.7,
+   "stored_wide_m": 55,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:55:48Z",
+   "layers": [
+    {
+     "ref": "US-4701",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "31 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:55:48Z"
+    },
+    {
+     "ref": "US-4701",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "153 record id(s)",
+     "n": 23,
+     "read": "2026-11-01T00:55:50Z"
+    },
+    {
+     "ref": "US-4701",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:51Z"
+    },
+    {
+     "ref": "US-8398",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "31 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:52Z"
+    },
+    {
+     "ref": "US-8398",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "6 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:55:54Z"
+    },
+    {
+     "ref": "US-8398",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.27,
+   "live_acres": 3.14,
+   "kept_pct": 100.0,
+   "size_pct": -4.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 54.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.1 ac vs 3.3 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.035641,
+    -71.758165
+   ]
+  },
+  "US-4704+US-8405@area@42.040,-71.438": {
+   "id": "US-4704+US-8405@area@42.040,-71.438",
+   "area": "US-MA",
+   "refs": [
+    "US-4704",
+    "US-8405"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.0,
+   "stored_wide_m": 137,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:55:56Z",
+   "layers": [
+    {
+     "ref": "US-4704",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:55:57Z"
+    },
+    {
+     "ref": "US-4704",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "44 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T00:55:57Z"
+    },
+    {
+     "ref": "US-4704",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:55:58Z"
+    },
+    {
+     "ref": "US-8405",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "27 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:56:00Z"
+    },
+    {
+     "ref": "US-8405",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "177 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:56:02Z"
+    },
+    {
+     "ref": "US-8405",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:03Z"
+    },
+    {
+     "ref": "US-8405",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T00:56:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.73,
+   "live_acres": 9.47,
+   "kept_pct": 100.0,
+   "size_pct": -2.7,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 131.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.5 ac vs 9.7 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.040556,
+    -71.437868
+   ]
+  },
+  "US-4743+US-4747@area@42.632,-72.986": {
+   "id": "US-4743+US-4747@area@42.632,-72.986",
+   "area": "US-MA",
+   "refs": [
+    "US-4743",
+    "US-4747"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1215.5,
+   "stored_wide_m": 1346,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:56:06Z",
+   "layers": [
+    {
+     "ref": "US-4743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "15 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:56:06Z"
+    },
+    {
+     "ref": "US-4743",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "184 record id(s)",
+     "n": 58,
+     "read": "2026-11-01T00:56:07Z"
+    },
+    {
+     "ref": "US-4743",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:07Z"
+    },
+    {
+     "ref": "US-4747",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "10 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T00:56:07Z"
+    },
+    {
+     "ref": "US-4747",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "65 record id(s)",
+     "n": 26,
+     "read": "2026-11-01T00:56:08Z"
+    },
+    {
+     "ref": "US-4747",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1195.64,
+   "live_acres": 1211.78,
+   "kept_pct": 100.0,
+   "size_pct": 1.3,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 1338.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1211.8 ac vs 1195.6 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.632368,
+    -72.986138
+   ]
+  },
+  "US-4744+US-4748@area@42.617,-72.361": {
+   "id": "US-4744+US-4748@area@42.617,-72.361",
+   "area": "US-MA",
+   "refs": [
+    "US-4744",
+    "US-4748"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 541.6,
+   "stored_wide_m": 1155,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:56:10Z",
+   "layers": [
+    {
+     "ref": "US-4744",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:11Z"
+    },
+    {
+     "ref": "US-4744",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "44 record id(s)",
+     "n": 28,
+     "read": "2026-11-01T00:56:11Z"
+    },
+    {
+     "ref": "US-4744",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:11Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "17 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T00:56:12Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "129 record id(s)",
+     "n": 23,
+     "read": "2026-11-01T00:56:13Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 540.36,
+   "live_acres": 540.23,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 1164.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 540.2 ac vs 540.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.617202,
+    -72.360561
+   ]
+  },
+  "US-4748+US-4756@area@42.683,-72.360": {
+   "id": "US-4748+US-4756@area@42.683,-72.360",
+   "area": "US-MA",
+   "refs": [
+    "US-4748",
+    "US-4756"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:56:13Z",
+   "layers": [
+    {
+     "ref": "US-4748",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "17 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:56:13Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "129 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T00:56:15Z"
+    },
+    {
+     "ref": "US-4748",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:15Z"
+    },
+    {
+     "ref": "US-4756",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "7 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:16Z"
+    },
+    {
+     "ref": "US-4756",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "36 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T00:56:16Z"
+    },
+    {
+     "ref": "US-4756",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.5,
+   "live_acres": 1.28,
+   "kept_pct": 100.0,
+   "size_pct": -14.5,
+   "moved_m": 328,
+   "gap_m": 0,
+   "wide_m": 17.2,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.3 ac vs 1.5 ac stored (-14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.67988,
+    -72.359547
+   ]
+  },
+  "US-8413+US-8415@area@42.142,-73.433": {
+   "id": "US-8413+US-8415@area@42.142,-73.433",
+   "area": "US-MA",
+   "refs": [
+    "US-8413",
+    "US-8415"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 80.3,
+   "stored_wide_m": 448,
+   "utm_epsg": 32618,
+   "checked_at": "2026-11-01T00:56:16Z",
+   "layers": [
+    {
+     "ref": "US-8413",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "11 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:56:17Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T00:56:17Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T00:56:18Z"
+    },
+    {
+     "ref": "US-8413",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:19Z"
+    },
+    {
+     "ref": "US-8415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "14 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:56:19Z"
+    },
+    {
+     "ref": "US-8415",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "41 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T00:56:19Z"
+    },
+    {
+     "ref": "US-8415",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:56:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 79.42,
+   "live_acres": 79.27,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 453.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 79.3 ac vs 79.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.142198,
+    -73.432347
+   ]
+  },
+  "US-0742+US-2444@area@channel@42.651,-71.328": {
+   "id": "US-0742+US-2444@area@channel@42.651,-71.328",
+   "area": "US-MA",
+   "refs": [
+    "US-0742",
+    "US-2444"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 2.4,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32619,
+   "checked_at": "2026-11-01T00:56:20Z",
+   "layers": [
+    {
+     "ref": "US-0742",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:01Z"
+    },
+    {
+     "ref": "US-0742",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:02Z"
+    },
+    {
+     "ref": "US-2444",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "9 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T00:51:03Z"
+    },
+    {
+     "ref": "US-2444",
+     "layer": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+     "how": "106 record id(s)",
+     "n": 105,
+     "read": "2026-11-01T00:51:05Z"
+    },
+    {
+     "ref": "US-2444",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T00:51:07Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 7,
+     "read": "2026-11-01T00:56:23Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 10,
+     "read": "2026-11-01T00:56:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 27.0,
+   "stored_shape_acres": 2.12,
+   "live_acres": 1.81,
+   "kept_pct": 100.0,
+   "size_pct": -14.5,
+   "moved_m": 62,
+   "gap_m": 0,
+   "wide_m": 30.1,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.8 ac vs 2.1 ac stored (-14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    42.650456,
+    -71.328582
+   ]
+  }
+ },
+ "started": "2026-11-01T00:50:06Z",
+ "fers_sha256": "fe54bb4892b2037ec314129db57f45201bf1d9d852d2a19d6f81c570b6dfde4b",
+ "live_rows": 88,
+ "skipped_rows": 415,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:37Z",
+ "complete": true,
+ "summary": {
+  "rows": 88,
+  "verdicts": {
+   "CONFIRMED": 53,
+   "SHRUNK": 22,
+   "GREW": 8,
+   "MOVED": 5,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 28,
+   "trail line from the club saved copy (not re-read live)": 58,
+   "water-only": 2
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json"
+ ],
+ "requests_this_run": 1030
+}

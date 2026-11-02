@@ -1,0 +1,2455 @@
+{
+ "area": "US-TX",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-TX.json",
+ "rows": {
+  "US-0006+US-6540@area@29.607,-103.088": {
+   "id": "US-0006+US-6540@area@29.607,-103.088",
+   "area": "US-TX",
+   "refs": [
+    "US-0006",
+    "US-6540"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Black Gap Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 120.8,
+   "stored_wide_m": 127,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:09:30Z",
+   "layers": [
+    {
+     "ref": "US-0006",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:32Z"
+    },
+    {
+     "ref": "US-0006",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:33Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:36Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:36Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:38Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 107.36,
+   "live_acres": 137.71,
+   "kept_pct": 100.0,
+   "size_pct": 14.0,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 130.5,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 137.7 ac vs 120.8 ac stored (row acres; the stored shape is a 107.4 ac preview) (+14%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    29.607465,
+    -103.087436
+   ]
+  },
+  "US-0006+US-6597@river@28.999,-103.286": {
+   "id": "US-0006+US-6597@river@28.999,-103.286",
+   "area": "US-TX",
+   "refs": [
+    "US-0006",
+    "US-6597"
+   ],
+   "kind": "river",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:09:42Z",
+   "layers": [
+    {
+     "ref": "US-0006",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:43Z"
+    },
+    {
+     "ref": "US-0006",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:43Z"
+    },
+    {
+     "ref": "US-6597",
+     "layer": "saved copy US-6597.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T04:09:47Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 48,
+     "read": "2026-11-01T04:09:48Z"
+    }
+   ],
+   "saved_lines": [
+    "US-6597"
+   ],
+   "live_stretch_acres": 87.74,
+   "stored_shape_acres": 434.4,
+   "live_acres": 55.81,
+   "kept_pct": 5.2,
+   "size_pct": -87.2,
+   "moved_m": 827,
+   "gap_m": 0,
+   "wide_m": 103.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 827 m from the stored centre; 5% of the stored overlap is still inside it",
+   "live_center": [
+    29.002437,
+    -103.288325
+   ]
+  },
+  "US-0541+US-6580@area@28.146,-96.779": {
+   "id": "US-0541+US-6580@area@28.146,-96.779",
+   "area": "US-TX",
+   "refs": [
+    "US-0541",
+    "US-6580"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Matagorda Island Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 28909.2,
+   "stored_wide_m": 4054,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:09:48Z",
+   "layers": [
+    {
+     "ref": "US-0541",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:09:48Z"
+    },
+    {
+     "ref": "US-0541",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "26 record id(s)",
+     "n": 7,
+     "read": "2026-11-01T04:09:49Z"
+    },
+    {
+     "ref": "US-6580",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:51Z"
+    },
+    {
+     "ref": "US-6580",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:52Z"
+    },
+    {
+     "ref": "US-6580",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:09:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11697.01,
+   "live_acres": 28480.69,
+   "kept_pct": 100.0,
+   "size_pct": -1.5,
+   "moved_m": 65,
+   "gap_m": 0,
+   "wide_m": 4073.1,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28480.7 ac vs 28909.2 ac stored (row acres; the stored shape is a 11697.0 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    28.145258,
+    -96.779324
+   ]
+  },
+  "US-0549+US-0550@area@26.049,-97.258": {
+   "id": "US-0549+US-0550@area@26.049,-97.258",
+   "area": "US-TX",
+   "refs": [
+    "US-0549",
+    "US-0550"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Lower Rio Grande Valley National Wildlife Refuge could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 7271.0,
+   "stored_wide_m": 3230,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:09:55Z",
+   "layers": [
+    {
+     "ref": "US-0549",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:09:55Z"
+    },
+    {
+     "ref": "US-0549",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "80 record id(s)",
+     "n": 12,
+     "read": "2026-11-01T04:09:56Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:09:57Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "263 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:10:00Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:10:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7278.34,
+   "live_acres": 7272.02,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 226,
+   "gap_m": 0,
+   "wide_m": 3267.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7272.0 ac vs 7278.3 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    26.041181,
+    -97.261327
+   ]
+  },
+  "US-0550+US-3052@area@26.000,-97.569": {
+   "id": "US-0550+US-3052@area@26.000,-97.569",
+   "area": "US-TX",
+   "refs": [
+    "US-0550",
+    "US-3052"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Lower Rio Grande Valley National Wildlife Refuge could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 203.9,
+   "stored_wide_m": 475,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:10:03Z",
+   "layers": [
+    {
+     "ref": "US-0550",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:04Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "263 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:06Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:10:06Z"
+    },
+    {
+     "ref": "US-3052",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 201.62,
+   "live_acres": 200.49,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 232,
+   "gap_m": 0,
+   "wide_m": 466.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 200.5 ac vs 201.6 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    25.998421,
+    -97.556342
+   ]
+  },
+  "US-0550+US-6572@area@26.227,-98.452": {
+   "id": "US-0550+US-6572@area@26.227,-98.452",
+   "area": "US-TX",
+   "refs": [
+    "US-0550",
+    "US-6572"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Lower Rio Grande Valley National Wildlife Refuge could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 0.8,
+   "stored_wide_m": 23,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:10:07Z",
+   "layers": [
+    {
+     "ref": "US-0550",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:08Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "263 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:11Z"
+    },
+    {
+     "ref": "US-0550",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:10:11Z"
+    },
+    {
+     "ref": "US-6572",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "16 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.47,
+   "live_acres": 0.59,
+   "kept_pct": 100.0,
+   "size_pct": 24.6,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 18.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.6 ac vs 0.5 ac stored (+25%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    26.226538,
+    -98.451027
+   ]
+  },
+  "US-0551+US-3054@area@29.674,-94.063": {
+   "id": "US-0551+US-3054@area@29.674,-94.063",
+   "area": "US-TX",
+   "refs": [
+    "US-0551",
+    "US-3054"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 18.1,
+   "stored_wide_m": 27,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:10:12Z",
+   "layers": [
+    {
+     "ref": "US-0551",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:13Z"
+    },
+    {
+     "ref": "US-0551",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "14 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:14Z"
+    },
+    {
+     "ref": "US-3054",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:16Z"
+    },
+    {
+     "ref": "US-3054",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 11.84,
+   "live_acres": 14.94,
+   "kept_pct": 100.0,
+   "size_pct": -17.4,
+   "moved_m": 113,
+   "gap_m": 0,
+   "wide_m": 25.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.9 ac vs 18.1 ac stored (row acres; the stored shape is a 11.8 ac preview) (-17%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    29.676272,
+    -94.054655
+   ]
+  },
+  "US-0551+US-6565@area@29.730,-94.054": {
+   "id": "US-0551+US-6565@area@29.730,-94.054",
+   "area": "US-TX",
+   "refs": [
+    "US-0551",
+    "US-6565"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of J.D. Murphree Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 24.5,
+   "stored_wide_m": 37,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:10:19Z",
+   "layers": [
+    {
+     "ref": "US-0551",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:19Z"
+    },
+    {
+     "ref": "US-0551",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "14 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:20Z"
+    },
+    {
+     "ref": "US-6565",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:20Z"
+    },
+    {
+     "ref": "US-6565",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:21Z"
+    },
+    {
+     "ref": "US-6565",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:22Z"
+    },
+    {
+     "ref": "US-6565",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 20.13,
+   "live_acres": 16.47,
+   "kept_pct": 100.0,
+   "size_pct": -18.2,
+   "moved_m": 208,
+   "gap_m": 0,
+   "wide_m": 35.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.5 ac vs 20.1 ac stored (-18%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    29.729671,
+    -94.053985
+   ]
+  },
+  "US-0553+US-6586@area@28.930,-95.650": {
+   "id": "US-0553+US-6586@area@28.930,-95.650",
+   "area": "US-TX",
+   "refs": [
+    "US-0553",
+    "US-6586"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Nannie M. Stringfellow Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 1.7,
+   "stored_wide_m": 23,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:10:24Z",
+   "layers": [
+    {
+     "ref": "US-0553",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:25Z"
+    },
+    {
+     "ref": "US-0553",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "160 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:27Z"
+    },
+    {
+     "ref": "US-6586",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:29Z"
+    },
+    {
+     "ref": "US-6586",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:30Z"
+    },
+    {
+     "ref": "US-6586",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:31Z"
+    },
+    {
+     "ref": "US-6586",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.23,
+   "live_acres": 1.18,
+   "kept_pct": 100.0,
+   "size_pct": -4.7,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 18.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.2 ac vs 1.2 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    28.934034,
+    -95.649193
+   ]
+  },
+  "US-0633+US-2994@same land@32.689,-94.177": {
+   "id": "US-0633+US-2994@same land@32.689,-94.177",
+   "area": "US-TX",
+   "refs": [
+    "US-0633",
+    "US-2994"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:10:33Z",
+   "layers": [
+    {
+     "ref": "US-0633",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "16 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T04:10:34Z"
+    },
+    {
+     "ref": "US-0633",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:35Z"
+    },
+    {
+     "ref": "US-0633",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:36Z"
+    },
+    {
+     "ref": "US-2994",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:38Z"
+    },
+    {
+     "ref": "US-2994",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:39Z"
+    },
+    {
+     "ref": "US-2994",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 461.08,
+   "live_acres": 469.04,
+   "kept_pct": 99.9,
+   "size_pct": 1.7,
+   "moved_m": 143,
+   "gap_m": 0,
+   "wide_m": 775.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 469.0 ac vs 461.1 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.690724,
+    -94.177651
+   ]
+  },
+  "US-0633+US-6542@same land@32.720,-94.119": {
+   "id": "US-0633+US-6542@same land@32.720,-94.119",
+   "area": "US-TX",
+   "refs": [
+    "US-0633",
+    "US-6542"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:10:41Z",
+   "layers": [
+    {
+     "ref": "US-0633",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "16 record id(s)",
+     "n": 15,
+     "read": "2026-11-01T04:10:42Z"
+    },
+    {
+     "ref": "US-0633",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:42Z"
+    },
+    {
+     "ref": "US-0633",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:42Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:43Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:10:44Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:46Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8276.21,
+   "live_acres": 14697.41,
+   "kept_pct": 99.9,
+   "size_pct": 77.6,
+   "moved_m": 4931,
+   "gap_m": 0,
+   "wide_m": 4322.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 78% bigger (14697.4 ac vs 8276.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    32.678101,
+    -94.136723
+   ]
+  },
+  "US-0687+US-3055@area@29.684,-101.311": {
+   "id": "US-0687+US-3055@area@29.684,-101.311",
+   "area": "US-TX",
+   "refs": [
+    "US-0687",
+    "US-3055"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 452.9,
+   "stored_wide_m": 382,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:10:48Z",
+   "layers": [
+    {
+     "ref": "US-0687",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:50Z"
+    },
+    {
+     "ref": "US-0687",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:51Z"
+    },
+    {
+     "ref": "US-3055",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:53Z"
+    },
+    {
+     "ref": "US-3055",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 273.95,
+   "live_acres": 426.95,
+   "kept_pct": 100.0,
+   "size_pct": -5.7,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 380.1,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 426.9 ac vs 452.9 ac stored (row acres; the stored shape is a 273.9 ac preview) (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    29.698516,
+    -101.311348
+   ]
+  },
+  "US-0743+US-3035@area@30.260,-98.623": {
+   "id": "US-0743+US-3035@area@30.260,-98.623",
+   "area": "US-TX",
+   "refs": [
+    "US-0743",
+    "US-3035"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 588.6,
+   "stored_wide_m": 695,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:10:55Z",
+   "layers": [
+    {
+     "ref": "US-0743",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:55Z"
+    },
+    {
+     "ref": "US-3035",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:10:56Z"
+    },
+    {
+     "ref": "US-3035",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:57Z"
+    },
+    {
+     "ref": "US-3035",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:10:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 576.37,
+   "live_acres": 576.15,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 691.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 576.1 ac vs 576.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.242472,
+    -98.622032
+   ]
+  },
+  "US-10509+US-3019@area@30.633,-95.523": {
+   "id": "US-10509+US-3019@area@30.633,-95.523",
+   "area": "US-TX",
+   "refs": [
+    "US-10509",
+    "US-3019"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Sam Houston National Forest Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 23.5,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:10:59Z",
+   "layers": [
+    {
+     "ref": "US-10509",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "13 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:00Z"
+    },
+    {
+     "ref": "US-10509",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:01Z"
+    },
+    {
+     "ref": "US-10509",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:03Z"
+    },
+    {
+     "ref": "US-10509",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:04Z"
+    },
+    {
+     "ref": "US-3019",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:05Z"
+    },
+    {
+     "ref": "US-3019",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:06Z"
+    },
+    {
+     "ref": "US-3019",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 18.79,
+   "live_acres": 20.0,
+   "kept_pct": 98.2,
+   "size_pct": 6.5,
+   "moved_m": 18,
+   "gap_m": 0,
+   "wide_m": 42.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.0 ac vs 18.8 ac stored (+6%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.631353,
+    -95.523349
+   ]
+  },
+  "US-10509+US-4417@same land@30.633,-95.530": {
+   "id": "US-10509+US-4417@same land@30.633,-95.530",
+   "area": "US-TX",
+   "refs": [
+    "US-10509",
+    "US-4417"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:11:09Z",
+   "layers": [
+    {
+     "ref": "US-10509",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "13 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:10Z"
+    },
+    {
+     "ref": "US-10509",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:10Z"
+    },
+    {
+     "ref": "US-10509",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:11Z"
+    },
+    {
+     "ref": "US-10509",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:11Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "13 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:10Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:10Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:11Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 178.63,
+   "live_acres": 780.69,
+   "kept_pct": 100.0,
+   "size_pct": 337.0,
+   "moved_m": 990,
+   "gap_m": 0,
+   "wide_m": 1328.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 337% bigger (780.7 ac vs 178.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    30.640028,
+    -95.523638
+   ]
+  },
+  "US-2986+US-2993@area@30.096,-97.220": {
+   "id": "US-2986+US-2993@area@30.096,-97.220",
+   "area": "US-TX",
+   "refs": [
+    "US-2986",
+    "US-2993"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.2,
+   "stored_wide_m": 111,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:11:11Z",
+   "layers": [
+    {
+     "ref": "US-2986",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:11Z"
+    },
+    {
+     "ref": "US-2986",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:13Z"
+    },
+    {
+     "ref": "US-2986",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:15Z"
+    },
+    {
+     "ref": "US-2993",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:16Z"
+    },
+    {
+     "ref": "US-2993",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:17Z"
+    },
+    {
+     "ref": "US-2993",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.96,
+   "live_acres": 3.74,
+   "kept_pct": 100.0,
+   "size_pct": -5.5,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 109.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.7 ac vs 4.0 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.096184,
+    -97.220616
+   ]
+  },
+  "US-2994+US-6542@area@32.684,-94.087": {
+   "id": "US-2994+US-6542@area@32.684,-94.087",
+   "area": "US-TX",
+   "refs": [
+    "US-2994",
+    "US-6542"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Caddo Lake Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 8777.9,
+   "stored_wide_m": 3770,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:11:20Z",
+   "layers": [
+    {
+     "ref": "US-2994",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:21Z"
+    },
+    {
+     "ref": "US-2994",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:21Z"
+    },
+    {
+     "ref": "US-2994",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:22Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:22Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:11:23Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:23Z"
+    },
+    {
+     "ref": "US-6542",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8302.45,
+   "live_acres": 8301.99,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 3794.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8302.0 ac vs 8302.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.683482,
+    -94.087138
+   ]
+  },
+  "US-2997+US-6566@area@28.510,-98.291": {
+   "id": "US-2997+US-6566@area@28.510,-98.291",
+   "area": "US-TX",
+   "refs": [
+    "US-2997",
+    "US-6566"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of James E. Daughtrey Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 1573.6,
+   "stored_wide_m": 998,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:11:24Z",
+   "layers": [
+    {
+     "ref": "US-2997",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:11:24Z"
+    },
+    {
+     "ref": "US-2997",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:25Z"
+    },
+    {
+     "ref": "US-2997",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:11:27Z"
+    },
+    {
+     "ref": "US-6566",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:29Z"
+    },
+    {
+     "ref": "US-6566",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:30Z"
+    },
+    {
+     "ref": "US-6566",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:31Z"
+    },
+    {
+     "ref": "US-6566",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:33Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1597.95,
+   "live_acres": 1557.82,
+   "kept_pct": 95.4,
+   "size_pct": -2.5,
+   "moved_m": 37,
+   "gap_m": 0,
+   "wide_m": 978.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1557.8 ac vs 1598.0 ac stored (-2%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    28.509606,
+    -98.291199
+   ]
+  },
+  "US-3000+US-6550@same land@33.349,-95.621": {
+   "id": "US-3000+US-6550@same land@33.349,-95.621",
+   "area": "US-TX",
+   "refs": [
+    "US-3000",
+    "US-6550"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:11:34Z",
+   "layers": [
+    {
+     "ref": "US-3000",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:34Z"
+    },
+    {
+     "ref": "US-3000",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:35Z"
+    },
+    {
+     "ref": "US-6550",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:38Z"
+    },
+    {
+     "ref": "US-6550",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:39Z"
+    },
+    {
+     "ref": "US-6550",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:40Z"
+    },
+    {
+     "ref": "US-6550",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1500.41,
+   "live_acres": 1469.06,
+   "kept_pct": 97.6,
+   "size_pct": -2.1,
+   "moved_m": 1845,
+   "gap_m": 0,
+   "wide_m": 1467.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1469.1 ac vs 1500.4 ac stored (-2%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.348627,
+    -95.641047
+   ]
+  },
+  "US-3015+US-3502@same land@28.645,-97.439": {
+   "id": "US-3015+US-3502@same land@28.645,-97.439",
+   "area": "US-TX",
+   "refs": [
+    "US-3015",
+    "US-3502"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:11:42Z",
+   "layers": [
+    {
+     "ref": "US-3015",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:42Z"
+    },
+    {
+     "ref": "US-3015",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:43Z"
+    },
+    {
+     "ref": "US-3502",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:45Z"
+    },
+    {
+     "ref": "US-3502",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.46,
+   "live_acres": 4.79,
+   "kept_pct": 98.4,
+   "size_pct": 7.4,
+   "moved_m": 44,
+   "gap_m": 0,
+   "wide_m": 101.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.8 ac vs 4.5 ac stored (+7%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    28.644365,
+    -97.438729
+   ]
+  },
+  "US-3019+US-4417@area@30.633,-95.523": {
+   "id": "US-3019+US-4417@area@30.633,-95.523",
+   "area": "US-TX",
+   "refs": [
+    "US-3019",
+    "US-4417"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Sam Houston National Forest could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 23.5,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:11:46Z",
+   "layers": [
+    {
+     "ref": "US-3019",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:05Z"
+    },
+    {
+     "ref": "US-3019",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:06Z"
+    },
+    {
+     "ref": "US-3019",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:08Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "13 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:00Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:01Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:03Z"
+    },
+    {
+     "ref": "US-4417",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 18.79,
+   "live_acres": 20.0,
+   "kept_pct": 98.2,
+   "size_pct": 6.5,
+   "moved_m": 18,
+   "gap_m": 0,
+   "wide_m": 42.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20.0 ac vs 18.8 ac stored (+6%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.631353,
+    -95.523349
+   ]
+  },
+  "US-3037+US-6535@area@30.871,-94.169": {
+   "id": "US-3037+US-6535@area@30.871,-94.169",
+   "area": "US-TX",
+   "refs": [
+    "US-3037",
+    "US-6535"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Angelina-Neches/Dam B Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 85.8,
+   "stored_wide_m": 448,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:11:47Z",
+   "layers": [
+    {
+     "ref": "US-3037",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:48Z"
+    },
+    {
+     "ref": "US-3037",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:49Z"
+    },
+    {
+     "ref": "US-3037",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:11:51Z"
+    },
+    {
+     "ref": "US-6535",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:53Z"
+    },
+    {
+     "ref": "US-6535",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:54Z"
+    },
+    {
+     "ref": "US-6535",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:55Z"
+    },
+    {
+     "ref": "US-6535",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 81.82,
+   "live_acres": 80.74,
+   "kept_pct": 99.6,
+   "size_pct": -1.3,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 449.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 80.7 ac vs 81.8 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    30.870571,
+    -94.168562
+   ]
+  },
+  "US-3040+US-4415@area@31.542,-95.239": {
+   "id": "US-3040+US-4415@area@31.542,-95.239",
+   "area": "US-TX",
+   "refs": [
+    "US-3040",
+    "US-4415"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "stored_acres": 280.1,
+   "stored_wide_m": 784,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:11:57Z",
+   "layers": [
+    {
+     "ref": "US-3040",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:57Z"
+    },
+    {
+     "ref": "US-3040",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:11:59Z"
+    },
+    {
+     "ref": "US-4415",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "174 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:01Z"
+    },
+    {
+     "ref": "US-4415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:12:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 278.46,
+   "live_acres": 278.08,
+   "kept_pct": 100.0,
+   "size_pct": -0.1,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 787.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 278.1 ac vs 278.5 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.542333,
+    -95.239468
+   ]
+  },
+  "US-4414+US-4415@area@31.492,-94.775": {
+   "id": "US-4414+US-4415@area@31.492,-94.775",
+   "area": "US-TX",
+   "refs": [
+    "US-4414",
+    "US-4415"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2547.6,
+   "stored_wide_m": 2621,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:03Z",
+   "layers": [
+    {
+     "ref": "US-4414",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:05Z"
+    },
+    {
+     "ref": "US-4414",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "248 record id(s)",
+     "n": 8,
+     "read": "2026-11-01T04:12:08Z"
+    },
+    {
+     "ref": "US-4415",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "174 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T04:12:12Z"
+    },
+    {
+     "ref": "US-4415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:12:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 8,
+   "stored_shape_acres": 2546.82,
+   "live_acres": 2547.89,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 2621.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2547.9 ac vs 2546.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.492193,
+    -94.774785
+   ]
+  },
+  "US-4414+US-4416@area@31.210,-94.007": {
+   "id": "US-4414+US-4416@area@31.210,-94.007",
+   "area": "US-TX",
+   "refs": [
+    "US-4414",
+    "US-4416"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 488.6,
+   "stored_wide_m": 1064,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:12Z",
+   "layers": [
+    {
+     "ref": "US-4414",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:12:13Z"
+    },
+    {
+     "ref": "US-4414",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "248 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:12:15Z"
+    },
+    {
+     "ref": "US-4416",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "281 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T04:12:18Z"
+    },
+    {
+     "ref": "US-4416",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 443.06,
+   "live_acres": 443.5,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 1071.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 443.5 ac vs 443.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.210072,
+    -94.007549
+   ]
+  },
+  "US-4414+US-6534@area@31.482,-94.794": {
+   "id": "US-4414+US-6534@area@31.482,-94.794",
+   "area": "US-TX",
+   "refs": [
+    "US-4414",
+    "US-6534"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Alazan Bayou Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 9.8,
+   "stored_wide_m": 177,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:21Z",
+   "layers": [
+    {
+     "ref": "US-4414",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:22Z"
+    },
+    {
+     "ref": "US-4414",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "248 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:24Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:25Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:27Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:28Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:29Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.39,
+   "live_acres": 9.33,
+   "kept_pct": 100.0,
+   "size_pct": -0.6,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 178.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.3 ac vs 9.4 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.481974,
+    -94.793771
+   ]
+  },
+  "US-4414+US-6537@area@31.359,-94.263": {
+   "id": "US-4414+US-6537@area@31.359,-94.263",
+   "area": "US-TX",
+   "refs": [
+    "US-4414",
+    "US-6537"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Bannister Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 21132.1,
+   "stored_wide_m": 5081,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:30Z",
+   "layers": [
+    {
+     "ref": "US-4414",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:33Z"
+    },
+    {
+     "ref": "US-4414",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "248 record id(s)",
+     "n": 38,
+     "read": "2026-11-01T04:12:35Z"
+    },
+    {
+     "ref": "US-6537",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:35Z"
+    },
+    {
+     "ref": "US-6537",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:36Z"
+    },
+    {
+     "ref": "US-6537",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:37Z"
+    },
+    {
+     "ref": "US-6537",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 22128.51,
+   "live_acres": 21913.49,
+   "kept_pct": 95.8,
+   "size_pct": -1.0,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 5110.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21913.5 ac vs 22128.5 ac stored (-1%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.359358,
+    -94.262798
+   ]
+  },
+  "US-4415+US-6533@area@31.164,-94.918": {
+   "id": "US-4415+US-6533@area@31.164,-94.918",
+   "area": "US-TX",
+   "refs": [
+    "US-4415",
+    "US-6533"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Alabama Creek Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 14479.8,
+   "stored_wide_m": 4813,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:40Z",
+   "layers": [
+    {
+     "ref": "US-4415",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "174 record id(s)",
+     "n": 18,
+     "read": "2026-11-01T04:12:42Z"
+    },
+    {
+     "ref": "US-4415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:42Z"
+    },
+    {
+     "ref": "US-6533",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:43Z"
+    },
+    {
+     "ref": "US-6533",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:44Z"
+    },
+    {
+     "ref": "US-6533",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:45Z"
+    },
+    {
+     "ref": "US-6533",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 14979.96,
+   "live_acres": 14556.73,
+   "kept_pct": 97.0,
+   "size_pct": -2.8,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 4827.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14556.7 ac vs 14980.0 ac stored (-3%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.163849,
+    -94.918572
+   ]
+  },
+  "US-4415+US-6534@area@31.482,-94.794": {
+   "id": "US-4415+US-6534@area@31.482,-94.794",
+   "area": "US-TX",
+   "refs": [
+    "US-4415",
+    "US-6534"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Alazan Bayou Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 8.7,
+   "stored_wide_m": 165,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:47Z",
+   "layers": [
+    {
+     "ref": "US-4415",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "174 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:49Z"
+    },
+    {
+     "ref": "US-4415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:12:49Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:50Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:51Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:51Z"
+    },
+    {
+     "ref": "US-6534",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 8.3,
+   "live_acres": 9.17,
+   "kept_pct": 100.0,
+   "size_pct": 10.5,
+   "moved_m": 25,
+   "gap_m": 0,
+   "wide_m": 182.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.2 ac vs 8.3 ac stored (+10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.48172,
+    -94.793546
+   ]
+  },
+  "US-4416+US-6584@area@31.268,-93.915": {
+   "id": "US-4416+US-6584@area@31.268,-93.915",
+   "area": "US-TX",
+   "refs": [
+    "US-4416",
+    "US-6584"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Moore Plantation Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 23425.7,
+   "stored_wide_m": 4365,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:12:52Z",
+   "layers": [
+    {
+     "ref": "US-4416",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "281 record id(s)",
+     "n": 33,
+     "read": "2026-11-01T04:12:55Z"
+    },
+    {
+     "ref": "US-4416",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:55Z"
+    },
+    {
+     "ref": "US-6584",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:56Z"
+    },
+    {
+     "ref": "US-6584",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:57Z"
+    },
+    {
+     "ref": "US-6584",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:58Z"
+    },
+    {
+     "ref": "US-6584",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:12:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7843.01,
+   "live_acres": 26206.36,
+   "kept_pct": 97.5,
+   "size_pct": 11.9,
+   "moved_m": 34,
+   "gap_m": 0,
+   "wide_m": 4399.6,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 26206.4 ac vs 23425.7 ac stored (row acres; the stored shape is a 7843.0 ac preview) (+12%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.267902,
+    -93.915376
+   ]
+  },
+  "US-4416+US-6589@area@31.891,-93.958": {
+   "id": "US-4416+US-6589@area@31.891,-93.958",
+   "area": "US-TX",
+   "refs": [
+    "US-4416",
+    "US-6589"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of North Toledo Bend Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": 21.8,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T04:13:00Z",
+   "layers": [
+    {
+     "ref": "US-4416",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "281 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T04:13:03Z"
+    },
+    {
+     "ref": "US-4416",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:03Z"
+    },
+    {
+     "ref": "US-6589",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:04Z"
+    },
+    {
+     "ref": "US-6589",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:05Z"
+    },
+    {
+     "ref": "US-6589",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:07Z"
+    },
+    {
+     "ref": "US-6589",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 16.19,
+   "live_acres": 16.03,
+   "kept_pct": 99.9,
+   "size_pct": -1.0,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 41.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 16.0 ac vs 16.2 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.91592,
+    -93.964957
+   ]
+  },
+  "US-6540+US-6597@river@29.614,-102.739": {
+   "id": "US-6540+US-6597@river@29.614,-102.739",
+   "area": "US-TX",
+   "refs": [
+    "US-6540",
+    "US-6597"
+   ],
+   "kind": "river",
+   "stored_status": "not sure: the official outline of Black Gap Wildlife Management Area could not be read in pass 3 (the next run tries again)",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T04:13:09Z",
+   "layers": [
+    {
+     "ref": "US-6540",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:09Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:10Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:10Z"
+    },
+    {
+     "ref": "US-6540",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:11Z"
+    },
+    {
+     "ref": "US-6597",
+     "layer": "saved copy US-6597.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD FTYPE = 460",
+     "n": 1,
+     "read": "2026-11-01T04:13:11Z"
+    },
+    {
+     "ref": "river water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD FTYPE IN (390, 436, 493)",
+     "n": 13,
+     "read": "2026-11-01T04:13:12Z"
+    }
+   ],
+   "saved_lines": [
+    "US-6597"
+   ],
+   "live_stretch_acres": 7.06,
+   "stored_shape_acres": 5.74,
+   "live_acres": 6.31,
+   "kept_pct": 5.5,
+   "size_pct": 9.8,
+   "moved_m": 77,
+   "gap_m": 0,
+   "wide_m": 47.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 5% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    29.708886,
+    -102.690732
+   ]
+  },
+  "US-6581+US-7483@same land@35.213,-100.873": {
+   "id": "US-6581+US-7483@same land@35.213,-100.873",
+   "area": "US-TX",
+   "refs": [
+    "US-6581",
+    "US-7483"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-01T04:13:12Z",
+   "layers": [
+    {
+     "ref": "US-6581",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:12Z"
+    },
+    {
+     "ref": "US-7483",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:13:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1406.78,
+   "live_acres": 1401.77,
+   "kept_pct": 99.6,
+   "size_pct": -0.4,
+   "moved_m": 544,
+   "gap_m": 0,
+   "wide_m": 1861.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1401.8 ac vs 1406.8 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.209248,
+    -100.876948
+   ]
+  }
+ },
+ "started": "2026-11-01T04:09:30Z",
+ "fers_sha256": "3eeadb065ed8976dcc078c31b193c9989eaa84d18718f27611cd06160d42d6a6",
+ "live_rows": 33,
+ "skipped_rows": 119,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:43Z",
+ "complete": true,
+ "summary": {
+  "rows": 33,
+  "verdicts": {
+   "CONFIRMED": 29,
+   "SHRUNK": 1,
+   "GREW": 2,
+   "MOVED": 1,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 2,
+   "small overlap (under 50 yd across)": 7
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json",
+  "data/us-key/US-OR.json",
+  "data/us-key/US-PA.json",
+  "data/us-key/US-RI.json",
+  "data/us-key/US-SC.json",
+  "data/us-key/US-SD.json",
+  "data/us-key/US-TN.json",
+  "data/us-key/US-TX.json"
+ ],
+ "requests_this_run": 1030
+}

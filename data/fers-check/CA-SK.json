@@ -1,0 +1,1532 @@
+{
+ "area": "CA-SK",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/CA-SK.json",
+ "rows": {
+  "CA-0051+CA-1118@area@51.354,-105.214": {
+   "id": "CA-0051+CA-1118@area@51.354,-105.214",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0051",
+    "CA-1118"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 74.8,
+   "stored_wide_m": 335,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:22Z",
+   "layers": [
+    {
+     "ref": "CA-0051",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:30:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 72.69,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1118: key record Saskatchewan~6:43 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-0051+CA-2711@same land@51.334,-105.226": {
+   "id": "CA-0051+CA-2711@same land@51.334,-105.226",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0051",
+    "CA-2711"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:24Z",
+   "layers": [
+    {
+     "ref": "CA-0051",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:30:25Z"
+    },
+    {
+     "ref": "CA-2711",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:30:25Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.4,
+   "live_acres": 1036.6,
+   "kept_pct": 100.0,
+   "size_pct": 43177.0,
+   "moved_m": 38,
+   "gap_m": 0,
+   "wide_m": 2002.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 43177% bigger (1036.6 ac vs 2.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    51.333413,
+    -105.225995
+   ]
+  },
+  "CA-0075+CA-6128@trail@54.100,-106.404": {
+   "id": "CA-0075+CA-6128@trail@54.100,-106.404",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6128"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 286.61,
+   "stored_wide_m": 79.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:25Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:26Z"
+    },
+    {
+     "ref": "CA-6128",
+     "layer": "saved copy CA-6128.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6128"
+   ],
+   "live_stretch_acres": 277.41,
+   "stored_shape_acres": 267.09,
+   "live_acres": 277.27,
+   "kept_pct": 99.9,
+   "size_pct": 3.8,
+   "moved_m": 5219,
+   "gap_m": 0,
+   "wide_m": 74.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 277.3 ac vs 267.1 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    54.135118,
+    -106.455977
+   ]
+  },
+  "CA-0075+CA-6143@trail@53.709,-106.065": {
+   "id": "CA-0075+CA-6143@trail@53.709,-106.065",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6143"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 30.98,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:27Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:28Z"
+    },
+    {
+     "ref": "CA-6143",
+     "layer": "saved copy CA-6143.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6143"
+   ],
+   "live_stretch_acres": 29.48,
+   "stored_shape_acres": 29.27,
+   "live_acres": 29.48,
+   "kept_pct": 100.0,
+   "size_pct": 0.7,
+   "moved_m": 121,
+   "gap_m": 0,
+   "wide_m": 65.5,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29.5 ac vs 29.3 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.710344,
+    -106.065534
+   ]
+  },
+  "CA-0075+CA-6144@trail@53.655,-106.138": {
+   "id": "CA-0075+CA-6144@trail@53.655,-106.138",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6144"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 245.71,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:28Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:29Z"
+    },
+    {
+     "ref": "CA-6144",
+     "layer": "saved copy CA-6144.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6144"
+   ],
+   "live_stretch_acres": 234.39,
+   "stored_shape_acres": 229.55,
+   "live_acres": 234.39,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 5635,
+   "gap_m": 0,
+   "wide_m": 66.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 234.4 ac vs 229.5 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.682939,
+    -106.209352
+   ]
+  },
+  "CA-0075+CA-6145@trail@53.623,-106.319": {
+   "id": "CA-0075+CA-6145@trail@53.623,-106.319",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6145"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 183.88,
+   "stored_wide_m": 71.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:29Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:30Z"
+    },
+    {
+     "ref": "CA-6145",
+     "layer": "saved copy CA-6145.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6145"
+   ],
+   "live_stretch_acres": 176.02,
+   "stored_shape_acres": 173.62,
+   "live_acres": 176.02,
+   "kept_pct": 100.0,
+   "size_pct": 1.4,
+   "moved_m": 3875,
+   "gap_m": 0,
+   "wide_m": 68.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 176.0 ac vs 173.6 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.654584,
+    -106.34377
+   ]
+  },
+  "CA-0075+CA-6146@trail@53.703,-106.709": {
+   "id": "CA-0075+CA-6146@trail@53.703,-106.709",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6146"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 30.21,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:30Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:31Z"
+    },
+    {
+     "ref": "CA-6146",
+     "layer": "saved copy CA-6146.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6146"
+   ],
+   "live_stretch_acres": 333.0,
+   "stored_shape_acres": 28.43,
+   "live_acres": 30.67,
+   "kept_pct": 100.0,
+   "size_pct": 7.9,
+   "moved_m": 1034,
+   "gap_m": 0,
+   "wide_m": 77.7,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.7 ac vs 28.4 ac stored (+8%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.710384,
+    -106.718547
+   ]
+  },
+  "CA-0075+CA-6147@trail@53.682,-106.660": {
+   "id": "CA-0075+CA-6147@trail@53.682,-106.660",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6147"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 31.62,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:31Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:32Z"
+    },
+    {
+     "ref": "CA-6147",
+     "layer": "saved copy CA-6147.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6147"
+   ],
+   "live_stretch_acres": 30.02,
+   "stored_shape_acres": 29.58,
+   "live_acres": 30.02,
+   "kept_pct": 100.0,
+   "size_pct": 1.5,
+   "moved_m": 601,
+   "gap_m": 0,
+   "wide_m": 65.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.0 ac vs 29.6 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.685039,
+    -106.652025
+   ]
+  },
+  "CA-0075+CA-6148@trail@53.970,-106.292": {
+   "id": "CA-0075+CA-6148@trail@53.970,-106.292",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6148"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 18.06,
+   "stored_wide_m": 79.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:32Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:33Z"
+    },
+    {
+     "ref": "CA-6148",
+     "layer": "saved copy CA-6148.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6148"
+   ],
+   "live_stretch_acres": 17.3,
+   "stored_shape_acres": 25.35,
+   "live_acres": 17.3,
+   "kept_pct": 75.3,
+   "size_pct": -31.7,
+   "moved_m": 80,
+   "gap_m": 0,
+   "wide_m": 77.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: live overlap is 32% smaller (17.3 ac vs 25.3 ac stored))",
+   "live_center": [
+    53.969255,
+    -106.291721
+   ]
+  },
+  "CA-0075+CA-6151@trail@53.909,-106.021": {
+   "id": "CA-0075+CA-6151@trail@53.909,-106.021",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6151"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.7,
+   "stored_wide_m": 62.0,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:33Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:34Z"
+    },
+    {
+     "ref": "CA-6151",
+     "layer": "saved copy CA-6151.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6151"
+   ],
+   "live_stretch_acres": 0.72,
+   "stored_shape_acres": 0.6,
+   "live_acres": 0.72,
+   "kept_pct": 100.0,
+   "size_pct": 20.4,
+   "moved_m": 0,
+   "gap_m": 0,
+   "wide_m": 60.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)",
+    "CA-6151: saved line is only point(s): measured 100 ft from them"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.7 ac vs 0.6 ac stored (+20%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.90944,
+    -106.02143
+   ]
+  },
+  "CA-0075+CA-6153@trail@53.918,-106.045": {
+   "id": "CA-0075+CA-6153@trail@53.918,-106.045",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0075",
+    "CA-6153"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 93.44,
+   "stored_wide_m": 79.9,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:34Z",
+   "layers": [
+    {
+     "ref": "CA-0075",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:35Z"
+    },
+    {
+     "ref": "CA-6153",
+     "layer": "saved copy CA-6153.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6153"
+   ],
+   "stored_shape_note": "stored zone outline (366 ac) disagrees with zone_acres (93.44): compared against the stored stretch line + 100 ft instead",
+   "live_stretch_acres": 89.02,
+   "stored_shape_acres": 88.4,
+   "live_acres": 89.02,
+   "kept_pct": 100.0,
+   "size_pct": 0.7,
+   "moved_m": 1569,
+   "gap_m": 0,
+   "wide_m": 76.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 89.0 ac vs 88.4 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0075: key record SK-PT Govern:157 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.923287,
+    -106.06687
+   ]
+  },
+  "CA-0081+CA-2717@area@52.437,-104.995": {
+   "id": "CA-0081+CA-2717@area@52.437,-104.995",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0081",
+    "CA-2717"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 233.2,
+   "stored_wide_m": 683,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:35Z",
+   "layers": [
+    {
+     "ref": "CA-0081",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:36Z"
+    },
+    {
+     "ref": "CA-2717",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 36,
+   "stored_shape_acres": 232.39,
+   "live_acres": 231.54,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 671.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 231.5 ac vs 232.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    52.440362,
+    -104.997044
+   ]
+  },
+  "CA-0082+CA-1146@same land@52.710,-107.218": {
+   "id": "CA-0082+CA-1146@same land@52.710,-107.218",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0082",
+    "CA-1146"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:39Z",
+   "layers": [
+    {
+     "ref": "CA-0082",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 70.89,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0082: key record Saskatchewan~6:77 names a layer prefix not in us-key/layers.json | CA-1146: key record Saskatchewan~6:77 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-0082+CA-2819@same land@52.692,-107.162": {
+   "id": "CA-0082+CA-2819@same land@52.692,-107.162",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0082",
+    "CA-2819"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:41Z",
+   "layers": [
+    {
+     "ref": "CA-0082",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:42Z"
+    },
+    {
+     "ref": "CA-2819",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:30:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 10000.78,
+   "live_acres": 13022.12,
+   "kept_pct": 98.0,
+   "size_pct": 30.2,
+   "moved_m": 214,
+   "gap_m": 0,
+   "wide_m": 6278.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0082: key record Saskatchewan~6:77 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 30% bigger (13022.1 ac vs 10000.8 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    52.691326,
+    -107.164778
+   ]
+  },
+  "CA-0591+CA-6057@same land@53.960,-102.265": {
+   "id": "CA-0591+CA-6057@same land@53.960,-102.265",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0591",
+    "CA-6057"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:44Z",
+   "layers": [
+    {
+     "ref": "CA-0591",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:45Z"
+    },
+    {
+     "ref": "CA-6057",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7.22,
+   "live_acres": 11.7,
+   "kept_pct": 85.3,
+   "size_pct": 62.0,
+   "moved_m": 74,
+   "gap_m": 0,
+   "wide_m": 196.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0591: key record SK-ALL Gover:3281 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 62% bigger (11.7 ac vs 7.2 ac stored); 85% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    53.959887,
+    -102.264047
+   ]
+  },
+  "CA-0600+CA-6064@same land@53.571,-109.793": {
+   "id": "CA-0600+CA-6064@same land@53.571,-109.793",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0600",
+    "CA-6064"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:30:46Z",
+   "layers": [
+    {
+     "ref": "CA-0600",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:47Z"
+    },
+    {
+     "ref": "CA-6064",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 14.57,
+   "live_acres": 32.52,
+   "kept_pct": 99.8,
+   "size_pct": 123.3,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 259.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0600: key record SK-ALL Gover:3306 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 123% bigger (32.5 ac vs 14.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    53.570851,
+    -109.792815
+   ]
+  },
+  "CA-0621+CA-2820@same land@50.746,-105.019": {
+   "id": "CA-0621+CA-2820@same land@50.746,-105.019",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0621",
+    "CA-2820"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:48Z",
+   "layers": [
+    {
+     "ref": "CA-0621",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:49Z"
+    },
+    {
+     "ref": "CA-2820",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 5737.04,
+   "live_acres": 5736.48,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 594,
+   "gap_m": 0,
+   "wide_m": 4175.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5736.5 ac vs 5737.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance); note: CA-0621: key record SK-ALL Gover:3364 names a layer prefix not in us-key/layers.json | CA-2820: key record SK-ALL Gover:3364 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    50.742323,
+    -105.025362
+   ]
+  },
+  "CA-0624+CA-6072@same land@54.041,-109.319": {
+   "id": "CA-0624+CA-6072@same land@54.041,-109.319",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0624",
+    "CA-6072"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:30:50Z",
+   "layers": [
+    {
+     "ref": "CA-0624",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:51Z"
+    },
+    {
+     "ref": "CA-6072",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 27.02,
+   "live_acres": 198.44,
+   "kept_pct": 90.0,
+   "size_pct": 634.6,
+   "moved_m": 775,
+   "gap_m": 0,
+   "wide_m": 574.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0624: key record SK-ALL Gover:3379 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 635% bigger (198.4 ac vs 27.0 ac stored); 90% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    54.041628,
+    -109.306823
+   ]
+  },
+  "CA-0630+CA-2916@same land@49.318,-106.380": {
+   "id": "CA-0630+CA-2916@same land@49.318,-106.380",
+   "area": "CA-SK",
+   "refs": [
+    "CA-0630",
+    "CA-2916"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:52Z",
+   "layers": [
+    {
+     "ref": "CA-0630",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:53Z"
+    },
+    {
+     "ref": "CA-2916",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 66.47,
+   "live_acres": 13.52,
+   "kept_pct": 0.0,
+   "size_pct": -79.7,
+   "moved_m": 264,
+   "gap_m": 5,
+   "wide_m": 206.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-0630: key record SK-ALL Gover:3402 names a layer prefix not in us-key/layers.json | CA-2916: key record Saskatchewan~6:102 names a layer prefix not in us-key/layers.json | CA-2916: key record SK-ALL Gover:3402 names a layer prefix not in us-key/layers.json (geometry now: MOVED: live overlap centre is 264 m from the stored centre; 0% of the stored overlap is still inside it)",
+   "live_center": [
+    49.315774,
+    -106.378633
+   ]
+  },
+  "CA-1093+CA-2549@same land@50.277,-108.408": {
+   "id": "CA-1093+CA-2549@same land@50.277,-108.408",
+   "area": "CA-SK",
+   "refs": [
+    "CA-1093",
+    "CA-2549"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:30:54Z",
+   "layers": [],
+   "saved_lines": [],
+   "stored_shape_acres": 244.81,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1093: key record Saskatchewan~6:1 names a layer prefix not in us-key/layers.json | CA-2549: key record Saskatchewan~6:1 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-1117+CA-2605@area@52.406,-104.306": {
+   "id": "CA-1117+CA-2605@area@52.406,-104.306",
+   "area": "CA-SK",
+   "refs": [
+    "CA-1117",
+    "CA-2605"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 109.7,
+   "stored_wide_m": 407,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:54Z",
+   "layers": [
+    {
+     "ref": "CA-2605",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 15,
+   "stored_shape_acres": 107.58,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1117: key record Saskatchewan~6:41 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-1118+CA-2711@area@51.354,-105.214": {
+   "id": "CA-1118+CA-2711@area@51.354,-105.214",
+   "area": "CA-SK",
+   "refs": [
+    "CA-1118",
+    "CA-2711"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 74.8,
+   "stored_wide_m": 335,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:56Z",
+   "layers": [
+    {
+     "ref": "CA-2711",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:30:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 72.69,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1118: key record Saskatchewan~6:43 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-1127+CA-2747@same land@50.300,-109.896": {
+   "id": "CA-1127+CA-2747@same land@50.300,-109.896",
+   "area": "CA-SK",
+   "refs": [
+    "CA-1127",
+    "CA-2747"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:30:56Z",
+   "layers": [
+    {
+     "ref": "CA-2747",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1925.8,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1127: key record Saskatchewan~6:53 names a layer prefix not in us-key/layers.json | CA-2747: key record Saskatchewan~6:53 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-1149+CA-2844@same land@50.060,-106.466": {
+   "id": "CA-1149+CA-2844@same land@50.060,-106.466",
+   "area": "CA-SK",
+   "refs": [
+    "CA-1149",
+    "CA-2844"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:58Z",
+   "layers": [],
+   "saved_lines": [],
+   "stored_shape_acres": 51.23,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-1149: key record Saskatchewan~6:82 names a layer prefix not in us-key/layers.json | CA-2844: key record Saskatchewan~6:82 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-2644+CA-2645@same land@51.106,-106.600": {
+   "id": "CA-2644+CA-2645@same land@51.106,-106.600",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2644",
+    "CA-2645"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:30:58Z",
+   "layers": [
+    {
+     "ref": "CA-2644",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:59Z"
+    },
+    {
+     "ref": "CA-2645",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:30:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 564.06,
+   "live_acres": 765.57,
+   "kept_pct": 100.0,
+   "size_pct": 35.7,
+   "moved_m": 652,
+   "gap_m": 0,
+   "wide_m": 997.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-2644: key record SK-ALL Gover:3300 names a layer prefix not in us-key/layers.json | CA-2645: key record SK-ALL Gover:3300 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 36% bigger (765.6 ac vs 564.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "live_center": [
+    51.100634,
+    -106.601899
+   ]
+  },
+  "CA-2653+CA-2654@area@53.105,-102.679": {
+   "id": "CA-2653+CA-2654@area@53.105,-102.679",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2653",
+    "CA-2654"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 254.7,
+   "stored_wide_m": 657,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:00Z",
+   "layers": [
+    {
+     "ref": "CA-2653",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:01Z"
+    },
+    {
+     "ref": "CA-2654",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 252.87,
+   "live_acres": 251.86,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 654.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 251.9 ac vs 252.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance); note: CA-2654: key record SK-ALL Gover:3301 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    53.10527,
+    -102.676553
+   ]
+  },
+  "CA-2653+CA-2677@area@52.984,-102.609": {
+   "id": "CA-2653+CA-2677@area@52.984,-102.609",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2653",
+    "CA-2677"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 56.0,
+   "stored_wide_m": 323,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:04Z",
+   "layers": [
+    {
+     "ref": "CA-2653",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:05Z"
+    },
+    {
+     "ref": "CA-2677",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 54.95,
+   "live_acres": 54.8,
+   "kept_pct": 100.0,
+   "size_pct": -0.3,
+   "moved_m": 11,
+   "gap_m": 0,
+   "wide_m": 318.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 54.8 ac vs 54.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    52.987324,
+    -102.59965
+   ]
+  },
+  "CA-2676+CA-2677@area@52.849,-102.688": {
+   "id": "CA-2676+CA-2677@area@52.849,-102.688",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2676",
+    "CA-2677"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 18.1,
+   "stored_wide_m": 205,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:07Z",
+   "layers": [
+    {
+     "ref": "CA-2676",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:08Z"
+    },
+    {
+     "ref": "CA-2677",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17.46,
+   "live_acres": 16.99,
+   "kept_pct": 100.0,
+   "size_pct": -2.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 201.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.0 ac vs 17.5 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance); note: CA-2676: key record SK-ALL Gover:3316 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    52.8488,
+    -102.688572
+   ]
+  },
+  "CA-2740+CA-2741@area@50.678,-107.719": {
+   "id": "CA-2740+CA-2741@area@50.678,-107.719",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2740",
+    "CA-2741"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 9.9,
+   "stored_wide_m": 155,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:10Z",
+   "layers": [
+    {
+     "ref": "CA-2740",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:11Z"
+    },
+    {
+     "ref": "CA-2741",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.34,
+   "live_acres": 9.48,
+   "kept_pct": 100.0,
+   "size_pct": 1.6,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 153.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.5 ac vs 9.3 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance); note: CA-2741: key record SK-ALL Gover:3343 names a layer prefix not in us-key/layers.json",
+   "live_center": [
+    50.696664,
+    -107.714168
+   ]
+  },
+  "CA-2838+CA-2839@area@52.957,-108.152": {
+   "id": "CA-2838+CA-2839@area@52.957,-108.152",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2838",
+    "CA-2839"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1534.4,
+   "stored_wide_m": 1715,
+   "utm_epsg": 32612,
+   "checked_at": "2026-11-01T11:31:14Z",
+   "layers": [
+    {
+     "ref": "CA-2838",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:15Z"
+    },
+    {
+     "ref": "CA-2839",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 100,
+   "stored_shape_acres": 1540.4,
+   "live_acres": 1540.68,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 1726.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1540.7 ac vs 1540.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    52.957933,
+    -108.145508
+   ]
+  },
+  "CA-2879+CA-2880@same land@51.184,-102.588": {
+   "id": "CA-2879+CA-2880@same land@51.184,-102.588",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2879",
+    "CA-2880"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:18Z",
+   "layers": [
+    {
+     "ref": "CA-2879",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:31:19Z"
+    },
+    {
+     "ref": "CA-2880",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:31:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 739.82,
+   "live_acres": 1818.92,
+   "kept_pct": 97.6,
+   "size_pct": 145.9,
+   "moved_m": 563,
+   "gap_m": 0,
+   "wide_m": 1930.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 146% bigger (1818.9 ac vs 739.8 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    51.187215,
+    -102.582023
+   ]
+  },
+  "CA-2894+CA-2896@area@50.423,-104.586": {
+   "id": "CA-2894+CA-2896@area@50.423,-104.586",
+   "area": "CA-SK",
+   "refs": [
+    "CA-2894",
+    "CA-2896"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 291.2,
+   "stored_wide_m": 620,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:20Z",
+   "layers": [
+    {
+     "ref": "CA-2894",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:21Z"
+    },
+    {
+     "ref": "CA-2896",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 53,
+   "stored_shape_acres": 289.61,
+   "live_acres": 289.88,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 39,
+   "gap_m": 0,
+   "wide_m": 628.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 289.9 ac vs 289.6 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    50.429289,
+    -104.590567
+   ]
+  },
+  "CA-6146+CA-6147@trail@53.676,-106.669": {
+   "id": "CA-6146+CA-6147@trail@53.676,-106.669",
+   "area": "CA-SK",
+   "refs": [
+    "CA-6146",
+    "CA-6147"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32613,
+   "checked_at": "2026-11-01T11:31:24Z",
+   "layers": [
+    {
+     "ref": "CA-6146",
+     "layer": "saved copy CA-6146.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "CA-6147",
+     "layer": "saved copy CA-6147.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "CA-6146",
+    "CA-6147"
+   ],
+   "live_stretch_acres": 0.83,
+   "stored_shape_acres": 2.27,
+   "live_acres": 0.83,
+   "kept_pct": 52.0,
+   "size_pct": -63.4,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 59.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 63% smaller (0.8 ac vs 2.3 ac stored)",
+   "live_center": [
+    53.676327,
+    -106.669292
+   ]
+  }
+ },
+ "started": "2026-11-01T11:30:22Z",
+ "fers_sha256": "e96a26794880e802f9e762cc9d2e53ccd73bd4a0aac3fa97c72841efe642b9cd",
+ "live_rows": 33,
+ "skipped_rows": 19,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:58Z",
+ "complete": true,
+ "summary": {
+  "rows": 33,
+  "verdicts": {
+   "CONFIRMED": 16,
+   "SHRUNK": 1,
+   "GREW": 2,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 14,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 10,
+   "CA-6151: saved line is only point(s): measured 100 ft from them": 1
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json"
+ ],
+ "requests_this_run": 1
+}

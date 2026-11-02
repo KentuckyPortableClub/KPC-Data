@@ -1,0 +1,37 @@
+{
+ "about": "PARK DETECTIVE sources per area. reports = index pages of land-acquisition / plan documents (step 2: the bot reads the page, then its PDFs that name the park). parcels = county PVA / parcel sites (step 5: read ONLY where robots.txt and the page terms allow; never accept terms, never log in). Chats add rows; url + area + kind (+ county for parcels).",
+ "reports": [
+  {
+   "area": "US-KY",
+   "kind": "KHLCF land-acquisition annual reports (Kentucky Heritage Land Conservation Fund)",
+   "url": "https://heritageland.ky.gov/Pages/default.aspx",
+   "added": "2026-10-28",
+   "by": "chat 10"
+  },
+  {
+   "area": "US-KY",
+   "kind": "OKNP nature preserve pages (Office of Kentucky Nature Preserves)",
+   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/default.aspx",
+   "added": "2026-10-28",
+   "by": "chat 10"
+  },
+  {
+   "area": "US-KY",
+   "kind": "KNP KHLCF annual reports (eec.ky.gov)",
+   "url": "https://eec.ky.gov/Nature-Preserves/Pages/default.aspx",
+   "added": "2026-10-28",
+   "by": "chat 10"
+  }
+ ],
+ "parcels": [
+  {
+   "area": "US-KY",
+   "county": "Hart",
+   "kind": "Hart County PVA (qPublic): read only if robots + terms allow",
+   "url": "https://qpublic.schneidercorp.com/Application.aspx?AppID=1076&LayerID=25407&PageTypeID=2&PageID=10457",
+   "added": "2026-10-28",
+   "by": "chat 10",
+   "note": "qPublic usually shows a terms wall: expect blocked by terms"
+  }
+ ]
+}

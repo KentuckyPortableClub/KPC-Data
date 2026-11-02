@@ -1,0 +1,1836 @@
+{
+ "area": "US-WV",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-WV.json",
+ "rows": {
+  "US-0607+US-0632@area@39.077,-79.454": {
+   "id": "US-0607+US-0632@area@39.077,-79.454",
+   "area": "US-WV",
+   "refs": [
+    "US-0607",
+    "US-0632"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.6,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:16Z",
+   "layers": [
+    {
+     "ref": "US-0607",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:22:16Z"
+    },
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:18Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.45,
+   "live_acres": 0.47,
+   "kept_pct": 100.0,
+   "size_pct": 5.8,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 29.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.5 ac vs 0.4 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.079734,
+    -79.453267
+   ]
+  },
+  "US-0632+US-12436@area@37.892,-80.291": {
+   "id": "US-0632+US-12436@area@37.892,-80.291",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12436"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5132.8,
+   "stored_wide_m": 3494,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:19Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:20Z"
+    },
+    {
+     "ref": "US-12436",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 5142.75,
+   "live_acres": 5143.52,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 3514.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5143.5 ac vs 5142.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.891459,
+    -80.291108
+   ]
+  },
+  "US-0632+US-12437@area@38.309,-80.307": {
+   "id": "US-0632+US-12437@area@38.309,-80.307",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12437"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 48456.5,
+   "stored_wide_m": 7555,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:36Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:36Z"
+    },
+    {
+     "ref": "US-12437",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 13724.36,
+   "live_acres": 47707.77,
+   "kept_pct": 100.0,
+   "size_pct": -1.5,
+   "moved_m": 2558,
+   "gap_m": 0,
+   "wide_m": 10241.2,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 47707.8 ac vs 48456.5 ac stored (row acres; the stored shape is a 13724.4 ac preview) (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.308788,
+    -80.307401
+   ]
+  },
+  "US-0632+US-12438@area@38.997,-79.364": {
+   "id": "US-0632+US-12438@area@38.997,-79.364",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12438"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 17703.0,
+   "stored_wide_m": 6132,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:45Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:46Z"
+    },
+    {
+     "ref": "US-12438",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 17770.89,
+   "live_acres": 17771.34,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 94,
+   "gap_m": 0,
+   "wide_m": 6091.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17771.3 ac vs 17770.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.995111,
+    -79.364513
+   ]
+  },
+  "US-0632+US-12439@area@38.793,-79.647": {
+   "id": "US-0632+US-12439@area@38.793,-79.647",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12439"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5997.8,
+   "stored_wide_m": 3133,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:47Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:48Z"
+    },
+    {
+     "ref": "US-12439",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 6013.19,
+   "live_acres": 6045.74,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 492,
+   "gap_m": 0,
+   "wide_m": 3146.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6045.7 ac vs 6013.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.788597,
+    -79.649053
+   ]
+  },
+  "US-0632+US-12440@area@38.702,-79.714": {
+   "id": "US-0632+US-12440@area@38.702,-79.714",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12440"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5823.9,
+   "stored_wide_m": 3515,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:49Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:50Z"
+    },
+    {
+     "ref": "US-12440",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5837.86,
+   "live_acres": 5837.45,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 3512.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5837.5 ac vs 5837.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.701924,
+    -79.714642
+   ]
+  },
+  "US-0632+US-12441@area@39.011,-79.639": {
+   "id": "US-0632+US-12441@area@39.011,-79.639",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12441"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 20621.2,
+   "stored_wide_m": 7132,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:51Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:52Z"
+    },
+    {
+     "ref": "US-12441",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:52Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 20502.63,
+   "live_acres": 20695.81,
+   "kept_pct": 99.5,
+   "size_pct": 0.9,
+   "moved_m": 44,
+   "gap_m": 0,
+   "wide_m": 7099.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 20695.8 ac vs 20502.6 ac stored (+1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.011697,
+    -79.638778
+   ]
+  },
+  "US-0632+US-12442@area@38.929,-79.428": {
+   "id": "US-0632+US-12442@area@38.929,-79.428",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12442"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6776.0,
+   "stored_wide_m": 3659,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:53Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:54Z"
+    },
+    {
+     "ref": "US-12442",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6790.77,
+   "live_acres": 6791.35,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 26,
+   "gap_m": 0,
+   "wide_m": 3638.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6791.4 ac vs 6790.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.928516,
+    -79.428016
+   ]
+  },
+  "US-0632+US-12443+US-5583@area@38.054,-80.215": {
+   "id": "US-0632+US-12443+US-5583@area@38.054,-80.215",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12443",
+    "US-5583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 21.9,
+   "stored_wide_m": 61,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:22:56Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:56Z"
+    },
+    {
+     "ref": "US-12443",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:57Z"
+    },
+    {
+     "ref": "US-5583",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_State_Forests/FeatureServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:22:59Z"
+    },
+    {
+     "ref": "US-5583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:00Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19.22,
+   "live_acres": 18.05,
+   "kept_pct": 98.3,
+   "size_pct": -6.1,
+   "moved_m": 200,
+   "gap_m": 0,
+   "wide_m": 64.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 18.1 ac vs 19.2 ac stored (-6%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.052,
+    -80.215974
+   ]
+  },
+  "US-0632+US-12443@area@38.033,-80.200": {
+   "id": "US-0632+US-12443@area@38.033,-80.200",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-12443"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6024.6,
+   "stored_wide_m": 3473,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:01Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:02Z"
+    },
+    {
+     "ref": "US-12443",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6032.4,
+   "live_acres": 6033.13,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 19,
+   "gap_m": 0,
+   "wide_m": 3463.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6033.1 ac vs 6032.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.032511,
+    -80.200093
+   ]
+  },
+  "US-0632+US-1808@area@38.441,-79.959": {
+   "id": "US-0632+US-1808@area@38.441,-79.959",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-1808"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 62.3,
+   "stored_wide_m": 51,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:03Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:03Z"
+    },
+    {
+     "ref": "US-1808",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:04Z"
+    },
+    {
+     "ref": "US-1808",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 49.23,
+   "live_acres": 50.38,
+   "kept_pct": 100.0,
+   "size_pct": 2.3,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 47.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 50.4 ac vs 49.2 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.463913,
+    -79.940452
+   ]
+  },
+  "US-0632+US-1827@area@38.129,-80.152": {
+   "id": "US-0632+US-1827@area@38.129,-80.152",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-1827"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 14.9,
+   "stored_wide_m": 81,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:07Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:07Z"
+    },
+    {
+     "ref": "US-1827",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:08Z"
+    },
+    {
+     "ref": "US-1827",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.3,
+   "live_acres": 8.18,
+   "kept_pct": 99.8,
+   "size_pct": -1.4,
+   "moved_m": 370,
+   "gap_m": 0,
+   "wide_m": 53.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.2 ac vs 8.3 ac stored (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.129952,
+    -80.155729
+   ]
+  },
+  "US-0632+US-5583@area@38.041,-80.123": {
+   "id": "US-0632+US-5583@area@38.041,-80.123",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-5583"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 63.8,
+   "stored_wide_m": 149,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:10Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:11Z"
+    },
+    {
+     "ref": "US-5583",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_State_Forests/FeatureServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:11Z"
+    },
+    {
+     "ref": "US-5583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 50.91,
+   "live_acres": 49.69,
+   "kept_pct": 99.6,
+   "size_pct": -2.4,
+   "moved_m": 1793,
+   "gap_m": 0,
+   "wide_m": 92.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 49.7 ac vs 50.9 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.056519,
+    -80.145028
+   ]
+  },
+  "US-0632+US-5589@area@38.265,-79.972": {
+   "id": "US-0632+US-5589@area@38.265,-79.972",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-5589"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 31.2,
+   "stored_wide_m": 135,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:12Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:13Z"
+    },
+    {
+     "ref": "US-5589",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_State_Forests/FeatureServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:13Z"
+    },
+    {
+     "ref": "US-5589",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 24.81,
+   "live_acres": 24.27,
+   "kept_pct": 99.1,
+   "size_pct": -2.2,
+   "moved_m": 3249,
+   "gap_m": 0,
+   "wide_m": 51.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 24.3 ac vs 24.8 ac stored (-2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.290659,
+    -79.99163
+   ]
+  },
+  "US-0632+US-7025@area@38.316,-80.203": {
+   "id": "US-0632+US-7025@area@38.316,-80.203",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-7025"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.1,
+   "stored_wide_m": 35,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:16Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:17Z"
+    },
+    {
+     "ref": "US-7025",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:18Z"
+    },
+    {
+     "ref": "US-7025",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.4,
+   "live_acres": 1.7,
+   "kept_pct": 100.0,
+   "size_pct": 21.2,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 34.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.7 ac vs 1.4 ac stored (+21%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.320355,
+    -80.199575
+   ]
+  },
+  "US-0632+US-7026@area@38.691,-79.941": {
+   "id": "US-0632+US-7026@area@38.691,-79.941",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-7026"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 25.0,
+   "stored_wide_m": 53,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:21Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:21Z"
+    },
+    {
+     "ref": "US-7026",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:22Z"
+    },
+    {
+     "ref": "US-7026",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 20.52,
+   "live_acres": 21.1,
+   "kept_pct": 100.0,
+   "size_pct": 2.8,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 48.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 21.1 ac vs 20.5 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.691346,
+    -79.940652
+   ]
+  },
+  "US-0632+US-9742@trail@38.330,-79.970": {
+   "id": "US-0632+US-9742@trail@38.330,-79.970",
+   "area": "US-WV",
+   "refs": [
+    "US-0632",
+    "US-9742"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 32.06,
+   "stored_wide_m": 43.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:24Z",
+   "layers": [
+    {
+     "ref": "US-0632",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:24Z"
+    },
+    {
+     "ref": "US-9742",
+     "layer": "saved copy US-9742.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-9742"
+   ],
+   "live_stretch_acres": 30.81,
+   "stored_shape_acres": 25.63,
+   "live_acres": 25.27,
+   "kept_pct": 89.2,
+   "size_pct": -1.4,
+   "moved_m": 1036,
+   "gap_m": 0,
+   "wide_m": 23.9,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 25.3 ac vs 25.6 ac stored (-1%), 89% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.317024,
+    -79.977046
+   ]
+  },
+  "US-0695+US-9755@area@38.214,-80.892": {
+   "id": "US-0695+US-9755@area@38.214,-80.892",
+   "area": "US-WV",
+   "refs": [
+    "US-0695",
+    "US-9755"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 385.8,
+   "stored_wide_m": 915,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:25Z",
+   "layers": [
+    {
+     "ref": "US-0695",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:25Z"
+    },
+    {
+     "ref": "US-9755",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 6,
+   "stored_shape_acres": 383.47,
+   "live_acres": 384.28,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 276,
+   "gap_m": 0,
+   "wide_m": 917.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 384.3 ac vs 383.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.211985,
+    -80.891916
+   ]
+  },
+  "US-0697+US-1804+US-1820@area@37.557,-80.994": {
+   "id": "US-0697+US-1804+US-1820@area@37.557,-80.994",
+   "area": "US-WV",
+   "refs": [
+    "US-0697",
+    "US-1804",
+    "US-1820"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 5.5,
+   "stored_wide_m": 23,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:28Z",
+   "layers": [
+    {
+     "ref": "US-0697",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:28Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:23:29Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:23:30Z"
+    },
+    {
+     "ref": "US-1820",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:31Z"
+    },
+    {
+     "ref": "US-1820",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.98,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-0697+US-1804+US-7037@area@37.601,-80.946": {
+   "id": "US-0697+US-1804+US-7037@area@37.601,-80.946",
+   "area": "US-WV",
+   "refs": [
+    "US-0697",
+    "US-1804",
+    "US-7037"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 8.9,
+   "stored_wide_m": 45,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:33Z",
+   "layers": [
+    {
+     "ref": "US-0697",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:34Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:34Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:34Z"
+    },
+    {
+     "ref": "US-7037",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:35Z"
+    },
+    {
+     "ref": "US-7037",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:23:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 4,
+   "stored_shape_acres": 8.44,
+   "live_acres": 0.01,
+   "kept_pct": 0.7,
+   "size_pct": -99.9,
+   "moved_m": 441,
+   "gap_m": 4,
+   "wide_m": 1.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 441 m from the stored centre; 1% of the stored overlap is still inside it",
+   "live_center": [
+    37.601553,
+    -80.946213
+   ]
+  },
+  "US-0697+US-1804@area@37.590,-80.964": {
+   "id": "US-0697+US-1804@area@37.590,-80.964",
+   "area": "US-WV",
+   "refs": [
+    "US-0697",
+    "US-1804"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2989.1,
+   "stored_wide_m": 1660,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:37Z",
+   "layers": [
+    {
+     "ref": "US-0697",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:37Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:37Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 2982.39,
+   "live_acres": 5.33,
+   "kept_pct": 0.2,
+   "size_pct": -99.8,
+   "moved_m": 1996,
+   "gap_m": 0,
+   "wide_m": 38.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 1996 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    37.601772,
+    -80.946293
+   ]
+  },
+  "US-0697+US-1820@area@37.545,-81.006": {
+   "id": "US-0697+US-1820@area@37.545,-81.006",
+   "area": "US-WV",
+   "refs": [
+    "US-0697",
+    "US-1820"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1221.5,
+   "stored_wide_m": 890,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:37Z",
+   "layers": [
+    {
+     "ref": "US-0697",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:38Z"
+    },
+    {
+     "ref": "US-1820",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:38Z"
+    },
+    {
+     "ref": "US-1820",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 5,
+   "stored_shape_acres": 1197.56,
+   "live_acres": 1197.32,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 893.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1197.3 ac vs 1197.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.545393,
+    -81.005605
+   ]
+  },
+  "US-12049+US-9741@trail@39.172,-81.408": {
+   "id": "US-12049+US-9741@trail@39.172,-81.408",
+   "area": "US-WV",
+   "refs": [
+    "US-12049",
+    "US-9741"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 24.35,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:38Z",
+   "layers": [
+    {
+     "ref": "US-12049",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:39Z"
+    },
+    {
+     "ref": "US-12049",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:40Z"
+    },
+    {
+     "ref": "US-9741",
+     "layer": "saved copy US-9741.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-9741"
+   ],
+   "live_stretch_acres": 22.98,
+   "stored_shape_acres": 22.75,
+   "live_acres": 22.98,
+   "kept_pct": 92.9,
+   "size_pct": 1.0,
+   "moved_m": 584,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 23.0 ac vs 22.8 ac stored (+1%), 93% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.170849,
+    -81.400887
+   ]
+  },
+  "US-1800+US-7046@area@38.295,-82.379": {
+   "id": "US-1800+US-7046@area@38.295,-82.379",
+   "area": "US-WV",
+   "refs": [
+    "US-1800",
+    "US-7046"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 7806.3,
+   "stored_wide_m": 2577,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:41Z",
+   "layers": [
+    {
+     "ref": "US-1800",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:41Z"
+    },
+    {
+     "ref": "US-1800",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:42Z"
+    },
+    {
+     "ref": "US-7046",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:44Z"
+    },
+    {
+     "ref": "US-7046",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5651.24,
+   "live_acres": 5688.27,
+   "kept_pct": 99.3,
+   "size_pct": 0.7,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 2584.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5688.3 ac vs 5651.2 ac stored (+1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.294991,
+    -82.37925
+   ]
+  },
+  "US-1804+US-1820@area@37.559,-80.994": {
+   "id": "US-1804+US-1820@area@37.559,-80.994",
+   "area": "US-WV",
+   "refs": [
+    "US-1804",
+    "US-1820"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 7.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:46Z",
+   "layers": [
+    {
+     "ref": "US-1804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:23:46Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T04:23:46Z"
+    },
+    {
+     "ref": "US-1820",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:47Z"
+    },
+    {
+     "ref": "US-1820",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.69,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-1804+US-7037@area@37.547,-80.881": {
+   "id": "US-1804+US-7037@area@37.547,-80.881",
+   "area": "US-WV",
+   "refs": [
+    "US-1804",
+    "US-7037"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 13036.2,
+   "stored_wide_m": 4149,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:47Z",
+   "layers": [
+    {
+     "ref": "US-1804",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:48Z"
+    },
+    {
+     "ref": "US-1804",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:48Z"
+    },
+    {
+     "ref": "US-7037",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:50Z"
+    },
+    {
+     "ref": "US-7037",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 39,
+   "stored_shape_acres": 2875.34,
+   "live_acres": 0.06,
+   "kept_pct": 0.0,
+   "size_pct": -100.0,
+   "moved_m": 7515,
+   "gap_m": 10060,
+   "wide_m": 0.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 7515 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    37.611014,
+    -80.908317
+   ]
+  },
+  "US-1817+US-7040@area@37.622,-80.351": {
+   "id": "US-1817+US-7040@area@37.622,-80.351",
+   "area": "US-WV",
+   "refs": [
+    "US-1817",
+    "US-7040"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 79.7,
+   "stored_wide_m": 213,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:50Z",
+   "layers": [
+    {
+     "ref": "US-1817",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:50Z"
+    },
+    {
+     "ref": "US-1817",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:51Z"
+    },
+    {
+     "ref": "US-7040",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:52Z"
+    },
+    {
+     "ref": "US-7040",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 10.16,
+   "live_acres": 78.69,
+   "kept_pct": 100.0,
+   "size_pct": -1.3,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 216.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 78.7 ac vs 79.7 ac stored (row acres; the stored shape is a 10.2 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.621228,
+    -80.354761
+   ]
+  },
+  "US-1818+US-9741@trail@39.227,-81.120": {
+   "id": "US-1818+US-9741@trail@39.227,-81.120",
+   "area": "US-WV",
+   "refs": [
+    "US-1818",
+    "US-9741"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.32,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:54Z",
+   "layers": [
+    {
+     "ref": "US-1818",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:55Z"
+    },
+    {
+     "ref": "US-1818",
+     "layer": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:23:56Z"
+    },
+    {
+     "ref": "US-9741",
+     "layer": "saved copy US-9741.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-9741"
+   ],
+   "live_stretch_acres": 11.0,
+   "stored_shape_acres": 11.12,
+   "live_acres": 11.0,
+   "kept_pct": 90.3,
+   "size_pct": -1.1,
+   "moved_m": 145,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.0 ac vs 11.1 ac stored (-1%), 90% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.233187,
+    -81.113449
+   ]
+  },
+  "US-4526+US-9949@area@37.439,-80.473": {
+   "id": "US-4526+US-9949@area@37.439,-80.473",
+   "area": "US-WV",
+   "refs": [
+    "US-4526",
+    "US-9949"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 3210.3,
+   "stored_wide_m": 2991,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:23:57Z",
+   "layers": [
+    {
+     "ref": "US-4526",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:23:57Z"
+    },
+    {
+     "ref": "US-9949",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:00Z"
+    },
+    {
+     "ref": "US-9949",
+     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3214.67,
+   "live_acres": 3219.06,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 3011.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3219.1 ac vs 3214.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.438728,
+    -80.473211
+   ]
+  },
+  "US-4526+US-9950@area@37.441,-80.613": {
+   "id": "US-4526+US-9950@area@37.441,-80.613",
+   "area": "US-WV",
+   "refs": [
+    "US-4526",
+    "US-9950"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 8.7,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:24:03Z",
+   "layers": [
+    {
+     "ref": "US-4526",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T04:24:03Z"
+    },
+    {
+     "ref": "US-9950",
+     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:04Z"
+    },
+    {
+     "ref": "US-9950",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.23,
+   "live_acres": 7.1,
+   "kept_pct": 100.0,
+   "size_pct": -1.7,
+   "moved_m": 544,
+   "gap_m": 0,
+   "wide_m": 29.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.1 ac vs 7.2 ac stored (-2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.440286,
+    -80.613927
+   ]
+  },
+  "US-5589+US-9742@trail@38.367,-79.935": {
+   "id": "US-5589+US-9742@trail@38.367,-79.935",
+   "area": "US-WV",
+   "refs": [
+    "US-5589",
+    "US-9742"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 16.15,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:24:06Z",
+   "layers": [
+    {
+     "ref": "US-5589",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_State_Forests/FeatureServer/16",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:07Z"
+    },
+    {
+     "ref": "US-5589",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:07Z"
+    },
+    {
+     "ref": "US-9742",
+     "layer": "saved copy US-9742.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-9742"
+   ],
+   "live_stretch_acres": 17.1,
+   "stored_shape_acres": 14.9,
+   "live_acres": 17.1,
+   "kept_pct": 99.9,
+   "size_pct": 14.8,
+   "moved_m": 96,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.1 ac vs 14.9 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.365752,
+    -79.935244
+   ]
+  },
+  "US-7031+US-9755@area@38.254,-80.880": {
+   "id": "US-7031+US-9755@area@38.254,-80.880",
+   "area": "US-WV",
+   "refs": [
+    "US-7031",
+    "US-9755"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6166.6,
+   "stored_wide_m": 2657,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T04:24:07Z",
+   "layers": [
+    {
+     "ref": "US-7031",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:08Z"
+    },
+    {
+     "ref": "US-7031",
+     "layer": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:09Z"
+    },
+    {
+     "ref": "US-9755",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T04:24:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 42,
+   "stored_shape_acres": 6763.51,
+   "live_acres": 6156.84,
+   "kept_pct": 89.5,
+   "size_pct": -9.0,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 2634.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6156.8 ac vs 6763.5 ac stored (-9%), 90% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.254021,
+    -80.880229
+   ]
+  }
+ },
+ "started": "2026-11-01T04:22:16Z",
+ "fers_sha256": "57bd5b81b64ba073764bb2ff16b89ec18380a80dc49b8349bacb634d6b9b058d",
+ "live_rows": 32,
+ "skipped_rows": 260,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:44Z",
+ "complete": true,
+ "summary": {
+  "rows": 32,
+  "verdicts": {
+   "CONFIRMED": 27,
+   "SHRUNK": 0,
+   "GREW": 0,
+   "MOVED": 3,
+   "GONE": 2,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 7,
+   "trail line from the club saved copy (not re-read live)": 4
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json",
+  "data/us-key/US-OR.json",
+  "data/us-key/US-PA.json",
+  "data/us-key/US-RI.json",
+  "data/us-key/US-SC.json",
+  "data/us-key/US-SD.json",
+  "data/us-key/US-TN.json",
+  "data/us-key/US-TX.json",
+  "data/us-key/US-UT.json",
+  "data/us-key/US-VA.json",
+  "data/us-key/US-VT.json",
+  "data/us-key/US-WA.json",
+  "data/us-key/US-WI.json",
+  "data/us-key/US-WV.json"
+ ],
+ "requests_this_run": 1030
+}

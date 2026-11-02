@@ -1,0 +1,38 @@
+{
+ "parks": {
+  "US-9001": {
+   "g": "official",
+   "m": [
+    [
+     "KDFWR-123",
+     "Sample Lake WMA",
+     9000,
+     "agency boundary file"
+    ]
+   ],
+   "src": [
+    {
+     "agency": "Kentucky Dept. of Fish & Wildlife Resources",
+     "url": "https://example.org/kdfwr"
+    }
+   ]
+  },
+  "US-9002": {
+   "g": "approximate",
+   "m": [
+    [
+     "PM-1",
+     "Sample Creek SNA",
+     700,
+     "traced from the agency's picture map"
+    ]
+   ],
+   "src": []
+  },
+  "US-9003": {
+   "g": "pin",
+   "m": [],
+   "src": []
+  }
+ }
+}

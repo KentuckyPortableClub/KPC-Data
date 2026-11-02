@@ -1,0 +1,2027 @@
+{
+ "area": "US-SC",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-SC.json",
+ "rows": {
+  "US-0518+US-9202@area@33.100,-79.365": {
+   "id": "US-0518+US-9202@area@33.100,-79.365",
+   "area": "US-SC",
+   "refs": [
+    "US-0518",
+    "US-9202"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.5,
+   "stored_wide_m": 67,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:55:33Z",
+   "layers": [
+    {
+     "ref": "US-0518",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:34Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:36Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "8 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:39Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.12,
+   "live_acres": 5.76,
+   "kept_pct": 100.0,
+   "size_pct": -5.9,
+   "moved_m": 218,
+   "gap_m": 0,
+   "wide_m": 65.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.8 ac vs 6.1 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.099641,
+    -79.363464
+   ]
+  },
+  "US-0518+US-9208@area@33.101,-79.365": {
+   "id": "US-0518+US-9208@area@33.101,-79.365",
+   "area": "US-SC",
+   "refs": [
+    "US-0518",
+    "US-9208"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.1,
+   "stored_wide_m": 65,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:55:41Z",
+   "layers": [
+    {
+     "ref": "US-0518",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:42Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:55:42Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:55:44Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:55:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.5,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-0702+US-4577@trail@35.135,-81.812": {
+   "id": "US-0702+US-4577@trail@35.135,-81.812",
+   "area": "US-SC",
+   "refs": [
+    "US-0702",
+    "US-4577"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 43.43,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:55:46Z",
+   "layers": [
+    {
+     "ref": "US-0702",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:47Z"
+    },
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 40.4,
+   "stored_shape_acres": 40.63,
+   "live_acres": 40.4,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 128,
+   "gap_m": 0,
+   "wide_m": 62.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 40.4 ac vs 40.6 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.135366,
+    -81.813144
+   ]
+  },
+  "US-0720+US-2902@area@35.117,-81.411": {
+   "id": "US-0720+US-2902@area@35.117,-81.411",
+   "area": "US-SC",
+   "refs": [
+    "US-0720",
+    "US-2902"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 118.4,
+   "stored_wide_m": 205,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:55:49Z",
+   "layers": [
+    {
+     "ref": "US-0720",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:49Z"
+    },
+    {
+     "ref": "US-2902",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:53Z"
+    },
+    {
+     "ref": "US-2902",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:55:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 109.53,
+   "live_acres": 109.76,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 198.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 109.8 ac vs 109.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.137959,
+    -81.359825
+   ]
+  },
+  "US-0720+US-4577@trail@35.150,-81.391": {
+   "id": "US-0720+US-4577@trail@35.150,-81.391",
+   "area": "US-SC",
+   "refs": [
+    "US-0720",
+    "US-4577"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 19.07,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:55:55Z",
+   "layers": [
+    {
+     "ref": "US-0720",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:56Z"
+    },
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 17.86,
+   "stored_shape_acres": 18.37,
+   "live_acres": 17.86,
+   "kept_pct": 100.0,
+   "size_pct": -2.8,
+   "moved_m": 16,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.9 ac vs 18.4 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.149779,
+    -81.390507
+   ]
+  },
+  "US-10415+US-2904@area@34.790,-80.881": {
+   "id": "US-10415+US-2904@area@34.790,-80.881",
+   "area": "US-SC",
+   "refs": [
+    "US-10415",
+    "US-2904"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 36.4,
+   "stored_wide_m": 53,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:55:56Z",
+   "layers": [
+    {
+     "ref": "US-10415",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:56Z"
+    },
+    {
+     "ref": "US-10415",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:55:58Z"
+    },
+    {
+     "ref": "US-10415",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:55:59Z"
+    },
+    {
+     "ref": "US-2904",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:00Z"
+    },
+    {
+     "ref": "US-2904",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:56:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 31.28,
+   "live_acres": 29.92,
+   "kept_pct": 99.8,
+   "size_pct": -4.3,
+   "moved_m": 302,
+   "gap_m": 0,
+   "wide_m": 46.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29.9 ac vs 31.3 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.771674,
+    -80.881257
+   ]
+  },
+  "US-10622+US-4523@area@34.589,-81.419": {
+   "id": "US-10622+US-4523@area@34.589,-81.419",
+   "area": "US-SC",
+   "refs": [
+    "US-10622",
+    "US-4523"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.0,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:02Z",
+   "layers": [
+    {
+     "ref": "US-10622",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:03Z"
+    },
+    {
+     "ref": "US-10622",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:08Z"
+    },
+    {
+     "ref": "US-4523",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.44,
+   "live_acres": 4.77,
+   "kept_pct": 100.0,
+   "size_pct": -12.2,
+   "moved_m": 55,
+   "gap_m": 0,
+   "wide_m": 30.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.8 ac vs 5.4 ac stored (-12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.588409,
+    -81.421521
+   ]
+  },
+  "US-12589+US-3879@area@34.530,-82.875": {
+   "id": "US-12589+US-3879@area@34.530,-82.875",
+   "area": "US-SC",
+   "refs": [
+    "US-12589",
+    "US-3879"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 185.0,
+   "stored_wide_m": 412,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:10Z",
+   "layers": [
+    {
+     "ref": "US-12589",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:10Z"
+    },
+    {
+     "ref": "US-12589",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:12Z"
+    },
+    {
+     "ref": "US-3879",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:56:13Z"
+    },
+    {
+     "ref": "US-3879",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:56:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 20,
+   "stored_shape_acres": 181.92,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2888+US-5488@area@34.597,-79.986": {
+   "id": "US-2888+US-5488@area@34.597,-79.986",
+   "area": "US-SC",
+   "refs": [
+    "US-2888",
+    "US-5488"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 28.0,
+   "stored_wide_m": 275,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:15Z",
+   "layers": [
+    {
+     "ref": "US-2888",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:15Z"
+    },
+    {
+     "ref": "US-2888",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:16Z"
+    },
+    {
+     "ref": "US-5488",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:19Z"
+    },
+    {
+     "ref": "US-5488",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:21Z"
+    },
+    {
+     "ref": "US-5488",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "93 record id(s)",
+     "n": 9,
+     "read": "2026-11-01T03:56:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 27.1,
+   "live_acres": 27.25,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 278.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 27.2 ac vs 27.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.598767,
+    -79.968008
+   ]
+  },
+  "US-2906+US-3917@area@34.325,-79.291": {
+   "id": "US-2906+US-3917@area@34.325,-79.291",
+   "area": "US-SC",
+   "refs": [
+    "US-2906",
+    "US-3917"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 301.7,
+   "stored_wide_m": 1135,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:24Z",
+   "layers": [
+    {
+     "ref": "US-2906",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:25Z"
+    },
+    {
+     "ref": "US-2906",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:26Z"
+    },
+    {
+     "ref": "US-2906",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:27Z"
+    },
+    {
+     "ref": "US-2906",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:29Z"
+    },
+    {
+     "ref": "US-3917",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:31Z"
+    },
+    {
+     "ref": "US-3917",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 299.97,
+   "live_acres": 299.92,
+   "kept_pct": 100.0,
+   "size_pct": -0.0,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 1132.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 299.9 ac vs 300.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.325084,
+    -79.291315
+   ]
+  },
+  "US-2908+US-4523@area@34.872,-83.087": {
+   "id": "US-2908+US-4523@area@34.872,-83.087",
+   "area": "US-SC",
+   "refs": [
+    "US-2908",
+    "US-4523"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 11.3,
+   "stored_wide_m": 87,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:33Z",
+   "layers": [
+    {
+     "ref": "US-2908",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:33Z"
+    },
+    {
+     "ref": "US-2908",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:34Z"
+    },
+    {
+     "ref": "US-4523",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:36Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.33,
+   "live_acres": 8.89,
+   "kept_pct": 97.3,
+   "size_pct": -4.7,
+   "moved_m": 28,
+   "gap_m": 0,
+   "wide_m": 87.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8.9 ac vs 9.3 ac stored (-5%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.871894,
+    -83.086705
+   ]
+  },
+  "US-2910+US-5486@area@33.799,-80.534": {
+   "id": "US-2910+US-5486@area@33.799,-80.534",
+   "area": "US-SC",
+   "refs": [
+    "US-2910",
+    "US-5486"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 10.1,
+   "stored_wide_m": 45,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:37Z",
+   "layers": [
+    {
+     "ref": "US-2910",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:37Z"
+    },
+    {
+     "ref": "US-2910",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:38Z"
+    },
+    {
+     "ref": "US-5486",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:56:39Z"
+    },
+    {
+     "ref": "US-5486",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "13 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T03:56:41Z"
+    },
+    {
+     "ref": "US-5486",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "193 record id(s)",
+     "n": 67,
+     "read": "2026-11-01T03:56:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 7.97,
+   "live_acres": 7.95,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 39.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.9 ac vs 8.0 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.816766,
+    -80.531042
+   ]
+  },
+  "US-2911+US-3879@area@34.424,-82.825": {
+   "id": "US-2911+US-3879@area@34.424,-82.825",
+   "area": "US-SC",
+   "refs": [
+    "US-2911",
+    "US-3879"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 407.5,
+   "stored_wide_m": 703,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:44Z",
+   "layers": [
+    {
+     "ref": "US-2911",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:45Z"
+    },
+    {
+     "ref": "US-2911",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:47Z"
+    },
+    {
+     "ref": "US-3879",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:56:48Z"
+    },
+    {
+     "ref": "US-3879",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:56:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 7,
+   "stored_shape_acres": 403.22,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-2914+US-9226@area@35.033,-82.721": {
+   "id": "US-2914+US-9226@area@35.033,-82.721",
+   "area": "US-SC",
+   "refs": [
+    "US-2914",
+    "US-9226"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 34.8,
+   "stored_wide_m": 177,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:48Z",
+   "layers": [
+    {
+     "ref": "US-2914",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:49Z"
+    },
+    {
+     "ref": "US-2914",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:51Z"
+    },
+    {
+     "ref": "US-9226",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:51Z"
+    },
+    {
+     "ref": "US-9226",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "9 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:53Z"
+    },
+    {
+     "ref": "US-9226",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 30.5,
+   "live_acres": 28.61,
+   "kept_pct": 99.1,
+   "size_pct": -6.2,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 174.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 28.6 ac vs 30.5 ac stored (-6%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.033592,
+    -82.721205
+   ]
+  },
+  "US-3874+US-5488@area@34.564,-79.925": {
+   "id": "US-3874+US-5488@area@34.564,-79.925",
+   "area": "US-SC",
+   "refs": [
+    "US-3874",
+    "US-5488"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1141.4,
+   "stored_wide_m": 620,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:55Z",
+   "layers": [
+    {
+     "ref": "US-3874",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:55Z"
+    },
+    {
+     "ref": "US-5488",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:56Z"
+    },
+    {
+     "ref": "US-5488",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:57Z"
+    },
+    {
+     "ref": "US-5488",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "93 record id(s)",
+     "n": 35,
+     "read": "2026-11-01T03:56:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1707.66,
+   "live_acres": 1059.53,
+   "kept_pct": 64.1,
+   "size_pct": -38.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 619.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 38% smaller (1059.5 ac vs 1707.7 ac stored)",
+   "live_center": [
+    34.563851,
+    -79.924847
+   ]
+  },
+  "US-3879+US-3897@area@34.545,-83.097": {
+   "id": "US-3879+US-3897@area@34.545,-83.097",
+   "area": "US-SC",
+   "refs": [
+    "US-3879",
+    "US-3897"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 435.7,
+   "stored_wide_m": 580,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:56:58Z",
+   "layers": [
+    {
+     "ref": "US-3879",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:58Z"
+    },
+    {
+     "ref": "US-3879",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:59Z"
+    },
+    {
+     "ref": "US-3897",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:56:59Z"
+    },
+    {
+     "ref": "US-3897",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "13 record id(s)",
+     "n": 13,
+     "read": "2026-11-01T03:57:01Z"
+    },
+    {
+     "ref": "US-3897",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 11,
+   "stored_shape_acres": 427.56,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-3879+US-9225@area@34.680,-83.326": {
+   "id": "US-3879+US-9225@area@34.680,-83.326",
+   "area": "US-SC",
+   "refs": [
+    "US-3879",
+    "US-9225"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.5,
+   "stored_wide_m": 23,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:03Z",
+   "layers": [
+    {
+     "ref": "US-3879",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:57:03Z"
+    },
+    {
+     "ref": "US-3879",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:57:04Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:04Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:06Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:08Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.31,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-3885+US-4523@area@34.605,-81.662": {
+   "id": "US-3885+US-4523@area@34.605,-81.662",
+   "area": "US-SC",
+   "refs": [
+    "US-3885",
+    "US-4523"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.4,
+   "stored_wide_m": 49,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:10Z",
+   "layers": [
+    {
+     "ref": "US-3885",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:10Z"
+    },
+    {
+     "ref": "US-3885",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:11Z"
+    },
+    {
+     "ref": "US-4523",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.04,
+   "live_acres": 4.39,
+   "kept_pct": 100.0,
+   "size_pct": 8.6,
+   "moved_m": 8,
+   "gap_m": 0,
+   "wide_m": 52.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.4 ac vs 4.0 ac stored (+9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.605261,
+    -81.661557
+   ]
+  },
+  "US-3900+US-9215@area@32.615,-81.330": {
+   "id": "US-3900+US-9215@area@32.615,-81.330",
+   "area": "US-SC",
+   "refs": [
+    "US-3900",
+    "US-9215"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16.0,
+   "stored_wide_m": 81,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:14Z",
+   "layers": [
+    {
+     "ref": "US-3900",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:14Z"
+    },
+    {
+     "ref": "US-3900",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T03:57:16Z"
+    },
+    {
+     "ref": "US-3900",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:17Z"
+    },
+    {
+     "ref": "US-9215",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:19Z"
+    },
+    {
+     "ref": "US-9215",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:20Z"
+    },
+    {
+     "ref": "US-9215",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:57:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.1,
+   "live_acres": 6.15,
+   "kept_pct": 99.8,
+   "size_pct": 0.8,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 81.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.2 ac vs 6.1 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.615612,
+    -81.32998
+   ]
+  },
+  "US-3902+US-4523@area@33.628,-82.134": {
+   "id": "US-3902+US-4523@area@33.628,-82.134",
+   "area": "US-SC",
+   "refs": [
+    "US-3902",
+    "US-4523"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 150.5,
+   "stored_wide_m": 357,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:23Z",
+   "layers": [
+    {
+     "ref": "US-3902",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:23Z"
+    },
+    {
+     "ref": "US-3902",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:24Z"
+    },
+    {
+     "ref": "US-3902",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:27Z"
+    },
+    {
+     "ref": "US-4523",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:28Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 133.06,
+   "live_acres": 133.75,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 419,
+   "gap_m": 0,
+   "wide_m": 268.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 133.8 ac vs 133.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.626657,
+    -82.129575
+   ]
+  },
+  "US-3911+US-4523@area@33.690,-82.172": {
+   "id": "US-3911+US-4523@area@33.690,-82.172",
+   "area": "US-SC",
+   "refs": [
+    "US-3911",
+    "US-4523"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 1.4,
+   "stored_wide_m": 31,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:28Z",
+   "layers": [
+    {
+     "ref": "US-3911",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:28Z"
+    },
+    {
+     "ref": "US-3911",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:30Z"
+    },
+    {
+     "ref": "US-4523",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 3,
+   "stored_shape_acres": 1.15,
+   "live_acres": 0.98,
+   "kept_pct": 100.0,
+   "size_pct": -14.9,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 29.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.0 ac vs 1.2 ac stored (-15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.691494,
+    -82.167198
+   ]
+  },
+  "US-4522+US-9202@area@33.204,-79.865": {
+   "id": "US-4522+US-9202@area@33.204,-79.865",
+   "area": "US-SC",
+   "refs": [
+    "US-4522",
+    "US-9202"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 64633.7,
+   "stored_wide_m": 5375,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:32Z",
+   "layers": [
+    {
+     "ref": "US-4522",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:33Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T03:57:34Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "8 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T03:57:35Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:57:35Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6205.31,
+   "live_acres": 61728.47,
+   "kept_pct": 100.0,
+   "size_pct": -4.5,
+   "moved_m": 1687,
+   "gap_m": 0,
+   "wide_m": 6231.9,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 61728.5 ac vs 64633.7 ac stored (row acres; the stored shape is a 6205.3 ac preview) (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.203954,
+    -79.864851
+   ]
+  },
+  "US-4522+US-9208@area@33.116,-79.417": {
+   "id": "US-4522+US-9208@area@33.116,-79.417",
+   "area": "US-SC",
+   "refs": [
+    "US-4522",
+    "US-9208"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 10.1,
+   "stored_wide_m": 101,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:35Z",
+   "layers": [
+    {
+     "ref": "US-4522",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:36Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:57:36Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:57:37Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T03:57:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 8.7,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-4523+US-9225@area@34.690,-83.326": {
+   "id": "US-4523+US-9225@area@34.690,-83.326",
+   "area": "US-SC",
+   "refs": [
+    "US-4523",
+    "US-9225"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 54.1,
+   "stored_wide_m": 163,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:37Z",
+   "layers": [
+    {
+     "ref": "US-4523",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:39Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:39Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:40Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:41Z"
+    },
+    {
+     "ref": "US-9225",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 27.27,
+   "live_acres": 50.7,
+   "kept_pct": 100.0,
+   "size_pct": -6.3,
+   "moved_m": 575,
+   "gap_m": 0,
+   "wide_m": 133.8,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 50.7 ac vs 54.1 ac stored (row acres; the stored shape is a 27.3 ac preview) (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.694495,
+    -83.330509
+   ]
+  },
+  "US-4577+US-6246@trail@36.153,-82.056": {
+   "id": "US-4577+US-6246@trail@36.153,-82.056",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6246"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 11.48,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:41Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "verdict": "NOT CHECKED",
+   "why": "park is not in any boundary key that was loaded",
+   "flags": []
+  },
+  "US-4577+US-6915@trail@35.807,-81.660": {
+   "id": "US-4577+US-6915@trail@35.807,-81.660",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6915"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 31.15,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:41Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6915",
+     "layer": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:57:42Z"
+    },
+    {
+     "ref": "US-6915",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:45Z"
+    },
+    {
+     "ref": "US-6915",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:46Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 29.34,
+   "stored_shape_acres": 28.98,
+   "live_acres": 29.34,
+   "kept_pct": 100.0,
+   "size_pct": 1.2,
+   "moved_m": 994,
+   "gap_m": 0,
+   "wide_m": 64.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29.3 ac vs 29.0 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.80574,
+    -81.64911
+   ]
+  },
+  "US-4577+US-6918@trail@36.107,-81.307": {
+   "id": "US-4577+US-6918@trail@36.107,-81.307",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6918"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 7.88,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:47Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6918",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:47Z"
+    },
+    {
+     "ref": "US-6918",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:47Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 7.36,
+   "stored_shape_acres": 7.29,
+   "live_acres": 7.36,
+   "kept_pct": 100.0,
+   "size_pct": 0.9,
+   "moved_m": 67,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.4 ac vs 7.3 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.107031,
+    -81.307829
+   ]
+  },
+  "US-4577+US-6936@trail@35.786,-82.013": {
+   "id": "US-4577+US-6936@trail@35.786,-82.013",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6936"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 1.74,
+   "stored_wide_m": 30.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:48Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6936",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:50Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 1.22,
+   "stored_shape_acres": 0.91,
+   "live_acres": 1.22,
+   "kept_pct": 100.0,
+   "size_pct": 34.3,
+   "moved_m": 41,
+   "gap_m": 0,
+   "wide_m": 19.9,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 34% bigger (1.2 ac vs 0.9 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    35.786216,
+    -82.012597
+   ]
+  },
+  "US-4577+US-6936@trail@35.805,-81.937": {
+   "id": "US-4577+US-6936@trail@35.805,-81.937",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6936"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 47.16,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:50Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6936",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:52Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 44.17,
+   "stored_shape_acres": 43.84,
+   "live_acres": 44.17,
+   "kept_pct": 100.0,
+   "size_pct": 0.8,
+   "moved_m": 1000,
+   "gap_m": 0,
+   "wide_m": 64.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 44.2 ac vs 43.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.849225,
+    -81.948463
+   ]
+  },
+  "US-4577+US-6937@trail@35.805,-81.937": {
+   "id": "US-4577+US-6937@trail@35.805,-81.937",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6937"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 47.16,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:52Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6937",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:57:53Z"
+    },
+    {
+     "ref": "US-6937",
+     "layer": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:54Z"
+    },
+    {
+     "ref": "US-6937",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:55Z"
+    },
+    {
+     "ref": "US-6937",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:56Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 44.17,
+   "stored_shape_acres": 43.85,
+   "live_acres": 44.17,
+   "kept_pct": 100.0,
+   "size_pct": 0.8,
+   "moved_m": 1000,
+   "gap_m": 0,
+   "wide_m": 64.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 44.2 ac vs 43.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.849225,
+    -81.948463
+   ]
+  },
+  "US-4577+US-6952@trail@35.589,-81.833": {
+   "id": "US-4577+US-6952@trail@35.589,-81.833",
+   "area": "US-SC",
+   "refs": [
+    "US-4577",
+    "US-6952"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.87,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:57:57Z",
+   "layers": [
+    {
+     "ref": "US-4577",
+     "layer": "saved copy US-4577.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-6952",
+     "layer": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:57:57Z"
+    },
+    {
+     "ref": "US-6952",
+     "layer": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:58Z"
+    },
+    {
+     "ref": "US-6952",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:57:59Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4577"
+   ],
+   "live_stretch_acres": 5.47,
+   "stored_shape_acres": 5.36,
+   "live_acres": 5.47,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 381,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.5 ac vs 5.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.584837,
+    -81.835143
+   ]
+  },
+  "US-9202+US-9208@same land@33.194,-79.376": {
+   "id": "US-9202+US-9208@same land@33.194,-79.376",
+   "area": "US-SC",
+   "refs": [
+    "US-9202",
+    "US-9208"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32617,
+   "checked_at": "2026-11-01T03:58:00Z",
+   "layers": [
+    {
+     "ref": "US-9202",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:58:00Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "8 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:58:01Z"
+    },
+    {
+     "ref": "US-9202",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T03:58:02Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:58:02Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T03:58:03Z"
+    },
+    {
+     "ref": "US-9208",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T03:58:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1023.75,
+   "live_acres": 1017.08,
+   "kept_pct": 99.1,
+   "size_pct": -0.7,
+   "moved_m": 90,
+   "gap_m": 0,
+   "wide_m": 1285.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1017.1 ac vs 1023.7 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.19299,
+    -79.376364
+   ]
+  }
+ },
+ "started": "2026-11-01T03:55:33Z",
+ "fers_sha256": "590009162774a33816c7b0c1c5a6205c801aaa32fd54fe8799e1e0217aeb8d5b",
+ "live_rows": 32,
+ "skipped_rows": 202,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:15:42Z",
+ "complete": true,
+ "summary": {
+  "rows": 32,
+  "verdicts": {
+   "CONFIRMED": 23,
+   "SHRUNK": 1,
+   "GREW": 1,
+   "MOVED": 0,
+   "GONE": 6,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 1
+  },
+  "flags": {
+   "trail line from the club saved copy (not re-read live)": 8,
+   "small overlap (under 50 yd across)": 4
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json",
+  "data/us-key/US-AZ.json",
+  "data/us-key/US-CA.json",
+  "data/us-key/US-CO.json",
+  "data/us-key/US-CT.json",
+  "data/us-key/US-DC.json",
+  "data/us-key/US-DE.json",
+  "data/us-key/US-FL.json",
+  "data/us-key/US-GA.json",
+  "data/us-key/US-HI.json",
+  "data/us-key/US-IA.json",
+  "data/us-key/US-ID.json",
+  "data/us-key/US-IL.json",
+  "data/us-key/US-IN.json",
+  "data/us-key/US-KS.json",
+  "data/us-key/US-LA.json",
+  "data/us-key/US-MA.json",
+  "data/us-key/US-MD.json",
+  "data/us-key/US-ME.json",
+  "data/us-key/US-MI.json",
+  "data/us-key/US-MN.json",
+  "data/us-key/US-MO.json",
+  "data/us-key/US-MS.json",
+  "data/us-key/US-MT.json",
+  "data/us-key/US-NC.json",
+  "data/us-key/US-ND.json",
+  "data/us-key/US-NE.json",
+  "data/us-key/US-NH.json",
+  "data/us-key/US-NJ.json",
+  "data/us-key/US-NM.json",
+  "data/us-key/US-NV.json",
+  "data/us-key/US-NY.json",
+  "data/us-key/US-OH.json",
+  "data/us-key/US-OK.json",
+  "data/us-key/US-OR.json",
+  "data/us-key/US-PA.json",
+  "data/us-key/US-RI.json",
+  "data/us-key/US-SC.json"
+ ],
+ "requests_this_run": 1030
+}

@@ -1,0 +1,115 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-11-02",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 199,
+  "pairs tested": 541,
+  "pairs whose boxes touch": 541,
+  "parks done by the box test": 7,
+  "parks whose outline could not be read": 0,
+  "pass": 1,
+  "problems": [
+   "looked file: small batch: the whole-area look-list is kept as it was",
+   "missing list: small batch: the missing-boundary list is kept as it was"
+  ],
+  "with official lines": 11
+ },
+ "pass2": {
+  "agree with the pass before": 70,
+  "cell_m": 10.0,
+  "date": "2026-11-02",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 65,
+  "official parks": 199,
+  "pairs tested": 29,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 1,
+  "pass": 2,
+  "problems": [],
+  "with official lines": 11
+ },
+ "pass3": {
+  "agree with the pass before": 66,
+  "cell_m": 5.0,
+  "date": "2026-11-02",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 76,
+  "official parks": 199,
+  "pairs tested": 28,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 1,
+  "pass": 3,
+  "problems": [],
+  "with official lines": 11
+ },
+ "pass4": {
+  "candidates without a pin": 14,
+  "cell_m": 5.0,
+  "date": "2026-10-26",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 190,
+  "pairs tested": 0,
+  "pass": 4,
+  "pins placed": 14,
+  "problems": [],
+  "with official lines": 1
+ },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 37,
+  "date": "2026-11-02",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 199,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [],
+  "river channels listed as water only (boat spots)": 0,
+  "spots given their boundary lines": 62,
+  "still not checked": 0,
+  "trail stretches given their true zone": 78,
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
+  "with official lines": 11
+ },
+ "per state": {
+  "US-KY": {
+   "candidates": 67,
+   "candidates (saved outline only)": 2,
+   "lines": 194,
+   "n-fers": 17,
+   "not sure": 3,
+   "pass1": 407,
+   "pass2": 360,
+   "spots": 407,
+   "very tight": 8,
+   "water only": 7
+  }
+ }
+}

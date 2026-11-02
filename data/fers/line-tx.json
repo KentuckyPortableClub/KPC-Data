@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "tx",
+ "states": [
+  "US-TX"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 19:36 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 38,
+  "DROPPED": 89,
+  "NEVER LOOKED AT": 875
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 894,
+   "pairs whose boxes touch": 894
+  },
+  "pass2": {
+   "agree with the pass before": 170,
+   "date": "2026-11-01",
+   "pairs tested": 60
+  },
+  "pass3": {
+   "agree with the pass before": 110,
+   "date": "2026-11-01",
+   "pairs tested": 58
+  },
+  "pass5": {
+   "checked": 23,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-TX": "data/fers/US-TX.json"
+ },
+ "US-TX": {
+  "rows": 189,
+  "live": 46,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 88,
+  "merged": 52
+ },
+ "states_ready": [
+  "US-TX"
+ ],
+ "states_held": []
+}

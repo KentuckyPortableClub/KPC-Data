@@ -1,0 +1,59 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mt",
+ "states": [
+  "US-MT"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 22:28 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 26,
+  "DROPPED": 133,
+  "NEVER LOOKED AT": 421
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 859,
+   "pairs whose boxes touch": 859
+  },
+  "pass2": {
+   "agree with the pass before": 1602,
+   "date": "2026-11-01",
+   "pairs tested": 121
+  },
+  "pass3": {
+   "agree with the pass before": 553,
+   "date": "2026-11-01",
+   "pairs tested": 116
+  },
+  "pass5": {
+   "checked": 26,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-MT": "data/fers/US-MT.json"
+ },
+ "US-MT": {
+  "rows": 1805,
+  "live": 54,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 2,
+   "no public owner on the ownership map": 2
+  },
+  "dropped": 1325,
+  "merged": 422
+ },
+ "states_ready": [
+  "US-MT"
+ ],
+ "states_held": []
+}

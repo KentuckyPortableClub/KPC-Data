@@ -1,0 +1,2252 @@
+{
+ "area": "US-AK",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-AK.json",
+ "rows": {
+  "US-0003+US-0143@area@56.676,-157.741": {
+   "id": "US-0003+US-0143@area@56.676,-157.741",
+   "area": "US-AK",
+   "refs": [
+    "US-0003",
+    "US-0143"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1.8,
+   "stored_wide_m": 59,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T11:31:34Z",
+   "layers": [
+    {
+     "ref": "US-0003",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:34Z"
+    },
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.42,
+   "live_acres": 1.6,
+   "kept_pct": 100.0,
+   "size_pct": 12.5,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 57.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.6 ac vs 1.4 ac stored (+12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    56.675593,
+    -157.73945
+   ]
+  },
+  "US-0003+US-0902@same land@56.780,-157.556": {
+   "id": "US-0003+US-0902@same land@56.780,-157.556",
+   "area": "US-AK",
+   "refs": [
+    "US-0003",
+    "US-0902"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T11:32:09Z",
+   "layers": [
+    {
+     "ref": "US-0003",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:32:09Z"
+    },
+    {
+     "ref": "US-0902",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:32:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 427486.94,
+   "live_acres": 586737.16,
+   "kept_pct": 96.7,
+   "size_pct": 37.3,
+   "moved_m": 16618,
+   "gap_m": 0,
+   "wide_m": 32589.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 37% bigger (586737.2 ac vs 427486.9 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    56.903105,
+    -157.710539
+   ]
+  },
+  "US-0029+US-12607@same land@58.852,-136.464": {
+   "id": "US-0029+US-12607@same land@58.852,-136.464",
+   "area": "US-AK",
+   "refs": [
+    "US-0029",
+    "US-12607"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:32:09Z",
+   "layers": [
+    {
+     "ref": "US-0029",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:32:10Z"
+    },
+    {
+     "ref": "US-12607",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:32:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3058113.13,
+   "live_acres": 3224230.43,
+   "kept_pct": 99.0,
+   "size_pct": 5.4,
+   "moved_m": 40227,
+   "gap_m": 0,
+   "wide_m": 64481.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3224230.4 ac vs 3058113.1 ac stored (+5%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    58.690016,
+    -137.085466
+   ]
+  },
+  "US-0045+US-0143@area@59.740,-149.842": {
+   "id": "US-0045+US-0143@area@59.740,-149.842",
+   "area": "US-AK",
+   "refs": [
+    "US-0045",
+    "US-0143"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.8,
+   "stored_wide_m": 115,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:32:13Z",
+   "layers": [
+    {
+     "ref": "US-0045",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:32:15Z"
+    },
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:32:24Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.43,
+   "live_acres": 5.43,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 114.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.4 ac vs 5.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    59.740047,
+    -149.841705
+   ]
+  },
+  "US-0069+US-0143@area@60.072,-141.483": {
+   "id": "US-0069+US-0143@area@60.072,-141.483",
+   "area": "US-AK",
+   "refs": [
+    "US-0069",
+    "US-0143"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.4,
+   "stored_wide_m": 147,
+   "utm_epsg": 32607,
+   "checked_at": "2026-11-01T11:33:03Z",
+   "layers": [
+    {
+     "ref": "US-0069",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:33:03Z"
+    },
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:33:10Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 6.01,
+   "live_acres": 6.22,
+   "kept_pct": 100.0,
+   "size_pct": 3.4,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 151.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 6.2 ac vs 6.0 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    60.07186,
+    -141.482586
+   ]
+  },
+  "US-0143+US-0144@area@57.301,-156.330": {
+   "id": "US-0143+US-0144@area@57.301,-156.330",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-0144"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.2,
+   "stored_wide_m": 23,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T11:33:38Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:33:43Z"
+    },
+    {
+     "ref": "US-0144",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:34:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.12,
+   "live_acres": 0.18,
+   "kept_pct": 100.0,
+   "size_pct": -11.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 19.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.2 ac vs 0.2 ac stored (row acres; the stored shape is a 0.1 ac preview) (-11%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    57.301385,
+    -156.329401
+   ]
+  },
+  "US-0143+US-0150@area@58.390,-152.766": {
+   "id": "US-0143+US-0150@area@58.390,-152.766",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-0150"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 602.7,
+   "stored_wide_m": 1053,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:34:13Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:34:18Z"
+    },
+    {
+     "ref": "US-0150",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:34:48Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 602.39,
+   "live_acres": 615.07,
+   "kept_pct": 100.0,
+   "size_pct": 2.1,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 1062.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 615.1 ac vs 602.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    58.390783,
+    -152.766353
+   ]
+  },
+  "US-0143+US-0902@area@56.676,-157.741": {
+   "id": "US-0143+US-0902@area@56.676,-157.741",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-0902"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1.8,
+   "stored_wide_m": 59,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T11:34:50Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:41Z"
+    },
+    {
+     "ref": "US-0902",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:31:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 1.42,
+   "live_acres": 1.6,
+   "kept_pct": 100.0,
+   "size_pct": 12.5,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 57.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.6 ac vs 1.4 ac stored (+12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    56.675593,
+    -157.73945
+   ]
+  },
+  "US-0143+US-1638@area@59.461,-151.412": {
+   "id": "US-0143+US-1638@area@59.461,-151.412",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-1638"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 22.9,
+   "stored_wide_m": 255,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:35:15Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:20Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:49Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:52Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:55Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:35:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22.08,
+   "live_acres": 22.13,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 256.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.1 ac vs 22.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    59.461331,
+    -151.412375
+   ]
+  },
+  "US-0143+US-1639@area@58.147,-152.108": {
+   "id": "US-0143+US-1639@area@58.147,-152.108",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-1639"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1083.1,
+   "stored_wide_m": 265,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:35:58Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:36:03Z"
+    },
+    {
+     "ref": "US-1639",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:36:33Z"
+    },
+    {
+     "ref": "US-1639",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:36:35Z"
+    },
+    {
+     "ref": "US-1639",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:36:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 465.2,
+   "live_acres": 1357.09,
+   "kept_pct": 97.4,
+   "size_pct": 191.7,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 267.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 192% bigger (1357.1 ac vs 465.2 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    58.397868,
+    -152.128314
+   ]
+  },
+  "US-0143+US-1640@area@58.496,-152.685": {
+   "id": "US-0143+US-1640@area@58.496,-152.685",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-1640"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 86.9,
+   "stored_wide_m": 426,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:36:38Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:36:46Z"
+    },
+    {
+     "ref": "US-1640",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:37:26Z"
+    },
+    {
+     "ref": "US-1640",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:37:28Z"
+    },
+    {
+     "ref": "US-1640",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:37:30Z"
+    },
+    {
+     "ref": "US-1640",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:37:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 85.91,
+   "live_acres": 85.55,
+   "kept_pct": 100.0,
+   "size_pct": -0.4,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 432.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 85.5 ac vs 85.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    58.495758,
+    -152.685368
+   ]
+  },
+  "US-0143+US-3392@area@59.461,-151.412": {
+   "id": "US-0143+US-3392@area@59.461,-151.412",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-3392"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 22.9,
+   "stored_wide_m": 255,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:37:32Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:20Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:49Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:52Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:35:55Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:37:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 22.08,
+   "live_acres": 22.13,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 256.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22.1 ac vs 22.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    59.461331,
+    -151.412375
+   ]
+  },
+  "US-0143+US-4570@trail@64.543,-163.487": {
+   "id": "US-0143+US-4570@trail@64.543,-163.487",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-4570"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32603,
+   "checked_at": "2026-11-01T11:37:59Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:38:08Z"
+    },
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "live_stretch_acres": 102.12,
+   "stored_shape_acres": 103.96,
+   "live_acres": 102.12,
+   "kept_pct": 98.6,
+   "size_pct": -1.8,
+   "moved_m": 656,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 102.1 ac vs 104.0 ac stored (-2%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    64.555425,
+    -163.541417
+   ]
+  },
+  "US-0143+US-7862@area@53.345,-167.472": {
+   "id": "US-0143+US-7862@area@53.345,-167.472",
+   "area": "US-AK",
+   "refs": [
+    "US-0143",
+    "US-7862"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 317108.3,
+   "stored_wide_m": 10413,
+   "utm_epsg": 32603,
+   "checked_at": "2026-11-01T11:38:48Z",
+   "layers": [
+    {
+     "ref": "US-0143",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:38:56Z"
+    },
+    {
+     "ref": "US-7862",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:39:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 24510.09,
+   "live_acres": 268913.46,
+   "kept_pct": 93.5,
+   "size_pct": -15.2,
+   "moved_m": 1474,
+   "gap_m": 0,
+   "wide_m": 11348.8,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 268913.5 ac vs 317108.3 ac stored (row acres; the stored shape is a 24510.1 ac preview) (-15%), 94% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    53.574439,
+    -166.881264
+   ]
+  },
+  "US-0146+US-4570@trail@63.297,-157.715": {
+   "id": "US-0146+US-4570@trail@63.297,-157.715",
+   "area": "US-AK",
+   "refs": [
+    "US-0146",
+    "US-4570"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32604,
+   "checked_at": "2026-11-01T11:39:44Z",
+   "layers": [
+    {
+     "ref": "US-0146",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:39:45Z"
+    },
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "live_stretch_acres": 1697.23,
+   "stored_shape_acres": 408.19,
+   "live_acres": 409.01,
+   "kept_pct": 99.8,
+   "size_pct": 0.2,
+   "moved_m": 62597,
+   "gap_m": 0,
+   "wide_m": 61.3,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 409.0 ac vs 408.2 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    62.750244,
+    -157.998274
+   ]
+  },
+  "US-0149+US-4447@area@60.366,-149.960": {
+   "id": "US-0149+US-4447@area@60.366,-149.960",
+   "area": "US-AK",
+   "refs": [
+    "US-0149",
+    "US-4447"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 14.3,
+   "stored_wide_m": 35,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:39:46Z",
+   "layers": [
+    {
+     "ref": "US-0149",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:39:47Z"
+    },
+    {
+     "ref": "US-4447",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:39:51Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T11:39:56Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 0,
+     "read": "2026-11-01T11:39:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 68.6,
+   "stored_water_pct": 20,
+   "stored_shape_acres": 8.2,
+   "live_acres": 2.07,
+   "kept_pct": 29.8,
+   "size_pct": -74.8,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 28.5,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 75% smaller (2.1 ac vs 8.2 ac stored)",
+   "live_center": [
+    60.485573,
+    -149.998265
+   ]
+  },
+  "US-0149+US-7194@area@60.773,-151.056": {
+   "id": "US-0149+US-7194@area@60.773,-151.056",
+   "area": "US-AK",
+   "refs": [
+    "US-0149",
+    "US-7194"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 188.1,
+   "stored_wide_m": 657,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:39:57Z",
+   "layers": [
+    {
+     "ref": "US-0149",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:39:57Z"
+    },
+    {
+     "ref": "US-7194",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:39:58Z"
+    },
+    {
+     "ref": "US-7194",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:00Z"
+    },
+    {
+     "ref": "US-7194",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:02Z"
+    },
+    {
+     "ref": "US-7194",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:03Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 3,
+     "read": "2026-11-01T11:40:05Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 24,
+     "read": "2026-11-01T11:40:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 95.3,
+   "stored_water_pct": 92,
+   "stored_shape_acres": 183.46,
+   "live_acres": 171.57,
+   "kept_pct": 95.3,
+   "size_pct": -6.5,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 645.6,
+   "flags": [
+    "water-only"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 171.6 ac vs 183.5 ac stored (-6%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    60.77243,
+    -151.056441
+   ]
+  },
+  "US-0149+US-7884@area@60.317,-149.810": {
+   "id": "US-0149+US-7884@area@60.317,-149.810",
+   "area": "US-AK",
+   "refs": [
+    "US-0149",
+    "US-7884"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 14.1,
+   "stored_wide_m": 31,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:40:06Z",
+   "layers": [
+    {
+     "ref": "US-0149",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:40:06Z"
+    },
+    {
+     "ref": "US-7884",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:40:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 19,
+   "stored_shape_acres": 8.17,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "water-only"
+   ],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-0150+US-1639@area@58.342,-152.576": {
+   "id": "US-0150+US-1639@area@58.342,-152.576",
+   "area": "US-AK",
+   "refs": [
+    "US-0150",
+    "US-1639"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:40:08Z",
+   "layers": [
+    {
+     "ref": "US-0150",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:40:09Z"
+    },
+    {
+     "ref": "US-1639",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:11Z"
+    },
+    {
+     "ref": "US-1639",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:12Z"
+    },
+    {
+     "ref": "US-1639",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:13Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.63,
+   "live_acres": 3.2,
+   "kept_pct": 100.0,
+   "size_pct": 95.9,
+   "moved_m": 71,
+   "gap_m": 0,
+   "wide_m": 22.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 96% bigger (3.2 ac vs 1.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    58.343666,
+    -152.563402
+   ]
+  },
+  "US-0157+US-10281@area@65.805,-146.649": {
+   "id": "US-0157+US-10281@area@65.805,-146.649",
+   "area": "US-AK",
+   "refs": [
+    "US-0157",
+    "US-10281"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 12.5,
+   "stored_wide_m": 111,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:40:13Z",
+   "layers": [
+    {
+     "ref": "US-0157",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:40:16Z"
+    },
+    {
+     "ref": "US-10281",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:26Z"
+    },
+    {
+     "ref": "US-10281",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:29Z"
+    },
+    {
+     "ref": "US-10281",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.9,
+   "live_acres": 10.05,
+   "kept_pct": 96.4,
+   "size_pct": 1.5,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 112.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.0 ac vs 9.9 ac stored (+2%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    65.805223,
+    -146.649055
+   ]
+  },
+  "US-0157+US-11855@area@65.743,-146.261": {
+   "id": "US-0157+US-11855@area@65.743,-146.261",
+   "area": "US-AK",
+   "refs": [
+    "US-0157",
+    "US-11855"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 144.4,
+   "stored_wide_m": 321,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:40:31Z",
+   "layers": [
+    {
+     "ref": "US-0157",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:40:35Z"
+    },
+    {
+     "ref": "US-11855",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:43Z"
+    },
+    {
+     "ref": "US-11855",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:40:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 138.55,
+   "live_acres": 140.38,
+   "kept_pct": 100.0,
+   "size_pct": 1.3,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 322.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-11855: 1 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query: [417] | US-11855: found by name 'Steese National Conservation Area' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 140.4 ac vs 138.6 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    65.752638,
+    -146.241787
+   ]
+  },
+  "US-11855+US-7886@area@65.114,-143.759": {
+   "id": "US-11855+US-7886@area@65.114,-143.759",
+   "area": "US-AK",
+   "refs": [
+    "US-11855",
+    "US-7886"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the agency ownership map did not answer",
+   "stored_acres": 60.9,
+   "stored_wide_m": 159,
+   "utm_epsg": 32607,
+   "checked_at": "2026-11-01T11:40:48Z",
+   "layers": [
+    {
+     "ref": "US-11855",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:48Z"
+    },
+    {
+     "ref": "US-11855",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:40:48Z"
+    },
+    {
+     "ref": "US-7886",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 57.47,
+   "live_acres": 58.46,
+   "kept_pct": 100.0,
+   "size_pct": 1.7,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 161.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "US-11855: 1 key record id(s) no longer in gis.blm.gov/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query: [417] | US-11855: found by name 'Steese National Conservation Area' near the spot as new id(s) [None] (geometry now: CONFIRMED: live overlap 58.5 ac vs 57.5 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance))",
+   "live_center": [
+    65.113686,
+    -143.758901
+   ]
+  },
+  "US-11862+US-4448@area@58.540,-135.047": {
+   "id": "US-11862+US-4448@area@58.540,-135.047",
+   "area": "US-AK",
+   "refs": [
+    "US-11862",
+    "US-4448"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 0.6,
+   "stored_wide_m": 35,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:40:51Z",
+   "layers": [
+    {
+     "ref": "US-11862",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:51Z"
+    },
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:40:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 0.47,
+   "live_acres": 0.53,
+   "kept_pct": 100.0,
+   "size_pct": 13.0,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 35.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 0.5 ac vs 0.5 ac stored (+13%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    58.540161,
+    -135.046922
+   ]
+  },
+  "US-1637+US-4570@trail@61.160,-149.127": {
+   "id": "US-1637+US-4570@trail@61.160,-149.127",
+   "area": "US-AK",
+   "refs": [
+    "US-1637",
+    "US-4570"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:41:20Z",
+   "layers": [
+    {
+     "ref": "US-1637",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:20Z"
+    },
+    {
+     "ref": "US-1637",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:22Z"
+    },
+    {
+     "ref": "US-1637",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:24Z"
+    },
+    {
+     "ref": "US-1637",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:25Z"
+    },
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "live_stretch_acres": 30.56,
+   "stored_shape_acres": 33.39,
+   "live_acres": 30.56,
+   "kept_pct": 94.5,
+   "size_pct": -8.5,
+   "moved_m": 10349,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 30.6 ac vs 33.4 ac stored (-8%), 95% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    61.223399,
+    -149.266491
+   ]
+  },
+  "US-1638+US-3392@same land@59.345,-151.135": {
+   "id": "US-1638+US-3392@same land@59.345,-151.135",
+   "area": "US-AK",
+   "refs": [
+    "US-1638",
+    "US-3392"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32605,
+   "checked_at": "2026-11-01T11:41:26Z",
+   "layers": [
+    {
+     "ref": "US-1638",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:41:27Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:41:28Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:41:29Z"
+    },
+    {
+     "ref": "US-1638",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 3,
+     "read": "2026-11-01T11:41:29Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:41:27Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:41:28Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:41:29Z"
+    },
+    {
+     "ref": "US-3392",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T11:41:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 198114.56,
+   "live_acres": 253151.39,
+   "kept_pct": 100.0,
+   "size_pct": 27.8,
+   "moved_m": 3656,
+   "gap_m": 0,
+   "wide_m": 27266.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 28% bigger (253151.4 ac vs 198114.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    59.313546,
+    -151.115751
+   ]
+  },
+  "US-4447+US-4570@trail@60.625,-149.063": {
+   "id": "US-4447+US-4570@trail@60.625,-149.063",
+   "area": "US-AK",
+   "refs": [
+    "US-4447",
+    "US-4570"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:41:30Z",
+   "layers": [
+    {
+     "ref": "US-4447",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:32Z"
+    },
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "live_stretch_acres": 27.27,
+   "stored_shape_acres": 38.19,
+   "live_acres": 22.63,
+   "kept_pct": 71.4,
+   "size_pct": -40.8,
+   "moved_m": 7840,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 41% smaller (22.6 ac vs 38.2 ac stored)",
+   "live_center": [
+    60.695366,
+    -149.063466
+   ]
+  },
+  "US-4447+US-7884@area@60.475,-149.109": {
+   "id": "US-4447+US-7884@area@60.475,-149.109",
+   "area": "US-AK",
+   "refs": [
+    "US-4447",
+    "US-7884"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1075516.7,
+   "stored_wide_m": 13465,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:41:37Z",
+   "layers": [
+    {
+     "ref": "US-4447",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:39Z"
+    },
+    {
+     "ref": "US-7884",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:41:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 41281.43,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-4448+US-4537@area@57.231,-134.653": {
+   "id": "US-4448+US-4537@area@57.231,-134.653",
+   "area": "US-AK",
+   "refs": [
+    "US-4448",
+    "US-4537"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 666322.8,
+   "stored_wide_m": 12305,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:41:44Z",
+   "layers": [
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:41:49Z"
+    },
+    {
+     "ref": "US-4537",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:42:11Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 19016.53,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-4448+US-4538@area@54.725,-130.791": {
+   "id": "US-4448+US-4538@area@54.725,-130.791",
+   "area": "US-AK",
+   "refs": [
+    "US-4448",
+    "US-4538"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 1719530.8,
+   "stored_wide_m": 13315,
+   "utm_epsg": 32609,
+   "checked_at": "2026-11-01T11:42:12Z",
+   "layers": [
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:42:17Z"
+    },
+    {
+     "ref": "US-4538",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:42:40Z"
+    },
+    {
+     "ref": "US-4538",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:42:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 16923.02,
+   "live_acres": 1577584.08,
+   "kept_pct": 99.9,
+   "size_pct": -8.3,
+   "moved_m": 95531,
+   "gap_m": 0,
+   "wide_m": 43662.0,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1577584.1 ac vs 1719530.8 ac stored (row acres; the stored shape is a 16923.0 ac preview) (-8%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    56.001379,
+    -130.724952
+   ]
+  },
+  "US-4448+US-4592@area@59.260,-135.165": {
+   "id": "US-4448+US-4592@area@59.260,-135.165",
+   "area": "US-AK",
+   "refs": [
+    "US-4448",
+    "US-4592"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 73740.4,
+   "stored_wide_m": 11265,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:42:44Z",
+   "layers": [
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:42:49Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:43:11Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T11:43:13Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:43:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 36125.06,
+   "live_acres": 104974.85,
+   "kept_pct": 100.0,
+   "size_pct": 190.6,
+   "moved_m": 7417,
+   "gap_m": 0,
+   "wide_m": 19457.0,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 191% bigger (104974.9 ac vs 36125.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    59.260387,
+    -135.166279
+   ]
+  },
+  "US-4448+US-4593@area@56.508,-132.289": {
+   "id": "US-4448+US-4593@area@56.508,-132.289",
+   "area": "US-AK",
+   "refs": [
+    "US-4448",
+    "US-4593"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 36.1,
+   "stored_wide_m": 45,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:43:15Z",
+   "layers": [
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:43:20Z"
+    },
+    {
+     "ref": "US-4593",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 6,
+     "read": "2026-11-01T11:43:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 31.12,
+   "live_acres": 29.8,
+   "kept_pct": 100.0,
+   "size_pct": -4.3,
+   "moved_m": 184,
+   "gap_m": 0,
+   "wide_m": 40.6,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29.8 ac vs 31.1 ac stored (-4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    56.508498,
+    -132.274227
+   ]
+  },
+  "US-4448+US-7243@area@58.521,-134.802": {
+   "id": "US-4448+US-7243@area@58.521,-134.802",
+   "area": "US-AK",
+   "refs": [
+    "US-4448",
+    "US-7243"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 5.1,
+   "stored_wide_m": 127,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:43:42Z",
+   "layers": [
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:43:48Z"
+    },
+    {
+     "ref": "US-7243",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:11Z"
+    },
+    {
+     "ref": "US-7243",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:13Z"
+    },
+    {
+     "ref": "US-7243",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 4.71,
+   "live_acres": 4.75,
+   "kept_pct": 100.0,
+   "size_pct": 0.8,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 128.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.8 ac vs 4.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    58.520553,
+    -134.802127
+   ]
+  },
+  "US-4448+US-7245@trail@58.493,-134.712": {
+   "id": "US-4448+US-7245@trail@58.493,-134.712",
+   "area": "US-AK",
+   "refs": [
+    "US-4448",
+    "US-7245"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:44:16Z",
+   "layers": [
+    {
+     "ref": "US-4448",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:21Z"
+    },
+    {
+     "ref": "US-7245",
+     "layer": "saved copy US-7245.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-7245"
+   ],
+   "live_stretch_acres": 172.96,
+   "stored_shape_acres": 174.97,
+   "live_acres": 172.96,
+   "kept_pct": 99.1,
+   "size_pct": -1.1,
+   "moved_m": 194,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 173.0 ac vs 175.0 ac stored (-1%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    58.491405,
+    -134.712315
+   ]
+  },
+  "US-4570+US-7884@trail@60.624,-149.063": {
+   "id": "US-4570+US-7884@trail@60.624,-149.063",
+   "area": "US-AK",
+   "refs": [
+    "US-4570",
+    "US-7884"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:44:41Z",
+   "layers": [
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-7884",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:44:42Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "stored_shape_acres": 721.27,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-4570+US-7884@trail@61.015,-149.088": {
+   "id": "US-4570+US-7884@trail@61.015,-149.088",
+   "area": "US-AK",
+   "refs": [
+    "US-4570",
+    "US-7884"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:44:42Z",
+   "layers": [
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-7884",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-01T11:44:43Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "stored_shape_acres": 99.78,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "US-4570+US-9701@trail@61.505,-149.390": {
+   "id": "US-4570+US-9701@trail@61.505,-149.390",
+   "area": "US-AK",
+   "refs": [
+    "US-4570",
+    "US-9701"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: low-confidence outline for Palmer Hay Flats Wildlife Refuge (check the join)",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32606,
+   "checked_at": "2026-11-01T11:44:43Z",
+   "layers": [
+    {
+     "ref": "US-4570",
+     "layer": "saved copy US-4570.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-9701",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:43Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4570"
+   ],
+   "live_stretch_acres": 11.56,
+   "stored_shape_acres": 13.05,
+   "live_acres": 11.56,
+   "kept_pct": 91.1,
+   "size_pct": -11.4,
+   "moved_m": 2662,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.6 ac vs 13.0 ac stored (-11%), 91% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    61.48276,
+    -149.373078
+   ]
+  },
+  "US-4592+US-7240@area@59.484,-136.021": {
+   "id": "US-4592+US-7240@area@59.484,-136.021",
+   "area": "US-AK",
+   "refs": [
+    "US-4592",
+    "US-7240"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 20534.3,
+   "stored_wide_m": 2972,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:44:44Z",
+   "layers": [
+    {
+     "ref": "US-4592",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:45Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 5,
+     "read": "2026-11-01T11:44:45Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:44:45Z"
+    },
+    {
+     "ref": "US-7240",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:46Z"
+    },
+    {
+     "ref": "US-7240",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:48Z"
+    },
+    {
+     "ref": "US-7240",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:50Z"
+    },
+    {
+     "ref": "US-7240",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 10113.28,
+   "live_acres": 22867.57,
+   "kept_pct": 99.3,
+   "size_pct": 11.4,
+   "moved_m": 12,
+   "gap_m": 0,
+   "wide_m": 2984.7,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 22867.6 ac vs 20534.3 ac stored (row acres; the stored shape is a 10113.3 ac preview) (+11%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    59.483621,
+    -136.021394
+   ]
+  },
+  "US-4592+US-7241@area@59.335,-135.567": {
+   "id": "US-4592+US-7241@area@59.335,-135.567",
+   "area": "US-AK",
+   "refs": [
+    "US-4592",
+    "US-7241"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 146.8,
+   "stored_wide_m": 405,
+   "utm_epsg": 32608,
+   "checked_at": "2026-11-01T11:44:52Z",
+   "layers": [
+    {
+     "ref": "US-4592",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:53Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "how": "9 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:44:53Z"
+    },
+    {
+     "ref": "US-4592",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:54Z"
+    },
+    {
+     "ref": "US-7241",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:55Z"
+    },
+    {
+     "ref": "US-7241",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:57Z"
+    },
+    {
+     "ref": "US-7241",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:44:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 144.9,
+   "live_acres": 144.68,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 380,
+   "gap_m": 0,
+   "wide_m": 401.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 144.7 ac vs 144.9 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    59.335566,
+    -135.560199
+   ]
+  },
+  "US-4594+US-7232@area@63.164,-143.219": {
+   "id": "US-4594+US-7232@area@63.164,-143.219",
+   "area": "US-AK",
+   "refs": [
+    "US-4594",
+    "US-7232"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 273.8,
+   "stored_wide_m": 805,
+   "utm_epsg": 32607,
+   "checked_at": "2026-11-01T11:45:00Z",
+   "layers": [
+    {
+     "ref": "US-4594",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:45:00Z"
+    },
+    {
+     "ref": "US-4594",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "how": "10 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:45:01Z"
+    },
+    {
+     "ref": "US-7232",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:45:02Z"
+    },
+    {
+     "ref": "US-7232",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:45:04Z"
+    },
+    {
+     "ref": "US-7232",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:45:06Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 273.75,
+   "live_acres": 274.01,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 804.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 274.0 ac vs 273.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    63.163888,
+    -143.218356
+   ]
+  }
+ },
+ "started": "2026-11-01T11:31:34Z",
+ "fers_sha256": "8a50b99383042b142cee2de99995e99d920e220d1401e392025e4ed2dd4ef581",
+ "live_rows": 39,
+ "skipped_rows": 1212,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:59Z",
+ "complete": true,
+ "summary": {
+  "rows": 39,
+  "verdicts": {
+   "CONFIRMED": 25,
+   "SHRUNK": 2,
+   "GREW": 5,
+   "MOVED": 0,
+   "GONE": 5,
+   "RECORD CHANGED": 2,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "small overlap (under 50 yd across)": 5,
+   "trail line from the club saved copy (not re-read live)": 8,
+   "water-only": 3
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json"
+ ],
+ "requests_this_run": 3
+}

@@ -1,0 +1,177 @@
+{
+ "area": "mbsk",
+ "date": "2026-10-30",
+ "states": [
+  "CA-MB",
+  "CA-SK"
+ ],
+ "rows": [
+  {
+   "area": "mbsk",
+   "state": "CA-MB",
+   "refs": [
+    "CA-0541",
+    "CA-2460"
+   ],
+   "names": {
+    "CA-0541": "Fisher Bay Provincial Park",
+    "CA-2460": "Moose Creek Wildlife Management Area"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "6620.7 ac",
+   "sort": 6620.7,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
+   "id": "CA-0541+CA-2460@area@51.485,-97.108",
+   "sources": {
+    "CA-0541": "downloaded 2026-10-30",
+    "CA-2460": "downloaded 2026-10-30"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mbsk",
+   "state": "CA-MB",
+   "refs": [
+    "CA-0108",
+    "CA-2395"
+   ],
+   "names": {
+    "CA-0108": "Wapusk National Park",
+    "CA-2395": "Churchill Wildlife Management Area"
+   },
+   "what": "not sure",
+   "kind": "area",
+   "size": "6194.0 ac",
+   "sort": 6194.0,
+   "reason": "this spot is 4480 km from Churchill Wildlife Management Area's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join (held until checked; rule B13)",
+   "id": "CA-0108+CA-2395@area@57.131,-92.986",
+   "sources": {
+    "CA-0108": "downloaded 2026-10-30",
+    "CA-2395": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mbsk",
+   "state": "CA-SK",
+   "refs": [
+    "CA-2838",
+    "CA-2839"
+   ],
+   "names": {
+    "CA-2838": "Scent Grass Lake Migratory Bird Sanctuary",
+    "CA-2839": "Scentgrass Lake Game Preserve"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "1534.4 ac",
+   "sort": 1534.4,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-2838+CA-2839@area@52.957,-108.152",
+   "sources": {
+    "CA-2838": "downloaded 2026-10-30",
+    "CA-2839": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mbsk",
+   "state": "CA-SK",
+   "refs": [
+    "CA-2894",
+    "CA-2896"
+   ],
+   "names": {
+    "CA-2894": "Wascana Centre Regional Park Recreation Site",
+    "CA-2896": "Wascana Lake Migratory Bird Sanctuary"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "291.2 ac",
+   "sort": 291.2,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-2894+CA-2896@area@50.423,-104.586",
+   "sources": {
+    "CA-2894": "downloaded 2026-10-30",
+    "CA-2896": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mbsk",
+   "state": "CA-SK",
+   "refs": [
+    "CA-0081",
+    "CA-2717"
+   ],
+   "names": {
+    "CA-0081": "Raven Island National Wildlife Area",
+    "CA-2717": "Lenore Lake Migratory Bird Sanctuary"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "233.2 ac",
+   "sort": 233.2,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0081+CA-2717@area@52.437,-104.995",
+   "sources": {
+    "CA-0081": "downloaded 2026-10-30",
+    "CA-2717": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mbsk",
+   "state": "CA-MB",
+   "refs": [
+    "CA-0083",
+    "CA-2476"
+   ],
+   "names": {
+    "CA-0083": "Riding Mountain Biosphere Reserve",
+    "CA-2476": "Parkland Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "79.8 ac",
+   "sort": 79.8,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0083+CA-2476@area@50.770,-100.612",
+   "sources": {
+    "CA-0083": "downloaded 2026-10-30",
+    "CA-2476": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mbsk",
+   "state": "CA-MB",
+   "refs": [
+    "CA-0084",
+    "CA-2476"
+   ],
+   "names": {
+    "CA-0084": "Riding Mountain National Park",
+    "CA-2476": "Parkland Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "79.8 ac",
+   "sort": 79.8,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0084+CA-2476@area@50.770,-100.612",
+   "sources": {
+    "CA-0084": "downloaded 2026-10-30",
+    "CA-2476": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  }
+ ]
+}

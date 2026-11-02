@@ -1,0 +1,159 @@
+name: KPC 2-fer assembly lines, several at once (hidden)
+# Oct 28 2026 (HQ 4:40 AM, Brandon: 'duplicate the line'): up to THREE assembly lines side by side, each one a full line
+# (fetcher -> worker -> checker, kpc-fers-line.yml called as a reusable workflow) with its own bundle tag, its own output files and
+# its own checker result; no two lines write the same file (each saves only its own area's files); the outside servers see at most
+# 3 lines' worth of requests, each line with the usual manners. THE QUEUE (HQ Oct 28 7:50 AM, after chat 8's Kentucky READY):
+# the default 'areas' list in HQ's order, 3 at a time, the next area starting when a line frees up (the matrix does that);
+# every area's data stays hidden until chat 8 grades it (the checker writes one 'grade me' line per area into
+# data/status/inbox-checkers.md + inbox-chat-8.md); a broken area is recorded and the queue moves on; two breaks in a row
+# cancel the whole run (kpc-fers-line.yml 'broke' job).
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Lines, one per entry "STATES|tag" separated by ";" (e.g. "US-MI|mi; US-UT|ut"); or a region name per entry (southeast; midwest; …); "@worker" after an entry = start from its saved fetcher bundle'
+        default: 'US-MI|mi; US-UT|ut; southeast; midwest; northeast; southcentral; mountain; pacific; canadaeast; canadawest'
+      minutes:
+        description: 'Minutes for each of fetcher and worker per line (default 280)'
+        default: '280'
+      at_once:
+        description: 'Lines running at the same time (1-3; never more: the outside servers)'
+        default: '3'
+      round:
+        description: 'Retry round (0 = first; areas parked on the USGS water map are run once more as round 1, never more)'
+        default: '0'
+permissions:
+  contents: write
+  actions: write
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lines: ${{ steps.p.outputs.lines }}
+      n: ${{ steps.p.outputs.n }}
+    steps:
+      - id: p
+        env:
+          AREAS: ${{ inputs.areas }}
+          AT_ONCE: ${{ inputs.at_once }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, re
+          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
+               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
+               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
+          out = []
+          for e in [x.strip() for x in os.environ['AREAS'].split(';') if x.strip()]:
+              stage = 'all'
+              if '@' in e: e, stage = [x.strip() for x in e.rsplit('@', 1)]   # 'midwest@worker' = from its saved fetcher bundle
+              if stage not in ('all', 'worker', 'checker'): stage = 'all'
+              if '|' in e: st, tag = [x.strip() for x in e.split('|', 1)]
+              elif e.lower() in R: st, tag = R[e.lower()], e.lower()
+              else: st, tag = e.upper(), re.sub(r'[^a-z0-9]', '', e.lower())
+              out.append({'states': st.upper(), 'tag': re.sub(r'[^a-z0-9-]', '', tag.lower()), 'stage': stage})
+          # Nov 2 (Brandon 7:01 AM 'Yes, tired of going in circles'): KEYS FIRST. A state whose new key file still waits for chat 11 in the
+          # waiting room is left out (its outlines may still change); write 'US-XX|xx!' to run it anyway (by hand only)
+          import subprocess
+          def _held(kind):
+              r = subprocess.run(['gh', 'api', f"repos/{os.environ.get('GITHUB_REPOSITORY', 'KentuckyPortableClub/KPC-Data')}/contents/data/waiting/in/data/{kind}", '--jq', '.[].name'], capture_output=True, text=True)
+              return {x[:-5] for x in r.stdout.split() if x.endswith('.json')}
+          HELD = _held('us-key') | _held('ca-key')
+          keep, left = [], []
+          for o in out:
+              force = o['tag'].endswith('!') or '!' in o['states']
+              o['tag'] = o['tag'].rstrip('!'); o['states'] = o['states'].replace('!', '')
+              h = [s for s in o['states'].split() if s in HELD]
+              (left if h and not force else keep).append((o, h))
+          if left: print('::notice title=2-fer lines::keys first: left out until their key is released: ' + '; '.join(f"{o['tag']} ({' '.join(h)})" for o, h in left))
+          out = [o for o, _ in keep]
+          n = max(1, min(3, int(os.environ.get('AT_ONCE') or 3)))
+          print('lines=' + json.dumps(out)); print(f'n={n}')
+          print(f'::notice title=2-fer lines::{len(out)} line(s), {n} at a time: ' + '; '.join(f"{o['states']} ({o['tag']}, {o['stage']})" for o in out))
+          PY
+  ahead:
+    # Oct 28 10:44 PM (Brandon: 'have your tiles for 3 runs ahead'): the 3 areas waiting behind the first lines get their USGS water
+    # tiles filled now (kpc-fers-water.yml), so their lines never wait on water
+    needs: plan
+    if: needs.plan.outputs.lines != '[]'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINES: ${{ needs.plan.outputs.lines }}
+      N: ${{ needs.plan.outputs.n }}
+    steps:
+      - run: |
+          A=$(python3 -c "import json,os; L=json.loads(os.environ['LINES']); n=int(os.environ['N']); print('; '.join(f\"{l['states']}|{l['tag']}\" for l in L[n:n + 3] if any(s.startswith(('US-', 'CA-')) for s in l['states'].split())))")
+          if [ -n "$A" ]; then gh workflow run kpc-fers-water.yml -R "${{ github.repository }}" -f "areas=$A" && echo "::notice title=2-fer lines::water tiles ahead for: $A"; else echo "nothing waiting"; fi
+  line:
+    needs: plan
+    if: needs.plan.outputs.lines != '[]'
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(needs.plan.outputs.n) }}
+      matrix:
+        line: ${{ fromJSON(needs.plan.outputs.lines) }}
+    uses: ./.github/workflows/kpc-fers-line.yml
+    with:
+      states: ${{ matrix.line.states }}
+      tag: ${{ matrix.line.tag }}
+      stage: ${{ matrix.line.stage }}
+      minutes: ${{ inputs.minutes }}
+      next: ''
+    secrets: inherit
+  again:
+    # Oct 28 (HQ 12:50 PM): an area STOPPED only because the USGS water map did not answer is PARKED while the queue goes on,
+    # then tried ONCE more at the end from its own bundle (@worker: the saved water tiles + answers are reused, only the missing
+    # tiles are asked). Round 1 never starts another round.
+    needs: [plan, line]
+    if: ${{ always() && inputs.round == '0' }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINES: ${{ needs.plan.outputs.lines }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Far-spot hold + parcel check + layered-land list (chat 2, Oct 29; Brandon 8:07 AM + chat 8)
+        # a live row 100+ km from a state-level park's pin is held, then the official map decides (the park's own record holds
+        # the spot = released); every federal x state pair is appended to data/fers/layered.json with PAD-US owner at the patch
+        continue-on-error: true
+        run: |
+          # Oct 29 8:30 PM (HQ release order, step 3): far-spot hold + parcel check RETIRED: the Rule G key (G-1 / R-G7 / R-G8)
+          # now keeps far and wrong pieces out of the outlines themselves, so the 2-fer rows no longer need this second guard
+          NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || true
+          git config user.name kpc-bot; git config user.email bot@kpc.local
+          LINKS=links python3 .github/scripts/kpc_waiting_room.py divert data/fers || true   # Oct 29: a changed US/CA 2-fer file waits for chat 11 (the layered list stays live)
+          git add data/fers data/waiting && git commit -qm "2-fer: far-spot check + layered-land list" || true
+          git pull -q --rebase || true; git push -q || true
+      - name: The one big 'needs a human look' list from every area's file
+        continue-on-error: true
+        run: |
+          COMBINE_ONLY=1 OUT=data/fers python3 links/.github/scripts/kpc_fers_review.py || true
+          git config user.name kpc-bot; git config user.email bot@kpc.local
+          # Nov 1 (chat 10 storage step 1): the combined list lives on branch tools-out (fers/review-all.*), not main
+          ( git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../to origin/tools-out || exit 0
+            mkdir -p ../to/fers && cp data/fers/review-all.json data/fers/review-all.md ../to/fers/ 2>/dev/null; cd ../to && git add fers && git commit -qm "2-fer review list: combined" && for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep 7; done ) || true
+          git rm -q --cached --ignore-unmatch data/fers/review-all.json data/fers/review-all.md && git commit -qm "2-fer review list moved to tools-out" || true
+          git pull -q --rebase || true; git push -q || true
+      - name: Areas parked on the water map -> one more round
+        run: |
+          python3 - <<'PY' > again.txt
+          import json, os
+          out = []
+          for l in json.loads(os.environ['LINES']):
+              try: v = json.load(open(f"data/fers/line-{l['tag']}.json"))
+              except Exception: continue
+              why = v.get('why') or []
+              # Oct 28 10:31 PM: an area held (fully or in part) ONLY on water gets one retry round
+              if v.get('verdict') in ('STOPPED', 'PART READY FOR CHAT 8') and why and all(str(w).startswith(('water service', 'water not checked')) for w in why):
+                  out.append(f"{l['states']}|{l['tag']}@worker")
+          print('; '.join(out))
+          PY
+          A=$(cat again.txt); echo "::notice title=2-fer lines::parked on the USGS water map: ${A:-none}"
+          if [ -n "$A" ]; then gh workflow run kpc-fers-lines.yml -R "${{ github.repository }}" -f "areas=$A" -f round=1 -f minutes=${{ inputs.minutes }} && echo "::notice title=2-fer lines::retry round started for: $A"; fi

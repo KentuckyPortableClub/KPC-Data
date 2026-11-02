@@ -1,0 +1,64 @@
+{
+ "_sample_of": "camping-us-oct31.json",
+ "_full_file": {
+  "about": "text",
+  "rows": 5643,
+  "layers": 162
+ },
+ "sample": {
+  "about": "Outside research E (Brandon Oct 31 7:49 PM): US parks with no camping info (5,643). Camping? YES / NO / NEARBY ONLY + campground names, the agency camping / reservation page, type, an official campground layer, notes ('Source type: …'). For the camp bot as sources (it opens every link itself) -> waiting room -> chat 11. 'layers' = official campground point layers + how many parks each covers.",
+  "rows": {
+   "US-1637": {
+    "State": "AK",
+    "Name": "Chugach State Park",
+    "Type": "State Park",
+    "Camping?": "YES",
+    "Campground name(s)": "Bird Creek; Bird Creek Overflow; Eagle River; Eklutna Lake campgrounds; public-use cabins",
+    "Agency camping / reservation page": "https://dnr.alaska.gov/parks/units/campsitelist.htm",
+    "Type (tent / RV / cabins / primitive)": "tent / RV / cabins",
+    "Notes": "Source type: AGENCY LIST PAGE. DPOR campground list: Bird Creek 27, Overflow 20, Eagle River 57, Eklutna 58 sites; park page lists public-use cabins.",
+    "Checked by": "camping bot"
+   },
+   "US-4447": {
+    "State": "AK",
+    "Name": "Chugach National Forest",
+    "Type": "National Forest",
+    "Camping?": "YES",
+    "Campground name(s)": "Barber Cabin; Crescent Lake Cabin; Caribou Creek Cabin; Crescent Saddle Cabin; Romig Cabin; Swan Lake Cabin; Dale Clemens Cabin; Devil's Pass Cabin; Upper Paradise Cabin; West Swan Lake Cabin; +42 more",
+    "Agency camping / reservation page": "https://www.fs.usda.gov/recarea/chugach/recarea/?recid=6623",
+    "Type (tent / RV / cabins / primitive)": "tent / RV / cabins",
+    "Campground layer URL": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Chugach+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html",
+    "Notes": "Source type: MAP LAYER. 52 USFS camping sites (Chugach National Forest) in USFS Recreation Opportunities layer; reservable sites are on Recreation.gov.",
+    "Checked by": "camping bot"
+   },
+   "US-7211": {
+    "State": "AK",
+    "Name": "Finger Lake State Recreation Site",
+    "Type": "State Recreation Site",
+    "Camping?": "YES",
+    "Campground name(s)": "Finger Lake SRS * campground",
+    "Agency camping / reservation page": "https://dnr.alaska.gov/parks/units/campsitelist.htm",
+    "Type (tent / RV / cabins / primitive)": "tent / RV",
+    "Notes": "Source type: AGENCY LIST PAGE. DPOR campground list: Finger Lake SRS *, 24 sites, fee $25-$35, reservable. Third-party managed.",
+    "Checked by": "camping bot"
+   },
+   "US-0022": {
+    "State": "AK",
+    "Name": "Denali National Park",
+    "Type": "National Park",
+    "Camping?": "YES",
+    "Campground name(s)": "Riley Creek; Savage River; Sanctuary River; Teklanika River; Igloo Creek; Wonder Lake",
+    "Agency camping / reservation page": "https://www.nps.gov/dena/planyourvisit/campground-riley.htm",
+    "Type (tent / RV / cabins / primitive)": "tent / RV / primitive",
+    "Notes": "Source type: PARK PAGE. 6 NPS campground(s) per NPS campground data (nps.gov API).",
+    "Checked by": "camping bot"
+   }
+  },
+  "layers": {
+   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Chugach+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": 1,
+   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Tongass+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": 1,
+   "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2": 12,
+   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27National+Forests+in+Alabama%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": 3
+  }
+ }
+}

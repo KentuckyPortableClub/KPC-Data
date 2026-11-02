@@ -1,0 +1,63 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mi",
+ "states": [
+  "US-MI"
+ ],
+ "since": "2026-11-01",
+ "date": "2026-11-01 19:12 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-31",
+ "missing_check": {
+  "FOUND": 110,
+  "DROPPED": 618,
+  "NEVER LOOKED AT": 3543
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-01",
+   "pairs tested": 2344,
+   "pairs whose boxes touch": 2344
+  },
+  "pass2": {
+   "agree with the pass before": 681,
+   "date": "2026-11-01",
+   "pairs tested": 163
+  },
+  "pass3": {
+   "agree with the pass before": 617,
+   "date": "2026-11-01",
+   "pairs tested": 163
+  },
+  "pass5": {
+   "checked": 29,
+   "date": "2026-11-01",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-MI": "data/fers/US-MI.json"
+ },
+ "US-MI": {
+  "rows": 719,
+  "live": 118,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline for Yellow Dog National Wild and Scen": 3,
+   "low-confidence outline for Sturgeon": 4,
+   "low-confidence outline for Bear Creek National Wild and Scen": 1,
+   "no public owner on the ownership map": 19,
+   "low-confidence outline for Ontonagon National Wild and Sceni": 5,
+   "low-confidence outline for Presque Isle National Wild and Sc": 2
+  },
+  "dropped": 234,
+  "merged": 333
+ },
+ "states_ready": [
+  "US-MI"
+ ],
+ "states_held": []
+}

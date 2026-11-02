@@ -1,0 +1,291 @@
+{
+ "cc": "CL",
+ "run": "2026-10-30",
+ "parks": 418,
+ "open": 418,
+ "key_candidates": 0,
+ "layer_candidates": 145,
+ "layers_tried": [
+  "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/MMA/HUMEDALES_URBANOS/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/MMA/HUMEDALES_URBANOS/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/3",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/3",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/1",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/2",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/0",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/3",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/0"
+ ],
+ "no_layer_groups": {
+  "orbicular sanctuary": [
+   "CL-0215"
+  ],
+  "nature park": [
+   "CL-0278",
+   "CL-0282",
+   "CL-0389"
+  ],
+  "landscape area": [
+   "CL-0121",
+   "CL-0124",
+   "CL-0126"
+  ],
+  "national park": [
+   "CL-0105",
+   "CL-0078",
+   "CL-0394"
+  ],
+  "wetland reserve": [
+   "CL-0413",
+   "CL-0212",
+   "CL-0337",
+   "CL-0347",
+   "CL-0348",
+   "CL-0349",
+   "CL-0385",
+   "CL-0184",
+   "CL-0185",
+   "CL-0233",
+   "CL-0235",
+   "CL-0239",
+   "CL-0386",
+   "CL-0309",
+   "CL-0336",
+   "CL-0412",
+   "CL-0177",
+   "CL-0372",
+   "CL-0374",
+   "CL-0243",
+   "CL-0247",
+   "CL-0311",
+   "CL-0393",
+   "CL-0402",
+   "CL-0418",
+   "CL-0364",
+   "CL-0410",
+   "CL-0343",
+   "CL-0379",
+   "CL-0221",
+   "CL-0375",
+   "CL-0377",
+   "CL-0381",
+   "CL-0251",
+   "CL-0422",
+   "CL-0423",
+   "CL-0317"
+  ],
+  "natural monument": [
+   "CL-0099",
+   "CL-0070",
+   "CL-0020",
+   "CL-0101",
+   "CL-0088",
+   "CL-0071",
+   "CL-0025",
+   "CL-0012",
+   "CL-0013",
+   "CL-0087"
+  ],
+  "management district": [
+   "CL-0130",
+   "CL-0183"
+  ],
+  "caulín sanctuary": [
+   "CL-0139"
+  ],
+  "recreation park": [
+   "CL-0188",
+   "CL-0236",
+   "CL-0237",
+   "CL-0275",
+   "CL-0280",
+   "CL-0304",
+   "CL-0354",
+   "CL-0360",
+   "CL-0398",
+   "CL-0198",
+   "CL-0208",
+   "CL-0192",
+   "CL-0152",
+   "CL-0143",
+   "CL-0151",
+   "CL-0153",
+   "CL-0156",
+   "CL-0162",
+   "CL-0181",
+   "CL-0205",
+   "CL-0225",
+   "CL-0226",
+   "CL-0292",
+   "CL-0295",
+   "CL-0333",
+   "CL-0365",
+   "CL-0391",
+   "CL-0260",
+   "CL-0285",
+   "CL-0229",
+   "CL-0271",
+   "CL-0180",
+   "CL-0166",
+   "CL-0169",
+   "CL-0202",
+   "CL-0334",
+   "CL-0397",
+   "CL-0127",
+   "CL-0404"
+  ],
+  "park reserve": [
+   "CL-0222",
+   "CL-0199",
+   "CL-0206"
+  ],
+  "historic site": [
+   "CL-0315",
+   "CL-0405",
+   "CL-0406",
+   "CL-0407",
+   "CL-0408",
+   "CL-0314",
+   "CL-0359",
+   "CL-0399",
+   "CL-0329",
+   "CL-0331",
+   "CL-0332",
+   "CL-0249",
+   "CL-0254",
+   "CL-0297",
+   "CL-0387",
+   "CL-0421"
+  ],
+  "tronadores park": [
+   "CL-0224"
+  ],
+  "wetland sanctuary": [
+   "CL-0340"
+  ],
+  "ecological park": [
+   "CL-0281",
+   "CL-0358"
+  ],
+  "national reserve": [
+   "CL-0018",
+   "CL-0085",
+   "CL-0034",
+   "CL-0035",
+   "CL-0037",
+   "CL-0019"
+  ],
+  "recreation site": [
+   "CL-0323",
+   "CL-0327",
+   "CL-0158"
+  ],
+  "coquimbo geopark": [
+   "CL-0368"
+  ],
+  "historical site": [
+   "CL-0415"
+  ],
+  "archeological reserve": [
+   "CL-0276",
+   "CL-0303",
+   "CL-0308",
+   "CL-0403"
+  ],
+  "coihueco park": [
+   "CL-0196"
+  ],
+  "achibueno sanctuary": [
+   "CL-0390"
+  ],
+  "anwandter sanctuary": [
+   "CL-0388"
+  ],
+  "antarctic station": [
+   "CL-0241"
+  ],
+  "chuyaca park": [
+   "CL-0140"
+  ],
+  "centenario park": [
+   "CL-0141"
+  ],
+  "natural area": [
+   "CL-0355",
+   "CL-0305",
+   "CL-0346",
+   "CL-0345",
+   "CL-0261"
+  ],
+  "recreation area": [
+   "CL-0114",
+   "CL-0270"
+  ],
+  "mahuida park": [
+   "CL-0145"
+  ],
+  "normal sanctuary": [
+   "CL-0146"
+  ],
+  "santiago park": [
+   "CL-0148"
+  ],
+  "renca park": [
+   "CL-0194"
+  ],
+  "correa park": [
+   "CL-0213"
+  ],
+  "protected area": [
+   "CL-0255",
+   "CL-0268",
+   "CL-0265",
+   "CL-0338"
+  ],
+  "memorial parkway": [
+   "CL-0293"
+  ],
+  "mutrún park": [
+   "CL-0219"
+  ],
+  "constitución sanctuary": [
+   "CL-0231"
+  ],
+  "mañihuales reserve": [
+   "CL-0200"
+  ],
+  "niños sanctuary": [
+   "CL-0113"
+  ],
+  "ebel park": [
+   "CL-0165"
+  ],
+  "chica sanctuary": [
+   "CL-0424"
+  ],
+  "peralillo park": [
+   "CL-0174"
+  ],
+  "callejones park": [
+   "CL-0144"
+  ],
+  "virgen park": [
+   "CL-0150"
+  ],
+  "patagual park": [
+   "CL-0197"
+  ],
+  "curimón park": [
+   "CL-0207"
+  ]
+ },
+ "layers_found_new": 0,
+ "stage1": "done",
+ "seconds": 726
+}

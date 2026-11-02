@@ -1,0 +1,951 @@
+{
+ "area": "US-AR",
+ "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
+ "fers_file": "data/fers/US-AR.json",
+ "rows": {
+  "US-0164+US-7319@area@35.067,-91.314": {
+   "id": "US-0164+US-7319@area@35.067,-91.314",
+   "area": "US-AR",
+   "refs": [
+    "US-0164",
+    "US-7319"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 3.1,
+   "stored_wide_m": 37,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:12Z",
+   "layers": [
+    {
+     "ref": "US-0164",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:46:12Z"
+    },
+    {
+     "ref": "US-7319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:14Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window",
+     "n": 1,
+     "read": "2026-11-01T11:46:15Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window",
+     "n": 8,
+     "read": "2026-11-01T11:46:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 63.3,
+   "stored_water_pct": 65,
+   "stored_shape_acres": 1.56,
+   "live_acres": 0.95,
+   "kept_pct": 85.9,
+   "size_pct": -39.3,
+   "moved_m": 78,
+   "gap_m": 0,
+   "wide_m": 21.0,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 39% smaller (0.9 ac vs 1.6 ac stored)",
+   "live_center": [
+    35.067033,
+    -91.311174
+   ]
+  },
+  "US-0164+US-7319@area@35.187,-91.262": {
+   "id": "US-0164+US-7319@area@35.187,-91.262",
+   "area": "US-AR",
+   "refs": [
+    "US-0164",
+    "US-7319"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 14.2,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:16Z",
+   "layers": [
+    {
+     "ref": "US-0164",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-01T11:46:16Z"
+    },
+    {
+     "ref": "US-7319",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 11,
+   "stored_shape_acres": 11.18,
+   "live_acres": 10.43,
+   "kept_pct": 100.0,
+   "size_pct": -6.7,
+   "moved_m": 37,
+   "gap_m": 0,
+   "wide_m": 40.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.4 ac vs 11.2 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.179987,
+    -91.262564
+   ]
+  },
+  "US-0171+US-1081@area@33.997,-91.165": {
+   "id": "US-0171+US-1081@area@33.997,-91.165",
+   "area": "US-AR",
+   "refs": [
+    "US-0171",
+    "US-1081"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 4.4,
+   "stored_wide_m": 31,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:17Z",
+   "layers": [
+    {
+     "ref": "US-0171",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:46:18Z"
+    },
+    {
+     "ref": "US-1081",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 3.86,
+   "live_acres": 3.64,
+   "kept_pct": 100.0,
+   "size_pct": -5.8,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 27.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.6 ac vs 3.9 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.999005,
+    -91.161049
+   ]
+  },
+  "US-0171+US-11713@same land@33.971,-91.148": {
+   "id": "US-0171+US-11713@same land@33.971,-91.148",
+   "area": "US-AR",
+   "refs": [
+    "US-0171",
+    "US-11713"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:21Z",
+   "layers": [
+    {
+     "ref": "US-0171",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:46:22Z"
+    },
+    {
+     "ref": "US-11713",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-01T11:46:23Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 71.49,
+   "live_acres": 83.14,
+   "kept_pct": 100.0,
+   "size_pct": 16.3,
+   "moved_m": 156,
+   "gap_m": 0,
+   "wide_m": 511.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 83.1 ac vs 71.5 ac stored (+16%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.969931,
+    -91.147943
+   ]
+  },
+  "US-0646+US-4425@area@36.075,-92.456": {
+   "id": "US-0646+US-4425@area@36.075,-92.456",
+   "area": "US-AR",
+   "refs": [
+    "US-0646",
+    "US-4425"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 4.0,
+   "stored_wide_m": 55,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:23Z",
+   "layers": [
+    {
+     "ref": "US-0646",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:24Z"
+    },
+    {
+     "ref": "US-4425",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:27Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 3.49,
+   "live_acres": 3.5,
+   "kept_pct": 100.0,
+   "size_pct": 0.4,
+   "moved_m": 9,
+   "gap_m": 0,
+   "wide_m": 45.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.5 ac vs 3.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.077711,
+    -92.455557
+   ]
+  },
+  "US-10258+US-4424@trail@34.705,-93.711": {
+   "id": "US-10258+US-4424@trail@34.705,-93.711",
+   "area": "US-AR",
+   "refs": [
+    "US-10258",
+    "US-4424"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 169.32,
+   "stored_wide_m": 98.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:27Z",
+   "layers": [
+    {
+     "ref": "US-10258",
+     "layer": "saved copy US-10258.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-4424",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:29Z"
+    }
+   ],
+   "saved_lines": [
+    "US-10258"
+   ],
+   "live_stretch_acres": 1210.84,
+   "stored_shape_acres": 158.66,
+   "live_acres": 168.99,
+   "kept_pct": 97.5,
+   "size_pct": 6.5,
+   "moved_m": 26722,
+   "gap_m": 0,
+   "wide_m": 108.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 169.0 ac vs 158.7 ac stored (+6%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.735662,
+    -93.421711
+   ]
+  },
+  "US-10258+US-8321@trail@34.662,-93.895": {
+   "id": "US-10258+US-8321@trail@34.662,-93.895",
+   "area": "US-AR",
+   "refs": [
+    "US-10258",
+    "US-8321"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:30Z",
+   "layers": [
+    {
+     "ref": "US-10258",
+     "layer": "saved copy US-10258.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    },
+    {
+     "ref": "US-8321",
+     "layer": "saved copy US-8321.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-10258",
+    "US-8321"
+   ],
+   "live_stretch_acres": 987.52,
+   "stored_shape_acres": 160.11,
+   "live_acres": 144.42,
+   "kept_pct": 95.9,
+   "size_pct": -9.8,
+   "moved_m": 26551,
+   "gap_m": 0,
+   "wide_m": 98.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 144.4 ac vs 160.1 ac stored (-10%), 96% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.735658,
+    -93.421855
+   ]
+  },
+  "US-1075+US-4424@area@34.384,-94.231": {
+   "id": "US-1075+US-4424@area@34.384,-94.231",
+   "area": "US-AR",
+   "refs": [
+    "US-1075",
+    "US-4424"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 12.4,
+   "stored_wide_m": 39,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:30Z",
+   "layers": [
+    {
+     "ref": "US-1075",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:30Z"
+    },
+    {
+     "ref": "US-1075",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:31Z"
+    },
+    {
+     "ref": "US-1075",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:33Z"
+    },
+    {
+     "ref": "US-4424",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:35Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 9.71,
+   "live_acres": 9.22,
+   "kept_pct": 98.6,
+   "size_pct": -5.0,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 36.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.2 ac vs 9.7 ac stored (-5%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.384054,
+    -94.218058
+   ]
+  },
+  "US-1082+US-4425@area@35.766,-94.236": {
+   "id": "US-1082+US-4425@area@35.766,-94.236",
+   "area": "US-AR",
+   "refs": [
+    "US-1082",
+    "US-4425"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 233.5,
+   "stored_wide_m": 777,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:36Z",
+   "layers": [
+    {
+     "ref": "US-1082",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:36Z"
+    },
+    {
+     "ref": "US-1082",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:37Z"
+    },
+    {
+     "ref": "US-4425",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 230.72,
+   "live_acres": 229.66,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 769.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 229.7 ac vs 230.7 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.793679,
+    -94.250787
+   ]
+  },
+  "US-1096+US-12765@same land@33.348,-93.180": {
+   "id": "US-1096+US-12765@same land@33.348,-93.180",
+   "area": "US-AR",
+   "refs": [
+    "US-1096",
+    "US-12765"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:40Z",
+   "layers": [
+    {
+     "ref": "US-1096",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:40Z"
+    },
+    {
+     "ref": "US-1096",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:41Z"
+    },
+    {
+     "ref": "US-12765",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:41Z"
+    },
+    {
+     "ref": "US-12765",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:42Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 196.23,
+   "live_acres": 332.88,
+   "kept_pct": 100.0,
+   "size_pct": 69.6,
+   "moved_m": 384,
+   "gap_m": 0,
+   "wide_m": 784.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 70% bigger (332.9 ac vs 196.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    33.345515,
+    -93.182899
+   ]
+  },
+  "US-1097+US-7154@area@34.646,-91.052": {
+   "id": "US-1097+US-7154@area@34.646,-91.052",
+   "area": "US-AR",
+   "refs": [
+    "US-1097",
+    "US-7154"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 36.0,
+   "stored_wide_m": 373,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:43Z",
+   "layers": [
+    {
+     "ref": "US-1097",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:43Z"
+    },
+    {
+     "ref": "US-7154",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 35.14,
+   "live_acres": 35.21,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 369.6,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 35.2 ac vs 35.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.645574,
+    -91.052215
+   ]
+  },
+  "US-1104+US-4425@area@35.169,-93.624": {
+   "id": "US-1104+US-4425@area@35.169,-93.624",
+   "area": "US-AR",
+   "refs": [
+    "US-1104",
+    "US-4425"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 2162.5,
+   "stored_wide_m": 1656,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:45Z",
+   "layers": [
+    {
+     "ref": "US-1104",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:45Z"
+    },
+    {
+     "ref": "US-4425",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:46Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 2155.03,
+   "live_acres": 2156.0,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 13,
+   "gap_m": 0,
+   "wide_m": 1635.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2156.0 ac vs 2155.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.168878,
+    -93.623668
+   ]
+  },
+  "US-1118+US-4426@area@33.687,-93.086": {
+   "id": "US-1118+US-4426@area@33.687,-93.086",
+   "area": "US-AR",
+   "refs": [
+    "US-1118",
+    "US-4426"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 35.8,
+   "stored_wide_m": 273,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:47Z",
+   "layers": [
+    {
+     "ref": "US-1118",
+     "layer": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:47Z"
+    },
+    {
+     "ref": "US-1118",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:48Z"
+    },
+    {
+     "ref": "US-4426",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 2,
+   "stored_shape_acres": 34.84,
+   "live_acres": 35.02,
+   "kept_pct": 100.0,
+   "size_pct": 0.5,
+   "moved_m": 1,
+   "gap_m": 0,
+   "wide_m": 270.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 35.0 ac vs 34.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.687382,
+    -93.085971
+   ]
+  },
+  "US-11294+US-4424@area@34.402,-94.092": {
+   "id": "US-11294+US-4424@area@34.402,-94.092",
+   "area": "US-AR",
+   "refs": [
+    "US-11294",
+    "US-4424"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 14217.7,
+   "stored_wide_m": 4425,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:51Z",
+   "layers": [
+    {
+     "ref": "US-11294",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:51Z"
+    },
+    {
+     "ref": "US-4424",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 14243.79,
+   "live_acres": 14255.42,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 4393.1,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14255.4 ac vs 14243.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.401689,
+    -94.092659
+   ]
+  },
+  "US-12094+US-4424@area@34.499,-93.977": {
+   "id": "US-12094+US-4424@area@34.499,-93.977",
+   "area": "US-AR",
+   "refs": [
+    "US-12094",
+    "US-4424"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.6,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:54Z",
+   "layers": [
+    {
+     "ref": "US-12094",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:54Z"
+    },
+    {
+     "ref": "US-12094",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:55Z"
+    },
+    {
+     "ref": "US-4424",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.0,
+   "live_acres": 2.04,
+   "kept_pct": 99.8,
+   "size_pct": 2.0,
+   "moved_m": 430,
+   "gap_m": 0,
+   "wide_m": 14.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.0 ac vs 2.0 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.497458,
+    -93.972333
+   ]
+  },
+  "US-4424+US-8321@trail@34.676,-94.328": {
+   "id": "US-4424+US-8321@trail@34.676,-94.328",
+   "area": "US-AR",
+   "refs": [
+    "US-4424",
+    "US-8321"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1876.89,
+   "stored_wide_m": 85.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:57Z",
+   "layers": [
+    {
+     "ref": "US-4424",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:58Z"
+    },
+    {
+     "ref": "US-8321",
+     "layer": "saved copy US-8321.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-01"
+    }
+   ],
+   "saved_lines": [
+    "US-8321"
+   ],
+   "stored_shape_note": "stored zone outline (8261 ac) disagrees with zone_acres (1876.89): compared against the stored stretch line + 100 ft instead",
+   "live_stretch_acres": 2004.67,
+   "stored_shape_acres": 1776.42,
+   "live_acres": 1599.41,
+   "kept_pct": 60.1,
+   "size_pct": -10.0,
+   "moved_m": 22428,
+   "gap_m": 0,
+   "wide_m": 62.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 60% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    34.686014,
+    -94.049058
+   ]
+  },
+  "US-4425+US-7167@area@35.897,-93.572": {
+   "id": "US-4425+US-7167@area@35.897,-93.572",
+   "area": "US-AR",
+   "refs": [
+    "US-4425",
+    "US-7167"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 18.4,
+   "stored_wide_m": 65,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-01T11:46:59Z",
+   "layers": [
+    {
+     "ref": "US-4425",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:46:59Z"
+    },
+    {
+     "ref": "US-7167",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:47:00Z"
+    },
+    {
+     "ref": "US-7167",
+     "layer": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-01T11:47:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 1,
+   "stored_shape_acres": 16.2,
+   "live_acres": 14.7,
+   "kept_pct": 100.0,
+   "size_pct": -9.3,
+   "moved_m": 0,
+   "gap_m": 0,
+   "wide_m": 61.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.7 ac vs 16.2 ac stored (-9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    35.904022,
+    -93.57373
+   ]
+  }
+ },
+ "started": "2026-11-01T11:46:12Z",
+ "fers_sha256": "f92fe00b2c0453302c88d9bb3c71c0c7b64a5f6ae0e1b17b8e84ac3922a16d37",
+ "live_rows": 17,
+ "skipped_rows": 129,
+ "rules": {
+  "trail_buffer_m": 30.48,
+  "small_across_m": 45.72,
+  "moved_m": 200.0,
+  "size_tol": 0.25
+ },
+ "updated": "2026-11-01T12:04:59Z",
+ "complete": true,
+ "summary": {
+  "rows": 17,
+  "verdicts": {
+   "CONFIRMED": 14,
+   "SHRUNK": 2,
+   "GREW": 1,
+   "MOVED": 0,
+   "GONE": 0,
+   "RECORD CHANGED": 0,
+   "SOURCE DOWN": 0,
+   "NOT CHECKED": 0
+  },
+  "flags": {
+   "water-only": 1,
+   "small overlap (under 50 yd across)": 6,
+   "trail line from the club saved copy (not re-read live)": 3
+  }
+ },
+ "key_files": [
+  "data/ca-key/CA-AB.json",
+  "data/ca-key/CA-BC.json",
+  "data/ca-key/CA-MB.json",
+  "data/ca-key/CA-NB.json",
+  "data/ca-key/CA-NL.json",
+  "data/ca-key/CA-NS.json",
+  "data/ca-key/CA-NT.json",
+  "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-PE.json",
+  "data/ca-key/CA-QC.json",
+  "data/ca-key/CA-SI.json",
+  "data/ca-key/CA-SK.json",
+  "data/ca-key/CA-SP.json",
+  "data/ca-key/CA-YT.json",
+  "data/us-key/US-AK.json",
+  "data/us-key/US-AL.json",
+  "data/us-key/US-AR.json"
+ ],
+ "requests_this_run": 3
+}
