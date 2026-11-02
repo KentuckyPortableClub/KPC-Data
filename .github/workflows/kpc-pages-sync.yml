@@ -35,8 +35,8 @@ jobs:
           M=$(gh api repos/$R/git/ref/heads/main --jq .object.sha)
           S=$(gh api repos/$R/git/ref/heads/site --jq .object.sha 2>/dev/null || echo none)
           if [ "$M" = "$S" ]; then echo "::notice title=Pages copy::site is already main (${M:0:8}): nothing to publish"
-          elif [ "$S" = none ]; then gh api -X POST repos/$R/git/refs -f ref=refs/heads/site -f sha=$M >/dev/null && echo "::notice title=Pages copy::branch site made at ${M:0:8}"
-          else gh api -X PATCH repos/$R/git/refs/heads/site -f sha=$M -F force=true >/dev/null && echo "::notice title=Pages copy::site moved ${S:0:8} -> ${M:0:8} (one Pages build)"; fi
+          elif [ "$S" = none ]; then o=$(gh api -X POST repos/$R/git/refs -f ref=refs/heads/site -f sha=$M 2>&1) && echo "::notice title=Pages copy::branch site made at ${M:0:8}" || echo "::warning title=Pages copy::could not make branch site: $(echo $o | head -c 300)"
+          else o=$(gh api -X PATCH repos/$R/git/refs/heads/site -f sha=$M -F force=true 2>&1) && echo "::notice title=Pages copy::site moved ${S:0:8} -> ${M:0:8} (one Pages build)" || echo "::warning title=Pages copy::could not move site: $(echo $o | head -c 300)"; fi
           true   # ok: the next run tries again
       - name: Point Pages at the branch (one time, by hand)
         if: ${{ inputs.switch == 'yes' || inputs.switch == 'main' }}
@@ -49,9 +49,8 @@ jobs:
           B=${{ inputs.switch == 'yes' && 'site' || 'main' }}
           P=$(gh api repos/$R/pages --jq '.source.path // "/"' 2>/dev/null || echo /)
           echo "::notice title=Pages now::$(gh api repos/$R/pages --jq '"\(.build_type) from \(.source.branch) \(.source.path)"' 2>&1 | head -1)"
-          gh api -X PUT repos/$R/pages --input - <<JSON && echo "::notice title=Pages switched::Pages now publishes branch $B ($P)" || echo "::error title=Pages switch::could not point Pages at $B (needs admin rights?); Pages still builds on every push"
-          {"build_type":"legacy","source":{"branch":"$B","path":"$P"}}
-          JSON
+          echo "{\"build_type\":\"legacy\",\"source\":{\"branch\":\"$B\",\"path\":\"$P\"}}" > /tmp/p.json
+          o=$(gh api -X PUT repos/$R/pages --input /tmp/p.json 2>&1) && echo "::notice title=Pages switched::Pages now publishes branch $B ($P)" || echo "::warning title=Pages switch::could not point Pages at $B: $(echo $o | head -c 300)"
           true   # ok: reported above
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
