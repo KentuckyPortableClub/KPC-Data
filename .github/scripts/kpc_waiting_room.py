@@ -1001,7 +1001,11 @@ def mode_release(rel):
 # ---- the REPLAY TEST (F-6): real bad outputs from git history must ALL hold; the good outputs must ALL pass
 def git_json(repo, sha, path):
     base = DATA if repo == 'data' else LINKS
-    if sha in ('live', 'HEAD', None): return load(base / path)
+    if sha in ('live', 'HEAD', None):   # Nov 2: a live file gzipped in the storage fix (x.json -> x.json.gz) is read from its twin
+        if not (base / path).exists() and (base / (str(path) + '.gz')).exists():
+            import gzip
+            return json.loads(gzip.decompress((base / (str(path) + '.gz')).read_bytes()).decode('utf-8'))
+        return load(base / path)
     p = subprocess.run(['git', '-C', str(base), 'show', f'{sha}:{path}'], capture_output=True)
     if p.returncode != 0 and repo == 'data':   # Nov 2: history restart; the case files live on branch replay-files (<commit>/<path>)
         rf = pathlib.Path(os.environ.get('REPLAY_FILES') or '../replay-files') / sha / path
@@ -1081,6 +1085,7 @@ def mode_replay():
     if not cases: print('REPLAY=FAIL (no cases)'); return False
     rows, ok_all = [], True
     for c in cases:
+        if c.get('retired'): rows.append(f"| retired | {c['name']} | {c['expect']} | {c['retired']} |"); continue
         try:
             batch, live = {}, {}
             for f in c['files']:
@@ -1098,13 +1103,13 @@ def mode_replay():
         good = caught if c['expect'] == 'HOLD' else passed
         ok_all &= good
         rows.append(f"| {'ok' if good else '**MISS**'} | {c['name']} | {c['expect']} | " + ' / '.join(f"{r['verdict']}: {('; '.join(r['why'] + r['notes']))[:160]}" for r in res) + ' |')
-    md = ['# Waiting room REPLAY TEST', f'Run {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%MZ}: **{"PASS" if ok_all else "FAIL"}** ({sum(r.startswith("| ok") for r in rows)} of {len(rows)} cases right). '
+    md = ['# Waiting room REPLAY TEST', f'Run {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%MZ}: **{"PASS" if ok_all else "FAIL"}** ({sum(r.startswith("| ok") for r in rows)} of {sum(not r.startswith("| retired") for r in rows)} cases right). '
           'Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.', '',
           '| result | case | expect | what the checker said |', '|---|---|---|---|'] + rows
     W.mkdir(parents=True, exist_ok=True)
     (W / 'replay.md').write_text('\n'.join(md) + '\n', encoding='utf-8')
     print('\n'.join(rows)); print('REPLAY=' + ('PASS' if ok_all else 'FAIL'))
-    print(f'::notice title=Waiting room replay::{"PASS" if ok_all else "FAIL"}: {sum(r.startswith("| ok") for r in rows)} of {len(rows)} cases right')
+    print(f'::notice title=Waiting room replay::{"PASS" if ok_all else "FAIL"}: {sum(r.startswith("| ok") for r in rows)} of {sum(not r.startswith("| retired") for r in rows)} cases right ({sum(r.startswith("| retired") for r in rows)} retired)')
     return ok_all
 
 
