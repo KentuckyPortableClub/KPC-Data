@@ -1,4 +1,5 @@
 name: KPC map audit (every saved outline graded, worst first) - outputs on tools-out audit/
+# World: the 5 countries with saved shapes (world-bounds) from those, every other key country read live from its key (HQ: all 28+).
 # Nov 2 2026 (chat 10; HQ 10:35 AM, Brandon: '28 of 30 = probably a ton of parks mismatched worldwide'). KPC_10_map_audit (outside
 # coder, draft/tools) grades every saved outline: pin inside / near / far, size vs official acres, name, kind, spill onto another
 # park, broken shapes. Decides nothing. US first, then Canada, then the world; 50-min jobs that chain until every area is done;
@@ -58,13 +59,13 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../out origin/tools-out
           mkdir -p ../club ../kyo
-          for d in us-key ca-key canada-bounds fers trails parkinfo world-bounds; do [ -e data/$d ] && ln -s "$PWD/data/$d" ../club/$d; done
+          for d in us-key ca-key canada-bounds fers trails parkinfo world-bounds world-key; do [ -e data/$d ] && ln -s "$PWD/data/$d" ../club/$d; done
           cp ../links/data/ky-answer-key.json ../club/ 2>/dev/null || true   # ok: Kentucky is skipped without it
           cp ../links/ky-*.geojson ../kyo/ 2>/dev/null || true   # ok: Kentucky outlines come from the answer key too
           [ "$FRESH" = yes ] && rm -rf ../out/audit
           mkdir -p ../out/audit
           if [ -z "$AREAS" ]; then
-            AREAS="US-KY $(ls data/parkinfo/US-*.json | xargs -n1 basename | sed 's/.json//' | grep -v US-KY | tr '\n' ' ') $(ls data/ca-key/CA-??.json 2>/dev/null | xargs -n1 basename | sed 's/.json//' | tr '\n' ' ') $(ls data/world-bounds 2>/dev/null | tr '\n' ' ')"
+            AREAS="US-KY $(ls data/parkinfo/US-*.json | xargs -n1 basename | sed 's/.json//' | grep -v US-KY | tr '\n' ' ') $(ls data/ca-key/CA-??.json 2>/dev/null | xargs -n1 basename | sed 's/.json//' | tr '\n' ' ') $(ls data/world-key/*.json | xargs -n1 basename | sed 's/.json//' | grep -E '^[A-Z0-9]{1,3}$' | tr '\n' ' ')"
           fi
           AC=""; [ -f ../out/acres/acres-list.json ] && AC="--acres ../out/acres/acres-list.json"
           pip install -q -r .github/scripts/draft/tools/KPC_10_map_audit/requirements.txt 2>&1 | tail -1

@@ -1112,10 +1112,39 @@ class Audit:
                 P["partial"] = True
         return self.finish(P)
 
+    def world_key_parks(self, country):
+        """Nov 2 (chat 10; HQ: every world country, not only the 5 with saved shapes): a country with no world-bounds folder is
+        audited from its KEY (world-key/<CC>.json: m = [record id, name, layer label, how]; world-key/layers.json = {label: url}),
+        each record read live from its own layer, like the US / Canada keys."""
+        key = self.load(self.data / "world-key" / f"{country}.json")
+        labels = self.load(self.data / "world-key" / "layers.json") if (self.data / "world-key" / "layers.json").exists() else {}
+        out = {}
+        for ref, p in (key.get("parks") or {}).items():
+            if not isinstance(p, dict) or not p.get("m"):
+                continue
+            P = self.blank(ref, country)
+            P.update(key_name=p.get("n", ""), type=p.get("t", ""), grade="world key (read live)")
+            groups = collections.defaultdict(list)
+            for row in p.get("m") or []:
+                if not isinstance(row, (list, tuple)) or len(row) < 3: continue
+                lab = str(row[2]); url = labels.get(lab) if isinstance(labels, dict) else None
+                if not isinstance(url, str) or not re.search(r"/(MapServer|FeatureServer)/\d+", url):
+                    P["problems"].append(f"CAN'T TELL: record {row[0]} is on '{lab[:60]}', not a layer this tool reads live"); continue
+                pre = "w:" + lab
+                self.layers.setdefault(pre, [url, None, lab])
+                groups[pre].append((str(row[0]), row))
+            def read(P=P, groups=groups):   # read live only when the batch reaches this park (time budget + --resume)
+                if groups: self.live_records(P, groups, None, "world")
+                return self.finish(P)
+            out[ref] = read
+        return out
+
     def world_parks(self, country):
         d = self.data / "world-bounds" / country
         if not d.exists():
-            raise BadInput(f"no world-bounds folder for {country}: {d}")
+            if (self.data / "world-key" / f"{country}.json").exists():
+                return self.world_key_parks(country)
+            raise BadInput(f"no world-bounds folder or world key for {country}: {d}")
         out = {}
         for f in sorted(d.glob("*.json"), key=lambda x: (len(x.stem), x.stem)):
             for ref, row in self.load(f).items():
@@ -1284,7 +1313,7 @@ def run_area(audit: Audit, area: str, acres_list: dict, deadline: float, progres
             elif kind == "ca":
                 P = audit.ca_park(ref, p, area, p.get("read", "") or str(key.get("built", ""))[:10])
             else:
-                P = parks[ref]
+                P = parks[ref]() if callable(parks[ref]) else parks[ref]
         except Exception as e:   # one bad park never stops the batch
             P = Audit.blank(ref, area)
             P["problems"].append(f"CAN'T TELL: {type(e).__name__}: {e}")
