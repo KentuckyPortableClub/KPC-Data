@@ -1,0 +1,184 @@
+{
+ "parks": {
+  "TEST-KY-01": {
+   "status": "ok",
+   "why": "parcel layer found by searching ArcGIS Online for \"Jefferson County parcels\": \"Metro_Owned_Parcels202301\" (published by \"Louisville/Jefferson County Information Consortium\"); asked at the pin (plain); parcel 074A00160000; owner type government because the owner name says \"METRO\"; acres: the county map's Acres field."
+  },
+  "TEST-KY-02": {
+   "status": "ok",
+   "why": "parcel layer found by searching ArcGIS Online for \"Fayette County parcels\": \"Parcel\" (published by \"Lexington-Fayette Urban County Government\"); asked at the pin (plain); parcel 38061630; owner type unknown because this county map has no owner field; acres: the county map's PVA_ACRE field."
+  },
+  "TEST-KY-03": {
+   "status": "no layer",
+   "why": "no government parcel layer found for this county: skipped by club decision (Oct 31) until a real parcel layer turns up: the only layers found for Warren County, KY are a zoning layer (zoning is not ownership) and a building damage-assessment form layer. Give a real parcel layer with --known to use one."
+  },
+  "TEST-KY-04": {
+   "status": "no layer",
+   "why": "no government parcel layer found for this county: searched ArcGIS Online (1 government candidate(s) covering the pin, 2 government server(s) listed); https://gisdata.in.gov/server/rest/services/Hosted/Parcel_Boundaries_of_Indiana_Current/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Town_Parcels/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Johnson_County_Parcels/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Bartholomew_Parcels/FeatureServer/0: no parcel under the pin."
+  },
+  "TEST-KY-05": {
+   "status": "no layer",
+   "why": "no government parcel layer found for this county: searched ArcGIS Online (0 government candidate(s) covering the pin, 0 government server(s) listed); none answered."
+  },
+  "TEST-KY-06": {
+   "status": "no layer",
+   "why": "no government parcel layer found for this county: searched ArcGIS Online (1 government candidate(s) covering the pin, 1 government server(s) listed); https://gisdata.in.gov/server/rest/services/Hosted/Parcel_Boundaries_of_Indiana_Current/FeatureServer/0: no parcel under the pin."
+  },
+  "TEST-KY-07": {
+   "status": "ok",
+   "why": "parcel layer found by searching ArcGIS Online for \"Hardin County parcels\": \"Hardin County Parcels 23\" (published by \"Hardin County Online GIS\"); asked at the pin (plain); parcel (no id field); owner type unknown because this county map has no owner field; acres: the county map's ACRES field."
+  },
+  "TEST-KY-08": {
+   "status": "ok",
+   "why": "parcel layer found by searching ArcGIS Online for \"Kenton County parcels\": \"Parcels - KY - Kenton County\" (government host maps.linkgis.org); asked at the pin (plain); parcel 040-20-00-001.00; owner type government because the owner name says \"CITY OF\"; acres: the county map's ACREAGE field."
+  },
+  "TEST-KY-09": {
+   "status": "no layer",
+   "why": "no government parcel layer found for this county: searched ArcGIS Online (0 government candidate(s) covering the pin, 0 government server(s) listed); none answered."
+  },
+  "TEST-KY-10": {
+   "status": "ok",
+   "why": "parcel layer found by searching ArcGIS Online for \"Henderson County parcels\": \"Parcels_231110\" (published by the organisation \"Henderson KY GIS\", named after this county / town); asked at the pin (plain); parcel 1-12-1-1; owner type unknown because this county map has no owner field; acres: the county map's GIS_ACRES field."
+  },
+  "US-3500": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 12345; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 1 more parcel(s) with the same owner name within 1 km."
+  },
+  "US-6543": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 100610000; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 1 more parcel(s) with the same owner name within 1 km."
+  },
+  "US-6546": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 525048; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline."
+  },
+  "US-6557": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 10660; owner type private because the owner name says \"PROPERTIES\" and has no government word; acres: worked out from the parcel outline; 2 more parcel(s) with the same owner name within 1 km. The owner is written only as \"private\" (club rule 9: no names of private owners)."
+  },
+  "US-6559": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 1160; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 3 more parcel(s) with the same owner name within 1 km."
+  },
+  "US-6560": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 194697; owner type government because the owner name says \"STATE OF\"; acres: worked out from the parcel outline; 8 more parcel(s) with the same owner name within 1 km."
+  },
+  "US-6561": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 70410; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline."
+  },
+  "US-6577": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 55650; owner type government because the owner name says \"DEPT\"; acres: worked out from the parcel outline."
+  },
+  "US-6601": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 75915; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 1 more parcel(s) with the same owner name within 1 km."
+  },
+  "US-6607": {
+   "status": "ok",
+   "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 161200; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 4 more parcel(s) with the same owner name within 1 km."
+  }
+ },
+ "counties": {
+  "21227": {
+   "layer_url": null,
+   "why": "skipped by club decision (Oct 31) until a real parcel layer turns up: the only layers found for Warren County, KY are a zoning layer (zoning is not ownership) and a building damage-assessment form layer. Give a real parcel layer with --known to use one"
+  },
+  "21059": {
+   "layer_url": null,
+   "why": "searched ArcGIS Online (1 government candidate(s) covering the pin, 2 government server(s) listed); https://gisdata.in.gov/server/rest/services/Hosted/Parcel_Boundaries_of_Indiana_Current/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Town_Parcels/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Johnson_County_Parcels/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Bartholomew_Parcels/FeatureServer/0: no parcel under the pin"
+  },
+  "21035": {
+   "layer_url": null,
+   "why": "searched ArcGIS Online (0 government candidate(s) covering the pin, 0 government server(s) listed); none answered"
+  },
+  "21073": {
+   "layer_url": null,
+   "why": "searched ArcGIS Online (1 government candidate(s) covering the pin, 1 government server(s) listed); https://gisdata.in.gov/server/rest/services/Hosted/Parcel_Boundaries_of_Indiana_Current/FeatureServer/0: no parcel under the pin"
+  },
+  "21019": {
+   "layer_url": null,
+   "why": "searched ArcGIS Online (0 government candidate(s) covering the pin, 0 government server(s) listed); none answered"
+  },
+  "21111": {
+   "layer_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Metro_Owned_Parcels202301/FeatureServer/0",
+   "why": "\"Metro_Owned_Parcels202301\", published by \"Louisville/Jefferson County Information Consortium\"; the pin of TEST-KY-01 falls on one of its parcels"
+  },
+  "21067": {
+   "layer_url": "https://services1.arcgis.com/Mg7DLdfYcSWIaDnu/arcgis/rest/services/Parcel/FeatureServer/0",
+   "why": "\"Parcel\", published by \"Lexington-Fayette Urban County Government\"; the pin of TEST-KY-02 falls on one of its parcels"
+  },
+  "21093": {
+   "layer_url": "https://services1.arcgis.com/fYwcHOBzInDTQxh0/arcgis/rest/services/Hardin_Parcels_08_11_22/FeatureServer/0",
+   "why": "\"Hardin County Parcels 23\", published by \"Hardin County Online GIS\"; the pin of TEST-KY-07 falls on one of its parcels"
+  },
+  "21117": {
+   "layer_url": "https://maps.linkgis.org/server/rest/services/CC_KC_PCTheme/MapServer/15",
+   "why": "\"Parcels - KY - Kenton County\", government host maps.linkgis.org; the pin of TEST-KY-08 falls on one of its parcels"
+  },
+  "21101": {
+   "layer_url": "https://services.arcgis.com/Iwwqwcdc5CWG2jt9/arcgis/rest/services/Parcels_231110/FeatureServer/0",
+   "why": "\"Parcels_231110\", published by the organisation \"Henderson KY GIS\", named after this county / town; the pin of TEST-KY-10 falls on one of its parcels"
+  },
+  "48185": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48073": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48029": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48417": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48327": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48453": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48007": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48141": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48147": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  },
+  "48039": {
+   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
+  }
+ },
+ "read_date": "2026-11-01",
+ "requests": {
+  "requests": 0,
+  "cache_hits": 0,
+  "robots_refused": 0,
+  "rested": 0,
+  "banned": 0,
+  "errors": 0,
+  "blocked": 0
+ },
+ "blocked_hosts": {
+  "services.arcgis.com/robots.txt": "403 Forbidden on https://services.arcgis.com/robots.txt",
+  "services1.arcgis.com/robots.txt": "403 Forbidden on https://services1.arcgis.com/robots.txt",
+  "services2.arcgis.com/robots.txt": "403 Forbidden on https://services2.arcgis.com/robots.txt",
+  "services7.arcgis.com/robots.txt": "403 Forbidden on https://services7.arcgis.com/robots.txt"
+ },
+ "left": 0,
+ "owner_names": "gov"
+}

@@ -1,0 +1,24 @@
+{"src": "official campground layers (outside research E)", "read": "2026-11-01",
+ "camps": [
+  ["L-57b0609c73", "Camp Site 1", 46.888022, -102.260419, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=79781&outFields=*&f=html"],
+  ["L-039eb8442b", "Camp Site 2", 46.886546, -102.258601, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=79918&outFields=*&f=html"],
+  ["L-88a89e5027", "Camp Site 3", 46.885748, -102.257985, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=79916&outFields=*&f=html"],
+  ["L-47bfe954a5", "Camp Site 4", 46.885053, -102.257296, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=79907&outFields=*&f=html"],
+  ["L-e7b80d280c", "Camp Site 5", 46.88424, -102.256669, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=79660&outFields=*&f=html"],
+  ["L-cfab32b53b", "Camp Site 6", 46.883625, -102.256036, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=79818&outFields=*&f=html"],
+  ["L-109abdc64d", "Red River of the North State Water Trail - Campsite Drayton Dam Campsite", 48.598597, -97.151005, "prim", "", "", "", "Minnesota DNR", "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_parks_and_trails_campsites/FeatureServer/0/query?objectIds=5240&outFields=*&f=html"],
+  ["L-61dae357bf", "Red River of the North State Water Trail - Campsite Joliet Ferry WMA, North Dakota", 48.370375, -97.155007, "prim", "", "", "", "Minnesota DNR", "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_parks_and_trails_campsites/FeatureServer/0/query?objectIds=4936&outFields=*&f=html"],
+  ["L-8d23fc1ddb", "SCHNELL RECREATION AREA", 46.88831, -102.260946, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=79756&outFields=*&f=html"]
+ ],
+ "extra": {
+  "L-039eb8442b": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-01"},
+  "L-109abdc64d": {"why": "campground (by type field); type: Campsite; name built from park name + type; state by outline", "read_date": "2026-11-01"},
+  "L-47bfe954a5": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-01"},
+  "L-57b0609c73": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-01"},
+  "L-61dae357bf": {"why": "campground (by type field); type: Campsite; name built from park name + type; state by outline", "read_date": "2026-11-01"},
+  "L-88a89e5027": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-01"},
+  "L-8d23fc1ddb": {"why": "campground (by type field); type: CAMPGROUND | Campground; state by outline", "read_date": "2026-11-01"},
+  "L-cfab32b53b": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-01"},
+  "L-e7b80d280c": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-01"}
+ }
+}

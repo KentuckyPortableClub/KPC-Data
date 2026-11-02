@@ -1,0 +1,112 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "ref": "CA-1240",
+    "name": "Hyla Park Nature Reserve",
+    "agency": "government agency (naturetrust.nb.ca)",
+    "grade": "approximate (picture map)",
+    "status": "DRAWN",
+    "source_type": "official",
+    "match_score": 0.0,
+    "decoy_score": 0.0,
+    "fit_m": 0.0,
+    "fit_loo_m": null,
+    "n_points": 0,
+    "method": "boundary by Lab k-means (cluster4 Lab=(210,81,206), filled, 1 parcel(s)); placed by GeoPDF (ISO 32000 /GPTS); Douglas-Peucker 3 m",
+    "model": "GeoPDF",
+    "source_url": "https://static1.squarespace.com/static/5e848a775a3fc437adc257db/t/60c798f047cc43777d45aef1/1623693553196/2017_Hyla+Park_Map.pdf",
+    "page": 1,
+    "basemap_sources": [
+     "GeoPDF (ISO 32000 /GPTS)"
+    ],
+    "date": "2026-11-02",
+    "area_acres": 21.9,
+    "flags": [
+     "placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching"
+    ],
+    "use_for_2fer": false,
+    "official": false,
+    "control_points": [],
+    "tool": "kpc_trace_picture.py 0.2.0"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -66.6080456,
+       45.9490822
+      ],
+      [
+       -66.6081448,
+       45.9490601
+      ],
+      [
+       -66.6106985,
+       45.9497401
+      ],
+      [
+       -66.6107618,
+       45.9497904
+      ],
+      [
+       -66.6109647,
+       45.9498122
+      ],
+      [
+       -66.6108123,
+       45.9501958
+      ],
+      [
+       -66.6112906,
+       45.95034
+      ],
+      [
+       -66.6114393,
+       45.950299
+      ],
+      [
+       -66.6115964,
+       45.9499909
+      ],
+      [
+       -66.6128417,
+       45.9503199
+      ],
+      [
+       -66.6117593,
+       45.9522789
+      ],
+      [
+       -66.609571,
+       45.9516646
+      ],
+      [
+       -66.6095842,
+       45.9515577
+      ],
+      [
+       -66.6095346,
+       45.9515201
+      ],
+      [
+       -66.6092506,
+       45.9515737
+      ],
+      [
+       -66.6070171,
+       45.950928
+      ],
+      [
+       -66.6080456,
+       45.9490822
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,920 @@
+{
+ "tool": "KPC 11 Boundary Change Watcher",
+ "date": "2026-11-01",
+ "areas": [
+  "US-KY",
+  "US-TN",
+  "CA-ON"
+ ],
+ "note": "Only parks whose agency outline changed. Nothing here edits a key, an outline or a 2-fer.",
+ "changed": [
+  {
+   "area": "US-TN",
+   "ref": "US-2958",
+   "name": "Montgomery Bell State Park",
+   "leads": [
+    {
+     "layer": "sgtnj",
+     "old_record_id": 260,
+     "new_record_ids": [
+      480
+     ],
+     "name_on_layer": "Montgomery Bell State Park",
+     "how": "exact name"
+    }
+   ],
+   "verdict": "RECORD GONE",
+   "why": "No longer on the agency's layer: record 260 ('Montgomery Bell State Park') on sgtnj (a record named 'Montgomery Bell State Park' is on the layer as number 480: probably renumbered).",
+   "old_acres": 4066,
+   "new_acres": 4066,
+   "old_still_inside_pct": 100.0,
+   "old_outline_from": "last run's live outline",
+   "fers": []
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3792",
+   "name": "Land Between the Lakes National Recreation Area",
+   "verdict": "RENAMED",
+   "also": [
+    "SHRANK"
+   ],
+   "why": "The agency renamed record 53 on fsod from 'Land Between the Lakes National Recreation Area' to 'Jemez National Recreation Area'. The agency's outline shrank from 171,300.0 to 121,400.0 acres (-29.1%).",
+   "old_acres": 171300,
+   "new_acres": 121400,
+   "old_still_inside_pct": 37.2,
+   "old_outline_from": "last run's live outline",
+   "fers": [
+    {
+     "id": "US-3792+US-7568@area@36.558,-87.907",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3792+US-7568@area@36.567,-87.921",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1643",
+   "name": "St. Williams Conservation Reserve",
+   "leads": [
+    {
+     "layer": "Ontario cons",
+     "old_record_id": 20801,
+     "new_record_ids": [
+      22081
+     ],
+     "name_on_layer": "ST. WILLIAMS CONSERVATION RESERVE",
+     "how": "exact name"
+    }
+   ],
+   "verdict": "RECORD GONE",
+   "why": "No longer on the agency's layer: record 20801 ('ST. WILLIAMS CONSERVATION RESERVE') on Ontario cons (a record named 'ST. WILLIAMS CONSERVATION RESERVE' is on the layer as number 22081: probably renumbered).",
+   "old_acres": 2556,
+   "new_acres": 2556,
+   "old_still_inside_pct": 93.9,
+   "old_outline_from": "the club's saved outline",
+   "fers": []
+  }
+ ],
+ "could_not_check": [
+  {
+   "area": "US-KY",
+   "ref": "US-10099",
+   "name": "Wolf Creek National Fish Hatchery",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: 'Wolf Creek National Fish Hatchery': no record with this name on the layer."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-3802",
+   "name": "Clyde E Buckley Sanctuary",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: 'Clyde E Buckley Sanctuary': no record with this name on the layer."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1043",
+   "name": "Mount Nemo Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1046",
+   "name": "Rattlesnake Point Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1297",
+   "name": "Ball's Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1299",
+   "name": "Bannockburn Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1392",
+   "name": "Elora Gorge Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1427",
+   "name": "Greenwood Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1440",
+   "name": "Hilton Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1519",
+   "name": "Milne Dam Conservation Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1528",
+   "name": "Mountsberg Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1541",
+   "name": "Crawford Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1638",
+   "name": "W.A. Taylor Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-RVCA Ride' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1646",
+   "name": "Stoney Island Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1689",
+   "name": "Warkworth Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5086",
+   "name": "Seymour Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5088",
+   "name": "King's Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5089",
+   "name": "Sager Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5091",
+   "name": "Birdsall Wildlife Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5092",
+   "name": "Bruce's Caves Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5102",
+   "name": "Harold Town Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5104",
+   "name": "Hope Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5105",
+   "name": "Kelso Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5111",
+   "name": "Oak Ridges Corridor Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5143",
+   "name": "Marshlands Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CRCA Cata' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5291",
+   "name": "Ken Reid Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-KRCA Kawa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5317",
+   "name": "Rockwood Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5318",
+   "name": "Guelph Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5319",
+   "name": "Belwood Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5368",
+   "name": "Meadowvale Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CVC Credi' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5508",
+   "name": "Robert Edmondson Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5541",
+   "name": "E.M. Warwick Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTVCA Low' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5543",
+   "name": "Morris Island Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-MVC Missi' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5561",
+   "name": "Cold Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5564",
+   "name": "Area 8 Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5571",
+   "name": "Binbrook Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5575",
+   "name": "Jordan Harbour Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5576",
+   "name": "Virgil Dams and Reservoirs Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5577",
+   "name": "Two Mile Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5578",
+   "name": "Woodend Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5580",
+   "name": "Hedley Forest Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5582",
+   "name": "Canborough Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5583",
+   "name": "Port Davidson Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5585",
+   "name": "Chippawa Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5586",
+   "name": "Gainsborough Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5587",
+   "name": "Comfort Maple Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5588",
+   "name": "St. Johns Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5589",
+   "name": "E.C. Brown Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5591",
+   "name": "Stevensville Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5595",
+   "name": "Gord Harry Trail Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5596",
+   "name": "Long Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5597",
+   "name": "Brant Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5598",
+   "name": "Byng Island Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5599",
+   "name": "Conestogo Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5600",
+   "name": "Elora Quarry Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5601",
+   "name": "Laurel Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5602",
+   "name": "Luther Marsh Wildlife Management Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5603",
+   "name": "Pinehurst Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5604",
+   "name": "Shade's Mills Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5627",
+   "name": "Inglis Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5630",
+   "name": "Carr's Marsh Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5632",
+   "name": "Cobourg Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5637",
+   "name": "Goodrich-Loomis Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5638",
+   "name": "Ganaraska Forest Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5639",
+   "name": "Sawer Creek Wildlife Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5643",
+   "name": "Charles Sauriol Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5647",
+   "name": "Rice Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5648",
+   "name": "Garden Hill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5649",
+   "name": "Richardson's Lookout Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5651",
+   "name": "Hibou Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5652",
+   "name": "Port Hope Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5653",
+   "name": "Pottawatomi and Jones Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5654",
+   "name": "Old Baldy Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5655",
+   "name": "Indian Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5656",
+   "name": "Eugenia Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5657",
+   "name": "Epping-John Muir Lookout Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5658",
+   "name": "Spirit Rock & McNeill Estate Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5660",
+   "name": "Arran Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5661",
+   "name": "Feversham Gorge – Madeleine Graydon Memorial Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5665",
+   "name": "The Glen Management Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5669",
+   "name": "Holiday Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5670",
+   "name": "Sunnybrook Park Wilderness Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5895",
+   "name": "Serena Gundy Park Wilderness Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5943",
+   "name": "Cheltenham Badlands Natural Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CVC Credi' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5947",
+   "name": "Devonwood Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5957",
+   "name": "Portland Bay Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-RVCA Ride' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5959",
+   "name": "West Rocks Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5982",
+   "name": "Brucedale Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5983",
+   "name": "Denny's Dam Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5984",
+   "name": "Durham Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5985",
+   "name": "McBeath Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5986",
+   "name": "Saugeen Bluffs Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5987",
+   "name": "Schmidt Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5990",
+   "name": "Varney Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6004",
+   "name": "Christie Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6005",
+   "name": "Ainslie Wood Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6006",
+   "name": "Clendenan Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6007",
+   "name": "Colpoy's Lookout Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6008",
+   "name": "Kemble Mountain Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6009",
+   "name": "Crediton Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6010",
+   "name": "Clinton Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6011",
+   "name": "Lucan Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6013",
+   "name": "Parkhill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6014",
+   "name": "Rock Glen Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6015",
+   "name": "Zurich Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6091",
+   "name": "Lang Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6092",
+   "name": "Young's Point Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6208",
+   "name": "Ausable River Cut Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6212",
+   "name": "Big Bend Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTVCA Low' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6352",
+   "name": "Osprey Wetlands Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6358",
+   "name": "Whitchurch Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LSRCA Lak' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6360",
+   "name": "Hardwood Hill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6362",
+   "name": "Cedar Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6363",
+   "name": "Kopegaron Woods Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6364",
+   "name": "Tremblay Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6365",
+   "name": "Ruscom Shores Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6368",
+   "name": "Bell's Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6370",
+   "name": "John R. Park Homestead Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6371",
+   "name": "Cedar Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  }
+ ],
+ "layers_moved": []
+}

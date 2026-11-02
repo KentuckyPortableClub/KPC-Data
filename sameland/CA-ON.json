@@ -1,0 +1,6389 @@
+{
+ "tool": "KPC 13 same-land finder",
+ "area": "CA-ON",
+ "built": "2026-11-01",
+ "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
+ "counts": {
+  "parks": 1180,
+  "outlines": 932,
+  "pairs_overlapping": 144,
+  "SAME LAND: likely": 12,
+  "CHECK": 13,
+  "NOT SAME": 119,
+  "one_inside_the_other": 1
+ },
+ "left_out": [],
+ "pairs": [
+  {
+   "id": "CA-1320+CA-1321",
+   "refs": [
+    "CA-1320",
+    "CA-1321"
+   ],
+   "names": [
+    "Blair Township Nature Reserve Wilderness Area",
+    "Blair Township Wilderness Area"
+   ],
+   "acres": [
+    145.8,
+    145.8
+   ],
+   "overlap_acres": 145.8,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "cpcad:16179"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "blair township",
+     "blair township"
+    ],
+    "S4": true,
+    "S4_m": 0,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ministry of Natural Resources and Forestry"
+     ],
+     [
+      "Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1361+CA-1362",
+   "refs": [
+    "CA-1361",
+    "CA-1362"
+   ],
+   "names": [
+    "Crane Lake Forest Conservation Reserve",
+    "Crane Lakes Conservation Reserve"
+   ],
+   "acres": [
+    955.0,
+    955.0
+   ],
+   "overlap_acres": 955.0,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario cons:8417",
+     "cpcad:15942"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "crane",
+     "crane"
+    ],
+    "S4": true,
+    "S4_m": 0,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0057+CA-0307",
+   "refs": [
+    "CA-0057",
+    "CA-0307"
+   ],
+   "names": [
+    "Mississippi Lake National Wildlife Area",
+    "Mississippi Lake Migratory Bird Sanctuary"
+   ],
+   "acres": [
+    1237.9,
+    1237.9
+   ],
+   "overlap_acres": 1237.9,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario fede:657",
+     "cpcad:22189",
+     "cpcad:22190",
+     "cpcad:22191"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "mississippi",
+     "mississippi migratory bird"
+    ],
+    "S4": false,
+    "S4_m": 1326,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Environment and Climate Change Canada",
+      "Government of Canada (federal protected area)"
+     ],
+     [
+      "Environment and Climate Change Canada",
+      "Government of Canada (federal protected area)"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-5991+CA-5992",
+   "refs": [
+    "CA-5991",
+    "CA-5992"
+   ],
+   "names": [
+    "Beachville Conservation Area",
+    "Beachville Tract Conservation Area"
+   ],
+   "acres": [
+    95.4,
+    95.4
+   ],
+   "overlap_acres": 95.4,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "cpcad:17672"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "beachville",
+     "beachville"
+    ],
+    "S4": false,
+    "S4_m": 1669,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Upper Thames River Conservation Authority"
+     ],
+     [
+      "Upper Thames River Conservation Authority"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1507+CA-1508",
+   "refs": [
+    "CA-1507",
+    "CA-1508"
+   ],
+   "names": [
+    "McCrae Lake Conservation Reserve",
+    "McCrae Lake Wilderness Area Conservation Reserve"
+   ],
+   "acres": [
+    4977.4,
+    4977.4
+   ],
+   "overlap_acres": 4977.4,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario cons:12321",
+     "cpcad:15990"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "mccrae",
+     "mccrae"
+    ],
+    "S4": false,
+    "S4_m": 2628,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1303+CA-1304",
+   "refs": [
+    "CA-1303",
+    "CA-1304"
+   ],
+   "names": [
+    "Basswood Lake Conservation Reserve",
+    "Basswood Lake Hemlock Conservation Reserve"
+   ],
+   "acres": [
+    622.8,
+    622.8
+   ],
+   "overlap_acres": 622.8,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario cons:10801",
+     "Ontario cons:9905",
+     "cpcad:15909",
+     "cpcad:16033"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "basswood",
+     "basswood hemlock"
+    ],
+    "S4": false,
+    "S4_m": 6093,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-5633+CA-5942",
+   "refs": [
+    "CA-5633",
+    "CA-5942"
+   ],
+   "names": [
+    "Bowmanville Valley Conservation Area",
+    "Bowmanville Westside Marshes Conservation Area"
+   ],
+   "acres": [
+    171.6,
+    171.6
+   ],
+   "overlap_acres": 171.6,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "cpcad:17019"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": false,
+    "S3_score": 75.9,
+    "S3_names": [
+     "bowmanville valley",
+     "bowmanville westside marshes"
+    ],
+    "S4": false,
+    "S4_m": 3902,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Central Lake Ontario Conservation Authority"
+     ],
+     [
+      "Central Lake Ontario Conservation Authority"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1310+CA-1577",
+   "refs": [
+    "CA-1310",
+    "CA-1577"
+   ],
+   "names": [
+    "Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park",
+    "Pikangikum Cultural Landscape Waterways Protected Area"
+   ],
+   "acres": [
+    246372.5,
+    246372.5
+   ],
+   "overlap_acres": 246372.5,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario Park:41377",
+     "cpcad:16512"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": false,
+    "S3_score": 29.1,
+    "S3_names": [
+     "beekahncheekahmeeng deebahncheekayweehn eenahohnahnuhn",
+     "pikangikum cultural landscape waterways protected"
+    ],
+    "S4": false,
+    "S4_m": 30323,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1475+CA-1699",
+   "refs": [
+    "CA-1475",
+    "CA-1699"
+   ],
+   "names": [
+    "Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve",
+    "Weeskayjahk Ohtahzhoganeeng Provincial Park"
+   ],
+   "acres": [
+    656622.9,
+    656622.9
+   ],
+   "overlap_acres": 656622.9,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario Park:41281",
+     "cpcad:16517",
+     "cpcad:16527"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": false,
+    "S3_score": 17.6,
+    "S3_names": [
+     "country",
+     "weeskayjahk ohtahzhoganeeng"
+    ],
+    "S4": false,
+    "S4_m": 20847,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0162+CA-0163",
+   "refs": [
+    "CA-0162",
+    "CA-0163"
+   ],
+   "names": [
+    "Bonnechere Provincial Park",
+    "Bonnechere River Provincial Park"
+   ],
+   "acres": [
+    3272.3,
+    3318.5
+   ],
+   "overlap_acres": 3272.3,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario Park:37297",
+     "Ontario Park:52161",
+     "cpcad:16372",
+     "cpcad:16509"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.986,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "bonnechere",
+     "bonnechere river"
+    ],
+    "S4": false,
+    "S4_m": 8100,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0304+CA-0306",
+   "refs": [
+    "CA-0304",
+    "CA-0306"
+   ],
+   "names": [
+    "Mississagi Provincial Park",
+    "Mississagi River Provincial Park"
+   ],
+   "acres": [
+    252337.4,
+    246271.0
+   ],
+   "overlap_acres": 246271.0,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario Park:58641",
+     "Ontario Park:58977",
+     "cpcad:16299",
+     "cpcad:16395"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.976,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "mississagi",
+     "mississagi river"
+    ],
+    "S4": false,
+    "S4_m": 65382,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1477+CA-1478",
+   "refs": [
+    "CA-1477",
+    "CA-1478"
+   ],
+   "names": [
+    "Lake Of The Woods Conservation Reserve",
+    "Lake Of The Woods Waters Conservation Reserve"
+   ],
+   "acres": [
+    113301.6,
+    118187.0
+   ],
+   "overlap_acres": 113301.6,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario cons:21121",
+     "cpcad:15981"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.959,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "woods",
+     "woods waters"
+    ],
+    "S4": false,
+    "S4_m": 78202,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0414+CA-1667",
+   "refs": [
+    "CA-0414",
+    "CA-1667"
+   ],
+   "names": [
+    "Timber Island Provincial Park",
+    "Timber Island Wilderness Area"
+   ],
+   "acres": [
+    118.6,
+    118.6
+   ],
+   "overlap_acres": 118.6,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario Park:39521",
+     "cpcad:16251"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "timber island",
+     "timber island"
+    ],
+    "S4": false,
+    "S4_m": 493,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-4856+CA-4863",
+   "refs": [
+    "CA-4856",
+    "CA-4863"
+   ],
+   "names": [
+    "Battlefield of Fort George National Historic Site",
+    "Fort George National Historic Site"
+   ],
+   "acres": [
+    80.1,
+    80.1
+   ],
+   "overlap_acres": 80.1,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "cpcad:22062"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "fort george",
+     "fort george"
+    ],
+    "S4": false,
+    "S4_m": 2013,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Parks Canada"
+     ],
+     [
+      "Parks Canada"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "approximate",
+    "official"
+   ]
+  },
+  {
+   "id": "CA-0351+CA-1586",
+   "refs": [
+    "CA-0351",
+    "CA-1586"
+   ],
+   "names": [
+    "Presqu'ile Provincial Park",
+    "Presqu'ile Island Wilderness Area"
+   ],
+   "acres": [
+    2408.7,
+    2408.7
+   ],
+   "overlap_acres": 2408.7,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario Park:52481",
+     "cpcad:16334"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "presquile",
+     "presquile island"
+    ],
+    "S4": false,
+    "S4_m": 4338,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-0418+CA-1705",
+   "refs": [
+    "CA-0418",
+    "CA-1705"
+   ],
+   "names": [
+    "Turtle River-White Otter Lake Provincial Park",
+    "White Otter Lake Wilderness Area"
+   ],
+   "acres": [
+    121996.5,
+    121996.5
+   ],
+   "overlap_acres": 121996.5,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario Park:52817",
+     "cpcad:16505"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "turtle river white otter",
+     "white otter"
+    ],
+    "S4": false,
+    "S4_m": 8955,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-1708+CA-6629",
+   "refs": [
+    "CA-1708",
+    "CA-6629"
+   ],
+   "names": [
+    "Whitefish River Sandy Till Conservation Reserve",
+    "Whitefish River Conservation Reserve"
+   ],
+   "acres": [
+    9472.4,
+    9472.4
+   ],
+   "overlap_acres": 9472.4,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario cons:11233",
+     "cpcad:16112"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "whitefish river sandy till",
+     "whitefish river"
+    ],
+    "S4": false,
+    "S4_m": 15002,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "approximate",
+    "official"
+   ]
+  },
+  {
+   "id": "CA-0395+CA-1627",
+   "refs": [
+    "CA-0395",
+    "CA-1627"
+   ],
+   "names": [
+    "Sleeping Giant Provincial Park",
+    "Sleeping Giant Wilderness Area"
+   ],
+   "acres": [
+    60490.4,
+    60490.4
+   ],
+   "overlap_acres": 60490.4,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "Ontario Park:56017",
+     "cpcad:16211"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "sleeping giant",
+     "sleeping giant"
+    ],
+    "S4": false,
+    "S4_m": 25046,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-5554+CA-5555",
+   "refs": [
+    "CA-5554",
+    "CA-5555"
+   ],
+   "names": [
+    "Boyd Conservation Park Conservation Area",
+    "Boyd North Conservation Area"
+   ],
+   "acres": [
+    331.8,
+    326.7
+   ],
+   "overlap_acres": 326.5,
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "cpcad:17355"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.984,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "boyd",
+     "boyd north"
+    ],
+    "S4": false,
+    "S4_m": 1160,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Toronto and Region Conservation Authority"
+     ],
+     [
+      "Toronto and Region Conservation Authority"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-0174+CA-6371",
+   "refs": [
+    "CA-0174",
+    "CA-6371"
+   ],
+   "names": [
+    "Cedar Creek Provincial Park",
+    "Cedar Creek Conservation Area"
+   ],
+   "acres": [
+    975.4,
+    802.1
+   ],
+   "overlap_acres": 802.1,
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "ON-ERCA Esse:7"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.822,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cedar creek",
+     "cedar creek"
+    ],
+    "S4": false,
+    "S4_m": 1627,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-5358+CA-5566",
+   "refs": [
+    "CA-5358",
+    "CA-5566"
+   ],
+   "names": [
+    "Devil's Punch Bowl Conservation Area",
+    "Saltfleet Conservation Area"
+   ],
+   "acres": [
+    377.1,
+    592.0
+   ],
+   "overlap_acres": 377.1,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "cpcad:17086"
+    ],
+    "S2": "ONE INSIDE THE OTHER",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.637,
+    "S3": false,
+    "S3_score": 15.4,
+    "S3_names": [
+     "devils punch bowl",
+     "saltfleet"
+    ],
+    "S4": false,
+    "S4_m": 1247,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Hamilton Conservation Authority"
+     ],
+     [
+      "Hamilton Conservation Authority"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0052+CA-0279",
+   "refs": [
+    "CA-0052",
+    "CA-0279"
+   ],
+   "names": [
+    "Long Point Biosphere Reserve",
+    "Long Point Provincial Park"
+   ],
+   "acres": [
+    1414.4,
+    363.7
+   ],
+   "overlap_acres": 363.7,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario Park:40737",
+     "cpcad:16291"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.257,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "long point biosphere",
+     "long point"
+    ],
+    "S4": false,
+    "S4_m": 2774,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0052+CA-0053",
+   "refs": [
+    "CA-0052",
+    "CA-0053"
+   ],
+   "names": [
+    "Long Point Biosphere Reserve",
+    "Long Point National Wildlife Area"
+   ],
+   "acres": [
+    1414.4,
+    8063.9
+   ],
+   "overlap_acres": 1053.6,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario fede:353"
+    ],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.745,
+    "S2_of_larger": 0.131,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "long point biosphere",
+     "long point"
+    ],
+    "S4": false,
+    "S4_m": 3181,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Ontario Parks"
+     ],
+     [
+      "Government of Canada (federal protected area)"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0304+CA-0305",
+   "refs": [
+    "CA-0304",
+    "CA-0305"
+   ],
+   "names": [
+    "Mississagi Provincial Park",
+    "Mississagi Delta Provincial Park"
+   ],
+   "acres": [
+    252337.4,
+    26670.7
+   ],
+   "overlap_acres": 26670.7,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario Park:58689",
+     "Ontario Park:58977",
+     "cpcad:16212",
+     "cpcad:16299"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.106,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "mississagi",
+     "mississagi delta"
+    ],
+    "S4": false,
+    "S4_m": 53481,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0305+CA-0306",
+   "refs": [
+    "CA-0305",
+    "CA-0306"
+   ],
+   "names": [
+    "Mississagi Delta Provincial Park",
+    "Mississagi River Provincial Park"
+   ],
+   "acres": [
+    26670.7,
+    246271.0
+   ],
+   "overlap_acres": 20604.3,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "Ontario Park:58977",
+     "cpcad:16299"
+    ],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.773,
+    "S2_of_larger": 0.084,
+    "S3": false,
+    "S3_score": 76.9,
+    "S3_names": [
+     "mississagi delta",
+     "mississagi river"
+    ],
+    "S4": false,
+    "S4_m": 117442,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0402+CA-4867",
+   "refs": [
+    "CA-0402",
+    "CA-4867"
+   ],
+   "names": [
+    "St. Joseph's Island Migratory Bird Sanctuary",
+    "Fort St. Joseph National Historic Site"
+   ],
+   "acres": [
+    2437.4,
+    957.2
+   ],
+   "overlap_acres": 957.1,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.393,
+    "S3": false,
+    "S3_score": 53.8,
+    "S3_names": [
+     "saint josephs island migratory bird",
+     "fort saint joseph"
+    ],
+    "S4": false,
+    "S4_m": 692,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Environment and Climate Change Canada"
+     ],
+     [
+      "Government of Canada (federal protected area)"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0010+CA-0168",
+   "refs": [
+    "CA-0010",
+    "CA-0168"
+   ],
+   "names": [
+    "Bruce Peninsula National Park",
+    "Cabot Head Provincial Park"
+   ],
+   "acres": [
+    39304.6,
+    12557.7
+   ],
+   "overlap_acres": 10959.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.873,
+    "S2_of_larger": 0.279,
+    "S3": false,
+    "S3_score": 32.0,
+    "S3_names": [
+     "bruce peninsula",
+     "cabot head"
+    ],
+    "S4": false,
+    "S4_m": 7702,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1673+CA-5143",
+   "refs": [
+    "CA-1673",
+    "CA-5143"
+   ],
+   "names": [
+    "Little Cataraqui Creek Conservation Area",
+    "Marshlands Conservation Area"
+   ],
+   "acres": [
+    1328.9,
+    412.1
+   ],
+   "overlap_acres": 304.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.739,
+    "S2_of_larger": 0.229,
+    "S3": false,
+    "S3_score": 18.8,
+    "S3_names": [
+     "little cataraqui creek",
+     "marshlands"
+    ],
+    "S4": false,
+    "S4_m": 7370,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "Cataraqui Region Conservation Authority (CRCA)"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-0010+CA-0241",
+   "refs": [
+    "CA-0010",
+    "CA-0241"
+   ],
+   "names": [
+    "Bruce Peninsula National Park",
+    "Johnston Harbour-Pine Tree Point Provincial Park"
+   ],
+   "acres": [
+    39304.6,
+    2373.0
+   ],
+   "overlap_acres": 2354.6,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.992,
+    "S2_of_larger": 0.06,
+    "S3": false,
+    "S3_score": 29.8,
+    "S3_names": [
+     "bruce peninsula",
+     "johnston harbour pine tree point"
+    ],
+    "S4": false,
+    "S4_m": 13502,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0417+CA-1643",
+   "refs": [
+    "CA-0417",
+    "CA-1643"
+   ],
+   "names": [
+    "Turkey Point Provincial Park",
+    "St. Williams Conservation Reserve"
+   ],
+   "acres": [
+    929.6,
+    2736.4
+   ],
+   "overlap_acres": 104.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.112,
+    "S2_of_larger": 0.038,
+    "S3": false,
+    "S3_score": 30.8,
+    "S3_names": [
+     "turkey point",
+     "saint williams"
+    ],
+    "S4": false,
+    "S4_m": 3387,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-5670+CA-5671",
+   "refs": [
+    "CA-5670",
+    "CA-5671"
+   ],
+   "names": [
+    "Sunnybrook Park Wilderness Park",
+    "Wilket Creek Park Wilderness Park"
+   ],
+   "acres": [
+    60.1,
+    110.6
+   ],
+   "overlap_acres": 1.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.023,
+    "S2_of_larger": 0.013,
+    "S3": false,
+    "S3_score": 18.2,
+    "S3_names": [
+     "sunnybrook",
+     "wilket creek"
+    ],
+    "S4": false,
+    "S4_m": 713,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "City of Toronto"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-0364+CA-4882",
+   "refs": [
+    "CA-0364",
+    "CA-4882"
+   ],
+   "names": [
+    "Rideau Migratory Bird Sanctuary",
+    "Rideau Canal National Historic Site"
+   ],
+   "acres": [
+    1860.6,
+    49872.1
+   ],
+   "overlap_acres": 607.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.327,
+    "S2_of_larger": 0.012,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "rideau migratory bird",
+     "rideau canal"
+    ],
+    "S4": false,
+    "S4_m": 53154,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Environment and Climate Change Canada"
+     ],
+     [
+      "Parks Canada"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-5671+CA-5895",
+   "refs": [
+    "CA-5671",
+    "CA-5895"
+   ],
+   "names": [
+    "Wilket Creek Park Wilderness Park",
+    "Serena Gundy Park Wilderness Park"
+   ],
+   "acres": [
+    110.6,
+    3.4
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.255,
+    "S2_of_larger": 0.008,
+    "S3": false,
+    "S3_score": 16.7,
+    "S3_names": [
+     "wilket creek",
+     "serena gundy"
+    ],
+    "S4": false,
+    "S4_m": 352,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "City of Toronto"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-0365+CA-4882",
+   "refs": [
+    "CA-0365",
+    "CA-4882"
+   ],
+   "names": [
+    "Rideau River Provincial Park",
+    "Rideau Canal National Historic Site"
+   ],
+   "acres": [
+    239.1,
+    49872.1
+   ],
+   "overlap_acres": 77.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.324,
+    "S2_of_larger": 0.002,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "rideau river",
+     "rideau canal"
+    ],
+    "S4": false,
+    "S4_m": 36003,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Parks Canada"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0394",
+   "refs": [
+    "CA-0050",
+    "CA-0394"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Slate Islands Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    16264.8
+   ],
+   "overlap_acres": 4594.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.282,
+    "S2_of_larger": 0.002,
+    "S3": false,
+    "S3_score": 35.7,
+    "S3_names": [
+     "superior marine",
+     "slate islands"
+    ],
+    "S4": false,
+    "S4_m": 100119,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0395",
+   "refs": [
+    "CA-0050",
+    "CA-0395"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Sleeping Giant Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    60490.4
+   ],
+   "overlap_acres": 3079.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.051,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 41.4,
+    "S3_names": [
+     "superior marine",
+     "sleeping giant"
+    ],
+    "S4": false,
+    "S4_m": 65912,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-1627",
+   "refs": [
+    "CA-0050",
+    "CA-1627"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Sleeping Giant Wilderness Area"
+   ],
+   "acres": [
+    2691307.4,
+    60490.4
+   ],
+   "overlap_acres": 3079.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.051,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 41.4,
+    "S3_names": [
+     "superior marine",
+     "sleeping giant"
+    ],
+    "S4": false,
+    "S4_m": 90927,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-0010+CA-0273",
+   "refs": [
+    "CA-0010",
+    "CA-0273"
+   ],
+   "names": [
+    "Bruce Peninsula National Park",
+    "Little Cove Provincial Park"
+   ],
+   "acres": [
+    39304.6,
+    42.8
+   ],
+   "overlap_acres": 42.8,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 38.5,
+    "S3_names": [
+     "bruce peninsula",
+     "little cove"
+    ],
+    "S4": false,
+    "S4_m": 7350,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0140+CA-0152",
+   "refs": [
+    "CA-0140",
+    "CA-0152"
+   ],
+   "names": [
+    "Arrowhead Provincial Park",
+    "Big East River Provincial Park"
+   ],
+   "acres": [
+    3085.4,
+    2595.8
+   ],
+   "overlap_acres": 1.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "arrowhead",
+     "big east river"
+    ],
+    "S4": false,
+    "S4_m": 16344,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-5593+CA-5595",
+   "refs": [
+    "CA-5593",
+    "CA-5595"
+   ],
+   "names": [
+    "Wainfleet Wetlands Conservation Area",
+    "Gord Harry Trail Conservation Area"
+   ],
+   "acres": [
+    459.1,
+    69.2
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.004,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 14.3,
+    "S3_names": [
+     "wainfleet wetlands",
+     "gord harry"
+    ],
+    "S4": true,
+    "S4_m": 69,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "Niagara Peninsula Conservation Authority"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-4882+CA-5956",
+   "refs": [
+    "CA-4882",
+    "CA-5956"
+   ],
+   "names": [
+    "Rideau Canal National Historic Site",
+    "Perth Wildlife Reserve"
+   ],
+   "acres": [
+    49872.1,
+    409.9
+   ],
+   "overlap_acres": 36.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.089,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 11.8,
+    "S3_names": [
+     "rideau canal",
+     "perth"
+    ],
+    "S4": false,
+    "S4_m": 67708,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Parks Canada"
+     ],
+     [
+      "Rideau Valley Conservation Authority"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-0053+CA-0279",
+   "refs": [
+    "CA-0053",
+    "CA-0279"
+   ],
+   "names": [
+    "Long Point National Wildlife Area",
+    "Long Point Provincial Park"
+   ],
+   "acres": [
+    8063.9,
+    363.7
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.008,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "long point",
+     "long point"
+    ],
+    "S4": false,
+    "S4_m": 1349,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0424+CA-1686",
+   "refs": [
+    "CA-0424",
+    "CA-1686"
+   ],
+   "names": [
+    "Wakami Lake Provincial Park",
+    "Wakami Lake Provincial Park Addition Provincial Park"
+   ],
+   "acres": [
+    21900.9,
+    8721.2
+   ],
+   "overlap_acres": 1.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "wakami",
+     "wakami addition"
+    ],
+    "S4": false,
+    "S4_m": 6707,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1538+CA-1684",
+   "refs": [
+    "CA-1538",
+    "CA-1684"
+   ],
+   "names": [
+    "Naiscoot Forest Conservation Reserve",
+    "Wahwashkesh-Naiscoot Conservation Reserve"
+   ],
+   "acres": [
+    928.1,
+    4301.0
+   ],
+   "overlap_acres": 2.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "naiscoot",
+     "wahwashkesh naiscoot"
+    ],
+    "S4": false,
+    "S4_m": 8817,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0257+CA-1470",
+   "refs": [
+    "CA-0257",
+    "CA-1470"
+   ],
+   "names": [
+    "La Cloche Provincial Park",
+    "La Cloche Ridge Conservation Reserve"
+   ],
+   "acres": [
+    18489.9,
+    9908.6
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cloche",
+     "cloche ridge"
+    ],
+    "S4": false,
+    "S4_m": 10756,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0416+CA-1672",
+   "refs": [
+    "CA-0416",
+    "CA-1672"
+   ],
+   "names": [
+    "Trout Lake Provincial Park",
+    "Trout Lake Conservation Reserve"
+   ],
+   "acres": [
+    18209.8,
+    148817.6
+   ],
+   "overlap_acres": 8.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "trout",
+     "trout"
+    ],
+    "S4": false,
+    "S4_m": 12783,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0222+CA-1423",
+   "refs": [
+    "CA-0222",
+    "CA-1423"
+   ],
+   "names": [
+    "Gravel River Provincial Park",
+    "Gravel River Conservation Reserve"
+   ],
+   "acres": [
+    1817.8,
+    115334.5
+   ],
+   "overlap_acres": 1.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "gravel river",
+     "gravel river"
+    ],
+    "S4": false,
+    "S4_m": 15462,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1556+CA-1564",
+   "refs": [
+    "CA-1556",
+    "CA-1564"
+   ],
+   "names": [
+    "Obonga-Ottertooth Provincial Park",
+    "Ottertooth Conservation Reserve"
+   ],
+   "acres": [
+    52302.1,
+    71164.5
+   ],
+   "overlap_acres": 4.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "obonga ottertooth",
+     "ottertooth"
+    ],
+    "S4": false,
+    "S4_m": 18049,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0266+CA-1635",
+   "refs": [
+    "CA-0266",
+    "CA-1635"
+   ],
+   "names": [
+    "Lake Superior Provincial Park",
+    "South Michipicoten River-Superior Shoreline Conservation Reserve"
+   ],
+   "acres": [
+    396973.1,
+    6426.9
+   ],
+   "overlap_acres": 2.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "superior",
+     "south michipicoten river superior shoreline"
+    ],
+    "S4": false,
+    "S4_m": 18891,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0263+CA-1478",
+   "refs": [
+    "CA-0263",
+    "CA-1478"
+   ],
+   "names": [
+    "Lake of the Woods Provincial Park",
+    "Lake Of The Woods Waters Conservation Reserve"
+   ],
+   "acres": [
+    51121.1,
+    118187.0
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "woods",
+     "woods waters"
+    ],
+    "S4": false,
+    "S4_m": 24657,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0252+CA-0253",
+   "refs": [
+    "CA-0252",
+    "CA-0253"
+   ],
+   "names": [
+    "Killarney Provincial Park",
+    "Killarney Lakelands and Headwaters Provincial Park"
+   ],
+   "acres": [
+    121995.6,
+    37985.1
+   ],
+   "overlap_acres": 12.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "killarney",
+     "killarney lakelands headwaters"
+    ],
+    "S4": false,
+    "S4_m": 24921,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0078+CA-0354",
+   "refs": [
+    "CA-0078",
+    "CA-0354"
+   ],
+   "names": [
+    "Pukaskwa National Park",
+    "Pukaskwa River Provincial Park"
+   ],
+   "acres": [
+    460980.9,
+    3620.9
+   ],
+   "overlap_acres": 35.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.01,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "pukaskwa",
+     "pukaskwa river"
+    ],
+    "S4": false,
+    "S4_m": 37927,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0263+CA-1477",
+   "refs": [
+    "CA-0263",
+    "CA-1477"
+   ],
+   "names": [
+    "Lake of the Woods Provincial Park",
+    "Lake Of The Woods Conservation Reserve"
+   ],
+   "acres": [
+    51121.1,
+    113301.6
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "woods",
+     "woods"
+    ],
+    "S4": false,
+    "S4_m": 56026,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0313+CA-0314",
+   "refs": [
+    "CA-0313",
+    "CA-0314"
+   ],
+   "names": [
+    "Nagagami Lake Provincial Park",
+    "Nagagamisis Provincial Park"
+   ],
+   "acres": [
+    4254.6,
+    100616.0
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 84.2,
+    "S3_names": [
+     "nagagami",
+     "nagagamisis"
+    ],
+    "S4": false,
+    "S4_m": 19511,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0284+CA-1500",
+   "refs": [
+    "CA-0284",
+    "CA-1500"
+   ],
+   "names": [
+    "Makobe-Grays River Provincial Park",
+    "Makobe-Grays Ice Margin Conservation Reserve"
+   ],
+   "acres": [
+    3647.8,
+    2236.0
+   ],
+   "overlap_acres": 1.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 80.0,
+    "S3_names": [
+     "makobe grays river",
+     "makobe grays ice margin"
+    ],
+    "S4": false,
+    "S4_m": 2073,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0428+CA-1383",
+   "refs": [
+    "CA-0428",
+    "CA-1383"
+   ],
+   "names": [
+    "Wenebegon River Provincial Park",
+    "East Wenebegon Forest Conservation Reserve"
+   ],
+   "acres": [
+    40509.2,
+    7549.0
+   ],
+   "overlap_acres": 3.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 78.3,
+    "S3_names": [
+     "wenebegon river",
+     "east wenebegon"
+    ],
+    "S4": false,
+    "S4_m": 14571,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0267+CA-1381",
+   "refs": [
+    "CA-0267",
+    "CA-1381"
+   ],
+   "names": [
+    "Larder River Waterway Provincial Park",
+    "East Larder River Bedrock Conifer Conservation Reserve"
+   ],
+   "acres": [
+    9938.9,
+    17339.7
+   ],
+   "overlap_acres": 3.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 72.7,
+    "S3_names": [
+     "larder river waterway",
+     "east larder river bedrock conifer"
+    ],
+    "S4": false,
+    "S4_m": 9116,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1544+CA-1545",
+   "refs": [
+    "CA-1544",
+    "CA-1545"
+   ],
+   "names": [
+    "Nipigon Palisades Conservation Reserve",
+    "Nipigon River Conservation Reserve"
+   ],
+   "acres": [
+    28457.9,
+    6575.5
+   ],
+   "overlap_acres": 1.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 70.0,
+    "S3_names": [
+     "nipigon palisades",
+     "nipigon river"
+    ],
+    "S4": false,
+    "S4_m": 13611,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-1479",
+   "refs": [
+    "CA-0050",
+    "CA-1479"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Lake Superior North Shore Conservation Reserve"
+   ],
+   "acres": [
+    2691307.4,
+    3746.3
+   ],
+   "overlap_acres": 44.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.012,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 69.6,
+    "S3_names": [
+     "superior marine",
+     "superior north shore"
+    ],
+    "S4": false,
+    "S4_m": 81004,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0245+CA-1462",
+   "refs": [
+    "CA-0245",
+    "CA-1462"
+   ],
+   "names": [
+    "Kama Hills Provincial Park",
+    "Kama Cliffs Conservation Reserve"
+   ],
+   "acres": [
+    2.5,
+    9183.5
+   ],
+   "overlap_acres": 0.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.029,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "kama hills",
+     "kama cliffs"
+    ],
+    "S4": false,
+    "S4_m": 2977,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0379",
+   "refs": [
+    "CA-0050",
+    "CA-0379"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Schreiber Channel Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    29.5
+   ],
+   "overlap_acres": 1.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.055,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 50.0,
+    "S3_names": [
+     "superior marine",
+     "schreiber channel"
+    ],
+    "S4": false,
+    "S4_m": 71315,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0222",
+   "refs": [
+    "CA-0050",
+    "CA-0222"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Gravel River Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    1817.8
+   ],
+   "overlap_acres": 4.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 44.4,
+    "S3_names": [
+     "superior marine",
+     "gravel river"
+    ],
+    "S4": false,
+    "S4_m": 38512,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0407+CA-1551",
+   "refs": [
+    "CA-0407",
+    "CA-1551"
+   ],
+   "names": [
+    "Sturgeon River Provincial Park",
+    "North Yorston Conservation Reserve"
+   ],
+   "acres": [
+    19742.5,
+    32607.0
+   ],
+   "overlap_acres": 1.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 44.4,
+    "S3_names": [
+     "sturgeon river",
+     "north yorston"
+    ],
+    "S4": false,
+    "S4_m": 64272,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0437+CA-1476",
+   "refs": [
+    "CA-0437",
+    "CA-1476"
+   ],
+   "names": [
+    "Windigo Bay Provincial Park",
+    "Lake Nipigon Conservation Reserve"
+   ],
+   "acres": [
+    20847.3,
+    434036.8
+   ],
+   "overlap_acres": 6.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 44.4,
+    "S3_names": [
+     "windigo bay",
+     "nipigon"
+    ],
+    "S4": false,
+    "S4_m": 101643,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1310+CA-1568",
+   "refs": [
+    "CA-1310",
+    "CA-1568"
+   ],
+   "names": [
+    "Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park",
+    "Pahngwahshahshk Ohweemushkeeg Provincial Park"
+   ],
+   "acres": [
+    246372.5,
+    142880.3
+   ],
+   "overlap_acres": 1.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 43.4,
+    "S3_names": [
+     "beekahncheekahmeeng deebahncheekayweehn eenahohnahnuhn",
+     "pahngwahshahshk ohweemushkeeg"
+    ],
+    "S4": false,
+    "S4_m": 47638,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0154+CA-0304",
+   "refs": [
+    "CA-0154",
+    "CA-0304"
+   ],
+   "names": [
+    "Biscotasi Lake Provincial Park",
+    "Mississagi Provincial Park"
+   ],
+   "acres": [
+    30377.3,
+    252337.4
+   ],
+   "overlap_acres": 0.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 42.1,
+    "S3_names": [
+     "biscotasi",
+     "mississagi"
+    ],
+    "S4": false,
+    "S4_m": 102259,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0213+CA-0428",
+   "refs": [
+    "CA-0213",
+    "CA-0428"
+   ],
+   "names": [
+    "Five Mile Lake Provincial Park",
+    "Wenebegon River Provincial Park"
+   ],
+   "acres": [
+    1018.2,
+    40509.2
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 41.7,
+    "S3_names": [
+     "five mile",
+     "wenebegon river"
+    ],
+    "S4": false,
+    "S4_m": 11011,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0277+CA-1476",
+   "refs": [
+    "CA-0277",
+    "CA-1476"
+   ],
+   "names": [
+    "Livingstone Point Provincial Park",
+    "Lake Nipigon Conservation Reserve"
+   ],
+   "acres": [
+    4400.7,
+    434036.8
+   ],
+   "overlap_acres": 3.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 41.7,
+    "S3_names": [
+     "livingstone point",
+     "nipigon"
+    ],
+    "S4": false,
+    "S4_m": 63913,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1385+CA-4882",
+   "refs": [
+    "CA-1385",
+    "CA-4882"
+   ],
+   "names": [
+    "Chapman Mills Conservation Area",
+    "Rideau Canal National Historic Site"
+   ],
+   "acres": [
+    22.6,
+    49872.1
+   ],
+   "overlap_acres": 10.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.468,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 40.0,
+    "S3_names": [
+     "chapman mills",
+     "rideau canal"
+    ],
+    "S4": false,
+    "S4_m": 11571,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Rideau Valley Conservation Authority"
+     ],
+     [
+      "Parks Canada"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
+  },
+  {
+   "id": "CA-0137+CA-1419",
+   "refs": [
+    "CA-0137",
+    "CA-1419"
+   ],
+   "names": [
+    "Algoma Headwaters Provincial Park",
+    "Goulais River Provincial Park"
+   ],
+   "acres": [
+    107154.2,
+    12573.0
+   ],
+   "overlap_acres": 2.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 40.0,
+    "S3_names": [
+     "algoma headwaters",
+     "goulais river"
+    ],
+    "S4": false,
+    "S4_m": 38154,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0346",
+   "refs": [
+    "CA-0050",
+    "CA-0346"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Porphyry Island Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    269.3
+   ],
+   "overlap_acres": 12.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.048,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 40.0,
+    "S3_names": [
+     "superior marine",
+     "porphyry island"
+    ],
+    "S4": false,
+    "S4_m": 78524,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0134+CA-0423",
+   "refs": [
+    "CA-0134",
+    "CA-0423"
+   ],
+   "names": [
+    "Albany River Provincial Park",
+    "Wabakimi Provincial Park"
+   ],
+   "acres": [
+    229016.1,
+    2206631.3
+   ],
+   "overlap_acres": 8.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 40.0,
+    "S3_names": [
+     "albany river",
+     "wabakimi"
+    ],
+    "S4": false,
+    "S4_m": 150445,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1310+CA-1699",
+   "refs": [
+    "CA-1310",
+    "CA-1699"
+   ],
+   "names": [
+    "Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park",
+    "Weeskayjahk Ohtahzhoganeeng Provincial Park"
+   ],
+   "acres": [
+    246372.5,
+    656622.9
+   ],
+   "overlap_acres": 7.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 39.5,
+    "S3_names": [
+     "beekahncheekahmeeng deebahncheekayweehn eenahohnahnuhn",
+     "weeskayjahk ohtahzhoganeeng"
+    ],
+    "S4": false,
+    "S4_m": 56605,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0137+CA-0142",
+   "refs": [
+    "CA-0137",
+    "CA-0142"
+   ],
+   "names": [
+    "Algoma Headwaters Provincial Park",
+    "Aubinadong-Nushatogaini Rivers Provincial Park"
+   ],
+   "acres": [
+    107154.2,
+    12184.8
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 38.3,
+    "S3_names": [
+     "algoma headwaters",
+     "aubinadong nushatogaini rivers"
+    ],
+    "S4": false,
+    "S4_m": 30043,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0266+CA-0309",
+   "refs": [
+    "CA-0266",
+    "CA-0309"
+   ],
+   "names": [
+    "Lake Superior Provincial Park",
+    "Montreal River Provincial Park"
+   ],
+   "acres": [
+    396973.1,
+    107.7
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 36.4,
+    "S3_names": [
+     "superior",
+     "montreal river"
+    ],
+    "S4": false,
+    "S4_m": 57081,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0256+CA-1556",
+   "refs": [
+    "CA-0256",
+    "CA-1556"
+   ],
+   "names": [
+    "Kopka River Provincial Park",
+    "Obonga-Ottertooth Provincial Park"
+   ],
+   "acres": [
+    77393.6,
+    52302.1
+   ],
+   "overlap_acres": 2.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 35.7,
+    "S3_names": [
+     "kopka river",
+     "obonga ottertooth"
+    ],
+    "S4": false,
+    "S4_m": 19377,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0360",
+   "refs": [
+    "CA-0050",
+    "CA-0360"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Rainbow Falls Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    1436.0
+   ],
+   "overlap_acres": 2.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 35.7,
+    "S3_names": [
+     "superior marine",
+     "rainbow falls"
+    ],
+    "S4": false,
+    "S4_m": 62955,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0444+CA-1475",
+   "refs": [
+    "CA-0444",
+    "CA-1475"
+   ],
+   "names": [
+    "Woodland Caribou Provincial Park",
+    "Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve"
+   ],
+   "acres": [
+    1163499.5,
+    656622.9
+   ],
+   "overlap_acres": 5.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 34.8,
+    "S3_names": [
+     "woodland caribou",
+     "country"
+    ],
+    "S4": false,
+    "S4_m": 98874,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0137+CA-1593",
+   "refs": [
+    "CA-0137",
+    "CA-1593"
+   ],
+   "names": [
+    "Algoma Headwaters Provincial Park",
+    "Ranger North Conservation Reserve"
+   ],
+   "acres": [
+    107154.2,
+    17342.0
+   ],
+   "overlap_acres": 6.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 34.5,
+    "S3_names": [
+     "algoma headwaters",
+     "ranger north"
+    ],
+    "S4": false,
+    "S4_m": 18516,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0283+CA-1449",
+   "refs": [
+    "CA-0283",
+    "CA-1449"
+   ],
+   "names": [
+    "Magnetawan River Provincial Park",
+    "Island Lake Forest And Barrens Conservation Reserve"
+   ],
+   "acres": [
+    8475.5,
+    38466.3
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "magnetawan river",
+     "island barrens"
+    ],
+    "S4": false,
+    "S4_m": 18369,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0403+CA-1402",
+   "refs": [
+    "CA-0403",
+    "CA-1402"
+   ],
+   "names": [
+    "Steel River Provincial Park",
+    "Fishnet Lake Conservation Reserve"
+   ],
+   "acres": [
+    27308.3,
+    8666.8
+   ],
+   "overlap_acres": 2.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "steel river",
+     "fishnet"
+    ],
+    "S4": false,
+    "S4_m": 31059,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-4882+CA-5957",
+   "refs": [
+    "CA-4882",
+    "CA-5957"
+   ],
+   "names": [
+    "Rideau Canal National Historic Site",
+    "Portland Bay Conservation Area"
+   ],
+   "acres": [
+    49872.1,
+    5.8
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.16,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "rideau canal",
+     "portland bay"
+    ],
+    "S4": false,
+    "S4_m": 84752,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "Parks Canada"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-0372+CA-1478",
+   "refs": [
+    "CA-0372",
+    "CA-1478"
+   ],
+   "names": [
+    "Sable Islands Provincial Park",
+    "Lake Of The Woods Waters Conservation Reserve"
+   ],
+   "acres": [
+    6560.7,
+    118187.0
+   ],
+   "overlap_acres": 6.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 32.0,
+    "S3_names": [
+     "sable islands",
+     "woods waters"
+    ],
+    "S4": false,
+    "S4_m": 5296,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0154+CA-0306",
+   "refs": [
+    "CA-0154",
+    "CA-0306"
+   ],
+   "names": [
+    "Biscotasi Lake Provincial Park",
+    "Mississagi River Provincial Park"
+   ],
+   "acres": [
+    30377.3,
+    246271.0
+   ],
+   "overlap_acres": 0.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 32.0,
+    "S3_names": [
+     "biscotasi",
+     "mississagi river"
+    ],
+    "S4": false,
+    "S4_m": 45735,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0228+CA-1552",
+   "refs": [
+    "CA-0228",
+    "CA-1552"
+   ],
+   "names": [
+    "Hicks-Oke Bog Provincial Park",
+    "Northern Claybelt Forest Complex Conservation Reserve"
+   ],
+   "acres": [
+    14548.3,
+    168480.0
+   ],
+   "overlap_acres": 5.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "hicks oke bog",
+     "northern claybelt complex"
+    ],
+    "S4": false,
+    "S4_m": 13365,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1577+CA-1699",
+   "refs": [
+    "CA-1577",
+    "CA-1699"
+   ],
+   "names": [
+    "Pikangikum Cultural Landscape Waterways Protected Area",
+    "Weeskayjahk Ohtahzhoganeeng Provincial Park"
+   ],
+   "acres": [
+    246372.5,
+    656622.9
+   ],
+   "overlap_acres": 7.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "pikangikum cultural landscape waterways protected",
+     "weeskayjahk ohtahzhoganeeng"
+    ],
+    "S4": false,
+    "S4_m": 26388,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0444+CA-1483",
+   "refs": [
+    "CA-0444",
+    "CA-1483"
+   ],
+   "names": [
+    "Woodland Caribou Provincial Park",
+    "Little Grand Rapids Dedicated Conservation Reserve"
+   ],
+   "acres": [
+    1163499.5,
+    466756.9
+   ],
+   "overlap_acres": 4.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 31.1,
+    "S3_names": [
+     "woodland caribou",
+     "little grand rapids dedicated"
+    ],
+    "S4": false,
+    "S4_m": 108698,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Little Grand Rapids First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0353",
+   "refs": [
+    "CA-0050",
+    "CA-0353"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Puff Island Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    24.6
+   ],
+   "overlap_acres": 24.6,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.8,
+    "S3_names": [
+     "superior marine",
+     "puff island"
+    ],
+    "S4": false,
+    "S4_m": 42224,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1568+CA-1577",
+   "refs": [
+    "CA-1568",
+    "CA-1577"
+   ],
+   "names": [
+    "Pahngwahshahshk Ohweemushkeeg Provincial Park",
+    "Pikangikum Cultural Landscape Waterways Protected Area"
+   ],
+   "acres": [
+    142880.3,
+    246372.5
+   ],
+   "overlap_acres": 1.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.8,
+    "S3_names": [
+     "pahngwahshahshk ohweemushkeeg",
+     "pikangikum cultural landscape waterways protected"
+    ],
+    "S4": false,
+    "S4_m": 61627,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0157+CA-0293",
+   "refs": [
+    "CA-0157",
+    "CA-0293"
+   ],
+   "names": [
+    "Blind River Provincial Park",
+    "Matinenda Provincial Park"
+   ],
+   "acres": [
+    13369.3,
+    71105.9
+   ],
+   "overlap_acres": 5.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.0,
+    "S3_names": [
+     "blind river",
+     "matinenda"
+    ],
+    "S4": false,
+    "S4_m": 15276,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-1282",
+   "refs": [
+    "CA-0050",
+    "CA-1282"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Agate Island Wilderness Area"
+   ],
+   "acres": [
+    2691307.4,
+    151.8
+   ],
+   "overlap_acres": 151.8,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.6,
+    "S3_names": [
+     "superior marine",
+     "agate island"
+    ],
+    "S4": false,
+    "S4_m": 40245,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0386",
+   "refs": [
+    "CA-0050",
+    "CA-0386"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Shesheeb Bay Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    719.4
+   ],
+   "overlap_acres": 14.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.02,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.6,
+    "S3_names": [
+     "superior marine",
+     "shesheeb bay"
+    ],
+    "S4": false,
+    "S4_m": 46270,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0260+CA-1453",
+   "refs": [
+    "CA-0260",
+    "CA-1453"
+   ],
+   "names": [
+    "Lady Evelyn-Smoothwater Provincial Park",
+    "Jim Edwards Lake Conservation Reserve"
+   ],
+   "acres": [
+    188024.0,
+    21409.6
+   ],
+   "overlap_acres": 5.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.4,
+    "S3_names": [
+     "lady evelyn smoothwater",
+     "jim edwards"
+    ],
+    "S4": false,
+    "S4_m": 12771,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0239+CA-1322",
+   "refs": [
+    "CA-0239",
+    "CA-1322"
+   ],
+   "names": [
+    "Jocko Rivers Provincial Park",
+    "Blue Lake End Moraine Conservation Reserve"
+   ],
+   "acres": [
+    27950.2,
+    3525.8
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "jocko rivers",
+     "blue end moraine"
+    ],
+    "S4": false,
+    "S4_m": 9820,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0260+CA-1629",
+   "refs": [
+    "CA-0260",
+    "CA-1629"
+   ],
+   "names": [
+    "Lady Evelyn-Smoothwater Provincial Park",
+    "Smith Lake Conservation Reserve"
+   ],
+   "acres": [
+    188024.0,
+    4079.1
+   ],
+   "overlap_acres": 1.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "lady evelyn smoothwater",
+     "smith"
+    ],
+    "S4": false,
+    "S4_m": 18139,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1429+CA-1552",
+   "refs": [
+    "CA-1429",
+    "CA-1552"
+   ],
+   "names": [
+    "Groundhog River Waterway Provincial Park",
+    "Northern Claybelt Forest Complex Conservation Reserve"
+   ],
+   "acres": [
+    27319.9,
+    168480.0
+   ],
+   "overlap_acres": 9.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "groundhog river waterway",
+     "northern claybelt complex"
+    ],
+    "S4": false,
+    "S4_m": 29540,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0201",
+   "refs": [
+    "CA-0050",
+    "CA-0201"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Edward Island Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    1509.9
+   ],
+   "overlap_acres": 11.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.007,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "superior marine",
+     "edward island"
+    ],
+    "S4": false,
+    "S4_m": 75256,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0260+CA-1551",
+   "refs": [
+    "CA-0260",
+    "CA-1551"
+   ],
+   "names": [
+    "Lady Evelyn-Smoothwater Provincial Park",
+    "North Yorston Conservation Reserve"
+   ],
+   "acres": [
+    188024.0,
+    32607.0
+   ],
+   "overlap_acres": 4.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 27.8,
+    "S3_names": [
+     "lady evelyn smoothwater",
+     "north yorston"
+    ],
+    "S4": false,
+    "S4_m": 18095,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0408+CA-1442",
+   "refs": [
+    "CA-0408",
+    "CA-1442"
+   ],
+   "names": [
+    "Temagami River Provincial Park",
+    "Holdridge Creek Conservation Reserve"
+   ],
+   "acres": [
+    8395.4,
+    3323.7
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 27.6,
+    "S3_names": [
+     "temagami river",
+     "holdridge creek"
+    ],
+    "S4": false,
+    "S4_m": 6498,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0294+CA-0373",
+   "refs": [
+    "CA-0294",
+    "CA-0373"
+   ],
+   "names": [
+    "Mattawa River Provincial Park",
+    "Samuel de Champlain Provincial Park"
+   ],
+   "acres": [
+    34962.2,
+    6227.9
+   ],
+   "overlap_acres": 0.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 27.6,
+    "S3_names": [
+     "mattawa river",
+     "samuel champlain"
+    ],
+    "S4": false,
+    "S4_m": 18543,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0197+CA-0441",
+   "refs": [
+    "CA-0197",
+    "CA-0441"
+   ],
+   "names": [
+    "Eagle Dogtooth Provincial Park",
+    "Winnange Lake Provincial Park"
+   ],
+   "acres": [
+    101909.2,
+    11579.1
+   ],
+   "overlap_acres": 8.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 27.3,
+    "S3_names": [
+     "eagle dogtooth",
+     "winnange"
+    ],
+    "S4": false,
+    "S4_m": 28298,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0444+CA-1377",
+   "refs": [
+    "CA-0444",
+    "CA-1377"
+   ],
+   "names": [
+    "Woodland Caribou Provincial Park",
+    "Eagle-Snowshoe Conservation Reserve"
+   ],
+   "acres": [
+    1163499.5,
+    88050.8
+   ],
+   "overlap_acres": 7.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.7,
+    "S3_names": [
+     "woodland caribou",
+     "eagle snowshoe"
+    ],
+    "S4": false,
+    "S4_m": 60474,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0423+CA-1521",
+   "refs": [
+    "CA-0423",
+    "CA-1521"
+   ],
+   "names": [
+    "Wabakimi Provincial Park",
+    "Mojikit Lake Conservation Reserve"
+   ],
+   "acres": [
+    2206631.3,
+    154932.6
+   ],
+   "overlap_acres": 5.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.7,
+    "S3_names": [
+     "wabakimi",
+     "mojikit"
+    ],
+    "S4": false,
+    "S4_m": 89023,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-4882+CA-5642",
+   "refs": [
+    "CA-4882",
+    "CA-5642"
+   ],
+   "names": [
+    "Rideau Canal National Historic Site",
+    "Rock Dunder Nature Reserve"
+   ],
+   "acres": [
+    49872.1,
+    288.3
+   ],
+   "overlap_acres": 3.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.011,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "rideau canal",
+     "rock dunder"
+    ],
+    "S4": false,
+    "S4_m": 102363,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Parks Canada"
+     ],
+     [
+      "Rideau Waterway Land Trust"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0324+CA-1324",
+   "refs": [
+    "CA-0324",
+    "CA-1324"
+   ],
+   "names": [
+    "Obabika River Provincial Park",
+    "Bob Lake Conservation Reserve"
+   ],
+   "acres": [
+    49819.3,
+    6580.0
+   ],
+   "overlap_acres": 7.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "obabika river",
+     "bob"
+    ],
+    "S4": false,
+    "S4_m": 5504,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0283+CA-1538",
+   "refs": [
+    "CA-0283",
+    "CA-1538"
+   ],
+   "names": [
+    "Magnetawan River Provincial Park",
+    "Naiscoot Forest Conservation Reserve"
+   ],
+   "acres": [
+    8475.5,
+    928.1
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "magnetawan river",
+     "naiscoot"
+    ],
+    "S4": false,
+    "S4_m": 10797,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0324+CA-1453",
+   "refs": [
+    "CA-0324",
+    "CA-1453"
+   ],
+   "names": [
+    "Obabika River Provincial Park",
+    "Jim Edwards Lake Conservation Reserve"
+   ],
+   "acres": [
+    49819.3,
+    21409.6
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "obabika river",
+     "jim edwards"
+    ],
+    "S4": false,
+    "S4_m": 19256,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1483+CA-1699",
+   "refs": [
+    "CA-1483",
+    "CA-1699"
+   ],
+   "names": [
+    "Little Grand Rapids Dedicated Conservation Reserve",
+    "Weeskayjahk Ohtahzhoganeeng Provincial Park"
+   ],
+   "acres": [
+    466756.9,
+    656622.9
+   ],
+   "overlap_acres": 29.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "little grand rapids dedicated",
+     "weeskayjahk ohtahzhoganeeng"
+    ],
+    "S4": false,
+    "S4_m": 54861,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Little Grand Rapids First Nation and Ministry of Natural Resources and Forestry"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0165+CA-0423",
+   "refs": [
+    "CA-0165",
+    "CA-0423"
+   ],
+   "names": [
+    "Brightsand River Provincial Park",
+    "Wabakimi Provincial Park"
+   ],
+   "acres": [
+    100492.1,
+    2206631.3
+   ],
+   "overlap_acres": 21.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "brightsand river",
+     "wabakimi"
+    ],
+    "S4": false,
+    "S4_m": 87690,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0423+CA-1710",
+   "refs": [
+    "CA-0423",
+    "CA-1710"
+   ],
+   "names": [
+    "Wabakimi Provincial Park",
+    "Whitesand Provincial Park"
+   ],
+   "acres": [
+    2206631.3,
+    28048.8
+   ],
+   "overlap_acres": 2.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 23.5,
+    "S3_names": [
+     "wabakimi",
+     "whitesand"
+    ],
+    "S4": false,
+    "S4_m": 62620,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0444+CA-1699",
+   "refs": [
+    "CA-0444",
+    "CA-1699"
+   ],
+   "names": [
+    "Woodland Caribou Provincial Park",
+    "Weeskayjahk Ohtahzhoganeeng Provincial Park"
+   ],
+   "acres": [
+    1163499.5,
+    656622.9
+   ],
+   "overlap_acres": 5.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 23.3,
+    "S3_names": [
+     "woodland caribou",
+     "weeskayjahk ohtahzhoganeeng"
+    ],
+    "S4": false,
+    "S4_m": 118103,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-4882+CA-5542",
+   "refs": [
+    "CA-4882",
+    "CA-5542"
+   ],
+   "names": [
+    "Rideau Canal National Historic Site",
+    "Foley Mountain Conservation Area"
+   ],
+   "acres": [
+    49872.1,
+    488.7
+   ],
+   "overlap_acres": 4.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.009,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 23.1,
+    "S3_names": [
+     "rideau canal",
+     "foley mountain"
+    ],
+    "S4": false,
+    "S4_m": 94918,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Parks Canada"
+     ],
+     [
+      "Rideau Valley Conservation Authority"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
+   "id": "CA-1413+CA-1507",
+   "refs": [
+    "CA-1413",
+    "CA-1507"
+   ],
+   "names": [
+    "Gibson River Conservation Reserve",
+    "McCrae Lake Conservation Reserve"
+   ],
+   "acres": [
+    428.1,
+    4977.4
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "gibson river",
+     "mccrae"
+    ],
+    "S4": false,
+    "S4_m": 3556,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1413+CA-1508",
+   "refs": [
+    "CA-1413",
+    "CA-1508"
+   ],
+   "names": [
+    "Gibson River Conservation Reserve",
+    "McCrae Lake Wilderness Area Conservation Reserve"
+   ],
+   "acres": [
+    428.1,
+    4977.4
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "gibson river",
+     "mccrae"
+    ],
+    "S4": false,
+    "S4_m": 5757,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0324+CA-1650",
+   "refs": [
+    "CA-0324",
+    "CA-1650"
+   ],
+   "names": [
+    "Obabika River Provincial Park",
+    "Sugar Lake Conservation Reserve"
+   ],
+   "acres": [
+    49819.3,
+    15194.2
+   ],
+   "overlap_acres": 1.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "obabika river",
+     "sugar"
+    ],
+    "S4": false,
+    "S4_m": 27207,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0260+CA-0324",
+   "refs": [
+    "CA-0260",
+    "CA-0324"
+   ],
+   "names": [
+    "Lady Evelyn-Smoothwater Provincial Park",
+    "Obabika River Provincial Park"
+   ],
+   "acres": [
+    188024.0,
+    49819.3
+   ],
+   "overlap_acres": 7.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "lady evelyn smoothwater",
+     "obabika river"
+    ],
+    "S4": false,
+    "S4_m": 31991,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1475+CA-1483",
+   "refs": [
+    "CA-1475",
+    "CA-1483"
+   ],
+   "names": [
+    "Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve",
+    "Little Grand Rapids Dedicated Conservation Reserve"
+   ],
+   "acres": [
+    656622.9,
+    466756.9
+   ],
+   "overlap_acres": 29.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "country",
+     "little grand rapids dedicated"
+    ],
+    "S4": false,
+    "S4_m": 57763,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ],
+     [
+      "Little Grand Rapids First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0256+CA-1476",
+   "refs": [
+    "CA-0256",
+    "CA-1476"
+   ],
+   "names": [
+    "Kopka River Provincial Park",
+    "Lake Nipigon Conservation Reserve"
+   ],
+   "acres": [
+    77393.6,
+    434036.8
+   ],
+   "overlap_acres": 2.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "kopka river",
+     "nipigon"
+    ],
+    "S4": false,
+    "S4_m": 104350,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1475+CA-1577",
+   "refs": [
+    "CA-1475",
+    "CA-1577"
+   ],
+   "names": [
+    "Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve",
+    "Pikangikum Cultural Landscape Waterways Protected Area"
+   ],
+   "acres": [
+    656622.9,
+    246372.5
+   ],
+   "overlap_acres": 7.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.4,
+    "S3_names": [
+     "country",
+     "pikangikum cultural landscape waterways protected"
+    ],
+    "S4": false,
+    "S4_m": 15757,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0143+CA-0306",
+   "refs": [
+    "CA-0143",
+    "CA-0306"
+   ],
+   "names": [
+    "Aubrey Falls Provincial Park",
+    "Mississagi River Provincial Park"
+   ],
+   "acres": [
+    11999.0,
+    246271.0
+   ],
+   "overlap_acres": 1.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.4,
+    "S3_names": [
+     "aubrey falls",
+     "mississagi river"
+    ],
+    "S4": false,
+    "S4_m": 52420,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0050+CA-0370",
+   "refs": [
+    "CA-0050",
+    "CA-0370"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Ruby Lake Provincial Park"
+   ],
+   "acres": [
+    2691307.4,
+    6781.4
+   ],
+   "overlap_acres": 29.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.004,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "superior marine",
+     "ruby"
+    ],
+    "S4": false,
+    "S4_m": 6221,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0397+CA-1551",
+   "refs": [
+    "CA-0397",
+    "CA-1551"
+   ],
+   "names": [
+    "Solace Provincial Park",
+    "North Yorston Conservation Reserve"
+   ],
+   "acres": [
+    13695.2,
+    32607.0
+   ],
+   "overlap_acres": 3.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "solace",
+     "north yorston"
+    ],
+    "S4": false,
+    "S4_m": 6753,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0444+CA-1458",
+   "refs": [
+    "CA-0444",
+    "CA-1458"
+   ],
+   "names": [
+    "Woodland Caribou Provincial Park",
+    "Kahnahmaykoosayseekahk Provincial Park"
+   ],
+   "acres": [
+    1163499.5,
+    11912.8
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "woodland caribou",
+     "kahnahmaykoosayseekahk"
+    ],
+    "S4": false,
+    "S4_m": 46708,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0256+CA-0423",
+   "refs": [
+    "CA-0256",
+    "CA-0423"
+   ],
+   "names": [
+    "Kopka River Provincial Park",
+    "Wabakimi Provincial Park"
+   ],
+   "acres": [
+    77393.6,
+    2206631.3
+   ],
+   "overlap_acres": 7.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "kopka river",
+     "wabakimi"
+    ],
+    "S4": false,
+    "S4_m": 64735,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1430+CA-1564",
+   "refs": [
+    "CA-1430",
+    "CA-1564"
+   ],
+   "names": [
+    "Gull River Provincial Park",
+    "Ottertooth Conservation Reserve"
+   ],
+   "acres": [
+    17797.8,
+    71164.5
+   ],
+   "overlap_acres": 4.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 20.0,
+    "S3_names": [
+     "gull river",
+     "ottertooth"
+    ],
+    "S4": false,
+    "S4_m": 12355,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1453+CA-1580",
+   "refs": [
+    "CA-1453",
+    "CA-1580"
+   ],
+   "names": [
+    "Jim Edwards Lake Conservation Reserve",
+    "Pinetorch Lake Conservation Reserve"
+   ],
+   "acres": [
+    21409.6,
+    8960.9
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 20.0,
+    "S3_names": [
+     "jim edwards",
+     "pinetorch"
+    ],
+    "S4": false,
+    "S4_m": 13357,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0343+CA-1344",
+   "refs": [
+    "CA-0343",
+    "CA-1344"
+   ],
+   "names": [
+    "Pipestone River Provincial Park",
+    "Cat Lake-Slate Falls Conservation Reserve"
+   ],
+   "acres": [
+    238779.8,
+    1225963.6
+   ],
+   "overlap_acres": 30.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 20.0,
+    "S3_names": [
+     "pipestone river",
+     "cat slate falls"
+    ],
+    "S4": false,
+    "S4_m": 119037,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Cat Lake First Nation, Slate Falls First Nation, and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1380+CA-1650",
+   "refs": [
+    "CA-1380",
+    "CA-1650"
+   ],
+   "names": [
+    "East Lady Evelyn Lake Conservation Reserve",
+    "Sugar Lake Conservation Reserve"
+   ],
+   "acres": [
+    13884.5,
+    15194.2
+   ],
+   "overlap_acres": 4.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 19.0,
+    "S3_names": [
+     "east lady evelyn",
+     "sugar"
+    ],
+    "S4": false,
+    "S4_m": 5008,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0138+CA-1420",
+   "refs": [
+    "CA-0138",
+    "CA-1420"
+   ],
+   "names": [
+    "Algonquin Provincial Park",
+    "Grant's Creek Provincial Park"
+   ],
+   "acres": [
+    1886126.3,
+    3572.9
+   ],
+   "overlap_acres": 0.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 19.0,
+    "S3_names": [
+     "algonquin",
+     "grants creek"
+    ],
+    "S4": false,
+    "S4_m": 76055,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0412+CA-0430",
+   "refs": [
+    "CA-0412",
+    "CA-0430"
+   ],
+   "names": [
+    "Tide Lake Provincial Park",
+    "West English River Provincial Park"
+   ],
+   "acres": [
+    124.6,
+    56802.9
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 18.2,
+    "S3_names": [
+     "tide",
+     "west english river"
+    ],
+    "S4": false,
+    "S4_m": 20656,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0295+CA-0430",
+   "refs": [
+    "CA-0295",
+    "CA-0430"
+   ],
+   "names": [
+    "Maynard Lake Provincial Park",
+    "West English River Provincial Park"
+   ],
+   "acres": [
+    61.7,
+    56802.9
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.007,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 16.0,
+    "S3_names": [
+     "maynard",
+     "west english river"
+    ],
+    "S4": false,
+    "S4_m": 10798,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0242+CA-1476",
+   "refs": [
+    "CA-0242",
+    "CA-1476"
+   ],
+   "names": [
+    "Kabitotikwia River Provincial Park",
+    "Lake Nipigon Conservation Reserve"
+   ],
+   "acres": [
+    4825.6,
+    434036.8
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 16.0,
+    "S3_names": [
+     "kabitotikwia river",
+     "nipigon"
+    ],
+    "S4": false,
+    "S4_m": 62077,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0312+CA-4882",
+   "refs": [
+    "CA-0312",
+    "CA-4882"
+   ],
+   "names": [
+    "Murphys Point Provincial Park",
+    "Rideau Canal National Historic Site"
+   ],
+   "acres": [
+    2759.5,
+    49872.1
+   ],
+   "overlap_acres": 1.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 16.0,
+    "S3_names": [
+     "murphys point",
+     "rideau canal"
+    ],
+    "S4": false,
+    "S4_m": 79071,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Parks Canada"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0337+CA-1564",
+   "refs": [
+    "CA-0337",
+    "CA-1564"
+   ],
+   "names": [
+    "Pantagruel Creek Provincial Park",
+    "Ottertooth Conservation Reserve"
+   ],
+   "acres": [
+    6589.1,
+    71164.5
+   ],
+   "overlap_acres": 4.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 15.4,
+    "S3_names": [
+     "pantagruel creek",
+     "ottertooth"
+    ],
+    "S4": false,
+    "S4_m": 11487,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0250+CA-1549",
+   "refs": [
+    "CA-0250",
+    "CA-1549"
+   ],
+   "names": [
+    "Kesagami Provincial Park",
+    "North Of The North French River Conservation Reserve"
+   ],
+   "acres": [
+    141839.9,
+    391918.6
+   ],
+   "overlap_acres": 3.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 15.4,
+    "S3_names": [
+     "kesagami",
+     "north north french river"
+    ],
+    "S4": false,
+    "S4_m": 17510,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0078+CA-0435",
+   "refs": [
+    "CA-0078",
+    "CA-0435"
+   ],
+   "names": [
+    "Pukaskwa National Park",
+    "White Lake Provincial Park"
+   ],
+   "acres": [
+    460980.9,
+    10042.1
+   ],
+   "overlap_acres": 7.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 15.4,
+    "S3_names": [
+     "pukaskwa",
+     "white"
+    ],
+    "S4": false,
+    "S4_m": 54910,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0197+CA-0371",
+   "refs": [
+    "CA-0197",
+    "CA-0371"
+   ],
+   "names": [
+    "Eagle Dogtooth Provincial Park",
+    "Rushing River Provincial Park"
+   ],
+   "acres": [
+    101909.2,
+    852.1
+   ],
+   "overlap_acres": 0.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 14.8,
+    "S3_names": [
+     "eagle dogtooth",
+     "rushing river"
+    ],
+    "S4": false,
+    "S4_m": 13295,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1310+CA-1475",
+   "refs": [
+    "CA-1310",
+    "CA-1475"
+   ],
+   "names": [
+    "Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park",
+    "Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve"
+   ],
+   "acres": [
+    246372.5,
+    656622.9
+   ],
+   "overlap_acres": 7.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 13.1,
+    "S3_names": [
+     "beekahncheekahmeeng deebahncheekayweehn eenahohnahnuhn",
+     "country"
+    ],
+    "S4": false,
+    "S4_m": 42913,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks",
+      "Pikangikum First Nation and Ministry of Natural Resources and Forestry"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0410+CA-1715",
+   "refs": [
+    "CA-0410",
+    "CA-1715"
+   ],
+   "names": [
+    "The Shoals Provincial Park",
+    "Windermere Goldie Lake Complex Conservation Reserve"
+   ],
+   "acres": [
+    27227.4,
+    46210.9
+   ],
+   "overlap_acres": 8.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 12.9,
+    "S3_names": [
+     "shoals",
+     "windermere goldie complex"
+    ],
+    "S4": false,
+    "S4_m": 13840,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0243+CA-1430",
+   "refs": [
+    "CA-0243",
+    "CA-1430"
+   ],
+   "names": [
+    "Kaiashk Provincial Park",
+    "Gull River Provincial Park"
+   ],
+   "acres": [
+    1934.9,
+    17797.8
+   ],
+   "overlap_acres": 2.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 11.8,
+    "S3_names": [
+     "kaiashk",
+     "gull river"
+    ],
+    "S4": false,
+    "S4_m": 16611,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0143+CA-0304",
+   "refs": [
+    "CA-0143",
+    "CA-0304"
+   ],
+   "names": [
+    "Aubrey Falls Provincial Park",
+    "Mississagi Provincial Park"
+   ],
+   "acres": [
+    11999.0,
+    252337.4
+   ],
+   "overlap_acres": 1.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 9.1,
+    "S3_names": [
+     "aubrey falls",
+     "mississagi"
+    ],
+    "S4": false,
+    "S4_m": 56194,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-0418+CA-1339",
+   "refs": [
+    "CA-0418",
+    "CA-1339"
+   ],
+   "names": [
+    "Turtle River-White Otter Lake Provincial Park",
+    "Campus Lake Conservation Reserve"
+   ],
+   "acres": [
+    121996.5,
+    48079.6
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 6.7,
+    "S3_names": [
+     "turtle river white otter",
+     "campus"
+    ],
+    "S4": false,
+    "S4_m": 23745,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "CA-1339+CA-1705",
+   "refs": [
+    "CA-1339",
+    "CA-1705"
+   ],
+   "names": [
+    "Campus Lake Conservation Reserve",
+    "White Otter Lake Wilderness Area"
+   ],
+   "acres": [
+    48079.6,
+    121996.5
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 0.0,
+    "S3_names": [
+     "campus",
+     "white otter"
+    ],
+    "S4": false,
+    "S4_m": 15007,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "CA-0429+CA-1476",
+   "refs": [
+    "CA-0429",
+    "CA-1476"
+   ],
+   "names": [
+    "West Bay Provincial Park",
+    "Lake Nipigon Conservation Reserve"
+   ],
+   "acres": [
+    2726.1,
+    434036.8
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 0.0,
+    "S3_names": [
+     "west bay",
+     "nipigon"
+    ],
+    "S4": false,
+    "S4_m": 71461,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": []
+  }
+ ],
+ "club_same_land_rows": []
+}

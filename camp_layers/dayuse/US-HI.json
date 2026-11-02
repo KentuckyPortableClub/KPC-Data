@@ -1,0 +1,10 @@
+{"src": "official campground layers (outside research E)", "read": "2026-11-01",
+ "camps": [
+  ["L-c1aa926646", "1 - Pavilion Hourly", 19.716691, -155.073144, "shel", "", "", "", "Created by C. Sholin, Hawaii State Parks planner.", "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/31/query?objectIds=140&outFields=*&f=html"],
+  ["L-b5634f0d42", "2 - Pavilion-500", 19.719326, -155.073559, "shel", "", "", "", "Created by C. Sholin, Hawaii State Parks planner.", "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/31/query?objectIds=141&outFields=*&f=html"]
+ ],
+ "extra": {
+  "L-b5634f0d42": {"why": "activating spot: picnic shelter / pavilion (by type field); type: Pavilion-500; name built from park name + type; state by outline", "read_date": "2026-11-01"},
+  "L-c1aa926646": {"why": "activating spot: picnic shelter / pavilion (by type field); type: Pavilion Hourly; name built from park name + type; state by outline", "read_date": "2026-11-01"}
+ }
+}

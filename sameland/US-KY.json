@@ -1,0 +1,3540 @@
+{
+ "tool": "KPC 13 same-land finder",
+ "area": "US-KY",
+ "built": "2026-11-01",
+ "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
+ "counts": {
+  "parks": 193,
+  "outlines": 187,
+  "pairs_overlapping": 53,
+  "SAME LAND: likely": 2,
+  "CHECK": 1,
+  "NOT SAME": 50,
+  "one_inside_the_other": 0
+ },
+ "left_out": [
+  [
+   "US-3791",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4572",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-11181",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-3802",
+   "'Clyde E Buckley Sanctuary' on bpad: no record with this name on the layer"
+  ],
+  [
+   "US-10099",
+   "'Wolf Creek National Fish Hatchery' on bfws: no record with this name on the layer; 'Wolf Creek National Fish Hatchery' on bfws: no record with this name on the layer"
+  ]
+ ],
+ "pairs": [
+  {
+   "id": "US-10139+US-4526",
+   "refs": [
+    "US-10139",
+    "US-4526"
+   ],
+   "names": [
+    "Jefferson National Forest Wildlife Management Area",
+    "George Washington & Jefferson National Forest"
+   ],
+   "acres": [
+    857.5,
+    857.5
+   ],
+   "overlap_acres": 857.5,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "bwma:jefferson national forest"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "jefferson",
+     "george washington jefferson"
+    ],
+    "S4": false,
+    "S4_m": 294735,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10139+US-4526@same land@37.093,-82.733",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0703+US-3790",
+   "refs": [
+    "US-0703",
+    "US-3790"
+   ],
+   "names": [
+    "Fort Donelson National Battlefield",
+    "Fort Heiman National Battlefield"
+   ],
+   "acres": [
+    1301.2,
+    446.5
+   ],
+   "overlap_acres": 446.5,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "bnps:fort donelson national battlefield"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.343,
+    "S3": false,
+    "S3_score": 58.3,
+    "S3_names": [
+     "fort donelson",
+     "fort heiman"
+    ],
+    "S4": false,
+    "S4_m": 18335,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "National Park Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0703+US-3790@same land@36.503,-88.061",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "tract_note": "only the Fort Heiman (Fort Donelson National Battlefield tract) piece of the record is used"
+  },
+  {
+   "id": "US-10112+US-7966",
+   "refs": [
+    "US-10112",
+    "US-7966"
+   ],
+   "names": [
+    "Bad Branch National Wild and Scenic River",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    1346.7,
+    2830.0
+   ],
+   "overlap_acres": 1205.2,
+   "verdict": "CHECK",
+   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines only partly overlap: a person should look.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.895,
+    "S2_of_larger": 0.426,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "bad branch wild river",
+     "bad branch"
+    ],
+    "S4": true,
+    "S4_m": 164,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10112+US-7966@area@37.089,-82.767",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10103+US-1277",
+   "refs": [
+    "US-10103",
+    "US-1277"
+   ],
+   "names": [
+    "The Cumberland River Wilderness Area",
+    "Cumberland Falls State Park"
+   ],
+   "acres": [
+    3162.4,
+    2001.9
+   ],
+   "overlap_acres": 503.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.252,
+    "S2_of_larger": 0.159,
+    "S3": false,
+    "S3_score": 76.9,
+    "S3_names": [
+     "cumberland river",
+     "cumberland falls"
+    ],
+    "S4": false,
+    "S4_m": 13638,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.831,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.855,-84.317",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-1277@area@36.837,-84.329",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0050+US-10105",
+   "refs": [
+    "US-0050",
+    "US-10105"
+   ],
+   "names": [
+    "Mammoth Cave National Park",
+    "The Green National Wild and Scenic River"
+   ],
+   "acres": [
+    71580.7,
+    7018.6
+   ],
+   "overlap_acres": 6837.4,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.974,
+    "S2_of_larger": 0.096,
+    "S3": false,
+    "S3_score": 21.4,
+    "S3_names": [
+     "mammoth cave",
+     "green wild river"
+    ],
+    "S4": false,
+    "S4_m": 12190,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0050+US-10105@area@37.171,-86.155",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0050+US-10105@area@channel@37.220,-86.062",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-1276+US-12971",
+   "refs": [
+    "US-1276",
+    "US-12971"
+   ],
+   "names": [
+    "Carter Caves State Park",
+    "Bat Cave State Nature Preserve"
+   ],
+   "acres": [
+    1820.3,
+    135.9
+   ],
+   "overlap_acres": 133.5,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.983,
+    "S2_of_larger": 0.073,
+    "S3": false,
+    "S3_score": 70.0,
+    "S3_names": [
+     "carter caves",
+     "bat cave"
+    ],
+    "S4": false,
+    "S4_m": 802,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1276+US-12971+US-4693@area@38.385,-83.134",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-12971@area@38.380,-83.130",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10104+US-3801",
+   "refs": [
+    "US-10104",
+    "US-3801"
+   ],
+   "names": [
+    "Red River National Wild and Scenic River",
+    "Clifty Wilderness Area"
+   ],
+   "acres": [
+    1054.2,
+    12550.7
+   ],
+   "overlap_acres": 583.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.553,
+    "S2_of_larger": 0.046,
+    "S3": false,
+    "S3_score": 10.0,
+    "S3_names": [
+     "red river wild river",
+     "clifty"
+    ],
+    "S4": false,
+    "S4_m": 863,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10104+US-3801+US-4484@area@37.815,-83.548",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10104+US-3801@area@37.815,-83.548",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10159+US-4484",
+   "refs": [
+    "US-10159",
+    "US-4484"
+   ],
+   "names": [
+    "Redbird Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    24033.4,
+    710429.7
+   ],
+   "overlap_acres": 24002.7,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.034,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "redbird",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 54052,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10138+US-10159+US-4484@area@37.056,-83.488",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10159+US-4484@area@37.112,-83.498",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3794+US-4484",
+   "refs": [
+    "US-3794",
+    "US-4484"
+   ],
+   "names": [
+    "Beaver Creek Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    17751.1,
+    710429.7
+   ],
+   "overlap_acres": 17607.6,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.992,
+    "S2_of_larger": 0.025,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "beaver creek",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 69718,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3794+US-4484@area@36.917,-84.425",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-10107",
+   "refs": [
+    "US-0686",
+    "US-10107"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Big South Fork National Wild and Scenic River"
+   ],
+   "acres": [
+    122460.6,
+    2499.3
+   ],
+   "overlap_acres": 2499.3,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.02,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "big south fork",
+     "big south fork wild river"
+    ],
+    "S4": false,
+    "S4_m": 36810,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0686+US-10107+US-4484@area@36.609,-84.593",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-10107@area@36.624,-84.565",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10140+US-3790",
+   "refs": [
+    "US-10140",
+    "US-3790"
+   ],
+   "names": [
+    "Kentucky Lake Wildlife Management Area",
+    "Fort Heiman National Battlefield"
+   ],
+   "acres": [
+    4042.9,
+    446.5
+   ],
+   "overlap_acres": 76.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.172,
+    "S2_of_larger": 0.019,
+    "S3": false,
+    "S3_score": 0.0,
+    "S3_names": [
+     "",
+     "fort heiman"
+    ],
+    "S4": false,
+    "S4_m": 11380,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "National Park Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10140+US-3790@area@36.509,-88.057",
+     "kind": "area",
+     "live": true
+    }
+   ],
+   "tract_note": "only the Fort Heiman (Fort Donelson National Battlefield tract) piece of the record is used"
+  },
+  {
+   "id": "US-0703+US-10140",
+   "refs": [
+    "US-0703",
+    "US-10140"
+   ],
+   "names": [
+    "Fort Donelson National Battlefield",
+    "Kentucky Lake Wildlife Management Area"
+   ],
+   "acres": [
+    1301.2,
+    4042.9
+   ],
+   "overlap_acres": 76.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.059,
+    "S2_of_larger": 0.019,
+    "S3": false,
+    "S3_score": 0.0,
+    "S3_names": [
+     "fort donelson",
+     ""
+    ],
+    "S4": false,
+    "S4_m": 28592,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0703+US-10140@area@36.509,-88.057",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10146+US-4484",
+   "refs": [
+    "US-10146",
+    "US-4484"
+   ],
+   "names": [
+    "Mill Creek Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    13010.8,
+    710429.7
+   ],
+   "overlap_acres": 12907.5,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.992,
+    "S2_of_larger": 0.018,
+    "S3": false,
+    "S3_score": 36.4,
+    "S3_names": [
+     "mill creek",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 5686,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10146+US-4484@area@37.403,-83.986",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3801+US-4484",
+   "refs": [
+    "US-3801",
+    "US-4484"
+   ],
+   "names": [
+    "Clifty Wilderness Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    12550.7,
+    710429.7
+   ],
+   "overlap_acres": 12370.6,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.986,
+    "S2_of_larger": 0.017,
+    "S3": false,
+    "S3_score": 11.1,
+    "S3_names": [
+     "clifty",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 59202,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10104+US-3801+US-4484@area@37.815,-83.548",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-3801+US-4484@area@37.841,-83.582",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-7964",
+   "refs": [
+    "US-10106",
+    "US-7964"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "William H. Martin State Natural Area"
+   ],
+   "acres": [
+    3529.0,
+    459.2
+   ],
+   "overlap_acres": 57.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.124,
+    "S2_of_larger": 0.016,
+    "S3": false,
+    "S3_score": 34.3,
+    "S3_names": [
+     "rockcastle wild river",
+     "william martin"
+    ],
+    "S4": false,
+    "S4_m": 1025,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.046,-84.319",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.048,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-7964@area@37.048,-84.322",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-10121",
+   "refs": [
+    "US-10106",
+    "US-10121"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "Cane Creek Wildlife Management Area"
+   ],
+   "acres": [
+    3529.0,
+    6677.1
+   ],
+   "overlap_acres": 97.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.028,
+    "S2_of_larger": 0.015,
+    "S3": false,
+    "S3_score": 25.8,
+    "S3_names": [
+     "rockcastle wild river",
+     "cane creek"
+    ],
+    "S4": false,
+    "S4_m": 5058,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10121+US-4484@area@37.041,-84.301",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10106+US-10121@area@37.041,-84.301",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10158+US-4484",
+   "refs": [
+    "US-10158",
+    "US-4484"
+   ],
+   "names": [
+    "Pioneer Weapons Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    7732.3,
+    710429.7
+   ],
+   "overlap_acres": 7723.3,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.011,
+    "S3": false,
+    "S3_score": 44.4,
+    "S3_names": [
+     "pioneer weapons",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 79169,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10158+US-10171+US-4484@area@38.075,-83.497",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10158+US-4484@area@38.054,-83.550",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-1276+US-12972",
+   "refs": [
+    "US-1276",
+    "US-12972"
+   ],
+   "names": [
+    "Carter Caves State Park",
+    "Cascade Caverns State Nature Preserve"
+   ],
+   "acres": [
+    1820.3,
+    20.6
+   ],
+   "overlap_acres": 19.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.923,
+    "S2_of_larger": 0.01,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "carter caves",
+     "cascade caverns"
+    ],
+    "S4": false,
+    "S4_m": 2233,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1276+US-12972@area@38.357,-83.112",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10121+US-4484",
+   "refs": [
+    "US-10121",
+    "US-4484"
+   ],
+   "names": [
+    "Cane Creek Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    6677.1,
+    710429.7
+   ],
+   "overlap_acres": 6677.1,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.009,
+    "S3": false,
+    "S3_score": 36.4,
+    "S3_names": [
+     "cane creek",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 52924,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10121+US-4484@area@37.041,-84.301",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10121+US-4484@area@37.026,-84.266",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-10160",
+   "refs": [
+    "US-10106",
+    "US-10160"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "Rockcastle River Wildlife Management Area"
+   ],
+   "acres": [
+    3529.0,
+    2922.3
+   ],
+   "overlap_acres": 27.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.009,
+    "S2_of_larger": 0.008,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "rockcastle wild river",
+     "rockcastle river"
+    ],
+    "S4": false,
+    "S4_m": 9933,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10160+US-4484@area@37.121,-84.298",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-10160@area@37.121,-84.298",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10111+US-4484",
+   "refs": [
+    "US-10111",
+    "US-4484"
+   ],
+   "names": [
+    "Rock Creek National Wild and Scenic River",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    6237.2,
+    710429.7
+   ],
+   "overlap_acres": 5467.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.877,
+    "S2_of_larger": 0.008,
+    "S3": false,
+    "S3_score": 30.3,
+    "S3_names": [
+     "rock creek wild river",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 106421,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10111+US-4484@area@36.643,-84.711",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10111+US-4484@area@36.694,-84.590",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-10112",
+   "refs": [
+    "US-10102",
+    "US-10112"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Bad Branch National Wild and Scenic River"
+   ],
+   "acres": [
+    198.2,
+    1346.7
+   ],
+   "overlap_acres": 10.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.051,
+    "S2_of_larger": 0.008,
+    "S3": false,
+    "S3_score": 29.4,
+    "S3_names": [
+     "pine mountain",
+     "bad branch wild river"
+    ],
+    "S4": false,
+    "S4_m": 33649,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-10112@trail@37.092,-82.769",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-10112@trail@37.104,-82.760",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-7966",
+   "refs": [
+    "US-10102",
+    "US-7966"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    198.2,
+    2830.0
+   ],
+   "overlap_acres": 16.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.085,
+    "S2_of_larger": 0.006,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "pine mountain",
+     "bad branch"
+    ],
+    "S4": false,
+    "S4_m": 33605,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-7966@trail@37.082,-82.798",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.084,-82.794",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.086,-82.792",
+     "kind": "trail",
+     "live": true
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.098,-82.770",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.105,-82.755",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.109,-82.743",
+     "kind": "trail",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0019+US-10164",
+   "refs": [
+    "US-0019",
+    "US-10164"
+   ],
+   "names": [
+    "Cumberland Gap National Historical Park",
+    "Shillalah Creek Wildlife Management Area"
+   ],
+   "acres": [
+    24337.8,
+    2534.1
+   ],
+   "overlap_acres": 91.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.036,
+    "S2_of_larger": 0.004,
+    "S3": false,
+    "S3_score": 34.5,
+    "S3_names": [
+     "cumberland gap",
+     "shillalah creek"
+    ],
+    "S4": false,
+    "S4_m": 22844,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0019+US-10164@area@36.659,-83.582",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0019+US-10164@area@36.679,-83.503",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-4484",
+   "refs": [
+    "US-10106",
+    "US-4484"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    3529.0,
+    710429.7
+   ],
+   "overlap_acres": 2712.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.769,
+    "S2_of_larger": 0.004,
+    "S3": false,
+    "S3_score": 30.3,
+    "S3_names": [
+     "rockcastle wild river",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 52060,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10121+US-4484@area@37.041,-84.301",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10106+US-10160+US-4484@area@37.121,-84.298",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.046,-84.319",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.048,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-4484@area@37.087,-84.299",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10106+US-4484@area@channel@37.165,-84.294",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10103+US-4484",
+   "refs": [
+    "US-10103",
+    "US-4484"
+   ],
+   "names": [
+    "The Cumberland River Wilderness Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    3162.4,
+    710429.7
+   ],
+   "overlap_acres": 2016.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.638,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 42.9,
+    "S3_names": [
+     "cumberland river",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 75117,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.831,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.855,-84.317",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-4484@area@36.759,-84.311",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10103+US-4484@area@36.818,-84.349",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-4484@area@36.869,-84.325",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-4484@area@channel@36.842,-84.344",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-3781",
+   "refs": [
+    "US-10102",
+    "US-3781"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Breaks Interstate State Park"
+   ],
+   "acres": [
+    198.2,
+    4078.0
+   ],
+   "overlap_acres": 13.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.067,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "pine mountain",
+     "breaks interstate"
+    ],
+    "S4": false,
+    "S4_m": 14894,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-3781@trail@37.294,-82.339",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-4526",
+   "refs": [
+    "US-10102",
+    "US-4526"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "George Washington & Jefferson National Forest"
+   ],
+   "acres": [
+    198.2,
+    857.5
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 30.0,
+    "S3_names": [
+     "pine mountain",
+     "george washington jefferson"
+    ],
+    "S4": false,
+    "S4_m": 265812,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-4526@trail@37.110,-82.741",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-4526@trail@37.111,-82.739",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-4526@trail@37.208,-82.534",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-10139",
+   "refs": [
+    "US-10102",
+    "US-10139"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Jefferson National Forest Wildlife Management Area"
+   ],
+   "acres": [
+    198.2,
+    857.5
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 18.2,
+    "S3_names": [
+     "pine mountain",
+     "jefferson"
+    ],
+    "S4": false,
+    "S4_m": 29563,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-10139@trail@37.110,-82.741",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-10139@trail@37.111,-82.739",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-10139@trail@37.208,-82.534",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10098+US-7951",
+   "refs": [
+    "US-10098",
+    "US-7951"
+   ],
+   "names": [
+    "Green River National Wildlife Refuge",
+    "Green River State Forest"
+   ],
+   "acres": [
+    2196.5,
+    1092.5
+   ],
+   "overlap_acres": 2.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.001,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "green river",
+     "green river"
+    ],
+    "S4": false,
+    "S4_m": 5229,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10098+US-7951@area@37.881,-87.474",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10098+US-7951@area@37.883,-87.471",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10098+US-7951@area@37.883,-87.477",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1276+US-4693",
+   "refs": [
+    "US-1276",
+    "US-4693"
+   ],
+   "names": [
+    "Carter Caves State Park",
+    "Tygarts State Forest"
+   ],
+   "acres": [
+    1820.3,
+    1175.7
+   ],
+   "overlap_acres": 1.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 42.1,
+    "S3_names": [
+     "carter caves",
+     "tygarts"
+    ],
+    "S4": false,
+    "S4_m": 2283,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1276+US-12971+US-4693@area@38.385,-83.134",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.379,-83.137",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.379,-83.139",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.380,-83.141",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.380,-83.142",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.385,-83.134",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10104+US-4484",
+   "refs": [
+    "US-10104",
+    "US-4484"
+   ],
+   "names": [
+    "Red River National Wild and Scenic River",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    1054.2,
+    710429.7
+   ],
+   "overlap_acres": 692.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.657,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 38.5,
+    "S3_names": [
+     "red river wild river",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 58385,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10104+US-3801+US-4484@area@37.815,-83.548",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10104+US-4484@area@37.815,-83.548",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10170+US-4484",
+   "refs": [
+    "US-10170",
+    "US-4484"
+   ],
+   "names": [
+    "Twin Knobs Campground Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    685.7,
+    710429.7
+   ],
+   "overlap_acres": 685.7,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 30.3,
+    "S3_names": [
+     "twin knobs campground",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 87711,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10170+US-4484@area@38.092,-83.511",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10098+US-1260",
+   "refs": [
+    "US-10098",
+    "US-1260"
+   ],
+   "names": [
+    "Green River National Wildlife Refuge",
+    "John James Audubon State Park"
+   ],
+   "acres": [
+    2196.5,
+    1298.8
+   ],
+   "overlap_acres": 1.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 20.7,
+    "S3_names": [
+     "green river",
+     "john james audubon"
+    ],
+    "S4": false,
+    "S4_m": 3475,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10098+US-1260@area@37.900,-87.528",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1281+US-4687",
+   "refs": [
+    "US-1281",
+    "US-4687"
+   ],
+   "names": [
+    "Jenny Wiley State Park",
+    "Dewey Lake Wildlife Management Area"
+   ],
+   "acres": [
+    1484.0,
+    9173.5
+   ],
+   "overlap_acres": 2.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 50.0,
+    "S3_names": [
+     "jenny wiley",
+     "dewey"
+    ],
+    "S4": false,
+    "S4_m": 4464,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1281+US-4687@area@37.691,-82.705",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1281+US-4687@area@37.707,-82.731",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-1281+US-4687@area@37.727,-82.744",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10168+US-4484",
+   "refs": [
+    "US-10168",
+    "US-4484"
+   ],
+   "names": [
+    "Sunny Brook Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    142.4,
+    710429.7
+   ],
+   "overlap_acres": 7.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.054,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 43.5,
+    "S3_names": [
+     "sunny brook",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 104753,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10168+US-4484@area@38.223,-83.374",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10168+US-4484@area@channel@38.224,-83.381",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10158+US-10171",
+   "refs": [
+    "US-10158",
+    "US-10171"
+   ],
+   "names": [
+    "Pioneer Weapons Wildlife Management Area",
+    "Zilpo Campground Wildlife Management Area"
+   ],
+   "acres": [
+    7732.3,
+    221.0
+   ],
+   "overlap_acres": 1.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.005,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 38.7,
+    "S3_names": [
+     "pioneer weapons",
+     "zilpo campground"
+    ],
+    "S4": false,
+    "S4_m": 7412,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10158+US-10171+US-4484@area@38.075,-83.497",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10158+US-10171@area@38.075,-83.497",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-3799+US-4484",
+   "refs": [
+    "US-3799",
+    "US-4484"
+   ],
+   "names": [
+    "Burchell-Beech Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    1240.8,
+    710429.7
+   ],
+   "overlap_acres": 10.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.009,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 38.5,
+    "S3_names": [
+     "burchell beech",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 37875,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3799+US-4484@area@37.149,-83.690",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3799+US-4484@area@37.153,-83.692",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3799+US-4484@area@37.164,-83.690",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1277+US-4484",
+   "refs": [
+    "US-1277",
+    "US-4484"
+   ],
+   "names": [
+    "Cumberland Falls State Park",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    2001.9,
+    710429.7
+   ],
+   "overlap_acres": 120.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.06,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 35.7,
+    "S3_names": [
+     "cumberland falls",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 70730,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ],
+    "owner_field": [
+     [
+      "Kentucky State Parks"
+     ],
+     []
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.831,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.855,-84.317",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1277+US-4484@area@36.830,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1277+US-4484@area@36.831,-84.368",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1277+US-4484@area@36.847,-84.346",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1277+US-4484@area@36.849,-84.319",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1277+US-4484@area@36.849,-84.361",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10171+US-4484",
+   "refs": [
+    "US-10171",
+    "US-4484"
+   ],
+   "names": [
+    "Zilpo Campground Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    221.0,
+    710429.7
+   ],
+   "overlap_acres": 221.0,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 35.7,
+    "S3_names": [
+     "zilpo campground",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 85434,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10158+US-10171+US-4484@area@38.075,-83.497",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10171+US-4484@area@38.071,-83.481",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12083+US-4484",
+   "refs": [
+    "US-12083",
+    "US-4484"
+   ],
+   "names": [
+    "University of the Cumberlands Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    10272.6,
+    710429.7
+   ],
+   "overlap_acres": 1.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 35.3,
+    "S3_names": [
+     "university cumberlands",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 81140,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12083+US-4484@area@36.637,-84.205",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12083+US-4484@area@36.640,-84.208",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12083+US-4484@area@36.641,-84.206",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1286+US-4484",
+   "refs": [
+    "US-1286",
+    "US-4484"
+   ],
+   "names": [
+    "Natural Bridge State Park",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    2498.3,
+    710429.7
+   ],
+   "overlap_acres": 67.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.027,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "bridge",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 48534,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ],
+    "owner_field": [
+     [
+      "Kentucky State Parks"
+     ],
+     []
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1286+US-4484@area@37.784,-83.708",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-4484+US-7970",
+   "refs": [
+    "US-4484",
+    "US-7970"
+   ],
+   "names": [
+    "Daniel Boone National Forest",
+    "Sinking Creek State Natural Area"
+   ],
+   "acres": [
+    710429.7,
+    301.0
+   ],
+   "overlap_acres": 4.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 32.0,
+    "S3_names": [
+     "daniel boone",
+     "sinking creek"
+    ],
+    "S4": false,
+    "S4_m": 40320,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4484+US-7970@area@37.103,-84.224",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7970@area@37.109,-84.239",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-4484+US-7970@area@channel@37.102,-84.231",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-4484+US-7964",
+   "refs": [
+    "US-4484",
+    "US-7964"
+   ],
+   "names": [
+    "Daniel Boone National Forest",
+    "William H. Martin State Natural Area"
+   ],
+   "acres": [
+    710429.7,
+    459.2
+   ],
+   "overlap_acres": 22.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.048,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.8,
+    "S3_names": [
+     "daniel boone",
+     "william martin"
+    ],
+    "S4": false,
+    "S4_m": 51729,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.046,-84.319",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.048,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.040,-84.318",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.040,-84.338",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.048,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.053,-84.327",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.055,-84.331",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.056,-84.329",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.057,-84.339",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7964@area@37.057,-84.340",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1275+US-4484",
+   "refs": [
+    "US-1275",
+    "US-4484"
+   ],
+   "names": [
+    "Buckhorn Lake State Park",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    616.0,
+    710429.7
+   ],
+   "overlap_acres": 0.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.0,
+    "S3_names": [
+     "buckhorn",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 50598,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1275+US-4484@area@37.312,-83.446",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-10111",
+   "refs": [
+    "US-0686",
+    "US-10111"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Rock Creek National Wild and Scenic River"
+   ],
+   "acres": [
+    122460.6,
+    6237.2
+   ],
+   "overlap_acres": 0.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "big south fork",
+     "rock creek wild river"
+    ],
+    "S4": false,
+    "S4_m": 17441,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "US-10160+US-4484",
+   "refs": [
+    "US-10160",
+    "US-4484"
+   ],
+   "names": [
+    "Rockcastle River Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    2922.3,
+    710429.7
+   ],
+   "overlap_acres": 21.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.007,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "rockcastle river",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 45679,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10160+US-4484@area@37.121,-84.298",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.098,-84.314",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.101,-84.338",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.103,-84.306",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.107,-84.341",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.109,-84.308",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10160+US-4484@area@37.111,-84.300",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.114,-84.360",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@37.115,-84.352",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10160+US-4484@area@channel@37.099,-84.334",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-4484+US-7962",
+   "refs": [
+    "US-4484",
+    "US-7962"
+   ],
+   "names": [
+    "Daniel Boone National Forest",
+    "Little South Fork State Natural Area"
+   ],
+   "acres": [
+    710429.7,
+    2230.9
+   ],
+   "overlap_acres": 17.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.008,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 27.6,
+    "S3_names": [
+     "daniel boone",
+     "little south fork"
+    ],
+    "S4": false,
+    "S4_m": 101993,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4484+US-7962@area@36.656,-84.754",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.668,-84.698",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-4484+US-7962@area@36.678,-84.688",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.685,-84.698",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.688,-84.679",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.693,-84.684",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.698,-84.692",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.699,-84.707",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4484+US-7962@area@36.700,-84.709",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-4484",
+   "refs": [
+    "US-0686",
+    "US-4484"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    122460.6,
+    710429.7
+   ],
+   "overlap_acres": 226.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 23.1,
+    "S3_names": [
+     "big south fork",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 120283,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0686+US-10107+US-4484@area@36.609,-84.593",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.604,-84.728",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.614,-84.718",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.616,-84.716",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.617,-84.708",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.618,-84.706",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.618,-84.713",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.621,-84.675",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.622,-84.667",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.622,-84.672",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.622,-84.698",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.623,-84.681",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.623,-84.693",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.624,-84.687",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.626,-84.663",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.627,-84.657",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.636,-84.644",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.637,-84.634",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.639,-84.640",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.643,-84.632",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.644,-84.624",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.644,-84.626",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.645,-84.622",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.646,-84.592",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.646,-84.604",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.646,-84.607",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.646,-84.618",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.648,-84.589",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.658,-84.566",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.665,-84.562",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.667,-84.562",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.671,-84.519",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.671,-84.563",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.674,-84.558",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.682,-84.558",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.683,-84.528",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.684,-84.532",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.684,-84.552",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.689,-84.548",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.691,-84.549",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.695,-84.548",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.712,-84.546",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.726,-84.537",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.726,-84.544",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.729,-84.545",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.743,-84.558",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.744,-84.559",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.745,-84.526",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.745,-84.560",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.748,-84.576",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.754,-84.541",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.755,-84.571",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.764,-84.564",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.767,-84.534",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.771,-84.528",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.776,-84.512",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.781,-84.516",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.782,-84.555",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.784,-84.550",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-4484@area@36.794,-84.524",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-4526+US-7966",
+   "refs": [
+    "US-4526",
+    "US-7966"
+   ],
+   "names": [
+    "George Washington & Jefferson National Forest",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    857.5,
+    2830.0
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.6,
+    "S3_names": [
+     "george washington jefferson",
+     "bad branch"
+    ],
+    "S4": false,
+    "S4_m": 298741,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4526+US-7966@area@37.100,-82.747",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10139+US-7966",
+   "refs": [
+    "US-10139",
+    "US-7966"
+   ],
+   "names": [
+    "Jefferson National Forest Wildlife Management Area",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    857.5,
+    2830.0
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "jefferson",
+     "bad branch"
+    ],
+    "S4": false,
+    "S4_m": 4048,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10139+US-7966@area@37.100,-82.747",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10138+US-4484",
+   "refs": [
+    "US-10138",
+    "US-4484"
+   ],
+   "names": [
+    "Hoskins Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    5292.4,
+    710429.7
+   ],
+   "overlap_acres": 77.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "hoskins",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 65905,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10138+US-10159+US-4484@area@37.056,-83.488",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@36.915,-83.375",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.008,-83.318",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.015,-83.294",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.015,-83.299",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.020,-83.285",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.024,-83.275",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.055,-83.492",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.055,-83.494",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.060,-83.387",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.064,-83.389",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10138+US-4484@area@37.095,-83.369",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10162+US-4484",
+   "refs": [
+    "US-10162",
+    "US-4484"
+   ],
+   "names": [
+    "Ross Creek Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "acres": [
+    1295.9,
+    710429.7
+   ],
+   "overlap_acres": 3.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 18.2,
+    "S3_names": [
+     "ross creek",
+     "daniel boone"
+    ],
+    "S4": false,
+    "S4_m": 24326,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10162+US-4484@area@37.594,-83.855",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10162+US-4484@area@37.595,-83.872",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10162+US-4484@area@37.596,-83.866",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  }
+ ],
+ "club_same_land_rows": [
+  {
+   "fer_id": "US-0703+US-3790@same land@36.503,-88.061",
+   "refs": [
+    "US-0703",
+    "US-3790"
+   ],
+   "live": true,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-10139+US-4526@same land@37.093,-82.733",
+   "refs": [
+    "US-10139",
+    "US-4526"
+   ],
+   "live": true,
+   "tool_verdict": "SAME LAND: likely"
+  }
+ ]
+}

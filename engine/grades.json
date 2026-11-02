@@ -1,0 +1,294 @@
+{
+ "grades": {
+  "outline": {
+   "kind": "outline",
+   "verdict": "FAIL",
+   "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
+   "measured": {
+    "rows": 1040,
+    "parks": 965,
+    "parks_with_hit": 122,
+    "SURE": 75,
+    "LIKELY": 48,
+    "UNLIKELY_evidence": 220,
+    "strong": 37,
+    "already_approved": 139,
+    "open_without_whynot": 428,
+    "non_official_candidates": 1,
+    "unlikely_as_questions": 0,
+    "strong_but_not_sure": 0,
+    "questions_beyond_150m": 0,
+    "size_way_off_questions": 0
+   },
+   "fails": [
+    "open parks without a why-not: 428",
+    "non-official publishers: 1"
+   ],
+   "top_miss_reasons": [
+    {
+     "reason": "engine error: InvalidURL",
+     "parks": 428
+    },
+    {
+     "reason": "already approved: already approved",
+     "parks": 139
+    },
+    {
+     "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
+     "parks": 85
+    },
+    {
+     "reason": "not found: no-layer: no official record at the pin or by name",
+     "parks": 78
+    },
+    {
+     "reason": "evidence: UNLIKELY only : name: none word in common",
+     "parks": 66
+    }
+   ],
+   "examples": [
+    {
+     "ref": "CA-4864",
+     "area": "CA-ON",
+     "park": "Fort Henry National Historic Site",
+     "park_class": null,
+     "status": "found",
+     "band": "STRONG",
+     "tier": "T-1",
+     "link": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html",
+     "why": "T-1 STRONG: 'Fort Henry National Historic Site' at the POTA pin"
+    },
+    {
+     "ref": "CA-4866",
+     "area": "CA-ON",
+     "park": "Fort Mississauga National Historic Site",
+     "park_class": null,
+     "status": "found",
+     "band": "STRONG",
+     "tier": "T-1",
+     "link": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html",
+     "why": "T-1 STRONG: 'Fort Mississauga National Historic Site' at the POTA pin"
+    },
+    {
+     "ref": "CA-4868",
+     "area": "CA-ON",
+     "park": "Fort Wellington National Historic Site",
+     "park_class": null,
+     "status": "candidate",
+     "band": "CONFLICT",
+     "tier": "T-2",
+     "link": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html",
+     "why": "T-2 CONFLICT: 'Fort Wellington NHS - Lots 13 to 28, CLSR 56466' at the POTA pin"
+    },
+    {
+     "ref": "CA-5137",
+     "area": "CA-NB",
+     "park": null,
+     "park_class": null,
+     "status": null,
+     "band": null,
+     "tier": null,
+     "link": null,
+     "why": null
+    },
+    {
+     "ref": "CA-4809",
+     "area": "CA-NB",
+     "park": null,
+     "park_class": null,
+     "status": null,
+     "band": null,
+     "tier": null,
+     "link": null,
+     "why": null
+    }
+   ],
+   "still_needs": [
+    "chat 11: 30 sampled joins per key file (30/30)",
+    "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
+   ],
+   "details": {
+    "rows": 1040,
+    "found_or_candidate": 123,
+    "blocked": 52,
+    "hit_rate": 0.118,
+    "bands": {
+     "STRONG": 37,
+     "WEAK": 80,
+     "CONFLICT": 6
+    },
+    "tiers": {
+     "T-1": 16,
+     "T-2": 37,
+     "T-3": 56,
+     "T-4": 7,
+     "T-6": 7
+    },
+    "every_open_park_has_whynot": false,
+    "non_official_publishers": []
+   }
+  }
+ },
+ "config": {
+  "rules_file": "config/rules.json",
+  "changed_from_default": [],
+  "scope": {
+   "outline": [
+    "*"
+   ],
+   "docs": [
+    "*"
+   ],
+   "parking": [
+    "US-*",
+    "CA-*"
+   ],
+   "camping": [
+    "US-*",
+    "CA-*"
+   ],
+   "trail": [
+    "US-*",
+    "CA-*"
+   ],
+   "hours": [
+    "US-KY"
+   ],
+   "fees": [
+    "US-KY"
+   ],
+   "closures": [
+    "US-KY"
+   ]
+  },
+  "locked": [
+   "honest_user_agent",
+   "no_bypass",
+   "no_found_tokens",
+   "tls_verified"
+  ],
+  "active": {
+   "plugins": {
+    "outline": {
+     "enabled": true,
+     "areas": [
+      "*"
+     ]
+    },
+    "docs": {
+     "enabled": true,
+     "areas": [
+      "*"
+     ]
+    },
+    "parking": {
+     "enabled": true,
+     "areas": [
+      "US-*",
+      "CA-*"
+     ]
+    },
+    "camping": {
+     "enabled": true,
+     "areas": [
+      "US-*",
+      "CA-*"
+     ]
+    },
+    "trail": {
+     "enabled": true,
+     "areas": [
+      "US-*",
+      "CA-*"
+     ]
+    },
+    "hours": {
+     "enabled": true,
+     "areas": [
+      "US-KY"
+     ]
+    },
+    "fees": {
+     "enabled": true,
+     "areas": [
+      "US-KY"
+     ]
+    },
+    "closures": {
+     "enabled": true,
+     "areas": [
+      "US-KY"
+     ]
+    }
+   },
+   "hours_rules": {
+    "separate_marina_scuba": true,
+    "reject_fragments": true,
+    "hunting_hours_apart": true
+   },
+   "checks": {
+    "resolve_duplicate_facilities": true,
+    "containers": true,
+    "line_vs_polygon": true,
+    "forestry_kind_guard": true,
+    "point_label_filter": true,
+    "camp_feature_filter": true,
+    "game_reserve_not_park": true
+   },
+   "source_policy": {
+    "wdpa_guard": true,
+    "wdpa_last_resort": true,
+    "never_use": {
+     "openstreetmap": true,
+     "google": true,
+     "alltrails": true,
+     "wikidata": true,
+     "wikipedia": true,
+     "tourism_app_pages": true
+    },
+    "eu_compilation_approximate": true,
+    "parcels_approximate": true,
+    "unofficial_docs_kept_apart": true,
+    "two_fers_never_auto": true,
+    "state_mapping_compilations": true
+   },
+   "grader": {
+    "size_pass_max": 1.5,
+    "size_off_max": 5.0,
+    "parcel_low": 0.2,
+    "parcel_high": 2.0,
+    "rg12_m": 150,
+    "docs_ky_tn_share": 0.2,
+    "docs_same_file_max": 3,
+    "parking_right_of_30": 27,
+    "parking_ky_tn_share": 0.1,
+    "camp_layer_ok": 0.95,
+    "trail_pin_m": 200,
+    "fer_line_ft": 100
+   }
+  }
+ },
+ "passes": {
+  "outline": {
+   "pass1": {
+    "error": 428,
+    "already approved": 139,
+    "found": 37,
+    "candidate": 88,
+    "evidence": 218,
+    "blocked": 52,
+    "not found": 78
+   },
+   "pass2": null,
+   "pass2_solved": null,
+   "timed_out": true
+  }
+ },
+ "stubs": {
+  "cell": "cell coverage: needs the FCC / ISED coverage maps reader (not built)",
+  "acres": "acres: outline plug-in writes acres_approx; a full acreage check is not built",
+  "missed_fers": "missed 2-fers: needs the club key polygons for overlap (not built)",
+  "gps_pack": "GPS packs: built from approved outlines only, after chat 11 (not built)",
+  "boundary_changes": "boundary changes: needs two dated copies of a layer (not built)"
+ }
+}

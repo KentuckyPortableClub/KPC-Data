@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-10-31T21:50:54+00:00",
+  "agencies": [
+    {
+      "agency": "Tennessee State Parks (TDEC)",
+      "index_url": "https://tnstateparks.com/parks/park-trail-maps",
+      "status": "error",
+      "counts": null,
+      "pages_fetched": null,
+      "candidates": null,
+      "browser_used": null,
+      "seconds": null,
+      "error": "RuntimeError: index page could not be fetched: HTTP 403 https://tnstateparks.com/parks/park-trail-maps",
+      "notes": null
+    },
+    {
+      "agency": "Tennessee Wildlife Resources Agency",
+      "index_url": "https://www.tn.gov/twra/gis-maps.html",
+      "status": "error",
+      "counts": null,
+      "pages_fetched": null,
+      "candidates": null,
+      "browser_used": null,
+      "seconds": null,
+      "error": "RuntimeError: index page could not be fetched: HTTP 403 https://www.tn.gov/twra/gis-maps.html",
+      "notes": null
+    },
+    {
+      "agency": "U.S. Fish and Wildlife Service",
+      "index_url": "https://www.fws.gov/library/categories/maps",
+      "status": "done",
+      "counts": {
+        "OK": 0,
+        "POSSIBLE": 0,
+        "SHARED": 0,
+        "NONE": 161
+      },
+      "pages_fetched": 2,
+      "candidates": 2,
+      "browser_used": false,
+      "seconds": 4.8,
+      "error": null,
+      "notes": [
+        "HTTP 404 https://www.fws.gov/newsroom/story/meet-your-national-fish-hatchery-system"
+      ]
+    },
+    {
+      "agency": "USDA Forest Service",
+      "index_url": "https://www.fs.usda.gov/visit/maps",
+      "status": "done",
+      "counts": {
+        "OK": 0,
+        "POSSIBLE": 0,
+        "SHARED": 0,
+        "NONE": 161
+      },
+      "pages_fetched": 1,
+      "candidates": 7,
+      "browser_used": true,
+      "seconds": 6.0,
+      "error": null,
+      "notes": [
+        "index page static HTML (80379 chars, 7 doc links) had no park-matching links; rendering with headless browser"
+      ]
+    }
+  ],
+  "totals": {
+    "OK": 0,
+    "POSSIBLE": 0,
+    "SHARED": 0,
+    "NONE": 161
+  }
+}

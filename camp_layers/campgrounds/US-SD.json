@@ -1,0 +1,10 @@
+{"src": "official campground layers (outside research E)", "read": "2026-11-01",
+ "camps": [
+  ["L-c3e360aeb3", "Alkali Creek Campground", 44.375368, -103.468337, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=83266&outFields=*&f=html"],
+  ["L-c06f710653", "Alkali Creek Horsecamp", 44.376997, -103.465533, "horse", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=83256&outFields=*&f=html"]
+ ],
+ "extra": {
+  "L-c06f710653": {"why": "campground (by type field); type: CAMPGROUND | Campground; state by outline", "read_date": "2026-11-01"},
+  "L-c3e360aeb3": {"why": "campground (by type field); type: CAMPGROUND | Campground; state by outline", "read_date": "2026-11-01"}
+ }
+}

@@ -1,0 +1,237 @@
+{
+ "hosts": {
+  "app.fw.ky.gov": {
+   "status": "no sitemap readable",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 3 sitemap file(s) did not read, e.g. https://app.fw.ky.gov/sitemap.xml -> 404; https://app.fw.ky.gov/sitemap_index.xml -> 404; https://app.fw.ky.gov/wp-sitemap.xml -> 404",
+   "read_date": "2026-11-01"
+  },
+  "eec.ky.gov": {
+   "status": "no sitemap readable",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists 1 sitemap(s); 1 sitemap file(s) did not read, e.g. sitemap.xml -> err:MissingSchema",
+   "read_date": "2026-11-01"
+  },
+  "experience.arcgis.com": {
+   "status": "no sitemap readable",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 3 sitemap file(s) did not read, e.g. https://experience.arcgis.com/sitemap.xml -> 404; https://experience.arcgis.com/sitemap_index.xml -> 404; https://experience.arcgis.com/wp-sitemap.xml -> 404",
+   "read_date": "2026-11-01"
+  },
+  "fw.ky.gov": {
+   "status": "no sitemap readable",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 3 sitemap file(s) did not read, e.g. https://fw.ky.gov/sitemap.xml -> 404; https://fw.ky.gov/sitemap_index.xml -> 404; https://fw.ky.gov/wp-sitemap.xml -> 404",
+   "read_date": "2026-11-01"
+  },
+  "kyhorsepark.com": {
+   "status": "ok",
+   "n_urls": 1757,
+   "maps": 855,
+   "pages": 0,
+   "maps_with_refs": 11,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists 1 sitemap(s)",
+   "read_date": "2026-11-01"
+  },
+  "levijacksonpark.com": {
+   "status": "ok",
+   "n_urls": 21,
+   "maps": 1,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 1 sitemap file(s) did not read, e.g. https://levijacksonpark.com/sitemap_index.xml -> 404",
+   "read_date": "2026-11-01"
+  },
+  "parks.ky.gov": {
+   "status": "ok",
+   "n_urls": 536,
+   "maps": 202,
+   "pages": 9,
+   "maps_with_refs": 24,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists 2 sitemap(s)",
+   "read_date": "2026-11-01"
+  },
+  "tnstateparks.com": {
+   "status": "blocked",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 65,
+   "why": "blocked: 403 Forbidden on https://tnstateparks.com/robots.txt; robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 3 sitemap file(s) did not read, e.g. https://tnstateparks.com/sitemap.xml -> 403; https://tnstateparks.com/sitemap_index.xml -> 403; https://tnstateparks.com/wp-sitemap.xml -> 403; index page https://tnstateparks.com/parks/park-trail-maps -> 403",
+   "read_date": "2026-11-01"
+  },
+  "trails.nc.gov": {
+   "status": "ok",
+   "n_urls": 39,
+   "maps": 37,
+   "pages": 0,
+   "maps_with_refs": 3,
+   "national": false,
+   "learned_paths": 1,
+   "why": "robots.txt lists 1 sitemap(s)",
+   "read_date": "2026-11-01"
+  },
+  "visitblackacre.org": {
+   "status": "ok",
+   "n_urls": 308,
+   "maps": 3,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists 1 sitemap(s)",
+   "read_date": "2026-11-01"
+  },
+  "www.fs.usda.gov": {
+   "status": "ok",
+   "n_urls": 48126,
+   "maps": 27,
+   "pages": 0,
+   "maps_with_refs": 27,
+   "national": true,
+   "learned_paths": 3,
+   "why": "robots.txt lists 1 sitemap(s); index page https://www.fs.usda.gov/visit/maps: 138 links on the same site; opened 1 park / map page(s) from the sitemap once each, for the map files they link",
+   "read_date": "2026-11-01"
+  },
+  "www.fws.gov": {
+   "status": "ok",
+   "n_urls": 11623,
+   "maps": 478,
+   "pages": 110,
+   "maps_with_refs": 478,
+   "national": true,
+   "learned_paths": 9,
+   "why": "robots.txt lists 1 sitemap(s); 34 sitemap file(s) did not read, e.g. https://www.fws.gov/images/sitemap.xml -> 404; https://www.fws.gov/stories/sitemap.xml?page=1 -> robots; https://www.fws.gov/stories/sitemap.xml?page=2 -> robots; index page https://www.fws.gov/library/categories/maps: 151 links on the same site; opened 110 park / map page(s) from the sitemap once each, for the map files they link",
+   "read_date": "2026-11-01"
+  },
+  "www.hmdb.org": {
+   "status": "ok",
+   "n_urls": 290584,
+   "maps": 4,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists 1 sitemap(s)",
+   "read_date": "2026-11-01"
+  },
+  "www.kentuckytourism.com": {
+   "status": "ok",
+   "n_urls": 9972,
+   "maps": 300,
+   "pages": 0,
+   "maps_with_refs": 23,
+   "national": false,
+   "learned_paths": 0,
+   "why": "robots.txt lists 2 sitemap(s)",
+   "read_date": "2026-11-01"
+  },
+  "www.landbetweenthelakes.us": {
+   "status": "ok",
+   "n_urls": 863,
+   "maps": 97,
+   "pages": 43,
+   "maps_with_refs": 12,
+   "national": false,
+   "learned_paths": 1,
+   "why": "robots.txt lists 1 sitemap(s); opened 10 park / map page(s) from the sitemap once each, for the map files they link",
+   "read_date": "2026-11-01"
+  },
+  "www.murfreesborotn.gov": {
+   "status": "no sitemap readable",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 2,
+   "why": "robots.txt lists 1 sitemap(s); 1 sitemap file(s) did not read, e.g. /sitemap.xml -> err:MissingSchema",
+   "read_date": "2026-11-01"
+  },
+  "www.nashville.gov": {
+   "status": "ok",
+   "n_urls": 1,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 1,
+   "why": "robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 2 sitemap file(s) did not read, e.g. https://www.nashville.gov/sitemap_index.xml -> 404; https://www.nashville.gov/wp-sitemap.xml -> 404",
+   "read_date": "2026-11-01"
+  },
+  "www.nps.gov": {
+   "status": "ok",
+   "n_urls": 190377,
+   "maps": 744,
+   "pages": 14,
+   "maps_with_refs": 744,
+   "national": true,
+   "learned_paths": 14,
+   "why": "robots.txt lists 1 sitemap(s); opened 60 park / map page(s) from the sitemap once each, for the map files they link",
+   "read_date": "2026-11-01"
+  },
+  "www.tn.gov": {
+   "status": "blocked",
+   "n_urls": 0,
+   "maps": 0,
+   "pages": 0,
+   "maps_with_refs": 0,
+   "national": false,
+   "learned_paths": 1,
+   "why": "blocked: 403 Forbidden on https://www.tn.gov/robots.txt; robots.txt lists no sitemap; tried /sitemap.xml, /sitemap_index.xml, /wp-sitemap.xml; 3 sitemap file(s) did not read, e.g. https://www.tn.gov/sitemap.xml -> 403; https://www.tn.gov/sitemap_index.xml -> 403; https://www.tn.gov/wp-sitemap.xml -> 403; index page https://www.tn.gov/twra/gis-maps.html -> 403",
+   "read_date": "2026-11-01"
+  }
+ },
+ "read_date": "2026-11-01",
+ "areas": [
+  "US-TN",
+  "US-KY"
+ ],
+ "inputs": [
+  "US-TN parks: data/parkinfo/US-TN.json (277)",
+  "US-KY parks: api.pota.app (193)"
+ ],
+ "requests": {
+  "requests": 2,
+  "cache_hits": 0,
+  "robots_refused": 0,
+  "rested": 0,
+  "banned": 0,
+  "errors": 0,
+  "blocked": 0
+ },
+ "blocked_hosts": {
+  "api.pota.app": "403 Forbidden on https://api.pota.app/robots.txt",
+  "tnstateparks.com": "403 Forbidden on https://tnstateparks.com/robots.txt",
+  "www.tn.gov": "403 Forbidden on https://www.tn.gov/robots.txt"
+ },
+ "left": 0
+}

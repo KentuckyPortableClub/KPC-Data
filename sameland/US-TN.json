@@ -1,0 +1,6236 @@
+{
+ "tool": "KPC 13 same-land finder",
+ "area": "US-TN",
+ "built": "2026-11-01",
+ "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
+ "counts": {
+  "parks": 277,
+  "outlines": 257,
+  "pairs_overlapping": 88,
+  "SAME LAND: likely": 4,
+  "CHECK": 13,
+  "NOT SAME": 71,
+  "one_inside_the_other": 3
+ },
+ "left_out": [],
+ "pairs": [
+  {
+   "id": "US-3933+US-7578",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "names": [
+    "Cheatham Wildlife Management Area",
+    "Cheatham Lake Wildlife Management Area"
+   ],
+   "acres": [
+    23264.8,
+    23264.8
+   ],
+   "overlap_acres": 23264.8,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "PAD-US:255408",
+     "PAD-US:255698",
+     "sgtnc:23",
+     "sgtnc:308",
+     "sgtne:27",
+     "sgtne:420",
+     "sgtne:421",
+     "sgtne:422",
+     "sgtne:423",
+     "sgtne:424",
+     "sgtne:425",
+     "sgtne:426",
+     "sgtne:427",
+     "sgtne:428",
+     "sgtne:429",
+     "sgtne:430",
+     "sgtne:431",
+     "sgtne:432",
+     "sgtne:433",
+     "sgtni:202",
+     "sgtni:39"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cheatham",
+     "cheatham"
+    ],
+    "S4": false,
+    "S4_m": 12143,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-7580+US-7581",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "names": [
+    "Cordell Hull Wildlife Management Area",
+    "Cordell Hull Waterfowl Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    28449.4,
+    28449.4
+   ],
+   "overlap_acres": 28449.4,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "PAD-US:255409",
+     "PAD-US:255413",
+     "sgtnc:687",
+     "sgtnc:688",
+     "sgtnc:689",
+     "sgtnc:690",
+     "sgtne:16",
+     "sgtne:19",
+     "sgtni:20",
+     "sgtni:27"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cordell hull",
+     "cordell hull waterfowl"
+    ],
+    "S4": false,
+    "S4_m": 12957,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": true
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-3971+US-5499",
+   "refs": [
+    "US-3971",
+    "US-5499"
+   ],
+   "names": [
+    "Prentice Cooper Wildlife Management Area",
+    "Prentice Cooper State Forest"
+   ],
+   "acres": [
+    28013.7,
+    26079.8
+   ],
+   "overlap_acres": 26051.9,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:256230"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.93,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "prentice cooper",
+     "prentice cooper"
+    ],
+    "S4": true,
+    "S4_m": 9,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "TDA"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3971+US-5499@same land@35.057,-85.429",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0538+US-3960",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot State Wildlife Area"
+   ],
+   "acres": [
+    26109.0,
+    28018.4
+   ],
+   "overlap_acres": 25707.6,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740",
+     "sgtne:325"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 0.985,
+    "S2_of_larger": 0.918,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 5640,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0538+US-3960@same land@36.427,-89.420",
+     "kind": "same land",
+     "live": true
+    },
+    {
+     "id": "US-0538+US-3960@same land@36.427,-89.420",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-0538+US-3960@same land@36.427,-89.420",
+     "kind": "same land",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-3934+US-5491",
+   "refs": [
+    "US-3934",
+    "US-5491"
+   ],
+   "names": [
+    "Chickasaw State Wildlife Area",
+    "Chickasaw State Forest"
+   ],
+   "acres": [
+    14526.9,
+    14531.7
+   ],
+   "overlap_acres": 14526.8,
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255551",
+     "PAD-US:255597"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chickasaw",
+     "chickasaw"
+    ],
+    "S4": false,
+    "S4_m": 365,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3934+US-5491@same land@35.344,-88.787",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3935+US-5492",
+   "refs": [
+    "US-3935",
+    "US-5492"
+   ],
+   "names": [
+    "Chuck Swan Wildlife Management Area",
+    "Chuck Swan State Forest"
+   ],
+   "acres": [
+    24680.9,
+    24718.4
+   ],
+   "overlap_acres": 24079.0,
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 0.976,
+    "S2_of_larger": 0.974,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chuck swan",
+     "chuck swan"
+    ],
+    "S4": false,
+    "S4_m": 5527,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3935+US-5492@area@36.335,-83.924",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0538+US-2971",
+   "refs": [
+    "US-0538",
+    "US-2971"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot Lake State Park"
+   ],
+   "acres": [
+    26109.0,
+    20195.7
+   ],
+   "overlap_acres": 20078.9,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740"
+    ],
+    "S2": "ONE INSIDE THE OTHER",
+    "S2_of_smaller": 0.994,
+    "S2_of_larger": 0.769,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 10362,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0538+US-2971@same land@36.419,-89.368",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-0538+US-2971@same land@36.419,-89.368",
+     "kind": "same land",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-12663+US-2952",
+   "refs": [
+    "US-12663",
+    "US-2952"
+   ],
+   "names": [
+    "Ocoee River State Park",
+    "Hiwassee Ocoee State Park"
+   ],
+   "acres": [
+    190.0,
+    143.9
+   ],
+   "overlap_acres": 140.8,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "sgtnf:84",
+     "sgtng:44",
+     "tnd:84"
+    ],
+    "S2": "ONE INSIDE THE OTHER",
+    "S2_of_smaller": 0.979,
+    "S2_of_larger": 0.741,
+    "S3": false,
+    "S3_score": 64.0,
+    "S3_names": [
+     "ocoee river",
+     "hiwassee ocoee"
+    ],
+    "S4": false,
+    "S4_m": 18283,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Valley Authority"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12663+US-2952@same land@35.234,-84.548",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-2952@same land@35.234,-84.548",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-2952@same land@35.234,-84.548",
+     "kind": "same land",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2971+US-3960",
+   "refs": [
+    "US-2971",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot Lake State Park",
+    "Reelfoot State Wildlife Area"
+   ],
+   "acres": [
+    20195.7,
+    28018.4
+   ],
+   "overlap_acres": 20079.3,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740"
+    ],
+    "S2": "ONE INSIDE THE OTHER",
+    "S2_of_smaller": 0.994,
+    "S2_of_larger": 0.717,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 9688,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2971+US-3960+US-7573@area@36.444,-89.385",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2971+US-3960@area@36.370,-89.413",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2971+US-3960@area@36.411,-89.204",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2935+US-3924",
+   "refs": [
+    "US-2935",
+    "US-3924"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Cedars of Lebanon State Forest"
+   ],
+   "acres": [
+    4430.4,
+    9514.0
+   ],
+   "overlap_acres": 4185.1,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255595"
+    ],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.945,
+    "S2_of_larger": 0.44,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cedars lebanon",
+     "cedars lebanon"
+    ],
+    "S4": false,
+    "S4_m": 5323,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Division of Forestry",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2935+US-3924@same land@36.095,-86.385",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2966+US-5498",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "names": [
+    "Pickett State Park",
+    "Pickett State Forest"
+   ],
+   "acres": [
+    5087.9,
+    24612.0
+   ],
+   "overlap_acres": 4647.7,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255633",
+     "PAD-US:255634"
+    ],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.913,
+    "S2_of_larger": 0.189,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "pickett",
+     "pickett"
+    ],
+    "S4": false,
+    "S4_m": 2152,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2966+US-5498@same land@36.559,-84.793",
+     "kind": "same land",
+     "live": true
+    },
+    {
+     "id": "US-2966+US-5498@same land@36.559,-84.793",
+     "kind": "same land",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2961+US-3957",
+   "refs": [
+    "US-2961",
+    "US-3957"
+   ],
+   "names": [
+    "Natchez Trace State Park",
+    "Natchez Trace State Forest Wildlife Management Area"
+   ],
+   "acres": [
+    8298.7,
+    46399.2
+   ],
+   "overlap_acres": 8287.3,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255627"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.179,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "natchez trace",
+     "natchez trace"
+    ],
+    "S4": false,
+    "S4_m": 6160,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2961+US-3957@same land@35.837,-88.264",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-11879+US-2955",
+   "refs": [
+    "US-11879",
+    "US-2955"
+   ],
+   "names": [
+    "North Chickamauga Creek Gorge State Park",
+    "Wilson Cumberland Trail State Park"
+   ],
+   "acres": [
+    7118.3,
+    42213.2
+   ],
+   "overlap_acres": 7109.0,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255602"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.168,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "north chickamauga creek gorge",
+     "wilson cumberland"
+    ],
+    "S4": false,
+    "S4_m": 6205,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-11879+US-2955@same land@35.253,-85.285",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2978+US-5501",
+   "refs": [
+    "US-2978",
+    "US-5501"
+   ],
+   "names": [
+    "Standing Stone State Park",
+    "Standing Stone State Forest"
+   ],
+   "acres": [
+    1058.4,
+    9420.5
+   ],
+   "overlap_acres": 1053.7,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255644"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.996,
+    "S2_of_larger": 0.112,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "standing stone",
+     "standing stone"
+    ],
+    "S4": false,
+    "S4_m": 2341,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2978+US-5501@same land@36.464,-85.412",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2936+US-5491",
+   "refs": [
+    "US-2936",
+    "US-5491"
+   ],
+   "names": [
+    "Chickasaw State Park",
+    "Chickasaw State Forest"
+   ],
+   "acres": [
+    1387.1,
+    14531.7
+   ],
+   "overlap_acres": 1387.1,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255597"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.095,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chickasaw",
+     "chickasaw"
+    ],
+    "S4": false,
+    "S4_m": 5671,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2936+US-5491@same land@35.344,-88.787",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2936+US-3934",
+   "refs": [
+    "US-2936",
+    "US-3934"
+   ],
+   "names": [
+    "Chickasaw State Park",
+    "Chickasaw State Wildlife Area"
+   ],
+   "acres": [
+    1387.1,
+    14526.9
+   ],
+   "overlap_acres": 1387.1,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255597"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.095,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chickasaw",
+     "chickasaw"
+    ],
+    "S4": false,
+    "S4_m": 6032,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2936+US-3934@same land@35.371,-88.820",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-6266+US-9718",
+   "refs": [
+    "US-6266",
+    "US-9718"
+   ],
+   "names": [
+    "Savage Gulf State Natural Area",
+    "Savage Gulf State Park"
+   ],
+   "acres": [
+    30.1,
+    19480.7
+   ],
+   "overlap_acres": 29.7,
+   "verdict": "CHECK",
+   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines are not the same shape (one sits inside the other): a person should look.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.989,
+    "S2_of_larger": 0.002,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "savage gulf",
+     "savage gulf"
+    ],
+    "S4": true,
+    "S4_m": 0,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-6266+US-9718@area@35.438,-85.536",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-11918+US-12714",
+   "refs": [
+    "US-11918",
+    "US-12714"
+   ],
+   "names": [
+    "Sherwood Forest State Natural Area",
+    "Head of the Crow State Park"
+   ],
+   "acres": [
+    4061.4,
+    5541.8
+   ],
+   "overlap_acres": 3057.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.753,
+    "S2_of_larger": 0.552,
+    "S3": false,
+    "S3_score": 35.3,
+    "S3_names": [
+     "sherwood",
+     "head crow"
+    ],
+    "S4": false,
+    "S4_m": 6701,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-11918+US-12714+US-5493@area@35.096,-85.886",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-11918+US-12714@area@35.086,-85.901",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12361+US-3928",
+   "refs": [
+    "US-12361",
+    "US-3928"
+   ],
+   "names": [
+    "Scott's Gulf Wilderness State Park",
+    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
+   ],
+   "acres": [
+    10182.6,
+    18579.9
+   ],
+   "overlap_acres": 7087.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.696,
+    "S2_of_larger": 0.381,
+    "S3": false,
+    "S3_score": 23.3,
+    "S3_names": [
+     "scotts gulf",
+     "bridgestone firestone centennial"
+    ],
+    "S4": false,
+    "S4_m": 2994,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.850,-85.289",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.850,-85.293",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.851,-85.299",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.853,-85.281",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-3928+US-5490@area@35.801,-85.272",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-3928+US-5490@area@35.811,-85.265",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-3928@area@35.834,-85.270",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12360+US-3969",
+   "refs": [
+    "US-12360",
+    "US-3969"
+   ],
+   "names": [
+    "Wolf River State Forest",
+    "Wolf River Wildlife Management Area"
+   ],
+   "acres": [
+    5487.9,
+    17513.0
+   ],
+   "overlap_acres": 5487.7,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.313,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "wolf river",
+     "wolf river"
+    ],
+    "S4": false,
+    "S4_m": 13036,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Tennessee Division of Forestry"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12360+US-3969@area@35.120,-89.314",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0534+US-7568",
+   "refs": [
+    "US-0534",
+    "US-7568"
+   ],
+   "names": [
+    "Cross Creeks National Wildlife Refuge",
+    "Barkley Wildlife Management Area"
+   ],
+   "acres": [
+    6601.3,
+    13808.1
+   ],
+   "overlap_acres": 3298.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.5,
+    "S2_of_larger": 0.239,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "cross creeks",
+     "barkley"
+    ],
+    "S4": false,
+    "S4_m": 9737,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State fish and wildlife agency",
+      "U.S. Army Corps of Engineers"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0534+US-7568@area@36.418,-87.678",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0534+US-7568@area@36.492,-87.810",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0534+US-7568@area@36.494,-87.800",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0534+US-7568@area@36.498,-87.813",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0534+US-7568@area@36.502,-87.811",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0534+US-7568@area@36.514,-87.768",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0534+US-7568@area@36.516,-87.743",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-3944+US-6255",
+   "refs": [
+    "US-3944",
+    "US-6255"
+   ],
+   "names": [
+    "Hickory Flats Wildlife Management Area",
+    "May Prairie State Natural Area"
+   ],
+   "acres": [
+    767.3,
+    508.6
+   ],
+   "overlap_acres": 136.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.269,
+    "S2_of_larger": 0.178,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "hickory flats",
+     "may prairie"
+    ],
+    "S4": false,
+    "S4_m": 1348,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3944+US-6255@area@35.443,-86.015",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3948+US-5494",
+   "refs": [
+    "US-3948",
+    "US-5494"
+   ],
+   "names": [
+    "John Tully Wildlife Management Area",
+    "John Tully State Forest"
+   ],
+   "acres": [
+    15531.2,
+    2148.1
+   ],
+   "overlap_acres": 2131.2,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.992,
+    "S2_of_larger": 0.137,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "john tully",
+     "john tully"
+    ],
+    "S4": false,
+    "S4_m": 2900,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0537+US-3948+US-5494@area@35.659,-89.790",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3948+US-5494@area@35.671,-89.793",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3969+US-6245",
+   "refs": [
+    "US-3969",
+    "US-6245"
+   ],
+   "names": [
+    "Wolf River Wildlife Management Area",
+    "Ghost River State Natural Area"
+   ],
+   "acres": [
+    17513.0,
+    2263.2
+   ],
+   "overlap_acres": 2164.3,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.956,
+    "S2_of_larger": 0.124,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "wolf river",
+     "ghost river"
+    ],
+    "S4": false,
+    "S4_m": 7089,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3969+US-6245@same land@35.033,-89.293",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-11918+US-5493",
+   "refs": [
+    "US-11918",
+    "US-5493"
+   ],
+   "names": [
+    "Sherwood Forest State Natural Area",
+    "Franklin-Marion State Forest"
+   ],
+   "acres": [
+    4061.4,
+    8824.8
+   ],
+   "overlap_acres": 985.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.243,
+    "S2_of_larger": 0.112,
+    "S3": false,
+    "S3_score": 17.4,
+    "S3_names": [
+     "sherwood",
+     "franklin marion"
+    ],
+    "S4": false,
+    "S4_m": 4442,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-11918+US-12714+US-5493@area@35.096,-85.886",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-11918+US-5493@area@35.082,-85.875",
+     "kind": "area",
+     "live": true
+    }
+   ],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "US-2955+US-7880",
+   "refs": [
+    "US-2955",
+    "US-7880"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Luper Mountain Wildlife Management Area"
+   ],
+   "acres": [
+    42213.2,
+    6171.7
+   ],
+   "overlap_acres": 3533.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.573,
+    "S2_of_larger": 0.084,
+    "S3": false,
+    "S3_score": 38.7,
+    "S3_names": [
+     "wilson cumberland",
+     "luper mountain"
+    ],
+    "S4": false,
+    "S4_m": 80090,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-7880@area@35.919,-84.821",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12361+US-2945",
+   "refs": [
+    "US-12361",
+    "US-2945"
+   ],
+   "names": [
+    "Scott's Gulf Wilderness State Park",
+    "Fall Creek Falls State Park"
+   ],
+   "acres": [
+    10182.6,
+    29491.4
+   ],
+   "overlap_acres": 2243.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.22,
+    "S2_of_larger": 0.076,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "scotts gulf",
+     "fall creek falls"
+    ],
+    "S4": false,
+    "S4_m": 23087,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.850,-85.289",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.850,-85.293",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.851,-85.299",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.853,-85.281",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945@area@35.832,-85.359",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945@area@35.840,-85.327",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-12361+US-2945@area@35.886,-85.348",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2946+US-7622",
+   "refs": [
+    "US-2946",
+    "US-7622"
+   ],
+   "names": [
+    "Fort Loudon State Park",
+    "Tellico Lake Wildlife Management Area"
+   ],
+   "acres": [
+    1007.2,
+    6475.1
+   ],
+   "overlap_acres": 425.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.423,
+    "S2_of_larger": 0.066,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "fort loudon",
+     "tellico"
+    ],
+    "S4": false,
+    "S4_m": 1541,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Valley Authority"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Valley Authority"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2946+US-7622@area@35.582,-84.199",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-6252",
+   "refs": [
+    "US-2955",
+    "US-6252"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Laurel Snow State Natural Area"
+   ],
+   "acres": [
+    42213.2,
+    2233.9
+   ],
+   "overlap_acres": 2222.4,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.995,
+    "S2_of_larger": 0.053,
+    "S3": false,
+    "S3_score": 42.9,
+    "S3_names": [
+     "wilson cumberland",
+     "laurel snow"
+    ],
+    "S4": false,
+    "S4_m": 31228,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State parks agency (PAD-US 'SPR')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-6252@area@35.546,-85.032",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2956+US-6240",
+   "refs": [
+    "US-2956",
+    "US-6240"
+   ],
+   "names": [
+    "Long Hunter State Park",
+    "Couchville Cedar Glade State Natural Area"
+   ],
+   "acres": [
+    3007.3,
+    139.1
+   ],
+   "overlap_acres": 135.1,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.971,
+    "S2_of_larger": 0.045,
+    "S3": false,
+    "S3_score": 30.3,
+    "S3_names": [
+     "long hunter",
+     "couchville cedar glade"
+    ],
+    "S4": false,
+    "S4_m": 2078,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State parks agency (PAD-US 'SPR')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2956+US-6240@area@36.103,-86.534",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2929+US-3959",
+   "refs": [
+    "US-2929",
+    "US-3959"
+   ],
+   "names": [
+    "Big Cypress Tree State Park",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    394.6,
+    9409.7
+   ],
+   "overlap_acres": 327.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.831,
+    "S2_of_larger": 0.035,
+    "S3": false,
+    "S3_score": 44.4,
+    "S3_names": [
+     "big cypress tree",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 8607,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2929+US-3959@area@36.205,-88.889",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-13563+US-6275",
+   "refs": [
+    "US-13563",
+    "US-6275"
+   ],
+   "names": [
+    "Bear Hollow Mountain Wildlife Management Area",
+    "Walls of Jericho State Natural Area"
+   ],
+   "acres": [
+    22495.5,
+    779.5
+   ],
+   "overlap_acres": 779.5,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.035,
+    "S3": false,
+    "S3_score": 36.4,
+    "S3_names": [
+     "bear hollow mountain",
+     "walls jericho"
+    ],
+    "S4": false,
+    "S4_m": 1242,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-13563+US-3694+US-6275@area@34.990,-86.119",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-13563+US-6275@area@34.997,-86.110",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2935+US-3925",
+   "refs": [
+    "US-2935",
+    "US-3925"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Vesta Cedar Glade State Natural Area"
+   ],
+   "acres": [
+    4430.4,
+    147.4
+   ],
+   "overlap_acres": 147.3,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.033,
+    "S3": false,
+    "S3_score": 58.1,
+    "S3_names": [
+     "cedars lebanon",
+     "vesta cedar glade"
+    ],
+    "S4": false,
+    "S4_m": 6072,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2935+US-3925@area@36.077,-86.398",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2966+US-6239",
+   "refs": [
+    "US-2966",
+    "US-6239"
+   ],
+   "names": [
+    "Pickett State Park",
+    "Colditz Cove State Natural Area"
+   ],
+   "acres": [
+    5087.9,
+    161.4
+   ],
+   "overlap_acres": 157.5,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.976,
+    "S2_of_larger": 0.031,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "pickett",
+     "colditz cove"
+    ],
+    "S4": false,
+    "S4_m": 22387,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State parks agency (PAD-US 'SPR')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2966+US-6239@area@36.358,-84.871",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2939+US-2955",
+   "refs": [
+    "US-2939",
+    "US-2955"
+   ],
+   "names": [
+    "Cumberland Mountain State Park",
+    "Wilson Cumberland Trail State Park"
+   ],
+   "acres": [
+    2568.3,
+    42213.2
+   ],
+   "overlap_acres": 998.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.389,
+    "S2_of_larger": 0.024,
+    "S3": false,
+    "S3_score": 74.1,
+    "S3_names": [
+     "cumberland mountain",
+     "wilson cumberland"
+    ],
+    "S4": false,
+    "S4_m": 71055,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.725,-84.864",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.727,-84.855",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.731,-84.865",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.732,-84.864",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.721,-84.867",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.721,-84.877",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.722,-84.866",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.725,-84.858",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.726,-84.874",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.732,-84.864",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955@area@35.867,-84.902",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-6272",
+   "refs": [
+    "US-0686",
+    "US-6272"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Twin Arches State Natural Area"
+   ],
+   "acres": [
+    83327.3,
+    1605.7
+   ],
+   "overlap_acres": 1605.7,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.019,
+    "S3": false,
+    "S3_score": 24.0,
+    "S3_names": [
+     "big south fork",
+     "twin arches"
+    ],
+    "S4": false,
+    "S4_m": 7452,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service",
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0686+US-6272@area@36.539,-84.736",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-6270",
+   "refs": [
+    "US-2955",
+    "US-6270"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Stinging Fork Falls State Natural Area"
+   ],
+   "acres": [
+    42213.2,
+    776.1
+   ],
+   "overlap_acres": 775.8,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.018,
+    "S3": false,
+    "S3_score": 27.8,
+    "S3_names": [
+     "wilson cumberland",
+     "stinging fork falls"
+    ],
+    "S4": false,
+    "S4_m": 53504,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-6270@area@35.719,-84.931",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3924+US-3925",
+   "refs": [
+    "US-3924",
+    "US-3925"
+   ],
+   "names": [
+    "Cedars of Lebanon State Forest",
+    "Vesta Cedar Glade State Natural Area"
+   ],
+   "acres": [
+    9514.0,
+    147.4
+   ],
+   "overlap_acres": 147.3,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.015,
+    "S3": false,
+    "S3_score": 58.1,
+    "S3_names": [
+     "cedars lebanon",
+     "vesta cedar glade"
+    ],
+    "S4": false,
+    "S4_m": 1766,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Division of Forestry",
+      "Tennessee Natural Areas"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3924+US-3925@area@36.077,-86.398",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3960+US-7573",
+   "refs": [
+    "US-3960",
+    "US-7573"
+   ],
+   "names": [
+    "Reelfoot State Wildlife Area",
+    "Black Bayou Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    28018.4,
+    1373.9
+   ],
+   "overlap_acres": 324.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.236,
+    "S2_of_larger": 0.012,
+    "S3": false,
+    "S3_score": 10.5,
+    "S3_names": [
+     "reelfoot",
+     "black bayou"
+    ],
+    "S4": false,
+    "S4_m": 1698,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2971+US-3960+US-7573@area@36.444,-89.385",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3960+US-7573@area@36.445,-89.384",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3960+US-7573@area@36.476,-89.374",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-6242+US-7615",
+   "refs": [
+    "US-6242",
+    "US-7615"
+   ],
+   "names": [
+    "Elsie Quarterman Cedar Glade State Natural Area",
+    "Percy Priest Wildlife Management Area"
+   ],
+   "acres": [
+    189.9,
+    16771.7
+   ],
+   "overlap_acres": 189.9,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.011,
+    "S3": false,
+    "S3_score": 30.0,
+    "S3_names": [
+     "elsie quarterman cedar glade",
+     "percy priest"
+    ],
+    "S4": false,
+    "S4_m": 9494,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Tennessee Natural Areas"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency",
+      "USACOE"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-6242+US-7615@area@36.053,-86.556",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-6260",
+   "refs": [
+    "US-2955",
+    "US-6260"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Piney Falls State Natural Area"
+   ],
+   "acres": [
+    42213.2,
+    437.8
+   ],
+   "overlap_acres": 435.7,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.995,
+    "S2_of_larger": 0.01,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "wilson cumberland",
+     "piney falls"
+    ],
+    "S4": false,
+    "S4_m": 58243,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.725,-84.864",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.727,-84.855",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.731,-84.865",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2939+US-2955+US-6260@area@35.732,-84.864",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-6260@area@35.722,-84.872",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3965+US-7623",
+   "refs": [
+    "US-3965",
+    "US-7623"
+   ],
+   "names": [
+    "White Lake Wildlife Refuge",
+    "Thorny Cypress Wildlife Management Area"
+   ],
+   "acres": [
+    1220.2,
+    3288.5
+   ],
+   "overlap_acres": 28.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.023,
+    "S2_of_larger": 0.009,
+    "S3": false,
+    "S3_score": 10.5,
+    "S3_names": [
+     "white",
+     "thorny cypress"
+    ],
+    "S4": false,
+    "S4_m": 651,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3965+US-7623@area@36.112,-89.566",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3940+US-3963",
+   "refs": [
+    "US-3940",
+    "US-3963"
+   ],
+   "names": [
+    "Gooch Wildlife Management Area",
+    "Three Rivers Wildlife Management Area"
+   ],
+   "acres": [
+    9461.9,
+    1631.2
+   ],
+   "overlap_acres": 58.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.036,
+    "S2_of_larger": 0.006,
+    "S3": false,
+    "S3_score": 11.8,
+    "S3_names": [
+     "gooch",
+     "three rivers"
+    ],
+    "S4": false,
+    "S4_m": 13017,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3940+US-3959+US-3963@area@36.278,-89.059",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-3940+US-3963@area@36.271,-89.087",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3940+US-3963@area@36.275,-89.061",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3940+US-3963@area@36.289,-89.056",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2945+US-3928",
+   "refs": [
+    "US-2945",
+    "US-3928"
+   ],
+   "names": [
+    "Fall Creek Falls State Park",
+    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
+   ],
+   "acres": [
+    29491.4,
+    18579.9
+   ],
+   "overlap_acres": 75.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.004,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 37.5,
+    "S3_names": [
+     "fall creek falls",
+     "bridgestone firestone centennial"
+    ],
+    "S4": false,
+    "S4_m": 26079,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.850,-85.289",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.850,-85.293",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.851,-85.299",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-2945+US-3928@area@35.853,-85.281",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.767,-85.352",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.784,-85.382",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.785,-85.384",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.791,-85.392",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.808,-85.339",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2945+US-3928@area@35.831,-85.357",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.845,-85.349",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.850,-85.290",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.850,-85.293",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.851,-85.299",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2945+US-3928@area@35.853,-85.281",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-6243",
+   "refs": [
+    "US-2955",
+    "US-6243"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Falling Water Falls State Natural Area"
+   ],
+   "acres": [
+    42213.2,
+    135.7
+   ],
+   "overlap_acres": 135.2,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.997,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 27.8,
+    "S3_names": [
+     "wilson cumberland",
+     "falling water falls"
+    ],
+    "S4": false,
+    "S4_m": 13121,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State parks agency (PAD-US 'SPR')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-6243@area@35.187,-85.274",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-13364+US-7598",
+   "refs": [
+    "US-13364",
+    "US-7598"
+   ],
+   "names": [
+    "Cherokee Trail of Tears State Park",
+    "Hiwassee Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    28.2,
+    8555.3
+   ],
+   "overlap_acres": 28.1,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.995,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 27.3,
+    "S3_names": [
+     "cherokee tears",
+     "hiwassee"
+    ],
+    "S4": false,
+    "S4_m": 6218,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "US-2955+US-7609",
+   "refs": [
+    "US-2955",
+    "US-7609"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "North Cumberland Wildlife Management Area"
+   ],
+   "acres": [
+    42213.2,
+    213649.9
+   ],
+   "overlap_acres": 327.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.008,
+    "S2_of_larger": 0.002,
+    "S3": false,
+    "S3_score": 76.9,
+    "S3_names": [
+     "wilson cumberland",
+     "north cumberland"
+    ],
+    "S4": false,
+    "S4_m": 148828,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-7609@area@36.357,-84.176",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.364,-84.166",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.365,-84.164",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.370,-84.156",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.422,-84.075",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.450,-84.050",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2955+US-7609@area@36.492,-83.856",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.504,-83.839",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.504,-83.841",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.505,-83.838",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.533,-83.805",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7609@area@36.545,-83.785",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-13362+US-7598",
+   "refs": [
+    "US-13362",
+    "US-7598"
+   ],
+   "names": [
+    "Chickamauga WMA Wildlife Management Area",
+    "Hiwassee Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    6232.4,
+    8555.3
+   ],
+   "overlap_acres": 20.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.002,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "chickamauga",
+     "hiwassee"
+    ],
+    "S4": false,
+    "S4_m": 8808,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "Tennessee Valley Authority"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-13362+US-7598@area@35.370,-84.909",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-13362+US-7598@area@35.435,-84.992",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-13362+US-7598@area@35.464,-84.970",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-11879+US-3958",
+   "refs": [
+    "US-11879",
+    "US-3958"
+   ],
+   "names": [
+    "North Chickamauga Creek Gorge State Park",
+    "North Chickamauga Creek Wildlife Management Area"
+   ],
+   "acres": [
+    7118.3,
+    3176.4
+   ],
+   "overlap_acres": 6.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.001,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "north chickamauga creek gorge",
+     "north chickamauga creek"
+    ],
+    "S4": false,
+    "S4_m": 7952,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-11879+US-3958@area@35.276,-85.333",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0034+US-6264",
+   "refs": [
+    "US-0034",
+    "US-6264"
+   ],
+   "names": [
+    "Great Smoky Mountains National Park",
+    "Roundtop Mountain State Natural Area"
+   ],
+   "acres": [
+    241081.6,
+    238.8
+   ],
+   "overlap_acres": 238.6,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 52.6,
+    "S3_names": [
+     "great smoky mountains",
+     "roundtop mountain"
+    ],
+    "S4": false,
+    "S4_m": 20088,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0034+US-6264@area@35.691,-83.668",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2957+US-3937",
+   "refs": [
+    "US-2957",
+    "US-3937"
+   ],
+   "names": [
+    "Meeman-Shelby Forest State Park",
+    "Eagle Lake Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    11991.8,
+    3537.0
+   ],
+   "overlap_acres": 6.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "meeman shelby",
+     "eagle"
+    ],
+    "S4": false,
+    "S4_m": 9719,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2957+US-3937@area@35.279,-90.079",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.283,-90.077",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.284,-90.087",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.286,-90.076",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.288,-90.076",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.308,-90.089",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.308,-90.092",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.308,-90.093",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.309,-90.095",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.323,-90.093",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2957+US-3937@area@35.331,-90.083",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-6248",
+   "refs": [
+    "US-0686",
+    "US-6248"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Honey Creek State Natural Area"
+   ],
+   "acres": [
+    83327.3,
+    109.5
+   ],
+   "overlap_acres": 109.5,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 32.0,
+    "S3_names": [
+     "big south fork",
+     "honey creek"
+    ],
+    "S4": false,
+    "S4_m": 7742,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service",
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0686+US-6248@area@36.430,-84.654",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-5500",
+   "refs": [
+    "US-0686",
+    "US-5500"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Scott State Forest"
+   ],
+   "acres": [
+    83327.3,
+    2857.8
+   ],
+   "overlap_acres": 42.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "big south fork",
+     "scott"
+    ],
+    "S4": false,
+    "S4_m": 1355,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service",
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0686+US-5500@area@36.459,-84.703",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.467,-84.700",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0686+US-5500@area@36.470,-84.690",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.471,-84.690",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.474,-84.688",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.480,-84.682",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.483,-84.668",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.483,-84.699",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.484,-84.703",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.486,-84.668",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.488,-84.690",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.491,-84.690",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.492,-84.706",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.493,-84.692",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.493,-84.694",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.494,-84.706",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.496,-84.687",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.496,-84.707",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.497,-84.687",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.498,-84.687",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.499,-84.687",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.499,-84.697",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.500,-84.667",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.500,-84.672",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.500,-84.678",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5500@area@36.500,-84.692",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2980+US-7611",
+   "refs": [
+    "US-2980",
+    "US-7611"
+   ],
+   "names": [
+    "Tims Ford State Park",
+    "Owl Hollow Mill Wildlife Management Area"
+   ],
+   "acres": [
+    3181.7,
+    2457.6
+   ],
+   "overlap_acres": 3.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "tims ford",
+     "owl hollow mill"
+    ],
+    "S4": false,
+    "S4_m": 6182,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Valley Authority"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2980+US-7611@area@35.201,-86.165",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3940+US-3959",
+   "refs": [
+    "US-3940",
+    "US-3959"
+   ],
+   "names": [
+    "Gooch Wildlife Management Area",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    9461.9,
+    9409.7
+   ],
+   "overlap_acres": 9.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "gooch",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 19737,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3940+US-3959+US-3963@area@36.278,-89.059",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-3940+US-3959@area@36.260,-89.050",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3940+US-3959@area@36.273,-89.083",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3940+US-3959@area@36.276,-89.061",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3940+US-3959@area@36.278,-89.059",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3945+US-3959",
+   "refs": [
+    "US-3945",
+    "US-3959"
+   ],
+   "names": [
+    "Hop-in Wildlife Refuge",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    653.2,
+    9409.7
+   ],
+   "overlap_acres": 6.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.01,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 14.3,
+    "S3_names": [
+     "hop",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 1531,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3945+US-3959@area@36.247,-88.977",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-3945+US-3959@area@36.250,-88.983",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3945+US-3959@area@36.253,-88.992",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0703+US-7568",
+   "refs": [
+    "US-0703",
+    "US-7568"
+   ],
+   "names": [
+    "Fort Donelson National Battlefield",
+    "Barkley Wildlife Management Area"
+   ],
+   "acres": [
+    844.6,
+    13808.1
+   ],
+   "overlap_acres": 20.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.024,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 10.0,
+    "S3_names": [
+     "fort donelson",
+     "barkley"
+    ],
+    "S4": false,
+    "S4_m": 3165,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency",
+      "U.S. Army Corps of Engineers"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0703+US-7568@area@36.474,-87.831",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0703+US-7568@area@36.478,-87.828",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0703+US-7568@area@36.488,-87.850",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0703+US-7568@area@36.489,-87.836",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0703+US-7568@area@36.491,-87.847",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0703+US-7568@area@36.491,-87.863",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0703+US-7568@area@36.493,-87.860",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0539+US-2965",
+   "refs": [
+    "US-0539",
+    "US-2965"
+   ],
+   "names": [
+    "Tennessee National Wildlife Refuge",
+    "Paris Landing State Park"
+   ],
+   "acres": [
+    21152.0,
+    798.3
+   ],
+   "overlap_acres": 21.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.026,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 0.0,
+    "S3_names": [
+     "",
+     "paris landing"
+    ],
+    "S4": false,
+    "S4_m": 63620,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Tennessee Valley Authority",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0539+US-2965@area@36.398,-88.102",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0539+US-2965@area@36.401,-88.104",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0539+US-2965@area@36.402,-88.092",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0539+US-2965@area@36.402,-88.095",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0539+US-2965@area@36.402,-88.107",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0019+US-7609",
+   "refs": [
+    "US-0019",
+    "US-7609"
+   ],
+   "names": [
+    "Cumberland Gap National Historical Park",
+    "North Cumberland Wildlife Management Area"
+   ],
+   "acres": [
+    5364.7,
+    213649.9
+   ],
+   "overlap_acres": 97.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.018,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 83.3,
+    "S3_names": [
+     "cumberland gap",
+     "north cumberland"
+    ],
+    "S4": false,
+    "S4_m": 57541,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "US-2952+US-4525",
+   "refs": [
+    "US-2952",
+    "US-4525"
+   ],
+   "names": [
+    "Hiwassee Ocoee State Park",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    143.9,
+    660605.8
+   ],
+   "overlap_acres": 20.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.139,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 45.5,
+    "S3_names": [
+     "hiwassee ocoee",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 20711,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Valley Authority"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2952+US-4525@area@35.082,-84.490",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2952+US-4525@area@35.096,-84.534",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2952+US-4525@area@35.096,-84.547",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2952+US-4525@area@35.099,-84.538",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2952+US-4525@area@35.231,-84.544",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-3959+US-3963",
+   "refs": [
+    "US-3959",
+    "US-3963"
+   ],
+   "names": [
+    "Obion River Wildlife Management Area",
+    "Three Rivers Wildlife Management Area"
+   ],
+   "acres": [
+    9409.7,
+    1631.2
+   ],
+   "overlap_acres": 1.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 43.5,
+    "S3_names": [
+     "obion river",
+     "three rivers"
+    ],
+    "S4": false,
+    "S4_m": 8984,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3940+US-3959+US-3963@area@36.278,-89.059",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-3959+US-3963@area@36.274,-89.080",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3959+US-3963@area@36.278,-89.059",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12663+US-4525",
+   "refs": [
+    "US-12663",
+    "US-4525"
+   ],
+   "names": [
+    "Ocoee River State Park",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    190.0,
+    660605.8
+   ],
+   "overlap_acres": 34.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.18,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 42.1,
+    "S3_names": [
+     "ocoee river",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 3063,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12663+US-4525@area@35.083,-84.490",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-12663+US-4525@area@35.096,-84.534",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-4525@area@35.098,-84.550",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-4525@area@35.099,-84.538",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-4525@area@35.231,-84.544",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0722+US-2930",
+   "refs": [
+    "US-0722",
+    "US-2930"
+   ],
+   "names": [
+    "Shiloh National Battlefield",
+    "Big Hill Pond State Park"
+   ],
+   "acres": [
+    4699.3,
+    5399.7
+   ],
+   "overlap_acres": 0.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 42.1,
+    "S3_names": [
+     "shiloh",
+     "big hill pond"
+    ],
+    "S4": false,
+    "S4_m": 38014,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0722+US-2930@area@35.028,-88.798",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0537+US-2947",
+   "refs": [
+    "US-0537",
+    "US-2947"
+   ],
+   "names": [
+    "Lower Hatchie National Wildlife Refuge",
+    "Fort Pillow State Park"
+   ],
+   "acres": [
+    12352.7,
+    1729.5
+   ],
+   "overlap_acres": 1.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 41.7,
+    "S3_names": [
+     "lower hatchie",
+     "fort pillow"
+    ],
+    "S4": false,
+    "S4_m": 6563,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0537+US-2947@area@35.616,-89.885",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0537+US-2947@area@35.618,-89.877",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-4525+US-6246",
+   "refs": [
+    "US-4525",
+    "US-6246"
+   ],
+   "names": [
+    "Cherokee National Forest",
+    "Hampton Creek Cove State Natural Area"
+   ],
+   "acres": [
+    660605.8,
+    704.5
+   ],
+   "overlap_acres": 18.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.026,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 38.5,
+    "S3_names": [
+     "cherokee",
+     "hampton creek cove"
+    ],
+    "S4": false,
+    "S4_m": 249038,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "Tennessee Natural Areas"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4525+US-6246@area@36.129,-82.045",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-6246@area@36.130,-82.037",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-6246@area@36.141,-82.035",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2947+US-3948",
+   "refs": [
+    "US-2947",
+    "US-3948"
+   ],
+   "names": [
+    "Fort Pillow State Park",
+    "John Tully Wildlife Management Area"
+   ],
+   "acres": [
+    1729.5,
+    15531.2
+   ],
+   "overlap_acres": 1.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 38.1,
+    "S3_names": [
+     "fort pillow",
+     "john tully"
+    ],
+    "S4": false,
+    "S4_m": 951,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2947+US-3948@area@35.647,-89.834",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12361+US-5490",
+   "refs": [
+    "US-12361",
+    "US-5490"
+   ],
+   "names": [
+    "Scott's Gulf Wilderness State Park",
+    "Bledsoe State Forest"
+   ],
+   "acres": [
+    10182.6,
+    8385.5
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "scotts gulf",
+     "bledsoe"
+    ],
+    "S4": false,
+    "S4_m": 14881,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12361+US-3928+US-5490@area@35.801,-85.272",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-3928+US-5490@area@35.811,-85.265",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-5490@area@35.801,-85.273",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-12361+US-5490@area@35.805,-85.273",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-5490@area@35.810,-85.266",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-5490@area@35.811,-85.265",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2974+US-4525",
+   "refs": [
+    "US-2974",
+    "US-4525"
+   ],
+   "names": [
+    "Rocky Fork State Park",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    2202.3,
+    660605.8
+   ],
+   "overlap_acres": 23.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.011,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "rocky fork",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 202605,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2974+US-4525@area@36.075,-82.566",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-7599",
+   "refs": [
+    "US-2955",
+    "US-7599"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Keyes-Harrison Wildlife Management Area"
+   ],
+   "acres": [
+    42213.2,
+    1740.2
+   ],
+   "overlap_acres": 4.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 32.3,
+    "S3_names": [
+     "wilson cumberland",
+     "keyes harrison"
+    ],
+    "S4": false,
+    "S4_m": 86486,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-7599@area@35.976,-84.838",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7599@area@35.978,-84.858",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2955+US-7599@area@35.979,-84.851",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2955+US-7599@area@35.982,-84.841",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2955+US-7599@area@35.988,-84.849",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-5499",
+   "refs": [
+    "US-2955",
+    "US-5499"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Prentice Cooper State Forest"
+   ],
+   "acres": [
+    42213.2,
+    26079.8
+   ],
+   "overlap_acres": 2.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 31.2,
+    "S3_names": [
+     "wilson cumberland",
+     "prentice cooper"
+    ],
+    "S4": false,
+    "S4_m": 26421,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-5499@area@35.130,-85.364",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2955+US-3971",
+   "refs": [
+    "US-2955",
+    "US-3971"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "Prentice Cooper Wildlife Management Area"
+   ],
+   "acres": [
+    42213.2,
+    28013.7
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 31.2,
+    "S3_names": [
+     "wilson cumberland",
+     "prentice cooper"
+    ],
+    "S4": false,
+    "S4_m": 26428,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency",
+      "TDA"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-3971@area@35.131,-85.362",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3928+US-5490",
+   "refs": [
+    "US-3928",
+    "US-5490"
+   ],
+   "names": [
+    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area",
+    "Bledsoe State Forest"
+   ],
+   "acres": [
+    18579.9,
+    8385.5
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.8,
+    "S3_names": [
+     "bridgestone firestone centennial",
+     "bledsoe"
+    ],
+    "S4": false,
+    "S4_m": 17517,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12361+US-3928+US-5490@area@35.801,-85.272",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12361+US-3928+US-5490@area@35.811,-85.265",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3928+US-5490@area@35.807,-85.272",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3928+US-5490@area@35.811,-85.265",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-3931+US-5496",
+   "refs": [
+    "US-3931",
+    "US-5496"
+   ],
+   "names": [
+    "Catoosa Wildlife Management Area",
+    "Lone Mountain State Forest"
+   ],
+   "acres": [
+    79846.5,
+    3572.0
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 30.0,
+    "S3_names": [
+     "catoosa",
+     "lone mountain"
+    ],
+    "S4": false,
+    "S4_m": 20119,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3931+US-5496@area@36.058,-84.599",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2948+US-7609",
+   "refs": [
+    "US-2948",
+    "US-7609"
+   ],
+   "names": [
+    "Frozen Head State Park",
+    "North Cumberland Wildlife Management Area"
+   ],
+   "acres": [
+    42395.6,
+    213649.9
+   ],
+   "overlap_acres": 63.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.6,
+    "S3_names": [
+     "frozen head",
+     "north cumberland"
+    ],
+    "S4": false,
+    "S4_m": 36372,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2948+US-7609@area@36.125,-84.421",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2948+US-7609@area@36.214,-84.527",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-12774+US-4525",
+   "refs": [
+    "US-12774",
+    "US-4525"
+   ],
+   "names": [
+    "Erwin National Fish Hatchery",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    42.5,
+    660605.8
+   ],
+   "overlap_acres": 0.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.012,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.6,
+    "S3_names": [
+     "erwin fish hatchery",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 224032,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-12774+US-4525@area@36.164,-82.388",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0686+US-5498",
+   "refs": [
+    "US-0686",
+    "US-5498"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Pickett State Forest"
+   ],
+   "acres": [
+    83327.3,
+    24612.0
+   ],
+   "overlap_acres": 30.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "big south fork",
+     "pickett"
+    ],
+    "S4": false,
+    "S4_m": 13308,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service",
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0686+US-5498@area@36.528,-84.798",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5498@area@36.528,-84.803",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0686+US-5498@area@36.545,-84.785",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0686+US-5498@area@36.577,-84.766",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0034+US-7588",
+   "refs": [
+    "US-0034",
+    "US-7588"
+   ],
+   "names": [
+    "Great Smoky Mountains National Park",
+    "Foothills Wildlife Management Area"
+   ],
+   "acres": [
+    241081.6,
+    9258.3
+   ],
+   "overlap_acres": 26.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.7,
+    "S3_names": [
+     "great smoky mountains",
+     "foothills"
+    ],
+    "S4": false,
+    "S4_m": 53038,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0034+US-7588@area@35.477,-83.922",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.478,-83.925",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.480,-83.933",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.484,-83.932",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.488,-83.932",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.491,-83.929",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.494,-83.928",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.496,-83.927",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.496,-83.934",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.497,-83.931",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.499,-83.935",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.499,-83.942",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.500,-83.949",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.501,-83.943",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.502,-83.949",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.504,-83.958",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.504,-83.973",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.506,-83.948",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.507,-83.965",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.508,-83.950",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.508,-83.954",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.559,-84.011",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.577,-84.005",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.588,-83.995",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.590,-83.978",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.595,-83.976",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.599,-83.987",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-7588@area@35.628,-83.957",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-4525+US-7622",
+   "refs": [
+    "US-4525",
+    "US-7622"
+   ],
+   "names": [
+    "Cherokee National Forest",
+    "Tellico Lake Wildlife Management Area"
+   ],
+   "acres": [
+    660605.8,
+    6475.1
+   ],
+   "overlap_acres": 0.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.7,
+    "S3_names": [
+     "cherokee",
+     "tellico"
+    ],
+    "S4": false,
+    "S4_m": 61427,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Valley Authority"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4525+US-7622@area@35.534,-84.105",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-7622@area@35.537,-84.150",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-7622@area@35.541,-84.132",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0537+US-5494",
+   "refs": [
+    "US-0537",
+    "US-5494"
+   ],
+   "names": [
+    "Lower Hatchie National Wildlife Refuge",
+    "John Tully State Forest"
+   ],
+   "acres": [
+    12352.7,
+    2148.1
+   ],
+   "overlap_acres": 3.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "lower hatchie",
+     "john tully"
+    ],
+    "S4": false,
+    "S4_m": 10186,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0537+US-3948+US-5494@area@35.659,-89.790",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0537+US-5494@area@35.658,-89.790",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-12714+US-5493",
+   "refs": [
+    "US-12714",
+    "US-5493"
+   ],
+   "names": [
+    "Head of the Crow State Park",
+    "Franklin-Marion State Forest"
+   ],
+   "acres": [
+    5541.8,
+    8824.8
+   ],
+   "overlap_acres": 0.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "head crow",
+     "franklin marion"
+    ],
+    "S4": false,
+    "S4_m": 9082,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-11918+US-12714+US-5493@area@35.096,-85.886",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12714+US-5493@area@35.077,-85.896",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-12714+US-5493@area@35.121,-85.891",
+     "kind": "area",
+     "live": false
+    }
+   ],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "US-2955+US-3958",
+   "refs": [
+    "US-2955",
+    "US-3958"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "North Chickamauga Creek Wildlife Management Area"
+   ],
+   "acres": [
+    42213.2,
+    3176.4
+   ],
+   "overlap_acres": 6.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "wilson cumberland",
+     "north chickamauga creek"
+    ],
+    "S4": false,
+    "S4_m": 13168,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2955+US-3958@area@35.278,-85.332",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3792+US-7568",
+   "refs": [
+    "US-3792",
+    "US-7568"
+   ],
+   "names": [
+    "Land Between the Lakes National Recreation Area",
+    "Barkley Wildlife Management Area"
+   ],
+   "acres": [
+    121446.7,
+    13808.1
+   ],
+   "overlap_acres": 33.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "land between",
+     "barkley"
+    ],
+    "S4": false,
+    "S4_m": 35894,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "State fish and wildlife agency",
+      "U.S. Army Corps of Engineers"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3792+US-7568@area@36.558,-87.907",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3792+US-7568@area@36.567,-87.921",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-0034+US-4525",
+   "refs": [
+    "US-0034",
+    "US-4525"
+   ],
+   "names": [
+    "Great Smoky Mountains National Park",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    241081.6,
+    660605.8
+   ],
+   "overlap_acres": 61.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 20.7,
+    "S3_names": [
+     "great smoky mountains",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 110563,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0034+US-4525+US-6936@area@35.771,-83.111",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-4525+US-6937@area@35.771,-83.111",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-4525@area@35.773,-83.111",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0034+US-4525@area@35.821,-83.212",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0034+US-4525@area@35.825,-83.202",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-2976+US-5498",
+   "refs": [
+    "US-2976",
+    "US-5498"
+   ],
+   "names": [
+    "Sgt. Alvin C. York State Park",
+    "Pickett State Forest"
+   ],
+   "acres": [
+    354.5,
+    24612.0
+   ],
+   "overlap_acres": 8.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.025,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 19.0,
+    "S3_names": [
+     "sgt alvin york",
+     "pickett"
+    ],
+    "S4": false,
+    "S4_m": 14195,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2976+US-5498@area@36.560,-84.930",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-2972+US-4525",
+   "refs": [
+    "US-2972",
+    "US-4525"
+   ],
+   "names": [
+    "Roan Mountain State Park",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    2248.0,
+    660605.8
+   ],
+   "overlap_acres": 102.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.045,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 19.0,
+    "S3_names": [
+     "roan mountain",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 246447,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-2972+US-4525@area@36.189,-82.118",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-3953+US-3959",
+   "refs": [
+    "US-3953",
+    "US-3959"
+   ],
+   "names": [
+    "Maness Swamp State Wildlife Area",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    1248.1,
+    9409.7
+   ],
+   "overlap_acres": 1.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 17.4,
+    "S3_names": [
+     "maness swamp",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 7890,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-3953+US-3959@area@36.185,-88.918",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-3953+US-3959@area@36.188,-88.910",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-0685+US-3931",
+   "refs": [
+    "US-0685",
+    "US-3931"
+   ],
+   "names": [
+    "Obed National Wild and Scenic River",
+    "Catoosa Wildlife Management Area"
+   ],
+   "acres": [
+    3160.3,
+    79846.5
+   ],
+   "overlap_acres": 27.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.009,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 9.1,
+    "S3_names": [
+     "obed wild river",
+     "catoosa"
+    ],
+    "S4": false,
+    "S4_m": 7969,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-0685+US-3931@area@36.071,-84.666",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.076,-84.788",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.080,-84.774",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-0685+US-3931@area@36.081,-84.672",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.081,-84.766",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.085,-84.677",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.085,-84.679",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.085,-84.683",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.085,-84.789",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.086,-84.790",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.087,-84.716",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.088,-84.800",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.089,-84.685",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.089,-84.703",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.091,-84.798",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.093,-84.823",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.096,-84.693",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.096,-84.828",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.138,-84.877",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.142,-84.880",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@36.146,-84.883",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-0685+US-3931@area@channel@36.079,-84.765",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-4525+US-5497",
+   "refs": [
+    "US-4525",
+    "US-5497"
+   ],
+   "names": [
+    "Cherokee National Forest",
+    "Martha Sundquist State Forest"
+   ],
+   "acres": [
+    660605.8,
+    2001.0
+   ],
+   "overlap_acres": 12.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.006,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 8.3,
+    "S3_names": [
+     "cherokee",
+     "martha sundquist"
+    ],
+    "S4": false,
+    "S4_m": 153523,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "Tennessee Division of Forestry"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4525+US-5497@area@35.789,-83.013",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.791,-83.007",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.793,-83.016",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.793,-83.021",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.793,-83.025",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.795,-83.002",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.795,-83.004",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.795,-83.028",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.795,-83.032",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.797,-83.001",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.799,-83.045",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.802,-83.001",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.804,-83.002",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.806,-83.048",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.808,-83.031",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.810,-82.998",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.810,-82.999",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.811,-82.997",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.811,-83.034",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.812,-83.027",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.812,-83.031",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.813,-83.039",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-4525+US-5497@area@35.816,-83.013",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  }
+ ],
+ "club_same_land_rows": [
+  {
+   "fer_id": "US-0538+US-2971@same land@36.419,-89.368",
+   "refs": [
+    "US-0538",
+    "US-2971"
+   ],
+   "live": false,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-0538+US-2971@same land@36.419,-89.368",
+   "refs": [
+    "US-0538",
+    "US-2971"
+   ],
+   "live": false,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-0538+US-3960@same land@36.427,-89.420",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "live": true,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-0538+US-3960@same land@36.427,-89.420",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-0538+US-3960@same land@36.427,-89.420",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-11879+US-2955@same land@35.253,-85.285",
+   "refs": [
+    "US-11879",
+    "US-2955"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-12663+US-2952@same land@35.234,-84.548",
+   "refs": [
+    "US-12663",
+    "US-2952"
+   ],
+   "live": false,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-12663+US-2952@same land@35.234,-84.548",
+   "refs": [
+    "US-12663",
+    "US-2952"
+   ],
+   "live": false,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-12663+US-2952@same land@35.234,-84.548",
+   "refs": [
+    "US-12663",
+    "US-2952"
+   ],
+   "live": false,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2935+US-3924@same land@36.095,-86.385",
+   "refs": [
+    "US-2935",
+    "US-3924"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2936+US-3934@same land@35.371,-88.820",
+   "refs": [
+    "US-2936",
+    "US-3934"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2936+US-5491@same land@35.344,-88.787",
+   "refs": [
+    "US-2936",
+    "US-5491"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2937+US-7580@same land@36.302,-85.813",
+   "refs": [
+    "US-2937",
+    "US-7580"
+   ],
+   "live": false,
+   "tool_verdict": "NOT FOUND OVERLAPPING"
+  },
+  {
+   "fer_id": "US-2937+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-2937",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "NOT FOUND OVERLAPPING"
+  },
+  {
+   "fer_id": "US-2961+US-3957@same land@35.837,-88.264",
+   "refs": [
+    "US-2961",
+    "US-3957"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2966+US-5498@same land@36.559,-84.793",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2966+US-5498@same land@36.559,-84.793",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "live": false,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-2978+US-5501@same land@36.464,-85.412",
+   "refs": [
+    "US-2978",
+    "US-5501"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-3934+US-5491@same land@35.344,-88.787",
+   "refs": [
+    "US-3934",
+    "US-5491"
+   ],
+   "live": true,
+   "tool_verdict": "CHECK"
+  },
+  {
+   "fer_id": "US-3969+US-6245@same land@35.033,-89.293",
+   "refs": [
+    "US-3969",
+    "US-6245"
+   ],
+   "live": true,
+   "tool_verdict": "NOT SAME"
+  },
+  {
+   "fer_id": "US-3971+US-5499@same land@35.057,-85.429",
+   "refs": [
+    "US-3971",
+    "US-5499"
+   ],
+   "live": true,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": true,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  },
+  {
+   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "live": false,
+   "tool_verdict": "SAME LAND: likely"
+  }
+ ]
+}

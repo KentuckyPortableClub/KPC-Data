@@ -1,0 +1,52 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.620354069399106,
+       44.84256401383481
+      ],
+      [
+       -62.6199017595687,
+       44.8420952062228
+      ],
+      [
+       -62.6195987272806,
+       44.841535972139404
+      ],
+      [
+       -62.620354069399106,
+       44.84256401383481
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "ref": "CA-1867",
+    "name": "Spry Bay Provincial Park",
+    "grade": "approximate (agency parcels)",
+    "owner": "NS DEPARTMENT OF NATURAL RESOURCES",
+    "parcel_ids": [
+     "40750465"
+    ],
+    "n_parcels": 1,
+    "acres": 0.12,
+    "source_url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Government_Owned_Properties/FeatureServer/0/query",
+    "read_date": "2026-11-02",
+    "layer_url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Government_Owned_Properties/FeatureServer/0",
+    "pin_dist_m": 4.2,
+    "known_acres": null,
+    "known_acres_source": "no official size: not in the official acres list and no round-14 figure",
+    "size_ratio": null,
+    "acres_check": null,
+    "utm_epsg": 32620,
+    "excluded_other_park": []
+   }
+  }
+ ]
+}

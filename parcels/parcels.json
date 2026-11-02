@@ -1,0 +1,350 @@
+{
+ "TEST-KY-01": {
+  "county": "Jefferson County, KY (21111)",
+  "layer_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Metro_Owned_Parcels202301/FeatureServer/0",
+  "owner": "LOUISVILLE METRO PARKS",
+  "owner_type": "government",
+  "parcel_id": "074A00160000",
+  "acres": 388.36,
+  "same_owner_parcels": [],
+  "why": "parcel layer found by searching ArcGIS Online for \"Jefferson County parcels\": \"Metro_Owned_Parcels202301\" (published by \"Louisville/Jefferson County Information Consortium\"); asked at the pin (plain); parcel 074A00160000; owner type government because the owner name says \"METRO\"; acres: the county map's Acres field.",
+  "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Metro_Owned_Parcels202301/FeatureServer/0/query",
+  "read_date": "2026-11-01"
+ },
+ "TEST-KY-02": {
+  "county": "Fayette County, KY (21067)",
+  "layer_url": "https://services1.arcgis.com/Mg7DLdfYcSWIaDnu/arcgis/rest/services/Parcel/FeatureServer/0",
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": "38061630",
+  "acres": 15.25,
+  "same_owner_parcels": [],
+  "why": "parcel layer found by searching ArcGIS Online for \"Fayette County parcels\": \"Parcel\" (published by \"Lexington-Fayette Urban County Government\"); asked at the pin (plain); parcel 38061630; owner type unknown because this county map has no owner field; acres: the county map's PVA_ACRE field.",
+  "source_url": "https://services1.arcgis.com/Mg7DLdfYcSWIaDnu/arcgis/rest/services/Parcel/FeatureServer/0/query",
+  "read_date": "2026-11-01"
+ },
+ "TEST-KY-03": {
+  "county": "Warren County, KY (21227)",
+  "layer_url": null,
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": null,
+  "acres": null,
+  "same_owner_parcels": [],
+  "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?geometry=-86.46398%2C37.01082&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=GEOID%2CNAME%2CSTATE%2CBASENAME&returnGeometry=false&f=json",
+  "read_date": "2026-11-01",
+  "why": "no government parcel layer found for this county: skipped by club decision (Oct 31) until a real parcel layer turns up: the only layers found for Warren County, KY are a zoning layer (zoning is not ownership) and a building damage-assessment form layer. Give a real parcel layer with --known to use one."
+ },
+ "TEST-KY-04": {
+  "county": "Daviess County, KY (21059)",
+  "layer_url": null,
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": null,
+  "acres": null,
+  "same_owner_parcels": [],
+  "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?geometry=-87.1977%2C37.79174&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=GEOID%2CNAME%2CSTATE%2CBASENAME&returnGeometry=false&f=json",
+  "read_date": "2026-11-01",
+  "why": "no government parcel layer found for this county: searched ArcGIS Online (1 government candidate(s) covering the pin, 2 government server(s) listed); https://gisdata.in.gov/server/rest/services/Hosted/Parcel_Boundaries_of_Indiana_Current/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Town_Parcels/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Johnson_County_Parcels/FeatureServer/0: no parcel under the pin; https://services7.arcgis.com/wT31p93Iwgt6BVWn/arcgis/rest/services/Bartholomew_Parcels/FeatureServer/0: no parcel under the pin."
+ },
+ "TEST-KY-05": {
+  "county": "Calloway County, KY (21035)",
+  "layer_url": null,
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": null,
+  "acres": null,
+  "same_owner_parcels": [],
+  "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?geometry=-88.30995%2C36.6227&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=GEOID%2CNAME%2CSTATE%2CBASENAME&returnGeometry=false&f=json",
+  "read_date": "2026-11-01",
+  "why": "no government parcel layer found for this county: searched ArcGIS Online (0 government candidate(s) covering the pin, 0 government server(s) listed); none answered."
+ },
+ "TEST-KY-06": {
+  "county": "Franklin County, KY (21073)",
+  "layer_url": null,
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": null,
+  "acres": null,
+  "same_owner_parcels": [],
+  "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?geometry=-84.88906%2C38.18702&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=GEOID%2CNAME%2CSTATE%2CBASENAME&returnGeometry=false&f=json",
+  "read_date": "2026-11-01",
+  "why": "no government parcel layer found for this county: searched ArcGIS Online (1 government candidate(s) covering the pin, 1 government server(s) listed); https://gisdata.in.gov/server/rest/services/Hosted/Parcel_Boundaries_of_Indiana_Current/FeatureServer/0: no parcel under the pin."
+ },
+ "TEST-KY-07": {
+  "county": "Hardin County, KY (21093)",
+  "layer_url": "https://services1.arcgis.com/fYwcHOBzInDTQxh0/arcgis/rest/services/Hardin_Parcels_08_11_22/FeatureServer/0",
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": null,
+  "acres": 13.08,
+  "same_owner_parcels": [],
+  "why": "parcel layer found by searching ArcGIS Online for \"Hardin County parcels\": \"Hardin County Parcels 23\" (published by \"Hardin County Online GIS\"); asked at the pin (plain); parcel (no id field); owner type unknown because this county map has no owner field; acres: the county map's ACRES field.",
+  "source_url": "https://services1.arcgis.com/fYwcHOBzInDTQxh0/arcgis/rest/services/Hardin_Parcels_08_11_22/FeatureServer/0/query",
+  "read_date": "2026-11-01"
+ },
+ "TEST-KY-08": {
+  "county": "Kenton County, KY (21117)",
+  "layer_url": "https://maps.linkgis.org/server/rest/services/CC_KC_PCTheme/MapServer/15",
+  "owner": "COVINGTON CITY OF (DEVOU PARK)",
+  "owner_type": "government",
+  "parcel_id": "040-20-00-001.00",
+  "acres": 647.33,
+  "same_owner_parcels": [],
+  "why": "parcel layer found by searching ArcGIS Online for \"Kenton County parcels\": \"Parcels - KY - Kenton County\" (government host maps.linkgis.org); asked at the pin (plain); parcel 040-20-00-001.00; owner type government because the owner name says \"CITY OF\"; acres: the county map's ACREAGE field.",
+  "source_url": "https://maps.linkgis.org/server/rest/services/CC_KC_PCTheme/MapServer/15/query",
+  "read_date": "2026-11-01"
+ },
+ "TEST-KY-09": {
+  "county": "Boyd County, KY (21019)",
+  "layer_url": null,
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": null,
+  "acres": null,
+  "same_owner_parcels": [],
+  "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?geometry=-82.63682%2C38.47178&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=GEOID%2CNAME%2CSTATE%2CBASENAME&returnGeometry=false&f=json",
+  "read_date": "2026-11-01",
+  "why": "no government parcel layer found for this county: searched ArcGIS Online (0 government candidate(s) covering the pin, 0 government server(s) listed); none answered."
+ },
+ "TEST-KY-10": {
+  "county": "Henderson County, KY (21101)",
+  "layer_url": "https://services.arcgis.com/Iwwqwcdc5CWG2jt9/arcgis/rest/services/Parcels_231110/FeatureServer/0",
+  "owner": null,
+  "owner_type": "unknown",
+  "parcel_id": "1-12-1-1",
+  "acres": 126.96,
+  "same_owner_parcels": [],
+  "why": "parcel layer found by searching ArcGIS Online for \"Henderson County parcels\": \"Parcels_231110\" (published by the organisation \"Henderson KY GIS\", named after this county / town); asked at the pin (plain); parcel 1-12-1-1; owner type unknown because this county map has no owner field; acres: the county map's GIS_ACRES field.",
+  "source_url": "https://services.arcgis.com/Iwwqwcdc5CWG2jt9/arcgis/rest/services/Parcels_231110/FeatureServer/0/query",
+  "read_date": "2026-11-01"
+ },
+ "US-3500": {
+  "county": "Grimes County, TX (48185)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "12345",
+  "acres": 1.37,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "70529",
+    "acres": 4.58,
+    "dist_m": 36
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 12345; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 1 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6543": {
+  "county": "Cherokee County, TX (48073)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "100610000",
+  "acres": 71.73,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "100612100",
+    "acres": 25.27,
+    "dist_m": 333
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 100610000; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 1 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6546": {
+  "county": "Bexar County, TX (48029)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "525048",
+  "acres": 0.39,
+  "same_owner_parcels": [],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 525048; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6557": {
+  "county": "Shackelford County, TX (48417)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "private",
+  "owner_type": "private",
+  "parcel_id": "10660",
+  "acres": 303.3,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "10661",
+    "acres": 1.0,
+    "dist_m": 755
+   },
+   {
+    "parcel_id": "10665",
+    "acres": 30.53,
+    "dist_m": 806
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 10660; owner type private because the owner name says \"PROPERTIES\" and has no government word; acres: worked out from the parcel outline; 2 more parcel(s) with the same owner name within 1 km. The owner is written only as \"private\" (club rule 9: no names of private owners).",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01",
+  "owner_withheld": true
+ },
+ "US-6559": {
+  "county": "Menard County, TX (48327)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "1160",
+  "acres": 44.78,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "1162",
+    "acres": 2.14,
+    "dist_m": 261
+   },
+   {
+    "parcel_id": "622",
+    "acres": 33.53,
+    "dist_m": 268
+   },
+   {
+    "parcel_id": "35681",
+    "acres": 0.15,
+    "dist_m": 525
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 1160; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 3 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6560": {
+  "county": "Travis County, TX (48453)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "STATE OF TEXAS",
+  "owner_type": "government",
+  "parcel_id": "194697",
+  "acres": 2.07,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "767258",
+    "acres": 0.02,
+    "dist_m": 219
+   },
+   {
+    "parcel_id": "197011",
+    "acres": 0.79,
+    "dist_m": 882
+   },
+   {
+    "parcel_id": "197009",
+    "acres": 0.37,
+    "dist_m": 922
+   },
+   {
+    "parcel_id": "198333",
+    "acres": 0.11,
+    "dist_m": 951
+   },
+   {
+    "parcel_id": "198332",
+    "acres": 0.11,
+    "dist_m": 955
+   },
+   {
+    "parcel_id": "198331",
+    "acres": 0.16,
+    "dist_m": 959
+   },
+   {
+    "parcel_id": "197022",
+    "acres": 2.2,
+    "dist_m": 978
+   },
+   {
+    "parcel_id": "198323",
+    "acres": 0.19,
+    "dist_m": 984
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 194697; owner type government because the owner name says \"STATE OF\"; acres: worked out from the parcel outline; 8 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6561": {
+  "county": "Aransas County, TX (48007)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "70410",
+  "acres": 2.76,
+  "same_owner_parcels": [],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 70410; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6577": {
+  "county": "El Paso County, TX (48141)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS PARKS & WILDLIFE DEPT",
+  "owner_type": "government",
+  "parcel_id": "55650",
+  "acres": 1.53,
+  "same_owner_parcels": [],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 55650; owner type government because the owner name says \"DEPT\"; acres: worked out from the parcel outline.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6601": {
+  "county": "Fannin County, TX (48147)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "75915",
+  "acres": 1.89,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "72288",
+    "acres": 1.73,
+    "dist_m": 93
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 75915; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 1 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ },
+ "US-6607": {
+  "county": "Brazoria County, TX (48039)",
+  "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "owner": "TEXAS HISTORICAL COMMISSION",
+  "owner_type": "government",
+  "parcel_id": "161200",
+  "acres": 5.23,
+  "same_owner_parcels": [
+   {
+    "parcel_id": "161154",
+    "acres": 0.81,
+    "dist_m": 82
+   },
+   {
+    "parcel_id": "161153",
+    "acres": 134.83,
+    "dist_m": 233
+   },
+   {
+    "parcel_id": "161215",
+    "acres": 52.89,
+    "dist_m": 331
+   },
+   {
+    "parcel_id": "161214",
+    "acres": 13.84,
+    "dist_m": 372
+   }
+  ],
+  "why": "parcel layer = Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); asked at the pin (identify); parcel 161200; owner type government because the owner name says \"HISTORICAL COMMISSION\"; acres: worked out from the parcel outline; 4 more parcel(s) with the same owner name within 1 km.",
+  "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/identify",
+  "read_date": "2026-11-01"
+ }
+}

@@ -1,0 +1,1437 @@
+{
+ "about": "KPC 13 same-land questions for the checker (chat 11). answer = YES / NO / NOT SURE. Nothing is relabelled until a person answers.",
+ "built": "2026-11-01",
+ "open": 45,
+ "questions": [
+  {
+   "id": "US-10139+US-4526",
+   "area": "US-KY",
+   "refs": [
+    "US-10139",
+    "US-4526"
+   ],
+   "names": [
+    "Jefferson National Forest Wildlife Management Area",
+    "George Washington & Jefferson National Forest"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-10139+US-4526@same land@37.093,-82.733",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-0703+US-3790",
+   "area": "US-KY",
+   "refs": [
+    "US-0703",
+    "US-3790"
+   ],
+   "names": [
+    "Fort Donelson National Battlefield",
+    "Fort Heiman National Battlefield"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-0703+US-3790@same land@36.503,-88.061",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-10112+US-7966",
+   "area": "US-KY",
+   "refs": [
+    "US-10112",
+    "US-7966"
+   ],
+   "names": [
+    "Bad Branch National Wild and Scenic River",
+    "Bad Branch State Nature Preserve"
+   ],
+   "verdict": "CHECK",
+   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines only partly overlap: a person should look.",
+   "tests": {
+    "S1": null,
+    "S2": "PART OVERLAP",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-10112+US-7966@area@37.089,-82.767",
+     "kind": "area",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-3933+US-7578",
+   "area": "US-TN",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "names": [
+    "Cheatham Wildlife Management Area",
+    "Cheatham Lake Wildlife Management Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-3933+US-7578@same land@36.289,-87.115",
+     "kind": "same land",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-7580+US-7581",
+   "area": "US-TN",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "names": [
+    "Cordell Hull Wildlife Management Area",
+    "Cordell Hull Waterfowl Refuge Wildlife Management Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": true
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-7580+US-7581@same land@36.302,-85.813",
+     "kind": "same land",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-3971+US-5499",
+   "area": "US-TN",
+   "refs": [
+    "US-3971",
+    "US-5499"
+   ],
+   "names": [
+    "Prentice Cooper Wildlife Management Area",
+    "Prentice Cooper State Forest"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-3971+US-5499@same land@35.057,-85.429",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-0538+US-3960",
+   "area": "US-TN",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot State Wildlife Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-0538+US-3960@same land@36.427,-89.420",
+     "kind": "same land",
+     "live": true
+    },
+    {
+     "id": "US-0538+US-3960@same land@36.427,-89.420",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-0538+US-3960@same land@36.427,-89.420",
+     "kind": "same land",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-3934+US-5491",
+   "area": "US-TN",
+   "refs": [
+    "US-3934",
+    "US-5491"
+   ],
+   "names": [
+    "Chickasaw State Wildlife Area",
+    "Chickasaw State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-3934+US-5491@same land@35.344,-88.787",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-3935+US-5492",
+   "area": "US-TN",
+   "refs": [
+    "US-3935",
+    "US-5492"
+   ],
+   "names": [
+    "Chuck Swan Wildlife Management Area",
+    "Chuck Swan State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "tests": {
+    "S1": null,
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-3935+US-5492@area@36.335,-83.924",
+     "kind": "area",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-0538+US-2971",
+   "area": "US-TN",
+   "refs": [
+    "US-0538",
+    "US-2971"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot Lake State Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "ONE INSIDE THE OTHER",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-0538+US-2971@same land@36.419,-89.368",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-0538+US-2971@same land@36.419,-89.368",
+     "kind": "same land",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-12663+US-2952",
+   "area": "US-TN",
+   "refs": [
+    "US-12663",
+    "US-2952"
+   ],
+   "names": [
+    "Ocoee River State Park",
+    "Hiwassee Ocoee State Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "ONE INSIDE THE OTHER",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-12663+US-2952@same land@35.234,-84.548",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-2952@same land@35.234,-84.548",
+     "kind": "same land",
+     "live": false
+    },
+    {
+     "id": "US-12663+US-2952@same land@35.234,-84.548",
+     "kind": "same land",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2971+US-3960",
+   "area": "US-TN",
+   "refs": [
+    "US-2971",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot Lake State Park",
+    "Reelfoot State Wildlife Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "ONE INSIDE THE OTHER",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-2971+US-3960+US-7573@area@36.444,-89.385",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-2971+US-3960@area@36.370,-89.413",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-2971+US-3960@area@36.411,-89.204",
+     "kind": "area",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2935+US-3924",
+   "area": "US-TN",
+   "refs": [
+    "US-2935",
+    "US-3924"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Cedars of Lebanon State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "PART OVERLAP",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-2935+US-3924@same land@36.095,-86.385",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2966+US-5498",
+   "area": "US-TN",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "names": [
+    "Pickett State Park",
+    "Pickett State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "PART OVERLAP",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-2966+US-5498@same land@36.559,-84.793",
+     "kind": "same land",
+     "live": true
+    },
+    {
+     "id": "US-2966+US-5498@same land@36.559,-84.793",
+     "kind": "same land",
+     "live": false
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2961+US-3957",
+   "area": "US-TN",
+   "refs": [
+    "US-2961",
+    "US-3957"
+   ],
+   "names": [
+    "Natchez Trace State Park",
+    "Natchez Trace State Forest Wildlife Management Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-2961+US-3957@same land@35.837,-88.264",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-11879+US-2955",
+   "area": "US-TN",
+   "refs": [
+    "US-11879",
+    "US-2955"
+   ],
+   "names": [
+    "North Chickamauga Creek Gorge State Park",
+    "Wilson Cumberland Trail State Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-11879+US-2955@same land@35.253,-85.285",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2978+US-5501",
+   "area": "US-TN",
+   "refs": [
+    "US-2978",
+    "US-5501"
+   ],
+   "names": [
+    "Standing Stone State Park",
+    "Standing Stone State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-2978+US-5501@same land@36.464,-85.412",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2936+US-5491",
+   "area": "US-TN",
+   "refs": [
+    "US-2936",
+    "US-5491"
+   ],
+   "names": [
+    "Chickasaw State Park",
+    "Chickasaw State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-2936+US-5491@same land@35.344,-88.787",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-2936+US-3934",
+   "area": "US-TN",
+   "refs": [
+    "US-2936",
+    "US-3934"
+   ],
+   "names": [
+    "Chickasaw State Park",
+    "Chickasaw State Wildlife Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "different"
+   },
+   "fers": [
+    {
+     "id": "US-2936+US-3934@same land@35.371,-88.820",
+     "kind": "same land",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "US-6266+US-9718",
+   "area": "US-TN",
+   "refs": [
+    "US-6266",
+    "US-9718"
+   ],
+   "names": [
+    "Savage Gulf State Natural Area",
+    "Savage Gulf State Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines are not the same shape (one sits inside the other): a person should look.",
+   "tests": {
+    "S1": null,
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [
+    {
+     "id": "US-6266+US-9718@area@35.438,-85.536",
+     "kind": "area",
+     "live": true
+    }
+   ],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1320+CA-1321",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1320",
+    "CA-1321"
+   ],
+   "names": [
+    "Blair Township Nature Reserve Wilderness Area",
+    "Blair Township Wilderness Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1361+CA-1362",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1361",
+    "CA-1362"
+   ],
+   "names": [
+    "Crane Lake Forest Conservation Reserve",
+    "Crane Lakes Conservation Reserve"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0057+CA-0307",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0057",
+    "CA-0307"
+   ],
+   "names": [
+    "Mississippi Lake National Wildlife Area",
+    "Mississippi Lake Migratory Bird Sanctuary"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-5991+CA-5992",
+   "area": "CA-ON",
+   "refs": [
+    "CA-5991",
+    "CA-5992"
+   ],
+   "names": [
+    "Beachville Conservation Area",
+    "Beachville Tract Conservation Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1507+CA-1508",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1507",
+    "CA-1508"
+   ],
+   "names": [
+    "McCrae Lake Conservation Reserve",
+    "McCrae Lake Wilderness Area Conservation Reserve"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1303+CA-1304",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1303",
+    "CA-1304"
+   ],
+   "names": [
+    "Basswood Lake Conservation Reserve",
+    "Basswood Lake Hemlock Conservation Reserve"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-5633+CA-5942",
+   "area": "CA-ON",
+   "refs": [
+    "CA-5633",
+    "CA-5942"
+   ],
+   "names": [
+    "Bowmanville Valley Conservation Area",
+    "Bowmanville Westside Marshes Conservation Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1310+CA-1577",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1310",
+    "CA-1577"
+   ],
+   "names": [
+    "Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park",
+    "Pikangikum Cultural Landscape Waterways Protected Area"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1475+CA-1699",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1475",
+    "CA-1699"
+   ],
+   "names": [
+    "Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve",
+    "Weeskayjahk Ohtahzhoganeeng Provincial Park"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0162+CA-0163",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0162",
+    "CA-0163"
+   ],
+   "names": [
+    "Bonnechere Provincial Park",
+    "Bonnechere River Provincial Park"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0304+CA-0306",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0304",
+    "CA-0306"
+   ],
+   "names": [
+    "Mississagi Provincial Park",
+    "Mississagi River Provincial Park"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1477+CA-1478",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1477",
+    "CA-1478"
+   ],
+   "names": [
+    "Lake Of The Woods Conservation Reserve",
+    "Lake Of The Woods Waters Conservation Reserve"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0414+CA-1667",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0414",
+    "CA-1667"
+   ],
+   "names": [
+    "Timber Island Provincial Park",
+    "Timber Island Wilderness Area"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-4856+CA-4863",
+   "area": "CA-ON",
+   "refs": [
+    "CA-4856",
+    "CA-4863"
+   ],
+   "names": [
+    "Battlefield of Fort George National Historic Site",
+    "Fort George National Historic Site"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0351+CA-1586",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0351",
+    "CA-1586"
+   ],
+   "names": [
+    "Presqu'ile Provincial Park",
+    "Presqu'ile Island Wilderness Area"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0418+CA-1705",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0418",
+    "CA-1705"
+   ],
+   "names": [
+    "Turtle River-White Otter Lake Provincial Park",
+    "White Otter Lake Wilderness Area"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-1708+CA-6629",
+   "area": "CA-ON",
+   "refs": [
+    "CA-1708",
+    "CA-6629"
+   ],
+   "names": [
+    "Whitefish River Sandy Till Conservation Reserve",
+    "Whitefish River Conservation Reserve"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0395+CA-1627",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0395",
+    "CA-1627"
+   ],
+   "names": [
+    "Sleeping Giant Provincial Park",
+    "Sleeping Giant Wilderness Area"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-5554+CA-5555",
+   "area": "CA-ON",
+   "refs": [
+    "CA-5554",
+    "CA-5555"
+   ],
+   "names": [
+    "Boyd Conservation Park Conservation Area",
+    "Boyd North Conservation Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0174+CA-6371",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0174",
+    "CA-6371"
+   ],
+   "names": [
+    "Cedar Creek Provincial Park",
+    "Cedar Creek Conservation Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": false,
+    "S5": "unknown"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-5358+CA-5566",
+   "area": "CA-ON",
+   "refs": [
+    "CA-5358",
+    "CA-5566"
+   ],
+   "names": [
+    "Devil's Punch Bowl Conservation Area",
+    "Saltfleet Conservation Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "ONE INSIDE THE OTHER",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0052+CA-0279",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0052",
+    "CA-0279"
+   ],
+   "names": [
+    "Long Point Biosphere Reserve",
+    "Long Point Provincial Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0052+CA-0053",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0052",
+    "CA-0053"
+   ],
+   "names": [
+    "Long Point Biosphere Reserve",
+    "Long Point National Wildlife Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "PART OVERLAP",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0304+CA-0305",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0304",
+    "CA-0305"
+   ],
+   "names": [
+    "Mississagi Provincial Park",
+    "Mississagi Delta Provincial Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  },
+  {
+   "id": "CA-0305+CA-0306",
+   "area": "CA-ON",
+   "refs": [
+    "CA-0305",
+    "CA-0306"
+   ],
+   "names": [
+    "Mississagi Delta Provincial Park",
+    "Mississagi River Provincial Park"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "PART OVERLAP",
+    "S3": false,
+    "S4": false,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-01"
+  }
+ ]
+}
