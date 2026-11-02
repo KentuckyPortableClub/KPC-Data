@@ -4,11 +4,11 @@
  "states": [
   "US-CT"
  ],
- "since": "2026-11-01",
- "date": "2026-11-01 21:11 UTC",
+ "since": "2026-11-02",
+ "date": "2026-11-02 16:49 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "19/19 on 2026-10-31",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 43,
   "DROPPED": 202,
@@ -16,23 +16,23 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "pairs tested": 940,
    "pairs whose boxes touch": 940
   },
   "pass2": {
-   "agree with the pass before": 112,
-   "date": "2026-11-01",
+   "agree with the pass before": 111,
+   "date": "2026-11-02",
    "pairs tested": 68
   },
   "pass3": {
    "agree with the pass before": 74,
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "pairs tested": 66
   },
   "pass5": {
    "checked": 28,
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,14 +41,14 @@
   "US-CT": "data/fers/US-CT.json"
  },
  "US-CT": {
-  "rows": 120,
+  "rows": 118,
   "live": 46,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1
   },
-  "dropped": 44,
+  "dropped": 42,
   "merged": 29
  },
  "states_ready": [
