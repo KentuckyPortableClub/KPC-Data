@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       confirm:
-        description: "Type RESTART to really do it (anything else = a dry run that only makes and uploads the backup)"
+        description: "RESTART = the whole thing; SQUASH = only squash the side branches again (no backup, no pause); anything else = backup only"
         default: 'dry'
 permissions:
   contents: write
@@ -33,6 +33,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: 1 BACKUP (bundle of every branch + tag -> release)
+        if: ${{ inputs.confirm != 'SQUASH' }}
         id: b
         run: |
           set -euo pipefail
@@ -77,7 +78,7 @@ jobs:
           done
           cp /tmp/paused.txt "$RUNNER_TEMP/paused.txt"
       - name: 3a SQUASH THE SIDE BRANCHES (each = one commit of its files today; BRANCH FIRST rule 'orphan, squashable')
-        if: ${{ inputs.confirm == 'RESTART' }}
+        if: ${{ inputs.confirm == 'RESTART' || inputs.confirm == 'SQUASH' }}
         run: |
           set -uo pipefail
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -86,7 +87,7 @@ jobs:
             git rev-parse -q --verify "origin/$b" >/dev/null || continue
             n=$(git rev-list --count "origin/$b"); [ "$n" -le 1 ] && continue
             OLD=$(git rev-parse "origin/$b")
-            NEW=$(git commit-tree "$OLD^{tree}" -m "$b squashed $(date -u +%F) (storage step 2; the older commits are in the release ${{ steps.b.outputs.tag }})")
+            NEW=$(git commit-tree "$OLD^{tree}" -m "$b squashed $(date -u +%F) (storage; older commits: the history-* backup release)")
             if git push -q --force-with-lease="$b:$OLD" origin "$NEW:refs/heads/$b"; then echo "::notice title=History restart::$b: $n commits -> 1"; else echo "::warning title=History restart::$b not squashed (push refused)"; fi
           done
       - name: 3 RESTART (main = one fresh commit; old-history branches / tags deleted)
