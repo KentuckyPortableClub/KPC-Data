@@ -837,7 +837,8 @@
    "by": "chat 11",
    "date": "2026-11-02",
    "chat11": "KEY YES CA-f3d48d30899 (built 16:08 UTC, +56 outlines, 13 back to pins): 30-park sample is clean (30 of 30); the big records (Chapleau 1.79M ac, Frontenac Arch 628k ac) are real.",
-   "build": "CA-f3d48d30899"
+   "build": "CA-f3d48d30899",
+   "chat2": "OK rechecked 2026-11-02 (chat 2 G-4) build CA-f3d48d30899: the +56 new outlines are fine. All 13 'back to pins' were the same fault, not a ruling: the saved copy this build used had no record of the Québec réserves fauniques layer (MRNF TRQ_WMS/11), so Matane, Papineau-Labelle, Chic-Chocs, Laurentides, La Vérendrye, Mastigouche, Rouge-Matawin + 6 more lost reviewed outlines. Their live joins are kept in the held CA-QC.json (QC 427 -> 440 joined), so the release loses nothing. Cause fixed in kpc_ca_key.py: a saved-copy run now reads live any layer missing from the copy. Release."
   },
   {
    "what": "us-key",
