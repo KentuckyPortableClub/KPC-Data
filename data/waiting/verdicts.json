@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T17:42Z",
+ "checked": "2026-11-02T17:47Z",
  "switched_on": false,
  "results": [
   {
@@ -519,6 +519,17 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/fers/CA-BC.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 52 -> 14 (over 30% change)"
+   ],
+   "notes": [
+    "replaces live data/fers/CA-BC.json (same file, other format): promotion removes the old name"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/fers/CA-NT.json",
    "kind": "fers",
    "why": [],
@@ -731,13 +742,11 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NH.json",
+   "path": "data/fers/US-NH.json.gz",
    "kind": "fers",
-   "why": [
-    "F-4 data/fers/US-NH.json replaces live data/fers/US-NH.json.gz (other format) with 130 rows for 167 (over 10% fewer)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-NM.json.gz",

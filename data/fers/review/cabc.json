@@ -1,27 +1,10 @@
 {
  "area": "cabc",
- "date": "2026-10-31",
+ "date": "2026-11-02",
  "states": [
   "CA-BC"
  ],
  "rows": [
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0723",
-    "CA-3537"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "458443.5 ac",
-   "sort": 458443.5,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0723+CA-3537@area@49.914,-122.793",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
   {
    "area": "cabc",
    "state": "CA-BC",
@@ -74,70 +57,24 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3245",
-    "CA-5497"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "1775.4 ac",
-   "sort": 1775.4,
-   "reason": "the official outline of Boundary Bay Regional Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-5497@area@49.085,-122.885",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
     "CA-4155",
     "CA-5502"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "CA-4155": "Sturgeon Bank Wildlife Management Area",
+    "CA-5502": "Iona Beach Regional Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
    "kind": "area",
-   "size": "1544.4 ac",
-   "sort": 1544.4,
-   "reason": "the official outline of Iona Beach Regional Park could not be read in pass 2 (the next run tries again)",
+   "size": "1743.4 ac",
+   "sort": 1743.4,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
    "id": "CA-4155+CA-5502@area@49.222,-123.246",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3537",
-    "CA-3810"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "1171.6 ac",
-   "sort": 1171.6,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3537+CA-3810@area@50.230,-122.580",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0723",
-    "CA-3537",
-    "CA-3810"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "1112.3 ac",
-   "sort": 1112.3,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0723+CA-3537+CA-3810@area@50.230,-122.585",
-   "sources": {},
-   "checked": "2026-10-31"
+   "sources": {
+    "CA-4155": "read from the agency 2026-11-02",
+    "CA-5502": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "cabc",
@@ -166,23 +103,6 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3797",
-    "CA-5343"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "471.6 ac",
-   "sort": 471.6,
-   "reason": "the official outline of Skaha Lake Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3797+CA-5343@area@49.438,-119.538",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
     "CA-0001",
     "CA-3539"
    ],
@@ -201,23 +121,6 @@
     "CA-3539": "downloaded 2026-10-30"
    },
    "checked": "2026-10-30"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4097",
-    "CA-5343"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "317.1 ac",
-   "sort": 317.1,
-   "reason": "the official outline of Skaha Lake Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4097+CA-5343@area@49.431,-119.560",
-   "sources": {},
-   "checked": "2026-10-31"
   },
   {
    "area": "cabc",
@@ -338,58 +241,6 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3508",
-    "CA-3509"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "97.0 ac",
-   "sort": 97.0,
-   "reason": "the official outline of Fleetwood Meadows Park, Fleetwood Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3508+CA-3509@area@49.142,-122.781",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3231",
-    "CA-3537"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "91.6 ac",
-   "sort": 91.6,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3231+CA-3537@area@49.738,-122.865",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0723",
-    "CA-3231",
-    "CA-3537"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "61.4 ac",
-   "sort": 61.4,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0723+CA-3231+CA-3537@area@49.738,-122.799",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
     "CA-0018",
     "CA-3362"
    ],
@@ -437,53 +288,24 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3498",
-    "CA-5327"
+    "CA-3209",
+    "CA-4044"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "CA-3209": "Beaver Point Provincial Park",
+    "CA-4044": "Ruckle Provincial Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
    "kind": "area",
-   "size": "36.4 ac",
-   "sort": 36.4,
-   "reason": "the official outline of Island 22 Regional Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3498+CA-5327@area@49.202,-121.785",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3797",
-    "CA-4097",
-    "CA-5343"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "30.9 ac",
-   "sort": 30.9,
-   "reason": "the official outline of Skaha Lake Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3797+CA-4097+CA-5343@area@49.443,-119.556",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-5501",
-    "CA-5503"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "26.6 ac",
-   "sort": 26.6,
-   "reason": "the official outline of Grouse Mountain Regional Park, Lynn Headwaters Regional Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-5501+CA-5503@area@49.403,-123.081",
-   "sources": {},
-   "checked": "2026-10-31"
+   "size": "39.9 ac",
+   "sort": 39.9,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
+   "id": "CA-3209+CA-4044@area@48.771,-123.401",
+   "sources": {
+    "CA-3209": "read from the agency 2026-11-02",
+    "CA-4044": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "cabc",
@@ -537,40 +359,6 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3209",
-    "CA-4044"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "17.8 ac",
-   "sort": 17.8,
-   "reason": "the official outline of Ruckle Provincial Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3209+CA-4044@area@48.771,-123.401",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-6382"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "16.9 ac",
-   "sort": 16.9,
-   "reason": "the official outline of Stewart Farm Historic Site could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-6382@area@49.065,-122.844",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
     "CA-4218",
     "CA-4258"
    ],
@@ -589,57 +377,6 @@
     "CA-4258": "downloaded 2026-10-30"
    },
    "checked": "2026-10-30"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3965",
-    "CA-5504"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "12.7 ac",
-   "sort": 12.7,
-   "reason": "the official outline of Minnekhada Regional Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3965+CA-5504@area@49.310,-122.691",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4258",
-    "CA-5539"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "12.7 ac",
-   "sort": 12.7,
-   "reason": "the official outline of Uplands Park Natural Area could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4258+CA-5539@area@48.439,-123.294",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4031",
-    "CA-5901"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "11.2 ac",
-   "sort": 11.2,
-   "reason": "the official outline of Roche Point Park, Kwomais\u00a0Point Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4031+CA-5901@area@49.028,-122.869",
-   "sources": {},
-   "checked": "2026-10-31"
   },
   {
    "area": "cabc",
@@ -692,40 +429,6 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3944",
-    "CA-4012"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "5.4 ac",
-   "sort": 5.4,
-   "reason": "the official outline of Rathtrevor Beach Provincial Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3944+CA-4012@area@49.317,-124.251",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-4031"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "3.6 ac",
-   "sort": 3.6,
-   "reason": "the official outline of Roche Point Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-4031@area@49.028,-122.868",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
     "CA-3303",
     "CA-3615"
    ],
@@ -744,40 +447,6 @@
     "CA-3615": "downloaded 2026-10-30"
    },
    "checked": "2026-10-30"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3275",
-    "CA-3840"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "2.3 ac",
-   "sort": 2.3,
-   "reason": "the official outline of Mount Maxwell Ecological Reserve could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3275+CA-3840@area@48.799,-123.523",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-5901"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "2.1 ac",
-   "sort": 2.1,
-   "reason": "the official outline of Kwomais\u00a0Point Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-5901@area@49.028,-122.868",
-   "sources": {},
-   "checked": "2026-10-31"
   },
   {
    "area": "cabc",
@@ -830,310 +499,24 @@
    "area": "cabc",
    "state": "CA-BC",
    "refs": [
-    "CA-3328",
-    "CA-5346"
+    "CA-3245",
+    "CA-5497"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "CA-3245": "Boundary Bay Wildlife Management Area",
+    "CA-5497": "Boundary Bay Regional Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "1.2 ac",
    "sort": 1.2,
-   "reason": "the official outline of Thompson Regional Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3328+CA-5346@area@49.081,-121.883",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-5548"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.6 ac",
-   "sort": 0.6,
-   "reason": "the official outline of Blackie Spit Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-5548@area@49.057,-122.873",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3918",
-    "CA-4251"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.6 ac",
-   "sort": 0.6,
-   "reason": "the official outline of Oak Meadows Park, VanDusen Botanical Gardens could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3918+CA-4251@area@49.239,-123.128",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0723",
-    "CA-1214",
-    "CA-3537"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.4 ac",
-   "sort": 0.4,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0723+CA-1214+CA-3537@area@50.081,-122.864",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-1214",
-    "CA-3537"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.4 ac",
-   "sort": 0.4,
-   "reason": "the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-1214+CA-3537@area@50.081,-122.864",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-1204",
-    "CA-3247"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.3 ac",
-   "sort": 0.3,
-   "reason": "the official outline of Bowen Island Ecological Reserve could not be read in pass 2 (the next run tries again)",
-   "id": "CA-1204+CA-3247@area@49.353,-123.341",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3200",
-    "CA-3278"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.3 ac",
-   "sort": 0.3,
-   "reason": "the official outline of Barnet Marine Park, Burnaby Mountain Conservation Area could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3200+CA-3278@area@49.290,-122.936",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-4031",
-    "CA-5901"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.3 ac",
-   "sort": 0.3,
-   "reason": "the official outline of Roche Point Park, Kwomais\u00a0Point Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-4031+CA-5901@area@49.028,-122.870",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3617",
-    "CA-5498"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.2 ac",
-   "sort": 0.2,
-   "reason": "the official outline of Hugo Ray Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3617+CA-5498@area@49.335,-123.120",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4787",
-    "CA-4789"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.2 ac",
-   "sort": 0.2,
-   "reason": "the official outline of Fisgard Lighthouse National Historic Site, Fort Rodd Hill National Historic Site could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4787+CA-4789@area@48.431,-123.449",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0117",
-    "CA-4798"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Twin Falls Tea House National Historic Site could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0117+CA-4798@area@51.544,-116.532",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3215",
-    "CA-4060"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Belcarra Regional Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3215+CA-4060@area@49.344,-122.867",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3453",
-    "CA-4071",
-    "CA-4106"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Eastern Drive Park, Settlers Park, Skyline Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3453+CA-4071+CA-4106@area@49.239,-122.783",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3453",
-    "CA-4071"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Eastern Drive Park, Settlers Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3453+CA-4071@area@49.239,-122.783",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3453",
-    "CA-4106"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Eastern Drive Park, Skyline Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3453+CA-4106@area@49.239,-122.783",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3514",
-    "CA-3792"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Forest Hills Park, McClughan Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3514+CA-3792@area@49.167,-122.651",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3850",
-    "CA-3943"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Parkgate Recreation Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3850+CA-3943@area@49.322,-122.973",
-   "sources": {},
-   "checked": "2026-10-31"
-  },
-  {
-   "area": "cabc",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4071",
-    "CA-4106"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Settlers Park, Skyline Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4071+CA-4106@area@49.239,-122.783",
-   "sources": {},
-   "checked": "2026-10-31"
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['LOCAL', 'STATE']",
+   "id": "CA-3245+CA-5497@area@49.016,-123.044",
+   "sources": {
+    "CA-3245": "read from the agency 2026-11-02",
+    "CA-5497": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   }
  ]
 }
