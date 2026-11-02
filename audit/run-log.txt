@@ -46,57 +46,50 @@ US-UT: already done (resume)
 US-VA: already done (resume)
 US-VT: already done (resume)
 US-WA: already done (resume)
-US-WI: us (../club/us-key/US-WI.json)
-  POTA: 348 parks with pins
-  200/348 parks
-  250/348 parks
-  300/348 parks
-US-WI: 348 parks, 164 with flags
-US-WV: us (../club/us-key/US-WV.json)
-  POTA: 172 parks with pins
-  50/172 parks
-  100/172 parks
-  150/172 parks
-US-WV: 172 parks, 120 with flags
-US-WY: us (../club/us-key/US-WY.json)
-  POTA: 294 parks with pins
-  50/294 parks
-  100/294 parks
-  150/294 parks
-  200/294 parks
-  250/294 parks
-US-WY: 294 parks, 152 with flags
-CA-AB: ca (../club/ca-key/CA-AB.json)
-  POTA: 459 parks with pins
-  50/459 parks
-  100/459 parks
-  150/459 parks
-  200/459 parks
-  250/459 parks
-  300/459 parks
-  350/459 parks
-  400/459 parks
-  450/459 parks
-CA-AB: 459 parks, 177 with flags
+US-WI: already done (resume)
+US-WV: already done (resume)
+US-WY: already done (resume)
+CA-AB: already done (resume)
 CA-BC: ca (../club/ca-key/CA-BC.json)
   POTA: 1255 parks with pins
-  50/1254 parks
-  100/1254 parks
-  150/1254 parks
-  200/1254 parks
-  250/1254 parks
-  300/1254 parks
-  350/1254 parks
-  400/1254 parks
-  450/1254 parks
-  500/1254 parks
-  550/1254 parks
-  600/1254 parks
-  650/1254 parks
-  700/1254 parks
-  750/1254 parks
-  800/1254 parks
-  850/1254 parks
-  900/1254 parks
-  950/1254 parks
-time is up after 50.0 min: run again with --resume
+  1000/1254 parks
+  1050/1254 parks
+  1100/1254 parks
+  1150/1254 parks
+  1200/1254 parks
+  1250/1254 parks
+CA-BC: 1254 parks, 565 with flags
+CA-MB: ca (../club/ca-key/CA-MB.json)
+  POTA: 309 parks with pins
+  50/308 parks
+  100/308 parks
+Traceback (most recent call last):
+  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1511, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1485, in main
+    recs, ok = run_area(audit, ar, acres_list, deadline, prog)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1322, in run_area
+    tests = grade_park(P, pin, acres_list, kind == "world")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1214, in grade_park
+    d = pin_distance_m(g, pin["lon"], pin["lat"])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 307, in pin_distance_m
+    fwd, _ = local_proj(lon, lat)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 284, in local_proj
+    return Transformer.from_crs(4326, crs, always_xy=True), Transformer.from_crs(crs, 4326, always_xy=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyproj/transformer.py", line 743, in from_crs
+    cstrencode(CRS.from_user_input(crs_to).srs),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyproj/crs/crs.py", line 503, in from_user_input
+    return cls(value, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyproj/crs/crs.py", line 350, in __init__
+    self._local.crs = _CRS(self.srs)
+                      ^^^^^^^^^^^^^^
+  File "pyproj/_crs.pyx", line 2364, in pyproj._crs._CRS.__init__
+pyproj.exceptions.CRSError: Invalid projection: +proj=aeqd +lat_0=92.595 +lon_0=-57.056 +datum=WGS84 +units=m +type=crs: (Internal Proj Error: proj_create: Error 1027 (Invalid value for an argument): aeqd: Invalid value for lat_0: |lat_0| should be <= 90°)
