@@ -100,4 +100,6 @@ jobs:
           if [ "$age" -gt 9000 ]; then
             gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-watchdog.yml/dispatches" -f ref=main && echo "::notice title=Watchdog heartbeat::the watchdog had not run for $((age / 60)) min: started it"
           else echo "watchdog ran $((age / 60)) min ago: nothing to do"; fi
+          # Nov 2 5 PM (HQ): Pages publishes the branch 'site'; move it to main when it lags (kpc-pages-sync.yml checks itself)
+          gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-pages-sync.yml/dispatches" -f ref=main >/dev/null 2>&1 || echo "::warning title=Pages copy::could not start kpc-pages-sync"
           true   # ok: the next chained run checks again
