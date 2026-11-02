@@ -74,7 +74,7 @@ jobs:
           done
           for id in $(gh api "repos/$R/actions/runs?status=in_progress&per_page=50" --jq ".workflow_runs[] | select(.id != ${{ github.run_id }}) | .id") \
                     $(gh api "repos/$R/actions/runs?status=queued&per_page=50" --jq '.workflow_runs[].id'); do
-            gh api -X POST "repos/$R/actions/runs/$id/cancel" >/dev/null || true; echo "cancelled $id"
+            gh api -X POST "repos/$R/actions/runs/$id/cancel" >/dev/null || true; echo "cancelled $id"   # ok: the run may have finished already
           done
           cp /tmp/paused.txt "$RUNNER_TEMP/paused.txt"
       - name: SLIM (Nov 2, Brandon 'go'; 850 MB too close) - old 2-fer storage branch deleted (it is in the backup), research archives moved to a release
