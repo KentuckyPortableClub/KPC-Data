@@ -1,6 +1,6 @@
 {
  "area": "CA-SK",
- "run": "2026-10-31",
+ "run": "2026-11-02",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "CA-0618": {
@@ -347,8 +347,8 @@
      "record": 3392,
      "record_name": "Wascana Valley Natural Area Recreation Site",
      "acres_approx": 306,
-     "tier": "LIKELY",
-     "why": "shared wascana; extra: park - / record valley"
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
     },
     {
      "verdict": "name match",
@@ -357,8 +357,8 @@
      "record": 3392,
      "record_name": "Wascana Valley Natural Area Recreation Site",
      "acres_approx": 306,
-     "tier": "LIKELY",
-     "why": "shared wascana; extra: park - / record valley"
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
     },
     {
      "verdict": "name match",
@@ -367,8 +367,8 @@
      "record": 3392,
      "record_name": "Wascana Valley Natural Area Recreation Site",
      "acres_approx": 306,
-     "tier": "LIKELY",
-     "why": "shared wascana; extra: park - / record valley"
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
     },
     {
      "verdict": "name match",
@@ -378,7 +378,7 @@
      "record_name": "Wascana Valley Natural Area Recreation Site",
      "acres_approx": 306,
      "tier": "UNLIKELY",
-     "why": "shared wascana; extra: park - / record valley; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],
@@ -395,7 +395,7 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: LIKELY (part of the name shared)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-2900": {
    "park": "Waskesiu River Resource Management Area",
@@ -1174,7 +1174,7 @@
     "A Saskatchewan~6: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"boundary geologic bog\": 0 lead(s)"
+    "B ArcGIS Online search \"geologic boundary bog\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1432,7 +1432,7 @@
     "A Saskatchewan~6: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lakes quill\": 0 lead(s)"
+    "B ArcGIS Online search \"quill lakes\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -2040,7 +2040,7 @@
      "record_name": "Nisbet South",
      "acres_approx": 19845,
      "tier": "UNLIKELY",
-     "why": "shared nisbet; extra: park - / record south; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],
@@ -3341,7 +3341,7 @@
      "record_name": "Langham and District Regional Park",
      "acres_approx": 109,
      "tier": "UNLIKELY",
-     "why": "no shared proper word"
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],

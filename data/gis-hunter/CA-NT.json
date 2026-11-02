@@ -1,6 +1,6 @@
 {
  "area": "CA-NT",
- "run": "2026-10-31",
+ "run": "2026-11-02",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "CA-0752": {
@@ -12,11 +12,11 @@
      "verdict": "name match",
      "layer": "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/195",
      "agency": "NT GNWT Envi",
-     "record": 40333,
+     "record": 40391,
      "record_name": "Hidden Lake Territorial Park",
      "acres_approx": 6854,
      "tier": "UNLIKELY",
-     "why": "one shared word (territorial) only"
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],
