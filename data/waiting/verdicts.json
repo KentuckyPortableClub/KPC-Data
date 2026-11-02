@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T17:40Z",
+ "checked": "2026-11-02T17:42Z",
  "switched_on": false,
  "results": [
   {
@@ -724,18 +724,20 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 15 -> 46 (over 30% change)",
-    "F-2 31 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
+    "F-2 candidates 15 -> 45 (over 30% change)",
+    "F-2 30 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
    ],
    "notes": [],
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NH.json.gz",
+   "path": "data/fers/US-NH.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-4 data/fers/US-NH.json replaces live data/fers/US-NH.json.gz (other format) with 130 rows for 167 (over 10% fewer)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-NM.json.gz",
