@@ -88,7 +88,8 @@ jobs:
           gh workflow run kpc-lookup.yml -R ${{ github.repository }} --ref lookup || true   # a bot push starts nothing by itself: start the look-up bot
           true
       - name: KEY DOCTOR after the build (report only; outside review Nov 2, Brandon OK 6:34 AM) -> data/status/key-doctor/ + the board
-        if: ${{ github.event.schedule == '13 11 * * *' || inputs.mode == 'release-approved' }}
+        # Nov 2 general review: every release run (the 2-hourly ones too), so a stuck YES / build-id trap shows within 2 h, not next morning
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'release-approved' }}
         continue-on-error: true
         run: |
           cd kpcdata
@@ -96,6 +97,7 @@ jobs:
           grep '^::' /tmp/kd.txt || tail -5 /tmp/kd.txt
           mkdir -p data/status/key-doctor && rm -f data/status/key-doctor/stuck-*.md
           cp /tmp/kd/key-doctor/summary.json /tmp/kd/key-doctor/nos.json /tmp/kd/key-doctor/release.json /tmp/kd/key-doctor/stuck-*.md data/status/key-doctor/ 2>/dev/null || true
+          cp /tmp/kd/key-doctor/resources.json /tmp/kd/key-doctor/resources.md data/status/key-doctor/ 2>/dev/null || true   # engine v0.5.1+ (report only)
           S=$(grep -h 'title=Key doctor' /tmp/kd.txt | sed 's/^::[a-z]* title=Key doctor \([^:]*\)::/\1: /' | tr '\n' ' ' | cut -c1-400)
           C=green; grep -q '^::error title=Key doctor' /tmp/kd.txt && C=amber
           python3 .github/scripts/kpc_status.py board key-doctor $C "${S:-no result}" "chat 10 (came-back NOs / stuck areas); per-park release in release-approved" || true
