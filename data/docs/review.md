@@ -1,5 +1,5 @@
 # Official documents bot: review list (hidden; for chat 8)
-Updated 2026-11-01. One file per area in data/docs/<area>.json: per park the official MAP (link, kind, date + how the date was found), the RULES page (link + how), who runs it (hints from the page) and HANDOVER hints. Nothing here reaches a card until chat 8 grades a sample and Brandon says GO.
+Updated 2026-11-02. One file per area in data/docs/<area>.json: per park the official MAP (link, kind, date + how the date was found), the RULES page (link + how), who runs it (hints from the page) and HANDOVER hints. Nothing here reaches a card until chat 8 grades a sample and Brandon says GO.
 
 Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp, labelled weaker); **posted** = when the file was put online (upload folder, file name, server date): never called the map date; **date unknown** = neither (the card says 'date unknown, checked <day>'). A © year and version tails (sfvrsn) are never dates.
 
@@ -33,7 +33,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-NH | 206 | 23 | 21 | 8 | 1 | 16 | 6 | 183 | 11 | 0 | 1 |
 | US-ME | 148 | 20 | 16 | 17 | 0 | 7 | 13 | 128 | 15 | 3 | 0 |
 | US-MD | 186 | 106 | 83 | 97 | 14 | 75 | 17 | 80 | 37 | 0 | 0 |
-| US-DE | 89 | 7 | 6 | 7 | 0 | 5 | 2 | 82 | 7 | 0 | 0 |
+| US-DE | 89 | 9 | 8 | 9 | 0 | 5 | 4 | 80 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 4 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 76 | 64 | 53 | 13 | 45 | 18 | 229 | 37 | 8 | 0 |
 | US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 29 | 0 |
@@ -64,8 +64,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | CA-NL | 134 | 16 | 15 | 7 | 0 | 10 | 6 | 118 | 2 | 0 | 0 |
 | CA-MB | 308 | 45 | 44 | 41 | 10 | 29 | 6 | 263 | 21 | 0 | 0 |
 | CA-SK | 411 | 17 | 16 | 11 | 2 | 6 | 9 | 394 | 8 | 142 | 0 |
-| CA-AB | 459 | 97 | 88 | 19 | 11 | 71 | 15 | 362 | 7 | 4 | 0 |
-| CA-BC | 1254 | 39 | 38 | 31 | 2 | 13 | 24 | 1215 | 43 | 1001 | 0 |
+| CA-AB | 10 | 2 | 1 | 1 | 0 | 1 | 1 | 8 | 1 | 0 | 0 |
+| CA-BC | 1215 | 0 | 0 | 0 | 0 | 0 | 0 | 1215 | 0 | 0 | 0 |
 | CA-YT | 112 | 4 | 4 | 4 | 0 | 0 | 4 | 108 | 0 | 72 | 0 |
 | CA-NT | 68 | 3 | 3 | 0 | 0 | 3 | 0 | 65 | 16 | 0 | 0 |
 | CA-NU | 48 | 2 | 2 | 2 | 0 | 1 | 1 | 46 | 0 | 1 | 0 |
@@ -5207,168 +5207,97 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## CA-AB sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| CA-6134 | Athabasca Ranch Public Land Use Zone Rec | https://www.alberta.ca/public-land-recreation-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://albertasnowmobile.ca/ ✗ |  |
-| CA-0652 | Gregoire Lake Provincial Park | https://www.albertaparks.ca/media/yg2gsw4w/gregoire-lake-tear-sheet.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Feb 07, 2026 |  ✗ |  |
-| CA-6333 | Stoney Lake Provincial Recreation Area | https://www.albertaparks.ca/media/6494597/stoney-lake-pra-campground-map.pdf | pdf · the agency site | March 2017 (printed on the map) · posted Mar 28, 2025 |  ✗ |  |
-| CA-0660 | Moose Lake Provincial Park | https://www.albertaparks.ca/media/6496684/moose-lake-tear-sheet.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Mar 28, 2025 |  ✗ |  |
-| CA-0669 | Rock Lake Provincial Park | https://www.albertaparks.ca/media/6496034/rock-lake-tear-sheet.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Mar 28, 2025 |  ✗ |  |
-| CA-6606 | Big Island Provincial Park | https://www.albertaparks.ca/media/6497537/big-island-pp-brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Mar 28, 2025 |  ✗ |  |
-| CA-5522 | Ing's Mine Provincial Recreation Area | https://www.albertaparks.ca/media/6493729/2016_elbow_valley_summer_brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted 2016 |  ✗ |  |
-| CA-5511 | Hangingstone Provincial Recreation Area | https://www.albertaparks.ca/media/dcdj3k5d/hangingstone-tear-sheet.pdf | pdf · the agency site | February 2026 (printed on the map) · posted Feb 07, 2026 |  ✗ |  |
-| CA-0666 | Police Outpost Provincial Park | https://www.albertaparks.ca/media/3331845/police-outpost-tear-sheet.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Mar 28, 2025 |  ✗ |  |
-| CA-0667 | Ram Falls Provincial Park | https://www.albertaparks.ca/media/grpg2sd2/ram-falls-brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Jun 06, 2026 |  ✗ |  |
-| CA-0656 | McLean Creek Provincial Recreation Area | https://albertaparks.ca/media/6493729/2016_elbow_valley_summer_brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted 2016 |  ✗ |  |
-| CA-5488 | Fish Lake Provincial Recreation Area | https://www.albertaparks.ca/media/6496803/fish-lake-tear-sheet.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Mar 28, 2025 |  ✗ |  |
-| CA-0644 | Dunvegan Provincial Park | https://www.albertaparks.ca/media/uabh3cd3/dunvegan-brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-11-01) · posted Jun 23, 2026 |  ✗ |  |
-| CA-3046 | Inglewood Bird Sanctuary | https://www.calgary.ca/content/dam/www/transportation/tp/documents/cycling/inglewood-bird- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted Oct 28, 2019 |  ✗ |  |
-| CA-5933 | Carburn Natural Area | https://www.calgary.ca/content/dam/www/corporate-communications/locations/carburn-map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted Oct 25, 2019 |  ✗ |  |
+| CA-2982 | Chisholm Provincial Recreation Area | https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F | arcgis · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-1171 |  | https://www.albertaparks.ca/media/6494242/cold-lake-district-map-of-parks-in-cold-lake-dis | region overview · outside research | May 2017 (printed on the map) · posted Mar 28, 2025 |  |  |
 | CA-3089 | Nose Hill Park Natural Area | https://www.calgary.ca/content/dam/www/programs-services/parks-recreation/parks/locations/ | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Jul 09, 2025 |  |  |
-| CA-0020 | Elk Island National Park | https://parks.canada.ca/pn-np/ab/elkisland/visit/brochures | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2026-06-05 |  ✗ |  |
-| CA-4773 | Banff Park Museum National Historic Site | https://parks.canada.ca/lhn-nhs/ab/banff/visit/depliants-brochures | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2025-12-19 |  ✗ |  |
-| CA-4775 | Cave and Basin National Historic Site | https://parks.canada.ca/lhn-nhs/ab/caveandbasin/visit/depliants-brochure | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2025-12-19 |  ✗ |  |
-| CA-3157 | Waterton-Glacier International Peace Par | https://parks.canada.ca/pn-np/ab/waterton/visit/cartes-maps/~/media/bddfcc88d8744c629e94b4 | pdf ✓name · combined map: covers 4 units · the agency site | 2011: check it is still current (the PDF file's own stamp (may be the print da) · posted Jun 05, 2012 |  ✗ |  |
-| CA-0110 | Waterton Lakes National Park | https://parks.canada.ca/pn-np/ab/waterton/visit/cartes-maps/carte-parc-park-map | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2026-10-28 | https://parks.canada.ca/pn-np/ab/waterton/activ/experiences/nautique-l ✓ |  |
-| CA-6117 | North Saskatchewan River National Herita | https://chrs.ca/en/heritage-river-story-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-6116 | Athabasca River National Heritage River  | https://chrs.ca/en/heritage-river-story-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-1182 | Lesser Slave Lake Provincial Park | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ | Campground map: the agency has no park map. |
-| CA-0670 | Ross Lake Natural Area | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3105 | Pembina River Moon Lake Natural Area | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3149 | Threepoint Creek Natural Area | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-5530 | Jensen Reservoir Provincial Recreation A | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-2946 | Blue Rapids Provincial Recreation Area | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-0645 | Dry Island Buffalo Jump Provincial Park | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-5518 | Highwood River Natural Area | https://apps.mapbox.com/feedback/?owner=darren-mcgregor&id=cjuab0ksm5b9g1gp9gn22zgg5&acces | page · third-party host, linked by the agency ( | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-0675 | Sherwood Park Natural Area | https://www.strathcona.ca/recreation-events/parks-and-trails/trail-map/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.strathcona.ca/council-county/bylaws-and-policies/ ✓ |  |
-| CA-5082 | The Trans Canada Trail National Scenic T | https://tctrail.ca/explore-the-map/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-6396 | Leitch Collieries Provincial Historic Si | https://www.travelalberta.com/map?id=1090 | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-0109 | Waterton Biosphere Reserve | https://www.watertonbiosphere.com/resources/maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
 
-### CA-AB no map yet (362): the reason
+### CA-AB no map yet (434): the reason
 - CA-0663 Peace-Athabasca Delta Natural Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://whc.unesco.org/en/interactive-map/; opened, a page that does not name this park (a generic agency page is not its map) https://whc.unesco.org/en/map/)
 - CA-1194 Sylvan Lake Provincial Park: no map link on file and none on the park page
 - CA-2938 Big Elbow Provincial Recreation Area: no map link on file and none on the park page
 - CA-2969 Castle Falls Natural Area: no map link on file and none on the park page
-- CA-2982 Chisholm Provincial Recreation Area: no map (one file shared by 58 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F)
 - CA-2991 Crane Meadow Provincial Recreation Area: no map link on file and none on the park page
 - CA-3018 Eyrie Gap Provincial Recreation Area: no map link on file and none on the park page
 - CA-3073 Mary Reimer Regional Park: no map link on file and none on the park page
 - CA-3076 McLean Pond Natural Area: no map link on file and none on the park page
-- CA-0005 Banff National Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0007 Blue Quills National Wildlife Area: no map link on file and none on the park page
-- CA-0011 CFB Suffield National Wildlife Area: no map link on file and none on the park page
-- CA-0040 Jasper National Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0055 Meanook National Wildlife Area: no map link on file and none on the park page
-- CA-0093 Spiers Lake National Wildlife Area: no map link on file and none on the park page
-- CA-0115 Wood Buffalo National Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0118 Dinosaur Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0632 Beauvais Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0635 Birch Mountains Wildland Provincial Park: no map (one file shared by 21 parks was dropped: https://www.albertaparks.ca/media/123478/bear-smart-brochure.pdf) (needs browser: host on the browser list)
-- CA-0642 Cypress Hills Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0646 Eagle Point Provincial Park: no map (one file shared by 21 parks was dropped: https://www.albertaparks.ca/media/123478/bear-smart-brochure.pdf) (needs browser: host on the browser list)
-- CA-0653 Hilliard's Bay Provincial Park: no map (one file shared by 36 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/M)
-- CA-0655 Long Lake Provincial Park: no working map link (tried: HTTP 404 https://www.albertaparks.ca/media/123323/long-lake-tear-sheet.pdf) (needs browser: host on the browser list)
-- CA-0662 Obed Lake Provincial Park: no map (one file shared by 21 parks was dropped: https://www.albertaparks.ca/media/123478/bear-smart-brochure.pdf) (needs browser: host on the browser list)
-- CA-0668 Ribstone Creek Heritage Rangeland Natural Are: no map (one file shared by 21 parks was dropped: https://www.albertaparks.ca/media/123478/bear-smart-brochure.pdf) (needs browser: host on the browser list)
-- CA-0671 Rumsey Natural Area: no map (one file shared by 36 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/M)
-- CA-0673 Scalp Creek Natural Area: no map link on file and none on the park page
-- CA-0676 Sir Winston Churchill Provincial Park: no map link on file and none on the park page
-- CA-0677 Spray Valley Provincial Park: no map (one file shared by 36 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/M)
-- CA-0678 Sundance Provincial Park: no map (one file shared by 58 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F)
-- CA-0679 Tawatinaw Natural Area: no map link on file and none on the park page
-- CA-0680 Tolman Badlands Heritage Rangeland Natural Ar: no map (one file shared by 58 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F)
-- CA-0681 Two Lakes Provincial Park: no map (one file shared by 58 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F)
-- CA-0682 Vermilion Provincial Park: no map link on file and none on the park page
-- CA-0683 Victoria Settlement Natural Area: no map link on file and none on the park page
-- CA-0684 Washout Creek Natural Area: no map (one file shared by 21 parks was dropped: https://www.albertaparks.ca/media/123478/bear-smart-brochure.pdf) (needs browser: host on the browser list)
-- CA-0686 Whitney Lakes Provincial Park: no map (one file shared by 58 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F)
-- CA-0687 William A. Switzer Provincial Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.albertaparks.ca/media/6492882/switzer-park-brochure.pdf) (needs browser: host on the browser list)
-- CA-0688 Winagami Lake Provincial Park: no map (one file shared by 58 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/F)
-- CA-0689 Writing-on-Stone Provincial Park: no map (one file shared by 36 parks was dropped: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/M)
+- CA-0005 : 
+- CA-0007 : 
+- CA-0011 : 
+- CA-0020 : 
+- CA-0040 : 
+- CA-0055 : 
+- CA-0093 : 
+- CA-0109 : 
+- CA-0110 : 
+- CA-0115 : 
+- CA-0118 : 
+- CA-0631 : 
+- CA-0632 : 
+- CA-0633 : 
+- CA-0634 : 
+- CA-0635 : 
+- CA-0636 : 
+- CA-0637 : 
+- CA-0638 : 
+- CA-0639 : 
+- CA-0640 : 
+- CA-0641 : 
+- CA-0642 : 
+- CA-0643 : 
+- CA-0644 : 
+- CA-0645 : 
+- CA-0646 : 
+- CA-0647 : 
+- CA-0648 : 
+- CA-0649 : 
+- CA-0650 : 
+- CA-0651 : 
 
 ## CA-BC sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| CA-3417 | Dewdrop-Rosseau Creek Wildlife Managemen | https://nrs.objectstore.gov.bc.ca/gmvprd/WMA/WMA_Legal_Maps/dewdrop_rosseau/dewdrop-rossea | pdf ✓name · linked from the agency page (nrs.objects | date unknown (date unknown, checked 2026-11-01) · posted Dec 19, 2025 |  ✗ |  |
-| CA-3944 | Parksville-Qualicum Beach Wildlife Manag | https://nrs.objectstore.gov.bc.ca/gmvprd/WMA/WMA_Legal_Maps/parksville_qualicum_beach/park | pdf ✓name · linked from the agency page (nrs.objects | date unknown (date unknown, checked 2026-11-01) · posted Dec 19, 2025 |  ✗ |  |
-| CA-4122 | South Okanagan Wildlife Management Area | https://nrs.objectstore.gov.bc.ca/gmvprd/WMA/WMA_Legal_Maps/south_okanagan/south_okanagan_ | pdf ✓name · linked from the agency page (nrs.objects | date unknown (date unknown, checked 2026-11-01) · posted Dec 19, 2025 |  ✗ |  |
-| CA-4205 | Todagin Wildlife Management Area | https://nrs.objectstore.gov.bc.ca/gmvprd/WMA/WMA_Legal_Maps/todagin/todagin_wma26m.pdf?X-A | pdf ✓name · linked from the agency page (nrs.objects | date unknown (date unknown, checked 2026-11-01) · posted Jan 20, 2026 |  ✗ |  |
-| CA-4001 | Quatse Estuary Wildlife Management Area | https://nrs.objectstore.gov.bc.ca/gmvprd/WMA/WMA_Legal_Maps/quatse/quatse_estuary_wma5m.pd | pdf ✓name · linked from the agency page (nrs.objects | date unknown (date unknown, checked 2026-11-01) · posted Dec 19, 2025 |  ✗ |  |
-| CA-4069 | Serpentine Wildlife Management Area | https://nrs.objectstore.gov.bc.ca/gmvprd/WMA/WMA_Legal_Maps/serpentine/serpentine_wma4m.pd | pdf ✓name · combined map: covers 4 units · linked from the agency page (nrs.objects | date unknown (date unknown, checked 2026-11-01) · posted Jan 14, 2026 |  ✗ |  |
-| CA-3272 | Buntzen Lake Recreation Park | https://www.bchydro.com/power-outages/app/outage-map.html | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://app.bchydro.com/accounts-billing/bill-payment/customer-service ✓ |  |
-| CA-4277 | Wendle Provincial Park | https://www.brmbmaps.com/map | page · the agency site | — (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-0045 | Kootenay National Park | https://parks.canada.ca/pn-np/bc/kootenay/visit/depliants-brochures | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2026-06-22 | https://parks.canada.ca/voyage-travel/regles-rules ✓ |  |
-| CA-4788 | Fort Langley National Historic Site | https://parks.canada.ca/lhn-nhs/bc/langley/visit/visit6 | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2026-05-01 |  ✗ |  |
-| CA-0117 | Yoho National Park | https://parks.canada.ca/pn-np/bc/yoho/visit/depliants-brochures | page · the agency site | — (date unknown, checked 2026-11-01) · posted — | https://parks.canada.ca/pn-np/bc/yoho/visit/regs ✓ |  |
-| CA-0028 | Glacier National Park | https://parks.canada.ca/pn-np/bc/glacier/visit/depliants-brochures | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2018-02-14 |  ✗ |  |
-| CA-0061 | Mount Revelstoke National Park | https://parks.canada.ca/pn-np/bc/revelstoke/visit/depliants-brochures | page · the agency site | — (date unknown, checked 2026-11-01) · posted 2021-06-07 |  ✗ |  |
-| CA-4787 | Fisgard Lighthouse National Historic Sit | https://parks.canada.ca/lhn-nhs/bc/fortroddhill/visit/plandusite-sitemap | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted 2023-11-23 |  ✗ |  |
-| CA-6131 | Cowichan River National Heritage Area | https://chrs.ca/en/heritage-river-story-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-6133 | Kicking Horse River National Heritage Ar | https://chrs.ca/en/heritage-river-story-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-6132 | Fraser River National Heritage Area | https://chrs.ca/en/heritage-river-story-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-5548 | Blackie Spit Recreation Park | https://flipbook-surrey-ca.cld.bz/Nature-Trails-Brochure/8/ | page ✓name · linked from the agency page (flipbook-su | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3394 | Dacre Park | https://www.coquitlam.ca/DocumentCenter/View/7054/Dacre-Park-Amenities-Map-PDF?bidId= | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3859 | Mundy Park | https://www.coquitlam.ca/DocumentCenter/View/1584/Mundy-Park-Trail-Map-PDF?bidId= | pdf ✓name · combined map: covers 2 units · the agency site | 2016: check it is still current (the PDF file's own stamp (may be the print da) · posted — |  ✗ |  |
-| CA-3601 | Hickey Park | https://www.coquitlam.ca/DocumentCenter/View/1061/Hickey-Street-Reservoir-Park-Amenities-M | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3777 | Maquabeak Park | https://www.coquitlam.ca/DocumentCenter/View/1066/Maquabeak-Park-Amenities-Map-PDF?bidId= | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3229 | Matheson Lake Regional Park | https://www.crd.ca/parks-recreation/regional-parks-trails/regional-park-maps | page ✓name · linked from the agency page (crd.ca) | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.crd.ca/programs-services/animals-pets/regulation-bylaws ✓ |  |
-| CA-5668 | Elk/Beaver Lake Regional Park | https://www.crd.ca/parks-recreation/regional-parks-trails/regional-park-maps | page ✓name · linked from the agency page (crd.ca) | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.crd.ca/programs-services/animals-pets/regulation-bylaws ✓ |  |
-| CA-3387 | Creston Valley Wildlife Management Area | https://crestonwildlife.ca/recreation/trails-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-4074 | Sgaan Kinghlas-Bowie Seamount Marine Pro | https://www.dfo-mpo.gc.ca/oceans/images/mpa-zpm/sgaan-kinghlas-bowie/mpa-sk-b-map-carte-en | image · the agency site | date unknown (date unknown, checked 2026-11-01) · posted Apr 17, 2025 |  ✗ |  |
-| CA-0060 | Mount Arrowsmith Biosphere Reserve | https://www.mabr.ca/apmap | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-3775 | Maple Ridge Park | https://www.mapleridge.ca/community-safety/police-services/crime-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.mapleridge.ca/your-government/bylaws-policies ✓ |  |
-| CA-3618 | Hume Park | https://www.newwestcity.ca/parks-and-recreation/recreation/active-living-guide-and-brochur | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.newwestcity.ca/parks-and-recreation/parks/off-leash-dog-ar ✓ |  |
-| CA-5539 | Uplands Park Natural Area | https://www.oakbay.ca/community-culture/getting-around/community-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.oakbay.ca/council-administration/bylaws-policies/ ✓ |  |
-| CA-5343 | Skaha Lake Recreation Park | https://www.penticton.ca/our-community/about-us/maps-gis-open-data | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.penticton.ca/city-hall/city-council/council-policies ✓ |  |
-| CA-3966 | Pitt Meadows Athletic Park Recreation Si | https://www.pittmeadows.ca/services-and-payments/city-maps-and-open-data | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.pittmeadows.ca/business-and-building/zoning-and-land-use/r ✓ |  |
-| CA-5546 | Swan Lake Nature Reserve | https://www.rdno.ca/trailsandnaturalspaces/trail-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted Oct 30, 2026 |  ✗ |  |
-| CA-5667 | Mount Tolmie Park | https://www.saanich.ca/EN/main/parks-recreation-community/parks/parks-trails-amenities/tra | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.saanich.ca/EN/main/local-government/bylaws.html ✓ |  |
-| CA-4166 | Surrey Lake Park | https://www.surrey.ca/services-payments/online-services/maps-cosmos | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — |  ✗ |  |
-| CA-4268 | Walnut Grove Community Park | https://www.tol.ca/en/connect/data-maps-and-locations.aspx?_mid_=41399 | page ✓name · linked from the agency page (tol.ca) | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.tol.ca/en/building-development/development.aspx ✓ |  |
-| CA-3422 | Discovery Town Park | https://www.tol.ca/en/parks-recreation/resources/park-maps/Discovery-Town-Park.pdf | pdf ✓name · linked from the agency page (tol.ca) | 2025 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2025 | https://www.tol.ca/en/building-development/development.aspx ✓ |  |
-| CA-3180 | Allco Park | https://apps.vertigisstudio.com/web/?app=8b409970fec048b0940b60fe1e225e39 | page · linked from the agency page (apps.vertig | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.mapleridge.ca/your-government/bylaws-policies ✓ |  |
-| CA-5540 | Beacon Hill Park | https://www.victoria.ca/building-business/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-01) · posted — | https://www.victoria.ca/building-business/permits-development-construc ✓ |  |
 
 ### CA-BC no map yet (1215): the reason
-- CA-0001 Alaksen National Wildlife Area: no map link on file and none on the park page
-- CA-0017 Clayoquot Sound Biosphere Reserve: no map link on file and none on the park page
-- CA-0018 Columbia National Wildlife Area: no map link on file and none on the park page
-- CA-0031 Gulf Islands National Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0032 Gwaii Haanas and Haida National Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0066 Pacific Rim National Park Reserve: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0079 Qualicum National Wildlife Area: no map link on file and none on the park page
-- CA-0105 Vaseux-Bighorn National Wildlife Area: no map link on file and none on the park page
-- CA-0114 Widgeon Valley National Wildlife Area: no map link on file and none on the park page
-- CA-0445 Cultus Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0691 Akamina-Kishinena Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0692 Alexandra Bridge Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0693 Alice Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0694 Allison Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0695 Anderson Bay Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0696 Anderson Flats Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0697 Anstey Hunakwa Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0698 Arrowstone Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0699 Artlish Caves Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0700 Atna River Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0701 Babine Mountains Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0702 Bamberton Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0703 Banana Island Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0704 Bear Creek Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0705 Bear Glacier Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0706 Big Creek Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0707 Birkenhead Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0708 Bonaparte Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0709 Bowron Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0710 Bugaboo Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0711 Cape Scott Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0712 Cariboo Mountains Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0713 Carp Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0714 Cathedral Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0715 Chase Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0716 Cypress Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0717 Denetiah Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0718 Duffey Lake Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0719 Elk Lakes Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- CA-0720 Entiako Provincial Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- CA-0001 : 
+- CA-0017 : 
+- CA-0018 : 
+- CA-0028 : 
+- CA-0031 : 
+- CA-0032 : 
+- CA-0045 : 
+- CA-0060 : 
+- CA-0061 : 
+- CA-0066 : 
+- CA-0079 : 
+- CA-0105 : 
+- CA-0114 : 
+- CA-0117 : 
+- CA-0445 : 
+- CA-0691 : 
+- CA-0692 : 
+- CA-0693 : 
+- CA-0694 : 
+- CA-0695 : 
+- CA-0696 : 
+- CA-0697 : 
+- CA-0698 : 
+- CA-0699 : 
+- CA-0700 : 
+- CA-0701 : 
+- CA-0702 : 
+- CA-0703 : 
+- CA-0704 : 
+- CA-0705 : 
+- CA-0706 : 
+- CA-0707 : 
+- CA-0708 : 
+- CA-0709 : 
+- CA-0710 : 
+- CA-0711 : 
+- CA-0712 : 
+- CA-0713 : 
+- CA-0714 : 
+- CA-0715 : 
 
 ## CA-YT sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -6888,147 +6817,3 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - AU-0039 Sir James Mitchell National Park: no map link on file and none on the park page
 - AU-0040 Shoalwater Islands Marine Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 406))
 - AU-0041 Shell Beach Conservation Park: no map link on file and none on the park page
-
-## robots.txt said no (hosts we did not read)
-- cob.spatial.t1cloud.com: 1 addresses (User-agent: * | Allow: /$ | Allow: /*/LogOn | Allow: /T1Default/CiAnywhere/Web/*/Workplace/*/timages)
-- en.wikipedia.org: 2 addresses (﻿# robots.txt for http://www.wikipedia.org/ and friends | User-agent: MJ12bot | Disallow: / | User-a)
-
-## hosts resting a day (three strikes)
-- 150.rmbr.ca
-- alkringtonwoods.org
-- alpha.gov.bc.ca
-- artemisa.gob.cu
-- bcparks.ca
-- bedfordcommunity.com
-- beta.trafford.gov.uk
-- bonzle.com
-- bosquedechapultepec.mx
-- bosquesurbanos.mx
-- bradfordonavon.uk.com
-- carriacou.biz
-- chapeltownpark.co.uk
-- cidoc.marn.gob.sv
-- cubarte.cult.cu
-- cubatrip.net
-- democracy.southend.gov.uk
-- destinoyaxha.com
-- dev.bcparks.ca
-- devondaze.co.uk
-- difusion.inah.gob.mx
-- dominicabotanicgardens.org
-- ecured.cu
-- essex-sunshine-coast.org.uk
-- experiencia.edomex.gob.mx
-- florida.gob.cu
-- getamap.ordnancesurvey.co.uk
-- gis.worcestershire.gov.uk
-- gobluebayislands.com
-- greenspacescaerphilly.co.uk
-- haltonconnect.co.uk
-- https
-- iowaculture.gov
-- jardin.inecol.mx
-- lancashirewalks.co.uk
-- maps.bonzle.com
-- market.gob.sv
-- mdh.ima.gov.tt
-- menvcity.org.uk
-- nalis.gov.tt
-- nationalparks.gov.vc
-- newlandsproject.co.uk
-- northamptonshiresurprise.com
-- nwtparks.ca
-- open.alberta.ca
-- pazweb.gob.cu
-- propertysearches.unitedutilities.com
-- publications.saskatchewan.ca
-- revistaecovida.upr.edu.cu
-- rris.biopama.org
-- sharphillwood.org
-- sma.edomex.gob.mx
-- smaot.guanajuato.gob.mx
-- superweston.net
-- swanpool.org.uk
-- tourism.govt.lc
-- travelnunavut.ca
-- turner.yorkshire.com
-- visittamworth.co.uk
-- waterpark.org
-- web.archive.org
-- wildopenwater.com
-- worldmarineparks.com
-- www.abpp-pl.castatic.reserveamerica.com
-- www.artemisa.gob.cu
-- www.ballgrove.org
-- www.barbados-island.com
-- www.barbadosadvocate.com
-- www.belizehub.com
-- www.blackburn.gov.uk
-- www.camaguey.gob.cu
-- www.carbonlandscape.org.uk
-- www.cgcounty.org
-- www.ciegodeavila.gob.cu
-- www.cienfuegos.gob.cu
-- www.cipdh.gob.ar
-- www.city.surrey.bc.ca
-- www.corazondepuebla.com.mx
-- www.cravendc.gov.uk
-- www.cubarentrooms.com
-- www.dcceew.gov.au
-- www.delsanjuanero.gob.cu
-- www.eaststaffsbc.gov.uk
-- www.ecured.cu
-- www.ellesmere.info
-- www.environment.gov.ag
-- www.environment.nsw.gov.au
-- www.escambray.cu
-- www.eyesuffolk.org
-- www.goldfieldsguide.com.au
-- www.govt.lc
-- www.granma.cu
-- www.grimsarghwetlands.org
-- www.highpeakhouse.com
-- www.highwoodsbexhill.org.uk
-- www.historicenvironment.scot
-- www.hothampark.co.uk
-- www.huttoncranswick.com
-- www.in-common.co.uk
-- www.inah.gob.mx
-- www.inehrm.gob.mx
-- www.jamaicatravelandculture.com
-- www.legendarydartmoor.co.uk
-- www.lospalacios.gob.cu
-- www.marena.gob.ni
-- www.mayaweb.gob.cu
-- www.megalithic.co.uk
-- www.muni-carta.go.cr
-- www.nationalparkstraveler.org
-- www.nuestropatrimonio.gob.do
-- www.nwleics.gov.uk
-- www.nwtparks.ca
-- www.onegreattorrington.uk
-- www.parc.ca
-- www.patrimoine-culturel.gouv.qc.ca
-- www.protectedplanet.net
-- www.puntarioc
-- www.reservaforestalfortuna.com
-- www.shop.ordnancesurveyleisure.co.uk
-- www.shropshiresgreatoutdoors.co.uk
-- www.sinac.go.cr
-- www.solwaycoastaonb.org.uk
-- www.sssi.naturalengland.org.uk
-- www.staffsmoorlands.gov.uk
-- www.stmichaelspark.co.uk
-- www.streetmap.co.uk
-- www.thorhildcounty.com
-- www.trentvale.co.uk
-- www.tripmondo.com
-- www.valenciacommunitiesfund.co.uk
-- www.veracruz.gob.mx
-- www.visitchesterfield.info
-- www.visitcumbria.com
-- www.visitmexico.com
-- www.visitnicaragua.us
-- www.visitpendle.com
-- www.visittamworth.co.uk
-- www2.clustrmaps.com

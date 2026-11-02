@@ -209,3 +209,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 1 days): key data/world-key/FR.json held: F-O3 retired parks still outlined: FR-14241, FR-16712, FR-3744
 - FROM WAITING ROOM (held since 2026-11-01, 1 days): key data/world-key/GB.json held: F-O3 retired parks still outlined: GB-2511
 - FROM WAITING ROOM (held since 2026-11-01, 1 days): key data/world-key/PY.json held: F-O2 5 of 29 outlines carry a layer name that shares no word with the park (17%; live 0/0): outlines swapped to other parks?
+- FROM BOT official documents bot (2026-11-02): grade me: US-DE data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41481481210)
