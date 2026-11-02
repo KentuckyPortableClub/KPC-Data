@@ -462,24 +462,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "US-5756",
-   "Park name (as the agency writes it)": "Browns Park WMA",
-   "Size": 3134,
-   "Unit": "acres",
-   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
-   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-2219",
-   "Park name (as the agency writes it)": "Parc Central",
-   "Size": 94,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "US-0054",
    "Park name (as the agency writes it)": "Nez Perce National Historical Park",
    "Size": 4226,
@@ -498,6 +480,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-5756",
+   "Park name (as the agency writes it)": "Browns Park WMA",
+   "Size": 3134,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-2219",
+   "Park name (as the agency writes it)": "Parc Central",
+   "Size": 94,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "CA-5663",
    "Park name (as the agency writes it)": "Hepworth",
    "Size": 94,
@@ -513,6 +513,15 @@
    "Unit": "acres",
    "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
    "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1053&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5666",
+   "Park name (as the agency writes it)": "Bighead River",
+   "Size": 51,
+   "Unit": "acres",
+   "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D972&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
   },
   {
@@ -878,16 +887,6 @@
    "Retry?": "NO"
   },
   {
-   "Host": "services3.arcgis.com",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "gisservice.mt.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -898,11 +897,21 @@
    "Retry?": "NO"
   },
   {
+   "Host": "services3.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "gis.grey.ca",
    "Agency/area": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
    "Kind": "GIS layer",
    "Example URL": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
-   "# times used": 2,
+   "# times used": 3,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1049,6 +1058,16 @@
   },
   {
    "Host": "maps2.grca.on.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "idfg.idaho.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
    "Example URL": null,
