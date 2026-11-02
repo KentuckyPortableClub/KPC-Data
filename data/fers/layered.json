@@ -1,6 +1,6 @@
 {
  "about": "Layered-land list (federal x state POTA pairs, rule R4; chat 2 bot, from chat 8's list): new pairs appended each run, filled columns kept. 'layered' = PAD-US fee owner at the patch: FED owns = layered (2-fer), state owns = hard boundary. Not the verdict: the line decides.",
- "made": "2026-11-01",
+ "made": "2026-11-02",
  "pairs": [
   {
    "area": "US-AK",
@@ -630,7 +630,7 @@
    "rows": 1,
    "acres": 9.7,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -691,7 +691,7 @@
    "rows": 1,
    "acres": 17.4,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -734,7 +734,7 @@
    "rows": 1,
    "acres": 3305.1,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -790,7 +790,7 @@
    "rows": 1,
    "status": "merged into one row: US-1037+US-3682+US-4450@area@33.453,-85.816 (the same patch as the 3-",
    "acres": 83.8,
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "center": [
     33.452798,
     -85.816389
@@ -846,7 +846,7 @@
    "rows": 8,
    "acres": 1547.9,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -902,7 +902,7 @@
    "rows": 1,
    "status": "merged into one row: US-10396+US-3706+US-4452@area@34.348,-87.436 (the same patch as the 3",
    "acres": 25736.0,
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "center": [
     34.330627,
     -87.429318
@@ -949,7 +949,7 @@
    "rows": 1,
    "acres": 91039.6,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -975,6 +975,50 @@
   {
    "area": "US-AL",
    "refs": [
+    "US-13081",
+    "US-6460"
+   ],
+   "names": {
+    "US-13081": "Fort Toulouse Forever Wild Tract State Wildlife Area",
+    "US-6460": "Fort Toulouse National Historical Park"
+   },
+   "federal": [
+    "US-6460"
+   ],
+   "state": [
+    "US-13081"
+   ],
+   "pota_type": {
+    "US-13081": "State Wildlife Area",
+    "US-6460": "National Historical Park"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 259.1,
+   "checked": "2026-11-01",
+   "center": [
+    32.509063,
+    -86.24457
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Fort Toulouse National Historic Park",
+     "Own_Type": "STAT",
+     "Own_Name": "OTHS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SHCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-AL",
+   "refs": [
     "US-3683",
     "US-4450"
    ],
@@ -992,7 +1036,7 @@
    "rows": 1,
    "acres": 46233.3,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -1035,7 +1079,7 @@
    "rows": 2,
    "acres": 0,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "trail"
    ],
@@ -1094,7 +1138,7 @@
    "rows": 1,
    "acres": 24003.5,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -1120,6 +1164,40 @@
   {
    "area": "US-AL",
    "refs": [
+    "US-3697",
+    "US-4580"
+   ],
+   "names": {
+    "US-3697": "Lowndes Wildlife Management Area",
+    "US-4580": "Selma to Montgomery National Historic Trail"
+   },
+   "federal": [
+    "US-4580"
+   ],
+   "state": [
+    "US-3697"
+   ],
+   "pota_type": {
+    "US-3697": "Wildlife Management Area",
+    "US-4580": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    32.267068,
+    -86.696407
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-AL",
+   "refs": [
     "US-4449",
     "US-9911"
    ],
@@ -1137,7 +1215,7 @@
    "rows": 1,
    "acres": 6885.8,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -1180,7 +1258,7 @@
    "rows": 1,
    "acres": 24595.5,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -1207,6 +1285,66 @@
    "area": "US-AL",
    "refs": [
     "US-4450",
+    "US-4595"
+   ],
+   "names": {
+    "US-4450": "Talladega National Forest",
+    "US-4595": "Choccolocco State Forest"
+   },
+   "federal": [
+    "US-4450"
+   ],
+   "state": [
+    "US-4595"
+   ],
+   "pota_type": {
+    "US-4450": "National Forest",
+    "US-4595": "State Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "merged into one row: US-3683+US-4450+US-4595@area@33.709,-85.655 (the same patch as the 3-",
+   "acres": 6.9,
+   "checked": "2026-11-01",
+   "center": [
+    33.716227,
+    -85.651129
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Talladega National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Choccolocco State Forest",
+     "Own_Type": "STAT",
+     "Own_Name": "OTHS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDOL",
+     "Des_Tp": "SRMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-3683",
+     "Choccolocco Wildlife Management Area",
+     "Choccolocco State Forest",
+     "STAT"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-AL",
+   "refs": [
+    "US-4450",
     "US-9924"
    ],
    "names": {
@@ -1223,7 +1361,7 @@
    "rows": 1,
    "acres": 48501.8,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -4746,6 +4884,609 @@
   {
    "area": "US-CO",
    "refs": [
+    "US-0192",
+    "US-11897"
+   ],
+   "names": {
+    "US-0192": "Beaver Creek State Wildlife Area",
+    "US-11897": "Beaver Creek BLM Wilderness Area"
+   },
+   "federal": [
+    "US-11897"
+   ],
+   "state": [
+    "US-0192"
+   ],
+   "pota_type": {
+    "US-0192": "State Wildlife Area",
+    "US-11897": "BLM Wilderness Area"
+   },
+   "added": "2026-11-02",
+   "rows": 5,
+   "status": "candidate",
+   "acres": 86.4,
+   "checked": "2026-10-31",
+   "center": [
+    38.6393,
+    -104.996108
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Royal Gorge Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Beaver Creek State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-1935",
+     "Beaver Creek State Park",
+     "Beaver Creek State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-0222",
+    "US-1239"
+   ],
+   "names": {
+    "US-0222": "Baca National Wildlife Refuge",
+    "US-1239": "San Luis Lakes State Wildlife Area"
+   },
+   "federal": [
+    "US-0222"
+   ],
+   "state": [
+    "US-1239"
+   ],
+   "pota_type": {
+    "US-0222": "National Wildlife Refuge",
+    "US-1239": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 10.1,
+   "checked": "2026-10-31",
+   "center": [
+    37.721584,
+    -105.777038
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Baca National Wildlife Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Baca National Wildlife Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "San Luis Lakes State Trust Lands",
+     "Own_Type": "STAT",
+     "Own_Name": "SLB",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Category": "Other"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-0223",
+    "US-9625"
+   ],
+   "names": {
+    "US-0223": "Browns Park National Wildlife Refuge",
+    "US-9625": "Browns Park State Wildlife Area"
+   },
+   "federal": [
+    "US-0223"
+   ],
+   "state": [
+    "US-9625"
+   ],
+   "pota_type": {
+    "US-0223": "National Wildlife Refuge",
+    "US-9625": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    40.879544,
+    -109.031967
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Browns Park State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [
+    [
+     "US-5756",
+     "Browns Park National Wildlife Management Area",
+     "Browns Park State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-0652",
+    "US-12190"
+   ],
+   "names": {
+    "US-0652": "Curecanti National Recreation Area",
+    "US-12190": "Centennial State Wildlife Area"
+   },
+   "federal": [
+    "US-0652"
+   ],
+   "state": [
+    "US-12190"
+   ],
+   "pota_type": {
+    "US-0652": "National Recreation Area",
+    "US-12190": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 73.7,
+   "checked": "2026-10-31",
+   "center": [
+    38.488984,
+    -107.095887
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Centennial State Wildlife Area",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Other"
+    }
+   ],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [
+    [
+     "US-7147",
+     "Centennial State Forest",
+     "Centennial State Wildlife Area",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-0652",
+    "US-12682"
+   ],
+   "names": {
+    "US-0652": "Curecanti National Recreation Area",
+    "US-12682": "Gunnison State Wildlife Area"
+   },
+   "federal": [
+    "US-0652"
+   ],
+   "state": [
+    "US-12682"
+   ],
+   "pota_type": {
+    "US-0652": "National Recreation Area",
+    "US-12682": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 23.8,
+   "checked": "2026-10-31",
+   "center": [
+    38.496444,
+    -107.03035
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Gunnison State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [
+    [
+     "US-4402",
+     "Gunnison National Forest",
+     "Gunnison State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-0652",
+    "US-12683"
+   ],
+   "names": {
+    "US-0652": "Curecanti National Recreation Area",
+    "US-12683": "Gunnison River State Wildlife Area"
+   },
+   "federal": [
+    "US-0652"
+   ],
+   "state": [
+    "US-12683"
+   ],
+   "pota_type": {
+    "US-0652": "National Recreation Area",
+    "US-12683": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 23.8,
+   "checked": "2026-10-31",
+   "center": [
+    38.496444,
+    -107.03035
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Gunnison State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [
+    [
+     "US-12682",
+     "Gunnison State Wildlife Area",
+     "Gunnison State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-11888",
+    "US-9595"
+   ],
+   "names": {
+    "US-11888": "Horsethief Canyon State Wildlife Area",
+    "US-9595": "McInnis Canyons BLM National Conservation Area"
+   },
+   "federal": [
+    "US-9595"
+   ],
+   "state": [
+    "US-11888"
+   ],
+   "pota_type": {
+    "US-11888": "State Wildlife Area",
+    "US-9595": "National Conservation Area"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "merged into one row: US-11888+US-9595@area@39.151,-108.782 (the same not-sure pair, shown ",
+   "acres": 147.1,
+   "checked": "2026-10-31",
+   "center": [
+    39.151562,
+    -108.782302
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Grand Junction Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Horsethief Canyon State Wildlife Area",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Other"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-11895",
+    "US-4404"
+   ],
+   "names": {
+    "US-11895": "Tarryall Reservoir State Wildlife Area",
+    "US-4404": "Pike National Forest"
+   },
+   "federal": [
+    "US-4404"
+   ],
+   "state": [
+    "US-11895"
+   ],
+   "pota_type": {
+    "US-11895": "State Wildlife Area",
+    "US-4404": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 10.3,
+   "checked": "2026-10-31",
+   "center": [
+    39.227071,
+    -105.611707
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Pike National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Tarryall Reservoir State Wildlife Area",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Other"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-5446",
+     "Pike State Forest",
+     "Pike National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-11897",
+    "US-13110"
+   ],
+   "names": {
+    "US-11897": "Beaver Creek BLM Wilderness Area",
+    "US-13110": "Skaguay Reservoir State Wildlife Area"
+   },
+   "federal": [
+    "US-11897"
+   ],
+   "state": [
+    "US-13110"
+   ],
+   "pota_type": {
+    "US-11897": "BLM Wilderness Area",
+    "US-13110": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 3,
+   "status": "candidate",
+   "acres": 14.1,
+   "checked": "2026-10-31",
+   "center": [
+    38.654502,
+    -105.05591
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Royal Gorge Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Skaguay Reservoir State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-11938",
+    "US-4406"
+   ],
+   "names": {
+    "US-11938": "Parvin Lake State Wildlife Area",
+    "US-4406": "Roosevelt National Forest"
+   },
+   "federal": [
+    "US-4406"
+   ],
+   "state": [
+    "US-11938"
+   ],
+   "pota_type": {
+    "US-11938": "State Wildlife Area",
+    "US-4406": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 1.0,
+   "checked": "2026-10-31",
+   "center": [
+    40.783948,
+    -105.553279
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Roosevelt National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Parvin Lake State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2550",
+     "Roosevelt State Park",
+     "Roosevelt National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-11939",
+    "US-4406"
+   ],
+   "names": {
+    "US-11939": "Poudre River State Wildlife Area",
+    "US-4406": "Roosevelt National Forest"
+   },
+   "federal": [
+    "US-4406"
+   ],
+   "state": [
+    "US-11939"
+   ],
+   "pota_type": {
+    "US-11939": "State Wildlife Area",
+    "US-4406": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "water only: boat or kayak",
+   "acres": 1.7,
+   "checked": "2026-10-31",
+   "center": [
+    40.693896,
+    -105.679686
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Roosevelt National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-2550",
+     "Roosevelt State Park",
+     "Roosevelt National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
     "US-1214",
     "US-4404"
    ],
@@ -4908,6 +5649,936 @@
     ]
    ],
    "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-12682",
+    "US-4575"
+   ],
+   "names": {
+    "US-12682": "Gunnison State Wildlife Area",
+    "US-4575": "Old Spanish National Historic Trail"
+   },
+   "federal": [
+    "US-4575"
+   ],
+   "state": [
+    "US-12682"
+   ],
+   "pota_type": {
+    "US-12682": "State Wildlife Area",
+    "US-4575": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    38.496439,
+    -107.028596
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Gunnison State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [
+    [
+     "US-4402",
+     "Gunnison National Forest",
+     "Gunnison State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-12683",
+    "US-4575"
+   ],
+   "names": {
+    "US-12683": "Gunnison River State Wildlife Area",
+    "US-4575": "Old Spanish National Historic Trail"
+   },
+   "federal": [
+    "US-4575"
+   ],
+   "state": [
+    "US-12683"
+   ],
+   "pota_type": {
+    "US-12683": "State Wildlife Area",
+    "US-4575": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    38.496439,
+    -107.028596
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Gunnison State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [
+    [
+     "US-12682",
+     "Gunnison State Wildlife Area",
+     "Gunnison State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-13569",
+    "US-4408"
+   ],
+   "names": {
+    "US-13569": "Perins Peak State Wildlife Area",
+    "US-4408": "San Juan National Forest"
+   },
+   "federal": [
+    "US-4408"
+   ],
+   "state": [
+    "US-13569"
+   ],
+   "pota_type": {
+    "US-13569": "State Wildlife Area",
+    "US-4408": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 5.8,
+   "checked": "2026-10-31",
+   "center": [
+    37.33494,
+    -107.933497
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "San Juan National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4404",
+    "US-9605"
+   ],
+   "names": {
+    "US-4404": "Pike National Forest",
+    "US-9605": "Alma State Wildlife Area"
+   },
+   "federal": [
+    "US-4404"
+   ],
+   "state": [
+    "US-9605"
+   ],
+   "pota_type": {
+    "US-4404": "National Forest",
+    "US-9605": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 2.0,
+   "checked": "2026-10-31",
+   "center": [
+    39.346411,
+    -106.064412
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Pike National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Alma State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-5446",
+     "Pike State Forest",
+     "Pike National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-9604"
+   ],
+   "names": {
+    "US-4405": "Rio Grande National Forest",
+    "US-9604": "Alberta Park Reservoir State Wildlife Area"
+   },
+   "federal": [
+    "US-4405"
+   ],
+   "state": [
+    "US-9604"
+   ],
+   "pota_type": {
+    "US-4405": "National Forest",
+    "US-9604": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "water only: boat or kayak",
+   "acres": 39.6,
+   "checked": "2026-10-31",
+   "center": [
+    37.467913,
+    -106.766448
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Rio Grande National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Alberta Park Reservoir State Wildlife Area",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-13575",
+     "Rio Grande State Wildlife Area",
+     "Rio Grande National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-9610"
+   ],
+   "names": {
+    "US-4405": "Rio Grande National Forest",
+    "US-9610": "Beaver Creek Reservoir State Wildlife Area"
+   },
+   "federal": [
+    "US-4405"
+   ],
+   "state": [
+    "US-9610"
+   ],
+   "pota_type": {
+    "US-4405": "National Forest",
+    "US-9610": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 104.5,
+   "checked": "2026-10-31",
+   "center": [
+    37.594443,
+    -106.666144
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Rio Grande National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Beaver Creek Reservoir State Wildlife Area",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-13575",
+     "Rio Grande State Wildlife Area",
+     "Rio Grande National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-9634"
+   ],
+   "names": {
+    "US-4405": "Rio Grande National Forest",
+    "US-9634": "Coller State Wildlife Area"
+   },
+   "federal": [
+    "US-4405"
+   ],
+   "state": [
+    "US-9634"
+   ],
+   "pota_type": {
+    "US-4405": "National Forest",
+    "US-9634": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 4,
+   "status": "candidate",
+   "acres": 8.3,
+   "checked": "2026-10-31",
+   "center": [
+    37.743023,
+    -106.738629
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Rio Grande National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Coller State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-13575",
+     "Rio Grande State Wildlife Area",
+     "Rio Grande National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9612"
+   ],
+   "names": {
+    "US-4406": "Roosevelt National Forest",
+    "US-9612": "Bellaire Lake State Wildlife Area"
+   },
+   "federal": [
+    "US-4406"
+   ],
+   "state": [
+    "US-9612"
+   ],
+   "pota_type": {
+    "US-4406": "National Forest",
+    "US-9612": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "water only: boat or kayak",
+   "acres": 11.5,
+   "checked": "2026-10-31",
+   "center": [
+    40.77213,
+    -105.618757
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Roosevelt National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bellaire Lake State Wildlife Area",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-2550",
+     "Roosevelt State Park",
+     "Roosevelt National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9629"
+   ],
+   "names": {
+    "US-4406": "Roosevelt National Forest",
+    "US-9629": "Cherokee State Wildlife Area"
+   },
+   "federal": [
+    "US-4406"
+   ],
+   "state": [
+    "US-9629"
+   ],
+   "pota_type": {
+    "US-4406": "National Forest",
+    "US-9629": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 4.6,
+   "checked": "2026-10-31",
+   "center": [
+    40.767547,
+    -105.401831
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Roosevelt National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Cherokee State Wildlife Area - Lone Pine Unit",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2550",
+     "Roosevelt State Park",
+     "Roosevelt National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9644"
+   ],
+   "names": {
+    "US-4406": "Roosevelt National Forest",
+    "US-9644": "Dowdy Lake State Wildlife Area"
+   },
+   "federal": [
+    "US-4406"
+   ],
+   "state": [
+    "US-9644"
+   ],
+   "pota_type": {
+    "US-4406": "National Forest",
+    "US-9644": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 117.0,
+   "checked": "2026-10-31",
+   "center": [
+    40.796854,
+    -105.559532
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Roosevelt National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Dowdy Lake State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2550",
+     "Roosevelt State Park",
+     "Roosevelt National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4408",
+    "US-9660"
+   ],
+   "names": {
+    "US-4408": "San Juan National Forest",
+    "US-9660": "Joe Moore Reservoir State Wildlife Area"
+   },
+   "federal": [
+    "US-4408"
+   ],
+   "state": [
+    "US-9660"
+   ],
+   "pota_type": {
+    "US-4408": "National Forest",
+    "US-9660": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "water only: boat or kayak",
+   "acres": 6.2,
+   "checked": "2026-10-31",
+   "center": [
+    37.421624,
+    -108.315778
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "San Juan National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4410",
+    "US-9609"
+   ],
+   "names": {
+    "US-4410": "White River National Forest",
+    "US-9609": "Basalt State Wildlife Area"
+   },
+   "federal": [
+    "US-4410"
+   ],
+   "state": [
+    "US-9609"
+   ],
+   "pota_type": {
+    "US-4410": "National Forest",
+    "US-9609": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 31.2,
+   "checked": "2026-10-31",
+   "center": [
+    39.376032,
+    -106.972257
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "White River National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Basalt State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-10503",
+     "White River State Wildlife Area",
+     "White River National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4410",
+    "US-9619"
+   ],
+   "names": {
+    "US-4410": "White River National Forest",
+    "US-9619": "Blue River State Wildlife Area"
+   },
+   "federal": [
+    "US-4410"
+   ],
+   "state": [
+    "US-9619"
+   ],
+   "pota_type": {
+    "US-4410": "National Forest",
+    "US-9619": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 8.7,
+   "checked": "2026-10-31",
+   "center": [
+    39.832677,
+    -106.225486
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "White River National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Blue River State Wildlife Area - Blue River Unit",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-10503",
+     "White River State Wildlife Area",
+     "White River National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4575",
+    "US-9620"
+   ],
+   "names": {
+    "US-4575": "Old Spanish National Historic Trail",
+    "US-9620": "Bodo State Wildlife Area"
+   },
+   "federal": [
+    "US-4575"
+   ],
+   "state": [
+    "US-9620"
+   ],
+   "pota_type": {
+    "US-4575": "National Historic Trail",
+    "US-9620": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    37.221333,
+    -107.881588
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bodo State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4575",
+    "US-9631"
+   ],
+   "names": {
+    "US-4575": "Old Spanish National Historic Trail",
+    "US-9631": "Coalbed Canyon State Wildlife Area"
+   },
+   "federal": [
+    "US-4575"
+   ],
+   "state": [
+    "US-9631"
+   ],
+   "pota_type": {
+    "US-4575": "National Historic Trail",
+    "US-9631": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 3,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    37.808119,
+    -109.01297
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4575",
+    "US-9648"
+   ],
+   "names": {
+    "US-4575": "Old Spanish National Historic Trail",
+    "US-9648": "Escalante State Wildlife Area"
+   },
+   "federal": [
+    "US-4575"
+   ],
+   "state": [
+    "US-9648"
+   ],
+   "pota_type": {
+    "US-4575": "National Historic Trail",
+    "US-9648": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    38.751948,
+    -108.157206
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-4579",
+    "US-9639"
+   ],
+   "names": {
+    "US-4579": "Santa Fe National Historic Trail",
+    "US-9639": "Deadman State Wildlife Area"
+   },
+   "federal": [
+    "US-4579"
+   ],
+   "state": [
+    "US-9639"
+   ],
+   "pota_type": {
+    "US-4579": "National Historic Trail",
+    "US-9639": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-31",
+   "center": [
+    38.082546,
+    -102.260767
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Deadman State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-CO",
+   "refs": [
+    "US-9593",
+    "US-9648"
+   ],
+   "names": {
+    "US-9593": "Dominguez-Escalante BLM National Conservation Area",
+    "US-9648": "Escalante State Wildlife Area"
+   },
+   "federal": [
+    "US-9593"
+   ],
+   "state": [
+    "US-9648"
+   ],
+   "pota_type": {
+    "US-9593": "National Conservation Area",
+    "US-9648": "State Wildlife Area"
+   },
+   "added": "2026-11-02",
+   "rows": 6,
+   "status": "merged into one row: US-9593+US-9648@area@38.693,-108.352 (the same not-sure pair, shown o",
+   "acres": 535.1,
+   "checked": "2026-10-31",
+   "center": [
+    38.602141,
+    -108.289004
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Escalante State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-CT",
@@ -15485,7 +17156,7 @@
    "rows": 1,
    "acres": 26.0,
    "status": "water only: boat or kayak",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -15525,6 +17196,84 @@
    "owner_at_patch": "FED + STAT",
    "other_parks_here": [],
    "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-KS",
+   "refs": [
+    "US-4579",
+    "US-7409"
+   ],
+   "names": {
+    "US-4579": "Santa Fe National Historic Trail",
+    "US-7409": "Osage State Fishing Lake"
+   },
+   "federal": [
+    "US-4579"
+   ],
+   "state": [
+    "US-7409"
+   ],
+   "pota_type": {
+    "US-4579": "National Historic Trail",
+    "US-7409": "State Fishing Lake"
+   },
+   "added": "2026-11-02",
+   "rows": 3,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    38.777581,
+    -95.664887
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-KS",
+   "refs": [
+    "US-4579",
+    "US-9188"
+   ],
+   "names": {
+    "US-4579": "Santa Fe National Historic Trail",
+    "US-9188": "Shawnee Indian Mission State Historic Site"
+   },
+   "federal": [
+    "US-4579"
+   ],
+   "state": [
+    "US-9188"
+   ],
+   "pota_type": {
+    "US-4579": "National Historic Trail",
+    "US-9188": "State Historic Site"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    39.032165,
+    -94.624452
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Shawnee Indian Mission",
+     "Own_Type": "STAT",
+     "Own_Name": "OTHS",
+     "Mang_Type": "STAT",
+     "Mang_Name": "OTHS",
+     "Des_Tp": "SOTH",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-LA",
@@ -25742,7 +27491,7 @@
    "rows": 1,
    "acres": 0.6,
    "status": "not sure: the ownership map shows more t",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -25803,7 +27552,7 @@
    "rows": 2,
    "acres": 2.4,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -25861,10 +27610,10 @@
     "US-0788"
    ],
    "ground": [],
-   "rows": 19,
+   "rows": 20,
    "acres": 860.3,
    "status": "merged into one row: US-0788+US-4009@are",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -25904,10 +27653,10 @@
     "US-0788"
    ],
    "ground": [],
-   "rows": 1,
-   "acres": 7.9,
+   "rows": 3,
+   "acres": 17.0,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -25940,6 +27689,50 @@
   {
    "area": "US-MO",
    "refs": [
+    "US-10110",
+    "US-9757"
+   ],
+   "names": {
+    "US-10110": "Wire Road State Conservation Area",
+    "US-9757": "Butterfield Overland National Historic Trail"
+   },
+   "federal": [
+    "US-9757"
+   ],
+   "state": [
+    "US-10110"
+   ],
+   "pota_type": {
+    "US-10110": "State Conservation Area",
+    "US-9757": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    36.92341,
+    -93.590037
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Wire Road Conservation Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDC",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
     "US-10211",
     "US-4009"
    ],
@@ -25957,7 +27750,7 @@
    "rows": 8,
    "acres": 509.4,
    "status": "merged into one row: US-10211+US-4009@ar",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26009,7 +27802,7 @@
    "rows": 1,
    "acres": 4.9,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26051,6 +27844,126 @@
   {
    "area": "US-MO",
    "refs": [
+    "US-11138",
+    "US-4492"
+   ],
+   "names": {
+    "US-11138": "Roaring River State Conservation Area",
+    "US-4492": "Mark Twain National Forest"
+   },
+   "federal": [
+    "US-4492"
+   ],
+   "state": [
+    "US-11138"
+   ],
+   "pota_type": {
+    "US-11138": "State Conservation Area",
+    "US-4492": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 9.1,
+   "checked": "2026-11-01",
+   "center": [
+    36.568902,
+    -93.813926
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Mark Twain National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Roaring River Conservation Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDC",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2102",
+     "Mark Twain State Park",
+     "Mark Twain National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
+    "US-11370",
+    "US-4492"
+   ],
+   "names": {
+    "US-11370": "Shannon Ranch State Conservation Area",
+    "US-4492": "Mark Twain National Forest"
+   },
+   "federal": [
+    "US-4492"
+   ],
+   "state": [
+    "US-11370"
+   ],
+   "pota_type": {
+    "US-11370": "State Conservation Area",
+    "US-4492": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 2.7,
+   "checked": "2026-11-01",
+   "center": [
+    36.951395,
+    -92.303236
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Mark Twain National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Shannon Ranch Conservation Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDC",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2102",
+     "Mark Twain State Park",
+     "Mark Twain National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
     "US-13160",
     "US-4492"
    ],
@@ -26068,7 +27981,7 @@
    "rows": 3,
    "acres": 30.7,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26118,7 +28031,7 @@
    "rows": 2,
    "acres": 20.1,
    "status": "merged into one row: US-1754+US-4009@are",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26161,7 +28074,7 @@
    "rows": 2,
    "acres": 5.9,
    "status": "merged into one row: US-1756+US-4009@are",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26187,6 +28100,94 @@
   {
    "area": "US-MO",
    "refs": [
+    "US-1762",
+    "US-9757"
+   ],
+   "names": {
+    "US-1762": "Harry S Truman State Park",
+    "US-9757": "Butterfield Overland National Historic Trail"
+   },
+   "federal": [
+    "US-9757"
+   ],
+   "state": [
+    "US-1762"
+   ],
+   "pota_type": {
+    "US-1762": "State Park",
+    "US-9757": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 4,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    38.16689,
+    -93.380339
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Harry Truman Recreation Area",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "FED",
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "UNK",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-4579"
+   ],
+   "names": {
+    "US-1766": "Katy Trail State Park",
+    "US-4579": "Santa Fe National Historic Trail"
+   },
+   "federal": [
+    "US-4579"
+   ],
+   "state": [
+    "US-1766"
+   ],
+   "pota_type": {
+    "US-1766": "State Park",
+    "US-4579": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    38.987455,
+    -92.754736
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Katy Trail",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
     "US-1774",
     "US-4009"
    ],
@@ -26204,7 +28205,7 @@
    "rows": 1,
    "acres": 41.4,
    "status": "not sure: low-confidence outline for Oza",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26239,6 +28240,66 @@
   {
    "area": "US-MO",
    "refs": [
+    "US-1780",
+    "US-4492"
+   ],
+   "names": {
+    "US-1780": "Roaring River State Park",
+    "US-4492": "Mark Twain National Forest"
+   },
+   "federal": [
+    "US-4492"
+   ],
+   "state": [
+    "US-1780"
+   ],
+   "pota_type": {
+    "US-1780": "State Park",
+    "US-4492": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 19.0,
+   "checked": "2026-11-01",
+   "center": [
+    36.56912,
+    -93.825049
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Mark Twain National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Roaring River State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "OTHS",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2102",
+     "Mark Twain State Park",
+     "Mark Twain National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
     "US-1787",
     "US-4492"
    ],
@@ -26256,7 +28317,7 @@
    "rows": 37,
    "acres": 411.1,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26304,6 +28365,50 @@
   {
    "area": "US-MO",
    "refs": [
+    "US-3335",
+    "US-4579"
+   ],
+   "names": {
+    "US-3335": "Arrow Rock State Historic Site",
+    "US-4579": "Santa Fe National Historic Trail"
+   },
+   "federal": [
+    "US-4579"
+   ],
+   "state": [
+    "US-3335"
+   ],
+   "pota_type": {
+    "US-3335": "State Historic Site",
+    "US-4579": "National Historic Trail"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    39.065616,
+    -92.945698
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Arrow Rock State Historic Site",
+     "Own_Type": "STAT",
+     "Own_Name": "OTHS",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SHCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
     "US-4009",
     "US-5696"
    ],
@@ -26321,7 +28426,7 @@
    "rows": 10,
    "acres": 468.9,
    "status": "merged into one row: US-4009+US-5696@are",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26373,7 +28478,7 @@
    "rows": 5,
    "acres": 600.8,
    "status": "merged into one row: US-4009+US-6491@are",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26416,7 +28521,7 @@
    "rows": 6,
    "acres": 114.6,
    "status": "merged into one row: US-4009+US-6498@are",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26472,7 +28577,7 @@
    "rows": 4,
    "status": "not sure: low-confidence outline for Ozark National Wild and Scenic River (check the join)",
    "acres": 0,
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "center": [
     37.108067,
     -91.202035
@@ -26512,7 +28617,7 @@
    "rows": 1,
    "acres": 1.5,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26546,6 +28651,66 @@
    "area": "US-MO",
    "refs": [
     "US-4492",
+    "US-6491"
+   ],
+   "names": {
+    "US-4492": "Mark Twain National Forest",
+    "US-6491": "Peck Ranch State Conservation Area"
+   },
+   "federal": [
+    "US-4492"
+   ],
+   "state": [
+    "US-6491"
+   ],
+   "pota_type": {
+    "US-4492": "National Forest",
+    "US-6491": "State Conservation Area"
+   },
+   "added": "2026-11-02",
+   "rows": 3,
+   "status": "merged into one row: US-4492+US-6491@area@36.999,-91.214",
+   "acres": 3.2,
+   "checked": "2026-11-01",
+   "center": [
+    36.999323,
+    -91.111531
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Mark Twain National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Peck Ranch Conservation Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDC",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2102",
+     "Mark Twain State Park",
+     "Mark Twain National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
+    "US-4492",
     "US-6504"
    ],
    "names": {
@@ -26562,7 +28727,7 @@
    "rows": 1,
    "acres": 11.8,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26625,10 +28790,10 @@
    "rows": 1,
    "status": "candidate",
    "acres": 0,
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "center": [
-    36.941637,
-    -90.397667
+    36.941627,
+    -90.397638
    ],
    "pad_at_patch": [
     {
@@ -26650,6 +28815,50 @@
      "STAT"
     ]
    ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-MO",
+   "refs": [
+    "US-4579",
+    "US-7512"
+   ],
+   "names": {
+    "US-4579": "Santa Fe National Historic Trail",
+    "US-7512": "Baltimore Bend State Conservation Area"
+   },
+   "federal": [
+    "US-4579"
+   ],
+   "state": [
+    "US-7512"
+   ],
+   "pota_type": {
+    "US-4579": "National Historic Trail",
+    "US-7512": "State Conservation Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-11-01",
+   "center": [
+    39.201265,
+    -93.592817
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Baltimore Bend Conservation Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDC",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
    "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
@@ -26675,7 +28884,7 @@
    "rows": 3,
    "acres": 25.9,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26736,7 +28945,7 @@
    "rows": 1,
    "acres": 5.4,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26837,10 +29046,10 @@
     "US-7113"
    ],
    "ground": [],
-   "rows": 12,
+   "rows": 13,
    "acres": 157.2,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "area"
    ],
@@ -26875,6 +29084,66 @@
   {
    "area": "US-MS",
    "refs": [
+    "US-2548",
+    "US-4494"
+   ],
+   "names": {
+    "US-2548": "Paul B. Johnson State Park",
+    "US-4494": "De Soto National Forest"
+   },
+   "federal": [
+    "US-4494"
+   ],
+   "state": [
+    "US-2548"
+   ],
+   "pota_type": {
+    "US-2548": "State Park",
+    "US-4494": "National Forest"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 2.5,
+   "checked": "2026-11-01",
+   "center": [
+    31.142315,
+    -89.23432
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "De Soto National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Paul B. Johnson State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-1039",
+     "De Soto State Park",
+     "De Soto National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
     "US-2552",
     "US-4560"
    ],
@@ -26892,7 +29161,7 @@
    "rows": 2,
    "acres": 0,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "trail"
    ],
@@ -26914,6 +29183,101 @@
    "owner_at_patch": "STAT",
    "other_parks_here": [],
    "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
+    "US-4493",
+    "US-7114"
+   ],
+   "names": {
+    "US-4493": "Bienville National Forest",
+    "US-7114": "Bienville Wildlife Management Area"
+   },
+   "federal": [
+    "US-4493"
+   ],
+   "state": [
+    "US-7114"
+   ],
+   "pota_type": {
+    "US-4493": "National Forest",
+    "US-7114": "Wildlife Management Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 26528.4,
+   "checked": "2026-11-01",
+   "center": [
+    32.418585,
+    -89.597223
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bienville National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
+    "US-4494",
+    "US-7110"
+   ],
+   "names": {
+    "US-4494": "De Soto National Forest",
+    "US-7110": "Little Biloxi Wildlife Management Area"
+   },
+   "federal": [
+    "US-4494"
+   ],
+   "state": [
+    "US-7110"
+   ],
+   "pota_type": {
+    "US-4494": "National Forest",
+    "US-7110": "Wildlife Management Area"
+   },
+   "added": "2026-11-02",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 8003.3,
+   "checked": "2026-11-01",
+   "center": [
+    30.716681,
+    -89.25734
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "De Soto National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-1039",
+     "De Soto State Park",
+     "De Soto National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-MS",
@@ -26956,6 +29320,189 @@
    ],
    "owner_at_patch": "FED",
    "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
+    "US-4495",
+    "US-7080"
+   ],
+   "names": {
+    "US-4495": "Delta National Forest",
+    "US-7080": "Sunflower Wildlife Management Area"
+   },
+   "federal": [
+    "US-4495"
+   ],
+   "state": [
+    "US-7080"
+   ],
+   "pota_type": {
+    "US-4495": "National Forest",
+    "US-7080": "Wildlife Management Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 55017.3,
+   "checked": "2026-11-01",
+   "center": [
+    32.727346,
+    -90.783187
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Delta National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
+    "US-4496",
+    "US-7100"
+   ],
+   "names": {
+    "US-4496": "Holly Springs National Forest",
+    "US-7100": "Upper Sardis Wildlife Management Area"
+   },
+   "federal": [
+    "US-4496"
+   ],
+   "state": [
+    "US-7100"
+   ],
+   "pota_type": {
+    "US-4496": "National Forest",
+    "US-7100": "Wildlife Management Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 40610.9,
+   "checked": "2026-11-01",
+   "center": [
+    34.47003,
+    -89.395626
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Holly Springs National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
+    "US-4497",
+    "US-7121"
+   ],
+   "names": {
+    "US-4497": "Homochitto National Forest",
+    "US-7121": "Sandy Creek Wildlife Management Area"
+   },
+   "federal": [
+    "US-4497"
+   ],
+   "state": [
+    "US-7121"
+   ],
+   "pota_type": {
+    "US-4497": "National Forest",
+    "US-7121": "Wildlife Management Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 16662.9,
+   "checked": "2026-11-01",
+   "center": [
+    31.43301,
+    -91.193267
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Homochitto National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-MS",
+   "refs": [
+    "US-4498",
+    "US-7088"
+   ],
+   "names": {
+    "US-4498": "Tombigbee National Forest",
+    "US-7088": "Choctaw Wildlife Management Area"
+   },
+   "federal": [
+    "US-4498"
+   ],
+   "state": [
+    "US-7088"
+   ],
+   "pota_type": {
+    "US-4498": "National Forest",
+    "US-7088": "Wildlife Management Area"
+   },
+   "added": "2026-11-02",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 21233.8,
+   "checked": "2026-11-01",
+   "center": [
+    33.292683,
+    -89.107262
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Tombigbee National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-2553",
+     "Tombigbee State Park",
+     "Tombigbee National Forest",
+     "FED"
+    ]
+   ],
    "layered": "FED owns (layered: R4 2-fer)"
   },
   {
@@ -27037,7 +29584,7 @@
    "rows": 1,
    "acres": 0,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "kinds": [
     "trail"
    ],
