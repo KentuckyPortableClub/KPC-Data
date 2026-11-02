@@ -30,37 +30,54 @@ jobs:
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
         run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Near misses
+        id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p cache/us cache/ca data/outline-leads
-          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
-          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
           rm -f cache/us/prev-*.json.gz
-          python3 .github/scripts/kpc_near_miss.py || true
+          python3 .github/scripts/kpc_near_miss.py || echo "::error title=kpc_near_miss.py::stopped with an error (exit $?), see the log above"
           mkdir -p kpcdata/data/outline-leads
-          [ -f data/outline-leads/near-miss.json ] && cp data/outline-leads/near-miss.json kpcdata/data/outline-leads/ || true
+          [ -f data/outline-leads/near-miss.json ] && cp data/outline-leads/near-miss.json kpcdata/data/outline-leads/ || true   # ok: nothing to do is fine
       - name: Observations log (the last day's changes)
+        id: kept_green_2
         continue-on-error: true
         run: |
-          git fetch -q --shallow-since="2 days ago" origin HEAD || true
+          git fetch -q --shallow-since="2 days ago" origin HEAD || echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $?)"
           BASE=$(git rev-list -1 --before="25 hours ago" HEAD 2>/dev/null)
           [ -z "$BASE" ] && BASE=$(git rev-list --max-parents=0 HEAD 2>/dev/null | tail -1)
           [ -z "$BASE" ] && BASE=HEAD
-          cp kpcdata/data/outline-leads/near-miss.json data/outline-leads/near-miss.json 2>/dev/null || true
-          git -C kpcdata fetch -q --shallow-since="2 days ago" origin HEAD || true
+          cp kpcdata/data/outline-leads/near-miss.json data/outline-leads/near-miss.json 2>/dev/null || true   # ok: nothing to do is fine
+          git -C kpcdata fetch -q --shallow-since="2 days ago" origin HEAD || true   # ok: optional git step; the next step reports
           DBASE=$(git -C kpcdata rev-list -1 --before="25 hours ago" HEAD 2>/dev/null); [ -z "$DBASE" ] && DBASE=HEAD
-          OBS_DATA_BASE=$DBASE OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || true
+          OBS_DATA_BASE=$DBASE OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || echo "::error title=kpc_map_observations.py::stopped with an error (exit $?), see the log above"
       - name: Save (once)
         if: always()
+        id: kept_green_3
         continue-on-error: true
         run: |
           cd kpcdata
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data 2>/dev/null || true
+          git add data 2>/dev/null || true   # ok: an optional path may not exist
           git diff --cached --quiet && exit 0
           git commit -qm "Map watch: near misses + observations (hidden review lists)" || exit 0
-          for i in 1 2 3 4; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 7)); done
+          { for i in 1 2 3 4; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 7)); done; echo "::error title=Save::not saved after every try; the next run tries again"; }
           true
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

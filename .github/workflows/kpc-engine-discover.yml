@@ -36,6 +36,7 @@ jobs:
           key: kpc-engine-discover-${{ github.run_id }}
           restore-keys: kpc-engine-discover-
       - name: Crawl
+        id: kept_green_1
         continue-on-error: true
         run: |
           set +e; T0=$(date +%s)
@@ -69,9 +70,23 @@ jobs:
             )
             done_n=$((done_n + 1)); new_n=$((new_n + ${n:-0}))
             (cd ../reg && git add registry/us_ca_discovered.json && git commit -qm "engine crawler: $a ($n layers)" && \
-              for i in 1 2 3; do git push -q origin HEAD:engine-registry && break; git pull -q --rebase origin engine-registry; sleep 5; done) || true
+              { saved=0; for i in 1 2 3; do git push -q origin HEAD:engine-registry && { saved=1; break; }; git pull -q --rebase origin engine-registry; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           done
           echo "::notice title=Engine crawler::$done_n areas crawled, $new_n government layers listed (the engine tries them at the pins on its next run)"
-          python3 .github/scripts/kpc_status.py board 'Engine crawler' green "$done_n areas, $new_n layers $(date -u +%F)" 'the park-info engine uses them; chat 11 grades what it finds' || true
-          (for i in 1 2 3; do git add data/status && git commit -qm "board: engine crawler" && git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && break; sleep 7; done) || true
+          python3 .github/scripts/kpc_status.py board 'Engine crawler' green "$done_n areas, $new_n layers $(date -u +%F)" 'the park-info engine uses them; chat 11 grades what it finds' || true   # ok: a status-board line (reporting only)
+          ({ saved=0; for i in 1 2 3; do git add data/status && git commit -qm "board: engine crawler" && git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; sleep 7; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           true
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

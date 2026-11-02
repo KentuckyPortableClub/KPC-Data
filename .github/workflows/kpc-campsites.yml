@@ -45,19 +45,22 @@ jobs:
           path: links
           persist-credentials: false
       - name: Saved official outlines for the other states (boundary cache release)
+        id: kept_green_1
         continue-on-error: true
         run: |
           mkdir -p kpcdata/cache/us
           if [ "${{ inputs.areas }}" != "US-KY" ]; then
-            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D kpcdata/cache/us --clobber || true
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D kpcdata/cache/us --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
           fi
           ls kpcdata/cache/us | wc -l
       - name: Official campground layers (kpc_camp_layers output, branch tools-out)
+        id: kept_green_2
         continue-on-error: true
         run: |
-          cd kpcdata && git fetch -q origin tools-out && mkdir -p ../camplayers && git archive FETCH_HEAD camp_layers | tar -x -C ../camplayers --strip-components=1 || true
+          cd kpcdata && git fetch -q origin tools-out && mkdir -p ../camplayers && git archive FETCH_HEAD camp_layers | tar -x -C ../camplayers --strip-components=1 || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
           ls ../camplayers/campgrounds 2>/dev/null | wc -l
       - name: Run the bot area by area and save once per chunk
+        id: kept_green_3
         continue-on-error: true
         env:
           AREAS: ${{ inputs.areas }}
@@ -68,14 +71,29 @@ jobs:
           STATUS: '1'
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_campsites_bot.py | tee /tmp/campsites.log || true
+          python3 .github/scripts/kpc_campsites_bot.py | tee /tmp/campsites.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_campsites_bot.py::stopped with an error (exit $rc), see the log above"
           grep -o '^LEFT=[0-9]*' /tmp/campsites.log | tail -1 >> "$GITHUB_ENV"
           grep -o '^GATE=[A-Z]*' /tmp/campsites.log | tail -1 >> "$GITHUB_ENV"
-          bash ../links/.github/scripts/kpc_push_data.sh . "camp and activate bot: ${{ inputs.areas || 'queue' }} (gate ${GATE:-none})" data/campsites data/status || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "camp and activate bot: ${{ inputs.areas || 'queue' }} (gate ${GATE:-none})" data/campsites data/status || echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $?)"
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        id: kept_green_4
         continue-on-error: true
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Camp and activate::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-campsites.yml -R ${{ github.repository }} -f areas= -f chunks=${{ inputs.chunks }} -f chain=$C -f test=no || true
+          gh workflow run kpc-campsites.yml -R ${{ github.repository }} -f areas= -f chunks=${{ inputs.chunks }} -f chain=$C -f test=no || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

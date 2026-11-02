@@ -53,11 +53,11 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin +refs/heads/picture-maps:refs/remotes/origin/picture-maps && git worktree add -q --detach ../pm origin/picture-maps
           git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../out origin/tools-out
-          python3 .github/scripts/kpc_picture_prep.py ../pm ../links || true
+          python3 .github/scripts/kpc_picture_prep.py ../pm ../links || echo "::error title=kpc_picture_prep.py::stopped with an error (exit $?), see the log above"
           mkdir -p ../out/picture-trace; [ "${{ inputs.fresh }}" != yes ] && [ -d ../out/picture-trace/traced ] && cp -r ../out/picture-trace/traced ../pm/ 2>/dev/null; [ -d .pic_cache ] && cp -r .pic_cache ../pm/cache 2>/dev/null
-          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || true   # Nov 2: pdftoppm (the sharp page) is not on GitHub's runner
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || echo "::warning title=install::an install step failed; the next steps may not work (exit $?)"   # Nov 2: pdftoppm (the sharp page) is not on GitHub's runner
           pip install -q -r .github/scripts/draft/requirements.txt pypdf 2>&1 | tail -1
-          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || true   # Nov 2 review: the sharp page (this run only, never saved) + GeoPDF coordinates
+          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || echo "::error title=kpc_picture_geo.py::stopped with an error (exit $?), see the log above"   # Nov 2 review: the sharp page (this run only, never saved) + GeoPDF coordinates
           set +e
           python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../pm --out ../pm/traced --resume --time-budget-min 45 > ../out/picture-trace/run-log.txt 2>&1
           E=$?; tail -12 ../out/picture-trace/run-log.txt
@@ -65,13 +65,28 @@ jobs:
           S=$(python3 -c "import csv,collections;r=list(csv.DictReader(open('../out/picture-trace/traced/report.csv')));print(len(r),'maps:',dict(collections.Counter(x['status'] for x in r)))" 2>/dev/null)
           echo "::notice title=Picture tracer::exit $E; $S"
           ( [ "$E" = 3 ] || grep -q 'left for the next run' ../out/picture-trace/run-log.txt ) && echo "more=yes" >> $GITHUB_OUTPUT
-          python3 .github/scripts/kpc_status.py board 'Picture-map tracer (draft)' green "$(date -u +%F): $S" 'chat 11 grades tools-out picture-trace/ (approximate only, R-G9)' || true
-          (for i in 1 2 3; do git add data/status && git commit -qm "board: picture tracer" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true
-          cd ../out && find picture-trace -size +20M -delete; git add -A picture-trace && git commit -qm "picture tracer (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || true
+          python3 .github/scripts/kpc_status.py board 'Picture-map tracer (draft)' green "$(date -u +%F): $S" 'chat 11 grades tools-out picture-trace/ (approximate only, R-G9)' || true   # ok: a status-board line (reporting only)
+          ({ saved=0; for i in 1 2 3; do git add data/status && git commit -qm "board: picture tracer" && git pull -q --rebase origin main && git push -q origin HEAD:main && { saved=1; break; }; sleep 7; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          cd ../out && find picture-trace -size +20M -delete; git add -A picture-trace && git commit -qm "picture tracer (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }; } || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           true
       - name: Next run
         if: steps.r.outputs.more == 'yes'
+        id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-picture-trace.yml -R ${{ github.repository }} || true
+        run: gh workflow run kpc-picture-trace.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

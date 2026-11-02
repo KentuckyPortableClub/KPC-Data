@@ -24,11 +24,12 @@ jobs:
           sparse-checkout: .github/scripts
           persist-credentials: false
       - name: Tidy + squash when over 150 MB
+        id: kept_green_1
         continue-on-error: true
         run: |
           cd lk
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py tidy || true
+          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py tidy || echo "::error title=kpc_lookup.py::stopped with an error (exit $?), see the log above"
           git add -A; git diff --cached --quiet || git commit -qm 'look-up bot: weekly tidy'
           KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}')
           echo "::notice title=Look-up branch::history $((KB/1024)) MB, $(git rev-list --count HEAD) commits, files $(du -sm --exclude=.git . | cut -f1) MB"
@@ -36,9 +37,23 @@ jobs:
             git checkout -q --orphan fresh && git add -A && git commit -qm "look-up branch squashed $(date -u +%F) (was $((KB/1024)) MB with history)"
             git push -q -f origin fresh:lookup && echo "::notice title=Look-up branch::squashed to one commit"
           else
-            for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done
+            { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }
           fi
           true
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY
   picture-maps:
     # Oct 30 2026 (chat 10; house rule Brandon Oct 29 11:10 PM): every Sunday, delete the picture maps of parks that now have an OFFICIAL
     # outline in the key (KPC-Links data/us-key + data/ca-key, grade 'official'), rebuild index.json, report the branch size (HQ squashes
@@ -65,14 +80,29 @@ jobs:
             data/us-key
             data/ca-key
       - name: Delete the maps of parks with an official outline
+        id: kept_green_2
         continue-on-error: true
         run: |
           cd pm
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          PIC_ROOT=. LINKS=../links python3 ../code/.github/scripts/kpc_lookup.py map-cleanup || true
+          PIC_ROOT=. LINKS=../links python3 ../code/.github/scripts/kpc_lookup.py map-cleanup || echo "::error title=kpc_lookup.py::stopped with an error (exit $?), see the log above"
           git add -A; git diff --cached --quiet || git commit -qm 'picture maps: weekly cleanup (parks now with an official outline)'
-          for i in 1 2 3; do git pull -q --rebase origin picture-maps && git push -q origin HEAD:picture-maps && break; sleep 5; done
+          { saved=0; for i in 1 2 3; do git pull -q --rebase origin picture-maps && git push -q origin HEAD:picture-maps && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }
           KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}')
           M="history $((KB/1024)) MB, files $(du -sm --exclude=.git . | cut -f1) MB"; [ "$KB" -gt 307200 ] && M="$M: OVER 300 MB, HQ squashes it"
           echo "::notice title=Picture-map branch::$M"
           true
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

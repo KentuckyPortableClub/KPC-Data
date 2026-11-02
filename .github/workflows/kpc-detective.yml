@@ -49,6 +49,7 @@ jobs:
           path: links
           persist-credentials: false
       - name: The look-up branch (dig questions in, answers out)
+        id: kept_green_1
         continue-on-error: true
         uses: actions/checkout@v5
         with:
@@ -69,10 +70,11 @@ jobs:
             python3 -c "
           import json; p='data/detective/state.json'; s=json.load(open(p))
           for a in s.get('areas',{}).values(): a['status']='queued'
-          json.dump(s,open(p,'w'),indent=1)" || true
+          json.dump(s,open(p,'w'),indent=1)" || echo "::warning title=inline python::a small python step failed (exit $?)"
           fi
       - name: Work in chunks, one save per chunk
         if: steps.gate.outputs.skip != '1'
+        id: kept_green_2
         continue-on-error: true
         env:
           AREAS: ${{ inputs.areas }}
@@ -85,10 +87,10 @@ jobs:
           LEFT=
           for i in $(seq 1 "$N"); do
             echo "::group::chunk $i of $N"
-            python3 .github/scripts/kpc_detective_bot.py | tee /tmp/detective.log || true
+            python3 .github/scripts/kpc_detective_bot.py | tee /tmp/detective.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_detective_bot.py::stopped with an error (exit $rc), see the log above"
             echo "::endgroup::"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/detective.log | tail -1 | cut -d= -f2); LEFT="${L:-$LEFT}"
-            bash ../links/.github/scripts/kpc_push_data.sh . "park detective: chunk $i" data/detective data/intake data/status || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "park detective: chunk $i" data/detective data/intake data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
             if [ -n "${{ inputs.areas }}" ]; then
               D=$(python3 -c "import json,os;s=json.load(open('data/detective/state.json'));a=os.environ['AREAS'].upper().split();print('1' if all((s['areas'].get(x) or {}).get('status')=='done' for x in a) else '')" 2>/dev/null || echo '')
               [ "$D" = 1 ] && break
@@ -97,14 +99,29 @@ jobs:
             fi
           done
           echo "LEFT=${LEFT:-}" >> "$GITHUB_ENV"
-          python3 .github/scripts/kpc_dig_bridge.py out ../lk || true
-          (cd ../lk && git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add answers && git commit -qm 'park detective: dig answers' && for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done) || true
-          python3 .github/scripts/kpc_status.py board 'park detective' green "answers in data/detective/answers.md, outline leads in data/detective/review.md, intake rows in data/intake/queue.json" "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself" "left: ${LEFT:-?}" || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "park detective: status" data/detective data/intake data/status || true
+          python3 .github/scripts/kpc_dig_bridge.py out ../lk || echo "::error title=kpc_dig_bridge.py::stopped with an error (exit $?), see the log above"
+          (cd ../lk && git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add answers && git commit -qm 'park detective: dig answers' && { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          python3 .github/scripts/kpc_status.py board 'park detective' green "answers in data/detective/answers.md, outline leads in data/detective/review.md, intake rows in data/intake/queue.json" "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself" "left: ${LEFT:-?}" || true   # ok: a status-board line (reporting only)
+          bash ../links/.github/scripts/kpc_push_data.sh . "park detective: status" data/detective data/intake data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        id: kept_green_3
         continue-on-error: true
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Park detective::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C -f jobs="${{ inputs.jobs || 'questions gaps' }}" || true
+          gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C -f jobs="${{ inputs.jobs || 'questions gaps' }}" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

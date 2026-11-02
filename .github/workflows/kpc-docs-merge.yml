@@ -35,20 +35,35 @@ jobs:
           MINUTES: '55'
         run: |
           cd kpcdata
-          pip install -q --break-system-packages pypdf openpyxl || pip install -q pypdf openpyxl || true
-          python3 .github/scripts/kpc_intake_reader.py docs || true   # HQ Oct 31 7:55 PM: the bot pulls its own files from branch intake-files
+          pip install -q --break-system-packages pypdf openpyxl || pip install -q pypdf openpyxl || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
+          python3 .github/scripts/kpc_intake_reader.py docs || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # HQ Oct 31 7:55 PM: the bot pulls its own files from branch intake-files
           for chunk in 1 2 3 4 5; do   # Nov 1 storage fix (HQ 12:10 PM): up to 5 chunks in ONE job and ONE save (was a save + a new run per chunk: 562 commits a week)
-            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || true
-            python3 .github/scripts/kpc_docs_merge.py | tee /tmp/merge.txt || true
-            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || true
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
+            python3 .github/scripts/kpc_docs_merge.py | tee /tmp/merge.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_docs_merge.py::stopped with an error (exit $rc), see the log above"
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
           done
-          bash ../links/.github/scripts/kpc_push_data.sh . "outside documents merged (held in the waiting room)" data/docs data/intake/docs-merge-done.json data/intake/intake-seen.json data/waiting || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "outside documents merged (held in the waiting room)" data/docs data/intake/docs-merge-done.json data/intake/intake-seen.json data/waiting || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
           echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
       - name: Straight through
+        id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           L="${{ steps.m.outputs.left }}"
-          if [ -n "$L" ] && [ "$L" != 0 ]; then gh workflow run kpc-docs-merge.yml -R ${{ github.repository }} --ref main || true; fi
+          if [ -n "$L" ] && [ "$L" != 0 ]; then gh workflow run kpc-docs-merge.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

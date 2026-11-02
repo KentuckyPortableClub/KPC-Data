@@ -37,17 +37,32 @@ jobs:
           LINKS: ../links
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_intake_reader.py hardlook || true
+          python3 .github/scripts/kpc_intake_reader.py hardlook || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"
           for chunk in 1 2 3 4 5 6 7; do   # Nov 1 storage fix: up to 7 chunks in ONE job, ONE save (was 276 commits a week)
-            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt || true
+            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_hardlook.py::stopped with an error (exit $rc), see the log above"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
           done
-          python3 .github/scripts/kpc_status.py board 'Hard look reader' green "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left $(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" 'chat 11 answers data/waiting/questions/hardlook.json' || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || true
+          python3 .github/scripts/kpc_status.py board 'Hard look reader' green "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left $(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" 'chat 11 answers data/waiting/questions/hardlook.json' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
+          bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
           echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
       - name: Next run
         if: steps.r.outputs.left != '' && steps.r.outputs.left != '0'
+        id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-hardlook.yml -R ${{ github.repository }} || true
+        run: gh workflow run kpc-hardlook.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

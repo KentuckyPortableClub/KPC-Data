@@ -69,19 +69,21 @@ jobs:
             python3 -c "
           import json; p='data/truth/state.json'; s=json.load(open(p))
           for a in s.get('areas',{}).values(): a['status']='queued'
-          json.dump(s,open(p,'w'),indent=1)" || true
+          json.dump(s,open(p,'w'),indent=1)" || echo "::warning title=inline python::a small python step failed (exit $?)"
             echo "BOTS=truth" >> "$GITHUB_ENV"
           else
             echo "BOTS=${{ inputs.bots }}" >> "$GITHUB_ENV"
           fi
       - name: Tools
         if: steps.gate.outputs.skip != '1'
+        id: kept_green_1
         continue-on-error: true
         run: |
-          pip install -q --break-system-packages pypdf || pip install -q pypdf || true
-          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || true; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true; fi
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
+          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; fi
       - name: Run the bots one at a time, one save per batch
         if: steps.gate.outputs.skip != '1'
+        id: kept_green_2
         continue-on-error: true
         env:
           AREAS: ${{ inputs.areas }}
@@ -97,11 +99,11 @@ jobs:
           FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_intake_reader.py camping || true   # HQ Oct 31 7:55 PM: the camp bot pulls its own files from branch intake-files
-          python3 .github/scripts/kpc_workshop.py | tee /tmp/workshop.log || true
+          python3 .github/scripts/kpc_intake_reader.py camping || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # HQ Oct 31 7:55 PM: the camp bot pulls its own files from branch intake-files
+          python3 .github/scripts/kpc_workshop.py | tee /tmp/workshop.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_workshop.py::stopped with an error (exit $rc), see the log above"
           if [ "${{ inputs.keyed_once }}" = yes ] && [ -f data/campinfo/US-KY.json ]; then   # ONE keyed fill: only empty fields, to the waiting room, live file untouched
             git show HEAD:data/campinfo/US-KY.json > /tmp/live.json 2>/dev/null || cp data/campinfo/US-KY.json /tmp/live.json
-            python3 - <<'PY' || true
+            python3 - <<'PY' || echo "::error title=inline Python::stopped with an error (exit $?), see the log above"
           import json, os
           old = json.load(open('/tmp/live.json')); new = json.load(open('data/campinfo/US-KY.json'))
           def empty(v): return v is None or v == '' or v == [] or v == {} or (isinstance(v, dict) and all(empty(x) for x in v.values()))
@@ -123,21 +125,37 @@ jobs:
           print(f'::notice title=Keyed fill::{n_f} KY federal campground rows filled (empty fields only): waiting in data/waiting/in/ for chat 11; the live file is unchanged')
           PY
             cp /tmp/live.json data/campinfo/US-KY.json
-            bash ../links/.github/scripts/kpc_push_data.sh . "keyed fill: KY federal campgrounds (waiting)" data/waiting || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "keyed fill: KY federal campgrounds (waiting)" data/waiting || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
           fi
           grep -o '^LEFT=[0-9]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
           grep -o '^GATE=[A-Z]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
-          bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Passed Kentucky gates start the queue
         if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' && env.GATE == 'PASS' }}
+        id: kept_green_3
         continue-on-error: true
         run: |
           echo "::notice title=Workshop::Kentucky gates PASSED: starting the whole queue (chain ${{ inputs.chain }})"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || true
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        id: kept_green_4
         continue-on-error: true
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Workshop::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || true
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

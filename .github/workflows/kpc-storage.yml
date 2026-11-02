@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: The orphan branches (measure, squash when over)
+        id: kept_green_1
         continue-on-error: true
         run: |
           git config --global user.name 'github-actions[bot]'; git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -28,31 +29,48 @@ jobs:
             rm -rf /tmp/$b && git clone -q --single-branch -b $b "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" /tmp/$b || continue
             (cd /tmp/$b && git gc -q --prune=now 2>/dev/null; KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}'); MB=$((KB/1024))
              V=$(echo $b | tr 'a-z-' 'A-Z_'); echo "BRANCH_MB_$V=$MB" >> "$GITHUB_ENV"
-             if [ "$MB" -gt "$LIM" ]; then git checkout -q --orphan fresh && git add -A && git commit -qm "$b squashed $(date -u +%F) (was $MB MB with history)" && git push -q -f origin fresh:$b && echo "::notice title=Storage keeper::$b squashed ($MB MB > $LIM MB)"; fi) || true
+             if [ "$MB" -gt "$LIM" ]; then git checkout -q --orphan fresh && git add -A && git commit -qm "$b squashed $(date -u +%F) (was $MB MB with history)" && git push -q -f origin fresh:$b && echo "::notice title=Storage keeper::$b squashed ($MB MB > $LIM MB)"; fi) || echo "::warning title=Save::nothing new to save, or the push failed: if this run had new files they are NOT saved (exit $?)"
           done
       - name: Measure + board line + history
+        id: kept_green_2
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
-          python3 .github/scripts/kpc_storage_keeper.py measure | tee /tmp/m.txt || true
+          python3 .github/scripts/kpc_storage_keeper.py measure | tee /tmp/m.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_storage_keeper.py::stopped with an error (exit $rc), see the log above"
           L=$(grep '^LINE=' /tmp/m.txt | cut -d= -f2-); O=$(grep '^OVER=' /tmp/m.txt | cut -d= -f2); echo "OVER=$O" >> "$GITHUB_ENV"
           C=green; [ "$O" = 1 ] && C=amber   # over the line = HQ decides (amber); red is only for a broken bot
-          python3 .github/scripts/kpc_status.py board "Storage keeper (weekly)" "$C" "$L" "HQ: over the line = decide (squash / move files); the keeper never rewrites main" || true
+          python3 .github/scripts/kpc_status.py board "Storage keeper (weekly)" "$C" "$L" "HQ: over the line = decide (squash / move files); the keeper never rewrites main" || true   # ok: a status-board line (reporting only)
       - name: Clean this repo (old artifacts, caches, stale bot branches)
+        id: kept_green_3
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
-        run: python3 .github/scripts/kpc_storage_keeper.py clean || true
+        run: python3 .github/scripts/kpc_storage_keeper.py clean || echo "::error title=kpc_storage_keeper.py::stopped with an error (exit $?), see the log above"
       - name: Save (status only)
+        id: kept_green_4
         continue-on-error: true
         run: |
           git add data/status 2>/dev/null; git diff --cached --quiet && exit 0
-          git commit -qm 'storage keeper: weekly sizes'; for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done; true
+          git commit -qm 'storage keeper: weekly sizes'; { saved=0; for i in 1 2 3; do git pull -q --rebase && git push -q && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }; true
       - name: "Over the line? (the only red end = one email)"
         if: ${{ env.OVER == '1' }}
         run: |
           echo "::error title=STORAGE WARNING::a repo is over its storage line, see the status board"
           exit 1
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

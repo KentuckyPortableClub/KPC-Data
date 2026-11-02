@@ -54,20 +54,35 @@ jobs:
           KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
         run: |
           cd kpcdata
-          pip install -q -r .github/scripts/tools/kpc_fers_check/requirements.txt || true
+          pip install -q -r .github/scripts/tools/kpc_fers_check/requirements.txt || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
           A="${IN_AREAS:-US-KY $(ls data/fers | grep -E '^(US|CA)-[A-Z]{2}\.json(\.gz)?$' | sed 's/\.json.*//' | grep -v '^US-KY$' | tr '\n' ' ')}"
           [ "${{ github.event_name }}" = schedule ] && R="" || R="--resume"
-          python3 .github/scripts/tools/kpc_fers_check/kpc_fers_check.py --areas $A $R --fers-dir data/fers --key-dir data --out data/fers-check --max-minutes 50 2>&1 | tee /tmp/fers.log | tail -30 || true
-          grep -q 'rerun with --resume' /tmp/fers.log && echo "more=yes" >> $GITHUB_OUTPUT || true
-          rm -rf data/fers-check/.cache || true
-          python3 .github/scripts/kpc_tools_run.py fers-alerts | tee /tmp/al.txt || true
+          python3 .github/scripts/tools/kpc_fers_check/kpc_fers_check.py --areas $A $R --fers-dir data/fers --key-dir data --out data/fers-check --max-minutes 50 2>&1 | tee /tmp/fers.log | tail -30 || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
+          grep -q 'rerun with --resume' /tmp/fers.log && echo "more=yes" >> $GITHUB_OUTPUT || true   # ok: nothing to do is fine
+          rm -rf data/fers-check/.cache || true   # ok: nothing to do is fine
+          python3 .github/scripts/kpc_tools_run.py fers-alerts | tee /tmp/al.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_tools_run.py::stopped with an error (exit $rc), see the log above"
           N=$(grep -o 'ALERTS=[0-9]*' /tmp/al.txt | cut -d= -f2); [ -z "$N" ] && N=0
-          if [ "$N" != 0 ]; then python3 .github/scripts/kpc_status.py board "2-fer checker" amber "weekly re-test of live 2-fers" "chat 2 rechecks + chat 11 grades $N SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md)" || true
-          else python3 .github/scripts/kpc_status.py board "2-fer checker" green "weekly re-test of live 2-fers" "nothing shrank, went or moved" || true; fi
-          bash ../links/.github/scripts/kpc_push_data.sh . "2-fer checker: weekly report (nothing changed in data/fers)" data/fers-check data/status || true
+          if [ "$N" != 0 ]; then python3 .github/scripts/kpc_status.py board "2-fer checker" amber "weekly re-test of live 2-fers" "chat 2 rechecks + chat 11 grades $N SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md)" || true   # ok: a status-board line (reporting only)
+          else python3 .github/scripts/kpc_status.py board "2-fer checker" green "weekly re-test of live 2-fers" "nothing shrank, went or moved" || true; fi   # ok: a status-board line (reporting only)
+          bash ../links/.github/scripts/kpc_push_data.sh . "2-fer checker: weekly report (nothing changed in data/fers)" data/fers-check data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Next run while areas are left
         if: steps.gap.outputs.busy != 'yes' && steps.c.outputs.more == 'yes'
+        id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-fers-check.yml -R ${{ github.repository }} --ref main -f areas="${{ inputs.areas }}" || true
+        run: gh workflow run kpc-fers-check.yml -R ${{ github.repository }} --ref main -f areas="${{ inputs.areas }}" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

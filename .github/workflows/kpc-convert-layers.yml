@@ -45,29 +45,45 @@ jobs:
           restore-keys: kpc-convert-
       - name: The side branch for the converter's files (tools-out, never main)
         if: steps.gap.outputs.busy != 'yes'
+        id: kept_green_1
         continue-on-error: true
         run: |
           cd kpcdata
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true
+          git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true   # ok: optional git step; the next step reports
       - name: Convert (resumes)
         if: steps.gap.outputs.busy != 'yes'
         id: c
         continue-on-error: true
         run: |
           cd kpcdata
-          pip install -q -r .github/scripts/tools/kpc_convert_layers/requirements.txt || true
-          python3 .github/scripts/kpc_intake_reader.py convert || true   # pulls its own files from branch intake-files
-          python3 .github/scripts/kpc_tools_run.py prep-convert no /tmp/leads.json || true
-          python3 .github/scripts/tools/kpc_convert_layers/kpc_convert_layers.py --leads /tmp/leads.json --out ../out/convert --cache .kpc_cache --max-minutes 50 --resume 2>&1 | tail -20 || true
+          pip install -q -r .github/scripts/tools/kpc_convert_layers/requirements.txt || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
+          python3 .github/scripts/kpc_intake_reader.py convert || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # pulls its own files from branch intake-files
+          python3 .github/scripts/kpc_tools_run.py prep-convert no /tmp/leads.json || echo "::error title=kpc_tools_run.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/tools/kpc_convert_layers/kpc_convert_layers.py --leads /tmp/leads.json --out ../out/convert --cache .kpc_cache --max-minutes 50 --resume 2>&1 | tail -20; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_convert_layers.py::stopped with an error (exit $rc), see the log above"
           N=$(python3 -c "import json;print(len(json.load(open('/tmp/leads.json'))))" 2>/dev/null || echo 0)
           R=$(( $(wc -l < ../out/convert/report.csv 2>/dev/null || echo 1) - 1 ))
           echo "::notice title=Map-format converter::$R of $N leads read"
-          [ "$R" -lt "$N" ] && echo "more=yes" >> $GITHUB_OUTPUT || true
-          cd ../out && git add -A convert && git commit -qm "map-format converter (run ${{ github.run_id }})" && git push -q origin tools-out || true
+          [ "$R" -lt "$N" ] && echo "more=yes" >> $GITHUB_OUTPUT || true   # ok: nothing to do is fine
+          cd ../out && git add -A convert && git commit -qm "map-format converter (run ${{ github.run_id }})" && git push -q origin tools-out || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
       - name: Next run while leads are left
         if: steps.gap.outputs.busy != 'yes' && steps.c.outputs.more == 'yes'
+        id: kept_green_2
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-convert-layers.yml -R ${{ github.repository }} --ref main || true
+        run: gh workflow run kpc-convert-layers.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

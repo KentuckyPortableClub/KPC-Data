@@ -122,25 +122,27 @@ jobs:
       - name: Far-spot hold + parcel check + layered-land list (chat 2, Oct 29; Brandon 8:07 AM + chat 8)
         # a live row 100+ km from a state-level park's pin is held, then the official map decides (the park's own record holds
         # the spot = released); every federal x state pair is appended to data/fers/layered.json with PAD-US owner at the patch
+        id: kept_green_1
         continue-on-error: true
         run: |
           # Oct 29 8:30 PM (HQ release order, step 3): far-spot hold + parcel check RETIRED: the Rule G key (G-1 / R-G7 / R-G8)
           # now keeps far and wrong pieces out of the outlines themselves, so the 2-fer rows no longer need this second guard
-          NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || true
+          NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || echo "::error title=kpc_fers_layered.py::stopped with an error (exit $?), see the log above"
           git config user.name kpc-bot; git config user.email bot@kpc.local
-          LINKS=links python3 .github/scripts/kpc_waiting_room.py divert data/fers || true   # Oct 29: a changed US/CA 2-fer file waits for chat 11 (the layered list stays live)
-          git add data/fers data/waiting && git commit -qm "2-fer: far-spot check + layered-land list" || true
-          git pull -q --rebase || true; git push -q || true
+          LINKS=links python3 .github/scripts/kpc_waiting_room.py divert data/fers || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"   # Oct 29: a changed US/CA 2-fer file waits for chat 11 (the layered list stays live)
+          git add data/fers data/waiting && git commit -qm "2-fer: far-spot check + layered-land list" || true   # ok: nothing to commit is fine
+          git pull -q --rebase || echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $?)"; git push -q || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
       - name: The one big 'needs a human look' list from every area's file
+        id: kept_green_2
         continue-on-error: true
         run: |
-          COMBINE_ONLY=1 OUT=data/fers python3 links/.github/scripts/kpc_fers_review.py || true
+          COMBINE_ONLY=1 OUT=data/fers python3 links/.github/scripts/kpc_fers_review.py || echo "::error title=kpc_fers_review.py::stopped with an error (exit $?), see the log above"
           git config user.name kpc-bot; git config user.email bot@kpc.local
           # Nov 1 (chat 10 storage step 1): the combined list lives on branch tools-out (fers/review-all.*), not main
           ( git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../to origin/tools-out || exit 0
-            mkdir -p ../to/fers && cp data/fers/review-all.json data/fers/review-all.md ../to/fers/ 2>/dev/null; cd ../to && git add fers && git commit -qm "2-fer review list: combined" && for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep 7; done ) || true
-          git rm -q --cached --ignore-unmatch data/fers/review-all.json data/fers/review-all.md && git commit -qm "2-fer review list moved to tools-out" || true
-          git pull -q --rebase || true; git push -q || true
+            mkdir -p ../to/fers && cp data/fers/review-all.json data/fers/review-all.md ../to/fers/ 2>/dev/null; cd ../to && git add fers && git commit -qm "2-fer review list: combined" && { saved=0; for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep 7; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; } ) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          git rm -q --cached --ignore-unmatch data/fers/review-all.json data/fers/review-all.md && git commit -qm "2-fer review list moved to tools-out" || true   # ok: nothing to commit is fine
+          git pull -q --rebase || echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $?)"; git push -q || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
       - name: Areas parked on the water map -> one more round
         run: |
           python3 - <<'PY' > again.txt
@@ -157,3 +159,17 @@ jobs:
           PY
           A=$(cat again.txt); echo "::notice title=2-fer lines::parked on the USGS water map: ${A:-none}"
           if [ -n "$A" ]; then gh workflow run kpc-fers-lines.yml -R "${{ github.repository }}" -f "areas=$A" -f round=1 -f minutes=${{ inputs.minutes }} && echo "::notice title=2-fer lines::retry round started for: $A"; fi
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

@@ -63,18 +63,33 @@ jobs:
           path: links
           persist-credentials: false
       - name: Fill the tiles ahead
+        id: kept_green_1
         continue-on-error: true
         run: |
           [ -z "$STATES" ] && { echo "nothing to fetch"; exit 0; }
           mkdir -p bundle/water
-          gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null && tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true
+          gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null && tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true   # ok: nothing to do is fine
           N0=$(ls bundle/water | wc -l)
-          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || true
-          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || true
-          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || true
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || echo "::error title=kpc_water_bulk.py::stopped with an error (exit $?), see the log above"
+          pip install -q pyshp 2>/dev/null || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || echo "::error title=kpc_water_ca.py::stopped with an error (exit $?), see the log above"
+          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || echo "::error title=kpc_water_bulk.py::stopped with an error (exit $?), see the log above"
           N1=$(ls bundle/water | wc -l)
           if [ "$N1" -gt "$N0" ]; then
             tar czf "$WATER_ASSET" bundle/water
-            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || true
+            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || echo "::error title=kpc_keep2.sh::stopped with an error (exit $?), see the log above"
             gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: $N0 -> $N1 tiles ($(du -h "$WATER_ASSET" | cut -f1))" || echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: upload failed"
           else echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: nothing new ($N1 tiles)"; fi
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

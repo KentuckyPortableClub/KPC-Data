@@ -54,9 +54,11 @@ jobs:
           path: links
           persist-credentials: false
       - name: Seed the country list from the scouting
+        id: kept_green_1
         continue-on-error: true
-        run: cd kpcdata && LINKS=../links python3 .github/scripts/kpc_world_seed.py || true
+        run: cd kpcdata && LINKS=../links python3 .github/scripts/kpc_world_seed.py || echo "::error title=kpc_world_seed.py::stopped with an error (exit $?), see the log above"
       - name: Harvest in chunks, one save per chunk
+        id: kept_green_2
         continue-on-error: true
         env:
           COUNTRIES: ${{ env.I_COUNTRIES }}
@@ -65,10 +67,10 @@ jobs:
           N=${{ env.I_CHUNKS }}; [ "$N" -gt 5 ] && N=5
           for i in $(seq 1 $N); do
             F=0; [ "$i" = 1 ] && [ "${{ env.I_FRESH }}" = yes ] && F=1   # cleared once, in the first chunk only
-            FRESH=$F LINKS=../links MINUTES=55 python3 .github/scripts/kpc_world_harvest.py || true
-            python3 .github/scripts/kpc_status.py grade-me "world harvester" "$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=s.get('countries') or {};print(' '.join(k for k,v in c.items() if isinstance(v,dict) and (v.get('finished') or v.get('started'))==__import__('time').strftime('%Y-%m-%d'))[:120] or 'see state.json last_run')" 2>/dev/null)" "data/harvest/leads-<CC>.json" "chunk $i" || true   # Oct 28 (HQ automation, chat 10): one 'grade me' line per batch for chat 8
-            python3 .github/scripts/kpc_status.py board "world harvester" green "chunk $i saved" "chat 8 grades the leads" || true
-            bash ../links/.github/scripts/kpc_push_data.sh . "world harvester: chunk $i (hidden leads)" data/harvest data/status || true
+            FRESH=$F LINKS=../links MINUTES=55 python3 .github/scripts/kpc_world_harvest.py || echo "::error title=kpc_world_harvest.py::stopped with an error (exit $?), see the log above"
+            python3 .github/scripts/kpc_status.py grade-me "world harvester" "$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=s.get('countries') or {};print(' '.join(k for k,v in c.items() if isinstance(v,dict) and (v.get('finished') or v.get('started'))==__import__('time').strftime('%Y-%m-%d'))[:120] or 'see state.json last_run')" 2>/dev/null)" "data/harvest/leads-<CC>.json" "chunk $i" || true   # ok: a status-board line (reporting only) (Oct 28 (HQ automation, chat 10): one 'grade me' line per batch for chat 8)
+            python3 .github/scripts/kpc_status.py board "world harvester" green "chunk $i saved" "chat 8 grades the leads" || true   # ok: a status-board line (reporting only)
+            bash ../links/.github/scripts/kpc_push_data.sh . "world harvester: chunk $i (hidden leads)" data/harvest data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
             LEFT=$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=json.load(open('data/harvest/countries.json'))['countries'];print(sum(1 for k in c if s['countries'].get(k,{}).get('status')!='done'))" 2>/dev/null || echo 1)
             echo "chunk $i done, $LEFT countries left"
             if [ -n "$COUNTRIES" ]; then
@@ -79,6 +81,7 @@ jobs:
           echo "LEFT=$LEFT" >> "$GITHUB_ENV"
       - name: A passed test country starts the queue
         if: ${{ env.I_COUNTRIES != '' && (env.I_THEN_QUEUE == 'yes' || env.I_THEN_QUEUE == 'always') }}
+        id: kept_green_3
         continue-on-error: true
         run: |
           cd kpcdata
@@ -97,8 +100,23 @@ jobs:
           CC: ${{ env.I_COUNTRIES }}
       - name: Carry on in a new job when countries remain
         if: ${{ env.I_COUNTRIES == '' && env.I_CHAIN != '0' }}
+        id: kept_green_4
         continue-on-error: true
         run: |
           [ "${LEFT:-0}" = 0 ] && { echo "::notice title=World harvester::queue finished"; exit 0; }
           NEXT=$(( ${{ env.I_CHAIN }} - 1 ))
           gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$NEXT && echo "::notice title=World harvester::$LEFT countries left: the next job starts by itself ($NEXT more allowed after it)"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

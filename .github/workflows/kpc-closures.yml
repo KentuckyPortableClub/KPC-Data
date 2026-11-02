@@ -67,12 +67,14 @@ jobs:
           fi
       - name: Tools
         if: steps.gate.outputs.skip != '1'
+        id: kept_green_1
         continue-on-error: true
         run: |
-          pip install -q --break-system-packages pypdf || pip install -q pypdf || true
-          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || true; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true; fi
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
+          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; fi
       - name: Read the sources chunk by chunk, one save per chunk
         if: steps.gate.outputs.skip != '1'
+        id: kept_green_2
         continue-on-error: true
         env:
           MINUTES: ${{ inputs.minutes || 55 }}
@@ -82,22 +84,37 @@ jobs:
           BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_closures_bot.py --selftest | tail -1 || true
+          python3 .github/scripts/kpc_closures_bot.py --selftest | tail -1; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_closures_bot.py::stopped with an error (exit $rc), see the log above"
           LEFT=1
           for i in $(seq 1 "$CHUNKS"); do
             echo "::group::chunk $i of $CHUNKS"
-            python3 .github/scripts/kpc_closures_bot.py | tee /tmp/closures.log || true
+            python3 .github/scripts/kpc_closures_bot.py | tee /tmp/closures.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_closures_bot.py::stopped with an error (exit $rc), see the log above"
             echo "::endgroup::"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/closures.log | tail -1 | cut -d= -f2); [ -n "$L" ] && LEFT=$L
             T=$(grep -o '^TEST=[A-Z]*' /tmp/closures.log | tail -1); [ -n "$T" ] && echo "$T" >> "$GITHUB_ENV"
-            bash ../links/.github/scripts/kpc_push_data.sh . "closures super-bot: chunk $i" data/closures data/status || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "closures super-bot: chunk $i" data/closures data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
             [ "$LEFT" = 0 ] && break
           done
           echo "LEFT=$LEFT" >> "$GITHUB_ENV"
       - name: Areas remain, so the next job starts itself
         if: ${{ github.event_name != 'schedule' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        id: kept_green_3
         continue-on-error: true
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Closures super-bot::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-closures.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks=5 -f minutes="${{ inputs.minutes || 55 }}" -f chain=$C -f test=no -f browser="${{ inputs.browser || 'yes' }}" || true
+          gh workflow run kpc-closures.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks=5 -f minutes="${{ inputs.minutes || 55 }}" -f chain=$C -f test=no -f browser="${{ inputs.browser || 'yes' }}" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

@@ -26,20 +26,36 @@ jobs:
         with:
           path: kpcdata
       - name: Lay this repo's data over the checkout
-        run: touch /tmp/kpc-start; (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/wwff) || true; bash .github/scripts/kpc_overlay.sh kpcdata   # Oct 29 (chat 2 8:20 PM): start from the HELD files
+        run: touch /tmp/kpc-start; (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/wwff) || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"; bash .github/scripts/kpc_overlay.sh kpcdata   # Oct 29 (chat 2 8:20 PM): start from the HELD files
       - name: Directories
+        id: kept_green_1
         continue-on-error: true
         run: |
-          python3 .github/scripts/kpc_wwff_dir.py || true
-          python3 .github/scripts/kpc_sota_dir.py || true
-          python3 .github/scripts/kpc_name_index.py || true   # Oct 24: world WWFF + SOTA name search (data/names)
+          python3 .github/scripts/kpc_wwff_dir.py || echo "::error title=kpc_wwff_dir.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_sota_dir.py || echo "::error title=kpc_sota_dir.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_name_index.py || echo "::error title=kpc_name_index.py::stopped with an error (exit $?), see the log above"   # Oct 24: world WWFF + SOTA name search (data/names)
       - name: Save (once)
         if: always()
+        id: kept_green_2
         continue-on-error: true
         run: |
-          mkdir -p kpcdata/data/wwff/ && rm -rf kpcdata/data/wwff/ && cp -a data/wwff kpcdata/data/wwff 2>/dev/null || true
-          mkdir -p kpcdata/data/sota/ && rm -rf kpcdata/data/sota/ && cp -a data/sota kpcdata/data/sota 2>/dev/null || true
-          mkdir -p kpcdata/data/names/ && rm -rf kpcdata/data/names/ && cp -a data/names kpcdata/data/names 2>/dev/null || true
+          mkdir -p kpcdata/data/wwff/ && rm -rf kpcdata/data/wwff/ && cp -a data/wwff kpcdata/data/wwff 2>/dev/null || true   # ok: nothing to do is fine
+          mkdir -p kpcdata/data/sota/ && rm -rf kpcdata/data/sota/ && cp -a data/sota kpcdata/data/sota 2>/dev/null || true   # ok: nothing to do is fine
+          mkdir -p kpcdata/data/names/ && rm -rf kpcdata/data/names/ && cp -a data/names kpcdata/data/names 2>/dev/null || true   # ok: nothing to do is fine
           for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
-          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/wwff) || true   # Oct 29 (chat 2 8:20 PM): changed files wait in data/waiting/in/ for chat 11, the live ones stay
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/wwff) || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"   # Oct 29 (chat 2 8:20 PM): changed files wait in data/waiting/in/ for chat 11, the live ones stay
           bash .github/scripts/kpc_push_data.sh kpcdata "Update WWFF directory copy" data
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

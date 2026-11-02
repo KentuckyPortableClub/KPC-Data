@@ -36,6 +36,7 @@ jobs:
             data/world-key
             .github/scripts
       - name: The map-format converter's answers (branch tools-out, convert/; HQ Oct 31 5:45 PM)
+        id: kept_green_1
         continue-on-error: true
         uses: actions/checkout@v5
         with:
@@ -43,13 +44,14 @@ jobs:
           path: out
           sparse-checkout: convert
       - name: The two GIS finders (map viewers we keep, open-data portals we know; Brandon Oct 30 10:44 AM)
+        id: kept_green_2
         continue-on-error: true
         env:
           LINKS: ../links
           MINUTES: '40'
         run: |
-          cd kpcdata && (python3 .github/scripts/kpc_intake_reader.py portals || true) && python3 .github/scripts/kpc_gis_finders.py viewers portals || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json || true
+          cd kpcdata && (python3 .github/scripts/kpc_intake_reader.py portals || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above") && python3 .github/scripts/kpc_gis_finders.py viewers portals || echo "::error title=kpc_gis_finders.py::stopped with an error (exit $?), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: New work? (fingerprint of the Fable + atlas files + the layer files on branch intake-files)
         id: fp
         continue-on-error: true
@@ -63,24 +65,40 @@ jobs:
           if [ "$F" = "$O" ] && [ "${{ github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
       - name: Collect + pin-test
         if: ${{ steps.fp.outputs.work == '1' }}
+        id: kept_green_3
         continue-on-error: true
         env:
           LINKS: ../links
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_intake_reader.py layers || true   # pulls its own files from branch intake-files
-          python3 .github/scripts/kpc_intake_reader.py files || true    # Nov 1: hand-downloaded boundary files (file-<AREA>-*.geojson)
-          timeout 100m python3 .github/scripts/kpc_layer_collector.py || true
-          python3 .github/scripts/kpc_q_gate.py gate || true   # Nov 2 (Brandon GO): no-shared-name / one-record-many-parks / world names-only LIKELY never reach chat 11 (parked.json)
+          python3 .github/scripts/kpc_intake_reader.py layers || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # pulls its own files from branch intake-files
+          python3 .github/scripts/kpc_intake_reader.py files || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"    # Nov 1: hand-downloaded boundary files (file-<AREA>-*.geojson)
+          timeout 100m python3 .github/scripts/kpc_layer_collector.py || echo "::error title=kpc_layer_collector.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_q_gate.py gate || echo "::error title=kpc_q_gate.py::stopped with an error (exit $?), see the log above"   # Nov 2 (Brandon GO): no-shared-name / one-record-many-parks / world names-only LIKELY never reach chat 11 (parked.json)
           echo "${{ steps.fp.outputs.fp }}" > data/intake/collector-seen.txt
-          python3 .github/scripts/kpc_week_numbers.py || true   # the control panel's numbers, fresh after each collector run
-          python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || true
+          python3 .github/scripts/kpc_week_numbers.py || echo "::error title=kpc_week_numbers.py::stopped with an error (exit $?), see the log above"   # the control panel's numbers, fresh after each collector run
+          python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true   # ok: a status-board line (reporting only)
+          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Straight through (Brandon Oct 30 7:43 PM) - outside-research pairs left = start the next run now
+        id: kept_green_4
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 0)
           echo "::notice title=Outside research::$LEFT pairs left"
-          if [ "$LEFT" != 0 ]; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || true; fi
+          if [ "$LEFT" != 0 ]; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

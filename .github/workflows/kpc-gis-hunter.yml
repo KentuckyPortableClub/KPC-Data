@@ -61,6 +61,7 @@ jobs:
             kpc-ky-data.json
             .github/scripts
       - name: Hunt, one save per chunk
+        id: kept_green_1
         continue-on-error: true
         env:
           LINKS: ../links
@@ -71,37 +72,54 @@ jobs:
           cd kpcdata
           N=${{ env.I_CHUNKS }}; [ "$N" -gt 5 ] && N=5
           for i in $(seq 1 $N); do
-            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || true; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log || true
-            python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true
-            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || true; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || true
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
+            MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_gis_hunter.py::stopped with an error (exit $rc), see the log above"
+            python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true   # ok: a status-board line (reporting only)
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
+            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done
       - name: The pass is finished -> website-name reads + the documents bot for the parks still without a find (HQ Oct 30 7:50 AM (1); notes only, the hunt itself is unchanged)
         if: ${{ env.LEFT == '0' }}
+        id: kept_green_2
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           LINKS: ../links
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_after_hunt.py ${{ env.I_AREAS }} | tee /tmp/after.txt || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || true
+          python3 .github/scripts/kpc_after_hunt.py ${{ env.I_AREAS }} | tee /tmp/after.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_after_hunt.py::stopped with an error (exit $rc), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
           A=$(grep -o '^DOCS_AREAS=.*' /tmp/after.txt | cut -d= -f2)
-          [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || true
+          [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
       - name: Areas remain, so the next job starts itself
         if: ${{ env.LEFT != '0' && env.LEFT != '' && env.I_CHAIN != '0' && env.I_AREAS == '' }}
+        id: kept_green_3
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           C=$(( ${{ env.I_CHAIN }} - 1 ))
-          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_COUNTRY }} -f areas= -f chunks=5 -f chain=$C -f pass="${{ env.I_PASS }}" -f then="${{ env.I_THEN }}" || true
+          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_COUNTRY }} -f areas= -f chunks=5 -f chain=$C -f pass="${{ env.I_PASS }}" -f then="${{ env.I_THEN }}" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
       - name: This country is finished, so the next country starts (then)
         if: ${{ env.LEFT == '0' && env.I_THEN != '' && env.I_AREAS == '' }}
+        id: kept_green_4
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_THEN }} -f areas= -f chunks=5 -f chain=4 -f pass="${{ env.I_PASS }}" -f then= || true
+        run: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_THEN }} -f areas= -f chunks=5 -f chain=4 -f pass="${{ env.I_PASS }}" -f then= || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

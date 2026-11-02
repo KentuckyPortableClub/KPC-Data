@@ -29,23 +29,26 @@ jobs:
           path: links
           persist-credentials: false
       - name: Count what is on file
+        id: kept_green_1
         continue-on-error: true
         env:
           LINKS: ../links
           OUT: data/review
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_scoreboard_bot.py || true
+          python3 .github/scripts/kpc_scoreboard_bot.py || echo "::error title=kpc_scoreboard_bot.py::stopped with an error (exit $?), see the log above"
       - name: Save the scoreboard and tell the status board
+        id: kept_green_2
         continue-on-error: true
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_status.py board scoreboard green "scoreboard.json + scoreboard-parks.json + scoreboard-check.md" "nothing (facts only)" || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "scoreboard: nightly counts" data/review data/status || true
+          python3 .github/scripts/kpc_status.py board scoreboard green "scoreboard.json + scoreboard-parks.json + scoreboard-check.md" "nothing (facts only)" || true   # ok: a status-board line (reporting only)
+          bash ../links/.github/scripts/kpc_push_data.sh . "scoreboard: nightly counts" data/review data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Join by record number (chat 11 YES answers -> the world keys; held for chat 11's file YES)
         # Nov 2 (chat 10; Brandon 4:58 AM GO 'Chat 10 builds it now'): a YES on a layer the world key builder does not read never
         # reached a key. kpc_key_approved.py adds each approved record by its number to the newest copy of its country key; the
         # waiting room holds the changed files (checked; released only with chat 11's file YES).
+        id: kept_green_3
         continue-on-error: true
         env:
           LINKS: ../links
@@ -53,23 +56,38 @@ jobs:
           cd kpcdata
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           F=$(python3 .github/scripts/kpc_key_approved.py | tee /tmp/ka.txt | grep '^FILES=' | cut -d= -f2-)
-          grep -v '^FILES=' /tmp/ka.txt || true
-          [ -n "$F" ] && python3 .github/scripts/kpc_waiting_room.py divert $F || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "key join by record number: approved world parks (held for chat 11)" data/waiting data/world-key data/status || true
+          grep -v '^FILES=' /tmp/ka.txt || true   # ok: nothing to do is fine
+          [ -n "$F" ] && python3 .github/scripts/kpc_waiting_room.py divert $F || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "key join by record number: approved world parks (held for chat 11)" data/waiting data/world-key data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Parks still missing a boundary, one list per country, most activated first (branch missing-lists, replaced each night)
         # Nov 1 (chat 10; Brandon 7:59 PM 'download csv for the parks needed ... by country in rank of activity in pota'). The members-only
         # Map Coverage page reads raw.githubusercontent.com/.../missing-lists/<CC>.json and turns it into a CSV. The branch is ONE orphan
         # commit, replaced every night, so the lists never add to the repo's history.
+        id: kept_green_4
         continue-on-error: true
         env:
           LINKS: ../links
           MISSING_OUT: ../ml
         run: |
           cd kpcdata
-          git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git show origin/tools-out:pota/activity.json > data/pota/activity.json 2>/dev/null || true
-          python3 .github/scripts/kpc_missing_lists.py || true
-          APPROVED_OUT=../ml/approved python3 .github/scripts/kpc_approved_list.py || true   # Nov 2: chat 11 YES answers whose key does not show them yet
+          git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git show origin/tools-out:pota/activity.json > data/pota/activity.json 2>/dev/null || true   # ok: optional git step; the next step reports
+          python3 .github/scripts/kpc_missing_lists.py || echo "::error title=kpc_missing_lists.py::stopped with an error (exit $?), see the log above"
+          APPROVED_OUT=../ml/approved python3 .github/scripts/kpc_approved_list.py || echo "::error title=kpc_approved_list.py::stopped with an error (exit $?), see the log above"   # Nov 2: chat 11 YES answers whose key does not show them yet
           [ -f ../ml/index.json ] || exit 0
           cd ../ml && git init -q && git checkout -q -b missing-lists && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com" \
             && git add -A && git commit -qm "missing lists $(date -u +%F) (one commit, replaced nightly)" \
-            && git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:missing-lists && echo "::notice title=Missing lists::branch missing-lists replaced" || true
+            && git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:missing-lists && echo "::notice title=Missing lists::branch missing-lists replaced" || true   # ok: nothing to do is fine
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

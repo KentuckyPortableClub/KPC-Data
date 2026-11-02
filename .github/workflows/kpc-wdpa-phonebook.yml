@@ -41,13 +41,28 @@ jobs:
         continue-on-error: true
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_wdpa_phonebook.py | tee /tmp/pb.txt || true
-          python3 .github/scripts/kpc_status.py board 'WDPA phone book' green "$(grep -o '[0-9]* parks looked up[^;]*' /tmp/pb.txt | head -1) $(date -u +%F)" 'the park-info engine searches by these agencies' || true
-          bash ../links/.github/scripts/kpc_push_data.sh . "WDPA phone book (leads: who runs the parks we still miss)" data/intake/phonebook.json data/intake/phonebook.md data/status || true
+          python3 .github/scripts/kpc_wdpa_phonebook.py | tee /tmp/pb.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_wdpa_phonebook.py::stopped with an error (exit $rc), see the log above"
+          python3 .github/scripts/kpc_status.py board 'WDPA phone book' green "$(grep -o '[0-9]* parks looked up[^;]*' /tmp/pb.txt | head -1) $(date -u +%F)" 'the park-info engine searches by these agencies' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
+          bash ../links/.github/scripts/kpc_push_data.sh . "WDPA phone book (leads: who runs the parks we still miss)" data/intake/phonebook.json data/intake/phonebook.md data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
           echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/pb.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
       - name: Next run while parks are left
         if: steps.b.outputs.left != '' && steps.b.outputs.left != '0' && github.event_name == 'workflow_dispatch'
+        id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-wdpa-phonebook.yml -R ${{ github.repository }} || true
+        run: gh workflow run kpc-wdpa-phonebook.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY

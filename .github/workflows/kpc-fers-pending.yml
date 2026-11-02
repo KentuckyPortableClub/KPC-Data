@@ -103,7 +103,7 @@ jobs:
           # BOT F (Oct 29 11:30 PM; plan KPC_Key_And_2fer_Automation_Plan.md): a state chat 3 / 8 marked DONE in KPC-Links
           # .claude/build/research/fable-state-done.json gets its FIRST new-key 2-fer run (whole state), then joins new-key-states.json
           # (BOT E reruns it from then on). At most 3 states a run, fewest parks first; AK held (file-size fix), KY never (own key).
-          python3 - <<'PY' || true
+          python3 - <<'PY' || echo "::error title=inline Python::stopped with an error (exit $?), see the log above"
           import json, os, subprocess
           try: done = json.load(open('links/.claude/build/research/fable-state-done.json'))
           except Exception: done = {}
@@ -135,5 +135,5 @@ jobs:
           print(f"::notice title=2-fer first runs (BOT F)::{'started: ' + ' '.join(started) if started else 'no newly finished state'}" + (f"; waiting: {' '.join(sorted(set(todo) - set(started)))}" if set(todo) - set(started) else ''))
           PY
           git config user.name kpc-bot; git config user.email bot@kpc.local
-          git add data/fers/pending.json data/fers/key-seen.json data/fers/new-key-states.json && git commit -qm "2-fer small batches: waiting list" || true
-          git pull -q --rebase || true; git push -q || true
+          git add data/fers/pending.json data/fers/key-seen.json data/fers/new-key-states.json && git commit -qm "2-fer small batches: waiting list" || true   # ok: nothing to commit is fine
+          git pull -q --rebase || echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $?)"; git push -q || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
