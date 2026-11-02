@@ -84,6 +84,33 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "CA-5809",
+   "Park name (as the agency writes it)": "Fernwood",
+   "Size": 1,
+   "Unit": "acres",
+   "Agency": "Heritage Properties",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D527&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5820",
+   "Park name (as the agency writes it)": "Henry House",
+   "Size": 0,
+   "Unit": "acres",
+   "Agency": "Heritage Properties",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D193&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4794",
+   "Park name (as the agency writes it)": "Kootenai House",
+   "Size": 0,
+   "Unit": "acres",
+   "Agency": "Government of British Columbia (Historic Places)",
+   "Source page": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?where=OBJECTID%3D6132845&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -100,6 +127,15 @@
    "Agency": "HRM Parks",
    "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0/query?where=OBJECTID%3D384&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-6253",
+   "Park name (as the agency writes it)": "Moirs Ltd. Power House",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Heritage Properties",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D102&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "CA-5258",
@@ -507,6 +543,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-0374",
+   "Park name (as the agency writes it)": "BIG MUDDY NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 5326,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D4297&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "US-0042",
    "Park name (as the agency writes it)": "Fort Gaines",
    "Size": 32,
@@ -712,7 +757,17 @@
    "Agency/area": "Heritage Properties",
    "Kind": "GIS layer",
    "Example URL": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
-   "# times used": 11,
+   "# times used": 14,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "maps.gov.bc.ca",
+   "Agency/area": "Government of British Columbia (Historic Places)",
+   "Kind": "GIS layer",
+   "Example URL": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -722,7 +777,7 @@
    "Agency/area": "Parks",
    "Kind": "GIS layer",
    "Example URL": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
-   "# times used": 19,
+   "# times used": 20,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -945,16 +1000,6 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (host resting: 3 strikes)",
-   "Retry?": "YES"
-  },
-  {
-   "Host": "maps.gov.bc.ca",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": null,
-   "# times used": 0,
-   "Status": "BLOCKED",
-   "Detail": "blocked (HTTP 403: server refuses this client)",
    "Retry?": "YES"
   }
  ]
