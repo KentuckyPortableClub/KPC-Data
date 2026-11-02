@@ -1,0 +1,2280 @@
+{
+ "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
+ "area": "US-DE",
+ "counts": {
+  "fees": 1,
+  "hours": 2,
+  "hours_lines": 3,
+  "no_page": 0,
+  "nothing": 42,
+  "parks": 89,
+  "permits": 0,
+  "season": 0,
+  "season_lines": 0
+ },
+ "parks": {
+  "US-0229": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The wildlife drive and trails are open from 1/2 hour before sunrise to 1/2 hour after sunset with an entrance pass.",
+     "read": "2026-11-02",
+     "url": "https://www.fws.gov/refuge/bombay-hook/visit-us/rules-policies"
+    },
+    {
+     "line": "The refuge is open daily from ½ hour before sunrise to ½ hour after sunset.",
+     "read": "2026-11-02",
+     "url": "https://www.fws.gov/refuge/bombay-hook/visit-us/rules-policies"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Bombay Hook National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bombay_hook/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bombay-hook/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/bombay/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/bombay",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0230": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The refuge is open 1⁄2-hour before sunrise until 1⁄2-hour after sunset.",
+     "read": "2026-11-02",
+     "url": "https://www.fws.gov/refuge/prime-hook/visit-us/rules-policies"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Prime Hook National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/Prime_Hook/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/prime-hook/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0733": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "First State National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frst/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/frst/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0898": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "White Clay Creek National Wild and Scenic River",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/articles/000/white-clay-creek-wild-and-scenic-river.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wild and Scenic River",
+   "ver": 12
+  },
+  "US-10531": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Fork Branch State Nature Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dnrec.delaware.gov/parks/planning/fork-branch-preserve/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Nature Preserve",
+   "ver": 12
+  },
+  "US-10659": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Augustine State Beach",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dnrec.delaware.gov/fish-wildlife/fishing/access/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Beach",
+   "ver": 12
+  },
+  "US-10667": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Abbotts Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Abbotts-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10668": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Andrews State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Andrews-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10669": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Blairs Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Blairs-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10670": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Chipmans Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Chipman-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10671": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Concord Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Concord-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10672": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Coursey Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Coursey-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10673": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Craigs Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Craigs-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10674": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Derby Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Derby-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10675": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Garrisons State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Garrisons-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10676": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Griffith State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Griffith-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10677": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Haven State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Haven-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10678": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hearns Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Hearns-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10679": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Horseys Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Horsey-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10680": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ingrams Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Ingrams-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10681": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Masseys Millpond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Masseys-Mill-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10682": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "McGinnis Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=McGinnis-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10683": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Millsboro Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Millsboro-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10684": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Moores State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Moores-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10685": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Mud Mill Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Mud-Mill-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10686": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Portsville Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Portsville-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10687": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Trussum Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?data_id=dataSource_1-1850bf342a5-layer-10%3A30&views=Trussom-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10688": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tubmill Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Tubmill-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10689": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tussock Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Trussom-Pond%2CTussock-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10690": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wagamons Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Wagamons-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-10691": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Waples Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Waples-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-11809": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Becks Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Becks-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-11810": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Raccoon Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Raccoon-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-11811": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Records Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Records-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-11812": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Trap Pond State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Trap-Pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-12938": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Laurel Industrial Forest Land State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Industrial-Laurel-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-12939": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Barr Industrial Forest Land State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Industrial-Barr-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-1730": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Alapocas Run State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://destateparks.com/FieldsStreams/Alapocas",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1731": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bellevue State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://destateparks.com/Bellevue",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1732": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Brandywine Creek State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/BrandywineCreek",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1733": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cape Henlopen State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/Beaches/CapeHenlopen",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1734": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Delaware Seashore State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/Beaches/DelawareSeashore",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1735": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fenwick Island State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/Beaches/FenwickIsland",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1736": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort Delaware State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/History/FortDelaware",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1737": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort DuPont State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/History/FortDupont",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1738": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fox Point State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/PondsRivers/FoxPoint",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1739": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Holts Landing State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/HoltsLanding",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1740": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Killens Pond State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/PondsRivers/KillensPond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1741": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lums Pond State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/PondsRivers/LumsPond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1742": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Trap Pond State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/TrapPond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1743": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "White Clay Creek State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/WhiteClayCreek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/parks/Information/Documents/Tri-ValleyTrail/White%20Clay%20State%20Park%20Trail%20Plan.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1744": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Wilmington State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/Wilmington",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-4366": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Auburn Valley State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/History/AuburnValley",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-4367": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "First State Heritage State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/History/FirstStateHeritage",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-4567": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Captain John Smith Chesapeake National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4582": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4609": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Blackbird State Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://agriculture.delaware.gov/forest-service/maps/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Forest",
+   "ver": 12
+  },
+  "US-4610": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Redden State Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://agriculture.delaware.gov/forest-service/maps/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Forest",
+   "ver": 12
+  },
+  "US-4611": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Taber State Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://agriculture.delaware.gov/forest-service/maps/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Forest",
+   "ver": 12
+  },
+  "US-5719": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ted Harvey State Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dnrec.maps.arcgis.com/apps/MapSeries/index.html?appid=6be01f195493461399a800c5369753ca",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Conservation Area",
+   "ver": 12
+  },
+  "US-5720": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tappahanna State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Tappahanna.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5721": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Norman G Wilder State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Norman-G-Wilder-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5722": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "McGinnis Pond State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/McGinnis-Pond-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5723": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Milford Neck State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Milford-Neck-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5724": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Prime Hook State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Prime-Hook-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5725": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Marshy Hope State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Marshy-Hope-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5726": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Old Furnace State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Old-Furnace-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5727": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Nanticoke State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Nanticoke-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-5728": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Midlands State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Midlands-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7645": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Assawoman Bay State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Assawoman-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7646": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Augustine State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Augustine-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7647": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Blackiston State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Blackiston-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7648": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Chesapeake and Delaware Canal Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dnrec.maps.arcgis.com/apps/MapSeries/index.html?appid=9e9f1c174acc4ff985d67d52aec2ac3c",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Conservation Area",
+   "ver": 12
+  },
+  "US-7649": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cedar Swamp State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Cedar-Swamp-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7650": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Eagles Nest State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Eagles-Nest-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7653": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tony Florio Woodland Beach State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Woodland-Beach-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-9877": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Junction and Breakwater National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nrtapplication.org/trails/junction-and-breakwater-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-9878": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [
+    {
+     "line": "In return, they receive an identification badge, gear, and free entrance into all Delaware State Parks.",
+     "read": "2026-11-02",
+     "url": "https://www.nrtapplication.org/trails/northern-delaware-greenway-trail-wilmington"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Northern Delaware Greenway National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nrtapplication.org/trails/northern-delaware-greenway-trail-wilmington",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-9879": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pinelands Nature National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 522",
+     "url": "https://www.nrtdatabase.org/trailDetail.php?recordID=182",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-9881": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pomeroy and Newark National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 522",
+     "url": "https://www.nrtdatabase.org/trailDetail.php?recordID=3835",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-9882": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Little Creek State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Little-Creek-Overview.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-9883": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Port Penn Interpretive Center State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.destateparks.com/port-penn/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9885": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Indian River Life-Saving Station State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/Centers/IRLifesavingStation",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9886": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Dupont Nature Center State Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "skipped: another topic (field trips / programs / seasons)",
+     "url": "https://dnrec.alpha.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Conservation Area",
+   "ver": 12
+  },
+  "US-9887": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Beach Plum Island State Nature Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.destateparks.com/wp-content/uploads/2024/08/maps_Cape_Beach_Plum.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Nature Preserve",
+   "ver": 12
+  },
+  "US-9889": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bellevue Woods State Nature Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/wwwroot/maps/bellevue/BellevueMap.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Nature Preserve",
+   "ver": 12
+  },
+  "US-9890": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "James Branch State Nature Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://destateparks.com/wwwroot/maps/trap-pond/JamesBranchCanoeTrailMap.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Nature Preserve",
+   "ver": 12
+  },
+  "US-9891": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Blackbird Creek National Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "skipped: another topic (field trips / programs / seasons)",
+     "url": "https://dnrec.alpha.delaware.gov/coastal-programs/research-reserve/blackbird-creek/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "National Reserve",
+   "ver": 12
+  },
+  "US-9892": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "St. Jones National Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "skipped: another topic (field trips / programs / seasons)",
+     "url": "https://dnrec.alpha.delaware.gov/coastal-programs/research-reserve/st-jones/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "National Reserve",
+   "ver": 12
+  }
+ },
+ "read": "2026-11-02"
+}

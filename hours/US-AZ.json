@@ -1,0 +1,3278 @@
+{
+ "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
+ "area": "US-AZ",
+ "counts": {
+  "fees": 7,
+  "hours": 4,
+  "hours_lines": 4,
+  "no_page": 0,
+  "nothing": 56,
+  "parks": 123,
+  "permits": 9,
+  "season": 2,
+  "season_lines": 2
+ },
+ "parks": {
+  "US-0030": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Grand Canyon National Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/grca/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/grca/planyourvisit/upload/GRCAmap2.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Park",
+   "ver": 12
+  },
+  "US-0057": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Petrified Forest National Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/pefo/index.htm/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Park",
+   "ver": 12
+  },
+  "US-0060": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Saguaro National Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sagu/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Park",
+   "ver": 12
+  },
+  "US-0172": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Bill Williams River National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bill-williams-river",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bill-williams-river/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0173": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "The Visitor Center is open Sunday 8 am-1 pm.",
+     "read": "2026-11-01",
+     "scope": "attraction",
+     "url": "https://www.fws.gov/refuge/buenos-aires"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Refuge trails are open to the public 24 hours a day, seven days a week.",
+     "read": "2026-11-01",
+     "url": "https://www.fws.gov/refuge/buenos-aires"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Buenos Aires National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/buenos-aires",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/buenos-aires/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0174": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Cabeza Prieta National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cabeza-prieta",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cabeza-prieta/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0175": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Cibola National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cibola",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cibola/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0176": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Imperial National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/imperial",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/imperial/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0177": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kofa National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kofa",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kofa/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0178": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Leslie Canyon National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/leslie-canyon",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/leslie-canyon/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0179": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "San Bernardino National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/san-bernardino",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/san-bernardino/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0194": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Havasu National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/havasu/about-us",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/havasu",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0645": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Glen Canyon National Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/glca/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Recreation Area",
+   "ver": 12
+  },
+  "US-0676": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Lake Mead National Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lake/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Recreation Area",
+   "ver": 12
+  },
+  "US-0760": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tumacacori National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tuma/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0771": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Coronado National Memorial",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/coro/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Memorial",
+   "ver": 12
+  },
+  "US-0815": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The park grounds, trails, and ruins are open sunrise to sunset, 7 days a week.",
+     "read": "2026-11-01",
+     "url": "https://www.nps.gov/fobo/index.htm"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Fort Bowie National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fobo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-0835": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hubbell Trading Post National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hutr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-0908": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Canyon de Chelly National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cach/planyourvisit/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0911": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Hours of operation are 9 am - 4 pm.",
+     "read": "2026-11-01",
+     "url": "https://www.nps.gov/cagr/index.htm"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Casa Grande Ruins National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cagr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0917": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "The visitor center phone is staffed from 8:30 am to 4:30 pm daily.",
+     "read": "2026-11-01",
+     "scope": "attraction",
+     "url": "https://www.nps.gov/chir/index.htm"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Chiricahua National Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/chir/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0948": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Montezuma Castle National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/moca/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0951": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours (season only)",
+   "hunting_hours": [],
+   "n": "Navajo National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nava/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "The park is free and open year-round.",
+     "read": "2026-11-01",
+     "url": "https://www.nps.gov/nava/index.htm"
+    }
+   ],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0954": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Organ Pipe Cactus National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/orpi/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0956": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pipe Spring National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/pisp/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0964": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Sunset Crater Volcano National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sucr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0966": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tonto National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tont/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0967": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tuzigoot National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tuzi/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0969": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Walnut Canyon National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waca/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-0972": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wupatki National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/wupa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-10311": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort Verde State Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://azstateparks.com/fort-verde",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historical Park",
+   "ver": 12
+  },
+  "US-10510": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Dos Cabezas Mountains Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/dos-cabezas-mountains-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/dos-cabezas-mountains-wilderness"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "Wilderness Area",
+   "ver": 12
+  },
+  "US-10512": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Verde River Greenway State Natural Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://azstateparks.com/verde-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Natural Area",
+   "ver": 12
+  },
+  "US-10513": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Granite Mountain Hotshots State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/hotshots/explore/yarnell-hill-fire-memorial",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-10514": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "San Pedro Riparian BLM National Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/san-pedro",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM National Conservation Area",
+   "ver": 12
+  },
+  "US-10516": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Jerome State Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/jerome",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historical Park",
+   "ver": 12
+  },
+  "US-10518": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tombstone Courthouse State Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/tombstone",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historical Park",
+   "ver": 12
+  },
+  "US-1052": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Alamo Lake State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/reserve/#alamo-lake/camping",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1053": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Boyce Thompson Arboretum State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://btarboretum.org/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1054": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Buckskin Mountain State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/buckskin",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1055": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Catalina State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/catalina",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1056": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cattail Cove State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/cattail-cove",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1057": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Dead Horse Ranch State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/dead-horse",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1058": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Homolovi State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/homolovi",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1059": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kartchner Caverns State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/kartchner",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1060": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Havasu State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/lake-havasu",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1061": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lost Dutchman State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/lost-dutchman",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1062": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lyman Lake State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/lyman-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1063": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Oracle State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/oracle",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1064": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Patagonia Lake State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/patagonia-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1065": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Picacho Peak State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/picacho",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1066": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Red Rock State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/red-rock",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1067": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Roper Lake State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/roper-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1068": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Slide Rock State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/slide-rock",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-1069": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tonto Natural Bridge State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/tonto/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-10995": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Sunshine Loop and Dutchman Mountain Bike Trails BLM Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/sunshine-loop-and-dutchman-mountain-bike-trails",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Recreation Management Area",
+   "ver": 12
+  },
+  "US-11028": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Robbins Butte Wildlife Area State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.azgfd.com/location/robbins-butte-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11045": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Painted Rock Petroglyph Site National Historical Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/painted-rock-petroglyph-campground",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historical Site",
+   "ver": 12
+  },
+  "US-11046": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Eagletail Mountains Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/eagletail-mountains-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/eagletail-mountains-wilderness"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "Wilderness Area",
+   "ver": 12
+  },
+  "US-11047": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Trigo Mountain Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/trigo-mountain-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/trigo-mountain-wilderness"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "Wilderness Area",
+   "ver": 12
+  },
+  "US-11049": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "New Water Mountains Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/new-water-mountains-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/new-water-mountains-wilderness"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "Wilderness Area",
+   "ver": 12
+  },
+  "US-11087": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Upper Verde River State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.azgfd.com/location/upper-verde-river-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11122": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "General Crook National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/recarea/asnf/recreation/recarea/?recid=45389&actid=91",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-11123": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Highline National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/recarea/tonto/recreation/hiking/recarea/?recid=35597&actid=50",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-11124": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Rockin' River Ranch State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/rockin-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-11942": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wabayuma Peak BLM Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/wabayuma-peak-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/wabayuma-peak-wilderness"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "BLM Wilderness Area",
+   "ver": 12
+  },
+  "US-11943": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sonoita Creek State Natural Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/sonoita-creek",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Natural Area",
+   "ver": 12
+  },
+  "US-11944": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Dankworth Pond State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/dankworth-pond",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-11945": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Page Springs State Fish Hatchery",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/page-springs-hatchery/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fish Hatchery",
+   "ver": 12
+  },
+  "US-11946": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Willcox Playa State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/willcox-playa-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11949": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Becker Lake State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/becker-lake-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11950": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cluff Ranch State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/cluff-ranch-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11971": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "The overnight-use fee is $8 per site per night and the day-use fee is $2 per vehicle.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/virgin-river-canyon-recreation-area"
+    },
+    {
+     "line": "Day Use is $2/vehicle.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/virgin-river-canyon-recreation-area"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Virgin River Canyon BLM Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/virgin-river-canyon-recreation-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "BLM Recreation Management Area",
+   "ver": 12
+  },
+  "US-11975": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "The Little Pan Staging Area is free (no fee required) for general visits by the public.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/little-pan-staging-area"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Table Mesa BLM Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/little-pan-staging-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "BLM Recreation Management Area",
+   "ver": 12
+  },
+  "US-11978": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Whitewater Draw State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/whitewater-draw-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11979": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Allen Severson State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/arizona-wildlife-viewing-allen-severson-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11981": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Arivaca Lake State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/arivaca-lake-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11982": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Base & Meridian State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/base-and-meridian-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11984": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Quigley-Achee State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/quigley-achee-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11985": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Raymond State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/raymond-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11986": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Wenima State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/wenima-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-11987": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "White Mountain State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/white-mountain-grasslands-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-12142": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "The Dominguez-Escalante Site is open to the public free of charge.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/dominguez-escalante-site"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Dominguez-Escalante Site National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/dominguez-escalante-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-12160": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "Recreation use fees of $3.00 per vehicle are collected at the site.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/hot-well-dunes"
+    },
+    {
+     "line": "Visitors can purchase an annual pass for $30 from the Safford Field Office.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/hot-well-dunes"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hot Well Dunes BLM Recreation Management Area",
+   "office_hours": [
+    {
+     "line": "At Hot Well Dunes, the hot tubs use a solar well pump and are typically full an hour after sunrise and an hour before sunset.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/hot-well-dunes"
+    }
+   ],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/hot-well-dunes",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "BLM Recreation Management Area",
+   "ver": 12
+  },
+  "US-12161": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Round Mountain Rockhound BLM Special Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/round-mountain-rockhound-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Special Recreation Management Area",
+   "ver": 12
+  },
+  "US-12162": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sears Point BLM Historic Preservation Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.blm.gov/visit/sears-point",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "BLM Historic Preservation Site",
+   "ver": 12
+  },
+  "US-13330": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sipe White Mountain State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/sipe-white-mountain-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-13331": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lamar Haines Memorial State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/lamar-haines-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-13332": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sunflower Flat State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/location/sunflower-flat-wildlife-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-13335": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Saddleback Mountain BLM Special Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/saddleback-mountain-recreational-shooting-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Special Recreation Management Area",
+   "ver": 12
+  },
+  "US-13336": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Box Canyon BLM Special Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/box-canyon-recreational-shooting-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Special Recreation Management Area",
+   "ver": 12
+  },
+  "US-13337": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Church Camp Road BLM Special Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/church-camp-road-recreational-shooting-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Special Recreation Management Area",
+   "ver": 12
+  },
+  "US-13339": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Baldy Mountain BLM Special Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/baldy-mountain-recreational-shooting-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Special Recreation Management Area",
+   "ver": 12
+  },
+  "US-13593": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Boulders OHV Staging Area BLM Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/boulders-ohv-staging-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Recreation Management Area",
+   "ver": 12
+  },
+  "US-13594": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Black Canyon National Recreation Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/black-canyon-national-recreation-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/black-canyon-national-recreation-trail"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Recreation Trail",
+   "ver": 12
+  },
+  "US-3390": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "River Island State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/river-island",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-3672": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fool Hollow Lake State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/fool-hollow",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-4427": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Apache-Sitgreaves National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/asnf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4428": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Coconino National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/main/coconino/about-forest",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.fs.usda.gov/sites/nfs/files/r03/coconino/publication/2025-travel-map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4429": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Coronado National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/main/coronado/home",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4430": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kaibab National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/kaibab",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4431": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Prescott National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/prescott/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4432": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tonto National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/tonto",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4433": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "The Agua Fria National Monument is free (no fee required) for general visits by the public.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/agua-fria"
+    }
+   ],
+   "hours": [
+    {
+     "line": "Hours and Seasons : Open year‑round, 24 hours a day.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/agua-fria"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Agua Fria National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/agua-fria",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-4434": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ironwood Forest National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/ironwood",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "Recreation on state trust lands requires a permit from the State of Arizona.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/ironwood"
+    },
+    {
+     "line": "There are no permits or fees required to visit the Ironwood Forest National Monument.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/ironwood"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-4435": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Sonoran Desert National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/national-conservation-lands/arizona/sonoran-desert",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-4436": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Vermilion Cliffs National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/national-conservation-lands/arizona/vermilion-cliffs",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.blm.gov/sites/blm.gov/files/docs/2020-12/AZ_VermilionCliffs_NM_map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-4557": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Arizona Trail National Scenic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://aztrail.org/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Scenic Trail",
+   "ver": 12
+  },
+  "US-4571": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Juan Bautista de Anza National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/juba/planyourvisit/maps.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4575": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Old Spanish National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/olsp/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-5965": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Stateline Campground BLM Recreation Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/stateline-campground",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "BLM Recreation Management Area",
+   "ver": 12
+  },
+  "US-6043": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Honeymoon Historic Trail National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/honeymoon-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-6071": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "The Little Black Mountain Petroglyph Site and Trail is open to the public free of charge.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/little-black-mountain-petroglyph-site"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Little Black Mountain Petroglyph Site State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/little-black-mountain-petroglyph-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-6090": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Beaver Dam Mountain Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/beaver-dam-mountains-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Wilderness Area",
+   "ver": 12
+  },
+  "US-7381": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Las Cienegas National Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/las-cienegas-national-conservation-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "You do not need a permit to visit the national conservation area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/las-cienegas-national-conservation-area"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Conservation Area",
+   "ver": 12
+  },
+  "US-7382": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Arlington State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/wildlife/viewing/wheretogo/arlington/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7383": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tonto State Fish Hatchery",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.azgfd.com/fishing-2/hatcheries-fisheries-management/fish-hatcheries/tonto-creek-hatchery/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fish Hatchery",
+   "ver": 12
+  },
+  "US-7637": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Riordan Mansion State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://azstateparks.com/riordan-mansion/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-7887": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Grand Canyon-Parashant National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/para/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-8297": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Muggins Mountain Wilderness Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/muggins-mountain-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "There are no permits, passes, or fees required to visit this wilderness area.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/visit/muggins-mountain-wilderness"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "Wilderness Area",
+   "ver": 12
+  },
+  "US-8298": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Mittry Lake Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/mittry-lake-wildlife-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Wildlife Area",
+   "ver": 12
+  },
+  "US-8312": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [
+    {
+     "line": "Use of the Flying W Group Day Use Picnic Area is free of charge, but you can reserve it for a fee.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/national-conservation-lands/arizona/gilabox"
+    },
+    {
+     "line": "All other activities, such as fishing, hiking and backcountry driving within the Gila Box are free of charge.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/national-conservation-lands/arizona/gilabox"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours (season only)",
+   "hunting_hours": [],
+   "n": "Gila Box Riparian National Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/national-conservation-lands/arizona/gilabox",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "The conservation area is open year-round.",
+     "read": "2026-11-01",
+     "url": "https://www.blm.gov/national-conservation-lands/arizona/gilabox"
+    }
+   ],
+   "status": "ok",
+   "t": "National Conservation Area",
+   "ver": 12
+  },
+  "US-9757": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-01",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Butterfield Overland National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/buov/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  }
+ },
+ "read": "2026-11-01"
+}
