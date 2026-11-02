@@ -8,3 +8,5 @@ Sample 30: 27 OK (90%). All 51 gained read. KEY NO until these 5 are pins:
 Fine: Fortymile (lost its outline: the SRMA is not the WSR) is right.
 
 # Nov 2 ~4:40 AM CDT, build 08:16 UTC: KEY NO (sample 77%). Pin these 7: US-11828, US-8711, US-5913, US-0280, US-5573, US-12371, US-8287 (reasons in approved.json). Old five are fixed. Rule: an alias join needs the SAME place, not a part, a wider unit, or a generic name.
+
+# Nov 2 ~10:50 AM CDT, build US-f3d48d30899: sample 28/30. Pin these 12: US-5682, 5684, 5685, 5686, 5688, 7842, 2365, 4475, 4477, 4481, 10545, 10963. Written as a KEY NO so the per-park release lets the rest go. Chat 2 fixes these and the next build gets KEY YES.
