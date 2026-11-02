@@ -49,6 +49,11 @@ jobs:
           print(f"::{'warning' if alarm else 'notice'} title=Repo size::{msg}")
           subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', 'Repo size (daily)', 'amber' if alarm else 'green', msg[:300], 'HQ (alarm: >600 MB or >25 MB a day)'], check=False)
           PY
+      - name: 2-FER GATE (Nov 2, RULINGS 10:57 AM) - an area's 2-fers start when its key is out and its map audit rows are answered
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/kpc_fers_gate.py gate
       - name: Save
         continue-on-error: true
         run: |

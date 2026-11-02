@@ -78,6 +78,9 @@ jobs:
           echo "areas=$AREAS" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_status.py board 'Map audit' $([ $E = 0 ] || [ $E = 3 ] && echo green || echo amber) "exit $E $(date -u +%F): $(tail -1 ../out/audit/run-log.txt | cut -c1-140)" 'chat 2 (worst rows = fixes) + chat 11 / 12 (questions)' || true   # ok: the board line is a courtesy
           (for i in 1 2 3; do git add data/status && git commit -qm "board: map audit" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true   # ok: the board line is a courtesy
+          python3 .github/scripts/kpc_fers_gate.py questions ../out/audit || true   # ok: the next audit job tries again
+          GH_TOKEN="${{ github.token }}" python3 .github/scripts/kpc_fers_gate.py gate || true   # ok: the watchdog runs the gate too
+          (for i in 1 2 3; do git add data/waiting/questions/map-audit.json data/status && git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true   # ok: saved on the next job
           cd ../out && find audit -size +20M -delete; git add -A audit && git commit -qm "map audit (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || echo "::warning title=Map audit::results not saved to tools-out this time"
           true   # ok: the notices above say what happened
       - name: Next job (the audit goes on until every area is done)
