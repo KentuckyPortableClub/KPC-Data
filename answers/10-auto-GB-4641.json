@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4641.json",
+ "id": "10-auto-GB-4641",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4641",
+  "name": "Parc Glynllifon Country Park",
+  "agency": "",
+  "url": "https://parcglynllifon.cymru/wp-content/uploads/2023/10/Parc-Glynllifon-Map-Safle-crop.jpg",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:07Z",
+ "results": [
+  {
+   "url": "https://parcglynllifon.cymru/wp-content/uploads/2023/10/Parc-Glynllifon-Map-Safle-crop.jpg",
+   "map_url": "https://parcglynllifon.cymru/wp-content/uploads/2023/10/Parc-Glynllifon-Map-Safle-crop.jpg",
+   "saved": [
+    "maps/GB-4641_parc-glynllifon-country-park.jpg"
+   ],
+   "bytes": 315989,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

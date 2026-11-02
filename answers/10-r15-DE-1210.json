@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-r15-DE-1210.json",
+ "id": "10-r15-DE-1210",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "DE-1210",
+  "name": "",
+  "agency": "",
+  "url": "https://www.umweltatlas.bayern.de/standortauskunft/rest/reporting/sb_geotope/generate/Geotope.pdf?additionallayerfieldvalue=373G004",
+  "pages": 1,
+  "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline"
+ },
+ "answered": "2026-11-01 03:00Z",
+ "results": [
+  {
+   "url": "https://www.umweltatlas.bayern.de/standortauskunft/rest/reporting/sb_geotope/generate/Geotope.pdf?additionallayerfieldvalue=373G004",
+   "map_url": "https://www.umweltatlas.bayern.de/standortauskunft/rest/reporting/sb_geotope/generate/Geotope.pdf?additionallayerfieldvalue=373G004",
+   "saved": [
+    "maps/DE-1210_map.jpg"
+   ],
+   "bytes": 308889,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 41,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

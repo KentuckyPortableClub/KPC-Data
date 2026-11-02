@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-pm-US-8103.json",
+ "id": "10-pm-US-8103",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-8103",
+  "name": "Cayuga Lake Wildlife Management Area",
+  "agency": "NY DEC",
+  "url": "https://www.dec.ny.gov/docs/wildlife_pdf/cayugamap.pdf",
+  "pages": 1,
+  "hint": "cayuga",
+  "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)"
+ },
+ "answered": "2026-10-30 06:33Z",
+ "results": [
+  {
+   "url": "https://www.dec.ny.gov/docs/wildlife_pdf/cayugamap.pdf",
+   "map_url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/cayugamap.pdf",
+   "saved": [
+    "maps/US-8103_cayuga-lake-wildlife-management-.jpg"
+   ],
+   "bytes": 463945,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

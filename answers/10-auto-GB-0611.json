@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-GB-0611.json",
+ "id": "10-auto-GB-0611",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-0611",
+  "name": "Saltwells National Nature Reserve",
+  "agency": "",
+  "url": "https://assets.publishing.service.gov.uk/media/5f89bbc28fa8f56adf9e7d60/saltwells-nnr-declaration-maps.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 00:20Z",
+ "results": [
+  {
+   "url": "https://assets.publishing.service.gov.uk/media/5f89bbc28fa8f56adf9e7d60/saltwells-nnr-declaration-maps.pdf",
+   "map_url": "https://assets.publishing.service.gov.uk/media/5f89bbc28fa8f56adf9e7d60/saltwells-nnr-declaration-maps.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

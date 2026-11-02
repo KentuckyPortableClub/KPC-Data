@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-6213.json",
+ "id": "10-auto-CA-6213",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-6213",
+  "name": "Clark Wright Conservation Area",
+  "agency": "government agency (scrca.on.ca)",
+  "url": "https://www.scrca.on.ca/wp-content/uploads/2013/11/trail-clark-wright.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:17Z",
+ "results": [
+  {
+   "url": "https://www.scrca.on.ca/wp-content/uploads/2013/11/trail-clark-wright.pdf",
+   "map_url": "https://www.scrca.on.ca/wp-content/uploads/2013/11/trail-clark-wright.pdf",
+   "saved": [
+    "maps/CA-6213_clark-wright-conservation-area.jpg"
+   ],
+   "bytes": 289449,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

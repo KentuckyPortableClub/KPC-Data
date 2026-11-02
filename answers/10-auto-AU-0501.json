@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-AU-0501.json",
+ "id": "10-auto-AU-0501",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "AU-0501",
+  "name": "Baw Baw National Park",
+  "agency": "government agency (parks.vic.gov.au)",
+  "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/baw-baw/baw-baw-national-park-st-gwinear-ski-trail-map.pdf?rev=bb0584fdefb649d299202231cbe51c54",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 20:53Z",
+ "results": [
+  {
+   "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/baw-baw/baw-baw-national-park-st-gwinear-ski-trail-map.pdf?rev=bb0584fdefb649d299202231cbe51c54",
+   "map_url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/baw-baw/baw-baw-national-park-st-gwinear-ski-trail-map.pdf?rev=bb0584fdefb649d299202231cbe51c54",
+   "saved": [
+    "maps/AU-0501_baw-baw-national-park.jpg"
+   ],
+   "bytes": 250225,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

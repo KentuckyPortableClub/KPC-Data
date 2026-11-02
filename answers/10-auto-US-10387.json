@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-10387.json",
+ "id": "10-auto-US-10387",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-10387",
+  "name": "Joe Crighton Beach Access State Conservation Area",
+  "agency": "Missouri Department of Conservation",
+  "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6511map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:47Z",
+ "results": [
+  {
+   "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6511map.pdf",
+   "map_url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6511map.pdf",
+   "saved": [
+    "maps/US-10387_joe-crighton-beach-access-state-.jpg"
+   ],
+   "bytes": 165940,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

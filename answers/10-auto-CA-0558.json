@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-0558.json",
+ "id": "10-auto-CA-0558",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-0558",
+  "name": "North Steeprock Lake Provincial Park",
+  "agency": "government agency (gov.mb.ca)",
+  "url": "https://www.gov.mb.ca/sd/pubs/maps/parks/north_steeprock.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 19:23Z",
+ "results": [
+  {
+   "url": "https://www.gov.mb.ca/sd/pubs/maps/parks/north_steeprock.pdf",
+   "map_url": "https://www.gov.mb.ca/sd/pubs/maps/parks/north_steeprock.pdf",
+   "saved": [
+    "maps/CA-0558_north-steeprock-lake-provincial-.jpg"
+   ],
+   "bytes": 410951,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

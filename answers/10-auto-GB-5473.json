@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-5473.json",
+ "id": "10-auto-GB-5473",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5473",
+  "name": "The Thicket Nature Reserve",
+  "agency": "government agency (huntingdonshire.gov.uk)",
+  "url": "https://www.huntingdonshire.gov.uk/media/1468/the-thicket-brochure.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:52Z",
+ "results": [
+  {
+   "url": "https://www.huntingdonshire.gov.uk/media/1468/the-thicket-brochure.pdf",
+   "map_url": "https://www.huntingdonshire.gov.uk/media/1468/the-thicket-brochure.pdf",
+   "saved": [
+    "maps/GB-5473_the-thicket-nature-reserve.jpg"
+   ],
+   "bytes": 252357,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

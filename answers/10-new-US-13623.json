@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13623.json",
+ "id": "10-new-US-13623",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13623 Alum Cove Natural Bridge Trail National Recreation Trail: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13623"
+  ],
+  "report": "new park US-13623 Alum Cove Natural Bridge Trail National Recreation Trail: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-30 16:58Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13623",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13623",
+   "title": "",
+   "text": "{\"parkId\": 144223, \"reference\": \"US-13623\", \"name\": \"Alum Cove Natural Bridge Trail\", \"latitude\": 35.859, \"longitude\": -93.2338, \"grid4\": \"EM35\", \"grid6\": \"EM35ju\", \"parktypeId\": 208, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nationalrecreationtrails.com/trails/alum-cove-natural-bridge-trail\", \"createdByAdmin\": \"Eddie Daniel\", \"parktypeDesc\": \"National Recreation Trail\", \"locationDesc\": \"US-AR\", \"locationName\": \"Arkansas\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-6954.json",
+ "id": "10-auto-GB-6954",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6954",
+  "name": "Ballachuan Hazelwood Wildlife Reserve",
+  "agency": "",
+  "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2015/10/Ballachuan-Hazelwood-scaled.jpg",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 15:31Z",
+ "results": [
+  {
+   "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2015/10/Ballachuan-Hazelwood-scaled.jpg",
+   "map_url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2015/10/Ballachuan-Hazelwood-scaled.jpg",
+   "saved": [
+    "maps/GB-6954_ballachuan-hazelwood-wildlife-re.jpg"
+   ],
+   "bytes": 207679,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

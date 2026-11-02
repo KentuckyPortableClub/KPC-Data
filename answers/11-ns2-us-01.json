@@ -1,0 +1,729 @@
+{
+ "request": "requests/11-ns2-us-01.json",
+ "id": "11-ns2-us-01",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-AL, US-AR): screenshots in order: 1=US-11026 (record); 2=US-11026 (map); 3=US-11026 (record); 4=US-11026 (map); 5=US-11026 (map); 6=US-11165 (record); 7=US-11165 (map); 8=US-11165 (record); 9=US-11165 (map); 10=US-11352 (record); 11=US-11352 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-AL, US-AR): screenshots in order: 1=US-11026 (record); 2=US-11026 (map); 3=US-11026 (record); 4=US-11026 (map); 5=US-11026 (map); 6=US-11165 (record); 7=US-11165 (map); 8=US-11165 (record); 9=US-11165 (map); 10=US-11352 (record); 11=US-11352 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+  "items": [
+   {
+    "ref": "US-11026",
+    "park": "The Indian Mountain Conservation Area",
+    "record": "Indian Mountain Complex",
+    "area": "US-AL"
+   },
+   {
+    "ref": "US-11026",
+    "park": "The Indian Mountain Conservation Area",
+    "record": "Indian Mountain Complex",
+    "area": "US-AL"
+   },
+   {
+    "ref": "US-11026",
+    "park": "Indian Mountain",
+    "record": "",
+    "area": "US-AL"
+   },
+   {
+    "ref": "US-11165",
+    "park": "Chalk Bluff Battlefield Park Recreation Park",
+    "record": "Chalk Bluff Natural Area",
+    "area": "US-AR"
+   },
+   {
+    "ref": "US-11165",
+    "park": "Chalk Bluff Battlefield Park Recreation Park",
+    "record": "Chalk Bluff Natural Area",
+    "area": "US-AR"
+   },
+   {
+    "ref": "US-11352",
+    "park": "Rattlesnake Ridge National Heritage Area",
+    "record": "Rattlesnake Ridge Natural Area",
+    "area": "US-AR"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166160&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166159&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.arkansas.gov%2Farcgis%2Frest%2Fservices%2FFEATURESERVICES%2FBoundaries%2FFeatureServer%2F21&center=-90.164%2C36.4784&level=14&marker=-90.164%2C36.4784%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166734&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-90.164%2C36.4784&level=14&marker=-90.164%2C36.4784%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?objectIds=56&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.arkansas.gov%2Farcgis%2Frest%2Fservices%2FFEATURESERVICES%2FBoundaries%2FFeatureServer%2F21&center=-92.5211%2C34.8382&level=14&marker=-92.5211%2C34.8382%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 20:26Z",
+ "results": [
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166160&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166160&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 166160\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: OTHS\nLoc_Own: Alabama Forever Wild Land Trust\nMang_Type: STAT\nMang_Name: SDNR\nLoc_Mang: Alabama Department of Conservation and Natural Resources\nDes_Tp: SREC\nLoc_Ds: Recreation\nUnit_Nm: Indian Mountain Complex\nLoc_Nm: FW 7 - Indian Mountain Tract\nState_Nm: AL\nAgg_Src: ADCNR_PADUS1_4_AL\nGIS_Src: ForeverWildTracts.shp\nSrc_Date: 2013/06/12\nGIS_Acres: 515\nSource_PAID: AL_FW_7\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: Alabama Department of Conservation and Natural Resources (ADCNR)\nAccess_Dt: 2016\nGAP_Sts: 4\nGAPCdSrc: GAP - Default\nGAPCdDt: 2024\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments: made gap default - CMB\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SDNR\nTranspPct: null\nShape_Length: 11608.746296788067\nShape_Area: 3042850.395117598",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/166160",
+     "text": "166160"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166159&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166159&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 166159\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: OTHS\nLoc_Own: Alabama Forever Wild Land Trust\nMang_Type: STAT\nMang_Name: SDNR\nLoc_Mang: Alabama Department of Conservation and Natural Resources\nDes_Tp: SREC\nLoc_Ds: Recreation\nUnit_Nm: Indian Mountain Complex\nLoc_Nm: FW 18 - Indian Mountain -Garner Tract\nState_Nm: AL\nAgg_Src: ADCNR_PADUS1_4_AL\nGIS_Src: ForeverWildTracts.shp\nSrc_Date: 2013/06/12\nGIS_Acres: 80\nSource_PAID: AL_FW_18\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: Alabama Department of Conservation and Natural Resources (ADCNR)\nAccess_Dt: 2016\nGAP_Sts: 4\nGAPCdSrc: GAP - Default\nGAPCdDt: 2024\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments: made gap default - CMB\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SDNR\nTranspPct: null\nShape_Length: 2920.2630323101394\nShape_Area: 474008.9374591075",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/166159",
+     "text": "166159"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-85.446%2C34.029&level=14&marker=-85.446%2C34.029%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: NHC_NATURAL_AREAS (ID: 21)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > FEATURESERVICES > Boundaries (FeatureServer) > NHC_NATURAL_AREAS > query API Reference\nQuery: NHC_NATURAL_AREAS (ID: 21)\nWhere:\nFull Text Search:\nObject IDs:\nTime:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nDefault Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nReturn IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nOrder By Fields:\nGroup By Fields (ForStatistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nMultipatch Option:\nXY Footprint\nStrip Materials\nEmbed Materials\nExternalize Textures\nResult Offset:\nResult Record Count:\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nQuantization Parameters:\nReturn Centroid: True False\nReturn Envelope: True False\nTime Reference UnknownClient : True False\nMax Record Count Factor:\nSQL Format:\nNone\nStandard\nNative\nResult Type:\nFeature Encoding :\nEsriDefault\nDatum Transformation:\nCache Hint: True False\nFormat:\nHTML\nJSON\nPBF\nGeoJSON\n# records: 1\nobjectid: 15\nmacode: M.USARHP*185\nmaname: Chalk Bluff Natural Area\ncountyname: Clay\nquadname: Piggott 7.5'\ntownrange1: T21N R8E\nsection_1: 1\ntownrange2:\nsection_2:\ntownrange3:\nsection_3:\ntownrange4:\nsection4:\ndateadded: 1977\nsize: 54.9252\nlatitude: 36.47809\nlongitude: -90.16495\ncoorddesc: Sign\nglobalid: {6F50240C-92A9-4720-8B63-455ADA72D8C6}\nShape__Area: 224315.93642304\nShape__Length: 2007.1525849464645",
+   "links": [
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES",
+     "text": "FEATURESERVICES"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer",
+     "text": "Boundaries (FeatureServer)"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "text": "NHC_NATURAL_AREAS"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/help/en/rest/router.html?f=rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/15",
+     "text": "15"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.arkansas.gov%2Farcgis%2Frest%2Fservices%2FFEATURESERVICES%2FBoundaries%2FFeatureServer%2F21&center=-90.164%2C36.4784&level=14&marker=-90.164%2C36.4784%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.arkansas.gov%2Farcgis%2Frest%2Fservices%2FFEATURESERVICES%2FBoundaries%2FFeatureServer%2F21&center=-90.164%2C36.4784&level=14&marker=-90.164%2C36.4784%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nArkansas GIS Office | Missouri Dept. of Conservation | Missouri DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166734&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166734&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 166734\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: OTHS\nLoc_Own: State Natural Heritage Program\nMang_Type: STAT\nMang_Name: OTHS\nLoc_Mang: Unknown\nDes_Tp: SCA\nLoc_Ds: 3156\nUnit_Nm: Chalk Bluff Natural Area\nLoc_Nm: Chalk Bluff Natural Area\nState_Nm: AR\nAgg_Src: USGS_PADUS1_0_AR\nGIS_Src: pub_lands_ahtd\nSrc_Date: 2008/00/00\nGIS_Acres: 55\nSource_PAID:\nWDPA_Cd: 44441998\nPub_Access: RA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 1\nGAPCdSrc: GAP\nGAPCdDt: 2008\nIUCN_Cat: V\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: OTHS\nTranspPct: null\nShape_Length: 2467.6659884140404\nShape_Area: 343160.4131244161",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/166734",
+     "text": "166734"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-90.164%2C36.4784&level=14&marker=-90.164%2C36.4784%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-90.164%2C36.4784&level=14&marker=-90.164%2C36.4784%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nArkansas GIS Office | Missouri Dept. of Conservation | Missouri DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?objectIds=56&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?objectIds=56&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: NHC_NATURAL_AREAS (ID: 21)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > FEATURESERVICES > Boundaries (FeatureServer) > NHC_NATURAL_AREAS > query API Reference\nQuery: NHC_NATURAL_AREAS (ID: 21)\nWhere:\nFull Text Search:\nObject IDs:\nTime:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nDefault Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nReturn IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nOrder By Fields:\nGroup By Fields (ForStatistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nMultipatch Option:\nXY Footprint\nStrip Materials\nEmbed Materials\nExternalize Textures\nResult Offset:\nResult Record Count:\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nQuantization Parameters:\nReturn Centroid: True False\nReturn Envelope: True False\nTime Reference UnknownClient : True False\nMax Record Count Factor:\nSQL Format:\nNone\nStandard\nNative\nResult Type:\nFeature Encoding :\nEsriDefault\nDatum Transformation:\nCache Hint: True False\nFormat:\nHTML\nJSON\nPBF\nGeoJSON\n# records: 1\nobjectid: 56\nmacode: M.USARHP*880\nmaname: Rattlesnake Ridge Natural Area\ncountyname: Pulaski\nquadname: Ferndale 7.5'\ntownrange1: T2N R14W\nsection_1: 5\ntownrange2:\nsection_2:\ntownrange3:\nsection_3:\ntownrange4:\nsection4:\ndateadded: 2019\nsize: 296.59\nlatitude: 34.838745\nlongitude: -92.521422\ncoorddesc: Parking\nglobalid: {FC65AE37-9F41-466C-AEB4-8E78B9CBB01E}\nShape__Area: 1482080.24705201\nShape__Length: 5370.693346168048",
+   "links": [
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES",
+     "text": "FEATURESERVICES"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer",
+     "text": "Boundaries (FeatureServer)"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "text": "NHC_NATURAL_AREAS"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/help/en/rest/router.html?f=rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/56",
+     "text": "56"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-10.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.arkansas.gov%2Farcgis%2Frest%2Fservices%2FFEATURESERVICES%2FBoundaries%2FFeatureServer%2F21&center=-92.5211%2C34.8382&level=14&marker=-92.5211%2C34.8382%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.arkansas.gov%2Farcgis%2Frest%2Fservices%2FFEATURESERVICES%2FBoundaries%2FFeatureServer%2F21&center=-92.5211%2C34.8382&level=14&marker=-92.5211%2C34.8382%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCounty of Pulaski, AR | Arkansas GIS Office | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-01-11.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 140,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 5
+ },
+ "short": "11 result(s), 11 read OK, 11 screenshot(s)"
+}

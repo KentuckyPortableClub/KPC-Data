@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-GB-7287.json",
+ "id": "10-auto-GB-7287",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-7287",
+  "name": "Glen Urquhart Forest Park",
+  "agency": "government agency (forestryandland.gov.scot)",
+  "url": "https://forestryandland.gov.scot/media/gdmbzlsa/glen-urquhart-management-a1l-23k.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 15:33Z",
+ "results": [
+  {
+   "url": "https://forestryandland.gov.scot/media/gdmbzlsa/glen-urquhart-management-a1l-23k.pdf",
+   "map_url": "https://forestryandland.gov.scot/media/gdmbzlsa/glen-urquhart-management-a1l-23k.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

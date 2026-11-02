@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-US-10302.json",
+ "id": "10-auto-US-10302",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-10302",
+  "name": "Atherton Meadows State Wildlife Habitat Management Area",
+  "agency": "government agency (fpr.vermont.gov)",
+  "url": "http://anrmaps.vermont.gov/websites/wma/maps/Atherton%20Meadows.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:47Z",
+ "results": [
+  {
+   "url": "http://anrmaps.vermont.gov/websites/wma/maps/Atherton%20Meadows.pdf",
+   "map_url": "http://anrmaps.vermont.gov/websites/wma/maps/Atherton%20Meadows.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

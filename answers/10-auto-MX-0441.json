@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-MX-0441.json",
+ "id": "10-auto-MX-0441",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "MX-0441",
+  "name": "Monte Alto State Park",
+  "agency": "",
+  "url": "https://cepanaf.edomex.gob.mx/sites/cepanaf.edomex.gob.mx/files/files/Monte%20Alto/Normatividad/Mapa%20de%20Saneamiento%20Monte%20Alto.jpg",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 02:15Z",
+ "results": [
+  {
+   "url": "https://cepanaf.edomex.gob.mx/sites/cepanaf.edomex.gob.mx/files/files/Monte%20Alto/Normatividad/Mapa%20de%20Saneamiento%20Monte%20Alto.jpg",
+   "map_url": "https://cepanaf.edomex.gob.mx/sites/cepanaf.edomex.gob.mx/files/files/Monte%20Alto/Normatividad/Mapa%20de%20Saneamiento%20Monte%20Alto.jpg",
+   "saved": [
+    "maps/MX-0441_monte-alto-state-park.jpg"
+   ],
+   "bytes": 418049,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

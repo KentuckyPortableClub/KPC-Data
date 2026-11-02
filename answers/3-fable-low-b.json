@@ -1,0 +1,1840 @@
+{
+ "request": "requests/3-fable-low-b.json",
+ "id": "3-fable-low-b",
+ "chat": 3,
+ "kind": "page",
+ "report": "R-G7 step 3 Fable list low-b (chat 3). (1) RI layer 21: does a record named Hillsdale exist (Hillsdale Preserve / Beaver River - deCoppett)? (2) IA: the FWS Iowa WMD map page: is Teal Basins WPA drawn with a boundary? (3) VA Frontier Culture Museum map PDF: does it show the property boundary line? (4) HI NRHP 64000142 PDF: does it include a boundary map for the Artillery District? (5) NM Los Luceros page: any property map link? (6) HI Oahu forest reserves page: map of Kaala NAR / game reserve?",
+ "asked": {
+  "chat": 3,
+  "kind": "page",
+  "urls": [
+   "https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/MapServer/21/query?where=NAME+like+%27%25Hillsdale%25%27&outFields=NAME%2CSITE_TYPE&returnGeometry=false&f=json",
+   "https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+   "https://frontiermuseum.org/wp-content/uploads/2023/10/FCMV_Map_2023-Web.pdf",
+   "https://npgallery.nps.gov/GetAsset/2ba3e818-1abd-4f73-93a1-28d5de77a0fd",
+   "https://nmhistoricsites.org/los-luceros",
+   "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/"
+  ],
+  "report": "R-G7 step 3 Fable list low-b (chat 3). (1) RI layer 21: does a record named Hillsdale exist (Hillsdale Preserve / Beaver River - deCoppett)? (2) IA: the FWS Iowa WMD map page: is Teal Basins WPA drawn with a boundary? (3) VA Frontier Culture Museum map PDF: does it show the property boundary line? (4) HI NRHP 64000142 PDF: does it include a boundary map for the Artillery District? (5) NM Los Luceros page: any property map link? (6) HI Oahu forest reserves page: map of Kaala NAR / game reserve?"
+ },
+ "answered": "2026-10-29 20:24Z",
+ "results": [
+  {
+   "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/MapServer/21/query?where=NAME+like+%27%25Hillsdale%25%27&outFields=NAME%2CSITE_TYPE&returnGeometry=false&f=json",
+   "status": 200,
+   "final_url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/MapServer/21/query?where=NAME+like+%27%25Hillsdale%25%27&outFields=NAME%2CSITE_TYPE&returnGeometry=false&f=json",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Failed to execute query.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+   "status": 200,
+   "final_url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+   "title": "Iowa Wetland Management District | Map | U.S. Fish & Wildlife Service",
+   "text": "Skip to feedback\nSkip to main content\nAn official website of the United States government\nSearch or ask anything\nAsk DOI Anything - How Can We Help?\nWhat national wildlife refuges are near me?\nDo I need a permit to fish on a national wildlife refuge?\nWhat is the Junior Duck Stamp contest?\nHow can kids get involved with wildlife refuges?\nUtility (Top) navigation\nPasses\nPermits\nDuck Stamps\nReport a Crime\nExperience America\nPlaces to Go\nSpecies\nLearn\nServices\nOur Work\nIowa Wetland Management District\nIowa Wetland Management District\nThe Iowa Wetland Management District includes 75 waterfowl production areas encompassing more than 25,000 acres scattered throughout 18 counties in north-central Iowa. The goal of the district is to restore and protect enough wetland and grassland habitat to meet the needs of prairie wildlife,...\nNational Wildlife Refuge\nTitonka,\nIA\nRefine Map\nAmenities\nBoundaries\nLocations\nAmenities\nParking Lot\nBoundaries\nBailey Creek WPA\nBarringer Slough WPA\nBays Branch WPA\nBeaver Dam WPA\nBig Wall Lake WPA\nBison WPA\nBlackhawk Marsh WPA\nBlazing Star WPA\nBlue-wing WPA\nBluestem WPA\nBluewing Marsh WPA\nBobolink WPA\nBurr Oak WPA\nCayler Prairie WPA\nCheever Lake WPA\nCopp Prairie WPA\nCory Marsh WPA\nCrystal Lake WPA\nDan Greene WPA\nDewey's Pasture WPA\nDewey's Pasture WPA\nDiamond Lake WPA\nDickcissel WPA\nDucks Unlimited Marsh WPA\nDugout Creek WPA\nDunbar Slough WPA\nEagle Flats WPA\nEagle Lake WPA\nEagle Lake WPA\nElk Creek WPA\nElk Lake WPA\nErrington Marsh WPA\nFallow Marsh WPA\nFour Mile WPA\nGarlock Slough WPA\nGood Neighbors Marsh WPA\nGoose Lake WPA\nGrass Lake WPA\nHarlontown Slough WPA\nHarrier WPA\nHogsback Marsh WPA\nIngham Lake WPA\nIowa Lake Marsh WPA\nIowa National Heritage Foundation\nIowa National Heritage Foundation WPA\nIowa Natural Heritage Foundation WPA\nJemmerson Slough WPA\nKettleson Hogsback WPA\nKiowa Marsh WPA\nLake Edwards WPA\nLakin Slough WPA\nLower Morse Lake WPA\nMallard WPA\nMaynard Reece WPA\nMcClurg WPA\nMeredith Marsh WPA\nMyre Slough WPA\nN/A\nN/A\nN/A\nN/A\nN/A\nN/A\nN/A\nN/A\nN/A\nN/A\nOlaf WPA\nPalo Alto WPA\nPickerel Lake WPA\nPilot Knob WPA\nPintail WPA\nPlover WPA\nPrairie Smoke WPA\nRice Lake WPA\nSandpiper WPA\nSantee Prairie WPA\nShimon Marsh WPA\nSmith WPA\nSnake Creek WPA\nSpring Run WPA\nState Line Marsh WPA\nSwan Lake WPA\nTeal Basins WPA\nTomahawk Marsh WPA\nTuttle Lake WPA\nTwelve Mile WPA\nUnion Hills WPA\nWapati WPA\nWellnitz WPA\nWelsh Lake WPA\nWest Lake Okoboji WPA\nWest Swan Lake WPA\nWinnebago County WPA\nWood Duck Marsh WPA\nYager Slough WPA\nLocations\nIowa Wetland Management District\n+\n−\nLeaflet | © OpenStreetMap\nFooter Menu - Legal\nAbout Us\nContact Us\nWork with Us\nPolicies\nOffice of Civil Rights\nSearch\nFWS.GOV\nAn official website of the Department of the Interior\nHelp improve this site\nDisclaimer\nThe boundary map layer was compiled by the U.S. Fish and Wildlife Service. Although these boundaries represent lands administered by the U.S. Fish and Wildlife Service, not all areas are open to the public. Some fragile habitats need to be protected from human traffic, and some management areas are closed. The public is urged to contact specific national wildlife refuges or other conservation areas before visiting.\nDo not show this message again\nContinue",
+   "links": [
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#fba-button",
+     "text": "Skip to feedback"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.fws.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fws.gov/",
+     "text": "U.S. Fish & Wildlife Service"
+    },
+    {
+     "url": "https://www.fws.gov/experience-america/federal-recreation-passes",
+     "text": "Passes"
+    },
+    {
+     "url": "https://www.fws.gov/services/permits",
+     "text": "Permits"
+    },
+    {
+     "url": "https://www.fws.gov/our-work/duck-stamps",
+     "text": "Duck Stamps"
+    },
+    {
+     "url": "https://www.fws.gov/wildlife-crime-tips",
+     "text": "Report a Crime"
+    },
+    {
+     "url": "https://www.fws.gov/experience-america",
+     "text": "Experience America"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/experience-america",
+     "text": " Experience America "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/outdoor-recreation",
+     "text": " Activities "
+    },
+    {
+     "url": "https://www.fws.gov/experience-america/federal-recreation-passes",
+     "text": " Recreation Pass "
+    },
+    {
+     "url": "https://www.fws.gov/events",
+     "text": " Events "
+    },
+    {
+     "url": "https://www.fws.gov/experience-america/volunteer",
+     "text": " Volunteer "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/outdoor-recreation",
+     "text": " All Activities "
+    },
+    {
+     "url": "https://www.fws.gov/activity/fishing",
+     "text": " Fishing "
+    },
+    {
+     "url": "https://www.fws.gov/activity/hunting",
+     "text": " Hunting "
+    },
+    {
+     "url": "https://www.fws.gov/locations",
+     "text": "  "
+    },
+    {
+     "url": "https://www.fws.gov/locations",
+     "text": "Find a Location Near You "
+    },
+    {
+     "url": "https://www.fws.gov/locations",
+     "text": "570 national wildlife refuges, 70 fish hatcheries, and 20 million acres of wilderness "
+    },
+    {
+     "url": "https://www.fws.gov/locations",
+     "text": " Explore all locations "
+    },
+    {
+     "url": "https://www.fws.gov/places-go",
+     "text": "Places to Go"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/places-go",
+     "text": " Places to Go "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/places-go/national-wildlife-refuge-system",
+     "text": " Wildlife Refuges "
+    },
+    {
+     "url": "https://www.fws.gov/places-go/national-fish-hatchery-system",
+     "text": " Fish Hatcheries "
+    },
+    {
+     "url": "https://www.fws.gov/rivers",
+     "text": " Rivers "
+    },
+    {
+     "url": "https://www.fws.gov/places-go/wilderness",
+     "text": " Wilderness "
+    },
+    {
+     "url": "https://www.fws.gov/locations",
+     "text": " All Locations "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/rocky-mountain-arsenal",
+     "text": " Rocky Mountain Arsenal National Wildlife Refuge "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/wichita-mountains",
+     "text": " Wichita Mountains Wildlife Refuge "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/alligator-river",
+     "text": " Alligator River National Wildlife Refuge "
+    },
+    {
+     "url": "https://www.fws.gov/visit-us",
+     "text": "  "
+    },
+    {
+     "url": "https://www.fws.gov/visit-us",
+     "text": "Experience Our Locations "
+    },
+    {
+     "url": "https://www.fws.gov/visit-us",
+     "text": "Explore beyond the locations and begin experiencing what the United States Fish and Wildlife Service"
+    },
+    {
+     "url": "https://www.fws.gov/visit-us",
+     "text": " Experience America "
+    },
+    {
+     "url": "https://www.fws.gov/species",
+     "text": "Species"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/species",
+     "text": " Species "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/species/endangered-species",
+     "text": " Endangered Species "
+    },
+    {
+     "url": "https://www.fws.gov/species/invasive-species",
+     "text": " Invasive Species "
+    },
+    {
+     "url": "https://www.fws.gov/species/injurious-species",
+     "text": " Injurious Species "
+    },
+    {
+     "url": "https://www.fws.gov/species-management",
+     "text": " Species Management "
+    },
+    {
+     "url": "https://www.fws.gov/find-a-species",
+     "text": " Find Species "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/species/gray-wolf-canis-lupus",
+     "text": " Gray Wolf "
+    },
+    {
+     "url": "https://www.fws.gov/species/northern-long-eared-bat-myotis-septentrionalis",
+     "text": " Northern Long-eared Bat "
+    },
+    {
+     "url": "https://www.fws.gov/species/search",
+     "text": "  "
+    },
+    {
+     "url": "https://www.fws.gov/species/search",
+     "text": "Find a Species "
+    },
+    {
+     "url": "https://www.fws.gov/species/search",
+     "text": "Search for specific species by scientific or common names. "
+    },
+    {
+     "url": "https://www.fws.gov/species/search",
+     "text": " Find a Species "
+    },
+    {
+     "url": "https://www.fws.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/learn",
+     "text": " Learn "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/learn/protect-wildlife",
+     "text": " Protect wildlife "
+    },
+    {
+     "url": "https://www.fws.gov/learn/fight-invasive-species",
+     "text": " Fight invasive species "
+    },
+    {
+     "url": "https://www.fws.gov/program/wildlife-restoration",
+     "text": " Restore habitats "
+    },
+    {
+     "url": "https://www.fws.gov/learn/get-involved",
+     "text": " Ways to get involved "
+    },
+    {
+     "url": "https://www.fws.gov/learn/learn-hunt",
+     "text": " Learn to hunt "
+    },
+    {
+     "url": "https://www.fws.gov/learn/learn-fish",
+     "text": " Learn to fish "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/learn/education-curriculum-and-programs",
+     "text": " Education Curriculum and Programs "
+    },
+    {
+     "url": "https://www.fws.gov/nctc",
+     "text": " National Conservation Training Center "
+    },
+    {
+     "url": "https://learning.doi.gov/",
+     "text": " Office of Employee Development Learning Hub "
+    },
+    {
+     "url": "https://www.fws.gov/story/what-do-if-you-find-baby-bird-injured-or-orphaned-wildlife",
+     "text": "  "
+    },
+    {
+     "url": "https://www.fws.gov/story/what-do-if-you-find-baby-bird-injured-or-orphaned-wildlife",
+     "text": "Injured or Abandoned Wildlife "
+    },
+    {
+     "url": "https://www.fws.gov/story/what-do-if-you-find-baby-bird-injured-or-orphaned-wildlife",
+     "text": "A few things you should know to keep the animal safe and avoid breaking the law. "
+    },
+    {
+     "url": "https://www.fws.gov/story/what-do-if-you-find-baby-bird-injured-or-orphaned-wildlife",
+     "text": " Read more "
+    },
+    {
+     "url": "https://www.fws.gov/services",
+     "text": "Services"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/services",
+     "text": " Services "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/experience-america/federal-recreation-passes",
+     "text": " Entrance Passes "
+    },
+    {
+     "url": "https://www.fws.gov/services/purchase-hunting-license",
+     "text": " Hunting Licenses "
+    },
+    {
+     "url": "https://www.fws.gov/services/purchase-fishing-license",
+     "text": " Fishing Licenses "
+    },
+    {
+     "url": "https://www.fws.gov/permits/special-use-permits",
+     "text": " Special Use Permits "
+    },
+    {
+     "url": "https://www.fws.gov/services/permits/import-export-permits",
+     "text": " Import/Export Permits "
+    },
+    {
+     "url": "https://fwsepermits.servicenowservices.com/fws?id=fws_index",
+     "text": " All Passes & Permits "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/services/grants-and-funding",
+     "text": " Grants and Funding "
+    },
+    {
+     "url": "https://www.fws.gov/consultation-and-technical-assistance",
+     "text": " Consultations and Technical Assistance "
+    },
+    {
+     "url": "https://www.fws.gov/services/investigational-new-animal-drugs-inads",
+     "text": " Investigational New Animal Drugs "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/services/partners-fish-and-wildlife",
+     "text": " Partners for Fish and Wildlife "
+    },
+    {
+     "url": "https://www.fws.gov/services/fish-stocking",
+     "text": " Fish Stocking "
+    },
+    {
+     "url": "https://www.fws.gov/services/cooperative-agriculture-opportunities",
+     "text": " Cooperative Agriculture Opportunities "
+    },
+    {
+     "url": "https://www.fws.gov/services/land-management-assistance",
+     "text": " Land Management Assistance "
+    },
+    {
+     "url": "https://www.fws.gov/our-work",
+     "text": "Our Work"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/our-work",
+     "text": " Our Work "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/our-work/combating-wildlife-trafficking",
+     "text": " Combating Wildlife Trafficking "
+    },
+    {
+     "url": "https://www.fws.gov/our-work/fishing",
+     "text": " Fishing "
+    },
+    {
+     "url": "https://www.fws.gov/our-work/pollinators",
+     "text": " Pollinators "
+    },
+    {
+     "url": "https://www.fws.gov/our-work/protecting-wildlife",
+     "text": " Protecting Wildlife "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "Back"
+    },
+    {
+     "url": "https://www.fws.gov/our-work/duck-stamps",
+     "text": " Duck Stamps "
+    },
+    {
+     "url": "https://www.fws.gov/laws-regulations",
+     "text": " Laws & Regulations "
+    },
+    {
+     "url": "https://www.fws.gov/library",
+     "text": " Maps, Guides and Resources "
+    },
+    {
+     "url": "https://www.fws.gov/initiatives",
+     "text": " All Initiatives "
+    },
+    {
+     "url": "https://www.fws.gov/search/projects",
+     "text": " All Projects "
+    },
+    {
+     "url": "https://www.fws.gov/news",
+     "text": "  "
+    },
+    {
+     "url": "https://www.fws.gov/news",
+     "text": "Recent News and Stories "
+    },
+    {
+     "url": "https://www.fws.gov/news",
+     "text": "Check out the latest news and updates "
+    },
+    {
+     "url": "https://www.fws.gov/news",
+     "text": " Read more "
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district",
+     "text": ""
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district",
+     "text": "Iowa Wetland Management District"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "+"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": "−"
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map#",
+     "text": ""
+    },
+    {
+     "url": "https://leafletjs.com/",
+     "text": "Leaflet"
+    },
+    {
+     "url": "http://www.openstreetmap.org/copyright",
+     "text": "OpenStreetMap"
+    },
+    {
+     "url": "https://fws.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://freedom250.org/",
+     "text": ""
+    },
+    {
+     "url": "https://www.facebook.com/usfws",
+     "text": ""
+    },
+    {
+     "url": "https://www.instagram.com/usfws",
+     "text": ""
+    },
+    {
+     "url": "https://x.com/usfws",
+     "text": ""
+    },
+    {
+     "url": "https://www.linkedin.com/company/usfws",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/photos/usfwshq",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/usfws",
+     "text": ""
+    },
+    {
+     "url": "https://www.fws.gov/about-us",
+     "text": "About Us"
+    },
+    {
+     "url": "https://www.fws.gov/contact-us",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.fws.gov/about-us/work-us",
+     "text": "Work with Us"
+    },
+    {
+     "url": "https://www.fws.gov/policies",
+     "text": "Policies"
+    },
+    {
+     "url": "https://doi.gov/pmb/eeo",
+     "text": "Office of Civil Rights"
+    },
+    {
+     "url": "https://touchpoints.digital.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+     "text": ""
+    },
+    {
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+     "text": "I understand, please proceed."
+    },
+    {
+     "url": "https://america.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://chat.doi.gov/terms",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://frontiermuseum.org/wp-content/uploads/2023/10/FCMV_Map_2023-Web.pdf",
+   "browser_error": "Error: Page.goto: Download is starting\nCall log:\n  - navigating to \"https://frontiermuseum.org/wp-content/uploads/2023/10/FCMV_",
+   "status": 200,
+   "final_url": "https://www.frontiermuseum.org/wp-content/uploads/2023/10/FCMV_Map_2023-Web.pdf",
+   "read_by": "plain read",
+   "title": "",
+   "text": "%PDF-1.4 %����\n12 0 obj > endobj\nxref\n12 81\n0000000016 00000 n\n0000002413 00000 n\n0000002568 00000 n\n0000003742 00000 n\n0000003941 00000 n\n0000004053 00000 n\n0000004166 00000 n\n0000004241 00000 n\n0000004938 00000 n\n0000004986 00000 n\n0000005129 00000 n\n0000005176 00000 n\n0000005545 00000 n\n0000005593 00000 n\n0000005995 00000 n\n0000006043 00000 n\n0000006436 00000 n\n0000006484 00000 n\n0000006812 00000 n\n0000006859 00000 n\n0000007555 00000 n\n0000007603 00000 n\n0000007752 00000 n\n0000007799 00000 n\n0000007948 00000 n\n0000007995 00000 n\n0000008244 00000 n\n0000008291 00000 n\n0000009002 00000 n\n0000009050 00000 n\n0000009287 00000 n\n0000009334 00000 n\n0000009697 00000 n\n0000009745 00000 n\n0000010438 00000 n\n0000010486 00000 n\n0000011125 00000 n\n0000011173 00000 n\n0000011292 00000 n\n0000011339 00000 n\n0000011936 00000 n\n0000011984 00000 n\n0000012018 00000 n\n0000012095 00000 n\n0000012208 00000 n\n0000034695 00000 n\n0000035029 00000 n\n0000035092 00000 n\n0000035207 00000 n\n0000048069 00000 n\n0000048333 00000 n\n0000048773 00000 n\n0000049184 00000 n\n0000061618 00000 n\n0000061655 00000 n\n0000084142 00000 n\n0001065185 00000 n\n0001076462 00000 n\n0001083925 00000 n\n0001091401 00000 n\n0001098461 00000 n\n0001105901 00000 n\n0001113336 00000 n\n0001120563 00000 n\n0001128030 00000 n\n0001135216 00000 n\n0001142762 00000 n\n0001149822 00000 n\n0001192095 00000 n\n0001232610 00000 n\n0001239737 00000 n\n0001280711 00000 n\n0001287994 00000 n\n0001295208 00000 n\n0001335738 00000 n\n0001343583 00000 n\n0001350991 00000 n\n0001358207 00000 n\n0001379286 00000 n\n0000002240 00000 n\n0000001916 00000 n\ntrailer\n]/Prev 1382502/XRefStm 2240>>\nstartxref\n0\n%%EOF\n92 0 obj >stream\nh�b``�e`�8��� ��̀ X\u00188�x�P���� ��������\u0001�?\u0003�\u0004�� \u000f\u0018r\u0019\u0018.0�\u0003Y�\u0005 \" D�\u0001Ř��d��,\bq $�\u0014$v\u001a��\u0013�b� \"bAb� Yc\u0010���i\u0003�?ku\u0000�\u000e\u0003�\u0005�@f�\u0003 �\u0018$\u0013\u0018+��\u0019\u0018�Y��~\b2�� ��xQA����\u0003���\u0007'�r2�g��`ܮ��?�#\u0001魜�\u000e�\u00042 80π��9�\u0003\u000f�L\u0019\u00187�x��A�� >/Filter/FlateDecode/Index[5 7]/Length 27/Size 12/Type/XRef/W[1 1 1]>>stream\nh�bbbd`b``Ć\u0001\u0000\u0000\u0000��\u0000\u0000\u0000��\u0003\u0000\u0001�\nendstream endobj 13 0 obj >/Metadata 3 0 R/Pages 2 0 R/StructTreeRoot 5 0 R/Type/Catalog/ViewerPreferences >>> endobj 14 0 obj >/XObject >>>/Rotate 0/StructParents 0/TrimBox[0.0 0.0 792.0 612.0]/Type/Page/PieceInfo /LastModified /NumberOfPageItemsInPage 2/NumberofPages 1/OriginalDocumentID /PageItemUIDToLocationDataMap >/PageTransformationMatrixList >/PageUIDList >/PageWidthList >>>>>>> endobj 15 0 obj >stream\nH��w�L/-JU����u�tQ0P��srqV�*�2��37R043�31Q07�г�P066�35S(J�\nW�\u0003��w\u000f6PH/�2P\b��w�5Pp��\n\u0004B\u0003\u0005\u00104T��2Q�U\u0000)3\u0004)�od0��/�f\u0000\u0000\u0000\u0000��\u0000\u0000\u0000��\u0003\u0000�N �\nendstream endobj 16 0 obj > endobj 17 0 obj > endobj 18 0 obj > endobj 19 0 obj >stream\nH� �YR�`\u0010�q\u0019KFD�E�\u0017\u0005$$$\u0001\u0002V�+��Ψ�\b >?���htuu511!\u0012�~\b�&''���)�X�SH >>99q8 N���r��n����zOOO������}>��\u000f�\u0003�@0\u0018 �B�p8\u0012\u0001\"Q����^\\\\\\^\u0002��X, �'\u0012�d\u0012�'��T*�N�3�t6��0L��4��V�U�մZ��� Ϗy��T*5��:M�\\���rY�ӭ�\u0000+�V�R����J� Az�e�ժ�``�\u0016 õZ\u0015� \b��0�r,Ǳ@�\u0011F\u0010�(l\u0003�q$Y#ɪ�h$I�^'Q��\u0016���:��(��8NQu G;�6EQ8�a8j2am�%��Ʉw:`��f�\u0018�7\u001a �\u0002�\u0018�����b�\u0010\u0004A�t�۵Z B\u0018K��\u0001\u0017A�y��j��t�f#\u0018�f�F�ף\u0019�ZA�^�f����2 s{{���d��������766677������wvvvww������\u000f\u000e\u000e�N���\u000e\u0006\u0003�P0 \u000e��D\"�J%��̵P6����r� >stream\n���~~~@@@���KKK\u0000\u0000\u0000���SSS���+++666�����ᣣ���������֟�����TTT��길������ը��������������������\nendstream endobj 22 0 obj [/Indexed/DeviceRGB 30 21 0 R] endobj 23 0 obj >stream\n���xxx@@@FFFkkk������CCC\u0000\u0000\u0000'))������KKK\u0004\u0002\u0001\u0012 \u0004\u0011 \u0004\u0011\b\u0003\u0013 \u000771-���\u0010\u0007\u0003K'\u0011I&\u0011H&\u0011H%\u0011G%\u0010F$\u0010E$\u0010D#\u000fD\"\u000eY=,������\u000f\u0007\u0003E#\u0010D#\u0010C#\u000fC\"\u000fB\"\u000fA!\u000f? P4\"������A\"\u000f? M0 ������? J,\u001a|mc���B#\u0010@! E&\u0013G3%���C!\u000e(\u000e\u0000���C\"\u000e(\u000f\u0000���B\"\u0010)\u0010\u0001���'\u000f\u0000���F#\u0010D#\u000eD\"\u0010% \u0000���% \u0000C\"\u0010D\"\u000f' \u0000���������E#\u000f'\u000e\u0000���,\u0013\u0004���-\u0014\u0005���& \u0000K'\u0012H%\u0010G%\u000fJ'\u0012( \u0000\u0011 \u0003\u0012\n\u0005 \u0006\u0001���\u000e\u0010\u000e���\b \u0007�����ҿ��������\nendstream endobj 24 0 obj [/Indexed/DeviceRGB 105 23 0 R] endobj 25 0 obj >stream\n���ppp@@@���777\u0000\u0000\u0000������\u000e\u0007\u00037 5\u001b 8 \u000e\b\u0003\u0013 \u0004L(\u0012I&\u0011M(\u0012\u0014\n\u0004\u0012 \u0004F$\u0010J&\u0011\u0013\n\u0004I%\u0011AAA\u001a\u0012 K(\u0013G%\u0011BBB\u0006\u0007\b,$ P-\u0019G&\u0012>>>\u0000\u0000\u0001$ \u0018N+\u0017RQP\u001a\u001b\u001a3+'Q/ H'\u0013F$\u000fF$\u0011������{tj]@-M-\u0019E#\u000fG$\u0011�����Ǫ��hM:R2 �����ŭ��lR@S5!�����ƫ��nUBU7#�����˯��qYHX;'D\"\u000e�����ŭ��sZIY >stream\nH�\u0014��n�@\u0014\u0005`� �� 6�\"J33�(�m\u001a�.� ��i�t�.�k��G�l}\u0007��1��ɽ�r� \u000e��n���O���|�v��Z�,KB�\"�톀TAo�톨�\u0002W�WUE)55�m�� �;z� � �0�`� U�+�*\u0003H+\nS\n3�2\u001b�m���@�qz@N)J�6��� �ה0 �-p�z �����m4���P-l�1.l�\u0010m�P�0Ōf����\u0004�\u0005���\u0010�Mƒ,�������N\u0018��[����\u000eƟ ��h���H=�I\u0016�O�}=\u000f3GO0����O#��a���M�>/JK �T[S���\u0001d�u{@Z�P�9�\b�e�n��8����(: ��\u0000\u0000\u0000��\u0000\u0000\u0000��\u0003\u0000�pF�\nendstream endobj 28 0 obj [/Indexed/DeviceRGB 113 27 0 R] endobj 29 0 obj >stream\nH�\u0014��N�P\u0018\u0000���j��s\u000e� �J�\u000157�bM7��Cax5�ݥ�Jj\\\u0000�� \u0010mϞ���.��x*�z�S۶�1\u0000�\u0000�\u0004�������V���#�G\u000ec}�K�ߕ�f.I\u0019�\u0010iu�>\u0011ii�{\u0017' /me���\u0012S�b) K�\u0019^XrLQBq`�\u0011�\"��\u0014E\u000e����Ao\u000e��rBI\u0010\u0004sC\u0016C$�\u001a�bf�y��GT\u0014�Z�����y��.޻$��a� ���\u0002��������`�o0�p3��s���.�\b9߄| 򐋦i�\u0000\u0000\u0000��\u0000\u0000\u0000��\u0003\u0000�� >stream\n�����ɼ��������������/'\"!\b\u0000% \u0000&\u000e\u0000'\u000e\u0000(\u000e\u0000(\u000f\u0000)\u000f\u0000*\u0010\u0000\u0000\u0000\u0000���?4-=\u001b\u0007C\"\u000fD#\u000fE$\u000fF$\u0010G%\u0010H%\u0010I&\u0011K&\u0012 \u0006\u0002���=3-8\u0019\u0006> \u000e? \u000e@!\u000fB!\u000fC#\u000fE#\u0010 \u0006\u00027\u0018\u0005 4-5\u0017\u0005: @!\u000eB\"\u000fJ@97\u001a\b: ; \u000e? \u000fRIB7\n9 B\"\u000eI?85\u0019\u00079 ?!\u000e>5.4\u0017\u0005= A\"\u000f \u000f4\u0017\u0006=#\u0012A&\u0016B'\u0015=\"\u0011= \u000eC#\u00105\u0017\u0006@'\u0016A'\u0016: \u000e #\u0013;!\u0010G$\u0010uma>#\u00127 vn`>%\u0013 $\u0012����������������sd`I:D*\u001aG%\u0011�ƺ����Ǽ���������oZKJ0 = \u000f> \u000eH&\u0011J&\u0011K'\u0011���º��Ǽþ����g[O=, &\u0014\u0006 \u0000 \u0000\" \u0000$ \u0000)\u000f\u0001��������Ʒ�����]][FFG?@A>?@=>?<>???@@@@���\nendstream endobj 32 0 obj [/Indexed/DeviceRGB 214 31 0 R] endobj 33 0 obj >stream\n���{{{@@@���GGG\u0000\u0000\u0000���OOO\u0001\u0000\u0000���$\u0013\b8 5\u001b 7 +\u0016\n3\u001a M(\u0012I&\u0011L'\u0012 >stream\n������@@@���ddd\u0000\u0000\u0000���kkk \u0010\u00078 5\u001b \u0018 \u0006���+\u0016\nO(\u0012J%\u0011I&\u0011O)\u0012\"\u0011\b)\u0015 K&\u0011F$\u0010K'\u0011 \u0010\u0007+\u0016 \"\u0011\u0007\n\u0005\u0002\u0013\n\u0004\u0012 \u0004\b\u0004\u0002��ڿ�����\nendstream endobj 36 0 obj [/Indexed/DeviceRGB 32 35 0 R] endobj 37 0 obj >stream\n������>?@<>?=>?>??@@@���XY[ \u0000\u0000,\u0011\u0001)\u000f\u0000(\u000f\u0000(\u000e\u0000'\u000e\u0000+\u0010\u0001\u0000\u0000\u0000���^`b \u0006\u0000N(\u0012I&\u0011H&\u0011H%\u0011M'\u0012 \u000f\u0007���\u001b\u0007\u0000J&\u0011F$\u0010E$\u0010E#\u0010J%\u0011 \u000e\u0006\u001b\u0006\u0000J'\u0011 \u000f\u0006 \u000f\u0007\u001a\u0006\u0000K'\u0011`bdbdf \u0007\u0000bee]_aK&\u0010H%\u0010O(\u0012 \u000f\u0007\\]^ \u0000\u00004\u0019 -\u0014\u0006*\u0011\u0002\n\u0000\u0000�����������þ��������������������\nendstream endobj 38 0 obj [/Indexed/DeviceRGB 65 37 0 R] endobj 39 0 obj >stream\n������@@@���XXX\u0000\u0000\u0000���___���```\u0007\u0004\u00020\u0019 1\u0019\n1\u0019 2\u001a 2\u001a 3\u001a 4\u001a 4\u001b 5\u001b 8 \u0014 \u0005aaa \u0005\u0002B\"\u000fC#\u000fD#\u000fD#\u0010E$\u0010D$\u0010F$\u0010F%\u0010G%\u0010G%\u000fG%\u0011H%\u0011H&\u0011I&\u0011O)\u0012 \u000f\u0006\n\u0006\u0003? \u000e@!\u000eA!\u000eA!\u000fA\"\u000fC\"\u000fD#\u000eE#\u0010K'\u0011\u001b\u000e\u0006 \u0007\u0005?!\u000e@ \u000ewxw\u0002\u0002\u0002 \u0006\u0003���\u0007 \b\u0006\u0002\u0000? ? \u000f@!\u0010@\"\u000fB#\u000f���\u0006\b\u0007\u0005\u0000\u0000? A\"\u0010C%\u0013B%\u0012���;>:0.*Q7'F'\u0016B$\u0011��ԙ�����ufVL0 A\"\u0011@!\u000fB\"\u0010�����ж����sN4\"= B\"\u000e�����иŷ��rM3!�����é��~scI/ ���������tfUG+\u0019�����ő��hWFC'\u0015> �����Ȋ��aN>B%\u0013�����͡��vkZO6%> �����ğ��eQAA$\u0012��������Ѳ��n]MC&\u0014�����Ҷ�����aL \u000e��ݺ̼^bZA&\u0013��̩��OQI ��Ę��LI@?!\u000f= ��Í�xJD;E(\u0017A#\u0011��Ĕ�}`XMX>,J.\u001bB$\u0012��Ũ����tr^KP6#��Ŷ�����o\\P6$��è����sbPK1 �ĺzxkUSIV?.D'\u0016���XXO*& C$\u0012H%\u0010H&\u0010���GH@\u0018\u0015\u0012-\u0017 /\u0018\n0\u0018\n0\u0018 /\u0018 2\u0019 3\u001a ���993 \b ���/.(������������������\nendstream endobj 40 0 obj [/Indexed/DeviceRGB 219 39 0 R] endobj 41 0 obj >stream\n�����Ͽ��������777\u0000\u0000\u0000���@@@\u0001\u0000\u0000\u0000\u0000\u0001��� \u0007\u00035 3\u001a 4\u001a 4\u001b 5\u001b 7 (\u0015 \u0012 \u0004J'\u0011G%\u0010H%\u0010H%\u0011H&\u0011H&\u0010I&\u0011L(\u00129 \u0011 \u0004D#\u000fE#\u0010E$\u0010F$\u00106 E#\u000fF#\u0010F%\u0010C#\u000fC\"\u000fC#\u000e\u0010 \u0003E$\u000f\u0011 \u0003\u0010 \u0004B\"\u000fD$\u0010D\"\u000f\u0010\b\u0004D#\u0010A\"\u000f\u0011\b\u0004G%\u0011 \u0006\u00031\u001a 2\u001a 2\u0019 3\u0019 )\u0015 ppp���\nendstream endobj 42 0 obj [/Indexed/DeviceRGB 61 41 0 R] endobj 43 0 obj >stream\n������������������������[[Z\u0013\u0013\u0011!! \u0019\u0019\u0018 \u0000\u0000\u0000���eed $$!\u001a\u001a\u0019\u0011\u0011\u0011\u0004\u0004\u0004���XXX \u0006\u0006\u0006\u0002\u0003\u0004JJJ%\u0013\b7 5\u001b 8 \u0010\b\u0004GGG4\u001b L(\u0012I&\u0011M(\u0012\u0016 \u0005MMM2\u001a F$\u0010J&\u0011\u0015 \u0005SSSTTTLLL\u0001\u0001\u0001bbbvut2\u001a sqm\u000e\u000e 2\u0019 jha'&\"\u0016\u0017\u0017\u0004\u0006\u00075 \u0010I&\u0012��JI?661\u001a B, L*\u0015E#\u000f���WWP64,#$!I4'N,\u0018E$\u0010^__ -+' C- DDD\u000f\u000f\u000e\n8 \u0012J'\u0012F%\u0010IIIPPPYYYOOOQQQefe\u0003\u0003\u0003str\b\b\b\u0002\u0002\u0002 \u0007\u0003\u0012\n\u0004\u0012 \u0004\u0013\n\u0004\u0005\u0003\u0001BBBttt@@@���\nendstream endobj 44 0 obj [/Indexed/DeviceRGB 103 43 0 R] endobj 45 0 obj >stream\n�����ӿ�����������������KNK\u0000\u0000\u0000&\u000e\u0000% \u0000'\u000e\u0000(\u000e\u0000)\u000f\u0000,\u0011\u0001\u0002\u0000\u0000���SWS\u0001\u0004\u0002\u0015 \u0007F$\u0010D#\u000fE$\u0010H%\u0010I&\u0011I&\u0010M'\u0012\u0013 \u0004[_X\u000f\u0014\u0010 \u0016\u0010C#\u000f@!\u000eA\"\u000fC\"\u000fD#\u0010E#\u000fE$\u000fI%\u0011\u0011 \u0004}�w)1'\"\u001a\u0014B\"\u000f? E#\u0010F$\u0011J&\u0012\u0012 \u0004���XdS96,F'\u0016? D$\u0010�˻���kp^O4#= A!\u000f�ϻ�����~U ��Ǽϲ��{^Q;F*\u0019@!\u0010����ָ���~�jaQ>L1 B$\u0011@ \u000eD\"\u000f����ֺ������vnZU>,D&\u0014? ����ӷ������xr^D'\u0015��Ⱥͱ������YE2C(\u0015����ʯ������ztaXD2C'\u0016B\"\u0010�μ�Ȯ������xp]WB/C'\u0015= �ν���q{g}|efVDP7%B%\u0013�μXfV-+ R \u000e�ɷMVK\u001b\u0012 @\"\u000e?\"\u0010> \u000f���JPH\u0019\u0010 A\"\u0010���@G@\u0015 \bA E%\u0010���BJA\u001a\u0012 @ ���GPF \u0017\u0011? ���HQG \u0017\u0012������DMB \u0014\u000f���DLC���DLD\u001a\u0012 G$\u0010���FNF\u0018\u0010 I%\u0010���6?6 \u0003\u00007\u0016\u00026\u0016\u00037\u0017\u00039\u0018\u0004;\u0019\u0004 >stream\n�����˿�����������������$$$\u0000\u0000\u0000\u0007\u0000\u0000\u0006\u0000\u0000...\u0018 \u0006M(\u0012I&\u0011I&\u0012J&\u0012\u000e\u0007\u0003���\u0017 \u0006J&\u0011F$\u0010E$\u0010 \u0007\u0003E%\u000f \u0006\u0002\u0017 \u0005E#\u0010D#\u000fE#\u000f \u0006\u0003���C#\u000eC#\u000f\u0010\u0011\u0010���C\"\u000fB\"\u000f \u0007\u0004**'���B!\u000f \u0007\u0003/0-���D#\u0010A\"\u000f@!\u000e/.+���A!\u000f\u000f\b\u00050/,���@!\u000f-,(���D$\u0010B\"\u000eB\"\u0010? \u0007\u0001\u0000 \u001a���E$\u0011A#\u0010A$\u0011C%\u0013 \u0007\u0005#$#���A\"\u0010@\"\u0010 K. �qc���������������= N2\"������������������G*\u001a��|���������������?!\u000e \u000e?!\u000f@#\u0011>!\u000f= ��� \u0006\u0002> \u000f\u0018 \u0005H%\u0011G%\u0010C#\u0010\u0011 \u00048 5\u001b 4\u001b 3\u001a 2\u001a 2\u001a 1\u0019 0\u0019 1\u001a \u0005\u0002bbb@@@���\nendstream endobj 48 0 obj [/Indexed/DeviceRGB 195 47 0 R] endobj 49 0 obj >stream\n���jjj@@@���///\u0000\u0000\u0000���888���\u000e\u0007\u0003\u0012\n\u0004\u0012 \u0004\u0004\u0002\u00019 L(\u0012I&\u0011\u0011\b\u00046 F$\u0010\u0010\b\u0004��Ϳ�����\nendstream endobj 50 0 obj [/Indexed/DeviceRGB 22 49 0 R] endobj 51 0 obj >stream\n������@@@���SSS\u0000\u0000\u0000���[[[���\u0003\u0002\u0001\u0011 \u0004\u0012 \u0004\u0013\n\u0004\u0007\u0004\u0002 \u0006\u0003J&\u0011I&\u0011I&\u0010O)\u0012 \u000f\u0006 \u0006\u0003G%\u0010G$\u0010F$\u0010K'\u0012 \u000e\u0007K'\u0011\u001b\u000e\u0006 \u0005\u0003E#\u0010E$\u0010\n\u0005\u0003D#\u000f\n\u0005\u0002C#\u000fE#\u0011C\"\u000fD#\u0010A!\u000fB\"\u0010? \u000e@!\u000fB\"\u000f\u0002\u0002\u0002\u0000\u0000\u0001 \u0005\u0002= \u000e> \u000e@!\u000e\u0001\u0001\u0001\u0000\u0001\u0001; \u000e #\u0011=!\u0010; \u000e; @ \u000fF$\u0011mml\u0014\u0013\u0011 \u0018\u0019\u0018\u001b\u0017\u0014A&\u0016 8 ��������в��XSNE, ; \u000f > endobj 55 0 obj > endobj 56 0 obj >stream\n����\u0000\u000eAdobe\u0000d\u0000\u0000\u0000\u0000\u0000��\u0000C\u0000\u0002\u0002\u0002\u0005\u0002\u0005\u0007\u0005\u0005\u0007\b\u0007\u0006\u0007\b \b\b\n\u000e\u000e \u000f \u000f ��\u0000\u0004\u0001���\u0000 \b\u0005� �\u0001\u0000\u0011\u0000��\u0000�\u0000\u0001\u0001\u0001\u0000\u0001\u0003\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003 \u0002\u0001\u0004\u0005\u0006\u0007\b\n\u0010\u0001\u0000\u0001\u0003\u0001\u0004\u0001\u0000\u0002\u0012�\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u00032q\u0002\u0012\u0014R�\u0013\u0004\"\u0005\u0006\u0007\b\n\u0011\u0015\u0016\u0017\u0018\u0019\u001a!#$1A%&'()*3456789:BCDEFGHIJQSTUVWXYZabcdefghijrstuvwxyz����������������������������������������������������������������������������������\u0000\b\u0001\u0000\u0000\u0000?\u0000�*]Fѳ WOx��\u000e{�� >/ProcSet[/PDF/ImageB]/XObject >>>/Subtype/Form>>stream\nH� �;\n�@ \u0005�>�� �/f�\u0017�R > endobj 59 0 obj > endobj 60 0 obj >stream\nH��U\u0007XUG\u0016����\u0000\u0005�*Mᾇ�)ņݨK4j4�X�M�+Q\u0011ADPT��\u00111����\u001b������bA�wE� �g\u0003��Z�X@�9���t7�{�;w�̜��Ϝ��\u0003\u0002`�DH����fA#��\u0019����eXLh���\u0000\u0005\u0001V�ac���^z��>�Ɏ� \u001aӷ��\u0001�[������#έ~y\u0006p�\u0000��#�C��k�� h\u0012�뵉�:�6��=�� #c���B����4����a��r�-\u0006ږ\u0000ڠ���X�$�������И� ��p� }\u0015;rL��%@�����C�d�gp\u001a`k\u0007�|E\u000e��F�Bے�\u0017���-\"���V�Z[ !$��� �x���� .\u0015B{��/�[��4\u0019X[\\X=,@յ ��_��f���\\�j�w �4Z+k�Z�m����uptrvq������U�������6T �\u001a��\u0007\u00046iڬy����Z�iۮ}�\u000f:v����\u000f�t��[� ����_?��w���>��o_~�����?�\u0001\u0003\u0007�bpؐ����â�Gǌ\u0018\u0019;j���oǎ� ?a�w�\u0012&'N�����ӦϘ9+y�����/X����K�.[�b��k֦�[��a��[�n�.�ܕ��;c��}���\u000ed �9t8���c��N�\u0017� B\u0016:1G�/\u0005QKѐZ E\u0018D#�X� \u0011 \u0002��=\"�Z#\u0013��G%؋}8��q ���c9 �86b!\u0005c u�q�_��G��\u0001��͆G�m���\u0000\u000fV��?�2Z-�\u001a� S �R���(�D��T{\u0004v�u�x��/�t\u0012��j��8������\u001bA�Za2^��# ��*��\u0019ޕ��U警1��#~�5�5J�\u0002��{� /��\u0017�f?\u000e�:�BUg�\u0016��.e� h�&��a��D.�y������\u00131GV0��n�\\�-�Hˤ�R6�a\u00035s��� ٮ ���v��� ����\u00152�8V%x��\u0013�*�R�x�l[���\u000f��4�sz'\u00152�ʥ�����&�+��qw>;Nrg;? �#&\u0010�8 �8�p%��\u0013\u0001I\u001a:;�� �H�6�*�Z�FY�\u000e\u0004-\u001aS�1 \u0018m5�kZ�\u0013&5�\u0014�J���޴ tE��e0\u0004Y5����I\u0004�cw������ ����6ү�.�J?�S\\ ��\u0002ܧ �\u000e�l��_$�\u0002>��� ��Kx\u0015T�-ХaZ���\u0001z��6ZO��A��\u0014� \u0012���g� _#�ԁ.���y�sb������CU\u0010�?rCh\u0019M�vz� ��\u0010�\u0001.\u0000���\\�#~\u0014��\u0000Y�\u0001�?�n�[�_��b�\u0004��'|\u001av���\u000eX���I���\u00018\u0002\u0019-�.x\u0002��M�S*i��67�\u001bW�h����.�zj�-�^�Z�V��E\u0015 \u00178��JK�� v�,\u0015\u0016�[�,f�$� %\u0018yBj8�0w�qn���k��>X�{h!�\u0014X\n?*ÔDVLyTR\u0003ɯ�������%��\u0004P��QB��~\u0016T�\u0014��\u0002�RP�)l*Ko�Ҝ;;ɇ��\u0005O(�ҡ��pB ��!=�\b��%�,-jˠ\u0005���� �5�5���E\u000e��\u001b���.7ԯj�+W,�*\u0005z�|\u0016����mmj�w�#����{��V6����c ���_3�*?�z�� o,u�^8��r\u001bw5�#޲9�x�#=��Ƣ-�ָ\n9�1s����\n-@g��'-'�I+ !Kk\u0001�HV\n+-���\u0005��\u0016\u0017\u0015��9�4�G��7k\u0016�n+]�7A���9\n=�]�t\n��,�9so\u0005��H)ly\u0007��p�!F\u001a��%�6� \"�\u0015��G��o�\u0010�*�\u0011gD�8�_D ����O\u0001$���7�0ހ���F�q����Kܲ�걆���\u0012\u0013��R������s�W͠K���{��� ���-y1~���\u0003�1��2�Ʌ���y��)��r����f dn�\n���Y|X�+ᐶ�3�?2�\u0012�,�+�~1�EDZ�U�~���\u001b�(,�ɳ������W+�\u0014�\b�P�\u0015�\bo\n\\\u0007̉`���`�b�Y;�\u0014Y%�2w�Y9��\u000f�,>��\u0000� =��;�xΚ�\u0007��O \u0004 �>�t�QE�f\u0011/Ɋ*#�h8�b�}QD\\5&r5�\ntp�2\u0012��K�Z��TZ���\u0004v�\\35�c�! \u0015�\u0010� �-}�V�8���&�\n'��!�\u0017�8 ��>E\u0001��� h����,�\u0012�D�ŏ�^����۷\u0013�ۓq/���e���\u0012UT�Vˊ�\u0004�'����\"��\u001aBbD�\u0011�)֊ �1�˷~�+^\u0013�EA�#�9\u0013\u0011��p'Jf2�p����u\u0003H@��\u0001�\u0007h��'\u0003gZ\\hd���M|��/\u0013Y|�]��N\u0019i�?�*�\u0011��!r�V��\u0010)ER%�� ��LЀ��0a�\u0018xli�E- ���1qVL���BN,��&�� �h\u0005y\u001b�����1\u0015X\u0002�s������\nm�>�\u0000� \u0011ehL��n�I��G��f��\u0002��CP\u0002\u001bp����2�+�r�L�%�~~�L��l�D� c���Ӕ�\u0014�'����K��Os�ۉ�O�r�L��j�!� &r=\"fhD�W �.�&#\u0005�=/�\n�U�����2��{�oG����6y o|�.ɟ���c���O�:�\u001b����)\u00174�F iMJ��=���|��d�Z�P�L�(�z\u0005*QI�Ո�q�=��3x\u000e�_\u00050�t���YM�\u0005Ql�d�\u0004:\u00054oQ\u0015��* �B9\u0017t|D i�ȅ1��J�\u0002A\u0013�\u00179I\u0002\u0015\u0003��jl��N\u001b'ʒ� ��\"B�)��Z\u0010hN\u0010$�R�L�dIERD� qR I3�.�TI�Z�F� *\u0007����t�o���p\u0014�4X�tl���1��\u0019�N�%mp��s�� ͟? �}�c\b��?��6#�\u0002�p\u0006\u000e���8�b�����N^���o�%�$\u0012�_��1��=��;e܃w�`�- ��n�\u0016\u0001���L�̎x\u000f�UR:\u0002 \u0019 � Y����;�x5K(\u0012^O�����\u0015�B�s��^\u0012�=P\u0019�\b\\ p5���x��\u0005�\u0001\u0012胩��/�#ķ���;�;��}>��+��빣��,\u0017\u001b�8��Pqk\u0010a;JC���v��4�� F`�YZ� ��� �T\u0015'� p�o���/H�\u000f�\u0016\u0019�:�^��uM��H����9�2�w��\u0014䐜�� ����A�L��c�Q\u0007�\b��BP�xsx�9jUs(8 �'�L$Я9 ��\"�\u0016�, �]Q�Ǜ�\u0003=5#��h\u0011.-)-� \u0004\u0006�%\nn&,�F ���2ұΪ���`�V�k\u0002�f�L��\u0019���k�\u0005\u0003+�؄ն\\�Ȕ�*NI��\u00042H��Y8�C#��l{�'�\u0016�v~R����������ȿ���ƙ��D�\u00131�l\b\u001b8�\u0015�c�C� i�����\\R/>%��\nnQv\n;\u0015�����i�Ш��-�8�J\u0015�\u000e�����d�������\u0012\u001a$A'��& K,\u0005?K! ^8 \u0007�\u0017��\u0006\\ \u000eO٨@f1\u0003�\u0018V�^�\u0010���\u0013J���A�/\u0017w����\u0007\u0007ʟ/�4���\u0005+#\u001bV�\"/WW�Ll�\u000e쮨 �{���+�����C,�\u0012ȣ p� ?F�\n{:n�u�.�6�\u0016��� �\u0015�g�&�\u0019[��5\b?V��h�\u001b�\u0013/D�7�\u0011�?�\u0017B�Zx�� ��\u000e�H ����Y��pR\u0000( 0r�}#x �m=�� �\" �\n\"�\u001b}�@�1�Ç�A/�ֱsJ�\u00111bF�q�\u00185$d�\u00061`O�r~]�4��\u0013[\u0001Xd\u0014B1���\u0015�\u000e1��\u0007F-��\u0001$,j��(���~�� 1�\n��X%\n^�|#���s�[�[�������6|�i �_^>�\u0010�G�{\u000f�vA��� �\u0012�om�'� $��X�V � [\u001bs�Vb��\bǦ�\u0016�����p&\u0004b�C36\u0005�$��4`B�����~HS&�� P�p�-|p�v&�|p;̀����.�N-k�������� ���\u0006\u0017��x\u0003q�]���3�\u0013C�\u0019M\u001a���B��\"t ~9�̰\u0018�M�BJa\u0005������],a�|�� 1+�\u0015���.�+�d\u000f��h�>��\u0014��T��_�\u0019�\u000f�c\n� ��\u0016�I�ݣI\u0013r��N�\u0015��.\u0000Ķ�xriL�EKU�\u000e��ь��`p5�rs��\u0015�\u0015�m�ۻ����O��݊�|����gk�O�?��pE��\u0019�x��q�k\u0018Q\\66 x�����\u000e�&�xg�Б��\u0003�� � �B��h�Qz��ő0W�- �\u0002$,J����\u0019�I A\u0011q�X'��}�I�xW| Z��D6 �soA�yu\n��g����Y2 �����}� ��,�ډ�I��M\u0016 �mWUovvaP,\u000e����Sa֡$�1�cھ C���&�Ĳ�\u0001���8XP�\b�A�P0\u00124��`�\u0012�S[� .? r����� \u0017��+Q� �d��w�;�=9��Ws>ͽ�� ��g_\"�J��Z{u�\u0002_��*P�'HvK8�[l_�; �j`hax��J�\u000e�6�����[\u0012��U��z�1G�\u0006j| �n_������mI�\u0011s� [�]�u�\u0014�+��[)��V�V������>P��|C �\u0006l\u0003����|��}�}y#�4b\u001b�?~�sPǽ^�]\u0007\u0016�\\�� w\u0003���\u0010: o@r\u0011�*?�\n�Ǒ�������S��|�.�N��Ln˸N�2��\"@15RI��-�T�Z���\u0002���BN�]{�\u0005� ��?`�I%\n��$�ݻ����Eń=$�nh�d�U�\u0001{8\u0014. C�y�R�?����֠�CE)�@��N���hm�o��p���] �����]��� ����� 7J 4ͱt~����=�K��� cL\u0007�v���� x�\u0016��ƞ~��Y��G�V�\u000f��s��{�sϝ��\u0013�\u000f�\u0005Ͱ\u0007�\u001b%�L�\u0014B\u001a�. f�������i��\u0011�ުQ���%��I�R�S����)�=�9%\u0005֫�t�-���eX�ȫ�t�U,k�\u0005t�# e���{�q9$-9���d�/]@Cl\u0017a�#��[�\u0015V��\u0011\u0017Й�l�+��!|\u0006A��*�JsH�zȗq���,�$ʧGfO|�\u0016��BH�����=���g3!>`}i\u0019�\u0018��iK�R>������Ǵ�3f-��� ͓��\u000f\u0017\u0014 �>yT|u⃷�ҿ\u0012�)�������{�ӗߡl������_3}g�_N�N��r���M�\u0018���\u0017&��읓������$��~m��T��1�\u0005�ߘK[���\u000e|� ���Y��I���&` ���2Fh\u0015���_\u0004ک ���/\u0007^\u0004�\u000e\u0014\u0003�@\u0015P�ͭ\u0002\u0016A�0�\u00176��\u000e�F�I6�\u0002�E@\u0017P t�z��� � Z�~7�j�����`��f\u0007u0��J�v����࿅�y��\u0007O��LPMԻ�\u0018�\u0002��`�A���v�{\u001b�\u0013�� �!P?(��\u0018��\u0003�{{=��6�\u0011� \u0018�\u0000ʀ\bP���1�5�e������ �\u0002�\u001a\u0015�e�\u0014i��'�9X��oR��=��\u0004�٧π��K\u0004|��� �2p%��d�'\u0002�K����{G�@���m�xEĈ� C�D'��\u0003�\u0010�T$_r���o��� �\u0005�r\u0006�5�\n�p���\\��O�0Nz\u0011����F�)sh �W\u0001����9��\u0000�:�;\u0006�->�/�V � k \u0001�ǉ8>\u0018{\n�\u0016��N�'Ķ\u0005؈8�\u0001�������^˚ ���X��\u0000�\b��,���R=�����։��\u0018�W�\u0017��\u0016��}�C�\u0007�\u0005��^��\u0001M\u0007p��k�w�s@ �\u0003���6�}���7���#� �;��J�=�\u0007� �\u000f��|\u0007�|.3\u0001��*\u000f� [�g-�-��)��/��qj#ޤr�0�S��}�)�� �j]r^&Q�_����)���\u000fU얫\u001a�:�u�k ���|2M�oC���:���޹�3�\u0003���C^ A-v�T= �\u0018w����B��>��KP �\u0017��J���^�q\u0001��v�� e���_\u001b�?@\u0005�A��a��X��7\u000f���\n�o�{���i��2�q�\u0001�T�o�T^\u0017��_܉#V-�hJ�Eޥ\u00019@��ݔ�\\��6��S�����Q��W��f\bc�j�U\u001b\u0016 \u0012����&���X��:b ���C�\u0007�|i���X);R��\\I]8�i��/�����=j������H�4N˩�L�)�\n\b_db�v� ��i�_Q�-\u0002b�A�Ћ�\u0002�j�����x��R\u0017[\u0011>���� �Q�V��:�ia�70���\u0005�c /�_�x�����΂�¥N]s�Y\u0013\u000e����\u0001�, i G\u001a��p(�)miq�\u0005w4G۝u��@�@c��jiee^i$��R�\u0010��;�\b�4~�a�w��N�\u0013�44\u0006v5Dv:��t� ��(�6���@��>�\u0010 @9�X\u0010�8a�D�g»C�H0ОO��C �\u0010m)�:j�\u0000�\u001a\nS\b��kU#e�E��\u0001�A%���RjAsh �v@?J��\u0017\u0000 @�9 .��\u0005�@� \u0006\u0017�s�\u001bV�\u0012�!+\u0015C3h���Z\u0005^&q�\b��%\b\b��A,x\u0004\u0002ֳ���𜓃����\u0012�R�Є��>�y?I�՘�\u0000\u0001n\u000f c�� � ̼\u0007\u0002��2�{j��k�\u0014k@~�\u0000�:��~�ڢ]N�\u0016�) ����\u0011�%�Lb��V�~�G�u;�8\u0007�� �� ��/� �X�L �c�狞Dx������o.��Zsb���\u001a\u0019��W0��\u0018`�\u0014\\�\b��7P��\u0005l��\n��Y�\u0017\u001a}\n��/�y(ɠĒ�X�Ӫ�\u0007޽��'04l�A{q��)k } 5�1�M�'g`Q�5Ewah�\u0003v�GX%Kۙ�u���8I��\u0018i^m0\u0002\u0006H\u0010 k\u0010�\u0012��;�\u0006�B�\u0015\u0005�Hp؍�^�\u0012�Z�\u0013�H�� \u0019Ge9� ��~���>K��^> �W�0m4�\u0003�m-\u0017�Ҏ7�Did�>�� z�Z�4nf?\n\u000f'�mpJ_J�c�z�^���9pdr@�R抔�@ʄ���\u0015�G.����d�L�b�Hv�K�B�@��E� s2��׌㭸 ��8?�)�y\u0003opFS \u0018�ă�h�?5ysPp_�)z��,2�\u0011�3o�4�=�h�Zi�RC$�\u0005x2lr�q �\u0010�����͢-� � 9���a�}1�����X��|`\u0005\u0006\b |;\u0017��7^ �vE���\u000f��\u001bg�+��e\u0014?�:++m�\u001b�.���b(.\u0012�$���}��\u000f\u0000\u0000\u0000��\u0000\u0000\u0000��\u0003\u0000A\u0003%)\nendstream endobj 61 0 obj > endobj 62 0 obj >stream\nH�\\�ϊ�0\u0010��y� ����u҂\b�m���a�}\u0000��]a�!ڃo��L��\n�/$��#������g���Q78ˮ���4޼Fy�ko�&����}\u0016�zh�HBq�L3\u000e��FQ\u00142�\b���\u0017��l� �D�� ��^��Wլd�ܜ��\u0001�,SY��`\u0017~�Һ�v@�Ĳum�z?/�P��sq(�8߰� N���[{EQ��)eq\u000eO)К�ف�.��n�(2ڜ�a\u0010�n\u00139 �3�x˼%�1�s�xϼ'>0 �+��� Ċ�ss��\u0015�\n�\u0000�\u0000� � � � � � \\ �� � � � � � ��|$>1��� �M��\"7��� \u0014�(�Q��G��\" \u0005�\u0010\u000f�~�Ԇp[����}ho�R�������ֹ��PE��\u0005\u0000\u0000��\u0000\u0000\u0000��\u0003\u0000�ѱ\nendstream endobj 63 0 obj > endobj 64 0 obj >stream\napplication/pdf\nAdd a heading (25.5 × 11 in) - 3\nJ S\nCanva\n2023-07-25T08:27:24-04:00\n2023",
+   "links": []
+  },
+  {
+   "url": "https://npgallery.nps.gov/GetAsset/2ba3e818-1abd-4f73-93a1-28d5de77a0fd",
+   "browser_error": "Error: Page.goto: Download is starting\nCall log:\n  - navigating to \"https://npgallery.nps.gov/GetAsset/2ba3e818-1abd-4f73-93a1-",
+   "status": 200,
+   "final_url": "https://npgallery.nps.gov/GetAsset/2ba3e818-1abd-4f73-93a1-28d5de77a0fd",
+   "read_by": "plain read",
+   "title": "",
+   "text": "%PDF-1.4 %����\n40 0 obj > endobj xref 40 22 0000000016 00000 n\n0000000659 00000 n\n0000000949 00000 n\n0000001136 00000 n\n0000001227 00000 n\n0000001259 00000 n\n0000001354 00000 n\n0000001482 00000 n\n0000001580 00000 n\n0000001674 00000 n\n0000001779 00000 n\n0000001870 00000 n\n0000001969 00000 n\n0000011836 00000 n\n0000012129 00000 n\n0000012200 00000 n\n0000015229 00000 n\n0000015420 00000 n\n0000015529 00000 n\n0000019430 00000 n\n0000083760 00000 n\n0000000752 00000 n\ntrailer >startxref 0 %%EOF 41 0 obj > endobj 61 0 obj > stream\nx�c```c``�����pd>� \u0003\u0002\b2�\u0002! \u0003�\u0005\u0006�އ=B\u000e lJB�\u0017|���e8�c�'�%�\u0013 \u00174;�lA�Ā�\u0012�g�� C1\u0003�\u0002�\u0000�l\u0006k ˞!������\u0013�sV�fdeP���0���_��֜�\u0000\u0012b b\nendstream endobj 42 0 obj >/Type /Page>> endobj 43 0 obj > endobj 44 0 obj > endobj 45 0 obj > endobj 46 0 obj > endobj 47 0 obj > endobj 48 0 obj > endobj 49 0 obj > endobj 50 0 obj > endobj 51 0 obj > endobj 52 0 obj > endobj 53 0 obj > stream\nx�m�Ok�0 ���\u0014:����\u0010\u0018\u0019c9t+KGώ�\u0004�\"\u001b�9��WN�\u0007�\u00042 > endobj 55 0 obj > stream\nx���\u0005�VU\u0016\u0007� g \u0010TJEDR�\u0004\u0004EJD��K@�\u0002DiE���\u0004��������A�\u000fx�0 �����S\u000e�I�(7塼���S\u0001*H��0\u0015��T��S *I��4}Be�,��O����}�\u0003�)5�2ԍ�PsjOm�\u000f �A��ߚ��P\u0017:G� u����v�Y�K#�\"]�K4�F�2ZB�� ϻ�\u0002_�K���@��W�\u001a_�\u001b��o�-���$|[HXDT��x E$��\u0005 �I%��(/��\u0012N�K\u0004�(��\u0015N&��k�6'���D�7$��)�$�Đ��VbIlN�)�-~G�H\\�'�%�$�D����\b�D�J2y[�K\nI)�H*I-��{��4򾤕t�^2HF�@2ɇ�Y>�,�d�l�]rHN�%�%��|�_\nHA)$���\u0014�bR\\JHI)%��\u0013)#e��|*��3� ��\u0017�|%_KE�$��\u001b�\"��wRU�Iu�!5��Ԗ��@\u0016u�G�+���4���H\u001aK\u0013i*�\u0002#ͥş~uZJ+ o\u0011� [D�t7�b��k\u0016��9��E�����E�7-�E�\u0018��i�,��\u0015�|,��?�,��\u000f����I;i/ ��t���E��O�-��]zHO�%?Ko�#}�G��'�e� �A2X��P\u0019&�e���Q2Z��X\u0019'�e�L�I2Y��T�&�e�}�g�,�-sd�S�}걣���@9����6�\u0016�J�i\u0007��?iO���u�\u000eב:Z��x���u���ź\\W߷�9]��u����zX��i=���\\��rI.�\u0015�*�,��oi�0��rCn�-�U~��J�*��䔚%�$���[F�\u0014X�ٲXV�n9-�\u0015��VRcX\u0019+o_XE�bլ�Ʒ:V�\u001aZckjͭ������:Zg�jݬ���ޚ��Z?\u001bd�l���I6�f�L�k m�����^��F�j;m� �\u0014v�N�Y�hW�����C��>���#��z�G��| ���} �'��|\u0012��'��>�O����>���3�,\u001a���l>���s�\\>�����|>�/� �B��/��b��/�K\u0006FJ�}4���\u0017�] _ڗ�\u0015�W��{M\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0014��{x/���| 8�� 7� qC�07܍p#�(7ڍqc�87�Mp\u0013�$7�MqS�47��p3�,7��qs� �� p\u0007�!w� qG�1wܝp'�)wڝqg�9w�]p\u0017�%w�\u000f�!w�]u��uw��|��\u0010���19.'�dPs ��Y��\u001a�����q>�'����= ���紜��s�'������O�#(\u000e{h�W���{w���\u000e]@���:�\u0007\u000foƙ\u0002U�`�2�)�w�\u000f�Ʈ��y\u000f�\u0001��������,����\u0006\u0000�*�5P��A���#(� ���b�\u0007��y����v�\u0007���0�\u0002\\� qa.�E�\u0018\u0017�\u0012\\�Kqi���pY.ǟry��+���\u0005�_��\\�+qe~����U��A�X5(V��\\�k>r}-��P_g�µ�k���\u000f�R灾 �kL�A�] ڻ �d.�#߀܀\u001br���Ɓ��\u0019�jz�n\u0016(�9��\u0010nɭ�5G\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�;���@\u0016�\"Y�$�5ⳟQ�>� \u0000\u0000\u0000\u0000\u0000\u0000\u0000�T�� �g\\UW�5rյ���RZZ?qM]MW�5s�\\s��k�Z�V��k�ں�]W�εw \\G��us��Ϯ��������_\\?�� p\u0003C�\u0001\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�M������5|M_[� �O�\u0013[V�ܧ�q|\\��'�i}:��gx� 5���\u0017�ҳ�\u0016r4�f� �Ss�t&\u0010 ZW�t\u000e\u0007� �3�� ��6�&�T�ism�-����6�V�i{�� ��v�.�U�n�]{hO��?ko��}�\u0017���u�\u000e�A:X��P ��u���Q:Z��X ��u�N�I:Y��T���u���Y:[��\\���u�.�E�X��R]��u���U�Z��Z]��u�n�M�Y��Vݦ�u���]�[��^ݧ��� �CzX��Q=���}��i=�g���� w>���^ѫzM�� ���B��CHҲ��?\u00002B�\u0002\nendstream endobj 56 0 obj > endobj 57 0 obj > stream\nx�+�557ֳ0Q0\u0000Bs3#=33039�W�3�@�%�7�\u0017\u0000�\u0013\u0007�\nendstream endobj 58 0 obj > stream\nx��[ms�6\u0012�\u0005�\u000f��qfl\u0016o$��'Y�c%��J�S�y�Q %�Ֆ\\�N/��o\u0001\u0002�\u0005I;��%\u0013F�@`���ņ�,��9�}�r������ �\u000e�W�Py!�J�\\���ɬ�e��U��'��\u0018�\u0014y�5�^��ǋ���Y�W��B���܈�ە{G��\u0001g�p ���-s�`k�븵1�h��Y�w�f� ���>v�qg �i��U�O+�i��)����\"7~1�\u0012�vG V��{\\�k\u0011�c�B�}0�8���>���5�PQ�e\u0015�r�PB t�\u0003�ڑr1�4�Q{��v�?�̍;rь�z�\u0017���~\u0001�@���G�欞6���\u0013�˼t�fǞ�2g�K�^�esR{��H�����iS�'�yF��B�e%\b\u0017L �c��4 5��tt��.r�P�-[@�;h�$�*0]�/'�Z\\�K������\u0016W\u0005�ʌ+��������ݽ����7�\u00050�W�-�\u0015,���@DR��-o'��l>\u0019�����v\u0005�\u0012;? ��ʼ5��RYY\n�6���K�\u0012�7�_��h��^ �]rp��ǭǵ�\u0019o���٤eگ\u00015�\u0013K/�����*���� ;��ͤ^�ӹ� %D\u001b���2hSd� ���iB�\n�ϔW�d�h�\u0017c˺\u00177؇ $�v;X�\u0001\u0004��Ϫ=K�Y'���,�C`\u0010l\u0019mf~\u0013���\" �֠Ƴ��Ӻ�\u0016\u0010|�H�\u0018�\b\b�UpC\u0016�Kj�\u0005X\u0013�RxiZ-&��a'Qf�` =��$��� J��` ڟ=:=E��\nu��\u000e�9�` R1f\u001bo�h��\u001a\u0015�U\u000e G���F�秓����W��([�\u000f_ԭ~ �ei3A�K��\u0018|dPi\u001a�O�cb �h�c���}1&�W`�\"+����fM��]Ĭ9�=�ooW�o�z�\u0017^0`��a � w�GϻD�U*\u0010[� ��zi�ʁ�N>�n��O�O ��+�\u001axgQ2���\u0018���t4=�\u0011 ��w�*\u0018'h�,\u0004\u0018YD>��/���G\u0014\u0005D�\u0010��`D������� :@H � ZC��k_Ɛ�� ow^���yVὣ�������k�r��U\bSp6�0�PI���^=x=\u0002�\u0012��\u0017��O���ϫ}���H\u0007d���������f��\u0012�ЫP�� ��'���埿�7\u000f�(��H�2CW�Z\u0006�m6�_�B�%\u0002c\u0006ʎ�^D�\u0014����vۧ��фC*\u0006� �sԹ,H�R�L4 ?�>�1��\b\u0016$ � � ��񳒌.��Ј�cW:J|�4v�o6@\nT�*��:�!n� >���:�P����9J �}:��\u0005,��/[L�lH\u001a(�E�蔲HА�1˦�D�l\u0018�9�8H%9�.���� \u0015��\u0001��\u0016�_�n\u0011B��c�\u0013��H-i\u0013��LEz�{��I�]�5\u0019��,\u0002�����\u0006\u0000��5�A����ېd���WP��Ri A��)�56\u0007X��ɾw��]�u��e��9?E!�*\u0016ؘ��O�\u0019 ��$�\u000fb(��� s%����#�\u0004��,\n�e4`�Ad��� ��P�F�;\u0017^��*b�@\u001b\u0002{��,� ���Jm�����\u0000#�]x�\u001b�g\\�GT�Uj\u0003�ZbeK#Ot��I>��\u0006\\�Y�T���x��A�>/Sש ��AG(+G���\u000f��F�7\u0014��56 ��ݫg�[��\u001a�A\u0000���\u000f��Ф�[t}K�:H�\u0010J*m!�a��@C\b�^�4���\u00115r���P�A�\u0015 ޶F�\u0017���M��~vF�@o,9�r�~����PǏv\u0010\u0015�\u0017f��\u0012 )\u0012�(�z�\u0005�Mz�+�[�\u0002D� �\u00044p���\"&�3|�\u0014 \u001b\u001b݊ ���; �n\n\u0002G� �?U\u0019Q��4D6��� �9��\u0013�k�`\u0006��gX��â��wp,Q\\����ri�\u0019;\u0010h�\u0004w��h�z�B�vTY�D1�� �1��^%\u00179�X�M*� �\n��8�w�\u0016\" \u0013��˔��\u0013 \u0012 ǎ�\u0016��v6\u0018�Bd\u0003\u0016�f-�|�\u0018���\n�2� �y�މ�p�\u0005�d�u �;\\yXNʶ~\u0015Ѣ4\u001b��A����$=�m���~�0��JC�ld ��a W�p��x�RVd\u0005��R\u0003!� 6� MIH��)�)M�@�\u000f \u0019C\u0012L\u0007 �w 䱏;�Y��h�[ۛ\u0012a��:+��u�m0�Ɋ\\o Br��\bM4V�Q��\u0010��[�\\�b���ME��&�������*���v}���v�4�ڛ7a�`�u�\u000e�`Y�\\���T�@�](��\u000fޡ�\u0006P\u0007�����n7l�\"�!�z� � �w����n���˾\u0012{�>��m?� � \u0000앦~�� �'��~o�K�\u0006m3{�\\ɸ.�P\"��\u0000}\u0004\u0012 ��\u0007���Җ�ŗ��Վ�\u0002 H\u0003F�\u0012�V)*2�\u0017$Ro>�7��n��LᲔ�.gA�/�[^�}��k>�>=t�\u0003`��kֳ�#)�HQ�&\u000f�\u0015D�������\u000e�Fak��^.'��\u00144пb�s8nɌ^�(8[k�Wr;`�e�\u001b��?�xR�0���;���5��R�e�����ה����ZҬt��L\u0011B;\u0019>;���$��� ���L⑁&\u0013\n��� �R��?\b��^����]�\u0001�b�;�7x�׹`�a�\u000350T��N�_��@� j\u0012\u000f��j'[�\u001b;e=�\u001b;��� d�z\u0011�F�\u0017a�\u0002�b��:�i��\u0001��\"�Fіse\u0006L�b�^\u0010 \u0013J���7 \u0007q�L�\u0001���{ \u0018JcY�CM8��݁���8��\u0011�I ��0��E6�\u0005z1+T\u0018�y)��0��\u0013G:6`��:�H��b`�AX�������ӎ��RQ뱀ޗ�\"+1z�=�ۖ\"\u001b\n�6|@d��\u001b� z�\u0003$\u0005ɜ\u0017)�a$\u0000> ?\n[8*��H�����\u0015� ���M\u0019R � ��|^/�iC�9m��� �\u0019 b\u0011\u0013f �_&�f2}��\"�խU,.��U�Φ\n�\u0007T\u0011R5\u0019:k&M\u0018�#C�8�E a��1i \"��0��W]�>- ��MrG��l�\"E7n4_\u0011aH:���H�~�֟e w9���f}�]^�8OY���s��Jt\u0004q�~�����M�f\b�m�9{zX=�]��_�\u000eA㦠W�\u001a�S �Y;J���\u0002�\u0015��\u0012�zF9�߭o{�\n�I�T��!�\u0013(D^\u00021�� �h�iZ�ؽ[\u001b�\u0019w����\u001a �! ��� >/Filter /JBIG2Decode/Height 4237/Length 64127/Subtype /Image/Type /XObject/Width 3188>> stream\n\u0000\u0000\u0000\u00010\u0000\u0001\u0000\u0000\u0000\u0013\u0000\u0000 t\u0000\u0000\u0010�\u0000\u0000=�\u0000\u0000=�\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0001\u0001\u0000\u0000\u000e{\u0000\u0001\u0000\u0000\u0000y\u0000\u0000\u0000y��0&�G�\u0006���� &�G\"84�\u0004#�r;�DE�B\u000f\u000e\u0019'!�\"�D (p�\u0007��\u0005\u0000.�� #��#�\u000e\"\"CP�4I��Np�vq�k�r��@&��e\u0011�Bx�� ��CXu�s�y����`�\u0007�&��X�����7I��u��P��P&�����+�&������>��࿀�.x{��Pv�|:U�([\n�\u0018P���#�������@x��L#�\u0005��6�\\l�\u0003�r,�D4t j�߯�������Z�r�rW��#���\u0000��\u0018\u0019�\u0019�!�b���d0.\b����� \u000fɎA ]�cӻ�V��a\u0011 �~E��G�j� �7 �[u����\u0017M]?�mt��o�߿��I��շ����_�5�]�������������������������q\u0017K���IW���5a��߰�# T}���W�� `�7��\u0007p��މ{��#�]u§w �Km+�����Z�����ڶ��j�On?���t������& ���e�˻�������D����������&�r������.�7����\u0010{�ZXI�\u0012�[�����/�� �w;�\u001b���~�^��\u0015 i6� o�\u0011\u0016G\u0005�8���6�ߓ M|w_��\u0003���ݤ�^�� STᦽ)cު�\u0017 �{N��[�!� �§`���\u0018R(��\u0006p�\u0011�C#�82��`�\n�MSCT�����$ !�aSOx��q��� \u00000E����r\u0018�ѫ0�\u0011�����S8��$Ca*\u0010�A�\u001a 4 њ\u0005\u0005#�Za 4\u00155M>�^��\u0010���[����M:��G�\u0011��DG�$=?ג�s%���@�\u0013mƷ�moQ��zuD �ӭ:��3��-&�w����(�� U��_}+�_�W���������&���y1������M���z��4\u0017���޵׮����C�}o��}7��i?�� ��I�\u0011ֈ���\u001bO[k���Gk�� ���⵫w�ݻɏ~����\u0001=��\u0003_����_�a�\u000f����!���Z_����[J�{��n��`�\u0018Kk���UTű� ���0��A��~�Ph\u001a \u0006�ޚ�a5ڥ\u0010f�\u0010h0@�\u0010lJ�8�x� y\u0011��\bTp�v�^������Z\u0010�\u0011 \u0004��'��{��l��>� N\b�ھ# \u001a����u\u0006�\u000e�\b�m? � h{������[w��D+� \u0007�Z]��A�a5_\u000f>�а�yK;�!2�:�8�� Џ�G� \u0004\u000eG�� Pi�D10t�4� ���z�ou �C��xr$���q31�� �º�!}�o����u����N\u0016�5l\u001b�����Uzi0�;��Z� Ua\u0003#�\b�t\u0003�\u0006�uMAzw ��T���;!a8aL0�\u0019Й�\u0010�Cy?��8�#EB�M��}Vũ�� ����\u0013�k��}�~�/ЇA��S� \u001b.$gԻx>|?�@.g� �N��`�lp�\u0006C\u0012���Ӿ�( ��^�x��uȃ�KI����H��G wWbCC�W���I� ��w�ꮿu~C8} ȃ�� � �D ��;���ݥ C�Ċ8adP�v){[�~���mma�D& \u0010�Py 4�8ɀ�8J`�A� � $\u001a{T�ĚҵAІG�.4B�� �{���\u000e�*{V;Y\b8L4��� ��a�`�L?���p~��K��o�#�\n;!���A�k\n�mn��s#�\u0018V;\u0011\u000e+��P�A�U`��\u0018*)�\b5\u001a5�\u0019I�y\u0003�X7\u0013\u0019\b��P�\u0007�8}\u0004���\u0004 �C\u0003�̈\u0003\b_n���K���\n9�.\u0019 �\u001b_�\u0013��;U\u001a����Mzi5�¾6���u�����O�?���S�\u0007��¾��SL\u0016�\u0018\"?d@#�#@v�\u00041�\u0003��������޷���O١@y �\u0000 �+���\u0003����o���&�W���ﴭ᳎\u0015�_�\u0018i� \u0018��QQ\u0003\u0015{!�A �7\u0007\u0007� ?�n������ ݿ���l=pp��@� �\u0010F\u0006̈�\\��\u0003��t\u001b�m�������i���}/�ߵ���Z��4��p�0�� b���T+N\u001a� �&�\n\u0006\u0010`����\u00100bP\u0010� � J0\u0004�\u0000\u0000\u0000\u0003\u0006\"\u0002\u0001\u0000\u0000\u0007�\u0000\u0000 t\u0000\u0000\u0010�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0002�\u0000\u0000\u00042\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0004^\u0011$5��F��Y��\\�����j\u0012T�\u0000\u0000\u0000Pyj\"\u0003�;S�_��N��j��φ�\u0006�͌�]w�Mg2��7#s9�\u0000\u0000\u000eN\u0013�H%�u�WOȝW�� ��&o�O�(y��6���ʘ;�\u0015�\u0005�U����̽+*�8o�����%��.�W�\u0017����t�ۮ�K\u0007 ^��d��/�����uSk��˻׮C ?���ڭ�{GÕ{vWo\u0017y}B��o>\u0001��J��^\u0010��?��ld�y����\u0010|���}S��[\u000f��\\\b� �\u0007 w�����\u0010�Q5��w�Y��^辐 �^�W�\u0017����>�a�>�����g�܆�H`C�\u0017�}�g�����K~Sޏa>��ا[�\u0007d� .�\u0014\u0007�I�a3\u000e}����FRJh\b���C�2�Vdws�3qG �Ǳc�� }�\\��8\u0016pp��e| \u0004�Y#�|pݖ�\u000f���F�{�y�8*�𮾞��\u0006\u00182�`N�\bl\u000fa� V�-���\u0007������ t�l�U��ܦ���\\�+� :I�? ��\bK�4\u00043�\u0000\u0000 P��\u0000\u0000\u001agA���:\u000e9o�\u0000\u0000\u0000 �9\u0005�./�s�bZ \u0019�� n�} ��\u0006���\u0010����B+�g�p��6�;}󨹏�kא��*~E�Vs\u0005�=�*aj\" T�*��z��\u000f� j��ՃQ��b`� \u0005!��+� �\u0016�\u00177\u0015�B�`�b����\u0012_\u0016�\u0013\bp�&ي���P��5hy��sS ͈��͍B\u0019�*!y��wbt�Ƽٰ\u0010���\n��9�j \u0005��Bn\u0019�\u0003�k���\u0015H \"5�\u0018[�.�\u0012O\u0006kB]\u0012��)�\u000eX\u0003A�@�x/R\u0015�D�\u0004���>�\u0015����u�V��� 3�_\u0000\u0000\u0000�\u0002\u0010�Lgx�\u0000��W\u001b �H#Z$:�n4�q`��`� �_S'�VȊ\u0013\u0010��`�#Y��\u0007�jߪ�\u0017���Xkp�\u0010��.M%\u0012~Of�!=hU�T��D\u0016� U�\u000e���R�\u0003]�\u001b\u0010�:�W��cX%\u0012!�\u00067݌T6\u0014\"A'�rZ�����Sx��),P\u0013 \b���ӺPu7.�9��\u001b8��I\u0003��Mؖ\u000e3��\u0017p(j�i ���n���\u000fN\n�؄� �u�p�?C��\u0018�����گ�������V(k���Z[NR �z�I�\u0014\u0010v�\u0002���Zf��3\u0017p�$�S�\u0013&e�c�\u000e \u0018\u0017/���)�i\"�� �ؘY��akk�QS���c�s���t\u0017����J\u0012j�4:��7\n|\u0005Ъ�\n����\u0007?��5V�_w��;�Zs��]�fO��\u001b~&���,Fik\u0001�\u0000\u0000\u00006Ce��ҟ�ղB\n�\u0016�1\"M\u0018%��CYxx; p��'I\u0003�\u001b�A�\u0012sW\u0007�$�q\u0017 \u0004�e� >_����9+(Ic��I\u0012�9\u0010u ����X^@�����V �\u0013�`\n�ֲe0j���Y}Nj�\u001a� :*| �\u0002\n�� (`\u0014\n�\u0000�v��� � F-�p��$mʁ!�2E 5Yk��ƛ��\u0010��\u0007 y�K� ��Ŝ?��\u0010\u0007\u000f|�y�c��`e�K�F�n ��#��6\u0014�w� 1��k��:��b�gZ˳��n�R��\\)S�M��| �\u0006�Ӱ��\u001a!�gk�\u0014�h�]�{��\u0016�ͳ�U����\u001bk��耄&\u0005.\u0007\u0014#� ����\"ށ �\u0001�8Ef�4���\\䤽\u0002�e��\u000f=�:t�g\u0013���>O�,/�;=���F�7@4��M�%��%�e� ��v��uJ �\u0015��\u0003i�d��}5�ʡ�3��ȼ\u0004��\"Kh��7��23���Y�) C=�J�\u0014�M(�8>��\n~$x�u�ga�� �v|l�M����㍵S����5ى�ݥ�:��}|\u0005l�M�8 ������çWs�\u0007���\u0016�\u0007��o2 A�{��h ��&\n�L�I�.�\u001a��y=���KZ)���s\u001bk{#\u0002}�f�\\~ \u001ar�㲍��)\u0003̢\n�\\i�&j�\u0016;�Pr���U�9\u001b g�9\u0014�\u0014�+'�TL�3\u0019`�\n� � �hX\u0017�� =��C��\u0003\u0003S�\\Mx� z �؎t\n�-��| *s+�.�N3wt����#�%\u0019.� C�5�iv��=�[jS鸜�\u000e\u001arәW��\u0010��!� ���>��\u0006\u0019�7\u00069\\��&cq�r���:�\u000f\u0017(~��*�0�u���N6��^6�Wn-��]\u00192�^v���8SEt�ZF�t��\u0002 $Q����N�á?/�9Ҫ�P����\u0000k��or4�7�=�\u0004iYʶ +��\u001a�\u0019xI��j��� f��K�\u0011\u0003?�-\u0016�̓=��*��`\b!�\u0012�]�$�q���_\u0007\u0015Ң3P�d:c��\u0002\u0000�l�n�ZC\u0006UG\u0012@�ߐ+F�h�gۘ1aP�6��\u0014�3��=��^DKc�\u0018�s�z�{0b5\u0017�\u0016L�ź\u0015�.cԘVU�p�r���e�\u0015ɞ�� ��E����D �E\u0012��\"�'�2�L\u000fjª��m\u0007n?d��0�ʠT� ���Z���\"�P�\b��\u000e\b�M��\u001ay#� � �9]\u0016� \u0014\u0007�\u0007'��v�M�T����\b3N ���%�:� K�#\u0003ɔI1?\u0001\u0014�EJ\u001b�y��bb0ky�\u0000U�=��\u0012 ��3\u001a ��\n�\u0017 \u0001?x��R�8:�}�˕U)}\u0012�:Dl��e�\u0005�NH|�c\nc\u0001�\\�#u'�x�X��}?�V5��J��r:��#�s�+�\u0017׎��$�,8sg�\u0013`O\u0013N�7��W� ��8μ�;�b�b��!�4 �\u0014o\u0015w���g$��SW=�M\u000e��f{\u0001g��uÞ�քǶ\u0007\n\u0004�M��co 3�\"\u0012�\u0018 8\u0016j���>\u001b����e�ڦ߷\u0011�c��f_�\u0016û\u0016�k�v��\u0017�A��| �yo�\n�\u0017\n�ub�g� X�F��B�S\u001bV7�.��1m����Ev��+��?� ��x�t�����\u0004҃Õ+K�?g��i�2�ˁ�\u0001[�\u00190�{��\u0003�{�n�\u0011���7(��w& �vx�Ko\u0010 ��d�m��o�?!�7�b���à����H�\u0018}�r�ֵ}..�dZޣ#S�Ol.�$I[��:� tV�2�\u0017wa�OQ�V���!b7q\u0001~\u0003a�;4c)�A��+4z7sLH~:.�I�ÿ\u0015�Ck �ir\n�d��\u001a�Sĳf;OZ'*�s\u0014\u000e)Ԝ\b\u0016�\u0006�0�6 ��n�;�1\"�P8U��&�|��LL�\\�t\u0012��q���\n.�7g�dX�� ҵ\u0001ՄD�T ��� �] ���V&\u0011���U��\u0015�]�\u0016��HM�� ��%����{\u0019��Y_b�\u0016 wv�%^ WMkIF�8H�ӯ�s�'��\"� �7p\u0016P� o�\u0000�� xy.!�v�\u0006��Kso@w !,���9ͤ��\u0015VF��gM��vW@\u0019 ��\u0001�(\u0000W \u001b&0^�׻�/��\u0017V�\u000f��Ƽ(%� \u000e�e�b��>c�\\�\u0016k�͵l}�����\u0014��\u0018����ZG�6�B�uT/�$g?�q'��\u0002�>��r�m���QK0P�n;E�&^&�.��!ߌ�\u0013\"�\u0011�̙\u0011��j~��Dx�\u0010������J1�\u0016�ɑ�\u0000�b\u0012m\u0006��o�}#\\ѯ�(\u0015Y�����|��^Khp7�\u0013 L�d�(��#u;��Q�����g�� Юp���' � ^��N4�\u0004\u0014\u000e�b�ƚ��ל��\u000f�\u0001q�����CEv6*/e��#%���\u0001^�� ��s���PʺH\u0004\u0017\u0010�֝2[s��\u0004�i�n���0�2YpIwr��w mHƈ\u0007� � @2e�#��z^ }:�i \u001af�U�x{�胾����8��ovIآ� ��Tw\u001a����\u0015�I�%����I=� ��\u0019F�J��r�IK/\u0005� [)*r:|\"\u0004�� Ď�׹\u0011~a�Ճ�.@ ���ph�' �P�\"��K��\u0002�c‶Y �� �� 0��vh s$^\u0010]#�f6��Pt�_#T\u000f�J�\u0003�\u0007�l����u�7��3�6� �6��&!\u00076WYn ��v[W��KƐQ��n���Ɉ_�T'L��\u0017��r�� .�\u0019c��ax8���k��\b�)�m�g�AM����h��Q � \u0011���h��Hn>$���[ȍ�cYB��\u0001��v��R��$�W�\u0002(�+��A�>b ���\u0017jB���T\u000e �wY�h }�\u0012�?\u0015\u0004�샛9 �\u0012`��%5x�ֈ VW�F?k杵�~t F*T��L ��u\u001a�h�(�^��t�L�зEr�T:P �;�ַ�W\u0001F #\u00013��uN�\u0019l�\\� �d���\u0010|��Q#���(]^JU�Ԃ1]A���%T�a��p\u0004X %s!\u0013f)2B\u0006#\u0019q-\u0018.�7\u0017���[� D`W �5 e: �#�%&��[鯋-���\u0006*�G)��X6\u0018'\u0003 �RQ������6f�\\W|�E\u000ep|\u0015\"M�\b4�.�\u0000\u0010\u0002\u0018�Sws\u0000�\u0019\u0004��7�k���̮ܼ*�,���*��ʩ��n˗����\u0011��\u001a%�&�� 0Via`\u0000�s6\u0002^d�y3�Dz����m\u0016:7Hs\u0001�� �^癨4C� �\u0001wc�ѿ��t��-��L����?+J�$9\u0003 -ۏ`J����\u0003Zo�,���\u0017\u000f���X\u000f� ����\u0001Q6� ��f�&�\u001a� S�?ȗvq\n�!F�*;.�w�8�พm\u0013V8�,0��{d&�\u000f��T-��#�\u0007Q�ί�FA\u0015\u0011�=*\\�w�@\u000eN���[Dk?�\u000f\u000e�lݮڈ���$\u00157�5�E\u0010)\b� \u001b��5��I��׵���B���\u0014����L&�qO�T�9���x\u0000Z�\u0010#tT�ɉ \u0015P�\\\u0001^�ti0����^Wg� \u001b�k Չ�\u0017�\u0002V�\u0013�Q%��y#��E\u0003��C�\u0017�N(��c�ǜ�_U \u0005����\u000f��a1��֥�/ x��\u001a� ��R��\u0016�/�%\u0001բ V|��5�k�#{��v+�\u0004�ʑQ\"-�\u0018HDyQs\u0013yG�4��R�\"��S\u0005�\u0010��O��c�TO\u0001AH\u0004#\u0004Q&)\u0018\u0006̅{���Y@����;�N�VĿ^\u0010= � !O��d�G�/ �dR ���tO[�i9���3�\"M\\O��-O\nɘ�Z��Ǖ�!�yWuc7�\"�c����Kj��i �>Rf\u0005�qd�%Ih�k� o� G��@ ]T2ҫ\u0014$�Ȍ��^�`��v��n���\u000e?&�M�� ��YE�z\u0015\b�����BK��F�\u0019.�oB�BnK�~\u001b.L�ǯv✞���&(\u0012�r-Y���M�T��\u0011)g��.�;/p�\u0015Zl��OV�c-B�%��v���h\u0016\u0017]K(K˃���ػ��ehM��!1�Jmf�OcI��|�\u0001E�f�)pk�A\"��\u00074g w{7V_�_��@���D�\u0015\u0015e\u0012\u0016� $�C7xe��Q��/�S����=���\u0001�=���=,/ ��î\"��@\u0012�NL\u0001]B� Nk�si=��ۓe�0�`��ǇJҗ�*�ur�� 𧌏5�80�s����=��L�@^T�_ ��\u0000,#Ĝ��=7\u0019D]G8Q흉`�\u0018�|z��w �'A���i\u0015b� z�Z�K-�yAgBI�L�\u0015���`˝�U\u0016�= Ί��*�|I'mr���~C��ɯI��2\n\u0014����o�r�AJ2~N� \u0014\u0001�\u0004+U�\u0004��Sa��H�~T�Z9d�V��T����c YE0~�� 9�_�IFE-����!΄�A��v0�:l������l�u\u0006w�W ��k\u001bj�3\u0000����\u000e-ŝ�����]��Oxd�$?\u0014�[ $��\u0000��4�\u0011o�H���m>�D,�N��j3���F�\b�l8\\�;4~3O�� F��5� Q�$�UI�gjǁ_��\b�+���\u0002g�O� �Z�Ȃ ��)�2 ĸ����R�]��!\u0010J[1�U'W�~0s5 \u0016�O~��F&*�H7�Y���D���al�s q4(���v�d�� �\u0007;V΢ #?/�(T|\u0000��|�$��\u0017d�V�\u0015�>ܫ�(z&\u0007��b�� Tn�E����[Iέ������W�!b���>˚\u0001\u0013��'x�tۖ�'c� �f��ã�7�\u0015n'\u0007�\u0004�'}\u0018�[��\u0004� q/|�܏\u0014\b� �\u0012��@ח- b�1�?�\u001a���� �ND'1o �\u0012��Q�/U��\u0003r\u000f$����*9-\u0015�&ѕ _+ 疎��O�-ŏ@F�%��Q�����\nK�zakե 1�O\u0007��ɔ^l�mk\u0019:�IU\u000e^2�\u000fࢾ|j��z��@ʚ��s\u00166��U\u0003xc�R.�3Y�e��Y�\u0007�ٮ�A��qR\u0016� iA \u0014��P/���Q!3���\n��5�\u0011u�'\u0019ٍ\u0010b��i1��4��ڴHϻXX�� T�h�g㤧m\u0006�ޜ��M �8����\"� IU�E7D��$\u0004����8O���R��B,�+N$���\bZ>4�\"t��t{��2�\u0015��\u0016\n\b����*\\\u0000�ch!l�]�� ϕi&�oA^�\u0002�v�27����q ��Ϛ�l�!���c��\u001a;B\u0013)\u0004� o�x��Ӵ�ׅ�tu����=�9-��[���*�qܪ����`w5\u0010�\u001a\u0016�r�T\\���[ �q��� � \u0001v s\u000e\u0012��l����ϊ\u0011\u001aș�y8AJ�}V\u0006I\u0004� �\u0005g�=:+� `��%\u0016#��1%�\u000f&Z󽊲p�G�rR:\b����_���U�u_���U ~񧤚N4�\u0005��;.���D�\u0010�\u0003��g�Ͽ�û���aJ*�bX�#=�k&#� ��R��%�V\"\u0015�t�V�`�� \\�@\u0006E��/ꀵV\u0005U�r\u0012�s� �Z\u0017��dpF\u0016���l��B�Q�_�\b��]7�w���/���Z\u0000 5��-�\u0002�\u0005Y�.S�4\u0015D� �\u0013�\u0017\u0007���]\u0005�W}v`� ����2;��W@y� �:�(g��%�Quzϼ�J�w8��G ��8�MJ �,�P��IE[��[fzR�'�\u0012õ��\u0012\bD�Z�ꦗ\u0003�hQf,s\u0004 �����\n�\u0012g\u001a�:�j6L�\u0012��ﵤ3 �� �09��?�[8\u0001�\\�\u000ftg��B��\u0003�4,��%\u0012{ BBg��Ȋ�\u0004 G{���q�����\\�]*��o] w5�\u0014wӫ\u0007cfB' xR�jk��I\b��X'?��K7����_E\\����-$�� ; =�B�l�~;;����\u0014���)�\u0016|HJ��\nO &T� 4\u0012\u0018fUi\u0001#�p^ ��k� C�5.D�\"������\u0005�\u0001\u0015`��ȭ\u00181\u0013�\u0019�Td@�R�먭pz�U��\"�k'�O��q\u0000.S:�I�w?\bgx��`�б�\u000e0�p ��\u001aLO�\u0005�-�\u0010�^�Ӊ\u0011��� ?�~��u��ߏㇸZ��-��o�*��r6)ђ\bl׉A�t� K��Ha�oV�e�d�D���O�W�E4�Jӽ��0}K�-{�CZ4�\u000e�\u0001��%hƔ�Y�v�\u0015͉�=Oۏ�>��ܤ�-��A\\Pq�CzN\u0001c��w�CHc(7$Y\u0005o�U͎a���sQ ��H���G�yhj ��ׄ|F�f������i�q\u0003��n3J�d|3�[��\u0012\u0011��jF�4h��4��d��%��EY �U��) �~ \u0001�\u0018H�����D� -�� ����\u0001����w�\u0016/\u00165eA�����+��[���v�4uדN/=����\u001b~�\\�i\bجq����\u000f}� ��c �d稩�:O9AB��(�Z����-�I�Y\u0003��τP��ƈ'��B�h��1�*�jj��h�F�\u001bA`D\n�\u0005�T\u0004�^[��6���%\u000f\u00110�uk�Uq����/I� 5\u0005�v4�ְ\u0002\u0004��\u0014\u0001�u�O*P�d���\u00168� �v�/O��\u0014�N q�&�g����i�\u000f�7�}v��^�3%�@�(\u0007i��x\u0016�Y.��g[_�P[ �cW1 ���A�U[t. S�����/wD���HЁ�[�`9'�M�Ir]��$��޴�\b����DPϓ72�g��\u0011܈����m�˝�Bߍ��M#��}fl�7F��9~UqcAك ֲ���\"���g�\u0016�r\u0012q��y�\u0018R�\u0001�7��9�B�[VL���9�ȶ��TR�=�Ui 9�g��΁d���f��n���$\u0003�Z��J�w|\u000189(q�\u0012�5�R\u000f�Uʃ�F�A����x\u0007\u001b�;۽���Js��]Ɏ���zJ��� ����:&2b��dМ!�9��_�&� k�8 �[\u0006���\u0010-\u0004 @!��C�\u0000��aV���� ��3� ���&�+�\nr\u0003S���, � t�k�&��Hs�\\Gأ� �t�{�{�4Q5�Ƞ� �� �\u0004�/�%� � *�����s1^눫ic\"3\u0013}b�b�\u0006`��W3u�E%zK �%;���9��!#\u001a� �j$����\u0006�2y�\b�m\b��\b��X\u0018��\u000fݦ\\Dg�ā� �\u001aɫ���*_�\u0012 �>��\b6`�\bxK�\u0012 \u0016,�o���\u0006$�I0��\u0007�B �s�v�A?�\u000fp�$eĮ���w�\u000f ��\u00014�3b,L��\u0019�\u0018j�lF ����d0���\n��\u0007F��a\u0007�ij����o�9\u000e;�\b[k�#��_�-�8���-��T=�t4�F�h����]Z\n���yȘ�{�\u000e�l���5Z�D��۰\u0018f��\u0014���'��T.8�`Ƃ\u00113��A\u0000� �9�g�:�)}h�_�O�E\u0015�i\u000e�5n����R� JEv���݄s\u0018�/�j;�HXF��Y�6���� _ku������ͳ?�Z8�ٔH�S)W\u001a-ٖ�_x���Db�\u0015M �t����=$6���حf�j�\u0018>���Q�!�r�*_LI���k# �Vo�� �0=%ʐ�\u0011X- \u0012uX�L\u001a�α�z��Y �\u001b:�M���x\n��~�� � ��&�|��L�MN����FX-�������Nޙ�݋@��``�� Х\u0007���0իH�\u001byJ�\"�z�c��\u0010ٜ��ʡ�ö]�gqZ��>g�T���9\u00016�\u000e���GJ[\u0014�G�{�\u001a�?��\u000f\u001b:� �\u0007R�CC��R{. A\u0005F�H��9�@*�\u0012�\u0004�bvވa�~&�L \u0006��Î�\u0005# ��\b�ag��D- I��]�\bPux�� _\b��؞���`��H~e�}���� \u0006��I���&��f\u0019���C|�;����\\��.%kR�W�{� �/��HE\u0001�o1�\u0015� ��m=\u0005Ϙ\u0018� �a�Xv����>�\u001b\u00108 \u001b���zɌO����H�\u0017zz\"�0\u000eg;��0���s\u0000�\\R��/4��\u0006��� H�?u7�Ioݘ�i�߫ ��hL\u0006Z\u0003��I��r܃��tD������^\u0006����\u0004�}���M�� =���͚�C\u0011��C�\u0005b0��� ��\u0016�",
+   "links": []
+  },
+  {
+   "url": "https://nmhistoricsites.org/los-luceros",
+   "status": 200,
+   "final_url": "https://www.nmhistoricsites.dca.nm.gov/",
+   "title": "NM Historic Sites",
+   "text": "Skip To Content\nEnglish\nABOUT\nSITES\nEVENTS\nNew Mexico Historic Sites\nare places that invite you to explore 600+ years of history and culture at some of the State's most amazing and unique locations. Come learn the untold stories of New Mexico and explore history where it happened.\nSearch\nUpcoming Events\nOctober 30, 2026\nGuided Tours of Taylor-Mesilla Historic Site\nTaylor-Mesilla Historic Site\nOctober 30, 2026\nFort Stanton Flashlight Tour - SOLD OUT!\nFort Stanton Historic Site\nVIEW ALL EVENTS\nVisit with a New Mexico CulturePass!\nNew Mexico CulturePass allows one visit to each historic site for only $30.\nLEARN MORE ABOUT THE CULTURE PASS\nExplore History Where It Happened\nBosque Redondo\nFort Sumner, NM\nA unique museum designed by Navajo architect David Sloan - shaped like a hogan and a tepee - and an interpretive trail, provide information about the tragic history of Fort Sumner and Bosque Redondo Indian Reservation.\nVISIT BOSQUE REDONDO\nCoronado\nBernalillo, NM\nLearn about the centuries-old history of the Pueblo village of Kuaua. By the time Spaniards entered the region in 1540CE, Kuaua had 1,200+ rooms built across 3 plazas with people practicing farming, pottery, and weaving. Today, history lives on as nearby Pueblos maintain ancestral ties to this site.\nVISIT CORONADO\nFort Selden\nRadium Springs, NM\nFort Selden preserves more than 1400 years of history beginning with the ancient Mogollon; travelers camping at the site on El Camino Real in the 17th century; the U.S. Army soldiers in the 1800s; to the local people who lived nearby. Their stories enrich the history and heritage of New Mexico.\nVISIT FORT SELDEN\nFort Stanton\nFort Stanton, NM\nFort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico. There are 88 buildings on this historic site, some dating back to 1855.\nVISIT FORT STANTON\nJemez\nJemez Springs, NM\nA short drive from Albuquerque and Bernalillo, the Jemez National Historic Landmark is one of the most beautiful historic sites in the Southwest. It includes the stone remnants of a 700 year old village and the San José de los Jemez church dating to 1621/2.\nVISIT JEMEZ\nLincoln\nLincoln, NM\nA town made famous by one of the most violent periods in NM history. See the Old Courthouse with exhibits detailing the Lincoln County War. Walk in the footsteps of Billy the Kid, Pat Garrett, and other characters of the Wild West.\nVISIT LINCOLN\nLos Luceros\nAlcalde, NM\nFeaturing beautiful river views, ancient cottonwoods, 17th century buildings, apple orchards, farm animals and rolling agricultural fields, this property embodies the intersection of nature and culture in northern New Mexico. Travel back in time to a place that has been called home since the 1400s.\nVISIT LOS LUCEROS\nTaylor-Mesilla\nMesilla, NM\nLocated on the historic plaza in Old Mesilla, the Taylor-Mesilla Historic Site embodies the rich history and heritage of the Southwest Borderlands. The property is listed on the National Register of Historic Places and consists of two storefronts and a large residence.\nVISIT TAYLOR-MESILLA\nGet Updates and Event Announcements\nEmail\nNM Historic Sites\nLincoln and Fort Stanton\nCoronado and Jemez\nFort Selden\nBosque Redondo\nLos Luceros\nTaylor-Mesilla\nNMHS Staff\nSign up\nFollow Historic Sites on Social Media\nGreetings from Fort Selden! Did you know: Russian\nGreetings from Lincoln, This Saturday, Oct. 31, j\nEarlier this month, @fyiplus.nm joined Taylor-Mesi\nGreetings from Fort Stanton, During the late 1870\nFOLLOW\nFOLLOW\nFOLLOW\nUpcoming Historic Sites Events\nDiscover what’s happening across New Mexico’s vibrant cultural landscape. From museum exhibitions and historic site tours to live performances, workshops, and community celebrations, there’s always something to experience.\nVIEW ALL EVENTS\n30\nOCT 2026\nFort Stanton Flashlight Tour - SOLD OUT!\nFort Stanton Historic Site offers flashlight walking tours of the grounds after hours, allowing visitors a chance to explore areas generally closed to the public. Unfortunately, this tour on Fri., Oct. 30 is SOLD OUT. Catch us next summer and early fall for a new season!\nEVENT DETAILS\n31\nOCT 2026\n12th Annual Día de los Muertos Festival at Historic Lincoln\nLincoln community members are hosting the 12th annual town celebration of Día de los Muertos or Day of the Dead on Sat., Oct. 31, 10 a.m. - 3:30 p.m. and Lincoln Historic Site is participating!\nEVENT DETAILS\n1\nNOV 2026\nDawn 'Til Dusk at Los Luceros\nLos Luceros Historic Site offers extended hours from sunrise to sunset on the first Sunday of each month. Join us on Sun., Nov. 1, 6:30 a.m. - 5 p.m. Admission is FREE for New Mexico residents with ID.\nEVENT DETAILS\nLatest News\nStay connected to the stories of New Mexico Historic Sites\nVIEW ALL NEWS\nRELEASE: Fantastical folk-art Alebrijes: A Linares Family Tradition exhibit coming to Taylor-Mesilla Historic Site\nOctober 26, 2026\nFiesta of Cultures celebrates New Mexico’s diversity at Coronado Historic Site\nSeptember 10, 2026\nNew leadership coming to northern New Mexico historic sites\nSeptember 10, 2026\nPublic Meetings\nAs a state entity, New Mexico Historic Sites meetings are open to the public.\nVIEW ALL MEETINGS\nNOV\n17\nMuseum of New Mexico Board of Regents Regular Meeting\nNovember 17, 2026 | 1:00 PM\nMuseum of International Folk Art\nPublic Notice\n© 2003-2026 New Mexico Department of Cultural Affairs\nPrivacy Policy\nCopyright Statement\nTerms And Conditions\nIPRA Requests\nAccessibility\nSocial Media Standards\nDoing Business With DCA\nState Of New Mexico\nDCA Employment Opportunities\nPowered by Real Time Solutions – Website Design & Document Management",
+   "links": [
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#et-main-area",
+     "text": "Skip To Content"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " English"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " English"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Español"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Deutsch"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Français"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Italiano"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Nederlands"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Polski"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Português"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Tiếng Việt"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " 日本語"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " 简体中文"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " हिन्दी"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " العربية"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/#",
+     "text": " Русский"
+    },
+    {
+     "url": "https://www.nmculture.dca.nm.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/",
+     "text": "About"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/contact/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/",
+     "text": "About"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/contact/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.museumfoundation.org/",
+     "text": "Support & Join"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/junior-ranger/",
+     "text": "Junior Ranger Program"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.museumfoundation.org/",
+     "text": "Support & Join"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/junior-ranger/",
+     "text": "Junior Ranger Program"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/",
+     "text": "Bosque Redondo"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/",
+     "text": "Coronado"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/",
+     "text": "Fort Selden"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/",
+     "text": "Fort Stanton"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/",
+     "text": "Bosque Redondo"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/bosque-redondo/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/",
+     "text": "Coronado"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/coronado/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/",
+     "text": "Fort Selden"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-selden/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/",
+     "text": "Fort Stanton"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/fort-stanton/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/",
+     "text": "Jemez"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/",
+     "text": "Lincoln"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/",
+     "text": "Los Luceros"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/",
+     "text": "Taylor-Mesilla"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/education/",
+     "text": "Education"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/",
+     "text": "Jemez"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/jemez/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/",
+     "text": "Lincoln"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/lincoln/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/",
+     "text": "Los Luceros"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/los-luceros/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/",
+     "text": "Taylor-Mesilla"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/plan-your-visit/",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/education/",
+     "text": "Education"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/history/",
+     "text": "History"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/accessibility/",
+     "text": "Accessibility"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/photo-gallery/",
+     "text": "Photo Gallery"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/taylor-mesilla/staff/",
+     "text": "Staff"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/events/",
+     "text": "EVENTS"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/",
+     "text": "About"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/directions/",
+     "text": "Directions"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/contact/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/",
+     "text": "About"
+    },
+    {
+     "url": "https://www.nmhistoricsites.dca.nm.gov/about/directions/",
+     "text": "Directions"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "status": 404,
+   "final_url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "title": "Page not found – Division of Forestry and Wildlife: Forestry Program",
+   "text": "Skip to Content\nSkip to Navigation\nSkip to Footer\nHawaii.gov\nGovernment Directory\nDepartment of Land and Natural Resources\nDivision of Forestry and Wildlife: Forestry Program\nSearch this site\nSearch\nHome\nAbout\nContact\nPrograms\nHike, Ride, & Camp\nHunt\nLearn\nGet Involved\n404 - Page Not Found\nPAGE NOT FOUND\nWe're sorry, we couldn't find the page you were looking for. Use the search below to find what you were looking for.\nSearch this site\nSearch Hawaii.gov Search Site\nPDF DOCUMENTS\nThe documents and maps available on this site are in Adobe Acrobat PDF format. To view them, download Adobe's free Acrobat Reader by clicking here.\nCONTACT FORESTRY & WILDLIFE\nABOUT US\nAbout Us\nContact Us\nPermits\nCivil Rights\nSite Map\nFORESTRY & WILDLIFE: BY PROGRAM\nDLNR Homepage\nDivision Homepage\nForestry\nWildlife\nNative Ecosystems\nRecreation\nEducation\nFORESTRY & WILDLIFE: BY ISLAND\nKauaʻi Hub\nOʻahu Hub\nMaui Nui Hub\nHawaiʻi Island Hub\nStatewide Homepage\nPOLICIES\nTerms of Use\nAccessibility\nPrivacy Policy\nPowered by eHawaii.gov\nCopyright © 2026, State of Hawaii. All rights reserved.\nBackground photo courtesy of Shibby Stylee LLC.",
+   "links": [
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/#main",
+     "text": "Skip to Content"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/#navigation",
+     "text": "Skip to Navigation"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/#footer",
+     "text": "Skip to Footer"
+    },
+    {
+     "url": "https://portal.ehawaii.gov/",
+     "text": "Hawaii.gov"
+    },
+    {
+     "url": "https://portal.ehawaii.gov/government/departments-and-agencies/",
+     "text": "Government Directory"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry",
+     "text": ""
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry",
+     "text": "Division of Forestry and Wildlife: Forestry Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/",
+     "text": "Home"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/",
+     "text": "Forestry & Wildlife Homepage (Statewide)"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/kauai/",
+     "text": "Kauaʻi Hub"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/oahu/",
+     "text": "Oʻahu Hub"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/maui/",
+     "text": "Maui Nui Hub"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/hawaiiisland/",
+     "text": "Hawaiʻi Island Hub"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/about",
+     "text": "About"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/about",
+     "text": "About Us"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/news",
+     "text": "News & Announcements"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/lands",
+     "text": "Lands We Manage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+     "text": "Administrative Rules"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/conservation-leaders/",
+     "text": "Honoring Conservation Leaders"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/contact/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/contact/",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/permits/",
+     "text": "Request a Permit"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/online-services/",
+     "text": "DLNR Online Services"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/lands",
+     "text": "Programs"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/llcp/",
+     "text": "Landowner & Community Assistance Programs"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/llcp/",
+     "text": "Legacy Land Conservation Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/forest-legacy/",
+     "text": "Forest Legacy Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/fsp/",
+     "text": "Forest Stewardship Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/kaulunani/",
+     "text": "Kaulunani Urban & Community Forestry"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/community-forest-program/",
+     "text": "Community Forest Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/hcp",
+     "text": "Wildlife Habitat Conservation Plans"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/hcp/safe-harbor/",
+     "text": "Wildlife Safe Harbor Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/wpp/",
+     "text": "Watershed Partnership Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/napp/",
+     "text": "Natural Area Partnership Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/",
+     "text": "Forestry Programs"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/",
+     "text": "Forestry Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/frs/",
+     "text": "Forest Reserve System"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/permits/#frs",
+     "text": "Forest Reserve Permits: Research, Collection, Camping, & More"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/nurseries/",
+     "text": "State Forestry Nurseries: Information & Ordering"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/",
+     "text": "Forestry Landowner & Community Assistance Programs"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/fsp/",
+     "text": "Forest Stewardship Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/forest-legacy/",
+     "text": "Forest Legacy Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/community-forest-program/",
+     "text": "Community Forestry Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/lap/kaulunani/",
+     "text": "Kaulunani Urban & Community Forestry"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/info/",
+     "text": "Forestry Projects"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/frs-timber-management-areas-kapapala-canoe-forest/",
+     "text": "Kapāpala Koa Canoe Management Area"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/napuu-conservation-project/",
+     "text": "Nāpuʻu Conservation Project"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/info/local-wood-products/",
+     "text": "Forest Products"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/carbon",
+     "text": "Forest Carbon Projects"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/info/fap/",
+     "text": "Forest Action Plan"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/fire/",
+     "text": "Fire Management"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/",
+     "text": "Wildlife Management"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/",
+     "text": "Wildlife Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/sanctuaries/",
+     "text": "Wildlife Sanctuary System"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/projects",
+     "text": "Wildlife Projects"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/birds/",
+     "text": "Meet Hawaiʻi’s Native Birds"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/hswap",
+     "text": "Wildlife Action Plan"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/esrc/",
+     "text": "Endangered Species Recovery Committee"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/",
+     "text": "Native Ecosystems, Invertebrate, and Plant Management"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/",
+     "text": "Ecosystems Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/nars/",
+     "text": "Natural Area Reserve System"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/nars/",
+     "text": "Explore the Natural Area Reserves"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/permits",
+     "text": "Get a Permit"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/nars/commission/",
+     "text": "Natural Area Reserves Commission"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/rare-plants/",
+     "text": "Rare Plant Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/hip/",
+     "text": "Hawaiʻi Invertebrate Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems/sepp",
+     "text": "Snail Extinction Prevention Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/invasives/",
+     "text": "Invasive Species Management"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/invasives/",
+     "text": "Invasive Species Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife/invasives/injurious-wildlife/",
+     "text": "Injurious Wildlife"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/hisc/info/policy/",
+     "text": "Invasive Species Agencies & Partnerships"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/hisc/",
+     "text": "Hawaiʻi Invasive Species Council"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/30x30/",
+     "text": "30×30 Watershed Initiative"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation",
+     "text": "Hike, Ride, & Camp"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/permits/",
+     "text": "Request a Permit"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/app",
+     "text": "Download the Outerspatial App"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/pono",
+     "text": "Be Pono Outdoors"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/endangered/",
+     "text": "Be Pono Near Threatened & Endangered Species"
+    },
+    {
+     "url": "https://hawaiitrails.hawaii.gov/",
+     "text": "Online Trail Map & Alerts"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/",
+     "text": "Nā Ala Hele Trail & Access Program"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah",
+     "text": "Nā Ala Hele Statewide Program & Hiking Safety"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/kauai",
+     "text": "Kauaʻi Trails & Access"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/oahu",
+     "text": "Oʻahu Trails & Access"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/maui",
+     "text": "Maui Nui Trails & Access"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/hawaii",
+     "text": "Hawaiʻi Island Trails & Access"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/historic-trails/",
+     "text": "Historic Trails"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/nah/off-highway-vehicles-ohv/",
+     "text": "Off-Highway Vehicles"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/camp",
+     "text": "Camp"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting",
+     "text": "Hunt"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting",
+     "text": "Hunting Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/hunting-announcements/",
+     "text": "Hunting Announcements"
+    },
+    {
+     "url": "https://hunting.ehawaii.gov/hunting/license.html",
+     "text": "Get a License"
+    },
+    {
+     "url": "https://gohunthawaii.ehawaii.gov/public/hunts",
+     "text": "Apply for Hunts"
+    },
+    {
+     "url": "https://gohunthawaii.ehawaii.gov/public/tags",
+     "text": "Purchase Tags & Permits"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/app",
+     "text": "Download the Outerspatial App"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/hunting-announcements/",
+     "text": "Hunting Info"
+    },
+    {
+     "url": "https://gohunthawaii.ehawaii.gov/public/welcome.html",
+     "text": "Hunter Education"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/go-hunt-hawaii-newsletter/",
+     "text": "Newsletter"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/reports/",
+     "text": "Surveys & Reports"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/files/2016/10/PR-FY17-21FINAL05_03_2016web.pdf",
+     "text": "Game Management Plan"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/bird/",
+     "text": "Species & Regulations"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/bird/",
+     "text": "Game Bird Hunting"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/mammal",
+     "text": "Game Mammal Hunting"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/become-registered-guide/",
+     "text": "Become a Registered Guide"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/kauai/",
+     "text": "Hunting Across Hawaiʻi"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/kauai/",
+     "text": "Hunt Kauaʻi"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/oahu/",
+     "text": "Hunt Oʻahu"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/molokai/",
+     "text": "Hunt Molokaʻi"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/lanai/",
+     "text": "Hunt Lānaʻi"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/maui/",
+     "text": "Hunt Maui"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/hawaiiisland/",
+     "text": "Hunt Hawaiʻi Island"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/gma/",
+     "text": "Game Management Areas"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/gmac/",
+     "text": "Game Management Advisory Commission"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/",
+     "text": "Learn"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/",
+     "text": "Education Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/connect/",
+     "text": "Classroom Presentations & Field Trips"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/virtual",
+     "text": "Virtual Field Trips"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/learn",
+     "text": "Learn about Species, Topics, & Places"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/videos",
+     "text": "Videos"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/activities",
+     "text": "Activities & Crafts"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/#curricula",
+     "text": "Curricula"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/#posters",
+     "text": "Classroom Posters"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education/backgrounds",
+     "text": "Native Species Wallpapers for Phones, Computers, & Meetings"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/events",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/volunteer",
+     "text": "Volunteer & Community Events"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/volunteer",
+     "text": "DLNR Volunteer Events & Forms"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/kauai/events/",
+     "text": "Kauaʻi Events"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/oahu/events/",
+     "text": "Oʻahu Events"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/maui/events/",
+     "text": "Maui Events"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/hawaiiisland/events/",
+     "text": "Hawaiʻi Island Events"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/comment",
+     "text": "Share Your Voice: Comment on plans & policies"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/opportunities/",
+     "text": "Jobs & Opportunities"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/call-for-researchers/",
+     "text": "Call for Researchers"
+    },
+    {
+     "url": "https://get.adobe.com/reader/",
+     "text": "clicking here"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/contact/",
+     "text": ""
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/about",
+     "text": "About Us"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/contact",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/permits",
+     "text": "Permits"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/civil-rights/",
+     "text": "Civil Rights"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry/site-map/",
+     "text": "Site Map"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/",
+     "text": "DLNR Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw",
+     "text": "Division Homepage"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/forestry",
+     "text": "Forestry"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/wildlife",
+     "text": "Wildlife"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/ecosystems",
+     "text": "Native Ecosystems"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/recreation",
+     "text": "Recreation"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/education",
+     "text": "Education"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/kauai/",
+     "text": "Kauaʻi Hub"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/oahu/",
+     "text": "Oʻahu Hub"
+    },
+    {
+     "url": "https://dlnr.hawaii.gov/dofaw/maui/",
+     "text": "Maui Nui Hub"
+    }
+   ],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 23,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 1
+ },
+ "short": "6 result(s), 5 read OK, 0 screenshot(s)"
+}

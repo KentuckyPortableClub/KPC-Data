@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5611.json",
+ "id": "10-auto-CA-5611",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5611",
+  "name": "Backus Heritage Conservation Area",
+  "agency": "government agency (lprca.on.ca)",
+  "url": "https://www.lprca.on.ca/wp-content/uploads/2026/04/BHCA-Map-Base-2026.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:56Z",
+ "results": [
+  {
+   "url": "https://www.lprca.on.ca/wp-content/uploads/2026/04/BHCA-Map-Base-2026.pdf",
+   "map_url": "https://www.lprca.on.ca/wp-content/uploads/2026/04/BHCA-Map-Base-2026.pdf",
+   "saved": [
+    "maps/CA-5611_backus-heritage-conservation-are.jpg"
+   ],
+   "bytes": 330544,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

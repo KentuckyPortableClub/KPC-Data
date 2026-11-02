@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-BZ-0045.json",
+ "id": "10-auto-BZ-0045",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "BZ-0045",
+  "name": "Caye Caulker Marine Reserve",
+  "agency": "",
+  "url": "https://belize.com/wp-content/uploads/2022/10/caye-caulker-map.webp",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 00:13Z",
+ "results": [
+  {
+   "url": "https://belize.com/wp-content/uploads/2022/10/caye-caulker-map.webp",
+   "map_url": "https://belize.com/wp-content/uploads/2022/10/caye-caulker-map.webp",
+   "saved": [
+    "maps/BZ-0045_caye-caulker-marine-reserve.jpg"
+   ],
+   "bytes": 168248,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-GB-4279.json",
+ "id": "10-auto-GB-4279",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4279",
+  "name": "Englemere Pond Nature Reserve",
+  "agency": "government agency (bracknell-forest.gov.uk)",
+  "url": "https://www.bracknell-forest.gov.uk/sites/default/files/2023-10/englemere-pond-map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:05Z",
+ "results": [
+  {
+   "url": "https://www.bracknell-forest.gov.uk/sites/default/files/2023-10/englemere-pond-map.pdf",
+   "map_url": "https://www.bracknell-forest.gov.uk/sites/default/files/2023-10/englemere-pond-map.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

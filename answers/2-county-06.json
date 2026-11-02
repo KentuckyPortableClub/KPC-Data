@@ -1,0 +1,1106 @@
+{
+ "request": "requests/2-county-06.json",
+ "id": "2-county-06",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+  "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1",
+  "fields": "NAME,STATE,COUNTY,GEOID",
+  "points": [
+   [
+    43.3364,
+    -123.001
+   ],
+   [
+    42.7381,
+    -124.402
+   ],
+   [
+    46.0899,
+    -123.718
+   ],
+   [
+    43.4248,
+    -117.346
+   ],
+   [
+    34.0685,
+    -81.2555
+   ],
+   [
+    33.5704,
+    -79.7953
+   ],
+   [
+    35.8119,
+    -86.0287
+   ],
+   [
+    35.934,
+    -88.461
+   ],
+   [
+    36.0346,
+    -86.3535
+   ],
+   [
+    31.9987,
+    -102.091
+   ],
+   [
+    35.0306,
+    -101.183
+   ],
+   [
+    28.6476,
+    -97.3827
+   ],
+   [
+    29.1556,
+    -95.6567
+   ],
+   [
+    30.2668,
+    -97.732
+   ],
+   [
+    31.5236,
+    -94.1151
+   ],
+   [
+    33.57,
+    -96.2075
+   ],
+   [
+    29.807,
+    -96.0977
+   ],
+   [
+    37.6,
+    -113.449
+   ],
+   [
+    41.7556,
+    -111.909
+   ],
+   [
+    41.16,
+    -112.333
+   ],
+   [
+    41.1757,
+    -112.381
+   ],
+   [
+    38.1446,
+    -112.304
+   ],
+   [
+    41.4105,
+    -111.583
+   ],
+   [
+    38.1256,
+    -79.0503
+   ],
+   [
+    42.0922,
+    -73.1186
+   ],
+   [
+    47.7216,
+    -121.876
+   ],
+   [
+    48.6143,
+    -117.899
+   ],
+   [
+    46.3677,
+    -122.934
+   ],
+   [
+    48.6812,
+    -117.75
+   ],
+   [
+    38.9097,
+    -79.7142
+   ],
+   [
+    38.2703,
+    -80.1056
+   ],
+   [
+    39.4636,
+    -78.3113
+   ],
+   [
+    38.9871,
+    -79.172
+   ],
+   [
+    38.2672,
+    -81.7948
+   ],
+   [
+    38.7952,
+    -81.6849
+   ],
+   [
+    44.5657,
+    -106.927
+   ],
+   [
+    42.7584,
+    -106.531
+   ],
+   [
+    43.5046,
+    -109.585
+   ],
+   [
+    44.9853,
+    -108.282
+   ],
+   [
+    44.7113,
+    -108.887
+   ],
+   [
+    38.0245,
+    -102.196
+   ],
+   [
+    38.2818,
+    -94.6208
+   ],
+   [
+    39.5094,
+    -119.937
+   ]
+  ],
+  "refs": [
+   "US-12990",
+   "US-12993",
+   "US-12994",
+   "US-13070",
+   "US-13016",
+   "US-13198",
+   "US-11869",
+   "US-13514",
+   "US-6273",
+   "US-10272",
+   "US-10273",
+   "US-10275",
+   "US-12109",
+   "US-6560",
+   "US-6582",
+   "US-6601",
+   "US-6602",
+   "US-12069",
+   "US-12998",
+   "US-13590",
+   "US-13591",
+   "US-13596",
+   "US-5844",
+   "US-9931",
+   "US-10300",
+   "US-10711",
+   "US-12567",
+   "US-13391",
+   "US-5570",
+   "US-12052",
+   "US-12053",
+   "US-12054",
+   "US-12055",
+   "US-9739",
+   "US-9915",
+   "US-10817",
+   "US-10821",
+   "US-10823",
+   "US-10825",
+   "US-12720",
+   "US-9652",
+   "US-9190",
+   "US-13319"
+  ]
+ },
+ "answered": "2026-10-29 23:24Z",
+ "results": [
+  {
+   "point": [
+    43.3364,
+    -123.001
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "41",
+     "COUNTY": "019",
+     "GEOID": "41019"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.7381,
+    -124.402
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Curry County",
+     "STATE": "41",
+     "COUNTY": "015",
+     "GEOID": "41015"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.0899,
+    -123.718
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Clatsop County",
+     "STATE": "41",
+     "COUNTY": "007",
+     "GEOID": "41007"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.4248,
+    -117.346
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Malheur County",
+     "STATE": "41",
+     "COUNTY": "045",
+     "GEOID": "41045"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.0685,
+    -81.2555
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lexington County",
+     "STATE": "45",
+     "COUNTY": "063",
+     "GEOID": "45063"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.5704,
+    -79.7953
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Williamsburg County",
+     "STATE": "45",
+     "COUNTY": "089",
+     "GEOID": "45089"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.8119,
+    -86.0287
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Cannon County",
+     "STATE": "47",
+     "COUNTY": "015",
+     "GEOID": "47015"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.934,
+    -88.461
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Carroll County",
+     "STATE": "47",
+     "COUNTY": "017",
+     "GEOID": "47017"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.0346,
+    -86.3535
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Wilson County",
+     "STATE": "47",
+     "COUNTY": "189",
+     "GEOID": "47189"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.9987,
+    -102.091
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Midland County",
+     "STATE": "48",
+     "COUNTY": "329",
+     "GEOID": "48329"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.0306,
+    -101.183
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Armstrong County",
+     "STATE": "48",
+     "COUNTY": "011",
+     "GEOID": "48011"
+    }
+   ]
+  },
+  {
+   "point": [
+    28.6476,
+    -97.3827
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Goliad County",
+     "STATE": "48",
+     "COUNTY": "175",
+     "GEOID": "48175"
+    }
+   ]
+  },
+  {
+   "point": [
+    29.1556,
+    -95.6567
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Brazoria County",
+     "STATE": "48",
+     "COUNTY": "039",
+     "GEOID": "48039"
+    }
+   ]
+  },
+  {
+   "point": [
+    30.2668,
+    -97.732
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Travis County",
+     "STATE": "48",
+     "COUNTY": "453",
+     "GEOID": "48453"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.5236,
+    -94.1151
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "San Augustine County",
+     "STATE": "48",
+     "COUNTY": "405",
+     "GEOID": "48405"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.57,
+    -96.2075
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Fannin County",
+     "STATE": "48",
+     "COUNTY": "147",
+     "GEOID": "48147"
+    }
+   ]
+  },
+  {
+   "point": [
+    29.807,
+    -96.0977
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Austin County",
+     "STATE": "48",
+     "COUNTY": "015",
+     "GEOID": "48015"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.6,
+    -113.449
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Iron County",
+     "STATE": "49",
+     "COUNTY": "021",
+     "GEOID": "49021"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.7556,
+    -111.909
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Cache County",
+     "STATE": "49",
+     "COUNTY": "005",
+     "GEOID": "49005"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.16,
+    -112.333
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Weber County",
+     "STATE": "49",
+     "COUNTY": "057",
+     "GEOID": "49057"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.1757,
+    -112.381
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Weber County",
+     "STATE": "49",
+     "COUNTY": "057",
+     "GEOID": "49057"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.1446,
+    -112.304
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Garfield County",
+     "STATE": "49",
+     "COUNTY": "017",
+     "GEOID": "49017"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.4105,
+    -111.583
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Weber County",
+     "STATE": "49",
+     "COUNTY": "057",
+     "GEOID": "49057"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.1256,
+    -79.0503
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Staunton city",
+     "STATE": "51",
+     "COUNTY": "790",
+     "GEOID": "51790"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.0922,
+    -73.1186
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Berkshire County",
+     "STATE": "25",
+     "COUNTY": "003",
+     "GEOID": "25003"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.7216,
+    -121.876
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "King County",
+     "STATE": "53",
+     "COUNTY": "033",
+     "GEOID": "53033"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.6143,
+    -117.899
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Stevens County",
+     "STATE": "53",
+     "COUNTY": "065",
+     "GEOID": "53065"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.3677,
+    -122.934
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Cowlitz County",
+     "STATE": "53",
+     "COUNTY": "015",
+     "GEOID": "53015"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.6812,
+    -117.75
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Stevens County",
+     "STATE": "53",
+     "COUNTY": "065",
+     "GEOID": "53065"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.9097,
+    -79.7142
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Randolph County",
+     "STATE": "54",
+     "COUNTY": "083",
+     "GEOID": "54083"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2703,
+    -80.1056
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Pocahontas County",
+     "STATE": "54",
+     "COUNTY": "075",
+     "GEOID": "54075"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.4636,
+    -78.3113
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Morgan County",
+     "STATE": "54",
+     "COUNTY": "065",
+     "GEOID": "54065"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.9871,
+    -79.172
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Grant County",
+     "STATE": "54",
+     "COUNTY": "023",
+     "GEOID": "54023"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2672,
+    -81.7948
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Kanawha County",
+     "STATE": "54",
+     "COUNTY": "039",
+     "GEOID": "54039"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.7952,
+    -81.6849
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Jackson County",
+     "STATE": "54",
+     "COUNTY": "035",
+     "GEOID": "54035"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.5657,
+    -106.927
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Sheridan County",
+     "STATE": "56",
+     "COUNTY": "033",
+     "GEOID": "56033"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.7584,
+    -106.531
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Natrona County",
+     "STATE": "56",
+     "COUNTY": "025",
+     "GEOID": "56025"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.5046,
+    -109.585
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Fremont County",
+     "STATE": "56",
+     "COUNTY": "013",
+     "GEOID": "56013"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.9853,
+    -108.282
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Big Horn County",
+     "STATE": "56",
+     "COUNTY": "003",
+     "GEOID": "56003"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.7113,
+    -108.887
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Park County",
+     "STATE": "56",
+     "COUNTY": "029",
+     "GEOID": "56029"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.0245,
+    -102.196
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Prowers County",
+     "STATE": "08",
+     "COUNTY": "099",
+     "GEOID": "08099"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2818,
+    -94.6208
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Linn County",
+     "STATE": "20",
+     "COUNTY": "107",
+     "GEOID": "20107"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5094,
+    -119.937
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  }
+ ],
+ "seconds": 84,
+ "manners": {
+  "requests": 43,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 43
+ },
+ "short": "43 result(s), 43 read OK"
+}

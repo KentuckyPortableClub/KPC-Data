@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-5497.json",
+ "id": "10-auto-GB-5497",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5497",
+  "name": "Narroways Millennium Green Local Nature Reserve",
+  "agency": "government agency (bristol.gov.uk)",
+  "url": "https://www.bristol.gov.uk/files/documents/3703-narrowways-map-and-walks/file",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:52Z",
+ "results": [
+  {
+   "url": "https://www.bristol.gov.uk/files/documents/3703-narrowways-map-and-walks/file",
+   "map_url": "https://www.bristol.gov.uk/files/documents/3703-narrowways-map-and-walks/file",
+   "saved": [
+    "maps/GB-5497_narroways-millennium-green-local.jpg"
+   ],
+   "bytes": 436408,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

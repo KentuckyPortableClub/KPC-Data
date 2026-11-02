@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-r15-DE-0758.json",
+ "id": "10-r15-DE-0758",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "DE-0758",
+  "name": "",
+  "agency": "",
+  "url": "https://www.bayreuth-wilhelmine.de/deutsch/hofg_ns/plan_hofgarten.pdf",
+  "pages": 1,
+  "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline"
+ },
+ "answered": "2026-11-01 02:59Z",
+ "results": [
+  {
+   "url": "https://www.bayreuth-wilhelmine.de/deutsch/hofg_ns/plan_hofgarten.pdf",
+   "map_url": "https://www.bayreuth-wilhelmine.de/deutsch/hofg_ns/plan_hofgarten.pdf",
+   "saved": [
+    "maps/DE-0758_map.jpg"
+   ],
+   "bytes": 313565,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

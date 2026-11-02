@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-4975.json",
+ "id": "10-auto-CA-4975",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-4975",
+  "name": "Parc regional de la Foret Drummond Regional Park",
+  "agency": "MRC de Drummond",
+  "url": "https://www.mrcdrummond.qc.ca/wp-content/uploads/2020/08/parc_regional_foret_drummond_carte_aout_2020.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 17:15Z",
+ "results": [
+  {
+   "url": "https://www.mrcdrummond.qc.ca/wp-content/uploads/2020/08/parc_regional_foret_drummond_carte_aout_2020.pdf",
+   "map_url": "https://www.mrcdrummond.qc.ca/wp-content/uploads/2020/08/parc_regional_foret_drummond_carte_aout_2020.pdf",
+   "saved": [
+    "maps/CA-4975_parc-regional-de-la-foret-drummo.jpg"
+   ],
+   "bytes": 221226,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

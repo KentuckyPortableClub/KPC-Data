@@ -1,0 +1,98 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-HI, US-IA): screenshots in order: 1=US-6409 (map); 2=US-6409 (map); 3=US-6423 (record); 4=US-6423 (map); 5=US-10318 (map); 6=US-2313 (map); 7=US-2313 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "items": [
+  {
+   "ref": "US-6409",
+   "park": "Waimea State Recreation Area",
+   "record": "WAIMEA STATE RECREATION PIER",
+   "area": "US-HI"
+  },
+  {
+   "ref": "US-6409",
+   "park": "Waimea State Recreation Area",
+   "record": "WAIMEA STATE RECREATION PIER",
+   "area": "US-HI"
+  },
+  {
+   "ref": "US-6423",
+   "park": "Manuka State Preserve",
+   "record": "Manuka State Wayside",
+   "area": "US-HI"
+  },
+  {
+   "ref": "US-10318",
+   "park": "Chichaqua Wildlife Area",
+   "record": "CHICHAQUA BOTTOMS GREENBELT",
+   "area": "US-IA"
+  },
+  {
+   "ref": "US-2313",
+   "park": "Pilot Knob State Park",
+   "record": "Pilot Knob State Preserve",
+   "area": "US-IA"
+  },
+  {
+   "ref": "US-2313",
+   "park": "Pilot Knob State Park",
+   "record": "Pilot Knob State Preserve",
+   "area": "US-IA"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-159.67%2C21.9548&level=14&marker=-159.67%2C21.9548%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-159.67%2C21.9548&level=14&marker=-159.67%2C21.9548%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=195394&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-155.819%2C19.105&level=14&marker=-155.819%2C19.105%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.368%2C41.756&level=14&marker=-93.368%2C41.756%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5549%2C43.2517&level=14&marker=-93.5549%2C43.2517%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5549%2C43.2517&level=14&marker=-93.5549%2C43.2517%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  }
+ ]
+}

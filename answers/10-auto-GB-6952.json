@@ -1,0 +1,30 @@
+{
+ "request": "requests/10-auto-GB-6952.json",
+ "id": "10-auto-GB-6952",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6952",
+  "name": "Red Moss of Balerno Wildlife Reserve",
+  "agency": "",
+  "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2016/09/002_240__rem_accessfeatures_1382614411.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 15:31Z",
+ "results": [],
+ "error": "FileNotFoundError: [Errno 2] No such file or directory: 'pdftoppm'",
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "FileNotFoundError: [Errno 2] No such file or directory: 'pdftoppm'"
+}

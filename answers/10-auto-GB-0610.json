@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-GB-0610.json",
+ "id": "10-auto-GB-0610",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-0610",
+  "name": "Kingcombe National Nature Reserve",
+  "agency": "",
+  "url": "https://assets.publishing.service.gov.uk/media/60db257ed3bf7f7c367ee633/kingcombe-nnr-declaration-and-maps.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 00:17Z",
+ "results": [
+  {
+   "url": "https://assets.publishing.service.gov.uk/media/60db257ed3bf7f7c367ee633/kingcombe-nnr-declaration-and-maps.pdf",
+   "map_url": "https://assets.publishing.service.gov.uk/media/60db257ed3bf7f7c367ee633/kingcombe-nnr-declaration-and-maps.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

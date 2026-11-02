@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-pm2-US-11944.json",
+ "id": "10-pm2-US-11944",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill retry with chat 8 replacement link (Oct 30 5:15 AM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-11944",
+  "name": "Dankworth Pond State Park",
+  "agency": "Arizona State Parks",
+  "url": "https://arizona-content.usedirect.com/storage/DAPO_Park%20Map_8-2023.pdf",
+  "pages": 1,
+  "report": "backfill retry with chat 8 replacement link (Oct 30 5:15 AM)"
+ },
+ "answered": "2026-10-30 09:43Z",
+ "results": [
+  {
+   "url": "https://arizona-content.usedirect.com/storage/DAPO_Park%20Map_8-2023.pdf",
+   "map_url": "https://arizona-content.usedirect.com/storage/DAPO_Park%20Map_8-2023.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

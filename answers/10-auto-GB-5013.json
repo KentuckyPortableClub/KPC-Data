@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-GB-5013.json",
+ "id": "10-auto-GB-5013",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5013",
+  "name": "Three Sisters Wetland Reserve",
+  "agency": "government agency (wigan.gov.uk)",
+  "url": "https://www.wigan.gov.uk/Docs/PDF/Council/Communities/Heart-of-Wigan/Three-Sisters.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:50Z",
+ "results": [
+  {
+   "url": "https://www.wigan.gov.uk/Docs/PDF/Council/Communities/Heart-of-Wigan/Three-Sisters.pdf",
+   "map_url": "https://www.wigan.gov.uk/Docs/PDF/Council/Communities/Heart-of-Wigan/Three-Sisters.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

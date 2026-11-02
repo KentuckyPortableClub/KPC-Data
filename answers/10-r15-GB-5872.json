@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-r15-GB-5872.json",
+ "id": "10-r15-GB-5872",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5872",
+  "name": "",
+  "agency": "",
+  "url": "https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0036/95679/Crowden-Walk.pdf",
+  "pages": 1,
+  "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline"
+ },
+ "answered": "2026-11-01 02:28Z",
+ "results": [
+  {
+   "url": "https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0036/95679/Crowden-Walk.pdf",
+   "error": "answer 403",
+   "looked": []
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 1,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

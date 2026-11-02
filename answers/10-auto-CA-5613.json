@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5613.json",
+ "id": "10-auto-CA-5613",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5613",
+  "name": "Haldimand Conservation Area",
+  "agency": "government agency (lprca.on.ca)",
+  "url": "https://www.lprca.on.ca/wp-content/uploads/2026/04/HCA-Map-2026.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:57Z",
+ "results": [
+  {
+   "url": "https://www.lprca.on.ca/wp-content/uploads/2026/04/HCA-Map-2026.pdf",
+   "map_url": "https://www.lprca.on.ca/wp-content/uploads/2026/04/HCA-Map-2026.pdf",
+   "saved": [
+    "maps/CA-5613_haldimand-conservation-area.jpg"
+   ],
+   "bytes": 282167,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

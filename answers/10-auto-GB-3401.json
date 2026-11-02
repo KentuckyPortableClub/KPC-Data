@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-auto-GB-3401.json",
+ "id": "10-auto-GB-3401",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-3401",
+  "name": "Thompson Park",
+  "agency": "",
+  "url": "http://thompsonpark.co.uk/wp-content/uploads/2025/08/GSA_PARKS_thompson-park-updated-map-204152-1.png",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:03Z",
+ "results": [
+  {
+   "url": "http://thompsonpark.co.uk/wp-content/uploads/2025/08/GSA_PARKS_thompson-park-updated-map-204152-1.png",
+   "error": "no map file (PDF / image) linked on that page: give the map link itself",
+   "looked": [
+    "http://thompsonpark.co.uk/wp-content/uploads/2025/08/GSA_PARKS_thompson-park-updated-map-204152-1.png"
+   ]
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

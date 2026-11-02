@@ -1,0 +1,32 @@
+{
+ "request": "requests/2-tn-parks.json",
+ "id": "2-tn-parks",
+ "chat": 2,
+ "kind": "layer-probe",
+ "report": "Tennessee State Park Boundaries (Public View), TDEC, March 2024: field names (the park-name field), record count, geometry type, licence/credit text; and the records whose name contains 'Cherokee' or 'Trail of Tears'.",
+ "asked": {
+  "chat": 2,
+  "kind": "layer-probe",
+  "report": "Tennessee State Park Boundaries (Public View), TDEC, March 2024: field names (the park-name field), record count, geometry type, licence/credit text; and the records whose name contains 'Cherokee' or 'Trail of Tears'.",
+  "layers": [
+   "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer/0"
+  ]
+ },
+ "answered": "2026-10-29 21:07Z",
+ "results": [
+  {
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer/0",
+   "error": "{'code': 400, 'message': '', 'details': ['The requested layer (layerId: 0) was not found.']}"
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

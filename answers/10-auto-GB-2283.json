@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-2283.json",
+ "id": "10-auto-GB-2283",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-2283",
+  "name": "Risley Moss Nature Reserve",
+  "agency": "government agency (warrington.gov.uk)",
+  "url": "https://www.warrington.gov.uk/sites/default/files/2020-01/risley_moss_map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:00Z",
+ "results": [
+  {
+   "url": "https://www.warrington.gov.uk/sites/default/files/2020-01/risley_moss_map.pdf",
+   "map_url": "https://www.warrington.gov.uk/sites/default/files/2020-01/risley_moss_map.pdf",
+   "saved": [
+    "maps/GB-2283_risley-moss-nature-reserve.jpg"
+   ],
+   "bytes": 493762,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

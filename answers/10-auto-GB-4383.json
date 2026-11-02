@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4383.json",
+ "id": "10-auto-GB-4383",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4383",
+  "name": "Sunnybank Nature Reserve",
+  "agency": "",
+  "url": "https://www.wildsheffield.com/wp-content/uploads/2018/04/sunnybank-map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:06Z",
+ "results": [
+  {
+   "url": "https://www.wildsheffield.com/wp-content/uploads/2018/04/sunnybank-map.pdf",
+   "map_url": "https://www.wildsheffield.com/wp-content/uploads/2018/04/sunnybank-map.pdf",
+   "saved": [
+    "maps/GB-4383_sunnybank-nature-reserve.jpg"
+   ],
+   "bytes": 153017,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

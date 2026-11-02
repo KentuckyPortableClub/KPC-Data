@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5565.json",
+ "id": "10-auto-CA-5565",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5565",
+  "name": "Dofasco 2000 Trail Conservation Area",
+  "agency": "government agency (conservationhamilton.ca)",
+  "url": "https://conservationhamilton.ca/wp-content/uploads/2024/02/Dofasco-Trail-2000-Brochure-2023-for-web.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:16Z",
+ "results": [
+  {
+   "url": "https://conservationhamilton.ca/wp-content/uploads/2024/02/Dofasco-Trail-2000-Brochure-2023-for-web.pdf",
+   "map_url": "https://conservationhamilton.ca/wp-content/uploads/2024/02/Dofasco-Trail-2000-Brochure-2023-for-web.pdf",
+   "saved": [
+    "maps/CA-5565_dofasco-2000-trail-conservation-.jpg"
+   ],
+   "bytes": 448439,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

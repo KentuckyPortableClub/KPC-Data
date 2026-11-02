@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-pdf31-IE-0054.json",
+ "id": "10-pdf31-IE-0054",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Brandon's outside research Oct 31 (leads 'pdf'): picture map for a park with no official outline (HQ 2:20 PM batch)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "IE-0054",
+  "name": "",
+  "agency": "",
+  "url": "https://services-eu1.arcgis.com/jD89j6JX786MpRBU/arcgis/rest/services/NMPF_5_1_2_Protected_Marine_Sites_96195/FeatureServer/0",
+  "pages": 1,
+  "report": "Brandon's outside research Oct 31 (leads 'pdf'): picture map for a park with no official outline (HQ 2:20 PM batch)"
+ },
+ "answered": "2026-10-31 22:25Z",
+ "results": [
+  {
+   "url": "https://services-eu1.arcgis.com/jD89j6JX786MpRBU/arcgis/rest/services/NMPF_5_1_2_Protected_Marine_Sites_96195/FeatureServer/0",
+   "error": "no map file (PDF / image) linked on that page: give the map link itself",
+   "looked": [
+    "https://services-eu1.arcgis.com/jD89j6JX786MpRBU/arcgis/rest/services/NMPF_5_1_2_Protected_Marine_Sites_96195/FeatureServer/0"
+   ]
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 3
+ },
+ "short": "1 result(s), 0 read OK"
+}

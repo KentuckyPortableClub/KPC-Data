@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-US-9373.json",
+ "id": "10-auto-US-9373",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9373",
+  "name": "Paul Bunyan State Trail",
+  "agency": "",
+  "url": "https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartland.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:37Z",
+ "results": [
+  {
+   "url": "https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartland.pdf",
+   "map_url": "https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartland.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

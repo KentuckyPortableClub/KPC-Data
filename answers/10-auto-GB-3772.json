@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-3772.json",
+ "id": "10-auto-GB-3772",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-3772",
+  "name": "Westonbirt National Arboretum Nature Recreation Area",
+  "agency": "",
+  "url": "https://tiscon-maps-stagecoachbus.s3.amazonaws.com/Timetables/West/2021/69_620_Stroud_17_January_2021.V2.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:04Z",
+ "results": [
+  {
+   "url": "https://tiscon-maps-stagecoachbus.s3.amazonaws.com/Timetables/West/2021/69_620_Stroud_17_January_2021.V2.pdf",
+   "map_url": "https://tiscon-maps-stagecoachbus.s3.amazonaws.com/Timetables/West/2021/69_620_Stroud_17_January_2021.V2.pdf",
+   "saved": [
+    "maps/GB-3772_westonbirt-national-arboretum-na.jpg"
+   ],
+   "bytes": 198445,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

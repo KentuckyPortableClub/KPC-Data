@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-0962.json",
+ "id": "10-auto-CA-0962",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-0962",
+  "name": "Parc Angrignon Regional Park",
+  "agency": "government agency (montreal.ca)",
+  "url": "http://ville.montreal.qc.ca/pls/portal/docs/PAGE/M_CHANTIER_FR/MEDIA/DOCUMENTS/25015_PARC%20ANGRIGNON%2011X17_ETE%20(1).PDF",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:16Z",
+ "results": [
+  {
+   "url": "http://ville.montreal.qc.ca/pls/portal/docs/PAGE/M_CHANTIER_FR/MEDIA/DOCUMENTS/25015_PARC%20ANGRIGNON%2011X17_ETE%20(1).PDF",
+   "map_url": "http://ville.montreal.qc.ca/pls/portal/docs/PAGE/M_CHANTIER_FR/MEDIA/DOCUMENTS/25015_PARC%20ANGRIGNON%2011X17_ETE%20(1).PDF",
+   "saved": [
+    "maps/CA-0962_parc-angrignon-regional-park.jpg"
+   ],
+   "bytes": 227292,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

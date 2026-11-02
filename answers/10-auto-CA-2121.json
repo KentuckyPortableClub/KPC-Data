@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-CA-2121.json",
+ "id": "10-auto-CA-2121",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-2121",
+  "name": "Sommet Morin Heights Recreation Park",
+  "agency": "",
+  "url": "https://www.sommets.com/media/ikihtn5j/sommet-morin-heights-carte-piste-legende.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:55Z",
+ "results": [
+  {
+   "url": "https://www.sommets.com/media/ikihtn5j/sommet-morin-heights-carte-piste-legende.pdf",
+   "map_url": "https://www.sommets.com/media/ikihtn5j/sommet-morin-heights-carte-piste-legende.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

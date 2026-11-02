@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-7519.json",
+ "id": "10-auto-US-7519",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-7519",
+  "name": "Bridger State Conservation Area",
+  "agency": "Missouri Department of Conservation",
+  "url": "https://mdc.mo.gov/sites/default/files/2022-08/8134map_2.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:49Z",
+ "results": [
+  {
+   "url": "https://mdc.mo.gov/sites/default/files/2022-08/8134map_2.pdf",
+   "map_url": "https://mdc.mo.gov/sites/default/files/2022-08/8134map_2.pdf",
+   "saved": [
+    "maps/US-7519_bridger-state-conservation-area.jpg"
+   ],
+   "bytes": 265655,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

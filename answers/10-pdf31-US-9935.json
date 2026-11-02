@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-pdf31-US-9935.json",
+ "id": "10-pdf31-US-9935",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Brandon's outside research Oct 31 (leads 'pdf'): picture map for a park with no official outline (HQ 2:20 PM batch)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9935",
+  "name": "",
+  "agency": "",
+  "url": "https://dwr.virginia.gov/wp-content/uploads/media/VBWT-Mountain-Region-Map.pdf",
+  "pages": 1,
+  "report": "Brandon's outside research Oct 31 (leads 'pdf'): picture map for a park with no official outline (HQ 2:20 PM batch)"
+ },
+ "answered": "2026-10-31 22:24Z",
+ "results": [
+  {
+   "url": "https://dwr.virginia.gov/wp-content/uploads/media/VBWT-Mountain-Region-Map.pdf",
+   "map_url": "https://dwr.virginia.gov/wp-content/uploads/media/VBWT-Mountain-Region-Map.pdf",
+   "saved": [
+    "maps/US-9935_map.jpg"
+   ],
+   "bytes": 306960,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-9377.json",
+ "id": "10-auto-US-9377",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9377",
+  "name": "Blazing Star State Trail",
+  "agency": "",
+  "url": "https://files.dnr.state.mn.us/maps/state_trails/blazing_star.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:37Z",
+ "results": [
+  {
+   "url": "https://files.dnr.state.mn.us/maps/state_trails/blazing_star.pdf",
+   "map_url": "https://files.dnr.state.mn.us/maps/state_trails/blazing_star.pdf",
+   "saved": [
+    "maps/US-9377_blazing-star-state-trail.jpg"
+   ],
+   "bytes": 111402,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

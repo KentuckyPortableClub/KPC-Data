@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-4976.json",
+ "id": "10-auto-CA-4976",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-4976",
+  "name": "Parc de la Rivière Batiscan Regional Park",
+  "agency": "government agency (parcbatiscan.ca)",
+  "url": "https://parcbatiscan.ca/wp-content/uploads/2022/05/Carte-localisation-2022-web.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 17:16Z",
+ "results": [
+  {
+   "url": "https://parcbatiscan.ca/wp-content/uploads/2022/05/Carte-localisation-2022-web.pdf",
+   "map_url": "https://parcbatiscan.ca/wp-content/uploads/2022/05/Carte-localisation-2022-web.pdf",
+   "saved": [
+    "maps/CA-4976_parc-de-la-rivi-re-batiscan-regi.jpg"
+   ],
+   "bytes": 303389,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

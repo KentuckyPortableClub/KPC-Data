@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-0572.json",
+ "id": "10-auto-CA-0572",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-0572",
+  "name": "Whittier Recreation Park",
+  "agency": "government agency (mhs.mb.ca)",
+  "url": "https://legacy.winnipeg.ca/publicworks/Parks/images/maps/whittier.png",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:54Z",
+ "results": [
+  {
+   "url": "https://legacy.winnipeg.ca/publicworks/Parks/images/maps/whittier.png",
+   "map_url": "https://legacy.winnipeg.ca/publicworks/Parks/images/maps/whittier.png",
+   "saved": [
+    "maps/CA-0572_whittier-recreation-park.jpg"
+   ],
+   "bytes": 172292,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

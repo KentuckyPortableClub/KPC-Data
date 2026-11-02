@@ -1,0 +1,1281 @@
+{
+ "request": "requests/2-county-05.json",
+ "id": "2-county-05",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+  "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1",
+  "fields": "NAME,STATE,COUNTY,GEOID",
+  "points": [
+   [
+    35.8281,
+    -114.937
+   ],
+   [
+    39.4919,
+    -117.07
+   ],
+   [
+    38.996,
+    -119.78
+   ],
+   [
+    38.067,
+    -117.229
+   ],
+   [
+    40.9817,
+    -117.727
+   ],
+   [
+    39.5667,
+    -118.833
+   ],
+   [
+    39.5347,
+    -119.753
+   ],
+   [
+    36.525,
+    -114.434
+   ],
+   [
+    39.589,
+    -119.446
+   ],
+   [
+    40.8086,
+    -115.335
+   ],
+   [
+    40.7238,
+    -116.023
+   ],
+   [
+    39.5243,
+    -119.812
+   ],
+   [
+    39.5501,
+    -119.574
+   ],
+   [
+    40.6102,
+    -116.199
+   ],
+   [
+    39.5364,
+    -119.815
+   ],
+   [
+    39.3054,
+    -119.651
+   ],
+   [
+    41.4917,
+    -117.535
+   ],
+   [
+    37.7903,
+    -114.387
+   ],
+   [
+    39.1436,
+    -119.182
+   ],
+   [
+    39.2714,
+    -119.841
+   ],
+   [
+    38.9655,
+    -119.84
+   ],
+   [
+    39.2381,
+    -119.591
+   ],
+   [
+    40.4498,
+    -118.072
+   ],
+   [
+    39.2362,
+    -119.589
+   ],
+   [
+    41.0165,
+    -117.573
+   ],
+   [
+    36.2091,
+    -115.99
+   ],
+   [
+    39.5635,
+    -119.048
+   ],
+   [
+    37.7909,
+    -114.387
+   ],
+   [
+    36.1646,
+    -115.141
+   ],
+   [
+    39.38,
+    -119.742
+   ],
+   [
+    37.8066,
+    -114.406
+   ],
+   [
+    37.5969,
+    -115.224
+   ],
+   [
+    39.3726,
+    -119.668
+   ],
+   [
+    39.4661,
+    -119.07
+   ],
+   [
+    41.0999,
+    -115.866
+   ],
+   [
+    37.6128,
+    -114.514
+   ],
+   [
+    41.9848,
+    -114.672
+   ],
+   [
+    43.9685,
+    -74.4187
+   ],
+   [
+    42.0277,
+    -74.2697
+   ],
+   [
+    36.3913,
+    -97.8728
+   ],
+   [
+    36.8401,
+    -98.1806
+   ],
+   [
+    35.8776,
+    -97.4274
+   ],
+   [
+    36.2907,
+    -97.3222
+   ],
+   [
+    35.4944,
+    -97.4967
+   ],
+   [
+    35.8781,
+    -97.421
+   ],
+   [
+    36.4723,
+    -98.4264
+   ],
+   [
+    44.4151,
+    -122.676
+   ],
+   [
+    42.6626,
+    -122.685
+   ],
+   [
+    45.0172,
+    -123.937
+   ],
+   [
+    45.4321,
+    -123.725
+   ]
+  ],
+  "refs": [
+   "US-13278",
+   "US-13280",
+   "US-13283",
+   "US-13285",
+   "US-13289",
+   "US-13290",
+   "US-13291",
+   "US-13301",
+   "US-13303",
+   "US-13304",
+   "US-13305",
+   "US-13306",
+   "US-13320",
+   "US-13321",
+   "US-13322",
+   "US-13323",
+   "US-13325",
+   "US-13363",
+   "US-13367",
+   "US-13368",
+   "US-13405",
+   "US-13407",
+   "US-13411",
+   "US-13413",
+   "US-13414",
+   "US-13448",
+   "US-13450",
+   "US-13451",
+   "US-13453",
+   "US-13454",
+   "US-13464",
+   "US-13467",
+   "US-13469",
+   "US-13470",
+   "US-13477",
+   "US-13478",
+   "US-13479",
+   "US-2001",
+   "US-8070",
+   "US-10951",
+   "US-11245",
+   "US-11837",
+   "US-8641",
+   "US-8643",
+   "US-8645",
+   "US-8647",
+   "US-10610",
+   "US-10613",
+   "US-12977",
+   "US-12980"
+  ]
+ },
+ "answered": "2026-10-29 23:24Z",
+ "results": [
+  {
+   "point": [
+    35.8281,
+    -114.937
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Clark County",
+     "STATE": "32",
+     "COUNTY": "003",
+     "GEOID": "32003"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.4919,
+    -117.07
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lander County",
+     "STATE": "32",
+     "COUNTY": "015",
+     "GEOID": "32015"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.996,
+    -119.78
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "32",
+     "COUNTY": "005",
+     "GEOID": "32005"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.067,
+    -117.229
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Nye County",
+     "STATE": "32",
+     "COUNTY": "023",
+     "GEOID": "32023"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.9817,
+    -117.727
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Humboldt County",
+     "STATE": "32",
+     "COUNTY": "013",
+     "GEOID": "32013"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5667,
+    -118.833
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Churchill County",
+     "STATE": "32",
+     "COUNTY": "001",
+     "GEOID": "32001"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5347,
+    -119.753
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.525,
+    -114.434
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Clark County",
+     "STATE": "32",
+     "COUNTY": "003",
+     "GEOID": "32003"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.589,
+    -119.446
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.8086,
+    -115.335
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Elko County",
+     "STATE": "32",
+     "COUNTY": "007",
+     "GEOID": "32007"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.7238,
+    -116.023
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Elko County",
+     "STATE": "32",
+     "COUNTY": "007",
+     "GEOID": "32007"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5243,
+    -119.812
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5501,
+    -119.574
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Storey County",
+     "STATE": "32",
+     "COUNTY": "029",
+     "GEOID": "32029"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.6102,
+    -116.199
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Eureka County",
+     "STATE": "32",
+     "COUNTY": "011",
+     "GEOID": "32011"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5364,
+    -119.815
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.3054,
+    -119.651
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Storey County",
+     "STATE": "32",
+     "COUNTY": "029",
+     "GEOID": "32029"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.4917,
+    -117.535
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Humboldt County",
+     "STATE": "32",
+     "COUNTY": "013",
+     "GEOID": "32013"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.7903,
+    -114.387
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lincoln County",
+     "STATE": "32",
+     "COUNTY": "017",
+     "GEOID": "32017"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.1436,
+    -119.182
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lyon County",
+     "STATE": "32",
+     "COUNTY": "019",
+     "GEOID": "32019"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.2714,
+    -119.841
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.9655,
+    -119.84
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "32",
+     "COUNTY": "005",
+     "GEOID": "32005"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.2381,
+    -119.591
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lyon County",
+     "STATE": "32",
+     "COUNTY": "019",
+     "GEOID": "32019"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.4498,
+    -118.072
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Pershing County",
+     "STATE": "32",
+     "COUNTY": "027",
+     "GEOID": "32027"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.2362,
+    -119.589
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lyon County",
+     "STATE": "32",
+     "COUNTY": "019",
+     "GEOID": "32019"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.0165,
+    -117.573
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Humboldt County",
+     "STATE": "32",
+     "COUNTY": "013",
+     "GEOID": "32013"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.2091,
+    -115.99
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Nye County",
+     "STATE": "32",
+     "COUNTY": "023",
+     "GEOID": "32023"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5635,
+    -119.048
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Churchill County",
+     "STATE": "32",
+     "COUNTY": "001",
+     "GEOID": "32001"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.7909,
+    -114.387
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lincoln County",
+     "STATE": "32",
+     "COUNTY": "017",
+     "GEOID": "32017"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.1646,
+    -115.141
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Clark County",
+     "STATE": "32",
+     "COUNTY": "003",
+     "GEOID": "32003"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.38,
+    -119.742
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Washoe County",
+     "STATE": "32",
+     "COUNTY": "031",
+     "GEOID": "32031"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.8066,
+    -114.406
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lincoln County",
+     "STATE": "32",
+     "COUNTY": "017",
+     "GEOID": "32017"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.5969,
+    -115.224
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lincoln County",
+     "STATE": "32",
+     "COUNTY": "017",
+     "GEOID": "32017"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.3726,
+    -119.668
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Storey County",
+     "STATE": "32",
+     "COUNTY": "029",
+     "GEOID": "32029"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.4661,
+    -119.07
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Churchill County",
+     "STATE": "32",
+     "COUNTY": "001",
+     "GEOID": "32001"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.0999,
+    -115.866
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Elko County",
+     "STATE": "32",
+     "COUNTY": "007",
+     "GEOID": "32007"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.6128,
+    -114.514
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lincoln County",
+     "STATE": "32",
+     "COUNTY": "017",
+     "GEOID": "32017"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.9848,
+    -114.672
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Elko County",
+     "STATE": "32",
+     "COUNTY": "007",
+     "GEOID": "32007"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.9685,
+    -74.4187
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Hamilton County",
+     "STATE": "36",
+     "COUNTY": "041",
+     "GEOID": "36041"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.0277,
+    -74.2697
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Ulster County",
+     "STATE": "36",
+     "COUNTY": "111",
+     "GEOID": "36111"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.3913,
+    -97.8728
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Garfield County",
+     "STATE": "40",
+     "COUNTY": "047",
+     "GEOID": "40047"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.8401,
+    -98.1806
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Alfalfa County",
+     "STATE": "40",
+     "COUNTY": "003",
+     "GEOID": "40003"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.8776,
+    -97.4274
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Logan County",
+     "STATE": "40",
+     "COUNTY": "083",
+     "GEOID": "40083"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.2907,
+    -97.3222
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Noble County",
+     "STATE": "40",
+     "COUNTY": "103",
+     "GEOID": "40103"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.4944,
+    -97.4967
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Oklahoma County",
+     "STATE": "40",
+     "COUNTY": "109",
+     "GEOID": "40109"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.8781,
+    -97.421
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Logan County",
+     "STATE": "40",
+     "COUNTY": "083",
+     "GEOID": "40083"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.4723,
+    -98.4264
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Alfalfa County",
+     "STATE": "40",
+     "COUNTY": "003",
+     "GEOID": "40003"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.4151,
+    -122.676
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Linn County",
+     "STATE": "41",
+     "COUNTY": "043",
+     "GEOID": "41043"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.6626,
+    -122.685
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Jackson County",
+     "STATE": "41",
+     "COUNTY": "029",
+     "GEOID": "41029"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.0172,
+    -123.937
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Lincoln County",
+     "STATE": "41",
+     "COUNTY": "041",
+     "GEOID": "41041"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.4321,
+    -123.725
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "NAME": "Tillamook County",
+     "STATE": "41",
+     "COUNTY": "057",
+     "GEOID": "41057"
+    }
+   ]
+  }
+ ],
+ "seconds": 98,
+ "manners": {
+  "requests": 50,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 50
+ },
+ "short": "50 result(s), 50 read OK"
+}

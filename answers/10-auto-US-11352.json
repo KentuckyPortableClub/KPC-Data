@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-11352.json",
+ "id": "10-auto-US-11352",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-11352",
+  "name": "Rattlesnake Ridge National Heritage Area",
+  "agency": "",
+  "url": "https://www.arkansasheritage.com/docs/default-source/anhc-maps/boundary-maps/rattlesnake-ridge-natural-area-boundary-map-3-18-22.pdf?sfvrsn=942847bf_2",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:35Z",
+ "results": [
+  {
+   "url": "https://www.arkansasheritage.com/docs/default-source/anhc-maps/boundary-maps/rattlesnake-ridge-natural-area-boundary-map-3-18-22.pdf?sfvrsn=942847bf_2",
+   "map_url": "https://www.arkansasheritage.com/docs/default-source/anhc-maps/boundary-maps/rattlesnake-ridge-natural-area-boundary-map-3-18-22.pdf?sfvrsn=942847bf_2",
+   "saved": [
+    "maps/US-11352_rattlesnake-ridge-national-herit.jpg"
+   ],
+   "bytes": 221956,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

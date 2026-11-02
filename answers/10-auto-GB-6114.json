@@ -1,0 +1,30 @@
+{
+ "request": "requests/10-auto-GB-6114.json",
+ "id": "10-auto-GB-6114",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6114",
+  "name": "Knole Park National Park",
+  "agency": "",
+  "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/kent/places/knole/pdf/knole-welcome-leaflet-map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:55Z",
+ "results": [],
+ "error": "FileNotFoundError: [Errno 2] No such file or directory: 'pdftoppm'",
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "FileNotFoundError: [Errno 2] No such file or directory: 'pdftoppm'"
+}

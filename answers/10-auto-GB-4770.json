@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4770.json",
+ "id": "10-auto-GB-4770",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4770",
+  "name": "Wyming Brook Nature Reserve",
+  "agency": "",
+  "url": "https://www.wildsheffield.com/wp-content/uploads/2022/08/Wyming-Brook-Works-Map-scaled.jpg",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:08Z",
+ "results": [
+  {
+   "url": "https://www.wildsheffield.com/wp-content/uploads/2022/08/Wyming-Brook-Works-Map-scaled.jpg",
+   "map_url": "https://www.wildsheffield.com/wp-content/uploads/2022/08/Wyming-Brook-Works-Map-scaled.jpg",
+   "saved": [
+    "maps/GB-4770_wyming-brook-nature-reserve.jpg"
+   ],
+   "bytes": 281702,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

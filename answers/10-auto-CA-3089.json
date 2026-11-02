@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-3089.json",
+ "id": "10-auto-CA-3089",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-3089",
+  "name": "Nose Hill Park Natural Area",
+  "agency": "City of Calgary Parks",
+  "url": "https://www.calgary.ca/content/dam/www/programs-services/parks-recreation/parks/locations/nose-hill-park-echoes-of-the-past-map.png",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 19:23Z",
+ "results": [
+  {
+   "url": "https://www.calgary.ca/content/dam/www/programs-services/parks-recreation/parks/locations/nose-hill-park-echoes-of-the-past-map.png",
+   "map_url": "https://www.calgary.ca/content/dam/www/programs-services/parks-recreation/parks/locations/nose-hill-park-echoes-of-the-past-map.png",
+   "saved": [
+    "maps/CA-3089_nose-hill-park-natural-area.jpg"
+   ],
+   "bytes": 141032,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

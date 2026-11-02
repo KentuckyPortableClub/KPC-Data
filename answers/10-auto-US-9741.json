@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-9741.json",
+ "id": "10-auto-US-9741",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9741",
+  "name": "North Bend Rail Trail State Trail",
+  "agency": "West Virginia Division of Natural Resources",
+  "url": "https://wvstateparks.com/wp-content/uploads/2017/04/NorthBendRailTrailMap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:49Z",
+ "results": [
+  {
+   "url": "https://wvstateparks.com/wp-content/uploads/2017/04/NorthBendRailTrailMap.pdf",
+   "map_url": "https://wvstateparks.com/wp-content/uploads/2017/04/NorthBendRailTrailMap.pdf",
+   "saved": [
+    "maps/US-9741_north-bend-rail-trail-state-trai.jpg"
+   ],
+   "bytes": 188687,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

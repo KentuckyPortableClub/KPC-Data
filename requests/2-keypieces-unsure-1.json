@@ -1,0 +1,73 @@
+{
+ "chat": 2,
+ "kind": "map-check",
+ "report": "For each pair: open the official record page and the POTA park page. Is the record's land part of that POTA park on the agency's own map? Answer YES / NO / NOT SURE per pair with the reason.",
+ "urls": [
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52998&outFields=*&returnGeometry=false&f=html",
+  "https://pota.app/#/park/US-6861",
+  "",
+  "https://pota.app/#/park/US-6861",
+  "",
+  "https://pota.app/#/park/US-12298",
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56688&outFields=*&returnGeometry=false&f=html",
+  "https://pota.app/#/park/US-4365",
+  "",
+  "https://pota.app/#/park/US-13570",
+  "",
+  "https://pota.app/#/park/US-8319",
+  "",
+  "https://pota.app/#/park/US-7565",
+  "",
+  "https://pota.app/#/park/US-6027"
+ ],
+ "pairs": [
+  {
+   "ref": "US-6861",
+   "park": "Great Pond / Massacoe State Forest",
+   "record": 52998,
+   "record_name": "Massacoe State Forest"
+  },
+  {
+   "ref": "US-6861",
+   "park": "Great Pond / Massacoe State Forest",
+   "record": "sgctb2112",
+   "record_name": "Massacoe State Forest"
+  },
+  {
+   "ref": "US-12298",
+   "park": "Gamlin Lake Recreation Site BLM Recreation Management Area",
+   "record": "rst13894",
+   "record_name": "Gamlin Lake"
+  },
+  {
+   "ref": "US-4365",
+   "park": "North Point Battlefield State Park",
+   "record": 56688,
+   "record_name": "North Point Sp"
+  },
+  {
+   "ref": "US-13570",
+   "park": "Gladwin Field Trial Wildlife Management Area",
+   "record": "sgmib88",
+   "record_name": "Gladwin State Game Area"
+  },
+  {
+   "ref": "US-8319",
+   "park": "Palisades Interstate Park",
+   "record": "sgnyb545",
+   "record_name": "Palisades"
+  },
+  {
+   "ref": "US-7565",
+   "park": "AEDC and Woods Reservoir Wildlife Management Area",
+   "record": "sgtni131",
+   "record_name": "Woods Reservoir Refuge"
+  },
+  {
+   "ref": "US-6027",
+   "park": "Topaz Mountain Rockhound Area BLM Recreation Management Area",
+   "record": "rst9580",
+   "record_name": "Topaz Mountain"
+  }
+ ]
+}

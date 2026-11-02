@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-5682.json",
+ "id": "10-auto-GB-5682",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5682",
+  "name": "Gawthorpe Hall Country Park",
+  "agency": "",
+  "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/liverpool-lancashire/places/gawthorpe-hall/pdf/gawthorpe-hall-map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:53Z",
+ "results": [
+  {
+   "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/liverpool-lancashire/places/gawthorpe-hall/pdf/gawthorpe-hall-map.pdf",
+   "map_url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/liverpool-lancashire/places/gawthorpe-hall/pdf/gawthorpe-hall-map.pdf",
+   "saved": [
+    "maps/GB-5682_gawthorpe-hall-country-park.jpg"
+   ],
+   "bytes": 188202,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

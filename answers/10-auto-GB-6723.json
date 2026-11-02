@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-6723.json",
+ "id": "10-auto-GB-6723",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6723",
+  "name": "Bewl Water Country Park",
+  "agency": "",
+  "url": "https://cdn.sanity.io/files/0q21sq7l/production/9b3f6f17b17159adf2815d10052fe3cd9af6d215.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 15:30Z",
+ "results": [
+  {
+   "url": "https://cdn.sanity.io/files/0q21sq7l/production/9b3f6f17b17159adf2815d10052fe3cd9af6d215.pdf",
+   "map_url": "https://cdn.sanity.io/files/0q21sq7l/production/9b3f6f17b17159adf2815d10052fe3cd9af6d215.pdf",
+   "saved": [
+    "maps/GB-6723_bewl-water-country-park.jpg"
+   ],
+   "bytes": 356282,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

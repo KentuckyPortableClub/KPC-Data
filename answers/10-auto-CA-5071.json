@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5071.json",
+ "id": "10-auto-CA-5071",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5071",
+  "name": "Parc des Rapides-du-Diable Regional Park",
+  "agency": "",
+  "url": "https://ville.beauceville.qc.ca/wp-content/uploads/2020/03/sentier-parc-des-rapides-du-Diable.jpg",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:56Z",
+ "results": [
+  {
+   "url": "https://ville.beauceville.qc.ca/wp-content/uploads/2020/03/sentier-parc-des-rapides-du-Diable.jpg",
+   "map_url": "https://ville.beauceville.qc.ca/wp-content/uploads/2020/03/sentier-parc-des-rapides-du-Diable.jpg",
+   "saved": [
+    "maps/CA-5071_parc-des-rapides-du-diable-regio.jpg"
+   ],
+   "bytes": 75622,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,30 @@
+{
+ "request": "requests/10-r15-CU-0473.json",
+ "id": "10-r15-CU-0473",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CU-0473",
+  "name": "",
+  "agency": "",
+  "url": "https://www.cbd.int/doc/nr/nr-06/cu-nr-06-p1-es.pdf",
+  "pages": 1,
+  "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline"
+ },
+ "answered": "2026-11-01 01:51Z",
+ "results": [],
+ "error": "FileNotFoundError: [Errno 2] No such file or directory: 'pdftoppm'",
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "FileNotFoundError: [Errno 2] No such file or directory: 'pdftoppm'"
+}

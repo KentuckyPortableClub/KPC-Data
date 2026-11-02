@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-0791.json",
+ "id": "10-auto-GB-0791",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-0791",
+  "name": "Oxford Island National Conservation Area",
+  "agency": "",
+  "url": "https://getactiveabc.com/wp-content/uploads/2017/01/036621-CBC-Oxford-Island-A3-1.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 02:26Z",
+ "results": [
+  {
+   "url": "https://getactiveabc.com/wp-content/uploads/2017/01/036621-CBC-Oxford-Island-A3-1.pdf",
+   "map_url": "https://getactiveabc.com/wp-content/uploads/2017/01/036621-CBC-Oxford-Island-A3-1.pdf",
+   "saved": [
+    "maps/GB-0791_oxford-island-national-conservat.jpg"
+   ],
+   "bytes": 384229,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

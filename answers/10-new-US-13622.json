@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13622.json",
+ "id": "10-new-US-13622",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13622 The Razorback Regional Greenway National Recreation Trail: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13622"
+  ],
+  "report": "new park US-13622 The Razorback Regional Greenway National Recreation Trail: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-30 16:59Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13622",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13622",
+   "title": "",
+   "text": "{\"parkId\": 144222, \"reference\": \"US-13622\", \"name\": \"The Razorback Regional Greenway\", \"latitude\": 36.0285, \"longitude\": -94.1999, \"grid4\": \"EM26\", \"grid6\": \"EM26va\", \"parktypeId\": 208, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nationalrecreationtrails.com/trails/razorback-greenway\", \"createdByAdmin\": \"Eddie Daniel\", \"parktypeDesc\": \"National Recreation Trail\", \"locationDesc\": \"US-AR\", \"locationName\": \"Arkansas\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"K5NZV\", \"firstActivationDate\": \"2026-10-27\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

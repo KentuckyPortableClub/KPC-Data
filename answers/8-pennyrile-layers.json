@@ -1,0 +1,147 @@
+{
+ "request": "requests/8-pennyrile-layers.json",
+ "id": "8-pennyrile-layers",
+ "chat": 8,
+ "kind": "layer-probe",
+ "report": "Pennyrile Forest State Resort Park (US-1287, 37.0725,-87.6631) vs Pennyrile State Forest (US-4692, 37.05785,-87.65369), Christian Co KY: need to settle whether the resort park sits INSIDE the state forest (real layered 2-fer, R0-R10 rule 3) or is a separate adjacent tract that only touches it (not a 2-fer; the coder's engine found only tiny 0.1-1.0 acre slivers along a line, all dropped as map-error-tight). Please give: (1) the resort park's record from Ky_State_Parks_Features_WGS84WM (name field, acreage, full extent/bbox) filtered near 37.07,-87.66 - this is the official KY Dept of Parks boundary; (2) the state forest's record from Ky_StateForests_WGS84WM (name field, acreage, full extent/bbox) filtered near the same point - this is the official KY Division of Forestry boundary; (3) whether the park's extent falls entirely within the forest's extent, is fully outside it (adjacent/touching only), or partially overlaps by more than a sliver.",
+ "asked": {
+  "chat": 8,
+  "kind": "layer-probe",
+  "report": "Pennyrile Forest State Resort Park (US-1287, 37.0725,-87.6631) vs Pennyrile State Forest (US-4692, 37.05785,-87.65369), Christian Co KY: need to settle whether the resort park sits INSIDE the state forest (real layered 2-fer, R0-R10 rule 3) or is a separate adjacent tract that only touches it (not a 2-fer; the coder's engine found only tiny 0.1-1.0 acre slivers along a line, all dropped as map-error-tight). Please give: (1) the resort park's record from Ky_State_Parks_Features_WGS84WM (name field, acreage, full extent/bbox) filtered near 37.07,-87.66 - this is the official KY Dept of Parks boundary; (2) the state forest's record from Ky_StateForests_WGS84WM (name field, acreage, full extent/bbox) filtered near the same point - this is the official KY Division of Forestry boundary; (3) whether the park's extent falls entirely within the forest's extent, is fully outside it (adjacent/touching only), or partially overlaps by more than a sliver.",
+  "layers": [
+   "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/0",
+   "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/0"
+  ]
+ },
+ "answered": "2026-11-01 17:53Z",
+ "results": [
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/0",
+   "answers": true,
+   "service": "State Park Trail Heads",
+   "licence": "",
+   "years_in_text": [],
+   "description": "Trailheads",
+   "item_licence": "None",
+   "item_credits": "Kentucky State Parks",
+   "item_about": "This map service provides access to trail head, campsite, campgrounds, lodging, public structures, and boundaries for State Parks in the Commonwealth of Kentucky. This map service provides access to trail head, campsite, campgrounds, lodging, public structures, and boundaries for State Parks in the Commonwealth of Kentucky.",
+   "layers": [
+    {
+     "id": null,
+     "name": "State Park Trail Heads",
+     "geom": "Point",
+     "nameField": "NAME",
+     "ownerField": "AGENCY",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "TRAIL_NAME",
+      "PARKING",
+      "RESTROOMS",
+      "STRUCTURE",
+      "TRASH_CAN",
+      "SHELTER",
+      "KIOSK",
+      "PICNIC",
+      "VENDING",
+      "SIGNAGE",
+      "Shape",
+      "TRAILHD_ID",
+      "PHOTOLINK",
+      "HIKING",
+      "BIKING",
+      "HORSE",
+      "MOTORCYCLE",
+      "ATV",
+      "WATER_TRL",
+      "RR_ADA",
+      "AGENCY",
+      "CONTACT",
+      "XY_SOURCE",
+      "XY_ISSUES",
+      "ATT_SOURCE",
+      "ATT_ISSUES",
+      "COMMENTS",
+      "MODIFYDATE",
+      "CREATEDATE",
+      "DESCRIPTN",
+      "GlobalID"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 271,
+     "sample": [
+      "MUSEUM PARKING LOT",
+      "LICKING RIVER TRAIL",
+      "JENNY WILEY AND ROAD",
+      "MOSS RIDGE",
+      "LAKESHORE",
+      "LODGE FRONT TRAIL 4",
+      "LODGE FRONT TRAIL 6",
+      "CLIFTY CAMPGROUND"
+     ],
+     "owner_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    }
+   ]
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/0",
+   "answers": true,
+   "service": "Kentucky State Forest Points (StoryMap)",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "item_licence": "LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchant",
+   "item_credits": "Kentucky Department of Forestry",
+   "item_about": "Polygons representing the boundaries of State Forests for the Commonwealth of Kentucky. Polygons representing the boundaries of State Forests for the Commonwealth of Kentucky.",
+   "layers": [
+    {
+     "id": null,
+     "name": "Kentucky State Forest Points (StoryMap)",
+     "geom": "Point",
+     "nameField": "Name",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Icon_color",
+      "pic_URL",
+      "Thumb_URL",
+      "Number",
+      "description",
+      "Shape"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 11,
+     "sample": [
+      "Kentucky's State Forests",
+      "Big Rivers State Forest",
+      "Green River State Forest",
+      "Kentenia State Forest",
+      "Kentucky Ridge State Forest",
+      "Knobs State Forest",
+      "Marion County State Forest",
+      "Marrowbone State Forest"
+     ]
+    }
+   ]
+  }
+ ],
+ "seconds": 22,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "2 result(s), 2 read OK"
+}

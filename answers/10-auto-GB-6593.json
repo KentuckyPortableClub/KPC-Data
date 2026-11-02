@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-GB-6593.json",
+ "id": "10-auto-GB-6593",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6593",
+  "name": "The Red Squirrel National Scenic Trail",
+  "agency": "",
+  "url": "https://redsquirreltrail.org.uk/wp-content/uploads/Complete_Red_Squirrel_Trail_Maps.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 15:29Z",
+ "results": [
+  {
+   "url": "https://redsquirreltrail.org.uk/wp-content/uploads/Complete_Red_Squirrel_Trail_Maps.pdf",
+   "map_url": "https://redsquirreltrail.org.uk/wp-content/uploads/Complete_Red_Squirrel_Trail_Maps.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 11,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

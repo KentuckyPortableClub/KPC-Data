@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4014.json",
+ "id": "10-auto-GB-4014",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4014",
+  "name": "Budshead Wood National Park",
+  "agency": "government agency (plymouth.gov.uk)",
+  "url": "https://www.plymouth.gov.uk/sites/default/files/BudsheadWoodImprovementsMap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:05Z",
+ "results": [
+  {
+   "url": "https://www.plymouth.gov.uk/sites/default/files/BudsheadWoodImprovementsMap.pdf",
+   "map_url": "https://www.plymouth.gov.uk/sites/default/files/BudsheadWoodImprovementsMap.pdf",
+   "saved": [
+    "maps/GB-4014_budshead-wood-national-park.jpg"
+   ],
+   "bytes": 484757,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-6155.json",
+ "id": "10-auto-GB-6155",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6155",
+  "name": "Common Wood Forest Reserve",
+  "agency": "",
+  "url": "https://pennandtylersgreen.org.uk/wp-content/uploads/2026/03/AE27629-Common-Wood-Map-iss1.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:55Z",
+ "results": [
+  {
+   "url": "https://pennandtylersgreen.org.uk/wp-content/uploads/2026/03/AE27629-Common-Wood-Map-iss1.pdf",
+   "map_url": "https://pennandtylersgreen.org.uk/wp-content/uploads/2026/03/AE27629-Common-Wood-Map-iss1.pdf",
+   "saved": [
+    "maps/GB-6155_common-wood-forest-reserve.jpg"
+   ],
+   "bytes": 285563,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 14,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

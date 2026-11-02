@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-10212.json",
+ "id": "10-auto-US-10212",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-10212",
+  "name": "Mon-Shon State Conservation Area",
+  "agency": "Missouri Department of Conservation",
+  "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8838map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:35Z",
+ "results": [
+  {
+   "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8838map.pdf",
+   "map_url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8838map.pdf",
+   "saved": [
+    "maps/US-10212_mon-shon-state-conservation-area.jpg"
+   ],
+   "bytes": 167756,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

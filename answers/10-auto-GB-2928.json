@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-2928.json",
+ "id": "10-auto-GB-2928",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-2928",
+  "name": "Loch Gruinart RSPB Reserve",
+  "agency": "",
+  "url": "https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:d359fed8-65bd-4083-9890-9222c2131a86/loch-gruinart-and-the-oa-trail-guide.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:01Z",
+ "results": [
+  {
+   "url": "https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:d359fed8-65bd-4083-9890-9222c2131a86/loch-gruinart-and-the-oa-trail-guide.pdf",
+   "map_url": "https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:d359fed8-65bd-4083-9890-9222c2131a86/loch-gruinart-and-the-oa-trail-guide.pdf",
+   "saved": [
+    "maps/GB-2928_loch-gruinart-rspb-reserve.jpg"
+   ],
+   "bytes": 284239,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 10,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

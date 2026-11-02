@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-6898.json",
+ "id": "10-auto-GB-6898",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6898",
+  "name": "Knockshinnoch Lagoons Wildlife Reserve",
+  "agency": "",
+  "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2016/09/002_200__kla_accessfeatures_1368788424.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 15:30Z",
+ "results": [
+  {
+   "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2016/09/002_200__kla_accessfeatures_1368788424.pdf",
+   "map_url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2016/09/002_200__kla_accessfeatures_1368788424.pdf",
+   "saved": [
+    "maps/GB-6898_knockshinnoch-lagoons-wildlife-r.jpg"
+   ],
+   "bytes": 398028,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,981 @@
+{
+ "request": "requests/2-county-04.json",
+ "id": "2-county-04",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+  "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1",
+  "fields": "NAME,STATE,COUNTY,GEOID",
+  "points": [
+   [
+    48.7797,
+    -103.86
+   ],
+   [
+    48.3881,
+    -100.378
+   ],
+   [
+    46.5029,
+    -97.8782
+   ],
+   [
+    46.4457,
+    -96.72
+   ],
+   [
+    48.9985,
+    -100.059
+   ],
+   [
+    46.4587,
+    -101.219
+   ],
+   [
+    47.524,
+    -98.3293
+   ],
+   [
+    46.2489,
+    -97.4568
+   ],
+   [
+    46.8052,
+    -100.79
+   ],
+   [
+    46.2217,
+    -101.478
+   ],
+   [
+    46.9124,
+    -103.535
+   ],
+   [
+    48.1224,
+    -100.75
+   ],
+   [
+    46.9346,
+    -100.899
+   ],
+   [
+    47.9865,
+    -104.0
+   ],
+   [
+    47.253,
+    -101.279
+   ],
+   [
+    46.2791,
+    -103.776
+   ],
+   [
+    47.2963,
+    -101.285
+   ],
+   [
+    46.513,
+    -100.583
+   ],
+   [
+    48.9369,
+    -97.8909
+   ],
+   [
+    46.096,
+    -98.1314
+   ],
+   [
+    47.4217,
+    -102.917
+   ],
+   [
+    47.5409,
+    -98.2907
+   ],
+   [
+    47.3555,
+    -98.1358
+   ],
+   [
+    46.7282,
+    -97.325
+   ],
+   [
+    46.8414,
+    -100.518
+   ],
+   [
+    47.9851,
+    -103.989
+   ],
+   [
+    47.4399,
+    -98.0664
+   ],
+   [
+    48.7606,
+    -97.9279
+   ],
+   [
+    48.9732,
+    -97.2542
+   ],
+   [
+    47.4976,
+    -98.1267
+   ],
+   [
+    46.6734,
+    -97.9449
+   ],
+   [
+    46.1503,
+    -100.208
+   ],
+   [
+    46.1689,
+    -98.8568
+   ],
+   [
+    46.8359,
+    -100.865
+   ],
+   [
+    42.1264,
+    -98.0311
+   ],
+   [
+    40.0039,
+    -98.5229
+   ],
+   [
+    41.2926,
+    -96.0971
+   ],
+   [
+    41.3608,
+    -96.3021
+   ],
+   [
+    41.3737,
+    -96.1973
+   ],
+   [
+    40.0692,
+    -97.3058
+   ],
+   [
+    40.4178,
+    -97.383
+   ],
+   [
+    43.2722,
+    -71.7459
+   ],
+   [
+    44.7271,
+    -71.6901
+   ],
+   [
+    43.189,
+    -72.5595
+   ],
+   [
+    36.1156,
+    -106.035
+   ],
+   [
+    34.4018,
+    -104.193
+   ],
+   [
+    38.9174,
+    -114.106
+   ],
+   [
+    39.2592,
+    -114.868
+   ],
+   [
+    39.1873,
+    -119.706
+   ],
+   [
+    40.7661,
+    -115.92
+   ]
+  ],
+  "refs": [
+   "US-5639",
+   "US-5743",
+   "US-5746",
+   "US-5748",
+   "US-7143",
+   "US-8524",
+   "US-8526",
+   "US-8527",
+   "US-8528",
+   "US-8531",
+   "US-8532",
+   "US-8534",
+   "US-8535",
+   "US-8536",
+   "US-8537",
+   "US-8538",
+   "US-8539",
+   "US-8540",
+   "US-8542",
+   "US-8543",
+   "US-8545",
+   "US-8546",
+   "US-8547",
+   "US-8548",
+   "US-8549",
+   "US-8550",
+   "US-8552",
+   "US-8553",
+   "US-8554",
+   "US-8555",
+   "US-8558",
+   "US-8559",
+   "US-8560",
+   "US-8561",
+   "US-3374",
+   "US-3492",
+   "US-4010",
+   "US-4012",
+   "US-4013",
+   "US-4025",
+   "US-4027",
+   "US-4931",
+   "US-4936",
+   "US-4980",
+   "US-11797",
+   "US-11821",
+   "US-13242",
+   "US-13249",
+   "US-13274",
+   "US-13276"
+  ]
+ },
+ "answered": "2026-10-29 23:22Z",
+ "results": [
+  {
+   "point": [
+    48.7797,
+    -103.86
+   ],
+   "features": [
+    {
+     "NAME": "Divide County",
+     "STATE": "38",
+     "COUNTY": "023",
+     "GEOID": "38023"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.3881,
+    -100.378
+   ],
+   "features": [
+    {
+     "NAME": "McHenry County",
+     "STATE": "38",
+     "COUNTY": "049",
+     "GEOID": "38049"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.5029,
+    -97.8782
+   ],
+   "features": [
+    {
+     "NAME": "Ransom County",
+     "STATE": "38",
+     "COUNTY": "073",
+     "GEOID": "38073"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.4457,
+    -96.72
+   ],
+   "features": [
+    {
+     "NAME": "Richland County",
+     "STATE": "38",
+     "COUNTY": "077",
+     "GEOID": "38077"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.9985,
+    -100.059
+   ],
+   "features": [
+    {
+     "NAME": "Rolette County",
+     "STATE": "38",
+     "COUNTY": "079",
+     "GEOID": "38079"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.4587,
+    -101.219
+   ],
+   "features": [
+    {
+     "NAME": "Morton County",
+     "STATE": "38",
+     "COUNTY": "059",
+     "GEOID": "38059"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.524,
+    -98.3293
+   ],
+   "features": [
+    {
+     "NAME": "Griggs County",
+     "STATE": "38",
+     "COUNTY": "039",
+     "GEOID": "38039"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.2489,
+    -97.4568
+   ],
+   "features": [
+    {
+     "NAME": "Sargent County",
+     "STATE": "38",
+     "COUNTY": "081",
+     "GEOID": "38081"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.8052,
+    -100.79
+   ],
+   "features": [
+    {
+     "NAME": "Burleigh County",
+     "STATE": "38",
+     "COUNTY": "015",
+     "GEOID": "38015"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.2217,
+    -101.478
+   ],
+   "features": [
+    {
+     "NAME": "Grant County",
+     "STATE": "38",
+     "COUNTY": "037",
+     "GEOID": "38037"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.9124,
+    -103.535
+   ],
+   "features": [
+    {
+     "NAME": "Billings County",
+     "STATE": "38",
+     "COUNTY": "007",
+     "GEOID": "38007"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.1224,
+    -100.75
+   ],
+   "features": [
+    {
+     "NAME": "McHenry County",
+     "STATE": "38",
+     "COUNTY": "049",
+     "GEOID": "38049"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.9346,
+    -100.899
+   ],
+   "features": [
+    {
+     "NAME": "Burleigh County",
+     "STATE": "38",
+     "COUNTY": "015",
+     "GEOID": "38015"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.9865,
+    -104.0
+   ],
+   "features": [
+    {
+     "NAME": "Williams County",
+     "STATE": "38",
+     "COUNTY": "105",
+     "GEOID": "38105"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.253,
+    -101.279
+   ],
+   "features": [
+    {
+     "NAME": "Mercer County",
+     "STATE": "38",
+     "COUNTY": "057",
+     "GEOID": "38057"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.2791,
+    -103.776
+   ],
+   "features": [
+    {
+     "NAME": "Bowman County",
+     "STATE": "38",
+     "COUNTY": "011",
+     "GEOID": "38011"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.2963,
+    -101.285
+   ],
+   "features": [
+    {
+     "NAME": "McLean County",
+     "STATE": "38",
+     "COUNTY": "055",
+     "GEOID": "38055"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.513,
+    -100.583
+   ],
+   "features": [
+    {
+     "NAME": "Morton County",
+     "STATE": "38",
+     "COUNTY": "059",
+     "GEOID": "38059"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.9369,
+    -97.8909
+   ],
+   "features": [
+    {
+     "NAME": "Pembina County",
+     "STATE": "38",
+     "COUNTY": "067",
+     "GEOID": "38067"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.096,
+    -98.1314
+   ],
+   "features": [
+    {
+     "NAME": "Dickey County",
+     "STATE": "38",
+     "COUNTY": "021",
+     "GEOID": "38021"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.4217,
+    -102.917
+   ],
+   "features": [
+    {
+     "NAME": "Dunn County",
+     "STATE": "38",
+     "COUNTY": "025",
+     "GEOID": "38025"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.5409,
+    -98.2907
+   ],
+   "features": [
+    {
+     "NAME": "Griggs County",
+     "STATE": "38",
+     "COUNTY": "039",
+     "GEOID": "38039"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.3555,
+    -98.1358
+   ],
+   "features": [
+    {
+     "NAME": "Griggs County",
+     "STATE": "38",
+     "COUNTY": "039",
+     "GEOID": "38039"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.7282,
+    -97.325
+   ],
+   "features": [
+    {
+     "NAME": "Cass County",
+     "STATE": "38",
+     "COUNTY": "017",
+     "GEOID": "38017"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.8414,
+    -100.518
+   ],
+   "features": [
+    {
+     "NAME": "Burleigh County",
+     "STATE": "38",
+     "COUNTY": "015",
+     "GEOID": "38015"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.9851,
+    -103.989
+   ],
+   "features": [
+    {
+     "NAME": "Williams County",
+     "STATE": "38",
+     "COUNTY": "105",
+     "GEOID": "38105"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.4399,
+    -98.0664
+   ],
+   "features": [
+    {
+     "NAME": "Griggs County",
+     "STATE": "38",
+     "COUNTY": "039",
+     "GEOID": "38039"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.7606,
+    -97.9279
+   ],
+   "features": [
+    {
+     "NAME": "Pembina County",
+     "STATE": "38",
+     "COUNTY": "067",
+     "GEOID": "38067"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.9732,
+    -97.2542
+   ],
+   "features": [
+    {
+     "NAME": "Pembina County",
+     "STATE": "38",
+     "COUNTY": "067",
+     "GEOID": "38067"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.4976,
+    -98.1267
+   ],
+   "features": [
+    {
+     "NAME": "Griggs County",
+     "STATE": "38",
+     "COUNTY": "039",
+     "GEOID": "38039"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.6734,
+    -97.9449
+   ],
+   "features": [
+    {
+     "NAME": "Barnes County",
+     "STATE": "38",
+     "COUNTY": "003",
+     "GEOID": "38003"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.1503,
+    -100.208
+   ],
+   "features": [
+    {
+     "NAME": "Emmons County",
+     "STATE": "38",
+     "COUNTY": "029",
+     "GEOID": "38029"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.1689,
+    -98.8568
+   ],
+   "features": [
+    {
+     "NAME": "Dickey County",
+     "STATE": "38",
+     "COUNTY": "021",
+     "GEOID": "38021"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.8359,
+    -100.865
+   ],
+   "features": [
+    {
+     "NAME": "Morton County",
+     "STATE": "38",
+     "COUNTY": "059",
+     "GEOID": "38059"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.1264,
+    -98.0311
+   ],
+   "features": [
+    {
+     "NAME": "Antelope County",
+     "STATE": "31",
+     "COUNTY": "003",
+     "GEOID": "31003"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.0039,
+    -98.5229
+   ],
+   "features": [
+    {
+     "NAME": "Webster County",
+     "STATE": "31",
+     "COUNTY": "181",
+     "GEOID": "31181"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.2926,
+    -96.0971
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "31",
+     "COUNTY": "055",
+     "GEOID": "31055"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.3608,
+    -96.3021
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "31",
+     "COUNTY": "055",
+     "GEOID": "31055"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.3737,
+    -96.1973
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "31",
+     "COUNTY": "055",
+     "GEOID": "31055"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.0692,
+    -97.3058
+   ],
+   "features": [
+    {
+     "NAME": "Jefferson County",
+     "STATE": "31",
+     "COUNTY": "095",
+     "GEOID": "31095"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.4178,
+    -97.383
+   ],
+   "features": [
+    {
+     "NAME": "Fillmore County",
+     "STATE": "31",
+     "COUNTY": "059",
+     "GEOID": "31059"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.2722,
+    -71.7459
+   ],
+   "features": [
+    {
+     "NAME": "Merrimack County",
+     "STATE": "33",
+     "COUNTY": "013",
+     "GEOID": "33013"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.7271,
+    -71.6901
+   ],
+   "features": [
+    {
+     "NAME": "Essex County",
+     "STATE": "50",
+     "COUNTY": "009",
+     "GEOID": "50009"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.189,
+    -72.5595
+   ],
+   "features": [
+    {
+     "NAME": "Windham County",
+     "STATE": "50",
+     "COUNTY": "025",
+     "GEOID": "50025"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.1156,
+    -106.035
+   ],
+   "features": [
+    {
+     "NAME": "Rio Arriba County",
+     "STATE": "35",
+     "COUNTY": "039",
+     "GEOID": "35039"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.4018,
+    -104.193
+   ],
+   "features": [
+    {
+     "NAME": "De Baca County",
+     "STATE": "35",
+     "COUNTY": "011",
+     "GEOID": "35011"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.9174,
+    -114.106
+   ],
+   "features": [
+    {
+     "NAME": "White Pine County",
+     "STATE": "32",
+     "COUNTY": "033",
+     "GEOID": "32033"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.2592,
+    -114.868
+   ],
+   "features": [
+    {
+     "NAME": "White Pine County",
+     "STATE": "32",
+     "COUNTY": "033",
+     "GEOID": "32033"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.1873,
+    -119.706
+   ],
+   "features": [
+    {
+     "NAME": "Carson City",
+     "STATE": "32",
+     "COUNTY": "510",
+     "GEOID": "32510"
+    }
+   ]
+  },
+  {
+   "point": [
+    40.7661,
+    -115.92
+   ],
+   "features": [
+    {
+     "NAME": "Elko County",
+     "STATE": "32",
+     "COUNTY": "007",
+     "GEOID": "32007"
+    }
+   ]
+  }
+ ],
+ "seconds": 98,
+ "manners": {
+  "requests": 50,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 50
+ },
+ "short": "50 result(s), 50 read OK"
+}

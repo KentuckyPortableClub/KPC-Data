@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-pm2-US-9652.json",
+ "id": "10-pm2-US-9652",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill retry with chat 8 replacement link (Oct 30 5:15 AM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9652",
+  "name": "Granada State Wildlife Area",
+  "agency": "Colorado Parks and Wildlife",
+  "url": "https://cpw.state.co.us/sites/default/files/dam/twchy9qgiw/granadadeadmanswa_geo.pdf",
+  "pages": 1,
+  "report": "backfill retry with chat 8 replacement link (Oct 30 5:15 AM)"
+ },
+ "answered": "2026-10-30 09:43Z",
+ "results": [
+  {
+   "url": "https://cpw.state.co.us/sites/default/files/dam/twchy9qgiw/granadadeadmanswa_geo.pdf",
+   "map_url": "https://cpw.state.co.us/sites/default/files/dam/twchy9qgiw/granadadeadmanswa_geo.pdf",
+   "saved": [
+    "maps/US-9652_granada-state-wildlife-area.jpg"
+   ],
+   "bytes": 375735,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

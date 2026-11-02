@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-0508.json",
+ "id": "10-auto-GB-0508",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-0508",
+  "name": "Gilwell Park",
+  "agency": "",
+  "url": "https://www.scoutadventures.org.uk/sites/default/files/2026-05/Gilwell%20Park%20Map%20May%202026_0.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 00:14Z",
+ "results": [
+  {
+   "url": "https://www.scoutadventures.org.uk/sites/default/files/2026-05/Gilwell%20Park%20Map%20May%202026_0.pdf",
+   "map_url": "https://www.scoutadventures.org.uk/sites/default/files/2026-05/Gilwell%20Park%20Map%20May%202026_0.pdf",
+   "saved": [
+    "maps/GB-0508_gilwell-park.jpg"
+   ],
+   "bytes": 357645,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

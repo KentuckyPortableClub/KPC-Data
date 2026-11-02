@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-2176.json",
+ "id": "10-auto-CA-2176",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-2176",
+  "name": "Parc Jean-Drapeau Regional Park",
+  "agency": "Société du parc Jean-Drapeau",
+  "url": "https://www.parcjeandrapeau.com/files/publications/lune_noire_carte_plan_jardins_des_floralies_parc_jean_drapeau_montreal_2026_10_19_1.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 17:15Z",
+ "results": [
+  {
+   "url": "https://www.parcjeandrapeau.com/files/publications/lune_noire_carte_plan_jardins_des_floralies_parc_jean_drapeau_montreal_2026_10_19_1.pdf",
+   "map_url": "https://www.parcjeandrapeau.com/files/publications/lune_noire_carte_plan_jardins_des_floralies_parc_jean_drapeau_montreal_2026_10_19_1.pdf",
+   "saved": [
+    "maps/CA-2176_parc-jean-drapeau-regional-park.jpg"
+   ],
+   "bytes": 114472,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

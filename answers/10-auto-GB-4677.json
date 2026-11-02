@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4677.json",
+ "id": "10-auto-GB-4677",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4677",
+  "name": "Hicks Lodge Forest Reserve",
+  "agency": "",
+  "url": "https://www.forestryengland.uk/sites/default/files/documents/Hicks%20Lodge%20web%20map%20%28Oct%2025%29.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:07Z",
+ "results": [
+  {
+   "url": "https://www.forestryengland.uk/sites/default/files/documents/Hicks%20Lodge%20web%20map%20%28Oct%2025%29.pdf",
+   "map_url": "https://www.forestryengland.uk/sites/default/files/documents/Hicks%20Lodge%20web%20map%20%28Oct%2025%29.pdf",
+   "saved": [
+    "maps/GB-4677_hicks-lodge-forest-reserve.jpg"
+   ],
+   "bytes": 245189,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

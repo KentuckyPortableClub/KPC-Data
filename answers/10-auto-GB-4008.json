@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4008.json",
+ "id": "10-auto-GB-4008",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4008",
+  "name": "Bircham Valley Nature Reserve",
+  "agency": "government agency (plymouth.gov.uk)",
+  "url": "https://www.plymouth.gov.uk/sites/default/files/BirchamValleyImprovementsMap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:04Z",
+ "results": [
+  {
+   "url": "https://www.plymouth.gov.uk/sites/default/files/BirchamValleyImprovementsMap.pdf",
+   "map_url": "https://www.plymouth.gov.uk/sites/default/files/BirchamValleyImprovementsMap.pdf",
+   "saved": [
+    "maps/GB-4008_bircham-valley-nature-reserve.jpg"
+   ],
+   "bytes": 608602,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

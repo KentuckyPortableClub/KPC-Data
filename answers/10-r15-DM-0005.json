@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-r15-DM-0005.json",
+ "id": "10-r15-DM-0005",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "DM-0005",
+  "name": "",
+  "agency": "",
+  "url": "https://physicalplanning.gov.dm/images/MAPattractions.pdf",
+  "pages": 1,
+  "report": "Retry15 world (HQ Oct 31 7:05 PM): picture / PDF map for a park with no official outline"
+ },
+ "answered": "2026-11-01 02:19Z",
+ "results": [
+  {
+   "url": "https://physicalplanning.gov.dm/images/MAPattractions.pdf",
+   "error": "robots.txt says no (or no manners module)",
+   "looked": []
+  }
+ ],
+ "seconds": 1,
+ "manners": {
+  "requests": 0,
+  "robots": 1,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

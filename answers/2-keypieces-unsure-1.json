@@ -1,0 +1,1014 @@
+{
+ "request": "requests/2-keypieces-unsure-1.json",
+ "id": "2-keypieces-unsure-1",
+ "chat": 2,
+ "kind": "map-check",
+ "report": "For each pair: open the official record page and the POTA park page. Is the record's land part of that POTA park on the agency's own map? Answer YES / NO / NOT SURE per pair with the reason.",
+ "asked": {
+  "chat": 2,
+  "kind": "map-check",
+  "report": "For each pair: open the official record page and the POTA park page. Is the record's land part of that POTA park on the agency's own map? Answer YES / NO / NOT SURE per pair with the reason.",
+  "urls": [
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52998&outFields=*&returnGeometry=false&f=html",
+   "https://pota.app/#/park/US-6861",
+   "",
+   "https://pota.app/#/park/US-6861",
+   "",
+   "https://pota.app/#/park/US-12298",
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56688&outFields=*&returnGeometry=false&f=html",
+   "https://pota.app/#/park/US-4365",
+   "",
+   "https://pota.app/#/park/US-13570",
+   "",
+   "https://pota.app/#/park/US-8319",
+   "",
+   "https://pota.app/#/park/US-7565",
+   "",
+   "https://pota.app/#/park/US-6027"
+  ],
+  "pairs": [
+   {
+    "ref": "US-6861",
+    "park": "Great Pond / Massacoe State Forest",
+    "record": 52998,
+    "record_name": "Massacoe State Forest"
+   },
+   {
+    "ref": "US-6861",
+    "park": "Great Pond / Massacoe State Forest",
+    "record": "sgctb2112",
+    "record_name": "Massacoe State Forest"
+   },
+   {
+    "ref": "US-12298",
+    "park": "Gamlin Lake Recreation Site BLM Recreation Management Area",
+    "record": "rst13894",
+    "record_name": "Gamlin Lake"
+   },
+   {
+    "ref": "US-4365",
+    "park": "North Point Battlefield State Park",
+    "record": 56688,
+    "record_name": "North Point Sp"
+   },
+   {
+    "ref": "US-13570",
+    "park": "Gladwin Field Trial Wildlife Management Area",
+    "record": "sgmib88",
+    "record_name": "Gladwin State Game Area"
+   },
+   {
+    "ref": "US-8319",
+    "park": "Palisades Interstate Park",
+    "record": "sgnyb545",
+    "record_name": "Palisades"
+   },
+   {
+    "ref": "US-7565",
+    "park": "AEDC and Woods Reservoir Wildlife Management Area",
+    "record": "sgtni131",
+    "record_name": "Woods Reservoir Refuge"
+   },
+   {
+    "ref": "US-6027",
+    "park": "Topaz Mountain Rockhound Area BLM Recreation Management Area",
+    "record": "rst9580",
+    "record_name": "Topaz Mountain"
+   }
+  ]
+ },
+ "answered": "2026-10-29 18:36Z",
+ "results": [
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52998&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52998&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 52998\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SDC\nLoc_Own: CT Department of Environmental Protection\nMang_Type: UNK\nMang_Name: UNK\nLoc_Mang:\nDes_Tp: SRMA\nLoc_Ds: SF\nUnit_Nm: Massacoe State Forest\nLoc_Nm: Massacoe State Forest\nState_Nm: CT\nAgg_Src: NE_Secured_Areas_2022_TNC_CRCStoPADUS.gdb\nGIS_Src: CT_Secured_Areas_2022\nSrc_Date: 2022/07/14\nGIS_Acres: 1\nSource_PAID:\nWDPA_Cd: 0\nPub_Access: UK\nAccess_Src: TNC\nAccess_Dt: 2023\nGAP_Sts: 2\nGAPCdSrc: TNC\nGAPCdDt: 2023\nIUCN_Cat: VI\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1941\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: UNK\nTranspPct: null\nShape_Length: 288.5363491227704\nShape_Area: 4620.071430216609",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/52998",
+     "text": "52998"
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://pota.app/#/park/US-6861",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-6861",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nGreat Pond / Massacoe State Forest\nReference:\nUS-6861\nEntity:\nUnited States of America\nLocation(s):\nConnecticut (US-CT)\nLatitude / Longitude:\n41.8941, -72.8375 (FN31nv)\nEarly Shift Achievement Times:\n7:00 UTC to 13:00 UTC\nLate Shift Achievement Times:\n23:00 UTC to 7:00 UTC\nWebsite:\nportal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nK1VWQ on 2020-03-06\nStats:\n103 activations / 107 attempts (2723 QSOs)\nForest open 8:00am to sunset. No fee. Pit toilet. Handicap accessible but dirt parking lot\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nKC1FNM 55\nKC1FNM 1129\nWV1W 26\n2.\nW1BDL 6\nW1BDL 409\nN2NWK 10\n3.\nW1ZFG 4\nWV1W 301\nAB1NH 10\n4.\nKD1JT 4\nKD1JT 128\nHI8D 9\n5.\nWV1W 4\nW1ZFG 94\nN4HID 9\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-10-27\nW1BDL 0 0 68 68\n2026-09-07\nW1BDL 0 0 109 109\n2026-07-20\nN1KV 0 14 0 14\n2026-07-17\nW1BDL 0 0 54 54\n2026-06-15\nW1ZFG 0 18 10 28\n2026-06-15\nKC1CWN 0 12 0 12\n2026-05-13\nW1BDL 0 0 53 53\n2026-05-11\nWV1W 0 0 121 121\n2026-05-11\nKC1FNM 0 0 121 121\n2026-05-04\nW1ZFG 0 20 2 22\nItems per page:\n10\n1-10 of 107\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-6861#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest",
+     "text": "portal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest"
+    },
+    {
+     "url": "https://pota.app/map?lat=41.8941&lng=-72.8375&zoom=9&name=Great+Pond+/+Massacoe&reference=US-6861&locationDesc=US-CT&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "browser_error": "Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n  - navigating to \"\", waiting until ",
+   "status": "rest",
+   "final_url": "",
+   "read_by": "plain read"
+  },
+  {
+   "url": "https://pota.app/#/park/US-6861",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-6861",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nGreat Pond / Massacoe State Forest\nReference:\nUS-6861\nEntity:\nUnited States of America\nLocation(s):\nConnecticut (US-CT)\nLatitude / Longitude:\n41.8941, -72.8375 (FN31nv)\nEarly Shift Achievement Times:\n7:00 UTC to 13:00 UTC\nLate Shift Achievement Times:\n23:00 UTC to 7:00 UTC\nWebsite:\nportal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nK1VWQ on 2020-03-06\nStats:\n103 activations / 107 attempts (2723 QSOs)\nForest open 8:00am to sunset. No fee. Pit toilet. Handicap accessible but dirt parking lot\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nKC1FNM 55\nKC1FNM 1129\nWV1W 26\n2.\nW1BDL 6\nW1BDL 409\nN2NWK 10\n3.\nW1ZFG 4\nWV1W 301\nAB1NH 10\n4.\nKD1JT 4\nKD1JT 128\nHI8D 9\n5.\nWV1W 4\nW1ZFG 94\nN4HID 9\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-10-27\nW1BDL 0 0 68 68\n2026-09-07\nW1BDL 0 0 109 109\n2026-07-20\nN1KV 0 14 0 14\n2026-07-17\nW1BDL 0 0 54 54\n2026-06-15\nW1ZFG 0 18 10 28\n2026-06-15\nKC1CWN 0 12 0 12\n2026-05-13\nW1BDL 0 0 53 53\n2026-05-11\nWV1W 0 0 121 121\n2026-05-11\nKC1FNM 0 0 121 121\n2026-05-04\nW1ZFG 0 20 2 22\nItems per page:\n10\n1-10 of 107\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-6861#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest",
+     "text": "portal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest"
+    },
+    {
+     "url": "https://pota.app/map?lat=41.8941&lng=-72.8375&zoom=9&name=Great+Pond+/+Massacoe&reference=US-6861&locationDesc=US-CT&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12298",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12298",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nGamlin Lake Recreation Site BLM Recreation Management Area\nReference:\nUS-12298\nEntity:\nUnited States of America\nLocation(s):\nIdaho (US-ID)\nLatitude / Longitude:\n48.2237, -116.386 (DN18tf)\nEarly Shift Achievement Times:\n10:00 UTC to 16:00 UTC\nLate Shift Achievement Times:\n2:00 UTC to 10:00 UTC\nWebsite:\nwww.blm.gov\nAccess Methods:\nAutomobile\nBoat\nFoot\nOther\nActivation Methods:\nAutomobile\nOther\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nN7XYZ on 2025-05-10\nStats:\n4 activations / 5 attempts (136 QSOs)\nElevation 2088. Snakes, ticks, and predators. Must activate within 100ft of high water mark. Day use only. No wires in trees\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nK7NEB 3\nK7NEB 125\nN9VFR 2\n2.\nN7XYZ 1\nN7XYZ 11\nW7VOZ 2\n3.\nN1CNV 2\n4.\nW9GM 2\n5.\nKK7RBM 2\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-03-25\nK7NEB 0 0 46 46\n2026-03-19\nK7NEB 0 0 40 40\n2026-02-12\nK7NEB 0 0 35 35\n2025-05-31\nK7NEB 0 0 4 4\n2025-05-10\nN7XYZ 0 0 11 11\nItems per page:\n10\n1-5 of 5\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12298#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://pota.app/park/www.blm.gov",
+     "text": "www.blm.gov"
+    },
+    {
+     "url": "https://pota.app/map?lat=48.2237&lng=-116.386&zoom=9&name=Gamlin+Lake+Recreation+Site&reference=US-12298&locationDesc=US-ID&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56688&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56688&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 56688\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SDNR\nLoc_Own: MD Department of Natural Resources\nMang_Type: UNK\nMang_Name: UNK\nLoc_Mang:\nDes_Tp: SP\nLoc_Ds: SP\nUnit_Nm: North Point Sp\nLoc_Nm: NORTH POINT SP\nState_Nm: MD\nAgg_Src: NE_Secured_Areas_2022_TNC_CRCStoPADUS.gdb\nGIS_Src: MD_Secured_Areas_2022\nSrc_Date: 2022/05/23\nGIS_Acres: 80\nSource_PAID:\nWDPA_Cd: 0\nPub_Access: UK\nAccess_Src: TNC\nAccess_Dt: 2023\nGAP_Sts: 3\nGAPCdSrc: TNC\nGAPCdDt: 2023\nIUCN_Cat: Other Conservation Area\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 2006\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: UNK\nTranspPct: null\nShape_Length: 8466.542709060966\nShape_Area: 539092.3262394101",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/56688",
+     "text": "56688"
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://pota.app/#/park/US-4365",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-4365",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nNorth Point Battlefield State Park\nReference:\nUS-4365\nEntity:\nUnited States of America\nLocation(s):\nMaryland (US-MD)\nLatitude / Longitude:\n39.2789, -76.4877 (FM19sg)\nEarly Shift Achievement Times:\n7:00 UTC to 13:00 UTC\nLate Shift Achievement Times:\n23:00 UTC to 7:00 UTC\nWebsite:\ndnr.maryland.gov/publiclands/pages/central/northpointbattlefield.aspx\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nW3AAX on 2017-08-04\nStats:\n367 activations / 372 attempts (13340 QSOs)\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nN2NWK 281\nN2NWK 10797\nK2CAF 168\n2.\nN3EMC 9\nN3EMC 600\nKD8IAK 76\n3.\nKB3WAV 9\nKB3WAV 359\nN4RDJ 75\n4.\nWU3S 7\nWU3S 234\nW0KEG 58\n5.\nKC3YVY 7\nKC3UQU 150\nAA5HH 49\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-10-28\nN2NWK 0 0 16 16\n2026-09-30\nN2NWK 0 0 86 86\n2026-09-23\nN2NWK 0 0 13 13\n2026-09-17\nN2NWK 0 0 29 29\n2026-09-09\nN2NWK 0 0 24 24\n2026-09-02\nN2NWK 0 0 50 50\n2026-08-26\nN2NWK 0 0 51 51\n2026-08-20\nN2NWK 0 0 38 38\n2026-05-31\nN4HCN 0 12 0 12\n2026-05-31\nN3HCN 0 12 0 12\nItems per page:\n10\n1-10 of 373\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-4365#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://dnr.maryland.gov/publiclands/pages/central/northpointbattlefield.aspx",
+     "text": "dnr.maryland.gov/publiclands/pages/central/northpointbattlefield.aspx"
+    },
+    {
+     "url": "https://pota.app/map?lat=39.2789&lng=-76.4877&zoom=9&name=North+Point+Battlefield&reference=US-4365&locationDesc=US-MD&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-13570",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-13570",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nGladwin Field Trial Wildlife Management Area\nReference:\nUS-13570\nEntity:\nUnited States of America\nLocation(s):\nMichigan (US-MI)\nLatitude / Longitude:\n44.1402, -84.5728 (EN74rd)\nEarly Shift Achievement Times:\n8:00 UTC to 14:00 UTC\nLate Shift Achievement Times:\n0:00 UTC to 8:00 UTC\nWebsite:\nwww2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/SWGAs/Gladwin_Wildlife_Unit_and_Gladwin_Field_Trial_Area_map.pdf\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nCampground\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nW8CPR on 2026-02-23\nStats:\n18 activations / 18 attempts (1241 QSOs)\nIn the Au Sable State Forest, the dot takes you to parking area 2 at the House Lake Campground as shown on map linked above.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nW8CPR 5\nW8CPR 397\nW8JDE 102\n2.\nW8JDE 5\nW8JDE 397\nW8CPR 102\n3.\nW8CFH 3\nW8CFH 297\nKN4AL 60\n4.\nAB8KP 1\nKN4AL 67\nK8EO 30\n5.\nKN4AL 1\nAB8KP 29\nAD2CD 9\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-10-24\nW8GM 13 0 0 13\n2026-10-23\nKU8T 17 0 0 17\n2026-10-11\nW8CFH 0 0 179 179\n2026-09-22\nW8RNB 0 0 24 24\n2026-09-07\nW8JDE 0 0 28 28\n2026-09-07\nW8CPR 0 0 28 28\n2026-09-06\nW8CFH 1 0 75 76\n2026-09-05\nW8CPR 0 0 79 79\n2026-09-05\nW8JDE 0 0 79 79\n2026-09-05\nKN4AL 0 0 67 67\nItems per page:\n10\n1-10 of 18\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-13570#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/SWGAs/Gladwin_Wildlife_Unit_and_Gladwin_Field_Trial_Area_map.pdf",
+     "text": "www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/SWGAs/Gladwin_Wildlife_Unit_and_Gladwi"
+    },
+    {
+     "url": "https://pota.app/map?lat=44.1402&lng=-84.5728&zoom=9&name=Gladwin+Field+Trial&reference=US-13570&locationDesc=US-MI&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-10.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-8319",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-8319",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nPalisades Interstate Park\nReference:\nUS-8319\nEntity:\nUnited States of America\nLocation(s):\nNew Jersey (US-NJ)\nNew York (US-NY)\nLatitude / Longitude:\n40.953, -73.9207 (FN30aw)\nEarly Shift Achievement Times:\nBased on location, specific times coming soon.\nLate Shift Achievement Times:\nBased on location, specific times coming soon.\nWebsite:\nwww.njpalisades.org\nAccess Methods:\nAutomobile\nActivation Methods:\nAutomobile\nOther\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nN4CD on 2008-05-23\nStats:\n810 activations / 850 attempts (30604 QSOs)\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nKM3STU 192\nKM3STU 5574\nN2YTF 336\n2.\nKE2NJ 151\nKE2NJ 4978\nN2BTD 174\n3.\nK2MFR 57\nK2MFR 3570\nK2DBK 168\n4.\nN2BTD 45\nN2BTD 2877\nWI2W 106\n5.\nW2SCT 33\nKB2SXT 1467\nKF4LMZ 77\nRecent Activations\nDate\nCallsign\nLocation\nCW\nData\nPhone\nTotal QSOs\n2026-10-28\nKM3STU New Jersey (US-NJ) 68 0 0 68\n2026-10-26\nKB2SXT New Jersey (US-NJ) 0 0 105 105\n2026-10-21\nKM3STU New Jersey (US-NJ) 89 0 0 89\n2026-10-21\nKD8EEJ New Jersey (US-NJ) 89 0 0 89\n2026-10-17\nWK2S New Jersey (US-NJ) 63 0 0 63\n2026-10-15\nW2SCT New Jersey (US-NJ) 12 0 4 16\n2026-10-12\nKM3STU New Jersey (US-NJ) 41 0 0 41\n2026-10-09\nKB2SXT New Jersey (US-NJ) 0 0 71 71\n2026-10-09\nW3DAX New Jersey (US-NJ) 0 0 10 10\n2026-10-08\nN2BTD New Jersey (US-NJ) 0 0 41 41\nItems per page:\n10\n1-10 of 851\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-8319#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://www.njpalisades.org/",
+     "text": "www.njpalisades.org"
+    },
+    {
+     "url": "https://pota.app/map?lat=40.953&lng=-73.9207&zoom=9&name=Palisades+Interstate&reference=US-8319&locationDesc=US-NJ,US-NY&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-12.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-7565",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-7565",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nAEDC and Woods Reservoir Wildlife Management Area\nReference:\nUS-7565\nEntity:\nUnited States of America\nLocation(s):\nTennessee (US-TN)\nLatitude / Longitude:\n35.3587, -86.1837 (EM65vi)\nEarly Shift Achievement Times:\n8:00 UTC to 14:00 UTC\nLate Shift Achievement Times:\n0:00 UTC to 8:00 UTC\nWebsite:\nwww.tn.gov/twra/wildlife-management-areas/middle-tennessee-r2/aedc-wma-and-woods-reservoir-refuge.html\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nN4MTE on 2020-12-05\nStats:\n90 activations / 95 attempts (5180 QSOs)\nthis is part of an active Air Force Base. There are specific requirements listed which are pretty easy to follow. I had no problem activating from a boat ramp recommended by the guard at the entrance gate\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nN4JKD 42\nN4JKD 3239\nAA5HH 20\n2.\nKD4EYF 12\nKD4EYF 1010\nAG7KU 15\n3.\nKB4JHU 5\nKB4JHU 263\nK0OTC 14\n4.\nN0DBH 3\nN0DBH 89\nN8OFP 13\n5.\nKO4BGJ 2\nAA4GE 65\nW9AV 13\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-06-27\nKB4JHU 0 96 0 96\n2026-06-19\nKB4SYV 0 0 33 33\n2026-05-29\nKQ4IOT 0 0 6 6\n2026-05-29\nW8GLL 0 0 6 6\n2026-04-03\nN4JKD 0 0 11 11\n2026-03-12\nN4SBW 0 0 27 27\n2026-03-06\nN4JKD 0 0 4 4\n2026-02-28\nN4JKD 0 0 44 44\n2026-01-30\nN4JKD 0 0 1 1\n2026-01-24\nN4JKD 0 95 0 95\nItems per page:\n10\n1-10 of 95\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-7565#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://www.tn.gov/twra/wildlife-management-areas/middle-tennessee-r2/aedc-wma-and-woods-reservoir-refuge.html",
+     "text": "www.tn.gov/twra/wildlife-management-areas/middle-tennessee-r2/aedc-wma-and-woods-reservoir-refuge.ht"
+    },
+    {
+     "url": "https://pota.app/map?lat=35.3587&lng=-86.1837&zoom=9&name=AEDC+and+Woods+Reservoir&reference=US-7565&locationDesc=US-TN&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-14.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-6027",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-6027",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nTopaz Mountain Rockhound Area BLM Recreation Management Area\nReference:\nUS-6027\nEntity:\nUnited States of America\nLocation(s):\nUtah (US-UT)\nLatitude / Longitude:\n39.6665, -113.115 (DM39kp)\nEarly Shift Achievement Times:\n10:00 UTC to 16:00 UTC\nLate Shift Achievement Times:\n2:00 UTC to 10:00 UTC\nWebsite:\nwww.blm.gov/visit/topaz-mountain-rockhound-recreation-area\nAccess Methods:\nAutomobile\nOther\nActivation Methods:\nAutomobile\nCampground\nOther\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nAD7VO on 2023-05-26\nStats:\n4 activations / 5 attempts (134 QSOs)\nALSO: https://www.blm.gov/visit/topaz-mountain\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nAD7VO 2\nAD7VO 80\nKJ7ORK 3\n2.\nKG7PRD 1\nKJ7BES 30\nK9ICP 3\n3.\nKJ7BES 1\nKG7PRD 24\nN0LD 2\n4.\nN5HA 2\n5.\nN9DRB 2\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-06-20\nKG7PRD 0 0 24 24\n2023-10-19\nKJ7BES 0 0 30 30\n2023-05-29\nAD7VO 0 0 2 2\n2023-05-27\nAD7VO 0 0 52 52\n2023-05-26\nAD7VO 0 0 26 26\nItems per page:\n10\n1-5 of 5\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-6027#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://www.blm.gov/visit/topaz-mountain-rockhound-recreation-area",
+     "text": "www.blm.gov/visit/topaz-mountain-rockhound-recreation-area"
+    },
+    {
+     "url": "https://pota.app/map?lat=39.6665&lng=-113.115&zoom=9&name=Topaz+Mountain+Rockhound+Area&reference=US-6027&locationDesc=US-UT&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-1-16.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 49,
+ "manners": {
+  "requests": 3,
+  "robots": 0,
+  "strikes": 3,
+  "errors": 3,
+  "rested": 0,
+  "arcgis_exempt": 2
+ },
+ "short": "16 result(s), 10 read OK, 10 screenshot(s)"
+}

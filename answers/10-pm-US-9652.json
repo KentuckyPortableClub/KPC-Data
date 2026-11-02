@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-pm-US-9652.json",
+ "id": "10-pm-US-9652",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9652",
+  "name": "Grenada State Wildlife Area",
+  "agency": "Colorado Parks and Wildlife",
+  "url": "https://cpw.state.co.us/learn/Maps/GranadaDeadmanSWA_geo.pdf",
+  "pages": 1,
+  "hint": "granada",
+  "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)"
+ },
+ "answered": "2026-10-30 06:33Z",
+ "results": [
+  {
+   "url": "https://cpw.state.co.us/learn/Maps/GranadaDeadmanSWA_geo.pdf",
+   "error": "answer 404",
+   "looked": []
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

@@ -1,0 +1,674 @@
+{
+ "request": "requests/11-ns2-us-07.json",
+ "id": "11-ns2-us-07",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-IA, US-ID): screenshots in order: 1=US-2313 (map); 2=US-9331 (map); 3=US-12210 (record); 4=US-12210 (map); 5=US-5592 (record); 6=US-5592 (map); 7=US-5615 (record); 8=US-5615 (map); 9=US-5615 (record); 10=US-5615 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-IA, US-ID): screenshots in order: 1=US-2313 (map); 2=US-9331 (map); 3=US-12210 (record); 4=US-12210 (map); 5=US-5592 (record); 6=US-5592 (map); 7=US-5615 (record); 8=US-5615 (map); 9=US-5615 (record); 10=US-5615 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+  "items": [
+   {
+    "ref": "US-2313",
+    "park": "Pilot Knob State Park",
+    "record": "Pilot Knob State Preserve",
+    "area": "US-IA"
+   },
+   {
+    "ref": "US-9331",
+    "park": "Eagle Lake Wildlife Management Area",
+    "record": "EAGLE LAKE WETLAND COMPLEX",
+    "area": "US-IA"
+   },
+   {
+    "ref": "US-12210",
+    "park": "Jump Creek Falls BLM Scenic Site",
+    "record": "Jump Creek Canyon ",
+    "area": "US-ID"
+   },
+   {
+    "ref": "US-5592",
+    "park": "Blackfoot River Wildlife Management Area",
+    "record": "Blackfoot River Park Access Site",
+    "area": "US-ID"
+   },
+   {
+    "ref": "US-5615",
+    "park": "Portneuf Wildlife Management Area",
+    "record": "Portneuf (Upper) Access Site",
+    "area": "US-ID"
+   },
+   {
+    "ref": "US-5615",
+    "park": "Portneuf Wildlife Management Area",
+    "record": "Portneuf (Lower) Access Site",
+    "area": "US-ID"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5549%2C43.2517&level=14&marker=-93.5549%2C43.2517%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.732%2C43.1124&level=14&marker=-93.732%2C43.1124%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1105&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-116.924%2C43.4799&level=14&marker=-116.924%2C43.4799%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199587&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-111.355%2C42.8199&level=14&marker=-111.355%2C42.8199%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199664&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14&marker=-112.201%2C42.7033%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199663&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14&marker=-112.201%2C42.7033%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 20:29Z",
+ "results": [
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5549%2C43.2517&level=14&marker=-93.5549%2C43.2517%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5549%2C43.2517&level=14&marker=-93.5549%2C43.2517%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nIowa DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.732%2C43.1124&level=14&marker=-93.732%2C43.1124%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.732%2C43.1124&level=14&marker=-93.732%2C43.1124%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nIowa DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1105&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1105&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ACEC Designated Polygons (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > lands > BLM_Natl_ACEC (MapServer) > ACEC Designated Polygons > query API Reference\nQuery: ACEC Designated Polygons (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 1105\nACEC_NAME: Jump Creek Canyon\nLUP_NAME: Owyhee RMP 1999\nROD_DATE: 946512000000\nGIS_ACRES: 613.37749777\nADMIN_ST: ID\nGlobalID: {DBC24F20-4D2B-4B0B-AF86-60618BDC517A}\nOriginal_GlobalID: {3A281F8F-9B22-49E9-B313-1CFCAB063F48}\nShape.STArea(): 2.7592514755148855E-4\nShape.STLength(): 0.1339585422232769\nNEPA_NUM:\nACEC_RLVNCE_CUL: NO\nACEC_RLVNCE_FRSC: NO\nACEC_RLVNCE_HIS: NO\nACEC_RLVNCE_NHAZ: NO\nACEC_RLVNCE_NPRO: NO\nACEC_RLVNCE_NSYS: YES\nACEC_RLVNCE_SCE: YES\nACEC_RLVNCE_WRSC: YES\nACEC_IMPRTNCE_QLTS: NO\nACEC_IMPRTNCE_IMPRTNCE: NO\nACEC_IMPRTNCE_CNTRBTN: NO\nACEC_IMPRTNCE_THRT: NO\nSPCL_MGMT_ATTN_RX_PRTCT: NO\nSPCL_MGMT_ATTN_RX_PRVNT: NO",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands",
+     "text": "lands"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer",
+     "text": "BLM_Natl_ACEC (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "text": "ACEC Designated Polygons"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/help/en/rest/router.html?f=rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/1105",
+     "text": "1105"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-116.924%2C43.4799&level=14&marker=-116.924%2C43.4799%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-116.924%2C43.4799&level=14&marker=-116.924%2C43.4799%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nNampa GIS | Oregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management, Headquarters (HQ)\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199587&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199587&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 199587\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SFW\nLoc_Own: Idaho Department of Fish and Game\nMang_Type: STAT\nMang_Name: SFW\nLoc_Mang: Idaho Department of Fish and Game\nDes_Tp: SREC\nLoc_Ds: Access Site\nUnit_Nm: Blackfoot River Park Access Site\nLoc_Nm: Blackfoot River Park Access Site\nState_Nm: ID\nAgg_Src: USGS_PADUS2_0_GAP_2017_ID\nGIS_Src: IDFG_LandstoPADUS_07272017.shp\nSrc_Date: 2017/07/27\nGIS_Acres: 5\nSource_PAID:\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 3\nGAPCdSrc: GAP\nGAPCdDt: 2017\nIUCN_Cat: Other Conservation Area\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1946\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SFW\nTranspPct: null\nShape_Length: 823.4077490769243\nShape_Area: 37603.403538696766",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/199587",
+     "text": "199587"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-111.355%2C42.8199&level=14&marker=-111.355%2C42.8199%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-111.355%2C42.8199&level=14&marker=-111.355%2C42.8199%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199664&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199664&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 199664\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SFW\nLoc_Own: Idaho Department of Fish and Game\nMang_Type: STAT\nMang_Name: SFW\nLoc_Mang: Idaho Department of Fish and Game\nDes_Tp: SREC\nLoc_Ds: Access Site\nUnit_Nm: Portneuf (Upper) Access Site\nLoc_Nm: Portneuf (Upper) Access Site\nState_Nm: ID\nAgg_Src: USGS_PADUS2_0_GAP_2017_ID\nGIS_Src: IDFG_LandstoPADUS_07272017.shp\nSrc_Date: 2017/07/27\nGIS_Acres: 69\nSource_PAID:\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 3\nGAPCdSrc: GAP\nGAPCdDt: 2017\nIUCN_Cat: Other Conservation Area\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1970\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SFW\nTranspPct: null\nShape_Length: 4644.702899916388\nShape_Area: 521064.6696016158",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/199664",
+     "text": "199664"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14&marker=-112.201%2C42.7033%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14&marker=-112.201%2C42.7033%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199663&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199663&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 199663\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SFW\nLoc_Own: Idaho Department of Fish and Game\nMang_Type: STAT\nMang_Name: SFW\nLoc_Mang: Idaho Department of Fish and Game\nDes_Tp: SREC\nLoc_Ds: Access Site\nUnit_Nm: Portneuf (Lower) Access Site\nLoc_Nm: Portneuf (Lower) Access Site\nState_Nm: ID\nAgg_Src: USGS_PADUS2_0_GAP_2017_ID\nGIS_Src: IDFG_LandstoPADUS_07272017.shp\nSrc_Date: 2017/07/27\nGIS_Acres: 53\nSource_PAID:\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 3\nGAPCdSrc: GAP\nGAPCdDt: 2017\nIUCN_Cat: Other Conservation Area\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1970\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SFW\nTranspPct: null\nShape_Length: 5813.332192123158\nShape_Area: 396738.3588288439",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/199663",
+     "text": "199663"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14&marker=-112.201%2C42.7033%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14&marker=-112.201%2C42.7033%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-07-10.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 189,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 4
+ },
+ "short": "10 result(s), 10 read OK, 10 screenshot(s)"
+}

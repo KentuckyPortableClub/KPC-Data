@@ -1,0 +1,52 @@
+{
+ "request": "requests/8-reimer-find.json",
+ "id": "8-reimer-find",
+ "chat": 8,
+ "kind": "page",
+ "report": "Looking for Mary Reimer Park (Hinton, AB)'s official master-plan PDF (a picture map, no coordinates) per chat 11/chat 2's note. Please find the direct PDF URL on hinton.ca (likely DocumentCenter or ImageRepository) and confirm it shows a site/boundary plan, not just a photo. Once confirmed I'll file the save-map request with that exact URL.",
+ "asked": {
+  "chat": 8,
+  "kind": "page",
+  "urls": [
+   "https://www.hinton.ca/Facilities/Facility/Details/Mary-Reimer-Park-9",
+   "https://www.hinton.ca/DocumentCenter/Index/Parks",
+   "https://www.google.com/search?q=%22Mary+Reimer+Park%22+Hinton+master+plan+filetype:pdf"
+  ],
+  "report": "Looking for Mary Reimer Park (Hinton, AB)'s official master-plan PDF (a picture map, no coordinates) per chat 11/chat 2's note. Please find the direct PDF URL on hinton.ca (likely DocumentCenter or ImageRepository) and confirm it shows a site/boundary plan, not just a photo. Once confirmed I'll file the save-map request with that exact URL."
+ },
+ "answered": "2026-11-01 17:53Z",
+ "results": [
+  {
+   "url": "https://www.hinton.ca/Facilities/Facility/Details/Mary-Reimer-Park-9",
+   "status": 404,
+   "final_url": "https://www.hinton.ca/Facilities/Facility/Details/Mary-Reimer-Park-9",
+   "title": "",
+   "text": "",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.hinton.ca/DocumentCenter/Index/Parks",
+   "status": 404,
+   "final_url": "https://www.hinton.ca/DocumentCenter/Index/Parks",
+   "title": "",
+   "text": "",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.google.com/search?q=%22Mary+Reimer+Park%22+Hinton+master+plan+filetype:pdf",
+   "status": "robots.txt says no"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 0,
+  "robots": 1,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "3 result(s), 0 read OK, 0 screenshot(s)"
+}

@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-AU-0470.json",
+ "id": "10-auto-AU-0470",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "AU-0470",
+  "name": "Cape Conran Coastal Park",
+  "agency": "government agency (parks.vic.gov.au)",
+  "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/cape-conran-coastal-park/cape-conran-coastal-park-pearl-point-campground-map.pdf?rev=8cf1a1aef4ba4f23b18ecc79458e5994",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 20:52Z",
+ "results": [
+  {
+   "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/cape-conran-coastal-park/cape-conran-coastal-park-pearl-point-campground-map.pdf?rev=8cf1a1aef4ba4f23b18ecc79458e5994",
+   "map_url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/cape-conran-coastal-park/cape-conran-coastal-park-pearl-point-campground-map.pdf?rev=8cf1a1aef4ba4f23b18ecc79458e5994",
+   "saved": [
+    "maps/AU-0470_cape-conran-coastal-park.jpg"
+   ],
+   "bytes": 247717,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

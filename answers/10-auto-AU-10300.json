@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-AU-10300.json",
+ "id": "10-auto-AU-10300",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "AU-10300",
+  "name": "Paradise Beach State Beach",
+  "agency": "government agency (parks.vic.gov.au)",
+  "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/gippsland-lakes-coastal-park/gippsland-lakes-coastal-park-paradise-campground-map.pdf?rev=44886c7064e8469f94cbdb6b3944ba1d",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 20:53Z",
+ "results": [
+  {
+   "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/gippsland-lakes-coastal-park/gippsland-lakes-coastal-park-paradise-campground-map.pdf?rev=44886c7064e8469f94cbdb6b3944ba1d",
+   "map_url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/gippsland-lakes-coastal-park/gippsland-lakes-coastal-park-paradise-campground-map.pdf?rev=44886c7064e8469f94cbdb6b3944ba1d",
+   "saved": [
+    "maps/AU-10300_paradise-beach-state-beach.jpg"
+   ],
+   "bytes": 135078,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13625.json",
+ "id": "10-new-US-13625",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13625 Ammonoosuc State Trail: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13625"
+  ],
+  "report": "new park US-13625 Ammonoosuc State Trail: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-30 16:58Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13625",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13625",
+   "title": "",
+   "text": "{\"parkId\": 145640, \"reference\": \"US-13625\", \"name\": \"Ammonoosuc\", \"latitude\": 44.2128, \"longitude\": -71.9098, \"grid4\": \"FN44\", \"grid6\": \"FN44bf\", \"parktypeId\": 109, \"active\": 1, \"parkComments\": \"New rail trail park \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot,Other\", \"activationMethods\": \"Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nhstateparks.org/find-parks-trails/recreational-rail-trails/ammonoosuc-recreational-rail-trail\", \"createdByAdmin\": \"Glen Sansoucie\", \"parktypeDesc\": \"State Trail\", \"locationDesc\": \"US-NH\", \"locationName\": \"New Hampshire\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"AC1RH\", \"firstActivationDate\": \"2026-10-29\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

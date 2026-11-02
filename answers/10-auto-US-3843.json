@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-3843.json",
+ "id": "10-auto-US-3843",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-3843",
+  "name": "Haw River at Iron Ore Access Belt State Park",
+  "agency": "North Carolina State Parks",
+  "url": "https://www.ncparks.gov/maps/haw-river-state-park-iron-ore-belt-access-map/open",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:48Z",
+ "results": [
+  {
+   "url": "https://www.ncparks.gov/maps/haw-river-state-park-iron-ore-belt-access-map/open",
+   "map_url": "https://www.ncparks.gov/maps/haw-river-state-park-iron-ore-belt-access-map/open",
+   "saved": [
+    "maps/US-3843_haw-river-at-iron-ore-access-bel.jpg"
+   ],
+   "bytes": 257839,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

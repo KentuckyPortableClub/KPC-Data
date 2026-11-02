@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-CA-4960.json",
+ "id": "10-auto-CA-4960",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-4960",
+  "name": "Parc Michel-Chartrand Regional Park",
+  "agency": "Ville de Longueuil / Parcs-nature Longueuil",
+  "url": "https://cms.longueuil.quebec/sites/default/files/medias/documents/2021-11/Rapport%20Table%20de%20concertation%20du%20parc%20Michel-Chartrand%20-%2022%20novembre%202021.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 17:15Z",
+ "results": [
+  {
+   "url": "https://cms.longueuil.quebec/sites/default/files/medias/documents/2021-11/Rapport%20Table%20de%20concertation%20du%20parc%20Michel-Chartrand%20-%2022%20novembre%202021.pdf",
+   "map_url": "https://cms.longueuil.quebec/sites/default/files/medias/documents/2021-11/Rapport%20Table%20de%20concertation%20du%20parc%20Michel-Chartrand%20-%2022%20novembre%202021.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}

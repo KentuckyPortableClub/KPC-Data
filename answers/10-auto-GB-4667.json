@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4667.json",
+ "id": "10-auto-GB-4667",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4667",
+  "name": "Knighton Park",
+  "agency": "government agency (leicester.gov.uk)",
+  "url": "https://www.leicester.gov.uk/sites/default/files/2026-05/Knighton%20Park%20run%20jog%20and%20walk%20trail%20maps.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:07Z",
+ "results": [
+  {
+   "url": "https://www.leicester.gov.uk/sites/default/files/2026-05/Knighton%20Park%20run%20jog%20and%20walk%20trail%20maps.pdf",
+   "map_url": "https://www.leicester.gov.uk/sites/default/files/2026-05/Knighton%20Park%20run%20jog%20and%20walk%20trail%20maps.pdf",
+   "saved": [
+    "maps/GB-4667_knighton-park.jpg"
+   ],
+   "bytes": 262787,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

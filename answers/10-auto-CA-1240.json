@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-1240.json",
+ "id": "10-auto-CA-1240",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-1240",
+  "name": "Hyla Park Nature Reserve",
+  "agency": "government agency (naturetrust.nb.ca)",
+  "url": "https://www.naturetrust.nb.ca/s/2017_Hyla-Park_Map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:54Z",
+ "results": [
+  {
+   "url": "https://www.naturetrust.nb.ca/s/2017_Hyla-Park_Map.pdf",
+   "map_url": "https://static1.squarespace.com/static/5e848a775a3fc437adc257db/t/60c798f047cc43777d45aef1/1623693553196/2017_Hyla+Park_Map.pdf",
+   "saved": [
+    "maps/CA-1240_hyla-park-nature-reserve.jpg"
+   ],
+   "bytes": 353889,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

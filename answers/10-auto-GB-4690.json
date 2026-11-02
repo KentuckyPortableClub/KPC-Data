@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-4690.json",
+ "id": "10-auto-GB-4690",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4690",
+  "name": "Castle Hill Country Park",
+  "agency": "government agency (leicester.gov.uk)",
+  "url": "https://www.leicester.gov.uk/sites/default/files/2026-01/castle-hill-june-2015.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 07:07Z",
+ "results": [
+  {
+   "url": "https://www.leicester.gov.uk/sites/default/files/2026-01/castle-hill-june-2015.pdf",
+   "map_url": "https://www.leicester.gov.uk/sites/default/files/2026-01/castle-hill-june-2015.pdf",
+   "saved": [
+    "maps/GB-4690_castle-hill-country-park.jpg"
+   ],
+   "bytes": 310384,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

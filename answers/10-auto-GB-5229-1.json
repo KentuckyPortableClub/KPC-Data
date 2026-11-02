@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-5229-1.json",
+ "id": "10-auto-GB-5229-1",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5229",
+  "name": "Bournemouth Upper Gardens Park",
+  "agency": "",
+  "url": "https://cdn.prod.website-files.com/67a5d0df94c098a43fdc7198/685ae027f97ad4a8267bf52f_Dogs-on-the-beach-map-for-Bournemouth-and-Poole.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 11:51Z",
+ "results": [
+  {
+   "url": "https://cdn.prod.website-files.com/67a5d0df94c098a43fdc7198/685ae027f97ad4a8267bf52f_Dogs-on-the-beach-map-for-Bournemouth-and-Poole.pdf",
+   "map_url": "https://cdn.prod.website-files.com/67a5d0df94c098a43fdc7198/685ae027f97ad4a8267bf52f_Dogs-on-the-beach-map-for-Bournemouth-and-Poole.pdf",
+   "saved": [
+    "maps/GB-5229_bournemouth-upper-gardens-park.jpg"
+   ],
+   "bytes": 192260,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-GB-0670.json",
+ "id": "10-auto-GB-0670",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-0670",
+  "name": "RSPB Ouse Fen Nature Reserve",
+  "agency": "",
+  "url": "https://base-prod.rspb-prod.magnolia-platform.com/author/dam/jcr:c5b3cbcf-11e3-412b-a68b-3d971f1b9e05/Current%20RSPB%20Ouse%20Fen%20trail%20map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 00:19Z",
+ "results": [
+  {
+   "url": "https://base-prod.rspb-prod.magnolia-platform.com/author/dam/jcr:c5b3cbcf-11e3-412b-a68b-3d971f1b9e05/Current%20RSPB%20Ouse%20Fen%20trail%20map.pdf",
+   "map_url": "https://base-prod.rspb-prod.magnolia-platform.com/author/dam/jcr:c5b3cbcf-11e3-412b-a68b-3d971f1b9e05/Current%20RSPB%20Ouse%20Fen%20trail%20map.pdf",
+   "saved": [
+    "maps/GB-0670_rspb-ouse-fen-nature-reserve.jpg"
+   ],
+   "bytes": 301409,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 8,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

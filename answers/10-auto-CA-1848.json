@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-1848.json",
+ "id": "10-auto-CA-1848",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-1848",
+  "name": "Shubie Park Recreation Park",
+  "agency": "government agency (shubenacadiecanal.ca)",
+  "url": "https://www.shubenacadiecanal.ca/s/Shubie-Brochure_2025.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-01 06:54Z",
+ "results": [
+  {
+   "url": "https://www.shubenacadiecanal.ca/s/Shubie-Brochure_2025.pdf",
+   "map_url": "https://static1.squarespace.com/static/57d6e71d8419c24ffcec7d6d/t/68518904b28c647c479baa38/1750173986783/Shubie+Brochure_2025.pdf",
+   "saved": [
+    "maps/CA-1848_shubie-park-recreation-park.jpg"
+   ],
+   "bytes": 340776,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
