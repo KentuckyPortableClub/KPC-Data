@@ -18,9 +18,9 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 - **gis-hunter** (534 rows): - NO 339, - NOT SURE 16, - YES 84, LIKELY NO 22, LIKELY NOT SURE 8, LIKELY YES 12, SURE NO 2, SURE NOT SURE 1, SURE YES 8, SURE bot YES 42
 - **hardlook** (0 rows): 
 - **key-pieces** (307 rows): - NO 81, - NOT SURE 33, - YES 193
-- **layers** (25852 rows): LIKELY NO 213, LIKELY NOT SURE 6711, LIKELY YES 2131, LIKELY bot YES 12, LIKELY open 125, SURE NO 8, SURE NOT SURE 526, SURE YES 15607, SURE bot YES 486, SURE open 33
+- **layers** (25863 rows): LIKELY NO 213, LIKELY NOT SURE 6711, LIKELY YES 2131, LIKELY bot YES 12, LIKELY open 135, SURE NO 8, SURE NOT SURE 526, SURE YES 15607, SURE bot YES 476, SURE open 44
 - **lost-finds-nov1** (0 rows): 
-- **map-audit** (2097 rows): audit open 2097
+- **map-audit** (87 rows): audit open 87
 - **nearmiss-nov2** (45 rows): LIKELY open 17, SURE open 28
 - **no-recheck** (13 rows): - NOT SURE 1, - YES 2, LIKELY NO 1, LIKELY NOT SURE 6, LIKELY YES 1, SURE YES 2
 - **not-sure-for-chat9** (146 rows): - open 146
@@ -30,7 +30,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 ## Layers
 
-- intake: ASK-THE-PUBLISHER 416, LIVE-ONLY 5, READY 2, REJECT 1652, RETRY 364, WATER-ONLY 41, approved 2; queue 2112
+- intake: ASK-THE-PUBLISHER 416, LIVE-ONLY 5, READY 2, REJECT 1652, RETRY 364, WATER-ONLY 41, approved 2; queue 2115
 - layer collector: asked 113, failed 196, evidence 9, no match 417, no hit 222291, UNLIKELY 21619, LIKELY 6404, SURE 1092; GIS finders found 150 layers
 
 ## Coverage

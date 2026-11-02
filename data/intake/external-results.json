@@ -297564,6 +297564,184 @@
    "kind": "Parks",
    "result": "failed",
    "why": "RuntimeError: no name field ()"
+  },
+  "US-5805|https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1": {
+   "ref": "US-5805",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared jaa, shash; extra: park special / record bear, ear",
+   "record_name": "Bears Ears National Monument - Shash Jáa Unit",
+   "acres": 141793
+  },
+  "US-7443|https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0": {
+   "ref": "US-7443",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared lake, lower; extra: park degray / record -",
+   "record_name": "LOWER LAKE",
+   "acres": 41
+  },
+  "US-7444|https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0": {
+   "ref": "US-7444",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared river, road; extra: park lake, nimrood / record -; R-G12: pin 19 m outside the record (road / entrance)",
+   "record_name": "RIVER ROAD",
+   "acres": 53
+  },
+  "US-7524|https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0": {
+   "ref": "US-7524",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "US-9168|https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11": {
+   "ref": "US-9168",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name; R-G12: pin 52 m outside the record (road / entrance)",
+   "record_name": "Lake Jack Nolen",
+   "acres": 192
+  },
+  "US-0961|https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2": {
+   "ref": "US-0961",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared mission, pueblo, salina; extra: park gran, quivira / record -",
+   "record_name": "Salinas Pueblo Missions National Monument",
+   "acres": 1061
+  },
+  "US-0329|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
+   "ref": "US-0329",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "US-0334|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
+   "ref": "US-0334",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no proper name to compare",
+   "record_name": "",
+   "acres": 10494
+  },
+  "US-0374|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
+   "ref": "US-0374",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no proper name to compare",
+   "record_name": "N/A",
+   "acres": 5280
+  },
+  "US-0474|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
+   "ref": "US-0474",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no shared proper word",
+   "record_name": "LONG ISLAND NATIONAL WILDLIFE REFUGE COMPLEX",
+   "acres": 185
+  },
+  "US-0500|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
+   "ref": "US-0500",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "part of the name shared, record 276,755 ac far bigger than this kind of place",
+   "record_name": "SHELDON-HART MOUNTAIN NATIONAL WILDLIFE REFUGE COMPLEX",
+   "acres": 276755
+  },
+  "US-0512|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
+   "ref": "US-0512",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no proper name to compare",
+   "record_name": "",
+   "acres": 992
+  },
+  "US-10473|https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0": {
+   "ref": "US-10473",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared ridge, sandy; extra: park - / record trailhead",
+   "record_name": "Sandy Ridge Trailhead",
+   "acres": 50
+  },
+  "US-11955|https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0": {
+   "ref": "US-11955",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "CA-6398|https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82": {
+   "ref": "CA-6398",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared craigflower, manor; extra: park house / record -; R-G12: pin 18 m outside the record (road / entrance)",
+   "record_name": "Craigflower Manor",
+   "acres": 1
+  },
+  "CA-5326|https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82": {
+   "ref": "CA-5326",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no shared proper word",
+   "record_name": "Royal Roads University",
+   "acres": 558
+  },
+  "CA-5967|https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2": {
+   "ref": "CA-5967",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "part of the name shared, record 2,060,751 ac far bigger than this kind of place",
+   "record_name": "Churchill Wildlife Management Area",
+   "acres": 2060751
+  },
+  "CA-6115|https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0": {
+   "ref": "CA-6115",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "a line park (trail / scenic river) on a polygon record",
+   "record_name": "Bay du Nord Wilderness Reserve",
+   "acres": 712393
+  },
+  "CA-4842|https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29": {
+   "ref": "CA-4842",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared marconi; extra: park - / record station, wireless; R-G12: pin 8 m outside the record (road / entrance)",
+   "record_name": "Marconi Wireless Station",
+   "acres": 4
+  },
+  "CA-6178|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0": {
+   "ref": "CA-6178",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared cape, george; extra: park lighthouse / record -",
+   "record_name": "Cape George Provincial Park",
+   "acres": 142
+  },
+  "CA-5809|https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0": {
+   "ref": "CA-5809",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name; R-G12: pin 93 m outside the record (road / entrance)",
+   "record_name": "Fernwood",
+   "acres": 1
+  },
+  "CA-5626|https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11": {
+   "ref": "CA-5626",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared creek, kettle; extra: park - / record authority",
+   "record_name": "Kettle Creek Conservation Authority",
+   "acres": 125813
+  },
+  "CA-1708|https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2": {
+   "ref": "CA-1708",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared river, whitefish; extra: park sandy, till / record -",
+   "record_name": "WHITEFISH RIVER CONSERVATION RESERVE",
+   "acres": 9404
   }
  },
  "layers": {
@@ -301608,7 +301786,7 @@
    "host": "services.arcgis.com",
    "geometry": "esriGeometryPolygon",
    "title": "FWSInterest_Simplified",
-   "name_field": "UNITNAME"
+   "name_field": "CMPXNAME"
   },
   "https://maps.nj.gov/arcgis/rest/services/Framework/Cadastral/MapServer/0": {
    "new_to_us": true,
@@ -304395,12 +304573,46 @@
    "title": "sites_declares_pg",
    "error": "RuntimeError: no name field ()",
    "tries": 1
+  },
+  "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0": {
+   "new_to_us": true,
+   "host": "services.arcgis.com",
+   "geometry": "esriGeometryPolygon",
+   "title": "FWS_NWRS_HQ_PubHuntUnits",
+   "name_field": "Hunt_Unit_Name"
+  },
+  "https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "new_to_us": true,
+   "host": "openmaps.gov.bc.ca",
+   "error": "RuntimeError: answer 400",
+   "tries": 1
+  },
+  "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29": {
+   "new_to_us": false,
+   "host": "novarocmaps.novascotia.ca",
+   "geometry": "esriGeometryPolygon",
+   "title": "National Historic Sites and Parks",
+   "name_field": "NAME1"
+  },
+  "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11": {
+   "new_to_us": true,
+   "host": "ws.lioservices.lrc.gov.on.ca",
+   "geometry": "esriGeometryPolygon",
+   "title": "Conservation Authority Admin Area",
+   "name_field": "LEGAL_NAME"
+  },
+  "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2": {
+   "new_to_us": true,
+   "host": "ws.lioservices.lrc.gov.on.ca",
+   "geometry": "esriGeometryPolygon",
+   "title": "Conservation Reserve Regulated",
+   "name_field": "PROTECTED_AREA_NAME_ENG"
   }
  },
  "summary": {
-  "Canada Parks LIKELY": 137,
-  "Canada Parks SURE": 722,
-  "Canada Parks UNLIKELY": 195,
+  "Canada Parks LIKELY": 142,
+  "Canada Parks SURE": 723,
+  "Canada Parks UNLIKELY": 198,
   "Canada Parks failed": 838,
   "Canada Parks no hit": 787,
   "Canada Parks split": 21,
@@ -304408,11 +304620,11 @@
   "Canada Trail SURE": 16,
   "Canada Trail UNLIKELY": 12,
   "Canada Trail no hit": 2,
-  "US Parks LIKELY": 279,
-  "US Parks SURE": 3735,
-  "US Parks UNLIKELY": 686,
+  "US Parks LIKELY": 284,
+  "US Parks SURE": 3736,
+  "US Parks UNLIKELY": 691,
   "US Parks failed": 585,
-  "US Parks no hit": 1264,
+  "US Parks no hit": 1267,
   "US Parks split": 109,
   "US Trail LIKELY": 116,
   "US Trail SURE": 238,
@@ -304428,8 +304640,8 @@
   "World Parks split": 822,
   "World Trail UNLIKELY": 1,
   "World Trail no hit": 1,
-  "pairs left": 0,
-  "new layers": 813
+  "pairs left": 1,
+  "new layers": 817
  },
  "built": "2026-11-02",
  "roots": {
