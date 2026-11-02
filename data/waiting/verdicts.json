@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T16:55Z",
+ "checked": "2026-11-02T17:35Z",
  "switched_on": false,
  "results": [
   {
@@ -688,6 +688,18 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/US-CO.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 40 -> 64 (over 30% change)",
+    "F-2 25 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g. US-0033+US-4575, US-0059+US-4558, US-0652+US-4575"
+   ],
+   "notes": [
+    "replaces live data/fers/US-CO.json (same file, other format): promotion removes the old name"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/fers/US-CT.json.gz",
    "kind": "fers",
    "why": [
@@ -717,13 +729,6 @@
    ],
    "notes": [],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-IA.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-ID.json.gz",

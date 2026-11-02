@@ -4,35 +4,35 @@
  "states": [
   "US-CO"
  ],
- "since": "2026-10-31",
- "date": "2026-10-31 11:37 UTC",
+ "since": "2026-11-02",
+ "date": "2026-11-02 17:34 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "19/19 on 2026-10-30",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 49,
-  "DROPPED": 132,
-  "NEVER LOOKED AT": 1622
+  "FOUND": 72,
+  "DROPPED": 136,
+  "NEVER LOOKED AT": 1595
  },
  "report": {
   "pass1": {
-   "date": "2026-10-31",
-   "pairs tested": 911,
-   "pairs whose boxes touch": 911
+   "date": "2026-11-02",
+   "pairs tested": 1402,
+   "pairs whose boxes touch": 1402
   },
   "pass2": {
-   "agree with the pass before": 174,
-   "date": "2026-10-31",
-   "pairs tested": 73
+   "agree with the pass before": 529,
+   "date": "2026-11-02",
+   "pairs tested": 98
   },
   "pass3": {
-   "agree with the pass before": 65,
-   "date": "2026-10-31",
-   "pairs tested": 71
+   "agree with the pass before": 423,
+   "date": "2026-11-02",
+   "pairs tested": 94
   },
   "pass5": {
-   "checked": 39,
-   "date": "2026-10-31",
+   "checked": 40,
+   "date": "2026-11-02",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,15 +41,16 @@
   "US-CO": "data/fers/US-CO.json"
  },
  "US-CO": {
-  "rows": 757,
-  "live": 54,
+  "rows": 1152,
+  "live": 78,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 3
+   "no public owner on the ownership map": 3,
+   "the agency ownership map did not answer": 4
   },
-  "dropped": 567,
-  "merged": 133
+  "dropped": 671,
+  "merged": 396
  },
  "states_ready": [
   "US-CO"
