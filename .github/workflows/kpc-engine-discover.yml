@@ -11,7 +11,7 @@ on:
       areas:
         description: 'areas, e.g. "US-OH US-IN" (blank = this week''s quarter)'
         default: ''
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '19 6 * * 2'
 permissions:
   contents: write

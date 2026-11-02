@@ -3,7 +3,7 @@ name: KPC state leaders
 # Lounge, VIP Top 50; the Discord helper's call look-ups read data/leaders/KY-calls.json from here). Weekly only since Oct 28.
 # Only parks with new activations are re-read (the cache below). One commit per run, only real changes. Never fails. No secrets.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '23 6 * * 3'    # weekly only, Wed 1:23 AM Central (Brandon GO Oct 28: the daily Kentucky run was dropped)
   workflow_dispatch:
     inputs:

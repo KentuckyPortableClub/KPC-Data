@@ -5,7 +5,7 @@ name: KPC GPS packs (state downloads) - on branch gps-packs
 # each run, so it never grows). Only areas whose inputs changed are rebuilt. Pull-off points stay OFF until Brandon's GO.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '29 8 * * *'
 permissions:
   contents: write

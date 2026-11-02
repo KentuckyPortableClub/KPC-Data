@@ -5,7 +5,7 @@ name: KPC camping refresh, every US state once a week (staggered)
 # chat 11's YES. State park camping (data/campstate, KPC-Links' Wednesday bot) reaches the waiting room through the daily copy.
 # Never red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '29 7 * * *'
   workflow_dispatch:
     inputs:

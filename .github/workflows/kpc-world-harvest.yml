@@ -23,7 +23,7 @@ on:
       fresh:
         description: 'yes = redo the named countries from nothing (new rules: their old leads and read list are cleared first)'
         default: ''
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '43 9 * * 5'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Friday, the next unfinished countries in queue order
 permissions:
   contents: write

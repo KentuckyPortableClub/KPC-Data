@@ -3,7 +3,7 @@ name: KPC national trail lines
 # KPC-Data's moved data over it (kpc_overlay.sh), runs, and saves data/trails/ HERE (kpc_push_data.sh: only this job's files, no
 # rebase). Never fails.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '13 7 * * 1'   # Nov 1: weekly (Mondays), so new finds reach the key within a week (was monthly)
   workflow_dispatch:
 permissions:

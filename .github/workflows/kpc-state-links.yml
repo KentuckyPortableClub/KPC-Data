@@ -3,7 +3,7 @@ name: KPC park links by state
 # KPC-Data's moved data over it (kpc_overlay.sh), runs, and saves data/parkinfo/ HERE (kpc_push_data.sh: only this job's files, no
 # rebase). Never fails.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '41 8 * * 2'
   workflow_dispatch:
     inputs:

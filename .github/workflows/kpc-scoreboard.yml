@@ -5,7 +5,7 @@ name: KPC scoreboard (nightly counts, facts only)
 # Local files only, no web, decides nothing. Never fails except a failed save.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '23 7 * * *'
 permissions:
   contents: write

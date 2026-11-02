@@ -4,7 +4,7 @@ name: KPC 2-fer checker (weekly, all US + Canada areas; report only)
 # data/fers-check/<area>.json + summary; SHRUNK / GONE / MOVED rows listed in data/fers-check/alerts.md + a status-board line
 # for chat 2 (recheck) and chat 11 (grade). It changes nothing in data/fers. Kentucky first. Never red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '9 4 * * 0'      # Sundays
   workflow_dispatch:
     inputs:

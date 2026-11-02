@@ -10,7 +10,7 @@ on:
       test:
         description: 'yes = Tennessee only'
         default: 'yes'
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '11 5 2 * *'   # monthly, whole US (chat 10 Oct 31: HQ 9:25 PM 'wired, not hand fed')
 permissions:
   contents: write

@@ -4,7 +4,7 @@ name: KPC world finder v2 (stage 1, hidden)
 # let it eat'). STAGE 1 only (W9 / W2 off). Biggest gap first, France last; chains itself until the world list is done or the stop
 # time passes. Hidden data only (freeze): candidates for chat 11, leads for the intake. Never goes red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '23 */6 * * *'   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)
   workflow_dispatch:
     inputs:

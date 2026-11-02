@@ -3,7 +3,7 @@ name: KPC Europe weather warnings
 # European country into data/alerts/eu.json for the Field Weather page (pages read KPC-Data first). Commits only when the
 # warnings really changed (a new time stamp alone is not a change). Never fails. No secrets.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '41 */6 * * *'
   workflow_dispatch:
 permissions:

@@ -6,7 +6,7 @@ name: KPC one-week trial - hours / fees / closures outside Kentucky (SAVED ONLY,
 #   hours     kpc_hours_bot.py, a slice of ~7 states a day (all 49 non-KY states + DC over the week), OUT = the branch folder
 #   closures  kpc_us_closures.py (the state agencies' closure feeds, whole US) with FORCE_RUN=1, its file copied to the branch
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '51 6 * * *'
   workflow_dispatch:
 permissions:

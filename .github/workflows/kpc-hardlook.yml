@@ -4,7 +4,7 @@ name: KPC hard look reader (outside research rows -> questions for chat 11)
 # data/waiting/questions/hardlook.json (+ pin-typos.json). Daily, chains until every row is read. Never red.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '13 6 * * *'
 permissions:
   contents: write

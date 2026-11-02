@@ -9,7 +9,7 @@ on:
       fresh:
         description: 'yes = trace every map again (after a tracer change), not only the new ones'
         default: 'no'
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '47 6 * * 0'
 permissions:
   contents: write

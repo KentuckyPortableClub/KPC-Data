@@ -5,7 +5,7 @@ name: KPC YouTube comments
 # KPC-Links' nightly check-up; that file has no time stamp, so it only commits when a key's result changes.
 # Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '37 13 * * *'    # 8:37 AM Central (7:37 in winter)
   workflow_dispatch:
     inputs:

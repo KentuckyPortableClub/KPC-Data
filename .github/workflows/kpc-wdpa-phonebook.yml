@@ -5,7 +5,7 @@ name: KPC WDPA phone book - who runs the parks we still miss (every 6 h, leads o
 # Chains itself while parks are left (about 1,300 lookups a run at one request per 2 s). Never red, never emails.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '53 */6 * * *'
 permissions:
   contents: write

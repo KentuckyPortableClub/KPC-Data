@@ -3,7 +3,7 @@ name: KPC US access points
 # KPC-Data's moved data over it (kpc_overlay.sh), runs, and saves data/access/ HERE (kpc_push_data.sh: only this job's files, no
 # rebase). Never fails.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '41 8 6 * *'          # monthly, the 6th (after the US key on the 1st)
   workflow_dispatch:
     inputs:

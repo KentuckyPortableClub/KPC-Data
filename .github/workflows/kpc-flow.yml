@@ -4,7 +4,7 @@ name: KPC flow board - every pile of work, who it waits on, when it last moved (
 # intake-files, engine-registry), writes data/status/flow.json + flow.md (small). STUCK = work in a pile and no move for 2 days.
 # Every chat sees its lines at the start (KPC-Links .claude/build/inbox_now.py). Reads only, decides nothing, never red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '47 */3 * * *'
   workflow_dispatch:
 permissions:

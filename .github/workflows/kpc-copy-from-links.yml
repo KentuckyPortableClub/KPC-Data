@@ -7,7 +7,7 @@ name: KPC copy site data to KPC-Data (Step B3)
 # KPC-Links is read only. One commit per run, only when something changed. Never fails.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '41 10 * * *'
     # Oct 29 (BOT C): a second look in the evening so a key rebuilt in the day reaches chat 11's sample the same night
     - cron: '41 1 * * *'

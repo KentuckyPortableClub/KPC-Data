@@ -5,7 +5,7 @@ name: KPC outside documents merge (into data/docs through the waiting room)
 # (starts the next run itself while rows are left), then daily for new files and areas the documents bot has finished. Never red.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '27 6 * * *'
 permissions:
   contents: write

@@ -3,7 +3,7 @@ name: KPC POTA activity - activations per park, whole world (weekly, branch tool
 # (the same calls the park-list bots make) -> tools-out pota/activity.json; the nightly missing lists rank by it. Never red.
 on:
   workflow_dispatch:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '11 5 * * 0'
 permissions:
   contents: write

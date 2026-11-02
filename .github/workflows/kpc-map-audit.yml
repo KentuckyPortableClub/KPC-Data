@@ -6,7 +6,7 @@ name: KPC map audit (every saved outline graded, worst first) - outputs on tools
 # then weekly (Sunday after the key builds). Output: tools-out audit/ (worst.csv, summary.md, questions.json), latest run only.
 # Never red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '43 13 * * 0'   # weekly, Sunday 7:43 AM CST, after the night's key builds
   workflow_dispatch:
     inputs:

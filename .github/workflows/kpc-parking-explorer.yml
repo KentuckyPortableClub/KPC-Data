@@ -4,7 +4,7 @@ name: KPC parking layer explorer
 # access, boat-ramp and entrance POINT layers -> data/access-leads.json + .md for chat 2 to review. Adds nothing by itself.
 # Monthly (the 3rd, before the access run on the 6th) + by hand. Never fails (a failed run emails Brandon).
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '17 9 3 * *'
   workflow_dispatch:
     inputs:

@@ -27,7 +27,7 @@ on:
       browser:
         description: 'yes = read script-built pages (under 400 characters of text) in headless Chromium'
         default: 'yes'
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '37 */6 * * *'
 permissions:
   contents: write

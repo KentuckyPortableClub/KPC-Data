@@ -8,7 +8,7 @@ name: KPC helper tools (T1 map-match nightly, T2 dead-link fixer + T5 site check
 #   sitecheck Sundays: the live site as a guest on a phone + a desktop for 40 parks (10 official / approximate / pin / 2-fer);
 #             failures on the status board (amber) for chat 3.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '23 10 * * *'
     - cron: '37 5 * * 0'
   workflow_dispatch:

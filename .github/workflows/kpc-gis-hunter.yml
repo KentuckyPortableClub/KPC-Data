@@ -24,7 +24,7 @@ on:
       then:
         description: 'When this country is finished, start this country next (e.g. CA); blank = stop'
         default: ''
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '13 7 * * 1'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Monday one full pass, US then Canada
 permissions:
   contents: write

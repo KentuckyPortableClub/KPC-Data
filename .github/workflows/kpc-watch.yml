@@ -5,7 +5,7 @@ name: KPC map watch (near misses + observations log)
 #                    campgrounds, access points, links, new possible 2-fers) - compares KPC-Links now with ~25 hours ago
 # Reads KPC-Links (public) read-only. Daily after the nightly boundary check, and by hand. Never fails, never emails.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '53 11 * * *'
   workflow_dispatch:
 permissions:

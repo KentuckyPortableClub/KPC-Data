@@ -34,7 +34,7 @@ on:
       keyed_once:
         description: "yes = the ONE keyed fill (Brandon Oct 29 9:34 AM): campinfo US-KY federal rows from Recreation.gov's API, ONLY empty fields, into data/waiting/in (chat 11 grades, a person releases). Never on the schedule."
         default: ''
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '17 9 * * 0'
 permissions:
   contents: write

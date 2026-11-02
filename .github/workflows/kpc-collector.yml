@@ -5,7 +5,7 @@ name: KPC layer collector (starts itself when the Fable / atlas files have new w
 # without an official outline (name tiers T-1..T-6); SURE / LIKELY = questions in data/waiting/questions/layers.json for chat 11,
 # layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '17 */2 * * *'
   workflow_dispatch:
 permissions:

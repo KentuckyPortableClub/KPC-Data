@@ -4,7 +4,7 @@ name: KPC storage keeper (Sundays; measures all, cleans this repo)
 # bot branches; squashes lookup past 150 MB and picture-maps past 300 MB (one fresh commit, same files). Never touches main's history.
 # Ends red ONLY when a repo is over its line (KPC-Links 650 MB, KPC-Data 400 MB) = the one email that matters.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '7 9 * * 0'
   workflow_dispatch:
 permissions:

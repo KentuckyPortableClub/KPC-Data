@@ -4,7 +4,7 @@ name: KPC tool trial (outside tools' real-world test from GitHub) - outputs on t
 # (<tool>/; BRANCH FIRST). A tool that stops with exit 3 (time) dispatches itself again with --resume. Never red.
 # After chat 11's PASS each tool gets its own schedule (cron line below, commented until then).
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '37 5 * * 0'   # weekly (AUTOMATION FIRST): every tool's real-world run keeps going by itself; outputs on tools-out, nothing live
   workflow_dispatch:
     inputs:

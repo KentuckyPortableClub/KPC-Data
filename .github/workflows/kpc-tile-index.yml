@@ -2,7 +2,7 @@ name: KPC tile index (nightly)
 # Nov 1 2026 (chat 3, Brandon: 'skip quietly' the map tiles for areas that have none): writes data/pota|sota|wwff/tiles.json =
 # {updated, keys: ["37_-86", ...]} from the tiles that exist, so the site only asks for real tiles (no 404s). Never goes red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '47 7 * * *'
   workflow_dispatch:
 permissions:

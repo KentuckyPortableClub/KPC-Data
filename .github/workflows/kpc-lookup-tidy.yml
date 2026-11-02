@@ -3,7 +3,7 @@ name: KPC look-up branch tidy (weekly)
 # that were read or are over 7 days old, and when the branch (history included) passes 150 MB it is squashed to ONE fresh commit with
 # the current files, so old screenshots really leave the repo. Main never holds look-up files. Never goes red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '23 11 * * 0'
   workflow_dispatch:
 permissions:

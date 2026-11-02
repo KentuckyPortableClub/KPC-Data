@@ -5,7 +5,7 @@ name: KPC map-format converter (WFS / downloads / Socrata / CKAN -> GeoJSON near
 # OK ones (pin inside / named line within 200 m + name tiers) and asks chat 11, like every layer. Decides nothing. Nightly while
 # leads are left, straight through. Never red.
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '53 3 * * *'
   workflow_dispatch:
 permissions:

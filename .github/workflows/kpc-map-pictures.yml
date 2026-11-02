@@ -6,7 +6,7 @@ name: KPC map picture maker (KPC_9) - pictures for chat 11's open questions (too
 # the world finder's names-only LIKELY rows (parked 'map look'), most activated first; up to 300 pictures a night; each picture
 # sends its row BACK to chat 11 in data/waiting/questions/second-look.json with the picture's address (grade with the map).
 on:
-  schedule:
+  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '23 7 * * *'
   workflow_dispatch:
     inputs:
