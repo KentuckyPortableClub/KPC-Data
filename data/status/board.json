@@ -36,9 +36,9 @@
   "Hard look reader": {
    "areas": "",
    "last_run": "2026-11-02",
-   "made": " 2026-11-02; left 47",
+   "made": " 2026-11-02; left 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41467090705",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41467785785",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -814,7 +814,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41483081227",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hours-fees-blocked-us-nov1.csv": {
@@ -822,7 +822,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41483081227",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hours-fees-ca-nov1.xlsx": {
@@ -830,7 +830,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41483081227",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hours-fees-us-nov1.xlsx": {
@@ -838,7 +838,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41483081227",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: parking-hunt-engine.json": {
@@ -1036,9 +1036,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-02",
-   "made": "2026-11-02 13:22 UTC: 17 skipped run(s) started again: kpc-camp-weekly.yml (missed Nov 02 07:29 UTC); kpc-closures.yml (missed Nov 02 12:37 UTC); kpc-collector.yml (missed Nov 02 12:17 UTC); kpc-copy-from-links.yml (missed Nov 02 12:11 UTC); kpc-detective.yml (missed Nov 02 10:41 UTC); kpc-eu-alerts",
+   "made": "2026-11-02 17:29 UTC: 2 skipped run(s) started again: kpc-collector.yml (missed Nov 02 16:17 UTC); kpc-flow.yml (missed Nov 02 15:47 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452357200",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41491653493",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1145,6 +1145,14 @@
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40982873929",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
+  "key-doctor": {
+   "areas": "",
+   "last_run": "2026-11-02",
+   "made": "NOs: 313 of 313 NOs landed; 0 missing; 13 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON approvals: ca-key 2026-11-02: YES is missing chat2 (chat 2 recheck, G-4) stuck: 0 area(s) stuck; see stuck-2026-11-02.md storage: 58 held copies already live (cleanup candidates",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41483751907",
+   "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
+  },
   "layer intake": {
    "areas": "297 rows left",
    "last_run": "2026-11-02",
@@ -1155,10 +1163,10 @@
   },
   "official documents bot": {
    "areas": "",
-   "last_run": "2026-11-01",
-   "made": "chunk 4 saved",
+   "last_run": "2026-11-02",
+   "made": "chunk 1 saved",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41304276422",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41481481210",
    "waiting_on": "chat 8 grades review.md samples"
   },
   "outside-KY trial (hours / closures, saved only)": {
@@ -1195,7 +1203,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-02",
-   "made": "heartbeat 1 h old, 260 files waiting",
+   "made": "heartbeat 1 h old, 139 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },

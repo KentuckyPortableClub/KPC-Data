@@ -19,12 +19,13 @@
   "kpc-world-finder.yml|2026-11-02T12:23:00+00:00": "2026-11-02T13:22+00:00 started",
   "kpc-copy-from-links.yml|2026-11-02T15:11:00+00:00": "2026-11-02T16:06+00:00 started",
   "kpc-engine.yml|2026-11-02T15:37:00+00:00": "2026-11-02T16:06+00:00 started",
-  "kpc-youtube-comments.yml|2026-11-02T13:37:00+00:00": "2026-11-02T16:06+00:00 skipped (not restarted)"
+  "kpc-youtube-comments.yml|2026-11-02T13:37:00+00:00": "2026-11-02T16:06+00:00 skipped (not restarted)",
+  "kpc-collector.yml|2026-11-02T16:17:00+00:00": "2026-11-02T17:29+00:00 started",
+  "kpc-flow.yml|2026-11-02T15:47:00+00:00": "2026-11-02T17:29+00:00 started"
  },
- "last": "2026-11-02T16:06+00:00",
+ "last": "2026-11-02T17:29+00:00",
  "last_restarted": [
-  "kpc-copy-from-links.yml (missed Nov 02 15:11 UTC)",
-  "kpc-engine.yml (missed Nov 02 15:37 UTC)",
-  "kpc-youtube-comments.yml (missed Nov 02 13:37 UTC, NOT restarted: its next scheduled run catches up)"
+  "kpc-collector.yml (missed Nov 02 16:17 UTC)",
+  "kpc-flow.yml (missed Nov 02 15:47 UTC)"
  ]
 }
