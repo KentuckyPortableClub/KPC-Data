@@ -4,35 +4,35 @@
  "states": [
   "US-MD"
  ],
- "since": "2026-10-31",
- "date": "2026-10-31 22:49 UTC",
+ "since": "2026-11-02",
+ "date": "2026-11-02 17:51 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "19/19 on 2026-10-31",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 162,
-  "DROPPED": 494,
-  "NEVER LOOKED AT": 1145
+  "FOUND": 159,
+  "DROPPED": 504,
+  "NEVER LOOKED AT": 1138
  },
  "report": {
   "pass1": {
-   "date": "2026-10-31",
-   "pairs tested": 1921,
-   "pairs whose boxes touch": 1921
+   "date": "2026-11-02",
+   "pairs tested": 1975,
+   "pairs whose boxes touch": 1975
   },
   "pass2": {
-   "agree with the pass before": 673,
-   "date": "2026-10-31",
-   "pairs tested": 193
+   "agree with the pass before": 639,
+   "date": "2026-11-02",
+   "pairs tested": 191
   },
   "pass3": {
-   "agree with the pass before": 544,
-   "date": "2026-10-31",
-   "pairs tested": 189
+   "agree with the pass before": 521,
+   "date": "2026-11-02",
+   "pairs tested": 187
   },
   "pass5": {
    "checked": 31,
-   "date": "2026-10-31",
+   "date": "2026-11-02",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,15 +41,15 @@
   "US-MD": "data/fers/US-MD.json"
  },
  "US-MD": {
-  "rows": 772,
-  "live": 147,
+  "rows": 716,
+  "live": 139,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 8
+   "no public owner on the ownership map": 4
   },
-  "dropped": 286,
-  "merged": 331
+  "dropped": 255,
+  "merged": 318
  },
  "states_ready": [
   "US-MD"

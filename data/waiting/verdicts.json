@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T17:47Z",
+ "checked": "2026-11-02T17:52Z",
  "switched_on": false,
  "results": [
   {
@@ -519,17 +519,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/CA-BC.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 NOT SURE 52 -> 14 (over 30% change)"
-   ],
-   "notes": [
-    "replaces live data/fers/CA-BC.json (same file, other format): promotion removes the old name"
-   ],
-   "verdict": "HOLD"
-  },
-  {
    "path": "data/fers/CA-NT.json",
    "kind": "fers",
    "why": [],
@@ -679,6 +668,15 @@
    "kind": "fers",
    "why": [
     "F-2 9 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-8395, US-11446+US-8394, US-11638+US-8395"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-MD.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 8 -> 4 (over 30% change)"
    ],
    "notes": [],
    "verdict": "HOLD"
