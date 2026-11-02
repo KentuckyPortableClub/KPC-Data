@@ -856,6 +856,70 @@
    "date": "2026-11-02",
    "chat11": "KEY YES 2026-11-02 (chat 12, names / kinds only, no maps seen; 66 PASS world-key files in grade-queue.md). Checked EVERY join in the queued files (44,203 joins): 42,304 (95.7%) have a park name and record name that share their proper words; I read the other ~140 by hand across 27 files (all of AX BZ CL CV DO GA GL GR GT ID LK MX PA PE PF PR ZA NZ CO, a 9-row sample each of IE IT DE SI PT DK BE HU): all are translations, accents, abbreviations (NSG, TN, AMP) or same-site wider names, EXCEPT these 10, KEEP AS PINS: BZ-0051 (Bird Caye BS joined to Laughing Bird Caye), CV-0012 (Protected Landscape joined to a Natural Monument record), DO-0110 (Costa Azul landscape joined to a scenic road), PR-0057 (Boqueron wildlife refuge joined to the State Forest), NZ-0150 (Lake Sumner Regional Park joined to Lake Sumner Forest Park), NZ-0624 (Atuanui Recreation Site joined to a Scenic Reserve), NZ-0676 (Ecological Park joined to Wildlife Refuge), ID-0060 (Provincial Park joined to the CA Kawah Ijen nature reserve), PA-0001 + PA-0054 (one San Lorenzo record offered to two parks). Sample result 30/30 equivalent after those 10. NOT released by me: CM.json and PY.json are HELD by check F-O2 but all 20 CM and 29 PY joins are right (accents / short names like Faro, Nki: the check compares words badly): chat 2 / chat 10 may release them; FR.json + GB.json are HELD by F-O3: FR-16712 and FR-3744 are retired parks still outlined (drop those two outlines; FR-14241 and GB-2511 have none). Acres not checked. AU / GB / PL / FR / IT old bad lists (carried rows) not re-read.",
    "chat2": "rechecked 2026-11-02 (chat 2 G-4): OK. The world files were already released at 16:37 UTC with chat 12's 10 KEEP-AS-PIN parks still joined (BZ-0051, CV-0012, DO-0110, PR-0057, NZ-0150, NZ-0624, NZ-0676, ID-0060, PA-0001, PA-0054): turned back into pins in the live files (record moved to 'check') and written as 'no' in data/world-key/overrides.json so the next build keeps them pins. FR + GB: retired parks taken out (live + held) and the world key now drops retired numbers itself. CM + PY: chat 12 read all 49 joins as right, chat 10 fixed the accent check: release."
+  },
+  {
+   "what": "wwff-KFF",
+   "path": "data/waiting/in/data/wwff/KFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 80 new (MN 26, GA 25, FL 12, NM 10, ...), 7 changed (name tags INACTIVE / (NC)); one new row has region K-???.",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-OMFF",
+   "path": "data/waiting/in/data/wwff/OMFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 70 new Slovak reserves, pins fine.",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-D4FF",
+   "path": "data/waiting/in/data/wwff/D4FF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 5 new. Flags only, pins stay as WWFF has them: D4FF-0002 link is a file:///C:/ path (bad link), D4FF-0008 shares its name with D4FF-0004 but sits 21 km away (WWFF's own duplicate), D4FF-0004..0007 link to protectedplanet.net (W-10: credit + link visible if shown).",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-CTFF",
+   "path": "data/waiting/in/data/wwff/CTFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 1 gone (CTFF-0319 Freixo-europeu, no link), nothing else changed.",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-ONFF",
+   "path": "data/waiting/in/data/wwff/ONFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 1 changed: ONFF-0606 name accent fixed and link now natagora.be page (better).",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-PYFF",
+   "path": "data/waiting/in/data/wwff/PYFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 2 changed: PYFF-0284 name longer; PYFF-0293 pin moved about 40 km to the Tupiniquins station's real place with an official-looking link (good).",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-SMFF",
+   "path": "data/waiting/in/data/wwff/SMFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 2 changed: SMFF-7312 / 8282 pins moved <400 m, new naturvardsverket links.",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
+  },
+  {
+   "what": "wwff-VEFF",
+   "path": "data/waiting/in/data/wwff/VEFF.json",
+   "by": "chat 12",
+   "date": "2026-11-02",
+   "chat11": "YES 2026-11-02 (chat 12, pin lists from WWFF's own directory; checked: no duplicate ids, 0 new/changed pins outside the country, no 0/0 among new rows, 12 new KFF + 6 new OMFF rows sampled: all right state/country; the 'F-4 checker error AttributeError list has no attribute get' is a checker bug (these files are lists, not dicts): chat 10 please fix the check). 1 changed: VEFF-3724 link now protectedplanet.net (W-10 credit rule if shown).",
+   "chat2": "not needed: pin list, no outline, no 2-fer"
   }
  ]
 }
