@@ -134,6 +134,30 @@
    "camp_layer_ok": 0.95,
    "trail_pin_m": 200,
    "fer_line_ft": 100
+  },
+  "key_doctor": {
+   "about": "Key doctor (v0.5.0, `kpc_engine.py doctor`). Reads the club checkouts, writes ONLY to <out>/key-doctor/. Defaults keep today's practice: nothing is released per park until Brandon OKs it.",
+   "reapply_nos": true,
+   "per_park_release": true,
+   "require_chat2": [
+    "us-key",
+    "ca-key",
+    "world-key",
+    "fers-*"
+   ],
+   "require_path": [
+    "us-key",
+    "ca-key",
+    "world-key",
+    "fers-*"
+   ],
+   "fer_carry_km": 1.0,
+   "freeze_while_graded": true,
+   "stuck_days": 2,
+   "size_guard": true,
+   "size_warn_mib": 80,
+   "size_red_mib": 95,
+   "list_superseded_held": true
   }
  }
 }

@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 1040,
-    "parks": 965,
-    "parks_with_hit": 122,
-    "SURE": 75,
-    "LIKELY": 48,
-    "UNLIKELY_evidence": 220,
-    "strong": 37,
-    "already_approved": 139,
+    "rows": 1197,
+    "parks": 1111,
+    "parks_with_hit": 146,
+    "SURE": 90,
+    "LIKELY": 57,
+    "UNLIKELY_evidence": 279,
+    "strong": 43,
+    "already_approved": 162,
     "open_without_whynot": 428,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -31,19 +31,19 @@
     },
     {
      "reason": "already approved: already approved",
-     "parks": 139
+     "parks": 162
+    },
+    {
+     "reason": "blocked: host resting",
+     "parks": 101
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 85
-    },
-    {
-     "reason": "not found: no-layer: no official record at the pin or by name",
-     "parks": 78
+     "parks": 97
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 66
+     "parks": 91
     }
    ],
    "examples": [
@@ -108,21 +108,21 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 1040,
-    "found_or_candidate": 123,
-    "blocked": 52,
-    "hit_rate": 0.118,
+    "rows": 1197,
+    "found_or_candidate": 147,
+    "blocked": 102,
+    "hit_rate": 0.123,
     "bands": {
-     "STRONG": 37,
-     "WEAK": 80,
+     "STRONG": 43,
+     "WEAK": 98,
      "CONFLICT": 6
     },
     "tiers": {
-     "T-1": 16,
-     "T-2": 37,
-     "T-3": 56,
-     "T-4": 7,
-     "T-6": 7
+     "T-1": 19,
+     "T-2": 43,
+     "T-3": 67,
+     "T-4": 10,
+     "T-6": 8
     },
     "every_open_park_has_whynot": false,
     "non_official_publishers": []
@@ -265,6 +265,30 @@
     "camp_layer_ok": 0.95,
     "trail_pin_m": 200,
     "fer_line_ft": 100
+   },
+   "key_doctor": {
+    "about": "Key doctor (v0.5.0, `kpc_engine.py doctor`). Reads the club checkouts, writes ONLY to <out>/key-doctor/. Defaults keep today's practice: nothing is released per park until Brandon OKs it.",
+    "reapply_nos": true,
+    "per_park_release": true,
+    "require_chat2": [
+     "us-key",
+     "ca-key",
+     "world-key",
+     "fers-*"
+    ],
+    "require_path": [
+     "us-key",
+     "ca-key",
+     "world-key",
+     "fers-*"
+    ],
+    "fer_carry_km": 1.0,
+    "freeze_while_graded": true,
+    "stuck_days": 2,
+    "size_guard": true,
+    "size_warn_mib": 80,
+    "size_red_mib": 95,
+    "list_superseded_held": true
    }
   }
  },
@@ -272,12 +296,12 @@
   "outline": {
    "pass1": {
     "error": 428,
-    "already approved": 139,
-    "found": 37,
-    "candidate": 88,
-    "evidence": 218,
-    "blocked": 52,
-    "not found": 78
+    "already approved": 162,
+    "found": 43,
+    "candidate": 106,
+    "evidence": 277,
+    "blocked": 102,
+    "not found": 79
    },
    "pass2": null,
    "pass2_solved": null,
