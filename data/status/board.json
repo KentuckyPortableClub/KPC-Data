@@ -1036,9 +1036,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-02",
-   "made": "2026-11-02 13:22 UTC: 17 skipped run(s) started again: kpc-camp-weekly.yml (missed Nov 02 07:29 UTC); kpc-closures.yml (missed Nov 02 12:37 UTC); kpc-collector.yml (missed Nov 02 12:17 UTC); kpc-copy-from-links.yml (missed Nov 02 12:11 UTC); kpc-detective.yml (missed Nov 02 10:41 UTC); kpc-eu-alerts",
+   "made": "2026-11-02 16:06 UTC: 3 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 02 15:11 UTC); kpc-engine.yml (missed Nov 02 15:37 UTC); kpc-youtube-comments.yml (missed Nov 02 13:37 UTC, NOT restarted: its next scheduled run catches up)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452357200",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478199988",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1108,9 +1108,9 @@
   "Tool trial: trace": {
    "areas": "",
    "last_run": "2026-11-02",
-   "made": "exit 0 2026-11-02: done in 955 s; 510 requests; 0 left",
+   "made": "exit 0 2026-11-02: done in 1376 s; 686 requests; 0 left",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41450999894",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463600874",
    "waiting_on": "chat 11 grades tools-out/trace/ against the spec pass mark; open files only when red"
   },
   "WDPA phone book": {
@@ -1195,7 +1195,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-02",
-   "made": "heartbeat 1 h old, 260 files waiting",
+   "made": "heartbeat 0 h old, 260 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
