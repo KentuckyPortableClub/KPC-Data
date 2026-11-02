@@ -1,0 +1,49 @@
+name: KPC replay-test files from the history backup (one time, by hand)
+# Nov 2 2026 (chat 10): the waiting room's REPLAY TEST (data/waiting/replay.json: 38 real good / bad outputs) read each case's
+# file from KPC-Data's git history by commit id; the history restart this morning moved that history into the backup bundle
+# (release history-20261102-1350), so the replay said FAIL 17 of 38. This run takes each case's file out of the bundle ONCE and
+# keeps it on the small orphan branch 'replay-files' as <commit>/<path>; the waiting room reads them from there.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      R: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Take the case files out of the backup bundle
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/b && gh release download history-20261102-1350 -R "$R" -D /tmp/b -p '*.part*' -p '*.bundle' 2>/dev/null || gh release download history-20261102-1350 -R "$R" -D /tmp/b
+          cat /tmp/b/*.part* > /tmp/h.bundle 2>/dev/null || mv /tmp/b/*.bundle /tmp/h.bundle
+          git clone -q --bare /tmp/h.bundle /tmp/old.git
+          mkdir -p /tmp/out
+          python3 - <<'PY'
+          import json, os, subprocess
+          cases = json.load(open('data/waiting/replay.json'))['cases']
+          n = miss = 0
+          for c in cases:
+              if c.get('repo') != 'data': continue
+              for f in c['files']:
+                  for sha, path in ((f.get('new'), f.get('src_path') or f['path']), (f.get('live'), f.get('live_path') or f['path'])):
+                      if not sha or sha in ('live', 'HEAD', 'none'): continue
+                      p = subprocess.run(['git', '--git-dir=/tmp/old.git', 'show', f'{sha}:{path}'], capture_output=True)
+                      if p.returncode != 0: miss += 1; print(f'::warning title=Replay files::{sha}:{path} not in the bundle'); continue
+                      o = os.path.join('/tmp/out', sha, path); os.makedirs(os.path.dirname(o), exist_ok=True)
+                      open(o, 'wb').write(p.stdout); n += 1
+          print(f'::notice title=Replay files::{n} case files taken out of the backup, {miss} missing')
+          PY
+          du -sh /tmp/out
+      - name: Save on the orphan branch replay-files
+        run: |
+          cd /tmp/out && git init -q && git checkout -q -b replay-files
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          printf 'Replay-test case files (chat 10, Nov 2): <commit>/<path>, taken from the backup release history-20261102-1350.\n' > README.md
+          git add -A && git commit -qm 'replay-test case files from the history backup'
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${R}" HEAD:replay-files
+          echo "::notice title=Replay files::saved on branch replay-files"

@@ -1003,7 +1003,10 @@ def git_json(repo, sha, path):
     base = DATA if repo == 'data' else LINKS
     if sha in ('live', 'HEAD', None): return load(base / path)
     p = subprocess.run(['git', '-C', str(base), 'show', f'{sha}:{path}'], capture_output=True)
-    if p.returncode != 0: raise Unsure(f'{repo} {sha}:{path} not in the git history (needs fetch-depth 0)')
+    if p.returncode != 0 and repo == 'data':   # Nov 2: history restart; the case files live on branch replay-files (<commit>/<path>)
+        rf = pathlib.Path(os.environ.get('REPLAY_FILES') or '../replay-files') / sha / path
+        if rf.exists(): p = subprocess.CompletedProcess([], 0, rf.read_bytes(), b'')
+    if p.returncode != 0: raise Unsure(f'{repo} {sha}:{path} not in the git history (needs fetch-depth 0) nor on branch replay-files')
     try: return json.loads(p.stdout.decode('utf-8'))
     except Exception: import gzip; return json.loads(gzip.decompress(p.stdout).decode('utf-8'))  # noqa: E401
 
