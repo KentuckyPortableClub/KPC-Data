@@ -711,7 +711,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1155,7 +1155,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1223,7 +1224,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1262,6 +1264,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1288,7 +1291,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1319,7 +1323,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1350,7 +1355,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1381,7 +1387,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1412,7 +1419,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the page in a browser ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1467,6 +1475,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1478,14 +1487,23 @@
    "page": "https://gastateparks.org/FortMcAllister",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/FortMcAllister-ParkMap-2024.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gastateparks.org/FortMcAllister",
+    "posted": "2024",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1510,7 +1528,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-2176": {
    "n": "Fort Mountain State Park",
@@ -1542,6 +1561,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1580,7 +1600,9 @@
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "map_tried": [
     {
@@ -2012,7 +2034,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the park's page ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia Department of Natural Resources, State Parks & Historic Sites",
    "runs": [],
@@ -4423,6 +4446,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the map link refused a plain reader (ok)",
@@ -4936,6 +4960,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page is built by script",
@@ -5831,7 +5856,8 @@
    "rules": {
     "url": "https://gastateparks.org/ParkRules",
     "how": "a link on the park's page ('Park Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -5926,6 +5952,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -8063,6 +8090,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -8100,21 +8128,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-29",
+ "read": "2026-11-02",
  "counts": {
   "parks": 237,
-  "map ok": 139,
-  "map found by the bot": 93,
+  "map ok": 143,
+  "map found by the bot": 97,
   "date on the map": 16,
-  "posted date only": 82,
-  "date unknown": 41,
-  "no map": 98,
-  "rules ok": 41,
-  "needs browser": 60,
+  "posted date only": 85,
+  "date unknown": 42,
+  "no map": 94,
+  "rules ok": 42,
+  "needs browser": 59,
   "handover hints": 0,
   "runs hints": 14,
   "host resting / robots": 0,
-  "map names the park": 124,
+  "map names the park": 127,
   "region overview only": 0
  }
 }

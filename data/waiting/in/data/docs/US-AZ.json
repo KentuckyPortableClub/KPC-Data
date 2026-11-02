@@ -104,7 +104,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/apache-sitgreaves",
@@ -136,7 +136,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/tonto",
@@ -504,6 +504,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -552,7 +553,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r03/apache-sitgreaves"
+    "page": "https://www.fs.usda.gov/r03/apache-sitgreaves",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/apache-sitgreaves",
@@ -3080,7 +3082,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/coconino",
@@ -3159,7 +3161,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/kaibab",
@@ -3222,7 +3224,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/tonto",
@@ -3651,21 +3653,21 @@
    "browser_checked": "2026-10-31"
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
   "parks": 123,
-  "map ok": 50,
-  "map found by the bot": 29,
+  "map ok": 57,
+  "map found by the bot": 36,
   "date on the map": 2,
-  "posted date only": 35,
-  "date unknown": 13,
-  "no map": 73,
+  "posted date only": 40,
+  "date unknown": 15,
+  "no map": 66,
   "rules ok": 41,
   "needs browser": 1,
   "handover hints": 0,
   "runs hints": 28,
   "host resting / robots": 0,
-  "map names the park": 32,
+  "map names the park": 39,
   "region overview only": 0
  }
 }

@@ -272,6 +272,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -380,6 +381,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -420,6 +422,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -491,6 +494,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -576,28 +580,15 @@
    "page": "https://portal.ct.gov/deep/state-parks/forests/nipmuck-state-forest-bigelow-hollow-state-park",
    "checked": "2026-11-01",
    "map": {
-    "url": "https://ctparks.com/media/1485/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-11-01",
-    "final": "https://ctparks.com/media/1485/download?inline",
-    "posted": "Oct 13, 2023",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-maplinks.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": "2021",
-    "page": "https://ctparks.com/park-maps",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
-    "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the page in a browser ('State Park & Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -620,7 +611,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-12459": {
    "n": "Housatonic River Southern Fields Wildlife Management Area",
@@ -959,28 +951,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Bigelow-Hollow-State-Park-Nipmuck-State-Forest",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/494/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "December 21, 2022",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/494/download?inline",
-    "posted": "Oct 12, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": 2022,
-    "page": "https://ctparks.com/parks/bigelow-hollow-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -1003,7 +981,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1649": {
    "n": "Black Rock State Park",
@@ -1011,23 +990,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Black-Rock-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/408/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "July 31, 2017",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/408/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/black-rock-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -1056,7 +1021,8 @@
      "via": "on file, checked by a person or the link harvester (nae.usace.army.mil)"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1650": {
    "n": "Bluff Point State Park",
@@ -1064,28 +1030,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Bluff-Point-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/411/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "January 23, 2015",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/411/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/bluff-point-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -1108,7 +1060,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1651": {
    "n": "Bolton Notch State Park",
@@ -1174,28 +1127,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Burr-Pond-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/412/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 13, 2020",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/412/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/burr-pond-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -1218,7 +1157,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1654": {
    "n": "Camp Columbia State Park",
@@ -1332,23 +1272,17 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Collis-P-Huntington-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/496/download?inline",
+    "url": "https://ctparks.com/park-maps#cp-huntington-state-park",
     "status": "ok",
-    "kind": "pdf",
-    "date": "December 15, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/496/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Park Maps')",
     "page": "https://ctparks.com/parks/cp-huntington-state-park",
-    "map_page": 1
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -1377,7 +1311,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1658": {
    "n": "Connecticut Valley Railroad State Park",
@@ -1385,23 +1320,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Connecticut-Valley-Railroad-State-Park",
    "checked": "2026-11-01",
    "map": {
-    "url": "https://ctparks.com/media/504/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "February 24, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/504/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-maplinks.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": "2009",
-    "page": "https://ctparks.com/park-maps",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -1414,7 +1335,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1659": {
    "n": "Dart Island State Park",
@@ -1445,28 +1367,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Day-Pond-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/506/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "December 22, 2015",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/506/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/day-pond-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -1489,7 +1397,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1661": {
    "n": "Dennis Hill State Park",
@@ -1497,23 +1406,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Dennis-Hill-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/508/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "September 12, 2015",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/508/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/dennis-hill-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -1542,7 +1437,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1662": {
    "n": "Devil's Hopyard State Park",
@@ -1550,28 +1446,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Devils-Hopyard-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/512/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "November 23, 2020",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/512/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/devils-hopyard-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -1594,7 +1476,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1663": {
    "n": "Dinosaur State Park",
@@ -1641,23 +1524,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Eagle-Landing-State-Park",
    "checked": "2026-11-01",
    "map": {
-    "url": "https://ctparks.com/media/1820/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "January 4, 2011",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/1820/download?inline",
-    "posted": "Feb 12, 2024",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-maplinks.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": "2011",
-    "page": "https://ctparks.com/park-maps",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -1686,7 +1555,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1665": {
    "n": "Farm River State Park",
@@ -1786,19 +1656,9 @@
    "page": "https://ctparks.com/parks/fort-trumbull-state-park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/park-maps",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "a link on the park's page ('State Park Maps')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-31",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "a link on the park's page ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -1818,23 +1678,17 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gardner-Lake-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/513/download?inline",
+    "url": "https://portal.ct.gov/-/media/DEEP/boat_launch/gardner_lake/Gardnerpdf.pdf",
     "status": "ok",
     "kind": "pdf",
     "date": "2009-02-23",
-    "date_how": "file stamp 2009 (older than the posting 2023 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://ctparks.com/media/513/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": 2009,
+    "date_how": "file stamp 2009 (older than the posting 2020 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Boat Launch Map')",
     "page": "https://ctparks.com/parks/gardner-lake-state-park",
-    "map_page": 1
+    "posted": "Jun 03, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "linked from the agency page (portal.ct.gov)"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -1847,7 +1701,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1669": {
    "n": "Gay City State Park",
@@ -1855,23 +1710,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gay-City-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/514/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 17, 2017",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/514/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/gay-city-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/swimming",
@@ -1899,7 +1740,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1670": {
    "n": "George Dudley Seymour State Park",
@@ -1994,7 +1836,9 @@
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "map_tried": [
     {
@@ -2043,23 +1887,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Haddam-Meadows-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/516/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 12, 2012",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/516/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/haddam-meadows-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -2088,7 +1918,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1675": {
    "n": "Haley Farm State Park",
@@ -2172,28 +2003,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Harkness-Memorial-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/423/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "May 20, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/423/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/harkness-memorial-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2216,7 +2033,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1678": {
    "n": "Haystack Mountain State Park",
@@ -2224,23 +2042,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Haystack-Mountain-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/517/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "November 28, 2014",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/517/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/haystack-mountain-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -2269,7 +2073,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1679": {
    "n": "Higganum Reservoir State Park",
@@ -2337,23 +2142,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hopeville-Pond-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/424/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 26, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/424/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/hopeville-pond-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/swimming",
@@ -2381,7 +2172,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1682": {
    "n": "Housatonic Meadows State Park",
@@ -2389,28 +2181,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Housatonic-Meadows-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/528/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "June 24, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/528/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/housatonic-meadows-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2433,7 +2211,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1683": {
    "n": "Hurd State Park",
@@ -2441,28 +2220,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hurd-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/530/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "December 22, 2017",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/530/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/hurd-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2485,7 +2250,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1684": {
    "n": "Indian Well State Park",
@@ -2493,28 +2259,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Indian-Well-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/533/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 4, 2016",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/533/download?inline",
-    "posted": "Feb 10, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/indian-well-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2537,7 +2289,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1685": {
    "n": "John A. Minetto State Park",
@@ -2598,28 +2351,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Kent-Falls-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/427/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "February 26, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/427/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": 2009,
-    "page": "https://ctparks.com/parks/kent-falls-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2642,7 +2381,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1687": {
    "n": "Kettletown State Park",
@@ -2650,23 +2390,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Kettletown-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/538/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 25, 2019",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/538/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/kettletown-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -2679,7 +2405,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1688": {
    "n": "Killingly Pond State Park",
@@ -2770,23 +2497,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Lovers-Leap-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/544/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "February 10, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/544/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": 2010,
-    "page": "https://ctparks.com/parks/lovers-leap-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -2815,7 +2528,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1692": {
    "n": "Macedonia Brook State Park",
@@ -2823,28 +2537,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Macedonia-Brook-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/545/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "December 9, 2016",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/545/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/macedonia-brook-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2867,7 +2567,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1693": {
    "n": "Machimoodus State Park",
@@ -2875,28 +2576,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Machimoodus-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/548/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 16, 2021",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/548/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/machimoodus-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -2919,7 +2606,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1694": {
    "n": "Mansfield Hollow State Park",
@@ -2966,28 +2654,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Mashamoquet-Brook-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/429/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "June 2, 2016",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/429/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/mashamoquet-brook-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3010,7 +2684,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1696": {
    "n": "Mianus River State Park",
@@ -3041,28 +2716,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Millers-Pond-State-ParK",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/550/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "November 2, 2012",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/550/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/millers-pond-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3085,7 +2746,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1698": {
    "n": "Minnie Island State Park",
@@ -3208,28 +2870,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Mount-Tom-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/556/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "January 27, 2016",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/556/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/mount-tom-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3252,7 +2900,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1704": {
    "n": "Old Furnace State Park",
@@ -3320,23 +2969,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Penwood-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/563/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "June 15, 2016",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/563/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/penwood-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -3365,7 +3000,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1707": {
    "n": "Putnam Memorial State Park",
@@ -3373,28 +3009,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Putnam-Memorial-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/448/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "July 1, 2008",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/448/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": 2008,
-    "page": "https://ctparks.com/parks/putnam-memorial-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3417,7 +3039,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1708": {
    "n": "Quaddick State Park",
@@ -3554,28 +3177,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Rocky-Neck-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/449/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 5, 2026",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/449/download?inline",
-    "posted": "May 12, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/rocky-neck-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3598,7 +3207,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1712": {
    "n": "Ross Pond State Park",
@@ -3680,28 +3290,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Selden-Neck-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/570/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "February 2010",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/570/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/selden-neck-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3724,7 +3320,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1715": {
    "n": "Sherwood Island State Park",
@@ -3846,28 +3443,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Southford-Falls-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/577/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "April 25, 2011",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/577/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/southford-falls-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3890,7 +3473,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1719": {
    "n": "Squantz Pond State Park",
@@ -3898,28 +3482,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Squantz-Pond-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/454/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "January 13, 2017",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/454/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/squantz-pond-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -3942,7 +3512,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1720": {
    "n": "Stillwater Pond State Park",
@@ -3973,28 +3544,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Stratton-Brook-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/578/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "August 9, 2018",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/578/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/stratton-brook-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -4017,7 +3574,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1722": {
    "n": "Sunny Brook State Park",
@@ -4063,23 +3621,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Sunrise-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/582/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 16, 2021",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/582/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/sunrise-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -4108,7 +3652,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1724": {
    "n": "Talcott Mountain State Park",
@@ -4116,23 +3661,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Talcott-Mountain-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/455/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "March 10, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/455/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/talcott-mountain-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -4161,7 +3692,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1725": {
    "n": "Trimountain State Park",
@@ -4192,28 +3724,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Wadsworth-Falls-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/583/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "September 30, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/583/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/wadsworth-falls-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -4236,7 +3754,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1727": {
    "n": "West Rock Ridge State Park",
@@ -4244,28 +3763,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/West-Rock-Ridge-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/2033/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "April 5, 2023",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/2033/download?inline",
-    "posted": "Aug 07, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/west-rock-ridge-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -4288,7 +3793,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1728": {
    "n": "Wharton Brook State Park",
@@ -4296,23 +3802,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Wharton-Brook-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/588/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "January 20, 2011",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/588/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/wharton-brook-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -4341,7 +3833,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1729": {
    "n": "Windsor Meadows State Park",
@@ -4349,28 +3842,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Windsor-Meadows-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/590/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "April 15, 2019",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/590/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/windsor-meadows-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -4393,7 +3872,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4369": {
    "n": "Shenipsit State Forest",
@@ -5023,28 +4503,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Campgrounds/Salt-Rock-State-Campground",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/2470/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "Oct. 30, 2025",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/2470/download?inline",
-    "posted": "Oct 31, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/salt-rock-state-forest",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -5067,7 +4533,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-6873": {
    "n": "Stoddard Hill State Park",
@@ -5211,23 +4678,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Air-Line-State-Park-Trail/Maps",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/459/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2014-10-15",
-    "date_how": "file stamp 2014 (older than the posting 2023 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://ctparks.com/media/459/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/air-line-state-park-trail",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -5256,7 +4709,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7529": {
    "n": "Beckley Iron Furnace State Park",
@@ -5358,23 +4812,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hop-River-State-Park-Trail/Maps",
    "checked": "2026-11-01",
    "map": {
-    "url": "https://ctparks.com/media/519/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "June 8, 2016",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/519/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-maplinks.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": "2016",
-    "page": "https://ctparks.com/parks/hop-river-state-park-trail",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -5403,7 +4843,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7533": {
    "n": "Larkin State Trail",
@@ -5411,23 +4852,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Larkin-State-Park-Trail",
    "checked": "2026-11-01",
    "map": {
-    "url": "https://ctparks.com/media/2133/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "1/3/2025",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/2133/download?inline",
-    "posted": "Jan 03, 2025",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-maplinks.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": "2025",
-    "page": "https://ctparks.com/parks/larkin-state-park-trail",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -5456,7 +4883,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7534": {
    "n": "Mohegan State Forest",
@@ -5707,28 +5135,14 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Salmon-River-State-Forest",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/566/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "December 22, 2015",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/566/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/salmon-river-state-forest",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
-    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+    "status": "not found (a page shared by 26 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the page in a browser ('Licenses and permits, current regulations, and more')"
    },
    "agency": "government agency (portal.ct.gov)",
    "runs": [],
@@ -5751,7 +5165,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7542": {
    "n": "Satan's Kingdom State Recreation Area",
@@ -5782,23 +5197,9 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Windsor-Locks-Canal-State-Park-Trail",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/589/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "August 26, 2019",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/589/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
-    "page": "https://ctparks.com/parks/windsor-locks-canal-trail-state-park",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)",
+    "how": "the page in a browser ('State Park Maps')"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -5811,7 +5212,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7545": {
    "n": "Wooster Mountain State Park",
@@ -5916,23 +5318,17 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Pachaug-State-Forest",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/436/download?inline",
+    "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map6.pdf",
     "status": "ok",
     "kind": "pdf",
-    "date": "March 26, 2009",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/436/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Hunting Map')",
     "page": "https://ctparks.com/parks/pachaug-state-forest",
-    "map_page": 1
+    "posted": "May 16, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "linked from the agency page (portal.ct.gov)"
    },
    "rules": {
     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
@@ -5945,7 +5341,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7652": {
    "n": "Franklin Wildlife Management Area",
@@ -5976,23 +5373,17 @@
    "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Topsmead-State-Forest",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://ctparks.com/media/457/download?inline",
+    "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map6.pdf",
     "status": "ok",
     "kind": "pdf",
-    "date": "July 18, 2019",
-    "date_how": "printed on the map",
-    "final": "https://ctparks.com/media/457/download?inline",
-    "posted": "Sep 14, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "CT DEEP State Parks",
-    "date_given": null,
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Hunting Map')",
     "page": "https://ctparks.com/parks/topsmead-state-forest",
-    "map_page": 1
+    "posted": "May 16, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "linked from the agency page (portal.ct.gov)"
    },
    "rules": {
     "url": "https://ctparks.com/park-policies",
@@ -6021,7 +5412,8 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-9896": {
    "n": "Auerfarm State Park Scenic Reserve",
@@ -6047,21 +5439,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
   "parks": 157,
-  "map ok": 20,
-  "map found by the bot": 17,
-  "date on the map": 0,
-  "posted date only": 10,
-  "date unknown": 10,
-  "no map": 137,
-  "rules ok": 115,
-  "needs browser": 138,
+  "map ok": 59,
+  "map found by the bot": 56,
+  "date on the map": 23,
+  "posted date only": 25,
+  "date unknown": 11,
+  "no map": 98,
+  "rules ok": 116,
+  "needs browser": 89,
   "handover hints": 0,
   "runs hints": 6,
   "host resting / robots": 0,
-  "map names the park": 13,
+  "map names the park": 48,
   "region overview only": 0
  }
 }

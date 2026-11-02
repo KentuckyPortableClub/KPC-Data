@@ -8375,6 +8375,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -11245,9 +11246,17 @@
    "page": "https://www.mass.gov/locations/mount-sugarloaf-state-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/mt-sugarloaf-state-reservation-trail-map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Download a trail map')",
+    "page": "https://www.mass.gov/locations/mount-sugarloaf-state-reservation",
+    "posted": "2020-03-24",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11259,7 +11268,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8417": {
    "n": "Mount Tom State Reserve",
@@ -11267,9 +11277,17 @@
    "page": "https://www.mass.gov/locations/mount-tom-state-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/mt-tom-state-reservation-trail-map/download",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2017-03-04",
+    "date_how": "file stamp 2017 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Download a trail map')",
+    "page": "https://www.mass.gov/locations/mount-tom-state-reservation",
+    "posted": "Apr 29, 2024",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11281,7 +11299,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8418": {
    "n": "Mystic River State Reserve",
@@ -11303,7 +11322,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8419": {
    "n": "Nantasket Beach State Reserve",
@@ -11325,7 +11345,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8420": {
    "n": "Nasketucket Bay State Reserve",
@@ -11347,7 +11368,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8421": {
    "n": "Neponset River State Reserve",
@@ -11355,9 +11377,17 @@
    "page": "https://www.mass.gov/locations/neponset-river-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/neponset-river-greenway-map-tnf",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Download a trail map')",
+    "page": "https://www.mass.gov/locations/neponset-river-reservation",
+    "posted": "2017-08-27",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11369,7 +11399,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8422": {
    "n": "Pope John Paul II Park State Reserve",
@@ -11377,9 +11408,17 @@
    "page": "https://www.mass.gov/locations/pope-john-paul-ii-park-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.mass.gov/doc/neponset-river-greenway-map-tnf)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://www.mass.gov/doc/neponset-river-greenway-map-tnf",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Download Neponset River Greenway map')",
+    "page": "https://www.mass.gov/locations/pope-john-paul-ii-park-reservation",
+    "posted": "2017-08-27",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11407,7 +11446,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8423": {
    "n": "Purgatory Chasm State Reserve",
@@ -11415,9 +11455,17 @@
    "page": "https://www.mass.gov/locations/purgatory-chasm-state-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/purgatory-chasm-state-reservation-trail-map/download",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2018-10-25",
+    "date_how": "file stamp 2018 (older than the posting 2020 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Download a trail map')",
+    "page": "https://www.mass.gov/locations/purgatory-chasm-state-reservation",
+    "posted": "Mar 24, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11429,7 +11477,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8424": {
    "n": "Quincy Quarries State Reserve",
@@ -11437,9 +11486,17 @@
    "page": "https://www.mass.gov/locations/quincy-quarries-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/quincy-quarries-historic-site-brochure",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Historic site brochure')",
+    "page": "https://www.mass.gov/locations/quincy-quarries-reservation",
+    "posted": "2017-08-27",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11451,7 +11508,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8425": {
    "n": "Quincy Shores State Reserve",
@@ -11473,7 +11531,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8426": {
    "n": "Revere Beach State Reserve",
@@ -11495,7 +11554,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8427": {
    "n": "Rumney Marsh State Reserve",
@@ -11517,7 +11577,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8428": {
    "n": "Salisbury Beach State Reserve",
@@ -11539,7 +11600,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8429": {
    "n": "Sandy Point State Reserve",
@@ -11561,7 +11623,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8430": {
    "n": "Scusset Beach State Reserve",
@@ -11574,16 +11637,18 @@
     "how": ""
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.mass.gov/hunting-in-the-parks",
+    "how": "a link on the page in a browser ('Read the rules for hunting in state parks')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (mass.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8431": {
    "n": "Stony Brook State Reserve",
@@ -11591,9 +11656,17 @@
    "page": "https://www.mass.gov/locations/stony-brook-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/stony-brook-reservation-trail-map/download",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2013-01-08",
+    "date_how": "file stamp 2013 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Download a trail map')",
+    "page": "https://www.mass.gov/locations/stony-brook-reservation",
+    "posted": "Aug 27, 2017",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -11605,7 +11678,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8432": {
    "n": "Walden Pond State Reserve",
@@ -11613,21 +11687,30 @@
    "page": "https://www.mass.gov/locations/walden-pond-state-reservation",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.mass.gov/doc/walden-pond-state-reservation-trail-map/download",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('View a trail map')",
+    "page": "https://www.mass.gov/locations/walden-pond-state-reservation",
+    "posted": "Mar 24, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.mass.gov/doc/walden-ows-draft-policies-update/download",
+    "how": "a link on the page in a browser ('Walden Open Water Swimming Rules and Best Practices')",
+    "status": "ok"
    },
    "agency": "government agency (mass.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8433": {
    "n": "Winthrop Shore State Reserve",
@@ -11649,24 +11732,25 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   }
  },
- "read": "2026-10-30",
+ "read": "2026-11-02",
  "counts": {
   "parks": 421,
-  "map ok": 108,
-  "map found by the bot": 92,
-  "date on the map": 24,
-  "posted date only": 75,
+  "map ok": 117,
+  "map found by the bot": 101,
+  "date on the map": 28,
+  "posted date only": 80,
   "date unknown": 9,
-  "no map": 313,
-  "rules ok": 45,
-  "needs browser": 19,
+  "no map": 304,
+  "rules ok": 47,
+  "needs browser": 1,
   "handover hints": 0,
   "runs hints": 3,
   "host resting / robots": 0,
-  "map names the park": 28,
+  "map names the park": 29,
   "region overview only": 0
  }
 }

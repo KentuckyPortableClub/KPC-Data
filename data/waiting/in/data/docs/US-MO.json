@@ -8510,20 +8510,17 @@
    "page": "https://mostateparks.com/park/mark-twain-state-park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/mark-twain-state-park-and-mark-twain-birthplace-state-historic-site-map",
+    "url": "https://mostateparks.com/basic-page/locator-map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://mostateparks.com/media/pdf/mark-twain-state-park-and-mark-twain-birthplace-state-historic-site-map",
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/park/mark-twain-state-park",
     "posted": "",
-    "checked": "2026-10-31",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Missouri State Parks",
-    "date_given": null,
-    "page": "https://mostateparks.com/park/mark-twain-state-park"
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -8537,7 +8534,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1773": {
    "n": "Meramec State Park",
@@ -10647,7 +10645,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/marktwain",
@@ -17857,21 +17855,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-29",
+ "read": "2026-11-02",
  "counts": {
   "parks": 561,
-  "map ok": 496,
-  "map found by the bot": 482,
+  "map ok": 508,
+  "map found by the bot": 494,
   "date on the map": 241,
   "posted date only": 201,
-  "date unknown": 54,
-  "no map": 65,
+  "date unknown": 66,
+  "no map": 53,
   "rules ok": 26,
-  "needs browser": 1,
+  "needs browser": 0,
   "handover hints": 0,
   "runs hints": 19,
   "host resting / robots": 0,
-  "map names the park": 492,
+  "map names the park": 503,
   "region overview only": 3
  }
 }

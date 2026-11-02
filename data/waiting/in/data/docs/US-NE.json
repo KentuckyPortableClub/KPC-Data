@@ -210,6 +210,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -259,7 +260,8 @@
    "handover": [],
    "notes": [
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
-    "2026-11-01: page https://history.nebraska.gov/visit/mill replaced (page fix: column F URL hit a bot check then redirected to unrelated pages in the owner's browser pass; current page found with History Nebraska site search and read in browser)"
+    "2026-11-01: page https://history.nebraska.gov/visit/mill replaced (page fix: column F URL hit a bot check then redirected to unrelated pages in the owner's browser pass; current page found with History Nebraska site search and read in browser)",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
@@ -743,6 +745,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -1131,6 +1134,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -2828,7 +2832,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/nebraska",
@@ -2860,7 +2864,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/nebraska",
@@ -4898,7 +4902,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/nebraska",
@@ -5462,17 +5466,110 @@
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7,
    "browser_checked": "2026-10-31"
+  },
+  "US-13628": {
+   "n": "Two Rivers Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-11-02",
+   "map": {
+    "url": "https://outdoornebraska.gov/guides-maps/hunting-guides/",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Hunting Guides')",
+    "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-11-02"
+  },
+  "US-13629": {
+   "n": "Killdeer Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-11-02",
+   "map": {
+    "url": "https://outdoornebraska.gov/guides-maps/hunting-guides/",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Hunting Guides')",
+    "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-11-02"
+  },
+  "US-13630": {
+   "n": "Flatsedge Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-11-02",
+   "map": {
+    "url": "https://outdoornebraska.gov/guides-maps/hunting-guides/",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Hunting Guides')",
+    "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
-  "parks": 198,
+  "parks": 201,
   "map ok": 20,
   "map found by the bot": 14,
   "date on the map": 1,
   "posted date only": 12,
   "date unknown": 7,
-  "no map": 178,
+  "no map": 181,
   "rules ok": 24,
   "needs browser": 4,
   "handover hints": 0,

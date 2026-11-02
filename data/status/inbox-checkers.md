@@ -213,3 +213,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 1 days): truth data/truth/US-NY.json held: F-R2 8 OFF rows share the size 46,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 1 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 1 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
+- FROM BOT official documents bot (2026-11-02): grade me: US-SD US-OH US-IA US-RI US-NJ US-SC US-PA US-LA data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482)
