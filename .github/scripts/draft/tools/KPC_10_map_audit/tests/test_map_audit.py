@@ -74,18 +74,31 @@ def test_t4_conflicts():
 
 
 # ---- T5 shape health
+def test_t3_pieces_and_short_forms():
+    assert A.t3_name("Shasta-Trinity National Forest", ["Shasta National Forest", "Trinity National Forest"])["flag"] == "PASS"
+    assert A.t3_name("Bangs BLM Special Recreation Management Area", ["Bangs SRMA"])["flag"] == "PASS"
+    assert A.t3_name("Kentucky River Palisades/Tom Dorman State Nature Preserve", ["Tom Dorman State Nature Preserve"])["flag"] != "PASS"
+
+
+def test_best_acres_same_land_twice():
+    assert A.best_acres([("padus#1", 4631), ("padus#2", 4631)]) == 4631    # PAD-US Fee + Designation = the same land once
+    assert A.best_acres([("padus#1", 100), ("padus#2", 250)]) == 350
+
+
 def test_t5_health():
     good = square(LON, LAT, 500)
     assert A.t5_health([good], good)["flag"] == "PASS"
     bow = Polygon([(LON, LAT), (LON + 0.01, LAT + 0.01), (LON + 0.01, LAT), (LON, LAT + 0.01), (LON, LAT)])
-    r = A.t5_health([bow], A.shapely.make_valid(bow))
-    assert "SELF-INTERSECTION" in r["flags"]
+    r = A.t5_health([bow], A.shapely.make_valid(bow))   # Nov 2: a bow-tie make_valid repairs = a note, not a flag
+    assert r["flag"] == "PASS" and "repaired" in r["note"]
     sliver = square(LON, LAT, 500).union(box(LON + 0.02, LAT, LON + 0.03, LAT + 5 * M))
-    assert "SLIVERS" in A.t5_health([sliver], sliver)["flags"]
+    assert "SLIVERS" not in A.t5_health([sliver], sliver).get("flags", []) and "repaired" in A.t5_health([sliver], sliver)["note"]
+    only = box(LON + 0.02, LAT, LON + 0.03, LAT + 5 * M)
+    assert "SLIVERS" in A.t5_health([only], only)["flags"]
     outer = square(LON, LAT, 500)
     hole = square(LON + 100 * M, LAT + 100 * M, 5)
     holed = Polygon(outer.exterior.coords, [hole.exterior.coords])
-    assert "TINY HOLES" in A.t5_health([holed], holed)["flags"]
+    assert "TINY HOLES" not in A.t5_health([holed], holed).get("flags", []) and "repaired" in A.t5_health([holed], holed)["note"]
     bits = MultiPolygon([square(LON + i * 0.02, LAT, 100) for i in range(60)])   # 60 pieces over ~100 km
     assert "SCATTERED" in A.t5_health([bits], bits)["flags"]
     assert A.t5_health([], None)["flag"] == "EMPTY"

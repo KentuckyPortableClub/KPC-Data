@@ -379,13 +379,21 @@ def acres_from(props: dict):
 def best_acres(rows):
     """Official acres from several records: add the pieces from the same source, then take the biggest source total
     (two sources describing the same park are not added together)."""
+    # Nov 2 (chat 2, pile-down plan): PAD-US often lists the SAME land twice (a Fee record and a Designation record with the same
+    # GIS_Acres, e.g. every national wildlife refuge). Adding both made 172 parks 'exactly 2.0 times smaller than official'
+    # (Waubay NWR drawn 4,633 ac vs 'official' 9,262). Within one source an acres figure equal to one already counted (within 1%)
+    # is the same land again and counts once.
     by = collections.defaultdict(float)
+    seen = collections.defaultdict(list)
     for rid, ac in rows:
         if not isinstance(ac, (int, float)) or ac <= 0:
             continue
         rid = str(rid)
         m = re.match(r"^[a-z]+", rid)
         src = rid.split(":")[0] if ":" in rid else (m.group(0) if m else "main")
+        if any(abs(ac - s) <= 0.01 * max(ac, s) for s in seen[src]):
+            continue
+        seen[src].append(ac)
         by[src] += ac
     return max(by.values()) if by else None
 
@@ -431,7 +439,9 @@ forest forests nf sf recreation recreational rec ra sra nra natural nature prese
 historic historical site sites shs nhs nhp nhl monument monuments memorial battlefield military scenic river rivers wsr wild trail trails nrt nht
 nst greenway wilderness hunting access fishing fish game land lands unit units tract complex lake? of the and at on in a an la le les de du des d
 lake lakes reservoir pond parc provinciale aire zone public use mire mires landscape landscapes inventory bln object objects protected protection habitat
-""".split()) - {"lake?"}
+blm special srma erma rma hma herd sna snp ama pha wpa wwa sfu lfc acec ohv facility hatchery waterfowl production watchable unique wayside retained
+multiple resource mua
+""".split()) - {"lake?"}   # Nov 2 (chat 2): BLM / state short forms ('Bangs SRMA' = 'Bangs BLM Special Recreation Management Area')
 ABBREV = {"mt": "mount", "mtn": "mountain", "ft": "fort", "st": "saint", "ste": "sainte", "pk": "park", "co": "county", "cr": "creek",
           "natl": "national", "nat": "national", "wl": "wildlife", "mgmt": "management", "hist": "historic", "rd": "road", "is": "island",
           "isl": "island", "pt": "point", "spgs": "springs", "spg": "spring", "lk": "lake", "riv": "river", "&": "and"}
@@ -482,6 +492,12 @@ def t3_name(pota_name: str, record_names: list) -> dict:
         return {"flag": "CAN'T TELL", "note": "no record name" if not names else "no POTA name"}
     scored = sorted(((name_score(pota_name, n), n) for n in names), reverse=True)
     best, bn = scored[0]
+    # Nov 2 (chat 2): a park drawn from several records is named by them TOGETHER ('Shasta-Trinity National Forest' = the
+    # Shasta record + the Trinity record; 'Medicine Bow - Routt'): score the records' names as one too
+    if len(names) > 1 and best < 0.9:
+        u = name_score(pota_name, " ".join(names))
+        if u > best:
+            best, bn = u, " + ".join(names[:4])
     flag = "PASS" if best >= 0.9 else ("WEAK" if best >= 0.75 else "MISMATCH")
     res = {"flag": flag, "score": best, "pota_name": pota_name, "record_name": bn}
     if len(scored) > 1 and scored[-1][0] < 0.75:
@@ -556,6 +572,16 @@ def t5_health(raw_parts: list, geom) -> dict:
             continue
         if not g.is_valid:
             reason = shapely.is_valid_reason(g)
+            # Nov 2 (chat 2, HQ pile-down plan A): a fault that make_valid repairs into a real area is repaired, not a flag
+            # (the agency's own record has a bow-tie / nested shell; the map draws the repaired shape). Only a shape that
+            # repairs to nothing stays flagged.
+            try:
+                fx = shapely.make_valid(g)
+                if not fx.is_empty and any(q.area > 0 for q in polys_of(fx)):
+                    notes.append(f"repaired: {reason}")
+                    continue
+            except Exception:  # noqa: BLE001
+                pass
             if "self-intersection" in reason.lower() or "ring self-intersection" in reason.lower():
                 if "SELF-INTERSECTION" not in flags:
                     flags.append("SELF-INTERSECTION")
@@ -572,12 +598,15 @@ def t5_health(raw_parts: list, geom) -> dict:
     pm = polys_of(gm)
     slivers = sum(1 for p in pm if p.area > 0 and 2 * shapely.maximum_inscribed_circle(p, 0.25).length < 10)
     holes = sum(1 for p in pm for r in p.interiors if Polygon(r).area < 100)
-    if slivers:
+    # Nov 2 (chat 2, HQ pile-down plan A): pieces under 10 m wide and holes under 100 m2 cannot be seen on any map and change
+    # no 2-fer (the 50-yard patch is far bigger): dropped as repairs and noted, not flagged. A shape made ONLY of slivers stays flagged.
+    if slivers and slivers == len(pm):
         flags.append("SLIVERS")
-        notes.append(f"{slivers} piece(s) under 10 m wide")
+        notes.append(f"{slivers} piece(s) under 10 m wide (the whole shape)")
+    elif slivers:
+        notes.append(f"repaired: {slivers} piece(s) under 10 m wide dropped")
     if holes:
-        flags.append("TINY HOLES")
-        notes.append(f"{holes} hole(s) under 100 m2")
+        notes.append(f"repaired: {holes} hole(s) under 100 m2 filled")
     if len(pm) > 50:
         b = gm.bounds
         span = math.hypot(b[2] - b[0], b[3] - b[1])
@@ -587,6 +616,8 @@ def t5_health(raw_parts: list, geom) -> dict:
     res = {"flag": flags[0] if flags else "PASS", "pieces": len(pm)}
     if flags:
         res.update(flags=flags, note="; ".join(notes))
+    elif notes:
+        res["note"] = "; ".join(notes)
     return res
 
 
