@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T16:49Z",
+ "checked": "2026-11-02T16:50Z",
  "switched_on": false,
  "results": [
   {
@@ -688,15 +688,13 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-CT.json",
+   "path": "data/fers/US-CT.json.gz",
    "kind": "fers",
    "why": [
     "F-2 candidates 26 -> 37 (over 30% change)",
     "F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561"
    ],
-   "notes": [
-    "replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -901,11 +899,10 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-SC.json.gz",
+   "path": "data/fers/US-SC.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 26 -> 17 (over 30% change)",
-    "F-2 only 16 of 26 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+    "F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"

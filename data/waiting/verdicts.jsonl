@@ -135225,5 +135225,5 @@
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/us-key/US-WV.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/us-key/US-WY.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/campinfo/US-AK.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
-{"date": "2026-11-02T16:49Z", "kind": "tidy", "path": "59 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
-{"date": "2026-11-02T16:49Z", "kind": "fers", "path": "data/fers/US-CT.json", "verdict": "HOLD", "why": ["F-2 candidates 26 -> 37 (over 30% change)", "F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561"], "notes": ["replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"]}
+{"date": "2026-11-02T16:50Z", "kind": "tidy", "path": "59 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
+{"date": "2026-11-02T16:50Z", "kind": "fers", "path": "data/fers/US-SC.json", "verdict": "HOLD", "why": ["F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"], "notes": []}

@@ -2,11 +2,11 @@
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
  "pass1": {
   "cell_m": 20.0,
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3331,
+   "no outline": 3139,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -19,9 +19,9 @@
   "pass": 1,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "166 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10006, US-10031, US-10093, US-10258, US-10507, US-10733, US-10912",
    "92 parks filed under another state but crossing / at the edge of this area kept: US-0930, US-12416, US-12418, US-2165, US-2167, US-2172, US-2179, US-2182",
-   "11 spots outside this area left for their own area",
+   "12 spots outside this area left for their own area",
    "same land left out (pins far apart): US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km; US-5486+US-8149 16.2 km"
   ],
   "same land left out: pins far apart, not both inside the outline": 11,
@@ -30,11 +30,11 @@
  "pass2": {
   "agree with the pass before": 90,
   "cell_m": 10.0,
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3331,
+   "no outline": 3139,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -46,7 +46,7 @@
   "pass": 2,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "166 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10006, US-10031, US-10093, US-10258, US-10507, US-10733, US-10912",
    "92 parks filed under another state but crossing / at the edge of this area kept: US-0930, US-12416, US-12418, US-2165, US-2167, US-2172, US-2179, US-2182"
   ],
   "with official lines": 4
@@ -54,11 +54,11 @@
  "pass3": {
   "agree with the pass before": 37,
   "cell_m": 5.0,
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3331,
+   "no outline": 3139,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -70,7 +70,7 @@
   "pass": 3,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "166 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10006, US-10031, US-10093, US-10258, US-10507, US-10733, US-10912",
    "92 parks filed under another state but crossing / at the edge of this area kept: US-0930, US-12416, US-12418, US-2165, US-2167, US-2172, US-2179, US-2182"
   ],
   "with official lines": 4
@@ -78,11 +78,11 @@
  "pass5": {
   "cell_m": 5.0,
   "checked": 17,
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3331,
+   "no outline": 3139,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -92,7 +92,7 @@
   "pass": 5,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "166 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10006, US-10031, US-10093, US-10258, US-10507, US-10733, US-10912",
    "92 parks filed under another state but crossing / at the edge of this area kept: US-0930, US-12416, US-12418, US-2165, US-2167, US-2172, US-2179, US-2182"
   ],
   "river channels listed as water only (boat spots)": 0,
