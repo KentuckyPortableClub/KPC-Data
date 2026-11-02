@@ -33,7 +33,7 @@ jobs:
           R: ${{ github.repository }}
         run: |
           M=$(gh api repos/$R/git/ref/heads/main --jq .object.sha)
-          S=$(gh api repos/$R/git/ref/heads/site --jq .object.sha 2>/dev/null || echo none)
+          S=$(gh api repos/$R/git/ref/heads/site --jq .object.sha 2>/dev/null) || S=none; case "$S" in [0-9a-f]*) ;; *) S=none ;; esac
           if [ "$M" = "$S" ]; then echo "::notice title=Pages copy::site is already main (${M:0:8}): nothing to publish"
           elif [ "$S" = none ]; then o=$(gh api -X POST repos/$R/git/refs -f ref=refs/heads/site -f sha=$M 2>&1) && echo "::notice title=Pages copy::branch site made at ${M:0:8}" || echo "::warning title=Pages copy::could not make branch site: $(echo $o | head -c 300)"
           else o=$(gh api -X PATCH repos/$R/git/refs/heads/site -f sha=$M -F force=true 2>&1) && echo "::notice title=Pages copy::site moved ${S:0:8} -> ${M:0:8} (one Pages build)" || echo "::warning title=Pages copy::could not move site: $(echo $o | head -c 300)"; fi
