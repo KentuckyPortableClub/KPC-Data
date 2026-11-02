@@ -84,6 +84,7 @@ def build_mismatch(it, rel):
     hb = held_build(kind)
     if not hb: return ''
     ib = str(it.get('build') or '')
+    if not ib and hb in str(it.get('chat11') or ''): ib = hb   # Nov 2: chat 11 wrote the id in its verdict text ('KEY NO US-f3d48d30899 ...'): that counts
     if not ib: return f'the YES has no build id; the waiting room holds build {hb} (write "build": "{hb}" on the item)'
     if ib != hb: return f'the YES is for build {ib}, the waiting room holds build {hb}'
     return ''
@@ -160,7 +161,8 @@ def per_park_release(A, log, U):
     sys.path.insert(0, str(eng))
     from core import key_doctor as KD   # noqa: E402
     import copy, gzip
-    it = KD.latest_item(A.get('items'), 'us-key')
+    its = [x for x in (A.get('items') or []) if isinstance(x, dict) and x.get('what') == 'us-key' and str(x.get('chat11') or '').strip()]
+    it = its[-1] if its else None   # Nov 2: the NEWEST item in the file (the doctor's date sort picked an older one when the newest had no date in its text)
     if not it or KD.first_word(it.get('chat11')) != 'NO':
         print('::notice title=Per-park release::the latest US key verdict is not a KEY NO: nothing to split'); return
     k = json.dumps(it, sort_keys=True, ensure_ascii=False)
