@@ -4,7 +4,7 @@
   "CA-AB": {
    "audited": null,
    "fers_started": null,
-   "status": "waiting for audit"
+   "status": "waiting for key"
   },
   "CA-BC": {
    "audited": null,
@@ -19,17 +19,17 @@
   "CA-NB": {
    "audited": null,
    "fers_started": null,
-   "status": "waiting for audit"
+   "status": "waiting for key"
   },
   "CA-NL": {
    "audited": null,
    "fers_started": null,
-   "status": "waiting for audit"
+   "status": "waiting for key"
   },
   "CA-NS": {
    "audited": null,
    "fers_started": null,
-   "status": "waiting for audit"
+   "status": "waiting for key"
   },
   "CA-NT": {
    "audited": null,
@@ -44,12 +44,12 @@
   "CA-ON": {
    "audited": null,
    "fers_started": null,
-   "status": "waiting for audit"
+   "status": "waiting for key"
   },
   "CA-PE": {
    "audited": null,
    "fers_started": null,
-   "status": "waiting for audit"
+   "status": "waiting for key"
   },
   "CA-QC": {
    "audited": null,
@@ -159,6 +159,11 @@
   "US-KS": {
    "audited": "2026-11-02",
    "fers_started": null,
+   "status": "waiting for audit answers (50 open)"
+  },
+  "US-KY": {
+   "audited": "2026-11-02",
+   "fers_started": "2026-11-02",
    "status": "waiting for audit answers (50 open)"
   },
   "US-LA": {
@@ -279,7 +284,7 @@
   "US-SD": {
    "audited": "2026-11-02",
    "fers_started": null,
-   "status": "waiting for audit answers (48 open)"
+   "status": "waiting for audit answers (47 open)"
   },
   "US-TN": {
    "audited": "2026-11-02",

@@ -55,7 +55,7 @@ def gh(*a):
 
 
 def gate():
-    areas = sorted({pathlib.Path(f).stem for f in glob.glob('data/parkinfo/US-*.json')} | {pathlib.Path(f).stem for f in glob.glob('data/ca-key/CA-??.json')})
+    areas = sorted({pathlib.Path(f).stem for f in glob.glob('data/parkinfo/US-*.json')} | {pathlib.Path(f).stem for f in glob.glob('data/ca-key/CA-??.json')} | {'US-KY'})   # KY has no parkinfo file (HQ 5:40 PM: it was missing from the board)
     A = load(AUD, {}) or {}
     Q = (load(QF, {}) or {}).get('questions') or []
     R = load(READY, {}) or {}
@@ -84,7 +84,7 @@ def gate():
     json.dump(R, open(READY, 'w'), indent=1, sort_keys=True)
     c = {}
     for v in st.values(): k = v['status'].split(' (')[0]; c[k] = c.get(k, 0) + 1
-    msg = ', '.join(f'{k} {n}' for k, n in sorted(c.items())) + (f'; started now: {" ".join(started)}' if started else '') + (' (a key build is saving: nothing started)' if key_saving else '')
+    msg = f'{sum(1 for r in Q if not r.get("answer"))} audit rows open in {len({r.get("area") for r in Q if not r.get("answer")})} areas; ' + ', '.join(f'{k} {n}' for k, n in sorted(c.items())) + (f'; started now: {" ".join(started)}' if started else '') + (' (a key build is saving: nothing started)' if key_saving else '')
     print(f'::notice title=2-fer gate::{msg}', flush=True)
     subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', '2-fer gate (areas ready / waiting)', 'green', msg[:300], 'chat 11 / 12 (audit answers), chat 2 (fixes)'], check=False)
 

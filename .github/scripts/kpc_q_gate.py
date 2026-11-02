@@ -27,7 +27,7 @@ import kpc_tiers as T  # noqa: E402
 QD = pathlib.Path('data/waiting/questions')
 PARKED, SECOND = QD / 'parked.json', QD / 'second-look.json'
 TODAY = dt.date.today().isoformat()
-SKIP = {'parked.json', 'second-look.json', 'not-sure-for-chat9.json'}
+SKIP = {'parked.json', 'second-look.json', 'not-sure-for-chat9.json', 'map-audit.json'}   # Nov 2 5:50 PM: the map audit ASKS about the key's own outline (Q0 parked 1,987 of its rows); never gated
 
 
 def load(p, d):
