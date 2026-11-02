@@ -1,10 +1,33 @@
 {
  "area": "az",
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "states": [
   "US-AZ"
  ],
  "rows": [
+  {
+   "area": "az",
+   "state": "US-AZ",
+   "refs": [
+    "US-4432",
+    "US-4557"
+   ],
+   "names": {
+    "US-4432": "Tonto National Forest",
+    "US-4557": "Arizona Trail National Scenic Trail"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "trail",
+   "size": "346977 yd of line",
+   "sort": 7931.9,
+   "reason": "candidate \u00b7 ['FED:USFS', 'LOCAL']",
+   "id": "US-4432+US-4557@trail@33.179,-111.138",
+   "sources": {
+    "US-4432": "read from the agency 2026-11-02",
+    "US-4557": "official line (trails bot)"
+   },
+   "checked": "2026-11-02"
+  },
   {
    "area": "az",
    "state": "US-AZ",
@@ -24,31 +47,7 @@
    "id": "US-0771+US-1055@area@32.433,-110.912",
    "sources": {
     "US-0771": "read from the agency 2026-11-01",
-    "US-1055": "read from the agency 2026-10-30",
-    "USGS water": "USGS NHDPlus HR file 2022-09-13 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-01"
-  },
-  {
-   "area": "az",
-   "state": "US-AZ",
-   "refs": [
-    "US-4432",
-    "US-4557"
-   ],
-   "names": {
-    "US-4432": "Tonto National Forest",
-    "US-4557": "Arizona Trail National Scenic Trail"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "trail",
-   "size": "179210 yd of line",
-   "sort": 4096.8,
-   "reason": "candidate \u00b7 ['FED:USFS', 'LOCAL']",
-   "id": "US-4432+US-4557@trail@33.179,-111.138",
-   "sources": {
-    "US-4432": "read from the agency 2026-11-01",
-    "US-4557": "official line (trails bot)"
+    "US-1055": "read from the agency 2026-10-30"
    },
    "checked": "2026-11-01"
   },
@@ -162,7 +161,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (61x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -176,12 +175,12 @@
    "kind": "pair",
    "size": "51 same-day activations",
    "sort": 51.0,
-   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "id": "US-4429+US-7381@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (51x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -200,7 +199,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (49x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -219,7 +218,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -238,7 +237,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (41x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -257,7 +256,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (39x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -276,7 +275,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (39x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -288,15 +287,15 @@
    "names": {},
    "what": "not sure",
    "kind": "trail",
-   "size": "1551 yd of line",
-   "sort": 35.5,
+   "size": "1678 yd of line",
+   "sort": 38.4,
    "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "US-4571+US-9757@trail@32.352,-111.101",
+   "id": "US-4571+US-9757@trail@32.353,-111.102",
    "sources": {
     "US-4571": "official line (trails bot)",
     "US-9757": "official line (trails bot)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -315,7 +314,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (35x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -334,7 +333,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -353,7 +352,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (32x, POTA history) / outlines come within 10 m of each other"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -372,7 +371,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -391,7 +390,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -410,7 +409,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -429,7 +428,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (29x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -472,7 +471,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -491,7 +490,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -510,7 +509,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -529,7 +528,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -548,7 +547,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -567,7 +566,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (24x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -586,7 +585,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -605,7 +604,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -624,7 +623,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (22x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -643,7 +642,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -662,7 +661,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (21x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -681,7 +680,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -700,7 +699,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -719,7 +718,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -738,7 +737,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -757,7 +756,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -776,7 +775,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -795,7 +794,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -814,7 +813,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -833,7 +832,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -852,7 +851,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -871,7 +870,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -914,7 +913,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -933,7 +932,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -952,7 +951,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -971,26 +970,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-11-01"
-  },
-  {
-   "area": "az",
-   "state": "",
-   "refs": [
-    "US-0771",
-    "US-4429"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "16 same-day activations",
-   "sort": 16.0,
-   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
-   "id": "US-0771+US-4429@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
-   },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1009,7 +989,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1028,7 +1008,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1047,7 +1027,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1066,7 +1046,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1085,7 +1065,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1104,7 +1084,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1123,7 +1103,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1142,7 +1122,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1161,7 +1141,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1180,7 +1160,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1199,7 +1179,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1218,7 +1198,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1237,7 +1217,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1256,7 +1236,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1275,7 +1255,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1294,7 +1274,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1313,7 +1293,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1332,7 +1312,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1351,7 +1331,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1370,7 +1350,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1389,7 +1369,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1408,7 +1388,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1427,7 +1407,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1446,7 +1426,31 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "az",
+   "state": "US-AZ",
+   "refs": [
+    "US-0771",
+    "US-4429"
+   ],
+   "names": {
+    "US-0771": "Coronado National Memorial",
+    "US-4429": "Coronado National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "12.7 ac",
+   "sort": 12.7,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:NPS', 'FED:USFS']",
+   "id": "US-0771+US-4429@area@31.344,-110.288",
+   "sources": {
+    "US-0771": "read from the agency 2026-11-02",
+    "US-4429": "read from the agency 2026-11-02",
+    "USGS water": "saved copy of the USGS map, read 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1465,7 +1469,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1484,7 +1488,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1503,7 +1507,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1522,7 +1526,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1541,7 +1545,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1560,7 +1564,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1579,7 +1583,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1598,7 +1602,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1617,7 +1621,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1636,7 +1640,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1655,7 +1659,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1674,7 +1678,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1693,7 +1697,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1712,7 +1716,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1731,7 +1735,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1750,7 +1754,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1769,7 +1773,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1788,7 +1792,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1807,7 +1811,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1826,7 +1830,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1845,7 +1849,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1864,7 +1868,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1883,7 +1887,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1902,7 +1906,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1921,7 +1925,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1940,7 +1944,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1959,7 +1963,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1978,7 +1982,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines come within 98 m of each other"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -1997,7 +2001,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2016,7 +2020,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2035,7 +2039,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2054,7 +2058,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2073,7 +2077,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2092,7 +2096,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2111,7 +2115,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2130,7 +2134,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2149,7 +2153,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2168,7 +2172,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2187,7 +2191,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2206,7 +2210,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2225,7 +2229,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2244,7 +2248,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2263,7 +2267,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2282,7 +2286,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2301,7 +2305,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2320,7 +2324,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2339,7 +2343,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2358,7 +2362,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2377,7 +2381,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2396,7 +2400,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2439,7 +2443,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2458,7 +2462,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2477,7 +2481,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2496,7 +2500,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2515,7 +2519,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2534,7 +2538,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2553,7 +2557,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2572,7 +2576,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2591,7 +2595,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2610,7 +2614,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2629,7 +2633,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2648,7 +2652,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2667,7 +2671,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2686,7 +2690,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2705,7 +2709,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines come within 10 m of each other"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2724,7 +2728,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2743,7 +2747,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   {
    "area": "az",
@@ -2755,15 +2759,15 @@
    "names": {},
    "what": "not sure",
    "kind": "trail",
-   "size": "113 yd of line",
-   "sort": 2.6,
+   "size": "172 yd of line",
+   "sort": 3.9,
    "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "US-4557+US-9757@trail@32.020,-110.647",
+   "id": "US-4557+US-9757@trail@32.018,-110.644",
    "sources": {
     "US-4557": "official line (trails bot)",
     "US-9757": "official line (trails bot)"
    },
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   }
  ]
 }

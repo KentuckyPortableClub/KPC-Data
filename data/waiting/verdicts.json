@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T18:27Z",
+ "checked": "2026-11-02T19:05Z",
  "switched_on": false,
  "results": [
   {
@@ -524,17 +524,6 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/CA-ON.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 13 -> 101 (over 30% change)",
-    "F-2 NOT SURE 302 -> 41 (over 30% change)",
-    "F-2 88 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
   },
   {
    "path": "data/fers/CA-QC.json.gz",

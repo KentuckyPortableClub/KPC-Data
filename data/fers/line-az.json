@@ -4,35 +4,35 @@
  "states": [
   "US-AZ"
  ],
- "since": "2026-11-01",
- "date": "2026-11-01 20:23 UTC",
+ "since": "2026-11-02",
+ "date": "2026-11-02 19:04 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "19/19 on 2026-10-31",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 35,
+  "FOUND": 36,
   "DROPPED": 193,
-  "NEVER LOOKED AT": 311
+  "NEVER LOOKED AT": 310
  },
  "report": {
   "pass1": {
-   "date": "2026-11-01",
-   "pairs tested": 546,
-   "pairs whose boxes touch": 546
+   "date": "2026-11-02",
+   "pairs tested": 572,
+   "pairs whose boxes touch": 572
   },
   "pass2": {
-   "agree with the pass before": 682,
-   "date": "2026-11-01",
-   "pairs tested": 89
+   "agree with the pass before": 412,
+   "date": "2026-11-02",
+   "pairs tested": 39
   },
   "pass3": {
-   "agree with the pass before": 411,
-   "date": "2026-11-01",
-   "pairs tested": 85
+   "agree with the pass before": 324,
+   "date": "2026-11-02",
+   "pairs tested": 37
   },
   "pass5": {
-   "checked": 13,
-   "date": "2026-11-01",
+   "checked": 14,
+   "date": "2026-11-02",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,15 +41,15 @@
   "US-AZ": "data/fers/US-AZ.json"
  },
  "US-AZ": {
-  "rows": 712,
-  "live": 39,
+  "rows": 725,
+  "live": 40,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 2
   },
-  "dropped": 318,
-  "merged": 353
+  "dropped": 328,
+  "merged": 355
  },
  "states_ready": [
   "US-AZ"
