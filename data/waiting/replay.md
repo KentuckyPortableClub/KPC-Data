@@ -1,31 +1,31 @@
 # Waiting room REPLAY TEST
-Run 2026-11-02 16:30Z: **FAIL** (17 of 38 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-11-02 16:35Z: **FAIL** (29 of 38 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
-| **MISS** | ACCESS: 178 far points (NY, Oct 28 15:57, the tuned run that still kept on-land far points) | HOLD | HOLD: case could not load: data 2c6610ba:data/access/US-NY.json not in the git history (needs fetch-depth 0) |
-| **MISS** | ACCESS: a timed-out layer shrinks a state (simulated: 70% of NY parks dropped) | HOLD | HOLD: case could not load: data 1600e869:data/access/US-NY.json not in the git history (needs fetch-depth 0) |
-| **MISS** | FED CAMPS: office-address rows + ids in two state files (GA + SC before the Oct 29 sweep) | HOLD | HOLD: case could not load: links 54a2a9410:data/campfed/US-GA.json not in the git history (needs fetch-depth 0) |
+| ok | ACCESS: 178 far points (NY, Oct 28 15:57, the tuned run that still kept on-land far points) | HOLD | HOLD: F-A1 47 points over 100 km from their park pin (not a line park), e.g. US-10284 376 km, US-10284 377 km, US-10284 377 km |
+| ok | ACCESS: a timed-out layer shrinks a state (simulated: 70% of NY parks dropped) | HOLD | HOLD: F-A2 points 3164 -> 1383 (more than 40% gone) |
+| **MISS** | FED CAMPS: office-address rows + ids in two state files (GA + SC before the Oct 29 sweep) | HOLD | HOLD: case could not load: links 54a2a9410:data/campfed/US-GA.json not in the git history (needs fetch-depth 0) nor on branch replay-files |
 | ok | POTA LIST: a short answer would retire parks (simulated: 3% fewer parks) | HOLD | HOLD: F-P1 POTA parks 79,917 -> 77,519 (more than 1% or 5 gone): needs a second read |
 | ok | 2-FER LINE CHECK: READY with rows not checked (Michigan water lesson, simulated) | HOLD | HOLD: F-S1 status READY with 1 rows STORE NOT READ / not checked (must be STOPPED); no live copy: first time this file is published; F-S1 1 rows where a map did not a |
-| **MISS** | DOCS: 83 WV parks on one rules page (Oct 28 11:27) | HOLD | HOLD: case could not load: data 7a2f9ae1:data/docs/US-WV.json not in the git history (needs fetch-depth 0) |
-| **MISS** | DOCS: VA maps on inciweb (Oct 28 15:08) | HOLD | HOLD: case could not load: data cac42d02:data/docs/US-VA.json not in the git history (needs fetch-depth 0) |
-| **MISS** | CLOSURES: standing rules, a Virginia row under KY, fee notes, results rows (round 8, Oct 29 01:14): bad rows taken out | HOLD | HOLD: case could not load: data c26e147c:data/closures/US-KY.json not in the git history (needs fetch-depth 0) |
+| ok | DOCS: 83 WV parks on one rules page (Oct 28 11:27) | HOLD | HOLD: F-D1 one map page on 82 of 172 parks: https://wvdnr.gov/lands-waters/stream-access-points/; F-D2 1 map links on a banned host (fire news / map pins / social), e |
+| ok | DOCS: VA maps on inciweb (Oct 28 15:08) | HOLD | HOLD: F-D1 one map page on 26 of 184 parks: https://inciweb.wildfire.gov/; F-D2 27 map links on a banned host (fire news / map pins / social), e.g. https://www.google |
+| ok | CLOSURES: standing rules, a Virginia row under KY, fee notes, results rows (round 8, Oct 29 01:14): bad rows taken out | HOLD | LIVE-FILTERED: US-0295: a fee / hours / standing note: "Youth Under 16 - Free, no permit needed"; US-10098: a fee / hours / standing note: "Youth under 16: Free, no permit nee |
 | ok | HOURS: one statewide fee line on 25 parks (simulated from the live KY file) | HOLD | HOLD: F-H1 the same fees line on 25 parks (statewide / agency-wide text?): "there is no fee to visit wolf creek national fish hatchery" |
 | ok | PARKING EXPLORER: a server did not answer and a state lost its leads (simulated: MN wiped) | HOLD | HOLD: F-L1 leads 8 -> 0 (wiped or under half) |
-| **MISS** | CAMPGROUND INFO: elevation as RV length (675 / 980 ft) (Oct 28 07:29) | HOLD | HOLD: case could not load: data b7b5835e:data/campinfo/US-KY.json not in the git history (needs fetch-depth 0) |
-| **MISS** | CAMPGROUND INFO: the 877 reservation line as a camp phone (Oct 28 10:47) | HOLD | HOLD: case could not load: data c5b9e438:data/campinfo/US-KY.json not in the git history (needs fetch-depth 0) |
-| **MISS** | CAMPGROUND INFO: '$5 Million Renovation' as a fee (Oct 28 15:28) | HOLD | HOLD: case could not load: data d6769172:data/campinfo/US-KY.json not in the git history (needs fetch-depth 0) |
-| **MISS** | TRUTH: WV statewide '1.4 million acres' on 76 WMAs (Oct 28 21:48) | HOLD | HOLD: case could not load: data fdd67e55:data/truth/US-WV.json not in the git history (needs fetch-depth 0) |
-| **MISS** | INTAKE: a read error as REJECT + Czech READY on a credit line (Oct 28 07:22) | HOLD | HOLD: case could not load: data 547d47e1:data/intake/ready.json not in the git history (needs fetch-depth 0) |
-| **MISS** | CANADA KEY: retired CA-2156 still outlined (Oct 28 01:49) | HOLD | HOLD: case could not load: data fc3bf234:data/ca-key/CA-QC.json not in the git history (needs fetch-depth 0) |
+| ok | CAMPGROUND INFO: elevation as RV length (675 / 980 ft) (Oct 28 07:29) | HOLD | HOLD: F-I1 4 RV lengths outside 10-100 ft, e.g. Higginson-Henry WMA designated campsites 675 ft |
+| ok | CAMPGROUND INFO: the 877 reservation line as a camp phone (Oct 28 10:47) | HOLD | HOLD: F-I1 4 RV lengths outside 10-100 ft, e.g. Higginson-Henry WMA designated campsites 675 ft; F-I4 4 toll-free reservation numbers kept as a camp phone, e.g. Bandy |
+| ok | CAMPGROUND INFO: '$5 Million Renovation' as a fee (Oct 28 15:28) | HOLD | HOLD: F-I5 1 fees that read like news / money totals, e.g. Kentucky Horse Park Campground |
+| ok | TRUTH: WV statewide '1.4 million acres' on 76 WMAs (Oct 28 21:48) | HOLD | HOLD: F-R1 76 parks OFF on one number from one page (1,400,000.0 ac, https://wvdnr.gov/lands-waters/wildlife-management-areas/); F-R2 76 OFF rows share the size 1,400 |
+| ok | INTAKE: a read error as REJECT + Czech READY on a credit line (Oct 28 07:22) | HOLD | HOLD: F-K known answer: "USACE reservoirs (Army Corps of Engineer" is water surfaces only (rule B6), never READY; F-N1 "SCDNR managed lands (public viewer) on C": a r |
+| ok | CANADA KEY: retired CA-2156 still outlined (Oct 28 01:49) | HOLD | HOLD: F-O3 retired parks still outlined: CA-2156 / HOLD: F-O3 retired parks still in the outline index: CA-2045, CA-2156, CA-2160, CA-2161, CA-2266 |
 | ok | DOCS: map / rules links that answer an error (simulated: 3 parks pointing at pages that do not exist) | HOLD | HOLD: F-D3 3 of 3 re-tested links dead, e.g. https://www.nps.gov/kpc-replay-dead-link-2.htm; no live copy: first time this file is published |
 | ok | 2-FERS: a known pair dropped (simulated: Mammoth Cave x Green River removed from the live KY file) | HOLD | HOLD: F-K known 2-fer missing: US-0050+US-10105@area@37.17,-86.15; F-K known 2-fer missing: US-0050 + US-10105 |
 | ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S3 3 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-2028+US-2061+US-4374 500 km, US-2028+US-4374 500 km, US-2061+US-4374 500 km; F-S2  |
 | ok | GOOD: Kentucky 2-fers (live) | PASS | PASS:  |
 | ok | GOOD: Canada key, Ontario (live) | PASS | PASS:  |
 | ok | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | PASS:  |
-| **MISS** | GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before) | PASS | HOLD: case could not load: data 1600e869:data/access/US-NY.json not in the git history (needs fetch-depth 0) |
+| ok | GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before) | PASS | PASS:  |
 | **MISS** | ATTACK A1 (chat 8): Ohio 2-fers, every candidate pair wrong, same count | HOLD | HOLD: case could not load: 'NoneType' object has no attribute 'get' |
 | **MISS** | ATTACK A1 (chat 8): Indiana 2-fers, pairs rotated | HOLD | HOLD: case could not load: 'NoneType' object has no attribute 'get' |
 | ok | ATTACK A2 (chat 8): Ohio outline key, outlines shuffled to other parks | HOLD | HOLD: F-O2 263 of 270 outlines carry a layer name that shares no word with the park (97%; live 4/270): outlines swapped to other parks?; F-O4 59 of 60 changed outline |
