@@ -135225,21 +135225,8 @@
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/us-key/US-WV.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/us-key/US-WY.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/campinfo/US-AK.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
-{"date": "2026-11-02T17:34Z", "kind": "tidy", "path": "59 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
-{"date": "2026-11-02T17:35Z", "kind": "fers", "path": "data/fers/US-CO.json.gz", "verdict": "HOLD", "why": ["F-2 candidates 40 -> 64 (over 30% change)", "F-2 25 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g. US-0033+US-4575, US-0059+US-4558, US-0652+US-4575"], "notes": ["replaces live data/fers/US-CO.json (same file, other format): promotion removes the old name"]}
-{"date": "2026-11-02T17:37Z", "kind": "tidy", "path": "4 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
-{"date": "2026-11-02T17:37Z", "kind": "fers", "path": "data/fers/US-CT.json", "verdict": "HOLD", "why": ["F-2 candidates 26 -> 37 (over 30% change)", "F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561"], "notes": ["replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"]}
-{"date": "2026-11-02T17:37Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "fers", "path": "data/fers/US-SC.json", "verdict": "HOLD", "why": ["F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/AU.json", "verdict": "HOLD", "why": ["F-O1 outlines 9395 -> 8044 (more than 1% lost)"], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/BZ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/CV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/CZ.json", "verdict": "HOLD", "why": ["F-O1 outlines 232 -> 215 (more than 1% lost)"], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/DO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/HU.json", "verdict": "HOLD", "why": ["F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?"], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/ID.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/IE.json", "verdict": "HOLD", "why": ["F-O1 outlines 175 -> 161 (more than 1% lost)"], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/NZ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/PA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/PR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-11-02T17:37Z", "kind": "key", "path": "data/world-key/PT.json", "verdict": "HOLD", "why": ["F-O1 outlines 335 -> 327 (more than 1% lost)"], "notes": []}
+{"date": "2026-11-02T16:54Z", "kind": "tidy", "path": "59 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
+{"date": "2026-11-02T16:55Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-02T17:38Z", "kind": "key", "path": "data/ca-key/CA-QC.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-02T17:38Z", "kind": "fers", "path": "data/fers/US-CT.json", "verdict": "HOLD", "why": ["F-2 candidates 26 -> 37 (over 30% change)", "F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561"], "notes": ["replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"]}
+{"date": "2026-11-02T17:38Z", "kind": "fers", "path": "data/fers/US-SC.json", "verdict": "HOLD", "why": ["F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"], "notes": []}
