@@ -1,6 +1,6 @@
 {
  "area": "US-KY",
- "built": "2026-11-01",
+ "built": "2026-11-02",
  "tool": "KPC-map-audit",
  "parks": [
   {
@@ -8584,7 +8584,7 @@
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 267.7
+     "metres": 266.8
     },
     "T2": {
      "flag": "N/A",
@@ -8609,9 +8609,9 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.9,
+     "detail_m": 0.09,
      "declared_m": null,
-     "coordinate_step_m": 0.9,
+     "coordinate_step_m": 0.09,
      "median_spacing_m": 0.0,
      "flag": "PASS"
     },
@@ -8626,7 +8626,7 @@
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "NEAR: POTA's pin is 268 m outside the outline."
+   "why": "NEAR: POTA's pin is 267 m outside the outline."
   },
   {
    "ref": "US-3792",
@@ -12613,7 +12613,7 @@
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 103.9
+     "metres": 137.0
     },
     "T2": {
      "flag": "N/A",
@@ -12638,9 +12638,9 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.8,
+     "detail_m": 0.08,
      "declared_m": null,
-     "coordinate_step_m": 0.8,
+     "coordinate_step_m": 0.08,
      "median_spacing_m": 0.0,
      "flag": "PASS"
     },
@@ -12655,7 +12655,7 @@
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "NEAR: POTA's pin is 104 m outside the outline."
+   "why": "NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-4687",
