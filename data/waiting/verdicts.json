@@ -1,111 +1,7 @@
 {
- "checked": "2026-11-02T17:38Z",
+ "checked": "2026-11-02T17:40Z",
  "switched_on": false,
  "results": [
-  {
-   "path": "data/ca-key/CA-AB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-BC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-ON.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-QC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-YT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/answers-applied.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/hardlook-joins.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/index.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/layers.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/why-not.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
   {
    "path": "data/campinfo/US-MA.json",
    "kind": "campinfo",
@@ -828,8 +724,8 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 15 -> 45 (over 30% change)",
-    "F-2 30 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
+    "F-2 candidates 15 -> 46 (over 30% change)",
+    "F-2 31 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
    ],
    "notes": [],
    "verdict": "HOLD"
