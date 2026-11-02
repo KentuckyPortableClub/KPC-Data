@@ -1,5 +1,5 @@
 # Waiting room REPLAY TEST
-Run 2026-11-02 16:13Z: **FAIL** (17 of 38 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-11-02 16:30Z: **FAIL** (17 of 38 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
