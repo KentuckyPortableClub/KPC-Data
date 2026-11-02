@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 196 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 125 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -16,7 +16,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-01 | 1 | data/docs/US-IN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-01 | 1 | data/fers/US-AR.json | HOLD | F-2 candidates 12 -> 70 (over 30% change); F-2 59 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279; F-S3 1 live rows whose two |
 | 2026-11-01 | 1 | data/fers/US-AZ.json.gz | HOLD | F-2 NOT SURE 6 -> 2 (over 30% change); F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km |
-| 2026-11-01 | 1 | data/fers/US-CT.json.gz | HOLD | F-2 candidates 26 -> 37 (over 30% change); F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561 |
 | 2026-11-01 | 1 | data/fers/US-FL.json.gz | HOLD | F-2 candidates 145 -> 192 (over 30% change); F-2 NOT SURE 41 -> 24 (over 30% change); F-2 56 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0240+US-3620, |
 | 2026-11-01 | 1 | data/fers/US-GA.json.gz | HOLD | F-2 6 new candidate pairs since the live file (over 10% of 52): a person looks at them first, e.g. US-10397+US-4473, US-4473+US-4556, US-4556+US-7135 |
 | 2026-11-01 | 1 | data/fers/US-IL.json | HOLD | F-2 4 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-4112+US-9893 |
@@ -26,11 +25,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-01 | 1 | data/fers/US-NE.json | HOLD | F-2 candidates 15 -> 45 (over 30% change); F-2 30 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360 |
 | 2026-11-01 | 1 | data/fers/US-OK.json.gz | HOLD | F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-6347+US-8122 326 km |
 | 2026-11-01 | 1 | data/fers/US-PA.json.gz | HOLD | F-2 candidates 45 -> 152 (over 30% change); F-2 104 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0619+US-4239, US-0681+US-9140, US-0684+US-1347 |
-| 2026-11-01 | 1 | data/fers/US-SC.json.gz | HOLD | F-2 candidates 26 -> 17 (over 30% change); F-2 only 16 of 26 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) |
 | 2026-11-01 | 1 | data/fers/US-SD.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360 |
 | 2026-11-01 | 1 | data/fers/US-TN.json | HOLD | F-2 14 new candidate pairs since the live file (over 10% of 64): a person looks at them first, e.g. US-0034+US-4556, US-0034+US-8313, US-0685+US-2955 |
 | 2026-11-01 | 1 | data/fers/US-TX.json.gz | HOLD | F-2 candidates 12 -> 41 (over 30% change); F-2 NOT SURE 20 -> 3 (over 30% change); F-2 29 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US- |
-| 2026-11-01 | 1 | data/fers/US-WV.json.gz | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-01 | 1 | data/trails/US-11393.json | HOLD | F-T3 length 36 -> 77 km (outside -25% / +50%) |
 | 2026-11-01 | 1 | data/trails/US-11905.json | HOLD | F-T2 points 1281 -> 61 (under half the saved line); F-T3 length 187 -> 4 km (outside -25% / +50%) |
 | 2026-11-01 | 1 | data/trails/US-9905.json | HOLD | F-T2 points 153 -> 55 (under half the saved line); F-T3 length 6 -> 3 km (outside -25% / +50%) |
@@ -44,7 +41,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-01 | 1 | data/truth/US-NY.json | HOLD | F-R2 8 OFF rows share the size 46,000.0 ac |
 | 2026-11-01 | 1 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-01 | 1 | data/truth/US-TX.json | HOLD | F-R2 5 OFF rows share the size 675,000.0 ac |
-| 2026-11-02 | 0 | data/ca-key/CA-QC.json | HOLD | F-O1 outlines 450 -> 438 (more than 1% lost) |
 | 2026-11-02 | 0 | data/docs/US-AK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-02 | 0 | data/docs/US-AL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-02 | 0 | data/docs/US-AR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
@@ -101,34 +97,22 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 0 | data/fers/US-WA.json.gz | HOLD | F-2 candidates 40 -> 196 (over 30% change); F-2 158 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g. US-0055+US-4563, US-0056+US-4563, US-0575+US-12250; F-S3 5 live rows whose  |
 | 2026-11-02 | 0 | data/fers/US-WI.json | HOLD | F-2 candidates 27 -> 3 (over 30% change); F-2 NOT SURE 8 -> 105 (over 30% change); F-2 only 3 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer mi |
 | 2026-11-02 | 0 | data/fers/US-WY.json.gz | HOLD | F-2 candidates 45 -> 72 (over 30% change); F-2 NOT SURE 46 -> 12 (over 30% change); F-2 only 29 of 45 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 43 new candi |
-| ? | ? | data/ca-key/CA-AB.json | PASS |  |
-| ? | ? | data/ca-key/CA-BC.json | PASS |  |
-| ? | ? | data/ca-key/CA-NL.json | PASS |  |
-| ? | ? | data/ca-key/CA-NS.json | PASS |  |
-| ? | ? | data/ca-key/CA-NT.json | PASS |  |
-| ? | ? | data/ca-key/CA-ON.json | PASS |  |
-| ? | ? | data/ca-key/CA-SK.json | PASS |  |
-| ? | ? | data/ca-key/CA-YT.json | PASS |  |
 | ? | ? | data/fers/CA-AB.json.gz | PASS |  |
 | ? | ? | data/fers/CA-NT.json | PASS |  |
 | ? | ? | data/fers/CA-QC.json.gz | PASS |  |
 | ? | ? | data/fers/US-AL.json | PASS |  |
+| ? | ? | data/fers/US-CT.json | ? |  |
+| ? | ? | data/fers/US-IA.json | PASS |  |
 | ? | ? | data/fers/US-IN.json.gz | PASS |  |
 | ? | ? | data/fers/US-KS.json | PASS |  |
 | ? | ? | data/fers/US-KY.json.gz | PASS |  |
 | ? | ? | data/fers/US-MS.json | HOLD | F-2 NOT SURE 6 -> 9 (over 30% change); F-2 8 new candidate pairs since the live file (over 10% of 5): a person looks at them first, e.g. US-0390+US-4498, US-2547+US-7119, US-4493+US-7114 |
 | ? | ? | data/fers/US-NH.json.gz | PASS |  |
 | ? | ? | data/fers/US-NV.json.gz | PASS |  |
+| ? | ? | data/fers/US-SC.json | ? |  |
+| ? | ? | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | ? | ? | data/hours/US-KY.json | PASS |  |
 | 2026-11-01 | 1 | data/trails/finds-lines-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-01 | 1 | data/world-key/CM.json | RELEASE |  |
-| 2026-11-01 | 1 | data/world-key/GB.json | RELEASE |  |
-| 2026-11-01 | 1 | data/world-key/PY.json | RELEASE |  |
-| ? | ? | data/ca-key/answers-applied.json | PASS |  |
-| ? | ? | data/ca-key/hardlook-joins.json | PASS |  |
-| ? | ? | data/ca-key/index.json | PASS |  |
-| ? | ? | data/ca-key/layers.json | PASS |  |
-| ? | ? | data/ca-key/why-not.json | PASS |  |
 | ? | ? | data/us-key/answers-applied.json | PASS |  |
 | ? | ? | data/us-key/changed-parks.json | PASS |  |
 | ? | ? | data/us-key/index.json | PASS |  |
@@ -139,61 +123,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/why-not.json | PASS |  |
 | ? | ? | data/us-key/zip-mszp.json | PASS |  |
 | ? | ? | data/us-key/zip-mszw.json | PASS |  |
-| ? | ? | data/world-key/AE.json | RELEASE |  |
-| ? | ? | data/world-key/AS.json | RELEASE |  |
-| ? | ? | data/world-key/AX.json | RELEASE |  |
-| ? | ? | data/world-key/BE.json | RELEASE |  |
-| ? | ? | data/world-key/BM.json | RELEASE |  |
-| ? | ? | data/world-key/BS.json | RELEASE |  |
-| ? | ? | data/world-key/BT.json | RELEASE |  |
-| ? | ? | data/world-key/BW.json | RELEASE |  |
-| ? | ? | data/world-key/BZ.json | RELEASE |  |
-| ? | ? | data/world-key/CC.json | RELEASE |  |
-| ? | ? | data/world-key/CD.json | RELEASE |  |
-| ? | ? | data/world-key/CG.json | RELEASE |  |
-| ? | ? | data/world-key/CL.json | RELEASE |  |
-| ? | ? | data/world-key/CO.json | RELEASE |  |
-| ? | ? | data/world-key/CV.json | RELEASE |  |
-| ? | ? | data/world-key/CX.json | RELEASE |  |
-| ? | ? | data/world-key/DO.json | RELEASE |  |
-| ? | ? | data/world-key/EC.json | RELEASE |  |
-| ? | ? | data/world-key/ES.json | RELEASE |  |
-| ? | ? | data/world-key/FO.json | RELEASE |  |
-| ? | ? | data/world-key/GA.json | RELEASE |  |
-| ? | ? | data/world-key/GE.json | RELEASE |  |
-| ? | ? | data/world-key/GL.json | RELEASE |  |
-| ? | ? | data/world-key/GR.json | RELEASE |  |
-| ? | ? | data/world-key/GT.json | RELEASE |  |
-| ? | ? | data/world-key/GU.json | RELEASE |  |
-| ? | ? | data/world-key/GY.json | RELEASE |  |
-| ? | ? | data/world-key/ID.json | RELEASE |  |
-| ? | ? | data/world-key/IM.json | RELEASE |  |
-| ? | ? | data/world-key/JE.json | RELEASE |  |
-| ? | ? | data/world-key/KE.json | RELEASE |  |
-| ? | ? | data/world-key/LK.json | RELEASE |  |
-| ? | ? | data/world-key/LR.json | RELEASE |  |
-| ? | ? | data/world-key/MK.json | RELEASE |  |
-| ? | ? | data/world-key/MP.json | RELEASE |  |
-| ? | ? | data/world-key/MT.json | RELEASE |  |
-| ? | ? | data/world-key/MV.json | RELEASE |  |
-| ? | ? | data/world-key/MX.json | RELEASE |  |
-| ? | ? | data/world-key/NC.json | RELEASE |  |
-| ? | ? | data/world-key/NF.json | RELEASE |  |
-| ? | ? | data/world-key/NI.json | RELEASE |  |
-| ? | ? | data/world-key/NZ.json | RELEASE |  |
-| ? | ? | data/world-key/OM.json | RELEASE |  |
-| ? | ? | data/world-key/PA.json | RELEASE |  |
-| ? | ? | data/world-key/PE.json | RELEASE |  |
-| ? | ? | data/world-key/PF.json | RELEASE |  |
-| ? | ? | data/world-key/PR.json | RELEASE |  |
-| ? | ? | data/world-key/QA.json | RELEASE |  |
-| ? | ? | data/world-key/RW.json | RELEASE |  |
-| ? | ? | data/world-key/SJ.json | RELEASE |  |
-| ? | ? | data/world-key/SV.json | RELEASE |  |
-| ? | ? | data/world-key/UM.json | RELEASE |  |
-| ? | ? | data/world-key/UY.json | RELEASE |  |
-| ? | ? | data/world-key/VI.json | RELEASE |  |
-| ? | ? | data/world-key/ZA.json | RELEASE |  |
 | ? | ? | data/wwff/CTFF.json | HOLD | F-4 checker error: AttributeError: 'list' object has no attribute 'get' |
 | ? | ? | data/wwff/D4FF.json | HOLD | F-4 checker error: AttributeError: 'list' object has no attribute 'get' |
 | ? | ? | data/wwff/KFF.json | HOLD | F-4 checker error: AttributeError: 'list' object has no attribute 'get' |
@@ -208,6 +137,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | file | open | total |
 |---|---|---|
 | aliases-nov1.json | 0 | 0 |
+| aliases-nov2.json | 0 | 0 |
 | aliases-oct31.json | 0 | 33 |
 | gis-hunter.json | 0 | 534 |
 | hardlook.json | 0 | 0 |
@@ -221,10 +151,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | pin-typos.json | 0 | 0 |
 | world-finder.json | 0 | 3762 |
 
-## Approvals not used yet: 5
+## Approvals not used yet: 4
 
 - us-key: chat 11 'KEY NO 2026-11-01 (build of 09:11 UTC, sample read: 29 of 30 fine, trails and aliases look right). One bad join is still in: Milford State Fish Hatchery US-7393 (KS) is joined to 'Milford Wildlife Area' (sgksb27, size 0). A fish hatchery is not the wildlife area. Make it a pin, rebuild, and I will say KEY YES.' by chat 11, chat 2 '-'
 - us-key: chat 11 'KEY NO 2026-11-01 11:14 UTC build (+218): sample 20 of 30 fine (67%). The fault class is the new 'same full name, far from the pin' joins (pin NOT inside the record). Bad or doubtful: Walnut Creek SRA US-4036 (NE), Smith River BLM RMA US-12840 (joined to the 329,827 ac Smith River NRA, a bigger parent), Twin Buttes US-10944, Clear Creek BLM RMA US-13581, Long Lake SRA US-4260 (joined to a State Habitat Area), Pine Island SP US-13016, Mt. St. Helens NM US-3385 (0 ac pieces), Salt Creek SRA US-5688 (second piece Salt Creek F&W Area is another place), Fortymile WSR US-11828 (joined to the 247,230 ac SRMA), Julian Price US-12371 (a wetlands heritage area, a part). The Milford hatchery join is gone (good). Fix: no outline when the pin is outside the record unless size and kind also agree, then rebuild.' by chat 11, chat 2 '-'
-- ca-key: chat 11 'KEY YES 2026-11-01 Canada key (preview of 103 gained, 0 lost, 0 grade changes), fresh read of the 30-park sample: all 30 are the same-name record (BC local and regional parks, Alberta public lands, a Quebec regional park), pin inside, sizes sensible (Memorial Park 2 ac, Ouareau 35,584 ac). Names, kinds, acres only; no maps seen.' by chat 11, chat 2 'rechecked 2026-11-02 6:50 AM (chat 2 G-4): 103 gained / 0 lost / 0 grade changes = the Canada answers BOT A applied (163 YES / 111 NO) + trail lines; no far or parent joins in the gained list. OK to release.'
 - fers-US-KY: chat 11 '' by chat 2, chat 2 'rechecked 2026-11-02 8:45 AM (chat 2 G-4): only the river-route rows were redone (Lewis and Clark + Trail of Tears pairs, run of 6:43 AM) with the creek cut (R5a: narrow channels off the main river no longer count) and each row now carries the trail's own 100-ft bank zone (route_zone, drawn on the Finder). Ballard WMA x L&C x Trail of Tears: 9.3 mi of bank -> 5.3 mi, the strip up the creek through the fields is gone (Brandon's Nov 1 screenshot). Every other row is unchanged. Please map-check the Ballard and Boatwright rows.'
-- ca-key: chat 11 'KEY YES CA-f3d48d30899 (built 16:08 UTC, +56 outlines, 13 back to pins): 30-park sample is clean (30 of 30); the big records (Chapleau 1.79M ac, Frontenac Arch 628k ac) are real.' by chat 11, chat 2 '-'
+- world-key: chat 11 'KEY YES 2026-11-02 (chat 12, names / kinds only, no maps seen; 66 PASS world-key files in grade-queue.md). Checked EVERY join in the queued files (44,203 joins): 42,304 (95.7%) have a park name and record name that share their proper words; I read the other ~140 by hand across 27 files (all of AX BZ CL CV DO GA GL GR GT ID LK MX PA PE PF PR ZA NZ CO, a 9-row sample each of IE IT DE SI PT DK BE HU): all are translations, accents, abbreviations (NSG, TN, AMP) or same-site wider names, EXCEPT these 10, KEEP AS PINS: BZ-0051 (Bird Caye BS joined to Laughing Bird Caye), CV-0012 (Protected Landscape joined to a Natural Monument record), DO-0110 (Costa Azul landscape joined to a scenic road), PR-0057 (Boqueron wildlife refuge joined to the State Forest), NZ-0150 (Lake Sumner Regional Park joined to Lake Sumner Forest Park), NZ-0624 (Atuanui Recreation Site joined to a Scenic Reserve), NZ-0676 (Ecological Park joined to Wildlife Refuge), ID-0060 (Provincial Park joined to the CA Kawah Ijen nature reserve), PA-0001 + PA-0054 (one San Lorenzo record offered to two parks). Sample result 30/30 equivalent after those 10. NOT released by me: CM.json and PY.json are HELD by check F-O2 but all 20 CM and 29 PY joins are right (accents / short names like Faro, Nki: the check compares words badly): chat 2 / chat 10 may release them; FR.json + GB.json are HELD by F-O3: FR-16712 and FR-3744 are retired parks still outlined (drop those two outlines; FR-14241 and GB-2511 have none). Acres not checked. AU / GB / PL / FR / IT old bad lists (carried rows) not re-read.' by chat 12, chat 2 'rechecked 2026-11-02 (chat 2 G-4): OK. The world files were already released at 16:37 UTC with chat 12's 10 KEEP-AS-PIN parks still joined (BZ-0051, CV-0012, DO-0110, PR-0057, NZ-0150, NZ-0624, NZ-0676, ID-0060, PA-0001, PA-0054): turned back into pins in the live files (record moved to 'check') and written as 'no' in data/world-key/overrides.json so the next build keeps them pins. FR + GB: retired parks taken out (live + held) and the world key now drops retired numbers itself. CM + PY: chat 12 read all 49 joins as right, chat 10 fixed the accent check: release.'
