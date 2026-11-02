@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T16:50Z",
+ "checked": "2026-11-02T16:54Z",
  "switched_on": false,
  "results": [
   {
@@ -899,10 +899,11 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-SC.json",
+   "path": "data/fers/US-SC.json.gz",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"
+    "F-2 candidates 26 -> 17 (over 30% change)",
+    "F-2 only 16 of 26 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -975,12 +976,14 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-WV.json.gz",
+   "path": "data/fers/US-WV.json",
    "kind": "fers",
    "why": [
     "F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-WV.json.gz (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {

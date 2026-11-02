@@ -4,11 +4,11 @@
  "states": [
   "US-WV"
  ],
- "since": "2026-11-01",
- "date": "2026-11-01 18:39 UTC",
+ "since": "2026-11-02",
+ "date": "2026-11-02 16:53 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "19/19 on 2026-10-31",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 31,
   "DROPPED": 118,
@@ -16,23 +16,23 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "pairs tested": 1935,
    "pairs whose boxes touch": 1935
   },
   "pass2": {
-   "agree with the pass before": 286,
-   "date": "2026-11-01",
+   "agree with the pass before": 287,
+   "date": "2026-11-02",
    "pairs tested": 57
   },
   "pass3": {
-   "agree with the pass before": 111,
-   "date": "2026-11-01",
+   "agree with the pass before": 112,
+   "date": "2026-11-02",
    "pairs tested": 55
   },
   "pass5": {
    "checked": 27,
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,13 +41,13 @@
   "US-WV": "data/fers/US-WV.json"
  },
  "US-WV": {
-  "rows": 297,
+  "rows": 298,
   "live": 33,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 212,
-  "merged": 52
+  "dropped": 211,
+  "merged": 54
  },
  "states_ready": [
   "US-WV"
