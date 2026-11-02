@@ -7,6 +7,10 @@ on:
     - cron: '7 */2 * * *'
     - cron: '37 */2 * * *'   # a second chance: GitHub skips the watchdog too
   workflow_dispatch:
+    inputs:
+      size:
+        description: 'yes = also weigh the repo now (the daily size check runs by itself at 08 UTC)'
+        default: 'no'
 permissions:
   contents: write
   actions: write
@@ -25,12 +29,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/kpc_watchdog.py
       - name: TRUE SIZE, once a day (Nov 2, Brandon 'we gain size so quick'; GitHub's own number lags a day or more)
-        if: ${{ github.event.schedule == '7 */2 * * *' || github.event_name == 'workflow_dispatch' }}
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          H=$(date -u +%H); [ "${{ github.event_name }}" = workflow_dispatch ] || [ "$H" = 08 ] || exit 0
+          [ "${{ inputs.size }}" = yes ] || { [ "$(date -u +%H)" = 08 ] && [ "$(date -u +%M | sed 's/^0//')" -lt 30 ]; } || exit 0   # once a day (the 08:07 slot) or by hand
           git clone -q --mirror "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" /tmp/m.git && MB=$(du -sm /tmp/m.git | cut -f1) || exit 0
           python3 - "$MB" <<'PY'
           import json, sys, datetime as dt, pathlib, subprocess

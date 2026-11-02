@@ -90,7 +90,7 @@ jobs:
           cd /tmp/inf
           D=$(date -u +%Y%m%d)
           if ls -d notes bundle >/dev/null 2>&1; then
-            zip -qr -9 /tmp/intake-archive-$D.zip notes bundle 2>/dev/null || true
+            zip -qr -9 /tmp/intake-archive-$D.zip notes bundle 2>/dev/null || true   # ok: an empty folder makes no zip; the next lines check the zip
             if [ -s /tmp/intake-archive-$D.zip ]; then
               gh release create "intake-archive-$D" /tmp/intake-archive-$D.zip -R "$R" --draft --title "Research archives moved off intake-files ($D)" --notes "notes/ and bundle/ from branch intake-files (already read by every bot). Unzip to get them back." \
                 && N=$(gh release view "intake-archive-$D" -R "$R" --json assets --jq '[.assets[].size]|add') \
@@ -99,7 +99,7 @@ jobs:
                 && git push -q origin HEAD:intake-files && echo "::notice title=Slim::intake-files notes/ + bundle/ ($(( $(stat -c%s /tmp/intake-archive-$D.zip) / 1000000 )) MB zipped) moved to the draft release intake-archive-$D"
             fi
           fi
-          true
+          true   # ok: the slim step reports what it did; a missing archive is not a failure
       - name: 3a SQUASH THE SIDE BRANCHES (each = one commit of its files today; BRANCH FIRST rule 'orphan, squashable')
         if: ${{ inputs.confirm == 'RESTART' || inputs.confirm == 'SQUASH' || inputs.confirm == 'SLIM' }}
         run: |
