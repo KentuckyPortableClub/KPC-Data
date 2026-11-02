@@ -856,9 +856,9 @@ def grade_queue(out):
 
 
 def mode_tidy():
-    """Nov 2 review (storage). Switch WAITING_TIDY=1 (default 0 = today: nothing is cleaned). A held copy that a newer build made the
+    """Nov 2 review (storage). Switch WAITING_TIDY (default 1 = ON since Nov 2, Brandon OK'd; WAITING_TIDY=0 = nothing is cleaned). A held copy that a newer build made the
     same as live (the live file already has it: released, or the bot came back to it) has nothing left to wait for: it is removed.
-    WAITING_KEEP_GENS=N (default 0 = keep all) also removes 'previous-<g>' copies older than N generations. Returns what went."""
+    WAITING_KEEP_GENS=N (default 2 since Nov 2; 0 = keep all) also removes 'previous-<g>' copies older than N generations. Returns what went."""
     if os.environ.get('WAITING_TIDY', '1') != '1': return []   # Nov 2: ON (Brandon OK'd the review; storage alarm); WAITING_TIDY=0 = off
     gone = []
     for p in sorted((W / 'in').rglob('*')) if (W / 'in').exists() else []:
