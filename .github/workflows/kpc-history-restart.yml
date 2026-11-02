@@ -33,7 +33,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: 1 BACKUP (bundle of every branch + tag -> release)
-        if: ${{ inputs.confirm != 'SQUASH' }}
+        if: ${{ inputs.confirm != 'SQUASH' && inputs.confirm != 'SLIM' }}
         id: b
         run: |
           set -euo pipefail
@@ -77,12 +77,35 @@ jobs:
             gh api -X POST "repos/$R/actions/runs/$id/cancel" >/dev/null || true; echo "cancelled $id"
           done
           cp /tmp/paused.txt "$RUNNER_TEMP/paused.txt"
-      - name: 3a SQUASH THE SIDE BRANCHES (each = one commit of its files today; BRANCH FIRST rule 'orphan, squashable')
-        if: ${{ inputs.confirm == 'RESTART' || inputs.confirm == 'SQUASH' }}
+      - name: SLIM (Nov 2, Brandon 'go'; 850 MB too close) - old 2-fer storage branch deleted (it is in the backup), research archives moved to a release
+        if: ${{ inputs.confirm == 'SLIM' }}
         run: |
           set -uo pipefail
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git fetch -q origin '+refs/heads/*:refs/remotes/origin/*'
+          git fetch -q --prune origin '+refs/heads/*:refs/remotes/origin/*'
+          if git rev-parse -q --verify origin/fers-storage >/dev/null; then
+            git push -q origin --delete fers-storage && echo "::notice title=Slim::branch fers-storage deleted (an old full copy of main; nothing reads it; kept in the release history-20261102-1350)"
+          fi
+          git worktree add -q /tmp/inf origin/intake-files
+          cd /tmp/inf
+          D=$(date -u +%Y%m%d)
+          if ls -d notes bundle >/dev/null 2>&1; then
+            zip -qr -9 /tmp/intake-archive-$D.zip notes bundle 2>/dev/null || true
+            if [ -s /tmp/intake-archive-$D.zip ]; then
+              gh release create "intake-archive-$D" /tmp/intake-archive-$D.zip -R "$R" --draft --title "Research archives moved off intake-files ($D)" --notes "notes/ and bundle/ from branch intake-files (already read by every bot). Unzip to get them back." \
+                && N=$(gh release view "intake-archive-$D" -R "$R" --json assets --jq '[.assets[].size]|add') \
+                && [ "$N" -ge "$(stat -c%s /tmp/intake-archive-$D.zip)" ] \
+                && git rm -rq notes bundle && git commit -qm "notes/ + bundle/ moved to the release intake-archive-$D" \
+                && git push -q origin HEAD:intake-files && echo "::notice title=Slim::intake-files notes/ + bundle/ ($(( $(stat -c%s /tmp/intake-archive-$D.zip) / 1000000 )) MB zipped) moved to the draft release intake-archive-$D"
+            fi
+          fi
+          true
+      - name: 3a SQUASH THE SIDE BRANCHES (each = one commit of its files today; BRANCH FIRST rule 'orphan, squashable')
+        if: ${{ inputs.confirm == 'RESTART' || inputs.confirm == 'SQUASH' || inputs.confirm == 'SLIM' }}
+        run: |
+          set -uo pipefail
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch -q --prune origin '+refs/heads/*:refs/remotes/origin/*'
           for b in tools-out intake-files picture-maps lookup fers-storage missing-lists engine-registry gps-packs tracer-draft trial-outside-ky; do
             git rev-parse -q --verify "origin/$b" >/dev/null || continue
             n=$(git rev-list --count "origin/$b"); [ "$n" -le 1 ] && continue
