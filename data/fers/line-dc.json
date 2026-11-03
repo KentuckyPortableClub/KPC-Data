@@ -5,14 +5,27 @@
   "US-DC"
  ],
  "since": "2026-11-03",
- "date": "2026-11-03 01:21 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-11-03 03:35 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "missing check: 120 of 413 expected pairs were never looked at (29%; 112 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (93); <park>: not in this run (another state, retired, or no POTA pin) (24); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (3)"
+ ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 28,
   "DROPPED": 153,
   "NEVER LOOKED AT": 232
+ },
+ "never_looked_at": {
+  "counted": 120,
+  "no_official_outline": 112,
+  "expected": 413,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 93,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 24,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 3
+  }
  },
  "report": {
   "pass1": {
@@ -49,8 +62,8 @@
   "dropped": 27,
   "merged": 23
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-DC"
- ],
- "states_held": []
+ ]
 }

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T02:53Z",
+ "checked": "2026-11-03T03:36Z",
  "switched_on": false,
  "results": [
   {
@@ -684,6 +684,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/US-DC.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/fers/US-FL.json.gz",
    "kind": "fers",
    "why": [
@@ -823,7 +830,7 @@
    "path": "data/fers/US-ND.json",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 48 rows for 83 (over 10% fewer)"
+    "F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 47 rows for 83 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -944,9 +951,9 @@
    "path": "data/fers/US-TX.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 41 (over 30% change)",
+    "F-2 candidates 12 -> 42 (over 30% change)",
     "F-2 NOT SURE 20 -> 3 (over 30% change)",
-    "F-2 29 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US-0541+US-6580"
+    "F-2 30 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US-0541+US-6580"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1018,25 +1025,6 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
-  },
-  {
-   "path": "data/trails/US-11393.json",
-   "kind": "trails",
-   "why": [
-    "F-T3 length 36 -> 77 km (outside -25% / +50%)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/trails/US-11905.json",
-   "kind": "trails",
-   "why": [
-    "F-T2 points 1281 -> 61 (under half the saved line)",
-    "F-T3 length 187 -> 4 km (outside -25% / +50%)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
   },
   {
    "path": "data/trails/US-9905.json",
@@ -1236,62 +1224,6 @@
   {
    "path": "data/us-key/zip-mszw.json",
    "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/CTFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/D4FF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/KFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/OMFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/ONFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/PYFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/SMFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/VEFF.json",
-   "kind": "wwff",
    "why": [],
    "notes": [],
    "verdict": "PASS"
