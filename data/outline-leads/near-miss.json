@@ -2,7 +2,7 @@
  "about": "NEAR MISSES (kpc_near_miss.py, nightly): parks with NO outline, and official areas from layers we already read that contain the POTA pin (or lie within 1 km) and share a main name word or are the same kind of place. NOT joined. Chat 8 reviews; an approved one goes into data/us-key/overrides.json (or data/ca-key) as {'join': [id], 'why': 'reviewed: near miss'}.",
  "counts": {
   "AK": 11,
-  "AL": 5,
+  "AL": 6,
   "AR": 17,
   "AZ": 5,
   "CA": 8,
@@ -24,7 +24,7 @@
   "CO": 4,
   "CT": 3,
   "DC": 2,
-  "DE": 1,
+  "DE": 2,
   "FL": 13,
   "GA": 6,
   "HI": 4,
@@ -40,7 +40,7 @@
   "MN": 2,
   "MO": 2,
   "MS": 5,
-  "MT": 4,
+  "MT": 5,
   "NC": 15,
   "ND": 7,
   "NE": 2,
@@ -5181,9 +5181,33 @@
      "layer": "Grass Lake National Wildlife Refuge",
      "name": "Grass Lake National Wildlife Refuge",
      "why": "same kind of place (nwr)"
+    },
+    {
+     "acres": 4045.27139362,
+     "id": "sgmtd96",
+     "km": 0.0,
+     "layer": "Managed Areas (land, state GIS table)",
+     "name": "Grass Lake National Wildlife Refuge",
+     "why": "same kind of place (nwr)"
     }
    ],
    "n": "Halfbreed Lake National Wildlife Refuge",
+   "site": false,
+   "st": "MT"
+  },
+  "US-0405": {
+   "acts": 12,
+   "leads": [
+    {
+     "acres": 18814.12962741,
+     "id": "sgmtd81",
+     "km": 0.0,
+     "layer": "Managed Areas (land, state GIS table)",
+     "name": "CSKT Bison Range",
+     "why": "shares bison, cskt, range"
+    }
+   ],
+   "n": "CSKT Bison Range Protected Area",
    "site": false,
    "st": "MT"
   },
@@ -6197,6 +6221,14 @@
      "layer": "Montana Fish, Wildlife & Parks (park, state GIS table)",
      "name": "Judith Landing State Park",
      "why": "shares judith, landing"
+    },
+    {
+     "acres": 109.4748229,
+     "id": "sgmtd3398",
+     "km": 0.48,
+     "layer": "Managed Areas (land, state GIS table)",
+     "name": "Judith Landing State Park",
+     "why": "shares judith, landing"
     }
    ],
    "n": "Judith Landing (BLM) Recreation Site",
@@ -6206,6 +6238,14 @@
   "US-10547": {
    "acts": 115,
    "leads": [
+    {
+     "acres": 15.89540065,
+     "id": "sgric646",
+     "km": 0.0,
+     "layer": "Rhode Island DEM (state conservation land) (land, state GIS table)",
+     "name": "Silver Spring Lake Fishing Access",
+     "why": "shares silver"
+    },
     {
      "acres": 15.89540065,
      "id": "sgria646",
@@ -6219,14 +6259,6 @@
      "id": "sgrib614",
      "km": 0.01,
      "layer": "Rhode Island DEM (land, state GIS table)",
-     "name": "Silver Spring Lake Fishing Access",
-     "why": "shares silver"
-    },
-    {
-     "acres": 15.89540065,
-     "id": "sgric646",
-     "km": 0.01,
-     "layer": "Rhode Island DEM (state conservation land) (land, state GIS table)",
      "name": "Silver Spring Lake Fishing Access",
      "why": "shares silver"
     },
@@ -6618,6 +6650,22 @@
    "n": "Glenwood Open OHV Area BLM Recreation Management Area",
    "site": true,
    "st": "UT"
+  },
+  "US-11025": {
+   "acts": 31,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "sgalb151",
+     "km": 0.48,
+     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+     "name": "Uchee Creek Confluence",
+     "why": "shares uchee"
+    }
+   ],
+   "n": "Uchee Creek Conservation Area",
+   "site": false,
+   "st": "AL"
   },
   "US-11045": {
    "acts": 45,
@@ -7466,6 +7514,38 @@
    "n": "Gulkana BLM Wild and Scenic River",
    "site": false,
    "st": "AK"
+  },
+  "US-11812": {
+   "acts": 28,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "sgdee8",
+     "km": 0.0,
+     "layer": "Delaware public protected lands (DNREC) (land, state GIS table)",
+     "name": "Trap Pond State Park",
+     "why": "shares trap"
+    },
+    {
+     "acres": 2118.0,
+     "id": "60712",
+     "km": 0.12,
+     "layer": " ",
+     "name": "Trap Pond State Park",
+     "why": "shares trap"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgdee825",
+     "km": 0.8,
+     "layer": "Delaware public protected lands (DNREC) (land, state GIS table)",
+     "name": "Trap Pond State Park",
+     "why": "shares trap"
+    }
+   ],
+   "n": "Trap Pond State Fishing Lake",
+   "site": false,
+   "st": "DE"
   },
   "US-11822": {
    "acts": 42,
@@ -8645,6 +8725,14 @@
      "layer": "Montana Fish, Wildlife & Parks (land, state GIS table)",
      "name": "Brownes Bridge",
      "why": "shares brownes"
+    },
+    {
+     "acres": 10.40479886,
+     "id": "sgmtd490",
+     "km": 0.01,
+     "layer": "Managed Areas (land, state GIS table)",
+     "name": "Brownes Bridge Fishing Access Site",
+     "why": "shares brownes"
     }
    ],
    "n": "Brownes Lake State Fish and Wildlife Area",
@@ -9164,6 +9252,14 @@
      "km": 0.0,
      "layer": "Tennessee Valley Authority (TVA)",
      "name": "Wheeler Reservoir Retained Land",
+     "why": "shares wheeler"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgala9",
+     "km": 0.0,
+     "layer": "Alabama State Parks (ADCNR) (park, state GIS table)",
+     "name": "Joe Wheeler State Park",
      "why": "shares wheeler"
     }
    ],
@@ -9823,10 +9919,26 @@
    "acts": 6,
    "leads": [
     {
+     "acres": 0.0,
+     "id": "sgalb143",
+     "km": 0.38,
+     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+     "name": "Old Cahawba Prairie Addition",
+     "why": "shares cahawba"
+    },
+    {
      "acres": 3024.0,
      "id": "166161",
      "km": 0.45,
      "layer": "Alabama Department of Conservation and Natural Resources",
+     "name": "Old Cahawba Prairie Tract",
+     "why": "shares cahawba"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgalb50",
+     "km": 0.45,
+     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
      "name": "Old Cahawba Prairie Tract",
      "why": "shares cahawba"
     }
@@ -10572,6 +10684,14 @@
      "km": 0.85,
      "layer": "Alabama Department of Conservation and Natural Resources",
      "name": "Ruffner Mountain Nature Center",
+     "why": "shares ruffner"
+    },
+    {
+     "acres": 227.0,
+     "id": "sgalb42",
+     "km": 0.85,
+     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+     "name": "Ruffner Mountain Addition Tract",
      "why": "shares ruffner"
     }
    ],
@@ -14231,8 +14351,8 @@
  "skipped": [],
  "totals": {
   "canada": 225,
-  "name_word": 452,
-  "parks": 600,
-  "us": 376
+  "name_word": 455,
+  "parks": 603,
+  "us": 379
  }
 }
