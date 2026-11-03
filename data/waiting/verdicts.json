@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T09:27Z",
+ "checked": "2026-11-03T09:52Z",
  "switched_on": false,
  "results": [
   {
@@ -87,6 +87,15 @@
   },
   {
    "path": "data/campinfo/US-DE.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-IN.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
@@ -245,7 +254,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"

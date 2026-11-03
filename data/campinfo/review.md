@@ -10,6 +10,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 11 |
 | US-SC | 63 | 20 | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 |
+| US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 6 | 31 | 0 |
 | US-IA | 125 | 0 | 32 | 0 | 0 | 0 | 93 | 0 | 0 | 0 | 0 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
@@ -28,7 +29,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-MA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -612,6 +613,93 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “ly ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
 - **Manchester State Forest** (US-5486, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
   - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+
+## US-IN: 12 random samples (records with facts; seed = the date)
+
+- **Campground: Electric - 236 sites Non-electric - 45 sites Horsemen's primitive - 37 sites Youth Tent Areas Dumping Station Camp Store** (intake-US-2275, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Campground: Electric / 75 sites Youth Tent Areas Dumping Station** (intake-US-2261, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Campground: Full hook-up: 55 sites Electric: 55 sites Dumping station Full hookup & electric map** (intake-US-2266, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Hidden Paradise Campgound** (IN-49987e4f18, state, status ok, no campground facts even in a browser, 8 facts) · [www.in.gov](https://www.in.gov/dnr/outdoor-recreation/water-trails/water-trail-camping/)
+  - booking.how = "online: www.in.gov" · “link “Reservations””
+  - booking.url = "https://www.in.gov/dnr/state-parks/reservations" · “link “Reservations” -> https://www.in.gov/dnr/state-parks/reservations”
+  - lodging_booking.how = "online: www.in.gov" · “link “Reserve room at state park inn””
+  - lodging_booking.url = "https://www.in.gov/dnr/state-parks/inns" · “link “Reserve room at state park inn” -> https://www.in.gov/dnr/state-parks/inns”
+  - map.date_how = "web page, no date in the link" · “link “Find a state park map””
+  - map.url = "https://www.in.gov/dnr/state-parks/maps" · “link “Find a state park map” -> https://www.in.gov/dnr/state-parks/maps”
+  - phone_hint = "(317) 232-4070" · “ound added to this list, please contact: Allen Hurst Trails Coordinator ahurst@dnr.IN.gov 317-232-4070 Upcoming Events 11-03-2026 Fall Photo”
+  - reservable = true · “e FAQs Indiana Department of Natural Resources Online Services Buy gifts from state parks Reserve a campsite Buy a state park permit Reserve”
+- **Tippecanoe River State Park** (IN-66e22de3c6, state, status ok, 9 facts) · [www.in.gov](https://www.in.gov/dnr/state-parks/parks-lakes/tippecanoe-river-state-park/)
+  - booking.how = "online: www.in.gov" · “link “Reservations””
+  - booking.url = "https://www.in.gov/dnr/state-parks/reservations" · “link “Reservations” -> https://www.in.gov/dnr/state-parks/reservations”
+  - hookups.electric = true · “as easy to moderate. There are a variety of camping opportunities that include primitive, electric, camper cabins, horse sites, and youth te”
+  - lodging_booking.how = "online: www.in.gov" · “link “Reserve room at state park inn””
+  - lodging_booking.url = "https://www.in.gov/dnr/state-parks/inns" · “link “Reserve room at state park inn” -> https://www.in.gov/dnr/state-parks/inns”
+  - map.date_how = "PDF, no date in the link" · “link “Property Map (PDF)””
+  - map.url = "https://www.in.gov/dnr/state-parks/files/tippecanoe_river_t · “link “Property Map (PDF)” -> https://www.in.gov/dnr/state-parks/files/tippecanoe_river_trail.pdf”
+  - reservable = true · “mpany picnics. It has seating for approximately 90 people with a maximum capacity of 120. Reservations can be made at camp.IN.gov . Campgrou”
+  - sites.total = 112 · “ls Rental - Recreational Building Camping - See campground maps under MAPS tab Electric / 112 sites Horsemen's / 56 sites - primitive Canoe ”
+- **Lost Bridge West SRA campground (same lake property)** (intake-US-4177, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Paynetown SRA campground (same lake property)** (intake-US-5687, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Campground: Electric / 150 sites Non-electric / 88 sites Primitive / 31 sites Group Camp Youth Tent Areas Dumping Station Pine Hills Group Cottages Blue Heron Family Cabins** (intake-US-2259, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **80 primitive sites, horsemen's camp (10), walk-in tent area** (intake-US-4235, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.in.gov](https://www.in.gov/dnr/forestry/properties/yellowwood-state-forest/)
+  - booking.url = "https://www.in.gov/dnr/forestry/properties/yellowwood-state · “booking link from our outside research (camping, in the park) row (official system www.in.gov)”
+  - drinking_water = true · “of the Forest Office and a carry-in tent site area north of the office. Vault toilets and drinking water are available near the campsites. A”
+  - hookups.electric = "some" · “quired. A boat launch is located at the south end of the lake; boat motors are limited to electric trolling motors only. Bear Lake and Crook”
+  - lodging_booking.how = "online: www.in.gov" · “link “Reserve a cabin””
+  - lodging_booking.url = "https://www.in.gov/dnr/forestry/properties/recreation" · “link “Reserve a cabin” -> https://www.in.gov/dnr/forestry/properties/recreation”
+  - map.date_how = "PDF, no date in the link" · “link “Tecumseh Trail is closed at the section shown on the map>””
+  - map.url = "https://www.in.gov/dA/4f884cf82e/fw-tecumseh_trail_closure. · “link “Tecumseh Trail is closed at the section shown on the map>” -> https://www.in.gov/dA/4f884cf82e/fw-tecumseh_trail_closure.pdf?language_”
+  - phone = "(812) 988-7945" · “ity. To obtain a permit, visit or call the Forest Office at 812-988-7945. The Lodge at Yellowwood The Lodge at Yellowwood is a newly”
+  - reservable = "mixed" · “that wander through the forest. All campsites/campgrounds at Yellowwood State Forest are first come first served 365 days a year, camping re”
+  - restrooms = "vault" · “d campsites south of the Forest Office and a carry-in tent site area north of the office. Vault toilets and drinking water are available nea”
+- **Campground: Electric / 226 sites Non-electric / 94 sites Camp Store Dumping Station** (intake-US-4171, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Campground: Electric / 120 sites - Poplar Grove Non-electric / 96 sites - Sunny Acres Dumping station** (intake-US-5685, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Campground: Full hookup (53), electric (87), non-electric (10), rent-a-camp cabins** (intake-US-4181, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
 
 ## US-WI: 12 random samples (records with facts; seed = the date)
 
