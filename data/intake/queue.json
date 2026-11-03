@@ -34898,6 +34898,270 @@
     "US-11545"
    ],
    "note": "35 SURE / LIKELY of 35 assigned parks/trails"
+  },
+  {
+   "url": "https://geoservices.govt.lc/geoserver/ows?service=WFS&request=GetFeature&typeName=fireservice%3Afirestations",
+   "area": "LC",
+   "cc": "LC",
+   "title": "fireservice:firestations (Government of Saint Lucia GIS)",
+   "publisher": "Government of Saint Lucia GIS",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-LC: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "https://geoservices.govt.lc/geoserver/ows?service=WFS&request=GetFeature&typeName=agriculture%3Aforest_reserves",
+   "area": "LC",
+   "cc": "LC",
+   "title": "agriculture:forest_reserves (Government of Saint Lucia GIS)",
+   "publisher": "Government of Saint Lucia GIS",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-LC: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "https://geoservices.govt.lc/geoserver/ows?service=WFS&request=GetFeature&typeName=fireservice%3Ahydrants",
+   "area": "LC",
+   "cc": "LC",
+   "title": "fireservice:hydrants (Government of Saint Lucia GIS)",
+   "publisher": "Government of Saint Lucia GIS",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-LC: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/Bahamas_Protected_Management_Zones/FeatureServer/0",
+   "area": "BS",
+   "cc": "BS",
+   "title": "Bahamas Protected Management Zones ((owner to check: Bahamas government or partner))",
+   "publisher": "(owner to check: Bahamas government or partner)",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-BS: failed from the research box, answered from GitHub",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Alineas_de_mareas_y_corrientes_040601",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:lineas_de_mareas_y_corrientes_040601 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_glaciologia_050705",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_glaciologia_050705 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_aguas_continentales_BH020",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_aguas_continentales_BH020 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_extraccion_AA012",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_extraccion_AA012 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_equipamiento_AL030",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_equipamiento_AL030 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_aguas_continentales_BH140",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_aguas_continentales_BH140 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_aguas_continentales_BH130",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_aguas_continentales_BH130 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_aguas_continentales_041101",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_aguas_continentales_041101 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_equipamiento_AL170",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_equipamiento_AL170 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_aguas_continentales_intermitente",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_aguas_continentales_intermitente (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_aguas_continentales_perenne",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_aguas_continentales_perenne (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_actividad_agropecuaria_AL270",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_actividad_agropecuaria_AL270 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_actividad_agropecuaria_AJ110",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_actividad_agropecuaria_AJ110 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_zona_costera_BA030",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_zona_costera_BA030 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Amareas_y_corrientes_BG020",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:mareas_y_corrientes_BG020 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_geomorfologia_050202",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_geomorfologia_050202 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_glaciologia_BJ020",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_glaciologia_BJ020 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_geomorfologia_DB560",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_geomorfologia_DB560 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_fabricacion_y_procesamiento_AC507",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_fabricacion_y_procesamiento_AC507 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
+  },
+  {
+   "url": "http://wms.ign.gob.ar/geoserver/ows?service=WFS&request=GetFeature&typeName=ign%3Aareas_de_gestion_de_residuos_AB030",
+   "area": "AR",
+   "cc": "AR",
+   "title": "ign:areas_de_gestion_de_residuos_AB030 (IGN capa area_protegida)",
+   "publisher": "IGN capa area_protegida",
+   "from": "retry list (GitHub try)",
+   "added": "2026-11-03",
+   "note": "RETRY-AR: WFS answered from GitHub (the converter reads WFS)",
+   "expect": null
   }
  ]
 }
