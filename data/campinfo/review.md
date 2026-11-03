@@ -20,6 +20,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
 | US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
+| US-TX | 483 | 0 | 120 | 1 | 3 | 0 | 329 | 0 | 30 | 0 | 34 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
@@ -44,6 +45,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 - destateparks.com: 22 campgrounds · host resting
 - www.tn.gov: 17 campgrounds · host resting
 - midnrreservations.com: 12 campgrounds · host resting
+- tpwd.texas.gov: 3 campgrounds · robots.txt says no
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
 
@@ -57,6 +59,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 - www.recreation.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
 - www.outdooralabama.com: 1 campgrounds
+- tpwd.texas.gov: 1 campgrounds
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
 
@@ -1451,6 +1454,9 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “camping, picnic areas, wildlife viewing opportunities and hiking. The park also features comfort stations with showers, boat ramps and a sma”
   - rules.pets = "Pets Allowed" · “. 50 Amp Full Hookups Gift Shop Grills Handicapped Parking Lake Access Marina Park Ranger Pets Allowed Pets Allowed in Park Picnic Area Pull”
   - season = "year-round" · “:00 am - 5:00 pm Office hours are listed above. Campgrounds are open to 24 hours per day, year round. Park rangers or campground hosts will ”
+
+## US-TX: 12 random samples (records with facts; seed = the date)
+
 
 ## US-NE: 12 random samples (records with facts; seed = the date)
 
