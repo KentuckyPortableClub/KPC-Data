@@ -2,7 +2,7 @@
 Built 2026-11-03 by kpc_wdpa_phonebook.py (directory lookups only; no WDPA shapes kept).
 Per country, the managing agencies of parks with no official outline yet, most parks first: their own portals / map servers are where the official layer lives.
 
-- **GB** (396 parks): Natural England (114); Scottish Natural Heritage (78); OSPAR Commission (57); Natural Resources Wales (38); National Trust (27)
+- **GB** (672 parks): Scottish Natural Heritage (188); Natural England (143); OSPAR Commission (95); NatureScot (49); National Trust (44)
 - **MX** (163 parks): National Commission of Natural Protected Areas (154); Ministry of the Environment and Natural Resources through the National Commission of Natural Protected Areas (8); National Park Service (1)
 - **CU** (80 parks): Grupo Empresarial de Flora y la Fauna (53); Ministerio de Ciencia, Tecnología y Medio Ambiente (9); Junta de Administración (7); Consejo de Administración Provincial La Habana (4); Grupo Empresarial Agroforestal (2)
 - **PR** (59 parks): State Department of Natural Resources (25); State Department of Conservation ; State Department of Natural Resources (15); Non-Governmental Organization (5); Forest Service (4); U.S. Fish and Wildlife Service (3)
