@@ -5,14 +5,25 @@
   "US-ND"
  ],
  "since": "2026-11-03",
- "date": "2026-11-03 01:18 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-11-03 03:37 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "missing check: 167 of 710 expected pairs were never looked at (24%; 495 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (167)"
+ ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 9,
   "DROPPED": 39,
   "NEVER LOOKED AT": 662
+ },
+ "never_looked_at": {
+  "counted": 167,
+  "no_official_outline": 495,
+  "expected": 710,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 167
+  }
  },
  "report": {
   "pass1": {
@@ -49,8 +60,8 @@
   "dropped": 21,
   "merged": 17
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-ND"
- ],
- "states_held": []
+ ]
 }
