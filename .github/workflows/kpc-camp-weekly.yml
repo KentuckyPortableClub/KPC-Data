@@ -14,6 +14,9 @@ on:
         default: ''
 permissions:
   actions: write
+concurrency:   # PR2 (Nov 2): one run of this bot at a time; a second start waits instead of piling up
+  group: kpc-camp-weekly
+  cancel-in-progress: false
 jobs:
   slice:
     runs-on: ubuntu-latest

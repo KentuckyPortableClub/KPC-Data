@@ -12,7 +12,7 @@ on:
         required: false
         default: ''
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '53 */6 * * *'
+    - cron: '53 9 * * *'   # PR2 (Nov 2): daily (was every 6 h, '53 */6 * * *'); WDPA's agency names change rarely. Chain brake: 6 runs a day
 permissions:
   contents: write
   actions: write
@@ -57,7 +57,13 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-wdpa-phonebook.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+        run: |
+          # PR2 (fewer runs, Nov 2): CHAIN BRAKE. A self-starting chain stops for the day after 6 runs in 24 h (Nov 2: the hard look
+          # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
+          # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
+          kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-wdpa-phonebook.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 6 ]; then echo "::notice title=Chain brake::kpc-wdpa-phonebook.yml ran $n times in 24 h (limit 6): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
+          kpc_brake || exit 0
+          gh workflow run kpc-wdpa-phonebook.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

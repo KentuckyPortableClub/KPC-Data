@@ -6,7 +6,7 @@ name: KPC layer collector (starts itself when the Fable / atlas files have new w
 # layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '16 */2 * * *'   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
+    - cron: '16 3,9,15,21 * * *'   # PR2 (Nov 2): every 6 h (was every 2 h, '16 */2 * * *'); it still starts its own next run while pairs are left   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
     inputs:
       as_schedule:
@@ -90,9 +90,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # PR2 (fewer runs, Nov 2): CHAIN BRAKE. A self-starting chain stops for the day after 12 runs in 24 h (Nov 2: the hard look
+          # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
+          # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
+          kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-collector.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-collector.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 0)
           echo "::notice title=Outside research::$LEFT pairs left"
-          if [ "$LEFT" != 0 ]; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+          if [ "$LEFT" != 0 ] && kpc_brake; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

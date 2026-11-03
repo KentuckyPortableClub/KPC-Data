@@ -77,10 +77,10 @@ jobs:
           [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
           echo "areas=$AREAS" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_status.py board 'Map audit' $([ $E = 0 ] || [ $E = 3 ] && echo green || echo amber) "exit $E $(date -u +%F): $(tail -1 ../out/audit/run-log.txt | cut -c1-140)" 'chat 2 (worst rows = fixes) + chat 11 / 12 (questions)' || true   # ok: the board line is a courtesy
-          (for i in 1 2 3; do git add data/status && git commit -qm "board: map audit" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true   # ok: the board line is a courtesy
+          # PR2 (fewer saves): the board line is saved with the questions below in ONE commit (was two commits a job)
           python3 .github/scripts/kpc_fers_gate.py questions ../out/audit || true   # ok: the next audit job tries again
           GH_TOKEN="${{ github.token }}" python3 .github/scripts/kpc_fers_gate.py gate || true   # ok: the watchdog runs the gate too
-          (for i in 1 2 3; do git add data/waiting/questions/map-audit.json data/status && git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 7; done) || true   # ok: saved on the next job
+          (git add data/waiting/questions/map-audit.json data/status && python3 .github/scripts/kpc_stamp_only.py && { git diff --cached --quiet && echo "nothing new to save"; } || { git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && saved=0 && for i in 1 2 3 4; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; git rebase --abort 2>/dev/null; sleep $((i*7)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # PR2: one commit, skipped when only time stamps changed; pull --rebase retries (was: a retry re-ran 'git commit' and never pushed)
           cd ../out && find audit -size +20M -delete; git add -A audit && git commit -qm "map audit (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || echo "::warning title=Map audit::results not saved to tools-out this time"
           true   # ok: the notices above say what happened
       - name: Next job (the audit goes on until every area is done)
@@ -88,7 +88,13 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/dispatches -f ref=main -f "inputs[areas]=${{ inputs.areas }}" || echo "::warning title=Map audit::could not start the next job"
+        run: |
+          # PR2 (fewer runs, Nov 2): CHAIN BRAKE. A self-starting chain stops for the day after 12 runs in 24 h (Nov 2: the hard look
+          # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
+          # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
+          kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-map-audit.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
+          kpc_brake || exit 0
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/dispatches -f ref=main -f "inputs[areas]=${{ inputs.areas }}" || echo "::warning title=Map audit::could not start the next job"
       - name: WATCHDOG HEARTBEAT (Nov 2, chat 10) - KPC-Data's timed runs stopped; this chained bot starts the watchdog when it is 2.5 h old
         id: kept_green_hb
         continue-on-error: true

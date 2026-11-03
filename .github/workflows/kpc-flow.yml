@@ -5,7 +5,7 @@ name: KPC flow board - every pile of work, who it waits on, when it last moved (
 # Every chat sees its lines at the start (KPC-Links .claude/build/inbox_now.py). Reads only, decides nothing, never red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '46 */3 * * *'   # G9 Nov 2: was '47 */3 * * *' (spread the start times; now 1 min earlier)
+    - cron: '46 1,13 * * *'   # PR2 (Nov 2): twice a day (was every 3 h, '46 */3 * * *'); a pile is STUCK after 2 days, so 12 h is plenty   # G9 Nov 2: was '47 */3 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write
@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python3 .github/scripts/kpc_flow.py || echo "::error title=kpc_flow.py::stopped with an error (exit $?), see the log above"
-          ({ saved=0; for i in 1 2 3; do git add data/status/flow.json data/status/flow.md && git commit -qm "flow board" && git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; sleep 7; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          (git add data/status/flow.json data/status/flow.md && python3 .github/scripts/kpc_stamp_only.py && { git diff --cached --quiet && echo "nothing new to save"; } || { git commit -qm "flow board" && saved=0 && for i in 1 2 3 4; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; git rebase --abort 2>/dev/null; sleep $((i*7)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # PR2: one commit, skipped when only time stamps changed; pull --rebase retries (was: a retry re-ran 'git commit' and never pushed)
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
