@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T12:08Z",
+ "checked": "2026-11-03T14:23Z",
  "switched_on": false,
  "results": [
   {
@@ -135,6 +135,15 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/campinfo/US-NE.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/campinfo/US-NY.json",
    "kind": "campinfo",
    "why": [
@@ -144,6 +153,33 @@
     "no live copy: first time this file is published"
    ],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/campinfo/US-OK.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-TX.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-WY.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-AK.json",
@@ -263,7 +299,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -427,13 +463,11 @@
   {
    "path": "data/docs/US-OR.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://secure.sos.state.or.us/oard/viewSingleRule.action;JSESSIONID_O"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-PA.json",
@@ -512,9 +546,11 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 12 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=SOUTH%20B"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-WV.json",
@@ -1392,42 +1428,6 @@
     "F-O4 shape test: 7 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/campinfo/US-NE.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-OK.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-TX.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-WY.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
   }
  ]
 }
