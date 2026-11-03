@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2026-11-03 19:47 UTC: 4 skipped run(s) started again: kpc-closures.yml (missed Nov 03 18:38 UTC); kpc-copy-from-links.yml (missed Nov 03 19:11 UTC); kpc-eu-alerts.yml (missed Nov 03 18:40 UTC); kpc-waiting-room.yml (missed Nov 03 18:42 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41706113837",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41694660918",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1156,10 +1156,10 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "site = main: the website has the newest data",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41706113837",
-   "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
+   "made": "site is 85 min behind main (11 commits, 81 website files): started the copy bot (kpc-pages-sync) once",
+   "result": "red",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41694660918",
+   "waiting_on": "HQ: look at kpc-pages-sync.yml runs"
   },
   "campground info bot": {
    "areas": "left: 43",
