@@ -45,7 +45,7 @@ def when(s):
 
 def main():
     if not KEY or (not HOOK and not DRY):
-        note('YouTube comments', 'skipped: secret YOUTUBE_API_KEY or KPC_DISCORD_STAFF_WEBHOOK is not set'); return
+        print('::warning title=YouTube comments::skipped: secret YOUTUBE_API_KEY or KPC_DISCORD_STAFF_WEBHOOK is not set'); return
     try: mem = json.load(open(SEEN_F))
     except Exception: mem = {}
     chans, seen = mem.get('channels', {}), mem.get('seen', {})
@@ -130,4 +130,7 @@ def main():
 if __name__ == '__main__':
     try: main()
     except Exception as e:
-        note('YouTube comments PROBLEM', str(e)[:400]); sys.exit(0)
+        # PR1 (Nov 2): a bad or missing key stops only this bot. It shows as a yellow warning on the run (visible), never a red
+        # failure, and the key value is scrubbed from the message.
+        msg = str(e).replace(KEY, '***') if KEY else str(e)
+        print(f'::warning title=YouTube comments PROBLEM::{msg[:400]}'); sys.exit(0)

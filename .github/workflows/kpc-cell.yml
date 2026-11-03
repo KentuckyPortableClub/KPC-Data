@@ -1,4 +1,4 @@
-name: KPC cell coverage (FCC National Broadband Map) - held in the waiting room
+name: KPC cell coverage (FCC National Broadband Map) - OFF until fixed (by hand only)
 # Oct 31 2026 (chat 10; HQ 9:00 PM, Brandon 8:59 PM 'ok releasing cell coverage for a test'). Rule sheet: KPC-Links
 # .claude/notes/ideas.md 'CELL COVERAGE RULE SHEET'. Kentucky + the 5 test parks; data/cell/*.json held in the waiting room
 # for chat 11. Monthly check: one FCC call, and the files are read again only when the FCC publishes a new as-of date. Never red.
@@ -8,8 +8,11 @@ on:
       test:
         description: 'also the two test parks outside KY (Chincoteague NWR VA, Red Rock Canyon NCA NV): yes / no'
         default: 'yes'
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '16 9 3 * *'   # G9 Nov 2: was '17 9 3 * *' (spread the start times; now 1 min earlier)
+  # PR1 (Nov 2, Brandon OK): timer OFF until the bot is fixed. kpc_cell_bot.py reads carrier fields the FCC rows don't have
+  # (provider_name/provider_id), so every park came out carriers 'None' while the board said green. Run by hand only.
+  # To turn it back on after the fix, add back a 'schedule:' block with the cron 16 9 3 * * (the 3rd of each month,
+  # 3:16 AM Central in winter / 4:16 AM in summer). Written without the usual quotes on purpose, so the watchdog and the
+  # check-up (they look for cron lines in this file) don't treat this bot as scheduled while it is off.
 permissions:
   contents: write
 concurrency:
@@ -47,7 +50,7 @@ jobs:
           pip install -q requests h3 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
           python3 .github/scripts/kpc_cell_bot.py --states KY || echo "::error title=kpc_cell_bot.py::stopped with an error (exit $?), see the log above"
           LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/cell || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
-          python3 .github/scripts/kpc_status.py board 'Cell coverage (FCC)' green "read $(date -u +%F): Kentucky + test parks, held for chat 11" 'chat 11 grades data/waiting/in/data/cell' || true   # ok: a status-board line (reporting only)
+          python3 .github/scripts/kpc_status.py board 'Cell coverage (FCC)' amber "test read $(date -u +%F) by hand: carrier fields still being fixed, results not trusted" 'fix kpc_cell_bot.py carrier fields (PR1)' || true   # ok: a status-board line (reporting only)
           bash ../links/.github/scripts/kpc_push_data.sh . "cell coverage (FCC; held in the waiting room)" data/cell data/waiting data/status || echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $?)"
           (cd ../out && git add -A cell 2>/dev/null && git commit -qm "cell work log (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           true

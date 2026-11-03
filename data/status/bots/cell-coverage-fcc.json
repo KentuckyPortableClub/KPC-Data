@@ -1,9 +1,9 @@
 {
- "last_run": "2026-11-01",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41265309676",
- "result": "green",
- "made": "read 2026-11-01: Kentucky + test parks, held for chat 11",
- "waiting_on": "chat 11 grades data/waiting/in/data/cell",
+ "last_run": "2026-11-02",
+ "run": "",
+ "result": "amber",
+ "made": "OFF until fixed: the bot read the wrong FCC fields, so every park showed carriers 'None'. Timer turned off in PR1; no new cell data until it's fixed.",
+ "waiting_on": "fix kpc_cell_bot.py carrier fields",
  "areas": "",
  "bot": "Cell coverage (FCC)"
 }
