@@ -115,10 +115,11 @@ jobs:
           python3 $P run $AR --data . --links ../links --out ../out/engine --cache .engine_cache --max-minutes $MM --resume > ../out/engine/run-log.txt 2>&1
           E=$?; tail -15 ../out/engine/run-log.txt
           echo "::notice title=Engine::exit $E (${A:-every area}); board: tools-out engine/board.md"
+          [ "$E" = 0 ] || [ "$E" = 3 ] || echo "::error title=Engine::the engine stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt above"   # PR3: was green on the board whatever the exit
           # HAND BACK = the bots' drop-off (Brandon 4:42 AM 'go to waiting room'): export the finds in the club's shapes and put them on
           # branch intake-files; the readers that already exist take them from there to the waiting room for chat 11 (hard look reader,
           # collector, converter, docs merge, parking + camping bots, acres). Same names each run = the newest finds replace the last.
-          python3 $P export --out ../out/engine --name engine > /dev/null 2>&1 || echo "::warning title=step::a script stopped with an error (exit $?)"
+          python3 $P export --out ../out/engine --name engine > /dev/null 2>&1 || echo "::error title=Engine export::the hand-back export stopped with an error (exit $?): no new finds go to the waiting room"   # PR3: was a ::warning
           if [ -d ../out/engine/handback ]; then
             git fetch -q origin +refs/heads/intake-files:refs/remotes/origin/intake-files && git worktree add -q -B intake-files ../ib origin/intake-files \
               && cp ../out/engine/handback/*.json ../out/engine/handback/*.xlsx ../out/engine/handback/*.csv ../ib/ 2>/dev/null; \
@@ -126,7 +127,7 @@ jobs:
             echo "::notice title=Engine::handback: $(ls ../out/engine/handback | tr '\n' ' ' | cut -c1-300)"
           fi
           [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
-          python3 .github/scripts/kpc_status.py board 'Park-info engine' green "exit $E $(date -u +%F) ($A)" 'chat 11 grades tools-out engine/ per kind' || true   # ok: a status-board line (reporting only)
+          python3 .github/scripts/kpc_status.py board 'Park-info engine' $([ "$E" = 0 ] || [ "$E" = 3 ] && echo green || echo red) "exit $E $(date -u +%F) ($A)" 'chat 11 grades tools-out engine/ per kind' || true   # ok: a status-board line (reporting only)
           [ -f ../out/engine/board.md ] && cp ../out/engine/board.md data/status/engine-board.md   # the Bot Control Panel reads it (small)
           bash ../links/.github/scripts/kpc_push_data.sh . "board: engine" data/status data/engine && echo '::notice title=Engine save::board saved on main' || echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $?)"   # Nov 1: the club's safe save (fresh main + only these files); the rebase loop failed every run
           cd ../out && find engine -size +40M -delete; echo "::notice title=Engine out::$(du -sh engine | cut -f1), $(find engine -type f | wc -l) files"; git add -A engine && git commit -qm "engine (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { echo '::notice title=Engine save::tools-out saved'; saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }; } || true   # ok: nothing new to commit; a lost save is reported by the loop itself

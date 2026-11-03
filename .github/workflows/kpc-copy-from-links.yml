@@ -19,7 +19,7 @@ on:
     - cron: '40 1 * * *'   # G9 Nov 2: was '41 1 * * *' (spread the start times; now 1 min earlier)
     # Oct 30 (Brandon 11:01 AM, 'All 3'): every hour a quick look: only when a map key changed in KPC-Links does the copy run
     # (so chat 11's sample shows a new build within the hour); else the run ends in seconds
-    - cron: '11 */3 * * *'   # PR2 (Nov 2): every 3 h (was hourly, '11 * * * *'); the key bots in KPC-Links save at most a few times a day
+    - cron: '11 * * * *'   # PR3 (Nov 2): back to hourly, as Brandon asked Oct 30 (PR2 had made it every 3 h); a run with no new map key ends in seconds
 permissions:
   contents: write
   actions: write
@@ -52,7 +52,7 @@ jobs:
           O=$(cat kpcdata/data/waiting/key-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           H=$(date -u +%H:%M)
-          if [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ] && [ "${{ (github.event.schedule || inputs.as_schedule) }}" = '11 */3 * * *' ] && [ "$F" = "$O" ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Copy::no new key build: nothing to do"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
+          if [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ] && [ "${{ (github.event.schedule || inputs.as_schedule) }}" = '11 * * * *' ] && [ "$F" = "$O" ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Copy::no new key build: nothing to do"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
   copy:
     needs: gate
     if: ${{ needs.gate.outputs.work == '1' }}
