@@ -1,0 +1,4753 @@
+{
+ "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
+ "area": "US-LA",
+ "counts": {
+  "fees": 7,
+  "hours": 11,
+  "hours_lines": 15,
+  "no_page": 0,
+  "nothing": 11,
+  "parks": 123,
+  "permits": 4,
+  "season": 2,
+  "season_lines": 3
+ },
+ "parks": {
+  "US-0040": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "There is no admission fee for our park.",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/jela/planyourvisit/fees.htm"
+    },
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/jela/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Jean Lafitte National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/jela/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Jean Lafitte National Historical Park and Preserve.\")",
+    "hours": "All Park - Jean Lafitte National Historical Park and Preserve: Each of Jean Lafitte's six sites is open year-round. See the specific site(s) you want to visit for operating hours and days information. | Visitor Center - Acadian Cultural Center: The Acadian Cultural Center is temporarily closed due to air conditioning issues. | Visitor Center - Barataria Preserve: The Visitor Center and most trails",
+    "pass": "none (no entrance fee)",
+    "season": "Operating Hours & Seasons Operating hours details Fees & Passes Internet & Cellular Access Internet & Cellular Access Details",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/jela/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/jela/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/jela/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/jela/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0296": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Atchafalaya National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/atchafalaya",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/atchafalaya",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/atchafalaya/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/atchafalaya/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0297": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie/visit-us"
+    }
+   ],
+   "hunting_hours": [
+    {
+     "line": "The refuge is open during daylight hours only, except during hunting seasons.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie/visit-us"
+    }
+   ],
+   "n": "Bayou Cocodrie National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/bayou-cocodrie",
+    "hours": "All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.",
+    "season": "National Wildlife Refuge Hollandale, MS Rules and Policies Bayou Cocodrie NWR welcomes visitors year-round!",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [
+    {
+     "line": "A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-cocodrie/visit-us"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0298": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Refuge is open daily daylight hours only.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/visit-us"
+    }
+   ],
+   "hunting_hours": [
+    {
+     "line": "Please note: For safety reasons, all areas of the refuge located outside the Hurricane Protection Levee are closed to public entry until after 12 noon from November 1 – January 31, and during the state teal season, except for youth waterfow",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/visit-us"
+    },
+    {
+     "line": "All areas of the refuge located outside the Hurricane Protection Levee are closed to public entry other than youth waterfowl hunting until 12 noon from November 1 – January 31, and during the state teal season.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/visit-us"
+    }
+   ],
+   "n": "Bayou Sauvage National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/bayou-sauvage-urban",
+    "hours": "Visitors are welcome at the refuge during daylight hours only. The refuge is closed at night.",
+    "season": "Fishing Sport fishing and shell fishing are permitted year-round in accordance with state regulations inside the Hurricane Protection Levee, and permitted only after 12 p.m. outside the levee during the state teal season and from November 1 – January 31.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "Because the levees interrupt the natural water flow, a network of pumps and flap gates regulates seasonal water levels.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/about-us"
+    }
+   ],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0299": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Bayou Teche National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/bayou-teche",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-teche",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-teche/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bayou-teche/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0300": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "The Visitor Center is open Thursdays, Fridays and Saturdays from 9 am - 4 pm.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.fws.gov/refuge/big-branch-marsh"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Big Branch Marsh National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/big-branch-marsh",
+    "hours": "The Visitor Center is open Thursdays, Fridays and Saturdays from 9 a.m. - 4 p.m. Hunting Fishing Birding Hiking Boat Launches Learn More About Visiting Location and Contact Information Learn More About Us More About What We Do Our Species View Our Species View More Opportunities View All Projects",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/big-branch-marsh",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/big-branch-marsh/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/big-branch-marsh/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0301": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The Refuge is open from 30 minutes before sunrise to 30 minutes after sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/black-bayou-lake/visit-us"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Black Bayou Lake National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/black-bayou-lake",
+    "hours": "The Refuge is open from 30 minutes before sunrise to 30 minutes after sunset.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/black-bayou-lake/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/black-bayou-lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/black-bayou-lake/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/black-bayou-lake/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0302": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Bogue Chitto National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/bogue-chitto",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bogue-chitto",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bogue-chitto/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bogue-chitto/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0303": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Breton National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/breton",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/breton",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/breton/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/breton/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0304": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "Cameron Prairie Visitor Center will be open Tuesdays, Wednesdays and Thursdays 9:00 am to 3:30 pm.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.fws.gov/refuge/cameron-prairie/visit-us"
+    },
+    {
+     "line": "Visitor Center hours will be Tuesdays, Wednesdays, and Thursdays from 9:00 am to 3:30 pm.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.fws.gov/refuge/cameron-prairie"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [
+    {
+     "line": "The Refuge is open daylight hours only, with the exception of permitted hunting seasons.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/cameron-prairie/visit-us/rules-policies"
+    }
+   ],
+   "n": "Cameron Prairie National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/cameron-prairie",
+    "hours": "Activities Cameron Prairie Visitor Center will be open Tuesdays, Wednesdays and Thursdays 9:00 a.m. to 3:30 p.m. Hunting Fishing View All Activities Related Documents Brochures and maps for Cameron prairie NWR. Hours Visitors Center Hours Beginning May 20th 2023, the Visitor’s Center will be open on Tuesdays, Wednesdays, and Thursdays 9:30 am - 2:30 pm",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cameron-prairie/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cameron-prairie",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cameron-prairie/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cameron-prairie/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0305": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The refuge is open from sunrise to sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/cat-island/visit-us"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Cat Island National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/cat-island",
+    "hours": "The refuge offers fishing on three ponds, which are open year-round when the refuge is open. The refuge is open from sunrise to sunset.",
+    "season": "The refuge offers fishing on three ponds, which are open year-round when the refuge is open",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cat-island/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cat-island",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cat-island/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/cat-island/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "The refuge is open for fishing year-round subject to the state of Louisiana fishing regulations.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/cat-island/visit-us"
+    },
+    {
+     "line": "The refuge offers fishing on three ponds, which are open year-round when the refuge is open.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/cat-island/visit-us"
+    }
+   ],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0306": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Catahoula National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/catahoula",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/catahoula",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/catahoula/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/catahoula/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0307": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "There is no fee to visit the Refuge and it offers a wide variety of wildlife dependent recreational opportunities.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/darbonne"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "D'Arbonne National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/darbonne",
+    "fees": "no fee (\"There is no fee to visit the Refuge and it offers a wide variety of wildlife dependent recreational opportunities.\")",
+    "pass": "none (no fee)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/darbonne",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.fws.gov/sites/default/files/documents/darbonneavenza_public_0.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/darbonne/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0308": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Delta National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/delta",
+    "hours": "The 2026 black-bellied whistling duck season at Delta NWR is open Wed., Thu., Sat., and Sun. of State Season until 2pm.",
+    "season": "The 2026 black-bellied whistling duck season at Delta NWR is open Wed",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/delta",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/delta/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/delta/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0309": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [
+    {
+     "line": "The refuge is open during daylight hours only, except during hunting season.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/grand-cote/visit-us/rules-policies"
+    }
+   ],
+   "n": "Grand Cote National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/grand-cote",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/grand-cote",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/grand-cote/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/grand-cote/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0311": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [
+    {
+     "line": "The Refuge is open daylight hours only, with the exception of permitted hunting seasons.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/lacassine/visit-us/rules-policies"
+    }
+   ],
+   "n": "Lacassine National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/lacassine",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lacassine",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lacassine/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lacassine/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0312": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The refuge is open from sunrise to sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/lake-ophelia/visit-us"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Lake Ophelia National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/lake-ophelia",
+    "hours": "The refuge is open from sunrise to sunset.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lake-ophelia/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lake-ophelia",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lake-ophelia/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [
+    {
+     "line": "An annual recreational activity permit is required to fish or hunt on the refuge.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/lake-ophelia/visit-us"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0314": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The refuge is open from sunrise to sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/mandalay/visit-us"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Mandalay National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/mandalay",
+    "hours": "The refuge is open from sunrise to sunset.",
+    "season": "May through September can be hot and buggy.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mandalay/visit-us",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mandalay/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mandalay/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mandalay",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0315": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Refuge is open from sunrise to sunset",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/red-river/visit-us/rules-policies"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Red River National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/red-river",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/red-river",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/red-river/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/red-river/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0316": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Northline Recreational Area: Fishing and crabbing, year-round, sunrise to sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us"
+    },
+    {
+     "line": "The trail is open year-round from dawn until dusk.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us"
+    },
+    {
+     "line": "Pets are allowed on the Blue Goose Trail and Wetland Walkway, as well as roadside recreation areas, year round, dawn until dusk.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us"
+    },
+    {
+     "line": "This one and one-half mile trail is open to the public daily from official sunrise to official sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us"
+    },
+    {
+     "line": "The refuge and its roadside recreation areas may be accessed via automobile year round, from dawn until dusk, excluding posted closures",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine"
+    }
+   ],
+   "hunting_hours": [
+    {
+     "line": "The Refuge is open daylight hours only, with the exception of permitted hunting seasons.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us/rules-policies"
+    }
+   ],
+   "n": "Sabine National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/sabine",
+    "hours": "Northline Recreational Area: Fishing and crabbing, year-round, sunrise to sunset. Hog Island Cully: Fishing and crabbing, year-round, sunrise to sunset.",
+    "season": "Northline Recreational Area: Fishing and crabbing, year-round, sunrise to sunset",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sabine",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sabine/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [
+    {
+     "line": "All hunters are required to have a refuge-issued permit.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us"
+    },
+    {
+     "line": "There is no special permit required to observe or photograph birds on the refuge.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/sabine/visit-us"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0318": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Visitors are permitted on the refuge from 4:00 am until 2 hours after legal sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/tensas-river/visit-us"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Tensas River National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/tensas-river",
+    "hours": "Visitors are permitted on the refuge from 4:00 am until 2 hours after legal sunset.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/tensas-river/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/tensas-river",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/tensas-river/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/tensas-river/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0319": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Upper Ouachita National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/upper-ouachita",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/upper-ouachita",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/upper-ouachita/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0723": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/vick/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Vicksburg National Military Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/vick/planyourvisit/conditions.htm",
+    "fees": "Private Vehicle $20.00; Motorcycle $15.00; Per Person $10.00; Non-commercial Group (16+ persons) $0.00; Commercial Sedan (1-6 seats) $25.00; Commercial Van (7-15 seats) $40.00; Commercial Mini-bus (16-25 seats) $40.00; Commercial Motor Coach (26+ seats) $100.00; Standard Entrance Pass $10.00–$20.00; Annual Entrance - Park $35.00",
+    "pass": "America the Beautiful pass (interagency)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Military Park",
+   "ver": 12
+  },
+  "US-0729": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "The Oakland Plantation Main House is only open on Saturdays and Sundays from 10:00 am to 2:00 pm for self-guided tours.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.nps.gov/cari/planyourvisit/hours.htm"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/cari/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [
+    {
+     "line": "The depot is open Wednesday through Sunday from 9:00 am to 3:30 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/cari/planyourvisit/hours.htm"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Cane River Creole National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/cari/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Cane River Creole National Historical Park.\")",
+    "hours": "The hours of operation for Oakland Plantation and Magnolia Plantation are 9:00 a.m. to 3:30 p.m. Wednesday through Sunday. Self-guided and Guided tours of the plantation grounds and outbuildings may be available Wednesday through Sunday at both sites. The park store , located in the historic Oakland Plantation Store is also open Wednesday through Sunday. The Oakland Plantation Main House is only o",
+    "pass": "none (no entrance fee)",
+    "season": "In 2026 the park will be closed the following federal holidays: New Year's Day - January 1 Martin Luther King Day - January 19 President's Day - February 16 Memorial Day - May 25 Juneteenth - June 19 Independence Day - July 4 Labor Day - September 7 Columbus Day - October 12 Veterans Day - November 11 Thanksgiving Day - November 26 Christmas - Dece …",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cari/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cari/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0958": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/popo/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [
+    {
+     "line": "These state park facilities are open to the public from 9:00 AM to 5:00 PM daily;",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/popo/planyourvisit/hours.htm"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Poverty Point National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/popo/planyourvisit/conditions.htm",
+    "fees": "no fee (\"There is no National Park Service entrance fee.\")",
+    "hours": "This site, which contains some of the largest prehistoric earth works in North America, is managed by the state of Louisiana. These state park facilities are open to the public from 9:00 AM to 5:00 PM daily; the site is closed on Thanksgiving, Christmas and New Year's Day. PLEASE NOTE: NO FEDERAL FACILITIES.",
+    "pass": "none (no entrance fee)",
+    "season": "These state park facilities are open to the public from 9:00 AM to 5:00 PM daily; the site is closed on Thanksgiving, Christmas and New Year's Day.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/popo/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/popo/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-10097": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Queen Bess Island Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/queen-bess-island",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-10109": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "State Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/state-wildlife-refuge",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-10119": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Waddill Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "hours": "Waddill Wildlife Refuge is open Tuesday through Saturday, 7:30 a.m. - 5:00 p.m.",
+    "pass": "WMA Access Permit; comply with self-clearing permit guidelines",
+    "season": "Open Tuesday through Saturday; Waddill will be closed for all state and federal holidays.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/waddill-wildlife-refuge",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-10134": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "White Lake Wetlands Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "hours": "The trail is open to the public year-round, from sunrise to sunset daily",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "season": "White Lake Birding and Nature Trail: open to the public year-round, from sunrise to sunset daily",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/white-lake-wetlands-conservation-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Conservation Area",
+   "ver": 12
+  },
+  "US-10142": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Rockefeller Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "hours": "Rockefeller Wildlife Refuge is open to the public daily from official sunrise to sunset",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "season": "Open daily from official sunrise to sunset; Some areas of the refuge are closed between December 1 and March 1",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/rockefeller-wildlife-refuge",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-10352": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Floy Ward McElroy Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/floy-ward-mcelroy",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-10353": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Isle Dernieres Barrier Islands Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/isle-dernieres-barrier-islands-refuge",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-10354": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Forts Randolph & Buhlow State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "Wed. - Sun. 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "https://www.lastateparks.com/historic-sites/forts-randolph-buhlow-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10413": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Acadiana Conservation Corridor Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/acadiana-conservation-corridor",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-10447": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Audubon State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "7 days a week 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/audubon-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10448": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Centenary State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "Centenary SHS (Grounds Only): Thurs. -Sat. 9 a.m. - 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10449": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort Jessup State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "not checked (park page blocked to our fetcher)",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/fort-jesup-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10450": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort St. Jean Baptiste State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "Wed. - Sun. 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/fort-st-jean-baptiste-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10451": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Longfellow-Evangeline State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "7 days a week 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/longfellow-evangeline-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10452": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Los Adaes State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "no fee (\"Free Admission: Locust Grove SHS Los Adaes SHS\")",
+    "hours": "Los Adaes State Historic Site is open seasonally, operated by the Cane River National Heritage Area.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/los-adaes-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10453": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Mansfield State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "Wed. - Sun. 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/mansfield-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10454": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Rebel State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "By Appointment",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/rebel-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10455": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Rosedown Plantation State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Rosedown Plantation General Admission: $7 per Person (ages 7-61) $5 Seniors (ages 62 & over) Free Children (6 & under). Guided House Tour* $12 per Person (ages 7-61) $10 Seniors (ages 62 & over) Free Children (6 & under)",
+    "hours": "7 days a week 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/rosedown-plantation-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10456": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Esler Field Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/esler-field",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-10562": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Port Hudson State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Historic Sites: General Admission: $6 per Person (ages 7 to 61) $4 Seniors (62 & older) and children (6 & under). Guided Site, House or Tram Tour*: $10 per Person (ages 7 - 61) $8 Seniors (ages 62 & over) Free Children (ages 6 & under). Free Admission: Locust Grove SHS Los Adaes SHS",
+    "hours": "7 days a week 9 a.m. to 5 p.m.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/historic-sites/port-hudson-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-10563": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort Johnson-Vernon Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/fort-johnson-vernon",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-12489": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bogue Chitto Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/bogue-chitto-wma",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-12490": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Flatwoods Savanna Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/flatwoods-savanna",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-13090": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "John Franks Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/john-franks",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-2356": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bayou Segnette State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/bayou-segnette-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2357": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bogue Chitto State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/bogue-chitto-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2358": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Chemin-A-Haut State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/chemin-a-haut-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2359": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Chicot State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/chicot-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2360": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cypremort Point State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/cypremort-point-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2361": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fairview-Riverside State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/fairview-riverside-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2362": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fontainebleau State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/fontainebleau-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2363": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Grand Isle State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/grand-isle-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2365": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Jimmie Davis State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/jimmie-davis-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2366": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Bistineau State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/lake-bistineau-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2367": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Bruin State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/lake-bruin-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2368": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Claiborne State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/lake-claiborne-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2369": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake D'Arbonne State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/lake-darbonne-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2370": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Fausse Pointe State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/lake-fausse-pointe-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2371": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "North Toledo Bend State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/north-toledo-bend-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2372": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Palmetto Island State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/palmetto-island-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2373": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Poverty Point Reservoir State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/poverty-point-reservoir-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2374": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Saint Bernard State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/st-bernard-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2375": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sam Houston Jones State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/sam-houston-jones-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2376": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "South Toledo Bend State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/south-toledo-bend-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2377": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tickfaw State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "State Parks: $3 per person Free for seniors (62 & older) and children (3 & under)",
+    "hours": "State Parks - Entrance Stations: 8 a.m.-5 p.m.; Park Gates: Parks with boat launches 6 a.m.-9 p.m., Parks w/o boat launches 7 a.m.-9 p.m. Entrance stations open until 10 p.m. Fridays, Saturdays & nights before holidays.",
+    "pass": "$100 Annual Park Pass",
+    "season": "not checked (park page blocked to our fetcher)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/fees-and-facilities",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.lastateparks.com/parks-preserves/tickfaw-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-4042": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Alexander State Forest Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/alexander-state-forest",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4043": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Atchafalaya Delta Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/atchafalaya-delta",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4044": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Attakapas Island Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/attakapas-island",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4045": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bayou Macon Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/bayou-macon",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4046": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bayou Pierre Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/bayou-pierre",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4047": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Ben Lilly Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/ben-lilly-conservation-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Conservation Area",
+   "ver": 12
+  },
+  "US-4048": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Big Colewa Bayou Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/big-colewa-bayou",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4049": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Big Lake Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/big-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4050": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Biloxi Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/biloxi",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4051": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bodcau Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/bodcau",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4052": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Boeuf Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/boeuf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4053": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Buckhorn Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/buckhorn",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4055": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Clear Creek Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/clear-creek",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4056": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Dewey Wills Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/dewey-w-wills",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4057": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Elbow Slough Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/elbow-slough",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4058": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Elm Hall Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/elm-hall",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4059": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Grassy Lake Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/grassy-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4060": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hutchinson Creek Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/hutchinson-creek",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4061": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "J. C. 'Sonny' Gilbert Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/jc-sonny-gilbert",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4062": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Joyce Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/joyce",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4063": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Boeuf Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/lake-boeuf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4064": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lake Ramsey Savannah Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/lake-ramsay-savannah",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4065": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Little River Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/little-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4066": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Loggy Bayou Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/loggy-bayou",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4067": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Manchac Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/manchac",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4068": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Marsh Bayou Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/marsh-bayou",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4069": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Maurepas Swamp Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.wlf.louisiana.gov/page/maurepas-swamp",
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/maurepas-swamp",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4070": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pass-a-Loutre Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/passaloutre",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4071": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pearl River Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.wlf.louisiana.gov/page/pearl-river",
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/pearl-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4072": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fort Johnson North Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/fort-johnson-north",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4073": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pointe-aux-Chenes Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/pointeauxchenes",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4074": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pomme de Terre Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/pomme-de-terre",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4075": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Richard K. Yancey Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/richard-k-yancey",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4076": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Russell Sage Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/russell-sage",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4077": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sabine Island Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/sabine-island",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4078": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sabine Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/sabine",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4079": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Salvador Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/salvador-timken",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4080": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Timken Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/salvador-timken",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4081": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sandy Hollow Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/sandy-hollow",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4082": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sherburne Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/sherburne",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4083": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Soda Lake Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/soda-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4084": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Spring Bayou Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/spring-bayou",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4085": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tangipahoa Parish School Board Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "skipped: another topic (field trips / programs / seasons)",
+     "url": "https://www.wlf.louisiana.gov/page/tangipahoa-parish-school-board",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4086": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Thistlethwaite Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/thistlethwaite",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4087": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tunica Hills Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.wlf.louisiana.gov/page/tunica-hills",
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/tunica-hills",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4088": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Walnut Hill Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/walnut-hill",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4089": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "West Bay Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/west-bay",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-4486": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "Most national forest system lands are open, free of charge for your use and enjoyment.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r08/kisatchie/passes"
+    },
+    {
+     "line": "The America the Beautiful interagency passes include the Annual Pass ($80), Annual Senior Pass ($20), Lifetime Senior Pass ($80), Access Pass (FREE), Annual Military (FREE) and Lifetime Military Pass for Gold Star Families and Veterans (FRE",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r08/kisatchie/passes"
+    },
+    {
+     "line": "Note: The Interagency Annual Pass ($80) is not accepted at Kisatchie National Forest or National Forest and Grasslands in Texas sites at this time.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r08/kisatchie/passes"
+    },
+    {
+     "line": "The pass costs $30 and entitles you to unlimited day use in participating fee areas forest-wide for one year from month of issue.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r08/kisatchie/passes"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kisatchie National Forest",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fs.usda.gov/r08/kisatchie/alerts",
+    "fees": "The America the Beautiful interagency passes include the Annual Pass ($80), Annual Senior Pass ($20), Lifetime Senior Pass ($80), Access Pass (FREE), Annual Military (FREE) and Lifetime Military Pass for Gold Star Families and Veterans (FREE). Note: The Interagency Annual Pass ($80) is not accepted at Kisatchie National Forest or National Forest and Grasslands in Texas sites at this time. …",
+    "pass": "passes named on the page: Interagency Pass, America the Beautiful Pass, America the Beautiful, Annual Senior Pass, Lifetime Senior Pass, Access Pass",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r08/kisatchie/passes",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/kisatchie",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.fs.usda.gov/sites/nfs/files/publication/Caney%20RD%20November%202025_0.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "Visit our hunting page to download the current season permit required to hunt in the preserve.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/kisatchie"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Forest",
+   "ver": 12
+  },
+  "US-4568": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/elte/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "El Camino Real de los Tejas National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/elte/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access El Camino Real de los Tejas National Historic Trail.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elte/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elte/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elte/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elte/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-6445": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "St. Tammany Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/st-tammany-wildlife-refuge",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-9760": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bussey Brake Wildlife Management Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (agency-wide page)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/bussey-brake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Management Area",
+   "ver": 12
+  },
+  "US-9761": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Elmer's Island Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "hours": "the refuge closes to the public 30 minutes after sunset",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "season": "Beach shuttle: February/March/April/May: open to close, Friday through Sunday; June/July/August: open to close, every day; September: after Labor Day, open to close on weekends (Friday through Sunday); October/November: open to close, Friday through Sunday",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/elmers-island",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  },
+  "US-9769": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Marsh Island Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "WMA Access Permit: Annual permit: $20 for both residents and nonresidents; 5-day permit: $5 for both residents and nonresidents, must be 5 consecutive days. Individuals age 17 and under are not required to purchase a WMA Access Permit. Self-Clearing Permit: Free.",
+    "pass": "WMA Access Permit and Self-Clearing Permit (page: \"All visitors must have a WMA Access Permit\")",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/wmarefugeconservation-area-licenses-and-permits",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 405",
+     "url": "https://www.wlf.louisiana.gov/page/marsh-island-refuge",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Wildlife Refuge",
+   "ver": 12
+  }
+ },
+ "read": "2026-11-03"
+}

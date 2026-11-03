@@ -197,53 +197,166 @@
    "parks": 362,
    "status": "partial",
    "updated": "2026-11-02"
+  },
+  "US-KS": {
+   "checked": 145,
+   "counts": {
+    "fees": 11,
+    "hours": 8,
+    "hours_lines": 11,
+    "no_page": 0,
+    "nothing": 13,
+    "parks": 145,
+    "permits": 1,
+    "season": 2,
+    "season_lines": 2
+   },
+   "left": 0,
+   "parks": 145,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-LA": {
+   "checked": 123,
+   "counts": {
+    "fees": 7,
+    "hours": 11,
+    "hours_lines": 15,
+    "no_page": 0,
+    "nothing": 11,
+    "parks": 123,
+    "permits": 4,
+    "season": 2,
+    "season_lines": 3
+   },
+   "left": 0,
+   "parks": 123,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-MA": {
+   "checked": 421,
+   "counts": {
+    "fees": 25,
+    "hours": 35,
+    "hours_lines": 51,
+    "no_page": 0,
+    "nothing": 346,
+    "parks": 421,
+    "permits": 5,
+    "season": 12,
+    "season_lines": 18
+   },
+   "left": 0,
+   "parks": 421,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-MD": {
+   "checked": 186,
+   "counts": {
+    "fees": 86,
+    "hours": 81,
+    "hours_lines": 275,
+    "no_page": 0,
+    "nothing": 64,
+    "parks": 186,
+    "permits": 29,
+    "season": 64,
+    "season_lines": 168
+   },
+   "left": 0,
+   "parks": 186,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-ME": {
+   "checked": 148,
+   "counts": {
+    "fees": 8,
+    "hours": 26,
+    "hours_lines": 34,
+    "no_page": 2,
+    "nothing": 85,
+    "parks": 148,
+    "permits": 2,
+    "season": 7,
+    "season_lines": 9
+   },
+   "left": 0,
+   "parks": 148,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-MI": {
+   "checked": 214,
+   "counts": {
+    "fees": 15,
+    "hours": 18,
+    "hours_lines": 34,
+    "no_page": 0,
+    "nothing": 27,
+    "parks": 214,
+    "permits": 3,
+    "season": 9,
+    "season_lines": 10
+   },
+   "left": 174,
+   "parks": 388,
+   "status": "partial",
+   "updated": "2026-11-03"
   }
  },
  "hosts": {
-  "azstateparks.com": 1793629309.1206114,
   "destateparks.com": 1793712590.079613,
   "idfg.idaho.gov": 1793715483.678476,
   "iowaculture.gov": 1793714931.4774082,
-  "ohv.parks.ca.gov": 1793630322.6818752,
-  "parks.ca.gov": 1793629991.3799033,
-  "www.azgfd.com": 1793629327.522903,
+  "ksoutdoors.com": 1793781549.0465133,
+  "ksoutdoors.gov": 1793781557.2827094,
   "www.cgcounty.org": 1793715095.2742605,
   "www.fhwa.dot.gov": 1793715238.9328382,
   "www.floridastateparks.org": 1793712860.9260063,
   "www.idfg.id.gov": 1793715520.6061795,
+  "www.ksoutdoors.gov": 1793781469.3136413,
+  "www.lastateparks.com": 1793781803.4911802,
+  "www.maine.gov": 1793783708.9178083,
+  "www.mass-trails.org": 1793782820.535664,
+  "www.michigan.gov": 1793784095.683167,
+  "www.nwk.usace.army.mil": 1793781482.130476,
   "www.swfwmd.state.fl.us": 1793713000.0893836,
-  "www.wildhorsesonline.blm.gov": 1793715224.035343
+  "www.wildhorsesonline.blm.gov": 1793715224.035343,
+  "www2.dnr.state.mi.us": 1793784112.3864317
  },
  "last": {
   "areas": [
-   "US-DE",
-   "US-FL",
-   "US-GA",
-   "US-HI",
-   "US-IA",
-   "US-ID",
-   "US-IL",
-   "US-IN"
+   "US-KS",
+   "US-LA",
+   "US-MA",
+   "US-MD",
+   "US-ME",
+   "US-MI",
+   "US-MN",
+   "US-MO"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 12,
-   "requests": 1472,
-   "rested": 232,
-   "robots": 36,
-   "strikes": 35
+   "errors": 3,
+   "requests": 1511,
+   "rested": 791,
+   "robots": 2,
+   "strikes": 36
   },
   "stat": {
    "errors": 0,
-   "fees": 41,
-   "hours": 174,
-   "no_page": 0,
-   "none": 910,
-   "pages_read": 1034,
-   "parks": 1132,
-   "permits": 17,
+   "fees": 152,
+   "hours": 179,
+   "no_page": 2,
+   "none": 968,
+   "pages_read": 1193,
+   "parks": 1237,
+   "permits": 44,
    "skipped_fresh": 0
   },
-  "when": "2026-11-02"
+  "when": "2026-11-03"
  }
 }

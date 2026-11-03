@@ -1,0 +1,5255 @@
+{
+ "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
+ "area": "US-KS",
+ "counts": {
+  "fees": 11,
+  "hours": 8,
+  "hours_lines": 11,
+  "no_page": 0,
+  "nothing": 13,
+  "parks": 145,
+  "permits": 1,
+  "season": 2,
+  "season_lines": 2
+ },
+ "parks": {
+  "US-0291": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Flint Hills National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/flint-hills",
+    "hours": "All bids must be received by 9:00 a.m. Central Time on Wednesday, October 28, 2026.",
+    "season": "Common wildlife species that live on the Refuge year round include wild turkey, bobwhite quail, bobcat, and white-tailed deer.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/flint-hills",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/flint_hills/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/flint/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/flint",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0292": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kirwin National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/locations/kirwin-national-wildlife-refuge",
+    "hours": "Return to Locations Kirwin National Wildlife Refuge 7:30 a.m. - 4:00 p.m. Detailed hours 702 East Xavier Road Kirwin, KS 67644-3505 Plan Your Visit There are many of fun, interesting, and educational things you can do on the refuge. Early morning or just before sunset are the best times to observe wildlife.",
+    "season": "Due to the current reservoir elevation (1,704.22 feet), a seasonal boat closure is in effect from October 1, 2026 to April 1, 2027, to minimize disturbance to resting waterfowl. Boat fishing is prohibited during this closure; however, shore fishing remains permitted throughout Kirwin Reservoir. …",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/locations/kirwin-national-wildlife-refuge",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kirwin",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/locations/kirwin-national-wildlife-refuge/rules-and-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kirwin/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [
+    {
+     "line": "Hunters must obtain and carry a free access permit (by special drawing).",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/locations/kirwin-national-wildlife-refuge/rules-and-policies"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0293": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Marais Des Cygnes National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/marais-des-cygnes",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/marais-des-cygnes/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0294": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "The Visitor Center is open from 7:30 am to 4:00 pm, Monday through Friday except during Federal holidays.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.fws.gov/refuge/quivira/visit-us/rules-policies"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The Refuge is open daily from 1-1/2 hours before sunrise to 1-1/2 hours after sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/quivira/visit-us"
+    },
+    {
+     "line": "The Refuge is open from 1-1/2 hours before sunrise to 1-1/2 hours after sunset.",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/quivira"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Quivira National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fws.gov/refuge/quivira",
+    "hours": "The Refuge is open daily from 1-1/2 hours before sunrise to 1-1/2 hours after sunset.",
+    "season": "All of the Refuge is open to foot travel (with the exception of a few areas closed seasonally due to nesting birds).",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira/visit-us",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.fws.gov/sites/default/files/documents/2021%20Quivira%20NWR%20Hunting%20and%20Fishing%20Information.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/quivira/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "All of the Refuge is open to foot travel (with the exception of a few areas closed seasonally due to nesting birds).",
+     "read": "2026-11-03",
+     "url": "https://www.fws.gov/refuge/quivira/visit-us"
+    }
+   ],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0803": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/brvb/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Brown vs. Board of Education National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/brvb/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Brown v.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brvb/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-0818": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "Staff begin closing the grounds and visitor center at 4:30pm The parking lot gate is closed and locked for the night at 5:00pm.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.nps.gov/fols/planyourvisit/hours.htm"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/fols/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [
+    {
+     "line": "The park Visitor Center and grounds are both open from 8:30 am to 4:30pm.",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/fols/planyourvisit/hours.htm"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Fort Larned National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/fols/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Fort Larned National Historic Site.\")",
+    "hours": "Visitor Center and Park Grounds Operating Hours The park Visitor Center and grounds are both open from 8:30 am to 4:30pm. Staff begin closing the grounds and visitor center at 4:30pm The parking lot gate is closed and locked for the night at 5:00pm. On rare occasions when there is a heavy snowfall or icy conditions we may be closed, or delay opening. Check the website or call ahead if the weather ",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fols/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-0821": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/fosc/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Fort Scott National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/fosc/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Fort Scott National Historic Site.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fosc/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-0851": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/nico/planyourvisit/fees.htm"
+    },
+    {
+     "line": "There is no fee to Nicodemus National Historic Site.",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/nico/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Nicodemus National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/nico/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Nicodemus National Historic Site.\")",
+    "hours": "All Park - Park Hours: The Nicodemus Township Hall and visitor center is open year-round for five (5) days of the week, closed Tuesdays and Wednesdays. Visitor center hours are 9 am to 5 pm central time. The grounds are open 24 hours a day. The visitor center will be closed on Thanksgiving Day, Christmas Day, and New Year Day. | Visitor Center - Township Hall and Visitor Center: The Nicodemus Town",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/nico/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-12398": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Olathe Prairie Center State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Access to the trails is free. The range is free to use and open daily from dawn to dusk.",
+    "hours": "Trails and archery range open daily from dawn to dusk.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/nature-centers/olathe-prairie-center",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-13095": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Texas Lake Wildlife Area State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Hunters are required to obtain and complete a free day-use permit.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/texas-lake-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.gov/KDWP-Info/Locations/Wildlife-Areas/Public-Wildlife-Areas-in-Southwest-Kansas/Texas-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-13456": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pratt Fish Hatchery State Fish Hatchery",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/fish-hatcheries/pratt-hatchery",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fish Hatchery",
+   "ver": 12
+  },
+  "US-2330": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cedar Bluff State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Park Office Hours Sunday-Thursday 8:00am - 4:00pm; Friday 8:00am-7:00pm; Saturday 8:00am-6:00pm",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "All cabins are available year-round.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cedar-bluff",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2331": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cheney State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Winter Office Hours Monday - Friday 8am - 4:30pm",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Beginning in mid- to late-October, we turn the water off for the winter seasons to all utility campgrounds, bathrooms/shower houses, and dump stations. The utility campgrounds still have electric available, and the park is still open to camp during the winter. Cabins available for rent year-round.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cheney",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2332": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Clinton State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:30am - 4pm; Thursday - Friday 5pm - 8pm; Saturday 12pm - 5pm; Sunday 1pm - 3pm",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Park Office: year round operation for all department sales. Cross-Country Ski Trail: Weather Dependent.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/clinton",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/clinton/Hunting-Brochure.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2333": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Crawford State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/crawford",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Park Office Hours Monday - Saturday 8:00 AM - 4:30 PM (The gatehouse will operate during extended hours in the evening and on Sunday only during the summer camping season)",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Trail Season: Year Round. Cabins: open year round.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/crawford",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2334": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cross Timbers State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours: Summer Tuesday - Saturday 8:00 AM - 4:30 PM; Winter Monday - Friday 8:00 AM - 4:30 PM",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year Round",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cross-timbers",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2335": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Eisenhower State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "open all year, no hours stated",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year Round. Campers may stay at any one of the campgrounds for up to 14 consecutive days. Cabins: Check-in 2:00pm - Check-out 12:00pm (noon)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/eisenhower",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2336": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "El Dorado State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/el-dorado",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:00 AM - 4:00 PM Saturday and Sunday Closed",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Open Year Round (Tallgrass Prairie Trail: Will be open soon). Cabins can be reserved year-round.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/el-dorado",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2337": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Elk City State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/elk-city",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:15 AM - 4:00 PM",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year-around",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/elk-city",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2338": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fall River State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours: Summer Tuesday - Saturday 8AM - 4:30PM; Winter Monday - Friday 8AM - 4:30PM",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year Round",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/fall-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2339": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Glen Elder State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: All-Year. Cabins: Non peak season (Nov. 1 thru March 31), peak season (April 1 thru October 31).",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/flint-hills-trail",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/glen-elder-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2340": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hillsdale State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/hillsdale",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:00 AM - 4:00 PM",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year-around",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/hillsdale",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Hillsdale/hillsdale-lakemap[1].pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2341": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kaw River State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "no fee (\"Kaw River State Park is the only free state park in Kansas.\")",
+    "hours": "Hours 6 a.m. to 11 p.m.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/kaw-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2342": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kanopolis Lake State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/kanopolis",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Sunday - Friday 8:00 AM - 4:00 PM",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Alum Creek and Prairie Trails: Trail Season: Feb. 1st thru Oct. 31st. Horsethief Canyon, Rockin' K and other trails: Year-around. Cabins year-round; check in 3p.m. or after, check out at noon.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/kanopolis",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Kanopolis/Kanopolis-LakeMap.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2343": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lovewell State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:00 AM - 4:00 PM. Quiet hours are from 11 p.m. to 6 a.m.",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Lovewell Marina serves a full breakfast, lunch and dinner menu from April to September. A year-round unisex shower and restroom facility is also available at the park maintenance building.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/lovewell",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2344": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Meade State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/meade",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Meade State Park Office Hours Monday - Friday 8:00 AM - 4:00 PM",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "South Hiking Trail / North Hiking Trail: Trail Season: Year-around. Fishing is allowed in the lake year-round",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/meade",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2345": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Milford State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/milford",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:00am - 4:00pm Please use the self-pay station for camping and vehicle permits when the office is closed.",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: All Year. Seven cabins are open year round, while Big Oak, Honey Locust, and Red Cedar are closed during the winter months (Oct - April).",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/milford",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/milford/Milford%20Lake%20Brochure%20Map%202011%20all.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2346": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Mushroom Rock State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year-around",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/mushroom-rock",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2347": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Perry State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:00 AM - 4:00 PM (No boat registrations after 3:30 pm)",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Equestrian and Biking/Hiking Trails: Trail Season: Year-around",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/perry",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Perry/Hunting%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2348": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pomona State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Monday - Friday 8:00am - 4:00pm Closed Saturday and Sunday",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: Year-around. Cabins available for reservation year-round; Peak Season (April – September) Off Peak Season (October – March)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/pomona",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/pomona/Pomona-LakeMap[1].pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2349": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Prairie Dog State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "There is a $5 fee for cabins and campsites date changes and cancellations",
+    "hours": "Office Hours Monday - Friday 8am - 4pm Closed Saturday and Sunday",
+    "season": "All cabins are available for year-round rental, 364 days in advance. Nature trail: All-Year. Peak season of mid April through mid October (cabin-area showers and water); off season no water.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/prairie-dog",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2350": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Prairie Spirit Trail State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "Trail Season: Year-around",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/prairie-spirit-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-2351": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sandhills State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "open all year, no hours stated",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: year round",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/sand-hills",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/pratt-sandhills-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2352": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Historic Lake Scott State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/historic-lake-scott",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/historic-lake-scott",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2353": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tuttle Creek State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/tuttle-creek",
+    "fees": "It is $5 for a day pass or $25 for an annual vehicle pass. Kansas State Parks Passport costs $15.50. Seniors 65+/disabled: $13.75 for annual vehicle park permits or $3.25 for regular daily permits. Fancy Creek Range: The daily fee to use the range is $15.",
+    "hours": "The office hours for Tuttle Creek State Park are Monday thru Friday 8am to 4:30pm. The park office is closed on Saturday and Sunday. Fancy Creek Range: open on the first and third weekend, Saturday and Sunday, of each month from 10:00 AM - 4:00 PM. Archery range: open during daylight hours only.",
+    "pass": "Kansas State Parks Passport or annual vehicle permit",
+    "season": "Trails: year around. Cabins are available year around but are closed from December 22nd to January 2nd. Long term campsites are available in April to November in the River Pond campground and available in April to October in the Rocky Ford campground",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/tuttle-creek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/siteimages/Lake%20Sites/tuttlecreek/New%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2354": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Webster State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Office Hours Saturday - Thursday 8am - 4pm; Friday 8am - 8pm. Quiet hours are from 11 pm to 6 am.",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Coyote Trail: Year round. Cabins are available all year long.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/webster-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2355": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Wilson State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/wilson",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "The Park Office is open Monday thru Friday 8:00AM-4:00PM. Friday/Saturday Closed. (Hours box: Office Hours Monday - Friday 8:00am - 4:00pm)",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "The park is accessible daily and a vehicle permit is required to enter the state park areas. Trails: Year round. Switchgrass Bathroom/Shower facility is open year round",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/wilson",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/wilson/Wilson-Lakemap.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-3673": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "The Lower Fox Creek Schoolhouse is open seasonally.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.nps.gov/tapr/planyourvisit/hours.htm"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "Entrance fees and passes not accepted at the preserve, as there are no fees needed to enter the preserve.",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/tapr/planyourvisit/fees.htm"
+    },
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/tapr/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Tallgrass Prairie Preserve National Conservation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/tapr/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Tallgrass Prairie National Preserve.\")",
+    "hours": "Operating Hours Tallgrass Prairie National Preserve is open all year. The visitor center and historic buildings are open daily, only closing on major holidays. The Lower Fox Creek Schoolhouse is open seasonally. See below for details. Prescribed fire and cattle/bison operations may close trails. On rare occasions when there is heavy snowfall or icy conditions, we may be closed or have a delayed op",
+    "pass": "none (no entrance fee)",
+    "season": "Operating Hours Tallgrass Prairie National Preserve is open all year. The visitor center and historic buildings are open daily, only closing on major holidays.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tapr/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Conservation Area",
+   "ver": 12
+  },
+  "US-4566": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/cali/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "California National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/cali/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access California National Historic Trail.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4572": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/lecl/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Lewis and Clark National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/lecl/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Lewis & Clark National Historic Trail.\")",
+    "hours": "The Lewis and Clark National Historic Trail extends over 4,900 miles and through 16 states, from Pennsylvania to the Pacific Coast. Operating hours and seasons vary from site to site. Visit our State by State Guide or Maps Page . For more information on operating hours and seasons, please contact the sites you plan to visit. Click on the state names below for more information on Trail sites in tho",
+    "pass": "none (no entrance fee)",
+    "season": "Operating hours and seasons vary from site to site. For more information on operating hours and seasons, please contact the sites you plan to visit.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/planyourvisit/fees.htm",
+     "why": "hours page (Kentucky hours answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4576": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/oreg/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Oregon National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/oreg/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Oregon National Historic Trail.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/oreg/planyourvisit/upload/National-Park-Service-Oregon-Trail-Map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4578": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/poex/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pony Express National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/poex/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Pony Express National Historic Trail.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-4579": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+     "read": "2026-11-03",
+     "url": "https://www.nps.gov/safe/planyourvisit/fees.htm"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Santa Fe National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.nps.gov/safe/planyourvisit/conditions.htm",
+    "fees": "no fee (\"An entrance pass is not required to access Santa Fe National Historic Trail.\")",
+    "pass": "none (no entrance fee)",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/planyourvisit/hours.htm",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/planyourvisit/fees.htm",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/safe/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-5717": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Little Jerusalem Badlands State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/little-jerusalem-badlands",
+    "fees": "A valid State Park Vehicle Permit is required at all Kansas State Parks. Daily Vehicle Permit: CURRENT Fee $5.00, FEE BEGINNING 11/1/2026 $7.00. Daily Vehicle Permit - Senior/Disabled: $3.25, from 11/1/2026 $4.25. Annual Vehicle Permit: $25.00, from 11/1/2026 $39.00. Annual Vehicle Permit - Senior/Disabled: $13.75, from 11/1/2026 $20.25. Kansas State Park Passport: $15.50, from 11/1/2026 $30.50 (*",
+    "hours": "Little Jerusalem Badlands State Park is a day-use park only, open from sunrise to sunset daily, all year round. (Hours: Year-round Sunrise to Sunset)",
+    "pass": "Kansas State Park Vehicle Permit (daily or annual) or Kansas State Park Passport",
+    "season": "Trails: All Year",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/licenses-permits-fees/kansas-state-park-entrance-and-camping-fees",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/little-jerusalem-badlands",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-5718": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Flint Hills Trail State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/flint-hills-trail",
+    "fees": "no fee (\"There are no permits required to enjoy the park.\")",
+    "season": "Seasonal Amenities: Restrooms and water fountains are turned off in the winter. The segment between Council Grove and Herington is closed.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/flint-hills-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-7384": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Atchison State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/atchison-state-fishing-lake",
+    "fees": "There is no entry fee for this area. The $13.75 cabin reservation fee cannot be refunded. (cabin nightly price not shown: \"Prices are subject to change\")",
+    "hours": "Cabin: Check in time 2:00 pm; Check out time 12:00 pm",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/atchison-state-fishing-lake",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Atchison",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7385": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Brown State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The area is only open to hunting on Thursday, Saturday and Sunday from September 10 through March 15, closed to hunting all other days and time of the year.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Brown-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/brown-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7386": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Browning Oxbow State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {},
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Browning-Oxbow-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7387": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Douglas State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Douglas-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/douglas-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7388": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Geary State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/geary-state-fishing-lake",
+    "hours": "open all year, no hours stated",
+    "season": "The lake and public hunting area are open year round.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Geary-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/geary-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7390": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Leavenworth State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/leavenworth-state-fishing-lake",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Leavenworth-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/leavenworth-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7391": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Miami State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Miami-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/miami-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7392": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Middle Creek State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Louisburg-Middle-Creek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/louisburg-middle-creek-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7393": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Milford State Fish Hatchery",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/fish-hatcheries/milford-hatchery",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fish Hatchery",
+   "ver": 12
+  },
+  "US-7394": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Nebo State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Nebo-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/nebo-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7395": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Nemaha Wildlife Area State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Nemaha/Brochures/Nemaha-Wildlife-Area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/nemaha-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7396": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pottawatomie No 1 State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "Trail Season: Year Long. Camping is limited to a 7 day stay on area.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Pottawatomie-Lake-No.-1",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7397": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pottawatomie No 2 State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Pottawatomie-Lake-No.-2",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7398": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Shawnee State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Shawnee-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/shawnee-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7399": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tuttle Creek Willow State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {},
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Tuttle-Creek-Willow-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7400": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Washington State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/washington-state-fishing-lake",
+    "hours": "open all year, no hours stated",
+    "season": "The lake and wildlife area are open year round.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Washington-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/washington-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7401": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Bourbon State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The lake is lowered 5 – 8 feet after Labor Day and kept at this level through the winter.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Bourbon-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/bourbon-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7402": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Crawford State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/crawford",
+    "hours": "Park Office Hours Monday - Saturday 8:00 AM - 4:30 PM (The gatehouse will operate during extended hours in the evening and on Sunday only during the summer camping season)",
+    "season": "Trails: Trail Season: Year Round.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/crawford",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Crawford-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7403": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lyon State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Hunters and trappers: \"required to obtain a free daily hunt permit\"",
+    "hours": "open all year, no hours stated",
+    "season": "Clinton Eubank Memorial Trail: Trail Season: Year Round",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/lyon-state-fishing-lake",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Lyon-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7405": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Melvern River State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {},
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Melvern-Reservoir",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7406": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Mined Land State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Mined-Land-Wildlife-Area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/mined-land-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7407": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Montgomery State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Montgomery-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/montgomery-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7408": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Neosho State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Camp sites are primitive with no charge to camp. Shelter house: Reservations are required for overnight camping. A flat rate fee of $26 is required for reservations",
+    "season": "Nature Trail: Trail Season: Year-around",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/neosho-state-fishing-lake",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Neosho-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7409": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Osage State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Osage-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/osage-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7410": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Wilson State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/wilson-wildlife-area",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Wilson-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/wilson-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7411": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Woodson State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Woodson-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/woodson-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7412": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Black Kettle State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/South-Central-Region/Black-Kettle",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/black-kettle-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7413": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Butler State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/Butler-State-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/butler-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7414": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Chase State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/South-Central-Region/Chase",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/chase-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7415": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cowley State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/Cowley-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/cowley-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7416": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kingman State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/kingman-state-fishing-lake",
+    "fees": "Camping: \"There is no fee\"",
+    "hours": "Office hours are generally 8:00 a.m. to 4:30p.m. though the Manager (only full-time staff) is frequently working on the area and not available. Quiet hours are from 11:00p.m. to 6:00a.m.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/kingman-state-fishing-lake",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/Kingman-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7417": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "McPherson State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "Nature trail: Trail Season: Year-around",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/South-Central-Region/McPherson-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/mcpherson-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7418": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Jewell State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Jewell-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/jewell-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7419": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Logan State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Logan-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/logan-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7420": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Ottawa State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Free primitive camping is allowed in designated areas only around the lake. Fourteen days maximum per stay.",
+    "season": "Approximately 340 acres on the north and west sides of the property are designated as a refuge/special hunt area and are closed to public access except by special permit from October 1 through March 1 each year.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/ottawa-state-fishing-lake",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Ottawa-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7421": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Rooks State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "open all year, no hours stated",
+    "season": "The lake is open year round, except during dry periods, for fishing with a portion of the area closed from Nov. 1 to Mar. 1 to hunting and vehicles",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northwest-Region/Rooks",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/rooks-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7422": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Saline State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "From April 1 to August 31, vehicle access is permitted from Sunrise to Sunset. The access gate is closed during nighttime hours.",
+    "season": "The area is closed to all activities except by special permit from September 1 through March 31.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/saline-state-fishing-lake",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Saline-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7423": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sheridan State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/sheridan-state-fishing-lake",
+    "season": "Current Status: Fully closed for renovation. Expected Reopening: Summer 2027. Camping and day-use access are anticipated to reopen by July 1, 2027, with the first sportfishing opportunities expected in fall 2027 following the stocking of adult channel catfish.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Sheridan-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/sheridan-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7424": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sherman State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Sherman-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7425": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Barber State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "Barber Nature Trail: Trail Season: Year-around",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Barber-State-Fishing-Lake-Lower",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/barber-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7426": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Clark State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Clark-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/clark-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7427": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Concannon State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/concannon-state-fishing-lake",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Southwest-Region/Concannon",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/concannon-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7428": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Ford County State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Ford-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7429": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Goodman State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/goodman-state-fishing-lake",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Southwest-Region/Goodman",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/goodman-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7430": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hain State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The area is closed to vehicle traffic during waterfowl seasons. Walk-in traffic is welcome for both fishing and hunting during this time.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Hain-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/hain-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7431": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hodgeman State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/hodgeman-state-fishing-lake",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Southwest-Region/Hodgeman",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/hodgeman-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7432": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kiowa State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Kiowa-State-Fishing-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/kiowa-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7433": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Meade State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/meade",
+    "hours": "Meade State Park Office Hours Monday - Friday 8:00 AM - 4:00 PM",
+    "season": "Fishing is allowed in the lake year-round with motorized boating restricted to fishing only and no wake speed.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/meade",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Meade-State-Lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7434": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Scott State Fishing Lake",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southwest-Region/Scott-State-Lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/scott-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Fishing Lake",
+   "ver": 12
+  },
+  "US-7477": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [
+    {
+     "line": "Some fee areas and campgrounds are open seasonally, while others are open year-round.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r02/psicc/passes"
+    }
+   ],
+   "checked": "2026-11-03",
+   "fees": [
+    {
+     "line": "There is no entrance fee for the Pike-San Isabel National Forests and Cimarron & Comanche National Grasslands.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r02/psicc/passes"
+    },
+    {
+     "line": "National interagency passes offer discounts, free entrances, and some coverage of standard amenity fees at recreation sites with the following federal agencies: U.S. Forest Service, National Park Service, U.S. Fish and Wildlife Service, U.S",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r02/psicc/passes"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours (season only)",
+   "hunting_hours": [],
+   "n": "Cimarron National Grassland",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.fs.usda.gov/r02/psicc/alerts",
+    "fees": "Learn about the Every Kid Outdoors program Interagency Annual Pass Image $80 Available for all to purchase. Buy the annual pass Interagency Senior Annual Pass Image $20 Available for U.S. citizens or permanent residents ages 62 and over . Buy the senior annual pass Interagency Senior Lifetime Pass Image $80 Available for U.S. citizens or permanent residents ages 62 and over .",
+    "pass": "passes named on the page: interagency pass, Interagency Annual Pass, Access Pass, Military Annual Pass, Military Lifetime Pass",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r02/psicc/passes",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r02/psicc",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "The forests and grasslands are open year-round for a variety of recreational activities and uses.",
+     "read": "2026-11-03",
+     "url": "https://www.fs.usda.gov/r02/psicc/passes"
+    }
+   ],
+   "status": "ok",
+   "t": "National Grassland",
+   "ver": 12
+  },
+  "US-7866": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "Visitor center: 10 am - 5 pm.",
+     "read": "2026-11-03",
+     "scope": "attraction",
+     "url": "https://www.kshs.org/p/mine-creek-civil-war-battlefield/19567"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Self-guided walk-through site open dawn to dusk daily",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/mine-creek-civil-war-battlefield/19567"
+    },
+    {
+     "line": "Grounds: Open year-round exterior self-guided walk-through site, dawn to dusk",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/mine-creek-civil-war-battlefield/19567"
+    },
+    {
+     "line": "Wednesday - Saturday, 1 - 5 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/mine-creek-civil-war-battlefield/19567"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Mine Creek Civil War Battlefield State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/mine-creek-civil-war-battlefield/19567",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/mine-creek-civil-war-battlefield/19567",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-7867": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Benedictine Bottoms State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The area is open to the public from April 1 through September 30. From October 1 Through March 31 an access/hunting permit is required. These permit are by computer draw only.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/Services/Publications/Maps-State-Wildlife-Areas/Benedictine-Bottoms-WA",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/benedictine-bottoms-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7918": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Byron Walker State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Campground: \"There is a seven (7) night maximum stay, no permits, passes, or fees required.\"",
+    "hours": "Office Hours 8:00 AM - 4:30 PM",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/byron-walker-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Byron-Walker",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7919": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cedar Bluff State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/cedar-bluff-wildlife-area",
+    "fees": "Camping on the Wildlife Area is primitive and limited to three designated areas. These areas have no fees for camping",
+    "hours": "open all year, no hours stated",
+    "season": "A 320 acre refuge \"Closed to All Activities\" directly below the dam is in effect year-round. From Sept. 1st thru Jan. 31st, 500 acres of land and from Nov. 1st thru Jan. 31st, 200 acres water are closed to all access.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/cedar-bluff-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Cedar-Bluff-Wildlife-Area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7920": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cheney State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/cheney-wildlife-area",
+    "fees": "Shooting range: \"Permits are available at the range.\" (no price stated)",
+    "hours": "Shooting Range Hours: Saturdays 8am-5pm; Sundays 1-5pm. Quiet hours on the area are from 11:00 p.m. to 6:00 a.m.",
+    "status": "FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/cheney-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Cheney",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7921": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Cheyenne Bottoms State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Trapping: \"A special permit is required. It is available at the area office free of charge.\"",
+    "hours": "From April 15 to August 15, hand powered watercraft are not permitted between 10 A.M. and 5 P.M.",
+    "season": "Pools 1, 5 and a portion of Pool 2 are refuge areas and closed to all activities. Outside the waterfowl season, only hand-powered boats are allowed.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/cheyenne-bottoms-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southwest/Cheyenne-Bottoms",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7922": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Clinton State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "Refuge area is closed to all activities from October 1st thru January 15th. Rock Creek Horse Trail: Trail Season: April through September",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/clinton-wildlife-area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/clinton/Hunting-Brochure.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7923": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Copan State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Copan",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/copan-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7924": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Council Grove State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Council-Grove",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/council-grove-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7925": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "El Dorado State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/El-Dorado",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/el-dorado-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7926": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Elk City Reservoir State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The refuge is closed to all activities from September 1 to March 31 and angler access is allowed in the refuge from April 1 to August 31.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Elk-City",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7927": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Fall River State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "open all year, no hours stated",
+    "season": "2 Waterfowl Refuges closed to all activity all year.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Fall-River",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/fall-river-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7928": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Glen Elder State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "Shooting Range: Open during daylight hours.",
+    "season": "Refuge dates for both areas are from November 1 to January 31. Youth-Mentor Area: October 1st through January 31st.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/glen-elder-wildlife-area",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Glen-Elder",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7929": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hillsdale State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/hillsdale-wildlife-area",
+    "season": "A waterfowl refuge is closed to all activities from October 1 through January 15, annually.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Hillsdale",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Hillsdale/hillsdale-lakemap[1].pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/hillsdale-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7930": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hollister State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Shooting range (Old Fort SharpShooters Club): $20 - Individual yearly OFSS membership; $30 - Family yearly OFSS membership; $10 - Daily shooting range fee (non-member); Trap range = $5 per 25 targets (clays provided) (member & nonmember). Managed dove field: free daily hunt permit",
+    "hours": "Hollister Shooting Range: Range is closed December-February Range is open March-November. Saturdays 11:00 AM until 4:00 PM Weather permitting. Sundays 1:00 PM until 5:00 PM Weather permitting",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/hollister-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Hollister",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7931": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Jamestown State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The refuge is closed to all activity from Oct. 1 through Mar. 1 except for the special hunts conducted during hunting seasons.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Jamestown",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/jamestown-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7932": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kansas Veterans State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.gov/KDWP-Info/Locations/Wildlife-Areas/Northwest/Kansas-Veteran-s",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/kansas-veteran-s-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7933": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kaw State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/Kaw",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7934": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Lovewell State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "Office Hours Monday - Friday 8AM - 4:30PM",
+    "season": "Designated, primitive campgrounds at Oak Hill, (open all year) and seasonal campground Blue Shale, (open May 1 - Sept. 1). Special Hunts and Refuge Areas are in effect September 1 - April 1. Dam Overlook: May be closed seasonally as part of the refuge system Oct 1 - Mar. 1.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/lovewell-wildlife-area",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Lovewell",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7935": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Marais des Cygnes State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "open all year, no hours stated",
+    "season": "Fishing is allowed in marsh units from April 15 through September 15. Unit G Campsite: Closed Sept. 15 through April 15. Closed areas (refuge) are closed to all activities year-round.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Marais-des-Cygnes",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/marais-des-cygnes-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7936": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Marion State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "open all year, no hours stated",
+    "season": "An 800 acre Waterfowl Refuge ... is located along French Creek. This area is closed to hunting all year and closed to all activities from October 1 to March 1.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Reservoirs/South-Central-Region/Marion",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/marion-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7937": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "McPherson Valley Wetlands State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "open all year, no hours stated",
+    "season": "The Wetlands are open to the public year-round, and all areas, with the exception of posted refuges, may be entered on foot.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/South-Central/McPherson-Valley-Wetlands",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/mcpherson-valley-wetlands-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7938": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Milford State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "Office Hours 8:00 AM - 4:30 PM subject to change",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/milford-wildlife-area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/milford/Milford%20Lake%20Brochure%20Map%202011%20all.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7939": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Mined Land State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Mined-Land",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/mined-land-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7940": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Norton State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/norton-wildlife-area-at-keith-sebelius-reservoir",
+    "season": "Starting November 1st, the middle portion of the reservoir is designated as a waterfowl refuge and is closed until January 31st.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Keith-Sebelius-Reservoir-Norton",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/norton-wildlife-area-at-keith-sebelius-reservoir",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7941": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Perry State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "Refuge areas are closed to all activities from October 1 through January 15.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Perry",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/Perry/Hunting%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/perry-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7942": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pratt Sandhills State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southwest/Pratt-Sandhills",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/pratt-sandhills-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7943": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Sandsage Bison Range State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/sandsage-bison-range-wildlife-area",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southwest/Sandsage-Bison-Range",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/sandsage-bison-range-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7944": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Smoky Hill State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "season": "The wildlife area is open to public hunting with the exception of the refuge which is closed September 1 - January 31. The wildlife area trails are closed from Nov 1-Jan 31 annually to limit hunter disturbance and for safety.",
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/smoky-hill-wildlife-area-at-kanopolis-reservoir",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7945": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Toronto State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Southeast/Toronto",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/toronto-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7946": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Tuttle Creek State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/tuttle-creek-wildlife-area",
+    "fees": "Wood cutting is allowed on the Wildlife Area with a free permit from the area manager.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/tuttle-creek-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northeast/Tuttle-Creek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/siteimages/Lake%20Sites/tuttlecreek/New%20Map.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7947": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Webster State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "Camping with vehicle access on the wildlife area is limited to four designated areas. The areas are free, and you must take your trash with you.",
+    "season": "The waterfowl refuge is closed to all activities between November 1 and January 31.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/webster-wildlife-area",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Webster",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7948": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Wilson State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "closures_page": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/wilson-wildlife-area",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas/Northwest/Wilson",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/wilson/Wilson-Lakemap.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/wilson-wildlife-area",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-7949": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Woodson State Wildlife Area",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://ksoutdoors.com/KDWP-Info/Locations/Wildlife-Areas",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/woodson-state-fishing-lake",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Wildlife Area",
+   "ver": 12
+  },
+  "US-9177": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Wednesday - Saturday, 1 - 5 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/constitution-hall/19562"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Constitution Hall State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/constitution-hall/19562",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/constitution-hall/19562",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9178": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Wednesday - Saturday, 1 - 5 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/fort-hays/19563"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Fort Hays State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/fort-hays/19563",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/fort-hays/19563",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9179": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Wednesday - Saturday, 1 - 5 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/grinter-place/19564"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Grinter Place State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/grinter-place/19564",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/grinter-place/19564",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9180": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hollenberg Pony Express Station State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/hollenberg-pony-express-station/19565",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/hollenberg-pony-express-station/19565",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9181": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kaw Mission State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/kaw_mission",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/kaw_mission",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9182": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Wednesday - Saturday, 1 - 5 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/pawnee-indian-museum/19568"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Pawnee Indian Museum State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/pawnee-indian-museum/19568",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/pawnee-indian-museum/19568",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9183": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Wednesday - Saturday, 1 - 5 pm.",
+     "read": "2026-11-03",
+     "url": "https://www.kshs.org/p/red-rocks-home-of-the-william-allen-white-family/19569"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Red Rocks State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/red-rocks-home-of-the-william-allen-white-family/19569",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/red-rocks-home-of-the-william-allen-white-family/19569",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9184": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Cottonwood Ranch State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/cottonwood-ranch/19571",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/cottonwood-ranch/19571",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9185": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "First Territorial Capitol State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "fees": "no fee (\"Hours Open April 2027 10 a.m. - 5 p.m. Wednesday - Saturday 1 - 5 p.m. Sunday Closed: State holidays and Easter Free admission Portions ADA accessible.\")",
+    "hours": "Hours Open April 2027 10 a.m. - 5 p.m. Wednesday - Saturday 1 - 5 p.m. Sunday Closed: State holidays and Easter Free admission Portions ADA accessible.",
+    "pass": "none (no fee)",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/first-territorial-capitol-plan-your-visit/15834",
+     "why": "fees page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/first-territorial-capitol-plan-your-visit/15834",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9186": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Goodnow House State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/goodnow_house",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/goodnow_house",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9187": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "John Brown Museum State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/john-brown-museum/19574",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/john-brown-museum/19574",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9188": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Shawnee Indian Mission State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/p/shawnee-indian-mission/19570",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/p/shawnee-indian-mission/19570",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9189": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Iowa and Sac & Fox Mission State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/kansapedia/iowa-and-sac-fox-mission/11847",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/kansapedia/iowa-and-sac-fox-mission/11847",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9190": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Marais des Cygnes Massacre State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "hours": "On the lintels of Kansas That blood shall not dry; Henceforth the Bad Angel Shall harmless go by; Henceforth to the sunset, Unchecked on her way, Shall Liberty follow The march of the day.",
+    "status": "PARTLY"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/kansapedia/marais-des-cygnes-massacre-site/11870",
+     "why": "hours page (outside research)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/kansapedia/marais-des-cygnes-massacre-site/11870",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9191": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pawnee Rock State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.kshs.org/pawnee_rock",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.kansashistory.gov:443/pawnee_rock",
+     "why": "park page (outside research)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-9752": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-03",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Lehigh Portland State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "outside": {
+    "status": "NOT FOUND"
+   },
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://lehightrails.com/news/lehigh-portland-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://lehightrails.com/rules/",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  }
+ },
+ "read": "2026-11-03"
+}
