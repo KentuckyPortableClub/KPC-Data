@@ -1,45 +1,61 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-03",
  "leads": [
   {
    "agency": "",
    "area": "name",
-   "count": 214,
+   "count": 566,
    "fields": [
-    "pgrm_proje",
-    "directions",
-    "notes",
+    "name",
+    "address",
+    "phone",
+    "link",
+    "target",
     "type",
-    "name"
+    "hours",
+    "descriptio",
+    "key_words"
    ],
    "known": false,
-   "layer": "Sna Parking",
+   "layer": "points",
    "sample": [
     {
-     "directions": "From Deer River 22 miles N on MN Hwy 6, then 0.2 mile W on Co Rd 313. Park on SW road shoulder.",
-     "name": "Little Too Much Lake SNA",
-     "notes": " ",
-     "pgrm_proje": "SNA02054",
-     "type": "road shoulder"
+     "address": "3120 Penn Ave N",
+     "descriptio": "Retail chain selling a range of grocery items, including produce, meat & dairy, at discount prices.",
+     "hours": "9:00AM-8:00PM",
+     "key_words": " ",
+     "link": "https://www.aldi.us",
+     "name": "ALDI",
+     "phone": "855-955-2534",
+     "target": " ",
+     "type": "Grocery Store"
     },
     {
-     "directions": "From Granite Falls, 0.2 mile S on MN Hwy 23, then 0.15 mile W on Co Hwy 39 (540th St). Park in pull-off on N near wood-routed sign.",
-     "name": "Blue Devil Valley SNA",
-     "notes": " ",
-     "pgrm_proje": "SNA01050",
-     "type": "pull off"
+     "address": "3111 Emerson Ave N",
+     "descriptio": " ",
+     "hours": "8:00AM-8:00PM",
+     "key_words": " ",
+     "link": " ",
+     "name": "So Low Grocery Outlet",
+     "phone": "612-302-8855",
+     "target": " ",
+     "type": "Grocery Store"
     },
     {
-     "directions": "From Zimmerman 5.4 miles W on Co Hwy 4, then 0.45 mile S on 168th St, then 1.25 miles W and S on forest road into Sand Dunes State Forest. Park in campground and hike S to site.",
-     "name": "Uncas Dunes SNA",
-     "notes": " ",
-     "pgrm_proje": "SNA01039",
-     "type": "state forest lot"
+     "address": "1612 2nd St NE",
+     "descriptio": " ",
+     "hours": "8:00AM-8:00PM",
+     "key_words": " ",
+     "link": "http://sentyrzmarket.com",
+     "name": "Sentyrz Supermarket",
+     "phone": "612-781-3484",
+     "target": " ",
+     "type": "Grocery Store"
     }
    ],
-   "service": "us_mn_state_dnr/bdry_scientific_and_nat_areas",
+   "service": "cura_asian_media_access",
    "typef": "type",
-   "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_scientific_and_nat_areas/FeatureServer/3"
+   "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/cura_asian_media_access/FeatureServer/0"
   },
   {
    "agency": "",
@@ -187,77 +203,6 @@
   },
   {
    "agency": "",
-   "area": "unit_name",
-   "count": 60,
-   "fields": [
-    "alt_name",
-    "county",
-    "hwt_shp",
-    "source",
-    "unit_name",
-    "area_name",
-    "admin",
-    "cooperator",
-    "nearest_to",
-    "directions",
-    "comments_1",
-    "pdf_file",
-    "unique_id",
-    "ident",
-    "comment"
-   ],
-   "known": false,
-   "layer": "Access Points",
-   "sample": [
-    {
-     "admin": "DNR",
-     "alt_name": "7-Mile RGMA",
-     "area_name": "Red Lake WMA",
-     "comments_1": " ",
-     "cooperator": " ",
-     "county": "Lake of the Woods",
-     "directions": " ",
-     "hwt_shp": "Y",
-     "nearest_to": "Grygla",
-     "pdf_file": "7mile_rgma.pdf",
-     "source": "SFRMP Shapefile - R1",
-     "unit_name": "7-Mile RGMA"
-    },
-    {
-     "admin": "DNR",
-     "alt_name": "Bear River RGMA 1",
-     "area_name": "Tower",
-     "comments_1": " ",
-     "cooperator": "St. Louis County",
-     "county": "St. Louis/Itasca",
-     "directions": "From Side Lake 7 mi N to Co Rd 22, 2.25 N mi N of Hwy 22 on Airport Rd.",
-     "hwt_shp": "Y",
-     "nearest_to": "Side Lake",
-     "pdf_file": "bear_river_rgma.pdf",
-     "source": "Area Staff",
-     "unit_name": "Bear River RGMA"
-    },
-    {
-     "admin": "DNR",
-     "alt_name": "Bear River RGMA 2",
-     "area_name": "Tower",
-     "comments_1": " ",
-     "cooperator": "St. Louis County",
-     "county": "St. Louis/Itasca",
-     "directions": "From Side Lake 7 mi N to Co Rd 22, 2.25 N mi N of Hwy 22 on Airport Rd.",
-     "hwt_shp": "Y",
-     "nearest_to": "Side Lake",
-     "pdf_file": "bear_river_rgma.pdf",
-     "source": "Area Staff",
-     "unit_name": "Bear River RGMA"
-    }
-   ],
-   "service": "us_mn_state_dnr/bdry_ruffed_grouse_mgmt_areas",
-   "typef": "",
-   "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_ruffed_grouse_mgmt_areas/FeatureServer/0"
-  },
-  {
-   "agency": "",
    "area": "",
    "count": 44,
    "fields": [
@@ -299,6 +244,102 @@
   {
    "agency": "",
    "area": "",
+   "count": 44,
+   "fields": [
+    "Date",
+    "Venue",
+    "City"
+   ],
+   "known": false,
+   "layer": "Blue Slide Park Tour",
+   "sample": [
+    {
+     "City": "New York City, NY",
+     "Date": "9/22/2011",
+     "Venue": "Irving Plaza "
+    },
+    {
+     "City": "North Hampton, MA",
+     "Date": "9/23/2011",
+     "Venue": "John M. Greene Hall "
+    },
+    {
+     "City": "Providence, RI",
+     "Date": "9/25/2011",
+     "Venue": "The Strand Ballroom "
+    }
+   ],
+   "service": "Blue_slide_park_data",
+   "typef": "",
+   "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/Blue_slide_park_data/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 22,
+   "fields": [
+    "Name",
+    "FolderPath",
+    "Snippet",
+    "PopupInfo",
+    "Location"
+   ],
+   "known": false,
+   "layer": "Boat Launch (Fee May Apply)",
+   "sample": [
+    {
+     "FolderPath": "SHARP boat launches.kmz/SHARP boat launches",
+     "Location": "Ship Bottom LBI",
+     "Name": "Ship Bottom Municipal Ramp",
+     "PopupInfo": " ",
+     "Snippet": " "
+    },
+    {
+     "FolderPath": "SHARP boat launches.kmz/SHARP boat launches",
+     "Location": "Port Republic-Galloway TWP",
+     "Name": "Chestnut Neck Launch",
+     "PopupInfo": " ",
+     "Snippet": " "
+    },
+    {
+     "FolderPath": "SHARP boat launches.kmz/SHARP boat launches",
+     "Location": "Stafford TWP",
+     "Name": "Cedar Run Dock Road",
+     "PopupInfo": " ",
+     "Snippet": " "
+    }
+   ],
+   "service": "Boat_Launch_(Fee_May_Apply)",
+   "typef": "",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Boat_Launch_(Fee_May_Apply)/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 15,
+   "fields": [
+    "Name"
+   ],
+   "known": false,
+   "layer": "Parking",
+   "sample": [
+    {
+     "Name": "Lower 7 Bridges"
+    },
+    {
+     "Name": "Lester Park Lot"
+    },
+    {
+     "Name": "Lester Park Golf Lot"
+    }
+   ],
+   "service": "Duluth_Ski_Trails_WFL1",
+   "typef": "",
+   "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/Duluth_Ski_Trails_WFL1/FeatureServer/3"
+  },
+  {
+   "agency": "",
+   "area": "",
    "count": 8,
    "fields": [
     "orientationdatapoints_id",
@@ -335,6 +376,54 @@
    "service": "us_mn_state_dnr/geos_blue_mounds_state_park",
    "typef": "type",
    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_blue_mounds_state_park/FeatureServer/1"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 3,
+   "fields": [
+    "FeatureType",
+    "Notes"
+   ],
+   "known": false,
+   "layer": "Bike Parking",
+   "sample": [
+    {
+     "FeatureType": "Bike Shop",
+     "Notes": "Hay field with lots of parking"
+    },
+    {
+     "FeatureType": "Class 1 Parking",
+     "Notes": "church parking lot\n"
+    },
+    {
+     "FeatureType": "Bike Locker",
+     "Notes": "New location added to test application"
+    }
+   ],
+   "service": "Bike_Parking_Iyyussuu_Ethiopia",
+   "typef": "FeatureType",
+   "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/Bike_Parking_Iyyussuu_Ethiopia/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 1,
+   "fields": [
+    "FeatureType",
+    "Notes"
+   ],
+   "known": false,
+   "layer": "Bike_Parking",
+   "sample": [
+    {
+     "FeatureType": "Bike Shop",
+     "Notes": "Thank \n\n"
+    }
+   ],
+   "service": "Bike_Parking",
+   "typef": "FeatureType",
+   "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/Bike_Parking/FeatureServer/0"
   },
   {
    "agency": "",
@@ -400,6 +489,117 @@
    "service": "us_mn_state_dnr/struc_water_access_sites",
    "typef": "launch_type",
    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "name",
+   "count": 214,
+   "fields": [
+    "pgrm_proje",
+    "directions",
+    "notes",
+    "type",
+    "name"
+   ],
+   "known": true,
+   "layer": "Sna Parking",
+   "sample": [
+    {
+     "directions": "From Deer River 22 miles N on MN Hwy 6, then 0.2 mile W on Co Rd 313. Park on SW road shoulder.",
+     "name": "Little Too Much Lake SNA",
+     "notes": " ",
+     "pgrm_proje": "SNA02054",
+     "type": "road shoulder"
+    },
+    {
+     "directions": "From Granite Falls, 0.2 mile S on MN Hwy 23, then 0.15 mile W on Co Hwy 39 (540th St). Park in pull-off on N near wood-routed sign.",
+     "name": "Blue Devil Valley SNA",
+     "notes": " ",
+     "pgrm_proje": "SNA01050",
+     "type": "pull off"
+    },
+    {
+     "directions": "From Zimmerman 5.4 miles W on Co Hwy 4, then 0.45 mile S on 168th St, then 1.25 miles W and S on forest road into Sand Dunes State Forest. Park in campground and hike S to site.",
+     "name": "Uncas Dunes SNA",
+     "notes": " ",
+     "pgrm_proje": "SNA01039",
+     "type": "state forest lot"
+    }
+   ],
+   "service": "us_mn_state_dnr/bdry_scientific_and_nat_areas",
+   "typef": "type",
+   "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_scientific_and_nat_areas/FeatureServer/3"
+  },
+  {
+   "agency": "",
+   "area": "unit_name",
+   "count": 60,
+   "fields": [
+    "alt_name",
+    "county",
+    "hwt_shp",
+    "source",
+    "unit_name",
+    "area_name",
+    "admin",
+    "cooperator",
+    "nearest_to",
+    "directions",
+    "comments_1",
+    "pdf_file",
+    "unique_id",
+    "ident",
+    "comment"
+   ],
+   "known": true,
+   "layer": "Access Points",
+   "sample": [
+    {
+     "admin": "DNR",
+     "alt_name": "7-Mile RGMA",
+     "area_name": "Red Lake WMA",
+     "comments_1": " ",
+     "cooperator": " ",
+     "county": "Lake of the Woods",
+     "directions": " ",
+     "hwt_shp": "Y",
+     "nearest_to": "Grygla",
+     "pdf_file": "7mile_rgma.pdf",
+     "source": "SFRMP Shapefile - R1",
+     "unit_name": "7-Mile RGMA"
+    },
+    {
+     "admin": "DNR",
+     "alt_name": "Bear River RGMA 1",
+     "area_name": "Tower",
+     "comments_1": " ",
+     "cooperator": "St. Louis County",
+     "county": "St. Louis/Itasca",
+     "directions": "From Side Lake 7 mi N to Co Rd 22, 2.25 N mi N of Hwy 22 on Airport Rd.",
+     "hwt_shp": "Y",
+     "nearest_to": "Side Lake",
+     "pdf_file": "bear_river_rgma.pdf",
+     "source": "Area Staff",
+     "unit_name": "Bear River RGMA"
+    },
+    {
+     "admin": "DNR",
+     "alt_name": "Bear River RGMA 2",
+     "area_name": "Tower",
+     "comments_1": " ",
+     "cooperator": "St. Louis County",
+     "county": "St. Louis/Itasca",
+     "directions": "From Side Lake 7 mi N to Co Rd 22, 2.25 N mi N of Hwy 22 on Airport Rd.",
+     "hwt_shp": "Y",
+     "nearest_to": "Side Lake",
+     "pdf_file": "bear_river_rgma.pdf",
+     "source": "Area Staff",
+     "unit_name": "Bear River RGMA"
+    }
+   ],
+   "service": "us_mn_state_dnr/bdry_ruffed_grouse_mgmt_areas",
+   "typef": "",
+   "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_ruffed_grouse_mgmt_areas/FeatureServer/0"
   }
  ],
  "st": "MN"

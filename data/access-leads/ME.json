@@ -1,5 +1,129 @@
 {
- "checked": "2026-10-26",
- "leads": [],
+ "checked": "2026-11-03",
+ "leads": [
+  {
+   "agency": "Emergency Services Communications Bureau, Maine Public Utilities Commission",
+   "area": "UNIT",
+   "count": 96,
+   "fields": [
+    "COUNTRY",
+    "STATE",
+    "COUNTY",
+    "PREDIR",
+    "STREETNAME",
+    "SUFFIX",
+    "POSTDIR",
+    "ESN",
+    "ZIPCODE",
+    "ZIPPLUS4",
+    "BUILDING",
+    "FLOOR",
+    "UNIT",
+    "ROOM",
+    "SEAT",
+    "LANDMARK",
+    "LOC",
+    "PLACE_TYPE",
+    "ADDRESS",
+    "RDNAME"
+   ],
+   "known": false,
+   "layer": "Maine_Boat_Launches_E911",
+   "sample": [
+    {
+     "COUNTRY": "US",
+     "COUNTY": "Oxford",
+     "ESN": "85",
+     "STATE": "ME",
+     "STREETNAME": "Wabunaki",
+     "SUFFIX": "Rd",
+     "ZIPCODE": "04022"
+    },
+    {
+     "COUNTRY": "US",
+     "COUNTY": "Oxford",
+     "ESN": "85",
+     "STATE": "ME",
+     "STREETNAME": "Denmark",
+     "SUFFIX": "Rd",
+     "ZIPCODE": "04022"
+    },
+    {
+     "COUNTRY": "US",
+     "COUNTY": "Oxford",
+     "ESN": "85",
+     "STATE": "ME",
+     "STREETNAME": "Bush Row",
+     "SUFFIX": "Rd",
+     "ZIPCODE": "04022"
+    }
+   ],
+   "service": "MaineFacilitiesStructuresNG911",
+   "typef": "PLACE_TYPE",
+   "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineFacilitiesStructuresNG911/FeatureServer/1"
+  },
+  {
+   "agency": "Maine Department of Inland Fisheries and Wildlife",
+   "area": "WMA_name",
+   "count": 168,
+   "fields": [
+    "WMA_name",
+    "Location",
+    "PhotoURL",
+    "PhotoCaption",
+    "Creator",
+    "Editor",
+    "Hyperlink",
+    "Prohibit",
+    "Funding",
+    "Recreate",
+    "HuntTrap",
+    "Directions1",
+    "Visible",
+    "Accuracy"
+   ],
+   "known": true,
+   "layer": "WMA Access Points",
+   "sample": [
+    {
+     "Creator": "Jason.Czapiga@maine.gov_maine",
+     "Directions1": "From the town of Newfield, take Route 11 (Water Street) west approximately 1 mile.  The entrance will be on your left.  ",
+     "Editor": "Jason.Czapiga@maine.gov_maine",
+     "Funding": "The acquisition and management of WMAs are funded with manufacturers' federal excise taxes on sporting arms, ammunition and archery (Pittman-Robertson Act), as well as revenue from state hunting license and permit fees. Additional funding for acquisition of Maine’s WMAs comes from Land for Maine’s Future, Maine Outdoor Heritage Fund, North American Wetland Conservation Act, Maine Natural Resource Conservation Program, funds from duck stamps, State bond funding, conservation partners, towns, and private donors.",
+     "HuntTrap": "You are welcome to hunt or trap on this WMA but with these special requirements: Removable stands or blinds, such as ladder, hang on, pop-up blinds etc. when placed for more than one day require a permit to hunt on MDIFW-owned WMAs and must be clearly labeled with the hunters' name and address. Permanent structures are prohibited. Permission is not needed if blind and stand are removed daily. All trapping, including bear trapping and the placing or hunting over bait for any species is authorized by permit only, unless landowner permission is expressly not required by law or rule, see Trapping Law Book for more information. A person may utilize game cameras on WMAs without MDIFW permission, but should be labeled. To obtain a permit, contact a Regional Wildlife Biologist. View all of Maine's hunting and trapping laws online or in the app.",
+     "Hyperlink": "https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/index.html",
+     "Location": "Hicks Field, Route 11, Newfield",
+     "Prohibit": "Camping, fires, and swimming are prohibited. Some WMAs have recreational vehicle trails which are managed by local ATV and snowmobile clubs.  Please visit the local ATV or snowmobile club's website for trail information.",
+     "Recreate": "Walking, Canoeing, Wildlife Watching ( Deer, Water Birds), Hunting (Big Game, Small Game, Upland Game, Waterfowl), Trapping, Fishing (Cold and Warm Water Species)",
+     "WMA_name": "Vernon S. Walker WMA"
+    },
+    {
+     "Creator": "Jason.Czapiga@maine.gov_maine",
+     "Editor": "Jason.Czapiga@maine.gov_maine",
+     "Funding": "The acquisition and management of WMAs are funded with manufacturers' federal excise taxes on sporting arms, ammunition and archery (Pittman-Robertson Act), as well as revenue from state hunting license and permit fees. Additional funding for acquisition of Maine’s WMAs comes from Land for Maine’s Future, Maine Outdoor Heritage Fund, North American Wetland Conservation Act, Maine Natural Resource Conservation Program, funds from duck stamps, State bond funding, conservation partners, towns, and private donors.",
+     "HuntTrap": "You are welcome to hunt or trap on this WMA but with these special requirements: Removable stands or blinds, such as ladder, hang on, pop-up blinds etc. when placed for more than one day require a permit to hunt on MDIFW-owned WMAs and must be clearly labeled with the hunters' name and address. Permanent structures are prohibited. Permission is not needed if blind and stand are removed daily. All trapping, including bear trapping and the placing or hunting over bait for any species is authorized by permit only, unless landowner permission is expressly not required by law or rule, see Trapping Law Book for more information. A person may utilize game cameras on WMAs without MDIFW permission, but should be labeled. To obtain a permit, contact a Regional Wildlife Biologist. View all of Maine's hunting and trapping laws online or in the app.",
+     "Hyperlink": "https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/index.html",
+     "Location": "Mann Road, Shapleigh",
+     "Prohibit": "Camping, fires, and swimming are prohibited. Some WMAs have recreational vehicle trails which are managed by local ATV and snowmobile clubs.  Please visit the local ATV or snowmobile club's website for trail information.",
+     "Recreate": "Walking, Canoeing, Wildlife Watching ( Deer, Water Birds), Hunting (Big Game, Small Game, Upland Game, Waterfowl), Trapping, Fishing (Cold and Warm Water Species)",
+     "WMA_name": "Vernon S. Walker WMA"
+    },
+    {
+     "Creator": "Jason.Czapiga@maine.gov_maine",
+     "Editor": "Jason.Czapiga@maine.gov_maine",
+     "Funding": "The acquisition and management of WMAs are funded with manufacturers' federal excise taxes on sporting arms, ammunition and archery (Pittman-Robertson Act), as well as revenue from state hunting license and permit fees. Additional funding for acquisition of Maine’s WMAs comes from Land for Maine’s Future, Maine Outdoor Heritage Fund, North American Wetland Conservation Act, Maine Natural Resource Conservation Program, funds from duck stamps, State bond funding, conservation partners, towns, and private donors.",
+     "HuntTrap": "You are welcome to hunt or trap on this WMA but with these special requirements: Removable stands or blinds, such as ladder, hang on, pop-up blinds etc. when placed for more than one day require a permit to hunt on MDIFW-owned WMAs and must be clearly labeled with the hunters' name and address. Permanent structures are prohibited. Permission is not needed if blind and stand are removed daily. All trapping, including bear trapping and the placing or hunting over bait for any species is authorized by permit only, unless landowner permission is expressly not required by law or rule, see Trapping Law Book for more information. A person may utilize game cameras on WMAs without MDIFW permission, but should be labeled. To obtain a permit, contact a Regional Wildlife Biologist. View all of Maine's hunting and trapping laws online or in the app.",
+     "Hyperlink": "https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/index.html",
+     "Location": "Route 11, Shapleigh",
+     "Prohibit": "Camping, fires, and swimming are prohibited. Some WMAs have recreational vehicle trails which are managed by local ATV and snowmobile clubs.  Please visit the local ATV or snowmobile club's website for trail information.",
+     "Recreate": "Walking, Canoeing, Wildlife Watching ( Deer, Water Birds), Hunting (Big Game, Small Game, Upland Game, Waterfowl), Trapping, Fishing (Cold and Warm Water Species)",
+     "WMA_name": "Vernon S. Walker WMA"
+    }
+   ],
+   "service": "WMA_AccessPoints",
+   "typef": "",
+   "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/WMA_AccessPoints/FeatureServer/0"
+  }
+ ],
  "st": "ME"
 }

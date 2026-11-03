@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-03",
  "leads": [
   {
    "agency": "",
@@ -70,55 +70,6 @@
    "service": "Boat_Launches",
    "typef": "Type",
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/Boat_Launches/FeatureServer/0"
-  },
-  {
-   "agency": "Michigan Department of Natural Resources",
-   "area": "",
-   "count": 1482,
-   "fields": [
-    "Type",
-    "Detail",
-    "Ownership",
-    "Management",
-    "Surface",
-    "Use_",
-    "Condition",
-    "Comment"
-   ],
-   "known": false,
-   "layer": "Michigan Public Boating Access Sites",
-   "sample": [
-    {
-     "Condition": "Unknown",
-     "Detail": "Boat Ramp",
-     "Management": "DNR",
-     "Ownership": "State",
-     "Surface": "Unspecified",
-     "Type": "Boat Access Site",
-     "Use_": "Recreation"
-    },
-    {
-     "Condition": "Unknown",
-     "Detail": "Boat Ramp",
-     "Management": "DNR",
-     "Ownership": "State",
-     "Surface": "Unspecified",
-     "Type": "Boat Access Site",
-     "Use_": "Recreation"
-    },
-    {
-     "Condition": "Unknown",
-     "Detail": "Boat Ramp",
-     "Management": "DNR",
-     "Ownership": "State",
-     "Surface": "Unspecified",
-     "Type": "Boat Access Site",
-     "Use_": "Recreation"
-    }
-   ],
-   "service": "dnrParksAndRecreation",
-   "typef": "Type",
-   "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/1"
   },
   {
    "agency": "",
@@ -254,6 +205,55 @@
    "service": "dnrParksAndRecreation",
    "typef": "Type",
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/0"
+  },
+  {
+   "agency": "Michigan Department of Natural Resources",
+   "area": "",
+   "count": 1482,
+   "fields": [
+    "Type",
+    "Detail",
+    "Ownership",
+    "Management",
+    "Surface",
+    "Use_",
+    "Condition",
+    "Comment"
+   ],
+   "known": true,
+   "layer": "Michigan Public Boating Access Sites",
+   "sample": [
+    {
+     "Condition": "Unknown",
+     "Detail": "Boat Ramp",
+     "Management": "DNR",
+     "Ownership": "State",
+     "Surface": "Unspecified",
+     "Type": "Boat Access Site",
+     "Use_": "Recreation"
+    },
+    {
+     "Condition": "Unknown",
+     "Detail": "Boat Ramp",
+     "Management": "DNR",
+     "Ownership": "State",
+     "Surface": "Unspecified",
+     "Type": "Boat Access Site",
+     "Use_": "Recreation"
+    },
+    {
+     "Condition": "Unknown",
+     "Detail": "Boat Ramp",
+     "Management": "DNR",
+     "Ownership": "State",
+     "Surface": "Unspecified",
+     "Type": "Boat Access Site",
+     "Use_": "Recreation"
+    }
+   ],
+   "service": "dnrParksAndRecreation",
+   "typef": "Type",
+   "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/1"
   },
   {
    "agency": "",

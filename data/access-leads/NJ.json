@@ -1,5 +1,46 @@
 {
- "checked": "2026-10-26",
- "leads": [],
+ "checked": "2026-11-03",
+ "leads": [
+  {
+   "agency": "",
+   "area": "",
+   "count": 169,
+   "fields": [
+    "what_type_of_feature_would_you",
+    "what_type_of_feature_other",
+    "surface_type",
+    "surface_type_other",
+    "describe_the_trail_surface",
+    "what_features_does_the_picnic_a",
+    "picnic_features_other",
+    "what_features_does_the_gazebo_h",
+    "are_the_restrooms_wheelchair_ac",
+    "playground_features",
+    "playground_features_other",
+    "your_name",
+    "Creator",
+    "Editor"
+   ],
+   "known": false,
+   "layer": "NJDEP Park Mapping Activity",
+   "sample": [
+    {
+     "what_type_of_feature_would_you": "Parking_Lot",
+     "your_name": "Don"
+    },
+    {
+     "playground_features": "Swings,Slide,other",
+     "playground_features_other": "Grills, handle bar slide?",
+     "what_type_of_feature_would_you": "Playground"
+    },
+    {
+     "what_type_of_feature_would_you": "Baseball_Field"
+    }
+   ],
+   "service": "NJDEP_Park_Mapping_Activity_public_view",
+   "typef": "what_type_of_feature_would_you",
+   "url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/ArcGIS/rest/services/NJDEP_Park_Mapping_Activity_public_view/FeatureServer/0"
+  }
+ ],
  "st": "NJ"
 }
