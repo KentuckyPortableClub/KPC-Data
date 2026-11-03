@@ -143,10 +143,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | aliases-nov1.json | 0 | 0 |
 | aliases-nov2.json | 0 | 0 |
 | aliases-oct31.json | 0 | 33 |
-| gis-hunter.json | 8 | 583 |
+| gis-hunter.json | 10 | 626 |
 | hardlook.json | 0 | 0 |
 | key-pieces.json | 0 | 307 |
-| layers.json | 169 | 25863 |
+| layers.json | 176 | 25872 |
 | lost-finds-nov1.json | 0 | 0 |
 | map-audit.json | 132 | 2096 |
 | nearmiss-nov2.json | 45 | 45 |
