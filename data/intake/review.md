@@ -7,9 +7,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | READY | 2 |
 | WATER-ONLY | 41 |
 | LIVE-ONLY | 5 |
-| ASK-THE-PUBLISHER | 421 |
-| RETRY | 366 |
-| REJECT | 1653 |
+| ASK-THE-PUBLISHER | 423 |
+| RETRY | 365 |
+| REJECT | 1654 |
 
 ## READY (2)
 
@@ -537,7 +537,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAZEV · 1111 records · sample Blatov a Xaverovský háj / Lochkovský profil / Milíčovský les
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## ASK-THE-PUBLISHER (421)
+## ASK-THE-PUBLISHER (423)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -4080,7 +4080,23 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as Hard look~12
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (366)
+### fireservice:hydrants (Government of Saint Lucia GIS)  ·  LC  ·  from retry list (GitHub try)
+- url: https://geoservices.govt.lc/geoserver/ows
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Government of Saint Lucia GIS → official (government words: Government)
+- terms: NOTHING STATED · source GetCapabilities + queue row
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### ign:areas_de_gestion_de_residuos_AB030 (IGN capa area_protegida)  ·  AR  ·  from retry list (GitHub try)
+- url: http://wms.ign.gob.ar/geoserver/ows
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: IGN capa area_protegida → official (a government word of the country: IGN)
+- terms: CREDIT · source GetCapabilities + queue row · "Se permite buscar, acceder, solicitar, recibir, copiar, analizar, reprocesar, reutilizar y redistribuir libremente la información publicada por este servicio se"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+## RETRY (365)
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
@@ -4192,7 +4208,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/6
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4200,7 +4216,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/7
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4208,7 +4224,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/10
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4216,7 +4232,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/12
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4224,7 +4240,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/16
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -6929,14 +6945,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: already read as sgidb
 - closes: not probed
 
-### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer
-- WHY: did not open 3 times (out of time): chat 9 checks the url
-- publisher: public-services.slip.wa.gov.au → unsure ()
-- terms: ? · source ?
-- facts: status out of time
-
-## REJECT (1653)
+## REJECT (1654)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -7074,7 +7083,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/4
 - WHY: NOT A PARK LAYER (coverage): closes 24 but only 2 by name (READY needs 3+ name matches and 25%+ of the closes)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
 - closes: 24 of 56 tested missing parks (by name 2, pin only 22; 56 of the area's 1796 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Tamar"
@@ -7170,7 +7179,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/5
 - WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
 - closes: 2 of 4 tested missing parks (by name 1, pin only 1; 56 of the area's 1796 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
@@ -7730,7 +7739,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/1
 - WHY: no name field: an outline needs a name to match a park
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 126488 records
 - closes: not probed
 
@@ -20740,6 +20749,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: CREDIT · source item page · "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or comp NPS" · item https://www.arcgis.com/home/item.html?id=ef89923537bb46e28f9ad877d8058266 · owner cor_nps · org National Park Service
 - facts: arcgis-layer · esriGeometryPolygon · name field WSR_GNIS_NAME · 33 records · last edit 2025-09-16 · sample Kings Wild and Scenic River / Merced Wild and Scenic River / Tuolumne Wild and Scenic River
 - overlap: already read as wsrc
+- closes: not probed
+
+### Bahamas Protected Management Zones ((owner to check: Bahamas government or partner))  ·  BS  ·  from retry list (GitHub try)
+- url: https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/Bahamas_Protected_Management_Zones/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: (owner to check: Bahamas government or partner) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Bahamas National Trust, The Nature Conservancy Bahamas National Trust, The Nature Conservancy" · item https://www.arcgis.com/home/item.html?id=96fc80722cf14f6f889fba7550f3a816 · owner csuguest15 · org Colorado State University
+- facts: arcgis-layer · esriGeometryPolygon · 14 records · last edit 2025-07-17
 - closes: not probed
 
 ## Known-answer test rows
