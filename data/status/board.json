@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 60, waiting for key 6",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 60, waiting for key 6 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41694660918",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41694660918",
+   "made": "2026-11-03 16:11 UTC: 5 skipped run(s) started again: kpc-collector.yml (missed Nov 03 15:16 UTC); kpc-copy-from-links.yml (missed Nov 03 15:11 UTC); kpc-flow.yml (missed Nov 03 13:46 UTC); kpc-waiting-room.yml (missed Nov 03 14:42 UTC); kpc-youtube-comments.yml (missed Nov 03 13:36 UTC, NOT restart",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41671425258",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1156,10 +1156,10 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "site is 85 min behind main (11 commits, 81 website files): started the copy bot (kpc-pages-sync) once",
-   "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41694660918",
-   "waiting_on": "HQ: look at kpc-pages-sync.yml runs"
+   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
+   "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "campground info bot": {
    "areas": "left: 41",
