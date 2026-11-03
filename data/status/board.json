@@ -19,11 +19,11 @@
   },
   "Cell coverage (FCC)": {
    "areas": "",
-   "last_run": "2026-11-01",
-   "made": "read 2026-11-01: Kentucky + test parks, held for chat 11",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41265309676",
-   "waiting_on": "chat 11 grades data/waiting/in/data/cell"
+   "last_run": "2026-11-02",
+   "made": "OFF until fixed: the bot read the wrong FCC fields, so every park showed carriers 'None'. Timer turned off in PR1; no new cell data until it's fixed.",
+   "result": "amber",
+   "run": "",
+   "waiting_on": "fix kpc_cell_bot.py carrier fields"
   },
   "GIS hunter": {
    "areas": "",
@@ -1146,11 +1146,11 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "1 done, 0 left",
-   "last_run": "2026-11-02",
-   "made": "1 areas read, 1 saved; see data/closures/review.md",
+   "areas": "0 done, 0 left",
+   "last_run": "2026-11-03",
+   "made": "0 areas read, 0 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537876236",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41558085342",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1179,8 +1179,8 @@
   },
   "official documents bot": {
    "areas": "",
-   "last_run": "2026-11-02",
-   "made": "chunk 1 saved",
+   "last_run": "2026-11-03",
+   "made": "chunk 2 saved",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482",
    "waiting_on": "chat 8 grades review.md samples"
