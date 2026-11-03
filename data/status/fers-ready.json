@@ -1,5 +1,5 @@
 {
- "about": "2-fers start over area by area (RULINGS Nov 2 10:57 AM): an area runs when its key is out AND its map audit rows are all answered (kpc_fers_gate.py).",
+ "about": "2-fers start over area by area (RULINGS Nov 2 10:57 AM): an area runs when its key is out AND the audit listed it in this pass AND its rows are all clean (YES / FIXED / PIN; NO and source-down rows keep it waiting) (kpc_fers_gate.py).",
  "areas": {
   "CA-AB": {
    "audited": null,
@@ -77,219 +77,219 @@
    "status": "waiting for audit"
   },
   "US-AK": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (47 open)"
+   "status": "waiting for audit"
   },
   "US-AL": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-AR": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-AZ": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-CA": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (47 open)"
+   "status": "waiting for audit"
   },
   "US-CO": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-CT": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-DC": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (10 open)"
+   "status": "waiting for audit"
   },
   "US-DE": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-FL": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-GA": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-HI": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (46 open)"
+   "status": "waiting for audit"
   },
   "US-IA": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (47 open)"
+   "status": "waiting for audit"
   },
   "US-ID": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-IL": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-IN": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (48 open)"
+   "status": "waiting for audit"
   },
   "US-KS": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-KY": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": "2026-11-02",
-   "status": "waiting for audit answers (1 open)"
+   "status": "waiting for audit"
   },
   "US-LA": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-MA": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-MD": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-ME": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-MI": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-MN": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (48 open)"
+   "status": "waiting for audit"
   },
   "US-MO": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (48 open)"
+   "status": "waiting for audit"
   },
   "US-MS": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-MT": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-NC": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-ND": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-NE": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-NH": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-NJ": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-NM": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-NV": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-NY": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-OH": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-OK": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (47 open)"
+   "status": "waiting for audit"
   },
   "US-OR": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (49 open)"
+   "status": "waiting for audit"
   },
   "US-PA": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-RI": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (36 open)"
+   "status": "waiting for audit"
   },
   "US-SC": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-SD": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (45 open)"
+   "status": "waiting for audit"
   },
   "US-TN": {
-   "audited": "2026-11-02",
+   "audited": null,
    "fers_started": null,
-   "status": "waiting for audit answers (50 open)"
+   "status": "waiting for audit"
   },
   "US-TX": {
    "audited": null,
