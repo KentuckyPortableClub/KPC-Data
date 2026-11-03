@@ -23,6 +23,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 | US-TX | 483 | 0 | 120 | 1 | 3 | 0 | 329 | 0 | 30 | 0 | 34 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
+| US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
 | US-MT | 312 | 0 | 312 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | US-NV | 63 | 15 | 34 | 0 | 0 | 0 | 0 | 0 | 14 | 7 | 29 | 0 |
@@ -60,6 +61,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 - files.dfm.idaho.gov: 2 campgrounds
 - www.outdooralabama.com: 1 campgrounds
 - tpwd.texas.gov: 1 campgrounds
+- wgfapps.wyo.gov: 1 campgrounds
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
 
@@ -1550,6 +1552,63 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
   - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+
+## US-WY: 12 random samples (records with facts; seed = the date)
+
+- **WGFD primitive camping (no developed campground)** (intake-US-10804, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “alk in Hunting Species Profiles Wyoming Wildlife Story Chain Lakes Print GeoPDF Area Open Open year-round Fire Ban in Effect. Area-specific ”
+- **Teton Reservoir Campground** (intake-US-10891, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.blm.gov](https://www.blm.gov/visit/teton-reservoir-recreation-site)
+  - booking.how = "online: www.recreation.gov" · “link “””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
+  - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
+  - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
+  - restrooms = "vault" · “akes and ducks, along with rainbow and brown trout. This is a free site with 5 campsites, vault toilets, boat ramp, and day use parking. Cam”
+  - rules.fires = "fire ring/grills, and parking spurs with no pull-throughs,  · “5 campsites, vault toilets, boat ramp, and day use parking. Campsites have picnic tables, fire ring/grills, and parking spurs with no pull-t”
+  - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
+- **Primitive camping area (no designated campsites listed)** (US-6169:hq0, state, status ok (browser), 5 facts) · [www.usbr.gov](https://www.usbr.gov/gp/recreation/rvntrec.html)
+  - booking.how = "online: www.usbr.gov" · “link “Reservoirs, Dams Hydropower””
+  - booking.url = "https://www.usbr.gov/gp/lakes_reservoirs/index.html" · “link “Reservoirs, Dams Hydropower” -> https://www.usbr.gov/gp/lakes_reservoirs/index.html”
+  - drinking_water = false · “include: picnic/camp shelters, accessible restrooms, boat ramp, and primitive camping. No drinking water. Other activities include swimming,”
+  - restrooms = "yes (kind not stated)" · “roximately 80 surface acres. Available services include: picnic/camp shelters, accessible restrooms, boat ramp, and primitive camping. No dr”
+  - showers = true · “mpsites 0 Tent Only Campsites 0 RV Hookups 0 Mobile Home Parks 0 Mobile Home Sites 0 Camp Shower Facilities no Picnic Areas 3 Picnic Tables ”
+- **North Boulder Lake Campground** (intake-US-6218, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/261703)
+  - booking.how = "online: www.recreation.gov" · “link “Boulder Lake Recreation Area””
+  - booking.url = "https://www.recreation.gov/camping/gateways/2238" · “link “Boulder Lake Recreation Area” -> https://www.recreation.gov/camping/gateways/2238”
+  - features = "fire rings, and five picnic tables" · “est end of Boulder Lake. The campground has five sites with one double vault toilet, five fire rings, and five picnic tables. Camp, RV, and ”
+  - phone = "(307) 367-5300" · “61800000000, -109.73174100000000 Contact & Resources Phone: 307-367-5300 Additional Information: Additional Information BLM Wyoming”
+  - restrooms = "vault" · “cated on the northwest end of Boulder Lake. The campground has five sites with one double vault toilet, five fire rings, and five picnic tab”
+- **WGFD primitive camping (no developed campground)** (intake-US-10808, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - rules.fires = "firewood prohibited" · “ired. Soda Lake wetlands closed May 1 - July 1 for nesting/brooding waterfowl. Cutting of firewood prohibited Seasonal Closure Dec. 1- May 1”
+- **WGFD primitive camping (no developed campground)** (intake-US-6123, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Forbes-Sheep-Mountain)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Forbes-Sheep-M · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - restrooms = "yes (kind not stated)" · “mitive camping areas. There is one parking and camping site. The site contains an outdoor restroom facility with no running water.”
+- **WGFD primitive camping (no developed campground)** (intake-US-6109, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Springer-Bump-Sullivan)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Springer-Bump- · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - restrooms = "yes (kind not stated)" · “ng, Wildlife Viewing, Boating Pheasant Release Dates Oct. 14 - Nov 12. Amenities Parking, Comfort Stations, Boat Ramp, Hunting blinds with p”
+  - season = "year-round" · “yoming Wildlife Story Springer/Bump Sullivan Print GeoPDF Area Open Foot and horse access open year-round. THIS AREA OPENS TO MOTORIZED VEHI”
+- **WGFD primitive camping (no developed campground)** (intake-US-6156, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Red-Rim-Grizzly)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Red-Rim-Grizzl · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “in Hunting Species Profiles Wyoming Wildlife Story Red Rim-Grizzly Print GeoPDF Area Open Open year-round Open year round. Area-specific Reg”
+- **WGFD primitive camping (no developed campground)** (intake-US-6108, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Table-Mountain)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Table-Mountain · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “ofiles Wyoming Wildlife Story Table Mountain Print GeoPDF Area Open Foot and horse access open year-round THIS AREA OPENS TO MOTORIZED VEHIC”
+- **WGFD primitive camping (no developed campground)** (intake-US-6233, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Greys-River)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Greys-River" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - rules.fires = "Firewood cutting is prohibited" · “otor vehicles are restricted to roads marked with a white arrow. Certified weed free hay. Firewood cutting is prohibited Seasonal Closure De”
+- **WGFD primitive camping (no developed campground)** (intake-US-6118, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Tom-Thorne-Beth-Williams)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Tom-Thorne-Bet · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “ming Wildlife Story Tom Thorne/Beth Williams Print GeoPDF Area Open Foot and horse access open year-round THIS AREA OPENS TO MOTORIZED VEHIC”
+- **WGFD primitive camping (no developed campground)** (intake-US-6112, agency (outside research camping-us-oct31), status ok, 5 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Cottonwood-Draw)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Cottonwood-Dra · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - hookups.electric = true · “voir with a dam along the Laramie River that supplies cooling water for the Laramie River Power Plant. Through a cooperative agreement betwe”
+  - restrooms = "vault" · “fishing, boating, swimming and water skiing. Public facilities, including parking areas, vault toilets, and boat ramps, are provided on the ”
+  - rules.fires = "open fires and fireworks are prohibited" · “fe Habitat Management Area. No Recreational Shooting, Off Road Vehicle use is prohibited; open fires and fireworks are prohibited. Seasonal ”
+  - season = "year-round" · “in Hunting Species Profiles Wyoming Wildlife Story Cottonwood Draw Print GeoPDF Area Open Open year-round Open year round. Fire Ban in Effec”
 
 ## US-ID: 12 random samples (records with facts; seed = the date)
 

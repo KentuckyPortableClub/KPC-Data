@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T11:24Z",
+ "checked": "2026-11-03T11:51Z",
  "switched_on": false,
  "results": [
   {
@@ -165,6 +165,15 @@
   },
   {
    "path": "data/campinfo/US-TX.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-WY.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
@@ -551,11 +560,13 @@
   {
    "path": "data/docs/US-WY.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 3 of 20 re-tested links dead, e.g. http://www.blm.gov/style/medialib/blm/wy/field-offices/lander/pics.Par"
+   ],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/CA-AB.json.gz",
