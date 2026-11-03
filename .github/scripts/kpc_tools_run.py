@@ -15,10 +15,30 @@ kpc_docs_merge.py through the waiting room).
                           chat 10 to merge through the waiting room like the F file) + ...-possible.json
   summary                 data/intake/tools/summary.md = one short page for chats 2, 10, 11
 """
-import csv, json, os, sys, collections, datetime, glob
+import csv, json, os, sys, collections, datetime, glob, gzip, hashlib
+from zoneinfo import ZoneInfo
 
 D = 'data/intake'
-TODAY = datetime.date.today().isoformat()
+CT = ZoneInfo('America/Chicago')
+TODAY = datetime.datetime.now(CT).date().isoformat()   # Nov 2 review (Quality 7a): Central, not the runner's UTC clock
+
+
+def central(ts):
+    """'2026-11-01T11:14:06Z' -> '2026-11-01 5:14 AM CST' ('' when it cannot be read)."""
+    try: t = datetime.datetime.fromisoformat(str(ts).replace('Z', '+00:00')).astimezone(CT)
+    except ValueError: return ''
+    return t.strftime('%Y-%m-%d %I:%M %p %Z').replace(' 0', ' ')
+
+
+def fers_now(doc, area):
+    """The 2-fer file there NOW for a check file: (path, sha256 of its plain bytes) or (None, None)."""
+    cands = [doc.get('fers_file')] if doc.get('fers_file') else []
+    cands += [f'data/fers/{area}.json', f'data/fers/{area}.json.gz']
+    for fp in cands:
+        if fp and os.path.isfile(fp):
+            raw = gzip.open(fp, 'rb').read() if fp.endswith('.gz') else open(fp, 'rb').read()
+            return fp, hashlib.sha256(raw).hexdigest()
+    return None, None
 
 
 def prep_convert(test, out):
@@ -126,16 +146,29 @@ def post_links(outdir):
 
 
 def fers_alerts():
-    L = [f'# 2-fer checker alerts ({TODAY})', '', 'Rows the weekly checker found SHRUNK / GONE / MOVED against the live official layers: chat 2 rechecks, chat 11 grades. Nothing changed by the bot.', '']
-    n = 0
+    """Nov 2 review (Quality 7a): an area whose 2-fer file changed after the check (fers_sha256 no longer matches the file there now,
+    plain or gzipped) is left out of the count and listed as stale: its alerts may be about rows that no longer exist.
+    Each area shows the date its check started, in Central time."""
+    L = [f'# 2-fer checker alerts ({TODAY}, Central)', '', 'Rows the weekly checker found SHRUNK / GONE / MOVED against the live official layers: chat 2 rechecks, chat 11 grades. Nothing changed by the bot.', '']
+    n, stale = 0, []
     for f in sorted(glob.glob('data/fers-check/*.json')):
-        try: rr = json.load(open(f)).get('rows', []); rr = list(rr.values()) if isinstance(rr, dict) else rr
+        try:
+            doc = json.load(open(f)); rr = doc.get('rows', []); rr = list(rr.values()) if isinstance(rr, dict) else rr
         except Exception: continue
+        area = doc.get('area') or os.path.basename(f)[:-5]
         bad = [x for x in rr if x.get('verdict') in ('SHRUNK', 'GONE', 'MOVED')]
+        when = central(doc.get('started') or doc.get('updated') or '')
+        try: fp, sha = fers_now(doc, area)
+        except Exception: fp, sha = None, None  # noqa: BLE001
+        if doc.get('fers_sha256') and sha and sha != doc['fers_sha256']:
+            stale.append(f"- {area} (checked {when or 'date unknown'}; {len(bad)} alert(s) not counted)")
+            continue
         if bad:
-            L.append(f"- **{os.path.basename(f)[:-5]}**: " + ', '.join(f"{k} {v}" for k, v in collections.Counter(x['verdict'] for x in bad).most_common()))
+            L.append(f"- **{area}** (checked {when or 'date unknown'}): " + ', '.join(f"{k} {v}" for k, v in collections.Counter(x['verdict'] for x in bad).most_common()))
             n += len(bad)
     if n == 0: L.append('- nothing shrank, went or moved')
+    if stale:
+        L += ['', f'## Stale: the 2-fer file changed since the check ({len(stale)} area(s), left out above until the next check)', ''] + stale
     open('data/fers-check/alerts.md', 'w').write('\n'.join(L) + '\n')
     print(f'ALERTS={n}')
 
