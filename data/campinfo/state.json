@@ -371,6 +371,28 @@
    "status": "done",
    "updated": "2026-11-01"
   },
+  "US-OK": {
+   "camps": 201,
+   "checked": 199,
+   "counts": {
+    "camps": 199,
+    "needs_browser": 0,
+    "needs_key": 84,
+    "no_page": 0,
+    "not_official": 69,
+    "ok": 36,
+    "other": 10,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 41,
+    "with_elevation": 0,
+    "with_facts": 36,
+    "with_sites": 6
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
   "US-SC": {
    "camps": 63,
    "checked": 63,
@@ -499,6 +521,7 @@
   "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-OK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-SC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-SD": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -658,6 +681,15 @@
     "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
    "read": "2026-11-01"
+  },
+  "US-OK": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-11-03"
   },
   "US-SC": {
    "cell": {
@@ -1664,30 +1696,30 @@
  },
  "last": {
   "areas": [
-   "US-NE"
+   "US-OK"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 16,
-   "rested": 424,
+   "requests": 76,
+   "rested": 201,
    "robots": 0,
-   "strikes": 3
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 3,
-   "camps": 236,
+   "browser": 1,
+   "camps": 201,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 4,
-   "needs_key": 11,
-   "no_page": 6,
-   "not_official": 23,
-   "ok": 6,
-   "pages_read": 8,
-   "resting": 189,
+   "needs_browser": 1,
+   "needs_key": 85,
+   "no_page": 4,
+   "not_official": 70,
+   "ok": 37,
+   "pages_read": 68,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

@@ -19,6 +19,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 | US-MA | 30 | 20 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 18 | 22 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
+| US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
@@ -1321,6 +1322,135 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://agriculture.delaware.gov/wp-content/uploads/sites/1 · “link “Blackbird Camping Map” -> https://agriculture.delaware.gov/wp-content/uploads/sites/108/2025/02/Blackbird-State-Forest_Updated”
   - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
   - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
+
+## US-OK: 12 random samples (records with facts; seed = the date)
+
+- **Great Plains State Park** (US-2782, state, status ok, 12 facts) · [okstateparks.reserveamerica.com](https://okstateparks.reserveamerica.com/camping/great-plains-state-park/r/campgroundDetails.do?contractCode=OK&parkId=1260038)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “””
+  - booking.url = "https://okstateparks.reserveamerica.com/welcome.do" · “link “” -> https://okstateparks.reserveamerica.com/welcome.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = "some" · “servations must be made for RV and tent campsites. Some RV sites include sewer, water and electricity hookups. Restrooms and showers are pro”
+  - hookups.sewer = "some" · “ations. Online reservations must be made for RV and tent campsites. Some RV sites include sewer, water and electricity hookups. Restrooms an”
+  - hookups.water = "some" · “ations. Online reservations must be made for RV and tent campsites. Some RV sites include sewer, water and electricity hookups. Restrooms an”
+  - reservable = true · “eservation Window: View all Booking Window Parking Pass Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made”
+  - restrooms = "yes (kind not stated)" · “de for RV and tent campsites. Some RV sites include sewer, water and electricity hookups. Restrooms and showers are provided in the campgrou”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Occupants m”
+  - season = "year-round" · “giving visitors a well-rounded vacation experience. Great Plains State ... [more] Status: Open year round. Season Dates Max Reservation Wind”
+- **Red Rock Canyon State Park** (US-2799, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/at/listings/view.profile/id.27400)
+  - booking.how = "online: booking.staylist.app" · “link “Reservations””
+  - booking.url = "https://booking.staylist.app/RedRockCanyon" · “link “Reservations” -> https://booking.staylist.app/RedRockCanyon”
+  - checkin = "2pm" · “00 am - 7:00 pm Saturday: 9:00 am - 7:00 pm Day use hours are sunrise to sunset. Campsite check-in: 2pm (If site is unoccupied the night bef”
+  - checkout = "11am" · “10 early occupancy), (Sites are not guaranteed until 2pm on the day of arrival). Campsite check-out: 11am Close Red Rock Canyon Campground a”
+  - hookups.amps = [30, 50] · “ity Amenities Amphitheater Campsites Concessions Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills ”
+  - hookups.electric = true · “ity Amenities Amphitheater Campsites Concessions Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills ”
+  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - phone_hint = "(405) 542-6344" · “nyon Campground & Adventure Park Address: 116 Red Rock Canyon Rd Hinton , OK 73047 Phone: 405-542-6344 Email Website Hours Reservations Add ”
+  - reservable = true · “owers Water Hookup Group Amenities Group Amenities Accommodates Tour Groups Advance Group Reservations Required Bus/Motorcoach Parking Compl”
+  - rules.pets = "Pets Allowed" · “lec. 50 Amp Full Hookups Gift Shop Grills Handicapped Parking Lodging On Site Office WiFi Pets Allowed Picnic Area Playground Pool Outdoor P”
+- **Greenleaf State Park campground** (US-2784:hq0, state, status ok, 13 facts) · [www.travelok.com](https://www.travelok.com/state-parks/greenleaf-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/greenleaf-state-par · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/greenleaf-state-park/r/facilityDetails.do?contractCode=OK&pa”
+  - checkin = "4pm" · “pm Friday: 9:00 am - 5:30 pm Saturday: 9:00 am - 5:30 pm Office hours posted above. Cabin check-in: 4pm Cabin check-out: 11am Splash pad is ”
+  - checkout = "11am" · “5:30 pm Saturday: 9:00 am - 5:30 pm Office hours posted above. Cabin check-in: 4pm Cabin check-out: 11am Splash pad is open daily from 11am-”
+  - hookups.amps = [30, 50] · “re not included with a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent ”
+  - hookups.electric = "some" · “included with a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent campsit”
+  - hookups.sewer = "some" · “a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent campsites. All RV and”
+  - hookups.water = "some" · “a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent campsites. All RV and”
+  - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book Cabins Lodge””
+  - lodging_booking.url = "https://okstateparks.reserveamerica.com/greenleaf-state-par · “link “Book Cabins Lodge” -> https://okstateparks.reserveamerica.com/greenleaf-state-park/r/facilityDetails.do?contractCode=OK&pa”
+- **Hugo Lake State Park** (US-2787, state, status ok, 7 facts) · [www.travelok.com](https://www.travelok.com/state-parks/hugo-lake-state-park/maps-and-resources)
+  - booking.url = "https://www.travelok.com/state-parks/campsites" · “booking link from our campstate-manual row (official system www.travelok.com)”
+  - hookups.amps = [50] · “fit your needs. Park your big rig in a convenient pull-thru or back-in site, enjoy 30- or 50-amp service, and let your Oklahoma vacation beg”
+  - hookups.electric = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - map.date_how = "PDF, no date in the link" · “link “View Hugo Lake Map””
+  - map.url = "https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia · “link “View Hugo Lake Map” -> https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia/documents/1/1891/Hugo.pdf”
+  - reservable = true · “tate offer varied types of unconventional stays including yurts, teepees and tiny cabins. Reserve your spot and make your stay as unique as ”
+- **Foss State Park campground** (US-2780:hq0, state, status ok, 14 facts) · [www.travelok.com](https://www.travelok.com/state-parks/foss-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/foss-state-park/r/f · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/foss-state-park/r/facilityDetails.do?contractCode=OK&parkId=”
+  - features = "fire rings, comfort stations with showers, playgrounds and  · “-conditioned enclosed shelter meeting space, picnic areas, group picnic shelters, grills, fire rings, comfort stations with showers, playgro”
+  - hookups.amps = [30, 50] · “camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp service plus water. RV sites must ”
+  - hookups.electric = true · “horseback riding, fishing and camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp serv”
+  - hookups.sewer = true · “horseback riding, fishing and camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp serv”
+  - hookups.water = true · “horseback riding, fishing and camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp serv”
+  - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Cabin””
+  - lodging_booking.url = "https://okstateparks.reserveamerica.com/foss-state-park/r/f · “link “Book a Cabin” -> https://okstateparks.reserveamerica.com/foss-state-park/r/facilityDetails.do?contractCode=OK&parkId=”
+  - reservable = true · “73647 Reservation Call Center: 877-657-2757 Park Office: 580-592-4433 Email Hours Weather Book a Cabin Book a Campsite Get a Parking Pass Ad”
+- **Tenkiller State Park** (US-2807, state, status ok, 18 facts) · [www.travelok.com](https://www.travelok.com/state-parks/tenkiller-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/tenkiller-state-par · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/tenkiller-state-park/r/facilityDetails.do?contractCode=OK&pa”
+  - checkin = "4pm" · “m Thursday: 8:30 am - 5:00 pm Friday: 8:30 am - 5:00 pm Saturday: 8:30 am - 5:00 pm Cabin check in: 4pm Check out: 11am Swimming pool inform”
+  - checkout = "11am" · “30 am - 5:00 pm Friday: 8:30 am - 5:00 pm Saturday: 8:30 am - 5:00 pm Cabin check in: 4pm Check out: 11am Swimming pool information: call (9”
+  - dump_station = true · “ons with restrooms and showers are available in the park, and there are two on-site waste dump stations. In addition to the tent and RV camp”
+  - fees = "$40-per-pet-per-night fee)" · “conditioning and satellite television. In addition, some cabins are pet-friendly (with a $40-per-pet-per-night fee). There are a total of 22”
+  - hookups.amps = [30, 50] · “Use areas include Hickory Flats and Gooseneck Bend (North and South). RV campgrounds with 30-amp electric and water hookups include Blue Jay”
+  - hookups.electric = true · “as include Hickory Flats and Gooseneck Bend (North and South). RV campgrounds with 30-amp electric and water hookups include Blue Jay Knob a”
+  - hookups.sewer = true · “lue Jay Knob and Flying Squirrel. The Shady Grove and Fox Squirrel campgrounds both offer full hookups, with 30- and 50-amp electric service”
+  - hookups.water = true · “as include Hickory Flats and Gooseneck Bend (North and South). RV campgrounds with 30-amp electric and water hookups include Blue Jay Knob a”
+- **Black Mesa State Park** (US-2773, state, status ok, 14 facts) · [okstateparks.reserveamerica.com](https://okstateparks.reserveamerica.com/camping/black-mesa-state-park/r/campgroundDetails.do?contractCode=OK&parkId=1260033)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “””
+  - booking.url = "https://okstateparks.reserveamerica.com/welcome.do" · “link “” -> https://okstateparks.reserveamerica.com/welcome.do”
+  - drinking_water = true · “ke Road. All sites have a grassy area for tents, some with small juniper trees for shade. Drinking water is nearby and a comfort station is ”
+  - dump_station = true · “nearby. RV sites are a mix of cement pads and gravel with water and electric amenities. A dump station is located near the comfort station. ”
+  - fees = "$16 per night for tent sites | $9 per night attribute fee a · “cial Policy Applicable to this Facility Base rate for camping at Black Mesa State Park is $16 per night for tent sites. RV Semi sites have a”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = "some" · “ation with showers is nearby. RV sites are a mix of cement pads and gravel with water and electric amenities. A dump station is located near”
+  - hookups.water = "some" · “State Park is adjacent to Lake Carl Etling and offers online reservable RV campsites with water and electric hookups, tent campsites, picnic”
+  - reservable = true · “ervation Window: View all Booking Window Primitive Tent Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made”
+  - restrooms = "yes (kind not stated)" · “water and electric hookups, tent campsites, picnic facilities, boat ramps, playground and restrooms with showers. Black Mesa Nature Preserve”
+- **Natural Falls State Park** (US-2796, state, status ok, 7 facts) · [www.travelok.com](https://www.travelok.com/state-parks/natural-falls-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/natural-falls-state · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/natural-falls-state-park/r/facilityDetails.do?contractCode=O”
+  - hookups.amps = [50] · “fit your needs. Park your big rig in a convenient pull-thru or back-in site, enjoy 30- or 50-amp service, and let your Oklahoma vacation beg”
+  - hookups.electric = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - reservable = true · “74338 Reservation Call Center: 877-657-2757 Park Office: 918-422-5802 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
+  - season = "year-round" · “seven days a week. Designated campers are allowed in the park 24 hours a day. The park is open year round. Close”
+- **Lake Wister State Park** (US-2793, state, status ok, 13 facts) · [www.travelok.com](https://www.travelok.com/state-parks/lake-wister-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/lake-wister-state-p · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/lake-wister-state-park/r/facilityDetails.do?contractCode=OK&”
+  - hookups.amps = [30, 50] · “ities Facility Amenities ADA Compliant Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills ”
+  - hookups.electric = "some" · “Ouachitas, lodging facilities at Lake Wister State Park include 15 cabins, RV sites with full hook-ups or some with water and electric only,”
+  - hookups.sewer = "some" · “Ouachitas, lodging facilities at Lake Wister State Park include 15 cabins, RV sites with full hook-ups or some with water and electric only,”
+  - hookups.water = "some" · “Ouachitas, lodging facilities at Lake Wister State Park include 15 cabins, RV sites with full hook-ups or some with water and electric only,”
+  - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Cabin””
+  - lodging_booking.url = "https://okstateparks.reserveamerica.com/lake-wister-state-p · “link “Book a Cabin” -> https://okstateparks.reserveamerica.com/lake-wister-state-park/r/facilityDetails.do?contractCode=OK&”
+  - reservable = true · “74966 Reservation Call Center: 877-657-2757 Park Office: 918-649-0525 Email Hours Weather Book a Cabin Book a Campsite Get a Parking Pass Ad”
+  - restrooms = "yes (kind not stated)" · “sleeper sofas and a 32-inch flat screen TV. Each cabin also comes complete with kitchen, restroom with shower and air conditioning. Please k”
+- **Spring Hill Campground; White Tail Campground** (US-2774:hq0, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/state-parks/campsites)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “””
+  - booking.url = "https://okstateparks.reserveamerica.com/lake-thunderbird-st · “link “” -> https://okstateparks.reserveamerica.com/lake-thunderbird-state-park/r/facilityDetails.do?contractCod”
+  - hookups.amps = [30, 50] · “in the 820-acre park include RV sites in the Spring Hill Campground, each of which offers 30-amp electric, water hookups and back-in sites. ”
+  - hookups.electric = "some" · “820-acre park include RV sites in the Spring Hill Campground, each of which offers 30-amp electric, water hookups and back-in sites. Sites i”
+  - hookups.sewer = "some" · “ark is one of the seven original Oklahoma state parks. Facilities include semi-modern and full-hookup RV sites, all of which are available f”
+  - hookups.water = "some" · “820-acre park include RV sites in the Spring Hill Campground, each of which offers 30-amp electric, water hookups and back-in sites. Sites i”
+  - reservable = true · “Boiling Springs State Park was named after a natural "boiling" spring that still flows. Reservable campsites within the 820-acre park includ”
+  - restrooms = "yes (kind not stated)" · “ok tent sites available in the ATV campground. Additional amenities include full hookups, restrooms and showers. Online reservations must be”
+  - showers = true · “available in the ATV campground. Additional amenities include full hookups, restrooms and showers. Online reservations must be made for all ”
+  - sites.rv = 820 · “named after a natural "boiling" spring that still flows. Reservable campsites within the 820-acre park include RV sites in the Spring Hill C”
+- **Fort Cobb State Park** (US-2779, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/state-parks/fort-cobb-state-park/maps-and-resources)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/fort-cobb-state-par · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/fort-cobb-state-park/r/facilityDetails.do?contractCode=OK&pa”
+  - hookups.amps = [50] · “fit your needs. Park your big rig in a convenient pull-thru or back-in site, enjoy 30- or 50-amp service, and let your Oklahoma vacation beg”
+  - hookups.electric = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Cabin””
+  - lodging_booking.url = "https://okstateparks.reserveamerica.com/fort-cobb-state-par · “link “Book a Cabin” -> https://okstateparks.reserveamerica.com/fort-cobb-state-park/r/facilityDetails.do?contractCode=OK&pa”
+  - map.date_how = "PDF, no date in the link" · “link “View Fort Cobb Lake Map””
+  - map.url = "https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia · “link “View Fort Cobb Lake Map” -> https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia/documents/1/1883/Ft_Cobb.pdf”
+  - reservable = true · “ll Center: 877-657-2757 Park Office: 405-643-2249 Golf Course: 405-643-2398 Email Weather Book a Cabin Book a Campsite Book a Tee Time Get a”
+- **Lake Texoma State Park** (US-2791, state, status ok, 11 facts) · [www.travelok.com](https://www.travelok.com/state-parks/lake-texoma-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/lake-texoma-state-p · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/lake-texoma-state-park/r/facilityDetails.do?contractCode=OK&”
+  - hookups.amps = [30, 50] · “ers an open grass area with 16 electric clusters accommodating up to four units each with 30 amp electric and water service. Lake Texoma Sta”
+  - hookups.electric = "some" · “mpsites, both RV and tent, must be made online prior to occupying any site. RV sites have full hook-ups with water, sewer and electric and s”
+  - hookups.sewer = true · “mpsites, both RV and tent, must be made online prior to occupying any site. RV sites have full hook-ups with water, sewer and electric and s”
+  - hookups.water = "some" · “mpsites, both RV and tent, must be made online prior to occupying any site. RV sites have full hook-ups with water, sewer and electric and s”
+  - reservable = true · “73439 Reservation Call Center: 877-657-2757 Park Office: 580-564-2566 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
+  - restrooms = "yes (kind not stated)" · “camping, picnic areas, wildlife viewing opportunities and hiking. The park also features comfort stations with showers, boat ramps and a sma”
+  - rules.pets = "Pets Allowed" · “. 50 Amp Full Hookups Gift Shop Grills Handicapped Parking Lake Access Marina Park Ranger Pets Allowed Pets Allowed in Park Picnic Area Pull”
+  - season = "year-round" · “:00 am - 5:00 pm Office hours are listed above. Campgrounds are open to 24 hours per day, year round. Park rangers or campground hosts will ”
 
 ## US-NE: 12 random samples (records with facts; seed = the date)
 
