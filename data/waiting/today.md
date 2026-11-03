@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 154 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 159 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -64,11 +64,17 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-03 | 0 | data/ca-key/CA-NL.json | HOLD | F-O4 55 of 55 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-0808, CA-1273, CA-0830 |
 | 2026-11-03 | 0 | data/ca-key/CA-NS.json | HOLD | F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-1770, CA-1915, CA-0914 |
 | 2026-11-03 | 0 | data/ca-key/CA-PE.json | HOLD | F-O4 5 of 5 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-4650, CA-0861, CA-4757 |
+| 2026-11-03 | 0 | data/docs/US-OR.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://secure.sos.state.or.us/oard/viewSingleRule.action;JSESSIONID_O |
 | ? | ? | data/ca-key/CA-AB.json | RELEASE |  |
 | ? | ? | data/ca-key/CA-ON.json | PASS |  |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-DE.json | PASS |  |
 | ? | ? | data/campinfo/US-IN.json | PASS |  |
+| ? | ? | data/campinfo/US-MI.json | PASS |  |
+| ? | ? | data/campinfo/US-NE.json | PASS |  |
+| ? | ? | data/campinfo/US-OK.json | PASS |  |
+| ? | ? | data/campinfo/US-TX.json | PASS |  |
+| ? | ? | data/campinfo/US-WY.json | PASS |  |
 | ? | ? | data/docs/US-AK.json | PASS |  |
 | ? | ? | data/docs/US-AL.json | PASS |  |
 | ? | ? | data/docs/US-AR.json | PASS |  |
@@ -99,7 +105,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-NY.json | PASS |  |
 | ? | ? | data/docs/US-OH.json | PASS |  |
 | ? | ? | data/docs/US-OK.json | PASS |  |
-| ? | ? | data/docs/US-OR.json | PASS |  |
 | ? | ? | data/docs/US-PA.json | PASS |  |
 | ? | ? | data/docs/US-RI.json | PASS |  |
 | ? | ? | data/docs/US-SC.json | PASS |  |
@@ -112,7 +117,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-WA.json | PASS |  |
 | ? | ? | data/docs/US-WI.json | PASS |  |
 | ? | ? | data/docs/US-WV.json | PASS |  |
-| ? | ? | data/docs/US-WY.json | PASS |  |
+| ? | ? | data/docs/US-WY.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. http://www.blm.gov/style/medialib/blm/wy/field-offices/lander/pics.Par |
 | ? | ? | data/fers/CA-AB.json.gz | PASS |  |
 | ? | ? | data/fers/CA-NT.json | PASS |  |
 | ? | ? | data/fers/CA-QC.json.gz | PASS |  |
@@ -171,7 +176,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | gis-hunter.json | 10 | 626 |
 | hardlook.json | 0 | 0 |
 | key-pieces.json | 0 | 307 |
-| layers.json | 176 | 25872 |
+| layers.json | 195 | 25925 |
 | lost-finds-nov1.json | 0 | 0 |
 | map-audit.json | 132 | 2096 |
 | nearmiss-nov2.json | 45 | 45 |

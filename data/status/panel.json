@@ -1,21 +1,21 @@
 {
- "made": "2026-11-03 10:51 UTC",
+ "made": "2026-11-03 12:17 UTC",
  "snap": {
   "date": "2026-11-03",
   "outlines": {
    "US": {
     "official": 11149,
-    "approximate": 445,
-    "pin": 1492
+    "pin": 1492,
+    "approximate": 445
    },
    "Canada": {
-    "pin": 1563,
     "official": 4297,
+    "pin": 1563,
     "approximate": 39
    },
    "World": {
-    "official": 39741,
     "pin": 17780,
+    "official": 39741,
     "approx": 2676
    }
   },
@@ -30,7 +30,7 @@
    },
    "gis-hunter": {
     "- YES": 84,
-    "rows": 620,
+    "rows": 626,
     "- NO": 339,
     "- NOT SURE": 16,
     "SURE YES": 8,
@@ -40,7 +40,8 @@
     "LIKELY NOT SURE": 8,
     "SURE NO": 2,
     "SURE bot YES": 124,
-    "LIKELY open": 4
+    "SURE open": 5,
+    "LIKELY open": 5
    },
    "hardlook": {},
    "key-pieces": {
@@ -58,8 +59,8 @@
     "SURE YES": 15607,
     "SURE NOT SURE": 526,
     "LIKELY bot YES": 12,
-    "SURE bot YES": 488,
-    "SURE open": 67,
+    "SURE bot YES": 522,
+    "SURE open": 33,
     "LIKELY open": 162
    },
    "lost-finds-nov1": {},
@@ -106,11 +107,11 @@
   },
   "layers": {
    "intake": {
-    "REJECT": 1652,
+    "REJECT": 1653,
     "WATER-ONLY": 41,
-    "ASK-THE-PUBLISHER": 416,
+    "ASK-THE-PUBLISHER": 421,
     "LIVE-ONLY": 5,
-    "RETRY": 364,
+    "RETRY": 365,
     "READY": 2,
     "approved": 2
    },
@@ -1288,9 +1289,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2026-11-03 08:35 UTC: 9 skipped run(s) started again: kpc-camp-weekly.yml (missed Nov 03 07:29 UTC); kpc-docs-merge.yml (missed Nov 03 06:26 UTC); kpc-engine-discover.yml (missed Nov 03 06:19 UTC); kpc-hardlook.yml (missed Nov 03 06:13 UTC); kpc-map-pictures.yml (missed Nov 03 07:24 UTC); kpc-scoreb",
+   "made": "2026-11-03 11:05 UTC: 12 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 03 10:40 UTC); kpc-detective.yml (missed Nov 03 10:39 UTC); kpc-fers-pending.yml (missed Nov 03 10:23 UTC); kpc-fetch-files.yml (missed Nov 03 10:38 UTC); kpc-helpers.yml (missed Nov 03 10:23 UTC); kpc-intake.",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41604394249",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624614562",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1303,10 +1304,10 @@
   },
   "T1 map-match": {
    "areas": "",
-   "last_run": "2026-11-02",
+   "last_run": "2026-11-03",
    "made": "open questions scored (STRONG = bot YES, 1 in 10 sampled)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452482538",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624690606",
    "waiting_on": "chat 11 answers WEAK / CONFLICT (band + reason on each row)"
   },
   "T5 site checker": {
@@ -1367,24 +1368,24 @@
   },
   "WDPA phone book": {
    "areas": "",
-   "last_run": "2026-11-02",
-   "made": "1321 parks looked up (822 inside a WDPA area), 77306 left 2026-11-02",
+   "last_run": "2026-11-03",
+   "made": "1249 parks looked up (944 inside a WDPA area), 76057 left 2026-11-03",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537913052",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624720320",
    "waiting_on": "the park-info engine searches by these agencies"
   },
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41573517587",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624614562",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "campground info bot": {
-   "areas": "left: 43",
+   "areas": "left: 40",
    "last_run": "2026-11-03",
-   "made": "US-NE: done; {\"camps\": 232, \"needs_browser\": 2, \"needs_key\": 11, \"no_page\": 6, \"not_official\": 23, \"ok\": 3, \"other\": 2, \"resting\": 185, \"robots\": 0, \"with_booking\": 74, \"with_elevation\": 0, \"with_facts\": 5, \"with_",
+   "made": "US-WY: done; {\"camps\": 301, \"needs_browser\": 1, \"needs_key\": 162, \"no_page\": 79, \"not_official\": 0, \"ok\": 5, \"other\": 54, \"resting\": 0, \"robots\": 0, \"with_booking\": 41, \"with_elevation\": 0, \"with_facts\": 20, \"with",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41604453954",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1463,14 +1464,14 @@
   },
   "waiting room": {
    "last_run": "2026-11-03",
-   "made": "heartbeat 0 h old, 155 files waiting",
+   "made": "heartbeat 0 h old, 159 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 3: data/world-finder + questions",
+   "made": "chunk 5: data/world-finder + questions",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41596178440",
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"

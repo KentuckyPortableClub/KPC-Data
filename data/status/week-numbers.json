@@ -437,17 +437,17 @@
    "outlines": {
     "US": {
      "official": 11149,
-     "approximate": 445,
-     "pin": 1492
+     "pin": 1492,
+     "approximate": 445
     },
     "Canada": {
-     "pin": 1563,
      "official": 4297,
+     "pin": 1563,
      "approximate": 39
     },
     "World": {
-     "official": 39741,
      "pin": 17780,
+     "official": 39741,
      "approx": 2676
     }
    },
@@ -462,7 +462,7 @@
     },
     "gis-hunter": {
      "- YES": 84,
-     "rows": 620,
+     "rows": 626,
      "- NO": 339,
      "- NOT SURE": 16,
      "SURE YES": 8,
@@ -472,7 +472,8 @@
      "LIKELY NOT SURE": 8,
      "SURE NO": 2,
      "SURE bot YES": 124,
-     "LIKELY open": 4
+     "SURE open": 5,
+     "LIKELY open": 5
     },
     "hardlook": {},
     "key-pieces": {
@@ -490,8 +491,8 @@
      "SURE YES": 15607,
      "SURE NOT SURE": 526,
      "LIKELY bot YES": 12,
-     "SURE bot YES": 488,
-     "SURE open": 67,
+     "SURE bot YES": 522,
+     "SURE open": 33,
      "LIKELY open": 162
     },
     "lost-finds-nov1": {},
@@ -538,11 +539,11 @@
    },
    "layers": {
     "intake": {
-     "REJECT": 1652,
+     "REJECT": 1653,
      "WATER-ONLY": 41,
-     "ASK-THE-PUBLISHER": 416,
+     "ASK-THE-PUBLISHER": 421,
      "LIVE-ONLY": 5,
-     "RETRY": 364,
+     "RETRY": 365,
      "READY": 2,
      "approved": 2
     },
