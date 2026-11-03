@@ -31,8 +31,19 @@
   "kpc-flow.yml|2026-11-02T21:46:00+00:00": "2026-11-02T22:30+00:00 started",
   "kpc-waiting-room.yml|2026-11-02T20:42:00+00:00": "2026-11-02T22:30+00:00 started",
   "kpc-wdpa-phonebook.yml|2026-11-02T18:53:00+00:00": "2026-11-02T22:30+00:00 started",
-  "kpc-world-finder.yml|2026-11-02T18:24:00+00:00": "2026-11-02T22:30+00:00 started"
+  "kpc-world-finder.yml|2026-11-02T18:24:00+00:00": "2026-11-02T22:30+00:00 started",
+  "kpc-collector.yml|2026-11-03T03:16:00+00:00": "2026-11-03T06:00+00:00 started",
+  "kpc-convert-layers.yml|2026-11-03T03:53:00+00:00": "2026-11-03T06:00+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-03T05:11:00+00:00": "2026-11-03T06:00+00:00 started",
+  "kpc-engine.yml|2026-11-03T04:08:00+00:00": "2026-11-03T06:00+00:00 started",
+  "kpc-waiting-room.yml|2026-11-03T04:42:00+00:00": "2026-11-03T06:00+00:00 started"
  },
- "last": "2026-11-03T03:39+00:00",
- "last_restarted": []
+ "last": "2026-11-03T06:00+00:00",
+ "last_restarted": [
+  "kpc-collector.yml (missed Nov 03 03:16 UTC)",
+  "kpc-convert-layers.yml (missed Nov 03 03:53 UTC)",
+  "kpc-copy-from-links.yml (missed Nov 03 05:11 UTC)",
+  "kpc-engine.yml (missed Nov 03 04:08 UTC)",
+  "kpc-waiting-room.yml (missed Nov 03 04:42 UTC)"
+ ]
 }

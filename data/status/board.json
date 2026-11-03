@@ -1004,9 +1004,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Step failed (kept green)); waiting room (kpc_engine.py)",
+   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41573517587",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41587143057",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1060,9 +1060,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41573517587",
+   "made": "2026-11-03 06:00 UTC: 5 skipped run(s) started again: kpc-collector.yml (missed Nov 03 03:16 UTC); kpc-convert-layers.yml (missed Nov 03 03:53 UTC); kpc-copy-from-links.yml (missed Nov 03 05:11 UTC); kpc-engine.yml (missed Nov 03 04:08 UTC); kpc-waiting-room.yml (missed Nov 03 04:42 UTC)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41587143057",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
