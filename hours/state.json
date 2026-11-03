@@ -289,42 +289,70 @@
    "updated": "2026-11-03"
   },
   "US-MI": {
-   "checked": 214,
+   "checked": 388,
    "counts": {
     "fees": 15,
     "hours": 18,
     "hours_lines": 34,
     "no_page": 0,
     "nothing": 27,
-    "parks": 214,
+    "parks": 388,
     "permits": 3,
     "season": 9,
     "season_lines": 10
    },
-   "left": 174,
+   "left": 0,
    "parks": 388,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-MN": {
+   "checked": 298,
+   "counts": {
+    "fees": 82,
+    "hours": 19,
+    "hours_lines": 40,
+    "no_page": 0,
+    "nothing": 93,
+    "parks": 298,
+    "permits": 87,
+    "season": 86,
+    "season_lines": 92
+   },
+   "left": 0,
+   "parks": 298,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
+  "US-MO": {
+   "checked": 123,
+   "counts": {
+    "fees": 9,
+    "hours": 116,
+    "hours_lines": 308,
+    "no_page": 0,
+    "nothing": 2,
+    "parks": 123,
+    "permits": 112,
+    "season": 9,
+    "season_lines": 15
+   },
+   "left": 438,
+   "parks": 561,
    "status": "partial",
    "updated": "2026-11-03"
   }
  },
  "hosts": {
-  "destateparks.com": 1793712590.079613,
-  "idfg.idaho.gov": 1793715483.678476,
-  "iowaculture.gov": 1793714931.4774082,
   "ksoutdoors.com": 1793781549.0465133,
   "ksoutdoors.gov": 1793781557.2827094,
-  "www.cgcounty.org": 1793715095.2742605,
-  "www.fhwa.dot.gov": 1793715238.9328382,
-  "www.floridastateparks.org": 1793712860.9260063,
-  "www.idfg.id.gov": 1793715520.6061795,
   "www.ksoutdoors.gov": 1793781469.3136413,
   "www.lastateparks.com": 1793781803.4911802,
   "www.maine.gov": 1793783708.9178083,
   "www.mass-trails.org": 1793782820.535664,
   "www.michigan.gov": 1793784095.683167,
   "www.nwk.usace.army.mil": 1793781482.130476,
-  "www.swfwmd.state.fl.us": 1793713000.0893836,
-  "www.wildhorsesonline.blm.gov": 1793715224.035343,
+  "www.sos.mo.gov": 1793805119.7075799,
   "www2.dnr.state.mi.us": 1793784112.3864317
  },
  "last": {
@@ -341,21 +369,21 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 3,
-   "requests": 1511,
-   "rested": 791,
-   "robots": 2,
-   "strikes": 36
+   "requests": 956,
+   "rested": 215,
+   "robots": 97,
+   "strikes": 5
   },
   "stat": {
    "errors": 0,
-   "fees": 152,
-   "hours": 179,
-   "no_page": 2,
-   "none": 968,
-   "pages_read": 1193,
-   "parks": 1237,
-   "permits": 44,
-   "skipped_fresh": 0
+   "fees": 91,
+   "hours": 135,
+   "no_page": 0,
+   "none": 370,
+   "pages_read": 643,
+   "parks": 595,
+   "permits": 199,
+   "skipped_fresh": 1237
   },
   "when": "2026-11-03"
  }

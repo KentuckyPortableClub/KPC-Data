@@ -7,6 +7,8 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
 | US-GA | 237 | 26 | 32 | 5 | 176 | 0 |
 | US-AL | 155 | 30 | 2 | 3 | 108 | 6 |
 | US-FL | 460 | 23 | 2 | 4 | 200 | 0 |
+| US-MO | 123 | 116 | 9 | 112 | 2 | 0 |
+| US-MN | 298 | 19 | 82 | 87 | 93 | 0 |
 | US-IA | 181 | 114 | 3 | 2 | 61 | 0 |
 | US-MA | 421 | 35 | 25 | 5 | 346 | 0 |
 | US-ME | 148 | 26 | 8 | 2 | 85 | 2 |
@@ -20,7 +22,7 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
 | US-CA | 243 | 103 | 94 | 20 | 86 | 2 |
 | US-AK | 179 | 4 | 7 | 4 | 161 | 0 |
 | US-HI | 102 | 9 | 1 | 6 | 73 | 0 |
-| US-MI | 214 | 18 | 15 | 3 | 27 | 0 |
+| US-MI | 388 | 18 | 15 | 3 | 27 | 0 |
 
 ## US-GA: 12-park sample for chat 8
 
@@ -126,6 +128,110 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Refuge open year round during daylight hours (gate on Lighthouse Road opens at 6 am) .” · [www.fws.gov](https://www.fws.gov/refuge/st-marks/visit-us/rules-policies)
 - **US-0258 Ten Thousand Islands National Wildlife Refuge**
   - Permit: “Special Use Permits are required for all research and monitoring activities conducted on Refuge lands.” · [www.fws.gov](https://www.fws.gov/refuge/ten-thousand-islands/visit-us/rules-policies)
+
+## US-MO: 12-park sample for chat 8
+
+- **US-0375 Clarence Cannon National Wildlife Refuge**
+  - Hours: “Refuge lands are open for general use from 1/2 hour before legal sunrise to 1/2 hour after legal sunset” · [www.fws.gov](https://www.fws.gov/refuge/clarence-cannon/visit-us)
+  - Permit: “Trapping of muskrat, beaver and raccoon is permitted on refuge land, but special regulations apply and a refuge special use permit is required” · [www.fws.gov](https://www.fws.gov/refuge/clarence-cannon/visit-us)
+  - Hunting hours: “Daylight use only, except for lawful hunting activities which may occur from 1/2 before legal sunrise - 1/2 hour after legal sunset” · [www.fws.gov](https://www.fws.gov/refuge/clarence-cannon/visit-us)
+  - Hunting hours: “For authorized hunting activities, the refuge is open to access two hours before legal sunrise until one hour after legal sunset and in accordance with state seasons and regulations.” · [www.fws.gov](https://www.fws.gov/refuge/clarence-cannon/visit-us/rules-policies)
+- **US-0376 Great River National Wildlife Refuge**
+  - Hours: “Great River National Wildlife Refuge is open for general use from ½ hour before legal sunrise to ½ hour after legal sunset.” · [www.fws.gov](https://www.fws.gov/refuge/great-river/visit-us)
+  - Hours: “The refuge is open to public use from 1/2 hour before sunrise to 1/2 hour after sunset” · [www.fws.gov](https://www.fws.gov/refuge/great-river/visit-us)
+  - Hunting hours: “Daylight hours only, except for lawful hunting activities which may occur from 1/2 hour before legal sunrise - 1/2 hour after legal sunset” · [www.fws.gov](https://www.fws.gov/refuge/great-river/visit-us)
+  - Hunting hours: “For authorized hunting activities, the refuge is open to access one hour before legal sunrise until one hour after legal sunset and in accordance with state seasons and regulations.” · [www.fws.gov](https://www.fws.gov/refuge/great-river/visit-us/rules-policies)
+- **US-0377 Mingo National Wildlife Refuge**
+  - Hours: “Access to the refuge trails and lands are open from 1/2 hour before sunrise until 1/2 hour after sunset unless otherwise posted.” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+  - Hours: “10am-4pm - Closed on Federal Holidays” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+  - Fees: “Mingo-specific Annual Pass ($12.00)” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+  - Fees: “Refuge-Specific Annual Pass ($12)” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+  - Permit: “Entrance permits are required year-round for entering the refuge.” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+  - Permit: “Persons on foot or one occupant of each vehicle are required to possess a refuge entrance permit upon entry onto the refuge.” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+  - Hunting hours: “Hunters may only access the public hunt area and designated access roads two hours before legal sunrise until two hours after legal sunset.” · [www.fws.gov](https://www.fws.gov/refuge/mingo/visit-us)
+- **US-0381 Swan Lake National Wildlife Refuge**
+  - Hours: “Refuge trails are open during daylight hours, year-round.” · [www.fws.gov](https://www.fws.gov/refuge/swan-lake/visit-us)
+  - Hours: “The refuge is open during daylight hours only, but the interior of the refuge is closed to public access from the end of October until the first Saturday of March.” · [www.fws.gov](https://www.fws.gov/refuge/swan-lake/visit-us)
+  - Permit: “There may be specific rules or permits required for some activities, so it’s best to plan ahead.” · [www.fws.gov](https://www.fws.gov/refuge/swan-lake/visit-us)
+  - Permit: “Permits are required for cutting firewood on the refuge.” · [www.fws.gov](https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies)
+- **US-0710 Wilson's Creek National Battlefield**
+  - Hours: “Monitored from 9 am to 5 pm daily.” · [www.nps.gov](https://www.nps.gov/wicr/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/wicr/planyourvisit/fees.htm)
+- **US-0779 Gateway Arch National Park**
+  - Hours: “The park grounds are open from 5:00am –11:00pm year round.” · [www.nps.gov](https://www.nps.gov/jeff/planyourvisit/hours.htm)
+  - Fees: “Park Pass Holder: Starting at $12” · [www.nps.gov](https://www.nps.gov/jeff/planyourvisit/fees.htm)
+  - Fees: “Therefore, if visitors have an America the Beautiful National Parks and Federal Recreational Lands Pass, they do not have to pay that $3.00 fee and they effectively get a $3.00 "discount" on the tram ride to the top and the documentary movi” · [www.nps.gov](https://www.nps.gov/jeff/planyourvisit/fees.htm)
+  - Attraction fee: “If you wish to browse in the Museum and Visitor Center, there is no entrance fee.” · [www.nps.gov](https://www.nps.gov/jeff/planyourvisit/fees.htm)
+- **US-0788 Rocky Creek State Conservation Area**
+  - Hours: “Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, 04:00 AM - 10:00 PM” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/rocky-creek-conservation-area)
+  - Hours: “This department area is open for public use from 4:00 am to 10:00 pm daily;” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/rocky-creek-conservation-area)
+  - Permit: “Groups of 10 or more people using bicycles on a department area must obtain a special use permit.” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/rocky-creek-conservation-area)
+  - Permit: “Groups of 10 or more people using horses on a department area must obtain a special use permit.” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/rocky-creek-conservation-area)
+- **US-0831 Harry S. Truman Family Farm National Historic Site**
+  - Hours: “First floor exhibit area is open to the public for ranger-guided tours (only) from 9:30 am – 5:00 pm.” · [www.nps.gov](https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm)
+  - Hours: “First floor exhibit area is open to the public for self-guided tours Wednesdays to Sundays from 9:00 am-4:30 pm.” · [www.nps.gov](https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/hstr/planyourvisit/fees.htm)
+  - Permit: “A permit is not required for a demonstration in the designated location if it involves 25 persons or fewer and does not involve structures.” · [www.nps.gov](https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm)
+  - Office hours: “Headquarters offices are open Monday to Friday 8:00 am – 4:30 pm.” · [www.nps.gov](https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm)
+- **US-0870 Ulysses S. Grant National Historic Site**
+  - Hours: “The park's Visitor Center is open daily from 9:00AM to 5:00PM with the exception of Thanksgiving Day, December 25, and January 1.” · [www.nps.gov](https://www.nps.gov/ulsg/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/ulsg/planyourvisit/fees.htm)
+- **US-0936 George Washington Carver National Monument**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/gwca/planyourvisit/fees.htm)
+  - Fees: “George Washington Carver National Monument is FREE of CHARGE!” · [www.nps.gov](https://www.nps.gov/gwca/planyourvisit/fees.htm)
+- **US-10110 Wire Road State Conservation Area**
+  - Hours: “Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, 04:00 AM - 10:00 PM” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/wire-road-conservation-area)
+  - Hours: “This department area is open for public use from 4:00 am to 10:00 pm daily;” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/wire-road-conservation-area)
+  - Permit: “Groups of 10 or more people using bicycles on a department area must obtain a special use permit.” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/wire-road-conservation-area)
+  - Permit: “Groups of 10 or more people using horses on a department area must obtain a special use permit.” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/wire-road-conservation-area)
+- **US-10116 Kings Prairie Access State Conservation Area**
+  - Hours: “Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, 04:00 AM - 10:00 PM” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/kings-prairie-access)
+  - Hours: “This department area is open for public use from 4:00 am to 10:00 pm daily;” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/kings-prairie-access)
+  - Permit: “Groups of 10 or more people using bicycles on a department area must obtain a special use permit.” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/kings-prairie-access)
+  - Permit: “Groups of 10 or more people using horses on a department area must obtain a special use permit.” · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/kings-prairie-access)
+
+## US-MN: 12-park sample for chat 8
+
+- **US-0067 Voyageurs National Park**
+  - Hours: “Summer hours: 9 am - 5 pm, 7-days a week.” · [www.nps.gov](https://www.nps.gov/voya/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/voya/planyourvisit/fees.htm)
+  - Attraction fee: “Visitor center hours vary by season, but Voyageurs National Park has no entrance fees.” · [www.nps.gov](https://www.nps.gov/voya/planyourvisit/hours.htm)
+- **US-0354 Agassiz National Wildlife Refuge**
+  - Hours: “All are open from May through mid-October during daylight hours.” · [www.fws.gov](https://www.fws.gov/refuge/agassiz/visit-us)
+  - Hours: “Open from 5:30 am to 9:00 pm” · [www.fws.gov](https://www.fws.gov/refuge/agassiz/visit-us)
+- **US-0355 Big Stone National Wildlife Refuge**
+  - Hours: “Refuge Lands Hours Open daily dawn to dusk for approved activities.” · [www.fws.gov](https://www.fws.gov/locations/big-stone-national-wildlife-refuge)
+  - Hours: “All refuge waters are open during daylight hours to sport and ice fishing for all game species except mussels (clams), crayfish, leech, frog, toad, salamander, snake, lizard, turtle and other non-fish species.” · [www.fws.gov](https://www.fws.gov/locations/big-stone-national-wildlife-refuge/rules-and-policies)
+  - Office hours: “Visitor Center and Headquarters Office Hours Open 8 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/locations/big-stone-national-wildlife-refuge)
+  - Hunting hours: “Access to the refuge is open from sunrise to sunset, unless otherwise posted or stated in hunting regulations.” · [www.fws.gov](https://www.fws.gov/locations/big-stone-national-wildlife-refuge/rules-and-policies)
+- **US-0357 Crane Meadows National Wildlife Refuge**
+  - Hours: “Refuge trails are open during daylight hours, year-round.” · [www.fws.gov](https://www.fws.gov/refuge/crane-meadows/visit-us)
+  - Hours: “The refuge is open daily from a half hour before sunrise to a half hour after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/crane-meadows)
+  - Permit: “All hunters must possess a refuge hunting permit for the current hunting season.” · [www.fws.gov](https://www.fws.gov/refuge/crane-meadows/visit-us/rules-policies)
+  - Hunting hours: “Access to the refuge, including parking lots, is open from 1/2 hour before sunrise until 1/2 hour after sunset unless posted or stated in hunting regulations.” · [www.fws.gov](https://www.fws.gov/refuge/crane-meadows/visit-us/rules-policies)
+- **US-0358 Detroit Lakes Wetland Management District**
+  - Hours: “Dawn until dusk for approved activities” · [www.fws.gov](https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/visit-us)
+- **US-0359 Fergus Falls Wetland Management District**
+  - Permit: “Fergus Falls Wetland Management District permits are required for haying, grazing, collecting wood and other uses.” · [www.fws.gov](https://www.fws.gov/refuge/fergus-falls-wetland-management-district/visit-us/rules-policies)
+- **US-0360 Glacial Ridge National Wildlife Refuge**
+  - Hours: “Dawn until dusk for all approved outdoor activities” · [www.fws.gov](https://www.fws.gov/refuge/glacial-ridge/visit-us)
+  - Hours: “Access to the refuge is open from 1/2 hour before sunrise until 1/2 hour after sunset (see exceptions under refuge-specific regulations below).” · [www.fws.gov](https://www.fws.gov/refuge/glacial-ridge/visit-us/rules-policies)
+- **US-0361 Hamden Slough National Wildlife Refuge**
+  - Hours: “Access to the refuge is open from 1 hour before sunrise to 1 hour after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/hamden-slough/visit-us/rules-policies)
+  - Hours: “Access to the refuge is open from one hour before sunrise to one hour after sunset” · [www.fws.gov](https://www.fws.gov/refuge/hamden-slough/visit-us/rules-policies)
+- **US-0362 Litchfield Wetland Management District**
+  - Hours: “Open season: Open year round from dawn to dusk, but not cleared of snow during the winter” · [www.fws.gov](https://www.fws.gov/refuge/litchfield-wetland-management-district/visit-us)
+  - Hunting hours: “District lands are open year round for many types of activities that are compatible with maintaining tallgrass prairie habitat and do not jeopardize waterfowl production.” · [www.fws.gov](https://www.fws.gov/refuge/litchfield-wetland-management-district/visit-us)
+- **US-0364 Minnesota Valley National Wildlife Refuge**
+  - Hours: “Bluff Trail west of Old Cedar Avenue parking lot: Closed Monday - Friday, 7 am to 6 pm” · [www.fws.gov](https://www.fws.gov/refuge/minnesota-valley/visit-us)
+  - Hours: “5:00 am - 10:00 p.m, including federal holidays” · [www.fws.gov](https://www.fws.gov/refuge/minnesota-valley/visit-us)
+  - Permit: “The refuge currently only issues permits for nuisance beaver removal as needed for management purposes.” · [www.fws.gov](https://www.fws.gov/refuge/minnesota-valley/visit-us/rules-policies)
+- **US-0365 Minnesota Valley Wetland Management District**
+  - Hours: “Access to district lands are open from 1/2 hour before sunrise until 1/2 hour after sunset unless otherwise posted” · [www.fws.gov](https://www.fws.gov/refuge/minnesota-valley-wetland-management-district/visit-us)
+  - Hours: “Sunrise to sunset for approved activities, including federal holidays.” · [www.fws.gov](https://www.fws.gov/refuge/minnesota-valley-wetland-management-district/visit-us)
+- **US-0368 Rice Lake National Wildlife Refuge**
+  - Hours: “The refuge is open daily from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/rice-lake)
+  - Hunting hours: “Access to the refuge, including parking lots, is open from a half hour before sunrise to a half hour after sunset, unless otherwise posted or stated in hunting regulations.” · [www.fws.gov](https://www.fws.gov/refuge/rice-lake/visit-us/rules-policies)
 
 ## US-IA: 12-park sample for chat 8
 
