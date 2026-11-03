@@ -45,10 +45,14 @@ jobs:
       - uses: actions/checkout@v5
         with:
           path: kpcdata
-          sparse-checkout: data/waiting/key-seen.txt
+          sparse-checkout: |
+            data/waiting/key-seen.txt
+            .github/scripts/kpc_key_id.py
       - id: g
         run: |
-          F=$(cat links/data/us-key/*.json links/data/ca-key/*.json links/data/world-key/*.json 2>/dev/null | sha1sum | cut -c1-16)
+          # Nov 2 review: a fingerprint that leaves out time stamps (kpc_key_id.py), so a rebuild that changed nothing is not new work
+          F=$(python3 kpcdata/.github/scripts/kpc_key_id.py all links 2>/dev/null) || F=""
+          [ -n "$F" ] || F=$(cat links/data/us-key/*.json links/data/ca-key/*.json links/data/world-key/*.json 2>/dev/null | sha1sum | cut -c1-16)
           O=$(cat kpcdata/data/waiting/key-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           H=$(date -u +%H:%M)
@@ -138,7 +142,10 @@ jobs:
           KDIRS=$(echo "$KD" | grep '^DIRS=' | cut -d= -f2-)
           for k in data/us-key data/ca-key data/world-key; do case " $KDIRS " in *" $k "*) ;; *) (cd kpcdata && git checkout -q HEAD -- "$k" 2>/dev/null; git clean -qfd -- "$k" 2>/dev/null) ;; esac; done
           # a key build made before the stamp existed gets an id from its content fingerprint (same build = same id every hour)
-          for k in $KDIRS; do python3 - "$k" "${{ needs.gate.outputs.fp }}" <<'PY' || echo "::error title=inline Python::stopped with an error (exit $?), see the log above"
+          # Nov 2 review (Mapping #7): the fingerprint is now THIS key's own (kpc_key_id.py one), not one sha1 over all three keys,
+          # and it leaves out time stamps, so a Canada or world change no longer gives the US key a new id (and the other way round)
+          for k in $KDIRS; do KID=$(python3 kpcdata/.github/scripts/kpc_key_id.py one links "${k#data/}" 2>/dev/null) || KID="${{ needs.gate.outputs.fp }}"
+            python3 - "$k" "$KID" <<'PY' || echo "::error title=inline Python::stopped with an error (exit $?), see the log above"
           import json, sys
           k, rid = sys.argv[1], sys.argv[2]
           p = f'kpcdata/{k}/index.json'

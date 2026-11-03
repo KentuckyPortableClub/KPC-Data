@@ -831,7 +831,7 @@ def row_map(d):
     """{row key: row json} for a bot file: dict-of-ref files by ref, list rows by their id / first cell / whole row."""
     if isinstance(d, list): d = {'rows': d}
     if not isinstance(d, dict): return {}
-    for k in ('spots', 'parks', 'items', 'camps', 'leads', 'rows'):
+    for k in ('spots', 'parks', 'items', 'camps', 'leads', 'rows', 'states', 'provinces', 'countries'):   # Nov 2 review (Quality 6a): key index files
         v = (d or {}).get(k)
         if isinstance(v, dict): return {str(r): json.dumps(x, sort_keys=True, ensure_ascii=False) for r, x in v.items()}
         if isinstance(v, list):
@@ -849,14 +849,39 @@ def grade_queue(out):
     who = {'fers': 'chat 8 + chat 11', 'key': 'chat 11 (+ chat 2 G-4)'}
     lines = [f"# Waiting for a grader ({dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')}, written by the waiting room)",
              'Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.', '']
+    # Nov 2 review (Quality 6b): rule 22 ties a key YES to the held build id, so every key file shows it
+    builds = {}
+    def held_build(path):
+        m = re.match(r'data/(us-key|ca-key|world-key)/', path)
+        if not m: return None
+        if m.group(1) not in builds: builds[m.group(1)] = str((load(W / 'in' / 'data' / m.group(1) / 'index.json') or {}).get('build') or '')
+        return builds[m.group(1)] or 'NONE (no build stamp: a YES cannot name a build yet)'
+    # Nov 2 review (Quality 6c): 2-fer grading is paused (Nov 2 10:07 AM ruling) except areas the gate marked ready or restarted
+    try: FR = (load(DATA / 'data/status/fers-ready.json') or {}).get('areas') or {}
+    except Exception: FR = {}  # noqa: BLE001
+    def fers_paused(path):
+        if not path.startswith('data/fers/'): return False
+        a = FR.get(pathlib.Path(path).name.split('.')[0]) or {}
+        return not (a.get('status') == 'ready for 2-fers' or a.get('fers_started'))
+    paused = []
     for r in sorted(out, key=lambda r: (r['verdict'] != 'PASS', r['path'])):
+        if fers_paused(r['path']): paused.append(r['path']); continue
         new = load(W / 'in' / r['path']); live = live_of(r['path'])[0]
         a, b = row_map(new), row_map(live) if live else {}
         nw = [k for k in a if k not in b]; ch = [k for k in a if k in b and a[k] != b[k]]; gone = [k for k in b if k not in a]
         same = len(a) - len(nw) - len(ch)
-        lines.append(f"- **{r['path']}** ({r['kind']}, {r['verdict']}; grader {who.get(r['kind'], 'chat 11')}): {len(nw)} new, {len(ch)} changed, {len(gone)} gone, {same} same (carried)"
+        if not a and not b:   # Nov 2 review (Quality 6a): no rows this list can read: say whether the file changed at all
+            counts = ('new file (no live copy), no rows to list' if live is None else 'same as the live copy' if new == live
+                      else 'whole file changed, no rows to list: look at the whole file')
+        else: counts = f"{len(nw)} new, {len(ch)} changed, {len(gone)} gone, {same} same (carried)"
+        hb = held_build(r['path'])
+        lines.append(f"- **{r['path']}** ({r['kind']}, {r['verdict']}; grader {who.get(r['kind'], 'chat 11')}"
+                     + (f"; held build {hb}" if hb else '') + f"): {counts}"
                      + (f"; check: {', '.join((nw + ch)[:25])}{' ...' if len(nw) + len(ch) > 25 else ''}" if nw or ch else '')
                      + (f"; why held: {'; '.join(r.get('why') or [])[:300]}" if r['verdict'] == 'HOLD' else ''))
+    if paused:
+        lines += ['', f'## Paused, not for grading ({len(paused)} 2-fer file(s): 2-fer grading is paused since Nov 2 10:07 AM until the gate marks the area ready)',
+                  '', ', '.join(paused)]
     pathlib.Path(DATA / 'data/status').mkdir(parents=True, exist_ok=True)
     (DATA / 'data/status/grade-queue.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
