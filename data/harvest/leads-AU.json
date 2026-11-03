@@ -7,8 +7,8 @@
   "known"
  ],
  "bands": {
-  "A": 46,
-  "B": 11,
+  "A": 44,
+  "B": 13,
   "C": 0
  },
  "failures": [
@@ -5291,6 +5291,7 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
@@ -5523,94 +5524,6 @@
       "st_perimeter(shape)"
      ],
      "records": 934
-    }
-   ],
-   "note": "",
-   "grade": 5,
-   "band": "A"
-  },
-  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/farming": {
-   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer",
-   "cc": "AU",
-   "title": "SLIP_Public_Services/Farming",
-   "publisher": "public-services.slip.wa.gov.au",
-   "catalog": "agency server public-services.slip.wa.gov.au",
-   "licence": "SLIP",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
-    {
-     "id": 8,
-     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
-      "id",
-      "zonevalue",
-      "descriptio",
-      "name_abrv",
-      "name_expan",
-      "id2",
-      "shape",
-      "st_area(shape)",
-      "st_perimeter(shape)"
-     ],
-     "records": 30,
-     "sample": [
-      "SP+LP",
-      "SP+LP",
-      "SP+LP/CL"
-     ],
-     "name_field": "name_abrv"
-    }
-   ],
-   "note": "",
-   "grade": 5,
-   "band": "A"
-  },
-  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/farming_wfs": {
-   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer",
-   "cc": "AU",
-   "title": "SLIP_Public_Services/Farming_WFS",
-   "publisher": "public-services.slip.wa.gov.au",
-   "catalog": "agency server public-services.slip.wa.gov.au",
-   "licence": "SLIP",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
-    {
-     "id": 2,
-     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
-      "id",
-      "zonevalue",
-      "descriptio",
-      "name_abrv",
-      "name_expan",
-      "id2",
-      "shape",
-      "st_area(shape)",
-      "st_perimeter(shape)"
-     ],
-     "records": 30,
-     "sample": [
-      "SP+LP",
-      "SP+LP",
-      "SP+LP/CL"
-     ],
-     "name_field": "name_abrv"
     }
    ],
    "note": "",
@@ -8604,6 +8517,148 @@
       "st_perimeter(shape)"
      ],
      "records": 148
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/farming": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer",
+   "cc": "AU",
+   "title": "SLIP_Public_Services/Farming",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "SLIP",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 8,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    },
+    {
+     "id": 8,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/farming_wfs": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer",
+   "cc": "AU",
+   "title": "SLIP_Public_Services/Farming_WFS",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "SLIP",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    },
+    {
+     "id": 2,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
     }
    ],
    "note": "",
