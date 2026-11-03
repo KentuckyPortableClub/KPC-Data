@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T18:10Z",
+ "checked": "2026-11-03T18:12Z",
  "switched_on": false,
  "results": [
   {
@@ -546,9 +546,11 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 12 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=SOUTH%20B"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-WV.json",
