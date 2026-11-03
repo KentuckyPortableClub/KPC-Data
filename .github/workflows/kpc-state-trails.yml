@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       states:
-        description: 'States, e.g. "AR DE CANADA" (blank = every state + DC + Canada). Official lines first; OpenStreetMap only as a labelled unofficial fallback when data/trails-layers.json settings.osm_fallback is true (PR 4, Nov 2)'
+        description: 'States, e.g. "AR DE CANADA" (blank = every state + DC + Canada). Official lines first; OpenStreetMap only as a labelled unofficial fallback when no official line exists (data/trails-layers.json settings.osm_fallback, on by default; PR 4, Nov 2)'
         default: ''
       full:
         description: 'Search every park again, even ones with an official line read in the last 60 days'
