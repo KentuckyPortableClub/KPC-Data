@@ -2003,50 +2003,6 @@
    "discovered_via": "ArcGIS Online search \"trails provincial Newfoundland\""
   },
   {
-   "id": "US-WI-nature_preserve-Rock_County_Parks-4",
-   "area": "US-WI",
-   "cc": "US",
-   "region": "WI",
-   "ptype": "nature_preserve",
-   "kind": "arcgis",
-   "url": "https://services3.arcgis.com/iP3EkckmBHOMrtt5/arcgis/rest/services/Rock_County_Parks/FeatureServer/4",
-   "layer_name": "Rock County Parks",
-   "name_field": "Park_Name",
-   "geometry": "polygon",
-   "item_title": "Rock County Parks",
-   "item_id": "125b06e962394359b3c5c911b890e7c8",
-   "agency": "Rock County, Wisconsin Location Information Online",
-   "official_basis": "ArcGIS org \"Rock County, Wisconsin Location Information Online\" (RockCountyLIO.maps.arcgis.com, orgId iP3EkckmBHOMrtt5)",
-   "grade": "official",
-   "pota_words": "Preserve|Natural Area",
-   "pota_locs": [
-    "US-WI"
-   ],
-   "discovered_via": "ArcGIS Online search \"\"natural area\" state Wisconsin\""
-  },
-  {
-   "id": "US-WI-parking-Lake_Access-0",
-   "area": "US-WI",
-   "cc": "US",
-   "region": "WI",
-   "ptype": "parking",
-   "kind": "arcgis",
-   "url": "https://maps.vilascountywi.gov/vilasgis/rest/services/V4/LakeAccess/MapServer/0",
-   "layer_name": "Lake Access Sites",
-   "name_field": "featname",
-   "geometry": "point",
-   "item_title": "Lake Access",
-   "item_id": "f18e898c21234cd09afe4e97366b32ed",
-   "agency": "Vilas County, Wisconsin",
-   "official_basis": "ArcGIS org \"Vilas County, Wisconsin\" (vilas.maps.arcgis.com, orgId EpBsZtekrgiFz19U)",
-   "grade": "official",
-   "pota_words": null,
-   "pota_locs": [
-    "US-WI"
-   ],
-   "discovered_via": "ArcGIS Online search \"\"boat ramp\" access Wisconsin\""
-  },
-  {
    "id": "US-CA-state_park-Park_Boundaries-0",
    "area": "US-CA",
    "cc": "US",
@@ -11351,6 +11307,50 @@
     "US-VT"
    ],
    "discovered_via": "ArcGIS Online search \"trailhead Vermont\""
+  },
+  {
+   "id": "US-WI-nature_preserve-Rock_County_Parks-4",
+   "area": "US-WI",
+   "cc": "US",
+   "region": "WI",
+   "ptype": "nature_preserve",
+   "kind": "arcgis",
+   "url": "https://services3.arcgis.com/iP3EkckmBHOMrtt5/arcgis/rest/services/Rock_County_Parks/FeatureServer/4",
+   "layer_name": "Rock County Parks",
+   "name_field": "Park_Name",
+   "geometry": "polygon",
+   "item_title": "Rock County Parks",
+   "item_id": "125b06e962394359b3c5c911b890e7c8",
+   "agency": "Rock County, Wisconsin Location Information Online",
+   "official_basis": "ArcGIS org \"Rock County, Wisconsin Location Information Online\" (RockCountyLIO.maps.arcgis.com, orgId iP3EkckmBHOMrtt5)",
+   "grade": "official",
+   "pota_words": "Preserve|Natural Area",
+   "pota_locs": [
+    "US-WI"
+   ],
+   "discovered_via": "ArcGIS Online search \"\"natural area\" state Wisconsin\""
+  },
+  {
+   "id": "US-WI-parking-Lake_Access-0",
+   "area": "US-WI",
+   "cc": "US",
+   "region": "WI",
+   "ptype": "parking",
+   "kind": "arcgis",
+   "url": "https://maps.vilascountywi.gov/vilasgis/rest/services/V4/LakeAccess/MapServer/0",
+   "layer_name": "Lake Access Sites",
+   "name_field": "featname",
+   "geometry": "point",
+   "item_title": "Lake Access",
+   "item_id": "f18e898c21234cd09afe4e97366b32ed",
+   "agency": "Vilas County, Wisconsin",
+   "official_basis": "ArcGIS org \"Vilas County, Wisconsin\" (vilas.maps.arcgis.com, orgId EpBsZtekrgiFz19U)",
+   "grade": "official",
+   "pota_words": null,
+   "pota_locs": [
+    "US-WI"
+   ],
+   "discovered_via": "ArcGIS Online search \"\"boat ramp\" access Wisconsin\""
   }
  ],
  "dropped": [
@@ -15762,601 +15762,6 @@
    "ptype": "parking",
    "title": "Trail Access Points Public View",
    "url": "https://services8.arcgis.com/EKgs6jOgtqEQoqHR/arcgis/rest/services/Trail_Access_Points_Public_View/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "State_Parks",
-   "url": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/State_Parks/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "DNR State Parks (1500 ft buffer)",
-   "url": "https://services1.arcgis.com/FDsAtKBk8Hy4cAH0/arcgis/rest/services/DNR_State_Parks_(1500_ft_buffer)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "State_Parks",
-   "url": "https://services2.arcgis.com/mzukOs9wABhl5gyA/arcgis/rest/services/State_Parks/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Chiwaukee Area",
-   "url": "https://services1.arcgis.com/DRYt3fps0uMvIxeE/arcgis/rest/services/Chiwaukee_Area/MapServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Ice Age National Scenic Trail Existing Sections - Official Layer",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "IAT Spur and Loop Trails",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Spur_and_Loop_Trails/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "IATA Properties",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IATA_Fee/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Class 1 Areas under the Clean Air Act, US EPA, OAR, OAQPS",
-   "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Mandatory_Class1_Federal_Areas/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "PR: WI Park Closures PUBLIC READ view",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/WI_Park_Closures_PUBLIC_VIEW/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Ice Age National Scenic Trail Existing Sections & Connecting Routes - Official Layer",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments_CR/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Caroline_Conservation_Easements",
-   "url": "https://services1.arcgis.com/ue5fMdTkPeHLCobS/arcgis/rest/services/Caroline_Conservation_Easements/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Land Ownership",
-   "url": "https://services.arcgis.com/9ecg2KpMLcsUv1Oh/arcgis/rest/services/Land_Ownership/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Protected area with sustainable use of natural resources (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Protected_area_with_sustainable_use_of_natural_resources_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Protected Areas Database of the United States (PAD-US)",
-   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/HVRA_Source_Data_PADUS2_0Combined_DOD_Fee_Designation_Easement_OR/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "BLM_Lands",
-   "url": "https://services5.arcgis.com/XhZs5lLsWDmZpTlD/arcgis/rest/services/BLM_Lands/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "National park (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/National_park_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Door County Parks Map",
-   "url": "https://services2.arcgis.com/njkzXmyapxfqgV2j/arcgis/rest/services/Door_County_Parks_Map/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_park",
-   "title": "Parcels",
-   "url": "https://services9.arcgis.com/EbNKPwya4kmeiOw9/arcgis/rest/services/Parcels/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "fish_wildlife",
-   "title": "FederalLands_IndianReservations",
-   "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/FederalLands_IndianReservations/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "NaturePreserveTrailMap",
-   "url": "https://services1.arcgis.com/blRg5afpxSe1ecGt/arcgis/rest/services/NaturePreserveTrailMap/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "WI State Natural Areas",
-   "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/WI_State_Natural_Areas/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "Wisconsin State Natural Areas (WDNR, 2021)",
-   "url": "https://services2.arcgis.com/dJOijx2lWTlGQBDJ/arcgis/rest/services/CW_3856/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "1991 CB Survey Full Map_WFL1",
-   "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/1991_CB_Survey_Full_Map_WFL1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "2006 CB Survey Full Map_WFL1",
-   "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/2006_CB_Survey_Full_Map_WFL1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "WCG State Natural Areas",
-   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/WCG_State_Natural_Areas/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "SNA Native Community EOs_form",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/service_e7180859a7dd45979f78df85227cdcb5_form/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "Snapshot Wisconsin Natural Resources Foundation Member Signup Survey",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/service_38be6e6965c84732a462f0e2da8de3ff/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "Chiwaukee Area",
-   "url": "https://services1.arcgis.com/DRYt3fps0uMvIxeE/arcgis/rest/services/Chiwaukee_Area/MapServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "nature_preserve",
-   "title": "WShedWiSNAs",
-   "url": "https://services5.arcgis.com/8DXJxniEHrDSaaPT/arcgis/rest/services/WShedWiSNAs/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_forest",
-   "title": "State_Forest",
-   "url": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/State_Forest/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "state_forest",
-   "title": "State_Forest",
-   "url": "https://services2.arcgis.com/mzukOs9wABhl5gyA/arcgis/rest/services/State_Forest/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "PR_DISS_STATE_TRAIL_LN_24K",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/PR_DISS_STATE_TRAIL_LN_24K/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Ice Age National Scenic Trail Existing Sections - Official Layer",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "IAT Spur and Loop Trails",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Spur_and_Loop_Trails/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "IATA Properties",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IATA_Fee/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Ice Age National Scenic Trail Existing Sections & Connecting Routes - Official Layer",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments_CR/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Trails Network Plan Layers",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/TNP_Group_Layer/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Ice Age Trail - Existing Sections",
-   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/Ice_Age_Trail_Existing_Sections/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "PR: Bikeways Secondary Data layer",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Bikeways_Secondary_Data/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "HankAaron_2021_Network",
-   "url": "https://services.arcgis.com/G3nmNsarwQblLhip/arcgis/rest/services/HankAaron_2021_Network/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "PR: WI State Park System Properties - layer",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/PR_WSPS_Properties_AR/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "IAT_Trail_Progress",
-   "url": "https://services8.arcgis.com/nXYBzfZe2MfVrPd5/arcgis/rest/services/IAT_Trail_Progress/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Portage County Trails",
-   "url": "https://services1.arcgis.com/wQnFk5ouCfPzTlPw/arcgis/rest/services/Portage_County_Trails/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Primary_HankAaron",
-   "url": "https://services.arcgis.com/G3nmNsarwQblLhip/arcgis/rest/services/Primary_HankAaron/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "mountain_bay_trail_shp",
-   "url": "https://services2.arcgis.com/l21g8TXig49ifRwg/arcgis/rest/services/mountain_bay_trail_shp/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "PR: WI Park Closures PUBLIC READ view",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/WI_Park_Closures_PUBLIC_VIEW/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "PR: Bikeways layer",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Bikeways/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Wisconsin Rapids_WFL1",
-   "url": "https://services5.arcgis.com/w3nEESmML9guA8uQ/arcgis/rest/services/Wisconsin_Rapids_WFL1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Enbridge Sandpiper Southern Route East of Clearbrook to WI",
-   "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Enbridge_Sandpiper_Southern_Route_East_of_Clearbrook_to_WI/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Waypoint",
-   "url": "https://services8.arcgis.com/2RIFco0Rk0YlWKga/arcgis/rest/services/Waypoint/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "trail",
-   "title": "Copper Falls State Park Wisconsin Winter Trails",
-   "url": "https://services1.arcgis.com/do3Qqawv5p1BzFow/arcgis/rest/services/Copper_Falls_State_Park_Wisconsin_Winter_Trails/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "river",
-   "title": "Trails Network Plan Layers",
-   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/TNP_Group_Layer/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "river",
-   "title": "Glacial Heritage Area PITOs",
-   "url": "http://studentgis.uww.edu/arcgis/rest/services/Fall2014/GHA_Final/MapServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "river",
-   "title": "FederalLands_IndianReservations",
-   "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/FederalLands_IndianReservations/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "river",
-   "title": "Lower St. Croix National Scenic Riverway (LSCR) Boundary & Districts in Minnesota",
-   "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_lscr_districts/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "river",
-   "title": "Lower St. Croix National Scenic Riverway (LSCR) Boundary & Districts in Minnesota",
-   "url": "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_lscr_districts/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Lake Access",
-   "url": "https://maps.vilascountywi.gov/vilasgis/rest/services/V4/LakeAccess/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Amenities",
-   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Amenities/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "POI_Icons",
-   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/POI_Icons/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "GCT_Points_of_Interest_03122019",
-   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/GCT_Points_of_Interest_03122019/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "WCG Hiking Trailheads",
-   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/WCG_Hiking_Trailheads/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "GCT Map Signage_WFL1",
-   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/GCT_Map_Signage_WFL1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Points_Of_Interest_Labels",
-   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Points_Of_Interest_Labels/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Class 1 Areas under the Clean Air Act, US EPA, OAR, OAQPS",
-   "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Mandatory_Class1_Federal_Areas/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Caroline_Conservation_Easements",
-   "url": "https://services1.arcgis.com/ue5fMdTkPeHLCobS/arcgis/rest/services/Caroline_Conservation_Easements/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Land Ownership",
-   "url": "https://services.arcgis.com/9ecg2KpMLcsUv1Oh/arcgis/rest/services/Land_Ownership/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Protected area with sustainable use of natural resources (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Protected_area_with_sustainable_use_of_natural_resources_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Protected Areas Database of the United States (PAD-US)",
-   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/HVRA_Source_Data_PADUS2_0Combined_DOD_Fee_Designation_Easement_OR/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "BLM_Lands",
-   "url": "https://services5.arcgis.com/XhZs5lLsWDmZpTlD/arcgis/rest/services/BLM_Lands/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "National park (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/National_park_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Department of Defense Managed Land",
-   "url": "https://services1.arcgis.com/IAQQkLXctKHrf8Av/arcgis/rest/services/Department_of_Defense_Managed_Land/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "USGS_PAD14_NationalRecreationArea_20160501",
-   "url": "https://services7.arcgis.com/F4iYwOOvXLYhkPXF/arcgis/rest/services/USGS_PAD14_NationalRecreationArea_20160501/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Protected Areas Database",
-   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Protected_Areas_Database/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "PADUS3 SGI Boundary",
-   "url": "https://services.arcgis.com/XaWc1MuAt1v6Ook0/arcgis/rest/services/PADUS3_SGI_Boundary/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "EasternHemlockProject_NationalForests",
-   "url": "https://services5.arcgis.com/jnYf2Emqbv8T64a0/arcgis/rest/services/EasternHemlockProject_NationalForests/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Notable Parks along Long Island Greenway Phase 1",
-   "url": "https://services1.arcgis.com/oOUgp466Coyjcu6V/arcgis/rest/services/Notable_Parks_along_Long_Island_Greenway_Phase_1/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Wilderness areas (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Wilderness_areas_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Other Conservation Area (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Other_Conservation_Area_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Wildlife Protection Overlay",
-   "url": "https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Wildlife_Protection_Overlay/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Protected landscape or seascape (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Protected_landscape_or_seascape_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Habitat or Species management (PADUS)",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Habitat_or_Species_management_(PADUS)/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "PADUS2_1_WA",
-   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/PADUS2_1_WA/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Strict nature reserves",
-   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Strict_nature_reserves/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "PADUS2_1_OR",
-   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/PADUS2_1_OR/FeatureServer",
-   "why": "no organisation (personal / public account)"
-  },
-  {
-   "area": "US-WI",
-   "ptype": "parking",
-   "title": "Open_and_Limited_Access_Green_SpacesV2",
-   "url": "https://services.arcgis.com/dqnSpuoMiocEiFNg/arcgis/rest/services/Open_and_Limited_Access_Green_SpacesV2/FeatureServer",
    "why": "no organisation (personal / public account)"
   },
   {
@@ -25807,6 +25212,601 @@
    "ptype": "parking",
    "title": "Closed_or_Unknown_Access_Green_SpacesV2",
    "url": "https://services.arcgis.com/dqnSpuoMiocEiFNg/arcgis/rest/services/Closed_or_Unknown_Access_Green_SpacesV2/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "State_Parks",
+   "url": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/State_Parks/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "DNR State Parks (1500 ft buffer)",
+   "url": "https://services1.arcgis.com/FDsAtKBk8Hy4cAH0/arcgis/rest/services/DNR_State_Parks_(1500_ft_buffer)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "State_Parks",
+   "url": "https://services2.arcgis.com/mzukOs9wABhl5gyA/arcgis/rest/services/State_Parks/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Chiwaukee Area",
+   "url": "https://services1.arcgis.com/DRYt3fps0uMvIxeE/arcgis/rest/services/Chiwaukee_Area/MapServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Ice Age National Scenic Trail Existing Sections - Official Layer",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "IAT Spur and Loop Trails",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Spur_and_Loop_Trails/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "IATA Properties",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IATA_Fee/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Class 1 Areas under the Clean Air Act, US EPA, OAR, OAQPS",
+   "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Mandatory_Class1_Federal_Areas/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "PR: WI Park Closures PUBLIC READ view",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/WI_Park_Closures_PUBLIC_VIEW/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Ice Age National Scenic Trail Existing Sections & Connecting Routes - Official Layer",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments_CR/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Caroline_Conservation_Easements",
+   "url": "https://services1.arcgis.com/ue5fMdTkPeHLCobS/arcgis/rest/services/Caroline_Conservation_Easements/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Land Ownership",
+   "url": "https://services.arcgis.com/9ecg2KpMLcsUv1Oh/arcgis/rest/services/Land_Ownership/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Protected area with sustainable use of natural resources (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Protected_area_with_sustainable_use_of_natural_resources_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Protected Areas Database of the United States (PAD-US)",
+   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/HVRA_Source_Data_PADUS2_0Combined_DOD_Fee_Designation_Easement_OR/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "BLM_Lands",
+   "url": "https://services5.arcgis.com/XhZs5lLsWDmZpTlD/arcgis/rest/services/BLM_Lands/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "National park (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/National_park_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Door County Parks Map",
+   "url": "https://services2.arcgis.com/njkzXmyapxfqgV2j/arcgis/rest/services/Door_County_Parks_Map/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_park",
+   "title": "Parcels",
+   "url": "https://services9.arcgis.com/EbNKPwya4kmeiOw9/arcgis/rest/services/Parcels/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "fish_wildlife",
+   "title": "FederalLands_IndianReservations",
+   "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/FederalLands_IndianReservations/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "NaturePreserveTrailMap",
+   "url": "https://services1.arcgis.com/blRg5afpxSe1ecGt/arcgis/rest/services/NaturePreserveTrailMap/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "WI State Natural Areas",
+   "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/WI_State_Natural_Areas/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "Wisconsin State Natural Areas (WDNR, 2021)",
+   "url": "https://services2.arcgis.com/dJOijx2lWTlGQBDJ/arcgis/rest/services/CW_3856/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "1991 CB Survey Full Map_WFL1",
+   "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/1991_CB_Survey_Full_Map_WFL1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "2006 CB Survey Full Map_WFL1",
+   "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/2006_CB_Survey_Full_Map_WFL1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "WCG State Natural Areas",
+   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/WCG_State_Natural_Areas/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "SNA Native Community EOs_form",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/service_e7180859a7dd45979f78df85227cdcb5_form/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "Snapshot Wisconsin Natural Resources Foundation Member Signup Survey",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/service_38be6e6965c84732a462f0e2da8de3ff/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "Chiwaukee Area",
+   "url": "https://services1.arcgis.com/DRYt3fps0uMvIxeE/arcgis/rest/services/Chiwaukee_Area/MapServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "nature_preserve",
+   "title": "WShedWiSNAs",
+   "url": "https://services5.arcgis.com/8DXJxniEHrDSaaPT/arcgis/rest/services/WShedWiSNAs/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_forest",
+   "title": "State_Forest",
+   "url": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/State_Forest/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "state_forest",
+   "title": "State_Forest",
+   "url": "https://services2.arcgis.com/mzukOs9wABhl5gyA/arcgis/rest/services/State_Forest/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "PR_DISS_STATE_TRAIL_LN_24K",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/PR_DISS_STATE_TRAIL_LN_24K/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Ice Age National Scenic Trail Existing Sections - Official Layer",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "IAT Spur and Loop Trails",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Spur_and_Loop_Trails/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "IATA Properties",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IATA_Fee/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Ice Age National Scenic Trail Existing Sections & Connecting Routes - Official Layer",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Segments_CR/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Trails Network Plan Layers",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/TNP_Group_Layer/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Ice Age Trail - Existing Sections",
+   "url": "https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/Ice_Age_Trail_Existing_Sections/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "PR: Bikeways Secondary Data layer",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Bikeways_Secondary_Data/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "HankAaron_2021_Network",
+   "url": "https://services.arcgis.com/G3nmNsarwQblLhip/arcgis/rest/services/HankAaron_2021_Network/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "PR: WI State Park System Properties - layer",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/PR_WSPS_Properties_AR/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "IAT_Trail_Progress",
+   "url": "https://services8.arcgis.com/nXYBzfZe2MfVrPd5/arcgis/rest/services/IAT_Trail_Progress/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Portage County Trails",
+   "url": "https://services1.arcgis.com/wQnFk5ouCfPzTlPw/arcgis/rest/services/Portage_County_Trails/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Primary_HankAaron",
+   "url": "https://services.arcgis.com/G3nmNsarwQblLhip/arcgis/rest/services/Primary_HankAaron/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "mountain_bay_trail_shp",
+   "url": "https://services2.arcgis.com/l21g8TXig49ifRwg/arcgis/rest/services/mountain_bay_trail_shp/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "PR: WI Park Closures PUBLIC READ view",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/WI_Park_Closures_PUBLIC_VIEW/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "PR: Bikeways layer",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Bikeways/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Wisconsin Rapids_WFL1",
+   "url": "https://services5.arcgis.com/w3nEESmML9guA8uQ/arcgis/rest/services/Wisconsin_Rapids_WFL1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Enbridge Sandpiper Southern Route East of Clearbrook to WI",
+   "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Enbridge_Sandpiper_Southern_Route_East_of_Clearbrook_to_WI/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Waypoint",
+   "url": "https://services8.arcgis.com/2RIFco0Rk0YlWKga/arcgis/rest/services/Waypoint/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "trail",
+   "title": "Copper Falls State Park Wisconsin Winter Trails",
+   "url": "https://services1.arcgis.com/do3Qqawv5p1BzFow/arcgis/rest/services/Copper_Falls_State_Park_Wisconsin_Winter_Trails/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "river",
+   "title": "Trails Network Plan Layers",
+   "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/TNP_Group_Layer/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "river",
+   "title": "Glacial Heritage Area PITOs",
+   "url": "http://studentgis.uww.edu/arcgis/rest/services/Fall2014/GHA_Final/MapServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "river",
+   "title": "FederalLands_IndianReservations",
+   "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/FederalLands_IndianReservations/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "river",
+   "title": "Lower St. Croix National Scenic Riverway (LSCR) Boundary & Districts in Minnesota",
+   "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_lscr_districts/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "river",
+   "title": "Lower St. Croix National Scenic Riverway (LSCR) Boundary & Districts in Minnesota",
+   "url": "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_lscr_districts/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Lake Access",
+   "url": "https://maps.vilascountywi.gov/vilasgis/rest/services/V4/LakeAccess/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Amenities",
+   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Amenities/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "POI_Icons",
+   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/POI_Icons/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "GCT_Points_of_Interest_03122019",
+   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/GCT_Points_of_Interest_03122019/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "WCG Hiking Trailheads",
+   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/WCG_Hiking_Trailheads/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "GCT Map Signage_WFL1",
+   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/GCT_Map_Signage_WFL1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Points_Of_Interest_Labels",
+   "url": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Points_Of_Interest_Labels/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Class 1 Areas under the Clean Air Act, US EPA, OAR, OAQPS",
+   "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Mandatory_Class1_Federal_Areas/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Caroline_Conservation_Easements",
+   "url": "https://services1.arcgis.com/ue5fMdTkPeHLCobS/arcgis/rest/services/Caroline_Conservation_Easements/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Land Ownership",
+   "url": "https://services.arcgis.com/9ecg2KpMLcsUv1Oh/arcgis/rest/services/Land_Ownership/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Protected area with sustainable use of natural resources (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Protected_area_with_sustainable_use_of_natural_resources_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Protected Areas Database of the United States (PAD-US)",
+   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/HVRA_Source_Data_PADUS2_0Combined_DOD_Fee_Designation_Easement_OR/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "BLM_Lands",
+   "url": "https://services5.arcgis.com/XhZs5lLsWDmZpTlD/arcgis/rest/services/BLM_Lands/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "National park (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/National_park_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Department of Defense Managed Land",
+   "url": "https://services1.arcgis.com/IAQQkLXctKHrf8Av/arcgis/rest/services/Department_of_Defense_Managed_Land/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "USGS_PAD14_NationalRecreationArea_20160501",
+   "url": "https://services7.arcgis.com/F4iYwOOvXLYhkPXF/arcgis/rest/services/USGS_PAD14_NationalRecreationArea_20160501/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Protected Areas Database",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Protected_Areas_Database/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "PADUS3 SGI Boundary",
+   "url": "https://services.arcgis.com/XaWc1MuAt1v6Ook0/arcgis/rest/services/PADUS3_SGI_Boundary/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "EasternHemlockProject_NationalForests",
+   "url": "https://services5.arcgis.com/jnYf2Emqbv8T64a0/arcgis/rest/services/EasternHemlockProject_NationalForests/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Notable Parks along Long Island Greenway Phase 1",
+   "url": "https://services1.arcgis.com/oOUgp466Coyjcu6V/arcgis/rest/services/Notable_Parks_along_Long_Island_Greenway_Phase_1/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Wilderness areas (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Wilderness_areas_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Other Conservation Area (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Other_Conservation_Area_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Wildlife Protection Overlay",
+   "url": "https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Wildlife_Protection_Overlay/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Protected landscape or seascape (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Protected_landscape_or_seascape_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Habitat or Species management (PADUS)",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Habitat_or_Species_management_(PADUS)/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "PADUS2_1_WA",
+   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/PADUS2_1_WA/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Strict nature reserves",
+   "url": "https://services9.arcgis.com/90v9hhDSTUTen7c9/arcgis/rest/services/Strict_nature_reserves/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "PADUS2_1_OR",
+   "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/PADUS2_1_OR/FeatureServer",
+   "why": "no organisation (personal / public account)"
+  },
+  {
+   "area": "US-WI",
+   "ptype": "parking",
+   "title": "Open_and_Limited_Access_Green_SpacesV2",
+   "url": "https://services.arcgis.com/dqnSpuoMiocEiFNg/arcgis/rest/services/Open_and_Limited_Access_Green_SpacesV2/FeatureServer",
    "why": "no organisation (personal / public account)"
   }
  ],
