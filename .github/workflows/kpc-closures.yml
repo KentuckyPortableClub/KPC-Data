@@ -89,11 +89,11 @@ jobs:
           BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_closures_bot.py --selftest | tail -1; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_closures_bot.py::stopped with an error (exit $rc), see the log above"
+          python3 .github/scripts/kpc_closures_bot.py --selftest | tail -1; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::error title=kpc_closures_bot.py::stopped with an error (exit $rc), see the log above"
           LEFT=1
           for i in $(seq 1 "$CHUNKS"); do
             echo "::group::chunk $i of $CHUNKS"
-            python3 .github/scripts/kpc_closures_bot.py | tee /tmp/closures.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_closures_bot.py::stopped with an error (exit $rc), see the log above"
+            python3 .github/scripts/kpc_closures_bot.py | tee /tmp/closures.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::error title=kpc_closures_bot.py::stopped with an error (exit $rc), see the log above"
             echo "::endgroup::"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/closures.log | tail -1 | cut -d= -f2); [ -n "$L" ] && LEFT=$L
             T=$(grep -o '^TEST=[A-Z]*' /tmp/closures.log | tail -1); [ -n "$T" ] && echo "$T" >> "$GITHUB_ENV"

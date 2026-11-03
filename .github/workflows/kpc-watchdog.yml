@@ -2,6 +2,9 @@ name: KPC skipped-run watchdog
 # Nov 2 2026 (chat 10; chat 2 + Brandon 7:18 AM: GitHub skipped most of last night's scheduled runs and things stalled).
 # Every 2 hours: every scheduled workflow of this repo whose newest cron time (25 min to 26 h ago) has no run is started once by
 # hand (kpc_watchdog.py). Remembered in data/status/watchdog.json; one board line. Never red.
+# PR3 (Nov 2): it also (a) checks that the website copy (branch 'site', which Pages publishes) is within ~1 h of main and restarts
+# kpc-pages-sync if not, and (b) sweeps both repos' KEY bots for failed runs, ::error notes and silence -> ONE board line
+# 'Key bots: errors and silence' (red = look). KPC-Links' relay heartbeat starts this watchdog when GitHub's timer skips it.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '6 */2 * * *'   # G9 Nov 2: was '7 */2 * * *' (spread the start times; now 1 min earlier)
@@ -14,6 +17,8 @@ on:
 permissions:
   contents: write
   actions: write
+  checks: read   # PR3: read the key bots' error notes (annotations)
+  pages: read    # PR3: the site check reads whether Pages has a custom domain (CNAME)
 concurrency:
   group: kpc-watchdog
   cancel-in-progress: false
@@ -28,7 +33,13 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 .github/scripts/kpc_watchdog.py
+        run: python3 .github/scripts/kpc_watchdog.py   # PR3: also checks the website copy (branch 'site' vs main) and restarts it
+      - name: Key bots - errors and silence, both repos (PR3; read-only, one board line)
+        id: kept_green_4
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/kpc_key_errors.py
       - name: TRUE SIZE, once a day (Nov 2, Brandon 'we gain size so quick'; GitHub's own number lags a day or more)
         id: kept_green_3
         continue-on-error: true

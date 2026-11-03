@@ -95,7 +95,68 @@ def crons(path):
     return True, re.findall(r"^\s*-\s*cron:\s*['\"]([^'\"]+)['\"]", txt, re.M)
 
 
+SITE_LAG_MIN = 60        # PR3: 'site' may trail main by this much (the copy bot runs every 20 min) before the watchdog steps in
+SITE_FORCE_MIN = 120     # PR3: still behind after this long = the copy bot itself is broken: the watchdog moves 'site' itself
+SITE_SKIP = ('.github/', '.claude/')   # changes only here do not change the website, so a lag of these alone is fine
+
+
+def _t(s):
+    return dt.datetime.fromisoformat(str(s).replace('Z', '+00:00'))
+
+
+def site_check():
+    """PR3 (Nov 2, Brandon: 'i never had them check the watcher'): GitHub Pages publishes the branch 'site', which
+    kpc-pages-sync.yml moves up to main at most every 20 min. If 'site' is more than SITE_LAG_MIN behind main AND the commits
+    it is missing change website files (anything outside .github/ and .claude/), the watchdog says so (::error + a red board
+    line) and starts kpc-pages-sync once. Past SITE_FORCE_MIN it moves 'site' to main itself (same commit, no new files).
+    It also checks that 'site' still has .nojekyll (and CNAME, if Pages ever gets a custom domain).
+    -> (result, words) for the board."""
+    rc, m = gh(f'repos/{REPO}/git/ref/heads/main', '--jq', '.object.sha'); M = m.strip()
+    rc2, s = gh(f'repos/{REPO}/git/ref/heads/site', '--jq', '.object.sha'); S = s.strip() if rc2 == 0 else ''
+    if rc != 0 or not M:
+        return 'amber', 'could not read main (GitHub API); next look tries again'
+    if not S:
+        return 'red', "branch 'site' is missing: the website cannot publish. Run 'KPC site copy for GitHub Pages' by hand"
+    probs = []
+    rc, nj = gh(f'repos/{REPO}/contents/.nojekyll?ref=site', '--jq', '.name')
+    if rc != 0 or nj.strip() != '.nojekyll':
+        probs.append("'site' has no .nojekyll (GitHub would run Jekyll and drop files)")
+    rc, cn = gh(f'repos/{REPO}/pages', '--jq', '.cname // ""')
+    if rc == 0 and cn.strip():
+        rc, f = gh(f'repos/{REPO}/contents/CNAME?ref=site', '--jq', '.name')
+        if rc != 0: probs.append(f"Pages has the custom domain {cn.strip()} but 'site' has no CNAME file")
+    if M == S:
+        return ('red', '; '.join(probs)) if probs else ('green', "site = main: the website has the newest data")
+    rc, cmp_ = gh(f'repos/{REPO}/compare/{S}...{M}', '--jq',
+                  '{status, ahead_by, first: (.commits[0].commit.committer.date // ""), files: [.files[]?.filename]}')
+    try: c = json.loads(cmp_)
+    except Exception: c = {}  # noqa: BLE001
+    files = c.get('files') or []
+    relevant = [f for f in files if not f.startswith(SITE_SKIP)]
+    if c.get('status') == 'ahead' and files and not relevant:
+        return ('red', '; '.join(probs)) if probs else ('green', 'site trails main only by bot files (.github/.claude): nothing to publish')
+    first = c.get('first') or ''
+    lag = (NOW - _t(first)).total_seconds() / 60 if first else 9999
+    if lag <= SITE_LAG_MIN:
+        return ('red', '; '.join(probs)) if probs else ('green', f'site is under {SITE_LAG_MIN} min behind main: the copy bot will catch up')
+    words = f"site is {lag:.0f} min behind main ({c.get('ahead_by', '?')} commits, {len(relevant)} website files): "
+    if lag > SITE_FORCE_MIN and not os.environ.get('DRY'):   # same as the copy bot does: site = main's newest commit
+        rc, _ = gh('-X', 'PATCH', f'repos/{REPO}/git/refs/heads/site', '-f', f'sha={M}', '-F', 'force=true')
+        words += ('the copy bot did not catch up, so the watchdog moved site to main itself' if rc == 0
+                  else 'the watchdog could not move site either: look at kpc-pages-sync.yml')
+    else:
+        rc, _ = (0, '') if os.environ.get('DRY') else gh('-X', 'POST', f'repos/{REPO}/actions/workflows/kpc-pages-sync.yml/dispatches', '-f', 'ref=main')
+        words += 'started the copy bot (kpc-pages-sync) once' if rc == 0 else 'could NOT start the copy bot'
+    return 'red', '; '.join([words] + probs)
+
+
 def main():
+    try: sres, swords = site_check()
+    except Exception as e: sres, swords = 'amber', f'site check stopped: {type(e).__name__}: {str(e)[:150]}'  # noqa: BLE001
+    print(f"::{'notice' if sres == 'green' else 'error'} title=Website copy (site branch)::{swords}", flush=True)
+    if os.path.exists('.github/scripts/kpc_status.py') and not os.environ.get('DRY'):
+        subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', 'Website copy (site branch)', sres, swords[:300],
+                        'nobody (the watchdog restarts the copy bot itself)' if sres == 'green' else 'HQ: look at kpc-pages-sync.yml runs'], check=False)
     st = json.load(open(STATE)) if STATE.exists() else {}
     done = st.setdefault('restarted', {})
     rc, out = gh(f'repos/{REPO}/actions/workflows', '--paginate', '--jq', '.workflows[] | [.path, .state, .id] | @tsv')
@@ -146,5 +207,5 @@ def main():
 
 if __name__ == '__main__':
     try: main()
-    except Exception as e: print(f'::notice title=Watchdog::stopped ({type(e).__name__}: {e})')  # noqa: BLE001
+    except Exception as e: print(f'::error title=Watchdog::stopped early ({type(e).__name__}: {e}); skipped runs were NOT checked')  # noqa: BLE001  PR3: was a quiet ::notice
     sys.exit(0)
