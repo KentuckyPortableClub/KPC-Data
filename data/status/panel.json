@@ -1,5 +1,5 @@
 {
- "made": "2026-11-03 22:53 UTC",
+ "made": "2026-11-03 23:42 UTC",
  "snap": {
   "date": "2026-11-03",
   "outlines": {
@@ -1234,9 +1234,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
+   "made": "1 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648568487",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41734215852",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1290,9 +1290,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41712712228",
+   "made": "2026-11-03 22:51 UTC: 2 skipped run(s) started again: kpc-collector.yml (missed Nov 03 21:16 UTC); kpc-waiting-room.yml (missed Nov 03 20:42 UTC)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41734215852",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1378,9 +1378,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41712712228",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41734215852",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "campground info bot": {
