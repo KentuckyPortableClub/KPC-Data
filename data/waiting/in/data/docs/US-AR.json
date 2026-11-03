@@ -621,7 +621,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r08/ouachita/recreation",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ouachita",
@@ -741,6 +741,7 @@
    "notes": [
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -825,7 +826,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -3677,6 +3678,7 @@
    "notes": [
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -4040,7 +4042,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -5059,18 +5061,12 @@
     "kind": "pdf",
     "date": "2022-06-14",
     "date_how": "file stamp 2022 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.arkansas.com/sites/default/files/2025-12/9b93e87b731f447f46cb9c57f80583dd_bullshoalsparkinformationbrochure2022.pdf",
-    "posted": "2025-12",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the upload folder in the address",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31-v2.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Arkansas State Parks",
-    "date_given": 2022,
+    "how": "the page in a browser ('9b93e87b731f447f46cb9c57f80583dd_bullshoalsparkinformationbrochure2022.pdf')",
     "page": "https://www.arkansas.com/state-parks/explore/parks/bull-shoals-white-river-state-park",
-    "map_page": 1
+    "posted": "2025-12",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.recreation.gov/rules-reservation-policies",
@@ -5102,7 +5098,8 @@
      "via": "on file, checked by a person or the link harvester (swl.usace.army.mil)"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-7261": {
    "n": "Bayou Des Arc Wildlife Management Area",
@@ -8139,7 +8136,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -8860,11 +8857,11 @@
   "date unknown": 25,
   "no map": 191,
   "rules ok": 40,
-  "needs browser": 3,
+  "needs browser": 2,
   "handover hints": 0,
   "runs hints": 12,
   "host resting / robots": 0,
-  "map names the park": 89,
+  "map names the park": 88,
   "region overview only": 0
  }
 }

@@ -2155,6 +2155,7 @@
    "notes": [
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -2230,9 +2231,17 @@
    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/bear-creek",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/default-document-library/site-content/environment/recreation/pdf/bearcreekmap.pdf?sfvrsn=85e077a1_0",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Water Trail Guide')",
+    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/bear-creek",
+    "posted": "Apr 06, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "linked from the agency page (tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net)"
    },
    "rules": {
     "url": "",
@@ -2248,7 +2257,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13081": {
    "n": "Fort Toulouse Forever Wild Tract State Wildlife Area",
@@ -3367,7 +3377,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/alabama",
@@ -4357,7 +4367,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/alabama",
@@ -4389,7 +4399,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/alabama",
@@ -4452,7 +4462,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/alabama",
@@ -5141,14 +5151,14 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 155,
-  "map ok": 77,
-  "map found by the bot": 57,
+  "map ok": 78,
+  "map found by the bot": 58,
   "date on the map": 15,
-  "posted date only": 39,
+  "posted date only": 40,
   "date unknown": 23,
-  "no map": 78,
+  "no map": 77,
   "rules ok": 34,
-  "needs browser": 2,
+  "needs browser": 1,
   "handover hints": 0,
   "runs hints": 5,
   "host resting / robots": 0,

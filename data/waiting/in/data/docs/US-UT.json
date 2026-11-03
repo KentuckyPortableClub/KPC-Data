@@ -693,6 +693,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1217,9 +1218,18 @@
    "page": "https://www.fs.usda.gov/r04/ashley/recreation/little-hole-boat-launch-area",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r04/ashley/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r04/ashley/recreation/little-hole-boat-launch-area",
+    "posted": "January 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "",
@@ -1234,7 +1244,8 @@
     "2026-11-01: page https://www.flaminggorgecountry.com/Little-Hole-National-Scenic-Trail/ replaced (page fix: column F is a county tourism page (flaminggorgecountry.com), not an agency page)"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11168": {
    "n": "Little Hole State Wildlife Habitat Management Area",
@@ -1554,14 +1565,22 @@
    "page": "https://www.blm.gov/visit/furniture-draw-trail-head",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Maps')",
+    "page": "https://www.blm.gov/visit/furniture-draw-trail-head",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -1570,7 +1589,8 @@
     "browser: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.blm.gov"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11269": {
    "n": "Dandelion Flat BLM Recreation Management Area",
@@ -13001,7 +13021,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r04/ashley"
+    "page": "https://www.fs.usda.gov/r04/ashley",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/ashley",
@@ -13035,7 +13056,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r04/dixie"
+    "page": "https://www.fs.usda.gov/r04/dixie",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/dixie",
@@ -13119,7 +13141,7 @@
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
@@ -17255,21 +17277,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-03",
  "counts": {
   "parks": 692,
-  "map ok": 32,
-  "map found by the bot": 10,
-  "date on the map": 2,
-  "posted date only": 20,
-  "date unknown": 10,
-  "no map": 660,
-  "rules ok": 58,
-  "needs browser": 424,
+  "map ok": 89,
+  "map found by the bot": 67,
+  "date on the map": 23,
+  "posted date only": 55,
+  "date unknown": 11,
+  "no map": 603,
+  "rules ok": 59,
+  "needs browser": 422,
   "handover hints": 0,
   "runs hints": 13,
   "host resting / robots": 0,
-  "map names the park": 27,
+  "map names the park": 82,
   "region overview only": 0
  }
 }
