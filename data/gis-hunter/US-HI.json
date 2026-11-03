@@ -1,6 +1,6 @@
 {
  "area": "US-HI",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0119": {
@@ -304,7 +304,7 @@
     "A Hawaii State Parks (DLNR): hit",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"loop aiea\": 0 lead(s)"
+    "B ArcGIS Online search \"aiea loop\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -367,7 +367,7 @@
     "A Hawaii State Parks (DLNR): no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"telegraphy wireless station\": 0 lead(s)"
+    "B ArcGIS Online search \"telegraphy wireless marconi\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },

@@ -1,6 +1,6 @@
 {
  "area": "US-AZ",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0908": {
@@ -32,8 +32,9 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"monument canyon chelly\": 0 lead(s)"
+    "B ArcGIS Online search \"monument chelly canyon\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -66,8 +67,9 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mountain dutchman sunshine\": 0 lead(s)"
+    "B ArcGIS Online search \"sunshine dutchman mountain\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -110,6 +112,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"historical petroglyph painted\": 0 lead(s)"
    ],
@@ -144,6 +147,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"general crook\": 0 lead(s)"
    ],
@@ -178,6 +182,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"highline\": 0 lead(s)"
    ],
@@ -212,8 +217,9 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"virgin canyon\": 0 lead(s)"
+    "B ArcGIS Online search \"canyon virgin\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -246,6 +252,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"table mesa\": 0 lead(s)"
    ],
@@ -280,6 +287,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -289,6 +297,16 @@
    "area": "US-AZ",
    "why_not": "no-layer",
    "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0",
+     "agency": "BLM Natl NLCS National Monuments National Conservation Areas Polygons",
+     "record": 458,
+     "record_name": "Vermilion Cliffs",
+     "acres_approx": 292522,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
     {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
@@ -313,8 +331,8 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"escalante dominguez\": 0 lead(s)"
+    "A BLM Natl NLCS National Monuments Nationa: hit",
+    "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -347,6 +365,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"rockhound mountain special\": 0 lead(s)"
    ],
@@ -391,6 +410,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -424,6 +444,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"boulders staging ohv\": 0 lead(s)"
    ],
@@ -458,6 +479,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"canyon black\": 0 lead(s)"
    ],
@@ -492,6 +514,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"arizona scenic\": 0 lead(s)"
    ],
@@ -526,6 +549,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"bautista juan anza\": 0 lead(s)"
    ],
@@ -560,6 +584,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"campground stateline\": 0 lead(s)"
    ],
@@ -594,6 +619,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"honeymoon\": 0 lead(s)"
    ],
@@ -638,6 +664,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -681,6 +708,7 @@
     "A Arizona State Parks and Trails (park bou: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl NLCS National Monuments Nationa: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"

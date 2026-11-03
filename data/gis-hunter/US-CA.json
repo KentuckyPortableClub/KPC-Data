@@ -1,6 +1,6 @@
 {
  "area": "US-CA",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0198": {
@@ -47,6 +47,7 @@
     "A California Department of Fish and Wildli: hit",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"kesterson\": 0 lead(s)"
    ],
@@ -65,6 +66,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"historical riveter front\": 0 lead(s)"
    ],
@@ -98,6 +100,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic kings wild\": 0 lead(s)"
    ],
@@ -116,6 +119,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"monument chavez cesar\": 0 lead(s)"
    ],
@@ -159,6 +163,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -168,6 +173,16 @@
    "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1",
+     "agency": "BLM CA Recreation Polygons",
+     "record": 447,
+     "record_name": "Cow Mountain",
+     "acres_approx": 52202,
+     "tier": "LIKELY",
+     "why": "shared cow, mountain; extra: park special / record -"
+    },
     {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
@@ -191,10 +206,10 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mountain special cow\": 0 lead(s)"
+    "A BLM CA Recreation Polygons: hit",
+    "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11336": {
    "park": "Rainbow Basin Natural Area",
@@ -210,6 +225,16 @@
      "acres_approx": 4090,
      "tier": "LIKELY",
      "why": "shared basin, rainbow; extra: park - / record canyon, owl"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1",
+     "agency": "BLM CA Recreation Polygons",
+     "record": 431,
+     "record_name": "Superior/Rainbow",
+     "acres_approx": 158190,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 158,190 ac far bigger than this kind of place"
     },
     {
      "verdict": "inside-other",
@@ -234,6 +259,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -250,6 +276,16 @@
      "record": 568,
      "record_name": "Red Hills",
      "acres_approx": 9889,
+     "tier": "SURE",
+     "why": "same proper name"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1",
+     "agency": "BLM CA Recreation Polygons",
+     "record": 462,
+     "record_name": "Red Hills",
+     "acres_approx": 9894,
      "tier": "SURE",
      "why": "same proper name"
     },
@@ -276,6 +312,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -308,6 +345,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"griswold special hills\": 0 lead(s)"
    ],
@@ -351,8 +389,9 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"special tumey hills\": 0 lead(s)"
+    "B ArcGIS Online search \"special hills tumey\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -394,6 +433,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -411,8 +451,9 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"butte black\": 0 lead(s)"
+    "B ArcGIS Online search \"black butte\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -430,6 +471,26 @@
      "acres_approx": 362108,
      "tier": "UNLIKELY",
      "why": "part of the name shared, record 362,108 ac far bigger than this kind of place"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1",
+     "agency": "BLM CA Recreation Polygons",
+     "record": 423,
+     "record_name": "Stoddard/Johnson",
+     "acres_approx": 362107,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 362,107 ac far bigger than this kind of place"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1",
+     "agency": "BLM CA Recreation Polygons",
+     "record": 466,
+     "record_name": "Stoddard/Johnson",
+     "acres_approx": 362107,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 362,107 ac far bigger than this kind of place"
     },
     {
      "verdict": "inside-other",
@@ -454,6 +515,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -496,6 +558,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -538,6 +601,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -570,6 +634,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mountain laguna\": 0 lead(s)"
    ],
@@ -588,6 +653,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"clear\": 0 lead(s)"
    ],
@@ -655,6 +721,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -697,6 +764,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -714,6 +782,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"cowell ranch beach\": 0 lead(s)"
    ],
@@ -747,6 +816,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"alcatraz island\": 0 lead(s)"
    ],
@@ -780,6 +850,7 @@
     "A California Department of Fish and Wildli: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM CA Recreation Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"presidio\": 0 lead(s)"
    ],

@@ -1,6 +1,6 @@
 {
  "area": "US-IL",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-1021": {
@@ -23,6 +23,7 @@
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -44,6 +45,16 @@
     },
     {
      "verdict": "name match",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 271,
+     "record_name": "Kishwaukee River",
+     "acres_approx": 585,
+     "tier": "SURE",
+     "why": "same proper name"
+    },
+    {
+     "verdict": "name match",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "agency": "USGS PAD-US",
      "record": 70933,
@@ -61,9 +72,10 @@
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: LIKELY (part of the name shared)"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-10661": {
    "park": "Oakwood Bottoms USFS Recreation Area",
@@ -99,6 +111,7 @@
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -119,6 +132,16 @@
      "why": "no shared proper word"
     },
     {
+     "verdict": "name match",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 57,
+     "record_name": "Ray Norbut",
+     "acres_approx": 1787,
+     "tier": "LIKELY",
+     "why": "shared norbut, ray; extra: park east, hannibal / record -"
+    },
+    {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "agency": "USGS PAD-US",
@@ -137,9 +160,10 @@
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-12640": {
    "park": "Rauchfuss Hill State Recreation Area",
@@ -155,12 +179,23 @@
      "acres_approx": 517,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 332,
+     "record_name": "Golconda Marina",
+     "acres_approx": 528,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -181,6 +216,16 @@
      "why": "no shared proper word"
     },
     {
+     "verdict": "name match",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 354,
+     "record_name": "North Point Marina",
+     "acres_approx": 167,
+     "tier": "SURE",
+     "why": "same proper name"
+    },
+    {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "agency": "USGS PAD-US",
@@ -199,9 +244,10 @@
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-4118": {
    "park": "Copperhead Hollow State Wildlife Area",
@@ -217,15 +263,26 @@
      "acres_approx": 9843,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 9,
+     "record_name": "Copperhead Hollow",
+     "acres_approx": 1407,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-4153": {
    "park": "Kaskaskia unit of Shelbyville State Fish and Wildlife Area",
@@ -241,12 +298,23 @@
      "acres_approx": 6270,
      "tier": "LIKELY",
      "why": "shared shelbyville; extra: park kaskaskia / record -"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 149,
+     "record_name": "Shelbyville",
+     "acres_approx": 6229,
+     "tier": "LIKELY",
+     "why": "shared shelbyville; extra: park kaskaskia / record -"
     }
    ],
    "leads": [],
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -265,12 +333,23 @@
      "acres_approx": 6270,
      "tier": "LIKELY",
      "why": "shared shelbyville; extra: park okaw, west / record -"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+     "agency": "IDNR Properties",
+     "record": 149,
+     "record_name": "Shelbyville",
+     "acres_approx": 6229,
+     "tier": "LIKELY",
+     "why": "shared shelbyville; extra: park okaw, west / record -"
     }
    ],
    "leads": [],
    "tried": [
     "A Illinois Department of Natural Resources: hit",
     "A Illinois Department of Natural Resources: no polygon at the pin",
+    "A IDNR Properties: hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"

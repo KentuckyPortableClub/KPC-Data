@@ -1,6 +1,6 @@
 {
  "area": "US-MO",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10575": {
@@ -15,6 +15,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"walnut woods\": 0 lead(s)"
    ],
@@ -32,6 +33,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"rush\": 0 lead(s)"
    ],
@@ -49,6 +51,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"historical springs weldon\": 0 lead(s)"
    ],
@@ -81,6 +84,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"museum world war\": 0 lead(s)"
    ],
@@ -95,6 +99,16 @@
      "verdict": "name match",
      "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
      "agency": "Missouri Department of Conservation (gisblue.mdc.mo.gov)",
+     "record": 233,
+     "record_name": "Davis (The Lester R) Mem Forest",
+     "acres_approx": 79,
+     "tier": "UNLIKELY",
+     "why": "one shared word (davi) only"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Boundaries/MDC_Administrative_Boundaries/FeatureServer/0",
+     "agency": "MDC Lands",
      "record": 233,
      "record_name": "Davis (The Lester R) Mem Forest",
      "acres_approx": 79,
@@ -123,6 +137,7 @@
     "A Missouri Department of Conservation (gis: hit",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -150,6 +165,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -181,6 +197,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"heritage cultural watkins\": 0 lead(s)"
    ],
@@ -205,6 +222,7 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"ozark\": 1 lead(s)"
    ],
@@ -222,8 +240,9 @@
     "A Missouri Department of Conservation (gis: no polygon at the pin",
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A MDC Lands: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"island rock katy\": 0 lead(s)"
+    "B ArcGIS Online search \"island spur katy\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   }

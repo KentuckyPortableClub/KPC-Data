@@ -1,6 +1,6 @@
 {
  "area": "US-GA",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-12772": {
@@ -13,6 +13,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"fairgrounds georgia\": 0 lead(s)"
    ],
@@ -81,6 +83,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): hit",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -130,6 +134,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): hit",
     "A Georgia DNR Wildlife Resources Division : hit",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -159,6 +165,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -188,6 +196,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"appalachian scenic\": 0 lead(s)"
    ],
@@ -252,6 +262,8 @@
     "A Georgia DNR Wildlife Resources Division: hit",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : hit",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -261,6 +273,16 @@
    "area": "US-GA",
    "why_not": "no-layer",
    "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0",
+     "agency": "BdyDesg_LSRS_SpecialInterestManagementArea",
+     "record": 1017,
+     "record_name": "HITCHITI",
+     "acres_approx": 4606,
+     "tier": "SURE",
+     "why": "same proper name"
+    },
     {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
@@ -276,37 +298,43 @@
      "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Hitchiti EF aspects",
-     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_aspects_2/MapServer",
-     "owner": "USFS_SouthernResearchStation",
-     "type": "Map Service"
-    }
-   ],
-   "tried": [
-    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
-    "A Georgia State Parks (DNR): no polygon at the pin",
-    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hitchiti\": 1 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "US-7139": {
-   "park": "Arabia Mountain National Heritage Area",
-   "area": "US-GA",
-   "why_not": "no-layer",
-   "hits": [],
    "leads": [],
    "tried": [
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
-    "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"heritage mountain arabia\": 0 lead(s)"
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: hit",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
+    "A USGS PAD-US: hit"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
+  },
+  "US-7139": {
+   "park": "Arabia Mountain National Heritage Area",
+   "area": "US-GA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0",
+     "agency": "National_Heritage_Areas_Updated2023",
+     "record": 56,
+     "record_name": "Arabia Mountain National Heritage Area",
+     "acres_approx": 40032,
+     "tier": "SURE",
+     "why": "same proper name (heritage)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
+    "A Georgia State Parks (DNR): no polygon at the pin",
+    "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-7140": {
    "park": "Charlie Elliot Wildlife Management Area",
@@ -353,6 +381,8 @@
     "A Georgia DNR Wildlife Resources Division: hit",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : hit",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -367,6 +397,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"dahlonega museum gold\": 0 lead(s)"
    ],
@@ -382,6 +414,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"nottely dam\": 0 lead(s)"
    ],
@@ -397,6 +431,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"ridge blue dam\": 0 lead(s)"
    ],
@@ -427,6 +463,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -490,6 +528,8 @@
     "A Georgia DNR Wildlife Resources Division: hit",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : hit",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"desoto falls\": 0 lead(s)"
    ],
@@ -505,8 +545,10 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"campground ferry dames\": 0 lead(s)"
+    "B ArcGIS Online search \"campground dames ferry\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -545,6 +587,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): hit",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"suwannee lodge eco\": 0 lead(s)"
    ],
@@ -560,6 +604,8 @@
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
+    "A BdyDesg_LSRS_SpecialInterestManagementAr: no polygon at the pin",
+    "A National_Heritage_Areas_Updated2023: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"heritage augusta canal\": 0 lead(s)"
    ],

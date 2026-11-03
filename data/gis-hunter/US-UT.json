@@ -1,6 +1,6 @@
 {
  "area": "US-UT",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10061": {
@@ -16,6 +16,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"canyon pine\": 0 lead(s)"
    ],
@@ -59,6 +61,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mountain special cedar\": 0 lead(s)"
    ],
@@ -92,8 +96,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"parkway scenic canyon\": 0 lead(s)"
+    "B ArcGIS Online search \"parkway canyon scenic\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -125,8 +131,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hatchery research aquatic\": 0 lead(s)"
+    "B ArcGIS Online search \"research hatchery aquatic\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -158,6 +166,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"cathedral special backway\": 0 lead(s)"
    ],
@@ -191,6 +201,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"western great\": 0 lead(s)"
    ],
@@ -241,6 +253,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"hill\": 1 lead(s)"
    ],
@@ -259,6 +273,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"hollow birch\": 0 lead(s)"
    ],
@@ -292,6 +308,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"buckskin house white\": 0 lead(s)"
    ],
@@ -335,6 +353,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic smith wild\": 0 lead(s)"
    ],
@@ -368,8 +388,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"middle scenic taylor\": 0 lead(s)"
+    "B ArcGIS Online search \"taylor scenic middle\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -411,6 +433,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic wild oak\": 0 lead(s)"
    ],
@@ -454,6 +478,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic kolob wild\": 0 lead(s)"
    ],
@@ -497,6 +523,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"backcountry byway bull\": 0 lead(s)"
    ],
@@ -564,6 +592,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"portal\": 0 lead(s)"
    ],
@@ -597,8 +627,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"desingated mountains routes\": 0 lead(s)"
+    "B ArcGIS Online search \"desingated mountains grouse\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -630,8 +662,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"camping hideout canyon\": 0 lead(s)"
+    "B ArcGIS Online search \"hideout camping canyon\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -673,6 +707,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -705,6 +741,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"staging peek boo\": 0 lead(s)"
    ],
@@ -738,6 +776,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"north wash\": 0 lead(s)"
    ],
@@ -771,8 +811,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"viewing merriam virgin\": 0 lead(s)"
+    "B ArcGIS Online search \"merriam viewing turkey\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -814,6 +856,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"cottonwood wash\": 0 lead(s)"
    ],
@@ -847,6 +891,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"gooseberry mesa\": 0 lead(s)"
    ],
@@ -880,6 +926,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"reservoir special otter\": 0 lead(s)"
    ],
@@ -913,8 +961,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hurricane system cliffs\": 0 lead(s)"
+    "B ArcGIS Online search \"hurricane cliffs system\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -946,8 +996,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"wire mesa\": 0 lead(s)"
+    "B ArcGIS Online search \"mesa wire\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -964,6 +1016,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"designated mountains routes\": 0 lead(s)"
    ],
@@ -997,6 +1051,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"playground desigated routes\": 0 lead(s)"
    ],
@@ -1040,6 +1096,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"caineville south mesa\": 0 lead(s)"
    ],
@@ -1073,6 +1131,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"rockhounding special crystal\": 0 lead(s)"
    ],
@@ -1106,6 +1166,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"monkey flying\": 0 lead(s)"
    ],
@@ -1139,6 +1201,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -1156,6 +1220,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"hatchery midway utah\": 0 lead(s)"
    ],
@@ -1189,6 +1255,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"hatchery wahweap water\": 0 lead(s)"
    ],
@@ -1232,6 +1300,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"klondike bluffs\": 0 lead(s)"
    ],
@@ -1295,6 +1365,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"trailhead splendor hidden\": 0 lead(s)"
    ],
@@ -1328,8 +1400,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"interpretive canyon sego\": 0 lead(s)"
+    "B ArcGIS Online search \"interpretive canyon rock\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1361,6 +1435,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"battleground pinhook\": 0 lead(s)"
    ],
@@ -1404,8 +1480,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"special baptist draw\": 0 lead(s)"
+    "B ArcGIS Online search \"baptist special draw\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1471,8 +1549,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"desolation canyons special\": 0 lead(s)"
+    "B ArcGIS Online search \"desolation special canyons\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1514,6 +1594,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1556,6 +1638,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"preservation antelope springs\": 0 lead(s)"
    ],
@@ -1589,8 +1673,10 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"preservation express station\": 0 lead(s)"
+    "B ArcGIS Online search \"preservation station express\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1622,6 +1708,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1654,6 +1742,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1686,6 +1776,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1718,6 +1810,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1750,6 +1844,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1802,6 +1898,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1834,6 +1932,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1866,6 +1966,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1922,6 +2024,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -1964,6 +2068,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -1996,6 +2102,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2028,6 +2136,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2074,6 +2184,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2120,6 +2232,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2162,6 +2276,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2204,6 +2320,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2246,6 +2364,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2288,6 +2408,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2330,6 +2452,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2362,6 +2486,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2404,6 +2530,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2436,6 +2564,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2468,6 +2598,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2520,6 +2652,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2562,6 +2696,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2614,6 +2750,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2656,6 +2794,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2698,6 +2838,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2730,6 +2872,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2762,6 +2906,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2804,6 +2950,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2846,6 +2994,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2888,6 +3038,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2940,6 +3092,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -2982,6 +3136,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3024,6 +3180,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3066,6 +3224,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3108,6 +3268,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3164,6 +3326,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3216,6 +3380,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3258,6 +3424,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3290,6 +3458,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3332,6 +3502,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3374,6 +3546,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3416,6 +3590,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3458,6 +3634,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3490,6 +3668,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3532,6 +3712,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3564,6 +3746,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3581,6 +3765,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -3613,6 +3799,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3655,6 +3843,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3697,6 +3887,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3729,6 +3921,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3771,6 +3965,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3803,6 +3999,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3835,6 +4033,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3852,6 +4052,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -3884,6 +4086,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3916,6 +4120,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3948,6 +4154,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -3980,6 +4188,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4026,6 +4236,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4058,6 +4270,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4104,6 +4318,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4136,6 +4352,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4168,6 +4386,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4200,6 +4420,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4242,6 +4464,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4274,6 +4498,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4306,6 +4532,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4338,6 +4566,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4355,6 +4585,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -4387,6 +4619,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4404,6 +4638,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -4421,6 +4657,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -4463,6 +4701,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -4515,6 +4755,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4557,6 +4799,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4589,6 +4833,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4621,6 +4867,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4638,6 +4886,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -4670,6 +4920,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4702,6 +4954,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4734,6 +4988,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4766,6 +5022,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4798,6 +5056,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4830,6 +5090,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4872,6 +5134,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4904,6 +5168,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4936,6 +5202,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -4968,6 +5236,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5000,6 +5270,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5017,6 +5289,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -5059,6 +5333,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5121,6 +5397,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -5153,6 +5431,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5185,6 +5465,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5202,6 +5484,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -5248,6 +5532,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5290,6 +5576,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5332,6 +5620,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5364,6 +5654,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5406,6 +5698,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5448,6 +5742,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5490,6 +5786,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5532,6 +5830,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5574,6 +5874,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5616,6 +5918,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5658,6 +5962,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5690,6 +5996,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5722,6 +6030,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5764,6 +6074,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5806,6 +6118,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5862,6 +6176,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5914,6 +6230,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5956,6 +6274,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -5998,6 +6318,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6030,6 +6352,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6072,6 +6396,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6104,6 +6430,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6156,6 +6484,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6198,6 +6528,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6250,6 +6582,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6282,6 +6616,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6324,6 +6660,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6376,6 +6714,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6418,6 +6758,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6460,6 +6802,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6502,6 +6846,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6544,6 +6890,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6576,6 +6924,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6618,6 +6968,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6660,6 +7012,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6702,6 +7056,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6758,6 +7114,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6814,6 +7172,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6856,6 +7216,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6898,6 +7260,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6930,6 +7294,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -6962,6 +7328,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7018,6 +7386,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7060,6 +7430,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7092,6 +7464,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7134,6 +7508,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7176,6 +7552,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7208,6 +7586,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7240,6 +7620,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7272,6 +7654,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7289,6 +7673,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -7306,6 +7692,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -7348,6 +7736,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7400,6 +7790,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7442,6 +7834,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7484,6 +7878,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7516,6 +7912,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7558,6 +7956,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7590,6 +7990,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7652,6 +8054,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7714,6 +8118,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7776,6 +8182,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7828,6 +8236,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7860,6 +8270,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7922,6 +8334,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -7974,6 +8388,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8036,6 +8452,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8078,6 +8496,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8130,6 +8550,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8192,6 +8614,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8258,6 +8682,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8300,6 +8726,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8356,6 +8784,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8422,6 +8852,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8484,6 +8916,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8516,6 +8950,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8548,6 +8984,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8604,6 +9042,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8656,6 +9096,8 @@
     "A BLM Utah State Office (congressionally d: hit",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8688,6 +9130,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8730,6 +9174,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8772,6 +9218,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8789,6 +9237,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -8831,6 +9281,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8873,6 +9325,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8905,6 +9359,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8937,6 +9393,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -8954,6 +9412,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -8986,6 +9446,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9018,6 +9480,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9050,6 +9514,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9082,6 +9548,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9114,6 +9582,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9146,6 +9616,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9188,6 +9660,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -9220,6 +9694,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9252,6 +9728,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9284,6 +9762,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9316,6 +9796,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9348,6 +9830,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9380,6 +9864,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9422,6 +9908,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9454,6 +9942,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9486,6 +9976,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9518,6 +10010,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9560,6 +10054,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9592,6 +10088,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9634,6 +10132,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9666,6 +10166,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9708,6 +10210,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9750,6 +10254,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -9767,6 +10273,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -9809,6 +10317,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9826,6 +10336,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -9868,6 +10380,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9900,6 +10414,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9942,6 +10458,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -9959,6 +10477,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -9991,6 +10511,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10023,6 +10545,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10040,6 +10564,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -10072,6 +10598,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10104,6 +10632,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10146,6 +10676,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -10178,6 +10710,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10224,6 +10758,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10270,6 +10806,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10302,6 +10840,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10334,6 +10874,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10366,6 +10908,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10398,6 +10942,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10450,6 +10996,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10502,6 +11050,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10534,6 +11084,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10586,6 +11138,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10638,6 +11192,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10655,6 +11211,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -10687,6 +11245,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10719,6 +11279,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10751,6 +11313,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10783,6 +11347,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10815,6 +11381,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10847,6 +11415,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10879,6 +11449,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10896,6 +11468,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -10942,6 +11516,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -10974,6 +11550,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11006,6 +11584,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11052,6 +11632,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11084,6 +11666,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11116,6 +11700,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11148,6 +11734,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11180,6 +11768,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11222,6 +11812,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11239,6 +11831,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -11271,6 +11865,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11303,6 +11899,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11320,6 +11918,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "no layer found"
@@ -11348,6 +11948,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11390,6 +11992,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11442,6 +12046,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11474,6 +12080,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11526,6 +12134,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11558,6 +12168,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11600,6 +12212,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11652,6 +12266,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -11684,6 +12300,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11716,6 +12334,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11748,6 +12368,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11790,6 +12412,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11822,6 +12446,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11864,6 +12490,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11896,6 +12524,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11928,6 +12558,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -11970,6 +12602,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -12002,6 +12636,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -12034,6 +12670,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -12066,6 +12704,8 @@
     "A BLM Utah State Office (congressionally d: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A NLCS Wild and Scenic Rivers: no polygon at the pin",
+    "A state_park_boundaries_dissolved: no answer (404)",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"

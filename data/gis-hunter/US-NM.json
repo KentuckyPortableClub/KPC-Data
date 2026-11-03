@@ -1,6 +1,6 @@
 {
  "area": "US-NM",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-11783": {
@@ -29,6 +29,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"craig fort\": 0 lead(s)"
    ],
@@ -60,6 +61,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"preservation townsite valley\": 0 lead(s)"
    ],
@@ -76,6 +78,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"luceros los\": 0 lead(s)"
    ],
@@ -117,6 +120,16 @@
      "why": "no shared proper word"
     },
     {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "agency": "BLM Natl Recreation Site Polygons",
+     "record": 14029,
+     "record_name": "Simón Canyon (Recreation Area)",
+     "acres_approx": 3888,
+     "tier": "LIKELY",
+     "why": "shared canyon, simon; extra: park concern, critical, special / record -"
+    },
+    {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "agency": "USGS PAD-US",
@@ -137,6 +150,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Natl Recreation Site Polygons: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -167,6 +181,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"motorized system cueva\": 0 lead(s)"
    ],
@@ -183,6 +198,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"redondo bosque sumner\": 0 lead(s)"
    ],
@@ -214,6 +230,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -229,6 +246,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"lorenzo canyon san\": 0 lead(s)"
    ],
@@ -245,6 +263,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"lincoln\": 0 lead(s)"
    ],
@@ -276,8 +295,9 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mountain tortugas\": 0 lead(s)"
+    "B ArcGIS Online search \"tortugas mountain\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -317,6 +337,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"ranch cave\": 0 lead(s)"
    ],
@@ -333,6 +354,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"casamero pueblo mexico\": 0 lead(s)"
    ],
@@ -364,6 +386,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"kilbourne volcanic crater\": 0 lead(s)"
    ],
@@ -380,6 +403,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"canyon tract dow\": 0 lead(s)"
    ],
@@ -396,6 +420,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"lincoln tract\": 0 lead(s)"
    ],
@@ -427,6 +452,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"veterans vietnam angel\": 0 lead(s)"
    ],
@@ -444,6 +470,16 @@
      "record": 14083,
      "record_name": "Roswell Field Office ERMA",
      "acres_approx": 1436168,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "agency": "BLM Natl Recreation Site Polygons",
+     "record": 14083,
+     "record_name": "Roswell Field Office ERMA",
+     "acres_approx": 1436141,
      "tier": "UNLIKELY",
      "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
@@ -468,8 +504,8 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mescalero sands\": 0 lead(s)"
+    "A BLM Natl Recreation Site Polygons: hit",
+    "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -509,6 +545,7 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Natl Recreation Site Polygons: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: SURE (same proper name)"
@@ -530,39 +567,8 @@
     },
     {
      "verdict": "inside-other",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "agency": "USGS PAD-US",
-     "record": 1997,
-     "record_name": "Rio Puerco Field Office",
-     "acres_approx": 987956,
-     "Mang_Name": "BLM",
-     "Des_Tp": "PUB",
-     "Own_Type": "FED",
-     "GIS_Acres": 992719,
-     "tier": "UNLIKELY",
-     "why": "container word in the record name (zone / district / county / SSSI ...)"
-    }
-   ],
-   "leads": [],
-   "tried": [
-    "A New Mexico Department of Game & Fish: no polygon at the pin",
-    "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
-    "A BLM recreation SITE polygons (national, : hit",
-    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"perea\": 0 lead(s)"
-   ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
-  },
-  "US-8618": {
-   "park": "White Ridge National Recreation Trail",
-   "area": "US-NM",
-   "why_not": "no-layer",
-   "hits": [
-    {
-     "verdict": "name match",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "agency": "BLM Natl Recreation Site Polygons",
      "record": 14078,
      "record_name": "White Ridge Bike Trails",
      "acres_approx": 2864,
@@ -590,6 +596,59 @@
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"perea\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-8618": {
+   "park": "White Ridge National Recreation Trail",
+   "area": "US-NM",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 14078,
+     "record_name": "White Ridge Bike Trails",
+     "acres_approx": 2864,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "agency": "BLM Natl Recreation Site Polygons",
+     "record": 14078,
+     "record_name": "White Ridge Bike Trails",
+     "acres_approx": 2864,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1997,
+     "record_name": "Rio Puerco Field Office",
+     "acres_approx": 987956,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 992719,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New Mexico Department of Game & Fish: no polygon at the pin",
+    "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Natl Recreation Site Polygons: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"

@@ -1,6 +1,6 @@
 {
  "area": "US-MI",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-12786": {
@@ -27,6 +27,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic sable wild\": 0 lead(s)"
    ],
@@ -41,6 +42,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"scenic black wild\": 0 lead(s)"
    ],
@@ -70,8 +72,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"scenic carp wild\": 0 lead(s)"
+    "B ArcGIS Online search \"scenic wild carp\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -99,8 +102,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"taquamenon scenic branch\": 0 lead(s)"
+    "B ArcGIS Online search \"taquamenon branch scenic\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -128,6 +132,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic paint wild\": 0 lead(s)"
    ],
@@ -157,6 +162,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic pine wild\": 0 lead(s)"
    ],
@@ -186,6 +192,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"norwich\": 0 lead(s)"
    ],
@@ -222,6 +229,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"black\": 1 lead(s)"
    ],
@@ -258,6 +266,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"michigan\": 1 lead(s)"
    ],
@@ -287,6 +296,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -311,14 +321,22 @@
      "why": "container: one record under 3 parks"
     }
    ],
-   "leads": [],
+   "leads": [
+    {
+     "title": "Grand Batture Island Shorelines Feature Layer",
+     "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/GrandBatture_Shorelines/FeatureServer",
+     "owner": "bnwilliams@usgs.gov_USGS",
+     "type": "Feature Service"
+    }
+   ],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"island grand noc\": 0 lead(s)"
+    "B ArcGIS Online search \"island grand bay\": 1 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "lead: new layer queued for intake"
   },
   "US-13171": {
    "park": "Betsie Valley State Trail",
@@ -329,8 +347,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"valley betsie\": 0 lead(s)"
+    "B ArcGIS Online search \"betsie valley\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -343,6 +362,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"central north\": 0 lead(s)"
    ],
@@ -357,6 +377,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"eastern north\": 0 lead(s)"
    ],
@@ -371,6 +392,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"western north\": 0 lead(s)"
    ],
@@ -385,6 +407,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"marquette pere\": 0 lead(s)"
    ],
@@ -399,6 +422,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"belle iron\": 0 lead(s)"
    ],
@@ -413,6 +437,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"flint\": 0 lead(s)"
    ],
@@ -427,8 +452,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"veterans douglass houghton\": 0 lead(s)"
+    "B ArcGIS Online search \"douglass houghton veterans\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -441,6 +467,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"sable\": 0 lead(s)"
    ],
@@ -480,6 +507,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: hit",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"country copper\": 0 lead(s)"
    ],
@@ -494,6 +522,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"escanaba\": 0 lead(s)"
    ],
@@ -530,6 +559,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"superior\": 1 lead(s)"
    ],
@@ -544,6 +574,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"mackinaw\": 0 lead(s)"
    ],
@@ -573,6 +604,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"marquette pere\": 0 lead(s)"
    ],
@@ -602,6 +634,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -654,6 +687,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: hit",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -667,6 +701,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"waterfowl malan\": 0 lead(s)"
    ],
@@ -696,6 +731,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"manitou island group\": 0 lead(s)"
    ],
@@ -710,6 +746,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"schoonover waterfowl\": 0 lead(s)"
    ],
@@ -741,6 +778,16 @@
      "why": "shared marsh, tobico; extra: park - / record bay"
     },
     {
+     "verdict": "name mismatch",
+     "layer": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/5",
+     "agency": "Michigan State Park Boundaries",
+     "record": 60,
+     "record_name": "Bay City State Park",
+     "acres_approx": 2305,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "agency": "USGS PAD-US",
@@ -759,6 +806,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: hit",
     "A Michigan Department of Natural Resources: hit",
+    "A Michigan State Park Boundaries: hit",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -772,6 +820,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"harbor cedar\": 0 lead(s)"
    ],
@@ -786,8 +835,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"copper harbor\": 0 lead(s)"
+    "B ArcGIS Online search \"harbor copper\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -800,8 +850,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"harbor detour\": 0 lead(s)"
+    "B ArcGIS Online search \"detour harbor\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -814,6 +865,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"harbor eagle\": 0 lead(s)"
    ],
@@ -828,6 +880,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"harbor tawas east\": 0 lead(s)"
    ],
@@ -842,6 +895,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"hammond harbor bay\": 0 lead(s)"
    ],
@@ -856,6 +910,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"labelle harbor lac\": 0 lead(s)"
    ],
@@ -870,6 +925,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"lexington harbor\": 0 lead(s)"
    ],
@@ -884,6 +940,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"little harbor\": 0 lead(s)"
    ],
@@ -898,8 +955,9 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"austin harbor port\": 0 lead(s)"
+    "B ArcGIS Online search \"harbor austin port\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -912,6 +970,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"presque harbor isle\": 0 lead(s)"
    ],
@@ -926,6 +985,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"straits harbor\": 0 lead(s)"
    ],
@@ -940,6 +1000,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"whitefish harbor point\": 0 lead(s)"
    ],
@@ -979,6 +1040,7 @@
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: hit",
+    "A Michigan State Park Boundaries: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"

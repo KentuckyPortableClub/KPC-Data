@@ -1,37 +1,36 @@
 {
  "area": "US-MN",
- "run": "2026-11-02",
+ "run": "2026-11-03",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10720": {
    "park": "Forest Lake AMA Aquatic Reserve",
    "area": "US-MN",
    "why_not": "name-mismatch",
-   "hits": [],
-   "leads": [
+   "hits": [
     {
-     "title": "State Aquatic Management Area (AMA) Aquisitions",
-     "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer",
-     "owner": "commons_etl_user",
-     "type": "Feature Service"
-    },
-    {
-     "title": "State Aquatic Management Area (AMA) Aquisitions",
-     "url": "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer",
-     "owner": "commons_etl_user",
-     "type": "Feature Service"
+     "verdict": "name match",
+     "layer": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+     "agency": "DNR Management Units",
+     "record": 4953,
+     "record_name": "Forest Lake AMA (Washington)",
+     "acres_approx": 84,
+     "tier": "LIKELY",
+     "why": "shared ama, lake; extra: park aquatic / record -"
     }
    ],
+   "leads": [],
    "tried": [
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
-    "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"aquatic ama\": 2 lead(s)"
+    "A DNR Management Units: hit",
+    "A FWSBoundaries: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11014": {
    "park": "David Dill/Taconite and Taconite State Trails State Trail",
@@ -56,6 +55,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"taconite trails david\": 0 lead(s)"
    ],
@@ -73,8 +74,10 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"ramstad shore north\": 0 lead(s)"
+    "B ArcGIS Online search \"ramstad north shore\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -90,6 +93,16 @@
      "record": 33,
      "record_name": "Chengwatana",
      "acres_approx": 28984,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+     "agency": "DNR Management Units",
+     "record": 4092,
+     "record_name": "Chengwatana",
+     "acres_approx": 16995,
      "tier": "UNLIKELY",
      "why": "a line park (trail / scenic river) on a polygon record"
     },
@@ -115,6 +128,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: hit",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"matthew lourey\": 0 lead(s)"
    ],
@@ -147,6 +162,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"taconite\": 0 lead(s)"
    ],
@@ -193,6 +210,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"migizi\": 0 lead(s)"
    ],
@@ -221,6 +240,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): hit",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -237,6 +258,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"points twin\": 0 lead(s)"
    ],
@@ -254,6 +277,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"harbors two\": 0 lead(s)"
    ],
@@ -271,6 +296,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"marine knife\": 0 lead(s)"
    ],
@@ -288,6 +315,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"mcquade marine\": 0 lead(s)"
    ],
@@ -334,6 +363,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"country scenic north\": 0 lead(s)"
    ],
@@ -351,6 +382,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"arrowhead david dill\": 0 lead(s)"
    ],
@@ -379,6 +412,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): hit",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"gitchi gami\": 0 lead(s)"
    ],
@@ -396,6 +431,16 @@
      "record": 5,
      "record_name": "Lake Bemidji",
      "acres_approx": 1732,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+     "agency": "DNR Management Units",
+     "record": 4113,
+     "record_name": "Lake Bemidji",
+     "acres_approx": 1682,
      "tier": "UNLIKELY",
      "why": "a line park (trail / scenic river) on a polygon record"
     },
@@ -421,6 +466,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): hit",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: hit",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"bunyan paul\": 0 lead(s)"
    ],
@@ -438,8 +485,10 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"preston harmony\": 0 lead(s)"
+    "B ArcGIS Online search \"harmony preston\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -466,6 +515,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): hit",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"blazing star\": 0 lead(s)"
    ],
@@ -483,8 +534,10 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"casey jones\": 0 lead(s)"
+    "B ArcGIS Online search \"jones casey\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -507,6 +560,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"douglas\": 1 lead(s)"
    ],
@@ -536,6 +591,16 @@
      "acres_approx": 60,
      "tier": "UNLIKELY",
      "why": "a line park (trail / scenic river) on a polygon record"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+     "agency": "DNR Management Units",
+     "record": 4157,
+     "record_name": "Minnesota Valley",
+     "acres_approx": 4336,
+     "tier": "UNLIKELY",
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],
@@ -545,6 +610,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): hit",
     "A Minnesota DNR (state land admin: parks a: hit",
+    "A DNR Management Units: hit",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -561,6 +628,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"overview gateway\": 0 lead(s)"
    ],
@@ -578,6 +647,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"browns\": 0 lead(s)"
    ],
@@ -595,6 +666,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"central lakes\": 0 lead(s)"
    ],
@@ -612,6 +685,8 @@
     "A Minnesota DNR: no polygon at the pin",
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A DNR Management Units: no polygon at the pin",
+    "A FWSBoundaries: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"williard munger\": 0 lead(s)"
    ],
