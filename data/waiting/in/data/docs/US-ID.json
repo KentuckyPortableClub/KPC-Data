@@ -255,6 +255,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -2888,7 +2889,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r01/idahopanhandle/safety-ethics",
@@ -8216,7 +8217,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater",
@@ -9274,7 +9275,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater",
@@ -9290,21 +9291,21 @@
    "browser_checked": "2026-10-31"
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-03",
  "counts": {
   "parks": 362,
-  "map ok": 30,
-  "map found by the bot": 20,
-  "date on the map": 0,
-  "posted date only": 22,
-  "date unknown": 8,
-  "no map": 331,
+  "map ok": 62,
+  "map found by the bot": 52,
+  "date on the map": 15,
+  "posted date only": 33,
+  "date unknown": 14,
+  "no map": 299,
   "rules ok": 45,
   "needs browser": 1,
   "handover hints": 0,
   "runs hints": 3,
   "host resting / robots": 1,
-  "map names the park": 14,
+  "map names the park": 46,
   "region overview only": 0
  }
 }

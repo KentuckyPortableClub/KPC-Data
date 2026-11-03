@@ -3763,17 +3763,9 @@
    "page": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/green-mountain",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg",
-    "status": "ok",
-    "kind": "image",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')",
-    "page": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/green-mountain",
-    "posted": "2024-10",
-    "posted_how": "posted: the upload folder in the address",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
@@ -3794,17 +3786,9 @@
    "page": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/lost-creek",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg",
-    "status": "ok",
-    "kind": "image",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')",
-    "page": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/lost-creek",
-    "posted": "2024-10",
-    "posted_how": "posted: the upload folder in the address",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
@@ -4988,18 +4972,9 @@
    "page": "https://www.fs.usda.gov/recarea/btnf/recarea/?recid=71661",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/btnf/recarea/?recid=71661",
-    "posted": "January 16, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-31",
-    "via": "the agency site",
-    "kind_note": "forest map only"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r04/bridger-teton/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/bridger-teton",
@@ -5157,20 +5132,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Lander Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-12731": {
    "n": "Adobe Town BLM Wilderness Area",
@@ -5179,20 +5157,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-12732": {
    "n": "Pryor Mountain BLM Wilderness Area",
@@ -5201,20 +5180,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-12733": {
    "n": "Sheep Mountain BLM Wilderness Area",
@@ -5223,20 +5203,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-12734": {
    "n": "Sweetwater Canyon BLM Wilderness Area",
@@ -5245,20 +5226,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Lander Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3292": {
    "n": "Bear River State Park",
@@ -5280,7 +5264,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3293": {
    "n": "Boysen State Park",
@@ -5302,7 +5287,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3294": {
    "n": "Buffalo Bill State Park",
@@ -5324,7 +5310,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3295": {
    "n": "Curt Gowdy State Park",
@@ -5346,7 +5333,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3297": {
    "n": "Glendo State Park",
@@ -5368,7 +5356,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3298": {
    "n": "Guernsey State Park",
@@ -5390,7 +5379,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3299": {
    "n": "Hot Springs State Park",
@@ -5412,7 +5402,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3300": {
    "n": "Keyhole State Park",
@@ -5434,7 +5425,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3301": {
    "n": "Seminoe State Park",
@@ -5456,7 +5448,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3302": {
    "n": "Sinks Canyon State Park",
@@ -5478,7 +5471,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4394": {
    "n": "Ashley National Forest",
@@ -5486,9 +5480,18 @@
    "page": "https://www.fs.usda.gov/ashley",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r04/ashley/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/ashley",
+    "posted": "January 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/ashley",
@@ -5500,7 +5503,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4403": {
    "n": "Medicine Bow - Routt National Forest",
@@ -5508,9 +5512,17 @@
    "page": "https://www.fs.usda.gov/mbr",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/mrtb/Vicinity%20map%20of%20all%20units.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2010-06-04",
+    "date_how": "file stamp 2010 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Download Map')",
+    "page": "https://www.fs.usda.gov/mbr",
+    "posted": "Feb 17, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/mbrtb",
@@ -5522,7 +5534,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4524": {
    "n": "Black Hills National Forest",
@@ -5530,20 +5543,17 @@
    "page": "https://www.fs.usda.gov/blackhills",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r02/blackhills/maps-guides",
+    "url": "https://www.fs.usda.gov/sites/nfs/files/r02/blackhills/publication/Recreation%20Sites%20Map.pdf",
     "status": "ok",
-    "kind": "page",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "July 16, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "checked": "2026-10-31",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown",
-    "kind_note": "forest map only"
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Recreation Sites Map')",
+    "page": "https://www.fs.usda.gov/r02/blackhills/maps-guides",
+    "posted": "Mar 17, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/blackhills",
@@ -5555,7 +5565,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4534": {
    "n": "Bighorn National Forest",
@@ -5563,21 +5574,18 @@
    "page": "https://www.fs.usda.gov/bighorn",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r02/bighorn/maps-guides",
+    "url": "https://www.fs.usda.gov/r02/bighorn/maps-guides/motor-vehicle-use-map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r02/bighorn/maps-guides",
-    "posted": "March 27, 2025",
-    "checked": "2026-10-31",
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Motor Vehicle Use Map')",
+    "page": "https://www.fs.usda.gov/r02/bighorn",
+    "posted": "July 30, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r02/bighorn"
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/bighorn",
@@ -5589,7 +5597,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4535": {
    "n": "Bridger-Teton National Forest",
@@ -5597,21 +5606,9 @@
    "page": "https://www.fs.usda.gov/btnf",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "posted": "January 16, 2026",
-    "checked": "2026-10-31",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r04/bridger-teton"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r04/bridger-teton/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/bridger-teton",
@@ -5623,7 +5620,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4536": {
    "n": "Shoshone National Forest",
@@ -5631,21 +5629,9 @@
    "page": "https://www.fs.usda.gov/shoshone",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r02/shoshone/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r02/shoshone/maps-guides",
-    "posted": "June 23, 2026",
-    "checked": "2026-10-31",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r02/shoshone"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r02/shoshone/maps-guides)",
+    "how": "the page in a browser ('Find Your Map')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/shoshone",
@@ -5657,7 +5643,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5793": {
    "n": "Flaming Gorge National Recreation Area",
@@ -5665,9 +5652,18 @@
    "page": "https://www.fs.usda.gov/r04/ashley/recreation/flaming-gorge-national-recreation-area",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.fs.usda.gov/sites/nfs/files/r04/ashley/publication/Ashley%)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://www.fs.usda.gov/r04/ashley/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r04/ashley/recreation/flaming-gorge-national-recreation-area",
+    "posted": "January 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/ashley",
@@ -5695,7 +5691,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6107": {
    "n": "Hawk Springs State Recreation Area",
@@ -5717,7 +5714,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6108": {
    "n": "Table Mountain Wildlife Management Area",
@@ -5850,7 +5848,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6112": {
    "n": "Cottonwood Draw Wildlife Management Area",
@@ -5946,7 +5945,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6115": {
    "n": "Historic Governors' Mansion State Historic Site",
@@ -5968,7 +5968,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6116": {
    "n": "Thunder Basin National Grassland",
@@ -5981,18 +5982,12 @@
     "kind": "pdf",
     "date": "2010-06-04",
     "date_how": "file stamp 2010 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/mrtb/Vicinity%20map%20of%20all%20units.pdf",
-    "posted": "Feb 17, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": 2010,
+    "how": "the page in a browser ('Download Map')",
     "page": "https://www.fs.usda.gov/r02/mbrtb",
-    "map_page": 1
+    "posted": "Feb 17, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/mbrtb",
@@ -6004,7 +5999,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6118": {
    "n": "Tom Thorne/Beth Williams Wildlife Management Area",
@@ -6063,7 +6059,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6121": {
    "n": "Fort Fetterman State Historic Site",
@@ -6085,7 +6082,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6122": {
    "n": "Wyoming Territorial Prison State Historic Site",
@@ -6107,7 +6105,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6123": {
    "n": "Forbes/ Sheep Mountain Wildlife Management Area",
@@ -6191,9 +6190,17 @@
    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80837",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/nfs/files/r02/mbrtb/publication/Web%20site%20rec%20areas.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-12-16",
+    "date_how": "file stamp 2015 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('MBRTB Rec Regions - Map')",
+    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80837",
+    "posted": "Jun 02, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/mbrtb",
@@ -6205,7 +6212,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6126": {
    "n": "Wick/ Beumee Wildlife Management Area",
@@ -6236,9 +6244,17 @@
    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80846",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/nfs/files/r02/mbrtb/publication/Web%20site%20rec%20areas.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-12-16",
+    "date_how": "file stamp 2015 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('MBRTB Rec Regions - Map')",
+    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80846",
+    "posted": "Jun 02, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/mbrtb",
@@ -6250,7 +6266,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6130": {
    "n": "Encampment River Wilderness Area",
@@ -6258,9 +6275,17 @@
    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80843",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/nfs/files/r02/mbrtb/publication/Web%20site%20rec%20areas.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-12-16",
+    "date_how": "file stamp 2015 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('MBRTB Rec Regions - Map')",
+    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80843",
+    "posted": "Jun 02, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/mbrtb",
@@ -6272,7 +6297,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6132": {
    "n": "Dry Creek Petrified Tree BLM Interpretive Site",
@@ -6280,21 +6306,30 @@
    "page": "https://www.blm.gov/visit/dry-creek-petrified-tree-environmental-education-area",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/default/files/docs/2025-02/DryCreekPetrifiedTreeBrochure.large_.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Brochure (large)')",
+    "page": "https://www.blm.gov/visit/dry-creek-petrified-tree-environmental-education-area",
+    "posted": "2025-02",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6133": {
    "n": "Huston Park Wilderness Area",
@@ -6302,9 +6337,17 @@
    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80840",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/nfs/files/r02/mbrtb/publication/Web%20site%20rec%20areas.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-12-16",
+    "date_how": "file stamp 2015 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('MBRTB Rec Regions - Map')",
+    "page": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80840",
+    "posted": "Jun 02, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/mbrtb",
@@ -6316,7 +6359,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6135": {
    "n": "Pennock Mountain Wildlife Management Area",
@@ -6362,20 +6406,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Rawlins Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6137": {
    "n": "Fort Phil Kearny State Historic Site",
@@ -6397,7 +6444,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6138": {
    "n": "Hole-in-the-Wall BLM Recreation Management Area",
@@ -6406,20 +6454,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Buffalo Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6139": {
    "n": "Bud Love Wildlife Management Area",
@@ -6465,20 +6516,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Buffalo Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6141": {
    "n": "Morgan Creek Wildlife Management Area",
@@ -6537,7 +6591,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6144": {
    "n": "Trail End State Historic Site",
@@ -6559,7 +6614,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6145": {
    "n": "Ed O. Taylor Wildlife Management Area",
@@ -6609,9 +6665,9 @@
     "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+    "how": "a link on the page in a browser ('Know Before You Go')",
+    "status": "ok"
    },
    "agency": "U.S. Department of Agriculture, Forest Service — Bighorn National Forest",
    "runs": [],
@@ -6634,7 +6690,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6147": {
    "n": "Independence Rock State Historic Site",
@@ -6656,7 +6713,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6148": {
    "n": "Connor Battlefield State Historic Site",
@@ -6905,20 +6963,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6161": {
    "n": "Continental Peak BLM Herd Management Area",
@@ -6950,20 +7009,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6163": {
    "n": "Muskrat Basin BLM Herd Management Area",
@@ -6972,20 +7032,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6165": {
    "n": "Triangle BLM Herd Management Area",
@@ -7005,7 +7066,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -7016,20 +7079,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6167": {
    "n": "Crooks Mountain BLM Herd Management Area",
@@ -7038,20 +7102,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6168": {
    "n": "Dishpan Butte BLM Herd Management Area",
@@ -7060,20 +7125,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6170": {
    "n": "Yellowtail State Wildlife Area",
@@ -7119,20 +7185,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6172": {
    "n": "Antelope Hills BLM Herd Management Area",
@@ -7141,20 +7208,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6173": {
    "n": "Bighorn Canyon National Recreation Area",
@@ -7194,20 +7262,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6175": {
    "n": "Sand Mesa State Wildlife Area",
@@ -7266,7 +7335,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6178": {
    "n": "Legend Rock State Petroglyph Site State Historic Site",
@@ -7288,7 +7358,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6179": {
    "n": "Ocean Lake State Wildlife Area",
@@ -7371,20 +7442,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Cody Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6189": {
    "n": "South Pass City State Historic Site",
@@ -7406,7 +7480,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6196": {
    "n": "Rock Springs BLM Herd Management Area",
@@ -7436,8 +7511,8 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r02/shoshone/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/shoshone",
@@ -7449,7 +7524,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6198": {
    "n": "Salt Wells Creek BLM Herd Management Area",
@@ -7458,20 +7534,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6201": {
    "n": "Bridger Wilderness Area",
@@ -7479,21 +7556,9 @@
    "page": "https://www.fs.usda.gov/recarea/btnf/recarea/?recid=77360",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "posted": "January 16, 2026",
-    "checked": "2026-10-31",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r04/bridger-teton/recreation"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r04/bridger-teton/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/bridger-teton",
@@ -7505,7 +7570,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6202": {
    "n": "North Absaroka Wilderness Area",
@@ -7514,8 +7580,8 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r02/shoshone/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/shoshone",
@@ -7527,7 +7593,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6204": {
    "n": "Little Colorado BLM Herd Management Area",
@@ -7536,20 +7603,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6205": {
    "n": "Kirk Inberg/ Kevin Roy State Wildlife Habitat Management Area",
@@ -7673,9 +7741,9 @@
     "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+    "how": "a link on the page in a browser ('Know Before You Go')",
+    "status": "ok"
    },
    "agency": "U.S. Department of Agriculture, Forest Service",
    "runs": [],
@@ -7698,7 +7766,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6210": {
    "n": "Teton Wilderness Area",
@@ -7706,21 +7775,9 @@
    "page": "https://www.fs.usda.gov/recarea/btnf/recarea/?recid=77359",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r04/bridger-teton/maps-guides",
-    "posted": "January 16, 2026",
-    "checked": "2026-10-31",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r04/bridger-teton/recreation"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r04/bridger-teton/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/bridger-teton",
@@ -7732,7 +7789,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6211": {
    "n": "Washakie Wilderness Area",
@@ -7741,8 +7799,8 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r02/shoshone/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/shoshone",
@@ -7754,7 +7812,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6212": {
    "n": "Whiskey Basin/ Little Red Creek Wildlife Management Area",
@@ -7800,20 +7859,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/sites/default/files/images/2024-10/WHB_HMA_2024_0.jpg)",
+    "how": "the page in a browser ('Download a map that displays all HMAs in Wyoming.')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "managed by the Rock Springs Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6214": {
    "n": "Granger Stage Station State Historic Site",
@@ -7835,7 +7897,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6217": {
    "n": "Fitzpatrick Wilderness Area",
@@ -7844,8 +7907,8 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r02/shoshone/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r02/shoshone",
@@ -7857,7 +7920,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6218": {
    "n": "Boulder Lake BLM Recreation Management Area",
@@ -7866,20 +7930,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 12 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 23 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6222": {
    "n": "Names Hill State Historic Site",
@@ -7901,7 +7966,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page is built by script",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6223": {
    "n": "Gros Ventre Wilderness Area",
@@ -7910,8 +7976,8 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r04/bridger-teton/maps-guides)",
+    "how": "the page in a browser ('Visitor Maps and Guides')"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/bridger-teton",
@@ -7923,7 +7989,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-6224": {
    "n": "Fort Bridger State Historic Site",
@@ -8161,21 +8228,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-03",
  "counts": {
   "parks": 294,
-  "map ok": 36,
-  "map found by the bot": 26,
-  "date on the map": 0,
-  "posted date only": 24,
-  "date unknown": 12,
-  "no map": 258,
-  "rules ok": 42,
-  "needs browser": 74,
+  "map ok": 46,
+  "map found by the bot": 37,
+  "date on the map": 6,
+  "posted date only": 25,
+  "date unknown": 15,
+  "no map": 248,
+  "rules ok": 44,
+  "needs browser": 4,
   "handover hints": 0,
-  "runs hints": 93,
+  "runs hints": 100,
   "host resting / robots": 0,
-  "map names the park": 27,
+  "map names the park": 29,
   "region overview only": 0
  }
 }

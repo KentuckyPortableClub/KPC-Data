@@ -200,7 +200,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/columbiarivergorge",
@@ -614,6 +614,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -661,6 +662,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -795,6 +797,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -2457,7 +2460,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/rogue-siskiyou",
@@ -2489,7 +2492,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/umatilla",
@@ -2848,14 +2851,22 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/crooked-wsr",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/wsr-orwa-north-fork-crooked-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Map')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/crooked-wsr",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2864,7 +2875,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9157": {
    "n": "Donner und Blitzen National Wild and Scenic River",
@@ -2872,14 +2884,22 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/donner-und-blitzen-wsr",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.blm.gov/sites/blm.gov/files/documents/files/wsr-orwa-donne)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/wsr-orwa-donner-blitzen-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Map')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/donner-und-blitzen-wsr",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2902,7 +2922,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9158": {
    "n": "John Day National Wild and Scenic River",
@@ -2910,21 +2931,32 @@
    "page": "https://www.blm.gov/visit/john-day-wild-and-scenic-river",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/default/files/documents/files/wsr-orwa-john-day-map4.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('John Day Wild and Scenic River - Whistle Point Cottonwood Canyon Map')",
+    "page": "https://www.blm.gov/visit/john-day-wild-and-scenic-river",
+    "posted": "Jan 24, 2023",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Prineville District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9524": {
    "n": "Angel's Rest State Trail",
@@ -3076,21 +3108,30 @@
    "page": "https://www.blm.gov/documents/oregon-washington/public-room/map/oregon-molalla-river",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/documents/oregon-washington/public-room/map/oregon-molalla-river#superfish-main",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Skip to main navigation')",
+    "page": "https://www.blm.gov/documents/oregon-washington/public-room/map/oregon-molalla-river",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9984": {
    "n": "Tualatin River Water National Scenic Trail",
@@ -3123,32 +3164,28 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/default/files/documents/files/EUG_WestEugeneWetlands_map.pdf",
-    "posted": "Jan 23, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('West Eugene Wetlands Map')",
     "page": "https://www.blm.gov/visit/west-eugene-wetlands",
-    "map_page": 1
+    "posted": "Jan 23, 2023",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Northwest Oregon District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9990": {
    "n": "Mayfield Pond BLM Recreation Management Area",
@@ -3156,21 +3193,30 @@
    "page": "https://www.blm.gov/or/districts/prineville/recreation/files/mayfield_pond_map.pdf",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Maps')",
+    "page": "https://www.blm.gov/or/districts/prineville/recreation/files/mayfield_pond_map.pdf",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9991": {
    "n": "Redmond Caves BLM Recreation Management Area",
@@ -3182,32 +3228,28 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/default/files/documents/files/PRI_RedmondCaves_map.pdf",
-    "posted": "Jan 25, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Redmond Caves Map')",
     "page": "https://www.blm.gov/visit/redmond-caves-recreation-site",
-    "map_page": 1
+    "posted": "Jan 25, 2023",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Prineville District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-0018": {
    "n": "Crater Lake National Park",
@@ -4158,28 +4200,23 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/default/files/documents/files/EUG_RowRiver_map.pdf",
-    "posted": "Jan 23, 2023",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Row River Trail Map')",
     "page": "https://www.blm.gov/visit/row-river-trail",
-    "map_page": 1
+    "posted": "Jan 23, 2023",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Northwest Oregon District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
@@ -4199,7 +4236,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-10011": {
    "n": "OC&E Woods Line State Trail",
@@ -4345,21 +4383,32 @@
    "page": "https://www.blm.gov/visit/silver-creek-boat-landing",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/default/files/documents/files/nwo_mcmenzieriver_brochure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('McKenzie River Corridor Brochure w/ Map')",
+    "page": "https://www.blm.gov/visit/silver-creek-boat-landing",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Northwest Oregon District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-10019": {
    "n": "Klamath BLM Wild and Scenic River",
@@ -4379,7 +4428,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -10015,7 +10066,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/deschutes",
@@ -10047,7 +10098,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/fremont-winema",
@@ -10079,7 +10130,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/malheur",
@@ -10111,7 +10162,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/mthood",
@@ -10143,7 +10194,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/ochoco",
@@ -10175,7 +10226,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/siuslaw",
@@ -10207,7 +10258,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/umpqua",
@@ -10270,7 +10321,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/willamette",
@@ -10340,7 +10391,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/deschutes",
@@ -10663,7 +10714,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/ochoco",
@@ -14297,21 +14348,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-03",
  "counts": {
   "parks": 440,
-  "map ok": 102,
-  "map found by the bot": 86,
-  "date on the map": 20,
-  "posted date only": 53,
-  "date unknown": 29,
-  "no map": 338,
-  "rules ok": 71,
-  "needs browser": 90,
+  "map ok": 181,
+  "map found by the bot": 165,
+  "date on the map": 72,
+  "posted date only": 71,
+  "date unknown": 38,
+  "no map": 259,
+  "rules ok": 80,
+  "needs browser": 81,
   "handover hints": 0,
-  "runs hints": 46,
+  "runs hints": 51,
   "host resting / robots": 0,
-  "map names the park": 53,
+  "map names the park": 123,
   "region overview only": 0
  }
 }

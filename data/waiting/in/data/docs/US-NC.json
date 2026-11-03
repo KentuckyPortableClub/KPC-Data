@@ -810,9 +810,17 @@
    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/hiwassee",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/default-document-library/site-content/environment/recreation/pdf/hiwasseemap.pdf?sfvrsn=74649c91_0",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Water Trail Guide')",
+    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/hiwassee",
+    "posted": "Apr 06, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "linked from the agency page (tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net)"
    },
    "rules": {
     "url": "",
@@ -827,7 +835,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-10397": {
    "n": "Southern Nantahala Wilderness Area",
@@ -7836,17 +7845,17 @@
    "ver": 7
   }
  },
- "read": "2026-11-02",
+ "read": "2026-11-03",
  "counts": {
   "parks": 253,
-  "map ok": 153,
-  "map found by the bot": 112,
+  "map ok": 154,
+  "map found by the bot": 113,
   "date on the map": 110,
-  "posted date only": 34,
+  "posted date only": 35,
   "date unknown": 9,
-  "no map": 100,
+  "no map": 99,
   "rules ok": 55,
-  "needs browser": 1,
+  "needs browser": 0,
   "handover hints": 0,
   "runs hints": 5,
   "host resting / robots": 0,

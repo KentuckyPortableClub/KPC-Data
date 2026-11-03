@@ -621,7 +621,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r08/ouachita/recreation",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ouachita",
@@ -740,6 +740,7 @@
    "handover": [],
    "notes": [
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -824,7 +825,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -979,25 +980,22 @@
    "page": "https://www.arkansasstateparks.com/parks/cane-creek-state-park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.arkansas.com/sites/default/files/2025-12/canecreek-2007.pdf",
+    "url": "https://www.arkansas.com/sites/default/files/2025-12/e1626750822e6d5e302ed1c17f929d77_canecreekstateparklaketrailbrochure_0.pdf",
     "status": "ok",
     "kind": "pdf",
-    "date": "2007-04-16",
-    "date_how": "file stamp 2007 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Park Information Brochure' file",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('e1626750822e6d5e302ed1c17f929d77_canecreekstateparklaketrailbrochure_0.pdf')",
+    "page": "https://www.arkansas.com/state-parks/explore/parks/cane-creek-state-park",
     "posted": "2025-12",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": true,
-    "checked": "2026-10-31",
-    "covers": 1,
-    "page": "https://www.arkansas.com/state-parks/explore/parks/cane-creek-state-park",
-    "via": "linked from the agency page (arkansas.com)",
-    "date_label": "2007: check it is still current"
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "status": "not found (a page shared by 58 parks was dropped: https://www.arkansas.com/state-parks/state-park-rules-policies)",
-    "how": "a link on the park's page ('State Park Rules Policies')"
+    "url": "https://www.arkansas.com/state-parks/state-park-rules-policies",
+    "how": "a link on the page in a browser ('State Park Rules & Policies')",
+    "status": "ok"
    },
    "agency": "Arkansas Department of Parks, Heritage and Tourism — Arkansas State Parks",
    "runs": [],
@@ -1007,7 +1005,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-10731": {
    "n": "Searles Prairie State Natural Area",
@@ -3677,6 +3676,7 @@
    "handover": [],
    "notes": [
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -4040,7 +4040,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -5081,6 +5081,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
@@ -8138,7 +8139,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -8670,9 +8671,17 @@
    "page": "https://www.agfc.com/en/zone-map/fishing-map/603/",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.agfc.com/resources/maps/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Maps')",
+    "page": "https://www.agfc.com/en/zone-map/fishing-map/603/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -8684,7 +8693,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9167": {
    "n": "Lake Hinkle State Recreation Area",
@@ -8840,21 +8850,21 @@
    "ver": 7
   }
  },
- "read": "2026-11-02",
+ "read": "2026-11-03",
  "counts": {
   "parks": 306,
-  "map ok": 114,
-  "map found by the bot": 102,
-  "date on the map": 38,
-  "posted date only": 52,
-  "date unknown": 24,
-  "no map": 192,
-  "rules ok": 39,
-  "needs browser": 5,
+  "map ok": 115,
+  "map found by the bot": 104,
+  "date on the map": 37,
+  "posted date only": 53,
+  "date unknown": 25,
+  "no map": 191,
+  "rules ok": 40,
+  "needs browser": 3,
   "handover hints": 0,
   "runs hints": 12,
   "host resting / robots": 0,
-  "map names the park": 90,
+  "map names the park": 89,
   "region overview only": 0
  }
 }

@@ -114,7 +114,6 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT 2-fer line (chat 2; 2026-11-02): grade me: US-AZ (az) — READY · known 19/19 on 2026-11-02 · US-AZ: live 39, not sure 2, water only 1 · files data/fers/<state>.json + line-az.json + missing-az.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41492302958)
 - FROM BOT official documents bot (2026-11-02): grade me: US-SD US-OH US-IA US-RI US-NJ US-SC US-PA US-LA data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482)
 - FROM BOT official documents bot (2026-11-03): grade me: US-SD US-OH US-IA US-RI US-NJ US-SC US-PA US-LA data/docs/<area>.json + review.md — chunk 2 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482)
-- FROM BOT 2-fer line (chat 2; 2026-11-03): grade me: US-DC (dc) — READY · known 19/19 on 2026-11-02 · US-DC: live 22, not sure 0, water only 0 · files data/fers/<state>.json + line-dc.json + missing-dc.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41558206949)
 - FROM WAITING ROOM (held since 2026-10-31, 3 days): campinfo data/campinfo/US-MA.json held: F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-01, 2 days): campinfo data/campinfo/US-NC.json held: F-I3 the same site count on 4 camps of one agency (state: 579): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-01, 2 days): campinfo data/campinfo/US-NY.json held: F-I3 the same site count on 4 camps of one agency (state: 56): copied from a shared page?
@@ -216,3 +215,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 2 days): truth data/truth/US-NY.json held: F-R2 8 OFF rows share the size 46,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 2 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 2 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
+- FROM BOT official documents bot (2026-11-03): grade me: US-SD US-OH US-IA US-RI US-NJ US-SC US-PA US-LA data/docs/<area>.json + review.md — chunk 3 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482)
