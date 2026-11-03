@@ -1,21 +1,21 @@
 {
- "made": "2026-11-03 12:17 UTC",
+ "made": "2026-11-03 13:56 UTC",
  "snap": {
   "date": "2026-11-03",
   "outlines": {
    "US": {
-    "official": 11149,
-    "pin": 1492,
-    "approximate": 445
+    "official": 11176,
+    "approximate": 435,
+    "pin": 1475
    },
    "Canada": {
-    "official": 4297,
-    "pin": 1563,
+    "pin": 1560,
+    "official": 4302,
     "approximate": 39
    },
    "World": {
-    "pin": 17780,
     "official": 39741,
+    "pin": 17780,
     "approx": 2676
    }
   },
@@ -233,9 +233,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 60, waiting for key 6",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 60, waiting for key 6 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41573517587",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1233,9 +1233,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
+   "made": "5 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); POTA spots to Discord (silent: no finished run in 3 h (expected every 3 h or less)); activation / CW boards (silent: no finished run in 3 h (expected every 3 h or less)); band alerts (NOAA) (silent: no finished run in 3 h (expect",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41587143057",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1289,9 +1289,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2026-11-03 11:05 UTC: 12 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 03 10:40 UTC); kpc-detective.yml (missed Nov 03 10:39 UTC); kpc-fers-pending.yml (missed Nov 03 10:23 UTC); kpc-fetch-files.yml (missed Nov 03 10:38 UTC); kpc-helpers.yml (missed Nov 03 10:23 UTC); kpc-intake.",
+   "made": "2026-11-03 12:15 UTC: 1 skipped run(s) started again: kpc-waiting-room.yml (missed Nov 03 11:13 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624614562",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1377,9 +1377,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "site = main: the website has the newest data",
+   "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624614562",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "campground info bot": {
@@ -1409,17 +1409,17 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1325 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-03.md ",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1074 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-03.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41572643236",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648640965",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
-   "areas": "297 rows left",
-   "last_run": "2026-11-02",
+   "areas": "301 rows left",
+   "last_run": "2026-11-03",
    "made": "data/intake/ready.json + review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41439471130",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41624695275",
    "waiting_on": "chat 9 (approve READY rows)"
   },
   "official documents bot": {
@@ -1464,16 +1464,16 @@
   },
   "waiting room": {
    "last_run": "2026-11-03",
-   "made": "heartbeat 0 h old, 159 files waiting",
+   "made": "heartbeat 2 h old, 159 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 5: data/world-finder + questions",
+   "made": "chunk 2: data/world-finder + questions",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41596178440",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41630932057",
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
   }
  },
