@@ -553,6 +553,27 @@
      "name_field": "NAME"
     },
     {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
      "id": 0,
      "name": "Life Site",
      "geom": "Polygon",
@@ -817,6 +838,28 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Wind Damage Assessment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "BAU_NAME",
+      "County",
+      "wb_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11009,
+     "sample": [
+      "2",
+      "2",
+      "1"
+     ],
+     "name_field": "BAU_NAME"
+    },
     {
      "id": 0,
      "name": "Wind Damage Assessment",
