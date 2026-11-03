@@ -3756,6 +3756,27 @@
       "Ave"
      ],
      "name_field": "nome"
+    },
+    {
+     "id": 0,
+     "name": "AtAgua_Bacias_bacias_snirh_PC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "nome",
+      "areakm2",
+      "st_area_sh",
+      "st_length_"
+     ],
+     "records": 35,
+     "sample": [
+      "Ancora e Ribeiras Costeiras",
+      "Arade",
+      "Ave"
+     ],
+     "name_field": "nome"
     }
    ],
    "note": "",
@@ -13495,6 +13516,31 @@
       "Acácias"
      ],
      "name_field": "nome"
+    },
+    {
+     "id": 0,
+     "name": "Espécies invasoras - IFN",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "objectid",
+      "id_parcela",
+      "nutsii",
+      "nutsiii",
+      "op_mancha",
+      "nome",
+      "abundancia",
+      "abundanc_1"
+     ],
+     "records": 1429,
+     "sample": [
+      "Figueira-da-Índia",
+      "Piteira",
+      "Acácias"
+     ],
+     "name_field": "nome"
     }
    ],
    "note": "",
@@ -17059,6 +17105,23 @@
       "telefone"
      ],
      "records": 45
+    },
+    {
+     "id": 0,
+     "name": "DBO.CED_LocaisdeVoto",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "codigo_loc",
+      "numsecvoto",
+      "local",
+      "designacao",
+      "localidade",
+      "telefone"
+     ],
+     "records": 45
     }
    ],
    "note": "",
@@ -17312,6 +17375,32 @@
       "tipo_obser"
      ],
      "records": 35832
+    },
+    {
+     "id": 1,
+     "name": "Dados_SOSvespa",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "data_regis",
+      "data_obser",
+      "data_exter",
+      "exterminad",
+      "acessibili",
+      "suporte",
+      "diametro_n",
+      "altura_nin",
+      "concelho",
+      "distrito",
+      "observacoe",
+      "lon",
+      "lat",
+      "quantidade",
+      "tipo_obser"
+     ],
+     "records": 35832
     }
    ],
    "note": "",
@@ -17332,6 +17421,35 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "galeria_pnrn",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "objectid",
+      "id",
+      "name",
+      "date",
+      "time",
+      "lon",
+      "lat",
+      "altitude",
+      "title",
+      "comment",
+      "path",
+      "relpath",
+      "timestamp"
+     ],
+     "records": 2,
+     "sample": [
+      "Cristina Girão Vieira",
+      "Pedro Rodrigues"
+     ],
+     "name_field": "name"
+    },
     {
      "id": 0,
      "name": "galeria_pnrn",

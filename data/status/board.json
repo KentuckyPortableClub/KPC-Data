@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41712712228",
+   "made": "2026-11-03 19:47 UTC: 4 skipped run(s) started again: kpc-closures.yml (missed Nov 03 18:38 UTC); kpc-copy-from-links.yml (missed Nov 03 19:11 UTC); kpc-eu-alerts.yml (missed Nov 03 18:40 UTC); kpc-waiting-room.yml (missed Nov 03 18:42 UTC)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41706113837",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1156,9 +1156,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41712712228",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41706113837",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "campground info bot": {
@@ -1250,7 +1250,7 @@
   "world finder v2": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 4: data/world-finder + questions",
+   "made": "chunk 5: data/world-finder + questions",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41673256195",
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
