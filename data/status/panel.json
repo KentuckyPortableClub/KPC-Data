@@ -1,5 +1,5 @@
 {
- "made": "2026-11-03 16:13 UTC",
+ "made": "2026-11-03 16:16 UTC",
  "snap": {
   "date": "2026-11-03",
   "outlines": {
@@ -30,7 +30,7 @@
    },
    "gis-hunter": {
     "- YES": 84,
-    "rows": 626,
+    "rows": 650,
     "- NO": 339,
     "- NOT SURE": 16,
     "SURE YES": 8,
@@ -39,9 +39,9 @@
     "LIKELY YES": 12,
     "LIKELY NOT SURE": 8,
     "SURE NO": 2,
-    "SURE bot YES": 124,
-    "LIKELY open": 8,
-    "SURE open": 2
+    "SURE bot YES": 128,
+    "SURE open": 15,
+    "LIKELY open": 15
    },
    "hardlook": {},
    "key-pieces": {
@@ -52,7 +52,7 @@
    },
    "layers": {
     "LIKELY YES": 2131,
-    "rows": 26398,
+    "rows": 25925,
     "LIKELY NO": 213,
     "SURE NO": 8,
     "LIKELY NOT SURE": 6711,
@@ -60,8 +60,8 @@
     "SURE NOT SURE": 526,
     "LIKELY bot YES": 12,
     "SURE bot YES": 522,
-    "SURE open": 270,
-    "LIKELY open": 398
+    "SURE open": 33,
+    "LIKELY open": 162
    },
    "lost-finds-nov1": {},
    "map-audit": {
@@ -117,12 +117,12 @@
    },
    "queue rows": 2116,
    "collector": {
-    "asked": 661,
+    "asked": 166,
     "failed": 196,
     "evidence": 9,
-    "no match": 1402,
-    "no hit": 222297,
-    "UNLIKELY": 21621,
+    "no match": 807,
+    "no hit": 222291,
+    "UNLIKELY": 21619,
     "LIKELY": 6404,
     "SURE": 1092
    },
@@ -1409,9 +1409,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1074 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-03.md ",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1061 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-03.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648640965",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41671606400",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1425,17 +1425,17 @@
   "official documents bot": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 5 saved",
+   "made": "chunk 1 saved",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41655953664",
    "waiting_on": "chat 8 grades review.md samples"
   },
   "outside-KY trial (hours / closures, saved only)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "3375 parks read, 705 with hours or fees; 179 closure items (branch trial-outside-ky)",
+   "made": "3970 parks read, 919 with hours or fees; 180 closure items (branch trial-outside-ky)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41604480471",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41656177520",
    "waiting_on": "Sat Nov 7: short report -> chat 11 grades 12 rows -> Brandon decides"
   },
   "park detective": {
@@ -1471,7 +1471,7 @@
   "world finder v2": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 3: data/world-finder + questions",
+   "made": "chunk 4: data/world-finder + questions",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41630932057",
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
