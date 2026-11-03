@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2026-11-03 13:54 UTC: 5 skipped run(s) started again: kpc-closures.yml (missed Nov 03 12:38 UTC); kpc-copy-from-links.yml (missed Nov 03 13:11 UTC); kpc-eu-alerts.yml (missed Nov 03 12:40 UTC); kpc-waiting-room.yml (missed Nov 03 12:42 UTC); kpc-watch.yml (missed Nov 03 11:53 UTC)",
+   "made": "2026-11-03 16:11 UTC: 5 skipped run(s) started again: kpc-collector.yml (missed Nov 03 15:16 UTC); kpc-copy-from-links.yml (missed Nov 03 15:11 UTC); kpc-flow.yml (missed Nov 03 13:46 UTC); kpc-waiting-room.yml (missed Nov 03 14:42 UTC); kpc-youtube-comments.yml (missed Nov 03 13:36 UTC, NOT restart",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648568487",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41671425258",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1204,17 +1204,17 @@
   "official documents bot": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 5 saved",
+   "made": "chunk 1 saved",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41541860482",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41655953664",
    "waiting_on": "chat 8 grades review.md samples"
   },
   "outside-KY trial (hours / closures, saved only)": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "3375 parks read, 705 with hours or fees; 179 closure items (branch trial-outside-ky)",
+   "made": "3970 parks read, 919 with hours or fees; 180 closure items (branch trial-outside-ky)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41604480471",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41656177520",
    "waiting_on": "Sat Nov 7: short report -> chat 11 grades 12 rows -> Brandon decides"
   },
   "park detective": {
@@ -1250,7 +1250,7 @@
   "world finder v2": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "chunk 3: data/world-finder + questions",
+   "made": "chunk 4: data/world-finder + questions",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41630932057",
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
