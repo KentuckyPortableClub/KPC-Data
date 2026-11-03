@@ -3,35 +3,18 @@
  "countries": {
   "GB": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-02",
+   "started": "2026-11-03",
    "done": [
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_OtherData_WFL1/FeatureServer",
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Region_10km_Buff_Coast_GDA1994/FeatureServer",
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/UKSACswithMarineComponents/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer"
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer"
    ],
    "log": [
     {
      "step": "known",
      "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
      "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
-     "found": true
-    },
-    {
-     "step": "org",
-     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 3 services read"
     }
    ],
-   "steps": [
-    "known",
-    "servers",
-    "wfs"
-   ]
+   "steps": []
   },
   "JP": {
    "status": "done",
@@ -510,7 +493,7 @@
   },
   "AU": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-02",
+   "started": "2026-11-03",
    "done": [
     "https://opendata.maps.vic.gov.au/geoserver/wfs",
     "https://public-services.slip.wa.gov.au/public/rest/services/Land_Monitor/Land_Monitor/MapServer",
@@ -1328,7 +1311,7 @@
   },
   "CH": {
    "status": "started",
-   "started": "2026-11-02",
+   "started": "2026-11-03",
    "done": [
     "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
    ],
