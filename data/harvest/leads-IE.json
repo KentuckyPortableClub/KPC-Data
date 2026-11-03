@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Ireland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "IE",
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "status": "paused (out of time, will carry on)",
  "steps_done": [
   "known",
@@ -427,6 +427,27 @@
      "name_field": "NAME"
     },
     {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
      "id": 0,
      "name": "Life Site",
      "geom": "Polygon",
@@ -734,6 +755,28 @@
       "1"
      ],
      "name_field": "BAU_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Wind Damage Assessment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "BAU_NAME",
+      "County",
+      "wb_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11009,
+     "sample": [
+      "2",
+      "2",
+      "1"
+     ],
+     "name_field": "BAU_NAME"
     }
    ],
    "note": "Coillte Wind Damage Assessment",
@@ -878,6 +921,36 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Biodiversity_2026",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "BiodID",
+      "BAU",
+      "Forest",
+      "Property",
+      "Area",
+      "Bioclass",
+      "Potential",
+      "Remcode",
+      "HabGrp1",
+      "HabTyp1",
+      "HabGrp2",
+      "HabTyp2",
+      "TarHabGrp1",
+      "TarHabTyp1",
+      "TarHabGrp2",
+      "TarHabTyp2",
+      "Origin",
+      "RetiredBio",
+      "HabCat"
+     ],
+     "records": 6028
+    },
     {
      "id": 0,
      "name": "Biodiversity_2026",
