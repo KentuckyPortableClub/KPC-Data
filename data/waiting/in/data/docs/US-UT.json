@@ -695,6 +695,7 @@
    "notes": [
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1230,7 +1231,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-11-03",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "",
@@ -1566,17 +1567,9 @@
    "page": "https://www.blm.gov/visit/furniture-draw-trail-head",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/maps",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-11-03",
-    "how": "the page in a browser ('Maps')",
-    "page": "https://www.blm.gov/visit/furniture-draw-trail-head",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-11-03",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
@@ -1877,17 +1870,9 @@
    "page": "https://www.blm.gov/visit/north-klondike-campground",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/maps",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-11-03",
-    "how": "the page in a browser ('Maps')",
-    "page": "https://www.blm.gov/visit/north-klondike-campground",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-11-03",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
@@ -2342,17 +2327,9 @@
    "page": "https://www.blm.gov/visit/hunter-canyon-trailhead",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/maps",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-11-03",
-    "how": "the page in a browser ('Maps')",
-    "page": "https://www.blm.gov/visit/hunter-canyon-trailhead",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-11-03",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
@@ -2374,20 +2351,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11711": {
    "n": "Elbow Ranch BLM Recreation Management Area",
@@ -2417,20 +2395,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 5 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11721": {
    "n": "Angel Point East BLM Recreation Management Area",
@@ -13041,7 +13020,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r04/ashley",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/ashley",
@@ -13076,7 +13055,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r04/dixie",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/dixie",
@@ -13160,7 +13139,7 @@
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
@@ -17299,14 +17278,14 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 692,
-  "map ok": 91,
-  "map found by the bot": 69,
+  "map ok": 88,
+  "map found by the bot": 66,
   "date on the map": 23,
   "posted date only": 55,
-  "date unknown": 13,
-  "no map": 601,
-  "rules ok": 61,
-  "needs browser": 420,
+  "date unknown": 10,
+  "no map": 604,
+  "rules ok": 63,
+  "needs browser": 418,
   "handover hints": 0,
   "runs hints": 13,
   "host resting / robots": 0,

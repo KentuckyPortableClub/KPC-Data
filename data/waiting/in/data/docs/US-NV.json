@@ -129,6 +129,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -4275,6 +4276,7 @@
    "notes": [
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -4984,6 +4986,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
@@ -6679,20 +6682,22 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13223": {
    "n": "South Fork Canyon - Nevada BLM Special Recreation Management Area",
@@ -6701,20 +6706,22 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13224": {
    "n": "South Fork Owyhee River - Nevada BLM Recreation Management Area",
@@ -6723,20 +6730,22 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13226": {
    "n": "Ward Mountain BLM Recreation Management Area",
@@ -6744,36 +6753,23 @@
    "page": "https://www.blm.gov/visit/ward-mountain-recreation-area",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/sites/default/files/docs/2022-03/WardMountainRecreationArea-NorthTrailhead.pdf",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/default/files/docs/2022-03/WardMountainRecreationArea-NorthTrailhead.pdf",
-    "posted": "2022-03",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the upload folder in the address",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": 2022,
-    "page": "https://www.blm.gov/visit/ward-mountain-recreation-area",
-    "map_page": 1
+    "url": "",
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13238": {
    "n": "Lahontan National Fish Hatchery",
@@ -6812,9 +6808,18 @@
    "page": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-rose-wilderness",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r05/laketahoebasin/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-rose-wilderness",
+    "posted": "September 22, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/laketahoebasin/alerts-notices",
@@ -6826,7 +6831,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13409": {
    "n": "Belmont Nevada State Historical Monument",
@@ -7338,19 +7344,17 @@
    "page": "https://www.fs.usda.gov/htnf/",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://experience.arcgis.com/experience/a695e1dbdeab4e8ba5c6ad4fd06a0ba0",
+    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+    "kind": "viewer (statewide)",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "date_how": "",
+    "how": "the page in a browser ('Interactive Visitor Map')",
+    "page": "https://www.fs.usda.gov/r04/humboldt-toiyabe",
     "posted": "",
     "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-31",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "checked": "2026-11-03",
+    "via": "off the government, not linked by the agency"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe",
@@ -7362,7 +7366,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4392": {
    "n": "Basin and Range National Monument",
@@ -7370,21 +7375,31 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/basin-and-range-national-monument",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/default/files/docs/2024-05/BARNM%20visitor%20map%2004182024%20508-compliant.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Georeferenced Map - Basin and Range')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/basin-and-range-national-monument",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4393": {
    "n": "Gold Butte National Monument",
@@ -7392,36 +7407,31 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/gold-butte",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/sites/blm.gov/files/Nevada-Gold%20Butte-EA%20NV-052-2006-433%20Maps.pdf",
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-06/Nevada-Gold_Butte_NM_NLCS_Map.pdf",
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/blm.gov/files/Nevada-Gold%20Butte-EA%20NV-052-2006-433%20Maps.pdf",
-    "posted": "2006",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": 2006,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Monument map')",
     "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/gold-butte",
-    "map_page": 1
+    "posted": "2022-06",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4437": {
    "n": "Big Bend of the Colorado State Recreation Area",
@@ -7485,30 +7495,27 @@
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/default/files/images/2025-04/BLM_NV_CCDO_Map-Walker-Lake-Recreation-Area_April2025_JJiaBLM%20%2815%29.jpg",
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Walker Lake Map')",
+    "page": "https://www.blm.gov/visit/walker-lake-recreation-area",
     "posted": "2025-04",
-    "checked": "2026-10-31",
-    "kind_note": "image: the name is known from the file name only, not read from the map (chat 8 F9)",
-    "names_park": true,
     "posted_how": "posted: the upload folder in the address",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": 2025,
-    "page": "https://www.blm.gov/visit/walker-lake-recreation-area"
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4443": {
    "n": "Old Las Vegas Mormon Fort State Park",
@@ -7633,9 +7640,18 @@
    "page": "https://www.fs.usda.gov/recmain/ltbmu/recreation",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r05/laketahoebasin/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recmain/ltbmu/recreation",
+    "posted": "September 22, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/recmain/alerts-notices",
@@ -7647,7 +7663,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-7494": {
    "n": "Red Rock Canyon National Conservation Area",
@@ -7737,36 +7754,31 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/sloan-canyon-nca",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_SloanCanyon_NCA.pdf",
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/Nevada_Sloan_Canyon_biking_map.pdf",
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_SloanCanyon_NCA.pdf",
-    "posted": "Sep 09, 2021",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Sloan Biking Trail Map')",
     "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/sloan-canyon-nca",
-    "map_page": 1
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-8311": {
    "n": "Humboldt State Wildlife Management Area",
@@ -7788,7 +7800,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9235": {
    "n": "Arrow Canyon BLM Wilderness Area",
@@ -7797,20 +7810,22 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9236": {
    "n": "Bald Mountain Wilderness Area",
@@ -7830,7 +7845,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -7852,7 +7869,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -7863,20 +7882,24 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Ely District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9239": {
    "n": "Black Rock Desert - High Rock Canyon Emigrant Trails National Conservation Area",
@@ -7884,21 +7907,33 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/black-rock-desert-high-rock-canyon-emigrant-trails-nca",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/blm.gov/files/uploads/NV_BlackRockDesertHighRockCanyon_NCA_map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Printable Map')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/nevada/black-rock-desert-high-rock-canyon-emigrant-trails-nca",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "managed by the Black Rock Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9241": {
    "n": "Bristlecone Wilderness Area",
@@ -7939,7 +7974,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -7949,9 +7986,17 @@
    "page": "https://www.fs.usda.gov/detailfull/htnf/home/?cid=stelprdb5238541&width=..",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://experience.arcgis.com/experience/a695e1dbdeab4e8ba5c6ad4fd06a0ba0",
+    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+    "kind": "viewer (statewide)",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Interactive Visitor Map')",
+    "page": "https://www.fs.usda.gov/detailfull/htnf/home/?cid=stelprdb5238541&width=..",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "off the government, not linked by the agency"
    },
    "rules": {
     "url": "",
@@ -7963,7 +8008,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9245": {
    "n": "Delamar Mountains Wilderness Area",
@@ -7994,20 +8040,22 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9247": {
    "n": "Eldorado BLM Wilderness Area",
@@ -8027,7 +8075,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -8082,20 +8132,22 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9252": {
    "n": "Government Peak BLM Wilderness Area",
@@ -8126,20 +8178,24 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 9 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Winnemucca District Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9255": {
    "n": "High Rock Lake Wilderness Area",
@@ -8159,7 +8215,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -8203,7 +8261,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -8728,9 +8788,17 @@
    "page": "https://www.fs.usda.gov/detail/htnf/home/?cid=stelprdb5239033",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://experience.arcgis.com/experience/a695e1dbdeab4e8ba5c6ad4fd06a0ba0",
+    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+    "kind": "viewer (statewide)",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Interactive Visitor Map')",
+    "page": "https://www.fs.usda.gov/detail/htnf/home/?cid=stelprdb5239033",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "off the government, not linked by the agency"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe",
@@ -8742,7 +8810,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9287": {
    "n": "Tunnel Spring Wilderness Area",
@@ -8909,18 +8978,18 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 367,
-  "map ok": 53,
-  "map found by the bot": 45,
+  "map ok": 55,
+  "map found by the bot": 48,
   "date on the map": 1,
-  "posted date only": 41,
-  "date unknown": 11,
-  "no map": 314,
-  "rules ok": 47,
-  "needs browser": 58,
+  "posted date only": 44,
+  "date unknown": 10,
+  "no map": 312,
+  "rules ok": 61,
+  "needs browser": 38,
   "handover hints": 0,
-  "runs hints": 20,
+  "runs hints": 23,
   "host resting / robots": 0,
-  "map names the park": 47,
+  "map names the park": 42,
   "region overview only": 0
  }
 }
