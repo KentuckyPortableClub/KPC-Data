@@ -17,6 +17,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 32 |
 | US-MA | 30 | 20 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 18 | 22 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
+| US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
 | US-MT | 312 | 0 | 312 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -27,7 +28,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-MA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-MD FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-MA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -35,6 +36,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 48 campgrounds · host resting
 - reserve.tnstateparks.com: 25 campgrounds · host resting
+- destateparks.com: 22 campgrounds · host resting
 - www.tn.gov: 17 campgrounds · host resting
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
@@ -1202,6 +1204,31 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
   - showers = true · “eplacement of eight rustic cabins, restoration of a CCC-era cabin, and renovation of five bathhouses within the campground. ​ Click here to ”
   - sites.cabin = 16 · “ng Area is located on the eastern portion of the peninsula and offers over 250 campsites, 16 cabins (nine mini/camper cabins and seven rusti”
   - sites.total = 250 · “Elk River Camping Area is located on the eastern portion of the peninsula and offers over 250 campsites, 16 cabins (nine mini/camper cabins ”
+
+## US-DE: 12 random samples (records with facts; seed = the date)
+
+- **Redden State Forest HQ Tract primitive campsites (18) + Redden Lodge** (intake-US-4610, agency (outside research camping-us-oct31), status ok, 14 facts) · [agriculture.delaware.gov](https://agriculture.delaware.gov/forest-service/camping/)
+  - booking.how = "online: agriculture.delaware.gov" · “link “Land Preservation””
+  - booking.url = "https://agriculture.delaware.gov/agland-preservation-planni · “link “Land Preservation” -> https://agriculture.delaware.gov/agland-preservation-planning/”
+  - checkin = "1 p.m" · “ion Confirmation is your Camping permit. No formal check-in is required for tent camping. Check-in begins at 1 p.m., check-out is at 11 a.m.”
+  - checkout = "11 a.m" · “mping permit. No formal check-in is required for tent camping. Check-in begins at 1 p.m., check-out is at 11 a.m. ADA sites and small-medium”
+  - fees = "$25 per night fee for each site at Blackbird or Redden Stat · “d areas. It is $5 cash sale for firewood – no other form of payment is accepted for wood. $25 per night fee for each site at Blackbird or Re”
+  - hookups.electric = false · “sites available at a first come first serve basis. State Forest Camping is Primitive. NO electric, NO water and NO septic hookups available ”
+  - map.date_how = "web page, year 2025 in the link" · “link “Blackbird Camping Map””
+  - map.url = "https://agriculture.delaware.gov/wp-content/uploads/sites/1 · “link “Blackbird Camping Map” -> https://agriculture.delaware.gov/wp-content/uploads/sites/108/2025/02/Blackbird-State-Forest_Updated”
+  - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
+  - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
+- **Blackbird State Forest primitive campsites (16, Tybout Tract)** (intake-US-4609, agency (outside research camping-us-oct31), status ok, 14 facts) · [agriculture.delaware.gov](https://agriculture.delaware.gov/forest-service/camping/)
+  - booking.how = "online: agriculture.delaware.gov" · “link “Land Preservation””
+  - booking.url = "https://agriculture.delaware.gov/agland-preservation-planni · “link “Land Preservation” -> https://agriculture.delaware.gov/agland-preservation-planning/”
+  - checkin = "1 p.m" · “ion Confirmation is your Camping permit. No formal check-in is required for tent camping. Check-in begins at 1 p.m., check-out is at 11 a.m.”
+  - checkout = "11 a.m" · “mping permit. No formal check-in is required for tent camping. Check-in begins at 1 p.m., check-out is at 11 a.m. ADA sites and small-medium”
+  - fees = "$25 per night fee for each site at Blackbird or Redden Stat · “d areas. It is $5 cash sale for firewood – no other form of payment is accepted for wood. $25 per night fee for each site at Blackbird or Re”
+  - hookups.electric = false · “sites available at a first come first serve basis. State Forest Camping is Primitive. NO electric, NO water and NO septic hookups available ”
+  - map.date_how = "web page, year 2025 in the link" · “link “Blackbird Camping Map””
+  - map.url = "https://agriculture.delaware.gov/wp-content/uploads/sites/1 · “link “Blackbird Camping Map” -> https://agriculture.delaware.gov/wp-content/uploads/sites/108/2025/02/Blackbird-State-Forest_Updated”
+  - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
+  - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
 
 ## US-CO: 12 random samples (records with facts; seed = the date)
 
