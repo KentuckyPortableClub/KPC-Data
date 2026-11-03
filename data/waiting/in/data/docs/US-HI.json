@@ -132,14 +132,23 @@
    "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/kaena-point-trail/",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://dlnr.hawaii.gov/dsp/brochures/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Brochures')",
+    "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/kaena-point-trail/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dlnr.hawaii.gov)",
    "runs": [],
@@ -154,7 +163,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-10915": {
    "n": "Nakoa State Trail",
@@ -435,6 +445,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
@@ -1435,6 +1446,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1465,6 +1477,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1476,21 +1489,31 @@
    "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/heeia-state-park/",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://dlnr.hawaii.gov/dsp/brochures/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Brochures')",
+    "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/heeia-state-park/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dlnr.hawaii.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-2212": {
    "n": "Ka'ena Point State Park",
@@ -1510,7 +1533,9 @@
    "agency": "government agency (dlnr.hawaii.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -2711,14 +2736,14 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 102,
-  "map ok": 20,
-  "map found by the bot": 14,
+  "map ok": 22,
+  "map found by the bot": 16,
   "date on the map": 4,
   "posted date only": 11,
-  "date unknown": 5,
-  "no map": 82,
-  "rules ok": 44,
-  "needs browser": 50,
+  "date unknown": 7,
+  "no map": 80,
+  "rules ok": 46,
+  "needs browser": 48,
   "handover hints": 0,
   "runs hints": 4,
   "host resting / robots": 0,

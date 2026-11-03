@@ -130,6 +130,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -4277,6 +4278,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -4962,25 +4964,19 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/blm.gov/files/documents/files/OwyheeRiverCanWSA.pdf",
-    "posted": "May 14, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('WSA map')",
     "page": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/owyhee-river-canyon-wsa",
-    "map_page": 1
+    "posted": "May 14, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -4991,7 +4987,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13041": {
    "n": "Maverick-Medicine BLM Herd Management Area",
@@ -6819,7 +6816,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-11-03",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/laketahoebasin/alerts-notices",
@@ -7651,7 +7648,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-11-03",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/recmain/alerts-notices",
@@ -7846,6 +7843,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -7870,6 +7868,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -7975,6 +7974,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -8076,6 +8076,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -8203,9 +8204,17 @@
    "page": "https://www.outdoorsy.com/guide/high-rock-lake-wilderness",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.outdoorsy.com/guide/high-rock-lake-wilderness#map",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Map')",
+    "page": "https://www.outdoorsy.com/guide/high-rock-lake-wilderness",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -8219,7 +8228,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-9257": {
    "n": "Highland Ridge BLM Wilderness Area",
@@ -8262,6 +8272,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -8285,7 +8296,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -8984,12 +8997,12 @@
   "posted date only": 44,
   "date unknown": 10,
   "no map": 312,
-  "rules ok": 61,
-  "needs browser": 38,
+  "rules ok": 62,
+  "needs browser": 36,
   "handover hints": 0,
   "runs hints": 23,
   "host resting / robots": 0,
-  "map names the park": 42,
+  "map names the park": 41,
   "region overview only": 0
  }
 }

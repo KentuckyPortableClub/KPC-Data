@@ -696,6 +696,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1231,7 +1232,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-11-03",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "",
@@ -1572,9 +1573,9 @@
     "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
-    "how": "a link on the page in a browser ('Know before you go')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -1875,9 +1876,9 @@
     "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
-    "how": "a link on the page in a browser ('Know before you go')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2332,9 +2333,9 @@
     "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
-    "how": "a link on the page in a browser ('Know before you go')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2355,9 +2356,9 @@
     "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
-    "how": "a link on the page in a browser ('Know before you go')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2399,9 +2400,9 @@
     "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
-    "how": "a link on the page in a browser ('Know before you go')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2418,20 +2419,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11723": {
    "n": "Fish Creek Cove BLM Recreation Management Area",
@@ -2440,20 +2442,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11724": {
    "n": "Kingston Canyon WMA State Wildlife Habitat Management Area",
@@ -2483,20 +2486,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11729": {
    "n": "Creek Pasture BLM Recreation Management Area",
@@ -2505,20 +2509,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11730": {
    "n": "Paiute  ATV Trail BLM Special Recreation Management Area",
@@ -2527,20 +2532,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11731": {
    "n": "The Energy Loop: Huntington/Eccles Canyons Scenic National Parkway",
@@ -2572,20 +2578,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11733": {
    "n": "McMillan Spring BLM Recreation Management Area",
@@ -2594,20 +2601,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11736": {
    "n": "Deer Creek Campground BLM Recreation Management Area",
@@ -2616,20 +2624,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Kanab Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11737": {
    "n": "Starr Spring BLM Recreation Management Area",
@@ -2638,13 +2649,13 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
@@ -2653,7 +2664,8 @@
     "2026-11-01: page https://www.blm.gov/visit/starr-spring-campground replaced (page fix: column F BLM page shows \"Access Denied ... content not published or has moved\" in the owner's browser pass; current page of the same site found with BLM site search and read in browser)"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11739": {
    "n": "Three Peaks RC Track BLM Special Recreation Management Area",
@@ -2673,7 +2685,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -2683,21 +2697,30 @@
    "page": "https://www.blm.gov/visit/calf-creek-recreation-area-day-use-site",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahGrandStaircaseEscalanteNationalMonumentTravelMap_1.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('MONUMENT GEOREFERENCED MAP')",
+    "page": "https://www.blm.gov/visit/calf-creek-recreation-area-day-use-site",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11743": {
    "n": "Upper Valley Granary Wayside BLM Recreation Management Area",
@@ -2706,20 +2729,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11744": {
    "n": "Alkali Ridge BLM Historic Preservation Site",
@@ -2751,20 +2775,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11746": {
    "n": "Devil's Rock Garden Day Use BLM Recreation Management Area",
@@ -2773,20 +2798,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Kanab Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11749": {
    "n": "Grand Gultch BLM Special Recreation Management Area",
@@ -2795,20 +2823,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11750": {
    "n": "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
@@ -2817,20 +2846,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11751": {
    "n": "Fish & Owl Loop Trail BLM Recreation Management Area",
@@ -2839,20 +2869,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11752": {
    "n": "Collins Canyon BLM Recreation Management Area",
@@ -2861,20 +2892,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11754": {
    "n": "Chamberlain's Ranch Trailhead BLM Recreation Management Area",
@@ -2883,20 +2915,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11756": {
    "n": "Dance Hall Rock BLM Historic Area",
@@ -2905,20 +2938,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Kanab Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11757": {
    "n": "Lambs Knoll Climbing Site BLM Recreation Management Area",
@@ -2927,20 +2963,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by St George Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11758": {
    "n": "Guacamole Trail BLM Recreation Management Area",
@@ -2949,20 +2988,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11761": {
    "n": "Quail Creek Reservoir Designated Dispersed Camping Area BLM Special Recreation Management Area",
@@ -2971,20 +3011,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by St George Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11762": {
    "n": "Clay Flat Kiosk BLM Recreation Management Area",
@@ -2993,20 +3036,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11763": {
    "n": "Land Hill Heritage Site BLM Historic Preservation Site",
@@ -3015,20 +3059,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11764": {
    "n": "Welcome Spring BLM Special Recreation Management Area",
@@ -3037,20 +3082,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11765": {
    "n": "Mojave Desert Joshua Tree Road Scenic Backway BLM Recreation Management Area",
@@ -3059,20 +3105,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by St George Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11766": {
    "n": "Mansard Trail BLM Recreation Management Area",
@@ -3081,20 +3130,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 26 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
     "url": "",
-    "how": "",
-    "status": "not found"
+    "status": "not found (a page shared by 32 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11767": {
    "n": "Sevier River Canyon BLM Recreation Management Area",
@@ -13020,7 +13070,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r04/ashley",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/ashley",
@@ -13055,7 +13105,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r04/dixie",
-    "kind_note": "forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/dixie",
@@ -13139,7 +13189,7 @@
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
@@ -17278,16 +17328,16 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 692,
-  "map ok": 88,
-  "map found by the bot": 66,
+  "map ok": 89,
+  "map found by the bot": 67,
   "date on the map": 23,
-  "posted date only": 55,
+  "posted date only": 56,
   "date unknown": 10,
-  "no map": 604,
-  "rules ok": 63,
-  "needs browser": 418,
+  "no map": 603,
+  "rules ok": 58,
+  "needs browser": 391,
   "handover hints": 0,
-  "runs hints": 13,
+  "runs hints": 19,
   "host resting / robots": 0,
   "map names the park": 82,
   "region overview only": 0

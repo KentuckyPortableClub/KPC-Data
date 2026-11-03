@@ -13,7 +13,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-GA | 237 | 143 | 97 | 127 | 16 | 85 | 42 | 94 | 42 | 59 | 0 |
 | US-AL | 155 | 78 | 58 | 61 | 15 | 40 | 23 | 77 | 34 | 1 | 0 |
 | US-SC | 167 | 52 | 41 | 49 | 2 | 16 | 34 | 115 | 67 | 0 | 0 |
-| US-FL | 460 | 241 | 225 | 218 | 24 | 193 | 24 | 219 | 63 | 17 | 0 |
+| US-FL | 460 | 241 | 225 | 218 | 24 | 193 | 24 | 219 | 63 | 16 | 0 |
 | US-MS | 155 | 33 | 25 | 21 | 0 | 19 | 14 | 122 | 45 | 93 | 0 |
 | US-IN | 229 | 71 | 68 | 68 | 18 | 48 | 5 | 158 | 11 | 0 | 0 |
 | US-IL | 219 | 103 | 97 | 34 | 5 | 84 | 14 | 116 | 166 | 0 | 0 |
@@ -36,26 +36,26 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-DE | 89 | 9 | 8 | 9 | 0 | 5 | 4 | 80 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 4 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 115 | 104 | 88 | 37 | 53 | 25 | 191 | 40 | 2 | 0 |
-| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 23 | 0 |
+| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 22 | 0 |
 | US-OK | 205 | 121 | 114 | 112 | 2 | 106 | 13 | 80 | 41 | 0 | 0 |
 | US-TX | 222 | 163 | 78 | 157 | 56 | 48 | 59 | 59 | 89 | 3 | 0 |
 | US-KS | 145 | 16 | 8 | 15 | 1 | 12 | 3 | 129 | 15 | 0 | 0 |
-| US-NE | 201 | 20 | 14 | 16 | 1 | 12 | 7 | 181 | 24 | 4 | 0 |
+| US-NE | 201 | 20 | 14 | 16 | 1 | 12 | 7 | 181 | 24 | 3 | 0 |
 | US-CO | 276 | 89 | 65 | 68 | 1 | 81 | 7 | 186 | 42 | 1 | 0 |
 | US-WY | 294 | 46 | 37 | 29 | 6 | 25 | 15 | 248 | 44 | 1 | 0 |
 | US-ID | 362 | 62 | 52 | 46 | 15 | 33 | 14 | 299 | 45 | 0 | 0 |
 | US-MT | 254 | 94 | 84 | 30 | 11 | 61 | 22 | 159 | 82 | 3 | 0 |
-| US-NV | 367 | 55 | 48 | 42 | 1 | 44 | 10 | 312 | 61 | 38 | 0 |
+| US-NV | 367 | 55 | 48 | 41 | 1 | 44 | 10 | 312 | 62 | 36 | 0 |
 | US-AZ | 123 | 57 | 36 | 39 | 2 | 40 | 15 | 66 | 41 | 1 | 0 |
 | US-NM | 123 | 87 | 72 | 60 | 25 | 54 | 8 | 36 | 31 | 1 | 0 |
 | US-CA | 410 | 280 | 103 | 240 | 128 | 120 | 32 | 130 | 129 | 3 | 1 |
 | US-OR | 440 | 181 | 165 | 123 | 72 | 71 | 38 | 259 | 80 | 81 | 0 |
 | US-WA | 536 | 362 | 349 | 322 | 113 | 68 | 181 | 174 | 101 | 0 | 0 |
 | US-AK | 179 | 61 | 43 | 39 | 6 | 34 | 21 | 118 | 43 | 0 | 0 |
-| US-HI | 102 | 20 | 14 | 16 | 4 | 11 | 5 | 82 | 44 | 50 | 0 |
+| US-HI | 102 | 22 | 16 | 16 | 4 | 11 | 7 | 80 | 46 | 48 | 0 |
 | US-MI | 388 | 207 | 201 | 199 | 51 | 145 | 11 | 181 | 26 | 254 | 0 |
 | US-OH | 276 | 44 | 32 | 43 | 11 | 30 | 3 | 232 | 274 | 0 | 0 |
-| US-UT | 692 | 88 | 66 | 82 | 23 | 55 | 10 | 604 | 63 | 418 | 0 |
+| US-UT | 692 | 89 | 67 | 82 | 23 | 56 | 10 | 603 | 58 | 391 | 0 |
 | CA-ON | 1180 | 448 | 448 | 353 | 29 | 93 | 326 | 732 | 119 | 256 | 0 |
 | CA-QC | 838 | 70 | 61 | 49 | 4 | 22 | 44 | 768 | 116 | 44 | 0 |
 | CA-NB | 562 | 12 | 12 | 8 | 0 | 4 | 8 | 550 | 11 | 5 | 0 |
@@ -2658,7 +2658,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-10454 Rebel State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-10455 Rosedown Plantation State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-10456 Esler Field Wildlife Management Area: no map link on file and none on the park page
-- US-10562 Port Hudson State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-10562 Port Hudson State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-10563 Fort Johnson-Vernon Wildlife Management Area: no map link on file and none on the park page
 - US-12489 Bogue Chitto Wildlife Management Area: no map link on file and none on the park page
 - US-12490 Flatwoods Savanna Wildlife Management Area: no map link on file and none on the park page
@@ -3389,7 +3389,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 |---|---|---|---|---|---|---|
 | US-13010 | Dry Valley BLM Special Recreation Manage | https://www.blm.gov/sites/blm.gov/files/documents/files/public-room-california-dry-valley- | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Aug 30, 2022 |  ✗ | managed by the BLM Redding Field Office |
 | US-8303 | Sloan Canyon National Conservation Area | https://www.blm.gov/sites/blm.gov/files/documents/files/Nevada_Sloan_Canyon_biking_map.pdf | pdf · the agency site | — (date unknown, checked 2026-11-03) · posted Nov 05, 2020 | https://www.blm.gov/programs/recreation/know-before-you-go ✓ |  |
-| US-13039 | Owyhee River Wilderness Area | https://www.blm.gov/sites/blm.gov/files/documents/files/OwyheeRiverCanWSA.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted May 14, 2025 |  ✗ |  |
+| US-13039 | Owyhee River Wilderness Area | https://www.blm.gov/sites/blm.gov/files/documents/files/OwyheeRiverCanWSA.pdf | pdf · the agency site | — (date unknown, checked 2026-11-03) · posted May 14, 2025 | https://www.blm.gov/programs/recreation/know-before-you-go ✓ |  |
 | US-4393 | Gold Butte National Monument | https://www.blm.gov/sites/default/files/docs/2022-06/Nevada-Gold_Butte_NM_NLCS_Map.pdf | pdf · the agency site | — (date unknown, checked 2026-11-03) · posted 2022-06 | https://www.blm.gov/programs/recreation/know-before-you-go ✓ |  |
 | US-7494 | Red Rock Canyon National Conservation Ar | https://www.blm.gov/sites/blm.gov/files/documents/files/NV_RedRockCanyon_NCA_0.pdf | pdf ✓name · on file, checked by a person or the link | 2021 (the PDF file's own stamp (may be the print da) · posted Sep 09, 2021 |  ✗ |  |
 | US-13151 | Shoshone OHV Trail System BLM Recreation | https://www.blm.gov/sites/default/files/documents/files/PublicRoom_Nevada_ShoshoneOHVTrail | pdf · the agency site | — (date unknown, checked 2026-11-03) · posted Nov 05, 2020 |  ✗ |  |
@@ -3427,8 +3427,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-11050 | Ice Age Fossils State Park | https://parks.nv.gov/images/Ice_Age_04_April_2019Ice_Age_Fossils_State_Park_April_2019_-_S | image ✓name · image: the name is known from the file n · outside research | — (date unknown, checked 2026-11-01) · posted 2019 | https://parks.nv.gov/ice-age-fossils-state-park-park-rules ✓ |  |
 | US-2635 | Spring Mountain Ranch State Park | https://parks.nv.gov/forms/Spring_Mountain_Ranch_Trail_Map_1_canyon_NET_otln_reduced_2014- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2014-02 | https://parks.nv.gov/spring-mountain-ranch-state-park-park-rules ✓ |  |
 | US-4445 | South Fork State Recreation Area | https://parks.nv.gov/forms/South_Fork_State_Recreation_Area_1_Hastings_NET_otln_reduced_20 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2014-02 | https://parks.nv.gov/south-fork-sra-park-rules ✓ |  |
-| US-4458 | Lake Tahoe Basin Management Unit Nationa | https://www.fs.usda.gov/r05/laketahoebasin/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted September 22, 2026 | https://www.fs.usda.gov/recmain/alerts-notices ✗ |  |
-| US-13307 | Mount Rose Wilderness National Forest | https://www.fs.usda.gov/r05/laketahoebasin/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted September 22, 2026 | https://www.fs.usda.gov/laketahoebasin/alerts-notices ✗ |  |
+| US-4458 | Lake Tahoe Basin Management Unit Nationa | https://www.fs.usda.gov/r05/laketahoebasin/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted September 22, 2026 | https://www.fs.usda.gov/recmain/alerts-notices ✗ |  |
+| US-13307 | Mount Rose Wilderness National Forest | https://www.fs.usda.gov/r05/laketahoebasin/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted September 22, 2026 | https://www.fs.usda.gov/laketahoebasin/alerts-notices ✗ |  |
 
 ### US-NV no map yet (312): the reason
 - US-10345 Carson Lake and Pasture Wildlife Management A: no map link on file and none on the park page
@@ -4099,26 +4099,27 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0119 | Hawaiian Islands National Wildlife Refug | https://www.fws.gov/refuge/hawaiian-islands/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/hawaiian-islands/visit-us/rules-policies ✓ |  |
 | US-0129 | Pearl Harbor National Wildlife Refuge | https://www.fws.gov/refuge/pearl-harbor/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ | managed by the U.S. Fish and Wildlife Service |
 | US-0124 | James Campbell National Wildlife Refuge | https://www.fws.gov/refuge/james-campbell/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/james-campbell/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
-| US-10916 | Kapaʻeleʻele State Trail | https://dlnr.hawaii.gov/dsp/files/2022/12/Kapaeleele_Koa.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2022-12 | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
-| US-6422 | Lapakahi State Historical Park | https://dlnr.hawaii.gov/dsp/files/2022/12/Lapakahi-brochure_2014.pdf | pdf ✓name · outside research | 2014-05-14 (file stamp 2014 (older than the posting 2022 ) · posted 2022-12 |  ✗ |  |
-| US-2226 | Wailua River State Park | https://dlnr.hawaii.gov/dsp/files/2014/09/Poliahu-Brochure-2-sided.pdf | pdf ✓name · outside research | 2008-09-24 (file stamp 2008 (older than the posting 2014 ) · posted 2014-09 |  ✗ |  |
 | US-10915 | Nakoa State Trail | https://dlnr.hawaii.gov/dsp/files/2022/12/Nakoa-Brochure-2011-1.pdf | pdf · the agency site | 2012-02-22 (file stamp 2012 (older than the posting 2022 ) · posted 2022-12 | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
 | US-6425 | Diamond Head State Preserve | https://dlnr.hawaii.gov/dsp/files/2014/09/hsp_dh_brochure_2012.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2014-09 |  ✗ |  |
+| US-2211 | Heeia State Park | https://dlnr.hawaii.gov/dsp/brochures/ | page · the agency site | — (date unknown, checked 2026-11-03) · posted — | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
 | US-2209 | Ahupua'a O Kahana State Park | https://dlnr.hawaii.gov/dsp/files/2022/12/Ahupuaa_o_Kahana_SP.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2022-12 |  ✗ |  |
-| US-10917 | ʻAiea Loop State Trail | https://dlnr.hawaii.gov/dsp/files/2022/12/Keaiwa-_Heiau_SRA.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2022-12 | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
+| US-10916 | Kapaʻeleʻele State Trail | https://dlnr.hawaii.gov/dsp/files/2022/12/Kapaeleele_Koa.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2022-12 | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
+| US-10914 | Ka‘ena Point State Trail | https://dlnr.hawaii.gov/dsp/brochures/ | page · the agency site | — (date unknown, checked 2026-11-03) · posted — | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
+| US-2226 | Wailua River State Park | https://dlnr.hawaii.gov/dsp/files/2014/09/Poliahu-Brochure-2-sided.pdf | pdf ✓name · outside research | 2008-09-24 (file stamp 2008 (older than the posting 2014 ) · posted 2014-09 |  ✗ |  |
+| US-6422 | Lapakahi State Historical Park | https://dlnr.hawaii.gov/dsp/files/2022/12/Lapakahi-brochure_2014.pdf | pdf ✓name · outside research | 2014-05-14 (file stamp 2014 (older than the posting 2022 ) · posted 2022-12 |  ✗ |  |
+| US-10924 | Kuaokala Game Reserve | https://dlnr.hawaii.gov/recreation/files/2016/07/UnitA_KuaokalaGMA.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2016-07 | https://dlnr.hawaii.gov/dofaw/rules/ ✓ |  |
 | US-10913 | Diamond Head Summit State Trail | https://dlnr.hawaii.gov/dsp/files/2014/09/hsp_dh_brochure_2012.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2014-09 | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
 | US-6429 | Pu'u O Mahuka Heiau State Historic Site | https://dlnr.hawaii.gov/dsp/files/2022/12/PuuOMahukaHeiau.pdf | pdf ✓name · outside research | 2008-09-24 (file stamp 2008 (older than the posting 2022 ) · posted 2022-12 |  ✗ |  |
-| US-10924 | Kuaokala Game Reserve | https://dlnr.hawaii.gov/recreation/files/2016/07/UnitA_KuaokalaGMA.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2016-07 | https://dlnr.hawaii.gov/dofaw/rules/ ✓ |  |
-| US-0043 | Kalaupapa National Historical Park | https://www.nps.gov/kala/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted December 14, 2022 | https://www.nps.gov/kala/learn/management/lawsandpolicies.htm ✓ |  |
+| US-10917 | ʻAiea Loop State Trail | https://dlnr.hawaii.gov/dsp/files/2022/12/Keaiwa-_Heiau_SRA.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2022-12 | https://dlnr.hawaii.gov/dsp/administrative-rules/ ✓ |  |
 | US-0037 | Hawai'i Volcanoes National Park | https://www.nps.gov/havo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted September 27, 2023 | https://www.nps.gov/havo/learn/management/lawsandpolicies.htm ✓ |  |
-| US-7916 | Pearl Harbor National Memorial | https://www.nps.gov/perl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted June 30, 2021 | https://www.nps.gov/perl/learn/management/lawsandpolicies.htm ✓ |  |
 | US-7915 | Honouliuli National Historic Site | https://www.nps.gov/hono/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted March 11, 2025 | https://www.nps.gov/hono/learn/management/lawsandpolicies.htm ✓ |  |
+| US-7916 | Pearl Harbor National Memorial | https://www.nps.gov/perl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted June 30, 2021 | https://www.nps.gov/perl/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4565 | Ala Kahakai National Historic Trail | https://www.nps.gov/alka/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted January 12, 2026 | https://www.nps.gov/alka/learn/management/lawsandpolicies.htm ✗ |  |
+| US-0043 | Kalaupapa National Historical Park | https://www.nps.gov/kala/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted December 14, 2022 | https://www.nps.gov/kala/learn/management/lawsandpolicies.htm ✓ |  |
 
-### US-HI no map yet (82): the reason
+### US-HI no map yet (80): the reason
 - US-0971 World War II Valor in the Pacific National Mo: no map link on file and none on the park page
 - US-10912 'Ualaka'a State Trail: no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/) (needs browser: host on the browser list)
-- US-10914 Ka‘ena Point State Trail: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-10918 Waʻahila Ridge State Trail: no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/) (needs browser: host on the browser list)
 - US-10919 Na Ala Hele State Trail: no map link on file and none on the park page (needs browser: the page is built by script)
 - US-10921 Hawaii Capital National Historic District: no map link on file and none on the park page
@@ -4154,8 +4155,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-12095 Halele'a Forest Reserve: no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/) (needs browser: host on the browser list)
 - US-2208 Akaka Falls State Park: no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/) (needs browser: map page on the browser list (a download button may hide the file))
 - US-2210 Ha'ena State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-2211 Heeia State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-2212 Ka'ena Point State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2214 Kekaha Kai State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2215 Koke`e State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 
 ## US-MI sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -4332,22 +4334,22 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
 | US-11112 | Factory Butte BLM Recreation Management  | https://www.blm.gov/sites/blm.gov/files/BLMUtahFactoryButteMap.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-11661 | Bar M Trail System BLM Recreation Manage | https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahKlonzo%26MoabBrandsMap.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-5976 | Sand Mountain BLM Recreation Management  | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahSandMountainOpenOHVAreaMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-5993 | Transcontinental Railroad BCB National H | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahTranscontinentalRailroadMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-11705 | Poison Spider Mesa BLM Recreation Manage | https://www.blm.gov/sites/default/files/documents/files/BLMUtahPoisonSpiderMesa.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ | is managed by Moab Field Office |
-| US-5758 | Dolores River BLM Recreation Management  | https://www.blm.gov/sites/blm.gov/files/Moab_DoloresRiverMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
 | US-6088 | Red Mountain BLM Wilderness Area | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahRedMountainWildernessMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-5897 | Lower Last Chance BLM Wilderness Area | https://www.blm.gov/programs/national-conservation-lands/utah | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
-| US-5883 | Henry Mountains BLM Recreation Managemen | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahHenryMountainsMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-6096 | Beaver Dam Wash National Conservation Ar | https://www.blm.gov/sites/blm.gov/files/documents/files/UT_BeaverDamWash_NCA_UPDATE.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-11661 | Bar M Trail System BLM Recreation Manage | https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahKlonzo%26MoabBrandsMap.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
 | US-5974 | Little Sahara BLM Recreation Management  | https://www.blm.gov/sites/blm.gov/files/BLMUtahLittleSahara.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-11099 | Klondike Bluffs BLM Recreation Managemen | https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahKlondikeBluffsMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-5987 | Pahvant Valley Heritage Trail BLM Recrea | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahPahvantValleyHeritageTrail.pdf | pdf ✓name · outside research | 2016-09-06 (file stamp 2016 (older than the posting 2020 ) · posted Nov 05, 2020 |  ✗ |  |
+| US-11705 | Poison Spider Mesa BLM Recreation Manage | https://www.blm.gov/sites/default/files/documents/files/BLMUtahPoisonSpiderMesa.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ | is managed by Moab Field Office |
+| US-3386 | Bears Ears BLM National Monument | https://www.blm.gov/sites/blm.gov/files/docs/2022-04/Bears%20Ears%20National%20Monument%20 | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2022-04 |  ✗ |  |
+| US-6044 | Amasa Basin BLM Recreation Management Ar | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahAmasaBasin.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-5883 | Henry Mountains BLM Recreation Managemen | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahHenryMountainsMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-5881 | Crack Canyon BLM Wilderness Area | https://www.blm.gov/sites/blm.gov/files/uploads/BLMUtahCrackCanyonWildernessStudyArea.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-6096 | Beaver Dam Wash National Conservation Ar | https://www.blm.gov/sites/blm.gov/files/documents/files/UT_BeaverDamWash_NCA_UPDATE.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-5945 | Valley of the Gods BLM Recreation Manage | https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahValleyOfTheGodsMap.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Jul 29, 2021 |  ✗ |  |
 | US-5930 | Bicknell Bottoms State Waterfowl Managem | https://capitolreefcountry.com/outdoor-activities/trails/ | page ✓name · linked from the agency page (capitolreef | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 | US-5898 | Scenic Byway 143 - Utah's Patchwork Nati | https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2023/map | page ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2023 |  ✗ |  |
 | US-0558 | Fish Springs National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2025-09/fish-springs-national-wildlife-r | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2025-09 |  ✗ |  |
-| US-10813 | Ouray National Fish Hatchery | https://www.fws.gov/fish-hatchery/ouray/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
 | US-5756 | Browns Park National Wildlife Management | https://www.fws.gov/refuge/browns-park/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/browns-park-national-wildlife-refuge/rul ✓ | is administered by the U.S. Fish and Wildlife Service |
+| US-10813 | Ouray National Fish Hatchery | https://www.fws.gov/fish-hatchery/ouray/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
 | US-0557 | Bear River Migratory Bird Refuge Nationa | https://www.fws.gov/sites/default/files/documents/2025-09/bear-river-migratory-bird-refuge | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2025-09 | https://www.fws.gov/locations/bear-river-migratory-bird-refuge/rules-a ✓ | managed by the U.S. Fish and Wildlife Service |
 | US-0559 | Ouray National Wildlife Refuge | https://www.fws.gov/refuge/ouray/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/ouray-national-wildlife-refuge/rules-and ✓ |  |
 | US-0895 | Virgin National Wild and Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
@@ -4382,7 +4384,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-3077 | Gunlock State Park | https://stateparks.utah.gov/wp-content/uploads/gunlock-digital-brochure-2026.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2026 |  ✗ |  |
 | US-11921 | The Casting of the Lots – Dominguez-Esca | https://wikimapia.org/10213548/Casting-of-Lots#:~:text=%22TH | page · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 
-### US-UT no map yet (604): the reason
+### US-UT no map yet (603): the reason
 - US-10061 Pine Canyon WMA State Conservation Area: no map link on file and none on the park page
 - US-10730 Cedar Mountain Day Use Site BLM Special Recre: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-10794 Logan Canyon National Scenic Byway National P: no map link on file and none on the park page
