@@ -1,6 +1,6 @@
 # GIS hunter questions (tiers, Oct 30)
 
-650 rows, 34 open: SURE 19 (chat 2 rechecks, chat 11 samples 10%), LIKELY 15 (chat 11 grades). 0 old NOs never re-asked.
+648 rows, 32 open: SURE 19 (chat 2 rechecks, chat 11 samples 10%), LIKELY 13 (chat 11 grades). 0 old NOs never re-asked.
 
 | area | tier | park | official record | ~acres | why | answer | links |
 |---|---|---|---|---|---|---|---|
@@ -190,8 +190,6 @@
 | CA-BC | LIKELY | CA-3310 Cates Park | Cates Park/ Whey-Ah-Wichen (BC local and) | 55 | shared cate; extra: park - / record whey, wichen | OPEN | [record](https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3585281&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-3310) |
 | CA-BC | LIKELY | CA-3358 Colony Farm Community Gardens at ƛ̓éxətə | Colony Farm Regional Park (BC local and) | 629 | shared colony, farm; extra: park community, extm, garden / record - | OPEN | [record](https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3586370&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-3358) |
 | CA-BC | LIKELY | CA-3601 Hickey Park | Hickey Street Reservoir Park (BC local and) | 8 | shared hickey; extra: park - / record reservoir, street | OPEN | [record](https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3584715&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-3601) |
-| CA-BC | LIKELY | CA-3358 Colony Farm Community Gardens at ƛ̓éxətə | Colony Farm Regional Park (BC local and) | 629 | shared colony, farm; extra: park community, extm, garden / record - | OPEN | [record](https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3572240&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-3358) |
-| CA-BC | LIKELY | CA-3601 Hickey Park | Hickey Street Reservoir Park (BC local and) | 8 | shared hickey; extra: park - / record reservoir, street | OPEN | [record](https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3570585&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-3601) |
 | CA-MB | ? | CA-2390 Cape Tatnam Wildlife Management Area | Kaskatamagan Wildlife Management Area (CPCAD / Parks Canada) | 615,122 |  | NO | [record](https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=17879&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-2390) |
 | CA-MB | ? | CA-5465 Tall Grass Prairie Preserve Natural Area | Loewen - MHHC (CPCAD / Parks Canada) | 332 |  | NO | [record](https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18025&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-5465) |
 | CA-NB | ? | CA-0785 Mary's Point Ramsar Site | Shepody National Wildlife Area (CPCAD / Parks Canada) | 2,575 |  | NO | [record](https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22296&outFields=*&returnGeometry=false&f=html) · [POTA](https://pota.app/#/park/CA-0785) |
