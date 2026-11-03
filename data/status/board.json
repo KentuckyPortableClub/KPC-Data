@@ -1012,9 +1012,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "5 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); POTA spots to Discord (silent: no finished run in 3 h (expected every 3 h or less)); activation / CW boards (silent: no finished run in 3 h (expected every 3 h or less)); band alerts (NOAA) (silent: no finished run in 3 h (expect",
+   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648568487",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "2026-11-03 12:15 UTC: 1 skipped run(s) started again: kpc-waiting-room.yml (missed Nov 03 11:13 UTC)",
+   "made": "2026-11-03 13:54 UTC: 5 skipped run(s) started again: kpc-closures.yml (missed Nov 03 12:38 UTC); kpc-copy-from-links.yml (missed Nov 03 13:11 UTC); kpc-eu-alerts.yml (missed Nov 03 12:40 UTC); kpc-waiting-room.yml (missed Nov 03 12:42 UTC); kpc-watch.yml (missed Nov 03 11:53 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41634184493",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648568487",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1188,9 +1188,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-03",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1325 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-03.md ",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1074 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-03.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41572643236",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41648640965",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
