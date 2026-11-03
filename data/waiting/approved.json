@@ -927,7 +927,14 @@
    "path": "data/waiting/in/data/ca-key/",
    "by": "chat 11",
    "date": "2026-11-02",
-   "chat11": "KEY YES CA-41513281651 (built 22:32 UTC): +2 outlines (Confederation Beach Park, Whitehern), 0 lost; this build holds only AB, NB, NL, NS, ON and PE, so the Québec réserves faunique pins are not touched."
+   "chat11": "WITHDRAWN 2026-11-02 8:20 PM CST (was a whole-folder KEY YES for CA-41513281651): not a release. Quality graded this build: ON 25% right, why-not.json 25%, index.json counts Quebec 427 vs 440 live (this build has no Quebec file); it also conflicts with chat 2's 2:35 PM KEY NO request. A new per-file verdict (with chat 2's recheck) replaces it.",
+   "chat11_original": "KEY YES CA-41513281651 (built 22:32 UTC): +2 outlines (Confederation Beach Park, Whitehern), 0 lost; this build holds only AB, NB, NL, NS, ON and PE, so the Québec réserves faunique pins are not touched.",
+   "withdrawn": {
+    "when": "2026-11-02 8:20 PM CST",
+    "by": "Super Head Bot for Brandon (PR \"Hold Canada key: withdraw whole-folder approval #125\")",
+    "why": "the release gate checks only the build id, so this YES would have released all 8 held Canada files, including the ones Quality failed (CA-ON, why-not.json, index.json)",
+    "undo": "put chat11_original back into chat11 and delete chat11_original + withdrawn (or revert this PR); it then also needs chat 2's recheck line (Rule G-4) before the gate releases it"
+   }
   }
  ]
 }
