@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T21:51Z",
+ "checked": "2026-11-03T23:48Z",
  "switched_on": false,
  "results": [
   {
@@ -299,7 +299,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.in.gov/dA/83329b738c/hardy_lake_trail.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -463,13 +463,11 @@
   {
    "path": "data/docs/US-OR.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://stateparks.oregon.gov/index.cfm?do=main.loadFile&load=_siteFil"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-PA.json",
