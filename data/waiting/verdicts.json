@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T10:14Z",
+ "checked": "2026-11-03T10:21Z",
  "switched_on": false,
  "results": [
   {
@@ -77,33 +77,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/campinfo/US-AL.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-DE.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-IN.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/campinfo/US-MA.json",
    "kind": "campinfo",
    "why": [
@@ -113,15 +86,6 @@
     "no live copy: first time this file is published"
    ],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/campinfo/US-MI.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
   },
   {
    "path": "data/campinfo/US-NC.json",
@@ -263,7 +227,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/298d8f9cac/versailles_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -478,13 +442,11 @@
   {
    "path": "data/docs/US-UT.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://capitolreefcountry.com/outdoor-activities/trails/"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-VA.json",
@@ -1191,6 +1153,42 @@
    "kind": "key",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-AL.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-DE.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-IN.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-MI.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {
