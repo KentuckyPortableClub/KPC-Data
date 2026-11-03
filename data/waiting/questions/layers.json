@@ -612878,7 +612878,9 @@
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "name_field": "RESNAME",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.83). Pin inside the record. Best name match 0.83 on record name 'Kyle Ranch'. Record about 17.1 acres, the park page https://southwestexplorers.com/kyle-kiel-ranch"
   },
   {
    "area": "US-ID",
@@ -612895,16 +612897,20 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1187&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0054",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "layer collector (outside research Oct 30)",
    "st": "ID",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
    "name_field": "UNIT_NAME",
    "licence": "",
    "key_now": "the park already has an outline: record 3230 (Nez Perce National Historical Park); is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: record 4,209 ac = more than 10x the official 104 ac; the park already has an official outline (this could replace it)"
+   "auto_recheck": "TO CHAT 11: record 4,209 ac = more than 10x the official 104 ac; the park already has an official outline (this could replace it)",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Nez Perce National Historical Park'. Record a",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-MT",
@@ -612921,15 +612927,19 @@
    "record_link": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?objectIds=209&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11215",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "layer collector (outside research Oct 30)",
    "st": "MT",
    "url": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70",
    "name_field": "MANAME",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Bear Paw Battlefield'. Record about 1065.1 ac",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "BG",
@@ -613035,7 +613045,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613060,7 +613072,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613112,7 +613126,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613163,7 +613179,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613187,7 +613205,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613212,7 +613232,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613236,7 +613258,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613260,7 +613284,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613420,7 +613446,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613444,7 +613472,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613576,7 +613606,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613600,7 +613632,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613651,7 +613685,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613675,7 +613711,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613699,7 +613737,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613750,7 +613790,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613774,7 +613816,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613798,7 +613842,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613822,7 +613868,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613927,7 +613975,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -613952,7 +614002,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614003,7 +614055,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614054,7 +614108,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614106,7 +614162,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614212,7 +614270,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614344,7 +614404,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614422,7 +614484,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614446,7 +614510,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614713,7 +614779,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614737,7 +614805,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614789,7 +614859,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614841,7 +614913,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614947,7 +615021,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -614971,7 +615047,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615076,7 +615154,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615155,7 +615235,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a nature kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615233,7 +615315,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615257,7 +615341,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615363,7 +615449,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615442,7 +615530,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a protected kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a protected kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615494,7 +615584,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615600,7 +615692,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a monument natural kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615705,7 +615799,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615729,7 +615825,9 @@
    "st": "BG",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "BG",
@@ -615970,7 +616068,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a historical kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a historical kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616107,7 +616207,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Rednitztal - Mitte); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Rednitztal - Mitte); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616132,7 +616234,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Bayerische Rhön); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Bayerische Rhön); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616158,7 +616262,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Berchtesgaden) + 3 more; is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)"
+   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616211,7 +616317,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Geigelstein) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Geigelstein) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616236,7 +616344,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Moore im Salzach-Hügelland); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Moore im Salzach-Hügelland); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616261,7 +616371,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Alz vom Chiemsee bis Altenmarkt); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Alz vom Chiemsee bis Altenmarkt); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616286,7 +616398,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Untersberg); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Untersberg); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616339,7 +616453,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Kalten); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Kalten); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616364,7 +616480,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Auer Weidmoos); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Auer Weidmoos); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616389,7 +616507,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Chiemsee); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Chiemsee); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616442,7 +616562,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Steigerwald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Steigerwald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616466,7 +616588,9 @@
    "st": "DE",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616490,7 +616614,9 @@
    "st": "DE",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616515,7 +616641,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Altmühltal mit Brunst-Schwaigau und Altmühlsee); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Altmühltal mit Brunst-Schwaigau und Altmühlsee); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616652,7 +616780,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Kempter Wald mit Oberem Rottachtal); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Kempter Wald mit Oberem Rottachtal); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616677,7 +616807,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Attlesee); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Attlesee); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616730,7 +616862,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Illerdurchbruch zwischen Reicholzried und Lautrach); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Illerdurchbruch zwischen Reicholzried und Lautrach); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616755,7 +616889,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Kürnacher Wald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Kürnacher Wald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616780,7 +616916,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Sulzschneider Moore); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Sulzschneider Moore); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -616805,7 +616943,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Staffelwald bei Irsee und Lehmgrube Hammerschmiede); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Staffelwald bei Irsee und Lehmgrube Hammerschmiede); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617111,7 +617251,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Bayerischer Wald) + 2 more; is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)"
+   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617137,7 +617279,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Laufenbachtal); is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the pin is 109 m outside the record"
+   "auto_recheck": "TO CHAT 11: the pin is 109 m outside the record",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617163,7 +617307,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Moore im Bereich Sonnen-Wegscheid mit Abschnitten des Rannat); is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the pin is 120 m outside the record"
+   "auto_recheck": "TO CHAT 11: the pin is 120 m outside the record",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617300,7 +617446,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Altmühltal); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Altmühltal); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617325,7 +617473,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Weltenburger Enge); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Weltenburger Enge); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617378,7 +617528,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Ebersberger und Großhaager Forst); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Ebersberger und Großhaager Forst); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617403,7 +617555,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Paar und Ecknach); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Paar und Ecknach); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617569,7 +617723,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Strogn mit Hammerbach und Köllinger Bächlein); is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the pin is 103 m outside the record"
+   "auto_recheck": "TO CHAT 11: the pin is 103 m outside the record",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617622,7 +617778,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Haspelmoor) + 2 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Haspelmoor) + 2 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617758,7 +617916,9 @@
    "st": "DE",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617839,7 +617999,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Karwendel und Karwendelvorgebirge); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Karwendel und Karwendelvorgebirge); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617864,7 +618026,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Mangfallgebirge) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Mangfallgebirge) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617889,7 +618053,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Taubenberg) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Taubenberg) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617914,7 +618080,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Wattersdorfer Moor); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Wattersdorfer Moor); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617939,7 +618107,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Osterseen) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Osterseen) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -617964,7 +618134,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Ellbach- und Kirchseemoor); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Ellbach- und Kirchseemoor); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618017,7 +618189,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Vogelfreistätte Ammersee-Südufer); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Vogelfreistätte Ammersee-Südufer); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618294,7 +618468,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Loisach-Kochelsee-Moore) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Loisach-Kochelsee-Moore) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618375,7 +618551,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Brandmoos); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Brandmoos); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618400,7 +618578,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Weiherlandschaft bei Wiesenfelden); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Weiherlandschaft bei Wiesenfelden); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618509,7 +618689,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Untere Alz); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Untere Alz); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618534,7 +618716,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Salzach und Unterer Inn); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Salzach und Unterer Inn); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618559,7 +618743,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Isarmündung) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Isarmündung) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -618584,7 +618770,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-fauna-flora-habitat-gebiet-de-fauna-flora-habitat-gebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Vilstal bei Marklkofen); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Vilstal bei Marklkofen); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619057,7 +619245,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Frankenhöhe); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Frankenhöhe); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619082,7 +619272,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Steigerwald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Steigerwald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619135,7 +619327,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Bayerischer Wald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Bayerischer Wald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619160,7 +619354,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Altmühltal); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Altmühltal); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619185,7 +619381,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Frankenwald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Frankenwald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619238,7 +619436,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Oberer Bayerischer Wald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Oberer Bayerischer Wald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619263,7 +619463,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Nördlicher Oberpfälzer Wald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Nördlicher Oberpfälzer Wald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619316,7 +619518,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturpark-de-naturpark.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Augsburg - westliche Wälder); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Augsburg - westliche Wälder); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619397,7 +619601,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Eggstätt-Hemhofer Seenplatte); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Eggstätt-Hemhofer Seenplatte); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619785,7 +619991,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Attlesee); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Attlesee); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619893,7 +620101,9 @@
    "st": "DE",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619974,7 +620184,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Weltenburger Enge); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Weltenburger Enge); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -619999,7 +620211,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Isarauen zwischen Hangenham und Moosburg); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Isarauen zwischen Hangenham und Moosburg); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620108,7 +620322,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Amperauen mit Leitenwälder zwischen Fürstenfeldbruck und Sch); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Amperauen mit Leitenwälder zwischen Fürstenfeldbruck und Sch); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620133,7 +620349,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Mallertshofer Holz mit Heiden); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Mallertshofer Holz mit Heiden); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620158,7 +620376,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Allacher Forst und Angerlohe); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Allacher Forst und Angerlohe); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620295,7 +620515,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Ellbach- und Kirchseemoor); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Ellbach- und Kirchseemoor); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620404,7 +620626,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Vogelfreistätte Ammersee-Südufer); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Vogelfreistätte Ammersee-Südufer); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620457,7 +620681,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Brandmoos); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Brandmoos); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620482,7 +620708,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Weiherlandschaft bei Wiesenfelden); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Weiherlandschaft bei Wiesenfelden); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620507,7 +620735,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Charlottenhofer Weihergebiet, Hirtlohweiher und Langwiedteic); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Charlottenhofer Weihergebiet, Hirtlohweiher und Langwiedteic); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620532,7 +620762,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Untere Alz); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Untere Alz); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620725,7 +620957,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Isarauen bei Goben); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Isarauen bei Goben); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620834,7 +621068,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Naturschutzgebiet 'Vogelfreistätte Mittlere Isarstauseen'); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Naturschutzgebiet 'Vogelfreistätte Mittlere Isarstauseen'); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620887,7 +621123,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
    "name_field": "name",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Untere Illerauen); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Untere Illerauen); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620911,7 +621149,9 @@
    "st": "DE",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620935,7 +621175,9 @@
    "st": "DE",
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620960,7 +621202,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Bayerische Rhön); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Bayerische Rhön); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -620986,7 +621230,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Berchtesgaden) + 3 more; is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)"
+   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621012,7 +621258,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Östliche Chiemgauer Alpen); is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the record is a naturschutzgebiet (another kind of place than the park)"
+   "auto_recheck": "TO CHAT 11: the record is a naturschutzgebiet (another kind of place than the park)",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621065,7 +621313,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Steigerwald); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Steigerwald); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621090,7 +621340,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Altmühltal mit Brunst-Schwaigau und Altmühlsee); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Altmühltal mit Brunst-Schwaigau und Altmühlsee); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621115,7 +621367,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Maintal zwischen Schweinfurt und Dettelbach); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Maintal zwischen Schweinfurt und Dettelbach); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621140,7 +621394,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Allgäuer Hochalpen) + 2 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Allgäuer Hochalpen) + 2 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621165,7 +621421,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Hoher Ifen); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Hoher Ifen); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621190,7 +621448,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Ammergebirge); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Ammergebirge); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621215,7 +621475,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Itz-, Rodach- und Baunachaue); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Itz-, Rodach- und Baunachaue); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621241,7 +621503,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Bayerischer Wald) + 2 more; is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)"
+   "auto_recheck": "TO CHAT 11: the record is a nationalpark (another kind of place than the park)",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621266,7 +621530,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Altmühltal); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Altmühltal); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621291,7 +621557,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Ismaninger Speichersee und Fischteiche); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Ismaninger Speichersee und Fischteiche); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621316,7 +621584,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Nördliches Erdinger Moos); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Nördliches Erdinger Moos); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621341,7 +621611,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Spessart); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Spessart); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621366,7 +621638,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Bayerisches Bodenseeufer); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Bayerisches Bodenseeufer); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621391,7 +621665,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Karwendel und Karwendelvorgebirge); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Karwendel und Karwendelvorgebirge); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621416,7 +621692,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Mangfallgebirge) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Mangfallgebirge) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621441,7 +621719,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Taubenberg) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Taubenberg) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621467,7 +621747,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Schachen und Reintal) + 1 more; is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the record is a naturschutzgebiet (another kind of place than the park)"
+   "auto_recheck": "TO CHAT 11: the record is a naturschutzgebiet (another kind of place than the park)",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621492,7 +621774,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Murnauer Moos) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Murnauer Moos) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621545,7 +621829,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Ammerseegebiet); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Ammerseegebiet); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621598,7 +621884,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Loisach-Kochelsee-Moore) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Loisach-Kochelsee-Moore) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621651,7 +621939,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Vogelfreistätte Innstausee bei Attel und Freiham) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Vogelfreistätte Innstausee bei Attel und Freiham) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621676,7 +621966,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Salzach und Unterer Inn); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Salzach und Unterer Inn); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621701,7 +621993,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Isarmündung) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Isarmündung) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621726,7 +622020,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Naturschutzgebiet 'Vogelfreistätte Mittlere Isarstauseen'); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Naturschutzgebiet 'Vogelfreistätte Mittlere Isarstauseen'); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621751,7 +622047,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Untere Isar zwischen Landau und Plattling); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Untere Isar zwischen Landau und Plattling); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621777,7 +622075,9 @@
    "name_field": "NAME",
    "licence": "",
    "key_now": "the park already has an outline: record None (Wälder im Donautal); is this record BETTER?",
-   "auto_recheck": "TO CHAT 11: the park is a fauna flora kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a fauna flora kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621802,7 +622102,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Wörnitztal); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Wörnitztal); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "DE",
@@ -621827,7 +622129,9 @@
    "url": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-vogelschutzgebiet-de-vogelschutzgebiet.geojson.gz",
    "name_field": "NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record None (Schwäbisches Donaumoos); is this record BETTER?"
+   "key_now": "the park already has an outline: record None (Schwäbisches Donaumoos); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -621878,7 +622182,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -621929,7 +622235,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_2",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -622142,7 +622450,9 @@
    "st": "NV",
    "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
    "name_field": "name",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: banned source (Google My Maps / Protected Planet / WDPA)."
   },
   {
    "area": "US-NV",
@@ -622167,7 +622477,9 @@
    "url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
    "name_field": "name",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: chat 11 already said NO to another record for this park; the park is a fish hatchery historical monument kind the record does not name"
+   "auto_recheck": "TO CHAT 11: chat 11 already said NO to another record for this park; the park is a fish hatchery historical monument kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.67). Pin inside the record. Best name match 0.67 on record name 'GALENA CREEK REGIONAL PARK'. Record about 340.9 acres; no park size found to compare."
   },
   {
    "area": "CA-NB",
@@ -622191,7 +622503,9 @@
    "st": "NB",
    "url": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.75). Pin inside the record. Best name match 0.75 on record name 'Cape Jourimain National Wildlife Area'. Record about 1481.7 acres; no park size found to compare."
   },
   {
    "area": "CA-BC",
@@ -622216,7 +622530,9 @@
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
    "name_field": "COMMON_SITE_NAME",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a historic town kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a historic town kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-NB",
@@ -622287,15 +622603,19 @@
    "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?objectIds=24&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5219",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "layer collector (outside research Oct 30)",
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a memorial recreation kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a memorial recreation kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Riverview Park'. Record about 5.9 acres; no p",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NB",
@@ -622373,7 +622693,9 @@
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "t1_band": "CONFLICT",
+   "t1_why": "CONFLICT: the POTA pin is 0 m outside the record. Pin 0 m from the record. Best name match 1.00 on record name 'Larche Memorial Park'. Record about 1.8 acres; no park size found to compare."
   },
   {
    "area": "CA-NB",
@@ -622560,7 +622882,9 @@
    "st": "UT",
    "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
    "name_field": "name",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: banned source (Google My Maps / Protected Planet / WDPA)."
   },
   {
    "area": "US-AR",
@@ -622584,7 +622908,9 @@
    "st": "AR",
    "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
    "name_field": "RECPROJECTSITEAREANAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.83). Pin inside the record. Best name match 0.83 on record name 'LOWER LAKE'. Record about 44.6 acres; no park size found to compare."
   },
   {
    "area": "US-AR",
@@ -622608,7 +622934,9 @@
    "st": "AR",
    "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
    "name_field": "RECPROJECTSITEAREANAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "CONFLICT",
+   "t1_why": "CONFLICT: the POTA pin is 7 m outside the record; the sizes are 409x apart. Pin 7 m from the record. Best name match 0.75 on record name 'RIVER ROAD'. Record about 51.4 acres, the park page https://ww"
   },
   {
    "area": "US-NM",
@@ -622633,7 +622961,9 @@
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
    "name_field": "UNIT_NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 3403 (Salinas Pueblo Missions National Monument); is this record BETTER?"
+   "key_now": "the park already has an outline: record 3403 (Salinas Pueblo Missions National Monument); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.75). Pin inside the record. Best name match 0.75 on record name 'Salinas Pueblo Missions National Monument'. Record about 1071.9 acres; no park size found to compa"
   },
   {
    "area": "US-OR",
@@ -622658,7 +622988,9 @@
    "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
    "name_field": "RMA_NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 13087 (Sandy Ridge Trailhead) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record 13087 (Sandy Ridge Trailhead) + 1 more; is this record BETTER?",
+   "t1_band": "CONFLICT",
+   "t1_why": "CONFLICT: record 7034 ('Sandy Ridge Trail System') nearby matches the park name better. Pin inside the record. Best name match 0.60 on record name 'Sandy Ridge Trailhead'. Record about 51.2 acres; no "
   },
   {
    "area": "CA-BC",
@@ -622682,7 +623014,9 @@
    "st": "BC",
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
    "name_field": "COMMON_SITE_NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-NS",
@@ -622706,7 +623040,9 @@
    "st": "NS",
    "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
    "name_field": "NAME1",
-   "licence": ""
+   "licence": "",
+   "t1_band": "CONFLICT",
+   "t1_why": "CONFLICT: the POTA pin is 8 m outside the record. Pin 8 m from the record. Best name match 0.73 on record name 'Marconi Wireless Station'. Record about 4.1 acres; no park size found to compare."
   },
   {
    "area": "CA-NS",
@@ -622730,7 +623066,9 @@
    "st": "NS",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
    "name_field": "INT_NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.75). Pin inside the record. Best name match 0.75 on record name 'Cape George Provincial Park'. Record about 135.9 acres; no park size found to compare."
   },
   {
    "area": "CA-NS",
@@ -622755,7 +623093,9 @@
    "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
    "name_field": "HRTG_NM",
    "licence": "",
-   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name"
+   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name",
+   "t1_band": "CONFLICT",
+   "t1_why": "CONFLICT: the POTA pin is 71 m outside the record. Pin 71 m from the record. Best name match 1.00 on record name 'Fernwood'. Record about 1.4 acres; no park size found to compare."
   },
   {
    "area": "CA-ON",
@@ -622779,7 +623119,9 @@
    "st": "ON",
    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
    "name_field": "LEGAL_NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.80). Pin inside the record. Best name match 0.80 on record name 'Kettle Creek Conservation Authority'. Record about 126641.0 acres; no park size found to compare."
   },
   {
    "area": "CA-ON",
@@ -622804,7 +623146,9 @@
    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2",
    "name_field": "PROTECTED_AREA_NAME_ENG",
    "licence": "",
-   "key_now": "the park already has an outline: record 16112 (Whitefish River Conservation Reserve) + 1 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record 16112 (Whitefish River Conservation Reserve) + 1 more; is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.75); the sizes are 2.8x apart. Pin inside the record. Best name match 0.75 on record name 'WHITEFISH RIVER CONSERVATION RESERVE'. Record about 9467.9 acres, the pa"
   },
   {
    "area": "US-NV",
@@ -622828,7 +623172,9 @@
    "st": "NV",
    "url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
    "name_field": "name",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.64). Pin inside the record. Best name match 0.64 on record name 'Lake Mead National Recreation Area'. Record about 563047.6 acres; no park size found to compare."
   },
   {
    "area": "US-UT",
@@ -622852,7 +623198,9 @@
    "st": "UT",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
    "name_field": "Property_N",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.64). Pin inside the record. Best name match 0.64 on record name 'Wahweap Hatchery'. Record about 263.7 acres; no park size found to compare."
   },
   {
    "area": "US-UT",
@@ -622876,7 +623224,9 @@
    "st": "UT",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
    "name_field": "Property_N",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.70). Pin inside the record. Best name match 0.70 on record name 'Kamas Hatchery'. Record about 74.6 acres; no park size found to compare."
   },
   {
    "area": "US-UT",
@@ -622900,7 +623250,9 @@
    "st": "UT",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
    "name_field": "Property_N",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.70). Pin inside the record. Best name match 0.70 on record name 'Midway Hatchery'. Record about 43.9 acres; no park size found to compare."
   },
   {
    "area": "CA-QC",
@@ -622951,7 +623303,9 @@
    "st": "ON",
    "url": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
    "name_field": "name_en",
-   "licence": ""
+   "licence": "",
+   "t1_band": "CONFLICT",
+   "t1_why": "CONFLICT: the POTA pin is 98 m outside the record. Pin 98 m from the record. Best name match 0.60 on record name 'Island Park Drive at Hampton Park'. Record about 40.2 acres; no park size found to com"
   },
   {
    "area": "CA-NB",
@@ -623002,7 +623356,9 @@
    "st": "NL",
    "url": "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0",
    "name_field": "NAME_E",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.80). Pin inside the record. Best name match 0.80 on record name 'Cape St. Mary's Ecological Reserve'. Record about 2763.4 acres; no park size found to compare."
   },
   {
    "area": "CA-YT",
@@ -623027,7 +623383,9 @@
    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
    "name_field": "PARK_NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 21762 (Tombstone); is this record BETTER?"
+   "key_now": "the park already has an outline: record 21762 (Tombstone); is this record BETTER?",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "W-GB",
@@ -623051,7 +623409,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623075,7 +623435,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623099,7 +623461,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623123,7 +623487,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623147,7 +623513,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623171,7 +623539,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623195,7 +623565,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623219,7 +623591,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623243,7 +623617,9 @@
    "st": "GB",
    "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw:NRW_SSSI&outputFormat=application/json",
    "name_field": "sssi_name",
-   "licence": "no licence found"
+   "licence": "no licence found",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: the answer was not JSON."
   },
   {
    "area": "W-GB",
@@ -623267,7 +623643,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623291,7 +623669,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623315,7 +623695,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623339,7 +623721,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623363,7 +623747,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623387,7 +623773,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623411,7 +623799,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623435,7 +623825,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623459,7 +623851,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623483,7 +623877,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623507,7 +623903,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623531,7 +623929,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623555,7 +623955,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623579,7 +623981,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623603,7 +624007,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623627,7 +624033,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623651,7 +624059,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623675,7 +624085,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623699,7 +624111,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623723,7 +624137,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623747,7 +624163,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623771,7 +624189,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623795,7 +624215,9 @@
    "st": "GB",
    "url": "https://www.daera-ni.gov.uk/sites/default/files/publications/daera/National%20Nature%20Reserves%20-%20British%20National%20Grid_1.zip",
    "name_field": "NAME",
-   "licence": "no licence found"
+   "licence": "no licence found",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "W-GB",
@@ -623819,7 +624241,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623843,7 +624267,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623867,7 +624293,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623891,7 +624319,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623915,7 +624345,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623939,7 +624371,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623963,7 +624397,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -623987,7 +624423,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624011,7 +624449,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624035,7 +624475,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624059,7 +624501,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624083,7 +624527,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624107,7 +624553,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624131,7 +624579,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624155,7 +624605,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624179,7 +624631,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624203,7 +624657,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624227,7 +624683,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624251,7 +624709,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624275,7 +624735,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   },
   {
    "area": "W-GB",
@@ -624299,7 +624761,9 @@
    "st": "GB",
    "url": "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect",
    "name_field": "distinctive_name_1",
-   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data"
+   "licence": "ORDNANCE SURVEY DATA LICENCE Your use of OS OpenData is subject to the terms at http://os.uk/opendata/licence. The copyright acknowledgements to use for the attribution statement are: Contains OS data",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: HTTP 404."
   }
  ]
 }
