@@ -8,7 +8,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | WATER-ONLY | 41 |
 | LIVE-ONLY | 5 |
 | ASK-THE-PUBLISHER | 421 |
-| RETRY | 365 |
+| RETRY | 366 |
 | REJECT | 1653 |
 
 ## READY (2)
@@ -4080,7 +4080,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as Hard look~12
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (365)
+## RETRY (366)
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
@@ -6928,6 +6928,13 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: status rest
 - overlap: already read as sgidb
 - closes: not probed
+
+### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer
+- WHY: did not open 3 times (out of time): chat 9 checks the url
+- publisher: public-services.slip.wa.gov.au → unsure ()
+- terms: ? · source ?
+- facts: status out of time
 
 ## REJECT (1653)
 

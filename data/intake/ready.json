@@ -214626,6 +214626,35 @@
    "ver": 1,
    "verdict": "RETRY",
    "why": "did not open 3 times (rest): chat 9 checks the url"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {},
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "status": "out of time"
+   },
+   "probed": "2026-11-03",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "unsure",
+    ""
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer",
+   "retry": false,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer|SLIP_Public_Services/Industry_and_Mining_WFS|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {},
+   "test": "",
+   "title": "SLIP_Public_Services/Industry_and_Mining_WFS",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open 3 times (out of time): chat 9 checks the url"
   }
  ],
  "updated": "2026-11-03"
