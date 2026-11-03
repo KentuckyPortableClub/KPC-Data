@@ -572,16 +572,6 @@ def t5_health(raw_parts: list, geom) -> dict:
             continue
         if not g.is_valid:
             reason = shapely.is_valid_reason(g)
-            # Nov 2 (chat 2, HQ pile-down plan A): a fault that make_valid repairs into a real area is repaired, not a flag
-            # (the agency's own record has a bow-tie / nested shell; the map draws the repaired shape). Only a shape that
-            # repairs to nothing stays flagged.
-            try:
-                fx = shapely.make_valid(g)
-                if not fx.is_empty and any(q.area > 0 for q in polys_of(fx)):
-                    notes.append(f"repaired: {reason}")
-                    continue
-            except Exception:  # noqa: BLE001
-                pass
             if "self-intersection" in reason.lower() or "ring self-intersection" in reason.lower():
                 if "SELF-INTERSECTION" not in flags:
                     flags.append("SELF-INTERSECTION")
@@ -598,15 +588,12 @@ def t5_health(raw_parts: list, geom) -> dict:
     pm = polys_of(gm)
     slivers = sum(1 for p in pm if p.area > 0 and 2 * shapely.maximum_inscribed_circle(p, 0.25).length < 10)
     holes = sum(1 for p in pm for r in p.interiors if Polygon(r).area < 100)
-    # Nov 2 (chat 2, HQ pile-down plan A): pieces under 10 m wide and holes under 100 m2 cannot be seen on any map and change
-    # no 2-fer (the 50-yard patch is far bigger): dropped as repairs and noted, not flagged. A shape made ONLY of slivers stays flagged.
-    if slivers and slivers == len(pm):
+    if slivers:
         flags.append("SLIVERS")
-        notes.append(f"{slivers} piece(s) under 10 m wide (the whole shape)")
-    elif slivers:
-        notes.append(f"repaired: {slivers} piece(s) under 10 m wide dropped")
+        notes.append(f"{slivers} piece(s) under 10 m wide")
     if holes:
-        notes.append(f"repaired: {holes} hole(s) under 100 m2 filled")
+        flags.append("TINY HOLES")
+        notes.append(f"{holes} hole(s) under 100 m2")
     if len(pm) > 50:
         b = gm.bounds
         span = math.hypot(b[2] - b[0], b[3] - b[1])
@@ -616,8 +603,6 @@ def t5_health(raw_parts: list, geom) -> dict:
     res = {"flag": flags[0] if flags else "PASS", "pieces": len(pm)}
     if flags:
         res.update(flags=flags, note="; ".join(notes))
-    elif notes:
-        res["note"] = "; ".join(notes)
     return res
 
 

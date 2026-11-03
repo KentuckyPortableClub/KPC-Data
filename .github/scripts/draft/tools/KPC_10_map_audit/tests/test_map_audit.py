@@ -89,16 +89,14 @@ def test_t5_health():
     good = square(LON, LAT, 500)
     assert A.t5_health([good], good)["flag"] == "PASS"
     bow = Polygon([(LON, LAT), (LON + 0.01, LAT + 0.01), (LON + 0.01, LAT), (LON, LAT + 0.01), (LON, LAT)])
-    r = A.t5_health([bow], A.shapely.make_valid(bow))   # Nov 2: a bow-tie make_valid repairs = a note, not a flag
-    assert r["flag"] == "PASS" and "repaired" in r["note"]
+    r = A.t5_health([bow], A.shapely.make_valid(bow))
+    assert "SELF-INTERSECTION" in r["flags"]
     sliver = square(LON, LAT, 500).union(box(LON + 0.02, LAT, LON + 0.03, LAT + 5 * M))
-    assert "SLIVERS" not in A.t5_health([sliver], sliver).get("flags", []) and "repaired" in A.t5_health([sliver], sliver)["note"]
-    only = box(LON + 0.02, LAT, LON + 0.03, LAT + 5 * M)
-    assert "SLIVERS" in A.t5_health([only], only)["flags"]
+    assert "SLIVERS" in A.t5_health([sliver], sliver)["flags"]
     outer = square(LON, LAT, 500)
     hole = square(LON + 100 * M, LAT + 100 * M, 5)
     holed = Polygon(outer.exterior.coords, [hole.exterior.coords])
-    assert "TINY HOLES" not in A.t5_health([holed], holed).get("flags", []) and "repaired" in A.t5_health([holed], holed)["note"]
+    assert "TINY HOLES" in A.t5_health([holed], holed)["flags"]
     bits = MultiPolygon([square(LON + i * 0.02, LAT, 100) for i in range(60)])   # 60 pieces over ~100 km
     assert "SCATTERED" in A.t5_health([bits], bits)["flags"]
     assert A.t5_health([], None)["flag"] == "EMPTY"
