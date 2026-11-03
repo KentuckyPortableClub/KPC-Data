@@ -4,7 +4,9 @@ whatever has been approved to leave waiting room'; 3:04 PM: the waiting room rel
 ONE batch, run by hand (waiting-room workflow, mode 'release-approved') on the day chat 8 + chat 11 have written PASS:
   data/waiting/approved.json  {"items": [
       {"what": "keyed-parking", "chat11": "PASS v3b (Oct 29)", "by": "HQ", "date": "2026-10-30"},
-      {"path": "data/waiting/in/data/access/US-NY.json", "chat11": "YES", "chat2": "rechecked", "date": "..."}]}
+      {"path": "data/waiting/in/data/access/US-NY.json", "chat11": "YES", "chat2": "rechecked", "date": "2026-11-03", "time": "10:15 AM"}]}
+  - Nov 2 bot fixes (rule 22): every item needs a 'date' and, on Nov 2, a Central 'time' at or after 9:37 AM; a key item needs the
+    held build id in its own 'build' field. Older items count as not given (for a release and for trust).
   - an item needs a chat 11 verdict (YES / PASS ...); a waiting-room file also needs chat 2's recheck (Rule G-4);
   - 'keyed-parking' = chat 9's HOLD file data/access-leads/keyed-pull-hold.json: its points are merged into each state's access
     file (a point within 30 m of one we have is skipped), credited 'Recreation.gov / National Park Service data', and every changed
@@ -77,14 +79,14 @@ def held_build(kind):
 
 
 def build_mismatch(it, rel):
-    """Brandon Nov 2 7:11 AM: 'the YES is tied to that id'. A key item releases only when its 'build' is the held build's id.
-    -> '' when fine, else the reason. Held folders built before the stamp existed (no id) keep the old rule."""
+    """Brandon Nov 2 7:11 AM: 'the YES is tied to that id'. A key item releases only when its 'build' FIELD is the held build's id.
+    -> '' when fine, else the reason. Nov 2 bot fixes (Quality 8a, rule 22): an id written only in the verdict's text no longer
+    counts, and a held key folder with NO build stamp is never released (the check used to be skipped)."""
     kind = str(it.get('what') or '')
     if kind not in KEY_KINDS: return ''
     hb = held_build(kind)
-    if not hb: return ''
+    if not hb: return f'the held {kind} folder has no build stamp (data/waiting/in/data/{kind}/index.json "build"): nothing can prove which build the YES graded'
     ib = str(it.get('build') or '')
-    if not ib and hb in str(it.get('chat11') or ''): ib = hb   # Nov 2: chat 11 wrote the id in its verdict text ('KEY NO US-f3d48d30899 ...'): that counts
     if not ib: return f'the YES has no build id; the waiting room holds build {hb} (write "build": "{hb}" on the item)'
     if ib != hb: return f'the YES is for build {ib}, the waiting room holds build {hb}'
     return ''
@@ -137,8 +139,51 @@ def verdict_ok(v):
     return True, ''
 
 
+# Nov 2 bot fixes (Quality 3a / 8a, rule 22): grades from before the 9:37 AM CST restart count as not given. An approved.json item
+# counts (for a release AND for trust) only when it is dated after Nov 2, or dated Nov 2 with a 'time' (Central, like "10:15 AM")
+# at or after 9:37 AM.
+CUTOFF_DATE, CUTOFF_MIN = '2026-11-02', 9 * 60 + 37
+
+
+def item_minutes(it):
+    """the item's Central 'time' as minutes after midnight ('9:40 AM', '21:05', '2026-11-02 9:40 AM CST'), or None"""
+    t = str(it.get('time') or '')
+    m = re.search(r'(\d{1,2}):(\d{2})\s*([AP]\.?M\.?)?', t, re.I)
+    if not m: return None
+    h, mi = int(m.group(1)), int(m.group(2))
+    ap = (m.group(3) or '').upper().replace('.', '')
+    if ap == 'PM' and h != 12: h += 12
+    if ap == 'AM' and h == 12: h = 0
+    return h * 60 + mi if 0 <= h < 24 and 0 <= mi < 60 else None
+
+
+def before_cutoff(it):
+    """-> '' when the item is after the 9:37 AM restart, else the reason"""
+    d = str(it.get('date') or '')[:10]
+    if not re.match(r'\d{4}-\d{2}-\d{2}$', d): return 'the item has no date: rule 22 needs a date and a Central time after Nov 2 9:37 AM'
+    if d > CUTOFF_DATE: return ''
+    if d < CUTOFF_DATE: return f'the item is dated {d}, before the Nov 2 9:37 AM CST restart (rule 22: it counts as not given)'
+    mi = item_minutes(it)
+    if mi is None: return 'the item is dated Nov 2 with no "time": rule 22 needs a Central time at or after 9:37 AM (write "time": "h:mm AM/PM")'
+    if mi < CUTOFF_MIN: return f"the item is from Nov 2 {it.get('time')}, before the 9:37 AM CST restart (rule 22: it counts as not given)"
+    return ''
+
+
+NO_CHANGE = re.compile(r'nothing new, changed or gone|no change|nothing (new|changed)|unchanged', re.I)
+AUTO_GRADE = re.compile(r'\bauto(matic)?\b|\bbot check\b', re.I)
+
+
 TRUST_KINDS = {'campinfo', 'access', 'docs', 'truth', 'campfed', 'campstate', 'trails', 'leads', 'hours', 'campsites', 'cell', 'acres'}   # never 2-fers, keys, POTA, closures
 TRUST_RUN = 3   # Brandon Oct 31 10:00 PM ('I agree to all'): a bot kind whose last 3 chat-11 grades all passed is released by the bot, chat 11 samples 1 in 10
+
+
+def central_date():
+    try:
+        import datetime as _dt
+        from zoneinfo import ZoneInfo
+        return _dt.datetime.now(ZoneInfo('America/Chicago')).date().isoformat()
+    except Exception:  # noqa: BLE001
+        return time.strftime('%Y-%m-%d')
 
 
 def item_kind(it):
@@ -156,7 +201,12 @@ def trusted_kinds(items):
     for it in items:
         k = item_kind(it); v = str(it.get('chat11') or '').strip()
         if not k or not v: continue
-        hist.setdefault(k, []).append(verdict_ok(v)[0])
+        if before_cutoff(it): continue   # Nov 2 bot fixes (Quality 3a): trust starts over at the restart
+        ok = verdict_ok(v)[0]
+        # a grade that says nothing changed, or a bot's own automatic check, is not a person's grade: it never builds trust,
+        # but a NO still ends it
+        if ok and (NO_CHANGE.search(v) or AUTO_GRADE.search(str(it.get('by') or '') + ' ' + str(it.get('checked_by') or ''))): continue
+        hist.setdefault(k, []).append(ok)
     return {k for k, h in hist.items() if k in TRUST_KINDS and len(h) >= TRUST_RUN and all(h[-TRUST_RUN:])}
 
 
@@ -168,13 +218,23 @@ def auto_trusted(items, log):
     if not T: print('::notice title=Release approved (trusted)::no bot kind has 3 passed grades in a row yet'); return
     V = {r['path']: r for r in (W.load(W.W / 'verdicts.json', {}) or {}).get('results') or []}
     S = W.load(W.W / 'sample-for-chat11.json', {'about': 'files a trusted bot released by itself: chat 11 checks these (1 in 10); a NO item in approved.json ends that kind\'s trust', 'files': []}) or {}
-    n = 0
+    n, today = 0, central_date()
+    have = {(x.get('path'), x.get('date')) for x in S.get('files') or []}
     for rel, r in V.items():
         if r.get('kind') not in T or r.get('verdict') not in ('PASS', 'LIVE-FILTERED') or not (W.W / 'in' / rel).exists(): continue
+        # Nov 2 bot fixes (Quality 3b): verdicts.json may belong to an OLDER held copy (saves are last-wins). Judge the file that
+        # is held NOW and release only when that verdict passes too.
+        try:
+            now = W.judge(rel, W.load(W.W / 'in' / rel), *W.live_of(rel))
+            vnow = now.get('verdict') if isinstance(now, dict) else None
+        except Exception as e:  # noqa: BLE001
+            vnow = f'could not be checked ({type(e).__name__})'
+        if vnow not in ('PASS', 'LIVE-FILTERED'):
+            log.append({'item': rel, 'result': f'skipped (trusted kind {r["kind"]}): the file held now does not pass the check ({vnow}); the saved PASS was for an older copy'}); continue
         if not DRY: W.mode_release(rel)
-        n += 1; log.append({'item': rel, 'result': f"released (trusted kind {r['kind']}: last {TRUST_RUN} chat-11 grades passed)"})
-        if int(hashlib.md5((rel + time.strftime('%Y-%m-%d')).encode()).hexdigest(), 16) % 10 == 0:
-            S.setdefault('files', []).append({'path': rel, 'kind': r['kind'], 'date': time.strftime('%Y-%m-%d')})
+        n += 1; log.append({'item': rel, 'result': f"released (trusted kind {r['kind']}: last {TRUST_RUN} chat-11 grades since the Nov 2 restart passed; the held file re-checked: {vnow})"})
+        if int(hashlib.md5((rel + today).encode()).hexdigest(), 16) % 10 == 0 and (rel, today) not in have:
+            S.setdefault('files', []).append({'path': rel, 'kind': r['kind'], 'date': today}); have.add((rel, today))
     if not DRY: json.dump(S, open(W.W / 'sample-for-chat11.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     print(f"::notice title=Release approved (trusted)::trusted kinds {', '.join(sorted(T))}: {n} files released by themselves")
 
@@ -205,7 +265,7 @@ def per_park_release(A, log, U):
     if not held_dir.is_dir(): return
     if not str(it.get('chat2') or '').strip():   # Nov 2 (ledger 35): Rule G-4 holds for the per-park release too
         print("::notice title=Per-park release::waits for chat 2's recheck line (Rule G-4) on the KEY NO item"); return
-    bwhy = build_mismatch(it, 'data/us-key/')
+    bwhy = build_mismatch(it, 'data/us-key/') or before_cutoff(it)
     if bwhy: print(f'::notice title=Per-park release::{bwhy}'); return
     if not it.get('build') and changed_since_yes(it, 'data/us-key/'):
         print('::notice title=Per-park release::the held US key changed after the KEY NO: waits for chat 11 to grade the new build'); return
@@ -254,6 +314,8 @@ def main():
         key = json.dumps(it, sort_keys=True, ensure_ascii=False)
         if key in U: continue
         ok, why = verdict_ok(it.get('chat11'))   # Brandon Oct 29 5:16 PM 'Waiting Room 11 has to approve' = chat 11's own field
+        if ok:
+            why = before_cutoff(it); ok = not why   # Nov 2 bot fixes (Quality 8a, rule 22): nothing graded before the 9:37 AM restart moves
         if not ok:
             log.append({'item': it, 'result': f'skipped: {why}'}); print(f"::notice title=Release approved::skipped {it.get('what') or it.get('path')}: {why}"); continue
         if it.get('what') == 'keyed-parking':

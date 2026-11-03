@@ -112,7 +112,7 @@ jobs:
         run: |
           cd kpcdata
           ln -sfn ../out out 2>/dev/null; python3 .github/scripts/kpc_outside_tools.py summary || echo "::error title=kpc_outside_tools.py::stopped with an error (exit $?), see the log above"; rm -f out
-          cd ../out && git add -A && git commit -qm "outside tools: outputs (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          cd ../out && git add -A && git commit -qm "outside tools: outputs (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           cd ../kpcdata && bash ../links/.github/scripts/kpc_push_data.sh . "outside tools (review only): 2-fer check / converter / map links" data/fers-check data/intake/tools data/intake/docs-found-maplinks.json data/intake/docs-found-maplinks-possible.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Next run while work is left
         id: kept_green_4

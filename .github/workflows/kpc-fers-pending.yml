@@ -93,6 +93,15 @@ jobs:
           _skip = {a: _held_key(a[0]) for a in by if _held_key(a[0])}
           if _skip: print('::notice title=2-fer small batches::keys first: waiting for the key of ' + ', '.join(sorted({s for v in _skip.values() for s in v})))
           by = {a: xs for a, xs in by.items() if a not in _skip}
+          # Nov 2 bot fixes (Mapping #1, Quality 2a): THE MAP-AUDIT GATE. 2-fers start over area by area only when the gate
+          # (kpc_fers_gate.py -> data/status/fers-ready.json) says 'ready for 2-fers' for EVERY state of the batch. This bot started
+          # batches without asking it. A batch that is not ready stays waiting here; nothing is dropped.
+          try: _ready = {a for a, v in ((json.load(open('data/status/fers-ready.json')).get('areas')) or {}).items() if str(v.get('status') or '').startswith('ready for 2-fers')}
+          except Exception: _ready = set()
+          _gate = {a: [s for s in a[0].split() if s not in _ready] for a in by}
+          _gate = {a: v for a, v in _gate.items() if v}
+          if _gate: print('::notice title=2-fer small batches::map-audit gate: not ready yet, kept waiting: ' + ', '.join(sorted({s for v in _gate.values() for s in v})))
+          by = {a: xs for a, xs in by.items() if a not in _gate}
           started = 0
           for (sts, tag), xs in sorted(by.items(), key=lambda kv: -len(kv[1]))[:3]:
               refs = ' '.join(sorted({x['ref'] for x in xs}))
@@ -108,6 +117,11 @@ jobs:
           # (BOT E reruns it from then on). At most 3 states a run, fewest parks first; AK held (file-size fix), KY never (own key).
           python3 - <<'PY' || echo "::error title=inline Python::stopped with an error (exit $?), see the log above"
           import json, os, subprocess
+          # Nov 2 bot fixes (Mapping #1, Quality 2a): BOT F IS PAUSED. It starts whole-state 2-fer runs from the Fable 'DONE' lines and
+          # never asked the map-audit gate. The gate (kpc_fers_gate.py, run by the map audit and the watchdog) now starts every
+          # first run. To bring BOT F back it must first check data/status/fers-ready.json like the batch step above.
+          print('::notice title=2-fer first runs (BOT F)::paused (Nov 2 bot fixes): the map-audit gate starts first runs now')
+          raise SystemExit(0)
           try: done = json.load(open('links/.claude/build/research/fable-state-done.json'))
           except Exception: done = {}
           # HQ Oct 30 6:55 AM: also read the Fable file's own 'STATE XX DONE' lines (chats 3 / 8 write them there): no hand step

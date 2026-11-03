@@ -77,7 +77,9 @@ def one(key):
     sample += pick([r for r in changed if not r['by_answer']], 30 - len(sample))
     tot = {k: sum(v[k] for v in per.values()) for k in ('gained', 'lost', 'pieces_changed', 'grade_changed')}
     doc = {'about': f'{key}: the HELD build (data/waiting/in/data/{key}/) vs the LIVE key (data/{key}/). Chat 11: check the sample, then write '
-                    "KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': '" + key + "'). Written by kpc_key_summary.py.",
+                    "KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': '" + key + "', 'build': the held build id from "
+                    "data/waiting/in/data/" + key + "/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field "
+                    "or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
            'made': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'), 'totals': tot, 'per_area': per,
            'gained': gained, 'lost': lost, 'grade_changed': regrade[:200], 'sample': sample}
     OUT.mkdir(parents=True, exist_ok=True)

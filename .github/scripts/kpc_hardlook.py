@@ -172,12 +172,64 @@ def reask(rows, R):
     return n
 
 
+def keep_old(old, q):
+    """Nov 2 bot fixes (Quality 4a): a row written again keeps what a person or a chat wrote on it: a non-empty answer /
+    checked_by / how, and every key the reader itself does not write (notes, decisions ...)."""
+    old = old or {}
+    out = {**{k: v for k, v in old.items() if k not in q}, **q}
+    for k in ANSWER_KEYS:
+        if str(old.get(k) or '').strip() and not str(q.get(k) or '').strip() and not q.get('reread'): out[k] = old[k]
+    return out
+
+
+def merge_rows(mine, theirs):
+    """rows {ref: row}: carry the answers and extra keys of `theirs` (main, written by the chats while this job ran) into `mine`.
+    A row only on main is added. Their non-empty answer / checked_by / how wins (a person's answer beats the reader)."""
+    n = 0
+    for ref, t in (theirs or {}).items():
+        if not isinstance(t, dict): continue
+        m = mine.get(ref)
+        if m is None: mine[ref] = t; n += 1; continue
+        ch = False
+        for k, v in t.items():
+            if k in ANSWER_KEYS:
+                if str(v or '').strip() and v != m.get(k): m[k] = v; ch = True
+            elif k not in m: m[k] = v; ch = True
+        n += ch
+    return n
+
+
+def merge_main():
+    """kpc_hardlook.py merge-main: just before the save, read hardlook.json and pin-typos.json as they are on origin/main NOW and
+    carry their answers into this job's copy (the save used to overwrite the whole file: answers written meanwhile were lost)."""
+    import subprocess
+    if subprocess.run(['git', 'fetch', '-q', 'origin', 'main'], capture_output=True).returncode != 0:
+        note('merge-main: could not fetch main: the save may overwrite newer answers'); return 1
+    tot = 0
+    for f in (QF, PT):
+        r = subprocess.run(['git', 'show', f'origin/main:{f.as_posix()}'], capture_output=True, text=True)
+        if r.returncode != 0: continue   # not on main yet
+        try: theirs = json.loads(r.stdout)
+        except Exception: note(f'merge-main: {f} on main is not JSON: left as is'); continue  # noqa: BLE001
+        mine = load(f, None)
+        if not isinstance(mine, dict): mine = theirs
+        else: tot += merge_rows(mine.setdefault('rows', {}), (theirs or {}).get('rows') or {})
+        json.dump(mine, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    note(f'merge-main: {tot} row(s) took answers or rows from main before the save')
+    return 0
+
+
+
+ANSWER_KEYS = ('answer', 'checked_by', 'how')
+
 
 def redo(q):
     """A row to read again once (Nov 2, chat 12's list): tagged REREAD, or a reader gap (no id / name parsed, record not found,
-    a 400 answer, names not read) that nobody answered YES / NO."""
+    a 400 answer, names not read) that nobody answered.
+    Nov 2 bot fixes (Quality 4a): ANY answer stops a re-read (it only spared YES / NO, so NO PIN, PIN and NOT SURE answers
+    were erased and the row asked again)."""
     if q.get('reread'): return False
-    if str(q.get('answer') or '').upper().startswith(('YES', 'NO ')) or str(q.get('answer') or '').upper() == 'NO': return False
+    if any(str(q.get(k) or '').strip() for k in ANSWER_KEYS): return False
     if 'REREAD' in str(q.get('why') or ''): return True
     r = str(q.get('result') or '')
     return bool(REASK.match(r)) or (r == 'record found' and not q.get('names'))
@@ -209,7 +261,7 @@ def main():
         if ref in R and redo(R[ref]):   # Nov 2 (chat 12): a reader gap is read again ONCE; its old grade is kept as first_answer and the row is asked again
             q.update(reread=TODAY, first_answer=R[ref].get('answer'), first_result=R[ref].get('result'), answer='', checked_by='')
         if not m or not w:
-            q.update(read=TODAY, result='no record id / name the reader can ask (chat 11 reads the notes)'); n['no record id / name'] += 1; R[ref] = q; continue
+            q.update(read=TODAY, result='no record id / name the reader can ask (chat 11 reads the notes)'); n['no record id / name'] += 1; R[ref] = keep_old(R.get(ref), q); continue
         n['asked'] += 1
         base = f'{m.group(1)}/{m.group(2)}/query'
         j, err = query(base, w)
@@ -217,16 +269,16 @@ def main():
             j2, err2 = name_words_query(base, re.split(r'[\s/,;(]', w.replace('UPPER(', ''))[0].rstrip(')'), v.get('name'))
             if j2 and j2.get('features'): j, w = j2, w + ' (then a name-word search)'
         if j is None:
-            if re.match(r'HTTP 4|error 4', err) or 'robots' in err: q.update(read=TODAY, result=f'layer did not answer ({err})'); R[ref] = q
+            if re.match(r'HTTP 4|error 4', err) or 'robots' in err: q.update(read=TODAY, result=f'layer did not answer ({err})'); R[ref] = keep_old(R.get(ref), q)
             tries = int((R.get(ref) or {}).get('tries') or 0) + 1   # Nov 2: 47 rows were re-asked every chained run forever
             if tries >= 3: q.update(read=TODAY, result=f'layer did not answer 3 times ({err})', tries=tries)
             else: q['tries'] = tries
-            R[ref] = {**(R.get(ref) or {}), **q} if tries < 3 else q
+            R[ref] = {**(R.get(ref) or {}), **q} if tries < 3 else keep_old(R.get(ref), q)
             n['layer did not answer'] += 1; continue   # a time-out / 5xx: tried again next run, 3 times at most
         F = j.get('features') or []
-        if not F: q.update(read=TODAY, where=w, result='record not found with that id / name'); n['record not found'] += 1; R[ref] = q; continue
+        if not F: q.update(read=TODAY, where=w, result='record not found with that id / name'); n['record not found'] += 1; R[ref] = keep_old(R.get(ref), q); continue
         lat, lon = float(v.get('lat') or 0), float(v.get('lon') or 0)
-        if not (lat or lon): q.update(read=TODAY, result='record found, but no POTA pin on file to measure'); R[ref] = q; continue
+        if not (lat or lon): q.update(read=TODAY, result='record found, but no POTA pin on file to measure'); R[ref] = keep_old(R.get(ref), q); continue
         ds = [d for d in (dist_m(lat, lon, f.get('geometry') or {}) for f in F) if d is not None]
         pin = min(ds) if ds else None
         nf0 = re.split(r'[\s/,;(]', str(v.get('field') or '').strip())[0]
@@ -237,7 +289,7 @@ def main():
                        'pin %s m from the record: farther than 150 m and no PIN OFF evidence' % pin))
         if pin and pin > 150 and 'PIN OFF' in str(v.get('notes')):
             P['rows'][ref] = {'name': v.get('name'), 'pota_pin': [lat, lon], 'km_to_record': round(pin / 1000, 1), 'evidence': str(v.get('notes'))[:400], 'source': v.get('url'), 'date': TODAY}
-        n['record found'] += 1; R[ref] = q
+        n['record found'] += 1; R[ref] = keep_old(R.get(ref), q)
     n2 = reask(rows, R)   # chat 11 (Nov 1 3 PM): the rows with no record read back are asked again by place + name
     QF.parent.mkdir(parents=True, exist_ok=True)
     json.dump(Q, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False); json.dump(P, open(PT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
@@ -248,6 +300,9 @@ def main():
 
 
 if __name__ == '__main__':
+    if sys.argv[1:2] == ['merge-main']:
+        try: sys.exit(merge_main())
+        except Exception as e: note(f'merge-main stopped ({type(e).__name__}: {e})'); sys.exit(1)  # noqa: BLE001
     try: main()
     except Exception as e: note(f'stopped ({type(e).__name__}: {e})')  # noqa: BLE001
     sys.exit(0)

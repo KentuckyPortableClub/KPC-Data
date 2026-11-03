@@ -49,7 +49,7 @@ jobs:
           echo "::notice title=Campground layers::exit $E; $N state lists on tools-out camp_layers/"
           [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_status.py board 'Campground layers' green "$N state lists $(date -u +%F) (tools-out)" 'the camp-and-activate bot reads them; chat 11 grades through the waiting room' || true   # ok: a status-board line (reporting only)
-          (cd ../out && rm -rf camp_layers/work/cache && git add -A camp_layers && git commit -qm "campground layers (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          (cd ../out && rm -rf camp_layers/work/cache && git add -A camp_layers && git commit -qm "campground layers (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           true
       - name: Next run
         if: steps.r.outputs.more == 'yes'

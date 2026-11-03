@@ -53,7 +53,7 @@ jobs:
           N=$(python3 -c "import json;print(len(json.load(open('data/waiting/questions/no-recheck.json'))['questions']))" 2>/dev/null || echo 0)
           python3 .github/scripts/kpc_status.py board "NO rechecker" green "NO answers re-tested (tools-out no-recheck/summary.md)" "chat 11 looks at $N flagged rows (data/waiting/questions/no-recheck.json)" || true   # ok: a status-board line (reporting only)
           bash ../links/.github/scripts/kpc_push_data.sh . "NO rechecker: flags for chat 11" data/waiting/questions/no-recheck.json data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          (cd ../out && git add -A no-recheck && git commit -qm "NO rechecker (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          (cd ../out && git add -A no-recheck && git commit -qm "NO rechecker (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           true
       - name: Next run while rows are left
         if: steps.r.outputs.more == 'yes'
