@@ -297748,6 +297748,408 @@
    "kind": "Parks",
    "result": "failed",
    "why": "RuntimeError: answer 400"
+  },
+  "US-2625|https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0": {
+   "ref": "US-2625",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared beaver; extra: park nevada / record -",
+   "record_name": "Beaver Dam State Park",
+   "acres": 5359
+  },
+  "US-3389|https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0": {
+   "ref": "US-3389",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared backcountry, lake, spooner; extra: park - / record nevada, tahoe",
+   "record_name": "Spooner and Backcountry Lake Tahoe-Nevada State Park",
+   "acres": 13348
+  },
+  "US-6035|https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/1": {
+   "ref": "US-6035",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no shared proper word",
+   "record_name": "UTAH",
+   "acres": 32423
+  },
+  "US-11257|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11257",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared crane, creek, reservoir; extra: park lake / record -",
+   "record_name": "Crane Creek Reservoir",
+   "acres": 2285
+  },
+  "US-11379|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11379",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared paddock, reservoir, valley; extra: park lake / record -",
+   "record_name": "Paddock Valley Reservoir",
+   "acres": 1169
+  },
+  "US-11382|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11382",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared home, mountain, reservoir; extra: park lake / record -",
+   "record_name": "Mountain Home Reservoir",
+   "acres": 400
+  },
+  "US-11383|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11383",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared cama, little, reservoir; extra: park lake / record -",
+   "record_name": "Little Camas Reservoir",
+   "acres": 968
+  },
+  "US-11416|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11416",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared hen, reservoir, sage; extra: park lake / record -",
+   "record_name": "Sage Hen Reservoir",
+   "acres": 233
+  },
+  "US-11418|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11418",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared brundage, reservoir; extra: park lake / record -",
+   "record_name": "Brundage Reservoir",
+   "acres": 216
+  },
+  "US-11419|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11419",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared lost, reservoir, valley; extra: park lake / record -",
+   "record_name": "Lost Valley Reservoir",
+   "acres": 512
+  },
+  "US-11420|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11420",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared ben, reservoir, ross; extra: park lake / record -",
+   "record_name": "Ben Ross Reservoir",
+   "acres": 364
+  },
+  "US-11421|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11421",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared herrick, reservoir; extra: park lake / record -",
+   "record_name": "Herrick Reservoir",
+   "acres": 36
+  },
+  "US-11424|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11424",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared bliss, reservoir; extra: park lake / record -",
+   "record_name": "Bliss Reservoir",
+   "acres": 299
+  },
+  "US-11425|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11425",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared reservoir, stone; extra: park lake / record -",
+   "record_name": "Stone Reservoir",
+   "acres": 125
+  },
+  "US-11426|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11426",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared fall, reservoir, swan; extra: park lake / record -; R-G12: pin 6 m outside the record (road / entrance)",
+   "record_name": "Swan Falls Reservoir",
+   "acres": 462
+  },
+  "US-11464|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11464",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared black, creek, reservoir; extra: park lake / record -",
+   "record_name": "Blacks Creek Reservoir",
+   "acres": 108
+  },
+  "US-11516|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11516",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared ashton, reservoir; extra: park lake / record -",
+   "record_name": "Ashton Reservoir",
+   "acres": 379
+  },
+  "US-11517|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11517",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared american, fall, reservoir; extra: park lake / record -",
+   "record_name": "American Falls Reservoir",
+   "acres": 54916
+  },
+  "US-11518|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11518",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared alexander, reservoir; extra: park lake / record -",
+   "record_name": "Alexander Reservoir",
+   "acres": 985
+  },
+  "US-11519|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11519",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared boulder, meadow, reservoir; extra: park lake / record -",
+   "record_name": "Boulder Meadows Reservoir",
+   "acres": 29
+  },
+  "US-11520|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11520",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared chesterfield, reservoir; extra: park lake / record -",
+   "record_name": "Chesterfield Reservoir",
+   "acres": 1243
+  },
+  "US-11521|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11521",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared condie, reservoir; extra: park lake / record -",
+   "record_name": "Condie Reservoir",
+   "acres": 80
+  },
+  "US-11522|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11522",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared crowther, reservoir; extra: park lake / record -",
+   "record_name": "Crowthers Reservoir",
+   "acres": 21
+  },
+  "US-11523|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11523",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared daniel, reservoir; extra: park lake / record -",
+   "record_name": "Daniels Reservoir",
+   "acres": 364
+  },
+  "US-11524|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11524",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared creek, deep, reservoir; extra: park lake / record -",
+   "record_name": "Deep Creek Reservoir",
+   "acres": 163
+  },
+  "US-11525|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11525",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared creek, devil, reservoir; extra: park lake / record -",
+   "record_name": "Devil Creek Reservoir",
+   "acres": 122
+  },
+  "US-11528|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11528",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared reservoir, tripod; extra: park lake / record -",
+   "record_name": "Tripod Reservoir",
+   "acres": 4
+  },
+  "US-11532|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11532",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared johnson, reservoir; extra: park lake / record -",
+   "record_name": "Johnson Reservoir",
+   "acres": 40
+  },
+  "US-11534|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11534",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared lamont, reservoir; extra: park lake / record -",
+   "record_name": "Lamont Reservoir",
+   "acres": 83
+  },
+  "US-11535|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11535",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared little, reservoir, valley; extra: park lake / record -",
+   "record_name": "Little Valley Reservoir",
+   "acres": 265
+  },
+  "US-11536|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11536",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared creek, goose, lower, reservoir; extra: park lake / record -",
+   "record_name": "Lower Goose Creek Reservoir",
+   "acres": 996
+  },
+  "US-11538|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11538",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared creek, moose, reservoir; extra: park lake / record -",
+   "record_name": "Moose Creek Reservoir",
+   "acres": 31
+  },
+  "US-11540|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11540",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared reservoir, ririe; extra: park lake / record -",
+   "record_name": "Ririe Reservoir",
+   "acres": 1428
+  },
+  "US-11541|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11541",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared creek, reservoir, sheep; extra: park lake / record -",
+   "record_name": "Sheep Creek Reservoir",
+   "acres": 21
+  },
+  "US-11543|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11543",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared reservoir, treasureton; extra: park lake / record -",
+   "record_name": "Treasureton Reservoir",
+   "acres": 148
+  },
+  "US-11544|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11544",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared mile, reservoir; extra: park four, lake, twenty / record twentyfour",
+   "record_name": "Twentyfour Mile Reservoir",
+   "acres": 40
+  },
+  "US-11545|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11545",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared reservoir, upper; extra: park lake, pleasant, view / record pleasantview",
+   "record_name": "Upper Pleasantview Reservoir",
+   "acres": 39
+  },
+  "US-11262|https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "ref": "US-11262",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared cedar, creek, reservoir; extra: park lake / record -",
+   "record_name": "Cedar Creek Reservoir",
+   "acres": 863
+  },
+  "US-4221|https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0": {
+   "ref": "US-4221",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared marsh, pisgah; extra: park - / record boardwalk, nongame",
+   "record_name": "Pisgah Marsh Nongame Area And Boardwalk",
+   "acres": 122
+  },
+  "US-13241|https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0": {
+   "ref": "US-13241",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "same name, record 560,780 ac looks big for this kind of place",
+   "record_name": "Lake Mead National Recreation Area",
+   "acres": 560780
+  },
+  "US-11095|https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0": {
+   "ref": "US-11095",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared wahweap; extra: park dwr, warm, water / record -",
+   "record_name": "Wahweap Hatchery",
+   "acres": 263
+  },
+  "US-11090|https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0": {
+   "ref": "US-11090",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared kama; extra: park utah / record -",
+   "record_name": "Kamas Hatchery",
+   "acres": 73
+  },
+  "US-11092|https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0": {
+   "ref": "US-11092",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared midway; extra: park utah / record -",
+   "record_name": "Midway Hatchery",
+   "acres": 47
+  },
+  "CA-4902|https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4": {
+   "ref": "CA-4902",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (historic)",
+   "record_name": "Coteau-du-Lac National Historic Site",
+   "acres": 14
+  },
+  "CA-5958|https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4": {
+   "ref": "CA-5958",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared hampton; extra: park - / record drive, island; R-G12: pin 97 m outside the record (road / entrance)",
+   "record_name": "Island Park Drive at Hampton Park",
+   "acres": 40
+  },
+  "CA-3688|https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39": {
+   "ref": "CA-3688",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "CA-5170|https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0": {
+   "ref": "CA-5170",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name",
+   "record_name": "Fallsview Park",
+   "acres": 9
+  },
+  "CA-6166|https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0": {
+   "ref": "CA-6166",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared cape, mary, saint; extra: park lighthouse / record -",
+   "record_name": "Cape St. Mary's Ecological Reserve",
+   "acres": 2747
+  },
+  "CA-4960|https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json": {
+   "ref": "CA-4960",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: no name field ()"
+  },
+  "CA-0515|https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson": {
+   "ref": "CA-0515",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: no name field ()"
+  },
+  "CA-6261|https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3": {
+   "ref": "CA-6261",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared tombstone; extra: park mountain / record -; R-G12: pin 44 m outside the record (road / entrance)",
+   "record_name": "Tombstone",
+   "acres": 13701
   }
  },
  "layers": {
@@ -303171,7 +303573,7 @@
    "geometry": "",
    "title": "sites_classes_pg",
    "error": "RuntimeError: no name field ()",
-   "tries": 2
+   "tries": 3
   },
   "https://services3.arcgis.com/yRW96jkKjDj5GeHi/arcgis/rest/services/Protected_Areas_of_The_Bahamas/FeatureServer/0": {
    "new_to_us": true,
@@ -304613,22 +305015,44 @@
    "geometry": "esriGeometryPolygon",
    "title": "Conservation Reserve Regulated",
    "name_field": "PROTECTED_AREA_NAME_ENG"
+  },
+  "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
+   "new_to_us": false,
+   "host": "services.arcgis.com",
+   "geometry": "esriGeometryPolygon",
+   "title": "Lakes and Reservoirs - Public",
+   "name_field": "NAME"
+  },
+  "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39": {
+   "new_to_us": true,
+   "host": "maps.gov.bc.ca",
+   "geometry": "esriGeometryPolygon",
+   "title": "Local and Regional Greenspaces",
+   "name_field": "PARK_NAME"
+  },
+  "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json": {
+   "new_to_us": true,
+   "host": "www.donneesquebec.ca",
+   "geometry": "",
+   "title": "Donnees_GEOJSON",
+   "error": "RuntimeError: no name field ()",
+   "tries": 1
   }
  },
  "summary": {
-  "Canada Parks LIKELY": 142,
-  "Canada Parks SURE": 723,
+  "Canada Parks LIKELY": 145,
+  "Canada Parks SURE": 725,
   "Canada Parks UNLIKELY": 198,
-  "Canada Parks failed": 839,
-  "Canada Parks no hit": 787,
+  "Canada Parks failed": 841,
+  "Canada Parks no hit": 788,
   "Canada Parks split": 21,
   "Canada Trail LIKELY": 7,
   "Canada Trail SURE": 16,
   "Canada Trail UNLIKELY": 12,
   "Canada Trail no hit": 2,
-  "US Parks LIKELY": 284,
+  "US Parks LIKELY": 326,
   "US Parks SURE": 3736,
-  "US Parks UNLIKELY": 691,
+  "US Parks UNLIKELY": 692,
   "US Parks failed": 585,
   "US Parks no hit": 1267,
   "US Parks split": 109,
@@ -304647,9 +305071,9 @@
   "World Trail UNLIKELY": 1,
   "World Trail no hit": 1,
   "pairs left": 0,
-  "new layers": 817
+  "new layers": 819
  },
- "built": "2026-11-02",
+ "built": "2026-11-03",
  "roots": {
   "https://gis.wlf.la.gov/arcgis/rest/services/Wildlife_Services/LA_StateParks/MapServer": [],
   "https://gis.mississippi.edu/server/rest/services/Administrative/MS_WildlifeManagementAreas_2019/MapServer": [],
