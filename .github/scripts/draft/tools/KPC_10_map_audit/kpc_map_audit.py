@@ -5,7 +5,7 @@ Grades every saved park outline with nine simple tests (T1-T9) and ranks the wor
 It decides nothing: it only ranks. It never changes a key or an outline, never moves a POTA pin, and never uses OSM / Google / WDPA.
 
 Run:  python kpc_map_audit.py --areas US-KY US-TN CA-ON CH --data data --out audit
-Exit: 0 = done, 3 = not finished (run again with --resume), 2 = bad input.
+Exit: 0 = done, 3 = not finished (run again with --resume), 2 = bad input, 4 = done but one or more areas FAILED (red; see the log).
 """
 from __future__ import annotations
 
@@ -34,6 +34,7 @@ from shapely.ops import unary_union
 from shapely.strtree import STRtree
 
 TOOL = "KPC-map-audit"
+RULES = "2026-11-02c"   # Nov 2 bot fixes: a saved progress file from other rules (or no rules stamp) is never resumed: the audit starts fresh
 UA = f"{TOOL} (https://github.com/KentuckyPortableClub)"
 ACRE_M2 = 4046.8564224
 GEOD = Geod(ellps="WGS84")
@@ -280,6 +281,8 @@ def rings_to_shape(rings):
 
 def local_proj(lon: float, lat: float):
     """Metric projection centred on a spot (azimuthal equidistant): good for distances and buffers near that spot."""
+    if not (-90 <= float(lat) <= 90 and -180 <= float(lon) <= 180):   # Nov 2: a clear error instead of pyproj's CRSError deep inside
+        raise ValueError(f"impossible spot lat {lat}, lon {lon}")
     crs = f"+proj=aeqd +lat_0={lat} +lon_0={lon} +datum=WGS84 +units=m"
     return Transformer.from_crs(4326, crs, always_xy=True), Transformer.from_crs(crs, 4326, always_xy=True)
 
@@ -301,6 +304,8 @@ def acres(geom) -> float:
 def pin_distance_m(geom, lon: float, lat: float) -> float:
     """0 when the pin is inside the outline, else metres to the nearest edge."""
     if geom is None or geom.is_empty:
+        return float("nan")
+    if not pin_ok(lat, lon):   # Nov 2: an impossible pin is never measured (CAN'T TELL), it never crashes the run
         return float("nan")
     if geom.covers(Point(lon, lat)):
         return 0.0
@@ -813,6 +818,19 @@ def why_of(ref: str, tests: dict) -> str:
 
 
 # ================================================================== reading the club's files and the sources (read-only)
+def pin_ok(lat, lon) -> bool:
+    """Nov 2 (mapping agent): a pin that cannot be on Earth (POTA CA-2395 Churchill WMA says lat 92.595, lon -57.056). pyproj
+    cannot build a projection there (CRSError), and the whole CA-MB run stopped on it. Such a pin is flagged for a person,
+    never moved and never used. A pin at exactly 0, 0 (no real pin) is treated the same way."""
+    try:
+        la, lo = float(lat), float(lon)
+    except (TypeError, ValueError):
+        return False
+    if not (math.isfinite(la) and math.isfinite(lo) and -90 <= la <= 90 and -180 <= lo <= 180):
+        return False
+    return not (la == 0 and lo == 0)   # Nov 2 (Quality): 199 Canadian POTA pins sit at exactly 0, 0 (no real pin): never measured
+
+
 def disc(lon: float, lat: float, r_m: float = 500):
     fwd, back = local_proj(lon, lat)
     return tx(Point(0, 0).buffer(r_m, 16), back)
@@ -849,6 +867,7 @@ class Audit:
                 if isinstance(v, list) and v:
                     self.layers.setdefault(k, v)
         self._locations = None
+        self.bad_pins = {}   # ref -> (lat, lon) POTA gave that cannot be on Earth (pin_ok): flagged, never moved
         self.excused = self.fer_pairs()
 
     # ---- files
@@ -909,14 +928,21 @@ class Audit:
                 self.log(f"  POTA list for {loc} not read ({e})")
                 continue
             for r in rows or []:
+                if r.get("latitude") is not None and not pin_ok(r.get("latitude"), r.get("longitude")):
+                    self.bad_pins[r["reference"]] = (r.get("latitude"), r.get("longitude"))
+                    continue
                 if r.get("latitude") is not None:
                     out[r["reference"]] = {"name": r.get("name", ""), "lat": float(r["latitude"]), "lon": float(r["longitude"]),
                                            "locs": [x.strip() for x in str(r.get("locationDesc") or loc).split(",") if x.strip()]}
         pi = self.data / "parkinfo" / f"{area}.json"
         if pi.exists():   # the club's copy of POTA's pins, only if POTA did not answer for a park
             for ref, row in self.load(pi).get("parks", {}).items():
-                if ref not in out and len(row) > 6 and row[5] is not None:
-                    out[ref] = {"name": row[0], "lat": float(row[5]), "lon": float(row[6]), "from": "parkinfo"}
+                if ref in out or ref in self.bad_pins or len(row) <= 6 or row[5] is None:
+                    continue
+                if not pin_ok(row[5], row[6]):   # Nov 2 (Quality): written down too, not skipped quietly
+                    self.bad_pins[ref] = (row[5], row[6])
+                    continue
+                out[ref] = {"name": row[0], "lat": float(row[5]), "lon": float(row[6]), "from": "parkinfo"}
         return out
 
     def read_records(self, layer: str, ids: list, offset=READ_OFFSET_DEG, esri_only=False) -> dict:
@@ -1254,7 +1280,11 @@ def grade_park(P, pin, acres_list, world: bool):
     g = P["geom"]
     tests = {}
     down = P.get("retry") and not P["raw"]
-    if pin is None:
+    if pin is not None and not pin_ok(pin.get("lat"), pin.get("lon")):   # belt and braces: see pin_ok
+        tests["T1"] = {"flag": "CAN'T TELL", "bad_pin": [pin.get("lat"), pin.get("lon")],
+                       "note": "POTA's pin is impossible (off the globe) or blank (0, 0): for a person to report to POTA (never moved)"}
+        pin = None
+    elif pin is None:
         tests["T1"] = {"flag": "CAN'T TELL", "note": "POTA has no pin for this park"}
     elif g is None:
         tests["T1"] = {"flag": "NO OUTLINE"}
@@ -1320,8 +1350,13 @@ def grade_park(P, pin, acres_list, world: bool):
 def pota_name_for(audit, ref, pota):
     if ref in pota:
         return pota[ref]
+    if ref in getattr(audit, "bad_pins", {}):
+        return None
     try:
         j, _ = audit.http.get(POTA_PARK.format(ref=ref), max_age_days=30)
+        if isinstance(j, dict) and j.get("latitude") is not None and not pin_ok(j.get("latitude"), j.get("longitude")):
+            audit.bad_pins[ref] = (j.get("latitude"), j.get("longitude"))
+            return None
         if isinstance(j, dict) and j.get("latitude") is not None:
             pota[ref] = {"name": j.get("name", ""), "lat": float(j["latitude"]), "lon": float(j["longitude"]), "from": "POTA park page",
                          "locs": [x.strip() for x in str(j.get("locationDesc") or "").split(",") if x.strip()]}
@@ -1368,9 +1403,21 @@ def run_area(audit: Audit, area: str, acres_list: dict, deadline: float, progres
             P = Audit.blank(ref, area)
             P["problems"].append(f"CAN'T TELL: {type(e).__name__}: {e}")
             P["retry"] = True
-        pin = pota_name_for(audit, ref, pota)
-        tests = grade_park(P, pin, acres_list, kind == "world")
+        try:   # Nov 2 (Mapping #2): grading sat outside the per-park try, so one bad park ended the whole run
+            pin = pota_name_for(audit, ref, pota)
+            tests = grade_park(P, pin, acres_list, kind == "world")
+        except Exception as e:   # noqa: BLE001  one park that can't be graded is a CAN'T TELL row, never a crash
+            pin = None
+            tests = {"T1": {"flag": "CAN'T TELL", "note": f"this park could not be graded ({type(e).__name__}: {str(e)[:160]}): for a person"}}
+            P["problems"].append(f"CAN'T TELL: grading stopped on this park: {type(e).__name__}: {str(e)[:160]}")
+        if pin is None and ref in getattr(audit, "bad_pins", {}):
+            bla, blo = audit.bad_pins[ref]
+            tests["T1"] = {"flag": "CAN'T TELL", "bad_pin": [bla, blo],
+                           "note": f"POTA's pin (lat {bla}, lon {blo}) is impossible (off the globe) or blank (0, 0): for a person to report to POTA (never moved)"}
+            P["problems"].append(f"POTA's pin lat {bla}, lon {blo} is impossible or blank: reported for a person")
         g = P["geom"]
+        if pin is not None and not pin_ok(pin.get("lat"), pin.get("lon")):
+            pin = None
         done[ref] = {
             "ref": ref, "name": (pin or {}).get("name", "") or P["key_name"], "key_name": P["key_name"], "type": P["type"], "grade": P["grade"],
             "pin": [round(pin["lat"], 6), round(pin["lon"], 6)] if pin else None,
@@ -1444,24 +1491,39 @@ def question_of(area: str, rec: dict, built: str) -> dict:
     }
 
 
-def write_outputs(out: Path, results: dict, built: str):
+def _no_geojson(r: dict) -> dict:
+    """A copy of a park row without the repaired shape (that goes to repairs/<area>.json only). Nov 2 (Mapping #9): the shape was
+    popped out of the row, so the second write of the same results hit a KeyError on the first park whose repair was ok."""
+    rp = (r.get("tests", {}).get("T5") or {}).get("repair")
+    if not rp or "geojson" not in rp:
+        return r
+    t5 = {**r["tests"]["T5"], "repair": {k: v for k, v in rp.items() if k != "geojson"}}
+    return {**r, "tests": {**r["tests"], "T5": t5}}
+
+
+def write_outputs(out: Path, results: dict, built, only=None):
+    """results = every area finished so far in this pass (Nov 2, Mapping #3: it was the LAST area only, so worst.csv, summary.md and
+    questions.json held one area). built = one date, or {area: date} (an area finished in an earlier job keeps its own date).
+    only = the areas whose own <area>.json is (re)written now (default: all)."""
     out.mkdir(parents=True, exist_ok=True)
+    built_of = (lambda a: built.get(a) or today()) if isinstance(built, dict) else (lambda a: built)
     rep = {}
     for area, recs in results.items():
         for r in recs:
             rp = (r["tests"].get("T5") or {}).get("repair")
-            if rp and rp.get("ok"):
-                rep.setdefault(area, {})[r["ref"]] = {"record": (r["records"][0] if r["records"] else {}).get("id", ""), "geojson": rp.pop("geojson"),
-                                                      "area_change_pct": rp["area_change_pct"], "holes": rp["holes"], "pieces": rp["pieces"]}
-            elif rp:
-                rp.pop("geojson", None)
-    if rep:
+            if rp and rp.get("ok") and rp.get("geojson") is not None:
+                rep.setdefault(area, {})[r["ref"]] = {"record": (r["records"][0] if r["records"] else {}).get("id", ""), "geojson": rp.get("geojson"),
+                                                      "area_change_pct": rp.get("area_change_pct"), "holes": rp.get("holes"), "pieces": rp.get("pieces")}
+    if rep:   # an area read back from its file (resume) has no shapes in memory: its repairs file from that job is kept as it is
         (out / "repairs").mkdir(exist_ok=True)
         for area, d in rep.items():
-            (out / "repairs" / f"{area}.json").write_text(json.dumps({"area": area, "built": built, "about": "Shapes the map audit repaired (make_valid, holes under 100 m2 and pieces under 10 m wide dropped, land kept within 1 %). Use instead of the saved outline.", "parks": d}, ensure_ascii=False), encoding="utf-8")
+            (out / "repairs" / f"{area}.json").write_text(json.dumps({"area": area, "built": built_of(area), "about": "Shapes the map audit repaired (make_valid, holes under 100 m2 and pieces under 10 m wide dropped, land kept within 1 %). Use instead of the saved outline.", "parks": d}, ensure_ascii=False), encoding="utf-8")
     for area, recs in results.items():
-        (out / f"{area}.json").write_text(json.dumps({"area": area, "built": built, "tool": TOOL, "parks": recs},
+        if only is not None and area not in only:
+            continue
+        (out / f"{area}.json").write_text(json.dumps({"area": area, "built": built_of(area), "tool": TOOL, "rules": RULES, "parks": [_no_geojson(r) for r in recs]},
                                                       indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    built_all = max([built_of(a) for a in results] or [today()])
     rows = [(area, r) for area, recs in results.items() for r in recs]
     rows.sort(key=lambda x: (-x[1]["score"], x[0], x[1]["ref"]))
     with open(out / "worst.csv", "w", newline="", encoding="utf-8") as f:
@@ -1472,7 +1534,7 @@ def write_outputs(out: Path, results: dict, built: str):
                 continue
             link = next((x.get("link") for x in r["records"] if x.get("link")), "")
             w.writerow([r["score"], area, r["ref"], r["name"], r["why"], flag_summary(r["tests"]), POTA_LINK.format(ref=r["ref"]), link])
-    lines = [f"# KPC 10 map audit: summary ({built})", "",
+    lines = [f"# KPC 10 map audit: summary ({built_all})", "",
              "It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATCH / CONFLICT / SPILL, +5 FAR, +1 each softer flag.", ""]
     for area, recs in results.items():
         graded = [r for r in recs if r["tests"].get("T5", {}).get("flag") not in ("EMPTY", "NO OUTLINE")]
@@ -1491,13 +1553,20 @@ def write_outputs(out: Path, results: dict, built: str):
                 lines.append(f"| {r['score']} | {r['ref']} | {r['name'].replace('|', '/')} | {r['why'].replace('|', '/')} |")
         lines.append("")
     (out / "summary.md").write_text("\n".join(lines), encoding="utf-8")
-    qs = []
+    qs, areas = [], {}
     for area, recs in results.items():
-        top = [r for r in sorted(recs, key=lambda r: (-r["score"], r["ref"])) if r["score"] > 0][:50]
-        qs += [question_of(area, r, built) for r in top]
+        flagged = [r for r in sorted(recs, key=lambda r: (-r["score"], r["ref"])) if r["score"] > 0]
+        top = flagged[:50]
+        qs += [question_of(area, r, built_of(area)) for r in top]
+        # Nov 2 (Mapping #1, Quality 2b/2d): every area this pass finished is listed, even with 0 rows, with its own date, so the
+        # 2-fer gate knows 'audited, 0 rows' from 'not audited' and never re-dates an old area as today
+        areas[area] = {"built": built_of(area), "parks": len(recs), "flagged": len(flagged), "asked": len(top),
+                       "source_down": sum(1 for r in recs if r.get("status") != "graded")}
     (out / "questions.json").write_text(json.dumps({"about": "KPC 10 map audit: the 50 worst outlines per area, for a person to check. "
-                                                   "answer is null until checked; picture is left empty for KPC 9.",
-                                                   "built": built, "open": len(qs), "questions": qs}, indent=1, ensure_ascii=False) + "\n",
+                                                   "answer is null until checked; picture is left empty for KPC 9. 'areas' = every area "
+                                                   "finished in this pass (0 rows = audited and clean), with its own date.",
+                                                   "built": built_all, "rules": RULES, "open": len(qs), "areas": areas, "questions": qs},
+                                                  indent=1, ensure_ascii=False) + "\n",
                                         encoding="utf-8")
 
 
@@ -1511,7 +1580,8 @@ def main(argv=None) -> int:
     ap.add_argument("--out", default="audit")
     ap.add_argument("--cache", default=".kpc-cache")
     ap.add_argument("--max-minutes", type=float, default=50)
-    ap.add_argument("--resume", action="store_true", help="carry on from where the last run stopped")
+    ap.add_argument("--resume", action="store_true", help="carry on from where the last run stopped (same areas, same rules)")
+    ap.add_argument("--fresh", action="store_true", help="start every area over: the saved progress file is cleared (wins over --resume)")
     ap.add_argument("--offline", action="store_true", help="use the cache only (no network)")
     a = ap.parse_args(argv)
     t0 = time.monotonic()
@@ -1530,20 +1600,41 @@ def main(argv=None) -> int:
         log(f"BAD INPUT: {e}")
         return 2
     state_f = cache / "audit-state.json"
+
+    def save_state():   # Nov 2 (Mapping #3): saved after every finished area, not only at the end, so a crash keeps the finished areas
+        cache.mkdir(parents=True, exist_ok=True)
+        tmp = state_f.with_suffix(".tmp")
+        tmp.write_text(json.dumps(state))
+        tmp.replace(state_f)
+
     state = {}
-    if a.resume and state_f.exists():
+    if a.fresh and state_f.exists():
+        state_f.unlink()
+        log("fresh: the saved progress file was cleared")
+    if a.resume and not a.fresh and state_f.exists():
         try:
             state = json.loads(state_f.read_text())
         except json.JSONDecodeError:
             state = {}
-    if state.get("areas_asked") != a.areas:
-        state = {"areas_asked": a.areas, "done": {}, "progress": {}}
-    built = today()
-    results = {}
+    if state.get("areas_asked") != a.areas or state.get("rules") != RULES or not isinstance(state.get("done"), dict):
+        if state:
+            log("the saved progress is for other areas or older audit rules: starting fresh")
+        state = {"areas_asked": a.areas, "rules": RULES, "done": {}, "progress": {}, "failed": {}}
+    state.setdefault("failed", {})
+    results, builts = {}, {}
     for ar in a.areas:
         if ar in state["done"]:
-            results[ar] = json.loads((out / f"{ar}.json").read_text())["parks"] if (out / f"{ar}.json").exists() else state["done"][ar]
-            log(f"{ar}: already done (resume)")
+            f = out / f"{ar}.json"
+            try:
+                j = json.loads(f.read_text())
+                results[ar], builts[ar] = j["parks"], str(j.get("built") or (state["done"][ar] or {}).get("built") or today())
+                log(f"{ar}: already done in this pass (resume)")
+                continue
+            except (OSError, ValueError, KeyError, TypeError, AttributeError):   # Nov 2 (Quality 1b): never use the 'done' mark as the results
+                log(f"{ar}: marked done but its results file is missing: audited again")
+                state["done"].pop(ar, None)
+        if ar in state["failed"]:
+            log(f"{ar}: FAILED earlier in this pass ({state['failed'][ar]}): skipped until a fresh run")
             continue
         prog = state["progress"].setdefault(ar, {})
         try:
@@ -1554,20 +1645,30 @@ def main(argv=None) -> int:
         except SourceDown as e:
             log(f"SOURCE DOWN: {ar}: {e} (try again next run)")
             continue
+        except Exception as e:   # noqa: BLE001  Nov 2: one area that crashes is recorded and the rest go on (the run ends red, exit 4)
+            state["failed"][ar] = f"{type(e).__name__}: {str(e)[:200]}"
+            state["progress"].pop(ar, None)
+            save_state()
+            log(f"AREA FAILED: {ar}: {state['failed'][ar]} (the other areas go on; this run ends red)")
+            continue
         if not ok:
-            cache.mkdir(parents=True, exist_ok=True)
-            state_f.write_text(json.dumps(state))
-            write_outputs(out, results, built)
+            save_state()
+            write_outputs(out, results, builts, only=())
             log(f"time is up after {(time.monotonic() - t0) / 60:.1f} min: run again with --resume")
             return 3
-        results[ar] = recs
-        state["done"][ar] = True
+        results[ar], builts[ar] = recs, today()
+        state["done"][ar] = {"built": builts[ar], "parks": len(recs)}
         state["progress"].pop(ar, None)
-        write_outputs(out, {ar: recs}, built)
-        log(f"{ar}: {len(recs)} parks, {sum(1 for r in recs if r['score'] > 0)} with flags")
-    write_outputs(out, results, built)
-    cache.mkdir(parents=True, exist_ok=True)
-    state_f.write_text(json.dumps(state))
+        write_outputs(out, results, builts, only={ar})
+        save_state()
+        nbad = sum(1 for r in recs if ((r.get("tests") or {}).get("T1") or {}).get("bad_pin") is not None)
+        log(f"{ar}: {len(recs)} parks, {sum(1 for r in recs if r['score'] > 0)} with flags"
+            + (f"; {nbad} with an impossible or blank POTA pin (CAN'T TELL, for a person to report to POTA)" if nbad else ""))
+    write_outputs(out, results, builts, only=())
+    save_state()
+    if state["failed"]:
+        log(f"done with FAILED areas in {(time.monotonic() - t0) / 60:.1f} min: " + "; ".join(f"{k} ({v})" for k, v in sorted(state["failed"].items())))
+        return 4
     log(f"done in {(time.monotonic() - t0) / 60:.1f} min: {out}/summary.md, worst.csv, questions.json")
     return 0
 

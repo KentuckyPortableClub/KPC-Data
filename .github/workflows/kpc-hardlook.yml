@@ -38,12 +38,17 @@ jobs:
         run: |
           cd kpcdata
           python3 .github/scripts/kpc_intake_reader.py hardlook || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"
+          BAD=0
           for chunk in 1 2 3 4 5 6 7; do   # Nov 1 storage fix: up to 7 chunks in ONE job, ONE save (was 276 commits a week)
-            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_hardlook.py::stopped with an error (exit $rc), see the log above"
+            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { BAD=$rc; echo "::warning title=kpc_hardlook.py::stopped with an error (exit $rc), see the log above"; }
+            grep -q 'title=Hard look reader::stopped' /tmp/h.txt && BAD=1   # the reader says 'stopped (...)' and exits 0 on a crash
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
           done
-          python3 .github/scripts/kpc_status.py board 'Hard look reader' green "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left $(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" 'chat 11 answers data/waiting/questions/hardlook.json' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
-          bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          # Nov 2 bot fixes (Quality 4a): carry the answers chats wrote on main while this job ran into our copy before the save
+          # (the save overwrote the whole question file). A failed merge does not save over main.
+          MERGED=1; python3 .github/scripts/kpc_hardlook.py merge-main || { MERGED=0; BAD=1; echo "::error title=Hard look reader::could not merge main's answers: NOT saved this time (the next run reads again)"; }
+          python3 .github/scripts/kpc_status.py board 'Hard look reader' $([ "$BAD" = 0 ] && echo green || echo amber) "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left $(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" 'chat 11 answers data/waiting/questions/hardlook.json' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
+          if [ "$MERGED" = 1 ]; then bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"; fi
           echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
       - name: Next run
         if: steps.r.outputs.left != '' && steps.r.outputs.left != '0'

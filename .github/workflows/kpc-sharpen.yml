@@ -73,7 +73,7 @@ jobs:
           fi
           echo "::notice title=Sharpen ${{ inputs.tool }}::exit $E ($( [ "$E" = 3 ] && echo 'time ran out: the next run continues' || echo done ))"
           [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
-          cd ../out && rm -rf sharpen/*/work && git add -A sharpen && git commit -qm "sharpen ${{ inputs.tool }} (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          cd ../out && rm -rf sharpen/*/work && git add -A sharpen && git commit -qm "sharpen ${{ inputs.tool }} (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           true
       - name: Next run
         if: steps.r.outputs.more == 'yes'

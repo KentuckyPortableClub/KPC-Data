@@ -73,7 +73,7 @@ jobs:
           LINKS=../links MATCH_FILE=../out/map-match/map_match.json python3 .github/scripts/kpc_auto_flow.py match || echo "::error title=kpc_auto_flow.py::stopped with an error (exit $?), see the log above"
           python3 .github/scripts/kpc_status.py board "T1 map-match" green "open questions scored (STRONG = bot YES, 1 in 10 sampled)" "chat 11 answers WEAK / CONFLICT (band + reason on each row)" || true   # ok: a status-board line (reporting only)
           bash ../links/.github/scripts/kpc_push_data.sh . "T1 map-match: STRONG -> bot YES, bands on the rest" data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          (cd ../out && find map-match -name '*.jpg' -mtime +7 -delete; git add -A map-match && git commit -qm "T1 map-match (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          (cd ../out && find map-match -name '*.jpg' -mtime +7 -delete; git add -A map-match && git commit -qm "T1 map-match (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           true
       - name: Next run while questions are left
         if: steps.m.outputs.more == 'yes'
@@ -176,7 +176,7 @@ jobs:
           if [ "$F" = 0 ]; then python3 .github/scripts/kpc_status.py board "T5 site checker" green "40 parks x phone + desktop: all fine" "nothing" || true   # ok: a status-board line (reporting only)
           else python3 .github/scripts/kpc_status.py board "T5 site checker" amber "$F checks failed (tools-out site-check/summary.md)" "chat 3 fixes the site" || true; fi   # ok: a status-board line (reporting only)
           bash ../links/.github/scripts/kpc_push_data.sh . "T5 site checker: status" data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          (cd ../out && git add -A site-check && git commit -qm "T5 site check (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          (cd ../out && git add -A site-check && git commit -qm "T5 site check (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()

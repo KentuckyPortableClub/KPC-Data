@@ -58,7 +58,7 @@ jobs:
           python3 .github/scripts/tools/kpc_map_links/kpc_map_links.py --agencies $D-in/agency_pages.json --out $D --resume --max-minutes 50 2>&1 | tail -25
           [ "${PIPESTATUS[0]}" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_tools_run.py post-links $D || echo "::error title=kpc_tools_run.py::stopped with an error (exit $?), see the log above"
-          cd ../out && git add -A && git commit -qm "map links (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          cd ../out && git add -A && git commit -qm "map links (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           cd ../kpcdata && bash ../links/.github/scripts/kpc_push_data.sh . "map-page link extractor: finds (merged through the waiting room)" data/intake/docs-found-maplinks.json data/intake/docs-found-maplinks-possible.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Merge what it found / next run
         id: kept_green_2

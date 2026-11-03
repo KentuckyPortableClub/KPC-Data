@@ -66,7 +66,7 @@ jobs:
           R=$(( $(wc -l < ../out/convert/report.csv 2>/dev/null || echo 1) - 1 ))
           echo "::notice title=Map-format converter::$R of $N leads read"
           [ "$R" -lt "$N" ] && echo "more=yes" >> $GITHUB_OUTPUT || true   # ok: nothing to do is fine
-          cd ../out && git add -A convert && git commit -qm "map-format converter (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          cd ../out && git add -A convert && git commit -qm "map-format converter (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
       - name: Next run while leads are left
         if: steps.gap.outputs.busy != 'yes' && steps.c.outputs.more == 'yes'
         id: kept_green_2

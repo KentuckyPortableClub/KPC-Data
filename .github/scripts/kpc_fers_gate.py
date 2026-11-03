@@ -7,17 +7,26 @@ KEY is released and its MAP AUDIT pass is clean). Two jobs, both never fail:
                           and data/status/audited.json {area: date}
   gate                    per US state / Canadian province:
                             waiting for key    = its key file is still held in the waiting room
-                            waiting for audit  = not audited yet, or audit rows with no answer (N open)
+                            waiting for audit  = not audited in this pass yet (an area must be LISTED by the audit, even with 0 rows)
+                            waiting for audit answers = rows not yet clean (N open): only YES / FIXED / PIN answers are clean;
+                                                 NO (the outline is wrong) waits for FIXED, and 'source down' rows were never checked
                             ready for 2-fers   = key out + audit clean
                           a READY area with no 2-fer run since its audit is started (kpc-fers-line, 2 per pass at most, never while
                           a key build is saving); written to data/status/fers-ready.json + a board line.
+  Nov 2 bot fixes (Quality 2b/2d, Mapping #1/#13): an area counts as audited only when the audit's questions.json LISTS it (its
+  'areas'), dated with the audit's own date for it (never 'today' for an old file). Stamps from before this fix are not trusted:
+  those areas wait for the next audit pass. Dates are Central time.
   python3 kpc_fers_gate.py questions ../out/audit | gate        env GH_TOKEN, GITHUB_REPOSITORY (gate starts runs)"""
 import datetime as dt, glob, json, os, pathlib, subprocess, sys
 
 QF = pathlib.Path('data/waiting/questions/map-audit.json')
 AUD = pathlib.Path('data/status/audited.json')
 READY = pathlib.Path('data/status/fers-ready.json')
-TODAY = dt.date.today().isoformat()
+try:
+    from zoneinfo import ZoneInfo
+    TODAY = dt.datetime.now(ZoneInfo('America/Chicago')).date().isoformat()   # Nov 2 (Quality 2e): was the runner's UTC date
+except Exception:  # noqa: BLE001
+    TODAY = dt.date.today().isoformat()
 REPO = os.environ.get('GITHUB_REPOSITORY') or 'KentuckyPortableClub/KPC-Data'
 
 
@@ -103,14 +112,27 @@ def tidy(Q):
     return na, npat
 
 
+def clean_answer(a):
+    """True when a person's answer closes the row for the gate: it starts with YES, FIXED or PIN (markup ignored)."""
+    import re
+    t = re.sub(r'[*_`"\'“”‘’]+', ' ', str(a or '')).strip().upper()
+    return bool(re.match(r'^(YES|FIXED|PIN)\b', t)) and not re.match(r'^(YES|PIN)\s*/\s*NO\b', t)
+
+
+def row_clean(r):
+    """Nov 2 (task + Mapping rule 1): a row is clean for the gate only with a person's own YES / FIXED / PIN on THAT row. A pattern
+    answer (10 rows read, the rest answered by the pattern) still clears the person's list, but it does not open the gate."""
+    return clean_answer(r.get('answer')) and not str(r.get('how') or '').startswith('pattern answer')
+
+
 def questions(adir):
     adir = pathlib.Path(adir)
     q = load(adir / 'questions.json', {}) or {}
     rows = q.get('questions') or []
-    done_areas = {p.stem for p in adir.glob('*.json') if p.stem not in ('questions', 'state')}
+    listed = q.get('areas') if isinstance(q.get('areas'), dict) else None   # Nov 2: audits from the bot fixes on list every finished area
     Q = load(QF, {'about': "KPC 10 map audit's worst outlines (50 per area): chat 2 fixes, chat 11 / 12 answer YES (right) / NO (wrong) / FIXED. An area's 2-fers start when its rows are all answered (kpc_fers_gate.py).", 'questions': []}) or {}
     old = {(r.get('area'), r.get('ref'), r.get('record')): r for r in Q.get('questions') or []}
-    fresh_areas = {r.get('area') for r in rows}
+    fresh_areas = set(listed) if listed is not None else {r.get('area') for r in rows}   # an area listed with 0 rows drops its old rows too
     keep = [r for r in Q.get('questions') or [] if r.get('area') not in fresh_areas]
     for r in rows:
         o = old.get((r.get('area'), r.get('ref'), r.get('record')))
@@ -121,7 +143,13 @@ def questions(adir):
     QF.parent.mkdir(parents=True, exist_ok=True)
     json.dump(Q, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     A = load(AUD, {}) or {}
-    for a in done_areas: A[a] = TODAY
+    # Nov 2 (Mapping #1/#13, Quality 2d): only the areas the audit LISTS count as audited, with the audit's own date for each (it was
+    # every *.json file on tools-out, dated today: areas whose rows never arrived (US-TX, UT, DC, ND) looked audited and clean)
+    for a, info in (listed or {}).items():
+        A[a] = {'built': str((info or {}).get('built') or q.get('built') or TODAY)[:10], 'rows': int((info or {}).get('asked') or 0),
+                'flagged': int((info or {}).get('flagged') or 0), 'source_down': int((info or {}).get('source_down') or 0), 'rules': q.get('rules')}
+    if listed is None and rows:
+        print('::notice title=Map audit questions::this questions.json has no area list (an audit from before the Nov 2 fixes): rows loaded, no area marked audited', flush=True)
     AUD.parent.mkdir(parents=True, exist_ok=True)
     json.dump(A, open(AUD, 'w'), indent=1, sort_keys=True)
     print(f"::notice title=Map audit questions::{len(rows)} worst rows from {len(fresh_areas)} areas -> map-audit.json ({Q['open']} open for a person; {na} to the bots' list; {npat} answered by a pattern); {len(A)} areas audited so far", flush=True)
@@ -140,6 +168,9 @@ def gate():
         na, npat = tidy(QQ); json.dump(QQ, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
         if na or npat: print(f'::notice title=Map audit pile::{na} rows to the bots\' list, {npat} answered by a pattern; {QQ["open"]} open for a person', flush=True)
     Q = QQ.get('questions') or []
+    down = {}   # Nov 2 (Quality 2b): rows moved to the bots' list because the source was down were never checked: they keep the area waiting
+    for r in (load(AUTOQ, {}) or {}).get('rows') or []:
+        if str(r.get('auto') or '').startswith('source down'): down[r.get('area')] = down.get(r.get('area'), 0) + 1
     R = load(READY, {}) or {}
     st = R.setdefault('areas', {})
     rc, out = gh('repos/KentuckyPortableClub/KPC-Links/actions/runs?status=in_progress&per_page=50', '--jq', '[.workflow_runs[].name] | join("|")')
@@ -148,25 +179,31 @@ def gate():
     for a in areas:
         kind = 'us-key' if a.startswith('US-') else 'ca-key'
         held = any(pathlib.Path(f'data/waiting/in/data/{kind}/{a}{x}').exists() for x in ('.json', '.json.gz'))
-        open_rows = sum(1 for r in Q if r.get('area') == a and not r.get('answer'))
+        mine = [r for r in Q if r.get('area') == a]
+        open_rows = sum(1 for r in mine if not row_clean(r))
+        by_pattern = sum(1 for r in mine if clean_answer(r.get('answer')) and not row_clean(r))
+        no_rows = sum(1 for r in mine if r.get('answer') and not clean_answer(r.get('answer')))
+        aud = A.get(a) if isinstance(A.get(a), dict) else None   # a bare date = a stamp from before the Nov 2 fixes: not trusted
         if held: s = 'waiting for key'
-        elif a not in A: s = 'waiting for audit'
-        elif open_rows: s = f'waiting for audit answers ({open_rows} open)'
+        elif not aud: s = 'waiting for audit'
+        elif open_rows or down.get(a): s = f'waiting for audit answers ({open_rows} open' + (f', {no_rows} answered NO or not sure' if no_rows else '') + (f', {by_pattern} answered only by a pattern' if by_pattern else '') + (f', {down[a]} source down' if down.get(a) else '') + ')'
         else: s = 'ready for 2-fers'
+        if aud and aud.get('flagged', 0) > aud.get('rows', 0): s += f" [{aud['rows']} of {aud['flagged']} flagged parks asked]"
         prev = st.get(a) or ({'fers_started': '2026-11-02'} if a == 'US-KY' else {})   # Kentucky's fresh run was started by hand Nov 2 (HQ 11:00 AM)
-        row = {'status': s, 'audited': A.get(a), 'fers_started': prev.get('fers_started')}
-        if s == 'ready for 2-fers' and not key_saving and len(started) < 2 and (not prev.get('fers_started') or prev['fers_started'] < (A.get(a) or '')):
+        audited = (aud or {}).get('built')
+        row = {'status': s, 'audited': audited, 'fers_started': prev.get('fers_started')}
+        if s.startswith('ready for 2-fers') and not key_saving and len(started) < 2 and (not prev.get('fers_started') or prev['fers_started'] < (audited or '')):
             tag = a.split('-')[1].lower() if a.startswith('US-') else a.lower().replace('-', '')
             rc, _ = gh('-X', 'POST', f'repos/{REPO}/actions/workflows/kpc-fers-line.yml/dispatches', '-f', 'ref=main', '-f', f'inputs[states]={a}', '-f', f'inputs[tag]={tag}', '-f', 'inputs[stage]=all')
             if rc == 0: row['fers_started'] = TODAY; started.append(a)
         st[a] = row
     R['updated'] = TODAY
-    R['about'] = "2-fers start over area by area (RULINGS Nov 2 10:57 AM): an area runs when its key is out AND its map audit rows are all answered (kpc_fers_gate.py)."
+    R['about'] = "2-fers start over area by area (RULINGS Nov 2 10:57 AM): an area runs when its key is out AND the audit listed it in this pass AND its rows are all clean (YES / FIXED / PIN; NO and source-down rows keep it waiting) (kpc_fers_gate.py)."
     READY.parent.mkdir(parents=True, exist_ok=True)
     json.dump(R, open(READY, 'w'), indent=1, sort_keys=True)
     c = {}
-    for v in st.values(): k = v['status'].split(' (')[0]; c[k] = c.get(k, 0) + 1
-    msg = f'{sum(1 for r in Q if not r.get("answer"))} audit rows open in {len({r.get("area") for r in Q if not r.get("answer")})} areas; ' + ', '.join(f'{k} {n}' for k, n in sorted(c.items())) + (f'; started now: {" ".join(started)}' if started else '') + (' (a key build is saving: nothing started)' if key_saving else '')
+    for v in st.values(): k = v['status'].split(' (')[0].split(' [')[0]; c[k] = c.get(k, 0) + 1
+    msg = f'{sum(1 for r in Q if not row_clean(r))} audit rows not clean in {len({r.get("area") for r in Q if not row_clean(r)})} areas; ' + ', '.join(f'{k} {n}' for k, n in sorted(c.items())) + (f'; started now: {" ".join(started)}' if started else '') + (' (a key build is saving: nothing started)' if key_saving else '')
     print(f'::notice title=2-fer gate::{msg}', flush=True)
     subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', '2-fer gate (areas ready / waiting)', 'green', msg[:300], 'chat 11 / 12 (audit answers), chat 2 (fixes)'], check=False)
 

@@ -4,7 +4,9 @@ name: KPC map audit (every saved outline graded, worst first) - outputs on tools
 # coder, draft/tools) grades every saved outline: pin inside / near / far, size vs official acres, name, kind, spill onto another
 # park, broken shapes. Decides nothing. US first, then Canada, then the world; 50-min jobs that chain until every area is done;
 # then weekly (Sunday after the key builds). Output: tools-out audit/ (worst.csv, summary.md, questions.json), latest run only.
-# Never red.
+# Nov 2 bot fixes (Mapping #2/#3/#4, Quality): RED when the audit crashes or an area fails (it said 'done' in green). The weekly
+# run starts FRESH (it always resumed the old pass); fresh=yes clears the saved progress too. One crash starts one more job
+# (after_crash=yes) so a one-off failure does not stop the pass; a second crash in a row stops and stays red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '43 13 * * 0'   # weekly, Sunday 7:43 AM CST, after the night's key builds
@@ -16,6 +18,9 @@ on:
       areas:
         description: 'blank = every area (US, then Canada, then the world); or a list like "US-TN CA-ON CH"'
         default: ''
+      after_crash:
+        description: 'set by the bot: yes = the job before this one crashed (a second crash does not start another job)'
+        default: 'no'
 permissions:
   contents: write
   actions: write
@@ -52,7 +57,8 @@ jobs:
         continue-on-error: true
         env:
           KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
-          FRESH: ${{ inputs.fresh }}
+          FRESH: ${{ github.event_name == 'schedule' && 'yes' || inputs.fresh }}
+          AFTER_CRASH: ${{ inputs.after_crash }}
           AREAS: ${{ inputs.areas }}
         run: |
           cd kpcdata
@@ -62,7 +68,8 @@ jobs:
           for d in us-key ca-key canada-bounds fers trails parkinfo world-bounds world-key; do [ -e data/$d ] && ln -s "$PWD/data/$d" ../club/$d; done
           cp ../links/data/ky-answer-key.json ../club/ 2>/dev/null || true   # ok: Kentucky is skipped without it
           cp ../links/ky-*.geojson ../kyo/ 2>/dev/null || true   # ok: Kentucky outlines come from the answer key too
-          [ "$FRESH" = yes ] && rm -rf ../out/audit
+          MODE="--resume"
+          if [ "$FRESH" = yes ]; then rm -rf ../out/audit; rm -f .audit_cache/audit-state.json; MODE="--fresh"; fi   # Nov 2: a real start-over (the saved progress was kept before)
           mkdir -p ../out/audit
           if [ -z "$AREAS" ]; then
             AREAS="US-KY $(ls data/parkinfo/US-*.json | xargs -n1 basename | sed 's/.json//' | grep -v US-KY | tr '\n' ' ') $(ls data/ca-key/CA-??.json 2>/dev/null | xargs -n1 basename | sed 's/.json//' | tr '\n' ' ') $(ls data/world-key/*.json | xargs -n1 basename | sed 's/.json//' | grep -E '^[A-Z0-9]{1,3}$' | tr '\n' ' ')"
@@ -70,18 +77,21 @@ jobs:
           AC=""; [ -f ../out/acres/acres-list.json ] && AC="--acres ../out/acres/acres-list.json"
           pip install -q -r .github/scripts/draft/tools/KPC_10_map_audit/requirements.txt 2>&1 | tail -1
           set +e
-          python3 .github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py --areas $AREAS --data ../club --ky-outlines ../kyo $AC --out ../out/audit --cache .audit_cache --max-minutes 50 --resume > ../out/audit/run-log.txt 2>&1
+          python3 .github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py --areas $AREAS --data ../club --ky-outlines ../kyo $AC --out ../out/audit --cache .audit_cache --max-minutes 50 $MODE > ../out/audit/run-log.txt 2>&1
           E=$?
           tail -8 ../out/audit/run-log.txt
-          echo "::notice title=Map audit::exit $E ($([ $E = 3 ] && echo 'time ran out: the next job goes on' || echo done)); $(tail -1 ../out/audit/run-log.txt | cut -c1-300)"
-          [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
+          case "$E" in 0) W='done';; 3) W='time ran out: the next job goes on';; 4) W='done, but one or more areas FAILED (see run-log.txt)';; *) W='CRASHED (see run-log.txt)';; esac
+          echo "::notice title=Map audit::exit $E ($W); $(tail -1 ../out/audit/run-log.txt | cut -c1-300)"
+          echo "rc=$E" >> $GITHUB_OUTPUT
+          if [ "$E" = 3 ]; then echo "more=yes" >> $GITHUB_OUTPUT; echo "next_after_crash=no" >> $GITHUB_OUTPUT
+          elif [ "$E" != 0 ] && [ "$E" != 4 ] && [ "$AFTER_CRASH" != yes ]; then echo "more=yes" >> $GITHUB_OUTPUT; echo "next_after_crash=yes" >> $GITHUB_OUTPUT; fi   # one more try after a crash, never a loop
           echo "areas=$AREAS" >> $GITHUB_OUTPUT
           { [ $E = 0 ] || [ $E = 3 ]; } || echo "::error title=Map audit::the audit stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt"   # PR3
-          python3 .github/scripts/kpc_status.py board 'Map audit' $([ $E = 0 ] || [ $E = 3 ] && echo green || echo red) "exit $E $(date -u +%F): $(tail -1 ../out/audit/run-log.txt | cut -c1-140)" 'chat 2 (worst rows = fixes) + chat 11 / 12 (questions)' || true   # ok: the board line is a courtesy
+          python3 .github/scripts/kpc_status.py board 'Map audit' $([ $E = 0 ] || [ $E = 3 ] && echo green || echo red) "exit $E ($W) $(TZ=America/Chicago date +%F): $(tail -1 ../out/audit/run-log.txt | cut -c1-140)" 'chat 2 (worst rows = fixes) + chat 11 / 12 (questions)' || true   # ok: the board line is a courtesy
           # PR2 (fewer saves): the board line is saved with the questions below in ONE commit (was two commits a job)
           python3 .github/scripts/kpc_fers_gate.py questions ../out/audit || true   # ok: the next audit job tries again
           GH_TOKEN="${{ github.token }}" python3 .github/scripts/kpc_fers_gate.py gate || true   # ok: the watchdog runs the gate too
-          (git add data/waiting/questions/map-audit.json data/status && python3 .github/scripts/kpc_stamp_only.py && { git diff --cached --quiet && echo "nothing new to save"; } || { git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && saved=0 && for i in 1 2 3 4; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; git rebase --abort 2>/dev/null; sleep $((i*7)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # PR2: one commit, skipped when only time stamps changed; pull --rebase retries (was: a retry re-ran 'git commit' and never pushed)
+          (git add data/waiting/questions/map-audit.json data/status && python3 .github/scripts/kpc_stamp_only.py && { git diff --cached --quiet && echo "nothing new to save"; } || { git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && saved=0 && for i in 1 2 3 4; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # PR2: one commit, skipped when only time stamps changed; pull --rebase retries (was: a retry re-ran 'git commit' and never pushed)
           cd ../out && find audit -size +20M -delete; git add -A audit && git commit -qm "map audit (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || echo "::warning title=Map audit::results not saved to tools-out this time"
           true   # ok: the notices above say what happened
       - name: Next job (the audit goes on until every area is done)
@@ -95,7 +105,7 @@ jobs:
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-map-audit.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           kpc_brake || exit 0
-          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/dispatches -f ref=main -f "inputs[areas]=${{ inputs.areas }}" || echo "::warning title=Map audit::could not start the next job"
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/dispatches -f ref=main -f "inputs[areas]=${{ inputs.areas }}" -f "inputs[after_crash]=${{ steps.r.outputs.next_after_crash || 'no' }}" || echo "::warning title=Map audit::could not start the next job"
       - name: WATCHDOG HEARTBEAT (Nov 2, chat 10) - KPC-Data's timed runs stopped; this chained bot starts the watchdog when it is 2.5 h old
         id: kept_green_hb
         continue-on-error: true
@@ -110,3 +120,8 @@ jobs:
           # Nov 2 5 PM (HQ): Pages publishes the branch 'site'; move it to main when it lags (kpc-pages-sync.yml checks itself)
           gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-pages-sync.yml/dispatches" -f ref=main >/dev/null 2>&1 || echo "::warning title=Pages copy::could not start kpc-pages-sync"
           true   # ok: the next chained run checks again
+      - name: Red when the audit crashed or an area failed (Nov 2 bot fixes; the Audit step above never stops the job)
+        if: always() && (steps.r.outcome == 'failure' || (steps.r.outputs.rc != '' && steps.r.outputs.rc != '0' && steps.r.outputs.rc != '3'))
+        run: |
+          echo "::error title=Map audit::exit ${{ steps.r.outputs.rc || '(step failed before the audit ran)' }}: 4 = one or more areas failed, anything else = the audit crashed. See run-log.txt on tools-out audit/."
+          exit 1
