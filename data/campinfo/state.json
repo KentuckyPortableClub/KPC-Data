@@ -305,6 +305,28 @@
    "status": "done",
    "updated": "2026-11-01"
   },
+  "US-NE": {
+   "camps": 236,
+   "checked": 232,
+   "counts": {
+    "camps": 232,
+    "needs_browser": 2,
+    "needs_key": 11,
+    "no_page": 6,
+    "not_official": 23,
+    "ok": 3,
+    "other": 2,
+    "resting": 185,
+    "robots": 0,
+    "with_booking": 74,
+    "with_elevation": 0,
+    "with_facts": 5,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-03"
+  },
   "US-NV": {
    "camps": 64,
    "checked": 63,
@@ -474,6 +496,7 @@
   "US-MI": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-SC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -609,6 +632,15 @@
    },
    "read": "2026-11-01"
   },
+  "US-NE": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-11-03"
+  },
   "US-NV": {
    "cell": {
     "carriers": null,
@@ -676,7 +708,8 @@
  "hosts": {
   "destateparks.com": 1793783183.695624,
   "epqs.nationalmap.gov": 1793781692.578986,
-  "midnrreservations.com": 1793785971.755406
+  "midnrreservations.com": 1793785971.755406,
+  "outdoornebraska.gov": 1793787313.1131797
  },
  "ky_check": {
   "agree": 111,
@@ -1631,30 +1664,30 @@
  },
  "last": {
   "areas": [
-   "US-MI"
+   "US-NE"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 33,
-   "rested": 536,
+   "requests": 16,
+   "rested": 424,
    "robots": 0,
    "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "browser": 9,
-   "camps": 521,
+   "browser": 3,
+   "camps": 236,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 9,
-   "needs_key": 114,
-   "no_page": 379,
-   "not_official": 0,
-   "ok": 12,
-   "pages_read": 19,
-   "resting": 16,
+   "needs_browser": 4,
+   "needs_key": 11,
+   "no_page": 6,
+   "not_official": 23,
+   "ok": 6,
+   "pages_read": 8,
+   "resting": 189,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

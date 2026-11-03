@@ -19,6 +19,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 | US-MA | 30 | 20 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 18 | 22 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
+| US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
 | US-MT | 312 | 0 | 312 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -34,6 +35,7 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
+- outdoornebraska.gov: 187 campgrounds · host resting
 - cpw.state.co.us: 164 campgrounds · host resting
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 48 campgrounds · host resting
@@ -1319,6 +1321,36 @@ Updated 2026-11-03. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://agriculture.delaware.gov/wp-content/uploads/sites/1 · “link “Blackbird Camping Map” -> https://agriculture.delaware.gov/wp-content/uploads/sites/108/2025/02/Blackbird-State-Forest_Updated”
   - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
   - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
+
+## US-NE: 12 random samples (records with facts; seed = the date)
+
+- **Walnut Creek State Recreation Area** (US-4036, state, status ok, 2 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/51)
+  - booking.url = "https://outdoornebraska.gov/parks/reservations/" · “booking link from our campstate-manual row (official system outdoornebraska.gov)”
+  - hookups.electric = true · “D. Fish kill in 2025 BLG, CCF, CRP, LMB, RSF, SAE Wilson Creek 2X WMA Otoe (48) 15 acres. Electric motor or nonpowered boats only. Owned by ”
+- **Natick Campground; Steer Creek Campground; Toadstool Geological Park and Campground; Soldier Creek Campground; Roberts Tract Camping Area/Trailhead; Red Cloud Campground; French Creek Camping Area; Be** (intake-US-3372, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10610)
+  - booking.url = "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=106 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - features = "fire rings, and a vault toilet" · “Site Open This small, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground pro”
+  - reservable = true · “gov. Here is a a map of the Bessey Recreation Complex that illustrates the sites that are reservable. Please note that these are… Black Hill”
+  - restrooms = "vault" · “ll, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground provides access to th”
+  - season = "year-round" · “Open This small pond, located just north of the Middle Loup River, is open to fishing all year round. It has ample parking. Nebraska Game an”
+- **Union Pacific State Recreation Area** (US-5677, state, status ok, 8 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1545147-state-parks-guide-2026/93)
+  - booking.how = "online: digital.outdoornebraska.gov" · “link “Box Butte Reservoir STATE RECREATION AREA””
+  - booking.url = "https://digital.outdoornebraska.gov/i/1545147/9" · “link “Box Butte Reservoir STATE RECREATION AREA” -> https://digital.outdoornebraska.gov/i/1545147/9”
+  - checkin = "4 p.m" · “tions carry a fee for each unit in addition to the regular lodging and camping fee. Cabin check-in time is 4 p.m. and checkout time is 11 a.”
+  - checkout = "11 a.m" · “nit in addition to the regular lodging and camping fee. Cabin check-in time is 4 p.m. and checkout time is 11 a.m. (except at Fort Robinson ”
+  - reservable = true · “ill station facilities are closed for the winter. MAKING RESERVATIONS Lodging and camping reservations are available in advance at OutdoorNe”
+  - rules.stay_limit = "14 consecutive days" · “. Camping at all other areas is available on a first- come, first-served basis. Stays are limited to 14 consecutive days in a 30-day period.”
+  - season = "year-round" · “er. Modern camping is available May to mid-October, longer if weather permits. Camping is available year-round with reduced amenities, as so”
+  - showers = "some" · “onger if weather permits. Camping is available year-round with reduced amenities, as some shower houses and dump-and-fill station facilities”
+- **Natick Campground; Steer Creek Campground; Toadstool Geological Park and Campground; Soldier Creek Campground; Roberts Tract Camping Area/Trailhead; Red Cloud Campground; French Creek Camping Area; Be** (intake-US-3371, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10610)
+  - booking.url = "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=106 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - features = "fire rings, and a vault toilet" · “Site Open This small, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground pro”
+  - reservable = true · “gov. Here is a a map of the Bessey Recreation Complex that illustrates the sites that are reservable. Please note that these are… Black Hill”
+  - restrooms = "vault" · “ll, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground provides access to th”
+  - season = "year-round" · “Open This small pond, located just north of the Middle Loup River, is open to fishing all year round. It has ample parking. Nebraska Game an”
+- **Elkhorn Crossing State Park** (US-4012, state, status ok (browser), 2 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/57)
+  - booking.url = "https://outdoornebraska.gov/parks/reservations/" · “booking link from our campstate-manual row (official system outdoornebraska.gov)”
+  - hookups.electric = true · “utlet Canal (Sheet 18), Sutherland Reservoir SRA (Sheet 18). Black Bass - Nebraska Public Power District Canal from Sutherland Reservoir out”
 
 ## US-CO: 12 random samples (records with facts; seed = the date)
 
