@@ -2,10 +2,33 @@
 
 From kpc_parking_explorer.py. New = not yet in data/access-layers.json. Review, then add the good ones.
 
-## OH (11 new)
+## OR (7 new)
 
+- **recreation/BLM_Natl_Recs_pts / Trail Head** · 1256 points · area field `UNIT_NAME` · type field `FET_SUBTYPE`  
+  https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/14
+- **recreation/BLM_Natl_Recreation_Sites_Facilities / BLM Natl RIDB Recreation Trailhead** · 856 points · area field `RecAreaName` · type field `RecAreaFeeDescription`  
+  https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation_Sites_Facilities/MapServer/7
+- **recreation/BLM_Natl_Recs_pts / Boat Ramp** · 358 points · area field `UNIT_NAME` · type field `FET_SUBTYPE`  
+  https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1
+- **Disabled_Angling_Access_Points / Angling Access Points** · 127 points · area field `Name` · type field ``  
+  https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Disabled_Angling_Access_Points/FeatureServer/0
+- **2026_Participating_Libraries / Participating Day Use Fee Park Pass Libraries** · 77 points · area field `Website` · type field `Library_Type`  
+  https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/2026_Participating_Libraries/FeatureServer/0
+- **DAS_Parking / DAS_Parking** · 68 points · area field `` · type field ``  
+  https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/DAS_Parking/FeatureServer/0
+- **Boating_Access_Yamhill / Boating Access Sites** · 20 points · area field `name` · type field `facility_type`  
+  https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Access_Yamhill/FeatureServer/112
+
+## PA (16 new)
+
+- **Parks/Park_Reservable / State Park Reservable Sites** · 6362 points · area field `PARK_NAME` · type field `SITE_TYPE_NAME`  
+  https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/Park_Reservable/FeatureServer/0
+- **Parks/PARK_RESERVATIONS_INS / State Park Reservable Structures** · 822 points · area field `PARK_NAME` · type field `SITE_TYPE_NAME`  
+  https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/PARK_RESERVATIONS_INS/FeatureServer/0
 - **GRSM_PARKING / PARKING_AREAS** · 673 points · area field `LOC_NAME` · type field `TYPE`  
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRSM_PARKING/FeatureServer/0
+- **GateID / Gate** · 511 points · area field `` · type field `GATE_TYPE`  
+  https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/GateID/FeatureServer/1
 - **ANST_Facilities / Parking** · 483 points · area field `Name` · type field `Type`  
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Facilities/FeatureServer/2
 - **GRSM_TRAILHEADS / TRAILHEADS** · 154 points · area field `LOC_NAME` · type field `THEAD_TYPE`  
@@ -14,6 +37,10 @@ From kpc_parking_explorer.py. New = not yet in data/access-layers.json. Review, 
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NAMA_Parking_Meters/FeatureServer/0
 - **GRTE_TRANS_Parking_1 / GRTE_TRANS_Parking** · 35 points · area field `UNITNAME` · type field `POITYPE`  
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRTE_TRANS_Parking_1/FeatureServer/0
+- **GateID / Access Point** · 33 points · area field `` · type field `FEATURE_TYPE`  
+  https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/GateID/FeatureServer/0
+- **Parks/StateParkAssetsMASTER / State Park Assets** · 25 points · area field `Name` · type field `Type`  
+  https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/StateParkAssetsMASTER/MapServer/0
 - **ASIS_Boat_Access / ASIS: Boat Access Points** · 16 points · area field `SITENAME` · type field `CLASS`  
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ASIS_Boat_Access/FeatureServer/0
 - **FIIS_Boat_Launches / FACILITY_BoatLaunch_NortheastOceanData_SunriseHwyBuffer_pt** · 13 points · area field `name` · type field `launchType`  
@@ -26,6 +53,19 @@ From kpc_parking_explorer.py. New = not yet in data/access-layers.json. Review, 
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/EVER_CUL_Campgrounds/FeatureServer/0
 - **HAFE_Climbing_Access_Points_Public / HAFE Climbing Access Points** · 2 points · area field `Name` · type field ``  
   https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HAFE_Climbing_Access_Points_Public/FeatureServer/0
+
+## OK (5 new)
+
+- **ADA_Compliance / Ramps** · 26796 points · area field `` · type field `Ramp_Type`  
+  https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/ADA_Compliance/FeatureServer/0
+- **OLAP_UpdatedLayers_062626_OnX_View / OLAP Parking Alerts 062626** · 299 points · area field `` · type field `PointType`  
+  https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/OLAP_UpdatedLayers_062626_OnX_View/FeatureServer/6
+- **OLAP_UpdatedLayers_062626_PublicView / OLAP Parking Alerts 062626** · 299 points · area field `` · type field `PointType`  
+  https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/OLAP_UpdatedLayers_062626_PublicView/FeatureServer/6
+- **RestAreaParking / Parking** · 32 points · area field `` · type field `FACILITY_TYPE`  
+  https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/RestAreaParking/FeatureServer/0
+- **ADA_Compliance / Capitol Complex Parking Lots** · 18 points · area field `Facility` · type field `Type_Insp`  
+  https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/ADA_Compliance/FeatureServer/5
 
 ## SC (10 new)
 
@@ -115,16 +155,3 @@ From kpc_parking_explorer.py. New = not yet in data/access-layers.json. Review, 
   https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/CG_DAYUSE_PARKING/FeatureServer/1
 - **CG_DAYUSE_PARKING / CG_WaterFacilities** · 22 points · area field `Facility` · type field `Type`  
   https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/CG_DAYUSE_PARKING/FeatureServer/2
-
-## OK (5 new)
-
-- **ADA_Compliance / Ramps** · 26796 points · area field `` · type field `Ramp_Type`  
-  https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/ADA_Compliance/FeatureServer/0
-- **OLAP_UpdatedLayers_062626_OnX_View / OLAP Parking Alerts 062626** · 299 points · area field `` · type field `PointType`  
-  https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/OLAP_UpdatedLayers_062626_OnX_View/FeatureServer/6
-- **OLAP_UpdatedLayers_062626_PublicView / OLAP Parking Alerts 062626** · 299 points · area field `` · type field `PointType`  
-  https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/OLAP_UpdatedLayers_062626_PublicView/FeatureServer/6
-- **RestAreaParking / Parking** · 32 points · area field `` · type field `FACILITY_TYPE`  
-  https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/RestAreaParking/FeatureServer/0
-- **ADA_Compliance / Capitol Complex Parking Lots** · 18 points · area field `Facility` · type field `Type_Insp`  
-  https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/ADA_Compliance/FeatureServer/5
