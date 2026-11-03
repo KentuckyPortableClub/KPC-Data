@@ -1212,6 +1212,40 @@
      ],
      "records": 1019,
      "sample": [
+      "Conservation Covenant - Tasman Accord, Arahura Blo",
+      "Jubilee Mine - Wairau Forest",
+      "Paturau River Snail Covenant"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Conservation Covenant Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "GIS_AREA",
+      "GIS_AREA_HA",
+      "DOC_FIRE_RESPONSIBILITY",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1019,
+     "sample": [
       "RD & BD Mason Covenant, PPL",
       "Kaingaroa Cave Protective Covenant",
       "Glenbervie No 1 Protective Covenant"
@@ -1521,40 +1555,6 @@
       "Conservation Covenant - Lake Tarleton and Tarleton",
       "Rangitihi Covenant",
       "Table Hill Covenant"
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "Conservation Covenant Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NaPALIS_ID",
-      "Start_Date",
-      "End_Date",
-      "Type",
-      "Name",
-      "Local_Purpose",
-      "Government_Purpose",
-      "Conservation_Unit_Number",
-      "Vested",
-      "Control_Managed",
-      "Recorded_Area",
-      "GlobalID",
-      "GIS_AREA",
-      "GIS_AREA_HA",
-      "DOC_FIRE_RESPONSIBILITY",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1019,
-     "sample": [
-      "Tongaporutu Conservation Covenant - R & P Gibbs (u",
-      "Arawhata Bush Covenant",
-      "Ngatamawahine Stream Covenant"
      ],
      "name_field": "Name"
     }
@@ -2836,6 +2836,42 @@
      ],
      "records": 78,
      "sample": [
+      "Poor Knights Islands Marine Reserve",
+      "Tuhua (Mayor Island) Marine Reserve",
+      "Taumoana (Five Finger Peninsula) Marine Reserve"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 78,
+     "sample": [
       "Banks Peninsula Marine Mammal Sanctuary",
       "Tuhua (Mayor Island) Marine Reserve",
       "Parininihi Marine Reserve"
@@ -3163,42 +3199,6 @@
       "Horoirangi Marine Reserve",
       "Banks Peninsula Marine Mammal Sanctuary",
       "Poor Knights Islands Marine Reserve"
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "NAPALIS_ProtectedArea",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NaPALIS_ID",
-      "Start_Date",
-      "End_Date",
-      "Type",
-      "Name",
-      "Legislation",
-      "Section",
-      "Local_Purpose",
-      "Government_Purpose",
-      "Conservation_Unit_Number",
-      "Vested",
-      "Control_Managed",
-      "Recorded_Area",
-      "GlobalID",
-      "Overlays",
-      "Private_Ownership",
-      "Classified",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 78,
-     "sample": [
-      "Poor Knights Islands Marine Reserve",
-      "Banks Peninsula Marine Mammal Sanctuary",
-      "Parininihi Marine Reserve"
      ],
      "name_field": "Name"
     }
@@ -3616,6 +3616,42 @@
      ],
      "records": 51,
      "sample": [
+      "Poor Knights Islands Marine Reserve",
+      "Tuhua (Mayor Island) Marine Reserve",
+      "Taumoana (Five Finger Peninsula) Marine Reserve"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 51,
+     "sample": [
       "Tuhua (Mayor Island) Marine Reserve",
       "Parininihi Marine Reserve",
       "Piopiotahi (Milford Sound) Marine Reserve"
@@ -3943,42 +3979,6 @@
       "Horoirangi Marine Reserve",
       "Poor Knights Islands Marine Reserve",
       "Tuhua (Mayor Island) Marine Reserve"
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "NAPALIS_ProtectedArea",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NaPALIS_ID",
-      "Start_Date",
-      "End_Date",
-      "Type",
-      "Name",
-      "Legislation",
-      "Section",
-      "Local_Purpose",
-      "Government_Purpose",
-      "Conservation_Unit_Number",
-      "Vested",
-      "Control_Managed",
-      "Recorded_Area",
-      "GlobalID",
-      "Overlays",
-      "Private_Ownership",
-      "Classified",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 51,
-     "sample": [
-      "Poor Knights Islands Marine Reserve",
-      "Parininihi Marine Reserve",
-      "Piopiotahi (Milford Sound) Marine Reserve"
      ],
      "name_field": "Name"
     }
@@ -4340,6 +4340,32 @@
      ],
      "records": 11045,
      "sample": [
+      "Conservation Area - Te Ramarama (proposed Scenic R",
+      "Marginal Strip - Whiritoa Stream",
+      "Marginal Strip - Komata Stream"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Recorded_Area",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11045,
+     "sample": [
       "Marginal Strip - Te Puia Point",
       "Petit Carenage Recreation Reserve",
       "Wainui Scenic Reserve"
@@ -4579,32 +4605,6 @@
       "Conservation Area - Te Ramarama (proposed Scenic R"
      ],
      "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "NAPALIS_ProtectedArea",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NaPALIS_ID",
-      "Type",
-      "Name",
-      "Legislation",
-      "Section",
-      "Recorded_Area",
-      "GlobalID",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 11045,
-     "sample": [
-      "Conservation Area - Pureora",
-      "Marginal Strip - Komata Stream",
-      "Conservation Area - Pureora"
-     ],
-     "name_field": "Name"
     }
    ],
    "note": "DOC Public Conservation Areas 3 Colour",
@@ -4793,9 +4793,9 @@
      ],
      "records": 10967,
      "sample": [
-      "Jury Conservation Area",
-      "Marginal Strip - Otahi Stream",
-      "Waitahanui Recreation Reserve"
+      "Pukekaha Conservation Area",
+      "Hoihenga Conservation Area",
+      "Marginal Strip - Mikimiki Stream"
      ],
      "name_field": "Name"
     },
@@ -4828,9 +4828,9 @@
      ],
      "records": 10967,
      "sample": [
-      "Jury Conservation Area",
-      "Marginal Strip - Otahi Stream",
-      "Waitahanui Recreation Reserve"
+      "Pukekaha Conservation Area",
+      "Hoihenga Conservation Area",
+      "Marginal Strip - Mikimiki Stream"
      ],
      "name_field": "Name"
     },
@@ -4863,9 +4863,9 @@
      ],
      "records": 10967,
      "sample": [
-      "Jury Conservation Area",
-      "Marginal Strip - Otahi Stream",
-      "Waitahanui Recreation Reserve"
+      "Pukekaha Conservation Area",
+      "Hoihenga Conservation Area",
+      "Marginal Strip - Mikimiki Stream"
      ],
      "name_field": "Name"
     },
@@ -4898,9 +4898,9 @@
      ],
      "records": 10967,
      "sample": [
-      "Jury Conservation Area",
-      "Marginal Strip - Otahi Stream",
-      "Waitahanui Recreation Reserve"
+      "Pukekaha Conservation Area",
+      "Hoihenga Conservation Area",
+      "Marginal Strip - Mikimiki Stream"
      ],
      "name_field": "Name"
     },
@@ -5065,6 +5065,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10967,
+     "sample": [
+      "Conservation Area - Te Ramarama (proposed Scenic R",
+      "Marginal Strip - Whiritoa Stream",
+      "Marginal Strip - Komata Stream"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "NAPALIS_ProtectedArea",
@@ -5460,42 +5496,6 @@
       "Conservation Area - Te Ramarama (proposed Scenic R"
      ],
      "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "NAPALIS_ProtectedArea",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NaPALIS_ID",
-      "Start_Date",
-      "End_Date",
-      "Type",
-      "Name",
-      "Legislation",
-      "Section",
-      "Local_Purpose",
-      "Government_Purpose",
-      "Conservation_Unit_Number",
-      "Vested",
-      "Control_Managed",
-      "Recorded_Area",
-      "GlobalID",
-      "Overlays",
-      "Private_Ownership",
-      "Classified",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 10967,
-     "sample": [
-      "Conservation Area - Pureora",
-      "Marginal Strip - Komata Stream",
-      "Conservation Area - Pureora"
-     ],
-     "name_field": "Name"
     }
    ],
    "note": "DOC Public Conservation Land",
@@ -5725,225 +5725,225 @@
      ],
      "records": 1916,
      "sample": [
+      "Whakatutuna Point Marginal Strip",
       "Marginal Strip - Pukewhau Stream",
-      "Whakatutuna Point Marginal Strip",
-      "Makino Scenic Reserve (Wellington)"
-     ],
-     "name_field": "HuntBlockName"
-    },
-    {
-     "id": 0,
-     "name": "DOC Recreational Hunting Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CreatedDate",
-      "ModifiedDate",
-      "Conservancy",
-      "PermitArea",
-      "BlockID",
-      "HuntBlockName",
-      "BlockType",
-      "HuntStatus",
-      "DateConditions",
-      "AccessConditions",
-      "DogConditions",
-      "SpecialConditions",
-      "Ha",
-      "Scale",
-      "GlobalID",
-      "Web_ID",
-      "HuntingWebPage",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1916,
-     "sample": [
-      "Marginal Strip - Pukewhau Stream",
-      "Whakatutuna Point Marginal Strip",
-      "Makino Scenic Reserve (Wellington)"
-     ],
-     "name_field": "HuntBlockName"
-    },
-    {
-     "id": 0,
-     "name": "DOC Recreational Hunting Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CreatedDate",
-      "ModifiedDate",
-      "Conservancy",
-      "PermitArea",
-      "BlockID",
-      "HuntBlockName",
-      "BlockType",
-      "HuntStatus",
-      "DateConditions",
-      "AccessConditions",
-      "DogConditions",
-      "SpecialConditions",
-      "Ha",
-      "Scale",
-      "GlobalID",
-      "Web_ID",
-      "HuntingWebPage",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1916,
-     "sample": [
-      "Marginal Strip - Pukewhau Stream",
-      "Whakatutuna Point Marginal Strip",
-      "Makino Scenic Reserve (Wellington)"
-     ],
-     "name_field": "HuntBlockName"
-    },
-    {
-     "id": 0,
-     "name": "DOC Recreational Hunting Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CreatedDate",
-      "ModifiedDate",
-      "Conservancy",
-      "PermitArea",
-      "BlockID",
-      "HuntBlockName",
-      "BlockType",
-      "HuntStatus",
-      "DateConditions",
-      "AccessConditions",
-      "DogConditions",
-      "SpecialConditions",
-      "Ha",
-      "Scale",
-      "GlobalID",
-      "Web_ID",
-      "HuntingWebPage",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1916,
-     "sample": [
-      "Pomahaka Conservation Area",
-      "Catlins-MacLennan",
-      "Catlins-MacLennan"
-     ],
-     "name_field": "HuntBlockName"
-    },
-    {
-     "id": 0,
-     "name": "DOC Recreational Hunting Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CreatedDate",
-      "ModifiedDate",
-      "Conservancy",
-      "PermitArea",
-      "BlockID",
-      "HuntBlockName",
-      "BlockType",
-      "HuntStatus",
-      "DateConditions",
-      "AccessConditions",
-      "DogConditions",
-      "SpecialConditions",
-      "Ha",
-      "Scale",
-      "GlobalID",
-      "Web_ID",
-      "HuntingWebPage",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1916,
-     "sample": [
-      "Pomahaka Conservation Area",
-      "Catlins-MacLennan",
-      "Catlins-MacLennan"
-     ],
-     "name_field": "HuntBlockName"
-    },
-    {
-     "id": 0,
-     "name": "DOC Recreational Hunting Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CreatedDate",
-      "ModifiedDate",
-      "Conservancy",
-      "PermitArea",
-      "BlockID",
-      "HuntBlockName",
-      "BlockType",
-      "HuntStatus",
-      "DateConditions",
-      "AccessConditions",
-      "DogConditions",
-      "SpecialConditions",
-      "Ha",
-      "Scale",
-      "GlobalID",
-      "Web_ID",
-      "HuntingWebPage",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1916,
-     "sample": [
-      "Pomahaka Conservation Area",
-      "Catlins-MacLennan",
-      "Catlins-MacLennan"
-     ],
-     "name_field": "HuntBlockName"
-    },
-    {
-     "id": 0,
-     "name": "DOC Recreational Hunting Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CreatedDate",
-      "ModifiedDate",
-      "Conservancy",
-      "PermitArea",
-      "BlockID",
-      "HuntBlockName",
-      "BlockType",
-      "HuntStatus",
-      "DateConditions",
-      "AccessConditions",
-      "DogConditions",
-      "SpecialConditions",
-      "Ha",
-      "Scale",
-      "GlobalID",
-      "Web_ID",
-      "HuntingWebPage",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1916,
-     "sample": [
-      "Whakatutuna Point Marginal Strip",
-      "Claris Recreation Reserve",
       "Claris Recreation Reserve"
+     ],
+     "name_field": "HuntBlockName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Marginal Strip - Pukewhau Stream",
+      "Whakatutuna Point Marginal Strip",
+      "Makino Scenic Reserve (Wellington)"
+     ],
+     "name_field": "HuntBlockName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Marginal Strip - Pukewhau Stream",
+      "Whakatutuna Point Marginal Strip",
+      "Makino Scenic Reserve (Wellington)"
+     ],
+     "name_field": "HuntBlockName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Marginal Strip - Pukewhau Stream",
+      "Whakatutuna Point Marginal Strip",
+      "Makino Scenic Reserve (Wellington)"
+     ],
+     "name_field": "HuntBlockName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Pomahaka Conservation Area",
+      "Catlins-MacLennan",
+      "Catlins-MacLennan"
+     ],
+     "name_field": "HuntBlockName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Pomahaka Conservation Area",
+      "Catlins-MacLennan",
+      "Catlins-MacLennan"
+     ],
+     "name_field": "HuntBlockName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Pomahaka Conservation Area",
+      "Catlins-MacLennan",
+      "Catlins-MacLennan"
      ],
      "name_field": "HuntBlockName"
     }
@@ -15623,6 +15623,42 @@
      ],
      "records": 321,
      "sample": [
+      "Skippers Campsite",
+      "Teetotal Standard Campsite",
+      "Stony Bay Campsite"
+     ],
+     "name_field": "TechObjectName"
+    },
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "EquipmentID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "EquipCat",
+      "EquipCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GISStatusStr",
+      "GeometrySource",
+      "CharGlobalID",
+      "CharName1",
+      "CharValue1"
+     ],
+     "records": 321,
+     "sample": [
       "Walter Peak Campsite (Beach Point)",
       "Daleys Flat Campsite (Lawn At Hut)",
       "Awaroa Campsite"
@@ -15952,42 +15988,6 @@
       "Kerr Bay Campsite"
      ],
      "name_field": "TechObjectName"
-    },
-    {
-     "id": 0,
-     "name": "INFRASTRUCTURE_EAM_AssetPt",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "TechObjectName",
-      "FlocID",
-      "EquipmentID",
-      "ObjectType",
-      "ObjectTypeKey",
-      "SubObjectType",
-      "SubObjectTypeKey",
-      "FlocCat",
-      "FlocCatStr",
-      "EquipCat",
-      "EquipCatStr",
-      "DataCaptureAccuracy",
-      "DataCaptureAccuracyStr",
-      "GISStatus",
-      "GISStatusStr",
-      "GeometrySource",
-      "CharGlobalID",
-      "CharName1",
-      "CharValue1"
-     ],
-     "records": 321,
-     "sample": [
-      "Walter Peak Campsite (Beach Point)",
-      "Daleys Flat Campsite (Lawn At Hut)",
-      "Bettjemann Campsite"
-     ],
-     "name_field": "TechObjectName"
     }
    ],
    "note": "DOC_Campsites_DTO",
@@ -16007,6 +16007,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "GeometrySource",
+      "CharName2",
+      "CharValue2",
+      "CharName3",
+      "CharValue3",
+      "CharName4",
+      "CharValue4",
+      "CharName5",
+      "CharValue5",
+      "CharName6",
+      "CharValue6"
+     ],
+     "records": 328,
+     "sample": [
+      "Deer Flat Campsite",
+      "T3: Waikare River Mouth Campsite",
+      "Clements Road End Campsite"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
@@ -16400,42 +16436,6 @@
       "Broken Hills Campsite",
       "Deer Flat Campsite",
       "Brod Bay Campsite"
-     ],
-     "name_field": "TechObjectName"
-    },
-    {
-     "id": 0,
-     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "TechObjectName",
-      "FlocID",
-      "ObjectType",
-      "ObjectTypeKey",
-      "SubObjectType",
-      "SubObjectTypeKey",
-      "FlocCat",
-      "FlocCatStr",
-      "GeometrySource",
-      "CharName2",
-      "CharValue2",
-      "CharName3",
-      "CharValue3",
-      "CharName4",
-      "CharValue4",
-      "CharName5",
-      "CharValue5",
-      "CharName6",
-      "CharValue6"
-     ],
-     "records": 328,
-     "sample": [
-      "Boyle Village Campsite",
-      "Blumine/Oruawairua Island Campsite",
-      "Mill Flat Campsite"
      ],
      "name_field": "TechObjectName"
     }
@@ -17316,6 +17316,42 @@
      ],
      "records": 943,
      "sample": [
+      "T3: Komata Hut (2024)",
+      "Fidgit Bivvy",
+      "Dubious Bivvy"
+     ],
+     "name_field": "TechObjectName"
+    },
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "EquipmentID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "EquipCat",
+      "EquipCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GISStatusStr",
+      "GeometrySource",
+      "CharGlobalID",
+      "CharName1",
+      "CharValue1"
+     ],
+     "records": 943,
+     "sample": [
       "Ōtamahua Hut",
       "Shelter Rock Hut",
       "Daleys Flat Hut"
@@ -17645,42 +17681,6 @@
       "Doubtful Hut"
      ],
      "name_field": "TechObjectName"
-    },
-    {
-     "id": 0,
-     "name": "INFRASTRUCTURE_EAM_AssetPt",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "TechObjectName",
-      "FlocID",
-      "EquipmentID",
-      "ObjectType",
-      "ObjectTypeKey",
-      "SubObjectType",
-      "SubObjectTypeKey",
-      "FlocCat",
-      "FlocCatStr",
-      "EquipCat",
-      "EquipCatStr",
-      "DataCaptureAccuracy",
-      "DataCaptureAccuracyStr",
-      "GISStatus",
-      "GISStatusStr",
-      "GeometrySource",
-      "CharGlobalID",
-      "CharName1",
-      "CharValue1"
-     ],
-     "records": 943,
-     "sample": [
-      "Avoca Homestead",
-      "Bog Inn Hut",
-      "Watchdog Hut"
-     ],
-     "name_field": "TechObjectName"
     }
    ],
    "note": "DOC_Huts_DTO",
@@ -17700,6 +17700,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "GeometrySource",
+      "CharName2",
+      "CharValue2",
+      "CharName3",
+      "CharValue3",
+      "CharName4",
+      "CharValue4",
+      "SortField",
+      "GlobalID",
+      "CharName14",
+      "CharValue14"
+     ],
+     "records": 963,
+     "sample": [
+      "Stone Hut",
+      "Washpool Hut",
+      "Waterfall Hut (H)"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
@@ -18095,42 +18131,6 @@
       "Worsley Bivvy"
      ],
      "name_field": "TechObjectName"
-    },
-    {
-     "id": 0,
-     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "TechObjectName",
-      "FlocID",
-      "ObjectType",
-      "ObjectTypeKey",
-      "SubObjectType",
-      "SubObjectTypeKey",
-      "FlocCat",
-      "FlocCatStr",
-      "GeometrySource",
-      "CharName2",
-      "CharValue2",
-      "CharName3",
-      "CharValue3",
-      "CharName4",
-      "CharValue4",
-      "SortField",
-      "GlobalID",
-      "CharName14",
-      "CharValue14"
-     ],
-     "records": 963,
-     "sample": [
-      "Otukota Hut",
-      "Panekire Hut",
-      "Leon Kinvig Hut (2024)"
-     ],
-     "name_field": "TechObjectName"
     }
    ],
    "note": "DOC Huts",
@@ -18150,6 +18150,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "EquipmentID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "EquipCat",
+      "EquipCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GISStatusStr",
+      "GeometrySource",
+      "CharGlobalID",
+      "CharName1",
+      "CharValue1"
+     ],
+     "records": 28,
+     "sample": [
+      "Water tank #1, Kawau Bunkhouse",
+      "Water tank #2, Kawau Bunkhouse",
+      "Lighthouse Keepers House (Bunkhouse)"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPt",
@@ -18545,42 +18581,6 @@
       "Waiuta Lodge"
      ],
      "name_field": "TechObjectName"
-    },
-    {
-     "id": 0,
-     "name": "INFRASTRUCTURE_EAM_AssetPt",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "TechObjectName",
-      "FlocID",
-      "EquipmentID",
-      "ObjectType",
-      "ObjectTypeKey",
-      "SubObjectType",
-      "SubObjectTypeKey",
-      "FlocCat",
-      "FlocCatStr",
-      "EquipCat",
-      "EquipCatStr",
-      "DataCaptureAccuracy",
-      "DataCaptureAccuracyStr",
-      "GISStatus",
-      "GISStatusStr",
-      "GeometrySource",
-      "CharGlobalID",
-      "CharName1",
-      "CharValue1"
-     ],
-     "records": 28,
-     "sample": [
-      "Water tank #1, Kawau Bunkhouse",
-      "Water tank #2, Kawau Bunkhouse",
-      "Lighthouse Keepers House (Bunkhouse)"
-     ],
-     "name_field": "TechObjectName"
     }
    ],
    "note": "DOC_Lodges_Cabins_Cottages_DTO",
@@ -18600,6 +18600,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GeometrySource",
+      "CharName2",
+      "CharValue2",
+      "CharName3",
+      "CharValue3",
+      "CharName4",
+      "CharValue4",
+      "CharName5"
+     ],
+     "records": 25,
+     "sample": [
+      "Cobb Hostel",
+      "Cabins Four and Five (WHP)",
+      "Matai Bay Hut (Booked Accommodation)"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
@@ -18993,42 +19029,6 @@
       "Lighthouse Keepers House (Bunkhouse)",
       "Matai Bay Hut (Booked Accommodation)",
       "Waiuta Lodge"
-     ],
-     "name_field": "TechObjectName"
-    },
-    {
-     "id": 0,
-     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "TechObjectName",
-      "FlocID",
-      "ObjectType",
-      "ObjectTypeKey",
-      "SubObjectType",
-      "SubObjectTypeKey",
-      "FlocCat",
-      "FlocCatStr",
-      "DataCaptureAccuracy",
-      "DataCaptureAccuracyStr",
-      "GISStatus",
-      "GeometrySource",
-      "CharName2",
-      "CharValue2",
-      "CharName3",
-      "CharValue3",
-      "CharName4",
-      "CharValue4",
-      "CharName5"
-     ],
-     "records": 25,
-     "sample": [
-      "Cabin Seven (WHP)",
-      "Cobb Hostel",
-      "Stony Bay Bach (Photo)"
      ],
      "name_field": "TechObjectName"
     }
@@ -19434,6 +19434,42 @@
      ],
      "records": 10,
      "sample": [
+      "Te Waewae Bay Marine Mammal Sanctuary",
+      "Banks Peninsula Marine Mammal Sanctuary",
+      "West Coast North Island Marine Mammal Sanctuary"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
       "Banks Peninsula Marine Mammal Sanctuary",
       "Te Waewae Bay Marine Mammal Sanctuary",
       "West Coast North Island Marine Mammal Sanctuary"
@@ -19689,42 +19725,6 @@
       "Clifford and Cloudy Bay Marine Mammal Sanctuary",
       "Banks Peninsula Marine Mammal Sanctuary",
       "Te Waewae Bay Marine Mammal Sanctuary"
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "NAPALIS_ProtectedArea",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NaPALIS_ID",
-      "Start_Date",
-      "End_Date",
-      "Type",
-      "Name",
-      "Legislation",
-      "Section",
-      "Local_Purpose",
-      "Government_Purpose",
-      "Conservation_Unit_Number",
-      "Vested",
-      "Control_Managed",
-      "Recorded_Area",
-      "GlobalID",
-      "Overlays",
-      "Private_Ownership",
-      "Classified",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 10,
-     "sample": [
-      "Banks Peninsula Marine Mammal Sanctuary",
-      "Te Waewae Bay Marine Mammal Sanctuary",
-      "Catlins Coast Marine Mammal Sanctuary"
      ],
      "name_field": "Name"
     },
@@ -22635,6 +22635,42 @@
       "VersionFromDate",
       "VersionToDate"
      ],
+     "records": 661,
+     "sample": [
+      "Opouahi ECOED Pestoff pellets BS",
+      "MANIOTOTO TMA 25-26 Cyanide Paste",
+      "Pirongia Double tap rat and possum  #144"
+     ],
+     "name_field": "BlockName"
+    },
+    {
+     "id": 0,
+     "name": "TreatmentBlocks_PesticideSummary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "BlockName",
+      "AreaName",
+      "StartDate",
+      "FinishDate",
+      "MethodName",
+      "Pesticide",
+      "PesticideTradeName",
+      "BaitValuePrefeed",
+      "BaitUnitPrefeed",
+      "ToxicLoading",
+      "BaitValueToxic",
+      "BaitUnitToxic",
+      "ControlMethodStatus",
+      "LeadAgency",
+      "RemoveOrDegrade",
+      "CautionPeriod",
+      "DateOfLastApplicationOrRemoval",
+      "VersionFromDate",
+      "VersionToDate"
+     ],
      "records": 649,
      "sample": [
       "Opouahi ECOED Pestoff pellets BS",
@@ -22748,42 +22784,6 @@
       "Martins Bay Pindone - Hollyford Conservation Trust",
       "Clutha Buffer Feratox Bait Bags",
       "Taupo_TaupoTMA_Epro_Feratox_BaitStations"
-     ],
-     "name_field": "BlockName"
-    },
-    {
-     "id": 0,
-     "name": "TreatmentBlocks_PesticideSummary",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "BlockName",
-      "AreaName",
-      "StartDate",
-      "FinishDate",
-      "MethodName",
-      "Pesticide",
-      "PesticideTradeName",
-      "BaitValuePrefeed",
-      "BaitUnitPrefeed",
-      "ToxicLoading",
-      "BaitValueToxic",
-      "BaitUnitToxic",
-      "ControlMethodStatus",
-      "LeadAgency",
-      "RemoveOrDegrade",
-      "CautionPeriod",
-      "DateOfLastApplicationOrRemoval",
-      "VersionFromDate",
-      "VersionToDate"
-     ],
-     "records": 647,
-     "sample": [
-      "Opouahi ECOED Pestoff pellets BS",
-      "MANIOTOTO TMA 25-26 Cyanide Paste",
-      "Pirongia Double tap rat and possum  #144"
      ],
      "name_field": "BlockName"
     },
@@ -35226,6 +35226,20 @@
       "POINT_POSITION_LOCKED",
       "EPISERVERGUID"
      ],
+     "records": 1345
+    },
+    {
+     "id": 0,
+     "name": "DOC_WebsiteWalkingandTrampingPts_DTO",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "DIFFICULTY",
+      "POINT_POSITION_LOCKED",
+      "EPISERVERGUID"
+     ],
      "records": 1461
     },
     {
@@ -35311,20 +35325,6 @@
       "EPISERVERGUID"
      ],
      "records": 1358
-    },
-    {
-     "id": 0,
-     "name": "DOC_WebsiteWalkingandTrampingPts_DTO",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "DIFFICULTY",
-      "POINT_POSITION_LOCKED",
-      "EPISERVERGUID"
-     ],
-     "records": 1461
     },
     {
      "id": 0,
@@ -36136,6 +36136,19 @@
       "Shape__Length"
      ],
      "records": 127
+    },
+    {
+     "id": 0,
+     "name": "FAUNA_FeralCat_2007_BDI_simplified_distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 127
     }
    ],
    "note": "FAUNA_FeralCat_2007_BDI_simplified_distribution",
@@ -36310,6 +36323,19 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "FAUNA_Hedgehog_2007_BDI_simplified_distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 52
+    },
     {
      "id": 0,
      "name": "FAUNA_Hedgehog_2007_BDI_simplified_distribution",
@@ -36747,6 +36773,19 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "FAUNA_Stoats_2014_BDI_simplified_distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 47
+    },
     {
      "id": 0,
      "name": "FAUNA_Stoats_2014_BDI_simplified_distribution",
@@ -49624,6 +49663,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 25,
+     "name": "Sooty_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Sooty Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 25,
      "name": "Sooty_Albatross_H95",
