@@ -387,12 +387,13 @@ def area_ok(area, areas_arg):
 
 FERS_LINE = ("⚠️ Parks' boundaries may overlap here, but we can't confirm it. "
              "Check both official boundary maps and make your own call before you count it.")
+# PR1 (Nov 2): honest KPC User-Agent, never a browser's (club rule). The phone test still gets a phone-size screen and touch;
+# only the site's iPhone-only tweaks (they look for "iPhone" in the User-Agent) are not exercised by this test.
 DEVICES = {
     "phone": {"viewport": {"width": 390, "height": 844}, "is_mobile": True, "has_touch": True, "device_scale_factor": 2,
-              "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) "
-                            "Version/17.5 Mobile/15E148 Safari/604.1 KPC-site-check"},
+              "user_agent": "KPC-bot/1.0 (+https://github.com/KentuckyPortableClub) KPC-site-check phone"},
     "desktop": {"viewport": {"width": 1280, "height": 900}, "is_mobile": False, "has_touch": False, "device_scale_factor": 1,
-                "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36 KPC-site-check"},
+                "user_agent": "KPC-bot/1.0 (+https://github.com/KentuckyPortableClub) KPC-site-check desktop"},
 }
 # Before any page script runs: the guest view (spec: navigator.webdriver = false), and a counter of
 # outline shapes Leaflet adds to the map (SVG or canvas; the trail layer's own pane is not counted).

@@ -3,10 +3,13 @@ name: KPC YouTube comments
 # to the Discord STAFF room. Secrets (names only): YOUTUBE_API_KEY, KPC_DISCORD_STAFF_WEBHOOK. Missing secret = quiet skip.
 # Also (Oct 28, HQ safety net): KPC-Data's KEYS answer (YouTube, NPS, RIDB, FCC map) -> data/status/keys.json, read by
 # KPC-Links' nightly check-up; that file has no time stamp, so it only commits when a key's result changes.
+# PR1 (Nov 2): two SEPARATE jobs. 'comments' gets only YOUTUBE_API_KEY + the staff webhook; 'keys' gets the other keys and runs
+# this repo's own copy of kpc_key_check.py (no more download from KPC-Links main). A bad YouTube key stops only 'comments'
+# (yellow warning on the run); the keys job still runs and reports it on the check-up.
 # Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '36 13 * * *'    # 8:37 AM Central (7:37 in winter)   # G9 Nov 2: was '37 13 * * *' (spread the start times; now 1 min earlier)
+    - cron: '36 13 * * *'    # 7:36 AM Central (winter) / 8:36 AM (summer); once a day   # G9 Nov 2: was '37 13 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -37,6 +40,38 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
           LOOK_BACK_DAYS: ${{ inputs.look_back_days }}
         run: python3 .github/scripts/kpc_youtube_comments.py || echo "::error title=kpc_youtube_comments.py::stopped with an error (exit $?), see the log above"
+      - name: Save the memory (only when something was sent)
+        id: kept_green_3
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          f=data/status/youtube-seen.json; [ -f "$f" ] && git add "$f"
+          git diff --cached --quiet && exit 0
+          git commit -qm 'YouTube comments memory'
+          { for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep $((i*8)); done; echo "::error title=Save::not saved after every try; the next run tries again"; }; exit 0
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY
+  keys:
+    # Runs after 'comments' (whatever it did) so the two saves never race each other.
+    needs: comments
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
       - name: Keys answer (KPC-Data's secrets; a key is never printed)
         id: kept_green_2
         continue-on-error: true
@@ -47,18 +82,16 @@ jobs:
           FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
           FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
           KEYS_OUT: data/status/keys.json
-        run: |
-          curl -fsS -m 30 -o "$RUNNER_TEMP/kc.py" https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Links/main/.github/scripts/kpc_key_check.py \
-            && python3 "$RUNNER_TEMP/kc.py" || echo "::error title=kc.py::stopped with an error (exit $?), see the log above"
-      - name: Save the memory (only when something was sent)
-        id: kept_green_3
+        run: python3 .github/scripts/kpc_key_check.py || echo "::error title=kpc_key_check.py::stopped with an error (exit $?), see the log above"
+      - name: Save the key results (only when a result changed)
+        id: kept_green_4
         continue-on-error: true
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          for f in data/status/youtube-seen.json data/status/keys.json; do [ -f "$f" ] && git add "$f"; done
+          f=data/status/keys.json; [ -f "$f" ] && git add "$f"
           git diff --cached --quiet && exit 0
-          git commit -qm 'YouTube comments memory / key check'
+          git commit -qm 'Key check'
           { for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep $((i*8)); done; echo "::error title=Save::not saved after every try; the next run tries again"; }; exit 0
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
