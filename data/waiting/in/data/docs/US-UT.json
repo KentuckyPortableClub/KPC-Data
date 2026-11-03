@@ -697,6 +697,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -1232,7 +1233,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-11-03",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "",
@@ -2686,6 +2687,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -3153,20 +3155,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-11963": {
    "n": "Big Rock Candy Mountain Bike-Trailhead NPS Recreation Site",
@@ -3348,20 +3351,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Cedar City Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-12998": {
    "n": "Cache Valley Public Shooting Range Utah DWR State Recreation Site",
@@ -3429,9 +3435,18 @@
    "page": "https://www.fs.usda.gov/r04/fishlake/recreation/explore-forest/pando",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r04/fishlake/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r04/fishlake/recreation/explore-forest/pando",
+    "posted": "October 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/fishlake",
@@ -3443,7 +3458,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-13490": {
    "n": "Flaming Gorge-Uintas Scenic Byway National Parkway",
@@ -3761,16 +3777,17 @@
     "how": ""
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://stateparks.utah.gov/rules-and-faq/",
+    "how": "a link on the page in a browser ('Park Rules & FAQs')",
+    "status": "ok"
    },
    "agency": "government agency (stateparks.utah.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-3070": {
    "n": "Escalante Petrified Forest State Park",
@@ -3778,21 +3795,30 @@
    "page": "https://stateparks.utah.gov/parks/escalante-petrified-forest/",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://stateparks.utah.gov/wp-content/uploads/escalante-digital-brochure-2026.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Escalante Petrified Forest State Park Brochure')",
+    "page": "https://stateparks.utah.gov/parks/escalante-petrified-forest/",
+    "posted": "2026",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://stateparks.utah.gov/rules-and-faq/",
+    "how": "a link on the page in a browser ('Park Rules & FAQs')",
+    "status": "ok"
    },
    "agency": "government agency (stateparks.utah.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4397": {
    "n": "Manti-La Sal National Forest",
@@ -3800,9 +3826,18 @@
    "page": "https://www.fs.usda.gov/mantilasal",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r04/manti-lasal/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/mantilasal",
+    "posted": "May 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/manti-lasal",
@@ -3814,7 +3849,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4399": {
    "n": "Grand Staircase-Escalante BLM National Monument",
@@ -3823,20 +3859,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4475": {
    "n": "Caribou-Targhee National Forest",
@@ -3844,9 +3881,17 @@
    "page": "https://www.fs.usda.gov/ctnf",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://storymaps.arcgis.com/stories/f5a87b017c5e41c0b941abac9ee535a1",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Access Story Map Here')",
+    "page": "https://www.fs.usda.gov/ctnf",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "linked from the agency page (storymaps.arcgis.com)"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/caribou-targhee",
@@ -3858,7 +3903,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4481": {
    "n": "Sawtooth National Forest",
@@ -3871,16 +3917,17 @@
     "how": ""
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+    "how": "a link on the page in a browser ('Know Before You Go')",
+    "status": "ok"
    },
    "agency": "U.S. Forest Service",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-4566": {
    "n": "California National Historic Trail",
@@ -4013,20 +4060,23 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "is managed by Moab Field Office"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5754": {
    "n": "Cliff Ridge Hang Gliding Area BLM Recreation Management Area",
@@ -4035,20 +4085,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5756": {
    "n": "Browns Park National Wildlife Management Area",
@@ -4090,20 +4141,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5760": {
    "n": "Dewey Bridge BLM Recreation Management Area",
@@ -4112,20 +4164,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5761": {
    "n": "La Sal Mountain National Forest",
@@ -4133,9 +4186,18 @@
    "page": "https://www.fs.usda.gov/mantilasal",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r04/manti-lasal/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-03",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/mantilasal",
+    "posted": "May 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-03",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/manti-lasal",
@@ -4147,7 +4209,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5762": {
    "n": "Westwater Canyon of the Colorado BLM Recreation Management Area",
@@ -4156,20 +4219,21 @@
    "checked": "2026-10-31",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 8 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5763": {
    "n": "Fish Forde BLM Recreation Management Area",
@@ -13070,7 +13134,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r04/ashley",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/ashley",
@@ -13105,7 +13169,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r04/dixie",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/dixie",
@@ -13189,7 +13253,7 @@
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
@@ -17328,16 +17392,16 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 692,
-  "map ok": 89,
-  "map found by the bot": 67,
+  "map ok": 94,
+  "map found by the bot": 72,
   "date on the map": 23,
-  "posted date only": 56,
-  "date unknown": 10,
-  "no map": 603,
-  "rules ok": 58,
-  "needs browser": 391,
+  "posted date only": 60,
+  "date unknown": 11,
+  "no map": 598,
+  "rules ok": 69,
+  "needs browser": 376,
   "handover hints": 0,
-  "runs hints": 19,
+  "runs hints": 21,
   "host resting / robots": 0,
   "map names the park": 82,
   "region overview only": 0

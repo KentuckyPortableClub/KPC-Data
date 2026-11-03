@@ -951,6 +951,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -990,6 +991,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
@@ -2961,6 +2963,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
@@ -8196,7 +8199,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -8228,7 +8231,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -8260,7 +8263,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -9375,9 +9378,17 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/chito-branch-reserve",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/chito_branch_reserve.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2016-11-28",
+    "date_how": "file stamp 2016 (older than the posting 2021 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('PRINT THIS MAP')",
+    "page": "https://www.swfwmd.state.fl.us/recreation/chito-branch-reserve",
+    "posted": "Feb 12, 2021",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -9393,7 +9404,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-5624": {
    "n": "Jack Creek State Conservation Area",
@@ -9414,6 +9426,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
@@ -11931,6 +11944,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -11954,7 +11968,9 @@
    "agency": "Florida water management district",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -15261,14 +15277,14 @@
  "read": "2026-11-03",
  "counts": {
   "parks": 460,
-  "map ok": 241,
-  "map found by the bot": 225,
-  "date on the map": 24,
+  "map ok": 242,
+  "map found by the bot": 226,
+  "date on the map": 25,
   "posted date only": 193,
   "date unknown": 24,
-  "no map": 219,
+  "no map": 218,
   "rules ok": 63,
-  "needs browser": 16,
+  "needs browser": 15,
   "handover hints": 0,
   "runs hints": 27,
   "host resting / robots": 0,
