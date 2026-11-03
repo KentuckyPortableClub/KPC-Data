@@ -498,6 +498,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "CA-5170",
+   "Park name (as the agency writes it)": "Fallsview Park",
+   "Size": 8,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D11&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-03"
+  },
+  {
    "Park number (if matched)": "CA-5663",
    "Park name (as the agency writes it)": "Hepworth",
    "Size": 94,
@@ -849,7 +858,7 @@
    "Agency/area": "Parks",
    "Kind": "GIS layer",
    "Example URL": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
-   "# times used": 22,
+   "# times used": 23,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
