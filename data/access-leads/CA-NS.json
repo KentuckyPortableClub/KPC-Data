@@ -1,6 +1,182 @@
 {
- "checked": "2026-10-28",
+ "checked": "2026-11-03",
  "leads": [
+  {
+   "agency": "",
+   "area": "",
+   "count": 1188,
+   "fields": [
+    "MAINRECUSE",
+    "REC_NAME",
+    "OFFICIAL",
+    "RECPOLYID",
+    "SOURCE",
+    "SACC",
+    "SUPERVISED"
+   ],
+   "known": false,
+   "layer": "HRM Park Recreation Features",
+   "sample": [
+    {
+     "MAINRECUSE": "PLAYFIELD",
+     "RECPOLYID": "RPLY157",
+     "REC_NAME": "LEMARCHANT-ST. THOMAS ELEMENTARY SCHOOL PARK PLAYFIELD",
+     "SACC": "IN",
+     "SOURCE": "AMP",
+     "SUPERVISED": "N"
+    },
+    {
+     "MAINRECUSE": "BASEBALL",
+     "RECPOLYID": "RPLY1604",
+     "REC_NAME": "ELDERBANK PARK BALL DIAMOND",
+     "SACC": "IN",
+     "SOURCE": "AMP",
+     "SUPERVISED": "N"
+    },
+    {
+     "MAINRECUSE": "BASEBALL",
+     "RECPOLYID": "RPLY1441",
+     "REC_NAME": "WILLIAMSWOOD RECREATION PARK BALL DIAMOND #1",
+     "SACC": "IN",
+     "SOURCE": "AMP",
+     "SUPERVISED": "N"
+    }
+   ],
+   "service": "HRM_Park_Recreation_Features_2",
+   "typef": "MAINRECUSE",
+   "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Park_Recreation_Features_2/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 306,
+   "fields": [
+    "ACCPRKID",
+    "STREET_NAME",
+    "FROM_STR",
+    "TO_STR",
+    "DURATION",
+    "STATUS",
+    "COMMENTS",
+    "DIRECTION",
+    "ADJSURFMAT",
+    "OBSTRUCT",
+    "LOC_HILL",
+    "SOURCE",
+    "SACC",
+    "WINT_PLOW",
+    "WINT_MAINT",
+    "WINT_ROUTE",
+    "WINT_LOS",
+    "WINT_MAT",
+    "WINT_COMM"
+   ],
+   "known": false,
+   "layer": "Accessible Parking Spots",
+   "sample": [
+    {
+     "ACCPRKID": "AP386",
+     "DIRECTION": "N",
+     "DURATION": "HR2",
+     "FROM_STR": "ONTARIO ST",
+     "SOURCE": "Parking Enforcement",
+     "STATUS": "PND",
+     "STREET_NAME": "FULLER TERR",
+     "TO_STR": "BLOOMFIELD ST"
+    },
+    {
+     "ACCPRKID": "AP249",
+     "ADJSURFMAT": "CONCRETE",
+     "DIRECTION": "N",
+     "DURATION": "HR3",
+     "FROM_STR": "CLYDE ST",
+     "LOC_HILL": "N",
+     "OBSTRUCT": "N",
+     "SOURCE": "Traffic Services",
+     "STATUS": "INS",
+     "STREET_NAME": "DRESDEN ROW",
+     "TO_STR": "SPRING GARDEN RD"
+    },
+    {
+     "ACCPRKID": "AP110",
+     "ADJSURFMAT": "CONCRETE",
+     "DIRECTION": "S",
+     "DURATION": "HR3",
+     "FROM_STR": "BLOWERS ST",
+     "LOC_HILL": "N",
+     "OBSTRUCT": "Y",
+     "SOURCE": "Traffic Services",
+     "STATUS": "INS",
+     "STREET_NAME": "GRAFTON ST",
+     "TO_STR": "SPRING GARDEN RD"
+    }
+   ],
+   "service": "Accessible_Parking_Spots",
+   "typef": "",
+   "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Accessible_Parking_Spots/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 174,
+   "fields": [
+    "PRKPAYID",
+    "ASSETID",
+    "ASSETCODE",
+    "OWNER",
+    "LOCGEN",
+    "ASSETSTAT",
+    "LOCATION",
+    "MAINTBY",
+    "TID",
+    "PKNGZONE",
+    "SOURCE",
+    "SACC"
+   ],
+   "known": false,
+   "layer": "Parking Pay Stations",
+   "sample": [
+    {
+     "ASSETCODE": "PRKPAY",
+     "ASSETID": "PYP100",
+     "ASSETSTAT": "INS",
+     "LOCATION": "College",
+     "LOCGEN": "ROW",
+     "MAINTBY": "HRM",
+     "OWNER": "HRM",
+     "PKNGZONE": "D",
+     "PRKPAYID": "PYP100",
+     "TID": "PS125"
+    },
+    {
+     "ASSETCODE": "PRKPAY",
+     "ASSETID": "PYP101",
+     "ASSETSTAT": "INS",
+     "LOCATION": "College",
+     "LOCGEN": "ROW",
+     "MAINTBY": "HRM",
+     "OWNER": "HRM",
+     "PKNGZONE": "D",
+     "PRKPAYID": "PYP101",
+     "TID": "PS128"
+    },
+    {
+     "ASSETCODE": "PRKPAY",
+     "ASSETID": "PYP103",
+     "ASSETSTAT": "INS",
+     "LOCATION": "Spring Garden",
+     "LOCGEN": "ROW",
+     "MAINTBY": "HRM",
+     "OWNER": "HRM",
+     "PKNGZONE": "D",
+     "PRKPAYID": "PYP103",
+     "TID": "PS147"
+    }
+   ],
+   "service": "Parking_Pay_Stations",
+   "typef": "",
+   "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Parking_Pay_Stations/FeatureServer/0"
+  },
   {
    "agency": "...",
    "area": "Name",

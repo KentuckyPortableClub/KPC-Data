@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-28",
+ "checked": "2026-11-03",
  "leads": [
   {
    "agency": "",
@@ -97,47 +97,6 @@
    "service": "Hosted/OfflineTrailsMap",
    "typef": "",
    "url": "https://gis.grey.ca/server/rest/services/Hosted/OfflineTrailsMap/FeatureServer/0"
-  },
-  {
-   "agency": "",
-   "area": "Website",
-   "count": 35,
-   "fields": [
-    "CA_ID",
-    "CA_Name",
-    "Feature",
-    "Comments",
-    "Directions",
-    "Website"
-   ],
-   "known": false,
-   "layer": "Conservation Authority Entrances",
-   "sample": [
-    {
-     "CA_ID": "34",
-     "CA_Name": "Beamer",
-     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=43.18829,-79.57565",
-     "Feature": "Entrance",
-     "Website": "https://npca.ca/parks/beamer-memorial"
-    },
-    {
-     "CA_ID": "28",
-     "CA_Name": "Comfort Maple",
-     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=43.06108,-79.34586",
-     "Feature": "Entrance",
-     "Website": "https://npca.ca/parks/comfort-maple"
-    },
-    {
-     "CA_ID": "33",
-     "CA_Name": "St. John's ",
-     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=43.06847,-79.28329",
-     "Feature": "Entrance",
-     "Website": "https://npca.ca/parks/st.-johns"
-    }
-   ],
-   "service": "Conservation_Authority_Entrances",
-   "typef": "Feature",
-   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Conservation_Authority_Entrances/FeatureServer/0"
   },
   {
    "agency": "",
@@ -483,6 +442,47 @@
    "service": "Boat_Launch_CRCA_2021",
    "typef": "",
    "url": "https://services3.arcgis.com/DkDI7U7oNtqFwb5V/arcgis/rest/services/Boat_Launch_CRCA_2021/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Website",
+   "count": 35,
+   "fields": [
+    "CA_ID",
+    "CA_Name",
+    "Feature",
+    "Comments",
+    "Directions",
+    "Website"
+   ],
+   "known": true,
+   "layer": "Conservation Authority Entrances",
+   "sample": [
+    {
+     "CA_ID": "34",
+     "CA_Name": "Beamer",
+     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=43.18829,-79.57565",
+     "Feature": "Entrance",
+     "Website": "https://npca.ca/parks/beamer-memorial"
+    },
+    {
+     "CA_ID": "28",
+     "CA_Name": "Comfort Maple",
+     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=43.06108,-79.34586",
+     "Feature": "Entrance",
+     "Website": "https://npca.ca/parks/comfort-maple"
+    },
+    {
+     "CA_ID": "33",
+     "CA_Name": "St. John's ",
+     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=43.06847,-79.28329",
+     "Feature": "Entrance",
+     "Website": "https://npca.ca/parks/st.-johns"
+    }
+   ],
+   "service": "Conservation_Authority_Entrances",
+   "typef": "Feature",
+   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Conservation_Authority_Entrances/FeatureServer/0"
   },
   {
    "agency": "",

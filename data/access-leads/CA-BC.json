@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-28",
+ "checked": "2026-11-03",
  "leads": [
   {
    "agency": "© 2024 Government of British Columbia",
@@ -40,6 +40,68 @@
    "service": "whse/bcgw_pub_whse_environmental_monitoring",
    "typef": "FEATURE_CODE",
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_environmental_monitoring/MapServer/31"
+  },
+  {
+   "agency": "",
+   "area": "ORG_UNIT_NAME",
+   "count": 15,
+   "fields": [
+    "FOREST_FILE_ID",
+    "FILE_STATUS_ST",
+    "STATUS",
+    "PROJECT_NAME",
+    "PROJECT_TYPE_CODE",
+    "PROJECT_TYPE",
+    "FEATURE_CODE",
+    "FEATURE",
+    "ARCH_IMPACT_ASSESS_IND",
+    "RECREATION_VIEW_IND",
+    "SITE_LOCATION",
+    "SITE_DESCRIPTION",
+    "RECREATION_DISTRICT_CODE",
+    "ORG_UNIT_CODE",
+    "ORG_UNIT_NAME"
+   ],
+   "known": false,
+   "layer": "Trailhead_RSTBC",
+   "sample": [
+    {
+     "FILE_STATUS_ST": "HI",
+     "FOREST_FILE_ID": "REC1431",
+     "PROJECT_NAME": "REDFERN TRAIL",
+     "PROJECT_TYPE": "RTR - Recreation Trail",
+     "PROJECT_TYPE_CODE": "RTR",
+     "RECREATION_VIEW_IND": "Y",
+     "SITE_DESCRIPTION": "Motorized Trail",
+     "SITE_LOCATION": "Fort St. John",
+     "STATUS": "HI - Issued"
+    },
+    {
+     "FILE_STATUS_ST": "HI",
+     "FOREST_FILE_ID": "REC6236",
+     "PROJECT_NAME": "CHRISTINA FALLS TRAIL",
+     "PROJECT_TYPE": "RTR - Recreation Trail",
+     "PROJECT_TYPE_CODE": "RTR",
+     "RECREATION_VIEW_IND": "Y",
+     "SITE_DESCRIPTION": "Trail leads to Christina Falls inside BC Parks",
+     "SITE_LOCATION": "Mackenzie",
+     "STATUS": "HI - Issued"
+    },
+    {
+     "FILE_STATUS_ST": "HI",
+     "FOREST_FILE_ID": "REC6240",
+     "PROJECT_NAME": "CHOWADE RIVER TRAIL",
+     "PROJECT_TYPE": "RTR - Recreation Trail",
+     "PROJECT_TYPE_CODE": "RTR",
+     "RECREATION_VIEW_IND": "Y",
+     "SITE_DESCRIPTION": "Motorized Access route into the Muskwa Ketchika",
+     "SITE_LOCATION": "Fort St. John",
+     "STATUS": "HI - Issued"
+    }
+   ],
+   "service": "Trailhead_RSTBC",
+   "typef": "PROJECT_TYPE_CODE",
+   "url": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/Trailhead_RSTBC/FeatureServer/0"
   },
   {
    "agency": "© 2024 Government of British Columbia",
