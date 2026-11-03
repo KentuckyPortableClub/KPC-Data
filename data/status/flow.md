@@ -1,4 +1,4 @@
-# Flow board (2026-11-03 16:12Z, kpc_flow.py)
+# Flow board (2026-11-03 20:22Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (9)
@@ -28,6 +28,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ### chat 10
 - 1 · key-doctor: found work · since 2026-11-02
 - 1 · Key bots: errors and silence: RED (the bot is broken) · since 2026-11-03
+- 1 · Website copy (site branch): RED (the bot is broken) · since 2026-11-03
 ### chat 11
 - STUCK 3 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
@@ -39,16 +40,15 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - 28 · questions/aliases-nov2.json waiting for an answer · since 2026-11-02
 - 1,937 · questions/hardlook.json waiting for an answer · since 2026-11-02
 - 45 · questions/nearmiss-nov2.json waiting for an answer · since 2026-11-02
-- 34 · questions/gis-hunter.json waiting for an answer · since 2026-11-03
-- 195 · questions/layers.json waiting for an answer · since 2026-11-03
+- 20 · questions/gis-hunter.json waiting for an answer · since 2026-11-03
+- 470 · questions/layers.json waiting for an answer · since 2026-11-03
 - 132 · questions/map-audit.json waiting for an answer · since 2026-11-03
-- 75 · questions/parked.json waiting for an answer · since 2026-11-03
+- 115 · questions/parked.json waiting for an answer · since 2026-11-03
 - 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-03
 - 114 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-03
 ### bots
 - STUCK 1 · Storage keeper (weekly): found work · since 2026-11-01
 - 1 · Cell coverage (FCC): found work · since 2026-11-02
-- 1 · Skipped-run watchdog: found work · since 2026-11-02
 - 304 · layers in the list the intake bot has not checked yet · since 2026-11-03
 
 ## The whole line
@@ -64,16 +64,16 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 6 questions | questions/aliases-nov1.json waiting for an answer | 2 | chat 11 | 2026-11-02 |
 | 6 questions | questions/aliases-nov2.json waiting for an answer | 28 | chat 11 | 2026-11-02 |
 | 6 questions | questions/aliases-oct31.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
-| 6 questions | questions/gis-hunter.json waiting for an answer | 34 | chat 11 | 2026-11-03 |
+| 6 questions | questions/gis-hunter.json waiting for an answer | 20 | chat 11 | 2026-11-03 |
 | 6 questions | questions/hardlook.json waiting for an answer | 1,937 | chat 11 | 2026-11-02 |
 | 6 questions | questions/key-pieces.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
-| 6 questions | questions/layers.json waiting for an answer | 195 | chat 11 | 2026-11-03 |
+| 6 questions | questions/layers.json waiting for an answer | 470 | chat 11 | 2026-11-03 |
 | 6 questions | questions/lost-finds-nov1.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
 | 6 questions | questions/map-audit.json waiting for an answer | 132 | chat 11 | 2026-11-03 |
 | 6 questions | questions/nearmiss-nov2.json waiting for an answer | 45 | chat 11 | 2026-11-02 |
 | 6 questions | questions/no-recheck.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
 | 6 questions | questions/not-sure-for-chat9.json waiting for an answer | 146 | chat 9 | 2026-11-01 **STUCK** |
-| 6 questions | questions/parked.json waiting for an answer | 75 | chat 11 | 2026-11-03 |
+| 6 questions | questions/parked.json waiting for an answer | 115 | chat 11 | 2026-11-03 |
 | 6 questions | questions/world-finder.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
 | 7 waiting room | HELD campinfo files (a check failed; data/waiting/today.md says why) | 3 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 49 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
@@ -85,7 +85,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 8 bots | 2-fer checker: found work | 1 | chat 2 + chat 11 | 2026-11-01 **STUCK** |
 | 8 bots | Cell coverage (FCC): found work | 1 | HQ | 2026-11-02 |
 | 8 bots | Key bots: errors and silence: RED (the bot is broken) | 1 | chat 10 | 2026-11-03 |
-| 8 bots | Skipped-run watchdog: found work | 1 | HQ | 2026-11-02 |
 | 8 bots | Storage keeper (weekly): found work | 1 | HQ | 2026-11-01 **STUCK** |
 | 8 bots | T5 site checker: found work | 1 | chat 3 | 2026-11-01 **STUCK** |
+| 8 bots | Website copy (site branch): RED (the bot is broken) | 1 | chat 10 | 2026-11-03 |
 | 8 bots | key-doctor: found work | 1 | chat 10 | 2026-11-02 |

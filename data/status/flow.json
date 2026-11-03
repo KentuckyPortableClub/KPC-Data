@@ -1,6 +1,6 @@
 {
  "about": "FLOW BOARD (chat 10, Nov 1 2026; Brandon 2:01 PM: 'stuff seems to get dropped a lot ... where you can see for example 900",
- "built": "2026-11-03 16:12Z",
+ "built": "2026-11-03 20:22Z",
  "stuck_days": 2,
  "piles": [
   {
@@ -138,7 +138,7 @@
    "id": "q-gis-hunter",
    "stage": "6 questions",
    "what": "questions/gis-hunter.json waiting for an answer",
-   "n": 34,
+   "n": 20,
    "owner": "chat 11",
    "note": "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same p…",
    "date": "2026-11-03",
@@ -177,7 +177,7 @@
    "id": "q-layers",
    "stage": "6 questions",
    "what": "questions/layers.json waiting for an answer",
-   "n": 195,
+   "n": 470,
    "owner": "chat 11",
    "note": "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (…",
    "date": "2026-11-03",
@@ -255,7 +255,7 @@
    "id": "q-parked",
    "stage": "6 questions",
    "what": "questions/parked.json waiting for an answer",
-   "n": 75,
+   "n": 115,
    "owner": "chat 11",
    "note": "Questions the gate kept away from chat 11 (kpc_q_gate.py; Brandon GO Nov 2 4:40 AM). Kept,…",
    "date": "2026-11-03",
@@ -414,19 +414,6 @@
    "stuck": false
   },
   {
-   "id": "bot-Skipped-run watchdog",
-   "stage": "8 bots",
-   "what": "Skipped-run watchdog: found work",
-   "n": 1,
-   "owner": "HQ",
-   "note": "2026-11-03 13:54 UTC: 5 skipped run(s) started again: kpc-closures.yml (missed Nov 03 12:38 UTC); kp · nobody (it restarts them itself)",
-   "date": "2026-11-03",
-   "first_seen": "2026-11-02",
-   "moved": "2026-11-02",
-   "still_days": 1,
-   "stuck": false
-  },
-  {
    "id": "bot-Storage keeper (weekly)",
    "stage": "8 bots",
    "what": "Storage keeper (weekly): found work",
@@ -453,12 +440,25 @@
    "stuck": true
   },
   {
+   "id": "bot-Website copy (site branch)",
+   "stage": "8 bots",
+   "what": "Website copy (site branch): RED (the bot is broken)",
+   "n": 1,
+   "owner": "chat 10",
+   "note": "site is 85 min behind main (11 commits, 81 website files): started the copy bot (kpc-pages-sync) onc · HQ: look at kpc-pages-sync.yml runs",
+   "date": "2026-11-03",
+   "first_seen": "2026-11-03",
+   "moved": "2026-11-03",
+   "still_days": 0,
+   "stuck": false
+  },
+  {
    "id": "bot-key-doctor",
    "stage": "8 bots",
    "what": "key-doctor: found work",
    "n": 1,
    "owner": "chat 10",
-   "note": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1074 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
+   "note": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1061 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
    "date": "2026-11-03",
    "first_seen": "2026-11-02",
    "moved": "2026-11-02",
