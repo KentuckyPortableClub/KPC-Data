@@ -4192,7 +4192,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/6
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4200,7 +4200,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/7
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4208,7 +4208,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/10
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4216,7 +4216,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/12
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4224,7 +4224,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/16
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4655,26 +4655,26 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 
 
-### Civil War Battlefields  ·  None  ·  from gis-hunter
+### Civil War Battlefields  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
 
-### Civil War Battlefields (time-enabled)  ·  None  ·  from gis-hunter
+### Civil War Battlefields (time-enabled)  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Invalid URL
+- facts: status rest
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
@@ -4706,10 +4706,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status rest
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
@@ -4781,12 +4781,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
 
-### Watershed of the Blanchard River  ·  None  ·  from gis-hunter
+### Watershed of the Blanchard River  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
@@ -4818,10 +4818,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status rest
 
 ### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
@@ -6651,7 +6651,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Empire State Trail  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -6903,7 +6903,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### FWSApproved (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -6913,7 +6913,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### FWS_NWRS_HQ_PubHuntUnits (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -6922,7 +6922,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Lakes and Reservoirs - Public (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -7067,7 +7067,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/4
 - WHY: NOT A PARK LAYER (coverage): closes 24 but only 2 by name (READY needs 3+ name matches and 25%+ of the closes)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
 - closes: 24 of 56 tested missing parks (by name 2, pin only 22; 56 of the area's 1796 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Tamar"
@@ -7163,7 +7163,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/5
 - WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
 - closes: 2 of 4 tested missing parks (by name 1, pin only 1; 56 of the area's 1796 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
@@ -7174,7 +7174,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57546 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
+- facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57540 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
 - closes: 1 of 45 tested missing parks (by name 0, pin only 1; 45 of the area's 1796 missing parks lie in the layer's extent)
   - AU-8859 Kingston Beach - State Beach → polygon "Heritage Precinct"
 
@@ -7723,7 +7723,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/1
 - WHY: no name field: an outline needs a name to match a park
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 126488 records
 - closes: not probed
 
