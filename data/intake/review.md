@@ -4288,7 +4288,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/20
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4296,7 +4296,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/21
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4304,7 +4304,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/22
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4312,7 +4312,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/23
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4320,7 +4320,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/27
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4328,7 +4328,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/35
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -6651,7 +6651,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Empire State Trail  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -6903,7 +6903,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### FWSApproved (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -6913,7 +6913,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### FWS_NWRS_HQ_PubHuntUnits (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -6922,7 +6922,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Lakes and Reservoirs - Public (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
