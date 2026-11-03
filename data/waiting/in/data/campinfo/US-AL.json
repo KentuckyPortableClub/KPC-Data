@@ -82,7 +82,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-87.88066&y=32.55487&units=Feet&wkid=4326",
-    "value": 103
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -411,7 +412,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-85.2038&y=32.93572&units=Feet&wkid=4326",
-    "value": 663
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -1004,7 +1006,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-85.22222&y=32.97083&units=Feet&wkid=4326",
-    "value": 717
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -1069,7 +1072,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-85.01333&y=32.17972&units=Feet&wkid=4326",
-    "value": 190
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -8568,7 +8572,7 @@
   "resting": 0,
   "robots": 0,
   "with_booking": 60,
-  "with_elevation": 11,
+  "with_elevation": 7,
   "with_facts": 40,
   "with_sites": 6
  },
