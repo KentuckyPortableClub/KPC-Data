@@ -1,9 +1,9 @@
 {
  "about": "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same proper name: chat 2 rechecks (G-4) and joins; chat 11 grades a 10% sample. LIKELY = part of the name shared: chat 11 answers YES / NO + checked_by + how. UNLIKELY rows are not asked (evidence in data/gis-hunter/<area>.json).",
  "built": "2026-11-03",
- "open": 34,
- "sure_open": 19,
- "likely_open": 13,
+ "open": 11,
+ "sure_open": 2,
+ "likely_open": 9,
  "never_reasked": 0,
  "questions": [
   {
@@ -12236,6 +12236,26 @@
    "source": "gis-hunter",
    "t1_band": "WEAK",
    "t1_why": "Could not read the record: robots.txt says no."
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-10720",
+   "park": "Forest Lake AMA Aquatic Reserve",
+   "tier": "LIKELY",
+   "why": "shared ama, lake; extra: park aquatic / record -",
+   "kind": "name match",
+   "record": 4953,
+   "record_name": "Forest Lake AMA (Washington)",
+   "acres_approx": 84,
+   "layer": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+   "agency": "DNR Management Units",
+   "record_link": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?objectIds=4953&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-10720",
+   "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null,
+   "source": "gis-hunter"
   }
  ]
 }
