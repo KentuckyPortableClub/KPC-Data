@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T01:19Z",
+ "checked": "2026-11-03T01:21Z",
  "switched_on": false,
  "results": [
   {
@@ -684,6 +684,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/US-DC.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/fers/US-FL.json.gz",
    "kind": "fers",
    "why": [
@@ -823,7 +830,7 @@
    "path": "data/fers/US-ND.json",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 47 rows for 83 (over 10% fewer)"
+    "F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 48 rows for 83 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
