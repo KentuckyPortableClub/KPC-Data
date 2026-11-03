@@ -1922,6 +1922,71 @@
       "Paul de Arzila"
      ],
      "name_field": "sitio_nome"
+    },
+    {
+     "id": 0,
+     "name": "Complexos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "codsitio",
+      "sitio_nome",
+      "habitats",
+      "h1_cod",
+      "h1_nome",
+      "h1_cobert",
+      "h2_cod",
+      "h2_cobert",
+      "h3_cod",
+      "h3_cobert",
+      "fonte",
+      "esc_origem",
+      "cobert3h3_",
+      "shape_leng",
+      "shape_area"
+     ],
+     "records": 86,
+     "sample": [
+      "Ria Formosa/Castro Marim",
+      "Ria de Alvor",
+      "Ria Formosa/Castro Marim"
+     ],
+     "name_field": "sitio_nome"
+    },
+    {
+     "id": 1,
+     "name": "Habitats",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "codsitio",
+      "sitio_nome",
+      "habitats",
+      "h1_cod",
+      "h1_nome",
+      "h1_cobert",
+      "h2_cod",
+      "h2_nome",
+      "h2_cobert",
+      "h3_cod",
+      "h3_nome",
+      "h3_cobert",
+      "fonte",
+      "esc_origem",
+      "shape_leng",
+      "shape_area"
+     ],
+     "records": 38754,
+     "sample": [
+      "Paul de Arzila",
+      "Paul de Arzila",
+      "Paul de Arzila"
+     ],
+     "name_field": "sitio_nome"
     }
    ],
    "note": "",
@@ -3565,6 +3630,27 @@
       "Ave"
      ],
      "name_field": "nome"
+    },
+    {
+     "id": 0,
+     "name": "AtAgua_Bacias_bacias_snirh_PC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "nome",
+      "areakm2",
+      "st_area_sh",
+      "st_length_"
+     ],
+     "records": 35,
+     "sample": [
+      "Ancora e Ribeiras Costeiras",
+      "Arade",
+      "Ave"
+     ],
+     "name_field": "nome"
     }
    ],
    "note": "",
@@ -3585,6 +3671,57 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Operações Integradas de Gestão da Paisagem - OIGP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "aigp_id",
+      "oigp_id",
+      "oigp_nome",
+      "oigp_des",
+      "area_ha",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 62,
+     "sample": [
+      "Alqueidão da Serra",
+      "Alva",
+      "Alvito"
+     ],
+     "name_field": "oigp_nome"
+    },
+    {
+     "id": 1,
+     "name": "Áreas Integradas para a Gestão da Paisagen - AIGP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "aigp",
+      "nome",
+      "concelho",
+      "proponente",
+      "entidade_g",
+      "area_shape",
+      "publicada",
+      "data_dr",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 71,
+     "sample": [
+      "Travessa",
+      "Serra da Lousã",
+      "Felgueiras e Feirão"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "Operações Integradas de Gestão da Paisagem - OIGP",
@@ -13030,6 +13167,31 @@
       "Acácias"
      ],
      "name_field": "nome"
+    },
+    {
+     "id": 0,
+     "name": "Espécies invasoras - IFN",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "objectid",
+      "id_parcela",
+      "nutsii",
+      "nutsiii",
+      "op_mancha",
+      "nome",
+      "abundancia",
+      "abundanc_1"
+     ],
+     "records": 1429,
+     "sample": [
+      "Figueira-da-Índia",
+      "Piteira",
+      "Acácias"
+     ],
+     "name_field": "nome"
     }
    ],
    "note": "",
@@ -16272,6 +16434,36 @@
       "zpe_atn_count"
      ],
      "records": 784
+    },
+    {
+     "id": 0,
+     "name": "ATN___Registo_Interno",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "drcnf",
+      "utilizador",
+      "entidade",
+      "marca",
+      "rnaat",
+      "atividades_cod",
+      "atividades_outra",
+      "atividades_atn_count",
+      "atividades",
+      "rnap_cod",
+      "ap_atn_count",
+      "rnap",
+      "zec_cod",
+      "zec_atn_count",
+      "rn2000_zec",
+      "zpe_cod",
+      "zpe_atn_count"
+     ],
+     "records": 784
     }
    ],
    "note": "",
@@ -16292,6 +16484,23 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DBO.CED_LocaisdeVoto",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "codigo_loc",
+      "numsecvoto",
+      "local",
+      "designacao",
+      "localidade",
+      "telefone"
+     ],
+     "records": 45
+    },
     {
      "id": 0,
      "name": "DBO.CED_LocaisdeVoto",
@@ -16439,6 +16648,32 @@
       "tipo_obser"
      ],
      "records": 35832
+    },
+    {
+     "id": 1,
+     "name": "Dados_SOSvespa",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "data_regis",
+      "data_obser",
+      "data_exter",
+      "exterminad",
+      "acessibili",
+      "suporte",
+      "diametro_n",
+      "altura_nin",
+      "concelho",
+      "distrito",
+      "observacoe",
+      "lon",
+      "lat",
+      "quantidade",
+      "tipo_obser"
+     ],
+     "records": 35832
     }
    ],
    "note": "",
@@ -16459,6 +16694,35 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "galeria_pnrn",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "objectid",
+      "id",
+      "name",
+      "date",
+      "time",
+      "lon",
+      "lat",
+      "altitude",
+      "title",
+      "comment",
+      "path",
+      "relpath",
+      "timestamp"
+     ],
+     "records": 2,
+     "sample": [
+      "Cristina Girão Vieira",
+      "Pedro Rodrigues"
+     ],
+     "name_field": "name"
+    },
     {
      "id": 0,
      "name": "galeria_pnrn",
