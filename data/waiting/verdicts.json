@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T03:42Z",
+ "checked": "2026-11-03T08:37Z",
  "switched_on": false,
  "results": [
   {
@@ -962,8 +962,9 @@
    "path": "data/fers/US-UT.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 62 -> 98 (over 30% change)",
-    "F-2 37 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, US-0645+US-4575",
+    "F-2 candidates 62 -> 111 (over 30% change)",
+    "F-2 NOT SURE 71 -> 42 (over 30% change)",
+    "F-2 52 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-13571, US-0072+US-6010, US-0558+US-4578",
     "F-S3 3 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-11196+US-5973 219 km"
    ],
    "notes": [],
@@ -1226,6 +1227,162 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/AE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/BZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CD.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/FO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GB.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/ID.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/IM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/KE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MV.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MX.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/PR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/PY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/VI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/ZA.json",
+   "kind": "key",
+   "why": [
+    "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   }
  ]
 }
