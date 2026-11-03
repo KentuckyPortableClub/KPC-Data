@@ -108,7 +108,7 @@
 | CA-6105 | de Gannes-Cosby House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6109 | Truro Old Normal College National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6110 | Old Town Lunenburg National Historic District | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
-| CA-6137 | Margaree River National Heritage Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
+| CA-6137 | Margaree River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6176 | Boars Head Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6177 | Brier Island Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6178 | Cape George Lighthouse National Heritage Site | R-G7 step 2 | Nova Scotia ~1: '' (record 772, ~64 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |

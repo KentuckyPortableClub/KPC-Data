@@ -243,7 +243,7 @@
 | CA-6353 | Petun Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6359 | Mildmay-Carrick Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6366 | Naftel's Creek Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
-| CA-6511 | Humber River National Wild & Scenic River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
+| CA-6511 | Humber River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6512 | Kìwekì Point National Park | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6513 | Brockville Railway Tunnel Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6514 | Battle of Crysler's Farm National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Upper Canada Migratory Bird Sanctuary' (record 22313, ~6,451 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |

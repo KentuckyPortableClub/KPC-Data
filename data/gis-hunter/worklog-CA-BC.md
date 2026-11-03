@@ -127,7 +127,7 @@
 | CA-5547 | Thomas Hayes Ecological Reserve | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-5548 | Blackie Spit Recreation Park | R-G7 step 2 | BC local and: 'Blackie Spit' (record 3584273, ~71 ac, pin inside) · same proper name | candidate: SURE (same proper name) | 2026-11-03 | gis-hunter |
 | CA-5667 | Mount Tolmie Park | R-G7 step 2 | BC local and: 'Mount Tolmie Park' (record 3590030, ~42 ac, pin inside) · same proper name | candidate: SURE (same proper name) | 2026-11-03 | gis-hunter |
-| CA-6132 | Fraser River National Heritage Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
-| CA-6133 | Kicking Horse River National Heritage Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
+| CA-6132 | Fraser River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
+| CA-6133 | Kicking Horse River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6369 | Cape Mudge Lighthouse National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6398 | Craigflower Manor House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |

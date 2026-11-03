@@ -4,7 +4,7 @@
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "CA-4600": {
-   "park": "Alsek River National Heritage Area",
+   "park": "Alsek River Canadian Heritage River",
    "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
@@ -36,7 +36,7 @@
      "record_name": "Kluane National Park Reserve Of Canada",
      "acres_approx": 5388298,
      "tier": "UNLIKELY",
-     "why": "no shared proper word"
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],
@@ -45,12 +45,12 @@
     "A Yukon parks : hit",
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage alsek\": 0 lead(s)"
+    "B ArcGIS Online search \"canadian heritage alsek\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4601": {
-   "park": "Bonnet Plume River National Heritage Area",
+   "park": "Bonnet Plume River Canadian Heritage River",
    "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
@@ -71,7 +71,7 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage bonnet plume\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage canadian bonnet\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -86,12 +86,12 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beetle spruce\": 0 lead(s)"
+    "B ArcGIS Online search \"spruce beetle\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4631": {
-   "park": "Tatshenshini River National Heritage Area",
+   "park": "Tatshenshini River Canadian Heritage River",
    "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
@@ -103,7 +103,7 @@
      "record_name": "Kluane",
      "acres_approx": 835553,
      "tier": "UNLIKELY",
-     "why": "no shared proper word"
+     "why": "a line park (trail / scenic river) on a polygon record"
     }
    ],
    "leads": [],
@@ -112,7 +112,7 @@
     "A Yukon parks : hit",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"tatshenshini heritage\": 0 lead(s)"
+    "B ArcGIS Online search \"tatshenshini canadian heritage\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -263,7 +263,7 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"rapids finger five\": 0 lead(s)"
+    "B ArcGIS Online search \"finger rapids five\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -454,7 +454,7 @@
    "verdict": "no layer found"
   },
   "CA-4632": {
-   "park": "Thirty Mile - Yukon River National Heritage Area",
+   "park": "Thirty Mile - Yukon River Canadian Heritage River",
    "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
@@ -464,7 +464,7 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage thirty yukon\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage canadian thirty\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -659,7 +659,7 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"discovery 37903 claim\": 0 lead(s)"
+    "B ArcGIS Online search \"discovery claim 37903\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -704,7 +704,7 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"yukon hotel\": 0 lead(s)"
+    "B ArcGIS Online search \"hotel yukon\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },

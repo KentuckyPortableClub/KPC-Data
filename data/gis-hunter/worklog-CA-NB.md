@@ -145,7 +145,7 @@
 | CA-5726 | Trinity Church and Rectory National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6102 | Oxbow National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6106 | Our Lady of the Assumption Cathedral National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
-| CA-6113 | St. John/Wolastoq Heritage River National Heritage Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
+| CA-6113 | St. John/Wolastoq River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6218 | Saint John Harbour Defensive Network provincial Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6235 | Victoria County Court House Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-6236 | P'tit Sault Blockhouse Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |

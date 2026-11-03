@@ -4,8 +4,8 @@
 |---|---|---|---|---|---|---|
 | CA-0844 | Five Finger Rapids Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-0845 | Five Mile Lake Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
-| CA-4600 | Alsek River National Heritage Area | R-G7 step 2 | Yukon campgr: '' (record 31, ~958,254 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |
-| CA-4601 | Bonnet Plume River National Heritage Area | R-G7 step 2 | CPCAD / Parks Canada: 'Peel Watershed LMU 8' (record 21775, ~4,682,247 ac, pin inside) · container word in the record name (zone / district / county / SSSI ...) | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |
+| CA-4600 | Alsek River Canadian Heritage River | R-G7 step 2 | Yukon campgr: '' (record 31, ~958,254 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |
+| CA-4601 | Bonnet Plume River Canadian Heritage River | R-G7 step 2 | CPCAD / Parks Canada: 'Peel Watershed LMU 8' (record 21775, ~4,682,247 ac, pin inside) · container word in the record name (zone / district / county / SSSI ...) | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |
 | CA-4602 | Conrad Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4607 | Fort Selkirk Historic Site Habitat Protection Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4610 | Kookatsoon Lake Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
@@ -18,8 +18,8 @@
 | CA-4626 | Rampart House Habitat Protection Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4627 | Rancheria Falls Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4628 | Spruce Beetle Trail Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
-| CA-4631 | Tatshenshini River National Heritage Area | R-G7 step 2 | Yukon parks : 'Kluane' (record 23, ~835,553 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |
-| CA-4632 | Thirty Mile - Yukon River National Heritage Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
+| CA-4631 | Tatshenshini River Canadian Heritage River | R-G7 step 2 | Yukon parks : 'Kluane' (record 23, ~835,553 ac, pin inside) · a line park (trail / scenic river) on a polygon record | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-03 | gis-hunter |
+| CA-4632 | Thirty Mile - Yukon River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4633 | Thirty Mile River Habitat Protection Area | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4936 | Dawson Historical Complex National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
 | CA-4937 | Dredge No. 4 National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-03 | gis-hunter |
