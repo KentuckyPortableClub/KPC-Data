@@ -1048,6 +1048,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -1577,14 +1578,22 @@
    "page": "https://www.lastateparks.com/parks-preserves/bogue-chitto-state-park",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.lastateparks.com/sites/default/files/bogu_-_track_chair_2023.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Bogue Chitto All-Terrain Chair Trail Map')",
+    "page": "https://www.lastateparks.com/parks-preserves/bogue-chitto-state-park",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-03",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.pdga.com/rules/official-rules-disc-golf",
+    "how": "a link on the page in a browser ('Professional Disc Golf Association Rules')",
+    "status": "ok"
    },
    "agency": "",
    "runs": [],
@@ -1595,7 +1604,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-03"
   },
   "US-2358": {
    "n": "Chemin-A-Haut State Park",
@@ -1616,6 +1626,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
@@ -1641,6 +1652,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -1664,7 +1676,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -3282,8 +3296,8 @@
   "posted date only": 6,
   "date unknown": 20,
   "no map": 96,
-  "rules ok": 26,
-  "needs browser": 21,
+  "rules ok": 27,
+  "needs browser": 20,
   "handover hints": 0,
   "runs hints": 0,
   "host resting / robots": 0,

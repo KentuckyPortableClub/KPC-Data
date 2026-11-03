@@ -13,13 +13,13 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-GA | 237 | 143 | 97 | 127 | 16 | 85 | 42 | 94 | 42 | 59 | 0 |
 | US-AL | 155 | 78 | 58 | 61 | 15 | 40 | 23 | 77 | 34 | 1 | 0 |
 | US-SC | 167 | 52 | 41 | 49 | 2 | 16 | 34 | 115 | 67 | 0 | 0 |
-| US-FL | 460 | 242 | 226 | 218 | 25 | 193 | 24 | 218 | 63 | 15 | 0 |
+| US-FL | 460 | 242 | 226 | 218 | 25 | 193 | 24 | 218 | 63 | 14 | 0 |
 | US-MS | 155 | 33 | 25 | 21 | 0 | 19 | 14 | 122 | 45 | 93 | 0 |
 | US-IN | 229 | 71 | 68 | 68 | 18 | 48 | 5 | 158 | 11 | 0 | 0 |
 | US-IL | 219 | 103 | 97 | 34 | 5 | 84 | 14 | 116 | 166 | 0 | 0 |
 | US-MO | 561 | 508 | 494 | 503 | 241 | 201 | 66 | 53 | 26 | 0 | 0 |
 | US-WI | 348 | 297 | 290 | 116 | 0 | 5 | 292 | 51 | 23 | 0 | 0 |
-| US-MN | 298 | 55 | 46 | 52 | 4 | 27 | 24 | 243 | 30 | 0 | 0 |
+| US-MN | 319 | 55 | 46 | 52 | 4 | 27 | 24 | 264 | 29 | 0 | 0 |
 | US-IA | 181 | 82 | 77 | 12 | 6 | 50 | 26 | 99 | 124 | 0 | 0 |
 | US-ND | 155 | 33 | 28 | 29 | 1 | 8 | 24 | 122 | 32 | 0 | 0 |
 | US-SD | 120 | 63 | 57 | 56 | 15 | 41 | 7 | 57 | 31 | 0 | 0 |
@@ -36,7 +36,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-DE | 89 | 9 | 8 | 9 | 0 | 5 | 4 | 80 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 4 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 115 | 104 | 88 | 37 | 53 | 25 | 191 | 40 | 2 | 0 |
-| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 21 | 0 |
+| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 27 | 20 | 0 |
 | US-OK | 205 | 121 | 114 | 112 | 2 | 106 | 13 | 80 | 41 | 0 | 0 |
 | US-TX | 222 | 163 | 78 | 157 | 56 | 48 | 59 | 59 | 89 | 3 | 0 |
 | US-KS | 145 | 16 | 8 | 15 | 1 | 12 | 3 | 129 | 15 | 0 | 0 |
@@ -55,7 +55,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-HI | 102 | 22 | 16 | 16 | 4 | 11 | 7 | 80 | 46 | 48 | 0 |
 | US-MI | 388 | 207 | 201 | 199 | 51 | 145 | 11 | 181 | 26 | 254 | 0 |
 | US-OH | 276 | 44 | 32 | 43 | 11 | 30 | 3 | 232 | 274 | 0 | 0 |
-| US-UT | 692 | 94 | 72 | 82 | 23 | 60 | 11 | 598 | 69 | 376 | 0 |
+| US-UT | 692 | 95 | 73 | 82 | 23 | 61 | 11 | 597 | 61 | 354 | 0 |
 | CA-ON | 1180 | 448 | 448 | 353 | 29 | 93 | 326 | 732 | 119 | 256 | 0 |
 | CA-QC | 838 | 70 | 61 | 49 | 4 | 22 | 44 | 768 | 116 | 44 | 0 |
 | CA-NB | 562 | 12 | 12 | 8 | 0 | 4 | 8 | 550 | 11 | 5 | 0 |
@@ -1459,7 +1459,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-4490 | Chippewa National Forest | https://www.fs.usda.gov/r09/chippewa/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-10-30) · posted October 29, 2026 | https://www.fs.usda.gov/r09/chippewa ✓ |  |
 | US-11904 | Migizi National Recreation Trail | https://www.fs.usda.gov/r09/chippewa/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-10-30) · posted October 29, 2026 | https://www.fs.usda.gov/r09/chippewa ✓ |  |
 
-### US-MN no map yet (243): the reason
+### US-MN no map yet (264): the reason
 - US-0673 Saint Croix National Wild and Scenic River: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-1_Namekagon_Name; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-2_Namekagon_Hayw)
 - US-10278 Inspiration Peak State Wayside State Natural : no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html; robots https://www.dnr.state.mn.us/maps/compass.html)
 - US-10306 Paul Hugo Farms WMA Wildlife Management Area: no map link on file and none on the park page
@@ -2665,7 +2665,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-12490 Flatwoods Savanna Wildlife Management Area: no map link on file and none on the park page
 - US-13090 John Franks Wildlife Management Area: no map link on file and none on the park page
 - US-2356 Bayou Segnette State Park: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
-- US-2357 Bogue Chitto State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-2357 Bogue Chitto State Park: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-2358 Chemin-A-Haut State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-2359 Chicot State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-2360 Cypremort Point State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
@@ -4367,29 +4367,30 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0072 | Zion National Park | https://www.nps.gov/zion/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 11, 2026 | https://www.nps.gov/zion/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4573 | Mormon Pioneer National Historic Trail | https://www.nps.gov/mopi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm ✓ |  |
-| US-5761 | La Sal Mountain National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
-| US-13488 | Pando - "I Spread" - Aspen Clone Site of | https://www.fs.usda.gov/r04/fishlake/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted October 27, 2026 | https://www.fs.usda.gov/r04/fishlake ✓ |  |
-| US-4398 | Uinta-Wasatch-Cache National Forest | https://www.fs.usda.gov/r04/uinta-wasatch-cache/maps-guides | page ✓name · forest map only; forest map only; forest · the agency site | date unknown (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/visit/know-before-you-go ✓ | administered by the Forest Service |
-| US-11167 | Little Hole National Scenic Trail | https://www.fs.usda.gov/r04/ashley/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-11-03) · posted January 7, 2026 |  ✗ |  |
+| US-5761 | La Sal Mountain National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
 | US-4394 | Ashley National Forest | https://www.fs.usda.gov/r04/ashley/maps-guides | page ✓name · forest map only; forest map only; forest · outside research | — (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/r04/ashley ✓ |  |
-| US-4395 | Dixie National Forest | https://www.fs.usda.gov/r04/dixie/maps-guides | page ✓name · forest map only; forest map only; forest · outside research | — (date unknown, checked 2026-10-31) · posted October 29, 2026 | https://www.fs.usda.gov/r04/dixie ✓ |  |
-| US-4397 | Manti-La Sal National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
+| US-13488 | Pando - "I Spread" - Aspen Clone Site of | https://www.fs.usda.gov/r04/fishlake/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted October 27, 2026 | https://www.fs.usda.gov/r04/fishlake ✓ |  |
+| US-11167 | Little Hole National Scenic Trail | https://www.fs.usda.gov/r04/ashley/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-11-03) · posted January 7, 2026 |  ✗ |  |
+| US-5783 | Swett Ranch Historic Homestead USFS Nati | https://www.fs.usda.gov/r04/ashley/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted January 7, 2026 | https://www.fs.usda.gov/r04/ashley ✓ |  |
 | US-4396 | Fishlake National Forest | https://www.fs.usda.gov/sites/nfs/files/r04/fishlake/image/Fishlake%20NF%20Avenza%20Travel | image ✓name · image: the name is known from the file n · outside research | — (date unknown, checked 2026-10-31) · posted May 20, 2025 | https://www.fs.usda.gov/r04/fishlake ✓ |  |
-| US-9231 | Utahraptor State Park | https://stateparks.utah.gov/wp-content/uploads/utahraptor-digital-brochure-2025.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2025 |  ✗ |  |
-| US-3084 | Palisade State Park | https://stateparks.utah.gov/wp-content/uploads/palisade-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-03 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
-| US-3069 | Edge of the Cedars State Park | https://stateparks.utah.gov/wp-content/uploads/edgeofthecedars-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-03-31 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
-| US-3085 | Piute State Park | https://stateparks.utah.gov/wp-content/uploads/piuteottercreek-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-03 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
-| US-3079 | Hyrum State Park | https://stateparks.utah.gov/wp-content/uploads/hyrum-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-02 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
-| US-5769 | Utah Field House of Natural History Stat | https://stateparks.utah.gov/wp-content/uploads/utahfieldhouse-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-06 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
-| US-3066 | Dead Horse Point State Park | https://stateparks.utah.gov/wp-content/uploads/deadhorsepoint-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-03-31 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
-| US-3068 | East Canyon State Park | https://stateparks.utah.gov/wp-content/uploads/eastcanyon-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-03-31 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-4397 | Manti-La Sal National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
+| US-4398 | Uinta-Wasatch-Cache National Forest | https://www.fs.usda.gov/r04/uinta-wasatch-cache/maps-guides | page ✓name · forest map only; forest map only; forest · the agency site | date unknown (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/visit/know-before-you-go ✓ | administered by the Forest Service |
+| US-4395 | Dixie National Forest | https://www.fs.usda.gov/r04/dixie/maps-guides | page ✓name · forest map only; forest map only; forest · outside research | — (date unknown, checked 2026-10-31) · posted October 29, 2026 | https://www.fs.usda.gov/r04/dixie ✓ |  |
+| US-3096 | Willard Bay State Park | https://stateparks.utah.gov/wp-content/uploads/2024-Willard-Bay-Map.png | image ✓name · image: the name is known from the file n · outside research | — (date unknown, checked 2026-10-31) · posted 2024 |  ✗ |  |
+| US-3074 | Goosenecks State Park | https://stateparks.utah.gov/wp-content/uploads/goosenecks-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-01 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-3077 | Gunlock State Park | https://stateparks.utah.gov/wp-content/uploads/gunlock-digital-brochure-2026.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2026 |  ✗ |  |
 | US-3076 | Green River State Park | https://stateparks.utah.gov/wp-content/uploads/greenriver-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-02 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
 | US-11162 | Timpanogos Wildlife Management Area | https://wildlife.utah.gov/images/news/2020-10-28-timpanogos-wma-access-map.jpg | image ✓name · image: the name is known from the file n · outside research | — (date unknown, checked 2026-11-01) · posted 2020-10 |  ✗ |  |
 | US-11092 | Midway Utah State Fish Hatchery | https://dwrapps.utah.gov/fishing/ | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-31) · posted — | https://wildlife.utah.gov/rules ✓ |  |
-| US-5921 | Anasazi State Park | https://stateparks.utah.gov/wp-content/uploads/anasazi-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-03-30 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-3079 | Hyrum State Park | https://stateparks.utah.gov/wp-content/uploads/hyrum-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-02 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-3094 | Utah Lake State Park | https://stateparks.utah.gov/wp-content/uploads/utahlake-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-06 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-3095 | Wasatch Mountain State Park | https://stateparks.utah.gov/wp-content/uploads/wasatch-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-06 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-3082 | Millsite State Park | https://stateparks.utah.gov/wp-content/uploads/millsite-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-04-03 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
+| US-5922 | Echo State Park | https://stateparks.utah.gov/wp-content/uploads/echo-digital-brochure-2026.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2026 |  ✗ |  |
+| US-3066 | Dead Horse Point State Park | https://stateparks.utah.gov/wp-content/uploads/deadhorsepoint-digital-brochure-2026.pdf | pdf ✓name · outside research | 2026-03-31 (the PDF file's own stamp (may be the print da) · posted 2026 |  ✗ |  |
 | US-11921 | The Casting of the Lots – Dominguez-Esca | https://wikimapia.org/10213548/Casting-of-Lots#:~:text=%22TH | page · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 
-### US-UT no map yet (598): the reason
+### US-UT no map yet (597): the reason
 - US-10061 Pine Canyon WMA State Conservation Area: no map link on file and none on the park page
 - US-10730 Cedar Mountain Day Use Site BLM Special Recre: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-10794 Logan Canyon National Scenic Byway National P: no map link on file and none on the park page
@@ -6812,6 +6813,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - AU-0039 Sir James Mitchell National Park: no map link on file and none on the park page
 - AU-0040 Shoalwater Islands Marine Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 406))
 - AU-0041 Shell Beach Conservation Park: no map link on file and none on the park page
+
+## robots.txt said no (hosts we did not read)
+- www.dnr.state.mn.us: 21 addresses (Sitemap: https://www.dnr.state.mn.us/sitemap.xml | Sitemap: https://www.dnr.state.mn.us/sitemap-stat)
 
 ## hosts resting a day (three strikes)
 - iowaculture.gov
