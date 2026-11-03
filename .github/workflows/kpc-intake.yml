@@ -85,11 +85,13 @@ jobs:
             echo "unprobed rows: $N"
             if [ "${N:-0}" = "0" ]; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
           fi
-      - name: Probe the queue in chunks, one save per chunk
+      - name: Probe the queue in chunks, ONE save at the end (Nov 3)
+        timeout-minutes: 308   # Nov 3: the step stops before the job's limit, so the one save below always runs
         if: steps.gate.outputs.skip != '1'
         id: kept_green_1
         continue-on-error: true
         env:
+          KPC_SAVE_EACH_CHUNK: ${{ vars.KPC_SAVE_EACH_CHUNK || 'no' }}   # Nov 3 (Brandon YES 5:29 PM): yes = the old way, a save after every chunk
           ROWS: ${{ inputs.rows }}
           TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
           MINUTES: '55'
@@ -101,13 +103,13 @@ jobs:
             [ "$LEFT" = "0" ] && break
             python3 .github/scripts/kpc_intake_bot.py | tee /tmp/intake.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_intake_bot.py::stopped with an error (exit $rc), see the log above"
             LEFT=$(grep -o '^LEFT=[0-9]*' /tmp/intake.log | tail -1 | cut -d= -f2); LEFT=${LEFT:-0}
-            bash ../links/.github/scripts/kpc_push_data.sh . "intake: probe chunk $i (${LEFT} rows left)" data/intake data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+            [ "${KPC_SAVE_EACH_CHUNK:-no}" != yes ] || bash ../links/.github/scripts/kpc_push_data.sh . "intake: probe chunk $i (${LEFT} rows left)" data/intake data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
             [ -n "$ROWS" ] && break
           done
           echo "LEFT=$LEFT" >> "$GITHUB_ENV"
           grep -o '^GATE=[A-Z]*' /tmp/intake.log | tail -1 >> "$GITHUB_ENV" || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
-      - name: Status lines for the checkers and the board
-        if: steps.gate.outputs.skip != '1'
+      - name: Status lines for the checkers and the board + the ONE save for the run (Nov 3 - runs even when the probe step stops)
+        if: always() && steps.gate.outputs.skip != '1'
         id: kept_green_2
         continue-on-error: true
         run: |

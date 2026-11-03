@@ -56,16 +56,25 @@ jobs:
         if: steps.gap.outputs.busy != 'yes'
         id: c
         continue-on-error: true
+        env:
+          KPC_CONVERT_MIN_NEW: ${{ vars.KPC_CONVERT_MIN_NEW || '25' }}
         run: |
           cd kpcdata
           pip install -q -r .github/scripts/tools/kpc_convert_layers/requirements.txt || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
           python3 .github/scripts/kpc_intake_reader.py convert || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # pulls its own files from branch intake-files
           python3 .github/scripts/kpc_tools_run.py prep-convert no /tmp/leads.json || echo "::error title=kpc_tools_run.py::stopped with an error (exit $?), see the log above"
+          R0=$(( $(wc -l < ../out/convert/report.csv 2>/dev/null || echo 1) - 1 ))   # Nov 3: leads read BEFORE this run (progress check below)
           python3 .github/scripts/tools/kpc_convert_layers/kpc_convert_layers.py --leads /tmp/leads.json --out ../out/convert --cache .kpc_cache --max-minutes 50 --resume 2>&1 | tail -20; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_convert_layers.py::stopped with an error (exit $rc), see the log above"
           N=$(python3 -c "import json;print(len(json.load(open('/tmp/leads.json'))))" 2>/dev/null || echo 0)
           R=$(( $(wc -l < ../out/convert/report.csv 2>/dev/null || echo 1) - 1 ))
           echo "::notice title=Map-format converter::$R of $N leads read"
-          [ "$R" -lt "$N" ] && echo "more=yes" >> $GITHUB_OUTPUT || true   # ok: nothing to do is fine
+          # Nov 3 (Brandon YES 5:29 PM, 'what starts convert-layers 11x a day'): the 11-12 runs a day are THIS chain (each run starts the
+          # next while leads are left, up to the 12-a-day brake); the 03:53 UTC timer only starts it. Now the chain goes on only while a
+          # run really moves the backlog (at least KPC_CONVERT_MIN_NEW new leads, default 25); a run that reads (almost) nothing new
+          # stops the chain until the next nightly start, instead of 10 more hour-long runs that redo the same leads.
+          MIN=${KPC_CONVERT_MIN_NEW:-25}
+          if [ "$R" -lt "$N" ] && [ $((R - R0)) -ge "$MIN" ]; then echo "more=yes" >> $GITHUB_OUTPUT
+          elif [ "$R" -lt "$N" ]; then echo "::notice title=Map-format converter::only $((R - R0)) new lead(s) this run (< $MIN): no next run until the nightly start"; fi
           cd ../out && git add -A convert && git commit -qm "map-format converter (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
       - name: Next run while leads are left
         if: steps.gap.outputs.busy != 'yes' && steps.c.outputs.more == 'yes'

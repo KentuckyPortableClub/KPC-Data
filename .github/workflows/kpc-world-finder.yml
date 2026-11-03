@@ -45,10 +45,12 @@ jobs:
             .claude/build/research/WORLD
             .claude/build/research/agency-atlas
             .github/scripts
-      - name: Find, one save per chunk
+      - name: Find, ONE save at the end (Nov 3)
+        timeout-minutes: 288   # Nov 3: the step stops before the job's limit, so the one save below always runs
         id: kept_green_1
         continue-on-error: true
         env:
+          KPC_SAVE_EACH_CHUNK: ${{ vars.KPC_SAVE_EACH_CHUNK || 'no' }}   # Nov 3 (Brandon YES 5:29 PM): yes = the old way, a save after every chunk
           LINKS: ../links
           COUNTRIES: ${{ inputs.countries }}
         run: |
@@ -60,10 +62,18 @@ jobs:
             MINUTES=55 python3 .github/scripts/kpc_world_finder.py | tee /tmp/w.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_world_finder.py::stopped with an error (exit $rc), see the log above"
             python3 .github/scripts/kpc_status.py board "world finder v2" green "chunk $i: data/world-finder + questions" "chat 11 answers data/waiting/questions/world-finder.json" || true   # ok: a status-board line (reporting only)
             python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/world-finder.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"; python3 .github/scripts/kpc_keep_answers.py state data/world-finder/state.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+            [ "${KPC_SAVE_EACH_CHUNK:-no}" != yes ] || bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/w.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done
+      - name: ONE save for the whole run (Nov 3, Brandon YES 5:29 PM; was one save per chunk = up to 5 commits a run)
+        if: always()
+        id: save_once
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          [ "${{ vars.KPC_SAVE_EACH_CHUNK || 'no' }}" = yes ] && { echo 'saved after every chunk (KPC_SAVE_EACH_CHUNK=yes)'; exit 0; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: one save for the run (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
       - name: Countries remain, so the next job starts itself (until the stop time)
         if: ${{ env.STOP != '1' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.countries == '' }}
         id: kept_green_2
