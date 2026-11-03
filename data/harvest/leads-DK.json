@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Denmark (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "DK",
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "status": "paused (out of time, will carry on)",
  "steps_done": [
   "known"
@@ -44,6 +44,32 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 4,
+     "name": "Beskyttede naturtyper",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "temakode",
+      "systid_fra",
+      "oprindkode",
+      "statuskode",
+      "off_kode",
+      "natyp_navn",
+      "aendr_kode",
+      "besig_dato",
+      "ObjectID",
+      "SHAPE"
+     ],
+     "records": 320074,
+     "sample": [
+      "Eng",
+      "Overdrev",
+      "Overdrev"
+     ],
+     "name_field": "natyp_navn"
+    },
     {
      "id": 4,
      "name": "Beskyttede naturtyper",
