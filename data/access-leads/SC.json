@@ -1,6 +1,39 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-03",
  "leads": [
+  {
+   "agency": "",
+   "area": "Park",
+   "count": 3678,
+   "fields": [
+    "Park",
+    "Type",
+    "Name",
+    "Description"
+   ],
+   "known": false,
+   "layer": "Park Assets",
+   "sample": [
+    {
+     "Name": "Lost Creek Overlook trailhead",
+     "Park": "TSP-0279",
+     "Type": "192"
+    },
+    {
+     "Name": "Baseball",
+     "Park": "TSP-0279",
+     "Type": "17"
+    },
+    {
+     "Name": "Volleyball",
+     "Park": "TSP-0279",
+     "Type": "202"
+    }
+   ],
+   "service": "Park_Assets_Public_Facing_View_Only",
+   "typef": "Type",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Park_Assets_Public_Facing_View_Only/FeatureServer/1"
+  },
   {
    "agency": "",
    "area": "Name",
@@ -79,6 +112,82 @@
   },
   {
    "agency": "",
+   "area": "Name",
+   "count": 2832,
+   "fields": [
+    "Name",
+    "County_Name",
+    "Managing_Entity_Name",
+    "Managing_Entity_Level",
+    "Street_Name",
+    "City",
+    "State",
+    "Open_After_Dark",
+    "Joint_Use_Schoolyard",
+    "Waterfront",
+    "Fishing",
+    "Boat_Ramp",
+    "Waterfront_Swim_Area",
+    "ADA_Playground_Equipment",
+    "Rec_Center",
+    "Senior_Center",
+    "Camping_Area",
+    "Other_Facility_Type",
+    "Condition_of_Park",
+    "Website"
+   ],
+   "known": false,
+   "layer": "Existing and New State Parks, Local Parks, and Trailheads",
+   "sample": [
+    {
+     "Boat_Ramp": "No",
+     "City": "Chattanooga",
+     "County_Name": "Hamilton",
+     "Fishing": "No",
+     "Joint_Use_Schoolyard": "No",
+     "Managing_Entity_Level": "City",
+     "Managing_Entity_Name": "Chattanooga Parks Maintenance Division",
+     "Name": "Lake Hills Park",
+     "Open_After_Dark": "No",
+     "State": "TN",
+     "Street_Name": "Bellview AVE ",
+     "Waterfront": "No"
+    },
+    {
+     "Boat_Ramp": "No",
+     "City": "Chattanooga",
+     "County_Name": "Hamilton",
+     "Fishing": "No",
+     "Joint_Use_Schoolyard": "No",
+     "Managing_Entity_Level": "City",
+     "Managing_Entity_Name": "Chattanooga Parks Maintenance Division",
+     "Name": "Miller Park",
+     "Open_After_Dark": "Yes",
+     "State": "TN",
+     "Street_Name": "Market ST ",
+     "Waterfront": "No"
+    },
+    {
+     "Boat_Ramp": "No",
+     "City": "Chattanooga",
+     "County_Name": "Hamilton",
+     "Fishing": "No",
+     "Joint_Use_Schoolyard": "No",
+     "Managing_Entity_Level": "City",
+     "Managing_Entity_Name": "Chattanooga Parks Maintenance Division",
+     "Name": "John A Patten Park and Recreation Center",
+     "Open_After_Dark": "No",
+     "State": "TN",
+     "Street_Name": "Kelly's Ferry RD ",
+     "Waterfront": "No"
+    }
+   ],
+   "service": "Park_Drive_Times_August_2025_WFL1",
+   "typef": "Joint_Use_Schoolyard",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Park_Drive_Times_August_2025_WFL1/FeatureServer/6"
+  },
+  {
+   "agency": "",
    "area": "ParkName",
    "count": 413,
    "fields": [
@@ -116,9 +225,9 @@
      "ParkName": "TSP-0276"
     }
    ],
-   "service": "CleanedParkDriveTimes",
+   "service": "Park_Drive_Times_August_2025_WFL1",
    "typef": "EntranceType",
-   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/CleanedParkDriveTimes/FeatureServer/2"
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Park_Drive_Times_August_2025_WFL1/FeatureServer/2"
   },
   {
    "agency": "",
@@ -162,6 +271,49 @@
    "service": "CleanedParkDriveTimes",
    "typef": "EntranceType",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/CleanedParkDriveTimes/FeatureServer/3"
+  },
+  {
+   "agency": "",
+   "area": "ParkName",
+   "count": 345,
+   "fields": [
+    "ParkName",
+    "Creator",
+    "Editor",
+    "NoService",
+    "ParkFullName",
+    "EntranceType",
+    "EntranceUID"
+   ],
+   "known": false,
+   "layer": "ExistingStateParkEntrancesTrailheads",
+   "sample": [
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceUID": "TSP-0276 | Entry Type: ",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    },
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceType": "Main",
+     "EntranceUID": "TSP-0276 | Entry Type: Main",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    },
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceUID": "TSP-0276 | Entry Type: ",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    }
+   ],
+   "service": "Park_Drive_Times_August_2025_WFL1",
+   "typef": "EntranceType",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Park_Drive_Times_August_2025_WFL1/FeatureServer/3"
   },
   {
    "agency": "",
@@ -287,6 +439,227 @@
    "service": "Blueways_Water_Access_WFL1",
    "typef": "Asset_Type",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Blueways_Water_Access_WFL1/FeatureServer/49"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 12,
+   "fields": [],
+   "known": false,
+   "layer": "StorybookTrailheads",
+   "sample": [
+    {
+     "GlobalID": "db699169-a5a3-4200-b253-041fe1367da9",
+     "OBJECTID": 1
+    },
+    {
+     "GlobalID": "99acdcc1-c6a9-4829-91fc-61b27977190a",
+     "OBJECTID": 2
+    },
+    {
+     "GlobalID": "58c8416e-a5d1-4eb7-ad75-cfa8b33f589b",
+     "OBJECTID": 3
+    }
+   ],
+   "service": "Storybook_Trailheads",
+   "typef": "",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Storybook_Trailheads/FeatureServer/0"
+  },
+  {
+   "agency": "Tennessee Department of Environment and Conservation; Tennessee State Parks",
+   "area": "THPARK",
+   "count": 9,
+   "fields": [
+    "THPARK",
+    "LOTSRF",
+    "THKIOS",
+    "KIOMAP",
+    "COLNAM",
+    "COLMET",
+    "Trailname"
+   ],
+   "known": false,
+   "layer": "Natchez_Trailheads",
+   "sample": [
+    {
+     "COLMET": "iPhone 6",
+     "COLNAM": "Jeffrey Johnson",
+     "THKIOS": "F",
+     "THPARK": "F",
+     "Trailname": "Pin Oak Trail"
+    },
+    {
+     "COLMET": "iPhone 6",
+     "COLNAM": "Jeffrey Johnson",
+     "THKIOS": "F",
+     "THPARK": "F",
+     "Trailname": "Red Leaves Trail"
+    },
+    {
+     "COLMET": "iPhone 6",
+     "COLNAM": "Jeffrey Johnson",
+     "THKIOS": "F",
+     "THPARK": "F",
+     "Trailname": "Red Leaves Trail"
+    }
+   ],
+   "service": "Natchez_Trace_Trailheads",
+   "typef": "",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Natchez_Trace_Trailheads/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "PicnicArea",
+   "count": 1030,
+   "fields": [
+    "PropertyID",
+    "RelatedPropertyID",
+    "SpeciesID",
+    "WaterAccessID",
+    "WaterAccessType",
+    "WaterAccessSubType",
+    "WaterAccessName",
+    "WaterAccessMaterial",
+    "WaterAccessDescription",
+    "Waterbody",
+    "WaterbodyType",
+    "WaterType",
+    "TroutWater",
+    "Parking",
+    "ParkingSurface",
+    "CourtesyDock",
+    "FishingPier",
+    "PicnicArea",
+    "Camping",
+    "Accessible"
+   ],
+   "known": true,
+   "layer": "SC Public Water Access PUBLIC",
+   "sample": [
+    {
+     "SpeciesID": "SPRS111",
+     "WaterAccessID": "BR235",
+     "WaterAccessMaterial": "Concrete or Paved",
+     "WaterAccessName": "Riverview Park",
+     "WaterAccessSubType": "Improved",
+     "WaterAccessType": "Boat Ramp",
+     "WaterType": "Freshwater",
+     "Waterbody": "Savannah River",
+     "WaterbodyType": "River"
+    },
+    {
+     "RelatedPropertyID": "028",
+     "SpeciesID": "SPLP129",
+     "WaterAccessID": "BR411",
+     "WaterAccessMaterial": "Concrete or Paved",
+     "WaterAccessName": "Stevens Creek",
+     "WaterAccessSubType": "Improved",
+     "WaterAccessType": "Boat Ramp",
+     "WaterType": "Freshwater",
+     "Waterbody": "Stevens Creek Reservoir",
+     "WaterbodyType": "River"
+    },
+    {
+     "SpeciesID": "SPLP127",
+     "WaterAccessID": "BR413",
+     "WaterAccessMaterial": "Concrete or Paved",
+     "WaterAccessName": "Slades Lake",
+     "WaterAccessSubType": "Improved",
+     "WaterAccessType": "Boat Ramp",
+     "WaterType": "Freshwater",
+     "Waterbody": "Slades Lake",
+     "WaterbodyType": "Lake"
+    }
+   ],
+   "service": "South_Carolina_Public_Water_Access_PUBLIC_VIEW",
+   "typef": "WaterAccessType",
+   "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/South_Carolina_Public_Water_Access_PUBLIC_VIEW/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "ParkName",
+   "count": 413,
+   "fields": [
+    "ParkName",
+    "Creator",
+    "Editor",
+    "NoService",
+    "ParkFullName",
+    "EntranceType",
+    "EntranceUID"
+   ],
+   "known": true,
+   "layer": "ExistingAndNewStateParkEntrancesTrailheads",
+   "sample": [
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceUID": "TSP-0276 | Entry Type: ",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    },
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceType": "Main",
+     "EntranceUID": "TSP-0276 | Entry Type: Main",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    },
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceUID": "TSP-0276 | Entry Type: ",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    }
+   ],
+   "service": "CleanedParkDriveTimes",
+   "typef": "EntranceType",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/CleanedParkDriveTimes/FeatureServer/2"
+  },
+  {
+   "agency": "",
+   "area": "ParkName",
+   "count": 336,
+   "fields": [
+    "ParkName",
+    "Creator",
+    "Editor",
+    "NoService",
+    "ParkFullName",
+    "EntranceType",
+    "EntranceUID"
+   ],
+   "known": true,
+   "layer": "Park Entrances",
+   "sample": [
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceUID": "TSP-0276 | Entry Type: ",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    },
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceType": "Main",
+     "EntranceUID": "TSP-0276 | Entry Type: Main",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    },
+    {
+     "Creator": "andrew.mcdonagh",
+     "Editor": "andrew.mcdonagh",
+     "EntranceUID": "TSP-0276 | Entry Type: ",
+     "ParkFullName": "T.O. Fuller State Park",
+     "ParkName": "TSP-0276"
+    }
+   ],
+   "service": "Park_Entrances_January",
+   "typef": "EntranceType",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/Park_Entrances_January/FeatureServer/0"
   },
   {
    "agency": "",

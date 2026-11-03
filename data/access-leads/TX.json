@@ -1,5 +1,74 @@
 {
- "checked": "2026-10-26",
- "leads": [],
+ "checked": "2026-11-03",
+ "leads": [
+  {
+   "agency": "TPWD | SP | NR | PGR",
+   "area": "ParkName",
+   "count": 123,
+   "fields": [
+    "ParkName",
+    "Type",
+    "County",
+    "Phone",
+    "Street",
+    "City",
+    "Zip",
+    "URL",
+    "Availability",
+    "UseType",
+    "Creator",
+    "LastEditor"
+   ],
+   "known": false,
+   "layer": "Park Headquarters",
+   "sample": [
+    {
+     "Availability": "Open for Public Use",
+     "City": "Tuscola",
+     "County": "Taylor",
+     "Creator": "TPWD_StateParks",
+     "LastEditor": "TPWD_StateParks",
+     "ParkName": "Abilene",
+     "Phone": "(325) 572-3204",
+     "Street": "150 Park Road 32",
+     "Type": "State Park",
+     "URL": "http://www.tpwd.state.tx.us/state-parks/abilene",
+     "UseType": "Overnight",
+     "Zip": "79562"
+    },
+    {
+     "Availability": "Access by Special Arrangement",
+     "City": "Pipe Creek",
+     "County": "Bandera",
+     "Creator": "TPWD_StateParks",
+     "LastEditor": "TPWD_StateParks",
+     "ParkName": "Albert and Bessie Kronkosky",
+     "Phone": "(830) 535-4896",
+     "Street": "7690 Hwy. 46 West",
+     "Type": "State Natural Area",
+     "URL": "http://www.tpwd.state.tx.us/state-parks/",
+     "UseType": "Overnight",
+     "Zip": "78063"
+    },
+    {
+     "Availability": "Open for Public Use",
+     "City": "Atlanta",
+     "County": "Cass",
+     "Creator": "TPWD_StateParks",
+     "LastEditor": "TPWD_StateParks",
+     "ParkName": "Atlanta",
+     "Phone": "(903) 796-6476",
+     "Street": "927 Park Road 42",
+     "Type": "State Park",
+     "URL": "http://www.tpwd.state.tx.us/state-parks/atlanta",
+     "UseType": "Overnight",
+     "Zip": "75551"
+    }
+   ],
+   "service": "Texas_State_Parks_Public_Areas",
+   "typef": "Type",
+   "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Public_Areas/FeatureServer/0"
+  }
+ ],
  "st": "TX"
 }

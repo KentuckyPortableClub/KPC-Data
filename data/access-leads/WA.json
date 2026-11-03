@@ -1,6 +1,63 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-03",
  "leads": [
+  {
+   "agency": "Bureau of Land Management, BLM, Headquarters (HQ)",
+   "area": "UNIT_NAME",
+   "count": 1256,
+   "fields": [
+    "FET_SUBTYPE",
+    "FET_NAME",
+    "ADM_UNIT_CD",
+    "ADMIN_ST",
+    "DESCRIPTION",
+    "WEB_LINK",
+    "PHOTO_TEXT",
+    "UNIT_NAME",
+    "WEB_DISPLAY",
+    "SOURCE",
+    "PHOTO_LINK",
+    "PHOTO_THUMB"
+   ],
+   "known": false,
+   "layer": "Trail Head",
+   "sample": [
+    {
+     "ADMIN_ST": "AZ",
+     "ADM_UNIT_CD": "AZP01000",
+     "DESCRIPTION": "Explore the 80-mile Black Canyon National Recreation Trail north of Phoenix.",
+     "FET_NAME": "Gloriana Trailhead",
+     "FET_SUBTYPE": "Access Point",
+     "PHOTO_LINK": "https://live.staticflickr.com/5695/20946165331_c92460ff8b_b.jpg",
+     "PHOTO_TEXT": "Two bikers on the Black Canyon trail",
+     "UNIT_NAME": "Black Canyon Trail System",
+     "WEB_DISPLAY": "YES",
+     "WEB_LINK": "https://www.blm.gov/visit/black-canyon-national-recreation-trail"
+    },
+    {
+     "ADMIN_ST": "AZ",
+     "ADM_UNIT_CD": "AZP01000",
+     "DESCRIPTION": "Explore the 80-mile Black Canyon National Recreation Trail north of Phoenix.",
+     "FET_NAME": "Table Mesa Trailhead Staging Area",
+     "FET_SUBTYPE": "Staging Area",
+     "PHOTO_LINK": "https://live.staticflickr.com/5695/20946165331_c92460ff8b_b.jpg",
+     "PHOTO_TEXT": "Two bikers on the Black Canyon trail",
+     "UNIT_NAME": "Black Canyon Trail System",
+     "WEB_DISPLAY": "YES",
+     "WEB_LINK": "https://www.blm.gov/visit/black-canyon-national-recreation-trail"
+    },
+    {
+     "ADMIN_ST": "CA",
+     "ADM_UNIT_CD": "CAN03000",
+     "FET_NAME": "Salmon Pass Trailhead",
+     "FET_SUBTYPE": "Trail Head",
+     "WEB_DISPLAY": "YES"
+    }
+   ],
+   "service": "recreation/BLM_Natl_Recs_pts",
+   "typef": "FET_SUBTYPE",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/14"
+  },
   {
    "agency": "",
    "area": "NAME",
@@ -34,37 +91,112 @@
    "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/PARKS_Park_Activities/FeatureServer/0"
   },
   {
-   "agency": "Washington State Parks and Recreation Commission GIS",
-   "area": "ParkName",
-   "count": 207,
+   "agency": "Bureau of Land Management (BLM), Headquarters (HQ)",
+   "area": "RecAreaName",
+   "count": 856,
    "fields": [
-    "ParkName",
-    "Status",
-    "Category",
-    "Notes"
+    "OrgRecAreaID",
+    "LastUpdatedDate",
+    "RecAreaEmail",
+    "RecAreaReservationURL",
+    "RecAreaLongitude",
+    "RecAreaPhone",
+    "RecAreaMapURL",
+    "RecAreaLatitude",
+    "StayLimit",
+    "RecAreaFeeDescription",
+    "Keywords",
+    "RecAreaName",
+    "RecAreaDescription",
+    "RecAreaDirections",
+    "State",
+    "BLMRecURL",
+    "ActivityImages",
+    "ActivityNames",
+    "HasActivityImages"
    ],
    "known": false,
-   "layer": "Park Entrances",
+   "layer": "BLM Natl RIDB Recreation Trailhead",
    "sample": [
     {
-     "Category": "State Park",
-     "Notes": "ok",
-     "ParkName": "Alta Lake"
+     "LastUpdatedDate": "2026-06-05",
+     "RecAreaEmail": "BLM_CA_Web_BK@blm.gov",
+     "RecAreaFeeDescription": "<p>No fee</p>",
+     "RecAreaLatitude": "35.2395",
+     "RecAreaLongitude": "-119.9078",
+     "RecAreaName": "Soda Lake Overlook",
+     "RecAreaPhone": "661-391-6000"
     },
     {
-     "Category": "State Park",
-     "Notes": "ok",
-     "ParkName": "Anderson Lake"
+     "LastUpdatedDate": "2026-07-24",
+     "RecAreaEmail": "blm_ut_so_public_room@blm.gov",
+     "RecAreaLatitude": "39.148667",
+     "RecAreaLongitude": "-110.623528",
+     "RecAreaName": "Old Spanish National Historic Trail (UT)",
+     "RecAreaPhone": "801-539-4075"
     },
     {
-     "Category": "State Park Property",
-     "Notes": "ok",
-     "ParkName": "Auburn"
+     "LastUpdatedDate": "2026-08-17",
+     "RecAreaEmail": "BLM_CA__Web_UK@blm.gov",
+     "RecAreaFeeDescription": "<p>No Fees</p>",
+     "RecAreaLatitude": "38.8337697",
+     "RecAreaLongitude": "-122.3683111",
+     "RecAreaMapURL": "https://www.blm.gov/sites/blm.gov/files/documents/files/media-center-public-room-california-knoxville-recreation-area-map.pdf",
+     "RecAreaName": "Knoxville Management Area",
+     "RecAreaPhone": "707-468-4000"
     }
    ],
-   "service": "ParkEntrances",
-   "typef": "Category",
-   "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkEntrances/FeatureServer/0"
+   "service": "recreation/BLM_Natl_Recreation_Sites_Facilities",
+   "typef": "RecAreaFeeDescription",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation_Sites_Facilities/MapServer/7"
+  },
+  {
+   "agency": "Bureau of Land Management, BLM, Headquarters (HQ)",
+   "area": "UNIT_NAME",
+   "count": 358,
+   "fields": [
+    "FET_SUBTYPE",
+    "FET_NAME",
+    "ADM_UNIT_CD",
+    "ADMIN_ST",
+    "DESCRIPTION",
+    "WEB_LINK",
+    "PHOTO_TEXT",
+    "UNIT_NAME",
+    "WEB_DISPLAY",
+    "SOURCE",
+    "PHOTO_LINK",
+    "PHOTO_THUMB"
+   ],
+   "known": false,
+   "layer": "Boat Ramp",
+   "sample": [
+    {
+     "ADMIN_ST": "MT",
+     "ADM_UNIT_CD": "MTL07000",
+     "FET_NAME": "WOODHAWK (LOWER)",
+     "FET_SUBTYPE": "Boat Launch",
+     "WEB_DISPLAY": "YES"
+    },
+    {
+     "ADMIN_ST": "AZ",
+     "ADM_UNIT_CD": "AZG01100",
+     "FET_NAME": "Gila River Boat Put In",
+     "FET_SUBTYPE": "Boat Launch",
+     "UNIT_NAME": "Gila Box Riparian National Conservation Area",
+     "WEB_DISPLAY": "YES"
+    },
+    {
+     "ADMIN_ST": "UT",
+     "ADM_UNIT_CD": "UTY01000",
+     "FET_NAME": "Mineral Bottom Recreation Site",
+     "FET_SUBTYPE": "Boat Ramp",
+     "WEB_DISPLAY": "YES"
+    }
+   ],
+   "service": "recreation/BLM_Natl_Recs_pts",
+   "typef": "FET_SUBTYPE",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1"
   },
   {
    "agency": "Washington State Parks and Recreation Commission GIS",
@@ -98,6 +230,58 @@
    "service": "Park_Entrances",
    "typef": "Category",
    "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Park_Entrances/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 120,
+   "fields": [
+    "Identifier",
+    "LaunchType",
+    "BoatLaunchFloats",
+    "Width"
+   ],
+   "known": false,
+   "layer": "BoatLaunches",
+   "sample": [
+    {
+     "Identifier": "Alta lake - launch area",
+     "Width": "6"
+    },
+    {
+     "Identifier": "Battle Ground Lake",
+     "Width": "6"
+    },
+    {
+     "Identifier": "Battle Ground Lake",
+     "Width": "varies"
+    }
+   ],
+   "service": "BoatLaunches",
+   "typef": "LaunchType",
+   "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/BoatLaunches/FeatureServer/9"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 81,
+   "fields": [
+    "Notes"
+   ],
+   "known": false,
+   "layer": "Places",
+   "sample": [
+    {
+     "Notes": "3 person seating"
+    },
+    {},
+    {
+     "Notes": "for drinking and washing"
+    }
+   ],
+   "service": "Nojimacho_Park",
+   "typef": "",
+   "url": "https://services9.arcgis.com/EGheeB0VDT6EarZv/ArcGIS/rest/services/Nojimacho_Park/FeatureServer/0"
   },
   {
    "agency": "",
@@ -191,6 +375,59 @@
   {
    "agency": "",
    "area": "",
+   "count": 1,
+   "fields": [
+    "FeatureType",
+    "Notes"
+   ],
+   "known": false,
+   "layer": "Bike Parking",
+   "sample": [
+    {
+     "FeatureType": "Class 1 Parking",
+     "Notes": "Bike parking is hidden in the cove to the right of the entrance to Diamond View I. "
+    }
+   ],
+   "service": "Bike_Parking_KJ",
+   "typef": "FeatureType",
+   "url": "https://services9.arcgis.com/EGheeB0VDT6EarZv/ArcGIS/rest/services/Bike_Parking_KJ/FeatureServer/0"
+  },
+  {
+   "agency": "Washington State Parks and Recreation Commission GIS",
+   "area": "ParkName",
+   "count": 207,
+   "fields": [
+    "ParkName",
+    "Status",
+    "Category",
+    "Notes"
+   ],
+   "known": true,
+   "layer": "Park Entrances",
+   "sample": [
+    {
+     "Category": "State Park",
+     "Notes": "ok",
+     "ParkName": "Alta Lake"
+    },
+    {
+     "Category": "State Park",
+     "Notes": "ok",
+     "ParkName": "Anderson Lake"
+    },
+    {
+     "Category": "State Park Property",
+     "Notes": "ok",
+     "ParkName": "Auburn"
+    }
+   ],
+   "service": "ParkEntrances",
+   "typef": "Category",
+   "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkEntrances/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
    "count": 117,
    "fields": [
     "Identifier",
@@ -216,6 +453,66 @@
    "service": "WAStateParks_BoatLaunches",
    "typef": "LaunchType",
    "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WAStateParks_BoatLaunches/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 108,
+   "fields": [
+    "TRAIL_HEAD_NAME",
+    "PRIMARY_TRAIL_MAINTAINER",
+    "TRAILHEAD_STATUS",
+    "RestRooms",
+    "PARKING_AVAILABLE",
+    "PARKING_PERMIT",
+    "BACKPACKING_PERMIT",
+    "DOGS",
+    "PACK_AND_SADDLE",
+    "INTERPRETIVE_TRAIL",
+    "RAIL_TRAIL",
+    "DATA_SOURCE_ATT",
+    "AGENCY_DATA_SOURCE_GEO",
+    "ESTABLISHED_CAMPSITE_ON_TRAIL",
+    "PR_TR_MNTR_COMMENTS",
+    "COMMENTS",
+    "Creator",
+    "Editor"
+   ],
+   "known": true,
+   "layer": "Trailheads",
+   "sample": [
+    {
+     "BACKPACKING_PERMIT": "No",
+     "DATA_SOURCE_ATT": "WSPRC",
+     "DOGS": "Yes",
+     "INTERPRETIVE_TRAIL": "No",
+     "PACK_AND_SADDLE": "No",
+     "PARKING_AVAILABLE": "Yes",
+     "PARKING_PERMIT": "Yes",
+     "PRIMARY_TRAIL_MAINTAINER": "WSPRC",
+     "RAIL_TRAIL": "Yes",
+     "RestRooms": "Yes",
+     "TRAILHEAD_STATUS": "OPEN",
+     "TRAIL_HEAD_NAME": "Lake Keechelus Trailhead"
+    },
+    {
+     "DATA_SOURCE_ATT": "WSPRC",
+     "DOGS": "Yes",
+     "PARKING_PERMIT": "Yes",
+     "PRIMARY_TRAIL_MAINTAINER": "WSPRC",
+     "TRAIL_HEAD_NAME": "Ginkgo Petrified Forest Interpretive Trails"
+    },
+    {
+     "DATA_SOURCE_ATT": "WSPRC",
+     "DOGS": "Yes",
+     "PARKING_PERMIT": "Yes",
+     "PRIMARY_TRAIL_MAINTAINER": "WSPRC",
+     "TRAIL_HEAD_NAME": "Columbia Hills State Park - Dalles Mountain Ranch"
+    }
+   ],
+   "service": "Trailheads_PublicView",
+   "typef": "",
+   "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trailheads_PublicView/FeatureServer/0"
   }
  ],
  "st": "WA"
