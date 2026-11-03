@@ -1,4 +1,4 @@
-# Layer intake review (2026-11-02)
+# Layer intake review (2026-11-03)
 
 Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher's OWN item page first (the Nevada lesson).
 
@@ -7,9 +7,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | READY | 2 |
 | WATER-ONLY | 41 |
 | LIVE-ONLY | 5 |
-| ASK-THE-PUBLISHER | 416 |
-| RETRY | 364 |
-| REJECT | 1652 |
+| ASK-THE-PUBLISHER | 421 |
+| RETRY | 365 |
+| REJECT | 1653 |
 
 ## READY (2)
 
@@ -115,7 +115,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - FLAG: water only: for the 2-fer owner step only
 - terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cwt_suite_name
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/3
@@ -124,7 +124,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - FLAG: water only: for the 2-fer owner step only
 - terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cwt_suite_name
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Local Authority Districts (May 2021) Boundaries UK BGC  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2021_UK_BGC_2022/FeatureServer/0
@@ -537,7 +537,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAZEV · 1111 records · sample Blatov a Xaverovský háj / Lochkovský profil / Milíčovský les
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## ASK-THE-PUBLISHER (416)
+## ASK-THE-PUBLISHER (421)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -596,11 +596,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 5186 records · sample Rubus fruticosus / Ulex europaeus / Hypericum perforatum subsp. veronense
-- closes: 4 of 60 tested missing parks (by name 0, pin only 4; 74 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 7 of 60 tested missing parks (by name 0, pin only 7; 60 of the area's 1796 missing parks lie in the layer's extent)
   - AU-10758 Pardoe Northdown Conservation Area → polygon "Asparagus asparagoides"
   - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Brachionichthys hirsutus"
   - AU-8812 Nutgrove Beach - State Beach → polygon "Brachionichthys hirsutus"
   - AU-8858 Howrah Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8865 Shelly Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8866 Opossum Bay Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8867 Glenvar Beach - State Beach → polygon "Brachionichthys hirsutus"
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/0
@@ -608,7 +611,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample Kimberley Gillnet and Barramundi Fishery / Kimberley Gillnet and Barramundi Fishery / Kimberley Gillnet and Barramundi Fishery
-- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 1796 of the area's 1796 missing parks lie in the layer's extent)
   - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley Gillnet and Barramundi Fishery"
   - AU-0058 Ningaloo Marine Park → polygon "Point Maud to Tantabiddi Closure"
 
@@ -692,7 +695,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 14 records · sample Digitalis purpurea / Ulex europaeus / Ulex europaeus
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/12
@@ -716,7 +719,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 6 records · sample Ninepin Point Marine Nature Reserve / Port Davey/Bathurst Harbour Marine Nature Reserve - No Fishi / Maria Island Marine Nature Reserve - No Fishing Zone
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 220 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 153 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/3
@@ -724,7 +727,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 2 records · sample Kent Group Marine Nature Reserve - Restricted Fishing Zone / Port Davey Marine Nature Reserve 
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 220 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 153 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/1
@@ -732,7 +735,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 63 records · sample Aquaculture Instrument of Exemption / Aquaculture Instrument of Exemption / Aquaculture Instrument of Exemption
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Centennial Industrial Business Activity  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/S7DHOirgbYgdtrbR/arcgis/rest/services/Centennial_Industrial_Business_Activity/FeatureServer/0
@@ -1521,7 +1524,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name_abrv · 30 records · sample SP+LP / SP+LP / SP+LP/CL
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/7
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Blue Rockfish YOY Mean Density - North Central Coast - 2010-11 - PISCO [ds1375]  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1375_fpu/FeatureServer/0
@@ -3710,6 +3721,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 2498 records · sample Gründelteich / Südostufer des Brettmühlenteiches / Teich mit Baumgruppe im Rosenthal
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
+### Naturschutzgebiete (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://luis.sachsen.de/arcgis/rest/services/natur/schutzgebiete/FeatureServer/4
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: natur)
+- terms: CREDIT · source item page · "https://luis.sachsen.de/nutzungshinweise.html https://luis.sachsen.de/natur/schutzgebiete.html" · item https://luis.sachsen.de/arcgis/rest/services/natur/schutzgebiete/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 366 records · sample Um die Rochsburg / Großhartmannsdorfer Großteich / Waschteich Reuth
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
 ### Naturpark (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://www.umweltkarten-niedersachsen.de/arcgis/rest/services/Natur_wms/MapServer/1
 - WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
@@ -4035,7 +4054,33 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE · 3969 records · last edit 2026-10-30 · sample 22699 / 23367 / 22265
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (364)
+### State Aquatic Management Area (AMA) Aquisitions  ·    ·  from gis-hunter
+- url: https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host enterprise-dev.gisdata.mn.gov)
+- terms: CREDIT · source item page · "ly representative of acquired lands, but they are not of survey-grade accuracy. Do not use for boundary disputes or legal applications. Use of the data are constrained" · item https://enterprise-dev.gisdata.mn.gov/home/item.html?id=bcc580bcee394abb82f39608c07465a1 · owner InitAdmin
+- facts: arcgis-layer · esriGeometryPolygon · name field unit_name · 1582 records · sample Knife River AMA / Knife River AMA / Knife River AMA
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Conservation Authority Admin Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LEGAL_NAME · 36 records · sample Hamilton Region Conservation Authority / Lower Thames Valley Conservation Authority / North Bay Mattawa Conservation Authority
+- overlap: same publisher as Hard look~12
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Conservation Reserve Regulated (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROTECTED_SITE_IDENT · 306 records · sample C2338 / C2638 / C2329
+- overlap: same publisher as Hard look~12
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+## RETRY (365)
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
@@ -4240,50 +4285,42 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: not probed
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
-- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/19
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: status rest
-- closes: not probed
-
-### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/20
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: status rest
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- facts: status budget
 - closes: not probed
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/21
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: status rest
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- facts: status budget
 - closes: not probed
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/22
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: status rest
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- facts: status budget
 - closes: not probed
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/23
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: status rest
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- facts: status budget
 - closes: not probed
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/27
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4291,7 +4328,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/35
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4618,33 +4655,33 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 
 
-### Civil War Battlefields  ·    ·  from gis-hunter
+### Civil War Battlefields  ·  None  ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (did not open)
-- terms: NOTHING STATED · source none
-- facts: status rest
+- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): chat 9 checks the url
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?
 
-### Civil War Battlefields (time-enabled)  ·    ·  from gis-hunter
+### Civil War Battlefields (time-enabled)  ·  None  ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (did not open)
-- terms: NOTHING STATED · source none
-- facts: status rest
+- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): chat 9 checks the url
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status error Invalid URL
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (not json): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status not json
 
 ### Iceland Honeymoon 2024_WFL1  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer
@@ -4669,10 +4706,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (error Token Required): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status error Token Required
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
@@ -4744,12 +4781,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
 
-### Watershed of the Blanchard River  ·    ·  from gis-hunter
+### Watershed of the Blanchard River  ·  None  ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (did not open)
-- terms: NOTHING STATED · source none
-- facts: status rest
+- WHY: did not open 3 times (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): chat 9 checks the url
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
@@ -4781,10 +4818,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (error Token Required): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status error Token Required
 
 ### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
@@ -5929,6 +5966,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status rest
+- overlap: same service as Hard look~5 (another layer of it)
 
 ### Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer
@@ -6132,7 +6170,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
-- overlap: same publisher as sgazd
+- overlap: already read as state-gis MN wild
 - closes: not probed
 
 ### FL_Conservation_Lands_web (outside research Oct 30)  ·    ·  from outside research Oct 30
@@ -6534,6 +6572,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
 - terms: NOTHING STATED · source none
 - facts: status rest
+- overlap: same publisher as state-gis NB park
 - closes: not probed
 
 ### GBMGB_Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
@@ -6558,6 +6597,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
+- overlap: already read as state-gis PE preserve
 - closes: not probed
 
 ### Doorstep Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
@@ -6631,6 +6671,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: ? → official (ArcGIS Online org n1YM8pTrFmm7L4hs = U.S. Army Corps of Engineers)
 - terms: NOTHING STATED · source none
 - facts: status rest
+- overlap: already read as state-gis ID park
 - closes: not probed
 
 ### Transportation (outside research Oct 30)  ·    ·  from outside research Oct 30
@@ -6664,14 +6705,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ramsar_England/FeatureServer/0
 - WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
-- terms: NOTHING STATED · source none
-- facts: status rest
-- closes: not probed
-
-### Naturschutzgebiete (outside research Oct 30)  ·    ·  from outside research Oct 30
-- url: https://luis.sachsen.de/arcgis/rest/services/natur/schutzgebiete/FeatureServer/4
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
 - closes: not probed
@@ -6868,7 +6901,35 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: status rest
 - closes: not probed
 
-## REJECT (1652)
+### FWSApproved (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgazd
+- closes: not probed
+
+### FWS_NWRS_HQ_PubHuntUnits (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgazd
+- closes: not probed
+
+### Lakes and Reservoirs - Public (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as sgidb
+- closes: not probed
+
+## REJECT (1653)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -6876,21 +6937,18 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
-- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 1796 of the area's 1796 missing parks lie in the layer's extent)
   - AU-0002 Willis Island National Park → polygon "Cape York Region"
   - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
   - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
   - AU-0034 Swan Estuary Marine Park → polygon "South West"
-  - AU-0040 Shoalwater Islands Marine Park → polygon "South West"
   - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
   - AU-0046 Rowley Shoals Marine Park → polygon "Kimberley"
   - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
   - AU-0060 Ngari Capes Marine Park → polygon "South West"
   - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "South West"
-  - AU-0082 Marmion Marine Park → polygon "South West"
   - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
   - AU-0099 Wunaamin Conservation Park → polygon "Kimberley"
-  - AU-0106 Jurien Bay Marine Park → polygon "South West"
   - AU-0126 Geikie Gorge National Park → polygon "Kimberley"
   - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
   - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
@@ -6902,6 +6960,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
   - AU-0199 Wodonga Regional Park → polygon "Victoria"
   - AU-0216 Wandong Regional Park → polygon "Victoria"
+  - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
+  - AU-0230 Tocumwal Regional Park → polygon "Victoria"
+  - AU-0250 St Arnaud Regional Park → polygon "Victoria"
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/0
@@ -6909,21 +6970,18 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
-- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 1796 of the area's 1796 missing parks lie in the layer's extent)
   - AU-0002 Willis Island National Park → polygon "Cape York Region"
   - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
   - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
   - AU-0034 Swan Estuary Marine Park → polygon "South West"
-  - AU-0040 Shoalwater Islands Marine Park → polygon "South West"
   - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
   - AU-0046 Rowley Shoals Marine Park → polygon "Kimberley"
   - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
   - AU-0060 Ngari Capes Marine Park → polygon "South West"
   - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "South West"
-  - AU-0082 Marmion Marine Park → polygon "South West"
   - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
   - AU-0099 Wunaamin Conservation Park → polygon "Kimberley"
-  - AU-0106 Jurien Bay Marine Park → polygon "South West"
   - AU-0126 Geikie Gorge National Park → polygon "Kimberley"
   - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
   - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
@@ -6935,6 +6993,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
   - AU-0199 Wodonga Regional Park → polygon "Victoria"
   - AU-0216 Wandong Regional Park → polygon "Victoria"
+  - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
+  - AU-0230 Tocumwal Regional Park → polygon "Victoria"
+  - AU-0250 St Arnaud Regional Park → polygon "Victoria"
 
 ### Public/CadastreParcels  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer/0
@@ -7008,7 +7069,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
-- closes: 24 of 57 tested missing parks (by name 2, pin only 22; 57 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 24 of 56 tested missing parks (by name 2, pin only 22; 56 of the area's 1796 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Tamar"
   - AU-11292 Arthurs Lake - Water Management Area → polygon "Tamar"
   - AU-11294 Lake Sorell - Water Management Area → polygon "Derwent"
@@ -7058,17 +7119,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0162 Brooking Gorge Conservation Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
   - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
 
-### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/4
-- WHY: NOT A PARK LAYER (coverage): closes 3 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
-- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
-- terms: CREDIT · source item page · "Department of Transport (WA)" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field cell_name · 23 records · sample Bluff Point to Nunginjay Spring Coast N / Whale Boat Cove to Bluff Point / Glenfield to Whale Boat Cove
-- closes: 3 of 60 tested missing parks (by name 0, pin only 3; 2603 of the area's 2603 missing parks lie in the layer's extent)
-  - AU-0040 Shoalwater Islands Marine Park → polygon "Cape Bouvard to Warnbro"
-  - AU-0082 Marmion Marine Park → polygon "Pinnaroo Point to Yanchep"
-  - AU-0106 Jurien Bay Marine Park → polygon "North Wedge to Middle Head"
-
 ### ogc_services/Australian_Marine_Parks  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/0
 - WHY: judged again by the Oct 29 READY rule: closes 2, by name 0 (READY needs 3+ name matches and 25%+; never a coverage layer)
@@ -7115,8 +7165,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
-- closes: 1 of 3 tested missing parks (by name 1, pin only 0; 57 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 2 of 4 tested missing parks (by name 1, pin only 1; 56 of the area's 1796 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
+  - AU-11292 Arthurs Lake - Water Management Area → polygon "Lake"
 
 ### Public/OpenDataWFS  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/2
@@ -7124,35 +7175,8 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57546 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
-- closes: 1 of 46 tested missing parks (by name 0, pin only 1; 46 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 1 of 45 tested missing parks (by name 0, pin only 1; 45 of the area's 1796 missing parks lie in the layer's extent)
   - AU-8859 Kingston Beach - State Beach → polygon "Heritage Precinct"
-
-### Public/PWSPublic  ·  AU  ·  from harvester
-- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/0
-- WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
-- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 29 records · sample Leven FC / Lake St Clair FC / Overland Track FC
-- closes: 1 of 60 tested missing parks (by name 0, pin only 1; 458 of the area's 2603 missing parks lie in the layer's extent)
-  - AU-0579 Kent Group National Park → polygon "Flinders Island FC"
-
-### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/9
-- WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
-- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
-- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
-- closes: 1 of 55 tested missing parks (by name 0, pin only 1; 2603 of the area's 2603 missing parks lie in the layer's extent)
-  - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
-
-### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/7
-- WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
-- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
-- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
-- closes: 1 of 55 tested missing parks (by name 0, pin only 1; 2603 of the area's 2603 missing parks lie in the layer's extent)
-  - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
 - url: https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2
@@ -7261,7 +7285,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/3
@@ -7269,7 +7293,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample PORT OF BALLA BALLA / VARANUS ISLAND PORT AUTHORITY / WYNDHAM PORT AUTHORITY
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/ABS_2011  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/0
@@ -7773,7 +7797,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field TILE_NAME · 22 records · sample e557n5239 / e557n5240 / e557n5241
-- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/OpenDataWFS  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/7
@@ -7781,7 +7805,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field TILE_NAME · 557 records · sample filnd_5835561 / filnd_5835562 / filnd_5845560
-- closes: 0 of 4 tested missing parks (by name 0, pin only 0; 56 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 5 tested missing parks (by name 0, pin only 0; 56 of the area's 1796 missing parks lie in the layer's extent)
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 29 records · sample Leven FC / Lake St Clair FC / Overland Track FC
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 315 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/PWSPublic  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/1
@@ -7789,7 +7821,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 4 records · sample Whole State / Whole State / Whole State
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 458 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 315 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/Planning  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/1
@@ -7860,8 +7892,16 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 17965 records · sample None / None / None
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 80 of the area's 2603 missing parks lie in the layer's extent)
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 17966 records · sample None / None / None
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 64 of the area's 1796 missing parks lie in the layer's extent)
+
+### Public/TopographyAndRelief  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/19
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 432 records · sample None / None / None
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 64 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/1
@@ -7869,7 +7909,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 107 records · sample Ballidu / Beverley / Boyup Brook
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/1
@@ -7877,7 +7917,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 107 records · sample Ballidu / Beverley / Boyup Brook
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/0
@@ -7901,7 +7941,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/0
@@ -7925,7 +7965,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/0
@@ -7933,7 +7973,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 30445 records · sample NORTHAMPTON / NORTHAMPTON / WYNDHAM-EAST KIMBERLEY
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/1
@@ -13273,7 +13313,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 30445 records · sample NORTHAMPTON / NORTHAMPTON / WYNDHAM-EAST KIMBERLEY
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Farming_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/1
@@ -13288,8 +13328,8 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30610 records · sample HA. / HA. / HA.
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30624 records · sample HA. / HA. / HA.
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/4
@@ -13297,15 +13337,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field label · 38 records · sample 80_Kimberley / 04_W Kimberley / 45_Marble Bar
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/3
 - WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30610 records · sample HA. / HA. / HA.
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30624 records · sample HA. / HA. / HA.
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/4
@@ -13313,7 +13353,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field label · 38 records · sample 80_Kimberley / 04_W Kimberley / 45_Marble Bar
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/9
@@ -13321,7 +13361,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 3 records · sample Harvey / Collie River / Waroona
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/11
@@ -13330,7 +13370,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 393 records · sample #1 PRIMARY POND WWTP ROEBOURNE / #1 SECONDARY POND WWTP ROEBOURNE / #2 SECONDARY POND WWTP ROEBOURNE
 
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/4
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "Department of Transport (WA)" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field cell_name · 23 records · sample Bluff Point to Nunginjay Spring Coast N / Whale Boat Cove to Bluff Point / Glenfield to Whale Boat Cove
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/5
@@ -13338,7 +13386,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "Department of Transport (WA)" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cell_name · 73 records · sample Moore River to Ledge / Cliff Head to Leander Point / Fisherman Islands to South Illawong
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/1
@@ -13346,7 +13394,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/4
@@ -13354,7 +13402,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field land_name · 1186 records · sample WILSONS PATCH / KUNMUNYA / PORT HEDLAND
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/1
@@ -13395,6 +13443,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 1807 records
 - closes: not probed
+
+### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/9
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
+- closes: 0 of 55 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/2
@@ -20668,6 +20724,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: CREDIT · source item page · "MassGIS, EEA MassGIS, Executive Office of Energy and Environmental Affairs" · item https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 61486 records · sample Almy CR / Almy CR / Northampton-Russell Beagle Club
 - overlap: already read as sgmaa
+- closes: not probed
+
+### HYDRO_NationalWildandScenicRiver_Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0
+- WHY: already read as wsrc: nothing new to take
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or comp NPS" · item https://www.arcgis.com/home/item.html?id=ef89923537bb46e28f9ad877d8058266 · owner cor_nps · org National Park Service
+- facts: arcgis-layer · esriGeometryPolygon · name field WSR_GNIS_NAME · 33 records · last edit 2025-09-16 · sample Kings Wild and Scenic River / Merced Wild and Scenic River / Tuolumne Wild and Scenic River
+- overlap: already read as wsrc
 - closes: not probed
 
 ## Known-answer test rows
