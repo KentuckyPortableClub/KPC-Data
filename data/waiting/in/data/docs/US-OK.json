@@ -2870,7 +2870,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-2800": {
    "n": "Robbers Cave State Park",
@@ -4988,7 +4989,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r03/cibola",
@@ -7007,21 +7008,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
   "parks": 205,
-  "map ok": 106,
-  "map found by the bot": 99,
+  "map ok": 121,
+  "map found by the bot": 114,
   "date on the map": 2,
-  "posted date only": 92,
-  "date unknown": 12,
-  "no map": 95,
+  "posted date only": 106,
+  "date unknown": 13,
+  "no map": 80,
   "rules ok": 41,
-  "needs browser": 1,
+  "needs browser": 0,
   "handover hints": 0,
   "runs hints": 29,
   "host resting / robots": 4,
-  "map names the park": 97,
+  "map names the park": 112,
   "region overview only": 3
  }
 }

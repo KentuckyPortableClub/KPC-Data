@@ -620,7 +620,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r08/ouachita/recreation"
+    "page": "https://www.fs.usda.gov/r08/ouachita/recreation",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ouachita",
@@ -738,6 +739,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -822,7 +824,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -862,9 +864,9 @@
     "map_page": 1
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.arkansas.com/state-parks/state-park-rules-policies",
+    "how": "a link on the page in a browser ('State Park Rules & Policies')",
+    "status": "ok"
    },
    "agency": "",
    "runs": [],
@@ -873,7 +875,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1071": {
    "n": "Arkansas Post Museam State Park",
@@ -886,9 +889,9 @@
     "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.arkansas.com/state-parks/state-park-rules-policies",
+    "how": "a link on the page in a browser ('State Park Rules & Policies')",
+    "status": "ok"
    },
    "agency": "Arkansas Department of Parks, Heritage and Tourism — Arkansas State Parks",
    "runs": [],
@@ -913,7 +916,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-10715": {
    "n": "True Grit State Trail",
@@ -999,6 +1003,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -3671,6 +3676,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -4034,7 +4040,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -5075,6 +5081,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
@@ -8131,7 +8138,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/ozark-stfrancis",
@@ -8632,9 +8639,17 @@
    "page": "https://www.agfc.com/en/zone-map/fishing-map/577/",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.agfc.com/resources/maps/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Maps')",
+    "page": "https://www.agfc.com/en/zone-map/fishing-map/577/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -8646,7 +8661,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-9166": {
    "n": "Lake Elmdale State Recreation Area",
@@ -8824,21 +8840,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
   "parks": 306,
-  "map ok": 76,
-  "map found by the bot": 64,
-  "date on the map": 13,
-  "posted date only": 45,
-  "date unknown": 18,
-  "no map": 229,
-  "rules ok": 37,
-  "needs browser": 8,
+  "map ok": 114,
+  "map found by the bot": 102,
+  "date on the map": 38,
+  "posted date only": 52,
+  "date unknown": 24,
+  "no map": 192,
+  "rules ok": 39,
+  "needs browser": 5,
   "handover hints": 0,
   "runs hints": 12,
-  "host resting / robots": 1,
-  "map names the park": 53,
+  "host resting / robots": 0,
+  "map names the park": 90,
   "region overview only": 0
  }
 }

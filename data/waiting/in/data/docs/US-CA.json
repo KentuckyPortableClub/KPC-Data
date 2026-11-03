@@ -157,6 +157,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -643,7 +644,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r06/rogue-siskiyou",
@@ -2178,7 +2179,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/lospadres",
@@ -2557,7 +2558,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/stanislaus",
@@ -6713,6 +6714,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "host on the browser list",
@@ -12411,7 +12413,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r04/humboldt-toiyabe"
+    "page": "https://www.fs.usda.gov/r04/humboldt-toiyabe",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe",
@@ -12443,7 +12446,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/angeles",
@@ -12506,7 +12509,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/eldorado",
@@ -12600,7 +12603,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/recmain/alerts-notices",
@@ -12632,7 +12635,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/lassen/alerts-notices",
@@ -12664,7 +12667,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/mendocino",
@@ -12696,7 +12699,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/modoc",
@@ -12733,7 +12736,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r05/plumas"
+    "page": "https://www.fs.usda.gov/r05/plumas",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/plumas",
@@ -12765,7 +12769,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/sanbernardino",
@@ -12797,7 +12801,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/sequoia",
@@ -12822,17 +12826,14 @@
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r05/shasta-trinity/maps-guides",
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r05/shasta-trinity",
     "posted": "October 21, 2026",
-    "checked": "2026-10-31",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r05/shasta-trinity"
+    "checked": "2026-11-02",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/shasta-trinity",
@@ -12844,7 +12845,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4466": {
    "n": "Sierra National Forest",
@@ -12856,17 +12858,14 @@
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r05/sierra/maps-guides",
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r05/sierra",
     "posted": "September 22, 2026",
-    "checked": "2026-10-31",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r05/sierra"
+    "checked": "2026-11-02",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/sierra",
@@ -12878,7 +12877,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4467": {
    "n": "Six Rivers National Forest",
@@ -12886,9 +12886,17 @@
    "page": "https://www.fs.usda.gov/srnf",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://fire.airnow.gov/#8/41.515/-122.533",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Fire and Smoke Map')",
+    "page": "https://www.fs.usda.gov/srnf",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "linked from the agency page (fire.airnow.gov)"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/sixrivers",
@@ -12900,7 +12908,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4468": {
    "n": "Stanislaus National Forest",
@@ -12912,17 +12921,14 @@
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r05/stanislaus/maps-guides",
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r05/stanislaus",
     "posted": "September 22, 2026",
-    "checked": "2026-10-31",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r05/stanislaus"
+    "checked": "2026-11-02",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/stanislaus",
@@ -12934,7 +12940,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4469": {
    "n": "Tahoe National Forest",
@@ -12942,19 +12949,18 @@
    "page": "https://www.fs.usda.gov/tahoe",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r05/tahoe",
+    "url": "https://www.fs.usda.gov/r05/tahoe/maps-guides",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-31",
-    "covers": 0,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r05/tahoe",
+    "posted": "September 22, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-11-02",
     "via": "the agency site",
-    "date_label": "date unknown"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/tahoe",
@@ -12966,7 +12972,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4539": {
    "n": "Berryessa Snow Mountain National Monument",
@@ -12986,7 +12993,9 @@
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -12996,21 +13005,31 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/california/california-coastal",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/CCNM_brochure_Print_5NOV2020_SAA_508web.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('California Coastal National Monument')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/california/california-coastal",
+    "posted": "2021-02",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4541": {
    "n": "Carrizo Plain National Monument",
@@ -13022,16 +13041,13 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'media-center-public-room-california-carrizo-plain-national-monument-recreation-m' file",
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('media-center-public-room-california-carrizo-plain-national-monument-recreation-m')",
+    "page": "https://www.blm.gov/documents/california/public-room/brochure/carrizo-plain-national-monument-recreation-map-and-guide",
     "posted": "Nov 05, 2020",
     "posted_how": "posted: the server's file date",
-    "names_park": "file",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "page": "https://www.blm.gov/documents/california/public-room/brochure/carrizo-plain-national-monument-recreation-map-and-guide",
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
@@ -13044,7 +13060,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4542": {
    "n": "Fort Ord National Monument",
@@ -13056,32 +13073,26 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/blm.gov/files/docs/2022-05/Fort_Ord_2022_508.pdf",
-    "posted": "2022-05",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the upload folder in the address",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": 2022,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Brochure & Trail Map')",
     "page": "https://www.blm.gov/programs/national-conservation-lands/california/fort-ord-national-monument",
-    "map_page": 1
+    "posted": "2022-05",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/FONM_trail_Flyer%20%28508%29.pdf",
+    "how": "a link on the page in a browser ('Trail Rules')",
+    "status": "ok"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4543": {
    "n": "Mojave Trails National Monument",
@@ -13089,31 +13100,31 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/california/mojave-trails-national-monument",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.blm.gov/sites/default/files/docs/2023-07/MojaveTrailsNM_508_0.pdf",
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/2019_CA_MojaveTrails_NM_final.pdf",
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "2023-07",
-    "posted_how": "posted: the upload folder in the address",
-    "names_park": "file",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Map')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/california/mojave-trails-national-monument",
+    "posted": "2019",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4544": {
    "n": "San Gabriel Mountains National Monument",
@@ -13121,21 +13132,30 @@
    "page": "https://www.fs.usda.gov/visit/san-gabriel-mountains-national-monument",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/default/files/san-gabriel-mtns-nm-boundary-map-highres-20240502.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('2024 San Gabriel Mountains National Monument High Resolution Map')",
+    "page": "https://www.fs.usda.gov/visit/san-gabriel-mountains-national-monument",
+    "posted": "May 03, 2024",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+    "how": "a link on the page in a browser ('Know Before You Go')",
+    "status": "ok"
    },
    "agency": "U.S. Forest Service",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4545": {
    "n": "Sand to Snow National Monument",
@@ -13143,21 +13163,30 @@
    "page": "https://www.fs.usda.gov/visit/sand-to-snow-national-monument",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/sites/default/files/sandtosnow-map-20160211.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Sand to Snow National Monument Map')",
+    "page": "https://www.fs.usda.gov/visit/sand-to-snow-national-monument",
+    "posted": "Feb 02, 2021",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+    "how": "a link on the page in a browser ('Know Before You Go')",
+    "status": "ok"
    },
    "agency": "U.S. Forest Service",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4546": {
    "n": "Santa Rosa and San Jacinto Mountains National Monument",
@@ -13165,21 +13194,33 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/california/santa-rosa-and-san-jacinto-mountains-national-monument",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.blm.gov/sites/default/files/docs/2024-02/SRSJMNM%20brochure_2023_508_1.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Guide\n\nDownload a map and guide to the monument.')",
+    "page": "https://www.blm.gov/programs/national-conservation-lands/california/santa-rosa-and-san-jacinto-mountains-national-monument",
+    "posted": "2024-02",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
-   "runs": [],
+   "runs": [
+    "managed by the BLM and the U.S. Forest Service"
+   ],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4601": {
    "n": "Boggs Mountain Demonstration State Forest",
@@ -13201,7 +13242,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4603": {
    "n": "Jackson Demonstration State Forest",
@@ -13223,7 +13265,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4605": {
    "n": "LaTour Demonstration State Forest",
@@ -13245,7 +13288,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4606": {
    "n": "Mount Zion Demonstration State Forest",
@@ -13267,7 +13311,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4607": {
    "n": "Mountain Home Demonstration State Forest",
@@ -13307,7 +13352,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-4608": {
    "n": "Soquel Demonstration State Forest",
@@ -13329,7 +13375,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-5633": {
    "n": "Carlsbad State Beach",
@@ -13886,32 +13933,27 @@
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.blm.gov/sites/blm.gov/files/programs-nlcs-california-king-range-map-and-guide.pdf",
-    "posted": "Nov 05, 2020",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "Bureau of Land Management",
-    "date_given": null,
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Map')",
     "page": "https://www.blm.gov/programs/national-conservation-lands/california/king-range-national-conservation-area",
-    "map_page": 1
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7380": {
    "n": "Cardiff State Beach",
@@ -14021,21 +14063,17 @@
    "page": "https://www.fs.usda.gov/detail/klamath/about-forest/?cid=FSEPRD494406",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.fs.usda.gov/r05/klamath/maps-guides",
+    "url": "https://fire.airnow.gov/#7.7/41.546/-123.142",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.fs.usda.gov/r05/klamath/maps-guides",
-    "posted": "September 22, 2026",
-    "checked": "2026-10-31",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": true,
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "USDA Forest Service",
-    "date_given": null,
-    "page": "https://www.fs.usda.gov/r05/klamath"
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('Fire and Smoke Map')",
+    "page": "https://www.fs.usda.gov/r05/klamath",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "linked from the agency page (fire.airnow.gov)"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r05/klamath",
@@ -14047,7 +14085,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-7493": {
    "n": "Candlestick Point State Recreation Area",
@@ -14106,29 +14145,23 @@
    "page": "https://www.blm.gov/programs/national-conservation-lands/california/alabama-hills-national-scenic-area",
    "checked": "2026-11-01",
    "map": {
-    "url": "https://www.blm.gov/sites/default/files/docs/2022-09/AlabamaHillsNationalScenicArea%20FY21%20Managers%20Report.pdf",
+    "url": "https://www.blm.gov/sites/default/files/docs/2023-02/AH_Camp_Map_508.pdf",
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-11-01",
-    "final": "https://www.blm.gov/sites/default/files/docs/2022-09/AlabamaHillsNationalScenicArea%20FY21%20Managers%20Report.pdf",
-    "posted": "2022-09",
-    "checked": "2026-11-01",
-    "covers": 0,
-    "names_park": "file",
-    "status_note": "ok (park named in the file name)",
-    "posted_how": "posted: the upload folder in the address",
-    "how": "Brandon's outside research Oct 31 (docs-found-maplinks-possible.json, possible): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "blm.gov unit page",
-    "date_given": "2022",
+    "date_how": "date unknown, checked 2026-11-02",
+    "how": "the page in a browser ('View a map of designated campsites.')",
     "page": "https://www.blm.gov/programs/national-conservation-lands/california/alabama-hills-national-scenic-area",
-    "map_page": 1
+    "posted": "2023-02",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "",
-    "how": "",
-    "status": "not found"
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the page in a browser ('Know before you go')",
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "Bureau of Land Management, Bishop Field Office",
    "runs": [],
@@ -14151,7 +14184,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-8325": {
    "n": "Millerton Lake State Recreation Area",
@@ -14218,21 +14252,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
   "parks": 410,
-  "map ok": 257,
-  "map found by the bot": 77,
-  "date on the map": 119,
-  "posted date only": 107,
-  "date unknown": 31,
-  "no map": 153,
-  "rules ok": 121,
-  "needs browser": 24,
+  "map ok": 280,
+  "map found by the bot": 103,
+  "date on the map": 128,
+  "posted date only": 120,
+  "date unknown": 32,
+  "no map": 130,
+  "rules ok": 129,
+  "needs browser": 3,
   "handover hints": 1,
-  "runs hints": 29,
+  "runs hints": 30,
   "host resting / robots": 0,
-  "map names the park": 232,
+  "map names the park": 240,
   "region overview only": 0
  }
 }

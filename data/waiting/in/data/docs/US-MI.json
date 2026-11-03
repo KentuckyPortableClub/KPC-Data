@@ -708,6 +708,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -733,7 +734,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r09/ottawa/recreation/lake-ottawa-recreation-area"
+    "page": "https://www.fs.usda.gov/r09/ottawa/recreation/lake-ottawa-recreation-area",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/ottawa",
@@ -765,7 +767,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hiawatha",
@@ -861,6 +863,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -1063,6 +1066,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -1590,6 +1594,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -1614,6 +1619,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -1653,6 +1659,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -3256,9 +3263,17 @@
    "page": "https://www.michigan.org/property/colonial-michilimackinac",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.michigan.org/regions-and-cities",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Regional Map')",
+    "page": "https://www.michigan.org/property/colonial-michilimackinac",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-11-02",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -3272,7 +3287,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-02"
   },
   "US-1499": {
    "n": "Grand Haven State Park",
@@ -5371,7 +5387,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hiawatha",
@@ -5437,7 +5453,8 @@
     "via": "outside research",
     "agency_given": "USDA Forest Service",
     "date_given": null,
-    "page": "https://www.fs.usda.gov/r09/ottawa"
+    "page": "https://www.fs.usda.gov/r09/ottawa",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/ottawa",
@@ -6164,6 +6181,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -9388,6 +9406,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -9463,6 +9482,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -12069,21 +12089,21 @@
    "ver": 7
   }
  },
- "read": "2026-10-31",
+ "read": "2026-11-02",
  "counts": {
   "parks": 388,
-  "map ok": 25,
-  "map found by the bot": 19,
-  "date on the map": 1,
-  "posted date only": 13,
+  "map ok": 207,
+  "map found by the bot": 201,
+  "date on the map": 51,
+  "posted date only": 145,
   "date unknown": 11,
-  "no map": 363,
+  "no map": 181,
   "rules ok": 26,
-  "needs browser": 255,
+  "needs browser": 254,
   "handover hints": 0,
   "runs hints": 3,
   "host resting / robots": 0,
-  "map names the park": 17,
+  "map names the park": 199,
   "region overview only": 0
  }
 }

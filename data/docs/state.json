@@ -33,7 +33,7 @@
    "parks": 253,
    "checked": 253,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-11-02"
   },
   "US-VA": {
    "status": "done",
@@ -61,7 +61,7 @@
    "parks": 155,
    "checked": 155,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-11-02"
   },
   "US-SC": {
    "status": "done",
@@ -71,11 +71,10 @@
    "updated": "2026-11-02"
   },
   "US-MS": {
-   "status": "done",
+   "status": "failed",
    "parks": 155,
-   "checked": 155,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-11-02",
+   "why": "maps 33 -> 24"
   },
   "US-IN": {
    "status": "done",
@@ -103,7 +102,7 @@
    "parks": 298,
    "checked": 298,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-11-02"
   },
   "US-IA": {
    "status": "failed",
@@ -116,7 +115,7 @@
    "parks": 155,
    "checked": 155,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-11-02"
   },
   "US-SD": {
    "status": "done",
@@ -137,7 +136,7 @@
    "parks": 851,
    "checked": 851,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-NJ": {
    "status": "done",
@@ -214,7 +213,7 @@
    "parks": 306,
    "checked": 306,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-LA": {
    "status": "done",
@@ -228,7 +227,7 @@
    "parks": 205,
    "checked": 205,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-TX": {
    "status": "done",
@@ -242,7 +241,7 @@
    "parks": 145,
    "checked": 145,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-NE": {
    "status": "done",
@@ -305,7 +304,7 @@
    "parks": 410,
    "checked": 410,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-OR": {
    "status": "done",
@@ -319,14 +318,14 @@
    "parks": 536,
    "checked": 536,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-AK": {
    "status": "done",
    "parks": 179,
    "checked": 179,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-HI": {
    "status": "done",
@@ -340,7 +339,7 @@
    "parks": 388,
    "checked": 388,
    "left": 0,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   "US-OH": {
    "status": "done",
@@ -707,7 +706,8 @@
  },
  "hosts": {
   "iowaculture.gov": 1793746896.3872542,
-  "www.cgcounty.org": 1793747226.2396
+  "www.cgcounty.org": 1793747226.2396,
+  "www.mdwfp.com": 1793753546.3331113
  },
  "last": {
   "when": "2026-11-02",
@@ -722,17 +722,17 @@
    "US-LA"
   ],
   "stat": {
-   "requests": 821,
-   "parks": 184,
-   "maps_ok": 168,
-   "maps_found": 163,
+   "requests": 643,
+   "parks": 181,
+   "maps_ok": 128,
+   "maps_found": 123,
    "dates": 0,
-   "rules": 154,
-   "browser": 361,
+   "rules": 135,
+   "browser": 224,
    "robots": 0,
-   "strikes": 6,
-   "errors": 6,
-   "skipped_fresh": 6711
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 10750
   }
  }
 }
