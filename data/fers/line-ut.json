@@ -5,38 +5,38 @@
   "US-UT"
  ],
  "since": "2026-11-02",
- "date": "2026-11-02 13:33 UTC",
+ "date": "2026-11-03 02:52 UTC",
  "verdict": "STOPPED",
  "why": [
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 1768 of 2211 pairs whose boxes touch"
+  "pass 1 tested 1662 of 2313 pairs whose boxes touch"
  ],
- "known_answers": "19/19 on 2026-10-31",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 66,
-  "DROPPED": 345,
-  "NEVER LOOKED AT": 2656
+  "DROPPED": 335,
+  "NEVER LOOKED AT": 2704
  },
  "report": {
   "pass1": {
    "date": "2026-11-02",
-   "pairs tested": 1768,
-   "pairs whose boxes touch": 2211,
+   "pairs tested": 1662,
+   "pairs whose boxes touch": 2313,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 738,
-   "date": "2026-11-02",
-   "pairs tested": 301
+   "agree with the pass before": 660,
+   "date": "2026-11-03",
+   "pairs tested": 278
   },
   "pass3": {
-   "agree with the pass before": 334,
-   "date": "2026-11-02",
-   "pairs tested": 287
+   "agree with the pass before": 332,
+   "date": "2026-11-03",
+   "pairs tested": 264
   },
   "pass5": {
-   "checked": 56,
-   "date": "2026-11-02",
+   "checked": 53,
+   "date": "2026-11-03",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -45,17 +45,17 @@
   "US-UT": "data/fers/US-UT.json"
  },
  "US-UT": {
-  "rows": 851,
-  "live": 114,
+  "rows": 772,
+  "live": 126,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 52,
+   "the agency ownership map did not answer": 37,
    "no public owner on the ownership map": 4,
    "this spot is 217 km from Salt Creek State Waterfowl Manageme": 1
   },
-  "dropped": 532,
-  "merged": 148
+  "dropped": 436,
+  "merged": 168
  },
  "states_ready": [],
  "states_held": [
