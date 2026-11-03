@@ -9,6 +9,9 @@ on:
         default: 'KPC_9_map_pictures kpc_river_banks'
 permissions:
   contents: read
+concurrency:   # PR2 (Nov 2): one run of this bot at a time; a second start waits instead of piling up
+  group: kpc-tool-tests
+  cancel-in-progress: false
 jobs:
   test:
     runs-on: ubuntu-latest

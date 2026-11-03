@@ -16,7 +16,8 @@ on:
         default: ''
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '8 4 * * *'   # G9 Nov 2: was '7 4 * * *' (spread the start times; now 1 min later)
-    - cron: '37 */3 * * *'   # Brandon Nov 1 4:37 AM 'leave test running 24 hours': every 3 h for the first 24 h after it lands (the step below stops these after day 1)
+    # PR2 (Nov 2): the every-3-h line ('37 */3 * * *', Brandon Nov 1 'leave test running 24 hours') is off: the 24-hour test is over
+    # (the run step already skipped it). Nightly only; the engine still starts its own next run when it has more to do (chain brake 12/day).
 permissions:
   contents: write
   actions: write
@@ -136,7 +137,13 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-engine.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+        run: |
+          # PR2 (fewer runs, Nov 2): CHAIN BRAKE. A self-starting chain stops for the day after 12 runs in 24 h (Nov 2: the hard look
+          # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
+          # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
+          kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-engine.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-engine.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
+          kpc_brake || exit 0
+          gh workflow run kpc-engine.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
       - name: WATCHDOG HEARTBEAT (Nov 2, chat 10) - KPC-Data's timed runs stopped; this chained bot starts the watchdog when it is 2.5 h old
         id: kept_green_hb
         continue-on-error: true

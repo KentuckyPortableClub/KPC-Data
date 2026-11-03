@@ -21,6 +21,7 @@ permissions:
 concurrency:
   group: kpc-map-pictures
   cancel-in-progress: false
+# PR2 (Nov 2): a push to tools-out that loses a race with another bot pulls --rebase and tries again (5 tries; no force).
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -64,7 +65,7 @@ jobs:
           N=$(ls ../out/pictures 2>/dev/null | grep -c -i '\.jpg\|\.png'); echo "::notice title=Map pictures::$N pictures on tools-out/pictures"
           python3 .github/scripts/kpc_status.py board 'Map pictures (second look)' green "$(date -u +%F): $N pictures; rows back to chat 11 in questions/second-look.json" 'chat 11 grades second-look.json with the pictures' || true   # ok: a status-board line (reporting only)
           bash ../links/.github/scripts/kpc_push_data.sh . "second look: rows back to chat 11 with a map picture" data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          cd ../out && git add -A pictures && git commit -qm "map pictures (run ${{ github.run_id }})" && git push -q origin tools-out || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          cd ../out && git add -A pictures && git commit -qm "map pictures (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()

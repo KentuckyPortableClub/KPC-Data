@@ -95,27 +95,54 @@ def waiting_room_health():
     return {'last_run': TODAY, 'result': 'red' if why else 'green', 'made': ' · '.join(why) or f'heartbeat {age_h:.0f} h old, {len(files)} files waiting', 'waiting_on': 'chat 11 (look at the waiting room run)' if why else 'nothing'}
 
 
+def _same(a, b):
+    """PR2 (fewer saves, Nov 2): two board rows are 'the same' when only the run link differs (and the day is the same), or the
+    waiting-room heartbeat age moved ('heartbeat 3 h old' -> '4 h old'). Such a row is not written again, so a quiet run saves nothing."""
+    def norm(r):
+        r = dict(r or {}); r.pop('run', None); r.pop('bot', None)
+        if isinstance(r.get('made'), str): r['made'] = re.sub(r'heartbeat \d+ h old', 'heartbeat N h old', r['made'])
+        return r
+    return norm(a) == norm(b)
+
+
 def board(bot, result, made, waiting, areas=''):
     STATUS.mkdir(parents=True, exist_ok=True)
+    try: before = BOARD.read_text(encoding='utf-8')
+    except Exception: before = ''  # noqa: BLE001
     try: b = json.load(open(BOARD, encoding='utf-8'))
     except Exception: b = {'about': 'KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.', 'bots': {}}  # noqa: BLE001
-    try: b['bots']['waiting room'] = waiting_room_health()   # chat 8 retest 4: every bot that writes the board also checks the checker
+    try:
+        wr = waiting_room_health()   # chat 8 retest 4: every bot that writes the board also checks the checker
+        if not _same(wr, b['bots'].get('waiting room')): b['bots']['waiting room'] = wr   # PR2: an hour older heartbeat alone is not news
     except Exception: pass  # noqa: BLE001
     row = {'last_run': TODAY, 'run': run_link(), 'result': 'green' if result.lower().startswith('g') else ('amber' if result.lower().startswith(('a', 'y')) else 'red'), 'made': made[:300], 'waiting_on': waiting[:200], 'areas': areas[:300]}
+    BOTS = STATUS / 'bots'; BOTS.mkdir(parents=True, exist_ok=True)
+    slug = re.sub(r'[^a-z0-9]+', '-', bot.lower()).strip('-')[:60] or 'bot'
+    try: mine = json.load(open(BOTS / f'{slug}.json', encoding='utf-8'))
+    except Exception: mine = None  # noqa: BLE001
+    if mine and _same(mine, row):
+        # PR2 (fewer saves): same day, same result, same words = nothing new. Keep the old row (and its run link) so the save step
+        # finds no change and makes no commit. The run link of this run is in the Actions log / summary.
+        row = {k: v for k, v in mine.items() if k != 'bot'}
     b['bots'][bot] = row
     # Oct 31 (Brandon: 'not ran in a few days?'): bots running at the same time each saved the WHOLE board, so one bot's save wiped
     # another's fresh line (world finder ran 3x today, board still said Oct 30). Each bot now also keeps its own line in
     # data/status/bots/<bot>.json (only that bot ever writes it) and every board write merges them all, newest line wins.
-    BOTS = STATUS / 'bots'; BOTS.mkdir(parents=True, exist_ok=True)
-    slug = re.sub(r'[^a-z0-9]+', '-', bot.lower()).strip('-')[:60] or 'bot'
-    (BOTS / f'{slug}.json').write_text(json.dumps(dict(row, bot=bot), ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    new_mine = json.dumps(dict(row, bot=bot), ensure_ascii=False, indent=1) + '\n'
+    if (BOTS / f'{slug}.json').exists() and (BOTS / f'{slug}.json').read_text(encoding='utf-8') == new_mine: pass   # PR2: unchanged, not rewritten
+    else: (BOTS / f'{slug}.json').write_text(new_mine, encoding='utf-8')
     for f in BOTS.glob('*.json'):
         try:
             r = json.load(open(f, encoding='utf-8')); n = r.pop('bot', None)
             if n and str(r.get('last_run', '')) >= str((b['bots'].get(n) or {}).get('last_run', '')): b['bots'][n] = r
         except Exception: pass  # noqa: BLE001
     b['updated'] = TODAY
-    BOARD.write_text(json.dumps(b, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+    out = json.dumps(b, ensure_ascii=False, indent=1, sort_keys=True) + '\n'
+    if os.environ.get('GITHUB_STEP_SUMMARY'):   # PR2: this run's line is always on its own run page, saved or not
+        try: open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f"**Status board ({bot}):** {result} - {made[:300]}\n\n")
+        except Exception: pass  # noqa: BLE001
+    if out == before: print(f'status: board unchanged for {bot} (nothing new to save)'); return   # PR2 (fewer saves)
+    BOARD.write_text(out, encoding='utf-8')
     print(f'status: board updated for {bot}')
 
 
