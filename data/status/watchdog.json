@@ -68,8 +68,17 @@
   "kpc-copy-from-links.yml|2026-11-03T15:11:00+00:00": "2026-11-03T16:11+00:00 started",
   "kpc-flow.yml|2026-11-03T13:46:00+00:00": "2026-11-03T16:11+00:00 started",
   "kpc-waiting-room.yml|2026-11-03T14:42:00+00:00": "2026-11-03T16:11+00:00 started",
-  "kpc-youtube-comments.yml|2026-11-03T13:36:00+00:00": "2026-11-03T16:11+00:00 skipped (not restarted)"
+  "kpc-youtube-comments.yml|2026-11-03T13:36:00+00:00": "2026-11-03T16:11+00:00 skipped (not restarted)",
+  "kpc-closures.yml|2026-11-03T18:38:00+00:00": "2026-11-03T19:47+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-03T19:11:00+00:00": "2026-11-03T19:47+00:00 started",
+  "kpc-eu-alerts.yml|2026-11-03T18:40:00+00:00": "2026-11-03T19:47+00:00 started",
+  "kpc-waiting-room.yml|2026-11-03T18:42:00+00:00": "2026-11-03T19:47+00:00 started"
  },
- "last": "2026-11-03T18:32+00:00",
- "last_restarted": []
+ "last": "2026-11-03T19:47+00:00",
+ "last_restarted": [
+  "kpc-closures.yml (missed Nov 03 18:38 UTC)",
+  "kpc-copy-from-links.yml (missed Nov 03 19:11 UTC)",
+  "kpc-eu-alerts.yml (missed Nov 03 18:40 UTC)",
+  "kpc-waiting-room.yml (missed Nov 03 18:42 UTC)"
+ ]
 }
