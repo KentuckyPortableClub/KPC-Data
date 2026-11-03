@@ -1482,6 +1482,8 @@
     "https://sigservices.icnf.pt/server/rest/services/Hosted/Formulário_VNP_Publico/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/Fotos_da_Galeria_do_Portal_do_Restauro_da_Natureza/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/GIP/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/IFN_regeneracao_natural/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Lei59_Kristin_dadosBase2/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Temas_Perímetro_Rega_Mira/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer"
    ],
@@ -1493,7 +1495,7 @@
     },
     {
      "step": "server",
-     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 144 services read"
+     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 146 services read"
     }
    ],
    "steps": [
@@ -2042,8 +2044,19 @@
     "https://kort.vd.dk/server/rest/services/Hosted/6470_24_04_2026_tif/MapServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje7_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje7_V2/MapServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Data_fra_cykelfremmekortet_feature/FeatureServer",
     "https://kort.vd.dk/server/rest/services/MKV_E1260_Data/MapServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/MapServer"
@@ -2056,7 +2069,7 @@
     },
     {
      "step": "server",
-     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 46 services read"
+     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 57 services read"
     }
    ],
    "steps": [
