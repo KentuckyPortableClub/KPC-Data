@@ -12047,7 +12047,9 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a fish wildlife kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a fish wildlife kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.70). Pin inside the record. Best name match 0.70 on record name 'Kishwaukee River'. Record about 572.9 acres; no park size found to compare. the agency map has no "
   },
   {
    "area": "US-IL",
@@ -12067,7 +12069,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.62). Pin inside the record. Best name match 0.62 on record name 'Ray Norbut'. Record about 1776.8 acres; no park size found to compare."
   },
   {
    "area": "US-IL",
@@ -12084,11 +12088,15 @@
    "record_link": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?objectIds=354&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13298",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a recreation kind the record does not name"
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a recreation kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'North Point Marina'. Record about 199.0 acres",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-IL",
@@ -12105,11 +12113,15 @@
    "record_link": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4118",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a wildlife kind the record does not name"
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a wildlife kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Copperhead Hollow'. Record about 1441.5 acres",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-IL",
@@ -12129,7 +12141,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.58); the sizes are 5.5x apart. Pin inside the record. Best name match 0.58 on record name 'Shelbyville'. Record about 6220.3 acres, the park page https://dnr.illin"
   },
   {
    "area": "US-IL",
@@ -12149,7 +12163,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.57). Pin inside the record. Best name match 0.57 on record name 'Shelbyville'. Record about 6220.3 acres; no park size found to compare."
   },
   {
    "area": "US-WI",
@@ -12169,7 +12185,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.29). Pin inside the record. Best name match 0.29 on record name 'Rem-Love Creek'. Record about 578.8 acres; no park size found to compare."
   },
   {
    "area": "US-GA",
@@ -12186,11 +12204,15 @@
    "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0/query?objectIds=1017&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4649",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a forest kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a forest kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'HITCHITI'. Record about 4591.1 acres; no park",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-GA",
@@ -12229,11 +12251,15 @@
    "record_link": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?objectIds=81&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0405",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a protected kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a protected kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'CSKT Bison Range'. Record about 18838.8 acres",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-MT",
@@ -12250,11 +12276,15 @@
    "record_link": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?objectIds=209&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11215",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a monument kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a monument kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Bear Paw Battlefield'. Record about 1065.1 ac",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-MT",
@@ -12271,11 +12301,15 @@
    "record_link": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?objectIds=2999&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11217",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a fish kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a fish kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 0.92 on name + designation 'Bluewater Springs Trout Hatchery Fish ",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-MT",
@@ -12292,11 +12326,15 @@
    "record_link": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?objectIds=3396&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11218",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a fish kind the record does not name"
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a fish kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 0.90 on name + designation 'Fort Peck Hatchery Fish Hatchery'. Rec",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-MT",
@@ -12316,7 +12354,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.70). Pin inside the record. Best name match 0.70 on record name 'Fort Peck Recreation Area'. Record about 623432.5 acres; no park size found to compare."
   },
   {
    "area": "US-MT",
@@ -12402,7 +12442,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.75). Pin inside the record. Best name match 0.75 on record name 'Simón Canyon (Recreation Area)'. Record about 3907.4 acres, the park page https://www.blm.gov/visi"
   },
   {
    "area": "US-CA",
@@ -12422,7 +12464,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.83). Pin inside the record. Best name match 0.83 on record name 'Cow Mountain'. Record about 52498.8 acres; no park size found to compare."
   },
   {
    "area": "US-CA",
@@ -12439,11 +12483,15 @@
    "record_link": "https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1/query?objectIds=462&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11580",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a blm management recreation kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a blm management recreation kind the record does not name",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Red Hills'. Record about 10026.0 acres, the p",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-MN",
@@ -12463,7 +12511,9 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.84). Pin inside the record. Best name match 0.84 on name + designation 'Forest Lake AMA (Washington) Aquatic Management Area'. Record about 87.2 acres; no park siz"
   },
   {
    "area": "US-WA",
@@ -12480,10 +12530,14 @@
    "record_link": "https://services9.arcgis.com/EGheeB0VDT6EarZv/ArcGIS/rest/services/MonumentParks1_WFL1/FeatureServer/29/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4555",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
+   "source": "gis-hunter",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on record name 'Hanford Reach National Monument'. Record abou",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-AK",
@@ -12504,7 +12558,9 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "auto_recheck": "NOT PASSED: the park is a blm historic kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a blm historic kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.83). Pin inside the record. Best name match 0.83 on record name 'Fort Egbert'. Record about 12.8 acres; no park size found to compare."
   },
   {
    "area": "US-ID",
@@ -12521,10 +12577,14 @@
    "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?objectIds=187&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4477",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
+   "source": "gis-hunter",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 0.87 on record name 'Idaho Panhandle National Forests'. Record abo",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -12546,7 +12606,9 @@
    "how": null,
    "source": "gis-hunter",
    "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12568,7 +12630,9 @@
    "how": null,
    "source": "gis-hunter",
    "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a conservation kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a conservation kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12589,7 +12653,9 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12610,7 +12676,9 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12632,7 +12700,9 @@
    "how": null,
    "source": "gis-hunter",
    "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a protected kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a protected kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12653,7 +12723,9 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12675,7 +12747,9 @@
    "how": null,
    "source": "gis-hunter",
    "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
@@ -12697,7 +12771,9 @@
    "how": null,
    "source": "gis-hunter",
    "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name"
+   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name",
+   "t1_band": "WEAK",
+   "t1_why": "Could not read the record: robots.txt says no."
   },
   {
    "area": "CA-BC",
