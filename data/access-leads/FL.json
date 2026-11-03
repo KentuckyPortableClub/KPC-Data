@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-03",
  "leads": [
   {
    "agency": "FDEP/DRP",
@@ -148,120 +148,44 @@
    "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/1"
   },
   {
-   "agency": "RCP",
-   "area": "PARK",
-   "count": 2190,
+   "agency": "",
+   "area": "Name",
+   "count": 22,
    "fields": [
-    "COUNTY",
-    "BEACH_OR_CITY_NAME",
-    "ACCESS_NAME",
-    "LOCATION_ADDRESS",
-    "PANHANDLE_GULF_ATLANTIC",
-    "GULF_COAST",
-    "ATLANTIC_COAST",
-    "ACCESS_SIGN",
-    "PARK",
-    "ENTRANCE_FEE",
-    "ENTRANCE_FEE_AMOUNT",
-    "PARKING_FEE",
-    "PARKING_FEE_AMOUNT",
-    "REGULAR_PARKING",
-    "NUMBER_OF_SPACES",
-    "ADA_PARKING",
-    "ADA_SPACES",
-    "RV_PARKING",
-    "RV_SPACES",
-    "LIFEGUARD"
+    "Name",
+    "FolderPath",
+    "Snippet",
+    "PopupInfo",
+    "Location"
    ],
    "known": false,
-   "layer": "Public Beach Access Sites",
+   "layer": "Boat Launch (Fee May Apply)",
    "sample": [
     {
-     "ACCESS_NAME": "Beach Park",
-     "ACCESS_SIGN": "Yes",
-     "ATLANTIC_COAST": "No",
-     "BEACH_OR_CITY_NAME": "Treasure Island",
-     "COUNTY": "Pinellas",
-     "ENTRANCE_FEE": " ",
-     "ENTRANCE_FEE_AMOUNT": " ",
-     "GULF_COAST": "Yes",
-     "LOCATION_ADDRESS": "104th Ave. & Gulf Blvd.",
-     "PANHANDLE_GULF_ATLANTIC": "Gulf",
-     "PARK": "County",
-     "PARKING_FEE": " "
+     "FolderPath": "SHARP boat launches.kmz/SHARP boat launches",
+     "Location": "Ship Bottom LBI",
+     "Name": "Ship Bottom Municipal Ramp",
+     "PopupInfo": " ",
+     "Snippet": " "
     },
     {
-     "ACCESS_NAME": "3rd Avenue",
-     "ACCESS_SIGN": "Yes",
-     "ATLANTIC_COAST": "No",
-     "BEACH_OR_CITY_NAME": "Indian Rocks Beach",
-     "COUNTY": "Pinellas",
-     "ENTRANCE_FEE": " ",
-     "ENTRANCE_FEE_AMOUNT": " ",
-     "GULF_COAST": "Yes",
-     "LOCATION_ADDRESS": "3rd Avenue & Gulf Blvd.",
-     "PANHANDLE_GULF_ATLANTIC": "Gulf",
-     "PARK": " ",
-     "PARKING_FEE": " "
+     "FolderPath": "SHARP boat launches.kmz/SHARP boat launches",
+     "Location": "Port Republic-Galloway TWP",
+     "Name": "Chestnut Neck Launch",
+     "PopupInfo": " ",
+     "Snippet": " "
     },
     {
-     "ACCESS_NAME": "Apalachee Street",
-     "ACCESS_SIGN": "Yes",
-     "ATLANTIC_COAST": "No",
-     "BEACH_OR_CITY_NAME": "Gulf Lagoon Beach",
-     "COUNTY": "Bay",
-     "ENTRANCE_FEE": " ",
-     "ENTRANCE_FEE_AMOUNT": " ",
-     "GULF_COAST": "Yes",
-     "LOCATION_ADDRESS": "30 feet East of Appalachee Street; & Surf Drive",
-     "PANHANDLE_GULF_ATLANTIC": "Panhandle",
-     "PARK": " ",
-     "PARKING_FEE": " "
+     "FolderPath": "SHARP boat launches.kmz/SHARP boat launches",
+     "Location": "Stafford TWP",
+     "Name": "Cedar Run Dock Road",
+     "PopupInfo": " ",
+     "Snippet": " "
     }
    ],
-   "service": "OpenData/AQUATIC_PRESERVES",
-   "typef": "CAMPING_FULL_FACILITY",
-   "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/AQUATIC_PRESERVES/MapServer/1"
-  },
-  {
-   "agency": "Florida Fish and Wildlife Conservation Commission",
-   "area": "NAME_WMA",
-   "count": 343,
-   "fields": [
-    "NAME_WMA",
-    "NAME_ENT",
-    "TYPE_MGT",
-    "TYPE_ENT",
-    "WEBSITE"
-   ],
-   "known": false,
-   "layer": "Wildlife Management Area Entrances Florida",
-   "sample": [
-    {
-     "NAME_ENT": "Gate 2 Entrance",
-     "NAME_WMA": "John C. and Mariana Jones/Hungryland WEA",
-     "TYPE_ENT": "Secondary",
-     "TYPE_MGT": "Lead",
-     "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/lead/jones-hungryland/"
-    },
-    {
-     "NAME_ENT": "Gate 3 Entrance",
-     "NAME_WMA": "John C. and Mariana Jones/Hungryland WEA",
-     "TYPE_ENT": "Secondary",
-     "TYPE_MGT": "Lead",
-     "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/lead/jones-hungryland/"
-    },
-    {
-     "NAME_ENT": "Gate 5 Entrance",
-     "NAME_WMA": "John C. and Mariana Jones/Hungryland WEA",
-     "TYPE_ENT": "Secondary",
-     "TYPE_MGT": "Lead",
-     "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/lead/jones-hungryland/"
-    }
-   ],
-   "service": "Open_Data/Wildlife_Management_Area_Entrances_Florida",
-   "typef": "TYPE_MGT",
-   "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Area_Entrances_Florida/MapServer/0"
+   "service": "Boat_Launch_(Fee_May_Apply)",
+   "typef": "",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Boat_Launch_(Fee_May_Apply)/FeatureServer/0"
   },
   {
    "agency": "FDEP/DRP",
@@ -372,6 +296,122 @@
    "service": "Open_Data/FWC_Florida_Boat_Ramp_Inventory",
    "typef": "RampType",
    "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/FWC_Florida_Boat_Ramp_Inventory/MapServer/4"
+  },
+  {
+   "agency": "RCP",
+   "area": "PARK",
+   "count": 2190,
+   "fields": [
+    "COUNTY",
+    "BEACH_OR_CITY_NAME",
+    "ACCESS_NAME",
+    "LOCATION_ADDRESS",
+    "PANHANDLE_GULF_ATLANTIC",
+    "GULF_COAST",
+    "ATLANTIC_COAST",
+    "ACCESS_SIGN",
+    "PARK",
+    "ENTRANCE_FEE",
+    "ENTRANCE_FEE_AMOUNT",
+    "PARKING_FEE",
+    "PARKING_FEE_AMOUNT",
+    "REGULAR_PARKING",
+    "NUMBER_OF_SPACES",
+    "ADA_PARKING",
+    "ADA_SPACES",
+    "RV_PARKING",
+    "RV_SPACES",
+    "LIFEGUARD"
+   ],
+   "known": true,
+   "layer": "Public Beach Access Sites",
+   "sample": [
+    {
+     "ACCESS_NAME": "Beach Park",
+     "ACCESS_SIGN": "Yes",
+     "ATLANTIC_COAST": "No",
+     "BEACH_OR_CITY_NAME": "Treasure Island",
+     "COUNTY": "Pinellas",
+     "ENTRANCE_FEE": " ",
+     "ENTRANCE_FEE_AMOUNT": " ",
+     "GULF_COAST": "Yes",
+     "LOCATION_ADDRESS": "104th Ave. & Gulf Blvd.",
+     "PANHANDLE_GULF_ATLANTIC": "Gulf",
+     "PARK": "County",
+     "PARKING_FEE": " "
+    },
+    {
+     "ACCESS_NAME": "3rd Avenue",
+     "ACCESS_SIGN": "Yes",
+     "ATLANTIC_COAST": "No",
+     "BEACH_OR_CITY_NAME": "Indian Rocks Beach",
+     "COUNTY": "Pinellas",
+     "ENTRANCE_FEE": " ",
+     "ENTRANCE_FEE_AMOUNT": " ",
+     "GULF_COAST": "Yes",
+     "LOCATION_ADDRESS": "3rd Avenue & Gulf Blvd.",
+     "PANHANDLE_GULF_ATLANTIC": "Gulf",
+     "PARK": " ",
+     "PARKING_FEE": " "
+    },
+    {
+     "ACCESS_NAME": "Apalachee Street",
+     "ACCESS_SIGN": "Yes",
+     "ATLANTIC_COAST": "No",
+     "BEACH_OR_CITY_NAME": "Gulf Lagoon Beach",
+     "COUNTY": "Bay",
+     "ENTRANCE_FEE": " ",
+     "ENTRANCE_FEE_AMOUNT": " ",
+     "GULF_COAST": "Yes",
+     "LOCATION_ADDRESS": "30 feet East of Appalachee Street; & Surf Drive",
+     "PANHANDLE_GULF_ATLANTIC": "Panhandle",
+     "PARK": " ",
+     "PARKING_FEE": " "
+    }
+   ],
+   "service": "OpenData/AQUATIC_PRESERVES",
+   "typef": "CAMPING_FULL_FACILITY",
+   "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/AQUATIC_PRESERVES/MapServer/1"
+  },
+  {
+   "agency": "Florida Fish and Wildlife Conservation Commission",
+   "area": "NAME_WMA",
+   "count": 343,
+   "fields": [
+    "NAME_WMA",
+    "NAME_ENT",
+    "TYPE_MGT",
+    "TYPE_ENT",
+    "WEBSITE"
+   ],
+   "known": true,
+   "layer": "Wildlife Management Area Entrances Florida",
+   "sample": [
+    {
+     "NAME_ENT": "Gate 2 Entrance",
+     "NAME_WMA": "John C. and Mariana Jones/Hungryland WEA",
+     "TYPE_ENT": "Secondary",
+     "TYPE_MGT": "Lead",
+     "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/lead/jones-hungryland/"
+    },
+    {
+     "NAME_ENT": "Gate 3 Entrance",
+     "NAME_WMA": "John C. and Mariana Jones/Hungryland WEA",
+     "TYPE_ENT": "Secondary",
+     "TYPE_MGT": "Lead",
+     "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/lead/jones-hungryland/"
+    },
+    {
+     "NAME_ENT": "Gate 5 Entrance",
+     "NAME_WMA": "John C. and Mariana Jones/Hungryland WEA",
+     "TYPE_ENT": "Secondary",
+     "TYPE_MGT": "Lead",
+     "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/lead/jones-hungryland/"
+    }
+   ],
+   "service": "Open_Data/Wildlife_Management_Area_Entrances_Florida",
+   "typef": "TYPE_MGT",
+   "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Area_Entrances_Florida/MapServer/0"
   },
   {
    "agency": "FDEP/DRP",

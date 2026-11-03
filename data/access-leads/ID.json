@@ -1,6 +1,82 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-03",
  "leads": [
+  {
+   "agency": "",
+   "area": "Project_Site",
+   "count": 4946,
+   "fields": [
+    "featureDescription",
+    "featureName",
+    "pavementMaterial",
+    "courtesyDockPresent",
+    "isUserFeeRequired",
+    "boatRampIdpk",
+    "elevationUom",
+    "elevationVerticalDatum",
+    "mediaId",
+    "metadataId",
+    "propertyIdCode",
+    "rpsuid",
+    "rpuid",
+    "foreignKey",
+    "created_user",
+    "last_edited_user",
+    "Division",
+    "District",
+    "Project_Site",
+    "Project_Site_Area"
+   ],
+   "known": false,
+   "layer": "Boat Ramp",
+   "sample": [
+    {
+     "boatRampIdpk": "1016-372668-1",
+     "courtesyDockPresent": "no",
+     "elevationUom": "foot",
+     "elevationVerticalDatum": "wgs84",
+     "featureDescription": "LOCK 3 BOAT RAMP",
+     "featureName": "LOCK 3 BOAT RAMP",
+     "isUserFeeRequired": "no",
+     "mediaId": " ",
+     "metadataId": " ",
+     "pavementMaterial": "concrete",
+     "propertyIdCode": " ",
+     "rpsuid": "0"
+    },
+    {
+     "boatRampIdpk": "1016-313280101-2",
+     "courtesyDockPresent": "no",
+     "elevationUom": "foot",
+     "elevationVerticalDatum": "wgs84",
+     "featureDescription": "16'",
+     "featureName": "OLD HICKORY BEACH DAY USE- BOAT RAMP",
+     "isUserFeeRequired": "no",
+     "mediaId": " ",
+     "metadataId": " ",
+     "pavementMaterial": "concrete",
+     "propertyIdCode": " ",
+     "rpsuid": "0"
+    },
+    {
+     "boatRampIdpk": "1020-392950-3",
+     "courtesyDockPresent": "no",
+     "elevationUom": "foot",
+     "elevationVerticalDatum": "wgs84",
+     "featureDescription": "BOAT RAMP, 17' WIDE",
+     "featureName": "ROME FERRY ACCESS BOAT RAMP",
+     "isUserFeeRequired": "no",
+     "mediaId": " ",
+     "metadataId": " ",
+     "pavementMaterial": "concrete",
+     "propertyIdCode": " ",
+     "rpsuid": "0"
+    }
+   ],
+   "service": "PSA_Reference_Layers",
+   "typef": "featureDescription",
+   "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/PSA_Reference_Layers/FeatureServer/0"
+  },
   {
    "agency": "IDFG, IFWIS",
    "area": "site_name",
