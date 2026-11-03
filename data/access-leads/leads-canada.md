@@ -2,18 +2,6 @@
 
 From kpc_parking_explorer.py. New = not yet in data/access-layers.json. Review, then add the good ones.
 
-## CA-PC (2 new)
-
-- **JNP_Trailhead_Area / Facilities_Installations_Point** · 70 points · area field `` · type field ``  
-  https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/JNP_Trailhead_Area/FeatureServer/0
-- **wsLakeSimcoeBoatLaunches2025 / wsLakeSimcoeBoatLaunches2025** · 20 points · area field `Name` · type field ``  
-  https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/wsLakeSimcoeBoatLaunches2025/FeatureServer/0
-
-## CA-PE (1 new)
-
-- **Sage_and_Sparrow_Wildfire_Mitigation_2024 / Access Gate** · 4 points · area field `` · type field `Feature_Subtype`  
-  https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/Sage_and_Sparrow_Wildfire_Mitigation_2024/FeatureServer/0
-
 ## CA-BC (2 new)
 
 - **whse/bcgw_pub_whse_environmental_monitoring / Coastal BC Marine Kayaking Destinations** · 214 points · area field `` · type field `FEATURE_CODE`  
@@ -63,3 +51,15 @@ From kpc_parking_explorer.py. New = not yet in data/access-layers.json. Review, 
   https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Scugog_Carrying_Place_Trail/FeatureServer/0
 - **Scugog_Carrying_Place_Trail / Scugog_Carrying_Place_Historic_Plaque** · 1 points · area field `Name` · type field ``  
   https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Scugog_Carrying_Place_Trail/FeatureServer/1
+
+## CA-PC (2 new)
+
+- **JNP_Trailhead_Area / Facilities_Installations_Point** · 70 points · area field `` · type field ``  
+  https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/JNP_Trailhead_Area/FeatureServer/0
+- **wsLakeSimcoeBoatLaunches2025 / wsLakeSimcoeBoatLaunches2025** · 20 points · area field `Name` · type field ``  
+  https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/wsLakeSimcoeBoatLaunches2025/FeatureServer/0
+
+## CA-PE (1 new)
+
+- **Sage_and_Sparrow_Wildfire_Mitigation_2024 / Access Gate** · 4 points · area field `` · type field `Feature_Subtype`  
+  https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/Sage_and_Sparrow_Wildfire_Mitigation_2024/FeatureServer/0
