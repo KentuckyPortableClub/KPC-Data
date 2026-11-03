@@ -13,7 +13,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-GA | 237 | 143 | 97 | 127 | 16 | 85 | 42 | 94 | 42 | 59 | 0 |
 | US-AL | 155 | 78 | 58 | 61 | 15 | 40 | 23 | 77 | 34 | 1 | 0 |
 | US-SC | 167 | 52 | 41 | 49 | 2 | 16 | 34 | 115 | 67 | 0 | 0 |
-| US-FL | 460 | 242 | 226 | 218 | 25 | 193 | 24 | 218 | 63 | 14 | 0 |
+| US-FL | 460 | 242 | 226 | 218 | 25 | 193 | 24 | 218 | 63 | 13 | 0 |
 | US-MS | 155 | 33 | 25 | 21 | 0 | 19 | 14 | 122 | 45 | 93 | 0 |
 | US-IN | 229 | 71 | 68 | 68 | 18 | 48 | 5 | 158 | 11 | 0 | 0 |
 | US-IL | 219 | 103 | 97 | 34 | 5 | 84 | 14 | 116 | 166 | 0 | 0 |
@@ -36,7 +36,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-DE | 89 | 9 | 8 | 9 | 0 | 5 | 4 | 80 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 4 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 115 | 104 | 88 | 37 | 53 | 25 | 191 | 40 | 2 | 0 |
-| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 27 | 20 | 0 |
+| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 27 | 19 | 0 |
 | US-OK | 205 | 121 | 114 | 112 | 2 | 106 | 13 | 80 | 41 | 0 | 0 |
 | US-TX | 222 | 163 | 78 | 157 | 56 | 48 | 59 | 59 | 89 | 3 | 0 |
 | US-KS | 145 | 16 | 8 | 15 | 1 | 12 | 3 | 129 | 15 | 0 | 0 |
@@ -2666,7 +2666,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-13090 John Franks Wildlife Management Area: no map link on file and none on the park page
 - US-2356 Bayou Segnette State Park: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-2357 Bogue Chitto State Park: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
-- US-2358 Chemin-A-Haut State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-2358 Chemin-A-Haut State Park: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-2359 Chicot State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-2360 Cypremort Point State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-2361 Fairview-Riverside State Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
@@ -4367,13 +4367,13 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0072 | Zion National Park | https://www.nps.gov/zion/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 11, 2026 | https://www.nps.gov/zion/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4573 | Mormon Pioneer National Historic Trail | https://www.nps.gov/mopi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm ✓ |  |
-| US-5761 | La Sal Mountain National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
+| US-5761 | La Sal Mountain National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
 | US-4394 | Ashley National Forest | https://www.fs.usda.gov/r04/ashley/maps-guides | page ✓name · forest map only; forest map only; forest · outside research | — (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/r04/ashley ✓ |  |
-| US-13488 | Pando - "I Spread" - Aspen Clone Site of | https://www.fs.usda.gov/r04/fishlake/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted October 27, 2026 | https://www.fs.usda.gov/r04/fishlake ✓ |  |
+| US-13488 | Pando - "I Spread" - Aspen Clone Site of | https://www.fs.usda.gov/r04/fishlake/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-11-03) · posted October 27, 2026 | https://www.fs.usda.gov/r04/fishlake ✓ |  |
 | US-11167 | Little Hole National Scenic Trail | https://www.fs.usda.gov/r04/ashley/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-11-03) · posted January 7, 2026 |  ✗ |  |
-| US-5783 | Swett Ranch Historic Homestead USFS Nati | https://www.fs.usda.gov/r04/ashley/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted January 7, 2026 | https://www.fs.usda.gov/r04/ashley ✓ |  |
+| US-5783 | Swett Ranch Historic Homestead USFS Nati | https://www.fs.usda.gov/r04/ashley/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted January 7, 2026 | https://www.fs.usda.gov/r04/ashley ✓ |  |
 | US-4396 | Fishlake National Forest | https://www.fs.usda.gov/sites/nfs/files/r04/fishlake/image/Fishlake%20NF%20Avenza%20Travel | image ✓name · image: the name is known from the file n · outside research | — (date unknown, checked 2026-10-31) · posted May 20, 2025 | https://www.fs.usda.gov/r04/fishlake ✓ |  |
-| US-4397 | Manti-La Sal National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
+| US-4397 | Manti-La Sal National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-11-03) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
 | US-4398 | Uinta-Wasatch-Cache National Forest | https://www.fs.usda.gov/r04/uinta-wasatch-cache/maps-guides | page ✓name · forest map only; forest map only; forest · the agency site | date unknown (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/visit/know-before-you-go ✓ | administered by the Forest Service |
 | US-4395 | Dixie National Forest | https://www.fs.usda.gov/r04/dixie/maps-guides | page ✓name · forest map only; forest map only; forest · outside research | — (date unknown, checked 2026-10-31) · posted October 29, 2026 | https://www.fs.usda.gov/r04/dixie ✓ |  |
 | US-3096 | Willard Bay State Park | https://stateparks.utah.gov/wp-content/uploads/2024-Willard-Bay-Map.png | image ✓name · image: the name is known from the file n · outside research | — (date unknown, checked 2026-10-31) · posted 2024 |  ✗ |  |
@@ -6813,9 +6813,6 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - AU-0039 Sir James Mitchell National Park: no map link on file and none on the park page
 - AU-0040 Shoalwater Islands Marine Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 406))
 - AU-0041 Shell Beach Conservation Park: no map link on file and none on the park page
-
-## robots.txt said no (hosts we did not read)
-- www.dnr.state.mn.us: 21 addresses (Sitemap: https://www.dnr.state.mn.us/sitemap.xml | Sitemap: https://www.dnr.state.mn.us/sitemap-stat)
 
 ## hosts resting a day (three strikes)
 - iowaculture.gov
