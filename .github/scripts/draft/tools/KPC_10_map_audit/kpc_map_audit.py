@@ -381,25 +381,88 @@ def acres_from(props: dict):
     return None
 
 
-def best_acres(rows):
-    """Official acres from several records: add the pieces from the same source, then take the biggest source total
-    (two sources describing the same park are not added together)."""
-    # Nov 2 (chat 2, pile-down plan): PAD-US often lists the SAME land twice (a Fee record and a Designation record with the same
-    # GIS_Acres, e.g. every national wildlife refuge). Adding both made 172 parks 'exactly 2.0 times smaller than official'
-    # (Waubay NWR drawn 4,633 ac vs 'official' 9,262). Within one source an acres figure equal to one already counted (within 1%)
-    # is the same land again and counts once.
+def _acres_by_source(rows, split_providers=False):
     by = collections.defaultdict(float)
     seen = collections.defaultdict(list)
-    for rid, ac in rows:
+    for row in rows:
+        rid, ac = row[0], row[1]
         if not isinstance(ac, (int, float)) or ac <= 0:
             continue
         rid = str(rid)
         m = re.match(r"^[a-z]+", rid)
         src = rid.split(":")[0] if ":" in rid else (m.group(0) if m else "main")
+        if split_providers and len(row) > 2 and row[2]:
+            src += "|" + str(row[2])
         if any(abs(ac - s) <= 0.01 * max(ac, s) for s in seen[src]):
             continue
         seen[src].append(ac)
         by[src] += ac
+    return by
+
+
+def best_acres(rows):
+    """Official acres from several records: add the pieces from the same source, then take the biggest source total
+    (two sources describing the same park are not added together). rows = (id or source, acres[, data provider])."""
+    # Nov 2 (chat 2, pile-down plan): PAD-US often lists the SAME land twice (a Fee record and a Designation record with the same
+    # GIS_Acres, e.g. every national wildlife refuge). Adding both made 172 parks 'exactly 2.0 times smaller than official'
+    # (Waubay NWR drawn 4,633 ac vs 'official' 9,262). Within one source an acres figure equal to one already counted (within 1%)
+    # is the same land again and counts once.
+    by = _acres_by_source(rows)
+    return max(by.values()) if by else None
+
+
+def nested_same_source(rows, geoms, share=0.9):
+    """batch 1b (Quality: US-2753 South Mountains SP, the state layer has the park 21,342 ac AND its dedicated nature preserve
+    15,079 ac, which lies inside the park): row numbers of records that lie (share, 90%) inside a BIGGER record from the same
+    source and the same data provider, so the official figure does not add the land twice. Only clearly smaller pieces (at
+    most 90% of the bigger record's acres): two near-equal copies are left to best_acres / provider_acres as before.
+    rows = (source, acres[, provider]) as for best_acres; geoms = shapely geometries in the same order (None = unknown)."""
+    drop = set()
+    for i, (ri, gi) in enumerate(zip(rows, geoms)):
+        if gi is None or getattr(gi, "is_empty", True) or not gi.area:
+            continue
+        for j, (rj, gj) in enumerate(zip(rows, geoms)):
+            if i == j or j in drop or gj is None or getattr(gj, "is_empty", True):
+                continue
+            if str(ri[0]) != str(rj[0]) or (ri[2] if len(ri) > 2 else "") != (rj[2] if len(rj) > 2 else ""):
+                continue
+            if not (ri[1] and rj[1] and ri[1] <= 0.9 * rj[1]):
+                continue
+            try:
+                inside = gi.intersection(gj).area / gi.area
+            except Exception:  # noqa: BLE001 - a faulty outline: no answer, keep both
+                continue
+            if inside >= share:
+                drop.add(i)
+                break
+    return drop
+
+
+# batch 1b (Brandon Nov 2, via Super Head Bot): PAD-US copies drawn by conservation groups COUNT, but each is labeled with its source
+GROUP_PROVIDERS = {"TNC": "The Nature Conservancy", "DU": "Ducks Unlimited"}
+
+
+def provider_labels(rows):
+    """Labels for the conservation-group copies among a park's records: ['The Nature Conservancy (PAD-US source
+    TNC_PADUS2_0_SA2015_Public_gdb)', ...]; [] when there are none."""
+    out = []
+    for row in rows:
+        agg = str(row[2]) if len(row) > 2 and row[2] else ""
+        who = GROUP_PROVIDERS.get(re.split(r"_", agg)[0].upper()) if agg else None
+        lab = f"{who} (PAD-US source {agg})" if who else ""
+        if lab and lab not in out:
+            out.append(lab)
+    return out
+
+
+def provider_acres(rows):
+    """Nov 2 (mapping agent, the 230 'OFF smaller' rows): the same figure, but each PAD-US data provider (its Agg_Src: FWS
+    PAD-US 3.0, FWS PAD-US 4.0, TNC Secured Areas, a state's own list...) counted as its own source. PAD-US keeps every
+    provider's copy of a place, so adding them counts the land twice: Arctic NWR's FWS_PADUS3_0 + FWS_PADUS4_0 copies gave
+    'official 39.3M ac' for a 19.6M ac refuge. None when the rows carry no provider."""
+    if not any(len(r) > 2 and r[2] for r in rows):
+        return None
+    by = _acres_by_source(rows, split_providers=True)
     return max(by.values()) if by else None
 
 
@@ -425,16 +488,28 @@ def t1_pin(dist_m: float) -> dict:
     return {"flag": "FAR", "metres": d}
 
 
-def t2_size(outline_acres: float, official_acres, official_from: str = "") -> dict:
-    """T2: outline acres (equal-area) vs the official acres. x1.5 PASS, x1.5-5 OFF, > x5 WAY OFF."""
+def t2_size(outline_acres: float, official_acres, official_from: str = "", official_low=None) -> dict:
+    """T2: outline acres (equal-area) vs the official acres. x1.5 PASS, x1.5-5 OFF, > x5 WAY OFF.
+    official_low (Nov 2): the figure with each PAD-US data provider counted once (provider_acres). PAD-US can hold one place
+    from several providers, so the true figure lies between official_low and official_acres: an outline inside that
+    range PASSES, and one outside it is measured against the nearer end."""
     if not outline_acres:
         return {"flag": "NO OUTLINE"}
     if not official_acres or official_acres <= 0:
         return {"flag": "NO FIGURE", "outline_acres": round(outline_acres, 1)}
-    r = max(outline_acres / official_acres, official_acres / outline_acres)
+    lo = official_low if isinstance(official_low, (int, float)) and 0 < official_low < 0.99 * official_acres else None
+    ref = official_acres
+    if lo is not None:
+        ref = official_acres if outline_acres >= official_acres else (lo if outline_acres <= lo else outline_acres)
+    r = max(outline_acres / ref, ref / outline_acres)
     flag = "PASS" if r <= 1.5 else ("OFF" if r <= 5 else "WAY OFF")
-    return {"flag": flag, "outline_acres": round(outline_acres, 1), "official_acres": round(float(official_acres), 1),
-            "times": round(r, 2), "official_from": official_from}
+    out = {"flag": flag, "outline_acres": round(outline_acres, 1), "official_acres": round(float(official_acres), 1),
+           "times": round(r, 2), "official_from": official_from}
+    if lo is not None:
+        out["official_acres_low"] = round(float(lo), 1)
+        out["note"] = (f"PAD-US holds this land from more than one data provider: counted once per provider it is "
+                       f"{lo:,.0f} ac, all providers added {official_acres:,.0f} ac")
+    return out
 
 
 # ---- T3 names
@@ -796,7 +871,8 @@ def why_of(ref: str, tests: dict) -> str:
         txt = f"POTA's pin is {m / 1000:.1f} km outside the outline" if m >= 1000 else f"POTA's pin is {m:.0f} m outside the outline"
     elif k == "T2":
         big = "bigger" if t["outline_acres"] > t["official_acres"] else "smaller"
-        txt = f"the outline is {t['times']:.1f} times {big} than the official {t['official_acres']:,.0f} acres ({t['outline_acres']:,.0f} ac drawn)"
+        fig = t.get("official_acres_low") if big == "smaller" and t.get("official_acres_low") else t["official_acres"]
+        txt = f"the outline is {t['times']:.1f} times {big} than the official {fig:,.0f} acres ({t['outline_acres']:,.0f} ac drawn)"
     elif k == "T3":
         txt = f"the record name '{t['record_name']}' does not match POTA's name '{t['pota_name']}' (score {t['score']:.2f})"
     elif k == "T4":
@@ -818,17 +894,28 @@ def why_of(ref: str, tests: dict) -> str:
 
 
 # ================================================================== reading the club's files and the sources (read-only)
-def pin_ok(lat, lon) -> bool:
-    """Nov 2 (mapping agent): a pin that cannot be on Earth (POTA CA-2395 Churchill WMA says lat 92.595, lon -57.056). pyproj
-    cannot build a projection there (CRSError), and the whole CA-MB run stopped on it. Such a pin is flagged for a person,
-    never moved and never used. A pin at exactly 0, 0 (no real pin) is treated the same way."""
+def pin_problem(lat, lon) -> str:
+    """Why a POTA pin can't be used, or '' when it is fine. Nov 2 (mapping agent): a pin that cannot be on Earth stopped the CA-MB
+    run (pyproj CRSError). Three Manitoba WMAs have one, and each looks like latitude and longitude typed in the wrong boxes:
+    CA-2395 Churchill (lat 92.595, lon -57.056), CA-2456 Maple Lake (lat 100.856, lon -49.514), CA-2538 Westlake (lat 99.364,
+    lon -51.308). Batch 1b (Quality's grade): a pin at exactly 0, 0 (199 Canadian parks on POTA, e.g. CA-1930, CA-2100, CA-4319)
+    is "no pin", not a place in the Gulf of Guinea; graded as FAR it only filled the worst list with noise. Such pins are flagged
+    for a person to report to POTA, never moved and never used."""
     try:
         la, lo = float(lat), float(lon)
     except (TypeError, ValueError):
-        return False
-    if not (math.isfinite(la) and math.isfinite(lo) and -90 <= la <= 90 and -180 <= lo <= 180):
-        return False
-    return not (la == 0 and lo == 0)   # Nov 2 (Quality): 199 Canadian POTA pins sit at exactly 0, 0 (no real pin): never measured
+        return "not a number"
+    if not (math.isfinite(la) and math.isfinite(lo)):
+        return "not a number"
+    if la == 0 and lo == 0:
+        return "is 0, 0 (no real pin)"
+    if not (-90 <= la <= 90 and -180 <= lo <= 180):
+        return "cannot be on Earth" + (" (latitude and longitude look swapped)" if abs(lo) <= 90 and abs(la) <= 180 else "")
+    return ""
+
+
+def pin_ok(lat, lon) -> bool:
+    return not pin_problem(lat, lon)
 
 
 def disc(lon: float, lat: float, r_m: float = 500):
@@ -867,7 +954,7 @@ class Audit:
                 if isinstance(v, list) and v:
                     self.layers.setdefault(k, v)
         self._locations = None
-        self.bad_pins = {}   # ref -> (lat, lon) POTA gave that cannot be on Earth (pin_ok): flagged, never moved
+        self.bad_pins = {}   # ref -> (lat, lon, why, where read) for pins pin_problem() refuses: flagged for a person, never moved
         self.excused = self.fer_pairs()
 
     # ---- files
@@ -929,7 +1016,7 @@ class Audit:
                 continue
             for r in rows or []:
                 if r.get("latitude") is not None and not pin_ok(r.get("latitude"), r.get("longitude")):
-                    self.bad_pins[r["reference"]] = (r.get("latitude"), r.get("longitude"))
+                    self.bad_pins[r["reference"]] = (r.get("latitude"), r.get("longitude"), pin_problem(r.get("latitude"), r.get("longitude")), "POTA list")
                     continue
                 if r.get("latitude") is not None:
                     out[r["reference"]] = {"name": r.get("name", ""), "lat": float(r["latitude"]), "lon": float(r["longitude"]),
@@ -938,9 +1025,10 @@ class Audit:
         if pi.exists():   # the club's copy of POTA's pins, only if POTA did not answer for a park
             for ref, row in self.load(pi).get("parks", {}).items():
                 if ref in out or ref in self.bad_pins or len(row) <= 6 or row[5] is None:
-                    continue
-                if not pin_ok(row[5], row[6]):   # Nov 2 (Quality): written down too, not skipped quietly
-                    self.bad_pins[ref] = (row[5], row[6])
+                    continue   # POTA answered (with a good or a bad pin): the club's copy is not used for this park
+                if not pin_ok(row[5], row[6]):   # batch 1b (Quality): the backup copy's bad pins are written down too, not skipped quietly
+                    self.bad_pins[ref] = (row[5], row[6], pin_problem(row[5], row[6]), "parkinfo (the club's copy)")
+                    self.log(f"  {ref}: pin lat {row[5]}, lon {row[6]} in parkinfo/{area}.json {pin_problem(row[5], row[6])}: not used")
                     continue
                 out[ref] = {"name": row[0], "lat": float(row[5]), "lon": float(row[6]), "from": "parkinfo"}
         return out
@@ -984,7 +1072,7 @@ class Audit:
     @staticmethod
     def blank(ref, area):
         return {"ref": ref, "area": area, "name": "", "key_name": "", "type": "", "grade": "", "pin": None, "records": [],
-                "raw": [], "geom": None, "official": None, "official_from": "", "live": False, "declared_m": None,
+                "raw": [], "geom": None, "official": None, "official_low": None, "official_from": "", "live": False, "declared_m": None,
                 "numbers": [], "read": "", "last_edit": None, "last_edit_from": "", "problems": [], "ids": [], "outline_from": []}
 
     def finish(self, P):
@@ -1058,7 +1146,7 @@ class Audit:
 
     def live_records(self, P, groups: dict, default_layer: str, kind: str):
         """Read a park's records live, layer by layer. groups = {layer prefix: [(id, key row)]}."""
-        ac_rows = []
+        ac_rows, ac_geo, ac_ids = [], [], []
         for pre, rows in groups.items():
             if pre and pre not in self.layers:
                 P["problems"].append(f"CAN'T TELL: no layer known for record id '{pre}…'")
@@ -1107,9 +1195,10 @@ class Audit:
                 src_ac = "GIS_Acres" if props.get("GIS_Acres") else ("O_AREA_HA" if props.get("O_AREA_HA") else "acres field")
                 if ac is None and len(krow) > 2 and isinstance(krow[2], (int, float)) and krow[2] > 0:
                     ac, src_ac = float(krow[2]), "the key's acres"
-                if ac:
-                    ac_rows.append((pre or kind, ac))
                 rid = f"{pre}{oid}" if pre else (f"{kind}#{oid}")
+                if ac:
+                    ac_rows.append((pre or kind, ac, str(props.get("Agg_Src") or "")))
+                    ac_geo.append(raw); ac_ids.append(rid)
                 link = f"{layer}/query?objectIds={oid}&outFields=*&returnGeometry=false&f=html"
                 P["records"].append({"id": rid, "name": nm, "type": typ, "category": cat, "acres": round(ac, 1) if ac else None,
                                      "acres_from": src_ac if ac else "", "layer": layer, "link": link, "name_field": name_field or ""})
@@ -1117,8 +1206,17 @@ class Audit:
                 if layer not in P["outline_from"]:
                     P["outline_from"].append(layer)
         if ac_rows:
+            nest = nested_same_source(ac_rows, ac_geo)
+            if nest:   # batch 1b: a piece inside a bigger record of the same source is the same land, counted once
+                P.setdefault("notes", []).append("official acres count once the land of " + ", ".join(ac_ids[i] for i in sorted(nest))
+                                                 + ": it lies inside a bigger record from the same source")
+                ac_rows = [r for i, r in enumerate(ac_rows) if i not in nest]
             P["official"] = best_acres(ac_rows)
+            P["official_low"] = provider_acres(ac_rows)
             P["official_from"] = "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+            grp = provider_labels(ac_rows)
+            if grp:   # Brandon Nov 2: they count; the reader sees whose drawing it is
+                P["official_from"] += "; includes copies drawn by " + "; ".join(grp)
         P["live"] = True
         return P
 
@@ -1282,7 +1380,7 @@ def grade_park(P, pin, acres_list, world: bool):
     down = P.get("retry") and not P["raw"]
     if pin is not None and not pin_ok(pin.get("lat"), pin.get("lon")):   # belt and braces: see pin_ok
         tests["T1"] = {"flag": "CAN'T TELL", "bad_pin": [pin.get("lat"), pin.get("lon")],
-                       "note": "POTA's pin is impossible (off the globe) or blank (0, 0): for a person to report to POTA (never moved)"}
+                       "note": f"POTA's pin {pin_problem(pin.get('lat'), pin.get('lon'))}: for a person to report to POTA (never moved)"}
         pin = None
     elif pin is None:
         tests["T1"] = {"flag": "CAN'T TELL", "note": "POTA has no pin for this park"}
@@ -1306,10 +1404,10 @@ def grade_park(P, pin, acres_list, world: bool):
     elif P.get("retry"):
         tests["T2"] = {"flag": "CAN'T TELL", "note": "a source was down: only part of the park could be read"}
     else:
-        off, frm = P["official"], P["official_from"]
+        off, frm, low = P["official"], P["official_from"], P.get("official_low")
         if not off and P["ref"] in acres_list and not P.get("partial"):
-            off, frm = acres_list[P["ref"]], "the club's acreage list"
-        tests["T2"] = t2_size(acres(g), off, frm)
+            off, frm, low = acres_list[P["ref"]], "the club's acreage list", None
+        tests["T2"] = t2_size(acres(g), off, frm, low)
         if P.get("partial"):   # drawn and official acres both come from the records that could be read
             tests["T2"]["note"] = "only the records this tool can read (CPCAD) are drawn and counted"
     pname = (pin or {}).get("name") or ""
@@ -1355,7 +1453,7 @@ def pota_name_for(audit, ref, pota):
     try:
         j, _ = audit.http.get(POTA_PARK.format(ref=ref), max_age_days=30)
         if isinstance(j, dict) and j.get("latitude") is not None and not pin_ok(j.get("latitude"), j.get("longitude")):
-            audit.bad_pins[ref] = (j.get("latitude"), j.get("longitude"))
+            audit.bad_pins[ref] = (j.get("latitude"), j.get("longitude"), pin_problem(j.get("latitude"), j.get("longitude")), "POTA park page")
             return None
         if isinstance(j, dict) and j.get("latitude") is not None:
             pota[ref] = {"name": j.get("name", ""), "lat": float(j["latitude"]), "lon": float(j["longitude"]), "from": "POTA park page",
@@ -1411,10 +1509,10 @@ def run_area(audit: Audit, area: str, acres_list: dict, deadline: float, progres
             tests = {"T1": {"flag": "CAN'T TELL", "note": f"this park could not be graded ({type(e).__name__}: {str(e)[:160]}): for a person"}}
             P["problems"].append(f"CAN'T TELL: grading stopped on this park: {type(e).__name__}: {str(e)[:160]}")
         if pin is None and ref in getattr(audit, "bad_pins", {}):
-            bla, blo = audit.bad_pins[ref]
-            tests["T1"] = {"flag": "CAN'T TELL", "bad_pin": [bla, blo],
-                           "note": f"POTA's pin (lat {bla}, lon {blo}) is impossible (off the globe) or blank (0, 0): for a person to report to POTA (never moved)"}
-            P["problems"].append(f"POTA's pin lat {bla}, lon {blo} is impossible or blank: reported for a person")
+            bla, blo, bwhy, bfrom = audit.bad_pins[ref]
+            tests["T1"] = {"flag": "CAN'T TELL", "bad_pin": [bla, blo], "bad_pin_from": bfrom,
+                           "note": f"POTA's pin (lat {bla}, lon {blo}) {bwhy}: for a person to report to POTA (never moved)"}
+            P["problems"].append(f"POTA's pin lat {bla}, lon {blo} {bwhy} (read from {bfrom})")
         g = P["geom"]
         if pin is not None and not pin_ok(pin.get("lat"), pin.get("lon")):
             pin = None
@@ -1551,6 +1649,15 @@ def write_outputs(out: Path, results: dict, built, only=None):
         for r in sorted(recs, key=lambda r: (-r["score"], r["ref"]))[:10]:
             if r["score"] > 0:
                 lines.append(f"| {r['score']} | {r['ref']} | {r['name'].replace('|', '/')} | {r['why'].replace('|', '/')} |")
+        lines.append("")
+    bad = [(area, r) for area, recs in results.items() for r in recs if (r["tests"].get("T1") or {}).get("bad_pin")]
+    if bad:   # batch 1b: one list a person can take to POTA (nobody moves these pins)
+        lines += ["## POTA pins this tool could not use (for a person to report to POTA; never moved)", "",
+                  f"{len(bad)} park(s).", "", "| area | ref | park | pin (lat, lon) | why | read from |", "|---|---|---|---|---|---|"]
+        for area, r in sorted(bad, key=lambda x: (x[0], x[1]["ref"])):
+            t1 = r["tests"]["T1"]
+            lines.append(f"| {area} | {r['ref']} | {r['name'].replace('|', '/')} | {t1['bad_pin'][0]}, {t1['bad_pin'][1]} | "
+                         f"{t1['note'].split(':')[0].replace('|', '/')} | {t1.get('bad_pin_from', 'POTA')} |")
         lines.append("")
     (out / "summary.md").write_text("\n".join(lines), encoding="utf-8")
     qs, areas = [], {}

@@ -121,3 +121,42 @@ def test_time_out_then_resume_then_old_rules_start_fresh(tmp_path, monkeypatch):
     calls.clear()
     assert _main(tmp_path, monkeypatch, ra, "--resume") == 0
     assert calls == ["US-AA"]                                       # a 'done' mark without its results file is audited again
+
+
+# ---- batch 1b (Quality's grade of the bad-pin patch): why a pin is refused, and the backup copy's bad pins
+def test_three_manitoba_pins_look_swapped():
+    for la, lo in ((92.595, -57.056), (100.856, -49.514), (99.364, -51.308)):   # CA-2395, CA-2456, CA-2538 on POTA (Nov 2)
+        assert not A.pin_ok(la, lo) and "swapped" in A.pin_problem(la, lo)
+
+
+def test_zero_zero_pin_is_no_pin():
+    assert A.pin_problem(0, 0) == "is 0, 0 (no real pin)" and not A.pin_ok(0.0, 0.0)
+    assert A.pin_ok(0, -84.5) and A.pin_ok(37.5, 0)                              # only both at 0 is refused
+
+
+def test_zero_zero_pin_gets_cant_tell_not_far():
+    P = A.Audit.blank("CA-1930", "CA-QC")
+    P["geom"] = square(LON, LAT, 1000)
+    t = A.grade_park(P, {"name": "Baie aux Feuilles", "lat": 0, "lon": 0}, {}, False)
+    assert t["T1"]["flag"] == "CAN'T TELL" and t["T1"]["bad_pin"] == [0, 0] and "0, 0" in t["T1"]["note"]
+
+
+class _NoHttp:
+    def get(self, *a, **k):
+        raise A.SourceDown("offline test")
+
+
+def test_backup_copy_bad_pins_are_written_down(tmp_path):
+    import json
+    (tmp_path / "parkinfo").mkdir()
+    (tmp_path / "parkinfo" / "CA-MB.json").write_text(json.dumps({"parks": {
+        "CA-2456": ["Maple Lake WMA", "", "", "", "", 100.856, -49.514],
+        "CA-1930": ["Baie aux Feuilles", "", "", "", "", 0, 0],
+        "CA-0001": ["Good park", "", "", "", "", 49.9, -97.1]}}))
+    logged = []
+    au = A.Audit(tmp_path, None, _NoHttp(), {}, log_fn=logged.append)
+    pins = au.pota_parks("CA-MB")
+    assert set(pins) == {"CA-0001"}
+    assert au.bad_pins["CA-2456"][3].startswith("parkinfo") and "swapped" in au.bad_pins["CA-2456"][2]
+    assert au.bad_pins["CA-1930"][2] == "is 0, 0 (no real pin)"
+    assert any("CA-2456" in m for m in logged) and any("CA-1930" in m for m in logged)
