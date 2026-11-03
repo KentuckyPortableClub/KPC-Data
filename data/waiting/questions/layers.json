@@ -1,7 +1,7 @@
 {
  "about": "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
  "built": "2026-11-02",
- "open": 179,
+ "open": 169,
  "questions": [
   {
    "area": "CA-AB",
@@ -622166,7 +622166,8 @@
    "st": "NV",
    "url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
    "name_field": "name",
-   "licence": ""
+   "licence": "",
+   "auto_recheck": "TO CHAT 11: chat 11 already said NO to another record for this park; the park is a fish hatchery historical monument kind the record does not name"
   },
   {
    "area": "CA-NB",
@@ -622214,7 +622215,8 @@
    "st": "BC",
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
    "name_field": "COMMON_SITE_NAME",
-   "licence": ""
+   "licence": "",
+   "auto_recheck": "TO CHAT 11: the park is a historic town kind the record does not name"
   },
   {
    "area": "CA-NB",
@@ -622231,14 +622233,17 @@
    "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5166",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NB",
@@ -622255,14 +622260,17 @@
    "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5190",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NB",
@@ -622286,7 +622294,8 @@
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "auto_recheck": "TO CHAT 11: the park is a memorial recreation kind the record does not name"
   },
   {
    "area": "CA-NB",
@@ -622303,14 +622312,17 @@
    "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?objectIds=21&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5224",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": true
   },
   {
    "area": "CA-NB",
@@ -622327,14 +622339,17 @@
    "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?objectIds=33&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5694",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NB",
@@ -622375,14 +622390,17 @@
    "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5713",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NB",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
    "name_field": "Park_Name",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": true
   },
   {
    "area": "CA-NS",
@@ -622399,14 +622417,17 @@
    "record_link": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?objectIds=82&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6558",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NS",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
    "name_field": "INT_NAME",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NS",
@@ -622423,14 +622444,17 @@
    "record_link": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?objectIds=136&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6560",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NS",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
    "name_field": "INT_NAME",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NS",
@@ -622447,14 +622471,17 @@
    "record_link": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?objectIds=40&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6557",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NS",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
    "name_field": "INT_NAME",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NS",
@@ -622471,14 +622498,17 @@
    "record_link": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?objectIds=97&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6553",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NS",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
    "name_field": "INT_NAME",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-NS",
@@ -622495,15 +622525,18 @@
    "record_link": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?objectIds=104&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6564",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "NS",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
    "name_field": "INT_NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 1510 (Blanche Peninsula Conservation Lands) + 2 more; is this record BETTER?"
+   "key_now": "the park already has an outline: record 1510 (Blanche Peninsula Conservation Lands) + 2 more; is this record BETTER?",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "US-UT",
@@ -622721,7 +622754,8 @@
    "st": "NS",
    "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
    "name_field": "HRTG_NM",
-   "licence": ""
+   "licence": "",
+   "auto_recheck": "TO CHAT 11: the park is a historic kind the record does not name"
   },
   {
    "area": "CA-ON",
@@ -622772,5 +622806,28 @@
    "licence": "",
    "key_now": "the park already has an outline: record 16112 (Whitefish River Conservation Reserve) + 1 more; is this record BETTER?"
   }
- ]
+ ],
+ "auto_yes": 498,
+ "auto_1c": {
+  "date": "2026-11-03",
+  "released": 10,
+  "sampled": 39,
+  "to_chat11": 34,
+  "likely_open": 135,
+  "paused_layers": 0,
+  "why": {
+   "the park is a monument natural kind the record doe": 9,
+   "the park is a nature kind the record does not name": 5,
+   "the record is a nationalpark": 4,
+   "the park is a historic kind the record does not na": 3,
+   "the record is a naturschutzgebiet": 2,
+   "record 4,209 ac = more than 10x the official 104 a": 1,
+   "the park already has an official outline": 1,
+   "the park is a monument kind the record does not na": 1,
+   "the park is a protected kind the record does not n": 1,
+   "the park is a historical kind the record does not ": 1,
+   "the pin is 109 m outside the record": 1,
+   "the pin is 120 m outside the record": 1
+  }
+ }
 }

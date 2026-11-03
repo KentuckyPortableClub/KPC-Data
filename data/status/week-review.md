@@ -1,4 +1,4 @@
-# The week in numbers (2026-10-30 -> 2026-11-02)
+# The week in numbers (2026-10-30 -> 2026-11-03)
 
 For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snapshots in week-numbers.json.
 
@@ -15,12 +15,12 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 - **aliases-nov1** (0 rows): 
 - **aliases-nov2** (0 rows): 
 - **aliases-oct31** (33 rows): - NO 5, - NOT SURE 7, - YES 21
-- **gis-hunter** (534 rows): - NO 339, - NOT SURE 16, - YES 84, LIKELY NO 22, LIKELY NOT SURE 8, LIKELY YES 12, SURE NO 2, SURE NOT SURE 1, SURE YES 8, SURE bot YES 42
+- **gis-hunter** (583 rows): - NO 339, - NOT SURE 16, - YES 84, LIKELY NO 22, LIKELY NOT SURE 8, LIKELY YES 12, LIKELY open 3, SURE NO 2, SURE NOT SURE 1, SURE YES 8, SURE bot YES 83, SURE open 5
 - **hardlook** (0 rows): 
 - **key-pieces** (307 rows): - NO 81, - NOT SURE 33, - YES 193
-- **layers** (25863 rows): LIKELY NO 213, LIKELY NOT SURE 6711, LIKELY YES 2131, LIKELY bot YES 12, LIKELY open 135, SURE NO 8, SURE NOT SURE 526, SURE YES 15607, SURE bot YES 476, SURE open 44
+- **layers** (25863 rows): LIKELY NO 213, LIKELY NOT SURE 6711, LIKELY YES 2131, LIKELY bot YES 12, LIKELY open 135, SURE NO 8, SURE NOT SURE 526, SURE YES 15607, SURE bot YES 486, SURE open 34
 - **lost-finds-nov1** (0 rows): 
-- **map-audit** (87 rows): audit open 87
+- **map-audit** (2096 rows): audit NO 410, audit YES 1028, audit open 132, audit other 526
 - **nearmiss-nov2** (45 rows): LIKELY open 17, SURE open 28
 - **no-recheck** (13 rows): - NOT SURE 1, - YES 2, LIKELY NO 1, LIKELY NOT SURE 6, LIKELY YES 1, SURE YES 2
 - **not-sure-for-chat9** (146 rows): - open 146
