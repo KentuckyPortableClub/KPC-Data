@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-new-US-13644.json",
+ "id": "10-new-US-13644",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13644 Cedar Rock Wildlife Management Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13644"
+  ],
+  "report": "new park US-13644 Cedar Rock Wildlife Management Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-04 02:06Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13644",
+   "status": "robots.txt says no"
+  }
+ ],
+ "seconds": 0,
+ "manners": {
+  "requests": 1,
+  "robots": 1,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": [
+   [
+    "https://api.pota.app/robots.txt",
+    "robots.txt answered 403: nothing fetched from api.pota.app this run"
+   ]
+  ],
+  "robots_unreadable": 1
+ },
+ "short": "1 result(s), 0 read OK, 0 screenshot(s)"
+}
