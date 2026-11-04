@@ -10,6 +10,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
 | US-SC | 63 | 20 | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 |
+| US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 6 | 31 | 0 |
 | US-IA | 125 | 0 | 32 | 0 | 0 | 0 | 93 | 0 | 0 | 0 | 0 | 0 |
@@ -35,7 +36,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IN FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -44,6 +45,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 48 campgrounds · host resting
 - reserve.tnstateparks.com: 25 campgrounds · host resting
+- www.fdacs.gov: 23 campgrounds · robots.txt says no
 - destateparks.com: 22 campgrounds · host resting
 - www.tn.gov: 17 campgrounds · host resting
 - midnrreservations.com: 12 campgrounds · host resting
@@ -641,6 +643,70 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
   - phone_hint = "(864) 585-1283" · “Parks Official Site Croft DIRECTIONS 450 Croft State Park RD Spartanburg, SC 29302 PHONE 864.585.1283 EMAIL MAKE A RESERVATION TOP 5 THINGS ”
   - reservable = true · “pointed officials. The area includes central water and restoom facilities 100 yards away. Reservations are accepted. To make a primitive gro”
   - restrooms = "yes (kind not stated)" · “ft. Twenty-five of the campsites offer 50 amp service. The campgrounds are convenient to restrooms with hot showers. Camping Reservations: T”
+
+## US-FL: 12 random samples (records with facts; seed = the date)
+
+- **Rainbow Springs State Park** (intake-US-1912, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Little Talbot Island State Park** (intake-US-0634, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Curry Hammock State Park** (intake-US-1851, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **T.H. Stone Memorial St. Joseph Peninsula State Park** (intake-US-1918, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Torreya State Park** (intake-US-1924, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Oscar Scherer State Park** (intake-US-1909, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Caladesi Island State Park** (intake-US-1844, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **High Bluff Campground** (intake-US-6312, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [myfwc.com](https://myfwc.com/recreation/lead/joe-budd/things-to-do/)
+  - booking.how = "online: floridastateforests.reserveamerica.com" · “link “Florida Forest Service Reserve America””
+  - booking.url = "https://floridastateforests.reserveamerica.com/camping/high · “link “Florida Forest Service Reserve America” -> https://floridastateforests.reserveamerica.com/camping/high-bluff-campground-lake-talquin-s”
+  - map.date_how = "web page, no date in the link" · “link “Explore by map””
+  - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
+  - reservable = true · “ife and unique plants. Camping Camping is permitted only at the High Bluff Campground. To reserve a camp site, visit the Florida Forest Serv”
+- **Suwannee River State Park** (intake-US-1921, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Blue Spring State Park** (intake-US-1842, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Tomoka State Park** (intake-US-1923, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Ochlockonee River State Park** (intake-US-1907, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
 
 ## US-IN: 12 random samples (records with facts; seed = the date)
 
