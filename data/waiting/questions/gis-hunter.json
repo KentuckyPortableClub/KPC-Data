@@ -1,9 +1,9 @@
 {
  "about": "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same proper name: chat 2 rechecks (G-4) and joins; chat 11 grades a 10% sample. LIKELY = part of the name shared: chat 11 answers YES / NO + checked_by + how. UNLIKELY rows are not asked (evidence in data/gis-hunter/<area>.json).",
- "built": "2026-11-03",
+ "built": "2026-11-04",
  "open": 20,
- "sure_open": 19,
- "likely_open": 13,
+ "sure_open": 7,
+ "likely_open": 11,
  "never_reasked": 0,
  "questions": [
   {
@@ -12605,10 +12605,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name",
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12629,10 +12626,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a conservation kind the record does not name",
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12653,9 +12647,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12676,9 +12668,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12699,10 +12689,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a protected kind the record does not name",
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12723,9 +12710,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12746,10 +12731,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name",
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12770,10 +12752,7 @@
    "checked_by": null,
    "how": null,
    "source": "gis-hunter",
-   "rechecked_by_chat2": null,
-   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name",
-   "t1_band": "WEAK",
-   "t1_why": "Could not read the record: robots.txt says no."
+   "rechecked_by_chat2": null
   },
   {
    "area": "CA-BC",
@@ -12819,6 +12798,5 @@
    "t1_band": "WEAK",
    "t1_why": "Could not read the record: robots.txt says no."
   }
- ],
- "auto_yes": 138
+ ]
 }
