@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T04:10Z",
+ "checked": "2026-11-04T06:14Z",
  "switched_on": false,
  "results": [
   {
@@ -299,7 +299,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/wilbur_wright.pdf"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -462,13 +462,11 @@
   {
    "path": "data/docs/US-OR.json",
    "kind": "docs",
-   "why": [
-    "F-D3 3 of 20 re-tested links dead, e.g. https://stateparks.oregon.gov/index.cfm?do=main.loadFile&load=_siteFil"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-PA.json",
@@ -487,11 +485,9 @@
   {
    "path": "data/docs/US-SC.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fs.usda.gov/r08/francismarionsumter/maps-guides"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-SD.json",
