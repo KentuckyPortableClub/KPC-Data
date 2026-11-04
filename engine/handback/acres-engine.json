@@ -669,6 +669,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-12064",
+   "Park name (as the agency writes it)": "Henderson Swamp",
+   "Size": 24,
+   "Unit": "acres",
+   "Agency": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
+   "Source page": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?where=OBJECTID%3D29&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "CA-4960",
    "Park name (as the agency writes it)": "Michel-Chartrand, Parc",
    "Size": 410,
@@ -1034,6 +1043,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "tnmap.tn.gov",
+   "Agency/area": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "www.donneesquebec.ca",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -1285,6 +1304,16 @@
   },
   {
    "Host": "www.fhwa.dot.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "dnr.wisconsin.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
    "Example URL": null,

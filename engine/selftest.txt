@@ -19,8 +19,8 @@ ___________ test_key_doctor_switch_names_are_not_locked_and_default ____________
         assert rules.changed() == []
 >       assert rules.on('key_doctor.per_park_release') is False and rules.on('key_doctor.reapply_nos') is True
 E       AssertionError: assert (True is False)
-E        +  where True = <function on at 0x7f15001ee7a0>('key_doctor.per_park_release')
-E        +    where <function on at 0x7f15001ee7a0> = rules.on
+E        +  where True = <function on at 0x7f22689927a0>('key_doctor.per_park_release')
+E        +    where <function on at 0x7f22689927a0> = rules.on
 
 tests/test_key_doctor.py:177: AssertionError
 ______________ test_retry_list_tagged_and_enp_is_person_download _______________
@@ -30,15 +30,15 @@ ______________ test_retry_list_tagged_and_enp_is_person_download _______________
 >       assert len(R.retry) == 24 and all(i['tag'] == 'retry from GitHub network' for i in R.retry)
 E       AssertionError: assert (37 == 24)
 E        +  where 37 = len([{'id': 'RETRY-BZ', 'cc': 'BZ', 'country': 'Belize', 'pota_parks': '69', ...}, {'id': 'RETRY-LC', 'cc': 'LC', 'country...onduras', 'pota_parks': '60', ...}, {'id': 'RETRY-BO', 'cc': 'BO', 'country': 'Bolivia', 'pota_parks': '22', ...}, ...])
-E        +    where [{'id': 'RETRY-BZ', 'cc': 'BZ', 'country': 'Belize', 'pota_parks': '69', ...}, {'id': 'RETRY-LC', 'cc': 'LC', 'country...onduras', 'pota_parks': '60', ...}, {'id': 'RETRY-BO', 'cc': 'BO', 'country': 'Bolivia', 'pota_parks': '22', ...}, ...] = <core.registry.Registry object at 0x7f14fefd4650>.retry
+E        +    where [{'id': 'RETRY-BZ', 'cc': 'BZ', 'country': 'Belize', 'pota_parks': '69', ...}, {'id': 'RETRY-LC', 'cc': 'LC', 'country...onduras', 'pota_parks': '60', ...}, {'id': 'RETRY-BO', 'cc': 'BO', 'country': 'Bolivia', 'pota_parks': '22', ...}, ...] = <core.registry.Registry object at 0x7f225c3052b0>.retry
 
 tests/test_round5.py:55: AssertionError
 =========================== short test summary info ============================
 FAILED tests/test_key_doctor.py::test_release_is_report_only_by_default - assert (True is False)
 FAILED tests/test_key_doctor.py::test_key_doctor_switch_names_are_not_locked_and_default - AssertionError: assert (True is False)
- +  where True = <function on at 0x7f15001ee7a0>('key_doctor.per_park_release')
- +    where <function on at 0x7f15001ee7a0> = rules.on
+ +  where True = <function on at 0x7f22689927a0>('key_doctor.per_park_release')
+ +    where <function on at 0x7f22689927a0> = rules.on
 FAILED tests/test_round5.py::test_retry_list_tagged_and_enp_is_person_download - AssertionError: assert (37 == 24)
  +  where 37 = len([{'id': 'RETRY-BZ', 'cc': 'BZ', 'country': 'Belize', 'pota_parks': '69', ...}, {'id': 'RETRY-LC', 'cc': 'LC', 'country...onduras', 'pota_parks': '60', ...}, {'id': 'RETRY-BO', 'cc': 'BO', 'country': 'Bolivia', 'pota_parks': '22', ...}, ...])
- +    where [{'id': 'RETRY-BZ', 'cc': 'BZ', 'country': 'Belize', 'pota_parks': '69', ...}, {'id': 'RETRY-LC', 'cc': 'LC', 'country...onduras', 'pota_parks': '60', ...}, {'id': 'RETRY-BO', 'cc': 'BO', 'country': 'Bolivia', 'pota_parks': '22', ...}, ...] = <core.registry.Registry object at 0x7f14fefd4650>.retry
-3 failed, 118 passed, 1 skipped in 9.40s
+ +    where [{'id': 'RETRY-BZ', 'cc': 'BZ', 'country': 'Belize', 'pota_parks': '69', ...}, {'id': 'RETRY-LC', 'cc': 'LC', 'country...onduras', 'pota_parks': '60', ...}, {'id': 'RETRY-BO', 'cc': 'BO', 'country': 'Bolivia', 'pota_parks': '22', ...}, ...] = <core.registry.Registry object at 0x7f225c3052b0>.retry
+3 failed, 118 passed, 1 skipped in 11.92s
