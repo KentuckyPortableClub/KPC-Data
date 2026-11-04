@@ -288,7 +288,7 @@ def J(u, params=None, budget=None, timeout=25, limit=None):
     st, _h, body, _f = M.get(url, timeout=timeout, accept='application/json,*/*;q=0.5')
     LAST['status'] = str(st)
     if st != 200 or not body:
-        if st not in ('rest', 'robots'): STAT['errors'] += 1
+        if st not in ('rest', 'robots', 'robots-unreadable', 'deferred', 'crawl-delay'): STAT['errors'] += 1   # Nov 3 (A4): next-run statuses are not errors
         return None
     try: j = json.loads(body.decode('utf-8', 'replace'))
     except Exception: return None  # noqa: BLE001
@@ -808,6 +808,9 @@ def status_words(st):
     if st == 'budget': return f'budget used up ({QMAX} requests)'
     if st == 'rest': return 'blocked: rest pause (the host struck out today)'
     if st == 'robots': return 'blocked: robots.txt'
+    if st == 'deferred': return 'next run: slow host, live reads for this run used up'
+    if st == 'robots-unreadable': return 'next run: robots.txt could not be read (not a Disallow)'   # Nov 3 re-cut (A13)   # Nov 3 (A4)
+    if st == 'crawl-delay': return 'next run: Crawl-delay over 120 s (listed for a person)'
     if st.isdigit(): return f'blocked: HTTP {st}'
     return f'blocked: {st or "no answer"}'
 
@@ -939,6 +942,7 @@ def hunt_question(q, P, area):
     if res['result'] != 'ANSWERED':
         res['not found'] = ('context only: ' if finds else 'no official source answered; ') + 'tried steps ' + ', '.join(sorted({str(t['step']) for t in tried}))
     if blocked: res['blocked'] = blocked
+    if any(str(t.get('result', '')).startswith('next run') or 'deferred' in str(t.get('result', '')) or 'robots-unreadable' in str(t.get('result', '')) for t in tried): res['retry'] = True   # Nov 3 (A4)
     if budget[0] and not budget[1]: res['retry'] = True; res['result'] = 'NOT FOUND'; res['not found'] = 'no host answered this run (rested or errors): tried again next run'
     return res
 

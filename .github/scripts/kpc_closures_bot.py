@@ -1504,6 +1504,7 @@ def process_area(K, area, state, review):
         if not ok:                                                                   # keep the last items: a failed read never reopens a park
             skipped = why.startswith('needs ') or why.startswith('D-R8')
             if why == 'rest': why = 'rest (host resting after an earlier strike; last items kept)'
+            if why in ('deferred', 'crawl-delay', 'robots-unreadable'): why = f'{why} (read again next run; last items kept)'; skipped = True   # Nov 3 (A4): not a failure
             if not skipped: STAT['sources_failed'] += 1
             items += [o for o in old if still_valid(o, area)]
             srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': False, 'skipped': skipped, 'why': why, 'n': len(old), 'n_prev': ps.get('n', 0),

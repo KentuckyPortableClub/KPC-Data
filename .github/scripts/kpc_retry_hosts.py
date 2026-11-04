@@ -48,7 +48,7 @@ def main():
             st, body, final = get(ask)
             r = {'id': it.get('id'), 'country': it.get('country'), 'cc': it.get('cc'), 'asked': ask, 'answer': st, 'date': TODAY}
             if not (isinstance(st, int) and st < 400):
-                r['result'] = {403: '403: refused (not bypassed)', 'robots': 'robots.txt says no (not asked)'}.get(st, f'no answer ({st})'); res.append(r); continue
+                r['result'] = {403: '403: refused (not bypassed)', 'robots': 'robots.txt says no (not asked)', 'robots-unreadable': 'robots.txt could not be read: tried again next run', 'deferred': 'slow host: tried again next run', 'crawl-delay': 'Crawl-delay over 120 s: for a person (not asked)'}.get(st, f'no answer ({st})'); res.append(r); continue
             if rest:
                 try: j = json.loads(body)
                 except ValueError: j = {}

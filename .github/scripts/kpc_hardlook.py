@@ -31,6 +31,7 @@ def load(p, d):
 def get_json(u, params):
     try:
         st, hd, body, final = M.get(u + '?' + urllib.parse.urlencode(params), accept='application/json', timeout=60)
+        if st in ('deferred', 'crawl-delay', 'rest', 'robots-unreadable'): return None, f'next run ({st})'   # A13: robots.txt not readable = next run   # Nov 3 (A4): not a failed try
         if not (isinstance(st, int) and st < 400 and body): return None, f'HTTP {st}'
         j = json.loads(body.decode('utf-8', 'replace'))
         return (None, f"error {j['error'].get('code')}: {str(j['error'].get('message'))[:80]}") if isinstance(j, dict) and j.get('error') else (j, '')
@@ -247,7 +248,7 @@ def main():
         if not ok and ref in PINS: v['lat'], v['lon'] = PINS[ref]
     Q = load(QF, {'about': 'Canada Hard Look rows (outside research) read back from the layer by chat 10\'s reader: one question per park for chat 11 (answer YES / NO / NOT SURE). GIS = candidate outline, PARCEL = candidate APPROXIMATE (agency parcels). R-G12 / R-G13 noted per row.', 'rows': {}}) or {}
     R = Q.setdefault('rows', {}); P = load(PT, {'about': 'R-G13: POTA pins that official sources show are typos (POTA pin never moved; Brandon reports to POTA if he wants).', 'rows': {}}) or {}
-    n = {'asked': 0, 'record found': 0, 'record not found': 0, 'layer did not answer': 0, 'no record id / name': 0, 'skipped (status)': 0}
+    n = {'asked': 0, 'record found': 0, 'record not found': 0, 'layer did not answer': 0, 'no record id / name': 0, 'skipped (status)': 0, 'next run (slow host)': 0}
     for ref in sorted(rows, key=lambda r: (rows[r].get('st') or '', r)):
         v = rows[ref]
         if time.time() - T0 > LIMIT: break
@@ -268,6 +269,8 @@ def main():
         if j is not None and not (j.get('features') or []) and not w.startswith('OBJECTID'):
             j2, err2 = name_words_query(base, re.split(r'[\s/,;(]', w.replace('UPPER(', ''))[0].rstrip(')'), v.get('name'))
             if j2 and j2.get('features'): j, w = j2, w + ' (then a name-word search)'
+        if j is None and err.startswith('next run'):   # Nov 3 (A4): slow host budget / Crawl-delay / host resting: asked again next run, no try counted
+            n['next run (slow host)'] += 1; continue
         if j is None:
             if re.match(r'HTTP 4|error 4', err) or 'robots' in err: q.update(read=TODAY, result=f'layer did not answer ({err})'); R[ref] = keep_old(R.get(ref), q)
             tries = int((R.get(ref) or {}).get('tries') or 0) + 1   # Nov 2: 47 rows were re-asked every chained run forever
