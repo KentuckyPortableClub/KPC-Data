@@ -32,6 +32,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
 | US-MT | 312 | 0 | 312 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | US-NV | 63 | 15 | 34 | 0 | 0 | 0 | 0 | 0 | 14 | 7 | 29 | 0 |
+| US-OR | 496 | 47 | 410 | 0 | 0 | 0 | 0 | 1 | 38 | 8 | 85 | 0 |
 | US-WA | 280 | 0 | 214 | 0 | 0 | 0 | 66 | 0 | 0 | 0 | 0 | 0 |
 | US-AK | 368 | 119 | 234 | 0 | 0 | 0 | 4 | 0 | 11 | 7 | 127 | 368 |
 | US-MI | 511 | 3 | 110 | 2 | 0 | 10 | 377 | 0 | 9 | 0 | 12 | 0 |
@@ -2151,6 +2152,126 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “rst served. This facility has seven campsites with tables and grills. Water and primitive restrooms are available. The camping limit is 7 da”
   - rules.fires = "fire rings and grills provided" · “campgrounds. Camping is allowed only in designated areas. Fires are permitted only in the fire rings and grills provided. Collection of fire”
   - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “other feature is prohibited. State and federal laws protect this area and its resources. Pets are welcome, but they must be kept on a leash ”
+
+## US-OR: 12 random samples (records with facts; seed = the date)
+
+- **Wallowa Lake State Park** (US-2863, state, status ok, 22 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=20)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - fees = "$10 per night, payable at the park | $10 fee | $7 per 1" · “pavement. Overflow parking is available for extra vehicles. Each additional vehicle costs $10 per night, payable at the park. For campers ar”
+  - hookups.electric = "some" · “serveamerica.com . Reservations required for yurt stays. Generator use is prohibited. 121 Full-hookup sites (36 pull-through) 88 tent sites ”
+  - hookups.sewer = true · “serveamerica.com . Reservations required for yurt stays. Generator use is prohibited. 121 Full-hookup sites (36 pull-through) 88 tent sites ”
+  - hookups.water = true · “serveamerica.com . Reservations required for yurt stays. Generator use is prohibited. 121 Full-hookup sites (36 pull-through) 88 tent sites ”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - map.date_how = "web page, no date in the link" · “link “hunting map for park properties””
+  - map.url = "https://stateparks.oregon.gov/index.cfm?do=v.page&amp;id=11 · “link “hunting map for park properties” -> https://stateparks.oregon.gov/index.cfm?do=v.page&amp;id=115”
+- **Devil's Lake State Recreation Area campground** (intake-US-9145, agency (outside research camping-us-oct31), status ok, 5 facts) · [oregonstateparks.reserveamerica.com](https://oregonstateparks.reserveamerica.com/)
+  - booking.how = "online: oregonstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://oregonstateparks.reserveamerica.com/memberSignInSig · “link “Sign In / Sign Up” -> https://oregonstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ler sites Group sites Horse sites Boat sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Beverly Beach State Park** (US-2813, state, status ok, 14 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=164)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = "some" · “shelters Welcome Center Yurt meeting hall Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code p”
+  - fees = "$10 fee to use the dump station" · “) Reservable picnic shelters Welcome Center Yurt meeting hall Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “to 6 months in advance at oregonstateparks.reserveamerica.com . 53 full-hook up sites 76 electrical sites with water (32 pull-through) 128 t”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 265-9278" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-265-9278 mdi-heart-outline You may also like South Beach State Park”
+  - reservable = true · “icnic area is a grassy spot protected from summer winds. The day-use area also contains a reservable group meeting yurt. Year-round Camping ”
+  - restrooms = "flush" · “p sites 76 electrical sites with water (32 pull-through) 128 tent sites with water nearby Flush toilets and showers 21 Yurts 3 seasonal grou”
+- **Cape Blanco State Park** (US-2818, state, status ok, 13 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=44)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = false · “d 24 vehicles) CLOSED Hiker/biker camp Firewood for sale Flush toilets and hot showers No dump station Universal Access: two sites and one c”
+  - hookups.electric = true · “advance at our partner site, oregonstateparks.reserveamerica.com . 4 full-hookup sites 52 electrical sites with water Four reservable standa”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 332-6774" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-332-6774 mdi-heart-outline You may also like Humbug Mountain State P”
+  - reservable = true · “accepted). The museum is not ADA accessible. Bring your Horse The horse camp offers eight reservable sites&mdash;six with dual corrals and t”
+  - restrooms = "flush" · “mp Group camp (up to 50 people and 24 vehicles) CLOSED Hiker/biker camp Firewood for sale Flush toilets and hot showers No dump station Univ”
+  - rules.pets = "pet-friendly" · “. 4 full-hookup sites 52 electrical sites with water Four reservable standard cabins (two pet-friendly; see our Pets in Parks FAQ for more i”
+- **Unity Lake State Recreation Area** (US-9154, state, status ok, 13 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=7)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = true · “in Parks FAQ for more info) Hot showers and flush toilets Hiker/biker camp ADA-accessible RV dump station Firewood and ice for sale Universa”
+  - hookups.electric = true · “al Camping Reservations for cabins and campsites available up to 6 months in advance . 35 electrical sites with water Two reservable cabins ”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 446-3470" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-446-3470 Current Conditions Directions Feedback Maps Access key maps”
+  - phone_hint = "(800) 551-6949" · “ng Apr 14 &ndash; Oct 22 mdi-cellphone Call for reservations: 800-452-5687 Call for info: 800-551-6949 Call for park info: 541-446-3470 Curr”
+  - reservable = true · “ns and campsites available up to 6 months in advance . 35 electrical sites with water Two reservable cabins (One pet-friendly; see our Pets ”
+  - restrooms = "flush" · “rvable cabins (One pet-friendly; see our Pets in Parks FAQ for more info) Hot showers and flush toilets Hiker/biker camp ADA-accessible RV d”
+- **LaPine State Park** (US-2839, state, status ok, 21 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=32)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - drinking_water = true · “ath to Big Tree beach. Please consider using a collapsible bucket that can be filled from water spigots on the edge of the main day-use area”
+  - dump_station = "some" · “see our Pets in Parks FAQ for more info) Hot showers and flush toilets Firewood for sale RV dump station (water turned off Oct 1- May 1) A f”
+  - features = "fire pit and a small grill" · “rooms and a swim beach (no lifeguard). A reservable picnic area features picnic tables, a fire pit and a small grill. This area closes in th”
+  - fees = "$10 fee to use the dump station" · “es, chairs, and a refrigerator/freezer. Heating is available. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “ce at oregonstateparks.reserveamerica.com . Reservations are required for cabin stays. 82 full-hookup sites (water turned off Oct 1- May 1) ”
+  - hookups.sewer = true · “ce at oregonstateparks.reserveamerica.com . Reservations are required for cabin stays. 82 full-hookup sites (water turned off Oct 1- May 1) ”
+  - hookups.water = true · “ce at oregonstateparks.reserveamerica.com . Reservations are required for cabin stays. 82 full-hookup sites (water turned off Oct 1- May 1) ”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+- **Carl G. Washburne Memorial State Park** (US-2820, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=85)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = true · “iker camp 2 yurts (one pet-friendly ) RESERVATIONS REQUIRED Flush toilets and hot showers RV dump station, located in the day-use area west ”
+  - hookups.electric = true · “ce. See our March 17 news release for details. The main campground features 55 sites with electrical and water hookups, and two yurts. Some ”
+  - hookups.sewer = true · “s are a short hike from the tent parking area and share a restroom with flush toilets. 50 full-hookup sites (electric, sewage, water) 5 elec”
+  - hookups.water = true · “ce. See our March 17 news release for details. The main campground features 55 sites with electrical and water hookups, and two yurts. Some ”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 547-3416" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-547-3416 mdi-heart-outline You may also like Alfred A. Loeb State Pa”
+  - reservable = "mixed" · “on Coast Trail ; backpackers can stop over in the campground's hiker/biker camp, which is first-come, first-served for those arriving on foo”
+- **The Cove Palisades State Park** (US-2857, state, status ok, 16 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=24)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = true · “ervable picnic shelter 21 reservable boat moorages at oregonstateparks.reserveamerica.com RV dump station (E Loop) Marine pump-out station, ”
+  - hookups.electric = true · “h Loop are open seasonally (March through October). The North Loop is open year-round. 91 electrical sites with water Flush toilets and hot ”
+  - hookups.sewer = true · “River Campground (A, B, C Loops) Open seasonally (May 9 through mid-Sep) A and C Loop: 87 full hookup sites B Loop: 93 tent sites with water”
+  - hookups.water = true · “River Campground (A, B, C Loops) Open seasonally (May 9 through mid-Sep) A and C Loop: 87 full hookup sites B Loop: 93 tent sites with water”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - reservable = true · “k Crooked River arm of the lake (25 people max in each site) Reservable picnic shelter 21 reservable boat moorages at oregonstateparks.reser”
+  - restrooms = "flush" · “March through October). The North Loop is open year-round. 91 electrical sites with water Flush toilets and hot showers Deschutes River Camp”
+- **Lake Owyhee State Park campground** (intake-US-2840, agency (outside research camping-us-oct31), status ok, 5 facts) · [oregonstateparks.reserveamerica.com](https://oregonstateparks.reserveamerica.com/)
+  - booking.how = "online: oregonstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://oregonstateparks.reserveamerica.com/memberSignInSig · “link “Sign In / Sign Up” -> https://oregonstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ler sites Group sites Horse sites Boat sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Ukiah-Dale Forest State Scenic Corridor campground (first-come, first-served)** (intake-US-11264, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.find)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - reservable = true · “te Beach State Recreation Site Day-use parking fee Ainsworth State Park Overnight camping Reserve a site at Ainsworth State Park Alderwood S”
+- **Fort Stevens State Park** (US-2829, state, status ok, 19 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = "some" · “e accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
+  - fees = "$10 fee to use the dump station" · “ins and 10 yurts are accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “arn more The campground is set to receive upgrades to the aging infrastructure, including utilities. The South Loops are currently closed wh”
+  - hookups.sewer = true · “months in advance at oregonstateparks.reserveamerica.com . Reservations are required. 174 full-hookup sites (36 pull-through) 302 electrical”
+  - hookups.water = true · “months in advance at oregonstateparks.reserveamerica.com . Reservations are required. 174 full-hookup sites (36 pull-through) 302 electrical”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(503) 861-2000" · “r tour information, call the Friends of Old Fort Stevens at 503-861-2000. 2025 construction update General obligation bonds approved”
+- **L.L. Stub Stewart State Park** (US-2838, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=75)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - checkin = "4 p.m" · “d in a cabin. When can we check-in to our campsite or cabin&#x3f; When is check-out&#x3f; Check-in is at 4 p.m. Check-out is at 1 p.m. for a”
+  - checkout = "1 p.m" · “we check-in to our campsite or cabin&#x3f; When is check-out&#x3f; Check-in is at 4 p.m. Check-out is at 1 p.m. for all reservations. If you”
+  - hookups.electric = "some" · “ote: Trails are multi-use and shared by equestrians, mountain bikers and hikers. Drive an electric vehicle? Three EV charging stations are a”
+  - hookups.sewer = "some" · “fits your style. The Dairy Creek Campground offers a typical camping experience with both full hook-up sites and non-hookup tent sites to ch”
+  - hookups.water = true · “fits your style. The Dairy Creek Campground offers a typical camping experience with both full hook-up sites and non-hookup tent sites to ch”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(503) 324-0606" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 503-324-0606 Current Conditions Directions Feedback Maps Access key maps”
 
 ## US-WA: 12 random samples (records with facts; seed = the date)
 

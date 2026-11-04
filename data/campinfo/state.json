@@ -502,6 +502,28 @@
    "status": "done",
    "updated": "2026-11-03"
   },
+  "US-OR": {
+   "camps": 504,
+   "checked": 496,
+   "counts": {
+    "camps": 496,
+    "needs_browser": 0,
+    "needs_key": 410,
+    "no_page": 0,
+    "not_official": 1,
+    "ok": 47,
+    "other": 38,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 85,
+    "with_elevation": 0,
+    "with_facts": 52,
+    "with_sites": 8
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-04"
+  },
   "US-SC": {
    "camps": 63,
    "checked": 63,
@@ -679,6 +701,7 @@
   "US-NV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-OK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-OR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-SC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-SD": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -894,6 +917,15 @@
     "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
    "read": "2026-11-03"
+  },
+  "US-OR": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-04"
   },
   "US-SC": {
    "cell": {
@@ -1913,12 +1945,12 @@
  },
  "last": {
   "areas": [
-   "US-NH"
+   "US-OR"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 78,
+   "dropped_queued": 503,
    "errors": 0,
    "for_person_urls": [
     [
@@ -1930,7 +1962,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 89,
+   "requests": 119,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -1938,16 +1970,16 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 2,
-   "camps": 79,
+   "browser": 25,
+   "camps": 504,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 24,
+   "needs_browser": 24,
+   "needs_key": 418,
    "no_page": 12,
-   "not_official": 0,
-   "ok": 43,
-   "pages_read": 83,
+   "not_official": 1,
+   "ok": 72,
+   "pages_read": 85,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
