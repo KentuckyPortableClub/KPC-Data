@@ -15,161 +15,213 @@
   "US-DE",
   "US-DC"
  ],
- "since": "2026-10-28",
- "date": "2026-10-29 01:02 UTC",
+ "since": "2026-11-04",
+ "date": "2026-11-04 23:53 UTC",
  "verdict": "STOPPED",
  "why": [
-  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 2576 of 11233 pairs whose boxes touch",
-  "US-NJ: pass1 not run in this run (stamp 2026-10-26, run started 2026-10-28)",
-  "water service: US-NJ: 18 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-DE: 2 rows not checked because the USGS water map did not answer (run the worker again)"
+  "missing check: 5790 of 12458 expected pairs were never looked at (46%; 2572 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5787); <park>: not in this run (another state, retired, or no POTA pin) (3)"
  ],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 112,
-  "DROPPED": 41,
-  "NEVER LOOKED AT": 12556
+  "FOUND": 719,
+  "DROPPED": 3377,
+  "NEVER LOOKED AT": 8362
+ },
+ "never_looked_at": {
+  "counted": 5790,
+  "no_official_outline": 2572,
+  "expected": 12458,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5787,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 3
+  }
  },
  "report": {
   "pass1": {
-   "date": "2026-10-28",
-   "pairs tested": 2576,
-   "pairs whose boxes touch": 11233,
-   "stopped for time": true
+   "date": "2026-11-04",
+   "pairs tested": 14892,
+   "pairs whose boxes touch": 14892
   },
   "pass2": {
-   "agree with the pass before": 389,
-   "date": "2026-10-28",
-   "pairs tested": 102
+   "agree with the pass before": 3302,
+   "date": "2026-11-04",
+   "pairs tested": 1331
   },
   "pass3": {
-   "agree with the pass before": 378,
-   "date": "2026-10-29",
-   "pairs tested": 100
+   "agree with the pass before": 2064,
+   "date": "2026-11-04",
+   "pairs tested": 1287
   },
   "pass5": {
-   "checked": 18,
-   "date": "2026-10-29",
+   "checked": 326,
+   "date": "2026-11-04",
    "pairs tested": 0,
-   "still not checked": 18
+   "still not checked": 0
   }
  },
+ "files": {
+  "US-PA": "data/fers/US-PA.json",
+  "US-NY": "data/fers/US-NY.json",
+  "US-NJ": "data/fers/US-NJ.json",
+  "US-CT": "data/fers/US-CT.json",
+  "US-RI": "data/fers/US-RI.json",
+  "US-MA": "data/fers/US-MA.json",
+  "US-VT": "data/fers/US-VT.json",
+  "US-NH": "data/fers/US-NH.json",
+  "US-ME": "data/fers/US-ME.json",
+  "US-MD": "data/fers/US-MD.json",
+  "US-DE": "data/fers/US-DE.json",
+  "US-DC": "data/fers/US-DC.json"
+ },
  "US-PA": {
-  "rows": 11,
-  "live": 0,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 11,
-  "merged": 0
- },
- "US-NY": {
-  "rows": 20,
-  "live": 12,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "low-confidence outline": 1
-  },
-  "dropped": 0,
-  "merged": 7
- },
- "US-NJ": {
-  "rows": 61,
-  "live": 1,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "water not checked": 18
-  },
-  "dropped": 15,
-  "merged": 27
- },
- "US-CT": {
-  "rows": 3,
-  "live": 2,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 1
- },
- "US-RI": {
-  "rows": 1,
-  "live": 1,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 0
- },
- "US-MA": {
-  "rows": 149,
-  "live": 2,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 147
- },
- "US-VT": {
-  "rows": 177,
-  "live": 54,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 41,
-  "merged": 82
- },
- "US-NH": {
-  "rows": 28,
-  "live": 2,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 26
- },
- "US-ME": {
-  "rows": 206,
-  "live": 36,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "no public owner on the ownership map": 3
-  },
-  "dropped": 67,
-  "merged": 100
- },
- "US-MD": {
-  "rows": 53,
-  "live": 11,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 42
- },
- "US-DE": {
-  "rows": 59,
-  "live": 3,
+  "rows": 1345,
+  "live": 222,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1,
-   "water not checked": 2
+   "this spot is 289 km from PA 086 State Game Land's POTA pin": 1,
+   "this spot is 118 km from PA 231 State Game Land's POTA pin": 1,
+   "this spot is 128 km from PA 326 State Game Land's POTA pin": 1
   },
-  "dropped": 1,
-  "merged": 52
+  "dropped": 714,
+  "merged": 405
  },
- "US-DC": {
-  "rows": 1,
-  "live": 1,
+ "US-NY": {
+  "rows": 485,
+  "live": 120,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 253,
+  "merged": 111
+ },
+ "US-NJ": {
+  "rows": 202,
+  "live": 38,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 0,
-  "merged": 0
- }
+  "dropped": 104,
+  "merged": 60
+ },
+ "US-CT": {
+  "rows": 100,
+  "live": 47,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 2,
+   "one record covers two parks": 1
+  },
+  "dropped": 17,
+  "merged": 33
+ },
+ "US-RI": {
+  "rows": 37,
+  "live": 10,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 23,
+  "merged": 3
+ },
+ "US-MA": {
+  "rows": 505,
+  "live": 85,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3,
+   "one record covers two parks": 1,
+   "low-confidence outline for Nashua River Rail Trail State Tra": 2
+  },
+  "dropped": 206,
+  "merged": 208
+ },
+ "US-VT": {
+  "rows": 103,
+  "live": 9,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 62,
+  "merged": 31
+ },
+ "US-NH": {
+  "rows": 151,
+  "live": 27,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 62,
+  "merged": 62
+ },
+ "US-ME": {
+  "rows": 41,
+  "live": 7,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of New Brunswick #15 Wildlife Managemen": 3,
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 17,
+  "merged": 11
+ },
+ "US-MD": {
+  "rows": 618,
+  "live": 154,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 7,
+   "one record covers two parks": 2
+  },
+  "dropped": 164,
+  "merged": 291
+ },
+ "US-DE": {
+  "rows": 273,
+  "live": 36,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 12,
+   "one record covers two parks": 1
+  },
+  "dropped": 70,
+  "merged": 154
+ },
+ "US-DC": {
+  "rows": 32,
+  "live": 19,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 3,
+  "merged": 10
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-PA",
+  "US-NY",
+  "US-NJ",
+  "US-CT",
+  "US-RI",
+  "US-MA",
+  "US-VT",
+  "US-NH",
+  "US-ME",
+  "US-MD",
+  "US-DE",
+  "US-DC"
+ ]
 }
