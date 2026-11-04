@@ -215,7 +215,7 @@ def trusted_kinds(items):
         # but a NO still ends it
         if ok and (NO_CHANGE.search(v) or AUTO_GRADE.search(str(it.get('by') or '') + ' ' + str(it.get('checked_by') or ''))): continue
         hist.setdefault(k, []).append(ok)
-    return {k for k, h in hist.items() if k in TRUST_KINDS and len(h) >= TRUST_RUN and all(h[-TRUST_RUN:])}
+    return {k for k, h in hist.items() if k in TRUST_KINDS and k not in getattr(W, 'NEVER_AUTO', set()) and len(h) >= TRUST_RUN and all(h[-TRUST_RUN:])}   # Nov 4 review: never the pile solver
 
 
 def auto_trusted(items, log):

@@ -1,0 +1,770 @@
+{
+ "note": "Frozen Nov 4 2026 from KPC-Links d9c258ee7 (pile + keys) and KPC-Data main. The US-6275 web answers are TEST geometry (a square 7 km from the pin), not the real outline: the first GitHub run with FREEZE=tests/fixtures/pile_solver/live saves the real records, and the real expected verdict is written here after grading.",
+ "layers": {
+  "sgtnh": [
+   "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Non_State_Park_Natural_Areas_June_2023/FeatureServer/10/query",
+   "NaturalAreaName",
+   "Tennessee Natural Areas (TDEC, non-state-park natural areas) (preserve, state GIS table)"
+  ],
+  "sgtne": [
+   "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Tennessee_State_and_Federal_Lands_WFL1/FeatureServer/49/query",
+   "NAME",
+   "Tennessee Wildlife Resources Agency lands, published by TN Dept of Environment and Conservation (TDEC AGOL org) in Tennessee State and Federal Lands map (wild, state GIS table)"
+  ],
+  "sginc": [
+   "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0/query",
+   "unitname",
+   "Indiana DNR + INHD (all managed lands) (land, state GIS table)"
+  ],
+  "sgneb": [
+   "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268/query",
+   "AreaName",
+   "NGPC (owner NGPC.GISAdmin) (land, state GIS table)"
+  ]
+ },
+ "responses": {
+  "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Non_State_Park_Natural_Areas_June_2023/FeatureServer/10/query?f=json&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=17&outFields=%2A&outSR=4326&returnGeometry=true": {
+   "features": [
+    {
+     "attributes": {
+      "OBJECTID": 17,
+      "NaturalAreaName": "Walls of Jericho State Natural Area"
+     },
+     "geometry": {
+      "rings": [
+       [
+        [
+         -86.065,
+         35.0634
+        ],
+        [
+         -86.045,
+         35.0634
+        ],
+        [
+         -86.045,
+         35.083400000000005
+        ],
+        [
+         -86.065,
+         35.083400000000005
+        ],
+        [
+         -86.065,
+         35.0634
+        ]
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer?f=json": {
+   "layers": [
+    {
+     "id": 0,
+     "name": "States"
+    },
+    {
+     "id": 1,
+     "name": "Counties"
+    }
+   ]
+  },
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?f=json&geometry=%7B%22rings%22%3A%5B%5B%5B-86.065%2C35.0634%5D%2C%5B-86.045%2C35.0634%5D%2C%5B-86.045%2C35.0834%5D%2C%5B-86.065%2C35.0834%5D%2C%5B-86.065%2C35.0634%5D%2C%5B-86.065%2C35.0634%5D%5D%5D%7D&geometryType=esriGeometryPolygon&inSR=4326&outFields=GEOID%2CNAME%2CSTATE&returnGeometry=false&spatialRel=esriSpatialRelIntersects": {
+   "features": [
+    {
+     "attributes": {
+      "GEOID": "47051",
+      "NAME": "Franklin County",
+      "STATE": "47"
+     }
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?f=json&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=255681&outFields=%2A&outSR=4326&returnGeometry=true": {
+   "features": [
+    {
+     "attributes": {
+      "OBJECTID": 255681,
+      "Unit_Nm": "Walls of Jericho Designated State Natural Area",
+      "Mang_Name": "SDNR",
+      "Category": "Fee",
+      "GIS_Acres": 740
+     },
+     "geometry": {
+      "rings": [
+       [
+        [
+         -86.065,
+         35.0634
+        ],
+        [
+         -86.045,
+         35.0634
+        ],
+        [
+         -86.045,
+         35.083400000000005
+        ],
+        [
+         -86.065,
+         35.083400000000005
+        ],
+        [
+         -86.065,
+         35.0634
+        ]
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?f=json&geometry=-86.055%2C35.0004&geometryType=esriGeometryPoint&inSR=4326&outFields=GEOID%2CNAME%2CSTATE&returnGeometry=false&spatialRel=esriSpatialRelIntersects": {
+   "features": [
+    {
+     "attributes": {
+      "GEOID": "47051",
+      "NAME": "Franklin County",
+      "STATE": "47"
+     }
+    }
+   ]
+  },
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?f=json&geometry=-86.055%2C34.99&geometryType=esriGeometryPoint&inSR=4326&outFields=GEOID%2CNAME%2CSTATE&returnGeometry=false&spatialRel=esriSpatialRelIntersects": {
+   "features": [
+    {
+     "attributes": {
+      "GEOID": "01071",
+      "NAME": "Jackson County",
+      "STATE": "01"
+     }
+    }
+   ]
+  }
+ },
+ "cases": [
+  {
+   "name": "US-13614 Kirkpatrick Basin North WMA: rule 18 -> NEEDS-PERSON",
+   "pile": {
+    "park": "US-13614",
+    "area": "US-NE",
+    "name": "Kirkpatrick Basin North Wildlife Management Area",
+    "type": "Wildlife Management Area",
+    "flags": "RULE18_PIECE",
+    "why": "rule 18: the joined record may be another piece: 215872 Kirkpatrick Basin Wildlife Management Area (rule 18: 'north' names only one piece); 215762 Kirkpatrick Basin Wildlife Management Area (rule 18: 'north' names only one piece); 215873 Kirkpatrick Basin Wildlife Management Area (rule 18: 'north' names only one piece)",
+    "ids": [
+     "216213",
+     "sgneb161",
+     "215872",
+     "215762"
+    ],
+    "lat": "40.829",
+    "lon": "-97.6552",
+    "action": "RULE 18: check the piece (flag only, not held; Brandon 7:26 PM CST Nov 3, relayed)"
+   },
+   "key": {
+    "ac": 501,
+    "c": [],
+    "far": "edge",
+    "g": "official",
+    "m": [
+     [
+      216213,
+      "Kirkpatrick Basin North Wildlife Management Area",
+      396,
+      "name"
+     ],
+     [
+      "sgneb161",
+      "Kirkpatrick Basin North WMA",
+      396,
+      "reviewed"
+     ],
+     [
+      215872,
+      "Kirkpatrick Basin Wildlife Management Area",
+      230,
+      "name"
+     ],
+     [
+      215762,
+      "Kirkpatrick Basin Wildlife Management Area",
+      95,
+      "name"
+     ],
+     [
+      215873,
+      "Kirkpatrick Basin Wildlife Management Area",
+      79,
+      "name"
+     ],
+     [
+      215871,
+      "Kirkpatrick Basin North Wildlife Management Area",
+      40,
+      "name"
+     ],
+     [
+      215874,
+      "Kirkpatrick Basin Wildlife Management Area",
+      11,
+      "name"
+     ]
+    ],
+    "n": "Kirkpatrick Basin North Wildlife Management Area",
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sgneb"
+    ],
+    "t": "Wildlife Management Area",
+    "twin": [
+     "216213"
+    ]
+   },
+   "want": "NEEDS-PERSON",
+   "online": false
+  },
+  {
+   "name": "US-12070 Garrett Lake State Fishing Lake vs Garrett Lake State Forest: kind -> NEEDS-PERSON",
+   "pile": {
+    "park": "US-12070",
+    "area": "US-TN",
+    "name": "Garrett Lake State Fishing Lake",
+    "type": "State Fishing Lake",
+    "flags": "WRONG_KIND",
+    "why": "layer kind: Garrett Lake State Forest is another kind of place than a State Fishing Lake",
+    "ids": [
+     "255799",
+     "sgtne271"
+    ],
+    "lat": "36.3298",
+    "lon": "-88.5491",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "ac": 226,
+    "c": [],
+    "g": "official",
+    "m": [
+     [
+      255799,
+      "Garrett Lake State Forest",
+      291,
+      "name"
+     ],
+     [
+      "sgtne271",
+      "Garrett Lake",
+      291,
+      "name"
+     ]
+    ],
+    "n": "Garrett Lake State Fishing Lake",
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sgtne"
+    ],
+    "t": "State Fishing Lake",
+    "twin": [
+     "255799"
+    ]
+   },
+   "want": "NEEDS-PERSON",
+   "online": false
+  },
+  {
+   "name": "US-5691 Raccoon Lake SRA vs Cecil M. Harden Lake: alias -> NEEDS-PERSON",
+   "pile": {
+    "park": "US-5691",
+    "area": "US-IN",
+    "name": "Raccoon Lake State Recreation Area",
+    "type": "State Recreation Area",
+    "flags": "NAME_MISMATCH",
+    "why": "joined record shares no real word with the park name: sginc3262 Cecil M. Harden Lake",
+    "ids": [
+     "201124",
+     "sginc3262"
+    ],
+    "lat": "39.7505",
+    "lon": "-87.0762",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "ac": 209,
+    "c": [],
+    "g": "official",
+    "m": [
+     [
+      201124,
+      "Raccoon Lake State Recreation Area",
+      197,
+      "name"
+     ],
+     [
+      "sginc3262",
+      "Cecil M. Harden Lake",
+      195,
+      "name"
+     ]
+    ],
+    "n": "Raccoon Lake State Recreation Area",
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sginc"
+    ],
+    "t": "State Recreation Area",
+    "twin": [
+     "201124"
+    ]
+   },
+   "want": "NEEDS-PERSON",
+   "online": false,
+   "never_join_on": "sginc3262"
+  },
+  {
+   "name": "US-10972 KEEP: untouched",
+   "pile": {
+    "park": "US-10972",
+    "area": "US-UT",
+    "name": "Beartrap Canyon BLM Wild and Scenic River",
+    "type": "BLM Wild and Scenic River",
+    "flags": "PIN_WAY_OUT",
+    "why": "the POTA pin is well outside the joined land",
+    "ids": [
+     "wbl301"
+    ],
+    "lat": "37.4309",
+    "lon": "-113.111",
+    "action": "KEEP (a person approved it; rule 22) - tell Brandon what the light check found"
+   },
+   "key": {
+    "c": [],
+    "far": "well outside",
+    "g": "official",
+    "m": [
+     [
+      "wbl301",
+      "Beartrap Canyon",
+      0,
+      "reviewed"
+     ]
+    ],
+    "n": "Beartrap Canyon BLM Wild and Scenic River",
+    "pin_may_be_wrong": 1,
+    "read": "2026-11-03",
+    "src": [
+     "wbl"
+    ],
+    "t": "BLM Wild and Scenic River"
+   },
+   "want": "UNTOUCHED",
+   "online": false
+  },
+  {
+   "name": "CA-2218 ASK BRANDON: untouched",
+   "pile": {
+    "park": "CA-2218",
+    "area": "CA-QC",
+    "name": "Rimouski Reserve Nature Reserve",
+    "type": "Nature Reserve",
+    "flags": "ASK_BRANDON",
+    "why": "ask Brandon: CA-2218 Rimouski Reserve Nature Reserve: the key record 'Réserve faunique de Rimouski' (Québec Réser:n-Réserve faunique de Rimouski) says 180,344 ac, but the saved outline data/canada-bounds/CA-2218.j",
+    "ids": [
+     "Québec Réser:n-Réserve faunique de Rimouski"
+    ],
+    "lat": "48.1781",
+    "lon": "-68.2098",
+    "action": "ASK BRANDON (DROPPED TO PIN by overrides; not held; proposal NOT applied until he answers): CA-2218 Rimouski Reserve Nature Reserve: the key record 'Réserve faunique de Rimouski' (Québec Réser:n-Réserve faunique de Rimouski) says 180,344 ac, but the saved outline data/canada-bounds/CA-2218.json draws only 195 ac, so the saved outline is suspect (it is probably one small piece). Rebuild the outline from the record, or check it by hand? Quality (Nov 3 grade): the record is a wildlife reserve (réserve faunique), another kind, so the hand join (Oct 25, on main) is probably wrong. Dropped to pin; restore it? PROPOSED: nothing is changed: the saved outline stays, flagged, until a person answers (Mapping's lean: rebuild it from the official record on a normal CA fill run)"
+   },
+   "key": {
+    "c": [],
+    "far": "edge",
+    "g": "official",
+    "m": [
+     [
+      "Québec Réser:n-Réserve faunique de Rimouski",
+      "Réserve faunique de Rimouski",
+      180344,
+      "reviewed"
+     ]
+    ],
+    "n": "Rimouski Reserve Nature Reserve",
+    "t": "Nature Reserve"
+   },
+   "want": "UNTOUCHED",
+   "online": false
+  },
+  {
+   "name": "DE-0001 broken row: grouped finding",
+   "pile": {
+    "park": "DE-0001",
+    "area": "DE",
+    "name": "Berchtesgaden National Park",
+    "type": "National Park",
+    "flags": "PIN_WAY_OUT BROKEN_ROW MISNAMED",
+    "why": "the POTA pin is well outside the joined land | joined row with no id (Berchtesgaden) | joined row with no id (Berchtesgadener Land) | joined row with no id (Nationalpark Berchtesgaden) | joined row with no id (Nationalpark Berchtesgaden) | POTA spells the name differently from the agency record (same place): None Berchtesgadener Land",
+    "ids": [
+     "None",
+     "None",
+     "None",
+     "None"
+    ],
+    "lat": "47.5528",
+    "lon": "12.9176",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "c": [],
+    "far": "well outside",
+    "m": [
+     [
+      null,
+      "Berchtesgaden",
+      "BfN Nationalparke",
+      "name"
+     ],
+     [
+      null,
+      "Berchtesgadener Land",
+      "BfN Biosphaerenreservate",
+      "name"
+     ],
+     [
+      null,
+      "Nationalpark Berchtesgaden",
+      "BfN Fauna_Flora_Habitat_Gebiete",
+      "name"
+     ],
+     [
+      null,
+      "Nationalpark Berchtesgaden",
+      "BfN Vogelschutzgebiete",
+      "name"
+     ]
+    ],
+    "n": "Berchtesgaden National Park",
+    "t": "National Park"
+   },
+   "want": "NEEDS-PERSON",
+   "online": false
+  },
+  {
+   "name": "US-5691 with a Quality YES on the sheet: still solved, not untouched",
+   "pile": {
+    "park": "US-5691",
+    "area": "US-IN",
+    "name": "Raccoon Lake State Recreation Area",
+    "type": "State Recreation Area",
+    "flags": "NAME_MISMATCH",
+    "why": "joined record shares no real word with the park name: sginc3262 Cecil M. Harden Lake",
+    "ids": [
+     "201124",
+     "sginc3262"
+    ],
+    "lat": "39.7505",
+    "lon": "-87.0762",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "ac": 209,
+    "c": [],
+    "g": "official",
+    "m": [
+     [
+      201124,
+      "Raccoon Lake State Recreation Area",
+      197,
+      "name"
+     ],
+     [
+      "sginc3262",
+      "Cecil M. Harden Lake",
+      195,
+      "name"
+     ]
+    ],
+    "n": "Raccoon Lake State Recreation Area",
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sginc"
+    ],
+    "t": "State Recreation Area",
+    "twin": [
+     "201124"
+    ]
+   },
+   "want": "NEEDS-PERSON",
+   "online": false,
+   "sheet": [
+    {
+     "ref": "US-5691",
+     "status": "YES",
+     "record_name": "Cecil M. Harden Lake",
+     "approved_by": "chat 11 (Quality)",
+     "approved_date": "2026-11-03"
+    },
+    {
+     "ref": "US-5691",
+     "status": "YES",
+     "record_name": "Cecil M. Harden Lake",
+     "approved_by": "Brandon",
+     "approved_date": "2026-11-02",
+     "note": "8:50 AM CST"
+    }
+   ]
+  },
+  {
+   "name": "US-5691 with Brandon YES Nov 3: untouched (a person decided)",
+   "pile": {
+    "park": "US-5691",
+    "area": "US-IN",
+    "name": "Raccoon Lake State Recreation Area",
+    "type": "State Recreation Area",
+    "flags": "NAME_MISMATCH",
+    "why": "joined record shares no real word with the park name: sginc3262 Cecil M. Harden Lake",
+    "ids": [
+     "201124",
+     "sginc3262"
+    ],
+    "lat": "39.7505",
+    "lon": "-87.0762",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "ac": 209,
+    "c": [],
+    "g": "official",
+    "m": [
+     [
+      201124,
+      "Raccoon Lake State Recreation Area",
+      197,
+      "name"
+     ],
+     [
+      "sginc3262",
+      "Cecil M. Harden Lake",
+      195,
+      "name"
+     ]
+    ],
+    "n": "Raccoon Lake State Recreation Area",
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sginc"
+    ],
+    "t": "State Recreation Area",
+    "twin": [
+     "201124"
+    ]
+   },
+   "want": "UNTOUCHED",
+   "online": false,
+   "sheet": [
+    {
+     "ref": "US-5691",
+     "status": "YES",
+     "record_name": "Cecil M. Harden Lake",
+     "approved_by": "KZ4CP",
+     "approved_date": "2026-11-03"
+    }
+   ]
+  },
+  {
+   "name": "Lac Nord-Est vs Lac Nord: pile, then NEEDS-PERSON",
+   "pile": {
+    "park": "XX-0001",
+    "area": "XX",
+    "name": "Lac Nord-Est",
+    "type": "",
+    "flags": "RULE18_PIECE",
+    "why": "test row",
+    "ids": [
+     "t1"
+    ],
+    "lat": "47.86",
+    "lon": "5.33",
+    "action": "RULE 18: check the piece"
+   },
+   "key": {
+    "m": [
+     [
+      "t1",
+      "Lac Nord",
+      10,
+      "name"
+     ]
+    ],
+    "n": "Lac Nord-Est"
+   },
+   "want": "NEEDS-PERSON",
+   "online": false
+  },
+  {
+   "name": "Langres Nord vs Langres (secteur Nord): pile, then NEEDS-PERSON",
+   "pile": {
+    "park": "XX-0002",
+    "area": "XX",
+    "name": "Langres Nord",
+    "type": "",
+    "flags": "RULE18_PIECE",
+    "why": "test row",
+    "ids": [
+     "t1"
+    ],
+    "lat": "47.86",
+    "lon": "5.33",
+    "action": "RULE 18: check the piece"
+   },
+   "key": {
+    "m": [
+     [
+      "t1",
+      "Langres (secteur Nord)",
+      10,
+      "name"
+     ]
+    ],
+    "n": "Langres Nord"
+   },
+   "want": "NEEDS-PERSON",
+   "online": false
+  },
+  {
+   "name": "US-6275 Walls of Jericho (TEST geometry, 7 km out): name + same county -> SOLVED-JOIN + flag (rule 3)",
+   "pile": {
+    "park": "US-6275",
+    "area": "US-TN",
+    "name": "Walls of Jericho State Natural Area",
+    "type": "State Natural Area",
+    "flags": "PIN_WAY_OUT",
+    "why": "the POTA pin is well outside the joined land",
+    "ids": [
+     "sgtnh17",
+     "255681"
+    ],
+    "lat": "35.0004",
+    "lon": "-86.055",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "ac": 458,
+    "c": [],
+    "far": "well outside",
+    "g": "official",
+    "m": [
+     [
+      "sgtnh17",
+      "Walls of Jericho State Natural Area",
+      753,
+      "name"
+     ],
+     [
+      255681,
+      "Walls of Jericho Designated State Natural Area",
+      740,
+      "name"
+     ]
+    ],
+    "n": "Walls of Jericho State Natural Area",
+    "pin_may_be_wrong": 1,
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sgtnh"
+    ],
+    "t": "State Natural Area",
+    "twin": [
+     "255681"
+    ]
+   },
+   "override": {
+    "no": [
+     "sgtni153"
+    ],
+    "nofp": {
+     "sgtni153": [
+      "Walls Of Jericho SNA",
+      779.5
+     ]
+    },
+    "when": "2026-11-02",
+    "why": "Nov 2 map audit: chat 11 NO on sgtni153 (NO (chat 11, Nov 2, pattern OUTSIDE/FAR): PIN. The name differs from t)"
+   },
+   "want": "SOLVED-JOIN",
+   "want_flag": "POTA pin may be off",
+   "online": true
+  },
+  {
+   "name": "US-6275 Walls of Jericho (TEST geometry, pin moved into Jackson Co. AL): county does not back -> NEEDS-PERSON",
+   "pile": {
+    "park": "US-6275",
+    "area": "US-TN",
+    "name": "Walls of Jericho State Natural Area",
+    "type": "State Natural Area",
+    "flags": "PIN_WAY_OUT",
+    "why": "the POTA pin is well outside the joined land",
+    "ids": [
+     "sgtnh17",
+     "255681"
+    ],
+    "lat": "34.99",
+    "lon": "-86.055",
+    "action": "HOLD: drop from the key until a person looks (Brandon Nov 3 5:30 PM)"
+   },
+   "key": {
+    "ac": 458,
+    "c": [],
+    "far": "well outside",
+    "g": "official",
+    "m": [
+     [
+      "sgtnh17",
+      "Walls of Jericho State Natural Area",
+      753,
+      "name"
+     ],
+     [
+      255681,
+      "Walls of Jericho Designated State Natural Area",
+      740,
+      "name"
+     ]
+    ],
+    "n": "Walls of Jericho State Natural Area",
+    "pin_may_be_wrong": 1,
+    "read": "2026-11-03",
+    "src": [
+     "PAD-US",
+     "sgtnh"
+    ],
+    "t": "State Natural Area",
+    "twin": [
+     "255681"
+    ]
+   },
+   "override": {
+    "no": [
+     "sgtni153"
+    ],
+    "nofp": {
+     "sgtni153": [
+      "Walls Of Jericho SNA",
+      779.5
+     ]
+    },
+    "when": "2026-11-02",
+    "why": "Nov 2 map audit: chat 11 NO on sgtni153 (NO (chat 11, Nov 2, pattern OUTSIDE/FAR): PIN. The name differs from t)"
+   },
+   "want": "NEEDS-PERSON",
+   "online": true
+  }
+ ]
+}
