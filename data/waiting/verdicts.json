@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T09:21Z",
+ "checked": "2026-11-04T09:24Z",
  "switched_on": false,
  "results": [
   {
@@ -84,6 +84,17 @@
     "no live copy: first time this file is published"
    ],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-AR.json",
+   "kind": "campinfo",
+   "why": [
+    "F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
   },
   {
    "path": "data/campinfo/US-DE.json",
@@ -298,11 +309,9 @@
   {
    "path": "data/docs/US-IN.json",
    "kind": "docs",
-   "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/wilbur_wright.pdf"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-KS.json",
@@ -547,11 +556,9 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [
-    "F-D3 11 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=PERSHING%"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WV.json",
