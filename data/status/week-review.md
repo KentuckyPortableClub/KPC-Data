@@ -6,7 +6,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 | key | official | approximate | pin | official change this week |
 |---|---|---|---|---|
-| US | 11,199 | 434 | 1,474 | +231 |
+| US | 11,197 | 428 | 1,482 | +229 |
 | Canada | 4,367 | 39 | 1,495 | +115 |
 | World | 39,741 | 0 | 17,780 | -276 |
 
@@ -30,7 +30,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 ## Layers
 
-- intake: ASK-THE-PUBLISHER 421, LIVE-ONLY 5, READY 2, REJECT 1657, RETRY 367, WATER-ONLY 41, approved 2; queue 2143
+- intake: ASK-THE-PUBLISHER 421, LIVE-ONLY 5, READY 2, REJECT 1658, RETRY 367, WATER-ONLY 41, approved 2; queue 2146
 - layer collector: asked 661, failed 196, evidence 9, no match 1402, no hit 222297, UNLIKELY 21621, LIKELY 6404, SURE 1092; GIS finders found 150 layers
 
 ## Coverage
