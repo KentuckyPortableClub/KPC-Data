@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T22:08Z",
+ "checked": "2026-11-04T22:57Z",
  "switched_on": false,
  "results": [
   {
@@ -11,6 +11,13 @@
   },
   {
    "path": "data/ca-key/CA-BC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-MB.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -73,7 +80,21 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/ca-key/CA-SI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/ca-key/CA-SK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-SP.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2129,7 +2150,65 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/AS.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/AT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/BE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/BM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/BS.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 32 -> 0 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/world-key/BT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/BW.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/BZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CC.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2143,7 +2222,28 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/CG.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CH.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/CL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CM.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2157,7 +2257,95 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/CV.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 35 -> 0 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/world-key/CX.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CZ.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 232 -> 215 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/world-key/DE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/DK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/DO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/EC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/EE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/ES.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/FI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/FO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/FR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GA.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2171,11 +2359,62 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/GE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/GR.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GU.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/HR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/HU.json",
+   "kind": "key",
+   "why": [
+    "F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/ID.json",
@@ -2185,7 +2424,37 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/IE.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 175 -> 168 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/world-key/IM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/IT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/JE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/JP.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2207,6 +2476,41 @@
   },
   {
    "path": "data/world-key/LR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LU.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LV.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MP.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2236,12 +2540,77 @@
   {
    "path": "data/world-key/NC.json",
    "kind": "key",
+   "why": [
+    "F-O1 outlines 24 -> 0 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/world-key/NF.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NO.json",
+   "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/NZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/OM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/PA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/PE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/PF.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/PL.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2255,7 +2624,86 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/PT.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 335 -> 327 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/world-key/PY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/QA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/RO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/RW.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/SE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/SI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/SJ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/SK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/SV.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/UM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/UY.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2270,29 +2718,6 @@
   },
   {
    "path": "data/world-key/ZA.json",
-   "kind": "key",
-   "why": [
-    "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/ca-key/CA-MB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SP.json",
    "kind": "key",
    "why": [],
    "notes": [],
