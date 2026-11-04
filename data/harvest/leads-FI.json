@@ -3,7 +3,9 @@
  "cc": "FI",
  "date": "2026-11-04",
  "status": "paused (out of time, will carry on)",
- "steps_done": [],
+ "steps_done": [
+  "known"
+ ],
  "bands": {
   "A": 0,
   "B": 2,
@@ -22,6 +24,15 @@
    "step": "known",
    "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
    "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+   "found": false
   }
  ],
  "leads": {
@@ -959,76 +970,64 @@
      "name_field": "Nimi"
     },
     {
-     "id": 1,
-     "name": "Luontodirektiivi (SAC, SAC/SPA)",
+     "id": 12,
+     "name": "Arvokkaat moreenimuodostumat",
      "geom": "Polygon",
      "gap": "outline",
      "is": "known-good layer (chat 8)",
      "fields": [
-      "OBJECTID_1",
+      "OBJECTID",
       "Shape",
-      "objectid",
-      "naturatunn",
-      "suojeluper",
-      "versiotunn",
-      "nimisuomi",
-      "nimiruotsi",
-      "aluetyyppi",
-      "tietolomak",
-      "paatospvm",
-      "paatospala",
-      "paatospitu",
-      "meripalapr",
-      "paatosasia",
-      "ensisijlaj",
-      "aluejaviiv",
-      "vpdsuoj",
-      "lisatieto",
-      "luontipvm"
+      "MuodTunnus",
+      "Luokka",
+      "MuodTyyppi",
+      "ArvoLuokka",
+      "Nimi",
+      "DigOrg",
+      "Linkki",
+      "MuutosPvm",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
      ],
-     "records": 1642,
+     "records": 607,
      "sample": [
-      "Nuuksio",
-      "Petkelsuo",
-      "Päivärinteen laidun"
+      "Vellinginmäki",
+      "Vehkaniemenmäki",
+      "Sillantaussuon kumpumoreenialue"
      ],
-     "name_field": "nimisuomi"
+     "name_field": "Nimi"
     },
     {
-     "id": 2,
-     "name": "Lintudirektiivi (SPA, SAC/SPA)",
+     "id": 13,
+     "name": "Arvokkaat tuuli- ja rantakerrostumat",
      "geom": "Polygon",
      "gap": "outline",
      "is": "known-good layer (chat 8)",
      "fields": [
-      "OBJECTID_1",
+      "OBJECTID",
       "Shape",
-      "objectid",
-      "naturatunn",
-      "suojeluper",
-      "versiotunn",
-      "nimisuomi",
-      "nimiruotsi",
-      "aluetyyppi",
-      "tietolomak",
-      "paatospvm",
-      "paatospala",
-      "paatospitu",
-      "meripalapr",
-      "paatosasia",
-      "ensisijlaj",
-      "aluejaviiv",
-      "vpdsuoj",
-      "lisatieto",
-      "luontipvm"
+      "MuodTunnus",
+      "Nimi",
+      "Luokka",
+      "MuodTyyppi",
+      "ArvoLuokka",
+      "DigOrg",
+      "Linkki",
+      "MuutosPvm",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
      ],
-     "records": 458,
+     "records": 417,
      "sample": [
-      "Tammisaaren ja Hangon saariston ja Pohjanpitäjänla",
-      "Läppträsket",
-      "Inkoon saaristo"
+      "Ahvenjärven dyynit",
+      "Sompanen",
+      "Tuuliharju"
      ],
-     "name_field": "nimisuomi"
+     "name_field": "Nimi"
     }
    ],
    "note": "known-good service",

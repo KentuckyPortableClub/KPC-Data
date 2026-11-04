@@ -698,117 +698,6 @@
       "area_ha",
       "cod_aie",
       "nome_aie",
-      "shape",
-      "st_area(shape)",
-      "st_length(shape)"
-     ],
-     "records": 859,
-     "sample": [
-      "Sul da Albufeira Cimeira",
-      "Norte da Albufeira Cimeira",
-      "Ribeira de Fervenaa"
-     ],
-     "name_field": "nome_espec"
-    },
-    {
-     "id": 7,
-     "name": "Regimes de Proteção",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "known-good layer (chat 8)",
-     "fields": [
-      "objectid",
-      "poap",
-      "rp",
-      "prot_poap",
-      "tipo_area",
-      "protecao",
-      "nome_espec",
-      "area_ha",
-      "shape",
-      "st_area(shape)",
-      "st_length(shape)"
-     ],
-     "records": 9756,
-     "sample": [
-      "Acesso ao litoral",
-      "Acesso ao litoral",
-      "Acesso ao litoral"
-     ],
-     "name_field": "nome_espec"
-    },
-    {
-     "id": 8,
-     "name": "Matriz",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "known-good layer (chat 8)",
-     "fields": [
-      "objectid",
-      "prot_poap",
-      "tipo",
-      "regime",
-      "sigla_regime",
-      "sigla_poap",
-      "regime_poap",
-      "ativ1",
-      "ativ2",
-      "ativ3",
-      "ativ4",
-      "ativ5",
-      "ativ6",
-      "ativ7",
-      "ativ8",
-      "ativ9",
-      "ativ10",
-      "ativ11",
-      "ativ12",
-      "ativ13"
-     ],
-     "records": 135
-    },
-    {
-     "id": 9,
-     "name": "Atividades",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "known-good layer (chat 8)",
-     "fields": [
-      "objectid",
-      "sigla_poap",
-      "nomeap",
-      "autoriza",
-      "atividade",
-      "id",
-      "shape",
-      "st_area(shape)",
-      "st_length(shape)",
-      "autoriza_designacao",
-      "autoriza_legenda"
-     ],
-     "records": 884,
-     "sample": [
-      "Parque Natural da Arrábida",
-      "Parque Natural da Arrábida",
-      "Não aplicável"
-     ],
-     "name_field": "nomeap"
-    },
-    {
-     "id": 5,
-     "name": "Áreas de Intervenção Específica",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "known-good layer (chat 8)",
-     "fields": [
-      "objectid",
-      "poap",
-      "tipo_area",
-      "protecao",
-      "nome_espec",
-      "area_ha",
-      "cod_aie",
-      "nome_aie",
       "Shape__Area",
       "Shape__Length"
      ],
@@ -912,6 +801,117 @@
       "id",
       "Shape__Area",
       "Shape__Length",
+      "autoriza_designacao",
+      "autoriza_legenda"
+     ],
+     "records": 884,
+     "sample": [
+      "Parque Natural da Arrábida",
+      "Parque Natural da Arrábida",
+      "Não aplicável"
+     ],
+     "name_field": "nomeap"
+    },
+    {
+     "id": 5,
+     "name": "Áreas de Intervenção Específica",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "poap",
+      "tipo_area",
+      "protecao",
+      "nome_espec",
+      "area_ha",
+      "cod_aie",
+      "nome_aie",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)"
+     ],
+     "records": 859,
+     "sample": [
+      "Sul da Albufeira Cimeira",
+      "Norte da Albufeira Cimeira",
+      "Ribeira de Fervenaa"
+     ],
+     "name_field": "nome_espec"
+    },
+    {
+     "id": 7,
+     "name": "Regimes de Proteção",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "poap",
+      "rp",
+      "prot_poap",
+      "tipo_area",
+      "protecao",
+      "nome_espec",
+      "area_ha",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)"
+     ],
+     "records": 9756,
+     "sample": [
+      "Acesso ao litoral",
+      "Acesso ao litoral",
+      "Acesso ao litoral"
+     ],
+     "name_field": "nome_espec"
+    },
+    {
+     "id": 8,
+     "name": "Matriz",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "prot_poap",
+      "tipo",
+      "regime",
+      "sigla_regime",
+      "sigla_poap",
+      "regime_poap",
+      "ativ1",
+      "ativ2",
+      "ativ3",
+      "ativ4",
+      "ativ5",
+      "ativ6",
+      "ativ7",
+      "ativ8",
+      "ativ9",
+      "ativ10",
+      "ativ11",
+      "ativ12",
+      "ativ13"
+     ],
+     "records": 135
+    },
+    {
+     "id": 9,
+     "name": "Atividades",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "sigla_poap",
+      "nomeap",
+      "autoriza",
+      "atividade",
+      "id",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)",
       "autoriza_designacao",
       "autoriza_legenda"
      ],
@@ -7929,7 +7929,7 @@
       "Shape__Area",
       "Shape__Length"
      ],
-     "records": 741
+     "records": 743
     },
     {
      "id": 0,
@@ -7979,7 +7979,7 @@
       "Shape__Area",
       "Shape__Length"
      ],
-     "records": 741
+     "records": 743
     },
     {
      "id": 0,
@@ -13403,6 +13403,31 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Espécies invasoras - IFN",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "objectid",
+      "id_parcela",
+      "nutsii",
+      "nutsiii",
+      "op_mancha",
+      "nome",
+      "abundancia",
+      "abundanc_1"
+     ],
+     "records": 1429,
+     "sample": [
+      "Figueira-da-Índia",
+      "Piteira",
+      "Acácias"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "Espécies invasoras - IFN",
