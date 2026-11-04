@@ -298404,6 +298404,372 @@
    "kind": "Parks",
    "result": "no hit",
    "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "US-11165|https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21": {
+   "ref": "US-11165",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "same name, different kind (battlefield recreation vs natural)",
+   "record_name": "Chalk Bluff Natural Area",
+   "acres": 55
+  },
+  "US-7816|https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0": {
+   "ref": "US-7816",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared henry, lake; extra: park airstrip / record -",
+   "record_name": "Henrys Lake ",
+   "acres": 35617
+  },
+  "US-7821|https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0": {
+   "ref": "US-7821",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared magic, reservoir; extra: park airstrip / record -",
+   "record_name": "Magic Reservoir",
+   "acres": 21175
+  },
+  "US-11699|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-11699",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared fen, savage; extra: park sna / record -; R-G12: pin 6 m outside the record (road / entrance)",
+   "record_name": "Savage Fen",
+   "acres": 286
+  },
+  "US-11700|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-11700",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared wolsfeld; extra: park sna / record -; R-G12: pin 25 m outside the record (road / entrance)",
+   "record_name": "Wolsfeld Woods",
+   "acres": 217
+  },
+  "US-11701|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-11701",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared rill; extra: park sna / record -",
+   "record_name": "Wood-Rill",
+   "acres": 145
+  },
+  "US-13561|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13561",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared highland, vermillion; extra: park - / record research",
+   "record_name": "Vermillion Highlands Research Recreation and WMA",
+   "acres": 2821
+  },
+  "US-13631|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13631",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Winter WMA",
+   "acres": 539
+  },
+  "US-13632|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13632",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Two Rivers WMA",
+   "acres": 722
+  },
+  "US-13633|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13633",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Talcot Lake WMA",
+   "acres": 5289
+  },
+  "US-13634|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13634",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Sodus WMA",
+   "acres": 749
+  },
+  "US-13635|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13635",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Phyllis Voosen WMA",
+   "acres": 959
+  },
+  "US-13636|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13636",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Lyons WMA",
+   "acres": 565
+  },
+  "US-13637|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13637",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Lamberton WMA",
+   "acres": 1353
+  },
+  "US-13638|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13638",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Lake Maria WMA",
+   "acres": 947
+  },
+  "US-13639|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13639",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Hopeful WMA",
+   "acres": 585
+  },
+  "US-13640|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13640",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Hole-In-Mountain WMA",
+   "acres": 635
+  },
+  "US-13641|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13641",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Green Valley WMA",
+   "acres": 782
+  },
+  "US-13642|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13642",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Fenmont WMA",
+   "acres": 516
+  },
+  "US-13643|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13643",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Coon Creek WMA",
+   "acres": 1099
+  },
+  "US-13644|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13644",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Cedar Rock WMA",
+   "acres": 649
+  },
+  "US-13645|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13645",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Budolfson WMA",
+   "acres": 613
+  },
+  "US-13646|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13646",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Bohemian WMA",
+   "acres": 647
+  },
+  "US-13647|https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0": {
+   "ref": "US-13647",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (management wildlife)",
+   "record_name": "Badger Lake WMA",
+   "acres": 535
+  },
+  "US-10479|https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9": {
+   "ref": "US-10479",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "same name, different kind (blm management recreation vs campground)",
+   "record_name": "Oasis Campground",
+   "acres": 4
+  },
+  "US-10476|https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0": {
+   "ref": "US-10476",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no proper name to compare",
+   "record_name": "Monument Park",
+   "acres": 6
+  },
+  "US-12064|https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3": {
+   "ref": "US-12064",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared henderson, swamp; extra: park wilderness / record -; R-G12: pin 46 m outside the record (road / entrance)",
+   "record_name": "Henderson Swamp",
+   "acres": 23
+  },
+  "US-7618|https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3": {
+   "ref": "US-7618",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared rankin; extra: park - / record bottom; R-G12: pin 14 m outside the record (road / entrance)",
+   "record_name": "Rankin Bottom WMA",
+   "acres": 706
+  },
+  "US-13516|https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0": {
+   "ref": "US-13516",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared horseshoe, lake; extra: park kitsap / record -",
+   "record_name": "Horseshoe Lake",
+   "acres": 1
+  },
+  "US-8666|https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0": {
+   "ref": "US-8666",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared lake, terrell; extra: park whatcom / record -",
+   "record_name": "Lake Terrell",
+   "acres": 1160
+  },
+  "US-12830|https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1": {
+   "ref": "US-12830",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (heritage)",
+   "record_name": "Old Ruby State Park Heritage Site",
+   "acres": 4
+  },
+  "US-3181|https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1": {
+   "ref": "US-3181",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name",
+   "record_name": "Doe Island State Park",
+   "acres": 9
+  },
+  "US-4246|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2": {
+   "ref": "US-4246",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name",
+   "record_name": "Whitefish Dunes",
+   "acres": 408
+  },
+  "US-4255|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2": {
+   "ref": "US-4255",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name",
+   "record_name": "Lodi Marsh",
+   "acres": 634
+  },
+  "US-8219|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2": {
+   "ref": "US-8219",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name; R-G12: pin 80 m outside the record (road / entrance)",
+   "record_name": "Jackson Marsh",
+   "acres": 580
+  },
+  "US-8667|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2": {
+   "ref": "US-8667",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (woods); R-G12: pin 8 m outside the record (road / entrance)",
+   "record_name": "Haskell Noyes Woods",
+   "acres": 60
+  },
+  "US-8668|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2": {
+   "ref": "US-8668",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name",
+   "record_name": "Waterloo Prairie",
+   "acres": 215
+  },
+  "US-11956|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0": {
+   "ref": "US-11956",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared pine, river; extra: park - / record system",
+   "record_name": "Pine River System Fishery Area",
+   "acres": 2053
+  },
+  "US-7260|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0": {
+   "ref": "US-7260",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared american, legion; extra: park highland, northern / record -",
+   "record_name": "American Legion State Forest",
+   "acres": 60542
+  },
+  "US-8217|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0": {
+   "ref": "US-8217",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared casey, lake; extra: park - / record sha, wpra",
+   "record_name": "Casey Lake SHA-WPRA",
+   "acres": 357
+  },
+  "US-9837|https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0": {
+   "ref": "US-9837",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared besadny; extra: park buzz / record -",
+   "record_name": "C.D. (Buzz) Besadny Fish And Wildlife Area",
+   "acres": 2714
+  },
+  "CA-3334|https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "ref": "CA-3334",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: answer 400"
+  },
+  "CA-3493|https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "ref": "CA-3493",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: answer 400"
+  },
+  "CA-3960|https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "ref": "CA-3960",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: answer 400"
+  },
+  "CA-4233|https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "ref": "CA-4233",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: answer 400"
+  },
+  "CA-5546|https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "ref": "CA-5546",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: answer 400"
+  },
+  "CA-2912|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6": {
+   "ref": "CA-2912",
+   "kind": "Parks",
+   "result": "UNLIKELY",
+   "why": "no shared proper word",
+   "record_name": "Jean Louis Legare Regional Park",
+   "acres": 276
   }
  },
  "layers": {
@@ -305247,7 +305613,7 @@
    "new_to_us": true,
    "host": "openmaps.gov.bc.ca",
    "error": "RuntimeError: answer 400",
-   "tries": 3
+   "tries": 4
   },
   "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29": {
    "new_to_us": false,
@@ -305305,22 +305671,36 @@
    "geometry": "esriGeometryPolygon",
    "title": "Properties - SVCA",
    "name_field": "PROPERTY_N"
+  },
+  "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0": {
+   "new_to_us": false,
+   "host": "gis.blm.gov",
+   "geometry": "esriGeometryPolygon",
+   "title": "BLM ID Recreation Area Poly",
+   "name_field": "FET_NAME"
+  },
+  "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0": {
+   "new_to_us": false,
+   "host": "maps.prd.state.or.us",
+   "geometry": "esriGeometryPolygon",
+   "title": "Oregon Parklands",
+   "name_field": "PARK_NAME"
   }
  },
  "summary": {
   "Canada Parks LIKELY": 146,
   "Canada Parks SURE": 726,
-  "Canada Parks UNLIKELY": 198,
-  "Canada Parks failed": 841,
+  "Canada Parks UNLIKELY": 199,
+  "Canada Parks failed": 846,
   "Canada Parks no hit": 789,
   "Canada Parks split": 21,
   "Canada Trail LIKELY": 7,
   "Canada Trail SURE": 16,
   "Canada Trail UNLIKELY": 12,
   "Canada Trail no hit": 2,
-  "US Parks LIKELY": 345,
-  "US Parks SURE": 3746,
-  "US Parks UNLIKELY": 692,
+  "US Parks LIKELY": 361,
+  "US Parks SURE": 3770,
+  "US Parks UNLIKELY": 693,
   "US Parks failed": 585,
   "US Parks no hit": 1267,
   "US Parks split": 109,
