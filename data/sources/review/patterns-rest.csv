@@ -1,0 +1,78 @@
+rank,country,reason,pattern,container,rows,treat_as,layers_examples
+1,BE,inside_other_land,Pin inside a different-name area (rule 5),,190,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+1,BE,inside_other_land,Cluster: many parks inside one container record,,42,Grouped finding,EEA Natura 2000
+1,BE,inside_other_land,Many parks inside one container,Schelde- en Durmeëstuarium van de Nederlandse grens tot Gent [EEA Natura 2000],13,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+1,BE,inside_other_land,Many parks inside one container,Bossen van de Vlaamse Ardennen en andere Zuidvlaamse bossen [EEA Natura 2000],12,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+1,BE,inside_other_land,Many parks inside one container,Duingebieden inclusief Ijzermonding en Zwin [EEA Natura 2000],6,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+1,BE,name_mismatch,Candidate name is longer than POTA name,,18,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+1,BE,name_mismatch,Candidate is the core of a longer POTA name,,10,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+1,BE,name_mismatch,Different name – alias or wrong place,,8,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+1,BE,name_mismatch,Partly similar – check alias,,5,Grouped finding,EEA nationally designated areas
+1,BE,rule18_doubt,"Same name, more than one kind/piece of area in the layer",,5,Grouped finding,EEA nationally designated areas
+2,FI,inside_other_land,Pin inside a different-name area (rule 5),,23,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+2,FI,inside_other_land,Name overlaps the container – re-check as name_mismatch,,19,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+2,FI,name_mismatch,"Same name once type words, accents and case are dropped",,127,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+2,FI,name_mismatch,Spelling / accent / typo variant,,8,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+2,FI,name_mismatch,Partly similar – check alias,,6,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+2,FI,name_mismatch,Candidate name is longer than POTA name,,6,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+2,FI,rule18_doubt,"Same name, more than one kind/piece of area in the layer",,10,Grouped finding,EEA nationally designated areas
+3,HU,inside_other_land,Pin inside a different-name area (rule 5),,59,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+3,HU,inside_other_land,Cluster: many parks inside one container record,,27,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+3,HU,inside_other_land,Many parks inside one container,Északi-Bakony [EEA Natura 2000],8,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+3,HU,inside_other_land,Many parks inside one container,Keleti-Bakony [EEA Natura 2000],8,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+3,HU,inside_other_land,Many parks inside one container,Vértes [EEA Natura 2000],6,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+3,HU,name_mismatch,Candidate is the core of a longer POTA name,,13,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+4,DK,inside_other_land,Pin inside a different-name area (rule 5),,68,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+5,GR,inside_other_land,Pin inside a different-name area (rule 5),,26,Grouped finding,"Greece: NECCA (Natural Environment & Climate Change Agency), Greece"
+5,GR,name_mismatch,"Same name once type words, accents and case are dropped",,20,Grouped finding,"Greece: NECCA (Natural Environment & Climate Change Agency), Greece"
+5,GR,name_mismatch,Spelling / accent / typo variant,,17,Grouped finding,"Greece: NECCA (Natural Environment & Climate Change Agency), Greece"
+5,GR,name_mismatch,Different name – alias or wrong place,,7,Grouped finding,"Greece: NECCA (Natural Environment & Climate Change Agency), Greece"
+5,GR,name_mismatch,Partly similar – check alias,,5,Grouped finding,"Greece: NECCA (Natural Environment & Climate Change Agency), Greece"
+6,ID,inside_other_land,Pin inside a different-name area (rule 5),,51,Grouped finding,Indonesia: Badan Informasi Geospasial (BIG)
+6,ID,inside_other_land,Many parks inside one container,Hutan Lindung [Indonesia: Badan Informasi Geospasial (BIG)],24,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+6,ID,inside_other_land,Many parks inside one container,Areal Penggunaan Lain [Indonesia: Badan Informasi Geospasial (BIG)],11,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+6,ID,inside_other_land,Cluster: many parks inside one container record,,7,Grouped finding,Indonesia: Badan Informasi Geospasial (BIG)
+6,ID,name_mismatch,Candidate name is longer than POTA name,,13,Grouped finding,Indonesia: Badan Informasi Geospasial (BIG)
+7,CL,inside_other_land,Pin inside a different-name area (rule 5),,42,Grouped finding,"Chile SIMBIO protected areas, layer 2 (MMA); Chile SIMBIO protected areas (MMA)"
+7,CL,inside_other_land,Cluster: many parks inside one container record,,11,Grouped finding,"Chile SIMBIO protected areas, layer 2 (MMA)"
+7,CL,inside_other_land,Many parks inside one container,"Contrafuerte Cordillerano [Chile SIMBIO protected areas, layer 2 (MMA)]",6,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+7,CL,inside_other_land,Many parks inside one container,"Red de Humedales Costeros de la Región de Coquimbo [Chile SIMBIO protected areas, layer 2 (MMA)]",5,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+7,CL,name_mismatch,Candidate name is longer than POTA name,,8,Grouped finding,"Chile SIMBIO protected areas (MMA); Chile SIMBIO protected areas, layer 2 (MMA)"
+7,CL,name_mismatch,Candidate is the core of a longer POTA name,,5,Grouped finding,"Chile SIMBIO protected areas, layer 2 (MMA); Chile SIMBIO protected areas (MMA)"
+8,IE,inside_other_land,Pin inside a different-name area (rule 5),,46,Grouped finding,EEA Natura 2000
+8,IE,inside_other_land,Cluster: many parks inside one container record,,5,Grouped finding,EEA Natura 2000
+8,IE,inside_other_land,Many parks inside one container,Lower River Shannon SAC [EEA Natura 2000],5,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+8,IE,name_mismatch,Candidate name is longer than POTA name,,7,Grouped finding,EEA Natura 2000
+9,MX,inside_other_land,Pin inside a different-name area (rule 5),,30,Grouped finding,Mexico: CONANP / SEMARNAT (federal protected areas)
+9,MX,inside_other_land,Name overlaps the container – re-check as name_mismatch,,8,Grouped finding,Mexico: CONANP / SEMARNAT (federal protected areas)
+9,MX,name_mismatch,"Same name once type words, accents and case are dropped",,13,Grouped finding,Mexico: CONANP / SEMARNAT (federal protected areas)
+9,MX,name_mismatch,Candidate name is longer than POTA name,,5,Grouped finding,Mexico: CONANP / SEMARNAT (federal protected areas)
+10,CO,inside_other_land,Pin inside a different-name area (rule 5),,20,Grouped finding,"Colombia RUNAP (national register of protected areas, DNP)"
+10,CO,name_mismatch,"Same name once type words, accents and case are dropped",,17,Grouped finding,"Colombia RUNAP (national register of protected areas, DNP)"
+10,CO,name_mismatch,Candidate name is longer than POTA name,,13,Grouped finding,"Colombia RUNAP (national register of protected areas, DNP)"
+11,EE,inside_other_land,Pin inside a different-name area (rule 5),,30,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+11,EE,inside_other_land,Cluster: many parks inside one container record,,13,Grouped finding,EEA Natura 2000
+11,EE,inside_other_land,Many parks inside one container,Väinamere [EEA Natura 2000],8,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+11,EE,inside_other_land,Many parks inside one container,Põhja-Kõrvemaa [EEA Natura 2000],5,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+11,EE,name_mismatch,Candidate is the core of a longer POTA name,,6,Grouped finding,EEA Natura 2000
+12,NZ,inside_other_land,Pin inside a different-name area (rule 5),,9,Grouped finding,"New Zealand: Department of Conservation (DOC), New Zealand"
+12,NZ,inside_other_land,Name overlaps the container – re-check as name_mismatch,,5,Grouped finding,"New Zealand: Department of Conservation (DOC), New Zealand"
+12,NZ,name_mismatch,Candidate name is longer than POTA name,,15,Grouped finding,"New Zealand: Department of Conservation (DOC), New Zealand"
+13,SK,inside_other_land,Pin inside a different-name area (rule 5),,11,Grouped finding,EEA Natura 2000; EEA nationally designated areas
+13,SK,rule18_doubt,"Same name, more than one kind/piece of area in the layer",,10,Grouped finding,EEA nationally designated areas
+14,ZA,inside_other_land,Pin inside a different-name area (rule 5),,12,Grouped finding,"South Africa protected areas (DPME, from DFFE SAPAD)"
+14,ZA,name_mismatch,Candidate name is longer than POTA name,,6,Grouped finding,"South Africa protected areas (DPME, from DFFE SAPAD)"
+15,PR,inside_other_land,Pin inside a different-name area (rule 5),,5,Grouped finding,"Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot"
+15,PR,name_mismatch,Different name – alias or wrong place,,7,Grouped finding,"Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot"
+16,CZ,name_mismatch,"Same name once type words, accents and case are dropped",,19,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+17,BZ,inside_other_land,Cluster: many parks inside one container record,,5,Grouped finding,Belize: Belize Forest Department / Ministry FFESD (layer owner sfm.manager_FFE
+17,BZ,inside_other_land,Many parks inside one container,Outside Protection [Belize: Belize Forest Department / Ministry FFESD (layer owner sfm.manager_FFE],5,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+17,BZ,name_mismatch,"Same name once type words, accents and case are dropped",,8,Grouped finding,Belize: Belize Forest Department / Ministry FFESD (layer owner sfm.manager_FFE
+18,DO,inside_other_land,Pin inside a different-name area (rule 5),,7,Grouped finding,Dominican Republic: Ministerio de Medio Ambiente y Recursos Naturales (SINAP) – layer host
+19,LK,inside_other_land,Name overlaps the container – re-check as name_mismatch,,10,Grouped finding,Sri Lanka: Survey Department / NSDI Sri Lanka
+20,AE,inside_other_land,Name overlaps the container – re-check as name_mismatch,,6,Grouped finding,"United Arab Emirates: Environment Agency – Abu Dhabi (EAD), via Abu Dhabi SDI Open Data"
+21,BS,inside_other_land,Cluster: many parks inside one container record,,5,Grouped finding,Bahamas: Bahamas National Trust (statutory manager of the national park system)
+21,BS,inside_other_land,Many parks inside one container,Southwest New Providence Marine Managed Area [Bahamas: Bahamas National Trust (statutory manager of the national park system)],5,Likely key-builder / layer pattern,Look at whether the container is an umbrella (e.g. Natura 2000 site) and the parks need a finer city/forest layer
+22,LT,inside_other_land,Pin inside a different-name area (rule 5),,9,Grouped finding,EEA nationally designated areas; EEA Natura 2000
+23,SJ,inside_other_land,Name overlaps the container – re-check as name_mismatch,,7,Grouped finding,Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase
+36,LU,override_no,Decided,,1,Left alone – Brandon's NO,Vallée de la Haute-Sûre
