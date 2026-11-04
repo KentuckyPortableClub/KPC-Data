@@ -53,11 +53,11 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin +refs/heads/picture-maps:refs/remotes/origin/picture-maps && git worktree add -q --detach ../pm origin/picture-maps
           git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../out origin/tools-out
-          python3 .github/scripts/kpc_picture_prep.py ../pm ../links || echo "::error title=kpc_picture_prep.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_picture_prep.py ../pm ../links || { kpc_rc=$?; echo "::error title=kpc_picture_prep.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_picture_prep.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p ../out/picture-trace; [ "${{ inputs.fresh }}" != yes ] && [ -d ../out/picture-trace/traced ] && cp -r ../out/picture-trace/traced ../pm/ 2>/dev/null; [ -d .pic_cache ] && cp -r .pic_cache ../pm/cache 2>/dev/null
-          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || echo "::warning title=install::an install step failed; the next steps may not work (exit $?)"   # Nov 2: pdftoppm (the sharp page) is not on GitHub's runner
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::an install step failed; the next steps may not work (exit $kpc_rc)"; echo "install - an install step failed; the next steps may not work (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 2: pdftoppm (the sharp page) is not on GitHub's runner
           pip install -q -r .github/scripts/draft/requirements.txt pypdf 2>&1 | tail -1
-          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || echo "::error title=kpc_picture_geo.py::stopped with an error (exit $?), see the log above"   # Nov 2 review: the sharp page (this run only, never saved) + GeoPDF coordinates
+          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || { kpc_rc=$?; echo "::error title=kpc_picture_geo.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_picture_geo.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 2 review: the sharp page (this run only, never saved) + GeoPDF coordinates
           set +e
           python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../pm --out ../pm/traced --resume --time-budget-min 45 > ../out/picture-trace/run-log.txt 2>&1
           E=$?; tail -12 ../out/picture-trace/run-log.txt
@@ -66,8 +66,8 @@ jobs:
           echo "::notice title=Picture tracer::exit $E; $S"
           ( [ "$E" = 3 ] || grep -q 'left for the next run' ../out/picture-trace/run-log.txt ) && echo "more=yes" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_status.py board 'Picture-map tracer (draft)' green "$(date -u +%F): $S" 'chat 11 grades tools-out picture-trace/ (approximate only, R-G9)' || true   # ok: a status-board line (reporting only)
-          ({ saved=0; for i in 1 2 3; do git add data/status && git commit -qm "board: picture tracer" && git pull -q --rebase origin main && git push -q origin HEAD:main && { saved=1; break; }; sleep 7; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
-          cd ../out && find picture-trace -size +20M -delete; git add -A picture-trace && git commit -qm "picture tracer (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }; } || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          ({ saved=0; for i in 1 2 3; do git add data/status && git commit -qm "board: picture tracer" && git pull -q --rebase origin main && git push -q origin HEAD:main && { saved=1; break; }; sleep 7; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          cd ../out && find picture-trace -size +20M -delete; git add -A picture-trace && git commit -qm "picture tracer (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }; } || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           true
       - name: Next run
         if: steps.r.outputs.more == 'yes'
@@ -81,7 +81,7 @@ jobs:
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-picture-trace.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-picture-trace.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           kpc_brake || exit 0
-          gh workflow run kpc-picture-trace.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          gh workflow run kpc-picture-trace.yml -R ${{ github.repository }} || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -93,6 +93,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

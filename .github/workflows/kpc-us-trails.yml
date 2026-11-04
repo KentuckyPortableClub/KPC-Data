@@ -26,7 +26,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay this repo's data over the checkout
-        run: touch /tmp/kpc-start; (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/trails) || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"; bash .github/scripts/kpc_overlay.sh kpcdata   # Oct 29 (chat 2 8:20 PM): start from the HELD files
+        run: touch /tmp/kpc-start; (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/trails) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; bash .github/scripts/kpc_overlay.sh kpcdata   # Oct 29 (chat 2 8:20 PM): start from the HELD files
       - name: Download and simplify the trail lines
         id: kept_green_1
         continue-on-error: true
@@ -36,8 +36,8 @@ jobs:
         run: |
           # Nov 1 (chat 2, Brandon: 'we are finding stuff but it never makes it in'): SURE line finds from the outside research
           # for trail parks still a pin go to the trail bot too (then the waiting room, chat 11, the key)
-          DATA=kpcdata python3 .github/scripts/kpc_finds_lines.py /tmp/finds-lines.json || echo "::error title=kpc_finds_lines.py::stopped with an error (exit $?), see the log above"
-          python3 .github/scripts/kpc_us_trails.py || echo "::error title=kpc_us_trails.py::stopped with an error (exit $?), see the log above"
+          DATA=kpcdata python3 .github/scripts/kpc_finds_lines.py /tmp/finds-lines.json || { kpc_rc=$?; echo "::error title=kpc_finds_lines.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_finds_lines.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/kpc_us_trails.py || { kpc_rc=$?; echo "::error title=kpc_us_trails.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_us_trails.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Show the results
         if: always()
         run: if [ -e /tmp/trails-log.txt ]; then while read -r l; do echo "::notice title=trails::$l"; done < <(tail -n 9 /tmp/trails-log.txt); fi
@@ -52,7 +52,7 @@ jobs:
           if [ -s /tmp/kpc-gate.txt ]; then IFS=$'\t' read -r G A N < /tmp/kpc-gate.txt
             if [ "$G" = PASS ]; then STATUS_DIR=kpcdata/data/status python3 kpcdata/.github/scripts/kpc_status.py grade-me "kpc_us_trails" "${A:-all}" "data/trails/" "$N"
             else STATUS_DIR=kpcdata/data/status python3 kpcdata/.github/scripts/kpc_status.py gate "kpc_us_trails" "${A:-all}" FAIL "$N"; fi; fi; true
-          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/trails) || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"   # Oct 29 (chat 2 8:20 PM): changed files wait in data/waiting/in/ for chat 11, the live ones stay
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/trails) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 29 (chat 2 8:20 PM): changed files wait in data/waiting/in/ for chat 11, the live ones stay
           bash .github/scripts/kpc_push_data.sh kpcdata "National trails: monthly refresh" data
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -65,6 +65,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

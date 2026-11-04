@@ -42,7 +42,7 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p ../out
           git fetch -q origin gps-packs 2>/dev/null && git --work-tree=../out checkout -q FETCH_HEAD -- . 2>/dev/null; git reset -q
-          python3 .github/scripts/kpc_gps_prep.py ../links ../prep || echo "::error title=kpc_gps_prep.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_gps_prep.py ../links ../prep || { kpc_rc=$?; echo "::error title=kpc_gps_prep.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_gps_prep.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           for d in parkinfo access; do mkdir -p ../prep/$d; for f in data/$d/US-*.json; do [ -e ../prep/$d/$(basename $f) ] || ln -s "$PWD/$f" ../prep/$d/; done; done
           AREAS=$(ls ../prep/parkinfo | sed -n 's/^\(US-[A-Z][A-Z]\)\.json$/\1/p' | sort -u | paste -sd, -)
           P=.github/scripts/draft/tools/kpc_gps/kpc_gpspacks/kpc_gpspacks.py
@@ -53,9 +53,9 @@ jobs:
           N=$(ls ../out/data/gps/*.gpx.zip 2>/dev/null | wc -l); MB=$(du -sm ../out/data/gps 2>/dev/null | cut -f1)
           echo "::notice title=GPS packs::exit $E; $N state packs, ${MB:-0} MB on branch gps-packs"
           python3 .github/scripts/kpc_status.py board 'GPS packs' green "$N state packs built $(date -u +%F) (${MB:-0} MB, branch gps-packs)" 'chat 3 links them on the site after Brandon GO' || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "GPS packs status" data/status 2>/dev/null || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "GPS packs status" data/status 2>/dev/null || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           cd ../out && rm -rf .git && git init -q -b gps-packs && git add -A && git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "GPS packs $(date -u +%F) (single commit, replaced each run)" \
-            && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" gps-packs || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+            && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" gps-packs || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -68,6 +68,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

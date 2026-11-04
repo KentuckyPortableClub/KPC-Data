@@ -59,8 +59,8 @@ jobs:
         continue-on-error: true
         run: |
           cd kpcdata
-          pip install -q -r $DR/kpc_fers_check/requirements.txt -r $DR/kpc_convert_layers/requirements.txt -r $DR/kpc_map_links/requirements.txt || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
-          case "$T" in *links*) python -m playwright install --with-deps chromium >/dev/null 2>&1 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work";; esac
+          pip install -q -r $DR/kpc_fers_check/requirements.txt -r $DR/kpc_convert_layers/requirements.txt -r $DR/kpc_map_links/requirements.txt || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          case "$T" in *links*) python -m playwright install --with-deps chromium >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; };; esac
       - name: The side branch for big outputs (tools-out, never main)
         id: kept_green_2
         continue-on-error: true
@@ -88,8 +88,8 @@ jobs:
         timeout-minutes: 55
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_outside_tools.py prep-convert "$TEST" /tmp/leads.json || echo "::error title=kpc_outside_tools.py::stopped with an error (exit $?), see the log above"
-          python3 $DR/kpc_convert_layers/kpc_convert_layers.py --leads /tmp/leads.json --out ../out/convert --cache .kpc_cache --max-minutes 50 --resume 2>&1 | tail -30; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_convert_layers.py::stopped with an error (exit $rc), see the log above"
+          python3 .github/scripts/kpc_outside_tools.py prep-convert "$TEST" /tmp/leads.json || { kpc_rc=$?; echo "::error title=kpc_outside_tools.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_outside_tools.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 $DR/kpc_convert_layers/kpc_convert_layers.py --leads /tmp/leads.json --out ../out/convert --cache .kpc_cache --max-minutes 50 --resume 2>&1 | tail -30; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_convert_layers.py::stopped with an error (exit $rc), see the log above"; echo "kpc_convert_layers.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           N=$(python3 -c "import json;print(len(json.load(open('/tmp/leads.json'))))" 2>/dev/null || echo 0)
           R=$(( $(wc -l < ../out/convert/report.csv 2>/dev/null || echo 1) - 1 ))
           echo "converter: $R of $N leads read"
@@ -101,19 +101,19 @@ jobs:
         timeout-minutes: 55
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_outside_tools.py prep-links "$TEST" ../out/links-in || echo "::error title=kpc_outside_tools.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_outside_tools.py prep-links "$TEST" ../out/links-in || { kpc_rc=$?; echo "::error title=kpc_outside_tools.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_outside_tools.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           set +e
           python3 $DR/kpc_map_links/kpc_map_links.py --agencies ../out/links-in/agency_pages.json --out ../out/links --resume --max-minutes 50 2>&1 | tail -30
           [ "${PIPESTATUS[0]}" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
-          python3 .github/scripts/kpc_outside_tools.py post-links ../out/links || echo "::error title=kpc_outside_tools.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_outside_tools.py post-links ../out/links || { kpc_rc=$?; echo "::error title=kpc_outside_tools.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_outside_tools.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save (review files on main, big outputs on tools-out)
         id: kept_green_3
         continue-on-error: true
         run: |
           cd kpcdata
-          ln -sfn ../out out 2>/dev/null; python3 .github/scripts/kpc_outside_tools.py summary || echo "::error title=kpc_outside_tools.py::stopped with an error (exit $?), see the log above"; rm -f out
-          cd ../out && git add -A && git commit -qm "outside tools: outputs (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
-          cd ../kpcdata && bash ../links/.github/scripts/kpc_push_data.sh . "outside tools (review only): 2-fer check / converter / map links" data/fers-check data/intake/tools data/intake/docs-found-maplinks.json data/intake/docs-found-maplinks-possible.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          ln -sfn ../out out 2>/dev/null; python3 .github/scripts/kpc_outside_tools.py summary || { kpc_rc=$?; echo "::error title=kpc_outside_tools.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_outside_tools.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; rm -f out
+          cd ../out && git add -A && git commit -qm "outside tools: outputs (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          cd ../kpcdata && bash ../links/.github/scripts/kpc_push_data.sh . "outside tools (review only): 2-fer check / converter / map links" data/fers-check data/intake/tools data/intake/docs-found-maplinks.json data/intake/docs-found-maplinks-possible.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Next run while work is left
         id: kept_green_4
         continue-on-error: true
@@ -122,7 +122,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cd kpcdata
-          gh workflow run kpc-outside-tools.yml -f tools="$T" -f test="$TEST" -f chain=$(( ${{ github.event.inputs.chain }} - 1 )) || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          gh workflow run kpc-outside-tools.yml -f tools="$T" -f test="$TEST" -f chain=$(( ${{ github.event.inputs.chain }} - 1 )) || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -134,6 +134,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

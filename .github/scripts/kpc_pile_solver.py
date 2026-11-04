@@ -19,6 +19,15 @@ THE RULES (handoff section 4 + Brandon's rulings; when in doubt NEEDS-PERSON, ne
   * Rule 18: a piece word on one side only, North / South Fork, Upper / Lower, Unit 2 / 3, and a compass word that is only inside the
     other name's bracket ('Langres Nord' vs 'Langres (secteur Nord)') = NEEDS-PERSON (a tract join needs a person's review, 18c).
     A bracketed place qualifier ('(Lewis County)') is not a piece.
+  * TWO-AGENCY RULE (Nov 4 PM fix bundle item 9; Brandon's yes relayed via Super Head Bot 4:53 PM CST): the same land under two
+    agencies (a state forest that is also a WMA): 'name match + right county or near the pin = a join WITH a flag, even when
+    agencies or kinds differ'. A record of another kind whose name is the park's (same or spelling) joins when every record holds
+    the pin / is within 100 m, or lies in the pin's county (then also 'POTA pin may be off'); the flag says 'two agencies / kinds:
+    ...' and names the agencies from the records' own manager fields (a layer label is never an agency). Another kind with
+    another name, or a lake park that may be the water only (rule 7), stays a person's call. These are PROPOSALS (SOLVED-JOIN
+    rows held in the waiting room for a person's grade), never a key change by the bot.
+    Fix bundle 2 (Quality must-fix, Nov 4): a piece code / number on one side only (Beenak G180 / G183, rule 18) and ANY Reservoir
+    record or water-only lake record (Kirwin, Pathfinder NWR, rule 7) never take the two-agency join: NEEDS-PERSON.
   * A different kind of place = NEEDS-PERSON; an agency alias = NEEDS-PERSON unless a counting person said YES to that exact name and
     the pin is inside; a small site (campground, boat ramp, dam...) stays a pin unless the agency has a record for the site itself; a
     park never takes the bigger place around it.
@@ -204,7 +213,28 @@ def bracket_compass(a, b):
     return ''
 
 
-def rule18(park, rec): return PC.rule18_differs(park, rec, False) or bracket_compass(park, rec)
+PIECE_CODE = re.compile(r'\b[A-Za-z]{1,2}\d{1,4}[A-Za-z]?\b')   # G180, K26, A12b; not bare numbers ('9 Mile', 'Natura 2000') nor
+#                                                                   7-digit Natura site codes (FR2300139): those are no piece sign
+
+
+def piece_code(a, b):
+    """Fix bundle 2 (Quality must-fix on fb09, Nov 4): a piece CODE (letters + digits) on one side only, or different codes on the two sides,
+    is another piece (rule 18): 'Beenak G180 Bushland Reserve' vs 'BEENAK STATE FOREST' (AU-4021), G180 vs G183 (AU-4022).
+    Place brackets ('(Lewis County)') are left out. When in doubt NEEDS-PERSON."""
+    ca = {w.upper() for w in PIECE_CODE.findall(strip_place(a))}; cb = {w.upper() for w in PIECE_CODE.findall(strip_place(b))}
+    if ca != cb: return f"rule 18: piece code '{' '.join(sorted(ca ^ cb))}' is not in both names ('{a}' vs '{b}')"
+    return ''
+
+
+def rule18(park, rec): return PC.rule18_differs(park, rec, False) or bracket_compass(park, rec) or piece_code(park, rec)
+
+
+def water_rec(name):
+    """Fix bundle 2 (Quality must-fix on fb09, Nov 4): a record that may be the WATER only (rule 7), whatever the park's name:
+    ANY record named a Reservoir (US-0292 Kirwin NWR -> 'Kirwin Reservoir', US-0614 Pathfinder NWR -> 'Pathfinder Reservoir'), or a
+    lake / pond record with no land kind ('Lake George Wild Forest' is land, not water)."""
+    n = strip_place(name)
+    return bool(re.search(r'\breservoir\b', n, re.I) or (LAKE_PARK.search(n) and not (PC.tags(n) - {'water'}) and not DET.classes(n)))
 
 
 def same_name(park, rec):
@@ -216,6 +246,21 @@ def kind_clash(ptype, pname, rec):
     k = PC.kind_ok(ptype or pname, rec)
     if k is False: return True
     return DET.judge_name(pname, rec) == 'different' and bool(DET.core_words(pname) & DET.core_words(rec))   # same words, unkindred kind
+
+
+MANAGER_KEY = re.compile(r'^(loc_mang|mang_name|manager|managed_?by|manag(?:ing|ement)_?agency|agency|agency_?name|admin_?agency|mgr_?name)$', re.I)
+
+
+def manager_of(attrs):
+    """Nov 4 fix bundle (item 9): the record's OWN manager field (PAD-US Loc_Mang, else Mang_Name; a state layer's manager /
+    agency field), or '' when the record has none. A layer's label is never an agency: PAD-US + the state's layer of ONE land
+    are two sources, not two agencies (US-6275 Walls of Jericho: SDNR + the TDEC natural-areas layer = one agency)."""
+    a = attrs or {}
+    for k in ('Loc_Mang', 'Mang_Name'):
+        if str(a.get(k) or '').strip(): return str(a[k]).strip()[:80]
+    for k, v in a.items():
+        if MANAGER_KEY.match(str(k)) and str(v or '').strip() and not str(v).strip().isdigit(): return str(v).strip()[:80]
+    return ''
 
 
 def kind_words(t): return ' '.join(sorted(PC.tags(t) | DET.classes(t))) or ''
@@ -374,11 +419,28 @@ def solve(p, F, ov, sheet):
                     f"and is there an official record for that piece alone", record_id=str(x[0]), record_name=x[1], question='tract')
     # 2. kind
     clash = [x for x in m if x[1] and kind_clash(ptype, pname, x[1])]
-    if clash:
-        x = clash[0]; water = bool(LAKE_PARK.search(pname) and any(LAKE_PARK.search(str(y[1])) and not PC.tags(y[1]) - {'water'} for y in m))
+    # TWO-AGENCY RULE (Nov 4 PM fix bundle item 9, Brandon's rule relayed via Super Head Bot 4:53 PM CST: 'name match + right county
+    # or near the pin = a join WITH a flag, even when agencies or kinds differ'; handoff rule 6: the same land under two agencies
+    # joins with both labelled). A record of another kind whose NAME matches the park's (same or spelling, kind words dropped) is not
+    # a stop here: after the records are read it joins only when it holds the pin / is within NEAR_M, or lies in the pin's county
+    # (rule 3), and the join always carries the flag 'two agencies / kinds: ...'. A record of another kind with another name, and a
+    # lake park that may be the water only (rule 7), stay the kind question for a person, as before.
+    water = bool(LAKE_PARK.search(pname) and any(LAKE_PARK.search(str(y[1])) and not PC.tags(y[1]) - {'water'} for y in m))
+    water = water or any(water_rec(y[1]) for y in clash)   # fix bundle 2: any Reservoir record, whatever the park name (rule 7)
+    two = bool(clash) and not water and all(same_name(pname, x[1]) in ('same', 'spelling') for x in clash)
+    if clash and not two:
+        x = clash[0]
         return done(row, 'NEEDS-PERSON', f"kind differs: '{pname}' ({ptype or 'park'}) vs the record '{x[1]}' ({x[0]}, {kind_words(x[1]) or 'other kind'})"
-                    + ('; a water-only lake outline is possible (rule 7)' if water else ''),
-                    "a person's call on the kind: is the park this record's land" + (", or only the lake water (labelled 'water only')" if water else ', or another record') + '?',
+                    + ('; a water-only (lake / reservoir) outline is possible (rule 7)' if water else ''),
+                    "a person's call on the kind: is the park this record's land" + (", or only the water (labelled 'water only')" if water else ', or another record') + '?',
+                    record_id=str(x[0]), record_name=x[1], kind_record=kind_words(x[1]))
+    # 2b. fix bundle 2 (Quality must-fix, Nov 4): a park with no lake / reservoir / pond word joined to ANY Reservoir record, or to a
+    # lake / pond record with no land kind, may be the water only (rule 7): a person's call, never a bot join (0 rows on the Nov 4 pile).
+    wet = [x for x in m if x[1] and water_rec(x[1])] if not LAKE_PARK.search(strip_place(pname)) else []
+    if wet:
+        x = wet[0]
+        return done(row, 'NEEDS-PERSON', f"the joined record '{x[1]}' ({x[0]}) may be the water only (rule 7), not the land of '{pname}'",
+                    "a person's call on the kind: is the park this record's land, or only the water (labelled 'water only')?",
                     record_id=str(x[0]), record_name=x[1], kind_record=kind_words(x[1]))
     # 3. small site (rule 9)
     if SMALL_SITE.search(pname) and not any(SMALL_SITE.search(str(x[1])) for x in m if x[1]):
@@ -419,9 +481,21 @@ def solve(p, F, ov, sheet):
     if any(r['r18'] for r in recs):
         r = next(r for r in recs if r['r18'])
         return done(row, 'NEEDS-PERSON', f"rule 18 on the live record name '{r['name']}': {r['r18']}", "a person's tract review (rule 18c)", rule18_note=r['r18'], question='tract')
-    if any(kind_clash(ptype, pname, r['name']) for r in recs if r['name']):
-        r = next(r for r in recs if r['name'] and kind_clash(ptype, pname, r['name']))
-        return done(row, 'NEEDS-PERSON', f"kind differs on the live record '{r['name']}'", "a person's call on the kind of place")
+    live_clash = [r for r in recs if r['name'] and kind_clash(ptype, pname, r['name'])]
+    agencies = sorted({a.lower(): a for a in (manager_of(r['attrs']) for r in recs) if a}.values(), key=str.lower)
+    dry_park = not LAKE_PARK.search(strip_place(pname))
+    wet = [r for r in recs if r['name'] and water_rec(r['name']) and (r in live_clash or dry_park)]
+    if wet:   # fix bundle 2: a Reservoir / water-only record never takes a bot join for a land park (rule 7)
+        return done(row, 'NEEDS-PERSON', f"the live record '{wet[0]['name']}' may be the water only (rule 7), not the park's land",
+                    "a person's call on the kind: is the park this record's land, or only the water (labelled 'water only')?")
+    two = bool(live_clash) and all(r['how'] in ('same', 'spelling') for r in live_clash)
+    if live_clash and not two:
+        r = next(r for r in live_clash if r['how'] not in ('same', 'spelling'))
+        return done(row, 'NEEDS-PERSON', f"kind differs on the live record '{r['name']}' and its name is not the park's", "a person's call on the kind of place")
+    two_flag = '; '.join(x for x in (
+        ('two agencies / kinds: the park is ' + (kind_words(ptype or pname) or 'a park') + ', '
+         + ', '.join(f"'{r['name']}' is {kind_words(r['name']) or 'another kind'}" for r in live_clash[:2])) if live_clash else '',
+        ('agencies: ' + ' + '.join(agencies)) if len(agencies) > 1 else '') if x)
     # an alias (no name match): only a counting YES to that exact name with the pin inside joins
     al = [r for r in recs if r['how'] == 'other']
     if al or alias:
@@ -443,8 +517,10 @@ def solve(p, F, ov, sheet):
         return done(row, 'NEEDS-PERSON', f"{len(recs)} record(s) read, but: " + '; '.join(errs[:3]), 'a person to open these record(s) by hand: ' + '; '.join(errs[:2]))
     far = [r for r in recs if r['d'] is None or r['d'] > NEAR_M]
     if not far:
-        return done(row, 'SOLVED-JOIN', f"name {best['how']}, same kind, pin inside or within {NEAR_M} m of every joined record (rule 1)"
-                    + (f"; dual agency: {row['agency']}" if len({r['agency'] for r in recs}) > 1 else ''))
+        return done(row, 'SOLVED-JOIN', (f"two-agency rule: name {best['how']} (the kind or agency differs), the pin inside or within {NEAR_M} m of every joined record" if two else
+                    f"name {best['how']}, same kind, pin inside or within {NEAR_M} m of every joined record (rule 1)")
+                    + (f"; dual agency: {row['agency']}" if len({r['agency'] for r in recs}) > 1 else ''), pin_flag=two_flag)
+    KIND_TXT = {True: 'kind or agency differs (two-agency rule)', False: 'same kind'}
     # rule 3 (Brandon's standing ruling): name match + pin in a county the outline is in = SOLVED-JOIN + flag, even past 5 km
     pin_c, cu = F.counties_at_pin(la, lo)
     if pin_c is None: return done(row, 'NEEDS-PERSON', f'the pin is {best["d"]} m from the outline and the county could not be checked: {cu}', 'the county of the pin and of the outline')
@@ -458,9 +534,9 @@ def solve(p, F, ov, sheet):
     if bad:
         return done(row, 'NEEDS-PERSON', f"the pin is {km} km from the outline and the county does not back the match: " + '; '.join(bad[:2]),
                     f"a person to say whether '{best['name']}' is {p['ref']} (pin {km} km out, other county), or report the POTA pin to POTA")
-    return done(row, 'SOLVED-JOIN', f"name {best['how']} ('{best['name']}'), same kind, and the pin is in {', '.join(v for v in pin_c.values() if v)} like the outline "
+    return done(row, 'SOLVED-JOIN', f"name {best['how']} ('{best['name']}'), {KIND_TXT[bool(two)]}, and the pin is in {', '.join(v for v in pin_c.values() if v)} like the outline "
                 f"(rule 3, Brandon's ruling) although it is {km} km out" + (' (more than 5 km)' if (best['d'] or 0) > FIVE_KM else ''),
-                pin_flag='POTA pin may be off')
+                pin_flag='; '.join(x for x in (two_flag, 'POTA pin may be off') if x))
 
 
 # ------------------------------------------------------------------ outputs
@@ -704,6 +780,73 @@ def selftest():
     check('never the bigger place around the park (rule 5)', solve(bp, OneRec(), {}, {})['verdict'] != 'SOLVED-JOIN', True)
     nb = dict(bp, ref='DE-0999', area='DE', flags={'PIN_WAY_OUT'}, why='the POTA pin is well outside the joined land', ids=['123'])
     check('a German row WITH an id is not the grouped finding (stops once links-10 fixes the ids)', solve(nb, None, {}, {}).get('pattern'), None)
+    # Nov 4 fix bundle (item 9): the two-agency rule (handoff rule 6; Brandon's yes relayed via Super Head Bot 4:53 PM CST)
+    class TwoRec:   # two records of one land by name, other kinds, from the agencies in MGR; the outline holds the pin unless far
+        def __init__(self, mgr, far=False, county=True): self.mgr, self.far, self.county, self.skipped = mgr, far, county, []
+        def record(self, rid, area='US-'):
+            box = [[-89.9, 39.0], [-89.8, 39.0], [-89.8, 39.1], [-89.9, 39.1], [-89.9, 39.0]] if self.far else [[-90.1, 38.9], [-89.9, 38.9], [-89.9, 39.1], [-90.1, 39.1], [-90.1, 38.9]]
+            nm = {'a1': 'Kaskaskia State Forest', 'b2': 'Kaskaskia State Fish and Wildlife Area'}[str(rid)]
+            return {'id': str(rid), 'name': nm, 'attrs': {'Loc_Mang': self.mgr[str(rid)]}, 'rings': [box], 'layer': PADUS, 'url': PADUS + '/query?f=json',
+                    'label': 'USGS PAD-US', 'family': 'padus', 'html': PADUS + '/query?f=html'}
+        def counties_at_pin(self, la, lo): return ({'17117': 'Macoupin'}, '') if self.county is not None else (None, 'test: no county layer')
+        def counties_of(self, rings): return ({'17117': 'Macoupin'} if self.county else {'17119': 'Madison'}), ''
+    kf = str(LINKS / 'data/us-key/US-IL.json')
+    KEYS[kf] = {'parks': {'US-9990': {'n': 'Kaskaskia State Forest', 't': 'State Forest',
+                                     'm': [['a1', 'Kaskaskia State Forest', 0, 'name'], ['b2', 'Kaskaskia State Fish and Wildlife Area', 0, 'name']]}}}
+    tp = dict(bp, ref='US-9990', area='US-IL', areas='US-IL', name='Kaskaskia State Forest', type='State Forest', ids=['a1', 'b2'], lat='39.0', lon='-90.0')
+    MG2, MG1 = {'a1': 'Illinois DNR Forestry', 'b2': 'Illinois DNR Wildlife'}, {'a1': 'Illinois DNR', 'b2': 'illinois dnr'}
+    fl = lambda r: (r['verdict'], r['pin_flag'].startswith('two agencies / kinds: '), 'agencies: Illinois DNR Forestry + Illinois DNR Wildlife' in r['pin_flag'],
+                    r['pin_flag'].endswith('POTA pin may be off'))
+    check('two agencies, name on both, pin inside both: SOLVED-JOIN with the flag', fl(solve(tp, TwoRec(MG2), {}, {})), ('SOLVED-JOIN', True, True, False))
+    check('two agencies, pin 10+ km out, right county: SOLVED-JOIN with both flags', fl(solve(tp, TwoRec(MG2, far=True), {}, {})), ('SOLVED-JOIN', True, True, True))
+    check('two agencies, pin out, other county: NEEDS-PERSON', solve(tp, TwoRec(MG2, far=True, county=False), {}, {})['verdict'], 'NEEDS-PERSON')
+    check('two agencies, pin out, county unreadable: NEEDS-PERSON', solve(tp, TwoRec(MG2, far=True, county=None), {}, {})['verdict'], 'NEEDS-PERSON')
+    r = solve(tp, TwoRec(MG1), {}, {})
+    check('ONE agency (two spellings of it), kinds differ, name on both: still a join WITH the kinds flag (even when kinds differ)',
+          (r['verdict'], r['pin_flag'].startswith('two agencies / kinds: '), 'agencies:' in r['pin_flag']), ('SOLVED-JOIN', True, False))
+    KEYS[kf]['parks']['US-9990']['m'] = KEYS[kf]['parks']['US-9990']['m'][1:]
+    check('a single record of another kind with the park name, pin inside: a join WITH the flag', fl(solve(dict(tp, ids=['b2']), TwoRec(MG2), {}, {}))[:2], ('SOLVED-JOIN', True))
+    check('the same, pin out and other county: NEEDS-PERSON', solve(dict(tp, ids=['b2']), TwoRec(MG2, far=True, county=False), {}, {})['verdict'], 'NEEDS-PERSON')
+    KEYS[kf]['parks']['US-9990']['m'] = [['a1', 'Kaskaskia State Forest', 0, 'name'], ['b2', 'Kaskaskia State Fish and Wildlife Area', 0, 'name']]
+    KEYS[kf]['parks']['US-9990']['m'][1][1] = 'Carlyle Lake Fish and Wildlife Area'
+    check('another name on one record: the kind question as before (no two-agency join)', solve(tp, TwoRec(MG2), {}, {})['verdict'], 'NEEDS-PERSON')
+    # Fix bundle 2 (Quality must-fix on fb09, Nov 4): rows that must NOT join (the 4 graded parks + generic ones). The fetcher puts
+    # the pin inside every record and in the same county, so only the rule-18 / rule-7 guards can stop the join.
+    class NamedRec:
+        def __init__(self, names): self.names, self.skipped = names, []
+        def record(self, rid, area='US-'):
+            return {'id': str(rid), 'name': self.names[str(rid)], 'attrs': {'Loc_Mang': 'Agency ' + str(rid)}, 'rings': [[[-120, 30], [-80, 30], [-80, 50], [-120, 50], [-120, 30]], ],
+                    'layer': PADUS, 'url': PADUS + '/query?f=json', 'label': 'test layer', 'family': 'padus', 'html': PADUS + '/query?f=html'}
+        def counties_at_pin(self, la, lo): return ({'1': 'Same'}, '')
+        def counties_of(self, rings): return ({'1': 'Same'}, '')
+    def case(ref, area, name, typ, recs, keyname=True):
+        KEYS.clear(); kp = {'n': name, 't': typ, 'm': [[i, (n if keyname else ''), 0, 'name'] for i, n in recs.items()]}
+        for f in (LINKS / f'data/us-key/{area}.json', DATA / f'data/world-key/{area}.json', DATA / f"data/world-key/{area.split('-')[0]}.json"): KEYS[str(f)] = {'parks': {ref: kp}}
+        r = solve(dict(bp, ref=ref, area=area, areas=area, name=name, type=typ, ids=list(recs), lat='40.0', lon='-100.0', flags={'WRONG_KIND'}), NamedRec(recs), {}, {})
+        return r['verdict'], r.get('question', ''), r['reason']
+    must_not = [
+        ('AU-4021 Beenak G180 Bushland Reserve vs BEENAK STATE FOREST (piece code, rule 18)', ('AU-4021', 'AU', 'Beenak G180 Bushland Reserve', 'Reserve', {'60563': 'BEENAK STATE FOREST'})),
+        ('AU-4022 Beenak G183 Bushland Reserve vs 3 x BEENAK STATE FOREST (piece code, rule 18)', ('AU-4022', 'AU', 'Beenak G183 Bushland Reserve', 'Reserve', {'14549': 'BEENAK STATE FOREST', '16807': 'BEENAK STATE FOREST', '52678': 'BEENAK STATE FOREST'})),
+        ('US-0292 Kirwin NWR vs Kirwin Reservoir (Reservoir record, rule 7)', ('US-0292', 'US-KS', 'Kirwin National Wildlife Refuge', 'National Wildlife Refuge', {'2329': 'Kirwin Reservoir'})),
+        ('US-0614 Pathfinder NWR vs 2 x Pathfinder Reservoir (Reservoir record, rule 7)', ('US-0614', 'US-WY', 'Pathfinder National Wildlife Refuge', 'National Wildlife Refuge', {'2340': 'Pathfinder Reservoir', '2240': 'Pathfinder Reservoir'})),
+        ('generic: G12 vs G13 piece codes, same kind', ('US-9991', 'US-IL', 'Foxglove G12 Nature Reserve', 'Nature Reserve', {'g13': 'Foxglove G13 Nature Reserve'})),
+        ('generic: a bare piece number on one side only', ('US-9992', 'US-IL', 'Foxglove Tract 4 State Forest', 'State Forest', {'t1': 'Foxglove Tract State Forest'})),
+        ('generic: a refuge vs a Reservoir wildlife area of its name (any Reservoir record)', ('US-9993', 'US-IL', 'Maple Creek National Wildlife Refuge', 'National Wildlife Refuge', {'w1': 'Maple Creek Reservoir Wildlife Area'})),
+        ('generic: a refuge vs a water-only lake record (rule 7, the park name has no lake word)', ('US-9994', 'US-IL', 'Smithfield National Wildlife Refuge', 'National Wildlife Refuge', {'l1': 'Smithfield Lake'})),
+        ('generic: the Reservoir name only on the LIVE record (key name blank)', ('US-9995', 'US-KS', 'Cedar Bluff National Wildlife Refuge', 'National Wildlife Refuge', {'c1': 'Cedar Bluff Reservoir'}, False)),
+    ]
+    for what, a in must_not:
+        v = case(*a)
+        check('must NOT join: ' + what, v[0], 'NEEDS-PERSON')
+    check('the Beenak rows go to the tract question (rule 18c)', [case(*a)[1] for _, a in must_not[:2]], ['tract', 'tract'])
+    check('the Kirwin / Pathfinder rows name the water-only question (rule 7)', ['water' in case(*a)[2] for _, a in must_not[2:4]], [True, True])
+    lg = case('US-10083', 'US-NY', 'Lake George Wild State Forest', 'State Forest', {'236339': 'Lake George Wild Forest', 'sgnya65966': 'Lake George Wild Forest'})
+    check('still joins (control): a lake-named FOREST record is land, not water (US-10083 Lake George)', lg[0], 'SOLVED-JOIN')
+    check('piece_code: same codes or none = no flag; a place bracket is not a piece', (piece_code('Abo G7 Reserve', 'ABO G7 RESERVE'), piece_code('Cabin Creek WMA', 'Cabin Creek WMA (Lewis County)')), ('', ''))
+    check('water_rec: any Reservoir record; a lake / pond record with no land kind; never a lake-named forest',
+          [water_rec(x) for x in ('Kirwin Reservoir', 'Pathfinder Reservoir Wildlife Area', 'Smithfield Lake', 'Lake George Wild Forest', 'Kaskaskia State Forest')], [True, True, True, False, False])
+    KEYS.clear()
+    check('a layer label is never an agency; PAD-US Loc_Mang first', (manager_of({}), manager_of({'Mang_Name': 'SDNR', 'Loc_Mang': 'TDEC'}), manager_of({'AGENCY': 'KDFWR', 'OBJECTID': 3})), ('', 'TDEC', 'KDFWR'))
     try:
         import kpc_waiting_room as WR
         good = {'parks': {'US-1': {'verdict': 'NEEDS-PERSON', 'answer_word': 'NOT SURE', 'whats_missing': 'a person'},

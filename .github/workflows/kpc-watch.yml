@@ -36,24 +36,24 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p cache/us cache/ca data/outline-leads
-          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
-          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           rm -f cache/us/prev-*.json.gz
-          python3 .github/scripts/kpc_near_miss.py || echo "::error title=kpc_near_miss.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_near_miss.py || { kpc_rc=$?; echo "::error title=kpc_near_miss.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_near_miss.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p kpcdata/data/outline-leads
           [ -f data/outline-leads/near-miss.json ] && cp data/outline-leads/near-miss.json kpcdata/data/outline-leads/ || true   # ok: nothing to do is fine
       - name: Observations log (the last day's changes)
         id: kept_green_2
         continue-on-error: true
         run: |
-          git fetch -q --shallow-since="2 days ago" origin HEAD || echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $?)"
+          git fetch -q --shallow-since="2 days ago" origin HEAD || { kpc_rc=$?; echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $kpc_rc)"; echo "git fetch - git could not fetch or merge the newest main (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           BASE=$(git rev-list -1 --before="25 hours ago" HEAD 2>/dev/null)
           [ -z "$BASE" ] && BASE=$(git rev-list --max-parents=0 HEAD 2>/dev/null | tail -1)
           [ -z "$BASE" ] && BASE=HEAD
           cp kpcdata/data/outline-leads/near-miss.json data/outline-leads/near-miss.json 2>/dev/null || true   # ok: nothing to do is fine
           git -C kpcdata fetch -q --shallow-since="2 days ago" origin HEAD || true   # ok: optional git step; the next step reports
           DBASE=$(git -C kpcdata rev-list -1 --before="25 hours ago" HEAD 2>/dev/null); [ -z "$DBASE" ] && DBASE=HEAD
-          OBS_DATA_BASE=$DBASE OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || echo "::error title=kpc_map_observations.py::stopped with an error (exit $?), see the log above"
+          OBS_DATA_BASE=$DBASE OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save (once)
         if: always()
         id: kept_green_3
@@ -78,6 +78,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

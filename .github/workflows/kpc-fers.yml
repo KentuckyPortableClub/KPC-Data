@@ -51,15 +51,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          pip install -q numpy opencv-python-headless || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
+          pip install -q numpy opencv-python-headless || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p cache/us cache/ca cache/world data/fers
           rm -rf data/fers && cp -r kpcdata/data/fers data/fers 2>/dev/null || mkdir -p data/fers
           for f in data/fers/*.json.gz; do [ -f "$f" ] && gunzip -f "$f"; done
           if [ "${{ matrix.region }}" = world ]; then
-            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'W-*.json.gz' -D cache/world --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'W-*.json.gz' -D cache/world --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           else
-            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
-            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
       - name: POTA activation history (pairs worked the same day, counts only)
         if: ${{ matrix.region == 'ky' || (matrix.region == 'na' && inputs.states != '') }}
@@ -69,7 +69,7 @@ jobs:
         env:
           STATES: ${{ matrix.region == 'ky' && 'US-KY' || inputs.states }}
           PAIR_MINUTES: '40'
-        run: python3 .github/scripts/kpc_pota_pairs.py || echo "::error title=kpc_pota_pairs.py::stopped with an error (exit $?), see the log above"
+        run: python3 .github/scripts/kpc_pota_pairs.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Look for shared ground
         id: kept_green_3
         continue-on-error: true
@@ -90,14 +90,14 @@ jobs:
               if [ $p = 1 ]; then CAP=$(( ${MINUTES:-320} / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
               [ $CAP -gt $LEFT ] && CAP=$LEFT
               [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::no time left for pass $p (next run carries on)"; break; }
-              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || echo "::error title=kpc_fers.py::stopped with an error (exit $?), see the log above"
+              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             done
-          else python3 .github/scripts/kpc_fers.py || echo "::error title=kpc_fers.py::stopped with an error (exit $?), see the log above"; fi
+          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
           # Oct 27 (HQ): Kentucky's known river + trail pairs must come out before any big run
-          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || echo "::error title=kpc_fers_known.py::stopped with an error (exit $?), see the log above"; fi
+          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
           # Oct 27 (HQ 3:46 PM): MISSING CHECK = every pair we have outside reason to expect: FOUND / DROPPED / NEVER LOOKED AT
-          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || echo "::error title=kpc_fers_expected.py::stopped with an error (exit $?), see the log above"
-          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || echo "::error title=kpc_fers_expected.py::stopped with an error (exit $?), see the log above"; fi
+          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
       - name: Observations log (new possible overlaps)
         if: ${{ matrix.region != 'world' }}
         id: kept_green_4
@@ -106,7 +106,7 @@ jobs:
           OBS_RUN: 2-fer bot pass ${{ inputs.pass }} (${{ matrix.region }})
           OBS_FILE: kpcdata/data/observations/fers-${{ matrix.region }}.json
           OBS_DATA_DIR: kpcdata
-        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || echo "::error title=kpc_map_observations.py::stopped with an error (exit $?), see the log above"
+        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save (once, at the end)
         if: always()
         id: kept_green_5
@@ -138,6 +138,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

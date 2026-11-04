@@ -69,11 +69,11 @@ jobs:
           python $D/kpc_map_match.py --questions 'data/waiting/questions/*.json' --parkinfo data/parkinfo --pota-tiles data/pota/t --docs data/docs/*.json --out ../out/map-match --cache .t1_cache --max-minutes 45 --resume 2>&1 | tail -8
           [ "${PIPESTATUS[0]}" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
           set -e
-          LINKS=../links MATCH_FILE=../out/map-match/map_match.json python3 .github/scripts/kpc_keep_answers.py questions >/dev/null 2>&1 || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"
-          LINKS=../links MATCH_FILE=../out/map-match/map_match.json python3 .github/scripts/kpc_auto_flow.py match || echo "::error title=kpc_auto_flow.py::stopped with an error (exit $?), see the log above"
+          LINKS=../links MATCH_FILE=../out/map-match/map_match.json python3 .github/scripts/kpc_keep_answers.py questions >/dev/null 2>&1 || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          LINKS=../links MATCH_FILE=../out/map-match/map_match.json python3 .github/scripts/kpc_auto_flow.py match || { kpc_rc=$?; echo "::error title=kpc_auto_flow.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_auto_flow.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           python3 .github/scripts/kpc_status.py board "T1 map-match" green "open questions scored (STRONG = bot YES, 1 in 10 sampled)" "chat 11 answers WEAK / CONFLICT (band + reason on each row)" || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "T1 map-match: STRONG -> bot YES, bands on the rest" data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          (cd ../out && find map-match -name '*.jpg' -mtime +7 -delete; git add -A map-match && git commit -qm "T1 map-match (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          bash ../links/.github/scripts/kpc_push_data.sh . "T1 map-match: STRONG -> bot YES, bands on the rest" data/waiting/questions data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          (cd ../out && find map-match -name '*.jpg' -mtime +7 -delete; git add -A map-match && git commit -qm "T1 map-match (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Next run while questions are left
         if: steps.m.outputs.more == 'yes'
@@ -87,7 +87,7 @@ jobs:
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-helpers.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-helpers.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           kpc_brake || exit 0
-          gh workflow run kpc-helpers.yml -R ${{ github.repository }} --ref main -f jobs=match || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          gh workflow run kpc-helpers.yml -R ${{ github.repository }} --ref main -f jobs=match || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -99,6 +99,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
@@ -124,9 +130,9 @@ jobs:
           D=.github/scripts/draft/tools/kpc_link_fix
           pip install -q -r $D/requirements.txt
           python3 .github/scripts/kpc_helpers_prep.py links-list /tmp/links.json
-          python $D/kpc_link_fix.py --links /tmp/links.json --parkinfo data/parkinfo --docs data/docs/*.json --out /tmp/lf --max-minutes 45 2>&1 | tail -6; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_link_fix.py::stopped with an error (exit $rc), see the log above"
+          python $D/kpc_link_fix.py --links /tmp/links.json --parkinfo data/parkinfo --docs data/docs/*.json --out /tmp/lf --max-minutes 45 2>&1 | tail -6; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_link_fix.py::stopped with an error (exit $rc), see the log above"; echo "kpc_link_fix.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           python3 .github/scripts/kpc_helpers_prep.py linkfix-docs /tmp/lf/link_fix.json /tmp/docs-found-linkfix.json
-          git fetch -q origin intake-files && git worktree add -q ../if FETCH_HEAD && cd ../if && git checkout -q -B intake-files && cp /tmp/docs-found-linkfix.json . && git add docs-found-linkfix.json && git commit -qm "dead-link fixer (T2): fixed links for the docs merge" && git push -q origin intake-files || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          git fetch -q origin intake-files && git worktree add -q ../if FETCH_HEAD && cd ../if && git checkout -q -B intake-files && cp /tmp/docs-found-linkfix.json . && git add docs-found-linkfix.json && git commit -qm "dead-link fixer (T2): fixed links for the docs merge" && git push -q origin intake-files || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -139,6 +145,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
@@ -169,14 +181,14 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true   # ok: optional git step; the next step reports
           D=.github/scripts/draft/tools/kpc_site_check
-          pip install -q -r $D/requirements.txt; python -m playwright install --with-deps chromium >/dev/null 2>&1 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
+          pip install -q -r $D/requirements.txt; python -m playwright install --with-deps chromium >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           python3 .github/scripts/kpc_helpers_prep.py site-sample ../links/data/us-key data/fers /tmp/sample.json
-          rm -rf ../out/site-check; python $D/kpc_site_check.py --sample /tmp/sample.json --tools us_planner --out ../out/site-check --max-minutes 45 2>&1 | tail -6; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_site_check.py::stopped with an error (exit $rc), see the log above"
+          rm -rf ../out/site-check; python $D/kpc_site_check.py --sample /tmp/sample.json --tools us_planner --out ../out/site-check --max-minutes 45 2>&1 | tail -6; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_site_check.py::stopped with an error (exit $rc), see the log above"; echo "kpc_site_check.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           F=$(python3 -c "import json;d=json.load(open('../out/site-check/site_check.json'));print(sum(1 for v in d.values() for x in (v if isinstance(v,list) else [v]) if not (x.get('label_ok',True) and x.get('fits_phone',True) and x.get('outline_drawn',True) is not False)))" 2>/dev/null || echo '?')
           if [ "$F" = 0 ]; then python3 .github/scripts/kpc_status.py board "T5 site checker" green "40 parks x phone + desktop: all fine" "nothing" || true   # ok: a status-board line (reporting only)
           else python3 .github/scripts/kpc_status.py board "T5 site checker" amber "$F checks failed (tools-out site-check/summary.md)" "chat 3 fixes the site" || true; fi   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "T5 site checker: status" data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          (cd ../out && git add -A site-check && git commit -qm "T5 site check (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          bash ../links/.github/scripts/kpc_push_data.sh . "T5 site checker: status" data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          (cd ../out && git add -A site-check && git commit -qm "T5 site check (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -189,6 +201,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

@@ -70,13 +70,13 @@ jobs:
           mkdir -p bundle/water
           gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null && tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true   # ok: nothing to do is fine
           N0=$(ls bundle/water | wc -l)
-          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || echo "::error title=kpc_water_bulk.py::stopped with an error (exit $?), see the log above"
-          pip install -q pyshp 2>/dev/null || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || echo "::error title=kpc_water_ca.py::stopped with an error (exit $?), see the log above"
-          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || echo "::error title=kpc_water_bulk.py::stopped with an error (exit $?), see the log above"
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          pip install -q pyshp 2>/dev/null || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || { kpc_rc=$?; echo "::error title=kpc_water_ca.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_ca.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           N1=$(ls bundle/water | wc -l)
           if [ "$N1" -gt "$N0" ]; then
             tar czf "$WATER_ASSET" bundle/water
-            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || echo "::error title=kpc_keep2.sh::stopped with an error (exit $?), see the log above"
+            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || { kpc_rc=$?; echo "::error title=kpc_keep2.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep2.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: $N0 -> $N1 tiles ($(du -h "$WATER_ASSET" | cut -f1))" || echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: upload failed"
           else echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: nothing new ($N1 tiles)"; fi
       - name: Report hidden failures (Nov 2 review, G8)
@@ -90,6 +90,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

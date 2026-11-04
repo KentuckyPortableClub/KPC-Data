@@ -32,7 +32,7 @@ jobs:
         run: |
           cd lk
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py tidy || echo "::error title=kpc_lookup.py::stopped with an error (exit $?), see the log above"
+          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py tidy || { kpc_rc=$?; echo "::error title=kpc_lookup.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_lookup.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           git add -A; git diff --cached --quiet || git commit -qm 'look-up bot: weekly tidy'
           KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}')
           echo "::notice title=Look-up branch::history $((KB/1024)) MB, $(git rev-list --count HEAD) commits, files $(du -sm --exclude=.git . | cut -f1) MB"
@@ -40,7 +40,7 @@ jobs:
             git checkout -q --orphan fresh && git add -A && git commit -qm "look-up branch squashed $(date -u +%F) (was $((KB/1024)) MB with history)"
             git push -q -f origin fresh:lookup && echo "::notice title=Look-up branch::squashed to one commit"
           else
-            { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }
+            { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }
           fi
           true
       - name: Report hidden failures (Nov 2 review, G8)
@@ -54,6 +54,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
@@ -88,9 +94,9 @@ jobs:
         run: |
           cd pm
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          PIC_ROOT=. LINKS=../links python3 ../code/.github/scripts/kpc_lookup.py map-cleanup || echo "::error title=kpc_lookup.py::stopped with an error (exit $?), see the log above"
+          PIC_ROOT=. LINKS=../links python3 ../code/.github/scripts/kpc_lookup.py map-cleanup || { kpc_rc=$?; echo "::error title=kpc_lookup.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_lookup.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           git add -A; git diff --cached --quiet || git commit -qm 'picture maps: weekly cleanup (parks now with an official outline)'
-          { saved=0; for i in 1 2 3; do git pull -q --rebase origin picture-maps && git push -q origin HEAD:picture-maps && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }
+          { saved=0; for i in 1 2 3; do git pull -q --rebase origin picture-maps && git push -q origin HEAD:picture-maps && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }
           KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}')
           M="history $((KB/1024)) MB, files $(du -sm --exclude=.git . | cut -f1) MB"; [ "$KB" -gt 307200 ] && M="$M: OVER 300 MB, HQ squashes it"
           echo "::notice title=Picture-map branch::$M"
@@ -106,6 +112,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

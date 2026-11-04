@@ -8,6 +8,13 @@ on:
   workflow_run:
     workflows: ['KPC 2-fer assembly line (hidden)', 'KPC 2-fer chain after a new key (hidden)']
     types: [completed]
+  # Nov 4 PM fix bundle item 3: a chain run started by dispatch fires no workflow_run, so the chain's 'postline' job starts this
+  workflow_dispatch:
+    inputs:
+      run_url:
+        description: 'The 2-fer chain or line run to report on (set by kpc-fers-chain.yml)'
+        required: false
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -15,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   postline:
-    if: ${{ github.event.workflow_run.conclusion != 'skipped' && github.event.workflow_run.conclusion != 'cancelled' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion != 'skipped' && github.event.workflow_run.conclusion != 'cancelled') }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     continue-on-error: true
@@ -29,7 +36,7 @@ jobs:
       - name: 2-fer post-line check (read-only report)
         continue-on-error: true
         env:
-          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          RUN_URL: ${{ github.event.workflow_run.html_url || inputs.run_url }}
         run: |
           if [ ! -f links/.github/scripts/kpc_fers_postline.py ]; then echo "::warning title=2-fer post-line check::KPC-Links has no kpc_fers_postline.py (links-05 not merged): no report"; exit 0; fi
           DATA=. LINKS=links python3 links/.github/scripts/kpc_fers_postline.py || true

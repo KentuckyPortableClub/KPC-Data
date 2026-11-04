@@ -5,8 +5,9 @@ name: KPC outside documents merge (into data/docs through the waiting room)
 # (starts the next run itself while rows are left), then daily for new files and areas the documents bot has finished. Never red.
 on:
   workflow_dispatch:
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '26 6 * * *'   # G9 Nov 2: was '27 6 * * *' (spread the start times; now 1 min earlier)
+  # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
+  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # - cron: '26 6 * * *'   # G9 Nov 2: was '27 6 * * *' (spread the start times; now 1 min earlier)
 permissions:
   contents: write
   actions: write
@@ -35,15 +36,15 @@ jobs:
           MINUTES: '55'
         run: |
           cd kpcdata
-          pip install -q --break-system-packages pypdf openpyxl || pip install -q pypdf openpyxl || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
-          python3 .github/scripts/kpc_intake_reader.py docs || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # HQ Oct 31 7:55 PM: the bot pulls its own files from branch intake-files
+          pip install -q --break-system-packages pypdf openpyxl || pip install -q pypdf openpyxl || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/kpc_intake_reader.py docs || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # HQ Oct 31 7:55 PM: the bot pulls its own files from branch intake-files
           for chunk in 1 2 3 4 5; do   # Nov 1 storage fix (HQ 12:10 PM): up to 5 chunks in ONE job and ONE save (was a save + a new run per chunk: 562 commits a week)
-            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
-            python3 .github/scripts/kpc_docs_merge.py | tee /tmp/merge.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_docs_merge.py::stopped with an error (exit $rc), see the log above"
-            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            python3 .github/scripts/kpc_docs_merge.py | tee /tmp/merge.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_docs_merge.py::stopped with an error (exit $rc), see the log above"; echo "kpc_docs_merge.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             L=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
           done
-          bash ../links/.github/scripts/kpc_push_data.sh . "outside documents merged (held in the waiting room)" data/docs data/intake/docs-merge-done.json data/intake/intake-seen.json data/waiting || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "outside documents merged (held in the waiting room)" data/docs data/intake/docs-merge-done.json data/intake/intake-seen.json data/waiting || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
       - name: Straight through
         id: kept_green_1
@@ -56,7 +57,8 @@ jobs:
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-docs-merge.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-docs-merge.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           L="${{ steps.m.outputs.left }}"
-          if [ -n "$L" ] && [ "$L" != 0 ] && kpc_brake; then gh workflow run kpc-docs-merge.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: if [ -n "$L" ] && [ "$L" != 0 ] && kpc_brake; then gh workflow run kpc-docs-merge.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+          if [ -n "$L" ] && [ "$L" != 0 ] && kpc_brake; then echo "::warning title=Paused bot::kpc-docs-merge.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"; fi
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -68,6 +70,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

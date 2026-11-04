@@ -5,8 +5,9 @@ name: KPC layer collector (starts itself when the Fable / atlas files have new w
 # without an official outline (name tiers T-1..T-6); SURE / LIKELY = questions in data/waiting/questions/layers.json for chat 11,
 # layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
 on:
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '16 3,9,15,21 * * *'   # PR2 (Nov 2): every 6 h (was every 2 h, '16 */2 * * *'); it still starts its own next run while pairs are left   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
+  # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
+  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # - cron: '16 3,9,15,21 * * *'   # PR2 (Nov 2): every 6 h (was every 2 h, '16 */2 * * *'); it still starts its own next run while pairs are left   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
     inputs:
       as_schedule:
@@ -55,8 +56,8 @@ jobs:
           LINKS: ../links
           MINUTES: '40'
         run: |
-          cd kpcdata && (python3 .github/scripts/kpc_intake_reader.py portals || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above") && python3 .github/scripts/kpc_gis_finders.py viewers portals || echo "::error title=kpc_gis_finders.py::stopped with an error (exit $?), see the log above"
-          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          cd kpcdata && (python3 .github/scripts/kpc_intake_reader.py portals || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }) && python3 .github/scripts/kpc_gis_finders.py viewers portals || { kpc_rc=$?; echo "::error title=kpc_gis_finders.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_gis_finders.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: New work? (fingerprint of the Fable + atlas files + the layer files on branch intake-files)
         id: fp
         continue-on-error: true
@@ -76,14 +77,14 @@ jobs:
           LINKS: ../links
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_intake_reader.py layers || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # pulls its own files from branch intake-files
-          python3 .github/scripts/kpc_intake_reader.py files || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"    # Nov 1: hand-downloaded boundary files (file-<AREA>-*.geojson)
-          timeout 100m python3 .github/scripts/kpc_layer_collector.py || echo "::error title=kpc_layer_collector.py::stopped with an error (exit $?), see the log above"
-          python3 .github/scripts/kpc_q_gate.py gate || echo "::error title=kpc_q_gate.py::stopped with an error (exit $?), see the log above"   # Nov 2 (Brandon GO): no-shared-name / one-record-many-parks / world names-only LIKELY never reach chat 11 (parked.json)
+          python3 .github/scripts/kpc_intake_reader.py layers || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # pulls its own files from branch intake-files
+          python3 .github/scripts/kpc_intake_reader.py files || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }    # Nov 1: hand-downloaded boundary files (file-<AREA>-*.geojson)
+          timeout 100m python3 .github/scripts/kpc_layer_collector.py || { kpc_rc=$?; echo "::error title=kpc_layer_collector.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_layer_collector.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/kpc_q_gate.py gate || { kpc_rc=$?; echo "::error title=kpc_q_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_q_gate.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 2 (Brandon GO): no-shared-name / one-record-many-parks / world names-only LIKELY never reach chat 11 (parked.json)
           echo "${{ steps.fp.outputs.fp }}" > data/intake/collector-seen.txt
-          python3 .github/scripts/kpc_week_numbers.py || echo "::error title=kpc_week_numbers.py::stopped with an error (exit $?), see the log above"   # the control panel's numbers, fresh after each collector run
+          python3 .github/scripts/kpc_week_numbers.py || { kpc_rc=$?; echo "::error title=kpc_week_numbers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_week_numbers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # the control panel's numbers, fresh after each collector run
           python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Straight through (Brandon Oct 30 7:43 PM) - outside-research pairs left = start the next run now
         id: kept_green_4
         continue-on-error: true
@@ -96,7 +97,8 @@ jobs:
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-collector.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-collector.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 0)
           echo "::notice title=Outside research::$LEFT pairs left"
-          if [ "$LEFT" != 0 ] && kpc_brake; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: if [ "$LEFT" != 0 ] && kpc_brake; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
+          if [ "$LEFT" != 0 ] && kpc_brake; then echo "::warning title=Paused bot::kpc-collector.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"; fi
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -108,6 +110,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

@@ -49,8 +49,8 @@ jobs:
         id: kept_green_1
         continue-on-error: true
         run: |
-          pip install -q --break-system-packages pypdf || pip install -q pypdf || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
-          if [ "${{ inputs.browser }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"; fi
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          if [ "${{ inputs.browser }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
       - name: Read, in chunks, ONE save at the end (Nov 3)
         timeout-minutes: 338   # Nov 3: the step stops before the job's limit, so the one save below always runs
         id: kept_green_2
@@ -64,12 +64,12 @@ jobs:
           cd kpcdata
           N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
           for i in $(seq 1 $N); do
-            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"   # Brandon Oct 29 7:55 PM: work from the held copy
-            MINUTES=55 python3 .github/scripts/kpc_docs_bot.py || echo "::error title=kpc_docs_bot.py::stopped with an error (exit $?), see the log above"
-            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"   # changed area files wait in data/waiting/in/ (not live)
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Brandon Oct 29 7:55 PM: work from the held copy
+            MINUTES=55 python3 .github/scripts/kpc_docs_bot.py || { kpc_rc=$?; echo "::error title=kpc_docs_bot.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_docs_bot.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # changed area files wait in data/waiting/in/ (not live)
             python3 .github/scripts/kpc_status.py grade-me "official documents bot" "$(python3 -c "import json;s=json.load(open('data/docs/state.json'));print(' '.join((s.get('last') or {}).get('areas') or []))" 2>/dev/null)" "data/docs/<area>.json + review.md" "chunk $i" || true   # ok: a status-board line (reporting only) (Oct 28 (HQ automation, chat 10): one 'grade me' line per batch for chat 8)
             python3 .github/scripts/kpc_status.py board "official documents bot" green "chunk $i saved" "chat 8 grades review.md samples" || true   # ok: a status-board line (reporting only)
-            [ "${KPC_SAVE_EACH_CHUNK:-no}" != yes ] || bash ../links/.github/scripts/kpc_push_data.sh . "documents bot: chunk $i (held in the waiting room)" data/docs data/status data/waiting || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+            [ "${KPC_SAVE_EACH_CHUNK:-no}" != yes ] || bash ../links/.github/scripts/kpc_push_data.sh . "documents bot: chunk $i (held in the waiting room)" data/docs data/status data/waiting || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             LEFT=$(python3 -c "
           import json,os,sys
           sys.path.insert(0, '.github/scripts'); import kpc_docs_bot as B
@@ -88,7 +88,7 @@ jobs:
         run: |
           cd kpcdata
           [ "${{ vars.KPC_SAVE_EACH_CHUNK || 'no' }}" = yes ] && { echo 'saved after every chunk (KPC_SAVE_EACH_CHUNK=yes)'; exit 0; }
-          bash ../links/.github/scripts/kpc_push_data.sh . "documents bot: one save for the run (held in the waiting room)" data/docs data/status data/waiting || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          bash ../links/.github/scripts/kpc_push_data.sh . "documents bot: one save for the run (held in the waiting room)" data/docs data/status data/waiting || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: A passed test starts the queue
         if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' }}
         id: kept_green_3
@@ -107,7 +107,8 @@ jobs:
               else: ok = ok and c.get('map ok', 0) >= 0.5 * max(1, c.get('parks', 0))
           print('PASS' if ok else 'FAIL')" 2>/dev/null || echo FAIL)
           echo "::notice title=Documents bot::test $AREAS: $P"
-          [ "$P" = PASS ] && gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::the long run has started (queue order: Kentucky, southeast, midwest, northeast, south central, mountain, pacific, Canada; ${{ inputs.chain }} more jobs may follow)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: [ "$P" = PASS ] && gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::the long run has started (queue order: Kentucky, southeast, midwest, northeast, south central, mountain, pacific, Canada; ${{ inputs.chain }} more jobs may follow)"
+          [ "$P" = PASS ] && echo "::warning title=Paused bot::kpc-docs.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
           true
       - name: Carry on in a new job when areas remain
         if: ${{ inputs.areas == '' && inputs.chain != '0' }}
@@ -116,7 +117,8 @@ jobs:
         run: |
           [ "${LEFT:-0}" = 0 ] && { echo "::notice title=Documents bot::queue finished"; exit 0; }
           NEXT=$(( ${{ inputs.chain }} - 1 ))
-          gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$NEXT -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::$LEFT areas left: the next job starts by itself ($NEXT more allowed after it)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$NEXT -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::$LEFT areas left: the next job starts by itself ($NEXT more allowed after it)"
+          echo "::warning title=Paused bot::kpc-docs.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -128,6 +130,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

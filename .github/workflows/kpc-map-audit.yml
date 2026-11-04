@@ -86,13 +86,13 @@ jobs:
           if [ "$E" = 3 ]; then echo "more=yes" >> $GITHUB_OUTPUT; echo "next_after_crash=no" >> $GITHUB_OUTPUT
           elif [ "$E" != 0 ] && [ "$E" != 4 ] && [ "$AFTER_CRASH" != yes ]; then echo "more=yes" >> $GITHUB_OUTPUT; echo "next_after_crash=yes" >> $GITHUB_OUTPUT; fi   # one more try after a crash, never a loop
           echo "areas=$AREAS" >> $GITHUB_OUTPUT
-          { [ $E = 0 ] || [ $E = 3 ]; } || echo "::error title=Map audit::the audit stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt"   # PR3
+          { [ $E = 0 ] || [ $E = 3 ]; } || { kpc_rc=$?; echo "::error title=Map audit::the audit stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt"; echo "Map audit - the audit stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # PR3
           python3 .github/scripts/kpc_status.py board 'Map audit' $([ $E = 0 ] || [ $E = 3 ] && echo green || echo red) "exit $E ($W) $(TZ=America/Chicago date +%F): $(tail -1 ../out/audit/run-log.txt | cut -c1-140)" 'chat 2 (worst rows = fixes) + chat 11 / 12 (questions)' || true   # ok: the board line is a courtesy
           # PR2 (fewer saves): the board line is saved with the questions below in ONE commit (was two commits a job)
           python3 .github/scripts/kpc_fers_gate.py questions ../out/audit || true   # ok: the next audit job tries again
           GH_TOKEN="${{ github.token }}" python3 .github/scripts/kpc_fers_gate.py gate || true   # ok: the watchdog runs the gate too
-          (git add data/waiting/questions/map-audit.json data/status && python3 .github/scripts/kpc_stamp_only.py && { git diff --cached --quiet && echo "nothing new to save"; } || { git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && saved=0 && for i in 1 2 3 4; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }) || true   # PR2: one commit, skipped when only time stamps changed; pull --rebase retries (was: a retry re-ran 'git commit' and never pushed)
-          cd ../out && find audit -size +20M -delete; git add -A audit && git commit -qm "map audit (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || echo "::warning title=Map audit::results not saved to tools-out this time"
+          (git add data/waiting/questions/map-audit.json data/status && python3 .github/scripts/kpc_stamp_only.py && { git diff --cached --quiet && echo "nothing new to save"; } || { git commit -qm "map audit: worst rows for chat 11 / 12 + the 2-fer gate" && saved=0 && for i in 1 2 3 4; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { saved=1; break; }; git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }) || true   # PR2: one commit, skipped when only time stamps changed; pull --rebase retries (was: a retry re-ran 'git commit' and never pushed)
+          cd ../out && find audit -size +20M -delete; git add -A audit && git commit -qm "map audit (run ${{ github.run_id }})" && { for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && break; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; } || { kpc_rc=$?; echo "::warning title=Map audit::results not saved to tools-out this time"; echo "Map audit - results not saved to tools-out this time" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true   # ok: the notices above say what happened
       - name: Next job (the audit goes on until every area is done)
         if: steps.r.outputs.more == 'yes'
@@ -105,7 +105,7 @@ jobs:
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-map-audit.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           kpc_brake || exit 0
-          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/dispatches -f ref=main -f "inputs[areas]=${{ inputs.areas }}" -f "inputs[after_crash]=${{ steps.r.outputs.next_after_crash || 'no' }}" || echo "::warning title=Map audit::could not start the next job"
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-map-audit.yml/dispatches -f ref=main -f "inputs[areas]=${{ inputs.areas }}" -f "inputs[after_crash]=${{ steps.r.outputs.next_after_crash || 'no' }}" || { kpc_rc=$?; echo "::warning title=Map audit::could not start the next job"; echo "Map audit - could not start the next job" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: WATCHDOG HEARTBEAT (Nov 2, chat 10) - KPC-Data's timed runs stopped; this chained bot starts the watchdog when it is 2.5 h old
         id: kept_green_hb
         continue-on-error: true
@@ -118,10 +118,30 @@ jobs:
             gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-watchdog.yml/dispatches" -f ref=main && echo "::notice title=Watchdog heartbeat::the watchdog had not run for $((age / 60)) min: started it"
           else echo "watchdog ran $((age / 60)) min ago: nothing to do"; fi
           # Nov 2 5 PM (HQ): Pages publishes the branch 'site'; move it to main when it lags (kpc-pages-sync.yml checks itself)
-          gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-pages-sync.yml/dispatches" -f ref=main >/dev/null 2>&1 || echo "::warning title=Pages copy::could not start kpc-pages-sync"
+          gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-pages-sync.yml/dispatches" -f ref=main >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=Pages copy::could not start kpc-pages-sync"; echo "Pages copy - could not start kpc-pages-sync" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true   # ok: the next chained run checks again
       - name: Red when the audit crashed or an area failed (Nov 2 bot fixes; the Audit step above never stops the job)
         if: always() && (steps.r.outcome == 'failure' || (steps.r.outputs.rc != '' && steps.r.outputs.rc != '0' && steps.r.outputs.rc != '3'))
         run: |
           echo "::error title=Map audit::exit ${{ steps.r.outputs.rc || '(step failed before the audit ran)' }}: 4 = one or more areas failed, anything else = the audit crashed. See run-log.txt on tools-out audit/."
           exit 1
+      - name: Report hidden failures (Nov 2 review, G8; Nov 4 PM fix bundle item 7)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY
