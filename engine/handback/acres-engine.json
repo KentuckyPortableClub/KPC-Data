@@ -1038,6 +1038,78 @@
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-3616",
+   "Park name (as the agency writes it)": "Dudley Farm Historic State Park",
+   "Size": 333,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D61&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3622",
+   "Park name (as the agency writes it)": "Fort Mose Historic State Park",
+   "Size": 42,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D46&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3630",
+   "Park name (as the agency writes it)": "Indian Key Historic State Park",
+   "Size": 111,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3643",
+   "Park name (as the agency writes it)": "Orman House Historic State Park",
+   "Size": 9,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D7&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3646",
+   "Park name (as the agency writes it)": "Paynes Creek Historic State Park",
+   "Size": 399,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D99&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-10751",
+   "Park name (as the agency writes it)": "Idywild",
+   "Size": 1495,
+   "Unit": "acres",
+   "Agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Source page": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-10763",
+   "Park name (as the agency writes it)": "Fishing Bay Marshes",
+   "Size": 16870,
+   "Unit": "acres",
+   "Agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Source page": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-10765",
+   "Park name (as the agency writes it)": "Millington",
+   "Size": 488,
+   "Unit": "acres",
+   "Agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Source page": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "US-0042",
    "Park name (as the agency writes it)": "Fort Gaines",
    "Size": 32,
@@ -1438,6 +1510,26 @@
    "Retry?": "NO"
   },
   {
+   "Host": "ca.dep.state.fl.us",
+   "Agency/area": "Florida State Parks (DEP) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+   "# times used": 5,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "dnr.geodata.md.gov",
+   "Agency/area": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "gisdata.in.gov",
    "Agency/area": "Indiana DNR properties",
    "Kind": "GIS layer",
@@ -1695,6 +1787,36 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.dmr.nd.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "dec.ny.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "anrmaps.vermont.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
    "Retry?": "YES"
   }
  ]

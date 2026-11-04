@@ -1,5 +1,11 @@
 {
  "about": "kpc engine finds (engine): \"rest\" = ArcGIS layers; \"other\" = WFS / downloads. Leads only: nothing live without chat 11.",
  "rest": {},
- "other": {}
+ "other": {
+  "GB-1733": {
+   "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
+   "agency": "NatureScot",
+   "status": "POSSIBLE MATCH (engine 2026-11-04)"
+  }
+ }
 }
