@@ -228,3 +228,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 2 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-03): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM BOT official documents bot (2026-11-03): grade me: US-MN data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41672349498)
+- FROM BOT closures super-bot (2026-11-04): grade me: US-KY data/closures/US-KY.json — 31 of 33 of Kentucky's own reader's items found here on the same park (93%); 55 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41773170303)
