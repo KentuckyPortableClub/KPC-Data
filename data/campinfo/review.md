@@ -23,6 +23,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 | US-AR | 229 | 21 | 120 | 0 | 2 | 0 | 0 | 5 | 81 | 5 | 78 | 0 |
 | US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
 | US-TX | 483 | 0 | 120 | 1 | 3 | 0 | 329 | 0 | 30 | 0 | 34 | 0 |
+| US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 | US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
@@ -36,12 +37,13 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-ID FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-FL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
 - cpw.state.co.us: 164 campgrounds · host resting
+- www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 48 campgrounds · host resting
 - reserve.tnstateparks.com: 25 campgrounds · host resting
@@ -51,6 +53,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 - midnrreservations.com: 12 campgrounds · host resting
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - reserve.arkansasstateparks.com: 2 campgrounds · host resting (robots.txt could not be read: next run)
+- ksoutdoors.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
 
@@ -1595,6 +1598,9 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Pets Allowed" · “s Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Grills Handicapped Parking Pets Allowed Pets Allowed in Park Picnic Area Pull”
 
 ## US-TX: 12 random samples (records with facts; seed = the date)
+
+
+## US-KS: 12 random samples (records with facts; seed = the date)
 
 
 ## US-NE: 12 random samples (records with facts; seed = the date)

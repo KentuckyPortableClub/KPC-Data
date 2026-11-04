@@ -218,6 +218,27 @@
    "status": "done",
    "updated": "2026-11-03"
   },
+  "US-KS": {
+   "camps": 117,
+   "checked": 117,
+   "counts": {
+    "camps": 117,
+    "needs_browser": 0,
+    "needs_key": 52,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 0,
+    "other": 0,
+    "resting": 0,
+    "robots": 65,
+    "with_booking": 63,
+    "with_elevation": 0,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-04"
+  },
   "US-KY": {
    "camps": 109,
    "checked": 100,
@@ -601,6 +622,7 @@
   "US-IA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-ID": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-KS": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MD": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -709,6 +731,15 @@
     "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
    "read": "2026-11-03"
+  },
+  "US-KS": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-04"
   },
   "US-KY": {
    "cell": {
@@ -1821,12 +1852,12 @@
  },
  "last": {
   "areas": [
-   "US-FL"
+   "US-KS"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 323,
+   "dropped_queued": 179,
    "errors": 0,
    "for_person_urls": [
     [
@@ -1836,29 +1867,36 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
+    ],
+    [
+     "https://www.ksoutdoors.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.ksoutdoors.gov this run"
+    ],
+    [
+     "https://ksoutdoors.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from ksoutdoors.gov this run"
     ]
    ],
-   "requests": 174,
+   "requests": 4,
    "rested": 0,
-   "robots": 3,
-   "robots_unreadable": 2,
+   "robots": 4,
+   "robots_unreadable": 4,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 78,
-   "camps": 302,
+   "camps": 117,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 22,
-   "needs_key": 39,
-   "no_page": 150,
-   "not_official": 8,
-   "ok": 138,
-   "pages_read": 88,
+   "needs_browser": 0,
+   "needs_key": 52,
+   "no_page": 0,
+   "not_official": 0,
+   "ok": 0,
+   "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
-   "robots": 23,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-04"
