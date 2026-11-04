@@ -435,6 +435,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "CA-5184",
+   "Park name (as the agency writes it)": "Henry Park",
+   "Size": 11,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D97&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -489,6 +498,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "CA-5989",
+   "Park name (as the agency writes it)": "Sulphur Spring Conservation Area",
+   "Size": 208,
+   "Unit": "acres",
+   "Agency": "Grey County GIS publishing Saugeen Valley Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4/query?where=OBJECTID%3D779&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "US-5756",
    "Park name (as the agency writes it)": "Browns Park WMA",
    "Size": 3134,
@@ -541,6 +559,24 @@
    "Agency": "US Fish and Wildlife Service",
    "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D4297&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0329",
+   "Park name (as the agency writes it)": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 26816,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-11955",
+   "Park name (as the agency writes it)": "Genoa National Fish Hatchery",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "CA-5663",
@@ -613,24 +649,6 @@
    "Agency": "NH GRANIT conservation and public lands",
    "Source page": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?where=OBJECTID%3D5894&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-0329",
-   "Park name (as the agency writes it)": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
-   "Size": 26816,
-   "Unit": "acres",
-   "Agency": "US Fish and Wildlife Service",
-   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-11955",
-   "Park name (as the agency writes it)": "Genoa National Fish Hatchery",
-   "Size": 160,
-   "Unit": "acres",
-   "Agency": "US Fish and Wildlife Service",
-   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-0042",
@@ -759,15 +777,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "CA-5184",
-   "Park name (as the agency writes it)": "Henry Park",
-   "Size": 11,
-   "Unit": "acres",
-   "Agency": "Parks",
-   "Source page": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D97&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "US-5877",
    "Park name (as the agency writes it)": "Desert Lake WMA",
    "Size": 2804,
@@ -829,6 +838,15 @@
    "Agency": "Property Boundaries",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2051&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-10237",
+   "Park name (as the agency writes it)": "Mongoquinong Nature Preserve",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "Indiana DNR properties",
+   "Source page": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4818&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0; read 2026-11-04"
   }
  ],
  "Sources": [
@@ -933,21 +951,21 @@
    "Retry?": "NO"
   },
   {
-   "Host": "services3.arcgis.com",
-   "Agency/area": null,
+   "Host": "gis.grey.ca",
+   "Agency/area": "Grey County GIS publishing Saugeen Valley Conservation Authority property data",
    "Kind": "GIS layer",
-   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
-   "# times used": 1,
+   "Example URL": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4",
+   "# times used": 4,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
   },
   {
-   "Host": "gis.grey.ca",
-   "Agency/area": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "Host": "services3.arcgis.com",
+   "Agency/area": null,
    "Kind": "GIS layer",
-   "Example URL": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
-   "# times used": 3,
+   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -967,6 +985,16 @@
    "Agency/area": "NH GRANIT conservation and public lands",
    "Kind": "GIS layer",
    "Example URL": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gisdata.in.gov",
+   "Agency/area": "Indiana DNR properties",
+   "Kind": "GIS layer",
+   "Example URL": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
    "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
