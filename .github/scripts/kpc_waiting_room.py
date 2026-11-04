@@ -743,6 +743,7 @@ ROUTES = [
     (r'^data/cell/(?:US-[A-Z]{2}|test-[A-Z]{2})\.json$', 'cell', c_cell),
     (r'^data/acres\.json$', 'acres', c_acres),
 ]
+NEVER_AUTO = {'pilesolver'}   # Nov 4 review: the pile solver's proposals never go live by themselves (no PROMOTE_KINDS, no trust run): a person releases them
 NEVER_WAIT = {'closures'}   # F-3 (+ spots, weather, band alerts and a NEW park's pin + name, which never pass through here)
 
 
@@ -951,7 +952,7 @@ def mode_check(promote):
     for rel, new in batch.items():
         r = judge(rel, new, *live_of(rel), ctx=ctx); out.append(r)
         allowed = [k for k in (os.environ.get('PROMOTE_KINDS') or '').split(',') if k]   # only the bots Brandon switched on promote; held bots wait for chat 11
-        if on and r['verdict'] in ('PASS', 'LIVE-FILTERED') and allowed and r['kind'] in allowed:
+        if on and r['verdict'] in ('PASS', 'LIVE-FILTERED') and allowed and r['kind'] in allowed and r['kind'] not in NEVER_AUTO:
             promote_file(rel, r.get('out'), raw=(W / 'in' / rel))
             (W / 'in' / rel).unlink()
             tw = live_of(rel)[1]
