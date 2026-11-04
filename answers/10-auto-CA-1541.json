@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-CA-1541.json",
+ "id": "10-auto-CA-1541",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-1541",
+  "name": "Crawford Lake Conservation Area",
+  "agency": "government agency (conservationhalton.ca)",
+  "url": "https://www.conservationhalton.ca/wp-content/uploads/2022/04/Crawford-Lake-trail-guide_2022.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-04 02:04Z",
+ "results": [
+  {
+   "url": "https://www.conservationhalton.ca/wp-content/uploads/2022/04/Crawford-Lake-trail-guide_2022.pdf",
+   "map_url": "https://www.conservationhalton.ca/wp-content/uploads/2022/04/Crawford-Lake-trail-guide_2022.pdf",
+   "saved": [
+    "maps/CA-1541_crawford-lake-conservation-area.jpg"
+   ],
+   "bytes": 302952,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}
