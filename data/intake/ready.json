@@ -647,7 +647,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -671,7 +671,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": true,
@@ -973,7 +973,7 @@
    "probe": {
     "kind": "wfs",
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "Agencija RS za okolje (ARSO) / Slovenian Environment Agency",
@@ -996,7 +996,7 @@
    "url": "https://prostor4.gov.si/ows2-ins/ps/wfs",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -16570,17 +16570,37 @@
     "by_name": 0,
     "in_extent": 1796,
     "missing_in_area": 1796,
-    "n": 50,
+    "n": 60,
     "parks": [
+     [
+      "AU-0002",
+      "Willis Island National Park",
+      "Cape York Region"
+     ],
      [
       "AU-0004",
       "Yawuru Birragun Conservation Park",
       "Kimberley"
      ],
      [
+      "AU-0027",
+      "Tunnel Creek National Park",
+      "Kimberley"
+     ],
+     [
+      "AU-0034",
+      "Swan Estuary Marine Park",
+      "South West"
+     ],
+     [
       "AU-0042",
       "Shark Bay Marine Park",
       "Geraldton"
+     ],
+     [
+      "AU-0046",
+      "Rowley Shoals Marine Park",
+      "Kimberley"
      ],
      [
       "AU-0058",
@@ -16593,8 +16613,23 @@
       "South West"
      ],
      [
+      "AU-0066",
+      "Mount Manning - Helena And Aurora Ranges Conservation Park",
+      "South West"
+     ],
+     [
       "AU-0093",
       "Lalang-garram / Camden Sound Marine Park",
+      "Kimberley"
+     ],
+     [
+      "AU-0099",
+      "Wunaamin Conservation Park",
+      "Kimberley"
+     ],
+     [
+      "AU-0126",
+      "Geikie Gorge National Park",
       "Kimberley"
      ],
      [
@@ -16605,6 +16640,11 @@
      [
       "AU-0135",
       "Eighty Mile Beach Marine Park",
+      "Kimberley"
+     ],
+     [
+      "AU-0162",
+      "Brooking Gorge Conservation Park",
       "Kimberley"
      ],
      [
@@ -16645,6 +16685,11 @@
      [
       "AU-0223",
       "Twelve Apostles Marine National Park",
+      "Victoria"
+     ],
+     [
+      "AU-0230",
+      "Tocumwal Regional Park",
       "Victoria"
      ],
      [
@@ -16763,6 +16808,11 @@
       "Victoria"
      ],
      [
+      "AU-0503",
+      "Baranduda Regional Park",
+      "Victoria"
+     ],
+     [
       "AU-0513",
       "Ararat Hills Regional Park",
       "Victoria"
@@ -16823,7 +16873,7 @@
       "Victoria"
      ]
     ],
-    "pin_only": 50,
+    "pin_only": 60,
     "tested": 60
    },
    "from": "harvester",
@@ -16931,7 +16981,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "NOT A PARK LAYER (coverage): closes 50 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)"
+   "why": "NOT A PARK LAYER (coverage): closes 60 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)"
   },
   {
    "approved": null,
@@ -31493,7 +31543,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -31516,7 +31566,7 @@
    "url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -31526,7 +31576,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -31549,7 +31599,7 @@
    "url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -31953,7 +32003,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -31976,7 +32026,7 @@
    "url": "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -48343,7 +48393,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -48366,7 +48416,7 @@
    "url": "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -55447,7 +55497,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -55470,7 +55520,7 @@
    "url": "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -64963,7 +65013,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -64986,7 +65036,7 @@
    "url": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -75388,7 +75438,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -75411,7 +75461,7 @@
    "url": "https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -81507,7 +81557,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -81530,7 +81580,7 @@
    "url": "https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -81540,7 +81590,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -81563,7 +81613,7 @@
    "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -83399,7 +83449,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -83422,7 +83472,7 @@
    "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -83630,7 +83680,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -83653,7 +83703,7 @@
    "url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -84415,7 +84465,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -84438,7 +84488,7 @@
    "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -84448,7 +84498,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -84471,7 +84521,7 @@
    "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -84481,7 +84531,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -84504,7 +84554,7 @@
    "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -84983,7 +85033,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -85006,7 +85056,7 @@
    "url": "https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -85496,7 +85546,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -85519,7 +85569,7 @@
    "url": "https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -85948,7 +85998,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -85971,7 +86021,7 @@
    "url": "https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -86769,7 +86819,7 @@
    "overlap": "same publisher as sgorb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -86792,7 +86842,7 @@
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -87071,7 +87121,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -87094,7 +87144,7 @@
    "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -87104,7 +87154,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -87127,7 +87177,7 @@
    "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -87599,7 +87649,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -87622,7 +87672,7 @@
    "url": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -87862,7 +87912,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -87885,7 +87935,7 @@
    "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -87895,7 +87945,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -87918,7 +87968,7 @@
    "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -87928,7 +87978,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -87951,7 +88001,7 @@
    "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -88040,7 +88090,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -88063,7 +88113,7 @@
    "url": "https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -88204,7 +88254,7 @@
    "overlap": "same publisher as sguta",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -88227,7 +88277,7 @@
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -89622,7 +89672,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -89645,7 +89695,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -90719,7 +90769,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -90742,7 +90792,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -90752,7 +90802,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -90775,7 +90825,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -91224,7 +91274,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -91247,7 +91297,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -91257,7 +91307,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -91280,7 +91330,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -91290,7 +91340,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -91313,7 +91363,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -91401,7 +91451,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -91424,7 +91474,7 @@
    "url": "https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -93321,7 +93371,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -93344,7 +93394,7 @@
    "url": "https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -94558,7 +94608,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -94581,7 +94631,7 @@
    "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -94591,7 +94641,7 @@
    "overlap": "same publisher as sgnva",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -94614,7 +94664,7 @@
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -94624,7 +94674,7 @@
    "overlap": "same publisher as sgnva",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -94647,7 +94697,7 @@
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -95056,7 +95106,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -95079,7 +95129,7 @@
    "url": "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -95193,7 +95243,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -95216,7 +95266,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -95226,7 +95276,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -95249,7 +95299,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -95259,7 +95309,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -95282,7 +95332,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -95962,7 +96012,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -95985,7 +96035,7 @@
    "url": "https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -103742,7 +103792,7 @@
    "overlap": "same publisher as sguta",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -103765,7 +103815,7 @@
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Desert_Bighorn_Sheep_Habitat/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -103964,7 +104014,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -103987,7 +104037,7 @@
    "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -104845,7 +104895,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -104868,7 +104918,7 @@
    "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_GeoTaggedPhotosToPoints/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -104878,7 +104928,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -104901,7 +104951,7 @@
    "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -104911,7 +104961,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -104934,7 +104984,7 @@
    "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_ON_Drone_Photos/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -105208,7 +105258,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -105231,7 +105281,7 @@
    "url": "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -105241,7 +105291,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -105264,7 +105314,7 @@
    "url": "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel from Fort McPherson (30, 60, 90 Minutes)/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -105779,7 +105829,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -105802,7 +105852,7 @@
    "url": "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Nose_Hill_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -106453,7 +106503,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -106476,7 +106526,7 @@
    "url": "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Deschutes_Client___David_Cale____Property_Profile___K_Bar_J_Ranch_LLC___2_2024/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -106836,7 +106886,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -106859,7 +106909,7 @@
    "url": "https://services.arcgis.com/LYLybGgpUDJN7hG1/arcgis/rest/services/Beaver_Hills_Biosphere/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -107390,7 +107440,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -107413,7 +107463,7 @@
    "url": "https://services7.arcgis.com/w6NthAjz2I62jeb8/arcgis/rest/services/Périmètre_projeté_Rennes_Beaulieu_2040_(vue)/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -108324,7 +108374,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -108347,7 +108397,7 @@
    "url": "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/SHELTER_The_Church_of_Jesus_Christ_of_Latter_day_Saints/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -109359,7 +109409,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -109382,7 +109432,7 @@
    "url": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -109574,7 +109624,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -109597,7 +109647,7 @@
    "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Signal_Hill_Oil_and_Gas_Sites_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -110553,7 +110603,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -110576,7 +110626,7 @@
    "url": "https://services.arcgis.com/hnx6Tshv9A7VucmF/arcgis/rest/services/FIVE_MILE_DRIVE_DISTANCE_FROM_CONWAY_SC_FIRE_STATIONS/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -110586,7 +110636,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -110609,7 +110659,7 @@
    "url": "https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/FiveMile_All_Stations/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -113676,7 +113726,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -113699,7 +113749,7 @@
    "url": "https://services.arcgis.com/bwohQix8s7zRvYC9/arcgis/rest/services/Laberge_Herd_Range/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -113709,7 +113759,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -113732,7 +113782,7 @@
    "url": "https://services.arcgis.com/eDGut86ch1ami1yK/arcgis/rest/services/Lucky_Star_ALTA_SurveyPoints/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -113926,7 +113976,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -113949,7 +113999,7 @@
    "url": "https://services.arcgis.com/0ahKkMERRbqrhR00/arcgis/rest/services/Twin_Lakes_Watershed/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -113959,7 +114009,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -113982,7 +114032,7 @@
    "url": "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/Watson_Grinding_Manufacturing_B/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -113992,7 +114042,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -114015,7 +114065,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/2020_Occupied_Range/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -114025,7 +114075,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -114048,7 +114098,7 @@
    "url": "https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -115565,7 +115615,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -115588,7 +115638,7 @@
    "url": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -115809,7 +115859,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -115832,7 +115882,7 @@
    "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -115842,7 +115892,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -115865,7 +115915,7 @@
    "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -117673,7 +117723,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -117696,7 +117746,7 @@
    "url": "https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -117706,7 +117756,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -117729,7 +117779,7 @@
    "url": "https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -119689,7 +119739,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -119712,7 +119762,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Fisher_Habitat_Connectivity/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -121097,7 +121147,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -121120,7 +121170,7 @@
    "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -121284,7 +121334,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -121307,7 +121357,7 @@
    "url": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Bitter_Choices_map/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -121399,7 +121449,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -121422,7 +121472,7 @@
    "url": "https://services.arcgis.com/Q04ork8YjhJM33BZ/arcgis/rest/services/BRV_Cenotaph/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -121432,7 +121482,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -121455,7 +121505,7 @@
    "url": "https://services.arcgis.com/K4fN7yNby2Elaqgr/arcgis/rest/services/Map_of_Surface_Mines_mmis_mine_data_locations_in_the_E__KY_Coalfields_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -121465,7 +121515,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -121488,7 +121538,7 @@
    "url": "https://services7.arcgis.com/AyCBzKtPcinRzhMG/arcgis/rest/services/survey123_0f2029d16cfc452698f731146bc48378_fieldworker/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -121869,7 +121919,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -121892,7 +121942,7 @@
    "url": "https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Arts_Employment_Alex_Hackett_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -122300,7 +122350,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -122323,7 +122373,7 @@
    "url": "https://services.arcgis.com/8vL8ZFWfQxhb4uIP/arcgis/rest/services/Neely_Yates_Travelogue_Story_Map_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -124509,7 +124559,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -124532,7 +124582,7 @@
    "url": "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -125154,7 +125204,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -125177,7 +125227,7 @@
    "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Uplands_to_Wetlands_2100_Polygon/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -125628,7 +125678,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -125651,7 +125701,7 @@
    "url": "https://services.arcgis.com/vQ8kO5zdqETeirEL/arcgis/rest/services/AllCO/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -128384,7 +128434,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -128407,7 +128457,7 @@
    "url": "https://services7.arcgis.com/HJ6NuXYZF6fDjms9/arcgis/rest/services/Customer_Small_Cell_Site_Locations_View/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -128417,7 +128467,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -128440,7 +128490,7 @@
    "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Transmission_Lines/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -128450,7 +128500,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -128473,7 +128523,7 @@
    "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Substations/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -128483,7 +128533,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -128506,7 +128556,7 @@
    "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Tax_Parcels/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -129432,7 +129482,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -129455,7 +129505,7 @@
    "url": "https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -129822,7 +129872,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -129845,7 +129895,7 @@
    "url": "https://services7.arcgis.com/ixihoGz4QXyz0Lzr/arcgis/rest/services/ZONAGE_BEAUBASSIN/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -129945,7 +129995,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -129968,7 +130018,7 @@
    "url": "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_111c587100984e129ee5c7e075f771e4_fieldworker/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -129978,7 +130028,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130001,7 +130051,7 @@
    "url": "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_d653b32dc13344b4af0240de42d541a8_fieldworker/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130011,7 +130061,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130034,7 +130084,7 @@
    "url": "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/HPG_Damaged_Trees/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130044,7 +130094,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130067,7 +130117,7 @@
    "url": "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/Public_Trees/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130162,7 +130212,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130185,7 +130235,7 @@
    "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130195,7 +130245,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130218,7 +130268,7 @@
    "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Photos/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130228,7 +130278,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130251,7 +130301,7 @@
    "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/LakesideON_Survey_Route/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130430,7 +130480,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130453,7 +130503,7 @@
    "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Shea_Hamblin_Health_Index/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130463,7 +130513,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130486,7 +130536,7 @@
    "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130496,7 +130546,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130519,7 +130569,7 @@
    "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130529,7 +130579,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130552,7 +130602,7 @@
    "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Boundary/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -130874,7 +130924,7 @@
    "overlap": "same publisher as Manitoba Par",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -130897,7 +130947,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -132688,7 +132738,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -132711,7 +132761,7 @@
    "url": "https://services.arcgis.com/BzylpWnjWP0tW4nL/arcgis/rest/services/Social_Pinpoint_O_Connell_ST_Traffic_Consultation/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -133199,7 +133249,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -133222,7 +133272,7 @@
    "url": "https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Parish/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -133232,7 +133282,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -133255,7 +133305,7 @@
    "url": "https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Affordable_Housing_Stock/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -133265,7 +133315,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -133288,7 +133338,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -133380,7 +133430,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -133403,7 +133453,7 @@
    "url": "https://services.arcgis.com/M7jYqE3B2GGmwJ5C/arcgis/rest/services/Bighead_Carp/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -133536,7 +133586,7 @@
    "overlap": "same service as Hard look~5 (another layer of it)",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -133559,7 +133609,7 @@
    "url": "https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -133650,7 +133700,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -133673,7 +133723,7 @@
    "url": "https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -135300,7 +135350,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -135323,7 +135373,7 @@
    "url": "https://services.arcgis.com/6dxqrE38upDMg1va/arcgis/rest/services/CVC_DSM_MapSvc/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -135333,7 +135383,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -135356,7 +135406,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Scenario_Model_Results/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -135366,7 +135416,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -135389,7 +135439,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Sensitivity_Compare_Nets/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -137114,7 +137164,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -137139,7 +137189,7 @@
    "url": "https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7"
   },
   {
    "approved": null,
@@ -138272,7 +138322,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -138295,7 +138345,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -138718,7 +138768,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -138741,7 +138791,7 @@
    "url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -138751,7 +138801,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -138774,7 +138824,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -139224,7 +139274,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -139247,7 +139297,7 @@
    "url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -140835,7 +140885,7 @@
    "overlap": "same publisher as Manitoba Par",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -140860,7 +140910,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0"
   },
   {
    "approved": null,
@@ -140870,7 +140920,7 @@
    "overlap": "already read as Manitoba wil",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -140895,7 +140945,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0"
   },
   {
    "approved": null,
@@ -140905,7 +140955,7 @@
    "overlap": "same service as Manitoba Par (another layer of it)",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -140930,7 +140980,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2"
   },
   {
    "approved": null,
@@ -143514,7 +143564,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -143539,7 +143589,7 @@
    "url": "https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2"
   },
   {
    "approved": null,
@@ -144760,7 +144810,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -144785,7 +144835,7 @@
    "url": "https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3"
   },
   {
    "approved": null,
@@ -149743,7 +149793,7 @@
    "overlap": "same publisher as sgnyb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -149768,7 +149818,7 @@
    "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0"
   },
   {
    "approved": null,
@@ -151622,7 +151672,7 @@
    "overlap": "already read as sguta",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -151646,7 +151696,7 @@
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -153375,7 +153425,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -153400,7 +153450,7 @@
    "url": "https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0"
   },
   {
    "approved": null,
@@ -154095,7 +154145,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -154120,7 +154170,7 @@
    "url": "https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0"
   },
   {
    "approved": null,
@@ -154615,7 +154665,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -154640,7 +154690,7 @@
    "url": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4"
   },
   {
    "approved": null,
@@ -157044,7 +157094,7 @@
    "overlap": "already read as state-gis MN wild",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -157068,7 +157118,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -157411,7 +157461,7 @@
    "overlap": "already read as fnl",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -157435,7 +157485,7 @@
    "url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -158510,7 +158560,7 @@
    "overlap": "already read as sgnva",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -158534,7 +158584,7 @@
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -159607,7 +159657,7 @@
    "overlap": "already read as Manitoba Par",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -159632,7 +159682,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0"
   },
   {
    "approved": null,
@@ -159642,7 +159692,7 @@
    "overlap": "same publisher as Manitoba Par",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -159667,7 +159717,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2"
   },
   {
    "approved": null,
@@ -162860,7 +162910,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -162884,7 +162934,7 @@
    "url": "https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -167939,7 +167989,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -167963,7 +168013,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -168812,7 +168862,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -168837,7 +168887,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0"
   },
   {
    "approved": null,
@@ -168847,7 +168897,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -168871,7 +168921,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -168881,7 +168931,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -168905,7 +168955,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -168915,7 +168965,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -168939,7 +168989,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -168949,7 +168999,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -168973,7 +169023,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -168983,7 +169033,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -169007,7 +169057,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -172446,7 +172496,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172471,7 +172521,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1"
   },
   {
    "approved": null,
@@ -172481,7 +172531,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172506,7 +172556,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10"
   },
   {
    "approved": null,
@@ -172516,7 +172566,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172541,7 +172591,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11"
   },
   {
    "approved": null,
@@ -172551,7 +172601,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172576,7 +172626,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12"
   },
   {
    "approved": null,
@@ -172586,7 +172636,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172611,7 +172661,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2"
   },
   {
    "approved": null,
@@ -172621,7 +172671,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172646,7 +172696,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3"
   },
   {
    "approved": null,
@@ -172656,7 +172706,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172681,7 +172731,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4"
   },
   {
    "approved": null,
@@ -172691,7 +172741,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172716,7 +172766,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5"
   },
   {
    "approved": null,
@@ -172726,7 +172776,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172751,7 +172801,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6"
   },
   {
    "approved": null,
@@ -172761,7 +172811,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172786,7 +172836,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7"
   },
   {
    "approved": null,
@@ -172796,7 +172846,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172821,7 +172871,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8"
   },
   {
    "approved": null,
@@ -172831,7 +172881,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -172856,7 +172906,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9"
   },
   {
    "approved": null,
@@ -174574,7 +174624,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -174599,7 +174649,7 @@
    "url": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1"
   },
   {
    "approved": null,
@@ -179137,7 +179187,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -179161,7 +179211,7 @@
    "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fee_Managers_PADUS/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -179171,7 +179221,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -179196,7 +179246,7 @@
    "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0"
   },
   {
    "approved": null,
@@ -179615,7 +179665,7 @@
    "overlap": "same publisher as sgarc",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -179639,7 +179689,7 @@
    "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMABoundaries/FeatureServer/13",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -179649,7 +179699,7 @@
    "overlap": "already read as sgarc",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -179673,7 +179723,7 @@
    "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -179683,7 +179733,7 @@
    "overlap": "same publisher as sgarc",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -179707,7 +179757,7 @@
    "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/waterTrails/FeatureServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -180935,7 +180985,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -180959,7 +181009,7 @@
    "url": "https://services.arcgis.com/4x406oNViizbGo13/arcgis/rest/services/Ice_Age_Floods_National_Geologic_Trail_and_Sites/FeatureServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -182439,7 +182489,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -182463,7 +182513,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -182950,7 +183000,7 @@
    "overlap": "same publisher as sgnva",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -182974,7 +183024,7 @@
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Nevada_Department_of_Wildlife_Fish_Hatchery_Locations/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -183073,7 +183123,7 @@
    "overlap": "same publisher as sgnyb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -183097,7 +183147,7 @@
    "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -183491,7 +183541,7 @@
    "overlap": "same publisher as sgorb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -183515,7 +183565,7 @@
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Trails_Hosted_view/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -183692,7 +183742,7 @@
    "overlap": "already read as sgsca",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -183716,7 +183766,7 @@
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -184077,7 +184127,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -184101,7 +184151,7 @@
    "url": "https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Historic_Trails/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -184570,7 +184620,7 @@
    "overlap": "same publisher as sguta",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -184595,7 +184645,7 @@
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0"
   },
   {
    "approved": null,
@@ -187462,7 +187512,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -187486,7 +187536,7 @@
    "url": "https://services7.arcgis.com/g5PyWjvBbQnqjM1q/arcgis/rest/services/Parks/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -187496,7 +187546,7 @@
    "overlap": "already read as Manitoba pro",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -187520,7 +187570,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -187530,7 +187580,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -187554,7 +187604,7 @@
    "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Nepisiguit_Mi_Gmaq_Trail/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -187564,7 +187614,7 @@
    "overlap": "same publisher as state-gis NB park",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -187589,7 +187639,7 @@
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0"
   },
   {
    "approved": null,
@@ -188901,7 +188951,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -188925,7 +188975,7 @@
    "url": "https://services.arcgis.com/zDM7FT1DAx3jnRiA/arcgis/rest/services/GBMGB_Boundary/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -189787,7 +189837,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -189811,7 +189861,7 @@
    "url": "https://services.arcgis.com/R021c2tizs65xROe/arcgis/rest/services/INT_NAProps_ForSite/FeatureServer/587",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -189821,7 +189871,7 @@
    "overlap": "already read as state-gis PE preserve",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -189845,7 +189895,7 @@
    "url": "https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -191537,7 +191587,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -191562,7 +191612,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0"
   },
   {
    "approved": null,
@@ -191982,7 +192032,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -192006,7 +192056,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -192016,7 +192066,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -192040,7 +192090,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Areas_of_Conservation_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -192050,7 +192100,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -192074,7 +192124,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Protection_Areas_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -193830,7 +193880,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -193854,7 +193904,7 @@
    "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -193958,7 +194008,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -193982,7 +194032,7 @@
    "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -193992,7 +194042,7 @@
    "overlap": "same publisher as sgnyb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -194015,7 +194065,7 @@
    "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -194026,7 +194076,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "Defra group ArcGIS Online organisation",
@@ -194049,7 +194099,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -194059,7 +194109,7 @@
    "overlap": "already read as state-gis ID park",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -194083,7 +194133,7 @@
    "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -194961,7 +195011,7 @@
    "overlap": "same publisher as sgnyb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -194985,7 +195035,7 @@
    "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Trails/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -194995,7 +195045,7 @@
    "overlap": "same publisher as sgorb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -195019,7 +195069,7 @@
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Oregon_Signature_Trails_Feature_Layer/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -196062,7 +196112,7 @@
    "overlap": "already read as sgutb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -196086,7 +196136,7 @@
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -199520,7 +199570,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -199544,7 +199594,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ramsar_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -202037,7 +202087,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -202061,7 +202111,7 @@
    "url": "https://services7.arcgis.com/mbEujVpJG0aE29fS/arcgis/rest/services/Protected_Areas_and_Other_Effective_Conservation_Measures/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -202885,7 +202935,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -202909,7 +202959,7 @@
    "url": "https://services.arcgis.com/qchgHH9IIeiivY5M/arcgis/rest/services/CNMI_Marine_Protected_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -203104,7 +203154,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -203128,7 +203178,7 @@
    "url": "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/ProtectedArea/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -203342,7 +203392,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -203367,7 +203417,7 @@
    "url": "https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0"
   },
   {
    "approved": null,
@@ -203960,7 +204010,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -203984,7 +204034,7 @@
    "url": "https://services7.arcgis.com/GaT8GzOa0Kqi9sL7/arcgis/rest/services/GovernmentParcels2025_WithoutLandtax/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -204206,7 +204256,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -204230,7 +204280,7 @@
    "url": "https://services7.arcgis.com/rVwbcvflURVxkV6s/arcgis/rest/services/Greenspace_3_view/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -206752,7 +206802,7 @@
    "overlap": "already read as idw",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -206776,7 +206826,7 @@
    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -206879,7 +206929,7 @@
    "overlap": "already read as sgila",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -206903,7 +206953,7 @@
    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -206913,7 +206963,7 @@
    "overlap": "same publisher as sgila",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -206938,7 +206988,7 @@
    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3"
   },
   {
    "approved": null,
@@ -208313,7 +208363,7 @@
    "overlap": "already read as sgmnd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -208337,7 +208387,7 @@
    "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -209496,7 +209546,7 @@
    "overlap": "already read as sgnmb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -209520,7 +209570,7 @@
    "url": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -210021,7 +210071,7 @@
    "overlap": "same publisher as sgorb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -210046,7 +210096,7 @@
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0"
   },
   {
    "approved": null,
@@ -210056,7 +210106,7 @@
    "overlap": "same publisher as sgorb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -210081,7 +210131,7 @@
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0"
   },
   {
    "approved": null,
@@ -210339,7 +210389,7 @@
    "overlap": "already read as sgscd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -210363,7 +210413,7 @@
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -210373,7 +210423,7 @@
    "overlap": "already read as sgscc",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -210397,7 +210447,7 @@
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -210407,7 +210457,7 @@
    "overlap": "already read as sgtnd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -210431,7 +210481,7 @@
    "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -212857,7 +212907,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -212881,7 +212931,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Coast_Path_Route/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -214259,7 +214309,7 @@
     },
     "service_item": "bcc580bcee394abb82f39608c07465a1"
    },
-   "probed": "2026-11-03",
+   "probed": "2026-11-04",
    "publisher": "",
    "publisher_test": [
     "official",
@@ -214309,7 +214359,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -214334,7 +214384,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0"
   },
   {
    "approved": null,
@@ -214454,7 +214504,7 @@
    "overlap": "same publisher as sgazd",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -214478,7 +214528,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -214679,7 +214729,7 @@
    "overlap": "already read as sgidb",
    "probe": {
     "opened": false,
-    "status": "rest"
+    "status": "robots-unreadable"
    },
    "probed": "2026-11-04",
    "publisher": "",
@@ -214703,7 +214753,7 @@
    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (rest): chat 9 checks the url"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -214871,7 +214921,7 @@
    "queue_licence": "",
    "queue_note": "ArcGIS Online search for Burnt Island Provincial Park (owner William.DeVoe@maine.gov_maine)",
    "queue_url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer",
-   "retry": true,
+   "retry": false,
    "sig": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer|MaineDMR - Burnt Island Trails|||ArcGIS Online search for Burnt Island Provincial Park (owner William.DeVoe@maine.gov_maine)|",
    "terms": {
     "class": "NOTHING STATED",
@@ -214883,7 +214933,151 @@
    "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (robots-unreadable): probed again next run (failed 2 of 3)"
+   "why": "did not open 3 times (robots-unreadable): chat 9 checks the url"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "outside research Oct 30",
+   "overlap": "already read as sgvah",
+   "probe": {
+    "copyright": "",
+    "count": 3169,
+    "description": "",
+    "extent": [
+     -9317824.732,
+     4375406.463,
+     -8388538.052,
+     4771378.751,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "Shape",
+     "DHR_ID",
+     "SecondaryDhrIDs",
+     "PropertyNames",
+     "HistoricDistrictName",
+     "NREligibilityStatus",
+     "PrimaryResourceType",
+     "ResearchCollections",
+     "URL"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "VLR/NRHP/NHL Listed",
+    "name_field": "PropertyNames",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Grandma Moses House (Historic/Current), Major James Crawford",
+     "House, 4336 Monticola Road (Function/Location), Monticola (H",
+     "Montebello (Historic)"
+    ],
+    "service_item": ""
+   },
+   "probed": "2026-11-04",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host vcris.dhr.virginia.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "3 SURE / LIKELY of 3 assigned parks/trails",
+   "queue_url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3",
+   "requests_used": 4,
+   "sig": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3|VLR/NRHP/NHL Listed (outside research Oct 30)|||3 SURE / LIKELY of 3 assigned parks/trails|",
+   "terms": {
+    "about": "This map service contains 5 seperate layers of data from the Virginia Department of Historic Resources (VDHR) for public view. These layers include: Architecture Labels - these are the name of resource in the architectuaral database of VDHR. Public View Architecture Points - This layer represents ce",
+    "class": "CREDIT",
+    "credit": "Virginia Department of Historic Resources",
+    "item_url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/info/iteminfo",
+    "licence_text": "Public",
+    "line": "Public Virginia Department of Historic Resources",
+    "source": "item page",
+    "title": "dhr_public"
+   },
+   "test": "",
+   "title": "VLR/NRHP/NHL Listed (outside research Oct 30)",
+   "url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "already read as sgvah: nothing new to take"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "outside research Oct 30",
+   "overlap": "already read as ON-SVCA Grey",
+   "probe": {
+    "copyright": "",
+    "count": 172,
+    "description": "",
+    "extent": [
+     -9085688.789,
+     5457498.192,
+     -8943813.049,
+     5544495.614,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "PROPERTY_N",
+     "TRACT_NUMB",
+     "DESCRIPTIO",
+     "ARN",
+     "CIVIC_ADDR",
+     "STREET_NAM",
+     "MPAC_STREE",
+     "TOWNSHIP",
+     "MUNICIPALI",
+     "COUNTY",
+     "URL",
+     "Shape",
+     "Area_Ha"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Properties - SVCA",
+    "name_field": "PROPERTY_N",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Clifford Complex",
+     "Drew Bog",
+     "Denny's Dam Conservation Area"
+    ],
+    "service_item": "b3d133ac72594b6899840d3236692bd7"
+   },
+   "probed": "2026-11-04",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government words: County"
+   ],
+   "queue_licence": "",
+   "queue_note": "2 SURE / LIKELY of 2 assigned parks/trails",
+   "queue_url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4",
+   "requests_used": 6,
+   "sig": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4|Properties - SVCA (outside research Oct 30)|||2 SURE / LIKELY of 2 assigned parks/trails|",
+   "terms": {
+    "about": "Map service for planning-related data in the County of Grey. Includes current county official plan, previous official plan, lower tier zoning for Southgate, West Grey, Grey Highlands and Georgian Bluffs, Conservation Authority data and additional information about aggregates. Data related to plannin",
+    "class": "CREDIT",
+    "credit": "County of Grey, Township of Southgate, Township of Georgian Bluffs, Municipality of Grey Highlands, Municipality of West Grey, Grey Sauble Conservation Authority, Nottawasaga Valley Conservation Authority, Saugeen Valley Conservation Authority, Grand River Conservation Authority",
+    "item_url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "County of Grey, Township of Southgate, Township of Georgian Bluffs, Municipality of Grey Highlands, Municipality of West Grey, Grey Sauble Conservation Authorit",
+    "source": "item page",
+    "title": "Service_ConservationAuthorities"
+   },
+   "test": "",
+   "title": "Properties - SVCA (outside research Oct 30)",
+   "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "already read as ON-SVCA Grey: nothing new to take"
   }
  ],
  "updated": "2026-11-04"

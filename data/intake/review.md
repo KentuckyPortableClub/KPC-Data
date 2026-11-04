@@ -9,7 +9,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | LIVE-ONLY | 5 |
 | ASK-THE-PUBLISHER | 422 |
 | RETRY | 366 |
-| REJECT | 1655 |
+| REJECT | 1657 |
 
 ## READY (2)
 
@@ -4092,10 +4092,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
@@ -4109,10 +4109,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Slovenia protected areas (ARSO, INSPIRE PS WFS)  ·  W-SI  ·  from chat 9
 - url: https://prostor4.gov.si/ows2-ins/ps/wfs
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: Agencija RS za okolje (ARSO) / Slovenian Environment Agency → official (government host prostor4.gov.si)
 - terms: OPEN · source GetCapabilities + queue row · "ATOM feed rights: 'No limitations'"
-- facts: wfs · status rest
+- facts: wfs · status robots-unreadable
 - closes: not probed: WFS point query not built
 - TEST: ok
 
@@ -4665,24 +4665,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Civil War Battlefields  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Civil War Battlefields (time-enabled)  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
@@ -4714,10 +4714,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
@@ -4749,10 +4749,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Flint River Access  ·    ·  from gis-hunter
 - url: https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Captain John Smith Chesapeake National Historic Trail  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer
@@ -4791,10 +4791,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Watershed of the Blanchard River  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
@@ -4826,10 +4826,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
@@ -4854,17 +4854,17 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### 040723 Hwy_ 271 – Hwy_ 64 _Towson Ave__ _Fort Smith__WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Oklahoma Tribal Statistical Areas  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Chickasaw Nation  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer
@@ -4875,59 +4875,59 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Climate Indicator First Leaf Dates (EPA 2021)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Leaf_Collection_Areas  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Area_Caney_Fork_Fields  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Caney_Fork_Bulk_Density_2020_data_Prediction  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Caney_Fork_Bulk_Density_2020_Prediction  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Routes from Columbus State Community College to National Parks ASC  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Amory  ·    ·  from gis-hunter
 - url: https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Amory Port South- property Outline  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer
@@ -4945,10 +4945,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Antelope Reservoir Fish Advisory  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgorb
 
 ### PARCELS Lone Rock Ranch  ·    ·  from gis-hunter
@@ -4960,52 +4960,52 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### East Bay North Shore Impacted Census Tracts  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### East Bay North Shore Marine Terminals  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Bear Gulch Dam Failure Area  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Clatsop County, Oregon (MOC) - Draft Floodplains (2024.01.31) - Feature Service  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Clatsop County, Oregon - Effective Floodplains (2018.09.23) - Feature Service  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Clatsop County, Oregon (Mouth of the Columbia) - Flood Risk Products (2024.12.02) - FS  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### North_Santiam_Tour_POI  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Oregon Dept of Forestry - Santiam Aerials  ·    ·  from gis-hunter
 - url: https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer
@@ -5017,10 +5017,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Dugway Proving Grounds  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sguta
 
 ### Schools Buffer Mallo  ·    ·  from gis-hunter
@@ -5032,118 +5032,118 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Nashvilles Highland Rim Forest  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 
 ### Cottonwood Canyon Weather Monitoring Data  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cottonwood Canyons Route Travel Times  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### R1 Morgan State St Study Segments  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Morgan State St Active Transportation  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### R1 Morgan State St Intersections  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### MP RV Lot Hammer Head View Layer  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Wildfire Smoke Forecast in Canada - Feature Service  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### SlidingWindows_ARTESIA_view_V1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Dixie Valley Toad Distribution in Nevada  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnva
 
 ### Tui Chub in Dixie Valley Distribution in Nevada  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnva
 
 ### NI Areas of Outstanding Natural Beauty AONB  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Region Four South Parowan Pine Canyon Drive Alt Model 1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Region Four South Parowan Pine Canyon Drive Alt Model 2  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Region Four South Parowan Pine Canyon Drive Alt Model 3  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### The Wash and North Norfolk Coast SAC  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### SLIP_Public_Services/Farming_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/3
@@ -5459,116 +5459,116 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Utah Desert Bighorn Sheep Habitat  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Desert_Bighorn_Sheep_Habitat/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sguta
 
 ### Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Belmont, ON - July 19, 2020 - Drone Photos  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_GeoTaggedPhotosToPoints/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Belmont, ON - June 10, 2020 - Drone Flight Paths  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Belmont, ON - June 10, 2020 - Drone Photos  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_ON_Drone_Photos/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Travel Time from Fort McPherson (30, 60, 90 Minutes)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Travel from Fort McPherson (30, 60, 90 Minutes)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel from Fort McPherson (30, 60, 90 Minutes)/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Nose_Hill_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Nose_Hill_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### OR_Deschutes_Client _ David Cale  _ Property Profile _ K Bar J Ranch LLC _ 2_2024  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Deschutes_Client___David_Cale____Property_Profile___K_Bar_J_Ranch_LLC___2_2024/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Beaver_Hills_Biosphere  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LYLybGgpUDJN7hG1/arcgis/rest/services/Beaver_Hills_Biosphere/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Périmètre projeté Rennes Beaulieu 2040 (vue)  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/w6NthAjz2I62jeb8/arcgis/rest/services/Périmètre_projeté_Rennes_Beaulieu_2040_(vue)/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### SHELTER The Church of Jesus Christ of Latter_day Saints  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/SHELTER_The_Church_of_Jesus_Christ_of_Latter_day_Saints/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### L'Anse Aux Meadows  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Signal Hill Oil and Gas Sites_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Signal_Hill_Oil_and_Gas_Sites_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### FIVE MILE DRIVE DISTANCE FROM CONWAY SC FIRE STATIONS  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/hnx6Tshv9A7VucmF/arcgis/rest/services/FIVE_MILE_DRIVE_DISTANCE_FROM_CONWAY_SC_FIRE_STATIONS/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Five Mile Reach of All Snoco Fire Stations  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/FiveMile_All_Stations/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Conrad_Zoning  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/IxTFx7t7oe2NViid/arcgis/rest/services/Conrad_Zoning/FeatureServer
@@ -5587,96 +5587,96 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Laberge caribou herd range  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/bwohQix8s7zRvYC9/arcgis/rest/services/Laberge_Herd_Range/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Lucky_Star_ALTA_SurveyPoints  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/eDGut86ch1ami1yK/arcgis/rest/services/Lucky_Star_ALTA_SurveyPoints/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Twin Lakes Watershed  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0ahKkMERRbqrhR00/arcgis/rest/services/Twin_Lakes_Watershed/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Watson Grinding Manufacturing B  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/Watson_Grinding_Manufacturing_B/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### FWS R2 ES Mexican Wolf Project  2020 Occupied Range Map  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/2020_Occupied_Range/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 
 ### Gray Wolf and Eastern Wolf Historical Range  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Provencher_classification  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Vimy Ridge Battle Map_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Vimy_Ridge  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Detroit_Demographics_Hannah_Buhler  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Maple_Grove_Planting_Sites  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Fisher Habitat Connectivity Feature  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Fisher_Habitat_Connectivity/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 
 ### Beacon Hill Home Zone Boundary Line  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Find Locations in Beacon Hill 2 (Areas)  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/FeatureServer
@@ -5694,45 +5694,45 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Bitter Choices map  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Bitter_Choices_map/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### BRV_Cenotaph_FriendsMemorial  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/Q04ork8YjhJM33BZ/arcgis/rest/services/BRV_Cenotaph/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Map of Surface Mines mmis mine data locations in the E_ KY Coalfields_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/K4fN7yNby2Elaqgr/arcgis/rest/services/Map_of_Surface_Mines_mmis_mine_data_locations_in_the_E__KY_Coalfields_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Palestra Elaine Terceiro_fieldworker  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/AyCBzKtPcinRzhMG/arcgis/rest/services/survey123_0f2029d16cfc452698f731146bc48378_fieldworker/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Arts Employment Alex Hackett_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Arts_Employment_Alex_Hackett_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Neely Yates Travelogue Story Map_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/8vL8ZFWfQxhb4uIP/arcgis/rest/services/Neely_Yates_Travelogue_Story_Map_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Nisga’a Memorial Lava Bed Park Comments_fieldworker  ·    ·  from gis-hunter
 - url: https://services3.arcgis.com/V6CSJCQOs0jUJNOw/arcgis/rest/services/survey123_3e63cb512c644486a9dd5e51818f1317_fieldworker/FeatureServer
@@ -5743,52 +5743,52 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### OR_Tillamook_Client _ Tracy Chung _ Property Profile _ 14050 Riverview Meadows Ln _ 9_2024  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Uplands_to_Wetlands_2100_Polygon  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Uplands_to_Wetlands_2100_Polygon/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### RD_AllCO  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/vQ8kO5zdqETeirEL/arcgis/rest/services/AllCO/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Crown Castle Small Cell Sites  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/HJ6NuXYZF6fDjms9/arcgis/rest/services/Customer_Small_Cell_Site_Locations_View/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cates Landing Transmission Lines  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Transmission_Lines/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cates Landing Substations  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Substations/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cates Landing Tax Parcels  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Tax_Parcels/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Servidão Rádio Eléctrica (Rádio Marconi) - Telecomunicações  ·    ·  from gis-hunter
 - url: http://geoportal.cm-amadora.pt/ArcGIS/rest/services/5_PMOTS_PDM_condicionantes/MapServer/21
@@ -5821,94 +5821,94 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Shubenacadie Aquifer Protection Overlay Zone  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### ZONAGE_BEAUBASSIN  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/ixihoGz4QXyz0Lzr/arcgis/rest/services/ZONAGE_BEAUBASSIN/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Perceptions of The Piece Hall Halifax_fieldworker  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_111c587100984e129ee5c7e075f771e4_fieldworker/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Piece Hall and Halifax Town Centre Perceptions questionnaire. - Copy_fieldworker  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_d653b32dc13344b4af0240de42d541a8_fieldworker/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Halifax Public Gardens Damaged Trees  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/HPG_Damaged_Trees/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### All Halifax Public Gardens Trees  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/Public_Trees/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Lakeside, ON - May 16, 2025 - Drone Flight Paths  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Lakeside, ON - May 16, 2025 - Drone Photos  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Photos/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Lakeside, ON - May 16, 2025 - Survey Route  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/LakesideON_Survey_Route/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Shea_Hamblin_Health_Index  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Shea_Hamblin_Health_Index/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Daly_Point_Areas_of_Interest  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Daly_Point_Trails  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Daly_Point_Boundary  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Boundary/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Gray Treefrog (Hyla versicolor)  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureServer
@@ -5919,47 +5919,47 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Rockwood Sensitive Area  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as Manitoba Par
 
 ### Social Pinpoint O Connell ST Traffic Consultation  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/BzylpWnjWP0tW4nL/arcgis/rest/services/Social_Pinpoint_O_Connell_ST_Traffic_Consultation/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Thurne Parish  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Parish/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Thurne Affordable Housing Stock  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Affordable_Housing_Stock/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### FWS Midwest and Northeast Regions FAC Bighead and Silver Carp eDNA Data Feature Layer View  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 
 ### Bighead_Carp  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jYqE3B2GGmwJ5C/arcgis/rest/services/Bighead_Carp/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Frontenac Arch Biosphere Region Boundary  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/sMxDdLiczOFCdYFP/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer
@@ -5970,39 +5970,39 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Frontenac Arch Biosphere Region Boundary  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same service as Hard look~5 (another layer of it)
 
 ### Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cedar Valley College Disabilities Services  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/6dxqrE38upDMg1va/arcgis/rest/services/CVC_DSM_MapSvc/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cedar Valley Highway _ Scenario Model Results  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Scenario_Model_Results/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Cedar Valley Highway _ Sensitivity Compare Nets  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Sensitivity_Compare_Nets/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Merge Sunnidale_Playground Sunnidale Park Facilities  ·    ·  from gis-hunter
 - url: https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park Facilities/FeatureServer
@@ -6013,11 +6013,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Dumfries & Galloway TTG Management Plans  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Buffer_of_Edenvale_Hospitals  ·    ·  from gis-hunter
@@ -6043,10 +6043,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Little Tennessee Conservation Priority Areas by HUC12  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 
 ### Spencer Town Boundary  ·    ·  from gis-hunter
@@ -6058,347 +6058,347 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Inland Empire Utilities Agency Divisions  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### FWS WSFR Nevada Bighorn Sheep Herds   ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 
 ### Rim of the World Recreation and Park Divisions  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
 ### Manitoba Par (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as Manitoba Par
 - closes: not probed
 
 ### Refuges (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as Manitoba wil
 - closes: not probed
 
 ### Manitoba wil~2 (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same service as Manitoba Par (another layer of it)
 - closes: not probed
 
 ### Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### TDEC_Public_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### NYS_Park_Polygon (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnyb
 - closes: not probed
 
 ### Utah State Park Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sguta
 - closes: not probed
 
 ### Hiking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Historic Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### StateParks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### FWSBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as state-gis MN wild
 - closes: not probed
 
 ### FL_Conservation_Lands_web (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as fnl
 - closes: not probed
 
 ### Wildlife Management Areas Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgnva
 - closes: not probed
 
 ### Manitoba Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as Manitoba Par
 - closes: not probed
 
 ### Wildlife_Management_Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as Manitoba Par
 - closes: not probed
 
 ### Protected_Areas_Project (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Utah Scenic Byways (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### National Nature Reserves (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### National Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### National Trails (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Areas of Outstanding Natural Beauty (England) © Natural Engl (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Country Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Sites of Special Scientific Interest (England) © Natural Eng (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### ESG_FFH_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### S_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### main.IUCN_Ia_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### main.IUCN_Ib_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### ESG_VSR_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### NP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### ESG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### NSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### BP_AT_2025 (exkl. St - Untere Mur) (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### LSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### GLT_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### NAP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Protected Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### SLIP_Public_Services/Water  ·  AU  ·  from harvester
@@ -6435,335 +6435,335 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### PADUS4_1FeeManagers (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fee_Managers_PADUS/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### TVA Undeveloped Recreation Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### WMABoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMABoundaries/FeatureServer/13
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgarc
 - closes: not probed
 
 ### lakes (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgarc
 - closes: not probed
 
 ### waterTrails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/waterTrails/FeatureServer/12
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgarc
 - closes: not probed
 
 ### Ice Age Floods National Geologic Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/4x406oNViizbGo13/arcgis/rest/services/Ice_Age_Floods_National_Geologic_Trail_and_Sites/FeatureServer/1
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### FWSInterest_Simplified (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 - closes: not probed
 
 ### ndow_hatcheries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Nevada_Department_of_Wildlife_Fish_Hatchery_Locations/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnva
 - closes: not probed
 
 ### ESTLeg (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer/3
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnyb
 - closes: not probed
 
 ### TR_REC_TRAILS (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Trails_Hosted_view/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### SCDNR Properties Public Dissolved (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org acgZYxoN5Oj8pDLa = South Carolina DNR's own ArcGIS Online organisation)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgsca
 - closes: not probed
 
 ### Historic_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Historic_Trails/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Polygon layer (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sguta
 - closes: not probed
 
 ### Park (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/g5PyWjvBbQnqjM1q/arcgis/rest/services/Parks/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Manitoba Provincial Forests - Version 6 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as Manitoba pro
 - closes: not probed
 
 ### Nepisiguit_Mi_Gmaq_Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Nepisiguit_Mi_Gmaq_Trail/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as state-gis NB park
 - closes: not probed
 
 ### GBMGB_Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/zDM7FT1DAx3jnRiA/arcgis/rest/services/GBMGB_Boundary/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### INT_NaturalAreas_ForWebsite (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/R021c2tizs65xROe/arcgis/rest/services/INT_NAProps_ForSite/FeatureServer/587
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### NCC_AT_Nature_Reserves_Public_Map (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as state-gis PE preserve
 - closes: not probed
 
 ### Doorstep Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### CRoW Conclusive Registered Common Land © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Special Areas of Conservation (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Areas_of_Conservation_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Special Protection Areas (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Protection_Areas_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Properties (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Forest Park (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Empire State Trail  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnyb
 
 ### Millennium Greens (England) polygons  ·  GB  ·  from harvester
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: Defra group ArcGIS Online organisation → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - TEST: MISS READY or REJECT vs RETRY
 
 ### Recreation Area (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org n1YM8pTrFmm7L4hs = U.S. Army Corps of Engineers)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as state-gis ID park
 - closes: not probed
 
 ### Transportation (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Trails/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgnyb
 - closes: not probed
 
 ### Signature Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Oregon_Signature_Trails_Feature_Layer/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### WMAs (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgutb
 - closes: not probed
 
 ### Ramsar (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ramsar_England/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Protected_Areas_and_Other_Effective_Conservation_Measures (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/mbEujVpJG0aE29fS/arcgis/rest/services/Protected_Areas_and_Other_Effective_Conservation_Measures/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### marine_protected_areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/qchgHH9IIeiivY5M/arcgis/rest/services/CNMI_Marine_Protected_Areas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Protected_Areas_of_Maldives_EPA_V4_1 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/ProtectedArea/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### PGEM_Aires_marines_protégées_(TeFenua)_0 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### GovernmentParcelsV2 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/GaT8GzOa0Kqi9sL7/arcgis/rest/services/GovernmentParcels2025_WithoutLandtax/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Greenspace_Phase2_06052022 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/rVwbcvflURVxkV6s/arcgis/rest/services/Greenspace_3_view/FeatureServer/4
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
@@ -6810,142 +6810,175 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as idw
 - closes: not probed
 
 ### Public Sector (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgila
 - closes: not probed
 
 ### Illinois Nature Preserves Commission (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgila
 - closes: not probed
 
 ### Minnesota State Parks, Recreation Areas, & Waysides - Statut (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgmnd
 - closes: not probed
 
 ### NM_State_Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgnmb
 - closes: not probed
 
 ### All State Owned & Managed Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### Wildlife Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### SCDNR Public Properties View (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org acgZYxoN5Oj8pDLa = South Carolina DNR's own ArcGIS Online organisation)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgscd
 - closes: not probed
 
 ### Heritage_Preserve_Layer_CopyFeatures (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org acgZYxoN5Oj8pDLa = South Carolina DNR's own ArcGIS Online organisation)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgscc
 - closes: not probed
 
 ### Tennessee State Forest Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgtnd
 - closes: not probed
 
 ### King Charles III England Coast Path Coastal Route © Natural  (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Coast_Path_Route/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - closes: not probed
 
 ### FWSApproved (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 - closes: not probed
 
 ### FWS_NWRS_HQ_PubHuntUnits (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: same publisher as sgazd
 - closes: not probed
 
 ### Lakes and Reservoirs - Public (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 - overlap: already read as sgidb
 - closes: not probed
 
 ### MaineDMR - Burnt Island Trails  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer
-- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status robots-unreadable
 - overlap: same publisher as sgmea
 
-## REJECT (1655)
+## REJECT (1657)
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 60 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 1796 of the area's 1796 missing parks lie in the layer's extent)
+  - AU-0002 Willis Island National Park → polygon "Cape York Region"
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
+  - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
+  - AU-0034 Swan Estuary Marine Park → polygon "South West"
+  - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
+  - AU-0046 Rowley Shoals Marine Park → polygon "Kimberley"
+  - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
+  - AU-0060 Ngari Capes Marine Park → polygon "South West"
+  - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "South West"
+  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
+  - AU-0099 Wunaamin Conservation Park → polygon "Kimberley"
+  - AU-0126 Geikie Gorge National Park → polygon "Kimberley"
+  - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
+  - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
+  - AU-0162 Brooking Gorge Conservation Park → polygon "Kimberley"
+  - AU-0181 You Yangs Regional Park → polygon "Victoria"
+  - AU-0184 Yarrawonga Regional Park → polygon "New South Wales"
+  - AU-0187 Yaringa Marine National Park → polygon "Victoria"
+  - AU-0196 Woowookarung Regional Park → polygon "Victoria"
+  - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
+  - AU-0199 Wodonga Regional Park → polygon "Victoria"
+  - AU-0216 Wandong Regional Park → polygon "Victoria"
+  - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
+  - AU-0230 Tocumwal Regional Park → polygon "Victoria"
+  - AU-0250 St Arnaud Regional Park → polygon "Victoria"
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/0
@@ -6979,39 +7012,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
   - AU-0230 Tocumwal Regional Park → polygon "Victoria"
   - AU-0250 St Arnaud Regional Park → polygon "Victoria"
-
-### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
-- WHY: NOT A PARK LAYER (coverage): closes 50 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
-- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
-- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
-- closes: 50 of 60 tested missing parks (by name 0, pin only 50; 1796 of the area's 1796 missing parks lie in the layer's extent)
-  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
-  - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
-  - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
-  - AU-0060 Ngari Capes Marine Park → polygon "South West"
-  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
-  - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
-  - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
-  - AU-0181 You Yangs Regional Park → polygon "Victoria"
-  - AU-0184 Yarrawonga Regional Park → polygon "New South Wales"
-  - AU-0187 Yaringa Marine National Park → polygon "Victoria"
-  - AU-0196 Woowookarung Regional Park → polygon "Victoria"
-  - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
-  - AU-0199 Wodonga Regional Park → polygon "Victoria"
-  - AU-0216 Wandong Regional Park → polygon "Victoria"
-  - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
-  - AU-0250 St Arnaud Regional Park → polygon "Victoria"
-  - AU-0258 Shepparton Regional Park → polygon "Victoria"
-  - AU-0260 Shallow Inlet Coastal & Marine Park → polygon "Victoria"
-  - AU-0273 Port Phillip Heads Marine National Park → polygon "Victoria"
-  - AU-0277 Point Hicks Marine National Park → polygon "Victoria"
-  - AU-0278 Point Cook Coastal Park → polygon "Victoria"
-  - AU-0279 Point Addis Marine National Park → polygon "Victoria"
-  - AU-0293 Nooramunga Coastal & Marine Park → polygon "Victoria"
-  - AU-0295 Ninety Mile Beach Marine National Park → polygon "Victoria"
-  - AU-0326 Mount Alexander Regional Park → polygon "Victoria"
 
 ### Public/CadastreParcels  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer/0
@@ -20765,6 +20765,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: (owner to check: Bahamas government or partner) → hosted for an agency (a university account holds an agency layer)
 - terms: CREDIT · source item page · "Bahamas National Trust, The Nature Conservancy Bahamas National Trust, The Nature Conservancy" · item https://www.arcgis.com/home/item.html?id=96fc80722cf14f6f889fba7550f3a816 · owner csuguest15 · org Colorado State University
 - facts: arcgis-layer · esriGeometryPolygon · 14 records · last edit 2025-07-17
+- closes: not probed
+
+### VLR/NRHP/NHL Listed (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3
+- WHY: already read as sgvah: nothing new to take
+- publisher: ? → official (government host vcris.dhr.virginia.gov)
+- terms: CREDIT · source item page · "Public Virginia Department of Historic Resources" · item https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PropertyNames · 3169 records · sample Grandma Moses House (Historic/Current), Major James Crawford / House, 4336 Monticola Road (Function/Location), Monticola (H / Montebello (Historic)
+- overlap: already read as sgvah
+- closes: not probed
+
+### Properties - SVCA (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4
+- WHY: already read as ON-SVCA Grey: nothing new to take
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "County of Grey, Township of Southgate, Township of Georgian Bluffs, Municipality of Grey Highlands, Municipality of West Grey, Grey Sauble Conservation Authorit" · item https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROPERTY_N · 172 records · sample Clifford Complex / Drew Bog / Denny's Dam Conservation Area
+- overlap: already read as ON-SVCA Grey
 - closes: not probed
 
 ## Known-answer test rows
