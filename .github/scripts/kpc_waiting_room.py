@@ -688,7 +688,37 @@ def c_cell(path, new, live, ctx):
     return bad, notes
 
 
+PILE_VERDICTS = {'SOLVED-JOIN': 'YES', 'SOLVED-PIN': 'PIN', 'NEEDS-PERSON': 'NOT SURE', 'UNTOUCHED': ''}
+PILE_BAD_SRC = re.compile(r'openstreetmap|\bosm\b|wdpa|protectedplanet|google\.|alltrails|wikipedia|wikidata', re.I)
+
+
+def c_pile_solver(path, new, live, ctx):
+    """Review pile solver proposals (Nov 4 handoff, section 8): one known verdict per park with its answer word; every SOLVED-JOIN has
+    an official evidence URL, a record id, a distance and no rule-18 note, and a pin more than 100 m out carries 'POTA pin may be off';
+    every NEEDS-PERSON says what is missing; no row claims a person's approval. Independent of the solver's code (F: imports none)."""
+    bad = []
+    P = want_dict(want_dict(new, 'the file').get('parks'), 'parks')
+    if not P: bad.append('no parks')
+    cnt = {}
+    for ref, r in P.items():
+        r = want_dict(r, ref); v = r.get('verdict'); cnt[v] = cnt.get(v, 0) + 1
+        if v not in PILE_VERDICTS: bad.append(f'{ref}: unknown verdict {v!r}'); continue
+        if (r.get('answer_word') or '') != PILE_VERDICTS[v]: bad.append(f"{ref}: verdict {v} with answer word {r.get('answer_word')!r}")
+        if r.get('approved_by'): bad.append(f'{ref}: a bot row may not name an approver')
+        if v == 'SOLVED-JOIN':
+            ev = str(r.get('evidence_urls') or '')
+            if not ev or PILE_BAD_SRC.search(ev): bad.append(f'{ref}: SOLVED-JOIN without an official evidence URL')
+            if not r.get('record_id'): bad.append(f'{ref}: SOLVED-JOIN without a record id')
+            try: d = float(r.get('distance_m'))
+            except (TypeError, ValueError): bad.append(f'{ref}: SOLVED-JOIN without a distance'); continue
+            if r.get('rule18_note'): bad.append(f'{ref}: SOLVED-JOIN with a rule-18 note')
+            if d > 100 and r.get('pin_flag') != 'POTA pin may be off': bad.append(f'{ref}: pin {d:g} m out without the POTA pin flag')
+        if v == 'NEEDS-PERSON' and not str(r.get('whats_missing') or '').strip(): bad.append(f'{ref}: NEEDS-PERSON without what is missing')
+    return bad[:20], [f'{len(P)} parks: ' + ', '.join(f'{k} {n}' for k, n in sorted(cnt.items()))]
+
+
 ROUTES = [
+    (r'^data/pile-solver/(?:US-[A-Z]{2}|CA-[A-Z]{2}|[A-Z]{2})\.json$', 'pilesolver', c_pile_solver),   # Nov 4: review pile solver proposals
     (r'^data/access/index\.json$', 'info', lambda path, new, live, ctx: ([], ['the access index: passes when it reads as JSON'])),
     (r'^data/access/[^/]+\.json$', 'access', c_access),
     (r'^data/campfed/US-[A-Z]{2}\.json$', 'campfed', c_campfed),
