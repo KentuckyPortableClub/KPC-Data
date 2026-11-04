@@ -1,65 +1,65 @@
-# Spot check: outline (20 random rows of 3303)
+# Spot check: outline (20 random rows of 3370)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## CA-4908 Fort Temiscamingue National Historic Site (CA-QC)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Obadjiwan–Fort Témiscamingue National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4684&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-79.4569%2C47.2903&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Obadjiwan–Fort Témiscamingue National Historic Site' (Q-1781); pin inside; about 65.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## US-10473 Sandy Ridge BLM Recreation Management Area (US-OR)
+## CA-5664 Massie Hills Management Area (CA-ON)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Sandy Ridge Trailhead
-- url: https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0?f=html
-- record_link: https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?where=OBJECTID%3D7036&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?geometry=-122.03%2C45.3807&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-land-208 'Sandy Ridge Trailhead', PACK-US-AK-land-214 'Sandy Ridge Trailhead', WB-US-482 'Sandy Ridge Trailhead': merged, counted once; record 'Sandy Ridge Trailhead' (PACK-US-OR-land-323); pin inside; about 51.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Massie Hills
+- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html
+- record_link: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1053&outFields=%2A&f=html
+- source_url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-80.8101%2C44.5076&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 2
+- why: same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Massie Hills' (PACK-CA-ON-land-405); pin 2 m from the edge; about 231.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-3389 Spooner Lake and Backcountry State Park (US-NV)
+## CA-4817 Castle Hill National Historic Site (CA-NL)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Castle Hill National Historic Site
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D14&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-53.9719%2C47.2509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Castle Hill National Historic Site' (PACK-CA-NB-land-73); pin inside; about 57.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## CA-0515 Parc de la Chute-Montmorency Provincial Park (CA-QC)
 - status: candidate
 - tier: T-2
 - band: WEAK
-- record_name: Spooner and Backcountry Lake Tahoe-Nevada State Park
-- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0?f=html
-- record_link: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html
-- source_url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?geometry=-119.913%2C39.1071&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Site patrimonial de la Chute-Montmorency
+- url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- record_link: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- source_url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
 - pin_m: 0
-- why: record 'Spooner and Backcountry Lake Tahoe-Nevada State Park' (PACK-US-NV-land-303); pin inside; about 13392.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Site patrimonial de la Chute-Montmorency' (PACK-CA-QC-land-392); pin inside; about 355.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4911 Lachine Canal National Historic Site (CA-QC)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Lieu historique national du Canal-de-Lachine
+## CA-4887 Sir John Johnson House National Historic Site (CA-ON)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Sir John Johnson House National Historic Site
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1997&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.666%2C45.4311&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 3
-- why: same land also in Q-1819 'Lieu Historique National du Canada du-Canal-de-Lachine', Q-1819 'Lieu Historique National du Canada du-Canal-de-Lachine': merged, counted once; record 'Lieu historique national du Canal-de-Lachine' (Q-1781); pin 3 m from the edge; about 355.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4694&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-74.579%2C45.1449&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Sir John Johnson House National Historic Site' (PACK-CA-NB-land-73); pin inside; about 8.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-4339 Pontoon Lake Territorial Park (CA-NT)
-- status: candidate
-- tier: T-6
-- band: WEAK
-- record_name: Pontoon Lake
-- url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16?f=html
-- record_link: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?where=OBJECTID%3D31512&outFields=%2A&f=html
-- source_url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?geometry=-114.026%2C62.5531&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 6
-- why: record 'Pontoon Lake' (PACK-CA-NT-park-85); pin 6 m from the edge; about 5.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+## CA-4902 Coteau du Lac National Historic Site (CA-QC)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Coteau-du-Lac National Historic Site
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2051&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-74.1775%2C45.2878&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Coteau-du-Lac National Historic Site' (PACK-CA-NB-land-73); pin inside; about 13.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-13287 Pershing County State Historical Monument (US-NV)
@@ -86,52 +86,52 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-NV-land-305 'Pioneer Memorial Park': merged, counted once; record 'Pioneer Memorial Park' (PACK-US-NV-land-303); pin 16 m from the edge; about 5.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
 - answer: 
 
-## CA-4917 Montmorency Park National Historic Site (CA-QC)
-- status: candidate
-- tier: T-4
-- band: WEAK
-- record_name: Lieu historique national du Parc-Montmorency
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1820&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-71.2047%2C46.8139&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-CA-QC-land-393 'Site patrimonial du Vieux-Québec': merged, counted once; record 'Lieu historique national du Parc-Montmorency' (Q-1781); pin 0 m from the edge; about 1.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
-- answer: 
-
-## US-5852 Mexican Mountain Wilderness BLM Backcountry Airstrip (US-UT)
-- status: candidate
-- tier: T-6
-- band: WEAK
-- record_name: Mexican Mountain
-- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0?f=html
-- record_link: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?where=OBJECTID%3D256&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?geometry=-110.45%2C39.0188&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Mexican Mountain' (PACK-US-land-383); pin inside; about 83489.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## US-4167 Interlake State Recreation Area (US-IN)
+## CA-4896 Battle of the Chateauguay National Historic Site (CA-QC)
 - status: candidate
 - tier: T-2
 - band: WEAK
-- record_name: Interlake Off-Road State Recreation Area
-- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4061&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.2215%2C38.2278&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Battle of the Châteauguay National Historic Site CNPA
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2042&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.929%2C45.1587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Interlake Off-Road State Recreation Area' (PACK-US-IN-land-191); pin inside; about 3652.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Battle of the Châteauguay National Historic Site CNPA' (Q-1781); pin inside; about 3.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-12025 Goose Creek State Game Land (US-IN)
+## CA-4908 Fort Temiscamingue National Historic Site (CA-QC)
 - status: candidate
-- tier: T-4
+- tier: T-2
 - band: WEAK
-- record_name: Goose Creek Gamebird Habitat Area
-- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3804&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.3503%2C40.5114&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Obadjiwan–Fort Témiscamingue National Historic Site
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4684&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-79.4569%2C47.2903&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Goose Creek Gamebird Habitat Area' (PACK-US-IN-land-191); pin inside; about 376.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: record 'Obadjiwan–Fort Témiscamingue National Historic Site' (Q-1781); pin inside; about 65.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-10237 Mongoquinong State Nature Preserve (US-IN)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Mongoquinong Nature Preserve
+- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4818&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.314%2C41.6957&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Mongoquinong Nature Preserve' (PACK-US-IN-land-191); pin inside; about 159.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## CA-5631 Cavan Swamp Wildlife Area (CA-ON)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Cavan Swamp Wildlife Area - Mount Pleasant Block
+- url: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2?f=html
+- record_link: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2/query?where=OBJECTID%3D95&outFields=%2A&f=html
+- source_url: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2/query?geometry=-78.4557%2C44.2829&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 9
+- why: record 'Cavan Swamp Wildlife Area - Mount Pleasant Block' (PACK-CA-ON-land-407); pin 9 m from the edge; about 278.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-3389 Spooner Lake and Backcountry State Park (US-NV)
@@ -146,28 +146,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Spooner and Backcountry Lake Tahoe-Nevada State Park' (PACK-US-NV-land-303); pin inside; about 13392.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-10473 Sandy Ridge BLM Recreation Management Area (US-OR)
+## CA-5663 Hepworth Management Area (CA-ON)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Sandy Ridge Trailhead
-- url: https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0?f=html
-- record_link: https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?where=OBJECTID%3D7036&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?geometry=-122.03%2C45.3807&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-land-208 'Sandy Ridge Trailhead', PACK-US-AK-land-214 'Sandy Ridge Trailhead', PACK-US-NV-land-45 'Sandy River': merged, counted once; record 'Sandy Ridge Trailhead' (PACK-US-OR-land-323); pin inside; about 51.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Hepworth
+- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html
+- record_link: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1056&outFields=%2A&f=html
+- source_url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-81.1159%2C44.6283&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 19
+- why: same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Hepworth' (PACK-CA-ON-land-405); pin 19 m from the edge; about 93.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-3385 Mt. St. Helens National Monument (US-WA)
+## US-13453 Original Homesite of a Las Vegas Pioneer “Pop” Squires 1865-1958 State Historical Monument (US-NV)
 - status: candidate
-- tier: T-2
+- tier: T-6
 - band: WEAK
-- record_name: Mount Saint Helens National Volcanic Monument
-- url: https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1?f=html
-- record_link: https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D2698&outFields=%2A&f=html
-- source_url: https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?geometry=-122.217%2C46.2769&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Las Vegas Field Office
+- url: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/3?f=html
+- record_link: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/3/query?where=OBJECTID%3D579&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/3/query?geometry=-115.141%2C36.1646&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Mount Saint Helens National Volcanic Monument' (PACK-US-WA-land-366); pin inside; about 112634.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: same land also in Q-1472 '', Q-1473 'Southern Nevada District': merged, counted once; record 'Las Vegas Field Office' (Q-1474); pin inside; about 4775670.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
 ## US-13324 Sparks State Historical Monument (US-NV)
@@ -194,40 +194,40 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-NV-land-305 'Beaver Dam State Park', PACK-US-NV-park-306 'Beaver Dam State Park': merged, counted once; record 'Beaver Dam State Park' (PACK-US-NV-land-303); pin inside; about 5390.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4817 Castle Hill National Historic Site (CA-NL)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Castle Hill National Historic Site
+## CA-4917 Montmorency Park National Historic Site (CA-QC)
+- status: candidate
+- tier: T-4
+- band: WEAK
+- record_name: Lieu historique national du Parc-Montmorency
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D14&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-53.9719%2C47.2509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1820&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-71.2047%2C46.8139&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Castle Hill National Historic Site' (PACK-CA-NB-land-73); pin inside; about 57.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-CA-QC-land-393 'Site patrimonial du Vieux-Québec': merged, counted once; record 'Lieu historique national du Parc-Montmorency' (Q-1781); pin 0 m from the edge; about 1.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
 - answer: 
 
-## US-13419 Chambers Lake State Fishing Lake (US-WA)
+## US-13392 Massey Bar State Recreation Site (US-WA)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Chambers Lake
+- record_name: Massey Bar
 - url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html
-- record_link: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.84%2C47.033&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- source_url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.84%2C47.033&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-WA-land-366 'Thurston County Lakes': merged, counted once; record 'Chambers Lake' (PACK-US-WA-wildlife-364); pin inside; about 2.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_link: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.807%2C46.4588&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- source_url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.807%2C46.4588&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 22
+- why: record 'Massey Bar' (PACK-US-WA-wildlife-364); pin 22 m from the edge; about 10.9 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-4168 Frances Slocum on Mississinewa Lake State Recreation Area (US-IN)
+## US-12016 Round Lake State Nature Preserve (US-IN)
 - status: candidate
-- tier: T-3
+- tier: T-2
 - band: WEAK
-- record_name: Mississinewa Lake
+- record_name: Round Lake Wetland Nature Preserve
 - url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4563&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.923%2C40.7126&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D5016&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-86.6656%2C41.2362&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-IN-land-387 'Mississinewa Lake': merged, counted once; record 'Mississinewa Lake' (PACK-US-IN-land-191); pin inside; about 13068.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Round Lake Wetland Nature Preserve' (PACK-US-IN-land-191); pin inside; about 138.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## CA-5857 Banc de Pêche de Paspébiac National Historic Site (CA-QC)
