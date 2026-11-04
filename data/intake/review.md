@@ -7,8 +7,8 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | READY | 2 |
 | WATER-ONLY | 41 |
 | LIVE-ONLY | 5 |
-| ASK-THE-PUBLISHER | 422 |
-| RETRY | 366 |
+| ASK-THE-PUBLISHER | 421 |
+| RETRY | 367 |
 | REJECT | 1657 |
 
 ## READY (2)
@@ -537,7 +537,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAZEV · 1111 records · sample Blatov a Xaverovský háj / Lochkovský profil / Milíčovský les
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## ASK-THE-PUBLISHER (422)
+## ASK-THE-PUBLISHER (421)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -596,14 +596,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 5186 records · sample Rubus fruticosus / Ulex europaeus / Hypericum perforatum subsp. veronense
-- closes: 7 of 60 tested missing parks (by name 0, pin only 7; 60 of the area's 1796 missing parks lie in the layer's extent)
+- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 60 of the area's 1796 missing parks lie in the layer's extent)
   - AU-10758 Pardoe Northdown Conservation Area → polygon "Asparagus asparagoides"
   - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Brachionichthys hirsutus"
-  - AU-8812 Nutgrove Beach - State Beach → polygon "Brachionichthys hirsutus"
-  - AU-8858 Howrah Beach - State Beach → polygon "Brachionichthys hirsutus"
-  - AU-8865 Shelly Beach - State Beach → polygon "Brachionichthys hirsutus"
-  - AU-8866 Opossum Bay Beach - State Beach → polygon "Brachionichthys hirsutus"
-  - AU-8867 Glenvar Beach - State Beach → polygon "Brachionichthys hirsutus"
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/0
@@ -688,14 +683,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 44 records · sample Kanamaluka / Taypalaka / Luemerrernanner
 - closes: not probed
-
-### Public/NVAdata  ·  AU  ·  from harvester
-- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/7
-- WHY: nothing stated about use on the item page or the service
-- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 14 records · sample Digitalis purpurea / Ulex europaeus / Ulex europaeus
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/12
@@ -4088,7 +4075,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: wfs
 - closes: not probed: WFS point query not built
 
-## RETRY (366)
+## RETRY (367)
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
@@ -4165,35 +4152,43 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
-- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/10
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/7
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status budget
+- facts: status rest
+- closes: not probed
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/10
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: status rest
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/11
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status budget
+- facts: status rest
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/13
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status budget
+- facts: status rest
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/17
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status budget
+- facts: status rest
 - closes: not probed
 
 ### Public/NaturalEnvironment  ·  AU  ·  from harvester

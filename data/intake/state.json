@@ -1,6 +1,8 @@
 {
  "gate": "FAIL",
- "hosts": {},
+ "hosts": {
+  "services.thelist.tas.gov.au": 1793883815.2142458
+ },
  "last_run": "2026-11-04",
  "manners": {
   "arcgis_exempt": 0,
@@ -64,15 +66,15 @@
     "robots.txt answered unreachable: nothing fetched from prostor4.gov.si this run"
    ]
   ],
-  "requests": 1283,
-  "rested": 0,
+  "requests": 862,
+  "rested": 6,
   "robots": 14,
   "robots_unreadable": 14,
   "strikes": 0
  },
  "rows": {
   "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer|Canyon De Chelly National Monument, AZ (Data Basin Dataset)|||ArcGIS Online search for Canyon de Chelly National Monument (owner consbio)|",
@@ -81,7 +83,7 @@
    ]
   },
   "http://geoportal.cm-amadora.pt/ArcGIS/rest/services/5_PMOTS_PDM_condicionantes/MapServer/21": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "http://geoportal.cm-amadora.pt/ArcGIS/rest/services/5_PMOTS_PDM_condicionantes/MapServer/21|Servidão Rádio Eléctrica (Rádio Marconi) - Telecomunicações|||ArcGIS Online search for Marconi National Historic Site (owner benitezm_uji)|",
@@ -495,7 +497,7 @@
    ]
   },
   "https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer|Amory|||ArcGIS Online search for Amory Recreation Area State Recreation Area (owner Corporate_GIS)|",
@@ -1358,7 +1360,7 @@
    ]
   },
   "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer|Flint River Access|||ArcGIS Online search for TVA Flint Creek Access National Park (owner andrewmindermann)|",
@@ -2014,7 +2016,7 @@
    ]
   },
   "https://gis.blm.gov/idarcgis/rest/services/nlcs/BLM_ID_Craters_of_the_Moon_and_Morley_Nelson_Birds_of_Prey/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://gis.blm.gov/idarcgis/rest/services/nlcs/BLM_ID_Craters_of_the_Moon_and_Morley_Nelson_Birds_of_Prey/FeatureServer|BLM ID Craters of the Moon and Morley Nelson Birds of Prey|||ArcGIS Online search for Morley River Recreation Park (owner ggoodwin@blm.gov_BLM_EGIS)|",
@@ -4042,7 +4044,7 @@
    ]
   },
   "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer|Black Marble High Definition (BMHD) in Porto Alegre for the May 2024 Brasil Floods|||ArcGIS Online search for Black River State Park (owner gwlayne_NASA)|",
@@ -4793,7 +4795,7 @@
    ]
   },
   "https://prostor4.gov.si/ows2-ins/ps/wfs": {
-   "fails": 76,
+   "fails": 78,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
@@ -4813,7 +4815,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer": {
-   "fails": 45,
+   "fails": 47,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
@@ -4829,7 +4831,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer|SLIP_Public_Services/Boundaries|public-services.slip.wa.gov.au|SLIP/Landgate||",
@@ -4845,7 +4847,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer": {
-   "fails": 66,
+   "fails": 68,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer|SLIP_Public_Services/Boundaries_WFS|public-services.slip.wa.gov.au|LANDGATE/SLIP||",
@@ -4861,7 +4863,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer": {
-   "fails": 69,
+   "fails": 71,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer|SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS|public-services.slip.wa.gov.au|||",
@@ -4877,7 +4879,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer": {
-   "fails": 41,
+   "fails": 43,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer|SLIP_Public_Services/Environment|public-services.slip.wa.gov.au|You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. ||",
@@ -4902,7 +4904,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer|SLIP_Public_Services/Environment_WFS|public-services.slip.wa.gov.au|You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. ||",
@@ -4918,7 +4920,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer": {
-   "fails": 66,
+   "fails": 68,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer|SLIP_Public_Services/Farming|public-services.slip.wa.gov.au|SLIP||",
@@ -4934,7 +4936,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer": {
-   "fails": 65,
+   "fails": 67,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer|SLIP_Public_Services/Farming_WFS|public-services.slip.wa.gov.au|SLIP||",
@@ -4950,7 +4952,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer": {
-   "fails": 65,
+   "fails": 67,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer|SLIP_Public_Services/Industry_and_Mining|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
@@ -4966,7 +4968,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer": {
-   "fails": 65,
+   "fails": 67,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer|SLIP_Public_Services/Industry_and_Mining_WFS|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
@@ -5286,7 +5288,7 @@
    ]
   },
   "https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Buffer_of_Edenvale_Hospitals/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Buffer_of_Edenvale_Hospitals/FeatureServer|Buffer_of_Edenvale_Hospitals|||ArcGIS Online search for Edenvale Conservation Area (owner CentralSBI)|",
@@ -5295,7 +5297,7 @@
    ]
   },
   "https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Edenvale_Shopping_Centres/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Edenvale_Shopping_Centres/FeatureServer|Edenvale Shopping Centres|||ArcGIS Online search for Edenvale Conservation Area (owner CentralSBI)|",
@@ -5304,7 +5306,7 @@
    ]
   },
   "https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Travel_from_Edenvale_Hospitals_(2_3_Kilometers)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Travel_from_Edenvale_Hospitals_(2_3_Kilometers)/FeatureServer|Travel_from_Edenvale_Hospitals_(2_3_Kilometers)|||ArcGIS Online search for Edenvale Conservation Area (owner CentralSBI)|",
@@ -5594,7 +5596,7 @@
    ]
   },
   "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer|Daly_Point_Areas_of_Interest|||ArcGIS Online search for Daly Point Nature Reserve (owner Gordon_Dixon)|",
@@ -5603,7 +5605,7 @@
    ]
   },
   "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Boundary/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Boundary/FeatureServer|Daly_Point_Boundary|||ArcGIS Online search for Daly Point Nature Reserve (owner Gordon_Dixon)|",
@@ -5612,7 +5614,7 @@
    ]
   },
   "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer|Daly_Point_Trails|||ArcGIS Online search for Daly Point Nature Reserve (owner Gordon_Dixon)|",
@@ -5621,7 +5623,7 @@
    ]
   },
   "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Nepisiguit_Mi_Gmaq_Trail/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Nepisiguit_Mi_Gmaq_Trail/FeatureServer/0|Nepisiguit_Mi_Gmaq_Trail (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -5666,7 +5668,7 @@
    ]
   },
   "https://services.arcgis.com/0ahKkMERRbqrhR00/arcgis/rest/services/Twin_Lakes_Watershed/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/0ahKkMERRbqrhR00/arcgis/rest/services/Twin_Lakes_Watershed/FeatureServer|Twin Lakes Watershed|||ArcGIS Online search for Twin Lakes Recreation Park (owner HVAMaps_HVAtoday)|",
@@ -5675,7 +5677,7 @@
    ]
   },
   "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer|Watershed of the Blanchard River|||ArcGIS Online search for Blanchard State Forest (owner brwp1237)|",
@@ -5684,7 +5686,7 @@
    ]
   },
   "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0|NYS_Park_Polygon (outside research Oct 30)|||177 SURE / LIKELY of 191 assigned parks/trails|",
@@ -5693,7 +5695,7 @@
    ]
   },
   "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer": {
-   "fails": 11,
+   "fails": 13,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer|Empire State Trail|||ArcGIS Online search for Empire State Trail (owner Christina.Croll@parks.ny.gov_nysparks)|",
@@ -5702,7 +5704,7 @@
    ]
   },
   "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer/3": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer/3|ESTLeg (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -5711,7 +5713,7 @@
    ]
   },
   "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NYS_Park_Polygons/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NYS_Park_Polygons/FeatureServer/0|NYS_Park_Polygon (outside research Oct 30)|||0 SURE / LIKELY of 2 assigned parks/trails|",
@@ -5720,7 +5722,7 @@
    ]
   },
   "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Park_Properties/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Park_Properties/FeatureServer/0|NY State Park Property (outside research Oct 30)|||0 SURE / LIKELY of 2 assigned parks/trails|",
@@ -5729,7 +5731,7 @@
    ]
   },
   "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Trails/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Trails/FeatureServer/0|Transportation (outside research Oct 30)|||4 SURE / LIKELY of 4 assigned parks/trails|",
@@ -5747,7 +5749,7 @@
    ]
   },
   "https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer|MP RV Lot Hammer Head View Layer|||ArcGIS Online search for Hammer Creek Recreation Site BLM Recreation Management Area (owner LSD@MPHOA)|",
@@ -5756,7 +5758,7 @@
    ]
   },
   "https://services.arcgis.com/4x406oNViizbGo13/arcgis/rest/services/Ice_Age_Floods_National_Geologic_Trail_and_Sites/FeatureServer/1": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/4x406oNViizbGo13/arcgis/rest/services/Ice_Age_Floods_National_Geologic_Trail_and_Sites/FeatureServer/1|Ice Age Floods National Geologic Trail (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -5774,7 +5776,7 @@
    ]
   },
   "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMABoundaries/FeatureServer/13": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMABoundaries/FeatureServer/13|WMABoundaries (outside research Oct 30)|||0 SURE / LIKELY of 3 assigned parks/trails|",
@@ -5783,7 +5785,7 @@
    ]
   },
   "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11|lakes (outside research Oct 30)|||0 SURE / LIKELY of 2 assigned parks/trails|",
@@ -5792,7 +5794,7 @@
    ]
   },
   "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/waterTrails/FeatureServer/12": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/waterTrails/FeatureServer/12|waterTrails (outside research Oct 30)|||1 SURE / LIKELY of 1 assigned parks/trails|",
@@ -5801,7 +5803,7 @@
    ]
   },
   "https://services.arcgis.com/6dxqrE38upDMg1va/arcgis/rest/services/CVC_DSM_MapSvc/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/6dxqrE38upDMg1va/arcgis/rest/services/CVC_DSM_MapSvc/FeatureServer|Cedar Valley College Disabilities Services|||ArcGIS Online search for Cedar Valley Conservation Area (owner jblundell_BHCGIS)|",
@@ -5810,7 +5812,7 @@
    ]
   },
   "https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer|040723 Hwy_ 271 – Hwy_ 64 _Towson Ave__ _Fort Smith__WFL1|||ArcGIS Online search for Fort Towson State Historic Site (owner Gina.Hopkins@ardot.gov_ardot)|",
@@ -5828,7 +5830,7 @@
    ]
   },
   "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2|Minnesota State Parks, Recreation Areas, & Waysides - Statut (outside research Oct 30)|||50 SURE / LIKELY of 53 assigned parks/trails|",
@@ -5867,7 +5869,7 @@
    ]
   },
   "https://services.arcgis.com/8vL8ZFWfQxhb4uIP/arcgis/rest/services/Neely_Yates_Travelogue_Story_Map_WFL1/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/8vL8ZFWfQxhb4uIP/arcgis/rest/services/Neely_Yates_Travelogue_Story_Map_WFL1/FeatureServer|Neely Yates Travelogue Story Map_WFL1|||ArcGIS Online search for Neely Lake Recreation Site (owner suzanna.yates@g.austincc.edu)|",
@@ -5876,7 +5878,7 @@
    ]
   },
   "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/ArcGIS/rest/services/FL_Conservation_Lands_web/FeatureServer/9": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/ArcGIS/rest/services/FL_Conservation_Lands_web/FeatureServer/9|FL_Conservation_Lands_web (outside research Oct 30)|||0 SURE / LIKELY of 13 assigned parks/trails|",
@@ -5885,7 +5887,7 @@
    ]
   },
   "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9|FL_Conservation_Lands_web (outside research Oct 30)|||1 SURE / LIKELY of 1 assigned parks/trails|",
@@ -5912,7 +5914,7 @@
    ]
   },
   "https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0|Historic Sites (outside research Oct 30)|||0 SURE / LIKELY of 619 assigned parks/trails|",
@@ -5933,7 +5935,7 @@
    ]
   },
   "https://services.arcgis.com/BzylpWnjWP0tW4nL/arcgis/rest/services/Social_Pinpoint_O_Connell_ST_Traffic_Consultation/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/BzylpWnjWP0tW4nL/arcgis/rest/services/Social_Pinpoint_O_Connell_ST_Traffic_Consultation/FeatureServer|Social Pinpoint O Connell ST Traffic Consultation|||ArcGIS Online search for Connell Park Recreation Park (owner s.Henadeera_AdelaideCity)|",
@@ -5951,7 +5953,7 @@
    ]
   },
   "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0|Parks (outside research Oct 30)|||6 SURE / LIKELY of 12 assigned parks/trails|",
@@ -5987,7 +5989,7 @@
    ]
   },
   "https://services.arcgis.com/F7DSX1DSNSiWmOqh/ArcGIS/rest/services/AL_State_Lands_2025/FeatureServer/4": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/ArcGIS/rest/services/AL_State_Lands_2025/FeatureServer/4|StateParks (outside research Oct 30)|||0 SURE / LIKELY of 2 assigned parks/trails|",
@@ -6005,7 +6007,7 @@
    ]
   },
   "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer|Provencher_classification|||ArcGIS Online search for Provencher Park Recreation Park (owner jessie.pearl@tnc.org_TNC)|",
@@ -6024,7 +6026,7 @@
    ]
   },
   "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0": {
-   "fails": 12,
+   "fails": 14,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0|Lakes and Reservoirs - Public (outside research Oct 30)|||35 SURE / LIKELY of 35 assigned parks/trails|",
@@ -6033,7 +6035,7 @@
    ]
   },
   "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0|Wildlife Management Areas (outside research Oct 30)|||23 SURE / LIKELY of 27 assigned parks/trails|",
@@ -6051,7 +6053,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Nature_Reserves_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Nature_Reserves_England/FeatureServer/0|National Nature Reserves (England) © Natural England (outside research Oct 30)|||6 SURE / LIKELY of 16 assigned parks/trails|",
@@ -6060,7 +6062,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Parks_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Parks_England/FeatureServer/0|National Parks (England) © Natural England (outside research Oct 30)|||0 SURE / LIKELY of 10 assigned parks/trails|",
@@ -6069,7 +6071,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer/0|National Trails (England) © Natural England (outside research Oct 30)|||13 SURE / LIKELY of 276 assigned parks/trails|",
@@ -6078,7 +6080,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0|Areas of Outstanding Natural Beauty (England) © Natural Engl (outside research Oct 30)|||1 SURE / LIKELY of 6 assigned parks/trails|",
@@ -6087,7 +6089,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0|CRoW Conclusive Registered Common Land © Natural England (outside research Oct 30)|||11 SURE / LIKELY of 18 assigned parks/trails|",
@@ -6096,7 +6098,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0|Country Parks (England) © Natural England (outside research Oct 30)|||0 SURE / LIKELY of 311 assigned parks/trails|",
@@ -6113,7 +6115,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer/0|Doorstep Greens (Polygons) © Natural England (outside research Oct 30)|||2 SURE / LIKELY of 3 assigned parks/trails|",
@@ -6122,7 +6124,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Coast_Path_Route/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Coast_Path_Route/FeatureServer/0|King Charles III England Coast Path Coastal Route © Natural  (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6131,7 +6133,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0|Local Nature Reserves (England) © Natural England (outside research Oct 30)|||0 SURE / LIKELY of 522 assigned parks/trails|",
@@ -6140,7 +6142,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer": {
-   "fails": 43,
+   "fails": 45,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer|Millennium Greens (England) polygons|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g2): a Defra OGL harvester lead|READY or REJECT",
@@ -6149,7 +6151,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0|Millenium Greens (Polygons) © Natural England (outside research Oct 30)|||8 SURE / LIKELY of 12 assigned parks/trails|",
@@ -6158,7 +6160,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Nature_Reserves_England/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Nature_Reserves_England/FeatureServer/0|National Nature Reserves (England) © Natural England (outside research Oct 30)|||2 SURE / LIKELY of 7 assigned parks/trails|",
@@ -6167,7 +6169,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0|National Parks (England) © Natural England (outside research Oct 30)|||1 SURE / LIKELY of 2 assigned parks/trails|",
@@ -6176,7 +6178,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0|National Trails (England) © Natural England (outside research Oct 30)|||11 SURE / LIKELY of 14 assigned parks/trails|",
@@ -6185,7 +6187,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ramsar_England/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ramsar_England/FeatureServer/0|Ramsar (England) © Natural England (outside research Oct 30)|||4 SURE / LIKELY of 4 assigned parks/trails|",
@@ -6194,7 +6196,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0|Sites of Special Scientific Interest (England) © Natural Eng (outside research Oct 30)|||2 SURE / LIKELY of 51 assigned parks/trails|",
@@ -6211,7 +6213,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Areas_of_Conservation_England/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Areas_of_Conservation_England/FeatureServer/0|Special Areas of Conservation (England) © Natural England (outside research Oct 30)|||8 SURE / LIKELY of 10 assigned parks/trails|",
@@ -6220,7 +6222,7 @@
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Protection_Areas_England/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Protection_Areas_England/FeatureServer/0|Special Protection Areas (England) © Natural England (outside research Oct 30)|||3 SURE / LIKELY of 5 assigned parks/trails|",
@@ -6229,7 +6231,7 @@
    ]
   },
   "https://services.arcgis.com/K4fN7yNby2Elaqgr/arcgis/rest/services/Map_of_Surface_Mines_mmis_mine_data_locations_in_the_E__KY_Coalfields_WFL1/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/K4fN7yNby2Elaqgr/arcgis/rest/services/Map_of_Surface_Mines_mmis_mine_data_locations_in_the_E__KY_Coalfields_WFL1/FeatureServer|Map of Surface Mines mmis mine data locations in the E_ KY Coalfields_WFL1|||ArcGIS Online search for Coalfields Recreation Site (owner ken.bates@kysu.edu)|",
@@ -6238,7 +6240,7 @@
    ]
   },
   "https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Historic_Trails/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Historic_Trails/FeatureServer/0|Historic_Trails (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6247,7 +6249,7 @@
    ]
   },
   "https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer|Routes from Columbus State Community College to National Parks ASC|||ArcGIS Online search for Columbus Lake State Recreation Area (owner acriss2_ColumbusState)|",
@@ -6256,7 +6258,7 @@
    ]
   },
   "https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_prot%C3%A9g%C3%A9es_(TeFenua)/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_prot%C3%A9g%C3%A9es_(TeFenua)/FeatureServer/0|PGEM_Aires_marines_protégées_(TeFenua)_0 (outside research Oct 30)|||5 SURE / LIKELY of 6 assigned parks/trails|",
@@ -6265,7 +6267,7 @@
    ]
   },
   "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_111c587100984e129ee5c7e075f771e4_fieldworker/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_111c587100984e129ee5c7e075f771e4_fieldworker/FeatureServer|Perceptions of The Piece Hall Halifax_fieldworker|||ArcGIS Online search for Halifax City Hall National Historic Site (owner S210454)|",
@@ -6274,7 +6276,7 @@
    ]
   },
   "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_d653b32dc13344b4af0240de42d541a8_fieldworker/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_d653b32dc13344b4af0240de42d541a8_fieldworker/FeatureServer|Piece Hall and Halifax Town Centre Perceptions questionnaire. - Copy_fieldworker|||ArcGIS Online search for Halifax City Hall National Historic Site (owner S211775)|",
@@ -6283,7 +6285,7 @@
    ]
   },
   "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer|Travel Time from Fort McPherson (30, 60, 90 Minutes)|||ArcGIS Online search for Fort McPherson National Historic Site (owner gpower3)|",
@@ -6292,7 +6294,7 @@
    ]
   },
   "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel from Fort McPherson (30, 60, 90 Minutes)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel from Fort McPherson (30, 60, 90 Minutes)/FeatureServer|Travel from Fort McPherson (30, 60, 90 Minutes)|||ArcGIS Online search for Fort McPherson National Historic Site (owner gpower3)|",
@@ -6301,7 +6303,7 @@
    ]
   },
   "https://services.arcgis.com/LYLybGgpUDJN7hG1/arcgis/rest/services/Beaver_Hills_Biosphere/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/LYLybGgpUDJN7hG1/arcgis/rest/services/Beaver_Hills_Biosphere/FeatureServer|Beaver_Hills_Biosphere|||ArcGIS Online search for Beaver Hills Biosphere Reserve (owner CapitalRegionBoard)|",
@@ -6310,7 +6312,7 @@
    ]
   },
   "https://services.arcgis.com/M7jYqE3B2GGmwJ5C/arcgis/rest/services/Bighead_Carp/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/M7jYqE3B2GGmwJ5C/arcgis/rest/services/Bighead_Carp/FeatureServer|Bighead_Carp|||ArcGIS Online search for Bighead River Management Area (owner HubbardSWCD2020)|",
@@ -6319,7 +6321,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer|Area_Caney_Fork_Fields|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -6328,7 +6330,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer|Caney_Fork_Bulk_Density_2020_Prediction|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -6337,7 +6339,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes/FeatureServer|Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -6346,7 +6348,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer|Caney_Fork_Bulk_Density_2020_data_Prediction|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -6364,7 +6366,7 @@
    ]
   },
   "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/SHELTER_The_Church_of_Jesus_Christ_of_Latter_day_Saints/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/SHELTER_The_Church_of_Jesus_Christ_of_Latter_day_Saints/FeatureServer|SHELTER The Church of Jesus Christ of Latter_day Saints|||ArcGIS Online search for Temple of the Church of Jesus Christ of Latter Day Saints Na (owner e165791_MyCity)|",
@@ -6373,7 +6375,7 @@
    ]
   },
   "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/Watson_Grinding_Manufacturing_B/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/Watson_Grinding_Manufacturing_B/FeatureServer|Watson Grinding Manufacturing B|||ArcGIS Online search for Watson Lake Recreation Park (owner e165791_MyCity)|",
@@ -6382,7 +6384,7 @@
    ]
   },
   "https://services.arcgis.com/Q04ork8YjhJM33BZ/arcgis/rest/services/BRV_Cenotaph/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/Q04ork8YjhJM33BZ/arcgis/rest/services/BRV_Cenotaph/FeatureServer|BRV_Cenotaph_FriendsMemorial|||ArcGIS Online search for Cenotaph Regional Park Recreation Site (owner Peak_Geospatial)|",
@@ -6400,7 +6402,7 @@
    ]
   },
   "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Shea_Hamblin_Health_Index/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Shea_Hamblin_Health_Index/FeatureServer|Shea_Hamblin_Health_Index|||ArcGIS Online search for Shea Lake Natural Area (owner sheahamblin)|",
@@ -6409,7 +6411,7 @@
    ]
   },
   "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer|Vimy_Ridge|||ArcGIS Online search for Vimy Ridge Memorial Park Recreation Park (owner nicholasloiselle)|",
@@ -6418,7 +6420,7 @@
    ]
   },
   "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer|Vimy Ridge Battle Map_WFL1|||ArcGIS Online search for Vimy Ridge Memorial Park Recreation Park (owner DSSSGeography)|",
@@ -6427,7 +6429,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/2020_Occupied_Range/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/2020_Occupied_Range/FeatureServer|FWS R2 ES Mexican Wolf Project  2020 Occupied Range Map|||ArcGIS Online search for Wolf Creek Recreation Park (owner colby_gardner@fws.gov_fws)|",
@@ -6436,7 +6438,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer": {
-   "fails": 62,
+   "fails": 64,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer|FWS WSFR Nevada Bighorn Sheep Herds |||ArcGIS Online search for Sheep Creek State Recreation Area (owner elena_campbell@fws.gov_fws)|",
@@ -6445,7 +6447,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0": {
-   "fails": 12,
+   "fails": 14,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0|FWSApproved (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6454,7 +6456,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0|FWSInterest_Simplified (outside research Oct 30)|||1 SURE / LIKELY of 2 assigned parks/trails|",
@@ -6463,7 +6465,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0": {
-   "fails": 12,
+   "fails": 14,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0|FWS_NWRS_HQ_PubHuntUnits (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6472,7 +6474,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Fisher_Habitat_Connectivity/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Fisher_Habitat_Connectivity/FeatureServer|Fisher Habitat Connectivity Feature|||ArcGIS Online search for Fisher Trail National Recreation Trail (owner alan_yanahan@fws.gov_fws)|",
@@ -6481,7 +6483,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer": {
-   "fails": 62,
+   "fails": 64,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer|Little Tennessee Conservation Priority Areas by HUC12|||ArcGIS Online search for Little River State Park (owner emily_granstaff@fws.gov_fws)|",
@@ -6499,7 +6501,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer|Nashvilles Highland Rim Forest|||ArcGIS Online search for Rim Lake BLM Recreation Management Area (owner emily_granstaff@fws.gov_fws)|",
@@ -6508,7 +6510,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0|FWSBoundaries (outside research Oct 30)|||2 SURE / LIKELY of 6 assigned parks/trails|",
@@ -6535,7 +6537,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer|FWS Midwest and Northeast Regions FAC Bighead and Silver Carp eDNA Data Feature Layer View|||ArcGIS Online search for Bighead River Management Area (owner jeena_koenig@fws.gov_fws)|",
@@ -6581,7 +6583,7 @@
    ]
   },
   "https://services.arcgis.com/R021c2tizs65xROe/arcgis/rest/services/INT_NAProps_ForSite/FeatureServer/587": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/R021c2tizs65xROe/arcgis/rest/services/INT_NAProps_ForSite/FeatureServer/587|INT_NaturalAreas_ForWebsite (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6590,7 +6592,7 @@
    ]
   },
   "https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer|Gray Wolf and Eastern Wolf Historical Range|||ArcGIS Online search for Wolf Creek Recreation Park (owner conservationGIS0)|",
@@ -6599,7 +6601,7 @@
    ]
   },
   "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer|SlidingWindows_ARTESIA_view_V1|||ArcGIS Online search for Artesia Lake State Wildlife Area (owner JRuben@isd.lacounty.gov_lacounty)|",
@@ -6626,7 +6628,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/Wildlife_Management_Areas/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/Wildlife_Management_Areas/FeatureServer/0|Wildlife Management Areas Boundaries (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6635,7 +6637,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Nevada_Department_of_Wildlife_Fish_Hatchery_Locations/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Nevada_Department_of_Wildlife_Fish_Hatchery_Locations/FeatureServer/0|ndow_hatcheries (outside research Oct 30)|||0 SURE / LIKELY of 2 assigned parks/trails|",
@@ -6644,7 +6646,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0|Wildlife Management Areas Boundaries (outside research Oct 30)|||8 SURE / LIKELY of 9 assigned parks/trails|",
@@ -6653,7 +6655,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer|Tui Chub in Dixie Valley Distribution in Nevada|||ArcGIS Online search for Dixie Valley Recreation Site (owner NDOW_DEV)|",
@@ -6662,7 +6664,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer|Dixie Valley Toad Distribution in Nevada|||ArcGIS Online search for Dixie Valley Recreation Site (owner NDOW_DEV)|",
@@ -6671,7 +6673,7 @@
    ]
   },
   "https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer|Trails_Connected_to_the_Razorback_Regional_Greenway|||ArcGIS Online search for The Razorback Regional Greenway National Recreation Trail (owner gogeographics)|",
@@ -6689,7 +6691,7 @@
    ]
   },
   "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Deschutes_Client___David_Cale____Property_Profile___K_Bar_J_Ranch_LLC___2_2024/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Deschutes_Client___David_Cale____Property_Profile___K_Bar_J_Ranch_LLC___2_2024/FeatureServer|OR_Deschutes_Client _ David Cale  _ Property Profile _ K Bar J Ranch LLC _ 2_2024|||ArcGIS Online search for Bar U Ranch National Historic Site (owner afalkner_FATCO)|",
@@ -6698,7 +6700,7 @@
    ]
   },
   "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer|OR_Tillamook_Client _ Tracy Chung _ Property Profile _ 14050 Riverview Meadows Ln _ 9_2024|||ArcGIS Online search for Riverview Forest Park (owner afalkner_FATCO)|",
@@ -6725,7 +6727,7 @@
    ]
   },
   "https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Arts_Employment_Alex_Hackett_WFL1/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Arts_Employment_Alex_Hackett_WFL1/FeatureServer|Arts Employment Alex Hackett_WFL1|||ArcGIS Online search for Hackett Lake Recreation Site (owner hack8698_ui_uidaho)|",
@@ -6734,7 +6736,7 @@
    ]
   },
   "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer|Clatsop County, Oregon (MOC) - Draft Floodplains (2024.01.31) - Feature Service|||ArcGIS Online search for Clatsop State Forest (owner FEMA_Region10_Mitigation)|",
@@ -6743,7 +6745,7 @@
    ]
   },
   "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer|Clatsop County, Oregon (Mouth of the Columbia) - Flood Risk Products (2024.12.02) - FS|||ArcGIS Online search for Clatsop State Forest (owner FEMA_Region10_Mitigation)|",
@@ -6752,7 +6754,7 @@
    ]
   },
   "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer|Clatsop County, Oregon - Effective Floodplains (2018.09.23) - Feature Service|||ArcGIS Online search for Clatsop State Forest (owner FEMA_Region10_Mitigation)|",
@@ -6770,7 +6772,7 @@
    ]
   },
   "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer|Walnut Woods Park JWT|||ArcGIS Online search for Walnut Woods State Conservation Area (owner BCrat82)|",
@@ -6789,7 +6791,7 @@
    ]
   },
   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer|Beacon Hill Home Zone Boundary Line|||ArcGIS Online search for Beacon Hill Recreation Site (owner Transportation_SeattleCityGIS)|",
@@ -6798,7 +6800,7 @@
    ]
   },
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer|Dugway Proving Grounds|||ArcGIS Online search for Dugway Recreation Site BLM Recreation Management Area (owner dwrwmi)|",
@@ -6818,7 +6820,7 @@
    ]
   },
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/ULTRA_Properties_2_view/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/ULTRA_Properties_2_view/FeatureServer/0|Polygon layer (outside research Oct 30)|||2 SURE / LIKELY of 4 assigned parks/trails|",
@@ -6827,7 +6829,7 @@
    ]
   },
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Desert_Bighorn_Sheep_Habitat/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Desert_Bighorn_Sheep_Habitat/FeatureServer|Utah Desert Bighorn Sheep Habitat|||ArcGIS Online search for Sheep Creek State Recreation Area (owner dwrdata)|",
@@ -6845,7 +6847,7 @@
    ]
   },
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0|Utah State Park Management Areas (outside research Oct 30)|||1 SURE / LIKELY of 14 assigned parks/trails|",
@@ -6854,7 +6856,7 @@
    ]
   },
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0|WMAs (outside research Oct 30)|||1 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6863,7 +6865,7 @@
    ]
   },
   "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer": {
-   "fails": 62,
+   "fails": 64,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer|Inland Empire Utilities Agency Divisions|||ArcGIS Online search for Empire State Trail (owner County_Of_San_Bernardino)|",
@@ -6872,7 +6874,7 @@
    ]
   },
   "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer": {
-   "fails": 62,
+   "fails": 64,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer|Rim of the World Recreation and Park Divisions|||ArcGIS Online search for Rim Lake BLM Recreation Management Area (owner County_Of_San_Bernardino)|",
@@ -6911,7 +6913,7 @@
    ]
   },
   "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3|SCDNR Public Properties View (outside research Oct 30)|||1 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6920,7 +6922,7 @@
    ]
   },
   "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4|SCDNR Properties Public Dissolved (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -6929,7 +6931,7 @@
    ]
   },
   "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0|Heritage_Preserve_Layer_CopyFeatures (outside research Oct 30)|||21 SURE / LIKELY of 26 assigned parks/trails|",
@@ -6946,7 +6948,7 @@
    ]
   },
   "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0|Public Sector (outside research Oct 30)|||132 SURE / LIKELY of 148 assigned parks/trails|",
@@ -6955,7 +6957,7 @@
    ]
   },
   "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/3": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/3|Illinois Nature Preserves Commission (outside research Oct 30)|||16 SURE / LIKELY of 18 assigned parks/trails|",
@@ -6964,7 +6966,7 @@
    ]
   },
   "https://services.arcgis.com/bDAhvQYMG4WL8O5o/ArcGIS/rest/services/Virginia_Trails/FeatureServer/2": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/bDAhvQYMG4WL8O5o/ArcGIS/rest/services/Virginia_Trails/FeatureServer/2|Trail (outside research Oct 30)|||10 SURE / LIKELY of 21 assigned parks/trails|",
@@ -6973,7 +6975,7 @@
    ]
   },
   "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/Guyana_VIP_Status/FeatureServer/1": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/Guyana_VIP_Status/FeatureServer/1|Protected Areas (outside research Oct 30)|||2 SURE / LIKELY of 4 assigned parks/trails|",
@@ -6982,7 +6984,7 @@
    ]
   },
   "https://services.arcgis.com/bwohQix8s7zRvYC9/arcgis/rest/services/Laberge_Herd_Range/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/bwohQix8s7zRvYC9/arcgis/rest/services/Laberge_Herd_Range/FeatureServer|Laberge caribou herd range|||ArcGIS Online search for Lake Laberge Recreation Park (owner Yukon.government.wildlife)|",
@@ -7000,7 +7002,7 @@
    ]
   },
   "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer|Climate Indicator First Leaf Dates (EPA 2021)|||ArcGIS Online search for Leaf River Wildlife Management Area (owner EPA_GEO)|",
@@ -7009,7 +7011,7 @@
    ]
   },
   "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer|Oklahoma Tribal Statistical Areas|||ArcGIS Online search for Oklahoma City National Memorial (owner EPA_GEO)|",
@@ -7027,7 +7029,7 @@
    ]
   },
   "https://services.arcgis.com/eDGut86ch1ami1yK/arcgis/rest/services/Lucky_Star_ALTA_SurveyPoints/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/eDGut86ch1ami1yK/arcgis/rest/services/Lucky_Star_ALTA_SurveyPoints/FeatureServer|Lucky_Star_ALTA_SurveyPoints|||ArcGIS Online search for Lucky Lake Recreation Site (owner rsirdoreus)|",
@@ -7036,7 +7038,7 @@
    ]
   },
   "https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0|NCC_AT_Nature_Reserves_Public_Map (outside research Oct 30)|||1 SURE / LIKELY of 1 assigned parks/trails|",
@@ -7045,7 +7047,7 @@
    ]
   },
   "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer|Leaf_Collection_Areas|||ArcGIS Online search for Leaf River Wildlife Management Area (owner maps.phl.data)|",
@@ -7063,7 +7065,7 @@
    ]
   },
   "https://services.arcgis.com/hnx6Tshv9A7VucmF/arcgis/rest/services/FIVE_MILE_DRIVE_DISTANCE_FROM_CONWAY_SC_FIRE_STATIONS/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/hnx6Tshv9A7VucmF/arcgis/rest/services/FIVE_MILE_DRIVE_DISTANCE_FROM_CONWAY_SC_FIRE_STATIONS/FeatureServer|FIVE MILE DRIVE DISTANCE FROM CONWAY SC FIRE STATIONS|||ArcGIS Online search for Five Mile Lake Recreation Park (owner stwECU1122)|",
@@ -7072,7 +7074,7 @@
    ]
   },
   "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer|East Bay North Shore Impacted Census Tracts|||ArcGIS Online search for East Shore BLM Recreation Management Area (owner Ferrar@FracTracker.org)|",
@@ -7081,7 +7083,7 @@
    ]
   },
   "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer|East Bay North Shore Marine Terminals|||ArcGIS Online search for East Shore BLM Recreation Management Area (owner Ferrar@FracTracker.org)|",
@@ -7099,7 +7101,7 @@
    ]
   },
   "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Signal_Hill_Oil_and_Gas_Sites_WFL1/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Signal_Hill_Oil_and_Gas_Sites_WFL1/FeatureServer|Signal Hill Oil and Gas Sites_WFL1|||ArcGIS Online search for Signal Hill National Historic Site (owner Ferrar@FracTracker.org)|",
@@ -7108,7 +7110,7 @@
    ]
   },
   "https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer|North_Santiam_Tour_POI|||ArcGIS Online search for Santiam State Forest (owner SalemGIS)|",
@@ -7117,7 +7119,7 @@
    ]
   },
   "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer|L'Anse Aux Meadows|||ArcGIS Online search for L'Anse aux Meadows National Historic Site (owner areed_uc)|",
@@ -7126,7 +7128,7 @@
    ]
   },
   "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0|Tennessee State Forest Boundaries (outside research Oct 30)|||6 SURE / LIKELY of 8 assigned parks/trails|",
@@ -7144,7 +7146,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/ArcGIS/rest/services/Manitoba_Parks/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/ArcGIS/rest/services/Manitoba_Parks/FeatureServer/0|Manitoba Parks (outside research Oct 30)|||0 SURE / LIKELY of 3 assigned parks/trails|",
@@ -7153,7 +7155,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/ArcGIS/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/ArcGIS/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0|Refuges (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -7162,7 +7164,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/ArcGIS/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/ArcGIS/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2|Wildlife_Management_Areas (outside research Oct 30)|||0 SURE / LIKELY of 2 assigned parks/trails|",
@@ -7189,7 +7191,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0": {
-   "fails": 55,
+   "fails": 57,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0|Manitoba Par (LAYER line, CA-MB)|||T-3 LIKELY: park 'Primrose Wayside Recreation Park' = record 'Primrose Provincial Park'; P-2 test Oct 30 chat 9; pin unchanged|",
@@ -7198,7 +7200,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1|Manitoba Provincial Forests - Version 6 (outside research Oct 30)|||1 SURE / LIKELY of 1 assigned parks/trails|",
@@ -7207,7 +7209,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0": {
-   "fails": 55,
+   "fails": 57,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0|Manitoba wil (LAYER line, CA-MB)|||T-3 LIKELY: park 'Ethelbert (Duck Mountain) Wildlife Management Area' = record 'Duck Mountain'; P-2 test Oct 30 chat 9; pin unchanged|",
@@ -7216,7 +7218,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2": {
-   "fails": 55,
+   "fails": 57,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2|Manitoba wil~2 (LAYER line, CA-MB)|||T-2 SURE: park 'Narcisse Provincial Park' = record 'Narcisse Wildlife Management Area'; P-2 test Oct 30 chat 9; pin unchanged|",
@@ -7225,7 +7227,7 @@
    ]
   },
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer|Rockwood Sensitive Area|||ArcGIS Online search for Rockwood Park Nature Reserve (owner Manitoba_Government)|",
@@ -7234,7 +7236,7 @@
    ]
   },
   "https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer|Shubenacadie Aquifer Protection Overlay Zone|||ArcGIS Online search for Shubenacadie Provincial  Park Provincial Wildlife Area (owner tscott_easthants)|",
@@ -7243,7 +7245,7 @@
    ]
   },
   "https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer|Maple_Grove_Planting_Sites|||ArcGIS Online search for Maple Grove Park Recreation Park (owner Paul.Kortebein@threeriversparks.org_trpd)|",
@@ -7261,7 +7263,7 @@
    ]
   },
   "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Uplands_to_Wetlands_2100_Polygon/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Uplands_to_Wetlands_2100_Polygon/FeatureServer|Uplands_to_Wetlands_2100_Polygon|||ArcGIS Online search for Uplands Park Natural Area (owner rachel.donnelly@maryland.gov_maryland)|",
@@ -7288,7 +7290,7 @@
    ]
   },
   "https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0|Protected_Areas_Project (outside research Oct 30)|||0 SURE / LIKELY of 11 assigned parks/trails|",
@@ -7313,7 +7315,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/ArcGIS/rest/services/Utah_Scenic_Byways/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/ArcGIS/rest/services/Utah_Scenic_Byways/FeatureServer/0|Utah Scenic Byways (outside research Oct 30)|||4 SURE / LIKELY of 7 assigned parks/trails|",
@@ -7322,7 +7324,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer|Morgan State St Active Transportation|||ArcGIS Online search for Morgan Creek Recreation Site BLM Recreation Management Area (owner cmccullock@jub.com_uplan)|",
@@ -7331,7 +7333,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Scenario_Model_Results/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Scenario_Model_Results/FeatureServer|Cedar Valley Highway _ Scenario Model Results|||ArcGIS Online search for Cedar Valley Conservation Area (owner awelsh@avenueconsultants.com_uplan)|",
@@ -7340,7 +7342,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Sensitivity_Compare_Nets/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Sensitivity_Compare_Nets/FeatureServer|Cedar Valley Highway _ Sensitivity Compare Nets|||ArcGIS Online search for Cedar Valley Conservation Area (owner awelsh@avenueconsultants.com_uplan)|",
@@ -7349,7 +7351,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer|Cottonwood Canyons Route Travel Times|||ArcGIS Online search for Cottonwood Recreation Site BLM Recreation Management Area (owner bteran@utah.gov_uplan)|",
@@ -7358,7 +7360,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer|Cottonwood Canyon Weather Monitoring Data|||ArcGIS Online search for Cottonwood Recreation Site BLM Recreation Management Area (owner bteran@utah.gov_uplan)|",
@@ -7367,7 +7369,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer|R1 Morgan State St Intersections|||ArcGIS Online search for Morgan Creek Recreation Site BLM Recreation Management Area (owner cmccullock@jub.com_uplan)|",
@@ -7376,7 +7378,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer|R1 Morgan State St Study Segments|||ArcGIS Online search for Morgan Creek Recreation Site BLM Recreation Management Area (owner cmccullock@jub.com_uplan)|",
@@ -7385,7 +7387,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer|Region Four South Parowan Pine Canyon Drive Alt Model 1|||ArcGIS Online search for Pine Canyon WMA State Conservation Area (owner bdavis1@utah.gov_uplan)|",
@@ -7394,7 +7396,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer|Region Four South Parowan Pine Canyon Drive Alt Model 2|||ArcGIS Online search for Pine Canyon WMA State Conservation Area (owner bdavis1@utah.gov_uplan)|",
@@ -7403,7 +7405,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer|Region Four South Parowan Pine Canyon Drive Alt Model 3|||ArcGIS Online search for Pine Canyon WMA State Conservation Area (owner bdavis1@utah.gov_uplan)|",
@@ -7412,7 +7414,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0|Utah Scenic Byways (outside research Oct 30)|||4 SURE / LIKELY of 5 assigned parks/trails|",
@@ -7430,7 +7432,7 @@
    ]
   },
   "https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer|DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew|||ArcGIS Online search for Enid Lake State Recreation Area (owner DCSBGI)|",
@@ -7496,7 +7498,7 @@
    ]
   },
   "https://services.arcgis.com/qchgHH9IIeiivY5M/arcgis/rest/services/CNMI_Marine_Protected_Areas/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/qchgHH9IIeiivY5M/arcgis/rest/services/CNMI_Marine_Protected_Areas/FeatureServer/0|marine_protected_areas (outside research Oct 30)|||4 SURE / LIKELY of 4 assigned parks/trails|",
@@ -7524,7 +7526,7 @@
    ]
   },
   "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont/FeatureServer|Belmont, ON - June 10, 2020 - Drone Flight Paths|||ArcGIS Online search for Belmont Provincial Park (owner cmille92_eng)|",
@@ -7533,7 +7535,7 @@
    ]
   },
   "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_GeoTaggedPhotosToPoints/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_GeoTaggedPhotosToPoints/FeatureServer|Belmont, ON - July 19, 2020 - Drone Photos|||ArcGIS Online search for Belmont Provincial Park (owner cmille92_eng)|",
@@ -7542,7 +7544,7 @@
    ]
   },
   "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_ON_Drone_Photos/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_ON_Drone_Photos/FeatureServer|Belmont, ON - June 10, 2020 - Drone Photos|||ArcGIS Online search for Belmont Provincial Park (owner cmille92_eng)|",
@@ -7551,7 +7553,7 @@
    ]
   },
   "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/LakesideON_Survey_Route/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/LakesideON_Survey_Route/FeatureServer|Lakeside, ON - May 16, 2025 - Survey Route|||ArcGIS Online search for Lakeside Recreation Park (owner ajaffe22_eng)|",
@@ -7560,7 +7562,7 @@
    ]
   },
   "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer|Lakeside, ON - May 16, 2025 - Drone Flight Paths|||ArcGIS Online search for Lakeside Recreation Park (owner ajaffe22_eng)|",
@@ -7569,7 +7571,7 @@
    ]
   },
   "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Photos/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Photos/FeatureServer|Lakeside, ON - May 16, 2025 - Drone Photos|||ArcGIS Online search for Lakeside Recreation Park (owner ajaffe22_eng)|",
@@ -7587,7 +7589,7 @@
    ]
   },
   "https://services.arcgis.com/tNJpAOha4mODLkXz/ArcGIS/rest/services/Hiking_Trails/FeatureServer/0": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/tNJpAOha4mODLkXz/ArcGIS/rest/services/Hiking_Trails/FeatureServer/0|Hiking Trails (outside research Oct 30)|||0 SURE / LIKELY of 4 assigned parks/trails|",
@@ -7605,7 +7607,7 @@
    ]
   },
   "https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer|Detroit_Demographics_Hannah_Buhler|||ArcGIS Online search for Buhler Recreation Park (owner buhle005_CSUSM_GIS_Lab)|",
@@ -7632,7 +7634,7 @@
    ]
   },
   "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0|All State Owned & Managed Lands (outside research Oct 30)|||10 SURE / LIKELY of 11 assigned parks/trails|",
@@ -7641,7 +7643,7 @@
    ]
   },
   "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer|Antelope Reservoir Fish Advisory|||ArcGIS Online search for Antelope Reservoir BLM Recreation Management Area (owner rachel.saltzman_oha)|",
@@ -7650,7 +7652,7 @@
    ]
   },
   "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/ODFW_Wildlife_Areas/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/ODFW_Wildlife_Areas/FeatureServer/0|Wildlife Areas (outside research Oct 30)|||4 SURE / LIKELY of 5 assigned parks/trails|",
@@ -7659,7 +7661,7 @@
    ]
   },
   "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Trails_Hosted_view/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Trails_Hosted_view/FeatureServer/0|TR_REC_TRAILS (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -7668,7 +7670,7 @@
    ]
   },
   "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Oregon_Signature_Trails_Feature_Layer/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Oregon_Signature_Trails_Feature_Layer/FeatureServer/0|Signature Trails (outside research Oct 30)|||1 SURE / LIKELY of 2 assigned parks/trails|",
@@ -7704,7 +7706,7 @@
    ]
   },
   "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fee_Managers_PADUS/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fee_Managers_PADUS/FeatureServer/0|PADUS4_1FeeManagers (outside research Oct 30)|||0 SURE / LIKELY of 41 assigned parks/trails|",
@@ -7731,7 +7733,7 @@
    ]
   },
   "https://services.arcgis.com/vQ8kO5zdqETeirEL/arcgis/rest/services/AllCO/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/vQ8kO5zdqETeirEL/arcgis/rest/services/AllCO/FeatureServer|RD_AllCO|||ArcGIS Online search for Allco Park (owner mlwh232@uky.edu_UKY_EDU)|",
@@ -7740,7 +7742,7 @@
    ]
   },
   "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer|NI Areas of Outstanding Natural Beauty AONB|||ArcGIS Online search for Mt Rose Scenic Byway Area of Outstanding Natural Beauty (owner sam.brown)|",
@@ -7749,7 +7751,7 @@
    ]
   },
   "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Substations/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Substations/FeatureServer|Cates Landing Substations|||ArcGIS Online search for Cates Park (owner TVA-GIS)|",
@@ -7758,7 +7760,7 @@
    ]
   },
   "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Tax_Parcels/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Tax_Parcels/FeatureServer|Cates Landing Tax Parcels|||ArcGIS Online search for Cates Park (owner TVA-GIS)|",
@@ -7767,7 +7769,7 @@
    ]
   },
   "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Transmission_Lines/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Transmission_Lines/FeatureServer|Cates Landing Transmission Lines|||ArcGIS Online search for Cates Park (owner TVA-GIS)|",
@@ -7776,7 +7778,7 @@
    ]
   },
   "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Dispersed_Recreation_Areas/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Dispersed_Recreation_Areas/FeatureServer/0|TVA Undeveloped Recreation Lands (outside research Oct 30)|||3 SURE / LIKELY of 7 assigned parks/trails|",
@@ -7785,7 +7787,7 @@
    ]
   },
   "https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer|Wildfire Smoke Forecast in Canada - Feature Service|||ArcGIS Online search for Smoke Creek BLM National Conservation Area (owner EsriCanadaContent)|",
@@ -7803,7 +7805,7 @@
    ]
   },
   "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Nose_Hill_WFL1/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Nose_Hill_WFL1/FeatureServer|Nose_Hill_WFL1|||ArcGIS Online search for Nose Hill Park Natural Area (owner BGIS_DT_F21_MohammadrezaGarousi)|",
@@ -7812,7 +7814,7 @@
    ]
   },
   "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer|Bear Gulch Dam Failure Area|||ArcGIS Online search for Bear Gulch BLM Wilderness Area (owner sanmateocountygis)|",
@@ -7821,7 +7823,7 @@
    ]
   },
   "https://services.arcgis.com/zDM7FT1DAx3jnRiA/arcgis/rest/services/GBMGB_Boundary/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/zDM7FT1DAx3jnRiA/arcgis/rest/services/GBMGB_Boundary/FeatureServer/0|GBMGB_Boundary (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -7830,7 +7832,7 @@
    ]
   },
   "https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer|The Wash and North Norfolk Coast SAC|||ArcGIS Online search for North Wash BLM Recreation Management Area (owner 303434_rhdhv)|",
@@ -8059,32 +8061,20 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer": {
-   "fails": 73,
+   "fails": 75,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
    "verdicts": [
-    "ASK-THE-PUBLISHER",
-    "ASK-THE-PUBLISHER",
-    "RETRY",
-    "RETRY",
-    "RETRY",
     "RETRY"
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer": {
-   "fails": 73,
+   "fails": 75,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer|Public/NaturalEnvironment|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
    "verdicts": [
-    "REJECT",
-    "REJECT",
-    "REJECT",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
     "RETRY"
    ]
   },
@@ -8102,18 +8092,11 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer": {
-   "fails": 73,
+   "fails": 75,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer|Public/OpenDataWFS|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
    "verdicts": [
-    "REJECT",
-    "REJECT",
-    "REJECT",
-    "REJECT",
-    "REJECT",
-    "REJECT",
-    "REJECT",
     "RETRY"
    ]
   },
@@ -8127,18 +8110,11 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer": {
-   "fails": 73,
+   "fails": 75,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer|Public/PWSPublic|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
    "verdicts": [
-    "REJECT",
-    "REJECT",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
     "RETRY"
    ]
   },
@@ -8169,34 +8145,20 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
    "verdicts": [
-    "REJECT",
-    "REJECT",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
     "RETRY"
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
    "verdicts": [
-    "ASK-THE-PUBLISHER",
-    "ASK-THE-PUBLISHER",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
-    "RETRY",
     "RETRY"
    ]
   },
@@ -9201,7 +9163,7 @@
    ]
   },
   "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureServer|Gray Treefrog (Hyla versicolor)|||ArcGIS Online search for Hyla Park Nature Reserve (owner nelso527_UWM)|",
@@ -9468,7 +9430,7 @@
    ]
   },
   "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer": {
-   "fails": 4,
+   "fails": 6,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer|MaineDMR - Burnt Island Trails|||ArcGIS Online search for Burnt Island Provincial Park (owner William.DeVoe@maine.gov_maine)|",
@@ -10758,7 +10720,7 @@
    ]
   },
   "https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer|Schools Buffer Mallo|||ArcGIS Online search for Mallo Trail BLM Recreation Management Area (owner mcmaher)|",
@@ -10767,7 +10729,7 @@
    ]
   },
   "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer|Red Rocks Insta360 Oriented Imagery Video|||ArcGIS Online search for Red Rocks State Historic Site (owner bconnolly_IVT5)|",
@@ -10883,7 +10845,7 @@
    ]
   },
   "https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer|Chickasaw Nation|||ArcGIS Online search for Chickasaw Wildlife Management Area (owner okdps_workforce)|",
@@ -11559,7 +11521,7 @@
    ]
   },
   "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer|Travel from Jessie's Office (45 Minutes - Mon@1730)|||ArcGIS Online search for Lake Jessie State Historic Site (owner paccetturo)|",
@@ -11568,7 +11530,7 @@
    ]
   },
   "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer|Travel from Jessie's Office (45 Minutes - no traffic)|||ArcGIS Online search for Lake Jessie State Historic Site (owner paccetturo)|",
@@ -11700,7 +11662,7 @@
    ]
   },
   "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer|Lieber|||ArcGIS Online search for Lieber State Recreation Area (owner humanum)|",
@@ -12008,7 +11970,7 @@
    ]
   },
   "https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer|Little Missouri River|||ArcGIS Online search for Little Missouri River Access State Recreation Area (owner rm_geoplanner)|",
@@ -12250,7 +12212,7 @@
    ]
   },
   "https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park Facilities/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park Facilities/FeatureServer|Merge Sunnidale_Playground Sunnidale Park Facilities|||ArcGIS Online search for Sunnidale Recreation Park (owner BarrieGIS)|",
@@ -12538,7 +12500,7 @@
    ]
   },
   "https://services3.arcgis.com/V6CSJCQOs0jUJNOw/arcgis/rest/services/survey123_3e63cb512c644486a9dd5e51818f1317_fieldworker/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services3.arcgis.com/V6CSJCQOs0jUJNOw/arcgis/rest/services/survey123_3e63cb512c644486a9dd5e51818f1317_fieldworker/FeatureServer|Nisga’a Memorial Lava Bed Park Comments_fieldworker|||ArcGIS Online search for Nisga'a Memorial Lava Bed Provincial Park (owner nbctourismadmin)|",
@@ -12895,7 +12857,7 @@
    ]
   },
   "https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer|Layer: Southwest Asia All Data|||ArcGIS Online search for Southwest Trail State Trail (owner GaDOE_SocialStudies_Atlas)|",
@@ -12922,7 +12884,7 @@
    ]
   },
   "https://services4.arcgis.com/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters Basillica/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services4.arcgis.com/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters Basillica/FeatureServer|Immaculate Conception to Vatican St Peters Basillica|||ArcGIS Online search for St. Peters National Historic Site (owner studentpublisher_fairms)|",
@@ -12931,7 +12893,7 @@
    ]
   },
   "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer|Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner awilson_linwood)|",
@@ -12940,7 +12902,7 @@
    ]
   },
   "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer|Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner awilson_linwood)|",
@@ -13162,7 +13124,7 @@
    ]
   },
   "https://services5.arcgis.com/IxTFx7t7oe2NViid/arcgis/rest/services/Conrad_Zoning/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services5.arcgis.com/IxTFx7t7oe2NViid/arcgis/rest/services/Conrad_Zoning/FeatureServer|Conrad_Zoning|||ArcGIS Online search for Conrad Park Recreation Park (owner conradmt)|",
@@ -13209,7 +13171,7 @@
    ]
   },
   "https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/FeatureServer|Beacon Hill (Areas)|||ArcGIS Online search for Beacon Hill Recreation Site (owner Rcouillens)|",
@@ -13218,7 +13180,7 @@
    ]
   },
   "https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/FeatureServer|Find Locations in Beacon Hill 2 (Areas)|||ArcGIS Online search for Beacon Hill Recreation Site (owner Rcouillens)|",
@@ -13716,7 +13678,7 @@
    ]
   },
   "https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer|Eagle Harbor Township Recreation Area|||ArcGIS Online search for Eagle Harbor State Harbor (owner KeweenawCVB)|",
@@ -13868,7 +13830,7 @@
    ]
   },
   "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer|Amory Port North- property Outline|||ArcGIS Online search for Amory Recreation Area State Recreation Area (owner recruit_giswebtech)|",
@@ -13877,7 +13839,7 @@
    ]
   },
   "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer|Amory Port South- property Outline|||ArcGIS Online search for Amory Recreation Area State Recreation Area (owner recruit_giswebtech)|",
@@ -14135,7 +14097,7 @@
    ]
   },
   "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer|Captain John Smith Chesapeake National Historic Trail|||ArcGIS Online search for Captain John Smith Chesapeake National Historic Trail (owner ccherava)|",
@@ -14466,7 +14428,7 @@
    ]
   },
   "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer|Cypremort_Point_State_Park|||ArcGIS Online search for Cypremort Point State Park (owner lastateparks)|",
@@ -14475,7 +14437,7 @@
    ]
   },
   "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer|Jimmie_Davis_State_Park|||ArcGIS Online search for Jimmie Davis State Park (owner lastateparks)|",
@@ -14484,7 +14446,7 @@
    ]
   },
   "https://services6.arcgis.com/sMxDdLiczOFCdYFP/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/sMxDdLiczOFCdYFP/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer|Frontenac Arch Biosphere Region Boundary|||ArcGIS Online search for Frontenac Arch Biosphere Reserve (owner sierrabeacher)|",
@@ -14574,7 +14536,7 @@
    ]
   },
   "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer|Iceland Honeymoon 2024_WFL|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner brokell)|",
@@ -14583,7 +14545,7 @@
    ]
   },
   "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer|Iceland Honeymoon 2024_WFL1|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner brokell)|",
@@ -14641,7 +14603,7 @@
    ]
   },
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2|Properties (outside research Oct 30)|||0 SURE / LIKELY of 10 assigned parks/trails|",
@@ -14650,7 +14612,7 @@
    ]
   },
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4|Forest Park (outside research Oct 30)|||7 SURE / LIKELY of 7 assigned parks/trails|",
@@ -14659,7 +14621,7 @@
    ]
   },
   "https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer|Frontenac Arch Biosphere Region Boundary|||ArcGIS Online search for Frontenac Arch Biosphere Reserve (owner FABNAdmin)|",
@@ -14668,7 +14630,7 @@
    ]
   },
   "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/HPG_Damaged_Trees/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/HPG_Damaged_Trees/FeatureServer|Halifax Public Gardens Damaged Trees|||ArcGIS Online search for Halifax Public Gardens National Historic Site (owner twohlsclagel_SenecaMC)|",
@@ -14677,7 +14639,7 @@
    ]
   },
   "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/Public_Trees/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/Public_Trees/FeatureServer|All Halifax Public Gardens Trees|||ArcGIS Online search for Halifax Public Gardens National Historic Site (owner twohlsclagel_SenecaMC)|",
@@ -14686,7 +14648,7 @@
    ]
   },
   "https://services7.arcgis.com/AyCBzKtPcinRzhMG/arcgis/rest/services/survey123_0f2029d16cfc452698f731146bc48378_fieldworker/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/AyCBzKtPcinRzhMG/arcgis/rest/services/survey123_0f2029d16cfc452698f731146bc48378_fieldworker/FeatureServer|Palestra Elaine Terceiro_fieldworker|||ArcGIS Online search for Elaine Lake Recreation Site (owner mktirbre)|",
@@ -14713,7 +14675,7 @@
    ]
   },
   "https://services7.arcgis.com/GaT8GzOa0Kqi9sL7/arcgis/rest/services/GovernmentParcels2025_WithoutLandtax/FeatureServer/0": {
-   "fails": 33,
+   "fails": 35,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/GaT8GzOa0Kqi9sL7/arcgis/rest/services/GovernmentParcels2025_WithoutLandtax/FeatureServer/0|GovernmentParcelsV2 (outside research Oct 30)|||0 SURE / LIKELY of 44 assigned parks/trails|",
@@ -14731,7 +14693,7 @@
    ]
   },
   "https://services7.arcgis.com/HJ6NuXYZF6fDjms9/arcgis/rest/services/Customer_Small_Cell_Site_Locations_View/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/HJ6NuXYZF6fDjms9/arcgis/rest/services/Customer_Small_Cell_Site_Locations_View/FeatureServer|Crown Castle Small Cell Sites|||ArcGIS Online search for Castle Park (owner TMorita@dpw.lacounty.gov_lacounty)|",
@@ -14740,7 +14702,7 @@
    ]
   },
   "https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/FiveMile_All_Stations/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/FiveMile_All_Stations/FeatureServer|Five Mile Reach of All Snoco Fire Stations|||ArcGIS Online search for Five Mile Lake Recreation Park (owner esexton)|",
@@ -14749,7 +14711,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/1": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/1|ESG_FFH_AT (outside research Oct 30)|||5 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14758,7 +14720,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/10": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/10|S_AT (outside research Oct 30)|||1 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14767,7 +14729,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/11": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/11|main.IUCN_Ia_AT_2025 (outside research Oct 30)|||0 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14776,7 +14738,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/12": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/12|main.IUCN_Ib_AT_2025 (outside research Oct 30)|||0 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14785,7 +14747,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/2": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/2|ESG_VSR_AT (outside research Oct 30)|||3 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14794,7 +14756,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/3": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/3|NP_AT (outside research Oct 30)|||0 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14803,7 +14765,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/4": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/4|ESG_AT (outside research Oct 30)|||5 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14812,7 +14774,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/5": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/5|NSG_AT (outside research Oct 30)|||8 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14821,7 +14783,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/6": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/6|BP_AT_2025 (exkl. St - Untere Mur) (outside research Oct 30)|||1 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14830,7 +14792,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/7": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/7|LSG_AT (outside research Oct 30)|||14 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14839,7 +14801,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/8": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/8|GLT_AT (outside research Oct 30)|||0 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14848,7 +14810,7 @@
    ]
   },
   "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/9": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/9|NAP_AT (outside research Oct 30)|||9 SURE / LIKELY of 105 assigned parks/trails|",
@@ -14866,7 +14828,7 @@
    ]
   },
   "https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Affordable_Housing_Stock/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Affordable_Housing_Stock/FeatureServer|Thurne Affordable Housing Stock|||ArcGIS Online search for Thurne Parks Conservation Area (owner Strategic_Planning)|",
@@ -14875,7 +14837,7 @@
    ]
   },
   "https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Parish/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Parish/FeatureServer|Thurne Parish|||ArcGIS Online search for Thurne Parks Conservation Area (owner SShepherd737)|",
@@ -14902,7 +14864,7 @@
    ]
   },
   "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer|Little Turtle_WFL1|||ArcGIS Online search for Little Turtle State Recreation Area (owner Steven.Wahweotten_Pokagon)|",
@@ -14911,7 +14873,7 @@
    ]
   },
   "https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7|Dumfries & Galloway TTG Management Plans|||ArcGIS Online search for Dumfries Conservation Area (owner Haulage2021)|",
@@ -14966,7 +14928,7 @@
    ]
   },
   "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0": {
-   "fails": 20,
+   "fails": 22,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0|NM_State_Parks (outside research Oct 30)|||30 SURE / LIKELY of 31 assigned parks/trails|",
@@ -14975,7 +14937,7 @@
    ]
   },
   "https://services7.arcgis.com/g5PyWjvBbQnqjM1q/arcgis/rest/services/Parks/FeatureServer/0": {
-   "fails": 44,
+   "fails": 46,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/g5PyWjvBbQnqjM1q/arcgis/rest/services/Parks/FeatureServer/0|Park (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -14984,7 +14946,7 @@
    ]
   },
   "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Bitter_Choices_map/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Bitter_Choices_map/FeatureServer|Bitter Choices map|||ArcGIS Online search for Bitter Lake Recreation Site (owner koneill_worldmap)|",
@@ -14993,7 +14955,7 @@
    ]
   },
   "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer|Civil War Battlefields (time-enabled)|||ArcGIS Online search for African American Civil War National Memorial (owner mm.sappleton)|",
@@ -15002,7 +14964,7 @@
    ]
   },
   "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer|Civil War Battlefields|||ArcGIS Online search for African American Civil War National Memorial (owner mm.atlas)|",
@@ -15011,7 +14973,7 @@
    ]
   },
   "https://services7.arcgis.com/ixihoGz4QXyz0Lzr/arcgis/rest/services/ZONAGE_BEAUBASSIN/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/ixihoGz4QXyz0Lzr/arcgis/rest/services/ZONAGE_BEAUBASSIN/FeatureServer|ZONAGE_BEAUBASSIN|||ArcGIS Online search for Beaubassin National Historic Site (owner ELMO3812)|",
@@ -15020,7 +14982,7 @@
    ]
   },
   "https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer|Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line|||ArcGIS Online search for Le Pate Provincial Park (owner jlambert_alhub)|",
@@ -15049,7 +15011,7 @@
    ]
   },
   "https://services7.arcgis.com/lpTX3280urZ21frb/ArcGIS/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3": {
-   "fails": 46,
+   "fails": 48,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/lpTX3280urZ21frb/ArcGIS/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3|TDEC_Public_Trails (outside research Oct 30)|||0 SURE / LIKELY of 6 assigned parks/trails|",
@@ -15058,7 +15020,7 @@
    ]
   },
   "https://services7.arcgis.com/mbEujVpJG0aE29fS/arcgis/rest/services/Protected_Areas_and_Other_Effective_Conservation_Measures/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/mbEujVpJG0aE29fS/arcgis/rest/services/Protected_Areas_and_Other_Effective_Conservation_Measures/FeatureServer/0|Protected_Areas_and_Other_Effective_Conservation_Measures (outside research Oct 30)|||5 SURE / LIKELY of 5 assigned parks/trails|",
@@ -15067,7 +15029,7 @@
    ]
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0|Recreation Area (outside research Oct 30)|||0 SURE / LIKELY of 1 assigned parks/trails|",
@@ -15093,7 +15055,7 @@
    ]
   },
   "https://services7.arcgis.com/rVwbcvflURVxkV6s/arcgis/rest/services/Greenspace_3_view/FeatureServer/4": {
-   "fails": 33,
+   "fails": 35,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/rVwbcvflURVxkV6s/arcgis/rest/services/Greenspace_3_view/FeatureServer/4|Greenspace_Phase2_06052022 (outside research Oct 30)|||11 SURE / LIKELY of 12 assigned parks/trails|",
@@ -15139,7 +15101,7 @@
    ]
   },
   "https://services7.arcgis.com/w6NthAjz2I62jeb8/arcgis/rest/services/Périmètre_projeté_Rennes_Beaulieu_2040_(vue)/FeatureServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/w6NthAjz2I62jeb8/arcgis/rest/services/Périmètre_projeté_Rennes_Beaulieu_2040_(vue)/FeatureServer|Périmètre projeté Rennes Beaulieu 2040 (vue)|||ArcGIS Online search for Beaulieu National Historic Site (owner DonPat_UR1)|",
@@ -15184,7 +15146,7 @@
    ]
   },
   "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/ProtectedArea/FeatureServer/0": {
-   "fails": 42,
+   "fails": 44,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/ProtectedArea/FeatureServer/0|Protected_Areas_of_Maldives_EPA_V4_1 (outside research Oct 30)|||2 SURE / LIKELY of 4 assigned parks/trails|",
@@ -15319,7 +15281,7 @@
    ]
   },
   "https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer|Flint River|||ArcGIS Online search for Flint State Park (owner mforde2_NatMathSci)|",
@@ -15425,7 +15387,7 @@
    ]
   },
   "https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer|Escanaba_RSX|||ArcGIS Online search for Escanaba River State Forest (owner kthomastu)|",
@@ -15461,7 +15423,7 @@
    ]
   },
   "https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer|PARCELS Lone Rock Ranch|||ArcGIS Online search for Lone Rock BLM Recreation Management Area (owner rat9045)|",
@@ -15531,7 +15493,7 @@
    ]
   },
   "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer|Lincoln_forestplan_alts_wilderness_AltE|||ArcGIS Online search for Lincoln State Historic Site (owner rob.lavie_EMPSI)|",
@@ -15568,7 +15530,7 @@
    ]
   },
   "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer|Spencer_Ramp_Sidewalk|||ArcGIS Online search for Spencer County State Forest (owner WCundiff@SpencerMA.gov)|",
@@ -15577,7 +15539,7 @@
    ]
   },
   "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer": {
-   "fails": 62,
+   "fails": 64,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer|Spencer Town Boundary|||ArcGIS Online search for Spencer County State Forest (owner WCundiff@SpencerMA.gov)|",
@@ -15788,7 +15750,7 @@
    ]
   },
   "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
-   "fails": 78,
+   "fails": 80,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
@@ -15833,7 +15795,7 @@
    ]
   },
   "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer|Florida National Scenic Trail Line|||ArcGIS Online search for Florida Trail National Scenic Trail (owner FloridaTrailAssociation)|",
@@ -15855,7 +15817,7 @@
    ]
   },
   "https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer|Sugarloaf Mountain Trails|||ArcGIS Online search for Sugarloaf Mountain State Recreation Area (owner sugarloaf46)|",
@@ -16266,7 +16228,7 @@
    ]
   },
   "https://tiles.arcgis.com/tiles/5ITF23HWARq3AMd2/arcgis/rest/services/Marconi_Plat_o56003/MapServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://tiles.arcgis.com/tiles/5ITF23HWARq3AMd2/arcgis/rest/services/Marconi_Plat_o56003/MapServer|Marconi_Plat_o56003|||ArcGIS Online search for Marconi National Historic Site (owner daygeckoart)|",
@@ -16275,7 +16237,7 @@
    ]
   },
   "https://tiles.arcgis.com/tiles/5ITF23HWARq3AMd2/arcgis/rest/services/Ortho_Marconi_2024feb19/MapServer": {
-   "fails": 68,
+   "fails": 70,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://tiles.arcgis.com/tiles/5ITF23HWARq3AMd2/arcgis/rest/services/Ortho_Marconi_2024feb19/MapServer|Ortho_Marconi_2024feb19|||ArcGIS Online search for Marconi National Historic Site (owner daygeckoart)|",
@@ -16561,7 +16523,7 @@
    ]
   },
   "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer": {
-   "fails": 71,
+   "fails": 73,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer|Little Turtle_WTL1|||ArcGIS Online search for Little Turtle State Recreation Area (owner Steven.Wahweotten_Pokagon)|",
@@ -16595,7 +16557,7 @@
    ]
   },
   "https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer|2005 US Civil War Map (Web Mercator)|||ArcGIS Online search for Civil War Trail State Trail (owner ericjanota)|",
@@ -16863,7 +16825,7 @@
    ]
   },
   "https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer": {
-   "fails": 70,
+   "fails": 72,
    "probed": "2026-11-04",
    "retry": false,
    "sig": "https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer|Oregon Dept of Forestry - Santiam Aerials|||ArcGIS Online search for Santiam State Forest (owner Marion_County)|",
@@ -17170,13 +17132,13 @@
   }
  },
  "stat": {
-  "ask": 29,
-  "did_not_open": 343,
+  "ask": 25,
+  "did_not_open": 321,
   "live_only": 0,
-  "probed": 410,
+  "probed": 370,
   "ready": 0,
-  "reject": 36,
-  "retry": 343,
+  "reject": 22,
+  "retry": 321,
   "rows": 2143,
   "skipped_fresh": 1540,
   "tests_miss": 1,

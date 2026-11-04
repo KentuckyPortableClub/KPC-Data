@@ -10402,7 +10402,7 @@
     "by_name": 0,
     "in_extent": 60,
     "missing_in_area": 1796,
-    "n": 7,
+    "n": 2,
     "parks": [
      [
       "AU-10758",
@@ -10413,34 +10413,9 @@
       "AU-11304",
       "Pipe Clay Lagoon - Water Management Area",
       "Brachionichthys hirsutus"
-     ],
-     [
-      "AU-8812",
-      "Nutgrove Beach - State Beach",
-      "Brachionichthys hirsutus"
-     ],
-     [
-      "AU-8858",
-      "Howrah Beach - State Beach",
-      "Brachionichthys hirsutus"
-     ],
-     [
-      "AU-8865",
-      "Shelly Beach - State Beach",
-      "Brachionichthys hirsutus"
-     ],
-     [
-      "AU-8866",
-      "Opossum Bay Beach - State Beach",
-      "Brachionichthys hirsutus"
-     ],
-     [
-      "AU-8867",
-      "Glenvar Beach - State Beach",
-      "Brachionichthys hirsutus"
      ]
     ],
-    "pin_only": 7,
+    "pin_only": 2,
     "tested": 60
    },
    "from": "harvester",
@@ -10572,82 +10547,11 @@
   {
    "approved": null,
    "area": "AU",
-   "closes": {
-    "by_name": 0,
-    "in_extent": 18,
-    "missing_in_area": 1796,
-    "n": 0,
-    "note": "stopped early (time or request budget)",
-    "parks": [],
-    "pin_only": 0,
-    "tested": 2
-   },
+   "closes": "not probed",
    "from": "harvester",
    "overlap": "",
    "probe": {
-    "copyright": "",
-    "count": 14,
-    "description": "",
-    "extent": [
-     147.207,
-     -42.751,
-     147.87,
-     -39.776,
-     4326
-    ],
-    "fields": [
-     "GEOMETRY",
-     "KINGDOM",
-     "PHYLUM",
-     "CLASS1",
-     "ORDER1",
-     "FAMILY",
-     "GENUS",
-     "SPECIES_CODE",
-     "NATIONAL_SCHEDULE",
-     "STATE_SCHEDULE",
-     "SPECIES_NAME",
-     "INFRASPECIES",
-     "INFRASPECIES_RANK",
-     "SPECIES_AUTHORITY",
-     "SPECIES_PUBLICATION",
-     "INFRASPECIES_PUBLICATION",
-     "INFRASPECIES_AUTHORITY",
-     "SPECIES_NOTES",
-     "PREFERRED_COMMON_NAMES",
-     "CONSERVATION_SIGNIFICANCE_YN",
-     "SCIENTIFIC_SIGNIFICANCE",
-     "RFA_PRIORITY",
-     "CULTURAL_SIGNIFICANCE",
-     "UNCOMMON",
-     "PRIMITIVE_STATUS",
-     "SPECIES_SENSITIVITY",
-     "RESERVATION_STATUS",
-     "INTRODUCED_WATCH_LIST",
-     "NATIVE_WATCH_LIST",
-     "THREATENED_YN",
-     "CFEV_YN",
-     "FORESTRY_YN",
-     "CENSUS_YN",
-     "SPECIES_OBSERVATION_ID",
-     "OBSERVATION_STATE",
-     "OBSERVATION_STATE_QUALIFIER",
-     "OBSERVATION_TYPE",
-     "OBSERVATION_TYPE_QUALIFIER",
-     "FOREIGN_ID",
-     "PROJECT_CODE"
-    ],
-    "geometry": "esriGeometryPolygon",
-    "kind": "arcgis-layer",
-    "layer_name": "Feature Observation Bad Polygons",
-    "name_field": "SPECIES_NAME",
-    "opened": true,
-    "polygons": true,
-    "sample": [
-     "Digitalis purpurea",
-     "Ulex europaeus",
-     "Ulex europaeus"
-    ],
+    "opened": false,
     "service": {
      "layers_listed": 17,
      "polygon_layers": [
@@ -10678,7 +10582,7 @@
      ],
      "service_name": "The datastets contained in this service are sourced from the Natural Values Atlas (NVA) and are projected in WGS84 EPSG 4326. This service is not intended for LISTmap."
     },
-    "service_item": ""
+    "status": "rest"
    },
    "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
@@ -10689,7 +10593,8 @@
    "queue_licence": "",
    "queue_note": "",
    "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer",
-   "requests_used": 70,
+   "requests_used": 66,
+   "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
    "terms": {
     "about": "",
@@ -10705,8 +10610,8 @@
    "title": "Public/NVAdata",
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/7",
    "ver": 1,
-   "verdict": "ASK-THE-PUBLISHER",
-   "why": "nothing stated about use on the item page or the service"
+   "verdict": "RETRY",
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -10746,7 +10651,7 @@
      ],
      "service_name": "The datastets contained in this service are sourced from the Natural Values Atlas (NVA) and are projected in WGS84 EPSG 4326. This service is not intended for LISTmap."
     },
-    "status": "budget"
+    "status": "rest"
    },
    "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
@@ -10757,7 +10662,7 @@
    "queue_licence": "",
    "queue_note": "",
    "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer",
-   "requests_used": 70,
+   "requests_used": 67,
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
    "terms": {
@@ -10775,7 +10680,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -10815,7 +10720,7 @@
      ],
      "service_name": "The datastets contained in this service are sourced from the Natural Values Atlas (NVA) and are projected in WGS84 EPSG 4326. This service is not intended for LISTmap."
     },
-    "status": "budget"
+    "status": "rest"
    },
    "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
@@ -10826,7 +10731,7 @@
    "queue_licence": "",
    "queue_note": "",
    "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer",
-   "requests_used": 70,
+   "requests_used": 68,
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
    "terms": {
@@ -10844,7 +10749,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -10884,7 +10789,7 @@
      ],
      "service_name": "The datastets contained in this service are sourced from the Natural Values Atlas (NVA) and are projected in WGS84 EPSG 4326. This service is not intended for LISTmap."
     },
-    "status": "budget"
+    "status": "rest"
    },
    "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
@@ -10895,7 +10800,7 @@
    "queue_licence": "",
    "queue_note": "",
    "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer",
-   "requests_used": 70,
+   "requests_used": 69,
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
    "terms": {
@@ -10913,7 +10818,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/13",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -10953,7 +10858,7 @@
      ],
      "service_name": "The datastets contained in this service are sourced from the Natural Values Atlas (NVA) and are projected in WGS84 EPSG 4326. This service is not intended for LISTmap."
     },
-    "status": "budget"
+    "status": "rest"
    },
    "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
@@ -10982,7 +10887,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/17",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -204665,7 +204570,7 @@
     "opened": false,
     "status": "rest"
    },
-   "probed": "2026-11-02",
+   "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "unsure",
@@ -204698,7 +204603,7 @@
     "opened": false,
     "status": "rest"
    },
-   "probed": "2026-11-02",
+   "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "unsure",
@@ -204731,7 +204636,7 @@
     "opened": false,
     "status": "rest"
    },
-   "probed": "2026-11-02",
+   "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "unsure",
@@ -204764,7 +204669,7 @@
     "opened": false,
     "status": "rest"
    },
-   "probed": "2026-11-02",
+   "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "unsure",
@@ -204797,7 +204702,7 @@
     "opened": false,
     "status": "rest"
    },
-   "probed": "2026-11-02",
+   "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "unsure",
@@ -204830,7 +204735,7 @@
     "opened": false,
     "status": "rest"
    },
-   "probed": "2026-11-02",
+   "probed": "2026-11-04",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "unsure",
