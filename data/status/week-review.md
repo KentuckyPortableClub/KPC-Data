@@ -30,7 +30,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 ## Layers
 
-- intake: ASK-THE-PUBLISHER 423, LIVE-ONLY 5, READY 2, REJECT 1654, RETRY 365, WATER-ONLY 41, approved 2; queue 2140
+- intake: ASK-THE-PUBLISHER 423, LIVE-ONLY 5, READY 2, REJECT 1654, RETRY 365, WATER-ONLY 41, approved 2; queue 2141
 - layer collector: asked 661, failed 196, evidence 9, no match 1402, no hit 222297, UNLIKELY 21621, LIKELY 6404, SURE 1092; GIS finders found 150 layers
 
 ## Coverage
