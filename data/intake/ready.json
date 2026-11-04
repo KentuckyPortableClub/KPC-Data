@@ -214983,6 +214983,92 @@
    "ver": 1,
    "verdict": "REJECT",
    "why": "already read as ON-SVCA Grey: nothing new to take"
+  },
+  {
+   "approved": null,
+   "area": "US-OH",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 1,
+    "missing_in_area": 1,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 1
+   },
+   "from": "discovery bot",
+   "overlap": "same publisher as sgohf",
+   "probe": {
+    "copyright": "Department of Natural Resources, Office of Information Technology.",
+    "count": 585,
+    "description": "The ODNR_LANDS feature class is a generalized digital representation of the Ohio Department of Natural Resources land facilities, and contains property type and ownership classifications in addition to MARCS beat information.",
+    "extent": [
+     -9452740.805,
+     4656212.383,
+     -8959094.198,
+     5155950.488,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "ALT_NAME",
+     "LANDS_NAME",
+     "Shape",
+     "Shape.STArea()",
+     "Shape.STLength()",
+     "dow_district",
+     "dow_workunit_num"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "ODNR_LANDS_Dissolved",
+    "name_field": "LANDS_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "AWMarionSP",
+     "AcdClffsWA",
+     "AdamsLakeSP"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "ODNR_LANDS_Dissolved"
+      ]
+     ],
+     "service_name": ""
+    },
+    "service_item": "dac3dfd71b3f4bcf856acda30ed28264"
+   },
+   "probed": "2026-11-04",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis2.ohiodnr.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "discovery bot A lead for outline",
+   "queue_url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lands_Dissolved/MapServer",
+   "requests_used": 8,
+   "sig": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lands_Dissolved/MapServer|ODNR_Lands_Dissolved|||discovery bot A lead for outline|",
+   "terms": {
+    "about": "DISSOLVED ODNR LANDS",
+    "class": "CREDIT",
+    "credit": "",
+    "item_url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lands_Dissolved/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "Department of Natural Resources, Office of Information Technology.",
+    "source": "item page",
+    "title": "ODNR_Lands_Dissolved"
+   },
+   "test": "",
+   "title": "ODNR_Lands_Dissolved",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lands_Dissolved/MapServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
   }
  ],
  "updated": "2026-11-04"

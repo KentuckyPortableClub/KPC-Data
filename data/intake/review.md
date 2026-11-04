@@ -9,7 +9,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | LIVE-ONLY | 5 |
 | ASK-THE-PUBLISHER | 421 |
 | RETRY | 367 |
-| REJECT | 1657 |
+| REJECT | 1658 |
 
 ## READY (2)
 
@@ -6940,7 +6940,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: status robots-unreadable
 - overlap: same publisher as sgmea
 
-## REJECT (1657)
+## REJECT (1658)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -20779,6 +20779,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field PROPERTY_N · 172 records · sample Clifford Complex / Drew Bog / Denny's Dam Conservation Area
 - overlap: already read as ON-SVCA Grey
 - closes: not probed
+
+### ODNR_Lands_Dissolved  ·  US-OH  ·  from discovery bot
+- url: https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lands_Dissolved/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: ? → official (government host gis2.ohiodnr.gov)
+- terms: CREDIT · source item page · "Department of Natural Resources, Office of Information Technology." · item https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lands_Dissolved/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LANDS_NAME · 585 records · sample AWMarionSP / AcdClffsWA / AdamsLakeSP
+- overlap: same publisher as sgohf
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 1 missing parks lie in the layer's extent)
 
 ## Known-answer test rows
 
