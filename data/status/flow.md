@@ -1,10 +1,9 @@
-# Flow board (2026-11-04 04:26Z, kpc_flow.py)
+# Flow board (2026-11-04 08:03Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
-## STUCK (16)
+## STUCK (15)
 - STUCK 4 d · **3** · HELD campinfo files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-NC, US-NY
-- STUCK 4 d · **8** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-IN, US-OR, US-SC, US-VA
-- STUCK 3 d · **0** · engine finds handed to the collector (last hand-back) · waits on **layer collector (every 2 h)** · engine results last saved 2026-11-03
+- STUCK 4 d · **6** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-IN, US-VA
 - STUCK 3 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
 - STUCK 3 d · **35** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-AR, US-AZ, US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-OK, US-PA, US-SD, US-TN, US-TX, CA-BC, CA-ON, US-AK, US-CA, US-CO, US-CT, US-ID, US-MD, US-MN, …
 - STUCK 3 d · **3** · HELD trails files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-9905, US-9906, finds-lines-report
@@ -22,7 +21,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ## Waiting on each chat (open work, oldest first)
 ### chat 2
 - STUCK 3 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 8 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
+- STUCK 6 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 35 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 3 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
@@ -38,7 +37,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - 1 · Key bots: errors and silence: RED (the bot is broken) · since 2026-11-03
 ### chat 11
 - STUCK 3 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 8 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
+- STUCK 6 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 35 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 3 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
@@ -68,7 +67,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 1 finders | engine crawler layers (US + Canada) the engine tries at the pins | 516 | park-info engine (every run) | 2026-11-03 |
 | 2 outside files | files on branch intake-files no reader has taken yet | 0 | chat 10 (the reader of that kind) | 2026-11-02 |
 | 3 layer list | layers in the list the intake bot has not checked yet | 305 | intake bot (daily, 40 a night) | 2026-11-04 |
-| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 **STUCK** |
+| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 5 collector | outside-research layer x park pairs not pin-tested yet | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 6 questions | questions/aliases-nov1.json waiting for an answer | 2 | chat 11 | 2026-11-02 **STUCK** |
 | 6 questions | questions/aliases-nov2.json waiting for an answer | 28 | chat 11 | 2026-11-02 **STUCK** |
@@ -86,7 +85,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 6 questions | questions/world-finder.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
 | 7 waiting room | HELD ca-key files (a check failed; data/waiting/today.md says why) | 4 | chat 2 (fix) + chat 11 | 2026-11-03 |
 | 7 waiting room | HELD campinfo files (a check failed; data/waiting/today.md says why) | 3 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
-| 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 8 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
+| 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 6 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD fers files (a check failed; data/waiting/today.md says why) | 35 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 3 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD truth files (a check failed; data/waiting/today.md says why) | 9 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
