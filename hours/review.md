@@ -1,15 +1,18 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 90 days.
+Updated 2026-11-04. Every line is the agency's own sentence (H2). Refresh every 90 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
+| US-NC | 253 | 66 | 71 | 9 | 67 | 2 |
 | US-GA | 237 | 26 | 32 | 5 | 176 | 0 |
 | US-AL | 155 | 30 | 2 | 3 | 108 | 6 |
 | US-FL | 460 | 23 | 2 | 4 | 200 | 0 |
+| US-MS | 155 | 22 | 23 | 9 | 6 | 0 |
 | US-MO | 123 | 116 | 9 | 112 | 2 | 0 |
 | US-MN | 298 | 19 | 82 | 87 | 93 | 0 |
 | US-IA | 181 | 114 | 3 | 2 | 61 | 0 |
+| US-ND | 82 | 20 | 12 | 0 | 54 | 0 |
 | US-MA | 421 | 35 | 25 | 5 | 346 | 0 |
 | US-ME | 148 | 26 | 8 | 2 | 85 | 2 |
 | US-MD | 186 | 81 | 86 | 29 | 64 | 0 |
@@ -18,11 +21,55 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
 | US-LA | 123 | 11 | 7 | 4 | 11 | 0 |
 | US-KS | 145 | 8 | 11 | 1 | 13 | 0 |
 | US-ID | 63 | 0 | 2 | 0 | 32 | 0 |
+| US-MT | 254 | 39 | 73 | 9 | 154 | 1 |
 | US-AZ | 123 | 4 | 7 | 9 | 56 | 0 |
 | US-CA | 243 | 103 | 94 | 20 | 86 | 2 |
 | US-AK | 179 | 4 | 7 | 4 | 161 | 0 |
 | US-HI | 102 | 9 | 1 | 6 | 73 | 0 |
 | US-MI | 388 | 18 | 15 | 3 | 27 | 0 |
+
+## US-NC: 12-park sample for chat 8
+
+- **US-0034 Great Smoky Mountains National Park**
+  - Hours: “Great Smoky Mountains National Park is open 24 hours a day, 365 days a year, offering visitors the chance to experience its beauty in every season.” · [www.nps.gov](https://www.nps.gov/grsm/planyourvisit/hours.htm)
+  - Fees: “While the parking tag is not an entrance fee, the park honors the Free Entrance Days below and parking tags will not be required on those dates.” · [www.nps.gov](https://www.nps.gov/grsm/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/grsm/planyourvisit/fees.htm)
+- **US-0410 Alligator River National Wildlife Refuge**
+  - Hours: “The refuge is open all year round during daylight hours.” · [www.fws.gov](https://www.fws.gov/refuge/alligator-river/visit-us)
+  - Hours: “The Refuge is open during daylight hours only (1/2 -hour before sunrise to 1/2 -hour after sunset).” · [www.fws.gov](https://www.fws.gov/refuge/alligator-river/visit-us)
+  - Permit: “Groups of 6 or more horses must have a Refuge Special Use Permit.” · [www.fws.gov](https://www.fws.gov/refuge/alligator-river/visit-us)
+- **US-0412 Currituck National Wildlife Refuge**
+  - Hours: “The refuge is open daily, from sunrise to sunset, throughout the year.” · [www.fws.gov](https://www.fws.gov/refuge/currituck/visit-us)
+- **US-0413 Mackay Island National Wildlife Refuge**
+  - Hours: “Subject to staff availability, the gate to the office Entrance Road will be open Monday - Thursday, 10 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/refuge/mackay-island/visit-us)
+  - Hours: “The refuge is open from sunrise to sunset for a variety of activities, from hiking and bicycling to birding and wildlife photography.” · [www.fws.gov](https://www.fws.gov/refuge/mackay-island/visit-us)
+  - Permit: “A Refuge permit is required for hunting.” · [www.fws.gov](https://www.fws.gov/refuge/mackay-island/visit-us)
+- **US-0415 Pea Island National Wildlife Refuge**
+  - Hours: “Pea Island National Wildlife Refuge offers three trails that are open year-round during daylight hours.” · [www.fws.gov](https://www.fws.gov/refuge/pea-island/visit-us)
+- **US-0416 Pee Dee National Wildlife Refuge**
+  - Hours: “The Refuge is open during daylight hours only (from 1 hour before sunrise to 1 hour after sunset).” · [www.fws.gov](https://www.fws.gov/locations/pee-dee-national-wildlife-refuge)
+  - Hours: “Monday - Friday (closed on Federal holidays) 8 am - 4:30 pm.” · [www.fws.gov](https://www.fws.gov/locations/pee-dee-national-wildlife-refuge)
+- **US-0417 Pocosin Lakes National Wildlife Refuge**
+  - Hours: “The Refuge is open during daylight hours only (1/2 -hour before sunrise to 1/2 -hour after sunset).” · [www.fws.gov](https://www.fws.gov/refuge/pocosin-lakes/visit-us)
+- **US-0419 Swanquarter National Wildlife Refuge**
+  - Hours: “All of the refuge, including the entrance road and Bell Island Pier, is open for daylight use only (sunrise to sunset).” · [www.fws.gov](https://www.fws.gov/refuge/swanquarter/visit-us)
+- **US-0566 Great Dismal Swamp National Wildlife Refuge**
+  - Hours: “Refuge trails are open sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/great-dismal-swamp/visit-us)
+  - Hours: “Refuge trails and boating on Lake Drummond are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/great-dismal-swamp/visit-us/rules-policies)
+  - Fees: “Daily fee per vehicle is $5.00, cash or check.” · [www.fws.gov](https://www.fws.gov/refuge/great-dismal-swamp/visit-us/rules-policies)
+  - Permit: “Vehicle access on the refuge is through the Lake Drummond Wildlife Drive with required permit and fee.” · [www.fws.gov](https://www.fws.gov/refuge/great-dismal-swamp/visit-us/rules-policies)
+- **US-0682 Cape Hatteras National Seashore**
+  - Hours: “All ORV ramps open 24 hours a day.” · [www.nps.gov](https://www.nps.gov/caha/planyourvisit/hours.htm)
+  - Hours: “Priority ORV ramps (see list below) open from 6 am to 9 pm daily.” · [www.nps.gov](https://www.nps.gov/caha/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/caha/planyourvisit/fees.htm)
+  - Fees: “There is no entry fee for Cape Hatteras National Seashore.” · [www.nps.gov](https://www.nps.gov/caha/planyourvisit/fees.htm)
+- **US-0683 Cape Lookout National Seashore**
+  - Hours: “Cape Lookout National Seashore has 3 offshore barrier islands that are open 24 hours and 365 days a year (weather permittting).” · [www.nps.gov](https://www.nps.gov/calo/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/calo/planyourvisit/fees.htm)
+- **US-0706 Moores Creek National Battlefield**
+  - Hours: “The Moores Creek National Battlefield grounds are open daily from 9:00 am to 5:00 pm;” · [www.nps.gov](https://www.nps.gov/mocr/planyourvisit/hours.htm)
+  - Hours: “The park visitor center is open Tuesday through Saturday from 9 am until 5 pm.” · [www.nps.gov](https://www.nps.gov/mocr/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mocr/planyourvisit/fees.htm)
 
 ## US-GA: 12-park sample for chat 8
 
@@ -128,6 +175,50 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Refuge open year round during daylight hours (gate on Lighthouse Road opens at 6 am) .” · [www.fws.gov](https://www.fws.gov/refuge/st-marks/visit-us/rules-policies)
 - **US-0258 Ten Thousand Islands National Wildlife Refuge**
   - Permit: “Special Use Permits are required for all research and monitoring activities conducted on Refuge lands.” · [www.fws.gov](https://www.fws.gov/refuge/ten-thousand-islands/visit-us/rules-policies)
+
+## US-MS: 12-park sample for chat 8
+
+- **US-0382 Coldwater River National Wildlife Refuge**
+  - Hours: “The refuge is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/locations/coldwater-river-national-wildlife-refuge)
+  - Permit: “Hunters and anglers must possess a valid North Mississippi Refuge Complex Hunting and Fishing permit.” · [www.fws.gov](https://www.fws.gov/locations/coldwater-river-national-wildlife-refuge)
+  - Permit: “Online: Hunters and anglers must possess a valid North Mississippi Refuge Complex Hunting and Fishing permit” · [www.fws.gov](https://www.fws.gov/locations/coldwater-river-national-wildlife-refuge)
+  - Hunting hours: “During hunting season, waterfowl hunters may enter the refuge two hours before sunrise and must end their hunt by noon.” · [www.fws.gov](https://www.fws.gov/locations/coldwater-river-national-wildlife-refuge)
+- **US-0383 Dahomey National Wildlife Refuge**
+  - Hours: “The refuge is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/locations/dahomey-national-wildlife-refuge)
+  - Permit: “For hunting and fishing, individuals will need a refuge permit.” · [www.fws.gov](https://www.fws.gov/locations/dahomey-national-wildlife-refuge)
+  - Hunting hours: “During hunting season, hunters may enter the refuge two hours before sunrise and must exit the refuge no later than two hours after sunset.” · [www.fws.gov](https://www.fws.gov/locations/dahomey-national-wildlife-refuge)
+- **US-0384 Grand Bay National Wildlife Refuge**
+  - Hours: “The Interpretative Area is open to the public 9:00 am – 3:00 pm.” · [www.fws.gov](https://www.fws.gov/refuge/grand-bay/visit-us)
+- **US-0385 Hillside National Wildlife Refuge**
+  - Hours: “All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.” · [www.fws.gov](https://www.fws.gov/refuge/hillside/visit-us)
+  - Permit: “A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.” · [www.fws.gov](https://www.fws.gov/refuge/hillside/visit-us)
+- **US-0386 Holt Collier National Wildlife Refuge**
+  - Hours: “All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.” · [www.fws.gov](https://www.fws.gov/refuge/holt-collier/visit-us)
+  - Permit: “A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.” · [www.fws.gov](https://www.fws.gov/refuge/holt-collier/visit-us)
+- **US-0387 Mathews Brake National Wildlife Refuge**
+  - Hours: “All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.” · [www.fws.gov](https://www.fws.gov/refuge/mathews-brake/visit-us)
+  - Permit: “A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.” · [www.fws.gov](https://www.fws.gov/refuge/mathews-brake/visit-us)
+- **US-0388 Mississippi Sandhill Crane National Wildlife Refuge**
+  - Hours: “The refuge is open to visitors during daylight hours only.” · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/visit-us)
+  - Hours: “The refuge visitor center is open from 9:00 am - 3:00 pm.” · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/visit-us/rules-policies)
+- **US-0389 Morgan Brake National Wildlife Refuge**
+  - Hours: “All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.” · [www.fws.gov](https://www.fws.gov/refuge/morgan-brake/visit-us)
+  - Permit: “A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.” · [www.fws.gov](https://www.fws.gov/refuge/morgan-brake/visit-us)
+- **US-0390 Noxubee National Wildlife Refuge**
+  - Hours: “Refuge trails are open during daylight hours.” · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/visit-us)
+  - Hours: “The refuge is closed after dark.” · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/visit-us)
+- **US-0391 Panther Swamp National Wildlife Refuge**
+  - Hours: “All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.” · [www.fws.gov](https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/visit-us)
+  - Hours: “Visitor Contact Station - Thursday 9:00 AM to 2:00 PM” · [www.fws.gov](https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/visit-us)
+  - Fees: “There is no admission fee to visit Panther Swamp NWR;” · [www.fws.gov](https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/visit-us)
+  - Permit: “everyone sixteen years of age and older, hunting or fishing must have an Annual Public Use Permit in addition to state licenses .” · [www.fws.gov](https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/visit-us)
+  - Permit: “A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.” · [www.fws.gov](https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/visit-us)
+- **US-0392 St. Catherine Creek National Wildlife Refuge**
+  - Hours: “All lands managed under TR Complex, including Refuge roads, parking areas and boat ramps are closed 1 1/2 hours after sunset until 4 am.” · [www.fws.gov](https://www.fws.gov/refuge/st-catherine-creek/visit-us)
+  - Permit: “A Current Public Use Permit is required for access if you are participating in consumptive use such as but not limited to, hunting and angling.” · [www.fws.gov](https://www.fws.gov/refuge/st-catherine-creek/visit-us)
+- **US-0393 Tallahatchie National Wildlife Refuge**
+  - Hours: “Tallahatchie National Wildlife Refuge is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/locations/tallahatchie-national-wildlife-refuge)
+  - Hunting hours: “During hunting season, hunters may enter the refuge two hours before sunrise and must exit the refuge no later than two hours after sunset.” · [www.fws.gov](https://www.fws.gov/locations/tallahatchie-national-wildlife-refuge)
 
 ## US-MO: 12-park sample for chat 8
 
@@ -283,6 +374,40 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Iowa State Parks open at 4 am each day and close at 10:30 pm.” · [www.iowadnr.gov](https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines)
   - Hours: “At Brushy Creek State Recreation Area, located in Webster County and Pleasant Creek State Recreation Area, located in Linn County, swimming is prohibited from 10:30 pm to 6 am daily.” · [www.iowadnr.gov](https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines)
   - Hunting hours: “Hunting, in accordance with applicable laws, is allowed on these areas and they are usually open for public access 24 hours a day.” · [www.iowadnr.gov](https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines)
+
+## US-ND: 12-park sample for chat 8
+
+- **US-0065 Theodore Roosevelt National Park**
+  - Hours: “The park is open 24 hours a day, year-round.” · [www.nps.gov](https://www.nps.gov/thro/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/thro/planyourvisit/fees.htm)
+- **US-0422 Audubon National Wildlife Refuge**
+  - Hours: “It is open Monday through Friday from 8:00 am to 4:30 pm year-round, except Federal holidays.” · [www.fws.gov](https://www.fws.gov/refuge/audubon/visit-us)
+  - Hours: “The Refuge is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/audubon/visit-us)
+- **US-0424 Des Lacs National Wildlife Refuge**
+  - Hours: “Year-round: 5:00 am - 10:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/des-lacs-national-wildlife-refuge)
+  - Hours: “The Refuge is open daily from 5:00 am to 10:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/des-lacs-national-wildlife-refuge/rules-and-policies)
+- **US-0426 Florence Lake National Wildlife Refuge**
+  - Hours: “Refuge is open during daylight hours only.” · [www.fws.gov](https://www.fws.gov/refuge/florence-lake/visit-us/rules-policies)
+- **US-0427 J. Clark Salyer National Wildlife Refuge**
+  - Hours: “Year-round: 5 am - 1 pm.” · [www.fws.gov](https://www.fws.gov/locations/j-clark-salyer-national-wildlife-refuge)
+- **US-0428 J. Clark Salyer Wetland Management District**
+  - Hours: “Mon-Fri: 8:00 AM - 4:30 PM (except federal holidays)” · [www.fws.gov](https://www.fws.gov/locations/j-clark-salyer-wetland-management-district)
+  - Hours: “WPAs are open year-round from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/locations/j-clark-salyer-wetland-management-district/rules-and-policies)
+- **US-0432 Lake Ilo National Wildlife Refuge**
+  - Hours: “The refuge is open from 5:00am to 10:00pm.” · [www.fws.gov](https://www.fws.gov/refuge/lake-ilo/visit-us)
+- **US-0433 Lake Zahl National Wildlife Refuge**
+  - Hours: “Year-round: 5 am - 10 pm.” · [www.fws.gov](https://www.fws.gov/locations/lake-zahl-national-wildlife-refuge)
+- **US-0435 Lostwood National Wildlife Refuge**
+  - Hours: “Year-round: 5 am - 10 pm.” · [www.fws.gov](https://www.fws.gov/locations/lostwood-national-wildlife-refuge)
+  - Hours: “The Refuge is open daily from 5:00 am to 10:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/lostwood-national-wildlife-refuge/rules-and-policies)
+- **US-0437 White Horse Hill Game Preserve**
+  - Hours: “12 pm - 4 pm June-August;” · [www.fws.gov](https://www.fws.gov/refuge/white-horse-hill-national-game-preserve/visit-us)
+  - Hours: “The Refuge is open daily from 8:00 am to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/white-horse-hill-national-game-preserve/visit-us/rules-policies)
+- **US-0439 Upper Souris National Wildlife Refuge**
+  - Hours: “Year-round: 5 am - 10 pm.” · [www.fws.gov](https://www.fws.gov/locations/upper-souris-national-wildlife-refuge)
+  - Hours: “The Refuge is open daily from 5:00 am to 10:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/upper-souris-national-wildlife-refuge/rules-and-policies)
+- **US-0823 Fort Union Trading Post National Historic Site**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fous/planyourvisit/fees.htm)
 
 ## US-MA: 12-park sample for chat 8
 
@@ -508,6 +633,45 @@ Updated 2026-11-03. Every line is the agency's own sentence (H2). Refresh every 
   - Fees: “day use (per vehicle)-$2.00/day” · [www.blm.gov](https://www.blm.gov/visit/steck-park#)
 - **US-10421 International Selkirk Loop National Scenic Byway National Parkway**
   - Fees: “No fee for the Kootenay Lake ferry” · [fhwaapps.fhwa.dot.gov](https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2486)
+
+## US-MT: 12-park sample for chat 8
+
+- **US-0028 Glacier National Park**
+  - Hours: “Lower portions of Going-to-the-Sun Road are open year-round, but the entire road does not usually open until late June or early July, and the Logan Pass area is not accessible by vehicle until then.” · [www.nps.gov](https://www.nps.gov/glac/planyourvisit/hours.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Glacier National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/glac/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/glac/planyourvisit/fees.htm)
+- **US-0054 Nez Perce National Historical Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/nepe/planyourvisit/fees.htm)
+  - Fees: “There are no fees to visit any of the sites of Nez Perce National Historical Park.” · [www.nps.gov](https://www.nps.gov/nepe/planyourvisit/fees.htm)
+- **US-0070 Yellowstone National Park**
+  - Hours: “Yellowstone is open 24 hours per day, 365 days per year” · [www.nps.gov](https://www.nps.gov/yell/planyourvisit/operating-dates.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Yellowstone National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/yell/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/yell/planyourvisit/fees.htm)
+- **US-0399 Charles M. Russell National Wildlife Refuge**
+  - Permit: “Non-resident ATV operators who cannot license their vehicles in their home state must obtain a temporary permit from a Montana Fish, Wildlife & Parks office.” · [www.fws.gov](https://www.fws.gov/locations/charles-m-russell-national-wildlife-refuge)
+  - Office hours: “Headquarters and Field Station Office Hours: Monday through Friday (except holidays) 9:00 am - 4:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/charles-m-russell-national-wildlife-refuge)
+- **US-0402 Lee Metcalf National Wildlife Refuge**
+  - Hours: “The Refuge is open from sunrise to sunset, in other words, day-use only.” · [www.fws.gov](https://www.fws.gov/refuge/lee-metcalf/visit-us)
+- **US-0407 Red Rock Lakes National Wildlife Refuge**
+  - Fees: “Fees are modest: $7 per vehicle per night, $5 for Senior or Access pass holders;” · [www.fws.gov](https://www.fws.gov/refuge/red-rock-lakes/visit-us)
+- **US-0674 Bighorn Canyon National Recreation Area**
+  - Hours: “The park itself is not gated and is open 24 hours a day year round with the exception of rare road closures during extreme winter weather.” · [www.nps.gov](https://www.nps.gov/bica/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/bica/planyourvisit/fees.htm)
+- **US-0701 Big Hole National Battlefield**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/biho/planyourvisit/fees.htm)
+  - Permit: “If you are still unsure if you need a permit, contact the park.” · [www.nps.gov](https://www.nps.gov/biho/planyourvisit/fees.htm)
+  - Permit: “Appropriate permits are required in order for individuals, businesses, and non-profit organizations to provide any goods, activities, services, agreements, or other functions for members, clients, or the public that take place at least in p” · [www.nps.gov](https://www.nps.gov/biho/planyourvisit/fees.htm)
+- **US-0823 Fort Union Trading Post National Historic Site**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fous/planyourvisit/fees.htm)
+- **US-0829 Grant-Kohrs Ranch National Historic Site**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/grko/planyourvisit/fees.htm)
+  - Fees: “There is no admission fee to the park.” · [www.nps.gov](https://www.nps.gov/grko/planyourvisit/fees.htm)
+- **US-0883 Flathead National Wild and Scenic River**
+  - Fees: “An $80 Annual Pass that provides access to more than 2,000 recreation areas managed by five Federal agencies, with proceeds used to enhance visitor recreation services.” · [www.fs.usda.gov](https://www.fs.usda.gov/r01/flathead/passes)
+- **US-0947 Little Bighorn Battlefield National Monument**
+  - Hours: “Entrance Gate 8 am - 4 pm.” · [www.nps.gov](https://www.nps.gov/libi/planyourvisit/hours.htm)
+  - Hours: “Deep Ravine Trail: 8 am to 3:30 pm.” · [www.nps.gov](https://www.nps.gov/libi/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/libi/planyourvisit/fees.htm)
 
 ## US-AZ: 12-park sample for chat 8
 

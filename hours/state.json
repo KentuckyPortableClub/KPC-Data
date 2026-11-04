@@ -341,50 +341,136 @@
    "parks": 561,
    "status": "partial",
    "updated": "2026-11-03"
+  },
+  "US-MS": {
+   "checked": 155,
+   "counts": {
+    "fees": 23,
+    "hours": 22,
+    "hours_lines": 31,
+    "no_page": 0,
+    "nothing": 6,
+    "parks": 155,
+    "permits": 9,
+    "season": 2,
+    "season_lines": 3
+   },
+   "left": 0,
+   "parks": 155,
+   "status": "done",
+   "updated": "2026-11-04"
+  },
+  "US-MT": {
+   "checked": 254,
+   "counts": {
+    "fees": 73,
+    "hours": 39,
+    "hours_lines": 51,
+    "no_page": 1,
+    "nothing": 154,
+    "parks": 254,
+    "permits": 9,
+    "season": 17,
+    "season_lines": 23
+   },
+   "left": 0,
+   "parks": 254,
+   "status": "done",
+   "updated": "2026-11-04"
+  },
+  "US-NC": {
+   "checked": 253,
+   "counts": {
+    "fees": 71,
+    "hours": 66,
+    "hours_lines": 113,
+    "no_page": 2,
+    "nothing": 67,
+    "parks": 253,
+    "permits": 9,
+    "season": 11,
+    "season_lines": 22
+   },
+   "left": 0,
+   "parks": 253,
+   "status": "done",
+   "updated": "2026-11-04"
+  },
+  "US-ND": {
+   "checked": 82,
+   "counts": {
+    "fees": 12,
+    "hours": 20,
+    "hours_lines": 31,
+    "no_page": 0,
+    "nothing": 54,
+    "parks": 82,
+    "permits": 0,
+    "season": 12,
+    "season_lines": 17
+   },
+   "left": 73,
+   "parks": 155,
+   "status": "partial",
+   "updated": "2026-11-04"
   }
  },
- "hosts": {
-  "ksoutdoors.com": 1793781549.0465133,
-  "ksoutdoors.gov": 1793781557.2827094,
-  "www.ksoutdoors.gov": 1793781469.3136413,
-  "www.lastateparks.com": 1793781803.4911802,
-  "www.maine.gov": 1793783708.9178083,
-  "www.mass-trails.org": 1793782820.535664,
-  "www.michigan.gov": 1793784095.683167,
-  "www.nwk.usace.army.mil": 1793781482.130476,
-  "www.sos.mo.gov": 1793805119.7075799,
-  "www2.dnr.state.mi.us": 1793784112.3864317
- },
+ "hosts": {},
  "last": {
   "areas": [
-   "US-KS",
-   "US-LA",
-   "US-MA",
-   "US-MD",
-   "US-ME",
-   "US-MI",
-   "US-MN",
-   "US-MO"
+   "US-MS",
+   "US-MT",
+   "US-NC",
+   "US-ND",
+   "US-NE",
+   "US-NH",
+   "US-NJ",
+   "US-NM"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 3,
-   "requests": 956,
-   "rested": 215,
-   "robots": 97,
-   "strikes": 5
+   "dropped_queued": 181,
+   "errors": 1,
+   "for_person_urls": [
+    [
+     "https://www.mdwfp.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.mdwfp.com this run"
+    ],
+    [
+     "https://www.mvk.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.mvk.usace.army.mil this run"
+    ],
+    [
+     "https://www.sam.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.sam.usace.army.mil this run"
+    ],
+    [
+     "https://www.tva.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.tva.com this run"
+    ],
+    [
+     "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/robots.txt",
+     "robots.txt answered 400: nothing fetched from tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net this run"
+    ]
+   ],
+   "requests": 1162,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 7,
+   "robots_unreadable": 5,
+   "strikes": 3
   },
   "stat": {
    "errors": 0,
-   "fees": 91,
-   "hours": 135,
-   "no_page": 0,
-   "none": 370,
-   "pages_read": 643,
-   "parks": 595,
-   "permits": 199,
-   "skipped_fresh": 1237
+   "fees": 179,
+   "hours": 147,
+   "no_page": 3,
+   "none": 494,
+   "pages_read": 839,
+   "parks": 744,
+   "permits": 27,
+   "skipped_fresh": 0
   },
-  "when": "2026-11-03"
+  "when": "2026-11-04"
  }
 }
