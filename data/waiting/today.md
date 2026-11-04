@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 274 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 333 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -69,7 +69,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-04 | 0 | data/docs/US-FL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-04 | 0 | data/docs/US-GA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-04 | 0 | data/docs/US-HI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| 2026-11-04 | 0 | data/docs/US-IN.json | HOLD | F-D3 11 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/fw-Deer_Creek_FWA_Map.p |
+| 2026-11-04 | 0 | data/docs/US-IN.json | HOLD | F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/wilbur_wright.pdf |
 | 2026-11-04 | 0 | data/docs/US-KS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-04 | 0 | data/docs/US-LA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-04 | 0 | data/docs/US-MA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
@@ -239,8 +239,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | RELEASE |  |
 | ? | ? | data/us-key/US-WY.json | PASS |  |
-| 2026-11-03 | 1 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | 2026-11-04 | 0 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-04 | 0 | data/world-key/BS.json | HOLD | F-O1 outlines 32 -> 0 (more than 1% lost) |
+| 2026-11-04 | 0 | data/world-key/CV.json | HOLD | F-O1 outlines 35 -> 0 (more than 1% lost) |
+| 2026-11-04 | 0 | data/world-key/CZ.json | HOLD | F-O1 outlines 232 -> 215 (more than 1% lost) |
+| 2026-11-04 | 0 | data/world-key/HU.json | HOLD | F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks? |
+| 2026-11-04 | 0 | data/world-key/IE.json | HOLD | F-O1 outlines 175 -> 168 (more than 1% lost) |
+| 2026-11-04 | 0 | data/world-key/NC.json | HOLD | F-O1 outlines 24 -> 0 (more than 1% lost) |
+| 2026-11-04 | 0 | data/world-key/PT.json | HOLD | F-O1 outlines 335 -> 327 (more than 1% lost) |
 | ? | ? | data/ca-key/answers-applied.json | PASS |  |
 | ? | ? | data/ca-key/hardlook-joins.json | PASS |  |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
@@ -260,26 +266,79 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/zip-mszp.json | PASS |  |
 | ? | ? | data/us-key/zip-mszw.json | PASS |  |
 | ? | ? | data/world-key/AE.json | PASS |  |
+| ? | ? | data/world-key/AS.json | PASS |  |
+| ? | ? | data/world-key/AT.json | PASS |  |
+| ? | ? | data/world-key/BE.json | RELEASE |  |
+| ? | ? | data/world-key/BM.json | PASS |  |
+| ? | ? | data/world-key/BT.json | PASS |  |
+| ? | ? | data/world-key/BW.json | PASS |  |
 | ? | ? | data/world-key/BZ.json | PASS |  |
+| ? | ? | data/world-key/CC.json | PASS |  |
 | ? | ? | data/world-key/CD.json | PASS |  |
+| ? | ? | data/world-key/CG.json | PASS |  |
+| ? | ? | data/world-key/CH.json | RELEASE |  |
 | ? | ? | data/world-key/CL.json | PASS |  |
+| ? | ? | data/world-key/CM.json | PASS |  |
 | ? | ? | data/world-key/CO.json | PASS |  |
+| ? | ? | data/world-key/CX.json | PASS |  |
+| ? | ? | data/world-key/DE.json | RELEASE |  |
+| ? | ? | data/world-key/DK.json | RELEASE |  |
+| ? | ? | data/world-key/DO.json | PASS |  |
+| ? | ? | data/world-key/EC.json | PASS |  |
+| ? | ? | data/world-key/EE.json | PASS |  |
+| ? | ? | data/world-key/ES.json | RELEASE |  |
+| ? | ? | data/world-key/FI.json | PASS |  |
 | ? | ? | data/world-key/FO.json | PASS |  |
+| ? | ? | data/world-key/FR.json | PASS |  |
+| ? | ? | data/world-key/GA.json | PASS |  |
 | ? | ? | data/world-key/GB.json | PASS |  |
+| ? | ? | data/world-key/GE.json | PASS |  |
+| ? | ? | data/world-key/GL.json | PASS |  |
 | ? | ? | data/world-key/GR.json | PASS |  |
+| ? | ? | data/world-key/GT.json | PASS |  |
+| ? | ? | data/world-key/GU.json | PASS |  |
+| ? | ? | data/world-key/GY.json | PASS |  |
+| ? | ? | data/world-key/HR.json | PASS |  |
 | ? | ? | data/world-key/ID.json | PASS |  |
 | ? | ? | data/world-key/IM.json | PASS |  |
+| ? | ? | data/world-key/IT.json | RELEASE |  |
+| ? | ? | data/world-key/JE.json | PASS |  |
+| ? | ? | data/world-key/JP.json | PASS |  |
 | ? | ? | data/world-key/KE.json | PASS |  |
 | ? | ? | data/world-key/LK.json | PASS |  |
 | ? | ? | data/world-key/LR.json | PASS |  |
+| ? | ? | data/world-key/LT.json | PASS |  |
+| ? | ? | data/world-key/LU.json | PASS |  |
+| ? | ? | data/world-key/LV.json | PASS |  |
+| ? | ? | data/world-key/MK.json | PASS |  |
+| ? | ? | data/world-key/MP.json | PASS |  |
 | ? | ? | data/world-key/MT.json | PASS |  |
 | ? | ? | data/world-key/MV.json | PASS |  |
 | ? | ? | data/world-key/MX.json | PASS |  |
-| ? | ? | data/world-key/NC.json | PASS |  |
+| ? | ? | data/world-key/NF.json | PASS |  |
+| ? | ? | data/world-key/NI.json | PASS |  |
+| ? | ? | data/world-key/NL.json | PASS |  |
+| ? | ? | data/world-key/NO.json | RELEASE |  |
 | ? | ? | data/world-key/NZ.json | PASS |  |
+| ? | ? | data/world-key/OM.json | PASS |  |
+| ? | ? | data/world-key/PA.json | PASS |  |
+| ? | ? | data/world-key/PE.json | PASS |  |
+| ? | ? | data/world-key/PF.json | PASS |  |
+| ? | ? | data/world-key/PL.json | PASS |  |
 | ? | ? | data/world-key/PR.json | PASS |  |
 | ? | ? | data/world-key/PY.json | PASS |  |
+| ? | ? | data/world-key/QA.json | PASS |  |
+| ? | ? | data/world-key/RO.json | PASS |  |
+| ? | ? | data/world-key/RW.json | PASS |  |
+| ? | ? | data/world-key/SE.json | PASS |  |
+| ? | ? | data/world-key/SI.json | RELEASE |  |
+| ? | ? | data/world-key/SJ.json | PASS |  |
+| ? | ? | data/world-key/SK.json | PASS |  |
+| ? | ? | data/world-key/SV.json | PASS |  |
+| ? | ? | data/world-key/UM.json | PASS |  |
+| ? | ? | data/world-key/UY.json | PASS |  |
 | ? | ? | data/world-key/VI.json | PASS |  |
+| ? | ? | data/world-key/ZA.json | PASS |  |
 
 ## Questions waiting for an answer
 
