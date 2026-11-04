@@ -1,7 +1,7 @@
 {
  "about": "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
  "built": "2026-11-04",
- "open": 501,
+ "open": 482,
  "questions": [
   {
    "area": "CA-AB",
@@ -636872,7 +636872,8 @@
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "name_field": "RESNAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 3132 (Fort Smith National Historic Site); is this record BETTER?"
+   "key_now": "the park already has an outline: record 3132 (Fort Smith National Historic Site); is this record BETTER?",
+   "auto_recheck": "TO CHAT 11: the park already has an official outline (this could replace it)"
   },
   {
    "area": "US-IN",
@@ -637109,14 +637110,17 @@
    "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?objectIds=422&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13399",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "WA",
    "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
    "name_field": "ManagedPlaceName",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "US-WA",
@@ -637157,14 +637161,17 @@
    "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?objectIds=698&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13395",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "WA",
    "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
    "name_field": "ManagedPlaceName",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "US-WA",
@@ -637181,15 +637188,18 @@
    "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?objectIds=490&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13397",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "WA",
    "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
    "name_field": "ManagedPlaceName",
    "licence": "",
-   "key_now": "the park already has an outline: record 158255 (Modrow Bridge Water Access Site); is this record BETTER?"
+   "key_now": "the park already has an outline: record 158255 (Modrow Bridge Water Access Site); is this record BETTER?",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "US-WA",
@@ -637206,15 +637216,18 @@
    "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?objectIds=257&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13398",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "WA",
    "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
    "name_field": "ManagedPlaceName",
    "licence": "",
-   "key_now": "the park already has an outline: record 158013 (Beginners Hole Water Access Site); is this record BETTER?"
+   "key_now": "the park already has an outline: record 158013 (Beginners Hole Water Access Site); is this record BETTER?",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-ON",
@@ -637231,14 +637244,17 @@
    "record_link": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4/query?objectIds=779&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5989",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "ON",
    "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4",
    "name_field": "PROPERTY_N",
-   "licence": ""
+   "licence": "",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-ON",
@@ -637265,5 +637281,28 @@
    "licence": "",
    "key_now": "the park already has an outline: record 16582 (Kinghurst Forest Nature Reserve); is this record BETTER?"
   }
- ]
+ ],
+ "auto_yes": 737,
+ "auto_1c": {
+  "date": "2026-11-04",
+  "released": 5,
+  "sampled": 68,
+  "to_chat11": 73,
+  "likely_open": 409,
+  "paused_layers": 0,
+  "why": {
+   "the park is a historic kind the record does not na": 25,
+   "the park is a monument natural kind the record doe": 9,
+   "the park is a historical kind the record does not ": 6,
+   "the park is a monument kind the record does not na": 6,
+   "the park is a nature kind the record does not name": 5,
+   "the record is a nationalpark": 4,
+   "the record is offered to more than one park": 4,
+   "the park is a protected kind the record does not n": 2,
+   "the record is a naturschutzgebiet": 2,
+   "the park is a coastal kind the record does not nam": 2,
+   "the pin is 109 m outside the record": 1,
+   "the pin is 120 m outside the record": 1
+  }
+ }
 }
