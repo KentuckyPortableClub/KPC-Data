@@ -4,8 +4,9 @@ name: KPC world finder v2 (stage 1, hidden)
 # let it eat'). STAGE 1 only (W9 / W2 off). Biggest gap first, France last; chains itself until the world list is done or the stop
 # time passes. Hidden data only (freeze): candidates for chat 11, leads for the intake. Never goes red.
 on:
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '24 8 * * *'   # PR2 (Nov 2): daily (was every 6 h, '24 */6 * * *'); each start still chains itself through its chunks   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)   # G9 Nov 2: was '23 */6 * * *' (spread the start times; now 1 min later)
+  # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
+  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # - cron: '24 8 * * *'   # PR2 (Nov 2): daily (was every 6 h, '24 */6 * * *'); each start still chains itself through its chunks   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)   # G9 Nov 2: was '23 */6 * * *' (spread the start times; now 1 min later)
   workflow_dispatch:
     inputs:
       countries:
@@ -83,7 +84,8 @@ jobs:
         run: |
           if [ -n "${{ inputs.stop_at }}" ] && [ "$(date -u +%Y-%m-%dT%H:%M)" \> "${{ inputs.stop_at }}" ]; then echo "::notice title=World finder v2::stop time reached: not chaining"; exit 0; fi
           C=$(( ${{ inputs.chain }} - 1 ))
-          gh workflow run kpc-world-finder.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$C -f stop_at="${{ inputs.stop_at }}" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh workflow run kpc-world-finder.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$C -f stop_at="${{ inputs.stop_at }}" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          echo "::warning title=Paused bot::kpc-world-finder.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

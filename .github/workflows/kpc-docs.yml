@@ -107,7 +107,8 @@ jobs:
               else: ok = ok and c.get('map ok', 0) >= 0.5 * max(1, c.get('parks', 0))
           print('PASS' if ok else 'FAIL')" 2>/dev/null || echo FAIL)
           echo "::notice title=Documents bot::test $AREAS: $P"
-          [ "$P" = PASS ] && gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::the long run has started (queue order: Kentucky, southeast, midwest, northeast, south central, mountain, pacific, Canada; ${{ inputs.chain }} more jobs may follow)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: [ "$P" = PASS ] && gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::the long run has started (queue order: Kentucky, southeast, midwest, northeast, south central, mountain, pacific, Canada; ${{ inputs.chain }} more jobs may follow)"
+          [ "$P" = PASS ] && echo "::warning title=Paused bot::kpc-docs.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
           true
       - name: Carry on in a new job when areas remain
         if: ${{ inputs.areas == '' && inputs.chain != '0' }}
@@ -116,7 +117,8 @@ jobs:
         run: |
           [ "${LEFT:-0}" = 0 ] && { echo "::notice title=Documents bot::queue finished"; exit 0; }
           NEXT=$(( ${{ inputs.chain }} - 1 ))
-          gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$NEXT -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::$LEFT areas left: the next job starts by itself ($NEXT more allowed after it)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$NEXT -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::$LEFT areas left: the next job starts by itself ($NEXT more allowed after it)"
+          echo "::warning title=Paused bot::kpc-docs.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

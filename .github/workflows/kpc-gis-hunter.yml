@@ -29,8 +29,9 @@ on:
       then:
         description: 'When this country is finished, start this country next (e.g. CA); blank = stop'
         default: ''
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '13 7 * * 1'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Monday one full pass, US then Canada
+  # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
+  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # - cron: '13 7 * * 1'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Monday one full pass, US then Canada
 permissions:
   contents: write
   actions: write
@@ -97,7 +98,8 @@ jobs:
           python3 .github/scripts/kpc_after_hunt.py ${{ env.I_AREAS }} | tee /tmp/after.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_after_hunt.py::stopped with an error (exit $rc), see the log above"; echo "kpc_after_hunt.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           A=$(grep -o '^DOCS_AREAS=.*' /tmp/after.txt | cut -d= -f2)
-          [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          [ -n "$A" ] && echo "::warning title=Paused bot::kpc-docs.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Areas remain, so the next job starts itself
         if: ${{ env.LEFT != '0' && env.LEFT != '' && env.I_CHAIN != '0' && env.I_AREAS == '' }}
         id: kept_green_3
@@ -106,14 +108,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           C=$(( ${{ env.I_CHAIN }} - 1 ))
-          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_COUNTRY }} -f areas= -f chunks=5 -f chain=$C -f pass="${{ env.I_PASS }}" -f then="${{ env.I_THEN }}" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_COUNTRY }} -f areas= -f chunks=5 -f chain=$C -f pass="${{ env.I_PASS }}" -f then="${{ env.I_THEN }}" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+          echo "::warning title=Paused bot::kpc-gis-hunter.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: This country is finished, so the next country starts (then)
         if: ${{ env.LEFT == '0' && env.I_THEN != '' && env.I_AREAS == '' }}
         id: kept_green_4
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_THEN }} -f areas= -f chunks=5 -f chain=4 -f pass="${{ env.I_PASS }}" -f then= || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+        # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: run: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ env.I_THEN }} -f areas= -f chunks=5 -f chain=4 -f pass="${{ env.I_PASS }}" -f then= || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+        run: echo "::warning title=Paused bot::kpc-gis-hunter.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

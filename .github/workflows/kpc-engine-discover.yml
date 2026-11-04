@@ -11,8 +11,9 @@ on:
       areas:
         description: 'areas, e.g. "US-OH US-IN" (blank = this week''s quarter)'
         default: ''
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '19 6 * * 2'
+  # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
+  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # - cron: '19 6 * * 2'
 permissions:
   contents: write
 concurrency:

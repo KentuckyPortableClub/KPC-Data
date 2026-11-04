@@ -24,8 +24,9 @@ on:
       test:
         description: 'yes = print the known-answer test table and the GATE line'
         default: ''
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '40 8 * * *'   # G9 Nov 2: was '41 8 * * *' (spread the start times; now 1 min earlier)
+  # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
+  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # - cron: '40 8 * * *'   # G9 Nov 2: was '41 8 * * *' (spread the start times; now 1 min earlier)
 permissions:
   contents: write
   actions: write
@@ -124,7 +125,8 @@ jobs:
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Layer intake::$LEFT rows left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-intake.yml -R ${{ github.repository }} -f rows= -f chunks="${{ inputs.chunks || 2 }}" -f chain=$C || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh workflow run kpc-intake.yml -R ${{ github.repository }} -f rows= -f chunks="${{ inputs.chunks || 2 }}" -f chain=$C || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+          echo "::warning title=Paused bot::kpc-intake.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

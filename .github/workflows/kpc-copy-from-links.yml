@@ -243,7 +243,8 @@ jobs:
           (cd lk && git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add requests && ! git diff --cached --quiet && git commit -qm 'new-park pipeline: page reads' && { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           A=$(grep -o '^AREAS=.*' /tmp/newp.txt | cut -d= -f2)
           if [ -n "$A" ] && ! grep -q '^RUN=' /tmp/hunt.txt 2>/dev/null; then   # a full pass already started covers them (two queued runs would cancel each other)
-            gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-gis-hunter.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chunks]=2' -f 'inputs[chain]=0' || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+            # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-gis-hunter.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chunks]=2' -f 'inputs[chain]=0' || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+            echo "::warning title=Paused bot::kpc-gis-hunter.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
           fi
       - name: The map key or the layer list changed, so the GIS hunter starts one full pass (Brandon Oct 29 11:50 PM)
         id: kept_green_7
@@ -253,7 +254,8 @@ jobs:
         run: |
           R=$(grep -o '^RUN=.*' /tmp/hunt.txt 2>/dev/null) || exit 0
           set -- $R; RUN=${1#RUN=}; THEN=${2#THEN=}; PASS=${3#PASS=}
-          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-gis-hunter.yml/dispatches -f ref=main -f "inputs[country]=$RUN" -f 'inputs[chunks]=5' -f 'inputs[chain]=4' -f "inputs[pass]=$PASS" -f "inputs[then]=$THEN" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-gis-hunter.yml/dispatches -f ref=main -f "inputs[country]=$RUN" -f 'inputs[chunks]=5' -f 'inputs[chain]=4' -f "inputs[pass]=$PASS" -f "inputs[then]=$THEN" || echo "::error title=Next run::could not start the next run; the chain stops here (exit $?)"
+          echo "::warning title=Paused bot::kpc-gis-hunter.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
