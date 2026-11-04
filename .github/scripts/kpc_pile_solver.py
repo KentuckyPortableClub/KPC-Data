@@ -113,9 +113,13 @@ def key_row(area, ref):
 KEYS = {}
 
 
-def layer_of(rid):
-    """record id -> (query url, name field, label, family). Numeric = PAD-US (fee records); 'sgtnh17' = family 'sgtnh' + object id."""
+def layer_of(rid, area='US-'):
+    """record id -> (query url, name field, label, family). Numeric = PAD-US (fee records); 'sgtnh17' = family 'sgtnh' + object id.
+    Review fix (Nov 4): US areas only. Canada (CPCAD) and world keys also use plain numbers and short ids (FR 6927, CA 22084), which
+    are NOT PAD-US object ids; reading them from PAD-US would compare the park with an unrelated US record. Other areas -> None
+    (NEEDS-PERSON: no layer known) until a reader for their own layers is written."""
     s = str(rid)
+    if not str(area).startswith('US-'): return None
     if s.isdigit(): return PADUS + '/query', 'Unit_Nm', 'USGS PAD-US', 'padus', s
     m = re.match(r'^([a-z]+)(\d+)$', s)
     if not m: return None
@@ -143,6 +147,24 @@ def answer_counts(row):
     return (h, int(m.group(2))) >= (9, 37)
 
 
+NOT_PERSON = re.compile(r'chat ?\d|\bhq\b|super|quality|relay|\bbot\b|kpc_|auto|outside research|applied by', re.I)
+
+
+def override_by_brandon(o):
+    """Review add (Nov 4, rule 10): True only when an overrides.json entry reads as Brandon's / KZ4CP's OWN sign-off at or after
+    9:37 AM CST Nov 2 2026: a part of its 'why' that names Brandon or KZ4CP, names no chat / HQ / Super / Quality / bot / relay,
+    and is dated after Nov 2 (or Nov 2 with a time at or after 9:37 AM). Anything else (chat 11 YES, hand reviews, old rounds,
+    'Brandon 8:42 PM' Oct 29) is not. The solver still leaves every override join alone; this only builds the list for Brandon."""
+    when = str(o.get('when') or '')[:10]
+    for part in re.split(r'\s+·\s+', str(o.get('why') or '')):
+        if not re.search(r'brandon|kz4cp', part, re.I) or NOT_PERSON.search(part): continue
+        if when > CUTOFF.date().isoformat(): return True
+        if when == CUTOFF.date().isoformat():
+            m = re.search(r'(\d{1,2}):(\d\d)\s*([AP]M)', part, re.I)
+            if m and (int(m.group(1)) % 12 + (12 if m.group(3).upper() == 'PM' else 0), int(m.group(2))) >= (9, 37): return True
+    return False
+
+
 def decisions():
     ov = {}
     for f in ('data/us-key/overrides.json', 'data/ca-key/overrides.json'): ov.update(load(LINKS / f, {}).get('parks') or {})
@@ -166,6 +188,11 @@ def bracket_compass(a, b):
         outside_x = set(KR._plain_words(strip_place(x))) & COMPASS
         hit = sorted((inside & outside_x) - outside_y)
         if hit: return f"rule 18: '{' '.join(hit)}' is only inside the bracket of '{y}'"
+    # Review fix (Nov 4): a compass word on ONE side only counts whether or not it sits in a bracket ('X (North)' vs 'X'), so the
+    # solver keeps sending these to a person even after links-09 makes the pre-check ignore bracket qualifiers. Place qualifiers
+    # with no compass word ('(Lewis County)') still never count. When in doubt, NEEDS-PERSON.
+    ca, cb = set(KR._plain_words(a)) & COMPASS, set(KR._plain_words(b)) & COMPASS
+    if ca != cb: return f"rule 18: compass word '{' '.join(sorted(ca ^ cb))}' is not in both names ('{a}' vs '{b}')"
     return ''
 
 
@@ -207,10 +234,10 @@ class Fetch:
             p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(d, indent=1, sort_keys=True), encoding='utf-8')
         return j, url, '200'
 
-    def record(self, rid):
+    def record(self, rid, area='US-'):
         """-> {id, name, attrs, rings, layer, url, label, family} or {'error': why}."""
-        L = layer_of(rid)
-        if not L: return {'error': f'no layer known for record id {rid} (not in layers.json)'}
+        L = layer_of(rid, area)
+        if not L: return {'error': f'no layer known for record id {rid} in {area} (only US PAD-US + layers.json records are read so far)'}
         qurl, nfield, label, fam, oid = L
         base = qurl if qurl.endswith('/query') else qurl.rstrip('/') + '/query'
         for off in ('0.00005', '0.0005'):   # ~5 m detail; a huge outline over Manners' 3 MB read is retried at ~50 m
@@ -310,10 +337,12 @@ def solve(p, F, ov, sheet):
     if act.startswith('ASK BRANDON'): return done(row, 'UNTOUCHED', 'ASK BRANDON: already a question to Brandon; not answered here')
     o = ov.get(p['ref']) or {}
     if o.get('join'):   # handoff: an override is a person's decision; the note says whose, so Brandon can spot one that is not his
-        who = 'Brandon' if re.search(r'brandon|kz4cp', str(o.get('why')), re.I) else 'not marked as Brandon: ' + str(o.get('why') or '')[:120]
+        who = ("Brandon's sign-off" if override_by_brandon(o) else
+               'NOT a Brandon sign-off (listed in override-not-from-brandon.csv): ' + str(o.get('why') or '')[:120])
         return done(row, 'UNTOUCHED', f"decided in overrides.json (join {o.get('join')}, {o.get('when', '')}; {who}); not re-proposed")
-    yes = [r for r in sheet.get(p['ref'], []) if str(r.get('status')).strip().upper() in ('YES', 'APPROVED') and answer_counts(r)]
-    if yes: return done(row, 'UNTOUCHED', f"answered on the answer sheet by {yes[0].get('approved_by')} ({yes[0].get('approved_date')}); not re-proposed")
+    # review fix (Nov 4): a counting NO / PIN / FIXED is a person's decision too, not only YES (answer words: README of the sheet)
+    yes = [r for r in sheet.get(p['ref'], []) if str(r.get('status')).strip().upper() in ('YES', 'APPROVED', 'NO', 'PIN', 'FIXED') and answer_counts(r)]
+    if yes: return done(row, 'UNTOUCHED', f"answered {str(yes[0].get('status')).upper()} on the answer sheet by {yes[0].get('approved_by')} ({yes[0].get('approved_date')}); not re-proposed")
     # pattern rows: one grouped finding, no research (Brandon Nov 4)
     if 'BROKEN_ROW' in p['flags'] and 'joined row with no id' in p['why']:
         return done(row, 'NEEDS-PERSON', 'grouped finding P1-no-record-id: ' + PATTERNS['P1-no-record-id'][1],
@@ -366,7 +395,7 @@ def solve(p, F, ov, sheet):
     except ValueError: return done(row, 'NEEDS-PERSON', 'the POTA pin is not a number', 'a person to report the pin to POTA')
     recs, errs = [], []
     for x in m:
-        r = F.record(x[0])
+        r = F.record(x[0], p['area'])
         if r.get('error'): errs.append(r['error']); continue
         if NOT_OFFICIAL.search(r['label']): errs.append(f"{x[0]} is from {r['label']} (not an official source)"); continue
         if r['family'] == 'padus' and PAD_NEVER.search(str(r['attrs'].get('Category'))): errs.append(f"{x[0]} is a PAD-US {r['attrs'].get('Category')} record (never an outline)"); continue
@@ -398,6 +427,10 @@ def solve(p, F, ov, sheet):
             return done(row, 'SOLVED-PIN', f"the joined record '{r['name']}' is the bigger place around the park (rule 5; names: {hit}); no record of the park itself is joined")
         return done(row, 'NEEDS-PERSON', f"the record name '{r['name']}' ({r['id']}) is not the park name '{pname}' (an alias needs a person's YES, rule 8)",
                     f"a person's YES or NO to the exact name '{r['name']}' for {p['ref']}" + (f" (the pin is {r['d']} m from it)" if r['d'] else ' (the pin is inside)'))
+    big = [r for r in recs if BIGGER.search(str(r['name'])) and not BIGGER.search(ptype + ' ' + pname)]
+    if big:   # review fix (Nov 4), rule 5: a park never takes the outline of a bigger place around it, even when the name matches
+        return done(row, 'NEEDS-PERSON', f"the record '{big[0]['name']}' ({big[0]['id']}) is a bigger kind of place than '{pname}' (rule 5)",
+                    f"a person to say whether {p['ref']} has an official record of its own, or stays a pin")
     if errs:
         return done(row, 'NEEDS-PERSON', f"{len(recs)} record(s) read, but: " + '; '.join(errs[:3]), 'a person to open these record(s) by hand: ' + '; '.join(errs[:2]))
     far = [r for r in recs if r['d'] is None or r['d'] > NEAR_M]
@@ -455,7 +488,7 @@ def write_outputs(root, rows, build, pile_sha):
         if (old.get('parks') or {}) == P: continue   # nothing new for this area: no file, no stamp-only change
         write_if_changed(out / f'{area}.json', json.dumps({'made': now_cst(), 'build': build, 'pile_sha': pile_sha, 'solver_version': VERSION,
                                                            'parks': P}, ensure_ascii=False, indent=1, sort_keys=True) + '\n', written)
-    allr = sorted(rows.values(), key=lambda r: (not r['ref'].startswith('US-'), not r['ref'].startswith('CA-'), r['ref']))
+    allr = sorted((r for r in rows.values() if r.get('in_pile', True)), key=lambda r: (not r['ref'].startswith('US-'), not r['ref'].startswith('CA-'), r['ref']))
     for v, f in (('SOLVED-JOIN', 'solved-join.csv'), ('SOLVED-PIN', 'solved-pin.csv')):
         write_if_changed(out / f, csv_text(COLS, [r for r in allr if r['verdict'] == v]), written)
     write_if_changed(out / 'needs-person.csv', csv_text(COLS, [r for r in allr if r['verdict'] == 'NEEDS-PERSON' and not r.get('pattern')]), written)
@@ -471,6 +504,24 @@ def write_outputs(root, rows, build, pile_sha):
                for x in sheet_rows(r)]
         if sel: write_if_changed(out / f'answer-sheet-proposals-{reg}.csv', csv_text(SHEET_COLS, sel), written)
     return written
+
+
+OV_COLS = ['ref', 'in_pile', 'join', 'when', 'why']   # every row: an override join not signed by Brandon / KZ4CP (rule 10)
+
+
+def override_report(root, ov, inpile, written):
+    """Review add (Nov 4; Brandon's question from the outside agent about US-13614): every overrides.json JOIN whose source is not a
+    Brandon / KZ4CP sign-off at or after 9:37 AM CST Nov 2 (rule 10) -> override-not-from-brandon.csv, pile parks first, for
+    Brandon to look at. The solver never changes an override (it cannot: overrides.json is KPC-Links' file and read only here)."""
+    rows = []
+    for ref, o in ov.items():
+        if not isinstance(o, dict) or not o.get('join') or override_by_brandon(o): continue
+        rows.append({'ref': ref, 'in_pile': 'yes' if ref in inpile else 'no', 'join': ' '.join(str(x) for x in o.get('join') or []),
+                     'when': o.get('when') or '', 'why': str(o.get('why') or '')[:140]})
+    rows.sort(key=lambda r: (r['in_pile'] != 'yes', r['ref']))
+    out = pathlib.Path(root) / 'data/waiting/in/data/pile-solver/override-not-from-brandon.csv'
+    if rows: write_if_changed(out, csv_text(OV_COLS, rows), written)
+    return len(rows), sum(r['in_pile'] == 'yes' for r in rows)
 
 
 def add_questions(root, rows):
@@ -498,6 +549,15 @@ def pile_path():
     return out / 'review-pile.csv'
 
 
+VOLATILE = re.compile(r'^(read|built|made|updated|checked|when|date)$|_at$|_date$', re.I)
+
+
+def key_hash(k):
+    """Review fix (Nov 4): the key row without its stamps ('read': '2026-11-03' moves every nightly build), so only a real change
+    to the park's key row (joins, candidates, kind, distance, flags) solves it again."""
+    return sha({a: b for a, b in (k or {}).items() if not VOLATILE.search(str(a))})
+
+
 def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
     """Solve the rows to do -> (rows by ref, stats, files written). root = where outputs go (the repo, or REPORT_ONLY's folder)."""
     root = pathlib.Path(root)
@@ -514,7 +574,7 @@ def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
     todo, kept = [], {}
     for p in pile_rows:
         if areas and p['area'] not in areas: continue
-        kh = sha(key_row(p['area'], p['ref']))
+        kh = key_hash(key_row(p['area'], p['ref']))
         s = (state['refs'] or {}).get(p['ref']) or {}
         if s.get('h') == p['h'] and s.get('k') == kh and s.get('v') == VERSION and p['ref'] in old: kept[p['ref']] = old[p['ref']]; continue
         p['kh'] = kh; p['page'] = (pages.get(p['ref']) or ('', '', '', '', ''))[4] or ''
@@ -529,16 +589,24 @@ def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
         try: r = solve(p, F, ov, sheet)
         except Exception as e:  # noqa: BLE001  (one park's error never stops the run; it goes to a person)
             r = done(base_row(p), 'NEEDS-PERSON', f'the solver stopped on this park: {type(e).__name__}: {str(e)[:120]}', 'a person, or a solver fix (report it to chat 10)')
+        prev = rows.get(p['ref'])
+        if prev and {a: b for a, b in prev.items() if a not in ('checked_at', 'in_pile')} == {a: b for a, b in r.items() if a not in ('checked_at', 'in_pile')}:
+            r = prev   # review fix (Nov 4): same answer as before = no new row, so a re-solve never makes a stamp-only change
         rows[p['ref']] = r; done_now.append(r)
         state.setdefault('refs', {})[p['ref']] = {'h': p['h'], 'k': p['kh'], 'v': VERSION, 'verdict': r['verdict']}
-    # rows that left the pile stay in the files (never deleted); their state line says so
+    # rows that left the pile stay in the area files (never deleted) marked in_pile=false, and drop out of the CSV lists and the
+    # answer-sheet proposals (review fix, Nov 4: e.g. the German no-id rows once links-10 gives them ids); their state line says so
     inpile = {p['ref'] for p in pile_rows}
-    for ref in rows:
+    for ref in list(rows):
         if ref not in inpile and (state['refs'].get(ref) or {}).get('gone') is None: state['refs'].setdefault(ref, {})['gone'] = now_cst()[:10]
+        if ref in inpile: (state['refs'].get(ref) or {}).pop('gone', None)
+        if rows[ref].get('in_pile', True) != (ref in inpile): rows[ref] = dict(rows[ref], in_pile=ref in inpile)
     for a in {p['area'] for p in pile_rows if not areas or p['area'] in areas}:
         left = [p for p in pile_rows if p['area'] == a and p['ref'] not in rows]
         state.setdefault('areas', {})[a] = {'rows': sum(1 for p in pile_rows if p['area'] == a), 'left': len(left)}
     written = write_outputs(root, rows, os.environ.get('KEY_BUILD') or '', pile_sha)
+    nov, novp = override_report(root, ov, inpile, written)
+    stats.update(overrides_not_from_brandon=nov, of_them_in_pile=novp)
     nq = add_questions(root, done_now)
     if done_now or written or nq:
         state.update(version=VERSION, pile_sha=pile_sha)
@@ -605,6 +673,41 @@ def selftest():
     check('Brandon Nov 1 does not count', answer_counts({'approved_by': 'Brandon', 'approved_date': '2026-11-01'}), False)
     check('Brandon 9:40 AM Nov 2 counts', answer_counts({'approved_by': 'Brandon', 'approved_date': '2026-11-02', 'note': '9:40 AM CST'}), True)
     check('KZ4CP Nov 3 counts', answer_counts({'approved_by': 'KZ4CP', 'approved_date': '2026-11-03'}), True)
+    # review additions (Nov 4): the rest of rule 18, layers, overrides (rule 10) and the bigger place (rule 5)
+    check('North Fork vs South Fork: pile', bool(rule18('North Fork Holston River WMA', 'South Fork Holston River WMA')), True)
+    check('Unit 2 vs Unit 3: pile', bool(rule18('Abo Unit 2 State Forest', 'Abo Unit 3 State Forest')), True)
+    check('X (North) vs X: pile (a compass word in a bracket on one side only)', bool(rule18('Lake Elmo State Forest (North)', 'Lake Elmo State Forest')), True)
+    check('(Lewis County) still is not a piece', rule18('Cabin Creek WMA (Lewis County)', 'Cabin Creek WMA (Lewis Co)'), '')
+    check('a CA / world number is never read from PAD-US', (layer_of(22084, 'CA-ON'), layer_of(6927, 'FR'), bool(layer_of(255681, 'US-TN'))), (None, None, True))
+    check('override: chat 11 YES is not Brandon', override_by_brandon({'join': ['sgneb161'], 'when': '2026-11-02', 'why': "2026-11-02 12:49: layers row YES 'Kirkpatrick Basin North WMA' (chat 11; applied by kpc_key_answers)"}), False)
+    check('override: Brandon Oct 29 is before the cutoff', override_by_brandon({'join': ['x1'], 'when': '2026-10-29', 'why': 'Oct 29 9:30 PM: alias (Brandon 8:42 PM)'}), False)
+    check('override: relayed by Super is not his sign-off', override_by_brandon({'join': ['x1'], 'when': '2026-11-03', 'why': 'Brandon, relayed by Super 6:52 PM'}), False)
+    check('override: Brandon Nov 2 8:15 AM does not count', override_by_brandon({'join': ['x1'], 'when': '2026-11-02', 'why': 'KZ4CP 8:15 AM: YES'}), False)
+    check('override: KZ4CP Nov 3 counts', override_by_brandon({'join': ['x1'], 'when': '2026-11-03', 'why': 'KZ4CP Nov 3 10:02 AM: YES, same place'}), True)
+
+    class OneRec:   # a fetched record whose outline holds the pin, named like a bigger place (rule 5)
+        n, skipped = 0, []
+        def record(self, rid, area='US-'):
+            return {'id': str(rid), 'name': 'Walls of Jericho National Forest', 'attrs': {}, 'rings': [[[-87, 34], [-85, 34], [-85, 36], [-87, 36], [-87, 34]]],
+                    'layer': PADUS, 'url': PADUS + '/query?f=json', 'label': 'USGS PAD-US', 'family': 'padus', 'html': PADUS + '/query?f=html'}
+    KEYS.clear()
+    bp = {'ref': 'US-0000', 'area': 'US-TN', 'areas': 'US-TN', 'name': 'Walls of Jericho', 'type': '', 'flags': {'PIN_WAY_OUT'}, 'why': 'test',
+          'ids': ['255681'], 'lat': '35.0', 'lon': '-86.0', 'action': 'HOLD', 'src': 'pile', 'h': 'x', 'page': ''}
+    check('never the bigger place around the park (rule 5)', solve(bp, OneRec(), {}, {})['verdict'] != 'SOLVED-JOIN', True)
+    nb = dict(bp, ref='DE-0999', area='DE', flags={'PIN_WAY_OUT'}, why='the POTA pin is well outside the joined land', ids=['123'])
+    check('a German row WITH an id is not the grouped finding (stops once links-10 fixes the ids)', solve(nb, None, {}, {}).get('pattern'), None)
+    try:
+        import kpc_waiting_room as WR
+        good = {'parks': {'US-1': {'verdict': 'NEEDS-PERSON', 'answer_word': 'NOT SURE', 'whats_missing': 'a person'},
+                          'US-2': {'verdict': 'SOLVED-JOIN', 'answer_word': 'YES', 'evidence_urls': PADUS, 'record_id': '1', 'distance_m': 7000, 'pin_flag': 'POTA pin may be off'}}}
+        bad = {'parks': {'US-2': {'verdict': 'SOLVED-JOIN', 'answer_word': 'YES', 'evidence_urls': 'https://www.openstreetmap.org/x', 'record_id': '1', 'distance_m': 7000}}}
+        check('waiting room: a good solver file passes', WR.judge('data/pile-solver/US-TN.json', good, None)['verdict'], 'PASS')
+        check('waiting room: a bad SOLVED-JOIN holds', WR.judge('data/pile-solver/US-TN.json', bad, None)['verdict'], 'HOLD')
+        check('waiting room: solver files never go live by themselves', 'pilesolver' in WR.NEVER_AUTO and WR.kind_of('data/pile-solver/US-TN.json')[0] == 'pilesolver'
+              and WR.kind_of('data/pile-solver/state.json')[0] is None, True)
+    except ImportError as e: check('waiting room importable', str(e), '')
+    check('a key rebuild that only moves the date stamp does not re-solve', key_hash({'m': [{'id': 'sg1'}], 'read': '2026-11-03'}) == key_hash({'m': [{'id': 'sg1'}], 'read': '2026-11-04'}), True)
+    check('a real key change does re-solve', key_hash({'m': [{'id': 'sg1'}]}) == key_hash({'m': [{'id': 'sg2'}]}), False)
     check('distance: inside a square = 0', dist_m(0.5, 0.5, [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]]), 0)
     check('distance: 0.01 deg east of the edge ~ 1113 m', dist_m(0.5, 1.01, [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]]) in range(1100, 1125), True)
 
@@ -655,6 +758,14 @@ def selftest():
         check('every pile park has exactly one verdict (counts add up)', (set(_r1) == refs, all(v['verdict'] in ('SOLVED-JOIN', 'SOLVED-PIN', 'NEEDS-PERSON', 'UNTOUCHED') for v in _r1.values())), (True, True))
         # US-13614 has an overrides.json join (sgneb161, chat 11 YES applied Nov 2) on main: decided, so untouched in a real run
         check('KEEP, ASK BRANDON and override rows untouched', sorted(r for r, v in _r1.items() if v['verdict'] == 'UNTOUCHED'), ['CA-2218', 'US-10972', 'US-13614'])
+        ovl = (tmp / 'data/waiting/in/data/pile-solver/override-not-from-brandon.csv').read_text(encoding='utf-8') if (tmp / 'data/waiting/in/data/pile-solver/override-not-from-brandon.csv').exists() else ''
+        check('US-13614 (chat 11 override) is on the override-not-from-Brandon list, marked in the pile', 'US-13614,yes,' in ovl, True)
+        # a park that leaves the pile stays in its area file as in_pile=false and drops out of the CSVs and patterns (the DE finding stops by itself)
+        _r3, s3, w3 = run(tmp, [p for p in pile if p['ref'] != 'DE-0001'], None)
+        de = json.loads((tmp / 'data/waiting/in/data/pile-solver/DE.json').read_text(encoding='utf-8'))['parks'].get('DE-0001') or {}
+        check('a park that left the pile: in_pile=false, not in needs-person.csv or patterns.csv', (de.get('in_pile'),
+              'DE-0001' in (tmp / 'data/waiting/in/data/pile-solver/needs-person.csv').read_text(encoding='utf-8'),
+              'P1-no-record-id' in (tmp / 'data/waiting/in/data/pile-solver/patterns.csv').read_text(encoding='utf-8')), (False, False, False))
     finally:
         urllib.request.urlopen = real_open
         shutil.rmtree(tmp, ignore_errors=True)
