@@ -8,7 +8,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 |---|---|---|---|---|
 | US | 11,193 | 427 | 1,487 | +225 |
 | Canada | 4,376 | 39 | 1,486 | +124 |
-| World | 39,741 | 0 | 17,780 | -276 |
+| World | 28,146 | 0 | 17,588 | -11,871 |
 
 ## Questions (per file: tier + answer)
 
