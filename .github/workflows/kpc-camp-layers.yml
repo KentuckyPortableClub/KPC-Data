@@ -39,7 +39,7 @@ jobs:
           cd kpcdata
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || true   # ok: optional git step; the next step reports
-          python3 .github/scripts/kpc_intake_reader.py camping || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_intake_reader.py camping || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           T=.github/scripts/draft/tools/kpc_camp_layers/kpc_camp_layers.py
           python3 $T --selftest | tail -1
           set +e
@@ -49,7 +49,7 @@ jobs:
           echo "::notice title=Campground layers::exit $E; $N state lists on tools-out camp_layers/"
           [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_status.py board 'Campground layers' green "$N state lists $(date -u +%F) (tools-out)" 'the camp-and-activate bot reads them; chat 11 grades through the waiting room' || true   # ok: a status-board line (reporting only)
-          (cd ../out && rm -rf camp_layers/work/cache && git add -A camp_layers && git commit -qm "campground layers (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          (cd ../out && rm -rf camp_layers/work/cache && git add -A camp_layers && git commit -qm "campground layers (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Next run
         if: steps.r.outputs.more == 'yes'
@@ -63,7 +63,7 @@ jobs:
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-camp-layers.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-camp-layers.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
           kpc_brake || exit 0
-          gh workflow run kpc-camp-layers.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+          gh workflow run kpc-camp-layers.yml -R ${{ github.repository }} || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -75,6 +75,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

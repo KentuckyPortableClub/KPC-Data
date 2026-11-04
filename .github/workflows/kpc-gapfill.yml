@@ -29,7 +29,7 @@ jobs:
       - name: Start the park detective with the same inputs
         id: kept_green_1
         continue-on-error: true
-        run: gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks="${{ inputs.chunks }}" -f chain="${{ inputs.chain }}" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
+        run: gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks="${{ inputs.chunks }}" -f chain="${{ inputs.chain }}" || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -41,6 +41,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

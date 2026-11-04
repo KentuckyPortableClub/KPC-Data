@@ -54,18 +54,18 @@ jobs:
           pip install -q -r $D/requirements.txt
           A="${{ inputs.answer || 'second-look' }}"; L="${{ inputs.limit || '300' }}"
           if [ "$A" = second-look ]; then
-            python3 .github/scripts/kpc_q_gate.py gate || echo "::error title=kpc_q_gate.py::stopped with an error (exit $?), see the log above"
-            python3 .github/scripts/kpc_q_gate.py todo /tmp/pics-todo.json || echo "::error title=kpc_q_gate.py::stopped with an error (exit $?), see the log above"
+            python3 .github/scripts/kpc_q_gate.py gate || { kpc_rc=$?; echo "::error title=kpc_q_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_q_gate.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            python3 .github/scripts/kpc_q_gate.py todo /tmp/pics-todo.json || { kpc_rc=$?; echo "::error title=kpc_q_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_q_gate.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             python $D/kpc_map_pictures.py --questions /tmp/pics-todo.json --data data --limit $L --out ../out/pictures --resume --max-minutes 45 2>&1 | tail -8
-            python3 .github/scripts/kpc_q_gate.py second-look ../out/pictures https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/tools-out/pictures || echo "::error title=kpc_q_gate.py::stopped with an error (exit $?), see the log above"
+            python3 .github/scripts/kpc_q_gate.py second-look ../out/pictures https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/tools-out/pictures || { kpc_rc=$?; echo "::error title=kpc_q_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_q_gate.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           else
             python $D/kpc_map_pictures.py --questions data/waiting/questions/layers.json --answer "$A" --limit $L --out ../out/pictures --max-minutes 50 2>&1 | tail -15
           fi
-          python $D/kpc_map_pictures.py --out ../out/pictures --clean-older-than 14 >/dev/null 2>&1 || echo "::warning title=step::a script stopped with an error (exit $?)"
+          python $D/kpc_map_pictures.py --out ../out/pictures --clean-older-than 14 >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=step::a script stopped with an error (exit $kpc_rc)"; echo "step - a script stopped with an error (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           N=$(ls ../out/pictures 2>/dev/null | grep -c -i '\.jpg\|\.png'); echo "::notice title=Map pictures::$N pictures on tools-out/pictures"
           python3 .github/scripts/kpc_status.py board 'Map pictures (second look)' green "$(date -u +%F): $N pictures; rows back to chat 11 in questions/second-look.json" 'chat 11 grades second-look.json with the pictures' || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "second look: rows back to chat 11 with a map picture" data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
-          cd ../out && git add -A pictures && git commit -qm "map pictures (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          bash ../links/.github/scripts/kpc_push_data.sh . "second look: rows back to chat 11 with a map picture" data/waiting/questions data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          cd ../out && git add -A pictures && git commit -qm "map pictures (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -78,6 +78,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

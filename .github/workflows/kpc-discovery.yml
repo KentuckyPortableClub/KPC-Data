@@ -40,7 +40,7 @@ jobs:
         continue-on-error: true
         run: |
           mkdir -p data/discovery && cp -r kpcdata/data/discovery/. data/discovery/ 2>/dev/null || true   # ok: nothing to do is fine
-          case "${{ env.I_STEPS }}" in *C*) pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work";; esac
+          case "${{ env.I_STEPS }}" in *C*) pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; };; esac
       - name: Discover
         id: kept_green_2
         continue-on-error: true
@@ -53,7 +53,7 @@ jobs:
             S=$(python3 -c "import time; L='AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY CA-AB CA-BC CA-MB CA-NB CA-NL CA-NS CA-NT CA-NU CA-ON CA-PE CA-QC CA-SK CA-YT'.split(); w=int(time.strftime('%W')) % 8; print(' '.join(L[w::8]))")
           fi
           echo "::notice title=Discovery bot::asking $S"
-          STATES="$S" python3 .github/scripts/kpc_discovery.py || echo "::error title=kpc_discovery.py::stopped with an error (exit $?), see the log above"
+          STATES="$S" python3 .github/scripts/kpc_discovery.py || { kpc_rc=$?; echo "::error title=kpc_discovery.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_discovery.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save (once)
         if: always()
         id: kept_green_3
@@ -80,6 +80,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

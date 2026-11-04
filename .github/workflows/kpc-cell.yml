@@ -47,12 +47,12 @@ jobs:
           cd kpcdata
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin tools-out:tools-out && git worktree add -q ../out tools-out || mkdir -p ../out
-          pip install -q requests h3 || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
-          python3 .github/scripts/kpc_cell_bot.py --states KY || echo "::error title=kpc_cell_bot.py::stopped with an error (exit $?), see the log above"
-          LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/cell || echo "::error title=kpc_waiting_room.py::stopped with an error (exit $?), see the log above"
+          pip install -q requests h3 || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/kpc_cell_bot.py --states KY || { kpc_rc=$?; echo "::error title=kpc_cell_bot.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_cell_bot.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/cell || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           python3 .github/scripts/kpc_status.py board 'Cell coverage (FCC)' amber "test read $(date -u +%F) by hand: carrier fields still being fixed, results not trusted" 'fix kpc_cell_bot.py carrier fields (PR1)' || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "cell coverage (FCC; held in the waiting room)" data/cell data/waiting data/status || echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $?)"
-          (cd ../out && git add -A cell 2>/dev/null && git commit -qm "cell work log (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || echo "::error title=Save::not saved after every try; the next run tries again"; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          bash ../links/.github/scripts/kpc_push_data.sh . "cell coverage (FCC; held in the waiting room)" data/cell data/waiting data/status || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          (cd ../out && git add -A cell 2>/dev/null && git commit -qm "cell work log (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -65,6 +65,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

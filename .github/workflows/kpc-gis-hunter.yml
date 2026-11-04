@@ -77,11 +77,11 @@ jobs:
           cd kpcdata
           N=${{ env.I_CHUNKS }}; [ "$N" -gt 5 ] && N=5
           for i in $(seq 1 $N); do
-            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_gis_hunter.py::stopped with an error (exit $rc), see the log above"
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
+            MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_gis_hunter.py::stopped with an error (exit $rc), see the log above"; echo "kpc_gis_hunter.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true   # ok: a status-board line (reporting only)
-            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || echo "::error title=kpc_keep_answers.py::stopped with an error (exit $?), see the log above"   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
+            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done
@@ -94,8 +94,8 @@ jobs:
           LINKS: ../links
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_after_hunt.py ${{ env.I_AREAS }} | tee /tmp/after.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_after_hunt.py::stopped with an error (exit $rc), see the log above"
-          bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          python3 .github/scripts/kpc_after_hunt.py ${{ env.I_AREAS }} | tee /tmp/after.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_after_hunt.py::stopped with an error (exit $rc), see the log above"; echo "kpc_after_hunt.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           A=$(grep -o '^DOCS_AREAS=.*' /tmp/after.txt | cut -d= -f2)
           [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
       - name: Areas remain, so the next job starts itself
@@ -125,6 +125,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY

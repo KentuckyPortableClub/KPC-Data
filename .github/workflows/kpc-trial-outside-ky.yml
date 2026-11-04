@@ -46,7 +46,7 @@ jobs:
         id: kept_green_1
         continue-on-error: true
         run: |
-          bash .github/scripts/kpc_overlay.sh kpcdata || echo "::error title=kpc_overlay.sh::stopped with an error (exit $?), see the log above"
+          bash .github/scripts/kpc_overlay.sh kpcdata || { kpc_rc=$?; echo "::error title=kpc_overlay.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_overlay.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           rsync -a kpcdata/data/ data/ 2>/dev/null || true   # ok: nothing to do is fine
           cp kpcdata/locations.json kpcdata/locations-ky.json . 2>/dev/null || true   # ok: nothing to do is fine
       - name: The trial branch (never main)
@@ -71,15 +71,15 @@ jobs:
           PER=$(( (N + 6) / 7 )); AREAS=$(echo $ALL | tr ' ' '\n' | sed -n "$(( DAY * PER + 1 )),$(( DAY * PER + PER ))p" | tr '\n' ' ')
           echo "::notice title=Outside-KY trial (hours)::day $DAY: $AREAS"
           mkdir -p trial/hours
-          (cd kpcdata && python3 .github/scripts/kpc_intake_reader.py hours) || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"   # Nov 1: the outside hours / fees workbooks (their pages are read first)
-          cd kpcdata && AREAS="$AREAS" OUT=../trial/hours LINKS=.. HOURS_WB=data/intake/_in/hours python3 .github/scripts/kpc_hours_bot.py 2>&1 | tail -5; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_hours_bot.py::stopped with an error (exit $rc), see the log above"
+          (cd kpcdata && python3 .github/scripts/kpc_intake_reader.py hours) || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 1: the outside hours / fees workbooks (their pages are read first)
+          cd kpcdata && AREAS="$AREAS" OUT=../trial/hours LINKS=.. HOURS_WB=data/intake/_in/hours python3 .github/scripts/kpc_hours_bot.py 2>&1 | tail -5; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_hours_bot.py::stopped with an error (exit $rc), see the log above"; echo "kpc_hours_bot.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Closures (state agencies' feeds, whole US)
         if: steps.when.outputs.off != '1'
         id: kept_green_4
         continue-on-error: true
         timeout-minutes: 25
         run: |
-          FORCE_RUN=1 python3 .github/scripts/kpc_us_closures.py 2>&1 | tail -5; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || echo "::warning title=kpc_us_closures.py::stopped with an error (exit $rc), see the log above"
+          FORCE_RUN=1 python3 .github/scripts/kpc_us_closures.py 2>&1 | tail -5; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_us_closures.py::stopped with an error (exit $rc), see the log above"; echo "kpc_us_closures.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p trial/closures; [ -s data/alerts/us-parks.json ] && cp data/alerts/us-parks.json trial/closures/us-parks-$(date -u +%F).json || true   # ok: nothing to do is fine
           git checkout -- data/alerts 2>/dev/null || true   # ok: an optional file or tidy step (nothing of the trial stays in a main working file)
       - name: Save to the trial branch + one status line
@@ -92,9 +92,9 @@ jobs:
               d=json.load(open(p));P=d.get('parks') or {};n+=len(P);f+=sum(1 for v in P.values() if (v or {}).get('hours') or (v or {}).get('fees'))
           print(f'{n} parks read, {f} with hours or fees')" 2>/dev/null || echo '?')
           C=$(python3 -c "import json,glob;fs=sorted(glob.glob('trial/closures/*.json'));d=json.load(open(fs[-1])) if fs else {};it=d.get('items') or [];print(f'{len(it)} closure items')" 2>/dev/null || echo '?')
-          (cd trial && git add -A && git commit -qm "outside-KY trial $(date -u +%F)" && git push -q origin trial-outside-ky) || echo "::error title=git push::a push failed (exit $?); this run is NOT saved"
+          (cd trial && git add -A && git commit -qm "outside-KY trial $(date -u +%F)" && git push -q origin trial-outside-ky) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           cd kpcdata && python3 .github/scripts/kpc_status.py board "outside-KY trial (hours / closures, saved only)" green "$H; $C (branch trial-outside-ky)" "Sat Nov 7: short report -> chat 11 grades 12 rows -> Brandon decides" || true   # ok: a status-board line (reporting only)
-          bash ../.github/scripts/kpc_push_data.sh . "outside-KY trial: status line" data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
+          bash ../.github/scripts/kpc_push_data.sh . "outside-KY trial: status line" data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -107,6 +107,12 @@ jobs:
           bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
           for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
           print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
