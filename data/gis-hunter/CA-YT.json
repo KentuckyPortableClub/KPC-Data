@@ -10,26 +10,6 @@
    "hits": [
     {
      "verdict": "inside-other",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
-     "agency": "Yukon campgr",
-     "record": 31,
-     "record_name": "",
-     "acres_approx": 958254,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    },
-    {
-     "verdict": "inside-other",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 22,
-     "record_name": "Kluane",
-     "acres_approx": 5408636,
-     "tier": "UNLIKELY",
-     "why": "container: one record under 3 parks"
-    },
-    {
-     "verdict": "inside-other",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "agency": "CPCAD / Parks Canada",
      "record": 22011,
@@ -41,10 +21,10 @@
    ],
    "leads": [],
    "tried": [
-    "A Yukon campgr: hit",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"canadian heritage alsek\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -67,10 +47,10 @@
    ],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"canadian heritage bonnet\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -82,10 +62,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"spruce beetle\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -94,68 +74,37 @@
    "park": "Tatshenshini River Canadian Heritage River",
    "area": "CA-YT",
    "why_not": "pin inside",
-   "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 23,
-     "record_name": "Kluane",
-     "acres_approx": 835553,
-     "tier": "UNLIKELY",
-     "why": "a line park (trail / scenic river) on a polygon record"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"tatshenshini canadian heritage\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6263": {
    "park": "Tarfu Lake Campground Recreation Site",
    "area": "CA-YT",
    "why_not": "pin inside",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 25,
-     "record_name": "Agay Mene",
-     "acres_approx": 177339,
-     "tier": "UNLIKELY",
-     "why": "no shared proper word"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"campground tarfu\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6264": {
    "park": "Takhini River Campground Recreation Site",
    "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 4,
-     "record_name": "Kusawa",
-     "acres_approx": 752208,
-     "tier": "UNLIKELY",
-     "why": "no shared proper word"
-    },
     {
      "verdict": "inside-other",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
@@ -169,10 +118,10 @@
    ],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"campground takhini\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -181,76 +130,46 @@
    "park": "Tagish Bridge Recreation Site",
    "area": "CA-YT",
    "why_not": "pin inside",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
-     "agency": "Yukon campgr",
-     "record": 14,
-     "record_name": "",
-     "acres_approx": 0,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: hit",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"tagish bridge\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6268": {
    "park": "Snafu Lake Campground Recreation Site",
    "area": "CA-YT",
    "why_not": "pin inside",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 25,
-     "record_name": "Agay Mene",
-     "acres_approx": 177339,
-     "tier": "UNLIKELY",
-     "why": "no shared proper word"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"campground snafu\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6282": {
    "park": "Kathleen Lake Campground and Rec. Site National Park",
    "area": "CA-YT",
    "why_not": "pin inside",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 22,
-     "record_name": "Kluane",
-     "acres_approx": 5408636,
-     "tier": "UNLIKELY",
-     "why": "container: one record under 3 parks"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"campground kathleen rec\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-0844": {
    "park": "Five Finger Rapids Recreation Park",
@@ -259,10 +178,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"finger rapids five\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -274,10 +193,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"mile five\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -289,10 +208,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"conrad\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -304,10 +223,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"protection selkirk fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -319,10 +238,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"kookatsoon\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -334,10 +253,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"canyon liard\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -356,10 +275,10 @@
     }
    ],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"marsh\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
@@ -371,10 +290,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"morley\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -386,10 +305,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"nisutlin\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -401,10 +320,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -415,11 +334,11 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"otter falls\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"falls otter\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -430,10 +349,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"protection rampart house\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -445,10 +364,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"rancheria falls\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -460,11 +379,11 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"canadian heritage thirty\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"heritage canadian thirty\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -475,10 +394,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"protection thirty mile\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -490,10 +409,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"historical complex dawson\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -505,10 +424,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"dredge\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -520,10 +439,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"territorial former court\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -535,10 +454,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"keno\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -550,10 +469,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"klondike\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -565,11 +484,11 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"commerce canadian bank\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"canadian commerce bank\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -580,10 +499,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"ochek\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -595,10 +514,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"aishihik\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -610,10 +529,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"lapierre gwatsal house\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -625,10 +544,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"simpson\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -640,10 +559,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"teslin\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -655,10 +574,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"discovery claim 37903\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -670,10 +589,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"administration territorial building\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -685,10 +604,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"anglican church paul\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -700,11 +619,11 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"yukon hotel\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"hotel yukon\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -712,26 +631,16 @@
    "park": "Big Creek Recreation Park",
    "area": "CA-YT",
    "why_not": "nothing near",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
-     "agency": "Yukon campgr",
-     "record": 18,
-     "record_name": "",
-     "acres_approx": 4,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: hit",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"big\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-5738": {
    "park": "Lake Laberge Recreation Park",
@@ -740,10 +649,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"laberge\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -755,11 +664,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lucky\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -770,11 +678,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lakes twin\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -785,11 +692,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"watson\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -798,22 +704,14 @@
    "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Gray Wolf and Eastern Wolf Historical Range",
-     "url": "https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer",
-     "owner": "conservationGIS0",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"wolf\": 1 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5746": {
    "park": "Wye Lake Recreation Park",
@@ -822,11 +720,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"wye\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -837,10 +734,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -848,26 +745,15 @@
    "park": "Dezadeash Lake Campground Territorial Park",
    "area": "CA-YT",
    "why_not": "nothing near",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 22,
-     "record_name": "Kluane",
-     "acres_approx": 5408636,
-     "tier": "UNLIKELY",
-     "why": "container: one record under 3 parks"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6260": {
    "park": "Yukon River Campground Recreation Site",
@@ -876,10 +762,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -890,10 +776,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -904,10 +790,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -918,10 +804,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -932,10 +818,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -946,10 +832,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -960,10 +846,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -974,10 +860,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -988,10 +874,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1002,10 +888,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1013,51 +899,29 @@
    "park": "Moose Creek Campground Recreation Site",
    "area": "CA-YT",
    "why_not": "nothing near",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
-     "agency": "Yukon campgr",
-     "record": 8,
-     "record_name": "",
-     "acres_approx": 243,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: hit",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6276": {
    "park": "Million Dollar Falls Campground Territorial Park",
    "area": "CA-YT",
    "why_not": "nothing near",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
-     "agency": "Yukon parks ",
-     "record": 23,
-     "record_name": "Kluane",
-     "acres_approx": 835553,
-     "tier": "UNLIKELY",
-     "why": "no shared proper word"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : hit",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-6277": {
    "park": "Little Salmon Lake Campground Recreation Site",
@@ -1066,10 +930,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1080,10 +944,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1094,10 +958,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1108,10 +972,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1122,10 +986,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1136,10 +1000,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1150,10 +1014,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1164,10 +1028,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1178,10 +1042,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1192,10 +1056,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1206,10 +1070,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1220,10 +1084,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1234,10 +1098,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1248,10 +1112,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1262,10 +1126,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1276,10 +1140,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1290,10 +1154,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1304,10 +1168,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1318,10 +1182,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1332,10 +1196,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1346,10 +1210,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1360,10 +1224,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1374,10 +1238,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1388,10 +1252,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   },
@@ -1402,10 +1266,10 @@
    "hits": [],
    "leads": [],
    "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
+    "A Yukon campgr: no answer (robots)",
+    "A Yukon parks : no answer (robots)",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "no layer found"
   }

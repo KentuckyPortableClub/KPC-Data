@@ -27,16 +27,6 @@
      "acres_approx": 8882921,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 42,
-     "record_name": "",
-     "acres_approx": 10973361,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -45,7 +35,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -81,7 +71,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -107,7 +97,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -133,7 +123,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -169,7 +159,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
   },
@@ -197,16 +187,6 @@
      "acres_approx": 122351,
      "tier": "UNLIKELY",
      "why": "container: one record under 3 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 41,
-     "record_name": "",
-     "acres_approx": 122338,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -215,7 +195,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -223,27 +203,17 @@
    "park": "Abbot Pass Refuge Cabin National Historic Site",
    "area": "CA-AB",
    "why_not": "pin inside",
-   "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    }
-   ],
+   "hits": [],
    "leads": [],
    "tried": [
     "A AB-PLUZ Gove: no polygon at the pin",
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"cabin abbot pass\": 0 lead(s)"
    ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+   "verdict": "no layer found"
   },
   "CA-4775": {
    "park": "Cave and Basin National Historic Site",
@@ -269,16 +239,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -287,7 +247,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -315,16 +275,6 @@
      "acres_approx": 122351,
      "tier": "UNLIKELY",
      "why": "container: one record under 3 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 41,
-     "record_name": "",
-     "acres_approx": 122338,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -333,7 +283,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -361,16 +311,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -379,7 +319,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -407,16 +347,6 @@
      "acres_approx": 2752605,
      "tier": "UNLIKELY",
      "why": "container: one record under 6 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 16,
-     "record_name": "",
-     "acres_approx": 2756359,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -425,7 +355,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -453,16 +383,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -471,7 +391,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -499,16 +419,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -517,7 +427,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -545,16 +455,6 @@
      "acres_approx": 2752605,
      "tier": "UNLIKELY",
      "why": "container: one record under 6 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 16,
-     "record_name": "",
-     "acres_approx": 2756359,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -563,7 +463,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -589,7 +489,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -625,7 +525,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -653,16 +553,6 @@
      "acres_approx": 122351,
      "tier": "UNLIKELY",
      "why": "container: one record under 3 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 41,
-     "record_name": "",
-     "acres_approx": 122338,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -671,7 +561,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -699,16 +589,6 @@
      "acres_approx": 2752605,
      "tier": "UNLIKELY",
      "why": "container: one record under 6 parks"
-    },
-    {
-     "verdict": "inside-other",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 16,
-     "record_name": "",
-     "acres_approx": 2756359,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -717,7 +597,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"athabasca canadian heritage\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -746,16 +626,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "inside-other",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -764,7 +634,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"saskatchewan canadian heritage\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -791,7 +661,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -827,7 +697,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -855,16 +725,6 @@
      "acres_approx": 2752605,
      "tier": "UNLIKELY",
      "why": "container: one record under 6 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 16,
-     "record_name": "",
-     "acres_approx": 2756359,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -873,7 +733,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -899,7 +759,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
   },
@@ -914,7 +774,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"sylvan\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -951,7 +811,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -973,7 +833,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"chisholm\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
@@ -989,7 +849,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"reimer mary\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1005,7 +865,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"nose hill\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1042,7 +902,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: no polygon at the pin"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
   },
@@ -1057,8 +917,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"sanctuary migratory gaetz\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"migratory sanctuary gaetz\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1073,7 +933,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"vermilion fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1102,16 +962,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -1120,7 +970,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1135,7 +985,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"ranch bar\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1151,7 +1001,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"frog\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1180,16 +1030,6 @@
      "acres_approx": 2752605,
      "tier": "UNLIKELY",
      "why": "container: one record under 6 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 16,
-     "record_name": "",
-     "acres_approx": 2756359,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -1198,7 +1038,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1226,16 +1066,6 @@
      "acres_approx": 2752605,
      "tier": "UNLIKELY",
      "why": "container: one record under 6 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 16,
-     "record_name": "",
-     "acres_approx": 2756359,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -1244,7 +1074,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1259,7 +1089,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"mountain rocky house\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1275,7 +1105,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"scenic canada trans\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1291,7 +1121,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"maskepetoon\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1307,7 +1137,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"biosphere beaver hills\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1323,7 +1153,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"vermilion fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1339,7 +1169,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"carburn\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1355,7 +1185,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"atlas coal mine\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1384,16 +1214,6 @@
      "acres_approx": 1681159,
      "tier": "UNLIKELY",
      "why": "container: one record under 7 parks"
-    },
-    {
-     "verdict": "name mismatch",
-     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
-     "agency": "CPCAD / Parks Canada",
-     "record": 3,
-     "record_name": "",
-     "acres_approx": 1693702,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -1402,7 +1222,7 @@
     "A Alberta Park: hit",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: hit",
-    "A CPCAD / Parks Canada: hit"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1417,7 +1237,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"beaulieu\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1433,7 +1253,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"blackfoot crossing\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1449,7 +1269,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"british cairn block\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1465,7 +1285,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"aqueduct brooks\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1481,7 +1301,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"coleman\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1497,7 +1317,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"earthlodge village\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1513,7 +1333,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"assiniboine fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1529,8 +1349,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"augustus edmonton fort\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"edmonton augustus fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1545,7 +1365,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"calgary fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1561,7 +1381,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"chipewyan fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1577,7 +1397,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"dunvegan fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1593,8 +1413,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"buffalo smashed jump\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"smashed buffalo head\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1609,8 +1429,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"erratic okotoks rock\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"okotoks erratic rock\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1625,7 +1445,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"garden reader rock\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1637,14 +1457,14 @@
    "hits": [],
    "leads": [
     {
-     "title": "FWS R6 RWBJV Central Platte River Image Library 1969",
-     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1969/MapServer",
+     "title": "FWS R6 RWBJV Central Platte River Image Library 1938",
+     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1938/MapServer",
      "owner": "roger_grosse@fws.gov_fws",
      "type": "Map Service"
     },
     {
-     "title": "FWS R6 RWBJV Central Platte River Image Library 1938",
-     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1938/MapServer",
+     "title": "FWS R6 RWBJV Central Platte River Image Library 1969",
+     "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1969/MapServer",
      "owner": "roger_grosse@fws.gov_fws",
      "type": "Map Service"
     },
@@ -1660,7 +1480,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"library central\": 4 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
@@ -1676,7 +1496,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"agricultural stirling heritage\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1692,7 +1512,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"stephen avenue\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1708,8 +1528,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"christ saints temple\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"saints latter christ\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1724,8 +1544,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"technology institute southern\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"technology institute heritage\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1740,7 +1560,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"whoop fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
@@ -1756,8 +1576,8 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"turner valley plant\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
+    "B ArcGIS Online search \"valley turner plant\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1772,7 +1592,7 @@
     "A Alberta Park: no polygon at the pin",
     "A Alberta publ: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (robots-unreadable)",
     "B ArcGIS Online search \"collieries leitch\": 0 lead(s)"
    ],
    "verdict": "no layer found"

@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|
 | CA-0844 | Five Finger Rapids Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-0845 | Five Mile Lake Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-4600 | Alsek River Canadian Heritage River | R-G7 step 2 | Yukon campgr: '' (record 31, ~958,254 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-4600 | Alsek River Canadian Heritage River | R-G7 step 2 | CPCAD / Parks Canada: 'Kluane National Park Reserve Of Canada' (record 22011, ~5,388,298 ac, pin inside) · a line park (trail / scenic river) on a polygon record | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
 | CA-4601 | Bonnet Plume River Canadian Heritage River | R-G7 step 2 | CPCAD / Parks Canada: 'Peel Watershed LMU 8' (record 21775, ~4,682,247 ac, pin inside) · container word in the record name (zone / district / county / SSSI ...) | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
 | CA-4602 | Conrad Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-4607 | Fort Selkirk Historic Site Habitat Protection Area | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
@@ -18,7 +18,7 @@
 | CA-4626 | Rampart House Habitat Protection Area | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-4627 | Rancheria Falls Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-4628 | Spruce Beetle Trail Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-4631 | Tatshenshini River Canadian Heritage River | R-G7 step 2 | Yukon parks : 'Kluane' (record 23, ~835,553 ac, pin inside) · a line park (trail / scenic river) on a polygon record | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-4631 | Tatshenshini River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-4632 | Thirty Mile - Yukon River Canadian Heritage River | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-4633 | Thirty Mile River Habitat Protection Area | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-4936 | Dawson Historical Complex National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
@@ -36,36 +36,36 @@
 | CA-5455 | Old Territorial Administration Building National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5456 | St. Paul's Anglican Church National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5458 | Yukon Hotel National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-5737 | Big Creek Recreation Park | R-G7 step 2 | Yukon campgr: '' (record 18, ~4 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-5737 | Big Creek Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5738 | Lake Laberge Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5739 | Lucky Lake Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5743 | Twin Lakes Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5744 | Watson Lake Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-5745 | Wolf Creek Recreation Park | R-G7 step 3 | lead Gray Wolf and Eastern Wolf Historical Range (https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer) | lead: new layer queued for intake | 2026-11-04 | gis-hunter |
+| CA-5745 | Wolf Creek Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-5746 | Wye Lake Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6258 | Congdon Creek Campground Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-6259 | Dezadeash Lake Campground Territorial Park | R-G7 step 2 | Yukon parks : 'Kluane' (record 22, ~5,408,636 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-6259 | Dezadeash Lake Campground Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6260 | Yukon River Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6262 | Tatchun Creek Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-6263 | Tarfu Lake Campground Recreation Site | R-G7 step 2 | Yukon parks : 'Agay Mene' (record 25, ~177,339 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
-| CA-6264 | Takhini River Campground Recreation Site | R-G7 step 2 | Yukon parks : 'Kusawa' (record 4, ~752,208 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
-| CA-6265 | Tagish Bridge Recreation Site | R-G7 step 2 | Yukon campgr: '' (record 14, ~0 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-6263 | Tarfu Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
+| CA-6264 | Takhini River Campground Recreation Site | R-G7 step 2 | CPCAD / Parks Canada: 'Kusawa' (record 21764, ~751,664 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-6265 | Tagish Bridge Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6266 | Squanga Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6267 | Snag Junction Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-6268 | Snafu Lake Campground Recreation Site | R-G7 step 2 | Yukon parks : 'Agay Mene' (record 25, ~177,339 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-6268 | Snafu Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6269 | Rock River Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6270 | Quiet Lake South Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6271 | Quiet Lake North Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6272 | Pine Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6273 | Nunatuk Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6274 | Nahanni Range Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-6275 | Moose Creek Campground Recreation Site | R-G7 step 2 | Yukon campgr: '' (record 8, ~243 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
-| CA-6276 | Million Dollar Falls Campground Territorial Park | R-G7 step 2 | Yukon parks : 'Kluane' (record 23, ~835,553 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-6275 | Moose Creek Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
+| CA-6276 | Million Dollar Falls Campground Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6277 | Little Salmon Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6278 | Lapie Canyon Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6279 | Lake Creek Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6281 | Klondike River Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-6282 | Kathleen Lake Campground and Rec. Site National Park | R-G7 step 2 | Yukon parks : 'Kluane' (record 22, ~5,408,636 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-6282 | Kathleen Lake Campground and Rec. Site National Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6283 | Johnson Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6284 | Frenchman Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-6285 | Frances Lake Campground Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
