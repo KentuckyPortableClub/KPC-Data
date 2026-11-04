@@ -1,17 +1,17 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-04 18:14 UTC",
+ "made": "2026-11-04 18:40 UTC",
  "totals": {
-  "gained": 126,
-  "lost": 77,
-  "pieces_changed": 1813,
-  "grade_changed": 30
+  "gained": 125,
+  "lost": 79,
+  "pieces_changed": 1845,
+  "grade_changed": 31
  },
  "per_area": {
   "US-AK": {
    "gained": 1,
    "lost": 2,
-   "pieces_changed": 10,
+   "pieces_changed": 6,
    "grade_changed": 1
   },
   "US-AL": {
@@ -59,7 +59,7 @@
   "US-DE": {
    "gained": 2,
    "lost": 0,
-   "pieces_changed": 66,
+   "pieces_changed": 33,
    "grade_changed": 0
   },
   "US-FL": {
@@ -69,7 +69,7 @@
    "grade_changed": 4
   },
   "US-GA": {
-   "gained": 6,
+   "gained": 5,
    "lost": 0,
    "pieces_changed": 5,
    "grade_changed": 0
@@ -274,9 +274,9 @@
   },
   "US-VT": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 4,
-   "grade_changed": 0
+   "lost": 2,
+   "pieces_changed": 73,
+   "grade_changed": 1
   },
   "US-WA": {
    "gained": 6,
@@ -303,7 +303,7 @@
    "ref": "US-12679",
    "name": "Fort Egbert BLM Historic Area",
    "old_grade": "pin",
-   "new_grade": "official",
+   "new_grade": "pin",
    "new_pieces": [
     [
      "sgaki400954",
@@ -828,25 +828,6 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-7140"
-  },
-  {
-   "area": "US-GA",
-   "ref": "US-7456",
-   "name": "Dahlonega Gold Museum State Historic Site",
-   "old_grade": "pin",
-   "new_grade": "approximate",
-   "new_pieces": [
-    [
-     "195096",
-     "Dahlonega Museum Historic Site",
-     1,
-     "words"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7456"
   },
   {
    "area": "US-GA",
@@ -4287,6 +4268,68 @@
    "pota": "https://pota.app/#/park/US-10748"
   },
   {
+   "area": "US-VT",
+   "ref": "US-3124",
+   "name": "Knight Island State Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgvta469",
+     "Knight Island State Park",
+     170,
+     "name"
+    ],
+    [
+     "vta439",
+     "Knight Island State Park",
+     0,
+     "same full name, far from the pin (G-1: the record names the "
+    ],
+    [
+     "vta439",
+     "Knight Island State Park",
+     0,
+     "same full name, far from the pin (G-1: the record names the "
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3124"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-5563",
+   "name": "Black Turn Brook State Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgvta45",
+     "Black Turn Brook State Forest",
+     587,
+     "name"
+    ],
+    [
+     "vta40",
+     "Black Turn Brook State Forest",
+     0,
+     "same full name, far from the pin (G-1: the record names the "
+    ],
+    [
+     "vta40",
+     "Black Turn Brook State Forest",
+     0,
+     "same full name, far from the pin (G-1: the record names the "
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5563"
+  },
+  {
    "area": "US-WI",
    "ref": "US-4262",
    "name": "Pemene Falls Unit of Menominee River State Recreation Area",
@@ -5438,6 +5481,32 @@
    "pota": "https://pota.app/#/park/US-5756"
   },
   {
+   "area": "US-VT",
+   "ref": "US-3151",
+   "name": "Wilgus State Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgvta426",
+     "Wilgus State Park",
+     97,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgvta426",
+     "Wilgus State Park",
+     97,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3151"
+  },
+  {
    "area": "US-WI",
    "ref": "US-4246",
    "name": "Whitefish Dunes State Natural Area",
@@ -6113,7 +6182,7 @@
    "ref": "US-12679",
    "name": "Fort Egbert BLM Historic Area",
    "old_grade": "pin",
-   "new_grade": "official",
+   "new_grade": "pin",
    "new_pieces": [
     [
      "sgaki400954",
@@ -6398,22 +6467,22 @@
   },
   {
    "area": "US-GA",
-   "ref": "US-7456",
-   "name": "Dahlonega Gold Museum State Historic Site",
+   "ref": "US-7893",
+   "name": "Augusta Canal National Heritage Area",
    "old_grade": "pin",
-   "new_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "195096",
-     "Dahlonega Museum Historic Site",
-     1,
-     "words"
+     "sggae1",
+     "Augusta Canal National Heritage Area",
+     0,
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7456"
+   "pota": "https://pota.app/#/park/US-7893"
   },
   {
    "area": "US-IA",
