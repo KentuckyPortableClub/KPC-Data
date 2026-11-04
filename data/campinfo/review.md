@@ -13,6 +13,7 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
 | US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 6 | 31 | 0 |
+| US-MN | 227 | 34 | 45 | 0 | 0 | 0 | 50 | 0 | 98 | 0 | 132 | 0 |
 | US-IA | 125 | 0 | 32 | 0 | 0 | 0 | 93 | 0 | 0 | 0 | 0 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
 | US-NY | 584 | 92 | 5 | 232 | 55 | 0 | 1 | 0 | 199 | 38 | 572 | 0 |
@@ -912,6 +913,93 @@ Updated 2026-11-04. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides · “link “Find a Map” -> https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides”
   - season = "year-round" · “rthern Wisconsin. Explore the more than 1.5 million acres of water and woodlands offering year-round motorized trail riding, water- and land”
   - sites.total = 30 · “thing sound of flowing water, you will appreciate this campground. About one-third of the 30 campsites are located adjacent to the Oconto Ri”
+
+## US-MN: 12 random samples (records with facts; seed = the date)
+
+- **Dispersed camping** (intake-US-4835, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
+  - booking.how = "online: www.dnr.state.mn.us" · “link “Fees””
+  - booking.url = "https://www.dnr.state.mn.us/state-forests/fees-reservations · “link “Fees” -> https://www.dnr.state.mn.us/state-forests/fees-reservations.html”
+  - drinking_water = false · “designated campgrounds or campsites in a Minnesota state forest. There are no restrooms, drinking water, picnic tables, fire rings, trash ca”
+  - hookups.electric = "some" · “n the full shoulder of a road. Do not block roads, trails, or gates with your vehicle. Is electricity or water available? No, dispersed camp”
+  - map.date_how = "web page, no date in the link" · “link “Office locator map””
+  - map.url = "https://www.dnr.state.mn.us/contact/locator.html" · “link “Office locator map” -> https://www.dnr.state.mn.us/contact/locator.html”
+  - reservable = false · “e willing to hike out into the woods to camp. Dispersed camping is free and operates on a first-come, first-served basis. While dispersed ca”
+  - restrooms = "vault" · “and create sanitation problems. We recommend using commercially available waste bags or a portable toilet kit for a convenient way to pack o”
+  - rules.fires = "campfires are allowed on state forest lands, including stat · “es, burning restrictions are in effect in Cook, Lake, and northern St. Louis counties. No campfires are allowed on state forest lands, inclu”
+- **Ann Lake Campground and Day Use Area; Bob Dunn Horse Campground** (intake-US-4825, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Bear Paw Campground; Pine Ridge Campground** (intake-US-2494, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Banning Campground** (intake-US-2467, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Dispersed camping** (intake-US-4786, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
+  - booking.how = "online: www.dnr.state.mn.us" · “link “Fees””
+  - booking.url = "https://www.dnr.state.mn.us/state-forests/fees-reservations · “link “Fees” -> https://www.dnr.state.mn.us/state-forests/fees-reservations.html”
+  - drinking_water = false · “designated campgrounds or campsites in a Minnesota state forest. There are no restrooms, drinking water, picnic tables, fire rings, trash ca”
+  - hookups.electric = "some" · “n the full shoulder of a road. Do not block roads, trails, or gates with your vehicle. Is electricity or water available? No, dispersed camp”
+  - map.date_how = "web page, no date in the link" · “link “Office locator map””
+  - map.url = "https://www.dnr.state.mn.us/contact/locator.html" · “link “Office locator map” -> https://www.dnr.state.mn.us/contact/locator.html”
+  - reservable = false · “e willing to hike out into the woods to camp. Dispersed camping is free and operates on a first-come, first-served basis. While dispersed ca”
+  - restrooms = "vault" · “and create sanitation problems. We recommend using commercially available waste bags or a portable toilet kit for a convenient way to pack o”
+  - rules.fires = "campfires are allowed on state forest lands, including stat · “es, burning restrictions are in effect in Cook, Lake, and northern St. Louis counties. No campfires are allowed on state forest lands, inclu”
+- **Equestrian Campground; Lower Campground; Oak Ridge Campground** (intake-US-9388, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Chase Point Campground; Lodge Campground** (intake-US-2520, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Big Island Campground; White Fox Campground** (intake-US-2513, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Mantrap Lake Campground and Day Use Area** (intake-US-4817, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Savanna Portage Campground** (intake-US-4826, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Bear Head Lake Campground** (intake-US-2468, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Dispersed camping** (intake-US-4813, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
+  - booking.how = "online: www.dnr.state.mn.us" · “link “Fees””
+  - booking.url = "https://www.dnr.state.mn.us/state-forests/fees-reservations · “link “Fees” -> https://www.dnr.state.mn.us/state-forests/fees-reservations.html”
+  - drinking_water = false · “designated campgrounds or campsites in a Minnesota state forest. There are no restrooms, drinking water, picnic tables, fire rings, trash ca”
+  - hookups.electric = "some" · “n the full shoulder of a road. Do not block roads, trails, or gates with your vehicle. Is electricity or water available? No, dispersed camp”
+  - map.date_how = "web page, no date in the link" · “link “Office locator map””
+  - map.url = "https://www.dnr.state.mn.us/contact/locator.html" · “link “Office locator map” -> https://www.dnr.state.mn.us/contact/locator.html”
+  - reservable = false · “e willing to hike out into the woods to camp. Dispersed camping is free and operates on a first-come, first-served basis. While dispersed ca”
+  - restrooms = "vault" · “and create sanitation problems. We recommend using commercially available waste bags or a portable toilet kit for a convenient way to pack o”
+  - rules.fires = "campfires are allowed on state forest lands, including stat · “es, burning restrictions are in effect in Cook, Lake, and northern St. Louis counties. No campfires are allowed on state forest lands, inclu”
 
 ## US-IA: 12 random samples (records with facts; seed = the date)
 

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T10:10Z",
+ "checked": "2026-11-04T10:41Z",
  "switched_on": false,
  "results": [
   {
@@ -145,6 +145,15 @@
   },
   {
    "path": "data/campinfo/US-MI.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-MN.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
