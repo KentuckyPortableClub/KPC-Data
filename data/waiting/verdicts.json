@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03T23:48Z",
+ "checked": "2026-11-04T02:15Z",
  "switched_on": false,
  "results": [
   {
@@ -13,7 +13,7 @@
    "path": "data/ca-key/CA-NB.json",
    "kind": "key",
    "why": [
-    "F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-0784, CA-4532, CA-4411"
+    "F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-4439, CA-5150, CA-4375"
    ],
    "notes": [
     "F-O4 shape test: 60 changed outlines read from PAD-US, 60 far from the park pin"
@@ -24,7 +24,7 @@
    "path": "data/ca-key/CA-NL.json",
    "kind": "key",
    "why": [
-    "F-O4 55 of 55 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-0808, CA-1273, CA-0830"
+    "F-O4 55 of 55 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-0824, CA-4560, CA-0814"
    ],
    "notes": [
     "F-O4 shape test: 55 changed outlines read from PAD-US, 55 far from the park pin"
@@ -35,7 +35,7 @@
    "path": "data/ca-key/CA-NS.json",
    "kind": "key",
    "why": [
-    "F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-1770, CA-1915, CA-0914"
+    "F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-1785, CA-0942, CA-1757"
    ],
    "notes": [
     "F-O4 shape test: 60 changed outlines read from PAD-US, 60 far from the park pin"
@@ -55,7 +55,7 @@
    "path": "data/ca-key/CA-PE.json",
    "kind": "key",
    "why": [
-    "F-O4 5 of 5 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-4650, CA-0861, CA-4757"
+    "F-O4 5 of 5 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-0861, CA-0859, CA-4650"
    ],
    "notes": [
     "F-O4 shape test: 5 changed outlines read from PAD-US, 5 far from the park pin"
@@ -299,7 +299,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/wilbur_wright.pdf"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -337,8 +337,7 @@
    "kind": "docs",
    "why": [
     "F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/maac/learn/management/lawsandpolicies.htm"
+    "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -523,9 +522,11 @@
   {
    "path": "data/docs/US-VA.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.dcr.virginia.gov/state-parks/park-regulations"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-VT.json",
@@ -546,9 +547,11 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 11 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=PERSHING%"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-WV.json",
