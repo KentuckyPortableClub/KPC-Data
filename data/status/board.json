@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-04",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 1, waiting for key 65 (a key build is saving: nothing started)",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 1, waiting for key 65",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41933821963",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41937196998",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-04",
-   "made": "2026-11-04 23:27 UTC: 1 skipped run(s) started again: kpc-waiting-room.yml (missed Nov 04 22:42 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41933821963",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41937196998",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1158,7 +1158,7 @@
    "last_run": "2026-11-04",
    "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41933821963",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41937196998",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
