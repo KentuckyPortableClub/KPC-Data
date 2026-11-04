@@ -3,7 +3,7 @@
 
 For each open question "is this official record that park?", it scores how well the candidate
 record's outline matches the park (pin inside, size, name, nearby better records, an agency-map
-picture) and puts the row in a band: STRONG, WEAK or CONFLICT. It decides nothing: the club's
+picture) and puts the row in a band: STRONG, WEAK, NOT SURE or CONFLICT. It decides nothing: the club's
 rules decide and a person grades. It never writes YES or NO.
 """
 import argparse, glob, math, unicodedata
@@ -486,12 +486,44 @@ DESIG = [
     ("landscape", r"cultural landscape|world heritage"),
     ("scenic", r"national scenic area|scenic area"),
     ("trail", r"\btrail\b|\bsendero\b|\bweg\b"),
+    # Nov 3 (Mapping, remake after Quality's grade): the kinds the hand-join drops turned on. Without them, "X State Natural Area"
+    # vs "X Wildlife Area" scored 1.0 and came out STRONG. "natural heritage area" lands in both natural and historic; that is fine,
+    # because the families are sets and only a pair with NO shared family counts.
+    ("natural", r"state natural area|natural area|nature preserve|dedicated nature preserve|scientific area|natural heritage area"),
+    ("historic", r"historic site|historical site|historic park|historical park|national monument|state monument|heritage area|"
+                 r"heritage corridor"),
+    ("recreation", r"state recreation area|recreation area|\bsra\b|recreation park|recreational area"),
 ]
+# Kind pairs where agencies rename the same place or name a piece after the park (Koreshan State Historic Site -> Koreshan State
+# Park, Whitefish Dunes SNA inside Whitefish Dunes State Park, Waterloo Unit State Game Land = the Waterloo Wildlife Unit of
+# Waterloo SRA). Any pair that touches the three Nov 3 families is a question for a person (NOT SURE: "possible rename, check the
+# agency page"), never a lower score, because a cap would turn a rename into WEAK and could be read as backing a drop (Quality,
+# Nov 3). The one Nov 3 pair that keeps the cap is natural <-> wma/refuge (Millington, Acadia Cliffs, Lodi Marsh, Dewey Marsh).
+# Pairs between the older families (Narcisse PP vs Narcisse WMA) keep the cap as before.
+NEW_KINDS = {"natural", "historic", "recreation"}
+CAPPED_NEW_PAIRS = {frozenset(p) for p in (("natural", "wma"), ("natural", "refuge"))}
+
+
+def _rename_prone(a, b):
+    return bool({a, b} & NEW_KINDS) and frozenset((a, b)) not in CAPPED_NEW_PAIRS
 
 
 def desig_family(s):
     n = norm(s)
     return {k for k, rx in DESIG if re.search(rx, n)}
+
+
+def kind_pair(park, text):
+    """None when the two names share a designation family (or one side has none). Otherwise ("rename", "park <-> historic") for
+    a rename-prone pair (any pair touching natural / historic / recreation except natural <-> wma/refuge), or
+    ("different", "natural <-> wma") for a real kind difference (the cap stays for these)."""
+    fp, fr = desig_family(park), desig_family(text)
+    if not fp or not fr or (fp & fr):
+        return None
+    pairs = sorted(f"{a} <-> {b}" for a in sorted(fp) for b in sorted(fr) if _rename_prone(a, b))
+    if pairs:
+        return "rename", pairs[0]
+    return "different", f"{'/'.join(sorted(fp))} <-> {'/'.join(sorted(fr))}"
 
 
 def name_score(park, text):
@@ -507,8 +539,8 @@ def name_score(park, text):
     sc = ts * (0.5 + 0.5 * cp) * (0.6 + 0.4 * cr)
     if ROADISH.search(norm(text)) and not ROADISH.search(norm(park)):
         sc = min(sc, 0.6)
-    fp, fr = desig_family(park), desig_family(text)
-    if fp and fr and not (fp & fr):
+    kp = kind_pair(park, text)
+    if kp and kp[0] == "different":       # natural <-> wma/refuge and the like: a real kind difference, capped (STRONG -> WEAK)
         sc = min(sc, 0.75)
     return round(sc, 3)
 
@@ -984,6 +1016,14 @@ def band_of(m):
         reasons_conf.append(f"record {b['record']} ('{b['name']}') nearby matches the park name better")
     if reasons_conf:
         return "CONFLICT", reasons_conf
+    if m.get("kind_rename"):
+        # Nov 3: a rename-prone kind pair is a question, never WEAK, and never a reason to drop a record.
+        return "NOT SURE", [f"possible rename ({m['kind_rename']}): check the agency page; this never backs a drop"]
+    if m.get("kind_cap") and m.get("pin_inside") is True and ratio is not None and ratio <= 1.1:
+        # Nov 3 re-cut (Quality should-fix, kind_pairs_check): one place under two labels - AR "Natural Area WMA" (Nacatoch, Sweden
+        # Creek, Railroad Prairie), MS Theodore A. Mars Jr. Memorial Wildlife Refuge = WMA, Sam Parr SP = SFWA, Cardigan SP/SF.
+        # The same acres within 10% AND the pin inside: a question for a person, never WEAK, never a drop reason.
+        return "NOT SURE", [f"one place, two labels? ({m['kind_cap']}; same acres within 10%, pin inside): check the agency page; this never backs a drop"]
     if m["pin_inside"] is None:
         reasons_weak.append("the pin could not be checked")
     if m["name_score"] < 0.85:
@@ -1064,7 +1104,10 @@ def match_row(web, q, pins, docs, pictures, args, out_dir):
                 better.append({"record": oid, "name": str(rn or txt)[:80], "name_score": sc, "field": fld})
         better.sort(key=lambda b: -b["name_score"])
         better = better[:5]
-    m = {"pin_inside": inside, "pin_dist_m": dist, "acres_record": acres_rec, "acres_park": acres_park,
+    kp = kind_pair(park_name, ns_text or "")
+    m = {"kind_rename": kp[1] if kp and kp[0] == "rename" else None,
+         "kind_cap": kp[1] if kp and kp[0] == "different" else None,   # informational: the cap alone never backs a drop
+         "pin_inside": inside, "pin_dist_m": dist, "acres_record": acres_rec, "acres_park": acres_park,
          "acres_ratio": ratio, "name_score": ns, "iou": None, "better_nearby": better, "nearby_checked": nearby_checked}
     # agency map: picture + overlap
     picture, iou_note = None, ""
@@ -1172,7 +1215,7 @@ def run(args):
         log(f"[{i + 1}/{len(rows)}] {k} {row.get('band')} name={row.get('name_score')} pin_in={row.get('pin_inside')} "
             f"dist={row.get('pin_dist_m')} ratio={row.get('acres_ratio')} better={len(row.get('better_nearby') or [])}")
     summary = {"read_date": today(), "rows": len(results),
-               "bands": {b: sum(1 for r in results.values() if r.get("band") == b) for b in ("STRONG", "WEAK", "CONFLICT")},
+               "bands": {b: sum(1 for r in results.values() if r.get("band") == b) for b in ("STRONG", "WEAK", "NOT SURE", "CONFLICT")},
                "requests": web.n_requests, "resting_hosts": web.resting, "left": left}
     write_json(safe_out_path(out_dir, "summary.json"), summary)
     log(json.dumps(summary))
@@ -1258,6 +1301,26 @@ def selftest():
         (Robots("User-agent: *\nDisallow: /a\nAllow: /a/b", "KPC").allowed("https://x/a/b/c"), "robots longest match"),
         (not Robots("User-agent: *\nDisallow: /", "KPC").allowed("https://x/y"), "robots disallow all"),
         (page_acres("<p>The 1,250-acre Barren Fork park covers hills.</p>", "Barren Fork State Park")[0] == 1250, "acres from page"),
+        (kind_pair("Koreshan State Park", "Koreshan State Historic Site") == ("rename", "park <-> historic"),
+         "park <-> historic is a possible rename (NOT SURE)"),
+        (name_score("Koreshan State Park", "Koreshan State Historic Site") > 0.75, "a rename is not capped"),
+        (name_score("Millington State Natural Area", "Millington Wildlife Area") <= 0.75, "natural <-> wma is still capped"),
+        (kind_pair("Narcisse Wildlife Management Area", "Narcisse Provincial Park")[0] == "different", "wma <-> park stays different"),
+        (kind_pair("Waterloo Unit State Game Land", "Waterloo Wildlife Unit of Waterloo State Recreation Area")[0] == "rename",
+         "wma <-> recreation is a question, not a cap (US-6804)"),
+        (kind_pair("Cache River State Natural Area", "Cache River Natural Area WMA") is None, "a shared family is not a kind clash"),
+        (band_of({"pin_inside": True, "name_score": 1.0, "kind_rename": "park <-> historic"})[0] == "NOT SURE",
+         "a rename pair bands NOT SURE, not WEAK"),
+        (band_of({"pin_inside": False, "pin_dist_m": 900.0, "name_score": 1.0, "kind_rename": "park <-> historic"})[0] == "CONFLICT",
+         "a pin conflict still wins"),
+        (band_of({"pin_inside": True, "name_score": 0.75, "kind_cap": "natural <-> wma", "acres_ratio": 1.04})[0] == "NOT SURE",
+         "dual label (Natural Area WMA): same acres + pin inside is NOT SURE, not WEAK"),
+        (band_of({"pin_inside": True, "name_score": 0.75, "kind_cap": "wma <-> refuge", "acres_ratio": 1.0})[0] == "NOT SURE",
+         "Theodore Mars WMA = memorial refuge: NOT SURE"),
+        (band_of({"pin_inside": True, "name_score": 0.75, "kind_cap": "natural <-> wma", "acres_ratio": 1.5})[0] == "WEAK",
+         "natural <-> wma with different acres keeps the cap (Millington, Lodi Marsh)"),
+        (band_of({"pin_inside": None, "name_score": 0.75, "kind_cap": "park <-> wma", "acres_ratio": 1.0})[0] == "WEAK",
+         "pin not checked: the cap stays"),
     ]
     for good, label in checks:
         print(("ok   " if good else "FAIL ") + label)
