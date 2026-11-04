@@ -616,21 +616,21 @@
    "checked": 459,
    "counts": {
     "camps": 459,
-    "needs_browser": 13,
+    "needs_browser": 1,
     "needs_key": 331,
     "no_page": 13,
     "not_official": 0,
-    "ok": 39,
-    "other": 63,
+    "ok": 40,
+    "other": 74,
     "resting": 0,
     "robots": 0,
     "with_booking": 115,
     "with_elevation": 0,
-    "with_facts": 92,
+    "with_facts": 98,
     "with_sites": 1
    },
-   "left": 0,
-   "status": "done",
+   "left": 7,
+   "status": "partial",
    "updated": "2026-11-04"
   },
   "US-WA": {
@@ -1977,12 +1977,12 @@
  },
  "last": {
   "areas": [
-   "US-OR"
+   "US-UT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 411,
+   "dropped_queued": 331,
    "errors": 0,
    "for_person_urls": [
     [
@@ -1990,7 +1990,7 @@
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
     ]
    ],
-   "requests": 1,
+   "requests": 18,
    "rested": 0,
    "robots": 1,
    "robots_unreadable": 1,
@@ -1998,19 +1998,20 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 412,
+   "browser": 12,
+   "camps": 332,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 412,
+   "needs_key": 332,
    "no_page": 0,
    "not_official": 0,
-   "ok": 0,
+   "ok": 1,
    "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 92
+   "skipped_fresh": 140
   },
   "when": "2026-11-04"
  },

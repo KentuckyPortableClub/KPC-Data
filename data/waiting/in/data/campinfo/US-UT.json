@@ -886,10 +886,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "10046989",
-    "247184"
-   ],
    "kind": "c",
    "lat": 40.91007,
    "list": "campfed",
@@ -1286,10 +1282,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "10047895",
-    "247042"
-   ],
    "kind": "c",
    "lat": 40.83039,
    "list": "campfed",
@@ -1884,10 +1876,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "10048073",
-    "247316"
-   ],
    "kind": "c",
    "lat": 41.77364,
    "list": "campfed",
@@ -2152,10 +2140,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "10048156",
-    "246945"
-   ],
    "kind": "c",
    "lat": 41.6619,
    "list": "campfed",
@@ -3018,10 +3002,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "10049551",
-    "247012"
-   ],
    "kind": "c",
    "lat": 41.77364,
    "list": "campfed",
@@ -3814,10 +3794,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "10199721",
-    "251553"
-   ],
    "kind": "c",
    "lat": 40.4954,
    "list": "campfed",
@@ -6722,10 +6698,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "202202",
-    "256892"
-   ],
    "kind": "c",
    "lat": 40.036,
    "list": "campfed",
@@ -23076,6 +23048,7 @@
     "how": "online: www.nps.gov",
     "url": "https://www.nps.gov/zion/planyourvisit/permitsandreservations.htm"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -23156,7 +23129,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-10062": {
@@ -24771,6 +24744,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/wmas"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -24796,6 +24770,12 @@
     "map.url": {
      "date": "2026-11-04",
      "line": "link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/",
+     "url": "https://wildlife.utah.gov/wmas"
+    },
+    "rules.pets": {
+     "browser": true,
+     "date": "2026-11-04",
+     "line": "? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 annually 298.67 No Apple Tree Springs WMA Sanpete Central Big",
      "url": "https://wildlife.utah.gov/wmas"
     }
    },
@@ -24830,7 +24810,7 @@
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "no dogs are allowed between March 10 and Aug",
     "quiet_hours": null,
     "stay_limit": null
    },
@@ -24845,7 +24825,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-11189": {
@@ -24854,6 +24834,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/wmas"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -24879,6 +24860,12 @@
     "map.url": {
      "date": "2026-11-04",
      "line": "link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/",
+     "url": "https://wildlife.utah.gov/wmas"
+    },
+    "rules.pets": {
+     "browser": true,
+     "date": "2026-11-04",
+     "line": "? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 annually 298.67 No Apple Tree Springs WMA Sanpete Central Big",
      "url": "https://wildlife.utah.gov/wmas"
     }
    },
@@ -24913,7 +24900,7 @@
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "no dogs are allowed between March 10 and Aug",
     "quiet_hours": null,
     "stay_limit": null
    },
@@ -24928,7 +24915,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-11190": {
@@ -26107,6 +26094,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/wmas"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -26132,6 +26120,12 @@
     "map.url": {
      "date": "2026-11-04",
      "line": "link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/",
+     "url": "https://wildlife.utah.gov/wmas"
+    },
+    "rules.pets": {
+     "browser": true,
+     "date": "2026-11-04",
+     "line": "? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 annually 298.67 No Apple Tree Springs WMA Sanpete Central Big",
      "url": "https://wildlife.utah.gov/wmas"
     }
    },
@@ -26166,7 +26160,7 @@
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "no dogs are allowed between March 10 and Aug",
     "quiet_hours": null,
     "stay_limit": null
    },
@@ -26181,7 +26175,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-11208": {
@@ -26280,6 +26274,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/wmas"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -26305,6 +26300,12 @@
     "map.url": {
      "date": "2026-11-04",
      "line": "link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/",
+     "url": "https://wildlife.utah.gov/wmas"
+    },
+    "rules.pets": {
+     "browser": true,
+     "date": "2026-11-04",
+     "line": "? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 annually 298.67 No Apple Tree Springs WMA Sanpete Central Big",
      "url": "https://wildlife.utah.gov/wmas"
     }
    },
@@ -26339,7 +26340,7 @@
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "no dogs are allowed between March 10 and Aug",
     "quiet_hours": null,
     "stay_limit": null
    },
@@ -26354,7 +26355,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-11350": {
@@ -27789,6 +27790,7 @@
     "how": "online: www.fs.usda.gov",
     "url": "https://www.fs.usda.gov/r04/ashley/alerts/flaming-gorge-reservoir-water-levels"
    },
+   "browser_checked": "2026-11-04",
    "campground_page": {
     "read": "names other campgrounds only",
     "status": "ok",
@@ -27864,7 +27866,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-13500": {
@@ -27945,6 +27947,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/wmas"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -27970,6 +27973,12 @@
     "map.url": {
      "date": "2026-11-04",
      "line": "link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/",
+     "url": "https://wildlife.utah.gov/wmas"
+    },
+    "rules.pets": {
+     "browser": true,
+     "date": "2026-11-04",
+     "line": "? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 annually 298.67 No Apple Tree Springs WMA Sanpete Central Big",
      "url": "https://wildlife.utah.gov/wmas"
     }
    },
@@ -28004,7 +28013,7 @@
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "no dogs are allowed between March 10 and Aug",
     "quiet_hours": null,
     "stay_limit": null
    },
@@ -28019,7 +28028,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-13603": {
@@ -28028,6 +28037,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/wmas"
    },
+   "browser_checked": "2026-11-04",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -28053,6 +28063,12 @@
     "map.url": {
      "date": "2026-11-04",
      "line": "link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/",
+     "url": "https://wildlife.utah.gov/wmas"
+    },
+    "rules.pets": {
+     "browser": true,
+     "date": "2026-11-04",
+     "line": "? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 annually 298.67 No Apple Tree Springs WMA Sanpete Central Big",
      "url": "https://wildlife.utah.gov/wmas"
     }
    },
@@ -28087,7 +28103,7 @@
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "no dogs are allowed between March 10 and Aug",
     "quiet_hours": null,
     "stay_limit": null
    },
@@ -28102,7 +28118,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-3062": {
@@ -31503,6 +31519,7 @@
     "how": "online: www.recreation.gov",
     "url": "https://www.recreation.gov/gateways/1031"
    },
+   "browser_checked": "2026-11-04",
    "campground_page": {
     "read": "names other campgrounds only",
     "status": "ok",
@@ -31582,7 +31599,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-4396": {
@@ -31591,6 +31608,7 @@
     "how": "online: www.fs.usda.gov",
     "url": "https://www.fs.usda.gov/recarea/fishlake/recarea/?recid=12203"
    },
+   "browser_checked": "2026-11-04",
    "campground_page": {
     "read": "names other campgrounds only",
     "status": "ok",
@@ -31661,7 +31679,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-5756": {
@@ -31742,6 +31760,7 @@
     "how": "online: www.fs.usda.gov",
     "url": "https://www.fs.usda.gov/r04/manti-lasal/recreation/academy-mill-reservoir"
    },
+   "browser_checked": "2026-11-04",
    "campground_page": {
     "read": "names other campgrounds only",
     "status": "ok",
@@ -31821,7 +31840,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok, no campground facts even in a browser",
    "ver": 8
   },
   "intake-US-5790": {
@@ -31996,6 +32015,8 @@
     "how": "online: www.recreation.gov",
     "url": "https://www.recreation.gov/log-in"
    },
+   "browser_checked": "2026-11-04",
+   "browser_error": "Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigating to \"https://www.re",
    "cell": null,
    "checked": "2026-11-04",
    "checkin": null,
@@ -32632,6 +32653,7 @@
     "how": "online: wildlife.utah.gov",
     "url": "https://wildlife.utah.gov/hardware/visit"
    },
+   "browser_checked": "2026-11-04",
    "campground_page": {
     "status": "ok",
     "url": "https://wildlife.utah.gov/images/hardware/2023-03-28-hardware-wma-designated-camping-areas-map.jpg"
@@ -32730,7 +32752,7 @@
     "tent": null,
     "total": null
    },
-   "status": "ok, no campground facts in the page text: needs browser?",
+   "status": "ok (browser)",
    "ver": 8
   },
   "intake-US-5934": {
@@ -33514,19 +33536,19 @@
  "cell_status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
  "counts": {
   "camps": 459,
-  "needs_browser": 13,
+  "needs_browser": 1,
   "needs_key": 331,
   "no_page": 13,
   "not_official": 0,
-  "ok": 39,
-  "other": 63,
+  "ok": 40,
+  "other": 74,
   "resting": 0,
   "robots": 0,
   "with_booking": 115,
   "with_elevation": 0,
-  "with_facts": 92,
+  "with_facts": 98,
   "with_sites": 1
  },
- "merged": 13,
+ "merged": 1,
  "read": "2026-11-04"
 }
