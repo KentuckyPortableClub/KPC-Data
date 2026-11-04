@@ -126,7 +126,42 @@ jobs:
               try: hb = json.load(open(f'data/waiting/in/data/{k}/index.json')).get('build')
               except Exception: hb = None
               v = [str(it.get('chat11') or '').upper() for it in (ap.get('items') or []) if isinstance(it, dict) and it.get('what') == k and str(it.get('build') or '') == str(hb)]
-              if hb and not (v and k != 'us-key' and v[-1].lstrip('KEY ').startswith('NO')):
+              # Nov 4 (data-03; per Brandon via Super Head Bot (relayed), 4:51 AM CST Nov 4: "In the new pr fix that issues so we no longer have that problem so once quality is done and we push problems solved and we on the new system"; what this step does
+              # about it: the freeze no longer waits on chat 11): a held build that was
+              # built on OTHER rules (no 'rules' hash in its stamp, or not KPC-Links' current one) or is older than KPC_FREEZE_MAX_DAYS
+              # (3) is SUPERSEDED: the new build replaces it here. The decision is KPC-Links' own (kpc_key_freeze.not_blocking), so both
+              # repos use one rule. Its held files are OVERWRITTEN by the new build's files (nothing is deleted); a held file the new
+              # build does not have is named in a notice and listed in data/status/key-copy/dropped-<key>.json for a person.
+              sup = ''
+              try:
+                  import sys as _s; _s.path.insert(0, '../links/.github/scripts'); import kpc_key_freeze as KF
+                  if hb and hasattr(KF, 'not_blocking'): sup = KF.not_blocking(json.load(open(f'data/waiting/in/data/{k}/index.json')), k)
+              except Exception as e: print(f'::warning title=Copy::{k}: the superseded test could not run ({str(e)[:120]}): the held build is kept', flush=True); sup = ''
+              if hb and sup:
+                  import shutil
+                  stray = []
+                  for f in sorted(os.listdir(f'data/waiting/in/data/{k}')):
+                      if f == 'index.json': continue
+                      if os.path.isfile(f'../links/data/{k}/{f}'): shutil.copy2(f'../links/data/{k}/{f}', f'data/waiting/in/data/{k}/{f}')
+                      else: stray.append(f)
+                  print(f'::notice title=Copy::{k}: held build {hb} is SUPERSEDED ({sup}): the new build replaces it in the waiting room (held files overwritten, nothing deleted)'
+                        + (f'; held files the new build does not have (a person decides): {" ".join(stray[:20])}' if stray else ''), flush=True)
+                  # FINAL-v2 (Quality should-fix): the old held files the new build DROPS are LISTED in a status report for a person
+                  # (data/status/key-copy/dropped-<key>.json + .md, saved with the copy). They stay where they are: no deletion
+                  # without Brandon's yes. Rewritten on every supersede (an empty list = the new build has every held file).
+                  import time as _t
+                  try: nb = json.load(open(f'../links/data/{k}/index.json')).get('build')
+                  except Exception: nb = None
+                  try: hs = json.load(open('data/waiting/held-since.json'))
+                  except Exception: hs = {}
+                  rows = [{'file': f'data/waiting/in/data/{k}/{f}', 'bytes': os.path.getsize(f'data/waiting/in/data/{k}/{f}'), 'held_since': (hs or {}).get(f'data/{k}/{f}')} for f in stray]
+                  rep = {'about': f'{k}: old HELD files of build {hb} that the new build {nb} does not have. LISTED ONLY: they stay in data/waiting/in (no deletion without Brandon\'s yes); a person decides. Written by kpc-copy-from-links.yml (data-03).',
+                         'key': k, 'old_build': hb, 'new_build': nb, 'superseded': sup, 'written': _t.strftime('%Y-%m-%d %H:%M UTC', _t.gmtime()), 'count': len(rows), 'files': rows}
+                  os.makedirs('data/status/key-copy', exist_ok=True)
+                  json.dump(rep, open(f'data/status/key-copy/dropped-{k}.json', 'w'), indent=1)
+                  open(f'data/status/key-copy/dropped-{k}.md', 'w').write(f"# {k}: held files the new build drops\n\n{rep['about']}\n\nOld build {hb} -> new build {nb} ({sup}); {rep['written']}.\n\n"
+                      + ('\n'.join(f"- {r['file']} ({r['bytes']} bytes; held since {r['held_since'] or 'unknown'})" for r in rows) or '- none: the new build has every held file') + '\n')
+              if hb and not sup and not (v and k != 'us-key' and v[-1].lstrip('KEY ').startswith('NO')):
                   print(f'::notice title=Copy::{k} build {hb} is held for chat 11 / its release: not replaced (comes over once it is graded)', flush=True); continue
               d = f'../links/data/{k}'
               for f in os.listdir(d):
