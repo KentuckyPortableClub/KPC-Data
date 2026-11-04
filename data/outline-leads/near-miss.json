@@ -24,23 +24,23 @@
   "CO": 4,
   "CT": 3,
   "DC": 2,
-  "DE": 2,
+  "DE": 1,
   "FL": 13,
   "GA": 6,
   "HI": 4,
   "ID": 34,
-  "IL": 4,
+  "IL": 6,
   "IN": 11,
   "KS": 5,
   "LA": 2,
   "MA": 6,
-  "MD": 4,
+  "MD": 5,
   "ME": 3,
-  "MI": 13,
+  "MI": 14,
   "MN": 2,
   "MO": 2,
   "MS": 5,
-  "MT": 4,
+  "MT": 5,
   "NC": 15,
   "ND": 7,
   "NE": 2,
@@ -59,9 +59,9 @@
   "TX": 4,
   "UT": 40,
   "VA": 4,
-  "VT": 4,
+  "VT": 6,
   "WA": 11,
-  "WI": 7,
+  "WI": 9,
   "WV": 0,
   "WY": 18
  },
@@ -6083,6 +6083,22 @@
    "site": false,
    "st": "MT"
   },
+  "US-0405": {
+   "acts": 12,
+   "leads": [
+    {
+     "acres": 18814.12962741,
+     "id": "sgmtd81",
+     "km": 0.0,
+     "layer": "Managed Areas (land, state GIS table)",
+     "name": "CSKT Bison Range",
+     "why": "shares bison, cskt, range"
+    }
+   ],
+   "n": "CSKT Bison Range Protected Area",
+   "site": false,
+   "st": "MT"
+  },
   "US-0655": {
    "acts": 712,
    "leads": [
@@ -7235,6 +7251,38 @@
    "site": false,
    "st": "OR"
   },
+  "US-10787": {
+   "acts": 17,
+   "leads": [
+    {
+     "acres": 1529.0,
+     "id": "71083",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources",
+     "name": "Weinberg-King State Fish and Wildlife Area",
+     "why": "shares king, weinberg"
+    },
+    {
+     "acres": 2390.2,
+     "id": "sgila1154",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
+     "name": "Weinberg-King State Fish and Wildlife Area",
+     "why": "shares king, weinberg"
+    },
+    {
+     "acres": 3893.05312352451,
+     "id": "sgild306",
+     "km": 0.0,
+     "layer": "IDNR Properties (wild, state GIS table)",
+     "name": "Weinberg-King",
+     "why": "shares king, weinberg"
+    }
+   ],
+   "n": "Weinberg-King Scripps Unit State Park",
+   "site": false,
+   "st": "IL"
+  },
   "US-10788": {
    "acts": 68,
    "leads": [
@@ -8386,38 +8434,6 @@
    "n": "Gulkana BLM Wild and Scenic River",
    "site": false,
    "st": "AK"
-  },
-  "US-11812": {
-   "acts": 28,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sgdee8",
-     "km": 0.0,
-     "layer": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "name": "Trap Pond State Park",
-     "why": "shares trap"
-    },
-    {
-     "acres": 2118.0,
-     "id": "60712",
-     "km": 0.12,
-     "layer": " ",
-     "name": "Trap Pond State Park",
-     "why": "shares trap"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgdee825",
-     "km": 0.8,
-     "layer": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "name": "Trap Pond State Park",
-     "why": "shares trap"
-    }
-   ],
-   "n": "Trap Pond State Fishing Lake",
-   "site": false,
-   "st": "DE"
   },
   "US-11822": {
    "acts": 42,
@@ -11459,6 +11475,22 @@
    "site": false,
    "st": "VT"
   },
+  "US-3124": {
+   "acts": 5,
+   "leads": [
+    {
+     "acres": 170.0,
+     "id": "sgvta469",
+     "km": 0.0,
+     "layer": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "name": "Knight Island State Park",
+     "why": "shares knight"
+    }
+   ],
+   "n": "Knight Island State Park",
+   "site": false,
+   "st": "VT"
+  },
   "US-3140": {
    "acts": 123,
    "leads": [
@@ -11763,6 +11795,30 @@
    "site": false,
    "st": "NE"
   },
+  "US-4153": {
+   "acts": 80,
+   "leads": [
+    {
+     "acres": 6289.0,
+     "id": "sgila1080",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
+     "name": "Shelbyville State Fish and Wildlife Area",
+     "why": "shares shelbyville"
+    },
+    {
+     "acres": 10487.127229941452,
+     "id": "sgild149",
+     "km": 0.0,
+     "layer": "IDNR Properties (wild, state GIS table)",
+     "name": "Shelbyville",
+     "why": "shares shelbyville"
+    }
+   ],
+   "n": "Kaskaskia unit of Shelbyville State Fish and Wildlife Area",
+   "site": false,
+   "st": "IL"
+  },
   "US-4154": {
    "acts": 36,
    "leads": [
@@ -11872,6 +11928,86 @@
     }
    ],
    "n": "Fenley State Recreation Area",
+   "site": false,
+   "st": "WI"
+  },
+  "US-4262": {
+   "acts": 14,
+   "leads": [
+    {
+     "acres": 42.61186587,
+     "id": "sgwid19800004",
+     "km": 0.0,
+     "layer": "Wisconsin DNR Bureau of Facilities and Lands (land, state GIS table)",
+     "name": "Menominee River State Recreation Area",
+     "why": "shares menominee"
+    },
+    {
+     "acres": 4782.47,
+     "id": "sgwia713692",
+     "km": 0.0,
+     "layer": "Wisconsin DNR (land, state GIS table)",
+     "name": "Menominee River State Recreation Area",
+     "why": "shares menominee"
+    },
+    {
+     "acres": 4785.0,
+     "id": "272355",
+     "km": 0.0,
+     "layer": "Wisconsin Department of Natural Resources",
+     "name": "Menominee River State Recreation Area",
+     "why": "shares menominee"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgwib402067",
+     "km": 0.0,
+     "layer": "Wisconsin State Parks (DNR) (park, state GIS table)",
+     "name": "Menominee River State Recreation Area",
+     "why": "shares menominee"
+    }
+   ],
+   "n": "Pemene Falls Unit of Menominee River State Recreation Area",
+   "site": false,
+   "st": "WI"
+  },
+  "US-4342": {
+   "acts": 38,
+   "leads": [
+    {
+     "acres": 34.35805542,
+     "id": "sgwid19786541",
+     "km": 0.0,
+     "layer": "Wisconsin DNR Bureau of Facilities and Lands (land, state GIS table)",
+     "name": "Wolf River Bottoms Wildlife Area",
+     "why": "shares bottoms, wolf"
+    },
+    {
+     "acres": 3138.17,
+     "id": "wid713547",
+     "km": 0.0,
+     "layer": "Wisconsin DNR managed properties",
+     "name": "Wolf River Bottoms Wildlife Area",
+     "why": "shares bottoms, wolf"
+    },
+    {
+     "acres": 3138.17,
+     "id": "sgwia713547",
+     "km": 0.0,
+     "layer": "Wisconsin DNR (land, state GIS table)",
+     "name": "Wolf River Bottoms Wildlife Area",
+     "why": "shares bottoms, wolf"
+    },
+    {
+     "acres": 3141.0,
+     "id": "273010",
+     "km": 0.0,
+     "layer": "Wisconsin Department of Natural Resources",
+     "name": "Wolf River Bottoms Wildlife Area",
+     "why": "shares bottoms, wolf"
+    }
+   ],
+   "n": "Herb Behnke Unit of Wolf River Bottoms State Wildlife Area",
    "site": false,
    "st": "WI"
   },
@@ -12058,6 +12194,22 @@
    "n": "Split Rock State Forest",
    "site": false,
    "st": "NY"
+  },
+  "US-5563": {
+   "acts": 3,
+   "leads": [
+    {
+     "acres": 587.0,
+     "id": "sgvta45",
+     "km": 0.49,
+     "layer": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "name": "Black Turn Brook State Forest",
+     "why": "shares black, brook, turn"
+    }
+   ],
+   "n": "Black Turn Brook State Forest",
+   "site": false,
+   "st": "VT"
   },
   "US-5564": {
    "acts": 82,
@@ -14155,6 +14307,30 @@
    "site": false,
    "st": "MD"
   },
+  "US-7782": {
+   "acts": 27,
+   "leads": [
+    {
+     "acres": 1370.0,
+     "id": "56554",
+     "km": 0.0,
+     "layer": " ",
+     "name": "Nanjemoy Wma",
+     "why": "shares nanjemoy"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgmda293",
+     "km": 0.0,
+     "layer": "Maryland DNR (state parks, WMAs, forests, natural resource areas) (land, state GIS table)",
+     "name": "NANJEMOY WMA",
+     "why": "shares nanjemoy"
+    }
+   ],
+   "n": "Ben Doane Parcel of Nanjemoy Wildlife Management Area",
+   "site": false,
+   "st": "MD"
+  },
   "US-7821": {
    "acts": 18,
    "leads": [
@@ -15223,8 +15399,8 @@
  "skipped": [],
  "totals": {
   "canada": 263,
-  "name_word": 490,
-  "parks": 640,
-  "us": 378
+  "name_word": 497,
+  "parks": 647,
+  "us": 386
  }
 }
