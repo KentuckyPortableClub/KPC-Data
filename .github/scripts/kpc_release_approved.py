@@ -126,6 +126,14 @@ def keep_held(f, rel, hold):
     return len(hit)
 
 
+REFUSED = "not released: the waiting room refused it (data/waiting/known/trails.json: a line a person chose to keep, or not a trail line)"
+
+
+def refused(rel):
+    """Nov 4: mode_release can refuse (known/trails.json keep_lines / not_lines). The held copy is still there -> say so in the log."""
+    return (W.W / 'in' / rel).exists() and bool(W.keep_line(rel) or W.not_line(rel))
+
+
 def verdict_ok(v):
     """Oct 31 (Fable review #6): chat 11's field decides, whoever created the item (chat 2 creates the 2-fer items: MN + IA were skipped
     twice). Markup is ignored ('**YES**', '"YES', 'KEY: YES', double spaces); a verdict that ALSO says NO / FAIL / HOLD / NOT SURE /
@@ -231,7 +239,9 @@ def auto_trusted(items, log):
             vnow = f'could not be checked ({type(e).__name__})'
         if vnow not in ('PASS', 'LIVE-FILTERED'):
             log.append({'item': rel, 'result': f'skipped (trusted kind {r["kind"]}): the file held now does not pass the check ({vnow}); the saved PASS was for an older copy'}); continue
-        if not DRY: W.mode_release(rel)
+        if not DRY:
+            W.mode_release(rel)
+            if refused(rel): log.append({'item': rel, 'result': REFUSED}); continue
         n += 1; log.append({'item': rel, 'result': f"released (trusted kind {r['kind']}: last {TRUST_RUN} chat-11 grades since the Nov 2 restart passed; the held file re-checked: {vnow})"})
         if int(hashlib.md5((rel + today).encode()).hexdigest(), 16) % 10 == 0 and (rel, today) not in have:
             S.setdefault('files', []).append({'path': rel, 'kind': r['kind'], 'date': today}); have.add((rel, today))
@@ -294,7 +304,9 @@ def per_park_release(A, log, U):
         if f.name.endswith('.gz'): f.write_bytes(gzip.compress(txt.encode('utf-8'), 6))
         else: f.write_text(txt, encoding='utf-8')
         rel = str(f.relative_to(W.W / 'in'))
-        W.mode_release(rel); files.append(rel)
+        W.mode_release(rel)
+        if refused(rel): log.append({'item': rel, 'result': REFUSED}); continue
+        files.append(rel)
         log.append({'item': rel, 'result': f'released per park ({len(new["parks"]) - len(held)} parks go, {len(held)} keep the live version / a pin)'})
     if not DRY:
         U[k] = time.strftime('%Y-%m-%dT%H:%MZ', time.gmtime())
@@ -338,11 +350,12 @@ def main():
                     r2 = str(f.relative_to(W.W / 'in'))
                     kept = keep_held(f, r2, hold) if hold and item_kind(it) == 'key' else 0
                     if not DRY: W.mode_release(r2)
+                    if not DRY and refused(r2): log.append({'item': r2, 'result': REFUSED}); continue
                     log.append({'item': r2, 'result': 'released (approved folder)' + (f'; {kept} park(s) the verdict holds kept as live / pins' if kept else '')})
                 continue
             if (W.W / 'in' / rel).exists():
                 if not DRY: W.mode_release(rel)
-                log.append({'item': rel, 'result': 'released (approved)'})
+                log.append({'item': rel, 'result': REFUSED if not DRY and refused(rel) else 'released (approved)'})
             else: log.append({'item': rel, 'result': 'nothing waiting there'})
     try: per_park_release(A, log, U)
     except Exception as e: print(f'::notice title=Per-park release::skipped ({type(e).__name__}: {e})')  # noqa: BLE001

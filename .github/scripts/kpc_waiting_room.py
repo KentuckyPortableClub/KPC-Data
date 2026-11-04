@@ -294,12 +294,34 @@ def c_trails(path, new, live, ctx):
         refs = [r.get('ref') for r in new if isinstance(r, dict)]
         if len(refs) != len(set(refs)): holds.append(f'F-T5 {len(refs) - len(set(refs))} trails listed twice in the index')
         return holds, notes
+    nl = not_line(path)
+    if nl: return [f"F-T7 not a trail line: {nl.get('why') or 'a report with no geometry'}; its home is {nl.get('home') or 'data/status/'} (never released into data/trails)"], notes
     pn, po = coords(new.get('geometry')), coords((live or {}).get('geometry'))
     if not pn: holds.append('F-T1 the line has no points')
     if po and len(pn) < .5 * len(po): holds.append(f'F-T2 points {len(po)} -> {len(pn)} (under half the saved line)')
     ln, lo = length_km(new.get('geometry')), length_km((live or {}).get('geometry'))
     if lo > 1 and not (.75 * lo <= ln <= 1.5 * lo): holds.append(f'F-T3 length {lo:.0f} -> {ln:.0f} km (outside -25% / +50%)')
+    kl = keep_line(path)
+    if kl and (ln < .98 * float(kl.get('km') or 0) or len(pn) < int(kl.get('points') or 0)):
+        holds.append(f"F-T6 REJECTED ({kl.get('by') or 'a person'}): keep the saved official line ({kl.get('km')} km, {kl.get('points')} points); "
+                     f"this new line is {ln:.1f} km, {len(pn)} points. Never released while data/waiting/known/trails.json keeps it; {kl.get('review') or 'on the review pile'}")
     return holds, notes
+
+
+def keep_line(path):
+    """Nov 4 (per Brandon via Super Head Bot (relayed), 4:35 AM CST: 'Agree keep the official line'; Brandon, directly (Mapping chat), 4:36 AM CST: 'No keep the full length ones we had'): data/waiting/known/trails.json 'keep_lines'
+    = parks whose saved official line a person chose to keep. A new line for one of them that is shorter or has fewer points is
+    REJECTED (F-T6), and mode_release refuses it, so no chat 11 YES, per-park release or trusted-kind auto-release can put it live.
+    To lift it, a person removes the park from keep_lines."""
+    m = re.match(r'^data/trails/([^/]+)\.json(\.gz)?$', str(path).replace('\\', '/'))
+    return (known('trails').get('keep_lines') or {}).get(m.group(1)) if m else None
+
+
+def not_line(path):
+    """Nov 4 (Quality; per Brandon via Super Head Bot (relayed), 4:35 AM CST): files under data/trails/ that are NOT trail lines (a status report with no
+    geometry), from data/waiting/known/trails.json 'not_lines': held as F-T7, never released into data/trails, never taken back as a
+    bot's working copy (mode_resume), so a stale held copy stops coming round every run."""
+    return (known('trails').get('not_lines') or {}).get(re.sub(r'\.gz$', '', str(path).replace('\\', '/')))
 
 
 def retest(urls, n=20):
@@ -820,11 +842,14 @@ def mode_divert(paths):
 
 def mode_resume(paths):
     """Before a held bot runs again: its waiting files become its working copy, so it continues from what it held (not from live)."""
-    n = 0
+    n, skipped = 0, []
     for pth in paths:
         for f in (W / 'in' / pth).rglob('*') if (W / 'in' / pth).exists() else []:
-            if f.is_file(): rel = f.relative_to(W / 'in'); (DATA / rel).parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, DATA / rel); n += 1
-    print(f'::notice title=Waiting room (hold)::{n} held files taken as the working copy')
+            if not f.is_file(): continue
+            rel = f.relative_to(W / 'in')
+            if not_line(rel.as_posix()): skipped.append(rel.as_posix()); continue   # Nov 4: a held status report is not a bot's working copy
+            (DATA / rel).parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, DATA / rel); n += 1
+    print(f'::notice title=Waiting room (hold)::{n} held files taken as the working copy' + (f'; not taken (not a trail line, see known/trails.json): {", ".join(skipped)}' if skipped else ''))
 
 
 def row_map(d):
@@ -1025,6 +1050,12 @@ def mode_release(rel):
     src = W / 'in' / rel
     if not src.exists(): print(f'::notice title=Waiting room release::nothing held at {rel}'); return
     if load(src) is None: print(f'::notice title=Waiting room release::refused: {rel} does not read as JSON'); return   # chat 8 retest 5
+    kl, nl = keep_line(rel), not_line(rel)   # Nov 4: a person's keep (Brandon, directly (Mapping chat), 4:36 AM CST Nov 4) beats any YES or trusted-kind release
+    if nl: print(f'::notice title=Waiting room release::refused: {rel} is not a trail line (data/waiting/known/trails.json not_lines); its home is {nl.get("home")}'); return
+    if kl:
+        g = (load(src) or {}).get('geometry') if isinstance(load(src), dict) else None
+        if length_km(g) < .98 * float(kl.get('km') or 0) or len(coords(g)) < int(kl.get('points') or 0):
+            print(f"::notice title=Waiting room release::refused: {rel} is shorter than the official line a person chose to keep ({kl.get('by')}); see data/waiting/known/trails.json"); return
     promote_file(rel, None, raw=src); src.unlink(); log_action('release', rel)
     print(f'::notice title=Waiting room release::{rel} released by a person (previous copy kept for undo)')
 

@@ -1,0 +1,34 @@
+{
+ "note": "Read by .github/scripts/kpc_waiting_room.py (known('trails')). keep_lines: parks whose saved official trail line a person chose to keep; a new line that is shorter (under 98% of km) or has fewer points is REJECTED (F-T6) and mode_release refuses it, so no YES, per-park release or trusted-kind auto-release can put it live. To lift it, a person removes the park here. not_lines: files under data/trails/ that are not trail lines (F-T7): held, never released into data/trails, never taken back as a bot's working copy.",
+ "keep_lines": {
+  "US-9905": {
+   "name": "Cascades National Recreation Trail",
+   "km": 6.0,
+   "points": 153,
+   "pieces": 7,
+   "source": "US Forest Service (official), read 2026-10-29",
+   "by": "per Brandon via Super Head Bot (relayed), 4:35 AM CST Nov 4 2026: 'Agree keep the official line'; Brandon, directly (Mapping chat), 4:36 AM CST Nov 4 2026: 'No keep the full length ones we had'",
+   "rejected": "held new line sha256 8409864c...: 1 piece, 55 points, 2.9 km (Quality, Nov 4)",
+   "review": "on the review pile (KPC-Links data/review/precheck-notes.json trail_check): check against FS trail data"
+  },
+  "US-9906": {
+   "name": "Cornelius Creek National Recreation Trail",
+   "km": 6.4,
+   "points": 152,
+   "pieces": 3,
+   "source": "US Forest Service (official), read 2026-10-29",
+   "by": "per Brandon via Super Head Bot (relayed), 4:35 AM CST Nov 4 2026: 'Agree keep the official line'; Brandon, directly (Mapping chat), 4:36 AM CST Nov 4 2026: 'No keep the full length ones we had'",
+   "rejected": "held new line sha256 46ce1602...: 2 pieces, 97 points, 4.5 km (Quality, Nov 4)",
+   "review": "on the review pile (KPC-Links data/review/precheck-notes.json trail_check): check against FS trail data"
+  }
+ },
+ "not_lines": {
+  "data/trails/finds-lines-report.json": {
+   "why": "the found-trail-lines status report (about/count/rows, 59 rows, no geometry; Quality Nov 4)",
+   "home": "data/status/finds-lines-report.json",
+   "writer": "KPC-Links .github/scripts/kpc_finds_lines.py writes data/status/finds-lines-report.json since commit 0c87ee923 (Nov 2 10:34 AM CST); the data/trails copy is the stale Nov 1 held copy that mode_resume kept bringing back each run",
+   "by": "per Brandon via Super Head Bot (relayed), 4:35 AM CST Nov 4 2026 (Quality's finding)",
+   "delete": "the held copy data/waiting/in/data/trails/finds-lines-report.json is NOT deleted: flagged for Brandon's yes"
+  }
+ }
+}
