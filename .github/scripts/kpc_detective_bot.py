@@ -114,6 +114,49 @@ COMPAT = {'park': {'park', 'historic', 'preserve'}, 'historic': {'park', 'histor
           'wildlife': {'wildlife', 'preserve'}, 'forest': {'forest'}, 'trail': {'trail'}}
 
 
+R18_PIECE = {'north', 'south', 'east', 'west', 'northeast', 'northwest', 'southeast', 'southwest', 'upper', 'lower', 'middle', 'inner', 'outer',
+             'nord', 'sud', 'est', 'ouest', 'nordest', 'nordouest', 'sudest', 'sudouest'}
+# FINAL-v2 self-check (Brandon's 6:14 AM CST Nov 4 rule, relayed via Super Head Bot: grade our own bundle first): the same compass words as KPC-Links' rule 18 (kpc_precheck._R18_ONESIDE + kpc_key_rules._compass):
+# French 'est' too ('Lac Nord-Est' vs 'Lac Nord'), accents off, 'ne' / 'nw' / 'se' / 'sw' always, a single n / s / e / w only right
+# before a piece word ('E Unit'; a middle initial 'Gordon W. Yeager' stays a name), and 'south east' = 'southeast'.
+R18_SHORT = {'n': 'north', 's': 'south', 'e': 'east', 'w': 'west', 'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest'}
+R18_PIECE_WORD = re.compile(r'(?:sub ?unit|unit|tract|parcel|zone|division)')
+
+
+def r18_words(x):
+    """The rule 18 words of a name. Bracketed qualifiers ('(Lewis County)', '(Lower Tract)', '(South)') are dropped first (rule 18 v5;
+    Quality's FINAL-v2 grade: 'bracket words are ignored'), as in KPC-Links' kpc_fers_guard.unbracket."""
+    return _r18_seq(re.sub(r'\([^)]*\)|\[[^\]]*\]', ' ', str(x or '')))
+
+
+def _r18_seq(t):
+    import unicodedata
+    t = unicodedata.normalize('NFKD', str(t or '')).encode('ascii', 'ignore').decode()
+    w, out = low(re.sub(r"[.\u2019']", '', t)).split(), []
+    for i, v in enumerate(w):
+        nxt = w[i + 1] if i + 1 < len(w) else ''
+        if len(v) == 2 and v in R18_SHORT: v = R18_SHORT[v]
+        elif len(v) == 1 and v in R18_SHORT and R18_PIECE_WORD.fullmatch(nxt): v = R18_SHORT[v]
+        if out and out[-1] in ('north', 'south', 'nord', 'sud') and v in ('east', 'west', 'est', 'ouest'): out[-1] += v; continue
+        out.append(v)
+    return out
+
+
+def rule18_piece(park, poly):
+    """Rule 18 (v5: Brandon, Super Head Bot chat, 7:43 PM CST Nov 3, relayed via Super Head Bot: "Yes"; relayed (paraphrase of the question he
+    answered Yes to): bracket qualifiers do not count; one-side compass words in English or French do. Quality must-fix 1, Nov 4): '' when nothing tells the two names apart as
+    pieces, else the reason. A compass / position word on ONE side only ('Kirkpatrick Basin North WMA' vs 'Kirkpatrick Basin WMA',
+    'East Fork SP' vs 'Fork SP') or on both sides but different (North vs South), or different unit numbers ('Unit 2' vs 'Unit 3'),
+    means another piece. Bracketed qualifiers ('(Lewis County)') do not count. Not big / little / great (ordinary name words)."""
+    a, b = set(r18_words(park)), set(r18_words(poly))
+    pa, pb = (a & R18_PIECE) - b, (b & R18_PIECE) - a
+    if pa and pb: return f"rule 18: '{' '.join(sorted(pa))}' vs '{' '.join(sorted(pb))}' are different pieces"
+    if pa or pb: return f"rule 18: '{' '.join(sorted(pa | pb))}' names only one piece"
+    na, nb = {w for w in a if w.isdigit()}, {w for w in b if w.isdigit()}
+    if na and nb and not (na & nb): return f"rule 18: number {' '.join(sorted(na))} vs {' '.join(sorted(nb))} are different pieces"
+    return ''
+
+
 def judge_name(park, poly):
     """How a polygon's name relates to the park's: 'match' (same core words, same kind of place), 'mismatch' (same place name,
     a different but kindred kind word, or only part of the words: our matcher likely missed it, chat 2 looks at both names),
@@ -125,6 +168,7 @@ def judge_name(park, poly):
     ca, cb = classes(park), classes(poly)
     kindred = not ca or not cb or any(y in COMPAT.get(x, {x}) for x in ca for y in cb)
     if not kindred: return 'different'     # Green River Lake State Park vs Green River State Forest: same name, another kind of land
+    if rule18_piece(park, poly): return 'mismatch'   # Nov 4 (Quality must-fix 1): another piece of the same place is never 'match' (no outline answer; the park stays a pin)
     if a == b: return 'match' if (ca == cb or not ca or not cb) else 'mismatch'
     if a <= b or b <= a or len(shared) / len(a | b) >= 0.5: return 'match' if (ca == cb or not ca or not cb) else 'mismatch'
     return 'mismatch'
@@ -145,6 +189,36 @@ def sure_rule(pin_inside, name_rel, size_ok):
 
 
 # ---- the missing list
+def pin_bad(la, lo):
+    """Nov 4 (Mapping): a 0,0 / impossible / not-a-number POTA pin is no pin (POTA's pin is never moved; the pin steps are skipped)."""
+    try: la, lo = float(la), float(lo)
+    except (TypeError, ValueError): return True
+    return la != la or lo != lo or (la == 0 and lo == 0) or not (-90 <= la <= 90 and -180 <= lo <= 180)
+
+
+def _nopin(t):
+    """(name, type, lat, lon, page, acres) with lat/lon None when the pin is bad."""
+    return t if t[2] is None or not pin_bad(t[2], t[3]) else (t[0], t[1], None, None, t[4], t[5])
+
+
+NO_CACHE = {}
+
+
+def override_no(ref):
+    """Nov 4 (Mapping): lower-case names / ids a person said are NOT this park ('no' in the answer key's overrides.json; KPC-Links
+    checkout first, then this repo's data/). A find on one of them is never an answer."""
+    if not NO_CACHE:
+        for k in ('us', 'ca', 'world'):
+            for base in (LINKS / 'data' / f'{k}-key', pathlib.Path('data') / f'{k}-key'):
+                d = load(base / 'overrides.json', {})
+                if isinstance(d, dict) and d.get('parks'):
+                    for r, o in d['parks'].items():
+                        NO_CACHE.setdefault(r, set()).update(str(x).strip().lower() for x in (o or {}).get('no') or [] if x is not None)
+                    break
+        NO_CACHE['_'] = set()
+    return NO_CACHE.get(ref) or set()
+
+
 def pins():
     """{ref: (name, type, lat, lon, page url, acres or 0)} from data/parkinfo (US-XX + CA) in KPC-Data, else KPC-Links."""
     P = {}
@@ -154,9 +228,9 @@ def pins():
             for r, v in d.items():
                 if r in P: continue
                 if isinstance(v, list) and len(v) >= 7:
-                    P[r] = (v[0], v[2] if len(v) > 2 else '', v[5], v[6], v[1] if len(v) > 1 else '', 0)
+                    P[r] = _nopin((v[0], v[2] if len(v) > 2 else '', v[5], v[6], v[1] if len(v) > 1 else '', 0))
                 elif isinstance(v, dict):
-                    P[r] = (v.get('n') or v.get('name') or '', v.get('t') or v.get('type') or '', v.get('la') or v.get('lat'), v.get('lo') or v.get('lon'), v.get('url') or v.get('page') or '', v.get('a') or 0)
+                    P[r] = _nopin((v.get('n') or v.get('name') or '', v.get('t') or v.get('type') or '', v.get('la') or v.get('lat'), v.get('lo') or v.get('lon'), v.get('url') or v.get('page') or '', v.get('a') or 0))
     if not P:   # last resort: the POTA pin list
         for row in (load('data/northam.json', {}) or load(LINKS / 'data/northam.json', {})).get('rows') or []:
             if len(row) >= 5 and row[0] == 'POTA': P[row[1]] = (row[2], '', row[3], row[4], '', 0)
@@ -371,6 +445,8 @@ def consider(park, lu, attrs, hint, publisher, where, budget, finds):
 def hunt(park, area, layers, hosts, orgs, servers, budget):
     """The five steps for one park. Returns (tried list, finds list, verdict)."""
     la, lo = park['la'], park['lo']; tried = []; finds = []; verdict = 'nothing'
+    if la is None or pin_bad(la, lo):   # Nov 4 (Mapping): no usable POTA pin = no point queries (POTA's pin is never moved)
+        return [{'step': 0, 'url': '', 'what': 'point queries at the POTA pin', 'result': 'skipped: no usable POTA pin (0,0 / impossible); a person or POTA fixes the pin'}], [], verdict
     # 1 layers we already read
     for lu, nf, label in layers:
         if budget[0] >= MAXREQ - 1: break
@@ -638,7 +714,9 @@ def read_html(u, budget):
 def park_of(ref, P):
     """(name, type, la, lo, page, county, off) for a ref: Kentucky's hand data first, then parkinfo."""
     for x in load(LINKS / 'kpc-ky-data.json', {}).get('parks', []):
-        if x.get('c') == ref: return (x.get('n'), x.get('t'), x.get('la'), x.get('lo'), x.get('web') or '', x.get('co') or '', x.get('off') or '')
+        if x.get('c') == ref:
+            la, lo = (x.get('la'), x.get('lo')) if x.get('la') is not None and not pin_bad(x.get('la'), x.get('lo')) else (None, None)
+            return (x.get('n'), x.get('t'), la, lo, x.get('web') or '', x.get('co') or '', x.get('off') or '')
     v = P.get(ref)
     if v: return (v[0], v[1], v[2], v[3], v[4], '', '')
     return None
@@ -688,7 +766,9 @@ def answers_question(find, what, hints):
     """Does a find ANSWER the question (its line carries the fact words asked, or the asked tract name)? Selftested."""
     line = (find.get('line') or '').lower()
     if not line: return False
-    if what == 'outline': return True
+    # Nov 4 (Mapping): only a POLYGON find (a layer record under the pin) can answer an outline question; a dataset title, a page
+    # line or a report row is a lead (context), not an outline
+    if what == 'outline': return bool(find.get('poly')) and find.get('kind') == 'attributes'
     dump = find.get('kind') == 'attributes' or bool(re.search(r'^\w+=[^;]*;\s*\w+=', line))   # a layer's attribute dump (k=v; k=v …)
     if what == 'free text': return bool(kinds_of(line)) and not dump
     if dump and what in ('tract', 'acreage'): return False     # V3: only an agency sentence or a report row answers a tract / acreage question
@@ -705,7 +785,7 @@ def q_unit(name):
     return low(u) if u and len(u) > 3 else ''
 
 
-def layer_context(name, hints, what, la, lo, area, budget, tried, finds):
+def layer_context(name, hints, what, la, lo, area, budget, tried, finds, no=()):
     """Step 1: the polygons with the park's name under the pin (and, for acreage, within NEAR_M) in every layer we read.
     Each is a context find; an 'outline' question or a polygon that names the asked tract is an answer."""
     for lu, nf, label in area_layers(area)[:4]:
@@ -728,7 +808,14 @@ def layer_context(name, hints, what, la, lo, area, budget, tried, finds):
             unit_note = ''
             qu = q_unit(name)
             if qu and qu not in pname.lower() and judge_name(name, pname) in ('match', 'mismatch'): unit_note = 'a different unit of the same ' + (re.search(r'(natural area|nature preserve|state park|wma|wildlife management area|forest|refuge|park)', low(name)) or [None, 'park'])[1]
-            finds.append({'step': '1 our layers', 'kind': 'attributes', 'note': unit_note, 'role': 'answer' if (what == 'outline' or (tract_hit and what not in ('acreage',))) else 'context', 'fact': f'polygon {"under the pin" if what != "acreage" else "under or near the pin"} in a layer we read: "{pname}"' + (f', {acres_of(a)} ac' if acres_of(a) else ''),
+            # Nov 4 (Mapping): an outline answer needs the SAME name and kind ('match'), no different-unit note, and a record a person
+            # did not say no to. 'mismatch' (a kindred but different kind word) is context: rule 18, a person decides.
+            jn = judge_name(name, pname)
+            said_no = pname.strip().lower() in no
+            if said_no: unit_note = (unit_note + '; ' if unit_note else '') + "a person said this record is NOT this park (overrides 'no'): context only"
+            elif what == 'outline' and jn == 'mismatch': unit_note = (unit_note + '; ' if unit_note else '') + ((rule18_piece(name, pname) + ': a person decides') if rule18_piece(name, pname) else 'the name differs in kind (rule 18): a person decides')
+            ans = not said_no and ((what == 'outline' and jn == 'match' and not unit_note) or (tract_hit and what not in ('acreage', 'outline')))
+            finds.append({'step': '1 our layers', 'kind': 'attributes', 'note': unit_note, 'role': 'answer' if ans else 'context', 'fact': f'polygon {"under the pin" if what != "acreage" else "under or near the pin"} in a layer we read: "{pname}"' + (f', {acres_of(a)} ac' if acres_of(a) else ''),
                           'line': line, 'url': lu, 'date': TODAY, 'poly': pname, 'acres': acres_of(a)})
         if hits: tried[-1]['result'] = f'{matched} named polygon(s) of {len(hits)}' if matched else 'opened, nothing matched the name' 
 
@@ -828,7 +915,7 @@ def hunt_question(q, P, area):
     answered = lambda: any(f.get('role') == 'answer' for f in finds)  # noqa: E731
     # 1 our layers at the pin (context for most kinds)
     if la is not None and what in ('outline', 'free text') + CONTEXT_KINDS:
-        layer_context(name, hints, what, la, lo, area, budget, tried, finds)
+        layer_context(name, hints, what, la, lo, area, budget, tried, finds, override_no(ref))
     # 3 the state open-data portal (V4: a second try on a different base; 'blocked: <status>' when both fail)
     if not answered() and budget[0] < QMAX - 2:
         sn = STATE_NAMES.get(area[3:], '')
@@ -853,7 +940,7 @@ def hunt_question(q, P, area):
             if judge_name(name, title) in ('match', 'mismatch') and official_org(at.get('orgName') or at.get('source') or '', area):
                 tried[-1]['result'] = f'opened, dataset "{title}"'
                 f = {'step': '3 open-data portal', 'fact': f'open-data dataset names the park: "{title}" ({at.get("orgName") or at.get("source")})', 'line': (at.get('description') or '')[:240], 'url': at.get('url') or '', 'date': TODAY}
-                f['role'] = 'answer' if what == 'outline' or answers_question(f, what, hints) else 'context'
+                f['role'] = 'answer' if answers_question(f, what, hints) else 'context'   # Nov 4 (Mapping): a dataset title is a lead, never an outline answer
                 finds.append(f); break
     # 4 PAD-US at the pin
     if not answered() and la is not None and budget[0] < QMAX - 1 and what in ('outline', 'free text') + CONTEXT_KINDS:
@@ -1043,9 +1130,45 @@ def selftest_facts():
     rush = {'line': 'NAME=Green River State Natural Area (Rush Island Bottoms); ACRES=139.25; MANAGER=KNP'}
     timber = {'line': 'Green River State Natural Area, Timber Lane, KNP, Hart, 115.75'}
     page = {'line': 'Boiling Springs State Nature Preserve covers 440 acres in Hart County.'}
-    for f, what, want in ((rush, 'tract', False), (timber, 'tract', True), (rush, 'acreage', False), (page, 'acreage', True), (rush, 'outline', True), (page, 'owner', False)):
+    poly = {'kind': 'attributes', 'poly': 'Green River State Natural Area (Rush Island Bottoms)', 'line': rush['line']}
+    for f, what, want in ((rush, 'tract', False), (timber, 'tract', True), (rush, 'acreage', False), (page, 'acreage', True), (poly, 'outline', True),
+                          (rush, 'outline', False), (page, 'outline', False), (page, 'owner', False)):   # Nov 4: only a polygon find answers 'outline'
         got = answers_question(f, what, hints); ok &= got == want
         print(f'answers? {what:8} {"ok" if got == want else "WRONG"} ({got}) ← {f["line"][:50]}')
+    return ok
+
+
+def selftest_nov4():
+    """Nov 4 (Mapping): bad pins, rule 18 mismatches, overrides 'no' (no web: the layer reads are faked)."""
+    ok = True
+    for la, lo, want in ((0, 0, True), (95.1, -58.7, True), (None, 1, True), ('x', 2, True), (37.1, -85.9, False), (0, 12.5, False)):
+        got = pin_bad(la, lo); ok &= got == want
+        print(f'bad pin {la},{lo} -> {got} ({"ok" if got == want else "WRONG"})')
+    got = _nopin(('Zero Park', 'Park', 0, 0, '', 0)); ok &= got[2] is None and got[3] is None
+    print(f'0,0 pin becomes no pin: {got} ({"ok" if got[2] is None else "WRONG"})')
+    tr = []; f0 = []
+    got = hunt({'la': 0, 'lo': 0, 'ref': 'X'}, 'US-KY', [], [], [], [], [0, 0]); ok &= not got[1] and 'no usable POTA pin' in got[0][0]['result']
+    print(f'hunt with a 0,0 pin: no point queries ({"ok" if not got[1] else "WRONG"})')
+    g = globals(); keep = (g['area_layers'], g['point_query'])
+    try:
+        g['area_layers'] = lambda area: [('https://example.invalid/layer/0', 'NAME', 'fake')]
+        for pname, no, want, why in (('Big Bone Lick State Historic Site', set(), 'answer', 'same name and kind'),
+                                     ('Big Bone Lick State Park', set(), 'context', "rule 18 'mismatch' (park vs historic site)"),
+                                     ('Big Bone Lick State Historic Site', {'big bone lick state historic site'}, 'context', "a person said no")):
+            g['point_query'] = lambda lu, la, lo, budget, _p=pname: [{'NAME': _p, 'ACRES': 100}]
+            fd = []; layer_context('Big Bone Lick State Historic Site', set(), 'outline', 38.88, -84.75, 'US-KY', [0, 0], [], fd, no)
+            got = fd[0]['role'] if fd else None; ok &= got == want
+            print(f'outline find "{pname}" ({why}) -> {got} ({"ok" if got == want else "WANT " + want})')
+        # Nov 4 (Quality must-fix 1): rule 18 pieces are context, never an outline answer -> the park stays a PIN
+        for park, pname in (('Kirkpatrick Basin North Wildlife Management Area', 'Kirkpatrick Basin Wildlife Management Area'),
+                            ('Kirkpatrick Basin Wildlife Management Area', 'Kirkpatrick Basin South Wildlife Management Area'),
+                            ('East Fork State Park', 'Fork State Park'), ('Fork State Park', 'East Fork State Park')):
+            g['point_query'] = lambda lu, la, lo, budget, _p=pname: [{'NAME': _p, 'ACRES': 100}]
+            fd = []; layer_context(park, set(), 'outline', 38.0, -84.0, 'US-KY', [0, 0], [], fd, set())
+            got = fd[0]['role'] if fd else None; good = got == 'context' and 'rule 18' in (fd[0].get('note') or '')
+            ok &= good
+            print(f'outline find "{pname}" for "{park}" (rule 18 piece) -> {got}, note {(fd[0].get("note") if fd else "")!r} ({"ok" if good else "WANT context + rule 18 note (PIN)"})')
+    finally: g['area_layers'], g['point_query'] = keep
     return ok
 
 
@@ -1058,10 +1181,37 @@ def selftest():
              ('Jenny Wiley State Resort Park', 'Dewey Lake WMA', 'different'),
              ('Daniel Boone National Forest', 'Red River Gorge Geological Area', 'different'),
              ('Green River Lake State Park', 'Green River State Forest', 'different'),
-             ('Taylorsville Lake WMA', 'Taylorsville Lake Wildlife Management Area', 'match')]
+             ('Taylorsville Lake WMA', 'Taylorsville Lake Wildlife Management Area', 'match'),
+             # Nov 4 (Quality must-fix 1, rule 18): a one-side compass / position word, North vs South, or another unit number is another piece
+             ('Kirkpatrick Basin North Wildlife Management Area', 'Kirkpatrick Basin Wildlife Management Area', 'mismatch'),
+             ('Kirkpatrick Basin Wildlife Management Area', 'Kirkpatrick Basin South Wildlife Management Area', 'mismatch'),
+             ('Kirkpatrick Basin North Wildlife Management Area', 'Kirkpatrick Basin South Wildlife Management Area', 'mismatch'),
+             ('East Fork State Park', 'Fork State Park', 'mismatch'),
+             ('Fork State Park', 'East Fork State Park', 'mismatch'),
+             ('Upper Twin Lakes WMA', 'Twin Lakes WMA', 'mismatch'),
+             ('India Unit 2 Wildlife Area', 'India Unit 3 Wildlife Area', 'mismatch'),
+             # brackets do not count (rule 18 v5) and the same compass word on both sides is the same piece
+             ('Hotel (Lewis County) State Forest', 'Hotel State Forest', 'match'),
+             ('East Fork State Park', 'EAST FORK STATE PARK', 'match'),
+             # FINAL-v2 self-check (Nov 4): French 'est', accents, abbreviations, 'south east', a middle initial
+             ('Lac Nord-Est Reserve', 'Lac Nord Reserve', 'mismatch'),
+             ('Réserve faunique Est', 'Reserve faunique', 'mismatch'),
+             ('Parc régional du Mont-Sud', 'Parc regional du Mont-Sud', 'match'),
+             ('Alpha WMA E Unit', 'Alpha WMA', 'mismatch'),
+             ('Alpha NE WMA', 'Alpha Northeast WMA', 'match'),
+             ('Gordon W. Yeager Wildlife Area', 'Gordon Yeager Wildlife Area', 'match'),
+             ('Horseshoe Canyon State Park (South)', 'Horseshoe Canyon State Park', 'match'),
+             ('Mill Creek Park (Lewis County)', 'Mill Creek Park', 'match')]
     for a, b, want in pairs:
         got = judge_name(a, b); ok &= got == want
         print(f'name: {a!r} vs {b!r} -> {got} ({"ok" if got == want else "WANT " + want})')
+    for a, b, want in (('Alpha South East WMA', 'Alpha Southeast WMA', ''), ('Lac Nord-Est Reserve', 'Lac Nord Reserve', 'different pieces'),
+                       ('Alpha SW Tract', 'Alpha Tract', 'names only one piece'), ('Bear Creek (North) WMA', 'Bear Creek WMA', ''),
+                       ('Deer Flat (ZEPA)', 'Deer Flat', ''), ('Alpha State Park (Lower Tract)', 'Alpha State Park', ''),
+                       ('Gordon W. Yeager WA', 'Gordon Yeager WA', ''), ('Alpha Lower Tract', 'Alpha Tract', 'names only one piece')):
+        got = rule18_piece(a, b); good = (want in got) if want else got == ''
+        ok &= good
+        print(f'rule 18 piece: {a!r} vs {b!r} -> {got!r} ({"ok" if good else "WANT " + (want or "no piece")})')
     finds = [(True, 'match', True, 'YES'), (True, 'match', None, 'YES'), (True, 'match', False, 'check'), (False, 'match', True, 'check')]
     for pin, rel, size, want in finds:
         got = sure_rule(pin, rel, size); ok &= got == want
@@ -1072,6 +1222,7 @@ def selftest():
         m = missing_for(a, P); K = load(key_file(a), {}).get('parks') or (ky_key()[0] if a == 'US-KY' else {})
         print(f'missing {a}: {len(m)} of {len(K)} parks in the key (no outline, not pin-only / line) · layers already read: {len(area_layers(a))} · orgs {org_ids(a)} · servers {len(agency_servers(a))}')
         for p in m[:3]: print('   e.g.', p['ref'], p['n'], p['t'], p['la'], p['lo'], 'hosts', agency_hosts(a, p.get('page')))
+    ok &= selftest_nov4()
     print('SELFTEST ' + ('PASS' if ok else 'FAIL'))
     return ok
 
