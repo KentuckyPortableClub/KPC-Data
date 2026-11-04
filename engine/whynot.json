@@ -1604,9 +1604,9 @@
   "date": "2026-11-03"
  },
  "CA-4961": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "CA-4957": {
   "tag": "no-layer: no official record at the pin or by name",
@@ -1636,7 +1636,7 @@
  "CA-1586": {
   "tag": "UNLIKELY only (evidence, never a question): other kind of place (wilderness vs state_park)",
   "step_reached": "L0",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "CA-5707": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
@@ -2291,7 +2291,7 @@
  "CA-5019": {
   "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "CA-2233": {
   "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
@@ -2311,27 +2311,27 @@
  "US-10431": {
   "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "US-10433": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "US-11325": {
   "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "US-11389": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-04"
  },
  "US-11423": {
-  "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
-  "step_reached": "L0",
-  "date": "2026-11-02"
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
  },
  "US-11537": {
   "tag": "no-layer: no official record at the pin or by name",
@@ -2499,6 +2499,86 @@
   "date": "2026-11-04"
  },
  "US-12193": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12194": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12195": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12196": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12197": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12198": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12199": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12200": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12201": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12202": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12203": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12205": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12206": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12207": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12208": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7072": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7097": {
   "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
   "date": "2026-11-04"
@@ -3308,6 +3388,81 @@
   "step_reached": "L5",
   "date": "2026-11-04"
  },
+ "US-7807": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7808": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7810": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7811": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7812": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7814": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7815": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7817": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7818": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7820": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7823": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7824": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7825": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7826": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7827": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
  "CA-1312": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
   "step_reached": "L5",
@@ -3797,6 +3952,226 @@
   "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
   "date": "2026-11-02"
+ },
+ "CA-5925": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-13020": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5135": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-4950": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5029": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-4990": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5075": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-13579": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0971": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-1036": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-2264": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-5938": {
+  "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
+  "step_reached": "L0",
+  "date": "2026-11-04"
+ },
+ "CA-1037": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-1736": {
+  "tag": "UNLIKELY only (evidence, never a question): other kind of place (nature_reserve vs wilderness)",
+  "step_reached": "L0",
+  "date": "2026-11-02"
+ },
+ "CA-1851": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-6224": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-6553": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6557": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6558": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6560": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6564": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6567": {
+  "tag": "UNLIKELY only (evidence, never a question): other kind of place (state_park vs wilderness)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-6569": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-0461": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0465": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0478": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0479": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0485": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0882": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0894": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0929": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-0941": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-1759": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-1771": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-1791": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-1876": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5810": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5849": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5850": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3186": {
+  "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3211": {
+  "tag": "blocked (4 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3679": {
+  "tag": "blocked (4 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3888": {
+  "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-6972": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-04"
  },
  "CA-2938": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
@@ -4393,6 +4768,206 @@
   "step_reached": "L5",
   "date": "2026-11-02"
  },
+ "CA-6519": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-6520": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-5174": {
+  "tag": "UNLIKELY only (evidence, never a question): other kind of place (state_rec_area vs refuge)",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-5193": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-10345": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-13239": {
+  "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+  "step_reached": "W-10",
+  "date": "2026-11-02"
+ },
+ "CA-4962": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-6448": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "US-13484": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "US-5831": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-1620": {
+  "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-5935": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-2299": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-02"
+ },
+ "CA-0844": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-0845": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4602": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4607": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4610": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4613": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4614": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4615": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4624": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4627": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-4628": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5449": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5452": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5453": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5737": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5738": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5743": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5744": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5745": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-5746": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-6258": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-6259": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-6260": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-6261": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6262": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-6263": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "CA-6264": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
  "US-6457": {
   "tag": "blocked (4 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
   "step_reached": "L5",
@@ -4903,11 +5478,6 @@
   "step_reached": "L5",
   "date": "2026-11-03"
  },
- "CA-6448": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
  "US-5805": {
   "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
   "step_reached": "W-10",
@@ -5060,6 +5630,86 @@
  },
  "CA-1368": {
   "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11257": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11379": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11382": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11383": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11416": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11418": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11419": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11420": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11421": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11424": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11425": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11426": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11464": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11516": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11517": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-11518": {
+  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
   "step_reached": "L5",
   "date": "2026-11-04"
  },
@@ -5654,6 +6304,101 @@
   "step_reached": "L5",
   "date": "2026-11-04"
  },
+ "US-12799": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12800": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12801": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-0886": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12234": {
+  "tag": "UNLIKELY only (evidence, never a question): other kind of place (wild_river vs trail)",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12235": {
+  "tag": "UNLIKELY only (evidence, never a question): other kind of place (wild_river vs trail)",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6299": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6300": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6301": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6302": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6303": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6304": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6305": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6306": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6307": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6308": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6309": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-6330": {
+  "tag": "blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-10423": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
  "CA-4897": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
   "step_reached": "L0",
@@ -5781,63 +6526,8 @@
   "step_reached": "L5",
   "date": "2026-11-02"
  },
- "CA-4962": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-5029": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
  "CA-5069": {
   "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "US-5831": {
-  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-0971": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-2299": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-1037": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-1736": {
-  "tag": "UNLIKELY only (evidence, never a question): other kind of place (nature_reserve vs wilderness)",
-  "step_reached": "L0",
-  "date": "2026-11-02"
- },
- "CA-1851": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-6224": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-6567": {
-  "tag": "UNLIKELY only (evidence, never a question): other kind of place (state_park vs wilderness)",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-6569": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
   "step_reached": "L5",
   "date": "2026-11-02"
  },
@@ -5901,16 +6591,6 @@
   "step_reached": "L5",
   "date": "2026-11-02"
  },
- "CA-6519": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-6520": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
  "CA-6113": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
   "step_reached": "L5",
@@ -5950,161 +6630,6 @@
   "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
   "step_reached": "L5",
   "date": "2026-11-02"
- },
- "US-13484": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-1620": {
-  "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-1036": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-2264": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-5935": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-02"
- },
- "CA-0844": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-0845": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4602": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4607": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4610": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4613": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4614": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4615": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4624": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4627": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-4628": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5449": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5452": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5453": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5737": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5738": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5743": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5744": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5745": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-5746": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-6258": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-6259": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-6260": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-6262": {
-  "tag": "no-layer: no official record at the pin or by name",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-6263": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
- "CA-6264": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-03"
  },
  "CA-6265": {
   "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
@@ -6554,10 +7079,55 @@
   "step_reached": "L5",
   "date": "2026-11-04"
  },
- "US-13239": {
-  "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
-  "step_reached": "W-10",
-  "date": "2026-11-02"
+ "US-6473": {
+  "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
+  "step_reached": "L0",
+  "date": "2026-11-04"
+ },
+ "US-10268": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-10427": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7809": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7819": {
+  "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-7831": {
+  "tag": "no-layer: no official record at the pin or by name",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3297": {
+  "tag": "blocked (4 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3476": {
+  "tag": "blocked (4 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "CA-3596": {
+  "tag": "blocked (4 sources could not be read, e.g. blocked (robots)); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-04"
+ },
+ "US-12315": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-04"
  },
  "CA-5207": {
   "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
