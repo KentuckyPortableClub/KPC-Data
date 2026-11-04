@@ -30,8 +30,11 @@ on:
       - 'tests/fixtures/pile_solver/**'
   # schedule:   # NEEDS BRANDON'S OK. Not needed today: the B3 copy above already brings each new key build within the hour.
   #   - cron: '23 */6 * * *'
-permissions:
-  contents: write
+permissions:   # review (Nov 4): read-only by default; only the solve job (one save per run) may write
+  contents: read
+defaults:
+  run:
+    shell: bash   # bash -eo pipefail: a solver crash under '| tee' fails the step (and nothing is saved)
 concurrency:
   group: kpc-pile-solver
   cancel-in-progress: false
@@ -40,6 +43,8 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 290
+    permissions:
+      contents: write
     env:
       LINKS: ../links
       MODE: ${{ github.event_name == 'workflow_run' && 'auto' || 'backfill' }}
@@ -47,12 +52,6 @@ jobs:
       - uses: actions/checkout@v5
         with:
           path: kpcdata
-      - name: Keys, overrides and the pre-check (KPC-Links, read-only)
-        uses: actions/checkout@v5
-        with:
-          repository: KentuckyPortableClub/KPC-Links
-          path: links
-          persist-credentials: false
       - name: Automatic mode is off until Brandon's GO (ends in seconds)
         id: gate
         run: |
@@ -61,6 +60,13 @@ jobs:
             A=$(python3 -c "import json;print(1 if json.load(open('data/pile-solver/state.json')).get('auto') is True else 0)" 2>/dev/null || echo 0)
             if [ "$A" != 1 ]; then echo "::notice title=Pile solver::automatic mode is off (data/pile-solver/state.json auto != true): nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; fi
           fi
+      - name: Keys, overrides and the pre-check (KPC-Links, read-only)
+        if: steps.gate.outputs.skip != '1'
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
       - name: Selftest (offline)
         if: steps.gate.outputs.skip != '1'
         run: cd kpcdata && python3 .github/scripts/kpc_pile_solver.py --selftest
@@ -76,10 +82,11 @@ jobs:
         env:
           AREAS: ${{ inputs.areas }}
           MAX_PARKS: ${{ inputs.max_parks || '0' }}
+          CHUNKS: ${{ inputs.chunks || '1' }}
           MINUTES: '50'
         run: |
           cd kpcdata
-          N="${{ inputs.chunks || 1 }}"; [ "$N" -gt 5 ] 2>/dev/null && N=5; [ "$N" -lt 1 ] 2>/dev/null && N=1
+          N="$CHUNKS"; case "$N" in ''|*[!0-9]*) N=1 ;; esac; [ "$N" -gt 5 ] && N=5; [ "$N" -lt 1 ] && N=1
           for i in $(seq 1 "$N"); do
             echo "::group::chunk $i of $N"
             python3 .github/scripts/kpc_pile_solver.py | tee "$RUNNER_TEMP/solver.log"
@@ -107,6 +114,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           path: kpcdata
+          persist-credentials: false
       - uses: actions/checkout@v5
         with:
           repository: KentuckyPortableClub/KPC-Links
