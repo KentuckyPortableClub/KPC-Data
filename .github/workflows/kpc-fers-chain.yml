@@ -1,0 +1,69 @@
+name: KPC 2-fer chain after a new key (hidden)
+# Nov 4 (per Brandon via Super Head Bot (relayed), 4:55 AM CST Nov 4): after the merge the whole chain runs by itself, NO new cron, only workflow_run:
+#   1 KPC-Links 'KPC US answer key' (its own nightly; builds ALL states on new rules: links-04)
+#   2 KPC-Links 'KPC key check (after a key build)' (links-01, kpc-key-postcheck.yml; workflow_run on the 3 keys)
+#   3 KPC-Data 'KPC copy site data to KPC-Data (Step B3)' (its own hourly cron) brings the build over, HELD in data/waiting/in
+#   4 THIS workflow (workflow_run on 3): kpc_fers_chain_plan.py picks the areas of a NEW current-rules, post-checked build
+#     (map-audit gate KPC_FERS_CHAIN_GATE: default OFF for testing, it turns ON by itself and stays on: kpc_fers_chain_gate.py;
+#     per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4)
+#   5 kpc-fers-line.yml (workflow_call, key=build): its 'preline' job = the 2-fer pre-line check (Brandon, directly (Mapping chat),
+#     4:52 AM CST Nov 4); HOLD = the line does not build;
+#     GO = fetcher -> worker -> checker; the checker diverts the 2-fers into data/waiting/in (HELD, kpc_waiting_room.py divert)
+#   6 kpc-fers-postline.yml (workflow_run on this workflow + the line): the read-only post-line check for Quality
+# Nothing here releases or publishes: no kpc_release_approved.py, no approved.json, no KPC-Links kpc-fers-publish.yml (and it could
+# not: that workflow is in another repo and this token cannot start it). The release hold stays: a person (Brandon / KZ4CP) signs off first.
+on:
+  workflow_run:
+    workflows: ['KPC copy site data to KPC-Data (Step B3)']
+    types: [completed]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-fers-chain
+  cancel-in-progress: false
+jobs:
+  plan:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      run: ${{ steps.plan.outputs.run }}
+      areas: ${{ steps.plan.outputs.areas }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Which areas get a 2-fer line on the new key build
+        id: plan
+        env:
+          # repo variable KPC_FERS_CHAIN_GATE = on | off, set BY HAND (always wins: Brandon's off). Unset = 'on' once the gate turned on by
+          # itself (data/status/fers-chain/gate.json: a Brandon / KZ4CP GOOD on a 2-fer run, or 3 clean checks in a row), else
+          # GATE_DEFAULT = 'off' in kpc_fers_chain_plan.py (per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4)
+          GATE: ${{ vars.KPC_FERS_CHAIN_GATE }}
+        run: DATA=. LINKS=links python3 .github/scripts/kpc_fers_chain_plan.py
+      - name: Remember the areas started and the gate state (only data/status/fers-chain)
+        if: ${{ steps.plan.outputs.run == 'yes' || steps.plan.outputs.gate_changed == 'yes' }}
+        run: |
+          bash links/.github/scripts/kpc_push_data.sh . "2-fer chain: areas started on a new key build / gate state" data/status/fers-chain || echo "::warning title=2-fer chain::seen list not saved"
+  line:
+    needs: plan
+    if: ${{ needs.plan.outputs.run == 'yes' }}
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        area: ${{ fromJSON(needs.plan.outputs.areas) }}
+    uses: ./.github/workflows/kpc-fers-line.yml
+    with:
+      states: ${{ matrix.area.states }}
+      tag: ${{ matrix.area.tag }}
+      stage: all
+      minutes: '280'
+      parks: ''
+      next: ''
+      key: build
+      force: 'no'

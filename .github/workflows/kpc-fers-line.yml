@@ -31,6 +31,12 @@ on:
       next:
         description: 'Optional: "<states> <tag>" (e.g. "US-OH oh") = start that area by itself once this fetcher''s bundle is safely up (two at once, no more)'
         default: ''
+      key:
+        description: 'Key to measure on: live (KPC-Data, default) or build (the new KPC-Links build, still held; the chain uses this)'
+        default: 'live'
+      force:
+        description: 'yes = build even when the pre-line check says HOLD (by hand only; the report says FORCED)'
+        default: 'no'
   workflow_call:
     inputs:
       states:
@@ -51,6 +57,12 @@ on:
       next:
         type: string
         default: ''
+      key:
+        type: string
+        default: 'live'
+      force:
+        type: string
+        default: 'no'
 permissions:
   contents: write
   actions: write
@@ -68,9 +80,47 @@ env:
   WATER_STORE: bundle/water   # Oct 28 (HQ): the saved USGS water copy (kept between nights as release asset water-<tag>.tar.gz)
   WATER_ASSET: water-${{ inputs.tag }}.tar.gz
   PARKS: ${{ inputs.parks }}   # Oct 28: a small batch (kpc_fers.py PARKS); empty = the whole area
+  KEY_SOURCE: ${{ inputs.key == 'build' && 'build' || 'live' }}   # Nov 4: live (default) or build (the chain)
+  BUILD_KIND: ${{ startsWith(inputs.states, 'CA-') && 'ca-key' || 'us-key' }}
 jobs:
+  preline:
+    # Nov 4 (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4: "2fer line review? Plan and install any pre and post line bots for
+    # the 2fer system."; the chain: per Brandon via Super Head Bot (relayed), 4:55 AM CST Nov 4): THE 2-FER PRE-LINE CHECK. It runs first, on every start (by hand, small batches, the chain, 'next').
+    # GO = the line builds. HOLD (or the check failing / missing) = fetcher, worker and checker do not run. Read-only on the data;
+    # it saves only its report (data/status/fers-preline/<tag>.json + .md). force=yes by hand builds anyway (the report says FORCED).
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+      verdict: ${{ steps.check.outputs.verdict }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+          fetch-depth: 0        # the 'inputs newer than the key' test reads overrides.json's commit time
+          filter: blob:none
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: 2-fer pre-line check (GO / HOLD)
+        id: check
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ ! -f .github/scripts/kpc_fers_preline.py ]; then
+            echo "::error title=2-fer pre-line check::KPC-Links has no kpc_fers_preline.py (links-05 not merged): HOLD, the line does not build"
+            echo "go=no" >> "$GITHUB_OUTPUT"; echo "verdict=HOLD" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          STATES="$STATES" TAG="$RUN_TAG" KEY_SOURCE="$KEY_SOURCE" DATA=kpcdata FORCE="$FORCE" python3 .github/scripts/kpc_fers_preline.py
+          grep -q '^go=yes' "$GITHUB_OUTPUT" || echo "::warning title=2-fer pre-line check::HOLD: the 2-fer line for $STATES ($RUN_TAG) does not build; see kpcdata/data/status/fers-preline/$RUN_TAG.md"
+          [ -f "kpcdata/data/status/fers-preline/$RUN_TAG.md" ] && cat "kpcdata/data/status/fers-preline/$RUN_TAG.md" >> "$GITHUB_STEP_SUMMARY"; true
+      - name: Save the pre-line report (only data/status/fers-preline)
+        if: always()
+        run: bash .github/scripts/kpc_push_data.sh kpcdata "2-fer pre-line check ${{ inputs.tag }}" data/status/fers-preline || echo "::warning title=2-fer pre-line check::report not saved (the verdict above still holds)"
   fetcher:
-    if: ${{ inputs.stage == 'all' }}
+    needs: preline
+    if: ${{ needs.preline.outputs.go == 'yes' && inputs.stage == 'all' }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
@@ -86,7 +136,9 @@ jobs:
           bash .github/scripts/kpc_overlay.sh kpcdata
           # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
           # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
-          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+          # Nov 4 (the chain: per Brandon via Super Head Bot (relayed), 4:55 AM CST Nov 4): KEY_SOURCE=build = the chain measures on the NEW key build of
+          # BUILD_KIND (still held; its 2-fers are held with it); the other keys stay the live (last good) ones.
+          for k in us-key ca-key world-key; do [ "$KEY_SOURCE" = build ] && [ "$k" = "$BUILD_KIND" ] && continue; [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
       - name: Tools + saved outlines + this area's last 2-fer files
         id: kept_green_1
         continue-on-error: true
@@ -179,8 +231,8 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
   worker:
-    needs: fetcher
-    if: ${{ always() && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success') }}
+    needs: [preline, fetcher]
+    if: ${{ always() && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success') }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
@@ -196,7 +248,9 @@ jobs:
           bash .github/scripts/kpc_overlay.sh kpcdata
           # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
           # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
-          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+          # Nov 4 (the chain: per Brandon via Super Head Bot (relayed), 4:55 AM CST Nov 4): KEY_SOURCE=build = the chain measures on the NEW key build of
+          # BUILD_KIND (still held; its 2-fers are held with it); the other keys stay the live (last good) ones.
+          for k in us-key ca-key world-key; do [ "$KEY_SOURCE" = build ] && [ "$k" = "$BUILD_KIND" ] && continue; [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
       - name: Tools + the bundle (no bundle = a red run)
         run: |
           pip install -q numpy opencv-python-headless || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
@@ -268,8 +322,8 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
   checker:
-    needs: [fetcher, worker]
-    if: ${{ always() && (inputs.stage == 'checker' || needs.worker.result == 'success') }}
+    needs: [preline, fetcher, worker]
+    if: ${{ always() && needs.preline.outputs.go == 'yes' && (inputs.stage == 'checker' || needs.worker.result == 'success') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -285,7 +339,9 @@ jobs:
           bash .github/scripts/kpc_overlay.sh kpcdata
           # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
           # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
-          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+          # Nov 4 (the chain: per Brandon via Super Head Bot (relayed), 4:55 AM CST Nov 4): KEY_SOURCE=build = the chain measures on the NEW key build of
+          # BUILD_KIND (still held; its 2-fers are held with it); the other keys stay the live (last good) ones.
+          for k in us-key ca-key world-key; do [ "$KEY_SOURCE" = build ] && [ "$k" = "$BUILD_KIND" ] && continue; [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
       - name: The worker's bundle (no bundle = a red run)
         run: |
           mkdir -p data/fers
@@ -302,7 +358,7 @@ jobs:
             # Oct 29 11:10 PM (Step 0 of the automation plan, Brandon 'You do step 0'): the checker measures against the LIVE key =
             # KPC-Data's copy (chat 10's waiting room holds unapproved builds in data/waiting/in/; KPC-Links data/us-key may be a build
             # chat 11 has not passed yet). The 7:05 PM 'KPC-Links first' line was for the one evening the live copy was frozen.
-            cp -f kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true   # ok: nothing to do is fine
+            [ "$KEY_SOURCE" = build ] || cp -f kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true   # ok: nothing to do is fine (Nov 4: KEY_SOURCE=build keeps the new build)
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "$st.json.gz" -D cache/us --clobber || echo "::warning title=download::a download failed (exit $?); results may use old or missing files"
           done
       - name: Check
