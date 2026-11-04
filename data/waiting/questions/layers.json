@@ -1,7 +1,7 @@
 {
  "about": "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
  "built": "2026-11-04",
- "open": 521,
+ "open": 488,
  "questions": [
   {
    "area": "CA-AB",
@@ -638016,16 +638016,19 @@
    "record_link": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?objectIds=4052&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12830",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "WA",
    "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
    "name_field": "NAME",
    "licence": "",
    "t1_band": "WEAK",
-   "t1_why": "WEAK: the names only partly match (0.56); the sizes are 5.1x apart. Pin inside the record. Best name match 0.56 on record name 'Old Ruby State Park Heritage Site'. Record about 6.9 acres, the park pag"
+   "t1_why": "WEAK: the names only partly match (0.56); the sizes are 5.1x apart. Pin inside the record. Best name match 0.56 on record name 'Old Ruby State Park Heritage Site'. Record about 6.9 acres, the park pag",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "US-WI",
@@ -638110,7 +638113,8 @@
    "licence": "",
    "key_now": "the park already has an outline: record 6992 (Jackson Marsh); is this record BETTER?",
    "t1_band": "CONFLICT",
-   "t1_why": "CONFLICT: the POTA pin is 55 m outside the record. Pin 55 m from the record. Best name match 1.00 on record name 'Jackson Marsh'. Record about 590.4 acres; no park size found to compare."
+   "t1_why": "CONFLICT: the POTA pin is 55 m outside the record. Pin 55 m from the record. Best name match 1.00 on record name 'Jackson Marsh'. Record about 590.4 acres; no park size found to compare.",
+   "auto_recheck": "TO CHAT 11: the park already has an official outline (this could replace it)"
   },
   {
    "area": "US-WI",
@@ -638156,9 +638160,9 @@
    "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?objectIds=23634&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8668",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (AUTO-1C, trusted collector)",
+   "how": "AUTO-1C (Brandon Nov 1 2:23 PM): SURE name match, pin inside (or within 100 m), record under this park only, size within 10x the official size, no outline replaced, no NO before",
    "source": "layer collector (outside research Oct 30)",
    "st": "WI",
    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2",
@@ -638166,7 +638170,10 @@
    "licence": "",
    "key_now": "the park already has an outline: record 72052 (Waterloo Wildlife Area) + 1 more; is this record BETTER?",
    "t1_band": "CONFLICT",
-   "t1_why": "CONFLICT: the POTA pin is 1 m outside the record. Pin 1 m from the record. Best name match 1.00 on record name 'Waterloo Prairie'. Record about 220.8 acres; no park size found to compare."
+   "t1_why": "CONFLICT: the POTA pin is 1 m outside the record. Pin 1 m from the record. Best name match 1.00 on record name 'Waterloo Prairie'. Record about 220.8 acres; no park size found to compare.",
+   "auto": true,
+   "auto_recheck": null,
+   "sample_for_chat11": false
   },
   {
    "area": "US-WI",
@@ -638195,5 +638202,28 @@
    "t1_band": "WEAK",
    "t1_why": "WEAK: the names only partly match (0.80). Pin inside the record. Best name match 0.80 on record name 'Casey Lake SHA-WPRA'. Record about 359.6 acres, the park page https://dnr.wisconsin.gov/topic/Land"
   }
- ]
+ ],
+ "auto_yes": 743,
+ "auto_1c": {
+  "date": "2026-11-04",
+  "released": 2,
+  "sampled": 68,
+  "to_chat11": 73,
+  "likely_open": 415,
+  "paused_layers": 0,
+  "why": {
+   "the park is a historic kind the record does not na": 25,
+   "the park is a monument natural kind the record doe": 9,
+   "the park is a historical kind the record does not ": 6,
+   "the park is a monument kind the record does not na": 6,
+   "the park is a nature kind the record does not name": 5,
+   "the record is a nationalpark": 4,
+   "the record is offered to more than one park": 4,
+   "the park is a protected kind the record does not n": 2,
+   "the record is a naturschutzgebiet": 2,
+   "the park is a coastal kind the record does not nam": 2,
+   "the pin is 109 m outside the record": 1,
+   "the pin is 120 m outside the record": 1
+  }
+ }
 }

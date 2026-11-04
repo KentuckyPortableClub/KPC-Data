@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 178 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 270 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -57,15 +57,65 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 2 | data/fers/US-WI.json | HOLD | F-2 candidates 27 -> 3 (over 30% change); F-2 NOT SURE 8 -> 105 (over 30% change); F-2 only 3 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer mi |
 | 2026-11-02 | 2 | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-02 | 2 | data/fers/US-WY.json.gz | HOLD | F-2 candidates 45 -> 72 (over 30% change); F-2 NOT SURE 46 -> 12 (over 30% change); F-2 only 29 of 45 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 43 new candi |
-| 2026-11-04 | 0 | data/ca-key/CA-NB.json | PASS |  |
-| 2026-11-04 | 0 | data/ca-key/CA-NL.json | PASS |  |
-| 2026-11-04 | 0 | data/ca-key/CA-NS.json | PASS |  |
-| 2026-11-04 | 0 | data/ca-key/CA-PE.json | PASS |  |
 | 2026-11-04 | 0 | data/campinfo/US-AR.json | HOLD | F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites |
-| 2026-11-04 | 0 | data/docs/US-IN.json | HOLD | F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla |
+| 2026-11-04 | 0 | data/docs/US-AK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-AL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-AR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-AZ.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-CA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-CO.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-CT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-DC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-DE.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-FL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-GA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-HI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-IN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-KS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-LA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-MA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-MD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-MI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-MN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-MS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-MT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-ND.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NE.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NJ.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NM.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-NY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-OH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-OK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-OR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-PA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-RI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-SC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-SD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-TN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-TX.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-UT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-04 | 0 | data/docs/US-VA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/ca-key/CA-AB.json | RELEASE |  |
+| 2026-11-04 | 0 | data/docs/US-VT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-WA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-WI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-WV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-04 | 0 | data/us-key/US-NV.json | HOLD | F-O1 outlines 226 -> 223 (more than 1% lost) |
+| ? | ? | data/ca-key/CA-AB.json | HOLD | F-O4 2 of 2 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-3156, CA-2971 |
+| ? | ? | data/ca-key/CA-BC.json | HOLD | F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-3854, CA-3475, CA-4112 |
+| ? | ? | data/ca-key/CA-NB.json | PASS |  |
+| ? | ? | data/ca-key/CA-NL.json | PASS |  |
+| ? | ? | data/ca-key/CA-NS.json | PASS |  |
+| ? | ? | data/ca-key/CA-NT.json | PASS |  |
+| ? | ? | data/ca-key/CA-NU.json | PASS |  |
 | ? | ? | data/ca-key/CA-ON.json | PASS |  |
+| ? | ? | data/ca-key/CA-PE.json | PASS |  |
+| ? | ? | data/ca-key/CA-QC.json | PASS |  |
+| ? | ? | data/ca-key/CA-SK.json | RELEASE |  |
+| ? | ? | data/ca-key/CA-YT.json | RELEASE |  |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-DE.json | PASS |  |
 | ? | ? | data/campinfo/US-FL.json | PASS |  |
@@ -80,49 +130,36 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-TX.json | PASS |  |
 | ? | ? | data/campinfo/US-UT.json | PASS |  |
 | ? | ? | data/campinfo/US-WY.json | PASS |  |
-| ? | ? | data/docs/US-AK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-AL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-AR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-AZ.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-CA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-CO.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-CT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-DC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-DE.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-FL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-GA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-HI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-KS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-LA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-MA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-MD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-MI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-MN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-MS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-MT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-ND.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NE.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NJ.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NM.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-NY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-OH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-OK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-OR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-PA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-RI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-SC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-SD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-TN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-TX.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-UT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-VT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-WA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-WI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-WV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| ? | ? | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| ? | ? | data/campstate/US-AK.json | PASS |  |
+| ? | ? | data/campstate/US-AZ.json | PASS |  |
+| ? | ? | data/campstate/US-CA.json | PASS |  |
+| ? | ? | data/campstate/US-CO.json | PASS |  |
+| ? | ? | data/campstate/US-FL.json | PASS |  |
+| ? | ? | data/campstate/US-GA.json | PASS |  |
+| ? | ? | data/campstate/US-HI.json | PASS |  |
+| ? | ? | data/campstate/US-IA.json | PASS |  |
+| ? | ? | data/campstate/US-ID.json | PASS |  |
+| ? | ? | data/campstate/US-IN.json | PASS |  |
+| ? | ? | data/campstate/US-MI.json | PASS |  |
+| ? | ? | data/campstate/US-MN.json | PASS |  |
+| ? | ? | data/campstate/US-MT.json | PASS |  |
+| ? | ? | data/campstate/US-ND.json | PASS |  |
+| ? | ? | data/campstate/US-NE.json | PASS |  |
+| ? | ? | data/campstate/US-NH.json | PASS |  |
+| ? | ? | data/campstate/US-NM.json | PASS |  |
+| ? | ? | data/campstate/US-NV.json | PASS |  |
+| ? | ? | data/campstate/US-NY.json | PASS |  |
+| ? | ? | data/campstate/US-OH.json | PASS |  |
+| ? | ? | data/campstate/US-OR.json | PASS |  |
+| ? | ? | data/campstate/US-PA.json | PASS |  |
+| ? | ? | data/campstate/US-SD.json | PASS |  |
+| ? | ? | data/campstate/US-TN.json | PASS |  |
+| ? | ? | data/campstate/US-TX.json | PASS |  |
+| ? | ? | data/campstate/US-UT.json | PASS |  |
+| ? | ? | data/campstate/US-VA.json | PASS |  |
+| ? | ? | data/campstate/US-VT.json | PASS |  |
+| ? | ? | data/campstate/US-WA.json | PASS |  |
+| ? | ? | data/campstate/US-WY.json | PASS |  |
 | ? | ? | data/fers/CA-AB.json.gz | PASS |  |
 | ? | ? | data/fers/CA-NT.json | PASS |  |
 | ? | ? | data/fers/CA-QC.json.gz | PASS |  |
@@ -140,6 +177,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-10660.json | PASS |  |
 | ? | ? | data/trails/US-10914.json | PASS |  |
 | ? | ? | data/trails/US-10915.json | PASS |  |
+| ? | ? | data/trails/US-10917.json | PASS |  |
 | ? | ? | data/trails/US-13195.json | PASS |  |
 | ? | ? | data/trails/US-13624.json | PASS |  |
 | ? | ? | data/trails/US-13626.json | PASS |  |
@@ -148,9 +186,63 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-8437.json | PASS |  |
 | ? | ? | data/trails/US-8617.json | PASS |  |
 | ? | ? | data/trails/US-9203.json | PASS |  |
+| ? | ? | data/us-key/US-AK.json | PASS |  |
+| ? | ? | data/us-key/US-AL.json | PASS |  |
+| ? | ? | data/us-key/US-AR.json | PASS |  |
+| ? | ? | data/us-key/US-AZ.json | RELEASE |  |
+| ? | ? | data/us-key/US-CA.json | PASS |  |
+| ? | ? | data/us-key/US-CO.json | PASS |  |
+| ? | ? | data/us-key/US-CT.json | PASS |  |
+| ? | ? | data/us-key/US-DC.json | RELEASE |  |
+| ? | ? | data/us-key/US-DE.json | PASS |  |
+| ? | ? | data/us-key/US-FL.json | PASS |  |
+| ? | ? | data/us-key/US-GA.json | PASS |  |
+| ? | ? | data/us-key/US-HI.json | RELEASE |  |
+| ? | ? | data/us-key/US-IA.json | PASS |  |
+| ? | ? | data/us-key/US-ID.json | HOLD | F-O4 4 of 39 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. US-4398, US-4505, US-4387 |
+| ? | ? | data/us-key/US-IL.json | PASS |  |
+| ? | ? | data/us-key/US-IN.json | PASS |  |
+| ? | ? | data/us-key/US-KS.json | PASS |  |
+| ? | ? | data/us-key/US-LA.json | RELEASE |  |
+| ? | ? | data/us-key/US-MA.json | PASS |  |
+| ? | ? | data/us-key/US-MD.json | PASS |  |
+| ? | ? | data/us-key/US-ME.json | PASS |  |
+| ? | ? | data/us-key/US-MI.json | PASS |  |
+| ? | ? | data/us-key/US-MN.json | PASS |  |
+| ? | ? | data/us-key/US-MO.json | PASS |  |
+| ? | ? | data/us-key/US-MS.json | RELEASE |  |
+| ? | ? | data/us-key/US-MT.json | PASS |  |
+| ? | ? | data/us-key/US-NC.json | PASS |  |
+| ? | ? | data/us-key/US-ND.json | PASS |  |
+| ? | ? | data/us-key/US-NE.json | PASS |  |
+| ? | ? | data/us-key/US-NH.json | PASS |  |
+| ? | ? | data/us-key/US-NJ.json | PASS |  |
+| ? | ? | data/us-key/US-NM.json | PASS |  |
+| ? | ? | data/us-key/US-NY.json | PASS |  |
+| ? | ? | data/us-key/US-OH.json | PASS |  |
+| ? | ? | data/us-key/US-OK.json | RELEASE |  |
+| ? | ? | data/us-key/US-OR.json | PASS |  |
+| ? | ? | data/us-key/US-PA.json | PASS |  |
+| ? | ? | data/us-key/US-RI.json | PASS |  |
+| ? | ? | data/us-key/US-SC.json | PASS |  |
+| ? | ? | data/us-key/US-SD.json | PASS |  |
+| ? | ? | data/us-key/US-TN.json | PASS |  |
+| ? | ? | data/us-key/US-TX.json | PASS |  |
+| ? | ? | data/us-key/US-UT.json | PASS |  |
+| ? | ? | data/us-key/US-VA.json | RELEASE |  |
+| ? | ? | data/us-key/US-VT.json | PASS |  |
+| ? | ? | data/us-key/US-WA.json | PASS |  |
+| ? | ? | data/us-key/US-WI.json | PASS |  |
+| ? | ? | data/us-key/US-WV.json | RELEASE |  |
+| ? | ? | data/us-key/US-WY.json | PASS |  |
 | 2026-11-03 | 1 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | 2026-11-04 | 0 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| ? | ? | data/ca-key/answers-applied.json | PASS |  |
+| ? | ? | data/ca-key/hardlook-joins.json | PASS |  |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
+| ? | ? | data/ca-key/layers.json | RELEASE |  |
+| ? | ? | data/ca-key/overrides.json | PASS |  |
+| ? | ? | data/ca-key/refs.json | PASS |  |
 | ? | ? | data/ca-key/why-not.json | PASS |  |
 | ? | ? | data/trails/index-state.json | PASS |  |
 | ? | ? | data/us-key/answers-applied.json | PASS |  |
@@ -195,7 +287,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | gis-hunter.json | 8 | 638 |
 | hardlook.json | 0 | 0 |
 | key-pieces.json | 0 | 307 |
-| layers.json | 481 | 26415 |
+| layers.json | 488 | 26427 |
 | lost-finds-nov1.json | 0 | 0 |
 | map-audit.json | 132 | 2096 |
 | nearmiss-nov2.json | 45 | 45 |
