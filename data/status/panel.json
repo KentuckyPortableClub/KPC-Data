@@ -1,5 +1,5 @@
 {
- "made": "2026-11-04 09:47 UTC",
+ "made": "2026-11-04 10:55 UTC",
  "snap": {
   "date": "2026-11-04",
   "outlines": {
@@ -30,7 +30,7 @@
    },
    "gis-hunter": {
     "- YES": 84,
-    "rows": 650,
+    "rows": 638,
     "- NO": 339,
     "- NOT SURE": 16,
     "SURE YES": 8,
@@ -40,8 +40,7 @@
     "LIKELY NOT SURE": 8,
     "SURE NO": 2,
     "SURE bot YES": 136,
-    "SURE open": 7,
-    "LIKELY open": 13,
+    "LIKELY open": 8,
     "LIKELY bot YES": 2
    },
    "hardlook": {},
@@ -53,7 +52,7 @@
    },
    "layers": {
     "LIKELY YES": 2131,
-    "rows": 26398,
+    "rows": 26415,
     "LIKELY NO": 213,
     "SURE NO": 8,
     "LIKELY NOT SURE": 6711,
@@ -61,8 +60,8 @@
     "SURE NOT SURE": 526,
     "LIKELY bot YES": 12,
     "SURE bot YES": 720,
-    "SURE open": 72,
-    "LIKELY open": 398
+    "SURE open": 78,
+    "LIKELY open": 409
    },
    "lost-finds-nov1": {},
    "map-audit": {
@@ -116,7 +115,7 @@
     "READY": 2,
     "approved": 2
    },
-   "queue rows": 2141,
+   "queue rows": 2143,
    "collector": {
     "asked": 661,
     "failed": 196,
@@ -1392,9 +1391,9 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 42",
+   "areas": "left: 39",
    "last_run": "2026-11-04",
-   "made": "US-AR: done; {\"camps\": 229, \"needs_browser\": 0, \"needs_key\": 120, \"no_page\": 0, \"not_official\": 5, \"ok\": 21, \"other\": 81, \"resting\": 0, \"robots\": 2, \"with_booking\": 78, \"with_elevation\": 0, \"with_facts\": 61, \"with",
+   "made": "US-MN: done; {\"camps\": 227, \"needs_browser\": 0, \"needs_key\": 45, \"no_page\": 50, \"not_official\": 0, \"ok\": 34, \"other\": 98, \"resting\": 0, \"robots\": 0, \"with_booking\": 132, \"with_elevation\": 0, \"with_facts\": 128, \"wi",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41803459986",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1441,10 +1440,10 @@
   },
   "outside-KY trial (hours / closures, saved only)": {
    "areas": "",
-   "last_run": "2026-11-03",
-   "made": "3970 parks read, 919 with hours or fees; 180 closure items (branch trial-outside-ky)",
+   "last_run": "2026-11-04",
+   "made": "4927 parks read, 1183 with hours or fees; 183 closure items (branch trial-outside-ky)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41656177520",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41803467327",
    "waiting_on": "Sat Nov 7: short report -> chat 11 grades 12 rows -> Brandon decides"
   },
   "park detective": {
@@ -1473,7 +1472,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-04",
-   "made": "heartbeat 0 h old, 160 files waiting",
+   "made": "heartbeat 0 h old, 163 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
