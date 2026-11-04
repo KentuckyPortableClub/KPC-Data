@@ -3,13 +3,19 @@
  "countries": {
   "GB": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "started": "2026-11-04",
    "done": [
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_OtherData_WFL1/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_ProjectData_WFL1/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Declared_Areas_/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Region_10km_Buff_Coast_GDA1994/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Core_Data_Non_WMS/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Offshore_Wind_Farms_WGS84_UTM30N/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Subsea_Cables_GoBe_WGS84_UTM30N/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/UKSACswithMarineComponents/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer"
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+    "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/IHLS_Heatmap_2012to2025_Online/MapServer"
    ],
    "log": [
     {
@@ -24,7 +30,7 @@
     },
     {
      "step": "org",
-     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 3 services read"
+     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 9 services read"
     }
    ],
    "steps": [
@@ -510,7 +516,7 @@
   },
   "AU": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "started": "2026-11-04",
    "done": [
     "https://opendata.maps.vic.gov.au/geoserver/wfs",
     "https://public-services.slip.wa.gov.au/public/rest/services/Land_Monitor/Land_Monitor/MapServer",
@@ -1328,7 +1334,7 @@
   },
   "CH": {
    "status": "started",
-   "started": "2026-11-03",
+   "started": "2026-11-04",
    "done": [
     "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
    ],
@@ -1352,157 +1358,9 @@
   },
   "PT": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "started": "2026-11-04",
    "done": [
-    "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/Areas_classificadas/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Areas_classificadas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/AQUICULTURA_A_INTERIORES/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Anilhagem/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Atlas_Anfibios_Repteis/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Atlas_Bivalves/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Atlas_Morcegos/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/BIOGENETICAS/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/CAOP/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/CAOP/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/CO2_organico_solo/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/COS2018_ptcontinental/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Censo_Lobo_Iberico/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/DRCNF/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/DRCNF/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/FREG_PRIORITARIAS_DFCI/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Geoparques/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Geossitios/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IBAS_continente/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IFN/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IFN/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IFN_especies_florestais/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IFN_especies_invasoras/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IFN_reg_natural/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/II_Atlas_Aves_Nidificantes/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/IQV/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Indice_aridez/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Indice_aridez/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/LDI/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/LF_PT_RELEVO/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Locais_ICNF/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Locais_ICNF/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Locais_criticos/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/NEMATODO/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Obs_aves/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/PROF/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/PSRN2000_aves/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/PSRN2000_habitats/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/PSRN2000_habitats_especies/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Pontos_agua/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/RAMSAR/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/RN2000/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/RN2000/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/RNAP/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/RNAP/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Rede_primaria/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Rede_primaria/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Roazes_Sado/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/SIC/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/SIC/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/Suscetibilidade_desertificacao/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZEC/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZIF/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZIF/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZPE/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZPE/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZPP/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ZPR/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/ai_sapadores/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/aquariport/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/areas_ardidas/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/areas_ardidas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/cartogramas_igeo/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/censos_aves_aquaticas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/concessoes_pesca/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/habitats_zec/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/habitats_zec/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/limites_RNLS/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/livro_vermelho/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/lv_flora10k/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/peap/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/percursos_pedestres/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/percursos_pedestres/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/perigosidade_conjuntural/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/perigosidade_estrutural/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/popnrf_fundeadouros/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/pradarias_marinhas_sado/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/refloa_p/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/refloa_p/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/regioes_cinegeticas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/rel_art12_aves/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/rel_art12_aves/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/rel_art17_especies/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/rel_art17_especies/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/rel_art17_habitats/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/rp_florestais/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/BDG/zonas_caca/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/ClassesPerigosidadexUNM/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/ClassesPerigosidadexUNM/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/ESF_AtividadeDiaria/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/ESF_AtividadeDiaria/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/ExecucaoMaquinas/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/ExecucaoMaquinas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/FC_UNMaquinas_Requisicoes/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/LF_PT_COMBUSTIVEIS_FLORESTAIS/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/Layers_Raster_cartografia_maqrastos_web/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/PedidoTratores/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/PedidoTratores/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/TrabalhoRealizadoUNM/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/CNFSBF/TrabalhoRealizadoUNM/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/DFCI_PMDFCI_ext/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/DFCI_PMDFCI_ext/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/DFCI_Severidade/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/DFCI_Severidade/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/GIFR_AArdidas_IndicadorRetorno/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/HistoricoAreasArdidas/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/SF_RegistoAtividadeDiaria/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI/SF_RegistoAtividadeDiaria/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI_PSF/PSF_AI_BSF/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI_PSF/PSF_AI_ESF/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DFCI_PSF/PSF_O_EXEC_ext/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DGAPF/AlteracoesREFLOA/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/DGAPF/AlteracoesREFLOA/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DGAPF/GereAlertasREFLOA/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/DGAPF/GereAlertasREFLOA/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/Limite_PNLN/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/Limite_PNPG/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/Limite_PNSAC/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/Limite_PNSSM/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/PEAP_Work/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/PEAP_Work/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/PEPNSAC/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/PEPNSAC_AIE/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/DPOT/PS_PEPNPG/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/Filmagens/Filmagens_Fotos_AP/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/Geoprocessos/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Geoprocessos/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/AP_Cogestao_24Set/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/ATN__Registo_interno_view/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Bacias_hidrograficas_SNIRH/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/CED_2024/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/CE_Junho24/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Calendario__Portal_PRN/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Dados_SOSvespa/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Entidades_do_Plano_Nacional_do_Restauro_da_Natureza/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Formulário_VNP_Publico/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Fotos_da_Galeria_do_Portal_do_Restauro_da_Natureza/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/GIP/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/IFN_regeneracao_natural/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Hosted/Lei59_Kristin_dadosBase2/FeatureServer",
-    "https://sigservices.icnf.pt/server/rest/services/Temas_Perímetro_Rega_Mira/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer"
+    "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer"
    ],
    "log": [
     {
@@ -1512,7 +1370,7 @@
     },
     {
      "step": "server",
-     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 146 services read"
+     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 0 services read"
     }
    ],
    "steps": [
@@ -1995,8 +1853,8 @@
    "finished": "2026-10-30"
   },
   "DK": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "status": "done",
+   "started": "2026-11-04",
    "done": [
     "https://kort.vd.dk/server/rest/services/Administrative_graenser/Enterpriseområder/MapServer",
     "https://kort.vd.dk/server/rest/services/Administrative_graenser/Jordmodtager/MapServer",
@@ -2057,18 +1915,6 @@
     "https://kort.vd.dk/server/rest/services/Grunddata/Søbeskyttelseslinjer/MapServer",
     "https://kort.vd.dk/server/rest/services/Grunddata/VP3_Vandomraadeplaner/MapServer",
     "https://kort.vd.dk/server/rest/services/Grunddata/Åbeskyttelseslinjer/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/2D_kort/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/6470_24_04_2026_tif/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/MapServer",
     "https://kort.vd.dk/server/rest/services/MKV_E1260_Data/MapServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/MapServer"
@@ -2081,25 +1927,112 @@
     },
     {
      "step": "server",
-     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 52 services read"
+     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 33 services read"
+    },
+    {
+     "agol": "nationalpark",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "naturpark",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "fredning",
+     "hits": 1,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "fredet område",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 11,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "statsskov",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
-    "known"
-   ]
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-11-04"
   },
   "IE": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "status": "done",
+   "started": "2026-11-04",
    "done": [
+    "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/FeatureServer",
+    "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/MapServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(August_2026)_for_the_United_Kingdom_(Hosted_Table)/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(May_2026)_for_the_United_Kingdom/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_AUG_2025_UK/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_NOV_2025_UK/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONS_Postcode_Directory_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Access_App_Forest_Entrances/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/COILLTE_FELLING_LICENCES/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_2021_BeeKeeper_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Area/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Areas/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Forest_Road_Dataset/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Harvest_Units/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Life_and_Millennium_Sites/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Wind_Damage_Assessment/FeatureServer",
-    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer"
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Clearfell_2019/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Thinnings_2019/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Mountain_Bike_Pole_Emergency_Locations/FeatureServer",
+    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
+    "https://utility.arcgis.com/usrsvcs/servers/0016a8e9782b461e96523ba448f03353/rest/services/MapGenie25InchITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/0a4856ab7fe64aaf96ccc320d0dc891b/rest/services/MapGenieImagery1996to2000ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/1700ebb080834186a4c278aa2d26c6e8/rest/services/MapGenieImagery2006to2012ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/46d11ec3f32f4b7c870c6fdecca4b077/rest/services/MapGenie6InchLastEditionBlackWhiteITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/4fe3ad7eda07411480dd23a0e3655cd4/rest/services/MapGenieDiscoveryHillshadeITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/5c779a7b5bd446bf802ca512d82aa335/rest/services/MapGenieImagery1995ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/67013604919e4140bca952a7d3fa291a/rest/services/MapGenieDigitalGlobeImagery2011to2013ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/a8b10e1feb7e4a90a7db85610c62b9ad/rest/services/MapGenie6InchFirstEditionColourITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/bb5f042a35f843498d1c12f07aae7b17/rest/services/MapGenieDiscoveryITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/dc0caa7a62cd4b1cac05469a0bd4516f/rest/services/MapGenieImagery2001to2005ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/ec5779ea27b643a4bcbb69e83ddb483a/rest/services/MapGeniePremiumITM/MapServer"
    ],
    "log": [
     {
@@ -2109,14 +2042,138 @@
     },
     {
      "step": "org",
-     "what": "org 6LSAdqgf43oKRpP6 (): 6 services read"
+     "what": "org 6LSAdqgf43oKRpP6 (): 13 services read"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "National Park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "Nature Reserve",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "SAC",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "SPA",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "National Park",
+     "hits": 50,
+     "read": 6,
+     "rejected_orgs": [
+      [
+       "?",
+       40
+      ],
+      [
+       "Esri Ireland Data",
+       4
+      ]
+     ]
+    },
+    {
+     "agol": "Nature Reserve",
+     "hits": 50,
+     "read": 1,
+     "rejected_orgs": [
+      [
+       "?",
+       46
+      ],
+      [
+       "DCC Public GIS Portal",
+       2
+      ],
+      [
+       "Esri Ireland Data",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "SAC",
+     "hits": 50,
+     "read": 1,
+     "rejected_orgs": [
+      [
+       "?",
+       45
+      ],
+      [
+       "DCC Public GIS Portal",
+       2
+      ],
+      [
+       "Esri Ireland Data",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "SPA",
+     "hits": 50,
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       43
+      ],
+      [
+       "DCC Public GIS Portal",
+       2
+      ],
+      [
+       "Esri Ireland Data",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "NHA",
+     "hits": 18,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       17
+      ],
+      [
+       "Esri Ireland Data",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "Coillte forest",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     }
    ],
    "steps": [
     "known",
     "servers",
-    "wfs"
-   ]
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-11-04"
   },
   "SK": {
    "status": "done",
@@ -2236,81 +2293,18 @@
   },
   "FI": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "started": "2026-11-04",
    "done": [
-    "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_Europe/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_bedrock_surface_B/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_3_Geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_Geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/EST_1GE_surface/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera07112018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera20210322/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera22/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera_NO_CAHE/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/GeophysicMaps/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd_v4/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_MASTER/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_v5/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fods_lithology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_aeras/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_areas/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS_test/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology2/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu1000/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu250_02072018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasukairaus02072018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasumuutMustaliuske/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maaperaNew25092017/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/GTK_Bedrock_and_Superficial_Geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/pangeo/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v11/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v12/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/geology_geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/LaosOneGeology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210429_KorkeusAineisto/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210603Maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022_Merenpohja/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2023Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maapeitepaksuus_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/kunnat/MapServer",
-    "https://paikkatieto.ymparisto.fi/geoserver/wfs"
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer"
    ],
    "log": [
     {
      "step": "known",
      "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
      "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 47 services read"
     }
    ],
-   "steps": [
-    "known"
-   ]
+   "steps": []
   },
   "HU": {
    "status": "nothing seeded: not searched (EEA lead only)",
@@ -2614,210 +2608,16 @@
   },
   "NZ": {
    "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "started": "2026-11-04",
    "done": [
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services/DOC_Public_Conservation_Land/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022CatlinsAllLocationsIncOtago/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022NZSLCatlinsLandRange/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022NZSLCatlinsMarineRange/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/AATH_Concession_Locations_view/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ADMIN_TONGATAUPO_FisheryArea_HFLr/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ATES_Avalanche_Classification/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Antipodean_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Antipodean_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Antipodean_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Atlantic_Yellow_nosed_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Atlantic_Yellow_nosed_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Atlantic_Yellow_nosed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_Heritage_Data_Operation_Endurance_lowres_photo/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/BFOB_Actuals_2014_2017/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_Petrel_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_Petrel_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_Petrel_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_browed_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_browed_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_browed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_footed_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_footed_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_footed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Campbell_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Campbell_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Campbell_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Catlins_New_Zealand_sea_lion_satellite_tracking_locations_2019/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Catlins_New_Zealand_sea_lion_winter_home_range_2019/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chamois_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chatham_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chatham_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chatham_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Covenant_Areas/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DIISE_NZEradIsl_WGS84_20200211/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DIISE_SubantsErad_WGS84_20200128/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCFreedomCamping/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Air_Access_Zones/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Visitor_Management_Zones/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Campsites_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Campsites_Open_Data/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Ecosystems_Management_Units/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_FreedomCampingSites/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_HaurakiGulf_TikapaMoana_MarineProtectionAct_HFV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Huts_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Huts_Open_Data/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Lodges_Cabins_Cottages_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Lodges_Cabins_Open_Data/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Geospatial_Inventory/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Mammal_Sanctuaries/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Mammal_Sanctuaries_HFV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Protections/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Reserves/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Reserves_FHV/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Operations_Districts/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Operations_Regions/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_PublicConservationAreas_3Colour_HFV/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Public_Conservation_Land/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Public_Conservation_Land_FHV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Recreational_Hunting_Areas/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Regions_Pesticide_Summary/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Roads_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Roads_Open_Data/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_TaupoFishery_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Tracks_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Tracks_Open_Data/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Vistor_Centres_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteMountainBikingLns_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteMountainBikingPts_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteWalkingandTrampingLns_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteWalkingandTrampingPts_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Website_Regions/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WhanganuiJourneyLine_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WhanganuiJourneyPoint_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Drone_Zones/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/EEZ_OuterLimits/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Ecological_Districts/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralCat_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Ferret_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Hedgehog_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Fallow_Deer_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Goat_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Goat_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Pig_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Ferret_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Gibson_s_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Gibson_s_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Gibson_s_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Grey_Petrel_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Grey_Petrel_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Grey_Petrel_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Grey_headed_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Grey_headed_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Grey_headed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/HGMSP_Habitats_Classification_2021v2_FINAL/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hare_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hauraki_Gulf_Marine_Park/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hauraki_Gulf_Marine_Park_Catchment/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hauraki_Gulf_Tikapa_Moana_Marine_Protection_Act/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Himalayan_Tahr_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Himalayan_Tahr_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Indian_Yellow_nosed_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Indian_Yellow_nosed_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Indian_Yellow_nosed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Internationally_Recognised_Areas/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Kea_Habitat_2019/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Laysan_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Laysan_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Laysan_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Light_mantled_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Light_mantled_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Light_mantled_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/MARINE_BioGeoRegions/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/MarineProtectedArea/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NZ_Territorial_Sea/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/National_WARO_Concession_Locations_view/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NatureSpaceGroupsLocations/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/New_Zealand_Seafloor_Bioregionalisation/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NonMigratoryFreshwaterFishDistribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Buller_s_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Buller_s_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Buller_s_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Giant_Petrel_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Giant_Petrel_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Giant_Petrel_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Royal_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Royal_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Royal_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Otago_CMS_Proposed_bike_trails/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/PFNZ_Projects_Service/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Pesticides_HaveBeenLaid_HFV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Public_Conservation_Land_with_recommendation/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rabbit_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Red_Deer_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Red_Deer_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/River_Labels/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rivers/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rusa_Deer_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/SEISMICCODE_AreasOfEcologicalImportance_gdb/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/SE_marine_reserves_type1_CURRENT/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Salvin_s_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Salvin_s_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Salvin_s_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Sambar_Deer_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Short_tailed_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Short_tailed_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Short_tailed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Shy_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Shy_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Shy_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Sika_Deer_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Sooty_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Sooty_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Sooty_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Buller_s_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Buller_s_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Buller_s_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Royal_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Royal_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Royal_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stoat_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stoat_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Te_Urewera_Establishment_Land/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ThreatenedFreshwaterInvertebrates/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Topo50_Index/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Tristan_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Tristan_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Tristan_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wandering_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wandering_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wandering_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wapiti_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Waved_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Waved_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Waved_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Weasel_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Westland_Petrel_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Westland_Petrel_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Westland_Petrel_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_Tailed_Deer_Distribution_2007/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_capped_Albatross_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_capped_Albatross_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_capped_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_chinned_Petrel_H75/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_chinned_Petrel_H95/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/White_chinned_Petrel_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Whitebait_Catchments/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/high_risk_final_dissolve/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/mataitai_dec_2021/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/smoothed_low_excl/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/smoothed_med_excl/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/taiapure_dec_2021/FeatureServer",
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_Imagery_SPOT_Mosaic/MapServer",
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_Imagery_Worldview_all/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_Topo50_gridless/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Beech_Seeding_Forecast_2018/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Rimu_Seeding_Forecast_2018/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Simplified_LCDBV4_1/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/deltaT_Masting_Forecast_Summer2018_19/MapServer"
+    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_Topo50_gridless/MapServer"
    ],
    "log": [
     {
@@ -2827,7 +2627,7 @@
     },
     {
      "step": "org",
-     "what": "org 3JjYDyG3oajxU6HO (Department of Conservation): 201 services read"
+     "what": "org 3JjYDyG3oajxU6HO (Department of Conservation): 7 services read"
     }
    ],
    "steps": [
@@ -3231,10 +3031,88 @@
    "finished": "2026-10-30"
   },
   "ZA": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-11-03",
+   "status": "done",
+   "started": "2026-11-04",
    "done": [
-    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer"
+    "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/AGSA/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/APP_infra_and_DDM_projects_2024_2025/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/AccesstoServices/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Adminboundaries/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Agriculture/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/AllSIPprojectsaug2021/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/BaseMap/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Bridges/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Bridgesformapservices/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Bridgesformapservicesnew/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Bridgesformapservicesproj/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Census2022/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Census2022_MIL1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Coastalmanagement/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Crimes/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Demographics2022/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/District_Municipalities_Demographics/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/District_and_local_municipalities/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/ECD/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/EPWP_MIL1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Economy/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Education/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Education1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/EducationSDE/FeatureServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/EducationSDE/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Educationtest/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Employment/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Energy/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environment/FeatureServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environment/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/FSD/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Facilities/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Geology/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Geospatial_Data_Layers/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Health/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/HigherEducation/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Hydrological/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Hydrology/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Infrastructure/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Infrastructure_Projects/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Infrastructure_Projects_/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Infrastructure_Projects_MIL1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Infrastructure_Projects_webmap_MIL1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/KZNFloodsApril2022/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/KZNFloodsBridges/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Landcover_and_Landuse/FeatureServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Landcover_and_Landuse/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/MTSF2014_2019projects/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Meterology/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Municipalities_and_NSDF/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/NDP5year/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/NDP5yrplanwebmap/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/NSDF_Action_Areas/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/NTInfra2025constructionwms/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/NT_202526_Welisizwe2/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/NT_MIL1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/National_Projects_National_Treasury_2022_MIL1/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Neighbourhood_lifestyle_index_per_DM/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Population/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/RBIG_Projects/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Rural/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/SIP/FeatureServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/SIP/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/SONA2025/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/SONA_commitments_Bridges/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Safety/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Settlement/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/SocialServices/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Topography/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Transport/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Vegetation/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Water/FeatureServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Water/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Waternetwork/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/hotline/MapServer"
    ],
    "log": [
     {
@@ -3253,12 +3131,86 @@
     },
     {
      "step": "server",
-     "what": "https://dpmegis.dpme.gov.za/arcgis/rest/services: 11 folders, 0 services read"
+     "what": "https://dpmegis.dpme.gov.za/arcgis/rest/services: 11 folders, 22 services read"
+    },
+    {
+     "agol": "National Park",
+     "hits": 49,
+     "read": 1,
+     "rejected_orgs": [
+      [
+       "?",
+       48
+      ]
+     ]
+    },
+    {
+     "agol": "Nature Reserve",
+     "hits": 19,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       18
+      ]
+     ]
+    },
+    {
+     "agol": "Protected Environment",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "SAPAD",
+     "hits": 50,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       50
+      ]
+     ]
+    },
+    {
+     "agol": "World Heritage Site",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "national park",
+     "hits": 49,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       48
+      ]
+     ]
     }
    ],
    "steps": [
-    "known"
-   ]
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-11-04"
   },
   "AR": {
    "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",

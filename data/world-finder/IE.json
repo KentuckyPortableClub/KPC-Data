@@ -1,11 +1,16 @@
 {
  "cc": "IE",
- "run": "2026-11-03",
+ "run": "2026-11-04",
  "parks": 307,
  "open": 211,
  "key_candidates": 3,
- "layer_candidates": 8,
+ "layer_candidates": 0,
  "layers_tried": [
+  "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/MapServer/0",
+  "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/MapServer/1",
+  "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/MapServer/0",
+  "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/MapServer/1",
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer/0",
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer/0",
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/1",
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/4",
@@ -15,10 +20,7 @@
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/5",
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/1",
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/4",
-  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/0",
-  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2",
-  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/3",
-  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/5"
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/0"
  ],
  "no_layer_groups": {
   "national park": [
@@ -30,7 +32,9 @@
    "IE-0229",
    "IE-0237",
    "IE-0245",
-   "IE-0291"
+   "IE-0291",
+   "IE-0005",
+   "IE-0299"
   ],
   "nature reserve": [
    "IE-0014",
@@ -45,7 +49,10 @@
    "IE-0052",
    "IE-0053",
    "IE-0058",
-   "IE-0059"
+   "IE-0059",
+   "IE-0098",
+   "IE-0132",
+   "IE-0015"
   ],
   "national forest": [
    "IE-0018",
@@ -92,7 +99,16 @@
    "IE-0057",
    "IE-0091",
    "IE-0092",
-   "IE-0093"
+   "IE-0093",
+   "IE-0033",
+   "IE-0100",
+   "IE-0101",
+   "IE-0125",
+   "IE-0036",
+   "IE-0037",
+   "IE-0019",
+   "IE-0026",
+   "IE-0032"
   ],
   "forest reserve": [
    "IE-0246",
@@ -107,7 +123,12 @@
    "IE-0255",
    "IE-0217",
    "IE-0221",
-   "IE-0223"
+   "IE-0223",
+   "IE-0276",
+   "IE-0277",
+   "IE-0278",
+   "IE-0236",
+   "IE-0287"
   ],
   "country park": [
    "IE-0069"
@@ -131,6 +152,7 @@
    "IE-0250",
    "IE-0274",
    "IE-0249",
+   "IE-0234",
    "IE-0239"
   ],
   "nature recreation area": [
@@ -153,7 +175,8 @@
   ],
   "national scenic trail": [
    "IE-0210",
-   "IE-0196"
+   "IE-0196",
+   "IE-0211"
   ],
   "conservation area": [
    "IE-0212",
@@ -183,7 +206,8 @@
    "IE-0163"
   ],
   "state park": [
-   "IE-0104"
+   "IE-0104",
+   "IE-0103"
   ],
   "historical reserve": [
    "IE-0292"
@@ -196,9 +220,15 @@
   ],
   "marine park": [
    "IE-0261"
+  ],
+  "national monument": [
+   "IE-0165"
+  ],
+  "recreation site": [
+   "IE-0025"
   ]
  },
- "layers_found_new": 0,
- "stage1": "paused (time): carries on next chunk",
- "seconds": 119
+ "layers_found_new": 2,
+ "stage1": "done",
+ "seconds": 215
 }

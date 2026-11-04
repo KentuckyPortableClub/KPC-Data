@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Australia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AU",
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "status": "paused (out of time, will carry on)",
  "steps_done": [
   "known"
@@ -5692,6 +5692,25 @@
    ],
    "layers": [
     {
+     "id": 27,
+     "name": "Forest Products Commission Plantations (FPC-001)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "plantation",
+      "linkkey",
+      "species",
+      "estabyear",
+      "areaha",
+      "latin",
+      "shape",
+      "map_symbol"
+     ],
+     "records": 19735
+    },
+    {
      "id": 4,
      "name": "Mineral Field Boundaries (DMIRS-005)",
      "geom": "Polygon",
@@ -8749,6 +8768,58 @@
      "id": 8,
      "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
      "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    },
+    {
+     "id": 8,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    },
+    {
+     "id": 8,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
      "gap": "outline",
      "is": "named area polygons",
      "fields": [
@@ -8790,6 +8861,58 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    },
+    {
+     "id": 2,
+     "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "dpird_prod.selfservice.lagrangeoptimised_areas_irrigatedag_3.fid",
+      "id",
+      "zonevalue",
+      "descriptio",
+      "name_abrv",
+      "name_expan",
+      "id2",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 30,
+     "sample": [
+      "SP+LP",
+      "SP+LP",
+      "SP+LP/CL"
+     ],
+     "name_field": "name_abrv"
+    },
     {
      "id": 2,
      "name": "La Grange Optimised Areas for Irrigated Agriculture (DPIRD-004)",

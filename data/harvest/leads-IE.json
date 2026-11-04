@@ -1,20 +1,115 @@
 {
  "about": "World harvester leads for Ireland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "IE",
- "date": "2026-11-03",
- "status": "paused (out of time, will carry on)",
+ "date": "2026-11-04",
+ "status": "done",
  "steps_done": [
   "known",
   "servers",
-  "wfs"
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 1,
+  "A": 2,
   "B": 1,
   "C": 10
  },
- "failures": [],
- "rejected_orgs": [],
+ "failures": [
+  {
+   "catalog": "https://data.gov.ie",
+   "keyword": "National Park",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://data.gov.ie",
+   "keyword": "Nature Reserve",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://data.gov.ie",
+   "keyword": "SAC",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://data.gov.ie",
+   "keyword": "SPA",
+   "error": "robots.txt says no"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    40
+   ],
+   [
+    "Esri Ireland Data",
+    4
+   ]
+  ],
+  [
+   [
+    "?",
+    46
+   ],
+   [
+    "DCC Public GIS Portal",
+    2
+   ],
+   [
+    "Esri Ireland Data",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    45
+   ],
+   [
+    "DCC Public GIS Portal",
+    2
+   ],
+   [
+    "Esri Ireland Data",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    43
+   ],
+   [
+    "DCC Public GIS Portal",
+    2
+   ],
+   [
+    "Esri Ireland Data",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    17
+   ],
+   [
+    "Esri Ireland Data",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    3
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer"
  ],
@@ -27,6 +122,144 @@
   }
  ],
  "leads": {
+  "https://gsi.geodata.gov.ie/server/rest/services/groundwater/ie_gsi_group_water_scheme_public_water_supply_source_protection_areas_20k_ie26_itm": {
+   "url": "https://gsi.geodata.gov.ie/server/rest/services/Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM/MapServer",
+   "cc": "IE",
+   "title": "Groundwater/IE_GSI_Group_Water_Scheme_Public_Water_Supply_Source_Protection_Areas_20K_IE26",
+   "publisher": "gsi.geodata.gov.ie",
+   "catalog": "ArcGIS Online search",
+   "licence": "Data that is produced directly by the Geological Survey Ireland (GSI) is free for use under the conditions of Creative Commons Attribution 4.0 International license.       https://creativecommons.org/",
+   "date": "2026-10-06",
+   "found": "2026-11-04",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "IE_GSI_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_ID",
+      "SPA_CODE",
+      "SPA_NAME",
+      "DATASOURCE",
+      "DW_CODE",
+      "EU_REPORT",
+      "COUNTY",
+      "REPORT_URL",
+      "REP_CREATOR",
+      "ACTIVE",
+      "GSI_REVIEW",
+      "PUBLISH",
+      "REPORTDATE",
+      "UPDATEDATE",
+      "UPDATED_BY",
+      "GLOBALID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 357,
+     "sample": [
+      "MEELICK",
+      "MOUNTBELLEW PWS",
+      "MOUNTNORTH RWSS"
+     ],
+     "name_field": "SPA_NAME"
+    },
+    {
+     "id": 1,
+     "name": "IE_GSI_Group_Water_Scheme_Zones_of_Contribution_20K_IE26_ITM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "GWSZOCID",
+      "GWS_NAME",
+      "YEAR",
+      "CONSULTANT",
+      "GLOBALID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 254,
+     "sample": [
+      "Ballintubber",
+      "Ballyduff",
+      "Ballinamona"
+     ],
+     "name_field": "GWS_NAME"
+    },
+    {
+     "id": 0,
+     "name": "IE_GSI_Public_Water_Supply_Source_Protection_Areas_20K_IE26_ITM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SHAPE",
+      "SPA_ID",
+      "SPA_CODE",
+      "SPA_NAME",
+      "DATASOURCE",
+      "DW_CODE",
+      "EU_REPORT",
+      "COUNTY",
+      "REPORT_URL",
+      "REP_CREATOR",
+      "ACTIVE",
+      "GSI_REVIEW",
+      "PUBLISH",
+      "REPORTDATE",
+      "UPDATEDATE",
+      "UPDATED_BY",
+      "GLOBALID",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 357,
+     "sample": [
+      "MEELICK",
+      "MOUNTBELLEW PWS",
+      "MOUNTNORTH RWSS"
+     ],
+     "name_field": "SPA_NAME"
+    },
+    {
+     "id": 1,
+     "name": "IE_GSI_Group_Water_Scheme_Zones_of_Contribution_20K_IE26_ITM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SHAPE",
+      "GWSZOCID",
+      "GWS_NAME",
+      "YEAR",
+      "CONSULTANT",
+      "GLOBALID",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 254,
+     "sample": [
+      "Ballintubber",
+      "Ballyduff",
+      "Ballinamona"
+     ],
+     "name_field": "GWS_NAME"
+    }
+   ],
+   "note": "IE GSI Group Water Scheme and Public Water Supply Source Protection Areas 20k Ireland (ROI) ITM View",
+   "grade": 6,
+   "band": "A"
+  },
   "https://services8.arcgis.com/wjawg84s4eayflbd/arcgis/rest/services/important_plant_areas_2020_region": {
    "url": "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
    "cc": "IE",
@@ -40,6 +273,29 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Important_Plant_Areas_2020_region",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "IPA_Code",
+      "IPA_Name",
+      "UK_Country",
+      "Shape__Area",
+      "Shape__Length",
+      "Area_ha"
+     ],
+     "records": 165,
+     "sample": [
+      "River Wye IPA",
+      "Cliffs of the Brecon Beacons National Park IPA",
+      "Kenfig IPA"
+     ],
+     "name_field": "IPA_Name"
+    },
     {
      "id": 0,
      "name": "Important_Plant_Areas_2020_region",
@@ -82,6 +338,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Potential Special Protection Areas (pSPA) (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_NAME",
+      "SPA_CODE",
+      "SPA_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Solway Firth"
+     ],
+     "name_field": "SPA_NAME"
+    },
     {
      "id": 0,
      "name": "Potential Special Protection Areas (pSPA) (England) © Natural England",
@@ -406,195 +696,6 @@
      "name_field": "NAME"
     },
     {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 1,
-     "name": "Millenium Forests",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "NAME",
-      "AREA_HA",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 13,
-     "sample": [
-      "Ballygannon",
-      "Camolin",
-      "Coill an Fhaltaigh"
-     ],
-     "name_field": "NAME"
-    },
-    {
      "id": 0,
      "name": "Life Site",
      "geom": "Polygon",
@@ -615,6 +716,216 @@
       "Curraghchase"
      ],
      "name_field": "SITE_NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
     }
    ],
    "note": "Coillte Life and Millennium Sites",
@@ -1078,6 +1389,28 @@
       "1"
      ],
      "name_field": "BAU_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Wind Damage Assessment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "BAU_NAME",
+      "County",
+      "wb_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11009,
+     "sample": [
+      "2",
+      "2",
+      "1"
+     ],
+     "name_field": "BAU_NAME"
     }
    ],
    "note": "Coillte Wind Damage Assessment",
@@ -1098,6 +1431,30 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Properties in which clearfell may happen in 2021-2025",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PROPERTY_NAME",
+      "BAU",
+      "BLOCK_HA",
+      "Percent_",
+      "Block_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2876,
+     "sample": [
+      "ABBEYGREY",
+      "ACHONRY",
+      "ACHONRY"
+     ],
+     "name_field": "PROPERTY_NAME"
+    },
     {
      "id": 0,
      "name": "Properties in which clearfell may happen in 2021-2025",
@@ -1165,6 +1522,31 @@
       "ACLAMON"
      ],
      "name_field": "PROPERTY_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Properties in which thinning operations may happen in 2021-2025 ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PROPERTY_NAME",
+      "BAU",
+      "BLOCK_HA",
+      "Forest",
+      "Percent_",
+      "Block_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2793,
+     "sample": [
+      "ABBEYGREY",
+      "ACHONRY",
+      "ACLAMON"
+     ],
+     "name_field": "PROPERTY_NAME"
     }
    ],
    "note": "Coillte Consultation - Thinnings 2021-2025",
@@ -1185,6 +1567,24 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Felling Licence Submitted to DAFM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Felling_Re",
+      "Year",
+      "App_Type",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID",
+      "HARVEST_BLOCK"
+     ],
+     "records": 6546
+    },
     {
      "id": 0,
      "name": "Felling Licence Submitted to DAFM",
@@ -1630,6 +2030,36 @@
       "Shape__Area"
      ],
      "records": 3503
+    },
+    {
+     "id": 0,
+     "name": "Biodiversity Areas (Bio Class)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "BIOD_ID",
+      "BAU",
+      "FOREST",
+      "PROPERTY",
+      "AREA_HA",
+      "BIOCLASS",
+      "HAB_GROUP1",
+      "HAB_TYPE1",
+      "HAB_GROUP2",
+      "HAB_TYPE2",
+      "HAB_CATEG",
+      "TarHabGrp1",
+      "TarHabTyp1",
+      "TarHabGrp2",
+      "TarHabTyp2",
+      "POT_BIOCLS",
+      "NAT_VALUES",
+      "Shape_Leng",
+      "Shape__Area"
+     ],
+     "records": 3503
     }
    ],
    "note": "CoillteBiodiversityArea - retired",
@@ -1650,6 +2080,20 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Coillte Harvest Unit",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Reference",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1217
+    },
     {
      "id": 0,
      "name": "Coillte Harvest Unit",

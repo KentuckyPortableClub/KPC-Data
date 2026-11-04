@@ -1,15 +1,22 @@
 {
  "about": "World harvester leads for South Africa (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "ZA",
- "date": "2026-11-03",
- "status": "paused (out of time, will carry on)",
+ "date": "2026-11-04",
+ "status": "done",
  "steps_done": [
-  "known"
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 0,
-  "B": 3,
-  "C": 0
+  "A": 1,
+  "B": 4,
+  "C": 5
  },
  "failures": [
   {
@@ -18,7 +25,44 @@
    "error": "no answer three times: left alone for a day"
   }
  ],
- "rejected_orgs": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    48
+   ]
+  ],
+  [
+   [
+    "?",
+    18
+   ]
+  ],
+  [
+   [
+    "?",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    50
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    48
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1"
@@ -37,6 +81,617 @@
   }
  ],
  "leads": {
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/basemap": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/BaseMap/MapServer",
+   "cc": "ZA",
+   "title": "BaseMap",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "outline",
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 9,
+     "name": "Freeway",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "Shape_Length",
+      "Shape",
+      "RSA_FINRDS",
+      "Shape_Leng",
+      "ROAD_CLASS",
+      "FREEWAY_ROUT_NO",
+      "FREEWAY_HIERARCHY",
+      "FREEWAY_OWNER",
+      "FREEWAY_SURFACE"
+     ],
+     "records": 6737
+    },
+    {
+     "id": 11,
+     "name": "International names",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "AREA",
+      "PROVNAME",
+      "CODE"
+     ],
+     "records": 30,
+     "sample": [
+      " ",
+      "ZIMBABWE",
+      " "
+     ],
+     "name_field": "PROVNAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/adminboundaries": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Adminboundaries/MapServer",
+   "cc": "ZA",
+   "title": "Adminboundaries",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "area"
+   ],
+   "layers": [
+    {
+     "id": 7,
+     "name": "Main places (STATSSA2016)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape_Length",
+      "Shape_Area",
+      "Shape",
+      "OBJECTID",
+      "MP_CODE",
+      "MP_NAME",
+      "MN_MDB_C_2",
+      "MN_CODE_20",
+      "MN_NAME_20",
+      "MN_NAME_C_",
+      "DC_MDB_C_2",
+      "DC_MN_C_20",
+      "DC_NAME_20",
+      "PR_MDB_C_2",
+      "PR_CODE_20",
+      "PR_NAME_20",
+      "ALBERS_ARE",
+      "Shape_Leng"
+     ],
+     "records": 14039,
+     "sample": [
+      "Kliprand",
+      "Matzikama NU",
+      "Rietpoort"
+     ],
+     "name_field": "MP_NAME"
+    },
+    {
+     "id": 8,
+     "name": "Sub places (STASSA2016)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape_Length",
+      "Shape_Area",
+      "Shape",
+      "OBJECTID",
+      "SP_CODE",
+      "SP_NAME",
+      "MP_CODE",
+      "MP_NAME",
+      "MN_MDB_C_2",
+      "MN_CODE_20",
+      "MN_NAME_20",
+      "MN_NAME_C_",
+      "DC_MDB_C_2",
+      "DC_MN_C_20",
+      "DC_NAME_20",
+      "PR_MDB_C_2",
+      "PR_CODE_20",
+      "PR_NAME_20",
+      "ALBERS_ARE"
+     ],
+     "records": 22108,
+     "sample": [
+      "Kliprand SP",
+      "Matzikama NU",
+      "Rietpoort SP"
+     ],
+     "name_field": "SP_NAME"
+    },
+    {
+     "id": 10,
+     "name": "Labour Sending Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "Shape_Length",
+      "Shape_Area",
+      "OBJECTID",
+      "Shape",
+      "CATEGORY",
+      "CAT2",
+      "MN_MDB_C",
+      "MN_CODE",
+      "MN_NAME",
+      "MN_NAME_C",
+      "DC_MDB_C",
+      "DC_MN_C",
+      "DC_NAME_C",
+      "DC_NAME",
+      "PR_MDB_C",
+      "PR_CODE",
+      "PR_NAME",
+      "ALBERS_ARE",
+      "SHAPE_Leng"
+     ],
+     "records": 34,
+     "sample": [
+      "Ngquza Hill",
+      "Port St Johns",
+      "Nyandeni"
+     ],
+     "name_field": "MN_NAME"
+    },
+    {
+     "id": 12,
+     "name": "Settlements (DWS2011)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "Shape_Length",
+      "Shape_Area",
+      "OBJECTID_1",
+      "Shape",
+      "Province",
+      "ProvCode",
+      "DMName",
+      "DMCode",
+      "LMName",
+      "LMCode",
+      "WSA",
+      "WSchName",
+      "WSchNum",
+      "WSchID",
+      "SSchName",
+      "SSchNum",
+      "SSchID",
+      "SetlCode",
+      "SetlName",
+      "SetlMainTp"
+     ],
+     "records": 64894,
+     "sample": [
+      "Alfred Nzo",
+      "Alfred Nzo",
+      "Alfred Nzo"
+     ],
+     "name_field": "DMName"
+    },
+    {
+     "id": 15,
+     "name": "Farms (DRDLR)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "FARMNAME",
+      "FARMNO",
+      "SUBDIVNAME",
+      "MAG_DIST",
+      "PROVINCE_NAME"
+     ],
+     "records": 391266,
+     "sample": [
+      "FARM",
+      "MATJES FONTEIN",
+      "MIDDEL POST"
+     ],
+     "name_field": "FARMNAME"
+    },
+    {
+     "id": 16,
+     "name": "Water Management Areas (DWS)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WMA_MAJOR_RIVER",
+      "WMA_NAME",
+      "WMA_AREA_M2",
+      "WMA_AREA_KM2",
+      "WMA_HECTARES"
+     ],
+     "records": 21,
+     "sample": [
+      "Limpopo",
+      "Luvulvhu and Letaba",
+      "Olifants"
+     ],
+     "name_field": "WMA_NAME"
+    },
+    {
+     "id": 17,
+     "name": "South Africa Before 1994 (MDB)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "Shape_Length",
+      "Shape_Area",
+      "OBJECTID",
+      "Shape",
+      "ID",
+      "NAME",
+      "NAME2"
+     ],
+     "records": 15,
+     "sample": [
+      "Bophuthatswana",
+      "Bophuthatswana",
+      "Cape"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 18,
+     "name": "World Countries (AGIS)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "Shape_Length",
+      "Shape_Area",
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "fips_cntry",
+      "gmi_cntry",
+      "iso_2digit",
+      "iso_3digit",
+      "cntry_name",
+      "long_name",
+      "sovereign",
+      "pop_cntry",
+      "curr_type",
+      "curr_code",
+      "landlocked",
+      "sqkm",
+      "sqmi",
+      "color_map",
+      "oid_"
+     ],
+     "records": 252,
+     "sample": [
+      "Russia",
+      "Svalbard",
+      "Greenland"
+     ],
+     "name_field": "cntry_name"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/agriculture": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Agriculture/MapServer",
+   "cc": "ZA",
+   "title": "Agriculture",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "area"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Field boundaries",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Shape_Length",
+      "Shape_Area",
+      "Shape",
+      "FIELD_ID",
+      "AREAHA",
+      "CATNAME_1",
+      "CROP_TYPE"
+     ],
+     "records": 1155031,
+     "sample": [
+      "Subsistence Farming 1",
+      "Subsistence Farming 1",
+      "Subsistence Farming 1"
+     ],
+     "name_field": "CATNAME_1"
+    },
+    {
+     "id": 2,
+     "name": "Agriculture value",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "Shape_Length",
+      "Shape_Area",
+      "OBJECTID_1",
+      "Shape",
+      "MESO_ID",
+      "NAME",
+      "UFI_CSIR",
+      "POP2011",
+      "SACNTYPE17",
+      "F2017NOTES",
+      "SACNTOWN17",
+      "MID_2010",
+      "SUM_POP_20",
+      "SUM_EMPLYD",
+      "SUM_UNEMPL",
+      "SUM_NOTECN",
+      "SUM_WRKNGA",
+      "SUM_AGE0_1",
+      "SUM_AGE15_",
+      "SUM_AGE20_"
+     ],
+     "records": 25041,
+     "sample": [
+      "N",
+      "N",
+      "N"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/ecd": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/ECD/MapServer",
+   "cc": "ZA",
+   "title": "ECD",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "area"
+   ],
+   "layers": [
+    {
+     "id": 6,
+     "name": "Number of Children in ECD per smallarea  (DSD2015)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID_12",
+      "Shape",
+      "OBJECTID_1",
+      "OBJECTID",
+      "SAL_CODE",
+      "SP_CODE",
+      "SP_NAME",
+      "MP_NAME",
+      "MN_MDB_C",
+      "MN_NAME",
+      "DC_MDB_C",
+      "DC_NAME",
+      "PR_NAME",
+      "Totalnrof5",
+      "F0_4yr",
+      "F5yr",
+      "nrattendin",
+      "Percentage",
+      "name_of_si",
+      "latitude"
+     ],
+     "records": 92685,
+     "sample": [
+      "Kliprand SP",
+      "Matzikama NU",
+      "Matzikama NU"
+     ],
+     "name_field": "SP_NAME"
+    },
+    {
+     "id": 8,
+     "name": "Education Boundaries (DBE)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Pre_Gr_R_Lrns",
+      "Gr_R_Lrns",
+      "Primary_Gr1_7_Lrns",
+      "Secondary_Gr8_12_Lrns",
+      "SNE_Lrns",
+      "Post_Matric_Lrns",
+      "Total_Female_Lrns",
+      "Total_Male_Lrns",
+      "Total_Lrns",
+      "Educators_Female",
+      "Educators_Male",
+      "Educators_Total",
+      "Public_Schools",
+      "Independent_Schools",
+      "Total_Schools",
+      "Shape",
+      "CAT_B",
+      "NAME",
+      "NAMECODE"
+     ],
+     "records": 81,
+     "sample": [
+      "ETHEKWINI METROPOLITAN MUNICIPALITY",
+      "EKURHULENI METROPOLITAN MUNICIPALITY",
+      "UMZIMVUBU LOCAL MUNICIPALITY"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/education": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Education/MapServer",
+   "cc": "ZA",
+   "title": "Education",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "area"
+   ],
+   "layers": [
+    {
+     "id": 5,
+     "name": "Education Boundaries (DBE)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Pre_Gr_R_Lrns",
+      "Gr_R_Lrns",
+      "Primary_Gr1_7_Lrns",
+      "Secondary_Gr8_12_Lrns",
+      "SNE_Lrns",
+      "Post_Matric_Lrns",
+      "Total_Female_Lrns",
+      "Total_Male_Lrns",
+      "Total_Lrns",
+      "Educators_Female",
+      "Educators_Male",
+      "Educators_Total",
+      "Public_Schools",
+      "Independent_Schools",
+      "Total_Schools",
+      "Shape",
+      "CAT_B",
+      "NAME",
+      "NAMECODE"
+     ],
+     "records": 81,
+     "sample": [
+      "ETHEKWINI METROPOLITAN MUNICIPALITY",
+      "EKURHULENI METROPOLITAN MUNICIPALITY",
+      "UMZIMVUBU LOCAL MUNICIPALITY"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/education1": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Education1/MapServer",
+   "cc": "ZA",
+   "title": "Education1",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "area"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Education Boundaries (DBE)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "CAT_B",
+      "NAME",
+      "NAMECODE",
+      "LOCAL_MUNICIPALITY",
+      "TYPE_",
+      "PROV",
+      "DISTRICT",
+      "PROVINCE",
+      "ECircuit",
+      "Title",
+      "Office_Location",
+      "Pre_Gr_R_Lrns",
+      "Gr_R_Lrns",
+      "Primary_Gr1_7_Lrns",
+      "Secondary_Gr8_12_Lrns",
+      "SNE_Lrns",
+      "Post_Matric_Lrns",
+      "Total_Female_Lrns"
+     ],
+     "records": 81,
+     "sample": [
+      "ETHEKWINI METROPOLITAN MUNICIPALITY",
+      "EKURHULENI METROPOLITAN MUNICIPALITY",
+      "UMZIMVUBU LOCAL MUNICIPALITY"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
   "https://dpmegis.dpme.gov.za/arcgis/rest/services/environmental2": {
    "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
    "cc": "ZA",
@@ -704,6 +1359,54 @@
    "grade": 4,
    "band": "B",
    "known_good": true
+  },
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/app_infra_and_ddm_projects_2024_2025": {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/APP_infra_and_DDM_projects_2024_2025/MapServer",
+   "cc": "ZA",
+   "title": "APP_infra_and_DDM_projects_2024_2025",
+   "publisher": "dpmegis.dpme.gov.za",
+   "catalog": "agency server dpmegis.dpme.gov.za",
+   "licence": "",
+   "date": "",
+   "found": "2026-11-04",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "DDM Projects (DSAC)",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "Infra_Projects_APP_DDM_DSAC_202425.OBJECTID",
+      "Infra_Projects_APP_DDM_DSAC_202425.Shape",
+      "Infra_Projects_APP_DDM_DSAC_202425.Num",
+      "Infra_Projects_APP_DDM_DSAC_202425.Projname",
+      "Infra_Projects_APP_DDM_DSAC_202425.Projdesc",
+      "Infra_Projects_APP_DDM_DSAC_202425.Dismun",
+      "Infra_Projects_APP_DDM_DSAC_202425.Province",
+      "Infra_Projects_APP_DDM_DSAC_202425.Projleader",
+      "Infra_Projects_APP_DDM_DSAC_202425.Socpartners",
+      "Infra_Projects_APP_DDM_DSAC_202425.Lat",
+      "Infra_Projects_APP_DDM_DSAC_202425.Long",
+      "DDMProjectsDSAC_AddSpatialJoin.OBJECTID",
+      "DDMProjectsDSAC_AddSpatialJoin.Join_Count",
+      "DDMProjectsDSAC_AddSpatialJoin.TARGET_FID",
+      "DDMProjectsDSAC_AddSpatialJoin.PROVINCE",
+      "DDMProjectsDSAC_AddSpatialJoin.LocalMunicipality",
+      "DDMProjectsDSAC_AddSpatialJoin.DistrictMunicipality",
+      "DDMProjectsDSAC_AddSpatialJoin.DATE",
+      "DDMProjectsDSAC_AddSpatialJoin.Metropolitan"
+     ],
+     "records": 41
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
   }
  }
 }

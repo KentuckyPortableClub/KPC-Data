@@ -1,10 +1,17 @@
 {
  "about": "World harvester leads for Denmark (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "DK",
- "date": "2026-11-03",
- "status": "paused (out of time, will carry on)",
+ "date": "2026-11-04",
+ "status": "done",
  "steps_done": [
-  "known"
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
   "A": 0,
@@ -18,7 +25,26 @@
    "error": "'ascii' codec can't encode character '\\xe5' in position 47: ordinal not in range"
   }
  ],
- "rejected_orgs": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    11
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [
   "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_områder/MapServer"

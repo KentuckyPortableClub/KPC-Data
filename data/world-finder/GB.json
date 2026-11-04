@@ -1,11 +1,12 @@
 {
  "cc": "GB",
- "run": "2026-11-03",
+ "run": "2026-11-04",
  "parks": 7075,
  "open": 3787,
  "key_candidates": 28,
  "layer_candidates": 0,
  "layers_tried": [
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ancient_Woodland_England/FeatureServer/0",
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ancient_Woodland_England/FeatureServer/0",
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ancient_Woodland_Revised_England/FeatureServer/0",
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Annex_1_Alkaline_Fens_Transition_Mire_Quaking_Bog/FeatureServer/2",
@@ -19,8 +20,7 @@
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Limestone_Pavement_Orders_England/FeatureServer/0",
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Living_England_Segmentation_2019/FeatureServer/0",
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Partnerships_England/FeatureServer/0",
-  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Recovery_Strategy_Areas_England/FeatureServer/0",
-  "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Local_Plan_Ungrouped/FeatureServer/63"
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Recovery_Strategy_Areas_England/FeatureServer/0"
  ],
  "no_layer_groups": {
   "country park": [
@@ -2956,5 +2956,5 @@
  },
  "layers_found_new": 0,
  "stage1": "paused (time): carries on next chunk",
- "seconds": 544
+ "seconds": 796
 }
