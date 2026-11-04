@@ -570,6 +570,33 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-4246",
+   "Park name (as the agency writes it)": "Whitefish Dunes",
+   "Size": 411,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23788&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-4254",
+   "Park name (as the agency writes it)": "Chimney Rock Oak Savanna",
+   "Size": 30,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23733&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-4255",
+   "Park name (as the agency writes it)": "Lodi Marsh",
+   "Size": 640,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23972&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "US-5756",
    "Park name (as the agency writes it)": "Browns Park WMA",
    "Size": 3134,
@@ -1033,6 +1060,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "dnrmaps.wi.gov",
+   "Agency/area": "Natural Area Parcel Ownership",
+   "Kind": "GIS layer",
+   "Example URL": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "services3.arcgis.com",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -1184,16 +1221,6 @@
   },
   {
    "Host": "enterprise-dev.gisdata.mn.gov",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": null,
-   "# times used": 0,
-   "Status": "BLOCKED",
-   "Detail": "blocked (host resting: 3 strikes)",
-   "Retry?": "YES"
-  },
-  {
-   "Host": "dnrmaps.wi.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
    "Example URL": null,
