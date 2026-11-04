@@ -621,7 +621,7 @@ def probe_row(row, known, hosts, trusted, govwords, miss_cache):
         results.append(r)
     for r in results:
         st = str((r.get('probe') or {}).get('status') or '')
-        if not (r.get('probe') or {}).get('opened') and (st in ('rest', 'budget', 'out of time', 'not json', 'robots') or st.startswith('err')): r['retry'] = True
+        if not (r.get('probe') or {}).get('opened') and (st in ('rest', 'deferred', 'crawl-delay', 'robots-unreadable', 'budget', 'out of time', 'not json', 'robots') or st.startswith('err')): r['retry'] = True
     if not results:
         over, _ = overlap(url, known, hosts)
         r = dict(base, probe={'opened': False, 'status': 'out of time'}, terms={}, publisher_test=['unsure', ''], overlap=over, closes={}, verdict='REJECT', why='out of time before the first layer was probed (will retry)', retry=True)

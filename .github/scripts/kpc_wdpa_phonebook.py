@@ -97,7 +97,7 @@ def main():
         else:
             j, err = get({**env, **SHAPES[WAY[0]](fields)})
         if j is None:
-            if err in ('rest', 'robots'): break   # the host is resting: stop, next run goes on
+            if err in ('rest', 'robots', 'robots-unreadable', 'deferred', 'crawl-delay'): break   # the host is resting: stop, next run goes on
             continue
         h = []
         for ft in (j.get('features') or [])[:3]:

@@ -5,7 +5,10 @@ fetches the candidate record from its ArcGIS layer (outSR 4326, about 3 m simpli
 is the POTA pin inside it (or how far outside), geodesic acres against the acres the park's own page gives,
 how well the names match, and whether another record within 2 km matches the name better. When there is an
 agency picture map, it also saves a JPEG with the record drawn on aerial imagery so a person can compare.
-Each row lands in a band: **STRONG**, **WEAK** or **CONFLICT**, with the reasons. **It never writes YES or NO.**
+Each row lands in a band: **STRONG**, **WEAK**, **NOT SURE** or **CONFLICT**, with the reasons.
+NOT SURE (Nov 3) means the names differ only by a rename-prone kind (any pair touching natural, historic or recreation, as in "X State
+Historic Site" vs "X State Park", except natural <-> wma/refuge); a person checks the agency page. A real kind difference (natural <-> wma/refuge) caps the name score
+(STRONG -> WEAK) and is shown in `kind_cap`. When the acres agree within 10% and the pin is inside, a capped pair is NOT SURE instead (one place, two labels: AR "Natural Area WMA", MS Theodore Mars). Neither NOT SURE nor a kind cap is ever a reason to drop a record. **It never writes YES or NO.**
 The club's rules decide, and a person grades.
 
 Install: `python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Set `KPC_CONTACT` (an email or

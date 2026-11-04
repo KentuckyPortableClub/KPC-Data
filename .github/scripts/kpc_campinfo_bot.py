@@ -104,6 +104,8 @@ def host_of(u): return urllib.parse.urlparse(u or '').netloc.lower().split(':')[
 def status_text(st):
     if st == 'robots': return 'robots.txt says no'
     if st == 'rest': return 'host resting'
+    if st == 'robots-unreadable': return 'host resting (robots.txt could not be read: next run)'   # Nov 3 re-cut (A13): not a Disallow
+    if st in ('deferred', 'crawl-delay'): return f'host resting ({st}: slow host, next run)'   # Nov 3 (A4): counted with resting, retried
     if st == 403: return 'HTTP 403 -> needs browser'
     if isinstance(st, int): return f'HTTP {st}'
     return str(st)

@@ -628,6 +628,7 @@ def news_hints(area, parks_by_core, news, nstate, managers=None):
         if not u or late(): continue
         if (nstate.get(u) or {}).get('read', '') == TODAY: continue
         st, hd, body, final = M.get(u)
+        if st in ('deferred', 'crawl-delay', 'rest', 'robots-unreadable'): continue   # Nov 3 (A4): not marked read today, so the next run asks again
         html_links = []
         if st in (200, 206):
             html = body.decode('utf-8', 'replace'); html_links = links_in(html, final); st = 'ok'
