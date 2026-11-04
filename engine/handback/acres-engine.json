@@ -957,6 +957,42 @@
    "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-13648",
+   "Park name (as the agency writes it)": "Altona WMA",
+   "Size": 636,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5416&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13649",
+   "Park name (as the agency writes it)": "Old Koschak Farm WMA",
+   "Size": 87,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6602&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13650",
+   "Park name (as the agency writes it)": "Darwin S. Myers WMA",
+   "Size": 746,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5368&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13651",
+   "Park name (as the agency writes it)": "Zim WMA",
+   "Size": 612,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6177&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "US-5973",
    "Park name (as the agency writes it)": "Salt Creek WMA",
    "Size": 5887,
@@ -1386,7 +1422,7 @@
    "Agency/area": "DNR Management Units",
    "Kind": "GIS layer",
    "Example URL": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
-   "# times used": 20,
+   "# times used": 24,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1649,6 +1685,16 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "kanplan.ksdot.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
    "Retry?": "YES"
   }
  ]
