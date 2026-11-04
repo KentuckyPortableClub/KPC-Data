@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|
 | CA-0002 | Aulavik National Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-0751 | Blackstone Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
-| CA-0752 | Cameron Falls Trail Territorial Park | R-G7 step 2 | NT GNWT Envi: 'Hidden Lake Territorial Park' (record 40420, ~6,854 ac, pin inside) · a line park (trail / scenic river) on a polygon record | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
+| CA-0752 | Cameron Falls Trail Territorial Park | R-G7 step 2 | NT GNWT Envi: 'Hidden Lake Territorial Park' (record 40449, ~6,854 ac, pin inside) · a line park (trail / scenic river) on a polygon record | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-11-04 | gis-hunter |
 | CA-0753 | Chan Lake Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-0754 | Fort Simpson Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
 | CA-0755 | Fred Henne Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-11-04 | gis-hunter |
