@@ -26,6 +26,14 @@ THE RULES (handoff section 4 + Brandon's rulings; when in doubt NEEDS-PERSON, ne
   * Rows with one shared cause (the German 'joined row with no id' rows) = ONE grouped NEEDS-PERSON finding, not researched
     (Brandon Nov 4: likely a key-builder bug, being fixed separately).
 
+REVIEW (Nov 4, KPC Super Head Bot for KZ4CP): CA / world ids are never read as PAD-US ids; a compass word on one side only (brackets
+  included, French too) = rule 18; a record that is the bigger place around the park = NEEDS-PERSON; overrides.json is left alone
+  but every join that is not Brandon's own sign-off (at or after 9:37 AM CST Nov 2) is listed in override-not-from-brandon.csv;
+  a counting Brandon YES / NO / PIN / FIXED leaves the park untouched; a key rebuild that only moves its date stamp does not
+  re-solve; a re-solve with the same answer saves nothing; a park that leaves the pile stays as in_pile=false and drops out of the
+  CSVs (so the German grouped finding stops by itself once the ids exist). NOT done: rule 1's 'the agency's own id' location proof
+  (those rows fall to the county check or NEEDS-PERSON, which is the safe side).
+
 Env: LINKS (KPC-Links checkout, default ../links) · PILE (review-pile.csv; default: run the pre-check into $RUNNER_TEMP) · AREAS
      ('US-TN US-CO'; blank = every area with rows to do) · MAX_PARKS (0 = no cap) · MINUTES (50) · MODE=backfill|auto (auto: only
      when data/pile-solver/state.json says auto=true) · FREEZE (a folder: save every fetched answer there as a selftest fixture)
