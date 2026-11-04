@@ -1,4 +1,4 @@
-# Layer intake review (2026-11-03)
+# Layer intake review (2026-11-04)
 
 Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher's OWN item page first (the Nevada lesson).
 
@@ -7,9 +7,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | READY | 2 |
 | WATER-ONLY | 41 |
 | LIVE-ONLY | 5 |
-| ASK-THE-PUBLISHER | 423 |
-| RETRY | 365 |
-| REJECT | 1654 |
+| ASK-THE-PUBLISHER | 422 |
+| RETRY | 366 |
+| REJECT | 1655 |
 
 ## READY (2)
 
@@ -537,7 +537,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAZEV · 1111 records · sample Blatov a Xaverovský háj / Lochkovský profil / Milíčovský les
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## ASK-THE-PUBLISHER (423)
+## ASK-THE-PUBLISHER (422)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -1524,14 +1524,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name_abrv · 30 records · sample SP+LP / SP+LP / SP+LP/CL
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
-
-### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/7
-- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
-- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
-- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Blue Rockfish YOY Mean Density - North Central Coast - 2010-11 - PISCO [ds1375]  ·    ·  from gis-hunter
@@ -4096,7 +4088,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: wfs
 - closes: not probed: WFS point query not built
 
-## RETRY (365)
+## RETRY (366)
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
@@ -4108,10 +4100,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
-- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: hobby account (personal map) → not official (hobby in the publisher words)
 - terms: NOTHING STATED · source none
-- facts: status error Invalid URL
+- facts: status robots-unreadable
 - closes: not probed
 - TEST: ok
 
@@ -4304,7 +4296,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/20
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4312,7 +4304,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/21
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4320,7 +4312,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/22
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4328,7 +4320,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/23
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4336,7 +4328,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/27
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4344,7 +4336,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/35
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -4645,31 +4637,31 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Cypremort_Point_State_Park  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Jimmie_Davis_State_Park  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
-### Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way  ·  None  ·  from gis-hunter
+### Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trai): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trai
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
-### Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way  ·  None  ·  from gis-hunter
+### Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage ): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Civil War Battlefields  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
@@ -4701,24 +4693,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Iceland Honeymoon 2024_WFL1  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Iceland Honeymoon 2024_WFL  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Spencer_Ramp_Sidewalk  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
@@ -4736,24 +4728,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Lieber  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
-### Florida National Scenic Trail Line  ·  None  ·  from gis-hunter
+### Florida National Scenic Trail Line  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer?f=json' (found a): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer?f=json' (found a
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Lincoln_forestplan_alts_wilderness_AltE  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Flint River Access  ·    ·  from gis-hunter
 - url: https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer
@@ -4764,38 +4756,38 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Captain John Smith Chesapeake National Historic Trail  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer
-- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Invalid URL
+- facts: status robots-unreadable
 
-### Red Rocks Insta360 Oriented Imagery Video  ·  None  ·  from gis-hunter
+### Red Rocks Insta360 Oriented Imagery Video  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer?f=j): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer?f=j
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### State Aquatic Management Area (AMA) Aquisitions  ·    ·  from gis-hunter
 - url: https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status robots-unreadable
 
-### Travel from Jessie's Office (45 Minutes - Mon@1730)  ·  None  ·  from gis-hunter
+### Travel from Jessie's Office (45 Minutes - Mon@1730)  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - ): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
-### Travel from Jessie's Office (45 Minutes - no traffic)  ·  None  ·  from gis-hunter
+### Travel from Jessie's Office (45 Minutes - no traffic)  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - ): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Watershed of the Blanchard River  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
@@ -4806,31 +4798,31 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Escanaba_RSX  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Eagle Harbor Township Recreation Area  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Sugarloaf Mountain Trails  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
@@ -4846,19 +4838,19 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status error Token Required.
 
-### Layer: Southwest Asia All Data  ·  None  ·  from gis-hunter
+### Layer: Southwest Asia All Data  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer?f=js): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer?f=js
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Little Missouri River  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### 040723 Hwy_ 271 – Hwy_ 64 _Towson Ave__ _Fort Smith__WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer
@@ -4874,12 +4866,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status rest
 
-### Chickasaw Nation  ·  None  ·  from gis-hunter
+### Chickasaw Nation  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer?f=json' (fo): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer?f=json' (fo
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Climate Indicator First Leaf Dates (EPA 2021)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer
@@ -4937,19 +4929,19 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status rest
 
-### Amory Port South- property Outline  ·  None  ·  from gis-hunter
+### Amory Port South- property Outline  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish18): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish18
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
-### Amory Port North- property Outline  ·  None  ·  from gis-hunter
+### Amory Port North- property Outline  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish18): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish18
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Antelope Reservoir Fish Advisory  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer
@@ -4961,10 +4953,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### PARCELS Lone Rock Ranch  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### East Bay North Shore Impacted Census Tracts  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer
@@ -5031,12 +5023,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: status rest
 - overlap: same publisher as sguta
 
-### Schools Buffer Mallo  ·  None  ·  from gis-hunter
+### Schools Buffer Mallo  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer?f=json'): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer?f=json'
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Nashvilles Highland Rim Forest  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer
@@ -5451,7 +5443,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/8
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -5459,7 +5451,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/143
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -5580,10 +5572,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Conrad_Zoning  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/IxTFx7t7oe2NViid/arcgis/rest/services/Conrad_Zoning/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### BLM ID Craters of the Moon and Morley Nelson Birds of Prey  ·    ·  from gis-hunter
 - url: https://gis.blm.gov/idarcgis/rest/services/nlcs/BLM_ID_Craters_of_the_Moon_and_Morley_Nelson_Birds_of_Prey/FeatureServer
@@ -5686,19 +5678,19 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status rest
 
-### Find Locations in Beacon Hill 2 (Areas)  ·  None  ·  from gis-hunter
+### Find Locations in Beacon Hill 2 (Areas)  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/Fe): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/Fe
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
-### Beacon Hill (Areas)  ·  None  ·  from gis-hunter
+### Beacon Hill (Areas)  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/Feat): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/Feat
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Bitter Choices map  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Bitter_Choices_map/FeatureServer
@@ -5744,10 +5736,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Nisga’a Memorial Lava Bed Park Comments_fieldworker  ·    ·  from gis-hunter
 - url: https://services3.arcgis.com/V6CSJCQOs0jUJNOw/arcgis/rest/services/survey123_3e63cb512c644486a9dd5e51818f1317_fieldworker/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### OR_Tillamook_Client _ Tracy Chung _ Property Profile _ 14050 Riverview Meadows Ln _ 9_2024  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer
@@ -5820,12 +5812,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status error Token Required.
 
-### Immaculate Conception to Vatican St Peters Basillica  ·  None  ·  from gis-hunter
+### Immaculate Conception to Vatican St Peters Basillica  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters Basillica/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Shubenacadie Aquifer Protection Overlay Zone  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer
@@ -5918,12 +5910,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status rest
 
-### Gray Treefrog (Hyla versicolor)  ·  None  ·  from gis-hunter
+### Gray Treefrog (Hyla versicolor)  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureSer): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureSer
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Rockwood Sensitive Area  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer
@@ -5971,10 +5963,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Frontenac Arch Biosphere Region Boundary  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/sMxDdLiczOFCdYFP/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Frontenac Arch Biosphere Region Boundary  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer
@@ -6012,12 +6004,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status rest
 
-### Merge Sunnidale_Playground Sunnidale Park Facilities  ·  None  ·  from gis-hunter
+### Merge Sunnidale_Playground Sunnidale Park Facilities  ·    ·  from gis-hunter
 - url: https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park Facilities/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park ): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park 
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
 
 ### Dumfries & Galloway TTG Management Plans  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
@@ -6030,24 +6022,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Buffer_of_Edenvale_Hospitals  ·    ·  from gis-hunter
 - url: https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Buffer_of_Edenvale_Hospitals/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Travel_from_Edenvale_Hospitals_(2_3_Kilometers)  ·    ·  from gis-hunter
 - url: https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Travel_from_Edenvale_Hospitals_(2_3_Kilometers)/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Edenvale Shopping Centres  ·    ·  from gis-hunter
 - url: https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Edenvale_Shopping_Centres/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Little Tennessee Conservation Priority Areas by HUC12  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer
@@ -6059,10 +6051,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Spencer Town Boundary  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status robots-unreadable
 
 ### Inland Empire Utilities Agency Divisions  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer
@@ -6945,40 +6937,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: already read as sgidb
 - closes: not probed
 
-## REJECT (1654)
+### MaineDMR - Burnt Island Trails  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
+- overlap: same publisher as sgmea
 
-### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
-- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
-- WHY: NOT A PARK LAYER (coverage): closes 60 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
-- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
-- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
-- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 1796 of the area's 1796 missing parks lie in the layer's extent)
-  - AU-0002 Willis Island National Park → polygon "Cape York Region"
-  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
-  - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
-  - AU-0034 Swan Estuary Marine Park → polygon "South West"
-  - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
-  - AU-0046 Rowley Shoals Marine Park → polygon "Kimberley"
-  - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
-  - AU-0060 Ngari Capes Marine Park → polygon "South West"
-  - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "South West"
-  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
-  - AU-0099 Wunaamin Conservation Park → polygon "Kimberley"
-  - AU-0126 Geikie Gorge National Park → polygon "Kimberley"
-  - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
-  - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
-  - AU-0162 Brooking Gorge Conservation Park → polygon "Kimberley"
-  - AU-0181 You Yangs Regional Park → polygon "Victoria"
-  - AU-0184 Yarrawonga Regional Park → polygon "New South Wales"
-  - AU-0187 Yaringa Marine National Park → polygon "Victoria"
-  - AU-0196 Woowookarung Regional Park → polygon "Victoria"
-  - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
-  - AU-0199 Wodonga Regional Park → polygon "Victoria"
-  - AU-0216 Wandong Regional Park → polygon "Victoria"
-  - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
-  - AU-0230 Tocumwal Regional Park → polygon "Victoria"
-  - AU-0250 St Arnaud Regional Park → polygon "Victoria"
+## REJECT (1655)
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/0
@@ -7012,6 +6979,39 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
   - AU-0230 Tocumwal Regional Park → polygon "Victoria"
   - AU-0250 St Arnaud Regional Park → polygon "Victoria"
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 50 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
+- closes: 50 of 60 tested missing parks (by name 0, pin only 50; 1796 of the area's 1796 missing parks lie in the layer's extent)
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
+  - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
+  - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
+  - AU-0060 Ngari Capes Marine Park → polygon "South West"
+  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
+  - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
+  - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
+  - AU-0181 You Yangs Regional Park → polygon "Victoria"
+  - AU-0184 Yarrawonga Regional Park → polygon "New South Wales"
+  - AU-0187 Yaringa Marine National Park → polygon "Victoria"
+  - AU-0196 Woowookarung Regional Park → polygon "Victoria"
+  - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
+  - AU-0199 Wodonga Regional Park → polygon "Victoria"
+  - AU-0216 Wandong Regional Park → polygon "Victoria"
+  - AU-0223 Twelve Apostles Marine National Park → polygon "Victoria"
+  - AU-0250 St Arnaud Regional Park → polygon "Victoria"
+  - AU-0258 Shepparton Regional Park → polygon "Victoria"
+  - AU-0260 Shallow Inlet Coastal & Marine Park → polygon "Victoria"
+  - AU-0273 Port Phillip Heads Marine National Park → polygon "Victoria"
+  - AU-0277 Point Hicks Marine National Park → polygon "Victoria"
+  - AU-0278 Point Cook Coastal Park → polygon "Victoria"
+  - AU-0279 Point Addis Marine National Park → polygon "Victoria"
+  - AU-0293 Nooramunga Coastal & Marine Park → polygon "Victoria"
+  - AU-0295 Ninety Mile Beach Marine National Park → polygon "Victoria"
+  - AU-0326 Mount Alexander Regional Park → polygon "Victoria"
 
 ### Public/CadastreParcels  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer/0
@@ -13344,7 +13344,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30624 records · sample HA. / HA. / HA.
+- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30630 records · sample HA. / HA. / HA.
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining  ·  AU  ·  from harvester
@@ -13360,7 +13360,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30624 records · sample HA. / HA. / HA.
+- facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30630 records · sample HA. / HA. / HA.
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
@@ -13507,6 +13507,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 1807 records
 - closes: not probed
+
+### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/7
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
+- closes: 0 of 55 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Property_and_Planning_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer/16
@@ -18440,7 +18448,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 1340 records · sample Bernard Street Road Bridge / McNeil Road Bridge / Lake Road Bridge
-- closes: 0 of 48 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 29 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Water_FS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer/19
