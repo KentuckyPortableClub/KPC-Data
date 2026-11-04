@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T17:09Z",
+ "checked": "2026-11-04T17:34Z",
  "switched_on": false,
  "results": [
   {
@@ -600,9 +600,11 @@
   {
    "path": "data/docs/US-CT.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_huntin"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-DC.json",
@@ -665,7 +667,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla"
+    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/wilbur_wright.pdf"
    ],
    "notes": [],
    "verdict": "HOLD"
