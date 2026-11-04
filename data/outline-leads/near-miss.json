@@ -7,18 +7,18 @@
   "AZ": 5,
   "CA": 8,
   "CA-AB": 13,
-  "CA-BC": 19,
+  "CA-BC": 15,
   "CA-MB": 14,
-  "CA-NB": 24,
+  "CA-NB": 41,
   "CA-NL": 2,
-  "CA-NS": 23,
-  "CA-NT": 3,
+  "CA-NS": 37,
+  "CA-NT": 2,
   "CA-NU": 1,
-  "CA-ON": 43,
-  "CA-PE": 7,
-  "CA-QC": 62,
+  "CA-ON": 49,
+  "CA-PE": 8,
+  "CA-QC": 66,
   "CA-SI": 0,
-  "CA-SK": 12,
+  "CA-SK": 13,
   "CA-SP": 0,
   "CA-YT": 2,
   "CO": 4,
@@ -40,7 +40,7 @@
   "MN": 2,
   "MO": 2,
   "MS": 5,
-  "MT": 5,
+  "MT": 4,
   "NC": 15,
   "ND": 7,
   "NE": 2,
@@ -65,15 +65,15 @@
   "WV": 0,
   "WY": 18
  },
- "made": "2026-11-03",
+ "made": "2026-11-04",
  "parks": {
   "CA-0049": {
    "acts": 19,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 105736.2295,
      "id": "Québec Aire :n-Aire faunique communautaire du Lac Saint-Pierre",
-     "km": 0.24,
+     "km": 0.0,
      "layer": "Québec Aire faunique communautaire (MRNF)",
      "name": "Aire faunique communautaire du Lac Saint-Pierre",
      "why": "shares lac, pierre"
@@ -111,14 +111,6 @@
    "acts": 39,
    "leads": [
     {
-     "acres": 1835.4670290518554,
-     "id": "1626",
-     "km": 0.0,
-     "layer": "Nova Scotia Department of Natural Resources",
-     "name": "Cole Harbour - Lawrencetown Provincial Park",
-     "why": "shares lawrencetown"
-    },
-    {
      "acres": 0.0,
      "id": "Nova Scotia ~2:13",
      "km": 0.0,
@@ -133,49 +125,41 @@
      "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
      "name": "Cole Harbour - Lawrencetown Provincial Park",
      "why": "shares lawrencetown"
+    },
+    {
+     "acres": 1835.4670290518554,
+     "id": "1626",
+     "km": 0.03,
+     "layer": "Nova Scotia Department of Natural Resources",
+     "name": "Cole Harbour - Lawrencetown Provincial Park",
+     "why": "shares lawrencetown"
     }
    ],
    "n": "Lawrencetown Beach Provincial Park",
    "site": false,
    "st": "CA-NS"
   },
-  "CA-0485": {
-   "acts": 2,
+  "CA-0478": {
+   "acts": 32,
    "leads": [
     {
-     "acres": 459.38976232195523,
-     "id": "1109",
+     "acres": 0.0,
+     "id": "NS NS_Lands_:124",
      "km": 0.0,
-     "layer": "Nova Scotia Environment and Climate Change",
-     "name": "Trout Brook Wilderness Area",
-     "why": "shares brook, trout"
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "Scots Bay North Provincial Park",
+     "why": "shares scots"
     },
     {
      "acres": 0.0,
-     "id": "Nova Scotia :13",
+     "id": "NS NS_Lands_~1:124",
      "km": 0.0,
-     "layer": "Nova Scotia protected areas (NS Environment)",
-     "name": "Trout Brook Wilderness Area",
-     "why": "shares brook, trout"
-    },
-    {
-     "acres": 0.0,
-     "id": "Nova Scotia ~2:109",
-     "km": 0.0,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Trout Brook Wilderness Area",
-     "why": "shares brook, trout"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :109",
-     "km": 0.0,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Trout Brook Wilderness Area",
-     "why": "shares brook, trout"
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "Scots Bay North Provincial Park",
+     "why": "shares scots"
     }
    ],
-   "n": "Trout Brook Provincial Park",
+   "n": "Scots Bay Provincial Park",
    "site": false,
    "st": "CA-NS"
   },
@@ -191,7 +175,7 @@
      "why": "shares royal"
     },
     {
-     "acres": 0.0,
+     "acres": 469.4995,
      "id": "Québec prote:57",
      "km": 0.0,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -209,7 +193,7 @@
     {
      "acres": 7.363729,
      "id": "11084",
-     "km": 0.99,
+     "km": 0.95,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la protection des espèces et de*",
      "name": "Parc-du-Mont-Royal Habitat Of A Threatened Or Vulnerable Plant Species",
      "why": "shares royal"
@@ -233,15 +217,15 @@
     {
      "acres": 361.16866799999997,
      "id": "10926",
-     "km": 0.97,
+     "km": 0.82,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Montmorency Water Fowl Gathering Area",
      "why": "shares montmorency"
     },
     {
-     "acres": 0.0,
+     "acres": 361.16866799999997,
      "id": "Québec prote:1114",
-     "km": 0.97,
+     "km": 0.87,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques de Montmorency",
      "why": "shares montmorency"
@@ -257,7 +241,7 @@
     {
      "acres": 15.846354359988137,
      "id": "17921",
-     "km": 0.04,
+     "km": 0.02,
      "layer": "City of Winnipeg - Public Works Department - Parks and Open Spaces",
      "name": "Whittier Park Riparian Forest",
      "why": "shares whittier"
@@ -272,7 +256,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "NT GNWT Envi:40391",
+     "id": "NT GNWT Envi:40449",
      "km": 0.0,
      "layer": "NT GNWT Environment and Natural Resources (credit: Conservation Planning and Implementation Unit, ENR; Open Government Licence - NWT)",
      "name": "Hidden Lake Territorial Park",
@@ -287,7 +271,7 @@
    "acts": 26,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 13.2695385,
      "id": "NB-PP Govern:15",
      "km": 0.03,
      "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
@@ -327,25 +311,25 @@
      "why": "shares basin, head"
     },
     {
-     "acres": 2135.48141,
-     "id": "21883",
-     "km": 0.0,
-     "layer": "Fisheries And Oceans Canada",
-     "name": "Basin Head Marine Protected Area",
-     "why": "shares basin, head"
-    },
-    {
      "acres": 380.7563888883671,
      "id": "94",
-     "km": 0.15,
+     "km": 0.07,
      "layer": "PEI Department of Environment, Energy & Climate Action",
      "name": "Basin Head Sand Dunes Natural Area",
      "why": "shares basin, head"
     },
     {
+     "acres": 2135.48141,
+     "id": "21883",
+     "km": 0.26,
+     "layer": "Fisheries And Oceans Canada",
+     "name": "Basin Head Marine Protected Area",
+     "why": "shares basin, head"
+    },
+    {
      "acres": 40.965996606317844,
      "id": "100",
-     "km": 0.51,
+     "km": 0.49,
      "layer": "PEI Department of Environment, Energy & Climate Action",
      "name": "Basin Head Sand Dunes Natural Area",
      "why": "shares basin, head"
@@ -359,6 +343,14 @@
    "acts": 10,
    "leads": [
     {
+     "acres": 1835.4670290518554,
+     "id": "1626",
+     "km": 0.0,
+     "layer": "Nova Scotia Department of Natural Resources",
+     "name": "Cole Harbour - Lawrencetown Provincial Park",
+     "why": "same kind of place (pp)"
+    },
+    {
      "acres": 0.0,
      "id": "Nova Scotia ~2:13",
      "km": 0.0,
@@ -371,14 +363,6 @@
      "id": "NS-PPA Nova :13",
      "km": 0.0,
      "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Cole Harbour - Lawrencetown Provincial Park",
-     "why": "same kind of place (pp)"
-    },
-    {
-     "acres": 1835.4670290518554,
-     "id": "1626",
-     "km": 0.15,
-     "layer": "Nova Scotia Department of Natural Resources",
      "name": "Cole Harbour - Lawrencetown Provincial Park",
      "why": "same kind of place (pp)"
     }
@@ -409,23 +393,23 @@
     {
      "acres": 358.40109199999995,
      "id": "14585",
-     "km": 0.11,
+     "km": 0.0,
      "layer": "Private",
      "name": "Canton-de-Shefford Nature Reserve",
      "why": "shares shefford"
     },
     {
-     "acres": 0.0,
+     "acres": 358.40109199999995,
      "id": "Québec prote:3647",
-     "km": 0.11,
+     "km": 0.0,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Réserve naturelle du Canton-de-Shefford",
      "why": "shares shefford"
     },
     {
-     "acres": 0.0,
+     "acres": 358.40109199999995,
      "id": "Québec recog:3647",
-     "km": 0.11,
+     "km": 0.0,
      "layer": "Québec recognized nature reserves (MELCCFP)",
      "name": "Réserve naturelle du Canton-de-Shefford",
      "why": "shares shefford"
@@ -456,18 +440,18 @@
    "leads": [
     {
      "acres": 2541.030136,
-     "id": "11421",
-     "km": 0.03,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Canal de Beauharnois (Centre Du) Water Fowl Gathering Area",
-     "why": "shares beauharnois"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:459",
      "km": 0.03,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques du Canal de Beauharnois (Centre Du)",
+     "why": "shares beauharnois"
+    },
+    {
+     "acres": 2541.030136,
+     "id": "11421",
+     "km": 0.04,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Canal de Beauharnois (Centre Du) Water Fowl Gathering Area",
      "why": "shares beauharnois"
     }
    ],
@@ -475,13 +459,69 @@
    "site": false,
    "st": "CA-QC"
   },
+  "CA-1031": {
+   "acts": 7,
+   "leads": [
+    {
+     "acres": 2780.0053815,
+     "id": "11883",
+     "km": 0.51,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Pointe du Lac -Rivière Yamachiche Water Fowl Gathering Area",
+     "why": "shares pointe, yamachiche"
+    },
+    {
+     "acres": 2780.0053815,
+     "id": "Québec prote:2573",
+     "km": 0.52,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques Pointe du Lac -Rivière Yamachiche",
+     "why": "shares pointe, yamachiche"
+    }
+   ],
+   "n": "Réserve naturelle de Pointe-Yamachiche Nature Reserve",
+   "site": false,
+   "st": "CA-QC"
+  },
+  "CA-1043": {
+   "acts": 68,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:8",
+     "km": 0.0,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Mount Nemo",
+     "why": "shares nemo"
+    }
+   ],
+   "n": "Mount Nemo Conservation Reserve",
+   "site": false,
+   "st": "CA-ON"
+  },
+  "CA-1046": {
+   "acts": 54,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:4",
+     "km": 0.0,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Rattlesnake Point",
+     "why": "shares rattlesnake"
+    }
+   ],
+   "n": "Rattlesnake Point Conservation Area",
+   "site": false,
+   "st": "CA-ON"
+  },
   "CA-1048": {
    "acts": 28,
    "leads": [
     {
      "acres": 706.7203,
      "id": "17896",
-     "km": 0.67,
+     "km": 0.68,
      "layer": "City of Winnipeg - Public Works Department - Parks and Open Spaces",
      "name": "Assiniboine Forest",
      "why": "shares assiniboine"
@@ -495,17 +535,17 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 9508.6004,
      "id": "Manitoba wil:58",
-     "km": 0.17,
+     "km": 0.0,
      "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Hecla Island",
      "why": "same kind of place (wma)"
     },
     {
-     "acres": 0.0,
+     "acres": 9508.6004,
      "id": "Manitoba wil:58",
-     "km": 0.17,
+     "km": 0.0,
      "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Hecla Island",
      "why": "same kind of place (wma)"
@@ -519,9 +559,9 @@
    "acts": 1,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 477.738722015,
      "id": "Saskatchewan~6:91",
-     "km": 0.01,
+     "km": 0.0,
      "layer": "Saskatchewan regional parks (Government of Saskatchewan)",
      "name": "Thomson Lake Regional Park",
      "why": "same kind of place (rp)"
@@ -537,7 +577,7 @@
     {
      "acres": 1732.2157364418688,
      "id": "16998",
-     "km": 0.18,
+     "km": 0.0,
      "layer": "Hamilton Conservation Authority",
      "name": "Beverley Swamp Natural Area",
      "why": "same kind of place (ca)"
@@ -561,7 +601,7 @@
     {
      "acres": 0.0,
      "id": "Ontario cons:9617",
-     "km": 0.48,
+     "km": 0.0,
      "layer": "Ontario conservation reserves (Land Information Ontario)",
      "name": "BLANCHE RIVER CONSERVATION RESERVE",
      "why": "same kind of place (ca)"
@@ -571,13 +611,61 @@
    "site": false,
    "st": "CA-ON"
   },
+  "CA-1440": {
+   "acts": 45,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:1",
+     "km": 0.14,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Hilton Falls",
+     "why": "shares falls, hilton"
+    }
+   ],
+   "n": "Hilton Falls Conservation Area",
+   "site": false,
+   "st": "CA-ON"
+  },
+  "CA-1528": {
+   "acts": 29,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:7",
+     "km": 0.0,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Mountsberg",
+     "why": "shares mountsberg"
+    }
+   ],
+   "n": "Mountsberg Conservation Area",
+   "site": false,
+   "st": "CA-ON"
+  },
+  "CA-1541": {
+   "acts": 42,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:3",
+     "km": 0.0,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Crawford Lake",
+     "why": "shares crawford"
+    }
+   ],
+   "n": "Crawford Lake Conservation Area",
+   "site": false,
+   "st": "CA-ON"
+  },
   "CA-1587": {
    "acts": 36,
    "leads": [
     {
      "acres": 2986.1536455226806,
      "id": "16999",
-     "km": 0.02,
+     "km": 0.01,
      "layer": "Hamilton Conservation Authority",
      "name": "Dundas Valley Conservation Area",
      "why": "same kind of place (ca)"
@@ -593,7 +681,7 @@
     {
      "acres": 173.026042578623,
      "id": "22424",
-     "km": 0.03,
+     "km": 0.04,
      "layer": "National Capital Commission (NCC)",
      "name": "Rideau River, Hog's Back",
      "why": "shares back, hogs"
@@ -609,7 +697,7 @@
     {
      "acres": 2986.1536455226806,
      "id": "16999",
-     "km": 0.33,
+     "km": 0.31,
      "layer": "Hamilton Conservation Authority",
      "name": "Dundas Valley Conservation Area",
      "why": "same kind of place (ca)"
@@ -625,7 +713,7 @@
     {
      "acres": 2986.1536455226806,
      "id": "16999",
-     "km": 0.19,
+     "km": 0.0,
      "layer": "Hamilton Conservation Authority",
      "name": "Dundas Valley Conservation Area",
      "why": "same kind of place (ca)"
@@ -633,7 +721,7 @@
     {
      "acres": 12.182276499999999,
      "id": "17286",
-     "km": 0.44,
+     "km": 0.47,
      "layer": "Hamilton Conservation Authority",
      "name": "Dundas Valley",
      "why": "same kind of place (ca)"
@@ -647,25 +735,25 @@
    "acts": 12,
    "leads": [
     {
-     "acres": 143.9081918231871,
-     "id": "1299",
-     "km": 0.46,
-     "layer": "Nova Scotia Department of Natural Resources and Renewables",
-     "name": "McNabs & Lawlor Island Provincial Park",
+     "acres": 0.0,
+     "id": "NS NS_Lands_:59",
+     "km": 0.0,
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "MacCormacks Beach Provincial Park",
      "why": "same kind of place (pp)"
     },
     {
      "acres": 0.0,
-     "id": "Nova Scotia :1125",
-     "km": 0.46,
-     "layer": "Nova Scotia protected areas (NS Environment)",
-     "name": "McNabs & Lawlor Island Provincial Park",
+     "id": "NS NS_Lands_~1:59",
+     "km": 0.0,
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "MacCormacks Beach Provincial Park",
      "why": "same kind of place (pp)"
     },
     {
      "acres": 0.0,
      "id": "Nova Scotia ~2:1221",
-     "km": 0.46,
+     "km": 0.32,
      "layer": "Nova Scotia parks and protected areas",
      "name": "McNabs & Lawlor Island Provincial Park",
      "why": "same kind of place (pp)"
@@ -673,13 +761,37 @@
     {
      "acres": 0.0,
      "id": "NS-PPA Nova :1221",
-     "km": 0.46,
+     "km": 0.32,
      "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
      "name": "McNabs & Lawlor Island Provincial Park",
      "why": "same kind of place (pp)"
     }
    ],
    "n": "McCormacks Beach Provincial Park",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-1849": {
+   "acts": 11,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "NS NS_Lands_:43",
+     "km": 0.39,
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "Shubenacadie Provincial Park",
+     "why": "shares shubenacadie"
+    },
+    {
+     "acres": 0.0,
+     "id": "NS NS_Lands_~1:43",
+     "km": 0.39,
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "Shubenacadie Provincial Park",
+     "why": "shares shubenacadie"
+    }
+   ],
+   "n": "Shubenacadie Provincial  Park Provincial Wildlife Area",
    "site": false,
    "st": "CA-NS"
   },
@@ -743,7 +855,7 @@
      "why": "shares banc"
     },
     {
-     "acres": 0.0,
+     "acres": 247105.0,
      "id": "Québec prote:4832",
      "km": 0.0,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -761,15 +873,15 @@
     {
      "acres": 1428.3410314999999,
      "id": "11611",
-     "km": 0.0,
+     "km": 0.08,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Baie Comeau Water Fowl Gathering Area",
      "why": "shares baie, comeau"
     },
     {
-     "acres": 0.0,
+     "acres": 1428.3410314999999,
      "id": "Québec prote:4035",
-     "km": 0.0,
+     "km": 0.09,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques Baie Comeau",
      "why": "shares baie, comeau"
@@ -803,19 +915,27 @@
    "site": false,
    "st": "CA-QC"
   },
+  "CA-1966": {
+   "acts": 7,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "QC PoleConne:5",
+     "km": 0.56,
+     "layer": "QC PoleConnectivite_CIMA_2025",
+     "name": "Parc du Mont Sainte-Anne",
+     "why": "shares anne, sainte"
+    }
+   ],
+   "n": "Canyon Sainte-Anne Nature Reserve",
+   "site": false,
+   "st": "CA-QC"
+  },
   "CA-2039": {
    "acts": 0,
    "leads": [
     {
      "acres": 9.8100685,
-     "id": "11425",
-     "km": 0.66,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Île aux Fraises Island Or Peninsula Inhabited By A Colony Of Birds",
-     "why": "shares fraises, ile"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:1234",
      "km": 0.66,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -823,15 +943,23 @@
      "why": "shares fraises, ile"
     },
     {
+     "acres": 9.8100685,
+     "id": "11425",
+     "km": 0.68,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Île aux Fraises Island Or Peninsula Inhabited By A Colony Of Birds",
+     "why": "shares fraises, ile"
+    },
+    {
      "acres": 998.9713834999999,
      "id": "22160",
-     "km": 0.03,
+     "km": 0.01,
      "layer": "Canadian Wildlife Service, Quebec Region",
      "name": "Estuary Islands National Wildlife Area",
      "why": "same kind of place (wma)"
     },
     {
-     "acres": 0.0,
+     "acres": 998.3042,
      "id": "Québec prote:2155",
      "km": 0.03,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -849,15 +977,15 @@
     {
      "acres": 378.169492,
      "id": "11988",
-     "km": 0.16,
+     "km": 0.0,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "lac de l'Île Blanche Water Fowl Gathering Area",
      "why": "shares blanche, ile"
     },
     {
-     "acres": 0.0,
+     "acres": 378.169492,
      "id": "Québec prote:3268",
-     "km": 0.16,
+     "km": 0.02,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques du lac de l'Île Blanche",
      "why": "shares blanche, ile"
@@ -865,13 +993,13 @@
     {
      "acres": 13.7637485,
      "id": "12021",
-     "km": 0.17,
+     "km": 0.12,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Île Blanche Island Or Peninsula Inhabited By A Colony Of Birds",
      "why": "shares blanche, ile"
     },
     {
-     "acres": 0.0,
+     "acres": 13.7637485,
      "id": "Québec prote:4733",
      "km": 0.17,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -895,25 +1023,25 @@
      "why": "shares perce"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:736",
-     "km": 0.47,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Refuge d'oiseaux migrateurs de l'Île-Bonaventure-et-du-Rocher-Percé",
-     "why": "shares perce"
-    },
-    {
      "acres": 2237.2936121000002,
      "id": "22099",
-     "km": 0.49,
+     "km": 0.32,
      "layer": "Canadian Wildlife Service, Quebec Region",
      "name": "Bonaventure Island and Percé Rock Bird Sanctuary",
      "why": "shares perce"
     },
     {
+     "acres": 3209.8198185,
+     "id": "Québec prote:736",
+     "km": 0.35,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Refuge d'oiseaux migrateurs de l'Île-Bonaventure-et-du-Rocher-Percé",
+     "why": "shares perce"
+    },
+    {
      "acres": 283.00194335,
      "id": "15852",
-     "km": 0.61,
+     "km": 0.59,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction des parcs",
      "name": "Île-Bonaventure-et-du-Rocher-Percé National Park (Québec)",
      "why": "shares perce"
@@ -929,7 +1057,7 @@
     {
      "acres": 162.44929805,
      "id": "15747",
-     "km": 0.5,
+     "km": 0.41,
      "layer": "Private",
      "name": "Ïle-à-l'Aigle et Île-aux-Cerfeuils Natural Area Under Private Stewardship",
      "why": "same kind of place (eco)"
@@ -937,7 +1065,7 @@
     {
      "acres": 46.258055999999996,
      "id": "11075",
-     "km": 0.72,
+     "km": 0.73,
      "layer": "Private",
      "name": "Île aux Asperges Natural Area Under Private Stewardship",
      "why": "same kind of place (eco)"
@@ -945,7 +1073,7 @@
     {
      "acres": 35.484277999999996,
      "id": "10447",
-     "km": 0.82,
+     "km": 0.83,
      "layer": "Private",
      "name": "Île aux Canards Natural Area Under Private Stewardship",
      "why": "same kind of place (eco)"
@@ -975,9 +1103,25 @@
    "acts": 3,
    "leads": [
     {
+     "acres": 72.89844605,
+     "id": "15656",
+     "km": 0.96,
+     "layer": "Private",
+     "name": "Sainte-Anne-des-Lacs (partie Gagnon-Zwicky) Natural Area Under Private Stewardship",
+     "why": "shares anne, lacs, sainte"
+    },
+    {
+     "acres": 72.89844605,
+     "id": "Québec prote:666",
+     "km": 0.96,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Milieu naturel de conservation volontaire Sainte-Anne-des-Lacs (partie Gagnon-Zwicky)",
+     "why": "shares anne, lacs, sainte"
+    },
+    {
      "acres": 11.5941666,
      "id": "10530",
-     "km": 0.67,
+     "km": 0.71,
      "layer": "Private",
      "name": "Forêt Héritage (partie Duguay) Natural Area Under Private Stewardship",
      "why": "same kind of place (eco)"
@@ -989,14 +1133,6 @@
      "layer": "Private",
      "name": "Forêt Héritage (partie Albert) Natural Area Under Private Stewardship",
      "why": "same kind of place (eco)"
-    },
-    {
-     "acres": 61.207908499999995,
-     "id": "10493",
-     "km": 0.81,
-     "layer": "Private",
-     "name": "Forêt-Héritage (partie Maisonneuve) Natural Area Under Private Stewardship",
-     "why": "same kind of place (eco)"
     }
    ],
    "n": "Sentiers Plein Air Ste-Anne-des-Lacs Nature Reserve",
@@ -1007,9 +1143,9 @@
    "acts": 3,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 1102.0883,
      "id": "Québec Zone :n-Zec de la Rivière-des-Escoumins",
-     "km": 0.56,
+     "km": 0.24,
      "layer": "Québec Zone d exploitation contrôlée (MRNF)",
      "name": "Zec de la Rivière-des-Escoumins",
      "why": "shares zec"
@@ -1023,9 +1159,9 @@
    "acts": 3,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 216135.33035,
      "id": "Québec Zone :n-Zec Batiscan-Neilson",
-     "km": 0.03,
+     "km": 0.26,
      "layer": "Québec Zone d exploitation contrôlée (MRNF)",
      "name": "Zec Batiscan-Neilson",
      "why": "shares zec"
@@ -1041,7 +1177,7 @@
     {
      "acres": 0.0,
      "id": "Manitoba Par:32",
-     "km": 0.07,
+     "km": 0.06,
      "layer": "Manitoba Parks (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Primrose Provincial Park",
      "why": "shares primrose"
@@ -1079,7 +1215,7 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 3657.154,
      "id": "Manitoba wil:5",
      "km": 0.0,
      "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
@@ -1087,7 +1223,7 @@
      "why": "same kind of place (wma)"
     },
     {
-     "acres": 0.0,
+     "acres": 3657.154,
      "id": "Manitoba wil:5",
      "km": 0.0,
      "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
@@ -1103,18 +1239,18 @@
    "acts": 1,
    "leads": [
     {
-     "acres": 0.0,
-     "id": "Manitoba wil~2:122",
+     "acres": 320.2403864723118,
+     "id": "17838",
      "km": 0.0,
-     "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
+     "layer": "Manitoba Natural Resources and Indigenous Futures",
      "name": "Narcisse Wildlife Management Area",
      "why": "shares narcisse"
     },
     {
-     "acres": 320.2403864723118,
-     "id": "17838",
-     "km": 0.33,
-     "layer": "Manitoba Natural Resources and Indigenous Futures",
+     "acres": 0.0,
+     "id": "Manitoba wil~2:122",
+     "km": 0.0,
+     "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Narcisse Wildlife Management Area",
      "why": "shares narcisse"
     }
@@ -1127,9 +1263,9 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 685565.48428543,
      "id": "Manitoba pro:22",
-     "km": 0.21,
+     "km": 0.01,
      "layer": "Manitoba provincial forests (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Sandilands Provincial Forest",
      "why": "shares sandilands"
@@ -1161,7 +1297,7 @@
     {
      "acres": 160.558560502304,
      "id": "18229",
-     "km": 0.86,
+     "km": 0.91,
      "layer": "Government of Saskatchewan, Ministry of Environment",
      "name": "Lower Armit River",
      "why": "shares armit"
@@ -1193,7 +1329,7 @@
     {
      "acres": 160.558560502304,
      "id": "18229",
-     "km": 0.86,
+     "km": 0.91,
      "layer": "Government of Saskatchewan, Ministry of Environment",
      "name": "Lower Armit River",
      "why": "shares armit"
@@ -1209,7 +1345,7 @@
     {
      "acres": 19967.949914689052,
      "id": "18231",
-     "km": 0.16,
+     "km": 0.0,
      "layer": "Government of Saskatchewan, Ministry of Environment",
      "name": "Nisbet South",
      "why": "shares nisbet"
@@ -1225,7 +1361,7 @@
     {
      "acres": 145.032642840161,
      "id": "18468",
-     "km": 0.17,
+     "km": 0.0,
      "layer": "Government of Saskatchewan, Ministry of Tourism, Parks, Culture and Sport",
      "name": "Armit River Recreation Site",
      "why": "shares armit"
@@ -1233,13 +1369,29 @@
     {
      "acres": 0.0,
      "id": "SK-ALL Gover:3246",
-     "km": 0.17,
+     "km": 0.0,
      "layer": "SK-ALL Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
      "name": "Armit River Recreation Site",
      "why": "shares armit"
     }
    ],
    "n": "North Armit River Recreation Site",
+   "site": false,
+   "st": "CA-SK"
+  },
+  "CA-2782": {
+   "acts": 6,
+   "leads": [
+    {
+     "acres": 80038.8168405,
+     "id": "22204",
+     "km": 0.71,
+     "layer": "Canadian Wildlife Service, Prairie Region",
+     "name": "Old Wives Lake Migratory Bird Sanctuary",
+     "why": "shares wives"
+    }
+   ],
+   "n": "Old Wives Recreation Site",
    "site": false,
    "st": "CA-SK"
   },
@@ -1295,19 +1447,19 @@
    "acts": 1,
    "leads": [
     {
+     "acres": 197572.83166128502,
+     "id": "Alberta Park:452",
+     "km": 0.49,
+     "layer": "Alberta Parks (Government of Alberta)",
+     "name": "Elbow-Sheep Wildland",
+     "why": "shares elbow"
+    },
+    {
      "acres": 197888.91523977558,
      "id": "18904",
      "km": 0.49,
      "layer": "Parks Division, Alberta Forestry and Parks",
      "name": "Elbow-Sheep Wildland Provincial Park",
-     "why": "shares elbow"
-    },
-    {
-     "acres": 0.0,
-     "id": "Alberta Park:452",
-     "km": 0.49,
-     "layer": "Alberta Parks (Government of Alberta)",
-     "name": "Elbow-Sheep Wildland",
      "why": "shares elbow"
     }
    ],
@@ -1327,7 +1479,7 @@
      "why": "shares castle"
     },
     {
-     "acres": 0.0,
+     "acres": 63013.522773665,
      "id": "Alberta Park:467",
      "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -1343,7 +1495,7 @@
    "acts": 9,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 604.89129476,
      "id": "Alberta Park:87",
      "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -1355,6 +1507,14 @@
      "id": "AB-PLUZ Gove:35",
      "km": 0.0,
      "layer": "AB-PLUZ Government of Alberta - Forestry and Parks / Public Lands",
+     "name": "McLean Creek Off-Highway Vehicle",
+     "why": "shares mclean"
+    },
+    {
+     "acres": 0.0,
+     "id": "AB Public La:35",
+     "km": 0.0,
+     "layer": "AB Public Land Use Zone",
      "name": "McLean Creek Off-Highway Vehicle",
      "why": "shares mclean"
     }
@@ -1369,15 +1529,15 @@
     {
      "acres": 4128.711366541312,
      "id": "18838",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Lands Operations Division, Alberta Forestry and Parks",
      "name": "Hargrave Coulees Natural Area",
      "why": "shares coulees"
     },
     {
-     "acres": 0.0,
+     "acres": 4481.029004445,
      "id": "Alberta Park:477",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
      "name": "Hargrave Coulees",
      "why": "shares coulees"
@@ -1407,19 +1567,19 @@
    "acts": 28,
    "leads": [
     {
+     "acres": 123216.38481373999,
+     "id": "Alberta Park:433",
+     "km": 0.0,
+     "layer": "Alberta Parks (Government of Alberta)",
+     "name": "Waterton Lakes",
+     "why": "shares waterton"
+    },
+    {
      "acres": 124788.025,
      "id": "22053",
      "km": 0.0,
      "layer": "Parks Canada Agency",
      "name": "Waterton Lakes National Park Of Canada",
-     "why": "shares waterton"
-    },
-    {
-     "acres": 0.0,
-     "id": "Alberta Park:433",
-     "km": 0.0,
-     "layer": "Alberta Parks (Government of Alberta)",
-     "name": "Waterton Lakes",
      "why": "shares waterton"
     }
    ],
@@ -1437,6 +1597,14 @@
      "layer": "Government of British Columbia",
      "name": "ANHLUUT'UKWSIM LAX̱MIHL ANGWINGA'ASANSKWHL NISG̱A'A PARK [A.K.A. NISG̱A'A MEMORIAL LAVA BED PARK]",
      "why": "shares nisgaa"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC BC Parks :428",
+     "km": 0.0,
+     "layer": "BC BC Parks EcoRes and PAs",
+     "name": "ANHLUUT'UKWSIM LAXMIHL ANWINGA'ASANAKWHL NISGA'A",
+     "why": "shares nisgaa"
     }
    ],
    "n": "Nisga'a Memorial Lava Bed Provincial Park",
@@ -1448,7 +1616,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6129755",
+     "id": "BC-HP Govern:6146806",
      "km": 0.0,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Barkerville",
@@ -1465,7 +1633,7 @@
     {
      "acres": 0.0,
      "id": "BC recreatio:1530486",
-     "km": 0.69,
+     "km": 0.56,
      "layer": "BC recreation sites (BC Ministry of Forests)",
      "name": "Eagle Mountain",
      "why": "same kind of place (rec)"
@@ -1475,28 +1643,12 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-3298": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 177.91559999999998,
-     "id": "20258",
-     "km": 0.02,
-     "layer": "Government of British Columbia",
-     "name": "TŜI ʔEẐƗSH ECOLOGICAL RESERVE",
-     "why": "same kind of place (eco)"
-    }
-   ],
-   "n": "Cardiff Mountain Ecological Reserve",
-   "site": false,
-   "st": "CA-BC"
-  },
   "CA-3358": {
    "acts": 18,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC local and:3572240",
+     "id": "BC local and:3596210",
      "km": 0.02,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Colony Farm Regional Park",
@@ -1504,7 +1656,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6126510",
+     "id": "BC-HP Govern:6143561",
      "km": 0.03,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Colony Farm Manager's Residence",
@@ -1512,30 +1664,22 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6128032",
+     "id": "BC-HP Govern:6145083",
      "km": 0.03,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Colony Farm Bunkhouse",
      "why": "shares colony, farm"
-    }
-   ],
-   "n": "Colony Farm Community Gardens at ƛ̓éxətəm Regional Park",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-3359": {
-   "acts": 36,
-   "leads": [
+    },
     {
      "acres": 0.0,
-     "id": "BC local and:3572240",
-     "km": 0.41,
-     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
-     "name": "Colony Farm Regional Park",
+     "id": "BC RegionalP:31",
+     "km": 0.02,
+     "layer": "BC RegionalParksBoundaries_OpenData",
+     "name": "ƛ̓éxətəm Regional Park",
      "why": "same kind of place (rp)"
     }
    ],
-   "n": "ƛ̓éxətəm Regional Park",
+   "n": "Colony Farm Community Gardens at ƛ̓éxətəm Regional Park",
    "site": false,
    "st": "CA-BC"
   },
@@ -1560,7 +1704,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC local and:3570585",
+     "id": "BC local and:3594555",
      "km": 0.0,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Hickey Street Reservoir Park",
@@ -1571,28 +1715,12 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-3679": {
-   "acts": 11,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6131949",
-     "km": 0.23,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Kilby General Store Museum",
-     "why": "shares kilby"
-    }
-   ],
-   "n": "Kilby Provincial Park",
-   "site": false,
-   "st": "CA-BC"
-  },
   "CA-3739": {
    "acts": 36,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6126284",
+     "id": "BC-HP Govern:6143335",
      "km": 0.0,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Point Atkinson Lighthouse",
@@ -1608,7 +1736,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC local and:3571151",
+     "id": "BC local and:3595121",
      "km": 0.0,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Cates Park/ Whey-Ah-Wichen",
@@ -1616,7 +1744,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC local and:3571324",
+     "id": "BC local and:3595294",
      "km": 0.9,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Cates Park/ Whey-Ah-Wichen",
@@ -1632,7 +1760,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC local and:3569331",
+     "id": "BC local and:3593301",
      "km": 0.0,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Locarno Park",
@@ -1640,7 +1768,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC local and:3569539",
+     "id": "BC local and:3593509",
      "km": 0.67,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Locarno Park",
@@ -1651,59 +1779,19 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-3968": {
-   "acts": 26,
+  "CA-3778": {
+   "acts": 0,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC local and:3572252",
-     "km": 0.01,
-     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
-     "name": "Pitt River Greenway",
-     "why": "shares greenway, pitt"
+     "id": "BC BC Parks :359",
+     "km": 0.0,
+     "layer": "BC BC Parks EcoRes and PAs",
+     "name": "MAQUINNA MARINE PARK",
+     "why": "shares maquinna"
     }
    ],
-   "n": "Pitt River Regional Greenway Park",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-4025": {
-   "acts": 79,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC local and:3571712",
-     "km": 0.4,
-     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
-     "name": "Burnaby Lake Regional Nature Park",
-     "why": "shares burnaby"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC local and:3571857",
-     "km": 0.4,
-     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
-     "name": "Burnaby Lake Regional Nature Park",
-     "why": "shares burnaby"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC local and:3571858",
-     "km": 0.4,
-     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
-     "name": "Burnaby Lake Regional Nature Park",
-     "why": "shares burnaby"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC local and:3571718",
-     "km": 0.49,
-     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
-     "name": "Burnaby Lake Regional Nature Park",
-     "why": "shares burnaby"
-    }
-   ],
-   "n": "Robert Burnaby Park",
+   "n": "Maquinna Marine Provincial Park",
    "site": false,
    "st": "CA-BC"
   },
@@ -1713,7 +1801,7 @@
     {
      "acres": 2257603.17205,
      "id": "22055",
-     "km": 0.99,
+     "km": 0.06,
      "layer": "Parks Canada Agency",
      "name": "Wood Buffalo National Park Of Canada",
      "why": "shares buffalo"
@@ -1723,29 +1811,13 @@
    "site": false,
    "st": "CA-NT"
   },
-  "CA-4340": {
-   "acts": 2,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "NT GNWT Envi:40391",
-     "km": 0.82,
-     "layer": "NT GNWT Environment and Natural Resources (credit: Conservation Planning and Implementation Unit, ENR; Open Government Licence - NWT)",
-     "name": "Hidden Lake Territorial Park",
-     "why": "same kind of place (pp)"
-    }
-   ],
-   "n": "Powder Point Territorial Park",
-   "site": false,
-   "st": "CA-NT"
-  },
   "CA-4444": {
    "acts": 0,
    "leads": [
     {
      "acres": 0.0,
      "id": "New Brunswic~1:898",
-     "km": 0.18,
+     "km": 0.0,
      "layer": "New Brunswick Nature Legacy protected areas (GNB)",
      "name": "Fourty Mile Brook",
      "why": "shares brook"
@@ -1755,13 +1827,29 @@
    "site": false,
    "st": "CA-NB"
   },
+  "CA-4526": {
+   "acts": 3,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:20",
+     "km": 0.81,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Tabusintac Estuary Nature Reserve is made up of several properties around the estuary and much of the long barrier beach. From April to August, beach access is restricted to near the water to avoid disturbing nests of the endangered piping plover.\r\n",
+     "why": "shares estuary, tabusintac"
+    }
+   ],
+   "n": "Tabusintac Lagoon and River Estuary Ramsar Site",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-4530": {
    "acts": 5,
    "leads": [
     {
      "acres": 0.0,
      "id": "New Brunswic~2:4",
-     "km": 0.01,
+     "km": 0.0,
      "layer": "New Brunswick wildlife refuges (GNB)",
      "name": "Wilson's Point Wildlife Refuge",
      "why": "shares wilsons"
@@ -1769,7 +1857,7 @@
     {
      "acres": 177.91559999999998,
      "id": "22057",
-     "km": 0.45,
+     "km": 0.41,
      "layer": "Parks Canada Agency",
      "name": "Beaubears Island - Site of Boishébert and Beaubears Island Shipbuilding National Historic Sites of Canada",
      "why": "same kind of place (hist)"
@@ -1783,9 +1871,17 @@
    "acts": 12,
    "leads": [
     {
+     "acres": 0.0,
+     "id": "NL Provincia:8",
+     "km": 0.14,
+     "layer": "NL Provincial_Protected_Areas_NL",
+     "name": "Codroy Valley Provincial Park",
+     "why": "shares codroy"
+    },
+    {
      "acres": 60.78783,
      "id": "18",
-     "km": 0.16,
+     "km": 0.15,
      "layer": "Government of Newfoundland and Labrador, Department of Tourism, Culture, Arts and Recreation, Parks Division",
      "name": "Codroy Valley Provincial Park",
      "why": "shares codroy"
@@ -1805,6 +1901,14 @@
      "layer": "Nature Conservancy of Canada",
      "name": "Savage Harbour Sand Dunes Natural Area",
      "why": "shares harbour"
+    },
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:193",
+     "km": 0.63,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "This coastline of beaches and dunes on St. Peter's Harbour and Lake Run Nature Reserve hosts the most species at risk of any other ecosystem in PEI. The large, dynamic dunes, are characteristic of PEI's north shore and a feature of the landscape here.\r\n",
+     "why": "shares harbour, peters"
     }
    ],
    "n": "St. Peters Harbour National Historic Site",
@@ -1817,7 +1921,7 @@
     {
      "acres": 138.77752951250056,
      "id": "122",
-     "km": 0.03,
+     "km": 0.01,
      "layer": "Island Nature Trust",
      "name": "Bunbury (Big Courtin) Island Natural Area",
      "why": "same kind of place (eco)"
@@ -1825,9 +1929,17 @@
     {
      "acres": 32.376087511872264,
      "id": "127",
-     "km": 0.07,
+     "km": 0.09,
      "layer": "Island Nature Trust",
      "name": "Bunbury (Big Courtin) Island Natural Area",
+     "why": "same kind of place (eco)"
+    },
+    {
+     "acres": 30.89282174537997,
+     "id": "120",
+     "km": 1.0,
+     "layer": "Island Nature Trust",
+     "name": "Holland Natural Area (Little Courtin Island)",
      "why": "same kind of place (eco)"
     }
    ],
@@ -1841,7 +1953,7 @@
     {
      "acres": 1.0340016592632388,
      "id": "155",
-     "km": 0.49,
+     "km": 0.48,
      "layer": "Island Nature Trust",
      "name": "Tryon River Salt Marsh (Barbara Green Natural Area)",
      "why": "shares tryon"
@@ -1849,7 +1961,7 @@
     {
      "acres": 11.275867734394446,
      "id": "153",
-     "km": 0.49,
+     "km": 0.48,
      "layer": "Island Nature Trust",
      "name": "Tryon River Salt Marsh (Barbara Green Natural Area)",
      "why": "shares tryon"
@@ -1865,13 +1977,13 @@
     {
      "acres": 389.6457266628722,
      "id": "486",
-     "km": 0.35,
+     "km": 0.33,
      "layer": "PEI Department of Environment, Energy & Climate Action",
      "name": "Ellens Creek Estuary Natural Area and Wildlife Management Area",
      "why": "same kind of place (eco)"
     },
     {
-     "acres": 0.0,
+     "acres": 389.64356557,
      "id": "PE Province :2",
      "km": 0.35,
      "layer": "PE Province of PEI, Department of Land & Environment (credit; updated Dec 2025)",
@@ -1888,8 +2000,8 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6132068",
-     "km": 0.0,
+     "id": "BC-HP Govern:6149119",
+     "km": 0.04,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Athabasca Pass Trail",
      "why": "shares athabasca, pass"
@@ -1911,7 +2023,7 @@
      "why": "shares banff"
     },
     {
-     "acres": 0.0,
+     "acres": 1692718.82815878,
      "id": "Alberta Park:435",
      "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -1935,7 +2047,7 @@
      "why": "shares jasper"
     },
     {
-     "acres": 0.0,
+     "acres": 2775657.02835926,
      "id": "Alberta Park:436",
      "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -1959,7 +2071,7 @@
      "why": "shares jasper"
     },
     {
-     "acres": 0.0,
+     "acres": 2775657.02835926,
      "id": "Alberta Park:436",
      "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -1976,7 +2088,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6132845",
+     "id": "BC-HP Govern:6149896",
      "km": 0.06,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kootenai House",
@@ -1991,19 +2103,19 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 864867.5,
-     "id": "22003",
+     "acres": 364331.612,
+     "id": "22004",
      "km": 0.0,
      "layer": "Parks Canada Agency",
-     "name": "Gwaii Haanas National Marine Conservation Area Reserve & Haida Heritage Site",
+     "name": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site",
      "why": "same kind of place (hist)"
     },
     {
-     "acres": 364331.612,
-     "id": "22004",
-     "km": 0.01,
+     "acres": 864867.5,
+     "id": "22003",
+     "km": 0.14,
      "layer": "Parks Canada Agency",
-     "name": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site",
+     "name": "Gwaii Haanas National Marine Conservation Area Reserve & Haida Heritage Site",
      "why": "same kind of place (hist)"
     }
    ],
@@ -2017,7 +2129,7 @@
     {
      "acres": 0.0,
      "id": "Manitoba Par:64",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Manitoba Parks (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Upper Fort Garry Heritage Provincial Park",
      "why": "shares garry"
@@ -2033,7 +2145,7 @@
     {
      "acres": 733333.5085,
      "id": "22034",
-     "km": 0.0,
+     "km": 0.1,
      "layer": "Parks Canada Agency",
      "name": "Riding Mountain National Park Of Canada",
      "why": "shares riding"
@@ -2049,7 +2161,7 @@
     {
      "acres": 177.91559999999998,
      "id": "22057",
-     "km": 0.42,
+     "km": 0.4,
      "layer": "Parks Canada Agency",
      "name": "Beaubears Island - Site of Boishébert and Beaubears Island Shipbuilding National Historic Sites of Canada",
      "why": "shares boishebert"
@@ -2065,7 +2177,7 @@
     {
      "acres": 0.0,
      "id": "New Brunswic~1:1059",
-     "km": 0.46,
+     "km": 0.39,
      "layer": "New Brunswick Nature Legacy protected areas (GNB)",
      "name": "Le Coupe River",
      "why": "shares coupe"
@@ -2079,7 +2191,7 @@
    "acts": 11,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 0.3212365,
      "id": "NB-PP Govern:22",
      "km": 0.86,
      "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
@@ -2113,7 +2225,7 @@
     {
      "acres": 14628.616,
      "id": "22058",
-     "km": 0.04,
+     "km": 0.11,
      "layer": "Parks Canada Agency",
      "name": "Fortress of Louisbourg National Historic site",
      "why": "same kind of place (hist)"
@@ -2145,7 +2257,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.0,
+     "km": 0.1,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2159,19 +2271,19 @@
    "acts": 11,
    "leads": [
     {
-     "acres": 500.23441990000003,
-     "id": "10456",
-     "km": 0.75,
-     "layer": "Private",
-     "name": "Carillon (partie 7800444 Canada Inc) Natural Area Under Private Stewardship",
+     "acres": 500.2344199,
+     "id": "Québec prote:2841",
+     "km": 0.14,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Milieu naturel de conservation volontaire de Carillon (partie 7800444 Canada Inc)",
      "why": "shares carillon"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:2841",
-     "km": 0.75,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Milieu naturel de conservation volontaire de Carillon (partie 7800444 Canada Inc)",
+     "acres": 500.23441990000003,
+     "id": "10456",
+     "km": 0.18,
+     "layer": "Private",
+     "name": "Carillon (partie 7800444 Canada Inc) Natural Area Under Private Stewardship",
      "why": "shares carillon"
     }
    ],
@@ -2183,19 +2295,19 @@
    "acts": 12,
    "leads": [
     {
-     "acres": 500.23441990000003,
-     "id": "10456",
-     "km": 0.98,
-     "layer": "Private",
-     "name": "Carillon (partie 7800444 Canada Inc) Natural Area Under Private Stewardship",
+     "acres": 500.2344199,
+     "id": "Québec prote:2841",
+     "km": 0.21,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Milieu naturel de conservation volontaire de Carillon (partie 7800444 Canada Inc)",
      "why": "shares carillon"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:2841",
-     "km": 0.98,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Milieu naturel de conservation volontaire de Carillon (partie 7800444 Canada Inc)",
+     "acres": 500.23441990000003,
+     "id": "10456",
+     "km": 0.23,
+     "layer": "Private",
+     "name": "Carillon (partie 7800444 Canada Inc) Natural Area Under Private Stewardship",
      "why": "shares carillon"
     }
    ],
@@ -2209,13 +2321,13 @@
     {
      "acres": 1.2824749500000001,
      "id": "12069",
-     "km": 0.94,
+     "km": 0.93,
      "layer": "Private",
      "name": "rapides de Chambly (partie Panet) Natural Area Under Private Stewardship",
      "why": "shares chambly"
     },
     {
-     "acres": 0.0,
+     "acres": 1.2824749500000001,
      "id": "Québec prote:2929",
      "km": 0.94,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -2311,35 +2423,35 @@
    "acts": 11,
    "leads": [
     {
-     "acres": 54.3631,
-     "id": "22207",
-     "km": 0.39,
-     "layer": "Canadian Wildlife Service, Quebec Region",
-     "name": "Pointe-au-Père National Wildlife Area",
-     "why": "shares pere, pointe"
-    },
-    {
-     "acres": 0.0,
-     "id": "Québec prote:732",
-     "km": 0.39,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Réserve nationale de faune de Pointe-au-Père",
-     "why": "shares pere, pointe"
-    },
-    {
      "acres": 446.51873500000005,
      "id": "11812",
-     "km": 0.64,
+     "km": 0.07,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Pointe-au-Père Water Fowl Gathering Area",
      "why": "shares pere, pointe"
     },
     {
-     "acres": 0.0,
+     "acres": 446.518735,
      "id": "Québec prote:435",
-     "km": 0.64,
+     "km": 0.08,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques de la Pointe-au-Père",
+     "why": "shares pere, pointe"
+    },
+    {
+     "acres": 54.3631,
+     "id": "22207",
+     "km": 0.36,
+     "layer": "Canadian Wildlife Service, Quebec Region",
+     "name": "Pointe-au-Père National Wildlife Area",
+     "why": "shares pere, pointe"
+    },
+    {
+     "acres": 54.3631,
+     "id": "Québec prote:732",
+     "km": 0.39,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Réserve nationale de faune de Pointe-au-Père",
      "why": "shares pere, pointe"
     }
    ],
@@ -2409,7 +2521,7 @@
     {
      "acres": 45395.38410662794,
      "id": "18437",
-     "km": 0.29,
+     "km": 0.26,
      "layer": "Government of Saskatchewan, Ministry of Tourism, Parks, Culture and Sport",
      "name": "Cypress Hills Provincial Park",
      "why": "shares cypress"
@@ -2440,14 +2552,6 @@
    "leads": [
     {
      "acres": 1260.2355,
-     "id": "10820",
-     "km": 0.01,
-     "layer": "Private",
-     "name": "Corridor de biodiversité de Terrebonne other effective area-based conservation measures",
-     "why": "shares terrebonne"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:4310",
      "km": 0.01,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -2456,18 +2560,26 @@
     },
     {
      "acres": 5.06812355,
-     "id": "15746",
-     "km": 0.02,
-     "layer": "Private",
-     "name": "Rivière-des-Mille-Îles (partie Limoges) Natural Area Under Private Stewardship",
-     "why": "shares riviere"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:2119",
      "km": 0.02,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Milieu naturel de conservation volontaire de la Rivière-des-Mille-Îles (partie Limoges)",
+     "why": "shares riviere"
+    },
+    {
+     "acres": 1260.2355,
+     "id": "10820",
+     "km": 0.03,
+     "layer": "Private",
+     "name": "Corridor de biodiversité de Terrebonne other effective area-based conservation measures",
+     "why": "shares terrebonne"
+    },
+    {
+     "acres": 5.06812355,
+     "id": "15746",
+     "km": 0.07,
+     "layer": "Private",
+     "name": "Rivière-des-Mille-Îles (partie Limoges) Natural Area Under Private Stewardship",
      "why": "shares riviere"
     }
    ],
@@ -2480,18 +2592,18 @@
    "leads": [
     {
      "acres": 1805.398551,
-     "id": "11829",
-     "km": 0.72,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Baie de Mitis Water Fowl Gathering Area",
-     "why": "shares mitis"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:3993",
      "km": 0.72,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques de la Baie de Mitis",
+     "why": "shares mitis"
+    },
+    {
+     "acres": 1805.398551,
+     "id": "11829",
+     "km": 0.73,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Baie de Mitis Water Fowl Gathering Area",
      "why": "shares mitis"
     }
    ],
@@ -2503,9 +2615,9 @@
    "acts": 6,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 284899.70975,
      "id": "Québec Aire :n-Aire faunique communautaire du Lac Saint-Jean",
-     "km": 0.0,
+     "km": 0.3,
      "layer": "Québec Aire faunique communautaire (MRNF)",
      "name": "Aire faunique communautaire du Lac Saint-Jean",
      "why": "shares jean, lac"
@@ -2520,18 +2632,18 @@
    "leads": [
     {
      "acres": 60180.865988499994,
-     "id": "12011",
-     "km": 0.0,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "lac des Trente et Un Milles White-Tailed Deer Yard",
+     "id": "Québec prote:1221",
+     "km": 0.25,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de confinement du cerf de Virginie du lac des Trente et Un Milles",
      "why": "shares lac, milles"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:1221",
-     "km": 0.0,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de confinement du cerf de Virginie du lac des Trente et Un Milles",
+     "acres": 60180.865988499994,
+     "id": "12011",
+     "km": 0.26,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "lac des Trente et Un Milles White-Tailed Deer Yard",
      "why": "shares lac, milles"
     }
    ],
@@ -2543,9 +2655,9 @@
    "acts": 5,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 627.6467,
      "id": "Québec Zone :n-Zec Rivière-à-Mars",
-     "km": 0.08,
+     "km": 0.0,
      "layer": "Québec Zone d exploitation contrôlée (MRNF)",
      "name": "Zec Rivière-à-Mars",
      "why": "shares mars, riviere"
@@ -2560,22 +2672,38 @@
    "leads": [
     {
      "acres": 432.21135549999997,
-     "id": "11481",
-     "km": 0.25,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Baie des Rochers Water Fowl Gathering Area",
+     "id": "Québec prote:465",
+     "km": 0.04,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques de la Baie des Rochers",
      "why": "shares baie, rochers"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:465",
-     "km": 0.25,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques de la Baie des Rochers",
+     "acres": 432.21135549999997,
+     "id": "11481",
+     "km": 0.07,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Baie des Rochers Water Fowl Gathering Area",
      "why": "shares baie, rochers"
     }
    ],
    "n": "Parc de la Baie-des-Rochers Regional Park",
+   "site": false,
+   "st": "CA-QC"
+  },
+  "CA-4993": {
+   "acts": 5,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "QC PoleConne:1",
+     "km": 0.0,
+     "layer": "QC PoleConnectivite_CIMA_2025",
+     "name": "Milieux naturels de la MRC de la Jacques-Cartier - Station forestière Duchesnay",
+     "why": "shares duchesnay, station"
+    }
+   ],
+   "n": "Station touristique Duchesnay Regional Park",
    "site": false,
    "st": "CA-QC"
   },
@@ -2585,13 +2713,13 @@
     {
      "acres": 489.3914525,
      "id": "11737",
-     "km": 0.26,
+     "km": 0.23,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Pointe Rivière-du-Loup Water Fowl Gathering Area",
      "why": "shares pointe"
     },
     {
-     "acres": 0.0,
+     "acres": 489.3914525,
      "id": "Québec prote:1893",
      "km": 0.26,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -2608,18 +2736,18 @@
    "leads": [
     {
      "acres": 899.0174109999999,
-     "id": "11668",
-     "km": 0.39,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Port Saint-François - Nicolet Water Fowl Gathering Area",
+     "id": "Québec prote:1873",
+     "km": 0.38,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques de Port Saint-François - Nicolet",
      "why": "shares port"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:1873",
-     "km": 0.39,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques de Port Saint-François - Nicolet",
+     "acres": 899.0174109999999,
+     "id": "11668",
+     "km": 0.41,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Port Saint-François - Nicolet Water Fowl Gathering Area",
      "why": "shares port"
     }
    ],
@@ -2639,7 +2767,7 @@
      "why": "shares archipel, iles, sept"
     },
     {
-     "acres": 0.0,
+     "acres": 17124.3765,
      "id": "Québec prote:5512",
      "km": 0.0,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -2655,19 +2783,19 @@
    "acts": 68,
    "leads": [
     {
-     "acres": 651.813569,
-     "id": "11388",
-     "km": 0.04,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Rapides de Lachine (Lasalle) Water Fowl Gathering Area",
+     "acres": 651.8135689999999,
+     "id": "Québec prote:4652",
+     "km": 0.11,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques des Rapides de Lachine (Lasalle)",
      "why": "shares rapides"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:4652",
-     "km": 0.04,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques des Rapides de Lachine (Lasalle)",
+     "acres": 651.813569,
+     "id": "11388",
+     "km": 0.14,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Rapides de Lachine (Lasalle) Water Fowl Gathering Area",
      "why": "shares rapides"
     },
     {
@@ -2679,7 +2807,7 @@
      "why": "shares rapides"
     },
     {
-     "acres": 0.0,
+     "acres": 469.45007899999996,
      "id": "Québec prote:3279",
      "km": 0.8,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -2696,18 +2824,18 @@
    "leads": [
     {
      "acres": 377.5023085,
-     "id": "10927",
-     "km": 0.28,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Battures de Beauport Water Fowl Gathering Area",
+     "id": "Québec prote:5255",
+     "km": 0.22,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques des Battures de Beauport",
      "why": "shares beauport"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:5255",
-     "km": 0.28,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques des Battures de Beauport",
+     "acres": 377.5023085,
+     "id": "10927",
+     "km": 0.23,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Battures de Beauport Water Fowl Gathering Area",
      "why": "shares beauport"
     }
    ],
@@ -2720,18 +2848,18 @@
    "leads": [
     {
      "acres": 13.096565,
-     "id": "12016",
-     "km": 0.83,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Île Taylor Island Or Peninsula Inhabited By A Colony Of Birds",
+     "id": "Québec prote:545",
+     "km": 0.85,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Colonie d'oiseaux sur une île ou une presqu'île de l'Île Taylor",
      "why": "shares taylor"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:545",
-     "km": 0.83,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Colonie d'oiseaux sur une île ou une presqu'île de l'Île Taylor",
+     "acres": 13.096565,
+     "id": "12016",
+     "km": 0.86,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Île Taylor Island Or Peninsula Inhabited By A Colony Of Birds",
      "why": "shares taylor"
     }
    ],
@@ -2743,19 +2871,35 @@
    "acts": 4,
    "leads": [
     {
+     "acres": 209.63078543499998,
+     "id": "Québec prote:4804",
+     "km": 0.44,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Milieu naturel de conservation volontaire Port-au-Saumon",
+     "why": "shares port, saumon"
+    },
+    {
      "acres": 209.630789240417,
      "id": "11059",
-     "km": 0.59,
+     "km": 0.45,
      "layer": "Private",
      "name": "Port-au-Saumon Natural Area Under Private Stewardship",
      "why": "shares port, saumon"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:4804",
-     "km": 0.59,
+     "acres": 249.427787,
+     "id": "Québec prote:5331",
+     "km": 0.63,
      "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Milieu naturel de conservation volontaire Port-au-Saumon",
+     "name": "Aire de concentration d'oiseaux aquatiques de Port au Saumon",
+     "why": "shares port, saumon"
+    },
+    {
+     "acres": 249.427787,
+     "id": "11753",
+     "km": 0.67,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Port au Saumon Water Fowl Gathering Area",
      "why": "shares port, saumon"
     }
    ],
@@ -2769,15 +2913,15 @@
     {
      "acres": 425.45797585,
      "id": "12716",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Private",
      "name": "Tourbière de Johnville (partie Université Bishop/Sherbrooke - servitude) Natural Area Under Private Stewardship",
      "why": "shares johnville"
     },
     {
-     "acres": 0.0,
+     "acres": 425.45797584999997,
      "id": "Québec prote:622",
-     "km": 0.02,
+     "km": 0.01,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Milieu naturel de conservation volontaire de la Tourbière de Johnville (partie Université Sherbrooke/Université Bishop - servitude )",
      "why": "shares johnville"
@@ -2793,15 +2937,15 @@
     {
      "acres": 225.26586010000003,
      "id": "11058",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Private",
      "name": "Parc nature de Pointe-aux-Outardes Natural Area Under Private Stewardship",
      "why": "shares outardes, pointe"
     },
     {
-     "acres": 0.0,
+     "acres": 225.26586010000003,
      "id": "Québec prote:5534",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Milieu naturel de conservation volontaire Parc nature de Pointe-aux-Outardes",
      "why": "shares outardes, pointe"
@@ -2809,15 +2953,15 @@
     {
      "acres": 480.37212,
      "id": "11245",
-     "km": 0.79,
+     "km": 0.52,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Pointe aux Outardes Muskrat Habitat",
      "why": "shares outardes, pointe"
     },
     {
-     "acres": 0.0,
+     "acres": 480.37212,
      "id": "Québec prote:1953",
-     "km": 0.79,
+     "km": 0.53,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Habitat du rat musqué de la Pointe aux Outardes",
      "why": "shares outardes, pointe"
@@ -2827,13 +2971,29 @@
    "site": false,
    "st": "CA-QC"
   },
+  "CA-5063": {
+   "acts": 4,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "QC PoleConne:6",
+     "km": 0.14,
+     "layer": "QC PoleConnectivite_CIMA_2025",
+     "name": "Mont Wright",
+     "why": "shares mont, wright"
+    }
+   ],
+   "n": "Parc de la foret ancienne du Mont Wright Regional Park",
+   "site": false,
+   "st": "CA-QC"
+  },
   "CA-5094": {
    "acts": 12,
    "leads": [
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.49,
+     "km": 0.22,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2849,7 +3009,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.13,
+     "km": 0.63,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2859,13 +3019,29 @@
    "site": false,
    "st": "CA-ON"
   },
+  "CA-5105": {
+   "acts": 43,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:6",
+     "km": 0.0,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Kelso",
+     "why": "shares kelso"
+    }
+   ],
+   "n": "Kelso Conservation Area",
+   "site": false,
+   "st": "CA-ON"
+  },
   "CA-5106": {
    "acts": 7,
    "leads": [
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.32,
+     "km": 0.26,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2881,7 +3057,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.6,
+     "km": 0.13,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2897,7 +3073,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.49,
+     "km": 0.45,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2913,7 +3089,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.25,
+     "km": 0.31,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2929,7 +3105,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.25,
+     "km": 0.31,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2945,7 +3121,7 @@
     {
      "acres": 173.026042578623,
      "id": "22424",
-     "km": 0.95,
+     "km": 0.98,
      "layer": "National Capital Commission (NCC)",
      "name": "Rideau River, Hog's Back",
      "why": "shares rideau"
@@ -2961,7 +3137,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.5,
+     "km": 0.44,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -2977,7 +3153,7 @@
     {
      "acres": 0.0,
      "id": "ON-ORCA Oton:12",
-     "km": 0.08,
+     "km": 0.0,
      "layer": "ON-ORCA Otonabee Region Conservation Authority (hosted on the Ganaraska server maps2.grca.on.ca, ORCA_Public folder)",
      "name": "Selwyn Conservation Area",
      "why": "shares selwyn"
@@ -2990,6 +3166,14 @@
   "CA-5138": {
    "acts": 3,
    "leads": [
+    {
+     "acres": 35.14475573,
+     "id": "NB Parks~1:170",
+     "km": 0.0,
+     "layer": "NB Parks",
+     "name": "Odell Park",
+     "why": "shares odell"
+    },
     {
      "acres": 0.0,
      "id": "New Brunswic~2:14",
@@ -3009,7 +3193,7 @@
     {
      "acres": 689.8792772856408,
      "id": "22110",
-     "km": 0.25,
+     "km": 0.01,
      "layer": "Canadian Wildlife Service, Atlantic Region",
      "name": "Cape Jourimain National Wildlife Area",
      "why": "shares cape, jourimain"
@@ -3017,13 +3201,29 @@
     {
      "acres": 529.6882068428043,
      "id": "22111",
-     "km": 0.5,
+     "km": 0.47,
      "layer": "Canadian Wildlife Service, Atlantic Region",
      "name": "Cape Jourimain National Wildlife Area",
      "why": "shares cape, jourimain"
     }
    ],
    "n": "Cape Jourimain Lighthouse National Heritage Site",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-5171": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 1.85526434,
+     "id": "NB Parks~1:844",
+     "km": 0.24,
+     "layer": "NB Parks",
+     "name": "Kent Street Park",
+     "why": "shares street"
+    }
+   ],
+   "n": "Ferris Street Forest and Wetland Nature Reserve",
    "site": false,
    "st": "CA-NB"
   },
@@ -3037,6 +3237,14 @@
      "layer": "New Brunswick wildlife refuges (GNB)",
      "name": "Fredericton Wildlife Refuge",
      "why": "shares fredericton"
+    },
+    {
+     "acres": 0.81594071,
+     "id": "NB Parks~1:202",
+     "km": 0.96,
+     "layer": "NB Parks",
+     "name": "Fredericton River Centre (Small Craft Aquatic Cent",
+     "why": "shares fredericton"
     }
    ],
    "n": "Fredericton Military National Historic Site",
@@ -3047,9 +3255,17 @@
    "acts": 0,
    "leads": [
     {
+     "acres": 2.0141528550000003,
+     "id": "NB Parks~1:132",
+     "km": 0.04,
+     "layer": "NB Parks",
+     "name": "Bill Thorpe Walking Bridge",
+     "why": "shares bridge"
+    },
+    {
      "acres": 0.0,
      "id": "New Brunswic~2:13",
-     "km": 0.07,
+     "km": 0.04,
      "layer": "New Brunswick wildlife refuges (GNB)",
      "name": "Fredericton Wildlife Refuge",
      "why": "shares fredericton"
@@ -3059,13 +3275,29 @@
    "site": false,
    "st": "CA-NB"
   },
+  "CA-5177": {
+   "acts": 7,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:17",
+     "km": 0.01,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Located at the most northern point in New Brunswick, the Lac Frye Nature Reserve is an excellent birding site and supports the rare Gulf of St. Lawrence aster, a listed species at risk in Canada.\r\n",
+     "why": "shares frye"
+    }
+   ],
+   "n": "Frye Lake Nature Reserve",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-5178": {
    "acts": 0,
    "leads": [
     {
      "acres": 5.50163690026237,
      "id": "3273",
-     "km": 0.36,
+     "km": 0.31,
      "layer": "Nature Trust of New Brunswick",
      "name": "65152886",
      "why": "same kind of place (eco)"
@@ -3079,17 +3311,17 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 26.662629499999998,
-     "id": "22184",
+     "acres": 2558.624012,
+     "id": "22185",
      "km": 0.0,
      "layer": "Canadian Wildlife Service, Atlantic Region",
      "name": "Machias Seal Island Migratory Bird Sanctuary",
      "why": "shares machias, seal"
     },
     {
-     "acres": 2558.624012,
-     "id": "22185",
-     "km": 0.0,
+     "acres": 26.662629499999998,
+     "id": "22184",
+     "km": 0.03,
      "layer": "Canadian Wildlife Service, Atlantic Region",
      "name": "Machias Seal Island Migratory Bird Sanctuary",
      "why": "shares machias, seal"
@@ -3099,23 +3331,87 @@
    "site": false,
    "st": "CA-NB"
   },
+  "CA-5193": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 5.841315095000001,
+     "id": "NB Parks~1:139",
+     "km": 0.03,
+     "layer": "NB Parks",
+     "name": "McEvoy Street Park / Fisher Field Park",
+     "why": "shares field"
+    },
+    {
+     "acres": 9.580013745,
+     "id": "NB Parks~1:126",
+     "km": 0.03,
+     "layer": "NB Parks",
+     "name": "Malloy Park",
+     "why": "shares malloy"
+    },
+    {
+     "acres": 5.833901945,
+     "id": "NB Parks~1:221",
+     "km": 0.87,
+     "layer": "NB Parks",
+     "name": "Barkers Street Sports Field",
+     "why": "shares field"
+    }
+   ],
+   "n": "Malloy Field Recreation Park",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-5198": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.801361515,
+     "id": "NB Parks~1:128",
+     "km": 0.27,
+     "layer": "NB Parks",
+     "name": "Marysville Cenotaph",
+     "why": "shares marysville"
+    }
+   ],
+   "n": "Marysville Cotton Mill National Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-5199": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.801361515,
+     "id": "NB Parks~1:128",
+     "km": 0.17,
+     "layer": "NB Parks",
+     "name": "Marysville Cenotaph",
+     "why": "shares marysville"
+    }
+   ],
+   "n": "Marysville Historic District National Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-5202": {
    "acts": 5,
    "leads": [
+    {
+     "acres": 511.06256099999996,
+     "id": "NB-PP Govern:20",
+     "km": 0.0,
+     "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
+     "name": "Minister's Island",
+     "why": "shares ministers"
+    },
     {
      "acres": 0.0,
      "id": "New Brunswic~2:6",
      "km": 0.0,
      "layer": "New Brunswick wildlife refuges (GNB)",
      "name": "Minister's Island Wildlife Management Area",
-     "why": "shares ministers"
-    },
-    {
-     "acres": 0.0,
-     "id": "NB-PP Govern:20",
-     "km": 0.0,
-     "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
-     "name": "Minister's Island",
      "why": "shares ministers"
     }
    ],
@@ -3127,7 +3423,7 @@
    "acts": 8,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 12.800039,
      "id": "NB-PP Govern:21",
      "km": 0.0,
      "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
@@ -3137,7 +3433,7 @@
     {
      "acres": 0.0,
      "id": "New Brunswic~1:72",
-     "km": 0.55,
+     "km": 0.08,
      "layer": "New Brunswick Nature Legacy protected areas (GNB)",
      "name": "Miscou Island",
      "why": "shares miscou"
@@ -3147,11 +3443,27 @@
    "site": false,
    "st": "CA-NB"
   },
-  "CA-5227": {
+  "CA-5221": {
    "acts": 4,
    "leads": [
     {
      "acres": 0.0,
+     "id": "NB Parks:37",
+     "km": 0.32,
+     "layer": "NB Parks",
+     "name": "City Hall Plaza",
+     "why": "shares city"
+    }
+   ],
+   "n": "Saint John City Market National Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-5227": {
+   "acts": 4,
+   "leads": [
+    {
+     "acres": 0.3212365,
      "id": "NB-PP Govern:22",
      "km": 0.08,
      "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
@@ -3169,7 +3481,7 @@
     {
      "acres": 13.532932167291158,
      "id": "3378",
-     "km": 0.04,
+     "km": 0.02,
      "layer": "Nature Trust of New Brunswick",
      "name": "Tobique River Island",
      "why": "same kind of place (eco)"
@@ -3177,7 +3489,7 @@
     {
      "acres": 0.39900913541837496,
      "id": "3377",
-     "km": 0.43,
+     "km": 0.45,
      "layer": "Nature Trust of New Brunswick",
      "name": "Tobique River Island",
      "why": "same kind of place (eco)"
@@ -3191,7 +3503,7 @@
    "acts": 3,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 0.3212365,
      "id": "NB-PP Govern:22",
      "km": 0.26,
      "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
@@ -3203,13 +3515,45 @@
    "site": false,
    "st": "CA-NB"
   },
+  "CA-5243": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 10.773530894999999,
+     "id": "NB Parks~1:1514",
+     "km": 0.34,
+     "layer": "NB Parks",
+     "name": "Nashwaak Trail",
+     "why": "shares nashwaak"
+    }
+   ],
+   "n": "Fort Nashwaak (Naxoat) National Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-5244": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.81594071,
+     "id": "NB Parks~1:202",
+     "km": 0.76,
+     "layer": "NB Parks",
+     "name": "Fredericton River Centre (Small Craft Aquatic Cent",
+     "why": "shares fredericton"
+    }
+   ],
+   "n": "Fredericton City Hall National Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-5259": {
    "acts": 7,
    "leads": [
     {
      "acres": 0.0,
      "id": "New Brunswic~2:1",
-     "km": 0.16,
+     "km": 0.0,
      "layer": "New Brunswick wildlife refuges (GNB)",
      "name": "Kings Landing Wildlife Management Area",
      "why": "shares kings, landing"
@@ -3225,7 +3569,7 @@
     {
      "acres": 336.0628,
      "id": "17227",
-     "km": 0.39,
+     "km": 0.42,
      "layer": "Cataraqui Region Conservation Authority (CRCA)",
      "name": "Little Cataraqui Creek Valleylands",
      "why": "shares cataraqui"
@@ -3256,7 +3600,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC local and:3576839",
+     "id": "BC local and:3600809",
      "km": 0.08,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "City Park",
@@ -3264,7 +3608,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6130029",
+     "id": "BC-HP Govern:6147080",
      "km": 0.22,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kelowna  Fire Hall",
@@ -3272,7 +3616,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6128739",
+     "id": "BC-HP Govern:6145790",
      "km": 0.43,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kelowna Club",
@@ -3280,7 +3624,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6132320",
+     "id": "BC-HP Govern:6149371",
      "km": 0.51,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kelowna and District Memorial Arena",
@@ -3297,10 +3641,34 @@
     {
      "acres": 0.0,
      "id": "NS-NHS Nova :8",
-     "km": 0.31,
+     "km": 0.18,
      "layer": "NS-NHS Nova Scotia Department of Natural Resources and Renewables (NovaRoc)",
      "name": "Halifax Citadel",
      "why": "shares halifax"
+    },
+    {
+     "acres": 13.047144000000001,
+     "id": "NS HRM Parks:345",
+     "km": 0.84,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX CENTRAL COMMON",
+     "why": "shares halifax"
+    },
+    {
+     "acres": 29.084258499999997,
+     "id": "NS HRM Parks:133",
+     "km": 0.85,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX NORTH COMMON",
+     "why": "shares halifax"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.23,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
     }
    ],
    "n": "Halifax City Hall National Historic Site",
@@ -3311,15 +3679,55 @@
    "acts": 9,
    "leads": [
     {
+     "acres": 15.913562,
+     "id": "NS HRM Parks:121",
+     "km": 0.03,
+     "layer": "NS HRM Parks",
+     "name": "PUBLIC GARDENS",
+     "why": "shares gardens"
+    },
+    {
      "acres": 0.0,
      "id": "NS-NHS Nova :8",
      "km": 0.16,
      "layer": "NS-NHS Nova Scotia Department of Natural Resources and Renewables (NovaRoc)",
      "name": "Halifax Citadel",
      "why": "shares halifax"
+    },
+    {
+     "acres": 13.047144000000001,
+     "id": "NS HRM Parks:345",
+     "km": 0.56,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX CENTRAL COMMON",
+     "why": "shares halifax"
+    },
+    {
+     "acres": 29.084258499999997,
+     "id": "NS HRM Parks:133",
+     "km": 0.77,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX NORTH COMMON",
+     "why": "shares halifax"
     }
    ],
    "n": "Halifax Public Gardens National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5432": {
+   "acts": 107,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.28,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "S.S. Acadia National Historic Site",
    "site": false,
    "st": "CA-NS"
   },
@@ -3337,7 +3745,7 @@
     {
      "acres": 864867.5,
      "id": "22003",
-     "km": 0.23,
+     "km": 0.22,
      "layer": "Parks Canada Agency",
      "name": "Gwaii Haanas National Marine Conservation Area Reserve & Haida Heritage Site",
      "why": "same kind of place (hist)"
@@ -3347,13 +3755,29 @@
    "site": false,
    "st": "CA-BC"
   },
+  "CA-5508": {
+   "acts": 36,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "ON-CH Conser:2",
+     "km": 0.01,
+     "layer": "ON-CH Conservation Halton (Halton Region Conservation Authority)",
+     "name": "Robert Edmondson",
+     "why": "shares edmondson, robert"
+    }
+   ],
+   "n": "Robert Edmondson Conservation Area",
+   "site": false,
+   "st": "CA-ON"
+  },
   "CA-5527": {
    "acts": 26,
    "leads": [
     {
      "acres": 41.217114,
      "id": "16982",
-     "km": 0.1,
+     "km": 0.06,
      "layer": "City of Kitchener",
      "name": "Grand River Natural Area - Pioneer Tower",
      "why": "shares pioneer, tower"
@@ -3369,7 +3793,7 @@
     {
      "acres": 540.369214,
      "id": "17361",
-     "km": 0.39,
+     "km": 0.4,
      "layer": "Toronto and Region Conservation Authority",
      "name": "TRCA Passive Conservation Areas",
      "why": "same kind of place (ca)"
@@ -3385,7 +3809,7 @@
     {
      "acres": 3307.5745564999997,
      "id": "17382",
-     "km": 0.16,
+     "km": 0.38,
      "layer": "Toronto and Region Conservation Authority",
      "name": "TRCA Management Areas",
      "why": "same kind of place (ca)"
@@ -3393,7 +3817,7 @@
     {
      "acres": 540.369214,
      "id": "17361",
-     "km": 0.44,
+     "km": 0.41,
      "layer": "Toronto and Region Conservation Authority",
      "name": "TRCA Passive Conservation Areas",
      "why": "same kind of place (ca)"
@@ -3401,7 +3825,7 @@
     {
      "acres": 251.5776005,
      "id": "17386",
-     "km": 0.82,
+     "km": 0.87,
      "layer": "Toronto and Region Conservation Authority",
      "name": "Kleinburg New Forest North",
      "why": "same kind of place (ca)"
@@ -3417,7 +3841,7 @@
     {
      "acres": 838.7485015,
      "id": "17364",
-     "km": 0.1,
+     "km": 0.0,
      "layer": "Toronto and Region Conservation Authority",
      "name": "Glen Major Forest",
      "why": "same kind of place (ca)"
@@ -3433,7 +3857,7 @@
     {
      "acres": 308.1152245,
      "id": "17377",
-     "km": 0.07,
+     "km": 0.06,
      "layer": "Toronto and Region Conservation Authority",
      "name": "Goodwood",
      "why": "same kind of place (ca)"
@@ -3441,7 +3865,7 @@
     {
      "acres": 274.3112605,
      "id": "17360",
-     "km": 0.1,
+     "km": 0.08,
      "layer": "Toronto and Region Conservation Authority",
      "name": "Secord",
      "why": "same kind of place (ca)"
@@ -3457,7 +3881,7 @@
     {
      "acres": 74.8975255,
      "id": "17277",
-     "km": 0.02,
+     "km": 0.0,
      "layer": "Hamilton Conservation Authority",
      "name": "Lower Spencer Creek",
      "why": "same kind of place (ca)"
@@ -3467,29 +3891,13 @@
    "site": false,
    "st": "CA-ON"
   },
-  "CA-5605": {
-   "acts": 27,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "ON-GRCA Gran:7",
-     "km": 0.69,
-     "layer": "ON-GRCA Grand River Conservation Authority (GRCA Open Data Licence)",
-     "name": "Pinehurst Lake Conservation Area",
-     "why": "same kind of place (ca)"
-    }
-   ],
-   "n": "FWR Dickson Conservation Area",
-   "site": false,
-   "st": "CA-ON"
-  },
   "CA-5612": {
    "acts": 9,
    "leads": [
     {
      "acres": 101.43660249999999,
      "id": "17694",
-     "km": 0.44,
+     "km": 0.54,
      "layer": "Long Point Region Conservation Authority",
      "name": "Hepburn Tract",
      "why": "same kind of place (ca)"
@@ -3513,7 +3921,7 @@
     {
      "acres": 0.0,
      "id": "ON-ORCA Oton:97",
-     "km": 0.74,
+     "km": 0.77,
      "layer": "ON-ORCA Otonabee Region Conservation Authority (hosted on the Ganaraska server maps2.grca.on.ca, ORCA_Public folder)",
      "name": "Cavan Swamp Wildlife Area - Mount Pleasant Block",
      "why": "shares cavan"
@@ -3569,7 +3977,7 @@
     {
      "acres": 0.0,
      "id": "ON-GSCA Grey:1056",
-     "km": 0.35,
+     "km": 0.0,
      "layer": "ON-GSCA Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
      "name": "Hepworth",
      "why": "shares hepworth"
@@ -3585,7 +3993,7 @@
     {
      "acres": 0.0,
      "id": "ON-GSCA Grey:1053",
-     "km": 0.26,
+     "km": 0.0,
      "layer": "ON-GSCA Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
      "name": "Massie Hills",
      "why": "shares massie"
@@ -3601,7 +4009,7 @@
     {
      "acres": 0.0,
      "id": "ON-GSCA Grey:972",
-     "km": 0.03,
+     "km": 0.02,
      "layer": "ON-GSCA Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
      "name": "Bighead River",
      "why": "shares bighead"
@@ -3611,13 +4019,45 @@
    "site": false,
    "st": "CA-ON"
   },
+  "CA-5691": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "NB Parks:7",
+     "km": 0.01,
+     "layer": "NB Parks",
+     "name": "Jervis Bay Ross Memorial Park",
+     "why": "shares jervis, ross"
+    }
+   ],
+   "n": "Jervis Bay-Ross Memorial Park Natural Monument",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-5707": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "NB Parks:34",
+     "km": 0.06,
+     "layer": "NB Parks",
+     "name": "Private David Greenslade Peace Park",
+     "why": "shares david, greenslade, peace"
+    }
+   ],
+   "n": "Pte. David Robert Greenslade Peace Park Recreation Park",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-5753": {
    "acts": 8,
    "leads": [
     {
      "acres": 155.61183871263495,
      "id": "587",
-     "km": 0.35,
+     "km": 0.17,
      "layer": "PEI Department of Environment, Energy & Climate Action",
      "name": "Cape Bear Conservation Area",
      "why": "shares bear, cape"
@@ -3633,7 +4073,7 @@
     {
      "acres": 97.24849649259086,
      "id": "285",
-     "km": 0.27,
+     "km": 0.31,
      "layer": "Sir Andrew Macphail Foundation",
      "name": "Sir Andrew Macphail Natural Area",
      "why": "shares andrew, macphail, sir"
@@ -3642,6 +4082,62 @@
    "n": "Sir Andrew MacPhail Homestead National Historic Site",
    "site": false,
    "st": "CA-PE"
+  },
+  "CA-5797": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.74,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "Akins House National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5802": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 0.5189205,
+     "id": "NS HRM Parks:490",
+     "km": 0.53,
+     "layer": "NS HRM Parks",
+     "name": "SPENCER HOUSE PARK",
+     "why": "shares house"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.67,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "Black-Binney House National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5803": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.13,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "Cast Iron Façade / Coomb's Old English Shoe Store National Historic Site",
+   "site": false,
+   "st": "CA-NS"
   },
   "CA-5805": {
    "acts": 4,
@@ -3656,6 +4152,30 @@
     }
    ],
    "n": "Chapman House National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5812": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 0.5189205,
+     "id": "NS HRM Parks:490",
+     "km": 0.45,
+     "layer": "NS HRM Parks",
+     "name": "SPENCER HOUSE PARK",
+     "why": "shares house"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.75,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "Government House (Halifax) National Historic Site",
    "site": false,
    "st": "CA-NS"
   },
@@ -3675,6 +4195,22 @@
    "site": false,
    "st": "CA-NS"
   },
+  "CA-5814": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.12,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "Granville Block National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
   "CA-5815": {
    "acts": 2,
    "leads": [
@@ -3685,15 +4221,63 @@
      "layer": "NS-NHS Nova Scotia Department of Natural Resources and Renewables (NovaRoc)",
      "name": "Halifax Citadel",
      "why": "shares halifax"
+    },
+    {
+     "acres": 0.5189205,
+     "id": "NS HRM Parks:490",
+     "km": 0.41,
+     "layer": "NS HRM Parks",
+     "name": "SPENCER HOUSE PARK",
+     "why": "shares house"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.71,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
     }
    ],
    "n": "Halifax Court House National Historic Site",
    "site": false,
    "st": "CA-NS"
   },
+  "CA-5816": {
+   "acts": 15,
+   "leads": [
+    {
+     "acres": 29.084258499999997,
+     "id": "NS HRM Parks:133",
+     "km": 0.92,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX NORTH COMMON",
+     "why": "shares halifax"
+    }
+   ],
+   "n": "Halifax Dockyard National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
   "CA-5817": {
    "acts": 2,
    "leads": [
+    {
+     "acres": 29.084258499999997,
+     "id": "NS HRM Parks:133",
+     "km": 0.05,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX NORTH COMMON",
+     "why": "shares halifax"
+    },
+    {
+     "acres": 13.047144000000001,
+     "id": "NS HRM Parks:345",
+     "km": 0.27,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX CENTRAL COMMON",
+     "why": "shares halifax"
+    },
     {
      "acres": 0.0,
      "id": "NS-NHS Nova :8",
@@ -3713,13 +4297,149 @@
     {
      "acres": 0.0,
      "id": "NS-NHS Nova :8",
-     "km": 0.48,
+     "km": 0.36,
      "layer": "NS-NHS Nova Scotia Department of Natural Resources and Renewables (NovaRoc)",
      "name": "Halifax Citadel",
      "why": "shares halifax"
+    },
+    {
+     "acres": 29.084258499999997,
+     "id": "NS HRM Parks:133",
+     "km": 0.98,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX NORTH COMMON",
+     "why": "shares halifax"
+    },
+    {
+     "acres": 13.047144000000001,
+     "id": "NS HRM Parks:345",
+     "km": 0.99,
+     "layer": "NS HRM Parks",
+     "name": "HALIFAX CENTRAL COMMON",
+     "why": "shares halifax"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.05,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
     }
    ],
    "n": "Halifax Waterfront Buildings National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5820": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.5189205,
+     "id": "NS HRM Parks:490",
+     "km": 0.33,
+     "layer": "NS HRM Parks",
+     "name": "SPENCER HOUSE PARK",
+     "why": "shares house"
+    }
+   ],
+   "n": "Henry House National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5821": {
+   "acts": 65,
+   "leads": [
+    {
+     "acres": 0.9884200000000001,
+     "id": "NS HRM Parks:136",
+     "km": 0.06,
+     "layer": "NS HRM Parks",
+     "name": "SACKVILLE LANDING",
+     "why": "shares sackville"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.35,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "HMCS Sackville National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5834": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.7,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "Old Burying Ground National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5841": {
+   "acts": 3,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.84,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "St. George's Anglican Church / Round Church National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5843": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 1.186104,
+     "id": "NS HRM Parks:709",
+     "km": 0.47,
+     "layer": "NS HRM Parks",
+     "name": "SAINT MARY'S ELEMENTARY SCHOOL PARK",
+     "why": "shares marys"
+    },
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.65,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "St. Mary's Basilica National Historic Site",
+   "site": false,
+   "st": "CA-NS"
+  },
+  "CA-5844": {
+   "acts": 4,
+   "leads": [
+    {
+     "acres": 2.3474975,
+     "id": "NS HRM Parks:3",
+     "km": 0.32,
+     "layer": "NS HRM Parks",
+     "name": "HISTORIC PROPERTIES",
+     "why": "same kind of place (hist)"
+    }
+   ],
+   "n": "St. Paul's Anglican Church National Historic Site",
    "site": false,
    "st": "CA-NS"
   },
@@ -3777,17 +4497,25 @@
     {
      "acres": 4954.7270655,
      "id": "10968",
-     "km": 0.94,
+     "km": 0.17,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Pointe de Paspébiac, Bonaventure Water Fowl Gathering Area",
      "why": "shares paspebiac"
     },
     {
-     "acres": 0.0,
+     "acres": 4954.727065499999,
      "id": "Québec prote:5272",
-     "km": 0.94,
+     "km": 0.19,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques Pointe de Paspébiac, Bonaventure",
+     "why": "shares paspebiac"
+    },
+    {
+     "acres": 2692.0112910000003,
+     "id": "10969",
+     "km": 0.79,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Saint-Godefroi, Paspébiac Water Fowl Gathering Area",
      "why": "shares paspebiac"
     }
    ],
@@ -3832,18 +4560,18 @@
    "leads": [
     {
      "acres": 612.8204,
-     "id": "10847",
-     "km": 0.48,
-     "layer": "Private",
-     "name": "Pointe-aux-Prairies Natural Area Under Private Stewardship",
-     "why": "shares prairies"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:75",
      "km": 0.48,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Milieu naturel de conservation volontaire de la Pointe-aux-Prairies",
+     "why": "shares prairies"
+    },
+    {
+     "acres": 612.8204,
+     "id": "10847",
+     "km": 0.49,
+     "layer": "Private",
+     "name": "Pointe-aux-Prairies Natural Area Under Private Stewardship",
      "why": "shares prairies"
     }
    ],
@@ -3855,19 +4583,19 @@
    "acts": 14,
    "leads": [
     {
+     "acres": 513.1629535,
+     "id": "Québec prote:430",
+     "km": 0.28,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques du Canal de Beauharnois (Aval)",
+     "why": "shares beauharnois"
+    },
+    {
      "acres": 513.1629535000001,
      "id": "11417",
      "km": 0.28,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Canal de Beauharnois (Aval) Water Fowl Gathering Area",
-     "why": "shares beauharnois"
-    },
-    {
-     "acres": 0.0,
-     "id": "Québec prote:430",
-     "km": 0.28,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques du Canal de Beauharnois (Aval)",
      "why": "shares beauharnois"
     }
    ],
@@ -3884,6 +4612,22 @@
      "km": 0.2,
      "layer": "QC-SPC Ministère de la Culture et des Communications du Québec (Répertoire du patrimoine culturel du Québec), via Données Québec",
      "name": "Site archéologique de la Rive-Ouest-de-la-Blanc-Sablon",
+     "why": "shares blanc, sablon"
+    },
+    {
+     "acres": 62517.565,
+     "id": "15640",
+     "km": 0.73,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction des aires protégées",
+     "name": "Blanc-Sablon Territorial reserve for protected area purposes",
+     "why": "shares blanc, sablon"
+    },
+    {
+     "acres": 62517.565,
+     "id": "Québec prote:4814",
+     "km": 0.75,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Réserve de territoire aux fins d'aire protégée Blanc-Sablon",
      "why": "shares blanc, sablon"
     }
    ],
@@ -3903,7 +4647,7 @@
      "why": "shares bolton, est"
     },
     {
-     "acres": 0.0,
+     "acres": 332.2326725,
      "id": "Québec prote:2933",
      "km": 0.45,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -3911,7 +4655,7 @@
      "why": "shares bolton, est"
     },
     {
-     "acres": 0.0,
+     "acres": 332.2326725,
      "id": "Québec recog:2933",
      "km": 0.45,
      "layer": "Québec recognized nature reserves (MELCCFP)",
@@ -3920,10 +4664,10 @@
     },
     {
      "acres": 67.410244,
-     "id": "12770",
+     "id": "Québec prote:2207",
      "km": 0.56,
-     "layer": "Private",
-     "name": "Collines-de-Bolton-Est (Sec. CNQ / Par. Sénécal, Champigny-Bellevue(don)) Nature Reserve",
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Réserve naturelle des Collines-de-Bolton-Est (Sec. CNQ / Par. Sénécal, Champigny-Bellevue (don))",
      "why": "shares bolton, est"
     }
    ],
@@ -3936,32 +4680,32 @@
    "leads": [
     {
      "acres": 673.3858355,
-     "id": "15072",
-     "km": 0.82,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Cap-des-Rosiers 18-12-04 Water Fowl Gathering Area",
-     "why": "shares cap, rosiers"
-    },
-    {
-     "acres": 0.0,
      "id": "Québec prote:5317",
-     "km": 0.82,
+     "km": 0.0,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques de Cap-des-Rosiers 18-12-04",
      "why": "shares cap, rosiers"
     },
     {
+     "acres": 673.3858355,
+     "id": "15072",
+     "km": 0.01,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Cap-des-Rosiers 18-12-04 Water Fowl Gathering Area",
+     "why": "shares cap, rosiers"
+    },
+    {
      "acres": 2212.429907,
      "id": "10974",
-     "km": 0.96,
+     "km": 0.19,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
      "name": "Marais de l'Anse du Cap des Rosiers Water Fowl Gathering Area",
      "why": "shares cap, rosiers"
     },
     {
-     "acres": 0.0,
+     "acres": 2212.429907,
      "id": "Québec prote:1920",
-     "km": 0.96,
+     "km": 0.22,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Aire de concentration d'oiseaux aquatiques du Marais de l'Anse du Cap des Rosiers",
      "why": "shares cap, rosiers"
@@ -4064,18 +4808,18 @@
    "leads": [
     {
      "acres": 3068.203943,
-     "id": "11415",
-     "km": 0.24,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Lac St-Louis (Île St-Bernard/Pt Mercier) Water Fowl Gathering Area",
+     "id": "Québec prote:2585",
+     "km": 0.12,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques du Lac St-Louis (Île St-Bernard/Pt Mercier)",
      "why": "shares louis"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:2585",
-     "km": 0.24,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques du Lac St-Louis (Île St-Bernard/Pt Mercier)",
+     "acres": 3068.203943,
+     "id": "11415",
+     "km": 0.13,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Lac St-Louis (Île St-Bernard/Pt Mercier) Water Fowl Gathering Area",
      "why": "shares louis"
     }
    ],
@@ -4137,7 +4881,7 @@
     {
      "acres": 49351.8106,
      "id": "22063",
-     "km": 0.0,
+     "km": 0.15,
      "layer": "Parks Canada Agency",
      "name": "Rideau Canal National Historic Site",
      "why": "same kind of place (hist)"
@@ -4167,7 +4911,7 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 110762.3452,
      "id": "Manitoba wil~1:1",
      "km": 0.0,
      "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
@@ -4185,7 +4929,7 @@
     {
      "acres": 0.0,
      "id": "Manitoba Par:64",
-     "km": 0.12,
+     "km": 0.05,
      "layer": "Manitoba Parks (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
      "name": "Upper Fort Garry Heritage Provincial Park",
      "why": "shares garry"
@@ -4199,9 +4943,9 @@
    "acts": 10,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 207.94281118,
      "id": "ON-SVCA Grey:779",
-     "km": 0.02,
+     "km": 0.04,
      "layer": "ON-SVCA Grey County GIS publishing Saugeen Valley Conservation Authority property data",
      "name": "Sulphur Spring Conservation Area",
      "why": "same kind of place (ca)"
@@ -4217,7 +4961,7 @@
     {
      "acres": 8.2780175,
      "id": "17677",
-     "km": 0.0,
+     "km": 0.01,
      "layer": "Upper Thames River Conservation Authority",
      "name": "Arboretum",
      "why": "shares arboretum"
@@ -4231,7 +4975,7 @@
    "acts": 18,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 109.24586181499998,
      "id": "ON-ABCA Ausa:22",
      "km": 0.02,
      "layer": "ON-ABCA Ausable Bayfield Conservation Authority",
@@ -4239,7 +4983,7 @@
      "why": "shares dam, morrison"
     },
     {
-     "acres": 0.0,
+     "acres": 24.587688815,
      "id": "ON-ABCA Ausa:23",
      "km": 0.03,
      "layer": "ON-ABCA Ausable Bayfield Conservation Authority",
@@ -4255,7 +4999,7 @@
    "acts": 9,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 2.47105,
      "id": "Manitoba wil~1:7",
      "km": 0.39,
      "layer": "Manitoba wildlife lands (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
@@ -4271,7 +5015,7 @@
    "acts": 3,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 248.00075562499998,
      "id": "Saskatchewan~6:25",
      "km": 0.99,
      "layer": "Saskatchewan regional parks (Government of Saskatchewan)",
@@ -4295,7 +5039,7 @@
      "why": "shares banff"
     },
     {
-     "acres": 0.0,
+     "acres": 1692718.82815878,
      "id": "Alberta Park:435",
      "km": 0.0,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -4311,7 +5055,7 @@
    "acts": 1,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 23.535021515,
      "id": "Alberta Park:223",
      "km": 0.12,
      "layer": "Alberta Parks (Government of Alberta)",
@@ -4357,6 +5101,14 @@
      "layer": "AB-PLUZ Government of Alberta - Forestry and Parks / Public Lands",
      "name": "Athabasca Ranch",
      "why": "shares athabasca, ranch"
+    },
+    {
+     "acres": 0.0,
+     "id": "AB Public La:57",
+     "km": 0.0,
+     "layer": "AB Public Land Use Zone",
+     "name": "Athabasca Ranch",
+     "why": "shares athabasca, ranch"
     }
    ],
    "n": "Athabasca Ranch Public Land Use Zone Recreation Park",
@@ -4367,25 +5119,9 @@
    "acts": 0,
    "leads": [
     {
-     "acres": 0.0,
-     "id": "Nova Scotia ~2:184",
+     "acres": 2910.3739556249625,
+     "id": "719",
      "km": 0.0,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Shelburne River Wilderness Area",
-     "why": "shares shelburne"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :184",
-     "km": 0.0,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Shelburne River Wilderness Area",
-     "why": "shares shelburne"
-    },
-    {
-     "acres": 5601.446672516011,
-     "id": "1107",
-     "km": 0.03,
      "layer": "Nova Scotia Environment and Climate Change",
      "name": "Shelburne River Wilderness Area",
      "why": "shares shelburne"
@@ -4393,8 +5129,24 @@
     {
      "acres": 0.0,
      "id": "Nova Scotia :88",
-     "km": 0.03,
+     "km": 0.0,
      "layer": "Nova Scotia protected areas (NS Environment)",
+     "name": "Shelburne River Wilderness Area",
+     "why": "shares shelburne"
+    },
+    {
+     "acres": 0.0,
+     "id": "Nova Scotia :102",
+     "km": 0.0,
+     "layer": "Nova Scotia protected areas (NS Environment)",
+     "name": "Shelburne River Wilderness Area",
+     "why": "shares shelburne"
+    },
+    {
+     "acres": 0.0,
+     "id": "Nova Scotia ~2:184",
+     "km": 0.0,
+     "layer": "Nova Scotia parks and protected areas",
      "name": "Shelburne River Wilderness Area",
      "why": "shares shelburne"
     }
@@ -4415,9 +5167,25 @@
      "why": "shares cape, marys"
     },
     {
+     "acres": 0.0,
+     "id": "NL Provincia:34",
+     "km": 0.0,
+     "layer": "NL Provincial_Protected_Areas_NL",
+     "name": "Cape St. Mary's Ecological Reserve",
+     "why": "shares cape, marys"
+    },
+    {
+     "acres": 0.0,
+     "id": "NL Provincia:33",
+     "km": 0.27,
+     "layer": "NL Provincial_Protected_Areas_NL",
+     "name": "Cape St. Mary's Ecological Reserve",
+     "why": "shares cape, marys"
+    },
+    {
      "acres": 13343.67,
      "id": "28",
-     "km": 0.0,
+     "km": 0.29,
      "layer": "Government of Newfoundland and Labrador, Department of Environment and Climate Change, Policy, Planning and Natural Areas Division",
      "name": "Cape St. Mary's Ecological Reserve",
      "why": "shares cape, marys"
@@ -4432,6 +5200,22 @@
    "leads": [
     {
      "acres": 0.0,
+     "id": "Nova Scotia ~2:586",
+     "km": 0.12,
+     "layer": "Nova Scotia parks and protected areas",
+     "name": "Boar's Head Conservation Lands",
+     "why": "shares boars, head"
+    },
+    {
+     "acres": 0.0,
+     "id": "NS-PPA Nova :586",
+     "km": 0.12,
+     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
+     "name": "Boar's Head Conservation Lands",
+     "why": "shares boars, head"
+    },
+    {
+     "acres": 0.0,
      "id": "Nova Scotia :490",
      "km": 0.21,
      "layer": "Nova Scotia protected areas (NS Environment)",
@@ -4440,18 +5224,10 @@
     },
     {
      "acres": 0.0,
-     "id": "Nova Scotia ~2:586",
+     "id": "PE NCC_AT_Na:60",
      "km": 0.21,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Boar's Head Conservation Lands",
-     "why": "shares boars, head"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :586",
-     "km": 0.21,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Boar's Head Conservation Lands",
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Boar's Head Nature Reserve, located at the northern tip of Long Island, includes Wabanaki (Acadian) forest, coastal barrens and rocky shoreline. Habitat here supports barn swallow, yellow-banded bumble bee and skunk-cabbage.\r\n",
      "why": "shares boars, head"
     }
    ],
@@ -4464,24 +5240,24 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "Nova Scotia :675",
-     "km": 0.1,
-     "layer": "Nova Scotia protected areas (NS Environment)",
+     "id": "Nova Scotia ~2:771",
+     "km": 0.11,
+     "layer": "Nova Scotia parks and protected areas",
      "name": "Brier Island Conservation Lands",
      "why": "shares brier"
     },
     {
      "acres": 0.0,
-     "id": "Nova Scotia :674",
-     "km": 0.17,
-     "layer": "Nova Scotia protected areas (NS Environment)",
+     "id": "NS-PPA Nova :771",
+     "km": 0.11,
+     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
      "name": "Brier Island Conservation Lands",
      "why": "shares brier"
     },
     {
      "acres": 0.0,
      "id": "Nova Scotia ~2:770",
-     "km": 0.17,
+     "km": 0.14,
      "layer": "Nova Scotia parks and protected areas",
      "name": "Brier Island Conservation Lands",
      "why": "shares brier"
@@ -4489,7 +5265,7 @@
     {
      "acres": 0.0,
      "id": "NS-PPA Nova :770",
-     "km": 0.17,
+     "km": 0.14,
      "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
      "name": "Brier Island Conservation Lands",
      "why": "shares brier"
@@ -4503,9 +5279,25 @@
    "acts": 2,
    "leads": [
     {
+     "acres": 0.0,
+     "id": "NS NS_Lands_:163",
+     "km": 0.0,
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "Cape George Provincial Park",
+     "why": "shares cape, george"
+    },
+    {
+     "acres": 0.0,
+     "id": "NS NS_Lands_~1:163",
+     "km": 0.0,
+     "layer": "NS NS_Lands_Proposed_or_Pending_Protection",
+     "name": "Cape George Provincial Park",
+     "why": "shares cape, george"
+    },
+    {
      "acres": 135.9797514203702,
      "id": "1689",
-     "km": 0.0,
+     "km": 0.01,
      "layer": "Nova Scotia Department of Natural Resources",
      "name": "Cape George Provincial Park",
      "why": "shares cape, george"
@@ -4545,7 +5337,7 @@
     {
      "acres": 919.428284,
      "id": "22243",
-     "km": 0.4,
+     "km": 0.26,
      "layer": "Canadian Wildlife Service, Prairie Region",
      "name": "Harris Sandhills National Wildlife Area",
      "why": "same kind of place (wma)"
@@ -4553,7 +5345,7 @@
     {
      "acres": 3379648.9787151525,
      "id": "18547",
-     "km": 0.7,
+     "km": 0.69,
      "layer": "Government of Saskatchewan, Ministry of Environment",
      "name": "Wildlife Habitat Protection",
      "why": "same kind of place (wma)"
@@ -4576,18 +5368,18 @@
     },
     {
      "acres": 1165.9649425,
-     "id": "11780",
-     "km": 0.68,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
-     "name": "Île Verte Nord-Est Water Fowl Gathering Area",
+     "id": "Québec prote:4670",
+     "km": 0.05,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques de l'Île Verte Nord-Est",
      "why": "shares ile, verte"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:4670",
-     "km": 0.68,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Aire de concentration d'oiseaux aquatiques de l'Île Verte Nord-Est",
+     "acres": 1165.9649425,
+     "id": "11780",
+     "km": 0.08,
+     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction de la conservation des habitats",
+     "name": "Île Verte Nord-Est Water Fowl Gathering Area",
      "why": "shares ile, verte"
     }
    ],
@@ -4599,15 +5391,7 @@
    "acts": 3,
    "leads": [
     {
-     "acres": 223.00979145,
-     "id": "22173",
-     "km": 0.56,
-     "layer": "Canadian Wildlife Service, Quebec Region",
-     "name": "L'Isle-Verte Bird Sanctuary",
-     "why": "shares isle, verte"
-    },
-    {
-     "acres": 0.0,
+     "acres": 637.086111,
      "id": "Québec prote:3577",
      "km": 0.56,
      "layer": "Québec protected areas register (MELCCFP)",
@@ -4615,19 +5399,27 @@
      "why": "shares isle, verte"
     },
     {
+     "acres": 1150.52088,
+     "id": "Québec prote:1134",
+     "km": 0.56,
+     "layer": "Québec protected areas register (MELCCFP)",
+     "name": "Aire de concentration d'oiseaux aquatiques du Quai de l'Isle-Verte",
+     "why": "shares isle, verte"
+    },
+    {
      "acres": 1405.3034323499999,
      "id": "22071",
-     "km": 0.6,
+     "km": 0.56,
      "layer": "Canadian Wildlife Service, Quebec Region",
      "name": "Baie de L'Isle-Verte National Wildlife Area",
      "why": "shares isle, verte"
     },
     {
-     "acres": 0.0,
-     "id": "Québec prote:3578",
-     "km": 0.6,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Réserve nationale de faune de la baie de l'Isle-Verte",
+     "acres": 223.00979145,
+     "id": "22173",
+     "km": 0.57,
+     "layer": "Canadian Wildlife Service, Quebec Region",
+     "name": "L'Isle-Verte Bird Sanctuary",
      "why": "shares isle, verte"
     }
    ],
@@ -4641,7 +5433,7 @@
     {
      "acres": 318.76545,
      "id": "22061",
-     "km": 0.72,
+     "km": 0.7,
      "layer": "Parks Canada Agency",
      "name": "Navy Island National Historic Site",
      "why": "same kind of place (hist)"
@@ -4650,6 +5442,22 @@
    "n": "Battle of Chippawa (Battlefield Park) National Historic Site",
    "site": false,
    "st": "CA-ON"
+  },
+  "CA-6253": {
+   "acts": 5,
+   "leads": [
+    {
+     "acres": 3.2864965,
+     "id": "NS HRM Parks:400",
+     "km": 0.02,
+     "layer": "NS HRM Parks",
+     "name": "MOIRS MILL PARK",
+     "why": "shares moirs"
+    }
+   ],
+   "n": "Moirs Ltd. Power House Historic Site",
+   "site": false,
+   "st": "CA-NS"
   },
   "CA-6265": {
    "acts": 1,
@@ -4665,7 +5473,7 @@
     {
      "acres": 0.0,
      "id": "Yukon parks :3",
-     "km": 0.0,
+     "km": 0.05,
      "layer": "Yukon parks and protected areas (Government of Yukon)",
      "name": "Tagish Narrows",
      "why": "shares tagish"
@@ -4681,7 +5489,7 @@
     {
      "acres": 5451383.405,
      "id": "22011",
-     "km": 0.44,
+     "km": 0.34,
      "layer": "Parks Canada Agency",
      "name": "Kluane National Park Reserve Of Canada",
      "why": "same kind of place (np)"
@@ -4697,7 +5505,7 @@
     {
      "acres": 398.2591285,
      "id": "22255",
-     "km": 0.0,
+     "km": 0.02,
      "layer": "Canadian Wildlife Service, Prairie Region",
      "name": "Moose Mountain Creek National Wildlife Area",
      "why": "same kind of place (wma)"
@@ -4705,7 +5513,7 @@
     {
      "acres": 3379648.9787151525,
      "id": "18547",
-     "km": 0.79,
+     "km": 0.8,
      "layer": "Government of Saskatchewan, Ministry of Environment",
      "name": "Wildlife Habitat Protection",
      "why": "same kind of place (wma)"
@@ -4735,9 +5543,9 @@
    "acts": 16,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 330.58052847,
      "id": "ON-SVCA Grey:747",
-     "km": 0.43,
+     "km": 0.02,
      "layer": "ON-SVCA Grey County GIS publishing Saugeen Valley Conservation Authority property data",
      "name": "Carrick Forest Management Unit",
      "why": "shares carrick"
@@ -4753,7 +5561,7 @@
     {
      "acres": 14628.616,
      "id": "22058",
-     "km": 0.47,
+     "km": 0.43,
      "layer": "Parks Canada Agency",
      "name": "Fortress of Louisbourg National Historic site",
      "why": "same kind of place (hist)"
@@ -4769,7 +5577,7 @@
     {
      "acres": 14628.616,
      "id": "22058",
-     "km": 0.08,
+     "km": 0.0,
      "layer": "Parks Canada Agency",
      "name": "Fortress of Louisbourg National Historic site",
      "why": "shares louisbourg"
@@ -4777,7 +5585,7 @@
     {
      "acres": 0.0,
      "id": "NS-NHS Nova :4",
-     "km": 0.38,
+     "km": 0.0,
      "layer": "NS-NHS Nova Scotia Department of Natural Resources and Renewables (NovaRoc)",
      "name": "Fortress of Louisbourg",
      "why": "shares louisbourg"
@@ -4791,7 +5599,7 @@
    "acts": 3,
    "leads": [
     {
-     "acres": 0.0,
+     "acres": 136.995012,
      "id": "NB-PP Govern:19",
      "km": 0.63,
      "layer": "NB-PP Government of New Brunswick, Dept of Natural Resources and Energy Development (GeoNB)",
@@ -4803,12 +5611,44 @@
    "site": false,
    "st": "CA-NB"
   },
+  "CA-6385": {
+   "acts": 14,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:15",
+     "km": 0.8,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Grand Barachois nature reserve protects a dynamic dune system and salt marsh. The coastal red oak trees found here were once abundant along the Northumberland Strait coast. \r\n",
+     "why": "shares barachois"
+    }
+   ],
+   "n": "Vieille Église de Saint-Henri de Barachois Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-6391": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:67",
+     "km": 0.73,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Escuminac Nature Reserve provides breeding habitat for the at-risk piping plover and bank swallow, and boasts a huge variety of birds. This site boasts expansive bogs, spectacular peat cliffs, sandy beaches and salt marshes.\r\n",
+     "why": "shares escuminac"
+    }
+   ],
+   "n": "Escuminac Disaster Monument Provincial Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-6398": {
    "acts": 11,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6127684",
+     "id": "BC-HP Govern:6144735",
      "km": 0.03,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Craigflower Manor",
@@ -4816,7 +5656,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC local and:3576241",
+     "id": "BC local and:3600211",
      "km": 0.05,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Craigflower Farm Historic Site",
@@ -4824,7 +5664,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC local and:3575799",
+     "id": "BC local and:3599769",
      "km": 0.08,
      "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
      "name": "Craigflower-Kosapsom Park",
@@ -4832,7 +5672,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6126424",
+     "id": "BC-HP Govern:6143475",
      "km": 0.08,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Craigflower Schoolhouse",
@@ -4849,23 +5689,23 @@
     {
      "acres": 1584.0666025,
      "id": "10373",
-     "km": 0.14,
+     "km": 0.03,
      "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction des aires protégées",
      "name": "Île-Brion Ecological Reserve",
      "why": "shares brion, ile"
     },
     {
-     "acres": 0.0,
+     "acres": 1584.0666024999998,
      "id": "Québec prote:3548",
-     "km": 0.14,
+     "km": 0.04,
      "layer": "Québec protected areas register (MELCCFP)",
      "name": "Réserve écologique de l'Île-Brion",
      "why": "shares brion, ile"
     },
     {
-     "acres": 0.0,
+     "acres": 1584.0666024999998,
      "id": "Québec ecolo:3548",
-     "km": 0.14,
+     "km": 0.04,
      "layer": "Québec ecological reserves (MELCCFP)",
      "name": "Réserve écologique de l'Île-Brion",
      "why": "shares brion, ile"
@@ -4905,7 +5745,7 @@
     {
      "acres": 28.507667080809547,
      "id": "3373",
-     "km": 0.38,
+     "km": 0.41,
      "layer": "Nature Trust of New Brunswick",
      "name": "Hampton Marsh",
      "why": "shares hampton"
@@ -4913,7 +5753,7 @@
     {
      "acres": 28.53321435,
      "id": "3263",
-     "km": 0.51,
+     "km": 0.41,
      "layer": "Nature Trust of New Brunswick",
      "name": "Hampton Marsh",
      "why": "shares hampton"
@@ -4922,6 +5762,22 @@
    "n": "Hampton Goal (Jail) Historic Site",
    "site": false,
    "st": "CA-NB"
+  },
+  "CA-6439": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:9",
+     "km": 0.0,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Holman’s Island, located in Bedeque Bay, was the former site of the Island Park Hotel, established in 1872. It is home to Wabanaki (Acadian) forest and saltmarsh habitat, and is a stopover for several bird species, including Eastern Wood Peewee. \r\n",
+     "why": "shares holmans"
+    }
+   ],
+   "n": "Holman's Island National Nature Reserve",
+   "site": false,
+   "st": "CA-PE"
   },
   "CA-6444": {
    "acts": 2,
@@ -4933,9 +5789,33 @@
      "layer": "New Brunswick Nature Legacy protected areas (GNB)",
      "name": "Escuminac",
      "why": "shares escuminac"
+    },
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:67",
+     "km": 0.39,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Escuminac Nature Reserve provides breeding habitat for the at-risk piping plover and bank swallow, and boasts a huge variety of birds. This site boasts expansive bogs, spectacular peat cliffs, sandy beaches and salt marshes.\r\n",
+     "why": "shares escuminac"
     }
    ],
    "n": "Point Escuminac Lighttower Historic Site",
+   "site": false,
+   "st": "CA-NB"
+  },
+  "CA-6456": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:67",
+     "km": 0.03,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Escuminac Nature Reserve provides breeding habitat for the at-risk piping plover and bank swallow, and boasts a huge variety of birds. This site boasts expansive bogs, spectacular peat cliffs, sandy beaches and salt marshes.\r\n",
+     "why": "shares escuminac"
+    }
+   ],
+   "n": "Point Escuminac Nature Reserve",
    "site": false,
    "st": "CA-NB"
   },
@@ -4955,13 +5835,29 @@
    "site": false,
    "st": "CA-NB"
   },
+  "CA-6485": {
+   "acts": 0,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:156",
+     "km": 0.0,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "The Cap-Lumiere Nature Reserve’s salt marsh, sand dunes and sandy beach are important habitat for the nationally endangered piping plover. The old, stable dunes here support rare plant communities. \n",
+     "why": "shares cap, lumiere"
+    }
+   ],
+   "n": "Cap-Lumiere Nature Reserve",
+   "site": false,
+   "st": "CA-NB"
+  },
   "CA-6530": {
    "acts": 0,
    "leads": [
     {
      "acres": 0.0,
      "id": "New Brunswic~1:859",
-     "km": 0.06,
+     "km": 0.02,
      "layer": "New Brunswick Nature Legacy protected areas (GNB)",
      "name": "Nepisiguit River (Extension)",
      "why": "shares nepisiguit"
@@ -4991,25 +5887,17 @@
    "acts": 4,
    "leads": [
     {
-     "acres": 0.0,
-     "id": "Nova Scotia ~2:185",
-     "km": 0.51,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Ship Harbour Long Lake Wilderness Area",
-     "why": "shares harbour"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :185",
-     "km": 0.51,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Ship Harbour Long Lake Wilderness Area",
-     "why": "shares harbour"
+     "acres": 114.78027250000001,
+     "id": "NS HRM Parks:853",
+     "km": 0.0,
+     "layer": "NS HRM Parks",
+     "name": "MUSQUODOBOIT TRAIL AT GREENWAY",
+     "why": "shares musquodoboit"
     },
     {
      "acres": 36590.917059524356,
      "id": "772",
-     "km": 0.77,
+     "km": 0.75,
      "layer": "Nova Scotia Environment and Climate Change",
      "name": "Ship Harbour Long Lake Wilderness Area",
      "why": "shares harbour"
@@ -5017,8 +5905,16 @@
     {
      "acres": 0.0,
      "id": "Nova Scotia :89",
-     "km": 0.77,
+     "km": 0.76,
      "layer": "Nova Scotia protected areas (NS Environment)",
+     "name": "Ship Harbour Long Lake Wilderness Area",
+     "why": "shares harbour"
+    },
+    {
+     "acres": 0.0,
+     "id": "Nova Scotia ~2:185",
+     "km": 0.77,
+     "layer": "Nova Scotia parks and protected areas",
      "name": "Ship Harbour Long Lake Wilderness Area",
      "why": "shares harbour"
     }
@@ -5027,45 +5923,37 @@
    "site": false,
    "st": "CA-NS"
   },
-  "CA-6560": {
-   "acts": 3,
+  "CA-6579": {
+   "acts": 1,
    "leads": [
     {
      "acres": 0.0,
-     "id": "Nova Scotia ~2:1037",
-     "km": 0.01,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Kingsburg Pond Conservation Lands",
-     "why": "shares kingsburg"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :1037",
-     "km": 0.01,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Kingsburg Pond Conservation Lands",
-     "why": "shares kingsburg"
-    },
-    {
-     "acres": 1.5148865534312577,
-     "id": "1028",
-     "km": 0.06,
-     "layer": "Kingsburg Coastal Conservancy",
-     "name": "Kingsburg Pond Conservation Lands",
-     "why": "shares kingsburg"
-    },
-    {
-     "acres": 0.0,
-     "id": "Nova Scotia :939",
-     "km": 0.06,
-     "layer": "Nova Scotia protected areas (NS Environment)",
-     "name": "Kingsburg Pond Conservation Lands",
-     "why": "shares kingsburg"
+     "id": "PE NCC_AT_Na:16",
+     "km": 0.44,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "As one of the largest remaining undeveloped areas along the southern reaches of the Northumberland Strait in New Brunswick, the Baie Verte Nature Reserve is critical for protection. Part of this site is a former Girl Guide camp.\r\n",
+     "why": "shares baie, verte"
     }
    ],
-   "n": "Kingsburg Beach Provincial Park",
+   "n": "Missaguash - Baie Verte Portage Historic Site",
    "site": false,
-   "st": "CA-NS"
+   "st": "CA-NB"
+  },
+  "CA-6584": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "PE NCC_AT_Na:15",
+     "km": 0.0,
+     "layer": "PE NCC_AT_Nature_Reserves_Public_Map",
+     "name": "Grand Barachois nature reserve protects a dynamic dune system and salt marsh. The coastal red oak trees found here were once abundant along the Northumberland Strait coast. \r\n",
+     "why": "shares barachois, grand"
+    }
+   ],
+   "n": "Grand Barachois Nature Reserve",
+   "site": false,
+   "st": "CA-NB"
   },
   "CA-6619": {
    "acts": 0,
@@ -5192,22 +6080,6 @@
     }
    ],
    "n": "Halfbreed Lake National Wildlife Refuge",
-   "site": false,
-   "st": "MT"
-  },
-  "US-0405": {
-   "acts": 12,
-   "leads": [
-    {
-     "acres": 18814.12962741,
-     "id": "sgmtd81",
-     "km": 0.0,
-     "layer": "Managed Areas (land, state GIS table)",
-     "name": "CSKT Bison Range",
-     "why": "shares bison, cskt, range"
-    }
-   ],
-   "n": "CSKT Bison Range Protected Area",
    "site": false,
    "st": "MT"
   },
@@ -14350,9 +15222,9 @@
  },
  "skipped": [],
  "totals": {
-  "canada": 225,
-  "name_word": 455,
-  "parks": 603,
-  "us": 379
+  "canada": 263,
+  "name_word": 490,
+  "parks": 640,
+  "us": 378
  }
 }
