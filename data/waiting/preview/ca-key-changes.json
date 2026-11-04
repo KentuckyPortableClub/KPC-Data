@@ -1,9 +1,9 @@
 {
  "about": "ca-key: the HELD build (data/waiting/in/data/ca-key/) vs the LIVE key (data/ca-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'ca-key', 'build': the held build id from data/waiting/in/data/ca-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-04 18:40 UTC",
+ "made": "2026-11-04 20:37 UTC",
  "totals": {
-  "gained": 67,
-  "lost": 9,
+  "gained": 70,
+  "lost": 3,
   "pieces_changed": 1109,
   "grade_changed": 0
  },
@@ -45,14 +45,14 @@
    "grade_changed": 0
   },
   "CA-ON": {
-   "gained": 0,
-   "lost": 8,
+   "gained": 1,
+   "lost": 0,
    "pieces_changed": 5,
    "grade_changed": 0
   },
   "CA-QC": {
-   "gained": 1,
-   "lost": 0,
+   "gained": 3,
+   "lost": 2,
    "pieces_changed": 2,
    "grade_changed": 0
   },
@@ -188,7 +188,7 @@
     [
      "NB Parks~1:101",
      "Hyla Park - Nature Preserve",
-     12,
+     22,
      "name · NB Parks"
     ]
    ],
@@ -264,7 +264,7 @@
     [
      "NB Parks~1:97",
      "Henry Park",
-     7,
+     11,
      "name · NB Parks"
     ]
    ],
@@ -302,7 +302,7 @@
     [
      "NB Parks~1:176",
      "Reading Street Park",
-     15,
+     31,
      "name · NB Parks"
     ]
    ],
@@ -321,7 +321,7 @@
     [
      "NB Parks~1:64",
      "Carleton Park",
-     8,
+     7,
      "name · NB Parks"
     ]
    ],
@@ -338,15 +338,15 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "NB Parks~1:71",
+     "NB Parks~1:105",
      "Killarney Lake Park",
-     790,
+     573,
      "name · NB Parks"
     ],
     [
-     "NB Parks~1:105",
+     "NB Parks~1:71",
      "Killarney Lake Park",
-     390,
+     239,
      "name · NB Parks"
     ]
    ],
@@ -365,7 +365,7 @@
     [
      "NB Parks~1:223",
      "Wilmot Park",
-     12,
+     21,
      "name · NB Parks"
     ]
    ],
@@ -841,7 +841,7 @@
     [
      "NS HRM Parks:63",
      "SHUBIE PARK",
-     384,
+     405,
      "name · NS HRM Parks"
     ]
    ],
@@ -997,7 +997,7 @@
     [
      "NS HRM Parks:32",
      "AFRICVILLE",
-     6,
+     12,
      "name · NS HRM Parks"
     ]
    ],
@@ -1016,7 +1016,7 @@
     [
      "NS HRM Parks:90",
      "FORT NEEDHAM MEMORIAL PARK",
-     6,
+     16,
      "name · NS HRM Parks"
     ]
    ],
@@ -1054,7 +1054,7 @@
     [
      "NS HRM Parks:88",
      "GRAND PARADE",
-     1,
+     2,
      "name · NS HRM Parks"
     ]
    ],
@@ -1445,6 +1445,87 @@
    "pota": "https://pota.app/#/park/CA-5478"
   },
   {
+   "area": "CA-ON",
+   "ref": "CA-5989",
+   "name": "Sulpher Spring Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "ON-SVCA Grey:779",
+     "Sulphur Spring Conservation Area",
+     208,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-5989"
+  },
+  {
+   "area": "CA-QC",
+   "ref": "CA-2007",
+   "name": "Estuaire de la Riviere Bonaventure Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "Québec prote:4180",
+     "Réserve marine de l'Estuaire-de-la-Rivière-Bonaventure",
+     446,
+     "reviewed"
+    ],
+    [
+     "15849",
+     "Estuaire-de-la-Rivière-Bonaventure Marine Reserve",
+     277,
+     "reviewed"
+    ],
+    [
+     "15873",
+     "Estuaire-de-la-Rivière-Bonaventure Marine Reserve",
+     169,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-2007"
+  },
+  {
+   "area": "CA-QC",
+   "ref": "CA-2137",
+   "name": "Milieux-Humides-du-Lac-Lichtfield Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "Québec prote:4336",
+     "Réserve naturelle des Milieux-Humides-du-Lac-Litchfield",
+     263,
+     "reviewed"
+    ],
+    [
+     "Québec recog:4336",
+     "Réserve naturelle des Milieux-Humides-du-Lac-Litchfield",
+     263,
+     "reviewed"
+    ],
+    [
+     "14578",
+     "Milieux-Humides-du-Lac-Litchfield Nature Reserve",
+     263,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-2137"
+  },
+  {
    "area": "CA-QC",
    "ref": "CA-4945",
    "name": "Base de plein air Sainte-Foy Regional Park",
@@ -1641,156 +1722,60 @@
    "pota": "https://pota.app/#/park/CA-6136"
   },
   {
-   "area": "CA-ON",
-   "ref": "CA-1043",
-   "name": "Mount Nemo Conservation Reserve",
+   "area": "CA-QC",
+   "ref": "CA-2218",
+   "name": "Rimouski Reserve Nature Reserve",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "ON-CH Conser:8",
-     "Mount Nemo",
-     107,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
+     "Québec Réser:n-Réserve faunique de Rimouski",
+     "Réserve faunique de Rimouski",
+     180344,
+     "reviewed"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1043"
+   "pota": "https://pota.app/#/park/CA-2218"
   },
   {
-   "area": "CA-ON",
-   "ref": "CA-1046",
-   "name": "Rattlesnake Point Conservation Area",
+   "area": "CA-QC",
+   "ref": "CA-2227",
+   "name": "Riviere Malbaie (CNC/Stallman) Nature Reserve",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "ON-CH Conser:4",
-     "Rattlesnake Point",
-     239,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1046"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-1440",
-   "name": "Hilton Falls Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+     "Québec prote:5246",
+     "Réserve naturelle de la Rivière-Malbaie (Conservation de la nature - Québec)",
+     539,
+     "name · Québec protected areas register (MELCCFP)"
+    ],
     [
-     "ON-CH Conser:1",
-     "Hilton Falls",
-     719,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1440"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-1528",
-   "name": "Mountsberg Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+     "Québec recog:5246",
+     "Réserve naturelle de la Rivière-Malbaie (Conservation de la nature - Québec)",
+     539,
+     "name · Québec recognized nature reserves (MELCCFP)"
+    ],
     [
-     "ON-CH Conser:7",
-     "Mountsberg",
-     743,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1528"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-1541",
-   "name": "Crawford Lake Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+     "Québec prote:2496",
+     "Réserve naturelle de la Rivière-Malbaie (Sec. SCCN / Par. Stallman)",
+     38,
+     "name · Québec protected areas register (MELCCFP)"
+    ],
     [
-     "ON-CH Conser:3",
-     "Crawford Lake",
-     344,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
+     "Québec recog:2496",
+     "Réserve naturelle de la Rivière-Malbaie (Sec. SCCN / Par. Stallman)",
+     38,
+     "name · Québec recognized nature reserves (MELCCFP)"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1541"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-5105",
-   "name": "Kelso Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "ON-CH Conser:6",
-     "Kelso",
-     465,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-5105"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-5508",
-   "name": "Robert Edmondson Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "ON-CH Conser:2",
-     "Robert Edmondson",
-     50,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-5508"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-5564",
-   "name": "Area 8 Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "ON-CH Conser:5",
-     "Area 8",
-     79,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-5564"
+   "pota": "https://pota.app/#/park/CA-2227"
   }
  ],
  "grade_changed": [],
@@ -1833,6 +1818,37 @@
    "pota": "https://pota.app/#/park/CA-0479"
   },
   {
+   "area": "CA-QC",
+   "ref": "CA-2007",
+   "name": "Estuaire de la Riviere Bonaventure Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "Québec prote:4180",
+     "Réserve marine de l'Estuaire-de-la-Rivière-Bonaventure",
+     446,
+     "reviewed"
+    ],
+    [
+     "15849",
+     "Estuaire-de-la-Rivière-Bonaventure Marine Reserve",
+     277,
+     "reviewed"
+    ],
+    [
+     "15873",
+     "Estuaire-de-la-Rivière-Bonaventure Marine Reserve",
+     169,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-2007"
+  },
+  {
    "area": "CA-NB",
    "ref": "CA-5258",
    "name": "Killarney Lake Park Recreation Park",
@@ -1840,15 +1856,15 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "NB Parks~1:71",
+     "NB Parks~1:105",
      "Killarney Lake Park",
-     790,
+     573,
      "name · NB Parks"
     ],
     [
-     "NB Parks~1:105",
+     "NB Parks~1:71",
      "Killarney Lake Park",
-     390,
+     239,
      "name · NB Parks"
     ]
    ],
@@ -1896,23 +1912,23 @@
    "pota": "https://pota.app/#/park/CA-5478"
   },
   {
-   "area": "CA-QC",
-   "ref": "CA-4945",
-   "name": "Base de plein air Sainte-Foy Regional Park",
+   "area": "CA-ON",
+   "ref": "CA-5989",
+   "name": "Sulpher Spring Conservation Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "QC PoleConne:7",
-     "Base de plein air Sainte-Foy",
-     107,
-     "name · QC PoleConnectivite_CIMA_2025"
+     "ON-SVCA Grey:779",
+     "Sulphur Spring Conservation Area",
+     208,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-4945"
+   "pota": "https://pota.app/#/park/CA-5989"
   },
   {
    "area": "CA-SK",
@@ -1932,25 +1948,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CA-6130"
-  },
-  {
-   "area": "CA-ON",
-   "ref": "CA-1043",
-   "name": "Mount Nemo Conservation Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "ON-CH Conser:8",
-     "Mount Nemo",
-     107,
-     "name · ON-CH Conservation Halton (Halton Region Conservation"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1043"
   },
   {
    "area": "CA-NS",
@@ -2056,6 +2053,37 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CA-1759"
+  },
+  {
+   "area": "CA-QC",
+   "ref": "CA-2137",
+   "name": "Milieux-Humides-du-Lac-Lichtfield Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "Québec prote:4336",
+     "Réserve naturelle des Milieux-Humides-du-Lac-Litchfield",
+     263,
+     "reviewed"
+    ],
+    [
+     "Québec recog:4336",
+     "Réserve naturelle des Milieux-Humides-du-Lac-Litchfield",
+     263,
+     "reviewed"
+    ],
+    [
+     "14578",
+     "Milieux-Humides-du-Lac-Litchfield Nature Reserve",
+     263,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-2137"
   },
   {
    "area": "CA-NS",
@@ -2531,31 +2559,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CA-6558"
-  },
-  {
-   "area": "CA-NS",
-   "ref": "CA-6559",
-   "name": "Hirtles Beach Provincial Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "NS NS_Lands_:74",
-     "Hirtles Beach Provincial Park",
-     17,
-     "name · NS NS_Lands_Proposed_or_Pending_Protection"
-    ],
-    [
-     "NS NS_Lands_~1:74",
-     "Hirtles Beach Provincial Park",
-     17,
-     "name · NS NS_Lands_Proposed_or_Pending_Protection"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-6559"
   }
  ]
 }
