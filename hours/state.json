@@ -413,64 +413,107 @@
    "parks": 155,
    "status": "partial",
    "updated": "2026-11-04"
+  },
+  "US-NV": {
+   "checked": 367,
+   "counts": {
+    "fees": 39,
+    "hours": 32,
+    "hours_lines": 44,
+    "no_page": 0,
+    "nothing": 184,
+    "parks": 367,
+    "permits": 5,
+    "season": 8,
+    "season_lines": 8
+   },
+   "left": 0,
+   "parks": 367,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
+  "US-NY": {
+   "checked": 616,
+   "counts": {
+    "fees": 174,
+    "hours": 164,
+    "hours_lines": 291,
+    "no_page": 1,
+    "nothing": 62,
+    "parks": 616,
+    "permits": 349,
+    "season": 403,
+    "season_lines": 451
+   },
+   "left": 235,
+   "parks": 851,
+   "status": "partial",
+   "updated": "2026-11-05"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.nevadawilderness.org": 1793949677.37289
+ },
  "last": {
   "areas": [
-   "US-MS",
-   "US-MT",
-   "US-NC",
-   "US-ND",
-   "US-NE",
-   "US-NH",
-   "US-NJ",
-   "US-NM"
+   "US-NV",
+   "US-NY",
+   "US-OH",
+   "US-OK",
+   "US-OR",
+   "US-PA",
+   "US-RI",
+   "US-SC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 181,
-   "errors": 1,
+   "dropped_queued": 8,
+   "errors": 0,
+   "for_person": 3,
    "for_person_urls": [
     [
-     "https://www.mdwfp.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.mdwfp.com this run"
+     "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.mvk.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.mvk.usace.army.mil this run"
+     "https://www.nevadawilderness.org/poodle_mountain_wilderness_study_area",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.sam.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.sam.usace.army.mil this run"
+     "https://nnry.com/",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.tva.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.tva.com this run"
+     "https://d3n8a8pro7vhmx.cloudfront.net/robots.txt",
+     "robots.txt answered 403: nothing fetched from d3n8a8pro7vhmx.cloudfront.net this run"
     ],
     [
-     "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/robots.txt",
-     "robots.txt answered 400: nothing fetched from tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net this run"
+     "https://www.outdoorsy.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.outdoorsy.com this run"
+    ],
+    [
+     "http://www.sangres.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.sangres.com this run"
     ]
    ],
-   "requests": 1162,
-   "rested": 0,
-   "retry403": 1,
-   "robots": 7,
-   "robots_unreadable": 5,
-   "strikes": 3
+   "requests": 1830,
+   "rested": 19,
+   "retry403": 3,
+   "robots": 376,
+   "robots_unreadable": 3,
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
-   "fees": 179,
-   "hours": 147,
-   "no_page": 3,
-   "none": 494,
-   "pages_read": 839,
-   "parks": 744,
-   "permits": 27,
+   "fees": 213,
+   "hours": 196,
+   "no_page": 1,
+   "none": 392,
+   "pages_read": 1060,
+   "parks": 983,
+   "permits": 354,
    "skipped_fresh": 0
   },
-  "when": "2026-11-04"
+  "when": "2026-11-05"
  }
 }

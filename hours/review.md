@@ -1,6 +1,6 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-11-04. Every line is the agency's own sentence (H2). Refresh every 90 days.
+Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 90 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
@@ -13,6 +13,7 @@ Updated 2026-11-04. Every line is the agency's own sentence (H2). Refresh every 
 | US-MN | 298 | 19 | 82 | 87 | 93 | 0 |
 | US-IA | 181 | 114 | 3 | 2 | 61 | 0 |
 | US-ND | 82 | 20 | 12 | 0 | 54 | 0 |
+| US-NY | 616 | 164 | 174 | 349 | 62 | 1 |
 | US-MA | 421 | 35 | 25 | 5 | 346 | 0 |
 | US-ME | 148 | 26 | 8 | 2 | 85 | 2 |
 | US-MD | 186 | 81 | 86 | 29 | 64 | 0 |
@@ -22,6 +23,7 @@ Updated 2026-11-04. Every line is the agency's own sentence (H2). Refresh every 
 | US-KS | 145 | 8 | 11 | 1 | 13 | 0 |
 | US-ID | 63 | 0 | 2 | 0 | 32 | 0 |
 | US-MT | 254 | 39 | 73 | 9 | 154 | 1 |
+| US-NV | 367 | 32 | 39 | 5 | 184 | 0 |
 | US-AZ | 123 | 4 | 7 | 9 | 56 | 0 |
 | US-CA | 243 | 103 | 94 | 20 | 86 | 2 |
 | US-AK | 179 | 4 | 7 | 4 | 161 | 0 |
@@ -409,6 +411,50 @@ Updated 2026-11-04. Every line is the agency's own sentence (H2). Refresh every 
 - **US-0823 Fort Union Trading Post National Historic Site**
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fous/planyourvisit/fees.htm)
 
+## US-NY: 12-park sample for chat 8
+
+- **US-0062 Saratoga National Historical Park**
+  - Hours: “Open for pedestrians and biking, sunrise to sunset” · [www.nps.gov](https://www.nps.gov/sara/planyourvisit/hours.htm)
+  - Hours: “Grounds open sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/sara/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/sara/planyourvisit/fees.htm)
+- **US-0472 Amagansett National Wildlife Refuge**
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/amagansett/visit-us)
+  - Hours: “The refuge is open during daylight hours only.” · [www.fws.gov](https://www.fws.gov/refuge/amagansett/visit-us)
+- **US-0473 Conscience Point National Wildlife Refuge**
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/conscience-point/visit-us)
+- **US-0474 Elizabeth A. Morton National Wildlife Refuge**
+  - Hours: “The refuge is open ½ hour before sunrise until ½ hour after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/elizabeth-alexandra-morton/visit-us)
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/elizabeth-alexandra-morton/visit-us)
+  - Fees: “Annual Refuge Pass (valid for 12 months from the month of purchase) - $12.00” · [www.fws.gov](https://www.fws.gov/refuge/elizabeth-alexandra-morton/visit-us)
+- **US-0475 Iroquois National Wildlife Refuge**
+  - Hours: “The refuge is open from sunrise to sunset for your enjoyment.” · [www.fws.gov](https://www.fws.gov/refuge/iroquois/visit-us)
+  - Hours: “Access: Open year-round, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/iroquois/visit-us)
+- **US-0476 Montezuma National Wildlife Refuge**
+  - Hours: “Refuge visiting hours are 1/2 hour before sunrise to 1/2 hour after sunset;” · [www.fws.gov](https://www.fws.gov/refuge/montezuma)
+  - Hours: “The refuge is open 1/2 hour before sunrise to 1/2 hour after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/montezuma)
+  - Office hours: “office hours are weekdays from 8:00 am to 4:00 pm;” · [www.fws.gov](https://www.fws.gov/refuge/montezuma)
+  - Hunting hours: “Walking trails and observation areas are open year-round, except that Esker Brook Trails and South Spring Pool Trail are closed to all (except for hunters with refuge permit) November 1 - January 1.” · [www.fws.gov](https://www.fws.gov/refuge/montezuma)
+- **US-0477 Congressman Lester Wolff Oyster Bay National Wildlife Refuge**
+  - Hours: “The refuge waters are open 24 hours a day.” · [www.fws.gov](https://www.fws.gov/refuge/congressman-lester-wolff-oyster-bay/visit-us)
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/congressman-lester-wolff-oyster-bay/visit-us)
+  - Permit: “Visitors can enjoy fishing (Town of Oyster Bay permits required for shell fishing), wildlife observation, photography and environmental education are approved recreational uses on the refuge.” · [www.fws.gov](https://www.fws.gov/refuge/congressman-lester-wolff-oyster-bay/visit-us)
+  - Permit: “A special use permit (SUP) from FWS is required for economic activities under Refuge System policy (50 C.F.R.” · [www.fws.gov](https://www.fws.gov/refuge/congressman-lester-wolff-oyster-bay)
+- **US-0478 Seatuck National Wildlife Refuge**
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/seatuck/visit-us)
+- **US-0479 Shawangunk Grasslands National Wildlife Refuge**
+  - Hours: “The refuge and its trails are open daily from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/shawangunk-grasslands/visit-us)
+  - Hours: “The refuge and its trails are open daily from dawn to dusk.” · [www.fws.gov](https://www.fws.gov/refuge/shawangunk-grasslands/visit-us)
+- **US-0480 Target Rock National Wildlife Refuge**
+  - Hours: “Open ½ hour before sunrise to ½ hour after sunset” · [www.fws.gov](https://www.fws.gov/refuge/target-rock/visit-us)
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/target-rock/visit-us)
+  - Fees: “Annual Refuge Pass (valid for 12 months from the month of purchase) - $12.00” · [www.fws.gov](https://www.fws.gov/refuge/target-rock/visit-us)
+- **US-0481 Wertheim National Wildlife Refuge**
+  - Hours: “Wertheim refuge trails are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/wertheim/visit-us)
+  - Hours: “Use official trails only which are open daily, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/wertheim/visit-us)
+- **US-0679 Fire Island National Seashore**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fiis/planyourvisit/fees.htm)
+  - Fees: “There is no fee charged by the National Park Service to enter Fire Island National Seashore sites , but plan to pay parking and/or transportation fees charged by adjacent parks or ferry companies to get to most parts of Fire Island.” · [www.nps.gov](https://www.nps.gov/fiis/planyourvisit/fees.htm)
+
 ## US-MA: 12-park sample for chat 8
 
 - **US-0321 Great Meadows National Wildlife Refuge**
@@ -672,6 +718,51 @@ Updated 2026-11-04. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Entrance Gate 8 am - 4 pm.” · [www.nps.gov](https://www.nps.gov/libi/planyourvisit/hours.htm)
   - Hours: “Deep Ravine Trail: 8 am to 3:30 pm.” · [www.nps.gov](https://www.nps.gov/libi/planyourvisit/hours.htm)
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/libi/planyourvisit/fees.htm)
+
+## US-NV: 12-park sample for chat 8
+
+- **US-0021 Death Valley National Park**
+  - Hours: “Death Valley National Park is open year-round, 24 hours a day.” · [www.nps.gov](https://www.nps.gov/deva/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/deva/planyourvisit/fees.htm)
+  - Fees: “Death Valley Marketplace, 3280 W Bell Vista Ave, Pahrump, NV ($30 vehicle pass only)” · [www.nps.gov](https://www.nps.gov/deva/planyourvisit/fees.htm)
+  - Attraction fee: “Lone Pine Interagency Visitor Center, CA-136 Lone Pine, CA ($30 vehicle pass only)” · [www.nps.gov](https://www.nps.gov/deva/planyourvisit/fees.htm)
+  - Attraction fee: “Death Valley Natural History Association inside Furnace Creek Visitor Center ($30 vehicle pass only)” · [www.nps.gov](https://www.nps.gov/deva/planyourvisit/fees.htm)
+- **US-0032 Great Basin National Park**
+  - Hours: “Great Basin National Park's grounds are open 24 hours a day, year round to hiking, stargazing, and camping.” · [www.nps.gov](https://www.nps.gov/grba/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/grba/planyourvisit/fees.htm)
+  - Attraction fee: “The $10 dump fee can be paid at the Lehman Caves Visitor Center when it is open.” · [www.nps.gov](https://www.nps.gov/grba/planyourvisit/fees.htm)
+- **US-0464 Ash Meadows National Wildlife Refuge**
+  - Hours: “Refuge trails and Boardwalks Open 7 days a week Sunrise - Sunset” · [www.fws.gov](https://www.fws.gov/locations/ash-meadows-national-wildlife-refuge)
+- **US-0465 Desert National Wildlife Refuge**
+  - Hours: “The gate opens at approximately 4:00 am and closes at sunset.” · [www.fws.gov](https://www.fws.gov/refuge/desert/visit-us)
+  - Hours: “The refuge backcountry roads are accessible 24 hours a day to passenger vehicles and street legal motorcycles.” · [www.fws.gov](https://www.fws.gov/refuge/desert/)
+- **US-0466 Fallon National Wildlife Refuge**
+  - Hours: “The refuge is open 24 hours a day, 365 days a year.” · [www.fws.gov](https://www.fws.gov/locations/fallon-national-wildlife-refuge)
+  - Office hours: “The Visitor Center Office Hours: Monday – Friday 8 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/locations/fallon-national-wildlife-refuge)
+- **US-0467 Moapa Valley National Wildlife Refuge**
+  - Hours: “Moapa Valley National Wildlife Refuge is open to the public from 8:00 am - 4:00 pm every Friday, Saturday, and Sunday from September through May.” · [www.fws.gov](https://www.fws.gov/locations/moapa-valley-national-wildlife-refuge)
+  - Hours: “Due to its small size, fragile habitats, and on-going restoration work, the wildlife refuge is only open Friday, Saturday and Sunday, 8:00 am to 4:00 pm, from September through May.” · [www.fws.gov](https://www.fws.gov/locations/moapa-valley-national-wildlife-refuge)
+  - Fees: “Entry to the Moapa Valley Natural Wildlife Refuge is always free of charge.” · [www.fws.gov](https://www.fws.gov/locations/moapa-valley-national-wildlife-refuge)
+  - Fees: “Onsite: Entry to the Moapa Valley Natural Wildlife Refuge is always free of charge.” · [www.fws.gov](https://www.fws.gov/locations/moapa-valley-national-wildlife-refuge)
+- **US-0468 Pahranagat National Wildlife Refuge**
+  - Hours: “Summer Hours (June - August): Friday - Sunday, 10:00 am - 4:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/pahranagat-national-wildlife-refuge)
+- **US-0469 Ruby Lake National Wildlife Refuge**
+  - Hours: “Opens: 1 hour before sunrise” · [www.fws.gov](https://www.fws.gov/locations/ruby-lake-national-wildlife-refuge)
+  - Office hours: “The Visitor Center Office Hours: Monday – Friday 8 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/locations/ruby-lake-national-wildlife-refuge)
+  - Hunting hours: “*During the waterfowl season, the refuge is open to hunting 2 hours before sunrise to 1 hour after sunset.” · [www.fws.gov](https://www.fws.gov/locations/ruby-lake-national-wildlife-refuge)
+- **US-0470 Sheldon National Wildlife Refuge**
+  - Hours: “The Refuge is open 24 hours per day, 365 days per year” · [www.fws.gov](https://www.fws.gov/refuge/sheldon/visit-us)
+- **US-0471 Stillwater National Wildlife Refuge**
+  - Hours: “The refuge is open 24 hours a day, 365 days a year.” · [www.fws.gov](https://www.fws.gov/locations/stillwater-national-wildlife-refuge)
+  - Office hours: “The Visitor Center Office Hours: Monday – Friday 8 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/locations/stillwater-national-wildlife-refuge)
+- **US-0676 Lake Mead National Recreation Area**
+  - Hours: “Lake Mead National Recreation Area is open 24 hours a day, 7 days a week.” · [www.nps.gov](https://www.nps.gov/lake/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/lake/planyourvisit/fees.htm)
+  - Fees: “Boaters can purchase a Lake Mead Annual Vessel Pass for $50 for their motorized vessel or $16 for a 1to 7-day pass.” · [www.nps.gov](https://www.nps.gov/lake/planyourvisit/fees.htm)
+- **US-0974 Tule Springs Fossil Beds National Monument**
+  - Hours: “Tule Springs Fossil Beds National Monument is open during daylight hours.” · [www.nps.gov](https://www.nps.gov/tusk/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/tusk/planyourvisit/fees.htm)
+  - Fees: “No fees or passes are currently required to access Tule Springs Fossil Beds National Monument.” · [www.nps.gov](https://www.nps.gov/tusk/planyourvisit/fees.htm)
 
 ## US-AZ: 12-park sample for chat 8
 
