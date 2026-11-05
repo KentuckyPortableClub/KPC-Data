@@ -43,4 +43,20 @@ check(clean3 is False and '0,0 / impossible pins 2' in why3, f'KPC_GATE_COUNT_OL
 G.GATE_COUNT_OLD_00 = False
 
 check('4:17' in open(ROOT/'.github/scripts/kpc_fers_chain_gate.py').read() or '4:17' in G.__doc__ or True, 'ruling recorded in module')
-print('ALL PASS' if ok else 'SOME FAILED'); sys.exit(0 if ok else 1)
+
+# Part A v2: fail CLOSED on missing data / errors
+os.environ.pop('KPC_GATE_COUNT_OLD_00', None)
+G.GATE_COUNT_OLD_00 = False
+rep_miss = {'summary': {'0,0 / impossible pins': 7, 'signed sheet answers not followed': 0,
+                        'overrides not followed, dated before the build (a real miss)': 0,
+                        'held output not rebuilt after a key or override change': 0},
+            'bad_pins': [], 'held_changed': True, 'postkey': True}
+c, clean, why = G.postline_clean(rep_miss)
+check(G._new_bad_pins(rep_miss) == 7, f'fail-closed: empty bad_pins + summary 7 -> {G._new_bad_pins(rep_miss)}')
+check(clean is False, f'fail-closed: gate unclean ({why})')
+rep_noschema = dict(rep_miss, bad_pins=[{'park': 'CA-1'}, {'park': 'CA-2'}],
+                    summary={**rep_miss['summary'], '0,0 / impossible pins': 2})
+check(G._new_bad_pins(rep_noschema) == 2, f'fail-closed: no schema counts all ({G._new_bad_pins(rep_noschema)})')
+check(G._new_bad_pins({'bad_pins': [{'park': 'X'}], 'summary': {}}) == 1, 'fail-closed: missing outline counts')
+check(G._new_bad_pins(object()) >= 10**8, f'fail-closed: exception path ({G._new_bad_pins(object())})')
+print('ALL PASS' if ok else 'SOME FAILED'); raise SystemExit(0 if ok else 1)

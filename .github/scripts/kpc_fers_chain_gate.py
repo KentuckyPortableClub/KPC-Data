@@ -122,16 +122,38 @@ def postkey_clean(links, short):
 
 
 def _new_bad_pins(rep):
-    """Count of 0,0 / impossible pins that are NEW this build or have no outline. Standing POTA mistakes with an outline do not count."""
-    rows = rep.get('bad_pins') or []
-    if not rows: return int((rep.get('summary') or {}).get('0,0 / impossible pins') or 0) if GATE_COUNT_OLD_00 else 0
-    n = 0
-    for x in rows:
-        if not isinstance(x, dict): continue
-        # 'outline': 'yes' = standing POTA mistake with land; 'no' = no outline. Prefer new/changed markers when present.
-        if x.get('new') or x.get('changed') or str(x.get('outline') or '').lower() in ('no', 'none', ''):
-            n += 1
-    return n
+    """Count of 0,0 / impossible pins that are NEW this build or have no outline.
+    Standing POTA mistakes with an explicit outline='yes' (and not new/changed) do not count.
+    Part A v2 (Quality): FAIL CLOSED on any error or missing data — never return 0 when we cannot
+    tell standing from new (empty bad_pins but summary>0; rows without classify fields; exceptions)."""
+    try:
+        summary_n = int((rep.get('summary') or {}).get('0,0 / impossible pins') or 0)
+        rows = rep.get('bad_pins')
+        if rows is None:
+            return max(summary_n, 1) if summary_n or GATE_COUNT_OLD_00 else 1  # missing list -> closed
+        if not isinstance(rows, list):
+            return max(summary_n, 1)
+        if not rows:
+            # empty list: if summary still reports pins, fail closed (cannot verify standing)
+            return summary_n
+        # Schema incomplete (no new/changed/outline on any row) -> cannot exempt standing; count all
+        has_schema = any(isinstance(x, dict) and ('new' in x or 'changed' in x or 'outline' in x) for x in rows)
+        if not has_schema:
+            return len(rows)
+        n = 0
+        for x in rows:
+            if not isinstance(x, dict):
+                n += 1; continue  # malformed row -> closed
+            if x.get('new') or x.get('changed'):
+                n += 1; continue
+            if 'outline' not in x:
+                n += 1; continue  # missing outline field -> closed
+            if str(x.get('outline') or '').lower() in ('no', 'none', ''):
+                n += 1
+            # outline='yes' and not new/changed: standing, skip
+        return n
+    except Exception:
+        return 10 ** 9  # fail closed
 
 
 def _flip(s, data, why, now):
