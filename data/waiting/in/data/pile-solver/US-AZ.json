@@ -1,0 +1,33 @@
+{
+ "build": "links-a3ba18c",
+ "made": "2026-11-04 18:29 CST",
+ "parks": {
+  "US-6090": {
+   "agency": "BLM wilderness",
+   "answer_word": "NOT SURE",
+   "area": "US-AZ",
+   "candidate_layer_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+   "checked_at": "2026-11-04 18:23 CST",
+   "distance_m": 2280,
+   "evidence_urls": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?f=html&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=258&outFields=%2A&outSR=4326&returnGeometry=true | https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?f=html&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=284&outFields=%2A&outSR=4326&returnGeometry=true | https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?f=html&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=287&outFields=%2A&outSR=4326&returnGeometry=true | https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?f=html&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=290&outFields=%2A&outSR=4326&returnGeometry=true | https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?f=htm",
+   "kind_park": "wilderness",
+   "kind_record": "",
+   "official_site_url": "https://www.blm.gov/visit/beaver-dam-mountains-wilderness",
+   "pin_flag": "",
+   "pota_lat": "36.9795",
+   "pota_lon": "-113.796",
+   "pota_name": "Beaver Dam Mountain Wilderness Area",
+   "reason": "the pin is 2.3 km from the outline and the county does not back the match: wbl273 lies in Washington County; the pin is in Mohave County; wbl296 lies in Washington County; the pin is in Mohave County",
+   "record_id": "wbl290",
+   "record_name": "Beaver Dam Mountains",
+   "ref": "US-6090",
+   "rule18_note": "",
+   "solver_version": "1",
+   "source_rows": "PIN_WAY_OUT: the POTA pin is well outside the joined land",
+   "verdict": "NEEDS-PERSON",
+   "whats_missing": "a person to say whether 'Beaver Dam Mountains' is US-6090 (pin 2.3 km out, other county), or report the POTA pin to POTA"
+  }
+ },
+ "pile_sha": "fd9f88bc969eeb1a",
+ "solver_version": "1"
+}

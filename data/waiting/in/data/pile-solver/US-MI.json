@@ -1,0 +1,33 @@
+{
+ "build": "links-a3ba18c",
+ "made": "2026-11-04 18:29 CST",
+ "parks": {
+  "US-10717": {
+   "agency": "",
+   "answer_word": "NOT SURE",
+   "area": "US-MI",
+   "candidate_layer_url": "",
+   "checked_at": "2026-11-04 18:17 CST",
+   "distance_m": "",
+   "evidence_urls": "",
+   "kind_park": "wilderness",
+   "kind_record": "",
+   "official_site_url": "https://www.fs.usda.gov/r09/ottawa/recreation/sylvania-wilderness-backcountry-camping",
+   "pin_flag": "",
+   "pota_lat": "46.2514",
+   "pota_lon": "-89.402",
+   "pota_name": "Sylvania Wilderness Area",
+   "reason": "no joined record could be read: could not read https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?f=json&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=386&outFields=%2A&outSR=4326&returnGeometry=true (robots-unreadable)",
+   "record_id": "",
+   "record_name": "",
+   "ref": "US-10717",
+   "rule18_note": "",
+   "solver_version": "1",
+   "source_rows": "PIN_WAY_OUT: the POTA pin is well outside the joined land",
+   "verdict": "NEEDS-PERSON",
+   "whats_missing": "a person to open the record(s) by hand: could not read https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?f=json&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=386&outFields=%2A&outSR=4326&returnGeometry=true (robots-unreadable)"
+  }
+ },
+ "pile_sha": "fd9f88bc969eeb1a",
+ "solver_version": "1"
+}

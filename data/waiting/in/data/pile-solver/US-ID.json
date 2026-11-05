@@ -1,0 +1,33 @@
+{
+ "build": "links-a3ba18c",
+ "made": "2026-11-04 18:29 CST",
+ "parks": {
+  "US-5616": {
+   "agency": "SFW",
+   "answer_word": "NOT SURE",
+   "area": "US-ID",
+   "candidate_layer_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+   "checked_at": "2026-11-04 18:22 CST",
+   "distance_m": 2732,
+   "evidence_urls": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?f=html&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=199504&outFields=%2A&outSR=4326&returnGeometry=true",
+   "kind_park": "wildlife",
+   "kind_record": "wildlife",
+   "official_site_url": "https://idfg.idaho.gov/wma",
+   "pin_flag": "",
+   "pota_lat": "45.729",
+   "pota_lon": "-115.43",
+   "pota_name": "Red River Wildlife Management Area",
+   "reason": "1 record(s) read, but: could not read https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0/query?f=json&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=73133&outFields=%2A&outSR=4326&returnGeometry=true (robots-unreadable)",
+   "record_id": "199504",
+   "record_name": "Red River Wildlife Management Area",
+   "ref": "US-5616",
+   "rule18_note": "",
+   "solver_version": "1",
+   "source_rows": "PIN_WAY_OUT: the POTA pin is well outside the joined land",
+   "verdict": "NEEDS-PERSON",
+   "whats_missing": "a person to open these record(s) by hand: could not read https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0/query?f=json&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=73133&outFields=%2A&outSR=4326&returnGeometry=true (robots-unreadable)"
+  }
+ },
+ "pile_sha": "fd9f88bc969eeb1a",
+ "solver_version": "1"
+}

@@ -1,0 +1,33 @@
+{
+ "build": "links-a3ba18c",
+ "made": "2026-11-04 18:29 CST",
+ "parks": {
+  "US-0680": {
+   "agency": "NPS",
+   "answer_word": "NOT SURE",
+   "area": "US-NJ",
+   "candidate_layer_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+   "checked_at": "2026-11-04 18:17 CST",
+   "distance_m": 14299,
+   "evidence_urls": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?f=html&geometryPrecision=6&maxAllowableOffset=0.00005&objectIds=3500&outFields=%2A&outSR=4326&returnGeometry=true",
+   "kind_park": "",
+   "kind_record": "",
+   "official_site_url": "https://www.nps.gov/gate/index.htm",
+   "pin_flag": "",
+   "pota_lat": "40.6043",
+   "pota_lon": "-74.058",
+   "pota_name": "Gateway National Recreation Area",
+   "reason": "the pin is 14.3 km from the outline and the county does not back the match: 3500 lies in Monmouth County; the pin is in Richmond County",
+   "record_id": "3500",
+   "record_name": "Gateway National Recreation Area",
+   "ref": "US-0680",
+   "rule18_note": "",
+   "solver_version": "1",
+   "source_rows": "PIN_WAY_OUT: the POTA pin is well outside the joined land",
+   "verdict": "NEEDS-PERSON",
+   "whats_missing": "a person to say whether 'Gateway National Recreation Area' is US-0680 (pin 14.3 km out, other county), or report the POTA pin to POTA"
+  }
+ },
+ "pile_sha": "fd9f88bc969eeb1a",
+ "solver_version": "1"
+}
