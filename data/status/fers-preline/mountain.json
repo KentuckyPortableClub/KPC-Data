@@ -1,0 +1,134 @@
+{
+ "tag": "mountain",
+ "states": [
+  "US-CO",
+  "US-WY",
+  "US-ID",
+  "US-MT",
+  "US-NV",
+  "US-AZ",
+  "US-NM"
+ ],
+ "key_source": "build",
+ "checked": "2026-11-05 17:12 UTC",
+ "areas": {
+  "US-CO": {
+   "hold": [],
+   "warn": [
+    "13 review-pile HOLD row(s) still outlines: US-0185 US-0191 US-12185 US-1249 US-9594 US-9605 US-9620 US-9622 US-9631 US-9632 (their 2-fers are 'not sure')",
+    "4 rule 18 row(s): US-11889 US-11906 US-9629 US-9648 (a person decides)",
+    "13 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0185 US-0191 US-12185 US-1249 US-9594 US-9605 US-9620 US-9622 US-9631 US-9632 US-9635 US-9638 US-9639"
+   ],
+   "key_file": "data/us-key/US-CO.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 276,
+   "outlines": 265,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 13,
+   "overrides_no_still": 0
+  },
+  "US-WY": {
+   "hold": [],
+   "warn": [
+    "10 review-pile HOLD row(s) still outlines: US-0614 US-10816 US-10890 US-4475 US-4524 US-6135 US-6197 US-6202 US-6204 US-6218 (their 2-fers are 'not sure')",
+    "8 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-10816 US-4475 US-4524 US-6135 US-6197 US-6202 US-6204 US-6218",
+    "3 outline(s) with no area: US-10830 US-6214 US-6225"
+   ],
+   "key_file": "data/us-key/US-WY.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 294,
+   "outlines": 213,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 8,
+   "overrides_no_still": 0
+  },
+  "US-ID": {
+   "hold": [],
+   "warn": [
+    "1 review-pile HOLD row(s) still outlines: US-5616 (their 2-fers are 'not sure')",
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-5616"
+   ],
+   "key_file": "data/us-key/US-ID.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 362,
+   "outlines": 226,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "US-MT": {
+   "hold": [],
+   "warn": [
+    "4 outline(s) with no area: US-10176 US-12857 US-12909 US-2568"
+   ],
+   "key_file": "data/us-key/US-MT.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 254,
+   "outlines": 244,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  },
+  "US-NV": {
+   "hold": [],
+   "warn": [
+    "10 review-pile HOLD row(s) still outlines: US-11913 US-13018 US-13039 US-13132 US-13134 US-13138 US-13145 US-13194 US-9246 US-9273 (their 2-fers are 'not sure')",
+    "2 rule 18 row(s): US-0974 US-13018 (a person decides)",
+    "10 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-11913 US-13018 US-13039 US-13132 US-13134 US-13138 US-13145 US-13194 US-9246 US-9273",
+    "2 outline(s) with no area: US-13216 US-13226"
+   ],
+   "key_file": "data/us-key/US-NV.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 367,
+   "outlines": 195,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 10,
+   "overrides_no_still": 0
+  },
+  "US-AZ": {
+   "hold": [],
+   "warn": [
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-6090",
+    "1 outline(s) with no area: US-10518"
+   ],
+   "key_file": "data/us-key/US-AZ.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 123,
+   "outlines": 110,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "US-NM": {
+   "hold": [],
+   "warn": [
+    "2 rule 18 row(s): US-11806 US-11866 (a person decides)"
+   ],
+   "key_file": "data/us-key/US-NM.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 123,
+   "outlines": 104,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "verdict": "GO",
+ "holds": [],
+ "held_key": false
+}
