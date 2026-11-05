@@ -382,6 +382,13 @@ def done(row, verdict, reason, missing='', **kw):
     return row
 
 
+def is_no(o, x):
+    """Next round C3 (rule 21): True when the override entry o rules out the record x = [id, name, acres, ...] by id or exact name
+    (kpc_key_rules.is_no, the key's own reading; KPC_NO_BY_NAME fingerprints only when that switch is on, as in the key)."""
+    if not o or not o.get('no'): return False
+    return KR.is_no(o, x[0], (x[1] or None) if len(x) > 1 else None, x[2] if len(x) > 2 else None)
+
+
 def solve(p, F, ov, sheet):
     """One pile row -> one output row. F = Fetch (None = offline: anything that needs the web becomes NEEDS-PERSON)."""
     row = base_row(p)
@@ -401,10 +408,16 @@ def solve(p, F, ov, sheet):
         return done(row, 'NEEDS-PERSON', 'grouped finding P1-no-record-id: ' + PATTERNS['P1-no-record-id'][1],
                     'the key builder fix for joined rows with no record id, then a rebuild of this key', pattern='P1-no-record-id')
     kp = key_row(p['area'], p['ref'])
+    # next round C3 (rule 21; Brandon's yes relayed via Super, Nov 5): an override 'no' wins on EVERY join, the name joins too
+    # (NAME_JOIN 'same name + pin inside', alias, sheet): by record id, and by the exact record name as kpc_key_rules.is_no reads
+    # it in the key (KPC_NO_ALL_PATHS). Before, only the id was checked here, so a 'no' written as a name was proposed again.
     nos = {str(x) for x in (o.get('no') or [])}
-    m = [x for x in (kp.get('m') or []) if isinstance(x, list) and str(x[0]) not in nos]
-    if not m and p['ids']: m = [[i, '', 0, ''] for i in p['ids'] if i not in ('None', '') and i not in nos]
+    ruled = [x for x in (kp.get('m') or []) if isinstance(x, list) and (str(x[0]) in nos or is_no(o, x))]
+    m = [x for x in (kp.get('m') or []) if isinstance(x, list) and str(x[0]) not in nos and not is_no(o, x)]
+    if not m and p['ids']: m = [[i, '', 0, ''] for i in p['ids'] if i not in ('None', '') and i not in nos and not is_no(o, [i])]
     if not m:
+        if ruled: return done(row, 'NEEDS-PERSON', "every joined record was ruled out by a person's 'no' in overrides.json (rule 21): "
+                              + '; '.join(f'{x[0]} {x[1]}'.strip() for x in ruled[:3]), 'which official record (layer + id) is this park, if any')
         return done(row, 'NEEDS-PERSON', 'the key has no joined record left for this park', 'which official record (layer + id) is this park, if any')
     pname, ptype = p['name'] or kp.get('n') or '', p['type'] or kp.get('t') or ''
 
@@ -469,6 +482,8 @@ def solve(p, F, ov, sheet):
         if r.get('error'): errs.append(r['error']); continue
         if NOT_OFFICIAL.search(r['label']): errs.append(f"{x[0]} is from {r['label']} (not an official source)"); continue
         if r['family'] == 'padus' and PAD_NEVER.search(str(r['attrs'].get('Category'))): errs.append(f"{x[0]} is a PAD-US {r['attrs'].get('Category')} record (never an outline)"); continue
+        if is_no(o, [r['id'], r['name']]):   # next round C3 (rule 21): the live record's own name is a person's 'no'
+            errs.append(f"{x[0]} '{r['name']}' was ruled out by a person's 'no' in overrides.json (rule 21)"); continue
         r['d'] = dist_m(la, lo, r['rings']); r['how'] = same_name(pname, r['name'] or x[1]); r['r18'] = rule18(pname, r['name'] or x[1])
         r['agency'] = str(r['attrs'].get('Mang_Name') or r['attrs'].get('Loc_Mang') or r['label'])[:80]
         recs.append(r)
