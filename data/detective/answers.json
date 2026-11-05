@@ -1782,7 +1782,6 @@
    "read": "2026-11-05",
    "ref": "US-13270",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -1803,7 +1802,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=barrens%20otis%20pike%20pine%20New%20York",
      "what": "open-data search"
@@ -1862,7 +1861,6 @@
    "read": "2026-11-05",
    "ref": "US-13446",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -1889,7 +1887,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=north%20Washington",
      "what": "open-data search"
@@ -1944,7 +1942,6 @@
    "read": "2026-11-05",
    "ref": "US-2997",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -1971,7 +1968,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=canyon%20choke%20Texas",
      "what": "open-data search"
@@ -2083,7 +2080,6 @@
    "read": "2026-11-05",
    "ref": "US-3524",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2110,7 +2106,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=ocotillo%20vehicle%20wells%20California",
      "what": "open-data search"
@@ -2201,7 +2197,6 @@
    "read": "2026-11-05",
    "ref": "US-3714",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -2228,7 +2223,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=yates%20Alabama",
      "what": "open-data search"
@@ -2312,7 +2307,6 @@
    "read": "2026-11-05",
    "ref": "US-4092",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2333,7 +2327,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=apple%20canyon%20river%20salem%20Illinois",
      "what": "open-data search"
@@ -2475,7 +2469,6 @@
    "read": "2026-11-05",
    "ref": "US-5750",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -2502,7 +2495,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=black%20canyons%20ridge%20Colorado",
      "what": "open-data search"
@@ -2551,7 +2544,6 @@
    "read": "2026-11-05",
    "ref": "US-5846",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2578,7 +2570,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=canyon%20horseshoe%20south%20Utah",
      "what": "open-data search"
@@ -2652,7 +2644,6 @@
    "read": "2026-11-05",
    "ref": "US-6010",
    "result": "ANSWERED",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2679,7 +2670,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=creek%20deep%20Utah",
      "what": "open-data search"

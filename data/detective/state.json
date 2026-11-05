@@ -33,8 +33,8 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "deferred": 25,
-   "dropped_queued": 78,
+   "deferred": 16,
+   "dropped_queued": 66,
    "errors": 0,
    "for_person_urls": [
     [
@@ -46,24 +46,20 @@
      "robots.txt answered 403: nothing fetched from ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com this run"
     ],
     [
-     "https://services2.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services2.arcgis.com this run"
-    ],
-    [
-     "https://services7.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services7.arcgis.com this run"
-    ],
-    [
-     "https://services5.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
+     "https://services6.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
     ],
     [
      "https://services1.arcgis.com/robots.txt",
      "robots.txt answered 403: nothing fetched from services1.arcgis.com this run"
     ],
     [
-     "https://services6.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
+     "https://services5.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
+    ],
+    [
+     "https://services2.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services2.arcgis.com this run"
     ],
     [
      "https://apps.fs.usda.gov/robots.txt",
@@ -78,10 +74,10 @@
      "robots.txt answered 406: nothing fetched from usdaoig.oversight.gov this run"
     ]
    ],
-   "requests": 235,
+   "requests": 169,
    "rested": 8,
-   "robots": 17,
-   "robots_unreadable": 10,
+   "robots": 12,
+   "robots_unreadable": 9,
    "strikes": 0
   },
   "stat": {
@@ -93,7 +89,7 @@
    "nothing": 0,
    "padus_only": 0,
    "parks": 0,
-   "requests": 321,
+   "requests": 235,
    "skipped_fresh": 0,
    "sure": 0
   },
@@ -104,10 +100,10 @@
   "stat": {
    "answered": 1,
    "blocked": 0,
-   "not_found": 6,
-   "partly": 28,
-   "questions": 35,
-   "skipped_done": 16
+   "not_found": 5,
+   "partly": 20,
+   "questions": 26,
+   "skipped_done": 25
   },
   "when": "2026-11-05"
  }

@@ -119,7 +119,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_National_Historic_Landmarks/FeatureServer/0 → did not open
   - step 1: point query at the pin https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=creek%20deep%20Utah → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=creek%20deep%20Utah → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=creek%20deep%20Utah → 1 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/visit/deep-creek-wilderness → opened, 1 matching line(s)
@@ -446,7 +446,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=barrens%20otis%20pike%20pine%20New%20York → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=barrens%20otis%20pike%20pine%20New%20York → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=barrens%20otis%20pike%20pine%20New%20York → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://dec.ny.gov/places/otis-pike-pine-barrens-state-forest → did not open (robots)
@@ -462,7 +462,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0 → 1 named polygon(s) of 1
   - step 1: point query at the pin https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6 → nothing matched
   - step 1: point query at the pin https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1 → opened, nothing matched the name
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=north%20Washington → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=north%20Washington → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=north%20Washington → opened, dataset "Vegetation Map of North Cascades National Park Service Complex"
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://wdfw.wa.gov/fishing/locations/lowland-lakes/north-lake → opened, nothing matched
@@ -478,7 +478,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9 → opened, nothing matched the name
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=canyon%20choke%20Texas → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=canyon%20choke%20Texas → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=canyon%20choke%20Texas → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://tpwd.texas.gov/state-parks/choke-canyon → did not open (robots)
@@ -493,7 +493,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3092_fpu/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=ocotillo%20vehicle%20wells%20California → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=ocotillo%20vehicle%20wells%20California → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=ocotillo%20vehicle%20wells%20California → 2 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://ohv.parks.ca.gov/?page_id=1217 → opened, nothing matched
@@ -513,7 +513,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0 → 1 named polygon(s) of 1
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0 → 1 named polygon(s) of 1
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/PublicFishingLakes/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=yates%20Alabama → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=yates%20Alabama → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=yates%20Alabama → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.alabamaforeverwild.com/yates-lake-wma → opened, nothing matched
@@ -532,7 +532,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/3 → did not open
   - step 1: point query at the pin https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11 → 1 named polygon(s) of 1
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=apple%20canyon%20river%20salem%20Illinois → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=apple%20canyon%20river%20salem%20Illinois → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=apple%20canyon%20river%20salem%20Illinois → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://dnr.illinois.gov/parks/park.applerivercanyon.html → opened, nothing matched
@@ -550,7 +550,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41 → nothing matched
   - step 1: point query at the pin https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=black%20canyons%20ridge%20Colorado → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=black%20canyons%20ridge%20Colorado → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=black%20canyons%20ridge%20Colorado → 6 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/programs/national-conservation-lands/colorado/black-ridge-canyons-wilderness → did not open (HTTP 404)
@@ -565,7 +565,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_National_Historic_Landmarks/FeatureServer/0 → did not open
   - step 1: point query at the pin https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=canyon%20horseshoe%20south%20Utah → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=canyon%20horseshoe%20south%20Utah → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=canyon%20horseshoe%20south%20Utah → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/visit/horseshoe-canyon-south → opened, nothing matched
