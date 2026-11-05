@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-05 19:41 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-05 19:43 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 38 (+4 / -6)
 - gained: CA-0109+US-4558 CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -350,7 +350,7 @@
 - water / bank: 19
 - one-record same land: US-1522+US-6823 US-3318+US-6816 US-6634+US-6635 US-6675+US-6676
 - near a size threshold: US-0353+US-6782 51 m ~ 50 yd (very tight); US-4489+US-6620 45 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42016221491 (2026-11-05 12:29 UTC) is newer than this output's last pass (2026-11-01); no pre-line report for this area
+- stale inputs: the key build US-42016221491 (2026-11-05 12:29 UTC) is newer than this output's last pass (2026-11-01); the last pre-line check (mi) said HOLD
 
 ## US-MN: live pairs 144 -> 152 (+12 / -4)
 - gained: CA-0341+US-2489 US-0364+US-2482+US-7145 US-11153+US-4829 US-2477+US-4792 US-2489+US-4801 US-2517+US-4790+US-4824 US-2517+US-4824 US-4783+US-4820 US-4790+US-4829 US-4791+US-4837 US-4792+US-9373 US-9385+US-9386
@@ -560,7 +560,7 @@
 - water / bank: 23
 - one-record same land: US-10972+US-6024 US-10974+US-6010 US-10990+US-6027 US-11739+US-6033 US-6010+US-6011 US-6045+US-6046 US-6063+US-6077 US-6073+US-6074
 - near a size threshold: US-0011+US-5883 25 m ~ 25 yd (kept); US-0011+US-5893 103 m ~ 100 yd (small); US-0011+US-5917 45 m ~ 50 yd (very tight); US-0072+US-6010 75 m ~ 100 yd (small); US-0072+US-6018 25 m ~ 25 yd (kept); US-0645+US-5849 75 m ~ 100 yd (small); US-0895+US-11760 25 m ~ 25 yd (kept); US-0914+US-4395 45 m ~ 50 yd (very tight); US-0914+US-6006 45 m ~ 50 yd (very tight); US-10993+US-6076 95 m ~ 100 yd (small); US-11000+US-6098 75 m ~ 100 yd (small); US-11104+US-4398 101 m ~ 100 yd (small); US-11205+US-4397 25 m ~ 25 yd (kept); US-11742+US-4395 25 m ~ 25 yd (kept); US-13603+US-4397 25 m ~ 25 yd (kept); US-3071+US-4396 109 m ~ 100 yd (small); US-3096+US-5971 45 m ~ 50 yd (very tight); US-4395+US-6067 25 m ~ 25 yd (kept); US-4396+US-5917 25 m ~ 25 yd (kept); US-4397+US-5925 25 m ~ 25 yd (kept)
-- stale inputs: the key build US-42016221491 (2026-11-05 12:29 UTC) is newer than this output's last pass (2026-11-03); no pre-line report for this area
+- stale inputs: the key build US-42016221491 (2026-11-05 12:29 UTC) is newer than this output's last pass (2026-11-03); the last pre-line check (ut) said HOLD
 
 ## US-VA: live pairs 116 -> 111 (+11 / -16)
 - gained: US-0670+US-9898 US-0670+US-9901 US-0713+US-4567 US-1299+US-9907 US-1311+US-9933 US-1321+US-9933 US-4564+US-9898 US-4567+US-4581+US-7791 US-4581+US-7791 US-4581+US-9898 US-9898+US-9901

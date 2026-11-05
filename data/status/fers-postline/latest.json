@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-05 19:41 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42064785226",
+ "checked": "2026-11-05 19:43 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42082670486",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -5046,9 +5046,15 @@
      "status": "very tight: could be map error: check bo"
     }
    ],
+   "preline": {
+    "tag": "mi",
+    "verdict": "HOLD",
+    "key_source": "build",
+    "held_key": false
+   },
    "stale_inputs": [
     "the key build US-42016221491 (2026-11-05 12:29 UTC) is newer than this output's last pass (2026-11-01)",
-    "no pre-line report for this area"
+    "the last pre-line check (mi) said HOLD"
    ]
   },
   "US-MN": {
@@ -8853,9 +8859,15 @@
      "status": "very tight: could be map error: check bo"
     }
    ],
+   "preline": {
+    "tag": "ut",
+    "verdict": "HOLD",
+    "key_source": "build",
+    "held_key": false
+   },
    "stale_inputs": [
     "the key build US-42016221491 (2026-11-05 12:29 UTC) is newer than this output's last pass (2026-11-03)",
-    "no pre-line report for this area"
+    "the last pre-line check (ut) said HOLD"
    ]
   },
   "US-VA": {
