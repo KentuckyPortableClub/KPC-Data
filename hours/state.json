@@ -433,20 +433,74 @@
    "updated": "2026-11-05"
   },
   "US-NY": {
-   "checked": 616,
+   "checked": 851,
    "counts": {
-    "fees": 174,
-    "hours": 164,
-    "hours_lines": 291,
+    "fees": 188,
+    "hours": 195,
+    "hours_lines": 350,
     "no_page": 1,
-    "nothing": 62,
-    "parks": 616,
-    "permits": 349,
-    "season": 403,
-    "season_lines": 451
+    "nothing": 184,
+    "parks": 851,
+    "permits": 428,
+    "season": 607,
+    "season_lines": 664
    },
-   "left": 235,
+   "left": 0,
    "parks": 851,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
+  "US-OH": {
+   "checked": 276,
+   "counts": {
+    "fees": 12,
+    "hours": 7,
+    "hours_lines": 18,
+    "no_page": 1,
+    "nothing": 2,
+    "parks": 276,
+    "permits": 0,
+    "season": 1,
+    "season_lines": 2
+   },
+   "left": 0,
+   "parks": 276,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
+  "US-OK": {
+   "checked": 205,
+   "counts": {
+    "fees": 12,
+    "hours": 42,
+    "hours_lines": 58,
+    "no_page": 0,
+    "nothing": 152,
+    "parks": 205,
+    "permits": 4,
+    "season": 23,
+    "season_lines": 25
+   },
+   "left": 0,
+   "parks": 205,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
+  "US-OR": {
+   "checked": 140,
+   "counts": {
+    "fees": 20,
+    "hours": 27,
+    "hours_lines": 41,
+    "no_page": 0,
+    "nothing": 40,
+    "parks": 140,
+    "permits": 19,
+    "season": 28,
+    "season_lines": 35
+   },
+   "left": 300,
+   "parks": 440,
    "status": "partial",
    "updated": "2026-11-05"
   }
@@ -467,52 +521,44 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 8,
+   "dropped_queued": 16,
    "errors": 0,
-   "for_person": 3,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
+     "https://sojournertruthstatepark.info/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from sojournertruthstatepark.info this run"
+    ],
+    [
+     "http://www.swt.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.swt.usace.army.mil this run"
+    ],
+    [
+     "https://maps.app.goo.gl/robots.txt",
+     "robots.txt answered 400: nothing fetched from maps.app.goo.gl this run"
+    ],
+    [
+     "https://www.blm.gov/sites/default/files/documents/files/nwo_whittakercrk_brochure.pdf",
      "HTTP 403 twice"
-    ],
-    [
-     "https://www.nevadawilderness.org/poodle_mountain_wilderness_study_area",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://nnry.com/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://d3n8a8pro7vhmx.cloudfront.net/robots.txt",
-     "robots.txt answered 403: nothing fetched from d3n8a8pro7vhmx.cloudfront.net this run"
-    ],
-    [
-     "https://www.outdoorsy.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.outdoorsy.com this run"
-    ],
-    [
-     "http://www.sangres.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.sangres.com this run"
     ]
    ],
-   "requests": 1830,
-   "rested": 19,
-   "retry403": 3,
-   "robots": 376,
+   "requests": 1676,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 209,
    "robots_unreadable": 3,
-   "strikes": 6
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "fees": 213,
-   "hours": 196,
+   "fees": 58,
+   "hours": 107,
    "no_page": 1,
-   "none": 392,
-   "pages_read": 1060,
-   "parks": 983,
-   "permits": 354,
-   "skipped_fresh": 0
+   "none": 635,
+   "pages_read": 766,
+   "parks": 856,
+   "permits": 102,
+   "skipped_fresh": 983
   },
   "when": "2026-11-05"
  }

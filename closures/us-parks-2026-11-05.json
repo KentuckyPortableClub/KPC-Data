@@ -916,6 +916,17 @@
   },
   {
    "call": "KPC BOT",
+   "details": "Missouri State Parks: Closed — Due to a water main break at 136 S. Main Street, city repair crews have closed South Main Street from First Capitol Dr. to Jefferson St. During repair operations, South Main Street will be closed to t",
+   "expires": "2026-11-08",
+   "id": "uc-mo-parks-closed-due-to-a-water-main-break-at-136-s-main-street-city-US-3349",
+   "kind": "Closure",
+   "link": "https://www.mostateparks.com/historic-site/first-missouri-state-capitol-state-historic-site",
+   "ref": "US-3349",
+   "seen": "2026-11-05",
+   "src": "mo-parks"
+  },
+  {
+   "call": "KPC BOT",
    "details": "Missouri State Parks: Closed — Locust Creek Covered Bridge State Historic Site has been moved to the day use area within Pershing State Park. The bridge has been set in place, however, it will remain closed until the approaches can",
    "expires": "2026-11-08",
    "id": "uc-mo-parks-closed-locust-creek-covered-bridge-state-historic-site-has-b-US-3355",
@@ -1059,17 +1070,6 @@
   },
   {
    "call": "KPC BOT",
-   "details": "Missouri State Parks: Partial Closure — Due to the Historic Capitol not having air conditioning, when temperatures exceed our safety threshold of 95 degrees or the heat index climbs above 90 inside the building, we will often suspend tours ",
-   "expires": "2026-11-08",
-   "id": "uc-mo-parks-partial-closure-due-to-the-historic-capitol-not-having-air-c-US-3349",
-   "kind": "Closure",
-   "link": "https://www.mostateparks.com/historic-site/first-missouri-state-capitol-state-historic-site",
-   "ref": "US-3349",
-   "seen": "2026-11-05",
-   "src": "mo-parks"
-  },
-  {
-   "call": "KPC BOT",
    "details": "Missouri State Parks: Partial Closure — During WET conditions: Trails are closed to bicycles and equestrians. \"Leaving Tracks, Turn Back\" \"Wet Ground, Turn Around\" Use common sense, help preserve the park for future generations to enjoy. · Spring Brook Trail spur is CLOSED to the Devil's Icebox Parking Lot due to bridge damage. Observe all signage and do not cross the barriers. · The Devil's Icebo",
    "expires": "2026-11-08",
    "id": "uc-mo-parks-partial-closure-during-wet-conditions-trails-are-closed-to-US-1782",
@@ -1120,17 +1120,6 @@
    "kind": "Closure",
    "link": "https://mostateparks.com/park/stockton-state-park",
    "ref": "US-1786",
-   "seen": "2026-11-05",
-   "src": "mo-parks"
-  },
-  {
-   "call": "KPC BOT",
-   "details": "Missouri State Parks: Partial Closure — The boat ramp, Bramwell fishing access (BSSP 1) and the Wooden Bridge are closed to vehicle and pedestrian traffic due to construction. · The Whistle Trail is closed at the Bramwell Fishing access end, due to construction. · Campground 4 showers and restrooms are closed due to construction. Restrooms and showers are available in adjacent campground 5. · Ther",
-   "expires": "2026-11-08",
-   "id": "uc-mo-parks-partial-closure-the-boat-ramp-bramwell-fishing-access-bssp-US-1747",
-   "kind": "Closure",
-   "link": "https://mostateparks.com/park/bennett-spring-state-park",
-   "ref": "US-1747",
    "seen": "2026-11-05",
    "src": "mo-parks"
   },
@@ -1320,6 +1309,17 @@
    "ref": "US-3387",
    "seen": "2026-11-05",
    "src": "mt-fwp"
+  },
+  {
+   "call": "KPC BOT",
+   "details": "NJ State Park Service: Park Open Office Closed — Grounds open daily from 8:00 am to 6:00 pm.",
+   "expires": "2026-11-08",
+   "id": "uc-nj-parks-park-open-office-closed-grounds-open-daily-from-8-00-am-to-6-US-1630",
+   "kind": "Closure",
+   "link": "https://nj.gov/dep/parksandforests/historic/ringwoodmanor.html",
+   "ref": "US-1630",
+   "seen": "2026-11-05",
+   "src": "nj-parks"
   },
   {
    "call": "KPC BOT",
@@ -2084,10 +2084,10 @@
   },
   "mo-parks": {
    "agency": "Missouri State Parks",
-   "n": 56,
+   "n": 55,
    "ok": true,
    "page": "https://mostateparks.com/basic-page/active-advisories",
-   "rows": 57,
+   "rows": 56,
    "st": "MO",
    "unmatched": [
     "Rock Island Trail State Park"
@@ -2119,10 +2119,10 @@
   },
   "nj-parks": {
    "agency": "NJ State Park Service",
-   "n": 0,
+   "n": 1,
    "ok": true,
    "page": "https://dep.nj.gov/parksandforests/",
-   "rows": 2,
+   "rows": 3,
    "st": "NJ",
    "unmatched": [
     "Indian King Tavern Historic Site",

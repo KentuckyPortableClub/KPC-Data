@@ -13,22 +13,25 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 | US-MN | 298 | 19 | 82 | 87 | 93 | 0 |
 | US-IA | 181 | 114 | 3 | 2 | 61 | 0 |
 | US-ND | 82 | 20 | 12 | 0 | 54 | 0 |
-| US-NY | 616 | 164 | 174 | 349 | 62 | 1 |
+| US-NY | 851 | 195 | 188 | 428 | 184 | 1 |
 | US-MA | 421 | 35 | 25 | 5 | 346 | 0 |
 | US-ME | 148 | 26 | 8 | 2 | 85 | 2 |
 | US-MD | 186 | 81 | 86 | 29 | 64 | 0 |
 | US-DE | 89 | 2 | 1 | 0 | 42 | 0 |
 | US-AR | 306 | 47 | 18 | 24 | 186 | 22 |
 | US-LA | 123 | 11 | 7 | 4 | 11 | 0 |
+| US-OK | 205 | 42 | 12 | 4 | 152 | 0 |
 | US-KS | 145 | 8 | 11 | 1 | 13 | 0 |
 | US-ID | 63 | 0 | 2 | 0 | 32 | 0 |
 | US-MT | 254 | 39 | 73 | 9 | 154 | 1 |
 | US-NV | 367 | 32 | 39 | 5 | 184 | 0 |
 | US-AZ | 123 | 4 | 7 | 9 | 56 | 0 |
 | US-CA | 243 | 103 | 94 | 20 | 86 | 2 |
+| US-OR | 140 | 27 | 20 | 19 | 40 | 0 |
 | US-AK | 179 | 4 | 7 | 4 | 161 | 0 |
 | US-HI | 102 | 9 | 1 | 6 | 73 | 0 |
 | US-MI | 388 | 18 | 15 | 3 | 27 | 0 |
+| US-OH | 276 | 7 | 12 | 0 | 2 | 1 |
 
 ## US-NC: 12-park sample for chat 8
 
@@ -641,6 +644,44 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 - **US-0723 Vicksburg National Military Park**
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/vick/planyourvisit/fees.htm)
 
+## US-OK: 12-park sample for chat 8
+
+- **US-0489 Salt Plains National Wildlife Refuge**
+  - Hours: “The Selenite Crystal Digging Area is open for crystal digging April 1 through October 15 from sunrise to sunset and is located 66003 Garvin Road, Cherokee, OK 73728.” · [www.fws.gov](https://www.fws.gov/refuge/salt-plains/visit-us)
+  - Hours: “Seven trails and one auto tour are open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/salt-plains/visit-us)
+- **US-0490 Sequoyah National Wildlife Refuge**
+  - Hours: “The Sandtown Bottom Unit and Sally Jones Lake are open from 5:00 am until one hour after legal sunset.” · [www.fws.gov](https://www.fws.gov/refuge/sequoyah/visit-us)
+  - Hours: “5 am - One hour after legal sunset” · [www.fws.gov](https://www.fws.gov/refuge/sequoyah/visit-us)
+- **US-0491 Tishomingo National Wildlife Refuge**
+  - Hours: “The refuge is open from sunrise to sunset, except for night fishing and camping.” · [www.fws.gov](https://www.fws.gov/refuge/tishomingo/visit-us)
+  - Hours: “Open from sunrise to sunset;” · [www.fws.gov](https://www.fws.gov/refuge/tishomingo/visit-us)
+- **US-0492 Washita National Wildlife Refuge**
+  - Hours: “Refuge is open daily from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/washita/visit-us)
+- **US-0493 Wichita Mountains National Wildlife Refuge**
+  - Hours: “The refuge is open from sunrise to sunset daily.” · [www.fws.gov](https://www.fws.gov/refuge/wichita-mountains/visit-us)
+  - Hours: “Unless fishing, all parking areas, pullouts, refuge side roads, and trailheads close sunset to sunrise.” · [www.fws.gov](https://www.fws.gov/refuge/wichita-mountains/visit-us)
+- **US-0822 Fort Smith National Historic Site**
+  - Hours: “The Gallows and Commissary building are open from 9:15 am to 4:45 pm, daily.” · [www.nps.gov](https://www.nps.gov/fosm/planyourvisit/hours.htm)
+  - Hours: “Park grounds are open daily from 30 minutes before sunrise to 11:00 pm.” · [www.nps.gov](https://www.nps.gov/fosm/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fosm/planyourvisit/fees.htm)
+- **US-0872 Washita Battlefield National Historic Site**
+  - Hours: “Open 7 days a week from 8:00 am to 4:30 pm” · [www.nps.gov](https://www.nps.gov/waba/planyourvisit/hours.htm)
+  - Hours: “Open daily 30 minutes before sunrise to 30 minutes after sunset.” · [www.nps.gov](https://www.nps.gov/waba/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/waba/planyourvisit/fees.htm)
+- **US-10305 Lake Carl Etling Conservation Area**
+  - Hours: “Hours - Vehicular access is closed to all except emergency traffic from 10 pm to 6 am year-round.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
+  - Hunting hours: “From 10 pm to 5 am, all Wildlife Department fishing areas are restricted to fishing and hunting (when applicable) related activities only.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
+- **US-11641 Tishomingo National Fish Hatchery**
+  - Fees: “Each summer on the first Saturday in June, the hatchery hosts the Annual Kids’ Fishing Derby where anglers ages 6 – 12 can fish for channel catfish free of charge.” · [www.fws.gov](https://www.fws.gov/locations/tishomingo-national-fish-hatchery)
+- **US-11715 Lower Illinois River Game Preserve**
+  - Hours: “Hours - Vehicular access is closed to all except emergency traffic from 10 pm to 6 am year-round.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
+  - Hunting hours: “From 10 pm to 5 am, all Wildlife Department fishing areas are restricted to fishing and hunting (when applicable) related activities only.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
+- **US-11994 Schooler State Fishing Lake**
+  - Hours: “Hours - Vehicular access is closed to all except emergency traffic from 10 pm to 6 am year-round.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
+  - Hunting hours: “From 10 pm to 5 am, all Wildlife Department fishing areas are restricted to fishing and hunting (when applicable) related activities only.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
+- **US-2773 Black Mesa State Park**
+  - Hours: “Black Mesa Nature Preserve is open dawn to dusk only.” · [www.travelok.com](https://www.travelok.com/state-parks/black-mesa-state-park-nature-preserve)
+
 ## US-KS: 12-park sample for chat 8
 
 - **US-0292 Kirwin National Wildlife Refuge**
@@ -844,6 +885,45 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 - **US-0218 Tule Lake National Wildlife Refuge**
   - Hours: “The refuge grounds are open 7 days a week from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/tule-lake)
 
+## US-OR: 12-park sample for chat 8
+
+- **US-0018 Crater Lake National Park**
+  - Hours: “The park is open year-round, 24 hours a day.” · [www.nps.gov](https://www.nps.gov/crla/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/crla/planyourvisit/fees.htm)
+- **US-0054 Nez Perce National Historical Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/nepe/planyourvisit/fees.htm)
+  - Fees: “There are no fees to visit any of the sites of Nez Perce National Historical Park.” · [www.nps.gov](https://www.nps.gov/nepe/planyourvisit/fees.htm)
+- **US-0199 Lower Klamath National Wildlife Refuge**
+  - Hours: “The refuge is open 7 days a week from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/lower-klamath)
+- **US-0200 Sarah Helmick State Recreation Area**
+  - Fees: “Daily parking permits are $10 per day, per vehicle for residents of Oregon (or $12 per day for non-residents).” · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.parking)
+  - Permit: “If you're camping at a state park, you don't need a day-use parking permit.” · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.parking)
+  - Permit: “The daily permit is good for parking the entire day at any state park that requires a day-use parking permit.” · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.parking)
+- **US-0213 Maud Williamson State Recreation Area**
+  - Fees: “Daily parking permits are $10 per day, per vehicle for residents of Oregon (or $12 per day for non-residents).” · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.parking)
+  - Permit: “If you're camping at a state park, you don't need a day-use parking permit.” · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.parking)
+  - Permit: “The daily permit is good for parking the entire day at any state park that requires a day-use parking permit.” · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=visit.parking)
+- **US-0494 Ankeny National Wildlife Refuge**
+  - Hours: “The refuge is open from dawn to dusk.” · [www.fws.gov](https://www.fws.gov/refuge/ankeny/visit-us)
+  - Hours: “The refuge is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/ankeny/visit-us)
+- **US-0495 Bandon Marsh National Wildlife Refuge**
+  - Hours: “Bandon Marsh NWR is open seven days a week, sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/bandon-marsh/visit-us)
+  - Hours: “Refuge nature trails are open daily from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/bandon-marsh/visit-us)
+- **US-0496 Baskett Slough National Wildlife Refuge**
+  - Hours: “The refuge is open from dawn to dusk.” · [www.fws.gov](https://www.fws.gov/refuge/baskett-slough/visit-us)
+  - Hunting hours: “The HWY 22 kiosk and Rich Guadagno Memorial Trail are open year-round, but all other trails are closed from October 1 through March 31 to provide sanctuary for wintering dusky Canada geese and other waterfowl.” · [www.fws.gov](https://www.fws.gov/refuge/baskett-slough/visit-us)
+- **US-0498 Cape Meares National Wildlife Refuge**
+  - Hours: “The refuge is open year-round from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/cape-meares/visit-us)
+  - Fees: “There are no fees for this refuge.” · [www.fws.gov](https://www.fws.gov/refuge/cape-meares/visit-us)
+- **US-0499 Cold Springs National Wildlife Refuge**
+  - Hours: “Cold Springs is open year-round during daylight hours;” · [www.fws.gov](https://www.fws.gov/refuge/cold-springs)
+- **US-0500 Hart Mountain National Wildlife Refuge**
+  - Permit: “A special use permit is required before conducting research on the refuge.” · [www.fws.gov](https://www.fws.gov/locations/hart-mountain-national-antelope-refuge)
+  - Office hours: “Complex Office Hours: 8am-4:30pm, Monday-Friday;” · [www.fws.gov](https://www.fws.gov/locations/hart-mountain-national-antelope-refuge)
+- **US-0502 Malheur National Wildlife Refuge**
+  - Hours: “The Refuge is open every day from sunrise to sunset and is always free.” · [www.fws.gov](https://www.fws.gov/refuge/malheur)
+  - Office hours: “8:00 am - 4:00 pm (hours may change, call for current hours)” · [www.fws.gov](https://www.fws.gov/refuge/malheur/visit-us)
+
 ## US-AK: 12-park sample for chat 8
 
 - **US-10281 White Mountains National Recreation Area BLM Recreation Management Area**
@@ -940,3 +1020,44 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
   - Fees: “An Academic Fee Waiver is required for organized groups visiting the Lakeshore for education.Organized, educational groups of children who are less than 16 years of age may enter the park free of charge and do not need a fee waiver.” · [www.nps.gov](https://www.nps.gov/slbe/planyourvisit/fees.htm)
 - **US-10517 Pendills Creek National Fish Hatchery**
   - Hours: “Visitor Contact Station Hours: Monday - Friday, except federal holidays: 7:00 am - 3:00 pm, closed 12:00 pm to 12:30 pm.” · [www.fws.gov](https://www.fws.gov/locations/pendills-creek-national-fish-hatchery)
+
+## US-OH: 12-park sample for chat 8
+
+- **US-0020 Cuyahoga Valley National Park**
+  - Hours: “The remaining areas are open 24 hours.” · [www.nps.gov](https://www.nps.gov/cuva/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/cuva/planyourvisit/fees.htm)
+- **US-0482 Cedar Point National Wildlife Refuge**
+  - Hours: “Open during daylight hours for approved activities” · [www.fws.gov](https://www.fws.gov/refuge/cedar-point/visit-us)
+- **US-0483 Ottawa National Wildlife Refuge**
+  - Hours: “Outdoor restrooms open daily from dawn to dusk” · [www.fws.gov](https://www.fws.gov/refuge/ottawa/visit-us)
+  - Hours: “The building is open Thursday through Sunday 10:00 am to 4:00 pm.” · [www.fws.gov](https://www.fws.gov/refuge/ottawa/visit-us)
+  - Fees: “America the Beautiful Annual Pass - $80.00 - valid for 12 months from the time of purchase – provide access to recreation sites managed by six federal agencies: National Park Service, US Fish & Wildlife Service, US Forest Service, US Army C” · [www.fws.gov](https://www.fws.gov/refuge/ottawa/visit-us)
+- **US-0732 Dayton Aviation Heritage National Historical Park**
+  - Hours: “The park grounds are open to the public every day during daylight hours and the Wright Brothers National Museum at Carillon Historical Park is open daily.” · [www.nps.gov](https://www.nps.gov/daav/planyourvisit/hours.htm)
+  - Hours: “Open: Wednesday to Sunday 9:00 am - 4:00 pm.” · [www.nps.gov](https://www.nps.gov/daav/planyourvisit/hours.htm)
+  - Fees: “There is no entrance fee to visit National Park Service managed portions of Dayton Aviation National Historical Park.” · [www.nps.gov](https://www.nps.gov/daav/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/daav/planyourvisit/fees.htm)
+- **US-0737 Hopewell Culture National Historical Park**
+  - Hours: “The park's Visitor Center is open daily for limited hours of operation from 9:00 am to 4:00 pm.” · [www.nps.gov](https://www.nps.gov/hocu/planyourvisit/hours.htm)
+  - Hours: “The grounds at Mound City Group are open from dawn to dusk.” · [www.nps.gov](https://www.nps.gov/hocu/planyourvisit/hours.htm)
+  - Fees: “There are no entrance fees at any of Hopewell Culture National Historical Park's sites.” · [www.nps.gov](https://www.nps.gov/hocu/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/hocu/planyourvisit/fees.htm)
+  - Attraction fee: “There is no admission fee to enter the park's visitor center.” · [www.nps.gov](https://www.nps.gov/hocu/planyourvisit/fees.htm)
+- **US-0787 Perry's Victory and International Peace National Memorial**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/pevi/planyourvisit/fees.htm)
+- **US-0813 First Ladies National Historic Site**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fila/planyourvisit/fees.htm)
+- **US-0836 James A. Garfield National Historic Site**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/jaga/planyourvisit/fees.htm)
+- **US-0875 William Howard Taft National Historic Site**
+  - Hours: “The park grounds are open 9 am to 4 pm, seven days a week.” · [www.nps.gov](https://www.nps.gov/wiho/planyourvisit/hours.htm)
+  - Fees: “There are no entrance fees at William Howard Taft National Historic Site.” · [www.nps.gov](https://www.nps.gov/wiho/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/wiho/planyourvisit/fees.htm)
+  - Attraction fee: “There is no admission fee to enter the park's visitor center .” · [www.nps.gov](https://www.nps.gov/wiho/planyourvisit/fees.htm)
+- **US-0916 Charles Young Buffalo Soldiers National Monument**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/chyo/planyourvisit/fees.htm)
+- **US-13539 Fernald National Preserve**
+  - Hours: “Open Wednesday through Saturday, 9 am to 5 pm and Sunday, 12 pm to 5 pm.” · [www.energy.gov](https://www.energy.gov/lm/fernald-preserve-ohio-site)
+- **US-4239 North Country Trail National Scenic Trail**
+  - Fees: “No fees are charged for hiking on the trail but fees may be required for parking, camping, or entrance at various sections along the trail.” · [www.nps.gov](https://www.nps.gov/noco/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/noco/planyourvisit/fees.htm)
