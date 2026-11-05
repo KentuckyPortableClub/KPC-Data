@@ -33,7 +33,7 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 18,
+   "dropped_queued": 9,
    "errors": 0,
    "for_person_urls": [
     [
@@ -45,42 +45,30 @@
      "robots.txt answered 403: nothing fetched from ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com this run"
     ],
     [
-     "https://services5.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
-    ],
-    [
      "https://services1.arcgis.com/robots.txt",
      "robots.txt answered 403: nothing fetched from services1.arcgis.com this run"
-    ],
-    [
-     "https://services6.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
-    ],
-    [
-     "https://apps.fs.usda.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from apps.fs.usda.gov this run"
     ],
     [
      "https://usdaoig.oversight.gov/robots.txt",
      "robots.txt answered 406: nothing fetched from usdaoig.oversight.gov this run"
     ]
    ],
-   "requests": 64,
-   "rested": 4,
-   "robots": 7,
-   "robots_unreadable": 7,
+   "requests": 31,
+   "rested": 0,
+   "robots": 4,
+   "robots_unreadable": 4,
    "strikes": 0
   },
   "stat": {
    "checked": 0,
    "different_land": 0,
-   "errors": 8,
+   "errors": 3,
    "finds": 0,
    "mismatch": 0,
    "nothing": 0,
    "padus_only": 0,
    "parks": 0,
-   "requests": 74,
+   "requests": 31,
    "skipped_fresh": 0,
    "sure": 0
   },
@@ -91,10 +79,10 @@
   "stat": {
    "answered": 0,
    "blocked": 0,
-   "not_found": 1,
-   "partly": 7,
-   "questions": 8,
-   "skipped_done": 43
+   "not_found": 0,
+   "partly": 3,
+   "questions": 3,
+   "skipped_done": 48
   },
   "when": "2026-11-05"
  }
