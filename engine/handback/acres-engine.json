@@ -498,6 +498,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-4105",
+   "Park name (as the agency writes it)": "Washington County",
+   "Size": 1575,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D124&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-4122",
+   "Park name (as the agency writes it)": "Fall Creek Scenic Overlook",
+   "Size": 218,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D272&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -1065,6 +1083,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-12938",
+   "Park name (as the agency writes it)": "Industrial Forest Lands - Laurel Complex",
+   "Size": 359,
+   "Unit": "acres",
+   "Agency": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+   "Source page": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?where=OBJECTID%3D69&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-5973",
    "Park name (as the agency writes it)": "Salt Creek WMA",
    "Size": 5887,
@@ -1520,7 +1547,7 @@
    "Agency/area": "IDNR Properties",
    "Kind": "GIS layer",
    "Example URL": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
-   "# times used": 2,
+   "# times used": 4,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1661,6 +1688,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
    "# times used": 24,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "enterprise.firstmap.delaware.gov",
+   "Agency/area": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
