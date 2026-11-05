@@ -1,6 +1,6 @@
 # GAP FILLER: leads for the parks with no outline
 
-Read 2026-11-02. REVIEW ONLY: nothing here is in a key. Per area: the layers found, the ones that would close the most parks first; the name-mismatch list (chat 2 compares both names); how many parks had nothing. "Sure" = pin inside + name words match + similar size when known (house rule); everything else is "check".
+Read 2026-11-05. REVIEW ONLY: nothing here is in a key. Per area: the layers found, the ones that would close the most parks first; the name-mismatch list (chat 2 compares both names); how many parks had nothing. "Sure" = pin inside + name words match + similar size when known (house rule); everything else is "check".
 
 ℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go.
 

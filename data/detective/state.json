@@ -16,7 +16,10 @@
    "when": "2026-10-29"
   }
  },
- "hosts": {},
+ "hosts": {
+  "georgiawildlife.com": 1793967687.538186,
+  "www.floridastateparks.org": 1793967247.9730012
+ },
  "last": {
   "areas": [
    "US-NV",
@@ -30,37 +33,104 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
+   "deferred": 34,
+   "dropped_queued": 102,
    "errors": 0,
-   "requests": 0,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "for_person": 4,
+   "for_person_urls": [
+    [
+     "https://services6.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
+    ],
+    [
+     "https://services1.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services1.arcgis.com this run"
+    ],
+    [
+     "https://services.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services.arcgis.com this run"
+    ],
+    [
+     "https://services7.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services7.arcgis.com this run"
+    ],
+    [
+     "https://services3.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services3.arcgis.com this run"
+    ],
+    [
+     "https://www.floridastateparks.org/news",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.floridastateparks.org/news",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com this run"
+    ],
+    [
+     "https://services2.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services2.arcgis.com this run"
+    ],
+    [
+     "https://services5.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
+    ],
+    [
+     "https://apps.fs.usda.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from apps.fs.usda.gov this run"
+    ],
+    [
+     "https://georgiawildlife.com/news",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://arcgisserver.digital.mass.gov/robots.txt",
+     "robots.txt answered 502: nothing fetched from arcgisserver.digital.mass.gov this run"
+    ],
+    [
+     "https://georgiawildlife.com/news",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://usdaoig.oversight.gov/robots.txt",
+     "robots.txt answered 406: nothing fetched from usdaoig.oversight.gov this run"
+    ]
+   ],
+   "requests": 314,
+   "rested": 3,
+   "retry403": 4,
+   "robots": 19,
+   "robots_unreadable": 11,
+   "strikes": 8
   },
   "stat": {
    "checked": 0,
    "different_land": 0,
-   "errors": 0,
+   "errors": 10,
    "finds": 0,
    "mismatch": 0,
    "nothing": 0,
    "padus_only": 0,
    "parks": 0,
-   "requests": 0,
+   "requests": 410,
    "skipped_fresh": 0,
    "sure": 0
   },
-  "when": "2026-11-02"
+  "when": "2026-11-05"
  },
  "questions": {
-  "open": 1,
+  "open": 42,
   "stat": {
-   "answered": 0,
+   "answered": 6,
    "blocked": 0,
-   "not_found": 0,
-   "partly": 0,
-   "questions": 0,
+   "not_found": 8,
+   "partly": 33,
+   "questions": 47,
    "skipped_done": 4
   },
-  "when": "2026-11-02"
+  "when": "2026-11-05"
  }
 }
