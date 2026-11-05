@@ -18,6 +18,7 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 | US-MN | 227 | 34 | 45 | 0 | 0 | 0 | 50 | 0 | 98 | 0 | 132 | 0 |
 | US-IA | 125 | 0 | 32 | 0 | 0 | 0 | 93 | 0 | 0 | 0 | 0 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
+| US-PA | 161 | 101 | 45 | 1 | 0 | 0 | 0 | 0 | 14 | 1 | 115 | 0 |
 | US-NY | 584 | 92 | 5 | 232 | 55 | 0 | 1 | 0 | 199 | 38 | 572 | 0 |
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 32 |
@@ -75,8 +76,8 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 - southcarolinaparks.com: 17 campgrounds
 - www.dec.ny.gov: 5 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
+- www.recreation.gov: 4 campgrounds
 - gastateparks.org: 3 campgrounds
-- www.recreation.gov: 3 campgrounds
 - www.nps.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
 - explore.gastateparks.org: 1 campgrounds
@@ -1342,6 +1343,75 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
   - season = "year-round" · “ites - electrical: $30 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
   - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
   - sites.total = 62 · “ntact the park directly for current status. Vault toilets usually remain open. Park Size: 62 campsites Directions: 8 miles east of Belle Fou”
+
+## US-PA: 12 random samples (records with facts; seed = the date)
+
+- **Hickory Run Campground** (PA-0346b777e6, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004630.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Black Moshannon Campground** (PA-2dee1f3dcc, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004914.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Little Pine Campground** (PA-c8b88ec53d, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003721.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Nockamixon State Park** (PA-50fdbf5540, state, status ok, 5 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/NockamixonStatePark)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/n · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/nockamixon-state-park/r/campgroundDetails.”
+  - hookups.electric = true · “lendar of Events for the lastest offerings. Electric Vehicle Charging Station A two-plug, electric vehicle charging station is available for”
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/nockamixon-state-par”
+- **State forest primitive and motorized (roadside) campsites** (intake-US-5467, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
+  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
+  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
+  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
+  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
+  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
+- **Gifford Pinchot Campground** (PA-68e4d68901, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004649.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Gerard Trail shelter areas (Cow Run, Wolfkiel Run); Wildcat group tenting** (intake-US-1393, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/oil-creek-state-park/stay)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/o · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/oil-creek-state-park/r/campgroundDetails.d”
+  - reservable = true · “roups.&lt;/p>\n &lt;p class=\"ms-rteElement-P\" style=\"\tfont-size: 1.0em;\r\n\">Advance reservations are required.&lt;/p>\n&lt;/div>"}}"> ”
+  - restrooms = "vault" · “t-P\">\n Fire circle\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Composting toilets\n &lt;/div>&lt;/li>\n &lt;li>\n”
+  - rules.pets = "Pets are permitted at the shelter areas" · “not be defaced.&lt;/p>\n&lt;p class=\"ms-rteElement-P\" style=\"\tfont-size: 1.0em;\r\n\">Pets are permitted at the shelter areas. Please co”
+  - showers = false · “&lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Seasonal water, but no showers\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div cl”
+- **Chapman Campground** (PA-6f3f761545, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004819.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Organized group tenting area** (intake-US-1432, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/warriors-path-state-park/stay)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/w · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/warriors-path-state-park/r/campgroundDetai”
+  - features = "fire rings, but no showers or electricity" · “people. Water and non-flush toilets are available. There are picnic tables and two large fire rings, but no showers or electricity. An adjac”
+  - hookups.electric = "some" · “tables and two large fire rings, but no showers or electricity. An adjacent pavilion with electricity is available for a separate fee.&lt;/p”
+  - restrooms = "none" · “ement-P\">The area can accommodate a single group of up to 80 people. Water and non-flush toilets are available. There are picnic tables and”
+  - season = "April through October 31" · “Element-P\">Qualified, organized groups can camp in the primitive group tenting area from April through October 31.&lt;/p>\r\n&lt;p class=\"”
+  - showers = false · “non-flush toilets are available. There are picnic tables and two large fire rings, but no showers or electricity. An adjacent pavilion with ”
+- **Canoe Creek State Park** (PA-d1e82461dd, state, status ok, no campground facts even in a browser, 5 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/CanoeCreekStatePark)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/c · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/canoe-creek-state-park/r/campgroundDetails”
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/canoe-creek-state-pa”
+  - season = "year-round" · “s the historical and natural resources of the park. Near the modern cabins, the center is open year-round and provides brochures about the e”
+- **Little Buffalo Campground** (PA-270885cedc, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003733.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Caledonia Hosack Run Campground** (PA-4046c57307, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004832.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
 
 ## US-NY: 12 random samples (records with facts; seed = the date)
 
