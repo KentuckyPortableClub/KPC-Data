@@ -70,19 +70,20 @@ jobs:
           mkdir -p bundle/water
           gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null && tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true   # ok: nothing to do is fine
           N0=$(ls bundle/water | wc -l)
-          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          pip install -q pyshp 2>/dev/null || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || { kpc_rc=$?; echo "::error title=kpc_water_ca.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_ca.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          pip install -q pyshp 2>/dev/null || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || { kpc_rc=$?; echo "::error title=kpc_water_ca.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_ca.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           N1=$(ls bundle/water | wc -l)
           if [ "$N1" -gt "$N0" ]; then
             tar czf "$WATER_ASSET" bundle/water
-            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || { kpc_rc=$?; echo "::error title=kpc_keep2.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep2.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || { kpc_rc=$?; echo "::error title=kpc_keep2.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep2.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: $N0 -> $N1 tiles ($(du -h "$WATER_ASSET" | cut -f1))" || echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: upload failed"
           else echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: nothing new ($N1 tiles)"; fi
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
           KPC_STEPS: ${{ toJSON(steps) }}
+          KPC_FAIL_SAFE: ${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}   # next round C4: red on a caught error (safe: this job starts nothing after it)
         run: |
           python3 - <<'PY'
           import json, os
@@ -98,4 +99,16 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
           PY

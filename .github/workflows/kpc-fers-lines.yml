@@ -127,22 +127,22 @@ jobs:
         run: |
           # Oct 29 8:30 PM (HQ release order, step 3): far-spot hold + parcel check RETIRED: the Rule G key (G-1 / R-G7 / R-G8)
           # now keeps far and wrong pieces out of the outlines themselves, so the 2-fer rows no longer need this second guard
-          NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || { kpc_rc=$?; echo "::error title=kpc_fers_layered.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_layered.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || { kpc_rc=$?; echo "::error title=kpc_fers_layered.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_layered.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           git config user.name kpc-bot; git config user.email bot@kpc.local
-          LINKS=links python3 .github/scripts/kpc_waiting_room.py divert data/fers || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 29: a changed US/CA 2-fer file waits for chat 11 (the layered list stays live)
+          LINKS=links python3 .github/scripts/kpc_waiting_room.py divert data/fers || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 29: a changed US/CA 2-fer file waits for chat 11 (the layered list stays live)
           git add data/fers data/waiting && git commit -qm "2-fer: far-spot check + layered-land list" || true   # ok: nothing to commit is fine
-          git pull -q --rebase || { kpc_rc=$?; echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $kpc_rc)"; echo "git fetch - git could not fetch or merge the newest main (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; git push -q || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          git pull -q --rebase || { kpc_rc=$?; echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $kpc_rc)"; echo "git fetch - git could not fetch or merge the newest main (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; git push -q || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: The one big 'needs a human look' list from every area's file
         id: kept_green_2
         continue-on-error: true
         run: |
-          COMBINE_ONLY=1 OUT=data/fers python3 links/.github/scripts/kpc_fers_review.py || { kpc_rc=$?; echo "::error title=kpc_fers_review.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_review.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          COMBINE_ONLY=1 OUT=data/fers python3 links/.github/scripts/kpc_fers_review.py || { kpc_rc=$?; echo "::error title=kpc_fers_review.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_review.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           git config user.name kpc-bot; git config user.email bot@kpc.local
           # Nov 1 (chat 10 storage step 1): the combined list lives on branch tools-out (fers/review-all.*), not main
           ( git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../to origin/tools-out || exit 0
-            mkdir -p ../to/fers && cp data/fers/review-all.json data/fers/review-all.md ../to/fers/ 2>/dev/null; cd ../to && git add fers && git commit -qm "2-fer review list: combined" && { saved=0; for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep 7; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; } ) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+            mkdir -p ../to/fers && cp data/fers/review-all.json data/fers/review-all.md ../to/fers/ 2>/dev/null; cd ../to && git add fers && git commit -qm "2-fer review list: combined" && { saved=0; for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep 7; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; } ) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           git rm -q --cached --ignore-unmatch data/fers/review-all.json data/fers/review-all.md && git commit -qm "2-fer review list moved to tools-out" || true   # ok: nothing to commit is fine
-          git pull -q --rebase || { kpc_rc=$?; echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $kpc_rc)"; echo "git fetch - git could not fetch or merge the newest main (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; git push -q || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          git pull -q --rebase || { kpc_rc=$?; echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $kpc_rc)"; echo "git fetch - git could not fetch or merge the newest main (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; git push -q || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Areas parked on the water map -> one more round
         run: |
           python3 - <<'PY' > again.txt
@@ -178,4 +178,16 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
           PY
