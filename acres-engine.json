@@ -453,6 +453,42 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-2213",
+   "Park name (as the agency writes it)": "KAUMAHINA STATE WAYSIDE",
+   "Size": 7,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-2218",
+   "Park name (as the agency writes it)": "NUUANU PALI STATE WAYSIDE",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-2221",
+   "Park name (as the agency writes it)": "PUAA KAA STATE WAYSIDE",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D70&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-6426",
+   "Park name (as the agency writes it)": "Iolani Palace",
+   "Size": 11,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D384329&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -1146,6 +1182,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "CA-0831",
+   "Park name (as the agency writes it)": "Inuujaarvik Territorial Park",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
+   "Source page": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-12678",
+   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
+   "Size": 22,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-0042",
    "Park name (as the agency writes it)": "Fort Gaines",
    "Size": 32,
@@ -1424,6 +1478,26 @@
    "Retry?": "NO"
   },
   {
+   "Host": "geodata.hawaii.gov",
+   "Agency/area": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "mapservices.nps.gov",
+   "Agency/area": "National Register of Historic Places Polygons",
+   "Kind": "GIS layer",
+   "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "# times used": 5,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "services1.arcgis.com",
    "Agency/area": "National_Heritage_Areas_Updated2023",
    "Kind": "GIS layer",
@@ -1439,16 +1513,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
    "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "mapservices.nps.gov",
-   "Agency/area": "National Register of Historic Places Polygons",
-   "Kind": "GIS layer",
-   "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
-   "# times used": 4,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1614,6 +1678,26 @@
    "Retry?": "NO"
   },
   {
+   "Host": "services.aadnc-aandc.gc.ca",
+   "Agency/area": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
+   "Kind": "GIS layer",
+   "Example URL": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "arcgis.dnr.alaska.gov",
+   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "gisdata.in.gov",
    "Agency/area": "Indiana DNR properties",
    "Kind": "GIS layer",
@@ -1629,16 +1713,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
    "# times used": 6,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "arcgis.dnr.alaska.gov",
-   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
-   "# times used": 2,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1951,6 +2025,16 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (Cloudflare / robot challenge)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.princeedwardisland.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
    "Retry?": "YES"
   }
  ]
