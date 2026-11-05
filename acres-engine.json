@@ -3,13 +3,22 @@
  "Agencies": [],
  "Acres not downloadable": [
   {
+   "Park number (if matched)": "CA-5199",
+   "Park name (as the agency writes it)": "Heritage Heritage Center Park / Parc centre Marysville Heritage",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D98&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "CA-4864",
    "Park name (as the agency writes it)": "Fort Henry National Historic Site",
    "Size": 62,
    "Unit": "acres",
    "Agency": "Property Boundaries",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2269&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
   },
   {
    "Park number (if matched)": "CA-4866",
@@ -18,7 +27,7 @@
    "Unit": "acres",
    "Agency": "Property Boundaries",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2309&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
   },
   {
    "Park number (if matched)": "CA-4889",
@@ -27,7 +36,7 @@
    "Unit": "acres",
    "Agency": "Property Boundaries",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2260&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
   },
   {
    "Park number (if matched)": "CA-4890",
@@ -109,6 +118,24 @@
    "Agency": "Heritage Properties",
    "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D406&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0843",
+   "Park name (as the agency writes it)": "Longfellow National Historic House",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
+   "Source page": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0/query?where=OBJECTID%3D664800&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-7973",
+   "Park name (as the agency writes it)": "Baltimore--Washington Parkway",
+   "Size": 4290,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D394660&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-02"
   },
   {
    "Park number (if matched)": "CA-4794",
@@ -399,15 +426,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "US-9168",
-   "Park name (as the agency writes it)": "Lake Jack Nolen",
-   "Size": 192,
-   "Unit": "acres",
-   "Agency": "Arkansas Game and Fish Commission (AGOL org 5bMc8SlGDYGINZr5) (land, state GIS table)",
-   "Source page": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11/query?where=OBJECTID%3D258&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "US-13324",
    "Park name (as the agency writes it)": "City of Sparks",
    "Size": 3,
@@ -423,7 +441,7 @@
    "Unit": "acres",
    "Agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
    "Source page": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D232&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-05"
   },
   {
    "Park number (if matched)": "US-13287",
@@ -432,7 +450,7 @@
    "Unit": "acres",
    "Agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
    "Source page": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D259&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-05"
   },
   {
    "Park number (if matched)": "CA-5184",
@@ -534,6 +552,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "CA-2219",
+   "Park name (as the agency writes it)": "Parc Central",
+   "Size": 94,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -541,24 +568,6 @@
    "Agency": "National_Heritage_Areas_Updated2023",
    "Source page": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-0843",
-   "Park name (as the agency writes it)": "Longfellow National Historic House",
-   "Size": 2,
-   "Unit": "acres",
-   "Agency": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
-   "Source page": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0/query?where=OBJECTID%3D664800&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-7973",
-   "Park name (as the agency writes it)": "Baltimore--Washington Parkway",
-   "Size": 4290,
-   "Unit": "acres",
-   "Agency": "National Register of Historic Places Polygons",
-   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D394660&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-0054",
@@ -759,15 +768,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "CA-2219",
-   "Park name (as the agency writes it)": "Parc Central",
-   "Size": 94,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "CA-5170",
    "Park name (as the agency writes it)": "Fallsview Park",
    "Size": 8,
@@ -865,6 +865,78 @@
    "Agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
    "Source page": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D5132&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "CA-4899",
+   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Carillon",
+   "Size": 32,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4687&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4901",
+   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Chambly",
+   "Size": 404,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1968&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4904",
+   "Park name (as the agency writes it)": "Lieu historique national du Fort-Chambly",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1973&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4911",
+   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Lachine",
+   "Size": 356,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1997&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4917",
+   "Park name (as the agency writes it)": "Lieu historique national du Parc-Montmorency",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1820&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4796",
+   "Park name (as the agency writes it)": "Rogers Pass",
+   "Size": 335534,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D3063&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-1055",
+   "Park name (as the agency writes it)": "Lieu historique national de Lower Fort Garry",
+   "Size": 66,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2557&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4891",
+   "Park name (as the agency writes it)": "Lieu historique national Ardgowan",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D529&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
   },
   {
    "Park number (if matched)": "CA-4960",
@@ -1290,69 +1362,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "CA-4899",
-   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Carillon",
-   "Size": 32,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4687&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-4901",
-   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Chambly",
-   "Size": 404,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1968&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-4904",
-   "Park name (as the agency writes it)": "Lieu historique national du Fort-Chambly",
-   "Size": 2,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1973&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-4911",
-   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Lachine",
-   "Size": 356,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1997&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-4917",
-   "Park name (as the agency writes it)": "Lieu historique national du Parc-Montmorency",
-   "Size": 2,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1820&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-4796",
-   "Park name (as the agency writes it)": "Rogers Pass",
-   "Size": 335534,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D3063&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-1055",
-   "Park name (as the agency writes it)": "Lieu historique national de Lower Fort Garry",
-   "Size": 66,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2557&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "CA-4816",
    "Park name (as the agency writes it)": "Cape Spear Lighthouse National Historic Site",
    "Size": 130,
@@ -1377,15 +1386,6 @@
    "Unit": "acres",
    "Agency": "Property Boundaries",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D411&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-4891",
-   "Park name (as the agency writes it)": "Lieu historique national Ardgowan",
-   "Size": 4,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D529&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
   },
   {
@@ -1481,6 +1481,16 @@
  ],
  "Sources": [
   {
+   "Host": "services2.arcgis.com",
+   "Agency/area": "Parks",
+   "Kind": "GIS layer",
+   "Example URL": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0",
+   "# times used": 16,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "idgsi-rpgdi-arcgis.spac-pspc.gc.ca",
    "Agency/area": "Property Boundaries",
    "Kind": "GIS layer",
@@ -1491,11 +1501,21 @@
    "Retry?": "NO"
   },
   {
-   "Host": "services2.arcgis.com",
-   "Agency/area": "Heritage Properties",
+   "Host": "arcgisserver.digital.mass.gov",
+   "Agency/area": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
    "Kind": "GIS layer",
-   "Example URL": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
-   "# times used": 15,
+   "Example URL": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "mapservices.nps.gov",
+   "Agency/area": "National Register of Historic Places Polygons",
+   "Kind": "GIS layer",
+   "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "# times used": 6,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1515,7 +1535,7 @@
    "Agency/area": "Parks",
    "Kind": "GIS layer",
    "Example URL": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
-   "# times used": 23,
+   "# times used": 22,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1551,16 +1571,6 @@
    "Retry?": "NO"
   },
   {
-   "Host": "mapservices.nps.gov",
-   "Agency/area": "National Register of Historic Places Polygons",
-   "Kind": "GIS layer",
-   "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
-   "# times used": 6,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "maps.dnr.illinois.gov",
    "Agency/area": "IDNR Properties",
    "Kind": "GIS layer",
@@ -1581,21 +1591,21 @@
    "Retry?": "NO"
   },
   {
-   "Host": "services1.arcgis.com",
-   "Agency/area": "National_Heritage_Areas_Updated2023",
+   "Host": "services3.arcgis.com",
+   "Agency/area": null,
    "Kind": "GIS layer",
-   "Example URL": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0",
-   "# times used": 7,
+   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
   },
   {
-   "Host": "arcgisserver.digital.mass.gov",
-   "Agency/area": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
+   "Host": "services1.arcgis.com",
+   "Agency/area": "National_Heritage_Areas_Updated2023",
    "Kind": "GIS layer",
-   "Example URL": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
-   "# times used": 1,
+   "Example URL": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0",
+   "# times used": 7,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1655,16 +1665,6 @@
    "Agency/area": "Arkansas State Parks (park, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "services3.arcgis.com",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
    "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
