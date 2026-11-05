@@ -1,161 +1,7 @@
 {
- "checked": "2026-11-05T19:40Z",
+ "checked": "2026-11-05T21:29Z",
  "switched_on": false,
  "results": [
-  {
-   "path": "data/ca-key/CA-AB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-BC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-MB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NU.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-ON.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-PE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-QC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SP.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-YT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/answers-applied.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/hardlook-joins.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/index.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/layers.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/overrides.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/refs.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/why-not.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
   {
    "path": "data/campinfo/US-AL.json",
    "kind": "campinfo",
@@ -1219,14 +1065,16 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/US-AR.json",
+   "path": "data/fers/US-AR.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 70 (over 30% change)",
-    "F-2 59 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
+    "F-2 candidates 12 -> 82 (over 30% change)",
+    "F-2 72 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
     "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-7276+US-7298 102 km"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-AR.json (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -1296,7 +1144,6 @@
    "path": "data/fers/US-FL.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 145 -> 192 (over 30% change)",
     "F-2 NOT SURE 41 -> 24 (over 30% change)",
     "F-2 56 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0240+US-3620, US-0247+US-3660",
     "F-K known 2-fer missing: US-3627 + US-4559"
@@ -1308,7 +1155,7 @@
    "path": "data/fers/US-GA.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 6 new candidate pairs since the live file (over 10% of 52): a person looks at them first, e.g. US-10397+US-4473, US-4473+US-4556, US-4556+US-7135"
+    "F-2 7 new candidate pairs since the live file (over 10% of 52): a person looks at them first, e.g. US-2193+US-7139, US-4473+US-4556, US-4556+US-7135"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1355,9 +1202,14 @@
   {
    "path": "data/fers/US-KS.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 candidates 25 -> 17 (over 30% change)",
+    "F-2 only 17 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-K known 2-fer missing: US-2333 + US-7402",
+    "F-K known 2-fer missing: US-7406 + US-7939"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-KY.json.gz",
@@ -1366,6 +1218,13 @@
    "notes": [
     "replaces live data/fers/US-KY.json (same file, other format): promotion removes the old name"
    ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/US-LA.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -1381,12 +1240,9 @@
   {
    "path": "data/fers/US-MD.json.gz",
    "kind": "fers",
-   "why": [
-    "F-2 only 104 of 140 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 44 new candidate pairs since the live file (over 10% of 140): a person looks at them first, e.g. US-0333+US-4567, US-0333+US-4581, US-0335+US-4567"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-ME.json",
@@ -1447,8 +1303,9 @@
    "path": "data/fers/US-NC.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 80 -> 126 (over 30% change)",
-    "F-2 53 new candidate pairs since the live file (over 10% of 80): a person looks at them first, e.g. US-0411+US-8313, US-0415+US-8313, US-0682+US-3852"
+    "F-2 candidates 80 -> 118 (over 30% change)",
+    "F-2 only 57 of 80 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 61 new candidate pairs since the live file (over 10% of 80): a person looks at them first, e.g. US-0411+US-8313, US-0415+US-8313, US-0682+US-3852"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1466,8 +1323,9 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 15 -> 46 (over 30% change)",
-    "F-2 31 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
+    "F-2 candidates 15 -> 41 (over 30% change)",
+    "F-2 only 11 of 15 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 30 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1533,12 +1391,14 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-OK.json.gz",
+   "path": "data/fers/US-OK.json",
    "kind": "fers",
    "why": [
     "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-6347+US-8122 326 km"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-OK.json.gz (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -1555,8 +1415,8 @@
    "path": "data/fers/US-PA.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 45 -> 159 (over 30% change)",
-    "F-2 116 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0619+US-4239, US-0624+US-5468, US-0625+US-5468"
+    "F-2 candidates 45 -> 158 (over 30% change)",
+    "F-2 115 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0619+US-4239, US-0624+US-5468, US-0625+US-5468"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1574,7 +1434,7 @@
    "path": "data/fers/US-SC.json",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"
+    "F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 156 rows for 234 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1590,23 +1450,22 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-TN.json",
+   "path": "data/fers/US-TN.json.gz",
    "kind": "fers",
    "why": [
     "F-2 14 new candidate pairs since the live file (over 10% of 64): a person looks at them first, e.g. US-0034+US-4556, US-0034+US-8313, US-0685+US-2955"
    ],
-   "notes": [
-    "replaces live data/fers/US-TN.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-TX.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 42 (over 30% change)",
-    "F-2 NOT SURE 20 -> 3 (over 30% change)",
-    "F-2 30 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US-0541+US-6580"
+    "F-2 candidates 12 -> 39 (over 30% change)",
+    "F-2 NOT SURE 20 -> 6 (over 30% change)",
+    "F-2 29 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US-0541+US-6580",
+    "F-K known 2-fer missing: US-3015 + US-3502"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1619,6 +1478,15 @@
     "F-2 NOT SURE 71 -> 42 (over 30% change)",
     "F-2 52 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-13571, US-0072+US-6010, US-0558+US-4578",
     "F-S3 3 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-11196+US-5973 219 km"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-VA.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-K known 2-fer missing: US-4564 + US-4581"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2822,358 +2690,6 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/us-key/US-AK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-AL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-AR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-AZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-DC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-DE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-FL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-GA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-HI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ID.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IN.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-KS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-LA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MD.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ME.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MN.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ND.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NH.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NJ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NM.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NV.json",
-   "kind": "key",
-   "why": [
-    "F-O1 outlines 226 -> 223 (more than 1% lost)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/us-key/US-NY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-OH.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-OK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-OR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-PA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-RI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-SC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-SD.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-TN.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-TX.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-UT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-VA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-VT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WV.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/answers-applied.json",
    "kind": "key",
    "why": [],
@@ -3181,67 +2697,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/changed-parks.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/index.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/layers.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/lost-finds.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/overrides.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/refresh.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/why-not.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/zip-mszp.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/zip-mszw.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -3285,11 +2741,9 @@
   {
    "path": "data/world-key/BS.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 32 -> 18 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/BT.json",
@@ -3364,11 +2818,9 @@
   {
    "path": "data/world-key/CV.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 35 -> 0 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/CX.json",
@@ -3387,11 +2839,9 @@
   {
    "path": "data/world-key/DE.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 979 -> 932 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/DK.json",
@@ -3641,11 +3091,9 @@
   {
    "path": "data/world-key/NC.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 24 -> 12 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/NF.json",
@@ -3820,55 +3268,6 @@
    "kind": "key",
    "why": [
     "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-AR.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 12 -> 82 (over 30% change)",
-    "F-2 72 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
-    "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-7276+US-7298 102 km"
-   ],
-   "notes": [
-    "replaces live data/fers/US-AR.json (same file, other format): promotion removes the old name"
-   ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-LA.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/US-OK.json",
-   "kind": "fers",
-   "why": [
-    "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-6347+US-8122 326 km"
-   ],
-   "notes": [
-    "replaces live data/fers/US-OK.json.gz (same file, other format): promotion removes the old name"
-   ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-TN.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 14 new candidate pairs since the live file (over 10% of 64): a person looks at them first, e.g. US-0034+US-4556, US-0034+US-8313, US-0685+US-2955"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-VA.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-K known 2-fer missing: US-4564 + US-4581"
    ],
    "notes": [],
    "verdict": "HOLD"
