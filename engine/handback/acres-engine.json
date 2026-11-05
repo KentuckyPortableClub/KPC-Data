@@ -660,6 +660,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-1112",
+   "Park name (as the agency writes it)": "Powhatan Historic State Park",
+   "Size": 15,
+   "Unit": "acres",
+   "Agency": "Arkansas State Parks (park, state GIS table)",
+   "Source page": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D15&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-5756",
    "Park name (as the agency writes it)": "Browns Park WMA",
    "Size": 3134,
@@ -1495,6 +1504,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "gis.ardot.gov",
+   "Agency/area": "Arkansas State Parks (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "services3.arcgis.com",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -1912,6 +1931,26 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services.nconemap.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "outdoornebraska.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (Cloudflare / robot challenge)",
    "Retry?": "YES"
   }
  ]
