@@ -13,7 +13,7 @@ The gate (kpc_fers_chain_plan.py) starts OFF (GATE_DEFAULT there). It turns ON b
      its report) is clean. A report that is not clean puts the count back to 0. A report with no held area does not count.
      Why 3: one clean run can be luck (a quiet area); three in a row is the smallest count that is still a pattern, it is about one
      full chain start (at most 3 areas a start), and a single bad run sets it back to 0, so it errs on the side of a longer test.
-'Clean' is spelled out in postline_clean() / POSTKEY_MUST_BE_ZERO below (one place to change or extend).
+'Clean' is spelled out in postline_clean() / POSTKEY_MUST_BE_ZERO below. Nov 6: '0,0 / impossible pins' counts only NEW / no-outline rows by default (Brandon ruling 4:17 PM CST Nov 5, relayed via Super: old POTA 0,0 pins must not block); KPC_GATE_COUNT_OLD_00=on restores old must-be-zero.
 State: data/status/fers-chain/gate.json (tracked; saved by kpc-fers-chain.yml and kpc-fers-postline.yml)
   {"mode": "off"|"on", "since", "why", "streak", "need": 3, "counted": [run ids], "last_check": {...}, "history": [lines]}
 On a flip one STATUS LINE is added to gate.json 'history' and to data/status/fers-chain/gate-log.md, and printed as a notice.
@@ -95,15 +95,43 @@ def postline_clean(rep):
     return True, not bad, '; '.join(bad[:4]) or 'post-line clean'
 
 
+# Nov 6 (Brandon ruling 4:17 PM CST Nov 5, relayed via Super): old POTA 0,0 / impossible pins are known POTA mistakes and
+# must NOT block the gate. DEFAULT counts only NEW bad pins (summary 'pins outside, new or changed this build' style), or
+# ones with no outline. Flag KPC_GATE_COUNT_OLD_00=on restores the old "must be zero" behaviour.
+GATE_COUNT_OLD_00 = (os.environ.get('KPC_GATE_COUNT_OLD_00') or '').strip().lower() in ('on', 'yes', 'true', '1')
+
+
 def postkey_clean(links, short):
     d = pathlib.Path(links) / 'data/status/key-check'
     last = load(d / f'last-{short}.json', {}) or {}
     rep = load(d / str(last.get('report') or 'none'), None)
     if not isinstance(rep, dict): return False, f'{short}: no post-key check report'
     s = rep.get('summary') or {}
-    bad = [f'{k} {s.get(k)}' for k in POSTKEY_MUST_BE_ZERO if s.get(k)]
+    bad = []
+    for k in POSTKEY_MUST_BE_ZERO:
+        n = s.get(k) or 0
+        if not n: continue
+        if k == '0,0 / impossible pins' and not GATE_COUNT_OLD_00:
+            # Default (Brandon 4:17 PM CST Nov 5): only NEW bad pins, or ones with no outline, block.
+            new_n = _new_bad_pins(rep)
+            if new_n: bad.append(f'{k} {new_n} new/no-outline (of {n} standing; old POTA mistakes do not block)')
+            continue
+        bad.append(f'{k} {n}')
     if any('did not read as JSON' in str(n) for n in rep.get('notes') or []): bad.append('key files not readable')
     return not bad, f"{short} {rep.get('build')}: " + ('; '.join(bad) if bad else 'post-key clean')
+
+
+def _new_bad_pins(rep):
+    """Count of 0,0 / impossible pins that are NEW this build or have no outline. Standing POTA mistakes with an outline do not count."""
+    rows = rep.get('bad_pins') or []
+    if not rows: return int((rep.get('summary') or {}).get('0,0 / impossible pins') or 0) if GATE_COUNT_OLD_00 else 0
+    n = 0
+    for x in rows:
+        if not isinstance(x, dict): continue
+        # 'outline': 'yes' = standing POTA mistake with land; 'no' = no outline. Prefer new/changed markers when present.
+        if x.get('new') or x.get('changed') or str(x.get('outline') or '').lower() in ('no', 'none', ''):
+            n += 1
+    return n
 
 
 def _flip(s, data, why, now):
