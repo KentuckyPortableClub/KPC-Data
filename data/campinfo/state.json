@@ -393,6 +393,28 @@
    "status": "done",
    "updated": "2026-11-04"
   },
+  "US-MO": {
+   "camps": 190,
+   "checked": 188,
+   "counts": {
+    "camps": 188,
+    "needs_browser": 0,
+    "needs_key": 74,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 97,
+    "other": 2,
+    "resting": 15,
+    "robots": 0,
+    "with_booking": 114,
+    "with_elevation": 0,
+    "with_facts": 97,
+    "with_sites": 87
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
   "US-MT": {
    "camps": 313,
    "checked": 312,
@@ -762,6 +784,7 @@
   "US-MD": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MI": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-MO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -941,6 +964,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-04"
+  },
+  "US-MO": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-05"
   },
   "US-MT": {
    "cell": {
@@ -2041,12 +2073,13 @@
  },
  "last": {
   "areas": [
-   "US-KY"
+   "US-MO"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 104,
+   "deferred": 15,
+   "dropped_queued": 189,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2058,7 +2091,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 114,
+   "requests": 196,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2066,16 +2099,16 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 18,
-   "camps": 109,
+   "browser": 1,
+   "camps": 190,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 33,
-   "needs_key": 42,
-   "no_page": 0,
+   "needs_browser": 1,
+   "needs_key": 74,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 78,
-   "pages_read": 80,
+   "ok": 100,
+   "pages_read": 190,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
