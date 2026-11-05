@@ -44,9 +44,6 @@
  "Parks|CA-4922": [
   "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4"
  ],
- "Parks|CA-4923": [
-  "https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0"
- ],
  "Parks|CA-5857": [
   "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson"
  ],
@@ -127,6 +124,18 @@
  ],
  "Parks|US-0684": [
   "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0"
+ ],
+ "Parks|US-0822": [
+  "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
+ ],
+ "Parks|US-8203": [
+  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3"
+ ],
+ "Parks|US-9897": [
+  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3"
+ ],
+ "Parks|US-9900": [
+  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3"
  ],
  "Parks|CA-6400": [
   "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4"
@@ -428,6 +437,9 @@
  "Parks|CA-2219": [
   "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0"
  ],
+ "Parks|CA-5631": [
+  "https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2"
+ ],
  "Parks|US-13179": [
   "https://services9.arcgis.com/FF3qnCUixr5w9JQi/ArcGIS/rest/services/USGS_Trails/FeatureServer/0"
  ],
@@ -442,18 +454,6 @@
  ],
  "Parks|US-0961": [
   "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2"
- ],
- "Parks|US-0822": [
-  "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
- ],
- "Parks|US-8203": [
-  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3"
- ],
- "Parks|US-9897": [
-  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3"
- ],
- "Parks|US-9900": [
-  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3"
  ],
  "Parks|CA-5989": [
   "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4"
@@ -574,6 +574,21 @@
  ],
  "Parks|US-12150": [
   "https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
+ ],
+ "Parks|CA-6115": [
+  "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0"
+ ],
+ "Parks|US-5805": [
+  "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1"
+ ],
+ "Parks|US-7443": [
+  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0"
+ ],
+ "Parks|US-7444": [
+  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0"
+ ],
+ "Parks|US-7524": [
+  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0"
  ],
  "Parks|US-5756": [
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0"
@@ -755,18 +770,6 @@
  "Parks|US-13241": [
   "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0"
  ],
- "Parks|US-5805": [
-  "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1"
- ],
- "Parks|US-7443": [
-  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0"
- ],
- "Parks|US-7444": [
-  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0"
- ],
- "Parks|US-7524": [
-  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0"
- ],
  "Parks|US-10473": [
   "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0"
  ],
@@ -914,9 +917,6 @@
  "Parks|CA-2410": [
   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0"
  ],
- "Parks|CA-6115": [
-  "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0"
- ],
  "Parks|US-8143": [
   "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
  ],
@@ -1018,9 +1018,6 @@
  ],
  "Parks|CA-4902": [
   "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4"
- ],
- "Parks|CA-5631": [
-  "https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2"
  ],
  "Parks|CA-2335": [
   "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16"
