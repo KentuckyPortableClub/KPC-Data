@@ -638217,15 +638217,19 @@
    "record_link": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?objectIds=81&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3635",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "layer collector (outside research Oct 30)",
    "st": "FL",
    "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
    "name_field": "SITE_NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 191800 (Madira Bickel Mound State Archaeological Site); is this record BETTER?"
+   "key_now": "the park already has an outline: record 191800 (Madira Bickel Mound State Archaeological Site); is this record BETTER?",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 1.00 on WEB_ALIAS 'Madira-Bickel-Mound'. Record about 9.2 acres; n",
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "US-MN",
@@ -638242,15 +638246,19 @@
    "record_link": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?objectIds=5368&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13650",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto (T1 map-match STRONG)",
+   "how": "T1: pin inside the record, names match (>= 0.85), acres within x2, no better record nearby",
    "source": "layer collector (outside research Oct 30)",
    "st": "MN",
    "url": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
    "name_field": "UNIT_NAME",
    "licence": "",
-   "key_now": "the park already has an outline: record 208680 (Darwin S. Myers); is this record BETTER?"
+   "key_now": "the park already has an outline: record 208680 (Darwin S. Myers); is this record BETTER?",
+   "t1_band": "STRONG",
+   "t1_why": "STRONG: pin inside, names match, sizes agree (or no size to compare), no better record nearby. Pin inside the record. Best name match 0.96 on record name 'Darwin S. Myers WMA'. Record about 746.5 acre",
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "US-MN",
@@ -638274,7 +638282,9 @@
    "st": "MN",
    "url": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
    "name_field": "UNIT_NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.53); the sizes are 2.9x apart. Pin inside the record. Best name match 0.53 on record name 'Iron Range Off-Highway Vehicle'. Record about 3530.7 acres, the park pag"
   },
   {
    "area": "US-OR",
@@ -638298,7 +638308,9 @@
    "st": "OR",
    "url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
    "name_field": "PARK_NAME",
-   "licence": ""
+   "licence": "",
+   "t1_band": "WEAK",
+   "t1_why": "WEAK: the names only partly match (0.51). Pin inside the record. Best name match 0.51 on record name 'North Fork Nehalem Park'. Record about 2.8 acres; no park size found to compare."
   }
  ],
  "auto_yes": 743,
