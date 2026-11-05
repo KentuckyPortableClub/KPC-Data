@@ -11,25 +11,22 @@
   "US-ND",
   "US-SD"
  ],
- "since": "2026-11-04",
- "date": "2026-11-04 22:07 UTC",
+ "since": "2026-11-05",
+ "date": "2026-11-05 15:41 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 8408 of 12950 expected pairs were never looked at (65%; 2489 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8408)",
-  "water not checked: US-IL: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-WI: 3 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-MN: 1 rows (the USGS water map / files had no answer there): never READY with one"
+  "missing check: 8408 of 12949 expected pairs were never looked at (65%; 2489 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8408)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 455,
-  "DROPPED": 1598,
+  "FOUND": 456,
+  "DROPPED": 1596,
   "NEVER LOOKED AT": 10897
  },
  "never_looked_at": {
   "counted": 8408,
   "no_official_outline": 2489,
-  "expected": 12950,
+  "expected": 12949,
   "limit": "10%",
   "by_reason": {
    "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8408
@@ -37,25 +34,25 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-04",
-   "pairs tested": 7808,
-   "pairs whose boxes touch": 7808
+   "date": "2026-11-05",
+   "pairs tested": 7799,
+   "pairs whose boxes touch": 7799
   },
   "pass2": {
-   "agree with the pass before": 2335,
-   "date": "2026-11-04",
-   "pairs tested": 660
+   "agree with the pass before": 2355,
+   "date": "2026-11-05",
+   "pairs tested": 666
   },
   "pass3": {
-   "agree with the pass before": 1663,
-   "date": "2026-11-04",
-   "pairs tested": 642
+   "agree with the pass before": 1677,
+   "date": "2026-11-05",
+   "pairs tested": 644
   },
   "pass5": {
-   "checked": 258,
-   "date": "2026-11-04",
+   "checked": 260,
+   "date": "2026-11-05",
    "pairs tested": 0,
-   "still not checked": 5
+   "still not checked": 0
   }
  },
  "files": {
@@ -81,21 +78,15 @@
  },
  "US-IL": {
   "rows": 143,
-  "live": 29,
+  "live": 30,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 1,
-   "water not checked": 1,
    "no public owner on the ownership map": 1
   },
   "dropped": 59,
   "merged": 52
- },
- "water_weak": {
-  "US-IL": 1,
-  "US-WI": 3,
-  "US-MN": 1
  },
  "US-MO": {
   "rows": 345,
@@ -110,25 +101,23 @@
   "merged": 118
  },
  "US-WI": {
-  "rows": 509,
-  "live": 120,
+  "rows": 510,
+  "live": 124,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "low-confidence outline for Brown's Creek AMA Aquatic Reserve": 1,
-   "water not checked": 3,
    "no public owner on the ownership map": 12
   },
-  "dropped": 209,
-  "merged": 164
+  "dropped": 200,
+  "merged": 173
  },
  "US-MN": {
   "rows": 1139,
-  "live": 163,
+  "live": 164,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 1,
    "low-confidence outline for Brown's Creek AMA Aquatic Reserve": 1,
    "no public owner on the ownership map": 16,
    "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1
@@ -138,12 +127,13 @@
  },
  "US-IA": {
   "rows": 60,
-  "live": 17,
+  "live": 19,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the official outline of Desoto National Wildlife Refuge coul": 4,
-   "the official outline of Neal Smith National Wildlife Refuge": 1,
+   "the official outline of Rand Bar Wildlife Management Area co": 1,
+   "the official outline of Wilson Island State Recreation Area": 1,
+   "the official outline of Nobles Lake Wildlife Management Area": 1,
    "no public owner on the ownership map": 2,
    "the official outline of Wapsi Wildlife Area could not be rea": 1
   },
