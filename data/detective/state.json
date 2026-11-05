@@ -33,8 +33,7 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "deferred": 7,
-   "dropped_queued": 45,
+   "dropped_queued": 18,
    "errors": 0,
    "for_person_urls": [
     [
@@ -46,6 +45,10 @@
      "robots.txt answered 403: nothing fetched from ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com this run"
     ],
     [
+     "https://services5.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
+    ],
+    [
      "https://services1.arcgis.com/robots.txt",
      "robots.txt answered 403: nothing fetched from services1.arcgis.com this run"
     ],
@@ -54,42 +57,30 @@
      "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
     ],
     [
-     "https://services2.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services2.arcgis.com this run"
-    ],
-    [
      "https://apps.fs.usda.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from apps.fs.usda.gov this run"
-    ],
-    [
-     "https://arcgisserver.digital.mass.gov/robots.txt",
-     "robots.txt answered 502: nothing fetched from arcgisserver.digital.mass.gov this run"
-    ],
-    [
-     "https://services5.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
     ],
     [
      "https://usdaoig.oversight.gov/robots.txt",
      "robots.txt answered 406: nothing fetched from usdaoig.oversight.gov this run"
     ]
    ],
-   "requests": 116,
-   "rested": 8,
-   "robots": 10,
-   "robots_unreadable": 9,
+   "requests": 64,
+   "rested": 4,
+   "robots": 7,
+   "robots_unreadable": 7,
    "strikes": 0
   },
   "stat": {
    "checked": 0,
    "different_land": 0,
-   "errors": 10,
+   "errors": 8,
    "finds": 0,
    "mismatch": 0,
    "nothing": 0,
    "padus_only": 0,
    "parks": 0,
-   "requests": 156,
+   "requests": 74,
    "skipped_fresh": 0,
    "sure": 0
   },
@@ -100,10 +91,10 @@
   "stat": {
    "answered": 0,
    "blocked": 0,
-   "not_found": 5,
-   "partly": 12,
-   "questions": 17,
-   "skipped_done": 34
+   "not_found": 1,
+   "partly": 7,
+   "questions": 8,
+   "skipped_done": 43
   },
   "when": "2026-11-05"
  }

@@ -668,7 +668,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41 → nothing matched
   - step 1: point query at the pin https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=cherokee%20Colorado → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=cherokee%20Colorado → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=cherokee%20Colorado → 5 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://cpw.state.co.us/learn/Maps/CherokeeSWA_LowerUnits_geo.pdf → did not open (HTTP 404)
@@ -683,7 +683,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41 → nothing matched
   - step 1: point query at the pin https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=escalante%20Colorado → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=escalante%20Colorado → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=escalante%20Colorado → 6 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://cpw.state.co.us/learn/Maps/EscalanteSWA_geo.pdf → did not open (HTTP 404)
@@ -699,7 +699,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14 → did not open
   - step 1: point query at the pin https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=sandhills%20west%20Georgia → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=sandhills%20west%20Georgia → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=sandhills%20west%20Georgia → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 2 record(s)
   - step 2: agency park page https://georgiawildlife.com/sandhills-wma-west → did not open (rest)
@@ -715,7 +715,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0 → 1 named polygon(s) of 1
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0 → nothing matched
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/PublicFishingLakes/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=blackwater%20river%20Alabama → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=blackwater%20river%20Alabama → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=blackwater%20river%20Alabama → 3 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://conservationgis.alabama.gov/dcnr/ → opened, nothing matched
@@ -731,10 +731,11 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VSP_Natural_Area_Preserves/FeatureServer/1 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/bclsp_State_Parks/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Boundary_-_Tracts/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=brush%20mountain%20Virginia → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=brush%20mountain%20Virginia → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=brush%20mountain%20Virginia → 2 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424 → opened, nothing matched
+  - step 2: document: Discover History https://www.fs.usda.gov/r08/gwj/recreation/discover-history → skipped: the title names no park / land / acquisition
   - step 2: document: Report Fraud on USDA Contracts https://usdaoig.oversight.gov/resources/contractor-fraud → did not open (robots-unreadable)
   - step 6: news releases https://dwr.virginia.gov/news/ → did not open (HTTP 404)
   - step 6: news releases https://www.dcr.virginia.gov/news → did not open (HTTP 404)
@@ -749,7 +750,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VSP_Natural_Area_Preserves/FeatureServer/1 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/bclsp_State_Parks/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Boundary_-_Tracts/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=brush%20east%20mountain%20Virginia → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=brush%20east%20mountain%20Virginia → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=brush%20east%20mountain%20Virginia → 1 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424 → opened, nothing matched
@@ -865,7 +866,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14 → did not open
   - step 1: point query at the pin https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=chattahoochee%20fall%20hilliard%20line%20tract%20Georgia → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=chattahoochee%20fall%20hilliard%20line%20tract%20Georgia → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=chattahoochee%20fall%20hilliard%20line%20tract%20Georgia → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://georgiawildlife.com/chattahoochee-fall-line-wma-hilliard-plantation-tract → did not open (rest)

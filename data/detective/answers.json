@@ -3508,7 +3508,6 @@
    "read": "2026-11-05",
    "ref": "US-9629",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "1 named polygon(s) of 1",
@@ -3535,7 +3534,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=cherokee%20Colorado",
      "what": "open-data search"
@@ -3584,7 +3583,6 @@
    "read": "2026-11-05",
    "ref": "US-9648",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -3611,7 +3609,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=escalante%20Colorado",
      "what": "open-data search"
@@ -3669,7 +3667,6 @@
    "read": "2026-11-05",
    "ref": "US-9795",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3696,7 +3693,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=sandhills%20west%20Georgia",
      "what": "open-data search"
@@ -3740,7 +3737,6 @@
    "read": "2026-11-05",
    "ref": "US-9797",
    "result": "NOT FOUND",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3767,7 +3763,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=chattahoochee%20fall%20hilliard%20line%20tract%20Georgia",
      "what": "open-data search"
@@ -3824,7 +3820,6 @@
    "read": "2026-11-05",
    "ref": "US-9916",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -3851,7 +3846,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=blackwater%20river%20Alabama",
      "what": "open-data search"
@@ -3933,7 +3928,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=brush%20mountain%20Virginia",
      "what": "open-data search"
@@ -3955,6 +3950,12 @@
      "step": 2,
      "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
      "what": "agency park page"
+    },
+    {
+     "result": "skipped: the title names no park / land / acquisition",
+     "step": 2,
+     "url": "https://www.fs.usda.gov/r08/gwj/recreation/discover-history",
+     "what": "document: Discover History"
     },
     {
      "result": "did not open (robots-unreadable)",
@@ -4027,7 +4028,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=brush%20east%20mountain%20Virginia",
      "what": "open-data search"
