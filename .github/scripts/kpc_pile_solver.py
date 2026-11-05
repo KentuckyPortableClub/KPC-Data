@@ -14,8 +14,9 @@ THE RULES (handoff section 4 + Brandon's rulings; when in doubt NEEDS-PERSON, ne
   * Join = same place by name (type words dropped, spellings allowed) + same kind + proof of location (pin inside or within 100 m),
     from an official source (agency layer, PAD-US). OpenStreetMap / WDPA never confirm a join.
   * RULE 3 (Brandon's standing ruling, Nov 4 7:34 AM CST): an exact or near name match to the official name AND the POTA pin in a
-    county the official outline is in = SOLVED-JOIN with the flag 'POTA pin may be off', even past 5 km. Without both, a pin more
-    than 100 m out = NEEDS-PERSON. We never move a POTA pin.
+    county the official outline is in = SOLVED-JOIN with the flag 'POTA pin may be off' within ~15 km (and a ledger join proposal
+    needing a second agent). Over 15 km or a short/generic name = NEEDS-PERSON. Without name+county, a pin more than 100 m out
+    = NEEDS-PERSON. We never move a POTA pin.
   * Rule 18: a piece word on one side only, North / South Fork, Upper / Lower, Unit 2 / 3, and a compass word that is only inside the
     other name's bracket ('Langres Nord' vs 'Langres (secteur Nord)') = NEEDS-PERSON (a tract join needs a person's review, 18c).
     A bracketed place qualifier ('(Lewis County)') is not a piece.
@@ -51,7 +52,7 @@ Env: LINKS (KPC-Links checkout, default ../links) · PILE (review-pile.csv; defa
 """
 import csv, datetime as dt, glob, hashlib, io, json, math, os, pathlib, re, subprocess, sys, time, urllib.parse
 
-VERSION = '1'
+VERSION = '2'
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 DATA = pathlib.Path(os.environ.get('DATA') or '.')
@@ -71,6 +72,38 @@ FIFTEEN_KM = 15000  # Brandon IDEA Nov 4 / steering Nov 5: unique name within ~1
 TIGER = 'https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer'
 NEAR_M = 100          # rule 1: inside or within 100 m
 FIVE_KM = 5000        # rule 3: past this a person check is still asked for unless name + county both back the match
+
+# Nov 6 Part B: short / generic names (Rock Creek, Seven Mile) must not take a far rule-3 join
+_SHORT_KIND = set('state national nature natural preserve park wildlife management area wilderness recreation '
+                  'historic site forest reserve refuge wma sna blm bor river lake creek brook canyon trail memorial special '
+                  'managem historic site of the and'.split())
+
+def is_short_name(name):
+    """True when the place-name core is too thin for a confident far join (Rock Creek, Seven Mile).
+    One long distinctive word (Kaskaskia) is OK; two short tokens totaling <14 letters are not."""
+    words = [w for w in re.findall(r"[A-Za-z0-9']+", str(name or '')) if w.lower() not in _SHORT_KIND and len(w) > 1]
+    if len(words) >= 3: return False
+    if len(words) == 0: return True
+    if len(words) == 1: return len(words[0]) < 8
+    return sum(len(w) for w in words) < 14 and max(len(w) for w in words) <= 6
+
+
+def ledger_propose_join(park, proposal, source, pota_lat='', pota_lon='', notes=''):
+    """Write a join proposal to the agreement ledger (proposed_by=pile-solver). Never raises into solve()."""
+    try:
+        import kpc_agreement_ledger as AL
+        rows = AL.load_rows()
+        # skip duplicate open proposal for same park+proposal
+        for r in rows:
+            if r.get('park') == park and r.get('kind') == 'join' and not r.get('confirmed_by') and r.get('proposal') == proposal:
+                return 'already proposed'
+        rows = AL.propose(park, 'join', 'pile-solver', proposal, source=source,
+                          pota_lat=str(pota_lat or ''), pota_lon=str(pota_lon or ''), notes=notes, rows=rows)
+        AL.save_rows(rows)
+        return 'proposed'
+    except Exception as e:  # noqa: BLE001
+        return f'ledger skip: {type(e).__name__}: {e}'[:120]
+
 NOT_OFFICIAL = re.compile(r'openstreetmap|\bosm\b|wdpa|protected planet|world database', re.I)
 PAD_NEVER = re.compile(r'proclamation|easement', re.I)
 SMALL_SITE = re.compile(r'\b(campground|camp ground|boat ramp|boat launch|launch|dam|marina|access site|fishing access|landing|picnic area|trailhead)\b', re.I)
@@ -567,12 +600,31 @@ def solve(p, F, ov, sheet):
         if rc is None: bad.append(f"{r['id']}: {why}"); continue
         if not set(pin_c) & set(rc): bad.append(f"{r['id']} lies in {', '.join(sorted(v for v in rc.values() if v)) or '?'}; the pin is in {', '.join(v for v in pin_c.values() if v)}")
     km = round((best['d'] or 0) / 1000, 1)
+    d_m = best['d'] or 0
     if bad:
         return done(row, 'NEEDS-PERSON', f"the pin is {km} km from the outline and the county does not back the match: " + '; '.join(bad[:2]),
                     f"a person to say whether '{best['name']}' is {p['ref']} (pin {km} km out, other county), or report the POTA pin to POTA")
+    # Nov 6 Part B: short/generic names never take a far rule-3 join (root cause: Rock Creek / Seven Mile overconfidence)
+    if is_short_name(pname) or is_short_name(best.get('name') or ''):
+        return done(row, 'NEEDS-PERSON',
+                    f"the pin is {km} km from the outline and the name '{pname}' / '{best.get('name')}' is too short or generic for a confident far join",
+                    f"a person to confirm whether '{best.get('name')}' is {p['ref']} (short-name guard)",
+                    pin_flag='; '.join(x for x in (two_flag, 'POTA pin may be off') if x))
+    # Nov 6 Part B / Brandon IDEA: over ~15 km goes to a person (possible wrong pin)
+    if d_m > FIFTEEN_KM:
+        return done(row, 'NEEDS-PERSON',
+                    f"the pin is {km} km from the outline (>15 km): even with name + county, this needs a person (Brandon IDEA Nov 4 / steering Nov 5)",
+                    f"a person to say whether '{best['name']}' is {p['ref']}, or report the POTA pin to POTA",
+                    pin_flag='; '.join(x for x in (two_flag, 'POTA pin may be off') if x))
+    # Unique name match within ~15 km: SOLVED-JOIN for the waiting room AND a ledger join proposal (needs a second agent)
+    prop = f"join {best.get('id')} '{best.get('name')}' at {km} km (rule 3 / 15 km band)"
+    led = ledger_propose_join(p['ref'], prop, source=f"pile-solver v{VERSION} rule-3",
+                              pota_lat=p.get('lat'), pota_lon=p.get('lon'),
+                              notes=f"name {best['how']}; county match; d={d_m} m")
     return done(row, 'SOLVED-JOIN', f"name {best['how']} ('{best['name']}'), {KIND_TXT[bool(two)]}, and the pin is in {', '.join(v for v in pin_c.values() if v)} like the outline "
-                f"(rule 3, Brandon's ruling) although it is {km} km out" + (' (more than 5 km)' if (best['d'] or 0) > FIVE_KM else ''),
-                pin_flag='; '.join(x for x in (two_flag, 'POTA pin may be off') if x))
+                f"(rule 3, Brandon's ruling) although it is {km} km out" + (' (more than 5 km)' if d_m > FIVE_KM else '')
+                + f"; ledger: {led}",
+                pin_flag='; '.join(x for x in (two_flag, 'POTA pin may be off', 'ledger proposal (needs second agreement)') if x))
 
 
 # ------------------------------------------------------------------ outputs
@@ -841,11 +893,38 @@ def selftest():
     tp = dict(bp, ref='US-9990', area='US-IL', areas='US-IL', name='Kaskaskia State Forest', type='State Forest', ids=['a1', 'b2'], lat='39.0', lon='-90.0')
     MG2, MG1 = {'a1': 'Illinois DNR Forestry', 'b2': 'Illinois DNR Wildlife'}, {'a1': 'Illinois DNR', 'b2': 'illinois dnr'}
     fl = lambda r: (r['verdict'], r['pin_flag'].startswith('two agencies / kinds: '), 'agencies: Illinois DNR Forestry + Illinois DNR Wildlife' in r['pin_flag'],
-                    r['pin_flag'].endswith('POTA pin may be off'))
+                    'POTA pin may be off' in r['pin_flag'])
     check('two agencies, name on both, pin inside both: SOLVED-JOIN with the flag', fl(solve(tp, TwoRec(MG2), {}, {})), ('SOLVED-JOIN', True, True, False))
     check('two agencies, pin 10+ km out, right county: SOLVED-JOIN with both flags', fl(solve(tp, TwoRec(MG2, far=True), {}, {})), ('SOLVED-JOIN', True, True, True))
     check('two agencies, pin out, other county: NEEDS-PERSON', solve(tp, TwoRec(MG2, far=True, county=False), {}, {})['verdict'], 'NEEDS-PERSON')
     check('two agencies, pin out, county unreadable: NEEDS-PERSON', solve(tp, TwoRec(MG2, far=True, county=None), {}, {})['verdict'], 'NEEDS-PERSON')
+    # Nov 6 Part B: 15 km cap + short-name guard + ledger proposal on the far band
+    class FarRec:
+        def __init__(self, km=10, name='Kaskaskia State Forest'):
+            self.km, self.name, self.skipped = km, name, []
+        def record(self, rid, area='US-', src=None):
+            dx = max(0.02, self.km / 85.0)
+            box = [[-90.0+dx, 38.9], [-90.0+dx+0.05, 38.9], [-90.0+dx+0.05, 39.1], [-90.0+dx, 39.1], [-90.0+dx, 38.9]]
+            return {'id': str(rid), 'name': self.name, 'attrs': {'Loc_Mang': 'Illinois DNR'}, 'rings': [box], 'layer': PADUS,
+                    'url': PADUS+'/query?f=json', 'label': 'USGS PAD-US', 'family': 'padus', 'html': PADUS+'/query?f=html'}
+        def counties_at_pin(self, la, lo): return ({'17117': 'Macoupin'}, '')
+        def counties_of(self, rings): return ({'17117': 'Macoupin'}, '')
+    KEYS[kf]['parks']['US-9990'] = {'n': 'Kaskaskia State Forest', 't': 'State Forest', 'm': [['a1', 'Kaskaskia State Forest', 0, 'name']]}
+    r15 = solve(dict(tp, ids=['a1'], name='Kaskaskia State Forest'), FarRec(km=20), {}, {})
+    check('pin >15 km out, even with county: NEEDS-PERSON', r15['verdict'], 'NEEDS-PERSON')
+    KEYS[kf]['parks']['US-9990'] = {'n': 'Rock Creek', 't': '', 'm': [['a1', 'Rock Creek', 0, 'name']]}
+    rsh = solve(dict(tp, ids=['a1'], name='Rock Creek', type=''), FarRec(km=8, name='Rock Creek'), {}, {})
+    check('short name far join: NEEDS-PERSON', rsh['verdict'], 'NEEDS-PERSON')
+    KEYS[kf]['parks']['US-9990'] = {'n': 'Kaskaskia State Forest', 't': 'State Forest', 'm': [['a1', 'Kaskaskia State Forest', 0, 'name']]}
+    import tempfile
+    import kpc_agreement_ledger as _AL
+    _td = pathlib.Path(tempfile.mkdtemp()); _AL.LEDGER = _td/'ledger.csv'; _AL.STATE = _td/'state.json'; _AL.save_rows([]); _AL.save_state(_AL.load_state())
+    rled = solve(dict(tp, ids=['a1'], name='Kaskaskia State Forest'), FarRec(km=8), {}, {})
+    check('8 km unique name: SOLVED-JOIN', rled['verdict'], 'SOLVED-JOIN')
+    check('8 km unique name: ledger proposal flag', 'ledger proposal' in rled['pin_flag'], True)
+    check('8 km unique name: ledger has join row', any(r.get('park')=='US-9990' and r.get('kind')=='join' and r.get('proposed_by')=='pile-solver' for r in _AL.load_rows()), True)
+    KEYS[kf]['parks']['US-9990'] = {'n': 'Kaskaskia State Forest', 't': 'State Forest',
+                                   'm': [['a1', 'Kaskaskia State Forest', 0, 'name'], ['b2', 'Kaskaskia State Fish and Wildlife Area', 0, 'name']]}
     r = solve(tp, TwoRec(MG1), {}, {})
     check('ONE agency (two spellings of it), kinds differ, name on both: still a join WITH the kinds flag (even when kinds differ)',
           (r['verdict'], r['pin_flag'].startswith('two agencies / kinds: '), 'agencies:' in r['pin_flag']), ('SOLVED-JOIN', True, False))
@@ -926,8 +1005,11 @@ def selftest():
             ov = {c['park']: case['override']} if case.get('override') else {}
             sheet = {c['park']: case['sheet']} if case.get('sheet') else {}
             r = solve(p, F, ov, sheet)
-            check(case['name'], (r['verdict'], r['pin_flag'], bool(r['whats_missing']) if r['verdict'] == 'NEEDS-PERSON' else True),
-                  (case['want'], case.get('want_flag', ''), True))
+            # Nov 6: far rule-3 also adds 'ledger proposal ...' to pin_flag; require want_flag as a substring
+            wf = case.get('want_flag', '') or ''
+            flag_ok = (r['pin_flag'] == wf) if not wf else (wf in (r['pin_flag'] or ''))
+            check(case['name'], (r['verdict'], flag_ok, bool(r['whats_missing']) if r['verdict'] == 'NEEDS-PERSON' else True),
+                  (case['want'], True, True))
             if case.get('never_join_on'): check(case['name'] + ': never SOLVED-JOIN on ' + case['never_join_on'],
                                                 r['verdict'] == 'SOLVED-JOIN' and r['record_id'] == case['never_join_on'], False)
         # a whole run twice: the second run writes nothing; nothing is deleted; nothing outside the allowed paths
