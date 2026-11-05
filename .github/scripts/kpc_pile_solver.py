@@ -66,6 +66,8 @@ CST = dt.timezone(dt.timedelta(hours=-6))
 CUTOFF = dt.datetime(2026, 11, 2, 9, 37, tzinfo=CST)   # rule 10: only Brandon's sign-offs from here on count
 PERSON = re.compile(r'^\s*(?:brandon(?: white)?|kz4cp)\s*$', re.I)
 PADUS = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0'
+CPCAD = 'https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0'
+FIFTEEN_KM = 15000  # Brandon IDEA Nov 4 / steering Nov 5: unique name within ~15 km -> ledger proposal; over 15 km -> person
 TIGER = 'https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer'
 NEAR_M = 100          # rule 1: inside or within 100 m
 FIVE_KM = 5000        # rule 3: past this a person check is still asked for unless name + county both back the match
@@ -130,22 +132,41 @@ def key_row(area, ref):
 KEYS = {}
 
 
-def layer_of(rid, area='US-'):
-    """record id -> (query url, name field, label, family). Numeric = PAD-US (fee records); 'sgtnh17' = family 'sgtnh' + object id.
-    Review fix (Nov 4): US areas only. Canada (CPCAD) and world keys also use plain numbers and short ids (FR 6927, CA 22084), which
-    are NOT PAD-US object ids; reading them from PAD-US would compare the park with an unrelated US record. Other areas -> None
-    (NEEDS-PERSON: no layer known) until a reader for their own layers is written."""
-    s = str(rid)
-    if not str(area).startswith('US-'): return None
-    if s.isdigit(): return PADUS + '/query', 'Unit_Nm', 'USGS PAD-US', 'padus', s
-    m = re.match(r'^([a-z]+)(\d+)$', s)
-    if not m: return None
-    L = LAYERS.get(m.group(1))
-    if not L: return None
-    return L[0], L[1], L[-1], m.group(1), m.group(2)
+def layer_of(rid, area='US-', src=None):
+    """record id -> (query url, name field, label, family, oid) or None.
+    US: digit = PAD-US; sgtnh17 = us-key/layers.json family.
+    CA: digit = CPCAD; 'Prefix:OBJECTID' = ca-key/layers.json (never PAD-US).
+    World: prefer join source label (m[2]) in world-key/layers.json; digit/prefixed ids need that src.
+    Root cause fixed Nov 6: CA/world numbers were rejected wholesale (~374 NEEDS-PERSON 'no layer known')."""
+    s = str(rid); area = str(area or '')
+    if area.startswith('US-'):
+        if s.isdigit(): return PADUS + '/query', 'Unit_Nm', 'USGS PAD-US', 'padus', s
+        m = re.match(r'^([a-z]+)(\d+)$', s)
+        if not m: return None
+        L = LAYERS.get(m.group(1))
+        if not L: return None
+        return L[0], L[1], L[-1], m.group(1), m.group(2)
+    if area.startswith('CA-'):
+        if s.isdigit(): return CPCAD + '/query', 'NAME_E', 'CPCAD', 'cpcad', s
+        lab, _, n = s.partition(':')
+        if not n.isdigit(): return None
+        urls = LAYERS_CA.get(lab) or []
+        u = next((x for x in urls if isinstance(x, str) and re.search(r'/\d+$', x.rstrip('/'))), None)
+        if not u: return None
+        return u.rstrip('/') + '/query', '', lab, 'ca', n
+    # world: need source label from the join tuple
+    if src:
+        u = LAYERS_W.get(src)
+        if isinstance(u, list): u = u[0] if u else None
+        if isinstance(u, str) and re.search(r'/\d+$', u.rstrip('/')):
+            oid = s if s.isdigit() else (re.search(r'(\d+)$', s).group(1) if re.search(r'\d+$', s) else None)
+            if oid: return u.rstrip('/') + '/query', '', src, 'world', oid
+    return None
 
 
 LAYERS = {}
+LAYERS_CA = {}
+LAYERS_W = {}
 
 
 # ------------------------------------------------------------------ decisions already made (read only)
@@ -287,10 +308,10 @@ class Fetch:
             p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(d, indent=1, sort_keys=True), encoding='utf-8')
         return j, url, '200'
 
-    def record(self, rid, area='US-'):
+    def record(self, rid, area='US-', src=None):
         """-> {id, name, attrs, rings, layer, url, label, family} or {'error': why}."""
-        L = layer_of(rid, area)
-        if not L: return {'error': f'no layer known for record id {rid} in {area} (only US PAD-US + layers.json records are read so far)'}
+        L = layer_of(rid, area, src=src)
+        if not L: return {'error': f'no layer known for record id {rid} in {area}' + (f' (src={src!r})' if src else ' (CA/world need Prefix:id or a join source label)')}
         qurl, nfield, label, fam, oid = L
         base = qurl if qurl.endswith('/query') else qurl.rstrip('/') + '/query'
         for off in ('0.00005', '0.0005'):   # ~5 m detail; a huge outline over Manners' 3 MB read is retried at ~50 m
@@ -478,7 +499,7 @@ def solve(p, F, ov, sheet):
     except ValueError: return done(row, 'NEEDS-PERSON', 'the POTA pin is not a number', 'a person to report the pin to POTA')
     recs, errs = [], []
     for x in m:
-        r = F.record(x[0], p['area'])
+        r = F.record(x[0], p['area'], src=(x[2] if len(x) > 2 and isinstance(x[2], str) else None))
         if r.get('error'): errs.append(r['error']); continue
         if NOT_OFFICIAL.search(r['label']): errs.append(f"{x[0]} is from {r['label']} (not an official source)"); continue
         if r['family'] == 'padus' and PAD_NEVER.search(str(r['attrs'].get('Category'))): errs.append(f"{x[0]} is a PAD-US {r['attrs'].get('Category')} record (never an outline)"); continue
@@ -666,6 +687,8 @@ def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
     pile_sha = sha(sorted(p['h'] for p in pile_rows))
     ov, sheet = decisions()
     LAYERS.update(load(LINKS / 'data/us-key/layers.json', {}))
+    LAYERS_CA.update(load(LINKS / 'data/ca-key/layers.json', {}) or load(DATA / 'data/ca-key/layers.json', {}))
+    LAYERS_W.update(load(LINKS / 'data/world-key/layers.json', {}) or load(DATA / 'data/world-key/layers.json', {}))
     pages = DET.pins() if F is not None else {}
     old = {}
     for f in list((root / 'data/pile-solver').glob('*.json')) + list((root / 'data/waiting/in/data/pile-solver').glob('*.json')):
@@ -777,7 +800,14 @@ def selftest():
     check('Unit 2 vs Unit 3: pile', bool(rule18('Abo Unit 2 State Forest', 'Abo Unit 3 State Forest')), True)
     check('X (North) vs X: pile (a compass word in a bracket on one side only)', bool(rule18('Lake Elmo State Forest (North)', 'Lake Elmo State Forest')), True)
     check('(Lewis County) still is not a piece', rule18('Cabin Creek WMA (Lewis County)', 'Cabin Creek WMA (Lewis Co)'), '')
-    check('a CA / world number is never read from PAD-US', (layer_of(22084, 'CA-ON'), layer_of(6927, 'FR'), bool(layer_of(255681, 'US-TN'))), (None, None, True))
+    # Nov 6: CA digits -> CPCAD (not PAD-US); world digits need src label; US unchanged
+    LAYERS_CA.update(load(LINKS / 'data/ca-key/layers.json', {}) or load(DATA / 'data/ca-key/layers.json', {}))
+    LAYERS_W.update(load(LINKS / 'data/world-key/layers.json', {}) or load(DATA / 'data/world-key/layers.json', {}))
+    ca_l = layer_of(22084, 'CA-ON')
+    check('CA digit reads CPCAD, never PAD-US', bool(ca_l) and 'CPCAD' in ca_l[2] and 'PAD-US' not in ca_l[0], True)
+    check('world digit without src stays unknown (not PAD-US)', layer_of(6927, 'FR'), None)
+    check('world digit with EEA src resolves', bool(layer_of(6927, 'FR', src='EEA nationally designated areas')), True)
+    check('US digit still PAD-US', bool(layer_of(255681, 'US-TN')), True)
     check('override: chat 11 YES is not Brandon', override_by_brandon({'join': ['sgneb161'], 'when': '2026-11-02', 'why': "2026-11-02 12:49: layers row YES 'Kirkpatrick Basin North WMA' (chat 11; applied by kpc_key_answers)"}), False)
     check('override: Brandon Oct 29 is before the cutoff', override_by_brandon({'join': ['x1'], 'when': '2026-10-29', 'why': 'Oct 29 9:30 PM: alias (Brandon 8:42 PM)'}), False)
     check('override: relayed by Super is not his sign-off', override_by_brandon({'join': ['x1'], 'when': '2026-11-03', 'why': 'Brandon, relayed by Super 6:52 PM'}), False)
@@ -786,7 +816,7 @@ def selftest():
 
     class OneRec:   # a fetched record whose outline holds the pin, named like a bigger place (rule 5)
         n, skipped = 0, []
-        def record(self, rid, area='US-'):
+        def record(self, rid, area='US-', src=None):
             return {'id': str(rid), 'name': 'Walls of Jericho National Forest', 'attrs': {}, 'rings': [[[-87, 34], [-85, 34], [-85, 36], [-87, 36], [-87, 34]]],
                     'layer': PADUS, 'url': PADUS + '/query?f=json', 'label': 'USGS PAD-US', 'family': 'padus', 'html': PADUS + '/query?f=html'}
     KEYS.clear()
@@ -798,7 +828,7 @@ def selftest():
     # Nov 4 fix bundle (item 9): the two-agency rule (handoff rule 6; Brandon's yes relayed via Super Head Bot 4:53 PM CST)
     class TwoRec:   # two records of one land by name, other kinds, from the agencies in MGR; the outline holds the pin unless far
         def __init__(self, mgr, far=False, county=True): self.mgr, self.far, self.county, self.skipped = mgr, far, county, []
-        def record(self, rid, area='US-'):
+        def record(self, rid, area='US-', src=None):
             box = [[-89.9, 39.0], [-89.8, 39.0], [-89.8, 39.1], [-89.9, 39.1], [-89.9, 39.0]] if self.far else [[-90.1, 38.9], [-89.9, 38.9], [-89.9, 39.1], [-90.1, 39.1], [-90.1, 38.9]]
             nm = {'a1': 'Kaskaskia State Forest', 'b2': 'Kaskaskia State Fish and Wildlife Area'}[str(rid)]
             return {'id': str(rid), 'name': nm, 'attrs': {'Loc_Mang': self.mgr[str(rid)]}, 'rings': [box], 'layer': PADUS, 'url': PADUS + '/query?f=json',
@@ -829,7 +859,7 @@ def selftest():
     # the pin inside every record and in the same county, so only the rule-18 / rule-7 guards can stop the join.
     class NamedRec:
         def __init__(self, names): self.names, self.skipped = names, []
-        def record(self, rid, area='US-'):
+        def record(self, rid, area='US-', src=None):
             return {'id': str(rid), 'name': self.names[str(rid)], 'attrs': {'Loc_Mang': 'Agency ' + str(rid)}, 'rings': [[[-120, 30], [-80, 30], [-80, 50], [-120, 50], [-120, 30]], ],
                     'layer': PADUS, 'url': PADUS + '/query?f=json', 'label': 'test layer', 'family': 'padus', 'html': PADUS + '/query?f=html'}
         def counties_at_pin(self, la, lo): return ({'1': 'Same'}, '')
