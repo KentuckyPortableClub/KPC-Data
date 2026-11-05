@@ -137350,3 +137350,5 @@
 {"date": "2026-11-05T17:10Z", "kind": "fers", "path": "data/fers/US-SC.json", "verdict": "HOLD", "why": ["F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 156 rows for 234 (over 10% fewer)"], "notes": []}
 {"date": "2026-11-05T17:10Z", "kind": "fers", "path": "data/fers/US-TN.json.gz", "verdict": "HOLD", "why": ["F-2 14 new candidate pairs since the live file (over 10% of 64): a person looks at them first, e.g. US-0034+US-4556, US-0034+US-8313, US-0685+US-2955"], "notes": []}
 {"date": "2026-11-05T17:10Z", "kind": "fers", "path": "data/fers/US-VA.json.gz", "verdict": "HOLD", "why": ["F-K known 2-fer missing: US-4564 + US-4581"], "notes": []}
+{"date": "2026-11-05T17:22Z", "kind": "docs", "path": "data/docs/US-IN.json", "verdict": "HOLD", "why": ["F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f884c23fc7/fo-harrison-crawford-trail-map.pdf?la"], "notes": []}
+{"date": "2026-11-05T17:22Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
