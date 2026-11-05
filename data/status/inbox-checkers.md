@@ -267,4 +267,5 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-NY.json held: F-R2 8 OFF rows share the size 46,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
+- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/CZ.json held: F-O1 outlines 232 -> 215 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-05): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?

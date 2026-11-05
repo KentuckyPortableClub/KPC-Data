@@ -1,11 +1,11 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-05 21:29 UTC",
+ "made": "2026-11-05 22:41 UTC",
  "totals": {
-  "gained": 620,
-  "lost": 11,
-  "pieces_changed": 4380,
-  "grade_changed": 12011
+  "gained": 605,
+  "lost": 110,
+  "pieces_changed": 4419,
+  "grade_changed": 12017
  },
  "per_area": {
   "AE": {
@@ -29,7 +29,7 @@
   "BZ": {
    "gained": 5,
    "lost": 0,
-   "pieces_changed": 31,
+   "pieces_changed": 30,
    "grade_changed": 0
   },
   "CD": {
@@ -58,8 +58,8 @@
   },
   "CZ": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 0,
+   "lost": 31,
+   "pieces_changed": 1,
    "grade_changed": 193
   },
   "DE": {
@@ -88,14 +88,14 @@
   },
   "ES": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 0,
+   "lost": 1,
+   "pieces_changed": 6,
    "grade_changed": 1789
   },
   "FI": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 3,
    "grade_changed": 1592
   },
   "FO": {
@@ -104,10 +104,16 @@
    "pieces_changed": 0,
    "grade_changed": 0
   },
+  "FR": {
+   "gained": 16,
+   "lost": 35,
+   "pieces_changed": 15,
+   "grade_changed": 7
+  },
   "GB": {
    "gained": 387,
    "lost": 3,
-   "pieces_changed": 224,
+   "pieces_changed": 225,
    "grade_changed": 0
   },
   "GR": {
@@ -119,7 +125,7 @@
   "HR": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 3,
    "grade_changed": 366
   },
   "HU": {
@@ -207,9 +213,9 @@
    "grade_changed": 0
   },
   "MX": {
-   "gained": 14,
+   "gained": 0,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "NL": {
@@ -220,14 +226,14 @@
   },
   "NO": {
    "gained": 0,
-   "lost": 0,
+   "lost": 28,
    "pieces_changed": 2989,
    "grade_changed": 55
   },
   "NZ": {
-   "gained": 29,
+   "gained": 12,
    "lost": 0,
-   "pieces_changed": 4,
+   "pieces_changed": 6,
    "grade_changed": 0
   },
   "PA": {
@@ -238,9 +244,9 @@
   },
   "PL": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 2,
-   "grade_changed": 2663
+   "lost": 1,
+   "pieces_changed": 9,
+   "grade_changed": 2662
   },
   "PR": {
    "gained": 1,
@@ -268,8 +274,8 @@
   },
   "SI": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 1,
+   "lost": 3,
+   "pieces_changed": 2,
    "grade_changed": 137
   },
   "SK": {
@@ -1218,6 +1224,322 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FO-0004"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10584",
+   "name": "CAP MARTIN 3 Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "approx",
+   "new_pieces": [
+    [
+     "13498",
+     "Cap Martin",
+     "EEA Natura 2000",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10584"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-11539",
+   "name": "Cap martin 2 Conservation Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2.2036",
+     "CAP MARTIN",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-11539"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-15823",
+   "name": "plaine des maures 4 Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.16937",
+     "PLAINE DES MAURES (Type 1)",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ],
+    [
+     "znieff2.2003",
+     "PLAINE DES MAURES (Type 2)",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15823"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-15887",
+   "name": "marais de l'enfer 2 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.14001",
+     "Marais de l'Enfer",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15887"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-15946",
+   "name": "baie d'audierne 3 Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2.1260",
+     "BAIE D'AUDIERNE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15946"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-5977",
+   "name": "BAIE D'AUDIERNE 2 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2.1260",
+     "BAIE D'AUDIERNE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-5977"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-6495",
+   "name": "Basse Vallee De La Savoureuse 3 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.7856",
+     "BASSE VALLEE DE LA SAVOUREUSE",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-6495"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7267",
+   "name": "Marais De Villechetif 2 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.958",
+     "MARAIS DE VILLECHETIF",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7267"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7846",
+   "name": "lac de grand-lieu 1 National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.8580",
+     "LAC DE GRAND-LIEU",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7846"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7847",
+   "name": "Lac de grand lieu 2 Conservation Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.8580",
+     "LAC DE GRAND-LIEU",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7847"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7848",
+   "name": "Lac De Grand-Lieu 3 Ramsar Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.8580",
+     "LAC DE GRAND-LIEU",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7848"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7849",
+   "name": "LAC DE GRAND-LIEU 4 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.8580",
+     "LAC DE GRAND-LIEU",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7849"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8118",
+   "name": "Cap d'ailly 2 Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.2158",
+     "LE CAP D'AILLY",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ],
+    [
+     "znieff2.469",
+     "LE CAP D'AILLY",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8118"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8568",
+   "name": "CAP DE LA CHEVRE 2 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.10013",
+     "CAP DE LA CHEVRE",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8568"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8904",
+   "name": "Marais du Grand Haze 2 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.4197",
+     "MARAIS DU GRAND HAZE",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8904"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8905",
+   "name": "Marais du Grand Haze 3 Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.4197",
+     "MARAIS DU GRAND HAZE",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8905"
   },
   {
    "area": "GB",
@@ -11363,310 +11685,6 @@
    "pota": "https://pota.app/#/park/MV-0003"
   },
   {
-   "area": "MX",
-   "ref": "MX-0042",
-   "name": "Cascada de Basaseachi National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "20",
-     "Cascada de Bassaseachic",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0042"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0043",
-   "name": "Insurgente Miguel Hiidalgo y Costilla National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "49",
-     "Insurgente Miguel Hidalgo y Costilla",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0043"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0054",
-   "name": "Molino de Flores Nezahualcoyotl National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "73",
-     "Molino de Flores Netzahualcóyotl",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0054"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0094",
-   "name": "Dunas de Samalyuca National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "162",
-     "Médanos de Samalayuca",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0094"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0125",
-   "name": "Chichinautzin Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "31",
-     "Corredor Biológico Chichinautzin",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0125"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0126",
-   "name": "Chichinautzin Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "31",
-     "Corredor Biológico Chichinautzin",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0126"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0127",
-   "name": "Mariposa Monarca Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "111",
-     "Mariposa Monarca",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0127"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0138",
-   "name": "El Vizcaíno Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "44",
-     "El Vizcaíno",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0138"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0153",
-   "name": "Campo Verde Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "19",
-     "Campo Verde",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0153"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0154",
-   "name": "Cañón de Santa Elena Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "15",
-     "Cañón de Santa Elena",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0154"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0162",
-   "name": "Ojo de Liebre Biosphere Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "146",
-     "Complejo Lagunar Ojo de Liebre",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0162"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0178",
-   "name": "Laguna de Términos Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "128",
-     "Laguna de Términos",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0178"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0183",
-   "name": "Maderas del Carmen Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "67",
-     "Maderas del Carmen",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0183"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0197",
-   "name": "Pantanos de Centla Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "134",
-     "Pantanos de Centla",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0197"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0005",
-   "name": "Duder Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "1210",
-     "Duder Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0005"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0006",
-   "name": "Glenfern Sanctuary Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "3274",
-     "Glenfern Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0006"
-  },
-  {
    "area": "NZ",
    "ref": "NZ-0012",
    "name": "Motukorea Regional Park",
@@ -11750,120 +11768,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0019",
-   "name": "Tapapakanga Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "3270",
-     "Tapapakanga Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0019"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0023",
-   "name": "Te Muri Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "1225",
-     "Te Muri Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0023"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0024",
-   "name": "Te Rau Puriri Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "1350",
-     "Te Rau Puriri Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0024"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0025",
-   "name": "Waharau Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "1358",
-     "Waharau Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0025"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0027",
-   "name": "Waitawa Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "3438",
-     "Waitawa Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0027"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0029",
-   "name": "Whakanewha Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "1457",
-     "Whakanewha Regional Park",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0029"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0046",
    "name": "Battle Hill Farm Regional Park",
    "old_grade": "pin",
@@ -11940,63 +11844,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0173",
-   "name": "Mt.Thomas Forest Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "130571",
-     "Mt. Thomas Forest Conservation Area",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0173"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0236",
-   "name": "Waitotara Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "41102",
-     "Waitōtara Forest Conservation Area",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0236"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0241",
-   "name": "Musick Point Esplanade Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "939",
-     "Musick Point Esplanade Reserve",
-     "Park Extents",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0241"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0242",
    "name": "Akatarawa Forest Regional Park",
    "old_grade": "pin",
@@ -12035,63 +11882,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0321",
-   "name": "Te Matai Forest Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "210122",
-     "Te Matai Forest",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0321"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0347",
-   "name": "Inline Downs Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "33483",
-     "Tinline Downs Conservation Area",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0347"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0560",
-   "name": "Horohoro Forest Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "97684",
-     "Horohoro Forest",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0560"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0624",
    "name": "Atuanui Forest Recreation Site",
    "old_grade": "pin",
@@ -12111,44 +11901,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0670",
-   "name": "The Wolds Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "324605",
-     "Conservation Area A- The Wolds",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0670"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0675",
-   "name": "The Wolds (B) Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "324604",
-     "Conservation Area B - The Wolds",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0675"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0676",
    "name": "Lake Alexandrina / Tekapo Ecological Park",
    "old_grade": "pin",
@@ -12165,25 +11917,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0676"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0786",
-   "name": "Robertson FHF Acquisition Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "130300",
-     "Conservation Area - Robertson FHF Aquisition",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0786"
   },
   {
    "area": "PA",
@@ -12447,6 +12180,595 @@
  ],
  "lost": [
   {
+   "area": "CZ",
+   "ref": "CZ-0040",
+   "name": "Berounka Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "79",
+     "Berounka",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0040"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0041",
+   "name": "Rohatiny Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "72",
+     "Rohatiny",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0041"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0042",
+   "name": "Manětínská Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "73",
+     "Manětínská",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0042"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0043",
+   "name": "Javořická vrchovina Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "47",
+     "Javořická vrchovina",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0043"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0047",
+   "name": "Čeřínek Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "116",
+     "Čeřínek",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0047"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0048",
+   "name": "Česká Kanada Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "51",
+     "Česká Kanada",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0048"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0055",
+   "name": "Homolka – Vojířov Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "56",
+     "Homolka - Vojířov",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0055"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0056",
+   "name": "Zelenov Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "68",
+     "Zelenov",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0056"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0057",
+   "name": "Chrašická stráň Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1295",
+     "Chrašická stráň",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0057"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0063",
+   "name": "Radeč Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "58",
+     "Radeč",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0063"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0069",
+   "name": "Čertova zeď National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "108",
+     "Čertova zeď",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0069"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0075",
+   "name": "Trhoň Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "59",
+     "Trhoň",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0075"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0076",
+   "name": "Džbány-Žebrák Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "14",
+     "Džbány-Žebrák",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0076"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0081",
+   "name": "Babiččino údolí National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "102",
+     "Babiččino údolí",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0081"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0084",
+   "name": "Polické stěny National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "114",
+     "Polické stěny",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0084"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0087",
+   "name": "Pískovcové sloupky Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1373",
+     "Pískovcové sloupky",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0087"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0090",
+   "name": "Bonetice Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1448",
+     "Bonětice",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0090"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0094",
+   "name": "Kopeckeho pramen Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "532",
+     "Kopeckého pramen",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0094"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0095",
+   "name": "Malesicka skala Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "403",
+     "Malesická skála",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0095"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0100",
+   "name": "Ejpovicke utesy Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "999",
+     "Ejpovické útesy",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0100"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0115",
+   "name": "Hostivar-Zabehlice Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "37",
+     "Hostivař - Záběhlice",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0115"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0128",
+   "name": "Plánický hřeben Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "69",
+     "Plánický hřeben",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0128"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0129",
+   "name": "Kakov - Plánický hřeben Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "63",
+     "Kakov - Plánický hřeben",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0129"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0130",
+   "name": "Svratecká hornatina Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "118",
+     "Svratecká hornatina",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0130"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0131",
+   "name": "Lysicko Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "123",
+     "Lysicko",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0131"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0132",
+   "name": "Halasovo Kunštátsko Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "122",
+     "Halasovo Kunštátsko",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0132"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0138",
+   "name": "Pod Stedrym Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "62",
+     "Pod Štědrým",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0138"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0139",
+   "name": "Ještěd Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "140",
+     "Ještěd",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0139"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0141",
+   "name": "Dalejský profil National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "61",
+     "Dalejský profil",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0141"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0143",
+   "name": "Americká zahrada National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "101",
+     "Americká zahrada",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0143"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0230",
+   "name": "Černý Nadýmač National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1609",
+     "Černý Nadýmač",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0230"
+  },
+  {
    "area": "DE",
    "ref": "DE-0095",
    "name": "Mecklenburgisches Elbetal UNESCO Biosphere Reserve",
@@ -12521,6 +12843,726 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/DE-1132"
+  },
+  {
+   "area": "ES",
+   "ref": "ES-2011",
+   "name": "Mampodre y Riaño Wildlife Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "73959",
+     "Montaña de Riaño y Mampodre",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ES-2011"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10220",
+   "name": "Massif du Canigou 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1875",
+     "Massif du Canigou",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10220"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10275",
+   "name": "vosges du nord 3 Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "7533",
+     "Vosges Du Nord",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10275"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10522",
+   "name": "PRESQU'ILE DE GIENS 2 Marine Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1973",
+     "PRESQU'ÎLE DE GIENS",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10522"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10548",
+   "name": "CAP DE SAINT-TROPEZ 2 Marine Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.16597",
+     "CAP DE SAINT-TROPEZ",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10548"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-11180",
+   "name": "massif forestier de retz 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.1563",
+     "MASSIF FORESTIER DE RETZ",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-11180"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-11824",
+   "name": "Cret de Chaussitre 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.14617",
+     "Crêt de Chaussitre",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-11824"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-11975",
+   "name": "MASSIF DE LA VANOISE 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1777",
+     "MASSIF DE LA VANOISE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-11975"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12277",
+   "name": "FORET DE PAIMPONT 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1281",
+     "FORET DE PAIMPONT",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12277"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12382",
+   "name": "Foret de Sainte-Colombe 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.16455",
+     "Forêt de Sainte-Colombe",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12382"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12827",
+   "name": "GORGES DE LA SIOULE 3 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1820",
+     "GORGES DE LA SIOULE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12827"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12832",
+   "name": "FORET DE COLETTES ET SATELLITES 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.14854",
+     "FORET DE COLETTES ET SATELLITES",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12832"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12864",
+   "name": "ETANG DE THAU  2 Conservation Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.15963",
+     "Etang de Thau",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12864"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12877",
+   "name": "Etang de Lapalme 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.16172",
+     "Etang de Lapalme",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12877"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12901",
+   "name": "Etangs Palavasiens 3 Ramsar Site",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "13407",
+     "Étangs palavasiens",
+     "EEA Natura 2000",
+     "same name (POTA writes the kind into the name)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12901"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-12992",
+   "name": "Grotte de Julio 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.15725",
+     "Grotte de Julio",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-12992"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-14674",
+   "name": "LE COUZON 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.15258",
+     "LE COUZON",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-14674"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-16528",
+   "name": "la dordogne 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1458",
+     "LA DORDOGNE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-16528"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-16626",
+   "name": "massif de villefermoy 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.199",
+     "MASSIF DE VILLEFERMOY",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-16626"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4137",
+   "name": "Causse noir 2 Natura 2000",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "13417",
+     "Causse Noir",
+     "EEA Natura 2000",
+     "name"
+    ],
+    [
+     "13730",
+     "Causse noir",
+     "EEA Natura 2000",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4137"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4429",
+   "name": "Piemont vosgien 1 Natura 2000",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "12570",
+     "Piémont vosgien",
+     "EEA Natura 2000",
+     "name"
+    ],
+    [
+     "12776",
+     "Piémont Vosgien",
+     "EEA Natura 2000",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4429"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4502",
+   "name": "Chaussitre Et Gimel 2 Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4951",
+     "Chaussitre Et Gimel",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4502"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4505",
+   "name": "Le Mezenc 2 Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3085",
+     "Le Mezenc",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4505"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4518",
+   "name": "Gorges De La Loire 2 Regional Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4854",
+     "Gorges De La Loire",
+     "EEA nationally designated areas",
+     "name + designation type FR35 (Regional Nature Reserve)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4518"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4668",
+   "name": "Marais Des Etelles 1 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.5696",
+     "Marais des Etelles",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4668"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4903",
+   "name": "ARCHIPEL DES GLENAN 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.9899",
+     "ILE DU LOC'H (ARCHIPEL DES GLENAN)",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ],
+    [
+     "znieff1.9915",
+     "ILES ET ILOTS DE GUIRIDEN, GUÉOTEC, VIEUX GLÉNAN, BRILIMEC, QUIGNENEC, CIGOGNE, CASTEL BRAZ, ROC’H C’HOAR et LE GLUET (ARCHIPEL DES GLÉNAN)",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ],
+    [
+     "znieff2.1272",
+     "ARCHIPEL DES GLENAN",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4903"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-6329",
+   "name": "ESTUAIRE DE LA GIRONDE 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.1396",
+     "ESTUAIRE DE LA GIRONDE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-6329"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-6757",
+   "name": "BASSE VALLEE DU DOUBS 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.4865",
+     "BASSE VALLEE DU DOUBS",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-6757"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-6863",
+   "name": "Marais Du Cerisaie 2 Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "9971",
+     "Marais Du Cerisaie",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-6863"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7697",
+   "name": "TOURBIERE DE LA MORTE-FEMME A GERARDMER 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.6397",
+     "TOURBIERE DE LA MORTE-FEMME A GERARDMER",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7697"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7745",
+   "name": "FIER D'ARS 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.10567",
+     "FIER D'ARS",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7745"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7752",
+   "name": "Les evieres 2 Conservation Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.10193",
+     "LES EVIERES",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7752"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-7755",
+   "name": "Fier d'ars 3 Conservation Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.10567",
+     "FIER D'ARS",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-7755"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8556",
+   "name": "PRESQU'ILE DE ROSCANVEL 2 Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff1.10008",
+     "PRESQU'ILE DE ROSCANVEL",
+     "IGN Géoplateforme ZNIEFF type I",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8556"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8841",
+   "name": "Baie de Seine occidentale 3 Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "12317",
+     "Baie de Seine occidentale",
+     "EEA Natura 2000",
+     "same name (POTA writes the kind into the name)"
+    ],
+    [
+     "12328",
+     "Baie de Seine occidentale",
+     "EEA Natura 2000",
+     "same name (POTA writes the kind into the name)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8841"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8890",
+   "name": "Domaine De Grignon a Thiverval-Grignon 2 Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "5084",
+     "Domaine De Grignon À Thiverval-Grignon",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "21233",
+     "Domaine De Grignon À Thiverval-Grignon",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8890"
   },
   {
    "area": "GB",
@@ -12679,6 +13721,557 @@
    "pota": "https://pota.app/#/park/JP-2016"
   },
   {
+   "area": "NO",
+   "ref": "NO-0363",
+   "name": "Ertsvikskjær Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "30069",
+     "Ersvikskjær",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-0363"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-0563",
+   "name": "Gjørahaugen Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "29384",
+     "Gjørashaugen",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-0563"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-1382",
+   "name": "Myrnesset Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28978",
+     "Myrneset",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-1382"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-1751",
+   "name": "Sagbekkskåra Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "29928",
+     "Sagbekkskora",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-1751"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-1906",
+   "name": "Skorbekken Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28622",
+     "Skårbekken",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-1906"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2592",
+   "name": "Tangendammen Wildlife Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27312",
+     "Tangendammen",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2592"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2605",
+   "name": "Andelven, Nessa og Risa National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28689",
+     "Andelven, Nessa og Risa",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2605"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2639",
+   "name": "Baneåsen Flora Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "26779",
+     "Baneåsen",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2639"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2640",
+   "name": "Krogshavn Flora Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27292",
+     "Krogshavn",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2640"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2651",
+   "name": "Stave Flora Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27097",
+     "Stave",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2651"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2658",
+   "name": "Huk Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "29431",
+     "Huk",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2658"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2671",
+   "name": "Skjerpemyr Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27373",
+     "Skjerpemyr",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2671"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2697",
+   "name": "Vikaleiret National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "26974",
+     "Vikaleiret",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2697"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2705",
+   "name": "Innstrandfjæra National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27326",
+     "Innstrandfjæra",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2705"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2707",
+   "name": "Lundleiret National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27482",
+     "Lundleiret",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2707"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2720",
+   "name": "Vollsfjorden midtre National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27063",
+     "Vollsfjorden midtre",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2720"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2750",
+   "name": "Rørvikvågen National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28377",
+     "Rørvikvågen",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2750"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2785",
+   "name": "Loga National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27987",
+     "Loga",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2785"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2788",
+   "name": "Einarsneset Flora Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28065",
+     "Einarsneset",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2788"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2790",
+   "name": "Lundevågen National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28397",
+     "Lundevågen",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2790"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2816",
+   "name": "Berg National Recreation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27593",
+     "Berg",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2816"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2824",
+   "name": "Falkenstendammen National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28663",
+     "Falkenstendammen",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2824"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2876",
+   "name": "Stad Marine Protected Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "36536",
+     "Stad",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2876"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2880",
+   "name": "Glomsteinskjær National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "29217",
+     "Glomsteinskjær",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2880"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-2971",
+   "name": "Vorma National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28614",
+     "Vorma",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-2971"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-3085",
+   "name": "Ringsholmane National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "27498",
+     "Ringsholmane",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-3085"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-3129",
+   "name": "Lille Follesøya National Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28681",
+     "Lille Follesøya",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-3129"
+  },
+  {
+   "area": "NO",
+   "ref": "NO-3133",
+   "name": "Skorpa-Nøklan National Ecological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "28932",
+     "Skorpa-Nøklan",
+     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NO-3133"
+  },
+  {
+   "area": "PL",
+   "ref": "PL-0992",
+   "name": "Osiek II Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "135076",
+     "Osiek",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PL-0992"
+  },
+  {
    "area": "SE",
    "ref": "SE-0797",
    "name": "Kungsberget Nature Reserve",
@@ -12696,6 +14289,63 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/SE-0797"
+  },
+  {
+   "area": "SI",
+   "ref": "SI-0387",
+   "name": "Babji Ložič - Ljutomer Forest Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "122723",
+     "Babji Ložič",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/SI-0387"
+  },
+  {
+   "area": "SI",
+   "ref": "SI-0415",
+   "name": "Park nekdanjega gradu v Vinarju Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "124934",
+     "Park okrog nekdanjega gradu v Vinarju",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/SI-0415"
+  },
+  {
+   "area": "SI",
+   "ref": "SI-0533",
+   "name": "Del porečja Govšlarce Natura 2000",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "108966",
+     "Del porečja Govškarce",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/SI-0533"
   }
  ],
  "grade_changed": [
@@ -18059,116 +19709,6 @@
    "pota": "https://pota.app/#/park/GB-1849"
   },
   {
-   "area": "FI",
-   "ref": "FI-0934",
-   "name": "Petolahden jokisuisto National Park",
-   "old_grade": "official",
-   "new_grade": "approx",
-   "new_pieces": [
-    [
-     "78536",
-     "Petolahden jokisuisto",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "78683",
-     "Petolahden jokisuisto 24",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "78684",
-     "Petolahden jokisuisto 27",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "81484",
-     "Petolahden jokisuisto 9",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "81485",
-     "Petolahden jokisuisto 11",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "81736",
-     "Petolahden jokisuisto 1",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "82411",
-     "Petolahden jokisuisto 3",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "82484",
-     "Petolahden jokisuisto 10",
-     "EEA nationally designated areas",
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "78536",
-     "Petolahden jokisuisto",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "78683",
-     "Petolahden jokisuisto 24",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "78684",
-     "Petolahden jokisuisto 27",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "81484",
-     "Petolahden jokisuisto 9",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "81485",
-     "Petolahden jokisuisto 11",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "81736",
-     "Petolahden jokisuisto 1",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "82411",
-     "Petolahden jokisuisto 3",
-     "EEA nationally designated areas",
-     "name"
-    ],
-    [
-     "82484",
-     "Petolahden jokisuisto 10",
-     "EEA nationally designated areas",
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/FI-0934"
-  },
-  {
    "area": "AT",
    "ref": "AT-0431",
    "name": "Biosphärenpark Salzburger Lungau und Kärntner Nockberge Biosphere Reserve",
@@ -18216,6 +19756,92 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/AT-0431"
+  },
+  {
+   "area": "FI",
+   "ref": "FI-0463",
+   "name": "Kasalanjokisuu National Park",
+   "old_grade": "official",
+   "new_grade": "approx",
+   "new_pieces": [
+    [
+     "81578",
+     "Kasalanjokisuu, Puosi",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "84974",
+     "Kasalanjokisuu, Viitanen",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "87595",
+     "Kasalanjokisuu, Holeeri",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "88797",
+     "Kasalanjokisuu, Muuholmi",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "88798",
+     "Kasalanjokisuu, Storsved",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "97358",
+     "Kasalanjokisuu, Kotomäki",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "81578",
+     "Kasalanjokisuu, Puosi",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "84974",
+     "Kasalanjokisuu, Viitanen",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "87595",
+     "Kasalanjokisuu, Holeeri",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "88797",
+     "Kasalanjokisuu, Muuholmi",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "88798",
+     "Kasalanjokisuu, Storsved",
+     "EEA nationally designated areas",
+     "name"
+    ],
+    [
+     "97358",
+     "Kasalanjokisuu, Kotomäki",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FI-0463"
   },
   {
    "area": "BZ",
@@ -18596,6 +20222,31 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CL-0157"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-15823",
+   "name": "plaine des maures 4 Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.16937",
+     "PLAINE DES MAURES (Type 1)",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ],
+    [
+     "znieff2.2003",
+     "PLAINE DES MAURES (Type 2)",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15823"
   },
   {
    "area": "NZ",
@@ -19159,25 +20810,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/DO-0110"
-  },
-  {
-   "area": "FO",
-   "ref": "FO-0004",
-   "name": "Skuvoy island Ramsar Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "5",
-     "Skúgvoy",
-     "Faroe Islands: Umhvørvisstovan (Faroese Environment Agency), gis.us.fo",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/FO-0004"
   }
  ]
 }
