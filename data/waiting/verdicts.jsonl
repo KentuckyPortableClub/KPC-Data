@@ -136561,3 +136561,91 @@
 {"date": "2026-11-05T00:23Z", "kind": "key", "path": "data/world-key/UM.json", "verdict": "PASS", "why": [], "notes": []}
 {"date": "2026-11-05T00:23Z", "kind": "key", "path": "data/world-key/UY.json", "verdict": "PASS", "why": [], "notes": []}
 {"date": "2026-11-05T00:23Z", "kind": "key", "path": "data/world-key/ZA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "docs", "path": "data/docs/US-IN.json", "verdict": "HOLD", "why": ["F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "docs", "path": "data/docs/US-WI.json", "verdict": "HOLD", "why": ["F-D3 11 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=PERSHING%"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "HOLD", "why": ["F-2 3 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "fers", "path": "data/fers/US-IL.json", "verdict": "HOLD", "why": ["F-2 candidates 12 -> 19 (over 30% change)", "F-2 9 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-1000+US-13298"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "fers", "path": "data/fers/US-MO.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 16 -> 4 (over 30% change)", "F-K known 2-fer missing: US-1772 + US-3356"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "fers", "path": "data/fers/US-SD.json", "verdict": "HOLD", "why": ["F-2 candidates 12 -> 18 (over 30% change)", "F-2 6 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0068+US-11905, US-0675+US-2620, US-0675+US-2622"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "fers", "path": "data/fers/US-WI.json.gz", "verdict": "HOLD", "why": ["F-2 candidates 27 -> 105 (over 30% change)", "F-2 NOT SURE 8 -> 16 (over 30% change)", "F-2 only 18 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)", "F-2 87 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-0603+US-4311, US-0605+US-8672, US-0673+US-10725"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/AE.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/AS.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/AT.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/BM.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/BS.json", "verdict": "HOLD", "why": ["F-O1 outlines 32 -> 0 (more than 1% lost)"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/BT.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/BW.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/BZ.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 42 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CC.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CD.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CG.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CL.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CM.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CO.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CV.json", "verdict": "HOLD", "why": ["F-O1 outlines 35 -> 0 (more than 1% lost)"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CX.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/CZ.json", "verdict": "HOLD", "why": ["F-O1 outlines 232 -> 215 (more than 1% lost)"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/DE.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 13 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/DO.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/EC.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/FO.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/FR.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GE.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 24 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GL.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GR.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GT.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GU.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/GY.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/HU.json", "verdict": "HOLD", "why": ["F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/ID.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/IE.json", "verdict": "HOLD", "why": ["F-O1 outlines 175 -> 168 (more than 1% lost)"], "notes": ["F-O4 shape test: 7 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/JE.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/JP.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 9 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/KE.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/LK.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/LR.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/MK.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/MP.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/MT.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 12 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/MV.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/MX.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/NC.json", "verdict": "HOLD", "why": ["F-O1 outlines 24 -> 0 (more than 1% lost)"], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/NF.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/NI.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 20 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/NO.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/NZ.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 16 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/OM.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PA.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PE.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PF.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PL.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 6 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PR.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PT.json", "verdict": "HOLD", "why": ["F-O1 outlines 335 -> 327 (more than 1% lost)"], "notes": ["F-O4 shape test: 29 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/PY.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/QA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/RW.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/SE.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 27 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/SI.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/SJ.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/SV.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/UM.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/UY.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-04T23:36Z", "kind": "key", "path": "data/world-key/ZA.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-05T00:07Z", "kind": "docs", "path": "data/docs/US-IN.json", "verdict": "HOLD", "why": ["F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/wilbur_wright.pdf"], "notes": []}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/ca-key/CA-AB.json", "verdict": "HOLD", "why": ["F-O4 2 of 2 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-2971, CA-3156"], "notes": ["F-O4 shape test: 2 changed outlines read from PAD-US, 2 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/ca-key/CA-BC.json", "verdict": "HOLD", "why": ["F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-3788, CA-3962, CA-3423"], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 60 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/ca-key/CA-NL.json", "verdict": "HOLD", "why": ["F-O4 55 of 55 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-1266, CA-4555, CA-1272"], "notes": ["F-O4 shape test: 55 changed outlines read from PAD-US, 55 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/ca-key/CA-NS.json", "verdict": "HOLD", "why": ["F-O4 42 of 42 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-1909, CA-6556, CA-0935"], "notes": ["F-O4 shape test: 42 changed outlines read from PAD-US, 42 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "docs", "path": "data/docs/US-IN.json", "verdict": "HOLD", "why": ["F-D3 10 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla"], "notes": []}
+{"date": "2026-11-05T00:38Z", "kind": "docs", "path": "data/docs/US-ME.json", "verdict": "HOLD", "why": ["F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml", "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml", "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/kaww/learn/management/lawsandpolicies.htm"], "notes": []}
+{"date": "2026-11-05T00:38Z", "kind": "docs", "path": "data/docs/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-05T00:38Z", "kind": "docs", "path": "data/docs/US-WI.json", "verdict": "HOLD", "why": ["F-D3 9 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=FOOTVILLE"], "notes": []}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/us-key/US-ID.json", "verdict": "HOLD", "why": ["F-O4 4 of 39 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. US-4387, US-4398, US-4505"], "notes": ["F-O4 shape test: 39 changed outlines read from PAD-US, 4 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/us-key/US-MI.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 1 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/us-key/US-NC.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 1 far from the park pin"]}
+{"date": "2026-11-05T00:38Z", "kind": "key", "path": "data/us-key/US-VT.json", "verdict": "PASS", "why": [], "notes": ["F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"]}
+{"date": "2026-11-05T01:07Z", "kind": "docs", "path": "data/docs/US-IN.json", "verdict": "HOLD", "why": ["F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla"], "notes": []}
+{"date": "2026-11-05T01:07Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "HOLD", "why": ["F-D3 2 of 20 re-tested links dead, e.g. https://stateparks.oregon.gov/index.cfm?do=main.loadFile&load=_siteFil"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-11-05T01:37Z", "kind": "docs", "path": "data/docs/US-IN.json", "verdict": "HOLD", "why": ["F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f884c23fc7/fo-harrison-crawford-trail-map.pdf?la"], "notes": []}
+{"date": "2026-11-05T01:37Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "HOLD", "why": ["F-D3 3 of 20 re-tested links dead, e.g. https://stateparks.oregon.gov/index.cfm?do=main.loadFile&load=_siteFil"], "notes": ["no live copy: first time this file is published"]}
