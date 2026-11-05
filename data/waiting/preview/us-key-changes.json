@@ -1,17 +1,17 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-05 09:37 UTC",
+ "made": "2026-11-05 14:27 UTC",
  "totals": {
-  "gained": 124,
-  "lost": 79,
-  "pieces_changed": 1845,
-  "grade_changed": 31
+  "gained": 125,
+  "lost": 77,
+  "pieces_changed": 1780,
+  "grade_changed": 30
  },
  "per_area": {
   "US-AK": {
    "gained": 1,
    "lost": 2,
-   "pieces_changed": 6,
+   "pieces_changed": 10,
    "grade_changed": 1
   },
   "US-AL": {
@@ -87,7 +87,7 @@
    "grade_changed": 0
   },
   "US-ID": {
-   "gained": 7,
+   "gained": 8,
    "lost": 2,
    "pieces_changed": 45,
    "grade_changed": 2
@@ -274,9 +274,9 @@
   },
   "US-VT": {
    "gained": 0,
-   "lost": 2,
-   "pieces_changed": 73,
-   "grade_changed": 1
+   "lost": 0,
+   "pieces_changed": 4,
+   "grade_changed": 0
   },
   "US-WA": {
    "gained": 6,
@@ -303,7 +303,7 @@
    "ref": "US-12679",
    "name": "Fort Egbert BLM Historic Area",
    "old_grade": "pin",
-   "new_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
      "sgaki400954",
@@ -1005,6 +1005,25 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-2236"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-7816",
+   "name": "Henrys Lake Airstrip State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "199732",
+     "Henrys Lake State Park",
+     607,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7816"
   },
   {
    "area": "US-IL",
@@ -4249,68 +4268,6 @@
    "pota": "https://pota.app/#/park/US-10748"
   },
   {
-   "area": "US-VT",
-   "ref": "US-3124",
-   "name": "Knight Island State Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgvta469",
-     "Knight Island State Park",
-     170,
-     "name"
-    ],
-    [
-     "vta439",
-     "Knight Island State Park",
-     0,
-     "same full name, far from the pin (G-1: the record names the "
-    ],
-    [
-     "vta439",
-     "Knight Island State Park",
-     0,
-     "same full name, far from the pin (G-1: the record names the "
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3124"
-  },
-  {
-   "area": "US-VT",
-   "ref": "US-5563",
-   "name": "Black Turn Brook State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgvta45",
-     "Black Turn Brook State Forest",
-     587,
-     "name"
-    ],
-    [
-     "vta40",
-     "Black Turn Brook State Forest",
-     0,
-     "same full name, far from the pin (G-1: the record names the "
-    ],
-    [
-     "vta40",
-     "Black Turn Brook State Forest",
-     0,
-     "same full name, far from the pin (G-1: the record names the "
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5563"
-  },
-  {
    "area": "US-WI",
    "ref": "US-4262",
    "name": "Pemene Falls Unit of Menominee River State Recreation Area",
@@ -5462,32 +5419,6 @@
    "pota": "https://pota.app/#/park/US-5756"
   },
   {
-   "area": "US-VT",
-   "ref": "US-3151",
-   "name": "Wilgus State Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgvta426",
-     "Wilgus State Park",
-     97,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgvta426",
-     "Wilgus State Park",
-     97,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3151"
-  },
-  {
    "area": "US-WI",
    "ref": "US-4246",
    "name": "Whitefish Dunes State Natural Area",
@@ -6163,7 +6094,7 @@
    "ref": "US-12679",
    "name": "Fort Egbert BLM Historic Area",
    "old_grade": "pin",
-   "new_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
      "sgaki400954",
