@@ -1,0 +1,36 @@
+{
+ "tag": "ut",
+ "states": [
+  "US-UT"
+ ],
+ "key_source": "build",
+ "checked": "2026-11-05 19:42 UTC",
+ "areas": {
+  "US-UT": {
+   "hold": [
+    "the key's overrides.json changed at 2026-11-05 18:59 UTC, after the key was built (2026-11-05 12:29 UTC): the 2-fer inputs are newer than the key"
+   ],
+   "warn": [
+    "11 review-pile HOLD row(s) still outlines: US-11007 US-11748 US-5758 US-5782 US-5789 US-5828 US-5833 US-5869 US-5897 US-6007 (their 2-fers are 'not sure')",
+    "4 rule 18 row(s): US-5750 US-5846 US-6010 US-6011 (a person decides)",
+    "13 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-10972 US-11007 US-11115 US-11748 US-5758 US-5782 US-5789 US-5828 US-5833 US-5869 US-5897 US-6007 US-6090",
+    "9 outline(s) with no area: US-10069 US-11172 US-11173 US-11174 US-12137 US-12144 US-12148 US-5796 US-5828"
+   ],
+   "key_file": "data/us-key/US-UT.json",
+   "build": "US-42016221491",
+   "built": "2026-11-05 12:29 UTC",
+   "rules": "3dc53f70256a",
+   "parks": 692,
+   "outlines": 411,
+   "postcheck": "us-US-42016221491.json",
+   "bad_pins": 13,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "verdict": "HOLD",
+ "holds": [
+  "US-UT: the key's overrides.json changed at 2026-11-05 18:59 UTC, after the key was built (2026-11-05 12:29 UTC): the 2-fer inputs are newer than the key"
+ ],
+ "held_key": false
+}
