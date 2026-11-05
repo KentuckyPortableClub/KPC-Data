@@ -26,7 +26,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 - **not-sure-for-chat9** (146 rows): - open 146
 - **parked** (0 rows): 
 - **pin-typos** (0 rows): 
-- **world-finder** (3762 rows): - NO 1652, - NOT SURE 27, - YES 15, LIKELY NO 437, LIKELY NOT SURE 464, LIKELY YES 57, SURE NO 72, SURE NOT SURE 50, SURE YES 984, SURE bot YES 4
+- **world-finder** (3830 rows): - NO 1652, - NOT SURE 27, - YES 15, LIKELY NO 437, LIKELY NOT SURE 464, LIKELY YES 57, LIKELY open 30, SURE NO 72, SURE NOT SURE 50, SURE YES 984, SURE bot YES 35, SURE open 7
 
 ## Layers
 
@@ -37,6 +37,6 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 - world countries done: 227
 - world countries started: 233
-- world candidates: 1644
+- world candidates: 1673
 - hunter areas: 63
 - hunter last pass: auto-202611031355

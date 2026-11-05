@@ -472,7 +472,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | not-sure-for-chat9.json | 146 | 146 |
 | parked.json | 0 | 0 |
 | pin-typos.json | 0 | 0 |
-| world-finder.json | 0 | 3762 |
+| world-finder.json | 37 | 3830 |
 
 ## Approvals not used yet: 5
 

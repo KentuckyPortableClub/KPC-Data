@@ -1,7 +1,7 @@
 {
  "about": "World finder v2 candidates (stage 1, Fable's plan): chat 11 answers YES / NO against the agency's own map; chat 2 rechecks. 'name mismatch' = the record's name differs from POTA's. Big countries: answer a random sample first and report the hit rate (HQ).",
  "built": "2026-11-05",
- "open": 68,
+ "open": 37,
  "questions": [
   {
    "area": "LU",
@@ -30304,11 +30304,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-4594",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30322,11 +30324,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-3016",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30344,7 +30348,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-0742",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "GB",
@@ -30358,11 +30363,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (wood)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-6778",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30380,7 +30387,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-4748",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "GB",
@@ -30466,11 +30474,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-4436",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30484,11 +30494,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-5553",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30524,7 +30536,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-3380",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "GB",
@@ -30610,11 +30623,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-5931",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30686,7 +30701,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-5046",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "GB",
@@ -30722,7 +30738,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-4120",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: the park is a forest kind the record does not name"
   },
   {
    "area": "GB",
@@ -30772,11 +30789,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-4638",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30808,11 +30827,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-3007",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30866,7 +30887,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-0866",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "GB",
@@ -30898,11 +30920,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-4136",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30970,11 +30994,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (forest)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-7192",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -30988,11 +31014,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-0787",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31006,11 +31034,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-0791",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31024,11 +31054,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-0802",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31042,11 +31074,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-0804",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31060,11 +31094,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-7196",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31150,11 +31186,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (wood)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-0780",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31168,11 +31206,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-2585",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31190,7 +31230,8 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/GB-4516",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "GB",
@@ -31204,11 +31245,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-6728",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "GB",
@@ -31222,11 +31265,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/GB-2998",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31258,11 +31303,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0599",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31276,11 +31323,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (marine)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0595",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31294,11 +31343,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (conservation)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0236",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "NZ",
@@ -31348,11 +31399,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (conservation)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0786",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31384,11 +31437,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (conservation forest)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0173",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "NZ",
@@ -31420,11 +31475,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (forest)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0321",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31492,11 +31549,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0166",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31510,11 +31569,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (conservation)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0347",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "NZ",
@@ -31528,11 +31589,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (marine)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0598",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31546,11 +31609,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (conservation)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0670",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31564,11 +31629,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (conservation)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0675",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -31618,11 +31685,13 @@
    "source": "world key (pin inside)",
    "why": "same proper name (forest)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/NZ-0560",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "NZ",
@@ -66594,5 +66663,6 @@
    "pota_link": "https://pota.app/#/park/AU-8845",
    "rechecked_by_chat2": null
   }
- ]
+ ],
+ "auto_yes": 35
 }
