@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for United Kingdom (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "GB",
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "status": "paused (out of time, will carry on)",
  "steps_done": [
   "known",
@@ -46,6 +46,64 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Ancient Woodland © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "THEME",
+      "THEMNAME",
+      "THEMID",
+      "STATUS",
+      "PERIMETER",
+      "AREA",
+      "X_COORD",
+      "Y_COORD",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 53640,
+     "sample": [
+      "Alders Shaw",
+      "High Holies Wood",
+      "Abbotswood Shaw"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Ancient Woodland © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "THEME",
+      "THEMNAME",
+      "THEMID",
+      "STATUS",
+      "PERIMETER",
+      "AREA",
+      "X_COORD",
+      "Y_COORD",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 53640,
+     "sample": [
+      "Alders Shaw",
+      "High Holies Wood",
+      "Abbotswood Shaw"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "Ancient Woodland © Natural England",
@@ -1608,6 +1666,72 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Marine Conservation Zones © Natural England and JNCC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "MCZ_NAME",
+      "MCZ_CODE",
+      "MCZ_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "STATUS",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 106,
+     "sample": [
+      "Erme Estuary",
+      "Morte Platform",
+      "Solway Firth"
+     ],
+     "name_field": "MCZ_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Marine Conservation Zones © Natural England and JNCC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "MCZ_NAME",
+      "MCZ_CODE",
+      "MCZ_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "STATUS",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 106,
+     "sample": [
+      "Erme Estuary",
+      "Morte Platform",
+      "Solway Firth"
+     ],
+     "name_field": "MCZ_NAME"
+    },
     {
      "id": 0,
      "name": "Marine Conservation Zones © Natural England and JNCC",
@@ -3456,6 +3580,29 @@
       "North Devon"
      ],
      "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Biosphere Reserves (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "STATUS",
+      "AREA",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "Isle of Wight",
+      "Brighton and Lewes Downs",
+      "North Devon"
+     ],
+     "name_field": "NAME"
     }
    ],
    "note": "Biosphere Reserves (England)",
@@ -3556,6 +3703,60 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Conservation Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "UID",
+      "NAME",
+      "DATE_OF_DE",
+      "DATE_UPDAT",
+      "LPA",
+      "CAPTURE_SC",
+      "x",
+      "y",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8749,
+     "sample": [
+      "Napsbury",
+      "Shafford Mill",
+      "Potters Crouch"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Conservation Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "UID",
+      "NAME",
+      "DATE_OF_DE",
+      "DATE_UPDAT",
+      "LPA",
+      "CAPTURE_SC",
+      "x",
+      "y",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8749,
+     "sample": [
+      "Napsbury",
+      "Shafford Mill",
+      "Potters Crouch"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "Conservation Areas",
@@ -5900,6 +6101,50 @@
       "GlobalID"
      ],
      "records": 6905076
+    },
+    {
+     "id": 0,
+     "name": "Living England Habitat Map Phase 4 © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "A_pred",
+      "A_prob",
+      "B_pred",
+      "B_prob",
+      "SrcCode",
+      "ImagesSpr",
+      "ImagesAut",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 6905076
+    },
+    {
+     "id": 0,
+     "name": "Living England Habitat Map Phase 4 © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "A_pred",
+      "A_prob",
+      "B_pred",
+      "B_prob",
+      "SrcCode",
+      "ImagesSpr",
+      "ImagesAut",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 6905076
     }
    ],
    "note": "Living England Habitat Map (Phase 4)",
@@ -7372,6 +7617,74 @@
       "Solway Firth"
      ],
      "name_field": "SPA_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Potential Special Protection Areas (pSPA) (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_NAME",
+      "SPA_CODE",
+      "SPA_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Solway Firth"
+     ],
+     "name_field": "SPA_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Potential Special Protection Areas (pSPA) (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_NAME",
+      "SPA_CODE",
+      "SPA_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Solway Firth"
+     ],
+     "name_field": "SPA_NAME"
     }
    ],
    "note": "Potential Special Protection Areas (England)",
@@ -7391,6 +7704,54 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Priority Habitats Inventory (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "MainHabs",
+      "HabCodes",
+      "FeatDesc",
+      "FeatCodes",
+      "OtherClass",
+      "AddHabs",
+      "PrimSource",
+      "AreaHa",
+      "Version",
+      "UID",
+      "OBJECTID",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 818225
+    },
+    {
+     "id": 0,
+     "name": "Priority Habitats Inventory (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "MainHabs",
+      "HabCodes",
+      "FeatDesc",
+      "FeatCodes",
+      "OtherClass",
+      "AddHabs",
+      "PrimSource",
+      "AreaHa",
+      "Version",
+      "UID",
+      "OBJECTID",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 818225
+    },
     {
      "id": 0,
      "name": "Priority Habitats Inventory (England) © Natural England",
@@ -9167,6 +9528,30 @@
       "Shape__Length"
      ],
      "records": 54517
+    },
+    {
+     "id": 0,
+     "name": "Wood Pasture and Parkland (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "MainHabs",
+      "HabCodes",
+      "FeatDesc",
+      "FeatCodes",
+      "OtherClass",
+      "AddHabs",
+      "PrimSource",
+      "AreaHa",
+      "Version",
+      "UID",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 54517
     }
    ],
    "note": "Wood Pasture and Parkland (England)",
@@ -10761,6 +11146,64 @@
       "North-west"
      ],
      "name_field": "NETNAME"
+    },
+    {
+     "id": 0,
+     "name": "AustralianMarineParks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "ZONENAME",
+      "ZONEIUCN",
+      "POLYGONID",
+      "NATLEGEND",
+      "AREA_KM2",
+      "SHAPE_AREA",
+      "SHAPE_LEN",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 196,
+     "sample": [
+      "Temperate East",
+      "North-west",
+      "North-west"
+     ],
+     "name_field": "NETNAME"
+    },
+    {
+     "id": 0,
+     "name": "AustralianMarineParks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "ZONENAME",
+      "ZONEIUCN",
+      "POLYGONID",
+      "NATLEGEND",
+      "AREA_KM2",
+      "SHAPE_AREA",
+      "SHAPE_LEN",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 196,
+     "sample": [
+      "Temperate East",
+      "North-west",
+      "North-west"
+     ],
+     "name_field": "NETNAME"
     }
    ],
    "note": "AustralianMarineParks",
@@ -10898,6 +11341,64 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "CivilAviationAerodromes_Buffers_WGS84",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Id",
+      "Name",
+      "Latitude",
+      "Longitude",
+      "Radar_Equi",
+      "Length_of",
+      "Suggested",
+      "BUFF_DIST",
+      "X",
+      "Y",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 142,
+     "sample": [
+      "ALDERNEY",
+      "NEWTOWNARDS",
+      "FENLAND"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "CivilAviationAerodromes_Buffers_WGS84",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Id",
+      "Name",
+      "Latitude",
+      "Longitude",
+      "Radar_Equi",
+      "Length_of",
+      "Suggested",
+      "BUFF_DIST",
+      "X",
+      "Y",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 142,
+     "sample": [
+      "ALDERNEY",
+      "NEWTOWNARDS",
+      "FENLAND"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "CivilAviationAerodromes_Buffers_WGS84",
@@ -12049,6 +12550,64 @@
       "NEWPORT"
      ],
      "name_field": "name_"
+    },
+    {
+     "id": 0,
+     "name": "Disposal_Sites_Wales_Cefas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "site_",
+      "name_",
+      "status_",
+      "depth__m__",
+      "sea_area_",
+      "sector_pol",
+      "sector_po0",
+      "sector_po1",
+      "caveat_en",
+      "caveat_cy",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 56,
+     "sample": [
+      "NEYLAND (OFF MILFORD HAVEN)",
+      "DEE ESTUARY",
+      "NEWPORT"
+     ],
+     "name_field": "name_"
+    },
+    {
+     "id": 0,
+     "name": "Disposal_Sites_Wales_Cefas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "site_",
+      "name_",
+      "status_",
+      "depth__m__",
+      "sea_area_",
+      "sector_pol",
+      "sector_po0",
+      "sector_po1",
+      "caveat_en",
+      "caveat_cy",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 56,
+     "sample": [
+      "NEYLAND (OFF MILFORD HAVEN)",
+      "DEE ESTUARY",
+      "NEWPORT"
+     ],
+     "name_field": "name_"
     }
    ],
    "note": "Disposal Sites Wales Cefas",
@@ -12439,6 +12998,68 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "European_OWFs_(EMODnet)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "COUNTRY",
+      "NAME",
+      "N_TURBINES",
+      "POWER_MW",
+      "STATUS",
+      "YEAR",
+      "COAST_DIST",
+      "AREA_SQKM",
+      "NOTES",
+      "Shape_Leng",
+      "Shape_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 305,
+     "sample": [
+      "Stora Middelgrund",
+      "Lovstaviken",
+      "Kattegatt Offshore"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "European_OWFs_(EMODnet)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "COUNTRY",
+      "NAME",
+      "N_TURBINES",
+      "POWER_MW",
+      "STATUS",
+      "YEAR",
+      "COAST_DIST",
+      "AREA_SQKM",
+      "NOTES",
+      "Shape_Leng",
+      "Shape_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 305,
+     "sample": [
+      "Stora Middelgrund",
+      "Lovstaviken",
+      "Kattegatt Offshore"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "European_OWFs_(EMODnet)",
@@ -14177,6 +14798,78 @@
       "Kippenross"
      ],
      "name_field": "DES_TITLE"
+    },
+    {
+     "id": 0,
+     "name": "Gardens_and_Designed_Landscapes_(Scotland)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "CREATED",
+      "UPDATED",
+      "PRECISION_",
+      "ACCURACY",
+      "CAP_SCALE",
+      "COMPILER",
+      "X",
+      "Y",
+      "DES_REF",
+      "DES_TITLE",
+      "DES_TYPE",
+      "DESIGNATED",
+      "AMENDED",
+      "LINK",
+      "LEGISLATIO",
+      "CLASS",
+      "LOCAL_AUTH",
+      "Shape_Leng",
+      "Shape_Area"
+     ],
+     "records": 365,
+     "sample": [
+      "Ardgowan",
+      "The Roman Camp",
+      "Kippenross"
+     ],
+     "name_field": "DES_TITLE"
+    },
+    {
+     "id": 0,
+     "name": "Gardens_and_Designed_Landscapes_(Scotland)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "CREATED",
+      "UPDATED",
+      "PRECISION_",
+      "ACCURACY",
+      "CAP_SCALE",
+      "COMPILER",
+      "X",
+      "Y",
+      "DES_REF",
+      "DES_TITLE",
+      "DES_TYPE",
+      "DESIGNATED",
+      "AMENDED",
+      "LINK",
+      "LEGISLATIO",
+      "CLASS",
+      "LOCAL_AUTH",
+      "Shape_Leng",
+      "Shape_Area"
+     ],
+     "records": 365,
+     "sample": [
+      "Ardgowan",
+      "The Roman Camp",
+      "Kippenross"
+     ],
+     "name_field": "DES_TITLE"
     }
    ],
    "note": "Gardens and Designed Landscapes (Scotland)",
@@ -14350,6 +15043,64 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "MARINE_ASSETS",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "ID",
+      "AREA_ID",
+      "TYPE",
+      "ASSET_NAME",
+      "MAP_ID",
+      "NOTES",
+      "MAP_REF",
+      "AREA_CMA",
+      "SIG_BIRDS",
+      "SIG_LEVEL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 149,
+     "sample": [
+      "McGauran Beach",
+      "Corner Inlet deep channels",
+      "Corner Inlet deep channels"
+     ],
+     "name_field": "ASSET_NAME"
+    },
+    {
+     "id": 0,
+     "name": "MARINE_ASSETS",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "ID",
+      "AREA_ID",
+      "TYPE",
+      "ASSET_NAME",
+      "MAP_ID",
+      "NOTES",
+      "MAP_REF",
+      "AREA_CMA",
+      "SIG_BIRDS",
+      "SIG_LEVEL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 149,
+     "sample": [
+      "McGauran Beach",
+      "Corner Inlet deep channels",
+      "Corner Inlet deep channels"
+     ],
+     "name_field": "ASSET_NAME"
+    },
     {
      "id": 0,
      "name": "MARINE_ASSETS",
@@ -15555,6 +16306,56 @@
       "Hornsea 1 ECC"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Farms_Cable_Corridors_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Name",
+      "Status",
+      "Area_km2",
+      "Length_km",
+      "Field",
+      "GoBe_Rev",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 94,
+     "sample": [
+      "Inner Dowsing ECC",
+      "Burbo Bank Extension ECC",
+      "Hornsea 1 ECC"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Farms_Cable_Corridors_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Name",
+      "Status",
+      "Area_km2",
+      "Length_km",
+      "Field",
+      "GoBe_Rev",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 94,
+     "sample": [
+      "Inner Dowsing ECC",
+      "Burbo Bank Extension ECC",
+      "Hornsea 1 ECC"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Offshore_Wind_Farms_Cable_Corridors_WGS84_UTM30N",
@@ -15576,6 +16377,78 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Farms_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "GoBe_ID",
+      "RUKProjID",
+      "Name",
+      "GoBe_Exp",
+      "GoBe_PreAp",
+      "GoBe_EIA",
+      "GoBe_Exam",
+      "GoBe_PCC",
+      "Developer_",
+      "Owner_RUK",
+      "STATUS",
+      "Technology",
+      "Area_km2",
+      "CapacityMW",
+      "Comission",
+      "Constructi",
+      "Lat",
+      "Long",
+      "Country"
+     ],
+     "records": 137,
+     "sample": [
+      "Neart Na Gaoithe",
+      "Morecambe",
+      "Mona"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Farms_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "GoBe_ID",
+      "RUKProjID",
+      "Name",
+      "GoBe_Exp",
+      "GoBe_PreAp",
+      "GoBe_EIA",
+      "GoBe_Exam",
+      "GoBe_PCC",
+      "Developer_",
+      "Owner_RUK",
+      "STATUS",
+      "Technology",
+      "Area_km2",
+      "CapacityMW",
+      "Comission",
+      "Constructi",
+      "Lat",
+      "Long",
+      "Country"
+     ],
+     "records": 137,
+     "sample": [
+      "Neart Na Gaoithe",
+      "Morecambe",
+      "Mona"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "Offshore_Wind_Farms_WGS84_UTM30N",
@@ -16034,6 +16907,52 @@
       "Artfield Fell"
      ],
      "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Onshore Windfarm Proposals",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RENEWABLES_SITE_ID",
+      "NAME",
+      "STATUS",
+      "TYPE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 727,
+     "sample": [
+      "Beinneun wind farm",
+      "Carscreugh",
+      "Artfield Fell"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Onshore Windfarm Proposals",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RENEWABLES_SITE_ID",
+      "NAME",
+      "STATUS",
+      "TYPE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 727,
+     "sample": [
+      "Beinneun wind farm",
+      "Carscreugh",
+      "Artfield Fell"
+     ],
+     "name_field": "NAME"
     }
    ],
    "note": "Onshore Windfarm Proposals  (Scotland)",
@@ -16054,6 +16973,78 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "PARKRES",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "PRIMS_ID",
+      "NAME",
+      "AREA_TYPE",
+      "NAME_SHORT",
+      "AREA_SRC",
+      "MANAGER",
+      "VEAC_REC",
+      "VEAC_STUDY",
+      "IUCN",
+      "TOTAL_AREA",
+      "POLY_SRC",
+      "AREATYPEID",
+      "SRCHNAME",
+      "ESTAB_DATE",
+      "LAST_MOD",
+      "VERS_DATE",
+      "HECTARES",
+      "AREASQM",
+      "Shape__Area"
+     ],
+     "records": 8802,
+     "sample": [
+      "Glenmaggie Regional Park",
+      "Yarrara Flora and Fauna Reserve",
+      "Nathalia Natural Features Reserve"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "PARKRES",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "PRIMS_ID",
+      "NAME",
+      "AREA_TYPE",
+      "NAME_SHORT",
+      "AREA_SRC",
+      "MANAGER",
+      "VEAC_REC",
+      "VEAC_STUDY",
+      "IUCN",
+      "TOTAL_AREA",
+      "POLY_SRC",
+      "AREATYPEID",
+      "SRCHNAME",
+      "ESTAB_DATE",
+      "LAST_MOD",
+      "VERS_DATE",
+      "HECTARES",
+      "AREASQM",
+      "Shape__Area"
+     ],
+     "records": 8802,
+     "sample": [
+      "Glenmaggie Regional Park",
+      "Yarrara Flora and Fauna Reserve",
+      "Nathalia Natural Features Reserve"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "PARKRES",
@@ -16433,6 +17424,78 @@
       "Rostherne Mere"
      ],
      "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Ramsar (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "CODE",
+      "AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME0",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA0",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1291,
+     "sample": [
+      "Pevensey Levels",
+      "Rostherne Mere",
+      "Rostherne Mere"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Ramsar (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "CODE",
+      "AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME0",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA0",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1291,
+     "sample": [
+      "Pevensey Levels",
+      "Rostherne Mere",
+      "Rostherne Mere"
+     ],
+     "name_field": "NAME"
     }
    ],
    "note": "Ramsar (England)",
@@ -16454,6 +17517,60 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "SACs_Ireland_2024_12_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITECODE",
+      "SITE_NAME",
+      "VERSION",
+      "COUNTY",
+      "HA",
+      "Source_CRS",
+      "SourcScale",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 433,
+     "sample": [
+      "Killyconny Bog (Cloghbally) SAC",
+      "Lough Oughter and Associated Loughs SAC",
+      "Ballyallia Lake SAC"
+     ],
+     "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "SACs_Ireland_2024_12_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITECODE",
+      "SITE_NAME",
+      "VERSION",
+      "COUNTY",
+      "HA",
+      "Source_CRS",
+      "SourcScale",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 433,
+     "sample": [
+      "Killyconny Bog (Cloghbally) SAC",
+      "Lough Oughter and Associated Loughs SAC",
+      "Ballyallia Lake SAC"
+     ],
+     "name_field": "SITE_NAME"
+    },
     {
      "id": 0,
      "name": "SACs_Ireland_2024_12_WGS84_UTM30N",
@@ -16753,6 +17870,64 @@
       "Inishkea Islands SPA"
      ],
      "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "SPA_Ireland_2023_05_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITECODE",
+      "SITE_NAME",
+      "VERSION",
+      "HA",
+      "Source_CRS",
+      "SourcScale",
+      "COUNTY",
+      "Shape_Leng",
+      "Shape_Area",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 199,
+     "sample": [
+      "Saltee Islands SPA",
+      "Puffin Island SPA",
+      "Inishkea Islands SPA"
+     ],
+     "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "SPA_Ireland_2023_05_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITECODE",
+      "SITE_NAME",
+      "VERSION",
+      "HA",
+      "Source_CRS",
+      "SourcScale",
+      "COUNTY",
+      "Shape_Leng",
+      "Shape_Area",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 199,
+     "sample": [
+      "Saltee Islands SPA",
+      "Puffin Island SPA",
+      "Inishkea Islands SPA"
+     ],
+     "name_field": "SITE_NAME"
     }
    ],
    "note": "SPA_Ireland_2023_05_WGS84_UTM30N",
@@ -16774,6 +17949,78 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Special Areas of Conservation (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SAC_NAME",
+      "SAC_CODE",
+      "SAC_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "GlobalID",
+      "Shape__Area"
+     ],
+     "records": 1911,
+     "sample": [
+      "Overstrand Cliffs",
+      "Burnham Beeches",
+      "Quants"
+     ],
+     "name_field": "SAC_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Special Areas of Conservation (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SAC_NAME",
+      "SAC_CODE",
+      "SAC_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "GlobalID",
+      "Shape__Area"
+     ],
+     "records": 1911,
+     "sample": [
+      "Overstrand Cliffs",
+      "Burnham Beeches",
+      "Quants"
+     ],
+     "name_field": "SAC_NAME"
+    },
     {
      "id": 0,
      "name": "Special Areas of Conservation (England) © Natural England",
@@ -17152,6 +18399,78 @@
       "Morecambe Bay and Duddon Estuary"
      ],
      "name_field": "SPA_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Special Protection Areas (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_NAME",
+      "SPA_CODE",
+      "SPA_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "GlobalID",
+      "Shape__Area"
+     ],
+     "records": 1079,
+     "sample": [
+      "Northumberland Marine",
+      "Liverpool Bay",
+      "Morecambe Bay and Duddon Estuary"
+     ],
+     "name_field": "SPA_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Special Protection Areas (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_NAME",
+      "SPA_CODE",
+      "SPA_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "GlobalID",
+      "Shape__Area"
+     ],
+     "records": 1079,
+     "sample": [
+      "Northumberland Marine",
+      "Liverpool Bay",
+      "Morecambe Bay and Duddon Estuary"
+     ],
+     "name_field": "SPA_NAME"
     }
    ],
    "note": "Special Protection Areas (England)",
@@ -17172,6 +18491,78 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Territorial_Sea_Limit_(12M)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "NAME",
+      "OBJNAM",
+      "CATLIM",
+      "NATION",
+      "NOBJNM",
+      "SORHCS",
+      "PHCS",
+      "LEGSOU",
+      "IP_OWNER",
+      "LICENCE",
+      "DISCLAIMER",
+      "COMMENT",
+      "FRLI_REF",
+      "DATE",
+      "LEVEL_ADMI",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 46,
+     "sample": [
+      "Territorial Sea - Seas and Submerged Lands Act 197",
+      "Territorial Sea - Seas and Submerged Lands Act 197",
+      "Territorial Sea - Seas and Submerged Lands Act 197"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Territorial_Sea_Limit_(12M)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "NAME",
+      "OBJNAM",
+      "CATLIM",
+      "NATION",
+      "NOBJNM",
+      "SORHCS",
+      "PHCS",
+      "LEGSOU",
+      "IP_OWNER",
+      "LICENCE",
+      "DISCLAIMER",
+      "COMMENT",
+      "FRLI_REF",
+      "DATE",
+      "LEVEL_ADMI",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 46,
+     "sample": [
+      "Territorial Sea - Seas and Submerged Lands Act 197",
+      "Territorial Sea - Seas and Submerged Lands Act 197",
+      "Territorial Sea - Seas and Submerged Lands Act 197"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "Territorial_Sea_Limit_(12M)",
@@ -17559,6 +18950,34 @@
       "Shape__Length"
      ],
      "records": 21
+    },
+    {
+     "id": 0,
+     "name": "Bathymetry (EMODnet)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Depth_m",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 21
+    },
+    {
+     "id": 0,
+     "name": "Bathymetry (EMODnet)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Depth_m",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 21
     }
    ],
    "note": "Bathymetry",
@@ -17580,6 +18999,76 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Bunbury_OREI_Declared_Areas_",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Status",
+      "Region",
+      "Consultati",
+      "Name",
+      "Disclaimer",
+      "CoordSys",
+      "DateDeclar",
+      "Area_km2",
+      "Declaratio",
+      "GlobalID",
+      "CreationDa",
+      "Creator",
+      "EditDate",
+      "Editor",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "OEI-03-2024 Part 1",
+      "OEI-03-2024 Part 2"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Bunbury_OREI_Declared_Areas_",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Status",
+      "Region",
+      "Consultati",
+      "Name",
+      "Disclaimer",
+      "CoordSys",
+      "DateDeclar",
+      "Area_km2",
+      "Declaratio",
+      "GlobalID",
+      "CreationDa",
+      "Creator",
+      "EditDate",
+      "Editor",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "OEI-03-2024 Part 1",
+      "OEI-03-2024 Part 2"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "Bunbury_OREI_Declared_Areas_",
@@ -18777,6 +20266,34 @@
       "Shape__Length"
      ],
      "records": 7965
+    },
+    {
+     "id": 0,
+     "name": "CARBONPEATLANDWIND_SCOTLAND",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "IMPORTANCE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7965
+    },
+    {
+     "id": 0,
+     "name": "CARBONPEATLANDWIND_SCOTLAND",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "IMPORTANCE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7965
     }
    ],
    "note": "Carbon and Peatland 2016",
@@ -18799,6 +20316,45 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "Long Distance Trails Scotland",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "Trail",
+      "Section",
+      "Order1",
+      "SLR_ID",
+      "Shape__Length"
+     ],
+     "records": 254
+    },
+    {
+     "id": 0,
+     "name": "Scottish Mountains",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "FID",
+      "Name",
+      "Type",
+      "Easting",
+      "Northing",
+      "Metres",
+      "Feet"
+     ],
+     "records": 728,
+     "sample": [
+      "Beinn a' Chlachair",
+      "Creag Pitridh",
+      "Beinn a' Chaorainn"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 2,
      "name": "Long Distance Trails Scotland",
@@ -19193,6 +20749,78 @@
       "Australian Exclusive Economic Zone (Christmas Isla"
      ],
      "name_field": "GeoName"
+    },
+    {
+     "id": 0,
+     "name": "EEZ_Limits",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "MRGID",
+      "GeoName",
+      "MRGID_Ter1",
+      "Pol_type",
+      "MRGID_Sov1",
+      "Territory1",
+      "ISO_Ter1",
+      "Sovereign1",
+      "MRGID_Ter2",
+      "MRGID_Sov2",
+      "Territory2",
+      "ISO_Ter2",
+      "Sovereign2",
+      "MRGID_Ter3",
+      "MRGID_Sov3",
+      "Territory3",
+      "ISO_Ter3",
+      "Sovereign3",
+      "MRGID_EEZ"
+     ],
+     "records": 6,
+     "sample": [
+      "Australian Exclusive Economic Zone",
+      "Australian Exclusive Economic Zone (Cocos Islands)",
+      "Australian Exclusive Economic Zone (Christmas Isla"
+     ],
+     "name_field": "GeoName"
+    },
+    {
+     "id": 0,
+     "name": "EEZ_Limits",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "MRGID",
+      "GeoName",
+      "MRGID_Ter1",
+      "Pol_type",
+      "MRGID_Sov1",
+      "Territory1",
+      "ISO_Ter1",
+      "Sovereign1",
+      "MRGID_Ter2",
+      "MRGID_Sov2",
+      "Territory2",
+      "ISO_Ter2",
+      "Sovereign2",
+      "MRGID_Ter3",
+      "MRGID_Sov3",
+      "Territory3",
+      "ISO_Ter3",
+      "Sovereign3",
+      "MRGID_EEZ"
+     ],
+     "records": 6,
+     "sample": [
+      "Australian Exclusive Economic Zone",
+      "Australian Exclusive Economic Zone (Cocos Islands)",
+      "Australian Exclusive Economic Zone (Christmas Isla"
+     ],
+     "name_field": "GeoName"
     }
    ],
    "note": "EEZ Limits",
@@ -19214,6 +20842,68 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "EGL4_UXO_Consent_Corridor_20260311_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "id",
+      "Area",
+      "Length",
+      "Name",
+      "bend_radiu",
+      "bend_rad_1",
+      "bend_rad_2",
+      "Length_01",
+      "Length_2",
+      "Name_2",
+      "bend_rad_3",
+      "bend_rad_4",
+      "bend_rad_5",
+      "Length_01_",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Base Case"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "EGL4_UXO_Consent_Corridor_20260311_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "id",
+      "Area",
+      "Length",
+      "Name",
+      "bend_radiu",
+      "bend_rad_1",
+      "bend_rad_2",
+      "Length_01",
+      "Length_2",
+      "Name_2",
+      "bend_rad_3",
+      "bend_rad_4",
+      "bend_rad_5",
+      "Length_01_",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Base Case"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "EGL4_UXO_Consent_Corridor_20260311_WGS84_UTM30N",
@@ -19473,6 +21163,40 @@
       "Shape__Length"
      ],
      "records": 49
+    },
+    {
+     "id": 1,
+     "name": "Spawning Grounds",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Intensity",
+      "Species",
+      "area",
+      "area1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 49
+    },
+    {
+     "id": 1,
+     "name": "Spawning Grounds",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Intensity",
+      "Species",
+      "area",
+      "area1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 49
     }
    ],
    "note": "Herring Spawning Coull 1998",
@@ -19643,6 +21367,66 @@
       "IHLS"
      ],
      "records": 19202
+    },
+    {
+     "id": 1,
+     "name": "ASPEN_HerringSpawningHabitatConfidence2024_GoBe_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Code",
+      "Country",
+      "Data_Holde",
+      "Original_G",
+      "References_",
+      "Original_s",
+      "Folk_16cl_",
+      "Folk_7cl_t",
+      "Folk_5cl_t",
+      "Class_BGS",
+      "Herring_SC",
+      "Herring",
+      "Coull_SC",
+      "Coull",
+      "ESFJC_Herr",
+      "ESFJC_SC",
+      "VMS_MMO",
+      "VMS_SC",
+      "IHLS"
+     ],
+     "records": 19202
+    },
+    {
+     "id": 1,
+     "name": "ASPEN_HerringSpawningHabitatConfidence2024_GoBe_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Code",
+      "Country",
+      "Data_Holde",
+      "Original_G",
+      "References_",
+      "Original_s",
+      "Folk_16cl_",
+      "Folk_7cl_t",
+      "Folk_5cl_t",
+      "Class_BGS",
+      "Herring_SC",
+      "Herring",
+      "Coull_SC",
+      "Coull",
+      "ESFJC_Herr",
+      "ESFJC_SC",
+      "VMS_MMO",
+      "VMS_SC",
+      "IHLS"
+     ],
+     "records": 19202
     }
    ],
    "note": "Herring Spawning Habitat Confidence 2024",
@@ -19664,6 +21448,66 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Seabed Substrate (EMODnet) ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "COUNTRY",
+      "SEAREGION",
+      "DATA_HOLDER",
+      "INDEX_CODE",
+      "GRAIN_SIZE_CLASS",
+      "MAPPING_METHOD",
+      "RECLASS_METHOD",
+      "SAMPLE_NUMBER",
+      "ORIG_SUBSTRATE_CLASS",
+      "RELATION_ORIG_VS_RECLASS",
+      "FOLK_5_SUBSTRATE_CLASS",
+      "FOLK_7_SUBSTRATE_CLASS",
+      "FOLK_16_SUBSTRATE_CLASS",
+      "CONTACT",
+      "COMMENTS",
+      "REFERENCES_",
+      "Herring_CL",
+      "Sandeel_CL",
+      "Shape__Area"
+     ],
+     "records": 69724
+    },
+    {
+     "id": 1,
+     "name": "Seabed Substrate (EMODnet) ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "COUNTRY",
+      "SEAREGION",
+      "DATA_HOLDER",
+      "INDEX_CODE",
+      "GRAIN_SIZE_CLASS",
+      "MAPPING_METHOD",
+      "RECLASS_METHOD",
+      "SAMPLE_NUMBER",
+      "ORIG_SUBSTRATE_CLASS",
+      "RELATION_ORIG_VS_RECLASS",
+      "FOLK_5_SUBSTRATE_CLASS",
+      "FOLK_7_SUBSTRATE_CLASS",
+      "FOLK_16_SUBSTRATE_CLASS",
+      "CONTACT",
+      "COMMENTS",
+      "REFERENCES_",
+      "Herring_CL",
+      "Sandeel_CL",
+      "Shape__Area"
+     ],
+     "records": 69724
+    },
     {
      "id": 1,
      "name": "Seabed Substrate (EMODnet) ",
@@ -20119,6 +21963,66 @@
       "Shape__Area"
      ],
      "records": 227
+    },
+    {
+     "id": 0,
+     "name": "NESP_MaC_3-3_ORE_PublicationInventory_PrioritySpp",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "FaunaGroup",
+      "CommonGrou",
+      "Family",
+      "Species",
+      "Scientific",
+      "EPBC_Conse",
+      "EPBC_Migra",
+      "EPBC_Cetac",
+      "EPBC_Marin",
+      "Interactio",
+      "Study",
+      "Citation",
+      "StudyLocat",
+      "StudySubje",
+      "StudyMetho",
+      "State",
+      "Overlap_wi",
+      "ORE_areas_",
+      "Shape__Area"
+     ],
+     "records": 227
+    },
+    {
+     "id": 0,
+     "name": "NESP_MaC_3-3_ORE_PublicationInventory_PrioritySpp",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "FaunaGroup",
+      "CommonGrou",
+      "Family",
+      "Species",
+      "Scientific",
+      "EPBC_Conse",
+      "EPBC_Migra",
+      "EPBC_Cetac",
+      "EPBC_Marin",
+      "Interactio",
+      "Study",
+      "Citation",
+      "StudyLocat",
+      "StudySubje",
+      "StudyMetho",
+      "State",
+      "Overlap_wi",
+      "ORE_areas_",
+      "Shape__Area"
+     ],
+     "records": 227
     }
    ],
    "note": "NESP_MaC_3_3_ORE_PublicationInventory_PrioritySpp",
@@ -20140,6 +22044,64 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "National_Parks_(Scotland)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "ET_ID",
+      "ID",
+      "AREA",
+      "PERIMETER",
+      "NAME",
+      "PA_CODE",
+      "OPENED",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "ET_Source",
+      "DATE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "Cairngorms",
+      "LochLomond and Trossachs"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "National_Parks_(Scotland)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "ET_ID",
+      "ID",
+      "AREA",
+      "PERIMETER",
+      "NAME",
+      "PA_CODE",
+      "OPENED",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "ET_Source",
+      "DATE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "Cairngorms",
+      "LochLomond and Trossachs"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "National_Parks_(Scotland)",
@@ -20829,6 +22791,74 @@
       " "
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Onshore_Assessment_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "id",
+      "Name",
+      "Status",
+      "Region",
+      "Consultati",
+      "Disclaimer",
+      "CoordSys",
+      "DateDeclar",
+      "Area_km2",
+      "Declaratio",
+      "GlobalID",
+      "CreationDa",
+      "Creator",
+      "EditDate",
+      "Editor",
+      "layer",
+      "path",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      " "
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Onshore_Assessment_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "id",
+      "Name",
+      "Status",
+      "Region",
+      "Consultati",
+      "Disclaimer",
+      "CoordSys",
+      "DateDeclar",
+      "Area_km2",
+      "Declaratio",
+      "GlobalID",
+      "CreationDa",
+      "Creator",
+      "EditDate",
+      "Editor",
+      "layer",
+      "path",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      " "
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Onshore Assessment Area",
@@ -20850,6 +22880,66 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Port_Authorities_LGATE_243_WA_GDA2020_Public_Shapefile",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "boundary_i",
+      "type_code",
+      "type_descr",
+      "feature_nu",
+      "name",
+      "abs_lga_nu",
+      "postcode",
+      "land_area",
+      "area_deriv",
+      "st_area_sh",
+      "st_perimet",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "ALBANY PORT AUTHORITY",
+      "PORT OF BALLA BALLA",
+      "VARANUS ISLAND PORT AUTHORITY"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 0,
+     "name": "Port_Authorities_LGATE_243_WA_GDA2020_Public_Shapefile",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "boundary_i",
+      "type_code",
+      "type_descr",
+      "feature_nu",
+      "name",
+      "abs_lga_nu",
+      "postcode",
+      "land_area",
+      "area_deriv",
+      "st_area_sh",
+      "st_perimet",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "ALBANY PORT AUTHORITY",
+      "PORT OF BALLA BALLA",
+      "VARANUS ISLAND PORT AUTHORITY"
+     ],
+     "name_field": "name"
+    },
     {
      "id": 0,
      "name": "Port_Authorities_LGATE_243_WA_GDA2020_Public_Shapefile",
@@ -21139,6 +23229,54 @@
       "Shape__Length"
      ],
      "records": 65
+    },
+    {
+     "id": 0,
+     "name": "Ramsar_Sites_DBCA_010_WA_GDA2020_Public_Shapefile",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "ram_refcod",
+      "ram_ramsar",
+      "ram_source",
+      "ram_jurisd",
+      "ram_listed",
+      "ram_status",
+      "ram_extens",
+      "ram_hectar",
+      "st_area_sh",
+      "st_perimet",
+      "object_id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 65
+    },
+    {
+     "id": 0,
+     "name": "Ramsar_Sites_DBCA_010_WA_GDA2020_Public_Shapefile",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "ram_refcod",
+      "ram_ramsar",
+      "ram_source",
+      "ram_jurisd",
+      "ram_listed",
+      "ram_status",
+      "ram_extens",
+      "ram_hectar",
+      "st_area_sh",
+      "st_perimet",
+      "object_id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 65
     }
    ],
    "note": "Ramsar_Sites_DBCA_010_WA_GDA2020_Public_Shapefile",
@@ -21160,6 +23298,54 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Round_5_PDAs",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Area_km2",
+      "Name",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "3",
+      "1",
+      "2"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Round_5_PDAs",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Area_km2",
+      "Name",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "3",
+      "1",
+      "2"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "Round_5_PDAs",
@@ -21429,6 +23615,58 @@
       "South-West Porcupine Bank SAC"
      ],
      "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "SAC_Ireland_Offshore_2022_11_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITE_NAME",
+      "SITECODE",
+      "N2k_Code",
+      "Centroid_X",
+      "Centroid_Y",
+      "LAEA_Area",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8,
+     "sample": [
+      "Belgica Mound Province SAC",
+      "Hovland Mound Province SAC",
+      "South-West Porcupine Bank SAC"
+     ],
+     "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "SAC_Ireland_Offshore_2022_11_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITE_NAME",
+      "SITECODE",
+      "N2k_Code",
+      "Centroid_X",
+      "Centroid_Y",
+      "LAEA_Area",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8,
+     "sample": [
+      "Belgica Mound Province SAC",
+      "Hovland Mound Province SAC",
+      "South-West Porcupine Bank SAC"
+     ],
+     "name_field": "SITE_NAME"
     }
    ],
    "note": "SAC_Ireland_Offshore_2022_11_WGS84_UTM30N",
@@ -21450,6 +23688,58 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "SPAs_Irish_Marine_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITECODE",
+      "SITE_NAME",
+      "VERSION",
+      "HA",
+      "Source_CRS",
+      "SourcScale",
+      "COUNTY",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "North-West Irish Sea SPA",
+      "Seas off Wexford SPA"
+     ],
+     "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "SPAs_Irish_Marine_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITECODE",
+      "SITE_NAME",
+      "VERSION",
+      "HA",
+      "Source_CRS",
+      "SourcScale",
+      "COUNTY",
+      "URL",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "North-West Irish Sea SPA",
+      "Seas off Wexford SPA"
+     ],
+     "name_field": "SITE_NAME"
+    },
     {
      "id": 0,
      "name": "SPAs_Irish_Marine_WGS84_UTM30N",
@@ -21749,6 +24039,66 @@
       "Shape__Area"
      ],
      "records": 69724
+    },
+    {
+     "id": 1,
+     "name": "Seabed Substrate (EMODnet) ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "COUNTRY",
+      "SEAREGION",
+      "DATA_HOLDER",
+      "INDEX_CODE",
+      "GRAIN_SIZE_CLASS",
+      "MAPPING_METHOD",
+      "RECLASS_METHOD",
+      "SAMPLE_NUMBER",
+      "ORIG_SUBSTRATE_CLASS",
+      "RELATION_ORIG_VS_RECLASS",
+      "FOLK_5_SUBSTRATE_CLASS",
+      "FOLK_7_SUBSTRATE_CLASS",
+      "FOLK_16_SUBSTRATE_CLASS",
+      "CONTACT",
+      "COMMENTS",
+      "REFERENCES_",
+      "Herring_CL",
+      "Sandeel_CL",
+      "Shape__Area"
+     ],
+     "records": 69724
+    },
+    {
+     "id": 1,
+     "name": "Seabed Substrate (EMODnet) ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "COUNTRY",
+      "SEAREGION",
+      "DATA_HOLDER",
+      "INDEX_CODE",
+      "GRAIN_SIZE_CLASS",
+      "MAPPING_METHOD",
+      "RECLASS_METHOD",
+      "SAMPLE_NUMBER",
+      "ORIG_SUBSTRATE_CLASS",
+      "RELATION_ORIG_VS_RECLASS",
+      "FOLK_5_SUBSTRATE_CLASS",
+      "FOLK_7_SUBSTRATE_CLASS",
+      "FOLK_16_SUBSTRATE_CLASS",
+      "CONTACT",
+      "COMMENTS",
+      "REFERENCES_",
+      "Herring_CL",
+      "Sandeel_CL",
+      "Shape__Area"
+     ],
+     "records": 69724
     }
    ],
    "note": "Sandeel Seabed Substrate EMODnet_",
@@ -21854,6 +24204,40 @@
       "Shape__Length"
      ],
      "records": 24
+    },
+    {
+     "id": 1,
+     "name": "Spawning Grounds",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Intensity",
+      "Species",
+      "area",
+      "area1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 24
+    },
+    {
+     "id": 1,
+     "name": "Spawning Grounds",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Intensity",
+      "Species",
+      "area",
+      "area1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 24
     }
    ],
    "note": "Sandeel Spawning Grounds Coull 1998",
@@ -21875,6 +24259,66 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "ASPEN_SandeelSpawningHabitatConfidence2024_GoBe_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Code",
+      "Country",
+      "Data_Holde",
+      "Original_G",
+      "References_",
+      "Original_s",
+      "Folk_16cl_",
+      "Folk_7cl_t",
+      "Folk_5cl_t",
+      "Class_BGS",
+      "Sandeel",
+      "Coull",
+      "ESFJC_Sand",
+      "VMS_MMO",
+      "Folk_SC",
+      "Coull__SC",
+      "ESFJC__SC",
+      "VMS__SC",
+      "Wright2019"
+     ],
+     "records": 23344
+    },
+    {
+     "id": 1,
+     "name": "ASPEN_SandeelSpawningHabitatConfidence2024_GoBe_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Code",
+      "Country",
+      "Data_Holde",
+      "Original_G",
+      "References_",
+      "Original_s",
+      "Folk_16cl_",
+      "Folk_7cl_t",
+      "Folk_5cl_t",
+      "Class_BGS",
+      "Sandeel",
+      "Coull",
+      "ESFJC_Sand",
+      "VMS_MMO",
+      "Folk_SC",
+      "Coull__SC",
+      "ESFJC__SC",
+      "VMS__SC",
+      "Wright2019"
+     ],
+     "records": 23344
+    },
     {
      "id": 1,
      "name": "ASPEN_SandeelSpawningHabitatConfidence2024_GoBe_WGS84_UTM30N",
@@ -22149,6 +24593,48 @@
       "Shape__Length"
      ],
      "records": 82
+    },
+    {
+     "id": 0,
+     "name": "Survey_Corridor_Survey_Blocks_Rev5",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "id",
+      "sector",
+      "descriptio",
+      "ha",
+      "block",
+      "contr",
+      "vessel",
+      "area_km",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 82
+    },
+    {
+     "id": 0,
+     "name": "Survey_Corridor_Survey_Blocks_Rev5",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "id",
+      "sector",
+      "descriptio",
+      "ha",
+      "block",
+      "contr",
+      "vessel",
+      "area_km",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 82
     }
    ],
    "note": "Survey Corridor Survey Blocks Rev5",
@@ -22170,6 +24656,60 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "VIC_MARINE_HABITAT_MAP_2023",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "METHOD",
+      "GEOM_SRID",
+      "ORG",
+      "CREATED",
+      "BIOT_TTL",
+      "BIOTC_CDE",
+      "BIOT_LBL",
+      "BIOT_LVL",
+      "HAB3BIOCDE",
+      "HAB3BIOLBL",
+      "HAB3BIOTTL",
+      "ID",
+      "HAB3BIOID",
+      "BIOTIC_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 383806
+    },
+    {
+     "id": 0,
+     "name": "VIC_MARINE_HABITAT_MAP_2023",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "METHOD",
+      "GEOM_SRID",
+      "ORG",
+      "CREATED",
+      "BIOT_TTL",
+      "BIOTC_CDE",
+      "BIOT_LBL",
+      "BIOT_LVL",
+      "HAB3BIOCDE",
+      "HAB3BIOLBL",
+      "HAB3BIOTTL",
+      "ID",
+      "HAB3BIOID",
+      "BIOTIC_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 383806
+    },
     {
      "id": 0,
      "name": "VIC_MARINE_HABITAT_MAP_2023",
@@ -22404,6 +24944,38 @@
       "Shape__Length"
      ],
      "records": 4
+    },
+    {
+     "id": 0,
+     "name": "GWA_Polygon",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "gridcode",
+      "WindSpeed",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4
+    },
+    {
+     "id": 0,
+     "name": "GWA_Polygon",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "gridcode",
+      "WindSpeed",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4
     }
    ],
    "note": "150GWA",
@@ -22425,6 +24997,38 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "20250311_RLB_EGL34_Rev5_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "INTERPRETA",
+      "Raster",
+      "ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3
+    },
+    {
+     "id": 0,
+     "name": "20250311_RLB_EGL34_Rev5_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "INTERPRETA",
+      "Raster",
+      "ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3
+    },
     {
      "id": 0,
      "name": "20250311_RLB_EGL34_Rev5_UTM30N",
@@ -22604,6 +25208,38 @@
       "Shape__Length"
      ],
      "records": 1
+    },
+    {
+     "id": 0,
+     "name": "20250317_RLB_EGL3_ScottishWaters_Rev5_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "INTERPRETA",
+      "Raster",
+      "ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 0,
+     "name": "20250317_RLB_EGL3_ScottishWaters_Rev5_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "INTERPRETA",
+      "Raster",
+      "ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
     }
    ],
    "note": "20250317_RLB_EGL3_ScottishWaters_Rev5_UTM30N",
@@ -22625,6 +25261,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Array Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Company",
+      "Shape_Leng",
+      "Area_km2",
+      "Shape_Le_1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 0,
+     "name": "Array Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Company",
+      "Shape_Leng",
+      "Area_km2",
+      "Shape_Le_1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
     {
      "id": 0,
      "name": "Array Area",
@@ -22829,6 +25501,44 @@
       "Export Cable"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Export Cable",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "Name",
+      "Shape_Leng",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "Onshore Cable",
+      "Export Cable"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Export Cable",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "Name",
+      "Shape_Leng",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "Onshore Cable",
+      "Export Cable"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "AU_Kent_cable_route_ln_UTM55S_v0",
@@ -22850,6 +25560,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Future_of_Offshore_Wind___Regional_areas_of_potential_opportunity_in_E",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Category",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3
+    },
+    {
+     "id": 0,
+     "name": "Future_of_Offshore_Wind___Regional_areas_of_potential_opportunity_in_E",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Category",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3
+    },
     {
      "id": 0,
      "name": "Future_of_Offshore_Wind___Regional_areas_of_potential_opportunity_in_E",
@@ -23039,6 +25783,40 @@
       "Shape__Length"
      ],
      "records": 2
+    },
+    {
+     "id": 1,
+     "name": "EMODnet Sediment Class",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Herring_SC",
+      "Herring",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    },
+    {
+     "id": 1,
+     "name": "EMODnet Sediment Class",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Herring_SC",
+      "Herring",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
     }
    ],
    "note": "Herring EMODnet Sediment Class",
@@ -23129,6 +25907,34 @@
       "Shape__Length"
      ],
      "records": 2
+    },
+    {
+     "id": 0,
+     "name": "JM7109_EGL3_REV09_Survey_Areas_V1_0_20250131",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Survey",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    },
+    {
+     "id": 0,
+     "name": "JM7109_EGL3_REV09_Survey_Areas_V1_0_20250131",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Survey",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
     }
    ],
    "note": "JM7109_EGL3_REV09_Survey_Areas_V1_0_20250131",
@@ -23150,6 +25956,44 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "LR6_PDA_Zones_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "ID",
+      "Area_km2",
+      "RAoS",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6
+    },
+    {
+     "id": 0,
+     "name": "LR6_PDA_Zones_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "ID",
+      "Area_km2",
+      "RAoS",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6
+    },
     {
      "id": 0,
      "name": "LR6_PDA_Zones_WGS84_UTM30N",
@@ -23371,6 +26215,34 @@
       "Shape__Length"
      ],
      "records": 12
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Leasing_Round_6_Potential_Area_Of_Opportunity_GoBe_WGS84",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 12
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Leasing_Round_6_Potential_Area_Of_Opportunity_GoBe_WGS84",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 12
     }
    ],
    "note": "Offshore_Wind_Leasing_Round_6_Potential_Area_Of_Opportunity_GoBe_WGS84_UTM30N",
@@ -23461,6 +26333,34 @@
       "Shape__Length"
      ],
      "records": 13
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Leasing_Round_6_Priority_Area_MediumTerm_GoBe_WGS84_UTM3",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Leasing_Round_6_Priority_Area_MediumTerm_GoBe_WGS84_UTM3",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13
     }
    ],
    "note": "Offshore_Wind_Leasing_Round_6_Priority_Area_MediumTerm_GoBe_WGS84_UTM30N",
@@ -23482,6 +26382,44 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Leasing_Round_6_Refined_Area_Of_Search_WGS84",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "ID",
+      "Area_km2",
+      "Category",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 5
+    },
+    {
+     "id": 0,
+     "name": "Offshore_Wind_Leasing_Round_6_Refined_Area_Of_Search_WGS84",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "ID",
+      "Area_km2",
+      "Category",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 5
+    },
     {
      "id": 0,
      "name": "Offshore_Wind_Leasing_Round_6_Refined_Area_Of_Search_WGS84",
@@ -23676,6 +26614,38 @@
       "Shape__Length"
      ],
      "records": 6
+    },
+    {
+     "id": 0,
+     "name": "Proposed_OWF_Licence_Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "ProjectNam",
+      "Developer",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6
+    },
+    {
+     "id": 0,
+     "name": "Proposed_OWF_Licence_Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "ProjectNam",
+      "Developer",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6
     }
    ],
    "note": "Proposed OWF Licence Areas",
@@ -23697,6 +26667,36 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "EMODnet Sediment Class",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Sandeel_SC",
+      "Sandeel",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    },
+    {
+     "id": 1,
+     "name": "EMODnet Sediment Class",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Sandeel_SC",
+      "Sandeel",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    },
     {
      "id": 1,
      "name": "EMODnet Sediment Class",
@@ -23876,6 +26876,40 @@
       "Shape__Length"
      ],
      "records": 13
+    },
+    {
+     "id": 0,
+     "name": "Survey_Corridor_Rev5",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "id",
+      "sector",
+      "descriptio",
+      "ha",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13
+    },
+    {
+     "id": 0,
+     "name": "Survey_Corridor_Rev5",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "id",
+      "sector",
+      "descriptio",
+      "ha",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13
     }
    ],
    "note": "Survey Corridor Rev5",
@@ -23966,6 +27000,34 @@
       "Shape__Length"
      ],
      "records": 1
+    },
+    {
+     "id": 0,
+     "name": "Urban_Area_Scotland_2km_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 0,
+     "name": "Urban_Area_Scotland_2km_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
     }
    ],
    "note": "Urban Area Scotland 2km Buffer",
@@ -23987,6 +27049,38 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "P2601_EGL3_CableRoute_ETRS89_UTM30N_Rev9",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "LAYER",
+      "Id",
+      "Cable",
+      "Length",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 0,
+     "name": "P2601_EGL3_CableRoute_ETRS89_UTM30N_Rev9",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "LAYER",
+      "Id",
+      "Cable",
+      "Length",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
     {
      "id": 0,
      "name": "P2601_EGL3_CableRoute_ETRS89_UTM30N_Rev9",

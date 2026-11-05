@@ -1,6 +1,6 @@
 {
  "cc": "PT",
- "run": "2026-11-04",
+ "run": "2026-11-05",
  "parks": 410,
  "open": 187,
  "key_candidates": 51,
@@ -23,6 +23,12 @@
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/0"
  ],
  "no_layer_groups": {
+  "geopark": [
+   "PT-0344"
+  ],
+  "natural area": [
+   "PT-0416"
+  ],
   "forest reserve": [
    "PT-0298",
    "PT-0289",
@@ -81,6 +87,7 @@
   "national forest": [
    "PT-0353",
    "PT-0374",
+   "PT-0341",
    "PT-0330",
    "PT-0332",
    "PT-0333",
@@ -124,5 +131,5 @@
  },
  "layers_found_new": 0,
  "stage1": "paused (time): carries on next chunk",
- "seconds": 1554
+ "seconds": 68
 }

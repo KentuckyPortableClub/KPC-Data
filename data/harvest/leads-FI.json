@@ -1,11 +1,9 @@
 {
  "about": "World harvester leads for Finland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "FI",
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "status": "paused (out of time, will carry on)",
- "steps_done": [
-  "known"
- ],
+ "steps_done": [],
  "bands": {
   "A": 0,
   "B": 2,
@@ -24,15 +22,6 @@
    "step": "known",
    "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
    "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-  },
-  {
-   "step": "known",
-   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-   "found": false
   }
  ],
  "leads": {
@@ -970,64 +959,76 @@
      "name_field": "Nimi"
     },
     {
-     "id": 12,
-     "name": "Arvokkaat moreenimuodostumat",
+     "id": 1,
+     "name": "Luontodirektiivi (SAC, SAC/SPA)",
      "geom": "Polygon",
      "gap": "outline",
      "is": "known-good layer (chat 8)",
      "fields": [
-      "OBJECTID",
+      "OBJECTID_1",
       "Shape",
-      "MuodTunnus",
-      "Luokka",
-      "MuodTyyppi",
-      "ArvoLuokka",
-      "Nimi",
-      "DigOrg",
-      "Linkki",
-      "MuutosPvm",
-      "Shape_STAr",
-      "Shape_STLe",
-      "Shape_Length",
-      "Shape_Area"
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
      ],
-     "records": 607,
+     "records": 1642,
      "sample": [
-      "Vellinginmäki",
-      "Vehkaniemenmäki",
-      "Sillantaussuon kumpumoreenialue"
+      "Nuuksio",
+      "Petkelsuo",
+      "Päivärinteen laidun"
      ],
-     "name_field": "Nimi"
+     "name_field": "nimisuomi"
     },
     {
-     "id": 13,
-     "name": "Arvokkaat tuuli- ja rantakerrostumat",
+     "id": 2,
+     "name": "Lintudirektiivi (SPA, SAC/SPA)",
      "geom": "Polygon",
      "gap": "outline",
      "is": "known-good layer (chat 8)",
      "fields": [
-      "OBJECTID",
+      "OBJECTID_1",
       "Shape",
-      "MuodTunnus",
-      "Nimi",
-      "Luokka",
-      "MuodTyyppi",
-      "ArvoLuokka",
-      "DigOrg",
-      "Linkki",
-      "MuutosPvm",
-      "Shape_STAr",
-      "Shape_STLe",
-      "Shape_Length",
-      "Shape_Area"
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
      ],
-     "records": 417,
+     "records": 458,
      "sample": [
-      "Ahvenjärven dyynit",
-      "Sompanen",
-      "Tuuliharju"
+      "Tammisaaren ja Hangon saariston ja Pohjanpitäjänla",
+      "Läppträsket",
+      "Inkoon saaristo"
      ],
-     "name_field": "Nimi"
+     "name_field": "nimisuomi"
     }
    ],
    "note": "known-good service",

@@ -1,25 +1,25 @@
 # World finder v2: questions for chat 11 (stage 1)
 
-2558 candidates. Answer in world-finder.json (answer YES / NO, checked_by, how).
+1807 candidates. Answer in world-finder.json (answer YES / NO, checked_by, how).
 
 | country | SURE (chat 2 rechecks, chat 11 samples 10%) | LIKELY (chat 11 grades) |
 |---|---|---|
-| GB | 402 | 452 |
 | CO | 340 | 63 |
+| FI | 138 | 43 |
 | CL | 12 | 133 |
 | ES | 36 | 108 |
-| FI | 138 | 0 |
 | IT | 10 | 97 |
 | ZA | 17 | 67 |
 | AU | 77 | 0 |
 | SE | 25 | 50 |
 | RO | 6 | 68 |
 | BE | 12 | 48 |
+| PT | 3 | 54 |
 | SI | 4 | 52 |
-| PT | 3 | 48 |
+| GB | 53 | 0 |
 | PL | 1 | 47 |
 | NO | 35 | 7 |
-| NZ | 15 | 20 |
+| NZ | 12 | 24 |
 | AT | 10 | 20 |
 | CZ | 20 | 1 |
 | NL | 5 | 14 |
