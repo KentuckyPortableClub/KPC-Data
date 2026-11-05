@@ -6,7 +6,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 | key | official | approximate | pin | official change this week |
 |---|---|---|---|---|
-| US | 11,193 | 426 | 1,488 | +225 |
+| US | 11,197 | 427 | 1,483 | +229 |
 | Canada | 4,376 | 39 | 1,486 | +124 |
 | World | 28,104 | 0 | 17,630 | -11,913 |
 
@@ -18,7 +18,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 - **gis-hunter** (638 rows): - NO 339, - NOT SURE 16, - YES 84, LIKELY NO 22, LIKELY NOT SURE 8, LIKELY YES 12, LIKELY bot YES 2, LIKELY open 8, SURE NO 2, SURE NOT SURE 1, SURE YES 8, SURE bot YES 136
 - **hardlook** (0 rows): 
 - **key-pieces** (307 rows): - NO 81, - NOT SURE 33, - YES 193
-- **layers** (26431 rows): LIKELY NO 213, LIKELY NOT SURE 6711, LIKELY YES 2131, LIKELY bot YES 12, LIKELY open 419, SURE NO 8, SURE NOT SURE 526, SURE YES 15607, SURE bot YES 731, SURE open 73
+- **layers** (26431 rows): LIKELY NO 213, LIKELY NOT SURE 6711, LIKELY YES 2131, LIKELY bot YES 14, LIKELY open 417, SURE NO 8, SURE NOT SURE 526, SURE YES 15607, SURE bot YES 731, SURE open 73
 - **lost-finds-nov1** (0 rows): 
 - **map-audit** (2096 rows): audit NO 410, audit YES 1028, audit open 132, audit other 526
 - **nearmiss-nov2** (45 rows): LIKELY open 17, SURE open 28

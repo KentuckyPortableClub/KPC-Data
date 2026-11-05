@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 451 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 452 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -103,6 +103,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-MN.json | PASS |  |
 | ? | ? | data/campinfo/US-NE.json | PASS |  |
 | ? | ? | data/campinfo/US-NH.json | PASS |  |
+| ? | ? | data/campinfo/US-NJ.json | PASS |  |
 | ? | ? | data/campinfo/US-OK.json | PASS |  |
 | ? | ? | data/campinfo/US-OR.json | PASS |  |
 | ? | ? | data/campinfo/US-TX.json | PASS |  |
@@ -468,7 +469,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | gis-hunter.json | 8 | 638 |
 | hardlook.json | 0 | 0 |
 | key-pieces.json | 0 | 307 |
-| layers.json | 492 | 26431 |
+| layers.json | 490 | 26431 |
 | lost-finds-nov1.json | 0 | 0 |
 | map-audit.json | 132 | 2096 |
 | nearmiss-nov2.json | 45 | 45 |
