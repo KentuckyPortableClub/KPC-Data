@@ -258,3 +258,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/IE.json held: F-O1 outlines 175 -> 168 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-05): key data/world-key/NC.json held: F-O1 outlines 24 -> 0 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/PT.json held: F-O1 outlines 335 -> 327 (more than 1% lost)
+- FROM BOT closures super-bot (2026-11-05): grade me: US-KY data/closures/US-KY.json — 31 of 33 of Kentucky's own reader's items found here on the same park (93%); 55 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41956300480)
