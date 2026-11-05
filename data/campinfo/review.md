@@ -8,6 +8,7 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 | US-KY | 100 | 32 | 35 | 26 | 0 | 0 | 0 | 0 | 7 | 16 | 51 | 0 |
 | US-TN | 394 | 2 | 78 | 4 | 0 | 38 | 267 | 0 | 5 | 2 | 49 | 0 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
+| US-VA | 163 | 2 | 74 | 0 | 0 | 0 | 40 | 30 | 17 | 2 | 19 | 0 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
 | US-SC | 63 | 20 | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 |
@@ -439,6 +440,51 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Pets Allowed: Yes" · “Creek Campground (NC) Type: RV NONELECTRIC Enter dates to check availability Site Details Pets Allowed: Yes Water Hookup: No Campfire Allowe”
   - rv_max_ft = 26 · “ckout Time: 12: PM Max Num of People: 6 Min Num of People: 1 Permitted Equipment Tent RV (Max length: 26 ft.) Trailer (Max length: 26 ft.) P”
   - showers = false · “a.m. Failure to check-in with the office staff may forfeit your reservation. There are no showers or electric hook ups in the campground. Ph”
+
+## US-VA: 12 random samples (records with facts; seed = the date)
+
+- **White Rocks Campground; Boley Field Group Campground; BOLEY FIELD GROUP CAMPGROUND** (intake-US-9905, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023)
+  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
+  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
+  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
+- **Camp Roosevelt Recreation Area; Camp Run Campground; Cane Patch Campground; Cave Mountain Lake Recreation Area; Shaws Fork Campground; Collins Cove Group Horse Campground; Comers Rock Recreation Area;** (intake-US-4526, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73633)
+  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73633" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
+  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
+  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
+- **White Rocks Campground** (intake-US-9949, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023)
+  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
+  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
+  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
+- **Beartree Recreation Area; BEARTREE; Grindstone Recreation Area; GRINDSTONE** (intake-US-9923, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73579)
+  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73579" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
+  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
+  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
+- **Staunton River SP (20 min)** (intake-US-1322, agency (outside research camping-us-oct31), status ok, 20 facts) · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield)
+  - booking.how = "online: reservevaparks.com" · “link “Reserve Online””
+  - booking.url = "https://reservevaparks.com/web/" · “link “Reserve Online” -> https://reservevaparks.com/web/”
+  - checkin = "4 p.m" · “heir sheets, pillows and towels. A minimum two-night stay is required for camping cabins. Check-in is 4 p.m. and check-out is 10 a.m. Campin”
+  - checkout = "1 p.m" · “.m., arrive early to avoid lines at check-in and enjoy the park until your site is ready. Check-out is 1 p.m. Vehicles and camping units: Un”
+  - drinking_water = "some" · “cnic table, fire ring with cooking grate, exterior floodlight, food preparation table and water spigot. Smoking, cooking and pets are not al”
+  - features = "fire ring, grill or both" · “e nearby bathhouses' rest rooms and showers. The camping cabins have a picnic table and a fire ring, grill or both. Guests must bring their ”
+  - fees = "$10 fee to cancel a camping reservation and a | $30 fee to  · “ival. There's no charge for transferring a reservation to another date or park. There's a $10 fee to cancel a camping reservation and a $30 ”
+  - hookups.electric = "some" · “itor Center opened in 1995 thanks to a partnership between Virginia State Parks, Virginia Power, Old Dominion Electric Cooperative and the H”
+  - hookups.sewer = true · “ommodate recreational vehicles and campers. Kiptopeke and Hungry Mother campgrounds offer sewer hook-ups. Primitive campgrounds are open yea”
+  - hookups.water = "some" · “0 campsites. Site sizes, configurations and amenities vary. Some parks provide sites with electric and water hookups, which tend to be large”
+- **New River Trail SP primitive camping (~0.2 mi)** (intake-US-1317, agency (outside research camping-us-oct31), status ok, 18 facts) · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/shot-tower)
+  - booking.how = "online: reservevaparks.com" · “link “Reserve Online””
+  - booking.url = "https://reservevaparks.com/web/" · “link “Reserve Online” -> https://reservevaparks.com/web/”
+  - checkin = "4 p.m" · “heir sheets, pillows and towels. A minimum two-night stay is required for camping cabins. Check-in is 4 p.m. and check-out is 10 a.m. Campin”
+  - checkout = "1 p.m" · “.m., arrive early to avoid lines at check-in and enjoy the park until your site is ready. Check-out is 1 p.m. Vehicles and camping units: Un”
+  - drinking_water = "some" · “cnic table, fire ring with cooking grate, exterior floodlight, food preparation table and water spigot. Smoking, cooking and pets are not al”
+  - features = "fire ring, grill or both" · “e nearby bathhouses' rest rooms and showers. The camping cabins have a picnic table and a fire ring, grill or both. Guests must bring their ”
+  - fees = "$10 fee to cancel a camping reservation and a | $30 fee to  · “ival. There's no charge for transferring a reservation to another date or park. There's a $10 fee to cancel a camping reservation and a $30 ”
+  - hookups.electric = "some" · “0 campsites. Site sizes, configurations and amenities vary. Some parks provide sites with electric and water hookups, which tend to be large”
+  - hookups.sewer = true · “ommodate recreational vehicles and campers. Kiptopeke and Hungry Mother campgrounds offer sewer hook-ups. Primitive campgrounds are open yea”
+  - hookups.water = "some" · “0 campsites. Site sizes, configurations and amenities vary. Some parks provide sites with electric and water hookups, which tend to be large”
 
 ## US-GA: 12 random samples (records with facts; seed = the date)
 

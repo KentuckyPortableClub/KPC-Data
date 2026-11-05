@@ -742,6 +742,28 @@
    "status": "partial",
    "updated": "2026-11-04"
   },
+  "US-VA": {
+   "camps": 166,
+   "checked": 163,
+   "counts": {
+    "camps": 163,
+    "needs_browser": 0,
+    "needs_key": 74,
+    "no_page": 40,
+    "not_official": 30,
+    "ok": 2,
+    "other": 17,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 19,
+    "with_elevation": 0,
+    "with_facts": 6,
+    "with_sites": 2
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
   "US-WA": {
    "camps": 280,
    "checked": 280,
@@ -843,6 +865,7 @@
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TX": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-UT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-VA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WI": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
@@ -1153,6 +1176,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-04"
+  },
+  "US-VA": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-05"
   },
   "US-WA": {
    "cell": {
@@ -2138,12 +2170,12 @@
  },
  "last": {
   "areas": [
-   "US-PA"
+   "US-VA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 160,
+   "dropped_queued": 165,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2155,7 +2187,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 223,
+   "requests": 25,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2163,16 +2195,16 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 77,
-   "camps": 161,
+   "browser": 6,
+   "camps": 166,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 14,
-   "needs_key": 45,
-   "no_page": 1,
-   "not_official": 0,
-   "ok": 179,
-   "pages_read": 138,
+   "needs_browser": 6,
+   "needs_key": 76,
+   "no_page": 52,
+   "not_official": 30,
+   "ok": 8,
+   "pages_read": 14,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
