@@ -9,37 +9,48 @@
   "US-KS",
   "US-NE"
  ],
- "since": "2026-10-28",
- "date": "2026-10-29 11:39 UTC",
- "verdict": "PART READY FOR CHAT 8",
+ "since": "2026-11-05",
+ "date": "2026-11-05 19:06 UTC",
+ "verdict": "STOPPED",
  "why": [
-  "US-NE: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-2621+US-4015@same land@40.992,-96.206"
+  "missing check: 2660 of 8786 expected pairs were never looked at (30%; 5101 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2660)",
+  "US-AR: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-0646+US-7270@same land@36.030,-92.871",
+  "water not checked: US-TX: 1 rows (the USGS water map / files had no answer there): never READY with one"
  ],
- "known_answers": "19/19 on 2026-10-29",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 120,
-  "DROPPED": 206,
-  "NEVER LOOKED AT": 9097
+  "FOUND": 230,
+  "DROPPED": 795,
+  "NEVER LOOKED AT": 7761
+ },
+ "never_looked_at": {
+  "counted": 2660,
+  "no_official_outline": 5101,
+  "expected": 8786,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 2660
+  }
  },
  "report": {
   "pass1": {
-   "date": "2026-10-28",
-   "pairs tested": 384,
-   "pairs whose boxes touch": 384
+   "date": "2026-11-05",
+   "pairs tested": 5559,
+   "pairs whose boxes touch": 5559
   },
   "pass2": {
-   "agree with the pass before": 445,
-   "date": "2026-10-28",
-   "pairs tested": 157
+   "agree with the pass before": 1153,
+   "date": "2026-11-05",
+   "pairs tested": 326
   },
   "pass3": {
-   "agree with the pass before": 0,
-   "date": "2026-10-29",
-   "pairs tested": 0
+   "agree with the pass before": 732,
+   "date": "2026-11-05",
+   "pairs tested": 314
   },
   "pass5": {
-   "checked": 78,
-   "date": "2026-10-29",
+   "checked": 154,
+   "date": "2026-11-05",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -53,88 +64,88 @@
   "US-NE": "data/fers/US-NE.json"
  },
  "US-AR": {
-  "rows": 146,
-  "live": 17,
+  "rows": 803,
+  "live": 99,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 95,
-  "merged": 34
+  "not_sure": {
+   "no public owner on the ownership map": 7,
+   "one record covers two parks": 3,
+   "the official outline of Crowley\u2019s Ridge Parkway National Sce": 2,
+   "low-confidence outline for Greers Ferry Lake Tailwater State": 1,
+   "this spot is 154 km from Cherokee Wildlife Management Area's": 1
+  },
+  "dropped": 384,
+  "merged": 306
  },
  "US-LA": {
-  "rows": 42,
-  "live": 8,
+  "rows": 47,
+  "live": 9,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 30,
+  "dropped": 34,
   "merged": 4
  },
  "US-OK": {
-  "rows": 170,
-  "live": 41,
+  "rows": 172,
+  "live": 39,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 3
+   "no public owner on the ownership map": 5,
+   "this spot is 326 km from Copan Wildlife Management Area's PO": 1,
+   "this spot is 324 km from Copan Wildlife Management Area's PO": 1
   },
-  "dropped": 81,
-  "merged": 45
+  "dropped": 82,
+  "merged": 44
  },
  "US-TX": {
-  "rows": 152,
-  "live": 13,
+  "rows": 202,
+  "live": 44,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the official outline of Black Gap Wildlife Management Area c": 2,
-   "the official outline of Matagorda Island Wildlife Management": 1,
-   "the official outline of Lower Rio Grande Valley National Wil": 3,
-   "the official outline of J.D. Murphree Wildlife Management Ar": 1,
-   "the official outline of Nannie M. Stringfellow Wildlife Mana": 1,
-   "the official outline of Sam Houston National Forest Wildlife": 1,
-   "the official outline of Caddo Lake Wildlife Management Area": 1,
-   "the official outline of James E. Daughtrey Wildlife Manageme": 1,
-   "the official outline of Sam Houston National Forest could no": 1,
-   "the official outline of Angelina-Neches/Dam B Wildlife Manag": 1,
-   "the outlines overlap, but the Forest Service ownership map": 1,
-   "the official outline of Alazan Bayou Wildlife Management Are": 2,
-   "the official outline of Bannister Wildlife Management Area c": 1,
-   "the official outline of Alabama Creek Wildlife Management Ar": 1,
-   "the official outline of Moore Plantation Wildlife Management": 1,
-   "the official outline of North Toledo Bend Wildlife Managemen": 1
+   "one record covers two parks": 2,
+   "no public owner on the ownership map": 3,
+   "water not checked": 1
   },
-  "dropped": 64,
-  "merged": 55
+  "dropped": 83,
+  "merged": 69
+ },
+ "water_weak": {
+  "US-TX": 1
  },
  "US-KS": {
-  "rows": 62,
-  "live": 23,
+  "rows": 53,
+  "live": 20,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
+   "one record covers two parks": 4,
    "no public owner on the ownership map": 1
   },
-  "dropped": 9,
-  "merged": 29
+  "dropped": 11,
+  "merged": 17
  },
  "US-NE": {
-  "rows": 51,
-  "live": 16,
+  "rows": 112,
+  "live": 43,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 8,
-  "merged": 27
+  "not_sure": {
+   "one record covers two parks": 9
+  },
+  "dropped": 26,
+  "merged": 34
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-AR",
   "US-LA",
   "US-OK",
   "US-TX",
-  "US-KS"
- ],
- "states_held": [
+  "US-KS",
   "US-NE"
  ]
 }
