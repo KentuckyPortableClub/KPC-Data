@@ -935,6 +935,26 @@
     "why": "the release gate checks only the build id, so this YES would have released all 8 held Canada files, including the ones Quality failed (CA-ON, why-not.json, index.json)",
     "undo": "put chat11_original back into chat11 and delete chat11_original + withdrawn (or revert this PR); it then also needs chat 2's recheck line (Rule G-4) before the gate releases it"
    }
+  },
+  {
+   "what": "us-key",
+   "path": "data/waiting/in/data/us-key/",
+   "build": "US-42016221491",
+   "by": "Brandon / KZ4CP",
+   "date": "2026-11-05",
+   "time": "7:51 AM",
+   "chat11": "KEY YES US-42016221491 (rules 3dc53f70256a), Brandon 7:51 AM CST Nov 5",
+   "chat2": "rechecked: KPC Quality Control spot-check PASS Nov 5 (12857 parks, 0 impossible pins), grade in inbox/quality/2026-11-05-grade-held-keys-us-ca"
+  },
+  {
+   "what": "ca-key",
+   "path": "data/waiting/in/data/ca-key/",
+   "build": "CA-41889018960",
+   "by": "Brandon / KZ4CP",
+   "date": "2026-11-05",
+   "time": "7:51 AM",
+   "chat11": "KEY YES CA-41889018960 (rules 1d309938ff7e), Brandon 7:51 AM CST Nov 5",
+   "chat2": "rechecked: KPC Quality Control spot-check PASS Nov 5 (5901 parks, missed overrides and must-be-pins 2 -> 0), grade in inbox/quality/2026-11-05-grade-held-keys-us-ca"
   }
  ]
 }
