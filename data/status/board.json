@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-05",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 1, waiting for key 65 (a key build is saving: nothing started)",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 66 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42067253262",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42089685856",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1012,9 +1012,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-05",
-   "made": "1 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots)",
+   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42067253262",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42089685856",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1068,9 +1068,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-05",
-   "made": "2026-11-05 16:43 UTC: 1 skipped run(s) started again: kpc-waiting-room.yml (missed Nov 05 14:42 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42067253262",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42089685856",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1158,7 +1158,7 @@
    "last_run": "2026-11-05",
    "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42067253262",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42089685856",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1172,7 +1172,7 @@
   "campground info bot": {
    "areas": "left: 34",
    "last_run": "2026-11-05",
-   "made": "US-GA: partial; {\"camps\": 205, \"needs_browser\": 4, \"needs_key\": 64, \"no_page\": 0, \"not_official\": 8, \"ok\": 61, \"other\": 68, \"resting\": 0, \"robots\": 0, \"with_booking\": 131, \"with_elevation\": 0, \"with_facts\": 121, \"wit",
+   "made": "US-VA: done; {\"camps\": 163, \"needs_browser\": 0, \"needs_key\": 74, \"no_page\": 40, \"not_official\": 30, \"ok\": 2, \"other\": 17, \"resting\": 0, \"robots\": 0, \"with_booking\": 19, \"with_elevation\": 0, \"with_facts\": 6, \"with_",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42057270411",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1196,9 +1196,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-05",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1055 came back in the key release: 12720 parks pass, 387 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-05.md ",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1055 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-05.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41956311969",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42086742456",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1251,7 +1251,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-05",
-   "made": "heartbeat 0 h old, 454 files waiting",
+   "made": "heartbeat 0 h old, 379 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
