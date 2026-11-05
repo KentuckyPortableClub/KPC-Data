@@ -754,7 +754,6 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=brush%20east%20mountain%20Virginia → 1 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424 → opened, nothing matched
-  - step 2: document: Discover History https://www.fs.usda.gov/r08/gwj/recreation/discover-history → skipped: the title names no park / land / acquisition
   - step 2: document: Report Fraud on USDA Contracts https://usdaoig.oversight.gov/resources/contractor-fraud → did not open (robots-unreadable)
   - step 6: news releases https://dwr.virginia.gov/news/ → did not open (HTTP 404)
   - step 6: news releases https://www.dcr.virginia.gov/news → did not open (HTTP 404)
