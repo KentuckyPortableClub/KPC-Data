@@ -489,6 +489,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-0980",
+   "Park name (as the agency writes it)": "Beall Woods",
+   "Size": 635,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D120&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -1200,6 +1209,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-4854",
+   "Park name (as the agency writes it)": "Dupont State Forest",
+   "Size": 12469,
+   "Unit": "acres",
+   "Agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+   "Source page": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-0042",
    "Park name (as the agency writes it)": "Fort Gaines",
    "Size": 32,
@@ -1498,6 +1516,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "maps.dnr.illinois.gov",
+   "Agency/area": "IDNR Properties",
+   "Kind": "GIS layer",
+   "Example URL": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+   "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "services1.arcgis.com",
    "Agency/area": "National_Heritage_Areas_Updated2023",
    "Kind": "GIS layer",
@@ -1668,16 +1696,6 @@
    "Retry?": "NO"
   },
   {
-   "Host": "maps.dnr.illinois.gov",
-   "Agency/area": "IDNR Properties",
-   "Kind": "GIS layer",
-   "Example URL": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "services.aadnc-aandc.gc.ca",
    "Agency/area": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
    "Kind": "GIS layer",
@@ -1693,6 +1711,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
    "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "ncnhde.natureserve.org",
+   "Agency/area": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -2035,6 +2063,16 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.mass.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
    "Retry?": "YES"
   }
  ]
