@@ -532,7 +532,11 @@ def solve(p, F, ov, sheet):
     except ValueError: return done(row, 'NEEDS-PERSON', 'the POTA pin is not a number', 'a person to report the pin to POTA')
     recs, errs = [], []
     for x in m:
-        r = F.record(x[0], p['area'], src=(x[2] if len(x) > 2 and isinstance(x[2], str) else None))
+        src_label = (x[2] if len(x) > 2 and isinstance(x[2], str) else None)
+        try:
+            r = F.record(x[0], p['area'], src=src_label)
+        except TypeError:
+            r = F.record(x[0], p['area'])
         if r.get('error'): errs.append(r['error']); continue
         if NOT_OFFICIAL.search(r['label']): errs.append(f"{x[0]} is from {r['label']} (not an official source)"); continue
         if r['family'] == 'padus' and PAD_NEVER.search(str(r['attrs'].get('Category'))): errs.append(f"{x[0]} is a PAD-US {r['attrs'].get('Category')} record (never an outline)"); continue
