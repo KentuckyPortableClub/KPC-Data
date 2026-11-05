@@ -19,6 +19,7 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 | US-IA | 125 | 0 | 32 | 0 | 0 | 0 | 93 | 0 | 0 | 0 | 0 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
 | US-NY | 584 | 92 | 5 | 232 | 55 | 0 | 1 | 0 | 199 | 38 | 572 | 0 |
+| US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 32 |
 | US-MA | 30 | 20 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 18 | 22 | 0 |
 | US-NH | 79 | 41 | 24 | 0 | 0 | 0 | 12 | 0 | 2 | 3 | 43 | 0 |
@@ -57,6 +58,7 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
 - destateparks.com: 22 campgrounds · host resting
 - www.tn.gov: 17 campgrounds · host resting
+- dep.nj.gov: 17 campgrounds · host resting
 - mdc.mo.gov: 15 campgrounds · host resting (deferred: slow host, next run)
 - azstateparks.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting
@@ -1453,6 +1455,9 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
+
+## US-NJ: 12 random samples (records with facts; seed = the date)
+
 
 ## US-CT: 12 random samples (records with facts; seed = the date)
 
