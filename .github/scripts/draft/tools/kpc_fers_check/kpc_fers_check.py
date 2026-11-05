@@ -6,7 +6,7 @@ keys name, and writes a verdict per row. It NEVER edits the 2-fer files: a perso
 
 Per live row (rows whose status starts 'dropped' / 'merged' are skipped):
   1. every park of the row is re-read from its official layer: by record id where the key has one (US / Canada keys:
-     PAD-US / CPCAD object ids, or '<prefix><id>' ids in data/us-key/layers.json), else by name near the spot (the
+     PAD-US / CPCAD object ids, or '<prefix><id>' ids in data/us-key/layers.json (US) / data/ca-key/layers.json (CA)), else by name near the spot (the
      Kentucky key names a layer + an outline name). ArcGIS query, outSR=4326, f=geojson (Esri JSON fallback).
   2. the overlap is recomputed in the spot's UTM zone: area / same-land / water rows = intersection of the parks' outlines;
      trail rows = the park outline(s) intersected with a 100-ft (30.48 m) buffer of the official line (club rules R5 / R6);
@@ -414,6 +414,9 @@ class Keys:
     def __init__(self, key_dir: pathlib.Path, extra_trails: dict | None = None):
         self.dir = key_dir
         self.us_layers = self._load(key_dir / 'us-key' / 'layers.json') or {}
+        # Nov 6 (Quality 2-fer grade): CA rows looked up prefixes in us-key/layers.json, so 614 of 687 CA rows
+        # were NOT CHECKED. Read the CA key's layers too.
+        self.ca_layers = self._load(key_dir / 'ca-key' / 'layers.json') or {}
         self.ky = (self._load(key_dir / 'ky-answer-key.json') or {}).get('parks') or {}
         self.area_keys: dict[str, dict] = {}
         self.trails = dict(TRAIL_LAYERS)
@@ -461,8 +464,10 @@ class Keys:
         for a in areas:
             self.area_key(a)
 
-    def layer_for_prefix(self, pre: str) -> tuple[str, str] | None:
-        v = self.us_layers.get(pre)
+    def layer_for_prefix(self, pre: str, area: str = '') -> tuple[str, str] | None:
+        """Look up a '<prefix><id>' record. CA areas use ca-key/layers.json; US (and unknown) use us-key/layers.json."""
+        layers = self.ca_layers if str(area).startswith('CA-') else self.us_layers
+        v = layers.get(pre) or (self.us_layers.get(pre) if layers is self.ca_layers else None) or (self.ca_layers.get(pre) if layers is self.us_layers else None)
         if not v:
             return None
         return v[0], (v[1] if len(v) > 1 else '')
@@ -483,7 +488,7 @@ class ParkReader:
             http.allow(u)
         http.allow(PADUS)
         http.allow(CPCAD)
-        for v in keys.us_layers.values():
+        for v in list(keys.us_layers.values()) + list(getattr(keys, 'ca_layers', {}).values()):
             if isinstance(v, list) and v and str(v[0]).startswith('http'):
                 http.allow(v[0])
 
@@ -627,15 +632,24 @@ class ParkReader:
                     nf = 'NAME_E' if url == CPCAD else 'Unit_Nm'
                     groups.setdefault((url, nf, ''), []).append((int(pid), nm))
                 else:
-                    mm = re.match(r'^([a-z]+)(\d+)$', str(pid))
-                    lay = self.keys.layer_for_prefix(mm.group(1)) if mm else None
+                    # Nov 6 (Quality): CA ids are 'LayerPrefix:OBJECTID' (far_check's rpartition); US state ids are '<letters><n>'.
+                    rid = str(pid)
+                    pre, sep, num = rid.rpartition(':')
+                    if not sep:
+                        mm = re.match(r'^([a-z]+)(\d+)$', rid)
+                        pre, num = (mm.group(1), mm.group(2)) if mm else ('', '')
+                    lay = self.keys.layer_for_prefix(pre, area) if pre else None
                     if not lay:
-                        out['issues'].append(f'{ref}: key record {pid} names a layer prefix not in us-key/layers.json')
+                        which = 'ca-key/layers.json' if str(area).startswith('CA-') else 'us-key/layers.json'
+                        out['issues'].append(f'{ref}: key record {pid} names a layer prefix not in {which}')
                         continue
                     if not lay[0].startswith('http') or re.search(r'\.zip($|\?)', lay[0], re.I):
-                        out['not_checked'] = f'{ref}: layer {mm.group(1)} is a downloaded file, not a live map'
+                        out['not_checked'] = f'{ref}: layer {pre} is a downloaded file, not a live map'
                         continue
-                    groups.setdefault((lay[0], lay[1], mm.group(1)), []).append((int(mm.group(2)), nm))
+                    if not str(num).isdigit():
+                        out['issues'].append(f'{ref}: key record {pid} has no numeric id after the layer prefix')
+                        continue
+                    groups.setdefault((lay[0], lay[1], pre), []).append((int(num), nm))
             for (url, nf, pre), items in groups.items():
                 try:
                     oidf = self.oid_field(url, pre)
@@ -778,14 +792,17 @@ class ParkReader:
                 down.append(f'USGS NHD {short(u)}: {e}')
         return parts, reads, down
 
-    def water(self, window_ll) -> tuple[Any, list, list]:
+    def water(self, window_ll, own_river: bool = False) -> tuple[Any, list, list]:
+        """R5a COVES (ruled Oct 31): the lake / reservoir waterbody counts with its coves up to the normal water line; a separate
+        NHD StreamRiver area (FType 460: a tributary above the lake) is left out unless the row's park IS that river."""
         win = sbox(*window_ll)
         gs, reads, down = [], [], []
         for u in WATER_LAYERS:
             try:
-                f, at = self.query(u, window=window_ll, out_fields='OBJECTID')
+                where = '1=1' if (own_river or u != WATER_LAYERS[0]) else 'FTYPE <> 460'
+                f, at = self.query(u, where=where, window=window_ll, out_fields='OBJECTID')
                 gs += [x['geom'] for x in f if x['geom'] is not None]
-                reads.append({'ref': 'water', 'layer': u, 'how': 'USGS NHD water in the window', 'n': len(f), 'read': at})
+                reads.append({'ref': 'water', 'layer': u, 'how': f'USGS NHD water in the window ({where})', 'n': len(f), 'read': at})
             except (SourceDown, Refused) as e:
                 down.append(f'USGS NHD {short(u)}: {e}')
         return (only_area(clip_union(gs, win)) if gs else None), reads, down
@@ -1066,7 +1083,8 @@ def check_spot(spot: dict, area: str, reader: ParkReader, fers_dir: pathlib.Path
             L = Polygon()
         water_row = kind == 'water-only'
         if water_row and reader.use_water and not L.is_empty:
-            W, wreads, wdown = reader.water(window)
+            own = any(re.search(r'\briver\b|\bWSR\b|wild and scenic', str(p.get('name') or ''), re.I) for p in parks)
+            W, wreads, wdown = reader.water(window, own_river=own)
             row['layers'] += wreads
             if W is not None and not wdown:
                 Wm = P.to_m(W)
