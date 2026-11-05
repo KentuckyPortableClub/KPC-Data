@@ -1,26 +1,66 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-04 23:55 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-05 02:01 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
-## CA-AB: live pairs 40 -> 36 (+0 / -4)
-- gained: -
-- lost: CA-0671+CA-3123 (dropped: two park numbers joined to one record by name, pins 9 km apart and not both insid); CA-1182+CA-3063 (dropped: two park numbers joined to one record by name, pins 50 km apart and not both insi); CA-2956+CA-2957 (dropped: two park numbers joined to one record by name, pins 23 km apart and not both insi); CA-2957+CA-2958 (dropped: two park numbers joined to one record by name, pins 8 km apart and not both insid)
-- touching held parks: CA-0647+CA-6112 CA-0674+CA-6112 CA-0685+CA-6112 CA-1177+CA-6112 CA-2947+CA-6112 CA-2971+CA-2972 CA-2971+CA-3159 CA-5522+CA-6112 CA-6112+CA-6587
+## CA-AB: live pairs 40 -> 38 (+4 / -6)
+- gained: CA-0109+US-4558 CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
+- lost: CA-0671+CA-3123 (dropped: two park numbers joined to one record by name, pins 9 km apart and not both insid); CA-1182+CA-3063 (gone); CA-2956+CA-2957 (gone); CA-2957+CA-2958 (gone); CA-5522+CA-6112 (not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be p); CA-6112+CA-6587 (not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be p)
+- touching held parks: CA-0647+CA-6112 CA-0674+CA-6112 CA-0685+CA-6112 CA-1177+CA-6112 CA-2947+CA-6112 CA-2971+CA-2972 CA-2971+CA-3159 CA-3008+CA-6112
+- touching pin-only parks: -
+- water / bank: 2
+- one-record same land: CA-0636+CA-2949 CA-0636+CA-2949 CA-0683+CA-1197 CA-1174+CA-2994 CA-3026+CA-3027 CA-3057+CA-5533
+- near a size threshold: CA-0005+CA-0117 101 m ~ 100 yd (small); CA-0005+CA-0726 53 m ~ 50 yd (very tight); CA-0040+CA-3161 79 m ~ 100 yd (small); CA-0109+CA-0691 49 m ~ 50 yd (very tight); CA-0110+CA-0691 49 m ~ 50 yd (very tight)
+- stale inputs: -
+
+## CA-BC: live pairs 45 -> 55 (+12 / -2)
+- gained: CA-0736+CA-4096 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4592 CA-3191+US-4448 CA-3228+CA-4215 CA-3245+CA-5497 CA-3327+US-0055 CA-3328+CA-5346 CA-3511+CA-3512 CA-3567+US-4448 CA-3766+CA-4289
+- lost: CA-3624+CA-4122 (water only: boat or kayak); CA-4145+CA-4245 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars)
+- touching held parks: CA-0045+CA-3829 CA-0105+CA-4253 CA-0105+CA-4254 CA-0697+CA-4080 CA-0711+CA-4065 CA-0736+CA-4096 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4592 CA-0748+CA-4282 CA-3191+US-4448 CA-3193+CA-3194 CA-3228+CA-4214 CA-3228+CA-4215 CA-3245+CA-5497 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3327+US-0055
+- touching pin-only parks: -
+- water / bank: 19
+- one-record same land: CA-0748+CA-4282 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3348+CA-3349 CA-3410+CA-3411 CA-3439+CA-3440 CA-3465+CA-3466 CA-3495+CA-3496 CA-3504+CA-3505 CA-3511+CA-3512 CA-3522+CA-3523 CA-3524+CA-3525 CA-3684+CA-3685 CA-3781+CA-3782 CA-3789+CA-3790 CA-3838+CA-3839 CA-3840+CA-3841 CA-3868+CA-3869
+- near a size threshold: CA-0032+CA-3393 39 m ~ 50 yd (very tight); CA-0045+CA-3829 51 m ~ 50 yd (very tight); CA-0742+US-4448 87 m ~ 100 yd (small); CA-0742+US-4592 37 m ~ 50 yd (very tight); CA-3245+CA-5497 23 m ~ 25 yd (kept); CA-3303+CA-3615 79 m ~ 100 yd (small); CA-3328+CA-5346 23 m ~ 25 yd (kept); CA-3347+CA-4241 39 m ~ 50 yd (very tight); CA-3567+US-4448 27 m ~ 25 yd (kept); CA-3615+CA-4243 23 m ~ 25 yd (kept); CA-3766+CA-4289 25 m ~ 25 yd (kept); CA-3791+CA-4239 101 m ~ 100 yd (small); CA-4218+CA-4258 109 m ~ 100 yd (small)
+- stale inputs: -
+
+## CA-MB: live pairs 4 -> 5 (+1 / -0)
+- gained: CA-1087+CA-1536
+- lost: -
+- touching held parks: -
 - touching pin-only parks: -
 - water / bank: 1
-- one-record same land: CA-0636+CA-2949 CA-0683+CA-1197 CA-1174+CA-2994 CA-3026+CA-3027 CA-3057+CA-5533
-- near a size threshold: CA-0005+CA-0117 101 m ~ 100 yd (small); CA-0040+CA-3161 79 m ~ 100 yd (small); CA-0040+CA-3846 37 m ~ 50 yd (very tight); CA-0109+CA-0691 49 m ~ 50 yd (very tight); CA-0110+CA-0691 49 m ~ 50 yd (very tight); CA-0664+CA-0719 53 m ~ 50 yd (very tight)
-- stale inputs: the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- one-record same land: CA-0113+CA-2540
+- near a size threshold: -
+- stale inputs: -
 
-## CA-BC: live pairs 45 -> 47 (+2 / -0)
-- gained: CA-3245+CA-5497 CA-3328+CA-5346
-- lost: -
-- touching held parks: CA-0045+CA-3829 CA-0105+CA-4253 CA-0105+CA-4254 CA-0697+CA-4080 CA-0711+CA-4065 CA-0748+CA-4282 CA-3193+CA-3194 CA-3228+CA-4214 CA-3245+CA-5497 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3328+CA-5346 CA-3347+CA-4241 CA-3348+CA-3349 CA-3410+CA-3411 CA-3439+CA-3440 CA-3465+CA-3466 CA-3495+CA-3496
+## CA-NB: live pairs 14 -> 2 (+0 / -12)
+- gained: -
+- lost: CA-0024+CA-0025 (not sure: one record covers two parks (the record 'Fundy National Park Of Canada' does not); CA-0024+CA-4446 (gone); CA-0024+CA-4535 (gone); CA-0025+CA-4446 (gone); CA-0025+CA-4535 (gone); CA-0798+CA-4404 (gone); CA-1243+CA-4424 (gone); CA-4368+CA-6234 (gone); CA-4381+CA-6510 (gone); CA-4424+CA-4432 (gone); CA-4424+CA-4467 (gone); CA-4424+CA-4497 (gone)
+- touching held parks: -
 - touching pin-only parks: -
-- water / bank: 14
-- one-record same land: CA-0748+CA-4282 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3348+CA-3349 CA-3410+CA-3411 CA-3439+CA-3440 CA-3465+CA-3466 CA-3495+CA-3496 CA-3504+CA-3505 CA-3522+CA-3523 CA-3524+CA-3525 CA-3684+CA-3685 CA-3781+CA-3782 CA-3789+CA-3790 CA-3838+CA-3839 CA-3840+CA-3841 CA-3868+CA-3869 CA-3899+CA-3900
-- near a size threshold: CA-0032+CA-3393 39 m ~ 50 yd (very tight); CA-0045+CA-3829 51 m ~ 50 yd (very tight); CA-3245+CA-5497 23 m ~ 25 yd (kept); CA-3303+CA-3615 79 m ~ 100 yd (small); CA-3328+CA-5346 23 m ~ 25 yd (kept); CA-3347+CA-4241 39 m ~ 50 yd (very tight); CA-3615+CA-4243 23 m ~ 25 yd (kept); CA-3791+CA-4239 101 m ~ 100 yd (small); CA-4145+CA-4245 45 m ~ 50 yd (very tight); CA-4218+CA-4258 105 m ~ 100 yd (small)
-- stale inputs: the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- water / bank: 0
+- one-record same land: CA-0024+CA-0025 CA-1250+CA-6497 CA-4471+CA-6103
+- near a size threshold: -
+- stale inputs: -
+
+## CA-NL: live pairs 1 -> 1 (+0 / -0)
+- gained: -
+- lost: -
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 0
+- one-record same land: -
+- near a size threshold: CA-0097+CA-4546 79 m ~ 100 yd (small)
+- stale inputs: -
+
+## CA-NS: live pairs 11 -> 6 (+0 / -5)
+- gained: -
+- lost: CA-0013+CA-1818 (gone); CA-0952+CA-6437 (not sure: one record covers two parks ('Tidnish Dock Site Historic Site' is a historic, th); CA-1822+CA-1824 (gone); CA-1843+CA-6136 (gone); CA-4837+CA-4849 (gone)
+- touching held parks: CA-0899+CA-1741 CA-0935+CA-1822 CA-0935+CA-1824
+- touching pin-only parks: -
+- water / bank: 0
+- one-record same land: CA-0016+CA-1718 CA-0470+CA-1809 CA-0899+CA-1741 CA-0935+CA-1822 CA-0935+CA-1824 CA-0952+CA-6437 CA-1900+CA-1901
+- near a size threshold: -
+- stale inputs: -
 
 ## CA-NT: live pairs 1 -> 1 (+0 / -0)
 - gained: -
@@ -30,27 +70,67 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: -
-- stale inputs: the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- stale inputs: -
 
-## CA-ON: live pairs 13 -> 106 (+93 / -0)
-- gained: CA-0006+CA-6003 CA-0010+CA-0168 CA-0010+CA-0241 CA-0010+CA-0273 CA-0010+CA-5628 CA-0021+CA-5628 CA-0050+CA-0222 CA-0050+CA-0346 CA-0050+CA-0353 CA-0050+CA-0360 CA-0050+CA-0379 CA-0050+CA-0386 CA-0050+CA-0395 CA-0052+CA-6003 CA-0053+CA-0279 CA-0067+CA-6003 CA-0078+CA-0354 CA-0078+CA-0435 CA-0099+CA-6003 CA-0138+CA-1301 CA-0148+CA-5628 CA-0164+CA-5628 CA-0168+CA-5628 CA-0182+CA-6003 CA-0189+CA-6003 CA-0190+CA-5628 CA-0196+CA-5628 CA-0214+CA-5628 CA-0229+CA-5628 CA-0231+CA-5628
-- lost: -
-- touching held parks: -
-- touching pin-only parks: -
-- water / bank: 10
-- one-record same land: CA-0052+CA-0053 CA-0052+CA-0279 CA-0057+CA-0307 CA-0174+CA-6371 CA-1303+CA-1304 CA-1320+CA-1321 CA-1361+CA-1362 CA-1507+CA-1508 CA-5358+CA-5566 CA-5633+CA-5942 CA-5991+CA-5992
-- near a size threshold: CA-0050+CA-0222 25 m ~ 25 yd (kept); CA-0050+CA-0346 45 m ~ 50 yd (very tight); CA-0050+CA-0360 27 m ~ 25 yd (kept); CA-0050+CA-0379 53 m ~ 50 yd (very tight); CA-0050+CA-0386 25 m ~ 25 yd (kept); CA-0050+CA-1479 45 m ~ 50 yd (very tight); CA-0053+CA-0279 53 m ~ 50 yd (very tight); CA-4882+CA-5957 45 m ~ 50 yd (very tight)
-- stale inputs: the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
-
-## CA-QC: live pairs 11 -> 11 (+0 / -0)
+## CA-NU: live pairs 4 -> 4 (+0 / -0)
 - gained: -
 - lost: -
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 1
+- water / bank: 0
+- one-record same land: -
+- near a size threshold: CA-0070+CA-0127 39 m ~ 50 yd (very tight)
+- stale inputs: -
+
+## CA-ON: live pairs 13 -> 8 (+0 / -5)
+- gained: -
+- lost: CA-0052+CA-0053 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0052+CA-0279 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-5143+CA-6003 (gone); CA-5565+CA-5628 (gone); CA-5633+CA-5942 (not sure: one record covers two parks (the record 'Bowmanville/Westside Conservation Area')
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 0
+- one-record same land: CA-0052+CA-0053 CA-0052+CA-0279 CA-0057+CA-0307 CA-0174+CA-6371 CA-1303+CA-1304 CA-1320+CA-1321 CA-1361+CA-1362 CA-1475+CA-1699 CA-1475+CA-1699 CA-1507+CA-1508 CA-5358+CA-5566 CA-5633+CA-5942 CA-5991+CA-5992
+- near a size threshold: -
+- stale inputs: -
+
+## CA-PE: live pairs 0 -> 0 (+0 / -0)
+- gained: -
+- lost: -
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 0
+- one-record same land: -
+- near a size threshold: -
+- stale inputs: -
+
+## CA-QC: live pairs 11 -> 1 (+0 / -10)
+- gained: -
+- lost: CA-0004+CA-2068 (gone); CA-0033+CA-1961 (gone); CA-0037+CA-0086 (gone); CA-0056+CA-1939 (gone); CA-0056+CA-2280 (gone); CA-0059+CA-2020 (gone); CA-0086+CA-0495 (gone); CA-1032+CA-2040 (gone); CA-1940+CA-2231 (gone); CA-2020+CA-2151 (gone)
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 0
 - one-record same land: CA-0059+CA-2151
-- near a size threshold: CA-0069+CA-1996 108 m ~ 100 yd (small); CA-0086+CA-0495 27 m ~ 25 yd (kept); CA-0086+CA-2361 20 m ~ 25 yd (kept); CA-0495+CA-2361 20 m ~ 25 yd (kept); CA-0495+CA-2362 20 m ~ 25 yd (kept); CA-0497+CA-1023 20 m ~ 25 yd (kept); CA-0497+CA-2354 20 m ~ 25 yd (kept); CA-0499+CA-1026 20 m ~ 25 yd (kept); CA-0500+CA-2315 20 m ~ 25 yd (kept); CA-0510+CA-2361 20 m ~ 25 yd (kept); CA-1022+CA-5051 20 m ~ 25 yd (kept); CA-1027+CA-1969 92 m ~ 100 yd (small); CA-1918+CA-2342 20 m ~ 25 yd (kept); CA-1959+CA-1996 20 m ~ 25 yd (kept); CA-2018+CA-2325 100 m ~ 100 yd (small); CA-2023+CA-2308 100 m ~ 100 yd (small); CA-2024+CA-4967 20 m ~ 25 yd (kept); CA-2073+CA-2365 100 m ~ 100 yd (small); CA-2095+CA-2310 108 m ~ 100 yd (small); CA-2211+CA-2290 20 m ~ 25 yd (kept)
-- stale inputs: the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- near a size threshold: -
+- stale inputs: -
+
+## CA-SK: live pairs 33 -> 37 (+7 / -3)
+- gained: CA-0075+CA-6130 CA-0075+CA-6140 CA-0075+CA-6142 CA-0075+CA-6149 CA-0075+CA-6150 CA-0075+CA-6152 CA-6152+CA-6153
+- lost: CA-0591+CA-6057 (not sure: one record covers two parks ('Cumberland House National Historic Site' is a hist); CA-0600+CA-6064 (not sure: one record covers two parks ('Fort Pitt National Historic Site' is a historic, t); CA-0624+CA-6072 (not sure: one record covers two parks ('Steele Narrows National Historic Site' is a histor)
+- touching held parks: CA-0075+CA-6130 CA-0075+CA-6140 CA-0075+CA-6142 CA-0075+CA-6149 CA-0075+CA-6150 CA-0075+CA-6152 CA-6152+CA-6153
+- touching pin-only parks: -
+- water / bank: 0
+- one-record same land: CA-0051+CA-2711 CA-0082+CA-1146 CA-0082+CA-2819 CA-0591+CA-6057 CA-0600+CA-6064 CA-0621+CA-2820 CA-0624+CA-6072 CA-0630+CA-2916 CA-1093+CA-2549 CA-1127+CA-2747 CA-1149+CA-2844 CA-2644+CA-2645 CA-2879+CA-2880
+- near a size threshold: -
+- stale inputs: -
+
+## CA-YT: live pairs 4 -> 6 (+2 / -0)
+- gained: CA-0044+CA-0742 CA-0044+CA-0842
+- lost: -
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 1
+- one-record same land: CA-0848+CA-4625 CA-4635+CA-4636
+- near a size threshold: CA-0044+CA-0742 105 m ~ 100 yd (small); CA-0841+CA-3622 85 m ~ 100 yd (small)
+- stale inputs: -
 
 ## US-AK: live pairs 31 -> 41 (+14 / -4)
 - gained: CA-0044+US-0069 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4592 CA-3567+US-4448 US-0003+US-0878 US-0026+US-0889 US-0048+US-0880 US-0048+US-0893 US-0643+US-0889 US-0878+US-0902 US-0879+US-7886 US-4448+US-4537+US-4538 US-4537+US-4538

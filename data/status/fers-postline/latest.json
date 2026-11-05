@@ -1,9 +1,14 @@
 {
- "checked": "2026-11-04 23:55 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41889462177",
+ "checked": "2026-11-05 02:01 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41941033955",
  "areas": {
   "CA-AB": {
-   "gained": [],
+   "gained": [
+    "CA-0109+US-4558",
+    "CA-0110+US-4558",
+    "CA-2956+CA-2958",
+    "CA-3008+CA-6112"
+   ],
    "lost": [
     {
      "pair": "CA-0671+CA-3123",
@@ -11,19 +16,27 @@
     },
     {
      "pair": "CA-1182+CA-3063",
-     "now": "dropped: two park numbers joined to one record by name, pins 50 km apart and not both insi"
+     "now": "gone"
     },
     {
      "pair": "CA-2956+CA-2957",
-     "now": "dropped: two park numbers joined to one record by name, pins 23 km apart and not both insi"
+     "now": "gone"
     },
     {
      "pair": "CA-2957+CA-2958",
-     "now": "dropped: two park numbers joined to one record by name, pins 8 km apart and not both insid"
+     "now": "gone"
+    },
+    {
+     "pair": "CA-5522+CA-6112",
+     "now": "not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be p"
+    },
+    {
+     "pair": "CA-6112+CA-6587",
+     "now": "not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be p"
     }
    ],
    "live_before": 40,
-   "live_now": 36,
+   "live_now": 38,
    "touch_held": [
     "CA-0647+CA-6112",
     "CA-0674+CA-6112",
@@ -32,8 +45,7 @@
     "CA-2947+CA-6112",
     "CA-2971+CA-2972",
     "CA-2971+CA-3159",
-    "CA-5522+CA-6112",
-    "CA-6112+CA-6587"
+    "CA-3008+CA-6112"
    ],
    "touch_pin_only": [],
    "water_bank": [
@@ -41,9 +53,18 @@
      "pair": "CA-0115+CA-2988",
      "kind": "area",
      "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-0115+CA-3118",
+     "kind": "area",
+     "status": "water only: boat or kayak"
     }
    ],
    "same_land_one_record": [
+    {
+     "pair": "CA-0636+CA-2949",
+     "status": "not sure: one record covers two parks ('Bow Valley Provincial Recreation Area' is a recrea"
+    },
     {
      "pair": "CA-0636+CA-2949",
      "status": "candidate"
@@ -73,16 +94,16 @@
      "status": "candidate"
     },
     {
+     "pair": "CA-0005+CA-0726",
+     "wide_m": 53,
+     "near": "50 yd (very tight)",
+     "status": "candidate"
+    },
+    {
      "pair": "CA-0040+CA-3161",
      "wide_m": 79,
      "near": "100 yd (small)",
      "status": "candidate"
-    },
-    {
-     "pair": "CA-0040+CA-3846",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
     },
     {
      "pair": "CA-0109+CA-0691",
@@ -95,41 +116,64 @@
      "wide_m": 49,
      "near": "50 yd (very tight)",
      "status": "candidate"
-    },
-    {
-     "pair": "CA-0664+CA-0719",
-     "wide_m": 53,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
     }
    ],
-   "stale_inputs": [
-    "the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02)",
-    "no pre-line report for this area"
-   ]
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
   },
   "CA-BC": {
    "gained": [
+    "CA-0736+CA-4096",
+    "CA-0742+US-0029",
+    "CA-0742+US-12607",
+    "CA-0742+US-4592",
+    "CA-3191+US-4448",
+    "CA-3228+CA-4215",
     "CA-3245+CA-5497",
-    "CA-3328+CA-5346"
+    "CA-3327+US-0055",
+    "CA-3328+CA-5346",
+    "CA-3511+CA-3512",
+    "CA-3567+US-4448",
+    "CA-3766+CA-4289"
    ],
-   "lost": [],
+   "lost": [
+    {
+     "pair": "CA-3624+CA-4122",
+     "now": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-4145+CA-4245",
+     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
+    }
+   ],
    "live_before": 45,
-   "live_now": 47,
+   "live_now": 55,
    "touch_held": [
     "CA-0045+CA-3829",
     "CA-0105+CA-4253",
     "CA-0105+CA-4254",
     "CA-0697+CA-4080",
     "CA-0711+CA-4065",
+    "CA-0736+CA-4096",
+    "CA-0742+US-0029",
+    "CA-0742+US-12607",
+    "CA-0742+US-4592",
     "CA-0748+CA-4282",
+    "CA-3191+US-4448",
     "CA-3193+CA-3194",
     "CA-3228+CA-4214",
+    "CA-3228+CA-4215",
     "CA-3245+CA-5497",
     "CA-3250+CA-3251",
     "CA-3261+CA-3262",
     "CA-3263+CA-3264",
     "CA-3320+CA-3321",
+    "CA-3327+US-0055",
     "CA-3328+CA-5346",
     "CA-3347+CA-4241",
     "CA-3348+CA-3349",
@@ -138,11 +182,13 @@
     "CA-3465+CA-3466",
     "CA-3495+CA-3496",
     "CA-3504+CA-3505",
+    "CA-3511+CA-3512",
     "CA-3522+CA-3523",
     "CA-3524+CA-3525",
-    "CA-3624+CA-4122",
+    "CA-3567+US-4448",
     "CA-3684+CA-3685",
     "CA-3724+CA-4065",
+    "CA-3766+CA-4289",
     "CA-3781+CA-3782",
     "CA-3789+CA-3790",
     "CA-3791+CA-4239",
@@ -156,7 +202,6 @@
     "CA-3988+CA-3989",
     "CA-4100+CA-4101",
     "CA-4142+CA-4143",
-    "CA-4145+CA-4245",
     "CA-4152+CA-4153",
     "CA-4157+CA-4158",
     "CA-4253+CA-4254"
@@ -165,6 +210,16 @@
    "water_bank": [
     {
      "pair": "CA-0001+CA-3539",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0737+CA-3551",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0742+US-4448",
      "kind": "area",
      "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
     },
@@ -204,6 +259,11 @@
      "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
     },
     {
+     "pair": "CA-3624+CA-4122",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
      "pair": "CA-3672+CA-3674",
      "kind": "area",
      "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
@@ -230,6 +290,16 @@
     },
     {
      "pair": "CA-4218+CA-4258",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-5498+CA-5501",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-5501+CA-5503",
      "kind": "area",
      "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
     }
@@ -277,6 +347,10 @@
     },
     {
      "pair": "CA-3504+CA-3505",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-3511+CA-3512",
      "status": "candidate"
     },
     {
@@ -362,6 +436,18 @@
      "status": "candidate"
     },
     {
+     "pair": "CA-0742+US-4448",
+     "wide_m": 87,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-0742+US-4592",
+     "wide_m": 37,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
      "pair": "CA-3245+CA-5497",
      "wide_m": 23,
      "near": "25 yd (kept)",
@@ -386,8 +472,20 @@
      "status": "very tight: could be map error: check bo"
     },
     {
+     "pair": "CA-3567+US-4448",
+     "wide_m": 27,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
      "pair": "CA-3615+CA-4243",
      "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3766+CA-4289",
+     "wide_m": 25,
      "near": "25 yd (kept)",
      "status": "very tight: could be map error: check bo"
     },
@@ -398,22 +496,227 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-4145+CA-4245",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
      "pair": "CA-4218+CA-4258",
-     "wide_m": 105,
+     "wide_m": 109,
      "near": "100 yd (small)",
      "status": "not sure: water not checked (the USGS wa"
     }
    ],
-   "stale_inputs": [
-    "the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02)",
-    "no pre-line report for this area"
-   ]
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-MB": {
+   "gained": [
+    "CA-1087+CA-1536"
+   ],
+   "lost": [],
+   "live_before": 4,
+   "live_now": 5,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [
+    {
+     "pair": "CA-0541+CA-2460",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
+   "same_land_one_record": [
+    {
+     "pair": "CA-0113+CA-2540",
+     "status": "candidate"
+    }
+   ],
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-NB": {
+   "gained": [],
+   "lost": [
+    {
+     "pair": "CA-0024+CA-0025",
+     "now": "not sure: one record covers two parks (the record 'Fundy National Park Of Canada' does not"
+    },
+    {
+     "pair": "CA-0024+CA-4446",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0024+CA-4535",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0025+CA-4446",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0025+CA-4535",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0798+CA-4404",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-1243+CA-4424",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-4368+CA-6234",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-4381+CA-6510",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-4424+CA-4432",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-4424+CA-4467",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-4424+CA-4497",
+     "now": "gone"
+    }
+   ],
+   "live_before": 14,
+   "live_now": 2,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [
+    {
+     "pair": "CA-0024+CA-0025",
+     "status": "not sure: one record covers two parks (the record 'Fundy National Park Of Canada' does not"
+    },
+    {
+     "pair": "CA-1250+CA-6497",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-4471+CA-6103",
+     "status": "candidate"
+    }
+   ],
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadaeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-NL": {
+   "gained": [],
+   "lost": [],
+   "live_before": 1,
+   "live_now": 1,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [],
+   "near_threshold": [
+    {
+     "pair": "CA-0097+CA-4546",
+     "wide_m": 79,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    }
+   ],
+   "preline": {
+    "tag": "canadaeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-NS": {
+   "gained": [],
+   "lost": [
+    {
+     "pair": "CA-0013+CA-1818",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0952+CA-6437",
+     "now": "not sure: one record covers two parks ('Tidnish Dock Site Historic Site' is a historic, th"
+    },
+    {
+     "pair": "CA-1822+CA-1824",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-1843+CA-6136",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-4837+CA-4849",
+     "now": "gone"
+    }
+   ],
+   "live_before": 11,
+   "live_now": 6,
+   "touch_held": [
+    "CA-0899+CA-1741",
+    "CA-0935+CA-1822",
+    "CA-0935+CA-1824"
+   ],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [
+    {
+     "pair": "CA-0016+CA-1718",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0470+CA-1809",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0899+CA-1741",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0935+CA-1822",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0935+CA-1824",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0952+CA-6437",
+     "status": "not sure: one record covers two parks ('Tidnish Dock Site Historic Site' is a historic, th"
+    },
+    {
+     "pair": "CA-1900+CA-1901",
+     "status": "candidate"
+    }
+   ],
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadaeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
   },
   "CA-NT": {
    "gained": [],
@@ -425,172 +728,76 @@
    "water_bank": [],
    "same_land_one_record": [],
    "near_threshold": [],
-   "stale_inputs": [
-    "the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02)",
-    "no pre-line report for this area"
-   ]
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
   },
-  "CA-ON": {
-   "gained": [
-    "CA-0006+CA-6003",
-    "CA-0010+CA-0168",
-    "CA-0010+CA-0241",
-    "CA-0010+CA-0273",
-    "CA-0010+CA-5628",
-    "CA-0021+CA-5628",
-    "CA-0050+CA-0222",
-    "CA-0050+CA-0346",
-    "CA-0050+CA-0353",
-    "CA-0050+CA-0360",
-    "CA-0050+CA-0379",
-    "CA-0050+CA-0386",
-    "CA-0050+CA-0395",
-    "CA-0052+CA-6003",
-    "CA-0053+CA-0279",
-    "CA-0067+CA-6003",
-    "CA-0078+CA-0354",
-    "CA-0078+CA-0435",
-    "CA-0099+CA-6003",
-    "CA-0138+CA-1301",
-    "CA-0148+CA-5628",
-    "CA-0164+CA-5628",
-    "CA-0168+CA-5628",
-    "CA-0182+CA-6003",
-    "CA-0189+CA-6003",
-    "CA-0190+CA-5628",
-    "CA-0196+CA-5628",
-    "CA-0214+CA-5628",
-    "CA-0229+CA-5628",
-    "CA-0231+CA-5628",
-    "CA-0238+CA-6003",
-    "CA-0240+CA-6003",
-    "CA-0264+CA-6003",
-    "CA-0271+CA-5628",
-    "CA-0273+CA-5628",
-    "CA-0279+CA-6003",
-    "CA-0305+CA-0306",
-    "CA-0308+CA-5628",
-    "CA-0318+CA-5628",
-    "CA-0322+CA-5628",
-    "CA-0336+CA-5628",
-    "CA-0342+CA-6003",
-    "CA-0347+CA-6003",
-    "CA-0351+CA-6003",
-    "CA-0352+CA-5628",
-    "CA-0364+CA-4882",
-    "CA-0367+CA-6003",
-    "CA-0368+CA-1599",
-    "CA-0381+CA-6003",
-    "CA-0387+CA-5628",
-    "CA-0396+CA-5628",
-    "CA-0417+CA-1643",
-    "CA-0417+CA-6003",
-    "CA-0419+CA-6003",
-    "CA-1307+CA-5628",
-    "CA-1323+CA-5628",
-    "CA-1375+CA-6003",
-    "CA-1397+CA-5628",
-    "CA-1447+CA-5628",
-    "CA-1490+CA-5628",
-    "CA-1494+CA-6003",
-    "CA-1576+CA-6003",
-    "CA-1598+CA-5628",
-    "CA-1639+CA-5628",
-    "CA-1643+CA-6003",
-    "CA-1673+CA-5143",
-    "CA-1673+CA-6003",
-    "CA-4863+CA-5628",
-    "CA-4863+CA-6003",
-    "CA-5093+CA-5628",
-    "CA-5100+CA-5628",
-    "CA-5112+CA-5628",
-    "CA-5141+CA-6003",
-    "CA-5142+CA-6003",
-    "CA-5312+CA-5628",
-    "CA-5353+CA-5628",
-    "CA-5358+CA-5565",
-    "CA-5358+CA-5628",
-    "CA-5359+CA-5628",
-    "CA-5370+CA-6003",
-    "CA-5372+CA-5628",
-    "CA-5373+CA-5628",
-    "CA-5559+CA-6003",
-    "CA-5563+CA-5628",
-    "CA-5565+CA-5566",
-    "CA-5566+CA-5628",
-    "CA-5572+CA-5628",
-    "CA-5573+CA-5628",
-    "CA-5574+CA-5628",
-    "CA-5593+CA-6003",
-    "CA-5633+CA-6003",
-    "CA-5670+CA-5671",
-    "CA-5942+CA-6003"
-   ],
+  "CA-NU": {
+   "gained": [],
    "lost": [],
-   "live_before": 13,
-   "live_now": 106,
+   "live_before": 4,
+   "live_now": 4,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [
+   "water_bank": [],
+   "same_land_one_record": [],
+   "near_threshold": [
     {
-     "pair": "CA-0050+CA-0370",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-0050+CA-0394",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-0050+CA-1282",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-0050+CA-1479",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-0365+CA-4882",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "CA-0402+CA-4867",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-4882+CA-5642",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "CA-4882+CA-5956",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "CA-4882+CA-5957",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-5671+CA-5895",
-     "kind": "area",
-     "status": "water only: boat or kayak"
+     "pair": "CA-0070+CA-0127",
+     "wide_m": 39,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
     }
    ],
-   "same_land_one_record": [
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-ON": {
+   "gained": [],
+   "lost": [
     {
      "pair": "CA-0052+CA-0053",
-     "status": "candidate"
+     "now": "not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the "
     },
     {
      "pair": "CA-0052+CA-0279",
-     "status": "candidate"
+     "now": "not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the "
+    },
+    {
+     "pair": "CA-5143+CA-6003",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-5565+CA-5628",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-5633+CA-5942",
+     "now": "not sure: one record covers two parks (the record 'Bowmanville/Westside Conservation Area'"
+    }
+   ],
+   "live_before": 13,
+   "live_now": 8,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [
+    {
+     "pair": "CA-0052+CA-0053",
+     "status": "not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the "
+    },
+    {
+     "pair": "CA-0052+CA-0279",
+     "status": "not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the "
     },
     {
      "pair": "CA-0057+CA-0307",
@@ -613,6 +820,14 @@
      "status": "candidate"
     },
     {
+     "pair": "CA-1475+CA-1699",
+     "status": "not sure: one record covers two parks (the record 'Weeskayjahk Ohtahzhoganeeng' does not n"
+    },
+    {
+     "pair": "CA-1475+CA-1699",
+     "status": "not sure: one record covers two parks (the record 'WEESKAYJAHK OHTAHZHOGANEENG' does not n"
+    },
+    {
      "pair": "CA-1507+CA-1508",
      "status": "candidate"
     },
@@ -622,328 +837,252 @@
     },
     {
      "pair": "CA-5633+CA-5942",
-     "status": "candidate"
+     "status": "not sure: one record covers two parks (the record 'Bowmanville/Westside Conservation Area'"
     },
     {
      "pair": "CA-5991+CA-5992",
      "status": "candidate"
     }
    ],
-   "near_threshold": [
-    {
-     "pair": "CA-0050+CA-0222",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "CA-0050+CA-0346",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "CA-0050+CA-0360",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "CA-0050+CA-0379",
-     "wide_m": 53,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-0050+CA-0386",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "CA-0050+CA-1479",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "not sure: water not checked (the USGS wa"
-    },
-    {
-     "pair": "CA-0053+CA-0279",
-     "wide_m": 53,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-4882+CA-5957",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "not sure: water not checked (the USGS wa"
-    }
-   ],
-   "stale_inputs": [
-    "the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02)",
-    "no pre-line report for this area"
-   ]
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadaeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-PE": {
+   "gained": [],
+   "lost": [],
+   "live_before": 0,
+   "live_now": 0,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [],
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadaeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
   },
   "CA-QC": {
    "gained": [],
-   "lost": [],
-   "live_before": 11,
-   "live_now": 11,
-   "touch_held": [],
-   "touch_pin_only": [],
-   "water_bank": [
+   "lost": [
+    {
+     "pair": "CA-0004+CA-2068",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0033+CA-1961",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0037+CA-0086",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0056+CA-1939",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0056+CA-2280",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-0059+CA-2020",
+     "now": "gone"
+    },
     {
      "pair": "CA-0086+CA-0495",
-     "kind": "area",
-     "status": "water only: boat or kayak"
+     "now": "gone"
+    },
+    {
+     "pair": "CA-1032+CA-2040",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-1940+CA-2231",
+     "now": "gone"
+    },
+    {
+     "pair": "CA-2020+CA-2151",
+     "now": "gone"
     }
    ],
+   "live_before": 11,
+   "live_now": 1,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
    "same_land_one_record": [
     {
      "pair": "CA-0059+CA-2151",
      "status": "candidate"
     }
    ],
-   "near_threshold": [
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadaeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-SK": {
+   "gained": [
+    "CA-0075+CA-6130",
+    "CA-0075+CA-6140",
+    "CA-0075+CA-6142",
+    "CA-0075+CA-6149",
+    "CA-0075+CA-6150",
+    "CA-0075+CA-6152",
+    "CA-6152+CA-6153"
+   ],
+   "lost": [
     {
-     "pair": "CA-0069+CA-1996",
-     "wide_m": 108,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Pointe"
+     "pair": "CA-0591+CA-6057",
+     "now": "not sure: one record covers two parks ('Cumberland House National Historic Site' is a hist"
     },
     {
-     "pair": "CA-0086+CA-0495",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
+     "pair": "CA-0600+CA-6064",
+     "now": "not sure: one record covers two parks ('Fort Pitt National Historic Site' is a historic, t"
     },
     {
-     "pair": "CA-0086+CA-2361",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC de"
-    },
-    {
-     "pair": "CA-0495+CA-2361",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC de"
-    },
-    {
-     "pair": "CA-0495+CA-2362",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC de"
-    },
-    {
-     "pair": "CA-0497+CA-1023",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Réserv"
-    },
-    {
-     "pair": "CA-0497+CA-2354",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC Ri"
-    },
-    {
-     "pair": "CA-0499+CA-1026",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Réserv"
-    },
-    {
-     "pair": "CA-0500+CA-2315",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec La"
-    },
-    {
-     "pair": "CA-0510+CA-2361",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC de"
-    },
-    {
-     "pair": "CA-1022+CA-5051",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Parc d"
-    },
-    {
-     "pair": "CA-1027+CA-1969",
-     "wide_m": 92,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Réserv"
-    },
-    {
-     "pair": "CA-1918+CA-2342",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Ra"
-    },
-    {
-     "pair": "CA-1959+CA-1996",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Deux M"
-    },
-    {
-     "pair": "CA-2018+CA-2325",
-     "wide_m": 100,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Zec Ma"
-    },
-    {
-     "pair": "CA-2023+CA-2308",
-     "wide_m": 100,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of ZEC de"
-    },
-    {
-     "pair": "CA-2024+CA-4967",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Parc r"
-    },
-    {
-     "pair": "CA-2073+CA-2365",
-     "wide_m": 100,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Zec Sa"
-    },
-    {
-     "pair": "CA-2095+CA-2310",
-     "wide_m": 108,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Zec Ja"
-    },
-    {
-     "pair": "CA-2211+CA-2290",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Portne"
-    },
-    {
-     "pair": "CA-2211+CA-2311",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Portne"
-    },
-    {
-     "pair": "CA-2256+CA-2289",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC Ba"
-    },
-    {
-     "pair": "CA-2285+CA-2315",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC An"
-    },
-    {
-     "pair": "CA-2288+CA-2356",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of ZEC du"
-    },
-    {
-     "pair": "CA-2292+CA-2301",
-     "wide_m": 108,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Zec Bo"
-    },
-    {
-     "pair": "CA-2292+CA-2323",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Bo"
-    },
-    {
-     "pair": "CA-2293+CA-2341",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Br"
-    },
-    {
-     "pair": "CA-2295+CA-2348",
-     "wide_m": 100,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Zec Ca"
-    },
-    {
-     "pair": "CA-2296+CA-2305",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Ca"
-    },
-    {
-     "pair": "CA-2300+CA-2361",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Ch"
-    },
-    {
-     "pair": "CA-2304+CA-2322",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Du"
-    },
-    {
-     "pair": "CA-2304+CA-2342",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Du"
-    },
-    {
-     "pair": "CA-2307+CA-2309",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Fr"
-    },
-    {
-     "pair": "CA-2309+CA-2370",
-     "wide_m": 100,
-     "near": "100 yd (small)",
-     "status": "not sure: the official outline of Zec Gr"
-    },
-    {
-     "pair": "CA-2313+CA-2329",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Ki"
-    },
-    {
-     "pair": "CA-2315+CA-2326",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec La"
-    },
-    {
-     "pair": "CA-2319+CA-2330",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Le"
-    },
-    {
-     "pair": "CA-2323+CA-2328",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec Ma"
-    },
-    {
-     "pair": "CA-2333+CA-4969",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Zec De"
+     "pair": "CA-0624+CA-6072",
+     "now": "not sure: one record covers two parks ('Steele Narrows National Historic Site' is a histor"
     }
    ],
-   "stale_inputs": [
-    "the key build CA-41889018960 (2026-11-04 19:17 UTC) is newer than this output's last pass (2026-11-02)",
-    "no pre-line report for this area"
-   ]
+   "live_before": 33,
+   "live_now": 37,
+   "touch_held": [
+    "CA-0075+CA-6130",
+    "CA-0075+CA-6140",
+    "CA-0075+CA-6142",
+    "CA-0075+CA-6149",
+    "CA-0075+CA-6150",
+    "CA-0075+CA-6152",
+    "CA-6152+CA-6153"
+   ],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [
+    {
+     "pair": "CA-0051+CA-2711",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0082+CA-1146",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0082+CA-2819",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0591+CA-6057",
+     "status": "not sure: one record covers two parks ('Cumberland House National Historic Site' is a hist"
+    },
+    {
+     "pair": "CA-0600+CA-6064",
+     "status": "not sure: one record covers two parks ('Fort Pitt National Historic Site' is a historic, t"
+    },
+    {
+     "pair": "CA-0621+CA-2820",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0624+CA-6072",
+     "status": "not sure: one record covers two parks ('Steele Narrows National Historic Site' is a histor"
+    },
+    {
+     "pair": "CA-0630+CA-2916",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-1093+CA-2549",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-1127+CA-2747",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-1149+CA-2844",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-2644+CA-2645",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-2879+CA-2880",
+     "status": "candidate"
+    }
+   ],
+   "near_threshold": [],
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "CA-YT": {
+   "gained": [
+    "CA-0044+CA-0742",
+    "CA-0044+CA-0842"
+   ],
+   "lost": [],
+   "live_before": 4,
+   "live_now": 6,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [
+    {
+     "pair": "CA-0841+CA-3622",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
+   "same_land_one_record": [
+    {
+     "pair": "CA-0848+CA-4625",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-4635+CA-4636",
+     "status": "candidate"
+    }
+   ],
+   "near_threshold": [
+    {
+     "pair": "CA-0044+CA-0742",
+     "wide_m": 105,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0841+CA-3622",
+     "wide_m": 85,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    }
+   ],
+   "preline": {
+    "tag": "canadawest",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
   },
   "US-AK": {
    "gained": [
