@@ -1,8 +1,8 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-05 08:28 UTC",
+ "made": "2026-11-05 09:37 UTC",
  "totals": {
-  "gained": 125,
+  "gained": 124,
   "lost": 79,
   "pieces_changed": 1845,
   "grade_changed": 31
@@ -87,7 +87,7 @@
    "grade_changed": 0
   },
   "US-ID": {
-   "gained": 8,
+   "gained": 7,
    "lost": 2,
    "pieces_changed": 45,
    "grade_changed": 2
@@ -1005,25 +1005,6 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-2236"
-  },
-  {
-   "area": "US-ID",
-   "ref": "US-7816",
-   "name": "Henrys Lake Airstrip State Recreation Area",
-   "old_grade": "pin",
-   "new_grade": "approximate",
-   "new_pieces": [
-    [
-     "199732",
-     "Henrys Lake State Park",
-     607,
-     "words"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7816"
   },
   {
    "area": "US-IL",

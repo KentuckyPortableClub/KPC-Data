@@ -3225,7 +3225,7 @@
    "path": "data/world-key/BS.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 32 -> 18 (more than 1% lost)"
+    "F-O1 outlines 32 -> 0 (more than 1% lost)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3319,15 +3319,17 @@
   {
    "path": "data/world-key/CZ.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O1 outlines 232 -> 215 (more than 1% lost)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/DE.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 979 -> 932 (more than 1% lost)"
+    "F-O1 outlines 979 -> 930 (more than 1% lost)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3454,9 +3456,11 @@
   {
    "path": "data/world-key/HU.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/ID.json",
@@ -3468,9 +3472,11 @@
   {
    "path": "data/world-key/IE.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O1 outlines 175 -> 168 (more than 1% lost)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/IM.json",
@@ -3581,7 +3587,7 @@
    "path": "data/world-key/NC.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 24 -> 12 (more than 1% lost)"
+    "F-O1 outlines 24 -> 0 (more than 1% lost)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3666,9 +3672,11 @@
   {
    "path": "data/world-key/PT.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O1 outlines 335 -> 327 (more than 1% lost)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/PY.json",
@@ -3757,11 +3765,9 @@
   {
    "path": "data/world-key/ZA.json",
    "kind": "key",
-   "why": [
-    "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   }
  ]
 }
