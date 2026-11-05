@@ -642,6 +642,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-11027",
+   "Park name (as the agency writes it)": "Big Canoe Creek",
+   "Size": 384,
+   "Unit": "acres",
+   "Agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Source page": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D181&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-3684",
+   "Park name (as the agency writes it)": "Coon Creek Tract",
+   "Size": 316,
+   "Unit": "acres",
+   "Agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Source page": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D55&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-5756",
    "Park name (as the agency writes it)": "Browns Park WMA",
    "Size": 3134,
@@ -1462,6 +1480,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
    "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "conservationgis.alabama.gov",
+   "Agency/area": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+   "# times used": 2,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
