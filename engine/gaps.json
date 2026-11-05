@@ -2497,13 +2497,16 @@
   "US-0643": {
    "n": "Noatak National Preserve",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-0644": {
    "n": "Bering Land Bridge National Preserve",
@@ -3161,6 +3164,7 @@
   "US-11862": {
    "n": "Juneau Channel Islands State Park",
    "kinds": [
+    "outline",
     "map",
     "page",
     "camping"
@@ -3168,6 +3172,7 @@
    "agency": "dnr.alaska.gov",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -3219,21 +3224,17 @@
   "US-12679": {
    "n": "Fort Egbert BLM Historic Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-12708": {
    "n": "Kenai River State Conservation Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "camping"
@@ -3241,7 +3242,6 @@
    "agency": "dnr.alaska.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -4952,8 +4952,16 @@
   "US-11027": {
    "n": "Big Canoe Creek Nature Reserve",
    "kinds": [
-    "outline",
     "parking"
+   ],
+   "agency": "alabamaforeverwild.com",
+   "agency_how": "web domain",
+   "why_not": {}
+  },
+  "US-11033": {
+   "n": "The Portland Landing Conservation Reserve",
+   "kinds": [
+    "outline"
    ],
    "agency": "alabamaforeverwild.com",
    "agency_how": "web domain",
@@ -4976,12 +4984,15 @@
   "US-11376": {
    "n": "USS Alabama Battleship Park",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "ussalabama.com",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-12311": {
    "n": "Butler County State Wildlife Management Area",
@@ -5199,12 +5210,15 @@
   "US-12996": {
    "n": "Fowl River Access Site BLM Recreation Management Area",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13003": {
    "n": "TVA Little Bear Creek Dam Multiple Use Area",
@@ -5676,7 +5690,7 @@
    "agency": "conservationgis.alabama.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-3704": {
@@ -6228,15 +6242,12 @@
   "US-10303": {
    "n": "Pig Trail Scenic Byway State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "arkansas.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10332": {
    "n": "Plantation Agriculture Museum State Historical Park",
@@ -6328,15 +6339,12 @@
   "US-10715": {
    "n": "True Grit State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "arkansas.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-1072": {
    "n": "Bull Shoals White River State Park",
@@ -6427,12 +6435,14 @@
   "US-1080": {
    "n": "DeGray Lake Resort State Park",
    "kinds": [
+    "outline",
     "map",
     "camping"
    ],
    "agency": "arkansasstateparks.com",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: approximate only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -6774,27 +6784,21 @@
   "US-1112": {
    "n": "Powhatan State Park",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "arkansasstateparks.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-11127": {
    "n": "Arkansas Rocks! Mining & Mineral State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "arkansas.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-1113": {
    "n": "Prairie Grove Battlefield State Park",
@@ -6857,29 +6861,24 @@
   "US-11164": {
    "n": "Crowley’s Ridge Parkway National Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "parking",
     "camping"
    ],
    "agency": "nsbfoundation.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-11165": {
    "n": "Chalk Bluff Battlefield Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "arkansas.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-1117": {
    "n": "Village Creek State Park",
@@ -7039,15 +7038,12 @@
   "US-11393": {
    "n": "Sylamore Scenic Byway State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "arkansas.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11394": {
    "n": "Muddy Creek WMA Wildlife Management Area",
@@ -7074,14 +7070,11 @@
   "US-11870": {
    "n": "Lake Wilhelmina State Fishing Lake",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "arkansas.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11873": {
    "n": "Iron Fork Reservoir State Fishing Lake",
@@ -7207,14 +7200,11 @@
   "US-12096": {
    "n": "Great River Road National Scenic Byway National Historic Trail",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "fhwaapps.fhwa.dot.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-12330": {
    "n": "Greers Ferry National Fish Hatchery",
@@ -7348,15 +7338,12 @@
   "US-13229": {
    "n": "Arkansas River Water Trail Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "agfc.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13313": {
    "n": "Freddie Black Choctaw Island WMA and Deer Research Area East Unit Watchable Wildlife Trails Wildlife Management Area",
@@ -7370,7 +7357,6 @@
   "US-13461": {
    "n": "Upper Illinois River Water Trail State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "camping"
@@ -7378,7 +7364,6 @@
    "agency": "agfc.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -7418,14 +7403,11 @@
   "US-13556": {
    "n": "Lake June State Fishing Lake",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "agfc.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13557": {
    "n": "Downs Prairie State Natural Area",
@@ -7799,11 +7781,14 @@
   "US-7190": {
    "n": "Bull Shoals Lake State Recreation Area",
    "kinds": [
+    "outline",
     "map"
    ],
    "agency": "recreation.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: approximate only"
+   }
   },
   "US-7261": {
    "n": "Bayou Des Arc Wildlife Management Area",
@@ -8778,19 +8763,21 @@
    "agency": "agfc.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-7439": {
    "n": "Bois D'Arc Lake State Recreation Area",
    "kinds": [
+    "outline",
     "map",
     "camping"
    ],
    "agency": "agfc.com",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: approximate only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -8869,7 +8856,7 @@
    "agency": "State Recreation Area",
    "agency_how": "type word",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-7522": {
@@ -8999,30 +8986,24 @@
   "US-8322": {
    "n": "Mount Magazine Scenic Byway State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "State Trail",
    "agency_how": "type word",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8323": {
    "n": "Ozark Highlands Scenic Byway State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "State Trail",
    "agency_how": "type word",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-9161": {
    "n": "Butterfield State Trail",
@@ -9047,7 +9028,7 @@
    "agency": "agfc.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-9163": {
@@ -9088,7 +9069,7 @@
    "agency": "agfc.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -9101,7 +9082,7 @@
    "agency": "agfc.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-9167": {
@@ -10308,15 +10289,12 @@
   "US-4427": {
    "n": "Apache-Sitgreaves National Forest",
    "kinds": [
-    "outline",
     "map",
     "page"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-4428": {
    "n": "Coconino National Forest",
@@ -10787,13 +10765,16 @@
   "US-0197": {
    "n": "Kern National Wild and Scenic River",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "rivers.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-0198": {
    "n": "Kesterson National Wildlife Refuge",
@@ -10845,12 +10826,15 @@
   "US-0203": {
    "n": "North Central Valley Wildlife Management Area",
    "kinds": [
+    "outline",
     "map",
     "page"
    ],
    "agency": "fws.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-0204": {
    "n": "Pixley National Wildlife Refuge",
@@ -11158,13 +11142,16 @@
   "US-0894": {
    "n": "Tuolumne National Wild and Scenic River",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: approximate only"
+   }
   },
   "US-0907": {
    "n": "Cabrillo National Monument",
@@ -11264,7 +11251,6 @@
   "US-10402": {
    "n": "Cow Mountain BLM Special Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -11273,7 +11259,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -14293,16 +14278,13 @@
   "US-4383": {
    "n": "Rogue River-Siskiyou National Forest",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4391": {
    "n": "Humboldt-Toiyabe National Forest",
@@ -14771,16 +14753,13 @@
   "US-6448": {
    "n": "William Randolph Hearst Memorial State Beach",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "parks.ca.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6449": {
    "n": "Little River State Beach",
@@ -15380,16 +15359,13 @@
   "US-10540": {
    "n": "Bellevue-Watson State Fish Hatchery",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "cpw.state.co.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11884": {
    "n": "The Palisade BLM Wilderness Area",
@@ -15639,13 +15615,16 @@
   "US-11910": {
    "n": "Oil Spring Mountain BLM Wilderness Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-11911": {
    "n": "Damaree BLM Wilderness Area",
@@ -16900,13 +16879,16 @@
   "US-4404": {
    "n": "Pike National Forest",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-4405": {
    "n": "Rio Grande National Forest",
@@ -18440,11 +18422,14 @@
   "US-1660": {
    "n": "Day Pond State Park",
    "kinds": [
+    "outline",
     "map"
    ],
    "agency": "portal.ct.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: approximate only"
+   }
   },
   "US-1661": {
    "n": "Dennis Hill State Park",
@@ -19912,27 +19897,22 @@
   "US-9898": {
    "n": "Mount Vernon National Historic Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-9901": {
    "n": "Civil War Defenses of Washington National Historic Trail",
    "kinds": [
-    "outline",
     "parking",
     "camping"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   }
@@ -20710,15 +20690,12 @@
   "US-9877": {
    "n": "Junction and Breakwater National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "nrtapplication.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-9878": {
    "n": "Northern Delaware Greenway National Recreation Trail",
@@ -20743,15 +20720,12 @@
   "US-9881": {
    "n": "Pomeroy and Newark National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "nrtdatabase.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-9882": {
    "n": "Little Creek State Wildlife Area",
@@ -21293,11 +21267,14 @@
   "US-12122": {
    "n": "S-65E Impoundment and Paradise Run State Conservation Area",
    "kinds": [
+    "outline",
     "parking"
    ],
    "agency": "sfwmd.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-12123": {
    "n": "Oak Creek, No Name Slough and Starvation Slough State Conservation Area",
@@ -21345,7 +21322,7 @@
    "agency": "sfwmd.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-12127": {
@@ -22611,14 +22588,11 @@
   "US-3616": {
    "n": "Dudley Farm State Park",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "floridastateparks.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-3617": {
    "n": "Estero Bay Preserve State Park",
@@ -22672,14 +22646,11 @@
   "US-3622": {
    "n": "Fort Mose State Park",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "floridastateparks.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-3623": {
    "n": "Fort Zachary Taylor State Park",
@@ -22863,14 +22834,11 @@
   "US-3643": {
    "n": "Orman House State Park",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "floridastateparks.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-3644": {
    "n": "Palatka-St. Augustine State Trail",
@@ -22893,14 +22861,11 @@
   "US-3646": {
    "n": "Paynes Creek State Park",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "floridastateparks.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-3647": {
    "n": "Paynes Prairie Preserve State Park",
@@ -24118,17 +24083,20 @@
    "agency": "swfwmd.state.fl.us",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-7879": {
    "n": "Citrus Wildlife Management Area",
    "kinds": [
+    "outline",
     "map"
    ],
    "agency": "myfwc.com",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-8326": {
    "n": "Apalachicola River State Conservation Area",
@@ -25620,28 +25588,22 @@
   "US-4648": {
    "n": "Bartram Educational State Forest",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "gatrees.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4649": {
    "n": "Hitchiti State Forest",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "storymaps.arcgis.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4650": {
    "n": "Dawson State Forest",
@@ -25688,21 +25650,18 @@
   "US-7139": {
    "n": "Arabia Mountain National Heritage Area",
    "kinds": [
-    "outline",
     "parking",
     "camping"
    ],
    "agency": "arabiaalliance.org",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-7140": {
    "n": "Charlie Elliot Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "camping"
@@ -25710,7 +25669,6 @@
    "agency": "georgiawildlife.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -26094,14 +26052,11 @@
   "US-7893": {
    "n": "Augusta Canal National Heritage Area",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-7896": {
    "n": "Standing Boy Creek State Park",
@@ -26670,16 +26625,13 @@
   "US-10914": {
    "n": "Ka‘ena Point State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dlnr.hawaii.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-10915": {
    "n": "Nakoa State Trail",
@@ -26726,16 +26678,13 @@
   "US-10918": {
    "n": "Waʻahila Ridge State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dlnr.hawaii.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-10919": {
    "n": "Na Ala Hele State Trail",
@@ -26922,16 +26871,13 @@
   "US-2213": {
    "n": "Kaumahina Wayside State Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dlnr.hawaii.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-2214": {
    "n": "Kekaha Kai State Park",
@@ -27024,16 +26970,13 @@
   "US-2221": {
    "n": "Puaa Kaa Wayside State Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dlnr.hawaii.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-2222": {
    "n": "Pu'u 'Ualakaa State Park",
@@ -27727,15 +27670,12 @@
   "US-11305": {
    "n": "Wapsipinicon River Water State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "iowadnr.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11306": {
    "n": "McCausland Wildlife Area",
@@ -29593,35 +29533,28 @@
   "US-10418": {
    "n": "Western Heritage National Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fhwa.dot.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10419": {
    "n": "Payette River National Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fhwa.dot.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10420": {
    "n": "Pioneer Historic National Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -29630,7 +29563,6 @@
    "agency": "fhwa.dot.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -29654,7 +29586,6 @@
   "US-10422": {
    "n": "Northwest Passage National Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -29663,7 +29594,6 @@
    "agency": "fhwa.dot.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -29703,16 +29633,13 @@
   "US-10429": {
    "n": "Middle Fork Clearwater River National Wild and Scenic River",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "rivers.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10430": {
    "n": "St Joe River National Wild and Scenic River",
@@ -30693,7 +30620,7 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -31716,7 +31643,6 @@
   "US-11579": {
    "n": "Dworshak Reservoir State Fishing Lake",
    "kinds": [
-    "outline",
     "map",
     "page",
     "camping"
@@ -31724,7 +31650,6 @@
    "agency": "idfg.idaho.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -32318,7 +32243,6 @@
   "US-12349": {
    "n": "Owyhee Uplands Back Country Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -32327,7 +32251,6 @@
    "agency": "nlm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -32476,12 +32399,15 @@
   "US-13296": {
    "n": "Upper Salmon River Access BLM Recreation Management Area",
    "kinds": [
+    "outline",
     "map",
     "page"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13297": {
    "n": "Challis Bridge BLM Recreation Management Area",
@@ -32599,7 +32525,6 @@
   "US-2232": {
    "n": "Dworshak State Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "camping"
@@ -32607,7 +32532,6 @@
    "agency": "parksandrecreation.idaho.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -32653,7 +32577,6 @@
   "US-2236": {
    "n": "Hells Gate State Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -32662,7 +32585,6 @@
    "agency": "parksandrecreation.idaho.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -33736,7 +33658,7 @@
    "agency": "idt.idaho.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only"
+    "outline": "key: approximate only"
    }
   },
   "US-7817": {
@@ -34162,14 +34084,12 @@
   "US-0980": {
    "n": "Beall Woods State Park",
    "kinds": [
-    "outline",
     "map",
     "camping"
    ],
    "agency": "dnr.illinois.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -34795,14 +34715,11 @@
   "US-10391": {
    "n": "Kishwaukee River State Fish and Wildlife Area",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "huntillinois.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10623": {
    "n": "Shawneetown Bank State Historic Site",
@@ -34905,7 +34822,7 @@
    "agency": "huntillinois.org",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-10788": {
@@ -35188,15 +35105,12 @@
   "US-13298": {
    "n": "North Point Marina State Recreation Area",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "dnr.illinois.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13310": {
    "n": "Foley Sand Prairie National Preserve",
@@ -35366,13 +35280,11 @@
   "US-4105": {
    "n": "Washington County State Recreation Area",
    "kinds": [
-    "outline",
     "camping"
    ],
    "agency": "dnr.illinois.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -35483,14 +35395,11 @@
   "US-4118": {
    "n": "Copperhead Hollow State Wildlife Area",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "huntillinois.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4120": {
    "n": "Des Plaines State Fish and Wildlife Area",
@@ -35516,14 +35425,11 @@
   "US-4122": {
    "n": "Fall Creek Overlook State Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.illinois.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-4123": {
    "n": "Franklin Creek State Natural Area",
@@ -36038,12 +35944,15 @@
   "US-7917": {
    "n": "Pullman National Historical Park",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-8267": {
    "n": "World Shooting Complex State Recreation Area",
@@ -36211,22 +36120,28 @@
   "US-10179": {
    "n": "Ten O' Clock Line State Nature Preserve",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "in.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10180": {
    "n": "Fourteenmile Creek State Nature Preserve",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "in.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10181": {
    "n": "Nine Penny Branch State Nature Preserve",
@@ -36926,12 +36841,15 @@
   "US-12020": {
    "n": "Prophetstown Fen State Nature Preserve",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "in.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-12021": {
    "n": "Hornbeam State Nature Preserve",
@@ -37367,7 +37285,7 @@
    "agency": "in.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -37895,15 +37813,12 @@
   "US-4208": {
    "n": "J. E. Roush Lake State Fish and Wildlife Area",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "in.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4209": {
    "n": "Jackson-Washington State Forest",
@@ -38706,15 +38621,12 @@
   "US-2334": {
    "n": "Cross Timbers State Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "ksoutdoors.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-2335": {
    "n": "Eisenhower State Park",
@@ -45161,15 +45073,12 @@
   "US-10751": {
    "n": "Idylwild Natural Area",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "dnr.maryland.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10756": {
    "n": "Skimmer Island Natural Area",
@@ -45214,14 +45123,11 @@
   "US-10763": {
    "n": "Fishing Bay Marshes Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.maryland.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-10764": {
    "n": "Andover Flatwoods Natural Area",
@@ -45236,15 +45142,12 @@
   "US-10765": {
    "n": "Millington Natural Area",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "dnr.maryland.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-10766": {
    "n": "Swallow Falls Natural Area",
@@ -46687,7 +46590,7 @@
    "agency": "dnr.maryland.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-7783": {
@@ -46740,14 +46643,12 @@
   "US-9901": {
    "n": "Civil War Defenses of Washington National Historic Trail",
    "kinds": [
-    "outline",
     "parking",
     "camping"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   }
@@ -47431,15 +47332,12 @@
   "US-8287": {
    "n": "Capitol State Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "alltrails.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8288": {
    "n": "Colburn House State Historic Site",
@@ -47496,12 +47394,15 @@
   "US-8434": {
    "n": "Big Spencer Mountain Ecological Reserve",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "maine.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-8435": {
    "n": "Bigelow State Preserve",
@@ -48029,15 +47930,12 @@
   "US-8491": {
    "n": "Bog Brook Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "maine.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8492": {
    "n": "Cobscook Bay Wildlife Management Area",
@@ -48756,30 +48654,24 @@
   "US-13170": {
    "n": "Bay De Noc/Grand Island National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13171": {
    "n": "Betsie Valley State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "michigan.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13172": {
    "n": "North Central State Trail",
@@ -51595,16 +51487,13 @@
   "US-6726": {
    "n": "Malan Waterfowl National Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mi.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6727": {
    "n": "Manistee River State Game Land",
@@ -52162,16 +52051,13 @@
   "US-6780": {
    "n": "Schoonover Waterfowl National Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mi.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6781": {
    "n": "Sharonville State Game Land",
@@ -52321,16 +52207,13 @@
   "US-6796": {
    "n": "Tobico Marsh Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mi.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6797": {
    "n": "Tomahawk Creek Flooding Wildlife Management Area",
@@ -53009,15 +52892,12 @@
   "US-10720": {
    "n": "Forest Lake AMA Aquatic Reserve",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10721": {
    "n": "Brown's Creek AMA Aquatic Reserve",
@@ -53435,14 +53315,11 @@
   "US-12378": {
    "n": "Whitewater Wildlife Management Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-12380": {
    "n": "McCarthy Lake Wildlife Management Area",
@@ -54116,296 +53993,233 @@
   "US-13631": {
    "n": "Winter Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13632": {
    "n": "Two Rivers Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13633": {
    "n": "Talcot Lake Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13634": {
    "n": "Sodus Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13635": {
    "n": "Phyllis Voosen Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13636": {
    "n": "Lyons Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13637": {
    "n": "Lamberton Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13638": {
    "n": "Lake Maria Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13639": {
    "n": "Hopeful Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13640": {
    "n": "Hole-In-Mountain Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13641": {
    "n": "Green Valley Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13642": {
    "n": "Fenmont Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13643": {
    "n": "Coon Creek Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13644": {
    "n": "Cedar Rock Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13645": {
    "n": "Budolfson Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13646": {
    "n": "Bohemian Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13647": {
    "n": "Badger Lake Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13648": {
    "n": "Altona Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13649": {
    "n": "Old Koschak Farm Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13650": {
    "n": "Darwin S. Meyers Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13651": {
    "n": "Zim Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-2466": {
    "n": "Afton State Park",
@@ -55785,14 +55599,11 @@
   "US-9386": {
    "n": "Browns Creek State Trail",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "dnr.state.mn.us",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-9387": {
    "n": "Luce Line State Trail",
@@ -57100,13 +56911,16 @@
   "US-4009": {
    "n": "Ozark National Wild and Scenic River",
    "kinds": [
+    "outline",
     "map",
     "parking",
     "trail"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-4492": {
    "n": "Mark Twain National Forest",
@@ -58236,6 +58050,7 @@
   "US-2545": {
    "n": "Legion State Park",
    "kinds": [
+    "outline",
     "map",
     "parking",
     "camping"
@@ -58243,6 +58058,7 @@
    "agency": "mdwfp.com",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -59848,49 +59664,39 @@
   "US-11215": {
    "n": "Bear Paw Battlefield National Monument",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11216": {
    "n": "Big Springs Trout State Fish Hatchery",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "myfwp.mt.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11217": {
    "n": "Bluewater Springs Trout State Fish Hatchery",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "myfwp.mt.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11218": {
    "n": "Fort Peck State Fish Hatchery",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -59899,37 +59705,30 @@
    "agency": "myfwp.mt.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-11219": {
    "n": "Jacko River Trout State Fish Hatchery",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "myfwp.mt.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11221": {
    "n": "Washoe Park Trout State Fish Hatchery",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "myfwp.mt.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11242": {
    "n": "Scratchgravel Hills BLM Recreation Management Area",
@@ -59966,7 +59765,6 @@
   "US-12630": {
    "n": "Upper Missouri River BLM Wild and Scenic River",
    "kinds": [
-    "outline",
     "map",
     "page",
     "camping"
@@ -59974,7 +59772,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -60324,7 +60121,6 @@
   "US-12822": {
    "n": "Big Horn State Fish and Wildlife Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -60333,7 +60129,6 @@
    "agency": "myfwp.mt.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -62250,16 +62045,13 @@
   "US-4477": {
    "n": "Idaho Panhandle National Forest",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4499": {
    "n": "Beaverhead-Deerlodge National Forest",
@@ -62607,44 +62399,35 @@
   "US-8001": {
    "n": "Lamesteer National Wildlife Refuge",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "National Wildlife Refuge",
    "agency_how": "type word",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8002": {
    "n": "Ninepipe National Wildlife Refuge",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fws.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8003": {
    "n": "Pablo National Wildlife Refuge",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fws.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8004": {
    "n": "Swan River National Wildlife Refuge",
@@ -63017,14 +62800,11 @@
   "US-12320": {
    "n": "Yadkin River State Trail",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "trails.nc.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-12371": {
    "n": "Julian Price National Park",
@@ -63072,14 +62852,11 @@
   "US-13002": {
    "n": "Dan River State Trail",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "trails.nc.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-2721": {
    "n": "Bay Tree Lake State Park",
@@ -65364,6 +65141,7 @@
   "US-5742": {
    "n": "Homen State Forest",
    "kinds": [
+    "outline",
     "map",
     "parking",
     "camping"
@@ -65371,6 +65149,7 @@
    "agency": "ag.ndsu.edu",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -67978,13 +67757,16 @@
   "US-4028": {
    "n": "Prairie Lake State Recreation Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "nrdnet.org",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-4029": {
    "n": "Roseland Lake State Recreation Area",
@@ -68692,13 +68474,16 @@
   "US-9356": {
    "n": "Willow Lake Wildlife Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "nebraskabirdingtrails.com",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-9357": {
    "n": "Blue River State Recreation Area",
@@ -69058,15 +68843,12 @@
   "US-13595": {
    "n": "Northern Recreational State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "nhstateparks.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13625": {
    "n": "Ammonoosuc State Trail",
@@ -72400,16 +72182,13 @@
   "US-0961": {
    "n": "Salinas Pueblo Missions, Gran Quivira Unit, National Monument",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-0970": {
    "n": "White Sands National Park",
@@ -73918,13 +73697,16 @@
   "US-10844": {
    "n": "Diamond BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10851": {
    "n": "East Pershing Complex BLM Herd Management Area",
@@ -74090,13 +73872,16 @@
   "US-13013": {
    "n": "Dogskin Mountains BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13014": {
    "n": "Granite Peak BLM Herd Management Area",
@@ -74126,13 +73911,16 @@
   "US-13017": {
    "n": "Agusta Mountains BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13018": {
    "n": "Black Rock Range East/West BLM Herd Management Area",
@@ -74148,13 +73936,16 @@
   "US-13019": {
    "n": "Buffalo Hills BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13020": {
    "n": "Smoke Creek BLM National Conservation Area",
@@ -74198,12 +73989,15 @@
   "US-13024": {
    "n": "Callaghan BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13025": {
    "n": "Clan Alpine BLM Herd Management Area",
@@ -74261,13 +74055,16 @@
   "US-13029": {
    "n": "Flanigan BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13030": {
    "n": "Fox-Lake BLM Herd Management Area",
@@ -74286,13 +74083,16 @@
   "US-13031": {
    "n": "Garfield Flat BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13032": {
    "n": "Gold Mountain BLM Herd Management Area",
@@ -74319,24 +74119,30 @@
   "US-13034": {
    "n": "Goshute BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13035": {
    "n": "Granite Range BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13036": {
    "n": "Hot Creek BLM Herd Management Area",
@@ -74398,46 +74204,58 @@
   "US-13041": {
    "n": "Maverick-Medicine BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13042": {
    "n": "Montezuma Peak BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13043": {
    "n": "New Pass-Ravenswood BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13044": {
    "n": "Palmetto BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13045": {
    "n": "Pancake BLM Herd Management Area",
@@ -74453,13 +74271,16 @@
   "US-13046": {
    "n": "Paymaster BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13047": {
    "n": "Pine Nut Mountain BLM Herd Management Area",
@@ -74474,13 +74295,16 @@
   "US-13048": {
    "n": "Rocky Hills BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13049": {
    "n": "Shawave Mountains BLM Herd Management Area",
@@ -74517,17 +74341,21 @@
   "US-13052": {
    "n": "Spruce-Pequop BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13053": {
    "n": "Stone Cabin BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking",
@@ -74536,6 +74364,7 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -74662,13 +74491,16 @@
   "US-13119": {
    "n": "Stonewall BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13120": {
    "n": "Saulsbury BLM Herd Management Area",
@@ -74695,24 +74527,30 @@
   "US-13122": {
    "n": "Horse Mountain BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13123": {
    "n": "Bald Mountain BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13124": {
    "n": "Calico Mountains BLM Herd Management Area",
@@ -74760,35 +74598,44 @@
   "US-13128": {
    "n": "Jackson Mountains BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13129": {
    "n": "Lahontan BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13130": {
    "n": "Lava Beds BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13131": {
    "n": "Little Fish Lake BLM Herd Management Area",
@@ -74837,12 +74684,15 @@
   "US-13135": {
    "n": "Seven Troughs BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-13136": {
    "n": "Marietta Wild Burro Range BLM Herd Management Area",
@@ -77913,6 +77763,7 @@
   "US-9247": {
    "n": "Eldorado BLM Wilderness Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking",
@@ -77921,6 +77772,7 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -78010,6 +77862,7 @@
   "US-9258": {
    "n": "Ireteba Peaks BLM Wilderness Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking",
@@ -78018,6 +77871,7 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -78948,20 +78802,26 @@
   "US-10292": {
    "n": "Watson's East Triangle Complex State Preserve",
    "kinds": [
+    "outline",
     "map"
    ],
    "agency": "dec.ny.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10293": {
    "n": "Raquette Boreal Complex State Preserve",
    "kinds": [
+    "outline",
     "map"
    ],
    "agency": "dec.ny.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10294": {
    "n": "Pigeon Lake Wilderness Area",
@@ -79384,14 +79244,11 @@
   "US-2024": {
    "n": "Caleb Smith State Park",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "parks.ny.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-2025": {
    "n": "Camp Hero State Park",
@@ -82648,14 +82505,11 @@
   "US-8098": {
    "n": "Empire State Trail",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "empiretrail.ny.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8100": {
    "n": "Tonawanda Wildlife Management Area",
@@ -82784,11 +82638,14 @@
   "US-9037": {
    "n": "Allegheny Reservoir Wildlife Management Area",
    "kinds": [
+    "outline",
     "parking"
    ],
    "agency": "dec.ny.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-9038": {
    "n": "Birch Run Ponds Wildlife Management Area",
@@ -88028,15 +87885,12 @@
   "US-8128": {
    "n": "Lloyd Vincent State Fishing Lake",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "wildlifedepartment.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-8129": {
    "n": "Nanih Waiya State Fishing Lake",
@@ -88671,16 +88525,13 @@
   "US-10007": {
    "n": "Oregon Coast State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "stateparks.oregon.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10008": {
    "n": "Klamath Hills BLM Recreation Management Area",
@@ -88879,13 +88730,16 @@
   "US-10025": {
    "n": "Lost Forest/Dunes/Fossil BLM Special Recreation Management Area",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10026": {
    "n": "Devils Garden Lava Bed Wilderness Area",
@@ -89052,16 +88906,13 @@
   "US-10355": {
    "n": "I-205 Multi-Use State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "traillink.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10356": {
    "n": "Mountain of the Rogue Trail System BLM Recreation Management Area",
@@ -89807,12 +89658,15 @@
   "US-10744": {
    "n": "Pokegama BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10745": {
    "n": "Riddle Mountain BLM Herd Management Area",
@@ -89848,12 +89702,15 @@
   "US-10748": {
    "n": "South Steens BLM Herd Management Area",
    "kinds": [
+    "outline",
     "map",
     "page"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "US-10749": {
    "n": "Stinkingwater BLM Herd Management Area",
@@ -91139,16 +90996,13 @@
   "US-2810": {
    "n": "Alderwood Wayside State Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "stateparks.oregon.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-2811": {
    "n": "Alfred A Loeb State Park",
@@ -91940,16 +91794,13 @@
   "US-4383": {
    "n": "Rogue River-Siskiyou National Forest",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4384": {
    "n": "Siuslaw National Forest",
@@ -98561,15 +98412,12 @@
   "US-7723": {
    "n": "John H. Chaffee Rome Point State Nature Preserve",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "riparks.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-7865": {
    "n": "East State Beach",
@@ -100602,15 +100450,12 @@
   "US-11905": {
    "n": "Centennial Trail State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "google.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-2916": {
    "n": "Bear Butte State Park",
@@ -100974,7 +100819,6 @@
   "US-8164": {
    "n": "George S. Mickelson State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "camping"
@@ -100982,7 +100826,6 @@
    "agency": "gfp.sd.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -103347,14 +103190,11 @@
   "US-6262": {
    "n": "Powell River State Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "tn.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-6263": {
    "n": "Riverwoods State Natural Area",
@@ -106317,16 +106157,13 @@
   "US-10794": {
    "n": "Logan Canyon National Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fhwaapps.fhwa.dot.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10812": {
    "n": "Jones Hole National Fish Hatchery",
@@ -106408,16 +106245,13 @@
   "US-10966": {
    "n": "K-Hill Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10967": {
    "n": "Birch Hollow BLM Recreation Management Area",
@@ -106885,16 +106719,13 @@
   "US-11005": {
    "n": "Wire Mesa Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11006": {
    "n": "Hogup Mountains Designated Routes BLM Recreation Management Area",
@@ -106971,16 +106802,13 @@
   "US-11011": {
    "n": "Flying Monkey Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11012": {
    "n": "Mt. Hillers BLM Recreation Management Area",
@@ -107404,16 +107232,13 @@
   "US-11121": {
    "n": "Government Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11126": {
    "n": "Public Shooting Grounds State Waterfowl Management Area",
@@ -107512,16 +107337,13 @@
   "US-11167": {
    "n": "Little Hole National Scenic Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "flaminggorgecountry.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11168": {
    "n": "Little Hole State Wildlife Habitat Management Area",
@@ -109218,16 +109040,13 @@
   "US-11758": {
    "n": "Guacamole Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-11760": {
    "n": "Parunuweap Canyon BLM Wilderness Area",
@@ -109658,16 +109477,13 @@
   "US-13490": {
    "n": "Flaming Gorge-Uintas Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fhwaapps.fhwa.dot.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13500": {
    "n": "Scenic Byway 12 - All American Road - National Parkway",
@@ -109687,16 +109503,13 @@
   "US-13571": {
    "n": "Zion Scenic Byway National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "nsbfoundation.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13586": {
    "n": "Taylor Flat BLM Backcountry Airstrip",
@@ -110551,16 +110364,13 @@
   "US-5756": {
    "n": "Browns Park National Wildlife Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fws.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-5757": {
    "n": "John Wesley Powell BLM National Conservation Area",
@@ -110587,16 +110397,13 @@
   "US-5759": {
    "n": "John Jarvie BLM Historic Preservation Site",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-5760": {
    "n": "Dewey Bridge BLM Recreation Management Area",
@@ -110980,21 +110787,17 @@
   "US-5787": {
    "n": "Hidden Valley Trail State Recreation Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "State Recreation Area",
    "agency_how": "type word",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-5788": {
    "n": "Slickrock Bike National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -111003,7 +110806,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -111195,7 +110997,6 @@
   "US-5804": {
    "n": "Corona Arch BLM National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -111204,7 +111005,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -112410,7 +112210,6 @@
   "US-5892": {
    "n": "Behind the Reef Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -112419,7 +112218,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -112491,7 +112289,6 @@
   "US-5898": {
    "n": "Scenic Byway 143 - Utah's Patchwork National Parkway",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -112500,7 +112297,6 @@
    "agency": "fhwaapps.fhwa.dot.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -112759,16 +112555,13 @@
   "US-5918": {
    "n": "Lower Calf Creek Falls Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-5919": {
    "n": "Devil's Garden BLM Recreation Management Area",
@@ -113120,7 +112913,6 @@
   "US-5950": {
    "n": "This Is The Place Heritage Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -113129,7 +112921,6 @@
    "agency": "stateparks.utah.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -113547,16 +113338,13 @@
   "US-5982": {
    "n": "Tom's Canyon Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-5983": {
    "n": "Hog Canyon West Kiosk BLM Recreation Management Area",
@@ -113604,16 +113392,13 @@
   "US-5986": {
    "n": "Greenhalgh Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-5987": {
    "n": "Pahvant Valley Heritage Trail BLM Recreation Management Area",
@@ -113635,16 +113420,13 @@
   "US-5988": {
    "n": "Bunting Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-5989": {
    "n": "Peek-A-Boo Slot Canyon BLM Recreation Management Area",
@@ -113975,7 +113757,6 @@
   "US-6013": {
    "n": "Short Creek Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -113984,7 +113765,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -114005,30 +113785,24 @@
   "US-6015": {
    "n": "Water Canyon Arch Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6016": {
    "n": "White Domes Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6017": {
    "n": "Cedar Mountain BLM Wilderness Area",
@@ -114291,16 +114065,13 @@
   "US-6036": {
    "n": "North Rim Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6037": {
    "n": "Blackridge BLM Wilderness Area",
@@ -114316,7 +114087,6 @@
   "US-6038": {
    "n": "Jem Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114325,14 +114095,12 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-6039": {
    "n": "Cryptobiotic Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114341,7 +114109,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -114556,7 +114323,6 @@
   "US-6054": {
    "n": "Red Reef East Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114565,14 +114331,12 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-6055": {
    "n": "Cordura Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114581,14 +114345,12 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
   "US-6056": {
    "n": "McMullin Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114597,7 +114359,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -114664,7 +114425,6 @@
   "US-6061": {
    "n": "Silver Reef Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114673,7 +114433,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -114763,7 +114522,6 @@
   "US-6068": {
    "n": "Red Reef Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -114772,7 +114530,6 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -114945,30 +114702,24 @@
   "US-6082": {
    "n": "Lower Graveyard Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6083": {
    "n": "Rim Rock Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6084": {
    "n": "Santa Clara River Reserve BLM Recreation Management Area",
@@ -116444,15 +116195,12 @@
   "US-9898": {
    "n": "Mount Vernon National Historic Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-9899": {
    "n": "Fort Hunt National Historical Site",
@@ -116484,14 +116232,12 @@
   "US-9901": {
    "n": "Civil War Defenses of Washington National Historic Trail",
    "kinds": [
-    "outline",
     "parking",
     "camping"
    ],
    "agency": "nps.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -116680,7 +116426,6 @@
   "US-9933": {
    "n": "Beaches to Bluegrass State Trail",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "camping"
@@ -116688,7 +116433,6 @@
    "agency": "dcr.virginia.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -121120,16 +120864,13 @@
   "US-13392": {
    "n": "Massey Bar State Recreation Site",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "wdfw.wa.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13393": {
    "n": "Woodland Bar State Recreation Site",
@@ -121170,16 +120911,13 @@
   "US-13396": {
    "n": "Steel Bridge State Recreation Site",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "wdfw.wa.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13397": {
    "n": "Modrow Bridge State Recreation Site",
@@ -121612,16 +121350,13 @@
   "US-13516": {
    "n": "Horseshoe -Kitsap- State Fishing Lake",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "wdfw.wa.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-13531": {
    "n": "Beebe Bridge State Park",
@@ -121875,7 +121610,6 @@
   "US-3171": {
    "n": "Spokane River Centennial State Trail",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -121884,7 +121618,6 @@
    "agency": "parks.wa.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -123368,16 +123101,13 @@
   "US-4477": {
    "n": "Idaho Panhandle National Forest",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fs.usda.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4528": {
    "n": "Colville National Forest",
@@ -123452,16 +123182,13 @@
   "US-4555": {
    "n": "Hanford Reach National Monument",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "fws.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-4562": {
    "n": "Pacific Crest Trail National Scenic Trail",
@@ -124347,14 +124074,11 @@
   "US-4246": {
    "n": "Whitefish Dunes State Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-4247": {
    "n": "Heritage Hill State Park",
@@ -124427,14 +124151,11 @@
   "US-4255": {
    "n": "Lodi Marsh State Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-4258": {
    "n": "Fischer Creek State Recreation Area",
@@ -124481,7 +124202,7 @@
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-4263": {
@@ -124504,7 +124225,7 @@
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-4266": {
@@ -124578,7 +124299,7 @@
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-4343": {
@@ -124675,14 +124396,11 @@
   "US-8209": {
    "n": "Dewey Marsh State Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-8210": {
    "n": "Bark Bay Slough State Natural Area",
@@ -124766,14 +124484,11 @@
   "US-8219": {
    "n": "Jackson Marsh State Natural Area",
    "kinds": [
-    "outline",
     "map"
    ],
    "agency": "dnr.wisconsin.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: approximate only"
-   }
+   "why_not": {}
   },
   "US-8220": {
    "n": "Turtle Flambeau Flowage State Wilderness Area",
@@ -126209,7 +125924,6 @@
   "US-10776": {
    "n": "Packers Lake Public Access Area BLM Special Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -126218,7 +125932,6 @@
    "agency": "wgfd.wyo.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -127015,16 +126728,13 @@
   "US-10876": {
    "n": "Lone Tree Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10877": {
    "n": "Mallo Trail BLM Recreation Management Area",
@@ -127164,16 +126874,13 @@
   "US-10886": {
    "n": "Salt Lick Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-10887": {
    "n": "Scab Creek BLM Recreation Management Area",
@@ -127964,7 +127671,7 @@
    "agency": "fhwaapps.fhwa.dot.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-3292": {
@@ -128400,7 +128107,6 @@
   "US-6117": {
    "n": "Camp Douglas WW-II POW Officers' Club State Historic Site",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -128409,7 +128115,6 @@
    "agency": "wyoparks.wyo.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -128548,7 +128253,7 @@
    "agency": "blm.gov",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: approximate only"
+    "outline": "key: pin only"
    }
   },
   "US-6130": {
@@ -128716,16 +128421,13 @@
   "US-6143": {
    "n": "Outlaw Cave Trail BLM Recreation Management Area",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "blm.gov",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "US-6144": {
    "n": "Trail End State Historic Site",
@@ -136805,15 +136507,12 @@
   "CA-3298": {
    "n": "Cardiff Mountain Ecological Reserve",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "bcparks.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-3299": {
    "n": "Cariboo Nature Park Provincial Park",
@@ -137395,15 +137094,12 @@
   "CA-3359": {
    "n": "ƛ̓éxətəm Regional Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "metrovancouver.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-3360": {
    "n": "Columbia Lake Provincial Park",
@@ -140515,7 +140211,6 @@
   "CA-3679": {
    "n": "Kilby Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking",
@@ -140524,7 +140219,6 @@
    "agency": "bcparks.ca",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -143405,16 +143099,13 @@
   "CA-3968": {
    "n": "Pitt River Regional Greenway Park",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "trail"
    ],
    "agency": "metrovancouver.org",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-3969": {
    "n": "Plumper Cove Marine Provincial Park",
@@ -143977,15 +143668,12 @@
   "CA-4025": {
    "n": "Robert Burnaby Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "burnaby.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-4026": {
    "n": "Roberts Bank Wildlife Management Area",
@@ -145558,16 +145246,13 @@
   "CA-4187": {
    "n": "Taylor Landing Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "bcparks.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-4188": {
    "n": "Teakerne Arm Provincial Park",
@@ -151473,14 +151158,11 @@
   "CA-1240": {
    "n": "Hyla Park Nature Reserve",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "naturetrust.nb.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1241": {
    "n": "Irving Nature Nature Conservation Reserve",
@@ -151583,15 +151265,12 @@
   "CA-1251": {
    "n": "Rockwood Park Nature Reserve",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "saintjohn.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1252": {
    "n": "Saints Rest Marsh - F. Gordon Carvell Nature Reserve",
@@ -153430,15 +153109,12 @@
   "CA-4810": {
    "n": "Carleton Martello Tower National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-4811": {
    "n": "Fort Beausejour & Fort Cumberland National Historic Site",
@@ -153520,15 +153196,12 @@
   "CA-4944": {
    "n": "Fort Howe National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "pc.gc.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5081": {
    "n": "International Appalachian Trail (IAT) National Scenic Trail",
@@ -154006,15 +153679,12 @@
   "CA-5184": {
    "n": "Henry Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "a-better-place.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5185": {
    "n": "Imperial / Bi-Capitol Theatre National Historic Site",
@@ -154301,15 +153971,12 @@
   "CA-5211": {
    "n": "Officers' Square National Heritage Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "gnb.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5212": {
    "n": "Old Government House National Historic Site",
@@ -154376,15 +154043,12 @@
   "CA-5217": {
    "n": "Reading Street Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "hikingnb.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5218": {
    "n": "Reg Bonney Nature Reserve",
@@ -154788,15 +154452,12 @@
   "CA-5253": {
    "n": "Carleton Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "tourismnewbrunswick.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5255": {
    "n": "Ecological Park of the Acadian Peninsula Ecological Site",
@@ -154814,15 +154475,12 @@
   "CA-5258": {
    "n": "Killarney Lake Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "tourismnewbrunswick.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5259": {
    "n": "Kings Landing Historic Settlement Historic Site",
@@ -154964,28 +154622,22 @@
   "CA-5273": {
    "n": "Wilmot Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "historicplaces.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5274": {
    "n": "Wolastoq Park National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "pc.gc.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5545": {
    "n": "Trinity Royal Heritage Conservation Area",
@@ -155055,15 +154707,12 @@
   "CA-5688": {
    "n": "Hillside Trail National Scenic Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "hikingnb.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5691": {
    "n": "Jervis Bay-Ross Memorial Park Natural Monument",
@@ -155081,15 +154730,12 @@
   "CA-5693": {
    "n": "King's Square (Founding of New Brunswick) National Heritage Area",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "pc.gc.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5699": {
    "n": "United Empire Loyalists Burial Ground Natural Monument",
@@ -155135,15 +154781,12 @@
   "CA-5704": {
    "n": "Mispec Park Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "discoversaintjohn.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5706": {
    "n": "Pines Conservation Park National Heritage Site",
@@ -155174,28 +154817,22 @@
   "CA-5708": {
    "n": "Public Gardens (Saint John) Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "saintjohn.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5711": {
    "n": "Queen Square (St. John) Recreation Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "saintjohn.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5726": {
    "n": "Trinity Church and Rectory National Historic Site",
@@ -159080,15 +158717,12 @@
   "CA-0479": {
    "n": "Sherbrooke Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0480": {
    "n": "Summerville Beach Provincial Park",
@@ -159140,15 +158774,12 @@
   "CA-0485": {
    "n": "Trout Brook Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0486": {
    "n": "Uisge Bàn Falls Provincial Park",
@@ -159212,15 +158843,12 @@
   "CA-0882": {
    "n": "Balmoral Mills Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0883": {
    "n": "Battery Provincial Park",
@@ -159304,28 +158932,22 @@
   "CA-0892": {
    "n": "Burnt Island Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0894": {
    "n": "Caddell Rapids Lookoff Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0895": {
    "n": "Camerons Brook Provincial Park",
@@ -159409,15 +159031,12 @@
   "CA-0903": {
    "n": "Cookville Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0904": {
    "n": "Cottage Cove Provincial Park",
@@ -159652,15 +159271,12 @@
   "CA-0929": {
    "n": "MacCormack Beach Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-0930": {
    "n": "Mickey Hill Provincial Park",
@@ -160342,15 +159958,12 @@
   "CA-1759": {
    "n": "Elderbank Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1760": {
    "n": "Five Bridge Lakes Wilderness Area",
@@ -160415,15 +160028,12 @@
   "CA-1766": {
    "n": "Blomidon Lookoff Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1768": {
    "n": "Gully Lake Wilderness Area",
@@ -160460,15 +160070,12 @@
   "CA-1771": {
    "n": "Hubbards Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1772": {
    "n": "Humes River Wilderness Area",
@@ -160645,15 +160252,12 @@
   "CA-1791": {
    "n": "MacElmons Pond Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1792": {
    "n": "MacFarlane Woods Nature Reserve",
@@ -160677,15 +160281,12 @@
   "CA-1794": {
    "n": "Marie Joseph Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1795": {
    "n": "Margaree River Wilderness Area",
@@ -161149,15 +160750,12 @@
   "CA-1845": {
    "n": "Cape Jack Beach Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1846": {
    "n": "Pu’tlaqne’katik (Shingle Lake) Wilderness Area",
@@ -161185,14 +160783,11 @@
   "CA-1848": {
    "n": "Shubie Park Recreation Park",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "shubenacadiecanal.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1849": {
    "n": "Shubenacadie Provincial  Park Provincial Wildlife Area",
@@ -161384,7 +160979,6 @@
   "CA-1867": {
    "n": "Spry Bay Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "camping"
@@ -161392,7 +160986,6 @@
    "agency": "novascotia.com",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -161448,15 +161041,12 @@
   "CA-1876": {
    "n": "Irish Cove Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1878": {
    "n": "Tait Lake Nature Reserve",
@@ -161690,15 +161280,12 @@
   "CA-1902": {
    "n": "Tusket River Lookoff Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1903": {
    "n": "Tusket River Nature Reserve",
@@ -161713,15 +161300,12 @@
   "CA-1904": {
    "n": "Blind Bay Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-1905": {
    "n": "Twelve Mile Stream Wilderness Area",
@@ -162302,15 +161886,12 @@
   "CA-5446": {
    "n": "Ross Ferry Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5448": {
    "n": "Thinkers Lodge National Historic Site",
@@ -162351,15 +161932,12 @@
   "CA-5796": {
    "n": "Africville National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "pc.gc.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5797": {
    "n": "Akins House National Historic Site",
@@ -162546,15 +162124,12 @@
   "CA-5811": {
    "n": "Fort Needham Memorial Park National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "hmhps.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5812": {
    "n": "Government House (Halifax) National Historic Site",
@@ -162689,15 +162264,12 @@
   "CA-5822": {
    "n": "Hydrostone District National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "pc.gc.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5823": {
    "n": "Jonathan McCully House National Historic Site",
@@ -163072,12 +162644,14 @@
   "CA-6136": {
    "n": "Shelburne River Canadian Heritage River",
    "kinds": [
+    "outline",
     "parking",
     "camping"
    ],
    "agency": "chrs.ca",
    "agency_how": "web domain",
    "why_not": {
+    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -163572,15 +163146,12 @@
   "CA-6251": {
    "n": "Grand Parade National Heritage Site",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "historicplaces.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6252": {
    "n": "Scott Manor House National Heritage Site",
@@ -163853,15 +163424,12 @@
   "CA-6483": {
    "n": "Roxbury Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6502": {
    "n": "Wallace River Railway Swing Bridge Historic Site",
@@ -163879,28 +163447,22 @@
   "CA-6506": {
    "n": "Hay Cove Provincial Park Reserve",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6553": {
    "n": "Portobello Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6554": {
    "n": "Musquodoboit Harbour Railway Historic Site",
@@ -163928,93 +163490,72 @@
   "CA-6557": {
    "n": "Louis Head Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6558": {
    "n": "Horne Settlement Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6559": {
    "n": "Hirtles Beach Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6560": {
    "n": "Kingsburg Beach Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6561": {
    "n": "Medway River Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6562": {
    "n": "Mersey River Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6563": {
    "n": "Baker Inlet Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6564": {
    "n": "Blanche Provincial Park",
@@ -164032,15 +163573,12 @@
   "CA-6565": {
    "n": "Bulls Head Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6567": {
    "n": "Roseway Beach Provincial Park",
@@ -164058,41 +163596,32 @@
   "CA-6568": {
    "n": "Pinehurst Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6569": {
    "n": "Linwood Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6570": {
    "n": "Mahoney Beach Provincial Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "novascotia.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6571": {
    "n": "Monks Head Provincial Park",
@@ -165022,7 +164551,6 @@
   "CA-5478": {
    "n": "Nagwichoonjik (Mackenzie River) National Historic Site",
    "kinds": [
-    "outline",
     "map",
     "parking",
     "camping"
@@ -165030,7 +164558,6 @@
    "agency": "pc.gc.ca",
    "agency_how": "web domain",
    "why_not": {
-    "outline": "key: pin only",
     "camping": "camping words on the park row, no campground row"
    }
   },
@@ -175648,14 +175175,11 @@
   "CA-5989": {
    "n": "Sulpher Spring Conservation Area",
    "kinds": [
-    "outline",
     "parking"
    ],
    "agency": "saugeenconservation.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-5990": {
    "n": "Varney Conservation Area",
@@ -179981,15 +179505,12 @@
   "CA-2007": {
    "n": "Estuaire de la Riviere Bonaventure Nature Reserve",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "Nature Reserve",
    "agency_how": "type word",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-2008": {
    "n": "Estuaire de la Riviere York Nature Reserve",
@@ -181397,16 +180918,13 @@
   "CA-2137": {
    "n": "Milieux-Humides-du-Lac-Lichtfield Nature Reserve",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "Nature Reserve",
    "agency_how": "type word",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-2138": {
    "n": "Mine-aux-Pipistrelles Ecological Reserve",
@@ -182240,12 +181758,15 @@
   "CA-2218": {
    "n": "Rimouski Reserve Nature Reserve",
    "kinds": [
+    "outline",
     "map",
     "parking"
    ],
    "agency": "Nature Reserve",
    "agency_how": "type word",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "CA-2219": {
    "n": "Parc Central Recreation Park",
@@ -182342,13 +181863,16 @@
   "CA-2227": {
    "n": "Riviere Malbaie (CNC/Stallman) Nature Reserve",
    "kinds": [
+    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "Nature Reserve",
    "agency_how": "type word",
-   "why_not": {}
+   "why_not": {
+    "outline": "key: pin only"
+   }
   },
   "CA-2228": {
    "n": "Riviere Pikauba Rare Forest Ecosystem Nature Reserve",
@@ -184373,15 +183897,12 @@
   "CA-4945": {
    "n": "Base de plein air Sainte-Foy Regional Park",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "bpasf.com",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-4946": {
    "n": "Canyon des Portes de l'Enfer Regional Park",
@@ -187340,16 +186861,13 @@
   "CA-6476": {
    "n": "St. Croix River Canadian Heritage River",
    "kinds": [
-    "outline",
     "map",
     "page",
     "parking"
    ],
    "agency": "chrs.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   }
  },
  "CA-SI": {
@@ -191701,28 +191219,22 @@
   "CA-6130": {
    "n": "Mud Creek Trail National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6140": {
    "n": "Shady Lake Trail National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6141": {
    "n": "Height-of-Land Lookout Tower National Recreation Trail",
@@ -191741,15 +191253,12 @@
   "CA-6142": {
    "n": "Spruce River Highlands Trail National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6143": {
    "n": "Freight Tait Springs Trail National Recreation Trail",
@@ -191814,28 +191323,22 @@
   "CA-6149": {
    "n": "Narrows Peninsula Trail National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6150": {
    "n": "Kingsmere River Trail National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6151": {
    "n": "Boundary Bog Trail National Geologic Trail",
@@ -191850,15 +191353,12 @@
   "CA-6152": {
    "n": "Red Deer Trail National Recreation Trail",
    "kinds": [
-    "outline",
     "map",
     "parking"
    ],
    "agency": "parks.canada.ca",
    "agency_how": "web domain",
-   "why_not": {
-    "outline": "key: pin only"
-   }
+   "why_not": {}
   },
   "CA-6153": {
    "n": "Fisher Trail National Recreation Trail",
@@ -234423,7 +233923,7 @@
    "why_not": {}
   },
   "GB-6897": {
-   "n": "Carstraman Wood Wildlife Reserve",
+   "n": "Carstramnn Wood Wildlife Reserve",
    "kinds": [
     "outline",
     "map",
@@ -293374,6 +292874,19 @@
     "outline": "key: pin only"
    }
   },
+  "GB-7299": {
+   "n": "Cribb's Meadow Nature Reserve",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
   "GB-0150": {
    "n": "Tamar Valley National Landscape",
    "kinds": [
@@ -296646,6 +296159,32 @@
     "outline": "key: pin only"
    }
   },
+  "GB-7300": {
+   "n": "Bemersyde Moss Wildlife Reserve",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
+  "GB-7301": {
+   "n": "Gordon Moss Wildlife Reserve",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
   "GB-0347": {
    "n": "Isles of Scilly National Landscape",
    "kinds": [
@@ -298046,6 +297585,19 @@
   },
   "GB-7250": {
    "n": "Larbert Loch & Forest Park",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
+  "GB-7292": {
+   "n": "Skinflats RSPB Reserve",
    "kinds": [
     "outline",
     "map",
@@ -428217,7 +427769,7 @@
    }
   },
   "JP-2164": {
-   "n": "Fukui Prefectural Children’s Science Museum(Angel Land Fukui） Park",
+   "n": "Fukui Prefectural Childrens Science Museum(Angel Land Fukui） Park",
    "kinds": [
     "outline",
     "map",
@@ -884791,6 +884343,58 @@
     "outline": "key: pin only"
    }
   },
+  "IE-0309": {
+   "n": "Liffeyside Nature Park Provincial Park",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
+  "IE-0310": {
+   "n": "Liffey walk trail National Scenic Trail",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
+  "IE-0312": {
+   "n": "Rye River Walk trail National Scenic Trail",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
+  "IE-0313": {
+   "n": "St Catherines Park Regional Park",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
   "IE-0007": {
    "n": "Ballyhoura National Park",
    "kinds": [
@@ -885336,6 +884940,19 @@
   },
   "IE-0293": {
    "n": "National Famine Way trail National Historic Trail",
+   "kinds": [
+    "outline",
+    "map",
+    "page"
+   ],
+   "agency": "unknown",
+   "agency_how": "type word",
+   "why_not": {
+    "outline": "key: pin only"
+   }
+  },
+  "IE-0311": {
+   "n": "Killinthomas Wood Forest Reserve",
    "kinds": [
     "outline",
     "map",
