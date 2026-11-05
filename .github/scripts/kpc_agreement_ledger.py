@@ -24,13 +24,15 @@ FIELDS = ['park', 'kind', 'proposed_by', 'proposal', 'source', 'confirmed_by', '
           'agreed_lat', 'agreed_lon', 'pota_lat', 'pota_lon', 'notes']
 
 
-def load_rows(path=LEDGER):
+def load_rows(path=None):
+    if path is None: path = LEDGER
     if not pathlib.Path(path).exists(): return []
     with open(path, newline='', encoding='utf-8') as f:
         return list(csv.DictReader(f))
 
 
-def save_rows(rows, path=LEDGER):
+def save_rows(rows, path=None):
+    if path is None: path = LEDGER
     pathlib.Path(path).parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=FIELDS, extrasaction='ignore')
@@ -38,7 +40,8 @@ def save_rows(rows, path=LEDGER):
         for r in rows: w.writerow({k: r.get(k, '') for k in FIELDS})
 
 
-def load_state(path=STATE):
+def load_state(path=None):
+    if path is None: path = STATE
     try: s = json.load(open(path, encoding='utf-8'))
     except Exception: s = {}  # noqa: BLE001
     s.setdefault('auto', False)
