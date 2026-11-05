@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 380 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 376 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -36,7 +36,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 3 | data/fers/US-AK.json.gz | HOLD | F-2 NOT SURE 5 -> 8 (over 30% change); F-2 10 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, US-0003+US-0878, US-0026+US-0889 |
 | 2026-11-02 | 3 | data/fers/US-CA.json.gz | HOLD | F-2 candidates 66 -> 133 (over 30% change); F-2 77 new candidate pairs since the live file (over 10% of 66): a person looks at them first, e.g. US-0046+US-4562, US-0049+US-4562, US-0049+US-4566 |
 | 2026-11-02 | 3 | data/fers/US-CT.json | HOLD | F-2 candidates 26 -> 40 (over 30% change); F-2 15 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-12620+US-4561, US-1646+US-7528 |
-| 2026-11-02 | 3 | data/fers/US-MD.json.gz | PASS |  |
 | 2026-11-02 | 3 | data/fers/US-MN.json.gz | HOLD | F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km |
 | 2026-11-02 | 3 | data/fers/US-ND.json | HOLD | F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 47 rows for 83 (over 10% fewer) |
 | 2026-11-02 | 3 | data/fers/US-NH.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 23): a person looks at them first, e.g. US-13595+US-4938, US-13595+US-4949, US-4512+US-4958 |
@@ -112,6 +111,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-05 | 0 | data/fers/US-AZ.json | HOLD | F-4 data/fers/US-AZ.json replaces live data/fers/US-AZ.json.gz (other format) with 36 rows for 509 (over 10% fewer) |
 | 2026-11-05 | 0 | data/fers/US-CO.json | HOLD | F-2 candidates 40 -> 4 (over 30% change); F-2 only 3 of 40 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-0059 + US-4406; F-K known 2-fer |
 | 2026-11-05 | 0 | data/fers/US-ID.json | HOLD | F-4 data/fers/US-ID.json replaces live data/fers/US-ID.json.gz (other format) with 11 rows for 1220 (over 10% fewer) |
+| 2026-11-05 | 0 | data/fers/US-KS.json | HOLD | F-2 candidates 25 -> 17 (over 30% change); F-2 only 17 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-2333 + US-7402; F-K known 2-f |
 | 2026-11-05 | 0 | data/fers/US-MT.json | HOLD | F-4 data/fers/US-MT.json replaces live data/fers/US-MT.json.gz (other format) with 8 rows for 944 (over 10% fewer) |
 | 2026-11-05 | 0 | data/fers/US-NM.json | HOLD | F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 30 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US- |
 | 2026-11-05 | 0 | data/fers/US-NV.json.gz | HOLD | F-2 NOT SURE 45 -> 10 (over 30% change); F-2 only 31 of 46 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 13 new candidate pairs since the live file (over 10% of |
@@ -177,9 +177,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/fers/CA-YT.json | PASS |  |
 | ? | ? | data/fers/US-AL.json | PASS |  |
 | ? | ? | data/fers/US-DC.json | PASS |  |
-| ? | ? | data/fers/US-KS.json | HOLD | F-2 candidates 25 -> 17 (over 30% change); F-2 only 17 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-2333 + US-7402; F-K known 2-f |
 | ? | ? | data/fers/US-KY.json.gz | PASS |  |
 | ? | ? | data/fers/US-LA.json | PASS |  |
+| ? | ? | data/fers/US-MD.json.gz | PASS |  |
 | ? | ? | data/fers/US-MS.json | HOLD | F-2 NOT SURE 6 -> 9 (over 30% change); F-2 8 new candidate pairs since the live file (over 10% of 5): a person looks at them first, e.g. US-0390+US-4498, US-2547+US-7119, US-4493+US-7114 |
 | ? | ? | data/fers/US-VT.json | PASS |  |
 | ? | ? | data/hours/US-KY.json | PASS |  |
@@ -251,15 +251,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-8617.json | PASS |  |
 | ? | ? | data/trails/US-9203.json | PASS |  |
 | 2026-11-04 | 1 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-04 | 1 | data/world-key/BS.json | HOLD | F-O1 outlines 32 -> 18 (more than 1% lost) |
-| 2026-11-04 | 1 | data/world-key/CV.json | PASS |  |
-| 2026-11-04 | 1 | data/world-key/NC.json | HOLD | F-O1 outlines 24 -> 12 (more than 1% lost) |
-| 2026-11-05 | 0 | data/world-key/DE.json | HOLD | F-O1 outlines 979 -> 932 (more than 1% lost) |
+| 2026-11-05 | 0 | data/world-key/CZ.json | HOLD | F-O1 outlines 232 -> 215 (more than 1% lost) |
 | 2026-11-05 | 0 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
-| ? | ? | data/ca-key/answers-applied.json | RELEASE |  |
-| ? | ? | data/ca-key/hardlook-joins.json | RELEASE |  |
-| ? | ? | data/ca-key/refs.json | RELEASE |  |
-| ? | ? | data/ca-key/why-not.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
 | ? | ? | data/pile-solver/AU.json | PASS |  |
@@ -308,13 +301,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/pile-solver/solved-join.csv | ? |  |
 | ? | ? | data/pile-solver/solved-pin.csv | ? |  |
 | ? | ? | data/trails/index-state.json | PASS |  |
-| ? | ? | data/us-key/lost-finds.json | RELEASE |  |
-| ? | ? | data/us-key/refresh.json | RELEASE |  |
+| ? | ? | data/us-key/answers-applied.json | RELEASE |  |
+| ? | ? | data/us-key/overrides.json | RELEASE |  |
 | ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
 | ? | ? | data/world-key/BE.json | RELEASE |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
+| ? | ? | data/world-key/BS.json | PASS |  |
 | ? | ? | data/world-key/BT.json | PASS |  |
 | ? | ? | data/world-key/BW.json | PASS |  |
 | ? | ? | data/world-key/BZ.json | PASS |  |
@@ -325,8 +319,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/CL.json | PASS |  |
 | ? | ? | data/world-key/CM.json | PASS |  |
 | ? | ? | data/world-key/CO.json | PASS |  |
+| ? | ? | data/world-key/CV.json | PASS |  |
 | ? | ? | data/world-key/CX.json | PASS |  |
-| ? | ? | data/world-key/CZ.json | PASS |  |
+| ? | ? | data/world-key/DE.json | PASS |  |
 | ? | ? | data/world-key/DK.json | RELEASE |  |
 | ? | ? | data/world-key/DO.json | PASS |  |
 | ? | ? | data/world-key/EC.json | PASS |  |
@@ -362,6 +357,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/MT.json | PASS |  |
 | ? | ? | data/world-key/MV.json | PASS |  |
 | ? | ? | data/world-key/MX.json | PASS |  |
+| ? | ? | data/world-key/NC.json | PASS |  |
 | ? | ? | data/world-key/NF.json | PASS |  |
 | ? | ? | data/world-key/NI.json | PASS |  |
 | ? | ? | data/world-key/NL.json | PASS |  |
