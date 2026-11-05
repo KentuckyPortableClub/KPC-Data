@@ -8,7 +8,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 |---|---|---|---|---|
 | US | 11,197 | 427 | 1,483 | +229 |
 | Canada | 4,376 | 39 | 1,486 | +124 |
-| World | 28,104 | 0 | 17,630 | -11,913 |
+| World | 28,252 | 0 | 17,482 | -11,765 |
 
 ## Questions (per file: tier + answer)
 
@@ -24,6 +24,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 - **nearmiss-nov2** (45 rows): LIKELY open 17, SURE open 28
 - **no-recheck** (13 rows): - NOT SURE 1, - YES 2, LIKELY NO 1, LIKELY NOT SURE 6, LIKELY YES 1, SURE YES 2
 - **not-sure-for-chat9** (146 rows): - open 146
+- **outside-intake-nov5** (402 rows): - open 402
 - **parked** (0 rows): 
 - **pin-typos** (0 rows): 
 - **world-finder** (3830 rows): - NO 1652, - NOT SURE 27, - YES 15, LIKELY NO 437, LIKELY NOT SURE 464, LIKELY YES 57, LIKELY open 30, SURE NO 72, SURE NOT SURE 50, SURE YES 984, SURE bot YES 35, SURE open 7

@@ -1,9 +1,9 @@
 {
  "about": "R-GC8 'why not' tag for every Canada park with NO outline in the current Canada key (kpc_ca_whynot.py, after each Canada key build). Same tags as the US file: no-layer / picture-map-only / private / name-mismatch / needs-parcel / pin-doubt.",
  "counts": {
-  "needs-parcel": 316,
-  "no-layer": 1221,
-  "name-mismatch": 19,
+  "needs-parcel": 292,
+  "no-layer": 1158,
+  "name-mismatch": 27,
   "private": 9
  },
  "parks": {
@@ -70,7 +70,7 @@
   "CA-3157": {
    "st": "AB",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Waterton Lakes National Park Of Canada"
+   "why": "the pin is inside a bigger area: Waterton Lakes"
   },
   "CA-4771": {
    "st": "AB",
@@ -100,7 +100,7 @@
   "CA-4776": {
    "st": "AB",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Waterton Lakes National Park Of Canada"
+   "why": "the pin is inside a bigger area: Waterton Lakes"
   },
   "CA-4777": {
    "st": "AB",
@@ -260,7 +260,7 @@
   "CA-6101": {
    "st": "AB",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Waterton Lakes National Park Of Canada"
+   "why": "the pin is inside a bigger area: Waterton Lakes"
   },
   "CA-6116": {
    "st": "AB",
@@ -357,22 +357,12 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-3298": {
-   "st": "BC",
-   "tag": "no-layer",
-   "why": "no official record found (Ecological Reserve)"
-  },
   "CA-3334": {
    "st": "BC",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: CHU CHUA COTTONWOOD PARK"
   },
   "CA-3358": {
-   "st": "BC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
-  "CA-3359": {
    "st": "BC",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
@@ -397,11 +387,6 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-3679": {
-   "st": "BC",
-   "tag": "name-mismatch",
-   "why": "a record held for a person's check: Kilby General Store Museum"
-  },
   "CA-3688": {
    "st": "BC",
    "tag": "no-layer",
@@ -424,8 +409,8 @@
   },
   "CA-3778": {
    "st": "BC",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: MAQUINNA MARINE PARK"
   },
   "CA-3888": {
    "st": "BC",
@@ -436,21 +421,6 @@
    "st": "BC",
    "tag": "no-layer",
    "why": "no official record found (Provincial Park)"
-  },
-  "CA-3968": {
-   "st": "BC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
-  "CA-4025": {
-   "st": "BC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
-  "CA-4187": {
-   "st": "BC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
   },
   "CA-4791": {
    "st": "BC",
@@ -1037,11 +1007,6 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #24 Wildlife Management Area"
   },
-  "CA-1240": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #17 Wildlife Management Area"
-  },
   "CA-1242": {
    "st": "NB",
    "tag": "needs-parcel",
@@ -1051,11 +1016,6 @@
    "st": "NB",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #20 Wildlife Management Area"
-  },
-  "CA-1251": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
   "CA-1255": {
    "st": "NB",
@@ -1107,11 +1067,6 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: Wilson's Point Wildlife Refuge"
   },
-  "CA-4810": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #20 Wildlife Management Area"
-  },
   "CA-4811": {
    "st": "NB",
    "tag": "needs-parcel",
@@ -1141,11 +1096,6 @@
    "st": "NB",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #21 Wildlife Management Area"
-  },
-  "CA-4944": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
   "CA-5081": {
    "st": "NB",
@@ -1250,7 +1200,7 @@
   "CA-5172": {
    "st": "NB",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #21 Wildlife Management Area"
+   "why": "the pin is inside a bigger area: Prospect Street Park"
   },
   "CA-5173": {
    "st": "NB",
@@ -1287,11 +1237,6 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #21 Wildlife Management Area"
   },
-  "CA-5184": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #17 Wildlife Management Area"
-  },
   "CA-5185": {
    "st": "NB",
    "tag": "needs-parcel",
@@ -1319,8 +1264,8 @@
   },
   "CA-5193": {
    "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #17 Wildlife Management Area"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Malloy Park"
   },
   "CA-5197": {
    "st": "NB",
@@ -1362,11 +1307,6 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
-  "CA-5211": {
-   "st": "NB",
-   "tag": "no-layer",
-   "why": "no official record found (National Heritage Site)"
-  },
   "CA-5212": {
    "st": "NB",
    "tag": "no-layer",
@@ -1386,11 +1326,6 @@
    "st": "NB",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
-  },
-  "CA-5217": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #21 Wildlife Management Area"
   },
   "CA-5220": {
    "st": "NB",
@@ -1522,20 +1457,10 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
-  "CA-5253": {
-   "st": "NB",
-   "tag": "no-layer",
-   "why": "no official record found (Recreation Park)"
-  },
   "CA-5255": {
    "st": "NB",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #9 Wildlife Management Area"
-  },
-  "CA-5258": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #16 Wildlife Management Area"
   },
   "CA-5259": {
    "st": "NB",
@@ -1582,16 +1507,6 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
-  "CA-5273": {
-   "st": "NB",
-   "tag": "no-layer",
-   "why": "no official record found (Recreation Park)"
-  },
-  "CA-5274": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #20 Wildlife Management Area"
-  },
   "CA-5545": {
    "st": "NB",
    "tag": "needs-parcel",
@@ -1617,20 +1532,10 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
-  "CA-5688": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
-  },
   "CA-5691": {
    "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
-  },
-  "CA-5693": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Jervis Bay Ross Memorial Park"
   },
   "CA-5699": {
    "st": "NB",
@@ -1647,11 +1552,6 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
   },
-  "CA-5704": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
-  },
   "CA-5706": {
    "st": "NB",
    "tag": "needs-parcel",
@@ -1659,18 +1559,8 @@
   },
   "CA-5707": {
    "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
-  },
-  "CA-5708": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
-  },
-  "CA-5711": {
-   "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #23 Wildlife Management Area"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Private David Greenslade Peace Park"
   },
   "CA-5726": {
    "st": "NB",
@@ -2034,8 +1924,8 @@
   },
   "CA-6485": {
    "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: New Brunswick #19 Wildlife Management Area"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: The Cap-Lumiere Nature Reserve’s salt marsh, sand dunes and "
   },
   "CA-6487": {
    "st": "NB",
@@ -2159,8 +2049,8 @@
   },
   "CA-6584": {
    "st": "NB",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Privately Protected Area (NCC 120214)"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Grand Barachois nature reserve protects a dynamic dune syste"
   },
   "CA-6586": {
    "st": "NB",
@@ -2509,98 +2399,28 @@
   },
   "CA-0478": {
    "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-0479": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-0485": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-0882": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-0892": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-0894": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-0903": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Scots Bay North Provincial Park"
   },
   "CA-0919": {
    "st": "NS",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-0929": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
   "CA-0941": {
    "st": "NS",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: Cole Harbour - Lawrencetown Provincial Park"
   },
-  "CA-1759": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1766": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
-  "CA-1771": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1791": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1794": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
   "CA-1799": {
    "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1845": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1848": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Recreation Park)"
+   "tag": "needs-parcel",
+   "why": "the pin is inside a bigger area: MacCormacks Beach Provincial Park"
   },
   "CA-1849": {
    "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Wildlife Area)"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Shubenacadie Provincial Park"
   },
   "CA-1851": {
    "st": "NS",
@@ -2612,30 +2432,10 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-1867": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1876": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
   "CA-1893": {
    "st": "NS",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
-  },
-  "CA-1902": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-1904": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
   },
   "CA-3053": {
    "st": "NS",
@@ -2732,11 +2532,6 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-5446": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
   "CA-5448": {
    "st": "NS",
    "tag": "no-layer",
@@ -2746,11 +2541,6 @@
    "st": "NS",
    "tag": "no-layer",
    "why": "no official record found (Historic Site)"
-  },
-  "CA-5796": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
   },
   "CA-5797": {
    "st": "NS",
@@ -2822,11 +2612,6 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-5811": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
   "CA-5812": {
    "st": "NS",
    "tag": "no-layer",
@@ -2873,11 +2658,6 @@
    "why": "the province's Fable file says so"
   },
   "CA-5821": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
-  "CA-5822": {
    "st": "NS",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
@@ -3017,6 +2797,11 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
+  "CA-6136": {
+   "st": "NS",
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Shelburne River Wilderness Area"
+  },
   "CA-6137": {
    "st": "NS",
    "tag": "no-layer",
@@ -3142,11 +2927,6 @@
    "tag": "no-layer",
    "why": "no official record found (National Heritage Site)"
   },
-  "CA-6251": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
   "CA-6253": {
    "st": "NS",
    "tag": "no-layer",
@@ -3232,90 +3012,20 @@
    "tag": "no-layer",
    "why": "no official record found (Historic Site)"
   },
-  "CA-6483": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
   "CA-6502": {
    "st": "NS",
    "tag": "no-layer",
    "why": "no official record found (Historic Site)"
   },
-  "CA-6506": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park Reserve)"
-  },
-  "CA-6553": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
   "CA-6554": {
    "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Historic Site)"
-  },
-  "CA-6557": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6558": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6559": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6560": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6561": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6562": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6563": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6565": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
+   "tag": "needs-parcel",
+   "why": "the pin is inside a bigger area: MUSQUODOBOIT TRAIL AT GREENWAY"
   },
   "CA-6567": {
    "st": "NS",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: Bowers Meadows Wilderness Area"
-  },
-  "CA-6568": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6569": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
-  },
-  "CA-6570": {
-   "st": "NS",
-   "tag": "no-layer",
-   "why": "no official record found (Provincial Park)"
   },
   "CA-0002": {
    "st": "NT",
@@ -3551,11 +3261,6 @@
    "st": "NT",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: Tarium Niryutait Marine Protected Area"
-  },
-  "CA-5478": {
-   "st": "NT",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
   },
   "CA-5479": {
    "st": "NT",
@@ -4507,11 +4212,6 @@
    "tag": "no-layer",
    "why": "no official record found (Conservation Area)"
   },
-  "CA-5989": {
-   "st": "ON",
-   "tag": "no-layer",
-   "why": "no official record found (Conservation Area)"
-  },
   "CA-5993": {
    "st": "ON",
    "tag": "no-layer",
@@ -4872,6 +4572,11 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
+  "CA-6138": {
+   "st": "PE",
+   "tag": "no-layer",
+   "why": "no official record found (Canadian Heritage River)"
+  },
   "CA-6172": {
    "st": "PE",
    "tag": "no-layer",
@@ -4884,8 +4589,8 @@
   },
   "CA-6439": {
    "st": "PE",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Privately Protected Area (NCC 142051)"
+   "tag": "name-mismatch",
+   "why": "a record held for a person's check: Holman’s Island, located in Bedeque Bay, was the former site"
   },
   "CA-6594": {
    "st": "PE",
@@ -4915,7 +4620,7 @@
   "CA-0514": {
    "st": "QC",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Aire de concentration d'oiseaux aquatiques du Fleuve Saint-L"
+   "why": "the pin is inside a bigger area: fleuve Saint-Laurent (Île Verte) Water Fowl Gathering Area"
   },
   "CA-0515": {
    "st": "QC",
@@ -5175,42 +4880,7 @@
   "CA-1020": {
    "st": "QC",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Aire de concentration d'oiseaux aquatiques des Rapides de La"
-  },
-  "CA-1023": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
-  },
-  "CA-1024": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
-  },
-  "CA-1025": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
-  },
-  "CA-1026": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
-  },
-  "CA-1027": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
-  },
-  "CA-1028": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
-  },
-  "CA-1029": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Wildlife Reserve)"
+   "why": "the pin is inside a bigger area: Rapides de Lachine (Cote Ste-Catherine) Water Fowl Gathering"
   },
   "CA-1031": {
    "st": "QC",
@@ -5232,15 +4902,10 @@
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: Banc-des-Américains Marine Protected Area"
   },
-  "CA-1928": {
-   "st": "QC",
-   "tag": "name-mismatch",
-   "why": "a record held for a person's check: Réserve aquatique projetée de la rivière Ashuapmushuan"
-  },
   "CA-1929": {
    "st": "QC",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Aire de concentration d'oiseaux aquatiques Baie Comeau"
+   "why": "the pin is inside a bigger area: Baie Comeau Water Fowl Gathering Area"
   },
   "CA-1944": {
    "st": "QC",
@@ -5313,11 +4978,6 @@
    "why": "the province's Fable file says so"
   },
   "CA-2000": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
-  "CA-2007": {
    "st": "QC",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
@@ -5512,11 +5172,6 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-2137": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
   "CA-2140": {
    "st": "QC",
    "tag": "no-layer",
@@ -5570,7 +5225,7 @@
   "CA-2165": {
    "st": "QC",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Aire de concentration d'oiseaux aquatiques Fleuve Saint-Laur"
+   "why": "the pin is inside a bigger area: fleuve Saint-Laurent (Emb Rdp) Water Fowl Gathering Area"
   },
   "CA-2171": {
    "st": "QC",
@@ -5612,25 +5267,10 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-2208": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Nature Reserve)"
-  },
-  "CA-2209": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Nature Reserve)"
-  },
-  "CA-2211": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Nature Reserve)"
-  },
   "CA-2218": {
    "st": "QC",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Zec du Bas-Saint-Laurent"
+   "tag": "no-layer",
+   "why": "no official record found (Nature Reserve)"
   },
   "CA-2219": {
    "st": "QC",
@@ -5641,6 +5281,11 @@
    "st": "QC",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
+  },
+  "CA-2227": {
+   "st": "QC",
+   "tag": "no-layer",
+   "why": "no official record found (Nature Reserve)"
   },
   "CA-2228": {
    "st": "QC",
@@ -5661,11 +5306,6 @@
    "st": "QC",
    "tag": "no-layer",
    "why": "the province's Fable file says so"
-  },
-  "CA-2242": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "no official record found (Nature Reserve)"
   },
   "CA-2246": {
    "st": "QC",
@@ -5882,11 +5522,6 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-4945": {
-   "st": "QC",
-   "tag": "no-layer",
-   "why": "the province's Fable file says so"
-  },
   "CA-4946": {
    "st": "QC",
    "tag": "no-layer",
@@ -5910,7 +5545,7 @@
   "CA-4950": {
    "st": "QC",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Baie de L'Isle-Verte National Wildlife Area"
+   "why": "the pin is inside a bigger area: Réserve nationale de faune de la baie de l'Isle-Verte"
   },
   "CA-4951": {
    "st": "QC",
@@ -6655,7 +6290,7 @@
   "CA-5888": {
    "st": "QC",
    "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Gatineau Park"
+   "why": "the pin is inside a bigger area: Parc de la Gatineau"
   },
   "CA-5889": {
    "st": "QC",
@@ -7332,37 +6967,7 @@
    "tag": "no-layer",
    "why": "the province's Fable file says so"
   },
-  "CA-6130": {
-   "st": "SK",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
-  },
-  "CA-6140": {
-   "st": "SK",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
-  },
   "CA-6141": {
-   "st": "SK",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
-  },
-  "CA-6142": {
-   "st": "SK",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
-  },
-  "CA-6149": {
-   "st": "SK",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
-  },
-  "CA-6150": {
-   "st": "SK",
-   "tag": "needs-parcel",
-   "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
-  },
-  "CA-6152": {
    "st": "SK",
    "tag": "needs-parcel",
    "why": "the pin is inside a bigger area: Prince Albert National Park Of Canada"
