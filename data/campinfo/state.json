@@ -66,6 +66,28 @@
    "status": "done",
    "updated": "2026-11-04"
   },
+  "US-AZ": {
+   "camps": 203,
+   "checked": 198,
+   "counts": {
+    "camps": 198,
+    "needs_browser": 0,
+    "needs_key": 168,
+    "no_page": 0,
+    "not_official": 2,
+    "ok": 1,
+    "other": 11,
+    "resting": 0,
+    "robots": 16,
+    "with_booking": 28,
+    "with_elevation": 0,
+    "with_facts": 2,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
   "US-CO": {
    "camps": 626,
    "checked": 605,
@@ -703,6 +725,7 @@
   "US-AK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-AL": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-AR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-AZ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-CT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -760,6 +783,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-04"
+  },
+  "US-AZ": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-05"
   },
   "US-CO": {
    "cell": {
@@ -1977,43 +2009,55 @@
  },
  "last": {
   "areas": [
-   "US-UT"
+   "US-AZ"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 331,
+   "dropped_queued": 216,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
+    ],
+    [
+     "https://azstateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from azstateparks.com this run"
+    ],
+    [
+     "https://azprtl.azstateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from azprtl.azstateparks.com this run"
     ]
    ],
-   "requests": 18,
+   "requests": 34,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 4,
+   "robots_unreadable": 4,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 12,
-   "camps": 332,
+   "browser": 9,
+   "camps": 203,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 332,
-   "no_page": 0,
-   "not_official": 0,
-   "ok": 1,
-   "pages_read": 0,
+   "needs_browser": 9,
+   "needs_key": 173,
+   "no_page": 2,
+   "not_official": 2,
+   "ok": 10,
+   "pages_read": 18,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 140
+   "skipped_fresh": 0
   },
-  "when": "2026-11-04"
+  "when": "2026-11-05"
  },
  "test": {
   "result": "PASS",
