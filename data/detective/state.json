@@ -33,8 +33,8 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "deferred": 16,
-   "dropped_queued": 66,
+   "deferred": 7,
+   "dropped_queued": 45,
    "errors": 0,
    "for_person_urls": [
     [
@@ -46,16 +46,12 @@
      "robots.txt answered 403: nothing fetched from ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com this run"
     ],
     [
-     "https://services6.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
-    ],
-    [
      "https://services1.arcgis.com/robots.txt",
      "robots.txt answered 403: nothing fetched from services1.arcgis.com this run"
     ],
     [
-     "https://services5.arcgis.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
+     "https://services6.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services6.arcgis.com this run"
     ],
     [
      "https://services2.arcgis.com/robots.txt",
@@ -70,13 +66,17 @@
      "robots.txt answered 502: nothing fetched from arcgisserver.digital.mass.gov this run"
     ],
     [
+     "https://services5.arcgis.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from services5.arcgis.com this run"
+    ],
+    [
      "https://usdaoig.oversight.gov/robots.txt",
      "robots.txt answered 406: nothing fetched from usdaoig.oversight.gov this run"
     ]
    ],
-   "requests": 169,
+   "requests": 116,
    "rested": 8,
-   "robots": 12,
+   "robots": 10,
    "robots_unreadable": 9,
    "strikes": 0
   },
@@ -89,7 +89,7 @@
    "nothing": 0,
    "padus_only": 0,
    "parks": 0,
-   "requests": 235,
+   "requests": 156,
    "skipped_fresh": 0,
    "sure": 0
   },
@@ -98,12 +98,12 @@
  "questions": {
   "open": 43,
   "stat": {
-   "answered": 1,
+   "answered": 0,
    "blocked": 0,
    "not_found": 5,
-   "partly": 20,
-   "questions": 26,
-   "skipped_done": 25
+   "partly": 12,
+   "questions": 17,
+   "skipped_done": 34
   },
   "when": "2026-11-05"
  }

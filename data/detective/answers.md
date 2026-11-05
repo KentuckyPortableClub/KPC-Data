@@ -114,6 +114,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
 - https://www.blm.gov/visit/deep-creek-wilderness (read 2026-11-05)
 - the chain:
   - step 4 PAD-US (context): PAD-US record under the pin: "St. George Field Office" managed by BLM, owner BLM, 629088 acres · "Unit_Nm=St. George Field Office; Mang_Name=BLM; Own_Name=BLM; Own_Type=FED; Des_Tp=PUB; GIS_Acres=629088; Category=Fee" · https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0
+  - step 2 agency page (answer): acreage: Deep Creek Wilderness and Deep Creek North Wilderness These two contiguous units, containing approximately 7,500 acres of public land, are located near the nort · "Deep Creek Wilderness and Deep Creek North Wilderness These two contiguous units, containing approximately 7,500 acres of public land, are located near the nort" · https://www.blm.gov/visit/deep-creek-wilderness
 - steps tried:
   - step 1: point query at the pin https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0 → did not open
@@ -582,7 +583,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_National_Historic_Landmarks/FeatureServer/0 → did not open
   - step 1: point query at the pin https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=creek%20deep%20north%20Utah → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=creek%20deep%20north%20Utah → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=creek%20deep%20north%20Utah → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/visit/deep-creek-north-wilderness-0 → opened, nothing matched
@@ -601,7 +602,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
   - step 1: point query at the pin https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3 → 1 named polygon(s) of 1
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=beach%20north%20scarborough%20Rhode%20Island → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=beach%20north%20scarborough%20Rhode%20Island → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=beach%20north%20scarborough%20Rhode%20Island → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://riparks.com/beach/scarborough-north.php → did not open (HTTP 404)
@@ -617,7 +618,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14 → did not open
   - step 1: point query at the pin https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 2 record(s)
   - step 2: agency park page https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract → did not open (rest)
@@ -634,7 +635,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=beaver%20brook%20Massachusetts → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=beaver%20brook%20Massachusetts → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=beaver%20brook%20Massachusetts → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 2 record(s)
   - step 2: agency park page https://www.mass.gov/locations/beaver-brook-reservation → opened, nothing matched
@@ -650,7 +651,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/7 → did not open
   - step 1: point query at the pin https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/6 → did not open
   - step 1: point query at the pin https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/8 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=fallsville%20south%20Ohio → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=fallsville%20south%20Ohio → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=fallsville%20south%20Ohio → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/fallsville-south-wildlife-area → did not open (HTTP 404)
@@ -799,7 +800,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3 → did not open
   - step 1: point query at the pin https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=mccurtain%20ouachita%20Oklahoma → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=mccurtain%20ouachita%20Oklahoma → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=mccurtain%20ouachita%20Oklahoma → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.wildlifedepartment.com/hunting/wma/southeast/ouachita-mccurtain-unit → opened, nothing matched
@@ -816,7 +817,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9 → nothing matched
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=anacua%20las%20palomas%20Texas → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=anacua%20las%20palomas%20Texas → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=anacua%20las%20palomas%20Texas → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=103 → opened, nothing matched
@@ -833,7 +834,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9 → nothing matched
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=creek%20richland%20Texas → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=creek%20richland%20Texas → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=creek%20richland%20Texas → 2 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=23 → opened, nothing matched
@@ -850,7 +851,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0 → did not open
   - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14 → did not open
   - step 1: point query at the pin https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=east%20sandhills%20Georgia → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=east%20sandhills%20Georgia → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=east%20sandhills%20Georgia → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://georgiawildlife.com/sandhills-wma-east → did not open (rest)

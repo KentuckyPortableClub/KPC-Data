@@ -2725,7 +2725,6 @@
    "read": "2026-11-05",
    "ref": "US-6011",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2752,7 +2751,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=creek%20deep%20north%20Utah",
      "what": "open-data search"
@@ -2802,7 +2801,6 @@
    "read": "2026-11-05",
    "ref": "US-6367",
    "result": "NOT FOUND",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2823,7 +2821,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=mccurtain%20ouachita%20Oklahoma",
      "what": "open-data search"
@@ -2885,7 +2883,6 @@
    "read": "2026-11-05",
    "ref": "US-6571",
    "result": "NOT FOUND",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -2912,7 +2909,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=anacua%20las%20palomas%20Texas",
      "what": "open-data search"
@@ -2974,7 +2971,6 @@
    "read": "2026-11-05",
    "ref": "US-6596",
    "result": "NOT FOUND",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3001,7 +2997,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=creek%20richland%20Texas",
      "what": "open-data search"
@@ -3098,7 +3094,6 @@
    "read": "2026-11-05",
    "ref": "US-7722",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "1 named polygon(s) of 1",
@@ -3125,7 +3120,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=beach%20north%20scarborough%20Rhode%20Island",
      "what": "open-data search"
@@ -3182,7 +3177,6 @@
    "read": "2026-11-05",
    "ref": "US-7906",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3209,7 +3203,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia",
      "what": "open-data search"
@@ -3253,7 +3247,6 @@
    "read": "2026-11-05",
    "ref": "US-7914",
    "result": "NOT FOUND",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3280,7 +3273,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=east%20sandhills%20Georgia",
      "what": "open-data search"
@@ -3343,7 +3336,6 @@
    "read": "2026-11-05",
    "ref": "US-8400",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3370,7 +3362,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=beaver%20brook%20Massachusetts",
      "what": "open-data search"
@@ -3424,7 +3416,6 @@
    "read": "2026-11-05",
    "ref": "US-9462",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -3451,7 +3442,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=fallsville%20south%20Ohio",
      "what": "open-data search"
