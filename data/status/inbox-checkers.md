@@ -255,11 +255,8 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/us-key/US-NV.json held: F-O1 outlines 226 -> 223 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 0 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 18 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/CV.json held: F-O1 outlines 35 -> 0 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/CZ.json held: F-O1 outlines 232 -> 215 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/DE.json held: F-O1 outlines 979 -> 930 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/HU.json held: F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/IE.json held: F-O1 outlines 175 -> 168 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/NC.json held: F-O1 outlines 24 -> 0 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/PT.json held: F-O1 outlines 335 -> 327 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/DE.json held: F-O1 outlines 979 -> 932 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/NC.json held: F-O1 outlines 24 -> 12 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
