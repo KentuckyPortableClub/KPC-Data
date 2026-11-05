@@ -104,11 +104,11 @@ jobs:
           FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
         run: |
           cd kpcdata
-          python3 .github/scripts/kpc_intake_reader.py camping || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # HQ Oct 31 7:55 PM: the camp bot pulls its own files from branch intake-files
+          python3 .github/scripts/kpc_intake_reader.py camping || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # HQ Oct 31 7:55 PM: the camp bot pulls its own files from branch intake-files
           python3 .github/scripts/kpc_workshop.py | tee /tmp/workshop.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_workshop.py::stopped with an error (exit $rc), see the log above"; echo "kpc_workshop.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           if [ "${{ inputs.keyed_once }}" = yes ] && [ -f data/campinfo/US-KY.json ]; then   # ONE keyed fill: only empty fields, to the waiting room, live file untouched
             git show HEAD:data/campinfo/US-KY.json > /tmp/live.json 2>/dev/null || cp data/campinfo/US-KY.json /tmp/live.json
-            python3 - <<'PY' || { kpc_rc=$?; echo "::error title=inline Python::stopped with an error (exit $kpc_rc), see the log above"; echo "inline Python - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            python3 - <<'PY' || { kpc_rc=$?; echo "::error title=inline Python::stopped with an error (exit $kpc_rc), see the log above"; echo "inline Python - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           import json, os
           old = json.load(open('/tmp/live.json')); new = json.load(open('data/campinfo/US-KY.json'))
           def empty(v): return v is None or v == '' or v == [] or v == {} or (isinstance(v, dict) and all(empty(x) for x in v.values()))
@@ -130,18 +130,18 @@ jobs:
           print(f'::notice title=Keyed fill::{n_f} KY federal campground rows filled (empty fields only): waiting in data/waiting/in/ for chat 11; the live file is unchanged')
           PY
             cp /tmp/live.json data/campinfo/US-KY.json
-            bash ../links/.github/scripts/kpc_push_data.sh . "keyed fill: KY federal campgrounds (waiting)" data/waiting || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            bash ../links/.github/scripts/kpc_push_data.sh . "keyed fill: KY federal campgrounds (waiting)" data/waiting || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
           grep -o '^LEFT=[0-9]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
           grep -o '^GATE=[A-Z]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
-          bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Passed Kentucky gates start the queue
         if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' && env.GATE == 'PASS' }}
         id: kept_green_3
         continue-on-error: true
         run: |
           echo "::notice title=Workshop::Kentucky gates PASSED: starting the whole queue (chain ${{ inputs.chain }})"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
         id: kept_green_4
@@ -149,7 +149,7 @@ jobs:
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Workshop::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -169,4 +169,16 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
           PY

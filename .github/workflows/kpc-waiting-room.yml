@@ -92,13 +92,13 @@ jobs:
         run: |
           cd kpcdata
           git fetch -q origin picture-maps 2>/dev/null && git show FETCH_HEAD:index.json > /tmp/pic-index.json 2>/dev/null || true   # ok: optional git step; the next step reports
-          python3 .github/scripts/kpc_auto_flow.py recheck layers maps || { kpc_rc=$?; echo "::error title=kpc_auto_flow.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_auto_flow.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/kpc_auto_flow.py recheck layers maps || { kpc_rc=$?; echo "::error title=kpc_auto_flow.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_auto_flow.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           cd ../lk
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add requests 2>/dev/null; git diff --cached --quiet && exit 0
           git commit -qm 'AUTO-3: save-map requests from the documents bot (nightly)'
-          { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }
-          gh workflow run kpc-lookup.yml -R ${{ github.repository }} --ref lookup || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # a bot push starts nothing by itself: start the look-up bot
+          { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }
+          gh workflow run kpc-lookup.yml -R ${{ github.repository }} --ref lookup || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # a bot push starts nothing by itself: start the look-up bot
           true
       - name: KEY DOCTOR after the build (report only; outside review Nov 2, Brandon OK 6:34 AM) -> data/status/key-doctor/ + the board
         # Nov 2 general review: every release run (the 2-hourly ones too), so a stuck YES / build-id trap shows within 2 h, not next morning
@@ -107,7 +107,7 @@ jobs:
         continue-on-error: true
         run: |
           cd kpcdata
-          python3 .github/scripts/draft/tools/kpc_engine/kpc_engine.py doctor --links ../links --data . --out /tmp/kd > /tmp/kd.txt 2>&1 || { kpc_rc=$?; echo "::error title=kpc_engine.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_engine.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/draft/tools/kpc_engine/kpc_engine.py doctor --links ../links --data . --out /tmp/kd > /tmp/kd.txt 2>&1 || { kpc_rc=$?; echo "::error title=kpc_engine.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_engine.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           grep '^::' /tmp/kd.txt || tail -5 /tmp/kd.txt
           mkdir -p data/status/key-doctor && rm -f data/status/key-doctor/stuck-*.md
           cp /tmp/kd/key-doctor/summary.json /tmp/kd/key-doctor/nos.json /tmp/kd/key-doctor/release.json /tmp/kd/key-doctor/stuck-*.md data/status/key-doctor/ 2>/dev/null || true   # ok: nothing to do is fine
@@ -118,17 +118,17 @@ jobs:
       - name: Intake files for the chats (questions for chat 2 / 11, hours-fees saved only; HQ Oct 31 7:55 PM)
         id: kept_green_5
         continue-on-error: true
-        run: cd kpcdata && python3 .github/scripts/kpc_intake_reader.py questions && python3 .github/scripts/kpc_intake_reader.py hours || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: cd kpcdata && python3 .github/scripts/kpc_intake_reader.py questions && python3 .github/scripts/kpc_intake_reader.py hours || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: The week's numbers + the control panel's data (data/status/week-review.md, panel.json; Brandon Oct 30 11:01 AM)
         id: kept_green_6
         continue-on-error: true
         env:
           LINKS: ../links
-        run: cd kpcdata && python3 .github/scripts/kpc_week_numbers.py || { kpc_rc=$?; echo "::error title=kpc_week_numbers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_week_numbers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: cd kpcdata && python3 .github/scripts/kpc_week_numbers.py || { kpc_rc=$?; echo "::error title=kpc_week_numbers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_week_numbers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: The morning list for chat 11 (data/waiting/today.md; Brandon Oct 29 11:50 PM)
         id: kept_green_7
         continue-on-error: true
-        run: cd kpcdata && python3 .github/scripts/kpc_waiting_today.py || { kpc_rc=$?; echo "::error title=kpc_waiting_today.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_today.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: cd kpcdata && python3 .github/scripts/kpc_waiting_today.py || { kpc_rc=$?; echo "::error title=kpc_waiting_today.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_today.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save (data/waiting + data/status, plus the live files an undo / release / promotion changed)
         id: kept_green_8
         continue-on-error: true
@@ -136,7 +136,7 @@ jobs:
           cd kpcdata
           D="data/waiting data/status"
           if [ "${{ inputs.mode || 'release-approved' }}" != replay ]; then D="data"; fi
-          bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'release-approved (nightly)' }} ${{ inputs.target }}" $D || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'release-approved (nightly)' }} ${{ inputs.target }}" $D || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: A key went live -> the 2-fers rerun for those states (chat 2 BOT E reads data/waiting/released-key.json)
         if: always()
         id: kept_green_9
@@ -145,7 +145,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           [ -f /tmp/kpc-key-released ] || exit 0
-          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-fers-pending.yml/dispatches -f ref=main -f 'inputs[force]=yes' || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-fers-pending.yml/dispatches -f ref=main -f 'inputs[force]=yes' || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           echo "::notice title=Waiting room::2-fer rerun started for $(cat /tmp/kpc-key-released)"
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
@@ -166,4 +166,16 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
           PY

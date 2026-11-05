@@ -42,7 +42,7 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p ../out
           git fetch -q origin gps-packs 2>/dev/null && git --work-tree=../out checkout -q FETCH_HEAD -- . 2>/dev/null; git reset -q
-          python3 .github/scripts/kpc_gps_prep.py ../links ../prep || { kpc_rc=$?; echo "::error title=kpc_gps_prep.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_gps_prep.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/kpc_gps_prep.py ../links ../prep || { kpc_rc=$?; echo "::error title=kpc_gps_prep.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_gps_prep.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           for d in parkinfo access; do mkdir -p ../prep/$d; for f in data/$d/US-*.json; do [ -e ../prep/$d/$(basename $f) ] || ln -s "$PWD/$f" ../prep/$d/; done; done
           AREAS=$(ls ../prep/parkinfo | sed -n 's/^\(US-[A-Z][A-Z]\)\.json$/\1/p' | sort -u | paste -sd, -)
           P=.github/scripts/draft/tools/kpc_gps/kpc_gpspacks/kpc_gpspacks.py
@@ -53,14 +53,15 @@ jobs:
           N=$(ls ../out/data/gps/*.gpx.zip 2>/dev/null | wc -l); MB=$(du -sm ../out/data/gps 2>/dev/null | cut -f1)
           echo "::notice title=GPS packs::exit $E; $N state packs, ${MB:-0} MB on branch gps-packs"
           python3 .github/scripts/kpc_status.py board 'GPS packs' green "$N state packs built $(date -u +%F) (${MB:-0} MB, branch gps-packs)" 'chat 3 links them on the site after Brandon GO' || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "GPS packs status" data/status 2>/dev/null || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "GPS packs status" data/status 2>/dev/null || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           cd ../out && rm -rf .git && git init -q -b gps-packs && git add -A && git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "GPS packs $(date -u +%F) (single commit, replaced each run)" \
-            && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" gps-packs || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" gps-packs || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
           KPC_STEPS: ${{ toJSON(steps) }}
+          KPC_FAIL_SAFE: ${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}   # next round C4: red on a caught error (safe: this job starts nothing after it)
         run: |
           python3 - <<'PY'
           import json, os
@@ -76,4 +77,16 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
           PY

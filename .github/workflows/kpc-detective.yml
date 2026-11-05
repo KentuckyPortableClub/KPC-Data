@@ -95,7 +95,7 @@ jobs:
             python3 .github/scripts/kpc_detective_bot.py | tee /tmp/detective.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_detective_bot.py::stopped with an error (exit $rc), see the log above"; echo "kpc_detective_bot.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             echo "::endgroup::"
             L=$(grep -o '^LEFT=[0-9]*' /tmp/detective.log | tail -1 | cut -d= -f2); LEFT="${L:-$LEFT}"
-            bash ../links/.github/scripts/kpc_push_data.sh . "park detective: chunk $i" data/detective data/intake data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            bash ../links/.github/scripts/kpc_push_data.sh . "park detective: chunk $i" data/detective data/intake data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             if [ -n "${{ inputs.areas }}" ]; then
               D=$(python3 -c "import json,os;s=json.load(open('data/detective/state.json'));a=os.environ['AREAS'].upper().split();print('1' if all((s['areas'].get(x) or {}).get('status')=='done' for x in a) else '')" 2>/dev/null || echo '')
               [ "$D" = 1 ] && break
@@ -104,10 +104,10 @@ jobs:
             fi
           done
           echo "LEFT=${LEFT:-}" >> "$GITHUB_ENV"
-          python3 .github/scripts/kpc_dig_bridge.py out ../lk || { kpc_rc=$?; echo "::error title=kpc_dig_bridge.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_dig_bridge.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          (cd ../lk && git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add answers && git commit -qm 'park detective: dig answers' && { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
+          python3 .github/scripts/kpc_dig_bridge.py out ../lk || { kpc_rc=$?; echo "::error title=kpc_dig_bridge.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_dig_bridge.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          (cd ../lk && git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add answers && git commit -qm 'park detective: dig answers' && { saved=0; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           python3 .github/scripts/kpc_status.py board 'park detective' green "answers in data/detective/answers.md, outline leads in data/detective/review.md, intake rows in data/intake/queue.json" "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself" "left: ${LEFT:-?}" || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "park detective: status" data/detective data/intake data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "park detective: status" data/detective data/intake data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
         id: kept_green_3
@@ -115,7 +115,7 @@ jobs:
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Park detective::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C -f jobs="${{ inputs.jobs || 'questions gaps' }}" || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C -f jobs="${{ inputs.jobs || 'questions gaps' }}" || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -135,4 +135,16 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
           PY
