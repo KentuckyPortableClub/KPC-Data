@@ -12,37 +12,52 @@
   "US-FL",
   "US-MS"
  ],
- "since": "2026-10-28",
- "date": "2026-10-29 11:52 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
- "known_answers": "19/19 on 2026-10-29",
+ "since": "2026-11-05",
+ "date": "2026-11-05 17:09 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "missing check: 8284 of 16103 expected pairs were never looked at (51%; 5201 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8242); <park>: not in this run (another state, retired, or no POTA pin) (40); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (2)",
+  "water not checked: US-NC: 1 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-FL: 2 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 539,
-  "DROPPED": 1527,
-  "NEVER LOOKED AT": 14376
+  "FOUND": 705,
+  "DROPPED": 1913,
+  "NEVER LOOKED AT": 13485
+ },
+ "never_looked_at": {
+  "counted": 8284,
+  "no_official_outline": 5201,
+  "expected": 16103,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8242,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 40,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 2
+  }
  },
  "report": {
   "pass1": {
-   "date": "2026-10-28",
-   "pairs tested": 5924,
-   "pairs whose boxes touch": 5924
+   "date": "2026-11-05",
+   "pairs tested": 8482,
+   "pairs whose boxes touch": 8482
   },
   "pass2": {
-   "agree with the pass before": 0,
-   "date": "2026-10-29",
-   "pairs tested": 0
+   "agree with the pass before": 4408,
+   "date": "2026-11-05",
+   "pairs tested": 989
   },
   "pass3": {
-   "agree with the pass before": 0,
-   "date": "2026-10-29",
-   "pairs tested": 0
+   "agree with the pass before": 2819,
+   "date": "2026-11-05",
+   "pairs tested": 921
   },
   "pass5": {
-   "checked": 422,
-   "date": "2026-10-29",
+   "checked": 365,
+   "date": "2026-11-05",
    "pairs tested": 0,
-   "still not checked": 0
+   "still not checked": 1
   }
  },
  "files": {
@@ -57,107 +72,123 @@
   "US-MS": "data/fers/US-MS.json"
  },
  "US-TN": {
-  "rows": 688,
-  "live": 79,
+  "rows": 773,
+  "live": 88,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the outlines overlap, but the PAD-US Park Service fee record": 2,
-   "no public owner on the ownership map": 1,
-   "low-confidence outline for Land Between the Lakes National R": 1
+   "one record covers two parks": 1,
+   "no public owner on the ownership map": 5
   },
-  "dropped": 519,
-  "merged": 86
+  "dropped": 510,
+  "merged": 169
  },
  "US-NC": {
-  "rows": 901,
-  "live": 92,
+  "rows": 1477,
+  "live": 133,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the outlines overlap, but the PAD-US Park Service fee record": 2,
-   "the outlines overlap, but the Forest Service ownership map": 1
+   "no public owner on the ownership map": 11,
+   "this spot is 115 km from Pisgah WRC State Game Land's POTA p": 1,
+   "water not checked": 1,
+   "this spot is 117 km from Pisgah WRC State Game Land's POTA p": 3,
+   "this spot is 101 km from Nantahala State Game Land's POTA pi": 1
   },
-  "dropped": 595,
-  "merged": 211
+  "dropped": 750,
+  "merged": 577
+ },
+ "water_weak": {
+  "US-NC": 1,
+  "US-FL": 2
  },
  "US-VA": {
-  "rows": 148,
-  "live": 52,
+  "rows": 444,
+  "live": 113,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 2
+   "no public owner on the ownership map": 10,
+   "one record covers two parks": 1
   },
-  "dropped": 35,
-  "merged": 59
+  "dropped": 114,
+  "merged": 206
  },
  "US-WV": {
-  "rows": 292,
-  "live": 32,
+  "rows": 297,
+  "live": 33,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 214,
-  "merged": 46
+  "dropped": 210,
+  "merged": 54
  },
  "US-GA": {
-  "rows": 289,
-  "live": 55,
+  "rows": 348,
+  "live": 65,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 169,
-  "merged": 65
+  "not_sure": {
+   "one record covers two parks": 4
+  },
+  "dropped": 193,
+  "merged": 86
  },
  "US-AL": {
-  "rows": 77,
-  "live": 21,
+  "rows": 83,
+  "live": 24,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 39,
+  "not_sure": {
+   "no public owner on the ownership map": 1,
+   "one record covers two parks": 1
+  },
+  "dropped": 40,
   "merged": 17
  },
  "US-SC": {
-  "rows": 234,
-  "live": 30,
+  "rows": 156,
+  "live": 21,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 2
+   "no public owner on the ownership map": 1,
+   "one record covers two parks": 2
   },
-  "dropped": 127,
-  "merged": 75
+  "dropped": 113,
+  "merged": 19
  },
  "US-FL": {
-  "rows": 1273,
-  "live": 205,
+  "rows": 1377,
+  "live": 210,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 9,
-   "owner not known for Suwannee River State Park": 1,
-   "owner not known for Apalachicola River Wildlife Area": 3
+   "water not checked": 2,
+   "no public owner on the ownership map": 20,
+   "one record covers two parks": 1,
+   "this spot is 135 km from Florida Keys Wildlife Area's POTA p": 1
   },
-  "dropped": 778,
-  "merged": 277
+  "dropped": 740,
+  "merged": 403
  },
  "US-MS": {
-  "rows": 95,
-  "live": 9,
+  "rows": 130,
+  "live": 16,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the official outline of Canal Section Wildlife Management Ar": 3,
-   "the official outline of Twin Oaks Wildlife Management Area c": 1,
+   "the official outline of Twin Oaks Wildlife Management Area c": 3,
+   "the official outline of Mahannah Wildlife Management Area co": 1,
    "the official outline of Okatibbee Wildlife Management Area c": 1,
    "the official outline of Ward Bayou Wildlife Management Area": 1
   },
-  "dropped": 31,
-  "merged": 49
+  "dropped": 21,
+  "merged": 84
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-TN",
   "US-NC",
   "US-VA",
@@ -167,6 +198,5 @@
   "US-SC",
   "US-FL",
   "US-MS"
- ],
- "states_held": []
+ ]
 }
