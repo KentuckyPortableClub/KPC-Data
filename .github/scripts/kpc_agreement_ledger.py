@@ -50,7 +50,8 @@ def load_state(path=None):
     return s
 
 
-def save_state(s, path=STATE):
+def save_state(s, path=None):
+    if path is None: path = STATE
     pathlib.Path(path).parent.mkdir(parents=True, exist_ok=True)
     json.dump(s, open(path, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 

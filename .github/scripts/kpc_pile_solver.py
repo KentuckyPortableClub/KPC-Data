@@ -830,6 +830,9 @@ def main():
 
 # ------------------------------------------------------------------ selftest (offline)
 def selftest():
+    # Never touch the repo's data/agreement-ledger/ in a selftest: every ledger write goes to a temp dir.
+    import tempfile as _tf0, kpc_agreement_ledger as _AL0
+    _td0 = pathlib.Path(_tf0.mkdtemp()); _AL0.LEDGER = _td0/'ledger.csv'; _AL0.STATE = _td0/'state.json'
     import shutil, tempfile, urllib.request
     fx = HERE.parent.parent / 'tests/fixtures/pile_solver'
     FX = load(fx / 'cases.json', {})
@@ -922,7 +925,7 @@ def selftest():
     KEYS[kf]['parks']['US-9990'] = {'n': 'Kaskaskia State Forest', 't': 'State Forest', 'm': [['a1', 'Kaskaskia State Forest', 0, 'name']]}
     import tempfile
     import kpc_agreement_ledger as _AL
-    _td = pathlib.Path(tempfile.mkdtemp()); _AL.LEDGER = _td/'ledger.csv'; _AL.STATE = _td/'state.json'; _AL.save_rows([]); _AL.save_state(_AL.load_state())
+    _td = pathlib.Path(tempfile.mkdtemp()); _AL.LEDGER = _td/'ledger.csv'; _AL.STATE = _td/'state.json'; _AL.save_rows([]); _AL.save_state({'auto': False})
     rled = solve(dict(tp, ids=['a1'], name='Kaskaskia State Forest'), FarRec(km=8), {}, {})
     check('8 km unique name: SOLVED-JOIN', rled['verdict'], 'SOLVED-JOIN')
     check('8 km unique name: ledger proposal flag', 'ledger proposal' in rled['pin_flag'], True)
