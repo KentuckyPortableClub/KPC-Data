@@ -138,6 +138,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-0054",
+   "Park name (as the agency writes it)": "Nez Perce National Historical Park",
+   "Size": 4226,
+   "Unit": "acres",
+   "Agency": "National Park Service",
+   "Source page": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1187&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "CA-4794",
    "Park name (as the agency writes it)": "Kootenai House",
    "Size": 0,
@@ -568,15 +577,6 @@
    "Agency": "National_Heritage_Areas_Updated2023",
    "Source page": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-0054",
-   "Park name (as the agency writes it)": "Nez Perce National Historical Park",
-   "Size": 4226,
-   "Unit": "acres",
-   "Agency": "National Park Service",
-   "Source page": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1187&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-11215",
@@ -1521,6 +1521,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "services1.arcgis.com",
+   "Agency/area": "National Park Service",
+   "Kind": "GIS layer",
+   "Example URL": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+   "# times used": 7,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "maps.gov.bc.ca",
    "Agency/area": "Government of British Columbia (Historic Places)",
    "Kind": "GIS layer",
@@ -1596,16 +1606,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
    "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "services1.arcgis.com",
-   "Agency/area": "National_Heritage_Areas_Updated2023",
-   "Kind": "GIS layer",
-   "Example URL": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0",
-   "# times used": 7,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
