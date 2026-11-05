@@ -870,7 +870,6 @@
    "read": "2026-11-05",
    "ref": "US-11806",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -897,7 +896,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=gordys%20hill%20johnson%20New%20Mexico",
      "what": "open-data search"
@@ -1035,7 +1034,6 @@
    "read": "2026-11-05",
    "ref": "US-11889",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -1062,7 +1060,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=piceance%20Colorado",
      "what": "open-data search"
@@ -1135,7 +1133,6 @@
    "read": "2026-11-05",
    "ref": "US-11906",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -1162,7 +1159,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=bangs%20special%20Colorado",
      "what": "open-data search"
@@ -1252,7 +1249,6 @@
    "read": "2026-11-05",
    "ref": "US-12285",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -1279,7 +1275,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=shillapoo%20south%20Washington",
      "what": "open-data search"
@@ -1374,7 +1370,6 @@
    "read": "2026-11-05",
    "ref": "US-12286",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -1401,7 +1396,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=north%20shillapoo%20Washington",
      "what": "open-data search"
@@ -1463,7 +1458,6 @@
    "read": "2026-11-05",
    "ref": "US-12685",
    "result": "NOT FOUND",
-   "retry": true,
    "tried": [
     {
      "result": "nothing matched",
@@ -1490,7 +1484,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=gombold%20mallard%20marsh%20Minnesota",
      "what": "open-data search"
@@ -1538,7 +1532,6 @@
    "read": "2026-11-05",
    "ref": "US-13018",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "did not open",
@@ -1565,7 +1558,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=black%20east%20herd%20range%20rock%20west%20Nevada",
      "what": "open-data search"
@@ -1629,7 +1622,6 @@
    "read": "2026-11-05",
    "ref": "US-13203",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "1 named polygon(s) of 1",
@@ -1656,7 +1648,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=east%20robert%20wickstrom%20Minnesota",
      "what": "open-data search"
@@ -1716,7 +1708,6 @@
    "read": "2026-11-05",
    "ref": "US-13221",
    "result": "PARTLY",
-   "retry": true,
    "tried": [
     {
      "result": "1 named polygon(s) of 1",
@@ -1743,7 +1734,7 @@
      "what": "point query at the pin"
     },
     {
-     "result": "did not open (deferred); second try opened",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=gordon%20yeager%20Minnesota",
      "what": "open-data search"
@@ -3170,14 +3161,7 @@
    "what": "tract"
   },
   "pile-US-7906-tract": {
-   "answer": {
-    "date": "2026-11-05",
-    "fact": "acreage, tract: The Almo Tract is a 6,700-acre property part of Chattahoochee Fall Line WMA complex.",
-    "line": "The Almo Tract is a 6,700-acre property part of Chattahoochee Fall Line WMA complex.",
-    "role": "answer",
-    "step": "2 agency page",
-    "url": "https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract"
-   },
+   "answer": null,
    "area": "US-GA",
    "by": "pile solver v1",
    "finds": [
@@ -3198,38 +3182,15 @@
      "role": "context",
      "step": "4 PAD-US",
      "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-    },
-    {
-     "date": "2026-11-05",
-     "fact": "acreage, tract: The Almo Tract is a 6,700-acre property part of Chattahoochee Fall Line WMA complex.",
-     "line": "The Almo Tract is a 6,700-acre property part of Chattahoochee Fall Line WMA complex.",
-     "role": "answer",
-     "step": "2 agency page",
-     "url": "https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract"
-    },
-    {
-     "date": "2026-11-05",
-     "fact": "tract: The Chattahoochee Fall Line WMA is made up of 4 management tracts:",
-     "line": "The Chattahoochee Fall Line WMA is made up of 4 management tracts:",
-     "role": "answer",
-     "step": "2 agency page",
-     "url": "https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract"
-    },
-    {
-     "date": "2026-11-05",
-     "fact": "tract: Chattahoochee Fall Line WMA: Almo Tract | Department Of Natural Resources Division",
-     "line": "Chattahoochee Fall Line WMA: Almo Tract | Department Of Natural Resources Division",
-     "role": "context",
-     "step": "2 agency page",
-     "url": "https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract"
     }
    ],
    "id": "pile-US-7906-tract",
+   "not found": "context only: tried steps 1, 2, 3, 4, 6",
    "note": "pile solver: 195025 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'almo' of a bigger area; 'Chattahoochee Fall Line Wildlife Management Area' does not name that piece (rule 18)); 194888 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'almo' of a bigg",
    "park": "Chattahoochee Fall Line Almo Tract Wildlife Management Area",
    "read": "2026-11-05",
    "ref": "US-7906",
-   "result": "ANSWERED",
+   "result": "PARTLY",
    "retry": true,
    "tried": [
     {
@@ -3274,16 +3235,16 @@
      "what": "PAD-US point query"
     },
     {
-     "result": "opened, 6 matching line(s)",
+     "result": "did not open (rest)",
      "step": 2,
      "url": "https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract",
      "what": "agency park page"
     },
     {
-     "result": "skipped: not about parks",
-     "step": 2,
-     "url": "",
-     "what": "1 document link(s) not followed"
+     "result": "did not open (rest)",
+     "step": 6,
+     "url": "https://georgiawildlife.com/news",
+     "what": "news releases"
     }
    ],
    "ver": 5,
@@ -3345,22 +3306,16 @@
      "what": "PAD-US point query"
     },
     {
-     "result": "opened, nothing matched",
+     "result": "did not open (rest)",
      "step": 2,
      "url": "https://georgiawildlife.com/sandhills-wma-east",
      "what": "agency park page"
     },
     {
-     "result": "did not open (HTTP 403)",
+     "result": "did not open (rest)",
      "step": 6,
      "url": "https://georgiawildlife.com/news",
      "what": "news releases"
-    },
-    {
-     "result": "skipped: not about parks",
-     "step": 2,
-     "url": "",
-     "what": "1 document link(s) not followed"
     }
    ],
    "ver": 5,
@@ -3776,28 +3731,16 @@
      "what": "PAD-US point query"
     },
     {
-     "result": "opened, nothing matched",
+     "result": "did not open (rest)",
      "step": 2,
      "url": "https://georgiawildlife.com/sandhills-wma-west",
      "what": "agency park page"
     },
     {
-     "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf",
-     "what": "document: PDF MAP"
-    },
-    {
-     "result": "did not open (HTTP 403)",
+     "result": "did not open (rest)",
      "step": 6,
      "url": "https://georgiawildlife.com/news",
      "what": "news releases"
-    },
-    {
-     "result": "skipped: not about parks",
-     "step": 2,
-     "url": "",
-     "what": "1 document link(s) not followed"
     }
    ],
    "ver": 5,

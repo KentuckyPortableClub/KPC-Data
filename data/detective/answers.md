@@ -11,6 +11,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
 - http://www.alabamapioneers.com/blue-springs-alabama-spring-moved-two-times-settling/ (read 2026-11-05)
 - the chain:
   - step 4 PAD-US (context): PAD-US record under the pin: "Blue Springs State Park" managed by SPR, owner SPR, 706 acres · "Unit_Nm=Blue Springs State Park; Mang_Name=SPR; Own_Name=SPR; Own_Type=STAT; Des_Tp=SP; GIS_Acres=706; Category=Fee" · https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0
+  - step 2 agency documents (answer): tract: The Blue Springs School was first established in 1920 on land donated by Henry H. · "The Blue Springs School was first established in 1920 on land donated by Henry H." · http://www.alabamapioneers.com/blue-springs-alabama-spring-moved-two-times-settling/
 - steps tried:
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0 → nothing matched
   - step 1: point query at the pin https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0 → nothing matched
@@ -27,6 +28,8 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
 - **polygon under the pin in a layer we read: "Rio Bonito Acquired Lands Tract 1", 261 ac**
 - "FET_TYPE=4; FET_SUBTYPE=SRMA; FET_NAME=Rio Bonito Acquired Lands Tract 1; ADM_UNIT_CD=NMP01000; ADMIN_ST=NM; GIS_ACRES=260.60874151; DESCRIPTION=Roswell RMP (1997); WEB_LINK=https://www.blm.gov/office/roswell-field-office; WEB_DISPLAY=YES"
 - https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1 (read 2026-11-05)
+- the chain:
+  - step 1 our layers (answer): polygon under the pin in a layer we read: "Rio Bonito Acquired Lands Tract 1", 261 ac · "FET_TYPE=4; FET_SUBTYPE=SRMA; FET_NAME=Rio Bonito Acquired Lands Tract 1; ADM_UNIT_CD=NMP01000; ADMIN_ST=NM; GIS_ACRES=260.60874151; DESCRIPTION=Roswell RMP (19" · https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1 · note: a different unit of the same park
 - steps tried:
   - step 1: point query at the pin https://services2.arcgis.com/CjbW1bVhK4dB3WOa/arcgis/rest/services/State_Game_Commission_Lands_view/FeatureServer/6 → did not open
   - step 1: point query at the pin https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0 → did not open
@@ -82,6 +85,8 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
 - **polygon under the pin in a layer we read: "Cooper Lake SP-South Sulphur Unit", 1020 ac**
 - "PH_UnitNum=1155; LocName=Cooper Lake SP-South Sulphur Unit; Class=Property Boundary; Active=Yes; Name_Acres=Cooper Lake SP-South Sulphur Unit - 1020 acres; Acres=1020; KMLDescrip=<strong>Cooper Lake SP-South Sulphur Unit - 1020 acres</stron"
 - https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9 (read 2026-11-05)
+- the chain:
+  - step 1 our layers (answer): polygon under the pin in a layer we read: "Cooper Lake SP-South Sulphur Unit", 1020 ac · "PH_UnitNum=1155; LocName=Cooper Lake SP-South Sulphur Unit; Class=Property Boundary; Active=Yes; Name_Acres=Cooper Lake SP-South Sulphur Unit - 1020 acres; Acre" · https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9
 - steps tried:
   - step 1: point query at the pin https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0 → did not open
   - step 1: point query at the pin https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9 → 1 named polygon(s) of 2
@@ -94,6 +99,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
 - "PROP_NAME=Wolf River Bottoms Wildlife Area; PROP_CODE=8905; PROP_ACRES=3138.17; TRANS_TYPE=1; PROGRAM=WM"
 - https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0 (read 2026-11-05)
 - the chain:
+  - step 1 our layers (answer): polygon under the pin in a layer we read: "Wolf River Bottoms Wildlife Area", 3138 ac · "PROP_NAME=Wolf River Bottoms Wildlife Area; PROP_CODE=8905; PROP_ACRES=3138.17; TRANS_TYPE=1; PROGRAM=WM" · https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0
   - step 1 our layers (answer): polygon under the pin in a layer we read: "Wolf River Bottoms Wildlife Area", 60 ac · "TRANS_CONTROL_NO=80790; TRANS_TYPE_CODE=1; PROP_CODE=8905; EASE_USE_CODE=1111; PROP_NAME_CODE=89050000; PROP_NAME=Wolf River Bottoms Wildlife Area; PROP_NAME_LA" · https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/1
 - steps tried:
   - step 1: point query at the pin https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0 → 1 named polygon(s) of 1
@@ -118,27 +124,6 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/visit/deep-creek-wilderness → opened, 1 matching line(s)
   - step 2: 4 document link(s) not followed  → skipped: not about parks
-
-## pile-US-7906-tract: US-7906 Chattahoochee Fall Line Almo Tract Wildlife Management Area · tract · ANSWERED (step 2 agency page)
-- asked: pile solver: 195025 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'almo' of a bigger area; 'Chattahoochee Fall Line Wildlife Management Area' does not name that piece (rule 18)); 194888 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'almo' of a bigg (pile solver v1)
-- **acreage, tract: The Almo Tract is a 6,700-acre property part of Chattahoochee Fall Line WMA complex.**
-- "The Almo Tract is a 6,700-acre property part of Chattahoochee Fall Line WMA complex."
-- https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract (read 2026-11-05)
-- the chain:
-  - step 4 PAD-US (context): PAD-US record under the pin: "Almo/Blackjack" managed by NGO, owner NGO, 8328 acres · "Unit_Nm=Almo/Blackjack; Mang_Name=NGO; Own_Name=NGO; Own_Type=NGO; Des_Tp=PCON; GIS_Acres=8328; Category=Fee" · https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0
-  - step 4 PAD-US (context): PAD-US record under the pin: "Chattahoochee Fall Line Wildlife Management Area" managed by SDNR, owner SDNR, 16192 acres · "Unit_Nm=Chattahoochee Fall Line Wildlife Management Area; Mang_Name=SDNR; Own_Name=SDNR; Own_Type=STAT; Des_Tp=SCA; GIS_Acres=16192; Category=Fee" · https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0
-  - step 2 agency page (answer): tract: The Chattahoochee Fall Line WMA is made up of 4 management tracts: · "The Chattahoochee Fall Line WMA is made up of 4 management tracts:" · https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract
-  - step 2 agency page (context): tract: Chattahoochee Fall Line WMA: Almo Tract | Department Of Natural Resources Division · "Chattahoochee Fall Line WMA: Almo Tract | Department Of Natural Resources Division" · https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract
-- steps tried:
-  - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9 → did not open
-  - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0 → did not open
-  - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14 → did not open
-  - step 1: point query at the pin https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → did not open (deferred); second try opened
-  - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → not reached
-  - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 2 record(s)
-  - step 2: agency park page https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract → opened, 6 matching line(s)
-  - step 2: 1 document link(s) not followed  → skipped: not about parks
 
 ## q-little-south-fork-sna-own-page: US-7962 Little South Fork State Natural Area · acreage · ANSWERED (step 2 agency page)
 - asked: the park's OWN Office of Kentucky Nature Preserves page and its acreage; the site links the Burnett WWCA page, a different area (chat 10 (Fable item 2))
@@ -292,7 +277,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0 → did not open
   - step 1: point query at the pin https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1 → opened, nothing matched the name
   - step 1: point query at the pin https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=gordys%20hill%20johnson%20New%20Mexico → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=gordys%20hill%20johnson%20New%20Mexico → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=gordys%20hill%20johnson%20New%20Mexico → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/visit/johnson-gordys-hill-ohv-area → opened, nothing matched
@@ -311,7 +296,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41 → nothing matched
   - step 1: point query at the pin https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=piceance%20Colorado → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=piceance%20Colorado → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=piceance%20Colorado → 6 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://cpw.state.co.us/state-wildlife-areas/piceance-swa → opened, 1 matching line(s)
@@ -330,7 +315,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41 → nothing matched
   - step 1: point query at the pin https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5 → did not open
   - step 1: point query at the pin https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=bangs%20special%20Colorado → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=bangs%20special%20Colorado → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=bangs%20special%20Colorado → 1 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/documents/grand-junction-fo/public-room/map/bangs-special-recreation-management-area-overview-map → opened, nothing matched
@@ -350,7 +335,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0 → 2 named polygon(s) of 2
   - step 1: point query at the pin https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6 → nothing matched
   - step 1: point query at the pin https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=shillapoo%20south%20Washington → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=shillapoo%20south%20Washington → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=shillapoo%20south%20Washington → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://wdfw.wa.gov/places-to-go/wildlife-areas/shillapoo-south-wildlife-area-unit → opened, 1 matching line(s)
@@ -371,7 +356,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0 → 2 named polygon(s) of 2
   - step 1: point query at the pin https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6 → nothing matched
   - step 1: point query at the pin https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=north%20shillapoo%20Washington → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=north%20shillapoo%20Washington → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=north%20shillapoo%20Washington → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://wdfw.wa.gov/places-to-go/wildlife-areas/shillapoo-north-wildlife-area-unit → opened, 1 matching line(s)
@@ -414,7 +399,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0 → nothing matched
   - step 1: point query at the pin https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2 → did not open
   - step 1: point query at the pin https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0 → nothing matched
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=black%20east%20herd%20range%20rock%20west%20Nevada → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=black%20east%20herd%20range%20rock%20west%20Nevada → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=black%20east%20herd%20range%20rock%20west%20Nevada → 3 dataset(s), none official
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/black-rock → opened, nothing matched
@@ -431,7 +416,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_state_forest/FeatureServer/4 → nothing matched
   - step 1: point query at the pin https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_scientific_and_nat_areas/FeatureServer/4 → nothing matched
   - step 1: point query at the pin https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=east%20robert%20wickstrom%20Minnesota → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=east%20robert%20wickstrom%20Minnesota → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=east%20robert%20wickstrom%20Minnesota → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0138301 → did not open (robots)
@@ -447,7 +432,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_state_forest/FeatureServer/4 → nothing matched
   - step 1: point query at the pin https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_scientific_and_nat_areas/FeatureServer/4 → nothing matched
   - step 1: point query at the pin https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=gordon%20yeager%20Minnesota → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=gordon%20yeager%20Minnesota → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=gordon%20yeager%20Minnesota → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0098404 → did not open (robots)
@@ -621,6 +606,23 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 1 record(s)
   - step 2: agency park page https://riparks.com/beach/scarborough-north.php → did not open (HTTP 404)
 
+## pile-US-7906-tract: US-7906 Chattahoochee Fall Line Almo Tract Wildlife Management Area · tract · PARTLY
+- asked: pile solver: 195025 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'almo' of a bigger area; 'Chattahoochee Fall Line Wildlife Management Area' does not name that piece (rule 18)); 194888 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'almo' of a bigg (pile solver v1)
+- context only: tried steps 1, 2, 3, 4, 6
+- the chain:
+  - step 4 PAD-US (context): PAD-US record under the pin: "Almo/Blackjack" managed by NGO, owner NGO, 8328 acres · "Unit_Nm=Almo/Blackjack; Mang_Name=NGO; Own_Name=NGO; Own_Type=NGO; Des_Tp=PCON; GIS_Acres=8328; Category=Fee" · https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0
+  - step 4 PAD-US (context): PAD-US record under the pin: "Chattahoochee Fall Line Wildlife Management Area" managed by SDNR, owner SDNR, 16192 acres · "Unit_Nm=Chattahoochee Fall Line Wildlife Management Area; Mang_Name=SDNR; Own_Name=SDNR; Own_Type=STAT; Des_Tp=SCA; GIS_Acres=16192; Category=Fee" · https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0
+- steps tried:
+  - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9 → did not open
+  - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0 → did not open
+  - step 1: point query at the pin https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14 → did not open
+  - step 1: point query at the pin https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0 → did not open
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → did not open (deferred); second try opened
+  - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=almo%20chattahoochee%20fall%20line%20tract%20Georgia → not reached
+  - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 2 record(s)
+  - step 2: agency park page https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract → did not open (rest)
+  - step 6: news releases https://georgiawildlife.com/news → did not open (rest)
+
 ## pile-US-8400-tract: US-8400 Beaver Brook State Reserve · tract · PARTLY
 - asked: pile solver: sgmaa700052 Beaver Brook North Reservation (rule 18: 'north' names only one piece); sgmaa692087 Beaver Brook North Reservation (rule 18: 'north' names only one piece); sgmaa692035 Beaver Brook North Reservation (rule 18: 'north' names only one piece); sgmaa691858 Beaver Brook North Rese (pile solver v1)
 - context only: tried steps 1, 2, 3, 4
@@ -699,10 +701,8 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=sandhills%20west%20Georgia → did not open (deferred); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=sandhills%20west%20Georgia → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → 2 record(s)
-  - step 2: agency park page https://georgiawildlife.com/sandhills-wma-west → opened, nothing matched
-  - step 2: document: PDF MAP https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf → opened, nothing matched
-  - step 6: news releases https://georgiawildlife.com/news → did not open (HTTP 403)
-  - step 2: 1 document link(s) not followed  → skipped: not about parks
+  - step 2: agency park page https://georgiawildlife.com/sandhills-wma-west → did not open (rest)
+  - step 6: news releases https://georgiawildlife.com/news → did not open (rest)
 
 ## pile-US-9916-tract: US-9916 Blackwater River State Nature Preserve · tract · PARTLY
 - asked: pile solver: sgalb193 Blackwater River - South (rule 18: 'south' names only one piece) (pile solver v1)
@@ -787,7 +787,7 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 1: point query at the pin https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_state_forest/FeatureServer/4 → nothing matched
   - step 1: point query at the pin https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_scientific_and_nat_areas/FeatureServer/4 → nothing matched
   - step 1: point query at the pin https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2 → did not open
-  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=gombold%20mallard%20marsh%20Minnesota → did not open (deferred); second try opened
+  - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=gombold%20mallard%20marsh%20Minnesota → did not open (400); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=gombold%20mallard%20marsh%20Minnesota → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
   - step 2: agency park page https://www.dnr.state.mn.us/wmas/detail_report.html?id=wma0122400 → did not open (robots)
@@ -853,9 +853,8 @@ Read 2026-11-05. REVIEW ONLY: nothing here is in a key. ANSWERED first (a find m
   - step 3: open-data search https://hub.arcgis.com/api/v3/datasets?q=east%20sandhills%20Georgia → did not open (deferred); second try opened
   - step 3: open-data search (second try, ArcGIS Online) https://www.arcgis.com/sharing/rest/search?q=east%20sandhills%20Georgia → not reached
   - step 4: PAD-US point query https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0 → nothing under the pin
-  - step 2: agency park page https://georgiawildlife.com/sandhills-wma-east → opened, nothing matched
-  - step 6: news releases https://georgiawildlife.com/news → did not open (HTTP 403)
-  - step 2: 1 document link(s) not followed  → skipped: not about parks
+  - step 2: agency park page https://georgiawildlife.com/sandhills-wma-east → did not open (rest)
+  - step 6: news releases https://georgiawildlife.com/news → did not open (rest)
 
 ## pile-US-9797-tract: US-9797 Chattahoochee Fall Line Hilliard Tract Wildlife Management Area · tract · NOT FOUND
 - asked: pile solver: 195025 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'hilliard' of a bigger area; 'Chattahoochee Fall Line Wildlife Management Area' does not name that piece (rule 18)); 194888 Chattahoochee Fall Line Wildlife Management Area (the park is the piece 'hilliard' o (pile solver v1)
