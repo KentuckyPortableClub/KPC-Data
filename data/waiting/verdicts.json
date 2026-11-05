@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T23:54Z",
+ "checked": "2026-11-05T00:23Z",
  "switched_on": false,
  "results": [
   {
@@ -11,6 +11,13 @@
   },
   {
    "path": "data/ca-key/CA-BC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-MB.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -73,7 +80,21 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/ca-key/CA-SI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/ca-key/CA-SK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-SP.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -1159,9 +1180,11 @@
   {
    "path": "data/fers/US-IA.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 3 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-ID.json.gz",
@@ -1177,17 +1200,22 @@
    "path": "data/fers/US-IL.json",
    "kind": "fers",
    "why": [
-    "F-2 4 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-4112+US-9893"
+    "F-2 candidates 12 -> 19 (over 30% change)",
+    "F-2 9 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-1000+US-13298"
    ],
    "notes": [],
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-IN.json.gz",
+   "path": "data/fers/US-IN.json",
    "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
+   "why": [
+    "F-K known 2-fer missing: US-4164 + US-5691"
+   ],
+   "notes": [
+    "replaces live data/fers/US-IN.json.gz (same file, other format): promotion removes the old name"
+   ],
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-KS.json",
@@ -1250,6 +1278,16 @@
    "kind": "fers",
    "why": [
     "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-MO.json",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 16 -> 4 (over 30% change)",
+    "F-K known 2-fer missing: US-1772 + US-3356"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1408,7 +1446,8 @@
    "path": "data/fers/US-SD.json",
    "kind": "fers",
    "why": [
-    "F-2 3 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
+    "F-2 candidates 12 -> 18 (over 30% change)",
+    "F-2 6 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0068+US-11905, US-0675+US-2620, US-0675+US-2622"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1466,17 +1505,16 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-WI.json",
+   "path": "data/fers/US-WI.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 27 -> 3 (over 30% change)",
-    "F-2 NOT SURE 8 -> 105 (over 30% change)",
-    "F-2 only 3 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-4238 + US-8363"
+    "F-2 candidates 27 -> 105 (over 30% change)",
+    "F-2 NOT SURE 8 -> 16 (over 30% change)",
+    "F-2 only 18 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 87 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-0603+US-4311, US-0605+US-8672, US-0673+US-10725",
+    "F-K known 2-fer missing: US-10200 + US-1481"
    ],
-   "notes": [
-    "replaces live data/fers/US-WI.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -2162,210 +2200,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/BZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/CD.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/CL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/CO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/FO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/GB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/GR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/ID.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/IM.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/KE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/LK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/LR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/MT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/MV.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/MX.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/NC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/NZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/PR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/PY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/VI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/ZA.json",
-   "kind": "key",
-   "why": [
-    "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/ca-key/CA-MB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SP.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/US-IN.json",
-   "kind": "fers",
-   "why": [
-    "F-K known 2-fer missing: US-4164 + US-5691"
-   ],
-   "notes": [
-    "replaces live data/fers/US-IN.json.gz (same file, other format): promotion removes the old name"
-   ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-MO.json",
-   "kind": "fers",
-   "why": [
-    "F-2 NOT SURE 16 -> 4 (over 30% change)",
-    "F-K known 2-fer missing: US-1772 + US-3356"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-WI.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 27 -> 105 (over 30% change)",
-    "F-2 NOT SURE 8 -> 16 (over 30% change)",
-    "F-2 only 18 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 87 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-0603+US-4311, US-0605+US-8672, US-0673+US-10725",
-    "F-K known 2-fer missing: US-10200 + US-1481"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
    "path": "data/world-key/AS.json",
    "kind": "key",
    "why": [],
@@ -2417,7 +2251,21 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/BZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/CC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CD.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2438,7 +2286,21 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/CL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/CM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/CO.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2472,9 +2334,11 @@
   {
    "path": "data/world-key/DE.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O1 outlines 979 -> 930 (more than 1% lost)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/DK.json",
@@ -2519,6 +2383,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/FO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/FR.json",
    "kind": "key",
    "why": [],
@@ -2533,6 +2404,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/GB.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/GE.json",
    "kind": "key",
    "why": [],
@@ -2541,6 +2419,13 @@
   },
   {
    "path": "data/world-key/GL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/GR.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2584,6 +2469,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/world-key/ID.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/IE.json",
    "kind": "key",
    "why": [
@@ -2591,6 +2483,13 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/world-key/IM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/IT.json",
@@ -2608,6 +2507,27 @@
   },
   {
    "path": "data/world-key/JP.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/KE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/LR.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2649,6 +2569,36 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/MT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MV.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/MX.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NC.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 24 -> 0 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/world-key/NF.json",
    "kind": "key",
    "why": [],
@@ -2671,6 +2621,13 @@
   },
   {
    "path": "data/world-key/NO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/NZ.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -2712,6 +2669,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/world-key/PR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/PT.json",
    "kind": "key",
    "why": [
@@ -2719,6 +2683,13 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/world-key/PY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/QA.json",
@@ -2785,6 +2756,20 @@
   },
   {
    "path": "data/world-key/UY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/VI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/world-key/ZA.json",
    "kind": "key",
    "why": [],
    "notes": [],

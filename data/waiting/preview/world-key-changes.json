@@ -1,10 +1,10 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-04 22:57 UTC",
+ "made": "2026-11-05 00:23 UTC",
  "totals": {
   "gained": 419,
-  "lost": 219,
-  "pieces_changed": 4388,
+  "lost": 261,
+  "pieces_changed": 4346,
   "grade_changed": 12011
  },
  "per_area": {
@@ -58,8 +58,8 @@
   },
   "DE": {
    "gained": 0,
-   "lost": 3,
-   "pieces_changed": 683,
+   "lost": 45,
+   "pieces_changed": 641,
    "grade_changed": 0
   },
   "DK": {
@@ -8497,10 +8497,10 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "74",
-     "Refugio de Vida Silvestre Iris Alameda de Boquerón / BE de Boque",
+     "51",
+     "Bosque Estatal de Boquerón",
      "Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot",
-     "pin inside + shared name words"
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -10654,6 +10654,816 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CZ-0230"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0003",
+   "name": "Ammergauer Alpen Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Ammergauer Alpen",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0003"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0005",
+   "name": "Obere Donau Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Obere Donau",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0005"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0007",
+   "name": "Schwarzwald National Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Schwarzwald",
+     "BfN Nationalparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0007"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0009",
+   "name": "Schwarzwald Mitte/Nord Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Schwarzwald Mitte/Nord",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0009"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0010",
+   "name": "Altmühltal Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Altmühltal",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0010"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0014",
+   "name": "Schwaebisch-Fraenkischer Wald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Schwäbisch-Fränkischer-Wald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0014"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0017",
+   "name": "Oberpfälzer Wald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Oberpfälzer Wald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0017"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0020",
+   "name": "Neckartal-Odenwald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Neckartal-Odenwald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0020"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0021",
+   "name": "Bergstrasse-Odenwald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Bergstraße",
+     "BfN Naturparke",
+     "name part + same kind + pin inside"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0021"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0022",
+   "name": "Saar-Hunsrueck Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Saar-Hunsrück",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0022"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0024",
+   "name": "Noerdlicher Oberpfaelzer Wald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Nördlicher Oberpfälzer Wald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0024"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0030",
+   "name": "Südeifel Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Südeifel",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0030"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0033",
+   "name": "Hessischer Spessart Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Hessischer Spessart",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0033"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0035",
+   "name": "Rhein-Taunus Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Rhein-Taunus",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0035"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0037",
+   "name": "Nassau Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Nassau",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0037"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0039",
+   "name": "Hohes Venn-Eifel Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Hohes Venn-Eifel (Nordeifel)",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0039"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0040",
+   "name": "Erzgebirge Vogtland Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Erzgebirge / Vogtland",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0040"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0041",
+   "name": "Rhein-Westerwald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Rhein-Westerwald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0041"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0045",
+   "name": "Eifel National Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Nationalpark Eifel",
+     "BfN Nationalparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0045"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0047",
+   "name": "Lahn-Dill Bergland Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Lahn-Dill-Bergland",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0047"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0048",
+   "name": "Rheinland Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Rheinland",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0048"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0051",
+   "name": "Bergisches Land Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Bergisches Land",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0051"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0054",
+   "name": "Sauerland-Rothaargebirge Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Sauerland-Rothaargebirge",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0054"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0057",
+   "name": "Eichsfeld-Hainich-Werratal Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Eichsfeld - Hainich - Werratal",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0057"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0058",
+   "name": "Habichtswald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Habichtswald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0058"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0062",
+   "name": "Reinhardswald Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Reinhardswald",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0062"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0065",
+   "name": "Harz Sachsen-Anhalt Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Harz Sachsen-Anhalt (Mansfelder Land)",
+     "BfN Naturparke",
+     "name"
+    ],
+    [
+     "None",
+     "Harz/Sachsen-Anhalt",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0065"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0066",
+   "name": "Unteres Saaletal Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Unteres Saaletal",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0066"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0068",
+   "name": "Niederlausitzer Landruecken Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Niederlausitzer Landrücken",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0068"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0071",
+   "name": "Fläming Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Fläming",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0071"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0073",
+   "name": "Nuthe-Nieplitz Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Nuthe - Nieplitz",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0073"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0084",
+   "name": "Bourtanger Moor-Bargerveen Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Bourtanger Moor-Bargerveen",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0084"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0086",
+   "name": "Barnim Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Barnim",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0086"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0093",
+   "name": "Elbhöhen-Wendland Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Elbhöhen-Wendland",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0093"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0098",
+   "name": "Nossentiner Heide Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Nossentiner/Schwinzer Heide",
+     "BfN Naturparke",
+     "name part + same kind + pin inside"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0098"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0100",
+   "name": "Lauenburgische Seen Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Lauenburgische Seen",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0100"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0101",
+   "name": "Stettiner Haff Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Am Stettiner Haff",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0101"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0102",
+   "name": "Sternberger Seenland Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Sternberger Seenland",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0102"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0103",
+   "name": "Flusslandschaft Peenetal Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Flusslandschaft Peenetal",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0103"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0106",
+   "name": "Aukrug Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Aukrug",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0106"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0108",
+   "name": "Westensee Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Westensee",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0108"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-0110",
+   "name": "Hüttener Berge Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "None",
+     "Hüttener Berge",
+     "BfN Naturparke",
+     "name"
+    ],
+    [
+     "None",
+     "Hüttener Berge/Schlei",
+     "BfN Naturparke",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-0110"
   },
   {
    "area": "DE",
@@ -19295,10 +20105,10 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "74",
-     "Refugio de Vida Silvestre Iris Alameda de Boquerón / BE de Boque",
+     "51",
+     "Bosque Estatal de Boquerón",
      "Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot",
-     "pin inside + shared name words"
+     "name"
     ]
    ],
    "old_pieces": [],
