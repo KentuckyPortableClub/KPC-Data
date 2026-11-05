@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-05T10:04Z",
+ "checked": "2026-11-05T10:38Z",
  "switched_on": false,
  "results": [
   {
@@ -218,6 +218,15 @@
   },
   {
    "path": "data/campinfo/US-FL.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-GA.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
@@ -695,7 +704,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/fw-Province_Pond_Map.pd"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2815,10 +2824,10 @@
    "path": "data/us-key/US-ID.json",
    "kind": "key",
    "why": [
-    "F-O4 4 of 39 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. US-4387, US-4398, US-4505"
+    "F-O4 4 of 38 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. US-4387, US-4398, US-4478"
    ],
    "notes": [
-    "F-O4 shape test: 39 changed outlines read from PAD-US, 4 far from the park pin"
+    "F-O4 shape test: 38 changed outlines read from PAD-US, 4 far from the park pin"
    ],
    "verdict": "HOLD"
   },
@@ -3216,7 +3225,9 @@
    "path": "data/world-key/AE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3253,9 +3264,11 @@
    "path": "data/world-key/BS.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 32 -> 0 (more than 1% lost)"
+    "F-O1 outlines 32 -> 18 (more than 1% lost)"
    ],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -3277,7 +3290,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 42 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 45 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3292,7 +3305,9 @@
    "path": "data/world-key/CD.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3329,7 +3344,9 @@
    "path": "data/world-key/CO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 11 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3351,20 +3368,18 @@
   {
    "path": "data/world-key/CZ.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 232 -> 215 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/DE.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 979 -> 930 (more than 1% lost)"
+    "F-O1 outlines 979 -> 932 (more than 1% lost)"
    ],
    "notes": [
-    "F-O4 shape test: 13 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 18 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "HOLD"
   },
@@ -3416,7 +3431,9 @@
    "path": "data/world-key/FO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3462,7 +3479,9 @@
    "path": "data/world-key/GR.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3496,31 +3515,27 @@
   {
    "path": "data/world-key/HU.json",
    "kind": "key",
-   "why": [
-    "F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/ID.json",
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 9 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/IE.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 175 -> 168 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [
     "F-O4 shape test: 7 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/IM.json",
@@ -3558,21 +3573,27 @@
    "path": "data/world-key/KE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 3 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/LK.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/LR.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3617,7 +3638,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 12 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 13 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3625,23 +3646,29 @@
    "path": "data/world-key/MV.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/MX.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 14 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/NC.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 24 -> 0 (more than 1% lost)"
+    "F-O1 outlines 24 -> 12 (more than 1% lost)"
    ],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -3681,7 +3708,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 16 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 33 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3731,26 +3758,26 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 6 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/PT.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 335 -> 327 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [
     "F-O4 shape test: 29 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/PY.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3839,11 +3866,13 @@
   {
    "path": "data/world-key/ZA.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
+   ],
    "notes": [
     "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   }
  ]
 }

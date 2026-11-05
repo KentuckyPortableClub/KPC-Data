@@ -8,6 +8,7 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 | US-KY | 100 | 51 | 35 | 3 | 0 | 0 | 0 | 0 | 11 | 22 | 51 | 96 |
 | US-TN | 394 | 2 | 78 | 4 | 0 | 38 | 267 | 0 | 5 | 2 | 49 | 0 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
+| US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
 | US-SC | 63 | 20 | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 |
 | US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
@@ -42,7 +43,7 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-FL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-FL FCC listAsOfDates: host resting (robots.txt could not be read: next run)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -70,9 +71,11 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
 - www.dec.ny.gov: 5 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
 - parks.ky.gov: 3 campgrounds
+- gastateparks.org: 3 campgrounds
 - www.recreation.gov: 3 campgrounds
 - www.nps.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
+- explore.gastateparks.org: 1 campgrounds
 - www.outdooralabama.com: 1 campgrounds
 - tpwd.texas.gov: 1 campgrounds
 - wgfapps.wyo.gov: 1 campgrounds
@@ -447,6 +450,98 @@ Updated 2026-11-05. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Pets Allowed: Yes" · “Creek Campground (NC) Type: RV NONELECTRIC Enter dates to check availability Site Details Pets Allowed: Yes Water Hookup: No Campfire Allowe”
   - rv_max_ft = 26 · “ckout Time: 12: PM Max Num of People: 6 Min Num of People: 1 Permitted Equipment Tent RV (Max length: 26 ft.) Trailer (Max length: 26 ft.) P”
   - showers = false · “a.m. Failure to check-in with the office staff may forfeit your reservation. There are no showers or electric hook ups in the campground. Ph”
+
+## US-GA: 12 random samples (records with facts; seed = the date)
+
+- **Shooting Range Campsites** (intake-US-12416, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/little-river-wma)
+  - booking.url = "https://georgiawildlife.com/little-river-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "PDF, year 2025 in the link" · “link “PDF MAP””
+  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/map · “link “PDF MAP” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/little river2025-huntmap_0”
+  - phone = "(706) 595-4222" · “CTIVE MAP PDF MAP REGULATIONS Phone Numbers Region 3 Office 706-595-4222 Fees & Passes Land Access Hunting License Fishing License,”
+- **Main campground; Pioneer Campground** (US-2186:hq0, state, status ok, 10 facts) · [gastateparks.org](https://gastateparks.org/IndianSprings)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - drinking_water = true · “s, the area has always maintained a steady flow of people coming to seek healing, collect drinking water, or recreate around this natural ma”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "PDF, no date in the link" · “link “Park Map””
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Park Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/IndianSprings_ParkMap.pdf”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+  - sites.cabin = 10 · “State Park History .--> Reservations, Accommodations & Facilities 765 Acres 105 Acre Lake 10 Cottages Yurts 76 Tent, Trailer & RV Campsites ”
+  - sites.group = 1 · “y limits.) 5 Picnic Shelters (Before making reservations, call park for capacity limits.) 1 Group Shelter (seats 130. Before making reservat”
+- **1 WRD campground point(s) on REDLANDS WMA** (intake-US-7142, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/redlands-wma)
+  - booking.url = "https://georgiawildlife.com/redlands-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
+  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
+  - phone = "(770) 535-5700" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 2 Office 770-535-5700 Fees & Passes No fee to access land License required to hun”
+- **Campground - name not in layer** (US-2203:p2-0, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "web page, no date in the link" · “link “Find a Park””
+  - map.url = "https://gastateparks.org/Map" · “link “Find a Park” -> https://gastateparks.org/Map”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+- **Main campground; Group camp; Pioneer campground** (US-2188:hq0, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/LauraSWalker)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "PDF, no date in the link" · “link “Trail Map””
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/LauraSWalker_TrailMap.pdf”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+- **Campground - name not in layer** (US-2168:p2-2, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "web page, no date in the link" · “link “Find a Park””
+  - map.url = "https://gastateparks.org/Map" · “link “Find a Park” -> https://gastateparks.org/Map”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+- **1 WRD campground point(s) on MAYHAW WMA** (intake-US-3760, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/mayhaw-wma)
+  - booking.url = "https://georgiawildlife.com/mayhaw-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
+  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
+  - phone = "(229) 430-4254" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 5 Office 229-430-4254 Fees & Passes Land Access Hunting License Fishing License,”
+- **Charlie Elliott Wildlife Center and Clybel WMA Campground** (intake-US-7140, agency (outside research camping-us-oct31), status ok, 16 facts) · [georgiawildlife.com](https://georgiawildlife.com/charlie-elliott-wildlife-center)
+  - booking.how = "online: reservations.gooutdoorsgeorgia.com" · “link “Make a Camping Reservation””
+  - booking.url = "https://reservations.gooutdoorsgeorgia.com/FacilityDetails. · “link “Make a Camping Reservation” -> https://reservations.gooutdoorsgeorgia.com/FacilityDetails.aspx?facID=1”
+  - features = "fire ring" · “ists of 20 campsites, all containing electricity, water, wireless wifi, picnic table, and fire ring. Of the 20 sites, there are 6 tent-only ”
+  - hookups.electric = true · “ish, crappie, and redear sunfish. The campground consists of 20 campsites, all containing electricity, water, wireless wifi, picnic table, a”
+  - hookups.sewer = true · “ng. Of the 20 sites, there are 6 tent-only sites, and 14 full-size RV sites offering full sewer service. To make a reservation and see prici”
+  - hookups.water = true · “ish, crappie, and redear sunfish. The campground consists of 20 campsites, all containing electricity, water, wireless wifi, picnic table, a”
+  - map.date_how = "PDF, year 2025 in the link" · “link “PDF Map””
+  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/cew · “link “PDF Map” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/cewc/CEWC Facilities %26 Trail Map Mar2025.p”
+  - phone = "(770) 784-3059" · “Charlie Elliott Wildlife Center, contact Katie Blaylock at 770-784-3059 or katie.blaylock@dnr.ga.gov . Shooting Range The shooting”
+  - phone_hint = "(770) 784-3059" · “on on the roles and hosting at Charlie Elliott Wildlife Center, contact Katie Blaylock at 770-784-3059 or katie.blaylock@dnr.ga.gov . Shooti”
+- **Primitive Campsites** (intake-US-3741, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/coosawattee-wma)
+  - booking.url = "https://georgiawildlife.com/coosawattee-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "PDF, year 2020 in the link" · “link “PDF MAP””
+  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/map · “link “PDF MAP” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Coosawattee%20WMA%20Map%202024.pdf”
+  - phone = "(706) 295-6041" · “CTIVE MAP PDF MAP REGULATIONS Phone Numbers Region 1 Office 706-295-6041 Fees & Passes Land Access Hunting License Fishing License,”
+- **Vogel State Park** (US-2206, state, status ok, 10 facts) · [gastateparks.org](https://gastateparks.org/Vogel)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "PDF, year 2026 in the link" · “link “Trail Map””
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/Vogel_TrailMap.pdf?v=20261021”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+  - sites.cabin = 34 · “gel State Park History . Reservations, Accommodations & Facilities 242 Acres 22 Acre Lake 34 Cottages 90 Tent, Trailer & RV Campsites 18 Wal”
+  - sites.group = 1 · “y limits.) 4 Picnic Shelters (Before making reservations, call park for capacity limits.) 1 Group Shelter (seats 90. Before making reservati”
+  - sites.primitive = 18 · “modations & Facilities 242 Acres 22 Acre Lake 34 Cottages 90 Tent, Trailer & RV Campsites 18 Walk-In Campsites 1 Pioneer Campground (Before ”
+- **Boat Ramp Campground — 7 tent-only campsites, 1 group camp** (intake-US-7469, agency (outside research camping-us-oct31), status ok, 6 facts) · [georgiawildlife.com](https://georgiawildlife.com/paradise-pfa)
+  - booking.how = "online: reservations.gooutdoorsgeorgia.com" · “link “Campground””
+  - booking.url = "https://reservations.gooutdoorsgeorgia.com/Policies.aspx" · “link “Campground” -> https://reservations.gooutdoorsgeorgia.com/Policies.aspx”
+  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
+  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
+  - phone = ["(229) 533-4792", "(912) 285-6094"] · “ata Hours Year-round 24 hours/day Phone Numbers Main Office 229-533-4792 Region 4 Office 912-285-6094 Fees & Passes For property acc | /day ”
+  - sites.tent = 7 · “ass carp must be released immediately. Accommodations & Facilities Boat Ramp Campground — 7 tent-only campsites, 1 group camp Fishing Docks ”
+- **2 WRD campground point(s) on OCMULGEE WMA** (intake-US-7461, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/ocmulgee-pfa)
+  - booking.url = "https://georgiawildlife.com/ocmulgee-pfa" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
+  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
+  - phone = ["(478) 783-2557", "(912) 285-6094"] · “IDE Hours Year-round 24 hours/day Phone Numbers Main Office 478-783-2557 Region 4 Office 912-285-6094 Fees & Passes For property acc | /day ”
 
 ## US-AL: 12 random samples (records with facts; seed = the date)
 

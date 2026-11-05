@@ -143,6 +143,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT 2-fer line (chat 2; 2026-11-05): STOPPED (not for grading): CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL (canadaeast) — missing check: 1269 of 1272 expected pairs were never looked at (100%; 0 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (1269); pass1 stopped for time: not every pair was looke · CA-ON: live 8, not sure 5, water only 0; CA-QC: live 1, not sure 0, water only 0; CA-NB: live 2, not sure 1, water only 0; CA-NS: live 6, not sure 1, water only 0; CA-PE: live 0, not sure 0, water only 0; CA-NL: live 1, not sure 0, water only 0 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41941033955)
 - FROM BOT closures super-bot (2026-11-05): grade me: US-KY data/closures/US-KY.json — 31 of 33 of Kentucky's own reader's items found here on the same park (93%); 55 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41956300480)
 - FROM BOT campground info bot (2026-11-05): grade me: US-AZ data/status/samples/campground-info-bot-US-AZ-2026-11-05.md (+ review.md) — done; gate none; {"camps": 198, "needs_browser": 0, "needs_key": 168, "no_page": 0, "not_official": 2, "ok": 1, "other": 11, "resting": 0, "robots": 16, "wit · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42003746295)
+- FROM BOT campground info bot (2026-11-05): grade me: US-GA data/status/samples/campground-info-bot-US-GA-2026-11-05.md (+ review.md) — done; gate none; {"camps": 205, "needs_browser": 4, "needs_key": 64, "no_page": 0, "not_official": 8, "ok": 61, "other": 68, "resting": 0, "robots": 0, "with · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42003746295)
 - FROM WAITING ROOM (held since 2026-11-05): key data/ca-key/CA-AB.json held: F-O4 2 of 2 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-2971, CA-3156
 - FROM WAITING ROOM (held since 2026-11-05): key data/ca-key/CA-BC.json held: F-O4 60 of 60 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-3788, CA-3962, CA-3423
 - FROM WAITING ROOM (held since 2026-11-05): key data/ca-key/CA-NL.json held: F-O4 55 of 55 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. CA-1266, CA-4555, CA-1272
@@ -153,7 +154,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): campinfo data/campinfo/US-NY.json held: F-I3 the same site count on 4 camps of one agency (state: 56): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-10-31, 5 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 5 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): docs data/docs/US-IN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/fw-Province_Pond_Map.pd
+- FROM WAITING ROOM (held since 2026-11-04, 1 days): docs data/docs/US-IN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/outdoor-recreation/or-Interla
 - FROM WAITING ROOM (held since 2026-10-31, 5 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml · F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/kaww/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-10-31, 5 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-05): fers data/fers/CA-AB.json.gz held: F-2 4 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. CA-0109+US-4558, CA-0110+US-4558, CA-2956+CA-2958
@@ -215,13 +216,10 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-NY.json held: F-R2 8 OFF rows share the size 46,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 4 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
-- FROM WAITING ROOM (held since 2026-11-05): key data/us-key/US-ID.json held: F-O4 4 of 39 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. US-4387, US-4398, US-4505
+- FROM WAITING ROOM (held since 2026-11-05): key data/us-key/US-ID.json held: F-O4 4 of 38 changed outlines sit 5+ km from the park's pin (read from PAD-US itself), e.g. US-4387, US-4398, US-4478
 - FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/us-key/US-NV.json held: F-O1 outlines 226 -> 223 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 0 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 18 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/CV.json held: F-O1 outlines 35 -> 0 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/CZ.json held: F-O1 outlines 232 -> 215 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/DE.json held: F-O1 outlines 979 -> 930 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/HU.json held: F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/IE.json held: F-O1 outlines 175 -> 168 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/NC.json held: F-O1 outlines 24 -> 0 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/PT.json held: F-O1 outlines 335 -> 327 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/DE.json held: F-O1 outlines 979 -> 932 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-04, 1 days): key data/world-key/NC.json held: F-O1 outlines 24 -> 12 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-05): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?

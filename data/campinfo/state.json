@@ -175,6 +175,28 @@
    "status": "done",
    "updated": "2026-11-04"
   },
+  "US-GA": {
+   "camps": 212,
+   "checked": 205,
+   "counts": {
+    "camps": 205,
+    "needs_browser": 4,
+    "needs_key": 64,
+    "no_page": 0,
+    "not_official": 8,
+    "ok": 61,
+    "other": 68,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 131,
+    "with_elevation": 0,
+    "with_facts": 121,
+    "with_sites": 8
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-05"
+  },
   "US-IA": {
    "camps": 126,
    "checked": 125,
@@ -730,6 +752,7 @@
   "US-CT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-ID": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -828,6 +851,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-04"
+  },
+  "US-GA": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-05"
   },
   "US-IA": {
    "cell": {
@@ -2009,12 +2041,12 @@
  },
  "last": {
   "areas": [
-   "US-AZ"
+   "US-GA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 216,
+   "dropped_queued": 211,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2024,34 +2056,26 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ],
-    [
-     "https://azstateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from azstateparks.com this run"
-    ],
-    [
-     "https://azprtl.azstateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from azprtl.azstateparks.com this run"
     ]
    ],
-   "requests": 34,
+   "requests": 215,
    "rested": 0,
-   "robots": 4,
-   "robots_unreadable": 4,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 9,
-   "camps": 203,
+   "browser": 67,
+   "camps": 212,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 9,
-   "needs_key": 173,
-   "no_page": 2,
-   "not_official": 2,
-   "ok": 10,
-   "pages_read": 18,
+   "needs_browser": 70,
+   "needs_key": 68,
+   "no_page": 3,
+   "not_official": 8,
+   "ok": 133,
+   "pages_read": 135,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
