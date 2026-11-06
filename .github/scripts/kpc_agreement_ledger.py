@@ -10,6 +10,8 @@ Kinds:
   location-fix   corrected location for a 0,0 / impossible POTA pin (never edits POTA's pin;
                   stores agreed_lat / agreed_lon as a separate labelled field; original 0,0 kept)
   join            join proposal (reserved; not auto-applied)
+  pile-enter      park goes ONTO the review pile (Nov 6 improvements 2/3: key health and other bots propose it; a person or a
+                  second agent confirms; nothing here moves a park by itself)
 
 The same agent cannot both propose and confirm (enforced). auto=false in state.json: Brandon
 turns it on only after he checks a full run. No bot flips auto.
@@ -17,7 +19,7 @@ turns it on only after he checks a full run. No bot flips auto.
 import csv, datetime, json, os, pathlib, sys
 
 DECIDED_BY = 'Brandon rule 2026-11-05 two-agreements'
-KINDS = ('pile-exit', 'location-fix', 'join')
+KINDS = ('pile-exit', 'location-fix', 'join', 'pile-enter')
 LEDGER = pathlib.Path('data/agreement-ledger/ledger.csv')
 STATE = pathlib.Path('data/agreement-ledger/state.json')
 FIELDS = ['park', 'kind', 'proposed_by', 'proposal', 'source', 'confirmed_by', 'confirmed_at', 'decided_by',

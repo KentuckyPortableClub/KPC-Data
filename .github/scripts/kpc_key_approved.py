@@ -37,8 +37,20 @@ def drawn(v):
     except Exception: return bool((v or {}).get('m'))  # noqa: BLE001
 
 
+def nos():
+    """{ref: lowercased record ids / names} of the VERIFIED world overrides 'no' (with decided_by; KPC-Data's + $LINKS' copy): v2.1, AU-8945."""
+    import os
+    out = collections.defaultdict(set)
+    for p in (WK / 'overrides.json', pathlib.Path(os.environ.get('LINKS') or '../links') / 'data/world-key/overrides.json'):
+        for r, v in ((load(p, {}) or {}).get('parks') or {}).items():
+            # only a VERIFIED no (decided_by, verify-then-fix): an older name-only chat 11 NO later answered YES stays a person's call
+            if isinstance(v, dict) and v.get('decided_by'): out[r].update(str(x).strip().lower() for x in v.get('no') or [])
+    return out
+
+
 def main():
     yes = collections.defaultdict(dict)
+    NO = nos()   # Nov 6 v2.1 (Quality MUST-ADD, verify-then-fix): a record a world overrides 'no' names never joins by record number
     for f in sorted(glob.glob('data/waiting/questions/*.json')):
         d = load(f, None); qs = d.get('questions') if isinstance(d, dict) else d
         if not isinstance(qs, list): continue
@@ -49,6 +61,7 @@ def main():
             lay = str(q.get('layer') or q.get('url') or '').rstrip('/')
             rid = q.get('record')
             if not REST.match(lay) or not (isinstance(rid, int) or (isinstance(rid, str) and rid.isdigit())): continue
+            if {str(rid).lower(), str(q.get('record_name') or '').strip().lower()} & NO.get(ref, set()): continue
             yes[cc].setdefault(ref, (lay, int(rid), str(q.get('record_name') or ''), str(q.get('park') or ''), str(q.get('agency') or ''), pathlib.Path(f).name))
     lp, L = newest('layers.json'); L = L if isinstance(L, dict) else {}
     by_url = {str(u).rstrip('/'): k for k, u in L.items() if isinstance(u, str)}

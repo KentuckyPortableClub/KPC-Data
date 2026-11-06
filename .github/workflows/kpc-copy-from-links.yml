@@ -192,7 +192,17 @@ jobs:
               print(f'::notice title=Copy::{k} had no build id: stamped {d["build"]} on its way to the waiting room')
           PY
           done
+          # Nov 6 improvements v2 item 3 (AU gap; Mapping's chat 5:28 PM CST Nov 5 "a count/stamp check in the copy step that fails closed"):
+          # FIRST the world overrides 'no' takes the approved joins it names out (v2.1: AU-8945 vs record 805 Godwin Beach), THEN the layer
+          # labels KPC-Data's own approved joins (kpc_key_approved.py) point at are put back into layers.json, before the waiting room
+          # (KPC-Links' layers.json never has them); every changed world file waits for chat 11 like any key file
+          (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_key_reconcile.py merge-layers) || true   # ok: never fails; the check below fails closed
+          case " $KDIRS " in *" data/world-key "*) ;; *) KDIRS="$KDIRS $(cd kpcdata && git status --porcelain -- data/world-key | awk '{print $2}' | tr '\n' ' ')" ;; esac
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert $KDIRS data/campstate) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # ... and the copy is RECONCILED: under one build stamp KPC-Data's newest key copy must equal KPC-Links' except approved joins
+          # with a drawable layer; otherwise that key's stamp is NOT copied (index.json put back) and the error is reported
+          RC=$(cd kpcdata && LINKS=../links python3 .github/scripts/kpc_key_reconcile.py | tee /dev/stderr | grep '^FAILED=' | cut -d= -f2-) || true   # ok: FAILED= lists the keys
+          for k in $RC; do (cd kpcdata && git checkout -q HEAD -- "data/$k/index.json" 2>/dev/null); echo "::error title=Key reconcile::$k: KPC-Data and KPC-Links differ under one stamp (data/status/key-copy/reconcile.md): stamp not copied"; echo "kpc_key_reconcile.py - $k failed closed: stamp not copied, see data/status/key-copy/reconcile.md" >> "$RUNNER_TEMP/kpc-hidden.txt"; done
           # Oct 29 11:45 PM (BOT C, plan KPC_Key_And_2fer_Automation_Plan.md): held build vs live key + chat 11's sample of 30
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_key_summary.py) || { kpc_rc=$?; echo "::error title=kpc_key_summary.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_key_summary.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           # Oct 30 7:40 AM (chat 3 via HQ): the per-program park lists come from THIS copy of locations.json, so they never go stale
