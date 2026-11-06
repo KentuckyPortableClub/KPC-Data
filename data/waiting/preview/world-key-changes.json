@@ -1,9 +1,9 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-05 23:50 UTC",
+ "made": "2026-11-06 02:08 UTC",
  "totals": {
   "gained": 605,
-  "lost": 110,
+  "lost": 111,
   "pieces_changed": 4419,
   "grade_changed": 12017
  },
@@ -19,6 +19,12 @@
    "lost": 0,
    "pieces_changed": 189,
    "grade_changed": 84
+  },
+  "AU": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 0,
+   "grade_changed": 0
   },
   "BE": {
    "gained": 0,
@@ -12179,6 +12185,27 @@
   }
  ],
  "lost": [
+  {
+   "area": "AU",
+   "ref": "AU-8945",
+   "name": "Scarborough State Beach",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "805",
+     "Scarborough Beach",
+     "AU: Beach (approved layer 11)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [
+    "no: world overrides 'no' (Brandon standing rule 2026-11-05 verify-then"
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/AU-8945"
+  },
   {
    "area": "CZ",
    "ref": "CZ-0040",
