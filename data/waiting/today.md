@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 377 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 435 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -120,6 +120,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-05 | 1 | data/fers/US-VA.json.gz | HOLD | F-K known 2-fer missing: US-4564 + US-4581 |
 | 2026-11-05 | 1 | data/fers/US-WY.json | HOLD | F-4 data/fers/US-WY.json replaces live data/fers/US-WY.json.gz (other format) with 22 rows for 1392 (over 10% fewer) |
 | 2026-11-05 | 1 | data/pile-solver/US-VT.json | HOLD | US-5538: pin 1920 m out without the POTA pin flag |
+| ? | ? | data/ca-key/CA-AB.json | PASS |  |
+| ? | ? | data/ca-key/CA-BC.json | PASS |  |
+| ? | ? | data/ca-key/CA-NT.json | PASS |  |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-AZ.json | PASS |  |
 | ? | ? | data/campinfo/US-DE.json | PASS |  |
@@ -250,9 +253,60 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-8437.json | PASS |  |
 | ? | ? | data/trails/US-8617.json | PASS |  |
 | ? | ? | data/trails/US-9203.json | PASS |  |
+| ? | ? | data/us-key/US-AK.json | PASS |  |
+| ? | ? | data/us-key/US-AL.json | PASS |  |
+| ? | ? | data/us-key/US-AR.json | PASS |  |
+| ? | ? | data/us-key/US-AZ.json | RELEASE |  |
+| ? | ? | data/us-key/US-CA.json | PASS |  |
+| ? | ? | data/us-key/US-CO.json | PASS |  |
+| ? | ? | data/us-key/US-CT.json | PASS |  |
+| ? | ? | data/us-key/US-DC.json | RELEASE |  |
+| ? | ? | data/us-key/US-DE.json | PASS |  |
+| ? | ? | data/us-key/US-FL.json | PASS |  |
+| ? | ? | data/us-key/US-GA.json | PASS |  |
+| ? | ? | data/us-key/US-HI.json | RELEASE |  |
+| ? | ? | data/us-key/US-IA.json | PASS |  |
+| ? | ? | data/us-key/US-ID.json | PASS |  |
+| ? | ? | data/us-key/US-IL.json | PASS |  |
+| ? | ? | data/us-key/US-IN.json | PASS |  |
+| ? | ? | data/us-key/US-KS.json | PASS |  |
+| ? | ? | data/us-key/US-LA.json | RELEASE |  |
+| ? | ? | data/us-key/US-MA.json | PASS |  |
+| ? | ? | data/us-key/US-MD.json | PASS |  |
+| ? | ? | data/us-key/US-ME.json | PASS |  |
+| ? | ? | data/us-key/US-MI.json | PASS |  |
+| ? | ? | data/us-key/US-MN.json | PASS |  |
+| ? | ? | data/us-key/US-MO.json | PASS |  |
+| ? | ? | data/us-key/US-MS.json | RELEASE |  |
+| ? | ? | data/us-key/US-MT.json | PASS |  |
+| ? | ? | data/us-key/US-NC.json | PASS |  |
+| ? | ? | data/us-key/US-ND.json | PASS |  |
+| ? | ? | data/us-key/US-NE.json | PASS |  |
+| ? | ? | data/us-key/US-NH.json | PASS |  |
+| ? | ? | data/us-key/US-NJ.json | PASS |  |
+| ? | ? | data/us-key/US-NM.json | PASS |  |
+| ? | ? | data/us-key/US-NV.json | PASS |  |
+| ? | ? | data/us-key/US-NY.json | PASS |  |
+| ? | ? | data/us-key/US-OH.json | PASS |  |
+| ? | ? | data/us-key/US-OK.json | RELEASE |  |
+| ? | ? | data/us-key/US-OR.json | PASS |  |
+| ? | ? | data/us-key/US-PA.json | PASS |  |
+| ? | ? | data/us-key/US-RI.json | PASS |  |
+| ? | ? | data/us-key/US-SC.json | PASS |  |
+| ? | ? | data/us-key/US-SD.json | PASS |  |
+| ? | ? | data/us-key/US-TN.json | PASS |  |
+| ? | ? | data/us-key/US-TX.json | PASS |  |
+| ? | ? | data/us-key/US-UT.json | PASS |  |
+| ? | ? | data/us-key/US-VA.json | RELEASE |  |
+| ? | ? | data/us-key/US-VT.json | PASS |  |
+| ? | ? | data/us-key/US-WA.json | PASS |  |
+| ? | ? | data/us-key/US-WI.json | PASS |  |
+| ? | ? | data/us-key/US-WV.json | RELEASE |  |
+| ? | ? | data/us-key/US-WY.json | PASS |  |
 | 2026-11-04 | 2 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-05 | 1 | data/world-key/CZ.json | HOLD | F-O1 outlines 232 -> 215 (more than 1% lost) |
 | 2026-11-05 | 1 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/ca-key/overrides.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
@@ -303,10 +357,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/pile-solver/solved-pin.csv | ? |  |
 | ? | ? | data/trails/index-state.json | PASS |  |
 | ? | ? | data/us-key/answers-applied.json | RELEASE |  |
+| ? | ? | data/us-key/changed-parks.json | RELEASE |  |
+| ? | ? | data/us-key/index.json | RELEASE |  |
+| ? | ? | data/us-key/lost-finds.json | PASS |  |
 | ? | ? | data/us-key/overrides.json | RELEASE |  |
 | ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
+| ? | ? | data/world-key/AU.json | RELEASE |  |
 | ? | ? | data/world-key/BE.json | RELEASE |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
 | ? | ? | data/world-key/BS.json | PASS |  |
