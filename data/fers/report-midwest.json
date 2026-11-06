@@ -8,14 +8,14 @@
    "approximate": 651,
    "bad POTA pin (0,0 / impossible, listed)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2992,
+   "no outline": 3010,
    "no pin": 0,
    "pin well outside": 0
   },
-  "missing boundary": 49,
-  "official parks": 2843,
-  "pairs tested": 7554,
-  "pairs whose boxes touch": 7554,
+  "missing boundary": 51,
+  "official parks": 2825,
+  "pairs tested": 7474,
+  "pairs whose boxes touch": 7474,
   "parks done by the box test": 177,
   "parks whose outline could not be read": 21,
   "pass": 1,
@@ -26,12 +26,12 @@
    "258 spots outside this area left for their own area",
    "same land left out (pins far apart): US-2330+US-7919 8.2 km; US-0445+US-13433 9.6 km; US-0445+US-13433 9.6 km; US-10331+US-8155 10.2 km; US-0538+US-2971 10.3 km; US-0538+US-2971 10.3 km; US-3933+US-7578 12.1 km; US-3933+US-7578 12.1 km"
   ],
-  "same land left out: pins far apart, not both inside the outline": 361,
+  "same land left out: pins far apart, not both inside the outline": 28,
   "same land not sure: one record covers two parks": 45,
   "with official lines": 106
  },
  "pass2": {
-  "agree with the pass before": 2309,
+  "agree with the pass before": 2268,
   "cell_m": 10.0,
   "date": "2026-11-06",
   "left out": {
@@ -39,13 +39,13 @@
    "approximate": 651,
    "bad POTA pin (0,0 / impossible, listed)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2992,
+   "no outline": 3010,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 775,
-  "official parks": 2843,
-  "pairs tested": 648,
+  "new here only (not counted)": 777,
+  "official parks": 2825,
+  "pairs tested": 623,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 2,
@@ -57,7 +57,7 @@
   "with official lines": 106
  },
  "pass3": {
-  "agree with the pass before": 1647,
+  "agree with the pass before": 1612,
   "cell_m": 5.0,
   "date": "2026-11-06",
   "left out": {
@@ -65,13 +65,13 @@
    "approximate": 651,
    "bad POTA pin (0,0 / impossible, listed)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2992,
+   "no outline": 3010,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 656,
-  "official parks": 2843,
-  "pairs tested": 627,
+  "new here only (not counted)": 648,
+  "official parks": 2825,
+  "pairs tested": 604,
   "parks whose outline could not be read": 4,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
@@ -84,20 +84,20 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 252,
+  "checked": 235,
   "date": "2026-11-06",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 651,
    "bad POTA pin (0,0 / impossible, listed)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2992,
+   "no outline": 3010,
    "no pin": 0,
    "pin well outside": 0
   },
   "live rows held: spot far from a state park pin (rule B13)": 1,
-  "memory (MB now / cap; caches dropped for memory)": "4003 / 5000; 2",
-  "official parks": 2843,
+  "memory (MB now / cap; caches dropped for memory)": "3927 / 5000; 2",
+  "official parks": 2825,
   "pairs tested": 0,
   "pass": 5,
   "problems": [
@@ -105,10 +105,10 @@
    "263 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
    "896 parks filed under another state but crossing / at the edge of this area kept: US-0646, US-0721, US-10257, US-1072, US-10731, US-1077, US-1079, US-1084"
   ],
-  "river channels listed as water only (boat spots)": 16,
-  "spots given their boundary lines": 715,
+  "river channels listed as water only (boat spots)": 15,
+  "spots given their boundary lines": 684,
   "still not checked": 0,
-  "trail stretches given their true zone": 536,
+  "trail stretches given their true zone": 522,
   "water only": 0,
   "water retries (won / tries)": "0 / 0",
   "with official lines": 106
@@ -226,11 +226,11 @@
    "candidates": 137,
    "candidates (saved outline only)": 0,
    "lines": 513,
-   "n-fers": 48,
+   "n-fers": 46,
    "not sure": 18,
-   "pass1": 1136,
+   "pass1": 1133,
    "pass2": 1077,
-   "spots": 1136,
+   "spots": 1133,
    "very tight": 14,
    "water only": 12
   },
@@ -355,16 +355,16 @@
    "water only": 0
   },
   "US-WI": {
-   "candidates": 104,
+   "candidates": 83,
    "candidates (saved outline only)": 0,
-   "lines": 203,
-   "n-fers": 28,
-   "not sure": 13,
-   "pass1": 484,
-   "pass2": 434,
-   "spots": 484,
-   "very tight": 6,
-   "water only": 10
+   "lines": 197,
+   "n-fers": 9,
+   "not sure": 14,
+   "pass1": 423,
+   "pass2": 392,
+   "spots": 423,
+   "very tight": 2,
+   "water only": 9
   }
  }
 }
