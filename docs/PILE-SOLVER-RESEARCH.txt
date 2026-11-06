@@ -1,0 +1,20 @@
+Pile solver research rank (report only)
+
+Applied here from KPC-Links draft PR 49 (branch cursor/research-sources-report-8163),
+file docs/kpc-pile-solver-research-report.patch. The patch applied cleanly onto
+.github/scripts/kpc_pile_solver.py.
+
+KPC_RESEARCH_SOURCES defaults to off. Off, the solver reads and writes the same
+bytes as before. Report mode ranks outlines the solver has already read and writes
+data/pile-solver/research-rank.json. That file is the only extra write.
+
+The rank uses the research-pack abbreviation list (data/research-sources/abbreviations.csv)
+and the Mapping Rep Tool Box name matcher (kpc-maprep-check.js canon / nameScore,
+carried here as kpc_research_sources.py because that module is not on KPC-Links main).
+Abbreviations are read only in report mode. The rank does not change a verdict, a key,
+or the solver CSV.
+
+No source or field mapping was added. A layer query still asks for the same fields.
+data/pile-solver/state.json "auto" stays false until a person sets it.
+
+The Grant County NM map service is not used.
