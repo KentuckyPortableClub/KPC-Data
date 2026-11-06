@@ -37,28 +37,6 @@
    "area": "pacific",
    "state": "US-AK",
    "refs": [
-    "US-4447",
-    "US-7884"
-   ],
-   "names": {
-    "US-4447": "Chugach National Forest",
-    "US-7884": "Kenai Mountains-Turnagain Arm National Heritage Area"
-   },
-   "what": "water only (boat spot): is there really no land?",
-   "kind": "area",
-   "size": "14330.9 ac",
-   "sort": 14330.9,
-   "reason": "water only: boat or kayak",
-   "id": "US-4447+US-7884@area@channel@60.386,-149.735",
-   "sources": {
-    "USGS water": "saved copy of the USGS map, read 2026-10-29"
-   },
-   "checked": "2026-11-06"
-  },
-  {
-   "area": "pacific",
-   "state": "US-AK",
-   "refs": [
     "US-12708",
     "US-7884"
    ],
@@ -215,7 +193,7 @@
    "size": "465.3 ac",
    "sort": 465.3,
    "reason": "water only: boat or kayak",
-   "id": "US-0149+US-7884@area@60.317,-149.810",
+   "id": "US-0149+US-7884@area@60.316,-149.798",
    "sources": {
     "US-0149": "read from the agency 2026-11-06",
     "US-7884": "read from the agency 2026-11-06",
@@ -262,6 +240,27 @@
    "sources": {
     "CA-3191": "read from the agency 2026-11-06",
     "US-4448": "read from the agency 2026-11-06"
+   },
+   "checked": "2026-11-06"
+  },
+  {
+   "area": "pacific",
+   "state": "US-AK",
+   "refs": [
+    "US-0149",
+    "US-4447"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "328.9 ac",
+   "sort": 328.9,
+   "reason": "water only: boat or kayak",
+   "id": "US-0149+US-4447@area@60.326,-149.868",
+   "sources": {
+    "US-0149": "read from the agency 2026-11-06",
+    "US-4447": "read from the agency 2026-11-06",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
    },
    "checked": "2026-11-06"
   },
@@ -388,7 +387,8 @@
    "id": "US-0149+US-12708@area@60.460,-150.938",
    "sources": {
     "US-0149": "read from the agency 2026-11-06",
-    "US-12708": "read from the agency 2026-11-06"
+    "US-12708": "read from the agency 2026-11-06",
+    "USGS water": "saved copy of the USGS map, read 2026-11-06"
    },
    "checked": "2026-11-06"
   },
@@ -409,6 +409,27 @@
    "sources": {
     "US-0157": "read from the agency 2026-11-06",
     "US-11855": "read from the agency 2026-11-06"
+   },
+   "checked": "2026-11-06"
+  },
+  {
+   "area": "pacific",
+   "state": "US-AK",
+   "refs": [
+    "US-12708",
+    "US-4447"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "140.5 ac",
+   "sort": 140.5,
+   "reason": "water only: boat or kayak",
+   "id": "US-12708+US-4447@area@60.481,-149.946",
+   "sources": {
+    "US-12708": "read from the agency 2026-11-06",
+    "US-4447": "read from the agency 2026-11-06",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
    },
    "checked": "2026-11-06"
   },

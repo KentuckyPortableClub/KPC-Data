@@ -9,27 +9,27 @@
   "US-HI"
  ],
  "since": "2026-11-06",
- "date": "2026-11-06 08:56 UTC",
+ "date": "2026-11-06 23:30 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 8354 of 10679 expected pairs were never looked at (78%; 2192 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (7962); <park>: not in this run (another state, retired, or no POTA pin) (295); <park>: approximate outline only (never confirms); <park>: not in this run (another state, (55)",
+  "missing check: 8300 of 10628 expected pairs were never looked at (78%; 2192 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (7908); <park>: not in this run (another state, retired, or no POTA pin) (295); <park>: approximate outline only (never confirms); <park>: not in this run (another state, (55)",
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 848 of 45058 pairs whose boxes touch",
+  "pass 1 tested 1043 of 44980 pairs whose boxes touch",
   "water not checked: US-AK: 3 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 44,
-  "DROPPED": 89,
-  "NEVER LOOKED AT": 10546
+  "FOUND": 46,
+  "DROPPED": 90,
+  "NEVER LOOKED AT": 10492
  },
  "never_looked_at": {
-  "counted": 8354,
+  "counted": 8300,
   "no_official_outline": 2192,
-  "expected": 10679,
+  "expected": 10628,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 7962,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 7908,
    "<park>: not in this run (another state, retired, or no POTA pin)": 295,
    "<park>: approximate outline only (never confirms); <park>: not in this run (another state,": 55,
    "<park>: no official boundary; <park>: not in this run (another state, retired, or no POTA ": 20,
@@ -40,8 +40,8 @@
  "report": {
   "pass1": {
    "date": "2026-11-06",
-   "pairs tested": 848,
-   "pairs whose boxes touch": 45058,
+   "pairs tested": 1043,
+   "pairs whose boxes touch": 44980,
    "stopped for time": true
   },
   "pass2": {
@@ -50,12 +50,12 @@
    "pairs tested": 134
   },
   "pass3": {
-   "agree with the pass before": 409,
+   "agree with the pass before": 454,
    "date": "2026-11-06",
    "pairs tested": 131
   },
   "pass5": {
-   "checked": 36,
+   "checked": 37,
    "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 3
@@ -102,8 +102,8 @@
   "merged": 31
  },
  "US-AK": {
-  "rows": 1375,
-  "live": 45,
+  "rows": 1374,
+  "live": 47,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -112,8 +112,8 @@
    "no public owner on the ownership map": 3,
    "this spot is 336 km from Tanana Valley State Forest's POTA p": 1
   },
-  "dropped": 1078,
-  "merged": 243
+  "dropped": 1019,
+  "merged": 299
  },
  "water_weak": {
   "US-AK": 3
