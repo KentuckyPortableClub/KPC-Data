@@ -1,4 +1,4 @@
-# Scoreboard check (2026-11-05)
+# Scoreboard check (2026-11-06)
 
 Bot counts (data/us-key, data/ca-key tonight) next to chat 8's hand counts (KPC_Scoreboard_NA.csv, Oct 27 night).
 A difference is not an error by itself: the keys move nightly, retired parks are left out here, and chat 8 sorted BLM areas by name.
@@ -6,23 +6,23 @@ A difference is not an error by itself: the keys move nightly, retired parks are
 | Area | Column | Bot | Chat 8 | Diff |
 |---|---|---|---|---|
 | US-UT | total | 692 | 692 | 0 |
-| US-UT | with_outline | 378 | 359 | +19 |
-| US-UT | missing | 183 | 194 | -11 |
-| US-UT | pin_only | 119 | 118 | +1 |
-| US-UT | line | 12 | 21 | -9 |
+| US-UT | with_outline | 411 | 359 | +52 |
+| US-UT | missing | 159 | 194 | -35 |
+| US-UT | pin_only | 113 | 118 | -5 |
+| US-UT | line | 9 | 21 | -12 |
 | CA-ON | total | 1180 | 1158 | +22 |
-| CA-ON | with_outline | 965 | 903 | +62 |
-| CA-ON | missing | 116 | 145 | -29 |
+| CA-ON | with_outline | 966 | 903 | +63 |
+| CA-ON | missing | 115 | 145 | -30 |
 | CA-ON | pin_only | 97 | 106 | -9 |
 | CA-ON | line | 2 | 4 | -2 |
 | US-ID | total | 362 | 361 | +1 |
-| US-ID | with_outline | 220 | 206 | +14 |
-| US-ID | missing | 62 | 65 | -3 |
-| US-ID | pin_only | 75 | 77 | -2 |
-| US-ID | line | 5 | 13 | -8 |
+| US-ID | with_outline | 226 | 206 | +20 |
+| US-ID | missing | 60 | 65 | -5 |
+| US-ID | pin_only | 72 | 77 | -5 |
+| US-ID | line | 4 | 13 | -9 |
 | US-MS | total | 155 | 155 | 0 |
-| US-MS | with_outline | 101 | 89 | +12 |
-| US-MS | missing | 51 | 63 | -12 |
+| US-MS | with_outline | 99 | 89 | +10 |
+| US-MS | missing | 53 | 63 | -10 |
 | US-MS | pin_only | 3 | 3 | 0 |
 | US-MS | line | 0 | 0 | 0 |
 | US-OH | total | 276 | 276 | 0 |
