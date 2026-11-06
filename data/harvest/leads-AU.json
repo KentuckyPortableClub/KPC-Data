@@ -1,13 +1,13 @@
 {
  "about": "World harvester leads for Australia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AU",
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "status": "paused (out of time, will carry on)",
  "steps_done": [
   "known"
  ],
  "bands": {
-  "A": 44,
+  "A": 45,
   "B": 13,
   "C": 0
  },
@@ -5540,9 +5540,115 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
+    {
+     "id": 30,
+     "name": "Forest Products Commission Plantations (FPC-001)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "plantation",
+      "linkkey",
+      "species",
+      "estabyear",
+      "areaha",
+      "latin",
+      "shape",
+      "map_symbol"
+     ],
+     "records": 19735
+    },
+    {
+     "id": 4,
+     "name": "Mineral Field Boundaries (DMIRS-005)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "oid",
+      "gid",
+      "number_",
+      "mfield",
+      "mdistrict",
+      "label",
+      "the_geom",
+      "st_area(the_geom)",
+      "st_perimeter(the_geom)"
+     ],
+     "records": 38,
+     "sample": [
+      "80_Kimberley",
+      "04_W Kimberley",
+      "45_Marble Bar"
+     ],
+     "name_field": "label"
+    },
+    {
+     "id": 14,
+     "name": "General Clearance Areas (DMIRS-022)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "oid",
+      "gid",
+      "category",
+      "name",
+      "date_min_c",
+      "extract_da",
+      "the_geom",
+      "st_area(the_geom)",
+      "st_perimeter(the_geom)"
+     ],
+     "records": 25,
+     "sample": [
+      "Perth and Peel regions",
+      "Perth and Peel regions",
+      "Perth and Peel regions"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 31,
+     "name": "MAGIX Geophysics - Survey Areas (DMIRS-055)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "block_id",
+      "r_number",
+      "block_name",
+      "platform",
+      "methods",
+      "systems",
+      "commissioned_by",
+      "surveyor",
+      "job_no",
+      "end_date",
+      "size",
+      "size_units",
+      "line_spacing",
+      "line_direction",
+      "platform_height",
+      "availability",
+      "custodian",
+      "ga_proj_no",
+      "release_date"
+     ],
+     "records": 5276,
+     "sample": [
+      "Paterson 2005",
+      "Webb 2006",
+      "Murchison 2007"
+     ],
+     "name_field": "block_name"
+    },
     {
      "id": 4,
      "name": "Mineral Field Boundaries (DMIRS-005)",
@@ -5688,9 +5794,115 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
+    {
+     "id": 27,
+     "name": "Forest Products Commission Plantations (FPC-001)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "plantation",
+      "linkkey",
+      "species",
+      "estabyear",
+      "areaha",
+      "latin",
+      "shape",
+      "map_symbol"
+     ],
+     "records": 19735
+    },
+    {
+     "id": 4,
+     "name": "Mineral Field Boundaries (DMIRS-005)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "oid",
+      "gid",
+      "number_",
+      "mfield",
+      "mdistrict",
+      "label",
+      "the_geom",
+      "st_area(the_geom)",
+      "st_perimeter(the_geom)"
+     ],
+     "records": 38,
+     "sample": [
+      "80_Kimberley",
+      "04_W Kimberley",
+      "45_Marble Bar"
+     ],
+     "name_field": "label"
+    },
+    {
+     "id": 14,
+     "name": "General Clearance Areas (DMIRS-022)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "oid",
+      "gid",
+      "category",
+      "name",
+      "date_min_c",
+      "extract_da",
+      "the_geom",
+      "st_area(the_geom)",
+      "st_perimeter(the_geom)"
+     ],
+     "records": 25,
+     "sample": [
+      "Perth and Peel regions",
+      "Perth and Peel regions",
+      "Perth and Peel regions"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 29,
+     "name": "MAGIX Geophysics - Survey Areas (DMIRS-055)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "block_id",
+      "r_number",
+      "block_name",
+      "platform",
+      "methods",
+      "systems",
+      "commissioned_by",
+      "surveyor",
+      "job_no",
+      "end_date",
+      "size",
+      "size_units",
+      "line_spacing",
+      "line_direction",
+      "platform_height",
+      "availability",
+      "custodian",
+      "ga_proj_no",
+      "release_date"
+     ],
+     "records": 5276,
+     "sample": [
+      "Paterson 2005",
+      "Webb 2006",
+      "Murchison 2007"
+     ],
+     "name_field": "block_name"
+    },
     {
      "id": 27,
      "name": "Forest Products Commission Plantations (FPC-001)",
@@ -5851,6 +6063,113 @@
    "grade": 5,
    "band": "A"
   },
+  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/infrastructure_and_utilities": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities/MapServer",
+   "cc": "AU",
+   "title": "SLIP_Public_Services/Infrastructure_and_Utilities",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "LANDGATE/SLIP",
+   "date": "",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline",
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 31,
+     "name": "Water Reservoir (WCORP-078)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "sap_id",
+      "sap_name",
+      "id",
+      "date_installed",
+      "state",
+      "name",
+      "state_since",
+      "material",
+      "sole_height",
+      "terrain_height",
+      "decrease_height",
+      "capacity",
+      "lower_level",
+      "upper_level",
+      "overflow_level",
+      "grading",
+      "design",
+      "planset_number",
+      "planset_format"
+     ],
+     "records": 71,
+     "sample": [
+      "RESERVOIR 3 KALGOORLIE (REF)",
+      "RESERVOIR 2 KALGOORLIE (REF)",
+      "RESERVOIR 1 KALGOORLIE (REF)"
+     ],
+     "name_field": "sap_name"
+    },
+    {
+     "id": 64,
+     "name": "Transport Trail",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "st_length(shape)",
+      "objectid",
+      "name",
+      "shape_leng",
+      "hierarchy",
+      "class",
+      "strategy",
+      "infra_clas",
+      "label",
+      "shape"
+     ],
+     "records": 477,
+     "sample": [
+      "Collie River, north side (Australind)",
+      "Collie River, north side (Australind)",
+      "Brunswick River, north side (Australind)"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 67,
+     "name": "Road Cycling Route",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "st_length(shape)",
+      "objectid",
+      "name",
+      "shape_leng",
+      "hierarchy",
+      "class",
+      "strategy",
+      "infra_clas",
+      "label",
+      "shape"
+     ],
+     "records": 108,
+     "sample": [
+      "Road Cycling Route: Ferguson Valley",
+      "Road Cycling Route: Ferguson Valley",
+      "Road Cycling Route: Wellington Dam Road"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A"
+  },
   "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/infrastructure_and_utilities_wfs": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer",
    "cc": "AU",
@@ -5864,6 +6183,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 29,
+     "name": "Water Reservoir (WCORP-078)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "sap_id",
+      "sap_name",
+      "id",
+      "date_installed",
+      "state",
+      "name",
+      "state_since",
+      "material",
+      "sole_height",
+      "terrain_height",
+      "decrease_height",
+      "capacity",
+      "lower_level",
+      "upper_level",
+      "overflow_level",
+      "grading",
+      "design",
+      "planset_number",
+      "planset_format"
+     ],
+     "records": 71,
+     "sample": [
+      "RESERVOIR 3 KALGOORLIE (REF)",
+      "RESERVOIR 2 KALGOORLIE (REF)",
+      "RESERVOIR 1 KALGOORLIE (REF)"
+     ],
+     "name_field": "sap_name"
+    },
     {
      "id": 29,
      "name": "Water Reservoir (WCORP-078)",
