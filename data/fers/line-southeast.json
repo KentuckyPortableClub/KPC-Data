@@ -12,52 +12,50 @@
   "US-FL",
   "US-MS"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 17:09 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 03:40 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 8284 of 16103 expected pairs were never looked at (51%; 5201 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8242); <park>: not in this run (another state, retired, or no POTA pin) (40); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (2)",
-  "water not checked: US-NC: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-FL: 2 rows (the USGS water map / files had no answer there): never READY with one"
+  "missing check: 7989 of 16245 expected pairs were never looked at (49%; 5709 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (7947); <park>: not in this run (another state, retired, or no POTA pin) (40); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (2)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 705,
-  "DROPPED": 1913,
-  "NEVER LOOKED AT": 13485
+  "FOUND": 700,
+  "DROPPED": 1847,
+  "NEVER LOOKED AT": 13698
  },
  "never_looked_at": {
-  "counted": 8284,
-  "no_official_outline": 5201,
-  "expected": 16103,
+  "counted": 7989,
+  "no_official_outline": 5709,
+  "expected": 16245,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8242,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 7947,
    "<park>: not in this run (another state, retired, or no POTA pin)": 40,
    "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 2
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 8482,
-   "pairs whose boxes touch": 8482
+   "date": "2026-11-06",
+   "pairs tested": 8330,
+   "pairs whose boxes touch": 8330
   },
   "pass2": {
-   "agree with the pass before": 4408,
-   "date": "2026-11-05",
-   "pairs tested": 989
+   "agree with the pass before": 4521,
+   "date": "2026-11-06",
+   "pairs tested": 974
   },
   "pass3": {
-   "agree with the pass before": 2819,
-   "date": "2026-11-05",
-   "pairs tested": 921
+   "agree with the pass before": 2965,
+   "date": "2026-11-06",
+   "pairs tested": 911
   },
   "pass5": {
-   "checked": 365,
-   "date": "2026-11-05",
+   "checked": 356,
+   "date": "2026-11-06",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "files": {
@@ -72,66 +70,61 @@
   "US-MS": "data/fers/US-MS.json"
  },
  "US-TN": {
-  "rows": 773,
-  "live": 88,
+  "rows": 768,
+  "live": 87,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 1,
    "no public owner on the ownership map": 5
   },
-  "dropped": 510,
-  "merged": 169
+  "dropped": 507,
+  "merged": 168
  },
  "US-NC": {
-  "rows": 1477,
+  "rows": 1474,
   "live": 133,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 11,
    "this spot is 115 km from Pisgah WRC State Game Land's POTA p": 1,
-   "water not checked": 1,
    "this spot is 117 km from Pisgah WRC State Game Land's POTA p": 3,
    "this spot is 101 km from Nantahala State Game Land's POTA pi": 1
   },
   "dropped": 750,
-  "merged": 577
- },
- "water_weak": {
-  "US-NC": 1,
-  "US-FL": 2
+  "merged": 575
  },
  "US-VA": {
-  "rows": 444,
-  "live": 113,
+  "rows": 643,
+  "live": 119,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 10,
+   "no public owner on the ownership map": 19,
    "one record covers two parks": 1
   },
-  "dropped": 114,
-  "merged": 206
+  "dropped": 156,
+  "merged": 348
  },
  "US-WV": {
-  "rows": 297,
+  "rows": 298,
   "live": 33,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 210,
+  "dropped": 211,
   "merged": 54
  },
  "US-GA": {
-  "rows": 348,
-  "live": 65,
+  "rows": 334,
+  "live": 64,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 4
   },
-  "dropped": 193,
+  "dropped": 180,
   "merged": 86
  },
  "US-AL": {
@@ -147,34 +140,33 @@
   "merged": 17
  },
  "US-SC": {
-  "rows": 156,
-  "live": 21,
+  "rows": 154,
+  "live": 20,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1,
    "one record covers two parks": 2
   },
-  "dropped": 113,
+  "dropped": 112,
   "merged": 19
  },
  "US-FL": {
-  "rows": 1377,
-  "live": 210,
+  "rows": 1335,
+  "live": 208,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 2,
-   "no public owner on the ownership map": 20,
+   "no public owner on the ownership map": 21,
    "one record covers two parks": 1,
    "this spot is 135 km from Florida Keys Wildlife Area's POTA p": 1
   },
-  "dropped": 740,
-  "merged": 403
+  "dropped": 718,
+  "merged": 386
  },
  "US-MS": {
-  "rows": 130,
-  "live": 16,
+  "rows": 114,
+  "live": 14,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -184,8 +176,8 @@
    "the official outline of Okatibbee Wildlife Management Area c": 1,
    "the official outline of Ward Bayou Wildlife Management Area": 1
   },
-  "dropped": 21,
-  "merged": 84
+  "dropped": 19,
+  "merged": 72
  },
  "states_ready": [],
  "states_held": [
