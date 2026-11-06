@@ -8,14 +8,14 @@ The engine decides nothing; this is its self-check against the bar.
 
 **Bar:** Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.
 
-**Measured:** rows 5861, parks 3225, parks_with_hit 287, SURE 260, LIKELY 348, UNLIKELY_evidence 1967, strong 108, already_approved 409, open_without_whynot 617, non_official_candidates 0, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
+**Measured:** rows 5957, parks 3228, parks_with_hit 287, SURE 260, LIKELY 350, UNLIKELY_evidence 1995, strong 108, already_approved 413, open_without_whynot 617, non_official_candidates 0, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
 
 **Top reasons for misses:**
-- not found: no-layer: no official record at the pin or by name (1846)
-- evidence: UNLIKELY only : name: none word in common (900)
-- evidence: UNLIKELY only : pin not inside nor within m with a name match (522)
+- not found: no-layer: no official record at the pin or by name (1905)
+- evidence: UNLIKELY only : name: none word in common (910)
+- evidence: UNLIKELY only : pin not inside nor within m with a name match (528)
 - engine error: InvalidURL (429)
-- already approved: already approved (409)
+- already approved: already approved (413)
 
 **Why it fails:**
 - open parks without a why-not: 617
