@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-06 15:20 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-06 19:17 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 36 (+3 / -7)
 - gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -215,17 +215,17 @@
 ## US-DE: live pairs 30 -> 33 (+7 / -4)
 - gained: US-0898+US-9881 US-1733+US-9877 US-1743+US-9881 US-4564+US-4567 US-4564+US-4582 US-4581+US-4582 US-4582+US-9901
 - lost: US-10659+US-7646 (not sure: one record covers two parks ('Augustine State Wildlife Area' is a wma, the recor); US-10671+US-4567 (gone); US-11812+US-9890 (dropped in pass 2: the finer official outlines show no shared patch here (the first, coars); US-4567+US-5726 (gone)
-- touching held parks: -
+- touching held parks: US-0229+US-9882 US-0898+US-1743 US-10659+US-7648 US-10670+US-9890 US-10682+US-5722 US-10686+US-4567 US-11812+US-1742 US-1730+US-9878 US-1732+US-4582 US-1732+US-9878 US-1733+US-9877 US-1733+US-9879 US-1735+US-7645 US-1737+US-7648 US-1741+US-7648 US-1742+US-9890 US-1743+US-9881 US-4567+US-5727 US-4610+US-5726 US-5719+US-9892
 - touching pin-only parks: -
 - water / bank: 5
 - one-record same land: US-10659+US-7646 US-10682+US-5722 US-11812+US-1742
 - near a size threshold: US-0229+US-9882 27 m ~ 25 yd (kept); US-0230+US-5724 75 m ~ 100 yd (small)
 - stale inputs: -
 
-## US-FL: live pairs 175 -> 205 (+53 / -23)
+## US-FL: live pairs 175 -> 206 (+54 / -23)
 - gained: US-0240+US-3620 US-0247+US-3660 US-0256+US-6288 US-10552+US-3660 US-10553+US-3660 US-10559+US-3660 US-10565+US-3660 US-10566+US-3660 US-10567+US-3660 US-10568+US-3660 US-10592+US-3660 US-10603+US-3660 US-10604+US-3660 US-10620+US-3660 US-12131+US-6281 US-1851+US-3620 US-1852+US-3620 US-1865+US-3640 US-1870+US-3667 US-1887+US-6281 US-1897+US-3620 US-1921+US-8695 US-1925+US-3660 US-3627+US-3667 US-3627+US-6309 US-3637+US-4559 US-3640+US-3660 US-3641+US-4559 US-3644+US-8343 US-3645+US-4472
 - lost: US-0245+US-6328 (gone); US-0634+US-0658 (gone); US-0658+US-1839 (gone); US-0658+US-3648 (gone); US-10559+US-4614 (gone); US-10565+US-10566 (not sure: one record covers two parks (the record 'Stuarts Landing Conservation Area' does); US-1886+US-6303 (not sure: this spot is 135 km from Florida Keys Wildlife Area's POTA pin: its outline may ); US-1921+US-3660+US-8695 (gone); US-1927+US-4559 (gone); US-3608+US-4614 (gone); US-3618+US-5520 (gone); US-3618+US-6310 (gone); US-3627+US-4559 (not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be ); US-3637+US-5250 (gone); US-3637+US-6295 (merged into one row: US-3637+US-6295@area@29.589,-81.792 (the same not-sure pair, shown on); US-3647+US-4646 (gone); US-4559+US-4613 (dropped in pass 2: the finer official outlines show no shared patch here (the first, coars); US-4559+US-4640 (gone); US-4559+US-7879 (gone); US-4559+US-8716 (dropped in pass 2: the finer official outlines show no shared patch here (the first, coars)
-- touching held parks: US-0024+US-3618 US-0235+US-4646 US-0235+US-6296 US-0237+US-3614 US-0246+US-4627 US-0258+US-3618 US-12131+US-1887 US-12133+US-3605 US-1853+US-4627 US-1887+US-6281 US-3618+US-4634 US-3627+US-4646 US-3645+US-4620 US-3666+US-6296 US-3667+US-4646 US-4470+US-4640 US-4559+US-4620 US-4559+US-4646 US-4559+US-5513 US-4559+US-6321
+- touching held parks: US-0024+US-3618 US-0258+US-3618 US-12131+US-1887 US-1883+US-3660 US-1887+US-6281 US-1895+US-4628 US-3618+US-4634 US-3632+US-4559 US-4470+US-4628 US-4470+US-4628+US-6288 US-4470+US-4640 US-4470+US-6300 US-4472+US-4626 US-4559+US-4614 US-4559+US-4635 US-4559+US-5513 US-4559+US-6321 US-4559+US-6328 US-4614+US-8335 US-4628+US-6288
 - touching pin-only parks: US-0896+US-1927 US-0896+US-3634 US-0896+US-3650 US-0896+US-4559 US-0896+US-4639 US-0896+US-8357 US-12131+US-6281 US-1887+US-6281
 - water / bank: 12
 - one-record same land: US-10565+US-10566 US-12133+US-3605 US-1838+US-4613 US-3663+US-6744
@@ -310,7 +310,7 @@
 - water / bank: 29
 - one-record same land: US-0703+US-3790 US-10139+US-4526
 - near a size threshold: US-0019+US-10164 105 m ~ 100 yd (small); US-10158+US-10171+US-4484 37 m ~ 50 yd (very tight); US-10168+US-4484 37 m ~ 50 yd (very tight); US-1275+US-4484 27 m ~ 25 yd (kept); US-1281+US-4687 49 m ~ 50 yd (very tight); US-4484+US-7962 49 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- stale inputs: the key build US-42230313177 (2026-11-06 16:25 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
 
 ## US-LA: live pairs 8 -> 8 (+0 / -0)
 - gained: -
@@ -612,14 +612,14 @@
 - near a size threshold: -
 - stale inputs: -
 
-## US-WI: live pairs 29 -> 110 (+88 / -7)
-- gained: US-0601+US-4294 US-0603+US-4311 US-0605+US-1471 US-0673+US-10725 US-0673+US-11153 US-0673+US-1457 US-0673+US-2466 US-0673+US-4238 US-0673+US-4239 US-0673+US-4249 US-0673+US-4308 US-0673+US-9386 US-0673+US-9790 US-0673+US-9819 US-0673+US-9856 US-10054+US-4238 US-11927+US-9821 US-11931+US-4238 US-11935+US-4238 US-11937+US-4238 US-11976+US-12029 US-11976+US-12081 US-11976+US-4238 US-12029+US-4238 US-12066+US-9821 US-12213+US-4238 US-1441+US-9804 US-1442+US-4238 US-1446+US-4239 US-1448+US-4238
-- lost: US-10186+US-1457 (gone); US-10200+US-1481 (gone); US-12077+US-1443 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars); US-4236+US-9870 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars); US-4318+US-7260 (gone); US-4343+US-4344 (gone); US-9766+US-9814 (merged into one row: US-9766+US-9814@trail@42.751,-89.579 (the same not-sure pair, shown o)
-- touching held parks: -
+## US-WI: live pairs 29 -> 85 (+68 / -12)
+- gained: US-0673+US-10725 US-0673+US-11153 US-0673+US-1457 US-0673+US-2466 US-0673+US-4238 US-0673+US-4239 US-0673+US-4249 US-0673+US-9386 US-0673+US-9790 US-0673+US-9819 US-0673+US-9856 US-10054+US-4238 US-11927+US-9821 US-11931+US-4238 US-11935+US-4238 US-11937+US-4238 US-11976+US-4238 US-12029+US-4238 US-12066+US-9821 US-12213+US-4238 US-1441+US-9804 US-1442+US-4238 US-1446+US-4239 US-1455+US-4238 US-1461+US-9800 US-1469+US-4239 US-1471+US-8672 US-1472+US-4238 US-1477+US-4238 US-4236+US-8672
+- lost: US-0673+US-8216 (gone); US-10186+US-1457 (gone); US-10200+US-1481 (gone); US-12077+US-1443 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars); US-1449+US-9794 (not sure: low-confidence outline for Devil's Lake State Park (check the join)); US-1483+US-4347 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars); US-4238+US-8363 (gone); US-4252+US-5577 (gone); US-4318+US-7260 (gone); US-4343+US-4344 (gone); US-5577+US-8211 (gone); US-9766+US-9814 (merged into one row: US-9766+US-9814@trail@42.751,-89.579 (the same not-sure pair, shown o)
+- touching held parks: US-0605+US-8672 US-0673+US-10196 US-0673+US-1457 US-0673+US-4350 US-0673+US-9790 US-0673+US-9819 US-0673+US-9856 US-10054+US-4238 US-10182+US-4279 US-11927+US-9821 US-11931+US-4238 US-11935+US-4238 US-11937+US-4238 US-11976+US-4238 US-12066+US-9821 US-12213+US-4238 US-1441+US-9804 US-1442+US-4238 US-1446+US-4239 US-1455+US-4238
 - touching pin-only parks: -
-- water / bank: 10
+- water / bank: 9
 - one-record same land: -
-- near a size threshold: US-0601+US-4294 27 m ~ 25 yd (kept); US-0605+US-1471 23 m ~ 25 yd (kept); US-0673+US-2493 81 m ~ 100 yd (small); US-0673+US-4308 37 m ~ 50 yd (very tight); US-0673+US-8216 75 m ~ 100 yd (small); US-1482+US-4236 25 m ~ 25 yd (kept)
+- near a size threshold: US-0673+US-2493 81 m ~ 100 yd (small)
 - stale inputs: -
 
 ## US-WV: live pairs 32 -> 33 (+4 / -3)

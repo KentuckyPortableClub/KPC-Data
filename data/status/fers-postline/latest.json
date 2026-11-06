@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06 15:20 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42214929380",
+ "checked": "2026-11-06 19:17 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42263894712",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -3787,7 +3787,31 @@
    ],
    "live_before": 30,
    "live_now": 33,
-   "touch_held": [],
+   "touch_held": [
+    "US-0229+US-9882",
+    "US-0898+US-1743",
+    "US-10659+US-7648",
+    "US-10670+US-9890",
+    "US-10682+US-5722",
+    "US-10686+US-4567",
+    "US-11812+US-1742",
+    "US-1730+US-9878",
+    "US-1732+US-4582",
+    "US-1732+US-9878",
+    "US-1733+US-9877",
+    "US-1733+US-9879",
+    "US-1735+US-7645",
+    "US-1737+US-7648",
+    "US-1741+US-7648",
+    "US-1742+US-9890",
+    "US-1743+US-9881",
+    "US-4567+US-5727",
+    "US-4610+US-5726",
+    "US-5719+US-9892",
+    "US-7646+US-7648",
+    "US-7649+US-7650",
+    "US-7649+US-9891"
+   ],
    "touch_pin_only": [],
    "water_bank": [
     {
@@ -3906,7 +3930,8 @@
     "US-4471+US-6295",
     "US-4471+US-8364",
     "US-4559+US-6288",
-    "US-4559+US-8692"
+    "US-4559+US-8692",
+    "US-6310+US-6321"
    ],
    "lost": [
     {
@@ -4003,32 +4028,33 @@
     }
    ],
    "live_before": 175,
-   "live_now": 205,
+   "live_now": 206,
    "touch_held": [
     "US-0024+US-3618",
-    "US-0235+US-4646",
-    "US-0235+US-6296",
-    "US-0237+US-3614",
-    "US-0246+US-4627",
     "US-0258+US-3618",
     "US-12131+US-1887",
-    "US-12133+US-3605",
-    "US-1853+US-4627",
+    "US-1883+US-3660",
     "US-1887+US-6281",
+    "US-1895+US-4628",
     "US-3618+US-4634",
-    "US-3627+US-4646",
-    "US-3645+US-4620",
-    "US-3666+US-6296",
-    "US-3667+US-4646",
+    "US-3632+US-4559",
+    "US-4470+US-4628",
+    "US-4470+US-4628+US-6288",
     "US-4470+US-4640",
-    "US-4559+US-4620",
-    "US-4559+US-4646",
+    "US-4470+US-6300",
+    "US-4472+US-4626",
+    "US-4559+US-4614",
+    "US-4559+US-4635",
     "US-4559+US-5513",
     "US-4559+US-6321",
+    "US-4559+US-6328",
+    "US-4614+US-8335",
+    "US-4628+US-6288",
+    "US-4628+US-6312",
     "US-4633+US-6318",
     "US-4640+US-6288",
-    "US-4646+US-6296",
-    "US-6301+US-6321"
+    "US-6301+US-6321",
+    "US-6310+US-6321"
    ],
    "touch_pin_only": [
     "US-0896+US-1927",
@@ -5328,7 +5354,7 @@
     }
    ],
    "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-02)",
+    "the key build US-42230313177 (2026-11-06 16:25 UTC) is newer than this output's last pass (2026-11-02)",
     "no pre-line report for this area"
    ]
   },
@@ -11293,9 +11319,6 @@
   },
   "US-WI": {
    "gained": [
-    "US-0601+US-4294",
-    "US-0603+US-4311",
-    "US-0605+US-1471",
     "US-0673+US-10725",
     "US-0673+US-11153",
     "US-0673+US-1457",
@@ -11303,7 +11326,6 @@
     "US-0673+US-4238",
     "US-0673+US-4239",
     "US-0673+US-4249",
-    "US-0673+US-4308",
     "US-0673+US-9386",
     "US-0673+US-9790",
     "US-0673+US-9819",
@@ -11313,8 +11335,6 @@
     "US-11931+US-4238",
     "US-11935+US-4238",
     "US-11937+US-4238",
-    "US-11976+US-12029",
-    "US-11976+US-12081",
     "US-11976+US-4238",
     "US-12029+US-4238",
     "US-12066+US-9821",
@@ -11322,25 +11342,19 @@
     "US-1441+US-9804",
     "US-1442+US-4238",
     "US-1446+US-4239",
-    "US-1448+US-4238",
-    "US-1449+US-4238",
     "US-1455+US-4238",
     "US-1461+US-9800",
     "US-1469+US-4239",
     "US-1471+US-8672",
     "US-1472+US-4238",
     "US-1477+US-4238",
-    "US-1479+US-4246",
-    "US-1482+US-4236",
     "US-4236+US-8672",
     "US-4238+US-4249",
-    "US-4238+US-4255",
     "US-4238+US-4257",
     "US-4238+US-4304",
     "US-4238+US-4308",
     "US-4238+US-4318",
     "US-4238+US-4321",
-    "US-4238+US-4352",
     "US-4238+US-4354",
     "US-4238+US-4533",
     "US-4238+US-9792",
@@ -11351,27 +11365,19 @@
     "US-4238+US-9835",
     "US-4238+US-9845",
     "US-4238+US-9854",
-    "US-4239+US-4252",
     "US-4239+US-4282",
     "US-4239+US-4533",
     "US-4239+US-5577",
     "US-4239+US-9819",
     "US-4247+US-9785",
-    "US-4250+US-9773",
-    "US-4255+US-4304",
     "US-4271+US-9819",
     "US-4274+US-9785",
     "US-4282+US-9819",
     "US-4283+US-8222",
-    "US-4292+US-4349",
-    "US-4292+US-8220",
-    "US-4296+US-5643",
     "US-4306+US-9807",
     "US-4345+US-9768",
-    "US-4349+US-8220",
     "US-4349+US-9816",
     "US-4533+US-9816",
-    "US-8209+US-9840",
     "US-8221+US-8222",
     "US-8221+US-8224",
     "US-8222+US-8224",
@@ -11383,6 +11389,10 @@
     "US-9814+US-9830"
    ],
    "lost": [
+    {
+     "pair": "US-0673+US-8216",
+     "now": "gone"
+    },
     {
      "pair": "US-10186+US-1457",
      "now": "gone"
@@ -11396,8 +11406,20 @@
      "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
     },
     {
-     "pair": "US-4236+US-9870",
+     "pair": "US-1449+US-9794",
+     "now": "not sure: low-confidence outline for Devil's Lake State Park (check the join)"
+    },
+    {
+     "pair": "US-1483+US-4347",
      "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
+    },
+    {
+     "pair": "US-4238+US-8363",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4252+US-5577",
+     "now": "gone"
     },
     {
      "pair": "US-4318+US-7260",
@@ -11408,13 +11430,84 @@
      "now": "gone"
     },
     {
+     "pair": "US-5577+US-8211",
+     "now": "gone"
+    },
+    {
      "pair": "US-9766+US-9814",
      "now": "merged into one row: US-9766+US-9814@trail@42.751,-89.579 (the same not-sure pair, shown o"
     }
    ],
    "live_before": 29,
-   "live_now": 110,
-   "touch_held": [],
+   "live_now": 85,
+   "touch_held": [
+    "US-0605+US-8672",
+    "US-0673+US-10196",
+    "US-0673+US-1457",
+    "US-0673+US-4350",
+    "US-0673+US-9790",
+    "US-0673+US-9819",
+    "US-0673+US-9856",
+    "US-10054+US-4238",
+    "US-10182+US-4279",
+    "US-11927+US-9821",
+    "US-11931+US-4238",
+    "US-11935+US-4238",
+    "US-11937+US-4238",
+    "US-11976+US-4238",
+    "US-12066+US-9821",
+    "US-12213+US-4238",
+    "US-1441+US-9804",
+    "US-1442+US-4238",
+    "US-1446+US-4239",
+    "US-1455+US-4238",
+    "US-1461+US-9800",
+    "US-1469+US-4239",
+    "US-1471+US-8672",
+    "US-1472+US-4238",
+    "US-1477+US-4238",
+    "US-4236+US-8672",
+    "US-4236+US-9867",
+    "US-4236+US-9870",
+    "US-4238+US-4257",
+    "US-4238+US-4304",
+    "US-4238+US-4308",
+    "US-4238+US-4318",
+    "US-4238+US-4321",
+    "US-4238+US-4354",
+    "US-4238+US-9792",
+    "US-4238+US-9806",
+    "US-4238+US-9814",
+    "US-4238+US-9816",
+    "US-4238+US-9830",
+    "US-4238+US-9835",
+    "US-4238+US-9845",
+    "US-4238+US-9854",
+    "US-4239+US-4282",
+    "US-4239+US-5577",
+    "US-4239+US-9819",
+    "US-4243+US-9794",
+    "US-4247+US-9785",
+    "US-4271+US-9819",
+    "US-4274+US-9785",
+    "US-4282+US-9819",
+    "US-4283+US-8222",
+    "US-4306+US-9807",
+    "US-4345+US-9768",
+    "US-4349+US-9816",
+    "US-4533+US-9816",
+    "US-5643+US-9855",
+    "US-8221+US-8222",
+    "US-8221+US-8224",
+    "US-8222+US-8224",
+    "US-8672+US-8673",
+    "US-8673+US-9783",
+    "US-9766+US-9773",
+    "US-9766+US-9830",
+    "US-9768+US-9827",
+    "US-9792+US-9861",
+    "US-9814+US-9830"
+   ],
    "touch_pin_only": [],
    "water_bank": [
     {
@@ -11461,50 +11554,15 @@
      "pair": "US-4236+US-5643",
      "kind": "area",
      "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-5577+US-8211",
-     "kind": "area",
-     "status": "water only: boat or kayak"
     }
    ],
    "same_land_one_record": [],
    "near_threshold": [
     {
-     "pair": "US-0601+US-4294",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0605+US-1471",
-     "wide_m": 23,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
      "pair": "US-0673+US-2493",
      "wide_m": 81,
      "near": "100 yd (small)",
      "status": "candidate"
-    },
-    {
-     "pair": "US-0673+US-4308",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0673+US-8216",
-     "wide_m": 75,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-1482+US-4236",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
     }
    ],
    "preline": {
