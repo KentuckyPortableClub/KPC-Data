@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-06 08:57 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-06 12:14 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 38 (+4 / -6)
 - gained: CA-0109+US-4558 CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -352,15 +352,15 @@
 - near a size threshold: CA-0795+CA-6537+US-8484 20 m ~ 25 yd (kept); CA-4517+CA-6537+US-8484 20 m ~ 25 yd (kept); CA-6537+US-8484 20 m ~ 25 yd (kept)
 - stale inputs: -
 
-## US-MI: live pairs 84 -> 110 (+39 / -13)
-- gained: US-0766+US-4239 US-10088+US-4239 US-10716+US-4239 US-12788+US-4239 US-12789+US-4239 US-12792+US-4239 US-12795+US-4239 US-13172+US-4239 US-13182+US-3383 US-13184+US-4239 US-1494+US-4239 US-1498+US-4239 US-1524+US-4239 US-1533+US-4239 US-1534+US-4239 US-1543+US-4239 US-1544+US-4239 US-1549+US-1550 US-1555+US-4239 US-1556+US-4239 US-3308+US-4239 US-3310+US-4239 US-3317+US-4239 US-3330+US-4239 US-3334+US-4239 US-4239+US-4487 US-4239+US-4489 US-4239+US-4583 US-4239+US-6620 US-4239+US-6621
-- lost: US-10716+US-12801+US-4489 (not sure: low-confidence outline for Yellow Dog National Wild and Scenic River (check the ); US-10718+US-12799+US-4489 (not sure: low-confidence outline for Sturgeon (Ottawa) National Wild and Scenic River (che); US-12787+US-4583 (not sure: low-confidence outline for Bear Creek National Wild and Scenic River (check the ); US-12793+US-3303 (not sure: low-confidence outline for Ontonagon National Wild and Scenic River (check the j); US-12793+US-3306 (not sure: low-confidence outline for Ontonagon National Wild and Scenic River (check the j); US-12793+US-4489 (merged into one row: US-12793+US-4489@area@46.656,-89.380 (the same not-sure pair, shown o); US-12797+US-13184 (not sure: low-confidence outline for Presque Isle National Wild and Scenic River (check th); US-12797+US-4489 (not sure: low-confidence outline for Presque Isle National Wild and Scenic River (check th); US-12799+US-4489 (not sure: low-confidence outline for Sturgeon (Ottawa) National Wild and Scenic River (che); US-13179+US-1555 (not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be ); US-13184+US-1511 (gone); US-13184+US-1513 (not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be ); US-6694+US-6729 (gone)
+## US-MI: live pairs 84 -> 123 (+50 / -11)
+- gained: US-0766+US-4239 US-10088+US-4239 US-10519+US-4239 US-10716+US-12801 US-10716+US-4239 US-10718+US-12799 US-12788+US-4239 US-12789+US-4239 US-12792+US-3329 US-12792+US-4239 US-12793+US-13184 US-12793+US-4239 US-12795+US-4239 US-12798+US-13184 US-12799+US-4239 US-12801+US-4489 US-13170+US-4487 US-13171+US-4583 US-13171+US-6625 US-13182+US-3383 US-13184+US-4239 US-1494+US-4239 US-1498+US-4239 US-1524+US-4239 US-1533+US-4239 US-1534+US-4239 US-1543+US-4239 US-1544+US-4239 US-1549+US-1550 US-1555+US-4239
+- lost: US-10716+US-12801+US-4489 (gone); US-10718+US-12799+US-4489 (gone); US-13179+US-1555 (not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be ); US-13184+US-1511 (gone); US-13184+US-1513 (not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be ); US-13184+US-1522 (gone); US-1522+US-6823 (gone); US-6634+US-6635 (not sure: one record covers two parks (the record 'Brookfield Township No. 2 State Game Ar); US-6662+US-6685 (gone); US-6675+US-6676 (not sure: one record covers two parks (the record 'Fraser Township No. 2 State Game Area' ); US-6694+US-6729 (gone)
 - touching held parks: -
 - touching pin-only parks: US-12786+US-13172 US-12786+US-4488 US-12788+US-4239 US-12788+US-4489 US-12789+US-4239 US-12789+US-4487 US-12790+US-4487 US-12794+US-13184 US-12794+US-4489 US-12796+US-4583
-- water / bank: 19
-- one-record same land: US-1522+US-6823 US-3318+US-6816 US-6634+US-6635 US-6675+US-6676
+- water / bank: 44
+- one-record same land: US-3318+US-6816 US-6634+US-6635 US-6675+US-6676
 - near a size threshold: US-0353+US-6782 51 m ~ 50 yd (very tight); US-4489+US-6620 45 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-01); the last pre-line check (mi) said HOLD
+- stale inputs: -
 
 ## US-MN: live pairs 144 -> 151 (+12 / -5)
 - gained: CA-0341+US-2489 US-0364+US-2482+US-7145 US-11153+US-4829 US-2477+US-4792 US-2489+US-4801 US-2517+US-4790+US-4824 US-2517+US-4824 US-4783+US-4820 US-4790+US-4829 US-4791+US-4837 US-4792+US-9373 US-9385+US-9386
@@ -482,6 +482,16 @@
 - near a size threshold: US-2096+US-8069 37 m ~ 50 yd (very tight); US-2100+US-5403 23 m ~ 25 yd (kept); US-2132+US-8319 45 m ~ 50 yd (very tight); US-2148+US-4709 23 m ~ 25 yd (kept); US-5088+US-5261 45 m ~ 50 yd (very tight)
 - stale inputs: -
 
+## US-OH: live pairs 32 -> 67 (+36 / -1)
+- gained: US-11673+US-4239 US-1935+US-4239 US-1939+US-4239 US-1948+US-4239 US-1958+US-4239 US-1960+US-4239 US-1969+US-4239 US-1970+US-4239 US-1972+US-4239 US-1983+US-4239 US-1989+US-4239 US-1990+US-4239 US-1991+US-4239 US-1996+US-4239 US-2000+US-4239 US-3520+US-4239 US-4239+US-4521 US-4239+US-5435 US-4239+US-5442 US-4239+US-5443 US-4239+US-5446 US-4239+US-5448 US-4239+US-5450 US-4239+US-5452 US-4239+US-7847 US-4239+US-7849 US-4239+US-8114 US-4239+US-8630 US-4239+US-9394 US-4239+US-9431
+- lost: US-9461+US-9462 (not sure: one record covers two parks (the record 'Fallsville Wildlife Area' does not name)
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 3
+- one-record same land: US-12057+US-9420 US-1936+US-5436 US-1940+US-7850 US-1940+US-7850 US-1945+US-8637 US-1946+US-9456 US-1947+US-9458 US-1948+US-8114 US-1959+US-9413 US-1977+US-5444 US-1977+US-5444 US-1982+US-8636 US-1982+US-8636 US-1989+US-9499 US-1990+US-5448 US-1991+US-5450 US-1996+US-5452 US-1997+US-9438 US-3516+US-9518 US-9461+US-9462
+- near a size threshold: US-0482+US-9479 25 m ~ 25 yd (kept); US-0483+US-1944 25 m ~ 25 yd (kept); US-4521+US-5438 39 m ~ 50 yd (very tight); US-4521+US-9506 45 m ~ 50 yd (very tight)
+- stale inputs: -
+
 ## US-OK: live pairs 37 -> 34 (+0 / -3)
 - gained: -
 - lost: US-0489+US-2783 (gone); US-6346+US-6347 (not sure: this spot is 324 km from Copan Wildlife Management Area's POTA pin: its outline ); US-6346+US-6347+US-8122 (not sure: this spot is 326 km from Copan Wildlife Management Area's POTA pin: its outline )
@@ -562,15 +572,15 @@
 - near a size threshold: US-0550+US-6572 23 m ~ 25 yd (kept); US-0551+US-3054 27 m ~ 25 yd (kept); US-0553+US-6586 23 m ~ 25 yd (kept); US-0689+US-3060 25 m ~ 25 yd (kept)
 - stale inputs: -
 
-## US-UT: live pairs 75 -> 125 (+54 / -4)
-- gained: US-0072+US-13571 US-0072+US-6010 US-0072+US-6018 US-0558+US-4578 US-0645+US-4575 US-0895+US-13571 US-0914+US-4395 US-0914+US-5898 US-10966+US-5982 US-10971+US-6028 US-10975+US-13571 US-10975+US-6010 US-10987+US-6073 US-10987+US-6074 US-10990+US-6027 US-11104+US-4398 US-11105+US-4566 US-11738+US-5898 US-12618+US-5898 US-3064+US-4578 US-3065+US-5995 US-3068+US-4566 US-3068+US-4573 US-3068+US-4578 US-3077+US-4575 US-4395+US-4575 US-4395+US-5898 US-4395+US-6054 US-4395+US-6068 US-4396+US-4575
-- lost: US-0559+US-10813 (gone); US-11103+US-4398 (gone); US-3073+US-5864 (gone); US-5913+US-5922 (gone)
+## US-UT: live pairs 75 -> 118 (+49 / -6)
+- gained: US-0072+US-6010 US-0072+US-6018 US-0558+US-4578 US-0645+US-4575 US-0914+US-4395 US-10966+US-5982 US-10971+US-6028 US-10975+US-6010 US-10987+US-6073 US-10987+US-6074 US-10990+US-6027 US-11104+US-4398 US-3064+US-4578 US-3065+US-5995 US-3068+US-4566 US-3068+US-4573 US-3068+US-4578 US-3077+US-4575 US-4395+US-4575 US-4395+US-6054 US-4395+US-6068 US-4396+US-4575 US-4397+US-4575 US-4566+US-5923 US-4566+US-5950 US-4566+US-5955 US-4566+US-5998 US-4566+US-6017 US-4573+US-5923 US-4573+US-5950
+- lost: US-0559+US-10813 (gone); US-11739+US-6033 (gone); US-3073+US-5864 (gone); US-3096+US-5971 (gone); US-5967+US-5968 (gone); US-6010+US-6011 (not sure: one record covers two parks (the record 'Deep Creek North' does not name 'Deep C)
 - touching held parks: -
-- touching pin-only parks: US-0072+US-10971 US-0072+US-10973 US-0072+US-10975 US-0072+US-10976 US-0072+US-6012 US-0072+US-6025 US-0895+US-10971 US-0895+US-10973 US-0895+US-10975 US-0895+US-10976 US-0895+US-6012 US-10971+US-6028 US-10971+US-6037 US-10975+US-10976 US-10975+US-13571 US-10975+US-6010 US-10976+US-6010 US-10976+US-6011 US-6012+US-6018
-- water / bank: 23
-- one-record same land: US-10972+US-6024 US-10974+US-6010 US-10990+US-6027 US-11739+US-6033 US-6010+US-6011 US-6045+US-6046 US-6063+US-6077 US-6073+US-6074
-- near a size threshold: US-0011+US-5883 25 m ~ 25 yd (kept); US-0011+US-5893 103 m ~ 100 yd (small); US-0011+US-5917 45 m ~ 50 yd (very tight); US-0072+US-6010 75 m ~ 100 yd (small); US-0072+US-6018 25 m ~ 25 yd (kept); US-0645+US-5849 75 m ~ 100 yd (small); US-0895+US-11760 25 m ~ 25 yd (kept); US-0914+US-4395 45 m ~ 50 yd (very tight); US-0914+US-6006 45 m ~ 50 yd (very tight); US-10993+US-6076 95 m ~ 100 yd (small); US-11000+US-6098 75 m ~ 100 yd (small); US-11104+US-4398 101 m ~ 100 yd (small); US-11205+US-4397 25 m ~ 25 yd (kept); US-11742+US-4395 25 m ~ 25 yd (kept); US-13603+US-4397 25 m ~ 25 yd (kept); US-3071+US-4396 109 m ~ 100 yd (small); US-3096+US-5971 45 m ~ 50 yd (very tight); US-4395+US-6067 25 m ~ 25 yd (kept); US-4396+US-5917 25 m ~ 25 yd (kept); US-4397+US-5925 25 m ~ 25 yd (kept)
-- stale inputs: the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-03); the last pre-line check (ut) said HOLD
+- touching pin-only parks: US-0072+US-10971 US-0072+US-10973 US-0072+US-10975 US-0072+US-10976 US-0072+US-6012 US-0072+US-6025 US-0895+US-10971 US-0895+US-10973 US-0895+US-10975 US-0895+US-10976 US-0895+US-6012 US-10971+US-6028 US-10971+US-6037 US-10975+US-10976 US-10975+US-6010 US-10976+US-6010 US-10976+US-6011 US-6012+US-6018
+- water / bank: 21
+- one-record same land: US-10972+US-6024 US-10974+US-6010 US-10990+US-6027 US-6010+US-6011 US-6045+US-6046 US-6063+US-6077 US-6073+US-6074
+- near a size threshold: US-0011+US-5883 25 m ~ 25 yd (kept); US-0011+US-5893 103 m ~ 100 yd (small); US-0011+US-5917 45 m ~ 50 yd (very tight); US-0072+US-6010 75 m ~ 100 yd (small); US-0072+US-6018 25 m ~ 25 yd (kept); US-0645+US-5849 75 m ~ 100 yd (small); US-0895+US-11760 25 m ~ 25 yd (kept); US-0914+US-4395 45 m ~ 50 yd (very tight); US-0914+US-6006 45 m ~ 50 yd (very tight); US-10993+US-6076 95 m ~ 100 yd (small); US-11000+US-6098 75 m ~ 100 yd (small); US-11103+US-4398 45 m ~ 50 yd (very tight); US-11104+US-4398 101 m ~ 100 yd (small); US-11205+US-4397 25 m ~ 25 yd (kept); US-11742+US-4395 25 m ~ 25 yd (kept); US-13603+US-4397 25 m ~ 25 yd (kept); US-3071+US-4396 109 m ~ 100 yd (small); US-4395+US-6067 25 m ~ 25 yd (kept); US-4396+US-5917 25 m ~ 25 yd (kept); US-4397+US-5925 25 m ~ 25 yd (kept)
+- stale inputs: -
 
 ## US-VA: live pairs 116 -> 116 (+13 / -13)
 - gained: US-0670+US-9898 US-0670+US-9901 US-1299+US-9907 US-1311+US-9933 US-1321+US-9933 US-4564+US-9898 US-4564+US-9901 US-4567+US-4581+US-7791 US-4581+US-7791 US-4581+US-9898 US-4581+US-9901 US-4582+US-9901 US-9898+US-9901

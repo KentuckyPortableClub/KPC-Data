@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06 08:57 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42156510317",
+ "checked": "2026-11-06 12:14 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42188094675",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -4966,12 +4966,23 @@
    "gained": [
     "US-0766+US-4239",
     "US-10088+US-4239",
+    "US-10519+US-4239",
+    "US-10716+US-12801",
     "US-10716+US-4239",
+    "US-10718+US-12799",
     "US-12788+US-4239",
     "US-12789+US-4239",
+    "US-12792+US-3329",
     "US-12792+US-4239",
+    "US-12793+US-13184",
+    "US-12793+US-4239",
     "US-12795+US-4239",
-    "US-13172+US-4239",
+    "US-12798+US-13184",
+    "US-12799+US-4239",
+    "US-12801+US-4489",
+    "US-13170+US-4487",
+    "US-13171+US-4583",
+    "US-13171+US-6625",
     "US-13182+US-3383",
     "US-13184+US-4239",
     "US-1494+US-4239",
@@ -4984,6 +4995,7 @@
     "US-1549+US-1550",
     "US-1555+US-4239",
     "US-1556+US-4239",
+    "US-3305+US-6796",
     "US-3308+US-4239",
     "US-3310+US-4239",
     "US-3317+US-4239",
@@ -4996,7 +5008,6 @@
     "US-4239+US-6621",
     "US-4239+US-6629",
     "US-4239+US-6640",
-    "US-4239+US-6677",
     "US-4239+US-6725",
     "US-4239+US-6735",
     "US-4239+US-6770",
@@ -5007,39 +5018,11 @@
    "lost": [
     {
      "pair": "US-10716+US-12801+US-4489",
-     "now": "not sure: low-confidence outline for Yellow Dog National Wild and Scenic River (check the "
+     "now": "gone"
     },
     {
      "pair": "US-10718+US-12799+US-4489",
-     "now": "not sure: low-confidence outline for Sturgeon (Ottawa) National Wild and Scenic River (che"
-    },
-    {
-     "pair": "US-12787+US-4583",
-     "now": "not sure: low-confidence outline for Bear Creek National Wild and Scenic River (check the "
-    },
-    {
-     "pair": "US-12793+US-3303",
-     "now": "not sure: low-confidence outline for Ontonagon National Wild and Scenic River (check the j"
-    },
-    {
-     "pair": "US-12793+US-3306",
-     "now": "not sure: low-confidence outline for Ontonagon National Wild and Scenic River (check the j"
-    },
-    {
-     "pair": "US-12793+US-4489",
-     "now": "merged into one row: US-12793+US-4489@area@46.656,-89.380 (the same not-sure pair, shown o"
-    },
-    {
-     "pair": "US-12797+US-13184",
-     "now": "not sure: low-confidence outline for Presque Isle National Wild and Scenic River (check th"
-    },
-    {
-     "pair": "US-12797+US-4489",
-     "now": "not sure: low-confidence outline for Presque Isle National Wild and Scenic River (check th"
-    },
-    {
-     "pair": "US-12799+US-4489",
-     "now": "not sure: low-confidence outline for Sturgeon (Ottawa) National Wild and Scenic River (che"
+     "now": "gone"
     },
     {
      "pair": "US-13179+US-1555",
@@ -5054,12 +5037,32 @@
      "now": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be "
     },
     {
+     "pair": "US-13184+US-1522",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1522+US-6823",
+     "now": "gone"
+    },
+    {
+     "pair": "US-6634+US-6635",
+     "now": "not sure: one record covers two parks (the record 'Brookfield Township No. 2 State Game Ar"
+    },
+    {
+     "pair": "US-6662+US-6685",
+     "now": "gone"
+    },
+    {
+     "pair": "US-6675+US-6676",
+     "now": "not sure: one record covers two parks (the record 'Fraser Township No. 2 State Game Area' "
+    },
+    {
      "pair": "US-6694+US-6729",
      "now": "gone"
     }
    ],
    "live_before": 84,
-   "live_now": 110,
+   "live_now": 123,
    "touch_held": [],
    "touch_pin_only": [
     "US-12786+US-13172",
@@ -5080,12 +5083,32 @@
      "status": "water only: boat or kayak"
     },
     {
+     "pair": "US-10716+US-12801",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-10718+US-12799",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
      "pair": "US-12786+US-13172",
      "kind": "river",
      "status": "candidate"
     },
     {
      "pair": "US-12786+US-4488",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12787+US-12792",
+     "kind": "river",
+     "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be "
+    },
+    {
+     "pair": "US-12787+US-4583",
      "kind": "river",
      "status": "candidate"
     },
@@ -5120,9 +5143,69 @@
      "status": "candidate"
     },
     {
+     "pair": "US-12791+US-1532",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12791+US-4487",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12792+US-3329",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12792+US-4239",
+     "kind": "river",
+     "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be "
+    },
+    {
+     "pair": "US-12792+US-4239",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
      "pair": "US-12792+US-4583",
-     "kind": "area",
-     "status": "water only: boat or kayak"
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12792+US-6727",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12793+US-13184",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12793+US-13184",
+     "kind": "river",
+     "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be "
+    },
+    {
+     "pair": "US-12793+US-3303",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12793+US-3306",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12793+US-4239",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12793+US-4489",
+     "kind": "river",
+     "status": "candidate"
     },
     {
      "pair": "US-12794+US-13184",
@@ -5141,6 +5224,51 @@
     },
     {
      "pair": "US-12796+US-4583",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12797+US-13184",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12797+US-4489",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12798+US-13184",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12798+US-4487",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12799+US-4239",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12799+US-4489",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12800+US-13184",
+     "kind": "river",
+     "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be "
+    },
+    {
+     "pair": "US-12800+US-4487",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-12801+US-4489",
      "kind": "river",
      "status": "candidate"
     },
@@ -5172,20 +5300,16 @@
    ],
    "same_land_one_record": [
     {
-     "pair": "US-1522+US-6823",
-     "status": "candidate"
-    },
-    {
      "pair": "US-3318+US-6816",
      "status": "candidate"
     },
     {
      "pair": "US-6634+US-6635",
-     "status": "candidate"
+     "status": "not sure: one record covers two parks (the record 'Brookfield Township No. 2 State Game Ar"
     },
     {
      "pair": "US-6675+US-6676",
-     "status": "candidate"
+     "status": "not sure: one record covers two parks (the record 'Fraser Township No. 2 State Game Area' "
     }
    ],
    "near_threshold": [
@@ -5204,14 +5328,11 @@
    ],
    "preline": {
     "tag": "mi",
-    "verdict": "HOLD",
+    "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-01)",
-    "the last pre-line check (mi) said HOLD"
-   ]
+   "stale_inputs": []
   },
   "US-MN": {
    "gained": [
@@ -6909,6 +7030,192 @@
    ],
    "preline": {
     "tag": "northeast",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
+  "US-OH": {
+   "gained": [
+    "US-11673+US-4239",
+    "US-1935+US-4239",
+    "US-1939+US-4239",
+    "US-1948+US-4239",
+    "US-1958+US-4239",
+    "US-1960+US-4239",
+    "US-1969+US-4239",
+    "US-1970+US-4239",
+    "US-1972+US-4239",
+    "US-1983+US-4239",
+    "US-1989+US-4239",
+    "US-1990+US-4239",
+    "US-1991+US-4239",
+    "US-1996+US-4239",
+    "US-2000+US-4239",
+    "US-3520+US-4239",
+    "US-4239+US-4521",
+    "US-4239+US-5435",
+    "US-4239+US-5442",
+    "US-4239+US-5443",
+    "US-4239+US-5446",
+    "US-4239+US-5448",
+    "US-4239+US-5450",
+    "US-4239+US-5452",
+    "US-4239+US-7847",
+    "US-4239+US-7849",
+    "US-4239+US-8114",
+    "US-4239+US-8630",
+    "US-4239+US-9394",
+    "US-4239+US-9431",
+    "US-4239+US-9467",
+    "US-4239+US-9474",
+    "US-4239+US-9488",
+    "US-4239+US-9499",
+    "US-4239+US-9514",
+    "US-4239+US-9519"
+   ],
+   "lost": [
+    {
+     "pair": "US-9461+US-9462",
+     "now": "not sure: one record covers two parks (the record 'Fallsville Wildlife Area' does not name"
+    }
+   ],
+   "live_before": 32,
+   "live_now": 67,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [
+    {
+     "pair": "US-1407+US-1986",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "US-1960+US-9488",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "US-9393+US-9458",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    }
+   ],
+   "same_land_one_record": [
+    {
+     "pair": "US-12057+US-9420",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1936+US-5436",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1940+US-7850",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1940+US-7850",
+     "status": "not sure: one record covers two parks ('Caesar Creek State Park' is a state park, the reco"
+    },
+    {
+     "pair": "US-1945+US-8637",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1946+US-9456",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1947+US-9458",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1948+US-8114",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1959+US-9413",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1977+US-5444",
+     "status": "not sure: one record covers two parks ('Mohican State Park' is a state park, the record a "
+    },
+    {
+     "pair": "US-1977+US-5444",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1982+US-8636",
+     "status": "not sure: one record covers two parks ('Paint Creek State Park' is a state park, the recor"
+    },
+    {
+     "pair": "US-1982+US-8636",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1989+US-9499",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1990+US-5448",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1991+US-5450",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1996+US-5452",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-1997+US-9438",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-3516+US-9518",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-9461+US-9462",
+     "status": "not sure: one record covers two parks (the record 'Fallsville Wildlife Area' does not name"
+    },
+    {
+     "pair": "US-9461+US-9462",
+     "status": "not sure: one record covers two parks (the record 'FALLSVILLE (FallsvllWA)' does not name "
+    }
+   ],
+   "near_threshold": [
+    {
+     "pair": "US-0482+US-9479",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-0483+US-1944",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-4521+US-5438",
+     "wide_m": 39,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-4521+US-9506",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    }
+   ],
+   "preline": {
+    "tag": "oh",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -8764,25 +9071,18 @@
   },
   "US-UT": {
    "gained": [
-    "US-0072+US-13571",
     "US-0072+US-6010",
     "US-0072+US-6018",
     "US-0558+US-4578",
     "US-0645+US-4575",
-    "US-0895+US-13571",
     "US-0914+US-4395",
-    "US-0914+US-5898",
     "US-10966+US-5982",
     "US-10971+US-6028",
-    "US-10975+US-13571",
     "US-10975+US-6010",
     "US-10987+US-6073",
     "US-10987+US-6074",
     "US-10990+US-6027",
     "US-11104+US-4398",
-    "US-11105+US-4566",
-    "US-11738+US-5898",
-    "US-12618+US-5898",
     "US-3064+US-4578",
     "US-3065+US-5995",
     "US-3068+US-4566",
@@ -8790,22 +9090,24 @@
     "US-3068+US-4578",
     "US-3077+US-4575",
     "US-4395+US-4575",
-    "US-4395+US-5898",
     "US-4395+US-6054",
     "US-4395+US-6068",
     "US-4396+US-4575",
     "US-4397+US-4575",
     "US-4566+US-5923",
+    "US-4566+US-5950",
     "US-4566+US-5955",
     "US-4566+US-5998",
     "US-4566+US-6017",
     "US-4573+US-5923",
+    "US-4573+US-5950",
     "US-4575+US-5953",
     "US-4575+US-5956",
     "US-4575+US-6090",
     "US-4575+US-9231",
     "US-4578+US-5923",
     "US-4578+US-5929",
+    "US-4578+US-5950",
     "US-5918+US-5928",
     "US-6013+US-6018",
     "US-6016+US-6018",
@@ -8825,7 +9127,7 @@
      "now": "gone"
     },
     {
-     "pair": "US-11103+US-4398",
+     "pair": "US-11739+US-6033",
      "now": "gone"
     },
     {
@@ -8833,12 +9135,20 @@
      "now": "gone"
     },
     {
-     "pair": "US-5913+US-5922",
+     "pair": "US-3096+US-5971",
      "now": "gone"
+    },
+    {
+     "pair": "US-5967+US-5968",
+     "now": "gone"
+    },
+    {
+     "pair": "US-6010+US-6011",
+     "now": "not sure: one record covers two parks (the record 'Deep Creek North' does not name 'Deep C"
     }
    ],
    "live_before": 75,
-   "live_now": 125,
+   "live_now": 118,
    "touch_held": [],
    "touch_pin_only": [
     "US-0072+US-10971",
@@ -8855,7 +9165,6 @@
     "US-10971+US-6028",
     "US-10971+US-6037",
     "US-10975+US-10976",
-    "US-10975+US-13571",
     "US-10975+US-6010",
     "US-10976+US-6010",
     "US-10976+US-6011",
@@ -8945,7 +9254,7 @@
     {
      "pair": "US-10975+US-13571",
      "kind": "river",
-     "status": "candidate"
+     "status": "not sure: the official outline of Zion Scenic Byway National Parkway could not be read in "
     },
     {
      "pair": "US-10975+US-6010",
@@ -8961,16 +9270,6 @@
      "pair": "US-10976+US-6011",
      "kind": "river",
      "status": "candidate"
-    },
-    {
-     "pair": "US-11196+US-5973",
-     "kind": "area",
-     "status": "not sure: this spot is 217 km from Salt Creek State Waterfowl Management Area's POTA pin: "
-    },
-    {
-     "pair": "US-3096+US-5779",
-     "kind": "area",
-     "status": "water only: boat or kayak"
     },
     {
      "pair": "US-6012+US-6018",
@@ -8992,12 +9291,8 @@
      "status": "candidate"
     },
     {
-     "pair": "US-11739+US-6033",
-     "status": "candidate"
-    },
-    {
      "pair": "US-6010+US-6011",
-     "status": "candidate"
+     "status": "not sure: one record covers two parks (the record 'Deep Creek North' does not name 'Deep C"
     },
     {
      "pair": "US-6045+US-6046",
@@ -9080,6 +9375,12 @@
      "status": "not sure: the agency ownership map did n"
     },
     {
+     "pair": "US-11103+US-4398",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
      "pair": "US-11104+US-4398",
      "wide_m": 101,
      "near": "100 yd (small)",
@@ -9108,12 +9409,6 @@
      "wide_m": 109,
      "near": "100 yd (small)",
      "status": "candidate"
-    },
-    {
-     "pair": "US-3096+US-5971",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
     },
     {
      "pair": "US-4395+US-6067",
@@ -9154,14 +9449,11 @@
    ],
    "preline": {
     "tag": "ut",
-    "verdict": "HOLD",
+    "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-03)",
-    "the last pre-line check (ut) said HOLD"
-   ]
+   "stale_inputs": []
   },
   "US-VA": {
    "gained": [
