@@ -2,7 +2,7 @@
 
 KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py check; fails closed)
 
-- world-key: build W-42074896607 (KPC-Links W-42074896607): ok, 0 unexplained
+- world-key: build W-42141862922 (KPC-Links W-42141862922): ok, 0 unexplained
   - AE.json: KPC-Links 8 outlined, KPC-Data 9; approved adds 1 (label missing 0); unexplained 0
   - AU.json: KPC-Links 7245 outlined, KPC-Data 8843; approved adds 1598 (label missing 0); unexplained 0
   - BE.json: KPC-Links 164 outlined, KPC-Data 174; approved adds 10 (label missing 0); unexplained 0

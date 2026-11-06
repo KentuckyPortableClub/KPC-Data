@@ -1,9 +1,9 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-06 02:08 UTC",
+ "made": "2026-11-06 07:17 UTC",
  "totals": {
   "gained": 605,
-  "lost": 111,
+  "lost": 118,
   "pieces_changed": 4419,
   "grade_changed": 12017
  },
@@ -220,7 +220,7 @@
   },
   "MX": {
    "gained": 0,
-   "lost": 0,
+   "lost": 7,
    "pieces_changed": 1,
    "grade_changed": 0
   },
@@ -13746,6 +13746,139 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/JP-2016"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0140",
+   "name": "Arrecife de Puerto Morelos National Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "145",
+     "Arrecife de Puerto Morelos",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0140"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0141",
+   "name": "Arrecifes de Sian Ka'an Biosphere Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "113",
+     "Arrecifes de Sian Ka'an",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0141"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0145",
+   "name": "Banco Chinchorro Biosphere Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "143",
+     "Banco Chinchorro",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0145"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0176",
+   "name": "Lacan-Tun Biosphere Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "59",
+     "Lacan-Tun",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0176"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0181",
+   "name": "Los Petenes Biosphere Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "131",
+     "Los Petenes",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0181"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0186",
+   "name": "Marismas Nacionales Biosphere Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "71",
+     "Marismas Nacionales Nayarit",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0186"
+  },
+  {
+   "area": "MX",
+   "ref": "MX-0196",
+   "name": "Pacífico Mexicano Profundo Biosphere Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "157",
+     "Pacífico Mexicano Profundo",
+     "Mexico: CONANP / SEMARNAT (federal protected areas)",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/MX-0196"
   },
   {
    "area": "NO",
