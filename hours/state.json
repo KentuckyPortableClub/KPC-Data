@@ -503,63 +503,181 @@
    "parks": 440,
    "status": "partial",
    "updated": "2026-11-05"
+  },
+  "US-SD": {
+   "checked": 120,
+   "counts": {
+    "fees": 9,
+    "hours": 15,
+    "hours_lines": 22,
+    "no_page": 1,
+    "nothing": 96,
+    "parks": 120,
+    "permits": 1,
+    "season": 64,
+    "season_lines": 122
+   },
+   "left": 0,
+   "parks": 120,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
+  "US-TN": {
+   "checked": 277,
+   "counts": {
+    "fees": 15,
+    "hours": 9,
+    "hours_lines": 18,
+    "no_page": 2,
+    "nothing": 7,
+    "parks": 277,
+    "permits": 1,
+    "season": 5,
+    "season_lines": 5
+   },
+   "left": 0,
+   "parks": 277,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
+  "US-TX": {
+   "checked": 222,
+   "counts": {
+    "fees": 27,
+    "hours": 15,
+    "hours_lines": 23,
+    "no_page": 0,
+    "nothing": 49,
+    "parks": 222,
+    "permits": 32,
+    "season": 27,
+    "season_lines": 29
+   },
+   "left": 0,
+   "parks": 222,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
+  "US-UT": {
+   "checked": 264,
+   "counts": {
+    "fees": 17,
+    "hours": 11,
+    "hours_lines": 12,
+    "no_page": 0,
+    "nothing": 196,
+    "parks": 264,
+    "permits": 5,
+    "season": 11,
+    "season_lines": 15
+   },
+   "left": 428,
+   "parks": 692,
+   "status": "partial",
+   "updated": "2026-11-06"
   }
  },
  "hosts": {
-  "www.nevadawilderness.org": 1793949677.37289
+  "www.blm.gov": 1794038563.7817116,
+  "www.fws.gov": 1794036013.0793943
  },
  "last": {
   "areas": [
-   "US-NV",
-   "US-NY",
-   "US-OH",
-   "US-OK",
-   "US-OR",
-   "US-PA",
-   "US-RI",
-   "US-SC"
+   "US-SD",
+   "US-TN",
+   "US-TX",
+   "US-UT",
+   "US-VA",
+   "US-VT",
+   "US-WA",
+   "US-WI"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 16,
+   "crawl_delay_skip": 4,
+   "dropped_queued": 494,
    "errors": 0,
-   "for_person": 1,
+   "for_person": 5,
    "for_person_urls": [
     [
-     "https://sojournertruthstatepark.info/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from sojournertruthstatepark.info this run"
+     "https://www.tn.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.tn.gov this run"
     ],
     [
-     "http://www.swt.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.swt.usace.army.mil this run"
+     "https://tnstateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from tnstateparks.com this run"
     ],
     [
-     "https://maps.app.goo.gl/robots.txt",
-     "robots.txt answered 400: nothing fetched from maps.app.goo.gl this run"
-    ],
-    [
-     "https://www.blm.gov/sites/default/files/documents/files/nwo_whittakercrk_brochure.pdf",
+     "https://www.tnwatchablewildlife.org/watchareadetails.cfm?uid=09091516201272287&region=Chickasaw_State_Forest%2C_State_Park%2C_and_WMA",
      "HTTP 403 twice"
+    ],
+    [
+     "https://www.murfreesborotn.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.murfreesborotn.gov this run"
+    ],
+    [
+     "https://www.baysmountain.com/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://springcreekforest.org/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.pacificwarmuseum.org/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.pacificwarmuseum.org this run"
+    ],
+    [
+     "https://www.mitigationcommission.gov/hatchery/hatchery_fountain.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.mitigationcommission.gov/hatchery/hatchery_kamas.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.mitigationcommission.gov/hatchery/hatchery_warmh2o.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.mitigationcommission.gov/hatchery/hatchery_whiterocks.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.flaminggorgecountry.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.flaminggorgecountry.com this run"
+    ],
+    [
+     "https://www.blm.gov/visit/drinks-canyon-camping-area-0",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.blm.gov/visit/starr-spring-campground",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.intermountainhistories.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.intermountainhistories.org this run"
     ]
    ],
-   "requests": 1676,
-   "rested": 0,
-   "retry403": 1,
-   "robots": 209,
-   "robots_unreadable": 3,
-   "strikes": 2
+   "requests": 1018,
+   "rested": 154,
+   "retry403": 5,
+   "robots": 266,
+   "robots_unreadable": 6,
+   "strikes": 13
   },
   "stat": {
    "errors": 0,
-   "fees": 58,
-   "hours": 107,
-   "no_page": 1,
-   "none": 635,
-   "pages_read": 766,
-   "parks": 856,
-   "permits": 102,
-   "skipped_fresh": 983
+   "fees": 68,
+   "hours": 50,
+   "no_page": 3,
+   "none": 760,
+   "pages_read": 696,
+   "parks": 883,
+   "permits": 39,
+   "skipped_fresh": 0
   },
-  "when": "2026-11-05"
+  "when": "2026-11-06"
  }
 }

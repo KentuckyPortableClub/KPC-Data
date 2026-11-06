@@ -1,9 +1,10 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 90 days.
+Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 90 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
+| US-TN | 277 | 9 | 15 | 1 | 7 | 2 |
 | US-NC | 253 | 66 | 71 | 9 | 67 | 2 |
 | US-GA | 237 | 26 | 32 | 5 | 176 | 0 |
 | US-AL | 155 | 30 | 2 | 3 | 108 | 6 |
@@ -13,6 +14,7 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 | US-MN | 298 | 19 | 82 | 87 | 93 | 0 |
 | US-IA | 181 | 114 | 3 | 2 | 61 | 0 |
 | US-ND | 82 | 20 | 12 | 0 | 54 | 0 |
+| US-SD | 120 | 15 | 9 | 1 | 96 | 1 |
 | US-NY | 851 | 195 | 188 | 428 | 184 | 1 |
 | US-MA | 421 | 35 | 25 | 5 | 346 | 0 |
 | US-ME | 148 | 26 | 8 | 2 | 85 | 2 |
@@ -21,6 +23,7 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 | US-AR | 306 | 47 | 18 | 24 | 186 | 22 |
 | US-LA | 123 | 11 | 7 | 4 | 11 | 0 |
 | US-OK | 205 | 42 | 12 | 4 | 152 | 0 |
+| US-TX | 222 | 15 | 27 | 32 | 49 | 0 |
 | US-KS | 145 | 8 | 11 | 1 | 13 | 0 |
 | US-ID | 63 | 0 | 2 | 0 | 32 | 0 |
 | US-MT | 254 | 39 | 73 | 9 | 154 | 1 |
@@ -32,6 +35,48 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 | US-HI | 102 | 9 | 1 | 6 | 73 | 0 |
 | US-MI | 388 | 18 | 15 | 3 | 27 | 0 |
 | US-OH | 276 | 7 | 12 | 0 | 2 | 1 |
+| US-UT | 264 | 11 | 17 | 5 | 196 | 0 |
+
+## US-TN: 12-park sample for chat 8
+
+- **US-0019 Cumberland Gap National Historical Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/cuga/planyourvisit/fees.htm)
+  - Fees: “There are no entrance fees at Cumberland Gap National Historical Park.” · [www.nps.gov](https://www.nps.gov/cuga/planyourvisit/fees.htm)
+- **US-0034 Great Smoky Mountains National Park**
+  - Hours: “Great Smoky Mountains National Park is open 24 hours a day, 365 days a year, offering visitors the chance to experience its beauty in every season.” · [www.nps.gov](https://www.nps.gov/grsm/planyourvisit/hours.htm)
+  - Fees: “While the parking tag is not an entrance fee, the park honors the Free Entrance Days below and parking tags will not be required on those dates.” · [www.nps.gov](https://www.nps.gov/grsm/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/grsm/planyourvisit/fees.htm)
+- **US-0642 Natchez Trace Parkway National Parkway**
+  - Fees: “There are no entrance fees to the Natchez Trace Parkway or any of its facilities.” · [www.nps.gov](https://www.nps.gov/natr/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/natr/planyourvisit/fees.htm)
+- **US-0685 Obed National Wild and Scenic River**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/obed/planyourvisit/fees.htm)
+- **US-0686 Big South Fork National Recreation Area**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/biso/planyourvisit/fees.htm)
+- **US-0703 Fort Donelson National Battlefield**
+  - Hours: “Fall time change to Spring time change: 8:00 am to 4:30 pm” · [www.nps.gov](https://www.nps.gov/fodo/planyourvisit/hours.htm)
+  - Hours: “The National Cemetery hours are the same as the park hours execpt during the time between the fall and spring time change when the National Cemetery is open 8:00 am to 5:00 pm.” · [www.nps.gov](https://www.nps.gov/fodo/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fodo/planyourvisit/fees.htm)
+  - Hunting hours: “The exhibit room at the Dover Hotel, known locally as the "Surrender House" is open daily from 8:30 am until 4:00 pm.” · [www.nps.gov](https://www.nps.gov/fodo/planyourvisit/hours.htm)
+- **US-0708 Stones River National Battlefield**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/stri/planyourvisit/fees.htm)
+  - Fees: “As a fee-free park, Stones River National Battlefield does not sell or distribute any type of public lands passes.” · [www.nps.gov](https://www.nps.gov/stri/planyourvisit/fees.htm)
+- **US-0716 Chickamauga and Chattanooga National Military Park**
+  - Hours: “All units of Chickamauga and Chattanooga National Military Park are open for visitation during daylight hours (all units are closed to public use activities one half hour after official sunset to one half hour before sunrise, unless authori” · [www.nps.gov](https://www.nps.gov/chch/planyourvisit/hours.htm)
+  - Hours: “The Point Park Main Entrance Gate, atop Lookout Mountain, opens daily at 8:30 am .” · [www.nps.gov](https://www.nps.gov/chch/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/chch/planyourvisit/fees.htm)
+- **US-0722 Shiloh National Battlefield**
+  - Fees: “There are no entrance fees at the Shiloh and Corinth battlefields.” · [www.nps.gov](https://www.nps.gov/shil/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/shil/planyourvisit/fees.htm)
+- **US-0800 Andrew Johnson National Historic Site**
+  - Hours: “Summer Hours : Open daily April-November from 9 am to 4 pm.” · [www.nps.gov](https://www.nps.gov/anjo/planyourvisit/hours.htm)
+  - Hours: “Winter Hours : Open Wednesday through Sunday December-March from 9 am to 4 pm.” · [www.nps.gov](https://www.nps.gov/anjo/planyourvisit/hours.htm)
+  - Fees: “There are no entrance fees for the site.” · [www.nps.gov](https://www.nps.gov/anjo/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/anjo/planyourvisit/fees.htm)
+- **US-3791 Trail of Tears National Historic Trail**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/trte/planyourvisit/fees.htm)
+- **US-3792 Land Between the Lakes National Recreation Area**
+  - Hours: “Land Between the Lakes National Recreation Area is open 24/7 and has no general entrance fee to the recreation area itself.” · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/help-center/frequently-asked-questions/)
 
 ## US-NC: 12-park sample for chat 8
 
@@ -414,6 +459,46 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 - **US-0823 Fort Union Trading Post National Historic Site**
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fous/planyourvisit/fees.htm)
 
+## US-SD: 12-park sample for chat 8
+
+- **US-0005 Badlands National Park**
+  - Hours: “Badlands National Park is open 24 hours a day, seven days a week.” · [www.nps.gov](https://www.nps.gov/badl/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/badl/planyourvisit/fees.htm)
+- **US-0068 Wind Cave National Park**
+  - Fees: “There are no fees to drive through or hike in the park.” · [www.nps.gov](https://www.nps.gov/wica/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/wica/planyourvisit/fees.htm)
+  - Attraction fee: “There are no entrance fees to enjoy the trails, scenic drives, and visitor center at Wind Cave National Park.” · [www.nps.gov](https://www.nps.gov/wica/planyourvisit/fees.htm)
+- **US-0527 Lacreek National Wildlife Refuge**
+  - Hours: “Refuge Hours All year Open dawn to dusk” · [www.fws.gov](https://www.fws.gov/locations/lacreek-national-wildlife-refuge)
+  - Hours: “The Refuge is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/locations/lacreek-national-wildlife-refuge/rules-and-policies)
+  - Office hours: “Office Hours Monday - Friday (excluding federal holidays) 7:00 AM to 3:30 PM” · [www.fws.gov](https://www.fws.gov/locations/lacreek-national-wildlife-refuge)
+- **US-0528 Lake Andes National Wildlife Refuge**
+  - Hours: “The Lake Andes National Wildlife Refuge public use area is open from sunrise to sunset.” · [www.fws.gov](https://www.fws.gov/refuge/lake-andes/visit-us)
+- **US-0529 Madison Wetland Management District**
+  - Hours: “Monday - Friday, 8:00 am - 4:30 pm except Federal Holidays.” · [www.fws.gov](https://www.fws.gov/refuge/madison-wetland-management-district/visit-us)
+- **US-0530 Sand Lake National Wildlife Refuge**
+  - Hours: “The refuge is open during daylight hours only.” · [www.fws.gov](https://www.fws.gov/refuge/sand-lake/visit-us)
+- **US-0675 Missouri National Recreational River National Wild and Scenic River**
+  - Hours: “River use on the Missouri National Recreational River is permitted 24 hours a day, year-round.” · [www.nps.gov](https://www.nps.gov/mnrr/planyourvisit/hours.htm)
+  - Hours: “Open from dawn to dusk.” · [www.nps.gov](https://www.nps.gov/mnrr/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mnrr/planyourvisit/fees.htm)
+  - Office hours: “The office is open Monday through Friday from 8:00 am to 4:30 pm and closed on Saturdays, Sundays, and federal holidays.” · [www.nps.gov](https://www.nps.gov/mnrr/planyourvisit/hours.htm)
+  - Attraction fee: “There are no fees to enter Missouri National Recreational River or the Lewis and Clark Visitor Center adjacent to Gavins Point Dam.” · [www.nps.gov](https://www.nps.gov/mnrr/planyourvisit/fees.htm)
+- **US-0786 Mount Rushmore National Memorial**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/moru/planyourvisit/fees.htm)
+- **US-0850 Minuteman Missile National Historic Site**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mimi/planyourvisit/fees.htm)
+  - Fees: “Because Minuteman Missile charges no entry fee, we do not sell National Park passes.” · [www.nps.gov](https://www.nps.gov/mimi/planyourvisit/fees.htm)
+- **US-0944 Jewel Cave National Monument**
+  - Hours: “Please be advised that the main entrance gate is closed promptly at 4:30 pm;” · [www.nps.gov](https://www.nps.gov/jeca/planyourvisit/hours.htm)
+  - Hours: “The Jewel Cave Historic Area is currently open Tuesday through Saturday from 8:30 am to 4:30 pm.” · [www.nps.gov](https://www.nps.gov/jeca/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/jeca/planyourvisit/fees.htm)
+  - Attraction fee: “There is no fee to explore the Visitor Center or hike the trails.” · [www.nps.gov](https://www.nps.gov/jeca/planyourvisit/fees.htm)
+- **US-2916 Bear Butte State Park**
+  - Hours: “Summit Trail: 1.85 miles (Open one-half hour before sunrise to one-half hour after sunset)” · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/bear-butte-state-park/)
+- **US-2919 Good Earth State Park**
+  - Hours: “6 a.m-11 pm year-round.” · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/good-earth-state-park/)
+
 ## US-NY: 12-park sample for chat 8
 
 - **US-0062 Saratoga National Historical Park**
@@ -681,6 +766,51 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
   - Hunting hours: “From 10 pm to 5 am, all Wildlife Department fishing areas are restricted to fishing and hunting (when applicable) related activities only.” · [www.wildlifedepartment.com](https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas)
 - **US-2773 Black Mesa State Park**
   - Hours: “Black Mesa Nature Preserve is open dawn to dusk only.” · [www.travelok.com](https://www.travelok.com/state-parks/black-mesa-state-park-nature-preserve)
+
+## US-TX: 12-park sample for chat 8
+
+- **US-0006 Big Bend National Park**
+  - Hours: “Park entrances are open 24 hours daily, all year.” · [www.nps.gov](https://www.nps.gov/bibe/planyourvisit/hours.htm)
+  - Hours: “Daily 8:30 am - 4:00 pm (closed for lunch, 12:00 pm - 1:00 pm)” · [www.nps.gov](https://www.nps.gov/bibe/planyourvisit/hours.htm)
+  - Fees: “Big Bend National Park Annual Pass: $55” · [www.nps.gov](https://www.nps.gov/bibe/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/bibe/planyourvisit/fees.htm)
+  - Attraction fee: “Backcountry campsites require a $10 per night backcountry use permit ($5 with a Senior or Access pass), which must be acquired either online at www.recreation.gov , or in person at either the Panther Junction or Chisos Basin visitor centers” · [www.nps.gov](https://www.nps.gov/bibe/planyourvisit/fees.htm)
+- **US-0035 Guadalupe Mountains National Park**
+  - Fees: “Holders of the Annual, Senior, Military, 4th grade and Access Pass can bring in 3 adults free of charge under their pass.” · [www.nps.gov](https://www.nps.gov/gumo/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/gumo/planyourvisit/fees.htm)
+- **US-0687 Amistad National Recreation Area**
+  - Hours: “Picnicking within Governors Landing Campground (as opposed to the day-use area) is allowed in vacant campsites from 7am until 3pm, then the individual(s) must either vacate or pay the regular camping fee when these activities are permitted.” · [www.nps.gov](https://www.nps.gov/amis/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/amis/planyourvisit/fees.htm)
+  - Fees: “Fees for lake use are as follows: 1-day pass is $4.00, 3-day pass is $10.00, and annual pass is $50.” · [www.nps.gov](https://www.nps.gov/amis/planyourvisit/fees.htm)
+- **US-0688 Lake Meredith National Recreation Area**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/lamr/planyourvisit/fees.htm)
+- **US-0689 Big Thicket Preserve National Conservation Area**
+  - Hours: “The roads, trails, and waterways of the preserve are open 24 hours.” · [www.nps.gov](https://www.nps.gov/bith/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/bith/planyourvisit/fees.htm)
+  - Permit: “To spend a night in the preserve, you'll need a free backcountry camping permit from the visitor center.” · [www.nps.gov](https://www.nps.gov/bith/planyourvisit/hours.htm)
+- **US-0690 Padre Island National Seashore**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/pais/planyourvisit/fees.htm)
+  - Fees: “$2.50 per vehicle for valid Access ♿ or Senior Pass Holders” · [www.nps.gov](https://www.nps.gov/pais/planyourvisit/fees.htm)
+- **US-0743 Lyndon B. Johnson National Historical Park**
+  - Fees: “There are no entrance fees to enter either Lyndon B.” · [www.nps.gov](https://www.nps.gov/lyjo/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/lyjo/planyourvisit/fees.htm)
+- **US-0750 Palo Alto Battlefield National Historic Site**
+  - Hours: “Park grounds are open daily from 8 am to 5 pm.” · [www.nps.gov](https://www.nps.gov/paal/planyourvisit/hours.htm)
+  - Hours: “All vechicle entry and exit gates are locked at 5 pm.” · [www.nps.gov](https://www.nps.gov/paal/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/paal/planyourvisit/fees.htm)
+- **US-0756 San Antonio Missions National Historical Park**
+  - Hours: “San Antonio Missions National Historical Park is open daily from 9 am to 5 pm.” · [www.nps.gov](https://www.nps.gov/saan/planyourvisit/hours.htm)
+  - Hours: “The outside grounds are open sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/saan/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/saan/planyourvisit/fees.htm)
+- **US-0770 Chamizal National Memorial**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/cham/planyourvisit/fees.htm)
+- **US-0816 Fort Davis National Historic Site**
+  - Hours: “Park Grounds Open: 8:00 am to 5:00 pm.” · [www.nps.gov](https://www.nps.gov/foda/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/foda/planyourvisit/fees.htm)
+  - Attraction fee: “Specific passes for free entrance to the park are honored and are also available at the Visitor Center.” · [www.nps.gov](https://www.nps.gov/foda/planyourvisit/hours.htm)
+- **US-0901 Alibates Flint Quarries National Monument**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/alfl/planyourvisit/fees.htm)
+  - Fees: “There are no entrance fees associated with Alibates Flint Quarries National Monument.” · [www.nps.gov](https://www.nps.gov/alfl/planyourvisit/fees.htm)
 
 ## US-KS: 12-park sample for chat 8
 
@@ -1061,3 +1191,48 @@ Updated 2026-11-05. Every line is the agency's own sentence (H2). Refresh every 
 - **US-4239 North Country Trail National Scenic Trail**
   - Fees: “No fees are charged for hiking on the trail but fees may be required for parking, camping, or entrance at various sections along the trail.” · [www.nps.gov](https://www.nps.gov/noco/planyourvisit/fees.htm)
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/noco/planyourvisit/fees.htm)
+
+## US-UT: 12-park sample for chat 8
+
+- **US-0004 Arches National Park**
+  - Hours: “Arches National Park is normally open year-round, 24 hours a day.” · [www.nps.gov](https://www.nps.gov/arch/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/arch/planyourvisit/fees.htm)
+- **US-0009 Bryce Canyon National Park**
+  - Hours: “The park is open 24 hours a day throughout the year.” · [www.nps.gov](https://www.nps.gov/brca/planyourvisit/hours.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Bryce Canyon National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/brca/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/brca/planyourvisit/fees.htm)
+  - Permit: “Special Use Permits - Permits are required for activities within the park that need written authorization and some degree of management control from the NPS in order to protect park resources and the public interest.” · [www.nps.gov](https://www.nps.gov/brca/planyourvisit/fees.htm)
+- **US-0010 Canyonlands National Park**
+  - Hours: “Canyonlands National Park is normally open year-round, 24 hours a day.” · [www.nps.gov](https://www.nps.gov/cany/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/cany/planyourvisit/fees.htm)
+- **US-0011 Capitol Reef National Park**
+  - Hours: “It is open daily from 9:00 am to 4:30 pm.” · [www.nps.gov](https://www.nps.gov/care/planyourvisit/hours.htm)
+  - Fees: “The Capitol Reef National Park Annual pass costs $35.00.” · [www.nps.gov](https://www.nps.gov/care/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/care/planyourvisit/fees.htm)
+  - Permit: “A backcountry permit is required for backpacking in Capitol Reef National Park.” · [www.nps.gov](https://www.nps.gov/care/planyourvisit/fees.htm)
+  - Permit: “All canyoneering, rock climbing, and bouldering groups are required to obtain a free day-use permit in person at the visitor center, or online via email.” · [www.nps.gov](https://www.nps.gov/care/planyourvisit/fees.htm)
+- **US-0072 Zion National Park**
+  - Hours: “The park is open 24 hours a day, 7 days a week, year-round.” · [www.nps.gov](https://www.nps.gov/zion/planyourvisit/hours.htm)
+  - Fees: “Vehicles with commercial tours of 1-6 people (not including guide) pay $35 per vehicle + $20 per person with a total fee not to exceed $70.” · [www.nps.gov](https://www.nps.gov/zion/planyourvisit/fees.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Zion National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/zion/planyourvisit/fees.htm)
+- **US-0645 Glen Canyon National Recreation Area**
+  - Fees: “Glen Canyon National Recreation Area annual passes ($55) allow unlimited entry to Glen Canyon for 12 months from date of purchase.” · [www.nps.gov](https://www.nps.gov/glca/planyourvisit/fees.htm)
+  - Fees: “Glen Canyon National Recreation Area currently charges $30 per week per passenger vehicle and an expanded amenity fee for motorized vessels.” · [www.nps.gov](https://www.nps.gov/glca/planyourvisit/fees.htm)
+  - Permit: “Backcountry camping in the Orange Cliffs area of Glen Canyon requires a backcountry permit from Canyonlands National Park .” · [www.nps.gov](https://www.nps.gov/glca/planyourvisit/fees.htm)
+- **US-0828 Golden Spike National Historical Park**
+  - Hours: “WINTER HOURS All park landscapes and outdoor features are open seven days a week, sunrise to sunset, year-round.” · [www.nps.gov](https://www.nps.gov/gosp/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/gosp/planyourvisit/fees.htm)
+- **US-0914 Cedar Breaks National Monument**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/cebr/planyourvisit/fees.htm)
+- **US-0921 Dinosaur National Monument**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/dino/planyourvisit/fees.htm)
+- **US-0943 Hovenweep National Monument**
+  - Hours: “Hovenweep is open daily, year-round.” · [www.nps.gov](https://www.nps.gov/hove/planyourvisit/hours.htm)
+  - Hours: “Trails are open from sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/hove/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/hove/planyourvisit/fees.htm)
+- **US-0950 Natural Bridges National Monument**
+  - Hours: “Natural Bridges National Monument's main park road and trails are open 24/7.” · [www.nps.gov](https://www.nps.gov/nabr/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/nabr/planyourvisit/fees.htm)
+- **US-0959 Rainbow Bridge National Monument**
+  - Hours: “Rainbow Bridge National Monument is closed at sundown.” · [www.nps.gov](https://www.nps.gov/rabr/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/rabr/planyourvisit/fees.htm)
