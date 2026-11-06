@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06T10:20Z",
+ "checked": "2026-11-06T10:43Z",
  "switched_on": false,
  "results": [
   {
@@ -101,6 +101,15 @@
   },
   {
    "path": "data/campinfo/US-GA.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-HI.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
@@ -623,7 +632,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3138,7 +3147,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 35 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 36 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3216,13 +3225,11 @@
   {
    "path": "data/world-key/CZ.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 232 -> 215 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [
     "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/DE.json",
@@ -3514,7 +3521,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 15 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3522,7 +3529,9 @@
    "path": "data/world-key/NC.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3562,7 +3571,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 18 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 35 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3612,7 +3621,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 6 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3629,7 +3638,9 @@
    "path": "data/world-key/PY.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {

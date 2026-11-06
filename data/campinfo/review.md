@@ -42,13 +42,14 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 | US-OR | 496 | 47 | 410 | 0 | 0 | 0 | 0 | 1 | 38 | 8 | 85 | 0 |
 | US-WA | 280 | 0 | 214 | 0 | 0 | 0 | 66 | 0 | 0 | 0 | 0 | 0 |
 | US-AK | 368 | 119 | 234 | 0 | 0 | 0 | 4 | 0 | 11 | 7 | 127 | 368 |
+| US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 2 | 0 | 10 | 377 | 0 | 9 | 0 | 12 | 0 |
 | US-UT | 459 | 40 | 331 | 1 | 0 | 0 | 13 | 0 | 74 | 1 | 115 | 0 |
 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-FL FCC listAsOfDates: host resting (robots.txt could not be read: next run)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -2860,6 +2861,77 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “e Access Method: Floatplane or Boat ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
+
+## US-HI: 12 random samples (records with facts; seed = the date)
+
+- **Napali Coast State Wilderness Park camping (permit; trailhead at Haena)** (intake-US-2210, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, nearby only) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
+  - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+- **Keaiwa Heiau SRA campground** (intake-US-6413, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
+  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
+- **Napali Coast State Wilderness Park backcountry camps (Kalalau, Hanakoa)** (intake-US-3391, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
+  - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+- **Ahupua'a 'O Kahana SP beach campsites** (intake-US-2209, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
+  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
+- **Malaekahana SRA (Kalanai Point) campsites** (intake-US-6414, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
+  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
+- **Hapuna Beach SRA A-frame shelters** (intake-US-6403, agency (outside research camping-us-oct31), status ok, 7 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/hawaii/)
+  - booking.how = "online: dlnr.hawaii.gov" · “link “Kīholo State Park Reserve””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park- · “link “Kīholo State Park Reserve” -> https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/”
+  - fees = "$20 per campsite per night for up to 10 persons (Curr | $30 · “ell as restrooms. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons (C”
+  - reservable = true · “ng reservation for February 1 and beyond. • Two Hawai’i Island State Parks allow camping. Reservations can be made 90 days in advance at Kal”
+  - restrooms = "yes (kind not stated)" · “d a picnic table. Centrally located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms a”
+  - showers = true · “located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms are available for shared use ”
+  - sites.cabin = 4 · “ger provided for any cabins in Hawaii State Parks. Hāpuna Beach State Recreation Area has 4-person A-Frame shelters. These shelters consist ”
+- **Sand Island SRA campground (Fri-Sun nights only)** (intake-US-6415, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
+  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
+- **Kalopa SRA campground + duplex cabins** (intake-US-6404, agency (outside research camping-us-oct31), status ok, 7 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/hawaii/)
+  - booking.how = "online: dlnr.hawaii.gov" · “link “Kīholo State Park Reserve””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park- · “link “Kīholo State Park Reserve” -> https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/”
+  - fees = "$20 per campsite per night for up to 10 persons (Curr | $30 · “ell as restrooms. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons (C”
+  - reservable = true · “ng reservation for February 1 and beyond. • Two Hawai’i Island State Parks allow camping. Reservations can be made 90 days in advance at Kal”
+  - restrooms = "yes (kind not stated)" · “d a picnic table. Centrally located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms a”
+  - showers = true · “located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms are available for shared use ”
+  - sites.cabin = 4 · “ger provided for any cabins in Hawaii State Parks. Hāpuna Beach State Recreation Area has 4-person A-Frame shelters. These shelters consist ”
+- **Koke'e SP campground (adjacent)** (intake-US-2223, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, nearby only) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
+  - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+- **Koke'e SP campground; Lodge at Koke'e cabins (concession)** (intake-US-2215, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
+  - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
 
 ## US-MI: 12 random samples (records with facts; seed = the date)
 
