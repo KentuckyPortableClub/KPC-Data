@@ -22,6 +22,7 @@ Env: COUNTRIES (blank = the whole world list in gap order, skipping countries fi
 Manners: the harvester's (robots.txt, ArcGIS REST exempt, 2 s per host, a day's rest after 3 strikes). Never fails (exit 0)."""
 import copy, glob, json, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kpc_json_any import load_json_any, save_json_gz, save_text_gz  # noqa: E402
 import kpc_world_harvest as H   # noqa: E402  (the harvester's finders, manners and lead format)
 import kpc_gis_hunter as G
 import kpc_tiers as T  # noqa: E402      # noqa: E402  (step A: multipoint pins on a layer, point in polygon, name words)
@@ -44,7 +45,7 @@ SKIP = {'US', 'CA'}
 def notice(m): print('::notice title=World finder v2::' + str(m).replace('\n', ' ')[:900], flush=True)
 def late(): return time.time() - T0 > LIMIT - 180
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -184,13 +185,13 @@ def write_questions(Q, areas_run):
         if prev: q.update({k: prev.get(k) for k in ('answer', 'checked_by', 'how', 'rechecked_by_chat2')})
     qs = keep + Q
     QF.parent.mkdir(parents=True, exist_ok=True)
-    json.dump({'about': "World finder v2 candidates (stage 1, Fable's plan): chat 11 answers YES / NO against the agency's own map; chat 2 rechecks. 'name mismatch' = the record's name differs from POTA's. Big countries: answer a random sample first and report the hit rate (HQ).",
-               'built': TODAY, 'open': sum(1 for q in qs if not q['answer']), 'questions': qs}, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(QF, {'about': "World finder v2 candidates (stage 1, Fable's plan): chat 11 answers YES / NO against the agency's own map; chat 2 rechecks. 'name mismatch' = the record's name differs from POTA's. Big countries: answer a random sample first and report the hit rate (HQ).",
+                      'built': TODAY, 'open': sum(1 for q in qs if not q['answer']), 'questions': qs}, indent=1, ensure_ascii=False)
     by = {}
     for q in qs: by.setdefault(q['area'], [0, 0]); by[q['area']][0 if q.get('tier', q['kind']) in ('SURE', 'name match') else 1] += 1
     L = ['# World finder v2: questions for chat 11 (stage 1)', '', f'{len(qs)} candidates. Answer in world-finder.json (answer YES / NO, checked_by, how).', '',
          '| country | SURE (chat 2 rechecks, chat 11 samples 10%) | LIKELY (chat 11 grades) |', '|---|---|---|'] + [f'| {cc} | {a} | {b} |' for cc, (a, b) in sorted(by.items(), key=lambda x: -sum(x[1]))]
-    QF.with_suffix('.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
+    save_text_gz(QF.with_suffix('.md'), '\n'.join(L) + '\n')
 
 
 def agency_names(cc, table):

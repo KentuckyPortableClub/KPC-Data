@@ -22,7 +22,7 @@ It never pushes, never edits a checkout, never emails. Switches live in config/r
   storage    the size guard: any data file over key_doctor.size_warn_mib (80 MiB) warns, over size_red_mib (95 MiB) goes red
              (GitHub refuses a file over 100 MiB). Also lists held copies a newer build already replaced (cleanup candidates).
 """
-import datetime as dt, fnmatch, glob, gzip, hashlib, json, math, os, pathlib, re, unicodedata
+import datetime as dt, fnmatch, glob, gzip, hashlib, json, math, os, pathlib, re, sys, unicodedata
 
 from core import rules
 
@@ -39,7 +39,10 @@ FWS = 'fwsinterest_simplified_authoritative/featureserver/0'
 def load(p, d=None):
     p = pathlib.Path(p)
     try:
-        if p.suffix == '.gz': return json.loads(gzip.decompress(p.read_bytes()))
+        if not str(p).endswith('.gz'):
+            gz = pathlib.Path(str(p) + '.gz')
+            if gz.is_file(): p = gz
+        if str(p).endswith('.gz'): return json.loads(gzip.decompress(p.read_bytes()))
         return json.loads(p.read_text(encoding='utf-8'))
     except Exception:  # noqa: BLE001
         return d
@@ -109,7 +112,10 @@ def key_id(row, lmap):
 
 def question_rows(data_dir):
     out = []
-    for f in sorted(glob.glob(str(pathlib.Path(data_dir) / 'data/waiting/questions/*.json'))):
+    base = pathlib.Path(data_dir) / 'data/waiting/questions'
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[4]))
+    from kpc_json_any import glob_json_any
+    for f in glob_json_any(str(base / '*.json')):
         j = load(f, {}) or {}
         q = j.get('questions') if isinstance(j, dict) else j
         if isinstance(q, dict): q = list(q.values())

@@ -46,13 +46,17 @@ jobs:
           rm -rf ../out/no-recheck/cache
           if [ -f ../out/no-recheck/questions.json ]; then
             python3 -c "
-          import json; q=json.load(open('../out/no-recheck/questions.json')); rows=q.get('questions') if isinstance(q,dict) else q
-          json.dump({'about':'NO rechecker (KPC_8): NO answers it thinks deserve another look (LOOK AGAIN / BETTER RECORD). It never changes an answer; chat 11 decides.','questions':rows or []},open('data/waiting/questions/no-recheck.json','w'),indent=1,ensure_ascii=False)
+          import gzip,json,os
+          q=json.load(open('../out/no-recheck/questions.json')); rows=q.get('questions') if isinstance(q,dict) else q
+          obj={'about':'NO rechecker (KPC_8): NO answers it thinks deserve another look (LOOK AGAIN / BETTER RECORD). It never changes an answer; chat 11 decides.','questions':rows or []}
+          p='data/waiting/questions/no-recheck.json'
+          open(p+'.gz','wb').write(gzip.compress((json.dumps(obj,indent=1,ensure_ascii=False)).encode(),9,mtime=0))
+          if os.path.exists(p): os.remove(p)
           print('flags for chat 11:',len(rows or []))" || { kpc_rc=$?; echo "::warning title=inline python::a small python step failed (exit $kpc_rc)"; echo "inline python - a small python step failed (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
-          N=$(python3 -c "import json;print(len(json.load(open('data/waiting/questions/no-recheck.json'))['questions']))" 2>/dev/null || echo 0)
+          N=$(python3 -c "import json,gzip,os;p='data/waiting/questions/no-recheck.json';p=p+'.gz' if os.path.exists(p+'.gz') else p;print(len(json.load(gzip.open(p,'rt',encoding='utf-8') if p.endswith('.gz') else open(p,encoding='utf-8'))['questions']))" 2>/dev/null || echo 0)
           python3 .github/scripts/kpc_status.py board "NO rechecker" green "NO answers re-tested (tools-out no-recheck/summary.md)" "chat 11 looks at $N flagged rows (data/waiting/questions/no-recheck.json)" || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "NO rechecker: flags for chat 11" data/waiting/questions/no-recheck.json data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "NO rechecker: flags for chat 11" data/waiting/questions/no-recheck.json data/waiting/questions/no-recheck.json.gz data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           (cd ../out && git add -A no-recheck && git commit -qm "NO rechecker (run ${{ github.run_id }})" && (for i in 1 2 3 4 5; do git push -q origin tools-out && exit 0; git pull -q --rebase origin tools-out || git rebase --abort 2>/dev/null || true; sleep $((i*7)); done; exit 1)) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           true
       - name: Next run while rows are left

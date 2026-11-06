@@ -66,7 +66,7 @@ jobs:
           O=$(cat kpcdata/data/intake/collector-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           # Oct 30 (HQ 7:45 PM): Brandon's outside-research pairs still untested = work (from Oct 31; tonight = the one hand run)
-          LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 1)
+          LEFT=$(python3 -c "import json,gzip,os;p='kpcdata/data/intake/external-results.json';p=p+'.gz' if os.path.exists(p+'.gz') else p;print(json.load(gzip.open(p,'rt',encoding='utf-8') if p.endswith('.gz') else open(p,encoding='utf-8'))['summary']['pairs left'])" 2>/dev/null || echo 1)
           if [ "$LEFT" != 0 ] && ls kpcdata/data/intake/external-sources-*.json >/dev/null 2>&1; then O=changed; fi   # Brandon 7:43 PM: run straight through
           if [ "$F" = "$O" ] && [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
       - name: Collect + pin-test
@@ -95,7 +95,7 @@ jobs:
           # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
           # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
           kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-collector.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 12 ]; then echo "::notice title=Chain brake::kpc-collector.yml ran $n times in 24 h (limit 12): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
-          LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 0)
+          LEFT=$(python3 -c "import json,gzip,os;p='kpcdata/data/intake/external-results.json';p=p+'.gz' if os.path.exists(p+'.gz') else p;print(json.load(gzip.open(p,'rt',encoding='utf-8') if p.endswith('.gz') else open(p,encoding='utf-8'))['summary']['pairs left'])" 2>/dev/null || echo 0)
           echo "::notice title=Outside research::$LEFT pairs left"
           # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: if [ "$LEFT" != 0 ] && kpc_brake; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"; fi
           if [ "$LEFT" != 0 ] && kpc_brake; then echo "::warning title=Paused bot::kpc-collector.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"; fi

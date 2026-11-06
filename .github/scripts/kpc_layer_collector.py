@@ -14,6 +14,7 @@ import datetime as dt, glob, json, math, os, pathlib, re, sys, time, urllib.pars
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_tiers as T  # noqa: E402
+from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 import kpc_order as O  # noqa: E402
 try:
     from kpc_manners import Manners
@@ -30,7 +31,7 @@ LINE = re.compile(r'^LAYER\s*\|\s*([A-Z0-9]{1,4}-\d{4,5})\s*\|\s*([^|]*)\|\s*(\S
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -390,7 +391,7 @@ def external(log, qs, queue, seen, n):
             queue['rows'].append({'url': u, 'title': f"{str(L.get('title') or '')[:60]} (outside research Oct 30)", 'from': 'outside research Oct 30', 'added': TODAY,
                                   'closes': sorted({r for r, _ in by[u]})[:50], 'note': f'{hits} SURE / LIKELY of {len(by[u])} assigned parks/trails'})
             seen.add(u)
-        json.dump(R, open(EXT_OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)   # saved as it goes (a timeout loses nothing)
+        save_json_gz(EXT_OUT, R, indent=1, ensure_ascii=False)   # saved as it goes (a timeout loses nothing)
     c = {}
     for v in R['pairs'].values():
         g = 'US' if v['ref'].startswith('US-') else 'Canada' if v['ref'].startswith('CA-') else 'World'
@@ -399,7 +400,7 @@ def external(log, qs, queue, seen, n):
     R['summary']['pairs left'] = sum(1 for u in by for r, _ in by[u] if f'{r}|{u}' not in R['pairs'])
     R['summary']['new layers'] = sum(1 for l in R['layers'].values() if l.get('new_to_us'))
     R['built'] = TODAY
-    json.dump(R, open(EXT_OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(EXT_OUT, R, indent=1, ensure_ascii=False)
     print('::notice title=Outside research::' + '; '.join(f'{k} {v}' for k, v in R['summary'].items()))
     return R['summary']['pairs left']
 
@@ -657,9 +658,8 @@ def main():
     LOG.write_bytes(gzip.compress(json.dumps(log, ensure_ascii=False, separators=(',', ':'), sort_keys=True).encode('utf-8'), 6, mtime=0))
     OLDLOG.unlink(missing_ok=True)
     json.dump(queue, open(QUEUE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
-    QF.parent.mkdir(parents=True, exist_ok=True)
-    json.dump({'about': "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
-               'built': TODAY, 'open': sum(1 for q in qs if not q.get('answer')), 'questions': qs}, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(QF, {'about': "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
+                      'built': TODAY, 'open': sum(1 for q in qs if not q.get('answer')), 'questions': qs}, indent=1, ensure_ascii=False)
     print(f"::notice title=Layer collector::{crawled} crawler layers tested; {n['new']} new LAYER lines: {n['asked']} asked (chat 11), {n['queued']} queued for the intake only, {n['evidence']} evidence, {n['failed']} failed (reason in data/intake/collector.json)")
 
 

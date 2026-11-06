@@ -770,10 +770,14 @@ def load_pictures(path):
 
 def load_questions(patterns, include_answered):
     rows, seen = [], set()
+    scripts = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
+    from kpc_json_any import glob_json_any, load_json_any
     for pat in patterns:
-        for f in sorted(glob.glob(pat)):
+        for f in glob_json_any(pat):
             try:
-                d = json.load(open(f, encoding="utf-8"))
+                d = load_json_any(f)
             except (OSError, ValueError):
                 continue
             qs = d.get("questions") if isinstance(d, dict) else d

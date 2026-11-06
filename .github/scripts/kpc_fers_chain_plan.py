@@ -43,7 +43,10 @@ GATE_DEFAULT = 'off'   # <-- THE GATE DEFAULT (per Brandon via Super Head Bot (r
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        from kpc_json_any import load_json_any
+        return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 

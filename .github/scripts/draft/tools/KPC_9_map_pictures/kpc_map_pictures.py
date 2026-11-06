@@ -803,14 +803,19 @@ class Club:
 
     def load(self, p):
         p = Path(p)
-        if p not in self._json:
+        scripts = Path(__file__).resolve().parents[3]
+        if str(scripts) not in sys.path:
+            sys.path.insert(0, str(scripts))
+        from kpc_json_any import load_json_any
+        key = Path(str(p) + '.gz') if (not str(p).endswith('.gz') and Path(str(p) + '.gz').exists()) else p
+        if key not in self._json:
             try:
-                self._json[p] = json.loads(p.read_text(encoding="utf-8"))
+                self._json[key] = load_json_any(p)
             except FileNotFoundError:
                 raise BadInput(f"file not found: {p}")
-            except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            except (json.JSONDecodeError, UnicodeDecodeError, OSError) as e:
                 raise BadInput(f"not readable JSON: {p} ({e})")
-        return self._json[p]
+        return self._json[key]
 
     def maybe(self, p):
         try:
@@ -1344,7 +1349,7 @@ def main(argv=None) -> int:
         log("--refs needs --key.")
         return 2
     for p in (a.questions, a.fers, a.key):
-        if p is not None and not p.exists():
+        if p is not None and not p.exists() and not Path(str(p) + '.gz').exists():
             log(f"Bad input: not found: {p}")
             return 2
     data = a.data or find_data_dir(a.questions or a.fers or a.key)
