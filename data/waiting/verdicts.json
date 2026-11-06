@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06T09:32Z",
+ "checked": "2026-11-06T09:52Z",
  "switched_on": false,
  "results": [
   {
@@ -1085,8 +1085,8 @@
    "path": "data/fers/US-AK.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 5 -> 8 (over 30% change)",
-    "F-2 10 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, US-0003+US-0878, US-0026+US-0889",
+    "F-2 NOT SURE 5 -> 9 (over 30% change)",
+    "F-2 12 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, US-0003+US-0878, US-0026+US-0889",
     "F-K known 2-fer missing: US-0029 + US-12607"
    ],
    "notes": [],
@@ -1122,11 +1122,10 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-CA.json.gz",
+   "path": "data/fers/US-CA.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 66 -> 133 (over 30% change)",
-    "F-2 77 new candidate pairs since the live file (over 10% of 66): a person looks at them first, e.g. US-0046+US-4562, US-0049+US-4562, US-0049+US-4566"
+    "F-4 data/fers/US-CA.json replaces live data/fers/US-CA.json.gz (other format) with 18 rows for 1365 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1198,6 +1197,13 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-HI.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-IA.json",
@@ -1435,6 +1441,16 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/US-OH.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 27 -> 62 (over 30% change)",
+    "F-2 36 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-1935+US-4239, US-1939+US-4239"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/fers/US-OK.json",
    "kind": "fers",
    "why": [
@@ -1447,11 +1463,10 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-OR.json.gz",
+   "path": "data/fers/US-OR.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 62 -> 91 (over 30% change)",
-    "F-2 33 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0199+US-4566, US-0510+US-4566, US-10002+US-4576"
+    "F-4 data/fers/US-OR.json replaces live data/fers/US-OR.json.gz (other format) with 22 rows for 1064 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1547,12 +1562,10 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-WA.json.gz",
+   "path": "data/fers/US-WA.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 40 -> 196 (over 30% change)",
-    "F-2 158 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g. US-0055+US-4563, US-0056+US-4563, US-0575+US-12250",
-    "F-S3 5 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-10693+US-12265 113 km, US-12265+US-12488 121 km, US-12265+US-12558 119 km"
+    "F-4 data/fers/US-WA.json replaces live data/fers/US-WA.json.gz (other format) with 37 rows for 926 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3258,11 +3271,9 @@
   {
    "path": "data/world-key/CZ.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 232 -> 215 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/DE.json",
@@ -3696,50 +3707,6 @@
    "kind": "key",
    "why": [
     "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-OH.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 27 -> 62 (over 30% change)",
-    "F-2 36 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-1935+US-4239, US-1939+US-4239"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-CA.json",
-   "kind": "fers",
-   "why": [
-    "F-4 data/fers/US-CA.json replaces live data/fers/US-CA.json.gz (other format) with 18 rows for 1365 (over 10% fewer)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-HI.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/US-OR.json",
-   "kind": "fers",
-   "why": [
-    "F-4 data/fers/US-OR.json replaces live data/fers/US-OR.json.gz (other format) with 22 rows for 1064 (over 10% fewer)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-WA.json",
-   "kind": "fers",
-   "why": [
-    "F-4 data/fers/US-WA.json replaces live data/fers/US-WA.json.gz (other format) with 37 rows for 926 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
