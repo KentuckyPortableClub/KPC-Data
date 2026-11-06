@@ -47,6 +47,7 @@ _GENERIC = {'creek', 'lake', 'river', 'fork', 'branch', 'ridge', 'county', 'hunt
             'north', 'south', 'east', 'west'}
 _DOTTED = re.compile(r'\b([a-z](?:\.[a-z]){1,6})\.?\b')
 _COMPILED = None
+_ALTS = None
 _FROM = None
 
 
@@ -58,9 +59,14 @@ def mode():
 
 def reset_matcher():
     """Drop the cached abbreviation table. Tests point ABBREV_JSON elsewhere, then call this."""
-    global _COMPILED, _FROM
+    global _COMPILED, _ALTS, _FROM
     _COMPILED = None
+    _ALTS = None
     _FROM = None
+
+
+def _norm_exp(s):
+    return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', str(s or '').lower())).strip()
 
 
 def _compile(rows):
@@ -107,8 +113,7 @@ def _note_expansion(text):
 
 
 def _sourced_tokens(path):
-    """Short codes from the sourced abbreviation list. Phrases and from_memory rows are not applied.
-    A code the toolbox table already defines keeps that expansion when the words differ (SPA)."""
+    """Short codes from the sourced abbreviation list. Phrases and from_memory rows are not applied."""
     out = []
     with pathlib.Path(path).open(encoding='utf-8') as fh:
         for r in csv.DictReader(fh):
@@ -125,47 +130,80 @@ def _sourced_tokens(path):
 
 
 def table_rows():
-    """Rows passed to the same compile the Tool Box uses: its table, then sourced short codes.
-    Reading either file can raise UnicodeDecodeError. The caller is report mode only."""
+    """Toolbox rows, plus sourced short codes the toolbox does not already define.
+
+    An existing Tool Box expansion is never replaced. A sourced code with different
+    words (SPA: Special Protection Area and State Preservation Area) is a second
+    meaning, returned by alternate_expansions(), and either meaning can score.
+    Reading either file can raise UnicodeDecodeError. Report mode only."""
     rows = _read_json_rows(ABBREV_JSON) if pathlib.Path(ABBREV_JSON).is_file() else []
     if pathlib.Path(ABBREV_CSV).is_file():
         have = {str(r.get('token') or '').lower().replace('.', '') for r in rows if isinstance(r, dict)}
         for extra in _sourced_tokens(ABBREV_CSV):
             tok = extra['token'].lower().replace('.', '')
             if tok in have:
-                for i, r in enumerate(rows):
-                    if isinstance(r, dict) and str(r.get('token') or '').lower().replace('.', '') == tok:
-                        rows[i] = dict(r, token=extra['token'], expansion=extra['expansion'])
-                        break
                 continue
             rows.append(extra)
             have.add(tok)
     return rows
 
 
+def _collect_alts(primary):
+    """token -> extra expansions whose words differ from the Tool Box meaning."""
+    alts = {}
+    if not pathlib.Path(ABBREV_CSV).is_file():
+        return alts
+    for extra in _sourced_tokens(ABBREV_CSV):
+        tok = extra['token'].lower().replace('.', '')
+        exp = _norm_exp(extra['expansion'])
+        cur = primary.get(tok)
+        if not cur or _norm_exp(cur) == exp or not exp:
+            continue
+        bucket = alts.setdefault(tok, [])
+        if exp not in bucket:
+            bucket.append(exp)
+    return alts
+
+
 def compiled():
-    global _COMPILED, _FROM
+    global _COMPILED, _ALTS, _FROM
     key = (str(ABBREV_JSON), str(ABBREV_CSV))
     if _COMPILED is not None and _FROM == key:
         return _COMPILED
     _COMPILED = _compile(table_rows())
+    _ALTS = _collect_alts({tok: exp for tok, exp in _COMPILED})
     _FROM = key
     return _COMPILED
 
 
-def expand_name(s):
-    """kpc-maprep-logic.js expandName: dotted letters collapse, then the abbreviation table."""
+def alternate_expansions():
+    """Sourced meanings that do not replace the Tool Box expansion. SPA is the collision."""
+    compiled()
+    return {tok: list(exps) for tok, exps in (_ALTS or {}).items()}
+
+
+def _prepare(s):
     t = str(s or '').lower().replace('&', ' and ')
-    t = _DOTTED.sub(lambda m: m.group(0).replace('.', ''), t)
+    return _DOTTED.sub(lambda m: m.group(0).replace('.', ''), t)
+
+
+def expand_name(s, overrides=None):
+    """kpc-maprep-logic.js expandName: dotted letters collapse, then the abbreviation table.
+
+    overrides replaces a token's expansion for this call so a second meaning can be tried
+    without dropping the Tool Box meaning."""
+    t = _prepare(s)
     for tok, exp in compiled():
+        if overrides and tok in overrides:
+            exp = overrides[tok]
         rx = re.compile(r'(?<![a-z0-9])' + re.escape(tok) + r'(?![a-z0-9])')
         t = rx.sub(lambda m, e=exp: ' ' + e + ' ', t)
     return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', t)).strip()
 
 
-def canon(s):
+def canon(s, overrides=None):
     """full text after expansion, and the core with kind words removed. 'game' stays."""
-    full = expand_name(s)
+    full = expand_name(s, overrides)
     core = re.sub(r'\b(?:' + '|'.join(_CORE_DROP) + r')\b', ' ', full)
     core = re.sub(r'\s+', ' ', core).strip() or full
     return full, core
@@ -177,13 +215,13 @@ def toolbox_canon(s, report=None):
     return canon(s)
 
 
-def norm_name(s):
-    return re.sub(r'\s+', ' ', _STOP.sub(' ', expand_name(s))).strip()
+def norm_name(s, overrides=None):
+    return re.sub(r'\s+', ' ', _STOP.sub(' ', expand_name(s, overrides))).strip()
 
 
-def fuzzy_same(a, b):
+def fuzzy_same(a, b, overrides=None):
     """Shorter name of at least two words is a whole-word prefix or suffix of the longer one."""
-    n, m = norm_name(a), norm_name(b)
+    n, m = norm_name(a, overrides), norm_name(b, overrides)
     if not n or not m or len(n) < 4 or len(m) < 4:
         return False
     if n == m:
@@ -221,12 +259,10 @@ def _dice(a, b):
     return (2.0 * inter) / ((sum(A.values()) + sum(B.values())) or 1)
 
 
-def name_score(query, candidate, report=None):
-    """0-96, the same steps as kpc-maprep-logic.js nameScore. 0 means it would not be offered."""
-    if report is None:
-        report = mode() == 'report'
-    qf, qc = canon(query)
-    cf, cc = canon(candidate)
+def _score_once(query, candidate, overrides):
+    """One expansion choice. The steps are kpc-maprep-logic.js nameScore."""
+    qf, qc = canon(query, overrides)
+    cf, cc = canon(candidate, overrides)
     if not qc or not cc:
         return 0
     if qc == cc or qf == cf:
@@ -234,7 +270,7 @@ def name_score(query, candidate, report=None):
     qt, ct = _tokens(qc), _tokens(cc)
     if qt and all(w in ct for w in qt):
         return 92 if len(ct) == len(qt) else 84
-    if fuzzy_same(query, candidate):
+    if fuzzy_same(query, candidate, overrides):
         return 88
     d = _dice(qc, cc)
     shared = [w for w in qt if w in ct and w not in _GENERIC and len(w) >= 4]
@@ -245,6 +281,39 @@ def name_score(query, candidate, report=None):
     if any(len(w) >= 6 for w in shared) and d >= 0.45:
         return 52
     return 0
+
+
+def _override_choices(query, candidate):
+    """Primary meaning, then each extra meaning of a code that actually appears in the pair."""
+    compiled()
+    alts = _ALTS or {}
+    blob = _prepare(query) + ' ' + _prepare(candidate)
+    present = []
+    for tok, exps in alts.items():
+        if re.search(r'(?<![a-z0-9])' + re.escape(tok) + r'(?![a-z0-9])', blob):
+            present.append((tok, exps))
+    if not present:
+        return [None]
+    import itertools
+    options = [[None, *exps] for _tok, exps in present]
+    choices = []
+    for combo in itertools.product(*options):
+        overrides = {present[i][0]: combo[i] for i in range(len(present)) if combo[i]}
+        choices.append(overrides or None)
+    return choices
+
+
+def name_score(query, candidate, report=None):
+    """0-96, the same steps as kpc-maprep-logic.js nameScore. 0 means it would not be offered.
+
+    A code with more than one expansion (SPA) scores as the meaning that matches, so the
+    Tool Box expansion is never lost."""
+    if report is None:
+        report = mode() == 'report'
+    best = 0
+    for overrides in _override_choices(query, candidate):
+        best = max(best, _score_once(query, candidate, overrides))
+    return best
 
 
 def rank_outlines(park_name, candidates, report=None):

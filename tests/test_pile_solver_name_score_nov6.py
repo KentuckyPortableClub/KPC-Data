@@ -31,14 +31,41 @@ def main():
     pairs = json.loads(PAIRS.read_text(encoding='utf-8'))
     check(len(pairs) == 1600, f'shared fixture has 1,600 name pairs ({len(pairs)})')
     rows_path = pathlib.Path('/tmp/kpc-name-score-rows.json')
-    rows_path.write_text(json.dumps(RS.table_rows()), encoding='utf-8')
+    rows_path.write_text(json.dumps({'rows': RS.table_rows(), 'alts': RS.alternate_expansions()}), encoding='utf-8')
+    # Same rule as Python: try the Tool Box expansion and each extra meaning, keep the higher score.
     node = (
         "const fs = require('fs');\n"
         f"const L = require({json.dumps(str(JS))});\n"
-        f"const rows = JSON.parse(fs.readFileSync({json.dumps(str(rows_path))}, 'utf8'));\n"
-        "L.loadRows(rows);\n"
+        f"const pack = JSON.parse(fs.readFileSync({json.dumps(str(rows_path))}, 'utf8'));\n"
         f"const pairs = JSON.parse(fs.readFileSync({json.dumps(str(PAIRS))}, 'utf8'));\n"
-        "process.stdout.write(JSON.stringify(pairs.map(p => L.nameScore(p[0], p[1]))));\n"
+        "function norm(s){return String(s||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\\s+/g,' ').trim();}\n"
+        "function withAlt(rows, tok, exp){\n"
+        "  let hit = false;\n"
+        "  const out = rows.map(r => {\n"
+        "    const t = String(r.token||'').toLowerCase().replace(/\\./g,'');\n"
+        "    if (t !== tok) return r;\n"
+        "    hit = true;\n"
+        "    return Object.assign({}, r, {token: tok, expansion: exp});\n"
+        "  });\n"
+        "  if (!hit) out.push({token: tok, expansion: exp});\n"
+        "  return out;\n"
+        "}\n"
+        "function score(rows){L.loadRows(rows); return pairs.map(p => L.nameScore(p[0], p[1]));}\n"
+        "let best = score(pack.rows);\n"
+        "const tokens = Object.keys(pack.alts || {});\n"
+        "function walk(i, rows){\n"
+        "  if (i === tokens.length) return;\n"
+        "  const tok = tokens[i];\n"
+        "  walk(i + 1, rows);\n"
+        "  (pack.alts[tok] || []).forEach(exp => {\n"
+        "    const next = withAlt(rows, tok, exp);\n"
+        "    const got = score(next);\n"
+        "    best = best.map((v, n) => Math.max(v, got[n]));\n"
+        "    walk(i + 1, next);\n"
+        "  });\n"
+        "}\n"
+        "walk(0, pack.rows);\n"
+        "process.stdout.write(JSON.stringify(best));\n"
     )
     proc = subprocess.run(['node', '-e', node], capture_output=True, text=True, timeout=60)
     check(proc.returncode == 0 and proc.stdout.startswith('['),
@@ -62,6 +89,17 @@ def main():
     game = RS.name_score('Allegan State Game Area', 'Allegan State Recreation Area', report=True)
     check('game' in RS.canon('Allegan State Game Area')[1] and game < 84,
           f"'game' still distinguishes a game area from a recreation area ({game})")
+    check(RS.name_score('Foo SPA', 'Foo Special Protection Area', report=True) == 96,
+          'Foo SPA still matches the Tool Box Special Protection Area')
+    check(RS.name_score('Cypremort Point SPA', 'Cypremort Point State Preservation Area', report=True) == 96,
+          'Cypremort Point SPA still matches Louisiana State Preservation Area')
+    alts = RS.alternate_expansions()
+    check(set(alts) == {'spa'} and alts['spa'] == ['state preservation area'],
+          f'only SPA has a second meaning ({alts})')
+    primary = {tok: exp for tok, exp in RS.compiled()}
+    for code, exp in (('wma', 'wildlife management area'), ('nf', 'national forest'), ('sp', 'state park'),
+                      ('shs', 'state historic site'), ('hp', 'heritage preserve')):
+        check(primary.get(code) == exp and code not in alts, f'{code} keeps a single expansion ({primary.get(code)})')
     sourced = [
         ('Marksville SHS', 'Marksville State Historic Site', 'Marksville Creek'),
         ('Bald Rock HP', 'Bald Rock Heritage Preserve', 'Bald Rock Creek'),
