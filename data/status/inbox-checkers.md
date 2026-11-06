@@ -178,7 +178,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-06): campinfo data/campinfo/US-VT.json held: F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-10-31, 6 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 6 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%
-- FROM WAITING ROOM (held since 2026-11-04, 2 days): docs data/docs/US-IN.json held: F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/71aa8ae4f9/chain_o_lakes_trail.pdf?language_id=1
+- FROM WAITING ROOM (held since 2026-11-04, 2 days): docs data/docs/US-IN.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/71aa8ae4f9/chain_o_lakes_trail.pdf?language_id=1
 - FROM WAITING ROOM (held since 2026-10-31, 6 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
 - FROM WAITING ROOM (held since 2026-10-31, 6 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-02, 4 days): fers data/fers/CA-BC.json.gz held: F-2 NOT SURE 52 -> 22 (over 30% change) · F-2 6 new candidate pairs since the live file (over 10% of 39): a person looks at them first, e.g. CA-0736+CA-4096, CA-0737+CA-3551, CA-0742+US-4448
@@ -242,4 +242,3 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 5 days): truth data/truth/US-NY.json held: F-R2 8 OFF rows share the size 46,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 5 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 5 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
-- FROM WAITING ROOM (held since 2026-11-05, 1 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
