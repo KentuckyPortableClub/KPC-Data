@@ -129,5 +129,5 @@ def test_merge_main_reads_origin_main(tmp_path, monkeypatch):
     (me / 'data/waiting/questions/hardlook.json').write_text(json.dumps({'rows': {'CA-1': {'answer': '', 'result': 'record found'}}}))
     monkeypatch.chdir(me)
     assert H.merge_main() == 0
-    row = json.load(open('data/waiting/questions/hardlook.json'))['rows']['CA-1']
+    row = H.load('data/waiting/questions/hardlook.json', {})['rows']['CA-1']
     assert row == {'answer': 'NO PIN', 'result': 'record found', 'checked_by': 'chat 11'}

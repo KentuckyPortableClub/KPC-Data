@@ -22,6 +22,8 @@ Use:  kpc_waiting_room.py check   [--promote]        every file under data/waiti
 Env: DATA (KPC-Data checkout, default .) · LINKS (KPC-Links checkout, default ../links) · NET=1 (link re-tests may use the
      network) · WAITING_ON=1 (promotion allowed; unset = report only)."""
 import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import append_jsonl_gz  # noqa: E402
 
 DATA = pathlib.Path(os.environ.get('DATA') or '.')
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
@@ -989,12 +991,12 @@ def mode_check(promote):
     try: grade_queue([r for r in out if (W / 'in' / r['path']).exists()])
     except Exception as e: print(f'::notice title=Waiting room::grade list skipped ({type(e).__name__}: {e})')  # noqa: BLE001
     lastv = load(W / 'verdicts-last.json', {}) or {}   # Nov 2 (storage): the log took 135,000 lines in 4 days, mostly the same PASS every 2 h
-    with open(W / 'verdicts.jsonl', 'a', encoding='utf-8') as fh:   # Fable note b: one line per verdict CHANGE, kept, so thresholds can be tuned from a month of data
-        for r in out:
-            row = {'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': r['why'][:4], 'notes': r['notes'][:3]}
-            sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
-            if lastv.get(r['path']) == sig: continue
-            lastv[r['path']] = sig; fh.write(json.dumps({'date': rep['checked'], **row}, ensure_ascii=False) + '\n')
+    for r in out:   # Fable note b: one line per verdict CHANGE, kept, so thresholds can be tuned from a month of data
+        row = {'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': r['why'][:4], 'notes': r['notes'][:3]}
+        sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
+        if lastv.get(r['path']) == sig: continue
+        lastv[r['path']] = sig
+        append_jsonl_gz(W / 'verdicts.jsonl', {'date': rep['checked'], **row})
     json.dump(lastv, open(W / 'verdicts-last.json', 'w'), ensure_ascii=False, separators=(',', ':'))
     json.dump({'ok': rep['checked']}, open(W / 'heartbeat.json', 'w'))
     since = load(W / 'held-since.json', {}) or {}
@@ -1056,8 +1058,7 @@ def mode_undo(rel, gen=1):
 
 def log_action(what, rel):
     W.mkdir(parents=True, exist_ok=True)
-    with open(W / 'verdicts.jsonl', 'a', encoding='utf-8') as fh:   # chat 8 C3: who / when for every undo and release
-        fh.write(json.dumps({'date': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'kind': what, 'path': rel, 'verdict': what.upper(), 'by': os.environ.get('GITHUB_ACTOR') or 'local'}) + '\n')
+    append_jsonl_gz(W / 'verdicts.jsonl', {'date': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'kind': what, 'path': rel, 'verdict': what.upper(), 'by': os.environ.get('GITHUB_ACTOR') or 'local'})   # chat 8 C3: who / when for every undo and release
 
 
 BOT_FOLDERS = {'access': 'data/access', 'campfed': 'data/campfed', 'campstate': 'data/campstate', 'campinfo': 'data/campinfo', 'trails': 'data/trails',

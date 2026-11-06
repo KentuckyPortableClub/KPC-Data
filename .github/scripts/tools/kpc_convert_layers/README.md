@@ -36,7 +36,7 @@ repo URL**), `KPC_MIN_DELAY` (seconds between requests to one host, default 1), 
 ### Input
 
 `leads.json` is either a list `[{ref, area, url, agency, status, note}]` or the club file with key
-`other_layer` (`data/intake/leads-oct31.json`). Optional per lead:
+`other_layer` (`archive/2026-10/leads-oct31.json`). Optional per lead:
 - `name_field`: force the name field.
 - `layer`: a WFS typeName or OGC collection id. You can also put `TYPENAMES=` in the URL.
 - `lat` and `lon`: the park pin. Without them the pin is looked up once at
@@ -106,7 +106,7 @@ attributes in an HTML table in `description` are unpacked into fields.
 - uses: actions/cache@v4
   with: {path: ".kpc_cache", key: "kpc-cache-${{ github.run_id }}", restore-keys: "kpc-cache-"}
 - run: pip install -r requirements.txt
-- run: python kpc_convert_layers.py --leads data/intake/leads-oct31.json --resume --max-minutes 50
+- run: python kpc_convert_layers.py --leads archive/2026-10/leads-oct31.json --resume --max-minutes 50
   env: {KPC_CONTACT: "<club contact>"}
 # then commit/upload converted/ so the next job resumes from converted/report.csv
 ```

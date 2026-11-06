@@ -37,6 +37,7 @@ Env: ROWS='url url' (blank = every unprobed queue row) · MINUTES (55) · LINKS 
 import json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
+from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/intake')
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
@@ -134,11 +135,15 @@ def water_layer(probe, url):
 def notice(m): print('::notice title=Layer intake::' + str(m).replace('\n', ' ')[:900], flush=True)
 def late(): return time.time() - T0 > LIMIT
 def load(p, d):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 def save(p, obj):
-    pathlib.Path(p).parent.mkdir(parents=True, exist_ok=True)
-    pathlib.Path(p).write_text(json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+    p = pathlib.Path(p)
+    if p.name == 'ready.json':   # storage review: ready.json is gzipped; queue.json and state.json stay plain
+        save_json_gz(p, obj, end='\n', ensure_ascii=False, indent=1, sort_keys=True)
+        return
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
 def low(x): return ' '.join(re.sub(r'[^a-z0-9 ]', ' ', str(x or '').lower().replace('&', ' and ')).split())
 def core(x): return ' '.join(KINDW.sub(' ', low(x)).split())
 def host_of(u): return urllib.parse.urlparse(u or '').netloc.lower().split(':')[0]

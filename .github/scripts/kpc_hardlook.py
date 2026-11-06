@@ -12,6 +12,7 @@ import glob, json, math, os, pathlib, re, sys, time, urllib.parse
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from kpc_manners import Manners  # noqa: E402
+from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 
 M = Manners('KPC hard look reader (chat 10)')
 QF = pathlib.Path('data/waiting/questions/hardlook.json'); PT = pathlib.Path('data/waiting/questions/pin-typos.json')
@@ -24,7 +25,7 @@ def note(m): print('::notice title=Hard look reader::' + str(m)[:900], flush=Tru
 
 
 def load(p, d):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -200,6 +201,21 @@ def merge_rows(mine, theirs):
     return n
 
 
+def _show_main(path):
+    """JSON on origin/main at path or path.gz (gz preferred). None when the path is not there."""
+    import gzip, subprocess
+    for p in (f'{path}.gz', str(path)):
+        r = subprocess.run(['git', 'show', f'origin/main:{p}'], capture_output=True)
+        if r.returncode != 0: continue
+        data = r.stdout
+        if p.endswith('.gz'):
+            try: data = gzip.decompress(data)
+            except OSError: continue
+        try: return json.loads(data.decode('utf-8'))
+        except (UnicodeError, ValueError): continue
+    return None
+
+
 def merge_main():
     """kpc_hardlook.py merge-main: just before the save, read hardlook.json and pin-typos.json as they are on origin/main NOW and
     carry their answers into this job's copy (the save used to overwrite the whole file: answers written meanwhile were lost)."""
@@ -208,14 +224,12 @@ def merge_main():
         note('merge-main: could not fetch main: the save may overwrite newer answers'); return 1
     tot = 0
     for f in (QF, PT):
-        r = subprocess.run(['git', 'show', f'origin/main:{f.as_posix()}'], capture_output=True, text=True)
-        if r.returncode != 0: continue   # not on main yet
-        try: theirs = json.loads(r.stdout)
-        except Exception: note(f'merge-main: {f} on main is not JSON: left as is'); continue  # noqa: BLE001
+        theirs = _show_main(f.as_posix())
+        if theirs is None: continue   # not on main yet, or not JSON
         mine = load(f, None)
         if not isinstance(mine, dict): mine = theirs
         else: tot += merge_rows(mine.setdefault('rows', {}), (theirs or {}).get('rows') or {})
-        json.dump(mine, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+        save_json_gz(f, mine, indent=1, ensure_ascii=False)
     note(f'merge-main: {tot} row(s) took answers or rows from main before the save')
     return 0
 
@@ -295,7 +309,7 @@ def main():
         n['record found'] += 1; R[ref] = keep_old(R.get(ref), q)
     n2 = reask(rows, R)   # chat 11 (Nov 1 3 PM): the rows with no record read back are asked again by place + name
     QF.parent.mkdir(parents=True, exist_ok=True)
-    json.dump(Q, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False); json.dump(P, open(PT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(QF, Q, indent=1, ensure_ascii=False); save_json_gz(PT, P, indent=1, ensure_ascii=False)
     left = sum(1 for r, v in rows.items() if v.get('status') in ('GIS FOUND', 'NAME SOLVED', 'PARCEL') and not (R.get(r) or {}).get('read'))
     left += sum(1 for q in R.values() if not str(q.get('answer') or '').strip() and not q.get('reasked') and REASK.match(str(q.get('result') or '')))   # re-asks still to do keep the chain going
     note('; '.join(f'{k} {x}' for k, x in n.items() if x) + f'; re-asked by place + name: {n2}; rows left {left}; questions {len(R)}, pin typos {len(P["rows"])}')

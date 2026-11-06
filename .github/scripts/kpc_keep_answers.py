@@ -6,17 +6,26 @@ keeps every question the job does not know of, and merges state files (the job's
   python3 kpc_keep_answers.py questions data/waiting/questions/world-finder.json [more ...]
   python3 kpc_keep_answers.py state data/world-finder/state.json
 Never fails."""
-import json, subprocess, sys
+import gzip, json, pathlib, subprocess, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 
 KEYS = ('answer', 'checked_by', 'how', 'rechecked_by_chat2', 'auto', 'sample_for_chat11', 'auto_recheck', 'parked', 't1_band', 't1_why')
 
 
 def origin(path):
+    """Latest JSON on origin/main. path.gz is preferred (questions are stored gzipped)."""
     subprocess.run(['git', 'fetch', '-q', 'origin', 'main'], capture_output=True)
-    p = subprocess.run(['git', 'show', f'origin/main:{path}'], capture_output=True)
-    if p.returncode: return None
-    try: return json.loads(p.stdout)
-    except ValueError: return None
+    for pth in (str(path) + '.gz', str(path)):
+        p = subprocess.run(['git', 'show', f'origin/main:{pth}'], capture_output=True)
+        if p.returncode: continue
+        data = p.stdout
+        if pth.endswith('.gz'):
+            try: data = gzip.decompress(data)
+            except OSError: continue
+        try: return json.loads(data)
+        except ValueError: continue
+    return None
 
 
 def k(q): return (q.get('ref'), str(q.get('record')), q.get('layer'))
@@ -25,7 +34,7 @@ def k(q): return (q.get('ref'), str(q.get('record')), q.get('layer'))
 def questions(path):
     o = origin(path)
     if not o: return
-    try: mine = json.load(open(path, encoding='utf-8'))
+    try: mine = load_json_any(path)
     except (OSError, ValueError): return
     theirs = {k(q): q for q in o.get('questions') or []}
     have = set()
@@ -37,7 +46,7 @@ def questions(path):
     extra = [q for kk, q in theirs.items() if kk not in have]
     mine['questions'] = (mine.get('questions') or []) + extra
     mine['open'] = sum(1 for q in mine['questions'] if not q.get('answer'))
-    json.dump(mine, open(path, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(path, mine, indent=1, ensure_ascii=False)
     print(f'::notice title=Keep answers::{path}: {put} answers put back, {len(extra)} questions kept from the latest copy')
 
 

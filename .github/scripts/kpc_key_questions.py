@@ -9,6 +9,8 @@ Reads KPC-Links data/us-key/US-*.json (LINKS, read-only). Writes data/waiting/qu
 already given are kept (matched by park + record id). Never fails.
   LINKS=../kpc-links python3 kpc_key_questions.py"""
 import glob, json, os, pathlib, sys, time
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import load_json_any, save_json_gz, save_text_gz  # noqa: E402
 
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 OUT = pathlib.Path('data/waiting/questions')
@@ -16,7 +18,7 @@ PADUS = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapSer
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -42,7 +44,7 @@ def main():
     D = {'about': "RULE SHEET G step 2: held similar-name key pieces, one question each. Chat 11 fills answer (YES / NO) + checked_by + how "
                   "(the agency map it looked at); chat 2 rechecks and writes overrides.json. 'pins' = POTA pin may be wrong (information only).",
          'built': time.strftime('%Y-%m-%d %H:%MZ', time.gmtime()), 'open': open_n, 'questions': qs, 'pins': pins}
-    json.dump(D, open(OUT / 'key-pieces.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(OUT / 'key-pieces.json', D, indent=1, ensure_ascii=False)
     L = ['# Key pieces waiting for a person (RULE SHEET G step 2)', '',
          f'{len(qs)} held pieces, {open_n} still open. Answer in key-pieces.json (answer YES / NO, checked_by, how). Chat 2 rechecks and writes overrides.json.', '',
          '| area | park | piece (record) | acres | answer | links |', '|---|---|---|---|---|---|']
@@ -50,7 +52,7 @@ def main():
         L.append(f"| {q['area']} | {q['ref']} {q['park']} | {q['record_name']} ({q['record']}) | {q['acres']:,} | {q['answer'] or 'OPEN'} | "
                  + (f"[record]({q['record_link']}) · " if q['record_link'] else '') + f"[POTA]({q['pota_link']}) |")
     L += ['', f'## POTA pin may be wrong (information only): {len(pins)}', ''] + [f"- {p['area']} {p['ref']} {p['park']}" for p in pins]
-    (OUT / 'key-pieces.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
+    save_text_gz(OUT / 'key-pieces.md', '\n'.join(L) + '\n')
     print(f'::notice title=Key questions::{len(qs)} held pieces ({open_n} open), {len(pins)} pins that may be wrong')
 
 

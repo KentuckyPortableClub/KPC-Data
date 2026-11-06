@@ -11,7 +11,9 @@ land classes. Nearly every YES had the same PROPER words on both sides once kind
     UNLIKELY = everything else (one shared word, no shared word, container, line, size far off)        -> evidence only, never a question
 Learned answers (kpc_learned): a (layer, record) chat 11 said NO to is never asked again; a layer under 10% YES after 20 answers is
 demoted to evidence-only. Shared by kpc_gis_hunter.py and kpc_world_finder.py. No network."""
-import json, pathlib, re, unicodedata
+import json, pathlib, re, sys, unicodedata
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import load_json_any  # noqa: E402
 
 # kind words: what the land IS, not which land it is. Stripped before names are compared (both languages we meet).
 KIND = set('''park parks parc parcs reserve reserves réserve reserva reservat area areas aire site sites state states national nationale nacional
@@ -138,7 +140,7 @@ class Learned:
     def __init__(self, *question_files):
         self.no, self.by_layer, self.by_area = set(), {}, {}
         for f in question_files:
-            try: qs = json.load(open(f, encoding='utf-8')).get('questions') or []
+            try: qs = (load_json_any(f) or {}).get('questions') or []
             except (OSError, ValueError, AttributeError): continue
             for q in qs:
                 a = str(q.get('answer') or '').upper()

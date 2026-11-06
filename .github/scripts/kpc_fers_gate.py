@@ -18,6 +18,8 @@ KEY is released and its MAP AUDIT pass is clean). Two jobs, both never fail:
   those areas wait for the next audit pass. Dates are Central time.
   python3 kpc_fers_gate.py questions ../out/audit | gate        env GH_TOKEN, GITHUB_REPOSITORY (gate starts runs)"""
 import datetime as dt, glob, json, os, pathlib, subprocess, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 
 QF = pathlib.Path('data/waiting/questions/map-audit.json')
 AUD = pathlib.Path('data/status/audited.json')
@@ -31,7 +33,7 @@ REPO = os.environ.get('GITHUB_REPOSITORY') or 'KentuckyPortableClub/KPC-Data'
 
 
 def load(p, d):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -95,7 +97,7 @@ def split_auto(Q):
     old = {(x.get('area'), x.get('ref'), x.get('record')): x for x in A.get('rows') or []}
     for x in auto: old[(x.get('area'), x.get('ref'), x.get('record'))] = x
     A.update(about="Map-audit rows a BOT handles (HQ Nov 2 5:55 PM pile-down): shape repairs, sources that were down (read again next run), stale-source notes. Not asked of a person.", rows=list(old.values()), built=TODAY)
-    json.dump(A, open(AUTOQ, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(AUTOQ, A, indent=1, ensure_ascii=False)
     return len(auto)
 
 
@@ -141,7 +143,7 @@ def questions(adir):
     Q['questions'] = keep; Q['built'] = TODAY
     na, npat = tidy(Q)
     QF.parent.mkdir(parents=True, exist_ok=True)
-    json.dump(Q, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(QF, Q, indent=1, ensure_ascii=False)
     A = load(AUD, {}) or {}
     # Nov 2 (Mapping #1/#13, Quality 2d): only the areas the audit LISTS count as audited, with the audit's own date for each (it was
     # every *.json file on tools-out, dated today: areas whose rows never arrived (US-TX, UT, DC, ND) looked audited and clean)
@@ -165,7 +167,7 @@ def gate():
     A = load(AUD, {}) or {}
     QQ = load(QF, {}) or {}
     if QQ.get('questions'):
-        na, npat = tidy(QQ); json.dump(QQ, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+        na, npat = tidy(QQ); save_json_gz(QF, QQ, indent=1, ensure_ascii=False)
         if na or npat: print(f'::notice title=Map audit pile::{na} rows to the bots\' list, {npat} answered by a pattern; {QQ["open"]} open for a person', flush=True)
     Q = QQ.get('questions') or []
     down = {}   # Nov 2 (Quality 2b): rows moved to the bots' list because the source was down were never checked: they keep the area waiting

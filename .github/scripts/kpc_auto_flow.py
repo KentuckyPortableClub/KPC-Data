@@ -14,6 +14,7 @@ import collections, glob, hashlib, json, os, pathlib, re, sys, time
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_tiers as T  # noqa: E402
+from kpc_json_any import glob_json_any, load_json_any, save_json_gz  # noqa: E402
 
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 QDIR = pathlib.Path('data/waiting/questions')
@@ -26,7 +27,7 @@ SMALL = T.SMALL_KIND
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -115,7 +116,7 @@ def _recheck(f, world):
         yes += 1
     D['open'] = sum(1 for q in qs if not q.get('answer'))
     D['auto_yes'] = sum(1 for q in qs if q.get('auto'))
-    json.dump(D, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(f, D, indent=1, ensure_ascii=False)
     notice(f"AUTO-1{'W' if world else ''} recheck ({f.name}): {yes} SURE rows passed (bot YES; the key joins them at its next rebuild), {held} stay open (check named on the row)")
 
 
@@ -203,7 +204,7 @@ def collector_trusted(f):
     D['auto_yes'] = sum(1 for q in qs if q.get('auto'))
     D['auto_1c'] = {'date': TODAY, 'released': yes, 'sampled': sum(1 for q in qs if q.get('auto') and q.get('sample_for_chat11') and q.get('checked_by', '').startswith('auto (AUTO-1C')),
                     'to_chat11': held, 'likely_open': sum(1 for q in qs if q.get('tier') == 'LIKELY' and not q.get('answer')), 'paused_layers': len(paused), 'why': dict(why_n.most_common(12))}
-    json.dump(D, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(f, D, indent=1, ensure_ascii=False)
     PAUSE_F.parent.mkdir(parents=True, exist_ok=True); json.dump(P, open(PAUSE_F, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     notice(f"AUTO-1C trusted collector ({f.name}): {yes} SURE released (bot YES, the key joins them), {D['auto_1c']['sampled']} of all bot YES marked for chat 11's 1-in-10, {held} SURE sent to chat 11 ({dict(why_n.most_common(4))}), {len(paused)} layers paused")
 
@@ -224,7 +225,7 @@ def layers():
         if len(sure) < 3: r['auto_note'] = f'AUTO-2: {len(sure)} SURE park names (needs 3): chat 9 decides'; continue
         r.update({'approved': True, 'approved_by': 'auto (AUTO-2)', 'approved_note': f'{len(sure)} SURE names, e.g. ' + '; '.join(f'{p[0]} {p[1][:30]}' for p in sure[:3]), 'approved_on': TODAY})
         n += 1
-    json.dump(D, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(f, D, indent=1, ensure_ascii=False)
     notice(f'AUTO-2 layers: {n} READY layers approved by the rule (chat 9 spot-checks Mondays)')
 
 
@@ -282,7 +283,8 @@ def match():
         tail = f"{parts[-3]}/{parts[-1]}" if len(parts) >= 3 else str(q.get('layer'))
         return f"{q['ref']}|name:{q.get('record_name', '')}@{tail}"
     tot = 0
-    for qf in sorted(QDIR.glob('*.json')):
+    for qf in glob_json_any(str(QDIR / '*.json')):
+        qf = pathlib.Path(qf)
         D = load(qf, {}) or {}
         qs = D.get('questions') if isinstance(D, dict) else None
         if not isinstance(qs, list): continue
@@ -299,7 +301,7 @@ def match():
                       'sample_for_chat11': int(hashlib.md5(f"{q['ref']}{q.get('record')}".encode()).hexdigest(), 16) % 10 == 0})
             n += 1
         if n or any(isinstance(q, dict) and q.get('t1_band') for q in qs):
-            json.dump(D, open(qf, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+            save_json_gz(qf, D, indent=1, ensure_ascii=False)
         tot += n
     notice(f'AUTO-T1 map-match: {tot} STRONG open questions got a bot YES (1 in 10 sampled for chat 11); bands written on the rest')
 
