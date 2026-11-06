@@ -6,6 +6,7 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
 |---|---|---|---|---|---|---|
 | US-TN | 277 | 9 | 15 | 1 | 7 | 2 |
 | US-NC | 253 | 66 | 71 | 9 | 67 | 2 |
+| US-VA | 184 | 82 | 69 | 16 | 22 | 0 |
 | US-GA | 237 | 26 | 32 | 5 | 176 | 0 |
 | US-AL | 155 | 30 | 2 | 3 | 108 | 6 |
 | US-FL | 460 | 23 | 2 | 4 | 200 | 0 |
@@ -17,6 +18,7 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
 | US-SD | 120 | 15 | 9 | 1 | 96 | 1 |
 | US-NY | 851 | 195 | 188 | 428 | 184 | 1 |
 | US-MA | 421 | 35 | 25 | 5 | 346 | 0 |
+| US-VT | 109 | 5 | 58 | 1 | 46 | 0 |
 | US-ME | 148 | 26 | 8 | 2 | 85 | 2 |
 | US-MD | 186 | 81 | 86 | 29 | 64 | 0 |
 | US-DE | 89 | 2 | 1 | 0 | 42 | 0 |
@@ -31,11 +33,12 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
 | US-AZ | 123 | 4 | 7 | 9 | 56 | 0 |
 | US-CA | 243 | 103 | 94 | 20 | 86 | 2 |
 | US-OR | 140 | 27 | 20 | 19 | 40 | 0 |
+| US-WA | 503 | 40 | 24 | 27 | 386 | 1 |
 | US-AK | 179 | 4 | 7 | 4 | 161 | 0 |
 | US-HI | 102 | 9 | 1 | 6 | 73 | 0 |
 | US-MI | 388 | 18 | 15 | 3 | 27 | 0 |
 | US-OH | 276 | 7 | 12 | 0 | 2 | 1 |
-| US-UT | 264 | 11 | 17 | 5 | 196 | 0 |
+| US-UT | 692 | 17 | 31 | 7 | 264 | 6 |
 
 ## US-TN: 12-park sample for chat 8
 
@@ -120,6 +123,58 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “The Moores Creek National Battlefield grounds are open daily from 9:00 am to 5:00 pm;” · [www.nps.gov](https://www.nps.gov/mocr/planyourvisit/hours.htm)
   - Hours: “The park visitor center is open Tuesday through Saturday from 9 am until 5 pm.” · [www.nps.gov](https://www.nps.gov/mocr/planyourvisit/hours.htm)
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mocr/planyourvisit/fees.htm)
+
+## US-VA: 12-park sample for chat 8
+
+- **US-0016 Colonial National Historical Park**
+  - Hours: “The Historic Jamestowne ENTRANCE GATE opens 8:45 am - 4:30 pm daily.” · [www.nps.gov](https://www.nps.gov/colo/planyourvisit/hours.htm)
+  - Hours: “Colonial National Historical Park is open daily, year-round with the exception of Thanksgiving Day, December 25, and January 1.” · [www.nps.gov](https://www.nps.gov/colo/planyourvisit/hours.htm)
+  - Fees: “Note: There is an additional $ 15.00 Preservation Virginia entrance fee for each adult entering on the Colonial Pass to Historic Jamestowne to visit the Preservation Virginia historic areas.” · [www.nps.gov](https://www.nps.gov/colo/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/colo/planyourvisit/fees.htm)
+- **US-0019 Cumberland Gap National Historical Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/cuga/planyourvisit/fees.htm)
+  - Fees: “There are no entrance fees at Cumberland Gap National Historical Park.” · [www.nps.gov](https://www.nps.gov/cuga/planyourvisit/fees.htm)
+- **US-0064 Shenandoah National Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/shen/planyourvisit/fees.htm)
+  - Permit: “Permits and Reservations are required for a variety of activities in Shenandoah National Park.” · [www.nps.gov](https://www.nps.gov/shen/learn/management/lawsandpolicies.htm)
+- **US-0577 Clinch River State Park**
+  - Hours: “The park is open to the public from 6 am to dusk.” · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/clinch-river)
+  - Hours: “Trails on the Sugar Hill Unit and day use boat launches at Artrip, Carbo, Old Castlewood and Retch are open to the public from 6 am to dusk daily.” · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/clinch-river)
+  - Fees: “Fees: $5 parking (vehicles up to 8 passengers).” · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/clinch-river)
+  - Office hours: “Our office hours, due to limited staff availability, are as follows: Monday through Friday, 8:30 am &ndash;” · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/clinch-river)
+  - Office hours: “Office hours at the UVA Wise Oxbow Center are Monday through Friday, 8:30 am - 12 pm then 12:30 pm - 4 pm.” · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/clinch-river)
+- **US-0670 George Washington Memorial Parkway**
+  - Hours: “Most park sites are open from 6 am to 10 pm.” · [www.nps.gov](https://www.nps.gov/gwmp/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/gwmp/planyourvisit/fees.htm)
+- **US-0671 Assateague Island National Seashore**
+  - Hours: “Open year round, 24 hours a day.” · [www.nps.gov](https://www.nps.gov/asis/planyourvisit/hours.htm)
+  - Hours: “Open January-March 11: 6 am - 6 pm.” · [www.nps.gov](https://www.nps.gov/asis/planyourvisit/hours.htm)
+  - Fees: “Assateague Island National Seashore offers an annual park pass for $45.00.” · [www.nps.gov](https://www.nps.gov/asis/planyourvisit/fees.htm)
+  - Fees: “The Assateague Island National Seashore Annual Park Entrance Pass is $45.00.” · [www.nps.gov](https://www.nps.gov/asis/planyourvisit/fees.htm)
+  - Attraction fee: “Beach Parking fee upgrade: $20.00 - For visitors using the USFWS Migratory Waterfowl Duck Stamp as an entrance pass, valid July 1 - June 30 annually.” · [www.nps.gov](https://www.nps.gov/asis/planyourvisit/fees.htm)
+  - Attraction fee: “Vehicle: $45.00 - USFWS Migratory Waterfowl Duck Stamp ($25.00) plus beach parking fee ($20.00)” · [www.nps.gov](https://www.nps.gov/asis/planyourvisit/fees.htm)
+- **US-0691 Prince William Forest Park**
+  - Hours: “The park grounds are open daily from sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/prwi/planyourvisit/hours.htm)
+  - Hours: “Current Hours: Open Friday, Saturday, Sunday, and Monday from 8:00am to 4:00pm.” · [www.nps.gov](https://www.nps.gov/prwi/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/prwi/planyourvisit/fees.htm)
+  - Permit: “Chopawamsic Backcountry Area is open to backcountry hike in camping year round (tents only, permit required).” · [www.nps.gov](https://www.nps.gov/prwi/planyourvisit/hours.htm)
+  - Permit: “A permit is required to enter the Chopawamsic Backcountry Area and can also be obtained on Recreation.gov.” · [www.nps.gov](https://www.nps.gov/prwi/planyourvisit/fees.htm)
+- **US-0692 Wolf Trap National Park**
+  - Hours: “The park is closed from dusk to sunrise except to patrons and authorized participants attending authorized events.” · [www.nps.gov](https://www.nps.gov/wotr/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/wotr/planyourvisit/fees.htm)
+- **US-0707 Petersburg National Battlefield**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/pete/planyourvisit/fees.htm)
+- **US-0712 Manassas National Battlefield**
+  - Hours: “While the building is closed, the grounds remain open sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/mana/planyourvisit/hours.htm)
+  - Hours: “Park grounds are open daily from dawn until dusk.” · [www.nps.gov](https://www.nps.gov/mana/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mana/planyourvisit/fees.htm)
+- **US-0713 Richmond National Battlefield**
+  - Fees: “There are no entrance fees to any of the Richmond National Battlefield Park sites.” · [www.nps.gov](https://www.nps.gov/rich/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/rich/planyourvisit/fees.htm)
+- **US-0717 Fredericksburg and Spotsylvania National Military Park**
+  - Hours: “Park grounds are open daily, sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/frsp/planyourvisit/hours.htm)
+  - Hours: “The Chatham Main Building is open and staffed Saturday and Sunday, 9 am to 5 pm.” · [www.nps.gov](https://www.nps.gov/frsp/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/frsp/planyourvisit/fees.htm)
 
 ## US-GA: 12-park sample for chat 8
 
@@ -577,6 +632,77 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mima/planyourvisit/fees.htm)
 - **US-0748 New Bedford Whaling National Historical Park**
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/nebe/planyourvisit/fees.htm)
+
+## US-VT: 12-park sample for chat 8
+
+- **US-0744 Marsh-Billings-Rockefeller National Historical Park**
+  - Hours: “Park grounds are open year-round during daylight hours.” · [www.nps.gov](https://www.nps.gov/mabi/planyourvisit/hours.htm)
+  - Hours: “The park's twenty miles of trails and carriage roads are open dawn until dusk for hiking and equestrian use in the spring, summer, and fall .” · [www.nps.gov](https://www.nps.gov/mabi/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mabi/planyourvisit/fees.htm)
+  - Fees: “Entry to the Marsh-Billings-Rockefeller grounds is free of charge.” · [www.nps.gov](https://www.nps.gov/mabi/planyourvisit/fees.htm)
+- **US-11966 Mount Independence State Historic Site**
+  - Fees: “Group Rate (10+ visitors): $5.00 per person” · [historicsites.vermont.gov](https://historicsites.vermont.gov/mount-independence/hours-admissions-directions)
+- **US-3098 Alburgh Dunes State Park**
+  - Hours: “Camping is not allowed, and the park is open for day use from 10 am to sunset.” · [www.vtstateparks.com](https://www.vtstateparks.com/parks/alburgh-dunes)
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3099 Allis State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3100 Big Deer State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3101 Bomoseen State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3103 Branbury State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3104 Brighton State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3105 Burton Island State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3106 Button Bay State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3107 Camels Hump State Park**
+  - Fees: “This is an undeveloped, FREE ENTRY state park with no phone or visitor facilities” · [www.vtstateparks.com](https://www.vtstateparks.com/parks/camels-hump)
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+- **US-3108 Camp Plymouth State Park**
+  - Fees: “Bomoseen Open-air pavilion Yes, 4 outlets by entrance 100 $150” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Fees: “Open-air pavilion Yes 60 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Office hours: “Request by calling 1-888-409-7579 (Monday through Friday, 9:00 am - 4:00 pm) or email parks@vermont.gov .” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Boulder Beach Open-air pavilion No 100 $175” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
+  - Attraction fee: “Kill Kare Rocky Point House, pavilion and lawn area Yes 300 $1800” · [www.vtstateparks.com](https://www.vtstateparks.com/fees)
 
 ## US-ME: 12-park sample for chat 8
 
@@ -1053,6 +1179,54 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
 - **US-0502 Malheur National Wildlife Refuge**
   - Hours: “The Refuge is open every day from sunrise to sunset and is always free.” · [www.fws.gov](https://www.fws.gov/refuge/malheur)
   - Office hours: “8:00 am - 4:00 pm (hours may change, call for current hours)” · [www.fws.gov](https://www.fws.gov/refuge/malheur/visit-us)
+
+## US-WA: 12-park sample for chat 8
+
+- **US-0052 Mount Rainier National Park**
+  - Hours: “Mount Rainier National Park is open all year, 24 hours a day .” · [www.nps.gov](https://www.nps.gov/mora/planyourvisit/hours.htm)
+  - Hours: “10 am - 3:30 pm, weekends & holidays* only conditions permitting;” · [www.nps.gov](https://www.nps.gov/mora/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/mora/planyourvisit/fees.htm)
+  - Fees: “Visitors who prefer to use cash can purchase a $30 single-vehicle entrance pass, good for 7 days, at the following locations prior to entering the park.” · [www.nps.gov](https://www.nps.gov/mora/planyourvisit/fees.htm)
+- **US-0054 Nez Perce National Historical Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/nepe/planyourvisit/fees.htm)
+  - Fees: “There are no fees to visit any of the sites of Nez Perce National Historical Park.” · [www.nps.gov](https://www.nps.gov/nepe/planyourvisit/fees.htm)
+- **US-0055 North Cascades National Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/noca/planyourvisit/fees.htm)
+  - Fees: “There is no fee to enter North Cascades National Park Service Complex.” · [www.nps.gov](https://www.nps.gov/noca/planyourvisit/fees.htm)
+  - Permit: “Between May 1 and October 31 each year, boaters must have a Dock Fee Permit in order to use the docks in Lake Chelan National Recreation Area.” · [www.nps.gov](https://www.nps.gov/noca/planyourvisit/fees.htm)
+  - Permit: “This is the same permit needed for using the docks provided by the U.S. Forest Service along other parts of the Lake Chelan shoreline.” · [www.nps.gov](https://www.nps.gov/noca/planyourvisit/fees.htm)
+- **US-0056 Olympic National Park**
+  - Hours: “Olympic National Park is open 24 hours a day, year-round.” · [www.nps.gov](https://www.nps.gov/olym/planyourvisit/hours.htm)
+  - Fees: “The Olympic National Park Annual Pass costs $55 and is good for entry into the park for one year from the month of purchase.” · [www.nps.gov](https://www.nps.gov/olym/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/olym/planyourvisit/fees.htm)
+  - Permit: “Wilderness Camping Permits are required for all overnight trips into the Olympic National Park backcountry.” · [www.nps.gov](https://www.nps.gov/olym/planyourvisit/fees.htm)
+- **US-0061 San Juan Island American Camp National Historical Park**
+  - Hours: “The grounds and outdoor exhibit areas are open 24 hours a day, 7 days a week at both American Camp and English Camp.” · [www.nps.gov](https://www.nps.gov/sajh/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/sajh/planyourvisit/fees.htm)
+  - Fees: “There is no fee to enter San Juan Island National Historical Park.” · [www.nps.gov](https://www.nps.gov/sajh/planyourvisit/fees.htm)
+- **US-0120 Ginkgo Petrified Forest State Park**
+  - Permit: “Sno-Park permits are required on free days at all Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+  - Permit: “A Sno-Park permit is required to park at all Washington State Park Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+- **US-0340 Spring Creek Hatchery State Park**
+  - Permit: “Sno-Park permits are required on free days at all Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+  - Permit: “A Sno-Park permit is required to park at all Washington State Park Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+- **US-0378 Miller Peninsula State Park**
+  - Permit: “Sno-Park permits are required on free days at all Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+  - Permit: “A Sno-Park permit is required to park at all Washington State Park Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+- **US-0379 Dugualla State Park**
+  - Permit: “Sno-Park permits are required on free days at all Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+  - Permit: “A Sno-Park permit is required to park at all Washington State Park Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+- **US-0694 Ebey's Landing Reserve National Conservation Area**
+  - Hours: “They are open on Saturdays and Sundays, from 10 AM to 4 PM.” · [www.nps.gov](https://www.nps.gov/ebla/planyourvisit/hours.htm)
+  - Fees: “There are no fees to enter Ebey's Landing National Historical Reserve.” · [www.nps.gov](https://www.nps.gov/ebla/planyourvisit/hours.htm)
+  - Fees: “there are three state parks within the Reserve, which do require a Discover Pass - $10 a day or $30 for an annual pass.” · [www.nps.gov](https://www.nps.gov/ebla/planyourvisit/hours.htm)
+- **US-0699 Lake Roosevelt National Recreation Area**
+  - Hours: “Lake Roosevelt National Recreation Area is open for recreational use 24 hours per day, 365 days per year.” · [www.nps.gov](https://www.nps.gov/laro/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/laro/planyourvisit/fees.htm)
+  - Fees: “$10 / valid for 7 consecutive days from date of purchase ($5 with a valid America the Beautiful - The National Parks and Federal Recreational Lands Senior or Access pass)” · [www.nps.gov](https://www.nps.gov/laro/planyourvisit/fees.htm)
+- **US-0727 Lake Lenore Caves State Park**
+  - Permit: “Sno-Park permits are required on free days at all Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
+  - Permit: “A Sno-Park permit is required to park at all Washington State Park Sno-Parks from Nov. 1 through March 31.” · [parks.wa.gov](https://parks.wa.gov/passes-permits/get-park-pass/discover-pass)
 
 ## US-AK: 12-park sample for chat 8
 

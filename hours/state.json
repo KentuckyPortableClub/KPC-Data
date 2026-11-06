@@ -559,20 +559,74 @@
    "updated": "2026-11-06"
   },
   "US-UT": {
-   "checked": 264,
+   "checked": 692,
    "counts": {
-    "fees": 17,
-    "hours": 11,
-    "hours_lines": 12,
-    "no_page": 0,
-    "nothing": 196,
-    "parks": 264,
-    "permits": 5,
-    "season": 11,
-    "season_lines": 15
+    "fees": 31,
+    "hours": 17,
+    "hours_lines": 22,
+    "no_page": 6,
+    "nothing": 264,
+    "parks": 692,
+    "permits": 7,
+    "season": 20,
+    "season_lines": 24
    },
-   "left": 428,
+   "left": 0,
    "parks": 692,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
+  "US-VA": {
+   "checked": 184,
+   "counts": {
+    "fees": 69,
+    "hours": 82,
+    "hours_lines": 178,
+    "no_page": 0,
+    "nothing": 22,
+    "parks": 184,
+    "permits": 16,
+    "season": 24,
+    "season_lines": 28
+   },
+   "left": 0,
+   "parks": 184,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
+  "US-VT": {
+   "checked": 109,
+   "counts": {
+    "fees": 58,
+    "hours": 5,
+    "hours_lines": 7,
+    "no_page": 0,
+    "nothing": 46,
+    "parks": 109,
+    "permits": 1,
+    "season": 5,
+    "season_lines": 5
+   },
+   "left": 0,
+   "parks": 109,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
+  "US-WA": {
+   "checked": 503,
+   "counts": {
+    "fees": 24,
+    "hours": 40,
+    "hours_lines": 45,
+    "no_page": 1,
+    "nothing": 386,
+    "parks": 503,
+    "permits": 27,
+    "season": 45,
+    "season_lines": 50
+   },
+   "left": 33,
+   "parks": 536,
    "status": "partial",
    "updated": "2026-11-06"
   }
@@ -594,89 +648,53 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "crawl_delay_skip": 4,
-   "dropped_queued": 494,
+   "crawl_delay_skip": 1,
+   "deferred": 67,
+   "dropped_queued": 3,
    "errors": 0,
-   "for_person": 5,
    "for_person_urls": [
     [
-     "https://www.tn.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.tn.gov this run"
-    ],
-    [
-     "https://tnstateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from tnstateparks.com this run"
-    ],
-    [
-     "https://www.tnwatchablewildlife.org/watchareadetails.cfm?uid=09091516201272287&region=Chickasaw_State_Forest%2C_State_Park%2C_and_WMA",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.murfreesborotn.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.murfreesborotn.gov this run"
-    ],
-    [
-     "https://www.baysmountain.com/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://springcreekforest.org/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.pacificwarmuseum.org/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.pacificwarmuseum.org this run"
-    ],
-    [
-     "https://www.mitigationcommission.gov/hatchery/hatchery_fountain.html",
+     "https://www.mitigationcommission.gov/wetlands/wetlands_ulwp.html",
      "Crawl-delay 300 s is over 120 s: not read"
     ],
     [
-     "https://www.mitigationcommission.gov/hatchery/hatchery_kamas.html",
-     "Crawl-delay 300 s is over 120 s: not read"
+     "https://www.wildlife.utah.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildlife.utah.gov this run"
     ],
     [
-     "https://www.mitigationcommission.gov/hatchery/hatchery_warmh2o.html",
-     "Crawl-delay 300 s is over 120 s: not read"
+     "https://www.virginiastateparks.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.virginiastateparks.gov this run"
     ],
     [
-     "https://www.mitigationcommission.gov/hatchery/hatchery_whiterocks.html",
-     "Crawl-delay 300 s is over 120 s: not read"
+     "http://www.nae.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.nae.usace.army.mil this run"
     ],
     [
-     "https://www.flaminggorgecountry.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.flaminggorgecountry.com this run"
+     "https://www.fws.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.fws.org this run"
     ],
     [
-     "https://www.blm.gov/visit/drinks-canyon-camping-area-0",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.blm.gov/visit/starr-spring-campground",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.intermountainhistories.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.intermountainhistories.org this run"
+     "https://www.nww.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.nww.usace.army.mil this run"
     ]
    ],
-   "requests": 1018,
-   "rested": 154,
-   "retry403": 5,
-   "robots": 266,
-   "robots_unreadable": 6,
-   "strikes": 13
+   "requests": 1591,
+   "rested": 395,
+   "retry403": 2,
+   "robots": 7,
+   "robots_unreadable": 5,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "fees": 68,
-   "hours": 50,
-   "no_page": 3,
-   "none": 760,
-   "pages_read": 696,
-   "parks": 883,
-   "permits": 39,
-   "skipped_fresh": 0
+   "fees": 165,
+   "hours": 133,
+   "no_page": 7,
+   "none": 944,
+   "pages_read": 1218,
+   "parks": 1224,
+   "permits": 46,
+   "skipped_fresh": 883
   },
   "when": "2026-11-06"
  }
