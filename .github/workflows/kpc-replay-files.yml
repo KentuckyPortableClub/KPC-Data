@@ -54,7 +54,6 @@ jobs:
         if: always()
         env:
           KPC_STEPS: ${{ toJSON(steps) }}
-          KPC_FAIL_SAFE: '0'   # Nov 6 (G8 added here): report only; red/green of this job is unchanged
         run: |
           python3 - <<'PY'
           import json, os

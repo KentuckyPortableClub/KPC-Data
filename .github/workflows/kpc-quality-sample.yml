@@ -6,7 +6,7 @@ name: KPC quality sample (weekly, report only)
 # Outputs come back as the artifact 'quality-sample' (14 days) and a job summary.
 on:
   schedule:
-    - cron: '41 13 * * 1'   # Mondays 7:41 AM CST
+    - cron: '41 13 * * 1'   # Mondays 7:41 AM CST. Brandon's own OK, 7:11 AM CST Nov 6: "Yes, put the Quality sample on a weekly schedule"
   workflow_dispatch:
     inputs:
       polygon:
@@ -85,7 +85,7 @@ jobs:
         if: always()
         env:
           KPC_STEPS: ${{ toJSON(steps) }}
-          KPC_FAIL_SAFE: '0'   # Nov 6 (G8 added here): report only; red/green of this job is unchanged
+          KPC_FAIL_SAFE: ${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}   # safe: the last step of a job nothing follows; KPC_HIDDEN_RED=off turns it off
         run: |
           python3 - <<'PY'
           import json, os
