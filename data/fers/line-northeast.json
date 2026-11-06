@@ -16,7 +16,7 @@
   "US-DC"
  ],
  "since": "2026-11-06",
- "date": "2026-11-06 04:17 UTC",
+ "date": "2026-11-06 19:16 UTC",
  "verdict": "STOPPED",
  "why": [
   "missing check: 5665 of 12562 expected pairs were never looked at (45%; 2868 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5658); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
@@ -45,7 +45,7 @@
    "pairs whose boxes touch": 14669
   },
   "pass2": {
-   "agree with the pass before": 3370,
+   "agree with the pass before": 3369,
    "date": "2026-11-06",
    "pairs tested": 1205
   },
@@ -192,7 +192,7 @@
   "merged": 317
  },
  "US-DE": {
-  "rows": 269,
+  "rows": 273,
   "live": 36,
   "waiting": 0,
   "unfinished": 0,
@@ -201,7 +201,7 @@
    "one record covers two parks": 1
   },
   "dropped": 66,
-  "merged": 154
+  "merged": 158
  },
  "US-DC": {
   "rows": 57,
