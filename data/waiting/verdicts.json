@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06T09:10Z",
+ "checked": "2026-11-06T09:32Z",
  "switched_on": false,
  "results": [
   {
@@ -1297,9 +1297,11 @@
    "path": "data/fers/US-MI.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 82 -> 108 (over 30% change)",
-    "F-2 NOT SURE 9 -> 34 (over 30% change)",
-    "F-2 39 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, US-10716+US-4239"
+    "F-2 candidates 82 -> 121 (over 30% change)",
+    "F-2 NOT SURE 9 -> 25 (over 30% change)",
+    "F-2 50 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, US-10519+US-4239",
+    "F-K known 2-fer missing: US-1522 + US-6823",
+    "F-K known 2-fer missing: US-13184 + US-1522"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1430,16 +1432,6 @@
    "notes": [
     "replaces live data/fers/US-NY.json (same file, other format): promotion removes the old name"
    ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-OH.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 27 -> 62 (over 30% change)",
-    "F-2 36 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-1935+US-4239, US-1939+US-4239"
-   ],
-   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -3704,6 +3696,16 @@
    "kind": "key",
    "why": [
     "F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-OH.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 27 -> 62 (over 30% change)",
+    "F-2 36 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-1935+US-4239, US-1939+US-4239"
    ],
    "notes": [],
    "verdict": "HOLD"

@@ -4,35 +4,49 @@
  "states": [
   "US-MI"
  ],
- "since": "2026-11-01",
- "date": "2026-11-01 19:12 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
- "known_answers": "19/19 on 2026-10-31",
+ "since": "2026-11-06",
+ "date": "2026-11-06 09:31 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "missing check: 2547 of 4278 expected pairs were never looked at (60%; 1001 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2506); <park>: not in this run (another state, retired, or no POTA pin) (30); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (8)"
+ ],
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 110,
-  "DROPPED": 618,
-  "NEVER LOOKED AT": 3543
+  "FOUND": 123,
+  "DROPPED": 607,
+  "NEVER LOOKED AT": 3548
+ },
+ "never_looked_at": {
+  "counted": 2547,
+  "no_official_outline": 1001,
+  "expected": 4278,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 2506,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 30,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 8,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: not in this run ": 3
+  }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-01",
-   "pairs tested": 2344,
-   "pairs whose boxes touch": 2344
+   "date": "2026-11-06",
+   "pairs tested": 2327,
+   "pairs whose boxes touch": 2327
   },
   "pass2": {
-   "agree with the pass before": 681,
-   "date": "2026-11-01",
-   "pairs tested": 163
+   "agree with the pass before": 666,
+   "date": "2026-11-06",
+   "pairs tested": 167
   },
   "pass3": {
-   "agree with the pass before": 617,
-   "date": "2026-11-01",
-   "pairs tested": 163
+   "agree with the pass before": 618,
+   "date": "2026-11-06",
+   "pairs tested": 164
   },
   "pass5": {
-   "checked": 29,
-   "date": "2026-11-01",
+   "checked": 23,
+   "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,23 +55,19 @@
   "US-MI": "data/fers/US-MI.json"
  },
  "US-MI": {
-  "rows": 719,
-  "live": 118,
+  "rows": 715,
+  "live": 130,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "low-confidence outline for Yellow Dog National Wild and Scen": 3,
-   "low-confidence outline for Sturgeon": 4,
-   "low-confidence outline for Bear Creek National Wild and Scen": 1,
-   "no public owner on the ownership map": 19,
-   "low-confidence outline for Ontonagon National Wild and Sceni": 5,
-   "low-confidence outline for Presque Isle National Wild and Sc": 2
+   "no public owner on the ownership map": 23,
+   "one record covers two parks": 2
   },
-  "dropped": 234,
-  "merged": 333
+  "dropped": 225,
+  "merged": 335
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-MI"
- ],
- "states_held": []
+ ]
 }
