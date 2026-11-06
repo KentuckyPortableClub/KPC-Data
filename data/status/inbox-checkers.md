@@ -238,3 +238,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-05, 1 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM BOT world harvester (2026-11-06): grade me: GB data/harvest/leads-<CC>.json — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42214077848)
 - FROM BOT world harvester (2026-11-06): grade me: GB data/harvest/leads-<CC>.json — chunk 2 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42214077848)
+- FROM BOT world harvester (2026-11-06): grade me: GB AU data/harvest/leads-<CC>.json — chunk 3 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42214077848)

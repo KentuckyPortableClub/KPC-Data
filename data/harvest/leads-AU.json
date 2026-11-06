@@ -2,25 +2,111 @@
  "about": "World harvester leads for Australia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AU",
  "date": "2026-11-06",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
   "known",
   "servers",
-  "wfs"
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 43,
-  "B": 15,
-  "C": 59
+  "A": 47,
+  "B": 16,
+  "C": 152
  },
  "failures": [
   {
    "step": "known",
    "what": "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0",
    "error": "no answer three times: left alone for a day"
+  },
+  {
+   "catalog": "https://data.gov.au/data",
+   "keyword": "national park",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://data.gov.au/data",
+   "keyword": "conservation park",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://data.gov.au/data",
+   "keyword": "nature reserve",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://data.gov.au/data",
+   "keyword": "protected areas",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://discover.data.vic.gov.au",
+   "keyword": "national park",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://discover.data.vic.gov.au",
+   "keyword": "conservation park",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://discover.data.vic.gov.au",
+   "keyword": "nature reserve",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://discover.data.vic.gov.au",
+   "keyword": "protected areas",
+   "error": "robots.txt says no"
   }
  ],
- "rejected_orgs": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    43
+   ],
+   [
+    "Flinders University",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    44
+   ]
+  ],
+  [
+   [
+    "?",
+    49
+   ]
+  ],
+  [
+   [
+    "?",
+    41
+   ]
+  ],
+  [
+   [
+    "?",
+    6
+   ]
+  ],
+  [
+   [
+    "?",
+    22
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://opendata.maps.vic.gov.au/geoserver/wfs",
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/15",
@@ -62,6 +148,49 @@
   }
  ],
  "leads": {
+  "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/edp/greatkoalanationalpark_proposedboundaries": {
+   "url": "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/GreatKoalaNationalPark_ProposedBoundaries/MapServer",
+   "cc": "AU",
+   "title": "EDP/GreatKoalaNationalPark_ProposedBoundaries",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "GKNP Proposed Boundaries",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Label",
+      "SF_Name",
+      "SF_CAPS",
+      "Area_Ha",
+      "VerDate",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 66,
+     "sample": [
+      "Proposed GKNP",
+      "Proposed GKNP",
+      "Proposed to Remain SF"
+     ],
+     "name_field": "Label"
+    }
+   ],
+   "note": "Great Koala National Park Proposed Boundaries Version 1",
+   "grade": 6,
+   "band": "A"
+  },
   "https://services9.arcgis.com/epcawupcswtfb9jl/arcgis/rest/services/niaa_administrative_boundaries_2020": {
    "url": "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer",
    "cc": "AU",
@@ -249,9 +378,796 @@
       "Eastern New South Wales"
      ],
      "name_field": "Region_Name"
+    },
+    {
+     "id": 0,
+     "name": "NIAA Subregions 2024 Names (topo)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Region_Name",
+      "Subregion_Id",
+      "Subregion_Name",
+      "State",
+      "State_Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 1,
+     "name": "NIAA Subregions 2024 Names (satellite)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Region_Name",
+      "Subregion_Id",
+      "Subregion_Name",
+      "State",
+      "State_Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 2,
+     "name": "NIAA Subregions 2024",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Region_Name",
+      "Subregion_Id",
+      "Subregion_Name",
+      "State",
+      "State_Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 3,
+     "name": "NIAA Regions 2026 Names (satellite)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region_Name",
+      "NIAA_Region_Group",
+      "State",
+      "State_Name",
+      "Area_Albers",
+      "Region_Code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia",
+      "Eastern New South Wales"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 4,
+     "name": "NIAA Regions 2026 Names (topo)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region_Name",
+      "NIAA_Region_Group",
+      "State",
+      "State_Name",
+      "Area_Albers",
+      "Region_Code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia",
+      "Eastern New South Wales"
+     ],
+     "name_field": "Region_Name"
     }
    ],
    "note": "NIAA Administration Boundaries",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://mapprod.environment.nsw.gov.au/arcgis/rest/services/planning/epi_additional_layers": {
+   "url": "https://mapprod.environment.nsw.gov.au/arcgis/rest/services/Planning/EPI_Additional_Layers/MapServer/14",
+   "cc": "AU",
+   "title": "Planning/EPI_Additional_Layers/14",
+   "publisher": "NSW Department of Planning, Housing and Infrastructure",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 14,
+     "name": "Environmental Conservation Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_TYPE",
+      "MAP_NAME",
+      "LAY_NAME",
+      "LAY_CLASS",
+      "LABEL",
+      "LEGIS_REF_AREA",
+      "LEGIS_REF_CLAUSE",
+      "LEGIS_REF_VALUE",
+      "PCO_REF_KEY",
+      "EPI_TYPE",
+      "SYM_CODE",
+      "Shape"
+     ],
+     "records": 47,
+     "sample": [
+      "State Environmental Planning Policy (Precincts—Cen",
+      "State Environmental Planning Policy (Precincts—Wes",
+      "State Environmental Planning Policy (Precincts—Reg"
+     ],
+     "name_field": "EPI_NAME"
+    }
+   ],
+   "note": "Environmental Planning Instrument - Environmental Conservation Area",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/planning/protection": {
+   "url": "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/Protection/MapServer",
+   "cc": "AU",
+   "title": "Planning/Protection",
+   "publisher": "NSW Department of Planning, Housing and Infrastructure",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-01",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 9,
+     "name": "Scenic Protection Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 780,
+     "sample": [
+      "Mosman Local Environmental Plan 2012",
+      "Shoalhaven Local Environmental Plan 2014",
+      "Shoalhaven Local Environmental Plan 2014"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 3,
+     "name": "Drinking Water Catchment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 117,
+     "sample": [
+      "Tweed Local Environmental Plan 2014",
+      "Ballina Local Environmental Plan 2012",
+      "Singleton Local Environmental Plan 2013"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 4,
+     "name": "Groundwater Vulnerability",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 3415,
+     "sample": [
+      "Forbes Local Environmental Plan 2013",
+      "Forbes Local Environmental Plan 2013",
+      "Forbes Local Environmental Plan 2013"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 5,
+     "name": "Mineral and Resource Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "LEGIS_REF_CLAUSE",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 92,
+     "sample": [
+      "Wingecarribee Local Environmental Plan 2010",
+      "Wingecarribee Local Environmental Plan 2010",
+      "Wingecarribee Local Environmental Plan 2010"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 6,
+     "name": "Obstacle Limitation Surface",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MINIMUM_HEIGHT",
+      "MAXIMUM_HEIGHT",
+      "COMMENTS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 1006,
+     "sample": [
+      "Berrigan Local Environmental Plan 2013",
+      "Berrigan Local Environmental Plan 2013",
+      "Orange Local Environmental Plan 2011"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 7,
+     "name": "Riparian Lands and Watercourses",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 95501,
+     "sample": [
+      "Kiama Local Environmental Plan 2011",
+      "Greater Hume Local Environmental Plan 2012",
+      "Greater Hume Local Environmental Plan 2012"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 8,
+     "name": "Salinity",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 6578,
+     "sample": [
+      "Narrandera Local Environmental Plan 2013",
+      "Narrandera Local Environmental Plan 2013",
+      "Narrandera Local Environmental Plan 2013"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 10,
+     "name": "Terrestrial Biodiversity",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 431372,
+     "sample": [
+      "Bega Valley Local Environmental Plan 2013",
+      "Bega Valley Local Environmental Plan 2013",
+      "Bega Valley Local Environmental Plan 2013"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 11,
+     "name": "Wetlands",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 14473,
+     "sample": [
+      "Richmond Valley Local Environmental Plan 2012",
+      "Richmond Valley Local Environmental Plan 2012",
+      "Richmond Valley Local Environmental Plan 2012"
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 12,
+     "name": "Environmentally Sensitive Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "LGA_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 1134,
+     "sample": [
+      "Muswellbrook Local Environmental Plan 2009",
+      "Muswellbrook Local Environmental Plan 2009",
+      "Muswellbrook Local Environmental Plan 2009"
+     ],
+     "name_field": "EPI_NAME"
+    }
+   ],
+   "note": "Environmental Planning Instrument - Scenic Protection",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/planning/sepp_biodiversity_and_conservation_2021": {
+   "url": "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/SEPP_Biodiversity_and_Conservation_2021/MapServer",
+   "cc": "AU",
+   "title": "Planning/SEPP_Biodiversity_and_Conservation_2021",
+   "publisher": "NSW Department of Planning, Housing and Infrastructure",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-01",
+   "found": "2026-11-06",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 12,
+     "name": "Strategic Conservation Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 291,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 1,
+     "name": "Land Application",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_TYPE",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 3,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 2,
+     "name": "Foreshores and Waterways Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 1,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 3,
+     "name": "Hawkesbury-Nepean Catchment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "LABEL",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 11,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 4,
+     "name": "Sydney Harbour Heritage",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "LABEL",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 145,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 5,
+     "name": "Georges River Catchment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 1,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 6,
+     "name": "Hawkesbury-Nepean Riverine Scenic Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 20,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 7,
+     "name": "Special Purposes (Commercial Marinas and Boat Building and Repair Faci",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LABEL",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 3,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 8,
+     "name": "Strategic Harbour Foreshore Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LABEL",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 34,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 9,
+     "name": "Sydney Harbour Catchment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 1,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 10,
+     "name": "Rocky Foreshores and Significant Seagrasses",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "AMENDMENT",
+      "MAP_NAME",
+      "LAY_CLASS",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 387,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    },
+    {
+     "id": 11,
+     "name": "Foreshores and Waterways Area - Zone",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "EPI_NAME",
+      "AMENDMENT",
+      "LAY_CLASS",
+      "SYM_CODE",
+      "PUBLISHED_DATE",
+      "COMMENCED_DATE",
+      "CURRENCY_DATE",
+      "EPI_TYPE",
+      "SHAPE"
+     ],
+     "records": 121,
+     "sample": [
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity ",
+      "State Environmental Planning Policy (Biodiversity "
+     ],
+     "name_field": "EPI_NAME"
+    }
+   ],
+   "note": "State Environmental Planning Policy (Biodiversity & Conservation) 2021",
    "grade": 6,
    "band": "A"
   },
@@ -268,6 +1184,60 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Australian Marine Parks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "ZONENAME",
+      "ZONEIUCN",
+      "POLYGONID",
+      "NATLEGEND",
+      "AREA_KM2",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 216,
+     "sample": [
+      "South-west",
+      "South-west",
+      "Temperate East"
+     ],
+     "name_field": "NETNAME"
+    },
+    {
+     "id": 0,
+     "name": "Australian Marine Parks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "ZONENAME",
+      "ZONEIUCN",
+      "POLYGONID",
+      "NATLEGEND",
+      "AREA_KM2",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 216,
+     "sample": [
+      "South-west",
+      "South-west",
+      "Temperate East"
+     ],
+     "name_field": "NETNAME"
+    },
     {
      "id": 0,
      "name": "Australian Marine Parks",
@@ -361,6 +1331,28 @@
       "North-west"
      ],
      "name_field": "NETNAME"
+    },
+    {
+     "id": 0,
+     "name": "Australian_Marine_Parks_Outer_Boundary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 61,
+     "sample": [
+      "South-east",
+      "North",
+      "North-west"
+     ],
+     "name_field": "NETNAME"
     }
    ],
    "note": "Australian Marine Parks - outer boundaries",
@@ -380,6 +1372,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Indigenous Protected Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "NAME",
+      "TYPE",
+      "STATE",
+      "ENVIRON",
+      "AUTHORITY",
+      "GAZ_DATE",
+      "COMMENTS",
+      "OBJECTID",
+      "GIS_AREA",
+      "Shape__Area",
+      "Shape__Length",
+      "STATUS",
+      "IUCN_CODE",
+      "LATEST_GAZ",
+      "SOURCE",
+      "CP_APPROVED",
+      "LONGITUDE",
+      "LATITUDE",
+      "IPA_ID_SORT",
+      "IPA_ID"
+     ],
+     "records": 120,
+     "sample": [
+      "Angkum",
+      "Anindilyakwa",
+      "Anindilyakwa"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "Indigenous Protected Areas",
@@ -457,6 +1485,37 @@
       "METADATA_URL",
       "WETLANDSDB_URL"
      ],
+     "records": 121,
+     "sample": [
+      "Pitt Water-Orielton Lagoon",
+      "Kerang Wetlands",
+      "Lavinia"
+     ],
+     "name_field": "RAMSAR_NAME"
+    },
+    {
+     "id": 0,
+     "name": "Ramsar_Wetlands",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "REFCODE",
+      "STATE",
+      "AREA_HA",
+      "TOTAL_SITE_AREA_HA",
+      "DESIGNATION_DATE",
+      "SOURCE",
+      "Shape__Area",
+      "Shape__Length",
+      "RAMSAR_NAME",
+      "WETLAND_NAME",
+      "JURISDICTION",
+      "GAZETTED_AREA_HA",
+      "METADATA_URL",
+      "WETLANDSDB_URL"
+     ],
      "records": 120,
      "sample": [
       "Pitt Water-Orielton Lagoon",
@@ -484,6 +1543,69 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "World_Heritage_Areas_Australia",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PLACE_ID",
+      "FILE_",
+      "NAME",
+      "STATUS",
+      "IUCN_MGT",
+      "BIOGEOPROV",
+      "NATURAL",
+      "CULTURAL",
+      "STATE",
+      "HECTARES",
+      "ADDRESS",
+      "INSCRIBED",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 49,
+     "sample": [
+      "Australian Convict Sites (Brickendon - Woolmers Bu",
+      "Australian Convict Sites (Brickendon - Woolmers)",
+      "Australian Convict Sites (Old Government House and"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "World_Heritage_Areas_Australia",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "PLACE_ID",
+      "FILE_",
+      "NAME",
+      "STATUS",
+      "IUCN_MGT",
+      "BIOGEOPROV",
+      "NATURAL",
+      "CULTURAL",
+      "STATE",
+      "HECTARES",
+      "ADDRESS",
+      "INSCRIBED",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 49,
+     "sample": [
+      "Australian Convict Sites (Brickendon - Woolmers Bu",
+      "Australian Convict Sites (Brickendon - Woolmers)",
+      "Australian Convict Sites (Old Government House and"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "World_Heritage_Areas_Australia",
@@ -9185,6 +10307,60 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "https://portal.data.nsw.gov.au/arcgis/rest/services/hosted/specialandcontrolled": {
+   "url": "https://portal.data.nsw.gov.au/arcgis/rest/services/Hosted/SpecialAndControlled/FeatureServer",
+   "cc": "AU",
+   "title": "Hosted/SpecialAndControlled",
+   "publisher": "Spatial Services (DCS)",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "License Not Specified",
+   "date": "2026-05-14",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "SpecialAndControlledAreas_WNSW",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "created",
+      "modifiedlast",
+      "modifiedby",
+      "schedule",
+      "hectares",
+      "class",
+      "label",
+      "legislation",
+      "legislationplan",
+      "legislationmapnumber",
+      "status",
+      "enddate",
+      "name",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "globalid",
+      "SHAPE__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "Special Area (Blackheath) S1",
+      "Special Area (Fitzroy Falls) S2",
+      "Special Area (Katoomba) S1"
+     ],
+     "name_field": "label"
+    }
+   ],
+   "note": "Special and Controlled Areas",
+   "grade": 4,
+   "band": "B"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/indigenous_land_use_agreements": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Indigenous_Land_Use_Agreements/FeatureServer",
    "cc": "AU",
@@ -9993,6 +11169,62 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/mineral_exploration_licences__mt2_": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Mineral_exploration_licences__mt2_/FeatureServer",
+   "cc": "AU",
+   "title": "Mineral_exploration_licences__mt2_",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-11-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Mineral exploration licences (mt2)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "GmlID",
+      "tas_id",
+      "title",
+      "holder",
+      "company",
+      "grant_date",
+      "expiry_dat",
+      "last_renew",
+      "groups",
+      "minerals",
+      "act_year",
+      "title_code",
+      "title_no",
+      "resource",
+      "title_area",
+      "operation",
+      "location_d",
+      "Shape_Leng",
+      "Shape__Area"
+     ],
+     "records": 2292,
+     "sample": [
+      "PL(MP)L1043",
+      "PLL1310",
+      "MPL334"
+     ],
+     "name_field": "title"
+    }
+   ],
+   "note": "Mineral exploration licences _mt2_",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/new_rez_boundaries": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NEW_REZ_Boundaries/FeatureServer",
    "cc": "AU",
@@ -10097,6 +11329,62 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_local_govenrment_area": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Local_Govenrment_Area/FeatureServer",
+   "cc": "AU",
+   "title": "NSW_Local_Govenrment_Area",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-09-17",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NSW_Local_Govenrment_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "CADID",
+      "CREATEDATE",
+      "MODIFIEDDA",
+      "LGANAME",
+      "COUNCILNAM",
+      "ABSCODE",
+      "LTOCODE",
+      "VGCODE",
+      "WBCODE",
+      "STARTDATE",
+      "ENDDATE",
+      "LASTUPDATE",
+      "PACKETID",
+      "ISPROCESSE",
+      "RECORDSTAT",
+      "Area_H",
+      "SHAPE_STAr",
+      "SHAPE_STLe",
+      "Shape__Area"
+     ],
+     "records": 132,
+     "sample": [
+      "BELLINGEN",
+      "BLAYNEY",
+      "BREWARRINA"
+     ],
+     "name_field": "LGANAME"
+    }
+   ],
+   "note": "NSW_Local_Govenrment_Area",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_pe_wind_pockets": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_PE_Wind_Pockets/FeatureServer",
    "cc": "AU",
@@ -10143,6 +11431,116 @@
     }
    ],
    "note": "NSW_PE_Wind_Pockets",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_suitable_land_sites_v1": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Suitable_Land_Sites_V1/FeatureServer",
+   "cc": "AU",
+   "title": "NSW_Suitable_Land_Sites_V1",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-03-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 5,
+     "name": "NSW_Suitable_Land_Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Area",
+      "lotnumber",
+      "planoid",
+      "plannumber",
+      "planlabel",
+      "itstitlestatus",
+      "itslotid",
+      "landnumber",
+      "propertynumber",
+      "housenumber",
+      "streetname",
+      "locality",
+      "postcode",
+      "Temp_Id",
+      "Batch",
+      "Location",
+      "Shape__Area"
+     ],
+     "records": 800,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "NSW_Suitable_Land_Sites_V1",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nt_land_prospect_v1": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Land_Prospect_V1/FeatureServer",
+   "cc": "AU",
+   "title": "NT_Land_Prospect_V1",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-08-04",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 460,
+     "name": "NT_Land_Prospect_V1",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "temp_Id",
+      "Id",
+      "Name",
+      "Lot",
+      "Plan_",
+      "Lot_Plan",
+      "Area",
+      "Address",
+      "Title_Ref",
+      "Site_Name",
+      "Location",
+      "Remarks",
+      "GlobalID",
+      "TargetSite",
+      "Title_Ref_Num",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 163,
+     "sample": [
+      " Excess Pty. Ltd",
+      "None",
+      "None"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "NT_Land_Prospect_V1",
    "licence_note": "licence unknown: chat 8 asks",
    "grade": 4,
    "band": "C",
@@ -12566,6 +13964,100 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/vic_land_prospect_for_bess": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/VIC_Land_Prospect_for_BESS/FeatureServer",
+   "cc": "AU",
+   "title": "VIC_Land_Prospect_for_BESS",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-09-11",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 532,
+     "name": "VIC_Land_Prospect_for_BESS",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Com_Name",
+      "Temp_Id",
+      "Id",
+      "Name",
+      "Address",
+      "Lot",
+      "Plan_",
+      "Lot_Plan",
+      "Ref",
+      "Area",
+      "Remarks",
+      "Shape_Leng",
+      "Location",
+      "Cont_Info",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 554,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "Com_Name"
+    }
+   ],
+   "note": "VIC_Land_Prospect_for_BESS",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services.arcgis.com/1g2eogf80chc3y1o/arcgis/rest/services/victorian_irrigation_district": {
+   "url": "https://services.arcgis.com/1G2EoGF80ChC3Y1o/arcgis/rest/services/Victorian_Irrigation_District/FeatureServer",
+   "cc": "AU",
+   "title": "Victorian_Irrigation_District",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-04-16",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Victorian_Irrigation_District",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "WTRAUTHRTY",
+      "DSTRCTNAME",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 24,
+     "sample": [
+      "Merbein",
+      "Rochester",
+      "Loddon Valley"
+     ],
+     "name_field": "DSTRCTNAME"
+    }
+   ],
+   "note": "Victorian Declared Irrigation Districts",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/wa_suitable_land_suites_v1": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Suitable_Land_Suites_V1/FeatureServer",
    "cc": "AU",
@@ -12757,6 +14249,43 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/boro_dwellings_1_5km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boro_Dwellings_1_5km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Boro_Dwellings_1_5km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-04-26",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Boro_Dwellings_1.5km_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "osm_id",
+      "Area",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 174
+    }
+   ],
+   "note": "Boro_Dwellings_1_5km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/broom_hill_high_potential_area": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Broom_Hill_High_Potential_Area/FeatureServer",
    "cc": "AU",
@@ -12828,6 +14357,113 @@
     }
    ],
    "note": "Broom_Hill_Med_Potential_Area",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/coastal_water_area_buffer_25km": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastal_Water_Area_Buffer_25km/FeatureServer",
+   "cc": "AU",
+   "title": "Coastal_Water_Area_Buffer_25km",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-02-29",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coastal_Water_Area_Buffer_25km",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "name",
+      "objnam",
+      "mrn",
+      "catlim",
+      "nation",
+      "phcs",
+      "legsou",
+      "ip_owner",
+      "licence",
+      "disclaimer",
+      "comment_",
+      "frli_ref",
+      "date_",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Coastal Waters (State Powers) Act 1980 - AMB2020 -",
+      "Coastal Waters (State Powers) Act 1980 - AMB2020 -",
+      "Coastal Waters (State Powers) Act 1980 - AMB2020 -"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "Coastal_Water_Area_Buffer_25km",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/coastal_water_area_buffer_50km": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastal_Water_Area_Buffer_50km/FeatureServer",
+   "cc": "AU",
+   "title": "Coastal_Water_Area_Buffer_50km",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-02-28",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coastal_Water_Area_Buffer_50km",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L1CW_1970_1980_Areas",
+      "name",
+      "objnam",
+      "mrn",
+      "catlim",
+      "nation",
+      "phcs",
+      "legsou",
+      "ip_owner",
+      "licence",
+      "disclaimer",
+      "comment_",
+      "frli_ref",
+      "date_",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "None"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "Coastal_Water_Area_Buffer_50km",
    "licence_note": "licence unknown: chat 8 asks",
    "grade": 3,
    "band": "C",
@@ -12970,6 +14606,42 @@
     }
    ],
    "note": "Competitor Polygons_AltEnergy",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/dwellings": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Dwellings/FeatureServer",
+   "cc": "AU",
+   "title": "Dwellings",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-11-12",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Dwellings",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Prop_Owner",
+      "Catergory",
+      "Remarks",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 136
+    }
+   ],
+   "note": "Dwellings",
    "licence_note": "licence unknown: chat 8 asks",
    "grade": 3,
    "band": "C",
@@ -13870,6 +15542,56 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/wa_borderdale_dwellings_2km_buffer": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Borderdale_Dwellings_2km_Buffer/FeatureServer",
+   "cc": "AU",
+   "title": "WA_Borderdale_Dwellings_2km_Buffer",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-07-06",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 742,
+     "name": "WA_Borderdale_2km_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreationDate",
+      "Creator",
+      "EditDate",
+      "Editor",
+      "F_date",
+      "property_owner",
+      "category",
+      "remarks",
+      "Site_Name",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "Kojonup, WA",
+      "Kojonup, WA",
+      "None"
+     ],
+     "name_field": "Site_Name"
+    }
+   ],
+   "note": "WA_Borderdale_Dwellings_2km_Buffer",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/wa_vortex_wind_resource": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Vortex_Wind_Resource/FeatureServer",
    "cc": "AU",
@@ -14060,6 +15782,617 @@
    "band": "B",
    "known_good": true
   },
+  "https://spatialportalarcgis.dpie.nsw.gov.au/sarcgis/rest/services/water/regional_water_strategy_areas": {
+   "url": "https://spatialportalarcgis.dpie.nsw.gov.au/sarcgis/rest/services/Water/Regional_Water_Strategy_Areas/MapServer",
+   "cc": "AU",
+   "title": "Water/Regional_Water_Strategy_Areas",
+   "publisher": "Spatial Services (DCS)",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "License Not Specified",
+   "date": "2026-11-05",
+   "found": "2026-11-06",
+   "gaps": [
+    "area"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Regional Water Strategy Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "RWSNAME",
+      "Area_km_sq",
+      "Shape"
+     ],
+     "records": 14,
+     "sample": [
+      "North Coast",
+      "Far North Coast",
+      "Greater Sydney"
+     ],
+     "name_field": "RWSNAME"
+    }
+   ],
+   "note": "Regional Water Strategy Areas",
+   "grade": 3,
+   "band": "C",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
+  "dl:e9aba11e-65ab-4e4f-b138-51d6b9d2f707": {
+   "url": "https://data.nsw.gov.au/data/dataset/aberbaldie-nature-reserve-vegetation-2005-vis_id-4704",
+   "cc": "AU",
+   "title": "Aberbaldie Nature Reserve Vegetation 2005 VIS_ID 4704",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:3d267625-5979-4358-a071-4e9c81cc2e9a": {
+   "url": "https://data.nsw.gov.au/data/dataset/adelyne-state-conservation-area-vegetation-map-and-cobbora-sca-vegetation-map-update-vis_id-4476",
+   "cc": "AU",
+   "title": "Adelyne State Conservation Area (SCA) vegetation map and Cobbora SCA vegetation map update",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:beef9a28-c89d-41f9-af31-e1573696f807": {
+   "url": "https://data.nsw.gov.au/data/dataset/arakoola-nature-reserve-vegetation-1999-vis_id-4705",
+   "cc": "AU",
+   "title": "Arakoola Nature Reserve Vegetation 1999 VIS_ID 4705",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:de1bbe9a-1351-4417-846b-4835d76619f1": {
+   "url": "https://data.nsw.gov.au/data/dataset/barayamal-national-park-vegetation-2008-vis_id-4708",
+   "cc": "AU",
+   "title": "Barayamal National Park Vegetation 2008 VIS_ID 4708",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:f07c4265-110a-45c4-a119-4e3b42fdf5e0": {
+   "url": "https://data.nsw.gov.au/data/dataset/berrico-nature-reserve-vegetation-2002-vis_id-589-61115",
+   "cc": "AU",
+   "title": "Berrico Nature Reserve Vegetation 2002. VIS_ID 589.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:8736eced-f4d4-4335-8854-254291dfe34b": {
+   "url": "https://data.nsw.gov.au/data/dataset/billinudgel-nature-reserve-vegetation-1998-vis_id-93-caf55",
+   "cc": "AU",
+   "title": "Billinudgel Nature Reserve Vegetation 1998. VIS_ID 93.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:4eb2105b-c26e-43ba-9bc7-ecf36d0c9c2b": {
+   "url": "https://data.nsw.gov.au/data/dataset/bluff-river-nature-reserve-vegetation-vis_id-4714",
+   "cc": "AU",
+   "title": "Bluff River Nature Reserve Vegetation VIS_ID 4714",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:22518777-0031-4eb9-afa4-5f1aba146552": {
+   "url": "https://data.nsw.gov.au/data/dataset/boonanghi-nature-reserve-vegetation-2002-vis_id-138",
+   "cc": "AU",
+   "title": "Boonanghi Nature Reserve Vegetation 2002. VIS_ID138.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:52de5060-3322-404c-a5b4-9126f66e22d9": {
+   "url": "https://data.nsw.gov.au/data/dataset/booroolong-nature-reserve-vegetation-2014-vis_id-4718",
+   "cc": "AU",
+   "title": "Booroolong Nature Reserve Vegetation 2014 VIS_ID 4718",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:d87862e9-2ccf-4e60-9564-16024580b8ba": {
+   "url": "https://data.nsw.gov.au/data/dataset/bornhardtia-voluntary-conservation-area-vegetation-2002-vis_id-4719",
+   "cc": "AU",
+   "title": "Bornhardtia Voluntary Conservation Area Vegetation 2002 VIS_ID 4719",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:2677c343-71c5-46ff-8b33-d59270cd6074": {
+   "url": "https://data.nsw.gov.au/data/dataset/brindingabba-national-park-vegetation-vis-id-5125",
+   "cc": "AU",
+   "title": "Brindingabba National Park Vegetation 2023.  VIS ID 5125",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:174f11c5-1bce-4efe-84fb-e4a4bddd112d": {
+   "url": "https://data.nsw.gov.au/data/dataset/bullala-national-park-vegetation-mapping-vis_id-3998a543a",
+   "cc": "AU",
+   "title": "Bullala National Park Vegetation Mapping. VIS_ID 3998",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:4461f412-c7b6-4638-8b7a-9024b7112bfc": {
+   "url": "https://data.nsw.gov.au/data/dataset/bezzants-lease-vegetation-2011-vis_id-4711",
+   "cc": "AU",
+   "title": "Butterleaf National Park and Bezzants Lease Vegetation 2011 VIS_ID 4711",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:797c281b-6f6f-4cfa-b322-723508b55fb4": {
+   "url": "https://data.nsw.gov.au/data/dataset/butterleaf-np-sca-vegetation-2011-vis_id-4721",
+   "cc": "AU",
+   "title": "Butterleaf National Park and State Conservation Area Vegetation 2011 VIS_ID 4721",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5329ef2e-8969-4f35-8e1e-b56af974a9b5": {
+   "url": "https://data.nsw.gov.au/data/dataset/cataract-national-park-state-conservation-area-2006-vis_id-4722",
+   "cc": "AU",
+   "title": "Cataract National Park & State Conservation Area 2006 VIS_ID 4722",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:c6f9436a-7c87-426d-bf3f-e861a88cd959": {
+   "url": "https://data.nsw.gov.au/data/dataset/chaelundi-national-park-vegetation-1999-vis_id-187-e6704",
+   "cc": "AU",
+   "title": "Chaelundi National Park Vegetation 1999. VIS_ID 187.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6e9905de-d6ac-4710-9d79-0cb61f5db1de": {
+   "url": "https://data.nsw.gov.au/data/dataset/columbey-national-park-state-conservation-area-vegetation-2009-vis_id-3824",
+   "cc": "AU",
+   "title": "Columbey National Park & State Conservation Area Vegetation 2009. VIS_ID 3824",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:f7a65e70-fba7-4fc9-80c9-c555d1243322": {
+   "url": "https://data.nsw.gov.au/data/dataset/conimbla-np-vegetation-1997vis_id-8643eb0c",
+   "cc": "AU",
+   "title": "Conimbla National Park Vegetation 1997. VIS_ID 864",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:52b46435-5130-47d5-8f22-b1c98f82c71e": {
+   "url": "https://data.nsw.gov.au/data/dataset/couradda-national-park-vegetation-mapping-vis_id-39901270f",
+   "cc": "AU",
+   "title": "Couradda National Park Vegetation Mapping. VIS_ID 3990",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:610a2360-2c78-4769-86ec-ded4eb313337": {
+   "url": "https://data.nsw.gov.au/data/dataset/cudgen-nature-reserve-vegetation-1998-vis_id-229-df8a1",
+   "cc": "AU",
+   "title": "Cudgen Nature Reserve Vegetation 1998. VIS_ID 229.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5ff170d4-e994-4e0a-9e31-51dd18599b72": {
+   "url": "https://data.nsw.gov.au/data/dataset/currys-gap-state-conservation-area-vegetation-2002-vis_id-4723",
+   "cc": "AU",
+   "title": "Currys Gap State Conservation Area Vegetation 2002 VIS_ID 4723",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:16bc6479-6b68-4620-8539-84901a75ab4b": {
+   "url": "https://data.nsw.gov.au/data/dataset/demon-nature-reserve-vegetation-1998-vis_id-4724",
+   "cc": "AU",
+   "title": "Demon Nature Reserve Vegetation 1998 VIS_ID 4724",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:8cecddee-19d6-4c05-83ec-141b98688146": {
+   "url": "https://data.nsw.gov.au/data/dataset/donnybrook-nature-reserve-vegetation-2012-vis_id-4726",
+   "cc": "AU",
+   "title": "Donnybrook Nature Reserve Vegetation 2012 VIS_ID 4726",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5d4aad0e-33ff-4049-ba47-6765e489fd86": {
+   "url": "https://data.nsw.gov.au/data/dataset/dry-rainforest-kaputar-deriah-horton-falls-2019-vis_id-5112",
+   "cc": "AU",
+   "title": "Dry Rainforest of Mt Kaputar National Park, Deriah Aboriginal Area and Horton Falls Nation",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:d9a320b1-59d7-49a5-951f-860d3336411e": {
+   "url": "https://data.qld.gov.au/dataset/dugong-protection-areas",
+   "cc": "AU",
+   "title": "Dugong protection areas",
+   "publisher": "Primary Industries",
+   "catalog": "catalog data.qld.gov.au",
+   "licence": "Creative Commons Attribution 3.0",
+   "date": "2022-06-21",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP, TAB, ",
+    "xml"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:04e2aed4-5f38-4a4f-9930-03669f7a499c": {
+   "url": "https://data.nsw.gov.au/data/dataset/duval-nature-reserve-vegetation-2014-vis_id-4728",
+   "cc": "AU",
+   "title": "Duval Nature Reserve Vegetation 2014 VIS_ID 4728",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/enhar_regen_5mw_search_radius": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Enhar_ReGen_5MW_search_radius/FeatureServer",
    "cc": "AU",
@@ -14095,6 +16428,777 @@
    "grade": 2,
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "dl:d5ded4ac-e92c-4644-9a54-3c6d7bbe78f6": {
+   "url": "https://data.qld.gov.au/dataset/environmental-protection-water-policy-queensland-series",
+   "cc": "AU",
+   "title": "Environmental Protection Water Policy - Queensland series",
+   "publisher": "Environment, Tourism, Science and Innovation",
+   "catalog": "catalog data.qld.gov.au",
+   "licence": "Creative Commons Attribution 4.0",
+   "date": "2023-02-20",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP, TAB, ",
+    "xml"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:9cb16129-a281-4c62-bc55-a93788a75411": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-map-of-eugowra-nature-reserve-vis_id-880d326a",
+   "cc": "AU",
+   "title": "Eugowra Nature Reserve Vegetation 2000. VIS_ID 880",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:9af0275c-9b53-4700-98d4-c92e4186d2ff": {
+   "url": "https://data.qld.gov.au/dataset/forest-areas-queensland-series",
+   "cc": "AU",
+   "title": "Forest areas – Queensland series",
+   "publisher": "Primary Industries",
+   "catalog": "catalog data.qld.gov.au",
+   "licence": "Creative Commons Attribution 4.0",
+   "date": "2026-10-23",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP, TAB, ",
+    "XML"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:f591d9a2-bc56-467b-93fe-35cae4d18683": {
+   "url": "https://data.nsw.gov.au/data/dataset/foundation-for-conservation-in-the-riverina-bioregion-vis_id-98450952",
+   "cc": "AU",
+   "title": "Foundation for Conservation in the Riverina Bioregion  VIS_ID 984",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:c20fd2fd-d756-4e17-be3e-103108f2ed10": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-survey-of-mullion-range-sra-and-wambool-freemantle-girralang-and-eugowra-nature-re6a5d5",
+   "cc": "AU",
+   "title": "Freemantle Nature Reserve Vegetation 2000. VIS_ID 888",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:1e100da6-33f4-4c5c-9eb0-bc1d53192c9e": {
+   "url": "https://data.nsw.gov.au/data/dataset/garrawilla-national-park-vegetation-mapping-vis_id-39910df64",
+   "cc": "AU",
+   "title": "Garrawilla National Park Vegetation Mapping. VIS_ID 3991",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:07c0dc33-8fc3-4f00-aa6f-060baba63bda": {
+   "url": "https://data.nsw.gov.au/data/dataset/gibraltar-nature-reserve-vegetation-2002-vis_id-4730",
+   "cc": "AU",
+   "title": "Gibraltar Nature Reserve Vegetation 2002 VIS_ID 4730",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:903a2ce3-7aa8-478d-98fd-08aa7d3411ad": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-survey-of-mullion-range-sra-and-wambool-freemantle-girralang-and-eugowra-nature-re529b3",
+   "cc": "AU",
+   "title": "Girralang Nature Reserve Vegetation 2000. VIS_ID 893",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:43c2daf9-7738-4b59-ad96-3118e3dd3507": {
+   "url": "https://data.nsw.gov.au/data/dataset/gundabooka-national-park-and-state-conservation-area-vegetation-2021-vis_id",
+   "cc": "AU",
+   "title": "Gundabooka National Park and State Conservation Area Vegetation 2021 VIS_ID 5108",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:136bf96d-9141-462e-b556-094158b8d7e2": {
+   "url": "https://data.nsw.gov.au/data/dataset/gunyerwarildi-national-park-vegetation-mapping-vis_id-3999b3da4",
+   "cc": "AU",
+   "title": "Gunyerwarildi National Park Vegetation Mapping. VIS_ID 3999",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:b7bc6eca-35c4-46e3-97bc-c77af47ddc02": {
+   "url": "https://data.nsw.gov.au/data/dataset/gwydir-river-national-park-state-conservation-area-vegetation-2009-2012-vis_id-4806",
+   "cc": "AU",
+   "title": "Gwydir River National Park & State Conservation Area Vegetation 2009 - 2012 VIS_ID 4806",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:09a45018-eb6d-4ee0-9f4f-ac40a5016d69": {
+   "url": "https://data.nsw.gov.au/data/dataset/high-conservation-value-rivers",
+   "cc": "AU",
+   "title": "High Conservation Value Rivers",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:aff1302b-0648-471b-b7ed-b858a915140c": {
+   "url": "https://data.nsw.gov.au/data/dataset/imbota-nature-reserve-vegetation-2003-vis_id-4739",
+   "cc": "AU",
+   "title": "Imbota Nature Reserve Vegetation 2003 VIS_ID 4739",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:a1c901f8-df4e-4b26-abb5-62d7e3f1a532": {
+   "url": "https://data.nsw.gov.au/data/dataset/ironbark-nature-reserve-vegetation-2002-vis_id-4740",
+   "cc": "AU",
+   "title": "Ironbark Nature Reserve Vegetation 2002 VIS_ID 4740",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:487029da-1322-43cb-91aa-472bd27338e5": {
+   "url": "https://data.nsw.gov.au/data/dataset/khappinghat-nature-reserve-vegetation-2000-vis_id-379ad02e",
+   "cc": "AU",
+   "title": "Khappinghat Nature Reserve Vegetation 2000. VIS_ID 379",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:be5f5f2f-20f2-4677-ab83-1bfe28d72493": {
+   "url": "https://data.nsw.gov.au/data/dataset/khatambuhl-nature-reserve-vegetation-2002-vis_id-380b56ce",
+   "cc": "AU",
+   "title": "Khatambuhl Nature Reserve Vegetation 2002. VIS_ID 380",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:725b32a5-e6b4-4260-9bb8-95c4d5495cf3": {
+   "url": "https://data.nsw.gov.au/data/dataset/killabakh-nature-reserve-vegetation-2003-vis_id-381b58fa",
+   "cc": "AU",
+   "title": "Killabakh Nature Reserve Vegetation 2003. VIS_ID 381",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6217744c-83db-415c-b92b-7858bf6553aa": {
+   "url": "https://data.nsw.gov.au/data/dataset/kindee-creek-state-conservation-area-vegetation-2022-vis-id-5130",
+   "cc": "AU",
+   "title": "Kindee Creek State Conservation Area Vegetation. VIS ID 5130.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:ba61ea30-b6f9-49d6-b486-c20664214627": {
+   "url": "https://data.nsw.gov.au/data/dataset/kwiambal-national-park-vegetation-2008-vis_id-4742",
+   "cc": "AU",
+   "title": "Kwiambal National Park Vegetation 2008 VIS_ID 4742",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:85e6a5d1-0459-4829-9edb-992865280300": {
+   "url": "https://data.nsw.gov.au/data/dataset/lachlan-valley-national-park-and-state-conservation-area-kalyarrvegetation-map-2013-vis_id-74e90",
+   "cc": "AU",
+   "title": "Lachlan Valley National Park and State Conservation Area (Kalyarr)vegetation map, 2013. VI",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:8f881921-dd47-423b-a28b-99c374cd3a6b": {
+   "url": "https://data.nsw.gov.au/data/dataset/macquarie-nature-reserve-vegetation-1995-vis_id-4413eeda",
+   "cc": "AU",
+   "title": "Macquarie Nature Reserve Vegetation 1995. VIS_ID 441",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:7c06fc16-b889-4e9d-aac9-62e1fde3932a": {
+   "url": "https://data.nsw.gov.au/data/dataset/maria-national-park-vegetation-2001-vis_id-456d901e",
+   "cc": "AU",
+   "title": "Maria National Park Vegetation 2001. VIS_ID 456",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:a3f13dc9-1d57-40e7-aa5f-0fca94b75b71": {
+   "url": "https://data.nsw.gov.au/data/dataset/moema-national-park-vegetation-mapping-vis_id-3993c4f69",
+   "cc": "AU",
+   "title": "Moema National Park Vegetation Mapping. VIS_ID 3993",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:de3be3f1-1271-464d-b121-67ccfbc8ccf7": {
+   "url": "https://data.nsw.gov.au/data/dataset/mt-kaputar-national-park-vegetation-vis_id-930",
+   "cc": "AU",
+   "title": "Mt Kaputar National Park Vegetation. VIS_ID 930",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nt_trans_line_15km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Trans_Line_15km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "NT_Trans_Line_15km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-08-08",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 525,
+     "name": "NT_Trans_Line_15km_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "NT_Trans_Line_15km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "dl:99c9ffd6-b3a8-4481-8cd3-e820bf2c809b": {
+   "url": "https://data.nsw.gov.au/data/dataset/national-parks-establishment-plan-ecological-modelling-process-report-v2026-1",
+   "cc": "AU",
+   "title": "National Parks Establishment Plan - Ecological Modelling Process Report v2026.1",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-09",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "GEOTIFF",
+    "PDF"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:72afe875-130f-4abf-bdfb-10ffec1d12ff": {
+   "url": "https://data.nsw.gov.au/data/dataset/ngulin-nature-reserve-vegetation-2005-vis_id-4750",
+   "cc": "AU",
+   "title": "Ngulin Nature Reserve Vegetation 2005 VIS_ID 4750",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:391ddeac-9146-4a8b-bf93-9dd354c2905b": {
+   "url": "https://data.nsw.gov.au/data/dataset/nullamanna-national-park-vegetation-2008-vis_id-4751",
+   "cc": "AU",
+   "title": "Nullamanna National Park Vegetation 2008 VIS_ID 4751",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:70462e6e-d4d4-4df4-bd8e-12959641dd15": {
+   "url": "https://data.nsw.gov.au/data/dataset/nymboida_national_park_vegetation2000_4752",
+   "cc": "AU",
+   "title": "Nymboida National Park Vegetation 2000 VIS_ID4752",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:7ae31a6a-5b91-4773-a0af-6a0bfe5ddb3f": {
+   "url": "https://data.nsw.gov.au/data/dataset/oxley-wild-rivers-national-park-and-state-conservation-area-vegetation-map-2014-vis_id-4364",
+   "cc": "AU",
+   "title": "Oxley Wild Rivers National Park & State Conservation Area Vegetation 2014  VIS_ID 4364",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:0b7ae5ae-35ad-494e-b9ce-1df122134cdb": {
+   "url": "https://data.nsw.gov.au/data/dataset/pilliga-west-state-conservation-area-and-national-park-vis_id-4012c7502",
+   "cc": "AU",
+   "title": "Pilliga West State Conservation Area and National Park. VIS_ID 4012",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:93468c63-318e-4d31-b5d9-9cb040e9e794": {
+   "url": "https://data.nsw.gov.au/data/dataset/planchonella-nature-reserves-vegetation-vis_id-397047ede",
+   "cc": "AU",
+   "title": "Planchonella Nature Reserves Vegetation. VIS_ID 3970",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/prospective_project_boundary": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Prospective_Project_Boundary/FeatureServer",
+   "cc": "AU",
+   "title": "Prospective_Project_Boundary",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-11-12",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Prospective Project Boundary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "TargetSite",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4
+    }
+   ],
+   "note": "Prospective_Project_Boundary",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "dl:1f25f95c-ca3b-45c7-8a1e-cb981c385cd0": {
+   "url": "https://data.qld.gov.au/dataset/protected-areas-of-queensland-series",
+   "cc": "AU",
+   "title": "Protected areas of Queensland series",
+   "publisher": "Environment, Tourism, Science and Innovation",
+   "catalog": "catalog data.qld.gov.au",
+   "licence": "Creative Commons Attribution 4.0",
+   "date": "2026-04-12",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP, TAB, ",
+    "xml"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
   },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_urban_centres_and_localities_10km_buff": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Urban_Centres_and_Localities_10km_Buff/FeatureServer",
@@ -14172,6 +17276,138 @@
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
+  "dl:a362fd9d-ebf9-45e6-9909-16571eadad6a": {
+   "url": "https://data.nsw.gov.au/data/dataset/single-national-park-vegetation-2000-vis_id-4755",
+   "cc": "AU",
+   "title": "Single National Park Vegetation 2000 VIS_ID 4755",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:849ba056-5402-4566-b457-9f384c083357": {
+   "url": "https://data.qld.gov.au/dataset/special-wildlife-reserves-queensland",
+   "cc": "AU",
+   "title": "Special wildlife reserves - Queensland",
+   "publisher": "Environment, Tourism, Science and Innovation",
+   "catalog": "catalog data.qld.gov.au",
+   "licence": "Creative Commons Attribution 4.0",
+   "date": "2024-08-09",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP, TAB, ",
+    "xml"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:7e33d8ca-0218-4ff4-9ca5-f727e1731900": {
+   "url": "https://data.nsw.gov.au/data/dataset/timbarra-national-park-vegetation-2011-vis_id4756",
+   "cc": "AU",
+   "title": "Timbarra National Park Vegetation 2011 VIS_ID 4756",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:4acfe075-e42c-4bdf-8b78-238a6ece49f9": {
+   "url": "https://data.nsw.gov.au/data/dataset/tomaree-national-park-vegetation-1998-vis_id-661613be",
+   "cc": "AU",
+   "title": "Tomaree National Park Vegetation 1998. VIS_ID 661",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:791ca577-2811-4715-b1d0-95076cd34a56": {
+   "url": "https://data.nsw.gov.au/data/dataset/towarri-national-park-vegetation-1999-vis_id-6675d96f",
+   "cc": "AU",
+   "title": "Towarri National Park Vegetation 1999. VIS_ID 667",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:1b0d3fe5-ee86-48cb-93b5-14f9b5aa30d4": {
+   "url": "https://data.nsw.gov.au/data/dataset/towarri-national-park-vegetation-2001-vis_id-6661e7e4",
+   "cc": "AU",
+   "title": "Towarri National Park Vegetation 2001. VIS_ID 666",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/townsites_lgate_10km_buff": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Townsites_LGate_10Km_Buff/FeatureServer",
    "cc": "AU",
@@ -14239,6 +17475,336 @@
    "grade": 2,
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "dl:bfad2ca2-67e7-4243-b2e9-c6c5f9a0d10e": {
+   "url": "https://data.nsw.gov.au/data/dataset/tyagarah-nature-reserve-vegetation-1994-vis_id-675dbcf9",
+   "cc": "AU",
+   "title": "Tyagarah Nature Reserve Vegetation 1994. VIS_ID 675",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-14",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:436af1bb-eab9-4b94-8d2b-76e578026437": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-survey-and-mapping-of-timmallallie-national-park-yarrigan-national-park-and-dandry-g5f1e5",
+   "cc": "AU",
+   "title": "Vegetation Survey and Mapping of Timmallallie National Park Yarrigan National Park and Dan",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:d2d11538-f432-4605-a94d-02de88eec852": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-mapping-of-cape-byron-state-conservation-area-and-arakwal-national-park-vis_id-4385a1408",
+   "cc": "AU",
+   "title": "Vegetation mapping of Cape Byron State Conservation Area and Arakwal National Park, 2013. ",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:dfac41da-7382-4640-b330-05f461c86d51": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-of-warrabah-national-park-vis_id-43778a2d2",
+   "cc": "AU",
+   "title": "Vegetation of Warrabah National Park. VIS_ID 4377",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:d1b8f4fc-1a94-4d90-9717-1649fb1d8be7": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-of-winburndale-nature-reserve-vis_id-1018d17e4",
+   "cc": "AU",
+   "title": "Vegetation of Winburndale Nature Reserve. VIS_ID 1018",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:333cf839-20b9-40e4-a3cf-49a6da50d2f8": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-within-lachlan-valley-state-conservation-area-and-lachlan-valley-regional-park-vis_9d192",
+   "cc": "AU",
+   "title": "Vegetation within Lachlan Valley State Conservation Area and Lachlan Valley Regional Park.",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5d6137ae-e01b-4eee-bee3-7f9caa924e4f": {
+   "url": "https://data.nsw.gov.au/data/dataset/vulnerable-land-protected-riparian73a9e",
+   "cc": "AU",
+   "title": "Vulnerable Lands - Steep or Highly Erodible, Protected Riparian and Special Category",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-01",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:adda2201-5f1e-470a-be72-67098b56f8f9": {
+   "url": "https://data.nsw.gov.au/data/dataset/wallabadah-nature-reserve-vegetation-1999-vis_id-704e4ea9",
+   "cc": "AU",
+   "title": "Wallabadah Nature Reserve Vegetation 1999. VIS_ID 704",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:47ffc7d6-55f4-49af-a6f1-effda87c92fa": {
+   "url": "https://data.nsw.gov.au/data/dataset/wallabadah-nature-reserve-vegetation-2003-vis_id-703368ab",
+   "cc": "AU",
+   "title": "Wallabadah Nature Reserve Vegetation 2003. VIS_ID 703",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:35cb6c2b-0797-4120-bac5-96665300102d": {
+   "url": "https://data.nsw.gov.au/data/dataset/vegetation-survey-of-mullion-range-sra-and-wambool-freemantle-girralang-and-eugowra-nature-re7805e",
+   "cc": "AU",
+   "title": "Wambool Nature Reserve Vegetation 2000. VIS_ID 1011",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:eb9b3e82-24cc-4e76-8e99-b11135c4b8b5": {
+   "url": "https://data.nsw.gov.au/data/dataset/warra-national-park-vegetation-2001-vis_id-4761",
+   "cc": "AU",
+   "title": "Warra National Park Vegetation 2001 VIS_ID 4761",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:4315992e-7048-4780-b201-d0bf972688ff": {
+   "url": "https://data.qld.gov.au/dataset/wetland-protection-series",
+   "cc": "AU",
+   "title": "Wetland protection series",
+   "publisher": "Environment, Tourism, Science and Innovation",
+   "catalog": "catalog data.qld.gov.au",
+   "licence": "Creative Commons Attribution 4.0",
+   "date": "2025-05-27",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP, TAB, ",
+    "xml"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:98d1a289-b049-41e3-9a80-9204060a8308": {
+   "url": "https://data.nsw.gov.au/data/dataset/worimi-conservation-lands-vegetation-2010-vis_id-39036b18e",
+   "cc": "AU",
+   "title": "Worimi Conservation Lands Vegetation 2010. VIS_ID 3903",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:50da57e6-7c34-4b98-8fdf-afa6975062fe": {
+   "url": "https://data.nsw.gov.au/data/dataset/yarriabini-national-park-vegetation-2007-vis_id-7409f7c3",
+   "cc": "AU",
+   "title": "Yarriabini National Park Vegetation 2007. VIS_ID 740",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:70eea23b-2979-4bd2-901e-b488818fe793": {
+   "url": "https://data.nsw.gov.au/data/dataset/yina-nature-reserve-vegetation-2003-vis_id-4763",
+   "cc": "AU",
+   "title": "Yina Nature Reserve Vegetation 2003 VIS_ID 4763",
+   "publisher": "NSW Department of Climate Change, Energy, the Environment and Water",
+   "catalog": "catalog data.nsw.gov.au",
+   "licence": "Creative Commons Attribution",
+   "date": "2026-10-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "PDF",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
   },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/new_england_route": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_England_Route/FeatureServer",
