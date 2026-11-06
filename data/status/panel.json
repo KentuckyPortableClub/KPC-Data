@@ -1,16 +1,16 @@
 {
- "made": "2026-11-05 23:51 UTC",
+ "made": "2026-11-06 02:08 UTC",
  "snap": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "outlines": {
    "US": {
-    "official": 11197,
-    "approximate": 427,
-    "pin": 1483
+    "official": 11181,
+    "approximate": 426,
+    "pin": 1500
    },
    "Canada": {
-    "pin": 1486,
-    "official": 4376,
+    "pin": 1488,
+    "official": 4374,
     "approximate": 39
    },
    "World": {
@@ -1270,10 +1270,10 @@
   },
   "Park-info engine": {
    "areas": "",
-   "last_run": "2026-11-05",
-   "made": "exit 3 2026-11-05 (US-KY,US-AK,US-AL,US-AR,US-AZ,US-CA,US-CO,US-CT,US-DC,US-DE,US-FL,US-GA,US-HI,US-IA,US-ID,US-IL,US-IN,US-KS,US-LA,US-MA,US-MD,US-ME,US-MI,US-MN,US-MO,US-MS,US-MT,US-NC,US-ND,US-NE,US-NH,US-NJ,US-NM,US-NV,US-NY,US-OH,US-OK,US-OR,US-PA,US-RI,US-SC,US-SD,US-TN,US-TX,US-UT,US-VA,US-VT",
+   "last_run": "2026-11-06",
+   "made": "exit 3 2026-11-06 (US-KY,US-AK,US-AL,US-AR,US-AZ,US-CA,US-CO,US-CT,US-DC,US-DE,US-FL,US-GA,US-HI,US-IA,US-ID,US-IL,US-IN,US-KS,US-LA,US-MA,US-MD,US-ME,US-MI,US-MN,US-MO,US-MS,US-MT,US-NC,US-ND,US-NE,US-NH,US-NJ,US-NM,US-NV,US-NY,US-OH,US-OK,US-OR,US-PA,US-RI,US-SC,US-SD,US-TN,US-TX,US-UT,US-VA,US-VT",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41971853106",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42130496176",
    "waiting_on": "chat 11 grades tools-out engine/ per kind"
   },
   "Picture-map tracer (draft)": {
@@ -1422,10 +1422,10 @@
   },
   "key-doctor": {
    "areas": "",
-   "last_run": "2026-11-05",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1055 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-05.md ",
+   "last_run": "2026-11-06",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1040 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-06.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42132263568",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42148270661",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1477,8 +1477,8 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-05",
-   "made": "20 files waiting over 3 days in data/waiting/in/ (e.g. US-MS.json)",
+   "last_run": "2026-11-06",
+   "made": "28 files waiting over 3 days in data/waiting/in/ (e.g. US-NY.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },
