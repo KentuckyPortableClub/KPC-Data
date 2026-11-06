@@ -4,22 +4,27 @@ waiting-room run: every file held in data/waiting/in/ (oldest first, how long, w
 open count, and the approvals not yet used. Chat 11 reads it when Brandon types 'inbox' (README line). No alerts.
   python3 kpc_waiting_today.py   -> data/waiting/today.md. Never fails."""
 import datetime as dt, json, pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import glob_json_any, iter_jsonl_any, load_json_any  # noqa: E402
 
 W = pathlib.Path('data/waiting')
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except (OSError, ValueError): return d
+
+
+def verdict_rows():
+    """One dict per line of verdicts.jsonl (or verdicts.jsonl.gz)."""
+    return list(iter_jsonl_any(W / 'verdicts.jsonl'))
 
 
 def main():
     today = dt.date.today()
     since = load(W / 'held-since.json', {}) or {}
     last = {}
-    for line in open(W / 'verdicts.jsonl', encoding='utf-8') if (W / 'verdicts.jsonl').exists() else []:
-        try: r = json.loads(line)
-        except ValueError: continue
+    for r in verdict_rows():
         if r.get('path'): last[r['path']] = r
     held = []
     for f in (W / 'in').rglob('*') if (W / 'in').exists() else []:
@@ -38,7 +43,8 @@ def main():
          f'## Held files: {len(held)} (US + Canada first, then North America, W1-W10, rest; oldest first inside)', '', '| since | days | file | last check | why |', '|---|---|---|---|---|']
     L += [f"| {s if s != '9999' else '?'} | {d if d is not None else '?'} | {rel} | {vd} | {why.replace('|', '/')} |" for s, rel, d, vd, why in held] or ['| - | - | nothing held | - | - |']
     L += ['', '## Questions waiting for an answer', '', '| file | open | total |', '|---|---|---|']
-    for q in sorted((W / 'questions').glob('*.json')):
+    for q in glob_json_any(str(W / 'questions' / '*.json')):
+        q = pathlib.Path(q)
         d = load(q, {})
         rows = d.get('questions') if isinstance(d, dict) else d
         rows = rows if isinstance(rows, list) else []

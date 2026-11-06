@@ -1332,21 +1332,25 @@ def write_json_atomic(path: str, obj: Any) -> None:
 def load_inputs(files: list[str], in_dir: str) -> list[tuple[str, str, dict]]:
     """-> [(file name, path, parsed)]. Raises BadInput. Files are only ever opened for reading."""
     out = []
+    scripts = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
+    from kpc_json_any import load_json_any
     for f in files:
-        path = f if os.path.isfile(f) else os.path.join(in_dir, f)
-        if not os.path.isfile(path):
+        path = f if os.path.isfile(f) or os.path.isfile(str(f) + '.gz') else os.path.join(in_dir, f)
+        if not os.path.isfile(path) and not os.path.isfile(str(path) + '.gz'):
             raise BadInput(f"input file not found: {f} (also looked in {in_dir})")
         try:
-            with open(path, "rb") as fh:
-                data = json.loads(fh.read().decode("utf-8"))
-        except (ValueError, UnicodeDecodeError) as e:
+            data = load_json_any(path)
+        except (OSError, ValueError, UnicodeDecodeError) as e:
             raise BadInput(f"{f} is not valid JSON: {e}")
         if not isinstance(data, dict) or not isinstance(data.get("questions"), list):
             raise BadInput(f"{f} has no 'questions' list")
         for i, q in enumerate(data["questions"]):
             if not isinstance(q, dict) or not q.get("ref"):
                 raise BadInput(f"{f}: question {i} has no 'ref'")
-        out.append((os.path.basename(path), path, data))
+        name = os.path.basename(path[:-3] if str(path).endswith('.gz') else path)
+        out.append((name, path, data))
     names = [o[0] for o in out]
     if len(set(names)) != len(names):
         raise BadInput("two input files have the same name")

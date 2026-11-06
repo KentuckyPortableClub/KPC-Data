@@ -10,6 +10,8 @@ the first snapshot of the week (Fable's Nov 6 review starts from it):
 Also feeds the control panel page (data/status/panel.json). Notes only. Never fails.
   LINKS=../links python3 kpc_week_numbers.py"""
 import collections, datetime as dt, glob, json, os, pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import glob_json_any, load_json_any  # noqa: E402
 
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 S = pathlib.Path('data/status')
@@ -23,7 +25,7 @@ def _gzload(p):
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -42,7 +44,7 @@ def keys():
 
 def questions():
     out = {}
-    for f in sorted(glob.glob('data/waiting/questions/*.json')):
+    for f in glob_json_any('data/waiting/questions/*.json'):
         d = load(f, {}) or {}
         rows = d.get('questions') if isinstance(d, dict) else d
         rows = rows if isinstance(rows, list) else []

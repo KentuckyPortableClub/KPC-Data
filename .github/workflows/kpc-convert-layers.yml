@@ -1,6 +1,6 @@
 name: KPC map-format converter (WFS / downloads / Socrata / CKAN -> GeoJSON near each pin; leads for the collector)
 # Oct 31 2026 (chat 10; HQ 5:45 PM, Brandon 'let 10 wire in'): the outside coder's converter (.github/scripts/tools/
-# kpc_convert_layers) reads every non-ArcGIS lead (data/intake/leads-oct31.json 'other_layer', US + Canada first) and writes a
+# kpc_convert_layers) reads every non-ArcGIS lead (archive/2026-10/leads-oct31.json 'other_layer', US + Canada first) and writes a
 # small GeoJSON of the records near each pin to branch tools-out (convert/) + report.csv. The layer collector then tests the
 # OK ones (pin inside / named line within 200 m + name tiers) and asks chat 11, like every layer. Decides nothing. Nightly while
 # leads are left, straight through. Never red.

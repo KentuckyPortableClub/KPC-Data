@@ -24,6 +24,7 @@ import json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
 import kpc_tiers as T  # noqa: E402  (Oct 30: SURE / LIKELY / UNLIKELY, learned answers)
+from kpc_json_any import load_json_any, save_json_gz, save_text_gz  # noqa: E402
 
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 OUT = pathlib.Path('data/gis-hunter'); QDIR = pathlib.Path('data/waiting/questions')
@@ -45,7 +46,7 @@ NAME_RX = re.compile(r'(^|_)(unit_?nm|loc_?nm|name|nom|nm|label|title|site|park|
 def notice(m): print('::notice title=GIS hunter::' + str(m).replace('\n', ' ')[:900], flush=True)
 def late(): return time.time() - T0 > LIMIT - 120
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 def words(s): return {w for w in re.findall(r'[a-zà-ÿ0-9]+', str(s or '').lower()) if len(w) > 2 and w not in STOP}
 
@@ -330,12 +331,12 @@ def write_questions(all_R):
     D = {'about': "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same proper name: chat 2 rechecks (G-4) and joins; chat 11 grades a 10% sample. LIKELY = part of the name shared: chat 11 answers YES / NO + checked_by + how. UNLIKELY rows are not asked (evidence in data/gis-hunter/<area>.json).",
          'built': TODAY, 'open': sum(1 for q in qs if not q['answer']), 'sure_open': sum(1 for q in qs if not q['answer'] and q.get('tier') == 'SURE'),
          'likely_open': sum(1 for q in qs if not q['answer'] and q.get('tier') == 'LIKELY'), 'never_reasked': dropped, 'questions': qs}
-    json.dump(D, open(QDIR / 'gis-hunter.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(QDIR / 'gis-hunter.json', D, indent=1, ensure_ascii=False)
     L = ['# GIS hunter questions (tiers, Oct 30)', '', f"{len(qs)} rows, {D['open']} open: SURE {D['sure_open']} (chat 2 rechecks, chat 11 samples 10%), LIKELY {D['likely_open']} (chat 11 grades). {dropped} old NOs never re-asked.", '',
          '| area | tier | park | official record | ~acres | why | answer | links |', '|---|---|---|---|---|---|---|---|']
     for q in sorted(qs, key=lambda q: (q.get('tier') != 'SURE', q['area'])):
         L.append(f"| {q['area']} | {q.get('tier', '?')} | {q['ref']} {q['park'][:40]} | {q['record_name'][:50]} ({q['agency'][:30]}) | {q['acres_approx']:,} | {str(q.get('why', ''))[:70]} | {q['answer'] or 'OPEN'} | [record]({q['record_link']}) · [POTA]({q['pota_link']}) |")
-    (QDIR / 'gis-hunter.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
+    save_text_gz(QDIR / 'gis-hunter.md', '\n'.join(L) + '\n')
 
 
 LEARNED = T.Learned(QDIR / 'gis-hunter.json', QDIR / 'world-finder.json', QDIR / 'key-pieces.json')

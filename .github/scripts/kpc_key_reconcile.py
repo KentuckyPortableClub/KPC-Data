@@ -23,14 +23,17 @@ dropped the new 'approved layer' labels those joins point at: the site (kpc-boun
                 does not move) and reports it.
   LINKS=<KPC-Links checkout> (default ../links)   run from the KPC-Data checkout   KEYS=world-key,ca-key,us-key   --selftest
 Reads files only, no network."""
-import collections, glob, json, os, pathlib, subprocess, sys
+import collections, json, os, pathlib, subprocess, sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import glob_json_any, load_json_any  # noqa: E402
 
 WK, HELD = 'data/world-key', 'data/waiting/in/data/world-key'
 OUT = 'data/status/key-copy'
 
 
 def load(p, d=None):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -99,7 +102,7 @@ def merge_layers(root='.', committed=None, links=None):
         try: committed = json.loads(subprocess.run(['git', 'show', f'HEAD:{WK}/layers.json'], cwd=root, capture_output=True, text=True, timeout=60).stdout or '{}')
         except Exception: committed = {}  # noqa: BLE001
     q = {}
-    for f in sorted(glob.glob(os.path.join(root, 'data/waiting/questions/*.json'))):
+    for f in glob_json_any(os.path.join(root, 'data/waiting/questions/*.json')):
         d = load(f, None); qs = d.get('questions') if isinstance(d, dict) else d
         for x in qs if isinstance(qs, list) else []:
             if isinstance(x, dict) and x.get('ref') and str(x.get('answer') or '').upper().startswith('YES'):
