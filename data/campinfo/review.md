@@ -28,6 +28,7 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
 | US-AR | 229 | 21 | 120 | 0 | 2 | 0 | 0 | 5 | 81 | 5 | 78 | 0 |
+| US-LA | 67 | 0 | 13 | 0 | 52 | 0 | 0 | 0 | 2 | 0 | 33 | 0 |
 | US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
 | US-TX | 483 | 0 | 120 | 1 | 3 | 0 | 329 | 0 | 30 | 0 | 34 | 0 |
 | US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
@@ -58,9 +59,11 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 - www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 48 campgrounds · host resting
+- www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - reserve.tnstateparks.com: 25 campgrounds · host resting
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
 - destateparks.com: 22 campgrounds · host resting
+- www.lastateparks.com: 21 campgrounds · host resting (robots.txt could not be read: next run)
 - www.tn.gov: 17 campgrounds · host resting
 - dep.nj.gov: 17 campgrounds · host resting
 - mdc.mo.gov: 15 campgrounds · host resting (deferred: slow host, next run)
@@ -1998,6 +2001,9 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “Woolly Hollow provide scenic overlooks and shaded forest sites. Campgrounds include clean restrooms, hot showers, picnic tables and fire rin”
   - rules.pets = "pet-friendly" · “and fire rings. Group camping areas are available at select parks, and most locations are pet-friendly. Browse the parks below to find your ”
   - showers = true · “rovide scenic overlooks and shaded forest sites. Campgrounds include clean restrooms, hot showers, picnic tables and fire rings. Group campi”
+
+## US-LA: 12 random samples (records with facts; seed = the date)
+
 
 ## US-OK: 12 random samples (records with facts; seed = the date)
 
