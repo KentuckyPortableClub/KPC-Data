@@ -15,48 +15,48 @@
   "US-DE",
   "US-DC"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 16:57 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 04:17 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 5793 of 12458 expected pairs were never looked at (47%; 2568 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5786); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
+  "missing check: 5665 of 12562 expected pairs were never looked at (45%; 2868 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5658); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 716,
-  "DROPPED": 3381,
-  "NEVER LOOKED AT": 8361
+  "FOUND": 704,
+  "DROPPED": 3325,
+  "NEVER LOOKED AT": 8533
  },
  "never_looked_at": {
-  "counted": 5793,
-  "no_official_outline": 2568,
-  "expected": 12458,
+  "counted": 5665,
+  "no_official_outline": 2868,
+  "expected": 12562,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5786,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5658,
    "not tested: the official outline of <park> could not be read in pass 1 (one of its map rec": 4,
    "<park>: not in this run (another state, retired, or no POTA pin)": 3
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 14894,
-   "pairs whose boxes touch": 14894
+   "date": "2026-11-06",
+   "pairs tested": 14669,
+   "pairs whose boxes touch": 14669
   },
   "pass2": {
-   "agree with the pass before": 3424,
-   "date": "2026-11-05",
-   "pairs tested": 1234
+   "agree with the pass before": 3370,
+   "date": "2026-11-06",
+   "pairs tested": 1205
   },
   "pass3": {
-   "agree with the pass before": 2270,
-   "date": "2026-11-05",
-   "pairs tested": 1177
+   "agree with the pass before": 2246,
+   "date": "2026-11-06",
+   "pairs tested": 1157
   },
   "pass5": {
-   "checked": 326,
-   "date": "2026-11-05",
+   "checked": 298,
+   "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -76,8 +76,8 @@
   "US-DC": "data/fers/US-DC.json"
  },
  "US-PA": {
-  "rows": 1362,
-  "live": 221,
+  "rows": 1297,
+  "live": 213,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -86,8 +86,8 @@
    "this spot is 118 km from PA 231 State Game Land's POTA pin": 1,
    "this spot is 128 km from PA 326 State Game Land's POTA pin": 1
   },
-  "dropped": 731,
-  "merged": 406
+  "dropped": 697,
+  "merged": 383
  },
  "US-NY": {
   "rows": 486,
@@ -102,16 +102,18 @@
  },
  "US-NJ": {
   "rows": 202,
-  "live": 38,
+  "live": 32,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
+  "not_sure": {
+   "key outline is approximate": 6
+  },
   "dropped": 96,
   "merged": 68
  },
  "US-CT": {
-  "rows": 100,
-  "live": 47,
+  "rows": 94,
+  "live": 44,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -119,11 +121,11 @@
    "one record covers two parks": 1
   },
   "dropped": 17,
-  "merged": 33
+  "merged": 30
  },
  "US-RI": {
-  "rows": 37,
-  "live": 10,
+  "rows": 38,
+  "live": 11,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -133,8 +135,8 @@
   "merged": 3
  },
  "US-MA": {
-  "rows": 505,
-  "live": 85,
+  "rows": 501,
+  "live": 84,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -142,23 +144,23 @@
    "one record covers two parks": 1,
    "low-confidence outline for Nashua River Rail Trail State Tra": 2
   },
-  "dropped": 206,
+  "dropped": 203,
   "merged": 208
  },
  "US-VT": {
-  "rows": 101,
-  "live": 9,
+  "rows": 94,
+  "live": 8,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1
   },
-  "dropped": 61,
-  "merged": 30
+  "dropped": 57,
+  "merged": 28
  },
  "US-NH": {
-  "rows": 151,
-  "live": 27,
+  "rows": 150,
+  "live": 26,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
@@ -166,8 +168,8 @@
   "merged": 62
  },
  "US-ME": {
-  "rows": 41,
-  "live": 7,
+  "rows": 40,
+  "live": 6,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -178,19 +180,19 @@
   "merged": 11
  },
  "US-MD": {
-  "rows": 676,
-  "live": 128,
+  "rows": 687,
+  "live": 126,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 4,
    "one record covers two parks": 2
   },
-  "dropped": 219,
-  "merged": 323
+  "dropped": 238,
+  "merged": 317
  },
  "US-DE": {
-  "rows": 274,
+  "rows": 269,
   "live": 36,
   "waiting": 0,
   "unfinished": 0,
@@ -198,15 +200,17 @@
    "no public owner on the ownership map": 12,
    "one record covers two parks": 1
   },
-  "dropped": 71,
+  "dropped": 66,
   "merged": 154
  },
  "US-DC": {
   "rows": 57,
-  "live": 15,
+  "live": 14,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
+  "not_sure": {
+   "one record covers two parks": 1
+  },
   "dropped": 21,
   "merged": 21
  },
