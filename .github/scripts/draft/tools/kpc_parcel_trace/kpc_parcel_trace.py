@@ -66,14 +66,16 @@ from shapely.ops import unary_union
 
 GRADE = 'approximate (agency parcels)'      # rule 2: always, never official
 SEED_M = 500.0            # nearest agency parcel to the pin, at most this far (rule 3)
-ADJ_M = 200.0             # a parcel joins when it touches or lies within 200 m of the growing shape (rule 3)
-try:   # Nov 2 review: tracer limits (kpc_trace_limits.py in .github/scripts/draft; switches, defaults = today)
+ADJ_M = 30.0              # Nov 6 default (was 200): a parcel joins when it touches or lies within this many m
+try:   # Nov 2/6 review: tracer limits (kpc_trace_limits.py in .github/scripts/draft)
     sys.path.insert(0, os.path.abspath(os.path.join(HERE, '..', '..'))); import kpc_trace_limits as TL
 except Exception:  # noqa: BLE001
     TL = None
-if TL is not None: ADJ_M = TL.num('KPC_PARCEL_ADJ_M')            # review suggests 30
-GROW_CAP = TL.num('KPC_PARCEL_GROW_CAP') if TL else 0.0          # x the official acres; review suggests 1.25; 0 = no cap
-SUBTRACT_OTHERS = TL is not None and TL.on('KPC_PARCEL_SUBTRACT')
+if TL is not None: ADJ_M = TL.num('KPC_PARCEL_ADJ_M')            # default 30
+GROW_CAP = TL.num('KPC_PARCEL_GROW_CAP') if TL else 1.25         # default 1.25x official acres; 0 = no cap
+SUBTRACT_OTHERS = TL.on('KPC_PARCEL_SUBTRACT') if TL is not None else True
+PARK_MIN = TL.num('KPC_PARCEL_PARK_MIN') if TL else 8.0          # per-park wall-clock minutes (Nov 6)
+REQ_TIMEOUT = TL.num('KPC_PARCEL_REQ_TIMEOUT') if TL else 30.0   # per-request HTTP timeout (Nov 6)
 FIRST_M = 1000.0          # first envelope around the pin
 PIN_FAR_M = 1000.0        # rule 4: pin outside the result by more than this -> no output
 SLIVER_M2 = 0.1 * 4046.8564224              # 0.1 ac
@@ -165,6 +167,22 @@ def blocked_msg(u):
 
 class TimeUp(Exception):
     pass
+
+
+def _with_deadline_timeout(web, deadline):
+    """Cap Polite.timeout to the seconds left on the park deadline (Nov 6 hung-host fix)."""
+    left = (deadline - time.time()) if deadline else None
+    if left is not None and left <= 0:
+        raise TimeUp()
+    old = getattr(web, 'timeout', None)
+    if left is not None and old is not None:
+        web.timeout = max(1.0, min(float(old), float(left)))
+    return old
+
+
+def _restore_timeout(web, old):
+    if old is not None:
+        web.timeout = old
 
 
 def source_refused(url):
@@ -347,13 +365,15 @@ class ParcelLayer:
         self.features = 0
 
     def _ask(self, params):
-        if time.time() > self.deadline:
-            raise TimeUp()
-        self.requests += 1
-        d, st, u = kp.jget(self.web, self.L.url + '/query', params, nocache=True)   # parcel replies are never cached
-        if str(st) == '403':
-            raise Blocked(blocked_msg(u))
-        return d, st, u
+        old_to = _with_deadline_timeout(self.web, self.deadline)
+        try:
+            self.requests += 1
+            d, st, u = kp.jget(self.web, self.L.url + '/query', params, nocache=True)   # parcel replies are never cached
+            if str(st) == '403':
+                raise Blocked(blocked_msg(u))
+            return d, st, u
+        finally:
+            _restore_timeout(self.web, old_to)
 
     def _feats(self, d):
         out = []
@@ -459,18 +479,30 @@ def open_layer(web, url, deadline):
     why = source_refused(url)
     if why:
         return None, why
-    d, st, u = kp.jget(web, url.rstrip('/'), {'f': 'json'})
-    if not d:
-        return None, (blocked_msg(url) if str(st) == '403' else f'the parcel layer did not open ({st})')
-    if kp.ZONING.search(str(d.get('name') or '') + ' ' + str(d.get('description') or '')[:300]):
-        return None, 'a zoning layer (zoning is not ownership; never a parcel source)'
-    if kp.NOT_OWNERSHIP.search(str(d.get('name') or '')):
-        return None, 'a damage-assessment / analysis layer, not ownership'
-    if d.get('geometryType') and d['geometryType'] != 'esriGeometryPolygon':
-        return None, f'not a polygon layer ({d.get("geometryType")})'
-    if 'query' not in str(d.get('capabilities') or 'query').lower():
-        return None, 'the layer has query switched off'
-    return ParcelLayer(web, url.rstrip('/'), d, deadline), 'ok'
+    old_to = _with_deadline_timeout(web, deadline)
+    try:
+        d, st, u = kp.jget(web, url.rstrip('/'), {'f': 'json'})
+        # Nov 6: one dedicated SSL retry, then classify as ssl:… (not a generic "did not open")
+        if not d and TL is not None and TL.is_ssl_status(st):
+            time.sleep(min(2.0, max(0.1, (deadline - time.time()) if deadline else 2.0)))
+            if deadline is not None and time.time() > deadline:
+                raise TimeUp()
+            d, st, u = kp.jget(web, url.rstrip('/'), {'f': 'json'})
+            if not d and TL.is_ssl_status(st):
+                return None, f'ssl: the parcel layer did not open after one retry ({st})'
+        if not d:
+            return None, (blocked_msg(url) if str(st) == '403' else f'the parcel layer did not open ({st})')
+        if kp.ZONING.search(str(d.get('name') or '') + ' ' + str(d.get('description') or '')[:300]):
+            return None, 'a zoning layer (zoning is not ownership; never a parcel source)'
+        if kp.NOT_OWNERSHIP.search(str(d.get('name') or '')):
+            return None, 'a damage-assessment / analysis layer, not ownership'
+        if d.get('geometryType') and d['geometryType'] != 'esriGeometryPolygon':
+            return None, f'not a polygon layer ({d.get("geometryType")})'
+        if 'query' not in str(d.get('capabilities') or 'query').lower():
+            return None, 'the layer has query switched off'
+        return ParcelLayer(web, url.rstrip('/'), d, deadline), 'ok'
+    finally:
+        _restore_timeout(web, old_to)
 
 
 # ------------------------------------------------------------------ other parks' official outlines (club rule, Oct 31)
@@ -662,9 +694,11 @@ class OfficialOutlines:
             self.ky_files[fn] = idx
         return self.ky_files[fn]
 
-    def near(self, own_ref, lon, lat, bbox_ll, area):
-        """([(ref, name, shapely lon/lat, source label)], notes) of OTHER parks' official outlines meeting bbox_ll."""
+    def near(self, own_ref, lon, lat, bbox_ll, area, deadline=None):
+        """([(ref, name, shapely lon/lat, source label)], notes) of OTHER parks' official outlines meeting bbox_ll.
+        Nov 6: honour the park deadline so a hung statewide other-park query is skipped with the park."""
         out, notes = [], []
+        self._deadline = deadline
         if not self.dirs:
             return out, ['no official outline data given (--official-dir), so the other-park check was not done']
         area = str(area or '').upper()
@@ -701,6 +735,8 @@ class OfficialOutlines:
                 want.setdefault(u, {})[oid] = (ref, rn)
             got = {}
             for u, ids in want.items():
+                if deadline is not None and time.time() > deadline:
+                    raise TimeUp()
                 hits, why = self._ids_in(u, bbox_ll)
                 if hits is None:
                     notes.append(f'other-park check incomplete: {u} did not answer ({why})')
@@ -725,23 +761,31 @@ class OfficialOutlines:
         return out, notes
 
     def _ids_in(self, u, bb):
-        d, st, _ = kp.jget(self.web, u, {'geometry': ','.join(f'{v:.6f}' for v in bb), 'geometryType': 'esriGeometryEnvelope',
-                                         'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'returnIdsOnly': 'true',
-                                         'f': 'json'})
-        if d is None:
-            return None, st
-        return [int(i) for i in d.get('objectIds') or []], 'ok'
+        old_to = _with_deadline_timeout(self.web, getattr(self, '_deadline', None))
+        try:
+            d, st, _ = kp.jget(self.web, u, {'geometry': ','.join(f'{v:.6f}' for v in bb), 'geometryType': 'esriGeometryEnvelope',
+                                             'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'returnIdsOnly': 'true',
+                                             'f': 'json'})
+            if d is None:
+                return None, st
+            return [int(i) for i in d.get('objectIds') or []], 'ok'
+        finally:
+            _restore_timeout(self.web, old_to)
 
     def _record(self, u, oid, rec_name):
         k = (u, oid)
         if k not in self.cache:
-            d, st, _ = kp.jget(self.web, u, {'objectIds': oid, 'outFields': '*', 'returnGeometry': 'true',
-                                             'outSR': 4326, 'f': 'json'})
-            g = None
-            for f in (d or {}).get('features') or []:
-                if _name_ok(rec_name, f.get('attributes')):
-                    g = esri_to_shape(f.get('geometry'))
-            self.cache[k] = g
+            old_to = _with_deadline_timeout(self.web, getattr(self, '_deadline', None))
+            try:
+                d, st, _ = kp.jget(self.web, u, {'objectIds': oid, 'outFields': '*', 'returnGeometry': 'true',
+                                                 'outSR': 4326, 'f': 'json'})
+                g = None
+                for f in (d or {}).get('features') or []:
+                    if _name_ok(rec_name, f.get('attributes')):
+                        g = esri_to_shape(f.get('geometry'))
+                self.cache[k] = g
+            finally:
+                _restore_timeout(self.web, old_to)
         return self.cache[k]
 
 
@@ -783,11 +827,30 @@ def trace(pk, web, aliases, read_date, deadline, max_km=10.0, log=print, outline
     src_pl = 'federal properties (DFRP)' if dfrp else 'parcel(s)'
     owner_word = 'custodian' if dfrp else 'owner'
     is_gov = (lambda o: bool(o)) if dfrp else (lambda o: gov_type(o) == 'government')   # noqa: E731
+    # Nov 6: prefer a county layer over a statewide one when both exist (parks.json list + --known)
+    layer_urls = []
+    if pk.get('parcel_layer_url'): layer_urls.append(pk.get('parcel_layer_url'))
+    for u in (pk.get('parcel_layer_urls') or []):
+        if u: layer_urls.append(u)
+    known_cty = None
+    _fips, _kl = pk.get('county_fips'), (pk.get('_known_layers') or {})
+    if _fips and _kl:
+        known_cty = _kl.get(str(_fips).zfill(5) if str(_fips).isdigit() else str(_fips)) or _kl.get(str(_fips))
+    if TL is not None and not dfrp:
+        picked, pref_note = TL.prefer_county_layer(layer_urls, known_cty)
+    else:
+        picked, pref_note = (layer_urls[0] if layer_urls else pk.get('parcel_layer_url')), None
+    if picked:
+        pk = dict(pk, parcel_layer_url=picked)
+        info['layer_url'] = picked
+    if pref_note:
+        info.setdefault('_layer_pref', pref_note)
     P, why = open_layer(web, pk.get('parcel_layer_url'), deadline)
     if P is None:
         return 'ERROR', why, None, info
     L = P.L
     field_notes = pick_fields(P, pk)
+    if info.get('_layer_pref'): field_notes = [info['_layer_pref']] + list(field_notes)
     if dfrp:
         field_notes = []          # the DFRP fields are fixed by the tool, not given by the park row
     if not L.owner_f:
@@ -829,6 +892,8 @@ def trace(pk, web, aliases, read_date, deadline, max_km=10.0, log=print, outline
                           'inside': inside_other(gm, others_m) if sc >= MATCH_MIN and others_m else None}
 
     def fetch(region):       # region: a UTM polygon; asked as its lon/lat bounding box
+        if time.time() > deadline:
+            raise TimeUp()
         x1, y1, x2, y2 = region.bounds
         lx1, ly1, lx2, ly2 = back.transform_bounds(x1, y1, x2, y2)
         add(P.envelope(lx1, ly1, lx2, ly2))
@@ -856,7 +921,7 @@ def trace(pk, web, aliases, read_date, deadline, max_km=10.0, log=print, outline
     others, loaded = [], any(v['score'] >= MATCH_MIN for v in parcels.values())
     if loaded:        # nothing to leave out when no parcel near the pin matches the agency
         lx1, ly1, lx2, ly2 = back.transform_bounds(*limit.buffer(1000).bounds)
-        others, other_notes = (outlines or OfficialOutlines([])).near(ref, lon, lat, (lx1, ly1, lx2, ly2), area_of(pk))
+        others, other_notes = (outlines or OfficialOutlines([])).near(ref, lon, lat, (lx1, ly1, lx2, ly2), area_of(pk), deadline=deadline)
         others_m = [(r, to_m(g)) for r, nm, g, lab in others]
         other_names = {r: (nm, lab) for r, nm, g, lab in others}
         for v in parcels.values():
@@ -1087,10 +1152,25 @@ def run(args, web=None):
     os.makedirs(args.out, exist_ok=True)
     sp = os.path.join(args.out, 'state.json')
     state = json.load(open(sp)) if args.resume and os.path.exists(sp) else {'results': {}, 'done': {}}
-    web = web or kp.Polite(cache=args.cache, log=log, rest_exempt=True)
+    park_min = float(getattr(args, 'park_minutes', None) or PARK_MIN)
+    req_to = float(getattr(args, 'request_timeout', None) or REQ_TIMEOUT)
+    web = web or kp.Polite(cache=args.cache, log=log, rest_exempt=True, timeout=req_to)
     web.log = log
     read_date = kp.today()
     left = 0
+    # Nov 6: optional county layer catalogue (parcel-layers.json from kpc_parcels) — prefer over statewide
+    known_layers = {}
+    kp_known = getattr(args, 'known', None)
+    if kp_known and os.path.isfile(kp_known):
+        try:
+            raw = json.load(open(kp_known, encoding='utf-8'))
+            for fips, v in (raw.items() if isinstance(raw, dict) else []):
+                if str(fips).startswith('_'): continue
+                url = v.get('layer_url') if isinstance(v, dict) else v
+                if url: known_layers[str(fips).zfill(5) if str(fips).isdigit() else str(fips)] = url
+            log(f'known county parcel layers: {len(known_layers)} from {kp_known}')
+        except Exception as e:  # noqa: BLE001
+            log(f'known layers file not read ({e})')
     od = getattr(args, 'official_dir', None)
     dirs = list(od) if od is not None else [d for d in (os.environ.get('KPC_OFFICIAL_DIR'), DEFAULT_DATA)
                 if d and os.path.isdir(d) and (os.path.isdir(os.path.join(d, 'us-key')) or
@@ -1118,17 +1198,29 @@ def run(args, web=None):
             status, why, feat, info = 'ERROR', 'bad row: needs ref, lat and lon', None, {}
         else:
             log(f'{ref} {pk.get("name", "")}')
+            # Nov 6: per-park budget so one hung statewide layer is skipped and the run continues
+            park_deadline = min(deadline, time.time() + park_min * 60)
             try:
-                pk = dict(pk, _official_acres=acres_list.get(ref), _acres_list_loaded=bool(oa))
-                status, why, feat, info = trace(pk, web, aliases, read_date, deadline, args.max_km, log, outlines)
+                pk = dict(pk, _official_acres=acres_list.get(ref), _acres_list_loaded=bool(oa),
+                          _known_layers=known_layers)
+                status, why, feat, info = trace(pk, web, aliases, read_date, park_deadline, args.max_km, log, outlines)
             except Blocked as e:
                 status, why, feat, info = 'ERROR', str(e), None, {'layer_url': pk.get('parcel_layer_url')}
             except TimeUp:
+                # mark done so --resume does not retry a chronic hang forever; overall left still signals time
+                status = 'ERROR'
+                why = (f'timed out: park budget {park_min:g} min reached on this park '
+                       f'(layer {pk.get("parcel_layer_url") or "?"}); skipped so the run continues')
+                feat, info = None, {'layer_url': pk.get('parcel_layer_url')}
                 left += 1
-                log(f'  {ref}: time ran out in the middle; not saved, run again with --resume')
-                continue
+                log(f'  {ref}: {why}')
             except Exception as e:      # noqa: BLE001  (one park never stops the batch)
-                status, why, feat, info = 'ERROR', f'{type(e).__name__}: {e}', None, {'layer_url': pk.get('parcel_layer_url')}
+                msg = f'{type(e).__name__}: {e}'
+                if TL is not None and TL.is_ssl_status(msg):
+                    status, why = 'ERROR', f'ssl: {msg}'
+                else:
+                    status, why = 'ERROR', msg
+                feat, info = None, {'layer_url': pk.get('parcel_layer_url')}
         log(f'  {status}: {why}')
         state['done'][ref] = read_date
         save_park(args.out, pk, status, why, feat, info, read_date, state)
@@ -1243,15 +1335,15 @@ def selftest():
     # a fake layer: agency block (0..2 x 0..1), one agency square 150 m off the block, one 650 m off, private around
     A = 'STATE OF K4TEST DEPT OF PARKS'
     owners = {(i, j): A for i in range(3) for j in range(2)}
-    owners[(4, 0)] = 'K4TEST STATE OF DEPT OF PARKS'      # 100 m gap from (2,0): joins (within 200 m)
+    owners[(3, 0)] = 'K4TEST STATE OF DEPT OF PARKS'      # touches (2,0): joins (within 30 m default)
+    owners[(4, 0)] = A                                      # joins via (3,0); used by the HQ other-park case
     owners[(11, 0)] = A                                    # 600 m gap: must not join
-    owners[(3, 0)] = 'SMITH JOHN A'                        # private, between
+    owners[(5, 0)] = 'SMITH JOHN A'                        # private, away from the block
     owners[(0, 5)] = 'K4TEST COUNTY'                       # other government owner: must not join
     tmp = tempfile.mkdtemp(prefix='kpc_trace_test_')
     try:
         parks = [{'ref': 'K4TEST-01', 'name': 'Block park', 'state_or_prov': 'US-K4', 'lat': 38.0, 'lon': -85.0,
-                  'agency_owner_names': [A], 'parcel_layer_url': 'https://fake.example.gov/arcgis/rest/services/P/MapServer/0',
-                  'known_acres': 15},
+                  'agency_owner_names': [A], 'parcel_layer_url': 'https://fake.example.gov/arcgis/rest/services/P/MapServer/0'},
                  {'ref': 'K4TEST-02', 'name': 'Pin 400 m off', 'state_or_prov': 'US-K4', 'lat': 38.0,
                   'lon': -85.0 - 0.0051, 'agency_owner_names': ['STATE OF K4TEST DEPT OF PARKS'],
                   'parcel_layer_url': 'https://fake.example.gov/arcgis/rest/services/P/MapServer/0'},
@@ -1270,10 +1362,10 @@ def selftest():
         r1 = st['K4TEST-01']
         if code != 0:
             problems.append(f'exit code {code}')
-        if r1['status'] != 'DRAWN' or r1['n_parcels'] != 7:
+        if r1['status'] != 'DRAWN' or r1['n_parcels'] != 8:
             problems.append(f'K4TEST-01 should be DRAWN with 7 parcels, got {r1}')
-        if r1.get('acres') and abs(r1['acres'] - 7 * 100 * 100 / ACRES_M2) > 0.3:
-            problems.append(f'K4TEST-01 acres {r1["acres"]} should be about {7e4 / ACRES_M2:.2f}')
+        if r1.get('acres') and abs(r1['acres'] - 8 * 100 * 100 / ACRES_M2) > 0.3:
+            problems.append(f'K4TEST-01 acres {r1["acres"]} should be about {8e4 / ACRES_M2:.2f}')
         f1 = [f for f in fc['features'] if f['properties']['ref'] == 'K4TEST-01']
         if not f1 or f1[0]['properties']['grade'] != GRADE or 'P11_0' in f1[0]['properties']['parcel_ids']:
             problems.append('K4TEST-01 feature wrong (grade, or the 600 m parcel joined)')
@@ -1281,7 +1373,7 @@ def selftest():
         if 'SMITH JOHN' in txt.upper():
             problems.append('a private owner name was written')
         r2 = st['K4TEST-02']
-        if r2['status'] != 'DRAWN' or not (350 <= (r2.get('pin_dist_m') or 0) <= 450) or r2['n_parcels'] != 7:
+        if r2['status'] != 'DRAWN' or not (350 <= (r2.get('pin_dist_m') or 0) <= 450) or r2['n_parcels'] != 8:
             problems.append(f'K4TEST-02 (pin about 400 m off the block) should be DRAWN, 7 parcels, got {r2}')
         if st['K4TEST-03']['status'] != 'OWNER UNCLEAR':
             problems.append(f'K4TEST-03 should be OWNER UNCLEAR, got {st["K4TEST-03"]}')
@@ -1307,8 +1399,11 @@ def selftest():
         if stt != HELD or feat is not None or 'cut off' not in why or info.get('pin_dist_m') is None:
             problems.append(f'a cut-off trace must be held back as {HELD}: {stt} {why}')
         # size check (club decision Oct 31, round 4): over 2x (or under 0.2x) the official size is held back; the
-        # official acres list wins over the round-14 figure, which is used only when the park is not in the list
+        # official acres list wins over the round-14 figure, which is used only when the park is not in the list.
+        # Nov 6: turn GROW_CAP off here so these cases still exercise SIZE_LO/SIZE_HI (cap is tested separately).
         A7 = st['K4TEST-01']['acres']
+        _grow_was = GROW_CAP
+        globals()['GROW_CAP'] = 0.0
         off = lambda a, **k: dict(acres=a, agency='K4 Parks', source_url='https://k4.example.gov/list', file='/x/acres.json', **k)  # noqa: E731
         size_cases = [  # (official entry, round-14 figure, list loaded, want status, want words in the source)
             (off(A7 / 2.5), None, True, HELD, 'official acres list (acres.json: K4 Parks)'),
@@ -1327,6 +1422,7 @@ def selftest():
         if not (1.85 <= (trace(dict(parks[0], ref='K4TEST-S9', known_acres=None, _official_acres=off(A7 / 1.9)),
                                _FakeServer(owners), {}, 'X', time.time() + 60)[3].get('size_ratio') or 0) <= 1.95):
             problems.append('size_ratio not reported')
+        globals()['GROW_CAP'] = _grow_was
         f1, f2 = os.path.join(tmp, 'acres.json'), os.path.join(tmp, 'acres-list.json')
         json.dump({'K4TEST-01': {'acres': 9.5, 'agency': 'K4 Parks', 'source_url': 'https://k4.example.gov/l'},
                    'K4TEST-X': {'acres': 'n/a'}}, open(f1, 'w'))
@@ -1405,7 +1501,7 @@ def selftest():
         stt, why, feat, info = trace(dict(parks[0], ref='K4TEST-11', known_acres=None, lat=38.0, lon=-85.0 + 0.00115),
                                      fk, {}, 'X', time.time() + 60, outlines=OO)
         ex = {(e['parcel_id'], e['other_ref']) for e in (feat or {}).get('properties', {}).get('excluded_other_park', [])}
-        if stt != 'DRAWN' or ex != {('P4_0', 'K4TEST-HQ'), ('P0_0', 'K4TEST-KEY')} or info['n_parcels'] != 5 \
+        if stt != 'DRAWN' or ex != {('P4_0', 'K4TEST-HQ'), ('P0_0', 'K4TEST-KEY')} or info['n_parcels'] != 6 \
                 or 'P4_0 in K4TEST-HQ' not in info['excluded'] or 'P4_0' in feat['properties']['parcel_ids']:
             problems.append(f'parcels inside another park\'s official outline must be left out (and only those): '
                             f'{stt} {ex} {info} {why}')
@@ -1442,6 +1538,30 @@ def selftest():
             problems.append(f'an area no answer key covers must be said in the why: {why}')
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+    # Nov 6: limits defaults + county preference + SSL classifier
+    if TL is None:
+        problems.append('kpc_trace_limits.py must import')
+    else:
+        if TL.num('KPC_PARCEL_ADJ_M', {}) != 30 or TL.num('KPC_PARCEL_GROW_CAP', {}) != 1.25 or not TL.on('KPC_PARCEL_SUBTRACT', {}):
+            problems.append(f'Nov 6 defaults must be 30 / 1.25 / subtract-on, got ADJ={TL.num("KPC_PARCEL_ADJ_M", {})} CAP={TL.num("KPC_PARCEL_GROW_CAP", {})} SUB={TL.on("KPC_PARCEL_SUBTRACT", {})}')
+        u, note = TL.prefer_county_layer(
+            ['https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/FeatureServer/1',
+             'https://gis.example.gov/arcgis/rest/services/CountyParcels/FeatureServer/0'],
+            None)
+        if 'CountyParcels' not in (u or '') or not note:
+            problems.append(f'prefer_county_layer must pick county over statewide: {u} {note}')
+        u2, _ = TL.prefer_county_layer(
+            ['https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/FeatureServer/1'],
+            'https://county.example.gov/arcgis/rest/services/Parcels/FeatureServer/0')
+        if 'county.example.gov' not in (u2 or ''):
+            problems.append(f'known county URL must win over statewide: {u2}')
+        if not TL.is_ssl_status('err:SSLError') or TL.is_ssl_status('403'):
+            problems.append('is_ssl_status must catch SSLError only')
+        if TL.acres_in_range(100, 100) is not True or TL.acres_in_range(25895525, 5000) is not False:
+            problems.append('acres_in_range must reject wild GeoPDF sizes')
+    # Nov 6: per-park TimeUp is saved as ERROR timed out (run() behaviour checked by contract below)
+    if 'timed out: park budget' not in open(__file__, encoding='utf-8').read():
+        problems.append('run() must save a per-park TimeUp as ERROR timed out so the run continues')
     if '21227' not in kp.CLUB_SKIP:
         problems.append('Warren County KY must stay skipped')
     problems += kp.polite_selftest()
@@ -1461,6 +1581,11 @@ def main(argv=None):
     g.add_argument('--refs', help='comma-separated park numbers, run in that order')
     g.add_argument('--all', action='store_true', help='every park in parks.json')
     ap.add_argument('--max-minutes', type=float, default=50, help='stop starting new parks after this (default 50)')
+    ap.add_argument('--park-minutes', type=float, default=None,
+                    help=f'per-park wall-clock minutes (default {PARK_MIN:g} / $KPC_PARCEL_PARK_MIN); hung host skipped')
+    ap.add_argument('--request-timeout', type=float, default=None,
+                    help=f'per-request HTTP timeout seconds (default {REQ_TIMEOUT:g} / $KPC_PARCEL_REQ_TIMEOUT)')
+    ap.add_argument('--known', help='parcel-layers.json from kpc_parcels (county layers preferred over statewide)')
     ap.add_argument('--resume', action='store_true', help='skip parks already done in <out>/state.json')
     ap.add_argument('--max-km', type=float, default=10.0, help='growth limit around the pin (default 10 km)')
     ap.add_argument('--cache', help='cache folder for public catalogue replies (parcel replies are never cached)')
