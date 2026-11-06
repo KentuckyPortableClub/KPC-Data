@@ -1,11 +1,11 @@
-# Closures super-bot: review (2026-11-05; RULE SHEET D; compared quietly, nothing on cards until GO)
+# Closures super-bot: review (2026-11-06; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-05T20:48Z · requests 105 · pages 83 · PDFs 17 · sentences read 471 · unmatched 122 · look-alikes skipped 263 · sources failed 0
+Run: 2026-11-06T02:08Z · requests 105 · pages 83 · PDFs 17 · sentences read 470 · unmatched 122 · look-alikes skipped 263 · sources failed 0
 
-## Kentucky gate: **PASS** — 31 of 33 of Kentucky's own reader's items found here on the same park (93%); 55 only here
+## Kentucky gate: **PASS** — 30 of 31 of Kentucky's own reader's items found here on the same park (96%); 56 only here
 
-## US-KY (done, read 2026-11-05T20:48)
-whole 0 · part 0 · hunt 0 · seasonal 0 · note 82 · taken_down 0 · 0 banners
+## US-KY (done, read 2026-11-06T02:08)
+whole 0 · part 0 · hunt 0 · seasonal 0 · note 82 · taken_down 1 · 0 banners
 
 Dropped as another state's place (multi-state forest): 32 notices
 
@@ -41,15 +41,14 @@ Unmatched (two parks or none; for chat 11 to judge):
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 31 · only here 55 · only there 2
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 30 · only here 56 · only there 1
 
 - ONLY THERE: US-3831 hc-US-3831-2026-11-15: Kentucky Fish & Wildlife: Nov 15–Jan 15: closed to all hunting and public access, except waterfowl a
-- ONLY THERE: US-7951 pa-nps-B489F041-FD1B-40F2-992D-9D36C841B7E5-US-7951: Green River Ferry Temporarily Out of Service — The Green River Ferry has temporarily suspended opera
 - ONLY HERE: US-0050 [note] "Elevator for Accessible Tour Out of Service."
 - ONLY HERE: US-0050 [note] "The Green River Ferry has temporarily suspended operation due to low water levels."
+- ONLY HERE: US-0050 [note] "Green River Ferry is operational but remains closed to recreational vehicle and trailer traffic due
 - ONLY HERE: US-0538 [note] "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed."
 - ONLY HERE: US-0686 [note] "Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, e
-- ONLY HERE: US-0686 [note] "Temporary Closure of Trails and Areas Surrounding the Cactus Rock Fire."
 - ONLY HERE: US-10121 [note] "Archery/crossbow quota hunt Oct. 25-Nov. 30: hunters out, wear orange."
 - ONLY HERE: US-10121 [note] "Quota deer hunt Nov. 7-8: hunters out, wear orange."
 - ONLY HERE: US-10124 [note] "This WMA is closed to the public during quota fox hunting field trials."
@@ -58,6 +57,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-10170 [note] "This area is only open during the quota hunt on the second Saturday in December during odd-numbered
 - ONLY HERE: US-10171 [note] "This area is only open during the quota hunt on the second Saturday in December during even-numbere
 - ONLY HERE: US-10171 [note] "Mobility-impaired quota deer hunt Dec. 12: hunters out, wear orange."
+- ONLY HERE: US-1259 [note] "Parts of the park may be closed during the quota hunt Dec. 10-13 (archery/crossbow)."
 - ONLY HERE: US-1259 [note] "Parts of the park may be closed during the quota hunt Dec. 17-20 (archery/crossbow)."
 - ONLY HERE: US-1261 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
 - ONLY HERE: US-1261 [note] "Parts of the park may be closed during the quota hunt Dec. 11-14."
@@ -69,13 +69,12 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1281 [note] "Jenny Wiley State Resort Park lodge is closed for critical structural integrity renovations."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Nov. 19-22 (archery/crossbow)."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
-- ONLY HERE: US-1284 [note] "Parts of the park may be closed during the quota hunt Nov. 2-6 (archery/crossbow)."
 
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Note: "The Green River Ferry has temporarily suspended operation due to low water levels." (National Park Service)
+- US-0050 · ℹ️ Part closed (Green River Ferry is operational but) updated 2026-11-05: "Green River Ferry is operational but remains closed to recreational vehicle and trailer traffic due to low water conditions."
 - US-0538 · ℹ️ Note: "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed." (US Fish and Wildlife Service)
 - US-0686 · ℹ️ Part closed (Blue Heron Tipple Bridge) updated 2025-09-29: "Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, effective immediately in the interest o · stale: may be out of date: check the agency page
-- US-0686 · ℹ️ Part closed (Temporary) updated 2026-10-30: "Temporary Closure of Trails and Areas Surrounding the Cactus Rock Fire." (National Park Service)
 - US-10121 · ℹ️ Part closed (other areas of the WMA): "All other areas of the WMA remain closed due to extensive storm damage and ongoing cleanup efforts." (Kentucky Fish and Wildlife)
 - US-10121 · 🦌 Quota hunt: "Archery/crossbow quota hunt Oct. 25-Nov. 30: hunters out, wear orange." (Kentucky Fish and Wildlife)
 - US-10121 · 🦌 Quota hunt: "Quota deer hunt Nov. 7-8: hunters out, wear orange." (Kentucky Fish and Wildlife)
