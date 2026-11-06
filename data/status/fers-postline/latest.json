@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06 04:19 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42148481213",
+ "checked": "2026-11-06 08:57 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42156510317",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -1060,11 +1060,13 @@
     "US-0026+US-0889",
     "US-0048+US-0880",
     "US-0048+US-0893",
-    "US-0643+US-0889",
+    "US-0149+US-12708",
+    "US-0741+US-4448",
     "US-0878+US-0902",
     "US-0879+US-7886",
-    "US-4448+US-4537+US-4538",
-    "US-4537+US-4538"
+    "US-12708+US-4570",
+    "US-12708+US-7884",
+    "US-4570+US-9701"
    ],
    "lost": [
     {
@@ -1076,31 +1078,32 @@
      "now": "gone"
     },
     {
-     "pair": "US-1638+US-3392",
+     "pair": "US-0143+US-0150",
      "now": "gone"
     },
     {
-     "pair": "US-4448+US-4538",
-     "now": "merged into one row: US-4448+US-4538@area@55.024,-131.060"
+     "pair": "US-0150+US-1639",
+     "now": "gone"
+    },
+    {
+     "pair": "US-11862+US-4448",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1638+US-3392",
+     "now": "gone"
     }
    ],
    "live_before": 31,
    "live_now": 41,
-   "touch_held": [
-    "US-0143+US-0150",
-    "US-0150+US-1639"
-   ],
+   "touch_held": [],
    "touch_pin_only": [
     "US-0003+US-0878",
     "US-0026+US-0889",
     "US-0048+US-0880",
     "US-0048+US-0893",
-    "US-0143+US-0150",
-    "US-0150+US-1639",
-    "US-0643+US-0889",
     "US-0878+US-0902",
-    "US-0879+US-7886",
-    "US-11862+US-4448"
+    "US-0879+US-7886"
    ],
    "water_bank": [
     {
@@ -1139,7 +1142,7 @@
      "status": "candidate"
     },
     {
-     "pair": "US-0149+US-4447",
+     "pair": "US-0149+US-12708",
      "kind": "area",
      "status": "water only: boat or kayak"
     },
@@ -1154,11 +1157,6 @@
      "status": "water only: boat or kayak"
     },
     {
-     "pair": "US-0643+US-0889",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
      "pair": "US-0878+US-0902",
      "kind": "river",
      "status": "candidate"
@@ -1169,9 +1167,9 @@
      "status": "candidate"
     },
     {
-     "pair": "US-4448+US-4538",
+     "pair": "US-4447+US-7884",
      "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+     "status": "water only: boat or kayak"
     }
    ],
    "same_land_one_record": [],
@@ -1184,7 +1182,7 @@
     },
     {
      "pair": "CA-0742+US-4448",
-     "wide_m": 79,
+     "wide_m": 87,
      "near": "100 yd (small)",
      "status": "not sure: water not checked (the USGS wa"
     },
@@ -1207,18 +1205,6 @@
      "status": "very tight: could be map error: check bo"
     },
     {
-     "pair": "US-0150+US-1639",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-11862+US-4448",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
      "pair": "US-4448+US-4593",
      "wide_m": 45,
      "near": "50 yd (very tight)",
@@ -1227,14 +1213,11 @@
    ],
    "preline": {
     "tag": "pacific",
-    "verdict": "HOLD",
+    "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-02)",
-    "the last pre-line check (pacific) said HOLD"
-   ]
+   "stale_inputs": []
   },
   "US-AL": {
    "gained": [],
@@ -1320,7 +1303,6 @@
     "US-1076+US-11127",
     "US-1082+US-4425+US-7345",
     "US-1082+US-7345",
-    "US-1083+US-12096",
     "US-1085+US-11353",
     "US-1085+US-7293",
     "US-1102+US-7356",
@@ -1392,7 +1374,7 @@
     }
    ],
    "live_before": 16,
-   "live_now": 95,
+   "live_now": 94,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
@@ -1410,11 +1392,6 @@
      "pair": "US-0646+US-7288",
      "kind": "area",
      "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-12331+US-7276",
-     "kind": "area",
-     "status": "not sure: low-confidence outline for Greers Ferry Lake Tailwater State Recreation Area (ch"
     },
     {
      "pair": "US-7270+US-7288",
@@ -1542,11 +1519,9 @@
     "tag": "southcentral",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-AZ": {
    "gained": [
@@ -1707,99 +1682,67 @@
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-CA": {
-   "gained": [
-    "US-0046+US-4562",
-    "US-0049+US-4562",
-    "US-0049+US-4566",
-    "US-0063+US-4562",
-    "US-0071+US-4562",
-    "US-0202+US-4566",
-    "US-0639+US-6454",
-    "US-0647+US-4571",
-    "US-0648+US-4571",
-    "US-0650+US-4575",
-    "US-0884+US-4466",
-    "US-0884+US-4562",
-    "US-0894+US-4562",
-    "US-0919+US-4562",
-    "US-0946+US-12115",
-    "US-10416+US-4578",
-    "US-10635+US-4562",
-    "US-11143+US-13334",
-    "US-1126+US-4562",
-    "US-1126+US-4571",
-    "US-1126+US-9757",
-    "US-1127+US-9757",
-    "US-1135+US-4562",
-    "US-1145+US-4566",
-    "US-1153+US-4571",
-    "US-1161+US-4571",
-    "US-1161+US-9757",
-    "US-1171+US-4562",
-    "US-1177+US-4562",
-    "US-1180+US-9757",
-    "US-1184+US-4453",
-    "US-12115+US-4461",
-    "US-12115+US-4465",
-    "US-12614+US-4566",
-    "US-3456+US-4566",
-    "US-3457+US-4571",
-    "US-3476+US-4571",
-    "US-3477+US-4571",
-    "US-3524+US-4571",
-    "US-3525+US-4578",
-    "US-3535+US-4571",
-    "US-3544+US-4566",
-    "US-3544+US-4578",
-    "US-3546+US-4571",
-    "US-3548+US-4571",
-    "US-3553+US-4571",
-    "US-3558+US-9757",
-    "US-3567+US-4566",
-    "US-3569+US-4562",
-    "US-3575+US-4566",
-    "US-4453+US-4562",
-    "US-4453+US-9757",
-    "US-4454+US-4562",
-    "US-4454+US-9757",
-    "US-4455+US-4562",
-    "US-4455+US-4566",
-    "US-4455+US-4578",
-    "US-4456+US-4562",
-    "US-4459+US-4562",
-    "US-4459+US-4566",
-    "US-4461+US-4566",
-    "US-4462+US-4562",
-    "US-4462+US-4566",
-    "US-4463+US-4562",
-    "US-4463+US-4571",
-    "US-4463+US-4575",
-    "US-4464+US-4562",
-    "US-4464+US-4607",
-    "US-4465+US-4562",
-    "US-4466+US-4562",
-    "US-4468+US-4562",
-    "US-4468+US-4566",
-    "US-4469+US-4562",
-    "US-4469+US-4566",
-    "US-4544+US-4562",
-    "US-4546+US-4562",
-    "US-4571+US-6454"
-   ],
+   "gained": [],
    "lost": [
     {
      "pair": "US-0046+US-0063",
-     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
+     "now": "gone"
+    },
+    {
+     "pair": "US-0046+US-0884",
+     "now": "gone"
     },
     {
      "pair": "US-0046+US-0884+US-4466",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0046+US-4456",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0046+US-4464",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0046+US-4466",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0049+US-4459",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0058+US-1143",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0058+US-1162",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0058+US-1164",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0058+US-1188",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0058+US-4467",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0063+US-4456",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0063+US-4464",
      "now": "gone"
     },
     {
@@ -1815,7 +1758,187 @@
      "now": "gone"
     },
     {
+     "pair": "US-0071+US-0201",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0071+US-0894",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0071+US-4456",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0071+US-4466",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0071+US-4468",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0181+US-0639",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0193+US-3523",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0201+US-4466",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0201+US-4468",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0207+US-3551",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0211+US-1154",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0212+US-13578",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0217+US-1130",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0218+US-0946",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0639+US-1153",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0639+US-1165",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0639+US-1167",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0639+US-1183",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0639+US-3436",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0639+US-3444",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0647+US-1178",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0647+US-1203",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0648+US-1186",
+     "now": "gone"
+    },
+    {
      "pair": "US-0649+US-4465",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0651+US-1203",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0919+US-4456",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0949+US-1178",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10635+US-4464",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10832+US-4463",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1121+US-4459",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1126+US-4454",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1126+US-4546",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1131+US-3403",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1134+US-4468",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1142+US-4454",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1145+US-4469",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1158+US-3441",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1164+US-4467",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1171+US-4459",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1172+US-1173",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1172+US-4603",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1173+US-4603",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1177+US-4463",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1177+US-4546",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1180+US-3558",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1181+US-4454",
      "now": "gone"
     },
     {
@@ -1823,40 +1946,108 @@
      "now": "gone"
     },
     {
-     "pair": "US-3406+US-3407",
+     "pair": "US-1184+US-4544",
      "now": "gone"
     },
     {
-     "pair": "US-3462+US-3548",
+     "pair": "US-1185+US-4462",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1199+US-4469",
+     "now": "gone"
+    },
+    {
+     "pair": "US-1206+US-3458",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3394+US-3427",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3400+US-3432",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3400+US-4455",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3411+US-3445",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3416+US-4453",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3427+US-3429",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3456+US-4462",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3466+US-4469",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3474+US-4456",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3569+US-4463",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3574+US-3599",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3593+US-4463",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4453+US-4544",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4459+US-4605",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4463+US-4546",
      "now": "gone"
     }
    ],
    "live_before": 88,
-   "live_now": 156,
+   "live_now": 5,
    "touch_held": [],
-   "touch_pin_only": [
-    "US-0046+US-0884",
-    "US-0884+US-4466",
-    "US-0884+US-4562"
-   ],
-   "water_bank": [
-    {
-     "pair": "US-0214+US-3552",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-3400+US-4455",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-3416+US-4453",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    }
-   ],
+   "touch_pin_only": [],
+   "water_bank": [],
    "same_land_one_record": [
+    {
+     "pair": "US-3406+US-3407",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-3462+US-3548",
+     "status": "not sure: one record covers two parks ('Los Angeles State Historical Park' is a historic, "
+    },
+    {
+     "pair": "US-3462+US-3548",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-3476+US-3477",
+     "status": "not sure: one record covers two parks (the record 'Monterey SB' does not name 'Monterey St"
+    },
+    {
+     "pair": "US-3476+US-3477",
+     "status": "not sure: one record covers two parks ('Monterey State Historical Park' is a historic, the"
+    },
     {
      "pair": "US-3476+US-3477",
      "status": "candidate"
@@ -1868,170 +2059,20 @@
     {
      "pair": "US-3594+US-3595",
      "status": "candidate"
+    },
+    {
+     "pair": "US-3594+US-3595",
+     "status": "not sure: one record covers two parks ('Will Rogers State Historical Park' is a historic, "
     }
    ],
-   "near_threshold": [
-    {
-     "pair": "US-0063+US-4464",
-     "wide_m": 23,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0071+US-4466",
-     "wide_m": 95,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0181+US-0639",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0193+US-3523",
-     "wide_m": 23,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0207+US-3551",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0639+US-1153",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0639+US-1167",
-     "wide_m": 85,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0639+US-3436",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0648+US-1186",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0884+US-4466",
-     "wide_m": 49,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0919+US-4456",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0949+US-1178",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-11143+US-13334",
-     "wide_m": 89,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-1126+US-4454",
-     "wide_m": 105,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-1131+US-3403",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-1134+US-4468",
-     "wide_m": 101,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-1172+US-1173",
-     "wide_m": 93,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-1172+US-4603",
-     "wide_m": 81,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-1173+US-4603",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-1177+US-4463",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-13137+US-4456",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "not sure: the agency ownership map did n"
-    },
-    {
-     "pair": "US-3400+US-3432",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-3416+US-4453",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-3593+US-4463",
-     "wide_m": 23,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-4459+US-4605",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    }
-   ],
+   "near_threshold": [],
    "preline": {
     "tag": "pacific",
-    "verdict": "HOLD",
+    "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-02)",
-    "the last pre-line check (pacific) said HOLD"
-   ]
+   "stale_inputs": []
   },
   "US-CO": {
    "gained": [
@@ -2258,11 +2299,9 @@
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-CT": {
    "gained": [
@@ -3149,6 +3188,37 @@
    },
    "stale_inputs": []
   },
+  "US-HI": {
+   "gained": [],
+   "lost": [],
+   "live_before": 21,
+   "live_now": 21,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
+   "same_land_one_record": [],
+   "near_threshold": [
+    {
+     "pair": "US-10905+US-2222",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-2210+US-3391",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    }
+   ],
+   "preline": {
+    "tag": "pacific",
+    "verdict": "GO",
+    "key_source": "build",
+    "held_key": true
+   },
+   "stale_inputs": []
+  },
   "US-IA": {
    "gained": [
     "US-0268+US-3487",
@@ -3445,11 +3515,9 @@
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-IL": {
    "gained": [
@@ -3730,10 +3798,14 @@
     {
      "pair": "US-7411+US-7949",
      "now": "not sure: one record covers two parks ('Woodson State Wildlife Area' is a wma, the record "
+    },
+    {
+     "pair": "US-7424+US-7932",
+     "now": "gone"
     }
    ],
    "live_before": 27,
-   "live_now": 19,
+   "live_now": 18,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
@@ -3779,11 +3851,9 @@
     "tag": "southcentral",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-KY": {
    "gained": [],
@@ -4056,11 +4126,9 @@
     "tag": "southcentral",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-MA": {
    "gained": [
@@ -5661,11 +5729,9 @@
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-NC": {
    "gained": [
@@ -6183,11 +6249,9 @@
     "tag": "southcentral",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-NH": {
    "gained": [
@@ -6376,9 +6440,6 @@
     "US-0904+US-4517",
     "US-0933+US-4579",
     "US-11807+US-2707",
-    "US-11822+US-2699",
-    "US-11822+US-2699+US-4517",
-    "US-11822+US-4517",
     "US-12804+US-4568",
     "US-2697+US-4568",
     "US-2698+US-2700",
@@ -6418,13 +6479,9 @@
     }
    ],
    "live_before": 10,
-   "live_now": 36,
+   "live_now": 33,
    "touch_held": [],
-   "touch_pin_only": [
-    "US-11822+US-2699",
-    "US-11822+US-2699+US-4517",
-    "US-11822+US-4517"
-   ],
+   "touch_pin_only": [],
    "water_bank": [],
    "same_land_one_record": [],
    "near_threshold": [
@@ -6432,7 +6489,7 @@
      "pair": "US-11822+US-2699+US-4517",
      "wide_m": 97,
      "near": "100 yd (small)",
-     "status": "candidate"
+     "status": "not sure: 2-fer self-check: dropped: key"
     },
     {
      "pair": "US-2699+US-4517+US-8227",
@@ -6451,11 +6508,9 @@
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-NV": {
    "gained": [
@@ -6463,8 +6518,11 @@
     "US-1144+US-4458",
     "US-1147+US-4458",
     "US-1156+US-4391",
+    "US-12614+US-4391",
     "US-13139+US-9271",
     "US-4391+US-4456",
+    "US-4391+US-4458",
+    "US-4391+US-4468",
     "US-4391+US-4562",
     "US-4391+US-9236",
     "US-4391+US-9244",
@@ -6509,6 +6567,10 @@
      "now": "gone"
     },
     {
+     "pair": "US-2633+US-3389",
+     "now": "gone"
+    },
+    {
      "pair": "US-2635+US-4391",
      "now": "gone"
     },
@@ -6529,6 +6591,18 @@
      "now": "gone"
     },
     {
+     "pair": "US-3389+US-4391",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3389+US-4458",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4441+US-4566",
+     "now": "gone"
+    },
+    {
      "pair": "US-4444+US-4566",
      "now": "gone"
     },
@@ -6542,7 +6616,7 @@
     }
    ],
    "live_before": 49,
-   "live_now": 48,
+   "live_now": 47,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
@@ -6552,29 +6626,9 @@
      "status": "water only: boat or kayak"
     },
     {
-     "pair": "US-12614+US-4391",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
      "pair": "US-2633+US-4458",
      "kind": "area",
      "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-3389+US-4458",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-4391+US-4458",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "US-4391+US-4468",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
     },
     {
      "pair": "US-4391+US-9682",
@@ -6589,10 +6643,6 @@
     },
     {
      "pair": "US-13139+US-9271",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-2633+US-3389",
      "status": "candidate"
     }
    ],
@@ -6626,23 +6676,15 @@
      "wide_m": 95,
      "near": "100 yd (small)",
      "status": "candidate"
-    },
-    {
-     "pair": "US-3389+US-4458",
-     "wide_m": 95,
-     "near": "100 yd (small)",
-     "status": "candidate"
     }
    ],
    "preline": {
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-NY": {
    "gained": [
@@ -6877,6 +6919,10 @@
    "gained": [],
    "lost": [
     {
+     "pair": "US-0489+US-2783",
+     "now": "gone"
+    },
+    {
      "pair": "US-6346+US-6347",
      "now": "not sure: this spot is 324 km from Copan Wildlife Management Area's POTA pin: its outline "
     },
@@ -6886,7 +6932,7 @@
     }
    ],
    "live_before": 37,
-   "live_now": 35,
+   "live_now": 34,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
@@ -6989,52 +7035,139 @@
     "tag": "southcentral",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-OR": {
-   "gained": [
-    "US-0199+US-4566",
-    "US-0510+US-4566",
-    "US-10002+US-4576",
-    "US-10014+US-4566",
-    "US-10249+US-4576",
-    "US-10251+US-4576",
-    "US-10501+US-4566",
-    "US-10503+US-4576",
-    "US-10506+US-4576",
-    "US-10627+US-12347",
-    "US-10628+US-12347",
-    "US-12462+US-9977",
-    "US-12741+US-9155",
-    "US-13065+US-13066",
-    "US-13065+US-13068",
-    "US-13065+US-13071",
-    "US-13074+US-4566",
-    "US-2833+US-4576",
-    "US-2855+US-9155",
-    "US-2858+US-4566",
-    "US-2861+US-4566",
-    "US-2862+US-9155",
-    "US-2865+US-4576",
-    "US-4381+US-4576",
-    "US-4381+US-9155",
-    "US-4387+US-4574",
-    "US-4387+US-4576",
-    "US-4390+US-4529",
-    "US-4562+US-4576",
-    "US-4574+US-9555",
-    "US-4576+US-9142",
-    "US-4576+US-9147",
-    "US-4576+US-9553",
-    "US-9155+US-9558"
-   ],
+   "gained": [],
    "lost": [
     {
+     "pair": "US-0018+US-4379",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0018+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0199+US-12949",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0501+US-4379",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-12335",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-2817",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-2835",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-2847",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-2848",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-2851",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-2856",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-4384",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-9568",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-9586",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0505+US-9587",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0731+US-4381",
+     "now": "gone"
+    },
+    {
      "pair": "US-0953+US-4383",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10003+US-4380",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10003+US-4382",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10011+US-4379",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10017+US-4388",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10249+US-4381",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10249+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10251+US-10503",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10251+US-2865",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10251+US-4381",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10481+US-2840",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10501+US-4384",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10502+US-4387",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10503+US-2865",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10503+US-2865+US-4381",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10503+US-4381",
      "now": "gone"
     },
     {
@@ -7042,103 +7175,199 @@
      "now": "gone"
     },
     {
+     "pair": "US-11264+US-12944",
+     "now": "gone"
+    },
+    {
+     "pair": "US-11969+US-5457",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12347+US-12348",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12347+US-12954",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12347+US-4385",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12347+US-4387",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12348+US-9564",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12741+US-4381",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12744+US-4381",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12944+US-4385",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12950+US-9142",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12951+US-9156",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12991+US-4388",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13085+US-4384",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2812+US-4380",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2815+US-9573",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2824+US-4379",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2825+US-9158",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2826+US-9568",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2829+US-9568",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2838+US-9528",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2839+US-4378",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2847+US-9568",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2851+US-2856",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2857+US-7482",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2860+US-4384",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2863+US-2864",
+     "now": "gone"
+    },
+    {
+     "pair": "US-2863+US-4387",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4378+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4378+US-5458",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4379+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4379+US-5458",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4381+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4381+US-9524",
+     "now": "gone"
+    },
+    {
      "pair": "US-4383+US-9585",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4384+US-5457",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4386+US-4562",
      "now": "gone"
     },
     {
      "pair": "US-4387+US-7361",
      "now": "gone"
-    }
-   ],
-   "live_before": 84,
-   "live_now": 114,
-   "touch_held": [],
-   "touch_pin_only": [
-    "US-10249+US-4381",
-    "US-10249+US-4562",
-    "US-10249+US-4576",
-    "US-10251+US-10503",
-    "US-10251+US-2865",
-    "US-10251+US-4381",
-    "US-10251+US-4576",
-    "US-12347+US-12348",
-    "US-12348+US-9564",
-    "US-12951+US-9156",
-    "US-2825+US-9158",
-    "US-7482+US-9156"
-   ],
-   "water_bank": [
-    {
-     "pair": "US-10017+US-4388",
-     "kind": "river",
-     "status": "candidate"
     },
     {
-     "pair": "US-10249+US-4381",
-     "kind": "river",
-     "status": "candidate"
+     "pair": "US-4388+US-4562",
+     "now": "gone"
     },
     {
-     "pair": "US-10249+US-4562",
-     "kind": "river",
-     "status": "candidate"
+     "pair": "US-4388+US-9143",
+     "now": "gone"
     },
     {
-     "pair": "US-10249+US-4576",
-     "kind": "river",
-     "status": "candidate"
+     "pair": "US-4388+US-9565",
+     "now": "gone"
     },
     {
-     "pair": "US-10251+US-10503",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-10251+US-2865",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-10251+US-4381",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-10251+US-4576",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12347+US-12348",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12348+US-9564",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12951+US-9156",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-2825+US-9158",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-2849+US-9156",
-     "kind": "river",
-     "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be "
+     "pair": "US-4457+US-4562",
+     "now": "gone"
     },
     {
      "pair": "US-7482+US-9156",
-     "kind": "river",
-     "status": "candidate"
+     "now": "gone"
+    },
+    {
+     "pair": "US-9142+US-9159",
+     "now": "gone"
+    },
+    {
+     "pair": "US-9142+US-9553",
+     "now": "gone"
+    },
+    {
+     "pair": "US-9143+US-9565",
+     "now": "not sure: one record covers two parks ('Mongold State Park' is a state park, the record a "
+    },
+    {
+     "pair": "US-9525+US-9568",
+     "now": "gone"
     }
    ],
+   "live_before": 84,
+   "live_now": 4,
+   "touch_held": [],
+   "touch_pin_only": [],
+   "water_bank": [],
    "same_land_one_record": [
     {
      "pair": "US-10482+US-12952",
@@ -7150,6 +7379,10 @@
     },
     {
      "pair": "US-9143+US-9565",
+     "status": "not sure: one record covers two parks ('Mongold State Park' is a state park, the record a "
+    },
+    {
+     "pair": "US-9586+US-9587",
      "status": "candidate"
     },
     {
@@ -7157,174 +7390,14 @@
      "status": "candidate"
     }
    ],
-   "near_threshold": [
-    {
-     "pair": "US-0501+US-4379",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0502+US-9160",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "not sure: the agency ownership map did n"
-    },
-    {
-     "pair": "US-0505+US-12335",
-     "wide_m": 39,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-2817",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-2835",
-     "wide_m": 23,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-2847",
-     "wide_m": 23,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-2848",
-     "wide_m": 27,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-2851",
-     "wide_m": 39,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-2856",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-4384",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0505+US-9568",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0731+US-4381",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-10011+US-4379",
-     "wide_m": 53,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-10627+US-12347",
-     "wide_m": 47,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12744+US-4381",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-12838+US-5457",
-     "wide_m": 87,
-     "near": "100 yd (small)",
-     "status": "not sure: the agency ownership map did n"
-    },
-    {
-     "pair": "US-12982+US-12989",
-     "wide_m": 105,
-     "near": "100 yd (small)",
-     "status": "not sure: this spot is 184 km from Irrig"
-    },
-    {
-     "pair": "US-13065+US-13067",
-     "wide_m": 75,
-     "near": "100 yd (small)",
-     "status": "not sure: the agency ownership map did n"
-    },
-    {
-     "pair": "US-2812+US-4380",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-2826+US-9568",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-2839+US-4378",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-2863+US-4387",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-4379+US-5458",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-4384+US-5457",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-9142+US-9159",
-     "wide_m": 81,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-9525+US-9568",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    }
-   ],
+   "near_threshold": [],
    "preline": {
     "tag": "pacific",
-    "verdict": "HOLD",
+    "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-02)",
-    "the last pre-line check (pacific) said HOLD"
-   ]
+   "stale_inputs": []
   },
   "US-PA": {
    "gained": [
@@ -8592,6 +8665,7 @@
     "US-4416+US-4569",
     "US-4416+US-6584",
     "US-4569+US-6543",
+    "US-6540+US-6597",
     "US-6562+US-6608"
    ],
    "lost": [
@@ -8605,10 +8679,11 @@
     }
    ],
    "live_before": 13,
-   "live_now": 43,
+   "live_now": 44,
    "touch_held": [],
    "touch_pin_only": [
-    "US-0006+US-6597"
+    "US-0006+US-6597",
+    "US-6540+US-6597"
    ],
    "water_bank": [
     {
@@ -8624,7 +8699,7 @@
     {
      "pair": "US-6540+US-6597",
      "kind": "river",
-     "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run a"
+     "status": "candidate"
     }
    ],
    "same_land_one_record": [
@@ -8683,11 +8758,9 @@
     "tag": "southcentral",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   },
   "US-UT": {
    "gained": [
@@ -9431,175 +9504,198 @@
   },
   "US-WA": {
    "gained": [
-    "CA-3327+US-0055",
-    "US-0055+US-4563",
-    "US-0056+US-4563",
-    "US-0575+US-12250",
-    "US-0575+US-12250+US-12488",
-    "US-0575+US-12488",
-    "US-0693+US-4563",
-    "US-0694+US-4563",
-    "US-0727+US-10694+US-12488",
-    "US-0727+US-10694+US-12488+US-3280",
-    "US-0727+US-10694+US-3280",
-    "US-0727+US-12488+US-3280",
-    "US-0824+US-4576",
-    "US-10624+US-6583",
-    "US-10625+US-6583",
-    "US-10627+US-12347",
-    "US-10628+US-12347",
-    "US-10629+US-12485",
-    "US-10629+US-12485+US-12815",
-    "US-10629+US-12815",
-    "US-10629+US-4531",
-    "US-10630+US-12322",
-    "US-10630+US-4531",
-    "US-10665+US-12243",
-    "US-10694+US-12488",
-    "US-10706+US-10707",
-    "US-10706+US-10709+US-12497",
-    "US-10707+US-10709",
-    "US-10709+US-12497",
-    "US-10712+US-12488",
     "US-11142+US-12277",
-    "US-11142+US-12815",
-    "US-12239+US-12399",
-    "US-12241+US-12243",
-    "US-12243+US-4528",
-    "US-12248+US-12252",
-    "US-12248+US-12488",
-    "US-12249+US-12488",
-    "US-12250+US-12488",
-    "US-12252+US-12488",
-    "US-12253+US-12488",
-    "US-12256+US-12265",
-    "US-12257+US-12265",
-    "US-12259+US-12265",
-    "US-12260+US-12265",
-    "US-12261+US-12265",
-    "US-12262+US-12265",
-    "US-12264+US-12265",
-    "US-12265+US-12266",
-    "US-12265+US-12267",
-    "US-12265+US-12268",
-    "US-12265+US-12269",
-    "US-12265+US-12270",
-    "US-12265+US-12488",
-    "US-12272+US-12815",
-    "US-12272+US-12815+US-3165",
-    "US-12272+US-3165",
-    "US-12273+US-12815",
-    "US-12275+US-12815",
-    "US-12277+US-12815",
-    "US-12285+US-12286",
-    "US-12305+US-12306",
-    "US-12306+US-12522",
-    "US-12306+US-12559",
-    "US-12322+US-12323",
-    "US-12322+US-12324",
-    "US-12322+US-12325",
-    "US-12322+US-12325+US-12488",
-    "US-12322+US-12326",
-    "US-12322+US-12559",
-    "US-12322+US-4531",
-    "US-12401+US-6556",
-    "US-12402+US-12488",
-    "US-12481+US-12564",
-    "US-12483+US-12485",
-    "US-12485+US-12487",
-    "US-12485+US-12487+US-12815",
-    "US-12485+US-12815",
-    "US-12485+US-4531",
-    "US-12487+US-12815",
-    "US-12488+US-3274",
-    "US-12491+US-12602",
-    "US-12492+US-12602",
-    "US-12493+US-12602",
-    "US-12494+US-12602",
-    "US-12495+US-12575",
-    "US-12500+US-12503",
-    "US-12501+US-12503",
-    "US-12502+US-12503",
-    "US-12503+US-12504",
-    "US-12503+US-12505",
-    "US-12503+US-12505+US-4531",
-    "US-12503+US-4531",
-    "US-12516+US-4563",
-    "US-12523+US-12524",
-    "US-12525+US-12815",
     "US-12525+US-3165",
-    "US-12526+US-12815",
-    "US-12527+US-12815",
-    "US-12528+US-12529",
-    "US-12529+US-12530",
-    "US-12529+US-12531",
-    "US-12529+US-12532",
-    "US-12529+US-13471",
-    "US-12533+US-12575",
-    "US-12534+US-12538",
-    "US-12535+US-12538",
-    "US-12536+US-12538",
-    "US-12536+US-4563",
-    "US-12537+US-12538",
-    "US-12538+US-12539",
-    "US-12538+US-12540",
-    "US-12538+US-4563",
-    "US-12542+US-12544",
-    "US-12543+US-12544",
-    "US-12545+US-12552",
-    "US-12545+US-12553",
-    "US-12546+US-12552",
-    "US-12546+US-12553",
-    "US-12547+US-12552",
-    "US-12547+US-12553",
-    "US-12549+US-12550+US-12552",
-    "US-12549+US-12550+US-12553",
-    "US-12549+US-12552",
-    "US-12549+US-12553",
-    "US-12550+US-12552",
-    "US-12550+US-12553",
-    "US-12551+US-12552",
-    "US-12551+US-12553",
-    "US-12552+US-12553",
-    "US-12552+US-12554",
-    "US-12552+US-12555",
-    "US-12552+US-4530",
-    "US-12552+US-4563",
-    "US-12553+US-12554",
-    "US-12553+US-12555",
-    "US-12553+US-4530",
-    "US-12553+US-4563",
-    "US-12554+US-4563",
-    "US-12557+US-12564",
-    "US-12558+US-6556",
-    "US-12560+US-8666",
-    "US-12561+US-8666",
-    "US-12562+US-12575",
-    "US-12574+US-12575",
-    "US-12575+US-12576",
-    "US-12575+US-12577",
-    "US-12575+US-13404",
-    "US-12602+US-3201",
-    "US-12815+US-3165",
-    "US-12815+US-4531",
-    "US-3157+US-4563",
-    "US-3163+US-4563",
-    "US-3180+US-4563",
-    "US-3188+US-4563",
-    "US-3190+US-4563",
-    "US-3203+US-4530",
-    "US-3203+US-4531",
-    "US-3208+US-4563",
-    "US-3268+US-4563",
-    "US-4528+US-4563",
-    "US-4530+US-4563",
-    "US-4531+US-4563",
-    "US-4532+US-4563"
+    "US-12552+US-12553"
    ],
    "lost": [
     {
+     "pair": "US-0052+US-4529",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0052+US-4530",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0052+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0055+US-4530",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0055+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0056+US-4532",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0584+US-4528",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0592+US-3229",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0592+US-3283",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0595+US-10407",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0597+US-3220",
+     "now": "gone"
+    },
+    {
      "pair": "US-0727+US-3280",
-     "now": "merged into one row: US-0727+US-10694+US-12488+US-3280@area@47.513,-119.494 (the same patc"
+     "now": "gone"
+    },
+    {
+     "pair": "US-10706+US-10709",
+     "now": "gone"
+    },
+    {
+     "pair": "US-10709+US-4529",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12283+US-4531",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12284+US-4531",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12294+US-4530",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12304+US-3239",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12304+US-4530",
+     "now": "gone"
+    },
+    {
+     "pair": "US-12343+US-4529",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3170",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3170+US-5640",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3196",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3197",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3220",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3238",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3241",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3286",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3289",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3289+US-3290",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-3290",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13333+US-5640",
+     "now": "gone"
+    },
+    {
+     "pair": "US-13347+US-13348",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3158+US-4529",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3158+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3170+US-5640",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3180+US-3199",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3180+US-3268",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3232+US-3237",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3233+US-4530",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3239+US-4530",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3274+US-3280",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3286+US-3290",
+     "now": "gone"
+    },
+    {
+     "pair": "US-3289+US-3290",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4529+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4530+US-4562",
+     "now": "gone"
+    },
+    {
+     "pair": "US-4531+US-4562",
+     "now": "gone"
     },
     {
      "pair": "US-4562+US-4563",
@@ -9607,41 +9703,10 @@
     }
    ],
    "live_before": 50,
-   "live_now": 212,
+   "live_now": 5,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [
-    {
-     "pair": "US-0056+US-4532",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-12257+US-12265",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-12485+US-12815",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-12556+US-12564",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-13333+US-3170+US-5640",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-13333+US-5640",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    }
-   ],
+   "water_bank": [],
    "same_land_one_record": [
     {
      "pair": "US-11142+US-12277",
@@ -9649,7 +9714,7 @@
     },
     {
      "pair": "US-12285+US-12286",
-     "status": "candidate"
+     "status": "not sure: one record covers two parks (the record 'Shillapoo' does not name 'Shillapoo Sou"
     },
     {
      "pair": "US-12525+US-3165",
@@ -9668,126 +9733,14 @@
      "status": "candidate"
     }
    ],
-   "near_threshold": [
-    {
-     "pair": "CA-3948+US-3246",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of Peace "
-    },
-    {
-     "pair": "US-0595+US-10407",
-     "wide_m": 93,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0597+US-3220",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-10627+US-12347",
-     "wide_m": 47,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12243+US-4528",
-     "wide_m": 105,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12283+US-4531",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-12284+US-4531",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-12294+US-4530",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-12304+US-4530",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-12306+US-12559",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-12602+US-3201",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-13333+US-3170+US-5640",
-     "wide_m": 37,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-13333+US-3220",
-     "wide_m": 107,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-13333+US-3238",
-     "wide_m": 75,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-3158+US-4529",
-     "wide_m": 45,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-3233+US-4530",
-     "wide_m": 85,
-     "near": "100 yd (small)",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-3239+US-4530",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-3286+US-3290",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    }
-   ],
+   "near_threshold": [],
    "preline": {
     "tag": "pacific",
-    "verdict": "HOLD",
+    "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-02)",
-    "the last pre-line check (pacific) said HOLD"
-   ]
+   "stale_inputs": []
   },
   "US-WI": {
    "gained": [
@@ -10232,6 +10185,10 @@
      "now": "gone"
     },
     {
+     "pair": "US-10930+US-10944",
+     "now": "gone"
+    },
+    {
      "pair": "US-10935+US-6152",
      "now": "gone"
     },
@@ -10377,15 +10334,11 @@
     }
    ],
    "live_before": 66,
-   "live_now": 20,
+   "live_now": 19,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
    "same_land_one_record": [
-    {
-     "pair": "US-10930+US-10944",
-     "status": "candidate"
-    },
     {
      "pair": "US-6130+US-6136",
      "status": "not sure: one record covers two parks (the record 'Encampment River Canyon' does not name "
@@ -10396,11 +10349,9 @@
     "tag": "mountain",
     "verdict": "GO",
     "key_source": "build",
-    "held_key": false
+    "held_key": true
    },
-   "stale_inputs": [
-    "the key build US-42138063969 (2026-11-06 01:51 UTC) is newer than this output's last pass (2026-11-05)"
-   ]
+   "stale_inputs": []
   }
  },
  "about": "2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing."
