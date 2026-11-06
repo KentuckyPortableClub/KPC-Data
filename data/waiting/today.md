@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 441 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 443 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -40,7 +40,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 4 | data/fers/US-NH.json | HOLD | F-4 data/fers/US-NH.json replaces live data/fers/US-NH.json.gz (other format) with 150 rows for 167 (over 10% fewer) |
 | 2026-11-02 | 4 | data/fers/US-NY.json.gz | HOLD | F-2 candidates 32 -> 109 (over 30% change); F-2 only 20 of 32 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 89 new candidate pairs since the live file (over 10% |
 | 2026-11-02 | 4 | data/fers/US-SC.json | HOLD | F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 154 rows for 234 (over 10% fewer) |
-| 2026-11-02 | 4 | data/fers/US-UT.json.gz | HOLD | F-2 candidates 62 -> 111 (over 30% change); F-2 NOT SURE 71 -> 42 (over 30% change); F-2 52 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-13571, US-0072+US-6010,  |
+| 2026-11-02 | 4 | data/fers/US-UT.json.gz | HOLD | F-2 candidates 62 -> 104 (over 30% change); F-2 NOT SURE 71 -> 49 (over 30% change); F-2 47 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, U |
 | 2026-11-02 | 4 | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-04 | 2 | data/campinfo/US-AR.json | HOLD | F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites |
 | 2026-11-04 | 2 | data/docs/US-IN.json | HOLD | F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/71aa8ae4f9/chain_o_lakes_trail.pdf?language_id=1 |
@@ -99,9 +99,11 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-NE.json | PASS |  |
 | ? | ? | data/campinfo/US-NH.json | PASS |  |
 | ? | ? | data/campinfo/US-NJ.json | PASS |  |
+| ? | ? | data/campinfo/US-NM.json | PASS |  |
 | ? | ? | data/campinfo/US-OK.json | PASS |  |
 | ? | ? | data/campinfo/US-OR.json | PASS |  |
 | ? | ? | data/campinfo/US-PA.json | PASS |  |
+| ? | ? | data/campinfo/US-RI.json | PASS |  |
 | ? | ? | data/campinfo/US-TX.json | PASS |  |
 | ? | ? | data/campinfo/US-UT.json | PASS |  |
 | ? | ? | data/campinfo/US-VA.json | PASS |  |
