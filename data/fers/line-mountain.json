@@ -11,45 +11,45 @@
   "US-NM"
  ],
  "since": "2026-11-06",
- "date": "2026-11-06 06:39 UTC",
+ "date": "2026-11-06 21:26 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 3692 of 8334 expected pairs were never looked at (44%; 4307 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3692)",
+  "missing check: 3680 of 8328 expected pairs were never looked at (44%; 4307 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3680)",
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 1660 of 10042 pairs whose boxes touch",
+  "pass 1 tested 1695 of 10042 pairs whose boxes touch",
   "US-NM: pass1 not run in this run (stamp 2026-11-01, run started 2026-11-06)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 91,
-  "DROPPED": 244,
-  "NEVER LOOKED AT": 7999
+  "DROPPED": 250,
+  "NEVER LOOKED AT": 7987
  },
  "never_looked_at": {
-  "counted": 3692,
+  "counted": 3680,
   "no_official_outline": 4307,
-  "expected": 8334,
+  "expected": 8328,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 3692
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 3680
   }
  },
  "report": {
   "pass1": {
    "date": "2026-11-06",
-   "pairs tested": 1660,
+   "pairs tested": 1695,
    "pairs whose boxes touch": 10042,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 723,
+   "agree with the pass before": 724,
    "date": "2026-11-06",
-   "pairs tested": 116
+   "pairs tested": 120
   },
   "pass3": {
    "agree with the pass before": 639,
    "date": "2026-11-06",
-   "pairs tested": 116
+   "pairs tested": 117
   },
   "pass5": {
    "checked": 33,
@@ -111,14 +111,14 @@
   "merged": 6
  },
  "US-NV": {
-  "rows": 692,
+  "rows": 706,
   "live": 50,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 7
   },
-  "dropped": 354,
+  "dropped": 368,
   "merged": 281
  },
  "US-AZ": {

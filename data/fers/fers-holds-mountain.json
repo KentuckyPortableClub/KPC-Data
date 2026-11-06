@@ -1,6 +1,6 @@
 {
  "tag": "mountain",
- "checked": "2026-11-06 06:39 UTC",
+ "checked": "2026-11-06 21:26 UTC",
  "areas": {
   "US-CO": 0,
   "US-WY": 0,
@@ -8,58 +8,10 @@
   "US-MT": 0,
   "US-NV": 0,
   "US-AZ": 0,
-  "US-NM": 3
+  "US-NM": 0
  },
- "held": 3,
+ "held": 0,
  "rule": "an area / same-land 2-fer is held when either half is a PIN or APPROXIMATE in that state / province / country of the current key",
  "by": "fers-selfcheck",
- "rows": [
-  {
-   "id": "US-11822+US-2699+US-4517@area@35.873,-106.742",
-   "refs": [
-    "US-11822",
-    "US-2699",
-    "US-4517"
-   ],
-   "kind": "area",
-   "area": "US-NM",
-   "was": "candidate",
-   "why": "dropped: key PIN is not a line-match (US-11822)",
-   "halves": {
-    "US-11822": "pin",
-    "US-2699": "official",
-    "US-4517": "official"
-   }
-  },
-  {
-   "id": "US-11822+US-2699@area@35.881,-106.731",
-   "refs": [
-    "US-11822",
-    "US-2699"
-   ],
-   "kind": "area",
-   "area": "US-NM",
-   "was": "candidate",
-   "why": "dropped: key PIN is not a line-match (US-11822)",
-   "halves": {
-    "US-11822": "pin",
-    "US-2699": "official"
-   }
-  },
-  {
-   "id": "US-11822+US-4517@area@35.806,-106.631",
-   "refs": [
-    "US-11822",
-    "US-4517"
-   ],
-   "kind": "area",
-   "area": "US-NM",
-   "was": "candidate",
-   "why": "dropped: key PIN is not a line-match (US-11822)",
-   "halves": {
-    "US-11822": "pin",
-    "US-4517": "official"
-   }
-  }
- ]
+ "rows": []
 }
