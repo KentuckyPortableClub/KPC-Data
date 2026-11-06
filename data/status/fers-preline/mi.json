@@ -4,31 +4,29 @@
   "US-MI"
  ],
  "key_source": "build",
- "checked": "2026-11-05 19:42 UTC",
+ "checked": "2026-11-06 08:58 UTC",
  "areas": {
   "US-MI": {
-   "hold": [
-    "the key's overrides.json changed at 2026-11-05 18:59 UTC, after the key was built (2026-11-05 12:29 UTC): the 2-fer inputs are newer than the key"
-   ],
+   "hold": [],
    "warn": [
     "1 review-pile HOLD row(s) still outlines: US-10717 (their 2-fers are 'not sure')",
+    "8 rule 18 row(s): US-1546 US-3319 US-6615 US-6634 US-6638 US-6675 US-6782 US-6806 (a person decides)",
     "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-10717"
    ],
    "key_file": "data/us-key/US-MI.json",
-   "build": "US-42016221491",
-   "built": "2026-11-05 12:29 UTC",
+   "build": "US-42138063969",
+   "built": "2026-11-06 01:51 UTC",
    "rules": "3dc53f70256a",
    "parks": 388,
    "outlines": 355,
-   "postcheck": "us-US-42016221491.json",
+   "held_key": "HELD KEY: build US-42138063969 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-42138063969.json",
    "bad_pins": 1,
    "overrides_no_still": 0
   }
  },
  "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
- "verdict": "HOLD",
- "holds": [
-  "US-MI: the key's overrides.json changed at 2026-11-05 18:59 UTC, after the key was built (2026-11-05 12:29 UTC): the 2-fer inputs are newer than the key"
- ],
- "held_key": false
+ "verdict": "GO",
+ "holds": [],
+ "held_key": true
 }
