@@ -1,10 +1,10 @@
 # Missing list (gaps)
 
-Built 2026-11-05 from the club files (read-only).
+Built 2026-11-06 from the club files (read-only).
 
 | area | kind | parks | missing | solved since last night |
 |---|---|---|---|---|
-| US-KY | outline | 193 | 0 | 4 |
+| US-KY | outline | 193 | 0 | 0 |
 | US-KY | map | 193 | 43 | 0 |
 | US-KY | page | 193 | 0 | 0 |
 | US-KY | parking | 193 | 8 | 0 |
@@ -535,7 +535,7 @@ Built 2026-11-05 from the club files (read-only).
 | PL | outline | 2990 | 2962 | 0 |
 | PL | map | 2990 | 2990 | 0 |
 | PL | page | 2990 | 2990 | 0 |
-| FR | outline | 14316 | 3856 | 16 |
+| FR | outline | 14316 | 3856 | 0 |
 | FR | map | 14316 | 14316 | 0 |
 | FR | page | 14316 | 14316 | 0 |
 | ES | outline | 2498 | 2498 | 0 |
