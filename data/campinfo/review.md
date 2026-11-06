@@ -13,6 +13,7 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
 | US-SC | 63 | 20 | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 |
 | US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
+| US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-MO | 188 | 97 | 74 | 0 | 0 | 15 | 0 | 0 | 2 | 87 | 114 | 0 |
 | US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 6 | 31 | 0 |
@@ -71,6 +72,7 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 - midnrreservations.com: 12 campgrounds · host resting
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
+- reserve.mdwfp.com: 2 campgrounds · robots.txt says no
 - reserve.arkansasstateparks.com: 2 campgrounds · host resting (robots.txt could not be read: next run)
 - ksoutdoors.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
 - www.fire.ca.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
@@ -859,6 +861,121 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Explore by map””
   - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
   - season = "year-round" · “iles past the Kissimmee River Bridge and Fort Basinger. The area is open to public access year round. Access is only allowed by foot or bicy”
+
+## US-MS: 12 random samples (records with facts; seed = the date)
+
+- **State lake campground (16 camping pads with water/electrical hookups)** (intake-US-12195, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/elvis-presley-lake)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/elvis-presley-l · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “rs Grills Pavilion rental Picnic tables Restrooms with showers 16 camping pads with water/electrical hookups Dump station onsite Primitive c”
+  - map.date_how = "PDF, year 2024 in the link" · “link “””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/web-map-3 · “link “” -> https://www.mdwfp.com/sites/default/files/2024-05/web-map-3-25-2024.pdf”
+  - phone = "(662) 432-5950" · “eteran's Blvd. Address: 272 Rd 995, Tupelo, MS 38804 Phone: (662) 432-5950 Fees: Daily and Annual Fishing Report All Walleye caught mu”
+  - reservable = false · “94 34.29888, -88.65982 34.29822, -88.65485 34.29848, -88.661755 Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “trail Boat ramp 2 handicap accessible fishing piers Grills Pavilion rental Picnic tables Restrooms with showers 16 camping pads with water/e”
+  - showers = true · “p 2 handicap accessible fishing piers Grills Pavilion rental Picnic tables Restrooms with showers 16 camping pads with water/electrical hook”
+- **State lake campground** (intake-US-12194, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-lamar-bruce)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-lamar-bruc · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake-lama · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake-lamar-bruce_2019.pdf”
+  - phone = "(662) 869-2009" · “g piers, and a new pond. Address: Saltillo, MS 38866 Phone: (662) 869-2009 Fees: Daily and Annual Fishing Report Bass The fishing repo”
+  - reservable = false · “3 -88.6666 34.39078 -88.6684 34.3914 -88.6679 34.39422 -88.6664 Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
+  - showers = true · “11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Barbecue gri”
+- **Turkey Fork; Blue Lake Recreation Area; Airey Lake; Big Biloxi Recreation Area; Clear Springs Recreation Area** (intake-US-4494, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/mississippi/recarea/?recid=28815)
+  - booking.how = "online: www.recreation.gov" · “link “Delta National Forest Campsites””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/253459" · “link “Delta National Forest Campsites” -> https://www.recreation.gov/camping/campgrounds/253459”
+  - map.date_how = "web page, no date in the link" · “link “Daily Prescribed Burns Map””
+  - map.url = "https://usfs.maps.arcgis.com/apps/webappviewer/index.html?i · “link “Daily Prescribed Burns Map” -> https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=b196b5958480421fa7b5ee2a6ce91d31”
+  - restrooms = "some" · “uch as tables and fire pits,) are provided. Some popular dispersed camping areas may have toilets. There are extra responsibilities and skil”
+  - rules.fires = "fire rings" · “m a roadway. Can I have a campfire while dispersed camping? Please use existing sites and fire rings. Wood permits are not needed for usage ”
+  - rules.stay_limit = "30 days" · “ppi welcomes dispersed camping in all forests. General dispersed camping allows a stay of up to 30 days. Some specific recreation areas or s”
+  - showers = true · “year. Please place your campsite at least 100 feet from any stream or other water source. Showers can be locally heavy and occasionally have”
+  - sites.primitive = 57 · “athon Lake Shockaloe Trail BC1 Shockaloe Trail BC2 Delta Delta National Forest Campsites (57 Primitive camp sites) De Soto Janice Recreation”
+  - sites.total = 20 · “camping, picnicking, swimming, boating, fishing, hiking and bicycling. Facilities include 20 campsites with utility… Clear Springs Site Open”
+- **State lake campground** (intake-US-12206, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-jeff-davis)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-jeff-davis · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 13 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 13 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_jeff · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_jeff_davis.pdf”
+  - phone = "(601) 792-8225" · “ial cover. Address: 16 Lake Drive Prentiss, MS 39474 Phone: (601) 792-8225 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
+  - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 13 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail”
+  - showers = true · “13 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail Bike trail Pi”
+- **State lake campground** (intake-US-12205, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-mike-conner)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-mike-conne · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “nformation. Boat ramp 2 handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - hookups.water = true · “nformation. Boat ramp 2 handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_mike · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_mike_conner_web_map_2016__2_.pdf”
+  - phone = "(601) 765-4024" · “in recent years. Address: Lake Rd, Collins, MS 39428 Phone: (601) 765-4024 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
+  - reservable = false · “31.57489N -89.65144W 31.57251N -89.65022W 31.57206N -89.64914W Amenities Campgrounds are first come first served, please call the State Lake”
+  - restrooms = "yes (kind not stated)" · “fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
+  - showers = true · “15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Reel Facts L”
+- **State lake campground (18 developed camping sites with electrical/water hookups)** (intake-US-12201, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/prentiss-walker-lake)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/prentiss-walker · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “lectronics to locate suspended fish and target with minnows or small jigs in monkey milk, electric chicken, or Cajun cricket. Another great ”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 18 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - map.date_how = "PDF, year 2024 in the link" · “link “””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/prentiss- · “link “” -> https://www.mdwfp.com/sites/default/files/2024-05/prentiss-walker-map.pdf”
+  - phone = "(601) 733-2611" · “r sunfish. Address: Smith Co Rd 50-A, Mize, MS 39116 Phone: (601) 733-2611 Fees: Daily and Annual Fishing Report Bass Largemouth bass”
+  - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 18 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
+  - showers = true · “18 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Barbecue gri”
+- **State lake campground** (intake-US-12208, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-perry)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-perry" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “Boat ramps Kayak launch Handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - hookups.water = true · “Boat ramps Kayak launch Handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_perr · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_perry_Depth.pdf”
+  - phone = "(601) 784-6119" · “ally. Address: 281 Lake Perry Rd, Beaumont, MS 39423 Phone: (601) 784-6119 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
+  - reservable = false · “n the ski area . Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail”
+  - showers = true · “15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail Picnic tables”
+- **Primitive camping (WMA) in designated areas** (intake-US-7083, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/mahannah-wma)
+  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/mahannah-wma" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - checkout = "1:00 pm" · “hunt? Shooting hours for waterfowl on this WMA end at 12:00 noon. Waterfowl hunters must check out by 1:00 pm, except during the waterfowl y”
+  - hookups.electric = true · “arty will be allowed to hunt the unit on your draw date. Are ATV/UTVs allowed? ORVs/UTVs/ Electric Bikes are allowed only on designated road”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Mahannah Area Map (PDF)””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/mahannah- · “link “Mahannah Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/mahannah-bryant-2023.pdf”
+- **State lake campground (11 developed camping sites with electrical/water hookups)** (intake-US-12200, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/simpson-county-lake)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/simpson-county- · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/simpson-c · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/simpson-county-lake.pdf”
+  - phone = "(601) 849-4886" · “Hwy 49 in Simpson County. Address: Mississippi 39114 Phone: (601) 849-4886 Fees: Daily and Annual Fishing Report Bass Bass fishing has”
+  - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom with showers Pavilion rental Picnic tables”
+  - showers = true · “11 developed camping sites with electrical/water hookups Primitive camping Restroom with showers Pavilion rental Picnic tables Barbecue gril”
+- **Primitive camping (WMA) / USFS dispersed or campgrounds** (intake-US-7080, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/sunflower-wma)
+  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/sunflower-wma" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Sunflower Area Map (PDF)””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/sunflower · “link “Sunflower Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/sunflower_2023.pdf”
+  - phone = "(662) 873-6256" · “d trail closures, please contact the Delta Force Service at 662-873-6256 The permit station with cards is located off the levee. ADD”
+- **Turkey Fork; Blue Lake Recreation Area; Airey Lake; Big Biloxi Recreation Area; Clear Springs Recreation Area** (intake-US-4495, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/mississippi/recarea/?recid=28815)
+  - booking.how = "online: www.recreation.gov" · “link “Delta National Forest Campsites””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/253459" · “link “Delta National Forest Campsites” -> https://www.recreation.gov/camping/campgrounds/253459”
+  - map.date_how = "web page, no date in the link" · “link “Daily Prescribed Burns Map””
+  - map.url = "https://usfs.maps.arcgis.com/apps/webappviewer/index.html?i · “link “Daily Prescribed Burns Map” -> https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=b196b5958480421fa7b5ee2a6ce91d31”
+  - restrooms = "some" · “uch as tables and fire pits,) are provided. Some popular dispersed camping areas may have toilets. There are extra responsibilities and skil”
+  - rules.fires = "fire rings" · “m a roadway. Can I have a campfire while dispersed camping? Please use existing sites and fire rings. Wood permits are not needed for usage ”
+  - rules.stay_limit = "30 days" · “ppi welcomes dispersed camping in all forests. General dispersed camping allows a stay of up to 30 days. Some specific recreation areas or s”
+  - showers = true · “year. Please place your campsite at least 100 feet from any stream or other water source. Showers can be locally heavy and occasionally have”
+  - sites.primitive = 57 · “athon Lake Shockaloe Trail BC1 Shockaloe Trail BC2 Delta Delta National Forest Campsites (57 Primitive camp sites) De Soto Janice Recreation”
+  - sites.total = 20 · “camping, picnicking, swimming, boating, fishing, hiking and bicycling. Facilities include 20 campsites with utility… Clear Springs Site Open”
+- **State lake campground** (intake-US-12193, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-claude-bennett)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-claude-ben · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pav”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pav”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/claude-be · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/claude-bennett-habitat-2017.pdf”
+  - phone = "(601) 727-3561" · “y. Address: 237 County Rd 50319, Rose Hill, MS 39356 Phone: (601) 727-3561 Fees: Daily and Annual Fishing Report Bass No new report. B”
+  - reservable = false · “0 GPS coordinates that were added on 12/17/14 are listed below. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “andicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pavilion rental with restro”
+  - showers = true · “ble fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pavilion rental with restrooms Picnic tabl”
 
 ## US-IN: 12 random samples (records with facts; seed = the date)
 
