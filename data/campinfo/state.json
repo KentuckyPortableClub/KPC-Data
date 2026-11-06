@@ -2391,25 +2391,32 @@
  },
  "last": {
   "areas": [
-   "US-RI"
+   "US-VT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
+   "dropped_queued": 8,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 0,
+   "for_person_urls": [
+    [
+     "https://epqs.nationalmap.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ]
+   ],
+   "requests": 1,
    "rested": 0,
-   "robots": 0,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 0,
+   "camps": 9,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 0,
+   "needs_key": 9,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2417,7 +2424,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 5
+   "skipped_fresh": 276
   },
   "when": "2026-11-06"
  },
