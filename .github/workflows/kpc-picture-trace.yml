@@ -57,10 +57,20 @@ jobs:
           mkdir -p ../out/picture-trace; [ "${{ inputs.fresh }}" != yes ] && [ -d ../out/picture-trace/traced ] && cp -r ../out/picture-trace/traced ../pm/ 2>/dev/null; [ -d .pic_cache ] && cp -r .pic_cache ../pm/cache 2>/dev/null
           sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::an install step failed; the next steps may not work (exit $kpc_rc)"; echo "install - an install step failed; the next steps may not work (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 2: pdftoppm (the sharp page) is not on GitHub's runner
           pip install -q -r .github/scripts/draft/requirements.txt pypdf 2>&1 | tail -1
-          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || { kpc_rc=$?; echo "::error title=kpc_picture_geo.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_picture_geo.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 2 review: the sharp page (this run only, never saved) + GeoPDF coordinates
+          # Nov 6: always run the sharp page + GeoPDF step BEFORE the tracer; do not trace without it
           set +e
-          python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../pm --out ../pm/traced --resume --time-budget-min 45 > ../out/picture-trace/run-log.txt 2>&1
-          E=$?; tail -12 ../out/picture-trace/run-log.txt
+          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf
+          GEO_RC=$?
+          if [ "$GEO_RC" != 0 ]; then
+            echo "::error title=kpc_picture_geo.py::stopped with an error (exit $GEO_RC); tracer not started (Nov 6: geo is required before trace)"
+            echo "kpc_picture_geo.py - stopped with an error (exit $GEO_RC); tracer not started" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"
+            echo "picture geo failed (exit $GEO_RC); tracer not started" > ../out/picture-trace/run-log.txt
+            E=$GEO_RC
+          else
+            python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../pm --out ../pm/traced --resume --time-budget-min 45 > ../out/picture-trace/run-log.txt 2>&1
+            E=$?
+          fi
+          tail -12 ../out/picture-trace/run-log.txt
           rm -rf ../out/picture-trace/traced; cp -r ../pm/traced ../out/picture-trace/ 2>/dev/null; [ -d ../pm/debug ] && rm -rf ../out/picture-trace/debug && cp -r ../pm/debug ../out/picture-trace/ ; [ -d ../pm/cache ] && rm -rf .pic_cache && cp -r ../pm/cache .pic_cache
           S=$(python3 -c "import csv,collections;r=list(csv.DictReader(open('../out/picture-trace/traced/report.csv')));print(len(r),'maps:',dict(collections.Counter(x['status'] for x in r)))" 2>/dev/null)
           echo "::notice title=Picture tracer::exit $E; $S"

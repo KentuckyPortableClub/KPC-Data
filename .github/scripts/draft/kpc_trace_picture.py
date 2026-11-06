@@ -94,7 +94,7 @@ MAX_FIT_M = 50.0          # Rule 3: draw only if RMS < 50 m (strict "<")
 MIN_POINTS = 3            # Rule 2: at least 3 control points
 SIMPLIFY_M = 3.0          # Step 4: Douglas-Peucker tolerance in metres
 PIN_MAX_OUTSIDE_M = 1000  # Step 5: pin inside or within 1 km (flag only)
-AREA_RATIO_RANGE = (0.2, 5.0)  # Step 5: vs known acreage (flag only)
+AREA_RATIO_RANGE = (0.2, 5.0)  # Step 5 / Nov 6: vs known acreage -> NEEDS A PERSON (no outline)
 
 # Rule 6: only these basemap hosts may ever be queried.
 ALLOWED_BASEMAP_HOSTS = {
@@ -1350,12 +1350,23 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
     if dpin > PIN_MAX_OUTSIDE_M:
         flags.append(f"POTA pin is {dpin:.0f} m outside the traced {'outline' if bnd['kind'] == 'area' else 'line'}")
     area_acres = None
+    acres_held = None
     if bnd["kind"] == "area":
         area_acres = geom.area / 4046.86
         if acres and not (AREA_RATIO_RANGE[0] * acres <= area_acres <= AREA_RATIO_RANGE[1] * acres):
-            flags.append(f"traced area {area_acres:.0f} ac vs known {acres:.0f} ac outside 0.2x-5x")
+            # Nov 6: hold back (would catch US-5460 Sun Pass at 25M ac). No outline written.
+            acres_held = (f"traced area {area_acres:.0f} ac vs known {acres:.0f} ac outside "
+                          f"{AREA_RATIO_RANGE[0]:g}x-{AREA_RATIO_RANGE[1]:g}x")
+            flags.append(acres_held)
     if not geom.is_valid:
         flags.append("geometry still invalid")
+
+    if acres_held:
+        if stale.exists():
+            stale.unlink()
+        res.update(status="NEEDS A PERSON", why=acres_held, flags="; ".join(flags),
+                   fit_m=res.get("fit_m", ""), n_points=res.get("n_points", 0))
+        return res
 
     # ---- step 6: output
     geom_ll = shapely.transform(geom, lambda xy: np.column_stack(proj.to_ll(xy[:, 0], xy[:, 1])))
@@ -1399,9 +1410,34 @@ def _round_geojson(g):
     return dict(type=g["type"], coordinates=r(g["coordinates"]))
 
 
+
+def picture_selftest():
+    """Offline checks for Nov 6 acres gate (no network)."""
+    problems = []
+    if TL is None:
+        problems.append('kpc_trace_limits.py must import')
+    else:
+        if TL.acres_in_range(134.9, 229.85) is not True:
+            problems.append('Salato-sized trace must pass the acres gate')
+        if TL.acres_in_range(25895525.4, 5000) is not False:
+            problems.append('US-5460-sized wild GeoPDF must fail the acres gate')
+        if not (AREA_RATIO_RANGE == (TL.PICTURE_ACRES_LO, TL.PICTURE_ACRES_HI) or AREA_RATIO_RANGE == (0.2, 5.0)):
+            problems.append('AREA_RATIO_RANGE must stay 0.2..5')
+    src = Path(__file__).read_text(encoding='utf-8')
+    if 'NEEDS A PERSON' not in src or 'acres_held' not in src:
+        problems.append('process_one must hold back as NEEDS A PERSON when acres are outside 0.2x-5x')
+    for p_ in problems:
+        print(p_)
+    print('PASS' if not problems else 'FAIL')
+    return 0 if not problems else 1
+
+
 # ================================================================ main
 def main(argv=None):
     global HONOR_IMAGE, CHANCE_RATIO, CHANCE_MARGIN   # Nov 2 review: set from the flags below
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if '--selftest' in argv:
+        return picture_selftest()
     ap = argparse.ArgumentParser(description="KPC Picture-Map Tracer (approximate outlines from agency picture maps)")
     g = ap.add_mutually_exclusive_group(required=True)
     g.add_argument("--refs", nargs="+", help="park references to process, e.g. US-10172")

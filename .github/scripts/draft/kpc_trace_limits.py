@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
-"""TRACER LIMITS (Nov 2 2026 review; a local patch, not live until Brandon OKs it). Small pure helpers shared by the picture-map
-tracer (kpc_trace_picture.py) and the parcel tracer (tools/kpc_parcel_trace/kpc_parcel_trace.py). Tested on their own
-(kpc_engine/patches/tests/test_trace_limits.py). Defaults = what the tracers do today, except the two bug fixes marked (fix).
+"""TRACER LIMITS (Nov 2 2026 review; Nov 6: parcel defaults flipped to the review values Brandon OK'd).
+Small pure helpers shared by the picture-map tracer (kpc_trace_picture.py) and the parcel tracer
+(tools/kpc_parcel_trace/kpc_parcel_trace.py).
 
 Switches (env; the picture tracer also has command-line flags):
-  KPC_TRACE_HONOR_IMAGE   1  (fix) the picture tracer uses the image the prep step chose (row 'map_file', else row 'image'),
-                             not the first <ref>_*.jpg on disk. 0 = today.
-  KPC_TRACE_ACRES_FILE    '' an official acres list ({ref: acres} or {ref: {acres}}; data/acres.json) for rows with no acres, so the
-                             picture tracer's scale prior is set (without it the scale search runs 0.2-25 m/px). '' = today.
-  KPC_TRACE_CHANCE_RATIO  1.5 and KPC_TRACE_CHANCE_MARGIN 2.0: the 'better than chance' gate (real score must beat
-                             max(ratio x decoy, decoy + margin)). Today's values.
-  KPC_PARCEL_ADJ_M        200 the parcel tracer's adjacency (m). The review suggests 30 (200 m jumps roads onto the neighbour's land).
-  KPC_PARCEL_GROW_CAP     0  stop growing at this many times the official acres (the review suggests 1.25); 0 = no cap (today).
-  KPC_PARCEL_SUBTRACT     0  1 = cut other POTA parks' official outlines out of the result (today: only whole parcels mostly
-                             inside another park are left out).
+  KPC_TRACE_HONOR_IMAGE   1  the picture tracer uses the image the prep step chose (row 'map_file', else row 'image'),
+                             not the first <ref>_*.jpg on disk. 0 = old first-jpg pick.
+  KPC_TRACE_ACRES_FILE    '' an official acres list ({ref: acres} or {ref: {acres}}; data/acres.json) for rows with no acres.
+  KPC_TRACE_CHANCE_RATIO  1.5 and KPC_TRACE_CHANCE_MARGIN 2.0: the 'better than chance' gate.
+  KPC_PARCEL_ADJ_M        30  (Nov 6 default; was 200) parcel adjacency in metres. 200 jumps roads onto the neighbour.
+  KPC_PARCEL_GROW_CAP     1.25 (Nov 6 default; was 0) stop growing at this many times the official acres; 0 = no cap.
+  KPC_PARCEL_SUBTRACT     1  (Nov 6 default; was 0) cut other POTA parks' official outlines out of the result.
+  KPC_PARCEL_PARK_MIN     8  per-park wall-clock minutes; a hung host/statewide layer is skipped and the run continues.
+  KPC_PARCEL_REQ_TIMEOUT  30 per-request HTTP timeout in seconds (Polite).
 """
-import json, os
+import json, os, re
 
 DEFAULTS = {'KPC_TRACE_HONOR_IMAGE': '1', 'KPC_TRACE_ACRES_FILE': '', 'KPC_TRACE_CHANCE_RATIO': '1.5', 'KPC_TRACE_CHANCE_MARGIN': '2.0',
-            'KPC_PARCEL_ADJ_M': '200', 'KPC_PARCEL_GROW_CAP': '0', 'KPC_PARCEL_SUBTRACT': '0'}
+            'KPC_PARCEL_ADJ_M': '30', 'KPC_PARCEL_GROW_CAP': '1.25', 'KPC_PARCEL_SUBTRACT': '1',
+            'KPC_PARCEL_PARK_MIN': '8', 'KPC_PARCEL_REQ_TIMEOUT': '30'}
+
+# Picture tracer: traced acres vs known acres (Nov 6: hold back as NEEDS A PERSON, not DRAWN+flag).
+PICTURE_ACRES_LO, PICTURE_ACRES_HI = 0.2, 5.0
 
 
 def setting(name, env=None):
@@ -73,6 +76,18 @@ def better_than_chance(real, decoy, ratio=1.5, margin=2.0):
     return real >= max(ratio * decoy, decoy + margin)
 
 
+def acres_in_range(traced, known, lo=None, hi=None):
+    """True when traced acres are inside [lo, hi] × known. Missing known/traced = True (no gate)."""
+    lo = PICTURE_ACRES_LO if lo is None else lo
+    hi = PICTURE_ACRES_HI if hi is None else hi
+    try:
+        t, k = float(traced), float(known)
+    except (TypeError, ValueError):
+        return True
+    if k <= 0 or t < 0: return True
+    return lo * k <= t <= hi * k
+
+
 # ------------------------------------------------------------------ parcel tracer
 def capped_growth(candidates, area_m2, cap_m2):
     """Best-first growth under a size cap. candidates = [(key, distance_m, area_m2)] that touch the shape this round; area_m2 = the
@@ -94,3 +109,45 @@ def subtract_others(g, others):
     if u.is_empty or not g.intersects(u): return g, 0.0
     out = g.difference(u)
     return out, g.area - out.area
+
+
+# Statewide vs county layer preference (Nov 6). Lower score = better (prefer county).
+_STATEWIDE = re.compile(
+    r'(statewide|state[-_]?wide|state[-_]?parcels?|stateparcels|nc1map_parcels|massachusetts_property_tax|'
+    r'state[-_]?of[-_]?|nconemap|massgis.*parcel|parcel.*statewide|/state/)', re.I)
+_COUNTYISH = re.compile(
+    r'(county|parish|borough|township|cadast(re|ral)|pva|assessor|appraisal|/co[unt]*[-_/]|'
+    r'countygis|county-?gis)', re.I)
+
+
+def layer_scope_score(url):
+    """0 = looks like a county/local layer, 1 = unknown, 2 = looks statewide. Prefer lower."""
+    u = str(url or '')
+    if not u: return 1
+    if _STATEWIDE.search(u): return 2
+    if _COUNTYISH.search(u): return 0
+    return 1
+
+
+def prefer_county_layer(urls, known_county_url=None):
+    """Pick the best parcel layer URL: county/local before statewide. urls may mix None.
+    known_county_url (from parcel-layers.json for this FIPS) is always considered and preferred when present."""
+    cands = []
+    if known_county_url: cands.append(str(known_county_url).strip())
+    for u in (urls or []):
+        if u and str(u).strip() and str(u).strip() not in cands:
+            cands.append(str(u).strip())
+    if not cands: return None, 'no layer URL'
+    best = sorted(cands, key=lambda u: (layer_scope_score(u), len(u)))[0]
+    note = None
+    if known_county_url and best == str(known_county_url).strip() and any(layer_scope_score(u) == 2 for u in cands):
+        note = f'preferred county layer over statewide ({known_county_url})'
+    elif layer_scope_score(best) == 0 and any(layer_scope_score(u) == 2 for u in cands if u != best):
+        note = f'preferred county-looking layer over statewide ({best})'
+    return best, note
+
+
+def is_ssl_status(st):
+    """True when a Polite/jget status string is an SSL failure (err:SSLError / err:SSLCertVerificationError / ...)."""
+    s = str(st or '')
+    return bool(re.search(r'(?i)ssl|certificate', s))
