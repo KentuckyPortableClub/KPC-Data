@@ -4,35 +4,46 @@
  "states": [
   "US-OH"
  ],
- "since": "2026-10-30",
- "date": "2026-10-30 05:46 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
- "known_answers": "19/19 on 2026-10-30",
+ "since": "2026-11-06",
+ "date": "2026-11-06 09:09 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "missing check: 139 of 588 expected pairs were never looked at (24%; 64 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (139)"
+ ],
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 34,
-  "DROPPED": 106,
-  "NEVER LOOKED AT": 490
+  "FOUND": 69,
+  "DROPPED": 316,
+  "NEVER LOOKED AT": 203
+ },
+ "never_looked_at": {
+  "counted": 139,
+  "no_official_outline": 64,
+  "expected": 588,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 139
+  }
  },
  "report": {
   "pass1": {
-   "date": "2026-10-30",
-   "pairs tested": 127,
-   "pairs whose boxes touch": 127
+   "date": "2026-11-06",
+   "pairs tested": 601,
+   "pairs whose boxes touch": 601
   },
   "pass2": {
-   "agree with the pass before": 125,
-   "date": "2026-10-30",
-   "pairs tested": 40
+   "agree with the pass before": 311,
+   "date": "2026-11-06",
+   "pairs tested": 77
   },
   "pass3": {
-   "agree with the pass before": 40,
-   "date": "2026-10-30",
-   "pairs tested": 40
+   "agree with the pass before": 226,
+   "date": "2026-11-06",
+   "pairs tested": 77
   },
   "pass5": {
    "checked": 15,
-   "date": "2026-10-30",
+   "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,18 +52,19 @@
   "US-OH": "data/fers/US-OH.json"
  },
  "US-OH": {
-  "rows": 296,
-  "live": 34,
+  "rows": 481,
+  "live": 70,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 1
+   "no public owner on the ownership map": 1,
+   "one record covers two parks": 5
   },
-  "dropped": 119,
-  "merged": 142
+  "dropped": 166,
+  "merged": 239
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-OH"
- ],
- "states_held": []
+ ]
 }
