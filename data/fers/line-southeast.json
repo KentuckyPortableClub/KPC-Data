@@ -13,24 +13,24 @@
   "US-MS"
  ],
  "since": "2026-11-06",
- "date": "2026-11-06 03:40 UTC",
+ "date": "2026-11-06 18:33 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 7989 of 16245 expected pairs were never looked at (49%; 5709 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (7947); <park>: not in this run (another state, retired, or no POTA pin) (40); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (2)"
+  "missing check: 7986 of 16244 expected pairs were never looked at (49%; 5709 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (7944); <park>: not in this run (another state, retired, or no POTA pin) (40); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (2)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 700,
-  "DROPPED": 1847,
-  "NEVER LOOKED AT": 13698
+  "FOUND": 701,
+  "DROPPED": 1848,
+  "NEVER LOOKED AT": 13695
  },
  "never_looked_at": {
-  "counted": 7989,
+  "counted": 7986,
   "no_official_outline": 5709,
-  "expected": 16245,
+  "expected": 16244,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 7947,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 7944,
    "<park>: not in this run (another state, retired, or no POTA pin)": 40,
    "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 2
   }
@@ -38,21 +38,21 @@
  "report": {
   "pass1": {
    "date": "2026-11-06",
-   "pairs tested": 8330,
-   "pairs whose boxes touch": 8330
+   "pairs tested": 8332,
+   "pairs whose boxes touch": 8332
   },
   "pass2": {
-   "agree with the pass before": 4521,
+   "agree with the pass before": 4523,
    "date": "2026-11-06",
-   "pairs tested": 974
+   "pairs tested": 975
   },
   "pass3": {
-   "agree with the pass before": 2965,
+   "agree with the pass before": 2966,
    "date": "2026-11-06",
-   "pairs tested": 911
+   "pairs tested": 913
   },
   "pass5": {
-   "checked": 356,
+   "checked": 357,
    "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 0
@@ -152,8 +152,8 @@
   "merged": 19
  },
  "US-FL": {
-  "rows": 1335,
-  "live": 208,
+  "rows": 1336,
+  "live": 209,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
