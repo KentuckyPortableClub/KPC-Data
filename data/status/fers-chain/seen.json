@@ -1,27 +1,28 @@
 {
  "us-key": {
-  "build": "US-42016221491",
+  "build": "US-42138063969",
   "ran": [
    "southeast",
    "midwest",
-   "northeast",
-   "southcentral",
-   "mountain",
-   "pacific",
-   "oh",
-   "mi",
-   "ut"
+   "northeast"
   ],
-  "waiting": {},
-  "first_seen": "2026-11-05 14:27 UTC"
+  "waiting": {
+   "southcentral": "next start (at most 3 areas at a time)",
+   "mountain": "next start (at most 3 areas at a time)",
+   "pacific": "next start (at most 3 areas at a time)",
+   "oh": "next start (at most 3 areas at a time)",
+   "mi": "next start (at most 3 areas at a time)",
+   "ut": "next start (at most 3 areas at a time)"
+  },
+  "first_seen": "2026-11-06 02:09 UTC"
  },
  "ca-key": {
-  "build": "CA-41889018960",
-  "ran": [
-   "canadaeast",
-   "canadawest"
-  ],
-  "waiting": {},
-  "first_seen": "2026-11-05 00:24 UTC"
+  "build": "CA-42138066664",
+  "ran": [],
+  "waiting": {
+   "canadaeast": "next start (at most 3 areas at a time)",
+   "canadawest": "next start (at most 3 areas at a time)"
+  },
+  "first_seen": "2026-11-06 02:09 UTC"
  }
 }
