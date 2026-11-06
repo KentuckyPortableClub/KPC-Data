@@ -895,6 +895,28 @@
    "status": "done",
    "updated": "2026-11-05"
   },
+  "US-VT": {
+   "camps": 285,
+   "checked": 280,
+   "counts": {
+    "camps": 280,
+    "needs_browser": 0,
+    "needs_key": 9,
+    "no_page": 146,
+    "not_official": 0,
+    "ok": 105,
+    "other": 20,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 125,
+    "with_elevation": 0,
+    "with_facts": 123,
+    "with_sites": 103
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
   "US-WA": {
    "camps": 280,
    "checked": 280,
@@ -1003,6 +1025,7 @@
   "US-TX": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-UT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-VA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-VT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WI": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
@@ -1376,6 +1399,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-05"
+  },
+  "US-VT": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-06"
   },
   "US-WA": {
    "cell": {
@@ -2359,12 +2391,12 @@
  },
  "last": {
   "areas": [
-   "US-RI"
+   "US-VT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 4,
+   "dropped_queued": 284,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2376,7 +2408,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 8,
+   "requests": 276,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2384,15 +2416,16 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 5,
+   "browser": 20,
+   "camps": 285,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 0,
-   "no_page": 2,
+   "needs_browser": 20,
+   "needs_key": 9,
+   "no_page": 147,
    "not_official": 0,
-   "ok": 3,
-   "pages_read": 4,
+   "ok": 129,
+   "pages_read": 250,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,

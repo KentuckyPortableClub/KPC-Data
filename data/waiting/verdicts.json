@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06T12:25Z",
+ "checked": "2026-11-06T12:57Z",
  "switched_on": false,
  "results": [
   {
@@ -322,6 +322,17 @@
     "no live copy: first time this file is published"
    ],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-VT.json",
+   "kind": "campinfo",
+   "why": [
+    "F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page?"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
   },
   {
    "path": "data/campinfo/US-WY.json",
@@ -670,7 +681,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/71aa8ae4f9/chain_o_lakes_trail.pdf?language_id=1"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1504,10 +1515,10 @@
    "path": "data/fers/US-UT.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 62 -> 111 (over 30% change)",
-    "F-2 NOT SURE 71 -> 42 (over 30% change)",
-    "F-2 52 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-13571, US-0072+US-6010, US-0558+US-4578",
-    "F-S3 3 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-11196+US-5973 219 km"
+    "F-2 candidates 62 -> 104 (over 30% change)",
+    "F-2 NOT SURE 71 -> 49 (over 30% change)",
+    "F-2 47 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, US-0645+US-4575",
+    "F-K known 2-fer missing: US-11739 + US-6033"
    ],
    "notes": [],
    "verdict": "HOLD"
