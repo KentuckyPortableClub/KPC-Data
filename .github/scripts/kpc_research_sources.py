@@ -2,26 +2,53 @@
 """Report-only outline ranking for the pile solver.
 
 KPC_RESEARCH_SOURCES defaults to off. Off, rank_outlines() is empty and this
-module does not read the abbreviation list. Report mode ranks outlines the
-solver has already read. It uses the Mapping Rep Tool Box name matcher
-(kpc-maprep-check.js canon / nameScore) and, only then, the research-pack
-abbreviation list. It does not choose a join and it does not set pile-solver auto.
+module does not read the abbreviation table. Report mode ranks outlines the
+solver has already read, using the active Mapping Rep Tool Box matcher
+(kpc-maprep-logic.js nameScore / canon / expandName) and its abbreviation
+table (data/maprep/abbreviations.json). Short codes from the round-3 return
+that are marked sourced are added on top (data/research-sources/abbreviations.csv).
+from_memory rows are not in that file. It does not choose a join and it does
+not set pile-solver auto.
 
-No source/field mapping is registered here. The solver keeps asking a layer for
-the same fields it asked for before. Nothing in this file fetches a host.
+'game' is not a kind word that gets dropped, so a game area and a recreation
+area stay different. No source/field mapping is registered here. Nothing in
+this file fetches a host.
 """
-import csv, os, pathlib, re, unicodedata
+import csv, json, os, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
+ABBREV_JSON = ROOT / 'data' / 'maprep' / 'abbreviations.json'
+# Round-3 return: only rows whose origin is sourced. from_memory rows are not in this file.
 ABBREV_CSV = ROOT / 'data' / 'research-sources' / 'abbreviations.csv'
 
-# Kind words dropped by kpc-maprep-check.js canon(), in that list.
+# Built-in core from kpc-maprep-logic.js. The JSON table is layered on top.
+CORE = (
+    ('wma', 'wildlife management area'),
+    ('snp', 'state nature preserve'),
+    ('sna', 'state natural area'),
+    ('sp', 'state park'),
+    ('nwr', 'national wildlife refuge'),
+    ('nf', 'national forest'),
+    ('nra', 'national recreation area'),
+    ('sga', 'state game area'),
+    ('swa', 'state wildlife area'),
+    ('srp', 'state resort park'),
+    ('zec', 'zone d exploitation controlee'),
+)
+# Kind words dropped by canon(). 'game' is not in this list.
 _CORE_DROP = ('wildlife', 'management', 'area', 'state', 'national', 'park', 'parks', 'nature', 'preserve',
               'natural', 'forest', 'refuge', 'the', 'of', 'and', 'site', 'historic', 'historical',
               'recreational', 'recreation', 'resort')
+_STOP = re.compile(
+    r'\b(the|of|and|at|state|national|natural|nature|historic|historical|site|park|parks|wildlife|management|'
+    r'area|areas|wma|preserve|forest|recreation|recreational|refuge|sanctuary|center|fee|tract|unit|ky|resort|'
+    r'fishing|public|hunting|commission|corps|engineers|us)\b')
 _GENERIC = {'creek', 'lake', 'river', 'fork', 'branch', 'ridge', 'county', 'hunting', 'public',
             'north', 'south', 'east', 'west'}
-_ABBREV = None
+_DOTTED = re.compile(r'\b([a-z](?:\.[a-z]){1,6})\.?\b')
+_COMPILED = None
+_ALTS = None
+_FROM = None
 
 
 def mode():
@@ -30,63 +57,188 @@ def mode():
     return 'report' if v == 'report' else 'off'
 
 
-def fold(s):
-    t = ''.join(c for c in unicodedata.normalize('NFKD', str(s or '')) if not unicodedata.combining(c))
-    t = t.lower().replace('ß', 'ss')
-    return re.sub(r'[^a-z0-9]+', ' ', t).strip()
+def reset_matcher():
+    """Drop the cached abbreviation table. Tests point ABBREV_JSON elsewhere, then call this."""
+    global _COMPILED, _ALTS, _FROM
+    _COMPILED = None
+    _ALTS = None
+    _FROM = None
 
 
-def _abbrev_tokens():
-    """Short abbreviations from the research-pack list. Phrases are not expanded."""
+def _norm_exp(s):
+    return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', str(s or '').lower())).strip()
+
+
+def _compile(rows):
+    """CORE first, then table rows. A repeated token keeps its place and takes the new expansion."""
+    seen, order = {}, []
+
+    def put(tok, exp):
+        if tok in seen:
+            seen[tok] = exp
+            return
+        seen[tok] = exp
+        order.append(tok)
+
+    for tok, exp in CORE:
+        put(tok, exp)
+    for r in rows or []:
+        if not isinstance(r, dict):
+            continue
+        token = str(r.get('token') or '').lower().replace('.', '')
+        expansion = re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', str(r.get('expansion') or '').lower())).strip()
+        if len(token) >= 2 and expansion:
+            put(token, expansion)
+    items = [(t, seen[t]) for t in order]
+    items.sort(key=lambda x: -len(x[0]))
+    return items
+
+
+def _read_json_rows(path):
+    """Toolbox abbreviations.json. Not valid UTF-8 raises; research_rank catches that and
+    leaves the solver's verdict alone."""
+    doc = json.loads(pathlib.Path(path).read_text(encoding='utf-8'))
+    if isinstance(doc, dict):
+        return list(doc.get('rows') or [])
+    return list(doc or [])
+
+
+def _note_expansion(text):
+    """A commentary about a name, not a designation to substitute."""
+    low = text.lower()
+    return any(w in low for w in (
+        'combined dual', 'apostrophe', 'hyphenat', 'misspell', 'distinct from', 'also in',
+        'same name', 'spelled out', 'slash', 'dash-separated', 'possessive', 'french-derived',
+        'also listed', 'two designations'))
+
+
+def _sourced_tokens(path):
+    """Short codes from the sourced abbreviation list. Phrases and from_memory rows are not applied."""
     out = []
-    if not ABBREV_CSV.is_file():
-        return out
-    with ABBREV_CSV.open(encoding='utf-8') as fh:
+    with pathlib.Path(path).open(encoding='utf-8') as fh:
         for r in csv.DictReader(fh):
-            ab = fold(r.get('abbrev') or '')
-            ex = fold(r.get('expansion') or '')
-            if re.fullmatch(r'[a-z]{2,8}', ab) and ex and ex != ab:
-                out.append((ab, ex))
-    return sorted(set(out), key=lambda x: -len(x[0]))
+            if (r.get('origin') or '').strip() != 'sourced':
+                continue
+            ab = (r.get('abbrev') or '').strip()
+            if not re.fullmatch(r'[A-Za-z]{2,8}', ab.replace('.', '')) or ' ' in ab or '/' in ab:
+                continue
+            ex = (r.get('expansion') or '').strip()
+            if not ex or _note_expansion(ex):
+                continue
+            out.append({'token': ab, 'expansion': ex})
+    return out
 
 
-def abbrev_tokens():
-    global _ABBREV
-    if _ABBREV is None:
-        _ABBREV = _abbrev_tokens()
-    return _ABBREV
+def table_rows():
+    """Toolbox rows, plus sourced short codes the toolbox does not already define.
+
+    An existing Tool Box expansion is never replaced. A sourced code with different
+    words (SPA: Special Protection Area and State Preservation Area) is a second
+    meaning, returned by alternate_expansions(), and either meaning can score.
+    Reading either file can raise UnicodeDecodeError. Report mode only."""
+    rows = _read_json_rows(ABBREV_JSON) if pathlib.Path(ABBREV_JSON).is_file() else []
+    if pathlib.Path(ABBREV_CSV).is_file():
+        have = {str(r.get('token') or '').lower().replace('.', '') for r in rows if isinstance(r, dict)}
+        for extra in _sourced_tokens(ABBREV_CSV):
+            tok = extra['token'].lower().replace('.', '')
+            if tok in have:
+                continue
+            rows.append(extra)
+            have.add(tok)
+    return rows
+
+
+def _collect_alts(primary):
+    """token -> extra expansions whose words differ from the Tool Box meaning."""
+    alts = {}
+    if not pathlib.Path(ABBREV_CSV).is_file():
+        return alts
+    for extra in _sourced_tokens(ABBREV_CSV):
+        tok = extra['token'].lower().replace('.', '')
+        exp = _norm_exp(extra['expansion'])
+        cur = primary.get(tok)
+        if not cur or _norm_exp(cur) == exp or not exp:
+            continue
+        bucket = alts.setdefault(tok, [])
+        if exp not in bucket:
+            bucket.append(exp)
+    return alts
+
+
+def compiled():
+    global _COMPILED, _ALTS, _FROM
+    key = (str(ABBREV_JSON), str(ABBREV_CSV))
+    if _COMPILED is not None and _FROM == key:
+        return _COMPILED
+    _COMPILED = _compile(table_rows())
+    _ALTS = _collect_alts({tok: exp for tok, exp in _COMPILED})
+    _FROM = key
+    return _COMPILED
+
+
+def alternate_expansions():
+    """Sourced meanings that do not replace the Tool Box expansion. SPA is the collision."""
+    compiled()
+    return {tok: list(exps) for tok, exps in (_ALTS or {}).items()}
+
+
+def _prepare(s):
+    t = str(s or '').lower().replace('&', ' and ')
+    return _DOTTED.sub(lambda m: m.group(0).replace('.', ''), t)
+
+
+def expand_name(s, overrides=None):
+    """kpc-maprep-logic.js expandName: dotted letters collapse, then the abbreviation table.
+
+    overrides replaces a token's expansion for this call so a second meaning can be tried
+    without dropping the Tool Box meaning."""
+    t = _prepare(s)
+    for tok, exp in compiled():
+        if overrides and tok in overrides:
+            exp = overrides[tok]
+        rx = re.compile(r'(?<![a-z0-9])' + re.escape(tok) + r'(?![a-z0-9])')
+        t = rx.sub(lambda m, e=exp: ' ' + e + ' ', t)
+    return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', t)).strip()
+
+
+def canon(s, overrides=None):
+    """full text after expansion, and the core with kind words removed. 'game' stays."""
+    full = expand_name(s, overrides)
+    core = re.sub(r'\b(?:' + '|'.join(_CORE_DROP) + r')\b', ' ', full)
+    core = re.sub(r'\s+', ' ', core).strip() or full
+    return full, core
 
 
 def toolbox_canon(s, report=None):
-    """Tool Box canon() from kpc-maprep-check.js, then the abbreviation list when report is true.
+    """Same pair as canon(). report is accepted so older callers keep working; the table
+    is the toolbox table either way. rank_outlines still returns nothing unless report mode."""
+    return canon(s)
 
-    Dotted W.M.A. / S.N.P. / S.N.A. / S.P. are expanded the way the toolbox does, before
-    punctuation is stripped. Pack abbreviations (SGA, ZEC, ...) are applied only in report mode.
-    """
-    if report is None:
-        report = mode() == 'report'
-    t = str(s or '').lower().replace('&', ' and ')
-    t = re.sub(r'w\s*\.\s*m\s*\.\s*a\.?', ' wma ', t)
-    t = re.sub(r'\bwma\b', ' wildlife management area ', t)
-    t = re.sub(r's\s*\.\s*n\s*\.\s*p\.?', ' snp ', t)
-    t = re.sub(r'\bsnp\b', ' state nature preserve ', t)
-    t = re.sub(r's\s*\.\s*n\s*\.\s*a\.?', ' sna ', t)
-    t = re.sub(r'\bsna\b', ' state natural area ', t)
-    t = re.sub(r's\s*\.\s*p\.?', ' sp ', t)
-    t = re.sub(r'\bsp\b', ' state park ', t)
-    t = re.sub(r'[^a-z0-9 ]', ' ', t)
-    t = re.sub(r'\s+', ' ', t).strip()
-    if report:
-        t = t.replace('natrue', 'nature')
-        if re.search(r'\bzec\b', t) and t.endswith('nature reserve'):
-            t = re.sub(r'\s+nature reserve$', '', t).strip()
-        for ab, ex in abbrev_tokens():
-            t = re.sub(rf'\b{re.escape(ab)}\b', ex, t)
-        t = re.sub(r'\s+', ' ', t).strip()
-    full = t
-    core = re.sub(r'\b(?:' + '|'.join(_CORE_DROP) + r')\b', ' ', t)
-    core = re.sub(r'\s+', ' ', core).strip() or full
-    return full, core
+
+def norm_name(s, overrides=None):
+    return re.sub(r'\s+', ' ', _STOP.sub(' ', expand_name(s, overrides))).strip()
+
+
+def fuzzy_same(a, b, overrides=None):
+    """Shorter name of at least two words is a whole-word prefix or suffix of the longer one."""
+    n, m = norm_name(a, overrides), norm_name(b, overrides)
+    if not n or not m or len(n) < 4 or len(m) < 4:
+        return False
+    if n == m:
+        return True
+    w, x = n.split(' '), m.split(' ')
+    if len(w) <= len(x):
+        sh, lo = w, x
+    else:
+        sh, lo = x, w
+    if len(sh) < 2:
+        return False
+    phrase = ' '.join(sh)
+    return ' '.join(lo[:len(sh)]) == phrase or ' '.join(lo[-len(sh):]) == phrase
+
+
+def _tokens(s):
+    return [w for w in str(s or '').split(' ') if len(w) > 2]
 
 
 def _dice(a, b):
@@ -107,20 +259,19 @@ def _dice(a, b):
     return (2.0 * inter) / ((sum(A.values()) + sum(B.values())) or 1)
 
 
-def name_score(query, candidate, report=None):
-    """0-96, the same steps as the Tool Box nameScore. 0 means it would not be offered."""
-    if report is None:
-        report = mode() == 'report'
-    qf, qc = toolbox_canon(query, report=report)
-    cf, cc = toolbox_canon(candidate, report=report)
+def _score_once(query, candidate, overrides):
+    """One expansion choice. The steps are kpc-maprep-logic.js nameScore."""
+    qf, qc = canon(query, overrides)
+    cf, cc = canon(candidate, overrides)
     if not qc or not cc:
         return 0
     if qc == cc or qf == cf:
         return 96
-    qt = [w for w in qc.split() if len(w) > 2]
-    ct = [w for w in cc.split() if len(w) > 2]
+    qt, ct = _tokens(qc), _tokens(cc)
     if qt and all(w in ct for w in qt):
         return 92 if len(ct) == len(qt) else 84
+    if fuzzy_same(query, candidate, overrides):
+        return 88
     d = _dice(qc, cc)
     shared = [w for w in qt if w in ct and w not in _GENERIC and len(w) >= 4]
     if d >= 0.8 and shared:
@@ -130,6 +281,39 @@ def name_score(query, candidate, report=None):
     if any(len(w) >= 6 for w in shared) and d >= 0.45:
         return 52
     return 0
+
+
+def _override_choices(query, candidate):
+    """Primary meaning, then each extra meaning of a code that actually appears in the pair."""
+    compiled()
+    alts = _ALTS or {}
+    blob = _prepare(query) + ' ' + _prepare(candidate)
+    present = []
+    for tok, exps in alts.items():
+        if re.search(r'(?<![a-z0-9])' + re.escape(tok) + r'(?![a-z0-9])', blob):
+            present.append((tok, exps))
+    if not present:
+        return [None]
+    import itertools
+    options = [[None, *exps] for _tok, exps in present]
+    choices = []
+    for combo in itertools.product(*options):
+        overrides = {present[i][0]: combo[i] for i in range(len(present)) if combo[i]}
+        choices.append(overrides or None)
+    return choices
+
+
+def name_score(query, candidate, report=None):
+    """0-96, the same steps as kpc-maprep-logic.js nameScore. 0 means it would not be offered.
+
+    A code with more than one expansion (SPA) scores as the meaning that matches, so the
+    Tool Box expansion is never lost."""
+    if report is None:
+        report = mode() == 'report'
+    best = 0
+    for overrides in _override_choices(query, candidate):
+        best = max(best, _score_once(query, candidate, overrides))
+    return best
 
 
 def rank_outlines(park_name, candidates, report=None):
@@ -150,12 +334,7 @@ def rank_outlines(park_name, candidates, report=None):
 
 
 def gated_source_fields(url='', fields=None):
-    """Source/field mapping. Empty unless the flag is report, and this change adds none.
-
-    A caller that builds a layer query must keep the field list it already used when
-    this returns {}. Report mode does not add a row either: the pile solver still
-    asks for the fields it asked for before.
-    """
+    """Source/field mapping. Empty unless the flag is report, and this change adds none."""
     if mode() != 'report':
         return {}
     return {}

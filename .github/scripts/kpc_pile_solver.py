@@ -329,14 +329,15 @@ RESEARCH_RANKS = []
 
 def research_rank(park_name, recs):
     """When KPC_RESEARCH_SOURCES=report, remember a ranked list of the outlines already read.
-    The verdict below is unchanged. Pile-solver auto is not turned on."""
+    The verdict below is unchanged. Pile-solver auto is not turned on.
+    A bad abbreviation file or any other ranking error is ignored: the solver's own result stands."""
     if (os.environ.get('KPC_RESEARCH_SOURCES') or 'off').strip().lower() != 'report':
         return
     try:
         import kpc_research_sources as RS
-    except Exception:  # noqa: BLE001
+        ranked = RS.rank_outlines(park_name, [{'id': r.get('id'), 'name': r.get('name') or ''} for r in recs or []])
+    except Exception:  # noqa: BLE001  (invalid UTF-8, a missing table, anything else: do not change the verdict)
         return
-    ranked = RS.rank_outlines(park_name, [{'id': r.get('id'), 'name': r.get('name') or ''} for r in recs or []])
     RESEARCH_RANKS.append({'park': park_name, 'ranked': ranked, 'auto': False})
 
 
@@ -804,13 +805,17 @@ def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
         left = [p for p in pile_rows if p['area'] == a and p['ref'] not in rows]
         state.setdefault('areas', {})[a] = {'rows': sum(1 for p in pile_rows if p['area'] == a), 'left': len(left)}
     written = write_outputs(root, rows, os.environ.get('KEY_BUILD') or '', pile_sha)
-    # Side file only. state['auto'] is not written here and is not set to true.
+    # Side file only. A failed write must not skip the core outputs or state.json below.
+    # state['auto'] is not written here and is not set to true.
     if RESEARCH_RANKS and (os.environ.get('KPC_RESEARCH_SOURCES') or 'off').strip().lower() == 'report':
-        side = root / 'data' / 'pile-solver' / 'research-rank.json'
-        side.parent.mkdir(parents=True, exist_ok=True)
-        side.write_text(json.dumps({'auto': False, 'about': 'Report only. Abbreviations + Tool Box name matcher. auto stays false.',
-                                    'ranks': RESEARCH_RANKS}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
-        written.append(str(side))
+        try:
+            side = root / 'data' / 'pile-solver' / 'research-rank.json'
+            side.parent.mkdir(parents=True, exist_ok=True)
+            side.write_text(json.dumps({'auto': False, 'about': 'Report only. Tool Box name matcher. auto stays false.',
+                                        'ranks': RESEARCH_RANKS}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+            written.append(str(side))
+        except Exception:  # noqa: BLE001  (unwritable side file: the waiting-room files are already written)
+            pass
     nov, novp = override_report(root, ov, inpile, written)
     stats.update(overrides_not_from_brandon=nov, of_them_in_pile=novp)
     nq = add_questions(root, done_now)

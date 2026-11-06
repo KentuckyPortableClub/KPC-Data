@@ -256,6 +256,63 @@ def replay(flag):
     }
 
 
+def _blackford_outputs(flag, block_side=False):
+    """One Blackford Oaks run in a throwaway tree. Returns (output files, notes)."""
+    prev_flag = os.environ.get('KPC_RESEARCH_SOURCES')
+    prev = (S.LINKS, S.DATA, S.now_cst, S.T0)
+    os.environ['KPC_RESEARCH_SOURCES'] = flag
+    if hasattr(S, 'RESEARCH_RANKS'):
+        S.RESEARCH_RANKS.clear()
+    S.KEYS.clear()
+    S.LAYERS.clear()
+    S.now_cst = lambda: STAMP
+    S.T0 = __import__('time').time()
+    root = pathlib.Path(tempfile.mkdtemp(prefix='blackford-'))
+    links = root / 'links'
+    (links / 'data/us-key').mkdir(parents=True)
+    (links / 'data/ca-key').mkdir(parents=True)
+    key = {'parks': {'US-7777': {
+        'n': 'Blackford Oaks W.M.A.', 't': 'Wildlife Management Area',
+        'm': [['creek', 'Blackford Creek', 0, 'name'],
+              ['oaks', 'Blackford Oaks Wildlife Management Area', 0, 'name']]}}}
+    (links / 'data/us-key/US-KY.json').write_text(json.dumps(key), encoding='utf-8')
+    (links / 'data/us-key/overrides.json').write_text('{"parks": {}}\n', encoding='utf-8')
+    (links / 'data/ca-key/overrides.json').write_text('{"parks": {}}\n', encoding='utf-8')
+    (links / 'data/us-key/layers.json').write_text('{}', encoding='utf-8')
+    (root / 'data/answer-sheet').mkdir(parents=True)
+    (root / 'data/detective').mkdir(parents=True)
+    (root / 'data/detective/questions.json').write_text('{"questions": []}', encoding='utf-8')
+    if block_side:
+        (root / 'data/pile-solver/research-rank.json').mkdir(parents=True)
+    S.LINKS, S.DATA = links, root
+    AL.LEDGER = root / 'ledger.csv'
+    AL.STATE = root / 'ledger-state.json'
+    AL.save_rows([])
+    AL.save_state({'auto': False})
+    real_open = urllib.request.urlopen
+
+    def no_net(*_a, **_k):
+        raise AssertionError('network')
+
+    urllib.request.urlopen = no_net
+    try:
+        bp = {'ref': 'US-7777', 'area': 'US-KY', 'areas': 'US-KY', 'name': 'Blackford Oaks W.M.A.',
+              'type': 'Wildlife Management Area', 'flags': set(), 'why': 'two-name replay', 'ids': ['creek', 'oaks'],
+              'lat': '37.1', 'lon': '-85.0', 'action': 'HOLD', 'src': 'pile', 'h': 'blackford-oaks-wma', 'page': ''}
+        S.run(root, [bp], _blackford_fetcher())
+        files = _snap(root)
+        info = {'side_still_blocked': (root / 'data/pile-solver/research-rank.json').is_dir()}
+    finally:
+        urllib.request.urlopen = real_open
+        S.LINKS, S.DATA, S.now_cst, S.T0 = prev
+        if prev_flag is None:
+            os.environ.pop('KPC_RESEARCH_SOURCES', None)
+        else:
+            os.environ['KPC_RESEARCH_SOURCES'] = prev_flag
+        shutil.rmtree(root, ignore_errors=True)
+    return files, info
+
+
 def _without_side(files):
     return {k: v for k, v in files.items() if k != SIDE}
 
@@ -309,8 +366,8 @@ def main():
     extra_writes = sorted(set(report['writes']) - set(off['writes']))
     missing_writes = sorted(set(off['writes']) - set(report['writes']))
     check(missing_reads == [], f'report mode does not drop a read the default replay made ({missing_reads[:4]})')
-    check(extra_reads == ['repo/data/research-sources/abbreviations.csv'],
-          f'report mode reads the abbreviation list and nothing else extra ({extra_reads})')
+    check(extra_reads == ['repo/data/maprep/abbreviations.json', 'repo/data/research-sources/abbreviations.csv'],
+          f'report mode reads the toolbox table and the sourced abbreviation list, nothing else ({extra_reads})')
     check(missing_writes == [], f'report mode does not drop a write the default replay made ({missing_writes[:4]})')
     check(extra_writes == ['root/blackford/data/pile-solver/research-rank.json'],
           f'report mode adds only the rank side file ({extra_writes})')
@@ -362,6 +419,30 @@ def main():
     check(RS.gated_source_fields('https://example.test/layer', ['NAME', 'ACRES']) == {},
           'this change adds no source/field mapping even in report mode')
     os.environ.pop('KPC_RESEARCH_SOURCES', None)
+
+    # A bad abbreviation file must not change the two-name verdict. An unwritable side file must not drop the core outputs.
+    import kpc_research_sources as RS2
+    saved_csv, saved_json = RS2.ABBREV_CSV, RS2.ABBREV_JSON
+    try:
+        bad = pathlib.Path(tempfile.mkdtemp(prefix='bad-abbrev-'))
+        bad_csv = bad / 'abbreviations.csv'
+        bad_csv.write_bytes(b'\xff\xfe not utf-8 abbreviation csv\n')
+        RS2.ABBREV_CSV = bad_csv
+        RS2.reset_matcher()
+        got, _info = _blackford_outputs('report')
+        park = json.loads(got['data/waiting/in/data/pile-solver/US-KY.json'])['parks']['US-7777']
+        check(park['verdict'] == 'SOLVED-JOIN' and park['answer_word'] == 'YES' and park['record_id'] == 'creek',
+              f'bad abbreviation CSV: verdict stays SOLVED-JOIN / YES / creek ({park["verdict"]} {park["answer_word"]} {park["record_id"]})')
+    finally:
+        RS2.ABBREV_CSV, RS2.ABBREV_JSON = saved_csv, saved_json
+        RS2.reset_matcher()
+    blocked, info = _blackford_outputs('report', block_side=True)
+    park = json.loads(blocked['data/waiting/in/data/pile-solver/US-KY.json'])['parks']['US-7777']
+    check(park['verdict'] == 'SOLVED-JOIN' and park['answer_word'] == 'YES' and park['record_id'] == 'creek',
+          f'unwritable side file: core verdict stays SOLVED-JOIN / YES / creek ({park["verdict"]} {park["answer_word"]} {park["record_id"]})')
+    check(json.loads(blocked['data/pile-solver/state.json']).get('auto') is False,
+          'unwritable side file: state.json is still written and auto stays false')
+    check(info['side_still_blocked'], 'unwritable side file: research-rank.json was not written over')
 
     src = (ROOT / '.github/scripts/kpc_pile_solver.py').read_text(encoding='utf-8')
     check("state['auto'] = True" not in src and 'state["auto"] = True' not in src,

@@ -8,11 +8,15 @@ KPC_RESEARCH_SOURCES defaults to off. Off, the solver reads and writes the same
 bytes as before. Report mode ranks outlines the solver has already read and writes
 data/pile-solver/research-rank.json. That file is the only extra write.
 
-The rank uses the research-pack abbreviation list (data/research-sources/abbreviations.csv)
-and the Mapping Rep Tool Box name matcher (kpc-maprep-check.js canon / nameScore,
-carried here as kpc_research_sources.py because that module is not on KPC-Links main).
-Abbreviations are read only in report mode. The rank does not change a verdict, a key,
-or the solver CSV.
+The rank uses the active Mapping Rep Tool Box matcher (kpc-maprep-logic.js nameScore)
+and that file's abbreviation table (data/maprep/abbreviations.json), plus the 30 sourced
+rows from the round-3 return (data/research-sources/abbreviations.csv). from_memory rows
+are not on the list. A sourced code never replaces a Tool Box expansion. SPA keeps both
+Special Protection Area and State Preservation Area. WMA, NF, and SP already use the
+same words. SHS and HP are new. 'game' is not dropped, so a game area and a recreation
+area stay different. Abbreviations are read only in report mode. A bad abbreviation file or a
+failed side-file write does not change a verdict or skip the core outputs. The rank
+does not change a verdict, a key, or the solver CSV.
 
 No source or field mapping was added. A layer query still asks for the same fields.
 data/pile-solver/state.json "auto" stays false until a person sets it.
