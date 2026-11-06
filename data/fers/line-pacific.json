@@ -8,41 +8,57 @@
   "US-AK",
   "US-HI"
  ],
- "since": "2026-10-29",
- "date": "2026-10-29 07:17 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 08:56 UTC",
  "verdict": "STOPPED",
  "why": [
+  "missing check: 8354 of 10679 expected pairs were never looked at (78%; 2192 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (7962); <park>: not in this run (another state, retired, or no POTA pin) (295); <park>: approximate outline only (never confirms); <park>: not in this run (another state, (55)",
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 2178 of 2455 pairs whose boxes touch"
+  "pass 1 tested 848 of 45058 pairs whose boxes touch",
+  "water not checked: US-AK: 3 rows (the USGS water map / files had no answer there): never READY with one"
  ],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 223,
-  "DROPPED": 577,
-  "NEVER LOOKED AT": 5355
+  "FOUND": 44,
+  "DROPPED": 89,
+  "NEVER LOOKED AT": 10546
+ },
+ "never_looked_at": {
+  "counted": 8354,
+  "no_official_outline": 2192,
+  "expected": 10679,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 7962,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 295,
+   "<park>: approximate outline only (never confirms); <park>: not in this run (another state,": 55,
+   "<park>: no official boundary; <park>: not in this run (another state, retired, or no POTA ": 20,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 11,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: approximate outl": 9
+  }
  },
  "report": {
   "pass1": {
-   "date": "2026-10-29",
-   "pairs tested": 2178,
-   "pairs whose boxes touch": 2455,
+   "date": "2026-11-06",
+   "pairs tested": 848,
+   "pairs whose boxes touch": 45058,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 3961,
-   "date": "2026-10-29",
-   "pairs tested": 598
+   "agree with the pass before": 1364,
+   "date": "2026-11-06",
+   "pairs tested": 134
   },
   "pass3": {
-   "agree with the pass before": 1709,
-   "date": "2026-10-29",
-   "pairs tested": 583
+   "agree with the pass before": 409,
+   "date": "2026-11-06",
+   "pairs tested": 131
   },
   "pass5": {
-   "checked": 253,
-   "date": "2026-10-29",
+   "checked": 36,
+   "date": "2026-11-06",
    "pairs tested": 0,
-   "still not checked": 0
+   "still not checked": 3
   }
  },
  "files": {
@@ -53,64 +69,65 @@
   "US-HI": "data/fers/US-HI.json"
  },
  "US-CA": {
-  "rows": 1342,
-  "live": 103,
+  "rows": 18,
+  "live": 5,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "low-confidence outline for Kern National Wild and Scenic Riv": 1,
-   "the agency ownership map did not answer": 5
+   "one record covers two parks": 4
   },
-  "dropped": 848,
-  "merged": 385
+  "dropped": 0,
+  "merged": 9
  },
  "US-OR": {
-  "rows": 967,
-  "live": 78,
+  "rows": 22,
+  "live": 4,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 29,
-   "the outlines overlap, but the Forest Service ownership map": 1,
-   "no public owner on the ownership map": 1
+   "one record covers two parks": 1
   },
-  "dropped": 634,
-  "merged": 224
+  "dropped": 0,
+  "merged": 17
  },
  "US-WA": {
-  "rows": 725,
-  "live": 48,
+  "rows": 37,
+  "live": 5,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 21
+   "one record covers two parks": 1
   },
-  "dropped": 346,
-  "merged": 310
+  "dropped": 0,
+  "merged": 31
  },
  "US-AK": {
-  "rows": 1251,
-  "live": 34,
+  "rows": 1375,
+  "live": 45,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 3,
-   "no public owner on the ownership map": 1,
-   "low-confidence outline for Palmer Hay Flats Wildlife Refuge": 1
+   "water not checked": 3,
+   "the agency ownership map did not answer": 2,
+   "no public owner on the ownership map": 3,
+   "this spot is 336 km from Tanana Valley State Forest's POTA p": 1
   },
-  "dropped": 894,
-  "merged": 318
+  "dropped": 1078,
+  "merged": 243
+ },
+ "water_weak": {
+  "US-AK": 3
  },
  "US-HI": {
-  "rows": 76,
-  "live": 23,
+  "rows": 101,
+  "live": 21,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 2
   },
-  "dropped": 43,
-  "merged": 8
+  "dropped": 52,
+  "merged": 26
  },
  "states_ready": [],
  "states_held": [
