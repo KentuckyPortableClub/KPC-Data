@@ -14,7 +14,7 @@ Switches (env; the picture tracer also has command-line flags):
   KPC_PARCEL_PARK_MIN     8  per-park wall-clock minutes; a hung host/statewide layer is skipped and the run continues.
   KPC_PARCEL_REQ_TIMEOUT  30 per-request HTTP timeout in seconds (Polite).
 """
-import json, os, re
+import glob, json, os, re
 
 DEFAULTS = {'KPC_TRACE_HONOR_IMAGE': '1', 'KPC_TRACE_ACRES_FILE': '', 'KPC_TRACE_CHANCE_RATIO': '1.5', 'KPC_TRACE_CHANCE_MARGIN': '2.0',
             'KPC_PARCEL_ADJ_M': '30', 'KPC_PARCEL_GROW_CAP': '1.25', 'KPC_PARCEL_SUBTRACT': '1',
@@ -50,16 +50,43 @@ def chosen_image(row):
 
 
 def load_acres(path):
+    """{ref: acres}. path = one file or several joined by ',' (Nov 6, tracer follow-up from #19: broader acres coverage).
+    A file is {ref: acres | {'acres': n}} (data/acres.json) or a key tract side file ({'parks': {ref: [{'ac': n}, ...]}}, from
+    KPC-Links data/us-key/tracts, data/ca-key/tracts, data/world-key/tracts, data/tracts): a park's official acres = the sum of its
+    tracts' source acres, only when every tract has one; a park in two side files (two states) is summed. The first file that
+    names a park wins over later files (so data/acres.json, listed first, keeps priority)."""
     out = {}
     if not path: return out
+    files = [p.strip() for p in str(path).split(',') if p.strip()]
+    if len(files) > 1 or os.path.isdir(files[0]):
+        exp = []
+        for f in files: exp += sorted(glob.glob(os.path.join(f, '*.json'))) if os.path.isdir(f) else [f]
+        side = {}
+        for f in exp:
+            plain, sd = load_acres_one(f)
+            for r, a in plain.items(): out.setdefault(r, a)
+            for r, a in sd.items(): side[r] = side.get(r, 0.0) + a
+        for r, a in side.items(): out.setdefault(r, a)
+        return out
+    plain, sd = load_acres_one(files[0])
+    for r, a in sd.items(): plain.setdefault(r, a)
+    return plain
+
+
+def load_acres_one(path):
+    out, side = {}, {}
     try: d = json.load(open(path, encoding='utf-8'))
-    except Exception: return out  # noqa: BLE001
+    except Exception: return out, side  # noqa: BLE001
     d = d.get('parks', d) if isinstance(d, dict) else {}
     for r, v in (d.items() if isinstance(d, dict) else []):
+        if isinstance(v, list):
+            ac = [t.get('ac') for t in v if isinstance(t, dict)]
+            if ac and len(ac) == len(v) and all(isinstance(a, (int, float)) and a > 0 for a in ac): side[r] = float(sum(ac))
+            continue
         try: a = float(v.get('acres') if isinstance(v, dict) else v)
         except (TypeError, ValueError, AttributeError): continue
         if a > 0: out[r] = a
-    return out
+    return out, side
 
 
 def fill_acres(index, acres):
