@@ -1,23 +1,7 @@
 {
- "checked": "2026-11-06T17:13Z",
- "switched_on": true,
+ "checked": "2026-11-06T17:14Z",
+ "switched_on": false,
  "results": [
-  {
-   "path": "data/access/US-NJ.json",
-   "kind": "access",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/access/index.json",
-   "kind": "info",
-   "why": [],
-   "notes": [
-    "the access index: passes when it reads as JSON"
-   ],
-   "verdict": "PASS"
-  },
   {
    "path": "data/ca-key/CA-AB.json",
    "kind": "key",
@@ -697,7 +681,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/71aa8ae4f9/chain_o_lakes_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
