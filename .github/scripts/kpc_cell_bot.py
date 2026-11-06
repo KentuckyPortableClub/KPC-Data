@@ -58,49 +58,144 @@ def pins_other(refs_by_st):
     return out
 
 
+def _hex_file(x):
+    t = json.dumps(x).lower()
+    return 'hex' in t or '_h3_' in t or 'h3' in str(x.get('subcategory') or '').lower()
+
+
+def _fmt_rank(x):
+    ft = (str(x.get('file_type') or '') + ' ' + str(x.get('file_name') or '')).lower()
+    return 0 if 'gpkg' in ft or 'geopackage' in ft else 1 if 'shp' in ft or 'shape' in ft else 2 if 'csv' in ft else 3
+
+
 def files_for(date, fips, log):
-    r = get(f'/map/downloads/listAvailabilityData/{date}', params={'category': 'State', 'technology_type': 'Mobile Broadband'})
-    rows = (r.json() or {}).get('data') or [] if r.ok else []
-    if not rows:   # the filters differ from what we expect: take the whole list and filter here
-        r = get(f'/map/downloads/listAvailabilityData/{date}'); rows = (r.json() or {}).get('data') or [] if r.ok else []
-    mine = [x for x in rows if str(x.get('state_fips') or '').zfill(2) == fips and 'mobile broadband' in str(x.get('technology_type') or '').lower()]
-    log.append({'state': fips, 'listed': len(rows), 'mobile_files': len(mine), 'sample': mine[:3]})
-    hexes = [x for x in mine if 'hex' in json.dumps(x).lower()] or mine
-    csvs = [x for x in hexes if str(x.get('file_type') or '').lower() == 'csv'] or hexes
-    return csvs
+    """Nov 6 fix (carrier field): the STATE files are all carriers together (no provider in them) and come as Shapefile / GeoPackage,
+    not CSV, so the old read found nothing and the carrier came out 'None'. Now: the PROVIDER files first (one per carrier and
+    technology: bdc_{fips}_{providerid}_{tech}_mobile_broadband_h3_..., fields providerid / brandname / technology / environmnt /
+    h3_res9_id), one format per carrier+technology (GeoPackage, else Shapefile, else CSV). Only when the FCC lists no provider file
+    for the state: the state file, labelled 'All carriers (FCC combined)'."""
+    out = []
+    for cat in ('Provider', 'State'):
+        r = get(f'/map/downloads/listAvailabilityData/{date}', params={'category': cat, 'technology_type': 'Mobile Broadband'})
+        rows = (r.json() or {}).get('data') or [] if r.ok else []
+        if not rows:   # the filters differ from what we expect: take the whole list and filter here
+            r = get(f'/map/downloads/listAvailabilityData/{date}'); rows = (r.json() or {}).get('data') or [] if r.ok else []
+            rows = [x for x in rows if str(x.get('category') or '').lower() == cat.lower()]
+        mine = [x for x in rows if str(x.get('state_fips') or '').zfill(2) == fips and 'mobile broadband' in str(x.get('technology_type') or '').lower()]
+        mine = [x for x in mine if _hex_file(x)] or mine
+        pick = {}
+        for x in sorted(mine, key=_fmt_rank):
+            k = (str(x.get('provider_id') or ''), str(x.get('technology_code') or x.get('technology_code_desc') or ''))
+            pick.setdefault(k, x)
+        log.append({'state': fips, 'category': cat, 'listed': len(rows), 'mobile_files': len(mine), 'picked': len(pick), 'sample': mine[:3]})
+        for x in pick.values(): x['_cat'] = cat
+        out = list(pick.values())
+        if out: break
+    return out
 
 
-def read_file(date, row, want, log):
-    """Download one coverage file; return {h3: (tech, env)} for the hexes we want."""
-    fid = row.get('file_id')
-    r = get(f'/map/downloads/downloadFile/availability/{fid}')
-    if not r.ok: log.append({'file': fid, 'http': r.status_code}); return None
-    got = {}
+ALL = 'All carriers (FCC combined)'
+
+
+def _col(cols, *names, part=None):
+    low = {c.lower(): c for c in cols}
+    for n in names:
+        if n in low: return low[n]
+    return next((c for c in cols if part and part in c.lower()), None) if part else None
+
+
+def _rows_gpkg(path):
+    import sqlite3
+    con = sqlite3.connect(path)
     try:
-        z = zipfile.ZipFile(io.BytesIO(r.content))
-        for nm in z.namelist():
-            if not nm.lower().endswith('.csv'): continue
-            with z.open(nm) as f:
-                rd = csv.DictReader(io.TextIOWrapper(f, encoding='utf-8', errors='replace'))
-                cols = rd.fieldnames or []
-                hc = next((c for c in cols if 'h3' in c.lower()), None)
-                tc = next((c for c in cols if c.lower() in ('technology', 'technology_code', 'tech_code')), None)
-                ec = next((c for c in cols if 'environment' in c.lower() or c.lower() == 'env'), None)
-                log.append({'file': fid, 'csv': nm, 'cols': cols[:20]})
-                if not hc: continue
-                for x in rd:
-                    h = x.get(hc)
-                    if h in want:
-                        t = TECH.get(str(x.get(tc) or row.get('technology_code') or ''), str(x.get(tc) or row.get('technology_code_desc') or ''))
-                        got.setdefault(h, []).append((t, str(x.get(ec) or '')))
-    except Exception as e:  # noqa: BLE001
-        log.append({'file': fid, 'error': f'{type(e).__name__}: {e}'[:200]}); return None
+        tabs = [t for (t,) in con.execute("select table_name from gpkg_contents where data_type in ('features','attributes')")] or \
+               [t for (t,) in con.execute("select name from sqlite_master where type='table' and name not like 'gpkg%' and name not like 'rtree%' and name not like 'sqlite%'")]
+        for t in tabs:
+            cur = con.execute(f'select * from "{t}"')
+            cols = [d[0] for d in cur.description]
+            keep = [i for i, c in enumerate(cols) if c.lower() not in ('geom', 'geometry', 'shape')]
+            yield [cols[i] for i in keep], None
+            for row in cur: yield None, {cols[i]: row[i] for i in keep}
+    finally: con.close()
+
+
+def _rows_dbf(fh):
+    """A plain dBASE III reader (the Shapefile's attribute table); no extra packages."""
+    import struct
+    head = fh.read(32); n, hl, rl = struct.unpack('<IHH', head[4:12])
+    rest, fields = fh.read(hl - 32), []
+    for k in range(0, len(rest) - 31, 32):
+        d = rest[k:k + 32]
+        if d[0] == 0x0D: break
+        fields.append((d[:11].split(b'\0')[0].decode('latin-1'), chr(d[11]), d[16]))
+    yield [f[0] for f in fields], None
+    for _ in range(n):
+        rec = fh.read(rl)
+        if not rec or len(rec) < rl: break
+        if rec[:1] == b'*': continue
+        o, pos = {}, 1
+        for nm, _t, ln in fields:
+            o[nm] = rec[pos:pos + ln].decode('latin-1', 'replace').strip(); pos += ln
+        yield None, o
+
+
+def _rows_csv(fh):
+    rd = csv.DictReader(io.TextIOWrapper(fh, encoding='utf-8', errors='replace'))
+    yield rd.fieldnames or [], None
+    for x in rd: yield None, x
+
+
+def parse_zip(blob, want, row, log):
+    """{h3: [(tech, env, carrier)]} for the hexes we want, from one FCC zip (GeoPackage, Shapefile .dbf or CSV inside)."""
+    import tempfile
+    got = {}
+    z = zipfile.ZipFile(io.BytesIO(blob))
+    for nm in z.namelist():
+        ext = nm.lower().rsplit('.', 1)[-1]
+        if ext not in ('gpkg', 'dbf', 'csv'): continue
+        if ext == 'gpkg':
+            tf = tempfile.NamedTemporaryFile(suffix='.gpkg', delete=False); tf.write(z.read(nm)); tf.close()
+            it = _rows_gpkg(tf.name)
+        else:
+            it = (_rows_dbf if ext == 'dbf' else _rows_csv)(z.open(nm))
+        cols, hc = [], None
+        for c, x in it:
+            if c is not None:
+                cols = c
+                hc = _col(cols, 'h3_res9_id', 'h3_hex', part='h3')
+                tc = _col(cols, 'technology', 'technology_code', 'tech_code', 'tech')
+                ec = _col(cols, 'environmnt', 'environment', 'env', part='environ')
+                bc = _col(cols, 'brandname', 'brand_name', 'provider_name')
+                pc = _col(cols, 'providerid', 'provider_id')
+                log.append({'file': row.get('file_id'), 'member': nm, 'cols': cols[:20]})
+                continue
+            if not hc: break
+            h = x.get(hc)
+            if h not in want: continue
+            code = str((x.get(tc) if tc else None) or row.get('technology_code') or '').split('.')[0]
+            t = TECH.get(code, TECH.get(str(row.get('technology_code') or ''), str(row.get('technology_code_desc') or code)))
+            car = str((x.get(bc) if bc else '') or row.get('provider_name') or row.get('brand_name') or (x.get(pc) if pc else '') or row.get('provider_id') or '').strip()
+            if not car or car == 'None' or row.get('_cat') == 'State': car = ALL
+            got.setdefault(h, []).append((t, str(x.get(ec) if ec else ''), car))
+        if ext == 'gpkg':
+            try: os.unlink(tf.name)
+            except OSError: pass
     return got
 
 
+def read_file(date, row, want, log):
+    """Download one coverage file; return {h3: [(tech, env, carrier)]} for the hexes we want."""
+    fid = row.get('file_id')
+    r = get(f'/map/downloads/downloadFile/availability/{fid}')
+    if not r.ok: log.append({'file': fid, 'http': r.status_code}); return None
+    try: return parse_zip(r.content, want, row, log)
+    except Exception as e:  # noqa: BLE001
+        log.append({'file': fid, 'error': f'{type(e).__name__}: {e}'[:200]}); return None
+
+
 def best(lst):
-    """Outdoor stationary first: the FCC's environment codes as read are kept in the work log; a file without an environment column
-    is taken as it is. Returns the best technology."""
+    """Best technology claimed at the point. Both FCC environment codes include outdoor stationary (0 = outdoor stationary only,
+    1 = in-vehicle AND outdoor stationary), so every row counts for an operator standing at the park."""
     out = 'none'
     for t, env in lst:
         if t in RANK and RANK[t] > RANK[out]: out = t
@@ -145,9 +240,11 @@ def main():
             g = read_file(date, row, want, log)
             if g is None: continue
             readok += 1
-            carrier = str(row.get('provider_name') or row.get('brand_name') or row.get('provider_id'))
-            for h, lst in g.items(): res.setdefault(h, {}).setdefault(carrier, []).extend(lst)
-        carriers = sorted({str(r_.get('provider_name') or r_.get('provider_id')) for r_ in files})
+            for h, lst in g.items():
+                for t, env, car in lst: res.setdefault(h, {}).setdefault(car, []).append((t, env))
+        # Nov 6: the carriers are the names IN the files (brandname), else the FCC list's provider name; never 'None'
+        carriers = sorted({c for v in res.values() for c in v} | {str(r_.get('provider_name') or '').strip() for r_ in files if r_.get('_cat') == 'Provider' and str(r_.get('provider_name') or '').strip() not in ('', 'None')})
+        if not carriers and readok: carriers = [ALL]
         rows = {}
         for ref, v in P.items():
             e = {'n': v['n']}
@@ -168,7 +265,35 @@ def main():
     note(f'FCC as-of {date}; ' + ('; '.join(summ) or 'nothing read'))
 
 
+def selftest():
+    """Offline: one GeoPackage zip, one Shapefile (.dbf) zip and one State (all carriers) CSV zip, built here; no FCC key, no network."""
+    import sqlite3, struct, tempfile
+    H1, H2 = '892aa8458c7ffff', '892aa8458cbffff'
+    d = tempfile.mkdtemp(); g = os.path.join(d, 'x.gpkg'); con = sqlite3.connect(g)
+    con.execute("create table gpkg_contents (table_name text, data_type text)"); con.execute("insert into gpkg_contents values ('cov','features')")
+    con.execute('create table cov (fid integer, geom blob, frn text, providerid integer, brandname text, technology integer, mindown real, minup real, minsignal integer, environmnt integer, h3_res9_id text)')
+    con.execute("insert into cov values (1, x'00', '0001', 130077, 'Verizon', 500, 7.0, 1.0, -110, 0, ?)", (H1,))
+    con.execute("insert into cov values (2, x'00', '0001', 130077, 'Verizon', 500, 7.0, 1.0, -110, 1, '89ffffffffffff1')"); con.commit(); con.close()
+    b = io.BytesIO(); zipfile.ZipFile(b, 'w').write(g, 'bdc_21_130077_500_mobile_broadband_h3_J24_01apr2025.gpkg')
+    log = []
+    r1 = parse_zip(b.getvalue(), {H1, H2}, {'file_id': 1, '_cat': 'Provider', 'technology_code': 500}, log)
+    assert r1 == {H1: [('5G', '0', 'Verizon')]}, r1
+    flds = [('providerid', 'N', 10), ('brandname', 'C', 20), ('technology', 'N', 3), ('environmnt', 'N', 1), ('h3_res9_id', 'C', 15)]
+    hdr = struct.pack('<BBBBIHH20x', 3, 125, 1, 1, 1, 32 + 32 * len(flds) + 1, 1 + sum(f[2] for f in flds))
+    for nm, t, ln in flds: hdr += nm.encode().ljust(11, b'\0') + t.encode() + b'\0' * 4 + bytes([ln, 0]) + b'\0' * 14
+    rec = b' ' + b'130403'.rjust(10) + b'AT&T'.ljust(20) + b'400' + b'1' + H2.encode()
+    b = io.BytesIO(); z = zipfile.ZipFile(b, 'w'); z.writestr('bdc_21_130403_400_mobile_broadband_h3.dbf', hdr + b'\r' + rec + b'\x1a'); z.close()
+    r2 = parse_zip(b.getvalue(), {H1, H2}, {'file_id': 2, '_cat': 'Provider'}, log)
+    assert r2 == {H2: [('4G', '1', 'AT&T')]}, r2
+    b = io.BytesIO(); z = zipfile.ZipFile(b, 'w'); z.writestr('bdc_21_400_mobile_broadband_h3.csv', f'technology,mindown,minup,environmnt,h3_res9_id\n400,5,1,0,{H1}\n'); z.close()
+    r3 = parse_zip(b.getvalue(), {H1}, {'file_id': 3, '_cat': 'State', 'provider_name': None}, log)
+    assert r3 == {H1: [('4G', '0', ALL)]}, r3
+    assert best([('4G', '0'), ('5G', '1')]) == '5G' and best([]) == 'none'
+    print('kpc_cell_bot selftest OK: GeoPackage, Shapefile .dbf and State CSV read; carriers', sorted({c for r in (r1, r2, r3) for v in r.values() for *_, c in v}))
+
+
 if __name__ == '__main__':
+    if '--selftest' in sys.argv: selftest(); sys.exit(0)
     try: main()
     except Exception as e: note(f'stopped ({type(e).__name__}: {e})')  # noqa: BLE001
     sys.exit(0)

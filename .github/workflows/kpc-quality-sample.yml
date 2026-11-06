@@ -1,0 +1,116 @@
+name: KPC quality sample (weekly, report only)
+# Nov 6 2026 (big key / 2-fer patch; Brandon [pt437u]): the scored sample (pile-solver proposals vs Quality verdicts) on a
+# schedule, plus the pile-exit check and the official-polygon sample in a REPORT-ONLY run path.
+# NOTHING IS SAVED: read-only checkout, contents: read, no push step. The polygon sample writes ledger proposals into the
+# runner's throwaway copy only; pile exit writes exits.jsonl only when data/pile-solver auto is true (it stays false).
+# Outputs come back as the artifact 'quality-sample' (14 days) and a job summary.
+on:
+  schedule:
+    - cron: '41 13 * * 1'   # Mondays 7:41 AM CST. Brandon's own OK, 7:11 AM CST Nov 6: "Yes, put the Quality sample on a weekly schedule"
+  workflow_dispatch:
+    inputs:
+      polygon:
+        description: 'Also run the official-polygon sample (polite web reads through kpc_manners, ~dozens of parks): yes / no'
+        default: 'yes'
+permissions:
+  contents: read
+concurrency:
+  group: kpc-quality-sample
+  cancel-in-progress: false
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        continue-on-error: true
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Scored sample (pile-solver proposals vs Quality verdicts)
+        id: scored
+        continue-on-error: true
+        run: |
+          mkdir -p "$RUNNER_TEMP/q/scored"
+          cd kpcdata && DATA=. python3 .github/scripts/kpc_scored_sample.py "$RUNNER_TEMP/q/scored" || { kpc_rc=$?; echo "::error title=kpc_scored_sample.py::stopped with an error (exit $kpc_rc)"; echo "kpc_scored_sample.py - stopped with an error (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      - name: Pile exit (report only; auto stays false)
+        id: exit
+        continue-on-error: true
+        run: |
+          mkdir -p "$RUNNER_TEMP/q/exit"
+          cd kpcdata
+          A=$(python3 -c "import json;print(1 if json.load(open('data/pile-solver/state.json')).get('auto') is True else 0)" 2>/dev/null || echo 0)
+          [ "$A" = 1 ] && echo "::warning title=Pile exit::data/pile-solver/state.json auto is TRUE; this report-only run still saves nothing"
+          python3 .github/scripts/kpc_pile_exit.py > "$RUNNER_TEMP/q/exit/pile-exit.json" || { kpc_rc=$?; echo "::error title=kpc_pile_exit.py::stopped with an error (exit $kpc_rc)"; echo "kpc_pile_exit.py - stopped with an error (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          cat "$RUNNER_TEMP/q/exit/pile-exit.json" | head -40
+      - name: Official-polygon sample (report only; robots.txt obeyed via kpc_manners)
+        id: polygon
+        if: github.event_name == 'schedule' || inputs.polygon != 'no'
+        continue-on-error: true
+        env:
+          KPC_ARCGIS_ROBOTS_EXEMPT: '0'
+          LINKS: ../links
+        run: |
+          mkdir -p "$RUNNER_TEMP/q/polygon"
+          cd kpcdata && DATA=. timeout 25m python3 .github/scripts/kpc_official_polygon_sample.py "$RUNNER_TEMP/q/polygon" || { kpc_rc=$?; echo "::warning title=kpc_official_polygon_sample.py::stopped (exit $kpc_rc); report only"; echo "kpc_official_polygon_sample.py - stopped (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          git status --short | head -20   # the ledger proposals it made stay in this throwaway copy (never pushed)
+      - name: Summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib
+          q = pathlib.Path(os.environ['RUNNER_TEMP']) / 'q'; L = ['## Quality sample (report only, nothing saved)']
+          try: L.append('**Scored sample:** `' + json.dumps(json.load(open(q / 'scored/scored-sample-summary.json')))[:600] + '`')
+          except Exception as e: L.append(f'Scored sample: no summary ({type(e).__name__})')
+          try:
+              t = (q / 'exit/pile-exit.json').read_text(); j = json.loads(t[t.index('{'):])
+              L.append(f"**Pile exit:** auto={j.get('auto')}, ready={j.get('count_ready')}, would exit now={len(j.get('would_exit_now') or [])}")
+          except Exception as e: L.append(f'Pile exit: no report ({type(e).__name__})')
+          L.append('**Polygon sample files:** ' + ', '.join(sorted(p.name for p in (q / 'polygon').glob('*') if p.is_file())[:12]) if (q / 'polygon').exists() else 'Polygon sample: not run')
+          print('\n'.join(L)); open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('\n\n'.join(L) + '\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-sample
+          path: ${{ runner.temp }}/q/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+          KPC_FAIL_SAFE: ${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}   # safe: the last step of a job nothing follows; KPC_HIDDEN_RED=off turns it off
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY

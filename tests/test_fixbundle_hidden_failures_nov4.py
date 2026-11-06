@@ -53,9 +53,12 @@ with tempfile.TemporaryDirectory() as td:
     p = subprocess.run([sys.executable, '-B', '-c', py], env=env, capture_output=True, text=True)
     summ = open(os.path.join(td, 'sum.md')).read()
 check('the G8 report lists the caught error in the summary', ('Errors caught inside steps and kept green (1)' in summ, 'kpc_discovery.py - stopped with an error (exit 1)' in summ, 'Steps that failed but were kept green:** a' in summ, p.returncode), (True, True, True, 0))
+# Crons Brandon OK'd himself (the only way a new cron gets in): Brandon, 7:11 AM CST Nov 6 2026 (relayed by the parent agent, his
+# words): "Yes, put the Quality sample on a weekly schedule" -> kpc-quality-sample.yml Mondays 7:41 AM CST.
+BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1')}
 crons = lambda t: re.findall(r"^\s*-\s*cron:.*$", t, re.M)
 base = subprocess.run(['git', '-C', str(R), 'cat-file', '-e', 'a569c9b35'], capture_output=True).returncode == 0
 if base:
     diff = subprocess.run(['git', '-C', str(R), 'diff', 'a569c9b35', '--', '.github/workflows'], capture_output=True, text=True).stdout
-    check('no cron line added' + ('' if paused else ' or changed'), [l for l in diff.split('\n') if re.match(r'^[+]\s*-\s*cron:' if paused else r'^[+-]\s*-\s*cron:', l)], [])
+    check('no cron line added' + ('' if paused else ' or changed'), [l for l in diff.split('\n') if re.match(r'^[+]\s*-\s*cron:' if paused else r'^[+-]\s*-\s*cron:', l) and not any(c in l for _f, c in BRANDON_OK_CRONS)], [])
 print('ALL PASS' if ok else 'SOME FAILED'); sys.exit(0 if ok else 1)

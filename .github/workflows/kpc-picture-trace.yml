@@ -32,6 +32,10 @@ jobs:
           persist-credentials: false
           sparse-checkout: |
             /kpc-ky-data.json
+            /data/tracts/
+            /data/us-key/tracts/
+            /data/ca-key/tracts/
+            /data/world-key/tracts/
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
@@ -47,7 +51,10 @@ jobs:
         env:
           KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
           KPC_TRACE_MAX_PX: '4000'
-          KPC_TRACE_ACRES_FILE: ../out/acres/acres.json
+          # Nov 6 (tracer follow-up from #19, broader acres coverage): the official acres list first, then the key tract side
+          # files (source acres per park; missing folders are skipped). OFF until repo variable KPC_TRACE_ACRES_TRACTS = yes (more
+          # known acres = the acres gate sends more traces to 'NEEDS A PERSON'; Brandon decides).
+          KPC_TRACE_ACRES_FILE: ${{ vars.KPC_TRACE_ACRES_TRACTS == 'yes' && '../out/acres/acres.json,../links/data/tracts,../links/data/us-key/tracts,../links/data/ca-key/tracts,../links/data/world-key/tracts' || '../out/acres/acres.json' }}
         run: |
           cd kpcdata
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

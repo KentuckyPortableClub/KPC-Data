@@ -40,10 +40,14 @@ for f in KEEP:
     if not (W / f).exists(): continue
     before = subprocess.run(['git', 'show', f'{BASE}:.github/workflows/{f}'], capture_output=True, text=True).stdout
     check(before and on(before).get('schedule') == on((W / f).read_text(encoding='utf-8')).get('schedule'), f'{f}: NOT paused, schedule unchanged')
+# Crons Brandon OK'd himself (the only way a new cron gets in): Brandon, 7:11 AM CST Nov 6 2026 (relayed by the parent agent, his
+# words): "Yes, put the Quality sample on a weekly schedule" -> kpc-quality-sample.yml Mondays 7:41 AM CST.
+BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1')}
 new_crons = []
 for p in sorted(W.glob('*.yml')):
     before = subprocess.run(['git', 'show', f'{BASE}:.github/workflows/{p.name}'], capture_output=True, text=True).stdout
     b = set(re.findall(r"^\s*-\s*cron:\s*['\"]([^'\"]+)", before, re.M)); a = set(re.findall(r"^\s*-\s*cron:\s*['\"]([^'\"]+)", p.read_text(encoding='utf-8'), re.M))
+    a = {c for c in a if (p.name, c) not in BRANDON_OK_CRONS}
     if a - b: new_crons.append((p.name, sorted(a - b)))
 check(new_crons == [], f'no new cron (vs {BASE}): {new_crons}')
 for p in sorted(W.glob('*.yml')):
