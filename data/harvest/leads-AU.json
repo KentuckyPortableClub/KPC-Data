@@ -4,12 +4,14 @@
  "date": "2026-11-06",
  "status": "paused (out of time, will carry on)",
  "steps_done": [
-  "known"
+  "known",
+  "servers",
+  "wfs"
  ],
  "bands": {
-  "A": 45,
-  "B": 13,
-  "C": 0
+  "A": 43,
+  "B": 15,
+  "C": 59
  },
  "failures": [
   {
@@ -661,6 +663,53 @@
    "grade": 5,
    "band": "A"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/hydroarea": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/HydroArea/FeatureServer",
+   "cc": "AU",
+   "title": "HydroArea",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Creative Commons Attribution 4.0 International Licence     https://creativecommons.org/licenses/by/4.0/legalcode    ---     Geofabric AHGF Mapped Streams: © Commonwealth of Australia (Bureau of Meteor",
+   "date": "2024-07-30",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 447,
+     "name": "HydroArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AHGFFType",
+      "Name",
+      "Name_TC",
+      "Hierarchy",
+      "Perennial",
+      "FeatRel",
+      "FSource",
+      "TextNote",
+      "AlbersArea",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10267,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "HydroArea",
+   "grade": 5,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://public-services.slip.wa.gov.au/public/rest/services/landgate_public_maps/map_of_bush_fire_prone_areas_3": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer",
    "cc": "AU",
@@ -747,6 +796,52 @@
    "grade": 5,
    "band": "A"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nt_waterbody": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Waterbody/FeatureServer",
+   "cc": "AU",
+   "title": "NT_Waterbody",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Creative Commons Attribution 4.0 International Licence      https://creativecommons.org/licenses/by/4.0/legalcode     ---     Geofabric AHGF Mapped Streams: © Commonwealth of Australia (Bureau of Mete",
+   "date": "2024-07-30",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 455,
+     "name": "NT_Waterbody",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AHGFFType",
+      "Name",
+      "Name_TC",
+      "Perennial",
+      "FeatRel",
+      "FSource",
+      "TextNote",
+      "AlbersArea",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 15093,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "NT_Waterbody",
+   "grade": 5,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/public/abs_2011": {
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer",
    "cc": "AU",
@@ -757,9 +852,56 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
+    {
+     "id": 90,
+     "name": "Industry [SA2] - Agri or forestry and fish - 2011",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SA2_MAIN",
+      "SA2_NAME",
+      "AGRI_FOR_FISH",
+      "AGRI_FOR_FISH_PERC",
+      "TOTAL",
+      "SHAPE"
+     ],
+     "records": 98,
+     "sample": [
+      "Mowbray",
+      "Newnham - Mayfield",
+      "Newstead"
+     ],
+     "name_field": "SA2_NAME"
+    },
+    {
+     "id": 12,
+     "name": "Remoteness Areas - 2011",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_SQKM",
+      "RA_CODE11",
+      "RA_NAME11",
+      "STE_CODE11",
+      "STE_NAME11",
+      "SHAPE"
+     ],
+     "records": 6,
+     "sample": [
+      "Inner Regional Australia",
+      "Outer Regional Australia",
+      "Remote Australia"
+     ],
+     "name_field": "RA_NAME11"
+    },
     {
      "id": 0,
      "name": "Statistical Area 4 - 2011",
@@ -893,6 +1035,39 @@
    ],
    "layers": [
     {
+     "id": 90,
+     "name": "Industry [SA2] - Agri or forestry and fish - 2016",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SA2_MAIN16",
+      "SA2_NAME16",
+      "SA2_5DIG16",
+      "SA3_CODE16",
+      "SA3_NAME16",
+      "SA4_CODE16",
+      "SA4_NAME16",
+      "GCC_CODE16",
+      "GCC_NAME16",
+      "AGRI_FOR_FISH",
+      "AGRI_FOR_FISH_PERC",
+      "TOTAL",
+      "STE_CODE16",
+      "STE_NAME16",
+      "AREASQKM16",
+      "SHAPE"
+     ],
+     "records": 99,
+     "sample": [
+      "Bridgewater - Gagebrook",
+      "Brighton - Pontville",
+      "Old Beach - Otago"
+     ],
+     "name_field": "SA2_NAME16"
+    },
+    {
      "id": 0,
      "name": "Statistical Area 4 - 2016",
      "geom": "Polygon",
@@ -1021,86 +1196,10 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
-    {
-     "id": 4,
-     "name": "Local Government Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "LGA_ID",
-      "NAME",
-      "LGA_CODE",
-      "PLAN_REF",
-      "GAZ_DATE",
-      "NOM_REG_NO",
-      "UFI",
-      "CREATED_ON",
-      "LIST_GUID",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 29,
-     "sample": [
-      "Burnie",
-      "Huon Valley",
-      "Flinders"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 9,
-     "name": "Legislative Council Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "LEG_CNL_ID",
-      "NAME",
-      "PLAN_REF",
-      "COMMENTS",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 15,
-     "sample": [
-      "Nelson",
-      "Derwent",
-      "Elwick"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 10,
-     "name": "Electoral Boundaries",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "ELECTOR_ID",
-      "NAME",
-      "PLAN_REF",
-      "COMMENTS",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 5,
-     "sample": [
-      "Clark",
-      "Franklin",
-      "Lyons"
-     ],
-     "name_field": "NAME"
-    },
     {
      "id": 11,
      "name": "Private Timber Reserves",
@@ -1270,46 +1369,6 @@
      "name_field": "NAME"
     },
     {
-     "id": 42,
-     "name": "Water Management Plan Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "AREA_ID",
-      "PLAN_NAME",
-      "SHORT_NAME",
-      "AREA_TYPE",
-      "STATUS",
-      "DRAFT_PLAN",
-      "ADOPTED",
-      "EFFECTIVE",
-      "SHAPE"
-     ],
-     "records": 12,
-     "sample": [
-      "Ansons River Catchment Water Management Plan",
-      "Lakes Sorell and Crescent Water Management Plan",
-      "River Clyde Catchment Water Management Plan (Septe"
-     ],
-     "name_field": "PLAN_NAME"
-    },
-    {
-     "id": 44,
-     "name": "Local Government Area Reserves",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "OBJECTID",
-      "CID",
-      "CATEGORY",
-      "SHAPE"
-     ],
-     "records": 1650
-    },
-    {
      "id": 45,
      "name": "Future Potential Production Forest",
      "geom": "Polygon",
@@ -1334,6 +1393,133 @@
       "SHAPE.LEN"
      ],
      "records": 231
+    },
+    {
+     "id": 9,
+     "name": "Legislative Council Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "LEG_CNL_ID",
+      "NAME",
+      "PLAN_REF",
+      "COMMENTS",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 15,
+     "sample": [
+      "Nelson",
+      "Derwent",
+      "Elwick"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 42,
+     "name": "Water Management Plan Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_ID",
+      "PLAN_NAME",
+      "SHORT_NAME",
+      "AREA_TYPE",
+      "STATUS",
+      "DRAFT_PLAN",
+      "ADOPTED",
+      "EFFECTIVE",
+      "SHAPE"
+     ],
+     "records": 12,
+     "sample": [
+      "Ansons River Catchment Water Management Plan",
+      "Lakes Sorell and Crescent Water Management Plan",
+      "River Clyde Catchment Water Management Plan (Septe"
+     ],
+     "name_field": "PLAN_NAME"
+    },
+    {
+     "id": 4,
+     "name": "Local Government Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "OBJECTID",
+      "LGA_ID",
+      "NAME",
+      "LGA_CODE",
+      "PLAN_REF",
+      "GAZ_DATE",
+      "NOM_REG_NO",
+      "UFI",
+      "CREATED_ON",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 29,
+     "sample": [
+      "Burnie",
+      "Huon Valley",
+      "Flinders"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 9,
+     "name": "Legislative Council Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "OBJECTID",
+      "LEG_CNL_ID",
+      "NAME",
+      "PLAN_REF",
+      "COMMENTS",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 15,
+     "sample": [
+      "Nelson",
+      "Derwent",
+      "Elwick"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 10,
+     "name": "Electoral Boundaries",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "OBJECTID",
+      "ELECTOR_ID",
+      "NAME",
+      "PLAN_REF",
+      "COMMENTS",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 5,
+     "sample": [
+      "Clark",
+      "Franklin",
+      "Lyons"
+     ],
+     "name_field": "NAME"
     }
    ],
    "note": "",
@@ -1350,6 +1536,7 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
@@ -1466,11 +1653,35 @@
      "records": 14
     },
     {
+     "id": 27,
+     "name": "Reserve and Crown Land Deer Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "RESERVE_NAME",
+      "AREA_HA",
+      "DOWNLOAD",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 19,
+     "sample": [
+      "Apslawn Regional Reserve Deer Hunting Area",
+      "Black Jack Hill Deer Hunting Area",
+      "Breton Rivulet Mother Lords Plains Deer Hunting Ar"
+     ],
+     "name_field": "RESERVE_NAME"
+    },
+    {
      "id": 12,
      "name": "Water Management Plan Management Zones",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "OBJECTID",
       "AREA_ID",
@@ -1494,28 +1705,55 @@
      "name_field": "PLAN_NAME"
     },
     {
-     "id": 27,
-     "name": "Reserve and Crown Land Deer Hunting Areas",
+     "id": 1,
+     "name": "AFS - Defined Forest Area",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
-      "ID",
-      "RESERVE_NAME",
-      "AREA_HA",
-      "DOWNLOAD",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
+      "FEATUREID",
+      "AFS",
+      "NAME",
+      "SHAPE"
      ],
-     "records": 19,
+     "records": 3601,
      "sample": [
-      "Apslawn Regional Reserve Deer Hunting Area",
-      "Black Jack Hill Deer Hunting Area",
-      "Breton Rivulet Mother Lords Plains Deer Hunting Ar"
+      "None",
+      "None",
+      "None"
      ],
-     "name_field": "RESERVE_NAME"
+     "name_field": "NAME"
+    },
+    {
+     "id": 2,
+     "name": "FMU - Forest Management and Controlled Wood",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "FEATUREID",
+      "FMU",
+      "HA",
+      "STT_DATE",
+      "SHAPE"
+     ],
+     "records": 8319
+    },
+    {
+     "id": 3,
+     "name": "Informal Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "FEATUREID",
+      "PTPZ_CATEG",
+      "SHAPE"
+     ],
+     "records": 9443
     }
    ],
    "note": "",
@@ -1587,9 +1825,70 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
+    {
+     "id": 66,
+     "name": "TFS BRMP Natural",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "TERAG_CODE",
+      "ASSET_CATEGORY",
+      "ASSET_DESCRIPTION",
+      "FMAC_PRIORITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 575
+    },
+    {
+     "id": 68,
+     "name": "TFS BRMP Production Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "TERAG_CODE",
+      "ASSET_CATEGORY",
+      "ASSET_DESCRIPTION",
+      "FMAC_PRIORITY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 653
+    },
+    {
+     "id": 21,
+     "name": "Fire Management Advisory Committee Boundaries",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "NOM_REG_NO",
+      "NAME",
+      "PLAN_NO",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 10,
+     "sample": [
+      "37829M",
+      "37810B",
+      "None"
+     ],
+     "name_field": "NOM_REG_NO"
+    },
     {
      "id": 21,
      "name": "Fire Management Advisory Committee Boundaries",
@@ -1735,10 +2034,82 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline",
     "trail line"
    ],
    "layers": [
+    {
+     "id": 59,
+     "name": "Foreshore Bacteria Pathogen Risk NRM North-NW",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "SEGMENT_ID",
+      "SEGMENT_LENGTH_M",
+      "BACTERIA_PATHOGENS_RISK",
+      "BACTERIA_PATHOGENS_RISK_CONF",
+      "BACTERIA_PATHOGENS_RISK_DEP",
+      "BACTERIA_PATHOGENS_CONDITION",
+      "BACTERIA_PATHOGENS_COND_CONF",
+      "BACTERIA_PATHOGENS_COND_DEP",
+      "VULNERABILITY_SCORE",
+      "VULNERABILITY_NOTES",
+      "STORMWATER_OUTFLOW_RISK",
+      "STORMWATER_OUTFLOW_NOTES",
+      "STORMWATER_OUTFLOW_RISK_CONF",
+      "AQUACULTURE_PROXIMITY_RISK",
+      "AQUACULTURE_PROXIMITY_NOTES",
+      "PROXIMITY_RISK_CONF",
+      "MOORINGS_RISK",
+      "MOORINGS_NOTES",
+      "MOORINGS_RISK_CONF"
+     ],
+     "records": 48128
+    },
+    {
+     "id": 79,
+     "name": "Derwent Estuary Habitat Atlas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "DESCRIPTION",
+      "SOURCE",
+      "SOURCEID",
+      "FEATDATE",
+      "RELIABILITY",
+      "LEGENDORDER",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 732
+    },
+    {
+     "id": 92,
+     "name": "ShellMAP Harvest Area Boundaries",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "GA_NAME",
+      "HA_NAME",
+      "AREA_HA",
+      "SHAPE"
+     ],
+     "records": 57,
+     "sample": [
+      "Pitt Water",
+      "Pitt Water",
+      "Gardners Bay"
+     ],
+     "name_field": "GA_NAME"
+    },
     {
      "id": 92,
      "name": "ShellMAP Harvest Area Boundaries",
@@ -1795,61 +2166,6 @@
    "grade": 5,
    "band": "A"
   },
-  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/nvadata": {
-   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer",
-   "cc": "AU",
-   "title": "Public/NVAdata",
-   "publisher": "services.thelist.tas.gov.au",
-   "catalog": "agency server services.thelist.tas.gov.au",
-   "licence": "",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
-    {
-     "id": 13,
-     "name": "Weed Management Zones",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "LGA_NAME",
-      "LGA_CODE",
-      "TABLE_NUMBER",
-      "COMMON_NAME",
-      "SCIENTIFIC_NAME",
-      "JOIN_FIELD",
-      "SELECT_CODE",
-      "TABLE_DESCRIPTION",
-      "MANAGEMENT_FOCUS",
-      "TARGET_FREE_REGIONS",
-      "PRIORITY",
-      "WONS",
-      "NOTES",
-      "ZONE_A_MUNICIPALITIES",
-      "ZONE_B_MUNICIPALITIES",
-      "ZONE",
-      "ZONE_SPECIES_TYPE",
-      "LIST_GUID",
-      "SHAPE"
-     ],
-     "records": 2146,
-     "sample": [
-      "Hobart",
-      "Hobart",
-      "Hobart"
-     ],
-     "name_field": "LGA_NAME"
-    }
-   ],
-   "note": "",
-   "licence_note": "licence unknown: chat 8 asks",
-   "grade": 5,
-   "band": "A"
-  },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/public/naturalenvironment": {
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer",
    "cc": "AU",
@@ -1880,315 +2196,345 @@
      "records": 126488
     },
     {
-     "id": 4,
-     "name": "Estuarine Catchments",
+     "id": 17,
+     "name": "Conservation Significance Flora Point",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "SPECIES_CODE",
+      "SPECIES_NAME",
+      "PREFERRED_COMMON_NAMES",
+      "THREATENED_YN",
+      "CONSERVATION_SIGNIFICANCE_YN",
+      "STATE_SCHEDULE_DESC",
+      "NATIONAL_SCHEDULE_DESC",
+      "SPECIES_OBSERVATION_ID",
+      "LOCATION_VARN",
+      "SYMBOLOGY_CODE",
+      "LAST_UPDATE_DATE_TIME",
+      "SHAPE"
+     ],
+     "records": 574118,
+     "sample": [
+      "Banksia marginata",
+      "Eucalyptus dalrympleana subsp. lutruwita",
+      "Dicksonia antarctica"
+     ],
+     "name_field": "SPECIES_NAME"
+    },
+    {
+     "id": 19,
+     "name": "Conservation Significance Flora Polygon",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
-      "ESTCAT_ID",
-      "EST_CODE",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
-      "RETIRED_ON",
-      "COMP_AREA",
-      "COMP_PERIM",
-      "NAME",
+      "SPECIES_CODE",
+      "SPECIES_NAME",
+      "PREFERRED_COMMON_NAMES",
+      "THREATENED_YN",
+      "CONSERVATION_SIGNIFICANCE_YN",
+      "STATE_SCHEDULE_DESC",
+      "NATIONAL_SCHEDULE_DESC",
+      "SPECIES_OBSERVATION_ID",
+      "LOCATION_VARN",
+      "SYMBOLOGY_CODE",
+      "LAST_UPDATE_DATE_TIME",
       "SHAPE",
       "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 138,
+     "records": 143,
      "sample": [
-      "Patriarch",
-      "Sellars Lagoon",
-      "Yarra"
+      "Euphorbia paralias",
+      "Euphorbia paralias",
+      "Euphorbia paralias"
      ],
-     "name_field": "NAME"
+     "name_field": "SPECIES_NAME"
     },
     {
-     "id": 5,
-     "name": "Riverine Catchment",
+     "id": 20,
+     "name": "Conservation Significance Fauna Point",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "SPECIES_CODE",
+      "SPECIES_NAME",
+      "PREFERRED_COMMON_NAMES",
+      "THREATENED_YN",
+      "CONSERVATION_SIGNIFICANCE_YN",
+      "STATE_SCHEDULE_DESC",
+      "NATIONAL_SCHEDULE_DESC",
+      "SPECIES_OBSERVATION_ID",
+      "LOCATION_VARN",
+      "SYMBOLOGY_CODE",
+      "LAST_UPDATE_DATE_TIME",
+      "SHAPE"
+     ],
+     "records": 2115613,
+     "sample": [
+      "Laomavix collisi",
+      "Falco berigora subsp. tasmanica",
+      "Arachnocampa arachnocampa subsp. tasmaniensis"
+     ],
+     "name_field": "SPECIES_NAME"
+    },
+    {
+     "id": 22,
+     "name": "Conservation Significance Fauna Polygon",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
-      "RIVCAT_ID",
-      "RIV_CODE",
-      "NAME",
-      "EST_CODE",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
-      "RETIRED_ON",
-      "COMP_AREA",
-      "COMP_PERIM",
+      "SPECIES_CODE",
+      "SPECIES_NAME",
+      "PREFERRED_COMMON_NAMES",
+      "THREATENED_YN",
+      "CONSERVATION_SIGNIFICANCE_YN",
+      "STATE_SCHEDULE_DESC",
+      "NATIONAL_SCHEDULE_DESC",
+      "SPECIES_OBSERVATION_ID",
+      "LOCATION_VARN",
+      "SYMBOLOGY_CODE",
+      "LAST_UPDATE_DATE_TIME",
       "SHAPE",
       "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 192,
+     "records": 37,
      "sample": [
-      "Pats",
-      "Seal",
-      "Chew Tobacco Creek"
+      "Haematopus longirostris",
+      "Haematopus longirostris",
+      "Haematopus longirostris"
      ],
-     "name_field": "NAME"
+     "name_field": "SPECIES_NAME"
     },
     {
-     "id": 6,
-     "name": "Hobart Stormwater Catchment",
+     "id": 23,
+     "name": "Geoconservation Sites - Interim",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
-      "SCATCH_ID",
+      "ID",
       "NAME",
-      "COMP_AREA",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
-      "RETIRED_ON",
+      "GEOGRAPHICAL_SIGNIFICANCE",
+      "STATEMENT_OF_SIGNIFICANCE",
+      "LISTING_STATUS",
+      "NOTE",
       "SHAPE",
-      "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 96,
+     "records": 3,
      "sample": [
-      "Rusts",
-      "Grasstree",
-      "Thistly"
+      "Cenozoic Plant Macrofossils of Tasmania",
+      "Lake Mackenzie Patterned Ground",
+      "McPartlan Plain Late Pleistocene Recessional Morai"
      ],
      "name_field": "NAME"
     },
     {
-     "id": 7,
-     "name": "Floodplain [LIST 1:250K]",
+     "id": 24,
+     "name": "Geoconservation Sites - Listed",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "NAME",
+      "GEOGRAPHICAL_SIGNIFICANCE",
+      "STATEMENT_OF_SIGNIFICANCE",
+      "LISTING_STATUS",
+      "NOTE",
+      "SHAPE",
+      "SHAPE.LEN"
+     ],
+     "records": 1141,
+     "sample": [
+      "Youngtown Palaeogene Plant Fossil Site",
+      "Schouten Island Landslip",
+      "Melaleuca Fossil Flora"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 54,
+     "name": "CFEV Estuaries - Integrated Conservation Value",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ES_ID",
+      "ES_AREA",
+      "RSC_ID",
+      "SUBCAT_ID",
+      "CAT_ID",
+      "ES_MAP",
+      "ES_NSCORE",
+      "ES_ICV",
+      "ES_RCV",
+      "ES_LTENSEC",
+      "ES_CMPI1",
+      "ES_CMPP1",
+      "ES_CMPI2",
+      "ES_CMPP2",
+      "ES_NAME",
+      "ES_NSCOR_C",
+      "ES_SVDIV",
+      "ES_INFO",
+      "SHAPE"
+     ],
+     "records": 113,
+     "sample": [
+      "Lee",
+      "Dover",
+      "Shag Rock"
+     ],
+     "name_field": "ES_NAME"
+    },
+    {
+     "id": 55,
+     "name": "CFEV Karst - Integrated Conservation Value",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "KT_ID",
+      "KT_NAME",
+      "KT_AREA",
+      "KT_MAP",
+      "KT_NSCORE",
+      "KT_ICV",
+      "KT_RCV",
+      "KT_LTENSEC",
+      "KT_CMPI1",
+      "KT_CMPP1",
+      "KT_CMPI2",
+      "KT_CMPP2",
+      "KT_NSCOR_C",
+      "KT_SVDIV",
+      "KT_INFO",
+      "SHAPE"
+     ],
+     "records": 334,
+     "sample": [
+      "Burnt Gully Creek",
+      "Butler Rivulet",
+      "Calverts Hill"
+     ],
+     "name_field": "KT_NAME"
+    },
+    {
+     "id": 57,
+     "name": "CFEV Saltmarshes - Integrated Conservation Value",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons (no name field seen)",
      "fields": [
       "OBJECTID",
-      "COMP_AREA",
-      "FLD_PLN_TY",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 105
-    },
-    {
-     "id": 8,
-     "name": "Weather Station [Long term averages] [BOM 1999]",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "STN_NUM",
-      "PR_NAME",
-      "LAT",
-      "LON",
-      "STN_HT",
-      "FIRSTRAINY",
-      "LASTRAINYE",
-      "AVGANNRAIN",
-      "MEDIANANNR",
-      "AVGRAINDAY",
-      "FIRSTSFCYE",
-      "LASTSFCYEA",
-      "AVGMAX",
-      "HOTTEST",
-      "AVGMIN",
-      "COLDEST",
-      "AVG9AMT",
-      "AVG9AMRH",
-      "AVGCLEARDA"
-     ],
-     "records": 522,
-     "sample": [
-      "DELORAINE (GODERICK)",
-      "PENGUIN (IRONCLIFFE ROAD)",
-      "MOLTEMA (CRAYTHORNE)"
-     ],
-     "name_field": "PR_NAME"
-    },
-    {
-     "id": 10,
-     "name": "Land Capability",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "OBJECTID",
-      "LANDCAP_ID",
-      "CLASS",
-      "SOURCE",
-      "DESCRIPTIO",
-      "PARKS_LAND_CAPABILITY_AREA",
-      "PERIMETER",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 13004
-    },
-    {
-     "id": 11,
-     "name": "Species Observations Point",
-     "geom": "Multipoint",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "SPECIES_CODE",
-      "SPECIES_NAME",
-      "PREFERRED_COMMON_NAMES",
-      "THREATENED_YN",
-      "CONSERVATION_SIGNIFICANCE_YN",
-      "STATE_SCHEDULE_DESC",
-      "NATIONAL_SCHEDULE_DESC",
-      "SPECIES_OBSERVATION_ID",
-      "LOCATION_VARN",
-      "SYMBOLOGY_CODE",
-      "INTRODUCED_WATCH_LIST_CODE",
-      "LAST_UPDATE_DATE_TIME",
-      "LIST_SYMBOL",
+      "SM_ID",
+      "SM_AREA",
+      "SM_MAP",
+      "SM_DIVPOLY",
+      "SM_LOCAT",
+      "SM_NSCORE",
+      "SM_ICV",
+      "SM_RCV",
+      "SM_LTENSEC",
+      "SM_CMPI1",
+      "SM_CMPP1",
+      "SM_CMPI2",
+      "SM_CMPP2",
+      "SUBCAT_ID",
+      "CAT_ID",
+      "SM_NSCOR_C",
+      "SM_SVDIV",
+      "SM_INFO",
       "SHAPE"
      ],
-     "records": 5501772,
-     "sample": [
-      "Pelecanus conspicillatus",
-      "Epacris serpyllifolia",
-      "Hydrocotyle hirta"
-     ],
-     "name_field": "SPECIES_NAME"
+     "records": 336
     },
     {
-     "id": 12,
-     "name": "Species Observations Polygon",
+     "id": 59,
+     "name": "CFEV Waterbodies - Integrated Conservation Value",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
-      "SPECIES_CODE",
-      "SPECIES_NAME",
-      "PREFERRED_COMMON_NAMES",
-      "THREATENED_YN",
-      "CONSERVATION_SIGNIFICANCE_YN",
-      "STATE_SCHEDULE_DESC",
-      "NATIONAL_SCHEDULE_DESC",
-      "SPECIES_OBSERVATION_ID",
-      "LOCATION_VARN",
-      "SYMBOLOGY_CODE",
-      "INTRODUCED_WATCH_LIST_CODE",
-      "LAST_UPDATE_DATE_TIME",
-      "LIST_SYMBOL",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
+      "WB_ID",
+      "WB_NAME",
+      "WB_AREA",
+      "WB_ELEV",
+      "RSC_ID",
+      "UFI",
+      "SUBCAT_ID",
+      "CAT_ID",
+      "WB_MAP",
+      "WB_DEPTH",
+      "WB_NSCORE",
+      "WB_ICV",
+      "WB_LTENSEC",
+      "WB_CMPI1",
+      "WB_CMPP1",
+      "WB_CMPI2",
+      "WB_CMPP2",
+      "WB_RCV",
+      "WB_NSCOR_C"
      ],
-     "records": 5171,
+     "records": 1346,
      "sample": [
-      "Lycium ferocissimum",
-      "Lycium ferocissimum",
-      "Lycium ferocissimum"
+      "Pearshape Lagoon",
+      "None",
+      "None"
      ],
-     "name_field": "SPECIES_NAME"
+     "name_field": "WB_NAME"
     },
     {
-     "id": 13,
-     "name": "Threatened Flora Point",
-     "geom": "Multipoint",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "SPECIES_CODE",
-      "SPECIES_NAME",
-      "PREFERRED_COMMON_NAMES",
-      "THREATENED_YN",
-      "CONSERVATION_SIGNIFICANCE_YN",
-      "STATE_SCHEDULE_DESC",
-      "NATIONAL_SCHEDULE_DESC",
-      "SPECIES_OBSERVATION_ID",
-      "LOCATION_VARN",
-      "SYMBOLOGY_CODE",
-      "LAST_UPDATE_DATE_TIME",
-      "SHAPE"
-     ],
-     "records": 142232,
-     "sample": [
-      "Persicaria decipiens",
-      "Blechnum spinulosum",
-      "Hardenbergia violacea"
-     ],
-     "name_field": "SPECIES_NAME"
-    },
-    {
-     "id": 14,
-     "name": "Threatened Fauna Point",
-     "geom": "Multipoint",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "SPECIES_CODE",
-      "SPECIES_NAME",
-      "PREFERRED_COMMON_NAMES",
-      "THREATENED_YN",
-      "CONSERVATION_SIGNIFICANCE_YN",
-      "STATE_SCHEDULE_DESC",
-      "NATIONAL_SCHEDULE_DESC",
-      "SPECIES_OBSERVATION_ID",
-      "LOCATION_VARN",
-      "SYMBOLOGY_CODE",
-      "LAST_UPDATE_DATE_TIME",
-      "SHAPE"
-     ],
-     "records": 483302,
-     "sample": [
-      "Aquila audax subsp. fleayi",
-      "Sarcophilus harrisii",
-      "Dasyurus viverrinus"
-     ],
-     "name_field": "SPECIES_NAME"
-    },
-    {
-     "id": 16,
-     "name": "Threatened Fauna Polygon",
+     "id": 60,
+     "name": "CFEV Wetlands - Integrated Conservation Value",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
-      "SPECIES_CODE",
-      "SPECIES_NAME",
-      "PREFERRED_COMMON_NAMES",
-      "THREATENED_YN",
-      "CONSERVATION_SIGNIFICANCE_YN",
-      "STATE_SCHEDULE_DESC",
-      "NATIONAL_SCHEDULE_DESC",
-      "SPECIES_OBSERVATION_ID",
-      "LOCATION_VARN",
-      "SYMBOLOGY_CODE",
-      "LAST_UPDATE_DATE_TIME",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
+      "WL_ID",
+      "WL_AREA",
+      "WL_ELEV",
+      "WL_MAP",
+      "WL_NSCORE",
+      "WL_ICV",
+      "WL_RCV",
+      "WL_LTENSEC",
+      "WL_CMPI1",
+      "WL_CMPP1",
+      "WL_CMPI2",
+      "WL_CMPP2",
+      "CAT_ID",
+      "WL_NSCOR_C",
+      "SUBCAT_ID",
+      "WL_NAME",
+      "WL_SVDIV",
+      "WL_INFO",
+      "SHAPE"
      ],
-     "records": 109,
+     "records": 20597,
      "sample": [
-      "Acanthiza pusilla subsp. magnirostris",
-      "Lathamus discolor",
-      "Thinornis rubricollis"
+      "None",
+      "None",
+      "None"
      ],
-     "name_field": "SPECIES_NAME"
+     "name_field": "WL_NAME"
     }
    ],
    "note": "",
@@ -2209,6 +2555,116 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 7,
+     "name": "TASVEG 5.0 Fire Attributes",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "VEG_GROUP",
+      "VEGCODE",
+      "VEGCODE_D",
+      "FIREATT",
+      "FIRESENS",
+      "FLAMMAB",
+      "FRB_TREAT",
+      "TFI_LS",
+      "TFI_HS",
+      "TFI_MAX",
+      "SHAPE"
+     ],
+     "records": 482138
+    },
+    {
+     "id": 8,
+     "name": "TASVEG 5.0 Outlines and Labels",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "VEG_GROUP",
+      "VEGCODE",
+      "VEGCODE_D",
+      "FOREST_STR",
+      "NOTABLE_TR",
+      "NOTABLE_TD",
+      "WEED_TYPE",
+      "WEED_TYP_D",
+      "SOURCE_TYP",
+      "SOURCE_DAT",
+      "FIELD_CHEC",
+      "SOURCE_IRS",
+      "PROJECT",
+      "COMP_LENG",
+      "COMP_AREA",
+      "SHAPE"
+     ],
+     "records": 482138
+    },
+    {
+     "id": 9,
+     "name": "TASVEG 5.0",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "VEG_GROUP",
+      "VEGCODE",
+      "VEGCODE_D",
+      "FOREST_STR",
+      "NOTABLE_TR",
+      "NOTABLE_TD",
+      "WEED_TYPE",
+      "WEED_TYP_D",
+      "SOURCE_TYP",
+      "SOURCE_DAT",
+      "FIELD_CHEC",
+      "SOURCE_IRS",
+      "PROJECT",
+      "COMP_LENG",
+      "COMP_AREA",
+      "SHAPE"
+     ],
+     "records": 482138
+    },
+    {
+     "id": 10,
+     "name": "TASVEG 5.0 Groups",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "VEG_GROUP",
+      "SHAPE"
+     ],
+     "records": 482138
+    },
+    {
+     "id": 12,
+     "name": "Threatened Native Vegetation Communities 2025 [TNVC 2025]",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SCHED_NAME",
+      "SCHED_ID",
+      "AREA_HA",
+      "SHAPE"
+     ],
+     "records": 50187,
+     "sample": [
+      "Alkaline pans",
+      "Alkaline pans",
+      "Alkaline pans"
+     ],
+     "name_field": "SCHED_NAME"
+    },
     {
      "id": 0,
      "name": "Particulate Matter 2.5 [PM2.5 micrograms per cubic metre] 2011",
@@ -2397,116 +2853,6 @@
       "Perth"
      ],
      "name_field": "PLACE_NAME"
-    },
-    {
-     "id": 7,
-     "name": "TASVEG 5.0 Fire Attributes",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "OBJECTID",
-      "VEG_GROUP",
-      "VEGCODE",
-      "VEGCODE_D",
-      "FIREATT",
-      "FIRESENS",
-      "FLAMMAB",
-      "FRB_TREAT",
-      "TFI_LS",
-      "TFI_HS",
-      "TFI_MAX",
-      "SHAPE"
-     ],
-     "records": 482138
-    },
-    {
-     "id": 8,
-     "name": "TASVEG 5.0 Outlines and Labels",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "OBJECTID",
-      "VEG_GROUP",
-      "VEGCODE",
-      "VEGCODE_D",
-      "FOREST_STR",
-      "NOTABLE_TR",
-      "NOTABLE_TD",
-      "WEED_TYPE",
-      "WEED_TYP_D",
-      "SOURCE_TYP",
-      "SOURCE_DAT",
-      "FIELD_CHEC",
-      "SOURCE_IRS",
-      "PROJECT",
-      "COMP_LENG",
-      "COMP_AREA",
-      "SHAPE"
-     ],
-     "records": 482138
-    },
-    {
-     "id": 9,
-     "name": "TASVEG 5.0",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "OBJECTID",
-      "VEG_GROUP",
-      "VEGCODE",
-      "VEGCODE_D",
-      "FOREST_STR",
-      "NOTABLE_TR",
-      "NOTABLE_TD",
-      "WEED_TYPE",
-      "WEED_TYP_D",
-      "SOURCE_TYP",
-      "SOURCE_DAT",
-      "FIELD_CHEC",
-      "SOURCE_IRS",
-      "PROJECT",
-      "COMP_LENG",
-      "COMP_AREA",
-      "SHAPE"
-     ],
-     "records": 482138
-    },
-    {
-     "id": 10,
-     "name": "TASVEG 5.0 Groups",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "OBJECTID",
-      "VEG_GROUP",
-      "SHAPE"
-     ],
-     "records": 482138
-    },
-    {
-     "id": 12,
-     "name": "Threatened Native Vegetation Communities 2025 [TNVC 2025]",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "SCHED_NAME",
-      "SCHED_ID",
-      "AREA_HA",
-      "SHAPE"
-     ],
-     "records": 50187,
-     "sample": [
-      "Alkaline pans",
-      "Alkaline pans",
-      "Alkaline pans"
-     ],
-     "name_field": "SCHED_NAME"
     }
    ],
    "note": "",
@@ -2891,6 +3237,7 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
@@ -2947,31 +3294,6 @@
      "records": 6
     },
     {
-     "id": 10,
-     "name": "TWWHA Fire Management Zones Draft",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "ZONE",
-      "NAME",
-      "TYPE",
-      "VALUES_PRE",
-      "ZONE_CODE",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 14919,
-     "sample": [
-      "Strategic Fire Management Zone",
-      "Strategic Fire Management Zone",
-      "Strategic Fire Management Zone"
-     ],
-     "name_field": "NAME"
-    },
-    {
      "id": 14,
      "name": "Wilderness Quality 1995",
      "geom": "Polygon",
@@ -3018,6 +3340,83 @@
       "SHAPE"
      ],
      "records": 76946
+    },
+    {
+     "id": 10,
+     "name": "TWWHA Fire Management Zones Draft",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ZONE",
+      "NAME",
+      "TYPE",
+      "VALUES_PRE",
+      "ZONE_CODE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 14919,
+     "sample": [
+      "Strategic Fire Management Zone",
+      "Strategic Fire Management Zone",
+      "Strategic Fire Management Zone"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 2,
+     "name": "Management Plan - Arthur Pieman Conservation Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "DESCRIPTION",
+      "SHAPE"
+     ],
+     "records": 14
+    },
+    {
+     "id": 3,
+     "name": "Management Plan - Kent Group National Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "CATEGORY",
+      "SHAPE"
+     ],
+     "records": 12
+    },
+    {
+     "id": 4,
+     "name": "Management Plan - Maria Island National Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "DESCRIPTION",
+      "SHAPE"
+     ],
+     "records": 5
+    },
+    {
+     "id": 5,
+     "name": "Management Plan - Trevallyn Nature Recreation Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "CATEGORY",
+      "SHAPE"
+     ],
+     "records": 6
     }
    ],
    "note": "",
@@ -3037,6 +3436,36 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 67,
+     "name": "TPS - Waterway Protection Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "WCPA_FEATURE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 54264
+    },
+    {
+     "id": 72,
+     "name": "Electricity Transmission Infrastructure Protection Code Overlays",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "LPS",
+      "OVERLAY",
+      "LPS_NUM",
+      "SHAPE"
+     ],
+     "records": 405
+    },
     {
      "id": 1,
      "name": "Cadastral Parcels",
@@ -3228,6 +3657,230 @@
       "COMP_LEN",
       "SHAPE"
      ],
+     "records": 8237,
+     "sample": [
+      "Bass Highway",
+      "Midland Highway",
+      "East Tamar Highway"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 5,
+     "name": "National or State Highway and Arterial Roads",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 24685,
+     "sample": [
+      "Bass Highway",
+      "Midland Highway",
+      "Pipers River Road"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 6,
+     "name": "National or State Highway and Arterial Roads plus Feeder Roads",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 38223,
+     "sample": [
+      "Bass Highway",
+      "Midland Highway",
+      "Pipers River Road"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 7,
+     "name": "National or State Highway and Arterial Roads plus Feeder Roads plus Lo",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 273419,
+     "sample": [
+      "Wielangta Road",
+      "Bass Highway",
+      "Speck Road"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 30,
+     "name": "Roads - Route Number Annotation [Dynamic]",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TOUR_CLASS",
+      "SHAPE"
+     ],
+     "records": 273489
+    },
+    {
+     "id": 81,
+     "name": "Caravan Park (poly)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "INFRA_ID",
+      "INFTY2_TXT",
+      "NOM_REG_NO",
+      "NAME",
+      "DESCRIPT",
+      "SHAPE",
+      "SHAPE.AREA"
+     ],
+     "records": 83,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "NOM_REG_NO"
+    },
+    {
+     "id": 83,
+     "name": "Caravan Park",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "INFRA_ID",
+      "INFTY2_TXT",
+      "NOM_REG_NO",
+      "NAME",
+      "DESCRIPT",
+      "SHAPE"
+     ],
+     "records": 0,
+     "sample": [],
+     "name_field": "NOM_REG_NO"
+    },
+    {
+     "id": 38,
+     "name": "Hydrographic Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "HYDAREA_ID",
+      "HYDARTY1",
+      "HYDARTY2",
+      "NAME",
+      "NOM_REG_NO",
+      "HYD_CLASS",
+      "PERENNIAL",
+      "EXISTING",
+      "WC_BED_TY",
+      "RELGRND",
+      "INUSE",
+      "ISLANDTYPE",
+      "ELEVATION",
+      "COMP_AREA",
+      "SHAPE"
+     ],
+     "records": 349713,
+     "sample": [
+      "None",
+      "Ormley Creek",
+      "None"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 4,
+     "name": "National or State Highway",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
      "records": 8238,
      "sample": [
       "Bass Highway",
@@ -3337,94 +3990,6 @@
       "Speck Road"
      ],
      "name_field": "PRI_NAME"
-    },
-    {
-     "id": 30,
-     "name": "Roads - Route Number Annotation [Dynamic]",
-     "geom": "Polyline",
-     "gap": "trail line",
-     "is": "trail / path lines",
-     "fields": [
-      "OBJECTID",
-      "TOUR_CLASS",
-      "SHAPE"
-     ],
-     "records": 273491
-    },
-    {
-     "id": 81,
-     "name": "Caravan Park (poly)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "INFRA_ID",
-      "INFTY2_TXT",
-      "NOM_REG_NO",
-      "NAME",
-      "DESCRIPT",
-      "SHAPE",
-      "SHAPE.AREA"
-     ],
-     "records": 83,
-     "sample": [
-      "None",
-      "None",
-      "None"
-     ],
-     "name_field": "NOM_REG_NO"
-    },
-    {
-     "id": 83,
-     "name": "Caravan Park",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "OBJECTID",
-      "INFRA_ID",
-      "INFTY2_TXT",
-      "NOM_REG_NO",
-      "NAME",
-      "DESCRIPT",
-      "SHAPE"
-     ],
-     "records": 0,
-     "sample": [],
-     "name_field": "NOM_REG_NO"
-    },
-    {
-     "id": 38,
-     "name": "Hydrographic Areas",
-     "geom": "Polygon",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A)",
-     "fields": [
-      "OBJECTID",
-      "HYDAREA_ID",
-      "HYDARTY1",
-      "HYDARTY2",
-      "NAME",
-      "NOM_REG_NO",
-      "HYD_CLASS",
-      "PERENNIAL",
-      "EXISTING",
-      "WC_BED_TY",
-      "RELGRND",
-      "INUSE",
-      "ISLANDTYPE",
-      "ELEVATION",
-      "COMP_AREA",
-      "SHAPE"
-     ],
-     "records": 349923,
-     "sample": [
-      "None",
-      "Ormley Creek",
-      "None"
-     ],
-     "name_field": "NAME"
     }
    ],
    "note": "",
@@ -3649,6 +4214,47 @@
       "Cloudy Bay Lagoon",
       "Blackswan Lagoon",
       "Catamaran River"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 1,
+     "name": "Marine Reserves - No Fishing",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "MARINE_NATURE_RESERVE_NO_FISH",
+      "SHAPE"
+     ],
+     "records": 6,
+     "sample": [
+      "Ninepin Point Marine Nature Reserve",
+      "Port Davey/Bathurst Harbour Marine Nature Reserve ",
+      "Maria Island Marine Nature Reserve - No Fishing Zo"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 3,
+     "name": "Marine Reserves - Restricted Fishing",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "MARINE_NATURE_RESERVE_RESTRICT",
+      "SHAPE"
+     ],
+     "records": 2,
+     "sample": [
+      "Kent Group Marine Nature Reserve - Restricted Fish",
+      "Port Davey Marine Nature Reserve "
      ],
      "name_field": "AREA_NAME"
     }
@@ -6260,121 +6866,6 @@
    "grade": 5,
    "band": "A"
   },
-  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/marine_and_estuaries": {
-   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer",
-   "cc": "AU",
-   "title": "SLIP_Public_Services/Marine_and_Estuaries",
-   "publisher": "public-services.slip.wa.gov.au",
-   "catalog": "agency server public-services.slip.wa.gov.au",
-   "licence": "",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
-    {
-     "id": 4,
-     "name": "Primary Sediment Cell Boundary (DOT-010)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "sediment_cell_id",
-      "cell_type",
-      "cell_name",
-      "coastal_region",
-      "offshore_boundary",
-      "onshore_boundary",
-      "from_point",
-      "to_point",
-      "fr_alongshore_bndry_marine_sect",
-      "fr_alongshore_bndry_terrl_sect",
-      "to_alongshore_bndry_marine_sect",
-      "to_alongshore_bndry_terrl_sect",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 23,
-     "sample": [
-      "Bluff Point to Nunginjay Spring Coast N",
-      "Whale Boat Cove to Bluff Point",
-      "Glenfield to Whale Boat Cove"
-     ],
-     "name_field": "cell_name"
-    },
-    {
-     "id": 5,
-     "name": "Secondary Sediment Cell Boundary (DOT-011)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "sediment_cell_id",
-      "sediment_cell_boundary_id",
-      "cell_type",
-      "cell_name",
-      "coastal_region",
-      "offshore_boundary",
-      "onshore_boundary",
-      "from_point",
-      "to_point",
-      "fr_alongshore_bndry_marine_sect",
-      "fr_alongshore_bndry_terrl_sect",
-      "to_alongshore_bndry_marine_sect",
-      "to_alongshore_bndry_terrl_sect",
-      "area_km",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 73,
-     "sample": [
-      "Moore River to Ledge",
-      "Cliff Head to Leander Point",
-      "Fisherman Islands to South Illawong"
-     ],
-     "name_field": "cell_name"
-    },
-    {
-     "id": 6,
-     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "sediment_cell_id",
-      "sediment_cell_boundary_id",
-      "cell_type",
-      "cell_name",
-      "coastal_region",
-      "offshore_boundary",
-      "onshore_boundary",
-      "from_point",
-      "to_point",
-      "fr_alongshore_bndry_marine_sect",
-      "fr_alongshore_bndry_terrl_sect",
-      "to_alongshore_bndry_marine_sect",
-      "to_alongshore_bndry_terrl_sect",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 80,
-     "sample": [
-      "Point Daking to Point Templar",
-      "Seal Island to Bird Island",
-      "Safety Bay to Mersey Point"
-     ],
-     "name_field": "cell_name"
-    }
-   ],
-   "note": "",
-   "licence_note": "licence unknown: chat 8 asks",
-   "grade": 5,
-   "band": "A"
-  },
   "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/people_and_society": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer",
    "cc": "AU",
@@ -6386,10 +6877,124 @@
    "found": "2026-10-28",
    "gaps": [
     "access",
+    "area",
     "outline",
     "trail line"
    ],
    "layers": [
+    {
+     "id": 13,
+     "name": "Abrolhos Islands Dive Trails (DPIRD-087)",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "name",
+      "section",
+      "direction",
+      "distance_m",
+      "shape"
+     ],
+     "records": 48,
+     "sample": [
+      "Beacon Island Dive Trail",
+      "Turtle Bay Dive Trail",
+      "Anemone Lump Dive Trail"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 5,
+     "name": "Heritage Council WA - Protection Orders (DPLH-004)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "place_no",
+      "place_name",
+      "location",
+      "lga",
+      "her_record",
+      "date_modif",
+      "cluster",
+      "more_info",
+      "shape_leng",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 8,
+     "sample": [
+      "Broome Historical Museum",
+      "Maddington Homestead",
+      "Boarding House (fmr)"
+     ],
+     "name_field": "place_name"
+    },
+    {
+     "id": 15,
+     "name": "Heritage Areas (DPLH-089)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "place_no",
+      "place_name",
+      "location",
+      "lga",
+      "more_info",
+      "shape_leng",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 428,
+     "sample": [
+      "Princess May Reserve",
+      "Museum and Arts Centre, Fremantle",
+      "Yates Chambers"
+     ],
+     "name_field": "place_name"
+    },
+    {
+     "id": 10,
+     "name": "Aboriginal Cultural Heritage Survey Areas (DPLH-080)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "survey_area_id",
+      "survey_area_identifier",
+      "report_title",
+      "survey_report_id",
+      "survey_report_identifier",
+      "legacy_area_number",
+      "area_description",
+      "survey_type",
+      "spatial_accuracy",
+      "field_survey",
+      "desktop_survey",
+      "boundary_last_update_date",
+      "report_authors",
+      "report_year",
+      "is_heritage_survey_prgm",
+      "heritage_survey_name",
+      "guid",
+      "shape",
+      "st_area(shape)"
+     ],
+     "records": 8987,
+     "sample": [
+      "S18 consultation under the Aborigianal Heritage Ac",
+      "S18 consultation under the Aboriginal Heritage Act",
+      "Inventory of Aboriginal Engraving Sites in the Upp"
+     ],
+     "name_field": "report_title"
+    },
     {
      "id": 2,
      "name": "Aboriginal Communities and Town Reserves (DPLH-002)",
@@ -6698,9 +7303,138 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
+    {
+     "id": 23,
+     "name": "SWAN Bioplan Regionally Significant Natural Areas 2010 (DWER-070)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_1",
+      "gid",
+      "objectid",
+      "uniq_id",
+      "access",
+      "category",
+      "name",
+      "condition",
+      "landform",
+      "effort",
+      "source",
+      "disclaimer",
+      "shape_leng",
+      "date_",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 811,
+     "sample": [
+      "Bancell Rd Reserve and adjacent Bushland",
+      "Darling Scarp Yarloop Bushland",
+      "Yalgorup NP and adjacent Bushland"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 24,
+     "name": "State Environment Policy Cockburn Protection Levels 2010 (DWER-068)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "gid",
+      "policy",
+      "custodian",
+      "contact",
+      "map_ref",
+      "eco_prot",
+      "area_notes",
+      "area_ha",
+      "percent",
+      "source",
+      "updated",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 11
+    },
+    {
+     "id": 18,
+     "name": "DBCA - Legislated Lands and Waters (DBCA-011)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "agency-managed land polygons",
+     "fields": [
+      "objectid",
+      "leg_pin",
+      "leg_poly_area",
+      "leg_class",
+      "leg_identifier",
+      "leg_purpose",
+      "leg_vesting",
+      "leg_name",
+      "leg_name_status",
+      "leg_iucn",
+      "leg_tenure",
+      "leg_act",
+      "leg_category",
+      "leg_notes",
+      "leg_agreement_party",
+      "leg_classification",
+      "leg_regno",
+      "shape"
+     ],
+     "records": 13511,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "leg_name"
+    },
+    {
+     "id": 25,
+     "name": "EPP Goldfields Residential Areas Sulphur Dioxide 2003 (DWER-063)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "gid",
+      "pfi",
+      "ufi",
+      "theme",
+      "name",
+      "policy",
+      "protecting",
+      "gaz_status",
+      "gaz_date",
+      "ablsh_date",
+      "comment",
+      "othr_bndys",
+      "polystatus",
+      "createdate",
+      "edit_date",
+      "retiredate",
+      "auth_date",
+      "extent",
+      "display_by"
+     ],
+     "records": 4,
+     "sample": [
+      "Goldfields EPP",
+      "Goldfields EPP",
+      "Goldfields EPP"
+     ],
+     "name_field": "name"
+    },
     {
      "id": 23,
      "name": "SWAN Bioplan Regionally Significant Natural Areas 2010 (DWER-070)",
@@ -7296,10 +8030,225 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline",
     "trail line"
    ],
    "layers": [
+    {
+     "id": 42,
+     "name": "Waterways Conservation Act Management Areas (DWER-072)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "objectid_lg",
+      "name",
+      "act",
+      "status",
+      "gaz_date",
+      "other_wma",
+      "edit_by",
+      "edit_date",
+      "other_acts",
+      "shape_star",
+      "shape_stle",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 5,
+     "sample": [
+      "PEEL INLET MANAGEMENT AREA",
+      "LESCHENAULT INLET MANAGEMENT AREA",
+      "ALBANY WATERWAYS MANAGEMENT AREA"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 24,
+     "name": "Public Drinking Water Source Areas (DWER-033)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ufi",
+      "priority",
+      "pr_legal",
+      "act",
+      "name",
+      "resource_",
+      "plan_nam",
+      "plan_num",
+      "plan_sta",
+      "g_status",
+      "g_date",
+      "g_page",
+      "clearing_c",
+      "gwtr_atlas",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 405,
+     "sample": [
+      "Allanooka-Dongara Water Reserve",
+      "Butler's Creek Dam Catchment Area",
+      "Butler's Creek Dam Catchment Area"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 28,
+     "name": "RIWI Act, Groundwater Areas (DWER-034)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ufi",
+      "crt_date",
+      "crt_by",
+      "dev_by",
+      "cap_meth",
+      "data_srce",
+      "srce_id",
+      "srce_date",
+      "pfi",
+      "pfv",
+      "ret_date",
+      "ret_by",
+      "ret_auth",
+      "name",
+      "status",
+      "act",
+      "act_sectio",
+      "gaz_name",
+      "gaz_date"
+     ],
+     "records": 45,
+     "sample": [
+      "Wanneroo",
+      "Bolgart East",
+      "Happy Valley"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 30,
+     "name": "RIWI Act, Surface Water Areas and Irrigation Districts (DWER-037)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ufi",
+      "name",
+      "act",
+      "gaz_name",
+      "gaz_date",
+      "gaz_type",
+      "gaz_page",
+      "type",
+      "sub_area",
+      "subtype",
+      "riwi_statu",
+      "act_sectio",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 54,
+     "sample": [
+      "Capel River System",
+      "Dandalup River System",
+      "Serpentine River System"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 44,
+     "name": "Hydrological Zones of Western Australia (DPIRD-069)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "hz_area",
+      "hz_perim",
+      "hz_zone",
+      "hz_mu_name",
+      "hz_sum_des",
+      "hz_col_no",
+      "hz_col_r",
+      "hz_col_g",
+      "hz_col_b",
+      "hz_mu_note",
+      "hz_mu_lfor",
+      "hz_mu_geol",
+      "hz_mu_soil",
+      "hz_mu_veg",
+      "hz_mu_loca",
+      "hz_mu_lfo1",
+      "hz_mu_geo1",
+      "hz_mu_soi1",
+      "hz_mu_veg_"
+     ],
+     "records": 344,
+     "sample": [
+      "Dandaragan Plateau",
+      "Coastal Plain",
+      "Dandaragan Plateau"
+     ],
+     "name_field": "hz_mu_name"
+    },
+    {
+     "id": 45,
+     "name": "WRIMS - Surface Water Subareas (DWER-080)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "name",
+      "area_name",
+      "resourcetype",
+      "status",
+      "shape"
+     ],
+     "records": 315,
+     "sample": [
+      "Ten Mile Brook",
+      "Adelaide",
+      "Alexander River"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 47,
+     "name": "WRIMS - Surface Water Areas (DWER-082)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "name",
+      "status",
+      "resourcetype",
+      "proclamationstatus",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 73,
+     "sample": [
+      "Albany Coast",
+      "Arrowsmith River",
+      "Avon River Catchment"
+     ],
+     "name_field": "name"
+    },
     {
      "id": 12,
      "name": "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Line (DWER-015)",
@@ -7460,13 +8409,134 @@
       "Happy Valley"
      ],
      "name_field": "name"
-    },
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/water_fs": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer",
+   "cc": "AU",
+   "title": "SLIP_Public_Services/Water_FS",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "SLIP / LANDGATE",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline",
+    "trail line"
+   ],
+   "layers": [
     {
-     "id": 30,
-     "name": "RIWI Act, Surface Water Areas and Irrigation Districts (DWER-037)",
+     "id": 46,
+     "name": "Waterways Conservation Act Management Areas (DWER-072)",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "named area polygons",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "objectid_lg",
+      "name",
+      "act",
+      "status",
+      "gaz_date",
+      "other_wma",
+      "edit_by",
+      "edit_date",
+      "other_acts",
+      "shape_star",
+      "shape_stle",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 5,
+     "sample": [
+      "PEEL INLET MANAGEMENT AREA",
+      "LESCHENAULT INLET MANAGEMENT AREA",
+      "ALBANY WATERWAYS MANAGEMENT AREA"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 24,
+     "name": "Public Drinking Water Source Areas (DWER-033)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ufi",
+      "priority",
+      "pr_legal",
+      "act",
+      "name",
+      "resource_",
+      "plan_nam",
+      "plan_num",
+      "plan_sta",
+      "g_status",
+      "g_date",
+      "g_page",
+      "clearing_c",
+      "gwtr_atlas",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 405,
+     "sample": [
+      "Allanooka-Dongara Water Reserve",
+      "Butler's Creek Dam Catchment Area",
+      "Butler's Creek Dam Catchment Area"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 40,
+     "name": "RIWI Act, Groundwater Areas (DWER-034)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ufi",
+      "crt_date",
+      "crt_by",
+      "dev_by",
+      "cap_meth",
+      "data_srce",
+      "srce_id",
+      "srce_date",
+      "pfi",
+      "pfv",
+      "ret_date",
+      "ret_by",
+      "ret_auth",
+      "name",
+      "status",
+      "act",
+      "act_sectio",
+      "gaz_name",
+      "gaz_date"
+     ],
+     "records": 45,
+     "sample": [
+      "Wanneroo",
+      "Bolgart East",
+      "Happy Valley"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 41,
+     "name": "RIWI Act, Surface Water Areas and Irrigation Districts (DWER-037)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -7491,26 +8561,89 @@
       "Serpentine River System"
      ],
      "name_field": "name"
-    }
-   ],
-   "note": "",
-   "grade": 5,
-   "band": "A"
-  },
-  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/water_fs": {
-   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer",
-   "cc": "AU",
-   "title": "SLIP_Public_Services/Water_FS",
-   "publisher": "public-services.slip.wa.gov.au",
-   "catalog": "agency server public-services.slip.wa.gov.au",
-   "licence": "SLIP / LANDGATE",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline",
-    "trail line"
-   ],
-   "layers": [
+    },
+    {
+     "id": 48,
+     "name": "Hydrological Zones of Western Australia (DPIRD-069)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "hz_area",
+      "hz_perim",
+      "hz_zone",
+      "hz_mu_name",
+      "hz_sum_des",
+      "hz_col_no",
+      "hz_col_r",
+      "hz_col_g",
+      "hz_col_b",
+      "hz_mu_note",
+      "hz_mu_lfor",
+      "hz_mu_geol",
+      "hz_mu_soil",
+      "hz_mu_veg",
+      "hz_mu_loca",
+      "hz_mu_lfo1",
+      "hz_mu_geo1",
+      "hz_mu_soi1",
+      "hz_mu_veg_"
+     ],
+     "records": 344,
+     "sample": [
+      "Dandaragan Plateau",
+      "Coastal Plain",
+      "Dandaragan Plateau"
+     ],
+     "name_field": "hz_mu_name"
+    },
+    {
+     "id": 49,
+     "name": "WRIMS - Surface Water Subareas (DWER-080)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "name",
+      "area_name",
+      "resourcetype",
+      "status",
+      "shape"
+     ],
+     "records": 315,
+     "sample": [
+      "Ten Mile Brook",
+      "Adelaide",
+      "Alexander River"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 51,
+     "name": "WRIMS - Surface Water Areas (DWER-082)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "name",
+      "status",
+      "resourcetype",
+      "proclamationstatus",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 73,
+     "sample": [
+      "Albany Coast",
+      "Arrowsmith River",
+      "Avon River Catchment"
+     ],
+     "name_field": "name"
+    },
     {
      "id": 14,
      "name": "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Line (DWER-015)",
@@ -7677,42 +8810,688 @@
       "Happy Valley"
      ],
      "name_field": "name"
-    },
-    {
-     "id": 39,
-     "name": "RIWI Act, Surface Water Areas and Irrigation Districts (DWER-037)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "ufi",
-      "name",
-      "act",
-      "gaz_name",
-      "gaz_date",
-      "gaz_type",
-      "gaz_page",
-      "type",
-      "sub_area",
-      "subtype",
-      "riwi_statu",
-      "act_sectio",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 54,
-     "sample": [
-      "Capel River System",
-      "Dandalup River System",
-      "Serpentine River System"
-     ],
-     "name_field": "name"
     }
    ],
    "note": "",
    "grade": 5,
    "band": "A"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/addtitional_land_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Addtitional_Land_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "Addtitional_Land_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Not to be used as a definitive absolute location of land parcel boundaries.     Refer to the ACC_CODE attribute for the accuracy of land parcels in your area of interest.",
+   "date": "2024-03-04",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Suitable Land Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Id",
+      "OBJECTID",
+      "Name",
+      "Address",
+      "Area1",
+      "Remarks",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "SEG_NUM",
+      "PAR_NUM",
+      "SEGPAR",
+      "PAR_IND",
+      "LOT_AREA",
+      "LOT_VOLUME",
+      "SURV_IND",
+      "TENURE",
+      "PRC",
+      "PARISH",
+      "COUNTY"
+     ],
+     "records": 57,
+     "sample": [
+      "O'LOUGHLIN, MICHAEL THOMAS",
+      "O'LOUGHLIN, MICHAEL THOMAS",
+      "O'LOUGHLIN, MICHAEL THOMAS"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Addtitional Land Sites",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/bess_land_oppotunities": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Land_Oppotunities/FeatureServer",
+   "cc": "AU",
+   "title": "BESS_Land_Oppotunities",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-08-13",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 531,
+     "name": "NSW_BESS_Land_Oppotunities",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Area",
+      "lotnumber",
+      "planoid",
+      "plannumber",
+      "planlabel",
+      "Address",
+      "Address2",
+      "Title_Ref",
+      "itstitlestatus",
+      "itslotid",
+      "landnumber",
+      "propertynumber",
+      "housenumber",
+      "streetname",
+      "locality",
+      "postcode",
+      "Temp_Id"
+     ],
+     "records": 157,
+     "sample": [
+      "Carolyn Chaffey",
+      "Eric John Crowe\nJoan Honora Crowe\nDiane Rhonda Cro",
+      "Jillian Leslie Foley\nTrevor John Foley"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "BESS_Land_Oppotunities",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/bess_potential_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Potential_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "BESS_Potential_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-06-14",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "BESS_Potential_Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape_Leng",
+      "Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 37,
+     "sample": [
+      "BESS - Potential Sites",
+      "BESS - Potential Sites",
+      "BESS - Potential Sites"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "BESS_Potential_Sites",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/bess_target_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Target_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "BESS_Target_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Not to be used as a definitive absolute location of land parcel boundaries.Refer to the ACC_CODE attribute for the accuracy of land parcels in your area of interest.",
+   "date": "2025-10-31",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "BESS_Target_Sites(local)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Address",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "Area",
+      "Status",
+      "Remarks",
+      "TENURE",
+      "Location",
+      "TempId",
+      "Title_Ref",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 106,
+     "sample": [
+      "RAGNAR HOLDINGS PTY LTD",
+      "RAGNAR HOLDINGS PTY LTD",
+      "MILLMERRAN INVESTMENT COMPANY IV PTY LTD\r\nMILLMERR"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "BESS_Target_Sites",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/competitor_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Competitor_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "Competitor_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-02-29",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Competitor Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Asset_Type",
+      "Site_Name",
+      "Owner",
+      "Technology_Type",
+      "Fuel_Type",
+      "DUID",
+      "Number_of_Units",
+      "Lower_Nameplate_Capacity__MW_",
+      "Upper_Nameplate_Capacity__MW_",
+      "Aggregated_Lower_Nameplate_Capa",
+      "Aggregated_Upper_Nameplate_Capa",
+      "Nameplate_Capacity__MW_",
+      "Storage_Capacity__MWh_",
+      "Unit_Status",
+      "Dispatch_Type",
+      "Full_Commercial_Use_Date",
+      "Expected_Closure_Year",
+      "Closure_Date"
+     ],
+     "records": 3665,
+     "sample": [
+      "133 Castlereagh St",
+      "275 Kent St",
+      "321 Exhibition Street Trigen"
+     ],
+     "name_field": "Site_Name"
+    }
+   ],
+   "note": "Competitor Sites",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/ev_origination_candidate_site": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/EV_Origination_Candidate_Site/FeatureServer",
+   "cc": "AU",
+   "title": "EV_Origination_Candidate_Site",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-09-20",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "EV_Origination_Candidate_Site",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Id",
+      "Name",
+      "Address",
+      "Remarks",
+      "T_Ref_Num",
+      "Temp_Id",
+      "Shape__Len",
+      "Lot",
+      "Plan_",
+      "LotPlan",
+      "VolFolio",
+      "Contacts",
+      "Shape__Are",
+      "Area",
+      "State",
+      "Lot_Plan",
+      "Project_Na",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 68,
+     "sample": [
+      "Andreas Andrianopoulos, Sophia Andrianopoulos",
+      "Tico's Investment Group Pty Ltd",
+      "Allen, Shane Roadney Fr..."
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "EV_Origination_Candidate_Site",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/flat_and_good_wind_resource": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Flat_and_Good_Wind_Resource/FeatureServer",
+   "cc": "AU",
+   "title": "Flat_and_Good_Wind_Resource",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-05-07",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Flat_and_Good_Wind_Resource",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Remarks",
+      "Total_Area",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 268,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Flat_and_Good_Wind_Resource",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/indigenous_land_use_agreements": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Indigenous_Land_Use_Agreements/FeatureServer",
+   "cc": "AU",
+   "title": "Indigenous_Land_Use_Agreements",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-05-08",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 232,
+     "name": "Indigenous_Land_Use_Agreements",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Tribunal_I",
+      "Name",
+      "Agreement_",
+      "Date_Lodge",
+      "Date_Notif",
+      "Date_Regis",
+      "Agreemen_1",
+      "Applicant",
+      "Area_Sqkm",
+      "Date_Curre",
+      "NNTT_Seq_N",
+      "Jurisdicti",
+      "Overlap",
+      "Date_extra",
+      "SHAPE_Leng",
+      "Date_Reg",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1485,
+     "sample": [
+      "Wangkangurru/Yarluyandi Petroleum Conjunctive ILUA",
+      "Yungngora Aboriginal Corporation RNTBC, Buru Energ",
+      "Warraber (Sue Island) Torres Strait Social Housing"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Indigenous_Land_Use_Agreements",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/land_assessment_for_enel_project___interactive_map_wfl1": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Land_Assessment_for_ENEL_Project___Interactive_Map_WFL1/FeatureServer",
+   "cc": "AU",
+   "title": "Land_Assessment_for_ENEL_Project___Interactive_Map_WFL1",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-05-27",
+   "found": "2026-11-06",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NSW_Suitable_Land_Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Area",
+      "lotnumber",
+      "planoid",
+      "plannumber",
+      "planlabel",
+      "itslotid",
+      "landnumber",
+      "propertynumber",
+      "housenumber",
+      "streetname",
+      "locality",
+      "postcode",
+      "Temp_Id",
+      "Batch",
+      "Location",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10160,
+     "sample": [
+      "DONALD BRUCE PI...",
+      "T A FIELD ESTATES PTY LTD",
+      "JAMIE CHRISTOPH..."
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 2,
+     "name": "AUS_State",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "NAME",
+      "AREA",
+      "TOTPOP_CY",
+      "ISO_CODE",
+      "ISO_SUB",
+      "ISO2_CC",
+      "ISO3_CC",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 9,
+     "sample": [
+      "South Australia",
+      "Western Australia",
+      "Northern Territory"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 4,
+     "name": "NSW_LandTenure",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "gridcode",
+      "Shape_Leng",
+      "L1_DESC",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 24819
+    },
+    {
+     "id": 5,
+     "name": "NSW_Landuse_Plan",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Type",
+      "SecondaryALUMLUSE",
+      "TertiaryALUMLUSE",
+      "Commodities",
+      "Area_Ha",
+      "Note",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 16000
+    },
+    {
+     "id": 6,
+     "name": "Competitor Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Asset_Type",
+      "Site_Name",
+      "Owner",
+      "Technology_Type",
+      "Fuel_Type",
+      "DUID",
+      "Number_of_Units",
+      "Lower_Nameplate_Capacity__MW_",
+      "Upper_Nameplate_Capacity__MW_",
+      "Aggregated_Lower_Nameplate_Capa",
+      "Aggregated_Upper_Nameplate_Capa",
+      "Nameplate_Capacity__MW_",
+      "Storage_Capacity__MWh_",
+      "Unit_Status",
+      "Dispatch_Type",
+      "Full_Commercial_Use_Date",
+      "Expected_Closure_Year",
+      "Closure_Date"
+     ],
+     "records": 1529,
+     "sample": [
+      "133 Castlereagh St",
+      "275 Kent St",
+      "321 Exhibition Street Trigen"
+     ],
+     "name_field": "Site_Name"
+    },
+    {
+     "id": 8,
+     "name": "Coastline_Buff_50km",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Australia"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 9,
+     "name": "Coastline_Buff_30km",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Australia"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 15,
+     "name": "QLD_Major_Substations3857",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "FEATURETYP",
+      "DESCRIPTIO",
+      "CLASS",
+      "FID_1",
+      "NAME",
+      "OPERATIONA",
+      "VOLTAGE",
+      "SUBURB",
+      "STATE",
+      "SPATIALCON",
+      "REVISED",
+      "COMMENT",
+      "LATITUDE",
+      "LONGITUDE"
+     ],
+     "records": 272,
+     "sample": [
+      "Bowen North",
+      "Wellington Road-SSWRD",
+      "Lismore South"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 16,
+     "name": "NSW_Transmission_Lines_15km_Buff_Dis",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "FEATURETYPE",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 18,
+     "name": "NSW_GHI_Yearly",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "GHIY",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 12
+    }
+   ],
+   "note": "Land Assessment for ENEL Project _ Interactive Map_WFL1",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/landgate_public_maps/marine_map_wa_3": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
@@ -8116,6 +9895,313 @@
    "note": "",
    "grade": 4,
    "band": "B"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/localgoverment_lgate_233_3857": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/LocalGoverment_LGATE_233_3857/FeatureServer",
+   "cc": "AU",
+   "title": "LocalGoverment_LGATE_233_3857",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-06-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 738,
+     "name": "LocalGoverment_LGATE_233_3857",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L14Loc",
+      "boundary_i",
+      "type_code",
+      "type_descr",
+      "feature_nu",
+      "name",
+      "abs_lga_nu",
+      "postcode",
+      "land_area",
+      "area_deriv",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 139,
+     "sample": [
+      "KONDININ, SHIRE OF",
+      "TAMMIN, SHIRE OF",
+      "CHITTERING, SHIRE OF"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "LocalGoverment_LGATE_233_3857",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/mses_protected_area_nature_refuges": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/MSES_protected_area_nature_refuges/FeatureServer",
+   "cc": "AU",
+   "title": "MSES_protected_area_nature_refuges",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "The Department of Environment and   Science   recommends that the Nature Refuge data should not be used for decision making purposes when the layer is displayed at scales greater than 1:1000.",
+   "date": "2024-04-08",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 178,
+     "name": "MSES_protected_area_nature_refuges",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "PLAN_NUM",
+      "PA_NUM",
+      "NRID",
+      "HECTARES",
+      "ALT_NAME",
+      "ORIG_GAZ",
+      "LATEST_GAZ",
+      "ZONE",
+      "SHAPE_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 543,
+     "sample": [
+      "Acaciavale Nature Refuge",
+      "Arthur Harrold Nature Refuge",
+      "Brovinia Nature Refuge"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "MSES_protected_area_nature_refuges",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/new_rez_boundaries": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NEW_REZ_Boundaries/FeatureServer",
+   "cc": "AU",
+   "title": "NEW_REZ_Boundaries",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-03-13",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NEW_REZ_Boundaries",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 45,
+     "sample": [
+      "New England REZ",
+      "Central-West Orana",
+      "Hunter-Central Coas REZ"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "NEW_REZ_Boundaries",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_land_prospect": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Land_Prospect/FeatureServer",
+   "cc": "AU",
+   "title": "NSW_Land_Prospect",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-05-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 873,
+     "name": "Land Prospect",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Address",
+      "Contact_Info",
+      "Area",
+      "lotnumber",
+      "plannumber",
+      "lotplan",
+      "L_Area",
+      "Title_Ref_Num",
+      "Type",
+      "Location",
+      "Remarks",
+      "planlabel",
+      "landnumber",
+      "planoid",
+      "Temp_Id",
+      "itslotid",
+      "propertynumber"
+     ],
+     "records": 1038,
+     "sample": [
+      "Ben Buckley Pty Ltd",
+      "Glenwood Proprietary Ltd",
+      "Leonard Conn"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "NSW Land Prospect",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_pe_wind_pockets": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_PE_Wind_Pockets/FeatureServer",
+   "cc": "AU",
+   "title": "NSW_PE_Wind_Pockets",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-06-22",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NSW_PE_Wind_Pockets",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length",
+      "Rank",
+      "Remarks"
+     ],
+     "records": 35,
+     "sample": [
+      "Boro",
+      "Tantangara",
+      "Bibbenluke"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "NSW_PE_Wind_Pockets",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/proposed_bess_land_prospects": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Proposed_BESS_Land_Prospects/FeatureServer",
+   "cc": "AU",
+   "title": "Proposed_BESS_Land_Prospects",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Not to be used as a definitive absolute location of land parcel boundaries.Refer to the ACC_CODE attribute for the accuracy of land parcels in your area of interest.",
+   "date": "2025-06-10",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 513,
+     "name": "BESS_Land_Prospects",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Temp_Id",
+      "Id",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "Area",
+      "Address",
+      "Title_Ref",
+      "Name",
+      "Location",
+      "Remarks",
+      "TENURE",
+      "LOC",
+      "LOCALITY",
+      "TitleType",
+      "Site_name",
+      "Cont_info",
+      "State",
+      "Shape__Area"
+     ],
+     "records": 67,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "Title_Ref"
+    }
+   ],
+   "note": "Proposed_BESS_Land_Prospects",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/protected_areas": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
@@ -8569,84 +10655,95 @@
    "publisher_note": "not a government publisher: take the agency's own copy if one exists",
    "known_good": true
   },
-  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/infrastructure": {
-   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Infrastructure/MapServer",
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/nvadata": {
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer",
    "cc": "AU",
-   "title": "Public/Infrastructure",
+   "title": "Public/NVAdata",
    "publisher": "services.thelist.tas.gov.au",
    "catalog": "agency server services.thelist.tas.gov.au",
-   "licence": "the LIST  State of Tasmania",
+   "licence": "",
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
     {
-     "id": 57,
-     "name": "TasPorts - Vessel Traffic Service areas",
+     "id": 13,
+     "name": "Weed Management Zones",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
-      "OID",
-      "NAME",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
+      "OBJECTID",
+      "LGA_NAME",
+      "LGA_CODE",
+      "TABLE_NUMBER",
+      "COMMON_NAME",
+      "SCIENTIFIC_NAME",
+      "JOIN_FIELD",
+      "SELECT_CODE",
+      "TABLE_DESCRIPTION",
+      "MANAGEMENT_FOCUS",
+      "TARGET_FREE_REGIONS",
+      "PRIORITY",
+      "WONS",
+      "NOTES",
+      "ZONE_A_MUNICIPALITIES",
+      "ZONE_B_MUNICIPALITIES",
+      "ZONE",
+      "ZONE_SPECIES_TYPE",
+      "LIST_GUID",
+      "SHAPE"
      ],
-     "records": 13,
+     "records": 2146,
      "sample": [
-      "Burnie VTS",
-      "Burnie VTS",
-      "Devonport VTS"
+      "Hobart",
+      "Hobart",
+      "Hobart"
      ],
-     "name_field": "NAME"
-    }
-   ],
-   "note": "",
-   "grade": 4,
-   "band": "B"
-  },
-  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/marineandcoastalv2": {
-   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastalV2/MapServer",
-   "cc": "AU",
-   "title": "Public/MarineAndCoastalV2",
-   "publisher": "services.thelist.tas.gov.au",
-   "catalog": "agency server services.thelist.tas.gov.au",
-   "licence": "the LIST  State of Tasmania",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
+     "name_field": "LGA_NAME"
+    },
     {
-     "id": 3,
-     "name": "Approved Therapeutant Treatment Areas",
+     "id": 13,
+     "name": "Weed Management Zones",
      "geom": "Polygon",
      "gap": "outline",
      "is": "named area polygons",
      "fields": [
       "OBJECTID",
-      "MARINE_LEASE_NO",
-      "THERAPEUTANT_NAME",
-      "TREATMENT_START_DATE",
-      "TREATMENT_END_DATE",
-      "WITHHOLDING_DATE",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
+      "LGA_NAME",
+      "LGA_CODE",
+      "TABLE_NUMBER",
+      "COMMON_NAME",
+      "SCIENTIFIC_NAME",
+      "JOIN_FIELD",
+      "SELECT_CODE",
+      "TABLE_DESCRIPTION",
+      "MANAGEMENT_FOCUS",
+      "TARGET_FREE_REGIONS",
+      "PRIORITY",
+      "WONS",
+      "NOTES",
+      "ZONE_A_MUNICIPALITIES",
+      "ZONE_B_MUNICIPALITIES",
+      "ZONE",
+      "ZONE_SPECIES_TYPE",
+      "LIST_GUID",
+      "SHAPE"
      ],
-     "records": 2,
+     "records": 2146,
      "sample": [
-      "OTC",
-      "OTC"
+      "Hobart",
+      "Hobart",
+      "Hobart"
      ],
-     "name_field": "THERAPEUTANT_NAME"
+     "name_field": "LGA_NAME"
     }
    ],
    "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
    "grade": 4,
    "band": "B"
   },
@@ -8677,11 +10774,437 @@
       "SHAPE.LEN"
      ],
      "records": 9225
+    },
+    {
+     "id": 6,
+     "name": "Street Atlas Grids",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "MAPREF",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 9225
     }
    ],
    "note": "",
    "grade": 4,
    "band": "B"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_bess_target_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_BESS_Target_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_BESS_Target_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Not to be used as a definitive absolute location of land parcel boundaries.Refer to the ACC_CODE attribute for the accuracy of land parcels in your area of interest.",
+   "date": "2025-10-31",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "QLD_BESS_Target_Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Name",
+      "Address",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "Area",
+      "Status",
+      "Remarks",
+      "TENURE",
+      "Location",
+      "TempId",
+      "Title_Ref",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 289,
+     "sample": [
+      "RAGNAR HOLDINGS PTY LTD",
+      "RAGNAR HOLDINGS PTY LTD",
+      "MILLMERRAN INVESTMENT COMPANY IV PTY LTD\r\nMILLMERR"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "QLD_BESS_Target_Sites",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_enhar_wfl1": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Enhar_WFL1/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_Enhar_WFL1",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-02-23",
+   "found": "2026-11-06",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "QLD_Major_Substations3857",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "FEATURETYP",
+      "DESCRIPTIO",
+      "CLASS",
+      "FID_1",
+      "NAME",
+      "OPERATIONA",
+      "VOLTAGE",
+      "SUBURB",
+      "STATE",
+      "SPATIALCON",
+      "REVISED",
+      "COMMENT",
+      "LATITUDE",
+      "LONGITUDE"
+     ],
+     "records": 272,
+     "sample": [
+      "Bowen North",
+      "Wellington Road-SSWRD",
+      "Lismore South"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Competitor_Sites_Point_3857",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Snippet",
+      "PopupInfo",
+      "HasLabel",
+      "LabelID"
+     ],
+     "records": 219,
+     "sample": [
+      "Placemark",
+      "Placemark",
+      "Placemark"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 3,
+     "name": "Competitor_Sites_Polygon3857",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 20,
+     "sample": [
+      "Placemark",
+      "Placemark",
+      "Placemark"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 4,
+     "name": "QLD_Local_Boundaries3857",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Id",
+      "OBJECTID",
+      "ADMINTYPENAME",
+      "ADMINAREANAME",
+      "LGA_CODE",
+      "ABBREV_NAME",
+      "SE_ANNO_CAD_DATA",
+      "LGA",
+      "CA_AREA_SQKM",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 78,
+     "sample": [
+      "LOCAL GOVERNMENT",
+      "LOCAL GOVERNMENT",
+      "LOCAL GOVERNMENT"
+     ],
+     "name_field": "ADMINTYPENAME"
+    },
+    {
+     "id": 6,
+     "name": "State",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L2AUS_State",
+      "ID",
+      "NAME",
+      "AREA",
+      "TOTPOP_CY",
+      "ISO_CODE",
+      "ISO_SUB",
+      "ISO2_CC",
+      "ISO3_CC",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6546,
+     "sample": [
+      "",
+      "",
+      ""
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "QLD_Enhar_WFL1",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_rural_properties": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Rural_Properties/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_Rural_Properties",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-05-08",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 231,
+     "name": "QLD_Rural_Properties",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FEATURETYP",
+      "NAME",
+      "FEATUREREL",
+      "FEATURESOU",
+      "ATTRIBUTER",
+      "ATTRIBUTES",
+      "PLANIMETRI",
+      "DIMENSION",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 28659,
+     "sample": [
+      "Macfield",
+      "Moorooka",
+      "Werona"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "QLD_Rural_Properties",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_tnrm_rural_properties": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_TNRM_Rural_Properties/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_TNRM_Rural_Properties",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-05-08",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 230,
+     "name": "QLD_TNRM_Rural_Properties",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FEATURETYP",
+      "NAME",
+      "FEATUREREL",
+      "FEATURESOU",
+      "ATTRIBUTER",
+      "ATTRIBUTES",
+      "PLANIMETRI",
+      "DIMENSION",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1390,
+     "sample": [
+      "Panorwirra",
+      "Merrygallon Heights",
+      "Delaym"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "QLD_TNRM_Rural_Properties",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_urban_centres_and_localities": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Urban_Centres_and_Localities/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_Urban_Centres_and_Localities",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-06-24",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "QLD_Urban_Centres_and_Localities",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "UCL_CODE21",
+      "UCL_NAME21",
+      "SSR_CODE21",
+      "SSR_NAME21",
+      "SOS_CODE21",
+      "SOS_NAME21",
+      "STE_CODE21",
+      "STE_NAME21",
+      "AUS_CODE21",
+      "AUS_NAME21",
+      "AREASQKM21",
+      "LOCI_URI21",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 415,
+     "sample": [
+      "Gold Coast - Tweed Heads (Tweed Heads Part)",
+      "Boggabilla (L)",
+      "Mungindi (L)"
+     ],
+     "name_field": "UCL_NAME21"
+    }
+   ],
+   "note": "QLD_Urban_Centres_and_Localities",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/sa_land_prospect_bess_org": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SA_Land_Prospect_BESS_org/FeatureServer",
+   "cc": "AU",
+   "title": "SA_Land_Prospect_BESS_org",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-02-24",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "SA_Land_Prospect_BESS_org",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "parcel",
+      "parcel_id",
+      "Id",
+      "Id_tmp",
+      "plan_t",
+      "Lot",
+      "Name",
+      "Address",
+      "Ref_Num",
+      "plan_",
+      "Area",
+      "Remarks",
+      "Shape__Area",
+      "Shape__Length",
+      "Location"
+     ],
+     "records": 20,
+     "sample": [
+      "PETER ANTHONY WILLIAMS\r\nROBYN THERESE WILLIAMS",
+      "GREEN TRIANGLE FOREST PRODUCTS LTD",
+      "GREEN TRIANGLE FOREST PRODUCTS (PTC) LTD."
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "SA_Land_Prospect_BESS_org",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/bush_fire_prone_areas": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Bush_Fire_Prone_Areas/MapServer",
@@ -9559,6 +12082,218 @@
    "grade": 4,
    "band": "B"
   },
+  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/marine_and_estuaries": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer",
+   "cc": "AU",
+   "title": "SLIP_Public_Services/Marine_and_Estuaries",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Primary Sediment Cell Boundary (DOT-010)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 23,
+     "sample": [
+      "Bluff Point to Nunginjay Spring Coast N",
+      "Whale Boat Cove to Bluff Point",
+      "Glenfield to Whale Boat Cove"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 5,
+     "name": "Secondary Sediment Cell Boundary (DOT-011)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "area_km",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 73,
+     "sample": [
+      "Moore River to Ledge",
+      "Cliff Head to Leander Point",
+      "Fisherman Islands to South Illawong"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 6,
+     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 80,
+     "sample": [
+      "Point Daking to Point Templar",
+      "Seal Island to Bird Island",
+      "Safety Bay to Mersey Point"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 4,
+     "name": "Primary Sediment Cell Boundary (DOT-010)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 23,
+     "sample": [
+      "Bluff Point to Nunginjay Spring Coast N",
+      "Whale Boat Cove to Bluff Point",
+      "Glenfield to Whale Boat Cove"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 5,
+     "name": "Secondary Sediment Cell Boundary (DOT-011)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "area_km",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 73,
+     "sample": [
+      "Moore River to Ledge",
+      "Cliff Head to Leander Point",
+      "Fisherman Islands to South Illawong"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 6,
+     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 80,
+     "sample": [
+      "Point Daking to Point Templar",
+      "Seal Island to Bird Island",
+      "Safety Bay to Mersey Point"
+     ],
+     "name_field": "cell_name"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
   "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/people_and_society_wfs": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society_WFS/MapServer",
    "cc": "AU",
@@ -9593,11 +12328,1126 @@
       "Anemone Lump Dive Trail"
      ],
      "name_field": "name"
+    },
+    {
+     "id": 4,
+     "name": "Abrolhos Islands Dive Trails (DPIRD-087)",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "name",
+      "section",
+      "direction",
+      "distance_m",
+      "shape"
+     ],
+     "records": 48,
+     "sample": [
+      "Beacon Island Dive Trail",
+      "Turtle Bay Dive Trail",
+      "Anemone Lump Dive Trail"
+     ],
+     "name_field": "name"
     }
    ],
    "note": "",
    "grade": 4,
    "band": "B"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/suitable_land_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Suitable_Land_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "Suitable_Land_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-08-03",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "Suitable Land Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Id",
+      "Name",
+      "Address",
+      "Area1",
+      "Remarks",
+      "LOT",
+      "OBJECTID",
+      "LOTPLAN",
+      "PAR_NUM",
+      "SEGPAR",
+      "PAR_IND",
+      "LOT_AREA",
+      "Type",
+      "tmp_Id",
+      "Shape__Area",
+      "Shape__Length",
+      "Location",
+      "Plan_tmp",
+      "PLAN",
+      "Status"
+     ],
+     "records": 2962,
+     "sample": [
+      "O'LOUGHLIN, MICHAEL THOMAS",
+      "O'LOUGHLIN, MICHAEL THOMAS",
+      "O'LOUGHLIN, MICHAEL THOMAS"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Suitable Land Sites",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/target_sites": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Target_Sites/FeatureServer",
+   "cc": "AU",
+   "title": "Target_Sites",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-02-26",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Target_Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Remarks",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 72,
+     "sample": [
+      "GOODIE, ROBERT NEVILLE",
+      "THE STATE OF QUEENSLAND",
+      "GOODIE, ROBERT NEVILLE"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Target_Sites",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/townsites_lgate": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Townsites_LGate/FeatureServer",
+   "cc": "AU",
+   "title": "Townsites_LGate",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-06-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 326,
+     "name": "Townsites_LGate",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "boundary_i",
+      "type_code",
+      "type_descr",
+      "feature_nu",
+      "name",
+      "abs_lga_nu",
+      "postcode",
+      "land_area",
+      "area_deriv",
+      "st_area_sh",
+      "st_perimet",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 636,
+     "sample": [
+      "BOYUP BROOK",
+      "EJANDING",
+      "MALCOLM"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "Townsites_LGate",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/transmission_line_40km_buffer": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Line_40km_Buffer/FeatureServer",
+   "cc": "AU",
+   "title": "Transmission_Line_40km_Buffer",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-06-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1542,
+     "name": "Transmission_Line_40km_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L0NationalElectricityTransm",
+      "FEATURETYPE",
+      "NAME",
+      "CAPACITY_kV",
+      "CONSTRUCTIONTYPE",
+      "SPATIALCONFIDENCE",
+      "STATE",
+      "STATUS",
+      "FEATURERELIABILITY",
+      "FEATURESOURCE",
+      "ATTRIBUTERELIABILITY",
+      "ATTRIBUTESOURCE",
+      "REVISED",
+      "CAP_KV",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1484,
+     "sample": [
+      "Transmission line - 40km Buffer",
+      "Transmission line - 40km Buffer",
+      "Transmission line - 40km Buffer"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Transmission_Line_40km_Buffer",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/wa_suitable_land_suites_v1": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Suitable_Land_Suites_V1/FeatureServer",
+   "cc": "AU",
+   "title": "WA_Suitable_Land_Suites_V1",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-03-06",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 359,
+     "name": "WA_Suitable_Land_Suites_V2",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "temp_Id",
+      "land_id",
+      "Id",
+      "Name",
+      "Address",
+      "Lot",
+      "Plan_",
+      "Lot_Plan",
+      "Area",
+      "Title_Ref_Num",
+      "TargetSite",
+      "Remarks",
+      "road_numbe",
+      "road_num00",
+      "road_num01",
+      "lot_number",
+      "road_name",
+      "road_type",
+      "road_suffi"
+     ],
+     "records": 2054,
+     "sample": [
+      "Geoffrey Terrance Davies",
+      "Geoffrey Terrance Davies",
+      "DAWNFROST PTY LTD"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "WA_Suitable_Land_Suites_V1",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/zeta_energy_group": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Zeta_Energy_Group/FeatureServer",
+   "cc": "AU",
+   "title": "Zeta_Energy_Group",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-11-02",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline",
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Draft_Preferred_Route",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 1,
+     "name": "BESS Suitable Site",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Id",
+      "Name",
+      "Address",
+      "Remarks",
+      "T_Ref_Num",
+      "Temp_Id",
+      "Lot",
+      "Plan_",
+      "LotPlan",
+      "VolFolio",
+      "Shape__Area",
+      "Shape__Length",
+      "Area",
+      "State",
+      "Lot_Plan",
+      "Project_Name",
+      "Legal_Entities",
+      "LegalEntities",
+      "Cont_Name"
+     ],
+     "records": 330,
+     "sample": [
+      "Hancock Victorian Plantations Pty Ltd",
+      "Cms Genration Horizon Enthe Netherlands Horizon En",
+      "Cms Genration Horizon Enthe Netherlands Horizon En"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 2,
+     "name": "Proposed_Griffard_Terminal_Station_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
+     "id": 3,
+     "name": "Corridor",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "Zeta Energy Group",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/blanche_buildings_buffer_500m": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Blanche_Buildings_Buffer_500m/FeatureServer",
+   "cc": "AU",
+   "title": "Blanche_Buildings_Buffer_500m",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-02-23",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Blanche_Buildings_Buffer_500m",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "osm_id",
+      "Area",
+      "ORIG_FID",
+      "BUFF_DIST",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 837
+    }
+   ],
+   "note": "Blanche_Buildings_Buffer_500m",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/broom_hill_high_potential_area": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Broom_Hill_High_Potential_Area/FeatureServer",
+   "cc": "AU",
+   "title": "Broom_Hill_High_Potential_Area",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-09-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 373,
+     "name": "Broom_Hill_High_Potential_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "High"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Broom_Hill_High_Potential_Area",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/broom_hill_med_potential_area": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Broom_Hill_Med_Potential_Area/FeatureServer",
+   "cc": "AU",
+   "title": "Broom_Hill_Med_Potential_Area",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-09-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 374,
+     "name": "Broom_Hill_Med_Potential_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Medium"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Broom_Hill_Med_Potential_Area",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/coastline_buffer_30km": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastline_Buffer_30km/FeatureServer",
+   "cc": "AU",
+   "title": "Coastline_Buffer_30km",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-03-04",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coastline_Buffer_30km",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L0AUS_Country",
+      "NAME",
+      "TOTPOP_CY",
+      "AREA",
+      "ISO2",
+      "ISO3",
+      "FIPS",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "None"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Coastline_Buffer_30km",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/coastline_buffer_50km": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastline_Buffer_50km/FeatureServer",
+   "cc": "AU",
+   "title": "Coastline_Buffer_50km",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-03-04",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coastline_Buffer_50km",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L0AUS_Country",
+      "NAME",
+      "TOTPOP_CY",
+      "AREA",
+      "ISO2",
+      "ISO3",
+      "FIPS",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "None"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Coastline_Buffer_50km",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/competitor_polygons_altenergy": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Competitor_Polygons_AltEnergy/FeatureServer",
+   "cc": "AU",
+   "title": "Competitor_Polygons_AltEnergy",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-05-14",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 661,
+     "name": "Competitor Polygons_AltEnergy",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "ENERGY",
+      "TYPE",
+      "PROJECT_NA",
+      "CAPACITY",
+      "STORAGE_CA",
+      "REZ_REGION",
+      "LAT",
+      "LNG",
+      "DESCRIPTIO",
+      "BATTERY",
+      "OFFGRID",
+      "COMPLETED_",
+      "ESTIMATED_",
+      "ESTIMATE1",
+      "DEVELOPER",
+      "OWNER",
+      "LOCATION",
+      "STATE"
+     ],
+     "records": 2012
+    }
+   ],
+   "note": "Competitor Polygons_AltEnergy",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/dwellings_1500m_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Dwellings_1500m_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Dwellings_1500m_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-02-06",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 659,
+     "name": "Dwellings_1500m_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "osm_id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 46
+    }
+   ],
+   "note": "Dwellings_1500m_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/goulburn_dwellings_1500m_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Goulburn_Dwellings_1500m_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Goulburn_Dwellings_1500m_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-11-17",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Goulburn_Dwellings_1500m_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "osm_id",
+      "Shape_Leng",
+      "Area",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1656
+    }
+   ],
+   "note": "Goulburn_Dwellings_1500m_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/host_800m_buffer": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Host_800m_Buffer/FeatureServer",
+   "cc": "AU",
+   "title": "Host_800m_Buffer",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-05-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Host_800m_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "osm_id",
+      "Area",
+      "ORIG_FID",
+      "Remarks",
+      "BUFF_DIST",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 152
+    }
+   ],
+   "note": "Host_800m_Buffer",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_trundle_2nd_priority_zone": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Trundle_2nd_Priority_Zone/FeatureServer",
+   "cc": "AU",
+   "title": "NSW_Trundle_2nd_Priority_Zone",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-11-05",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NSW_Trundle_2nd_Priority_Zone",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "NAME",
+      "LAYER",
+      "KML_STYLE",
+      "tessellate",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "No Label"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "NSW_Trundle_2nd_Priority_Zone",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/nsw_vortex_wind_resource": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Vortex_Wind_Resource/FeatureServer",
+   "cc": "AU",
+   "title": "NSW_Vortex_Wind_Resource",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-07-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 382,
+     "name": "NSW_Vortex_Wind_Resource_150m",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "gridcode",
+      "Class",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6409
+    }
+   ],
+   "note": "NSW_Vortex_Wind_Resource",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/new_target_zones_nsw_goulburn": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_Target_Zones_NSW_Goulburn/FeatureServer",
+   "cc": "AU",
+   "title": "New_Target_Zones_NSW_Goulburn",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-11-04",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "New Target Zones NSW (Goulburn)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "Untitled Polygon",
+      "Untitled Polygon"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "New_Target Zones_NSW_Goulburn",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/non_host_1500m_buffer": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Non_host_1500m_Buffer/FeatureServer",
+   "cc": "AU",
+   "title": "Non_host_1500m_Buffer",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-05-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Non_host_1500m_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "osm_id",
+      "Area",
+      "ORIG_FID",
+      "Remarks",
+      "BUFF_DIST",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 819
+    }
+   ],
+   "note": "Non_host_1500m_Buffer",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/infrastructure": {
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Infrastructure/MapServer",
+   "cc": "AU",
+   "title": "Public/Infrastructure",
+   "publisher": "services.thelist.tas.gov.au",
+   "catalog": "agency server services.thelist.tas.gov.au",
+   "licence": "the LIST  State of Tasmania",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 57,
+     "name": "TasPorts - Vessel Traffic Service areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OID",
+      "NAME",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 13,
+     "sample": [
+      "Burnie VTS",
+      "Burnie VTS",
+      "Devonport VTS"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 57,
+     "name": "TasPorts - Vessel Traffic Service areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "OID",
+      "NAME",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 13,
+     "sample": [
+      "Burnie VTS",
+      "Burnie VTS",
+      "Devonport VTS"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/marineandcoastalv2": {
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastalV2/MapServer",
+   "cc": "AU",
+   "title": "Public/MarineAndCoastalV2",
+   "publisher": "services.thelist.tas.gov.au",
+   "catalog": "agency server services.thelist.tas.gov.au",
+   "licence": "the LIST  State of Tasmania",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 3,
+     "name": "Approved Therapeutant Treatment Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "MARINE_LEASE_NO",
+      "THERAPEUTANT_NAME",
+      "TREATMENT_START_DATE",
+      "TREATMENT_END_DATE",
+      "WITHHOLDING_DATE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 3,
+     "sample": [
+      "Oxytetracycline",
+      "Oxytetracycline",
+      "Oxytetracycline"
+     ],
+     "name_field": "THERAPEUTANT_NAME"
+    },
+    {
+     "id": 3,
+     "name": "Approved Therapeutant Treatment Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "OBJECTID",
+      "MARINE_LEASE_NO",
+      "THERAPEUTANT_NAME",
+      "TREATMENT_START_DATE",
+      "TREATMENT_END_DATE",
+      "WITHHOLDING_DATE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 2,
+     "sample": [
+      "OTC",
+      "OTC"
+     ],
+     "name_field": "THERAPEUTANT_NAME"
+    }
+   ],
+   "note": "",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_vortex_wind": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Vortex_Wind/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_Vortex_Wind",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-07-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 381,
+     "name": "QLD_Vortex_Wind_Resource_150m",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "gridcode",
+      "Class",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7938
+    }
+   ],
+   "note": "QLD_Vortex_Wind",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/sa_1km_buffer": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SA_1km_Buffer/FeatureServer",
+   "cc": "AU",
+   "title": "SA_1km_Buffer",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-02-24",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "SA_1km_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "osm_id",
+      "Area",
+      "ORIG_FID",
+      "BUFF_DIST",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 829
+    }
+   ],
+   "note": "SA_1km_Buffer",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/transport": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Transport/MapServer",
@@ -9612,6 +13462,19 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 31,
+     "name": "DBCA Long Trails (DBCA-027)",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "trl_trail_type",
+      "shape"
+     ],
+     "records": 55
+    },
     {
      "id": 31,
      "name": "DBCA Long Trails (DBCA-027)",
@@ -9655,11 +13518,442 @@
       "shape"
      ],
      "records": 55
+    },
+    {
+     "id": 2,
+     "name": "DBCA Long Trails (DBCA-027)",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "trl_trail_type",
+      "shape"
+     ],
+     "records": 55
     }
    ],
    "note": "",
    "grade": 3,
    "band": "B"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/sn_project_candidate": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SN_Project_Candidate/FeatureServer",
+   "cc": "AU",
+   "title": "SN_Project_Candidate",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Not to be used as a definitive absolute location of land parcel boundaries.Refer to the ACC_CODE attribute for the accuracy of land parcels in your area of interest.",
+   "date": "2026-05-07",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "SN_Project_Candidate",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Temp_Id",
+      "Id",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "Area",
+      "Address",
+      "Title_Ref",
+      "Name",
+      "Location",
+      "Remarks",
+      "TENURE",
+      "LOC",
+      "LOCALITY",
+      "TitleType",
+      "Site_name",
+      "Cont_info",
+      "State",
+      "Tmp_PLAN"
+     ],
+     "records": 13,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "Title_Ref"
+    }
+   ],
+   "note": "SN_Project_Candidate",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/transmission_lines_15km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Lines_15km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Transmission_Lines_15km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-02-28",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Transmission_Lines_Buffer_15km_New",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_L0NationalElectricityTransm",
+      "FEATURETYPE",
+      "NAME",
+      "CAPACITY_kV",
+      "CONSTRUCTIONTYPE",
+      "SPATIALCONFIDENCE",
+      "STATE",
+      "STATUS",
+      "FEATURERELIABILITY",
+      "FEATURESOURCE",
+      "ATTRIBUTERELIABILITY",
+      "ATTRIBUTESOURCE",
+      "REVISED",
+      "CAP_KV",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2,
+     "sample": [
+      "None",
+      "None"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Transmission_Lines_15km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/transmission_study_corridor_15km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Study_Corridor_15km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Transmission_Study_Corridor_15km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2025-05-22",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1107,
+     "name": "Transmission_Study_Corridor_15km_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "CapacitykV",
+      "Name",
+      "Remarks",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "None"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Transmission_Study_Corridor_15km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/trundle_wf_zone1_boundary": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle_WF_Zone1_Boundary/FeatureServer",
+   "cc": "AU",
+   "title": "Trundle_WF_Zone1_Boundary",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-06-22",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Trundle_WF Zone1 Boundary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Zone1"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Trundle_WF Zone1 Boundary",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/trundle_wf_zone2_boundary": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle_WF_Zone2_Boundary/FeatureServer",
+   "cc": "AU",
+   "title": "Trundle_WF_Zone2_Boundary",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-06-22",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Trundle_WF Zone2 Boundary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Zone2"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Trundle_WF Zone2 Boundary",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/trundle_wf_zone3_boundary": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle_WF_Zone3_Boundary/FeatureServer",
+   "cc": "AU",
+   "title": "Trundle_WF_Zone3_Boundary",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-06-22",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Trundle_WF Zone3 Boundary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "NULL"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "Trundle_WF Zone3 Boundary",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/vic_proposed_ren_energy_zones": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/VIC_Proposed_Ren_Energy_Zones/FeatureServer",
+   "cc": "AU",
+   "title": "VIC_Proposed_Ren_Energy_Zones",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-02-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "VIC_Proposed_Ren_Energy_Zones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "REZName",
+      "REZType",
+      "Shape__Are",
+      "Shape__Len",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 7,
+     "sample": [
+      "Central Highlands",
+      "Central North",
+      "Gippsland"
+     ],
+     "name_field": "REZName"
+    }
+   ],
+   "note": "VIC_Proposed_Ren_Energy_Zones",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/wa_vortex_wind_resource": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Vortex_Wind_Resource/FeatureServer",
+   "cc": "AU",
+   "title": "WA_Vortex_Wind_Resource",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-07-19",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 383,
+     "name": "WA_Vortex_Wind_Resource_150m",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "gridcode",
+      "Class",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2675
+    }
+   ],
+   "note": "WA_Vortex_Wind_Resource",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/wa_windfarm_search": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_WindFarm_Search/FeatureServer",
+   "cc": "AU",
+   "title": "WA_WindFarm_Search",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-05-29",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 267,
+     "name": "WA_WindFarm_Search",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape_Leng",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "0.24246025707984"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "WA_WindFarm_Search",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   },
   "https://opendata.maps.vic.gov.au/geoserver/wfs": {
    "url": "https://opendata.maps.vic.gov.au/geoserver/wfs",
@@ -9765,6 +14059,219 @@
    "grade": 3,
    "band": "B",
    "known_good": true
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/enhar_regen_5mw_search_radius": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Enhar_ReGen_5MW_search_radius/FeatureServer",
+   "cc": "AU",
+   "title": "Enhar_ReGen_5MW_search_radius",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-07-16",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Enhar ReGen 5MW search radius",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length",
+      "Category",
+      "Assignment"
+     ],
+     "records": 4
+    }
+   ],
+   "note": "Enhar ReGen 5MW search radius",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/qld_urban_centres_and_localities_10km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Urban_Centres_and_Localities_10km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "QLD_Urban_Centres_and_Localities_10km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-06-24",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "QLD_Urban_Centres_and_Localities_10km_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "AUS_CODE21",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "QLD_Urban_Centres_and_Localities_10km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/swop_10m_buffer": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SWOP_10m_Buffer/FeatureServer",
+   "cc": "AU",
+   "title": "SWOP_10m_Buffer",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2026-01-29",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 617,
+     "name": "SWOP_10m_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "STATUS",
+      "PFI",
+      "PFI_CR",
+      "UFI",
+      "UFI_CR",
+      "UFI_OLD",
+      "TASK_ID",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "SWOP_10m_Buffer",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/townsites_lgate_10km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Townsites_LGate_10Km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Townsites_LGate_10Km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-06-18",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 328,
+     "name": "Townsites_LGate_10Km_Buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "abs_lga_nu",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "Townsites_LGate_10Km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/transmission_line_3km_buff": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Line_3km_Buff/FeatureServer",
+   "cc": "AU",
+   "title": "Transmission_Line_3km_Buff",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-06-11",
+   "found": "2026-11-06",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Transmission_Line_3km_Buff",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "feature_source",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "Transmission_Line_3km_Buff",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/new_england_route": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_England_Route/FeatureServer",
+   "cc": "AU",
+   "title": "New_England_Route",
+   "publisher": "GIS Team",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "",
+   "date": "2024-03-13",
+   "found": "2026-11-06",
+   "gaps": [
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "New England Route",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Length"
+     ],
+     "records": 2
+    }
+   ],
+   "note": "New England Route",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 1,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
   }
  }
 }

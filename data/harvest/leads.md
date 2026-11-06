@@ -97,21 +97,22 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | NZ | Whitebait_Catchments | park / protected-area polygons with a name field; park / protected-are | Department of Conservation | CC-BY ATTRIBUTION Crowncopyright ©. Copy | 2021-10-27 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Whitebait_Catchments/FeatureServer |
 | A | AU | AerialPhotoViewer/Aerial_Photo_Coverage_Areas | named area polygons | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer |
 | A | AU | AerialPhotoViewer/Orthophoto_Coverage_Area | named area polygons | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer |
+| C | AU | HydroArea | park / protected-area polygons with a name field | GIS Team | Creative Commons Attribution 4.0 Interna | 2024-07-30 | https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/HydroArea/FeatureServer |
 | A | AU | Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_ | named area polygons; named area polygons | public-services.slip.wa.gov.au | Landgate/SLIP/OBRM |  | https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer |
-| A | AU | Public/ABS_2011 | named area polygons; named area polygons | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer |
-| A | AU | Public/ABS_2016 | named area polygons; named area polygons | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer |
-| A | AU | Public/CadastreAndAdministrative | named area polygons; named area polygons | services.thelist.tas.gov.au | the LIST  &copy; State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer |
+| C | AU | NT_Waterbody | park / protected-area polygons with a name field | GIS Team | Creative Commons Attribution 4.0 Interna | 2024-07-30 | https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Waterbody/FeatureServer |
+| A | AU | Public/ABS_2011 | park / protected-area polygons with a name field; named area polygons  | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer |
+| A | AU | Public/ABS_2016 | park / protected-area polygons with a name field; named area polygons | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer |
+| A | AU | Public/CadastreAndAdministrative | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | the LIST  &copy; State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer |
 | A | AU | Public/CadastreAndAdministrativeV2 | park / protected-area polygons with a name field; park / protected-are | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer |
 | A | AU | Public/CadastreParcels | park / protected-area polygons with a name field | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer |
-| A | AU | Public/EmergencyManagementPublic | named area polygons; park / protected-area polygons (no name field see | services.thelist.tas.gov.au | the LIST  © State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer |
+| A | AU | Public/EmergencyManagementPublic | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | the LIST  © State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer |
 | A | AU | Public/Indexes | park / protected-area polygons with a name field; park / protected-are | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer |
-| A | AU | Public/MarineAndCoastal | named area polygons; trail / path lines | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer |
-| A | AU | Public/NVAdata | named area polygons | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer |
-| A | AU | Public/NaturalEnvironment | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer |
-| A | AU | Public/NaturalEnvironmentV2 | park points (sites / entrances); park points (sites / entrances) | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer |
+| A | AU | Public/MarineAndCoastal | trail / path lines; park / protected-area polygons (no name field seen | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer |
+| A | AU | Public/NaturalEnvironment | park / protected-area polygons (no name field seen); park points (site | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer |
+| A | AU | Public/NaturalEnvironmentV2 | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer |
 | A | AU | Public/OpenDataWFS | known-good layer (chat 8); known-good layer (chat 8) | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer |
 | A | AU | Public/PWSPublic | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer |
-| A | AU | Public/Planning | park / protected-area polygons with a name field; park / protected-are | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer |
+| A | AU | Public/Planning | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer |
 | A | AU | Public/PlanningOnline | park / protected-area polygons with a name field; named area polygons | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer |
 | A | AU | Public/TopographyAndRelief | trail / path lines; trail / path lines | services.thelist.tas.gov.au | the LIST © State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer |
 | A | AU | Public/WildFisheries | park / protected-area polygons with a name field; park / protected-are | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer |
@@ -125,15 +126,14 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | AU | SLIP_Public_Services/Industry_and_Mining_WFS | park / protected-area polygons (no name field seen); named area polygo | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer |
 | A | AU | SLIP_Public_Services/Infrastructure_and_Utilities | park / protected-area polygons with a name field; trail / path lines | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities/MapServer |
 | A | AU | SLIP_Public_Services/Infrastructure_and_Utilities_ | park / protected-area polygons with a name field; park / protected-are | public-services.slip.wa.gov.au | You are provided access to publicly avai |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer |
-| A | AU | SLIP_Public_Services/Marine_and_Estuaries | named area polygons; named area polygons | public-services.slip.wa.gov.au | licence unknown: chat 8 asks |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer |
-| A | AU | SLIP_Public_Services/People_and_Society | park points (sites / entrances); trail / path lines | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer |
+| A | AU | SLIP_Public_Services/People_and_Society | trail / path lines; park / protected-area polygons with a name field | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer |
 | A | AU | SLIP_Public_Services/Plants_and_Animals | park / protected-area polygons (no name field seen); park / protected- | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer |
 | A | AU | SLIP_Public_Services/Plants_and_Animals_WFS | park / protected-area polygons (no name field seen); park / protected- | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer |
 | A | AU | SLIP_Public_Services/Property_and_Planning_WFS | park / protected-area polygons with a name field; park / protected-are | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer |
 | A | AU | SLIP_Public_Services/Soil_Landscape | park / protected-area polygons (no name field seen); park / protected- | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape/MapServer |
 | A | AU | SLIP_Public_Services/Soil_Landscape_WFS | park / protected-area polygons (no name field seen); park / protected- | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape_WFS/MapServer |
-| A | AU | SLIP_Public_Services/Water | trail / path lines; named area polygons | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer |
-| A | AU | SLIP_Public_Services/Water_FS | trail / path lines; named area polygons | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer |
+| A | AU | SLIP_Public_Services/Water | park / protected-area polygons with a name field; named area polygons  | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer |
+| A | AU | SLIP_Public_Services/Water_FS | park / protected-area polygons with a name field; named area polygons  | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer |
 | A | BE | NWP_Overzichtskaart_Zuidwestelijke_Delta | park / protected-area polygons with a name field; park points (sites / | Rijkswaterstaat | In de NWP-viewer staan de kaarten zoals  | 2025-09-08 | https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Zuidwestelijke_Delta/FeatureServer |
 | A | CL | GEF_MONTANA/PE_APROTEGIDAS | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer |
 | A | CL | MMA/HUMEDALES_URBANOS | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/MMA/HUMEDALES_URBANOS/FeatureServer |
@@ -160,33 +160,24 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 {
  "date": "2026-11-06",
  "stats": {
-  "requests": 1653,
+  "requests": 1634,
   "hits": 0,
-  "leads": 304,
-  "already_read": 10,
-  "skipped": 74,
-  "not_official": 185,
-  "robots": 6,
-  "strikes": 9,
-  "errors": 13
+  "leads": 84,
+  "already_read": 0,
+  "skipped": 108,
+  "not_official": 19,
+  "robots": 0,
+  "strikes": 3,
+  "errors": 1
  },
  "countries": [
-  "GB done: 306 leads (A 165), known-good found 2 of 2",
-  "AU paused: 58 leads (A 45), known-good found 4 of 5"
+  "AU paused: 117 leads (A 43), known-good found 4 of 5"
  ],
  "dead_servers": [
-  "cagmap.snh.gov.uk",
-  "gisext.qfes.qld.gov.au",
-  "mmo.cloud.esriuk.com"
+  "gisext.qfes.qld.gov.au"
  ],
- "robots_refused": {
-  "ckan.publishing.service.gov.uk": 4,
-  "map.cornwall.gov.uk": 2
- },
- "robots_said": {
-  "ckan.publishing.service.gov.uk": "User-agent: * | Disallow: /",
-  "map.cornwall.gov.uk": "User-agent: * | Disallow: /"
- },
+ "robots_refused": {},
+ "robots_said": {},
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }
 ```
