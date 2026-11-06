@@ -9,53 +9,47 @@
   "CA-PE",
   "CA-NL"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 01:59 UTC",
- "verdict": "STOPPED",
+ "since": "2026-11-06",
+ "date": "2026-11-06 15:19 UTC",
+ "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "missing check: 1269 of 1272 expected pairs were never looked at (100%; 0 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (1269)",
-  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 0 of 13181 pairs whose boxes touch",
-  "CA-PE: pass1 not run in this run (stamp 2026-10-30, run started 2026-11-05)",
-  "CA-NL: pass1 not run in this run (stamp 2026-10-30, run started 2026-11-05)"
+  "water not checked: CA-ON: 4 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-NL: 2 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 1,
-  "DROPPED": 2,
-  "NEVER LOOKED AT": 1269
+  "FOUND": 0,
+  "DROPPED": 90,
+  "NEVER LOOKED AT": 0
  },
  "never_looked_at": {
-  "counted": 1269,
+  "counted": 0,
   "no_official_outline": 0,
-  "expected": 1272,
+  "expected": 90,
   "limit": "10%",
-  "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 1269
-  }
+  "by_reason": {}
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 0,
-   "pairs whose boxes touch": 13181,
-   "stopped for time": true
+   "date": "2026-11-06",
+   "pairs tested": 13880,
+   "pairs whose boxes touch": 13880
   },
   "pass2": {
-   "agree with the pass before": 0,
-   "date": "2026-11-05",
-   "pairs tested": 0
+   "agree with the pass before": 1220,
+   "date": "2026-11-06",
+   "pairs tested": 436
   },
   "pass3": {
-   "agree with the pass before": 0,
-   "date": "2026-11-05",
-   "pairs tested": 0
+   "agree with the pass before": 379,
+   "date": "2026-11-06",
+   "pairs tested": 396
   },
   "pass5": {
-   "checked": 1,
-   "date": "2026-11-05",
+   "checked": 45,
+   "date": "2026-11-06",
    "pairs tested": 0,
-   "still not checked": 0
+   "still not checked": 6
   }
  },
  "files": {
@@ -67,46 +61,126 @@
   "CA-NL": "data/fers/CA-NL.json"
  },
  "CA-ON": {
-  "rows": 23,
-  "live": 8,
+  "rows": 1069,
+  "live": 111,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 5
+   "water not checked": 4,
+   "one record covers two parks": 5,
+   "no public owner on the ownership map": 35
   },
-  "dropped": 0,
-  "merged": 10
+  "dropped": 806,
+  "merged": 108
+ },
+ "water_weak": {
+  "CA-ON": 4,
+  "CA-NL": 2
  },
  "CA-QC": {
-  "rows": 1,
-  "live": 1,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 0
- },
- "CA-NB": {
-  "rows": 7,
-  "live": 2,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "one record covers two parks": 1
-  },
-  "dropped": 1,
-  "merged": 3
- },
- "CA-NS": {
-  "rows": 48,
+  "rows": 486,
   "live": 6,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 1
+   "the official outline of La Mauricie National Park, R\u00e9serve f": 1,
+   "the official outline of Zec Buteux-Bas-Saguenay Nature Reser": 1,
+   "the official outline of Zec Saint-Romain Nature Reserve coul": 1,
+   "the official outline of R\u00e9serve faunique de Matane Wildlife": 3,
+   "the official outline of R\u00e9serve faunique des Chic-Chocs Wild": 1,
+   "the official outline of R\u00e9serve faunique des Laurentides Wil": 6,
+   "the official outline of Zec Des Martres Nature Reserve could": 2,
+   "the official outline of Zec Lac-au-Sable Nature Reserve coul": 1,
+   "the official outline of Zec Lac-Br\u00e9beuf Nature Reserve could": 1,
+   "the official outline of R\u00e9serve faunique Rouge-Matawin Wildl": 5,
+   "the official outline of Zec Lavigne Nature Reserve could not": 1,
+   "the official outline of Zec Martin-Valin Nature Reserve coul": 1,
+   "the official outline of Parc r\u00e9gional du Massif du Sud Regio": 1,
+   "the official outline of Parc du Marecage-des-Scots Regional": 1,
+   "the official outline of R\u00e9serve faunique La V\u00e9rendrye Wildli": 5,
+   "the official outline of R\u00e9serve faunique Mastigouche Wildlif": 2,
+   "the official outline of Zec Rapides-des-Joachims Nature Rese": 3,
+   "the official outline of Ashuapmushuan Nature Reserve could n": 1,
+   "the official outline of ZEC du Bas-Saint-Laurent Nature Rese": 1,
+   "the official outline of Parc regional des Grandes-Coulees Re": 1,
+   "the official outline of Zec Saint-Patrice Nature Reserve cou": 1,
+   "the official outline of Zec Louise-Gosford Nature Reserve co": 1,
+   "the official outline of Port-Cartier-Sept-Iles Nature Reserv": 1,
+   "the official outline of Port-Daniel  Reserve Nature Reserve,": 1,
+   "the official outline of Portneuf Reserve faunique Nature Res": 4,
+   "the official outline of Saint-Maurice Reserve Nature Reserve": 1,
+   "the official outline of ZEC Anse-St-Jean Nature Reserve, Zec": 1,
+   "the official outline of ZEC de la Bessonne Nature Reserve, Z": 1,
+   "the official outline of Zec Borgia Nature Reserve, Zec Kiski": 1,
+   "the official outline of Zec Borgia Nature Reserve, Zec Menok": 1,
+   "the official outline of Zec Boull\u00e9 Nature Reserve, Zec Colli": 1,
+   "the official outline of Zec Boull\u00e9 Nature Reserve, Zec Maiso": 2,
+   "the official outline of Zec Boull\u00e9 Nature Reserve, Zec Mazan": 1,
+   "the official outline of Zec Bras-Coup\u00e9-D\u00e9sert Nature Reserve": 1,
+   "the official outline of Zec Capitachouane Nature Reserve, Ze": 1,
+   "the official outline of Zec Dumoine Nature Reserve, Zec Maga": 1,
+   "the official outline of Zec Dumoine Nature Reserve, Zec Rapi": 1,
+   "the official outline of Zec Fremont Nature Reserve, Zec Gros": 1,
+   "the official outline of Zec Gros-Brochet Nature Reserve, Zec": 1,
+   "the official outline of Zec Kiskissink Nature Reserve, Zec M": 1,
+   "the official outline of Zec Lac-au-Sable Nature Reserve, Zec": 1,
+   "the official outline of Zec Lesueur Nature Reserve, Zec Mitc": 1,
+   "the official outline of Zec Lesueur Nature Reserve, Zec Peta": 1,
+   "the official outline of Zec Maison-de-Pierre Nature Reserve,": 1,
+   "the official outline of Zec Des Nymphes Nature Reserve, Parc": 1,
+   "the official outline of Zec Owen Nature Reserve, New Brunswi": 4,
+   "the official outline of Zec Owen Nature Reserve could not be": 1
   },
-  "dropped": 0,
-  "merged": 41
+  "dropped": 71,
+  "merged": 336
+ },
+ "CA-NB": {
+  "rows": 776,
+  "live": 13,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of New Brunswick #25 Wildlife Managemen": 5,
+   "one record covers two parks": 1,
+   "the official outline of New Brunswick #23 Wildlife Managemen": 29,
+   "the official outline of New Brunswick #24 Wildlife Managemen": 28,
+   "the official outline of New Brunswick #14 Wildlife Managemen": 17,
+   "the official outline of New Brunswick #8 Wildlife Management": 32,
+   "the official outline of New Brunswick #17 Wildlife Managemen": 16,
+   "the official outline of New Brunswick #11 Wildlife Managemen": 11,
+   "the official outline of New Brunswick #2 Wildlife Management": 12,
+   "the official outline of New Brunswick #1 Wildlife Management": 6,
+   "the official outline of New Brunswick #7 Wildlife Management": 34,
+   "the official outline of New Brunswick #4 Wildlife Management": 25,
+   "the official outline of New Brunswick #5 Wildlife Management": 4,
+   "the official outline of New Brunswick #12 Wildlife Managemen": 8,
+   "the official outline of New Brunswick #15 Wildlife Managemen": 32,
+   "the official outline of New Brunswick #16 Wildlife Managemen": 42,
+   "the official outline of New Brunswick #6 Wildlife Management": 5,
+   "the official outline of New Brunswick #10 Wildlife Managemen": 21,
+   "the official outline of New Brunswick #3 Wildlife Management": 24,
+   "the official outline of New Brunswick #18 Wildlife Managemen": 18,
+   "the official outline of New Brunswick #22 Wildlife Managemen": 13,
+   "the official outline of New Brunswick #19 Wildlife Managemen": 13,
+   "the official outline of New Brunswick #13 Wildlife Managemen": 5,
+   "the official outline of New Brunswick #9 Wildlife Management": 3,
+   "the official outline of New Brunswick #21 Wildlife Managemen": 10
+  },
+  "dropped": 77,
+  "merged": 272
+ },
+ "CA-NS": {
+  "rows": 217,
+  "live": 10,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3,
+   "one record covers two parks": 1,
+   "the official outline of New Brunswick #25 Wildlife Managemen": 1
+  },
+  "dropped": 151,
+  "merged": 51
  },
  "CA-PE": {
   "rows": 0,
@@ -118,21 +192,24 @@
   "merged": 0
  },
  "CA-NL": {
-  "rows": 14,
-  "live": 1,
+  "rows": 50,
+  "live": 2,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 12,
-  "merged": 1
+  "not_sure": {
+   "water not checked": 2
+  },
+  "dropped": 18,
+  "merged": 28
  },
- "states_ready": [],
- "states_held": [
-  "CA-ON",
+ "states_ready": [
   "CA-QC",
   "CA-NB",
   "CA-NS",
-  "CA-PE",
-  "CA-NL"
+  "CA-PE"
+ ],
+ "states_held": [
+  "CA-NL",
+  "CA-ON"
  ]
 }
