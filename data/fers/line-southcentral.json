@@ -9,48 +9,47 @@
   "US-KS",
   "US-NE"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 19:06 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 05:05 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 2660 of 8786 expected pairs were never looked at (30%; 5101 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2660)",
-  "US-AR: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-0646+US-7270@same land@36.030,-92.871",
-  "water not checked: US-TX: 1 rows (the USGS water map / files had no answer there): never READY with one"
+  "missing check: 2605 of 8860 expected pairs were never looked at (29%; 5236 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2605)",
+  "US-AR: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-0646+US-7270@same land@36.030,-92.871"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 230,
-  "DROPPED": 795,
-  "NEVER LOOKED AT": 7761
+  "FOUND": 227,
+  "DROPPED": 792,
+  "NEVER LOOKED AT": 7841
  },
  "never_looked_at": {
-  "counted": 2660,
-  "no_official_outline": 5101,
-  "expected": 8786,
+  "counted": 2605,
+  "no_official_outline": 5236,
+  "expected": 8860,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 2660
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 2605
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 5559,
-   "pairs whose boxes touch": 5559
+   "date": "2026-11-06",
+   "pairs tested": 5354,
+   "pairs whose boxes touch": 5354
   },
   "pass2": {
-   "agree with the pass before": 1153,
-   "date": "2026-11-05",
-   "pairs tested": 326
+   "agree with the pass before": 1140,
+   "date": "2026-11-06",
+   "pairs tested": 320
   },
   "pass3": {
-   "agree with the pass before": 732,
-   "date": "2026-11-05",
-   "pairs tested": 314
+   "agree with the pass before": 728,
+   "date": "2026-11-06",
+   "pairs tested": 308
   },
   "pass5": {
-   "checked": 154,
-   "date": "2026-11-05",
+   "checked": 152,
+   "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -64,19 +63,18 @@
   "US-NE": "data/fers/US-NE.json"
  },
  "US-AR": {
-  "rows": 803,
-  "live": 99,
+  "rows": 795,
+  "live": 98,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 7,
    "one record covers two parks": 3,
    "the official outline of Crowley\u2019s Ridge Parkway National Sce": 2,
-   "low-confidence outline for Greers Ferry Lake Tailwater State": 1,
    "this spot is 154 km from Cherokee Wildlife Management Area's": 1
   },
-  "dropped": 384,
-  "merged": 306
+  "dropped": 379,
+  "merged": 305
  },
  "US-LA": {
   "rows": 47,
@@ -88,8 +86,8 @@
   "merged": 4
  },
  "US-OK": {
-  "rows": 172,
-  "live": 39,
+  "rows": 167,
+  "live": 38,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -97,28 +95,24 @@
    "this spot is 326 km from Copan Wildlife Management Area's PO": 1,
    "this spot is 324 km from Copan Wildlife Management Area's PO": 1
   },
-  "dropped": 82,
+  "dropped": 78,
   "merged": 44
  },
  "US-TX": {
-  "rows": 202,
-  "live": 44,
+  "rows": 203,
+  "live": 45,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 2,
-   "no public owner on the ownership map": 3,
-   "water not checked": 1
+   "no public owner on the ownership map": 3
   },
   "dropped": 83,
-  "merged": 69
- },
- "water_weak": {
-  "US-TX": 1
+  "merged": 70
  },
  "US-KS": {
-  "rows": 53,
-  "live": 20,
+  "rows": 52,
+  "live": 19,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
