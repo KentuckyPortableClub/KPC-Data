@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-06 16:13 UTC",
+ "made": "2026-11-06 17:40 UTC",
  "totals": {
   "gained": 0,
   "lost": 17,
-  "pieces_changed": 149,
-  "grade_changed": 1
+  "pieces_changed": 495,
+  "grade_changed": 20
  },
  "per_area": {
   "US-AK": {
@@ -20,10 +20,16 @@
    "pieces_changed": 129,
    "grade_changed": 0
   },
+  "US-DE": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 53,
+   "grade_changed": 0
+  },
   "US-FL": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 17,
+   "pieces_changed": 29,
    "grade_changed": 1
   },
   "US-GA": {
@@ -79,6 +85,18 @@
    "lost": 4,
    "pieces_changed": 0,
    "grade_changed": 0
+  },
+  "US-WA": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-WI": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 280,
+   "grade_changed": 19
   },
   "US-WY": {
    "gained": 0,
@@ -533,9 +551,901 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-3635"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-11936",
+   "name": "White River State Fish and Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "272997",
+     "White River Fishery Area-Waushara",
+     3461,
+     "words"
+    ],
+    [
+     "78245",
+     "White River Fishery Area-Waushara",
+     9,
+     "words"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "272997",
+     "White River Fishery Area-Waushara",
+     3461,
+     "words"
+    ],
+    [
+     "sgwia712748",
+     "White River Fishery Area-Waushara",
+     3457,
+     "words"
+    ],
+    [
+     "sgwid19764564",
+     "White River Marsh Wildlife Area",
+     50,
+     "name"
+    ],
+    [
+     "sgwid19764608",
+     "White River Marsh Wildlife Area",
+     50,
+     "name"
+    ],
+    [
+     "sgwid19770894",
+     "White River Marsh Wildlife Area",
+     50,
+     "name"
+    ],
+    [
+     "sgwid19770895",
+     "White River Marsh Wildlife Area",
+     50,
+     "name"
+    ],
+    [
+     "sgwid19773299",
+     "White River Marsh Wildlife Area",
+     50,
+     "name"
+    ],
+    [
+     "sgwid19754289",
+     "White River Marsh Wildlife Area",
+     48,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11936"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4246",
+   "name": "Whitefish Dunes State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6880",
+     "Whitefish Dunes",
+     411,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6880",
+     "Whitefish Dunes",
+     411,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4246"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4250",
+   "name": "Capitol Springs State Recreation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "wid713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwia713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797837",
+     "Capital Springs Centennial SP And RA",
+     58,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797838",
+     "Capital Springs Centennial SP And RA",
+     55,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797007",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797008",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798010",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798008",
+     "Capital Springs Centennial SP And RA",
+     28,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wid713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwia713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797837",
+     "Capital Springs Centennial SP And RA",
+     58,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797838",
+     "Capital Springs Centennial SP And RA",
+     55,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797007",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797008",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798010",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798008",
+     "Capital Springs Centennial SP And RA",
+     28,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4250"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4252",
+   "name": "Brule Glacial Spillway State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6866",
+     "Brule Glacial Spillway",
+     2656,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6866",
+     "Brule Glacial Spillway",
+     2656,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4252"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4255",
+   "name": "Lodi Marsh State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7082",
+     "Lodi Marsh",
+     640,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7082",
+     "Lodi Marsh",
+     640,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4255"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4294",
+   "name": "Horicon Marsh State Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "wid713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "reviewed"
+    ],
+    [
+     "sgwia713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "name"
+    ],
+    [
+     "sgwid19749895",
+     "Horicon Marsh Wildlife Area",
+     72,
+     "name"
+    ],
+    [
+     "sgwid19749891",
+     "Horicon Marsh Wildlife Area",
+     71,
+     "name"
+    ],
+    [
+     "sgwid19749907",
+     "Horicon Marsh Wildlife Area",
+     70,
+     "name"
+    ],
+    [
+     "sgwid19749830",
+     "Horicon Marsh Wildlife Area",
+     69,
+     "name"
+    ],
+    [
+     "sgwid19749911",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ],
+    [
+     "sgwid19749971",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wid713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "reviewed"
+    ],
+    [
+     "sgwia713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "name"
+    ],
+    [
+     "sgwid19749895",
+     "Horicon Marsh Wildlife Area",
+     72,
+     "name"
+    ],
+    [
+     "sgwid19749891",
+     "Horicon Marsh Wildlife Area",
+     71,
+     "name"
+    ],
+    [
+     "sgwid19749907",
+     "Horicon Marsh Wildlife Area",
+     70,
+     "name"
+    ],
+    [
+     "sgwid19749830",
+     "Horicon Marsh Wildlife Area",
+     69,
+     "name"
+    ],
+    [
+     "sgwid19749911",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ],
+    [
+     "sgwid19749971",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4294"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8205",
+   "name": "Kangaroo Lake State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7046",
+     "Kangaroo Lake",
+     356,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7046",
+     "Kangaroo Lake",
+     356,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8205"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8206",
+   "name": "Meridian Park State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7250",
+     "Meridian Park",
+     174,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7250",
+     "Meridian Park",
+     174,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8206"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8209",
+   "name": "Dewey Marsh State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6887",
+     "Dewey Marsh",
+     1222,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6887",
+     "Dewey Marsh",
+     1222,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8209"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8211",
+   "name": "Bear Beach State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7108",
+     "Bear Beach",
+     96,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7108",
+     "Bear Beach",
+     96,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8211"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8213",
+   "name": "Belden Swamp State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7028",
+     "Belden Swamp",
+     1795,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7028",
+     "Belden Swamp",
+     1795,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8213"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8214",
+   "name": "Empire Swamp State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7223",
+     "Empire Swamp",
+     1570,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7223",
+     "Empire Swamp",
+     1570,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8214"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8215",
+   "name": "Ericson Creek Forest and Wetlands State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7030",
+     "Ericson Creek Forest and Wetlands",
+     1894,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7030",
+     "Ericson Creek Forest and Wetlands",
+     1894,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8215"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8216",
+   "name": "Osceola Bedrock Glades State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7094",
+     "Osceola Bedrock Glades",
+     31,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7094",
+     "Osceola Bedrock Glades",
+     31,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8216"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8219",
+   "name": "Jackson Marsh State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6992",
+     "Jackson Marsh",
+     590,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6992",
+     "Jackson Marsh",
+     590,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8219"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8363",
+   "name": "Gibraltar Rock State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6742",
+     "Gibraltar Rock",
+     66,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6742",
+     "Gibraltar Rock",
+     66,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8363"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8667",
+   "name": "Haskell Noyes Memorial Woods State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6755",
+     "Haskell Noyes Woods",
+     62,
+     "words"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6755",
+     "Haskell Noyes Woods",
+     62,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8667"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8669",
+   "name": "Scuppernong Prairie State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6750",
+     "Scuppernong Prairie",
+     173,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6750",
+     "Scuppernong Prairie",
+     173,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8669"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-9704",
+   "name": "Lizard Mound State Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "wid713644",
+     "Lizard Mound State Park",
+     33,
+     "reviewed"
+    ],
+    [
+     "sgwia713644",
+     "Lizard Mound State Park",
+     33,
+     "name"
+    ],
+    [
+     "sgwid19819419",
+     "Lizard Mound State Park",
+     20,
+     "name"
+    ],
+    [
+     "sgwid19819418",
+     "Lizard Mound State Park",
+     9,
+     "name"
+    ],
+    [
+     "sgwid19819420",
+     "Lizard Mound State Park",
+     2,
+     "name"
+    ],
+    [
+     "sgwib401998",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgwid19819417",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wid713644",
+     "Lizard Mound State Park",
+     33,
+     "reviewed"
+    ],
+    [
+     "sgwia713644",
+     "Lizard Mound State Park",
+     33,
+     "name"
+    ],
+    [
+     "sgwid19819419",
+     "Lizard Mound State Park",
+     20,
+     "name"
+    ],
+    [
+     "sgwid19819418",
+     "Lizard Mound State Park",
+     9,
+     "name"
+    ],
+    [
+     "sgwid19819420",
+     "Lizard Mound State Park",
+     2,
+     "name"
+    ],
+    [
+     "sgwib401998",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgwid19819417",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9704"
   }
  ],
  "sample": [
+  {
+   "area": "US-WI",
+   "ref": "US-4294",
+   "name": "Horicon Marsh State Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "wid713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "reviewed"
+    ],
+    [
+     "sgwia713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "name"
+    ],
+    [
+     "sgwid19749895",
+     "Horicon Marsh Wildlife Area",
+     72,
+     "name"
+    ],
+    [
+     "sgwid19749891",
+     "Horicon Marsh Wildlife Area",
+     71,
+     "name"
+    ],
+    [
+     "sgwid19749907",
+     "Horicon Marsh Wildlife Area",
+     70,
+     "name"
+    ],
+    [
+     "sgwid19749830",
+     "Horicon Marsh Wildlife Area",
+     69,
+     "name"
+    ],
+    [
+     "sgwid19749911",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ],
+    [
+     "sgwid19749971",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wid713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "reviewed"
+    ],
+    [
+     "sgwia713367",
+     "Horicon Marsh Wildlife Area",
+     11171,
+     "name"
+    ],
+    [
+     "sgwid19749895",
+     "Horicon Marsh Wildlife Area",
+     72,
+     "name"
+    ],
+    [
+     "sgwid19749891",
+     "Horicon Marsh Wildlife Area",
+     71,
+     "name"
+    ],
+    [
+     "sgwid19749907",
+     "Horicon Marsh Wildlife Area",
+     70,
+     "name"
+    ],
+    [
+     "sgwid19749830",
+     "Horicon Marsh Wildlife Area",
+     69,
+     "name"
+    ],
+    [
+     "sgwid19749911",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ],
+    [
+     "sgwid19749971",
+     "Horicon Marsh Wildlife Area",
+     68,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4294"
+  },
   {
    "area": "US-FL",
    "ref": "US-3635",
@@ -586,6 +1496,474 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-0150"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-9704",
+   "name": "Lizard Mound State Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "wid713644",
+     "Lizard Mound State Park",
+     33,
+     "reviewed"
+    ],
+    [
+     "sgwia713644",
+     "Lizard Mound State Park",
+     33,
+     "name"
+    ],
+    [
+     "sgwid19819419",
+     "Lizard Mound State Park",
+     20,
+     "name"
+    ],
+    [
+     "sgwid19819418",
+     "Lizard Mound State Park",
+     9,
+     "name"
+    ],
+    [
+     "sgwid19819420",
+     "Lizard Mound State Park",
+     2,
+     "name"
+    ],
+    [
+     "sgwib401998",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgwid19819417",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wid713644",
+     "Lizard Mound State Park",
+     33,
+     "reviewed"
+    ],
+    [
+     "sgwia713644",
+     "Lizard Mound State Park",
+     33,
+     "name"
+    ],
+    [
+     "sgwid19819419",
+     "Lizard Mound State Park",
+     20,
+     "name"
+    ],
+    [
+     "sgwid19819418",
+     "Lizard Mound State Park",
+     9,
+     "name"
+    ],
+    [
+     "sgwid19819420",
+     "Lizard Mound State Park",
+     2,
+     "name"
+    ],
+    [
+     "sgwib401998",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgwid19819417",
+     "Lizard Mound State Park",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9704"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4252",
+   "name": "Brule Glacial Spillway State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6866",
+     "Brule Glacial Spillway",
+     2656,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6866",
+     "Brule Glacial Spillway",
+     2656,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4252"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8205",
+   "name": "Kangaroo Lake State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7046",
+     "Kangaroo Lake",
+     356,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7046",
+     "Kangaroo Lake",
+     356,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8205"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8206",
+   "name": "Meridian Park State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7250",
+     "Meridian Park",
+     174,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7250",
+     "Meridian Park",
+     174,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8206"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8211",
+   "name": "Bear Beach State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7108",
+     "Bear Beach",
+     96,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7108",
+     "Bear Beach",
+     96,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8211"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8213",
+   "name": "Belden Swamp State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7028",
+     "Belden Swamp",
+     1795,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7028",
+     "Belden Swamp",
+     1795,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8213"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8214",
+   "name": "Empire Swamp State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7223",
+     "Empire Swamp",
+     1570,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7223",
+     "Empire Swamp",
+     1570,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8214"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8215",
+   "name": "Ericson Creek Forest and Wetlands State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7030",
+     "Ericson Creek Forest and Wetlands",
+     1894,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7030",
+     "Ericson Creek Forest and Wetlands",
+     1894,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8215"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8216",
+   "name": "Osceola Bedrock Glades State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic7094",
+     "Osceola Bedrock Glades",
+     31,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic7094",
+     "Osceola Bedrock Glades",
+     31,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8216"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8363",
+   "name": "Gibraltar Rock State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6742",
+     "Gibraltar Rock",
+     66,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6742",
+     "Gibraltar Rock",
+     66,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8363"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8669",
+   "name": "Scuppernong Prairie State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6750",
+     "Scuppernong Prairie",
+     173,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6750",
+     "Scuppernong Prairie",
+     173,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8669"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4250",
+   "name": "Capitol Springs State Recreation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "wid713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwia713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797837",
+     "Capital Springs Centennial SP And RA",
+     58,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797838",
+     "Capital Springs Centennial SP And RA",
+     55,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797007",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797008",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798010",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798008",
+     "Capital Springs Centennial SP And RA",
+     28,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wid713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwia713577",
+     "Capital Springs Centennial SP And RA",
+     289,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797837",
+     "Capital Springs Centennial SP And RA",
+     58,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797838",
+     "Capital Springs Centennial SP And RA",
+     55,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797007",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19797008",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798010",
+     "Capital Springs Centennial SP And RA",
+     40,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ],
+    [
+     "sgwid19798008",
+     "Capital Springs Centennial SP And RA",
+     28,
+     "alias name (pin inside): Capital Springs Centennial SP And R"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4250"
   },
   {
    "area": "US-AK",
@@ -817,167 +2195,208 @@
    "pota": "https://pota.app/#/park/US-6197"
   },
   {
-   "area": "US-NH",
-   "ref": "US-4933",
-   "name": "Merrimack River State Forest",
+   "area": "US-WI",
+   "ref": "US-11936",
+   "name": "White River State Fish and Wildlife Area",
    "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "272997",
+     "White River Fishery Area-Waushara",
+     3461,
+     "words"
+    ],
+    [
+     "78245",
+     "White River Fishery Area-Waushara",
+     9,
+     "words"
+    ]
+   ],
    "old_pieces": [
     [
-     "sgnhc2075",
-     "Merrimack River State Forest",
-     53,
+     "272997",
+     "White River Fishery Area-Waushara",
+     3461,
+     "words"
+    ],
+    [
+     "sgwia712748",
+     "White River Fishery Area-Waushara",
+     3457,
+     "words"
+    ],
+    [
+     "sgwid19764564",
+     "White River Marsh Wildlife Area",
+     50,
      "name"
     ],
     [
-     "sgnha4054",
-     "Merrimack River State Forest",
-     0,
+     "sgwid19764608",
+     "White River Marsh Wildlife Area",
+     50,
      "name"
     ],
     [
-     "sgnha4139",
-     "Merrimack River State Forest",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4933"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-4934",
-   "name": "Merriman State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "57000",
-     "Merriman State Forest",
-     512,
+     "sgwid19770894",
+     "White River Marsh Wildlife Area",
+     50,
      "name"
     ],
     [
-     "sgnha1069",
-     "Merriman State Forest",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4934"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-4955",
-   "name": "Saltmarsh Pond State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "nhc3433",
-     "Saltmarsh Pond State Forest",
-     0,
+     "sgwid19770895",
+     "White River Marsh Wildlife Area",
+     50,
      "name"
     ],
     [
-     "sgnha3433",
-     "Saltmarsh Pond State Forest",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4955"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5782",
-   "name": "Indian Creek BLM Special Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "rst14458",
-     "Indian Creek",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5782"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5789",
-   "name": "Behind the Rocks Wilderness Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "wsa967",
-     "Behind the Rocks",
-     0,
+     "sgwid19773299",
+     "White River Marsh Wildlife Area",
+     50,
      "name"
     ],
     [
-     "wsa968",
-     "Behind the Rocks",
-     0,
+     "sgwid19754289",
+     "White River Marsh Wildlife Area",
+     48,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5789"
+   "pota": "https://pota.app/#/park/US-11936"
   },
   {
-   "area": "US-UT",
-   "ref": "US-5869",
-   "name": "9 Mile Canyon BLM Recreation Management Area",
+   "area": "US-WI",
+   "ref": "US-4246",
+   "name": "Whitefish Dunes State Natural Area",
    "old_grade": "official",
    "new_grade": "pin",
-   "new_pieces": [],
+   "new_pieces": [
+    [
+     "sgwic6880",
+     "Whitefish Dunes",
+     411,
+     "name"
+    ]
+   ],
    "old_pieces": [
     [
-     "rst9652",
-     "Nine Mile Canyon",
-     24249,
+     "sgwic6880",
+     "Whitefish Dunes",
+     411,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5869"
+   "pota": "https://pota.app/#/park/US-4246"
   },
   {
-   "area": "US-WY",
-   "ref": "US-6202",
-   "name": "North Absaroka Wilderness Area",
+   "area": "US-WI",
+   "ref": "US-4255",
+   "name": "Lodi Marsh State Natural Area",
    "old_grade": "official",
    "new_grade": "pin",
-   "new_pieces": [],
+   "new_pieces": [
+    [
+     "sgwic7082",
+     "Lodi Marsh",
+     640,
+     "name"
+    ]
+   ],
    "old_pieces": [
     [
-     "wld335",
-     "North Absaroka Wilderness",
-     346320,
+     "sgwic7082",
+     "Lodi Marsh",
+     640,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6202"
+   "pota": "https://pota.app/#/park/US-4255"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8209",
+   "name": "Dewey Marsh State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6887",
+     "Dewey Marsh",
+     1222,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6887",
+     "Dewey Marsh",
+     1222,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8209"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8219",
+   "name": "Jackson Marsh State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6992",
+     "Jackson Marsh",
+     590,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6992",
+     "Jackson Marsh",
+     590,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8219"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8667",
+   "name": "Haskell Noyes Memorial Woods State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "sgwic6755",
+     "Haskell Noyes Woods",
+     62,
+     "words"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgwic6755",
+     "Haskell Noyes Woods",
+     62,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8667"
   }
  ]
 }
