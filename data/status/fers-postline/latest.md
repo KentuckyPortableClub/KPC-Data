@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-06 19:17 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-06 23:32 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 36 (+3 / -7)
 - gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -132,12 +132,12 @@
 - near a size threshold: CA-0044+CA-0742 105 m ~ 100 yd (small); CA-0841+CA-3622 85 m ~ 100 yd (small)
 - stale inputs: -
 
-## US-AK: live pairs 31 -> 41 (+16 / -6)
-- gained: CA-0044+US-0069 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4592 CA-3567+US-4448 US-0003+US-0878 US-0026+US-0889 US-0048+US-0880 US-0048+US-0893 US-0149+US-12708 US-0741+US-4448 US-0878+US-0902 US-0879+US-7886 US-12708+US-4570 US-12708+US-7884 US-4570+US-9701
+## US-AK: live pairs 31 -> 42 (+17 / -6)
+- gained: CA-0044+US-0069 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4592 CA-3567+US-4448 US-0003+US-0878 US-0026+US-0889 US-0048+US-0880 US-0048+US-0893 US-0149+US-12708 US-0741+US-4448 US-0878+US-0902 US-0879+US-7886 US-12708+US-4447 US-12708+US-4570 US-12708+US-7884 US-4570+US-9701
 - lost: US-0003+US-0902 (gone); US-0029+US-12607 (gone); US-0143+US-0150 (gone); US-0150+US-1639 (gone); US-11862+US-4448 (gone); US-1638+US-3392 (gone)
 - touching held parks: -
 - touching pin-only parks: US-0003+US-0878 US-0026+US-0889 US-0048+US-0880 US-0048+US-0893 US-0878+US-0902 US-0879+US-7886
-- water / bank: 13
+- water / bank: 14
 - one-record same land: -
 - near a size threshold: CA-0106+US-0142 85 m ~ 100 yd (small); CA-0742+US-4448 87 m ~ 100 yd (small); CA-0742+US-4592 37 m ~ 50 yd (very tight); CA-3567+US-4448 27 m ~ 25 yd (kept); US-0143+US-0144 23 m ~ 25 yd (kept); US-4448+US-4593 45 m ~ 50 yd (very tight)
 - stale inputs: -
