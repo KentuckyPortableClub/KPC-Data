@@ -610,6 +610,28 @@
    "status": "done",
    "updated": "2026-11-05"
   },
+  "US-NM": {
+   "camps": 137,
+   "checked": 136,
+   "counts": {
+    "camps": 136,
+    "needs_browser": 0,
+    "needs_key": 78,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 51,
+    "other": 7,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 58,
+    "with_elevation": 0,
+    "with_facts": 51,
+    "with_sites": 1
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-06"
+  },
   "US-NV": {
    "camps": 64,
    "checked": 63,
@@ -946,6 +968,7 @@
   "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NJ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-NM": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-OK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -1213,6 +1236,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-05"
+  },
+  "US-NM": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-06"
   },
   "US-NV": {
    "cell": {
@@ -2297,12 +2329,12 @@
  },
  "last": {
   "areas": [
-   "US-MS"
+   "US-NM"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 203,
+   "dropped_queued": 136,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2314,27 +2346,27 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 206,
+   "requests": 121,
    "rested": 0,
-   "robots": 3,
+   "robots": 2,
    "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 25,
-   "camps": 203,
+   "browser": 5,
+   "camps": 137,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 25,
-   "needs_key": 51,
-   "no_page": 13,
-   "not_official": 6,
-   "ok": 46,
-   "pages_read": 90,
+   "needs_browser": 5,
+   "needs_key": 79,
+   "no_page": 2,
+   "not_official": 0,
+   "ok": 56,
+   "pages_read": 110,
    "resting": 0,
    "ridb_calls": 0,
-   "robots": 2,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-06"
