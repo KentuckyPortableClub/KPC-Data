@@ -1043,10 +1043,10 @@
   },
   "Park-info engine": {
    "areas": "",
-   "last_run": "2026-11-05",
-   "made": "exit 3 2026-11-05 (US-KY,US-AK,US-AL,US-AR,US-AZ,US-CA,US-CO,US-CT,US-DC,US-DE,US-FL,US-GA,US-HI,US-IA,US-ID,US-IL,US-IN,US-KS,US-LA,US-MA,US-MD,US-ME,US-MI,US-MN,US-MO,US-MS,US-MT,US-NC,US-ND,US-NE,US-NH,US-NJ,US-NM,US-NV,US-NY,US-OH,US-OK,US-OR,US-PA,US-RI,US-SC,US-SD,US-TN,US-TX,US-UT,US-VA,US-VT",
+   "last_run": "2026-11-06",
+   "made": "exit 3 2026-11-06 (US-KY,US-AK,US-AL,US-AR,US-AZ,US-CA,US-CO,US-CT,US-DC,US-DE,US-FL,US-GA,US-HI,US-IA,US-ID,US-IL,US-IN,US-KS,US-LA,US-MA,US-MD,US-ME,US-MI,US-MN,US-MO,US-MS,US-MT,US-NC,US-ND,US-NE,US-NH,US-NJ,US-NM,US-NV,US-NY,US-OH,US-OK,US-OR,US-PA,US-RI,US-SC,US-SD,US-TN,US-TX,US-UT,US-VA,US-VT",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41971853106",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42130496176",
    "waiting_on": "chat 11 grades tools-out engine/ per kind"
   },
   "Picture-map tracer (draft)": {
@@ -1196,9 +1196,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-05",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1055 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-05.md ",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1055 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-05.md storage: 6 held copies already live (cleanup candidates) ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42132263568",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42110698805",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1250,10 +1250,10 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-05",
-   "made": "20 files waiting over 3 days in data/waiting/in/ (e.g. US-MS.json)",
-   "result": "red",
-   "waiting_on": "chat 11 (look at the waiting room run)"
+   "last_run": "2026-11-06",
+   "made": "heartbeat 2 h old, 376 files waiting",
+   "result": "green",
+   "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",
@@ -1264,5 +1264,5 @@
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
   }
  },
- "updated": "2026-11-05"
+ "updated": "2026-11-06"
 }
