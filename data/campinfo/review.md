@@ -24,6 +24,7 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 | US-NY | 584 | 92 | 5 | 232 | 55 | 0 | 1 | 0 | 199 | 38 | 572 | 0 |
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 32 |
+| US-RI | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 4 | 0 |
 | US-MA | 30 | 20 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 18 | 22 | 0 |
 | US-NH | 79 | 41 | 24 | 0 | 0 | 0 | 12 | 0 | 2 | 3 | 43 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
@@ -1713,6 +1714,38 @@ Updated 2026-11-06. Every fact in <area>.json carries its source url, read date 
 
 ## US-CT: 12 random samples (records with facts; seed = the date)
 
+
+## US-RI: 12 random samples (records with facts; seed = the date)
+
+- **Fishermen's Memorial Campground** (US-2873:hq0, state, status ok, 9 facts) · [rhodeislandstateparks.reserveamerica.com](https://rhodeislandstateparks.reserveamerica.com/camping/fishermans-memorial-campground/r/campgroundDetails.do?contractCode=RI&parkId=252611)
+  - booking.how = "online: rhodeislandstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://rhodeislandstateparks.reserveamerica.com/memberSign · “link “Sign In / Sign Up” -> https://rhodeislandstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - checkin = "1:00 PM" · “IST OF POLICES, PLEASE REFER TO THE LINK IN THE KNOW BEFORE YOU GO! SECTION. CHECK IN/OUT Check In: 1:00 PM to no later than 10:00 PM. No ch”
+  - checkout = "11:00 AM" · “o not allow check-ins later than 10PM out of respect for our campers and our quite hours. Check Out: 11:00 AM sharp. This is strictly enforc”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “gings Group sites Day Use Shelters RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “06 2026 Max Reservation Window: View all Booking Window Fri Nov 06 2026 - Sat Nov 06 2027 Reservations can be made for today and can be made”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Tent Options Occupants more options..”
+  - sites.total = 182 · “ront Pets allowed Common Attributes Group Accessibility needs Apply Filter Find your spot 182 site(s) found ALL (182) RV Only (40) Standard ”
+- **Burlingame State Park** (US-2871, state, status ok, 7 facts) · [riparks.ri.gov](https://riparks.ri.gov/)
+  - booking.how = "online: riparks.ri.gov" · “link “John H. Chafee Nature Preserve””
+  - booking.url = "https://riparks.ri.gov/parks/john-h-chafee-nature-preserve" · “link “John H. Chafee Nature Preserve” -> https://riparks.ri.gov/parks/john-h-chafee-nature-preserve”
+  - map.date_how = "web page, no date in the link" · “link “review this map when making your reservation,””
+  - map.url = "https://riparks.ri.gov/burlingame-campsites" · “link “review this map when making your reservation,” -> https://riparks.ri.gov/burlingame-campsites”
+  - reservable = true · “of the property. Contact Burlingame State Campground Make A Reservation Reserve America: Book Online or call 1-877-742-2675 Questions About ”
+  - restrooms = "yes (kind not stated)" · “Burlingame Campground: New Shower and Restroom Facilities Project | Rhode Island State Parks Skip to main content Official State of Rhod”
+  - showers = true · “Burlingame Campground: New Shower and Restroom Facilities Project | Rhode Island State Parks Skip to main content Official”
+- **George Washington Campground** (US-5484:hq0, state, status ok, 12 facts) · [rhodeislandstateparks.reserveamerica.com](https://rhodeislandstateparks.reserveamerica.com/camping/george-washington-campground/r/campgroundDetails.do?contractCode=RI&parkId=253123)
+  - booking.how = "online: rhodeislandstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://rhodeislandstateparks.reserveamerica.com/memberSign · “link “Sign In / Sign Up” -> https://rhodeislandstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - checkin = "1PM" · “IST OF POLICES, PLEASE REFER TO THE LINK IN THE KNOW BEFORE YOU GO! SECTION. CHECK IN/OUT Check In: 1PM to no later then 10PM. Check In time”
+  - checkout = "11AM" · “s later than 10PM out of respect for our campers and our quite hours which begin at 10pm. Check Out: 11AM sharp. In order to prepare campsit”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “gings Group sites Day Use Shelters RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “06 2026 Max Reservation Window: View all Booking Window Fri Nov 06 2026 - Sat Nov 06 2027 Reservations can be made for today and can be made”
+  - restrooms = "vault" · “available from the various shared spigots throughout the campground. Bathrooms are either outhouses or pit toilets and there are no shower f”
+  - rules.fires = "firewood with you when you camp" · “rge numbers of trees. You can help by following these simple precautions: 1. Do not bring firewood with you when you camp. 2. Buy firewood w”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Tent Options Occupants more options..”
 
 ## US-MA: 12 random samples (records with facts; seed = the date)
 
