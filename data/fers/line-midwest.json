@@ -11,46 +11,46 @@
   "US-ND",
   "US-SD"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 15:41 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 03:10 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 8408 of 12949 expected pairs were never looked at (65%; 2489 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8408)"
+  "missing check: 8056 of 13068 expected pairs were never looked at (62%; 3061 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8056)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 456,
-  "DROPPED": 1596,
-  "NEVER LOOKED AT": 10897
+  "FOUND": 442,
+  "DROPPED": 1509,
+  "NEVER LOOKED AT": 11117
  },
  "never_looked_at": {
-  "counted": 8408,
-  "no_official_outline": 2489,
-  "expected": 12949,
+  "counted": 8056,
+  "no_official_outline": 3061,
+  "expected": 13068,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8408
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8056
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 7799,
-   "pairs whose boxes touch": 7799
+   "date": "2026-11-06",
+   "pairs tested": 7554,
+   "pairs whose boxes touch": 7554
   },
   "pass2": {
-   "agree with the pass before": 2355,
-   "date": "2026-11-05",
-   "pairs tested": 666
+   "agree with the pass before": 2309,
+   "date": "2026-11-06",
+   "pairs tested": 648
   },
   "pass3": {
-   "agree with the pass before": 1677,
-   "date": "2026-11-05",
-   "pairs tested": 644
+   "agree with the pass before": 1647,
+   "date": "2026-11-06",
+   "pairs tested": 627
   },
   "pass5": {
-   "checked": 260,
-   "date": "2026-11-05",
+   "checked": 252,
+   "date": "2026-11-06",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -66,55 +66,54 @@
   "US-SD": "data/fers/US-SD.json"
  },
  "US-IN": {
-  "rows": 226,
-  "live": 57,
+  "rows": 214,
+  "live": 55,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 5
+   "one record covers two parks": 4
   },
-  "dropped": 132,
-  "merged": 32
+  "dropped": 127,
+  "merged": 28
  },
  "US-IL": {
-  "rows": 143,
-  "live": 30,
+  "rows": 136,
+  "live": 29,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 1,
    "no public owner on the ownership map": 1
   },
-  "dropped": 59,
-  "merged": 52
+  "dropped": 57,
+  "merged": 49
  },
  "US-MO": {
-  "rows": 345,
-  "live": 61,
+  "rows": 337,
+  "live": 59,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "low-confidence outline for Katy Trail Rock Island Spur State": 1,
    "no public owner on the ownership map": 3
   },
-  "dropped": 162,
-  "merged": 118
+  "dropped": 158,
+  "merged": 116
  },
  "US-WI": {
-  "rows": 510,
-  "live": 124,
+  "rows": 484,
+  "live": 120,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "low-confidence outline for Brown's Creek AMA Aquatic Reserve": 1,
    "no public owner on the ownership map": 12
   },
-  "dropped": 200,
-  "merged": 173
+  "dropped": 192,
+  "merged": 159
  },
  "US-MN": {
-  "rows": 1139,
-  "live": 164,
+  "rows": 1136,
+  "live": 163,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -122,18 +121,19 @@
    "no public owner on the ownership map": 16,
    "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1
   },
-  "dropped": 440,
+  "dropped": 438,
   "merged": 517
  },
  "US-IA": {
   "rows": 60,
-  "live": 19,
+  "live": 18,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the official outline of Rand Bar Wildlife Management Area co": 1,
    "the official outline of Wilson Island State Recreation Area": 1,
    "the official outline of Nobles Lake Wildlife Management Area": 1,
+   "2-fer self-check": 1,
    "no public owner on the ownership map": 2,
    "the official outline of Wapsi Wildlife Area could not be rea": 1
   },
@@ -150,8 +150,8 @@
   "merged": 17
  },
  "US-SD": {
-  "rows": 86,
-  "live": 21,
+  "rows": 85,
+  "live": 20,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
