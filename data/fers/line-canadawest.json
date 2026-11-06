@@ -10,12 +10,12 @@
   "CA-NT",
   "CA-NU"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 01:48 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 13:25 UTC",
  "verdict": "PART READY FOR CHAT 8",
  "why": [
   "water not checked: CA-MB: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: CA-BC: 18 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-BC: 15 rows (the USGS water map / files had no answer there): never READY with one",
   "water not checked: CA-YT: 1 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
@@ -33,25 +33,25 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 2192,
-   "pairs whose boxes touch": 2192
+   "date": "2026-11-06",
+   "pairs tested": 2146,
+   "pairs whose boxes touch": 2146
   },
   "pass2": {
-   "agree with the pass before": 1450,
-   "date": "2026-11-05",
-   "pairs tested": 456
+   "agree with the pass before": 1421,
+   "date": "2026-11-06",
+   "pairs tested": 442
   },
   "pass3": {
-   "agree with the pass before": 507,
-   "date": "2026-11-05",
-   "pairs tested": 419
+   "agree with the pass before": 502,
+   "date": "2026-11-06",
+   "pairs tested": 406
   },
   "pass5": {
-   "checked": 101,
-   "date": "2026-11-05",
+   "checked": 99,
+   "date": "2026-11-06",
    "pairs tested": 0,
-   "still not checked": 21
+   "still not checked": 18
   }
  },
  "files": {
@@ -76,7 +76,7 @@
  },
  "water_weak": {
   "CA-MB": 1,
-  "CA-BC": 18,
+  "CA-BC": 15,
   "CA-YT": 1
  },
  "CA-SK": {
@@ -91,27 +91,34 @@
   "merged": 9
  },
  "CA-AB": {
-  "rows": 528,
-  "live": 40,
+  "rows": 516,
+  "live": 38,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 1,
    "no public owner on the ownership map": 3
   },
-  "dropped": 329,
-  "merged": 155
+  "dropped": 321,
+  "merged": 153
  },
  "CA-BC": {
-  "rows": 791,
-  "live": 56,
+  "rows": 780,
+  "live": 58,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 18
+   "water not checked": 15,
+   "the official outline of Twin Falls Tea House National Histor": 1,
+   "the official outline of Ruckle Provincial Park could not be": 1,
+   "the official outline of Stewart Farm Historic Site could not": 1,
+   "the official outline of Riverview Park could not be read in": 1,
+   "the official outline of Rathtrevor Beach Provincial Park cou": 1,
+   "the official outline of Peace Arch Provincial Park could not": 1,
+   "the official outline of Fisgard Lighthouse National Historic": 1
   },
-  "dropped": 589,
-  "merged": 128
+  "dropped": 571,
+  "merged": 129
  },
  "CA-YT": {
   "rows": 68,
