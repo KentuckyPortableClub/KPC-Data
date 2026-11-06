@@ -10,53 +10,52 @@
   "US-AZ",
   "US-NM"
  ],
- "since": "2026-11-05",
- "date": "2026-11-05 19:40 UTC",
+ "since": "2026-11-06",
+ "date": "2026-11-06 06:39 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 3844 of 8261 expected pairs were never looked at (47%; 4078 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3844)",
+  "missing check: 3692 of 8334 expected pairs were never looked at (44%; 4307 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3692)",
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 1697 of 10445 pairs whose boxes touch",
-  "water not checked: US-NV: 3 rows (the USGS water map / files had no answer there): never READY with one",
-  "US-NM: pass1 not run in this run (stamp 2026-11-01, run started 2026-11-05)"
+  "pass 1 tested 1660 of 10042 pairs whose boxes touch",
+  "US-NM: pass1 not run in this run (stamp 2026-11-01, run started 2026-11-06)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 95,
+  "FOUND": 91,
   "DROPPED": 244,
-  "NEVER LOOKED AT": 7922
+  "NEVER LOOKED AT": 7999
  },
  "never_looked_at": {
-  "counted": 3844,
-  "no_official_outline": 4078,
-  "expected": 8261,
+  "counted": 3692,
+  "no_official_outline": 4307,
+  "expected": 8334,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 3844
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 3692
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-05",
-   "pairs tested": 1697,
-   "pairs whose boxes touch": 10445,
+   "date": "2026-11-06",
+   "pairs tested": 1660,
+   "pairs whose boxes touch": 10042,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 719,
-   "date": "2026-11-05",
-   "pairs tested": 103
+   "agree with the pass before": 723,
+   "date": "2026-11-06",
+   "pairs tested": 116
   },
   "pass3": {
-   "agree with the pass before": 625,
-   "date": "2026-11-05",
-   "pairs tested": 103
+   "agree with the pass before": 639,
+   "date": "2026-11-06",
+   "pairs tested": 116
   },
   "pass5": {
-   "checked": 35,
-   "date": "2026-11-05",
+   "checked": 33,
+   "date": "2026-11-06",
    "pairs tested": 0,
-   "still not checked": 3
+   "still not checked": 0
   }
  },
  "files": {
@@ -69,7 +68,7 @@
   "US-NM": "data/fers/US-NM.json"
  },
  "US-CO": {
-  "rows": 11,
+  "rows": 10,
   "live": 4,
   "waiting": 0,
   "unfinished": 0,
@@ -77,11 +76,11 @@
    "one record covers two parks": 1
   },
   "dropped": 0,
-  "merged": 6
+  "merged": 5
  },
  "US-WY": {
-  "rows": 22,
-  "live": 20,
+  "rows": 21,
+  "live": 19,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -112,19 +111,15 @@
   "merged": 6
  },
  "US-NV": {
-  "rows": 693,
-  "live": 52,
+  "rows": 692,
+  "live": 50,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 3,
    "no public owner on the ownership map": 7
   },
-  "dropped": 352,
-  "merged": 279
- },
- "water_weak": {
-  "US-NV": 3
+  "dropped": 354,
+  "merged": 281
  },
  "US-AZ": {
   "rows": 36,
@@ -139,10 +134,11 @@
  },
  "US-NM": {
   "rows": 257,
-  "live": 36,
+  "live": 33,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
+   "2-fer self-check": 3,
    "the agency ownership map did not answer": 2,
    "no public owner on the ownership map": 1
   },
