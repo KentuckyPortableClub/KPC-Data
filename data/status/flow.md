@@ -1,4 +1,4 @@
-# Flow board (2026-11-06 04:46Z, kpc_flow.py)
+# Flow board (2026-11-06 08:31Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (19)
@@ -39,7 +39,6 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ### chat 10
 - STUCK 1 · key-doctor: found work · since 2026-11-02
 - STUCK 1 · Key bots: errors and silence: RED (the bot is broken) · since 2026-11-03
-- 1 · waiting room: RED (the bot is broken) · since 2026-11-06
 ### chat 11
 - STUCK 5 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
@@ -106,4 +105,3 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 8 bots | Storage keeper (weekly): found work | 1 | HQ | 2026-11-01 **STUCK** |
 | 8 bots | T5 site checker: found work | 1 | chat 3 | 2026-11-01 **STUCK** |
 | 8 bots | key-doctor: found work | 1 | chat 10 | 2026-11-02 **STUCK** |
-| 8 bots | waiting room: RED (the bot is broken) | 1 | chat 10 | 2026-11-06 |
