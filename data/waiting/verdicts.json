@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06T19:16Z",
+ "checked": "2026-11-06T19:58Z",
  "switched_on": false,
  "results": [
   {
@@ -1246,7 +1246,7 @@
    "kind": "fers",
    "why": [
     "F-2 NOT SURE 41 -> 23 (over 30% change)",
-    "F-2 55 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0240+US-3620, US-0247+US-3660",
+    "F-2 56 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0240+US-3620, US-0247+US-3660",
     "F-K known 2-fer missing: US-3627 + US-4559"
    ],
    "notes": [],
@@ -1637,10 +1637,12 @@
    "path": "data/fers/US-WI.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 27 -> 104 (over 30% change)",
-    "F-2 NOT SURE 8 -> 13 (over 30% change)",
-    "F-2 only 20 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 84 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-0603+US-4311, US-0605+US-8672, US-0673+US-10725",
+    "F-2 candidates 27 -> 83 (over 30% change)",
+    "F-2 NOT SURE 8 -> 14 (over 30% change)",
+    "F-2 only 15 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 68 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-0605+US-8672, US-0673+US-10725, US-0673+US-11153",
+    "F-K known 2-fer missing: US-4238 + US-8363",
+    "F-K known 2-fer missing: US-1483 + US-4347",
     "F-K known 2-fer missing: US-10200 + US-1481"
    ],
    "notes": [],
