@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06T15:38Z",
+ "checked": "2026-11-06T16:02Z",
  "switched_on": false,
  "results": [
   {
@@ -681,7 +681,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/71aa8ae4f9/chain_o_lakes_trail.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -976,15 +976,13 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-NB.json",
+   "path": "data/fers/CA-NB.json.gz",
    "kind": "fers",
-   "why": [
-    "F-2 candidates 10 -> 2 (over 30% change)",
-    "F-2 NOT SURE 395 -> 1 (over 30% change)",
-    "F-2 only 2 of 10 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+   "why": [],
+   "notes": [
+    "replaces live data/fers/CA-NB.json (same file, other format): promotion removes the old name"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/CA-NL.json",
@@ -996,12 +994,9 @@
   {
    "path": "data/fers/CA-NS.json",
    "kind": "fers",
-   "why": [
-    "F-2 candidates 10 -> 6 (over 30% change)",
-    "F-2 only 6 of 10 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/CA-NT.json",
@@ -1020,10 +1015,13 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/CA-ON.json",
+   "path": "data/fers/CA-ON.json.gz",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/CA-ON.json replaces live data/fers/CA-ON.json.gz (other format) with 23 rows for 1028 (over 10% fewer)"
+    "F-2 candidates 13 -> 99 (over 30% change)",
+    "F-2 NOT SURE 302 -> 44 (over 30% change)",
+    "F-2 only 10 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 89 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1039,7 +1037,7 @@
    "path": "data/fers/CA-QC.json",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/CA-QC.json replaces live data/fers/CA-QC.json.gz (other format) with 1 rows for 885 (over 10% fewer)"
+    "F-4 data/fers/CA-QC.json replaces live data/fers/CA-QC.json.gz (other format) with 486 rows for 885 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3782,27 +3780,6 @@
    "notes": [
     "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/CA-NB.json.gz",
-   "kind": "fers",
-   "why": [],
-   "notes": [
-    "replaces live data/fers/CA-NB.json (same file, other format): promotion removes the old name"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/CA-ON.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 13 -> 99 (over 30% change)",
-    "F-2 NOT SURE 302 -> 44 (over 30% change)",
-    "F-2 only 10 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 89 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
-   ],
-   "notes": [],
    "verdict": "HOLD"
   }
  ]
