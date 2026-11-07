@@ -1,10 +1,11 @@
 """Next round v2 (Quality grade of the next-round bundle, must-fix 1, Nov 5 2026): the Nov 5 mystery intake holds every row with no
 pin distance and no registry id or an unchecked candidate (AU-2209, CA-0037, US-9473) and PT-0318 (the official SDF does not clearly
 confirm it); counts match the rows; the 7 NTWA rows carry the CAPAD credit (Brandon's answers via Super, 8:55 AM CST Nov 5)."""
-import collections, json, pathlib
+import collections, gzip, json, pathlib
 
 F = pathlib.Path(__file__).resolve().parent.parent / 'data' / 'waiting' / 'questions' / 'outside-intake-nov5.json'
-D = json.load(open(F, encoding='utf-8'))
+P = pathlib.Path(str(F) + '.gz') if pathlib.Path(str(F) + '.gz').exists() else F
+D = json.load(gzip.open(P, 'rt', encoding='utf-8') if str(P).endswith('.gz') else open(P, encoding='utf-8'))
 Q = {r['ref']: r for r in D['questions']}
 
 

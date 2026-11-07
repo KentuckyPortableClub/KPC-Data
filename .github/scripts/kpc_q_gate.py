@@ -19,10 +19,11 @@ record offered to 2+ parks whose names are not equal, was NO / NOT SURE about 4,
                 'picture' = the picture's address, so chat 11 grades it again WITH the map (record outline + POTA pin)
 Never fails; nothing is decided here (a parked row is only not asked).
   python3 .github/scripts/kpc_q_gate.py gate | todo <out.json> | second-look <pictures dir> <raw base url>"""
-import collections, datetime as dt, glob, json, os, pathlib, re, sys
+import collections, datetime as dt, json, os, pathlib, re, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_tiers as T  # noqa: E402
+from kpc_json_any import glob_json_any, load_json_any, save_json_gz  # noqa: E402
 
 QD = pathlib.Path('data/waiting/questions')
 PARKED, SECOND = QD / 'parked.json', QD / 'second-look.json'
@@ -31,12 +32,13 @@ SKIP = {'parked.json', 'second-look.json', 'not-sure-for-chat9.json', 'map-audit
 
 
 def load(p, d):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
 def qfiles():
-    for f in sorted(QD.glob('*.json')):
+    for f in glob_json_any(str(QD / '*.json')):
+        f = pathlib.Path(f)
         if f.name in SKIP or f.name.startswith('_'): continue
         d = load(f, None)
         qs = d.get('questions') if isinstance(d, dict) else d
@@ -169,10 +171,10 @@ def gate():
         if len(keep) != len(qs):
             if isinstance(d, dict): d['questions'] = keep
             else: d = keep
-            json.dump(d, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+            save_json_gz(f, d, indent=1, ensure_ascii=False)
     P['about'] = 'Questions the gate kept away from chat 11 (kpc_q_gate.py; Brandon GO Nov 2 4:40 AM). Kept, not deleted.'
     P['updated'] = TODAY
-    json.dump(P, open(PARKED, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(PARKED, P, indent=1, ensure_ascii=False)
     print(f'::notice title=Question gate::{sum(moved.values())} open questions parked ({dict(moved)}); {len(prow)} on the parked list', flush=True)
 
 
@@ -228,7 +230,7 @@ def second_look(pics, raw):
         have.add((q.get('ref'), *key(q))); n += 1
     S['about'] = 'Second look with a map picture (kpc_q_gate.py; Brandon GO Nov 2): rows that were NOT SURE or names-only, now with the record + pin drawn'
     S['updated'] = TODAY
-    json.dump(S, open(SECOND, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    save_json_gz(SECOND, S, indent=1, ensure_ascii=False)
     print(f'::notice title=Second look::{n} rows back for chat 11 with a picture; {sum(1 for r in rows if not r.get("answer"))} open', flush=True)
 
 

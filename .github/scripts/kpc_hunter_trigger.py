@@ -6,6 +6,8 @@ pool for Canada. A changed fingerprint (vs data/gis-hunter/seen.json) = one full
 both changed). Prints the gh command line to run, or nothing. Never fails.
   LINKS=links python3 kpc_hunter_trigger.py [--seed]   (--seed: record today's fingerprints, start nothing)"""
 import glob, hashlib, json, os, pathlib, sys, time
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from kpc_json_any import load_json_any  # noqa: E402
 
 L = pathlib.Path(os.environ.get('LINKS') or '../kpc-links')
 SEEN = pathlib.Path('data/gis-hunter/seen.json')
@@ -20,7 +22,7 @@ def fp(paths):
 
 
 def main():
-    try: rows = json.load(open('data/intake/ready.json')).get('rows') or []
+    try: rows = load_json_any('data/intake/ready.json').get('rows') or []
     except (OSError, ValueError): rows = []
     appr = lambda pre: sorted(r.get('url', '') for r in rows if r.get('approved') is True and str(r.get('area') or '').startswith(pre))   # AUTO-2: a newly approved layer starts a pass
     if os.environ.get('HUNTER_ADDONS') != '1': appr = lambda pre: []   # hold until Nov 6 (the hunter does not read approved layers yet)

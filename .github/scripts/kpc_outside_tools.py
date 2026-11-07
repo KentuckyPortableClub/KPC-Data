@@ -3,11 +3,11 @@
 The tools stay in .github/scripts/draft/tools/ untouched; this file only feeds them the club's files and turns their
 answers into REVIEW files. Nothing here edits data/fers, data/docs, a key or a card.
 
-  prep-convert TEST OUT   data/intake/leads-oct31.json 'other_layer' ([ref, status, url]) -> OUT (list of dicts),
+  prep-convert TEST OUT   archive/2026-10/leads-oct31.json 'other_layer' ([ref, status, url]) -> OUT (list of dicts),
                           US + Canada first, then the rest by count; picture-map-only / not-found rows left out
   prep-links TEST DIR     data/intake/us-agency-maps-index.csv + data/parkinfo/US-XX.json -> DIR/agency_pages.json +
                           DIR/parks.json (each agency gets the parks of its state that have NO own map in
-                          data/intake/docs-found-us-oct31.json); TEST = Tennessee rows only
+                          archive/2026-10/docs-found-us-oct31.json); TEST = Tennessee rows only
   post-links OUTDIR       OUTDIR/report.csv -> data/intake/docs-found-maplinks.json (OK rows, docs-found shape, for
                           chat 10 to merge through the waiting room like the F file) + ...-possible.json
   summary                 data/intake/tools/summary.md = one short page for chats 2, 10, 11
@@ -15,11 +15,12 @@ answers into REVIEW files. Nothing here edits data/fers, data/docs, a key or a c
 import csv, json, os, sys, collections, datetime, glob
 
 D = 'data/intake'
+ARCH = 'archive/2026-10'   # Oct 31 / Nov 1 intake one-offs, kept (not deleted)
 TODAY = datetime.date.today().isoformat()
 
 
 def prep_convert(test, out):
-    L = json.load(open(f'{D}/leads-oct31.json'))['other_layer']
+    L = json.load(open(f'{ARCH}/leads-oct31.json'))['other_layer']
     keep = [x for x in L if x[1] not in ('PICTURE MAP ONLY', 'NOT FOUND')]
     cnt = collections.Counter(x[0].split('-')[0] for x in keep)
     def rank(x):
@@ -43,7 +44,7 @@ def prep_convert(test, out):
 
 def prep_links(test, d):
     os.makedirs(d, exist_ok=True)
-    found = json.load(open(f'{D}/docs-found-us-oct31.json'))
+    found = json.load(open(f'{ARCH}/docs-found-us-oct31.json'))
     have = {r for r, v in found.items() if isinstance(v, dict) and v.get('map')}
     parks, by_st = {}, collections.defaultdict(list)
     for f in glob.glob('data/parkinfo/US-*.json'):

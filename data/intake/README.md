@@ -4,7 +4,7 @@ One queue for every map-layer lead anyone finds; one polite bot (`.github/script
 
 ## Files
 - `queue.json`: the leads. Anyone (harvester, discovery bot, gap-filler, chat 8, chat 9) adds a row; the bot never edits rows.
-- `ready.json`: one result row per probed layer (`approved: null` until chat 9 decides).
+- `ready.json.gz`: one result row per probed layer (`approved: null` until chat 9 decides). Same JSON as the old `ready.json`; readers take either name and prefer `.gz`.
 - `review.md`: the human page: verdict counts, READY rows first with the parks each would close, then LIVE-ONLY, ASK, REJECT; the test table + `GATE=PASS/FAIL` at the end.
 - `state.json`: resume data (per url: date probed + a signature of the queue row), resting hosts, last stats.
 
@@ -27,7 +27,7 @@ Terms classes: OPEN (a named open licence) · CREDIT (copyright / credit / discl
 
 ## How chat 9 approves
 1. Read `review.md` (READY first).
-2. In `ready.json`, set `"approved": true` on each row to take (optionally add `"approved_note": "..."`). A re-probe keeps the yes while the verdict holds.
+2. In `ready.json.gz`, set `"approved": true` on each row to take (optionally add `"approved_note": "..."`). A re-probe keeps the yes while the verdict holds.
 3. The nightly key rebuild reads approved rows later (not built yet). LIVE-ONLY rows are never stored, only read live.
 
 ## Running

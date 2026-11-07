@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """OUTSIDE OFFICIAL DOCUMENTS -> data/docs (chat 10, Oct 31 2026; HQ 4:10 PM + 4:55 PM, Brandon's outside research F).
-Reads every data/intake/docs-found-*.json ({ref: {st, page, map, map_page, kind, date, agency, notes}}; the US F file and the map-page
+Reads every data/intake/docs-found-*.json and archive/2026-10/docs-found-*.json ({ref: {st, page, map, map_page, kind, date, agency, notes}}; the US F file and the map-page
 link extractor's two files use the same shape) and merges them into the documents bot's area files the way the bot's own finds go in:
   - a map we already hold with status ok is NEVER overwritten (the found page may still fill an empty 'page');
   - the link must OPEN and NAME THE PARK (the documents bot's own check_url: PDF first page / page text / file name / link id);
@@ -40,7 +40,17 @@ def area_of(ref, v):
 
 def main():
     rows = {}
-    for f in sorted(glob.glob('data/intake/docs-found-*.json')) + sorted(glob.glob('data/intake/_in/docs/docs-found-*.json')):   # _in = the intake reader's working copy of branch intake-files
+    # basename order, same as when docs-found-us-oct31.json still sat in data/intake (a later file wins). The archived
+    # Oct 31 file keeps that place; _in (the intake reader's working copy of branch intake-files) stays last.
+    names = sorted({os.path.basename(f) for f in glob.glob('data/intake/docs-found-*.json') + glob.glob('archive/2026-10/docs-found-*.json')})
+    found_files = []
+    for n in names:
+        for d in ('data/intake', 'archive/2026-10'):
+            p = os.path.join(d, n)
+            if os.path.isfile(p):
+                found_files.append(p); break
+    found_files += sorted(glob.glob('data/intake/_in/docs/docs-found-*.json'))
+    for f in found_files:
         possible = f.endswith('-possible.json')
         for ref, v in (load(f, {}) or {}).items():
             if isinstance(v, dict) and (v.get('map') or v.get('page')):

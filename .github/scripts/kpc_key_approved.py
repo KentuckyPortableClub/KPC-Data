@@ -11,10 +11,11 @@ is a whole number; the park has NO outline in the newest copy of its key (the he
 else the live one). A park with an outline is never touched (no swaps here). The changed key files go back INTO THE WAITING
 ROOM (held, checked, released only with chat 11's file YES, as Brandon kept it Nov 2). Never fails.
   python3 .github/scripts/kpc_key_approved.py [--dry]"""
-import collections, datetime as dt, glob, json, pathlib, re, sys, urllib.parse
+import collections, datetime as dt, json, pathlib, re, sys, urllib.parse
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_scoreboard_bot as S  # noqa: E402
+from kpc_json_any import glob_json_any, load_json_any  # noqa: E402
 
 DRY = '--dry' in sys.argv
 WK, HELD = pathlib.Path('data/world-key'), pathlib.Path('data/waiting/in/data/world-key')
@@ -23,7 +24,7 @@ TODAY = dt.date.today().isoformat()
 
 
 def load(p, d):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -51,7 +52,7 @@ def nos():
 def main():
     yes = collections.defaultdict(dict)
     NO = nos()   # Nov 6 v2.1 (Quality MUST-ADD, verify-then-fix): a record a world overrides 'no' names never joins by record number
-    for f in sorted(glob.glob('data/waiting/questions/*.json')):
+    for f in glob_json_any('data/waiting/questions/*.json'):
         d = load(f, None); qs = d.get('questions') if isinstance(d, dict) else d
         if not isinstance(qs, list): continue
         for q in qs:

@@ -12,12 +12,13 @@ Reads data/waiting/questions/*.json, the keys (KPC-Links data/us-key + ca-key, K
 import collections, datetime as dt, glob, json, os, pathlib, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from kpc_json_any import glob_json_any, load_json_any  # noqa: E402
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 OUT = pathlib.Path(os.environ.get('APPROVED_OUT') or 'data/approved')   # nightly: branch missing-lists approved/ (replaced each night, no history)
 
 
 def load(p, d):
-    try: return json.load(open(p, encoding='utf-8'))
+    try: return load_json_any(p)
     except Exception: return d  # noqa: BLE001
 
 
@@ -43,7 +44,7 @@ def area_of(q):
 
 def main():
     K = key_state(); A = collections.defaultdict(dict)
-    for f in sorted(glob.glob('data/waiting/questions/*.json')):
+    for f in glob_json_any('data/waiting/questions/*.json'):
         d = load(f, None); qs = d.get('questions') if isinstance(d, dict) else d
         if not isinstance(qs, list): continue
         for q in qs:
