@@ -561,6 +561,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-5748",
+   "Park name (as the agency writes it)": "Fort Abercrombie",
+   "Size": 16,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400953&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-07"
+  },
+  {
    "Park number (if matched)": "US-2213",
    "Park name (as the agency writes it)": "KAUMAHINA STATE WAYSIDE",
    "Size": 7,
@@ -594,7 +603,7 @@
    "Unit": "acres",
    "Agency": "National Register of Historic Places Polygons",
    "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D384329&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-07"
   },
   {
    "Park number (if matched)": "US-0980",
@@ -1488,7 +1497,7 @@
    "Agency/area": "National Register of Historic Places Polygons",
    "Kind": "GIS layer",
    "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
-   "# times used": 6,
+   "# times used": 7,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
