@@ -5,6 +5,12 @@ name: KPC GPS packs (state downloads) - on branch gps-packs
 # each run, so it never grows). Only areas whose inputs changed are rebuilt. Pull-off points stay OFF until Brandon's GO.
 on:
   workflow_dispatch:
+  # Nov 7 (round 4, item 1; Brandon): runs once a night, right after the NIGHTLY release-approved waiting-room run (11:13 UTC), not after the
+  # every-2-hours ones: kpc-waiting-room.yml titles its runs 'KPC waiting room (nightly)' / '(every 2 h)' and the job's if: reads that title.
+  # No new cron. The Monday cron below stays as the safety net (a missed nightly; a run the watchdog restarts fires no workflow_run).
+  workflow_run:
+    workflows: ['KPC waiting room (by hand; nightly release-approved)']
+    types: [completed]
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '29 8 * * 1'   # PR2 (Nov 2): weekly on Monday (was nightly, '29 8 * * *'); a big rebuild, and only changed areas are rebuilt anyway
 permissions:
@@ -14,6 +20,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   run:
+    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.event == 'schedule' && github.event.workflow_run.conclusion != 'cancelled' && github.event.workflow_run.display_title == 'KPC waiting room (nightly)') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -46,12 +53,18 @@ jobs:
           for d in parkinfo access; do mkdir -p ../prep/$d; for f in data/$d/US-*.json; do [ -e ../prep/$d/$(basename $f) ] || ln -s "$PWD/$f" ../prep/$d/; done; done
           AREAS=$(ls ../prep/parkinfo | sed -n 's/^\(US-[A-Z][A-Z]\)\.json$/\1/p' | sort -u | paste -sd, -)
           P=.github/scripts/draft/tools/kpc_gps/kpc_gpspacks/kpc_gpspacks.py
+          S0=$(sha256sum ../out/state.json 2>/dev/null | cut -d' ' -f1)   # Nov 7 (round 4, item 1): state.json only changes when an area was rebuilt
           set +e
           python3 $P --parkinfo ../prep/parkinfo --access ../prep/access --keys data/us-key --outlines ../prep/outlines --areas $AREAS --out ../out --resume --changed-only --max-minutes 50 > /tmp/gps.txt 2>&1
           E=$?
           tail -5 /tmp/gps.txt
           N=$(ls ../out/data/gps/*.gpx.zip 2>/dev/null | wc -l); MB=$(du -sm ../out/data/gps 2>/dev/null | cut -f1)
           echo "::notice title=GPS packs::exit $E; $N state packs, ${MB:-0} MB on branch gps-packs"
+          S1=$(sha256sum ../out/state.json 2>/dev/null | cut -d' ' -f1)
+          if [ "$E" = 0 ] && [ -n "$S0" ] && [ "$S0" = "$S1" ]; then
+            echo "::notice title=GPS packs::no area changed - nothing rebuilt, nothing pushed (fast exit)"
+            exit 0
+          fi
           python3 .github/scripts/kpc_status.py board 'GPS packs' green "$N state packs built $(date -u +%F) (${MB:-0} MB, branch gps-packs)" 'chat 3 links them on the site after Brandon GO' || true   # ok: a status-board line (reporting only)
           bash ../links/.github/scripts/kpc_push_data.sh . "GPS packs status" data/status 2>/dev/null || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           cd ../out && rm -rf .git && git init -q -b gps-packs && git add -A && git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "GPS packs $(date -u +%F) (single commit, replaced each run)" \
