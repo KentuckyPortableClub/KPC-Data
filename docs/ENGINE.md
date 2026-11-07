@@ -46,3 +46,17 @@ If the engine's own options differ, change the one line in `kpc-engine.yml`.
 - **Bots:** 2 s per host, at most 2 jobs on one agency host.
 
 **Switch-over** (after chat 11 passes a kind): documents → parking → camping → outlines (after Nov 6) → Kentucky hours / fees / closures last. For each one: a side-by-side run with the old bot, chat 11 grades it, then the old bot retires.
+
+## KPC-Archive (Nov 7 2026)
+
+Bulk files that are rarely read live in KentuckyPortableClub/KPC-Archive, under the same paths. KPC-Data keeps `data/archive-manifest.json`, which lists each file's path, sha256, bytes and source commit.
+An engine tool that needs a file that isn't on disk calls `kpc_archive.fetch(rel, DATA)` and treats `None` as "skip".
+Groups that move by default:
+- `data/waiting/previous/` (undo copies; the rotate button defaults to older than 14 days)
+- `archive/`
+
+Groups that stay unless named:
+- `data/fers/review/` is OFF because the kpc-fers-lines.yml combine step reads it.
+- `data/sources/review/` is OFF.
+
+Held items in `data/waiting/in/` and the key folders never move. See docs/ARCHIVE.md.

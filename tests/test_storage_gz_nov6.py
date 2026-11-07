@@ -216,5 +216,13 @@ import subprocess
 r = subprocess.run([sys.executable, '-c', expr.format(p=str(td / 'external-results.json'))], capture_output=True, text=True)
 check(r.returncode == 0 and r.stdout.strip() == '4', 'kpc-collector.yml json.load reads external-results.json.gz')
 
+# ---- Nov 7 archive split: the files this test pins stay in KPC-Data; the readers that can follow a move do it safely
+import kpc_archive as KA, kpc_archive_move as AM
+moved_roots = tuple(f + '/' for g in AM.GROUPS.values() for f in g[2])
+check(not [r['path'] for r in man if r['path'].startswith(moved_roots)], 'storage manifest: no pinned .gz file lies in a folder that moves to KPC-Archive')
+check(not [r['path'] for r in man if AM.protected(r['path']) is False and r['path'].startswith('data/waiting/in/')], 'storage manifest: nothing pinned from the held items')
+check(all(AM.protected(p) for p in ('data/waiting/verdicts.jsonl.gz', 'data/waiting/questions/x.json.gz')), 'verdicts and questions stay in KPC-Data (waiting room, outside previous/)')
+check(KA.fetch('data/waiting/previous/x.json', td) is None and KA.listing('data/waiting/previous/', td) == [], 'archive reader: no manifest = no fetch, no change')
+
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

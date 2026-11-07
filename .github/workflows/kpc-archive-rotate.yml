@@ -1,0 +1,85 @@
+name: "KPC archive rotate (by hand) - old waiting-room undo copies to KPC-Archive"
+# Nov 7 2026 (archive split). BY HAND ONLY: no schedule, no workflow_run. Moves data/waiting/previous/ items older than N days
+# (default 14) from KPC-Data to KentuckyPortableClub/KPC-Archive (same paths), then removes them from KPC-Data. Held items in
+# data/waiting/in/ are never touched (kpc_archive_move.py refuses them). Needs the repo secret KPC_ARCHIVE_TOKEN: a fine-grained
+# token with Contents: read and write on KPC-Archive ONLY. This file holds the NAME of the secret, never a value.
+# Order, so a failure never loses a file: (1) copy + sha256-verify into the archive checkout, (2) push KPC-Archive, (3) verify again,
+# (4) delete from KPC-Data only what the archive copy matches byte for byte, (5) push KPC-Data. A failed push stops the run (red).
+# dry_run (default true) prints the MB that would move and changes nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      older_than_days:
+        description: 'Move undo copies whose last change is older than this many days (0 = all of them, the one-time move)'
+        required: false
+        default: '14'
+      groups:
+        description: 'previous (default), or a comma list: previous,archive,fers-review,sources-review (see kpc_archive_move.py)'
+        required: false
+        default: 'previous'
+      dry_run:
+        description: 'true = only print what would move and the MB saved (default); false = do it'
+        required: false
+        default: 'true'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-waiting-room   # shares the waiting room's lock: no release or undo runs while the undo copies are being moved
+  cancel-in-progress: false
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Stop early when the archive token is missing (a real run only)
+        if: ${{ inputs.dry_run == 'false' }}
+        env:
+          TOKEN_SET: ${{ secrets.KPC_ARCHIVE_TOKEN != '' }}
+        run: |
+          [ "$TOKEN_SET" = true ] || { echo "::error title=KPC_ARCHIVE_TOKEN::the repo secret KPC_ARCHIVE_TOKEN is not set; nothing was moved. Add it under Settings, Secrets and variables, Actions."; exit 1; }
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+          fetch-depth: 0      # the age of an undo copy is its last git change
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Archive
+          path: archive
+          token: ${{ secrets.KPC_ARCHIVE_TOKEN || github.token }}   # a dry run only reads the public repo
+          fetch-depth: 1
+      - name: What would move (dry run; always printed first)
+        run: |
+          python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive \
+            --groups "${{ inputs.groups || 'previous' }}" --older-than-days "${{ inputs.older_than_days || '14' }}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Copy into the archive checkout and verify
+        if: ${{ inputs.dry_run == 'false' }}
+        run: |
+          python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --copy-only \
+            --groups "${{ inputs.groups || 'previous' }}" --older-than-days "${{ inputs.older_than_days || '14' }}"
+          python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --verify
+      - name: Push KPC-Archive
+        if: ${{ inputs.dry_run == 'false' }}
+        working-directory: archive
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && { echo "::notice title=Archive::nothing new to push"; exit 0; }
+          git commit -qm "Archive rotate: undo copies older than ${{ inputs.older_than_days || '14' }} days (from KPC-Data $(git -C ../kpcdata rev-parse --short HEAD))"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main 2>/dev/null; git push -q origin HEAD:main && ok=1 && break; sleep $((i*5)); done
+          [ "${ok:-}" = 1 ] || { echo "::error title=Archive push::KPC-Archive could not be pushed; KPC-Data was NOT changed"; exit 1; }
+      - name: Delete from KPC-Data only what the archive holds byte for byte
+        if: ${{ inputs.dry_run == 'false' }}
+        run: |
+          python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --verify
+          python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --delete-verified \
+            --groups "${{ inputs.groups || 'previous' }}" --older-than-days "${{ inputs.older_than_days || '14' }}"
+      - name: Push KPC-Data
+        if: ${{ inputs.dry_run == 'false' }}
+        working-directory: kpcdata
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A   # a fresh checkout: the only changes are this move's deletions and data/archive-manifest.json
+          git diff --cached --quiet && { echo "::notice title=Archive::KPC-Data has nothing to commit"; exit 0; }
+          git commit -qm "Archive rotate: moved to KPC-Archive (manifest data/archive-manifest.json)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && ok=1 && break; sleep $((i*5)); done
+          [ "${ok:-}" = 1 ] || { echo "::error title=Data push::KPC-Data could not be pushed (the files are safe in KPC-Archive); run again"; exit 1; }

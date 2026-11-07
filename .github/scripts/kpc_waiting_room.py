@@ -24,6 +24,7 @@ Env: DATA (KPC-Data checkout, default .) · LINKS (KPC-Links checkout, default .
 import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kpc_json_any import append_jsonl_gz  # noqa: E402
+import kpc_archive as KA  # noqa: E402  (Nov 7: undo copies older than 14 days live on KPC-Archive; data/archive-manifest.json lists them)
 
 DATA = pathlib.Path(os.environ.get('DATA') or '.')
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
@@ -1048,10 +1049,14 @@ def keep_generation(rel):
 def mode_undo(rel, gen=1):
     rel, _, g = str(rel).partition('@'); gen = int(g or gen)   # 'data/access/US-NY.json@2' = two copies back
     live, prev = DATA / rel, gen_dir(gen) / rel
-    if not prev.exists(): print(f'::notice title=Waiting room undo::no copy {gen} back of {rel}'); return False
+    got = None
+    if not prev.exists():   # Nov 7 (archive split): the undo copy may have moved to KPC-Archive; the manifest says so, and its sha256 is checked
+        got = KA.fetch(prev.relative_to(DATA).as_posix(), DATA)
+        if got is None: print(f'::notice title=Waiting room undo::no copy {gen} back of {rel}'); return False
     tmp = live.read_bytes() if live.exists() else None
-    shutil.copy2(prev, live)
-    if tmp is not None and gen == 1: prev.write_bytes(tmp)     # the copy we replaced becomes 'previous' (undo of the undo)
+    if got is None: shutil.copy2(prev, live)
+    else: live.parent.mkdir(parents=True, exist_ok=True); live.write_bytes(got)
+    if tmp is not None and gen == 1: prev.parent.mkdir(parents=True, exist_ok=True); prev.write_bytes(tmp)     # the copy we replaced becomes 'previous' (undo of the undo)
     log_action('undo', f'{rel}@{gen}')
     print(f'::notice title=Waiting room undo::{rel} put back to the copy {gen} back'); return True
 
@@ -1070,8 +1075,10 @@ def mode_undo_bot(bot, area=''):
     folder = BOT_FOLDERS.get(bot)
     if not folder: print(f'::notice title=Waiting room undo::unknown bot {bot} (one of {", ".join(BOT_FOLDERS)})'); return
     n = 0
-    for p in sorted((W / 'previous' / folder).rglob('*.json')) if (W / 'previous' / folder).exists() else []:
-        rel = str(p.relative_to(W / 'previous'))
+    local = [str(p.relative_to(W / 'previous')) for p in sorted((W / 'previous' / folder).rglob('*.json'))] if (W / 'previous' / folder).exists() else []
+    pre = (W / 'previous').relative_to(DATA).as_posix() + '/'   # Nov 7: copies that moved to KPC-Archive are listed by the manifest (no network for the list)
+    moved = [a[len(pre):] for a in KA.listing(f'{pre}{folder}/', DATA) if a.endswith('.json')]
+    for rel in sorted(set(local) | set(moved)):
         if area and area not in pathlib.Path(rel).name: continue
         n += mode_undo(rel)
     print(f'::notice title=Waiting room undo::{bot} {area or "all areas"}: {n} files put back')
