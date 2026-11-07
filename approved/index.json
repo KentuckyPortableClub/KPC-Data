@@ -1,0 +1,2584 @@
+{
+ "about": "APPROVED BUT NOT ON THE MAP (chat 10, Nov 2 2026; Brandon 4:51 AM 'keys and layers ... something we missing there ... a bot",
+ "built": "2026-11-07",
+ "waiting": 17043,
+ "areas": [
+  {
+   "area": "AU",
+   "waiting": 5522,
+   "key_now": {
+    "padus": 4965,
+    "missing": 552,
+    "not in key": 5
+   },
+   "top_layers": [
+    [
+     "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/10",
+     871
+    ],
+    [
+     "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Estate/MapServer/0",
+     807
+    ],
+    [
+     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/15",
+     760
+    ]
+   ]
+  },
+  {
+   "area": "NO",
+   "waiting": 2853,
+   "key_now": {
+    "padus": 2846,
+    "missing": 7
+   },
+   "top_layers": [
+    [
+     "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/MapServer/0",
+     2846
+    ],
+    [
+     "EEA nationally designated areas",
+     7
+    ]
+   ]
+  },
+  {
+   "area": "GB",
+   "waiting": 1601,
+   "key_now": {
+    "missing": 217,
+    "line": 7,
+    "pin-only": 205,
+    "padus": 1171,
+    "not in key": 1
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0",
+     742
+    ],
+    [
+     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
+     316
+    ],
+    [
+     "https://services-eu1.arcgis.com/ZOdPfBS3aqqDYPUQ/arcgis/rest/services/National_Heritage_List_for_England_NHLE_v02_VIEW/FeatureServer/7",
+     112
+    ]
+   ]
+  },
+  {
+   "area": "NZ",
+   "waiting": 761,
+   "key_now": {
+    "padus": 730,
+    "missing": 19,
+    "pin-only": 12
+   },
+   "top_layers": [
+    [
+     "https://seasketch.doc.govt.nz/arcgis/rest/services/National/Public_Conservation_Land/MapServer/0",
+     738
+    ],
+    [
+     "https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Park_Extents/FeatureServer/0",
+     10
+    ],
+    [
+     "New Zealand: Department of Conservation (DOC), New Zealand",
+     6
+    ]
+   ]
+  },
+  {
+   "area": "ES",
+   "waiting": 526,
+   "key_now": {
+    "padus": 491,
+    "missing": 35
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-ES-enp2025-enp2025-p.geojson.gz",
+     440
+    ],
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-ES-enp2025-enp2025-c.geojson.gz",
+     77
+    ],
+    [
+     "EEA nationally designated areas",
+     6
+    ]
+   ]
+  },
+  {
+   "area": "FR",
+   "waiting": 499,
+   "key_now": {
+    "padus": 432,
+    "missing": 67
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-FR-fr-sic-fr-sic.geojson.gz",
+     237
+    ],
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-FR-fr-cdl-fr-cdl.geojson.gz",
+     131
+    ],
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-FR-fr-zps-fr-zps.geojson.gz",
+     33
+    ]
+   ]
+  },
+  {
+   "area": "CO",
+   "waiting": 335,
+   "key_now": {
+    "padus": 324,
+    "missing": 11
+   },
+   "top_layers": [
+    [
+     "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer/0",
+     334
+    ],
+    [
+     "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Coberturas_Antropicas_25K_Oficial/FeatureServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "IT",
+   "waiting": 258,
+   "key_now": {
+    "padus": 253,
+    "missing": 5
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-IT-regione-c1101121-natura-2000-regione-c1101121-natura-2000.geojson.gz",
+     109
+    ],
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-IT-regione-rete-natura200000-regione-rete-natura200000.geojson.gz",
+     81
+    ],
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-IT-regione-aree-naturali-protette1-regione-aree-naturali-protette1.geojson.gz",
+     39
+    ]
+   ]
+  },
+  {
+   "area": "GR",
+   "waiting": 248,
+   "key_now": {
+    "padus": 144,
+    "missing": 104
+   },
+   "top_layers": [
+    [
+     "https://geohub.necca.gov.gr/server/rest/services/ELBIOS-EXTERNAL_DATA/PRC_TERMAR_CDDA2020/MapServer/0",
+     176
+    ],
+    [
+     "https://geohub.necca.gov.gr/server/rest/services/ELBIOS-EXTERNAL_DATA/PRC_TERMAR_N2000_v32/MapServer/0",
+     72
+    ]
+   ]
+  },
+  {
+   "area": "US-NY",
+   "waiting": 187,
+   "key_now": {
+    "missing": 1,
+    "pin-only": 2,
+    "padus": 184
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     160
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     19
+    ],
+    [
+     "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Trails/FeatureServer/0",
+     4
+    ]
+   ]
+  },
+  {
+   "area": "US-WI",
+   "waiting": 184,
+   "key_now": {
+    "padus": 184
+   },
+   "top_layers": [
+    [
+     "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+     174
+    ],
+    [
+     "",
+     5
+    ],
+    [
+     "https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/1",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "CA-AB",
+   "waiting": 148,
+   "key_now": {
+    "missing": 1,
+    "pin-only": 1,
+    "padus": 146
+   },
+   "top_layers": [
+    [
+     "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     147
+    ],
+    [
+     "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-PA",
+   "waiting": 130,
+   "key_now": {
+    "missing": 2,
+    "padus": 128
+   },
+   "top_layers": [
+    [
+     "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/9",
+     77
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     46
+    ],
+    [
+     "https://www.gis.dcnr.pa.gov/agsprod/rest/services/BOF/State_Forests/MapServer/4",
+     6
+    ]
+   ]
+  },
+  {
+   "area": "FI",
+   "waiting": 129,
+   "key_now": {
+    "missing": 129
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     127
+    ],
+    [
+     "EEA Natura 2000",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-FL",
+   "waiting": 126,
+   "key_now": {
+    "missing": 1,
+    "padus": 124,
+    "line": 1
+   },
+   "top_layers": [
+    [
+     "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+     87
+    ],
+    [
+     "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+     11
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     10
+    ]
+   ]
+  },
+  {
+   "area": "CZ",
+   "waiting": 122,
+   "key_now": {
+    "padus": 114,
+    "missing": 8
+   },
+   "top_layers": [
+    [
+     "https://gis.nature.cz/arcgis/rest/services/UzemniOchrana/ChranUzemi/MapServer/0",
+     66
+    ],
+    [
+     "https://gis.nature.cz/arcgis/rest/services/UzemniOchrana/Natura2000/MapServer/1",
+     22
+    ],
+    [
+     "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0",
+     19
+    ]
+   ]
+  },
+  {
+   "area": "CA-ON",
+   "waiting": 121,
+   "key_now": {
+    "pin-only": 5,
+    "missing": 3,
+    "padus": 113
+   },
+   "top_layers": [
+    [
+     "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4",
+     109
+    ],
+    [
+     "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+     6
+    ],
+    [
+     "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "DO",
+   "waiting": 110,
+   "key_now": {
+    "missing": 7,
+    "padus": 103
+   },
+   "top_layers": [
+    [
+     "https://mapageneral.mineria.gob.do/arcgis/rest/services/PortalMapa/Portal_AP/MapServer/0",
+     110
+    ]
+   ]
+  },
+  {
+   "area": "US-MO",
+   "waiting": 108,
+   "key_now": {
+    "padus": 108
+   },
+   "top_layers": [
+    [
+     "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     42
+    ],
+    [
+     "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     38
+    ],
+    [
+     "https://gisblue.mdc.mo.gov/arcgis/rest/services/Boundaries/MDC_Administrative_Boundaries/FeatureServer/0",
+     12
+    ]
+   ]
+  },
+  {
+   "area": "IE",
+   "waiting": 100,
+   "key_now": {
+    "padus": 95,
+    "missing": 5
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-IE-pnha2015-pnha-itm-2015-11.geojson.gz",
+     59
+    ],
+    [
+     "https://services-eu1.arcgis.com/Jhij7i46ouO8Cc0N/arcgis/rest/services/NPWSDesignatedAreas/FeatureServer/3",
+     14
+    ],
+    [
+     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4",
+     7
+    ]
+   ]
+  },
+  {
+   "area": "BE",
+   "waiting": 95,
+   "key_now": {
+    "padus": 61,
+    "missing": 26,
+    "pin-only": 8
+   },
+   "top_layers": [
+    [
+     "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ogc/features/v1/collections/am:am_patdat",
+     29
+    ],
+    [
+     "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/CONSNAT/MapServer/3",
+     22
+    ],
+    [
+     "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer/9",
+     20
+    ]
+   ]
+  },
+  {
+   "area": "MX",
+   "waiting": 92,
+   "key_now": {
+    "missing": 14,
+    "padus": 78
+   },
+   "top_layers": [
+    [
+     "https://geomaticasig1.semarnat.gob.mx/arcgis/rest/services/aps/SIVECA/MapServer/0",
+     92
+    ]
+   ]
+  },
+  {
+   "area": "PT",
+   "waiting": 90,
+   "key_now": {
+    "padus": 87,
+    "missing": 3
+   },
+   "top_layers": [
+    [
+     "https://sigservices.icnf.pt/server/rest/services/BDG/SIC/MapServer/0",
+     34
+    ],
+    [
+     "https://sigservices.icnf.pt/server/rest/services/BDG/RNAP/MapServer/0",
+     22
+    ],
+    [
+     "https://sigservices.icnf.pt/server/rest/services/BDG/ZPE/MapServer/0",
+     21
+    ]
+   ]
+  },
+  {
+   "area": "US-TN",
+   "waiting": 89,
+   "key_now": {
+    "padus": 89
+   },
+   "top_layers": [
+    [
+     "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Lands/FeatureServer/0",
+     40
+    ],
+    [
+     "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Hunting_Allowed/FeatureServer/0",
+     33
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     9
+    ]
+   ]
+  },
+  {
+   "area": "CL",
+   "waiting": 88,
+   "key_now": {
+    "padus": 82,
+    "missing": 4,
+    "pin-only": 2
+   },
+   "top_layers": [
+    [
+     "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/MapServer/0",
+     82
+    ],
+    [
+     "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/MapServer/3",
+     3
+    ],
+    [
+     "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/MapServer/1",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-OR",
+   "waiting": 88,
+   "key_now": {
+    "line": 5,
+    "missing": 1,
+    "padus": 79,
+    "pin-only": 3
+   },
+   "top_layers": [
+    [
+     "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0",
+     59
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     7
+    ],
+    [
+     "",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "US-GA",
+   "waiting": 84,
+   "key_now": {
+    "padus": 84
+   },
+   "top_layers": [
+    [
+     "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     49
+    ],
+    [
+     "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     28
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "US-IA",
+   "waiting": 83,
+   "key_now": {
+    "padus": 83
+   },
+   "top_layers": [
+    [
+     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     43
+    ],
+    [
+     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     32
+    ],
+    [
+     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     4
+    ]
+   ]
+  },
+  {
+   "area": "US-OH",
+   "waiting": 80,
+   "key_now": {
+    "padus": 80
+   },
+   "top_layers": [
+    [
+     "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/7",
+     36
+    ],
+    [
+     "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/5",
+     28
+    ],
+    [
+     "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/6",
+     8
+    ]
+   ]
+  },
+  {
+   "area": "US-WV",
+   "waiting": 78,
+   "key_now": {
+    "padus": 78
+   },
+   "top_layers": [
+    [
+     "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
+     71
+    ],
+    [
+     "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_State_Forests/FeatureServer/16",
+     5
+    ],
+    [
+     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "BG",
+   "waiting": 72,
+   "key_now": {
+    "not in key": 72
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BG-zpo-register-zpo-all.geojson.gz",
+     72
+    ]
+   ]
+  },
+  {
+   "area": "US-MT",
+   "waiting": 70,
+   "key_now": {
+    "padus": 69,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0",
+     38
+    ],
+    [
+     "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_WMA/FeatureServer/0",
+     23
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     7
+    ]
+   ]
+  },
+  {
+   "area": "US-MI",
+   "waiting": 66,
+   "key_now": {
+    "line": 6,
+    "padus": 60
+   },
+   "top_layers": [
+    [
+     "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     27
+    ],
+    [
+     "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     14
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     11
+    ]
+   ]
+  },
+  {
+   "area": "US-CA",
+   "waiting": 65,
+   "key_now": {
+    "missing": 1,
+    "padus": 64
+   },
+   "top_layers": [
+    [
+     "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0",
+     41
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     23
+    ],
+    [
+     "https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-VA",
+   "waiting": 63,
+   "key_now": {
+    "padus": 63
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     24
+    ],
+    [
+     "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Boundary_-_Tracts/FeatureServer/0",
+     18
+    ],
+    [
+     "https://services1.arcgis.com/zdPnl7ASQIo6PX54/arcgis/rest/services/VDOF_State_Forests/FeatureServer/0",
+     12
+    ]
+   ]
+  },
+  {
+   "area": "DK",
+   "waiting": 55,
+   "key_now": {
+    "padus": 2,
+    "pin-only": 15,
+    "missing": 38
+   },
+   "top_layers": [
+    [
+     "https://arealeditering-dist-geo.miljoeportal.dk/geoserver/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=dai:fredede_omr",
+     51
+    ],
+    [
+     "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/2",
+     2
+    ],
+    [
+     "EEA nationally designated areas",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-MS",
+   "waiting": 54,
+   "key_now": {
+    "padus": 50,
+    "missing": 4
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-US-MS-mdwfp-wma.geojson.gz",
+     27
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     24
+    ],
+    [
+     "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-NE",
+   "waiting": 54,
+   "key_now": {
+    "missing": 2,
+    "pin-only": 2,
+    "padus": 50
+   },
+   "top_layers": [
+    [
+     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
+     46
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     6
+    ],
+    [
+     "",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "ZA",
+   "waiting": 54,
+   "key_now": {
+    "padus": 45,
+    "missing": 9
+   },
+   "top_layers": [
+    [
+     "https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/2",
+     29
+    ],
+    [
+     "https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/1",
+     16
+    ],
+    [
+     "South Africa protected areas (DPME, from DFFE SAPAD)",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-IL",
+   "waiting": 52,
+   "key_now": {
+    "padus": 52
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0",
+     42
+    ],
+    [
+     "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/3",
+     7
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-IN",
+   "waiting": 52,
+   "key_now": {
+    "padus": 51,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+     38
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     10
+    ],
+    [
+     "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "BR",
+   "waiting": 47,
+   "key_now": {
+    "not in key": 47
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-BR-br-cnuc-2025-08-cnuc-2025-08.geojson.gz",
+     47
+    ]
+   ]
+  },
+  {
+   "area": "US-UT",
+   "waiting": 45,
+   "key_now": {
+    "pin-only": 4,
+    "padus": 34,
+    "line": 6,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/ULTRA_Properties_2_view/FeatureServer/0",
+     32
+    ],
+    [
+     "https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_NLCS_WSR/MapServer/0",
+     6
+    ],
+    [
+     "",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "CA-QC",
+   "waiting": 41,
+   "key_now": {
+    "pin-only": 18,
+    "missing": 1,
+    "padus": 22
+   },
+   "top_layers": [
+    [
+     "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23",
+     13
+    ],
+    [
+     "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+     11
+    ],
+    [
+     "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     10
+    ]
+   ]
+  },
+  {
+   "area": "PR",
+   "waiting": 39,
+   "key_now": {
+    "missing": 5,
+    "padus": 34
+   },
+   "top_layers": [
+    [
+     "https://sigejp.pr.gov/server/rest/services/Advisory_Maps/Datos_Generales/MapServer/5",
+     37
+    ],
+    [
+     "https://sigejp.pr.gov/server/rest/services/Advisory_Maps/Datos_Generales/MapServer/4",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "SE",
+   "waiting": 39,
+   "key_now": {
+    "missing": 21,
+    "pin-only": 4,
+    "not in key": 14
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     18
+    ],
+    [
+     "https://geodata.naturvardsverket.se/nedladdning/naturvardsregistret/NR.zip",
+     17
+    ],
+    [
+     "https://geodata.naturvardsverket.se/nedladdning/naturvardsregistret/KR.zip",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-ND",
+   "waiting": 37,
+   "key_now": {
+    "pin-only": 5,
+    "padus": 32
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
+     22
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     8
+    ],
+    [
+     "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "US-MD",
+   "waiting": 35,
+   "key_now": {
+    "missing": 1,
+    "padus": 33,
+    "pin-only": 1
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     31
+    ],
+    [
+     "",
+     3
+    ],
+    [
+     "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-KY",
+   "waiting": 34,
+   "key_now": {
+    "not in key": 33,
+    "padus": 1
+   },
+   "top_layers": [
+    [
+     "ky-hunting-areas.geojson",
+     12
+    ],
+    [
+     "ky-state-parks.geojson",
+     11
+    ],
+    [
+     "ky-wild-rivers.geojson",
+     4
+    ]
+   ]
+  },
+  {
+   "area": "US-MN",
+   "waiting": 33,
+   "key_now": {
+    "padus": 32,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_dnr_wildlife_mgmt_areas_pub/FeatureServer/0",
+     23
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     4
+    ],
+    [
+     "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-SC",
+   "waiting": 33,
+   "key_now": {
+    "line": 1,
+    "padus": 32
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     9
+    ],
+    [
+     "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     9
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     8
+    ]
+   ]
+  },
+  {
+   "area": "BZ",
+   "waiting": 32,
+   "key_now": {
+    "padus": 31,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://services8.arcgis.com/IXYmdkndf6VGeFte/arcgis/rest/services/Protected_Areas_Belize_2015/FeatureServer/0",
+     29
+    ],
+    [
+     "https://services8.arcgis.com/IXYmdkndf6VGeFte/arcgis/rest/services/PA_updated_2024/FeatureServer/0",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "NL",
+   "waiting": 31,
+   "key_now": {
+    "pin-only": 25,
+    "missing": 6
+   },
+   "top_layers": [
+    [
+     "https://api.pdok.nl/brt/top10nl/ogc/v1/collections/geografisch_gebied_vlak",
+     26
+    ],
+    [
+     "EEA Natura 2000",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "US-AR",
+   "waiting": 31,
+   "key_now": {
+    "padus": 27,
+    "line": 4
+   },
+   "top_layers": [
+    [
+     "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     12
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     8
+    ],
+    [
+     "",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "US-MA",
+   "waiting": 31,
+   "key_now": {
+    "padus": 29,
+    "line": 2
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     26
+    ],
+    [
+     "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DCR_Roads_and_Trails/FeatureServer/0",
+     2
+    ],
+    [
+     "",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "MT",
+   "waiting": 30,
+   "key_now": {
+    "padus": 23,
+    "missing": 7
+   },
+   "top_layers": [
+    [
+     "https://services-eu1.arcgis.com/XSelLE0xRyexHDpW/arcgis/rest/services/Base_data_Ambjent_Malta_2022_WFL1_view/FeatureServer/36",
+     24
+    ],
+    [
+     "https://services-eu1.arcgis.com/XSelLE0xRyexHDpW/arcgis/rest/services/Base_data_Ambjent_Malta_2022_WFL1_view/FeatureServer/37",
+     6
+    ]
+   ]
+  },
+  {
+   "area": "US-HI",
+   "waiting": 30,
+   "key_now": {
+    "pin-only": 2,
+    "padus": 25,
+    "line": 3
+   },
+   "top_layers": [
+    [
+     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     11
+    ],
+    [
+     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     9
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "US-LA",
+   "waiting": 30,
+   "key_now": {
+    "missing": 2,
+    "padus": 28
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
+     17
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     10
+    ],
+    [
+     "",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-ME",
+   "waiting": 29,
+   "key_now": {
+    "padus": 28,
+    "line": 1
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0",
+     12
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     9
+    ],
+    [
+     "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MDIFWWildlifeManagementAreas/FeatureServer/0",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "NI",
+   "waiting": 27,
+   "key_now": {
+    "padus": 27
+   },
+   "top_layers": [
+    [
+     "https://rmgir.proyectomesoamerica.org/server/rest/services/RMGIR/Nicaragua_FISICO_NATURAL/MapServer/2",
+     27
+    ]
+   ]
+  },
+  {
+   "area": "US-WY",
+   "waiting": 27,
+   "key_now": {
+    "padus": 26,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     12
+    ],
+    [
+     "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
+     12
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CA-NB",
+   "waiting": 26,
+   "key_now": {
+    "pin-only": 6,
+    "padus": 13,
+    "not in key": 7
+   },
+   "top_layers": [
+    [
+     "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     10
+    ],
+    [
+     "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+     7
+    ],
+    [
+     "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "AT",
+   "waiting": 25,
+   "key_now": {
+    "missing": 25
+   },
+   "top_layers": [
+    [
+     "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/7",
+     9
+    ],
+    [
+     "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/5",
+     6
+    ],
+    [
+     "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/1",
+     4
+    ]
+   ]
+  },
+  {
+   "area": "BM",
+   "waiting": 24,
+   "key_now": {
+    "padus": 24
+   },
+   "top_layers": [
+    [
+     "https://gis.planning.gov.bm/arcgis/rest/services/PlanningLayers/MapServer/14",
+     24
+    ]
+   ]
+  },
+  {
+   "area": "US-AK",
+   "waiting": 24,
+   "key_now": {
+    "missing": 1,
+    "line": 6,
+    "padus": 17
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     15
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+     5
+    ],
+    [
+     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-CO",
+   "waiting": 24,
+   "key_now": {
+    "pin-only": 1,
+    "padus": 22,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     10
+    ],
+    [
+     "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+     10
+    ],
+    [
+     "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-DE",
+   "waiting": 24,
+   "key_now": {
+    "padus": 24
+   },
+   "top_layers": [
+    [
+     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     22
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-NJ",
+   "waiting": 24,
+   "key_now": {
+    "missing": 1,
+    "padus": 23
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/ArcGIS/rest/services/Open_Space__State_Owned__Generalized_h/FeatureServer/67",
+     19
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "US-KS",
+   "waiting": 23,
+   "key_now": {
+    "pin-only": 1,
+    "padus": 21,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     22
+    ],
+    [
+     "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-NH",
+   "waiting": 23,
+   "key_now": {
+    "padus": 19,
+    "line": 4
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     16
+    ],
+    [
+     "https://services8.arcgis.com/hg1B9Egwk1I5p300/ArcGIS/rest/services/NH_Recreational_Trails/FeatureServer/1",
+     2
+    ],
+    [
+     "https://services8.arcgis.com/hg1B9Egwk1I5p300/arcgis/rest/services/NHFG_WMA_online/FeatureServer/2",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "ID",
+   "waiting": 21,
+   "key_now": {
+    "missing": 8,
+    "padus": 13
+   },
+   "top_layers": [
+    [
+     "https://geoservices.big.go.id/gis/rest/services/PTRA/Atlas_250K_KawasanKonservasi/MapServer/7",
+     21
+    ]
+   ]
+  },
+  {
+   "area": "PY",
+   "waiting": 20,
+   "key_now": {
+    "padus": 19,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://visor.infona.gov.py/server/rest/services/Areas_Silvestres_Protegidas/Areas_Silvestres_Protegidas/MapServer/0",
+     20
+    ]
+   ]
+  },
+  {
+   "area": "US-OK",
+   "waiting": 20,
+   "key_now": {
+    "missing": 2,
+    "pin-only": 3,
+    "line": 1,
+    "padus": 14
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     11
+    ],
+    [
+     "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
+     4
+    ],
+    [
+     "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "US-ID",
+   "waiting": 19,
+   "key_now": {
+    "pin-only": 2,
+    "missing": 2,
+    "padus": 15
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     11
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/0",
+     3
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-RI",
+   "waiting": 19,
+   "key_now": {
+    "missing": 1,
+    "padus": 18
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     11
+    ],
+    [
+     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+     7
+    ],
+    [
+     "",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-VT",
+   "waiting": 19,
+   "key_now": {
+    "padus": 19
+   },
+   "top_layers": [
+    [
+     "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     19
+    ]
+   ]
+  },
+  {
+   "area": "BS",
+   "waiting": 18,
+   "key_now": {
+    "padus": 18
+   },
+   "top_layers": [
+    [
+     "https://services3.arcgis.com/yRW96jkKjDj5GeHi/arcgis/rest/services/Protected_Areas_of_The_Bahamas/FeatureServer/0",
+     18
+    ]
+   ]
+  },
+  {
+   "area": "CM",
+   "waiting": 17,
+   "key_now": {
+    "padus": 17
+   },
+   "top_layers": [
+    [
+     "https://gis.forest-atlas.org/server/rest/services/cmr/open_data_fr/MapServer/123",
+     17
+    ]
+   ]
+  },
+  {
+   "area": "PA",
+   "waiting": 17,
+   "key_now": {
+    "padus": 17
+   },
+   "top_layers": [
+    [
+     "https://geoportal.miambiente.gob.pa/server/rest/services/Hosted/SINAP_2025/FeatureServer/0",
+     17
+    ]
+   ]
+  },
+  {
+   "area": "SI",
+   "waiting": 17,
+   "key_now": {
+    "padus": 3,
+    "pin-only": 10,
+    "missing": 4
+   },
+   "top_layers": [
+    [
+     "https://podatki.gov.si/dataset/2772d7b1-d1de-452c-bfcf-99e0df04f859/resource/feb2262a-a7c7-4a9a-b17d-2af8c19aa106/download/evrd.gpkg",
+     10
+    ],
+    [
+     "EEA nationally designated areas",
+     4
+    ],
+    [
+     "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer/4",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "US-AL",
+   "waiting": 17,
+   "key_now": {
+    "pin-only": 2,
+    "padus": 15
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     12
+    ],
+    [
+     "",
+     1
+    ],
+    [
+     "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-NC",
+   "waiting": 17,
+   "key_now": {
+    "missing": 1,
+    "padus": 16
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     7
+    ],
+    [
+     "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_detail/FeatureServer/22",
+     5
+    ],
+    [
+     "https://services6.arcgis.com/nRIB86xC7kq6wavB/arcgis/rest/services/NC_State_Parks_System/FeatureServer/0",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "KE",
+   "waiting": 16,
+   "key_now": {
+    "padus": 13,
+    "missing": 3
+   },
+   "top_layers": [
+    [
+     "https://gis.forest-atlas.org/server/rest/services/ken/overlay_layers/MapServer/4",
+     16
+    ]
+   ]
+  },
+  {
+   "area": "US-AZ",
+   "waiting": 16,
+   "key_now": {
+    "padus": 15,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     11
+    ],
+    [
+     "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
+     3
+    ],
+    [
+     "https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "HU",
+   "waiting": 15,
+   "key_now": {
+    "padus": 15
+   },
+   "top_layers": [
+    [
+     "https://geoportal.vizugy.hu/arcgis/rest/services/VGT_1/03_vedett/MapServer/17",
+     14
+    ],
+    [
+     "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/2",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-NM",
+   "waiting": 15,
+   "key_now": {
+    "pin-only": 1,
+    "padus": 14
+   },
+   "top_layers": [
+    [
+     "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
+     8
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     6
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "US-WA",
+   "waiting": 14,
+   "key_now": {
+    "missing": 3,
+    "padus": 10,
+    "pin-only": 1
+   },
+   "top_layers": [
+    [
+     "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     4
+    ],
+    [
+     "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trails/FeatureServer/0",
+     3
+    ],
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "CA-NT",
+   "waiting": 13,
+   "key_now": {
+    "missing": 13
+   },
+   "top_layers": [
+    [
+     "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16",
+     13
+    ]
+   ]
+  },
+  {
+   "area": "GT",
+   "waiting": 13,
+   "key_now": {
+    "padus": 13
+   },
+   "top_layers": [
+    [
+     "https://rmgir.proyectomesoamerica.org/server/rest/services/RMGIR/Guatemala_Datos_B%C3%A1sicos_WGS1984/MapServer/3",
+     13
+    ]
+   ]
+  },
+  {
+   "area": "US-SD",
+   "waiting": 13,
+   "key_now": {
+    "missing": 1,
+    "padus": 12
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     12
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CD",
+   "waiting": 12,
+   "key_now": {
+    "padus": 8,
+    "missing": 4
+   },
+   "top_layers": [
+    [
+     "https://gis.forest-atlas.org/server/rest/services/cod/Localisation_aacs_en/MapServer/102",
+     12
+    ]
+   ]
+  },
+  {
+   "area": "NC",
+   "waiting": 12,
+   "key_now": {
+    "padus": 10,
+    "missing": 2
+   },
+   "top_layers": [
+    [
+     "https://geoportail.oeil.nc/arcgis/rest/services/GEOPORTAIL_SUIVI/AIRE_PROTEGEE_TERRESTRE/MapServer/0",
+     12
+    ]
+   ]
+  },
+  {
+   "area": "CA-BC",
+   "waiting": 11,
+   "key_now": {
+    "missing": 1,
+    "pin-only": 1,
+    "padus": 9
+   },
+   "top_layers": [
+    [
+     "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     9
+    ],
+    [
+     "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     1
+    ],
+    [
+     "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CA-NS",
+   "waiting": 11,
+   "key_now": {
+    "pin-only": 8,
+    "missing": 1,
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
+     6
+    ],
+    [
+     "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
+     2
+    ],
+    [
+     "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "GE",
+   "waiting": 11,
+   "key_now": {
+    "padus": 9,
+    "not in key": 2
+   },
+   "top_layers": [
+    [
+     "https://gisserver.mepa.gov.ge/arcgis/rest/services/APA/%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1_%E1%83%93%E1%83%90%E1%83%AA%E1%83%A3%E1%83%9A%E1%83%98_%E1%83%A2%E1%83%94%E1%83%A0%E1%83%98%E1%83%A2%E1%83%9D%E1%83%A0%E1%83%98%E1%83%94%E1%83%91%E1%83%98/FeatureServer/0",
+     9
+    ],
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-GE-apa-protected-areas.geojson.gz",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-NV",
+   "waiting": 11,
+   "key_now": {
+    "padus": 8,
+    "pin-only": 3
+   },
+   "top_layers": [
+    [
+     "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     4
+    ],
+    [
+     "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     2
+    ],
+    [
+     "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "DE",
+   "waiting": 10,
+   "key_now": {
+    "missing": 7,
+    "padus": 3
+   },
+   "top_layers": [
+    [
+     "https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/0",
+     4
+    ],
+    [
+     "https://geodienste.bfn.de/ogc/wfs/schutzgebiet?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=bfn_sch_Schutzgebiet:Landschaftsschutzgebiete",
+     2
+    ],
+    [
+     "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer/4",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "LK",
+   "waiting": 9,
+   "key_now": {
+    "missing": 4,
+    "padus": 5
+   },
+   "top_layers": [
+    [
+     "https://gisapps.nsdi.gov.lk/server/rest/services/Srilanka/Biota/MapServer/1",
+     9
+    ]
+   ]
+  },
+  {
+   "area": "AX",
+   "waiting": 8,
+   "key_now": {
+    "padus": 8
+   },
+   "top_layers": [
+    [
+     "https://kartor.regeringen.ax/arcgis/rest/services/Miljo/Skyddsomraden/MapServer/7",
+     8
+    ]
+   ]
+  },
+  {
+   "area": "CH",
+   "waiting": 8,
+   "key_now": {
+    "missing": 8
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     4
+    ],
+    [
+     "BAFU mire landscapes",
+     2
+    ],
+    [
+     "BAFU fens",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "SK",
+   "waiting": 7,
+   "key_now": {
+    "missing": 7
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     7
+    ]
+   ]
+  },
+  {
+   "area": "UM",
+   "waiting": 7,
+   "key_now": {
+    "padus": 7
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
+     7
+    ]
+   ]
+  },
+  {
+   "area": "AE",
+   "waiting": 6,
+   "key_now": {
+    "missing": 1,
+    "padus": 5
+   },
+   "top_layers": [
+    [
+     "https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/FeatureServer/127",
+     6
+    ]
+   ]
+  },
+  {
+   "area": "GA",
+   "waiting": 6,
+   "key_now": {
+    "padus": 6
+   },
+   "top_layers": [
+    [
+     "https://gis.forest-atlas.org/server/rest/services/gab/pnat_conservation/MapServer/0",
+     6
+    ]
+   ]
+  },
+  {
+   "area": "VI",
+   "waiting": 6,
+   "key_now": {
+    "missing": 2,
+    "padus": 4
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     4
+    ],
+    [
+     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "GL",
+   "waiting": 5,
+   "key_now": {
+    "padus": 5
+   },
+   "top_layers": [
+    [
+     "https://services-eu1.arcgis.com/0uK40YtWoUkQMlYW/arcgis/rest/services/Protected_Areas_of_Greenland_DisplayLayer/FeatureServer/0",
+     5
+    ]
+   ]
+  },
+  {
+   "area": "RO",
+   "waiting": 5,
+   "key_now": {
+    "missing": 3,
+    "pin-only": 1,
+    "line": 1
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     3
+    ],
+    [
+     "https://www.mmediu.ro/app/webroot/uploads/files/Limite_arii_naturale_protejate.zip",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-CT",
+   "waiting": 5,
+   "key_now": {
+    "missing": 1,
+    "line": 2,
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     2
+    ],
+    [
+     "",
+     1
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "BT",
+   "waiting": 4,
+   "key_now": {
+    "padus": 4
+   },
+   "top_layers": [
+    [
+     "https://nsdi.systems.gov.bt/server/rest/services/Hosted/Protected_Areas_of_Bhutan/FeatureServer/1",
+     4
+    ]
+   ]
+  },
+  {
+   "area": "CA-NL",
+   "waiting": 4,
+   "key_now": {
+    "pin-only": 1,
+    "padus": 2,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     2
+    ],
+    [
+     "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+     1
+    ],
+    [
+     "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CG",
+   "waiting": 4,
+   "key_now": {
+    "padus": 4
+   },
+   "top_layers": [
+    [
+     "https://gis.forest-atlas.org/server/rest/services/cog/Affectation_terre_en/MapServer/47",
+     4
+    ]
+   ]
+  },
+  {
+   "area": "IM",
+   "waiting": 4,
+   "key_now": {
+    "padus": 3,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/3",
+     3
+    ],
+    [
+     "https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/9",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "LR",
+   "waiting": 4,
+   "key_now": {
+    "padus": 3,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://gis.forest-atlas.org/server/rest/services/lbr/forest_atlas/MapServer/2",
+     2
+    ],
+    [
+     "https://gis.forest-atlas.org/server/rest/services/lbr/forest_atlas/MapServer/3",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "FO",
+   "waiting": 3,
+   "key_now": {
+    "padus": 2,
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://gis.us.fo/arcgis/rest/services/ramsar/us_ramsar_oki/MapServer/1",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "HR",
+   "waiting": 3,
+   "key_now": {
+    "missing": 2,
+    "pin-only": 1
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "US-DC",
+   "waiting": 3,
+   "key_now": {
+    "padus": 3
+   },
+   "top_layers": [
+    [
+     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     3
+    ]
+   ]
+  },
+  {
+   "area": "AS",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     1
+    ],
+    [
+     "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "BW",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://services7.arcgis.com/mbEujVpJG0aE29fS/arcgis/rest/services/Protected_Areas_and_Other_Effective_Conservation_Measures/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "CA-MB",
+   "waiting": 2,
+   "key_now": {
+    "pin-only": 2
+   },
+   "top_layers": [
+    [
+     "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "CA-PE",
+   "waiting": 2,
+   "key_now": {
+    "missing": 1,
+    "pin-only": 1
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0",
+     1
+    ],
+    [
+     "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CA-SK",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     1
+    ],
+    [
+     "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CV",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://ingtgeo.gov.cv/arcgisingt/rest/services/SDI/areas_protegidas_2022/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "GY",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/Guyana_VIP_Status/FeatureServer/1",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "MK",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://portal.app.gov.mk/arcgis/rest/services/PPRSM/karta37_PPRSM_namena_na_zemjiste_WMS_novo/MapServer/94",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "MV",
+   "waiting": 2,
+   "key_now": {
+    "missing": 2
+   },
+   "top_layers": [
+    [
+     "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/ProtectedArea/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "OM",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://services3.arcgis.com/ZMzLg7Owk19jwEIO/arcgis/rest/services/%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B7%D9%82_%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%8A%D8%A927012025/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "QA",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://services.gisqatar.org.qa/server/rest/services/Vector/Protected_Areas/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "RW",
+   "waiting": 2,
+   "key_now": {
+    "padus": 2
+   },
+   "top_layers": [
+    [
+     "https://geodata.rw/server/rest/services/basemap/National_Parks/FeatureServer/0",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "TT",
+   "waiting": 2,
+   "key_now": {
+    "not in key": 2
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-TT-ima-northern-range.geojson.gz",
+     2
+    ]
+   ]
+  },
+  {
+   "area": "US-TX",
+   "waiting": 2,
+   "key_now": {
+    "padus": 1,
+    "line": 1
+   },
+   "top_layers": [
+    [
+     "",
+     1
+    ],
+    [
+     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CA-NU",
+   "waiting": 1,
+   "key_now": {
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CA-YT",
+   "waiting": 1,
+   "key_now": {
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CR",
+   "waiting": 1,
+   "key_now": {
+    "not in key": 1
+   },
+   "top_layers": [
+    [
+     "https://mapas.msj.go.cr/server/rest/services/SIG_BASE/SIG_SER_Areas_Uso_Publico_SJ/MapServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "CX",
+   "waiting": 1,
+   "key_now": {
+    "padus": 1
+   },
+   "top_layers": [
+    [
+     "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "LT",
+   "waiting": 1,
+   "key_now": {
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "LV",
+   "waiting": 1,
+   "key_now": {
+    "missing": 1
+   },
+   "top_layers": [
+    [
+     "EEA nationally designated areas",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "MP",
+   "waiting": 1,
+   "key_now": {
+    "padus": 1
+   },
+   "top_layers": [
+    [
+     "https://services.arcgis.com/qchgHH9IIeiivY5M/arcgis/rest/services/CNMI_Marine_Protected_Areas/FeatureServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "NF",
+   "waiting": 1,
+   "key_now": {
+    "padus": 1
+   },
+   "top_layers": [
+    [
+     "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "SV",
+   "waiting": 1,
+   "key_now": {
+    "padus": 1
+   },
+   "top_layers": [
+    [
+     "https://services6.arcgis.com/DO1cMKsePeciYDRE/arcgis/rest/services/Layers/FeatureServer/6",
+     1
+    ]
+   ]
+  },
+  {
+   "area": "VU",
+   "waiting": 1,
+   "key_now": {
+    "not in key": 1
+   },
+   "top_layers": [
+    [
+     "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-VU-conservation-areas-vanris.geojson",
+     1
+    ]
+   ]
+  }
+ ]
+}
