@@ -2396,33 +2396,36 @@
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-WA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 25,
+   "dropped_queued": 212,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ],
+    [
+     "https://washington.goingtocamp.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from washington.goingtocamp.com this run"
     ]
    ],
-   "requests": 3,
+   "requests": 2,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 26,
+   "camps": 213,
    "elevations": 0,
-   "errors": 1,
+   "errors": 0,
    "needs_browser": 0,
-   "needs_key": 26,
+   "needs_key": 212,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2430,7 +2433,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 51
+   "skipped_fresh": 156
   },
   "when": "2026-11-07"
  },
