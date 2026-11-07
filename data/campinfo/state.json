@@ -242,25 +242,26 @@
    "updated": "2026-11-06"
   },
   "US-IA": {
-   "camps": 126,
-   "checked": 125,
+   "camps": 223,
+   "checked": 222,
    "counts": {
-    "camps": 125,
+    "camps": 222,
     "needs_browser": 0,
     "needs_key": 32,
     "no_page": 93,
     "not_official": 0,
-    "ok": 0,
-    "other": 0,
+    "ok": 27,
+    "other": 70,
     "resting": 0,
     "robots": 0,
-    "with_booking": 0,
+    "with_booking": 97,
     "with_elevation": 0,
+    "with_facts": 28,
     "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-10-31"
+   "updated": "2026-11-07"
   },
   "US-ID": {
    "camps": 464,
@@ -995,7 +996,7 @@
   "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-HI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-IA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-IA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ID": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-KS": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1134,10 +1135,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-10-31"
+   "read": "2026-11-07"
   },
   "US-ID": {
    "cell": {
@@ -2393,12 +2394,12 @@
  },
  "last": {
   "areas": [
-   "US-CO"
+   "US-IA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 675,
+   "dropped_queued": 222,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2410,25 +2411,25 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 163,
-   "rested": 200,
+   "requests": 171,
+   "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
-   "strikes": 3
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 18,
-   "camps": 676,
+   "browser": 70,
+   "camps": 223,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 19,
-   "needs_key": 352,
-   "no_page": 3,
+   "needs_browser": 70,
+   "needs_key": 32,
+   "no_page": 94,
    "not_official": 0,
-   "ok": 121,
-   "pages_read": 136,
-   "resting": 201,
+   "ok": 97,
+   "pages_read": 97,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
