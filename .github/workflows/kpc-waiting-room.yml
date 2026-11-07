@@ -5,6 +5,9 @@ name: KPC waiting room (by hand; nightly release-approved)
 # Modes: replay (the replay test: real bad outputs from git history must all HOLD, good outputs must all PASS) · check (every file in
 # data/waiting/in/) · undo (one file) · undo-bot (one bot, optionally one area) · release (a person approved a held file).
 # Never goes red (EMAIL rule): every step continues on error; the only save is data/waiting + data/status.
+# Nov 7 (round 4, item 1): the run's title says which cron started it, so the GPS packs workflow (workflow_run on this one) can
+# follow the NIGHTLY release-approved run only, not the every-2-hours ones. The cron string must equal the nightly cron below.
+run-name: "KPC waiting room (${{ github.event.schedule == '13 11 * * *' && 'nightly' || (github.event_name == 'schedule' && 'every 2 h') || inputs.mode || 'by hand' }})"
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '42 */2 * * *'   # PR3 (Nov 2): back to every 2 h, as Brandon asked Oct 31 (PR2 had made it every 4 h)   # Oct 31 1:15 AM (HQ, Brandon 'no rest for the bots'): release-approved every 2 hours too, so chat 11's YES goes live the same night   # G9 Nov 2: was '43 */2 * * *' (spread the start times; now 1 min earlier)
