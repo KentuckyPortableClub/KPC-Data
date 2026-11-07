@@ -1,11 +1,10 @@
-# Flow board (2026-11-07 02:19Z, kpc_flow.py)
+# Flow board (2026-11-07 07:48Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
-## STUCK (27)
+## STUCK (26)
 - STUCK 8 d · **1** · hours fees permits bot: not run for 8 days · waits on **chat 10** · US-KY: done; {"fees": 8, "hours": 41, "hours_lines": 77, "no_page": 0, "nothing": 144, "parks": 193, · chat 8 grades the sample; Brandon GO before any card
 - STUCK 7 d · **7** · HELD campinfo files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-NC, US-NY, US-AR, US-MO, US-MS, US-VT
 - STUCK 7 d · **49** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-IN, US-AK, US-AL, US-AR, US-AZ, US-CA, US-CO, US-CT, US-DC, US-DE, US-FL, US-GA, US-HI, US-KS, US-LA, US-MA, US-MD, US-MI, US-MN, …
-- STUCK 6 d · **0** · engine finds handed to the collector (last hand-back) · waits on **layer collector (every 2 h)** · engine results last saved 2026-11-06
 - STUCK 6 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
 - STUCK 6 d · **50** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-IN, …
 - STUCK 6 d · **9** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-CT, US-MA, US-MD, US-ME, US-MN, US-MS, US-NY, US-OK, US-TX
@@ -47,7 +46,6 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 1 · hours fees permits bot: not run for 8 days · since 2026-10-30
 - STUCK 1 · key-doctor: found work · since 2026-11-02
 - STUCK 1 · Key bots: errors and silence: RED (the bot is broken) · since 2026-11-03
-- 1 · waiting room: RED (the bot is broken) · since 2026-11-06
 ### chat 11
 - STUCK 7 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
@@ -82,7 +80,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 1 finders | engine crawler layers (US + Canada) the engine tries at the pins | 516 | park-info engine (every run) | 2026-11-03 |
 | 2 outside files | files on branch intake-files no reader has taken yet | 0 | chat 10 (the reader of that kind) | 2026-11-02 |
 | 3 layer list | layers in the list the intake bot has not checked yet | 309 | intake bot (daily, 40 a night) | 2026-11-05 **STUCK** |
-| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 **STUCK** |
+| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 5 collector | outside-research layer x park pairs not pin-tested yet | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 6 questions | questions/aliases-nov1.json waiting for an answer | 2 | chat 11 | 2026-11-02 **STUCK** |
 | 6 questions | questions/aliases-nov2.json waiting for an answer | 28 | chat 11 | 2026-11-02 **STUCK** |
@@ -114,4 +112,3 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 8 bots | T5 site checker: found work | 1 | chat 3 | 2026-11-01 **STUCK** |
 | 8 bots | hours fees permits bot: not run for 8 days | 1 | chat 10 | 2026-10-30 **STUCK** |
 | 8 bots | key-doctor: found work | 1 | chat 10 | 2026-11-02 **STUCK** |
-| 8 bots | waiting room: RED (the bot is broken) | 1 | chat 10 | 2026-11-06 |
