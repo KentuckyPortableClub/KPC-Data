@@ -39,7 +39,7 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 | US-CO | 653 | 101 | 337 | 2 | 0 | 193 | 0 | 0 | 20 | 2 | 316 | 0 |
 | US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
-| US-MT | 312 | 0 | 312 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| US-MT | 389 | 30 | 311 | 0 | 0 | 0 | 0 | 0 | 48 | 0 | 78 | 0 |
 | US-NV | 63 | 15 | 34 | 0 | 0 | 0 | 0 | 0 | 14 | 7 | 29 | 0 |
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 0 | 0 | 2 | 11 | 0 | 28 | 0 |
 | US-NM | 136 | 51 | 78 | 0 | 0 | 0 | 0 | 0 | 7 | 1 | 58 | 0 |
@@ -2682,6 +2682,94 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 
 ## US-MT: 12 random samples (records with facts; seed = the date)
 
+- **Thompson Falls campground** (intake-US-2599, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Black Sandy campground** (intake-US-2562, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Dispersed camping on state trust land** (intake-US-4844, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [dnrc.mt.gov](https://dnrc.mt.gov/trustland/public-use/Camping)
+  - booking.url = "https://dnrc.mt.gov/trustland/public-use/Camping" · “booking link from our outside research (camping, in the park) row (official system dnrc.mt.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Map Stats””
+  - map.url = "https://dnrc.mt.gov/Directors-Office/maps-and-data" · “link “Map Stats” -> https://dnrc.mt.gov/Directors-Office/maps-and-data”
+  - rules.fires = "Campfires and Firewood: Campfires are generally permitted w · “n any stream riparian zone for more than one hour. Feed must be certified weed seed free. Campfires and Firewood: Campfires are generally pe”
+  - rules.pets = "Pets must be on a leash or otherwise controlled" · “ntact the local DNRC field office to confirm if land is leased. Camping Guidelines Dogs : Pets must be on a leash or otherwise controlled. H”
+- **Wild Horse Island campground** (intake-US-2606, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Yellow Bay campground** (intake-US-2607, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Wayfarers campground** (intake-US-2603, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **JUDITH LANDING** (intake-US-12941, agency (outside research camping-us-oct31), status ok, 8 facts) · [fwp.mt.gov](https://fwp.mt.gov/stateparks/judith-landing)
+  - booking.url = "https://fwp.mt.gov/stateparks/judith-landing" · “booking link from our outside research (camping, nearby only) row (official system fwp.mt.gov)”
+  - features = "campfire ring" · “sites. Each campsite will contain of a pad for a recreational vehicle, a picnic table and campfire ring. One campsite will be developed with”
+  - fees = "$9 state parks fee with their annual vehicle registr | $8 | · “programs, visit the Volunteers page. Fees Montana Residents Montana residents who pay the $9 state parks fee with their annual vehicle regis”
+  - hookups.electric = true · “oke west of the Judith River to protect steamboat traffic. Soon after, merchant Thomas C. Power set up a trading post to supply the camp. Wh”
+  - map.date_how = "PDF, no date in the link" · “link “View Park Map””
+  - map.url = "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/m · “link “View Park Map” -> https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/maps/state-parks-guide.pdf”
+  - restrooms = "vault" · “sible stalls, multiple stalls for vehicles with trailers and ample single vehicle stalls. Vault toilet – A single, accessible vault toilet w”
+  - rules.pets = "Pets must be on a leash and under control (8-ft max)" · “mber of trappers allowed, written permission from FWP required, contact the park manager. Pets must be on a leash and under control (8-ft ma”
+- **Bannack campground** (intake-US-2558, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Missouri Headwaters campground** (intake-US-2589, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Brown's Lake (FAS) camping** (intake-US-12826, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [myfwp.mt.gov](https://myfwp.mt.gov/fishMT/fas/39754193)
+  - booking.url = "https://myfwp.mt.gov/fishMT/fas/39754193" · “booking link from our outside research (camping, in the park) row (official system myfwp.mt.gov)”
+  - map.date_how = "PDF, no date in the link" · “link “Location Map””
+  - map.url = "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources · “link “Location Map” -> https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39754193.pdf”
+  - rules.stay_limit = "7 days" · “ap Contact Information Restrictions --> Vehicle Length Trailer Length is 20ft. Stay Limit Maximum stay of 7 days Weapons Discharge Prohibite”
+- **Dispersed camping on state trust land** (intake-US-4849, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [dnrc.mt.gov](https://dnrc.mt.gov/trustland/public-use/Camping)
+  - booking.url = "https://dnrc.mt.gov/trustland/public-use/Camping" · “booking link from our outside research (camping, in the park) row (official system dnrc.mt.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Map Stats””
+  - map.url = "https://dnrc.mt.gov/Directors-Office/maps-and-data" · “link “Map Stats” -> https://dnrc.mt.gov/Directors-Office/maps-and-data”
+  - rules.fires = "Campfires and Firewood: Campfires are generally permitted w · “n any stream riparian zone for more than one hour. Feed must be certified weed seed free. Campfires and Firewood: Campfires are generally pe”
+  - rules.pets = "Pets must be on a leash or otherwise controlled" · “ntact the local DNRC field office to confirm if land is leased. Camping Guidelines Dogs : Pets must be on a leash or otherwise controlled. H”
+- **Hell Creek campground (Hell Creek Recreation Area)** (intake-US-2577, agency (outside research camping-us-oct31), status ok, 5 facts) · [myfwp.mt.gov](https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754421)
+  - booking.url = "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lms · “booking link from our outside research (camping, in the park) row (official system myfwp.mt.gov)”
+  - hookups.amps = [30, 50] · “g Station Garbage Bins Grill (Ring) Group Use - Sheltered Hiking Trail Hookup (Electric - 30 Amp) Hookup (Electric - 50 Amp) Hookup (Electri”
+  - hookups.electric = true · “g Station Garbage Bins Grill (Ring) Group Use - Sheltered Hiking Trail Hookup (Electric - 30 Amp) Hookup (Electric - 50 Amp) Hookup (Electri”
+  - map.date_how = "PDF, no date in the link" · “link “Location Map””
+  - map.url = "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources · “link “Location Map” -> https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps//39754421.pdf”
 
 ## US-NV: 12 random samples (records with facts; seed = the date)
 

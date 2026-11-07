@@ -504,25 +504,26 @@
    "updated": "2026-11-06"
   },
   "US-MT": {
-   "camps": 313,
-   "checked": 312,
+   "camps": 391,
+   "checked": 389,
    "counts": {
-    "camps": 312,
+    "camps": 389,
     "needs_browser": 0,
-    "needs_key": 312,
+    "needs_key": 311,
     "no_page": 0,
     "not_official": 0,
-    "ok": 0,
-    "other": 0,
+    "ok": 30,
+    "other": 48,
     "resting": 0,
     "robots": 0,
-    "with_booking": 0,
+    "with_booking": 78,
     "with_elevation": 0,
+    "with_facts": 43,
     "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-10-31"
+   "updated": "2026-11-07"
   },
   "US-NC": {
    "camps": 147,
@@ -1008,7 +1009,7 @@
   "US-MN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MS": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-MT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-MT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1243,10 +1244,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-10-31"
+   "read": "2026-11-07"
   },
   "US-NC": {
    "cell": {
@@ -2394,12 +2395,12 @@
  },
  "last": {
   "areas": [
-   "US-MA"
+   "US-MT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 35,
+   "dropped_queued": 390,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2411,7 +2412,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 41,
+   "requests": 134,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2419,16 +2420,16 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 2,
-   "camps": 36,
+   "browser": 47,
+   "camps": 391,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 8,
-   "no_page": 1,
+   "needs_browser": 46,
+   "needs_key": 313,
+   "no_page": 2,
    "not_official": 0,
-   "ok": 27,
-   "pages_read": 35,
+   "ok": 77,
+   "pages_read": 79,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
